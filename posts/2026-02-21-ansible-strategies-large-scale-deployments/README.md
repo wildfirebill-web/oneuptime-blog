@@ -26,6 +26,7 @@ Start with the right `ansible.cfg`:
 
 ```ini
 # ansible.cfg - Optimized for large-scale deployments
+
 [defaults]
 # Increase forks based on control node capacity
 forks = 50

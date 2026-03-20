@@ -324,6 +324,7 @@ Verify compression is working:
 
 ```bash
 # Request with gzip support
+
 curl -H "Accept-Encoding: gzip" -o /dev/null -w "Size: %{size_download}\n" -s http://app.example.com/
 
 # Compare with uncompressed

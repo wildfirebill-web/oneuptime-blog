@@ -16,6 +16,7 @@ The most common use case is waiting for a service to start listening on a port:
 
 ```yaml
 # Wait for PostgreSQL to be ready
+
 - name: Start PostgreSQL
   ansible.builtin.service:
     name: postgresql

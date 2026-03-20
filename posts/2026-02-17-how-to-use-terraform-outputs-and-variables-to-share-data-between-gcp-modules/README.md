@@ -42,6 +42,7 @@ Here is the variables file for the networking module:
 
 ```hcl
 # modules/networking/variables.tf
+
 # These variables define what the networking module needs to create a VPC
 
 variable "project_id" {

@@ -20,6 +20,7 @@ The simplest method uses a temporary container to create a compressed archive of
 
 ```bash
 # Create a compressed snapshot of a Docker volume
+
 docker run --rm \
   -v myapp_data:/source:ro \
   -v /opt/snapshots:/snapshots \

@@ -14,6 +14,7 @@ Bridge networking issues commonly stem from incorrect interface states, STP bloc
 
 ```bash
 # Check bridge is UP
+
 ip link show br0
 # Should show: state UP
 
@@ -79,7 +80,7 @@ tcpdump -i br0 -n
 # Capture on a specific port
 tcpdump -i eth0 -n
 
-# Look for ARP requests — if ARP is working but pings fail, it's a routing issue
+# Look for ARP requests - if ARP is working but pings fail, it's a routing issue
 tcpdump -i br0 arp -n
 ```
 
@@ -122,4 +123,4 @@ cat /proc/sys/net/bridge/bridge-nf-call-iptables
 
 ## Conclusion
 
-Bridge troubleshooting follows a consistent checklist: interfaces up and in forwarding state, IP assigned to bridge (not physical port), FDB populated, STP not blocking, and no firewall rules dropping traffic. tcpdump on the bridge interface is the most powerful diagnostic tool — if packets arrive at br0 but don't forward, check ebtables and FORWARD chain rules.
+Bridge troubleshooting follows a consistent checklist: interfaces up and in forwarding state, IP assigned to bridge (not physical port), FDB populated, STP not blocking, and no firewall rules dropping traffic. tcpdump on the bridge interface is the most powerful diagnostic tool - if packets arrive at br0 but don't forward, check ebtables and FORWARD chain rules.

@@ -22,6 +22,7 @@ Configure WireGuard VPN:
 
 ```bash
 # Install WireGuard
+
 sudo dnf install -y wireguard-tools
 
 # Generate keys

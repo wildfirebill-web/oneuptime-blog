@@ -151,6 +151,7 @@ Once you've decided on the commitment level, purchase through the CLI.
 
 ```bash
 # Purchase a Compute Savings Plan
+
 # 1-year term, no upfront payment, $10/hour commitment
 aws savingsplans create-savings-plan \
   --savings-plan-offering-id "offering-id-from-describe" \

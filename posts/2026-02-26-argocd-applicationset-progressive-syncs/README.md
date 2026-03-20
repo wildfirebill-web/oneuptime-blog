@@ -148,6 +148,7 @@ For this to work, your clusters need the `rollout-group` label set appropriately
 
 ```bash
 # Label your clusters for rollout grouping
+
 argocd cluster set prod-us-east-1 --label rollout-group=canary
 argocd cluster set prod-us-west-2 --label rollout-group=secondary
 argocd cluster set prod-eu-west-1 --label rollout-group=secondary

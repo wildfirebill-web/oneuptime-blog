@@ -38,6 +38,7 @@ The simplest case is allowing traffic on a single port from a specific network:
 
 ```yaml
 # Allow HTTPS traffic on port 443
+
 apiVersion: v1alpha1
 kind: NetworkRuleConfig
 name: allow-https

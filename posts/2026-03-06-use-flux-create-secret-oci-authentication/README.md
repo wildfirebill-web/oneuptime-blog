@@ -23,6 +23,7 @@ This guide covers authentication setup for all major OCI registries, including D
 
 ```bash
 # Verify Flux is healthy
+
 flux check
 
 # List existing OCI sources

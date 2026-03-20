@@ -24,6 +24,7 @@ Database migration PreSync hook:
 
 ```yaml
 # ArgoCD PreSync hook for database migration
+
 apiVersion: batch/v1
 kind: Job
 metadata:

@@ -33,6 +33,7 @@ Before writing rules, you need to know the action identifiers:
 
 ```bash
 # List all registered Polkit actions
+
 pkaction
 
 # Show details for a specific action

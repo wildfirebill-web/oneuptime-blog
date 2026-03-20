@@ -42,6 +42,7 @@ Felix configuration is managed via the FelixConfiguration custom resource:
 
 ```bash
 # View current Felix configuration
+
 kubectl get felixconfiguration default -o yaml
 ```
 

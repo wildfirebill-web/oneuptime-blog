@@ -29,6 +29,7 @@ This guide covers the most common etcd RBAC failure modes and provides step-by-s
 
 ```bash
 # Check Felix logs for permission errors
+
 kubectl logs -n kube-system ds/calico-node --tail=100 | grep -i "permission\|denied\|error"
 
 # Look for etcd watch failures

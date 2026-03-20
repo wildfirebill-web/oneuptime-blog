@@ -400,6 +400,7 @@ Progressive delivery across clusters:
 
 ```yaml
 # Federation config for multi-cluster
+
 apiVersion: networking.istio.io/v1beta1
 kind: ServiceEntry
 metadata:

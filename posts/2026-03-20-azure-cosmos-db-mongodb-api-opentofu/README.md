@@ -14,6 +14,7 @@ Azure Cosmos DB's MongoDB API provides wire-protocol compatibility with MongoDB,
 
 ```hcl
 # main.tf - Cosmos DB account with MongoDB API
+
 resource "azurerm_cosmosdb_account" "mongodb" {
   name                = "my-mongodb-cosmos"
   location            = azurerm_resource_group.rg.location

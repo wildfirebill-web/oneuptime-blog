@@ -12,7 +12,7 @@ Once phpIPAM is installed, the primary workflow involves creating a logical subn
 
 Good IPAM organization mirrors your network design:
 
-```
+```text
 Section: Corporate Network
   ├── Subnet: 10.0.0.0/8   (Summary)
   │     ├── 10.100.0.0/16  (Production)
@@ -41,6 +41,7 @@ BASE="http://localhost/api/myapp"
 TOKEN="your-api-token"
 
 # Create parent subnet
+
 curl -X POST \
   -H "token: $TOKEN" \
   -H "Content-Type: application/json" \

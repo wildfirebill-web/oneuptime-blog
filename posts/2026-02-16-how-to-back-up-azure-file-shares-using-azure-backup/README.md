@@ -46,6 +46,7 @@ The Recovery Services vault is the management container for your backup configur
 
 ```bash
 # Create a Recovery Services vault
+
 az backup vault create \
   --name myBackupVault \
   --resource-group myresourcegroup \

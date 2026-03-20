@@ -1235,6 +1235,7 @@ Run multiple gateway instances behind a load balancer:
 
 ```yaml
 # docker-compose.yml
+
 services:
   gateway:
     build: .

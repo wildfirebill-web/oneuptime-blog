@@ -53,6 +53,7 @@ The facade intercepts requests and routes them to either the legacy system or ne
 
 ```python
 # strangler_facade.py
+
 from fastapi import FastAPI, Request, HTTPException
 from fastapi.responses import Response
 import httpx

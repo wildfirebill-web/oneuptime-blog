@@ -1186,6 +1186,7 @@ class DecimalConverter:
 
 
 # Example usage
+
 if __name__ == '__main__':
     # Financial data: DECIMAL(10,2)
     financial_converter = DecimalConverter(precision=10, scale=2)

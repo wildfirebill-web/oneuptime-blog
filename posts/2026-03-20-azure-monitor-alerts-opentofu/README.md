@@ -16,6 +16,7 @@ Action groups define who gets notified and how. Create them before creating aler
 
 ```hcl
 # main.tf
+
 terraform {
   required_providers {
     azurerm = {
@@ -115,7 +116,7 @@ Use dynamic scope to apply an alert to multiple resources matching a subscriptio
 resource "azurerm_monitor_metric_alert" "all_vms_cpu" {
   name                = "all-vms-high-cpu"
   resource_group_name = azurerm_resource_group.monitoring.name
-  # Scope to the subscription — alert applies to all matching resources
+  # Scope to the subscription - alert applies to all matching resources
   scopes              = ["/subscriptions/${var.subscription_id}"]
   description         = "Any VM in the subscription has high CPU"
   severity            = 2
@@ -183,7 +184,7 @@ resource "azurerm_monitor_scheduled_query_rules_alert_v2" "error_rate" {
 ## Best Practices
 
 - Use descriptive alert names with resource type and condition so the alert is self-documenting.
-- Set alert severity appropriately — save severity 0 and 1 for critical conditions that require immediate human action.
+- Set alert severity appropriately - save severity 0 and 1 for critical conditions that require immediate human action.
 - Use `auto_mitigate = true` (the default) so alerts automatically resolve when the condition clears.
 - Test action groups by using the "Test Action Group" feature in the Azure portal after deploying.
 - Group related alerts together by tagging them with the same service name for easier management.

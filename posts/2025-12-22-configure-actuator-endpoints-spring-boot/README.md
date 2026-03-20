@@ -68,6 +68,7 @@ flowchart TD
 
 ```yaml
 # application.yml
+
 management:
   endpoints:
     web:

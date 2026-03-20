@@ -24,6 +24,7 @@ If you are PXE booting or booting from an ISO, the node will enter maintenance m
 
 ```bash
 # Connect to a node in maintenance mode
+
 # Replace with the actual IP of your node
 talosctl get disks --nodes 192.168.1.10 --insecure
 ```

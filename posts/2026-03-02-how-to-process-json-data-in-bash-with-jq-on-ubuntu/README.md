@@ -16,6 +16,7 @@ On Ubuntu, `jq` is in the standard repositories and is the right tool for this j
 
 ```bash
 # Install jq from Ubuntu repositories
+
 sudo apt update
 sudo apt install -y jq
 

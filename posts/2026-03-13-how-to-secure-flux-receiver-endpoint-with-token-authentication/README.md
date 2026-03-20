@@ -46,6 +46,7 @@ Use a cryptographically secure random generator to create the token:
 
 ```bash
 # Generate a 40-character hex token
+
 TOKEN=$(head -c 32 /dev/urandom | shasum | head -c 40)
 echo "Your webhook token: $TOKEN"
 ```

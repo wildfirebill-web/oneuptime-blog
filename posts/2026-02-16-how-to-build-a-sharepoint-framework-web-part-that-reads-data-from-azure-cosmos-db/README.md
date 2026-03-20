@@ -31,6 +31,7 @@ Create an Azure Function that serves as the backend API:
 
 ```bash
 # Create the Function App
+
 az functionapp create \
   --name func-spfx-api \
   --resource-group rg-spfx \

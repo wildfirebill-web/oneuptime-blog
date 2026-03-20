@@ -22,6 +22,7 @@ Configure the Collector to expose Prometheus metrics about itself:
 
 ```yaml
 # otel-collector-config.yaml
+
 # Enable internal telemetry so you can measure data volume per pipeline component
 
 service:

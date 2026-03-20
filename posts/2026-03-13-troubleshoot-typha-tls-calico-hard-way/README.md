@@ -31,6 +31,7 @@ Felix cannot connect to Typha
 
 ```bash
 # Check expiry
+
 for secret in calico-typha-tls calico-felix-typha-tls; do
   echo "=== $secret ==="
   kubectl get secret $secret -n calico-system \

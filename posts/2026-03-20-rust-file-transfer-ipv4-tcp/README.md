@@ -199,6 +199,7 @@ fn main() {
 
 ```bash
 # Build both binaries
+
 cargo build --release
 
 # Start server

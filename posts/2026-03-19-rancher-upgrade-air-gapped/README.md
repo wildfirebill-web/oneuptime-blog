@@ -51,6 +51,7 @@ Rancher provides a script and image list for air-gapped installations. Download 
 
 ```bash
 # Download the image list for the target version
+
 wget https://github.com/rancher/rancher/releases/download/<TARGET_VERSION>/rancher-images.txt
 
 # Download the save and load scripts

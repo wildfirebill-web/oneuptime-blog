@@ -16,6 +16,7 @@ Kamailio is a high-performance SIP server used as a proxy, registrar, and load b
 # /etc/kamailio/kamailio.cfg
 
 # Basic parameters
+
 #!define DBURL "mysql://kamailio:password@localhost/kamailio"
 
 # Listen on IPv6 (UDP and TCP)

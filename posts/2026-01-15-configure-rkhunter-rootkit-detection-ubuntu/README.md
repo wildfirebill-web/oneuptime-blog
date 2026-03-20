@@ -53,6 +53,7 @@ Before installing rkhunter, ensure your system is up to date:
 
 ```bash
 # Update package lists
+
 sudo apt update
 
 # Upgrade existing packages

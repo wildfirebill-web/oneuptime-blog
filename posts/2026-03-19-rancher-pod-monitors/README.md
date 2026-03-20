@@ -123,6 +123,7 @@ When an application pod has a metrics sidecar, create a PodMonitor targeting the
 
 ```yaml
 # Pod with sidecar
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

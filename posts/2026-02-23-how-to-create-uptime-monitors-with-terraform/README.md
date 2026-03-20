@@ -45,6 +45,7 @@ variable "gcp_project_id" { type = string }
 
 ```hcl
 # S3 bucket for canary artifacts
+
 resource "aws_s3_bucket" "canary" {
   bucket = "uptime-monitor-artifacts-${data.aws_caller_identity.current.account_id}"
 }

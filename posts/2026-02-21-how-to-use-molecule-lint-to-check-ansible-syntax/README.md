@@ -21,6 +21,7 @@ Both need to be installed separately.
 
 ```bash
 # Install linting tools
+
 pip install ansible-lint yamllint
 ```
 

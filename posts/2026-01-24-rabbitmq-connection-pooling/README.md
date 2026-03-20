@@ -177,6 +177,7 @@ class RabbitMQConnectionPool:
 
 
 # Usage example
+
 pool = RabbitMQConnectionPool(
     host='localhost',
     pool_size=5

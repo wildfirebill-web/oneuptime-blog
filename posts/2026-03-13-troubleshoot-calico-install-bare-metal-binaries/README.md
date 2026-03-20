@@ -53,6 +53,7 @@ The calico-node binary needs to reach the Kubernetes API to read node informatio
 
 ```bash
 # Check the kubeconfig path in the service unit
+
 cat /etc/systemd/system/calico-node.service | grep KUBECONFIG
 kubectl --kubeconfig /etc/kubernetes/admin.conf get nodes
 ```

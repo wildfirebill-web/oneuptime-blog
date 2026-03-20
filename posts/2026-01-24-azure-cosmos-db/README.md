@@ -48,6 +48,7 @@ flowchart TB
 
 ```bash
 # Create Cosmos DB account
+
 az cosmosdb create \
     --name mycosmosaccount \
     --resource-group myresourcegroup \

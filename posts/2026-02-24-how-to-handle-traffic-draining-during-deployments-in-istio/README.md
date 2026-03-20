@@ -261,6 +261,7 @@ During deployment:
 
 ```bash
 # Shift traffic to green
+
 kubectl patch virtualservice my-service -n production --type='json' \
   -p='[
     {"op": "replace", "path": "/spec/http/0/route/0/weight", "value": 0},

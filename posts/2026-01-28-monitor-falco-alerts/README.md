@@ -32,6 +32,7 @@ Falco exposes internal metrics through a Prometheus endpoint. Enable it in your 
 
 ```yaml
 # falco.yaml
+
 webserver:
   enabled: true
   listen_port: 8765

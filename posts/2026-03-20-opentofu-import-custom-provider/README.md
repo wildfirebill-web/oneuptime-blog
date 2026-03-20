@@ -1,8 +1,8 @@
-# How to Import Resources with Custom Provider Configurations in OpenTofu
+# How to Import Resources with Custom Provider Configurations in OpenTofu (2)
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, Infrastructure as Code, Import, Providers
+Tags: OpenTofu, Terraform, Infrastructure as Code, Import, Provider
 
 Description: Learn how to import existing resources when your configuration uses custom provider configurations, aliases, or non-default provider instances.
 
@@ -14,6 +14,7 @@ When your configuration uses provider aliases (for multi-region or multi-account
 
 ```hcl
 # Provider with alias for a secondary region
+
 provider "aws" {
   region = "us-east-1"
 }
@@ -62,7 +63,7 @@ import {
 
 ## Import via CLI with Custom Provider
 
-For the CLI `tofu import` command, the provider is inferred from the resource address — no explicit flag needed. The resource's `provider` meta-argument in its configuration determines which provider is used:
+For the CLI `tofu import` command, the provider is inferred from the resource address - no explicit flag needed. The resource's `provider` meta-argument in its configuration determines which provider is used:
 
 ```bash
 # OpenTofu reads the provider from the resource configuration

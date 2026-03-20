@@ -59,6 +59,7 @@ The simplest approach is to disable MetalLB's BGP speaker and let Calico adverti
 
 ```yaml
 # bgp-configuration.yaml
+
 # Tell Calico to advertise LoadBalancer and ClusterIP service ranges.
 apiVersion: projectcalico.org/v3
 kind: BGPConfiguration

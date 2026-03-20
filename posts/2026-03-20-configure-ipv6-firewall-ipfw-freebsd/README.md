@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, FreeBSD, ipfw, Firewall, Network Security
+Tags: IPv6, FreeBSD, Ipfw, Firewall, Network Security
 
 Description: Learn how to configure IPv6 firewall rules using ipfw on FreeBSD, including essential ICMPv6 rules, allowing services, and blocking traffic.
 
@@ -10,6 +10,7 @@ Description: Learn how to configure IPv6 firewall rules using ipfw on FreeBSD, i
 
 ```bash
 # Enable ipfw in /etc/rc.conf
+
 cat >> /etc/rc.conf << 'EOF'
 firewall_enable="YES"
 firewall_type="workstation"   # or "open", "client", "simple", "filename"

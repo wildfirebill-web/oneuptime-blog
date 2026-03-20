@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux, Fluxcd, GitOps, Kubernetes, Envsubst, Testing, Post-Build, Substitution, Local-Development
+Tags: Flux, Fluxcd, GitOps, Kubernetes, Envsubst, Testing, Post-Build, Substitution, Local-development
 
 Description: Learn how to use the flux envsubst command to locally test and validate post-build variable substitution before pushing changes to your Git repository.
 
@@ -25,6 +25,7 @@ If you do not already have the Flux CLI installed:
 
 ```bash
 # macOS
+
 brew install fluxcd/tap/flux
 
 # Linux

@@ -18,6 +18,7 @@ Open a terminal and create a file:
 
 ```bash
 # Create the script file
+
 nano ~/my-first-script.sh
 ```
 

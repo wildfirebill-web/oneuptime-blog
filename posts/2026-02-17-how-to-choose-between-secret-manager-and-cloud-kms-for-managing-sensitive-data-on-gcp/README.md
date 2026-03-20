@@ -42,6 +42,7 @@ The most common use case - storing credentials that your application needs at ru
 
 ```python
 # Retrieving a database password from Secret Manager
+
 from google.cloud import secretmanager
 
 def get_secret(secret_id, version="latest"):

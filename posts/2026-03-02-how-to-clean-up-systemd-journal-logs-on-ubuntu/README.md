@@ -16,6 +16,7 @@ Before cleaning anything up, assess what you're dealing with:
 
 ```bash
 # Check the total disk space used by journal logs
+
 journalctl --disk-usage
 
 # Output example:

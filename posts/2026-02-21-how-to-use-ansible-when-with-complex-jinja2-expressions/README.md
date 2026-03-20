@@ -16,6 +16,7 @@ Any Jinja2 filter can be used inside a `when` condition to transform values befo
 
 ```yaml
 # Using Jinja2 filters in when conditions
+
 ---
 - name: Filter-based conditionals
   hosts: all

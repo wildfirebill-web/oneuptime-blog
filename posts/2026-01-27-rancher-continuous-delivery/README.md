@@ -55,6 +55,7 @@ Continuous Delivery comes built into Rancher. Here's how to access and configure
 
 ```bash
 # Continuous Delivery is available in the Rancher UI
+
 # Navigate to: Cluster Management -> Continuous Delivery
 
 # Or access Fleet directly via kubectl on the local cluster
@@ -793,7 +794,7 @@ kubectl describe bundledeployment myapp-cluster1 -n fleet-default
 kubectl logs -n cattle-fleet-system -l app=fleet-agent -f --context=downstream-cluster
 ```
 
-### Resources Not Being Applied
+Resources Not Being Applied
 
 ```yaml
 # fleet.yaml - debugging configuration

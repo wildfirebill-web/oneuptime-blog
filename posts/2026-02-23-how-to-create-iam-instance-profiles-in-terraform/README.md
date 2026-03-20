@@ -32,6 +32,7 @@ A basic instance profile requires three components: the IAM role, the instance p
 
 ```hcl
 # Step 1: Create the trust policy for EC2
+
 data "aws_iam_policy_document" "ec2_trust" {
   statement {
     effect = "Allow"

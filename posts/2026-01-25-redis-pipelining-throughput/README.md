@@ -78,6 +78,7 @@ def with_pipeline():
 
 
 # Compare performance
+
 no_pipe_time = without_pipeline()
 pipe_time, _ = with_pipeline()
 

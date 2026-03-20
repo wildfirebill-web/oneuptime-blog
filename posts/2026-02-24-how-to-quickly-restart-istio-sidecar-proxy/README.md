@@ -58,6 +58,7 @@ You can trigger a graceful drain and restart through the Envoy admin API:
 
 ```bash
 # Start draining existing connections
+
 kubectl exec deploy/my-app -n default -c istio-proxy -- \
   curl -s -X POST localhost:15000/drain_listeners
 

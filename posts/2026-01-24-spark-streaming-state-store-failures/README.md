@@ -53,6 +53,7 @@ This happens when Spark cannot initialize the state store backend.
 
 ```python
 # Configure checkpoint location with proper permissions
+
 spark = SparkSession.builder \
     .appName("StreamingApp") \
     .config("spark.sql.streaming.checkpointLocation", "/tmp/spark-checkpoints") \

@@ -32,6 +32,7 @@ Check your current CNI:
 
 ```bash
 # Identify CNI plugin
+
 kubectl get pods -n kube-system -o wide | grep -E 'calico|cilium|weave|flannel'
 
 # For Calico, check IPv6 support

@@ -28,6 +28,7 @@ The simplest case: you used the wrong attribute name. Maybe you guessed at it in
 
 ```hcl
 # WRONG - aws_vpc does not have a "subnet_id" attribute
+
 resource "aws_vpc" "main" {
   cidr_block = "10.0.0.0/16"
 }

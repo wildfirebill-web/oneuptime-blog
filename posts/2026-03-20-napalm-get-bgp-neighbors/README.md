@@ -33,6 +33,7 @@ bgp_neighbors = device.get_bgp_neighbors()
 print(bgp_neighbors)
 
 # Output structure:
+
 # {
 #   'global': {
 #     'router_id': '1.1.1.1',

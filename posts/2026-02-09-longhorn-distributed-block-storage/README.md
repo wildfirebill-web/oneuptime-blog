@@ -24,6 +24,7 @@ Longhorn requires specific packages on each worker node for iSCSI connectivity a
 
 ```bash
 # On Ubuntu 22.04 or 24.04 nodes
+
 sudo apt-get update
 sudo apt-get install -y open-iscsi nfs-common curl
 

@@ -39,6 +39,7 @@ Requirements (sorted largest to smallest):
 
 ```bash
 # Host sizing reference:
+
 # Need 200 hosts → /24 gives 254 (next power of 2 after 200 + 2)
 # Need 100 hosts → /25 gives 126
 # Need 50 hosts  → /26 gives 62
@@ -75,7 +76,7 @@ ipcalc 10.10.1.128/26
 
 ```python
 #!/usr/bin/env python3
-# vlsm_calc.py — simple VLSM subnet allocator
+# vlsm_calc.py - simple VLSM subnet allocator
 import ipaddress
 
 def hosts_to_prefix(n):

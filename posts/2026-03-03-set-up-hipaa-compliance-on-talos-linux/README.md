@@ -30,6 +30,7 @@ Every person accessing systems with ePHI must have a unique identifier. Configur
 
 ```yaml
 # Talos cluster config for OIDC authentication
+
 cluster:
   apiServer:
     extraArgs:

@@ -234,6 +234,7 @@ Different traffic patterns require different behavior configurations.
 
 ```yaml
 # For gradual traffic increases
+
 apiVersion: autoscaling/v2
 kind: HorizontalPodAutoscaler
 metadata:

@@ -30,6 +30,7 @@ flowchart TB
 
 ```bash
 # View container's network configuration
+
 docker inspect --format='{{json .NetworkSettings}}' mycontainer | jq
 
 # Get container IP address

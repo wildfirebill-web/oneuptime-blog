@@ -39,6 +39,7 @@ The core Lambda handles different writing modes through a single endpoint:
 
 ```python
 # Lambda - AI Writing Assistant with multiple modes
+
 import boto3
 import json
 import uuid

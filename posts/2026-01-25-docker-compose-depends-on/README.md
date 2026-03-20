@@ -348,6 +348,7 @@ async function connectWithRetry(maxRetries = 5, delay = 2000) {
 
 ```bash
 # View service dependencies
+
 docker compose config --services
 docker compose config | grep -A 10 "depends_on"
 

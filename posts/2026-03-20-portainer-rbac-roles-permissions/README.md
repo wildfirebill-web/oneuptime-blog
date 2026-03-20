@@ -58,6 +58,7 @@ TOKEN=$(curl -s -X POST \
   --insecure | python3 -c "import sys,json; print(json.load(sys.stdin)['jwt'])")
 
 # Assign a team to an environment with Operator role (role ID: 2)
+
 # Environment ID: 1, Team ID: 3
 curl -X PUT \
   https://localhost:9443/api/endpoints/1/teamaccesspolicies \

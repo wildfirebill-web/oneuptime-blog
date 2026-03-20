@@ -29,6 +29,7 @@ This is the most common approach for non-AKS clusters or clusters without worklo
 
 ```bash
 # Create a service principal with AcrPull access
+
 ACR_NAME=myacregistry
 ACR_REGISTRY_ID=$(az acr show --name $ACR_NAME --query "id" --output tsv)
 

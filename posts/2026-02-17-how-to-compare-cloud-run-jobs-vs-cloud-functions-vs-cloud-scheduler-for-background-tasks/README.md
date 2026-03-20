@@ -51,6 +51,7 @@ Cloud Run Jobs are ideal for tasks that need to run to completion, especially wh
 
 ```bash
 # Create a Cloud Run job for nightly data processing
+
 gcloud run jobs create nightly-cleanup \
     --image=us-central1-docker.pkg.dev/my-project/my-repo/cleanup:latest \
     --region=us-central1 \

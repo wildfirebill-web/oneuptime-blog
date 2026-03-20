@@ -73,6 +73,7 @@ Here is a Python implementation of the gRPC server:
 
 ```python
 # server.py - gRPC server implementation for the product catalog
+
 import os
 import grpc
 from concurrent import futures

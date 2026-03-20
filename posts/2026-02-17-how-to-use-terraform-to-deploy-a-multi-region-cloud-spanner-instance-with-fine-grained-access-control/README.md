@@ -166,6 +166,7 @@ Spanner supports IAM at the instance, database, and even table level. Here is ho
 # iam.tf - Fine-grained access control for Spanner
 
 # Service account for the application
+
 resource "google_service_account" "app" {
   project      = var.project_id
   account_id   = "spanner-app"

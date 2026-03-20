@@ -16,6 +16,7 @@ Start with the big picture:
 
 ```bash
 # Check overall time sync status
+
 timedatectl
 ```
 

@@ -26,6 +26,7 @@ List all deployments and their resources:
 
 ```bash
 # List all deployments
+
 gcloud deployment-manager deployments list
 
 # List resources in a deployment

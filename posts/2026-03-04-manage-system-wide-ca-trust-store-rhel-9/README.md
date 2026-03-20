@@ -34,6 +34,7 @@ Here are the key paths:
 
 ```bash
 # View the source directory structure
+
 ls -la /etc/pki/ca-trust/source/
 ```
 

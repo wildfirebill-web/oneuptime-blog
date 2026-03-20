@@ -345,6 +345,7 @@ For programmatic access, you can start queries via the CLI:
 
 ```bash
 # Run a Logs Insights query from the CLI
+
 aws logs start-query \
   --log-group-name "/myapp/production/api" \
   --start-time $(date -d '1 hour ago' +%s) \

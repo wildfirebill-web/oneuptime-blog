@@ -27,6 +27,7 @@ Self-hosting your password manager gives you full control over your sensitive cr
 
 ```bash
 # Create data directory
+
 sudo mkdir -p /opt/vaultwarden/data
 sudo chown -R 1000:1000 /opt/vaultwarden
 ```

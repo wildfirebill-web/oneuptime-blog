@@ -1,4 +1,4 @@
-# How to Use tofu metadata Commands
+# How to Use tofu metadata Commands - Tofu
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Learn how to use OpenTofu's tofu metadata subcommands to retrieve i
 
 ## Introduction
 
-The `tofu metadata` command group provides introspection capabilities — it lets you query information about OpenTofu functions, provider schemas, and configuration options. These commands are primarily used by tooling, editor extensions, and automation scripts rather than in day-to-day infrastructure management.
+The `tofu metadata` command group provides introspection capabilities - it lets you query information about OpenTofu functions, provider schemas, and configuration options. These commands are primarily used by tooling, editor extensions, and automation scripts rather than in day-to-day infrastructure management.
 
 ## tofu metadata functions
 
@@ -16,6 +16,7 @@ List all built-in OpenTofu functions:
 
 ```bash
 # List all available functions
+
 tofu metadata functions
 
 # Output (partial):

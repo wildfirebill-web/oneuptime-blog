@@ -67,6 +67,7 @@ With sharding (more replicas), adjust accordingly:
 
 ```yaml
 # For 4 controller shards
+
 apiVersion: policy/v1
 kind: PodDisruptionBudget
 metadata:

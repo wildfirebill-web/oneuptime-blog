@@ -14,6 +14,7 @@ MinIO is a high-performance S3-compatible object storage server that supports IP
 
 ```bash
 # Start MinIO listening on all interfaces (IPv4 and IPv6)
+
 MINIO_ROOT_USER=minioadmin \
 MINIO_ROOT_PASSWORD=minioadmin \
 minio server /data \

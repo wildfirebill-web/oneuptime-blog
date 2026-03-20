@@ -23,6 +23,7 @@ zswap is generally preferred when you have disk swap and want to reduce I/O whil
 
 ```bash
 # Check if zswap is compiled into the kernel
+
 cat /sys/module/zswap/parameters/enabled 2>/dev/null || \
   echo "zswap not loaded as module"
 

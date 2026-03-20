@@ -452,6 +452,7 @@ resolver:
   package: graph
 
 # Map GraphQL scalars to Go types
+
 models:
   ID:
     model:

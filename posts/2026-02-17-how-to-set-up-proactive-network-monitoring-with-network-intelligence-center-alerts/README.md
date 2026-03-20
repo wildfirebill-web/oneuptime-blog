@@ -28,6 +28,7 @@ Before creating alerts, you need somewhere to send them. Set up notification cha
 
 ```bash
 # Create an email notification channel
+
 gcloud monitoring channels create \
   --display-name="Network Ops Team Email" \
   --type=email \

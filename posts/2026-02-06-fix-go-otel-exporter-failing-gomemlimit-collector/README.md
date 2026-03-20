@@ -27,6 +27,7 @@ Set `GOMEMLIMIT` to about 80% of your container's memory limit. If your containe
 
 ```yaml
 # Kubernetes deployment for the Collector
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

@@ -55,6 +55,7 @@ resource "aws_instance" "hibernatable" {
 
 ```hcl
 # Launch template with hibernation for Auto Scaling Groups
+
 # Note: ASGs must be configured to stop instances for scale-in
 # hibernation is for individual instance suspend/resume
 resource "aws_launch_template" "hibernate" {

@@ -12,7 +12,7 @@ Manual container scaling creates operational toil: someone has to monitor CPU an
 
 ## Understanding HPA Architecture
 
-```
+```text
 Metrics Server → Collects CPU/Memory
      ↓
 HPA Controller → Compares to targets
@@ -28,6 +28,7 @@ HPA requires the Kubernetes metrics server:
 
 ```bash
 # Install metrics-server
+
 kubectl apply -f https://github.com/kubernetes-sigs/metrics-server/releases/latest/download/components.yaml
 
 # For clusters with self-signed certificates

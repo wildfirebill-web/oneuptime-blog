@@ -42,6 +42,7 @@ flowchart TD
 # postgresql.conf on primary
 
 # Enable WAL archiving
+
 wal_level = replica
 max_wal_senders = 10
 wal_keep_size = 1GB

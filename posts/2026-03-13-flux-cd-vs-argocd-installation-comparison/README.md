@@ -27,6 +27,7 @@ Flux CD uses a bootstrap process that installs controllers and stores configurat
 
 ```bash
 # Install the Flux CLI
+
 curl -s https://fluxcd.io/install.sh | sudo bash
 
 # Verify prerequisites

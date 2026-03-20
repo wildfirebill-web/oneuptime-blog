@@ -77,6 +77,7 @@ Mount custom configuration files to tune database parameters:
 
 ```bash
 # PostgreSQL custom config
+
 cat > ~/db-config/postgresql.conf << 'EOF'
 max_connections = 200
 shared_buffers = 256MB

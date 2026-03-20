@@ -166,6 +166,7 @@ Before tuning, measure actual usage. Use Prometheus queries to see real resource
 
 ```bash
 # CPU usage per sidecar
+
 container_cpu_usage_seconds_total{container="istio-proxy"}
 
 # Memory usage per sidecar

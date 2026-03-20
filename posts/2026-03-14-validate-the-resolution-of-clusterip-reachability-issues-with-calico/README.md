@@ -27,6 +27,7 @@ This guide provides a structured validation procedure that covers immediate veri
 
 ```bash
 # Verify all Calico system pods are healthy
+
 kubectl get pods -n calico-system -o wide
 
 # Check for zero error events in the last 10 minutes

@@ -96,6 +96,7 @@ Schedule this to run every few minutes for near-real-time updates:
 
 ```bash
 # Create a scheduled query for the merge operation
+
 bq query --use_legacy_sql=false --schedule="every 5 minutes" \
   --display_name="Merge staging to orders" \
   --destination_table="" \

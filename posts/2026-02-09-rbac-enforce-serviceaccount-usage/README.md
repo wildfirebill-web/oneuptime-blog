@@ -32,6 +32,7 @@ Each application should have its own ServiceAccount:
 
 ```bash
 # Create ServiceAccount for an application
+
 kubectl create serviceaccount my-app -n production
 ```
 

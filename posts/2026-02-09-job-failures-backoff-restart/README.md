@@ -34,6 +34,7 @@ Start by checking the Job status and events to understand why it's failing.
 
 ```bash
 # Check Job status
+
 kubectl get job my-batch-job -o yaml
 
 # View Job events

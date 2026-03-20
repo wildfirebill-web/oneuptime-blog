@@ -24,6 +24,7 @@ Start by understanding exactly what your RKE cluster looks like:
 
 ```bash
 # Check your RKE cluster configuration
+
 cat cluster.yml
 
 # Review the current state of your cluster

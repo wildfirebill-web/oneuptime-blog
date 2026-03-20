@@ -18,6 +18,7 @@ The foundation of self-healing is detecting when infrastructure has drifted from
 
 ```yaml
 # .github/workflows/drift-remediation.yaml
+
 name: Drift Detection and Auto-Remediation
 
 on:

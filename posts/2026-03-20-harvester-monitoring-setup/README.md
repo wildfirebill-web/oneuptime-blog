@@ -1,4 +1,4 @@
-# How to Configure Harvester Monitoring
+# How to Configure Harvester Monitoring - Setup
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -39,6 +39,7 @@ helm install rancher-monitoring \
 
 ```yaml
 # Patch Prometheus to adjust retention
+
 kubectl patch prometheus rancher-monitoring-prometheus \
   -n cattle-monitoring-system \
   --type merge \
@@ -133,6 +134,6 @@ curl -X POST http://admin:password@localhost:3000/api/dashboards/import \
 ## Best Practices
 
 - Use Longhorn-backed persistent volumes for Prometheus data to survive node failures.
-- Set Prometheus retention based on your compliance requirements — typically 30-90 days.
+- Set Prometheus retention based on your compliance requirements - typically 30-90 days.
 - Configure separate Alertmanager routes for node-level alerts vs. VM-level alerts.
 - Add custom dashboards for your specific VM workloads alongside the default Harvester dashboards.

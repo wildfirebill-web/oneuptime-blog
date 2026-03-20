@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Python, SNMP, Network Monitoring, PySNMP
+Tags: IPv6, Python, SNMP, Network Monitoring, Pysnmp
 
 Description: Poll network devices over IPv6 using SNMP with Python's PySNMP library, query IPv6-specific MIBs, and build IPv6 network monitoring tools.
 
@@ -49,6 +49,7 @@ def snmp_get_ipv6(host: str, oid: str,
         return str(var_bind[1])
 
 # Query sysDescr from an IPv6 device
+
 host = "2001:db8::router"
 result = snmp_get_ipv6(host, "1.3.6.1.2.1.1.1.0")
 print(f"sysDescr: {result}")
@@ -223,4 +224,4 @@ with concurrent.futures.ThreadPoolExecutor(max_workers=10) as executor:
 
 ## Conclusion
 
-PySNMP's `UdpTransportTarget((host, port))` accepts IPv6 addresses directly — pass the bare IPv6 address without brackets. Use SNMPv2c (`CommunityData`) for backward compatibility or SNMPv3 (`UsmUserData`) with SHA/AES for secure polling over IPv6. Query IPv6-specific device information via RFC 2465 MIBs (`1.3.6.1.2.1.55.*` for ipv6IfTable and ipv6AddrTable) and RFC 4293 (`1.3.6.1.2.1.4.34.*` for ipAddressTable). Use `nextCmd` for WALK operations and `concurrent.futures.ThreadPoolExecutor` to poll multiple IPv6 devices in parallel. Prefer SNMPv3 in production — community strings in SNMPv2c are transmitted in cleartext.
+PySNMP's `UdpTransportTarget((host, port))` accepts IPv6 addresses directly - pass the bare IPv6 address without brackets. Use SNMPv2c (`CommunityData`) for backward compatibility or SNMPv3 (`UsmUserData`) with SHA/AES for secure polling over IPv6. Query IPv6-specific device information via RFC 2465 MIBs (`1.3.6.1.2.1.55.*` for ipv6IfTable and ipv6AddrTable) and RFC 4293 (`1.3.6.1.2.1.4.34.*` for ipAddressTable). Use `nextCmd` for WALK operations and `concurrent.futures.ThreadPoolExecutor` to poll multiple IPv6 devices in parallel. Prefer SNMPv3 in production - community strings in SNMPv2c are transmitted in cleartext.

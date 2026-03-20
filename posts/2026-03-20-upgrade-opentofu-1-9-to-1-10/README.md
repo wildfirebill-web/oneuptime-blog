@@ -14,6 +14,7 @@ OpenTofu 1.10 continues the project's evolution with new features, performance i
 
 ```bash
 # Confirm current version
+
 tofu version
 # OpenTofu v1.9.x on linux_amd64
 
@@ -150,4 +151,4 @@ git checkout -- versions.tf .opentofu-version
 
 ## Conclusion
 
-Upgrading from OpenTofu 1.9 to 1.10 follows the same well-established pattern. With proper preparation — state backups, baseline plans, and version control tagging — the upgrade is low-risk and reversible. Keep CI/CD pipeline configurations updated to reflect the new version, and document the upgrade for team awareness.
+Upgrading from OpenTofu 1.9 to 1.10 follows the same well-established pattern. With proper preparation - state backups, baseline plans, and version control tagging - the upgrade is low-risk and reversible. Keep CI/CD pipeline configurations updated to reflect the new version, and document the upgrade for team awareness.

@@ -25,6 +25,7 @@ Required scopes:
 
 ```bash
 # Set the token as an environment variable
+
 export GITHUB_TOKEN="ghp_your_personal_access_token"
 ```
 

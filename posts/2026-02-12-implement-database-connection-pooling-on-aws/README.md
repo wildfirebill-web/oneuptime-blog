@@ -56,6 +56,7 @@ First, store your database credentials in Secrets Manager (RDS Proxy requires th
 
 ```bash
 # Store database credentials in Secrets Manager for RDS Proxy
+
 aws secretsmanager create-secret \
   --name my-db-credentials \
   --secret-string '{"username":"admin","password":"YourPassword123"}'

@@ -41,6 +41,7 @@ Proxy extensions are configured in the ArgoCD ConfigMap (`argocd-cm`). Each exte
 
 ```yaml
 # argocd-cm ConfigMap
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

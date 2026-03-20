@@ -50,6 +50,7 @@ graph TD
 
 ```bash
 # Mount tmpfs with a 2 GB limit
+
 mkdir -p /mnt/tmpfs
 mount -t tmpfs -o size=2G tmpfs /mnt/tmpfs
 ```

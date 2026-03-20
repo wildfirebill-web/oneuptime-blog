@@ -20,6 +20,7 @@ Here's a production-ready user pool configuration:
 
 ```hcl
 # variables.tf
+
 variable "environment" {
   description = "Environment name (dev, staging, prod)"
   type        = string

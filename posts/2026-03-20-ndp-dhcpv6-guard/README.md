@@ -14,7 +14,7 @@ DHCPv6 Guard is a switch-level security feature that blocks DHCPv6 server messag
 
 A rogue DHCPv6 server can assign malicious configuration to all hosts that request addresses.
 
-```
+```text
 Rogue DHCPv6 Attack Scenario:
 
 Legitimate DHCPv6 Server:
@@ -40,7 +40,7 @@ Result:
 
 DHCPv6 Guard targets the server-to-client direction messages.
 
-```
+```text
 DHCPv6 Message Flow:
 
 Client-to-Server (allowed on all ports):
@@ -66,7 +66,7 @@ Only the legitimate server port can send these messages.
 
 DHCPv6 Guard and RA Guard address different aspects of IPv6 configuration.
 
-```
+```text
 M=0, O=0 (SLAAC only):
   RA provides prefix + gateway ← protected by RA Guard
   No DHCPv6 server needed
@@ -84,7 +84,7 @@ Deploy both RA Guard AND DHCPv6 Guard for complete protection.
 
 ## How DHCPv6 Guard Classifies Ports
 
-```
+```text
 Port Classification:
 
 Trusted Port (DHCPv6 server port):
@@ -107,7 +107,7 @@ Port State vs Role:
 
 DHCPv6 Guard must handle relay agents correctly in larger networks.
 
-```
+```text
 DHCPv6 Relay Scenario:
 
 [DHCPv6 Client] → [Access Switch] → [DHCPv6 Relay Agent] → [DHCPv6 Server]
@@ -132,6 +132,7 @@ For Linux-based environments without managed switches, ip6tables can approximate
 
 ```bash
 # On a Linux host: block DHCPv6 server messages from untrusted direction
+
 # DHCPv6 uses UDP port 546 (client) and 547 (server)
 
 # Allow DHCPv6 client messages (outbound to server, port 547)
@@ -152,7 +153,7 @@ sudo ip6tables -A INPUT -p udp --dport 546 -j DROP
 
 ## What DHCPv6 Guard Does Not Protect
 
-```
+```text
 DHCPv6 Guard Limitations:
 
 1. Does NOT protect against rogue RAs:

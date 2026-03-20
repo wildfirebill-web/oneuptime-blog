@@ -152,6 +152,7 @@ MicroProfile Telemetry integrates with MicroProfile Config for flexible configur
 
 ```properties
 # Service identification
+
 otel.service.name=liberty-microservice
 otel.resource.attributes=service.namespace=production,service.version=1.0.0,deployment.environment=prod
 

@@ -14,6 +14,7 @@ Python 2 reached end of life in January 2020, and modern Ansible versions requir
 
 ```bash
 # Check which Python Ansible uses on the control node
+
 ansible --version
 # Look for the "python version" line
 

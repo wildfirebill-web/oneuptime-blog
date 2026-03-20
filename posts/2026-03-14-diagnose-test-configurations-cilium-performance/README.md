@@ -27,6 +27,7 @@ This guide covers the systematic analysis of Cilium configuration for performanc
 
 ```bash
 # Dump complete Cilium configuration
+
 cilium config view > /tmp/cilium-config.txt
 
 # Check critical performance settings

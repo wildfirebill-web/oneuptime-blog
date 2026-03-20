@@ -18,6 +18,7 @@ Always start by getting the full job details.
 
 ```bash
 # Get complete job information
+
 aws batch describe-jobs --jobs <job-id> \
   --query 'jobs[0].{
     Status: status,

@@ -36,6 +36,7 @@ Click **Save** to apply.
 
 ```bash
 # Authenticate
+
 TOKEN=$(curl -s -X POST \
   https://localhost:9443/api/auth \
   -H "Content-Type: application/json" \
@@ -97,7 +98,7 @@ curl -X PUT \
 
 ## Banner Best Practices
 
-- Keep banners concise — very long text hurts usability
+- Keep banners concise - very long text hurts usability
 - Include contact information for legitimate access requests
 - Review with your legal team for compliance requirements
 - Avoid including sensitive information in the banner text itself

@@ -44,6 +44,7 @@ common:
   replication_factor: 1
 
 # Multi-tenant paths
+
 storage_config:
   boltdb_shipper:
     active_index_directory: /loki/index

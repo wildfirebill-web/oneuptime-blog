@@ -86,6 +86,7 @@ BINLOG_DIR="/hot-storage/mysql-binlogs"
 TIMESTAMP=$(date +%Y%m%d_%H%M%S)
 
 # Create full backup
+
 mysqldump --single-transaction \
     --flush-logs \
     --master-data=2 \

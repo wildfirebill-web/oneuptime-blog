@@ -839,6 +839,7 @@ Setting up the tracer in Python follows the same principles as TypeScript. Impor
 
 ```python
 # instrumentation/tracer.py
+
 from opentelemetry import trace
 
 # Create a tracer for your service

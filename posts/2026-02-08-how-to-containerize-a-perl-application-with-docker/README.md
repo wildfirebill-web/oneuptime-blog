@@ -23,6 +23,7 @@ Create the application file:
 ```perl
 #!/usr/bin/env perl
 # app.pl - a simple Mojolicious web application
+
 use Mojolicious::Lite -signatures;
 
 # Root route returns a greeting

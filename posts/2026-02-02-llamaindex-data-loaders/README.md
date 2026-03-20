@@ -69,6 +69,7 @@ The following commands install LlamaIndex along with common reader dependencies:
 
 ```bash
 # Install core LlamaIndex package
+
 pip install llama-index
 
 # Install additional reader packages as needed

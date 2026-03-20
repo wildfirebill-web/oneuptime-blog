@@ -40,6 +40,7 @@ The connection plugins handle how Ansible talks to network devices. The CLI modu
 
 ```bash
 # Install the netcommon collection
+
 ansible-galaxy collection install ansible.netcommon
 
 # It is typically installed as a dependency of vendor collections

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Ubuntu, Rails, Puma, NGINX, Ruby
+Tags: Ubuntu, Rails, Puma, Nginx, Ruby
 
 Description: Deploy a Ruby on Rails application on Ubuntu using Puma as the application server and Nginx as the reverse proxy, including Capistrano-friendly directory structure and zero-downtime deploys.
 
@@ -23,6 +23,7 @@ The system Ruby packages are often outdated. Use rbenv or RVM for version manage
 
 ```bash
 # Install rbenv dependencies
+
 sudo apt update
 sudo apt install -y git curl libssl-dev libreadline-dev zlib1g-dev \
     build-essential libsqlite3-dev libpq-dev

@@ -16,6 +16,7 @@ Postfix is the go-to MTA (Mail Transfer Agent) on Ubuntu for this purpose. It is
 
 ```bash
 # Install Postfix and mail utilities
+
 sudo apt update
 sudo apt install -y postfix mailutils
 

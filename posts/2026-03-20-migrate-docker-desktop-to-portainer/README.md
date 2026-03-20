@@ -23,6 +23,7 @@ Before migrating, export important configurations:
 
 ```bash
 # List all images to migrate
+
 docker images --format "{{.Repository}}:{{.Tag}}" > images-to-migrate.txt
 
 # List all volumes

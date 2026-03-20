@@ -38,6 +38,7 @@ A backup vault is where your backups (recovery points) are stored. It's essentia
 
 ```bash
 # Create a KMS key for backup encryption
+
 KEY_ID=$(aws kms create-key \
   --description "AWS Backup encryption key" \
   --query 'KeyMetadata.KeyId' \

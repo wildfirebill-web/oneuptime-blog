@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, AWS, Budgets, Cost Management, Infrastructure as Code
+Tags: OpenTofu, AWS, Budget, Cost Management, Infrastructure as Code
 
 Description: Learn how to create AWS Budgets with OpenTofu to monitor spending, receive alerts when costs exceed thresholds, and enforce budget limits with automatic actions.
 
@@ -101,7 +101,7 @@ resource "aws_budgets_budget_action" "stop_nonprod" {
 
   action_threshold {
     action_threshold_type  = "ABSOLUTE_VALUE"
-    action_threshold_value = 12000  # USD — stop instances when spend reaches $12k
+    action_threshold_value = 12000  # USD - stop instances when spend reaches $12k
   }
 
   definition {

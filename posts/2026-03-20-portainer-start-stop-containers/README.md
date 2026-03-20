@@ -48,6 +48,7 @@ Portainer sends `docker stop` to the container, which:
 
 ```bash
 # Equivalent Docker CLI:
+
 docker stop my-container
 
 # With custom timeout (30 seconds before SIGKILL):
@@ -223,4 +224,4 @@ docker inspect my-container | jq '.[].State.ExitCode'
 
 ## Conclusion
 
-Starting and stopping containers in Portainer is straightforward through the web UI, with support for both individual and bulk operations. Understanding container states and stop behavior — particularly grace periods and stop signals — ensures your applications shut down cleanly without data corruption or incomplete operations. For complex service dependencies, use Docker Compose `depends_on` with health checks to manage startup order automatically.
+Starting and stopping containers in Portainer is straightforward through the web UI, with support for both individual and bulk operations. Understanding container states and stop behavior - particularly grace periods and stop signals - ensures your applications shut down cleanly without data corruption or incomplete operations. For complex service dependencies, use Docker Compose `depends_on` with health checks to manage startup order automatically.

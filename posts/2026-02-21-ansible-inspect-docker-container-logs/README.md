@@ -28,6 +28,7 @@ The simplest approach uses the `docker_container_info` module to get the contain
 
 ```yaml
 # get_logs.yml - Retrieve container logs
+
 ---
 - name: Get Docker Container Logs
   hosts: docker_hosts

@@ -12,7 +12,7 @@ Address deprecation is an important concept in IPv6 SLAAC address management. A 
 
 ## DEPRECATED State Definition
 
-```
+```text
 Address States and Source Address Selection:
 
 PREFERRED (active):
@@ -34,7 +34,7 @@ INVALID:
   - No traffic possible on this address
 
 Source Address Selection Rule 3 (RFC 6724):
-  "Prefer appropriate scope" — but for same scope:
+  "Prefer appropriate scope" - but for same scope:
   "Avoid deprecated addresses when a non-deprecated address exists"
   Deprecated = lower preference for new connection source
 ```
@@ -43,6 +43,7 @@ Source Address Selection Rule 3 (RFC 6724):
 
 ```bash
 # Linux: deprecated addresses show preferred_lft 0sec
+
 ip -6 addr show eth0
 # inet6 2001:db8::211:22ff:fe33:4455/64 scope global dynamic deprecated
 #    valid_lft 86400sec preferred_lft 0sec
@@ -138,7 +139,7 @@ ss -6 -n | grep ":443"
 
 ## Deprecation in Address Rotation (Privacy Extensions)
 
-```
+```text
 Privacy Extensions Deprecation Cycle:
 
 Day 0: New temporary address 2001:db8::AAAA generated (PREFERRED)
@@ -161,7 +162,7 @@ Effect on connections:
 
 ## Practical Impact: When to Expect Issues
 
-```
+```text
 Deprecation issues in practice:
 
 Issue 1: Long-lived connections break after ValidLifetime
@@ -182,4 +183,4 @@ Issue 3: Firewall rules matching deprecated address
 
 ## Conclusion
 
-Address deprecation is a graceful IPv6 mechanism for transitioning addresses without breaking existing connections. When a SLAAC address's Preferred Lifetime expires, it becomes DEPRECATED — still valid for existing connections but skipped for new ones. The source address selection algorithm (RFC 6724) ensures new connections use PREFERRED addresses when available. Routers trigger deprecation by sending RA with Preferred Lifetime = 0. This mechanism enables clean network renumbering by deprecating old prefixes before withdrawing them.
+Address deprecation is a graceful IPv6 mechanism for transitioning addresses without breaking existing connections. When a SLAAC address's Preferred Lifetime expires, it becomes DEPRECATED - still valid for existing connections but skipped for new ones. The source address selection algorithm (RFC 6724) ensures new connections use PREFERRED addresses when available. Routers trigger deprecation by sending RA with Preferred Lifetime = 0. This mechanism enables clean network renumbering by deprecating old prefixes before withdrawing them.

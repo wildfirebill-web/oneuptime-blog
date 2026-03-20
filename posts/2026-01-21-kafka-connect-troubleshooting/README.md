@@ -35,6 +35,7 @@ Kafka Connect is powerful but can be challenging to debug when things go wrong. 
 
 ```bash
 # List all connectors
+
 curl -s http://localhost:8083/connectors | jq
 
 # Get connector status

@@ -35,6 +35,7 @@ To verify that lineage is being captured for your BigQuery tables:
 
 ```bash
 # List lineage links for a specific BigQuery table
+
 # This shows what data flows into and out of the table
 gcloud data-lineage search-links \
   --project=my-project \

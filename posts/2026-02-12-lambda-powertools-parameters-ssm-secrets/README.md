@@ -194,6 +194,7 @@ from aws_lambda_powertools import Logger
 logger = Logger()
 
 # Create a provider with custom configuration
+
 ssm_provider = SSMProvider()
 
 def handler(event, context):

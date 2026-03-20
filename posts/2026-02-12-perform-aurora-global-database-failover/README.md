@@ -53,6 +53,7 @@ The CLI command is straightforward. You specify the global cluster and the ARN o
 
 ```bash
 # Perform a managed planned failover to the secondary cluster
+
 aws rds failover-global-cluster \
   --global-cluster-identifier my-global-db \
   --target-db-cluster-identifier arn:aws:rds:eu-west-1:123456789012:cluster:my-secondary-cluster

@@ -42,6 +42,7 @@ AWS Health events are available through EventBridge. Create a rule that captures
 
 ```bash
 # Create EventBridge rule for AWS Health events
+
 aws events put-rule \
   --name aws-health-events \
   --event-pattern '{

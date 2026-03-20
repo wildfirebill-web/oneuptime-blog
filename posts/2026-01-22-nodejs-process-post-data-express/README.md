@@ -81,6 +81,7 @@ fetch('/api/users', {
 
 ```bash
 # Using curl
+
 curl -X POST http://localhost:3000/api/users \
   -H "Content-Type: application/json" \
   -d '{"name": "John Doe", "email": "john@example.com", "age": 30}'

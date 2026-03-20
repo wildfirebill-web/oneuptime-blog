@@ -114,6 +114,7 @@ At 5,000 applications, Redis HA Sentinel may not be enough. Consider Redis Clust
 
 ```yaml
 # redis-cluster configuration
+
 redis:
   cluster:
     enabled: true

@@ -43,6 +43,7 @@ Define tenant namespaces with RBAC:
 
 ```yaml
 # clusters/production/tenants/team-alpha/namespace.yaml
+
 apiVersion: v1
 kind: Namespace
 metadata:

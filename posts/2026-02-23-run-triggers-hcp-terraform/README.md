@@ -36,6 +36,7 @@ That is it. Now every successful apply in the source workspace triggers a run in
 
 ```hcl
 # Source workspace: networking
+
 resource "tfe_workspace" "networking" {
   name         = "production-networking"
   organization = var.organization

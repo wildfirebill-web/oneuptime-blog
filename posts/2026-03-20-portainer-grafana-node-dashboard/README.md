@@ -1,8 +1,8 @@
-# How to Create a Node Metrics Dashboard in Grafana via Portainer
+# How to Create a Node Metrics Dashboard in Grafana via Portainer - Dashboard
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Grafana, Node Exporter, Dashboard, Host Metrics
+Tags: Portainer, Grafana, Node Exporter, Dashboards, Host Metrics
 
 Description: Learn how to create a comprehensive host metrics dashboard in Grafana using Node Exporter data for your Portainer infrastructure, covering CPU, memory, disk, and network panels with alerting.
 
@@ -16,7 +16,7 @@ A node metrics dashboard shows the health of the underlying host machines runnin
 - Node Exporter running on target hosts and scraped by Prometheus
 - Basic familiarity with Grafana dashboard creation
 
-## Step 1: Host Overview Row — Stat Panels
+## Step 1: Host Overview Row - Stat Panels
 
 Create a row with at-a-glance health indicators:
 
@@ -26,7 +26,7 @@ Create a row with at-a-glance health indicators:
 100 - (avg by (instance) (rate(node_cpu_seconds_total{mode="idle"}[5m])) * 100)
 ```
 
-```
+```text
 Visualization: Stat
 Title: CPU Usage
 Unit: Percent (0-100)
@@ -55,7 +55,7 @@ Color mode: Background
 (time() - node_boot_time_seconds) / 86400
 ```
 
-```
+```text
 Unit: Days
 Decimals: 1
 ```
@@ -66,10 +66,11 @@ Decimals: 1
 
 ```promql
 # Stacked areas showing time spent in each CPU mode
+
 avg by (mode) (rate(node_cpu_seconds_total{mode!="idle"}[5m])) * 100
 ```
 
-```
+```text
 Visualization: Time series
 Title: CPU Mode Breakdown
 Unit: Percent (0-100)
@@ -88,7 +89,7 @@ Legend aliases:
 
 **Panel: Memory Breakdown (Time Series)**
 
-```
+```text
 Title: Memory Usage
 
 Query A: Total Memory
@@ -127,7 +128,7 @@ High swap usage alongside memory pressure indicates the host needs more RAM.
      node_filesystem_size_bytes{fstype!~"tmpfs|overlay"}) * 100
 ```
 
-```
+```text
 Visualization: Bar gauge
 Orientation: Horizontal
 Min: 0, Max: 100
@@ -138,7 +139,7 @@ Legend: {{mountpoint}} on {{instance}}
 
 **Panel: Disk I/O Rate (Time Series)**
 
-```
+```text
 Query A (Reads):
   Expression: rate(node_disk_read_bytes_total[5m])
   Legend: Read {{device}}
@@ -155,7 +156,7 @@ Series override for writes: Negative Y (shows below axis)
 
 **Panel: Network I/O (Time Series)**
 
-```
+```text
 Query A (Inbound):
   Expression: rate(node_network_receive_bytes_total{device!~"lo|veth.*|br-.*|docker.*"}[5m])
   Legend: IN {{device}}
@@ -171,7 +172,7 @@ Unit: bytes/sec (IEC)
 
 Add an instance variable for multi-server monitoring:
 
-```
+```text
 Variable settings:
   Name: instance
   Type: Query
@@ -194,7 +195,7 @@ When Grafana fires alerts based on Node Exporter data, add annotations to mark a
 
 1. Go to **Dashboard settings** → **Annotations** → **Add annotation query**
 
-```
+```text
 Name: Alerts
 Data source: Prometheus
 Expr: changes(ALERTS{alertstate="firing"}[5m]) > 0
@@ -233,7 +234,7 @@ curl -s -X POST -u "admin:password" \
 
 ## Step 9: Set Up Grafana Alerts on Node Metrics
 
-```
+```text
 Create alert in Grafana:
 1. Edit the "Disk Usage" panel
 2. Go to "Alert" tab → "Create alert rule"

@@ -77,6 +77,7 @@ The HTTP Check receiver requires configuring target endpoints and check interval
 
 ```yaml
 # RECEIVERS: Define how telemetry enters the Collector
+
 receivers:
   # HTTP Check receiver performs synthetic monitoring
   httpcheck:

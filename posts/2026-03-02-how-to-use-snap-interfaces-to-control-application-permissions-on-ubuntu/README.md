@@ -22,6 +22,7 @@ A connection links a plug to a slot. When connected, AppArmor and seccomp securi
 
 ```bash
 # The fundamental command: show all connections for a snap
+
 snap connections firefox
 
 # Show all connections system-wide

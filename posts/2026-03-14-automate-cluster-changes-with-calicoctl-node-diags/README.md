@@ -85,6 +85,7 @@ Automatically collect diagnostics when issues are detected:
 ```bash
 #!/bin/bash
 # auto-diag-on-failure.sh
+
 # Monitors BGP health and collects diagnostics on failure
 
 STORAGE_DIR="/var/calico-diags"

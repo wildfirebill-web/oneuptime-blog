@@ -105,6 +105,7 @@ This configuration creates a three-node Kafka cluster with KRaft mode (no ZooKee
 
 ```yaml
 # docker-compose.yml
+
 version: '3.8'
 services:
   kafka-1:

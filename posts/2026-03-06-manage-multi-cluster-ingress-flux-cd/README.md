@@ -39,6 +39,7 @@ Use Flux to deploy an ingress controller consistently across all clusters.
 
 ```yaml
 # infrastructure/ingress-nginx/namespace.yaml
+
 apiVersion: v1
 kind: Namespace
 metadata:

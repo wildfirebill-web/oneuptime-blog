@@ -31,6 +31,7 @@ Define fail2ban settings and jail configurations as Ansible variables.
 
 ```yaml
 # group_vars/all.yml
+
 fail2ban_version: "latest"
 
 # Default settings applied to all jails

@@ -14,6 +14,7 @@ The "NOAUTH Authentication required" error means Redis requires a password but y
 
 ```python
 # Error appears as:
+
 # redis.exceptions.AuthenticationError: NOAUTH Authentication required.
 
 # Or with wrong password:

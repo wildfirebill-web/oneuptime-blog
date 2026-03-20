@@ -103,6 +103,7 @@ Configure the cluster behavior when quorum is lost:
 
 ```bash
 # Stop all resources when quorum is lost (default)
+
 sudo pcs property set no-quorum-policy=stop
 
 # Freeze resources (do not start or stop anything)

@@ -44,6 +44,7 @@ For more advanced queries, you can use Monitoring Query Language (MQL). Here is 
 
 ```sql
 # Calculate sent bandwidth in Mbps per VPN tunnel
+
 fetch vpn_gateway
 | metric 'compute.googleapis.com/vpn/sent_bytes_count'
 | align rate(1m)

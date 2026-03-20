@@ -47,6 +47,7 @@ The Pull Request generator in ArgoCD ApplicationSets watches for open pull reque
 
 ```yaml
 # feature-branch-appset.yaml
+
 apiVersion: argoproj.io/v1alpha1
 kind: ApplicationSet
 metadata:
@@ -272,7 +273,7 @@ spec:
     warn: true
 ```
 
-## Resource Limits for Feature Branches
+Resource Limits for Feature Branches
 
 Prevent feature branches from consuming too many cluster resources:
 

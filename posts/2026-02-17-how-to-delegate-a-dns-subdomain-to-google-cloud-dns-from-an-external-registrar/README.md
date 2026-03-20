@@ -33,6 +33,7 @@ First, create a managed zone in Cloud DNS for the subdomain you want to manage.
 
 ```bash
 # Create a public managed zone for the subdomain
+
 gcloud dns managed-zones create cloud-subdomain \
     --dns-name=cloud.example.com. \
     --description="Managed zone for cloud.example.com subdomain" \

@@ -25,6 +25,7 @@ The key principles for Calico upgrades on OpenShift are: coordinate Calico upgra
 
 ```bash
 # Check current OpenShift version
+
 oc version
 
 # Check current Calico version

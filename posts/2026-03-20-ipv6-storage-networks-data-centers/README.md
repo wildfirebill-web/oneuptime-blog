@@ -12,7 +12,7 @@ Storage networks carry high-bandwidth, latency-sensitive I/O traffic. IPv6 on st
 
 ## IPv6 Storage Network Design
 
-```
+```text
 IPv6 Storage Network Architecture:
 
 Storage Network: 2001:db8:stor::/48
@@ -38,6 +38,7 @@ Host Addressing:
 # Configure iSCSI initiator over IPv6 (Linux)
 
 # Install open-iscsi
+
 sudo apt install open-iscsi -y
 
 # /etc/iscsi/iscsid.conf
@@ -168,4 +169,4 @@ ip6tables -A FORWARD -i eth-wan -o eth-stor -j DROP
 ip6tables-save > /etc/ip6tables/storage-rules.v6
 ```
 
-IPv6 storage networks support all major storage protocols—iSCSI (using bracket notation for IPv6 targets), NFS v4.x (export entries use IPv6 prefixes), NVMe-oF TCP (specifying `addr_adrfam=ipv6`)—and benefit from IPv6's larger address space for managing thousands of storage endpoints without NAT, while strict VLAN isolation and ip6tables policies protect storage traffic from unauthorized access.
+IPv6 storage networks support all major storage protocols-iSCSI (using bracket notation for IPv6 targets), NFS v4.x (export entries use IPv6 prefixes), NVMe-oF TCP (specifying `addr_adrfam=ipv6`)-and benefit from IPv6's larger address space for managing thousands of storage endpoints without NAT, while strict VLAN isolation and ip6tables policies protect storage traffic from unauthorized access.

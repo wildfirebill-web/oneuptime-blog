@@ -1,4 +1,4 @@
-# How to Implement Cluster Federation with Rancher
+# How to Implement Cluster Federation with Rancher - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -22,12 +22,13 @@ This guide covers all three.
 
 ## Part 1: Fleet-Based Federation
 
-Fleet provides the simplest form of federation — syncing Kubernetes resources from Git to multiple clusters simultaneously.
+Fleet provides the simplest form of federation - syncing Kubernetes resources from Git to multiple clusters simultaneously.
 
 ### Create a Federated Application
 
 ```yaml
 # fleet-federation/gitrepo.yaml
+
 apiVersion: fleet.cattle.io/v1alpha1
 kind: GitRepo
 metadata:
@@ -120,13 +121,13 @@ spec:
               ports:
                 - containerPort: 8080
 
-  # Placement — which clusters to deploy to
+  # Placement - which clusters to deploy to
   placement:
     clusters:
       - name: cluster-us-east
       - name: cluster-eu-west
 
-  # Overrides — cluster-specific customizations
+  # Overrides - cluster-specific customizations
   overrides:
     - clusterName: cluster-us-east
       clusterOverrides:
@@ -141,7 +142,7 @@ spec:
 ### Create a ReplicaSchedulingPreference
 
 ```yaml
-# rsp.yaml — automatically distribute replicas based on cluster weight
+# rsp.yaml - automatically distribute replicas based on cluster weight
 apiVersion: scheduling.kubefed.io/v1alpha1
 kind: ReplicaSchedulingPreference
 metadata:
@@ -210,4 +211,4 @@ subctl show connections
 
 ## Conclusion
 
-Cluster federation with Rancher spans multiple levels of sophistication: Fleet provides simple, GitOps-driven resource synchronization; KubeFed adds intelligent placement and cross-cluster replica scheduling; and Submariner enables cross-cluster service discovery. Choose the approach that matches your complexity requirements — most organizations start with Fleet and add KubeFed or Submariner as their multi-cluster architecture matures.
+Cluster federation with Rancher spans multiple levels of sophistication: Fleet provides simple, GitOps-driven resource synchronization; KubeFed adds intelligent placement and cross-cluster replica scheduling; and Submariner enables cross-cluster service discovery. Choose the approach that matches your complexity requirements - most organizations start with Fleet and add KubeFed or Submariner as their multi-cluster architecture matures.

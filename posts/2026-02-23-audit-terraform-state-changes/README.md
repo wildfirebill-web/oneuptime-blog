@@ -30,6 +30,7 @@ AWS CloudTrail captures every S3 API call, including reads and writes to your st
 
 ```hcl
 # Create a CloudTrail trail specifically for Terraform state auditing
+
 resource "aws_cloudtrail" "terraform_state_audit" {
   name                       = "terraform-state-audit"
   s3_bucket_name             = aws_s3_bucket.audit_logs.id

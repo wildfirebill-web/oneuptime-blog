@@ -38,6 +38,7 @@ Via API:
 
 ```bash
 # Get network rules for all groups
+
 curl -sk \
   "https://neuvector-manager:8443/v1/policy/rule?start=0&limit=100" \
   -H "X-Auth-Token: ${TOKEN}" | jq '.rules[] | {
@@ -55,7 +56,7 @@ curl -sk \
 2. Click **+ Add Rule**
 3. Configure the rule:
 
-```
+```text
 From Group: nv.frontend.production
 To Group: nv.backend-api.production
 Ports: TCP/8080

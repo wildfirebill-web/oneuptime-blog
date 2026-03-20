@@ -14,6 +14,7 @@ Google Artifact Registry (GAR) is GCP's container registry service, replacing th
 
 ```bash
 # Create a service account for Portainer
+
 gcloud iam service-accounts create portainer-puller \
   --display-name="Portainer Image Puller"
 

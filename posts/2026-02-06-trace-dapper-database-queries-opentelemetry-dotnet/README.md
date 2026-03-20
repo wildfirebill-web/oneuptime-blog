@@ -33,6 +33,7 @@ dotnet add package OpenTelemetry.Exporter.OpenTelemetryProtocol
 dotnet add package Dapper
 dotnet add package System.Data.SqlClient
 # Or use Microsoft.Data.SqlClient for newer SQL Server features
+
 ```
 
 Configure OpenTelemetry in your application:

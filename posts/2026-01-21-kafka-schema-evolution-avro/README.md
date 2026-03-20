@@ -77,6 +77,7 @@ services:
 
 ```bash
 # Set global default
+
 curl -X PUT -H "Content-Type: application/vnd.schemaregistry.v1+json" \
   --data '{"compatibility": "BACKWARD"}' \
   http://localhost:8081/config

@@ -51,6 +51,7 @@ This configuration sets resource attributes that identify the team and environme
 
 ```yaml
 # otel-sdk-config.yaml
+
 # Set resource attributes to identify the owning team and environment
 resource:
   attributes:

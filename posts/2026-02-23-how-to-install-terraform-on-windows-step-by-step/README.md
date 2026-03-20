@@ -20,6 +20,7 @@ Go to the official Terraform downloads page at [https://developer.hashicorp.com/
 
 ```powershell
 # Download the latest Terraform zip for Windows AMD64
+
 # Replace the version number with the latest available
 Invoke-WebRequest -Uri "https://releases.hashicorp.com/terraform/1.7.5/terraform_1.7.5_windows_amd64.zip" -OutFile "$env:TEMP\terraform.zip"
 ```

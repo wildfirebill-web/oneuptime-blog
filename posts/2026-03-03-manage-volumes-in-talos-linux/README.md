@@ -22,6 +22,7 @@ Volumes are defined in the `machine.disks` section of the Talos machine configur
 
 ```yaml
 # Machine configuration with custom volume
+
 machine:
   disks:
     - device: /dev/sdb

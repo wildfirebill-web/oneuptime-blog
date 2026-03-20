@@ -22,6 +22,7 @@ Configure the REST API:
 amplify add api
 
 # ? Select from one of the below mentioned services: REST
+
 # ? Provide a friendly name for your resource: itemsapi
 # ? Provide a path (e.g., /items): /items
 # ? Choose a Lambda source: Create a new Lambda function

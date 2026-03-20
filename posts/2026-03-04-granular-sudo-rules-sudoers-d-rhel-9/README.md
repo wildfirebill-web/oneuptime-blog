@@ -53,6 +53,7 @@ sudo visudo -f /etc/sudoers.d/webadmins
 
 ```bash
 # Web admins can start, stop, restart, and check status of httpd
+
 %webadmins ALL=(root) /usr/bin/systemctl start httpd, \
                        /usr/bin/systemctl stop httpd, \
                        /usr/bin/systemctl restart httpd, \

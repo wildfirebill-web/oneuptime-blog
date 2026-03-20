@@ -38,6 +38,7 @@ Before you hit the limit, you can measure resource sizes.
 
 ```bash
 # Check the size of a specific resource in bytes
+
 kubectl get configmap large-config -n default -o json | wc -c
 
 # Find the largest resources in a namespace

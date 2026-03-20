@@ -31,6 +31,7 @@ If you do not already have a VPC, create one:
 
 ```bash
 # Create a custom VPC network for Composer
+
 gcloud compute networks create composer-vpc \
   --subnet-mode=custom \
   --bgp-routing-mode=regional

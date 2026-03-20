@@ -20,6 +20,7 @@ Inspect the default bridge:
 
 ```bash
 # View the docker0 bridge interface and its configuration
+
 ip addr show docker0
 ```
 

@@ -69,6 +69,7 @@ Rotate Tang keys periodically. Old keys continue to work while new bindings use 
 
 ```bash
 # Generate new keys
+
 sudo tangd-keygen /var/db/tang/
 
 # The old keys remain for clients using them

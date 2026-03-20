@@ -8,13 +8,13 @@ Description: Learn the purpose of the 4-bit Version field in the IPv4 header, ho
 
 ## Introduction
 
-The Version field is the first 4 bits of every IP packet. It tells the receiving network device which version of the Internet Protocol the packet uses. For IPv4, this value is always 4 (binary `0100`). For IPv6, it is 6 (binary `0110`). This single field is what allows routers and hosts to correctly parse the rest of the header — without it, the remaining bytes cannot be interpreted.
+The Version field is the first 4 bits of every IP packet. It tells the receiving network device which version of the Internet Protocol the packet uses. For IPv4, this value is always 4 (binary `0100`). For IPv6, it is 6 (binary `0110`). This single field is what allows routers and hosts to correctly parse the rest of the header - without it, the remaining bytes cannot be interpreted.
 
 ## The Version Field in Context
 
 The first byte of an IP header encodes two fields: Version (upper 4 bits) and IHL (lower 4 bits).
 
-```
+```yaml
 First byte (8 bits):
   7   6   5   4   3   2   1   0
 +---+---+---+---+---+---+---+---+
@@ -38,6 +38,7 @@ def get_ip_version(raw_packet: bytes) -> int:
     return version
 
 # Dispatching to the correct parser
+
 def parse_ip_packet(raw_bytes: bytes):
     version = get_ip_version(raw_bytes)
 
@@ -129,8 +130,8 @@ When a packet arrives at a router interface:
 4. If version = 6: parse as IPv6, apply IPv6 forwarding logic
 5. If unknown: discard the packet (and optionally send ICMP error)
 
-The version field must be checked before any other field because the header layouts for IPv4 and IPv6 are completely different — only the version field occupies the same position in both.
+The version field must be checked before any other field because the header layouts for IPv4 and IPv6 are completely different - only the version field occupies the same position in both.
 
 ## Summary
 
-The 4-bit Version field is the first thing any IP implementation reads because IPv4 and IPv6 have completely different header structures. For IPv4, version is always 4 (`0x4` in hex), making `0x45` the most common first byte for packets without options. In dual-stack environments, routers and OS kernels use this field to dispatch packets to the correct IP stack. In tunnel protocols like 6in4, there are two version fields — one per layer — and both must be read to fully parse the packet.
+The 4-bit Version field is the first thing any IP implementation reads because IPv4 and IPv6 have completely different header structures. For IPv4, version is always 4 (`0x4` in hex), making `0x45` the most common first byte for packets without options. In dual-stack environments, routers and OS kernels use this field to dispatch packets to the correct IP stack. In tunnel protocols like 6in4, there are two version fields - one per layer - and both must be read to fully parse the packet.

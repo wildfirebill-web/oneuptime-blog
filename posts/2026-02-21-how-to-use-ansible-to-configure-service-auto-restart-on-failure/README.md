@@ -51,6 +51,7 @@ Ansible template for a service with auto-restart:
 
 ```jinja2
 # roles/auto_restart/templates/service.j2
+
 [Unit]
 Description={{ svc_description }}
 After=network.target
@@ -324,7 +325,7 @@ Deploy a failure notification unit:
             \"type\": \"section\",
             \"text\": {
               \"type\": \"mrkdwn\",
-              \"text\": \"*Service Failure*\nHost: ${HOST}\nService: ${SERVICE}\n\`\`\`${STATUS}\`\`\`\"
+              \"text\": \"*Service Failure*\nHost: ${HOST}\nService: ${SERVICE}\n```${STATUS}```\"
             }
           }]
         }"

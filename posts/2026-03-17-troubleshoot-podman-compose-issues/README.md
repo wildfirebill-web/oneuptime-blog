@@ -18,6 +18,7 @@ When migrating from Docker Compose or setting up a new project with podman-compo
 
 ```bash
 # Error: short-name resolution
+
 # "nginx:alpine" is ambiguous - Podman doesn't know which registry
 
 # Fix: use fully qualified image names

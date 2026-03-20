@@ -45,6 +45,7 @@ Most deployment failures trace back to credential issues. Here's how to properly
 
 ```yaml
 # .github/workflows/deploy.yml
+
 name: Deploy to Production
 
 on:
@@ -118,7 +119,7 @@ roleRef:
   apiGroup: rbac.authorization.k8s.io
 ```
 
-## Resource Exhaustion Failures
+Resource Exhaustion Failures
 
 Pipelines often fail when they run out of memory, disk space, or hit CPU limits.
 

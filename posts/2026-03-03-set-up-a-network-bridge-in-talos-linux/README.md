@@ -24,6 +24,7 @@ Here is how to create a simple bridge in Talos Linux:
 
 ```yaml
 # machine-config.yaml
+
 machine:
   network:
     interfaces:

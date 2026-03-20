@@ -38,6 +38,7 @@ Start by creating a fresh Kind cluster. You can use a simple one-liner or a conf
 
 ```bash
 # Create a single-node Kind cluster named "metallb-lab"
+
 kind create cluster --name metallb-lab
 ```
 

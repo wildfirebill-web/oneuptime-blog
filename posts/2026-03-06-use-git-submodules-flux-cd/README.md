@@ -36,6 +36,7 @@ First, create a shared repository that contains common Kubernetes manifests.
 
 ```yaml
 # shared-configs/base/namespace.yaml
+
 # Standard namespace template with labels required by the organization
 apiVersion: v1
 kind: Namespace

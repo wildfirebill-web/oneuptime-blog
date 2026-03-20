@@ -8,11 +8,11 @@ Description: Configure correct MTU values for cloud VPN connections on AWS, GCP,
 
 ## Introduction
 
-Cloud VPN connections use IPsec tunnels that add overhead to every packet, reducing the effective MTU available for payload. AWS Site-to-Site VPN, GCP Cloud VPN, and Azure VPN Gateway all use IPsec with different encapsulation overhead. Misconfigured MTU leads to fragmentation, packet loss, and poor performance — particularly for TCP connections that don't receive correct MSS values.
+Cloud VPN connections use IPsec tunnels that add overhead to every packet, reducing the effective MTU available for payload. AWS Site-to-Site VPN, GCP Cloud VPN, and Azure VPN Gateway all use IPsec with different encapsulation overhead. Misconfigured MTU leads to fragmentation, packet loss, and poor performance - particularly for TCP connections that don't receive correct MSS values.
 
 ## IPsec VPN Overhead Calculation
 
-```
+```text
 IPsec tunnel overhead (transport mode ESP with AES-GCM-128):
   Original IP header:    20 bytes (preserved or new)
   ESP header:            8 bytes
@@ -35,6 +35,7 @@ Azure recommends: MTU 1350 for P2S VPN
 
 ```bash
 # AWS VPN uses 1500-byte physical MTU with IPsec overhead
+
 # Recommended customer gateway MTU settings:
 
 # On customer gateway (your on-prem router or EC2 instance):

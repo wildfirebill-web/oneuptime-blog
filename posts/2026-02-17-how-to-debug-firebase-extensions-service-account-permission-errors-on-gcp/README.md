@@ -76,6 +76,7 @@ This command lists the installed extensions and their configuration:
 
 ```bash
 # List installed extensions
+
 firebase ext:list --project YOUR_PROJECT_ID
 ```
 

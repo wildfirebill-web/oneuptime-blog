@@ -65,6 +65,7 @@ resource "azurerm_resource_group" "messaging" {
 }
 
 # Create the Service Bus namespace
+
 resource "azurerm_servicebus_namespace" "main" {
   name                = "sb-prod-eastus-001"
   location            = azurerm_resource_group.messaging.location

@@ -28,6 +28,7 @@ GMP can run in two modes: managed collection (Google runs the collectors) or sel
 
 ```bash
 # Enable managed collection on an existing GKE cluster
+
 gcloud container clusters update my-cluster \
   --region=us-central1 \
   --enable-managed-prometheus

@@ -39,6 +39,7 @@ Verify your host supports IPv6:
 
 ```bash
 # Check if IPv6 is enabled on the host
+
 cat /proc/sys/net/ipv6/conf/all/disable_ipv6
 # Output should be 0 (IPv6 enabled) not 1 (disabled)
 

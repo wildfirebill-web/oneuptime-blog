@@ -92,6 +92,7 @@ Deploy and verify:
 kubectl apply -f projected-volume.yaml
 
 # Check the mounted files
+
 kubectl exec app-with-projected -- ls -la /etc/config
 
 # Output shows both ConfigMap and Secret files:

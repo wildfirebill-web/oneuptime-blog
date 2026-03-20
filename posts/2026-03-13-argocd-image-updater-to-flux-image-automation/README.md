@@ -23,6 +23,7 @@ ArgoCD Image Updater automates image tag updates in ArgoCD Applications using an
 
 ```bash
 # Find all Applications with image updater annotations
+
 kubectl get applications -n argocd \
   -o jsonpath='{range .items[*]}{.metadata.name}{"\n"}{.metadata.annotations}{"\n---\n"}{end}' \
   | grep -A5 "image-updater"

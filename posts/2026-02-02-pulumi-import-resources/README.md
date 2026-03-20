@@ -113,6 +113,7 @@ The following commands install Pulumi on various operating systems.
 
 ```bash
 # macOS (using Homebrew)
+
 brew install pulumi
 
 # Linux (using curl)

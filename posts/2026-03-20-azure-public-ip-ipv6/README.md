@@ -17,6 +17,7 @@ RG="rg-ipv6"
 LOCATION="eastus"
 
 # Create a static IPv6 public IP (Standard SKU required)
+
 az network public-ip create \
     --resource-group "$RG" \
     --name pip-web-ipv6 \

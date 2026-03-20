@@ -12,7 +12,7 @@ When multiple connection profiles can be applied to the same interface, autoconn
 
 ## Understanding Autoconnect Priority
 
-```
+```text
 Higher priority number = activated first (counterintuitive: higher = more preferred)
 Default priority: 0
 Range: -999 to 999
@@ -27,6 +27,7 @@ Example:
 
 ```bash
 # Set high priority for static connection
+
 nmcli connection modify eth0-static \
   connection.autoconnect yes \
   connection.autoconnect-priority 100

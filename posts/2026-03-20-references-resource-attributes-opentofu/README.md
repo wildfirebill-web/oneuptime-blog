@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, HCL, References, Resource Attributes, Expressions, Infrastructure as Code, DevOps
+Tags: OpenTofu, HCL, Reference, Resource Attributes, Expressions, Infrastructure as Code, DevOps
 
 Description: A guide to referencing resource attributes in OpenTofu to build dependencies and pass values between resources.
 
@@ -35,6 +35,7 @@ resource "aws_instance" "web" {
 
 ```hcl
 # Resource attribute: <resource_type>.<resource_name>.<attribute>
+
 vpc_id = aws_vpc.main.id
 arn    = aws_iam_role.app.arn
 

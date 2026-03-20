@@ -127,6 +127,7 @@ func (c *InstrumentedClient) Do(ctx context.Context, req *Request) (*Response, e
 
 ```promql
 # Detect retry storm: high retry rate
+
 sum(rate(http_client_retry_attempts_total[5m])) by (service)
   / sum(rate(http_client_requests_total[5m])) by (service) > 0.5
 

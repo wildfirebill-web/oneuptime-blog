@@ -24,6 +24,7 @@ Networking is a foundational aspect of any Kubernetes cluster. RKE supports mult
 
 ```yaml
 # cluster.yml
+
 network:
   plugin: canal    # Default: canal
 ```

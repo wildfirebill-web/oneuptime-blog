@@ -1,4 +1,4 @@
-# How to Integrate Portainer Webhooks with GitHub Actions
+# How to Integrate Portainer Webhooks with GitHub Actions - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -19,7 +19,7 @@ Combining GitHub Actions with Portainer webhooks creates a powerful, lightweight
 
 ## Architecture
 
-```
+```bash
 Developer pushes → GitHub Actions runs:
   1. Build Docker image
   2. Push to registry
@@ -33,14 +33,14 @@ In your GitHub repository:
 1. Go to **Settings > Secrets and variables > Actions**.
 2. Add the following secrets:
 
-```
+```bash
 DOCKER_USERNAME       → Docker Hub username (or GHCR username)
 DOCKER_PASSWORD       → Docker Hub password or access token
 PORTAINER_WEBHOOK_URL → Full webhook URL from Portainer
 ```
 
 For private registries:
-```
+```text
 REGISTRY_URL          → e.g., registry.example.com
 REGISTRY_USERNAME     → Registry username
 REGISTRY_PASSWORD     → Registry password
@@ -50,6 +50,7 @@ REGISTRY_PASSWORD     → Registry password
 
 ```yaml
 # .github/workflows/deploy.yml
+
 name: Build and Deploy
 
 on:
@@ -313,4 +314,4 @@ Add a health check step after triggering the webhook:
 
 ## Conclusion
 
-GitHub Actions + Portainer webhooks form a simple but effective CI/CD pipeline for containerized applications. With this setup, every push to main automatically builds a new image, pushes it to a registry, and triggers Portainer to deploy it — all within the GitHub ecosystem and without needing external CD infrastructure. Add health checks, rollback workflows, and Slack notifications to make the pipeline production-ready.
+GitHub Actions + Portainer webhooks form a simple but effective CI/CD pipeline for containerized applications. With this setup, every push to main automatically builds a new image, pushes it to a registry, and triggers Portainer to deploy it - all within the GitHub ecosystem and without needing external CD infrastructure. Add health checks, rollback workflows, and Slack notifications to make the pipeline production-ready.

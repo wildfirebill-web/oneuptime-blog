@@ -10,7 +10,7 @@ IPsec transport mode encrypts the payload of IP packets between two hosts while 
 
 ## Transport Mode vs. Tunnel Mode
 
-```
+```text
 Tunnel Mode:  [New IP Header][ESP Header][Original IP Header + Payload]
 Transport Mode: [Original IP Header][ESP Header][Payload]
 
@@ -45,6 +45,7 @@ conn host-to-host
 
 ```conf
 # /etc/ipsec.secrets on Host A
+
 10.0.0.1 10.0.0.2 : PSK "SharedSecretForTransportMode"
 ```
 
@@ -95,7 +96,7 @@ sudo ip xfrm policy list
 ## Verifying Encryption is Active
 
 ```bash
-# Capture traffic between the hosts — it should show ESP (not plaintext)
+# Capture traffic between the hosts - it should show ESP (not plaintext)
 sudo tcpdump -i eth0 host 10.0.0.2 -n
 
 # Expected: packets show as ESP protocol, not TCP/UDP directly

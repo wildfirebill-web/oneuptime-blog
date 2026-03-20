@@ -8,12 +8,13 @@ Description: Make IPv4 address, gateway, and DNS settings persistent across rebo
 
 ## Introduction
 
-Changes made with `ip addr`, `ip route`, and `dhclient` are ephemeral — they disappear when the system reboots. Persistence requires writing the configuration to a file that the network management subsystem reads at boot.
+Changes made with `ip addr`, `ip route`, and `dhclient` are ephemeral - they disappear when the system reboots. Persistence requires writing the configuration to a file that the network management subsystem reads at boot.
 
 ## Method 1: Netplan (Ubuntu 18.04+)
 
 ```yaml
 # /etc/netplan/01-netcfg.yaml
+
 network:
   version: 2
   renderer: networkd
@@ -36,7 +37,7 @@ sudo netplan try
 
 ## Method 2: /etc/network/interfaces (Debian/Ubuntu)
 
-```
+```text
 # /etc/network/interfaces
 auto lo
 iface lo inet loopback

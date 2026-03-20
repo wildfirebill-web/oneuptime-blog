@@ -16,6 +16,7 @@ Direct port exposure bypasses all security layers and puts your application at r
 
 ```bash
 # DON'T do this for production
+
 # Your application handles TLS, rate limiting, and all attacks directly
 docker run -p 80:80 -p 443:443 myapp:latest
 ```

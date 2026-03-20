@@ -51,6 +51,7 @@ Pick a convention and stick with it. Consistency matters more than the specific 
 
 ```bash
 # Create parameters organized by application, environment, and category
+
 aws ssm put-parameter \
   --name "/myapp/production/database/host" \
   --type String \

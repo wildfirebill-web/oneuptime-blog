@@ -29,6 +29,7 @@ Label exclusion is the inverse approach to label inclusion: instead of specifyin
 
 ```bash
 # Check current configuration
+
 cilium config view | grep "^labels"
 
 # Labels prefixed with '!' or '-' are excluded

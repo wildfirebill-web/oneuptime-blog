@@ -20,6 +20,7 @@ Helm chart dependencies are declared in the `Chart.yaml` file. When a chart is p
 
 ```yaml
 # Chart.yaml with dependencies
+
 apiVersion: v2
 name: my-app
 version: 1.0.0

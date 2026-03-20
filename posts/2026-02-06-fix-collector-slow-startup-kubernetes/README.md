@@ -56,6 +56,7 @@ Add debug logging to see exactly what the collector does during startup.
 
 ```yaml
 # otel-collector-config.yaml
+
 service:
   telemetry:
     logs:

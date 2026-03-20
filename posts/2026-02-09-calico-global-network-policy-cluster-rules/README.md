@@ -48,6 +48,7 @@ Establish a zero-trust baseline by denying all traffic by default:
 
 ```yaml
 # global-default-deny.yaml
+
 apiVersion: projectcalico.org/v3
 kind: GlobalNetworkPolicy
 metadata:

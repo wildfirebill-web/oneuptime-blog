@@ -119,6 +119,7 @@ Define your on-call schedule in a configuration file that can be version-control
 
 ```yaml
 # on-call-schedule.yaml
+
 # Configuration for the platform team on-call rotation
 
 schedule:

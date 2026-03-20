@@ -147,6 +147,7 @@ This script estimates monthly savings for each right-sizing candidate.
 
 ```python
 # EC2 pricing (simplified - use AWS Pricing API for exact values)
+
 PRICING = {
     "t3.micro": 0.0104,
     "t3.small": 0.0208,

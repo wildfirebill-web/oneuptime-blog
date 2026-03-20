@@ -51,6 +51,7 @@ CfCT is deployed via a CloudFormation template provided by AWS. You can launch i
 
 ```bash
 # Download the CfCT CloudFormation template
+
 aws cloudformation create-stack \
   --stack-name customizations-for-control-tower \
   --template-url https://s3.amazonaws.com/solutions-reference/customizations-for-aws-control-tower/latest/custom-control-tower-initiation.template \

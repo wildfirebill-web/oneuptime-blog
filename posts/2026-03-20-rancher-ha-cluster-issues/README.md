@@ -12,7 +12,7 @@ Running Rancher in high-availability mode (3+ replicas backed by an HA Kubernete
 
 ## Rancher HA Architecture
 
-```
+```text
 Load Balancer (L4 or L7)
     ↓
 [Rancher Pod 1] [Rancher Pod 2] [Rancher Pod 3]  ← cattle-system namespace
@@ -25,10 +25,11 @@ Load Balancer (L4 or L7)
 
 ```bash
 # Verify all replicas are running and ready
+
 kubectl get deployment -n cattle-system rancher
 kubectl get pods -n cattle-system -l app=rancher -o wide
 
-# Check replica health — all should show 1/1 Ready
+# Check replica health - all should show 1/1 Ready
 # NAME                     READY   STATUS    RESTARTS   NODE
 # rancher-7d9f6b8c9-aaa   1/1     Running   0          node1
 # rancher-7d9f6b8c9-bbb   1/1     Running   0          node2

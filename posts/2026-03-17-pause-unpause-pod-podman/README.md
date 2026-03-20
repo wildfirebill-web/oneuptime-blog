@@ -18,6 +18,7 @@ Sometimes you need to temporarily suspend a workload without shutting it down. P
 
 ```bash
 # Create a pod with containers
+
 podman pod create --name app-pod -p 8080:80
 podman run -d --pod app-pod --name web docker.io/library/nginx:alpine
 podman run -d --pod app-pod --name worker docker.io/library/alpine \

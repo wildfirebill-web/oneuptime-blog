@@ -18,6 +18,7 @@ Managing the running state of Docker containers is one of the most common tasks 
 
 ```bash
 # Install required components
+
 ansible-galaxy collection install community.docker
 pip install docker
 ```

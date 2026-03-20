@@ -54,6 +54,7 @@ The following example shows how to reference project variables in your config fi
 
 ```yaml
 # .circleci/config.yml
+
 # Project variables like DATABASE_URL and API_KEY are automatically
 # available in all jobs without explicit declaration
 version: 2.1

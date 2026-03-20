@@ -18,6 +18,7 @@ Start by figuring out which probe is failing and what Kubernetes reports:
 
 ```bash
 # Check pod status and restart count
+
 kubectl get pod <pod-name> -o wide
 
 # Look at events for probe failures

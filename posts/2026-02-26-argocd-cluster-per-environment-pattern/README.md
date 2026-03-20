@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: ArgoCD, GitOps, Kubernetes, Multi-Cluster, Environment
+Tags: ArgoCD, GitOps, Kubernetes, Multi-Cluster, Environments
 
 Description: Learn how to implement the cluster-per-environment pattern in ArgoCD where each environment (dev, staging, production) gets its own dedicated Kubernetes cluster.
 
@@ -28,6 +28,7 @@ First, register each environment's cluster with ArgoCD. ArgoCD needs credentials
 
 ```bash
 # Add staging cluster
+
 argocd cluster add staging-context \
   --name staging \
   --label env=staging \

@@ -30,6 +30,7 @@ The first thing to do when become fails is run the playbook with maximum verbosi
 
 ```bash
 # Run with maximum verbosity to see the become commands
+
 ansible-playbook -i inventory.yml playbook.yml -vvvv 2>&1 | tee ansible-debug.log
 ```
 

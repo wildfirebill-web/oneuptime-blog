@@ -30,6 +30,7 @@ Starting with RHEL, the audisp dispatcher is built directly into auditd rather t
 
 ```bash
 # Check what plugins are installed
+
 ls -la /etc/audit/plugins.d/
 
 # Install additional plugins

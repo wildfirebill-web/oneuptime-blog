@@ -412,6 +412,7 @@ The collector itself generates metrics about its operation. Monitor these to mak
 
 ```promql
 # Export failures
+
 rate(otelcol_exporter_send_failed_metric_points[5m])
 rate(otelcol_exporter_send_failed_spans[5m])
 rate(otelcol_exporter_send_failed_log_records[5m])

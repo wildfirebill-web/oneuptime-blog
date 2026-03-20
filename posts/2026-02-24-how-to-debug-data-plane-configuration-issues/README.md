@@ -229,6 +229,7 @@ For deeper debugging, you can hit the Envoy admin interface:
 
 ```bash
 # Full config dump
+
 kubectl exec deploy/my-app -c istio-proxy -- curl -s localhost:15000/config_dump > config.json
 
 # Check cluster health

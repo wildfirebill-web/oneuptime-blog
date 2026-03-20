@@ -77,6 +77,7 @@ class CircularBuffer:
         self.redis.delete(self.key)
 
 # Usage
+
 buffer = CircularBuffer('logs:app', max_size=1000, redis_client=r)
 
 # Add log entries

@@ -24,6 +24,7 @@ The migration has two prerequisites: all workloads must be running with dedicate
 
 ```bash
 # List all policies using label selectors that could use SA selectors
+
 calicoctl get networkpolicies --all-namespaces -o yaml | grep -B 5 "selector:" | grep -E "name|selector"
 ```
 

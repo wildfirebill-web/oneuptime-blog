@@ -45,6 +45,7 @@ Add required crates to `Cargo.toml` for Diesel instrumentation:
 ```toml
 [dependencies]
 # Diesel ORM with PostgreSQL backend
+
 diesel = { version = "2.1", features = ["postgres", "r2d2", "chrono"] }
 diesel-tracing = "0.2"
 

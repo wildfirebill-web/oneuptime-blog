@@ -1,4 +1,4 @@
-# How to Set Up CI/CD with Portainer and GitLab CI
+# How to Set Up CI/CD with Portainer and GitLab CI - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -19,7 +19,7 @@ GitLab CI/CD combined with Portainer creates a fully self-hosted CI/CD pipeline.
 
 ## Architecture
 
-```
+```text
 Git push → GitLab CI → Build & Test → Push to GitLab Registry → Deploy to Portainer
 ```
 
@@ -38,6 +38,7 @@ In your GitLab project → **Settings** → **CI/CD** → **Variables**, add:
 
 ```yaml
 # .gitlab-ci.yml
+
 stages:
   - test
   - build
@@ -113,7 +114,7 @@ deploy:
 For more control, update the stack with the specific image tag:
 
 ```yaml
-# .gitlab-ci.yml — Advanced version
+# .gitlab-ci.yml - Advanced version
 deploy-advanced:
   stage: deploy
   image: alpine:3.19
@@ -226,7 +227,7 @@ verify-deployment:
           echo "Application is healthy!"
           exit 0
         fi
-        echo "Attempt $i/$MAX_RETRIES — waiting 10s..."
+        echo "Attempt $i/$MAX_RETRIES - waiting 10s..."
         sleep 10
       done
       echo "ERROR: Health check failed after 2 minutes"

@@ -22,6 +22,7 @@ The foundation is recording Service Level Indicator (SLI) metrics. For an availa
 
 ```python
 # Record SLI metrics using OpenTelemetry
+
 from opentelemetry import metrics
 
 meter = metrics.get_meter("sli.metrics")

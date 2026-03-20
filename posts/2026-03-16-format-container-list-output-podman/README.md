@@ -43,6 +43,7 @@ Here are the template fields you can use with `podman ps --format`:
 
 ```bash
 # Show only names and status
+
 podman ps --format "{{.Names}} - {{.Status}}"
 
 # Show ID, name, and image
@@ -141,7 +142,7 @@ podman ps --format "table {{.Names}}\t{{.State}}\t{{.RunningFor}}\t{{.Ports}}"
 podman ps --format "table {{.Names}}\t{{.Networks}}\t{{.Ports}}"
 ```
 
-### Resource Report
+Resource Report
 
 ```bash
 # Show containers with resource-related info

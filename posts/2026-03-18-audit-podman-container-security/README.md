@@ -20,6 +20,7 @@ Start by examining the security-relevant settings of your running containers.
 
 ```bash
 # Launch a sample container for auditing
+
 podman run --rm -d --name audit-target docker.io/library/nginx:alpine
 
 # Inspect key security settings

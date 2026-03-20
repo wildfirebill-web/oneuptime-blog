@@ -34,6 +34,7 @@ sequenceDiagram
 
 ```bash
 # Start the SSH agent
+
 eval $(ssh-agent)
 
 # Add your key

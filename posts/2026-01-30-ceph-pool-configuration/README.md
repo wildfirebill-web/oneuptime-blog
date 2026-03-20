@@ -66,6 +66,7 @@ The following commands create a basic replicated pool with sensible defaults:
 
 ```bash
 # Create a replicated pool named "rbd-pool"
+
 # 128 placement groups is a good starting point for small to medium clusters
 ceph osd pool create rbd-pool 128 128
 

@@ -51,6 +51,7 @@ The CLI is essential for testing and managing policies. Install it using your pr
 
 ```bash
 # Install CircleCI CLI on macOS using Homebrew
+
 brew install circleci
 
 # Install on Linux using curl

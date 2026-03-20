@@ -29,6 +29,7 @@ API deprecations are the most common cause of post-upgrade failures. Flux manife
 
 ```bash
 # Install pluto for deprecated API detection
+
 helm repo add fairwinds-stable https://charts.fairwinds.com/stable
 helm install pluto fairwinds-stable/pluto \
   --namespace pluto \

@@ -64,6 +64,7 @@ If JSON parsing dominates your heap profile, consider these optimizations:
 
 ```python
 # BEFORE: Parse entire JSON payload into memory
+
 import json
 
 def process_request(raw_body):

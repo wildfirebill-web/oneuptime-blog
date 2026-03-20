@@ -146,6 +146,7 @@ For Python applications using psycopg2's built-in connection pool (or psycopg2-p
 
 ```python
 # pool_metrics.py
+
 import threading
 import time
 from psycopg2 import pool

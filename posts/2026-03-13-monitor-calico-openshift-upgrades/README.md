@@ -17,6 +17,7 @@ Monitoring Calico upgrades on OpenShift requires watching both Calico's upgrade 
 ```bash
 #!/bin/bash
 # monitor-calico-ocp-upgrade.sh
+
 TARGET_VERSION="${1:?Provide target version}"
 
 while true; do

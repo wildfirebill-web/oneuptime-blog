@@ -1,4 +1,4 @@
-# How to Set Up cAdvisor for Container Metrics with Portainer
+# How to Set Up cAdvisor for Container Metrics with Portainer - Container Metrics
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -60,6 +60,7 @@ networks:
 
 ```bash
 # Check cAdvisor web UI
+
 curl http://localhost:8080/
 
 # Check metrics endpoint
@@ -103,26 +104,26 @@ curl -s http://localhost:9090/api/v1/targets | \
 
 ## Step 4: Key cAdvisor Metrics
 
-```
+```text
 CPU Metrics:
-  container_cpu_usage_seconds_total     — Total CPU time used
-  container_cpu_system_seconds_total    — CPU time in kernel space
-  container_cpu_user_seconds_total      — CPU time in user space
+  container_cpu_usage_seconds_total     - Total CPU time used
+  container_cpu_system_seconds_total    - CPU time in kernel space
+  container_cpu_user_seconds_total      - CPU time in user space
 
 Memory Metrics:
-  container_memory_usage_bytes          — Current memory usage (including cache)
-  container_memory_working_set_bytes    — Memory that cannot be reclaimed
-  container_memory_limit_bytes          — Memory limit (0 = no limit)
-  container_memory_rss                  — RSS memory (actual in-use memory)
+  container_memory_usage_bytes          - Current memory usage (including cache)
+  container_memory_working_set_bytes    - Memory that cannot be reclaimed
+  container_memory_limit_bytes          - Memory limit (0 = no limit)
+  container_memory_rss                  - RSS memory (actual in-use memory)
 
 Network Metrics:
-  container_network_receive_bytes_total    — Bytes received
-  container_network_transmit_bytes_total   — Bytes transmitted
-  container_network_receive_errors_total   — Receive errors
+  container_network_receive_bytes_total    - Bytes received
+  container_network_transmit_bytes_total   - Bytes transmitted
+  container_network_receive_errors_total   - Receive errors
 
 Disk I/O Metrics:
-  container_fs_reads_bytes_total     — Bytes read from filesystem
-  container_fs_writes_bytes_total    — Bytes written to filesystem
+  container_fs_reads_bytes_total     - Bytes read from filesystem
+  container_fs_writes_bytes_total    - Bytes written to filesystem
 ```
 
 ## Step 5: Useful Prometheus Queries

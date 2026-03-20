@@ -16,6 +16,7 @@ In the default linear strategy, when a host fails a task, that host is removed f
 
 ```yaml
 # default-behavior.yml - Default partial failure handling
+
 ---
 - name: Configure servers
   hosts: all  # 10 hosts

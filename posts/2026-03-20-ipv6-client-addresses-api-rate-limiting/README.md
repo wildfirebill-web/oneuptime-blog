@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Rate Limiting, API Gateway, Security, Networking, NGINX
+Tags: IPv6, Rate Limiting, API Gateway, Security, Networking, Nginx
 
 Description: Implement effective API rate limiting for IPv6 clients by addressing prefix aggregation, address normalization, and per-/48 or per-/64 subnet bucketing strategies.
 
@@ -12,8 +12,9 @@ Rate limiting IPv6 clients presents a unique challenge: a single user can own an
 
 ## The Problem: IPv6 Address Rotation
 
-```
+```text
 # An attacker owns 2001:db8:1234::/48
+
 # They can send from:
 2001:db8:1234::1      -> rate limit bucket #1
 2001:db8:1234::2      -> rate limit bucket #2 (bypass!)
@@ -27,7 +28,7 @@ The solution is to truncate the client address to its /64 or /48 and use that as
 NGINX's `$binary_remote_addr` is per-IP. Create a map that extracts the /64 prefix.
 
 ```nginx
-# nginx.conf — rate limit by IPv6 /64 prefix
+# nginx.conf - rate limit by IPv6 /64 prefix
 
 # Extract the first 8 bytes (64 bits) of the IPv6 address
 # For IPv4 clients, the full address is used
@@ -56,7 +57,7 @@ server {
 }
 ```
 
-## Strategy 2: Python — Normalize IPv6 to /64 for Rate Limiting
+## Strategy 2: Python - Normalize IPv6 to /64 for Rate Limiting
 
 ```python
 import ipaddress
@@ -81,7 +82,7 @@ def get_rate_limit_key(client_ip: str, prefix_len: int = 64) -> str:
             # IPv4: rate limit per individual address
             return client_ip
     except ValueError:
-        # Invalid IP — use as-is
+        # Invalid IP - use as-is
         return client_ip
 
 

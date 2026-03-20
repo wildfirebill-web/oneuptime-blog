@@ -12,7 +12,7 @@ Silver Peak SD-WAN, now HPE Aruba EdgeConnect, supports IPv6 on LAN and WAN inte
 
 ## EdgeConnect IPv6 Interface Configuration
 
-```
+```text
 HPE Aruba Orchestrator:
 Navigate to: Configuration > Appliances > [Appliance Name] > Deployment
 
@@ -39,6 +39,7 @@ WAN Interface Configuration:
 
 ```bash
 # SSH into EdgeConnect appliance
+
 ssh admin@edgeconnect-ip
 
 # Show IPv6 interface status
@@ -62,7 +63,7 @@ ping6 source-interface lan0 2001:4860:4860::8888
 
 ## Business Intent Overlay for IPv6
 
-```
+```text
 Orchestrator > Configuration > Business Intent Overlays
 
 Create Overlay: "IPv6-VoIP-Overlay"

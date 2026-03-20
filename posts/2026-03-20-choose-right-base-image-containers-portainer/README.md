@@ -1,4 +1,4 @@
-# How to Choose the Right Base Image for Containers in Portainer
+# How to Choose the Right Base Image for Containers in Portainer (2)
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -29,15 +29,16 @@ Choosing the right base image is one of the most impactful decisions in containe
 ## Size vs. Functionality Trade-off
 
 ```dockerfile
-# Full Ubuntu — lots of tools, large
+# Full Ubuntu - lots of tools, large
+
 FROM ubuntu:22.04
 RUN apt-get update && apt-get install -y python3 curl jq
 
-# Alpine — small but uses musl libc
+# Alpine - small but uses musl libc
 FROM alpine:3.19
 RUN apk add --no-cache python3 curl jq
 
-# Python slim — balance of features and size
+# Python slim - balance of features and size
 FROM python:3.12-slim
 RUN pip install requests
 ```
@@ -53,7 +54,7 @@ WORKDIR /app
 COPY requirements.txt .
 RUN pip install --user -r requirements.txt
 
-# Distroless runtime — no shell, minimal attack surface
+# Distroless runtime - no shell, minimal attack surface
 FROM gcr.io/distroless/python3-debian12
 COPY --from=builder /root/.local/lib /root/.local/lib
 COPY app.py /app/
@@ -79,14 +80,14 @@ trivy image ubuntu:22.04
 
 ## Key Selection Criteria
 
-1. **Language/runtime match** — use official language images (`python:3.12-slim`, `node:20-alpine`)
-2. **Minimal footprint** — prefer Alpine or slim variants
-3. **Active maintenance** — check Docker Hub for recent updates
-4. **CVE count** — scan before committing to a base
-5. **glibc vs musl** — some compiled libraries require glibc (use Debian/Ubuntu, not Alpine)
+1. **Language/runtime match** - use official language images (`python:3.12-slim`, `node:20-alpine`)
+2. **Minimal footprint** - prefer Alpine or slim variants
+3. **Active maintenance** - check Docker Hub for recent updates
+4. **CVE count** - scan before committing to a base
+5. **glibc vs musl** - some compiled libraries require glibc (use Debian/Ubuntu, not Alpine)
 
 ---
 
 ## Summary
 
-For production workloads, start with official slim or Alpine variants of your language runtime. Use distroless images for maximum security when you don't need shell access. Avoid pulling `ubuntu:latest` or `debian:latest` as base images — they're large and change frequently. Scan your images with Trivy regularly and rebuild when base images receive security patches.
+For production workloads, start with official slim or Alpine variants of your language runtime. Use distroless images for maximum security when you don't need shell access. Avoid pulling `ubuntu:latest` or `debian:latest` as base images - they're large and change frequently. Scan your images with Trivy regularly and rebuild when base images receive security patches.

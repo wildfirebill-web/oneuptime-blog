@@ -116,6 +116,7 @@ After editing fstab, always test before rebooting:
 
 ```bash
 # Attempt to mount all entries in fstab
+
 mount -a
 ```
 

@@ -545,6 +545,7 @@ For large lists, consider using a Git Generator with a config file instead:
 
 ```yaml
 # config/environments.json
+
 [
   {"env": "dev", "replicas": "1"},
   {"env": "staging", "replicas": "2"},

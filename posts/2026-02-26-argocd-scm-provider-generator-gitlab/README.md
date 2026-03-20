@@ -199,6 +199,7 @@ If your GitLab uses a self-signed certificate, add the CA certificate to ArgoCD:
 
 ```bash
 # Add custom CA to ArgoCD
+
 kubectl create configmap argocd-tls-certs-cm \
   -n argocd \
   --from-file=gitlab.internal.company.com=/path/to/ca-cert.pem

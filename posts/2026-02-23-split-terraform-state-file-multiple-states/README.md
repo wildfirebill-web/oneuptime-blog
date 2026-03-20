@@ -40,6 +40,7 @@ For each new state, create a separate Terraform configuration directory:
 
 ```bash
 # Create directories for the split configurations
+
 mkdir -p terraform/networking
 mkdir -p terraform/compute
 mkdir -p terraform/database

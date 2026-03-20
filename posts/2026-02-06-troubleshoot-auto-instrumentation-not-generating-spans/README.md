@@ -82,6 +82,7 @@ For Python, the same principle applies. The easiest way to guarantee correct ord
 
 ```bash
 # Use the opentelemetry-instrument wrapper to ensure correct initialization order
+
 # This automatically patches libraries before your application code runs
 opentelemetry-instrument \
   --traces_exporter otlp \

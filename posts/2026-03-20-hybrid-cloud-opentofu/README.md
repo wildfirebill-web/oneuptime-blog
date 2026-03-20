@@ -14,6 +14,7 @@ A hybrid cloud architecture extends on-premises networks into cloud providers th
 
 ```hcl
 # main.tf - AWS Site-to-Site VPN to on-premises
+
 resource "aws_vpn_gateway" "vpn_gw" {
   vpc_id = module.vpc.vpc_id
   tags   = { Name = "hybrid-vpn-gateway" }

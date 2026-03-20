@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: macvtap, KVM, Virtualization, Linux, Virtual Machine, MACVLAN, Networking, IPv4
+Tags: Macvtap, KVM, Virtualization, Linux, Virtual Machine, Macvlan, Networking, IPv4
 
 Description: Learn how to configure macvtap interfaces for KVM virtual machines as an alternative to bridge networking, providing direct Layer 2 access to the physical network without a bridge.
 
@@ -31,6 +31,7 @@ macvtap combines macvlan and tap into a single interface, giving VMs a direct co
 
 ```bash
 # Create macvtap in bridge mode on eth0
+
 ip link add link eth0 name macvtap0 type macvtap mode bridge
 
 # Assign a MAC to the macvtap interface (VM's MAC address)
@@ -84,5 +85,5 @@ ls /sys/class/net/macvtap0/
 
 - macvtap creates a tap character device (`/dev/tapX`) that QEMU/KVM reads directly, bypassing the bridge.
 - Use `mode bridge` for most VM deployments; this allows VM-to-VM and VM-to-network communication.
-- The host cannot communicate with macvtap VMs on the same physical interface — use a separate management NIC or bridge for host-to-VM connectivity.
+- The host cannot communicate with macvtap VMs on the same physical interface - use a separate management NIC or bridge for host-to-VM connectivity.
 - libvirt automates macvtap creation with `<interface type='direct'>` and handles tap device management.

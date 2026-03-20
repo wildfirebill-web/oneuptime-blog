@@ -8,7 +8,7 @@ Description: Use Pulumi with TypeScript to manage Rancher clusters, namespaces, 
 
 ## Introduction
 
-Pulumi is an infrastructure-as-code tool that uses real programming languages (TypeScript, Python, Go, .NET) instead of domain-specific languages like HCL. This gives you the full power of a programming language—loops, conditionals, functions, and type checking—when managing Rancher resources.
+Pulumi is an infrastructure-as-code tool that uses real programming languages (TypeScript, Python, Go, .NET) instead of domain-specific languages like HCL. This gives you the full power of a programming language-loops, conditionals, functions, and type checking-when managing Rancher resources.
 
 ## Prerequisites
 
@@ -20,6 +20,7 @@ Pulumi is an infrastructure-as-code tool that uses real programming languages (T
 
 ```bash
 # Install Pulumi CLI
+
 curl -fsSL https://get.pulumi.com | sh
 
 # Create a new TypeScript project
@@ -61,7 +62,7 @@ const teams = [
 // Reference the production cluster
 const cluster = rancher2.getCluster({ name: "production" }, { provider });
 
-// Create a project and namespace for each team (loop—not possible in HCL)
+// Create a project and namespace for each team (loop-not possible in HCL)
 for (const team of teams) {
     const project = new rancher2.Project(`${team.name}-project`, {
         name: team.name,
@@ -129,4 +130,4 @@ pulumi stack output
 
 ## Conclusion
 
-Pulumi's use of real programming languages makes complex Rancher configurations—like creating identical resources for multiple teams—far more concise than HCL. Type checking catches configuration errors before deployment, and the Pulumi state backend tracks all resource changes with a complete history.
+Pulumi's use of real programming languages makes complex Rancher configurations-like creating identical resources for multiple teams-far more concise than HCL. Type checking catches configuration errors before deployment, and the Pulumi state backend tracks all resource changes with a complete history.

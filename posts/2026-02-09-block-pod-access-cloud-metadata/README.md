@@ -24,6 +24,7 @@ The most effective defense is preventing network access to metadata endpoints. N
 
 ```yaml
 # block-metadata-access.yaml
+
 apiVersion: networking.k8s.io/v1
 kind: NetworkPolicy
 metadata:

@@ -16,6 +16,7 @@ You need at least three RHEL servers with RabbitMQ installed. Ensure DNS or `/et
 
 ```bash
 # On all nodes, add host entries
+
 cat << 'HOSTS' | sudo tee -a /etc/hosts
 192.168.1.101 rabbit1
 192.168.1.102 rabbit2

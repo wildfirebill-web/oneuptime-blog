@@ -69,6 +69,7 @@ To allow only users from your company's Google Workspace domain, add the `hd` (h
 
 ```bash
 # Add domain restriction to scopes or use Portainer team mapping
+
 # The Google userinfo response includes "hd" field for Workspace accounts
 # Portainer can use "email" as the identifier, then you manually verify domain
 

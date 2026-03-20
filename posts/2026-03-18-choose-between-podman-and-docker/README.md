@@ -22,6 +22,7 @@ The most fundamental difference is the daemon. Docker runs a persistent backgrou
 
 ```bash
 # Docker: CLI talks to daemon
+
 docker run nginx    # → docker CLI → dockerd → containerd → runc
 
 # Podman: direct execution
@@ -126,7 +127,7 @@ WantedBy=default.target
 
 Docker relies on its own restart policies or requires writing custom systemd service files that call `docker start`.
 
-## Resource Usage
+Resource Usage
 
 Podman uses fewer resources when idle because there is no daemon process. Docker's daemon consumes memory even when no containers are running:
 

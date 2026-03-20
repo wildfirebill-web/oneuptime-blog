@@ -2,18 +2,19 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Linux, Default Gateway, Networking, ip Command
+Tags: IPv6, Linux, Default Gateway, Networking, ip command
 
 Description: Learn how to configure, verify, and persist an IPv6 default gateway on Linux using the ip command, systemd-networkd, and NetworkManager.
 
 ## Overview
 
-The IPv6 default gateway is the `::/0` route — it determines where packets are sent when no more-specific route exists. Misconfiguring or missing the default gateway is one of the most common causes of IPv6 connectivity failures.
+The IPv6 default gateway is the `::/0` route - it determines where packets are sent when no more-specific route exists. Misconfiguring or missing the default gateway is one of the most common causes of IPv6 connectivity failures.
 
 ## Adding the Default Gateway Temporarily
 
 ```bash
 # Add a default gateway via a global IPv6 address
+
 sudo ip -6 route add default via 2001:db8::1
 
 # Add a default gateway via a link-local address (most common from Router Advertisements)

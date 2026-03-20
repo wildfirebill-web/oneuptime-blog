@@ -163,6 +163,7 @@ By default, Kubernetes waits 5 minutes before evicting pods from a failed node. 
 
 ```bash
 # On the K3s/K8s API server, reduce tolerations
+
 # For K3s, add to /etc/rancher/k3s/config.yaml:
 # kube-controller-manager-arg:
 #   - "node-monitor-grace-period=20s"

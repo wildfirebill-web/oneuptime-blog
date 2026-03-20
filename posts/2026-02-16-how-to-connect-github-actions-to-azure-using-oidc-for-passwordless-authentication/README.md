@@ -50,6 +50,7 @@ The following Azure CLI commands create the app registration and service princip
 
 ```bash
 # Create the app registration for GitHub Actions
+
 az ad app create --display-name "github-actions-oidc"
 
 # Get the app ID (you will need this later)

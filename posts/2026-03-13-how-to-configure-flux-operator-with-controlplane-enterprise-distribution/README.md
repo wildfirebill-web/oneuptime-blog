@@ -44,6 +44,7 @@ The ControlPlane Enterprise Distribution images are hosted in a private OCI regi
 
 ```yaml
 # enterprise-registry-secret.yaml
+
 apiVersion: v1
 kind: Secret
 metadata:

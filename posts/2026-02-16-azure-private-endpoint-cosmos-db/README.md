@@ -31,6 +31,7 @@ If you already have a Cosmos DB account, skip to Step 2.
 
 ```bash
 # Create a resource group
+
 az group create \
   --name rg-cosmos-private \
   --location eastus

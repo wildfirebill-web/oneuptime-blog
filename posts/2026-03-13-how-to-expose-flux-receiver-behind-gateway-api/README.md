@@ -55,6 +55,7 @@ Define a Receiver that listens for GitHub push events:
 
 ```yaml
 # receiver.yaml
+
 apiVersion: notification.toolkit.fluxcd.io/v1
 kind: Receiver
 metadata:

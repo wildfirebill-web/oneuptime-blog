@@ -51,6 +51,7 @@ Create an ASG for each logical tier of your application:
 
 ```bash
 # Create ASGs for each application tier
+
 # All ASGs must be in the same region as the VMs they will contain
 
 az network asg create \

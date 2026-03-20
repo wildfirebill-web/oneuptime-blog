@@ -31,6 +31,7 @@ First, create an OIDC identity provider and IAM role in AWS:
 
 ```hcl
 # Create the OIDC identity provider for GitHub
+
 resource "aws_iam_openid_connect_provider" "github" {
   url = "https://token.actions.githubusercontent.com"
 

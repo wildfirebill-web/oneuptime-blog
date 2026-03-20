@@ -30,6 +30,7 @@ Two configuration parameters control SLOWLOG behavior:
 
 ```bash
 # Threshold in microseconds (default: 10000 = 10ms)
+
 # Commands taking longer than this are logged
 CONFIG SET slowlog-log-slower-than 10000
 

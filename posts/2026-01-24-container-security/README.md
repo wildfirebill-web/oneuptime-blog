@@ -52,6 +52,7 @@ Start with minimal base images to reduce the attack surface.
 
 ```dockerfile
 # Bad: Full Ubuntu image (100+ MB, many vulnerabilities)
+
 FROM ubuntu:22.04
 
 # Better: Alpine (5 MB, fewer packages)

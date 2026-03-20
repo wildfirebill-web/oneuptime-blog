@@ -29,6 +29,7 @@ graph TB
 # istio.tf
 
 # Step 1: CRDs
+
 resource "helm_release" "istio_base" {
   name             = "istio-base"
   repository       = "https://istio-release.storage.googleapis.com/charts"
@@ -169,7 +170,7 @@ resource "helm_release" "kiali" {
 ## Best Practices
 
 - Install Istio in dependency order: base → istiod → gateways. Use `depends_on` in OpenTofu to enforce this.
-- Enable strict mTLS mode cluster-wide via `PeerAuthentication` — then all service-to-service communication is encrypted automatically.
+- Enable strict mTLS mode cluster-wide via `PeerAuthentication` - then all service-to-service communication is encrypted automatically.
 - Set `outboundTrafficPolicy = REGISTRY_ONLY` to block traffic to external services not explicitly registered in ServiceEntry resources.
-- Configure sidecar proxy resource limits — unbounded proxies consume significant CPU and memory on high-traffic services.
-- Use Kiali for service mesh observability — it shows the dependency graph, traffic flow, and mTLS status in a visual interface.
+- Configure sidecar proxy resource limits - unbounded proxies consume significant CPU and memory on high-traffic services.
+- Use Kiali for service mesh observability - it shows the dependency graph, traffic flow, and mTLS status in a visual interface.

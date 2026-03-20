@@ -22,6 +22,7 @@ SOC2 (CC6.1), PCI DSS (Req 3.4, 4.1), and HIPAA (164.312(a)(2)(iv)) all require 
 
 ```hcl
 # Module for creating compliant S3 buckets
+
 module "compliant_bucket" {
   source = "./modules/compliant-s3"
 

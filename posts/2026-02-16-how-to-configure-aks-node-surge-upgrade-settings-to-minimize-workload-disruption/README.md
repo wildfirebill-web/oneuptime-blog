@@ -41,6 +41,7 @@ You set the surge value when creating or updating a node pool. The value can be 
 
 ```bash
 # Set surge to 1 extra node (the default behavior)
+
 az aks nodepool update \
   --resource-group myResourceGroup \
   --cluster-name myAKSCluster \

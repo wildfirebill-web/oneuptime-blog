@@ -29,6 +29,7 @@ This is the most common and recommended approach. Each shared role lives in its 
 
 ```bash
 # Create a standalone Git repo for the role
+
 mkdir ansible-role-nginx
 cd ansible-role-nginx
 ansible-galaxy init . --force

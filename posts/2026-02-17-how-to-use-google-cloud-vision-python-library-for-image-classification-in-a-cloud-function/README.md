@@ -16,6 +16,7 @@ Install the Vision API client library.
 
 ```bash
 # Install the Vision API Python client
+
 pip install google-cloud-vision google-cloud-storage google-cloud-firestore
 
 # Enable the Vision API in your project

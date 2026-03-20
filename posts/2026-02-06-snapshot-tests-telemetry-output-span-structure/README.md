@@ -132,6 +132,7 @@ Use pytest with a snapshot plugin to manage the snapshot files:
 
 ```python
 # tests/test_telemetry_snapshots.py
+
 import pytest
 from telemetry_capture import TelemetryCapture
 

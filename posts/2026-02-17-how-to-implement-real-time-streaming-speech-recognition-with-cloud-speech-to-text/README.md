@@ -30,6 +30,7 @@ Install the required packages:
 
 ```bash
 # Install the Speech-to-Text client and audio capture library
+
 pip install google-cloud-speech pyaudio
 
 # On macOS, you may need to install portaudio first

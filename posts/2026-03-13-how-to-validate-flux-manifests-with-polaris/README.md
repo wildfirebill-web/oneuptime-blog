@@ -22,6 +22,7 @@ Polaris is an open-source tool from Fairwinds that validates Kubernetes resource
 
 ```bash
 # macOS (Homebrew)
+
 brew install FairwindsOps/tap/polaris
 
 # Linux (binary download)

@@ -24,6 +24,7 @@ If you do not have a Cloud DNS zone yet, create one first:
 
 ```bash
 # Create a Cloud DNS managed zone for your domain
+
 gcloud dns managed-zones create my-zone \
   --dns-name="example.com." \
   --description="Zone for ExternalDNS"

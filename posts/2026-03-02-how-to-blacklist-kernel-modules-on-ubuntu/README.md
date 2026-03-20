@@ -39,6 +39,7 @@ Before blacklisting a module, check if it's currently loaded:
 
 ```bash
 # List all currently loaded modules
+
 lsmod
 
 # Check if a specific module is loaded

@@ -8,7 +8,7 @@ Description: Configure a Ceph storage cluster to operate over IPv6 networks, inc
 
 ## Introduction
 
-Ceph is a distributed storage system that supports IPv6 for all its daemon types — monitors (MON), object storage daemons (OSD), metadata servers (MDS), and RADOS gateways (RGW). IPv6 configuration is set in `ceph.conf` and propagated via cephadm. Each daemon binds to IPv6 addresses for both inter-cluster communication and client access.
+Ceph is a distributed storage system that supports IPv6 for all its daemon types - monitors (MON), object storage daemons (OSD), metadata servers (MDS), and RADOS gateways (RGW). IPv6 configuration is set in `ceph.conf` and propagated via cephadm. Each daemon binds to IPv6 addresses for both inter-cluster communication and client access.
 
 ## Ceph Configuration for IPv6
 
@@ -17,6 +17,7 @@ Ceph is a distributed storage system that supports IPv6 for all its daemon types
 
 [global]
 # Cluster FSID
+
 fsid = a7f2c3d4-e5f6-7890-abcd-ef1234567890
 
 # Monitor hosts with IPv6 addresses
@@ -62,7 +63,7 @@ ceph orch apply osd --all-available-devices
 ## Ceph Monitor Configuration with IPv6
 
 ```bash
-# /etc/ceph/ceph.conf — Monitor section
+# /etc/ceph/ceph.conf - Monitor section
 
 [mon.ceph-mon1]
 host = ceph-mon1
@@ -78,7 +79,7 @@ mon_addr = [2001:db8::11]:6789
 ## RADOS Gateway (RGW) with IPv6
 
 ```ini
-# /etc/ceph/ceph.conf — RGW section
+# /etc/ceph/ceph.conf - RGW section
 
 [client.rgw.rgw1]
 host = ceph-rgw1
@@ -166,4 +167,4 @@ ip6tables-save > /etc/ip6tables/rules.v6
 
 ## Conclusion
 
-Ceph supports IPv6 through the `ms_bind_ipv6 = true` option in `ceph.conf` and by specifying IPv6 addresses for monitors, OSDs, and RGW endpoints. The `mon_host` configuration uses Ceph's messenger v2 format with brackets around IPv6 addresses. All Ceph daemon types — MON, OSD, MDS, and RGW — bind to IPv6 when configured. CephFS mounts, RBD maps, and S3 access via RGW all operate over IPv6 using the same configuration. For dual-stack operation, set both `ms_bind_ipv6 = true` and `ms_bind_ipv4 = true`.
+Ceph supports IPv6 through the `ms_bind_ipv6 = true` option in `ceph.conf` and by specifying IPv6 addresses for monitors, OSDs, and RGW endpoints. The `mon_host` configuration uses Ceph's messenger v2 format with brackets around IPv6 addresses. All Ceph daemon types - MON, OSD, MDS, and RGW - bind to IPv6 when configured. CephFS mounts, RBD maps, and S3 access via RGW all operate over IPv6 using the same configuration. For dual-stack operation, set both `ms_bind_ipv6 = true` and `ms_bind_ipv4 = true`.

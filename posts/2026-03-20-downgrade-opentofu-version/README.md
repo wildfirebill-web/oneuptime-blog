@@ -1,4 +1,4 @@
-# How to Downgrade OpenTofu to a Previous Version
+# How to Downgrade OpenTofu to a Previous Version - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -21,6 +21,7 @@ Sometimes a new OpenTofu version introduces breaking changes or incompatibilitie
 
 ```bash
 # Check current version
+
 tofu version
 
 # Check what version is available for downgrade

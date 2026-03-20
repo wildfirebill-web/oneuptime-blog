@@ -104,6 +104,7 @@ To generate vmlinux.h from your running kernel, use the bpftool utility:
 
 ```bash
 # Generate vmlinux.h from the running kernel's BTF
+
 bpftool btf dump file /sys/kernel/btf/vmlinux format c > vmlinux.h
 ```
 

@@ -69,6 +69,7 @@ resource "azurerm_iothub_shared_access_policy" "backend_service" {
 
 ```hcl
 # Separate consumer groups for different processing pipelines
+
 resource "azurerm_iothub_consumer_group" "analytics" {
   name                   = "analytics"
   iothub_name            = azurerm_iothub.main.name
@@ -142,4 +143,4 @@ tofu apply tfplan
 
 ## Summary
 
-Azure IoT Hub provides reliable, secure device connectivity at scale. OpenTofu manages the hub, shared access policies, consumer groups, and message routing endpoints — creating a complete, code-driven IoT backend infrastructure.
+Azure IoT Hub provides reliable, secure device connectivity at scale. OpenTofu manages the hub, shared access policies, consumer groups, and message routing endpoints - creating a complete, code-driven IoT backend infrastructure.

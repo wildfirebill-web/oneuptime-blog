@@ -39,6 +39,7 @@ Rooms are created and managed through the Rooms SDK or REST API.
 
 ```bash
 # Install the Rooms SDK
+
 npm install @azure/communication-rooms
 ```
 

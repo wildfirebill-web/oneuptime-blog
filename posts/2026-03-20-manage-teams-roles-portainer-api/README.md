@@ -24,6 +24,7 @@ Teams in Portainer group users together for environment access control. Instead 
 
 ```bash
 # Create a new team
+
 curl -X POST "${PORTAINER_URL}/api/teams" \
   -H "Authorization: Bearer ${API_TOKEN}" \
   -H "Content-Type: application/json" \

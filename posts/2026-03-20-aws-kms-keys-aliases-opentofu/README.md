@@ -8,7 +8,7 @@ Description: Learn how to create and manage AWS KMS customer-managed keys and al
 
 ## Introduction
 
-AWS KMS Customer-Managed Keys (CMKs) provide full control over encryption keys used to protect your AWS resources—S3, EBS, RDS, DynamoDB, and more. Unlike AWS-managed keys, CMKs allow custom key policies, usage auditing via CloudTrail, the ability to disable/delete keys, and cross-account/cross-region sharing for complex architectures.
+AWS KMS Customer-Managed Keys (CMKs) provide full control over encryption keys used to protect your AWS resources-S3, EBS, RDS, DynamoDB, and more. Unlike AWS-managed keys, CMKs allow custom key policies, usage auditing via CloudTrail, the ability to disable/delete keys, and cross-account/cross-region sharing for complex architectures.
 
 ## Prerequisites
 
@@ -89,6 +89,7 @@ resource "aws_kms_alias" "main" {
 
 ```hcl
 # Separate key for RDS (with RDS service principal)
+
 resource "aws_kms_key" "rds" {
   description         = "KMS key for RDS encryption"
   enable_key_rotation = true
@@ -213,4 +214,4 @@ aws kms get-key-rotation-status --key-id alias/my-project/main
 
 ## Conclusion
 
-Create separate KMS keys per service or data classification rather than sharing a single key—this limits the blast radius if a key is compromised and enables independent key lifecycle management. Always enable automatic key rotation, which rotates the backing cryptographic material annually while preserving the key ARN and alias. Multi-region keys are essential for cross-region encrypted storage like Aurora Global Databases and Global S3 replication with KMS encryption.
+Create separate KMS keys per service or data classification rather than sharing a single key-this limits the blast radius if a key is compromised and enables independent key lifecycle management. Always enable automatic key rotation, which rotates the backing cryptographic material annually while preserving the key ARN and alias. Multi-region keys are essential for cross-region encrypted storage like Aurora Global Databases and Global S3 replication with KMS encryption.

@@ -49,6 +49,7 @@ You need two target groups and two listeners. The production listener handles re
 
 ```bash
 # Create the two target groups
+
 aws elbv2 create-target-group \
   --name myapp-tg-blue \
   --protocol HTTP \

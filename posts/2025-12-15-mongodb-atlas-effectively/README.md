@@ -74,6 +74,7 @@ async function connect() {
 
 ```bash
 # Add IP to allowlist via Atlas CLI
+
 atlas accessLists create --projectId <projectId> --entry 192.168.1.0/24
 
 # For development - allow from anywhere (not recommended for production)

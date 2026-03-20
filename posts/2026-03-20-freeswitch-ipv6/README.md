@@ -126,6 +126,7 @@ FreeSWITCH is a scalable open-source PBX/VoIP platform. Enabling IPv6 support re
 
 ```bash
 # SIP over IPv6
+
 sudo ip6tables -A INPUT -p udp --dport 5060 -j ACCEPT
 sudo ip6tables -A INPUT -p tcp --dport 5060 -j ACCEPT
 sudo ip6tables -A INPUT -p tcp --dport 5061 -j ACCEPT  # SIP TLS

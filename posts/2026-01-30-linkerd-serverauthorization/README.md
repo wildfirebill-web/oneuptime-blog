@@ -53,6 +53,7 @@ Check your Linkerd installation:
 
 ```bash
 # Verify Linkerd is installed and healthy
+
 linkerd check
 
 # Verify policy controller is running

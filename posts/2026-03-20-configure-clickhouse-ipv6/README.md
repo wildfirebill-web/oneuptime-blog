@@ -10,6 +10,7 @@ Description: Learn how to configure ClickHouse to listen on IPv6 addresses for H
 
 ```bash
 # Main config: /etc/clickhouse-server/config.xml
+
 # User config: /etc/clickhouse-server/users.xml
 # Drop-in: /etc/clickhouse-server/config.d/*.xml
 ```

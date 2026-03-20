@@ -20,6 +20,7 @@ Learn how to identify and resolve dependency cycles in OpenTofu configurations u
 
 ```bash
 # Verify OpenTofu installation
+
 tofu version
 
 # Set up required environment variables

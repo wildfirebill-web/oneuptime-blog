@@ -44,6 +44,7 @@ sequenceDiagram
 
 ```bash
 # Verify health endpoint
+
 kubectl exec tiefighter -- curl -sv http://deathstar.default.svc.cluster.local/v1/health
 
 # Test landing request - primary use case

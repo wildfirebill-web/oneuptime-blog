@@ -30,6 +30,7 @@ First, let's deploy MySQL with the necessary configuration for XtraBackup. We'll
 
 ```yaml
 # mysql-statefulset.yaml
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

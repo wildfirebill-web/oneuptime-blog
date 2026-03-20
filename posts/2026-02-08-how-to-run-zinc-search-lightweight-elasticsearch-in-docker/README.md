@@ -18,6 +18,7 @@ Run Zinc with a single command:
 
 ```bash
 # Start Zinc Search with default credentials
+
 docker run -d \
   --name zinc \
   -p 4080:4080 \

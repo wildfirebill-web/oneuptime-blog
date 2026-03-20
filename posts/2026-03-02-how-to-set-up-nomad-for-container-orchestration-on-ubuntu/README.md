@@ -22,6 +22,7 @@ HashiCorp maintains an official APT repository:
 
 ```bash
 # Install prerequisites
+
 sudo apt-get update
 sudo apt-get install -y wget gpg curl
 

@@ -97,6 +97,7 @@ Each endpoint's `backend` block specifies the upstream host. Use bracket notatio
 
 ```bash
 # Validate the configuration
+
 krakend check -c krakend.json
 
 # Run the gateway
@@ -134,7 +135,7 @@ KrakenD exposes a metrics endpoint that you can scrape over IPv6.
       "collection_time": "60s",
       "proxy_disabled": false,
       "router_disabled": false,
-      // Metrics listen address — bind to IPv6
+      // Metrics listen address - bind to IPv6
       "listen_address": "[::]:8090"
     }
   }

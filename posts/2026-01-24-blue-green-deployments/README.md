@@ -38,6 +38,7 @@ The simplest Kubernetes blue-green deployment uses Service selector switching.
 
 ```yaml
 # blue-deployment.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

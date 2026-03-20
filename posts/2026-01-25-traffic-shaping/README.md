@@ -70,6 +70,7 @@ BURST="32kbit"
 LATENCY="50ms"
 
 # Remove any existing qdisc
+
 tc qdisc del dev $INTERFACE root 2>/dev/null
 
 # Add token bucket filter

@@ -1,4 +1,4 @@
-# How to Set Up Auto-Remove for Containers in Portainer
+# How to Set Up Auto-Remove for Containers in Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -39,6 +39,7 @@ The auto-remove flag (`--rm` in Docker CLI) causes a container to be automatical
 
 ```bash
 # Equivalent Docker CLI command:
+
 docker run --rm \
   --name my-migration \
   myorg/migrate:latest \
@@ -67,7 +68,7 @@ For one-shot tasks, ensure restart policy is set to **No** (none).
 ```yaml
 # docker-compose.yml: run migration and remove on completion
 services:
-  # Migration container — runs once and is removed
+  # Migration container - runs once and is removed
   db-migrate:
     image: myorg/myapp:latest
     command: ["python", "manage.py", "migrate", "--noinput"]
@@ -104,11 +105,11 @@ In Portainer:
 2. Set command: `sh -c "find /data -name '*.tmp' -mtime +7 -delete"`.
 3. Mount the volume.
 4. Enable **Auto remove**.
-5. Start the container — it runs and disappears.
+5. Start the container - it runs and disappears.
 
 ### Testing a New Image
 
-```
+```text
 # Quick test: run a container to explore an image
 # Enable auto-remove so it cleans up automatically
 Image: ubuntu:22.04
@@ -145,10 +146,10 @@ curl -s -X POST \
   -H "X-API-Key: ${API_KEY}" \
   "${PORTAINER_URL}/api/endpoints/${ENDPOINT_ID}/docker/containers/${CONTAINER_ID}/start"
 
-echo "Container ${CONTAINER_ID} started — will auto-remove on exit"
+echo "Container ${CONTAINER_ID} started - will auto-remove on exit"
 ```
 
-## Step 5: Alternative — Portainer Edge Jobs
+## Step 5: Alternative - Portainer Edge Jobs
 
 For recurring one-shot tasks on edge devices, use **Edge Jobs** instead of auto-remove containers:
 
@@ -170,9 +171,9 @@ docker ps -a | grep my-container
 ## Best Practices
 
 - **Use auto-remove for all one-shot tasks** to prevent stopped container buildup.
-- **Name containers meaningfully** even with auto-remove — the name helps identify them in logs.
-- **Capture logs before the container is removed** if you need them — pipe to a file or log driver.
-- **Don't use auto-remove for production services** — use restart policies instead.
+- **Name containers meaningfully** even with auto-remove - the name helps identify them in logs.
+- **Capture logs before the container is removed** if you need them - pipe to a file or log driver.
+- **Don't use auto-remove for production services** - use restart policies instead.
 - **Combine with Portainer Edge Jobs** for scheduled one-shot tasks on edge devices.
 
 ## Conclusion

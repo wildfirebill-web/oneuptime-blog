@@ -40,6 +40,7 @@ First, let's define the data structures that represent notifications in our syst
 
 ```python
 # models.py
+
 # Core notification models and types
 from dataclasses import dataclass, field
 from enum import Enum

@@ -30,6 +30,7 @@ Start by understanding what you have:
 
 ```bash
 # List all persistent volume claims with their sizes and status
+
 kubectl get pvc -A -o custom-columns=\
 NAMESPACE:.metadata.namespace,\
 NAME:.metadata.name,\

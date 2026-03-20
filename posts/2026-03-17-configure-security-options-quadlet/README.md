@@ -20,6 +20,7 @@ Run a container with minimal Linux capabilities:
 
 ```ini
 # ~/.config/containers/systemd/secure-app.container
+
 [Unit]
 Description=Secure application with minimal capabilities
 

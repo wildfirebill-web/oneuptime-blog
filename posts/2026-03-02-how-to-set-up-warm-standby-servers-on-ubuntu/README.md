@@ -41,6 +41,7 @@ Edit the PostgreSQL configuration file on the primary:
 
 ```bash
 # Open the main config file
+
 sudo nano /etc/postgresql/14/main/postgresql.conf
 ```
 

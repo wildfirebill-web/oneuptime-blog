@@ -57,6 +57,7 @@ Allow traffic between security groups without hardcoding CIDRs:
 
 ```hcl
 # Application layer security group
+
 resource "aws_security_group" "app" {
   name   = "app-sg"
   vpc_id = aws_vpc.main.id
@@ -101,7 +102,7 @@ Separate `aws_security_group_rule` resources allow modular rule management:
 # Create the security group with no inline rules
 resource "aws_security_group" "base" {
   name        = "base-sg"
-  description = "Base security group — rules managed separately"
+  description = "Base security group - rules managed separately"
   vpc_id      = aws_vpc.main.id
 
   # Prevent Terraform from managing ingress/egress inline

@@ -32,6 +32,7 @@ Identity is the foundation of security on AWS. Get this wrong and nothing else m
 
 ```hcl
 # Enable IAM Identity Center
+
 resource "aws_ssoadmin_managed_policy_attachment" "admin" {
   instance_arn       = aws_ssoadmin_instance.main.arn
   managed_policy_arn = "arn:aws:iam::aws:policy/AdministratorAccess"

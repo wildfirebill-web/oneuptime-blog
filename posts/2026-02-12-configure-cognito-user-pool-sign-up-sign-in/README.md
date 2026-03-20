@@ -140,6 +140,7 @@ Sign-in supports several authentication flows:
 
 ```hcl
 # App client with authentication flows configured
+
 resource "aws_cognito_user_pool_client" "app" {
   name         = "my-app-client"
   user_pool_id = aws_cognito_user_pool.main.id

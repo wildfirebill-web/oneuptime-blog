@@ -47,6 +47,7 @@ With Istio multi-cluster, each region runs its own Kubernetes cluster and Istio 
 
 ```bash
 # On cluster in us-east-1
+
 istioctl install --set profile=default \
   --set values.global.meshID=my-mesh \
   --set values.global.multiCluster.clusterName=us-east-1 \

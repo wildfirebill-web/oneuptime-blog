@@ -42,6 +42,7 @@ dependencies {
 
 ```yaml
 # application.yml
+
 spring:
   redis:
     host: localhost

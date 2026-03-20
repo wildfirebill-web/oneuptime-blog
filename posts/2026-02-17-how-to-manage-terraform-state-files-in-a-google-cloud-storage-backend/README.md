@@ -29,6 +29,7 @@ First, create a GCS bucket for your Terraform state. Do this outside of Terrafor
 
 ```bash
 # Create a GCS bucket for Terraform state with versioning enabled
+
 gsutil mb -p my-gcp-project -l us-central1 gs://my-terraform-state-bucket
 
 # Enable versioning so you can recover previous state versions

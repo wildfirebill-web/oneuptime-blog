@@ -158,6 +158,7 @@ Switch to a regular user and try to exceed the quota:
 
 ```bash
 # As a regular user
+
 cd /data/project-alpha
 dd if=/dev/zero of=testfile bs=1M count=13000
 ```

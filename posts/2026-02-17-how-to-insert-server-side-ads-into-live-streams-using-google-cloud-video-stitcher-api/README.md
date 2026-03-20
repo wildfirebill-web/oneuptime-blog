@@ -43,6 +43,7 @@ The stitcher modifies the HLS/DASH manifest to replace content segments with ad 
 
 ```bash
 # Enable the API
+
 gcloud services enable videostitcher.googleapis.com
 
 # Install the client library

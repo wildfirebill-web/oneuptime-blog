@@ -38,6 +38,7 @@ String conditions compare context values against strings.
 
 ```hcl
 # Allow access only when a specific tag matches
+
 resource "aws_iam_policy" "string_equals" {
   name = "string-equals-example"
 

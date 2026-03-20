@@ -44,6 +44,7 @@ Here's a Terraform example that sets up the VPC configuration:
 
 ```hcl
 # Lambda function configured to access RDS in the same VPC
+
 resource "aws_lambda_function" "api" {
   function_name = "rds-query-handler"
   runtime       = "nodejs20.x"

@@ -103,6 +103,7 @@ Console.WriteLine($"Stored procedure created: {response.Resource.Id}");
 
 ```bash
 # Register a stored procedure from a JavaScript file
+
 az cosmosdb sql stored-procedure create \
     --account-name myCosmosAccount \
     --database-name mydb \

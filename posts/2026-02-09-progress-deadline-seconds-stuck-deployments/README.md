@@ -93,6 +93,7 @@ Check deployment status to see if it exceeded the progress deadline:
 
 ```bash
 # Check deployment conditions
+
 kubectl get deployment web-app -o json | \
   jq '.status.conditions[] | select(.type=="Progressing")'
 ```

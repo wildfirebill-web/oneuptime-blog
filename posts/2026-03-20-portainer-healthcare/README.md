@@ -24,6 +24,7 @@ Healthcare organizations running containerized workloads face strict compliance 
 
 ```bash
 # Deploy Portainer with security hardening
+
 docker run -d \
   --name portainer \
   --restart=always \

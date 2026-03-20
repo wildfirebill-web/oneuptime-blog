@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: BGP, IPv6, Juniper, JunOS, Routing
+Tags: BGP, IPv6, Juniper, Junos, Routing
 
 Description: Learn how to configure BGP IPv6 unicast routing on Juniper routers using JunOS, including neighbor configuration, prefix advertisement, and verification.
 
@@ -12,8 +12,9 @@ Juniper JunOS natively supports IPv6 BGP through the `family inet6 unicast` conf
 
 ## Basic IPv6 BGP Configuration
 
-```
+```text
 # Configure BGP with IPv6 address family
+
 set protocols bgp group EBGP_V6 type external
 set protocols bgp group EBGP_V6 peer-as 65002
 set protocols bgp group EBGP_V6 neighbor 2001:db8:peer::2
@@ -26,7 +27,7 @@ set routing-options autonomous-system 65001
 
 ## Full JunOS Configuration
 
-```
+```text
 # protocols section
 protocols {
     bgp {
@@ -60,7 +61,7 @@ routing-options {
 
 Juniper uses export policies to control which routes are advertised to BGP neighbors:
 
-```
+```bash
 # Define the prefix to advertise
 set policy-options policy-statement ADVERTISE_IPV6 term own-prefixes from route-filter 2001:db8:1::/48 exact
 set policy-options policy-statement ADVERTISE_IPV6 term own-prefixes then accept
@@ -72,8 +73,8 @@ set protocols bgp group EBGP_V6 export ADVERTISE_IPV6
 
 ## Accepting IPv6 Prefixes from Peers
 
-```
-# Import policy — accept only specific prefixes from peers
+```python
+# Import policy - accept only specific prefixes from peers
 set policy-options policy-statement ACCEPT_FROM_PEER term allowed-prefixes from family inet6
 set policy-options policy-statement ACCEPT_FROM_PEER term allowed-prefixes from route-filter 2001:db8:remote::/48 orlonger
 set policy-options policy-statement ACCEPT_FROM_PEER term allowed-prefixes then accept
@@ -86,14 +87,14 @@ set protocols bgp group EBGP_V6 import ACCEPT_FROM_PEER
 
 For iBGP peers, you need next-hop-self so the next hop is reachable within the AS:
 
-```
+```text
 # Apply next-hop-self for iBGP peers
 set protocols bgp group IBGP_V6 family inet6 unicast next-hop-self
 ```
 
 ## Verification Commands
 
-```
+```text
 # Show BGP IPv6 neighbor summary
 show bgp neighbor
 
@@ -112,7 +113,7 @@ show bgp neighbor 2001:db8:peer::2 | match "NLRI\|AFI\|family"
 
 ## Sample Output
 
-```
+```text
 user@router> show bgp neighbor 2001:db8:peer::2
 
 Peer: 2001:db8:peer::2 AS 65002   Local: 2001:db8:peer::1 AS 65001

@@ -39,6 +39,7 @@ import json
 mc = memcache.Client(['127.0.0.1:11211'])
 
 # Store a simple value
+
 mc.set('user:1:name', 'Alice')
 
 # Store a complex object (requires serialization)

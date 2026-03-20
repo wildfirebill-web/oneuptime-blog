@@ -39,6 +39,7 @@ kubectl rollout restart daemonset/calico-node -n calico-system
 
 ```bash
 # On a node
+
 lsmod | grep nf_tables
 modinfo nf_tables
 ```

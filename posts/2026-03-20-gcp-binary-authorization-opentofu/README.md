@@ -14,6 +14,7 @@ GCP Binary Authorization enforces deploy-time policies requiring container image
 
 ```hcl
 # main.tf - Enable Binary Authorization API
+
 resource "google_project_service" "binary_authorization" {
   service = "binaryauthorization.googleapis.com"
 }

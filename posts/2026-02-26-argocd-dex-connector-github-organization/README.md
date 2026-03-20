@@ -259,6 +259,7 @@ After setup, verify everything works:
 
 ```bash
 # Restart Dex and ArgoCD server
+
 kubectl -n argocd rollout restart deployment argocd-dex-server
 kubectl -n argocd rollout restart deployment argocd-server
 

@@ -22,6 +22,7 @@ Edit your Netplan configuration file (e.g., `/etc/netplan/01-netcfg.yaml`):
 
 ```yaml
 # /etc/netplan/01-netcfg.yaml
+
 network:
   version: 2
   renderer: networkd
@@ -78,7 +79,7 @@ If you receive a response, jumbo frames are working end-to-end. If the ping fail
 ## Important Notes
 
 - All switches and NICs in the path must support the same MTU for jumbo frames to work
-- Mismatched MTU causes silent packet drops and poor performance — not always an obvious error
+- Mismatched MTU causes silent packet drops and poor performance - not always an obvious error
 - Use `ip link set eth0 mtu 9000` for a temporary, non-persistent change to test before editing Netplan
 
 ## Conclusion

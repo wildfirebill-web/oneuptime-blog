@@ -34,6 +34,7 @@ Configuration sets are the key to detailed SES monitoring. Create one and attach
 
 ```bash
 # Create the configuration set
+
 aws sesv2 create-configuration-set \
   --configuration-set-name production-email-monitoring
 

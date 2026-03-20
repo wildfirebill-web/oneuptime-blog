@@ -234,6 +234,7 @@ Check how much data your queries are scanning:
 
 ```python
 # Check how much data a query scanned
+
 import boto3
 
 athena = boto3.client('athena', region_name='us-east-1')

@@ -20,6 +20,7 @@ The pipe preserves newlines exactly as written. Each line break in the YAML beco
 
 ```yaml
 # Literal block - preserves newlines
+
 - name: Create a multi-line script
   ansible.builtin.copy:
     dest: /tmp/setup.sh

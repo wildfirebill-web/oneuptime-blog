@@ -51,6 +51,7 @@ If you apply this pod, Kubernetes will terminate it after 300 seconds, even if t
 ```bash
 kubectl get pod time-limited-task
 # Output shows Failed status after deadline
+
 ```
 
 You can inspect the reason for termination:

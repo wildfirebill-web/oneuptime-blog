@@ -37,6 +37,7 @@ Register the resource provider if you have not already:
 
 ```bash
 # Register the Azure Managed Lustre resource provider
+
 az provider register --namespace Microsoft.StorageCache
 
 # Check registration status - wait until it shows "Registered"

@@ -44,6 +44,7 @@ sudo vi /etc/login.defs
 
 ```bash
 # Maximum number of days a password is valid
+
 PASS_MAX_DAYS   90
 
 # Minimum number of days between password changes

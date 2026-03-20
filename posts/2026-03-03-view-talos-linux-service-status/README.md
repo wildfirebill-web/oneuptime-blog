@@ -27,6 +27,7 @@ Each of these services has a lifecycle managed by Talos, and you can inspect the
 
 ```bash
 # Show all services on a node
+
 talosctl services --nodes <node-ip>
 ```
 

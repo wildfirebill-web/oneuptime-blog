@@ -1,10 +1,10 @@
-# How to Fix "Default Gateway Is Not Available" on Windows
+# How to Fix 'Default Gateway Is Not Available' on Windows
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Default Gateway, Windows, Troubleshooting, Network, TCP/IP
+Tags: Default Gateway, Windows, Troubleshooting, Networks, TCP/IP
 
-Description: Learn how to fix the "Default Gateway is not available" error on Windows, which prevents internet access even when the network adapter shows as connected.
+Description: Learn how to fix the 'Default Gateway is not available' error on Windows, which prevents internet access even when the network adapter shows as connected.
 
 ## What Causes This Error?
 
@@ -45,7 +45,7 @@ Windows will often automatically fix this by resetting the adapter or DHCP clien
 ## Step 3: Reset TCP/IP Stack
 
 ```cmd
-REM Run as Administrator — fixes corrupted TCP/IP stack
+REM Run as Administrator - fixes corrupted TCP/IP stack
 netsh winsock reset
 netsh int ip reset
 netsh int ipv6 reset
@@ -63,6 +63,7 @@ Windows can power off network adapters to save energy, which drops the gateway:
 
 ```powershell
 # Find adapter name
+
 Get-NetAdapter | Select-Object Name, Status
 
 # Disable power management via PowerShell
@@ -132,4 +133,4 @@ REM Find "DHCP Client" → Restart
 
 ## Conclusion
 
-"Default gateway is not available" is fixed by running `netsh winsock reset && netsh int ip reset` followed by a reboot, disabling adapter power management, setting a static gateway if DHCP is unreliable, and updating the NIC driver. Always verify the fix with `ping [gateway-ip]` — if that succeeds, internet routing is restored.
+"Default gateway is not available" is fixed by running `netsh winsock reset && netsh int ip reset` followed by a reboot, disabling adapter power management, setting a static gateway if DHCP is unreliable, and updating the NIC driver. Always verify the fix with `ping [gateway-ip]` - if that succeeds, internet routing is restored.

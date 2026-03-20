@@ -46,6 +46,7 @@ Here is an example using `ip6tables` on a Linux-based firewall to enforce zone p
 
 ```bash
 # Flush existing IPv6 rules
+
 ip6tables -F
 
 # Allow loopback traffic

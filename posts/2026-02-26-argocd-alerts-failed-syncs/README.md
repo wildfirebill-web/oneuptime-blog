@@ -23,6 +23,7 @@ ArgoCD tracks sync operations through the `argocd_app_sync_total` counter. Each 
 
 ```promql
 # All failed syncs in the last 5 minutes
+
 rate(argocd_app_sync_total{phase="Failed"}[5m])
 
 # All error syncs in the last 5 minutes

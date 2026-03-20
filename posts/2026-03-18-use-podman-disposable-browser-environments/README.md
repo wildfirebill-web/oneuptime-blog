@@ -26,6 +26,7 @@ To display a graphical browser running inside a container on your host screen, y
 
 ```bash
 # Allow local connections to your X server
+
 xhost +local:
 
 # Verify your DISPLAY variable

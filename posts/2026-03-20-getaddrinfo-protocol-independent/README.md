@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: C, IPv6, getaddrinfo, Socket Programming, Protocol Independence, Networking
+Tags: C, IPv6, Getaddrinfo, Socket Programming, Protocol Independence, Networking
 
 Description: Use getaddrinfo() to write protocol-independent network code in C that automatically works with both IPv4 and IPv6 without separate code paths.
 

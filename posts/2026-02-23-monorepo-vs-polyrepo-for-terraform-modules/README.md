@@ -118,6 +118,7 @@ In a monorepo, Git tags apply to the entire repository. When you tag `v1.5.0`, e
 
 ```bash
 # Tags the entire repository
+
 git tag -a v1.5.0 -m "Add autoscaling support to ECS module"
 ```
 

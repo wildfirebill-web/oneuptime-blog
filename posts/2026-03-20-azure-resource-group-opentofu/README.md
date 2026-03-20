@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Azure, Resource Group, Infrastructure as Code, Organisation
+Tags: OpenTofu, Azure, Resource Groups, Infrastructure as Code, Organisation
 
 Description: Learn how to create and manage Azure Resource Groups with OpenTofu as the foundational container for organising and managing Azure resources.
 
@@ -73,7 +73,7 @@ resource "azurerm_resource_group" "all" {
 }
 ```
 
-## Resource Group with Management Lock
+Resource Group with Management Lock
 
 ```hcl
 resource "azurerm_resource_group" "production" {
@@ -82,11 +82,12 @@ resource "azurerm_resource_group" "production" {
 }
 
 # Prevent accidental deletion of the production resource group
+
 resource "azurerm_management_lock" "production" {
   name       = "production-lock"
   scope      = azurerm_resource_group.production.id
   lock_level = "CanNotDelete"
-  notes      = "Production resource group — do not delete without change management approval"
+  notes      = "Production resource group - do not delete without change management approval"
 }
 ```
 

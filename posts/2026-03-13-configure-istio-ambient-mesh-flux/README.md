@@ -26,6 +26,7 @@ This guide covers deploying Istio in Ambient mode and configuring namespaces and
 
 ```yaml
 # clusters/my-cluster/istio-ambient/namespace.yaml
+
 apiVersion: v1
 kind: Namespace
 metadata:

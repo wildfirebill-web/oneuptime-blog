@@ -25,6 +25,7 @@ The key advantage of DevStack for policy testing is access to Felix's debug logg
 source /opt/stack/devstack/openrc admin admin
 
 # Restrictive security group - only ICMP
+
 openstack security group create restrict-sg
 openstack security group rule create --protocol icmp restrict-sg
 

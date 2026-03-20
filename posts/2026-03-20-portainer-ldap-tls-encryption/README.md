@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, LDAP, TLS, LDAPS, Security, Encryption
+Tags: Portainer, LDAP, TLS, Security, Encryption
 
 Description: Configure Portainer to connect to your LDAP server using LDAPS (LDAP over TLS) on port 636 for end-to-end encrypted authentication.
 
 ## Introduction
 
-LDAPS (LDAP over SSL/TLS) uses port 636 and wraps the entire LDAP connection in TLS from the start — unlike StartTLS which upgrades a plain connection. LDAPS is simpler to configure and is the recommended encryption method for new deployments. This guide covers enabling LDAPS in Portainer.
+LDAPS (LDAP over SSL/TLS) uses port 636 and wraps the entire LDAP connection in TLS from the start - unlike StartTLS which upgrades a plain connection. LDAPS is simpler to configure and is the recommended encryption method for new deployments. This guide covers enabling LDAPS in Portainer.
 
 ## Prerequisites
 
@@ -20,6 +20,7 @@ LDAPS (LDAP over SSL/TLS) uses port 636 and wraps the entire LDAP connection in 
 
 ```bash
 # Test direct LDAPS connection
+
 openssl s_client -connect ldap.example.com:636 < /dev/null 2>/dev/null \
   | openssl x509 -noout -text | grep -E "Subject:|Not After:"
 
@@ -51,7 +52,7 @@ openssl x509 -in ldap-server.pem -noout -text | grep -E "DNS:|IP:"
 
 In Settings → Authentication → LDAP:
 
-```
+```text
 Server:             ldap.example.com:636
 Use TLS:            Enabled (LDAPS)
 StartTLS:           Disabled
@@ -123,7 +124,7 @@ print(json.dumps(config))
 
 For Active Directory with LDAPS:
 
-```
+```text
 Server:             dc01.corp.example.com:636
 Use TLS:            Enabled
 Skip TLS Verify:    Off (unless using self-signed AD cert)
@@ -157,7 +158,7 @@ openssl s_client -connect ldap.example.com:636 \
 
 In development or small environments with self-signed LDAP certs:
 
-```
+```text
 Skip TLS Verify: On
 ```
 

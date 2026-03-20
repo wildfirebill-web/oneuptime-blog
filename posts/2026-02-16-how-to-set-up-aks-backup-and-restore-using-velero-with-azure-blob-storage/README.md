@@ -32,6 +32,7 @@ First, create the Azure resources that Velero needs: a storage account, a blob c
 
 ```bash
 # Set variables
+
 AZURE_BACKUP_RESOURCE_GROUP="velero-backups"
 AZURE_STORAGE_ACCOUNT_NAME="velerobackups$(openssl rand -hex 4)"
 BLOB_CONTAINER="velero"

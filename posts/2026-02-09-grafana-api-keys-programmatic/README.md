@@ -40,6 +40,7 @@ For automation, create keys programmatically:
 
 ```bash
 # Create an API key with Admin role
+
 curl -X POST http://grafana.example.com/api/auth/keys \
   -H "Content-Type: application/json" \
   -u admin:admin \

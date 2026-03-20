@@ -31,6 +31,7 @@ RPL (Routing Protocol for Low-Power and Lossy Networks, RFC 6550) is the standar
 
 ```bash
 # Install required packages for an IEEE 802.15.4 based mesh
+
 sudo apt-get install wpan-tools
 
 # Configure the 802.15.4 interface

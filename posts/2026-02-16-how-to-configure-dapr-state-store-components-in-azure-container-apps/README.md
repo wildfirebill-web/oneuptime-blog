@@ -24,6 +24,7 @@ First, create the Redis instance.
 
 ```bash
 # Create an Azure Cache for Redis instance
+
 az redis create \
   --name my-redis-cache \
   --resource-group my-rg \

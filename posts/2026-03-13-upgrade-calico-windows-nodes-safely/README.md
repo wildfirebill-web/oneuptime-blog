@@ -36,6 +36,7 @@ Verify Linux nodes are healthy before proceeding to Windows.
 
 ```powershell
 # On each Windows node
+
 $CALICO_VERSION = "v3.27.0"
 Invoke-WebRequest -Uri "https://github.com/projectcalico/calico/releases/download/$CALICO_VERSION/calico-windows-$CALICO_VERSION.zip" `
   -OutFile C:\calico-windows-new.zip

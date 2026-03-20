@@ -94,6 +94,7 @@ Check if the server is running.
 
 ```bash
 # Check if process is running
+
 ps aux | grep node
 
 # Check if port is listening

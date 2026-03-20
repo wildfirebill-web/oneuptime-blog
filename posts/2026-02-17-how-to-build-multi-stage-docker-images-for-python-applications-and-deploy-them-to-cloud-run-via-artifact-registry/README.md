@@ -18,6 +18,7 @@ Here is what a typical single-stage Dockerfile looks like:
 
 ```dockerfile
 # DO NOT use this in production - image will be ~1.2GB
+
 FROM python:3.12
 
 WORKDIR /app

@@ -62,6 +62,7 @@ First, implement a device registration service that edge nodes use to announce t
 
 ```python
 # fleet_manager.py
+
 from dataclasses import dataclass, field
 from datetime import datetime
 from typing import Dict, List, Optional

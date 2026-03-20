@@ -27,6 +27,7 @@ Grab the latest OpenTelemetry Java agent JAR and the Google Cloud auto-configura
 
 ```bash
 # Download the OpenTelemetry Java agent
+
 curl -L -o opentelemetry-javaagent.jar \
   https://github.com/open-telemetry/opentelemetry-java-instrumentation/releases/latest/download/opentelemetry-javaagent.jar
 

@@ -104,6 +104,7 @@ This Dockerfile compiles the application to a native binary and packages it in a
 # Dockerfile.native - GraalVM native image multi-stage build
 
 # === Stage 1: Build the native image ===
+
 FROM ghcr.io/graalvm/native-image-community:21 AS builder
 
 WORKDIR /build

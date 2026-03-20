@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GRE, Tunnel, Linux, ip tunnel, ip link, Cleanup, Networking
+Tags: GRE, Tunnel, Linux, Ip tunnel, Ip link, Cleanup, Networking
 
 Description: Learn how to delete GRE tunnel interfaces on Linux using ip tunnel and ip link commands, including cleanup of associated routes and persistent configuration removal.
 
@@ -14,6 +14,7 @@ Deleting a GRE tunnel requires removing the tunnel interface and any associated 
 
 ```bash
 # Method 1: using ip tunnel (works for tunnels created with ip tunnel add)
+
 ip tunnel del gre1
 
 # Method 2: using ip link (generic, works for all interfaces)

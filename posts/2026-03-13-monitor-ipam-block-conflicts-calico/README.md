@@ -67,6 +67,7 @@ spec:
 
 ```bash
 # Script to detect duplicate pod IPs (run as CronJob)
+
 DUPES=$(kubectl get pods --all-namespaces -o wide \
   | awk '{print $7}' | grep -v "IP\|<none>" | sort | uniq -d)
 if [ -n "$DUPES" ]; then

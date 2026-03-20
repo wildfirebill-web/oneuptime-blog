@@ -10,7 +10,7 @@ RFC 1918 defines three private IPv4 ranges reserved for internal use. Planning t
 
 ## The Three RFC 1918 Ranges
 
-```
+```bash
 Class A: 10.0.0.0/8
   - 16,777,216 addresses
   - Ideal for large enterprises, cloud environments
@@ -19,7 +19,7 @@ Class A: 10.0.0.0/8
 Class B: 172.16.0.0/12
   - 1,048,576 addresses (172.16.0.0 – 172.31.255.255)
   - Good for medium enterprises, VPN ranges
-  - Often used by Docker (172.17.0.0/16) — avoid conflicts
+  - Often used by Docker (172.17.0.0/16) - avoid conflicts
 
 Class C: 192.168.0.0/16
   - 65,536 addresses
@@ -29,43 +29,43 @@ Class C: 192.168.0.0/16
 
 ## Common Conflicts to Avoid
 
-```
-172.17.0.0/16     — Docker default bridge network
-172.16.0.0/12     — Frequently used by cloud providers (Oracle, AWS VPC)
-192.168.0.0/24    — Home routers (Linksys, ASUS, TP-Link)
-192.168.1.0/24    — Most home routers worldwide
-10.0.0.0/24       — Very commonly used in labs/small setups
+```bash
+172.17.0.0/16     - Docker default bridge network
+172.16.0.0/12     - Frequently used by cloud providers (Oracle, AWS VPC)
+192.168.0.0/24    - Home routers (Linksys, ASUS, TP-Link)
+192.168.1.0/24    - Most home routers worldwide
+10.0.0.0/24       - Very commonly used in labs/small setups
 ```
 
 ## Recommended Enterprise Scheme Using 10.0.0.0/8
 
-```
-10.0.0.0/8 — Total enterprise space
+```text
+10.0.0.0/8 - Total enterprise space
 │
 ├── 10.0.0.0/9   (10.0.0.0 – 10.127.255.255)
 │   └── Sites/offices (up to 128 × /16 site allocations)
 │
 ├── 10.128.0.0/9 (10.128.0.0 – 10.255.255.255)
-│   ├── 10.128.0.0/12  — Data centers (up to 16 × /16 DCs)
-│   ├── 10.144.0.0/12  — Cloud VPCs
-│   ├── 10.160.0.0/12  — VPN ranges
-│   ├── 10.176.0.0/12  — Kubernetes pods
-│   ├── 10.192.0.0/12  — Kubernetes services
-│   └── 10.240.0.0/12  — Future / Reserve
+│   ├── 10.128.0.0/12  - Data centers (up to 16 × /16 DCs)
+│   ├── 10.144.0.0/12  - Cloud VPCs
+│   ├── 10.160.0.0/12  - VPN ranges
+│   ├── 10.176.0.0/12  - Kubernetes pods
+│   ├── 10.192.0.0/12  - Kubernetes services
+│   └── 10.240.0.0/12  - Future / Reserve
 ```
 
 ## Typical Site Allocation (/16 per site)
 
-```
+```text
 Site: 10.1.0.0/16 (e.g., New York)
-  ├── 10.1.0.0/24   — Infrastructure / Gateway
-  ├── 10.1.1.0/24   — Servers / VLAN 10
-  ├── 10.1.2.0/24   — Workstations / VLAN 20
-  ├── 10.1.3.0/24   — WiFi / VLAN 30
-  ├── 10.1.4.0/24   — VoIP / VLAN 40
-  ├── 10.1.5.0/24   — Printers / VLAN 50
-  ├── 10.1.254.0/24 — Management / OOB
-  └── 10.1.255.0/30 — WAN uplink
+  ├── 10.1.0.0/24   - Infrastructure / Gateway
+  ├── 10.1.1.0/24   - Servers / VLAN 10
+  ├── 10.1.2.0/24   - Workstations / VLAN 20
+  ├── 10.1.3.0/24   - WiFi / VLAN 30
+  ├── 10.1.4.0/24   - VoIP / VLAN 40
+  ├── 10.1.5.0/24   - Printers / VLAN 50
+  ├── 10.1.254.0/24 - Management / OOB
+  └── 10.1.255.0/30 - WAN uplink
 ```
 
 ## Avoiding VPN Overlap
@@ -74,6 +74,7 @@ A critical consideration: remote workers connect from `192.168.x.x` or `10.x.x.x
 
 ```bash
 # Test overlap before deployment
+
 python3 -c "
 import ipaddress
 corp = ipaddress.IPv4Network('10.100.0.0/16')

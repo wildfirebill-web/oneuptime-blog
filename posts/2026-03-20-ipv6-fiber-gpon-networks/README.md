@@ -8,10 +8,10 @@ Description: Configure IPv6 for GPON and XGS-PON fiber networks including OLT co
 
 ## GPON IPv6 Architecture
 
-```
-OLT (Optical Line Terminal) — head-end at CO/hub
+```text
+OLT (Optical Line Terminal) - head-end at CO/hub
   ↓ (fiber splitter 1:32 or 1:64)
-ONT/ONU (Optical Network Terminal) — at subscriber premises
+ONT/ONU (Optical Network Terminal) - at subscriber premises
   ↓
 CPE Router (Home Router)
   ↓
@@ -26,10 +26,11 @@ IPv6 flows through:
 
 ## OLT IPv6 Configuration (Huawei MA5800)
 
-```
-# Huawei OLT MA5800 — IPv6 for GPON
+```text
+# Huawei OLT MA5800 - IPv6 for GPON
 
 # Management IPv6
+
 interface MEth0/0/0
   ipv6 address 2001:db8:mgmt::olt1/64
 
@@ -51,8 +52,8 @@ interface Vlanif100
 
 ## Nokia ISAM OLT IPv6
 
-```
-# Nokia 7360 ISAM — IPv6 configuration
+```text
+# Nokia 7360 ISAM - IPv6 configuration
 
 configure router interface "subscriber"
   ipv6
@@ -96,7 +97,7 @@ host ONT_STATIC {
 
 ```bash
 #!/bin/bash
-# provision-ipv6.sh — Provision IPv6 for new GPON subscriber
+# provision-ipv6.sh - Provision IPv6 for new GPON subscriber
 
 ONT_ID=$1
 SUBSCRIBER_ID=$2

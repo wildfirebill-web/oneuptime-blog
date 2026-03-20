@@ -16,6 +16,7 @@ The most common approach is using the `:!` exclusion operator in your host patte
 
 ```bash
 # Run against all web servers except web3
+
 ansible-playbook -i inventory.ini site.yml --limit 'webservers:!web3.example.com'
 
 # Run against everything except the database group

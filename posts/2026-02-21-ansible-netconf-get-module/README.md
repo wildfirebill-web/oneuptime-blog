@@ -39,6 +39,7 @@ Start with a simple query to retrieve the full running configuration.
 
 ```yaml
 # basic_netconf_get.yml - Retrieve running configuration via NETCONF
+
 ---
 - name: Get device configuration
   hosts: netconf_devices

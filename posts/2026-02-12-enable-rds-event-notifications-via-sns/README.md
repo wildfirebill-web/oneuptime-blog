@@ -31,6 +31,7 @@ If you don't already have an SNS topic for database notifications, create one:
 
 ```bash
 # Create an SNS topic for RDS event notifications
+
 aws sns create-topic --name rds-events
 
 # Subscribe your email

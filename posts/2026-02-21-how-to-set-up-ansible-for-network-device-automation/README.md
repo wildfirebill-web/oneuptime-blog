@@ -37,6 +37,7 @@ Start by installing Ansible and the network collections you need:
 
 ```bash
 # Install Ansible core
+
 pip install ansible-core
 
 # Install common network collections

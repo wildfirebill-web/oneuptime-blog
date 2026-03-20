@@ -43,6 +43,7 @@ The simplest way to run commands in parallel is using the `&` operator.
 #!/bin/bash
 
 # Run three commands in parallel
+
 ./process_file1.sh &
 ./process_file2.sh &
 ./process_file3.sh &
@@ -565,7 +566,7 @@ run_with_fail_fast \
     "./task3.sh"
 ```
 
-## Resource Management
+Resource Management
 
 ### CPU-Aware Parallelism
 

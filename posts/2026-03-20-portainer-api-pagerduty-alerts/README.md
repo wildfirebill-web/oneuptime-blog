@@ -1,4 +1,4 @@
-# How to Integrate Portainer API with PagerDuty for Alerts
+# How to Integrate Portainer API with PagerDuty for Alerts - Alerts
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Use the Portainer REST API to monitor container and service health,
 
 ---
 
-Portainer's REST API exposes container status, service health, and environment connectivity — all queryable from external monitoring scripts. By polling the Portainer API and sending events to PagerDuty, you build an alerting pipeline that pages on-call engineers when services degrade.
+Portainer's REST API exposes container status, service health, and environment connectivity - all queryable from external monitoring scripts. By polling the Portainer API and sending events to PagerDuty, you build an alerting pipeline that pages on-call engineers when services degrade.
 
 ## Architecture
 
@@ -109,6 +109,7 @@ if __name__ == "__main__":
 
 ```yaml
 # monitor-stack.yml
+
 version: "3.8"
 services:
   portainer-monitor:

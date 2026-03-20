@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, radvd, RDNSS, DNSSL, DNS, Router Advertisement
+Tags: IPv6, Radvd, RDNSS, DNSSL, DNS, Router Advertisement
 
 Description: Configure radvd RDNSS and DNSSL options to deliver DNS server addresses and search domain lists to IPv6 clients via Router Advertisements without requiring DHCPv6.
 
@@ -21,6 +21,7 @@ Add `RDNSS` blocks inside the interface block:
 
 ```text
 # /etc/radvd.conf
+
 # Advertise DNS servers to clients via Router Advertisements
 
 interface eth1 {
@@ -147,4 +148,4 @@ grep MaxRtrAdvInterval /etc/radvd.conf
 
 ## Conclusion
 
-RDNSS and DNSSL options in radvd enable fully stateless IPv6 network configuration — clients get their prefix via SLAAC and their DNS settings via RA, with no DHCPv6 server required. This simplifies network architecture and reduces dependencies. Ensure the RDNSS/DNSSL lifetime is set appropriately relative to the RA interval to prevent DNS configuration from expiring between advertisements.
+RDNSS and DNSSL options in radvd enable fully stateless IPv6 network configuration - clients get their prefix via SLAAC and their DNS settings via RA, with no DHCPv6 server required. This simplifies network architecture and reduces dependencies. Ensure the RDNSS/DNSSL lifetime is set appropriately relative to the RA interval to prevent DNS configuration from expiring between advertisements.

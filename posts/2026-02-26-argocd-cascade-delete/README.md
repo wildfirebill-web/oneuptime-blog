@@ -94,6 +94,7 @@ Background deletion is faster because ArgoCD sends delete requests for all resou
 
 ```bash
 # Default behavior when finalizer is present - cascade delete
+
 argocd app delete web-frontend
 
 # Explicitly request cascade delete

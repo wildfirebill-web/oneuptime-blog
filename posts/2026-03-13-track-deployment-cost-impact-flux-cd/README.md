@@ -30,6 +30,7 @@ Set up a Flux notification provider to send deployment events to your communicat
 
 ```yaml
 # infrastructure/notifications/slack-provider.yaml
+
 apiVersion: notification.toolkit.fluxcd.io/v1
 kind: Provider
 metadata:

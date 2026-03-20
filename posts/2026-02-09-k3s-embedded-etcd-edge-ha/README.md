@@ -38,6 +38,7 @@ The first server node initializes the cluster and etcd. SSH to your first node a
 
 ```bash
 # Set cluster initialization flag
+
 curl -sfL https://get.k3s.io | sh -s - server \
   --cluster-init \
   --tls-san edge-cluster.local \

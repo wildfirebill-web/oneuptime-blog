@@ -25,6 +25,7 @@ Azure SQL provisioning with Crossplane requires an Azure SQL Server resource as 
 
 ```yaml
 # infrastructure/databases/azure/resource-group.yaml
+
 apiVersion: azure.upbound.io/v1beta1
 kind: ResourceGroup
 metadata:

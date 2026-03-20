@@ -44,6 +44,7 @@ First, create a portfolio and add some products:
 
 ```yaml
 # CloudFormation template for Service Catalog portfolio and products
+
 AWSTemplateFormatVersion: '2010-09-09'
 Resources:
   DevPortfolio:
@@ -332,7 +333,7 @@ def handler(event, context):
     }
 ```
 
-## Resource Cleanup and TTL
+Resource Cleanup and TTL
 
 Self-service portals often lead to resource sprawl. Build in TTL (time-to-live) enforcement:
 

@@ -1,4 +1,4 @@
-# How to Configure Caddy HTTP/3 with IPv6
+# How to Configure Caddy HTTP/3 with IPv6 - Configure
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -16,6 +16,7 @@ Caddy has had HTTP/3 support since version 2 via the `quic-go` library:
 
 ```bash
 # Check Caddy version and HTTP/3 support
+
 caddy version
 
 # HTTP/3 is enabled by default when HTTPS is configured

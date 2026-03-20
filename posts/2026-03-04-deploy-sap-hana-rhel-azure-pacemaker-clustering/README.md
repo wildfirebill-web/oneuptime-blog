@@ -23,6 +23,7 @@ On both RHEL VMs:
 
 ```bash
 # Enable required repositories
+
 sudo subscription-manager repos \
   --enable rhel-9-for-x86_64-sap-solutions-rpms \
   --enable rhel-9-for-x86_64-highavailability-rpms

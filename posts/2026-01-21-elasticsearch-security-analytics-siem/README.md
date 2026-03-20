@@ -136,6 +136,7 @@ curl -u elastic:password -X PUT "localhost:9200/security-events" -H 'Content-Typ
 
 ```bash
 # Authentication failure event
+
 curl -u elastic:password -X POST "localhost:9200/security-events/_doc" -H 'Content-Type: application/json' -d'
 {
   "@timestamp": "2024-01-21T10:30:00Z",

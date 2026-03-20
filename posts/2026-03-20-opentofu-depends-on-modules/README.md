@@ -8,7 +8,7 @@ Description: Learn how to use depends_on with modules in OpenTofu to express exp
 
 ## Introduction
 
-OpenTofu automatically detects dependencies between resources when one resource's attribute references another. However, sometimes the dependency relationship exists but isn't captured through direct attribute references — for example, when a module depends on an IAM policy being attached before it can execute. In these cases, use `depends_on` on the module block.
+OpenTofu automatically detects dependencies between resources when one resource's attribute references another. However, sometimes the dependency relationship exists but isn't captured through direct attribute references - for example, when a module depends on an IAM policy being attached before it can execute. In these cases, use `depends_on` on the module block.
 
 ## Syntax
 
@@ -144,6 +144,7 @@ Prefer using output attributes as arguments when possible, as OpenTofu detects t
 
 ```hcl
 # Preferred: use module output as input (auto-detects dependency)
+
 module "app" {
   subnet_ids = module.vpc.private_subnet_ids  # Implicit dependency
 }
@@ -156,4 +157,4 @@ module "app" {
 
 ## Conclusion
 
-The `depends_on` meta-argument for modules in OpenTofu provides a safety valve for expressing dependencies that can't be captured through attribute references. Use it sparingly — only when you have a genuine implicit dependency. Prefer attribute-based references which create more efficient, targeted dependencies.
+The `depends_on` meta-argument for modules in OpenTofu provides a safety valve for expressing dependencies that can't be captured through attribute references. Use it sparingly - only when you have a genuine implicit dependency. Prefer attribute-based references which create more efficient, targeted dependencies.

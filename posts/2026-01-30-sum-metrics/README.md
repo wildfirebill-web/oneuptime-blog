@@ -44,6 +44,7 @@ Monotonic counters only increase (or reset to zero on restart). They are ideal f
 
 ```python
 # Python example using OpenTelemetry
+
 from opentelemetry import metrics
 from opentelemetry.sdk.metrics import MeterProvider
 

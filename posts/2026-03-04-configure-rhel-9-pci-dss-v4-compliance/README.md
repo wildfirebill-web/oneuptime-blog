@@ -30,6 +30,7 @@ RHEL's SCAP Security Guide includes a PCI-DSS profile:
 
 ```bash
 # Install OpenSCAP and SSG
+
 dnf install -y openscap-scanner scap-security-guide
 
 # Check available PCI-DSS profile

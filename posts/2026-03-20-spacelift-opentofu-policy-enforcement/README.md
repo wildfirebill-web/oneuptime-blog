@@ -15,7 +15,8 @@ Spacelift is a CI/CD platform purpose-built for infrastructure-as-code. Its stan
 In the Spacelift UI (or via its Terraform/OpenTofu provider), create a stack that uses the OpenTofu runner:
 
 ```hcl
-# spacelift.tf — manage Spacelift stacks with OpenTofu
+# spacelift.tf - manage Spacelift stacks with OpenTofu
+
 terraform {
   required_providers {
     spacelift = {
@@ -61,7 +62,7 @@ deny["Mass destruction: more than 5 resources would be deleted"] {
 }
 
 # Warn if any resource change involves a database instance
-warn["Database instance change detected — review carefully"] {
+warn["Database instance change detected - review carefully"] {
     resource := input.terraform.resource_changes[_]
     contains(resource.type, "db_instance")
     resource.change.actions[_] != "no-op"
@@ -141,4 +142,4 @@ approve { input.reviews.approvals >= 1 }
 
 ## Conclusion
 
-Spacelift provides a managed GitOps platform for OpenTofu with built-in OPA policy enforcement. By attaching plan, access, and approval policies to your stacks, you get automated guardrails that prevent destructive changes, enforce tagging standards, and require human review — all before a single resource is modified in production.
+Spacelift provides a managed GitOps platform for OpenTofu with built-in OPA policy enforcement. By attaching plan, access, and approval policies to your stacks, you get automated guardrails that prevent destructive changes, enforce tagging standards, and require human review - all before a single resource is modified in production.

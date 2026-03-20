@@ -33,6 +33,7 @@ Deploy the shadow model to its own endpoint. This keeps it completely isolated f
 
 ```python
 # shadow/deploy_shadow.py
+
 from google.cloud import aiplatform
 
 def deploy_shadow_model(model_resource, shadow_endpoint_name):

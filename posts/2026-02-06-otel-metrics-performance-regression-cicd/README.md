@@ -110,6 +110,7 @@ This script queries your metrics backend and compares against baselines:
 
 ```python
 # compare_perf_metrics.py
+
 import requests
 import sys
 import os

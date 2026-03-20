@@ -39,6 +39,7 @@ Enable the API in whichever project will own the Filestore instance:
 
 ```bash
 # Enable Filestore API in the service project
+
 gcloud services enable file.googleapis.com --project=my-service-project
 ```
 

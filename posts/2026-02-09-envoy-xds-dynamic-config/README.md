@@ -271,6 +271,7 @@ Track configuration versions:
 
 ```bash
 # Query current config version
+
 curl http://localhost:9901/config_dump | jq '.configs[].version_info'
 
 # Check dynamic listeners

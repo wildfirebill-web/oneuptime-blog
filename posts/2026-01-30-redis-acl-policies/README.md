@@ -60,6 +60,7 @@ Let us start by creating a basic user with specific permissions.
 
 ```bash
 # Connect to Redis CLI as admin
+
 redis-cli
 
 # Create a new user with password and basic permissions

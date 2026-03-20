@@ -36,6 +36,7 @@ The following CLI command creates a general-purpose v2 storage account with loca
 
 ```bash
 # Create a resource group if you don't have one
+
 az group create --name iot-file-upload-rg --location eastus
 
 # Create the storage account

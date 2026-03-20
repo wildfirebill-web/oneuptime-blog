@@ -25,6 +25,7 @@ When you create an application in Azure Spring Apps, it automatically gets a def
 
 ```bash
 # Create the application with its initial deployment
+
 az spring app create \
   --name order-service \
   --service my-spring-service \

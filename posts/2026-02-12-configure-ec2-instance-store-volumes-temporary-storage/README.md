@@ -48,6 +48,7 @@ This script finds all NVMe instance store volumes and sets them up:
 # setup-instance-store.sh
 
 # Find all NVMe instance store devices
+
 DEVICES=$(lsblk -dno NAME,MODEL | grep "Instance Storage" | awk '{print "/dev/"$1}')
 
 if [ -z "$DEVICES" ]; then

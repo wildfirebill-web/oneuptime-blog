@@ -20,6 +20,7 @@ Using the Amplify CLI:
 
 ```bash
 # Navigate to your React project
+
 cd my-react-app
 
 # Initialize Amplify if you haven't already

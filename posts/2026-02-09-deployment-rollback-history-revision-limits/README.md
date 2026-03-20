@@ -43,6 +43,7 @@ View revision history:
 
 ```bash
 # List all revisions
+
 kubectl rollout history deployment/web-app
 
 # Output:

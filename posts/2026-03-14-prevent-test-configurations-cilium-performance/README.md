@@ -27,6 +27,7 @@ This guide covers the GitOps and automation practices that maintain consistent C
 
 ```yaml
 # cilium-perf-values.yaml - Version controlled
+
 tunnel: disabled
 routingMode: native
 autoDirectNodeRoutes: true

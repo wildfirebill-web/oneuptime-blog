@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Ubuntu, Networking, Proxy, Configuration, SysAdmin
+Tags: Ubuntu, Networking, Proxy, Configuration, Sysadmin
 
 Description: Learn how to configure HTTP, HTTPS, and SOCKS proxy settings system-wide on Ubuntu, covering environment variables, APT proxy config, and per-user settings.
 
@@ -27,6 +27,7 @@ The `/etc/environment` file is the right place for system-wide environment varia
 
 ```bash
 # Edit the system environment file
+
 sudo nano /etc/environment
 ```
 

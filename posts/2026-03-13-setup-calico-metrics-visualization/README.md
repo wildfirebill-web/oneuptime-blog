@@ -71,6 +71,7 @@ The key dashboard categories for Calico are: component health overview (Felix, T
 
 ```promql
 # Felix dataplane programming latency by node
+
 histogram_quantile(0.99,
   rate(felix_int_dataplane_apply_time_seconds_bucket[5m])
 )

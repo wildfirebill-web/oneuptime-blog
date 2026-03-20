@@ -31,6 +31,7 @@ Create a Podman network so containers can communicate by name:
 
 ```bash
 # Create a custom network for the microservices
+
 podman network create microservices-net
 
 # Verify the network was created

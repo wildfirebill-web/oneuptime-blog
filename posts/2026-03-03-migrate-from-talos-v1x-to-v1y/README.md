@@ -18,6 +18,7 @@ The most important rule: Talos only supports upgrading one minor version at a ti
 
 ```bash
 # Check your current Talos version
+
 talosctl version --nodes <node-ip>
 
 # Example output showing v1.6.4

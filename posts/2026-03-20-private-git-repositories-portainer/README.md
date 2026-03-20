@@ -1,4 +1,4 @@
-# How to Use Private Git Repositories with Portainer
+# How to Use Private Git Repositories with Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -18,6 +18,7 @@ Most Git providers support token-based authentication where you use a generated 
 
 ```bash
 # Create a Personal Access Token in GitHub:
+
 # Settings > Developer settings > Personal access tokens > Fine-grained tokens
 # Grant: Contents (Read-only) for the specific repository
 

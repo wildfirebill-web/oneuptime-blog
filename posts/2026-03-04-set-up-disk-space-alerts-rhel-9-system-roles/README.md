@@ -40,6 +40,7 @@ The `rhel-system-roles.metrics` role configures Performance Co-Pilot (PCP) for s
 
 ```yaml
 # playbook-metrics.yml
+
 ---
 - name: Configure disk space monitoring
   hosts: all

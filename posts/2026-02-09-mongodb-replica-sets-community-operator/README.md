@@ -30,6 +30,7 @@ First, install the MongoDB Community Operator in your Kubernetes cluster:
 
 ```bash
 # Add MongoDB Kubernetes repository
+
 git clone https://github.com/mongodb/mongodb-kubernetes-operator.git
 cd mongodb-kubernetes-operator
 

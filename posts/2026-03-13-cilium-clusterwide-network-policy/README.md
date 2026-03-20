@@ -109,6 +109,7 @@ spec:
 
 ```bash
 # List all cluster-wide policies
+
 kubectl get ciliumclusterwidenetworkpolicies
 
 # Check policy status and endpoints covered

@@ -102,6 +102,7 @@ sequenceDiagram
 
 ```bash
 # Install bcc tools (provides profile command)
+
 # On Ubuntu/Debian:
 sudo apt-get install bpfcc-tools linux-headers-$(uname -r)
 

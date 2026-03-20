@@ -16,6 +16,7 @@ Ansible makes inventory group membership available through the `groups` variable
 
 ```yaml
 # Display all hosts in each inventory group
+
 - name: Show inventory groups
   ansible.builtin.debug:
     msg:

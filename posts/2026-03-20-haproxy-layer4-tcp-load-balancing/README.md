@@ -31,6 +31,7 @@ defaults
     timeout server   1m
 
 # Frontend: accept TCP connections
+
 frontend mysql_frontend
     bind 203.0.113.10:3306   # Listen for MySQL connections
 

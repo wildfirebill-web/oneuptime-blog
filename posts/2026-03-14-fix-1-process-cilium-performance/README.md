@@ -29,6 +29,7 @@ Configure kubelet to use static CPU management:
 
 ```bash
 # Edit kubelet config on each node
+
 # /var/lib/kubelet/config.yaml
 cat >> /var/lib/kubelet/config.yaml << KUBEEOF
 cpuManagerPolicy: static

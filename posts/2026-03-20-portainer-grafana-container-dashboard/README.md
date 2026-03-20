@@ -1,8 +1,8 @@
-# How to Create a Container Metrics Dashboard in Grafana via Portainer
+# How to Create a Container Metrics Dashboard in Grafana via Portainer - Dashboard
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Grafana, Dashboard, cAdvisor, Metrics
+Tags: Portainer, Grafana, Dashboards, cAdvisor, Metrics
 
 Description: Learn how to create comprehensive container metrics dashboards in Grafana using cAdvisor data from your Portainer-managed Docker environment, with practical panel examples and PromQL queries.
 
@@ -26,7 +26,7 @@ Grafana dashboards transform raw Prometheus metrics into actionable visualizatio
 
 **Panel: Container CPU Usage %**
 
-```
+```text
 Visualization: Time series
 Title: Container CPU Usage (%)
 
@@ -46,6 +46,7 @@ Panel settings:
 
 ```promql
 # Better query: per-container CPU percentage with filtering
+
 sum(rate(container_cpu_usage_seconds_total{
   image!="",
   container!="POD",
@@ -57,7 +58,7 @@ sum(rate(container_cpu_usage_seconds_total{
 
 **Panel: Container Memory Usage**
 
-```
+```text
 Visualization: Time series
 Title: Container Memory Usage
 
@@ -87,7 +88,7 @@ Panel settings:
 
 **Panel: Top 5 Memory Consumers (Bar Gauge)**
 
-```
+```text
 Visualization: Bar gauge
 Title: Top 5 Memory Consumers
 
@@ -104,7 +105,7 @@ Panel settings:
 
 **Panel: Container Count (Stat)**
 
-```
+```text
 Visualization: Stat
 Title: Running Containers
 
@@ -122,7 +123,7 @@ Panel settings:
 
 **Panel: Network Traffic per Container**
 
-```
+```text
 Visualization: Time series
 Title: Network I/O
 
@@ -144,7 +145,7 @@ Panel settings:
 
 **Panel: Container Status Table**
 
-```
+```text
 Visualization: Table
 Title: Container Status
 
@@ -164,7 +165,7 @@ Add a container selector variable:
 
 1. Go to **Dashboard settings** → **Variables** → **Add variable**
 
-```
+```text
 Type: Query
 Name: container
 Label: Container

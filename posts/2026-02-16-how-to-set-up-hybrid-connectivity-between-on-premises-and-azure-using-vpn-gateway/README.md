@@ -38,6 +38,7 @@ Here is the step-by-step process to set up the Azure side of the VPN connection:
 
 ```bash
 # Step 1: Create a resource group
+
 az group create \
   --name vpn-rg \
   --location eastus

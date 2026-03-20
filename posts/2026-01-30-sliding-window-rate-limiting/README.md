@@ -166,6 +166,7 @@ class SlidingWindowLog:
 
 
 # Example usage
+
 if __name__ == "__main__":
     # Connect to Redis
     redis_client = redis.Redis(host='localhost', port=6379, db=0)

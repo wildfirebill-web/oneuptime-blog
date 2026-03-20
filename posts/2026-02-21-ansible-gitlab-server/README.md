@@ -20,6 +20,7 @@ GitLab is resource-hungry. For a team of 20-50 users, you need at minimum 4 CPU 
 
 ```yaml
 # roles/gitlab/defaults/main.yml - GitLab configuration
+
 gitlab_domain: gitlab.example.com
 gitlab_edition: "gitlab-ce"
 gitlab_external_url: "https://{{ gitlab_domain }}"

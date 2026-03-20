@@ -193,6 +193,7 @@ Some CNI plugins offer network-level encryption that covers both TCP and UDP:
 
 ```bash
 # If using Calico, enable WireGuard encryption
+
 kubectl patch felixconfiguration default --type='merge' \
   -p '{"spec":{"wireguardEnabled":true}}'
 ```

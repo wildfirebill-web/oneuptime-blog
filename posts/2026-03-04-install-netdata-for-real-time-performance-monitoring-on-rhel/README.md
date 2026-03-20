@@ -20,6 +20,7 @@ Monitoring is essential for maintaining healthy systems. This guide shows you ho
 
 ```bash
 # Update the system first
+
 sudo dnf update -y
 
 # Install the required packages

@@ -20,6 +20,7 @@ import boto3
 ec2 = boto3.resource('ec2')
 
 # Launch a single instance
+
 instances = ec2.create_instances(
     ImageId='ami-0abcdef1234567890',
     InstanceType='t3.micro',

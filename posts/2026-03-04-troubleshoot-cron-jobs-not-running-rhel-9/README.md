@@ -20,6 +20,7 @@ This sounds obvious, but start here. If the cron daemon is not running, nothing 
 
 ```bash
 # Check the crond service status
+
 sudo systemctl status crond
 ```
 

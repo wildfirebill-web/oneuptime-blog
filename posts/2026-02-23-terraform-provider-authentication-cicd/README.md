@@ -31,6 +31,7 @@ OIDC is the recommended approach. Your CI/CD platform generates a short-lived to
 
 ```yaml
 # .github/workflows/terraform.yml
+
 name: Terraform
 on:
   push:

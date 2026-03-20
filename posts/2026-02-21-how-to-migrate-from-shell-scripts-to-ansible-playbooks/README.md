@@ -19,6 +19,7 @@ Here is a typical deployment script:
 ```bash
 #!/bin/bash
 # deploy.sh - The old way
+
 set -e
 
 SERVER=$1

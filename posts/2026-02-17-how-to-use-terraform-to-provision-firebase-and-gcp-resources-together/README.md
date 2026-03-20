@@ -18,6 +18,7 @@ Enable the required APIs with gcloud:
 
 ```bash
 # Enable the APIs that Terraform will need
+
 gcloud services enable firebase.googleapis.com --project YOUR_PROJECT_ID
 gcloud services enable firestore.googleapis.com --project YOUR_PROJECT_ID
 gcloud services enable identitytoolkit.googleapis.com --project YOUR_PROJECT_ID

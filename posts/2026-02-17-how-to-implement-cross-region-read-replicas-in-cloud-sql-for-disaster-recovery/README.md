@@ -46,6 +46,7 @@ If you do not already have a primary instance, create one with the settings need
 
 ```bash
 # Create a Cloud SQL primary instance with HA enabled
+
 gcloud sql instances create primary-db \
   --database-version=POSTGRES_15 \
   --tier=db-custom-4-16384 \

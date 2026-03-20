@@ -49,6 +49,7 @@ CCR requires:
 
 ```bash
 # On both clusters
+
 curl -X POST "localhost:9200/_license/start_trial?acknowledge=true"
 ```
 

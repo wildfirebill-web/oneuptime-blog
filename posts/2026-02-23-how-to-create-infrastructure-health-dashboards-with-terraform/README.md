@@ -20,6 +20,7 @@ Manually created dashboards suffer from several problems. They are not version-c
 
 ```hcl
 # main.tf - Provider configuration
+
 terraform {
   required_version = ">= 1.5.0"
 

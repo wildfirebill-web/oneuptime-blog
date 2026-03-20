@@ -90,6 +90,7 @@ If you have a backup file that contains `WITH OIDS`:
 
 ```bash
 # Method 1: Use sed to remove WITH OIDS
+
 sed -i 's/WITH (OIDS[^)]*)//' backup.sql
 sed -i 's/WITH OIDS//' backup.sql
 

@@ -29,6 +29,7 @@ Tag an object during upload.
 
 ```bash
 # Upload with tags
+
 aws s3api put-object \
   --bucket my-data-bucket \
   --key reports/q4-2025.pdf \

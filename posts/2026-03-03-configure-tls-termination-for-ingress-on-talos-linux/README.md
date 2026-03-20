@@ -38,6 +38,7 @@ For development and testing, generate a self-signed certificate:
 
 ```bash
 # Generate a self-signed certificate
+
 openssl req -x509 -nodes -days 365 -newkey rsa:2048 \
   -keyout tls.key \
   -out tls.crt \

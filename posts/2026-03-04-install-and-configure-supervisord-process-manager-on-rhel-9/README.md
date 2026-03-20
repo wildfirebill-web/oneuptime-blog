@@ -20,6 +20,7 @@ Supervisord Process Manager can be installed and configured on RHEL to provide r
 
 ```bash
 # Update the system first
+
 sudo dnf update -y
 
 # Install the required packages

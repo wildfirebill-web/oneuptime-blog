@@ -38,6 +38,7 @@ SCT is a desktop application that runs on Windows, macOS, or Linux. Download it 
 
 ```bash
 # On macOS, after downloading the DMG
+
 # Install the application and required JDBC drivers
 
 # Download JDBC drivers for your source and target databases

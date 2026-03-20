@@ -115,6 +115,7 @@ server {
 
 ```nginx
 # Resolve IPv6 backend dynamically (requires resolver)
+
 server {
     resolver [2001:4860:4860::8888] valid=30s;
     resolver_timeout 5s;
@@ -148,4 +149,4 @@ ss -tn | grep ':8080'
 
 ## Summary
 
-Configure IPv6 upstream servers in Nginx with `server [2001:db8::10]:PORT;` — brackets are required for IPv6 addresses. Set `keepalive 32` for connection reuse. Mix IPv4 and IPv6 servers in the same upstream block. Use `weight`, `max_fails`, `fail_timeout`, and `backup` parameters for load balancing and failover. For HTTPS backends, use `proxy_pass https://upstream_name` and configure `proxy_ssl_verify`.
+Configure IPv6 upstream servers in Nginx with `server [2001:db8::10]:PORT;` - brackets are required for IPv6 addresses. Set `keepalive 32` for connection reuse. Mix IPv4 and IPv6 servers in the same upstream block. Use `weight`, `max_fails`, `fail_timeout`, and `backup` parameters for load balancing and failover. For HTTPS backends, use `proxy_pass https://upstream_name` and configure `proxy_ssl_verify`.

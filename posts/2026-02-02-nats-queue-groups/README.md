@@ -35,6 +35,7 @@ Install the NATS client for your language of choice.
 
 ```bash
 # Node.js
+
 npm install nats
 
 # Go

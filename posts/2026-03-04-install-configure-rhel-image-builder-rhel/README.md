@@ -14,6 +14,7 @@ RHEL Image Builder (osbuild-composer) lets you create custom RHEL images tailore
 
 ```bash
 # Install the Image Builder packages
+
 sudo dnf install -y osbuild-composer composer-cli cockpit-composer
 
 # Enable and start the osbuild-composer service

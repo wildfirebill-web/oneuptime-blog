@@ -24,6 +24,7 @@ Check PVC status to confirm it's stuck Pending.
 
 ```bash
 # List PVCs
+
 kubectl get pvc -n default
 
 # Output:

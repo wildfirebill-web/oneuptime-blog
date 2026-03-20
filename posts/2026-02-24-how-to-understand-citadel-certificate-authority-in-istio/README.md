@@ -64,6 +64,7 @@ You can inspect the certificates that Citadel has issued:
 
 ```bash
 # List secrets managed by the sidecar
+
 istioctl proxy-config secret deploy/my-app -n default
 ```
 

@@ -63,6 +63,7 @@ For example:
 
 ```yaml
 # Enforce the "baseline" profile at the v1.30 standard
+
 pod-security.kubernetes.io/enforce: baseline
 pod-security.kubernetes.io/enforce-version: v1.30
 ```

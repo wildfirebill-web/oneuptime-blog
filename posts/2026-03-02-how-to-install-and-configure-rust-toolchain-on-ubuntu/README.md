@@ -16,6 +16,7 @@ The official and recommended way to install Rust is through `rustup`, the Rust t
 
 ```bash
 # Download and run the rustup installer
+
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 ```
 

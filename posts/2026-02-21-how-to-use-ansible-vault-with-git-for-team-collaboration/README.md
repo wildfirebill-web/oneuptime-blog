@@ -50,6 +50,7 @@ Keep sensitive files out of the repository:
 # .gitignore
 
 # Never commit plain text vault password files
+
 *.vault_pass
 .vault_pass*
 vault_pass.txt

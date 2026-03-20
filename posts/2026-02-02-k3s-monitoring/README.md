@@ -86,6 +86,7 @@ First, add the Prometheus community Helm repository and create a namespace for y
 
 ```bash
 # Add the Prometheus community Helm repository
+
 helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
 helm repo update
 

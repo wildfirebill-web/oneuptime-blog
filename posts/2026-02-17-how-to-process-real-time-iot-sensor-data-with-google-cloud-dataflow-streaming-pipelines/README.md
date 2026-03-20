@@ -34,6 +34,7 @@ Install the required packages:
 
 ```bash
 # Install Apache Beam with GCP extras for Dataflow support
+
 pip install apache-beam[gcp]==2.53.0
 ```
 

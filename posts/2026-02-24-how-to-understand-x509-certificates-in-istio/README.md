@@ -39,6 +39,7 @@ You can see this in action by checking the certificates on a running pod:
 
 ```bash
 # Get the certificate from a sidecar
+
 istioctl proxy-config secret <pod-name> -o json
 ```
 

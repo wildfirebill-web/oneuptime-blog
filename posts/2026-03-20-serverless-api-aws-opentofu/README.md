@@ -14,6 +14,7 @@ A serverless API on AWS combines API Gateway for request routing, Lambda for com
 
 ```hcl
 # main.tf - DynamoDB table for serverless API
+
 resource "aws_dynamodb_table" "items" {
   name           = "api-items"
   billing_mode   = "PAY_PER_REQUEST"

@@ -29,6 +29,7 @@ Understand the complete networking control flow sequence:
 
 ```bash
 # Step 1: CNI binary invoked by kubelet
+
 # /opt/cni/bin/cilium-cni ADD <container-id> <netns> <interface>
 
 # Step 2: CNI communicates with agent via socket

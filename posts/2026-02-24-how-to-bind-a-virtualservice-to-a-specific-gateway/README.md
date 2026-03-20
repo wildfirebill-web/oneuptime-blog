@@ -257,6 +257,7 @@ The VirtualService hosts must be a subset of the Gateway hosts. If your Gateway 
 
 ```yaml
 # Gateway accepts *.example.com
+
 apiVersion: networking.istio.io/v1beta1
 kind: Gateway
 metadata:

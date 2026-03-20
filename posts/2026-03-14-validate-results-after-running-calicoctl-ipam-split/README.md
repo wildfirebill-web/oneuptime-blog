@@ -24,6 +24,7 @@ After running `calicoctl ipam split`, you need to verify that the output makes s
 
 ```bash
 # Run the command and capture output
+
 calicoctl ipam split 10.244.0.0/24 --cidr-size=26 2>&1 | tee /tmp/ipam-output.txt
 
 # Check for errors in output

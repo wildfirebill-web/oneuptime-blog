@@ -16,6 +16,7 @@ Even when you store state in encrypted backends like S3 with server-side encrypt
 
 ```bash
 # Sensitive values are visible in unencrypted state
+
 tofu state pull | grep -i password
 # "password": "my-super-secret-password"
 

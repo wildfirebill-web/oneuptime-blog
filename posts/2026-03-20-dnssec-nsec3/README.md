@@ -19,7 +19,7 @@ NSEC creates a linked chain of all names, enabling "zone walking" to enumerate e
 
 ## NSEC3 Parameters
 
-```
+```text
 NSEC3PARAM record format:
   <zone> IN NSEC3PARAM <hash-alg> <flags> <iterations> <salt>
 
@@ -37,7 +37,7 @@ Parameters:
 
 RFC 9276 (2022) updated NSEC3 recommendations:
 
-```
+```text
 Old recommendation: iterations=10-150, salt=random
 Current recommendation (RFC 9276):
   - iterations = 0 (higher iterations don't significantly improve security)
@@ -50,7 +50,8 @@ Modern GPUs can crack billions of SHA-1 per second regardless of iterations.
 ## Signing a Zone with NSEC3
 
 ```bash
-# Sign with NSEC3 — RFC 9276 recommended parameters
+# Sign with NSEC3 - RFC 9276 recommended parameters
+
 dnssec-signzone \
     -3 - \          # -3 enables NSEC3, "-" = empty salt
     -H 0 \          # 0 hash iterations
@@ -72,8 +73,8 @@ grep " NSEC3 " example.com.zone.signed | head -3
 
 ## BIND: Configure NSEC3 for Auto-Signed Zones
 
-```
-// /etc/named.conf — Configure NSEC3 for auto-signed zone
+```text
+// /etc/named.conf - Configure NSEC3 for auto-signed zone
 
 zone "example.com" {
     type master;
@@ -97,7 +98,7 @@ rndc signing -nsec3param 1 0 0 - example.com
 # Verify NSEC3 is active
 rndc signing -status example.com | grep -i nsec
 
-# Test: query for non-existent name — should get NSEC3 denial
+# Test: query for non-existent name - should get NSEC3 denial
 dig +dnssec A nonexistent.example.com @localhost
 # Should return NXDOMAIN + NSEC3 record proving it doesn't exist
 ```
@@ -147,7 +148,7 @@ dig +dnssec +multiline AAAA doesnotexist.example.com @localhost
 
 # Attempt zone walking (should fail with NSEC3)
 python3 << 'EOF'
-# NSEC3 hashes are opaque — you cannot iterate through them
+# NSEC3 hashes are opaque - you cannot iterate through them
 # to discover zone contents. This is the security benefit.
 import hashlib
 import base64
@@ -192,9 +193,9 @@ dig NSEC3 "${ZONE}" @localhost
 dig +dnssec NSEC "${ZONE}" @localhost
 # Should return NXDOMAIN (no NSEC records after migration)
 
-echo "Migration complete — zone now uses NSEC3"
+echo "Migration complete - zone now uses NSEC3"
 ```
 
 ## Conclusion
 
-NSEC3 is the recommended denial of existence mechanism for public IPv6 DNS zones because it prevents zone enumeration. Use RFC 9276 parameters: `iterations=0` and empty salt (`-`). Configure BIND inline-signed zones with `rndc signing -nsec3param 1 0 0 - zonename`. Verify with `dig +dnssec AAAA nonexistent.zone` — the NXDOMAIN response should contain NSEC3 records rather than NSEC records. Use Opt-Out (flag=1) only for zones with many unsigned delegations (like TLDs), not for leaf zones like `example.com`. NSEC3 does not provide perfect security against offline hash cracking, but eliminates trivial zone walking.
+NSEC3 is the recommended denial of existence mechanism for public IPv6 DNS zones because it prevents zone enumeration. Use RFC 9276 parameters: `iterations=0` and empty salt (`-`). Configure BIND inline-signed zones with `rndc signing -nsec3param 1 0 0 - zonename`. Verify with `dig +dnssec AAAA nonexistent.zone` - the NXDOMAIN response should contain NSEC3 records rather than NSEC records. Use Opt-Out (flag=1) only for zones with many unsigned delegations (like TLDs), not for leaf zones like `example.com`. NSEC3 does not provide perfect security against offline hash cracking, but eliminates trivial zone walking.

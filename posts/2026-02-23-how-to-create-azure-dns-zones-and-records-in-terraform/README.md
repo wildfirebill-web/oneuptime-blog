@@ -16,6 +16,7 @@ This guide covers creating both public and private DNS zones in Terraform, addin
 
 ```hcl
 # versions.tf
+
 terraform {
   required_version = ">= 1.5.0"
 
@@ -32,7 +33,7 @@ provider "azurerm" {
 }
 ```
 
-## Resource Group
+Resource Group
 
 ```hcl
 # main.tf

@@ -168,6 +168,7 @@ Apply the machine configuration to the target node:
 
 ```bash
 # Apply configuration with static pods
+
 talosctl apply-config --nodes 10.0.0.5 --file worker.yaml
 
 # Verify the static pod is running

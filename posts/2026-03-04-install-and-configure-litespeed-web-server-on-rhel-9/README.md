@@ -20,6 +20,7 @@ LiteSpeed Web Server can be installed and configured on RHEL to provide robust f
 
 ```bash
 # Update the system first
+
 sudo dnf update -y
 
 # Install the required packages

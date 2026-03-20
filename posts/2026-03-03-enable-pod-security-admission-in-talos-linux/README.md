@@ -28,6 +28,7 @@ Before making changes, check what is currently configured.
 
 ```bash
 # Check if the PodSecurity admission plugin is enabled
+
 talosctl -n 10.0.1.10 read /etc/kubernetes/manifests/kube-apiserver.yaml | \
   grep -A5 "admission"
 

@@ -16,6 +16,7 @@ Understand what managed services handle for you.
 
 ```yaml
 # Self-managed responsibilities
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

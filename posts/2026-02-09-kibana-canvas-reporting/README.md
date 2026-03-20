@@ -26,6 +26,7 @@ Set up the workpad properties:
 
 ```bash
 # Click workpad settings (gear icon)
+
 # Set name: "Weekly Log Report"
 # Set dimensions: 1920x1080 (16:9 ratio for displays)
 # Set background color: #FFFFFF

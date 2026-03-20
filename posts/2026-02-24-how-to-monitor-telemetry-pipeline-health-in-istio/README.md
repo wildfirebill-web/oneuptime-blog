@@ -218,6 +218,7 @@ Create a Grafana dashboard that shows the entire pipeline at a glance. Here are 
 
 ```bash
 # Query: Active scrape targets
+
 count(up{job="kubernetes-pods"})
 
 # Query: Unhealthy scrape targets

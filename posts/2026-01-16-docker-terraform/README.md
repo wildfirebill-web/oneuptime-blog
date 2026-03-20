@@ -16,6 +16,7 @@ Terraform's Docker provider enables managing Docker resources declaratively as i
 
 ```hcl
 # main.tf
+
 terraform {
   required_providers {
     docker = {
@@ -176,7 +177,7 @@ resource "docker_container" "web" {
 }
 ```
 
-### Resource Limits
+Resource Limits
 
 ```hcl
 resource "docker_container" "worker" {

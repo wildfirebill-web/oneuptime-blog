@@ -1,19 +1,20 @@
-# How to Benchmark IPv6 with netperf
+# How to Benchmark IPv6 with netperf - With
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, netperf, Benchmarking, Networking, Performance, TCP
+Tags: IPv6, Netperf, Benchmarking, Networking, Performance, TCP
 
 Description: Use netperf to benchmark IPv6 network performance with TCP stream tests, TCP request/response tests, and UDP unidirectional throughput measurements.
 
 ## Introduction
 
-netperf is a network benchmarking tool developed by HP that complements iperf3. It excels at measuring request/response performance and transaction throughput — patterns that better represent real application workloads than pure bulk throughput tests.
+netperf is a network benchmarking tool developed by HP that complements iperf3. It excels at measuring request/response performance and transaction throughput - patterns that better represent real application workloads than pure bulk throughput tests.
 
 ## Prerequisites
 
 ```bash
 # Install netperf
+
 sudo apt-get install netperf   # Debian/Ubuntu
 sudo yum install netperf       # RHEL/CentOS
 
@@ -24,7 +25,7 @@ netserver -6 -p 12865
 ## Step 1: TCP Stream Throughput (IPv6)
 
 ```bash
-# Basic TCP bulk throughput test — IPv6
+# Basic TCP bulk throughput test - IPv6
 # -H specifies host with address family
 netperf -6 -H 2001:db8::1 -t TCP_STREAM -l 30
 
@@ -48,10 +49,10 @@ netperf -6 \
 
 ## Step 2: TCP Request/Response (Transaction Rate)
 
-This test measures how many short request-response cycles per second the network supports — crucial for microservices.
+This test measures how many short request-response cycles per second the network supports - crucial for microservices.
 
 ```bash
-# TCP_RR — request/response test (measures transaction rate)
+# TCP_RR - request/response test (measures transaction rate)
 netperf -6 -H 2001:db8::1 -t TCP_RR -l 30 \
   -- \
   -r 64,64    # 64-byte request, 64-byte response
@@ -69,7 +70,7 @@ netperf -6 -H 2001:db8::1 -t TCP_RR -l 30 \
 ## Step 3: TCP Connect/Request/Response (Connection Overhead)
 
 ```bash
-# TCP_CRR — each transaction uses a new connection
+# TCP_CRR - each transaction uses a new connection
 # Measures the overhead of connection setup + request
 netperf -6 -H 2001:db8::1 -t TCP_CRR -l 30 \
   -- -r 64,64
@@ -85,11 +86,11 @@ netperf -6 -H 2001:db8::1 -t TCP_CRR -l 15 -- -r 64,64
 ## Step 4: UDP Unidirectional Throughput
 
 ```bash
-# UDP_STREAM — measure maximum UDP throughput
+# UDP_STREAM - measure maximum UDP throughput
 netperf -6 -H 2001:db8::1 -t UDP_STREAM -l 30 \
   -- -m 1400    # 1400-byte datagrams
 
-# UDP_RR — UDP request/response (measures round-trip)
+# UDP_RR - UDP request/response (measures round-trip)
 netperf -6 -H 2001:db8::1 -t UDP_RR -l 30 \
   -- -r 160,160  # VoIP-sized packets
 ```

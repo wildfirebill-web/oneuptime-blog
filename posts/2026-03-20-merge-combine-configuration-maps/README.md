@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Maps, merge, HCL, Infrastructure as Code
+Tags: OpenTofu, Maps, Merge, HCL, Infrastructure as Code
 
 Description: Learn how to use OpenTofu's merge() function and related techniques to combine configuration maps, enabling layered, override-based configurations for different environments.
 
@@ -154,7 +154,7 @@ resource "aws_ecs_task_definition" "app" {
 
 ## Deep Merging with for Expressions
 
-`merge()` is shallow — it doesn't recursively merge nested maps. For deep merging, use a combination of `for` expressions:
+`merge()` is shallow - it doesn't recursively merge nested maps. For deep merging, use a combination of `for` expressions:
 
 ```hcl
 locals {
@@ -201,7 +201,7 @@ locals {
 
 ## Best Practices
 
-- Place the most specific map last in `merge()` — later maps win on key conflicts.
+- Place the most specific map last in `merge()` - later maps win on key conflicts.
 - Use `merge()` at the `locals` level to keep resource blocks clean.
 - Avoid deeply nested maps when possible; flatten config structures for easier merging.
 - Document which keys can be overridden via input variables.

@@ -43,6 +43,7 @@ The simplest way is a single flag during deployment:
 
 ```bash
 # Deploy with always-on CPU allocation
+
 gcloud run deploy my-service \
   --image=us-central1-docker.pkg.dev/MY_PROJECT/my-repo/my-image:latest \
   --region=us-central1 \

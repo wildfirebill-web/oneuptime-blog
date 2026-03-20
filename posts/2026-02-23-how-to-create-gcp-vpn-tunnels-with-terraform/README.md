@@ -66,6 +66,7 @@ variable "vpn_shared_secret" {
 }
 
 # VPC network
+
 resource "google_compute_network" "vpc" {
   name                    = "vpn-vpc"
   auto_create_subnetworks = false

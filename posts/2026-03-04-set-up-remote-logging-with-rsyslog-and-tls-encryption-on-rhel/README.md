@@ -16,6 +16,7 @@ You need a CA certificate, a server certificate, and client certificates.
 
 ```bash
 # Install the certificate generation tool
+
 sudo dnf install -y openssl
 
 # Create a directory for certificates

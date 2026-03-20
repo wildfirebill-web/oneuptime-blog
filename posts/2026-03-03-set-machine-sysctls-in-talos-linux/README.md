@@ -18,6 +18,7 @@ Sysctls are defined under `machine.sysctls` in the Talos machine configuration. 
 
 ```yaml
 # Set kernel sysctl parameters
+
 machine:
   sysctls:
     net.core.somaxconn: "65535"

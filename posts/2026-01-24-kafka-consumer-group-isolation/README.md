@@ -207,6 +207,7 @@ Access Control Lists (ACLs) provide security-level isolation. Each consumer grou
 # Create ACLs for consumer group isolation
 
 # Variables
+
 BOOTSTRAP="kafka:9092"
 TEAM="payments"
 GROUP="payments-processor-prod"

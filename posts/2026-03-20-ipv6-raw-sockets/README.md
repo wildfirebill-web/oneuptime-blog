@@ -14,6 +14,7 @@ IPv6 raw sockets allow applications to send and receive IPv6 packets with custom
 
 ```bash
 # Option 1: Run as root (not recommended for production)
+
 sudo ./rawsock
 
 # Option 2: Grant CAP_NET_RAW capability to the binary

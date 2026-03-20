@@ -46,6 +46,7 @@ The following Python code demonstrates a simple static threshold check that fire
 
 ```python
 # Static threshold alert check
+
 # Use for hard limits where the boundary is well-defined
 
 def check_static_threshold(

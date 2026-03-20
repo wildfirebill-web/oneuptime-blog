@@ -24,6 +24,7 @@ device = {
 }
 
 # Add a static route
+
 route_commands = [
     'ip route 10.20.0.0 255.255.0.0 192.168.1.254',     # Default gateway
     'ip route 172.16.0.0 255.255.0.0 192.168.1.253',    # Secondary path

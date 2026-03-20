@@ -16,6 +16,7 @@ Tuning PostgreSQL on Cloud SQL means working with database flags. These are the 
 
 ```bash
 # Set database flags for a PostgreSQL Cloud SQL instance
+
 gcloud sql instances patch my-pg-instance \
     --database-flags=max_connections=200,work_mem=64MB,shared_preload_libraries=pg_stat_statements
 ```

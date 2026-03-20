@@ -20,6 +20,7 @@ On macOS:
 
 ```bash
 # Install Helm on macOS
+
 brew install helm
 ```
 

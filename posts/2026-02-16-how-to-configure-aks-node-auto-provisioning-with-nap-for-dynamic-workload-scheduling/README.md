@@ -28,6 +28,7 @@ NAP is still a preview feature, so you need the preview CLI extension.
 
 ```bash
 # Install or update the aks-preview extension
+
 az extension add --name aks-preview --allow-preview true
 az extension update --name aks-preview --allow-preview true
 

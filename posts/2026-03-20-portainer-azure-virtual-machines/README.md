@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Azure, Virtual Machines, Docker, Cloud, Self-Hosted, DevOps
+Tags: Portainer, Azure, Virtual Machine, Docker, Cloud, Self-Hosted, DevOps
 
 Description: Deploy Portainer on an Azure Virtual Machine with Network Security Group rules, managed disks, and optional Azure Container Registry integration.
 
@@ -37,6 +37,7 @@ Azure Virtual Machines provide a reliable platform for running Portainer in the 
 
 ```bash
 # Login to Azure
+
 az login
 
 # Create resource group

@@ -1,4 +1,4 @@
-# How to Run Init Containers Using Portainer
+# How to Run Init Containers Using Portainer - Run
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -16,6 +16,7 @@ Docker Compose doesn't have a native init container concept, but you can impleme
 
 ```yaml
 # init-container-stack.yml
+
 version: "3.8"
 
 services:

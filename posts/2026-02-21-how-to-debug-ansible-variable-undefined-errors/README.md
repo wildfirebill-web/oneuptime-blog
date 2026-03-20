@@ -38,6 +38,7 @@ The most common cause of undefined variables is a typo. Check the exact spelling
 
 ```yaml
 # Common typos that cause undefined errors
+
 vars:
   database_host: db.example.com
 

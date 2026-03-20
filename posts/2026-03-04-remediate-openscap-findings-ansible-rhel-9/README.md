@@ -29,6 +29,7 @@ flowchart TD
 
 ```bash
 # Run a compliance scan and save results
+
 oscap xccdf eval \
   --profile xccdf_org.ssgproject.content_profile_stig \
   --results /var/log/compliance/scan-results.xml \

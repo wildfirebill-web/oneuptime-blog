@@ -26,6 +26,7 @@ Before any major upgrade, create backups:
 
 ```bash
 # Create a list of installed packages for reference
+
 dpkg --get-selections > ~/installed-packages-backup.txt
 
 # Backup important configuration files

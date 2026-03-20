@@ -34,6 +34,7 @@ Crossplane is installed via its official Helm chart. Start by adding the reposit
 
 ```bash
 # Add the Crossplane Helm repository
+
 helm repo add crossplane-stable https://charts.crossplane.io/stable
 
 # Update local chart cache

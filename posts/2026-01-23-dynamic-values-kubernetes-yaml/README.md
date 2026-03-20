@@ -16,6 +16,7 @@ The simplest approach uses `envsubst` to replace environment variables in YAML:
 
 ```yaml
 # deployment.template.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

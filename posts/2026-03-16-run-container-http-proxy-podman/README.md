@@ -24,6 +24,7 @@ The most direct way to configure proxy settings is by passing environment variab
 
 ```bash
 # Run a container with HTTP and HTTPS proxy settings
+
 podman run --rm \
   --env HTTP_PROXY=http://proxy.example.com:8080 \
   --env HTTPS_PROXY=http://proxy.example.com:8443 \

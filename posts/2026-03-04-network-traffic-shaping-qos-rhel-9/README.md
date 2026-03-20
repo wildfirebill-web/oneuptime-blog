@@ -31,6 +31,7 @@ Important limitation: traffic shaping only works on **outbound** traffic. You ca
 
 ```bash
 # Check current queueing discipline
+
 tc qdisc show dev ens192
 
 # On RHEL, you'll likely see fq_codel as the default

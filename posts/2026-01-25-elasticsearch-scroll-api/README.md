@@ -63,6 +63,7 @@ Use Scroll API when:
 
 ```bash
 # Start a scroll request with 1 minute timeout
+
 curl -X POST "localhost:9200/logs/_search?scroll=1m" -H 'Content-Type: application/json' -d'
 {
   "size": 1000,

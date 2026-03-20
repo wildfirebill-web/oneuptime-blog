@@ -36,6 +36,7 @@ The true start of an incident is not when someone notices it - it is when the sy
 
 ```python
 # Detect incident start time from OTel metric history
+
 import requests
 from datetime import datetime, timedelta
 

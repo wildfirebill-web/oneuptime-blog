@@ -22,6 +22,7 @@ The official Rust images include the compiler, cargo, and common build tools:
 
 ```bash
 # Full image - Debian-based, includes gcc, linker, and common libraries
+
 podman pull docker.io/library/rust:1.77
 
 # Slim image - smaller Debian base

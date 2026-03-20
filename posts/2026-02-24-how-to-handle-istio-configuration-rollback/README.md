@@ -34,6 +34,7 @@ Kubernetes doesn't natively version custom resources like it does Deployments, b
 
 ```bash
 # View the last-applied configuration
+
 kubectl get virtualservice my-vs -n my-namespace \
   -o jsonpath='{.metadata.annotations.kubectl\.kubernetes\.io/last-applied-configuration}' | \
   python3 -m json.tool

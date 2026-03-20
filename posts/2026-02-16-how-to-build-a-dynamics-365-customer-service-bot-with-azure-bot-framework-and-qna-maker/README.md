@@ -37,6 +37,7 @@ Create a QnA Maker knowledge base with your most common customer service questio
 
 ```bash
 # Create the QnA Maker resource
+
 az cognitiveservices account create \
   --name qna-customer-service \
   --resource-group rg-d365-bot \

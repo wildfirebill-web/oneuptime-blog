@@ -16,6 +16,7 @@ Out of the box, Ansible waits 10 seconds for an SSH connection to be established
 
 ```ini
 # ansible.cfg
+
 [defaults]
 # Connection timeout in seconds (default: 10)
 timeout = 10

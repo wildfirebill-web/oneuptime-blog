@@ -106,6 +106,7 @@ const sdk = new NodeSDK({
 
 ```python
 # tracing.py - Configure batch processor with larger queue
+
 from opentelemetry.sdk.trace.export import BatchSpanProcessor
 from opentelemetry.exporter.otlp.proto.http.trace_exporter import OTLPSpanExporter
 

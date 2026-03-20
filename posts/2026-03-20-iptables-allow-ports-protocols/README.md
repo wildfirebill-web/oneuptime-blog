@@ -12,6 +12,7 @@ After establishing a default deny policy, you add explicit allow rules for each 
 
 ```bash
 # Allow a single TCP port
+
 sudo iptables -A INPUT -p tcp --dport 80 -j ACCEPT   # HTTP
 sudo iptables -A INPUT -p tcp --dport 443 -j ACCEPT  # HTTPS
 sudo iptables -A INPUT -p tcp --dport 22 -j ACCEPT   # SSH
@@ -117,4 +118,4 @@ sudo iptables -L INPUT -n --line-numbers
 sudo iptables -L INPUT -n -v
 ```
 
-Building allow rules incrementally — starting with essential services and adding more as needed — is safer than trying to write all rules upfront.
+Building allow rules incrementally - starting with essential services and adding more as needed - is safer than trying to write all rules upfront.

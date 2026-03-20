@@ -53,6 +53,7 @@ The `failback` setting controls what happens when a failed path recovers:
 
 ```bash
 # Switch back to the preferred path immediately
+
 failback immediate
 
 # Never switch back automatically (stay on current path)

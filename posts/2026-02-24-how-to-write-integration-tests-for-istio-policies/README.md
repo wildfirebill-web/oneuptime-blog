@@ -206,6 +206,7 @@ done
 echo "v1: $V1_COUNT, v2: $V2_COUNT out of $TOTAL"
 
 # For a 90/10 split, v1 should be roughly 85-95
+
 if [ $V1_COUNT -ge 75 ] && [ $V1_COUNT -le 100 ]; then
   echo "PASS: Traffic split looks correct"
 else

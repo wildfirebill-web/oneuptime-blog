@@ -28,6 +28,7 @@ Before any testing, read the upgrade guide for the target version. HashiCorp pub
 
 ```bash
 # Check your current version
+
 terraform version
 
 # Download the new version alongside the current one

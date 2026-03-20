@@ -49,6 +49,7 @@ With Splunk, application logs typically follow this pattern: your application wr
 
 ```python
 # Sending logs directly to Splunk via HEC
+
 import requests
 import json
 import time

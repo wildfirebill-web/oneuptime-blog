@@ -25,6 +25,7 @@ The pgAdmin project maintains its own apt repository, which provides more recent
 
 ```bash
 # Install required dependencies
+
 sudo apt install -y curl gnupg2
 
 # Add the pgAdmin apt repository signing key

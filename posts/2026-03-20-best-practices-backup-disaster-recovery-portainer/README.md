@@ -12,7 +12,7 @@ A Portainer deployment without a backup strategy is a single point of failure. T
 
 ## What Needs to Be Backed Up
 
-```
+```bash
 Portainer itself:
   - portainer_data volume (DB, configs, keys)
   - TLS certificates
@@ -37,6 +37,7 @@ TIMESTAMP=$(date +%Y%m%d-%H%M%S)
 mkdir -p "$BACKUP_DIR"
 
 # Stop Portainer for a consistent backup (or use the API to export)
+
 docker stop portainer
 
 # Create a tarball of the volume
@@ -184,4 +185,4 @@ Adjust backup frequency to meet your RPO targets.
 
 ## Summary
 
-Backup and disaster recovery for Portainer requires backing up both Portainer's own data volume and your application data volumes. Keep stack definitions in Git for zero-RPO configuration recovery. Test your recovery procedures regularly — a backup you've never restored is just hope.
+Backup and disaster recovery for Portainer requires backing up both Portainer's own data volume and your application data volumes. Keep stack definitions in Git for zero-RPO configuration recovery. Test your recovery procedures regularly - a backup you've never restored is just hope.

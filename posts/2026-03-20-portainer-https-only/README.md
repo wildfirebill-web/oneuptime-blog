@@ -102,6 +102,7 @@ For production, use a trusted certificate:
 
 ```bash
 # Mount your certificate files
+
 docker run -d \
   -p 9443:9443 \
   -v /var/run/docker.sock:/var/run/docker.sock \

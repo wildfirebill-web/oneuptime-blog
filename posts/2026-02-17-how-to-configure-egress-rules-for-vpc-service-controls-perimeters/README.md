@@ -49,6 +49,7 @@ Before writing any rules, catalog the outbound data flows from projects inside y
 
 ```bash
 # Check audit logs for outbound API calls that were blocked
+
 gcloud logging read \
   'protoPayload.metadata.@type="type.googleapis.com/google.cloud.audit.VpcServiceControlAuditMetadata" AND protoPayload.metadata.violationReason="RESOURCES_NOT_IN_SAME_SERVICE_PERIMETER"' \
   --limit=50 \

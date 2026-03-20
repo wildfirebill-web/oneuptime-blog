@@ -1,4 +1,4 @@
-# How to List and Manage Environments via the Portainer API
+# How to List and Manage Environments via the Portainer API - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Learn how to list, create, update, and delete Portainer environment
 
 ## Introduction
 
-Portainer environments represent managed infrastructure — Docker hosts, Kubernetes clusters, ACI instances, and Edge agents. The Portainer API lets you automate full environment lifecycle management: adding new environments when new infrastructure is provisioned, updating settings, and decommissioning environments when infrastructure is retired.
+Portainer environments represent managed infrastructure - Docker hosts, Kubernetes clusters, ACI instances, and Edge agents. The Portainer API lets you automate full environment lifecycle management: adding new environments when new infrastructure is provisioned, updating settings, and decommissioning environments when infrastructure is retired.
 
 ## Prerequisites
 
@@ -23,6 +23,7 @@ PORTAINER_URL="https://portainer.example.com"
 TOKEN="your-admin-token"
 
 # List all environments
+
 curl -s -H "Authorization: Bearer $TOKEN" \
   "${PORTAINER_URL}/api/endpoints" | jq .
 

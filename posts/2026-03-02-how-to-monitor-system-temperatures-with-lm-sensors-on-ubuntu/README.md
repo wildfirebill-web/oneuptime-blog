@@ -14,6 +14,7 @@ Keeping an eye on system temperatures is basic hardware health monitoring for an
 
 ```bash
 # Install lm-sensors
+
 sudo apt update
 sudo apt install -y lm-sensors
 

@@ -16,6 +16,7 @@ The Actions Runner Controller (ARC) manages a fleet of Kubernetes-based runners 
 
 ```hcl
 # main.tf
+
 terraform {
   required_providers {
     helm = {
@@ -184,8 +185,8 @@ resource "aws_autoscaling_group" "github_runners" {
 
 ## Best Practices
 
-- Use ARC on Kubernetes for dynamic scaling that matches GitHub's job queue — instances scale to zero when idle.
-- Use GitHub Apps instead of PATs for runner registration — Apps have better security controls and audit logging.
+- Use ARC on Kubernetes for dynamic scaling that matches GitHub's job queue - instances scale to zero when idle.
+- Use GitHub Apps instead of PATs for runner registration - Apps have better security controls and audit logging.
 - Assign runners to specific repository or organization labels to route jobs to appropriately configured hardware.
 - Isolate runner network access so each runner can only reach the resources it needs for deployment, not all internal services.
 - Regularly rotate runner registration tokens and update your OpenTofu configuration accordingly.

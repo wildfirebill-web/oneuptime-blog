@@ -53,6 +53,7 @@ The fix is to install the build dependencies before pip install:
 
 ```dockerfile
 # Dockerfile: Python app with OpenTelemetry on Alpine
+
 FROM python:3.12-alpine
 
 # Install build dependencies needed for grpcio and other native extensions

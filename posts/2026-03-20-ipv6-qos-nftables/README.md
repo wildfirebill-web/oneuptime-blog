@@ -57,6 +57,7 @@ table ip6 mangle {
 
 ```bash
 # Apply nftables configuration
+
 sudo nft -f /etc/nftables.conf
 
 # Verify rules loaded

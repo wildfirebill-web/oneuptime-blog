@@ -48,7 +48,7 @@ In Rancher:
 3. Select **Harvester**
 4. Fill in:
 
-```
+```sql
 Name:               harvester-infra-creds
 Harvester Cluster:  [Select your Harvester cluster]
 ```
@@ -64,7 +64,7 @@ Harvester Cluster:  [Select your Harvester cluster]
 
 ### Configure the Cluster
 
-```
+```text
 Cluster Name:       production-rke2
 Kubernetes Version: v1.27.x (latest stable)
 CNI:                Canal
@@ -73,7 +73,7 @@ CNI:                Canal
 ### Configure Node Pools
 
 **Control Plane Pool:**
-```
+```text
 Machine Count:      3 (for HA)
 Node Roles:         etcd, Control Plane
 VM CPU:             4 cores
@@ -84,7 +84,7 @@ VM Disk Size:       50 GB
 ```
 
 **Worker Pool:**
-```
+```text
 Machine Count:      3
 Node Roles:         Worker
 VM CPU:             8 cores
@@ -94,7 +94,7 @@ VM Network:         default/vlan-100
 VM Disk Size:       100 GB
 ```
 
-4. Click **Create** — Rancher will provision the VMs in Harvester and bootstrap RKE2
+4. Click **Create** - Rancher will provision the VMs in Harvester and bootstrap RKE2
 
 ## Step 4: Create an RKE2 Cluster via Rancher API
 
@@ -102,6 +102,7 @@ For GitOps-friendly cluster creation, use the Rancher API:
 
 ```yaml
 # rke2-harvester-cluster.yaml
+
 # Provision an RKE2 cluster on Harvester via Rancher API
 
 apiVersion: provisioning.cattle.io/v1

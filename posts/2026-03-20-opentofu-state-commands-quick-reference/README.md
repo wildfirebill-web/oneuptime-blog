@@ -16,6 +16,7 @@ List all resources tracked in state.
 
 ```bash
 # List all resources
+
 tofu state list
 
 # Filter by resource type

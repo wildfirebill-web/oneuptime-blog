@@ -25,6 +25,7 @@ First, let us set up the KV secrets engine with a structure that maps well to An
 
 ```bash
 # Enable KV v2 secrets engine for inventory data
+
 vault secrets enable -path=ansible kv-v2
 
 # Store host information organized by group

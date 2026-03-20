@@ -55,6 +55,7 @@ Deploy keys are SSH keys limited to a single repository:
 
 ```bash
 # Generate a key for this specific repo
+
 ssh-keygen -t ed25519 -C "argocd-myrepo" -f deploy-key -N ""
 ```
 

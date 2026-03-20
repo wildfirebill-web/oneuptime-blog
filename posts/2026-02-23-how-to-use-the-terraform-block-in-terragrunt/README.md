@@ -16,6 +16,7 @@ The most basic use of the `terraform` block is specifying where the Terraform mo
 
 ```hcl
 # Point to a local module
+
 terraform {
   source = "../../../modules/vpc"
 }

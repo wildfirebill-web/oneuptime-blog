@@ -32,6 +32,7 @@ mkdir -p $BACKUP_DIR
 echo "Backing up $OPERATOR_NAME resources..."
 
 # Backup CRDs
+
 kubectl get crd -l app.kubernetes.io/name=$OPERATOR_NAME -o yaml > $BACKUP_DIR/crds.yaml
 
 # Backup operator deployment

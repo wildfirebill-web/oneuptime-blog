@@ -22,6 +22,7 @@ One of the most impactful cost policies is preventing expensive instance types i
 
 ```python
 # restrict-instance-types.sentinel
+
 # Policy: Restrict EC2 instance types based on environment
 
 import "tfplan/v2" as tfplan

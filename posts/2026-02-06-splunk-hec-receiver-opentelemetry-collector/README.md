@@ -76,6 +76,7 @@ The Splunk HEC receiver requires configuring an HTTP endpoint and specifying aut
 
 ```yaml
 # RECEIVERS: Define how telemetry enters the Collector
+
 receivers:
   # Splunk HEC receiver listens for HTTP Event Collector formatted data
   splunk_hec:

@@ -56,6 +56,7 @@ The following YAML creates a minimal StatefulSet with a headless service for a s
 
 ```yaml
 # statefulset-basic.yaml
+
 # A minimal StatefulSet configuration demonstrating core concepts.
 # The headless service is required for StatefulSets to provide stable DNS.
 apiVersion: v1

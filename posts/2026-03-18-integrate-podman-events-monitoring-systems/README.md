@@ -20,6 +20,7 @@ The integration pattern follows a simple pipeline: Podman generates events, a co
 
 ```bash
 # The general pattern:
+
 # podman events --format json | collector | monitoring_system
 
 # Verify Podman events are working

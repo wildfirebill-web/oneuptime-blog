@@ -34,6 +34,7 @@ The `react-native-bundle-visualizer` package provides an interactive treemap of 
 
 ```bash
 # Install the package
+
 npm install --save-dev react-native-bundle-visualizer
 
 # Run the visualizer

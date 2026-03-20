@@ -24,6 +24,7 @@ The challenge is that changing a pod's service account requires a rolling restar
 
 ```bash
 # Create all required service accounts
+
 for sa in frontend-sa backend-sa db-sa monitoring-sa; do
   kubectl create serviceaccount $sa -n production --dry-run=client -o yaml | kubectl apply -f -
 done

@@ -157,6 +157,7 @@ Run identical workloads against all three protocols:
 
 ```python
 # benchmark_runner.py
+
 import grpc
 import requests
 import time

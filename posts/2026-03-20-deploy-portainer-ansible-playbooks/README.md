@@ -8,7 +8,7 @@ Description: Automate the initial deployment and configuration of Portainer acro
 
 ## Introduction
 
-Deploying Portainer manually on multiple servers is time-consuming and error-prone. Ansible playbooks allow you to automate the entire Portainer installation process — from installing Docker to deploying Portainer with the correct configuration — across dozens or hundreds of servers simultaneously. This guide covers deploying both Portainer CE and Business Edition using Ansible.
+Deploying Portainer manually on multiple servers is time-consuming and error-prone. Ansible playbooks allow you to automate the entire Portainer installation process - from installing Docker to deploying Portainer with the correct configuration - across dozens or hundreds of servers simultaneously. This guide covers deploying both Portainer CE and Business Edition using Ansible.
 
 ## Prerequisites
 
@@ -19,7 +19,7 @@ Deploying Portainer manually on multiple servers is time-consuming and error-pro
 
 ## Project Structure
 
-```
+```text
 portainer-ansible/
 ├── inventory/
 │   ├── production/
@@ -51,6 +51,7 @@ portainer-ansible/
 
 ```yaml
 # inventory/production/hosts.yml
+
 all:
   children:
     portainer_primary:

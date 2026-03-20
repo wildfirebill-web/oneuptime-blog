@@ -16,6 +16,7 @@ Monitoring VM performance helps you identify resource bottlenecks before they af
 
 ```bash
 # Show all VMs and their states
+
 virsh list --all
 
 # Show CPU and memory for all running VMs

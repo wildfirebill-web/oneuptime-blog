@@ -34,6 +34,7 @@ export CTX_CLUSTER1=cluster1
 export CTX_CLUSTER2=cluster2
 
 # Verify remote secrets are in place
+
 kubectl --context=${CTX_CLUSTER1} get secrets -n istio-system -l istio/multiCluster=true
 kubectl --context=${CTX_CLUSTER2} get secrets -n istio-system -l istio/multiCluster=true
 ```

@@ -1,8 +1,8 @@
-# How to Set Up Traefik Dashboard Alongside Portainer
+# How to Set Up Traefik Dashboard Alongside Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Traefik, Dashboard, Monitoring, Security
+Tags: Portainer, Traefik, Dashboards, Monitoring, Security
 
 Description: Learn how to enable and secure the Traefik dashboard alongside Portainer, giving you visibility into routes, services, middlewares, and certificate status.
 
@@ -22,6 +22,7 @@ In your Traefik static configuration:
 
 ```yaml
 # traefik.yml
+
 api:
   dashboard: true   # Enable the dashboard
   insecure: false   # Never expose without authentication
@@ -124,8 +125,8 @@ volumes:
 
 Once deployed:
 
-1. Visit `https://traefik.yourdomain.com` — Traefik dashboard
-2. Visit `https://portainer.yourdomain.com` — Portainer UI
+1. Visit `https://traefik.yourdomain.com` - Traefik dashboard
+2. Visit `https://portainer.yourdomain.com` - Portainer UI
 3. Both are HTTPS with valid Let's Encrypt certificates
 
 ## Checking Dashboard via API
@@ -140,4 +141,4 @@ curl -u admin:yourpassword https://traefik.yourdomain.com/api/http/services/port
 
 ## Conclusion
 
-The Traefik dashboard is a valuable companion to Portainer — while Portainer shows you the container state, the Traefik dashboard shows you the network routing state. Securing both behind basic auth and HTTPS ensures your management plane is protected from unauthorized access.
+The Traefik dashboard is a valuable companion to Portainer - while Portainer shows you the container state, the Traefik dashboard shows you the network routing state. Securing both behind basic auth and HTTPS ensures your management plane is protected from unauthorized access.

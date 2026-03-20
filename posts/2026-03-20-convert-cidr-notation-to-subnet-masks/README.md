@@ -4,16 +4,16 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: IPv4, CIDR, Subnetting, Subnet Mask, Networking
 
-Description: Converting CIDR notation to subnet masks is a fundamental subnetting skill — you set the top N bits to 1, convert each 8-bit group to decimal, and the result is the dotted-decimal mask.
+Description: Converting CIDR notation to subnet masks is a fundamental subnetting skill - you set the top N bits to 1, convert each 8-bit group to decimal, and the result is the dotted-decimal mask.
 
 ## Understanding the Conversion
 
 CIDR notation like `192.168.1.0/24` has two parts:
-- `192.168.1.0` — the network address
-- `/24` — the prefix length (24 bits set to 1 in the mask)
+- `192.168.1.0` - the network address
+- `/24` - the prefix length (24 bits set to 1 in the mask)
 
 To get the mask, fill 24 ones then 8 zeros across 32 bits:
-```
+```text
 11111111.11111111.11111111.00000000
    255  .   255  .   255  .   0
 = 255.255.255.0
@@ -43,6 +43,7 @@ def cidr_to_dotted(prefix: int) -> str:
     return socket.inet_ntoa(struct.pack("!I", mask_int))
 
 # Print conversion table
+
 print(f"{'Prefix':>8}  {'Subnet Mask':>18}  {'Binary (last octet)'}")
 for p in range(24, 33):
     mask = cidr_to_dotted(p)
@@ -52,7 +53,7 @@ for p in range(24, 33):
 ```
 
 Output:
-```
+```text
   Prefix        Subnet Mask  Binary (last octet)
 /24      255.255.255.0  00000000
 /25    255.255.255.128  10000000

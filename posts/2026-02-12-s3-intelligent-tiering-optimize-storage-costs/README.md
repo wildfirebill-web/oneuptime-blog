@@ -41,6 +41,7 @@ You can upload directly to the Intelligent-Tiering storage class.
 
 ```bash
 # Upload a file to Intelligent-Tiering
+
 aws s3 cp large-dataset.parquet \
   s3://my-data-bucket/datasets/large-dataset.parquet \
   --storage-class INTELLIGENT_TIERING

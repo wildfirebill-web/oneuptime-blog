@@ -53,6 +53,7 @@ done
 
 ```bash
 # Test that traffic is now blocked (if policy is deny)
+
 kubectl run block-test --image=busybox --restart=Never -- sleep 60
 TARGET_IP=$(kubectl get pod <policy-target-pod> -o jsonpath='{.status.podIP}')
 

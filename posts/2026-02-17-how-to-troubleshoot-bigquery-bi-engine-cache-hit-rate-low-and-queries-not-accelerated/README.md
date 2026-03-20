@@ -20,6 +20,7 @@ First, verify that BI Engine is actually enabled and has capacity allocated.
 
 ```bash
 # Check BI Engine reservations
+
 bq ls --reservation --location=us --project=my-project
 
 # Get detailed BI Engine reservation info

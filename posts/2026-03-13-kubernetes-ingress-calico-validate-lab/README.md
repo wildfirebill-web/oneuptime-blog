@@ -24,6 +24,7 @@ This guide provides a complete ingress validation suite for Calico, organized by
 
 ```bash
 # Deploy the target pod
+
 kubectl run target --image=nginx --labels="app=target"
 kubectl expose pod target --port=80
 

@@ -46,6 +46,7 @@ Enable the required APIs:
 
 ```bash
 # Enable all required APIs
+
 gcloud services enable \
   cloudfunctions.googleapis.com \
   cloudscheduler.googleapis.com \

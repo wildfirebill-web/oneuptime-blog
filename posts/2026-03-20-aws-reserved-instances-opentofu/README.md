@@ -22,6 +22,7 @@ resource "aws_db_instance" "main" {
 }
 
 # Purchase a reserved instance for the RDS class
+
 resource "aws_rds_reserved_instance" "main" {
   reserved_instance_id     = "production-rds-ri"
   offering_id              = data.aws_rds_reserved_instance_offering.main.offering_id
@@ -97,7 +98,7 @@ data "aws_opensearch_reserved_instance_offering" "main" {
 ## Capacity Reservations for EC2 (Guaranteed Capacity)
 
 ```hcl
-# On-Demand Capacity Reservation — reserves capacity without a pricing commitment
+# On-Demand Capacity Reservation - reserves capacity without a pricing commitment
 resource "aws_ec2_capacity_reservation" "app" {
   instance_type     = "r7g.large"
   instance_platform = "Linux/UNIX"

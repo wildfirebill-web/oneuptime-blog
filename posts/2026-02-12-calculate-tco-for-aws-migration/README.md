@@ -93,6 +93,7 @@ A useful formula for estimating staff allocation:
 
 ```python
 # Calculate annual staffing cost allocated to infrastructure
+
 def calculate_staff_cost(engineers, avg_salary, benefits_multiplier, infra_percent):
     """
     engineers: number of staff members

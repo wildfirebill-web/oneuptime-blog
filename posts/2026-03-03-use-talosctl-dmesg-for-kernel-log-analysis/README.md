@@ -28,6 +28,7 @@ In a traditional Linux system, you would SSH into the machine and run `dmesg`. I
 
 ```bash
 # View kernel messages from a node
+
 talosctl dmesg --nodes <node-ip>
 ```
 

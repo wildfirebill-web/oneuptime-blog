@@ -1,4 +1,4 @@
-# How to Deploy Node-RED for IoT Workflows via Portainer
+# How to Deploy Node-RED for IoT Workflows via Portainer - Nodered
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -22,6 +22,7 @@ Create a new stack in Portainer:
 
 ```yaml
 # docker-compose.yml for Node-RED
+
 version: "3.8"
 
 services:

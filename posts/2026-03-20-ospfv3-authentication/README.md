@@ -21,7 +21,7 @@ For most networks, AH is sufficient. Use ESP if you need to encrypt routing prot
 
 ## Configuring OSPFv3 IPsec Authentication on Cisco IOS
 
-```
+```text
 ! Method 1: Per-interface authentication
 interface GigabitEthernet0/0
  ospfv3 authentication ipsec spi 256 sha1 <40-hex-char-key>
@@ -40,7 +40,7 @@ interface GigabitEthernet0/0
 
 ## Configuring ESP Encryption on Cisco
 
-```
+```text
 ! Use ESP for both authentication and encryption
 interface GigabitEthernet0/0
  ospfv3 encryption ipsec spi 400 esp 3des sha1 <encryption-key> <auth-key>
@@ -52,6 +52,7 @@ FRRouting (as of version 8.x) supports OSPFv3 IPsec authentication through the k
 
 ```bash
 # Step 1: Create IPsec security associations using ip xfrm
+
 # These must match on both routers
 
 # On Router 1 (for traffic from R1 to R2)
@@ -78,7 +79,7 @@ sudo ip xfrm policy add src fe80::2 dst fe80::1 proto 89 \
 
 ## Verifying Authentication
 
-```
+```text
 ! Cisco: Verify IPsec is active on OSPFv3 interface
 Router# show ospfv3 interface GigabitEthernet0/0 | include auth
 ! Should show: Authentication SPF, algorithm SHA
@@ -100,7 +101,7 @@ vtysh -c "show ipv6 ospf neighbor"
 
 - Both neighbors must use the **same SPI value** and **same key**
 - SHA-1 is the minimum recommended; use SHA-256 or SHA-512 where supported
-- Keys should be rotated periodically — plan for a brief adjacency reset during rotation
+- Keys should be rotated periodically - plan for a brief adjacency reset during rotation
 - In large networks, consider automating key distribution with a PKI or secrets manager
 
 ## Summary

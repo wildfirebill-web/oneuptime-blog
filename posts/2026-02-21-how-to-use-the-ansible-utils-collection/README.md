@@ -14,6 +14,7 @@ The `ansible.utils` collection is a Swiss army knife of data manipulation tools 
 
 ```bash
 # Install the collection
+
 ansible-galaxy collection install ansible.utils
 
 # Install with dependencies (some filters need extra Python packages)

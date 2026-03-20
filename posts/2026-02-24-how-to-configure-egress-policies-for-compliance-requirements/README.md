@@ -408,6 +408,7 @@ Here is a checklist for compliance audits:
 
 ```bash
 # 1. Verify REGISTRY_ONLY mode is active
+
 kubectl get configmap istio -n istio-system -o yaml | grep outboundTrafficPolicy
 
 # 2. List all allowed external services

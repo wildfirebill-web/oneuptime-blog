@@ -70,6 +70,7 @@ Edit your PostgreSQL configuration file to enable WAL archiving:
 
 ```bash
 # Location varies by installation
+
 # Common paths:
 # /etc/postgresql/16/main/postgresql.conf (Debian/Ubuntu)
 # /var/lib/pgsql/16/data/postgresql.conf (RHEL/CentOS)

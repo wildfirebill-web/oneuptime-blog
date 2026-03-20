@@ -37,6 +37,7 @@ Filter metrics to only show series that exist in another metric:
 
 ```promql
 # Show request rates only for instances that are up
+
 rate(http_requests_total[5m])
 and
 up == 1

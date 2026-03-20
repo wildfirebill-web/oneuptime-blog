@@ -14,6 +14,7 @@ Azure Automation provides cloud-based automation capabilities. Ansible can manag
 
 ```yaml
 # playbooks/azure-provision.yml
+
 ---
 - name: Provision Azure infrastructure
   hosts: localhost

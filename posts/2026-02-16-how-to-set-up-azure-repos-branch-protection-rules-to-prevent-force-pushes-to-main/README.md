@@ -71,6 +71,7 @@ Here is what this looks like in a pipeline YAML that is designed to work as a bu
 
 ```yaml
 # azure-pipelines-validation.yml
+
 # This pipeline runs as a build validation policy on PRs to main
 trigger: none  # Do not trigger on direct pushes
 

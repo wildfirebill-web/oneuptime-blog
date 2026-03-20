@@ -49,6 +49,7 @@ Include these commands in the runbook for the initial assessment:
 
 ```bash
 # Assess the scope of impact
+
 echo "=== Affected Pods ==="
 kubectl get pods --all-namespaces --field-selector=status.phase=Pending --no-headers | wc -l
 

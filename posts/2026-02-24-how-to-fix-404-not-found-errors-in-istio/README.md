@@ -18,6 +18,7 @@ First, figure out whether the 404 is coming from Envoy or from your application:
 
 ```bash
 # Check the response headers
+
 kubectl exec <client-pod> -n production -- curl -v http://orders-service:8080/api/orders 2>&1
 
 # If you see "server: envoy" in the headers, the 404 is from Envoy

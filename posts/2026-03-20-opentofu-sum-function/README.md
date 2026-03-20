@@ -16,7 +16,7 @@ The `sum` function in OpenTofu returns the sum of all numbers in a given list. I
 sum(list)
 ```
 
-- **list** — a list of numbers
+- **list** - a list of numbers
 - Returns the arithmetic total of all elements
 
 ## Basic Examples
@@ -157,9 +157,9 @@ locals {
 ## Common Pitfalls
 
 - Passing an empty list `sum([])` will cause an error. Ensure the list has at least one element.
-- Mixing number types (integers and floats) is fine — OpenTofu handles coercion automatically.
+- Mixing number types (integers and floats) is fine - OpenTofu handles coercion automatically.
 - Non-numeric values in the list will cause a type error.
 
 ## Conclusion
 
-The `sum` function is a simple but powerful aggregation tool in OpenTofu. Use it whenever you need to total a list of numbers — from replica counts to storage sizes to budget calculations. Combined with list comprehensions and `values()`, it enables concise and expressive aggregate calculations over complex data structures.
+The `sum` function is a simple but powerful aggregation tool in OpenTofu. Use it whenever you need to total a list of numbers - from replica counts to storage sizes to budget calculations. Combined with list comprehensions and `values()`, it enables concise and expressive aggregate calculations over complex data structures.

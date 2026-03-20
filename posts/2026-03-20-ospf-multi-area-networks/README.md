@@ -8,7 +8,7 @@ Description: Learn how to design and configure OSPF multi-area networks with Are
 
 ## Why Use Multiple OSPF Areas?
 
-In a single-area OSPF network, every router runs SPF on the complete topology database. As the network grows, SPF calculations become expensive and LSA flooding consumes bandwidth. Multi-area OSPF solves this by dividing the network into areas—each area runs SPF independently, and Area Border Routers (ABRs) summarize routes between areas.
+In a single-area OSPF network, every router runs SPF on the complete topology database. As the network grows, SPF calculations become expensive and LSA flooding consumes bandwidth. Multi-area OSPF solves this by dividing the network into areas-each area runs SPF independently, and Area Border Routers (ABRs) summarize routes between areas.
 
 ## OSPF Area Design Rules
 
@@ -21,7 +21,7 @@ graph TD
     Area0 --> Area2
 ```
 
-- **Area 0** is the backbone—all other areas must connect to it
+- **Area 0** is the backbone-all other areas must connect to it
 - **ABR (Area Border Router):** Connected to two or more areas, including Area 0
 - **Internal Router:** All interfaces in a single area
 - **ASBR (AS Boundary Router):** Redistributes external routes into OSPF
@@ -30,7 +30,7 @@ graph TD
 
 On routers that will be entirely within Area 0:
 
-```
+```text
 ! Core router R0 - entirely in Area 0
 R0(config)# router ospf 1
 R0(config-router)# router-id 10.0.0.1
@@ -43,7 +43,7 @@ R0(config-router)# network 10.0.12.0 0.0.0.3 area 0
 
 An ABR has interfaces in multiple areas. It runs separate SPF for each area:
 
-```
+```text
 ! ABR1 - connects Area 0 (Gig0/0) and Area 1 (Gig0/1)
 ABR1(config)# router ospf 1
 ABR1(config-router)# router-id 10.0.0.2
@@ -59,7 +59,7 @@ ABR1(config-router)# network 172.16.1.0 0.0.0.255 area 1
 
 Routers entirely within Area 1 only need to know about their own area:
 
-```
+```text
 ! R1 - internal router in Area 1
 R1(config)# router ospf 1
 R1(config-router)# router-id 172.16.1.1
@@ -71,7 +71,7 @@ R1(config-router)# network 172.16.2.0 0.0.0.255 area 1
 
 ABRs can summarize multiple Area 1 prefixes into a single summary advertised into Area 0. This reduces LSA flooding and routing table size:
 
-```
+```text
 ! On ABR1 - summarize Area 1 routes before advertising to Area 0
 ABR1(config-router)# area 1 range 172.16.0.0 255.255.0.0
 
@@ -83,7 +83,7 @@ ABR1(config-router)# area 1 range 172.16.0.0 255.255.0.0 not-advertise
 
 On a router in Area 1, check that Area 0 routes appear as inter-area (O IA):
 
-```
+```text
 R1# show ip route ospf
 
 ! O     10.0.0.0/24 [110/2] via 172.16.1.254     <- Area 0 route (intra-area)
@@ -94,7 +94,7 @@ R1# show ip route ospf
 
 ## Step 6: Verify the OSPF Area in the Database
 
-```
+```text
 ! Show OSPF database filtered by area
 R1# show ip ospf database summary
 
@@ -104,7 +104,7 @@ R1# show ip ospf database summary
 
 ## Step 7: Check OSPF Process for Multiple Areas
 
-```
+```text
 ! Confirm the router's area membership
 Router# show ip ospf
 

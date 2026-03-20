@@ -16,6 +16,7 @@ RabbitMQ is built on Erlang, which has its own networking layer. Configuring Rab
 # /etc/rabbitmq/rabbitmq.conf
 
 # Listen on all interfaces including IPv6
+
 listeners.tcp.default = :::5672
 
 # Or specific IPv6 address

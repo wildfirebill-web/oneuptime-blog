@@ -48,6 +48,7 @@ If you prefer automation, create organizations through the API:
 
 ```bash
 # Create an organization via the HCP Terraform API
+
 curl \
   --header "Authorization: Bearer $TFC_TOKEN" \
   --header "Content-Type: application/vnd.api+json" \
@@ -125,6 +126,7 @@ Create an organization token for CI/CD:
 ```text
 Settings > API Tokens > Create an organization token
 Description: CI/CD Pipeline Token
+
 ```
 
 Store this token securely. It grants full access to the organization.

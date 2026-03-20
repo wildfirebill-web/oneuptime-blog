@@ -111,6 +111,7 @@ def normalize_ip_for_storage(raw_ip: str) -> Optional[str]:
         return None
 
 # Examples
+
 print(normalize_ip_for_storage("2001:DB8::1"))      # 2001:db8::1 (lowercase)
 print(normalize_ip_for_storage("::ffff:192.0.2.1")) # 192.0.2.1 (unmapped)
 print(normalize_ip_for_storage("::1"))              # ::1
@@ -155,4 +156,4 @@ CREATE TABLE connections_2001db8 PARTITION OF connections
 
 ## Conclusion
 
-PostgreSQL's native `inet` type with GiST indexing is the best choice for IPv6 addresses — it supports subnet operators natively. MySQL works well with `VARBINARY(16)` and `INET6_ATON`/`INET6_NTOA`. Always normalize addresses before storage using `ipaddress.ip_address()`. Use `VARCHAR(45)` minimum for text storage. Monitor database query performance for IP-range queries with OneUptime.
+PostgreSQL's native `inet` type with GiST indexing is the best choice for IPv6 addresses - it supports subnet operators natively. MySQL works well with `VARBINARY(16)` and `INET6_ATON`/`INET6_NTOA`. Always normalize addresses before storage using `ipaddress.ip_address()`. Use `VARCHAR(45)` minimum for text storage. Monitor database query performance for IP-range queries with OneUptime.

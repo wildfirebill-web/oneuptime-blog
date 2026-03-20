@@ -40,6 +40,7 @@ Figure out what context type the service expects. Check the default directory:
 
 ```bash
 # What context does Apache expect?
+
 ls -Zd /var/www/html/
 # system_u:object_r:httpd_sys_content_t:s0
 

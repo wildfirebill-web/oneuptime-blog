@@ -282,6 +282,7 @@ Here's the CloudFormation command to delete and retry:
 
 aws cloudformation delete-stack --stack-name web-app-stack
 # Wait for deletion to complete, then:
+
 aws cloudformation create-stack --stack-name web-app-stack \
   --template-body file://template.yaml
 ```

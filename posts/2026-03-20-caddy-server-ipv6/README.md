@@ -14,6 +14,7 @@ Caddy listens on both IPv4 and IPv6 by default:
 
 ```bash
 # Caddy binds to :: (all interfaces) which accepts IPv4 and IPv6
+
 # Verify with:
 ss -6 -tlnp | grep caddy
 # Expected: tcp6 *:80 and *:443
@@ -179,4 +180,4 @@ journalctl -u caddy -f | grep "::"
 }
 ```
 
-Caddy's zero-config approach to IPv6 — listening on both IPv4 and IPv6 by default and supporting IPv6 backend addresses with bracket notation — makes it one of the easiest web servers to use in dual-stack and IPv6-only environments.
+Caddy's zero-config approach to IPv6 - listening on both IPv4 and IPv6 by default and supporting IPv6 backend addresses with bracket notation - makes it one of the easiest web servers to use in dual-stack and IPv6-only environments.

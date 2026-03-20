@@ -22,6 +22,7 @@ The simplest caching backend is the JSON file cache. It writes one JSON file per
 
 ```ini
 # ansible.cfg
+
 # Configures JSON file-based fact caching with 24-hour TTL
 [defaults]
 gathering = smart

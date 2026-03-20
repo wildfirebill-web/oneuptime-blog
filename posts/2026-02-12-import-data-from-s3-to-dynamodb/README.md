@@ -33,6 +33,7 @@ Before running the import, make sure your data is in one of the supported format
 
 ```bash
 # Start a DynamoDB import from S3
+
 # The table will be created automatically with the specified key schema
 aws dynamodb import-table \
   --s3-bucket-source S3Bucket=my-data-bucket,S3KeyPrefix=exports/users/ \

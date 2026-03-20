@@ -31,6 +31,7 @@ The latest commit in your repository is `new456`, but Flux is still using `old12
 
 ```bash
 # Check what Flux has
+
 flux get sources git my-repo
 
 # Check what Git has

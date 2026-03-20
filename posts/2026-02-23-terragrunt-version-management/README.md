@@ -20,6 +20,7 @@ Terragrunt doesn't have a built-in version constraint like Terraform's `required
 
 ```bash
 # Install tgenv
+
 git clone https://github.com/cunymatthieu/tgenv.git ~/.tgenv
 echo 'export PATH="$HOME/.tgenv/bin:$PATH"' >> ~/.bashrc
 source ~/.bashrc

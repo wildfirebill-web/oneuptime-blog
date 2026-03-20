@@ -25,6 +25,7 @@ The first launch of a particular Ubuntu version takes 30-90 seconds (plus downlo
 
 ```bash
 # Install Multipass if not already done
+
 sudo snap install multipass
 
 # Launch the default (latest LTS) Ubuntu VM

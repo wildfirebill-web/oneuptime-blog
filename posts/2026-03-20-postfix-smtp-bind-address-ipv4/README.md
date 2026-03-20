@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Postfix, IPv4, smtp_bind_address, Outbound Mail, SMTP, Email
+Tags: Postfix, IPv4, Smtp_bind_address, Outbound Mail, SMTP, Email
 
 Description: Configure Postfix smtp_bind_address to control which IPv4 address is used for outbound SMTP connections, ensuring mail comes from the correct IP for SPF compliance.
 
@@ -16,6 +16,7 @@ When a server has multiple IPv4 addresses, Postfix may send mail from an unexpec
 # /etc/postfix/main.cf
 
 # Force all outbound SMTP connections to use this IPv4
+
 smtp_bind_address = 203.0.113.10
 
 # For IPv6, use smtp_bind_address6 (leave empty to disable IPv6 sending)

@@ -16,6 +16,7 @@ Before installing a new driver, identify what is currently loaded and whether th
 
 ```bash
 # List network interfaces and their status
+
 ip link show
 
 # Identify which driver each interface uses

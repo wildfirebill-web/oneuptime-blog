@@ -16,6 +16,7 @@ The simplest case is installing a role from a public GitHub repository:
 
 ```bash
 # Install a role from a public GitHub repository
+
 ansible-galaxy install git+https://github.com/geerlingguy/ansible-role-nginx.git
 ```
 

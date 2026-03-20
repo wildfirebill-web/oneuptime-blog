@@ -24,6 +24,7 @@ Create a scheduler configuration with bin packing scoring:
 
 ```yaml
 # scheduler-config.yaml
+
 apiVersion: kubescheduler.config.k8s.io/v1
 kind: KubeSchedulerConfiguration
 profiles:
@@ -217,7 +218,7 @@ profiles:
 
 Production services use balanced allocation for reliability while batch jobs use bin packing for cost efficiency.
 
-## Resource-Specific Bin Packing
+Resource-Specific Bin Packing
 
 Pack based on specific resource types:
 

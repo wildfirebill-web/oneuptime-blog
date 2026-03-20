@@ -25,6 +25,7 @@ Use load balancing when:
 
 ```yaml
 # otel-collector-config.yaml
+
 receivers:
   otlp:
     protocols:

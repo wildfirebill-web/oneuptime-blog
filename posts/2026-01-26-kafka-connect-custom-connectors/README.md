@@ -493,6 +493,7 @@ Package and install your connector.
 
 ```bash
 # Build the JAR
+
 mvn clean package
 
 # Copy to Connect plugin path

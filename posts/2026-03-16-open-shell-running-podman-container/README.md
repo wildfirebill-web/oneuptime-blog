@@ -20,6 +20,7 @@ The most common way to open a shell is with `podman exec` using the `-it` flags:
 
 ```bash
 # Start a test container
+
 podman run -d --name my-app nginx:latest
 
 # Open a bash shell inside the container

@@ -24,6 +24,7 @@ Apply Pod Security Standards at the namespace level:
 
 ```yaml
 # production-namespace.yaml
+
 apiVersion: v1
 kind: Namespace
 metadata:

@@ -142,6 +142,7 @@ When renaming both, rename the volume group first, then the logical volume:
 
 ```bash
 # Rename the volume group
+
 sudo vgrename old_vg new_vg
 
 # Rename the logical volume

@@ -51,6 +51,7 @@ Azure App Service Premium v3 and Isolated v2 plans support zone redundancy. You 
 
 ```bash
 # Create a zone-redundant App Service plan
+
 # Minimum 3 instances required for zone redundancy
 az appservice plan create \
   --resource-group prod-rg \

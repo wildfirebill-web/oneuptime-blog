@@ -36,7 +36,7 @@ provider "hcloud" {
 ```hcl
 resource "hcloud_server" "portainer" {
   name        = "portainer"
-  server_type = "cpx11"  # 2 vCPU, 2 GB RAM — ~€3.85/month
+  server_type = "cpx11"  # 2 vCPU, 2 GB RAM - ~€3.85/month
   image       = "ubuntu-22.04"
   location    = "nbg1"  # Nuremberg, Germany
 

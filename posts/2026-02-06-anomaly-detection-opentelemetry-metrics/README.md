@@ -38,6 +38,7 @@ Not every metric benefits from anomaly detection. Focus on metrics where the exp
 
 ```python
 # anomaly_metrics.py
+
 from opentelemetry import metrics
 from opentelemetry.sdk.metrics import MeterProvider
 from opentelemetry.sdk.metrics.export import PeriodicExportingMetricReader

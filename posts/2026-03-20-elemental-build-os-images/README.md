@@ -20,6 +20,7 @@ Elemental OS images are immutable, container-based operating system images built
 
 ```bash
 # Install via package manager (openSUSE/SUSE)
+
 zypper install elemental
 
 # Or run as a container
@@ -32,7 +33,7 @@ docker run --privileged --rm -it \
 
 Elemental OS images are built as OCI container images with a specific layer structure:
 
-```
+```text
 Base OS Layer (SLE Micro / openSUSE MicroOS)
     └── System Extensions (packages, configs)
         └── Elemental Agent Layer

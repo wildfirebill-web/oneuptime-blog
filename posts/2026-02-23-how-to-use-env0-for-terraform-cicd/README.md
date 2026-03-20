@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Env0, CI/CD, Infrastructure as Code, DevOps, Cost Management
+Tags: Terraform, env0, CI/CD, Infrastructure as Code, DevOps, Cost Management
 
 Description: Learn how to use env0 for Terraform CI/CD including environment management, policy enforcement, cost estimation, self-service infrastructure, and team collaboration features.
 
@@ -76,6 +76,7 @@ The IAM role trust policy:
 
 ```hcl
 # iam.tf - IAM role for env0
+
 resource "aws_iam_role" "env0_terraform" {
   name = "env0-terraform"
 

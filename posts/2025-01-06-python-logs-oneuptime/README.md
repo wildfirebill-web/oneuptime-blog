@@ -44,6 +44,7 @@ This configuration sets up both tracing and logging with OpenTelemetry, enabling
 
 ```python
 # logging_config.py
+
 # OpenTelemetry configuration for sending logs to OneUptime
 import logging
 from opentelemetry import trace

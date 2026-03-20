@@ -111,6 +111,7 @@ Common patterns:
 
 ```yaml
 # Every day at midnight
+
 schedule: "0 0 * * *"
 
 # Weekdays at 9 AM

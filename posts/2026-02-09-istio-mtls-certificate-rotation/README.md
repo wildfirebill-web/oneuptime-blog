@@ -35,6 +35,7 @@ The simplest integration uses Kubernetes' built-in CA. Configure Istio to reques
 
 ```yaml
 # istio-k8s-ca.yaml
+
 apiVersion: install.istio.io/v1alpha1
 kind: IstioOperator
 metadata:

@@ -18,6 +18,7 @@ Before topology spread constraints existed, the standard approach was pod anti-a
 
 ```yaml
 # The old approach - pod anti-affinity (limited and rigid)
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

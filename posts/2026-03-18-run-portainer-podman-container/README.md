@@ -30,6 +30,7 @@ Portainer communicates with the container runtime through a socket. Podman provi
 
 ```bash
 # Enable and start the Podman socket service at the system level
+
 sudo systemctl enable podman.socket
 sudo systemctl start podman.socket
 

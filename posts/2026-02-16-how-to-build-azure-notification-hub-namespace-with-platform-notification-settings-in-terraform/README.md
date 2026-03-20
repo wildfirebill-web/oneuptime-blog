@@ -31,6 +31,7 @@ graph TD
 
 ```hcl
 # Terraform configuration
+
 terraform {
   required_version = ">= 1.5.0"
 
@@ -115,7 +116,7 @@ locals {
 }
 ```
 
-## Resource Group and Namespace
+Resource Group and Namespace
 
 The namespace is the top-level container. The SKU determines the pricing tier and features.
 

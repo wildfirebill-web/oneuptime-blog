@@ -240,6 +240,7 @@ When client-side diff produces unexpected results:
 
 ```bash
 # View the full diff output
+
 argocd app diff my-app
 
 # View the diff in JSON format for easier parsing

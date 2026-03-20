@@ -48,6 +48,7 @@ Before tuning, identify where the bottleneck is:
 
 ```bash
 # Overall system overview
+
 # Shows load averages, memory, CPU, and top processes
 top -bn1 | head -20
 

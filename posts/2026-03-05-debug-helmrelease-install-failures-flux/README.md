@@ -35,6 +35,7 @@ Start by examining the HelmRelease status to understand what went wrong:
 
 ```bash
 # Get a quick overview of the HelmRelease status
+
 flux get helmrelease my-app -n default
 
 # Get detailed status with conditions
@@ -128,7 +129,7 @@ spec:
       tag: "1.0.0"           # Required by the chart
 ```
 
-### Resource Conflict Errors
+Resource Conflict Errors
 
 If a resource already exists in the cluster (from a previous manual install or another release), you will see conflicts:
 

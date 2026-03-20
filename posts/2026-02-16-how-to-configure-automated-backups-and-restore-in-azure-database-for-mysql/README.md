@@ -40,6 +40,7 @@ To change the retention period using the CLI:
 
 ```bash
 # Set backup retention to 14 days
+
 az mysql flexible-server update \
   --resource-group myResourceGroup \
   --name my-mysql-server \

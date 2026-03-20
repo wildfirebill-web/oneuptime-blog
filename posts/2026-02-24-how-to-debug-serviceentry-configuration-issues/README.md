@@ -44,6 +44,7 @@ The ServiceEntry is just a Kubernetes resource. What matters is whether istiod p
 
 ```bash
 # Check for the cluster (Envoy term for a backend service)
+
 istioctl proxy-config cluster deploy/my-app | grep external-api
 
 # Check for routes

@@ -141,6 +141,7 @@ Start the service and then simulate a hang:
 ```bash
 sudo systemctl start myapp.service
 # Simulate hang by pausing the process
+
 sudo kill -STOP $(systemctl show --property=MainPID --value myapp.service)
 ```
 

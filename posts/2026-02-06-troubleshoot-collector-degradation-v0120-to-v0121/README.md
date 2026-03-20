@@ -16,6 +16,7 @@ The Collector changelog is the first place to look:
 
 ```bash
 # Clone the repo and check changes between versions
+
 git log --oneline v0.120.0..v0.121.0 -- processor/ receiver/ exporter/
 ```
 

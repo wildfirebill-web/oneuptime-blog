@@ -73,6 +73,7 @@ myapp-umbrella/
 
 ```yaml
 # Chart.yaml
+
 apiVersion: v2
 name: myapp-umbrella
 description: Umbrella chart for MyApp platform

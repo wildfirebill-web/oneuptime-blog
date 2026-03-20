@@ -18,6 +18,7 @@ The core Terraform resource is `aws_cloudwatch_metric_alarm`. Here's the basic s
 
 ```hcl
 # Basic CloudWatch alarm for EC2 CPU utilization
+
 resource "aws_cloudwatch_metric_alarm" "high_cpu" {
   alarm_name          = "high-cpu-web-server"
   alarm_description   = "CPU utilization exceeds 80% for 10 minutes"

@@ -27,6 +27,7 @@ This guide covers debug zero trust network policies in Calico, including the ful
 
 ```yaml
 # Layer 1: Global default deny
+
 apiVersion: projectcalico.org/v3
 kind: GlobalNetworkPolicy
 metadata:

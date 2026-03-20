@@ -18,6 +18,7 @@ A typical Helm values file might look like this:
 
 ```yaml
 # values-production.yaml - DO NOT commit this as plaintext
+
 database:
   host: postgres.internal.example.com
   port: 5432

@@ -1,8 +1,8 @@
-# How to Configure Harvester Logging
+# How to Configure Harvester Logging - Setup
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Harvester, Logging, Kubernetes, Fluentbit, Elasticsearch, Loki, SUSE Rancher
+Tags: Harvester, Logging, Kubernetes, FluentBit, Elasticsearch, Loki, SUSE Rancher
 
 Description: Learn how to enable and configure Harvester's centralized logging system to collect VM audit logs, system logs, and Kubernetes component logs for compliance and troubleshooting.
 
@@ -34,6 +34,7 @@ helm install rancher-logging \
 
 ```yaml
 # clusteroutput-elasticsearch.yaml
+
 apiVersion: logging.banzaicloud.io/v1beta1
 kind: ClusterOutput
 metadata:
@@ -164,7 +165,7 @@ spec:
 
 ## Best Practices
 
-- Enable VM audit logging for compliance — track who created, deleted, or migrated VMs.
+- Enable VM audit logging for compliance - track who created, deleted, or migrated VMs.
 - Ship logs to a system outside the Harvester cluster for disaster recovery coverage.
 - Add the `harvester_cluster` label to all log records for easy filtering when aggregating multiple Harvester clusters.
-- Set log retention based on your compliance requirements — many regulations require 90-365 days.
+- Set log retention based on your compliance requirements - many regulations require 90-365 days.

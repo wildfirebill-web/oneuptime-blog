@@ -118,4 +118,4 @@ true
 
 ## Conclusion
 
-The `anytrue` function implements OR logic across a list of boolean values in OpenTofu. Use it to detect if any item in a collection matches a condition — for security checks, feature detection, compliance validation, and conditional resource creation.
+The `anytrue` function implements OR logic across a list of boolean values in OpenTofu. Use it to detect if any item in a collection matches a condition - for security checks, feature detection, compliance validation, and conditional resource creation.

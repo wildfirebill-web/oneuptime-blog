@@ -16,6 +16,7 @@ Pure-FTPd accepts the bind address as a command-line argument.
 
 ```bash
 # Bind to a specific IPv4 address and port
+
 # Format: --bind <ip>,<port>
 pure-ftpd --bind 192.168.1.10,21 &
 

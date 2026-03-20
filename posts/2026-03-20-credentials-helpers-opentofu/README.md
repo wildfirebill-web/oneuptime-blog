@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Credentials Helpers, Authentication, Security, Infrastructure as Code, Providers
+Tags: OpenTofu, Credentials Helpers, Authentication, Security, Infrastructure as Code, Provider
 
 Description: Learn how to configure OpenTofu credentials helpers to authenticate with private registries and module sources without embedding tokens in configuration files.
 
@@ -16,6 +16,7 @@ The simplest approach is a static credentials block in `~/.terraformrc`:
 
 ```hcl
 # ~/.terraformrc
+
 credentials "registry.opentofu.org" {
   token = "ot1.XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
 }

@@ -249,7 +249,7 @@ def execute_task(task_name):
     print(f"Completed {task_name}")
 ```
 
-### Resource Pool Limiting
+Resource Pool Limiting
 
 ```sql
 -- Limit concurrent access to external API
@@ -392,6 +392,7 @@ def mutex(conn, resource_name):
         cursor.execute("SELECT pg_advisory_unlock(%s)", (lock_id,))
 
 # Usage
+
 with mutex(conn, 'critical-section'):
     # Only one process can be here at a time
     perform_critical_operation()

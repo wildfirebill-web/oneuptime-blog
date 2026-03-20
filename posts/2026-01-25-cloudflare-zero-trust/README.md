@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Cloudflare, Zero Trust, Security, ZTNA, Access Control, Tunnels, Kubernetes
+Tags: Cloudflare, Zero Trust, Security, ZTNA, Access Control, Tunnel, Kubernetes
 
 Description: Learn how to configure Cloudflare Zero Trust for secure access to Kubernetes applications and internal services. This guide covers Tunnels, Access policies, and integration with identity providers.
 
@@ -78,6 +78,7 @@ Deploy cloudflared to create secure tunnels to your infrastructure:
 
 ```bash
 # Install cloudflared
+
 # macOS
 brew install cloudflare/cloudflare/cloudflared
 

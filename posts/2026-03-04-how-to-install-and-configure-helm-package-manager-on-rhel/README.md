@@ -14,6 +14,7 @@ Helm is the package manager for Kubernetes. It uses "charts" to define, install,
 
 ```bash
 # Install using the official script
+
 curl https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3 | bash
 
 # Verify installation

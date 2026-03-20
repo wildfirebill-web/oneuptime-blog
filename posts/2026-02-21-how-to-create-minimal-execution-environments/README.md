@@ -29,6 +29,7 @@ Compare base image sizes:
 
 ```bash
 # Check sizes of available base images
+
 podman pull quay.io/ansible/ansible-runner:latest
 podman pull quay.io/ansible/ansible-runner:latest --arch amd64
 

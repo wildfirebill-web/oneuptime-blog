@@ -8,12 +8,13 @@ Description: Configure Nginx stream module to load balance UDP traffic across mu
 
 ## Introduction
 
-Nginx supports UDP load balancing through its `stream` module, introduced in version 1.9.0. This enables balancing DNS queries, game server traffic, VoIP (SIP/RTP), and any other UDP-based protocol across multiple backend servers. Unlike TCP load balancing where a connection maps to a backend session, UDP load balancing maps individual datagrams — requiring careful configuration for stateful protocols.
+Nginx supports UDP load balancing through its `stream` module, introduced in version 1.9.0. This enables balancing DNS queries, game server traffic, VoIP (SIP/RTP), and any other UDP-based protocol across multiple backend servers. Unlike TCP load balancing where a connection maps to a backend session, UDP load balancing maps individual datagrams - requiring careful configuration for stateful protocols.
 
 ## Prerequisites
 
 ```bash
 # Verify nginx has stream module compiled:
+
 nginx -V 2>&1 | grep stream
 # Should show: --with-stream
 

@@ -18,6 +18,7 @@ Every file ending in `.tf` in the same directory is part of the same Terraform m
 
 ```text
 # All of these files are treated as one configuration
+
 project/
   main.tf
   variables.tf

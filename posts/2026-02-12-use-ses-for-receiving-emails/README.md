@@ -31,6 +31,7 @@ First, you need to tell the world that SES handles email for your domain. This m
 
 ```text
 # Add this MX record to your domain's DNS
+
 # The hostname depends on your AWS region
 
 # For us-east-1:

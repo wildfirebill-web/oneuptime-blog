@@ -50,6 +50,7 @@ flowchart TD
 
 ```yaml
 # pdb-minavailable.yaml
+
 apiVersion: policy/v1
 kind: PodDisruptionBudget
 metadata:

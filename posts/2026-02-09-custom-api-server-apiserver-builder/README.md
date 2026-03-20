@@ -18,6 +18,7 @@ Install the tool and its dependencies.
 
 ```bash
 # Install apiserver-boot
+
 go install sigs.k8s.io/apiserver-builder-alpha/cmd/apiserver-boot@latest
 
 # Verify installation

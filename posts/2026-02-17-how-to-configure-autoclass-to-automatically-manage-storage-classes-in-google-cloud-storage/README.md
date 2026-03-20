@@ -41,6 +41,7 @@ The key advantage: you never pay for Standard storage on objects that are not be
 
 ```bash
 # Create a new bucket with Autoclass enabled
+
 gcloud storage buckets create gs://my-autoclass-bucket \
   --location=us-central1 \
   --enable-autoclass

@@ -20,6 +20,7 @@ It connects to one or more Talos nodes via the Talos API and streams system metr
 
 ```bash
 # Open the dashboard for a single node
+
 talosctl dashboard --nodes <node-ip>
 ```
 
@@ -192,7 +193,7 @@ talosctl dashboard --nodes <remote-node-ip> --talosconfig /path/to/talosconfig
 
 Make sure your talosconfig file contains the correct endpoints and credentials for the target cluster.
 
-## Resource Overhead
+Resource Overhead
 
 The dashboard itself adds minimal overhead to the monitored nodes. It uses the existing Talos API streaming endpoints, so it is essentially just reading metrics that are already being collected. You do not need to worry about the dashboard impacting node performance.
 

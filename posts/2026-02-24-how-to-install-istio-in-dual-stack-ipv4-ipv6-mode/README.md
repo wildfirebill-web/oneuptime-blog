@@ -54,6 +54,7 @@ The key setting for dual-stack in Istio is the `ISTIO_DUAL_STACK` environment va
 
 ```yaml
 # istio-dual-stack.yaml
+
 apiVersion: install.istio.io/v1alpha1
 kind: IstioOperator
 spec:

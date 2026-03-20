@@ -16,6 +16,7 @@ The Jetstack Helm charts are hosted at `https://charts.jetstack.io`. Create the 
 
 ```yaml
 # HelmRepository for Jetstack (cert-manager) Helm charts
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

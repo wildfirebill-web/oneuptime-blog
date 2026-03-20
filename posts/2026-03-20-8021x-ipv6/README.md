@@ -8,7 +8,7 @@ Description: Configure 802.1X port-based authentication in IPv6 environments inc
 
 ## 802.1X and IPv6 Relationship
 
-802.1X operates at Layer 2 — authentication happens before any IP address is assigned. IPv6 becomes relevant in two ways:
+802.1X operates at Layer 2 - authentication happens before any IP address is assigned. IPv6 becomes relevant in two ways:
 1. The RADIUS server is reachable via IPv6 from the authenticator (switch/AP)
 2. After authentication, the user receives IPv6 addresses (via SLAAC, DHCPv6, or RADIUS)
 
@@ -28,6 +28,7 @@ sequenceDiagram
 
 ```bash
 # FreeRADIUS listen on IPv6 for authenticators
+
 # /etc/freeradius/3.0/sites-enabled/default
 
 listen {
@@ -36,7 +37,7 @@ listen {
     port = 1812
 }
 
-# EAP configuration (unchanged — 802.1X EAP is Layer 2)
+# EAP configuration (unchanged - 802.1X EAP is Layer 2)
 # /etc/freeradius/3.0/mods-enabled/eap
 eap {
     default_eap_type = peap
@@ -49,7 +50,7 @@ eap {
 }
 ```
 
-```
+```text
 # /etc/freeradius/3.0/users
 # 802.1X user with VLAN assignment and IPv6 attributes
 
@@ -63,8 +64,8 @@ wired_user  Cleartext-Password := "secret"
 
 ## Cisco Switch: 802.1X with IPv6 RADIUS
 
-```
-! Cisco Catalyst — 802.1X with IPv6 RADIUS server
+```text
+! Cisco Catalyst - 802.1X with IPv6 RADIUS server
 
 ! Configure RADIUS server via IPv6
 radius server IPV6_RADIUS
@@ -101,8 +102,8 @@ show radius statistics
 
 ## Aruba/HP Switch: 802.1X with IPv6 RADIUS
 
-```
-! Aruba CX — 802.1X with IPv6 RADIUS
+```text
+! Aruba CX - 802.1X with IPv6 RADIUS
 
 radius-server host 2001:db8::radius key plain "radiuskey"
 radius-server host 2001:db8::radius auth-port 1812
@@ -153,7 +154,7 @@ dhclient -6 eth0
 
 ## Dynamic IPv6 VLAN Assignment
 
-```
+```text
 # FreeRADIUS: assign different VLAN + IPv6 pool per user group
 
 # /etc/freeradius/3.0/users
@@ -216,4 +217,4 @@ EOF
 
 ## Conclusion
 
-802.1X authentication itself is Layer 2 and unaffected by IPv6, but the RADIUS infrastructure supporting it can be fully IPv6-native. Configure RADIUS servers via IPv6 addresses on Cisco (`address ipv6`), Aruba, and other authenticators. After successful authentication, IPv6 address assignment occurs via SLAAC on the authorized VLAN or via RADIUS attributes (`Framed-IPv6-Prefix`, `Framed-IPv6-Pool`). Dynamic VLAN assignment works the same as IPv4 — `Tunnel-Type = VLAN` with `Tunnel-Private-Group-ID`. Monitor sessions with `show authentication sessions` and query `radacct` for IPv6 NAS address tracking.
+802.1X authentication itself is Layer 2 and unaffected by IPv6, but the RADIUS infrastructure supporting it can be fully IPv6-native. Configure RADIUS servers via IPv6 addresses on Cisco (`address ipv6`), Aruba, and other authenticators. After successful authentication, IPv6 address assignment occurs via SLAAC on the authorized VLAN or via RADIUS attributes (`Framed-IPv6-Prefix`, `Framed-IPv6-Pool`). Dynamic VLAN assignment works the same as IPv4 - `Tunnel-Type = VLAN` with `Tunnel-Private-Group-ID`. Monitor sessions with `show authentication sessions` and query `radacct` for IPv6 NAS address tracking.

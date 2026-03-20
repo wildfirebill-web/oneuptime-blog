@@ -41,6 +41,7 @@ flowchart LR
 
 ```bash
 # macOS
+
 brew install conftest
 
 # Linux
@@ -295,7 +296,7 @@ warn[msg] {
 }
 ```
 
-### Resource Limits Ranges
+Resource Limits Ranges
 
 ```rego
 # policy/resources.rego

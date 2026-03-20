@@ -18,6 +18,7 @@ When you generate a Talos configuration using `talosctl gen config`, the resulti
 
 ```bash
 # Generate a default config to see all the defaults
+
 talosctl gen config my-cluster https://192.168.1.100:6443 --output-dir ./defaults
 ```
 

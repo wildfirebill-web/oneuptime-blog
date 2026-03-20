@@ -27,6 +27,7 @@ Flux detects drift on every reconciliation interval. Tune the interval and corre
 
 ```yaml
 # clusters/production/apps/my-app.yaml
+
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
 metadata:

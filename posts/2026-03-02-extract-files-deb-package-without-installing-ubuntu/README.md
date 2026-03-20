@@ -26,6 +26,7 @@ Knowing this structure informs which method to use depending on what you need.
 
 ```bash
 # Extract all files from a .deb to a directory
+
 dpkg-deb --extract package.deb /tmp/package-contents/
 
 # The directory will contain the full filesystem structure

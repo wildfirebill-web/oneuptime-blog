@@ -18,6 +18,7 @@ AutoML Forecasting trains time series models that predict future values based on
 
 ```bash
 # Enable the Vertex AI API
+
 gcloud services enable aiplatform.googleapis.com --project=your-project-id
 
 # Install the SDK

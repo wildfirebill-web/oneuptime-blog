@@ -26,6 +26,7 @@ The `cdktf synth` command runs your code and generates Terraform JSON:
 
 ```bash
 # Synthesize all stacks
+
 cdktf synth
 
 # The output goes to cdktf.out/

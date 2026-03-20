@@ -31,6 +31,7 @@ In practice, you'll create at least two custom route tables: one for public subn
 
 ```bash
 # Create a route table for public subnets
+
 PUBLIC_RT=$(aws ec2 create-route-table \
   --vpc-id $VPC_ID \
   --query 'RouteTable.RouteTableId' \

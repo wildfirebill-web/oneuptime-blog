@@ -18,6 +18,7 @@ You can see this with the `id` command:
 
 ```bash
 # Check group membership
+
 id alice
 # Output: uid=1001(alice) gid=1001(alice) groups=1001(alice),27(sudo),999(docker)
 ```

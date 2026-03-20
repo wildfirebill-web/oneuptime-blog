@@ -32,6 +32,7 @@ Check kube-proxy configuration and verify IPVS mode:
 
 ```bash
 # Check kube-proxy ConfigMap for mode setting
+
 kubectl get configmap kube-proxy -n kube-system -o yaml | grep "mode"
 
 # Verify kube-proxy pods are running with IPVS

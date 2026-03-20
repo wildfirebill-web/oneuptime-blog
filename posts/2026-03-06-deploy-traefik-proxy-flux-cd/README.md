@@ -47,6 +47,7 @@ clusters/
 
 ```yaml
 # clusters/production/infrastructure/sources/traefik.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

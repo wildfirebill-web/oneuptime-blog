@@ -32,6 +32,7 @@ Automating cilium-agent operations reduces operational overhead and ensures cons
 
 ```bash
 # Create an automation script for common operations
+
 cat > /tmp/cilium-automation.sh << 'SCRIPT'
 #!/bin/bash
 # Cilium automation script

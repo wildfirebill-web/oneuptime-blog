@@ -189,6 +189,7 @@ func createServerWithReflection() *grpc.Server {
 
 ```bash
 # List all available services
+
 grpcurl -plaintext localhost:50051 list
 
 # Output:

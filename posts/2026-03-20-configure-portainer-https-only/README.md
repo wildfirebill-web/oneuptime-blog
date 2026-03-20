@@ -24,6 +24,7 @@ The simplest approach: only publish port 9443 in your Docker run command:
 
 ```bash
 # Run Portainer without exposing port 9000
+
 # This leaves HTTP inaccessible from outside the container
 docker run -d \
   -p 8000:8000 \

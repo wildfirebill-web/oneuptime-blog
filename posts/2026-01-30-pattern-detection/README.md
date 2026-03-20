@@ -440,6 +440,7 @@ Pattern detection works best when your telemetry is well-structured. Use OpenTel
 
 ```yaml
 # OpenTelemetry Collector config with pattern-aware processing
+
 receivers:
   otlp:
     protocols:

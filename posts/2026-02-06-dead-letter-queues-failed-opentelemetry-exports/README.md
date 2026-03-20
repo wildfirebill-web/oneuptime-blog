@@ -45,6 +45,7 @@ Since the collector does not have a native "on-failure-route-to" mechanism, we u
 
 ```yaml
 # collector-config-with-file-dlq.yaml
+
 receivers:
   otlp:
     protocols:

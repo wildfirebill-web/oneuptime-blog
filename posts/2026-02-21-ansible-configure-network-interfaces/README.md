@@ -31,6 +31,7 @@ Here is a playbook that configures a static IP address on an Ethernet interface:
 
 ```yaml
 # configure_static_ip.yml - Sets a static IP on eth0 using NetworkManager
+
 ---
 - name: Configure network interfaces
   hosts: webservers

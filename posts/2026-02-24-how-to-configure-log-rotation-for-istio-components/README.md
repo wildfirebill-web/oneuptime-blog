@@ -33,6 +33,7 @@ Kubernetes itself handles log rotation at the kubelet level. The kubelet has fla
 
 ```yaml
 # kubelet configuration
+
 apiVersion: kubelet.config.k8s.io/v1beta1
 kind: KubeletConfiguration
 containerLogMaxSize: "50Mi"

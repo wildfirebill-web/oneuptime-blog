@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: OpenTofu, Terraform, Migration, Side-by-Side, Infrastructure as Code
 
-Description: Learn how to run Terraform and OpenTofu side by side during migration — managing separate workloads with each tool, avoiding state conflicts, and incrementally moving configurations to OpenTofu.
+Description: Learn how to run Terraform and OpenTofu side by side during migration - managing separate workloads with each tool, avoiding state conflicts, and incrementally moving configurations to OpenTofu.
 
 ## Introduction
 
@@ -14,6 +14,7 @@ During a migration, you may need both Terraform and OpenTofu available on the sa
 
 ```bash
 # Install OpenTofu
+
 brew install opentofu   # macOS
 # or
 curl -fsSL https://get.opentofu.org/install-opentofu.sh | sh
@@ -22,7 +23,7 @@ curl -fsSL https://get.opentofu.org/install-opentofu.sh | sh
 terraform --version   # HashiCorp Terraform v1.9.0
 tofu --version        # OpenTofu v1.9.0
 
-# No conflict — different binary names
+# No conflict - different binary names
 which terraform   # /usr/local/bin/terraform
 which tofu        # /usr/local/bin/tofu
 ```
@@ -49,7 +50,7 @@ echo "opentofu 1.9.0" > .tool-versions
 
 The cleanest approach is clear ownership by directory:
 
-```
+```hcl
 infrastructure/
   legacy/         ← Managed by Terraform (migrating soon)
     main.tf
@@ -67,7 +68,7 @@ infrastructure/
 Use separate state keys for workloads still on Terraform vs migrated to OpenTofu:
 
 ```hcl
-# legacy/backend.tf — managed by terraform
+# legacy/backend.tf - managed by terraform
 terraform {
   backend "s3" {
     bucket = "my-company-tofu-state"
@@ -78,7 +79,7 @@ terraform {
 ```
 
 ```hcl
-# networking/backend.tf — managed by tofu
+# networking/backend.tf - managed by tofu
 terraform {
   backend "s3" {
     bucket = "my-company-tofu-state"
@@ -159,4 +160,4 @@ Track migration status in a simple file:
 
 ## Conclusion
 
-Running Terraform and OpenTofu side by side is safe because they share the same binary interface — just different binary names. Use separate directories with `.tool-versions` files to declare which tool manages which workload. Use different state keys to avoid accidentally running the wrong tool against a state file. Migrate component by component, tracking progress in a status document, and decommission Terraform once all workloads are migrated.
+Running Terraform and OpenTofu side by side is safe because they share the same binary interface - just different binary names. Use separate directories with `.tool-versions` files to declare which tool manages which workload. Use different state keys to avoid accidentally running the wrong tool against a state file. Migrate component by component, tracking progress in a status document, and decommission Terraform once all workloads are migrated.

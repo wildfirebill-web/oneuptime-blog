@@ -11,7 +11,7 @@ Istio's sidecar proxy (Envoy) intercepts all inbound and outbound traffic throug
 ## Enabling IPv6 in Istio
 
 ```yaml
-# istio-operator.yaml — enable dual-stack IPv6 support
+# istio-operator.yaml - enable dual-stack IPv6 support
 
 apiVersion: install.istio.io/v1alpha1
 kind: IstioOperator
@@ -36,6 +36,7 @@ spec:
 
 ```bash
 # Apply via istioctl
+
 istioctl install -f istio-operator.yaml
 
 # Or upgrade existing installation
@@ -159,7 +160,7 @@ istioctl proxy-config endpoints <pod-name> | grep -E "::"
 ## PeerAuthentication with Dual-Stack
 
 ```yaml
-# mTLS policy — works for both IPv4 and IPv6 traffic
+# mTLS policy - works for both IPv4 and IPv6 traffic
 apiVersion: security.istio.io/v1beta1
 kind: PeerAuthentication
 metadata:

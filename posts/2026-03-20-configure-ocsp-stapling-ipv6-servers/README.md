@@ -24,6 +24,7 @@ For IPv6 servers, this also means the server must have IPv6 access to reach the 
 
 ```nginx
 # /etc/nginx/nginx.conf (http block)
+
 http {
     # Enable OCSP stapling globally
     ssl_stapling on;

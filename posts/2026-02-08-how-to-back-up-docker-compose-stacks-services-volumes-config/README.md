@@ -31,6 +31,7 @@ List all resources associated with a Compose project:
 
 ```bash
 # See running services
+
 docker compose ps
 
 # See volumes created by this project

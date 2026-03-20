@@ -31,6 +31,7 @@ Exact solutions would require storing all data, consuming massive memory. Probab
 
 ```bash
 # Docker
+
 docker run -d --name redis-stack -p 6379:6379 redis/redis-stack:latest
 
 # Verify

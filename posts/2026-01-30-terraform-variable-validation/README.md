@@ -237,6 +237,7 @@ The `can()` function is a key tool for validation. It evaluates an expression an
 
 ```hcl
 # Without can() - this would crash Terraform on invalid input
+
 variable "bad_example" {
   type = string
   validation {

@@ -20,6 +20,7 @@ Learn how to import existing cloud resources into OpenTofu state to resolve reso
 
 ```bash
 # Verify OpenTofu installation
+
 tofu version
 
 # Set up required environment variables

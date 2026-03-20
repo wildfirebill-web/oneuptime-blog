@@ -27,6 +27,7 @@ You can get a rough measure of complexity:
 
 ```bash
 # Count resources
+
 terraform state list | wc -l
 
 # Count data sources

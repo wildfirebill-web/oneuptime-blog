@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Import Block, Infrastructure as Code, Migration, Terraform 1.5
+Tags: Terraform, Import Blocks, Infrastructure as Code, Migration, Terraform 1.5
 
 Description: Learn how to use the import block introduced in Terraform 1.5 for declarative resource imports, batch imports, and automated configuration generation from existing infrastructure.
 
@@ -20,6 +20,7 @@ The import block tells Terraform to adopt an existing resource into its state du
 
 ```hcl
 # main.tf
+
 terraform {
   required_version = ">= 1.5.0"
   required_providers {

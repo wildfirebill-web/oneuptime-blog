@@ -30,6 +30,7 @@ FUSE is available by default on RHEL, but verify:
 
 ```bash
 # Install FUSE packages
+
 dnf install -y fuse fuse-libs fuse3 fuse3-libs
 ```
 

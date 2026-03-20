@@ -44,6 +44,7 @@ On macOS and Linux, use the installation script.
 
 ```bash
 # Install the Azure Artifacts Credential Provider on macOS or Linux
+
 # This downloads and installs the plugin to the correct location
 sh -c "$(curl -fsSL https://aka.ms/install-artifacts-credprovider.sh)"
 

@@ -20,6 +20,7 @@ Create `filter_plugins/data_transforms.py`:
 
 ```python
 # data_transforms.py - Custom data transformation filters
+
 from ansible.errors import AnsibleFilterError
 
 

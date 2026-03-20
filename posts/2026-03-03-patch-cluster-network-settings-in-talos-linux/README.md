@@ -38,6 +38,7 @@ Pod subnets define the CIDR blocks from which pod IPs are allocated. The default
 
 ```yaml
 # pod-subnet-patch.yaml
+
 cluster:
   network:
     podSubnets:

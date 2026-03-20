@@ -16,6 +16,7 @@ Terratest uses the same authentication as the Google Cloud SDK. Set it up with o
 
 ```bash
 # Option 1: Application default credentials (for local development)
+
 gcloud auth application-default login
 
 # Option 2: Service account key file

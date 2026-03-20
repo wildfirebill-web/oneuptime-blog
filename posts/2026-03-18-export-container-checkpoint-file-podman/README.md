@@ -30,6 +30,7 @@ Export a checkpoint with the `--export` flag:
 
 ```bash
 # Start a container
+
 sudo podman run -d --name web-app docker.io/library/nginx:alpine
 
 # Wait for nginx to fully start

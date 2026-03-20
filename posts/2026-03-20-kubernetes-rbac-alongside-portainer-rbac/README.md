@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Kubernetes, RBAC, Security, Access Control, Multi-tenant
+Tags: Portainer, Kubernetes, RBAC, Security, Access Control, Multi-Tenant
 
 Description: Configure Kubernetes Role-Based Access Control in conjunction with Portainer's access control system to create a layered, least-privilege security model for multi-team Kubernetes clusters.
 
@@ -28,6 +28,7 @@ In Portainer or via manifest:
 
 ```yaml
 # namespaces.yaml
+
 apiVersion: v1
 kind: Namespace
 metadata:
@@ -60,7 +61,7 @@ rules:
   - apiGroups: [""]
     resources: ["services", "configmaps"]
     verbs: ["get", "list", "create", "update"]
-  # Secrets — read only, no create/update from developers
+  # Secrets - read only, no create/update from developers
   - apiGroups: [""]
     resources: ["secrets"]
     verbs: ["get", "list"]
@@ -119,4 +120,4 @@ kubectl auth can-i create deployments --as=system:serviceaccount:team-backend:po
 
 ## Summary
 
-Running Kubernetes RBAC alongside Portainer RBAC creates a two-layer defense that prevents unauthorized actions even if Portainer's own access controls are misconfigured. Namespace-scoped service accounts, granular role definitions, and Portainer environment isolation combine to give each team exactly the access they need — nothing more.
+Running Kubernetes RBAC alongside Portainer RBAC creates a two-layer defense that prevents unauthorized actions even if Portainer's own access controls are misconfigured. Namespace-scoped service accounts, granular role definitions, and Portainer environment isolation combine to give each team exactly the access they need - nothing more.

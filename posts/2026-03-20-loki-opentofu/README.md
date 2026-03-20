@@ -27,6 +27,7 @@ graph LR
 
 ```hcl
 # loki_storage.tf
+
 resource "aws_s3_bucket" "loki_chunks" {
   bucket = "${var.environment}-loki-chunks"
 }
@@ -168,8 +169,8 @@ resource "helm_release" "promtail" {
 
 ## Best Practices
 
-- Use S3 as the storage backend for Loki — it's dramatically cheaper than persistent volumes for log data.
-- Set log retention periods per environment — production logs may need 30 days for compliance; dev needs 7 days.
+- Use S3 as the storage backend for Loki - it's dramatically cheaper than persistent volumes for log data.
+- Set log retention periods per environment - production logs may need 30 days for compliance; dev needs 7 days.
 - Use Workload Identity (IRSA on EKS) for Loki's S3 access rather than long-lived credentials.
-- Configure Loki as a data source in Grafana — then you can correlate metrics and logs in the same dashboard using LogQL.
-- Label logs with `cluster` and `environment` extra labels via Promtail — it makes filtering across multi-cluster setups easier.
+- Configure Loki as a data source in Grafana - then you can correlate metrics and logs in the same dashboard using LogQL.
+- Label logs with `cluster` and `environment` extra labels via Promtail - it makes filtering across multi-cluster setups easier.

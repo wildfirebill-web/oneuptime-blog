@@ -39,6 +39,7 @@ Azure Firewall policies are the recommended way to manage rules. They support in
 
 ```bash
 # Create a resource group
+
 az group create \
   --name rg-firewall \
   --location eastus

@@ -299,6 +299,7 @@ Add custom metrics to your application health checks:
 
 ```python
 # app_health.py
+
 from prometheus_client import Counter, Histogram, Gauge
 import time
 import functools

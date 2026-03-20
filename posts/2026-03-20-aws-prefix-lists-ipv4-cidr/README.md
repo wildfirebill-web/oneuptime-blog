@@ -14,6 +14,7 @@ AWS Managed Prefix Lists are named, versioned collections of CIDR blocks. Instea
 
 ```bash
 # Create a prefix list for office locations
+
 aws ec2 create-managed-prefix-list \
   --prefix-list-name "office-ips" \
   --max-entries 10 \
@@ -23,7 +24,7 @@ aws ec2 create-managed-prefix-list \
     Cidr=198.51.100.0/25,Description="London Office"
 ```
 
-Note the returned `PrefixListId` (e.g., `pl-0123456789abcdef0`) — you'll use it in security group rules.
+Note the returned `PrefixListId` (e.g., `pl-0123456789abcdef0`) - you'll use it in security group rules.
 
 ## Viewing and Managing Prefix Lists
 

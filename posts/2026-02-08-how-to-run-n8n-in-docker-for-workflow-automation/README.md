@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Docker, N8n, Workflow Automation, Docker Compose, Self-Hosted, Integration, Low-Code
+Tags: Docker, n8n, Workflow Automation, Docker Compose, Self-Hosted, Integration, Low-Code
 
 Description: Deploy n8n in Docker to build automated workflows that connect your apps, APIs, and services with a visual editor.
 
@@ -31,6 +31,7 @@ You need Docker and Docker Compose installed. n8n recommends at least 1 GB of RA
 
 ```bash
 # Verify Docker installation
+
 docker --version
 docker compose version
 ```

@@ -30,6 +30,7 @@ First, ensure Flagger is installed in your cluster. Create a HelmRelease for Fla
 
 ```yaml
 # flagger-helmrelease.yaml
+
 apiVersion: helm.toolkit.fluxcd.io/v2
 kind: HelmRelease
 metadata:

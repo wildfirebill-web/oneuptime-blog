@@ -33,6 +33,7 @@ Create topics with appropriate partitioning for throughput.
 
 ```bash
 # create-topics.sh
+
 # Create Kafka topics with partition counts tuned for parallelism
 
 # Raw events topic - 12 partitions for high-throughput ingestion

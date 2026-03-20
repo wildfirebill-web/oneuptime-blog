@@ -83,6 +83,7 @@ Here is a comparison using 1 million JSON log messages (average 500 bytes each):
 
 ```bash
 # Test with kafka-producer-perf-test
+
 for compression in none gzip snappy lz4 zstd; do
     echo "Testing $compression compression..."
     kafka-producer-perf-test.sh \

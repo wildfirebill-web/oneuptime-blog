@@ -27,6 +27,7 @@ Flux CD decrypts SOPS-encrypted files at reconciliation time using the `kustomiz
 
 ```yaml
 # flux-system/gotk-sync.yaml
+
 # This Kustomization tells Flux to decrypt SOPS secrets
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization

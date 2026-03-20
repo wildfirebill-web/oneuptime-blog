@@ -1,4 +1,4 @@
-# How to Manage Industrial HART Device Data with Portainer
+# How to Manage Industrial HART Device Data with Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -21,7 +21,7 @@ How to Manage Industrial HART Device Data with Portainer covers a specialized de
 
 The deployment follows a hub-and-spoke model where central Portainer manages edge nodes:
 
-```
+```text
 Central Portainer (Cloud/DC)
         |
    Edge Tunnel (Port 8000)
@@ -38,6 +38,7 @@ Install Docker on each edge device:
 ```bash
 #!/bin/bash
 # Bootstrap script for edge devices
+
 curl -fsSL https://get.docker.com | sh
 systemctl enable docker
 systemctl start docker

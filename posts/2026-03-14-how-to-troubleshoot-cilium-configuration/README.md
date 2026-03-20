@@ -36,6 +36,7 @@ graph LR
 
 ```bash
 # View active ConfigMap
+
 kubectl get configmap cilium-config -n kube-system -o yaml
 
 # Compare with Helm values

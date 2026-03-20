@@ -52,6 +52,7 @@ SECONDARY_HOST="secondary.example.com"
 echo "=== Pre-Failover Verification ==="
 
 # Check if primary is actually down
+
 echo "[1/5] Checking primary health..."
 PRIMARY_STATUS=$(curl -s -o /dev/null -w "%{http_code}" \
   --max-time 10 "https://${PRIMARY_HOST}/healthz" || echo "000")
@@ -651,7 +652,7 @@ Every failover should be documented. Use this template:
 
 ### Automated Documentation
 
-```bash
+````bash
 #!/bin/bash
 # generate-failover-report.sh - Create failover documentation
 
@@ -670,19 +671,19 @@ cat > "$REPORT_FILE" << EOF
 - **Hostname**: $(hostname)
 
 ## Pre-Failover State
-\`\`\`
+```
 $(cat /tmp/pre-failover-state.json 2>/dev/null || echo "No pre-state captured")
-\`\`\`
+```
 
 ## Actions Log
-\`\`\`
+```
 $(cat /tmp/failover-actions.log 2>/dev/null || echo "No actions logged")
-\`\`\`
+```
 
 ## Post-Failover Verification
-\`\`\`
+```
 $(./verify-failover.sh 2>&1)
-\`\`\`
+```
 
 ## Follow-up Actions
 - [ ] Investigate root cause
@@ -703,7 +704,7 @@ curl -X POST "$SLACK_WEBHOOK" \
       "text": "'"$(cat $REPORT_FILE)"'"
     }]
   }'
-```
+````
 
 ## Failover Runbook Template
 

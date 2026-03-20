@@ -36,6 +36,7 @@ A Modelfile is the configuration that defines your custom model. It specifies th
 
 ```dockerfile
 # Modelfile for a code review assistant
+
 # Save this as Modelfile.codereview
 
 # Start from a capable base model

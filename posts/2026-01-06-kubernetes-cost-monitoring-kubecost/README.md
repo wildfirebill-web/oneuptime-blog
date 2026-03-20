@@ -26,6 +26,7 @@ The basic installation provides cost visibility with 15 days of metrics retentio
 
 ```bash
 # Add Kubecost Helm repository
+
 helm repo add kubecost https://kubecost.github.io/cost-analyzer/
 helm repo update
 
@@ -466,7 +467,7 @@ Access the primary cluster dashboard to see costs across all clusters.
 
 ## Cost Governance Policies
 
-### Resource Quotas
+Resource Quotas
 
 Limit resource consumption per namespace to control costs.
 

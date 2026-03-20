@@ -16,6 +16,7 @@ The `join` function concatenates elements of a list into a single string, insert
 
 ```hcl
 # Basic syntax
+
 join(separator, list)
 ```
 

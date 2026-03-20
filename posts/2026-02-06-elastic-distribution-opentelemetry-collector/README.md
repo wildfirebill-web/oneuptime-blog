@@ -40,6 +40,7 @@ The fastest way to get started is with Docker:
 
 ```bash
 # Pull and run the Elastic distribution of the OTel Collector
+
 docker run -d \
   --name edot-collector \
   -p 4317:4317 \

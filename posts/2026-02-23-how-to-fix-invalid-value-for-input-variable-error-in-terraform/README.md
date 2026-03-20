@@ -39,6 +39,7 @@ The most common case. The variable expects one type, but you gave it another:
 
 ```hcl
 # variables.tf
+
 variable "port" {
   type = number
 }

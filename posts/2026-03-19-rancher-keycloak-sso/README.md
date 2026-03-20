@@ -48,6 +48,7 @@ Client ID: https://rancher.example.com/v1-saml/keycloak/saml/metadata
 ```plaintext
 Name: Rancher
 Description: Rancher Kubernetes Management Platform
+
 Enabled: ON
 Always Display in Console: ON
 
@@ -163,6 +164,7 @@ Get the Keycloak SAML metadata:
 
 ```bash
 # Download realm SAML metadata
+
 curl -s "https://keycloak.example.com/realms/rancher-org/protocol/saml/descriptor" \
   > keycloak-idp-metadata.xml
 ```

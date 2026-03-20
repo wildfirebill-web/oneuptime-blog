@@ -42,6 +42,7 @@ Before configuring External-DNS for IPv6, ensure your cluster supports IPv6.
 
 ```bash
 # Check if nodes have IPv6 addresses
+
 kubectl get nodes -o wide
 
 # Check node IPv6 addresses directly

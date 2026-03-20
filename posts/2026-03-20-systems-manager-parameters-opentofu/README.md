@@ -1,4 +1,4 @@
-# How to Create AWS Systems Manager Parameters with OpenTofu
+# How to Create AWS Systems Manager Parameters with OpenTofu - Systems Manager
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -27,6 +27,7 @@ provider "aws" {
 }
 
 # Simple string parameter
+
 resource "aws_ssm_parameter" "app_env" {
   name        = "/myapp/production/environment"
   type        = "String"

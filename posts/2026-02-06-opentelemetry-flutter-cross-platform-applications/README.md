@@ -20,6 +20,7 @@ Flutter's package ecosystem includes OpenTelemetry support through the opentelem
 
 ```yaml
 # pubspec.yaml
+
 dependencies:
   flutter:
     sdk: flutter

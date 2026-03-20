@@ -8,9 +8,9 @@ Description: A detailed explanation of the Happy Eyeballs v2 algorithm (RFC 8305
 
 ## What Is Happy Eyeballs?
 
-Happy Eyeballs (named because it keeps the "eyes" — user experience — happy) is a connection establishment algorithm for dual-stack clients. Defined in RFC 8305, it allows clients to try both IPv4 and IPv6 connections simultaneously and use whichever succeeds first, with a slight preference for IPv6.
+Happy Eyeballs (named because it keeps the "eyes" - user experience - happy) is a connection establishment algorithm for dual-stack clients. Defined in RFC 8305, it allows clients to try both IPv4 and IPv6 connections simultaneously and use whichever succeeds first, with a slight preference for IPv6.
 
-Without Happy Eyeballs, a broken IPv6 path could cause 20–75 second connection timeouts before falling back to IPv4 — an unacceptable user experience.
+Without Happy Eyeballs, a broken IPv6 path could cause 20–75 second connection timeouts before falling back to IPv4 - an unacceptable user experience.
 
 ## The Problem It Solves
 
@@ -58,6 +58,7 @@ sequenceDiagram
 
 ```bash
 # curl implements Happy Eyeballs by default
+
 # Watch which address is used for connection
 curl -v https://example.com 2>&1 | grep "Trying\|Connected"
 

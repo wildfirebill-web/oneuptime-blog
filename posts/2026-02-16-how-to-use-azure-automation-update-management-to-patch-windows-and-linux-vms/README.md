@@ -36,6 +36,7 @@ You need a Log Analytics workspace and an Azure Automation account linked togeth
 
 ```bash
 # Create a Log Analytics workspace
+
 az monitor log-analytics workspace create \
   --resource-group rg-automation \
   --workspace-name la-update-management \

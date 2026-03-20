@@ -112,6 +112,7 @@ Define the tenant list in your `dbt_project.yml`:
 
 ```yaml
 # dbt_project.yml
+
 vars:
   tenant_list:
     - { id: 'acme-corp', name: 'Acme Corporation' }

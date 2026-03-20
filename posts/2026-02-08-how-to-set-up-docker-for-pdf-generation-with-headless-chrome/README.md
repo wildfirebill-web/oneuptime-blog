@@ -22,6 +22,7 @@ Here is a Docker image optimized for PDF generation:
 
 ```dockerfile
 # Dockerfile - PDF generation service with headless Chrome
+
 FROM node:20-slim
 
 # Install Chromium and comprehensive font packages

@@ -40,6 +40,7 @@ The fastest way to adjust logging is using `istioctl proxy-config log`. This cha
 
 ```bash
 # Set all loggers to debug
+
 istioctl proxy-config log deploy/my-app -n production --level debug
 
 # Set specific loggers

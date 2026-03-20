@@ -24,6 +24,7 @@ First, create a microservices application that we can run chaos experiments agai
 
 ```yaml
 # docker-compose.yml - Target application for chaos experiments
+
 version: "3.8"
 
 services:

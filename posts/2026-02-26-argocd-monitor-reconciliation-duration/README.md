@@ -39,6 +39,7 @@ Each phase contributes to the total reconciliation duration. Slow Git fetches, c
 
 ```promql
 # Reconciliation rate
+
 rate(argocd_app_reconcile_count[5m])
 
 # Reconciliation rate by application

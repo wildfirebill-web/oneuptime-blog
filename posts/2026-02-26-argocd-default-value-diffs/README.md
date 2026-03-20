@@ -156,6 +156,7 @@ You can generate a fully-defaulted manifest from an existing resource:
 
 ```bash
 # Get the live resource with all defaults
+
 kubectl get deployment my-app -o yaml > full-manifest.yaml
 
 # Clean up status, managedFields, and other runtime fields

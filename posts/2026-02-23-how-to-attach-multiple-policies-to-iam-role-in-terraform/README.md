@@ -25,6 +25,7 @@ The most straightforward approach is to create a separate `aws_iam_role_policy_a
 
 ```hcl
 # Create the IAM role
+
 resource "aws_iam_role" "lambda_role" {
   name = "lambda-execution-role"
 

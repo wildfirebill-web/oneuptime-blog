@@ -92,6 +92,7 @@ Send a batch of requests and count how many hit each backend:
 
 ```bash
 # Each backend returns its hostname or IP in the response
+
 for i in $(seq 1 100); do
     curl -s http://example.com/backend-id
 done | sort | uniq -c | sort -rn
@@ -125,4 +126,4 @@ Open-source Nginx requires a reload (`nginx -s reload`) to apply weight changes.
 
 ## Conclusion
 
-Weighted load balancing in Nginx is a simple directive—`weight=N`—that gives you precise control over traffic distribution. Use it to match load to server capacity, gradually roll out new versions with canary deployments, or shift traffic away from servers undergoing maintenance.
+Weighted load balancing in Nginx is a simple directive-`weight=N`-that gives you precise control over traffic distribution. Use it to match load to server capacity, gradually roll out new versions with canary deployments, or shift traffic away from servers undergoing maintenance.

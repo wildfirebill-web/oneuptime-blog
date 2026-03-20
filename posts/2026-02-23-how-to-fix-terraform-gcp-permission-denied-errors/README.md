@@ -52,6 +52,7 @@ The most common issue is that the Terraform service account does not have the ri
 
 ```bash
 # Check current roles for the service account
+
 gcloud projects get-iam-policy my-project \
   --flatten="bindings[].members" \
   --filter="bindings.members:serviceAccount:terraform@my-project.iam.gserviceaccount.com" \

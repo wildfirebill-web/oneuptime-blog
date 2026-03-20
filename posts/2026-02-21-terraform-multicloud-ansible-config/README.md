@@ -27,6 +27,7 @@ graph TD
 
 ```hcl
 # terraform/aws/main.tf
+
 provider "aws" {
   region = "us-east-1"
 }

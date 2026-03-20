@@ -226,6 +226,7 @@ sequenceDiagram
 
 ```nginx
 # nginx.conf
+
 # Configure Nginx for long-lived WebSocket connections
 
 upstream websocket_backend {

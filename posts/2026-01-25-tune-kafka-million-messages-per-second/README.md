@@ -149,6 +149,7 @@ public class ProducerPool {
 # server.properties
 
 # Network threads handle requests (increase for high connection counts)
+
 num.network.threads=8
 
 # I/O threads handle disk operations (increase for high partition counts)

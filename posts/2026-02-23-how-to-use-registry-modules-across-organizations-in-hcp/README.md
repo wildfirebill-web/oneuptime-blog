@@ -16,6 +16,7 @@ Each HCP Terraform organization has its own private registry. When you publish a
 
 ```hcl
 # This ONLY works in org-platform-team
+
 module "vpc" {
   source  = "app.terraform.io/org-platform-team/vpc/aws"
   version = "1.0.0"

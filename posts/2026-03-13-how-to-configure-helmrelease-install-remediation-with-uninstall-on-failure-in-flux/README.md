@@ -60,6 +60,7 @@ The behavior of `remediateLastFailure` depends on the retry count:
 
 ```yaml
 # With 1 retry: uninstall before the single retry
+
 install:
   remediation:
     retries: 1

@@ -16,6 +16,7 @@ A provider in OpenTofu is declared in two places: the `required_providers` block
 
 ```hcl
 # Declare which providers you need
+
 terraform {
   required_providers {
     aws = {

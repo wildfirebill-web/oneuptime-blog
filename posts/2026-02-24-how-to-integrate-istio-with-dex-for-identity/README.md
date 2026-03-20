@@ -343,6 +343,7 @@ Keep an eye on Dex health and authentication metrics:
 
 ```bash
 # Check Dex health
+
 kubectl exec -n dex deploy/dex -- wget -qO- http://localhost:5556/healthz
 
 # Watch for authentication failures in Istio

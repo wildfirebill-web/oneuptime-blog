@@ -89,6 +89,7 @@ These are the most impactful performance settings. If you manage hundreds of app
 
 ```yaml
 # For 500+ applications
+
 data:
   controller.status.processors: "100"
   controller.operation.processors: "50"
@@ -163,7 +164,7 @@ kubectl set env statefulset/argocd-application-controller \
   ARGOCD_LOG_LEVEL=info -n argocd
 ```
 
-## Resource Management Variables
+Resource Management Variables
 
 ### Memory and Cache Limits
 

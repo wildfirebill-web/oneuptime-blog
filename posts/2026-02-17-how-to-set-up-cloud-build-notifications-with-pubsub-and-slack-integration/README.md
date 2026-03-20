@@ -31,6 +31,7 @@ First, make sure the necessary APIs are enabled:
 
 ```bash
 # Enable Cloud Build, Pub/Sub, and Cloud Functions APIs
+
 gcloud services enable \
   cloudbuild.googleapis.com \
   pubsub.googleapis.com \

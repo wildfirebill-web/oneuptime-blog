@@ -24,6 +24,7 @@ Using AWS-managed prefix lists in security groups:
 
 ```bash
 # Find the AWS-managed prefix list for S3
+
 aws ec2 describe-managed-prefix-lists \
   --filters Name=owner-id,Values=AWS \
   --query 'PrefixLists[?PrefixListName==`com.amazonaws.us-east-1.s3`]'

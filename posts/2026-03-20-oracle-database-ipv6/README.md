@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Oracle Database, IPv6, DBA, TNS, Listener, Database Networking
+Tags: Oracle Database, IPv6, DBA, TNS, Listeners, Database Networking
 
 Description: Configure Oracle Database listener and TNS settings to accept client connections over IPv6, enabling database access from IPv6 networks and dual-stack environments.
 
@@ -14,6 +14,7 @@ Oracle Database supports IPv6 for client connections through its listener config
 
 ```bash
 # Verify OS IPv6 is working
+
 ip -6 addr show scope global
 
 # Verify Oracle OS user can reach IPv6
@@ -30,7 +31,7 @@ export PATH=$ORACLE_HOME/bin:$PATH
 
 ## Oracle Listener IPv6 Configuration
 
-```
+```text
 # $ORACLE_HOME/network/admin/listener.ora
 
 # Listener with IPv6 (dual-stack)
@@ -59,7 +60,7 @@ ENABLE_GLOBAL_DYNAMIC_ENDPOINT_LISTENER = ON
 
 ## TNS Client Configuration for IPv6
 
-```
+```text
 # $ORACLE_HOME/network/admin/tnsnames.ora
 
 # IPv6 connection descriptor
@@ -147,7 +148,7 @@ ss -6 -tlnp | grep 1521
 
 ## Oracle sqlnet.ora IPv6 Settings
 
-```
+```text
 # $ORACLE_HOME/network/admin/sqlnet.ora
 
 # Prefer IPv6 for connections (when dual-stack)

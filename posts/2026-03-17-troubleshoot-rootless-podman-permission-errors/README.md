@@ -18,6 +18,7 @@ Rootless Podman uses user namespaces to remap UIDs, which can cause unexpected p
 
 ```bash
 # Problem: container cannot read or write files in a bind mount
+
 podman run --rm -v ./data:/app/data alpine:latest ls /app/data
 # ls: can't open '/app/data': Permission denied
 

@@ -32,6 +32,7 @@ Install the Infracost CLI:
 
 ```bash
 # macOS
+
 brew install infracost
 
 # Linux

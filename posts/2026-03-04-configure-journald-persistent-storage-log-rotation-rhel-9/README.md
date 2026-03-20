@@ -37,6 +37,7 @@ On RHEL, persistent storage is the default. To verify or explicitly enable it:
 
 ```bash
 # Check if the persistent journal directory exists
+
 ls -la /var/log/journal/
 
 # Check current journal disk usage

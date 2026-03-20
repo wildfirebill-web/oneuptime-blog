@@ -22,6 +22,7 @@ Let us start with the most common case: a job that runs once per day.
 
 ```bash
 # Create a daily schedule for job template ID 10
+
 # Runs every day at 3:00 AM UTC
 curl -s -X POST \
   -H "Authorization: Bearer ${AWX_TOKEN}" \

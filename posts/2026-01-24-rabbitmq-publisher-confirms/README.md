@@ -103,6 +103,7 @@ Enable confirms and handle acknowledgments:
 
 ```python
 # publisher_confirms.py
+
 import pika
 import json
 from typing import Optional

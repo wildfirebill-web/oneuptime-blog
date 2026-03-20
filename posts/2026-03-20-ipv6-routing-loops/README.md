@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Routing, Troubleshooting, traceroute6, Network Diagnostics, BGP
+Tags: IPv6, Routing, Troubleshooting, Traceroute6, Network Diagnostics, BGP
 
 Description: Diagnose IPv6 routing loops using traceroute6, analyze TTL-exceeded messages, and identify misconfigured static routes or dynamic routing protocol issues causing loops.
 
@@ -14,6 +14,7 @@ IPv6 routing loops occur when packets cycle between two or more routers indefini
 
 ```bash
 # Run traceroute6 to detect loops
+
 traceroute6 2001:db8::1
 
 # A routing loop shows the same hops repeating:
@@ -113,7 +114,7 @@ traceroute6 2001:4860:4860::8888
 ## Step 6: Monitor for Loops with Packet Analysis
 
 ```bash
-# Capture ICMPv6 Time Exceeded (type 3) — indicates hop limit expired in loop
+# Capture ICMPv6 Time Exceeded (type 3) - indicates hop limit expired in loop
 sudo tcpdump -i eth0 -v "ip6 proto 58 and ip6[40] == 3"
 
 # High rate of Time Exceeded messages indicates active routing loop
@@ -141,4 +142,4 @@ ip -6 route add default via fe80::gw dev eth0 metric 200
 
 ## Conclusion
 
-IPv6 routing loops are detected by `traceroute6` showing repeated hops and diagnosed by comparing routing tables on all devices in the path. Static route loops occur when two routers point to each other as default gateways. Dynamic routing loops typically involve redistribution between protocols (BGP to OSPFv3 and back). Fix by ensuring only one path through the network for each destination prefix — no mutual default routes, and careful redistribution policies. Monitor with ICMPv6 Time Exceeded capture to detect active loops in production.
+IPv6 routing loops are detected by `traceroute6` showing repeated hops and diagnosed by comparing routing tables on all devices in the path. Static route loops occur when two routers point to each other as default gateways. Dynamic routing loops typically involve redistribution between protocols (BGP to OSPFv3 and back). Fix by ensuring only one path through the network for each destination prefix - no mutual default routes, and careful redistribution policies. Monitor with ICMPv6 Time Exceeded capture to detect active loops in production.

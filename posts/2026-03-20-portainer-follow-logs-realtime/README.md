@@ -1,4 +1,4 @@
-# How to Follow Container Logs in Real Time in Portainer
+# How to Follow Container Logs in Real Time in Portainer - Realtime
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Learn how to enable real-time log following (tail -f) for Docker co
 
 ## Introduction
 
-Following logs in real time is essential when monitoring a deployment, debugging a live issue, or watching a container start up. Portainer's log viewer supports live log streaming, letting you watch new log lines appear as they're emitted — similar to `tail -f` or `docker logs -f`.
+Following logs in real time is essential when monitoring a deployment, debugging a live issue, or watching a container start up. Portainer's log viewer supports live log streaming, letting you watch new log lines appear as they're emitted - similar to `tail -f` or `docker logs -f`.
 
 ## Prerequisites
 
@@ -32,6 +32,7 @@ With log following enabled:
 
 ```bash
 # Equivalent Docker CLI (runs in your terminal):
+
 docker logs -f my-container
 
 # Follow from last 50 lines:
@@ -47,7 +48,7 @@ docker logs -f -t my-container
 
 When deploying a new container version, follow logs to confirm successful startup:
 
-```
+```text
 2026-03-20T10:00:00Z  INFO: Starting application v2.1.0
 2026-03-20T10:00:01Z  INFO: Loading configuration
 2026-03-20T10:00:02Z  INFO: Connecting to database...
@@ -65,7 +66,7 @@ When users report errors in production:
 2. Ask the user to reproduce the issue.
 3. Watch for error messages in real time.
 
-```
+```text
 2026-03-20T10:15:23Z  ERROR: Failed to process request
   path: /api/checkout
   user_id: 12345
@@ -77,7 +78,7 @@ When users report errors in production:
 
 Watch a long-running backup job:
 
-```
+```text
 2026-03-20T02:00:00Z  Starting backup...
 2026-03-20T02:00:01Z  Connecting to database
 2026-03-20T02:00:02Z  Dumping table: users (250,000 rows)
@@ -89,7 +90,7 @@ Watch a long-running backup job:
 
 ## Step 4: Follow Logs from Multiple Services
 
-For multi-service debugging in Portainer, open separate browser tabs — one for each container's log viewer.
+For multi-service debugging in Portainer, open separate browser tabs - one for each container's log viewer.
 
 Or via Docker Compose CLI:
 
@@ -120,7 +121,7 @@ import logging
 import sys
 
 logging.basicConfig(
-    stream=sys.stdout,   # Not a file — stdout goes to Docker logs
+    stream=sys.stdout,   # Not a file - stdout goes to Docker logs
     level=logging.INFO,
     format='%(asctime)s %(levelname)s %(message)s'
 )
@@ -160,7 +161,7 @@ environment:
 
 Make real-time log following useful by including enough context:
 
-```
+```text
 # Hard to follow:
 ERROR: connection failed
 INFO: retry 1
@@ -177,7 +178,7 @@ ERROR: connection failed
 If a container produces very high-volume logs, real-time following in the browser can be slow:
 
 ```bash
-# Filter at the Docker level — only follow ERROR logs:
+# Filter at the Docker level - only follow ERROR logs:
 docker logs -f my-container 2>&1 | grep -E "(ERROR|CRITICAL)"
 
 # Or use Docker log filtering (if the app supports structured logs):

@@ -21,6 +21,7 @@ To build Docker images in CodeBuild, you need two things:
 
 ```bash
 # Add ECR permissions to the CodeBuild service role
+
 cat > ecr-policy.json << 'EOF'
 {
   "Version": "2012-10-17",

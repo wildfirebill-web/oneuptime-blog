@@ -98,6 +98,7 @@ One of the most powerful use cases for checkpointing is migrating a running cont
 
 ```bash
 # Checkpoint and export
+
 sudo podman container checkpoint production-app \
     --export /tmp/production-app-checkpoint.tar.gz \
     --tcp-established

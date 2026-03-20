@@ -8,26 +8,27 @@ Description: An explanation of IPv6 multicast forwarding table structure, how en
 
 ## What Is the Multicast Forwarding Table?
 
-The multicast forwarding table (also called the mroute table or multicast routing information base — MRIB) is a separate routing table used to forward multicast packets. Unlike unicast routing, multicast routing is state-based — each active multicast stream creates entries in the forwarding table.
+The multicast forwarding table (also called the mroute table or multicast routing information base - MRIB) is a separate routing table used to forward multicast packets. Unlike unicast routing, multicast routing is state-based - each active multicast stream creates entries in the forwarding table.
 
 ## Entry Types in the Multicast Forwarding Table
 
 Multicast forwarding tables contain two types of entries:
 
 **(*,G) entries** (star-G): Wildcard source entries for any-source multicast groups. Used by PIM-SM for the shared tree (through RP).
-```
-(*, ff3e::stream) — Forward this group from any source via the RP
+```text
+(*, ff3e::stream) - Forward this group from any source via the RP
 ```
 
 **(S,G) entries** (source-G): Source-specific entries for known sources. Used after PIM switches to the source tree.
-```
-(2001:db8::source, ff3e::stream) — Forward this group from this specific source
+```text
+(2001:db8::source, ff3e::stream) - Forward this group from this specific source
 ```
 
 ## Reading the Linux Multicast Forwarding Table
 
 ```bash
 # View the IPv6 multicast forwarding table
+
 ip -6 mroute show
 
 # Example output:
@@ -129,7 +130,7 @@ watch -n 1 'cat /proc/net/ip6_mr_cache'
 
 ```bash
 # Clear all multicast routes (forces them to be re-established)
-# Use carefully — causes temporary traffic interruption
+# Use carefully - causes temporary traffic interruption
 
 # FRR
 vtysh -c "clear ipv6 mroute"

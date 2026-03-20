@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, HCL, Template Directives, for, if, Expressions, Infrastructure as Code, DevOps
+Tags: OpenTofu, HCL, Template Directives, For, If, Expressions, Infrastructure as Code, DevOps
 
 Description: A guide to using template directives in OpenTofu HCL to embed conditional logic and loops directly within string templates.
 
 ## Introduction
 
-Template directives in OpenTofu allow you to embed control flow — conditionals and loops — directly within string templates. Using `%{if}` and `%{for}` directives, you can generate complex multi-line strings with dynamic content. This is useful for generating configuration files, scripts, and other text that varies based on variables.
+Template directives in OpenTofu allow you to embed control flow - conditionals and loops - directly within string templates. Using `%{if}` and `%{for}` directives, you can generate complex multi-line strings with dynamic content. This is useful for generating configuration files, scripts, and other text that varies based on variables.
 
 ## Template if Directive
 
@@ -128,6 +128,7 @@ variable "features" {
 }
 
 # Without ~: generates empty lines for directive lines
+
 locals {
   with_spaces = <<-EOF
     enabled_features:

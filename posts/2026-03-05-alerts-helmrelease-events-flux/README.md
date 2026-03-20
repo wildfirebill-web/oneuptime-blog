@@ -34,6 +34,7 @@ The following alert monitors all HelmRelease resources in the `flux-system` name
 
 ```yaml
 # Alert that watches all HelmRelease events in the flux-system namespace
+
 apiVersion: notification.toolkit.fluxcd.io/v1
 kind: Alert
 metadata:

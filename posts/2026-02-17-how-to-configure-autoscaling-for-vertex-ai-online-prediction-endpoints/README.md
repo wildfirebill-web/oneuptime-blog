@@ -27,6 +27,7 @@ Here is how to deploy a model with autoscaling enabled:
 
 ```python
 # deploy_with_autoscaling.py
+
 # Deploy a model with autoscaling configuration
 
 from google.cloud import aiplatform

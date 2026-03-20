@@ -27,6 +27,7 @@ First, create a VPC with both IPv4 and IPv6 CIDR blocks.
 
 ```bash
 # Create a VPC with an IPv4 CIDR and request an Amazon-provided IPv6 CIDR
+
 aws ec2 create-vpc \
   --cidr-block 10.0.0.0/16 \
   --amazon-provided-ipv6-cidr-block \

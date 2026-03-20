@@ -38,6 +38,7 @@ First, establish what normal memory usage looks like. Use monitoring tools to tr
 
 ```bash
 # Linux - Check current memory usage
+
 free -h
 
 # Get process-specific memory usage

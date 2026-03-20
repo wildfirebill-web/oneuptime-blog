@@ -1,4 +1,4 @@
-# How to Use the -json Flag for Machine-Readable Output in OpenTofu
+# How to Use the -json Flag for Machine-Readable Output in OpenTofu - Opentofu
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -28,6 +28,7 @@ Several OpenTofu commands support a `-json` flag that produces structured JSON o
 tofu plan -json
 
 # Each line is a JSON event:
+
 # {"@level":"info","@message":"OpenTofu 1.6.2","@module":"terraform.ui","type":"version",...}
 # {"@level":"info","@message":"aws_s3_bucket.data: Plan to create","type":"planned_change",...}
 # {"@level":"info","@message":"Plan: 1 to add, 0 to change, 0 to destroy.","type":"change_summary",...}
@@ -119,7 +120,7 @@ echo "Destroys: $DESTROYS"
 echo "Replacements: $REPLACEMENTS"
 
 if [ "$DESTROYS" -gt 0 ] || [ "$REPLACEMENTS" -gt 0 ]; then
-  echo "RISKY CHANGES DETECTED — Manual approval required"
+  echo "RISKY CHANGES DETECTED - Manual approval required"
   exit 1
 fi
 

@@ -34,6 +34,7 @@ You can create dashboards through the Cloud Console or the API. Here is how to c
 
 ```bash
 # Create a monitoring dashboard from a JSON definition
+
 gcloud monitoring dashboards create --config-from-file=dashboard.json \
   --project=your-project-id
 ```

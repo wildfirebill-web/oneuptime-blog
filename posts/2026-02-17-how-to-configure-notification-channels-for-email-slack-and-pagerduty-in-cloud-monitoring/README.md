@@ -24,6 +24,7 @@ Email is the simplest notification channel to set up. No integrations or tokens 
 
 ```bash
 # Create an email notification channel
+
 gcloud alpha monitoring channels create \
   --display-name="On-Call Team Email" \
   --type=email \

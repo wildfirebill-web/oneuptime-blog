@@ -18,6 +18,7 @@ Create a HelmRepository for External Secrets:
 
 ```yaml
 # infrastructure/sources/external-secrets.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

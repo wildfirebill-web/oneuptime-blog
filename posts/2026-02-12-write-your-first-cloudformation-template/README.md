@@ -29,6 +29,7 @@ Every CloudFormation template has a specific structure. Here's what each section
 
 ```yaml
 # The template format version - always use this date
+
 AWSTemplateFormatVersion: '2010-09-09'
 
 # A human-readable description of what this template does

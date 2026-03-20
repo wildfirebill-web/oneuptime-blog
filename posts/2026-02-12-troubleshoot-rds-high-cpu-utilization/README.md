@@ -18,6 +18,7 @@ First, check the current state and trend of CPU usage:
 
 ```bash
 # Get CPU utilization for the last 2 hours with 5-minute intervals
+
 aws cloudwatch get-metric-statistics \
   --namespace AWS/RDS \
   --metric-name CPUUtilization \

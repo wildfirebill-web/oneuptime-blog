@@ -37,12 +37,13 @@ Breaking this down:
 
 The combination of type and name must be unique within a module. You cannot have two `aws_instance` resources both named `web_server`.
 
-## Resource Types and Providers
+Resource Types and Providers
 
 The resource type tells Terraform which provider to use and what API to call. The first part of the type name is the provider prefix:
 
 ```hcl
 # AWS resources start with "aws_"
+
 resource "aws_s3_bucket" "data" { }
 resource "aws_vpc" "main" { }
 resource "aws_lambda_function" "processor" { }

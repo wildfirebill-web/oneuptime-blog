@@ -8,7 +8,7 @@ Description: Learn how to permanently disable IPv6 on Linux by adding the ipv6.d
 
 ## When to Use GRUB Method vs sysctl
 
-The GRUB method disables IPv6 at the kernel level before the networking stack initializes — it is the most complete way to disable IPv6. The sysctl method can disable it after boot, but some kernel internals may still be IPv6-aware.
+The GRUB method disables IPv6 at the kernel level before the networking stack initializes - it is the most complete way to disable IPv6. The sysctl method can disable it after boot, but some kernel internals may still be IPv6-aware.
 
 Use the GRUB method when:
 - You need IPv6 completely absent from the kernel
@@ -19,6 +19,7 @@ Use the GRUB method when:
 
 ```bash
 # Edit the GRUB default configuration
+
 vim /etc/default/grub
 
 # Find the line:
@@ -113,7 +114,7 @@ sysctl net.ipv6.conf.all.disable_ipv6
 
 ## Difference: ipv6.disable=1 vs ipv6.disable_ipv6_mod=1
 
-```
+```text
 ipv6.disable=1:
   - Completely disables the IPv6 stack
   - IPv6 addresses not assigned

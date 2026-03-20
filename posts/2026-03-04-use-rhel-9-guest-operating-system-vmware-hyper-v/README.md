@@ -53,6 +53,7 @@ vmware-toolbox-cmd --version
 
 ```bash
 # Disable unnecessary services
+
 sudo systemctl disable kdump
 
 # Optimize for virtual environment

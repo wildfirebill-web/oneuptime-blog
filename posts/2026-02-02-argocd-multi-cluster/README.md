@@ -51,6 +51,7 @@ The following command installs ArgoCD CLI if not already available.
 
 ```bash
 # Install ArgoCD CLI on macOS
+
 brew install argocd
 
 # Install ArgoCD CLI on Linux
@@ -953,7 +954,7 @@ argocd app get myapp-prod-us-west --hard-refresh
 argocd app sync myapp-prod-us-west --dry-run
 ```
 
-### Resource Quota and Limit Issues
+Resource Quota and Limit Issues
 
 Handle resource constraints across clusters.
 

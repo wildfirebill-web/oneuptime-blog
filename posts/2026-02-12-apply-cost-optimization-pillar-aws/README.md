@@ -54,6 +54,7 @@ resource "aws_budgets_budget" "monthly" {
 }
 
 # Per-service budgets for visibility
+
 resource "aws_budgets_budget" "ec2" {
   name         = "ec2-budget"
   budget_type  = "COST"

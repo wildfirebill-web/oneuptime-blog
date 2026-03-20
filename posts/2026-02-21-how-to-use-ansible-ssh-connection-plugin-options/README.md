@@ -16,6 +16,7 @@ SSH connection options can be configured in several places, listed from lowest t
 
 ```ini
 # 1. ansible.cfg [ssh_connection] section
+
 # 2. Environment variables (ANSIBLE_SSH_*)
 # 3. Inventory variables (ansible_ssh_*)
 # 4. Playbook variables

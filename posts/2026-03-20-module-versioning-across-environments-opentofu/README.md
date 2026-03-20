@@ -16,6 +16,7 @@ Module versioning ensures that infrastructure changes follow a promotion path: m
 
 ```hcl
 # dev/main.tf - uses the latest commit on a branch for rapid iteration
+
 module "vpc" {
   source = "git::https://github.com/your-org/opentofu-modules.git//vpc?ref=main"
   # ...

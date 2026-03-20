@@ -10,7 +10,7 @@ Description: Learn how to implement a three-level hierarchical IPv4 addressing m
 
 A hierarchical IPv4 design maps IP octets to network topology levels:
 
-```
+```text
 10.[region].[campus/building].[floor/vlan]
 
 Level 1: Region (10.X.0.0/8 → /16)
@@ -25,7 +25,7 @@ This enables route summarization at each level:
 
 ## Step 1: Region Allocation
 
-```
+```text
 Region Code → Second Octet:
 
 10.1.0.0/16 = Americas (Region 1)
@@ -39,8 +39,8 @@ At the regional level, routers only need to know one route per region.
 
 Divide each /16 into blocks for each campus/building:
 
-```
-10.1.0.0/16 — Americas
+```text
+10.1.0.0/16 - Americas
 
 Campus allocations (using bits 17-21 = /21 blocks):
   10.1.0.0/21   Campus: NYC-HQ       (10.1.0.0 - 10.1.7.255 = 8 /24s)
@@ -50,14 +50,14 @@ Campus allocations (using bits 17-21 = /21 blocks):
   10.1.32.0/21  Campus: Chicago      (8 /24s)
 ```
 
-Each /21 provides 8 /24 subnets — perfect for a campus with up to 8 floors or VLANs.
+Each /21 provides 8 /24 subnets - perfect for a campus with up to 8 floors or VLANs.
 
 ## Step 3: Floor/VLAN Allocation Within a Campus
 
 Divide each /21 into /24s for floors or VLANs:
 
-```
-10.1.0.0/21 — NYC-HQ Campus
+```text
+10.1.0.0/21 - NYC-HQ Campus
 
 Floor/VLAN allocations (/24 per floor):
   10.1.0.0/24  Floor 1 - Reception, Lobby  (VLAN 100)
@@ -72,7 +72,7 @@ Floor/VLAN allocations (/24 per floor):
 
 ## Step 4: Route Summarization at Each Level
 
-```
+```text
 NYC-HQ campus router advertises:
   10.1.0.0/21  (summarizes all 8 floor /24s)
 
@@ -91,7 +91,7 @@ Core/WAN router sees:
 
 ## Step 5: Configure Summarization in OSPF (Cisco IOS)
 
-```
+```text
 ! At Area Border Router (campus to core):
 router ospf 1
   area 1 range 10.1.0.0 255.255.248.0   ! Summarize NYC-HQ /21
@@ -107,6 +107,7 @@ router bgp 65001
 from ipaddress import ip_network
 
 # Define the hierarchy
+
 design = {
     'Americas': {
         'cidr': '10.1.0.0/16',

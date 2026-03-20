@@ -23,6 +23,7 @@ Elastic publishes its official Helm charts through their own repository.
 
 ```yaml
 # helmrepository-elastic.yaml - Official Elastic Helm chart repository
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

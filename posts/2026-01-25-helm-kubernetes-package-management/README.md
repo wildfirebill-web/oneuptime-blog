@@ -32,6 +32,7 @@ Install the Helm CLI:
 
 ```bash
 # macOS
+
 brew install helm
 
 # Linux

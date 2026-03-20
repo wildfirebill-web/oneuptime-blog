@@ -43,6 +43,7 @@ Create a different cert-manager Issuer in each namespace:
 
 ```yaml
 # Namespace: team-alpha
+
 apiVersion: cert-manager.io/v1
 kind: Issuer
 metadata:

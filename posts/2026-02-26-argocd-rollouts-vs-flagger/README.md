@@ -307,6 +307,7 @@ The integration between Argo Rollouts and ArgoCD is seamless. ArgoCD natively un
 
 ```bash
 # ArgoCD shows Rollout status
+
 argocd app get my-app
 # Shows: Rollout status, canary weight, analysis progress
 

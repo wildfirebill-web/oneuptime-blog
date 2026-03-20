@@ -24,6 +24,7 @@ Route requests to different backends based on the URL path. This is the most com
 
 ```hcl
 # HTTPS listener with a default action
+
 resource "aws_lb_listener" "https" {
   load_balancer_arn = aws_lb.main.arn
   port              = 443

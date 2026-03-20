@@ -37,13 +37,14 @@ flowchart TB
 
 Thread assigns multiple IPv6 address types to each device:
 
-1. **Link-Local Address (LLA)**: `fe80::/10` — generated from IEEE EUI-64
-2. **Mesh-Local EID**: `fdXX:XXXX:XXXX::/64` — unique per mesh, ULA prefix
-3. **RLOC (Routing Locator)**: `fdXX:XXXX:XXXX:0:0:ff:fe00:XXXX` — contains the 16-bit RLOC16
+1. **Link-Local Address (LLA)**: `fe80::/10` - generated from IEEE EUI-64
+2. **Mesh-Local EID**: `fdXX:XXXX:XXXX::/64` - unique per mesh, ULA prefix
+3. **RLOC (Routing Locator)**: `fdXX:XXXX:XXXX:0:0:ff:fe00:XXXX` - contains the 16-bit RLOC16
 4. **Global Unicast Address**: Assigned by the border router from the external IPv6 prefix
 
 ```bash
 # Example Thread device addresses
+
 # Link-local:      fe80::1122:3344:5566:7788
 # Mesh-local EID:  fd11:2233:4455:0:1122:3344:5566:7788
 # RLOC:            fd11:2233:4455::ff:fe00:9c00

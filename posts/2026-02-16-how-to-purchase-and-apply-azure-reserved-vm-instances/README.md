@@ -28,6 +28,7 @@ Start by analyzing your current usage:
 
 ```bash
 # List all running VMs with their sizes and regions
+
 az vm list \
   --query "[?powerState=='VM running'].{Name:name, Size:hardwareProfile.vmSize, Location:location, RG:resourceGroup}" \
   --show-details \

@@ -43,6 +43,7 @@ sudo nano /usr/local/bin/usb-mount.sh
 ```bash
 #!/bin/bash
 # USB automount script
+
 # Called by udev when a USB storage device is added or removed
 # Arguments: ACTION (add/remove) DEVNAME (/dev/sdb1)
 

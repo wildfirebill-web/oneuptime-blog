@@ -20,6 +20,7 @@ API Gateway canary deployments allow you to send a configurable percentage of tr
 
 ```hcl
 # New deployment representing the canary version
+
 resource "aws_api_gateway_deployment" "canary" {
   rest_api_id = var.api_gateway_id
   description = "Canary deployment v2.1.0"

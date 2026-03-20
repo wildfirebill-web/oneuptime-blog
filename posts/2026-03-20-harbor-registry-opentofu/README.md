@@ -14,6 +14,7 @@ Harbor is the CNCF-graduated container registry that provides image vulnerabilit
 
 ```hcl
 # main.tf
+
 terraform {
   required_providers {
     helm = {
@@ -162,8 +163,8 @@ resource "null_resource" "configure_replication" {
 
 ## Best Practices
 
-- Use external PostgreSQL and Redis for production — the bundled services are not suitable for high-availability deployments.
+- Use external PostgreSQL and Redis for production - the bundled services are not suitable for high-availability deployments.
 - Enable Trivy scanning and configure Harbor to block images with critical vulnerabilities from being pulled.
-- Set up replication rules to mirror base images from Docker Hub — this prevents builds from failing when Docker Hub rate-limits your nodes.
+- Set up replication rules to mirror base images from Docker Hub - this prevents builds from failing when Docker Hub rate-limits your nodes.
 - Use `resourcePolicy: keep` on persistent volumes so deleting the Helm release doesn't delete your image data.
 - Enable content trust (Notary) for production deployments to ensure image signatures are verified before deployment.

@@ -184,6 +184,7 @@ For known-important requests (like specific API endpoints or user-triggered acti
 
 ```python
 # Python middleware that forces tracing for specific conditions
+
 @app.before_request
 def force_trace_important_requests():
     # Force-trace admin actions

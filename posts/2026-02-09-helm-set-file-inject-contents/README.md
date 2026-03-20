@@ -26,6 +26,7 @@ One of the most common use cases involves injecting TLS certificates and keys fo
 
 ```yaml
 # templates/tls-secret.yaml
+
 {{- if .Values.tls.enabled }}
 apiVersion: v1
 kind: Secret

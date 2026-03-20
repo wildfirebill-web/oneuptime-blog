@@ -20,6 +20,7 @@ Add a health check command in the `[Container]` section:
 
 ```ini
 # ~/.config/containers/systemd/webapp.container
+
 [Unit]
 Description=Web application with health check
 

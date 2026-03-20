@@ -29,6 +29,7 @@ Always use SHA256 digests in ImageSet, never mutable tags:
 
 ```yaml
 # INSECURE - uses mutable tag
+
 spec:
   images:
     - image: "calico/node"

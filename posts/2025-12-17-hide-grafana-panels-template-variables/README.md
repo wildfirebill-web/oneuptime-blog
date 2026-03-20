@@ -50,6 +50,7 @@ The repeat feature creates panel copies for each variable value.
 
 ```yaml
 # Variable configuration
+
 Name: service
 Type: Query
 Query: label_values(http_requests_total, service)

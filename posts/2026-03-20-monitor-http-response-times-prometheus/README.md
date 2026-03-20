@@ -16,6 +16,7 @@ Measuring HTTP response times is fundamental to SLO monitoring. This guide combi
 
 ```bash
 # Save a reusable timing format to a file
+
 cat > /usr/local/bin/http-timing.fmt << 'EOF'
 time_namelookup=%{time_namelookup}
 time_connect=%{time_connect}
@@ -132,4 +133,4 @@ avg_over_time(probe_success[5m]) < 0.99
 
 ## Conclusion
 
-For quick ad-hoc measurements, `curl -w` provides all the HTTP timing detail you need. For continuous monitoring, the Prometheus Blackbox Exporter is the production-grade solution—it handles retries, TLS validation, and integrates natively with Prometheus alerting.
+For quick ad-hoc measurements, `curl -w` provides all the HTTP timing detail you need. For continuous monitoring, the Prometheus Blackbox Exporter is the production-grade solution-it handles retries, TLS validation, and integrates natively with Prometheus alerting.

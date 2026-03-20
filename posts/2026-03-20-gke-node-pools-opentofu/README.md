@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GKE, Node Pools, Kubernetes, OpenTofu, GCP, Infrastructure
+Tags: GKE, Node Pool, Kubernetes, OpenTofu, GCP, Infrastructure
 
 Description: Learn how to configure GKE node pools with OpenTofu for workload isolation, GPU support, spot instances, and autoscaling across different machine types.
 
@@ -14,6 +14,7 @@ GKE Node Pools allow you to run different VM types within a single cluster. You 
 
 ```hcl
 # main.tf - General purpose node pool
+
 resource "google_container_node_pool" "general_pool" {
   name     = "general-pool"
   location = "us-central1"

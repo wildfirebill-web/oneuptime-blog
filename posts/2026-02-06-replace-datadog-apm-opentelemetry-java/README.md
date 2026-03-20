@@ -50,6 +50,7 @@ Start by removing the Datadog agent from your application startup. This typicall
 
 ```bash
 # BEFORE: Application startup with Datadog agent
+
 # java -javaagent:/opt/dd-java-agent.jar \
 #      -Ddd.service=order-service \
 #      -Ddd.env=production \

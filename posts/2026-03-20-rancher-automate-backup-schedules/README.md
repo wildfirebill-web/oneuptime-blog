@@ -1,8 +1,8 @@
-# How to Automate Backup Schedules in Rancher
+# How to Automate Backup Schedules in Rancher - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: rancher, backup, automation, etcd, longhorn, disaster-recovery
+Tags: Rancher, Backup, Automation, etcd, Longhorn, Disaster-recovery
 
 Description: A comprehensive guide to automating backup schedules in Rancher for etcd, Longhorn volumes, and Rancher itself, ensuring reliable disaster recovery.
 
@@ -18,6 +18,7 @@ The Rancher server state is stored in its backing Kubernetes cluster's etcd. The
 
 ```bash
 # Install from Rancher Apps catalog or via Helm
+
 helm repo add rancher-charts https://releases.rancher.com/server-charts/stable
 helm install rancher-backup rancher-charts/rancher-backup \
   --namespace cattle-resources-system \

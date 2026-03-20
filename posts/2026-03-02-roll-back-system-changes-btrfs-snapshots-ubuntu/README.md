@@ -47,6 +47,7 @@ Mount the Btrfs top-level filesystem first:
 
 ```bash
 # Find the device for your root partition
+
 lsblk -f
 
 # Mount the Btrfs top-level (subvolid=5)

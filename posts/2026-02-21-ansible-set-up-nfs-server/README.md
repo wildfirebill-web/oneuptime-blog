@@ -18,6 +18,7 @@ A typical NFS setup has one or more servers exporting directories and many clien
 
 ```ini
 # inventory/nfs
+
 [nfs_servers]
 nfs-server-01 ansible_host=10.0.1.10
 

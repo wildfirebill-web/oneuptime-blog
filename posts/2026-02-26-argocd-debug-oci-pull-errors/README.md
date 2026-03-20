@@ -41,6 +41,7 @@ This is the most common error. It means ArgoCD's repo-server cannot reach or aut
 
 ```bash
 # List configured repositories
+
 argocd repo list
 
 # Check if the OCI repository is listed and shows as "Successful"

@@ -41,6 +41,7 @@ The `tfplugindocs` tool generates documentation from your provider's schema. Thi
 
 ```bash
 # Install tfplugindocs
+
 go install github.com/hashicorp/terraform-plugin-docs/cmd/tfplugindocs@latest
 ```
 
@@ -203,7 +204,7 @@ provider "example" {
 }
 ```
 
-### Resource Example
+Resource Example
 
 ```hcl
 # examples/resources/example_server/resource.tf

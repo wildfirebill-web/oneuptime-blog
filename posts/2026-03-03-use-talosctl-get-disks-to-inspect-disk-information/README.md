@@ -16,6 +16,7 @@ The simplest form of the command lists all disks detected on a node:
 
 ```bash
 # List disks on a specific node
+
 talosctl get disks --nodes 192.168.1.10
 
 # Example output:

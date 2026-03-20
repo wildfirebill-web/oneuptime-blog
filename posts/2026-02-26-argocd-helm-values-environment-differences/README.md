@@ -38,6 +38,7 @@ Your base `values.yaml` should contain every configurable parameter with reasona
 
 ```yaml
 # chart/values.yaml - base defaults
+
 replicaCount: 1
 
 image:

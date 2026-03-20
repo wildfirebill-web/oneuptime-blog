@@ -18,6 +18,7 @@ Start by deploying Tracetest alongside your production trace backend:
 
 ```yaml
 # tracetest-config.yaml
+
 type: DataStore
 spec:
   name: production-traces

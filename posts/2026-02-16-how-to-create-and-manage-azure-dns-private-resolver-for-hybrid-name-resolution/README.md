@@ -51,6 +51,7 @@ The resolver endpoints need their own subnets that are delegated to the DNS reso
 
 ```bash
 # Create the inbound endpoint subnet with delegation
+
 az network vnet subnet create \
   --resource-group myResourceGroup \
   --vnet-name myVNet \

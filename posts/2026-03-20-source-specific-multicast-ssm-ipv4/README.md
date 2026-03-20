@@ -14,9 +14,9 @@ SSM uses the reserved range **232.0.0.0/8** and requires IGMPv3 on hosts.
 
 ## How SSM Differs from ASM
 
-In ASM (`224.0.0.0/4` minus SSM range), any source may send to a group and receivers join with `(*,G)` — any source, group G. Routers must locate sources via PIM-SM and an RP.
+In ASM (`224.0.0.0/4` minus SSM range), any source may send to a group and receivers join with `(*,G)` - any source, group G. Routers must locate sources via PIM-SM and an RP.
 
-In SSM, receivers join with `(S,G)` — a specific source S and group G. No RP is needed. PIM-SSM (a subset of PIM-SM) handles routing.
+In SSM, receivers join with `(S,G)` - a specific source S and group G. No RP is needed. PIM-SSM (a subset of PIM-SM) handles routing.
 
 ## Prerequisites
 
@@ -28,6 +28,7 @@ In SSM, receivers join with `(S,G)` — a specific source S and group G. No RP i
 
 ```bash
 # Ensure IGMPv3 is active (0 = auto-negotiate, which defaults to v3)
+
 echo 0 | sudo tee /proc/sys/net/ipv4/conf/eth0/force_igmp_version
 
 # Confirm the interface is multicast-capable

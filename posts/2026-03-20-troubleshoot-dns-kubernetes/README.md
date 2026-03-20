@@ -14,6 +14,7 @@ DNS in Kubernetes is managed by CoreDNS, which resolves both Kubernetes service 
 
 ```bash
 # Run a temporary debugging pod with DNS tools:
+
 kubectl run dns-debug --image=infoblox/dnstools:latest --rm -it --restart=Never -- bash
 
 # Inside the pod:
@@ -144,4 +145,4 @@ strace -p $POD_PID -e trace=network 2>&1 | grep "connect\|getsockname" | head -2
 
 ## Conclusion
 
-Kubernetes DNS troubleshooting starts with checking CoreDNS pod health and logs, then testing resolution from inside the affected pod using a debug container. For service discovery failures, verify the full FQDN (`service.namespace.svc.cluster.local`) works before debugging the short form. The most common performance issue is `ndots:5` causing multiple lookup attempts for external domains — reduce to `ndots:1` for pods that primarily resolve external names. Monitor CoreDNS metrics at `:9153` for cache hit rates and error rates.
+Kubernetes DNS troubleshooting starts with checking CoreDNS pod health and logs, then testing resolution from inside the affected pod using a debug container. For service discovery failures, verify the full FQDN (`service.namespace.svc.cluster.local`) works before debugging the short form. The most common performance issue is `ndots:5` causing multiple lookup attempts for external domains - reduce to `ndots:1` for pods that primarily resolve external names. Monitor CoreDNS metrics at `:9153` for cache hit rates and error rates.

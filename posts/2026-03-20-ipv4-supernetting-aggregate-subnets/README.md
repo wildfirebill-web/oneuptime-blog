@@ -10,7 +10,7 @@ Supernetting (route aggregation or summarization) combines multiple contiguous s
 
 ## What is Supernetting?
 
-```
+```text
 Before supernetting (4 routes):
 10.100.0.0/24
 10.100.1.0/24
@@ -31,7 +31,7 @@ This only works if subnets are contiguous and power-of-2 aligned.
 
 ## Manual Supernetting Calculation
 
-```
+```text
 Aggregate 4 × /24 into a /22:
 Subnets: 10.100.0.0, 10.100.1.0, 10.100.2.0, 10.100.3.0
 
@@ -59,6 +59,7 @@ def find_supernet(subnets):
     return list(supernet)
 
 # Aggregate four /24s
+
 subnets = ["10.100.0.0/24", "10.100.1.0/24", "10.100.2.0/24", "10.100.3.0/24"]
 result = find_supernet(subnets)
 for net in result:

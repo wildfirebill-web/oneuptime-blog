@@ -16,6 +16,7 @@ The `flux events` command retrieves Kubernetes events for a specific Flux resour
 
 ```bash
 # View events for a specific Kustomization
+
 flux events --for Kustomization/my-app --namespace flux-system
 ```
 

@@ -108,6 +108,7 @@ terraform {
 
 ```bash
 # Initialize with the backend
+
 terraform init
 
 # Run a plan to verify locking works

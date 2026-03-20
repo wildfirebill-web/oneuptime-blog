@@ -16,6 +16,7 @@ The `replace` function searches a string for a substring (or regex pattern) and 
 
 ```hcl
 # Basic syntax
+
 replace(string, search, replacement)
 ```
 

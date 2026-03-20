@@ -16,8 +16,8 @@ The `strcontains` function in OpenTofu returns `true` if a given string contains
 strcontains(string, substr)
 ```
 
-- **string** — the string to search within
-- **substr** — the substring to search for
+- **string** - the string to search within
+- **substr** - the substring to search for
 - Returns a boolean (`true` or `false`)
 
 ## Basic Examples

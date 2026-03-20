@@ -19,6 +19,7 @@ Description: IPv4 subnet calculators automate the computation of network address
 
 ```bash
 # Install
+
 sudo apt install ipcalc   # Debian/Ubuntu
 sudo yum install ipcalc   # RHEL/CentOS
 

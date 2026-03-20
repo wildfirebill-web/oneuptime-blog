@@ -32,6 +32,7 @@ Before running the upgrade tool:
 
 ```bash
 # Ensure the package is installed and up to date
+
 sudo apt install update-manager-core
 
 # Update all current packages first

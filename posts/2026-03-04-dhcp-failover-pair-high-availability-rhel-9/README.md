@@ -54,6 +54,7 @@ Edit `/etc/dhcp/dhcpd.conf` on the primary (192.168.1.10):
 ```bash
 cat > /etc/dhcp/dhcpd.conf << 'EOF'
 # Global options
+
 option domain-name "example.com";
 option domain-name-servers 192.168.1.10, 8.8.8.8;
 default-lease-time 3600;

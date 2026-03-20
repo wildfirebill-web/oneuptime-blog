@@ -1,4 +1,4 @@
-# How to Fix "Stack Not Found" After a Portainer Crash
+# How to Fix 'Stack Not Found' After a Portainer Crash - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Recover stacks that disappear from Portainer after a crash or resta
 
 ## Introduction
 
-After Portainer crashes or is reinstalled, you may find that stacks you previously managed are gone from the UI — even though the containers are still running. This happens because Portainer's stack metadata (stored in `portainer.db`) was lost, but the underlying Docker Compose stacks are intact. This guide shows how to recover and re-associate them.
+After Portainer crashes or is reinstalled, you may find that stacks you previously managed are gone from the UI - even though the containers are still running. This happens because Portainer's stack metadata (stored in `portainer.db`) was lost, but the underlying Docker Compose stacks are intact. This guide shows how to recover and re-associate them.
 
 ## Understanding the Problem
 
@@ -22,6 +22,7 @@ After a Portainer crash, #2 is lost but #1 survives. The containers continue run
 
 ```bash
 # Check if the containers are still running
+
 docker ps | grep stack-name
 
 # Check for all containers (including stopped ones)
@@ -53,7 +54,7 @@ Portainer can re-associate existing containers as a stack:
 3. Choose **Web Editor**
 4. Reconstruct the `docker-compose.yml` content (see Step 4)
 5. Use the **exact same stack name** as before
-6. Check **Deploy** — Portainer will detect running containers and associate them
+6. Check **Deploy** - Portainer will detect running containers and associate them
 
 > **Important**: The stack name must match the Docker Compose project name (`com.docker.compose.project` label).
 
@@ -194,4 +195,4 @@ done
 
 ## Conclusion
 
-"Stack Not Found" after a Portainer crash doesn't mean your containers are gone — they're likely still running fine. Recover by re-importing them using their existing Docker Compose definitions, or by reconstructing the compose files from `docker inspect` output. The best long-term solution is regular automated backups of the Portainer data volume and periodic exports of stack definitions to a version-controlled directory.
+"Stack Not Found" after a Portainer crash doesn't mean your containers are gone - they're likely still running fine. Recover by re-importing them using their existing Docker Compose definitions, or by reconstructing the compose files from `docker inspect` output. The best long-term solution is regular automated backups of the Portainer data volume and periodic exports of stack definitions to a version-controlled directory.

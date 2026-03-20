@@ -48,6 +48,7 @@ Check and request quota increases:
 
 ```bash
 # Check current quota usage
+
 az vm list-usage --location eastus --output table
 
 # Request a quota increase via Azure Portal or support ticket

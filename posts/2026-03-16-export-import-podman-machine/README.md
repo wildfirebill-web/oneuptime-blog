@@ -20,6 +20,7 @@ A Podman machine consists of several components that need to be captured:
 
 ```bash
 # View the configuration directory
+
 podman machine inspect my-machine | jq -r '.ConfigDir.Path'
 
 # View the machine's resource settings

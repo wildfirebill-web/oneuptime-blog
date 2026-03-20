@@ -16,6 +16,7 @@ First, access the ArgoCD web interface:
 
 ```bash
 # Option 1: Port-forward
+
 kubectl port-forward svc/argocd-server -n argocd 8080:443
 
 # Then open: https://localhost:8080
@@ -185,7 +186,7 @@ Watch the resource tree update in real time:
 
 After syncing, explore the application through these UI features:
 
-### Resource Tree
+Resource Tree
 
 The main view shows all resources as a tree. Click any resource to see its details, events, and logs (for pods).
 

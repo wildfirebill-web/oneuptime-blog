@@ -16,6 +16,7 @@ First, check which repositories are configured and their GPG settings:
 
 ```bash
 # List all configured repositories and their GPG key paths
+
 dnf repolist -v 2>/dev/null | grep -E "Repo-id|Repo-gpgcheck|Repo-gpgkey"
 ```
 

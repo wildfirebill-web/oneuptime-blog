@@ -16,6 +16,7 @@ The `trim` function takes two arguments: a string and a set of characters to rem
 
 ```hcl
 # Basic syntax
+
 trim(string, characters_to_remove)
 ```
 

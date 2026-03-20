@@ -44,6 +44,7 @@ clusters/my-cluster/training-jobs/
 
 ```yaml
 # clusters/my-cluster/training-jobs/pytorch-resnet/configmap.yaml
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

@@ -12,7 +12,7 @@ Allocating too small a subnet for an office causes address exhaustion; too large
 
 ## Device Inventory Worksheet
 
-```
+```text
 Device Category         Count   Notes
 ─────────────────────────────────────────────────
 Workstations (wired)     50     DHCP
@@ -35,7 +35,7 @@ Totals per VLAN:
 
 ## Subnet Sizing Formula
 
-```
+```text
 Required addresses = devices × 1.3 (30% growth buffer)
                      + DHCP pool reserve (10-15% of pool)
 
@@ -77,7 +77,7 @@ for i, (name, count) in enumerate(segments.items()):
 
 ## Sample Output and Subnet Selection
 
-```
+```text
 Corporate         devices=190  recommended=/24  (254 usable)  headroom=7
 VoIP              devices= 50  recommended=/26  ( 62 usable)  headroom=  7
 Guest             devices=100  recommended=/25  (126 usable)  headroom= 2
@@ -87,7 +87,7 @@ Infrastructure    devices= 13  recommended=/28  ( 14 usable)  headroom= 1 → us
 
 ## DHCP Scope Sizing
 
-```
+```text
 For a /24 (254 usable):
   Static reservations:  10  (servers, printers)
   DHCP pool:           220  (lease entries)
@@ -98,8 +98,8 @@ For a /24 (254 usable):
 
 ## Recommended Addressing for a 200-Person Office
 
-```
-10.50.0.0/22   — Office total allocation
+```text
+10.50.0.0/22   - Office total allocation
   10.50.0.0/24   VLAN 10  Corporate
   10.50.1.0/25   VLAN 20  VoIP
   10.50.1.128/25 VLAN 30  Guest

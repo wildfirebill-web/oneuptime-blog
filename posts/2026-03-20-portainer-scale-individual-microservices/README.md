@@ -57,6 +57,7 @@ services:
 
 ```bash
 # Scale a Swarm service from the command line
+
 docker service scale mystack_user-service=5
 
 # Verify the scaling

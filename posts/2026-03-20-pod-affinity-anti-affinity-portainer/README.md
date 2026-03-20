@@ -10,8 +10,8 @@ Description: Learn how to configure Kubernetes pod affinity and anti-affinity ru
 
 Kubernetes scheduler uses affinity and anti-affinity rules to influence where pods are placed relative to other pods:
 
-- **Pod Affinity** — Schedule a pod on the same node (or zone) as another pod with a matching label
-- **Pod Anti-Affinity** — Schedule a pod away from nodes already running pods with a matching label
+- **Pod Affinity** - Schedule a pod on the same node (or zone) as another pod with a matching label
+- **Pod Anti-Affinity** - Schedule a pod away from nodes already running pods with a matching label
 
 These rules are critical for:
 - **High availability**: Spreading replicas across failure domains

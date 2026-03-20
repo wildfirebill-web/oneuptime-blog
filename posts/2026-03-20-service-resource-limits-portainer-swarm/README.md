@@ -1,4 +1,4 @@
-# How to Configure Service Resource Limits in Portainer on Swarm
+# How to Configure Service Resource Limits in Portainer on Swarm - Swarm
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -10,7 +10,7 @@ Description: Learn how to set CPU and memory resource reservations and limits fo
 
 Without resource limits, a single runaway container can consume all CPU and memory on a node, starving other services. Resource limits protect cluster stability by capping how much a service can consume.
 
-## Resource Concepts
+Resource Concepts
 
 - **Reservation**: Minimum resources guaranteed to a task.
 - **Limit**: Maximum resources a task can use.
@@ -48,6 +48,7 @@ services:
 
 ```bash
 # Create a service with resource limits using the CLI
+
 docker service create \
   --name web \
   --reserve-cpu 0.25 \
@@ -78,7 +79,7 @@ docker stats --no-stream my-container-name
 ## Tips
 
 - Always set reservations so the scheduler can make intelligent placement decisions.
-- Memory limits trigger OOM (Out of Memory) kills — set them slightly above expected peak usage.
+- Memory limits trigger OOM (Out of Memory) kills - set them slightly above expected peak usage.
 - CPU limits prevent CPU throttling from causing latency spikes.
 
 ## Conclusion

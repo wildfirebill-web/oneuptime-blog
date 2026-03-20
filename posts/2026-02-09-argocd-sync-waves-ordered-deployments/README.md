@@ -24,6 +24,7 @@ Apply sync waves with annotations:
 
 ```yaml
 # Wave 0: Create namespace first
+
 apiVersion: v1
 kind: Namespace
 metadata:

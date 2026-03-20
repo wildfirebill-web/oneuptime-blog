@@ -64,6 +64,7 @@ Test it:
 
 ```bash
 # This should succeed (productpage -> reviews)
+
 kubectl exec deploy/productpage-v1 -n bookinfo -- curl -s -o /dev/null -w "%{http_code}" http://reviews:9080/reviews/1
 
 # This should fail (ratings -> reviews, different SA)

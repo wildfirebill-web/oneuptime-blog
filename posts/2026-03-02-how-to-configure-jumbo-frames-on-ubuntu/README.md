@@ -37,6 +37,7 @@ If any single device in the path does not support the configured MTU, you will s
 
 ```bash
 # Show MTU for all interfaces
+
 ip link show
 
 # Show MTU for a specific interface

@@ -42,6 +42,7 @@ The kube-prometheus-stack chart is maintained in the prometheus-community Helm r
 
 ```bash
 # Add the Prometheus community Helm repo
+
 helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
 helm repo update
 ```

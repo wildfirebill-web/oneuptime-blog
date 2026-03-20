@@ -18,6 +18,7 @@ RKE2 uses the `kubelet-arg` key in `/etc/rancher/rke2/config.yaml` to pass argum
 
 ```bash
 # Create or edit the RKE2 configuration file
+
 sudo mkdir -p /etc/rancher/rke2
 sudo tee /etc/rancher/rke2/config.yaml > /dev/null <<EOF
 # RKE2 server/agent configuration

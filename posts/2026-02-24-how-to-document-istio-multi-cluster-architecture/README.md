@@ -77,6 +77,7 @@ Each cluster has its own intermediate CA signed by the shared root:
 
 ```bash
 # Verify the root CA is consistent across clusters
+
 for CTX in prod-us-east prod-us-west prod-eu; do
   echo "=== $CTX ==="
   kubectl --context=$CTX get secret cacerts -n istio-system -o json | \

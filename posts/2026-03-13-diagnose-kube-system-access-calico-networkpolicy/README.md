@@ -44,6 +44,7 @@ kubectl exec <pod-name> -n <namespace> -- cat /etc/resolv.conf
 ```bash
 kubectl get namespace kube-system --show-labels
 # The namespaceSelector in NetworkPolicy must match these labels
+
 ```
 
 **Step 3: Check egress policies in affected namespace**

@@ -20,6 +20,7 @@ The `spec.values` field accepts a YAML map that corresponds directly to the char
 
 ```yaml
 # helmrelease.yaml - HelmRelease with inline values
+
 apiVersion: helm.toolkit.fluxcd.io/v2
 kind: HelmRelease
 metadata:

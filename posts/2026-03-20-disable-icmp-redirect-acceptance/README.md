@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ICMP, Linux, Security, sysctl, Redirects, Networking
+Tags: ICMP, Linux, Security, Sysctl, Redirect, Networking
 
 Description: Disable ICMP redirect message acceptance on Linux to prevent attackers from manipulating your routing table via forged ICMP redirect packets.
 
@@ -10,7 +10,7 @@ ICMP redirect messages tell a host to use a different gateway for a specific des
 
 ## What Are ICMP Redirects?
 
-```
+```text
 Normal operation:
   Router A → sends ICMP redirect to Host → "Use Router B for 10.0.0.0/24"
   Host updates routing cache → traffic flows through Router B
@@ -24,6 +24,7 @@ Attack scenario:
 
 ```bash
 # Check if ICMP redirects are accepted (1 = yes, 0 = no)
+
 sysctl net.ipv4.conf.all.accept_redirects
 sysctl net.ipv4.conf.eth0.accept_redirects
 
@@ -117,4 +118,4 @@ sysctl -a 2>/dev/null | grep "redirect" | grep "ipv4"
 grep "accept_redirects" /etc/sysctl.d/*.conf /etc/sysctl.conf
 ```
 
-Disabling ICMP redirect acceptance is a critical hardening step with no functional impact on normal server operations — Linux hosts don't need to receive routing updates via ICMP redirects.
+Disabling ICMP redirect acceptance is a critical hardening step with no functional impact on normal server operations - Linux hosts don't need to receive routing updates via ICMP redirects.

@@ -28,6 +28,7 @@ Design your node CPU layout with isolation in mind:
 
 ```yaml
 # kubelet configuration for nodes running single-process workloads
+
 apiVersion: kubelet.config.k8s.io/v1beta1
 kind: KubeletConfiguration
 cpuManagerPolicy: static

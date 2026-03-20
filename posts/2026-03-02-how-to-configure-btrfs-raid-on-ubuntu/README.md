@@ -38,6 +38,7 @@ Identify the block devices you want to use. These should be raw, unformatted dis
 ```bash
 lsblk
 # or
+
 sudo fdisk -l
 ```
 

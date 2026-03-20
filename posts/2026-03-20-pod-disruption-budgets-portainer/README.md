@@ -21,8 +21,8 @@ A Pod Disruption Budget (PDB) tells Kubernetes the minimum number of pods for a 
 
 Before creating a PDB, decide whether to express availability as:
 
-- `minAvailable` — minimum pods that must remain running
-- `maxUnavailable` — maximum pods that can be simultaneously unavailable
+- `minAvailable` - minimum pods that must remain running
+- `maxUnavailable` - maximum pods that can be simultaneously unavailable
 
 ## Step 2: Create a PDB via Portainer Manifest
 
@@ -30,6 +30,7 @@ Go to **Kubernetes > Advanced Deployment** in Portainer:
 
 ```yaml
 # web-api-pdb.yaml
+
 apiVersion: policy/v1
 kind: PodDisruptionBudget
 metadata:
@@ -78,7 +79,7 @@ spec:
 
 A few important constraints:
 
-- `minAvailable: 100%` (or equal to total replicas) will block all voluntary disruptions — drains will hang until the PDB is removed
+- `minAvailable: 100%` (or equal to total replicas) will block all voluntary disruptions - drains will hang until the PDB is removed
 - PDBs do not protect against hardware failures (involuntary disruptions)
 - Setting `minAvailable: 0` or `maxUnavailable: 100%` effectively disables the PDB
 
@@ -96,7 +97,7 @@ kubectl describe pdb web-api-pdb -n production
 
 The output shows:
 
-```
+```text
 Min available:    2
 Allowed disruptions: 1
 Current:          3
@@ -111,7 +112,7 @@ Total:            3
 Simulate a maintenance event:
 
 ```bash
-# Drain a node — PDB will prevent eviction if it would violate budget
+# Drain a node - PDB will prevent eviction if it would violate budget
 kubectl drain node-worker-1 --ignore-daemonsets --delete-emptydir-data
 ```
 

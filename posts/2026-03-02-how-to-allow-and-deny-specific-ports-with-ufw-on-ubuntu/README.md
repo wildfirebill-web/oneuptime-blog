@@ -16,6 +16,7 @@ The simplest form allows or denies a port for all traffic, all sources, on all i
 
 ```bash
 # Allow a port (defaults to both TCP and UDP)
+
 sudo ufw allow 8080
 
 # Allow only TCP

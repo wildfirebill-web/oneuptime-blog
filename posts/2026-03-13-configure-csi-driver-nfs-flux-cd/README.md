@@ -27,6 +27,7 @@ Deploying the CSI driver through Flux CD ensures the driver DaemonSet and contro
 
 ```yaml
 # infrastructure/sources/csi-driver-nfs-helm.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

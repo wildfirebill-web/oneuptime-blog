@@ -14,6 +14,7 @@ SSLyze is a Python tool that analyzes TLS/SSL configurations of servers. Unlike 
 
 ```bash
 # Install via pip (recommended - gets the latest version)
+
 sudo apt install python3 python3-pip -y
 pip3 install sslyze
 

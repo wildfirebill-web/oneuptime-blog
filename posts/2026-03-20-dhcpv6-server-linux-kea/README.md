@@ -14,6 +14,7 @@ Kea is ISC's modern DHCP server that supports DHCPv4 and DHCPv6. It is the succe
 
 ```bash
 # Debian/Ubuntu
+
 sudo apt-get install kea-dhcp6
 
 # RHEL/CentOS/Fedora

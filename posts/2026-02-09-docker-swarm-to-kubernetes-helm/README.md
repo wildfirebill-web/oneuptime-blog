@@ -16,6 +16,7 @@ Docker Swarm and Kubernetes use different resource models.
 
 ```yaml
 # Docker Swarm stack (docker-compose.yml)
+
 version: '3.8'
 
 services:

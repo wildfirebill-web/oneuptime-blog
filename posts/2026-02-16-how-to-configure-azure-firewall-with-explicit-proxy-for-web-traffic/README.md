@@ -38,6 +38,7 @@ Enable the explicit proxy feature on your Firewall Policy:
 
 ```bash
 # Enable explicit proxy on the Firewall Policy
+
 # Port 8080 is the default proxy listening port
 az network firewall policy update \
   --name myFirewallPolicy \

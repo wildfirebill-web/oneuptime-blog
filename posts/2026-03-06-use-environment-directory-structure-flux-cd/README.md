@@ -74,6 +74,7 @@ The base directory contains shared manifests that all environments inherit from.
 
 ```yaml
 # base/kustomization.yaml
+
 # This file declares all the base resources that environments will inherit
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization

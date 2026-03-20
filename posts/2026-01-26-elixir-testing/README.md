@@ -38,6 +38,7 @@ Every Mix project comes with a `test` directory and a `test_helper.exs` file. He
 # test/test_helper.exs
 
 # Start ExUnit with common options
+
 ExUnit.start(
   # Capture logs during test runs to keep output clean
   capture_log: true,

@@ -16,6 +16,7 @@ Forks determines the maximum number of worker processes Ansible spawns. Each wor
 
 ```ini
 # ansible.cfg - Set the forks value
+
 [defaults]
 forks = 5  # Default
 ```

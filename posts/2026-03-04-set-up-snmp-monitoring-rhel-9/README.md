@@ -33,6 +33,7 @@ Select only the packages you need for your specific setup.
 ```bash
 sudo systemctl enable --now pmcd pmlogger
 # or for sysstat:
+
 sudo systemctl enable --now sysstat
 ```
 

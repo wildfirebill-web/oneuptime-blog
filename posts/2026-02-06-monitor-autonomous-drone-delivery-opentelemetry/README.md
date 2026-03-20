@@ -93,6 +93,7 @@ Battery life is the single biggest constraint for drone delivery. You should tra
 
 ```python
 # Metrics for battery monitoring
+
 battery_consumption_rate = meter.create_histogram(
     "drone.battery.consumption_rate_pct_per_km",
     description="Battery percentage consumed per kilometer of flight",

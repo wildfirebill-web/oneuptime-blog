@@ -32,6 +32,7 @@ The datastore type is configured via environment variable or configuration file:
 
 ```bash
 # Set the datastore type to Kubernetes
+
 export DATASTORE_TYPE=kubernetes
 
 # Verify the connection

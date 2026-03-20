@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Linux, Network Bridge, VLAN Filtering, 802.1Q, bridge, Networking, Virtualization
+Tags: Linux, Network Bridge, VLAN Filtering, 802.1Q, Bridge, Networking, Virtualization
 
 Description: Enable VLAN filtering on a Linux bridge to assign specific VLANs to bridge ports, creating trunk and access port behavior in a software bridge.
 
@@ -14,6 +14,7 @@ VLAN-aware bridges support 802.1Q VLAN filtering, allowing you to assign VLANs t
 
 ```bash
 # Create bridge with VLAN filtering enabled
+
 ip link add br0 type bridge vlan_filtering 1
 ip link set br0 up
 

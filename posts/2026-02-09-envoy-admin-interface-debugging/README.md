@@ -18,6 +18,7 @@ Let's configure the admin interface with proper security:
 
 ```yaml
 # envoy-admin-config.yaml
+
 admin:
   address:
     socket_address:

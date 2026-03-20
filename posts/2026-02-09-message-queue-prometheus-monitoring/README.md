@@ -34,6 +34,7 @@ Create a JMX exporter configuration:
 
 ```yaml
 # kafka-jmx-exporter-config.yaml
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

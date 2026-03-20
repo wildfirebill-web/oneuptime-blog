@@ -46,6 +46,7 @@ If you check "No reboot", the instance stays running but you risk creating an im
 
 ```bash
 # Create an AMI from a running instance (will reboot the instance)
+
 aws ec2 create-image \
     --instance-id i-0123456789abcdef0 \
     --name "webapp-v2.1-2026-02-12" \

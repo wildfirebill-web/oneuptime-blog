@@ -62,6 +62,7 @@ Resilience4j can be configured through `application.yml`. Here is a production-r
 
 ```yaml
 # Circuit breaker configuration in application.yml
+
 resilience4j:
   circuitbreaker:
     instances:

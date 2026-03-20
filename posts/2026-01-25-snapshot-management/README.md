@@ -54,6 +54,7 @@ flowchart TD
 
 ```bash
 # Create snapshot of a volume
+
 aws ec2 create-snapshot \
     --volume-id vol-0123456789abcdef \
     --description "Manual snapshot before upgrade" \

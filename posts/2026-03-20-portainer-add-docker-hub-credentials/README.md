@@ -1,4 +1,4 @@
-# How to Add Docker Hub Credentials to Portainer
+# How to Add Docker Hub Credentials to Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -18,10 +18,10 @@ Adding Docker Hub credentials to Portainer serves two purposes: it enables pulli
 
 ## Why Add Docker Hub Credentials
 
-1. **Private repositories** — Without credentials, Portainer cannot pull images from private Docker Hub repos
-2. **Rate limits** — Docker Hub limits unauthenticated pulls; authentication significantly increases limits
-3. **Docker Hub Pro/Team** — Paid accounts have much higher rate limits
-4. **Security** — Using a dedicated access token is safer than using your account password
+1. **Private repositories** - Without credentials, Portainer cannot pull images from private Docker Hub repos
+2. **Rate limits** - Docker Hub limits unauthenticated pulls; authentication significantly increases limits
+3. **Docker Hub Pro/Team** - Paid accounts have much higher rate limits
+4. **Security** - Using a dedicated access token is safer than using your account password
 
 ## Step 1: Create a Docker Hub Access Token
 
@@ -33,10 +33,10 @@ Using an access token is more secure than using your Docker Hub password:
 4. Click **New Access Token**
 5. Enter a description (e.g., "Portainer - Production")
 6. Select permissions:
-   - **Read-only** — For pulling images only
-   - **Read/Write** — If Portainer also needs to push
+   - **Read-only** - For pulling images only
+   - **Read/Write** - If Portainer also needs to push
 7. Click **Generate**
-8. **Copy the token immediately** — it won't be shown again
+8. **Copy the token immediately** - it won't be shown again
 
 ## Step 2: Add Docker Hub Registry in Portainer
 
@@ -47,7 +47,7 @@ Using an access token is more secure than using your Docker Hub password:
 
 ## Step 3: Fill in Docker Hub Credentials
 
-```
+```bash
 Registry type:    Docker Hub
 Username:         your-docker-hub-username
 Access token:     dckr_pat_xxxxx...   (your personal access token)
@@ -55,7 +55,7 @@ Access token:     dckr_pat_xxxxx...   (your personal access token)
 
 Or use your Docker Hub password if you don't have an access token:
 
-```
+```text
 Username:         your-docker-hub-username
 Password:         your-docker-hub-password
 ```
@@ -74,6 +74,7 @@ After adding:
 
 ```bash
 # CLI verification
+
 docker login -u your-username -p your-access-token
 docker pull your-username/private-repo:tag
 ```
@@ -94,7 +95,7 @@ services:
     image: your-org/private-app:latest   # Portainer uses stored Docker Hub creds
 ```
 
-No additional configuration needed — Portainer automatically uses the stored credentials.
+No additional configuration needed - Portainer automatically uses the stored credentials.
 
 ## Step 6: Configure Per-Environment Registry Access
 
@@ -125,7 +126,7 @@ curl -s --head -H "Authorization: Bearer $TOKEN" \
 
 ### Authentication Failed
 
-```
+```bash
 Error response from daemon: pull access denied for myorg/myimage,
 repository does not exist or may require 'docker login'
 ```
@@ -137,7 +138,7 @@ repository does not exist or may require 'docker login'
 
 ### Rate Limit Exceeded
 
-```
+```text
 Error response from daemon: toomanyrequests: Too Many Requests.
 Rate limit exceeded.
 ```

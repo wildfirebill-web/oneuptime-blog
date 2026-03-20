@@ -14,6 +14,7 @@ Sometimes you need to capture the current state of a running container as a new 
 
 ```bash
 # Create an image from a running or stopped container
+
 docker commit <container> <new-image-name>
 
 # Example: Create image from container named "myapp"

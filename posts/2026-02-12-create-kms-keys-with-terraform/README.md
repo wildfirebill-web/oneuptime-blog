@@ -18,6 +18,7 @@ Here's a symmetric encryption key - the most common type:
 
 ```hcl
 # Basic KMS key for symmetric encryption
+
 resource "aws_kms_key" "main" {
   description             = "Main encryption key for application data"
   deletion_window_in_days = 30

@@ -96,6 +96,7 @@ GKE creates firewall rules for your cluster automatically, but Istio needs some 
 
 ```bash
 # Get your cluster's master CIDR
+
 MASTER_CIDR=$(gcloud container clusters describe istio-cluster \
   --zone us-central1-a \
   --format="get(privateClusterConfig.masterIpv4CidrBlock)")

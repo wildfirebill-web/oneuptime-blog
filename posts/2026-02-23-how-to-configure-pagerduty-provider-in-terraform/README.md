@@ -23,6 +23,7 @@ You need a PagerDuty account with admin access and an API token.
 
 ```bash
 # Set the token as an environment variable
+
 export PAGERDUTY_TOKEN="your-api-token-here"
 ```
 

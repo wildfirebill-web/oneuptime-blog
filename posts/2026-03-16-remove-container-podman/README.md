@@ -20,6 +20,7 @@ Remove a stopped container by name or ID.
 
 ```bash
 # Create and run a container that exits
+
 podman run --name my-task docker.io/library/alpine:latest echo "Task complete"
 
 # Remove the stopped container

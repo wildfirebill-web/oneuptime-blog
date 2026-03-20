@@ -16,6 +16,7 @@ K3s installs as a systemd service by default. Understanding how to manage and cu
 
 ```bash
 # K3s server service
+
 /etc/systemd/system/k3s.service
 
 # K3s agent service (on worker nodes)
@@ -71,7 +72,7 @@ WantedBy=multi-user.target
 
 ## Step 2: Customize K3s Using a Drop-In Override
 
-Never edit the base service file directly — use systemd drop-ins:
+Never edit the base service file directly - use systemd drop-ins:
 
 ```bash
 # Create a drop-in directory
@@ -207,6 +208,6 @@ IOWeight=100
 
 ## Best Practices
 
-- Always use systemd drop-in files (`/etc/systemd/system/k3s.service.d/`) for customizations rather than editing the base unit file — the base file is replaced on K3s upgrades.
+- Always use systemd drop-in files (`/etc/systemd/system/k3s.service.d/`) for customizations rather than editing the base unit file - the base file is replaced on K3s upgrades.
 - Use `journalctl -u k3s -f` for real-time log monitoring during startup and troubleshooting.
 - Set `Restart=always` and a reasonable `RestartSec` (5-10 seconds) to ensure K3s recovers automatically from transient failures, especially important on edge nodes with less stable hardware.

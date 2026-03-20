@@ -30,6 +30,7 @@ Before you start optimizing, figure out where the time is going. You can enable 
 
 ```bash
 # Enable trace-level logging to see exactly what Terraform is doing
+
 TF_LOG=TRACE terraform plan 2> tf-trace.log
 ```
 

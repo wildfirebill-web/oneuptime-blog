@@ -51,6 +51,7 @@ Here is the command to create a proxy-only subnet for regional load balancers:
 
 ```bash
 # Create a proxy-only subnet for regional Envoy-based load balancers
+
 gcloud compute networks subnets create proxy-only-subnet \
     --purpose=REGIONAL_MANAGED_PROXY \
     --role=ACTIVE \

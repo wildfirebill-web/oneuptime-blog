@@ -18,6 +18,7 @@ Before creating monitors, set up where you want alerts to go. OpenSearch support
 
 ```bash
 # Create a Slack notification channel
+
 curl -XPOST "https://search-domain.us-east-1.es.amazonaws.com/_plugins/_notifications/configs" \
     -H "Content-Type: application/json" \
     -d '{

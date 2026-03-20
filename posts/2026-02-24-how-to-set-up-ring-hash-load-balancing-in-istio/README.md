@@ -136,6 +136,7 @@ Inside the pod:
 
 ```bash
 # Same key should always go to same pod
+
 for i in $(seq 1 10); do
   curl -s -H "x-cache-key: user-42" http://cache-service:8080/
 done

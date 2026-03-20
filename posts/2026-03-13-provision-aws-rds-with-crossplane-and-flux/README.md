@@ -29,6 +29,7 @@ The DB subnet group defines which VPC subnets RDS can use for the database insta
 
 ```yaml
 # infrastructure/databases/production/rds-subnet-group.yaml
+
 apiVersion: rds.aws.upbound.io/v1beta1
 kind: SubnetGroup
 metadata:

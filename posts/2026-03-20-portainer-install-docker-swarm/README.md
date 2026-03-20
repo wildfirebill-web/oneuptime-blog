@@ -1,4 +1,4 @@
-# How to Install Portainer on a Docker Swarm Cluster
+# How to Install Portainer on a Docker Swarm Cluster - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -19,7 +19,7 @@ Installing Portainer on Docker Swarm is different from a standalone Docker insta
 
 ## Architecture
 
-```
+```text
 Swarm Manager (Portainer + Agent)
         |
         ├── Worker Node 1 (Agent)
@@ -33,6 +33,7 @@ Portainer runs on the manager, and the Portainer Agent runs on every node to col
 
 ```bash
 # On the manager node
+
 docker swarm init --advertise-addr <manager-ip>
 
 # Save the join token output for worker nodes
@@ -119,7 +120,7 @@ docker stack services portainer
 
 Expected output:
 
-```
+```text
 ID             NAME                MODE       REPLICAS   IMAGE
 abc123         portainer_agent     global     3/3        portainer/agent:latest
 def456         portainer_portainer replicated 1/1        portainer/portainer-ce:latest
@@ -143,9 +144,9 @@ After first login:
 
 Navigate to the Swarm environment and check:
 
-- **Dashboard** — Shows all Swarm services and node count
-- **Swarm → Nodes** — Lists all manager and worker nodes
-- **Services** — Shows all Swarm services across nodes
+- **Dashboard** - Shows all Swarm services and node count
+- **Swarm → Nodes** - Lists all manager and worker nodes
+- **Services** - Shows all Swarm services across nodes
 
 ## Upgrading Portainer on Swarm
 

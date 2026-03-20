@@ -28,6 +28,7 @@ The ArgoCD UI shows diffs between the desired state (Git) and the live state (cl
 
 ```bash
 # CLI equivalent
+
 argocd app diff my-app
 ```
 

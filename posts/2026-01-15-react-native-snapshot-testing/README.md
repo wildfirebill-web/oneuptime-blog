@@ -305,6 +305,7 @@ Run Jest with the update flag to regenerate all snapshots:
 ```bash
 jest --updateSnapshot
 # or the shorthand
+
 jest -u
 ```
 

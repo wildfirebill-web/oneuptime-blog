@@ -43,6 +43,7 @@ fleet-repo/
 
 ```yaml
 # namespaces/infrastructure-namespaces.yaml
+
 apiVersion: v1
 kind: Namespace
 metadata:

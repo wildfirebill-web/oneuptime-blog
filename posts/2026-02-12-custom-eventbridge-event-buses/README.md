@@ -128,7 +128,7 @@ aws events put-targets \
   }]'
 ```
 
-## Resource Policies for Access Control
+Resource Policies for Access Control
 
 Custom buses support resource policies that control which accounts and principals can publish events.
 
@@ -178,6 +178,7 @@ This rule forwards matching events to another account's bus:
 
 ```bash
 # In the sending account
+
 aws events put-rule \
   --name forward-orders \
   --event-pattern '{

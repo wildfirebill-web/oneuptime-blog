@@ -71,6 +71,7 @@ If you already have Istio and Prometheus running, check your actual cardinality:
 
 ```promql
 # Total time series in Prometheus
+
 prometheus_tsdb_head_series
 
 # Time series from Istio specifically

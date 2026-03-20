@@ -53,6 +53,7 @@ HAProxy requires certificates in PEM format with the private key included. Combi
 
 ```bash
 # Combine certificate chain and private key into a single PEM file
+
 # Order matters: certificate -> intermediate -> root -> private key
 cat domain.crt intermediate.crt ca.crt domain.key > /etc/haproxy/certs/domain.pem
 

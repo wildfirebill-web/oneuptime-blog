@@ -8,11 +8,11 @@ Description: Learn how to use HAProxy ACLs to route HTTP requests to different b
 
 ---
 
-HAProxy ACLs (Access Control Lists) are powerful conditions that inspect request attributes — host headers, URL paths, source IPs, and more — to make intelligent routing decisions. They enable a single HAProxy frontend to fan out to multiple backend pools.
+HAProxy ACLs (Access Control Lists) are powerful conditions that inspect request attributes - host headers, URL paths, source IPs, and more - to make intelligent routing decisions. They enable a single HAProxy frontend to fan out to multiple backend pools.
 
 ## ACL Syntax
 
-```
+```text
 acl <name> <test> <value>
 use_backend <backend> if <acl_name>
 ```

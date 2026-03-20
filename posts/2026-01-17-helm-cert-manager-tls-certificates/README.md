@@ -50,6 +50,7 @@ flowchart TB
 
 ```bash
 # Add the Jetstack repository
+
 helm repo add jetstack https://charts.jetstack.io
 
 # Update repositories

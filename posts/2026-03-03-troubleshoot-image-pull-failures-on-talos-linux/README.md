@@ -16,6 +16,7 @@ Start by checking the pod status:
 
 ```bash
 # Check pods with image pull problems
+
 kubectl get pods -A | grep -E "ImagePull|ErrImage"
 
 # Describe the failing pod for details

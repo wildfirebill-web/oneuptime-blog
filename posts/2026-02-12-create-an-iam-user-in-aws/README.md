@@ -48,6 +48,7 @@ The CLI is faster and more repeatable. Here's how to create a user and set up th
 
 ```bash
 # Create a new IAM user
+
 aws iam create-user --user-name jane.smith
 ```
 

@@ -14,6 +14,7 @@ The systemd journal can grow to consume significant disk space, especially on bu
 
 ```bash
 # See how much space the journal is using
+
 journalctl --disk-usage
 
 # Example output:

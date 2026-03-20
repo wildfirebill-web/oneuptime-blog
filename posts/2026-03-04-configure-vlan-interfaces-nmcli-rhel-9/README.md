@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, VLAN, Nmcli, Networking, Linux
+Tags: RHEL, VLAN, nmcli, Networking, Linux
 
 Description: Learn how to create, configure, and manage VLAN interfaces on RHEL using nmcli, with practical examples for network segmentation in production environments.
 
@@ -38,6 +38,7 @@ The kernel module should load automatically, but verify:
 
 ```bash
 # Check if the 8021q module is loaded
+
 lsmod | grep 8021q
 
 # Load it if not present

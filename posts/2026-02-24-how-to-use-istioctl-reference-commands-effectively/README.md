@@ -22,6 +22,7 @@ This shows both the client (istioctl) and server (istiod) versions. Mismatches c
 
 ```bash
 # Output example:
+
 # client version: 1.22.0
 # control plane version: 1.22.0
 # data plane version: 1.22.0 (5 proxies)

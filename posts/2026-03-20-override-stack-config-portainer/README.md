@@ -1,8 +1,8 @@
-# How to Override Stack Configuration for Different Environments
+# How to Override Stack Configuration for Different Environments - Part 2
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker Compose, Environment, Stacks, DevOps
+Tags: Portainer, Docker Compose, Environments, Stacks, DevOps
 
 Description: Use environment-specific configurations and overrides in Portainer stacks for dev, staging, and production deployments.
 
@@ -30,6 +30,7 @@ Understanding Docker Compose stack features in Portainer helps you create more m
 
 ```yaml
 # docker-compose.yml
+
 version: "3.8"
 
 # Reusable configuration using YAML anchors

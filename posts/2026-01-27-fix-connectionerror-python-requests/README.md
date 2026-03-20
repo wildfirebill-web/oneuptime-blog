@@ -27,6 +27,7 @@ except requests.exceptions.ConnectionError as e:
     print(f"Connection failed: {e}")
 
 # Common causes:
+
 # - DNS resolution failure
 # - Server not responding
 # - Network unreachable

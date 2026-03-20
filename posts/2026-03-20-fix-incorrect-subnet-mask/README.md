@@ -39,6 +39,7 @@ The subnet mask tells a host which IP addresses are on the same local network vs
 
 ```bash
 # Show IP addresses and masks
+
 ip addr show
 
 # Example output:
@@ -165,7 +166,7 @@ netsh interface ip set address "Ethernet" static 192.168.1.100 255.255.255.0 192
 ## Verifying the Fix
 
 ```bash
-# Linux — confirm correct mask
+# Linux - confirm correct mask
 ip addr show eth0 | grep "inet "
 # Should show: inet 192.168.1.100/24
 
@@ -203,11 +204,11 @@ ip route show
 
 ## Best Practices
 
-1. **Use CIDR notation** (/24) rather than dotted-decimal masks — less error-prone
+1. **Use CIDR notation** (/24) rather than dotted-decimal masks - less error-prone
 2. **Document all static IP assignments** with the correct mask in your IPAM
 3. **Use DHCP** for client devices to eliminate manual mask errors
 4. **Verify immediately after changes** with `ip addr show` and a ping test
-5. **Check DHCP server config** if many hosts have wrong masks — fix at the source
+5. **Check DHCP server config** if many hosts have wrong masks - fix at the source
 
 ---
 
@@ -217,4 +218,4 @@ An incorrect subnet mask is easily fixed by removing the bad address and adding 
 
 ---
 
-*Monitor your network connectivity with [OneUptime](https://oneuptime.com) — real-time uptime monitoring.*
+*Monitor your network connectivity with [OneUptime](https://oneuptime.com) - real-time uptime monitoring.*

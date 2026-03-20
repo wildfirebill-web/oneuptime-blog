@@ -30,6 +30,7 @@ HPA needs metrics-server to read CPU and memory usage. Check if it is running:
 
 ```yaml
 # task: verify metrics-server is running in the cluster
+
 - name: Check metrics-server deployment
   kubernetes.core.k8s_info:
     kind: Deployment

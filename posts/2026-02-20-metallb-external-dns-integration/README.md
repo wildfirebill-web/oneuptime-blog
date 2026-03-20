@@ -49,6 +49,7 @@ We will use Helm to install External-DNS. This example uses Cloudflare as the DN
 
 ```yaml
 # cloudflare-secret.yaml
+
 # Store your Cloudflare API token securely in a Kubernetes secret.
 apiVersion: v1
 kind: Secret

@@ -20,6 +20,7 @@ If you are using Velero for backups, the first level of verification is checking
 
 ```bash
 # List recent backups and their status
+
 velero backup get
 
 # Get detailed information about a specific backup

@@ -27,6 +27,7 @@ Gateway API validation is typically run after initial deployment, after upgrades
 kubectl get gatewayclass cilium \
   -o jsonpath='{.status.conditions[?(@.type=="Accepted")].status}'
 # Expected: True
+
 ```
 
 ## Validate Gateway Provisioning

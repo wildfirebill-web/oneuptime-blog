@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: OpenTofu, AWS, Cost Allocation, Resource Tagging, Cost Management, Infrastructure as Code
 
-Description: Learn how to implement consistent resource tagging strategies with OpenTofu using default tags, tag validation, and module-enforced tags to enable accurate cost allocation across teams and environments.
+Description: Learn how to implement consistent resource tagging strategies with OpenTofu using default tags, tag validation, and module-enforced tags to enable accurate cost allocation across teams and...
 
 ---
 
@@ -25,7 +25,8 @@ graph TD
 ## Provider Default Tags
 
 ```hcl
-# providers.tf — applied to every AWS resource
+# providers.tf - applied to every AWS resource
+
 provider "aws" {
   region = var.aws_region
 
@@ -132,7 +133,7 @@ resource "aws_ce_cost_allocation_tag" "project" {
 ## Tagging Standards
 
 ```hcl
-# locals.tf — define your standard tag schema
+# locals.tf - define your standard tag schema
 locals {
   standard_tags = {
     Environment = var.environment        # dev, staging, production
@@ -148,8 +149,8 @@ locals {
 
 ## Best Practices
 
-- Use `provider default_tags` to apply mandatory tags to every resource — it's more reliable than adding tags to every resource block.
+- Use `provider default_tags` to apply mandatory tags to every resource - it's more reliable than adding tags to every resource block.
 - Validate required tags in module variables using `validation` blocks so the plan fails if tags are missing.
-- Activate cost allocation tags in AWS Cost Explorer — tags are only visible in billing reports after activation.
-- Never use timestamps in tags that trigger constant drift on every plan — use `ignore_changes` or set `CreatedAt` only on creation.
+- Activate cost allocation tags in AWS Cost Explorer - tags are only visible in billing reports after activation.
+- Never use timestamps in tags that trigger constant drift on every plan - use `ignore_changes` or set `CreatedAt` only on creation.
 - Enforce tagging compliance with AWS Config rules and review non-compliant resources weekly.

@@ -40,6 +40,7 @@ The following configuration demonstrates a simple workflow with two jobs where t
 
 ```yaml
 # .circleci/config.yml
+
 # Version 2.1 is required for workflow features and orbs support
 version: 2.1
 

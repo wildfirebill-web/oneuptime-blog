@@ -216,6 +216,7 @@ A common pattern is to have strict mTLS inside the mesh, TLS termination at the 
 
 ```yaml
 # Mesh-wide strict mTLS
+
 apiVersion: security.istio.io/v1
 kind: PeerAuthentication
 metadata:

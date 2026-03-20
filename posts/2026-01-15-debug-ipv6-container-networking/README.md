@@ -28,6 +28,7 @@ The first step in debugging is confirming that the Docker daemon is properly con
 
 ```bash
 # Check if Docker daemon has IPv6 enabled
+
 # Look for "ipv6": true in the output
 docker info | grep -i ipv6
 

@@ -26,6 +26,7 @@ This guide covers network policy testing on OpenShift Hosted Control Planes.
 
 ```bash
 # Get the API server endpoint
+
 kubectl cluster-info | grep "Kubernetes control plane"
 # Note the IP/hostname for use in egress policies
 ```

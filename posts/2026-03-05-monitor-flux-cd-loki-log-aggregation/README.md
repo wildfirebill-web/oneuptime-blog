@@ -138,6 +138,7 @@ Flux controllers can produce a significant volume of logs, especially in cluster
 
 ```yaml
 # loki-values.yaml
+
 loki:
   config:
     table_manager:

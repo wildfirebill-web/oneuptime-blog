@@ -14,6 +14,7 @@ Description: Learn how to bring up, bring down, connect, and disconnect network 
 
 ```bash
 # Activate a connection profile
+
 nmcli connection up eth0-static
 
 # Output:

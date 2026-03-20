@@ -14,6 +14,7 @@ Squid is a widely used caching proxy server. On RHEL, you can set it up as a for
 
 ```bash
 # Install Squid
+
 sudo dnf install -y squid
 
 # Enable and start the service

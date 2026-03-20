@@ -24,6 +24,7 @@ Make sure you have the following ready:
 
 ```bash
 # Verify Flux CLI version
+
 flux version --client
 
 # List all Kustomizations

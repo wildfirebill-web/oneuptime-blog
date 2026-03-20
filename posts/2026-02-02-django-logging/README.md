@@ -86,6 +86,7 @@ Now you can use logging throughout your application:
 
 ```python
 # views.py
+
 import logging
 
 # Get a logger for this module

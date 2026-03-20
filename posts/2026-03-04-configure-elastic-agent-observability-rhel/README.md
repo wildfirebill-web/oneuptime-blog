@@ -18,6 +18,7 @@ You need a running Elasticsearch and Kibana instance, or an Elastic Cloud deploy
 
 ```bash
 # Download the Elastic Agent RPM (match the version to your Elasticsearch version)
+
 curl -L -O https://artifacts.elastic.co/downloads/beats/elastic-agent/elastic-agent-8.12.0-x86_64.rpm
 
 # Install the agent

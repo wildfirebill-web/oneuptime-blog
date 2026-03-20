@@ -64,6 +64,7 @@ Compare this to the older format:
 
 ```yaml
 # Still works but use v1 instead
+
 apiVersion: networking.istio.io/v1alpha3
 kind: VirtualService
 metadata:

@@ -31,6 +31,7 @@ The directory structure inside the zip must follow a specific layout. For Python
 
 ```bash
 # Create the layer directory structure
+
 mkdir -p layer/python
 
 # Install dependencies into the correct path

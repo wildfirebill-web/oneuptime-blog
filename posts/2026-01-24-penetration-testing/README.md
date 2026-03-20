@@ -44,6 +44,7 @@ Before any testing begins, clearly document what is in scope and what boundaries
 
 ```yaml
 # penetration-test-scope.yml
+
 # Document your testing scope and rules
 
 engagement:

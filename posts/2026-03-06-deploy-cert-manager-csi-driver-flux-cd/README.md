@@ -52,6 +52,7 @@ clusters/
 
 ```yaml
 # clusters/my-cluster/cert-manager/namespace.yaml
+
 apiVersion: v1
 kind: Namespace
 metadata:

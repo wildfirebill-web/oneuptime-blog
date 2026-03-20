@@ -14,6 +14,7 @@ Comments in YAML start with `#` and extend to the end of the line. They are stri
 
 ```yaml
 # Full-line comment explaining a section
+
 - name: Install required packages  # Inline comment
   ansible.builtin.apt:
     name:

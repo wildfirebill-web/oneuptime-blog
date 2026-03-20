@@ -2,9 +2,10 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: rancher, nvidia, gpu, kubernetes, machine-learning
+Tags: Rancher, NVIDIA, GPU, Kubernetes, Machine-learning
 
 Description: Complete guide to enabling NVIDIA GPU support in Rancher clusters for machine learning and GPU-accelerated workloads.
+
 ## Introduction
 
 NVIDIA GPUs dramatically accelerate machine learning, scientific computing, and graphics workloads. Rancher makes it straightforward to configure GPU support across your Kubernetes clusters using the NVIDIA GPU Operator.
@@ -20,6 +21,7 @@ NVIDIA GPUs dramatically accelerate machine learning, scientific computing, and 
 
 ```bash
 # Check GPU is detected by the OS
+
 lspci | grep -i nvidia
 
 # Expected output example:

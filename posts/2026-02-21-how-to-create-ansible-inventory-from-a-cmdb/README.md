@@ -26,6 +26,7 @@ Most CMDBs expose a REST API. While the specifics differ between products (Servi
 ```python
 #!/usr/bin/env python3
 # cmdb_inventory.py
+
 # Generic dynamic inventory that queries a CMDB REST API
 
 import json

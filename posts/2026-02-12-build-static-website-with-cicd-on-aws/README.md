@@ -32,6 +32,7 @@ Create a private S3 bucket:
 
 ```bash
 # Create the bucket
+
 aws s3 mb s3://my-website-production --region us-east-1
 
 # Block public access

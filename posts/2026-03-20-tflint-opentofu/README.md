@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, tflint, Linting, Code Quality, Validation
+Tags: OpenTofu, TFLint, Linting, Code Quality, Validation
 
 Description: Learn how to set up and use tflint to lint OpenTofu configurations, catching errors, enforcing conventions, and validating provider-specific resource attributes beyond what tofu validate provides.
 
@@ -14,6 +14,7 @@ tflint is a linter specifically designed for Terraform and OpenTofu configuratio
 
 ```bash
 # macOS
+
 brew install tflint
 
 # Linux
@@ -200,4 +201,4 @@ lint-tflint:
 
 ## Conclusion
 
-tflint catches a significant class of errors that only surface during `tofu plan` or `tofu apply` against real cloud providers — by running it locally or in CI before the plan, you get faster feedback without needing cloud credentials. The AWS plugin is essential for teams working with AWS as it validates instance types, RDS engines, and other AWS-specific values that OpenTofu itself cannot validate without calling the AWS API.
+tflint catches a significant class of errors that only surface during `tofu plan` or `tofu apply` against real cloud providers - by running it locally or in CI before the plan, you get faster feedback without needing cloud credentials. The AWS plugin is essential for teams working with AWS as it validates instance types, RDS engines, and other AWS-specific values that OpenTofu itself cannot validate without calling the AWS API.

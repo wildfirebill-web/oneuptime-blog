@@ -23,6 +23,7 @@ While datastore migration is typically a one-time operation, automating the proc
 ```bash
 #!/bin/bash
 # automated-migration-datastore-migrate-lock.sh
+
 set -euo pipefail
 
 echo "=== Calico Datastore Migration ==="

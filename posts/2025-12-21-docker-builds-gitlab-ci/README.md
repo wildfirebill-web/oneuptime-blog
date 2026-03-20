@@ -187,6 +187,7 @@ Create efficient images with multi-stage builds:
 
 ```dockerfile
 # Build stage
+
 FROM node:18-alpine AS builder
 WORKDIR /app
 COPY package*.json ./

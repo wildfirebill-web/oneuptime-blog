@@ -20,6 +20,7 @@ Device selectors prevent this by matching interfaces on properties that do not c
 
 ```yaml
 # Instead of this (name-based, fragile)
+
 machine:
   network:
     interfaces:

@@ -52,6 +52,7 @@ Security Onion is resource intensive. Network security monitoring generates subs
 
 ```bash
 # Enable promiscuous mode on your capture interface
+
 sudo ip link set eth1 promisc on
 
 # Verify the interface is in promiscuous mode

@@ -38,6 +38,7 @@ This topic receives logs from Cloud Logging.
 
 ```bash
 # Create a Pub/Sub topic for log forwarding
+
 gcloud pubsub topics create datadog-log-forwarding \
     --project=my-gcp-project \
     --labels=purpose=log-forwarding,destination=datadog

@@ -47,6 +47,7 @@ Here is a basic configuration:
 
 ```yaml
 # otel-collector-config.yaml
+
 receivers:
   otlp:
     protocols:

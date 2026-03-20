@@ -30,6 +30,7 @@ Deploy Redis with persistence:
 
 ```yaml
 # redis-tyk.yaml
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

@@ -29,6 +29,7 @@ The most direct query: get a resource by name and namespace.
 
 ```yaml
 # playbook: get-resource-info.yml
+
 # Retrieves details about a specific Deployment
 ---
 - name: Get Kubernetes resource information

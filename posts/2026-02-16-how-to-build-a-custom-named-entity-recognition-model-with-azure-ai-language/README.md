@@ -46,6 +46,7 @@ If you do not already have one, create an Azure AI Language resource in the Azur
 
 ```bash
 # Create the Language resource
+
 az cognitiveservices account create \
     --name lang-custom-ner \
     --resource-group rg-ai-language \

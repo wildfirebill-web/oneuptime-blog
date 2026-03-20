@@ -14,6 +14,7 @@ telemetrygen is part of the OpenTelemetry Collector contrib repository:
 
 ```bash
 # Install from the releases page
+
 go install github.com/open-telemetry/opentelemetry-collector-contrib/cmd/telemetrygen@latest
 
 # Or download a pre-built binary

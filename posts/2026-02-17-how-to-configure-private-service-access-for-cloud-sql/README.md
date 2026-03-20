@@ -47,6 +47,7 @@ You need:
 
 ```bash
 # Enable the Service Networking API
+
 gcloud services enable servicenetworking.googleapis.com
 ```
 

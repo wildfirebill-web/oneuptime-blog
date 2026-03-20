@@ -115,6 +115,7 @@ DRAIN_TIMEOUT=60
 echo "Starting drain for $BACKEND/$SERVER"
 
 # Set server state to drain (stops new connections, allows existing to complete)
+
 echo "set server $BACKEND/$SERVER state drain" | socat stdio $SOCKET
 
 # Wait for active sessions to drain

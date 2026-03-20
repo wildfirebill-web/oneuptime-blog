@@ -210,6 +210,7 @@ But if you change an attribute that forces replacement (like the `engine` from p
 
 ```hcl
 # Scenario: Changing an attribute that forces replacement
+
 resource "aws_db_instance" "main" {
   identifier     = "${var.project}-db"
   engine         = "mysql"  # Changed from "postgres" - forces replacement

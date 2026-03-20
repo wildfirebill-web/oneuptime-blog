@@ -46,6 +46,7 @@ This updates an ALB HTTPS listener to use the TLS 1.3 security policy:
 
 ```bash
 # Update an existing HTTPS listener
+
 aws elbv2 modify-listener \
   --listener-arn arn:aws:elasticloadbalancing:us-east-1:111111111111:listener/app/my-alb/abc123/def456 \
   --ssl-policy ELBSecurityPolicy-TLS13-1-2-2021-06

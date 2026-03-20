@@ -29,6 +29,7 @@ A Backing Image is an image file (typically a raw disk image or QCOW2 file) stor
 
 ```yaml
 # backing-image-ubuntu.yaml - Ubuntu cloud image as backing image
+
 apiVersion: longhorn.io/v1beta2
 kind: BackingImage
 metadata:

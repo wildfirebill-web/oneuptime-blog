@@ -32,6 +32,7 @@ For Grafana versions before 8.0, install the legacy Worldmap panel. Grafana 8+ i
 
 ```bash
 # For Grafana < 8.0
+
 grafana-cli plugins install grafana-worldmap-panel
 
 # Restart Grafana

@@ -30,6 +30,7 @@ Check if the permission exists:
 
 ```bash
 # Check Lambda's resource policy for API Gateway permissions
+
 aws lambda get-policy \
   --function-name my-function \
   --query 'Policy' \

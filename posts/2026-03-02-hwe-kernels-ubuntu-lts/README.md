@@ -32,6 +32,7 @@ There are two HWE tracks:
 
 ```bash
 # Check current kernel version
+
 uname -r
 
 # Check if you are on a GA or HWE kernel

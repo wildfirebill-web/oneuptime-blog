@@ -49,6 +49,7 @@ Make your changes, then restart the relevant service:
 ```bash
 sudo systemctl restart rsyslog
 # or
+
 sudo systemctl restart systemd-journald
 ```
 

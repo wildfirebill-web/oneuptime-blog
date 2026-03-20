@@ -1233,6 +1233,7 @@ class ContextCache:
 
 
 # Cached evaluator wrapper
+
 class CachedEvaluator:
     """Wraps evaluator with caching layer."""
 

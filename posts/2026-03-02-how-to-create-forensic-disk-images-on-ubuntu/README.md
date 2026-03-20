@@ -35,6 +35,7 @@ If you only have software options on Ubuntu:
 
 ```bash
 # Mount the source disk read-only
+
 sudo mount -o ro /dev/sdb /mnt/evidence
 
 # Or use blockdev to set read-only at the block level

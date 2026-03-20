@@ -14,6 +14,7 @@ libvirt manages virtual networks for KVM guests on RHEL. The default configurati
 
 ```bash
 # List all virtual networks
+
 sudo virsh net-list --all
 
 # Show details of the default network

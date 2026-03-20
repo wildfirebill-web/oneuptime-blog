@@ -44,6 +44,7 @@ Add the required dependencies to your `Cargo.toml`.
 ```toml
 [dependencies]
 # Core tracing API
+
 tracing = "0.1"
 
 # Subscriber for collecting and processing spans/events

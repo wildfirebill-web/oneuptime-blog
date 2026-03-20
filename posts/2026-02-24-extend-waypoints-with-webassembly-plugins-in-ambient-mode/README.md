@@ -85,6 +85,7 @@ The most reliable way to host Wasm binaries is through an OCI registry. Push the
 
 ```bash
 # Using oras CLI
+
 oras push registry.example.com/istio-wasm/custom-header:v1 \
   plugin.wasm:application/vnd.module.wasm.content.layer.v1+wasm
 ```

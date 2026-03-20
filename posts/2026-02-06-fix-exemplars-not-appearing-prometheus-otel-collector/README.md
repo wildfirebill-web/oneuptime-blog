@@ -83,6 +83,7 @@ Prometheus must have exemplar storage enabled. This is not on by default:
 
 ```yaml
 # prometheus.yml
+
 global:
   scrape_interval: 15s
 

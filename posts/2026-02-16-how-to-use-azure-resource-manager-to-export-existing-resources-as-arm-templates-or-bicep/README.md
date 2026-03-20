@@ -26,6 +26,7 @@ The CLI gives you more control and makes the process scriptable. Here is how to 
 
 ```bash
 # Export all resources in a resource group as an ARM template
+
 # The --include-parameter-default-value flag preserves current values as defaults
 az group export \
   --name "my-production-rg" \

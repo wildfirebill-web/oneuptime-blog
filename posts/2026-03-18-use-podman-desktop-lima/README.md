@@ -20,6 +20,7 @@ Lima creates Linux virtual machines using QEMU or the macOS Virtualization frame
 
 ```bash
 # Install Lima on macOS
+
 brew install lima
 
 # Verify the installation

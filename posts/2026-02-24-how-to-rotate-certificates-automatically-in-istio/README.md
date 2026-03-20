@@ -41,6 +41,7 @@ To confirm that rotation is happening, check the certificate details periodicall
 
 ```bash
 # Check certificate serial number and expiry
+
 istioctl proxy-config secret <pod-name> -n <namespace>
 ```
 

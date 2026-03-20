@@ -27,6 +27,7 @@ The most common operation is renaming attributes to follow a consistent naming c
 
 ```yaml
 # Rename attributes to follow OpenTelemetry semantic conventions
+
 processors:
   transform:
     log_statements:

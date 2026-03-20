@@ -27,6 +27,7 @@ Node.js has built-in inspector support. Start your application with the `--inspe
 
 ```bash
 # Start with inspector on default port 9229
+
 node --inspect app.js
 
 # Start with inspector and break on first line

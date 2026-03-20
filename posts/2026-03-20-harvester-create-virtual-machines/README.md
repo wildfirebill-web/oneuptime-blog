@@ -29,7 +29,7 @@ Harvester uses KubeVirt to run virtual machines as Kubernetes-native resources. 
 
 Fill in the VM configuration:
 
-```
+```text
 Name:        ubuntu-web-01
 Namespace:   default
 CPU Cores:   4
@@ -57,6 +57,7 @@ Under the **Advanced** tab, add a cloud-init script:
 
 ```yaml
 # Cloud-init user data for Ubuntu
+
 #cloud-config
 users:
   - name: ubuntu
@@ -270,4 +271,4 @@ kubectl get events --field-selector \
 
 ## Conclusion
 
-Harvester makes VM creation straightforward whether you prefer a GUI, command line, or declarative YAML manifests. Because VMs are Kubernetes resources, you get all the benefits of Kubernetes — RBAC, GitOps workflows, API-driven automation, and integration with CI/CD pipelines. Start with the UI for your first VMs, then transition to manifest-based management for production workloads to enable version control and repeatable deployments.
+Harvester makes VM creation straightforward whether you prefer a GUI, command line, or declarative YAML manifests. Because VMs are Kubernetes resources, you get all the benefits of Kubernetes - RBAC, GitOps workflows, API-driven automation, and integration with CI/CD pipelines. Start with the UI for your first VMs, then transition to manifest-based management for production workloads to enable version control and repeatable deployments.

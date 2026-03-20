@@ -1,8 +1,8 @@
-# How to Install Portainer Using Docker Run Command
+# How to Install Portainer Using Docker Run Command - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: portainer, docker, installation, docker-run, quick-start
+Tags: Portainer, Docker, Installation, Docker-run, Quick-start
 
 Description: A complete reference guide for installing Portainer CE using the docker run command, covering all common flags, options, and configurations.
 
@@ -64,6 +64,7 @@ docker run \
 
 ```bash
 # Change HTTPS port to 8443 (if 9443 is in use)
+
 docker run -d \
   -p 8000:8000 \
   -p 8443:9443 \
@@ -182,4 +183,4 @@ docker volume rm portainer_data
 
 ## Conclusion
 
-The `docker run` command provides a quick, straightforward way to deploy Portainer CE. Understanding each flag helps you customize the deployment for your specific needs — from changing ports to adding TLS certificates to limiting resources. For production environments, consider pinning to a specific version tag rather than `latest` to ensure predictable deployments. When managing multiple server configurations, transitioning to Docker Compose provides better maintainability.
+The `docker run` command provides a quick, straightforward way to deploy Portainer CE. Understanding each flag helps you customize the deployment for your specific needs - from changing ports to adding TLS certificates to limiting resources. For production environments, consider pinning to a specific version tag rather than `latest` to ensure predictable deployments. When managing multiple server configurations, transitioning to Docker Compose provides better maintainability.

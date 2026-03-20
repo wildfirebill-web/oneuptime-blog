@@ -33,6 +33,7 @@ Grab your existing pipeline YAML and document the tasks used.
 
 ```bash
 # List all pipelines in a project
+
 az pipelines list \
   --organization https://dev.azure.com/my-org \
   --project my-project \

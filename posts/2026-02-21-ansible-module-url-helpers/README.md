@@ -19,6 +19,7 @@ from ansible.module_utils.urls import open_url
 import json
 
 # GET request
+
 response = open_url('https://api.example.com/resources', method='GET')
 data = json.loads(response.read())
 

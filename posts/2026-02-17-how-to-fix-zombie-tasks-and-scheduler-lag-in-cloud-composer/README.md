@@ -31,6 +31,7 @@ Look for tasks that have been running much longer than expected:
 
 ```bash
 # List running tasks and check their duration
+
 gcloud composer environments run my-composer-env \
   --location=us-central1 \
   tasks states-for-dag-run -- my_dag_id 2025-01-15

@@ -16,6 +16,7 @@ The `tobool` function converts a string value to a boolean. It accepts `"true"` 
 
 ```hcl
 # Convert string to boolean
+
 > tobool("true")
 true
 

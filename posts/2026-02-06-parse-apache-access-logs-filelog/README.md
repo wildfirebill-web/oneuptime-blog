@@ -145,6 +145,7 @@ For this, use a more permissive regex for the path:
 
 ```yaml
 # Instead of (?P<path>[^\s]+), use:
+
 regex: '... "(?P<method>[A-Z]+) (?P<path>.+?) (?P<protocol>HTTP/[0-9.]+)" ...'
 ```
 

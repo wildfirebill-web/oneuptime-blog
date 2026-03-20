@@ -31,6 +31,7 @@ For production, reserve a static IP so your DNS does not break when the load bal
 
 ```bash
 # AWS - Elastic IP
+
 aws ec2 allocate-address --domain vpc
 
 # GCP - Static IP

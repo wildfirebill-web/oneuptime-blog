@@ -66,6 +66,7 @@ The first step in fixing this error is figuring out which disks are actually ava
 
 ```bash
 # Connect to a node in maintenance mode
+
 # The --insecure flag is needed because TLS is not configured yet
 talosctl get disks --nodes 192.168.1.10 --insecure
 

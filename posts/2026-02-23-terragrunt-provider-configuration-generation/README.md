@@ -16,6 +16,7 @@ In a typical multi-environment Terraform setup, every module directory has somet
 
 ```hcl
 # Every single module has this boilerplate
+
 provider "aws" {
   region = "us-east-1"
 

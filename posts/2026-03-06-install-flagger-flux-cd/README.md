@@ -44,6 +44,7 @@ Create a Flux HelmRepository resource to add the Flagger Helm chart source.
 
 ```yaml
 # infrastructure/flagger/namespace.yaml
+
 # Create a namespace for Flagger components
 apiVersion: v1
 kind: Namespace

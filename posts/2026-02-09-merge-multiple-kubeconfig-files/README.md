@@ -16,6 +16,7 @@ Separate kubeconfig files create friction:
 
 ```bash
 # Before merging - switching config files
+
 export KUBECONFIG=~/.kube/config-gke
 kubectl get nodes
 

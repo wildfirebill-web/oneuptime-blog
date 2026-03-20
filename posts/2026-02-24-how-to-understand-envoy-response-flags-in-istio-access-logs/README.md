@@ -51,6 +51,7 @@ Common causes:
 How to investigate:
 ```bash
 # Check if the destination pod is running
+
 kubectl get pods -l app=destination-service
 # Check if the port is actually open
 kubectl exec deploy/destination-service -- netstat -tlnp | grep 8080

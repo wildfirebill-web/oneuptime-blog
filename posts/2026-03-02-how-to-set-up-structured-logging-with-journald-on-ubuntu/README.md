@@ -16,6 +16,7 @@ Unlike traditional syslog, which produces plain text lines, journald stores each
 
 ```bash
 # View a recent log entry in its full structured form
+
 sudo journalctl -n 1 -o json | python3 -m json.tool
 
 # See all available fields in a single message

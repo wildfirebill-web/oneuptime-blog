@@ -87,6 +87,7 @@ To get a test token using a Google service account:
 
 ```bash
 # Using gcloud
+
 gcloud auth print-identity-token --audiences=https://api.example.com
 ```
 

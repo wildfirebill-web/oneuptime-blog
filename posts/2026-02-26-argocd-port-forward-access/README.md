@@ -32,6 +32,7 @@ The simplest approach forwards a local port to the ArgoCD server service:
 
 ```bash
 # Forward local port 8080 to ArgoCD server service port 443
+
 kubectl port-forward svc/argocd-server -n argocd 8080:443
 
 # Then access the UI at:

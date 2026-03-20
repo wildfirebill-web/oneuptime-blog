@@ -37,6 +37,7 @@ Before installing Terraform Cloud Agent, ensure you have the following:
 
 ```bash
 # Check Ubuntu version (18.04 LTS or later recommended)
+
 lsb_release -a
 
 # Verify you have at least 2GB RAM and 2 CPU cores
@@ -115,6 +116,7 @@ Before installing the agent, you need to create an agent pool in Terraform Cloud
 ```text
 Pool Name: production-agents
 Description: Agents for production infrastructure in private datacenter
+
 ```
 
 ### Step 3: Generate Agent Token

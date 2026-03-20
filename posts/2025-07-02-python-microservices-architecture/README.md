@@ -157,6 +157,7 @@ Start with common utilities that all services will use.
 
 ```python
 # shared/telemetry.py
+
 """
 OpenTelemetry configuration for distributed tracing across services.
 Each service imports this module to enable trace propagation.

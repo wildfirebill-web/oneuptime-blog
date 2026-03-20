@@ -20,6 +20,7 @@ This Dockerfile demonstrates a common mistake: installing cron in a container ex
 
 ```dockerfile
 # This DOESN'T work as expected
+
 FROM ubuntu
 # Install cron package - this is fine, but cron behavior in containers is problematic
 RUN apt-get update && apt-get install -y cron

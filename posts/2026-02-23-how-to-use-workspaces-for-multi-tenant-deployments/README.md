@@ -16,6 +16,7 @@ The idea is straightforward. Each tenant gets a Terraform workspace, and the wor
 
 ```bash
 # Create a workspace for each tenant
+
 terraform workspace new tenant-acme
 terraform workspace new tenant-globex
 terraform workspace new tenant-initech

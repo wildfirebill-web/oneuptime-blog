@@ -48,6 +48,7 @@ Verify the node is cordoned:
 ```bash
 kubectl get node <NODE_NAME>
 # NAME          STATUS                     ROLES    AGE   VERSION
+
 # worker-01     Ready,SchedulingDisabled   worker   30d   v1.28.4
 ```
 

@@ -20,6 +20,7 @@ Learn how to configure Scalr workspaces for OpenTofu with policy-as-code and env
 
 ```bash
 # Verify OpenTofu installation
+
 tofu version
 
 # Set up required environment variables

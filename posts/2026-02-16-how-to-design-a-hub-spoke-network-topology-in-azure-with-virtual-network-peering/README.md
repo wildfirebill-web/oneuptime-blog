@@ -68,6 +68,7 @@ Start with the hub VNet and its subnets:
 
 ```bash
 # Create the hub virtual network
+
 az network vnet create \
   --resource-group hub-rg \
   --name hub-vnet \

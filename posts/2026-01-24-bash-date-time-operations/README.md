@@ -14,6 +14,7 @@ Date and time operations are essential for log processing, scheduling, file mana
 
 ```bash
 # Current date and time
+
 date
 # Output: Fri Jan 24 14:30:00 UTC 2026
 

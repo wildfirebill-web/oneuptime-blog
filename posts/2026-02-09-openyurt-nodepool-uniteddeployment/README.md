@@ -43,6 +43,7 @@ Create NodePools for different retail stores:
 
 ```yaml
 # nodepool-store-01.yaml
+
 apiVersion: apps.openyurt.io/v1beta1
 kind: NodePool
 metadata:

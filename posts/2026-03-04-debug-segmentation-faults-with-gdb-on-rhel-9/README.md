@@ -22,6 +22,7 @@ Debug a segmentation fault:
 
 ```bash
 # Install gdb and debug symbols
+
 sudo dnf install -y gdb
 sudo dnf debuginfo-install -y <package-name>
 

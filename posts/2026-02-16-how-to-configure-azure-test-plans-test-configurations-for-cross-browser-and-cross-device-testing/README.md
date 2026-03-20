@@ -48,6 +48,7 @@ You can also manage configuration variables through the REST API.
 
 ```bash
 # Create a configuration variable using the REST API
+
 ORG="your-organization"
 PROJECT="your-project"
 PAT="your-pat"

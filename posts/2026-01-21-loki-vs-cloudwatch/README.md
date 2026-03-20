@@ -57,6 +57,7 @@ flowchart LR
 
 ```yaml
 # AWS CloudWatch Logs Pricing (us-east-1, 2024)
+
 cloudwatch_costs:
   ingestion: $0.50 per GB
   storage: $0.03 per GB/month

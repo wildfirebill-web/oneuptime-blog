@@ -91,6 +91,7 @@ The extensionProviders section in the mesh config tells Istio how to communicate
 
 ```yaml
 # istio-mesh-config.yaml
+
 # This ConfigMap patch adds OPA as an extension provider to Istio's mesh configuration.
 # The extensionProvider defines how Envoy sidecars will communicate with OPA.
 apiVersion: v1

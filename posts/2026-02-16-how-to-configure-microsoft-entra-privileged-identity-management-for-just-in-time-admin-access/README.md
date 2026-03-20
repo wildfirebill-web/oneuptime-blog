@@ -112,6 +112,7 @@ You can also do this with PowerShell:
 
 ```powershell
 # Connect to Microsoft Graph with PIM permissions
+
 Connect-MgGraph -Scopes "RoleManagement.ReadWrite.Directory"
 
 # Get the role definition ID for Global Administrator

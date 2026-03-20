@@ -12,7 +12,7 @@ Traceroute reveals the exact path packets take from your machine to a destinatio
 
 Traceroute exploits the TTL (Time To Live) field to reveal each hop:
 
-```
+```text
 1. Send packet with TTL=1 → First router decrements to 0, sends ICMP "Time Exceeded"
    → We record first router's IP
 
@@ -26,6 +26,7 @@ Traceroute exploits the TTL (Time To Live) field to reveal each hop:
 
 ```bash
 # Install traceroute
+
 sudo apt install traceroute -y    # Debian/Ubuntu
 sudo yum install traceroute -y    # RHEL/CentOS
 
@@ -106,7 +107,7 @@ traceroute --mpls 8.8.8.8    # Shows MPLS labels if supported
 
 ```bash
 #!/bin/bash
-# check-paths.sh — Trace routes to multiple targets
+# check-paths.sh - Trace routes to multiple targets
 
 TARGETS=("8.8.8.8" "1.1.1.1" "192.168.10.1" "10.0.0.1")
 
@@ -117,4 +118,4 @@ for target in "${TARGETS[@]}"; do
 done
 ```
 
-Traceroute is the standard tool for understanding network topology — when ping says "something's wrong," traceroute tells you exactly where.
+Traceroute is the standard tool for understanding network topology - when ping says "something's wrong," traceroute tells you exactly where.

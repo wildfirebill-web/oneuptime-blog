@@ -14,6 +14,7 @@ Velero backs up Kubernetes cluster resources and persistent volumes to object st
 
 ```hcl
 # main.tf - S3 bucket for Velero backups
+
 resource "aws_s3_bucket" "velero" {
   bucket = "my-cluster-velero-backups"
 }

@@ -29,6 +29,7 @@ You can enable OS Login for all VMs in a project by setting a project-wide metad
 
 ```bash
 # Enable OS Login for all VMs in the project
+
 gcloud compute project-info add-metadata \
     --metadata enable-oslogin=TRUE
 ```

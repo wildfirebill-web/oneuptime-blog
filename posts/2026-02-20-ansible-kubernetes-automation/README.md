@@ -72,6 +72,7 @@ Define your cluster nodes in the inventory.
 
 ```yaml
 # inventory/hosts.yml
+
 # Defines all nodes in the Kubernetes cluster
 all:
   children:

@@ -47,6 +47,7 @@ FIS needs an IAM role with permissions to perform the fault injection actions:
 
 ```bash
 # Create the FIS experiment role
+
 aws iam create-role \
   --role-name "FISExperimentRole" \
   --assume-role-policy-document '{

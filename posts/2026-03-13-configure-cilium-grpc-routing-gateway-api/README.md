@@ -85,6 +85,7 @@ spec:
 
 ```bash
 # Using grpcurl
+
 GATEWAY_IP=$(kubectl get gateway grpc-gateway -n grpc-demo \
   -o jsonpath='{.status.addresses[0].value}')
 

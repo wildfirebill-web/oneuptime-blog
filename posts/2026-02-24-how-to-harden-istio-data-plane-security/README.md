@@ -332,6 +332,7 @@ After applying all these changes, verify that the hardening is effective:
 
 ```bash
 # Check security context of sidecar containers
+
 kubectl get pod -l app=myapp -o json | \
   jq '.items[0].spec.containers[] | select(.name=="istio-proxy") | .securityContext'
 

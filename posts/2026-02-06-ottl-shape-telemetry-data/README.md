@@ -52,6 +52,7 @@ Path expressions access nested data:
 
 ```ottl
 # Access resource attribute
+
 resource.attributes["service.name"]
 
 # Access span attribute

@@ -20,6 +20,7 @@ Before building for a non-native architecture, you need QEMU user-static binarie
 
 ```bash
 # On Fedora/RHEL/CentOS
+
 sudo dnf install qemu-user-static
 
 # On Ubuntu/Debian

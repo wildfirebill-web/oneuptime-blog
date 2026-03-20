@@ -16,6 +16,7 @@ The simplest form of the command takes just a workspace name:
 
 ```bash
 # Create a new workspace called "dev"
+
 terraform workspace new dev
 ```
 

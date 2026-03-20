@@ -22,6 +22,7 @@ Gatling provides official Docker images. Start with a quick test to confirm ever
 
 ```bash
 # Run Gatling's built-in computer database simulation
+
 docker run --rm \
   -v "$(pwd)/results:/opt/gatling/results" \
   denvazh/gatling \

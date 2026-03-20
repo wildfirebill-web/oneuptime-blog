@@ -16,6 +16,7 @@ SAP Business One on HANA has specific hardware and OS requirements:
 
 ```bash
 # Check minimum requirements
+
 # CPU: 4+ cores
 # RAM: 16 GB minimum (32 GB recommended)
 # Disk: 100 GB+ for HANA data

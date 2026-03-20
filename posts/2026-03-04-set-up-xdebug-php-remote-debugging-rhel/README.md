@@ -14,6 +14,7 @@ Xdebug is the standard PHP debugging extension. Version 3 introduced a simplifie
 
 ```bash
 # Install Xdebug via dnf (if available from Remi)
+
 sudo dnf install -y php-xdebug
 
 # Or install via PECL

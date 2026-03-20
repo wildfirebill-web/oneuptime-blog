@@ -332,6 +332,7 @@ from kfp import compiler
 from google.cloud import aiplatform
 
 # Compile the pipeline to a YAML file
+
 compiler.Compiler().compile(
     pipeline_func=summarization_pipeline,
     package_path="summarization_pipeline.yaml",

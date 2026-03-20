@@ -161,6 +161,7 @@ Metrics don't update instantly. There's inherent lag in the collection pipeline.
 
 ```yaml
 # Metrics collection timeline
+
 # T+0:   Pod starts handling requests
 # T+15s: Metrics scraped by metrics-server
 # T+30s: Metrics available to HPA

@@ -58,6 +58,7 @@ To analyze waterfall diagrams, you first need to find the right traces. Cloud Tr
 
 ```bash
 # Use gcloud to list recent traces matching criteria
+
 gcloud trace traces list \
   --project=my-project \
   --filter="rootSpan.name:checkout AND rootSpan.duration>3s" \

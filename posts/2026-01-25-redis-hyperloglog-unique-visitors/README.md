@@ -33,6 +33,7 @@ Redis provides three commands for HyperLogLog:
 
 ```bash
 # PFADD: Add elements to a HyperLogLog
+
 # Returns 1 if the cardinality estimate changed, 0 otherwise
 PFADD visitors:2026-01-25 "user_abc123"
 PFADD visitors:2026-01-25 "user_def456" "user_ghi789"

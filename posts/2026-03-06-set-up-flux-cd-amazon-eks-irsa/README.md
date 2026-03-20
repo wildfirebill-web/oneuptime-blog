@@ -26,6 +26,7 @@ IRSA requires an OpenID Connect (OIDC) provider associated with your EKS cluster
 
 ```bash
 # Check if OIDC provider is already configured
+
 aws eks describe-cluster \
   --name my-cluster \
   --query "cluster.identity.oidc.issuer" \

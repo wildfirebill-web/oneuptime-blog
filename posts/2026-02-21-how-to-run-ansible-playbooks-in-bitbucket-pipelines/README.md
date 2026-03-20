@@ -18,6 +18,7 @@ Create a `bitbucket-pipelines.yml` file in your repository root.
 
 ```yaml
 # bitbucket-pipelines.yml - Basic Ansible pipeline
+
 image: python:3.11-slim
 
 definitions:

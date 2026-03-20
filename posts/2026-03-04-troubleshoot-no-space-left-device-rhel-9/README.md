@@ -20,6 +20,7 @@ Start with the obvious. See which filesystems are full.
 
 ```bash
 # Show disk usage for all mounted filesystems in human-readable format
+
 df -h
 ```
 

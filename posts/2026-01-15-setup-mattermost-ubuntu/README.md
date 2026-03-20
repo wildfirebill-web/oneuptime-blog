@@ -61,6 +61,7 @@ Let's start by updating the system and installing the necessary packages:
 
 ```bash
 # Update system packages to the latest versions
+
 sudo apt update && sudo apt upgrade -y
 
 # Install essential utilities

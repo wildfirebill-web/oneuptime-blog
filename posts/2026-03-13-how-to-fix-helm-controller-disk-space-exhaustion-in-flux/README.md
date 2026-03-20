@@ -121,6 +121,7 @@ For releases with excessive revisions, delete old ones:
 
 ```bash
 # Keep only the last 3 revisions for a release
+
 NAMESPACE=default
 RELEASE=my-app
 kubectl get secrets -n $NAMESPACE -l name=$RELEASE,owner=helm --sort-by=.metadata.creationTimestamp -o name | head -n -3 | xargs kubectl delete -n $NAMESPACE

@@ -30,6 +30,7 @@ If the node is part of a running cluster, follow the proper removal procedure be
 
 ```bash
 # Cordon the node to prevent new workloads
+
 kubectl cordon <node-name>
 
 # Drain existing workloads

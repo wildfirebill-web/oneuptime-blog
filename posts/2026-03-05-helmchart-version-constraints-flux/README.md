@@ -26,6 +26,7 @@ The `spec.version` field in a HelmChart resource accepts a semver constraint str
 
 ```yaml
 # Basic HelmChart with version constraint
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmChart
 metadata:

@@ -38,6 +38,7 @@ If your ArgoCD cluster does not already have Workload Identity enabled:
 
 ```bash
 # Enable Workload Identity on the cluster
+
 gcloud container clusters update argocd-cluster \
   --zone us-central1-a \
   --project argocd-project \

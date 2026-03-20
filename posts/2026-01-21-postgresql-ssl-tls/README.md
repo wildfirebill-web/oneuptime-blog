@@ -30,6 +30,7 @@ SSL/TLS provides:
 
 ```bash
 # Create directory for certificates
+
 sudo mkdir -p /etc/postgresql/certs
 cd /etc/postgresql/certs
 

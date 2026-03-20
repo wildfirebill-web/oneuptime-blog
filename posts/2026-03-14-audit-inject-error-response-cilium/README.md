@@ -30,6 +30,7 @@ Review every string that appears in error responses:
 
 ```bash
 # Find all strings used in error responses
+
 grep -n "buildErrorResponse\|Inject\|errorMessage\|errMsg" proxylib/myprotocol/*.go | grep -v test
 
 # Find all format strings in injection paths

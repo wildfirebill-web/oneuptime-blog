@@ -98,6 +98,7 @@ The following command installs a plugin by its ID:
 
 ```bash
 # Install the pie chart panel plugin
+
 # The plugin ID matches what you see in the catalog URL
 grafana-cli plugins install grafana-piechart-panel
 ```

@@ -27,6 +27,7 @@ You will need:
 
 ```bash
 # Create the Node-RED project directory with a data folder
+
 mkdir -p ~/node-red/data
 cd ~/node-red
 ```

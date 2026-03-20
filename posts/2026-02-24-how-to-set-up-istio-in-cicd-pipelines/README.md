@@ -125,6 +125,7 @@ If you use Kustomize for environment-specific configuration:
 
 ```yaml
 # k8s/base/kustomization.yaml
+
 resources:
   - deployment.yaml
   - service.yaml

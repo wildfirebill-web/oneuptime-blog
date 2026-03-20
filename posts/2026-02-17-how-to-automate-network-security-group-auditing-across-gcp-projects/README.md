@@ -43,6 +43,7 @@ First, enable the required APIs:
 
 ```bash
 # Enable Cloud Asset API at the organization level
+
 gcloud services enable cloudasset.googleapis.com
 
 # Enable BigQuery for storing audit results

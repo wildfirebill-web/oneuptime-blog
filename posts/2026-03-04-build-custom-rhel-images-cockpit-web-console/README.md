@@ -14,6 +14,7 @@ The Cockpit web console provides a graphical interface for RHEL Image Builder. Y
 
 ```bash
 # Install Cockpit and the Image Builder plugin
+
 sudo dnf install -y cockpit cockpit-composer osbuild-composer composer-cli
 
 # Enable and start both services

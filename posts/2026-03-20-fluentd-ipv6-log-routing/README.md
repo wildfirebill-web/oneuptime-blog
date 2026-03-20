@@ -16,6 +16,7 @@ Fluentd can accept log input over IPv6 sockets and route events based on IPv6 fi
 <!-- /etc/fluent/fluent.conf -->
 
 # Listen on all IPv6 interfaces via TCP syslog input
+
 <source>
   @type syslog
   port 5140
@@ -177,4 +178,4 @@ Fluentd can accept log input over IPv6 sockets and route events based on IPv6 fi
 
 ## Conclusion
 
-Fluentd supports IPv6 natively through its socket-based input plugins — bind `::` to accept connections on all IPv6 interfaces, and use bracketed IPv6 addresses in output plugin configuration for forwarding. The `record_transformer` with Ruby enables IPv6 address normalization and subnet classification, while the `rewrite_tag_filter` plugin routes events from different IPv6 prefixes to appropriate outputs. Always test IPv6 connectivity from Fluentd's process to downstream systems before enabling in production.
+Fluentd supports IPv6 natively through its socket-based input plugins - bind `::` to accept connections on all IPv6 interfaces, and use bracketed IPv6 addresses in output plugin configuration for forwarding. The `record_transformer` with Ruby enables IPv6 address normalization and subnet classification, while the `rewrite_tag_filter` plugin routes events from different IPv6 prefixes to appropriate outputs. Always test IPv6 connectivity from Fluentd's process to downstream systems before enabling in production.

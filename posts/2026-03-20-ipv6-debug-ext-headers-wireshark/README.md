@@ -12,8 +12,9 @@ Wireshark provides a rich graphical and filter-based interface for analyzing IPv
 
 ## Key Wireshark Display Filters
 
-```
+```text
 # Capture all IPv6 traffic
+
 ip.version == 6
 ipv6
 
@@ -53,7 +54,7 @@ ipv6.routing.type == 4    # Type 4 (Segment Routing)
 
 These go in the "Capture filter" field to filter at capture time:
 
-```
+```text
 # Capture packets with Fragment Header (Next Header byte at offset 6)
 ip6[6] == 44
 
@@ -130,7 +131,7 @@ tshark -r capture.pcap -Y "ipv6.routing.type == 0" \
 
 Add these coloring rules in Edit → Coloring Rules to visually highlight extension headers:
 
-```
+```text
 Rule name: IPv6 Fragment
 Filter: ipv6.fragment
 Background: Orange

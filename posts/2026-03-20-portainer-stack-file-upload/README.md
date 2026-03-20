@@ -1,4 +1,4 @@
-# How to Create a Stack from a File Upload in Portainer
+# How to Create a Stack from a File Upload in Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Learn how to deploy Docker Compose stacks by uploading a file to Po
 
 ## Introduction
 
-Portainer's file upload method lets you deploy a Docker Compose stack by uploading a `.yml` file directly from your local machine. This approach is useful in air-gapped environments without Git access, for one-off deployments where a repository would be overkill, or when sharing a stack configuration as a file. Unlike the web editor, the uploaded file is read once at deploy time — there is no ongoing sync with the source file.
+Portainer's file upload method lets you deploy a Docker Compose stack by uploading a `.yml` file directly from your local machine. This approach is useful in air-gapped environments without Git access, for one-off deployments where a repository would be overkill, or when sharing a stack configuration as a file. Unlike the web editor, the uploaded file is read once at deploy time - there is no ongoing sync with the source file.
 
 ## Prerequisites
 
@@ -29,7 +29,8 @@ Portainer's file upload method lets you deploy a Docker Compose stack by uploadi
 Create or save a complete Docker Compose file locally:
 
 ```yaml
-# wordpress-stack.yml — WordPress with MySQL
+# wordpress-stack.yml - WordPress with MySQL
+
 version: "3.8"
 
 services:
@@ -87,7 +88,7 @@ Save this file as `wordpress-stack.yml` on your local machine.
 
 In the **Environment variables** section:
 
-```
+```text
 DB_NAME           wordpress
 DB_USER           wpuser
 DB_PASSWORD       securepassword123
@@ -104,9 +105,9 @@ DB_ROOT_PASSWORD  rootpassword456
 
 Understand what file upload does NOT do:
 
-```
-1. No version tracking — the uploaded file is not stored long-term
-2. No auto-update — changes to the local file won't propagate
+```text
+1. No version tracking - the uploaded file is not stored long-term
+2. No auto-update - changes to the local file won't propagate
 3. To update: must re-upload or switch to web editor / Git method
 
 After upload, the stack content is visible in the web editor.
@@ -134,7 +135,7 @@ gunzip -c stack-images.tar.gz | docker load
 # Verify images are present:
 docker images | grep -E "wordpress|mysql"
 
-# Then upload the stack file in Portainer — it will use local images
+# Then upload the stack file in Portainer - it will use local images
 ```
 
 ## Step 7: Convert an Existing Stack to Git-Based
@@ -151,4 +152,4 @@ This migration adds version control and auto-update capabilities.
 
 ## Conclusion
 
-File upload is the most direct deployment path for situations where Git repositories are unavailable or unnecessary — particularly air-gapped environments, quick demos, or configuration sharing between teams. Prepare a complete Compose file with environment variable placeholders, upload it to Portainer, fill in the variable values, and deploy. For long-running production services, consider migrating to Git-based deployment to gain version history, rollback, and automatic updates.
+File upload is the most direct deployment path for situations where Git repositories are unavailable or unnecessary - particularly air-gapped environments, quick demos, or configuration sharing between teams. Prepare a complete Compose file with environment variable placeholders, upload it to Portainer, fill in the variable values, and deploy. For long-running production services, consider migrating to Git-based deployment to gain version history, rollback, and automatic updates.

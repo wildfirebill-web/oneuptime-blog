@@ -1,8 +1,8 @@
-# How to Understand Link-Local Addresses (fe80::/10)
+# How to Understand Link-Local Addresses (fe80::/10) - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Link-Local, fe80, RFC 4291, NDP, Networking
+Tags: IPv6, Link-Local, Fe80, RFC 4291, NDP, Networking
 
 Description: Understand IPv6 link-local addresses (fe80::/10), how they are auto-generated, their scope limitations, and how to use them in applications with zone IDs.
 
@@ -21,6 +21,7 @@ Link-local addresses (fe80::/10) are IPv6 addresses that are valid only on a sin
 
 ```bash
 # View auto-generated link-local on all interfaces
+
 ip -6 addr show scope link
 
 # EUI-64-based IID (from MAC address aa:bb:cc:dd:ee:ff):
@@ -90,4 +91,4 @@ ip6tables -A INPUT -s fe80::/10 -p udp --dport 546 -j ACCEPT
 
 ## Conclusion
 
-Link-local addresses are fundamental to IPv6 operation — NDP, router discovery, and routing protocols all rely on them. When using link-local addresses in applications, always include the zone ID (interface scope). Never forward link-local traffic. Use OneUptime to monitor NDP health indirectly through neighbor table metrics.
+Link-local addresses are fundamental to IPv6 operation - NDP, router discovery, and routing protocols all rely on them. When using link-local addresses in applications, always include the zone ID (interface scope). Never forward link-local traffic. Use OneUptime to monitor NDP health indirectly through neighbor table metrics.

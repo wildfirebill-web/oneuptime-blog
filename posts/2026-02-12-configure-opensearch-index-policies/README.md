@@ -29,6 +29,7 @@ Let's build a practical ISM policy for application logs. This policy will manage
 
 ```bash
 # Create an ISM policy via the OpenSearch API
+
 curl -X PUT "https://my-domain.us-east-1.es.amazonaws.com/_plugins/_ism/policies/app-logs-policy" \
   -H 'Content-Type: application/json' -d '{
   "policy": {

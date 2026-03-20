@@ -35,6 +35,7 @@ The admin interface is the most powerful debugging tool for Envoy. Enable it in 
 
 ```yaml
 # envoy.yaml - Enable admin interface for debugging
+
 admin:
   # Access log for admin requests (useful for auditing)
   access_log_path: /var/log/envoy/admin_access.log

@@ -33,6 +33,7 @@ The React Native CLI now includes excellent TypeScript support out of the box. L
 
 ```bash
 # Using the React Native CLI with TypeScript template
+
 npx react-native@latest init MyProductionApp --template react-native-template-typescript
 
 # Navigate to your project
@@ -1832,7 +1833,7 @@ Happy coding, and may your React Native journey be smooth and productive!
 
 ---
 
-## Resources
+Resources
 
 - [React Native Documentation](https://reactnative.dev/docs/getting-started)
 - [TypeScript Handbook](https://www.typescriptlang.org/docs/)

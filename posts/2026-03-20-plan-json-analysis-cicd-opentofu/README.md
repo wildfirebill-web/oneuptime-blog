@@ -26,6 +26,7 @@ flowchart TD
 
 ```yaml
 # .github/workflows/infra-pr.yml
+
 name: Infrastructure PR Check
 
 on:
@@ -75,7 +76,7 @@ jobs:
 
 ```python
 #!/usr/bin/env python3
-# ci-plan-summary.py — generate a Markdown summary for PR comments
+# ci-plan-summary.py - generate a Markdown summary for PR comments
 
 import json, sys
 

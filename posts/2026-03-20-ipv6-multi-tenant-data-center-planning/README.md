@@ -14,7 +14,7 @@ Multi-tenant data centers must provide isolation between tenants while efficient
 
 Assign a dedicated /48 or /56 prefix per tenant, drawn from your data center's /32 allocation:
 
-```
+```text
 Data Center Allocation: 2001:db8::/32
 
 Tenant A: 2001:db8:0001::/48
@@ -24,14 +24,15 @@ Tenant C: 2001:db8:0003::/48
 Management: 2001:db8:ffff::/48
 ```
 
-Each tenant's /48 allows them 65,536 subnets internally — more than enough for complex workloads.
+Each tenant's /48 allows them 65,536 subnets internally - more than enough for complex workloads.
 
 ## Isolation Mechanisms
 
 Use VRFs (Virtual Routing and Forwarding) to isolate tenant routing tables even on shared infrastructure:
 
-```
+```text
 # Cisco IOS-XE VRF configuration for tenant isolation
+
 vrf definition TENANT-A
  address-family ipv6
   exit-address-family
@@ -56,7 +57,7 @@ Map tenant VLANs to their IPv6 prefixes consistently:
 
 Shared services (DNS, NTP, patch servers) can be exposed to tenants using selective route leaking:
 
-```
+```python
 # Leak shared services prefix into tenant VRFs
 router bgp 65000
  address-family ipv6 vrf TENANT-A
@@ -67,7 +68,7 @@ router bgp 65000
 
 Deploy per-tenant DHCPv6 scopes to control address assignment:
 
-```
+```text
 # ISC Kea DHCPv6 subnet for Tenant A
 {
   "subnet6": [
@@ -91,7 +92,7 @@ Use IPFIX/NetFlow with tenant prefix filtering to produce per-tenant traffic rep
 
 ## Security Between Tenants
 
-Always deploy ACLs or security groups at tenant boundaries. Never rely solely on VRF isolation for security — combine with explicit firewall policies.
+Always deploy ACLs or security groups at tenant boundaries. Never rely solely on VRF isolation for security - combine with explicit firewall policies.
 
 ## Conclusion
 

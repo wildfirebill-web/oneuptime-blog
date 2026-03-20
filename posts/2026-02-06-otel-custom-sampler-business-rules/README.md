@@ -20,6 +20,7 @@ A sampler receives context about the span being created and returns a sampling d
 
 ```python
 # business_sampler.py
+
 from opentelemetry.sdk.trace.sampling import (
     Sampler,
     SamplingResult,

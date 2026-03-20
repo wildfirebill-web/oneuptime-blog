@@ -22,6 +22,7 @@ The `.backup` dot-command in the SQLite shell uses the SQLite Backup API, which 
 
 ```bash
 # Create a backup while the database may be in use
+
 sqlite3 /data/myapp.db ".backup /backup/myapp_$(date +%Y%m%d_%H%M%S).db"
 
 # Verify the backup is valid

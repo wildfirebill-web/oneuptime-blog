@@ -33,6 +33,7 @@ Install `talosctl` and make sure Docker is running:
 
 ```bash
 # Install talosctl
+
 brew install siderolabs/tap/talosctl  # macOS
 # or
 curl -sL https://talos.dev/install | sh  # Linux

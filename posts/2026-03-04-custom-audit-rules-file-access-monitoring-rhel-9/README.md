@@ -51,6 +51,7 @@ File watch rules are the simplest way to monitor file access:
 
 ```bash
 # Create a rules file for configuration monitoring
+
 sudo tee /etc/audit/rules.d/10-file-access.rules << 'EOF'
 ## Monitor critical system configuration files
 

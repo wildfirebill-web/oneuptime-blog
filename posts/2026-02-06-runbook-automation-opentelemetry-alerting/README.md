@@ -30,6 +30,7 @@ Runbooks should be version-controlled and structured. Define them in a format th
 
 ```yaml
 # runbooks/connection-pool-exhaustion.yaml
+
 apiVersion: runbook/v1
 kind: AutomatedRunbook
 metadata:

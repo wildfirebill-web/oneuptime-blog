@@ -32,6 +32,7 @@ ISO date format sorts correctly with alphabetical ordering because the most sign
 
 ```yaml
 # imagepolicy-iso-date.yaml
+
 # Select the latest ISO date tag
 apiVersion: image.toolkit.fluxcd.io/v1
 kind: ImagePolicy

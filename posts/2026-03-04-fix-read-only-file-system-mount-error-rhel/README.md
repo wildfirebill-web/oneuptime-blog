@@ -14,6 +14,7 @@ A "Read-only file system" error means the filesystem has been remounted as read-
 
 ```bash
 # Check mount options for all filesystems
+
 mount | grep "ro,"
 
 # Or use findmnt for a cleaner view

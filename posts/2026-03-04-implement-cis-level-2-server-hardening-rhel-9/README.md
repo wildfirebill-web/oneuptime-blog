@@ -31,6 +31,7 @@ Level 2 requires SELinux to be in enforcing mode. This is critical and non-negot
 
 ```bash
 # Check current SELinux status
+
 getenforce
 sestatus
 

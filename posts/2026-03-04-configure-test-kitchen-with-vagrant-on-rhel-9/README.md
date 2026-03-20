@@ -28,6 +28,7 @@ Test Kitchen follows a straightforward workflow:
 
 ```bash
 # Install Ruby and development tools
+
 sudo dnf install -y ruby ruby-devel gcc make redhat-rpm-config
 ```
 

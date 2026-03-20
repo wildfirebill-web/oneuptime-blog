@@ -12,7 +12,7 @@ Multi-cloud architectures require non-overlapping IPv4 CIDRs across all cloud pr
 
 ## Multi-Cloud Addressing Framework
 
-```
+```text
 Master Allocation: 10.0.0.0/8
 
   On-Premises:    10.0.0.0/10    (10.0.0.0 – 10.63.255.255)
@@ -37,6 +37,7 @@ Master Allocation: 10.0.0.0/8
 
 ```hcl
 # Terraform
+
 resource "aws_vpc" "prod" {
   cidr_block = "10.64.0.0/16"
 }

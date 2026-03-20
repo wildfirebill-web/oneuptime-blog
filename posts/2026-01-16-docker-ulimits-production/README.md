@@ -16,6 +16,7 @@ Ulimits are per-process resource limits inherited from the parent process. In Do
 
 ```bash
 # View current ulimits on host
+
 ulimit -a
 
 # View specific limit

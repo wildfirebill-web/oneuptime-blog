@@ -21,6 +21,7 @@ npx react-native init CognitoMobileApp --template react-native-template-typescri
 cd CognitoMobileApp
 
 # AWS Cognito SDK
+
 npm install @aws-sdk/client-cognito-identity-provider
 
 # Secure storage for tokens (uses Keychain on iOS, Keystore on Android)

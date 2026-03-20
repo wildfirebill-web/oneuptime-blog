@@ -16,6 +16,7 @@ Node-level Calico issues present as connectivity failures affecting only pods on
 
 ```bash
 # Identify the affected node's calico-node pod
+
 PROBLEM_NODE="<node-name>"
 CALICO_POD=$(kubectl get pods -n calico-system -l k8s-app=calico-node \
   --field-selector="spec.nodeName=${PROBLEM_NODE}" \

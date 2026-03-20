@@ -34,6 +34,7 @@ pip is the most flexible method for version pinning.
 
 ```bash
 # List all available versions of the ansible package
+
 pip index versions ansible
 
 # List all available versions of ansible-core

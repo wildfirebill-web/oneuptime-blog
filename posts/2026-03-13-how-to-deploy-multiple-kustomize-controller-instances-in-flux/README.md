@@ -25,6 +25,7 @@ Determine how to distribute Kustomizations across shards. Common strategies incl
 
 ```bash
 # Review current Kustomization count and distribution
+
 kubectl get kustomizations -A --no-headers | wc -l
 kubectl get kustomizations -A --no-headers | awk '{print $1}' | sort | uniq -c | sort -rn
 ```

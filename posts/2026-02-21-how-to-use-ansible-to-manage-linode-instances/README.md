@@ -23,6 +23,7 @@ You need:
 
 ```bash
 # Install the Linode collection and Python SDK
+
 ansible-galaxy collection install linode.cloud
 pip install linode_api4
 ```

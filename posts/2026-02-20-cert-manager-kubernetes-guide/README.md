@@ -36,6 +36,7 @@ cert-manager watches for Certificate resources and Ingress annotations. When it 
 
 ```bash
 # Install cert-manager using kubectl
+
 # This installs the CRDs, controller, webhook, and cainjector
 kubectl apply -f https://github.com/cert-manager/cert-manager/releases/download/v1.14.0/cert-manager.yaml
 

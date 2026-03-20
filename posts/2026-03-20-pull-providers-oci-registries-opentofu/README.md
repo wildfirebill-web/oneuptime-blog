@@ -49,6 +49,7 @@ credentials "registry.internal.company.com" {
 }
 
 # Or use environment variables recognized by Docker/oras:
+
 # DOCKER_USERNAME, DOCKER_PASSWORD
 # AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY (for ECR)
 ```

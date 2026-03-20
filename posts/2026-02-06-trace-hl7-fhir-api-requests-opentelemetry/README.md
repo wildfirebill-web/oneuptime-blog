@@ -25,6 +25,7 @@ from opentelemetry.instrumentation.flask import FlaskInstrumentor
 app = Flask(__name__)
 
 # Set up the tracer provider with OTLP export
+
 provider = TracerProvider()
 processor = BatchSpanProcessor(OTLPSpanExporter(endpoint="localhost:4317"))
 provider.add_span_processor(processor)

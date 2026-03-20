@@ -129,6 +129,7 @@ This Dockerfile uses the dependency caching trick and multi-stage builds for an 
 
 ```dockerfile
 # Stage 1: Build the application
+
 FROM rust:1.77-alpine AS build
 
 # Install build dependencies for static linking

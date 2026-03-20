@@ -37,6 +37,7 @@ flowchart TD
 
 ```bash
 # View ACLs including the mask
+
 getfacl /opt/shared/file.txt
 ```
 

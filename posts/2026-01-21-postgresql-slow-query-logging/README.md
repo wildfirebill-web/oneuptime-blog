@@ -16,6 +16,7 @@ Slow query logging helps identify performance bottlenecks by recording queries t
 # postgresql.conf
 
 # Log queries slower than 1 second
+
 log_min_duration_statement = 1000  # milliseconds
 
 # Or log all queries with duration

@@ -1,4 +1,4 @@
-# How to Pause and Unpause Containers in Portainer
+# How to Pause and Unpause Containers in Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Learn how to pause and unpause Docker containers in Portainer to te
 
 ## Introduction
 
-Pausing a container is different from stopping it. When paused, the container's processes are frozen using Linux's `cgroup freezer` — they stop executing but remain in memory with all their state intact. Unpausing resumes execution exactly where it left off. This is useful for maintenance, debugging, and performance isolation.
+Pausing a container is different from stopping it. When paused, the container's processes are frozen using Linux's `cgroup freezer` - they stop executing but remain in memory with all their state intact. Unpausing resumes execution exactly where it left off. This is useful for maintenance, debugging, and performance isolation.
 
 ## Prerequisites
 
@@ -19,7 +19,7 @@ Pausing a container is different from stopping it. When paused, the container's 
 
 The pause mechanism uses the Linux `cgroup freezer` subsystem:
 
-```
+```text
 Normal state:     Container processes executing → cgroup freezer: THAWED
 Paused state:     Container processes frozen  → cgroup freezer: FROZEN
 Unpaused state:   Container processes resume  → cgroup freezer: THAWED
@@ -47,6 +47,7 @@ When paused:
 
 ```bash
 # Equivalent Docker CLI:
+
 docker pause my-container
 
 # Verify the container is paused:
@@ -187,11 +188,11 @@ docker inspect my-container | jq '.[].State.Paused'
 
 ## Important Limitations
 
-- **Paused containers still consume memory** — don't pause as a memory optimization.
-- **Network connections may time out** — if paused too long, TCP connections may be dropped by the peer.
-- **Healthchecks fail** — paused containers fail health checks, which may trigger restart policies.
-- **Not suitable for long-term suspension** — use stop for anything longer than a few minutes.
+- **Paused containers still consume memory** - don't pause as a memory optimization.
+- **Network connections may time out** - if paused too long, TCP connections may be dropped by the peer.
+- **Healthchecks fail** - paused containers fail health checks, which may trigger restart policies.
+- **Not suitable for long-term suspension** - use stop for anything longer than a few minutes.
 
 ## Conclusion
 
-The pause/unpause functionality in Portainer provides a way to temporarily freeze container execution without losing state. It's most valuable for ensuring data consistency during backups, reducing CPU contention during peak periods, and debugging container behavior. For anything requiring a longer interruption, stop the container instead — paused containers still hold memory and may have connection issues after an extended pause.
+The pause/unpause functionality in Portainer provides a way to temporarily freeze container execution without losing state. It's most valuable for ensuring data consistency during backups, reducing CPU contention during peak periods, and debugging container behavior. For anything requiring a longer interruption, stop the container instead - paused containers still hold memory and may have connection issues after an extended pause.

@@ -29,6 +29,7 @@ The most common approach is creating a non-root user in your Dockerfile.
 FROM node:18-slim
 
 # Create a non-root user and group
+
 RUN groupadd --gid 1000 appgroup && \
     useradd --uid 1000 --gid appgroup --shell /bin/bash --create-home appuser
 

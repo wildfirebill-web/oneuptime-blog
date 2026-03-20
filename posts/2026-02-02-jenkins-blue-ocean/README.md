@@ -53,6 +53,7 @@ Verify your Jenkins version by navigating to **Manage Jenkins > About Jenkins** 
 
 ```bash
 # Check Jenkins version from the command line
+
 java -jar /usr/share/jenkins/jenkins.war --version
 ```
 

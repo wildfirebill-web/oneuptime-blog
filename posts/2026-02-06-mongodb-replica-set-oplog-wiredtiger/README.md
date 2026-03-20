@@ -183,6 +183,7 @@ The `clusterMonitor` role provides read-only access to monitoring data. The `rea
 
 ```yaml
 # Replica set member down
+
 - alert: MongoDBReplicaDown
   condition: mongodb.member.state != 1 and mongodb.member.state != 2 and mongodb.member.state != 7
   severity: critical

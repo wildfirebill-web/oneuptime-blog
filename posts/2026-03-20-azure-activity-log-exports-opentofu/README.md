@@ -41,6 +41,7 @@ resource "azurerm_log_analytics_workspace" "main" {
 }
 
 # Diagnostic setting to export subscription activity logs
+
 resource "azurerm_monitor_diagnostic_setting" "activity_logs" {
   name               = "export-activity-logs"
   target_resource_id = "/subscriptions/${var.subscription_id}"

@@ -1,8 +1,8 @@
-# How to Use the slice Function in OpenTofu
+# How to Use the slice Function in OpenTofu - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, slice, List Functions, HCL, Infrastructure as Code, DevOps
+Tags: OpenTofu, Slices, List Functions, HCL, Infrastructure as Code, DevOps
 
 Description: Learn how to use the slice function in OpenTofu to extract a contiguous subset of elements from a list.
 

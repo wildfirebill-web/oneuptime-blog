@@ -41,6 +41,7 @@ Add these gems to every Rails microservice that should participate in distribute
 # Gemfile
 
 # Core OpenTelemetry SDK
+
 gem 'opentelemetry-sdk'
 
 # OTLP exporter for sending traces

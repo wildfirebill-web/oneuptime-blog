@@ -16,6 +16,7 @@ The `async` and `poll` parameters let you run tasks with a maximum time limit. S
 
 ```yaml
 # async_timeout.yml - Use async for task-level timeouts
+
 ---
 - name: Commands with async timeout
   hosts: all

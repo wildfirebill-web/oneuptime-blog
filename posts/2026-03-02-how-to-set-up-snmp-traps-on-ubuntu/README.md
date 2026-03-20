@@ -25,6 +25,7 @@ The default trap port is UDP 162. Your trap receiver (Ubuntu server running `snm
 
 ```bash
 # Install the SNMP tools package
+
 sudo apt update
 sudo apt install snmpd snmp snmp-mibs-downloader
 

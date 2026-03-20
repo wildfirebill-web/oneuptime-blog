@@ -102,6 +102,7 @@ First, make sure you are logged in and have the right subscription selected:
 
 ```bash
 # Log in to Azure
+
 az login
 
 # Set the subscription you want to use

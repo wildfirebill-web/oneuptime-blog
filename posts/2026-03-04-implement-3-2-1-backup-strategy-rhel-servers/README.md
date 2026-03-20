@@ -23,6 +23,7 @@ Create a daily backup to a local NAS or dedicated backup disk:
 ```bash
 #!/bin/bash
 # /usr/local/bin/local-backup.sh
+
 # Copy 2: Local backup to NAS
 
 BACKUP_DIR="/mnt/nas/backups/$(hostname)"

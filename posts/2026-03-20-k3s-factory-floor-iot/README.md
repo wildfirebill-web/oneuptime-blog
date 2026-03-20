@@ -23,6 +23,7 @@ Industrial environments have unique requirements:
 
 ```bash
 # Industrial-grade hardware options:
+
 # - Advantech UNO industrial computers
 # - Siemens SIMATIC IPC
 # - Beckhoff CX series

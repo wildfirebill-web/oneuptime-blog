@@ -63,6 +63,7 @@ Both clusters must trust each other's certificates. Create a shared root CA:
 
 ```bash
 # Create root CA directory
+
 mkdir -p certs
 cd certs
 

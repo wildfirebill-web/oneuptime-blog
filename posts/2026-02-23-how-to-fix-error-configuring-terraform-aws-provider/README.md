@@ -50,6 +50,7 @@ To set up credentials, you have several options:
 
 ```bash
 # Install AWS CLI if you have not already, then run:
+
 aws configure
 # Enter your Access Key ID, Secret Access Key, region, and output format
 ```

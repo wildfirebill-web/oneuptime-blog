@@ -89,6 +89,7 @@ A Pulumi project is a directory containing your infrastructure code and a `Pulum
 
 ```yaml
 # Pulumi.yaml - Project configuration file
+
 name: my-infrastructure        # Project name (must be unique within your organization)
 runtime: nodejs                # Runtime: nodejs, python, go, dotnet, java
 description: My cloud setup    # Human-readable description
@@ -125,7 +126,7 @@ flowchart TB
     ProdDB --> ProdAPI
 ```
 
-### Resources
+Resources
 
 Resources are the cloud components you create: VMs, databases, buckets, functions, etc. Each resource has:
 - A logical name (for Pulumi's tracking)

@@ -14,13 +14,13 @@ The Type of Service (ToS) byte is the second byte of the IPv4 header. Originally
 
 The original RFC 791 interpretation used precedence bits and service type flags. Modern networks use the DSCP interpretation.
 
-```
+```text
 Original (RFC 791):
   Bits: 7  6  5  4  3  2  1  0
         [Precedence ][D][T][R][0]
         Precedence: 0=Routine to 7=Network Control
 
-DSCP (RFC 2474) — modern standard:
+DSCP (RFC 2474) - modern standard:
   Bits: 7  6  5  4  3  2  1  0
         [    DSCP (6 bits)    ][ECN (2 bits)]
         DSCP: differentiated services code point
@@ -54,7 +54,7 @@ def dscp_class_name(dscp: int) -> str:
         32: "CS4",
         34: "AF41", 36: "AF42", 38: "AF43",
         40: "CS5",
-        46: "EF (Expedited Forwarding — VoIP)",
+        46: "EF (Expedited Forwarding - VoIP)",
         48: "CS6 (Network Control)",
         56: "CS7",
     }
@@ -76,6 +76,7 @@ def dscp_class_name(dscp: int) -> str:
 
 ```bash
 # Set DSCP on outgoing packets using iptables
+
 # Mark VoIP traffic (UDP port 5060, 5061) with EF (DSCP 46)
 iptables -t mangle -A OUTPUT \
   -p udp --dport 5060:5061 \
@@ -127,7 +128,7 @@ The ECN bits (lower 2 bits of the ToS byte) allow routers to signal congestion w
 |---|---|
 | 00 | Not ECN-capable |
 | 01 or 10 | ECN-capable (ECT) |
-| 11 | Congestion Experienced (CE) — router set this |
+| 11 | Congestion Experienced (CE) - router set this |
 
 ```bash
 # Check if ECN is enabled on Linux
@@ -166,4 +167,4 @@ resource "aws_instance" "router" {
 
 ## Summary
 
-The ToS byte's upper 6 bits are the DSCP field, which modern routers use for QoS. The most important DSCP values are EF (46) for VoIP/real-time traffic, AF41 (34) for video, and CS0 (0) for best-effort. Set DSCP on Linux with `iptables -t mangle -j DSCP`, on sockets with `setsockopt(IP_TOS, dscp << 2)`, or read it from captures with `tcpdump -v` (look for the `tos` value in hex). The lower 2 bits are ECN — when set to `11` (CE) by a router, it signals congestion to the endpoints without dropping the packet.
+The ToS byte's upper 6 bits are the DSCP field, which modern routers use for QoS. The most important DSCP values are EF (46) for VoIP/real-time traffic, AF41 (34) for video, and CS0 (0) for best-effort. Set DSCP on Linux with `iptables -t mangle -j DSCP`, on sockets with `setsockopt(IP_TOS, dscp << 2)`, or read it from captures with `tcpdump -v` (look for the `tos` value in hex). The lower 2 bits are ECN - when set to `11` (CE) by a router, it signals congestion to the endpoints without dropping the packet.

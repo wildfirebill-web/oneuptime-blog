@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: rancher, harbor, container-registry, kubernetes, helm
+Tags: Rancher, Harbor, Container-registry, Kubernetes, Helm
 
 Description: Complete guide to deploying Harbor container registry on Rancher for private image management and vulnerability scanning.
 
@@ -24,6 +24,7 @@ How to Deploy Harbor Registry on Rancher on Rancher gives your team a production
 kubectl create namespace harbor-registry
 
 # Configure project in Rancher
+
 kubectl annotate namespace harbor-registry   field.cattle.io/projectId=YOUR_PROJECT_ID
 ```
 

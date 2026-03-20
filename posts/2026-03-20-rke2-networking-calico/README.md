@@ -1,4 +1,4 @@
-# How to Configure RKE2 Networking with Calico
+# How to Configure RKE2 Networking with Calico - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -18,6 +18,7 @@ Calico is a high-performance networking solution that provides both pod networki
 
 ```yaml
 # /etc/rancher/rke2/config.yaml - Use Calico as CNI
+
 cni: calico
 
 # Pod network CIDR

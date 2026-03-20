@@ -16,6 +16,7 @@ Pulumi enables managing Docker infrastructure using general-purpose programming 
 
 ```bash
 # macOS
+
 brew install pulumi
 
 # Linux

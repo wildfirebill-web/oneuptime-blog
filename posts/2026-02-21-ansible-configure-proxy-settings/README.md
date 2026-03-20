@@ -23,6 +23,7 @@ Start by defining your proxy settings in group_vars so they are available to all
 
 ```yaml
 # group_vars/all.yml - Proxy configuration variables
+
 proxy_host: proxy.example.com
 proxy_port: 3128
 proxy_url: "http://{{ proxy_host }}:{{ proxy_port }}"

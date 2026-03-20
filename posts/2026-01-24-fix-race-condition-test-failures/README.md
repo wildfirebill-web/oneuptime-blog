@@ -107,6 +107,7 @@ it('should update after async operation', async () => {
 
 ```python
 # Bad: Concurrent operations without synchronization
+
 def test_concurrent_increments():
     counter = Counter()
     threads = []

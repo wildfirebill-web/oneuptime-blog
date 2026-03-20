@@ -28,6 +28,7 @@ graph LR
 
 ```bash
 # Podman should already be installed on RHEL
+
 rpm -q podman
 
 # If not, install it

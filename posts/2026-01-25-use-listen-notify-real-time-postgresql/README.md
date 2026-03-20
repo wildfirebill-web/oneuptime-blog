@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: PostgreSQL, Database, Real-Time, LISTEN, NOTIFY, Pub/Sub, Event-Driven
+Tags: PostgreSQL, Database, Real-Time, Listen, NOTIFY, Pub/Sub, Event-Driven
 
 Description: Learn how to use PostgreSQL's LISTEN/NOTIFY for real-time communication between database and application. This guide covers setup, triggers, and practical implementations for live updates.
 
@@ -329,6 +329,7 @@ import json
 app = FastAPI()
 
 # Connected WebSocket clients
+
 clients: List[WebSocket] = []
 
 async def db_listener():

@@ -18,6 +18,7 @@ Without saving plan artifacts, a common anti-pattern emerges:
 
 ```yaml
 # Bad: Plan and apply are separate calculations
+
 - run: terraform plan   # Shows 3 changes
 # ... time passes, someone merges another PR ...
 - run: terraform apply -auto-approve  # Might apply 5 changes now

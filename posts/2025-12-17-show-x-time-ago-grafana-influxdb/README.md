@@ -443,6 +443,7 @@ Create alerts when "time ago" exceeds threshold:
 
 ```yaml
 # Alert when backup is more than 24 hours old
+
 groups:
   - name: backup_alerts
     rules:

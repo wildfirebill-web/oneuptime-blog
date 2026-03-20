@@ -49,6 +49,7 @@ Here's a simple CloudFormation template to work with:
 
 ```yaml
 # templates/main.yml - Example CloudFormation template
+
 AWSTemplateFormatVersion: '2010-09-09'
 Description: Application infrastructure
 

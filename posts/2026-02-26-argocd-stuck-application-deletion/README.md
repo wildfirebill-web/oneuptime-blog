@@ -45,6 +45,7 @@ Start by checking what the Application status looks like:
 
 ```bash
 # Get the application details
+
 kubectl get application my-app -n argocd -o yaml
 
 # Check the deletion timestamp - if set, the app is marked for deletion

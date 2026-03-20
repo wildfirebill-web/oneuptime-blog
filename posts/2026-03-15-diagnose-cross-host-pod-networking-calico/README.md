@@ -30,6 +30,7 @@ First, confirm that the issue is specifically cross-host and not a general netwo
 
 ```bash
 # Find pods on different nodes
+
 kubectl get pods -o wide --all-namespaces | head -20
 
 # Test pod-to-pod on the same node (should work)

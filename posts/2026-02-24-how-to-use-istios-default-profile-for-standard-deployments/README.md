@@ -81,6 +81,7 @@ The bare default profile works, but production environments benefit from additio
 
 ```yaml
 # istio-production.yaml
+
 apiVersion: install.istio.io/v1alpha1
 kind: IstioOperator
 spec:

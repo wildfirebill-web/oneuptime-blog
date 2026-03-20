@@ -45,6 +45,7 @@ Here is a simple ResourceSet that generates a namespace and associated resources
 
 ```yaml
 # resourcesets/team-resources.yaml
+
 apiVersion: fluxcd.controlplane.io/v1
 kind: ResourceSet
 metadata:
@@ -372,7 +373,7 @@ spec:
             DEBUG_ENABLED: "{{ .enableDebug }}"
 ```
 
-## ResourceSet with Secret Inputs
+ResourceSet with Secret Inputs
 
 Use secrets for sensitive input data:
 

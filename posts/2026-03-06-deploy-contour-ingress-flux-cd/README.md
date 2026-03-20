@@ -60,6 +60,7 @@ clusters/
 
 ```yaml
 # clusters/production/infrastructure/sources/contour.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

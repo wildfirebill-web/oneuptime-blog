@@ -37,6 +37,7 @@ Real-time priorities range from 1 (lowest) to 99 (highest). SCHED_FIFO and SCHED
 
 ```bash
 # View scheduling policy and priority of a process
+
 chrt -p <PID>
 
 # Check all running processes with their scheduling class

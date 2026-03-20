@@ -51,6 +51,7 @@ calico-node-config/
 
 ```yaml
 # versions.yaml
+
 calico_node_image: "calico/node:v3.27.0"
 calicoctl_version: "v3.27.0"
 minimum_docker_version: "24.0"

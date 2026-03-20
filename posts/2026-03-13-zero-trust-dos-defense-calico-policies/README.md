@@ -43,6 +43,7 @@ spec:
     - Ingress
 ---
 # Block known bad actors
+
 apiVersion: projectcalico.org/v3
 kind: GlobalNetworkPolicy
 metadata:

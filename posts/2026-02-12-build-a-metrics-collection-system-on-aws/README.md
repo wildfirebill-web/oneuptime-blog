@@ -83,6 +83,7 @@ Install and start the agent:
 
 ```bash
 # Install CloudWatch Agent on Amazon Linux 2
+
 sudo yum install -y amazon-cloudwatch-agent
 
 # Start with the configuration

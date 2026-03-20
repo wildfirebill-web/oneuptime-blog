@@ -8,7 +8,7 @@ Description: Learn how to deploy Prometheus and Grafana alongside Portainer to b
 
 ---
 
-Combining Portainer, Prometheus, and Grafana gives you a complete container observability stack — Portainer for management, Prometheus for metrics collection, and Grafana for visualization.
+Combining Portainer, Prometheus, and Grafana gives you a complete container observability stack - Portainer for management, Prometheus for metrics collection, and Grafana for visualization.
 
 ---
 
@@ -77,6 +77,7 @@ volumes:
 
 ```yaml
 # prometheus.yml (stored next to docker-compose or as a volume)
+
 global:
   scrape_interval: 15s
 

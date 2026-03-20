@@ -28,6 +28,7 @@ The Transit secrets engine handles cryptographic operations without exposing the
 
 ```bash
 # Enable the Transit secrets engine
+
 vault secrets enable transit
 ```
 

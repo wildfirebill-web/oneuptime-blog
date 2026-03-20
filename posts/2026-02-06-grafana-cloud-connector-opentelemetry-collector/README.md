@@ -41,6 +41,7 @@ Here's a comprehensive configuration that sends all three telemetry signals to G
 
 ```yaml
 # OpenTelemetry Collector configuration for Grafana Cloud
+
 receivers:
   # OTLP receiver for traces, metrics, and logs
   otlp:

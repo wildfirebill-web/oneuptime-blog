@@ -24,6 +24,7 @@ The basic command is straightforward:
 
 ```bash
 # Retrieve kernel messages from a specific node
+
 talosctl dmesg --nodes 192.168.1.10
 ```
 

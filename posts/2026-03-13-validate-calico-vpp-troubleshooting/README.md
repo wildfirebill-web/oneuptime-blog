@@ -19,6 +19,7 @@ VPP_POD=$(kubectl get pod -n calico-vpp-dataplane -l app=calico-vpp-node \
   -o jsonpath='{.items[0].metadata.name}')
 
 # Confirm VPP is responding
+
 kubectl exec -n calico-vpp-dataplane "${VPP_POD}" -c vpp -- \
   vppctl show version
 

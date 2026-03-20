@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Provisioner, Error Handling, Infrastructure as Code, DevOps
+Tags: Terraform, Provisioners, Error Handling, Infrastructure as Code, DevOps
 
 Description: Learn how to use the on_failure setting in Terraform provisioners to control whether resource creation continues or stops when a provisioner command fails.
 
@@ -52,6 +52,7 @@ A tainted resource exists in your cloud provider but Terraform considers it brok
 
 ```text
 # aws_instance.web is tainted, so must be replaced
+
 -/+ resource "aws_instance" "web" {
     ...
 ```

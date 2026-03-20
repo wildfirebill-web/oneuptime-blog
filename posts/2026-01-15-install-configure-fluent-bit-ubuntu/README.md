@@ -46,6 +46,7 @@ graph LR
 
 ```bash
 # Install GPG and prerequisites
+
 sudo apt update
 sudo apt install -y curl gpg
 

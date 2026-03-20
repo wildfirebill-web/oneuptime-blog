@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: React, NGINX, Production, Deployment, SPA, DevOps
+Tags: React, Nginx, Production, Deployment, SPA, DevOps
 
 Description: Learn how to configure Nginx to serve React single-page applications in production with optimal performance, security, and caching strategies.
 
@@ -55,6 +55,7 @@ First, let us prepare the React application for production deployment:
 
 ```bash
 # Navigate to your React project directory
+
 cd /path/to/your/react-app
 
 # Install dependencies

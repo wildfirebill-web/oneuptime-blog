@@ -38,6 +38,7 @@ Start with the basics:
 
 ```bash
 # Check istiod pod status
+
 kubectl get pods -n istio-system -l app=istiod
 
 # Check istiod logs for errors

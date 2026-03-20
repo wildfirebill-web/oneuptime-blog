@@ -73,6 +73,7 @@ Implement policies that meet the strictest applicable requirement:
 
 ```yaml
 # retention-policy.yaml
+
 # Log retention configuration by category
 
 policies:

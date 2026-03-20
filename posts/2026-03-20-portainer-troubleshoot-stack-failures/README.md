@@ -8,7 +8,7 @@ Description: A systematic guide to diagnosing and fixing common stack deployment
 
 ## Introduction
 
-Stack deployment failures in Portainer can have many causes — from invalid Compose syntax to network conflicts or missing secrets. This guide provides a systematic troubleshooting approach to help you quickly identify and resolve deployment issues.
+Stack deployment failures in Portainer can have many causes - from invalid Compose syntax to network conflicts or missing secrets. This guide provides a systematic troubleshooting approach to help you quickly identify and resolve deployment issues.
 
 ## Step 1: Read the Deployment Error Message
 
@@ -16,8 +16,9 @@ When a stack deployment fails, Portainer displays an error message in the deploy
 
 Common error patterns and their meanings:
 
-```
+```text
 # Image not found
+
 ERROR: pull access denied for myimage, repository does not exist
 
 # Port already in use
@@ -229,4 +230,4 @@ docker logs portainer_agent
 
 ## Conclusion
 
-Troubleshooting Portainer stack failures requires a systematic approach: read error messages carefully, validate your Compose syntax, examine container logs, and work through common failure scenarios one by one. Most failures fall into a handful of categories — image access, configuration errors, port conflicts, and resource constraints. With this guide, you can quickly pinpoint the root cause and get your stack running.
+Troubleshooting Portainer stack failures requires a systematic approach: read error messages carefully, validate your Compose syntax, examine container logs, and work through common failure scenarios one by one. Most failures fall into a handful of categories - image access, configuration errors, port conflicts, and resource constraints. With this guide, you can quickly pinpoint the root cause and get your stack running.

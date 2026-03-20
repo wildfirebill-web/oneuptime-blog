@@ -14,6 +14,7 @@ Description: Use stress-ng on Ubuntu to load-test CPU, memory, I/O, and network 
 
 ```bash
 # Install stress-ng from Ubuntu repositories
+
 sudo apt update
 sudo apt install stress-ng -y
 

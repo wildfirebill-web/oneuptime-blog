@@ -1,8 +1,8 @@
-# How to Configure Providers with Ephemeral Values in OpenTofu
+# How to Configure Providers with Ephemeral Values in OpenTofu - Opentofu
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Providers, Ephemeral Values, Secrets, Infrastructure as Code, DevOps
+Tags: OpenTofu, Provider, Ephemeral Values, Secrets, Infrastructure as Code, DevOps
 
 Description: A guide to configuring OpenTofu providers using ephemeral values to avoid storing provider credentials in state.
 
@@ -14,6 +14,7 @@ OpenTofu providers often need sensitive credentials like API keys, tokens, and p
 
 ```hcl
 # Fetch API key ephemerally
+
 ephemeral "aws_secretsmanager_secret_version" "github_token" {
   secret_id = "platform/github-token"
 }

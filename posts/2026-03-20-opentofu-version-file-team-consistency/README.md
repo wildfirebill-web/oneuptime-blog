@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Team Workflow, Version Management, tofuenv, Infrastructure as Code, DevOps
+Tags: OpenTofu, Team Workflows, Version Management, tofuenv, Infrastructure as Code, DevOps
 
 Description: A guide to using the .opentofu-version file to ensure all team members use the same OpenTofu version across a project.
 
@@ -14,6 +14,7 @@ The `.opentofu-version` file is a simple text file that tells tofuenv which Open
 
 ```bash
 # Navigate to your project root
+
 cd /path/to/your/project
 
 # Create the version file with exact version

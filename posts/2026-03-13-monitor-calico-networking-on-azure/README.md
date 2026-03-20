@@ -25,6 +25,7 @@ On Azure, it's particularly valuable to monitor for IP Forwarding configuration 
 
 ```bash
 # Create storage account for flow logs
+
 az storage account create \
   --name k8sflowlogs \
   --resource-group k8s-rg \

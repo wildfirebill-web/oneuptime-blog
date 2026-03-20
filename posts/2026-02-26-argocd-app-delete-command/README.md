@@ -28,6 +28,7 @@ Cascade delete removes the Application resource AND all Kubernetes resources it 
 
 ```bash
 # Explicit cascade delete
+
 argocd app delete my-app --cascade
 
 # This is equivalent if the app has the resources-finalizer

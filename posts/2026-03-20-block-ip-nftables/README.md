@@ -12,6 +12,7 @@ Blocking IP addresses with nftables is cleaner and more efficient than iptables,
 
 ```bash
 # Block all traffic from IP 1.2.3.4
+
 sudo nft add rule inet filter input ip saddr 1.2.3.4 drop
 
 # Block a specific IP on a specific port
@@ -58,7 +59,7 @@ Add IPs that auto-expire after a time period:
 sudo nft add set inet filter temp-blocklist \
   '{ type ipv4_addr; flags dynamic, timeout; timeout 1h; }'
 
-# Add an IP — auto-removes after 1 hour
+# Add an IP - auto-removes after 1 hour
 sudo nft add element inet filter temp-blocklist '{ 1.2.3.4 timeout 3600s }'
 
 # Rule to drop traffic from the dynamic set
@@ -144,4 +145,4 @@ sudo nft list chain inet filter input | grep "blocklist"
 # Output: ip saddr @blocklist counter packets 234 bytes 12340 drop
 ```
 
-nftables' built-in sets make IP blocking dramatically more efficient than iptables — you can block thousands of IPs with a single rule and a set, with no performance degradation.
+nftables' built-in sets make IP blocking dramatically more efficient than iptables - you can block thousands of IPs with a single rule and a set, with no performance degradation.

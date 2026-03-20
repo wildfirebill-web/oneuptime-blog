@@ -138,7 +138,7 @@ Effective request: 2 CPU, 4Gi (from app container)
 
 The init container doesn't affect scheduling.
 
-## Resource Limits for Init Containers
+Resource Limits for Init Containers
 
 Limits work the same way as requests. The effective limit is:
 

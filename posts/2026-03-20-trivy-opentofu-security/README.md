@@ -20,6 +20,7 @@ Learn how to use Trivy to scan OpenTofu IaC files for security vulnerabilities a
 
 ```bash
 # Verify OpenTofu installation
+
 tofu version
 
 # Set up required environment variables

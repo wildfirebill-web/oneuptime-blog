@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux, Flagger, NGINX, Ingresses, Progressive Delivery, Canary, Kubernetes, GitOps
+Tags: Flux, Flagger, Nginx, Ingresses, Progressive Delivery, Canary, Kubernetes, GitOps
 
 Description: A step-by-step guide to setting up Flagger with NGINX Ingress Controller and Flux for automated canary deployments using ingress-level traffic splitting.
 
@@ -40,6 +40,7 @@ Create a HelmRepository and HelmRelease for the NGINX Ingress Controller.
 
 ```yaml
 # nginx-ingress-helmrepository.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

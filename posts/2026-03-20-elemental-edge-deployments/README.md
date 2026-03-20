@@ -22,6 +22,7 @@ Edge deployments present unique challenges: intermittent connectivity, limited h
 
 ```yaml
 # MachineRegistration optimized for edge
+
 apiVersion: elemental.cattle.io/v1beta1
 kind: MachineRegistration
 metadata:

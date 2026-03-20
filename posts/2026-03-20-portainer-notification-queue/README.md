@@ -14,6 +14,7 @@ Portainer's notification system handles webhook triggers, stack update notificat
 
 ```bash
 # Portainer supports multiple notification channels
+
 # Configure via Settings > Notifications in Portainer UI
 # Or via API
 

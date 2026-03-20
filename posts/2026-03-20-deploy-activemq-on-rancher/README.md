@@ -30,6 +30,7 @@ For a straightforward deployment, use the Bitnami Artemis chart:
 helm repo add bitnami https://charts.bitnami.com/bitnami
 
 # Create values file
+
 cat > artemis-values.yaml << 'EOF'
 auth:
   enabled: true

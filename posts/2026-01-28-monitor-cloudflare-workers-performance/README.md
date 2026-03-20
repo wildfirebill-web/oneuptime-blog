@@ -134,6 +134,7 @@ Set up Analytics Engine binding in wrangler.toml:
 
 ```toml
 # wrangler.toml
+
 name = "my-worker"
 main = "src/worker.ts"
 compatibility_date = "2024-01-01"

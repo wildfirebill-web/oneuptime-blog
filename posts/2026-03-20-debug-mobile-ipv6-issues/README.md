@@ -14,6 +14,7 @@ Mobile IPv6 problems fall into a few categories: registration failures (BU/BA is
 
 ```bash
 # Start mip6d with maximum verbosity
+
 sudo mip6d -c /etc/mip6d.conf -d 10
 
 # Or enable debug logging for a running daemon
@@ -23,11 +24,11 @@ sudo kill -USR1 $(pidof mip6d)
 journalctl -u mip6d -f
 
 # Key log patterns to watch for:
-# "BU received from..."     — incoming BU (HA side)
-# "Sending BA to..."        — outgoing BA
-# "BA received from..."     — BU was accepted (MN side)
-# "BU seq number mismatch"  — sequence number issue
-# "IPsec policy missing"    — security configuration error
+# "BU received from..."     - incoming BU (HA side)
+# "Sending BA to..."        - outgoing BA
+# "BA received from..."     - BU was accepted (MN side)
+# "BU seq number mismatch"  - sequence number issue
+# "IPsec policy missing"    - security configuration error
 ```
 
 ## Step 2: Capture and Inspect Mobility Header Packets

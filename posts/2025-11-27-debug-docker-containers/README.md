@@ -16,6 +16,7 @@ Before jumping into a container shell, gather information non-invasively. These 
 
 ```bash
 # List all containers (including stopped) that match the name filter
+
 docker ps -a --filter "name=api"
 
 # Extract specific state information using Go template formatting

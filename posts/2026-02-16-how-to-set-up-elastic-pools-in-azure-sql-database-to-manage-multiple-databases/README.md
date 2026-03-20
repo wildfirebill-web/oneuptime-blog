@@ -102,6 +102,7 @@ For scripting and automation, the Azure CLI works well.
 
 ```bash
 # Create an elastic pool with the Standard tier and 200 eDTUs
+
 az sql elastic-pool create \
     --resource-group myResourceGroup \
     --server myserver \

@@ -53,6 +53,7 @@ Since all Crossplane resources follow the same condition pattern, you can write 
 
 ```yaml
 # argocd-cm ConfigMap - generic Crossplane health check
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

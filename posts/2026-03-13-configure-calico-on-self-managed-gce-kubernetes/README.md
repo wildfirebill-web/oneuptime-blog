@@ -29,6 +29,7 @@ Set up the firewall rules required for Calico.
 
 ```bash
 # Get your VPC network name
+
 NETWORK_NAME="kubernetes-network"
 PROJECT="my-gcp-project"
 

@@ -111,6 +111,7 @@ Configure your project to support native image compilation.
 # Build the native image with Maven
 
 # Step 1: Install GraalVM (using SDKMAN)
+
 sdk install java 21.0.5-graal
 sdk use java 21.0.5-graal
 

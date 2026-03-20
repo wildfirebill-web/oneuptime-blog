@@ -14,6 +14,7 @@ Description: Use the ss command to display IPv6 socket statistics, monitor activ
 
 ```bash
 # Show all IPv6 TCP connections
+
 ss -t6
 
 # Show all IPv6 listening sockets
@@ -62,7 +63,7 @@ ss -tn6 state all '! state established'
 
 ## Understanding ss Output for IPv6
 
-```
+```text
 Netid  State   Recv-Q  Send-Q  Local Address:Port  Peer Address:Port
 tcp    ESTAB   0       0       [2001:db8::1]:443   [2001:db8::100]:52340
 tcp    LISTEN  0       128     [::]:22             [::]:*
@@ -71,10 +72,10 @@ udp    UNCONN  0       0       [::]:53             [::]:*
 ```
 
 Key fields:
-- `[::]:22` — listening on all IPv6 addresses (wildcard)
-- `[::1]:25` — listening on IPv6 loopback only
-- `[2001:db8::1]:443` — connected from specific global IPv6 address
-- `Recv-Q` / `Send-Q` — bytes waiting in receive/send buffers
+- `[::]:22` - listening on all IPv6 addresses (wildcard)
+- `[::1]:25` - listening on IPv6 loopback only
+- `[2001:db8::1]:443` - connected from specific global IPv6 address
+- `Recv-Q` / `Send-Q` - bytes waiting in receive/send buffers
 
 ## Monitoring IPv6 Service Ports
 

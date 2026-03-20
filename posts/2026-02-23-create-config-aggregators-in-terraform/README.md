@@ -44,6 +44,7 @@ Before creating an aggregator, you need Config enabled in each account. Here is 
 
 ```hcl
 # S3 bucket for Config snapshots
+
 resource "aws_s3_bucket" "config" {
   bucket = "my-org-aws-config-${data.aws_caller_identity.current.account_id}"
 }

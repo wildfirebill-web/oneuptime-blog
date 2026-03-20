@@ -202,6 +202,7 @@ Use the following commands to test ignore rules:
 
 ```bash
 # Scale the deployment (this should be ignored by drift detection)
+
 kubectl scale deployment my-application -n default --replicas=5
 
 # Wait for the next reconciliation cycle

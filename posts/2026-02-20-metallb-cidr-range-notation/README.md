@@ -39,6 +39,7 @@ Use /32 when you have individual IPs that are not part of a contiguous block. Th
 
 ```yaml
 # pool-single-ips.yaml
+
 # Pool containing individual public IPs from a hosting provider
 apiVersion: metallb.io/v1beta1
 kind: IPAddressPool

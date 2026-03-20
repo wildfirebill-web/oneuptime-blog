@@ -68,6 +68,7 @@ Beyond request counts, you might want to know how many bytes are flowing. Istio 
 
 ```promql
 # Request bytes per second (incoming payload)
+
 sum(rate(istio_request_bytes_sum{reporter="destination"}[5m])) by (destination_service_name)
 
 # Response bytes per second (outgoing payload)

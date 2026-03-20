@@ -71,6 +71,7 @@ Verify you can reach the DNS server on port 53:
 
 ```bash
 # Test TCP
+
 ss -tlnp | grep :53
 
 # Test UDP reachability

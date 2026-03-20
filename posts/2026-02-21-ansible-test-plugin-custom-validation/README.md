@@ -20,6 +20,7 @@ Create `test_plugins/naming_tests.py`:
 
 ```python
 # naming_tests.py - Test plugins for naming convention validation
+
 import re
 
 

@@ -108,6 +108,7 @@ router bgp 65001
 
 ```bash
 # Define prefix list for customer routes
+
 policy-options {
     prefix-list CUSTOMER-PREFIXES {
         203.0.113.0/24;

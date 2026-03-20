@@ -176,6 +176,7 @@ A useful pattern is creating gateways with environment-specific labels:
 
 ```yaml
 # Production gateway deployment with custom labels
+
 apiVersion: install.istio.io/v1alpha1
 kind: IstioOperator
 spec:

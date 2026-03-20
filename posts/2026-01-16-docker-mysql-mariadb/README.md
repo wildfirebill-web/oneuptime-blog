@@ -62,6 +62,7 @@ docker run -d \
   mysql:8
 
 # Find generated password in logs
+
 docker logs mysql 2>&1 | grep "GENERATED ROOT PASSWORD"
 ```
 

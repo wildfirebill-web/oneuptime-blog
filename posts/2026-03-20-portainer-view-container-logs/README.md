@@ -37,7 +37,7 @@ The log viewer shows:
 
 - **Log lines**: Each line of stdout/stderr output from the container.
 - **Timestamps**: When each log line was emitted (if enabled).
-- **Log level**: Not automatically highlighted — depends on the app's format.
+- **Log level**: Not automatically highlighted - depends on the app's format.
 
 ## Step 3: Log Viewer Options
 
@@ -45,7 +45,7 @@ The log viewer shows:
 
 Toggle to show/hide the timestamp for each log line:
 
-```
+```text
 With timestamps:
 2026-03-20T10:00:00Z  INFO: Server started on port 8080
 2026-03-20T10:00:01Z  INFO: Database connected
@@ -61,7 +61,7 @@ Control how many lines of log history to display:
 
 - **10, 25, 50, 100, 500, 1000** or **All**
 - For troubleshooting, start with the last 100 lines.
-- Use **All** carefully — very large logs may be slow to load.
+- Use **All** carefully - very large logs may be slow to load.
 
 ### Auto-Scroll
 
@@ -84,6 +84,7 @@ In Portainer's log viewer, these appear as raw JSON lines. To parse them in the 
 
 ```bash
 # On the host, view logs with jq parsing:
+
 docker logs my-app --since 1h | jq .
 
 # Filter only ERROR logs:

@@ -28,6 +28,7 @@ helm repo update
 
 ```yaml
 # gitlab-values.yaml
+
 global:
   hosts:
     domain: example.com         # GitLab will be at gitlab.example.com

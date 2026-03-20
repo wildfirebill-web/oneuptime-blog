@@ -97,6 +97,7 @@ Verify that read-only users cannot perform write operations:
 
 ```bash
 # Test as a read-only user
+
 argocd account can-i get applications '*/*'
 # Output: yes
 

@@ -25,6 +25,7 @@ If you used OpenAMT for out-of-band device management:
 
 ```bash
 # Test IPMI connectivity on a server
+
 ipmitool -I lanplus -H 192.168.1.100 -U admin -P password chassis status
 
 # Power cycle a server
@@ -157,4 +158,4 @@ Before upgrading Portainer across a major version boundary:
 
 ## Summary
 
-Deprecated feature migrations require planning but are manageable with the right tooling. In most cases, the replacement tools (native Kubernetes manifests, Helm, eksctl, IPMI) are more capable than the features they replace — the deprecations represent Portainer focusing on its core strengths.
+Deprecated feature migrations require planning but are manageable with the right tooling. In most cases, the replacement tools (native Kubernetes manifests, Helm, eksctl, IPMI) are more capable than the features they replace - the deprecations represent Portainer focusing on its core strengths.

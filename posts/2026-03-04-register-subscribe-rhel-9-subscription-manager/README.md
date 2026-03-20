@@ -35,6 +35,7 @@ Before you register, make sure:
 
 ```bash
 # Verify network connectivity to Red Hat CDN
+
 curl -I https://subscription.rhsm.redhat.com
 ```
 

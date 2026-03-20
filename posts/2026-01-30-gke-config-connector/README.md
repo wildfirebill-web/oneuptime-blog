@@ -66,6 +66,7 @@ gcloud container clusters create my-cluster \
 
 ```bash
 # Enable Workload Identity if not already enabled
+
 gcloud container clusters update my-cluster \
   --region us-central1 \
   --workload-pool=PROJECT_ID.svc.id.goog
@@ -151,7 +152,7 @@ spec:
 
 Cloud SQL is one of the most common resources to manage with Config Connector. Here's how to create a PostgreSQL instance with a database and user.
 
-### Resource Management Flow
+Resource Management Flow
 
 ```mermaid
 flowchart TB
@@ -828,7 +829,7 @@ metadata:
 
 ## Troubleshooting
 
-### Resource Stuck in Updating
+Resource Stuck in Updating
 
 ```bash
 # Check controller logs
@@ -847,7 +848,7 @@ gcloud projects get-iam-policy PROJECT_ID \
   --filter="bindings.members:config-connector-sa@"
 ```
 
-### Resource Not Creating
+Resource Not Creating
 
 Check that:
 1. The Config Connector controller is running

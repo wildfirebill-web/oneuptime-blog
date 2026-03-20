@@ -21,8 +21,9 @@ Before setting up the workflow, you need:
 
 Here's a starter workflow that runs on pull requests and pushes to main:
 
-```yaml
+````yaml
 # .github/workflows/terragrunt.yml
+
 name: Terragrunt
 
 on:
@@ -100,9 +101,9 @@ jobs:
 
             const body = `## Terragrunt Plan
 
-            \`\`\`
+            ```
             ${output}
-            \`\`\`
+            ```
 
             *Pushed by: @${context.actor}*`;
 
@@ -147,7 +148,7 @@ jobs:
             --terragrunt-non-interactive \
             -auto-approve \
             -no-color
-```
+````
 
 ## Setting Up AWS OIDC for GitHub Actions
 

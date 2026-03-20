@@ -16,6 +16,7 @@ The `sort` filter, when given the `attribute` parameter, sorts a list of diction
 
 ```yaml
 # playbook-basic-sort.yml
+
 # Sorts a list of servers alphabetically by hostname
 - name: Sort servers by hostname
   hosts: localhost

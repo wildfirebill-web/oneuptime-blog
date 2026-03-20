@@ -24,6 +24,7 @@ The renewal process:
 
 ```bash
 # View the certbot systemd timer
+
 sudo systemctl status certbot.timer
 
 # View the certbot service that the timer triggers

@@ -8,7 +8,7 @@ Description: Sign IPv6 forward DNS zones with DNSSEC using BIND 9, including key
 
 ## DNSSEC for IPv6 Forward Zones
 
-DNSSEC signing of forward zones that contain AAAA records is identical to signing zones with A records — the signing process is record-type agnostic. The zone file contains AAAA records alongside A records, and DNSSEC signs all records including AAAA, CNAME, MX, and others.
+DNSSEC signing of forward zones that contain AAAA records is identical to signing zones with A records - the signing process is record-type agnostic. The zone file contains AAAA records alongside A records, and DNSSEC signs all records including AAAA, CNAME, MX, and others.
 
 Benefits for IPv6:
 - Validates that AAAA records are authentic
@@ -17,7 +17,7 @@ Benefits for IPv6:
 
 ## Zone File with AAAA Records
 
-```
+```bash
 ; /var/named/example.com.zone
 $ORIGIN example.com.
 $TTL 3600
@@ -56,16 +56,17 @@ cdn IN AAAA 2001:db8:cdn::3
 
 ```bash
 # Navigate to zone key directory
+
 cd /var/named/keys/
 
-# Generate Zone Signing Key (ZSK) — smaller, rotated frequently
+# Generate Zone Signing Key (ZSK) - smaller, rotated frequently
 dnssec-keygen -a ECDSAP256SHA256 \
               -n ZONE \
               example.com
 
 # Output: Kexample.com.+013+XXXXX.key and .private
 
-# Generate Key Signing Key (KSK) — larger, updated rarely
+# Generate Key Signing Key (KSK) - larger, updated rarely
 dnssec-keygen -a ECDSAP256SHA256 \
               -n ZONE \
               -f KSK \
@@ -103,8 +104,8 @@ grep -A2 "AAAA" example.com.zone.signed | grep RRSIG | head -5
 
 ## Step 3: BIND Configuration
 
-```
-// /etc/named.conf — BIND zone configuration
+```text
+// /etc/named.conf - BIND zone configuration
 
 zone "example.com" {
     type master;
@@ -172,7 +173,7 @@ dig @8.8.8.8 +dnssec AAAA www.example.com | grep -E "AAAA|RRSIG|ad"
 
 ```bash
 #!/bin/bash
-# sign-zone.sh — Re-sign zone and reload BIND
+# sign-zone.sh - Re-sign zone and reload BIND
 
 ZONE="example.com"
 ZONE_FILE="/var/named/${ZONE}.zone"
@@ -204,4 +205,4 @@ echo "Zone ${ZONE} signed and reloaded (serial: ${NEW_SERIAL})"
 
 ## Conclusion
 
-DNSSEC signing of IPv6 forward zones is straightforward — AAAA records are signed exactly like A records. Use ECDSAP256SHA256 algorithm for modern key generation (smaller, faster than RSA). Enable `inline-signing yes` in BIND to automate re-signing after zone changes. Always use NSEC3 (`-3` flag in `dnssec-signzone`) to prevent zone enumeration — without it, NSEC records reveal all names in the zone. After signing, verify AAAA records have RRSIG records with `dig +dnssec`, and confirm the `ad` (Authenticated Data) flag appears in validating resolver responses.
+DNSSEC signing of IPv6 forward zones is straightforward - AAAA records are signed exactly like A records. Use ECDSAP256SHA256 algorithm for modern key generation (smaller, faster than RSA). Enable `inline-signing yes` in BIND to automate re-signing after zone changes. Always use NSEC3 (`-3` flag in `dnssec-signzone`) to prevent zone enumeration - without it, NSEC records reveal all names in the zone. After signing, verify AAAA records have RRSIG records with `dig +dnssec`, and confirm the `ad` (Authenticated Data) flag appears in validating resolver responses.

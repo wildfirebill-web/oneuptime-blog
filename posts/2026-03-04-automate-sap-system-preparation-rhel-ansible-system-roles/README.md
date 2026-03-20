@@ -14,6 +14,7 @@ RHEL System Roles for SAP automate the dozens of configuration steps required to
 
 ```bash
 # Install the SAP System Roles on the Ansible control node
+
 sudo dnf install -y rhel-system-roles-sap
 
 # List available SAP roles

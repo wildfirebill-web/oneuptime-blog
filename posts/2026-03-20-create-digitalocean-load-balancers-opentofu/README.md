@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, DigitalOcean, Load Balancers, Infrastructure as Code, Networking
+Tags: OpenTofu, DigitalOcean, Load Balancer, Infrastructure as Code, Networking
 
 Description: Learn how to create DigitalOcean Load Balancers with OpenTofu, including forwarding rules, health checks, and SSL termination.
 
@@ -47,6 +47,7 @@ output "lb_ip" {
 
 ```hcl
 # Use a DigitalOcean-managed Let's Encrypt certificate
+
 resource "digitalocean_certificate" "web" {
   name    = "web-cert"
   type    = "lets_encrypt"

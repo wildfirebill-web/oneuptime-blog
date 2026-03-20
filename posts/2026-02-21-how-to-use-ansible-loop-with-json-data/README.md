@@ -18,6 +18,7 @@ Many CLI tools output JSON. You can capture that output and loop over it.
 
 ```yaml
 # parse-docker-json.yml
+
 # Parses JSON output from docker inspect and loops over containers
 - name: Process Docker container data
   hosts: dockerhosts

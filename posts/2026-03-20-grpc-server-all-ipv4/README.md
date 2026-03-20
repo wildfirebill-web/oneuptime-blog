@@ -10,7 +10,7 @@ Description: Learn how to bind a gRPC server to 0.0.0.0 to accept connections on
 
 In Docker and Kubernetes, each container has its own network namespace. If a gRPC server binds to `127.0.0.1`, only processes inside the same container can reach it. Binding to `0.0.0.0` allows the container's virtual NIC to accept external traffic routed through the host's network.
 
-```
+```text
 Pod Network:   10.244.1.5
 Container:     127.0.0.1 (loopback) + 10.244.1.5 (eth0)
 
@@ -26,6 +26,7 @@ from concurrent import futures
 import os
 
 # Assume servicers are already defined
+
 def create_server() -> grpc.Server:
     server = grpc.server(
         futures.ThreadPoolExecutor(max_workers=10),

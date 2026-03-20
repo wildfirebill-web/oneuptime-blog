@@ -53,6 +53,7 @@ Create a base image for Node.js applications:
 
 ```dockerfile
 # base/Containerfile
+
 FROM node:20-alpine
 
 WORKDIR /app

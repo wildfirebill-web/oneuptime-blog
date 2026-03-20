@@ -33,6 +33,7 @@ Each environment uses the same playbooks but different inventories and variables
 
 ```yaml
 # inventories/development/group_vars/all.yml
+
 env_name: development
 env_tier: 1
 domain: dev.example.com

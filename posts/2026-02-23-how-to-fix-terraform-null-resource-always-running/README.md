@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Troubleshooting, Infrastructure as Code, Provisioner
+Tags: Terraform, Troubleshooting, Infrastructure as Code, Provisioners
 
 Description: Fix the Terraform null_resource always running problem by understanding triggers, lifecycle behavior, and migrating to terraform_data resources.
 
@@ -93,6 +93,7 @@ Ask yourself: does this actually need to be a provisioner? Many things that peop
 
 ```hcl
 # Instead of this
+
 resource "null_resource" "upload_file" {
   provisioner "local-exec" {
     command = "aws s3 cp config.json s3://my-bucket/"

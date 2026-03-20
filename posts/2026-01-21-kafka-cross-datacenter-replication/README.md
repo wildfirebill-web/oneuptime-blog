@@ -48,6 +48,7 @@ flowchart LR
 
 ```properties
 # mm2.properties
+
 clusters = dc1, dc2
 
 # DC1 cluster configuration

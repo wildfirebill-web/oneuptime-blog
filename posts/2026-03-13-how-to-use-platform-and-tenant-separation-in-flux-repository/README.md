@@ -74,6 +74,7 @@ The platform Kustomization manages everything the platform team is responsible f
 
 ```yaml
 # clusters/production/platform.yaml
+
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
 metadata:

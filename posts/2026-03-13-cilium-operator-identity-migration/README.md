@@ -30,6 +30,7 @@ Prepare and execute the migration:
 
 ```bash
 # Step 1: Capture pre-migration state
+
 echo "Pre-migration identity count:"
 kubectl get ciliumidentities --no-headers | wc -l
 

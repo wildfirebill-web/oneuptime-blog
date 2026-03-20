@@ -39,6 +39,7 @@ Here are the metrics that matter most for day-to-day operations:
 
 ```bash
 # Query total transactions in the last hour using Azure CLI
+
 az monitor metrics list \
   --resource "/subscriptions/{sub-id}/resourceGroups/myRG/providers/Microsoft.Storage/storageAccounts/mystorageaccount/blobServices/default" \
   --metric "Transactions" \

@@ -103,6 +103,7 @@ This is different from simple string prefix matching. The Gateway API treats `/`
 
 ```yaml
 # This matches /api, /api/, /api/users, /api/users/123
+
 # But does NOT match /apikeys or /api-docs
 - matches:
   - path:

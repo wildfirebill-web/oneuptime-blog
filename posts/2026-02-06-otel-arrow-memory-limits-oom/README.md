@@ -138,6 +138,7 @@ Traffic spikes are the most common trigger for OOM. A sudden increase in telemet
 
 ```yaml
 # Layer 1: Arrow memory limit on the receiver
+
 receivers:
   otelarrow:
     protocols:

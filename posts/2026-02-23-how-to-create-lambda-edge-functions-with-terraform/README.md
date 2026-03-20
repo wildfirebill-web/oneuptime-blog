@@ -29,6 +29,7 @@ Since Lambda@Edge functions must reside in `us-east-1`, you need to configure an
 
 ```hcl
 # Main provider for your primary region
+
 provider "aws" {
   region = "us-west-2"
 }

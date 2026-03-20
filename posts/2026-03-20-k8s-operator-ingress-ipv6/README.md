@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, Operators, IPv6, Ingress, Nginx
+Tags: Kubernetes, Operator, IPv6, Ingress, Nginx
 
 Description: Create and manage Kubernetes Ingress resources with IPv6 annotations and LoadBalancer IPs in custom Kubernetes operators.
 
@@ -100,6 +100,7 @@ func (r *Reconciler) Reconcile(ctx context.Context, req ctrl.Request) (ctrl.Resu
 
 ```bash
 # Create a KIND cluster with dual-stack support
+
 cat > kind-dual-stack.yaml << EOF
 kind: Cluster
 apiVersion: kind.x-k8s.io/v1alpha4

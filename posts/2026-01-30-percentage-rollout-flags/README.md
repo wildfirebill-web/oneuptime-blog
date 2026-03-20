@@ -99,6 +99,7 @@ def is_feature_enabled(user_id: str, feature_key: str, rollout_percentage: int) 
 
 
 # Example usage
+
 user_id = "user_12345"
 feature_key = "new_checkout_flow"
 

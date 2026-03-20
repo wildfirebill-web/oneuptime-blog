@@ -394,6 +394,7 @@ Configure the OpenTelemetry Collector to connect to the OpAMP server:
 
 ```yaml
 # collector-config.yaml
+
 # OpAMP extension configuration
 extensions:
   opamp:

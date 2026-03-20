@@ -55,6 +55,7 @@ The CLI gives you scriptable access to health information:
 
 ```bash
 # List all applications and their health status
+
 argocd app list -o wide
 
 # Get health status of a specific application

@@ -31,6 +31,7 @@ Walk through existing configurations and demonstrate they work unchanged:
 
 ```bash
 # Existing Terraform configurations work without modification
+
 tofu init
 tofu validate
 tofu plan

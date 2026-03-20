@@ -1,4 +1,4 @@
-# How to View Kubernetes Cluster Details in Portainer
+# How to View Kubernetes Cluster Details in Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -29,10 +29,11 @@ The node table shows each node with:
 - Kubernetes version
 - CPU and memory capacity vs. usage
 
-### Resource Consumption
+Resource Consumption
 
 ```bash
 # Equivalent CLI command to view resource usage per node
+
 kubectl top nodes
 
 # View all nodes with their capacity

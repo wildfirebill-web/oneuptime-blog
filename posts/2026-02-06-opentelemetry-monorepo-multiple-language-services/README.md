@@ -40,6 +40,7 @@ Start by creating a shared configuration package that defines the common setting
 
 ```yaml
 # packages/otel-config/base-env.yaml
+
 # Base environment variables for OpenTelemetry configuration.
 # Each service's Dockerfile or k8s manifest should source these.
 otel:

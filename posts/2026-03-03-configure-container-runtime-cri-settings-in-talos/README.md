@@ -93,6 +93,7 @@ Then create the corresponding Kubernetes RuntimeClass:
 
 ```yaml
 # RuntimeClass for gVisor
+
 apiVersion: node.k8s.io/v1
 kind: RuntimeClass
 metadata:
@@ -197,7 +198,7 @@ machine:
       op: create
 ```
 
-## Resource Limits for Containers
+Resource Limits for Containers
 
 You can set default resource limits at the CRI level that apply to all containers:
 

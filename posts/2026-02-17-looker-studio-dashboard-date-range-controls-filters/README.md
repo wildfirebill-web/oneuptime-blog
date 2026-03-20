@@ -209,6 +209,7 @@ Every filter change triggers a new BigQuery query. To keep dashboards fast:
 
 ```bash
 # Create a BI Engine reservation for your project
+
 bq mk --bi_reservation --location=us --size=2G --project_id=my-project
 ```
 

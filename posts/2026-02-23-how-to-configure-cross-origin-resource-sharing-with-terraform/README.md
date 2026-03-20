@@ -26,6 +26,7 @@ API Gateway v2 (HTTP API) has built-in CORS support:
 
 ```hcl
 # Configure the AWS provider
+
 terraform {
   required_providers {
     aws = {

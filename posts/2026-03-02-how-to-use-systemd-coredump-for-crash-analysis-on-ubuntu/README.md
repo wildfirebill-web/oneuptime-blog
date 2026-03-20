@@ -16,6 +16,7 @@ Normally, core dumps go to the current working directory as a file named `core`.
 
 ```bash
 # Check if systemd-coredump is installed
+
 dpkg -l | grep systemd-coredump
 
 # Install if not present

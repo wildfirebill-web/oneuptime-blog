@@ -29,6 +29,7 @@ The simplest approach is creating an ECR image pull secret and refreshing it wit
 
 ```yaml
 # CronJob to refresh ECR token every 6 hours
+
 apiVersion: batch/v1
 kind: CronJob
 metadata:

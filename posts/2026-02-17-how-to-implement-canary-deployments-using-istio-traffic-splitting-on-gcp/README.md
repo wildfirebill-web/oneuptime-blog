@@ -34,6 +34,7 @@ First, deploy your stable version and the canary version as separate deployments
 
 ```yaml
 # deployment-v1.yaml
+
 # Stable version of the application
 apiVersion: apps/v1
 kind: Deployment

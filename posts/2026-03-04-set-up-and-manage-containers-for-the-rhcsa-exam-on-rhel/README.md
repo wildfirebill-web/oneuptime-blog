@@ -14,6 +14,7 @@ The RHCSA exam tests basic container management with Podman. You need to run con
 
 ```bash
 # Search for an image
+
 podman search ubi9
 
 # Pull an image from the Red Hat registry

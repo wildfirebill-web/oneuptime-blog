@@ -27,6 +27,7 @@ Here's a simple ServiceMonitor that scrapes metrics from a web application:
 
 ```yaml
 # basic-servicemonitor.yaml
+
 apiVersion: monitoring.coreos.com/v1
 kind: ServiceMonitor
 metadata:

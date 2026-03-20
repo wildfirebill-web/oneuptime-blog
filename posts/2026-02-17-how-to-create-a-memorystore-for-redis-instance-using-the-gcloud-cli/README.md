@@ -24,6 +24,7 @@ Enable the API if you have not already:
 
 ```bash
 # Enable the Memorystore for Redis API
+
 gcloud services enable redis.googleapis.com
 ```
 

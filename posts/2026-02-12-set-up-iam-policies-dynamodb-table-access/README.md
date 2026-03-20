@@ -294,6 +294,7 @@ Lambda functions that interact with DynamoDB need specific permissions. Here's a
 
 ```hcl
 # Create an IAM policy for DynamoDB access
+
 resource "aws_iam_policy" "dynamodb_access" {
   name        = "dynamodb-orders-read-write"
   description = "Read/write access to the Orders DynamoDB table"

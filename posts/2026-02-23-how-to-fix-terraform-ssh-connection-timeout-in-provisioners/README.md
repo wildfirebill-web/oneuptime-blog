@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Troubleshooting, Infrastructure as Code, Provisioner, SSH
+Tags: Terraform, Troubleshooting, Infrastructure as Code, Provisioners, SSH
 
 Description: Fix Terraform SSH connection timeout errors in provisioners by debugging connectivity, configuring security groups, and handling key authentication issues.
 
@@ -169,6 +169,7 @@ The private key must match the key pair assigned to the instance:
 
 ```hcl
 # Create a key pair
+
 resource "aws_key_pair" "deploy" {
   key_name   = "deploy-key"
   public_key = file("~/.ssh/deploy_key.pub")

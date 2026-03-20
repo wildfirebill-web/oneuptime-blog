@@ -22,6 +22,7 @@ As organizations grow, running Portainer on a single Docker host becomes a singl
 
 ```bash
 # On the Docker host: Stop and backup Portainer
+
 docker stop portainer
 
 docker run --rm \
@@ -181,7 +182,7 @@ docker rm portainer
 docker volume rm portainer_data
 ```
 
-## Resource Requirements
+Resource Requirements
 
 ```yaml
 # Recommended resources for Portainer in Kubernetes

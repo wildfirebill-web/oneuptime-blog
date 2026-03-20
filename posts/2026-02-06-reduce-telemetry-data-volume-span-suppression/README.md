@@ -42,6 +42,7 @@ Low-level infrastructure spans (DNS lookups, connection pooling, TLS handshakes)
 
 ```python
 # Python SDK configuration to suppress infrastructure spans
+
 from opentelemetry import trace
 from opentelemetry.sdk.trace import TracerProvider, SpanProcessor
 from opentelemetry.sdk.trace.export import BatchSpanProcessor

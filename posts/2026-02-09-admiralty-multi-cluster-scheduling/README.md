@@ -27,6 +27,7 @@ Install Admiralty in each cluster that will participate in multi-cluster schedul
 
 ```bash
 # Install using Helm
+
 helm repo add admiralty https://charts.admiralty.io
 helm repo update
 

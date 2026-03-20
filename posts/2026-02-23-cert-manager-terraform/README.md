@@ -18,6 +18,7 @@ The standard approach is to use the official Helm chart.
 
 ```hcl
 # providers.tf
+
 terraform {
   required_providers {
     helm = {

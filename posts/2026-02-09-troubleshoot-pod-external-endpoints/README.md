@@ -18,6 +18,7 @@ Start with simple connectivity tests to external endpoints:
 
 ```bash
 # Test basic internet connectivity
+
 kubectl exec -it my-pod -- ping -c 4 8.8.8.8
 
 # Test connectivity to external hostname

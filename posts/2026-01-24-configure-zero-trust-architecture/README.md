@@ -44,6 +44,7 @@ The foundation of Zero Trust is strong identity verification.
 
 ```yaml
 # Example: Keycloak OIDC configuration for your application
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

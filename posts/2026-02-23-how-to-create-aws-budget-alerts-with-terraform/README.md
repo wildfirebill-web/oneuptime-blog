@@ -57,6 +57,7 @@ Create budgets for individual AWS services:
 
 ```hcl
 # EC2 budget
+
 resource "aws_budgets_budget" "ec2" {
   name         = "ec2-monthly-budget"
   budget_type  = "COST"

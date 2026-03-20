@@ -212,6 +212,7 @@ AI: Here's your infrastructure health summary for this week:
 
 ```bash
 # Clone OneUptime repository
+
 git clone https://github.com/oneuptime/oneuptime
 cd oneuptime/MCP
 

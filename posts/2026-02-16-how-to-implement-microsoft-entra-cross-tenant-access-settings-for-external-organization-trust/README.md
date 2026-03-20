@@ -74,6 +74,7 @@ Here is how to configure defaults using Microsoft Graph PowerShell:
 
 ```powershell
 # Connect to Microsoft Graph
+
 Connect-MgGraph -Scopes "Policy.ReadWrite.CrossTenantAccess"
 
 # Get current default settings

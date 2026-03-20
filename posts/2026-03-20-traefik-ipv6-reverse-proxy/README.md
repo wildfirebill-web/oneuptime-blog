@@ -37,6 +37,7 @@ certificatesResolvers:
         entryPoint: web
 
 # Real IP configuration
+
 entryPoints:
   websecure:
     address: "[::]:443"
@@ -50,7 +51,7 @@ entryPoints:
 ## Docker Provider Configuration
 
 ```yaml
-# docker-compose.yml — Traefik with IPv6
+# docker-compose.yml - Traefik with IPv6
 
 services:
   traefik:
@@ -171,4 +172,4 @@ docker logs traefik 2>&1 | grep -E '[0-9a-fA-F:]{3,39}'
 
 ## Conclusion
 
-Traefik IPv6 configuration centers on the `address: "[::]:port"` format for entry points, which listens on all IPv6 (and IPv4 via dual-stack) interfaces. Configure `forwardedHeaders.trustedIPs` with both IPv4 and IPv6 CIDR ranges for accurate client IP extraction. In Kubernetes, Traefik discovers service endpoints — ensure services use `ipFamilyPolicy: PreferDualStack` to expose IPv6 endpoints for Traefik to route to. The Docker provider automatically uses container IPv6 addresses when the network is IPv6-enabled.
+Traefik IPv6 configuration centers on the `address: "[::]:port"` format for entry points, which listens on all IPv6 (and IPv4 via dual-stack) interfaces. Configure `forwardedHeaders.trustedIPs` with both IPv4 and IPv6 CIDR ranges for accurate client IP extraction. In Kubernetes, Traefik discovers service endpoints - ensure services use `ipFamilyPolicy: PreferDualStack` to expose IPv6 endpoints for Traefik to route to. The Docker provider automatically uses container IPv6 addresses when the network is IPv6-enabled.

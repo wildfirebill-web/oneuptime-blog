@@ -14,6 +14,7 @@ NetworkManager supports bridge creation through nmcli. A bridge requires a maste
 
 ```bash
 # Create a bridge connection
+
 nmcli connection add \
     type bridge \
     con-name "br0" \

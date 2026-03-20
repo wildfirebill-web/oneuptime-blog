@@ -269,6 +269,7 @@ To make sure your retry configuration is working as expected, monitor these metr
 
 ```promql
 # Total retries per service
+
 sum(rate(envoy_cluster_upstream_rq_retry{cluster_name=~"outbound.*my-service.*"}[5m]))
 
 # Retries that succeeded

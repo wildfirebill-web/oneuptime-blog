@@ -20,6 +20,7 @@ Download the official Caddy image.
 
 ```bash
 # Pull the latest Caddy image
+
 podman pull docker.io/library/caddy:2
 
 # Verify the image

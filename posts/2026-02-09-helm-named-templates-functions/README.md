@@ -303,6 +303,7 @@ Test your templates by rendering them with different values:
 
 ```bash
 # Create a test values file
+
 cat > test-values.yaml <<EOF
 replicaCount: 3
 resources:

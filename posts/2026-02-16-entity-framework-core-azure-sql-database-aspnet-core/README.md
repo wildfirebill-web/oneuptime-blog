@@ -16,6 +16,7 @@ Create an ASP.NET Core Web API project and add the required packages.
 
 ```bash
 # Create the project
+
 dotnet new webapi -n BookstoreApi
 cd BookstoreApi
 

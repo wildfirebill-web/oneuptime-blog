@@ -186,6 +186,7 @@ The namespace template Helm chart would include:
 
 ```yaml
 # ResourceQuota
+
 apiVersion: v1
 kind: ResourceQuota
 metadata:

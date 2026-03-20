@@ -166,6 +166,7 @@ For complex sidecar coordination, implement health checks that verify both conta
 
 ```python
 # health_coordinator.py
+
 from flask import Flask, jsonify
 import requests
 import socket

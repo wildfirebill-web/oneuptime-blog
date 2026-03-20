@@ -78,6 +78,7 @@ First, we need to set up the OpenTelemetry SDK and configure the necessary depen
 
 ```python
 # Initialize OpenTelemetry SDK with OTLP exporter for Kafka applications
+
 # This setup is required before any instrumentation can work
 
 from opentelemetry import trace

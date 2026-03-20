@@ -48,6 +48,7 @@ kubectl delete pods -l run=ext-test 2>/dev/null || \
 ```bash
 calicoctl get ippool -o yaml | grep -E "name:|natOutgoing"
 # All IP pools used by pods should have natOutgoing: true
+
 ```
 
 **Validation Step 3: Verify MASQUERADE rules on all nodes**

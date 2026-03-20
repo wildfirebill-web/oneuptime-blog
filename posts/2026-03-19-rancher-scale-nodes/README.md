@@ -148,6 +148,7 @@ kubectl delete node <NODE_NAME>
 
 ```bash
 # On the node being removed
+
 sudo systemctl stop rancher-system-agent
 sudo systemctl disable rancher-system-agent
 sudo rm -rf /var/lib/rancher

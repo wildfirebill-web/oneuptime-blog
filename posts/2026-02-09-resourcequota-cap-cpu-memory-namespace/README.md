@@ -99,6 +99,7 @@ Pods that would exceed quota are rejected:
 ```bash
 kubectl run test --image=nginx --requests=cpu=5 -n development
 # Error: exceeded quota: compute-quota, requested: requests.cpu=5, used: requests.cpu=6, limited: requests.cpu=10
+
 ```
 
 The pod is not created. Reduce requests or delete other pods to free quota.
@@ -370,7 +371,7 @@ kubectl delete pod low-priority-job-xyz -n production
 kubectl edit resourcequota compute-quota -n production
 ```
 
-## ResourceQuota with LimitRange
+ResourceQuota with LimitRange
 
 Combine with LimitRange to enforce both individual and aggregate limits:
 

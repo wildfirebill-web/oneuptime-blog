@@ -23,6 +23,7 @@ RKE requires Docker on every cluster node.
 
 ```bash
 # Install Docker using the convenience script (for all nodes)
+
 curl -fsSL https://get.docker.com | sudo sh
 
 # Add your user to the docker group

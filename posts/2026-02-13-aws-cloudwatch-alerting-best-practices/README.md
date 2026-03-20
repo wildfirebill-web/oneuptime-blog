@@ -37,6 +37,7 @@ The following CLI command pulls p99 CPU utilization over 14 days, which helps yo
 
 ```bash
 # Pull p99 CPU utilization stats over the past 14 days
+
 aws cloudwatch get-metric-statistics \
   --namespace AWS/EC2 \
   --metric-name CPUUtilization \

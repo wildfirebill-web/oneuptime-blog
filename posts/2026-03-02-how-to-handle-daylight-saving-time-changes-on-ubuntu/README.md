@@ -33,6 +33,7 @@ The most reliable approach is to configure servers to use UTC:
 
 ```bash
 # Set timezone to UTC
+
 sudo timedatectl set-timezone UTC
 
 # Verify

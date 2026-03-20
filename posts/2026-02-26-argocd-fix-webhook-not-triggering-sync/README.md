@@ -68,6 +68,7 @@ The ArgoCD API server must be accessible from your Git provider. If ArgoCD is be
 
 ```bash
 # Check if the webhook endpoint is reachable
+
 curl -X POST https://argocd.example.com/api/webhook \
   -H "Content-Type: application/json" \
   -d '{"test": true}' \

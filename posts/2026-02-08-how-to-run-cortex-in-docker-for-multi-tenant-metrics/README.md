@@ -33,6 +33,7 @@ Make sure Docker and Docker Compose are available.
 
 ```bash
 # Verify Docker is running
+
 docker info --format '{{.ServerVersion}}'
 
 # Verify Compose is available

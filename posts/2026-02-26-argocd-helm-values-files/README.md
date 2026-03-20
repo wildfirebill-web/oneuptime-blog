@@ -55,6 +55,7 @@ A common pattern is to have a base `values.yaml` and environment-specific overri
 
 ```yaml
 # values.yaml (base defaults)
+
 replicaCount: 1
 image:
   repository: myorg/my-app

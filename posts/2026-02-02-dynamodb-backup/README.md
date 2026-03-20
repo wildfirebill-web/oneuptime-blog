@@ -50,6 +50,7 @@ The following script creates an on-demand backup and waits for completion. It us
 #!/bin/bash
 
 # Configuration variables
+
 TABLE_NAME="orders"
 BACKUP_NAME="${TABLE_NAME}-backup-$(date +%Y%m%d-%H%M%S)"
 

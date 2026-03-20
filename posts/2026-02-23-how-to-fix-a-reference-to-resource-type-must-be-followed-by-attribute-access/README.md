@@ -42,6 +42,7 @@ The error occurs when you write just the resource type without the name and attr
 
 ```hcl
 # WRONG - just the resource type, no name or attribute
+
 vpc_id = aws_vpc
 
 # WRONG - resource type and name, but no attribute

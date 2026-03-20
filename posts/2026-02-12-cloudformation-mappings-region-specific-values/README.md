@@ -18,6 +18,7 @@ Here's the basic structure:
 
 ```yaml
 # Mappings define a two-level lookup table
+
 Mappings:
   TopLevelKey:
     SecondLevelKey:

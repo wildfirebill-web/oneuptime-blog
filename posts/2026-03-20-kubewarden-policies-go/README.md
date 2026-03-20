@@ -1,4 +1,4 @@
-# How to Write Custom Kubewarden Policies in Go
+# How to Write Custom Kubewarden Policies in Go - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -16,6 +16,7 @@ Writing Kubewarden policies in Go uses the familiar Go ecosystem and the Kubewar
 
 ```bash
 # Install Go 1.21+
+
 curl -Lo go.tar.gz https://go.dev/dl/go1.21.5.linux-amd64.tar.gz
 sudo tar -C /usr/local -xzf go.tar.gz
 export PATH=$PATH:/usr/local/go/bin
@@ -89,7 +90,7 @@ func validate(payload []byte) ([]byte, error) {
     for _, container := range pod.Spec.Containers {
         if strings.HasSuffix(container.Image, ":latest") || !strings.Contains(container.Image, ":") {
             violations = append(violations,
-                fmt.Sprintf("Container '%s' uses the :latest tag or has no tag — use a specific version", container.Name))
+                fmt.Sprintf("Container '%s' uses the :latest tag or has no tag - use a specific version", container.Name))
         }
     }
 
@@ -180,6 +181,6 @@ EOF
 
 ## Best Practices
 
-- Use TinyGo's WASM compilation (not standard Go) — it produces much smaller WASM binaries.
+- Use TinyGo's WASM compilation (not standard Go) - it produces much smaller WASM binaries.
 - Write table-driven tests in Go to cover edge cases before building the WASM.
 - Use `kwctl verify` to validate policy signatures before deploying to production clusters.

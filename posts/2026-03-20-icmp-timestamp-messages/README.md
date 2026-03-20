@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ICMP, Networking, Timestamps, IPv4, Time Synchronization, Security
+Tags: ICMP, Networking, Timestamp, IPv4, Time Synchronization, Security
 
 Description: Understand ICMP Timestamp Request and Reply messages, how they measure one-way network delay, and why they are typically disabled for security reasons.
 
@@ -12,7 +12,7 @@ ICMP Timestamp (Type 13) and Timestamp Reply (Type 14) are designed to measure c
 
 ## ICMP Timestamp Packet Format
 
-```
+```text
  0                   1                   2                   3
  0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
 +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
@@ -31,6 +31,7 @@ ICMP Timestamp (Type 13) and Timestamp Reply (Type 14) are designed to measure c
 
 ```bash
 # Most modern systems don't have a dedicated timestamp tool
+
 # Use hping3 to send ICMP timestamp requests
 apt install hping3
 
@@ -84,7 +85,7 @@ def send_icmp_timestamp(dest_ip):
             print(f"  Receive:   {recv} ms")
             print(f"  Transmit:  {trans} ms")
     except socket.timeout:
-        print("No reply — timestamps likely disabled")
+        print("No reply - timestamps likely disabled")
 
 # Example: send_icmp_timestamp("192.168.1.1")
 ```
@@ -97,7 +98,7 @@ ICMP timestamps can be used to fingerprint OS clock offsets and assist in timing
 # Block ICMP Timestamp Requests (Type 13)
 iptables -A INPUT -p icmp --icmp-type timestamp-request -j DROP
 
-# Block Timestamp Replies (Type 14) — prevent information leakage
+# Block Timestamp Replies (Type 14) - prevent information leakage
 iptables -A OUTPUT -p icmp --icmp-type timestamp-reply -j DROP
 
 # Verify with nmap scanner check

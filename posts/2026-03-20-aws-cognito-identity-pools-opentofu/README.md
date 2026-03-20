@@ -37,6 +37,7 @@ Create separate IAM roles for authenticated and guest users.
 
 ```hcl
 # Authenticated role
+
 resource "aws_iam_role" "authenticated" {
   name = "${var.app_name}-cognito-auth-${var.environment}"
 

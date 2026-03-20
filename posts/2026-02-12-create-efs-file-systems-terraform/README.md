@@ -98,6 +98,7 @@ resource "aws_security_group" "efs" {
 }
 
 # Your application security group (simplified)
+
 resource "aws_security_group" "application" {
   name        = "application"
   description = "Application instances"

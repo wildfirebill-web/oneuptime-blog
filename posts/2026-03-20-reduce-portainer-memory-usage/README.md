@@ -1,4 +1,4 @@
-# How to Reduce Portainer Memory Usage
+# How to Reduce Portainer Memory Usage - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,12 +8,13 @@ Description: Reduce Portainer's memory footprint by tuning snapshot intervals, c
 
 ## Introduction
 
-Portainer's memory usage grows with the number of endpoints, containers, and the snapshot data it maintains. In resource-constrained environments — edge nodes, small VMs, home labs — reducing Portainer's memory footprint allows it to share the host with more container workloads. This guide covers practical steps to diagnose and reduce Portainer memory consumption.
+Portainer's memory usage grows with the number of endpoints, containers, and the snapshot data it maintains. In resource-constrained environments - edge nodes, small VMs, home labs - reducing Portainer's memory footprint allows it to share the host with more container workloads. This guide covers practical steps to diagnose and reduce Portainer memory consumption.
 
 ## Step 1: Check Current Memory Usage
 
 ```bash
 # Check Portainer container memory usage
+
 docker stats portainer --no-stream
 
 # Detailed memory breakdown
@@ -30,7 +31,7 @@ du -sh $(docker inspect portainer --format '{{range .Mounts}}{{if eq .Destinatio
 
 ## Step 2: Increase Snapshot Interval
 
-The most impactful setting — longer intervals reduce memory used by in-flight snapshots:
+The most impactful setting - longer intervals reduce memory used by in-flight snapshots:
 
 ```yaml
 # docker-compose.yml - Reduced snapshot frequency

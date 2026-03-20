@@ -26,6 +26,7 @@ This snippet installs the required packages and sets up authentication:
 
 ```python
 # Install the Vertex AI SDK with the latest Gemini support
+
 # pip install google-cloud-aiplatform
 
 import vertexai

@@ -17,6 +17,7 @@ app   = Flask(__name__)
 _lock = threading.Lock()
 
 # Sliding window: {ip: [timestamp, ...]}
+
 _windows: dict[str, list[float]] = defaultdict(list)
 
 LIMIT   = 100    # requests
@@ -127,4 +128,4 @@ app.listen(3000);
 
 ## Conclusion
 
-In-memory rate limiting works for single-instance deployments but loses state on restart and doesn't share across replicas. Redis-backed rate limiting is the production standard for distributed systems. Always extract the real client IP before using it as the rate limit key — check `X-Forwarded-For` only when `remote_addr` is a trusted proxy. Return standard `X-RateLimit-*` headers and `Retry-After` on 429 responses to help well-behaved clients back off gracefully.
+In-memory rate limiting works for single-instance deployments but loses state on restart and doesn't share across replicas. Redis-backed rate limiting is the production standard for distributed systems. Always extract the real client IP before using it as the rate limit key - check `X-Forwarded-For` only when `remote_addr` is a trusted proxy. Return standard `X-RateLimit-*` headers and `Retry-After` on 429 responses to help well-behaved clients back off gracefully.

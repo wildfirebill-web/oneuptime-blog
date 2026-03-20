@@ -31,6 +31,7 @@ Document your security policies and store them where they are accessible and ver
 
 ```bash
 # Use a dedicated GCS bucket for security policy documents
+
 gcloud storage buckets create gs://company-security-policies \
   --location=us-central1 \
   --uniform-bucket-level-access \

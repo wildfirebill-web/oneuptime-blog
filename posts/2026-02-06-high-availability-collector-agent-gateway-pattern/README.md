@@ -67,6 +67,7 @@ The agent collector should be as lightweight as possible. Its job is to receive 
 
 ```yaml
 # agent-config.yaml
+
 # Lightweight agent that runs on every node as a DaemonSet
 receivers:
   otlp:

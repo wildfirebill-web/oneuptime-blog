@@ -63,6 +63,7 @@ import os
 import sys
 
 # Files we need to process
+
 files = [
     "data/january.csv",
     "data/february.csv",

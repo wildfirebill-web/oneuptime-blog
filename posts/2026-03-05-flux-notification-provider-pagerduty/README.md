@@ -29,6 +29,7 @@ Store the PagerDuty integration key in a Kubernetes secret. For PagerDuty, the `
 
 ```bash
 # Create a secret containing the PagerDuty integration key
+
 kubectl create secret generic pagerduty-integration-key \
   --namespace=flux-system \
   --from-literal=token=YOUR_PAGERDUTY_INTEGRATION_KEY

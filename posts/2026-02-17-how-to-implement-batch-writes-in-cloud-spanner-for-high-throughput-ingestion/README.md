@@ -46,6 +46,7 @@ def batch_insert_users(users_data):
             )
 
 # Insert 500 users in a single batch
+
 users = [{"email": f"user{i}@example.com", "name": f"User {i}"} for i in range(500)]
 batch_insert_users(users)
 ```

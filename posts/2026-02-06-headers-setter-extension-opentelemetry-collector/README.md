@@ -45,6 +45,7 @@ Here's a foundational configuration demonstrating authentication header injectio
 
 ```yaml
 # extensions section defines header manipulation
+
 extensions:
   # Configure headers setter extension
   headers_setter:

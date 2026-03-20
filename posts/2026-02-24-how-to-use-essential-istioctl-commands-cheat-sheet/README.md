@@ -16,6 +16,7 @@ The `istioctl` CLI is the primary tool for managing Istio. It goes well beyond w
 
 ```bash
 # Install with default profile
+
 istioctl install --set profile=default
 
 # Install with demo profile (includes extras like Kiali, Grafana)

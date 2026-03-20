@@ -61,6 +61,7 @@ Implement role-based access control with least privilege:
 
 ```bash
 # Create custom roles with minimum necessary permissions
+
 az role definition create --role-definition '{
   "Name": "SOC2 Application Operator",
   "Description": "Limited operator role for SOC 2 compliance",

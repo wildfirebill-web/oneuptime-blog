@@ -32,6 +32,7 @@ Create or update your Cilium Helm values file:
 
 ```yaml
 # cilium-values.yaml
+
 prometheus:
   enabled: true
   serviceMonitor:

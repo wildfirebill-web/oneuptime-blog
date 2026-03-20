@@ -10,7 +10,7 @@ BGP mode provides true load balancing across all Kubernetes nodes (ECMP) and ena
 
 ## How MetalLB BGP Mode Works
 
-```
+```text
 MetalLB Speaker on each node → BGP peers with router
 Each node announces service IPs via BGP
 Router receives routes to service IP via multiple nodes (ECMP)
@@ -23,6 +23,7 @@ On your router (example: a Linux router with FRRouting):
 
 ```bash
 # On the router, configure BGP to accept peers from Kubernetes nodes
+
 # /etc/frr/frr.conf
 
 router bgp 65000

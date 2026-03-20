@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Terraform, Workspaces, Environment, Infrastructure as Code, DevOps
+Tags: Terraform, Workspaces, Environments, Infrastructure as Code, DevOps
 
 Description: Learn how to use Terraform workspaces to manage multiple environments like dev, staging, and production from the same codebase.
 
@@ -37,6 +37,7 @@ Workspaces are built into Terraform. No extra setup is needed.
 
 ```bash
 # List all workspaces (default workspace always exists)
+
 terraform workspace list
 
 # Create a new workspace for development
@@ -156,7 +157,7 @@ terraform plan -var-file="environments/prod.tfvars"
 terraform apply -var-file="environments/prod.tfvars"
 ```
 
-## Resource Naming with Workspaces
+Resource Naming with Workspaces
 
 Prefix resource names with the workspace to avoid naming collisions.
 

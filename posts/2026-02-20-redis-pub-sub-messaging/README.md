@@ -41,6 +41,7 @@ import json
 import time
 
 # Connect to Redis
+
 r = redis.Redis(host='localhost', port=6379, decode_responses=True)
 
 def publish_event(channel: str, event_type: str, data: dict):

@@ -30,6 +30,7 @@ Install the Timoni CLI on your system:
 
 ```bash
 # Install on macOS
+
 brew install stefanprodan/tap/timoni
 
 # Install on Linux

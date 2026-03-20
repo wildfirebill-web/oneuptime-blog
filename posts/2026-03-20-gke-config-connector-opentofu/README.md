@@ -14,6 +14,7 @@ GKE Config Connector is a Kubernetes add-on that lets you manage GCP resources t
 
 ```hcl
 # main.tf - Enable Config Connector add-on on GKE
+
 resource "google_container_cluster" "config_connector_cluster" {
   name     = "config-connector-cluster"
   location = "us-central1"

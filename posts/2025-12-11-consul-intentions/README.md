@@ -38,6 +38,7 @@ Create intentions using the CLI or API.
 
 ```bash
 # Allow web to connect to api
+
 consul intention create web api
 
 # Deny all connections to secrets-service

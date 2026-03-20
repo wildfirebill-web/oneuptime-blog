@@ -60,6 +60,7 @@ flowchart TB
 echo "=== System Connection Limits ==="
 
 # File descriptor limits
+
 echo -e "\n--- File Descriptor Limits ---"
 echo "Soft limit: $(ulimit -Sn)"
 echo "Hard limit: $(ulimit -Hn)"

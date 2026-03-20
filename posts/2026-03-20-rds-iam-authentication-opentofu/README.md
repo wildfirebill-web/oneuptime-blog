@@ -49,6 +49,7 @@ resource "aws_db_instance" "iam_auth" {
 
 ```hcl
 # IAM policy granting permission to generate RDS auth tokens
+
 resource "aws_iam_policy" "rds_connect" {
   name        = "RDSIAMConnectPolicy"
   description = "Allow connecting to RDS using IAM authentication"
@@ -138,4 +139,4 @@ tofu apply
 
 ## Conclusion
 
-RDS IAM Authentication eliminates password management for application database connections—tokens are automatically generated and expire after 15 minutes, limiting exposure. Pair IAM authentication with SSL/TLS (required) and restrict the `rds-db:connect` permission to specific database users and instance IDs for least-privilege access. The master user connection still requires a password, so continue to manage that credential securely via Secrets Manager.
+RDS IAM Authentication eliminates password management for application database connections-tokens are automatically generated and expire after 15 minutes, limiting exposure. Pair IAM authentication with SSL/TLS (required) and restrict the `rds-db:connect` permission to specific database users and instance IDs for least-privilege access. The master user connection still requires a password, so continue to manage that credential securely via Secrets Manager.

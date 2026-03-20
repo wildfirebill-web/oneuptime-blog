@@ -81,6 +81,7 @@ The following script shows how to automatically scan your repositories for techn
 ```bash
 #!/bin/bash
 # tech-inventory.sh
+
 # Scans repositories to identify technologies in use
 # Run this from the parent directory containing all your repos
 

@@ -40,6 +40,7 @@ Update your RHEL 8 system to the latest packages first:
 
 ```bash
 # Update to the latest RHEL 8 packages
+
 sudo dnf update -y
 
 # Reboot to apply any kernel updates

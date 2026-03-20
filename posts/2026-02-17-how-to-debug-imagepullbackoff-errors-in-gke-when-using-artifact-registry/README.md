@@ -20,6 +20,7 @@ Start by getting the details of the failing pod:
 
 ```bash
 # Get detailed information about the pod, including the error message
+
 kubectl describe pod my-failing-pod -n my-namespace
 ```
 

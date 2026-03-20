@@ -8,11 +8,11 @@ Description: The magic number method simplifies subnetting by calculating 256 mi
 
 ## The Magic Number Formula
 
-```
+```text
 Magic Number = Block Size = 256 - (interesting mask octet)
 ```
 
-The "interesting octet" is the first octet in the mask that is neither 0 nor 255 — it's where the network/host boundary falls.
+The "interesting octet" is the first octet in the mask that is neither 0 nor 255 - it's where the network/host boundary falls.
 
 ## Three-Step Process
 
@@ -58,7 +58,7 @@ def magic_number_subnet(ip: str, prefix: int) -> dict:
             break
 
     if interesting_idx is None:
-        # All 255s or all 0s — handle edge cases
+        # All 255s or all 0s - handle edge cases
         net = ipaddress.IPv4Network(f"{ip}/{prefix}", strict=False)
         return {"subnet": str(net.network_address),
                 "broadcast": str(net.broadcast_address),
@@ -81,6 +81,7 @@ def magic_number_subnet(ip: str, prefix: int) -> dict:
     }
 
 # Test cases
+
 for ip, pfx in [("172.20.50.100", 21), ("192.168.1.45", 26), ("10.0.0.0", 11)]:
     r = magic_number_subnet(ip, pfx)
     print(f"{ip}/{pfx}: block={r['block']} subnet={r['subnet']} bcast={r['broadcast']}")

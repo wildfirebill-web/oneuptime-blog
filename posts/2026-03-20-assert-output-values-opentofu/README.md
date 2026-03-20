@@ -14,6 +14,7 @@ Module outputs are the public API of your infrastructure modules. Testing them e
 
 ```hcl
 # modules/vpc/outputs.tf
+
 output "vpc_id" {
   value = aws_vpc.main.id
 }

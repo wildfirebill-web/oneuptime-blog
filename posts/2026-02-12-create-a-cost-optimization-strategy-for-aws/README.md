@@ -44,6 +44,7 @@ You can't optimize what you can't see. Start here.
 
 ```bash
 # Activate cost allocation tags
+
 aws ce update-cost-allocation-tags-status \
   --cost-allocation-tags-status '[
     {"TagKey": "Environment", "Status": "Active"},

@@ -8,7 +8,7 @@ Description: Learn how to safely remove Docker volumes in Portainer, including h
 
 ## Introduction
 
-Docker volumes persist data independently of containers — this is their primary advantage. But when volumes are no longer needed, they take up disk space and clutter the Portainer UI. Removing volumes correctly requires care to avoid data loss. This guide covers safe volume removal practices.
+Docker volumes persist data independently of containers - this is their primary advantage. But when volumes are no longer needed, they take up disk space and clutter the Portainer UI. Removing volumes correctly requires care to avoid data loss. This guide covers safe volume removal practices.
 
 ## Prerequisites
 
@@ -48,6 +48,7 @@ Via Docker CLI:
 
 ```bash
 # Remove all unused volumes (not attached to any container):
+
 docker volume prune
 
 # WARNING: "unused" includes volumes from STOPPED containers
@@ -143,7 +144,7 @@ In Portainer when removing a stack:
 ### After a Failed Deployment
 
 ```bash
-# Deployment created volumes but failed — clean up:
+# Deployment created volumes but failed - clean up:
 docker compose down --volumes
 # Removes all containers, networks, and volumes defined in the compose file
 ```
@@ -192,9 +193,9 @@ docker volume ls --filter "label=auto-cleanup=true" -q | \
     while read volume; do
         # Check if created more than 30 days ago:
         CREATED=$(docker volume inspect "${volume}" --format '{{.CreatedAt}}')
-        # (Parse date and compare — simplified here)
+        # (Parse date and compare - simplified here)
         echo "Removing cleanup-labeled volume: ${volume}"
-        docker volume rm "${volume}" 2>/dev/null || echo "  ${volume} is in use — skipped"
+        docker volume rm "${volume}" 2>/dev/null || echo "  ${volume} is in use - skipped"
     done
 ```
 
@@ -219,4 +220,4 @@ docker volume ls | grep my-volume
 
 ## Conclusion
 
-Removing volumes in Portainer is permanent and irreversible — always back up data before deletion. Use the prune command for batch cleanup of unused volumes, verify no containers are using a volume before removal, and label your volumes with retention metadata to make cleanup decisions easier. For production environments, implement a backup-before-remove policy using automation scripts.
+Removing volumes in Portainer is permanent and irreversible - always back up data before deletion. Use the prune command for batch cleanup of unused volumes, verify no containers are using a volume before removal, and label your volumes with retention metadata to make cleanup decisions easier. For production environments, implement a backup-before-remove policy using automation scripts.

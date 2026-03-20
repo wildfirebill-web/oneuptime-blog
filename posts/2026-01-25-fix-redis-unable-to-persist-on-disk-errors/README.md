@@ -16,6 +16,7 @@ Redis can be configured to stop accepting writes when persistence fails. This be
 
 ```bash
 # Check current configuration
+
 redis-cli CONFIG GET stop-writes-on-bgsave-error
 # "stop-writes-on-bgsave-error" "yes"
 

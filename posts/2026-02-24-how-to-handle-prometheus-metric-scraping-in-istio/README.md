@@ -204,6 +204,7 @@ After configuring scraping, verify that metrics are flowing:
 
 ```bash
 # Check if Istio metrics are present
+
 kubectl port-forward -n monitoring svc/prometheus 9090:9090 &
 curl -s 'localhost:9090/api/v1/query?query=istio_requests_total' | jq '.data.result | length'
 ```

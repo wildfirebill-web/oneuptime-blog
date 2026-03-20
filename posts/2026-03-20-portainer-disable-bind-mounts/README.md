@@ -1,4 +1,4 @@
-# How to Disable Bind Mounts for Non-Admin Users in Portainer
+# How to Disable Bind Mounts for Non-Admin Users in Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,23 +8,24 @@ Description: Learn how to disable bind mounts for non-admin users in Portainer t
 
 ## Introduction
 
-Bind mounts allow containers to mount directories directly from the host filesystem. This is powerful but dangerous in multi-user environments — a user who can create a bind mount to `/etc` or `/var/run/docker.sock` effectively has root access to the host. Portainer allows administrators to disable this capability for non-admin users.
+Bind mounts allow containers to mount directories directly from the host filesystem. This is powerful but dangerous in multi-user environments - a user who can create a bind mount to `/etc` or `/var/run/docker.sock` effectively has root access to the host. Portainer allows administrators to disable this capability for non-admin users.
 
 ## Why Bind Mounts Are Dangerous
 
 A malicious or careless user with bind mount access can:
 
 ```bash
-# Mount the Docker socket — gives root-equivalent container control
+# Mount the Docker socket - gives root-equivalent container control
+
 -v /var/run/docker.sock:/var/run/docker.sock
 
-# Mount SSH authorized_keys — add their own key for host SSH access
+# Mount SSH authorized_keys - add their own key for host SSH access
 -v /root/.ssh:/host_ssh
 
-# Mount /etc/cron.d — plant a cron job on the host
+# Mount /etc/cron.d - plant a cron job on the host
 -v /etc/cron.d:/host_cron
 
-# Mount /tmp with noexec bypass — execute scripts
+# Mount /tmp with noexec bypass - execute scripts
 -v /tmp:/host_tmp
 ```
 
@@ -105,16 +106,16 @@ done
 
 Notify users about the change and provide alternatives:
 
-```
+```bash
 To all container developers:
 
 Bind mounts to host paths have been disabled for security reasons.
 Please use named Docker volumes for persistent storage instead.
 
-Before (bind mount — now restricted):
+Before (bind mount - now restricted):
   Volumes: /host/path:/container/path
 
-After (named volume — allowed):
+After (named volume - allowed):
   Volumes: my-data-volume:/container/path
 
 If you need to share files between the host and container, please
@@ -128,13 +129,13 @@ Provide users with safe alternatives:
 ### Named Volumes (Recommended)
 
 ```yaml
-# docker-compose.yml — Using named volumes (safe for all users)
+# docker-compose.yml - Using named volumes (safe for all users)
 version: "3.8"
 services:
   app:
     image: myapp:latest
     volumes:
-      - app_data:/data      # Named volume — allowed for non-admin users
+      - app_data:/data      # Named volume - allowed for non-admin users
       - app_config:/config
 
 volumes:

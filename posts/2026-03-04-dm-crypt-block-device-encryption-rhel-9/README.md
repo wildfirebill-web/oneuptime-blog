@@ -43,6 +43,7 @@ flowchart TD
 
 ```bash
 # Open a device with dm-crypt plain mode
+
 # You will be prompted for a passphrase
 sudo cryptsetup open --type plain /dev/sdb plain_encrypted
 

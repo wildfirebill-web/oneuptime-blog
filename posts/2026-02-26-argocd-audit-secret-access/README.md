@@ -37,6 +37,7 @@ Kubernetes API audit logs capture all API requests, including secret access. Con
 
 ```yaml
 # audit-policy.yaml - Kubernetes API server audit policy
+
 apiVersion: audit.k8s.io/v1
 kind: Policy
 rules:

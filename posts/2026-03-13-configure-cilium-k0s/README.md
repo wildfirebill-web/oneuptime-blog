@@ -29,6 +29,7 @@ Configure k0s to skip its default CNI so Cilium can be installed separately.
 
 ```bash
 # Download k0s (replace with the latest version)
+
 curl -sSLf https://get.k0s.sh | sudo sh
 
 # Create k0s configuration that disables the default CNI

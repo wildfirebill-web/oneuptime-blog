@@ -29,6 +29,7 @@ Start by organizing your configuration files and adding them to the Podman artif
 
 ```bash
 # Create environment-specific configuration files
+
 cat > app-config-production.yaml <<EOF
 app:
   name: myservice

@@ -16,6 +16,7 @@ The official Metasploit installer is the recommended method for Ubuntu:
 
 ```bash
 # Method 1: Rapid7's official installer (recommended)
+
 curl https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/templates/metasploit-framework-wrappers/msfupdate.erb \
   > /tmp/msfinstall
 
@@ -276,7 +277,7 @@ msf6 > loot -o /tmp/assessment_loot.csv
 msf6 > loot
 ```
 
-## Resource Scripts for Automation
+Resource Scripts for Automation
 
 Save and replay command sequences with resource scripts:
 

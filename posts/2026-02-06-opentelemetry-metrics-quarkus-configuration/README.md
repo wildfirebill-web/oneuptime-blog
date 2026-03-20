@@ -52,6 +52,7 @@ Configure OpenTelemetry metrics in application.properties.
 
 ```properties
 # Application identification
+
 quarkus.application.name=payment-service
 
 # OpenTelemetry configuration

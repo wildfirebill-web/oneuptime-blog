@@ -20,6 +20,7 @@ The `flux create tenant` command creates a RoleBinding to the `cluster-admin` Cl
 
 ```yaml
 # Default RBAC created by flux create tenant
+
 apiVersion: rbac.authorization.k8s.io/v1
 kind: RoleBinding
 metadata:

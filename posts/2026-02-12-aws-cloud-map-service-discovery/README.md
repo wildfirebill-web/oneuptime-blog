@@ -40,6 +40,7 @@ For services running in a VPC, you'll typically want a private DNS namespace.
 
 ```bash
 # Create a private DNS namespace
+
 aws servicediscovery create-private-dns-namespace \
   --name myapp.local \
   --vpc vpc-0abc123def456789 \

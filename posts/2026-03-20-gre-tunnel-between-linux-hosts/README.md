@@ -18,7 +18,7 @@ GRE (Generic Routing Encapsulation) tunnels encapsulate network layer protocols 
 
 ## Topology
 
-```
+```text
 Host A: eth0 = 10.0.0.1 (public/underlay IP)
 Host B: eth0 = 10.0.0.2 (public/underlay IP)
 Tunnel: gre0 on A = 172.16.0.1/30, gre0 on B = 172.16.0.2/30
@@ -28,6 +28,7 @@ Tunnel: gre0 on A = 172.16.0.1/30, gre0 on B = 172.16.0.2/30
 
 ```bash
 # Load GRE module
+
 modprobe ip_gre
 
 # Create GRE tunnel
@@ -123,4 +124,4 @@ Address=172.16.0.1/30
 
 ## Conclusion
 
-A GRE tunnel creates a virtual point-to-point link over any IP network. Create it with `ip tunnel add` specifying `local` and `remote` underlay IPs, assign a tunnel IP, and bring the interface up. GRE tunnels carry IP traffic but do not encrypt it — combine with IPsec for security. Tunnels are not persistent across reboots unless configured via systemd-networkd or a startup script.
+A GRE tunnel creates a virtual point-to-point link over any IP network. Create it with `ip tunnel add` specifying `local` and `remote` underlay IPs, assign a tunnel IP, and bring the interface up. GRE tunnels carry IP traffic but do not encrypt it - combine with IPsec for security. Tunnels are not persistent across reboots unless configured via systemd-networkd or a startup script.

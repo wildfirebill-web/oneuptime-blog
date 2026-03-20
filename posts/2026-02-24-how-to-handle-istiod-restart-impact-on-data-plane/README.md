@@ -41,6 +41,7 @@ Monitor the reconnection:
 
 ```bash
 # Watch connections recovering
+
 watch "kubectl exec -n istio-system deploy/istiod -- curl -s localhost:15014/metrics | grep pilot_xds_connected"
 ```
 

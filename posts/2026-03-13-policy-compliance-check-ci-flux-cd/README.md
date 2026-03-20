@@ -28,6 +28,7 @@ This guide covers integrating both Conftest and Kyverno CLI into GitHub Actions 
 
 ```rego
 # policy/kubernetes.rego
+
 package main
 
 import future.keywords.if

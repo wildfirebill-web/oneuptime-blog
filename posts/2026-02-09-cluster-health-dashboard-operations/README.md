@@ -116,6 +116,7 @@ Track node health metrics critical for cluster operation:
 
 ```promql
 # Node availability
+
 up{job="kubelet"}
 
 # Node resource capacity
@@ -239,7 +240,7 @@ data:
     }
 ```
 
-## Resource Utilization Dashboard
+Resource Utilization Dashboard
 
 Track cluster resource consumption:
 

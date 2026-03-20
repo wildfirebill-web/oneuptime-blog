@@ -222,6 +222,7 @@ Set the load balancer idle timeout higher than Envoy's, or set Envoy's timeout l
 
 ```yaml
 # For the Istio ingress gateway
+
 apiVersion: networking.istio.io/v1alpha3
 kind: EnvoyFilter
 metadata:

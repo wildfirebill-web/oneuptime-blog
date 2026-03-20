@@ -24,6 +24,7 @@ Understanding how to build secure policies from scratch is essential before appl
 
 ```yaml
 # sample-app.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

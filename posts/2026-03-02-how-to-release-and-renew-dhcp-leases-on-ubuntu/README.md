@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Ubuntu, DHCP, Networking, Ip Command, Dhclient
+Tags: Ubuntu, DHCP, Networking, ip command, dhclient
 
 Description: How to release and renew DHCP leases on Ubuntu using dhclient, networkctl, and Netplan for both server and desktop environments.
 
@@ -18,6 +18,7 @@ Different Ubuntu configurations use different DHCP clients:
 
 ```bash
 # Check if dhclient is managing any interfaces
+
 ps aux | grep dhclient
 
 # Check if systemd-networkd is managing DHCP

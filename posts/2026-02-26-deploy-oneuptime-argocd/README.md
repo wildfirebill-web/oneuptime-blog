@@ -53,6 +53,7 @@ observability/
 
 ```yaml
 # observability/oneuptime/Chart.yaml
+
 apiVersion: v2
 name: oneuptime
 description: Wrapper chart for OneUptime observability platform

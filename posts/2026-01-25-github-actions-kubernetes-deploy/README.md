@@ -16,6 +16,7 @@ Start with a simple deployment using kubectl:
 
 ```yaml
 # .github/workflows/deploy.yml
+
 name: Deploy to Kubernetes
 
 on:

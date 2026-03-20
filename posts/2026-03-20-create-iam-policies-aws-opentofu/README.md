@@ -8,12 +8,13 @@ Description: Learn how to create and manage AWS IAM policies with OpenTofu using
 
 ## Introduction
 
-IAM policies define what actions are allowed or denied on which AWS resources. OpenTofu's `aws_iam_policy_document` data source makes writing policies readable and type-safe—far easier to maintain than raw JSON strings.
+IAM policies define what actions are allowed or denied on which AWS resources. OpenTofu's `aws_iam_policy_document` data source makes writing policies readable and type-safe-far easier to maintain than raw JSON strings.
 
 ## Using `aws_iam_policy_document`
 
 ```hcl
 # Define the policy document using the data source
+
 data "aws_iam_policy_document" "s3_read_write" {
   statement {
     sid    = "ListBucket"
@@ -106,7 +107,7 @@ data "aws_iam_policy_document" "region_restricted" {
 }
 ```
 
-## Resource-Based Policies
+Resource-Based Policies
 
 Some resources (S3, SQS, SNS, KMS) also support resource-based policies:
 

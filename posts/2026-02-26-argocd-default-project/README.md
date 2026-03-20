@@ -96,6 +96,7 @@ Before locking down the default project, migrate existing applications to team-s
 
 ```bash
 # List applications in the default project
+
 argocd app list --project default
 
 # For each application, update the project

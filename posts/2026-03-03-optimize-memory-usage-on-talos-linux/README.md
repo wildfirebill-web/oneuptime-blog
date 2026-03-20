@@ -24,6 +24,7 @@ The Linux kernel has many parameters that affect memory behavior. Here are the m
 
 ```yaml
 # talos-machine-config.yaml
+
 machine:
   sysctls:
     # Swappiness: how aggressively the kernel uses swap

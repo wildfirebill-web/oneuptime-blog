@@ -31,6 +31,7 @@ If you have not yet enabled the autoscaler on your node pool, start here. The fo
 
 ```bash
 # Enable cluster autoscaler on the default node pool
+
 # --min-count sets the floor, --max-count sets the ceiling
 az aks nodepool update \
   --resource-group myResourceGroup \

@@ -23,6 +23,7 @@ You need:
 
 ```bash
 # Install everything you need
+
 ansible-galaxy collection install community.vmware
 pip install pyvmomi requests
 ```

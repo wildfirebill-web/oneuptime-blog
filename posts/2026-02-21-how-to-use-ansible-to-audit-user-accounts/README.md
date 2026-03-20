@@ -27,6 +27,7 @@ Start by collecting the user database from each host.
 
 ```yaml
 # audit_users_basic.yml - Collect basic user account information
+
 ---
 - name: Audit user accounts across all hosts
   hosts: all

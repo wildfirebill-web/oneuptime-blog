@@ -23,6 +23,7 @@ The first step is getting the SNMP daemon installed on all target hosts:
 
 ```yaml
 # install_snmp.yml - Install SNMP packages on Debian and RHEL systems
+
 ---
 - name: Install SNMP packages
   hosts: all

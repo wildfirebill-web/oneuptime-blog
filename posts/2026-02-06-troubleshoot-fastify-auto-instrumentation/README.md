@@ -21,6 +21,7 @@ Look for these messages:
 
 ```text
 # Good - instrumentation is being applied
+
 @opentelemetry/instrumentation-fastify Applying instrumentation patch for module fastify
 
 # Bad - module loaded too early

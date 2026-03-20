@@ -56,6 +56,7 @@ First, verify logs are actually being written. SSH into the pod or container and
 
 ```bash
 # For Kubernetes pods
+
 kubectl logs my-app-pod-abc123 --tail=100
 
 # Check if logs are being written to the expected location

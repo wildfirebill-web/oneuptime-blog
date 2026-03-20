@@ -6,11 +6,11 @@ Tags: IPv6, CDN, Caching, Cache Rules, Cloudflare, Fastly
 
 Description: A guide to configuring CDN cache rules that handle IPv6 clients correctly, including cache key variations, TTL policies, and IPv6-specific caching considerations.
 
-CDN caching for IPv6 clients generally works the same as IPv4 — the cache key is typically the URL, not the client IP. However, there are specific scenarios where IPv6 client information affects caching behavior.
+CDN caching for IPv6 clients generally works the same as IPv4 - the cache key is typically the URL, not the client IP. However, there are specific scenarios where IPv6 client information affects caching behavior.
 
 ## Do IPv4 and IPv6 Clients Get Different Cached Content?
 
-By default: **No**. CDN cache keys are based on URL, headers (like Accept-Encoding), and other request attributes — not the client IP version. Both IPv4 and IPv6 clients receive the same cached response.
+By default: **No**. CDN cache keys are based on URL, headers (like Accept-Encoding), and other request attributes - not the client IP version. Both IPv4 and IPv6 clients receive the same cached response.
 
 Exceptions where IP version might matter:
 - Geo-based content differentiation (IPv6 and IPv4 may geolocate differently)
@@ -58,8 +58,9 @@ async function handleRequest(request) {
 
 ## Cloudflare Page Rules for IPv6
 
-```
+```text
 # Cloudflare Page Rule: Cache everything for CDN assets
+
 URL pattern: cdn.example.com/*
 Settings:
   Cache Level: Cache Everything
@@ -145,7 +146,7 @@ proxy_set_header X-Client-IP-Version $ip_version;
 
 ## Cache Purging for IPv6
 
-Cache purging works the same regardless of client IP version — purge by URL:
+Cache purging works the same regardless of client IP version - purge by URL:
 
 ```bash
 # Cloudflare: Purge specific URL (affects both IPv4 and IPv6 cached versions)
@@ -167,4 +168,4 @@ sum(rate(cdn_requests_total{ip_version="ipv6", cache_status="HIT"}[5m])) /
 sum(rate(cdn_requests_total{ip_version="ipv6"}[5m]))
 ```
 
-IPv6 clients typically achieve similar cache hit rates as IPv4 clients since CDN caching is URL-based — the only exception is when content genuinely varies by client network characteristics that differ between IPv4 and IPv6 deployments.
+IPv6 clients typically achieve similar cache hit rates as IPv4 clients since CDN caching is URL-based - the only exception is when content genuinely varies by client network characteristics that differ between IPv4 and IPv6 deployments.

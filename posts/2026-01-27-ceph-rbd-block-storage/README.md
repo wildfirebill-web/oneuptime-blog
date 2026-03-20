@@ -30,6 +30,7 @@ Before creating images, you need a pool. Pools define how data is replicated and
 
 ```bash
 # Create a replicated pool with 3 copies
+
 # Pool name: rbd-pool
 # Placement groups: 128 (adjust based on cluster size)
 ceph osd pool create rbd-pool 128 128 replicated

@@ -20,6 +20,7 @@ The basic syntax looks like this:
 
 ```hcl
 # alltrue returns true only when ALL elements are true
+
 alltrue(list)
 ```
 

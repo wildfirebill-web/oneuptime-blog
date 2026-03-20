@@ -18,6 +18,7 @@ The mount timeout determines how long a mounted file system stays mounted after 
 
 ```bash
 # Per-mount-point timeout (in seconds)
+
 /nfs /etc/auto.nfs --timeout=300
 ```
 

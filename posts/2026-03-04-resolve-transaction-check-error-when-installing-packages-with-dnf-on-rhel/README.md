@@ -16,6 +16,7 @@ The error message usually tells you what went wrong:
 
 ```bash
 # Common error patterns:
+
 # "file /usr/lib64/libfoo.so conflicts between attempted installs"
 # "package foo-1.0 requires bar >= 2.0, but none available"
 # "package foo-1.0 obsoletes bar provided by bar-0.9"

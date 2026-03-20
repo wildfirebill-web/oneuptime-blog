@@ -31,6 +31,7 @@ meter = metrics.get_meter("aggregator")
 tracer = trace.get_tracer("aggregator")
 
 # Per-supplier response time tracking
+
 supplier_latency = meter.create_histogram(
     "aggregator.supplier_latency_ms",
     description="Supplier API response time in milliseconds",

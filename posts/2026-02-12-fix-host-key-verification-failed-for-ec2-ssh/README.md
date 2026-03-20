@@ -47,6 +47,7 @@ The simplest fix when you know the instance has changed.
 
 ```bash
 # Remove the specific host entry
+
 ssh-keygen -R 54.123.45.67
 
 # Or remove by hostname

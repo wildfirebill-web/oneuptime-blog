@@ -157,6 +157,7 @@ This is an important detail. When you specify `fromHeaders`, the default `Author
 
 ```yaml
 # This ONLY checks x-jwt-token, NOT Authorization: Bearer
+
 fromHeaders:
   - name: x-jwt-token
 

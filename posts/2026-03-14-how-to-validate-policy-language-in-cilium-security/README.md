@@ -21,6 +21,7 @@ Validating policy language constructs ensures your policies are syntactically co
 
 ```bash
 # Dry-run validation
+
 kubectl apply --dry-run=server -f policy.yaml
 
 # Check all policies for status errors

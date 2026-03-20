@@ -549,6 +549,7 @@ When init containers fail, the pod stays in `Init:CrashLoopBackOff` state. Check
 
 ```bash
 # Check which init container failed
+
 kubectl describe pod my-app-xxx -n production
 
 # View init container logs

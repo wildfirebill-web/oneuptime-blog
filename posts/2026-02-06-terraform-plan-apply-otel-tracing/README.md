@@ -23,6 +23,7 @@ Here is a Python wrapper that creates spans around Terraform operations:
 
 ```python
 # terraform_otel_wrapper.py
+
 import subprocess
 import sys
 import time

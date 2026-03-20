@@ -46,6 +46,7 @@ Install Reverb using the Laravel installer command. This will install the packag
 
 ```bash
 # Install Reverb package
+
 php artisan install:broadcasting
 
 # This command will:

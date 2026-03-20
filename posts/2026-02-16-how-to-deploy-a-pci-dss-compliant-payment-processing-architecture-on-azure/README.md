@@ -58,6 +58,7 @@ PCI DSS Requirement 1 mandates firewall and network segmentation. On Azure, this
 
 ```bash
 # Create the main VNet with separate subnets for each zone
+
 az network vnet create \
   --name payment-vnet \
   --resource-group payment-rg \

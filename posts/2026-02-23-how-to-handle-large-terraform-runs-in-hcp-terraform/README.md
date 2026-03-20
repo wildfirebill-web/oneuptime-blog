@@ -29,6 +29,7 @@ The most effective long-term solution is splitting a large configuration into sm
 
 ```text
 # Before: One monolith workspace managing everything
+
 monolith-workspace/
   networking.tf       # VPCs, subnets, routes
   compute.tf          # EC2 instances, ASGs

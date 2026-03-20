@@ -1,4 +1,4 @@
-# How to Use a Non-Default Admin Username in Portainer
+# How to Use a Non-Default Admin Username in Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -34,6 +34,7 @@ ADMIN_USERNAME="portainer-ops"  # Custom, non-default username
 ADMIN_PASSWORD="$(openssl rand -base64 32)"
 
 # Create the initial admin with custom username
+
 curl -s -X POST "${PORTAINER_URL}/api/users/admin/init" \
   -H "Content-Type: application/json" \
   -d "{
@@ -111,21 +112,21 @@ Portainer doesn't directly support renaming users. The create-new + delete-old p
 ## Choosing a Good Admin Username
 
 Avoid predictable usernames:
-- `admin`, `administrator`, `root`, `superuser` — Targeted by default
-- Your company name alone — Too predictable
-- `portainer` — Known default for some setups
+- `admin`, `administrator`, `root`, `superuser` - Targeted by default
+- Your company name alone - Too predictable
+- `portainer` - Known default for some setups
 
 Use less predictable options:
-- `infra-ops` — Function-based
-- `platform-admin` — Team-based
-- `sre-lead` — Role-based with initials
-- A random identifier: `portal-a7k2m` — Hardest to guess
+- `infra-ops` - Function-based
+- `platform-admin` - Team-based
+- `sre-lead` - Role-based with initials
+- A random identifier: `portal-a7k2m` - Hardest to guess
 
 ## Scripted Initial Setup with Custom Username
 
 ```bash
 #!/bin/bash
-# portainer-init-secure.sh — Initialize with custom admin username
+# portainer-init-secure.sh - Initialize with custom admin username
 
 PORTAINER_URL="${PORTAINER_URL:-https://portainer.example.com}"
 

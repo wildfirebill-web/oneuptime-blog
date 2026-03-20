@@ -47,6 +47,7 @@ flowchart TB
 
 ```bash
 # Check for OOM killer activity on Linux
+
 dmesg | grep -i "out of memory"
 dmesg | grep -i "killed process"
 

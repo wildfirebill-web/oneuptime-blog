@@ -51,6 +51,7 @@ Before deploying, write the config file into the `vault_config` volume. You can 
 
 ```hcl
 # /vault/config/config.hcl
+
 storage "file" {
   path = "/vault/file"
 }

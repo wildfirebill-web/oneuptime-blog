@@ -407,6 +407,7 @@ Always test billing in Stripe's test mode before going live. Stripe provides tes
 
 ```bash
 # Forward Stripe webhooks to your local machine for testing
+
 stripe listen --forward-to localhost:3000/webhooks/stripe
 
 # Trigger test events

@@ -22,6 +22,7 @@ The simplest approach is manually updating Kubernetes secrets. While not ideal f
 
 ```bash
 # Step 1: Generate a new credential
+
 NEW_PASSWORD=$(openssl rand -base64 24)
 echo "New password: $NEW_PASSWORD"
 

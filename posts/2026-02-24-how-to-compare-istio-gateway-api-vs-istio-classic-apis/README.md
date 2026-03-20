@@ -20,7 +20,7 @@ The Kubernetes Gateway API was born out of the same frustration with Ingress, bu
 
 The goal is that eventually the Gateway API becomes the standard, and implementations like Istio, Envoy Gateway, Traefik, and others all work with the same resource types.
 
-## Resource Mapping
+Resource Mapping
 
 Here is how the classic Istio resources map to Gateway API resources:
 
@@ -236,6 +236,7 @@ Several Istio features do not have Gateway API equivalents:
 
 ```yaml
 # Only in Istio Classic
+
 http:
   - fault:
       delay:

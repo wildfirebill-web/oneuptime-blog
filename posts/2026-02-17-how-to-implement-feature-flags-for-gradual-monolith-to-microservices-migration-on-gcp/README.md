@@ -46,6 +46,7 @@ Here is a lightweight approach using Cloud Firestore as a flag store:
 
 ```python
 # feature_flags.py - Simple feature flag service backed by Firestore
+
 from google.cloud import firestore
 import hashlib
 import logging

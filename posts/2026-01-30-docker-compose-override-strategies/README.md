@@ -39,6 +39,7 @@ Let us start with a base `docker-compose.yml` file that defines your application
 
 ```yaml
 # docker-compose.yml
+
 # Base configuration shared across all environments
 # This file contains production-ready defaults
 

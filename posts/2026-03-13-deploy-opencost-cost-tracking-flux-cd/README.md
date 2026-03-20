@@ -30,6 +30,7 @@ Register the OpenCost Helm chart repository with Flux CD so it can pull chart up
 
 ```yaml
 # infrastructure/opencost/helmrepository.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

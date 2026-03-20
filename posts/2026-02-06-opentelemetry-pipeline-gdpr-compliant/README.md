@@ -57,6 +57,7 @@ This configuration uses multiple processors to strip, hash, and reduce personal 
 
 ```yaml
 # gdpr-minimization.yaml
+
 # Collector pipeline designed for GDPR data minimization
 processors:
   # Remove attributes that contain direct identifiers

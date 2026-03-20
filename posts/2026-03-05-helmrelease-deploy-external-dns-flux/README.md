@@ -22,6 +22,7 @@ External-DNS publishes its Helm chart through the Kubernetes SIGs repository.
 
 ```yaml
 # helmrepository-external-dns.yaml - External-DNS Helm chart repository
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

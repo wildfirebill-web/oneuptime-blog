@@ -12,6 +12,7 @@ Effective IPv6 alerting requires monitoring for both failures (endpoint down, ro
 
 ```yaml
 # alerts-ipv6-availability.yml
+
 groups:
   - name: ipv6-availability
     rules:
@@ -131,7 +132,7 @@ groups:
 
 In Grafana Alerting → Alert Rules → Create:
 
-```
+```text
 Alert name: IPv6 Endpoint Latency High
 Condition: avg over last 5m of probe_duration_seconds{job="blackbox-http-ipv6"} > 2
 For: 5 minutes

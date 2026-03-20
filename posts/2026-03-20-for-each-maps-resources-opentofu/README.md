@@ -1,4 +1,4 @@
-# How to Use for_each with Maps to Create Resources in OpenTofu
+# How to Use for_each with Maps to Create Resources in OpenTofu (2)
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -14,6 +14,7 @@ Description: A guide to using for_each with map values in OpenTofu to create mul
 
 ```hcl
 # Create an S3 bucket for each environment
+
 resource "aws_s3_bucket" "env_buckets" {
   for_each = {
     dev     = "myapp-dev-data"

@@ -16,6 +16,7 @@ Validating flow log accuracy requires comparing what flow logs record against wh
 
 ```bash
 # Create a test client pod
+
 kubectl run flow-test-client --image=nicolaka/netshoot \
   --restart=Never -- sleep 300
 

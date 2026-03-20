@@ -49,6 +49,7 @@ Your firewall needs a public IP for clients to connect to. Most firewall deploym
 
 ```bash
 # Check public IPs associated with the firewall
+
 az network firewall show \
   --resource-group myResourceGroup \
   --name myFirewall \

@@ -212,6 +212,7 @@ The real power of Dex comes from connecting identity provider groups to ArgoCD R
 
 ```yaml
 # argocd-rbac-cm ConfigMap
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

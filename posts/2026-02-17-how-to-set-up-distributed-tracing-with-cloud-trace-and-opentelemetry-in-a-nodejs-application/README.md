@@ -26,6 +26,7 @@ You need the OpenTelemetry SDK, the Cloud Trace exporter, and some auto-instrume
 
 ```bash
 # Install the core OpenTelemetry packages and the Cloud Trace exporter
+
 npm install @opentelemetry/sdk-node \
   @opentelemetry/api \
   @opentelemetry/auto-instrumentations-node \

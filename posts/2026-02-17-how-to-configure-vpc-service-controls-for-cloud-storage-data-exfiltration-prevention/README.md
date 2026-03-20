@@ -45,6 +45,7 @@ Start by creating a perimeter that includes your projects with sensitive data.
 
 ```bash
 # Get the access policy
+
 ACCESS_POLICY_ID=$(gcloud access-context-manager policies list \
   --organization=ORGANIZATION_ID \
   --format="value(name)")

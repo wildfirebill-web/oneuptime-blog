@@ -1,4 +1,4 @@
-# How to Override Stack Configuration for Different Environments
+# How to Override Stack Configuration for Different Environments - Configuration
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -24,7 +24,8 @@ Managing separate stack files for development, staging, and production leads to 
 Use variable substitution in your stack YAML so values can vary per environment:
 
 ```yaml
-# base-stack.yml — parameterized for any environment
+# base-stack.yml - parameterized for any environment
+
 version: "3.8"
 services:
   api:
@@ -52,7 +53,7 @@ services:
 When deploying the stack in Portainer (**Stacks > Add Stack**), scroll to the **Environment variables** section:
 
 **Development values:**
-```
+```text
 IMAGE_TAG=dev-latest
 DATABASE_URL=postgresql://dev-db:5432/myapp_dev
 LOG_LEVEL=debug
@@ -64,7 +65,7 @@ REDIS_MAX_MEMORY=128mb
 ```
 
 **Production values:**
-```
+```text
 IMAGE_TAG=v1.5.2
 DATABASE_URL=postgresql://prod-db-cluster:5432/myapp_prod
 LOG_LEVEL=warn
@@ -84,7 +85,7 @@ For many variables, upload an `.env` file in Portainer's stack creation form ins
 For structural differences (not just value differences), use Docker Compose override files:
 
 ```yaml
-# docker-compose.override.dev.yml — adds dev-only services
+# docker-compose.override.dev.yml - adds dev-only services
 services:
   mailhog:
     image: mailhog/mailhog

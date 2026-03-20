@@ -32,6 +32,7 @@ fatal: [server1]: FAILED! => {
 
 ```yaml
 # Install the missing Python package on the remote host
+
 - name: Install PyMySQL for MySQL modules
   pip:
     name: pymysql

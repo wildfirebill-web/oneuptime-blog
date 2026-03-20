@@ -42,6 +42,7 @@ sequenceDiagram
 **Verifiable artifacts after pod creation**:
 ```bash
 # Host route added by Felix
+
 ip route show | grep <pod-ip>
 # Expected: <pod-ip> dev cali<hash> scope link
 

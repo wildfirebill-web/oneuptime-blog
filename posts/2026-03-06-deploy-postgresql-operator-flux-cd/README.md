@@ -43,6 +43,7 @@ clusters/
 
 ```yaml
 # clusters/my-cluster/databases/postgresql/namespace.yaml
+
 apiVersion: v1
 kind: Namespace
 metadata:

@@ -16,6 +16,7 @@ Think of it as a linter for your Terraform code. It is fast, does not require cr
 
 ```bash
 # Validate the configuration in the current directory
+
 terraform validate
 ```
 

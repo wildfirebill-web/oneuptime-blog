@@ -40,6 +40,7 @@ In a playbook, you might use this to extract a version from command output:
 
 ```yaml
 # get_version.yml - Extract version from installed software
+
 - name: Get installed PostgreSQL version
   ansible.builtin.shell: psql --version
   register: psql_output

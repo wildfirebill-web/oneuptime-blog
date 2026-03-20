@@ -18,6 +18,7 @@ Install the Docker SDK for Python:
 
 ```bash
 # Install the Docker SDK
+
 pip install docker
 
 # Verify the installation

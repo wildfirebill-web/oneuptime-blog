@@ -25,6 +25,7 @@ graph LR
 
 ```hcl
 # s3.tf
+
 resource "aws_s3_bucket" "flow_logs" {
   bucket = "${var.prefix}-vpc-flow-logs-${data.aws_caller_identity.current.account_id}"
 
@@ -80,7 +81,7 @@ resource "aws_s3_bucket_lifecycle_configuration" "flow_logs" {
   }
 }
 
-# Bucket policy — allow VPC Flow Logs service to write
+# Bucket policy - allow VPC Flow Logs service to write
 resource "aws_s3_bucket_policy" "flow_logs" {
   bucket = aws_s3_bucket.flow_logs.id
 
@@ -225,8 +226,8 @@ resource "aws_glue_catalog_table" "flow_logs" {
 
 ## Best Practices
 
-- Use `file_format = "parquet"` with `hive_compatible_partitions = true` — Parquet columnar storage with partition pruning reduces Athena query costs by 90%+ compared to plain text format.
-- Set `per_hour_partition = true` — hourly partitions allow Athena to scan only the relevant time window for security investigations.
-- Use Intelligent Tiering lifecycle policy rather than directly to Glacier — flow logs have unpredictable access patterns (security incidents can happen months later), and Intelligent Tiering automatically moves data to the cheapest storage class.
-- Grant `delivery.logs.amazonaws.com` write access via bucket policy rather than IAM role — S3 destination flow logs use service-based delivery, not IAM roles.
-- Keep Athena results in a separate prefix in the same bucket — this simplifies lifecycle management and prevents analysis results from being treated as flow log data.
+- Use `file_format = "parquet"` with `hive_compatible_partitions = true` - Parquet columnar storage with partition pruning reduces Athena query costs by 90%+ compared to plain text format.
+- Set `per_hour_partition = true` - hourly partitions allow Athena to scan only the relevant time window for security investigations.
+- Use Intelligent Tiering lifecycle policy rather than directly to Glacier - flow logs have unpredictable access patterns (security incidents can happen months later), and Intelligent Tiering automatically moves data to the cheapest storage class.
+- Grant `delivery.logs.amazonaws.com` write access via bucket policy rather than IAM role - S3 destination flow logs use service-based delivery, not IAM roles.
+- Keep Athena results in a separate prefix in the same bucket - this simplifies lifecycle management and prevents analysis results from being treated as flow log data.

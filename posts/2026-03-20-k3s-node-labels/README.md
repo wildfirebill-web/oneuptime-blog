@@ -14,7 +14,7 @@ Node labels are key-value metadata attached to Kubernetes nodes that enable work
 
 Labels are arbitrary key-value pairs attached to nodes:
 
-```
+```text
 key=value
 topology.kubernetes.io/zone=us-east-1a
 hardware=gpu
@@ -34,6 +34,7 @@ Pass labels at installation time using `--node-label` flags:
 
 ```bash
 # Install K3s agent with labels
+
 curl -sfL https://get.k3s.io | \
   K3S_URL=https://<server-ip>:6443 \
   K3S_TOKEN=<node-token> \

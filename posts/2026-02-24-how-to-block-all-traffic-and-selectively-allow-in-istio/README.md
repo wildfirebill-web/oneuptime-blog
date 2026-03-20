@@ -220,6 +220,7 @@ Before implementing default-deny in production, map out all the communication pa
 
 ```bash
 # Install Kiali if not already installed
+
 kubectl apply -f https://raw.githubusercontent.com/istio/istio/release-1.20/samples/addons/kiali.yaml
 
 # Access the dashboard

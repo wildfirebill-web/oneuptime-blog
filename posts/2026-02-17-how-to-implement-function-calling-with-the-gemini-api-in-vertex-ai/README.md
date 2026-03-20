@@ -32,6 +32,7 @@ Functions are defined as tools with JSON schemas that describe their parameters:
 
 ```python
 # define_functions.py
+
 # Define functions that Gemini can call
 
 import vertexai

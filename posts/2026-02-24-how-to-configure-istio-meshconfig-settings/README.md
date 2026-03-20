@@ -192,6 +192,7 @@ This checks for common configuration issues. After applying changes, verify that
 
 ```bash
 # Check a specific proxy's configuration
+
 istioctl proxy-config bootstrap <pod-name> -n <namespace> -o json
 
 # Check the sync status of all proxies

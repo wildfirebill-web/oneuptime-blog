@@ -29,6 +29,7 @@ Ensure the image automation controllers are installed:
 
 ```bash
 # Check if image controllers are running
+
 kubectl get pods -n flux-system | grep image
 
 # If not present, reinstall with extra components

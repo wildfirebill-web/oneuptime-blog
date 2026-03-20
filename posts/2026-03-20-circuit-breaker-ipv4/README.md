@@ -27,7 +27,7 @@ from enum import Enum
 
 class State(Enum):
     CLOSED    = "CLOSED"      # Normal operation
-    OPEN      = "OPEN"        # Failing — reject calls immediately
+    OPEN      = "OPEN"        # Failing - reject calls immediately
     HALF_OPEN = "HALF_OPEN"   # Testing recovery
 
 class CircuitBreaker:
@@ -58,7 +58,7 @@ class CircuitBreaker:
     def call(self, func, *args, **kwargs):
         state = self.state
         if state == State.OPEN:
-            raise RuntimeError("Circuit OPEN — service unavailable")
+            raise RuntimeError("Circuit OPEN - service unavailable")
 
         try:
             result = func(*args, **kwargs)
@@ -105,6 +105,7 @@ def safe_request(data: bytes) -> bytes:
     return cb.call(tcp_request, "192.168.1.10", 9000, data)
 
 # Simulate requests with failures
+
 for i in range(10):
     try:
         response = safe_request(b"ping")
@@ -112,7 +113,7 @@ for i in range(10):
     except RuntimeError as e:
         print(f"Request {i}: {e}")  # Circuit OPEN
     except Exception as e:
-        print(f"Request {i}: connection error — {e}")
+        print(f"Request {i}: connection error - {e}")
 ```
 
 ## Async Circuit Breaker
@@ -149,4 +150,4 @@ async def safe_fetch() -> bytes:
 
 ## Conclusion
 
-The circuit breaker transitions through CLOSED (normal), OPEN (failing fast), and HALF_OPEN (probing recovery). Set `failure_threshold` based on your acceptable error rate and `recovery_timeout` based on the downstream service's typical recovery time. In HALF_OPEN state, allow a limited number of probe requests before closing the circuit — `success_threshold=2` guards against flapping. Use circuit breakers around any network I/O that calls an external service, and expose the breaker state in health check endpoints so operators can see when services are degraded.
+The circuit breaker transitions through CLOSED (normal), OPEN (failing fast), and HALF_OPEN (probing recovery). Set `failure_threshold` based on your acceptable error rate and `recovery_timeout` based on the downstream service's typical recovery time. In HALF_OPEN state, allow a limited number of probe requests before closing the circuit - `success_threshold=2` guards against flapping. Use circuit breakers around any network I/O that calls an external service, and expose the breaker state in health check endpoints so operators can see when services are degraded.

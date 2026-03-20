@@ -699,6 +699,7 @@ Deploy the APIService to register your server with the aggregation layer.
 
 ```yaml
 # deploy/apiservice.yaml
+
 apiVersion: apiregistration.k8s.io/v1
 kind: APIService
 metadata:

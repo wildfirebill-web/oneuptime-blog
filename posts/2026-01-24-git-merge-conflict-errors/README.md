@@ -45,6 +45,7 @@ When Git encounters a conflict, it marks the file with conflict markers. Underst
 
 ```bash
 # Attempt to merge and encounter conflict
+
 git merge feature-branch
 
 # Git output shows the conflict

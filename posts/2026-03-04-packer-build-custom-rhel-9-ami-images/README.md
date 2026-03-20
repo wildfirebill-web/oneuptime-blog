@@ -29,6 +29,7 @@ graph LR
 
 ```bash
 # Add the HashiCorp repository
+
 sudo dnf config-manager --add-repo https://rpm.releases.hashicorp.com/RHEL/hashicorp.repo
 
 # Install Packer

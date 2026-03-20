@@ -22,6 +22,7 @@ resource "aws_cloudfront_origin_access_control" "website" {
 }
 
 # OAC for Elemental MediaStore
+
 resource "aws_cloudfront_origin_access_control" "mediastore" {
   name                              = "${var.app_name}-mediastore-oac"
   origin_access_control_origin_type = "mediastore"
@@ -166,4 +167,4 @@ tofu apply tfplan
 
 ## Summary
 
-CloudFront OAC is the modern, recommended approach for securing S3 origins. It supports KMS-encrypted buckets and uses SigV4 signing. OpenTofu manages the OAC, bucket policy with distribution ARN conditions, and KMS key policies together — providing a secure, reproducible CDN configuration.
+CloudFront OAC is the modern, recommended approach for securing S3 origins. It supports KMS-encrypted buckets and uses SigV4 signing. OpenTofu manages the OAC, bucket policy with distribution ARN conditions, and KMS key policies together - providing a secure, reproducible CDN configuration.

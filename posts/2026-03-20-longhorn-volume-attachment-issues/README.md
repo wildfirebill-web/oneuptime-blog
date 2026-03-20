@@ -1,4 +1,4 @@
-# How to Troubleshoot Longhorn Volume Attachment Issues
+# How to Troubleshoot Longhorn Volume Attachment Issues - Issues
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -16,6 +16,7 @@ Volume attachment failures are one of the most common Longhorn operational issue
 
 ```bash
 # Check which volumes are stuck
+
 kubectl get lhvolume -n longhorn-system | grep -v healthy
 
 # Get detailed status of a specific volume
@@ -129,6 +130,6 @@ curl -X POST \
 
 ## Best Practices
 
-- Install `open-iscsi` on all nodes **before** installing Longhorn — it is a hard requirement.
+- Install `open-iscsi` on all nodes **before** installing Longhorn - it is a hard requirement.
 - Use `PodDisruptionBudgets` to ensure pods using Longhorn volumes are drained safely during node maintenance.
 - Enable **Longhorn's automatic node draining** via the Longhorn settings to handle graceful pod migrations.

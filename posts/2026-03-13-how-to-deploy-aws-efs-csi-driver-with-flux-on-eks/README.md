@@ -40,6 +40,7 @@ flux-repo/
 
 ```bash
 # Get the VPC ID for the EKS cluster
+
 VPC_ID=$(aws eks describe-cluster --name my-cluster \
   --query "cluster.resourcesVpcConfig.vpcId" --output text)
 

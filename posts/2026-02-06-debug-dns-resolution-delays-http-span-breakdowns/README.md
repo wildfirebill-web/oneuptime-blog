@@ -151,6 +151,7 @@ def find_dns_bottlenecks(traces, threshold_ms=500):
 
 ```yaml
 # Kubernetes fix: add ndots configuration to your pod spec
+
 spec:
   dnsConfig:
     options:

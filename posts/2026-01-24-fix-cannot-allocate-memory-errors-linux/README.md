@@ -40,6 +40,7 @@ flowchart TD
 
 ```bash
 # Check memory usage overview
+
 free -h
 
 # Sample output:

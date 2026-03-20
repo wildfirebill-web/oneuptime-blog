@@ -30,6 +30,7 @@ The most common authentication method for remote clusters uses a bearer token fr
 
 ```yaml
 # clusters/production-us.yaml
+
 apiVersion: v1
 kind: Secret
 metadata:

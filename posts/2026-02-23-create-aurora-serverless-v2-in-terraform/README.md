@@ -25,6 +25,7 @@ You pay for the ACUs you actually use, measured per second. When your database i
 
 ```hcl
 # Aurora Serverless v2 cluster
+
 resource "aws_rds_cluster" "serverless" {
   cluster_identifier = "myapp-serverless"
 

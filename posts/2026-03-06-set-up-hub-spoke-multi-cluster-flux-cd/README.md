@@ -46,6 +46,7 @@ Start by bootstrapping Flux on your hub cluster. This cluster will serve as the 
 
 ```bash
 # Switch to the hub cluster context
+
 kubectl config use-context hub-cluster
 
 # Bootstrap Flux on the hub cluster

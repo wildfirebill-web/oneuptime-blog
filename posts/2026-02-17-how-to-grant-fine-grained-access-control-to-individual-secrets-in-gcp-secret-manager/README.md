@@ -18,6 +18,7 @@ When you grant a role at the project level, it applies to all secrets in the pro
 
 ```bash
 # This grants access to ALL secrets in the project - avoid this
+
 gcloud projects add-iam-policy-binding my-project-id \
   --member="serviceAccount:my-sa@my-project-id.iam.gserviceaccount.com" \
   --role="roles/secretmanager.secretAccessor"

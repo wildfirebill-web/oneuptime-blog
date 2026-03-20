@@ -122,6 +122,7 @@ Use percentile-based thresholds rather than absolute values. This approach adapt
 
 ```yaml
 # prometheus-rules.yaml
+
 groups:
   - name: api-latency-alerts
     rules:

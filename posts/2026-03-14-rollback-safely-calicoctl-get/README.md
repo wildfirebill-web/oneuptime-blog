@@ -30,6 +30,7 @@ The primary rollback-related use of `calicoctl get` is capturing the current sta
 ```bash
 #!/bin/bash
 # snapshot-current-state.sh
+
 # Uses calicoctl get to create a comprehensive snapshot
 
 set -euo pipefail

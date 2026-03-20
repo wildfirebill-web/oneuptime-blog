@@ -29,6 +29,7 @@ Before starting, ensure you have:
 
 ```bash
 # Create project directory
+
 mkdir grpc-nodejs-typescript
 cd grpc-nodejs-typescript
 

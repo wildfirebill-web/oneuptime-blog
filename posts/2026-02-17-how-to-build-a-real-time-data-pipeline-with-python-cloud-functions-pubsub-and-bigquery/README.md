@@ -30,6 +30,7 @@ Create the Pub/Sub topic, BigQuery dataset, and table.
 
 ```bash
 # Create the Pub/Sub topic for incoming events
+
 gcloud pubsub topics create raw-events
 
 # Create a dead letter topic for failed messages

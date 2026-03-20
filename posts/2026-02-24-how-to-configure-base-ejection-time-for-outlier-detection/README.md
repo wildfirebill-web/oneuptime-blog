@@ -210,6 +210,7 @@ Track whether your ejection times are appropriate:
 
 ```bash
 # Check how often pods are being re-ejected (flapping)
+
 kubectl exec deploy/my-service -c istio-proxy -- \
   curl -s localhost:15000/stats | grep "ejections"
 

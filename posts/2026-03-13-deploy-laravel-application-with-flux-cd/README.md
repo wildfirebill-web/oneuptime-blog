@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, Kubernetes, GitOps, Laravel, PHP, FPM, NGINX, Deployment
+Tags: Flux CD, Kubernetes, GitOps, Laravel, PHP, FPM, Nginx, Deployment
 
 Description: Deploy a PHP Laravel application to Kubernetes using Flux CD, with PHP-FPM and Nginx serving, database migrations, and queue workers.
 
@@ -30,6 +30,7 @@ Use a single container that runs Nginx and PHP-FPM via supervisord, or two separ
 
 ```dockerfile
 # Dockerfile - Laravel with PHP-FPM + Nginx + supervisord
+
 FROM php:8.3-fpm-alpine AS base
 WORKDIR /var/www/html
 

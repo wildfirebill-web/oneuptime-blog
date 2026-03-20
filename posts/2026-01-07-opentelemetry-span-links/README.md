@@ -61,6 +61,7 @@ The following example demonstrates how to create a basic span link in Python. We
 
 ```python
 # Import the required OpenTelemetry modules for tracing
+
 from opentelemetry import trace
 from opentelemetry.trace import Link, SpanContext, TraceFlags
 

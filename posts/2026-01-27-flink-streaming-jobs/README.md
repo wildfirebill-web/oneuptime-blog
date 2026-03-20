@@ -804,7 +804,7 @@ Build a fat JAR with all dependencies:
 </build>
 ```
 
-### Resource Configuration
+Resource Configuration
 
 ```java
 // Set parallelism at different levels
@@ -825,6 +825,7 @@ stream
 
 ```bash
 # Submit to Flink cluster
+
 ./bin/flink run -c com.example.MyFlinkJob /path/to/my-job.jar
 
 # With specific parallelism

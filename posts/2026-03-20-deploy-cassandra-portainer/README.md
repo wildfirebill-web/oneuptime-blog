@@ -88,7 +88,7 @@ networks:
     driver: bridge
 ```
 
-Nodes join sequentially to avoid bootstrap conflicts — `cassandra3` waits for `cassandra2`, which waits for `cassandra1`.
+Nodes join sequentially to avoid bootstrap conflicts - `cassandra3` waits for `cassandra2`, which waits for `cassandra1`.
 
 ## Verifying Cluster Status
 
@@ -98,6 +98,7 @@ Check ring status after all nodes are running:
 docker exec -it $(docker ps -qf name=cassandra1) nodetool status
 
 # Expected output (all nodes show UN = Up/Normal):
+
 # Datacenter: datacenter1
 # =======================
 # Status=Up/Down

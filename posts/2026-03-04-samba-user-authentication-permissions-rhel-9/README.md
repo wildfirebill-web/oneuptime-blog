@@ -33,6 +33,7 @@ Every Samba user must have a corresponding Linux system account:
 
 ```bash
 # Create a system account (no login shell, no home directory needed for share access)
+
 sudo useradd -M -s /sbin/nologin smbuser
 
 # Set the Samba password (separate from the system password)

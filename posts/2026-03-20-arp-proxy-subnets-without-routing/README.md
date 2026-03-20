@@ -36,6 +36,7 @@ sequenceDiagram
 
 ```bash
 # Enable proxy ARP on the interface facing Host A
+
 echo 1 > /proc/sys/net/ipv4/conf/eth0/proxy_arp
 
 # Or with sysctl
@@ -49,7 +50,7 @@ sudo sysctl -w net.ipv4.conf.all.proxy_arp=1
 
 ### Setup
 
-```
+```text
 eth0: 192.168.1.1/24  (LAN A)
 eth1: 192.168.2.1/24  (LAN B)
 ```

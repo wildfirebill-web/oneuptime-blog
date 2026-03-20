@@ -199,6 +199,7 @@ SETTINGS parts_to_throw_insert = 1000;
 
 ```python
 # Bad: Many small inserts
+
 for event in events:
     client.execute("INSERT INTO events VALUES (...)", [event])
 

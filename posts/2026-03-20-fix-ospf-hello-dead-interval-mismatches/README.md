@@ -8,7 +8,7 @@ Description: Learn how to identify and fix OSPF Hello and Dead interval mismatch
 
 ## Why Hello and Dead Intervals Must Match
 
-OSPF uses Hello packets to discover and maintain neighbor relationships. The **Hello interval** determines how often Hello packets are sent; the **Dead interval** determines how long to wait before declaring a neighbor down. If these values differ between two routers on the same link, the neighbor relationship never forms—OSPF rejects any Hello with non-matching timers.
+OSPF uses Hello packets to discover and maintain neighbor relationships. The **Hello interval** determines how often Hello packets are sent; the **Dead interval** determines how long to wait before declaring a neighbor down. If these values differ between two routers on the same link, the neighbor relationship never forms-OSPF rejects any Hello with non-matching timers.
 
 **Default values by network type:**
 | Network Type | Hello Interval | Dead Interval |
@@ -22,7 +22,7 @@ OSPF uses Hello packets to discover and maintain neighbor relationships. The **H
 
 When a mismatch exists, OSPF logs this message:
 
-```
+```text
 %OSPF-4-BAD_HELLO: Mismatched hello parameters from 10.0.0.2
   Dead R 40 C 60, Hello R 10 C 20 Mask R 255.255.255.0 C 255.255.255.0
   (R = Received, C = Configured)
@@ -30,7 +30,7 @@ When a mismatch exists, OSPF logs this message:
 
 Alternatively, check the timers directly:
 
-```
+```text
 ! Check Hello and Dead intervals on the interface
 Router# show ip ospf interface GigabitEthernet0/0
 
@@ -50,7 +50,7 @@ Run this on both routers and compare the Hello and Dead values.
 
 Set the Hello and Dead intervals to match. The Dead interval should always be at least 3x the Hello interval:
 
-```
+```text
 ! Change to match the other router (10s hello / 40s dead)
 Router(config)# interface GigabitEthernet0/0
 Router(config-if)# ip ospf hello-interval 10
@@ -63,7 +63,7 @@ Router(config-if)# ip ospf dead-interval 40
 
 After changing the timers, OSPF should automatically attempt to form a new adjacency:
 
-```
+```text
 Router# show ip ospf neighbor
 
 ! Before fix: neighbor not listed (never got to 2WAY)
@@ -77,7 +77,7 @@ Neighbor ID     Pri   State       Dead Time   Address       Interface
 
 For critical links where you need sub-second OSPF convergence, use the fast Hello mechanism (Cisco proprietary):
 
-```
+```text
 ! Configure OSPF fast Hello - sends multiple Hellos per second
 Router(config-if)# ip ospf dead-interval minimal hello-multiplier 4
 ! This sets:
@@ -91,7 +91,7 @@ Both routers on the link must be configured identically for fast Hello to work.
 
 If you need to revert to default values:
 
-```
+```text
 Router(config-if)# no ip ospf hello-interval
 Router(config-if)# no ip ospf dead-interval
 ```
@@ -100,9 +100,9 @@ Without explicit configuration, OSPF uses the default for the network type (10/4
 
 ## Step 6: Check for Network Type Causing Timer Differences
 
-Sometimes the root cause is a network type mismatch—one side is configured as Broadcast (10/40 defaults) and the other as Non-Broadcast (30/120 defaults):
+Sometimes the root cause is a network type mismatch-one side is configured as Broadcast (10/40 defaults) and the other as Non-Broadcast (30/120 defaults):
 
-```
+```text
 ! Check network type
 Router# show ip ospf interface Gig0/0 | include network type
 
@@ -112,7 +112,7 @@ Router(config-if)# ip ospf network broadcast
 
 ## Summary Checklist
 
-```
+```text
 1. Router# show ip ospf interface [int] <- Check both routers
 2. Compare Hello and Dead timer values
 3. Identify which router has the wrong values

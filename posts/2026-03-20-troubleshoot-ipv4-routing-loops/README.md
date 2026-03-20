@@ -20,6 +20,7 @@ Symptoms:
 
 ```bash
 # Linux
+
 traceroute 10.20.30.1
 
 # Windows
@@ -62,7 +63,7 @@ vtysh -c "show ip route longer-prefixes 10.20.30.0/24"
 ## Step 3: Identify OSPF Routing Loop Causes
 
 ```bash
-# Cisco IOS — check OSPF routes vs static routes
+# Cisco IOS - check OSPF routes vs static routes
 show ip route ospf
 show ip route static
 
@@ -81,7 +82,7 @@ ip route 10.20.0.0 255.255.0.0 Null0
 # BGP routing loops are prevented by AS path (loop = your own ASN in path)
 # But iBGP can create loops without proper route reflector config
 
-# Cisco IOS — check BGP table
+# Cisco IOS - check BGP table
 show bgp ipv4 unicast 10.20.30.0/24
 
 # Check AS path for loops

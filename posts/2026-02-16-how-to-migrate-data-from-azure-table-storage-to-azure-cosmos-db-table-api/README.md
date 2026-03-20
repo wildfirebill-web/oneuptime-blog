@@ -30,6 +30,7 @@ First, create a Cosmos DB account with the Table API.
 
 ```bash
 # Create a Cosmos DB account with the Table API
+
 az cosmosdb create \
   --name my-cosmosdb-tables \
   --resource-group my-resource-group \

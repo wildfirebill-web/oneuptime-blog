@@ -319,6 +319,7 @@ After deploying, test each error scenario:
 
 ```bash
 # Test 404
+
 curl -v http://<gateway-ip>/nonexistent-page
 
 # Test 503 by scaling down a service

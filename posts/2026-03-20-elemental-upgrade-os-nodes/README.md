@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Elemental, Kubernetes, Upgrades, Edge, OS Management
+Tags: Elemental, Kubernetes, Upgrade, Edge, OS Management
 
 Description: A complete guide to upgrading the Elemental OS on registered nodes using ManagedOSImage resources for rolling, controlled updates across your fleet.
 
@@ -21,6 +21,7 @@ One of Elemental's most powerful features is its support for zero-downtime, decl
 
 ```bash
 # Build the new OS version
+
 docker build \
   -t my-registry.example.com/elemental-os:v1.1.0 \
   -f Dockerfile.elemental \

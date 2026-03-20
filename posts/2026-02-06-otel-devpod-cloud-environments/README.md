@@ -53,6 +53,7 @@ set -e
 echo "Starting OpenTelemetry infrastructure..."
 
 # Create a Docker network for the observability stack
+
 docker network create otel-net 2>/dev/null || true
 
 # Start Jaeger for trace visualization

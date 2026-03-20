@@ -16,6 +16,7 @@ Calico troubleshooting commands need to be validated before an incident. A calic
 
 ```bash
 # Verify calicoctl can connect to the correct cluster
+
 calicoctl version
 
 # Expected output includes:

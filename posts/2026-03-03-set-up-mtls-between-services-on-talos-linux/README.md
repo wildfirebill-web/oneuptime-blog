@@ -34,6 +34,7 @@ Install Linkerd and inject the sidecar into your workloads:
 
 ```bash
 # Install Linkerd (assuming it's already set up)
+
 # Inject the proxy into your namespace
 kubectl annotate namespace default linkerd.io/inject=enabled
 

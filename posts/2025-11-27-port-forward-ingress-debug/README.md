@@ -19,6 +19,7 @@ Port-forwarding creates a direct tunnel from your local machine to a specific Po
 
 ```bash
 # Find the exact Pod name using label selectors
+
 kubectl get pods -n dev -l app=payments-api
 # Forward local port 8080 to container port 8080
 kubectl port-forward pod/payments-api-7f8c 8080:8080 -n dev

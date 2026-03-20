@@ -143,6 +143,7 @@ Jitter applies equally to all applications. If you have critical applications th
 
 ```yaml
 # Critical application with short reconciliation interval
+
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:

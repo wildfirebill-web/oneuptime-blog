@@ -28,6 +28,7 @@ Kubernetes comes with two built-in priority classes:
 
 ```bash
 # View built-in priority classes
+
 kubectl get priorityclasses
 
 # system-cluster-critical: 2000000000 (for cluster-critical pods)

@@ -116,6 +116,7 @@ class TenantRedisClient:
 
 
 # Usage in a web application
+
 def get_tenant_redis(tenant_id):
     """Factory function to get tenant-specific Redis client."""
     base_client = redis.Redis(host='localhost', port=6379, db=0, decode_responses=True)

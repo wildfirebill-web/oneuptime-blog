@@ -296,6 +296,7 @@ Test that headers are being added and removed correctly:
 
 ```bash
 # Check response headers
+
 curl -v http://my-app.default.svc.cluster.local/api/test 2>&1 | grep "< "
 
 # Check what the backend receives (if your app can echo headers)

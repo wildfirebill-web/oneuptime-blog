@@ -64,6 +64,7 @@ First, we create a dedicated namespace for MetalLB components. This helps with r
 
 ```yaml
 # metallb-namespace.yaml
+
 # Creates a dedicated namespace for MetalLB components
 # This enables better resource management and RBAC isolation
 apiVersion: v1

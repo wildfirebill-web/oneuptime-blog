@@ -20,6 +20,7 @@ Define HelmRepository resources in the tenant's namespace.
 
 ```yaml
 # tenants/team-alpha/helm-repos.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

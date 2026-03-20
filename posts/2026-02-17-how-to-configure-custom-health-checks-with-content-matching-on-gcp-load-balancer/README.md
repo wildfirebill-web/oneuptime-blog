@@ -34,6 +34,7 @@ Here is how to create an HTTP health check that validates both the status code a
 
 ```bash
 # Create an HTTP health check that verifies the response contains "status":"ok"
+
 # The backend is only considered healthy if both the status code and content match
 gcloud compute health-checks create http my-content-health-check \
     --port=8080 \

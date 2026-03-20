@@ -20,6 +20,7 @@ Here is the basic structure:
 
 ```python
 # custom_rules/my_rule.py - Skeleton for a custom rule
+
 """Custom rule for ansible-lint."""
 from ansiblelint.rules import AnsibleLintRule
 

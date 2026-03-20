@@ -21,6 +21,7 @@ Enabling a module creates symlinks to these files in `/etc/apache2/mods-enabled/
 
 ```bash
 # List all available modules
+
 ls /etc/apache2/mods-available/
 
 # List currently enabled modules

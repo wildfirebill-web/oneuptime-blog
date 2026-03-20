@@ -24,6 +24,7 @@ Check which ciphers your server currently accepts:
 
 ```bash
 # Using testssl.sh (recommended)
+
 wget https://testssl.sh/testssl.sh && chmod +x testssl.sh
 ./testssl.sh example.com
 

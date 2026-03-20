@@ -1,14 +1,14 @@
-# How to Configure IPvlan L2 Mode for Containers in Portainer
+# How to Configure IPvlan L2 Mode for Containers in Portainer - Networking
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, IPvlan, Docker Networking, L2 Mode, LAN Access, Network
+Tags: Portainer, IPvlan, Docker Networking, L2 Mode, LAN Access, Networks
 
 Description: Learn how to configure Docker IPvlan L2 mode in Portainer so containers share the host's MAC address while getting unique IP addresses on the LAN.
 
 ---
 
-IPvlan is an alternative to macvlan that lets containers share the parent interface's MAC address while having unique IP addresses. L2 mode behaves like macvlan from a routing perspective — containers get LAN IPs — but all containers use the same MAC, which avoids promiscuous mode requirements.
+IPvlan is an alternative to macvlan that lets containers share the parent interface's MAC address while having unique IP addresses. L2 mode behaves like macvlan from a routing perspective - containers get LAN IPs - but all containers use the same MAC, which avoids promiscuous mode requirements.
 
 ## IPvlan L2 vs Macvlan
 
@@ -78,6 +78,7 @@ For VLAN-aware setups, create the VLAN parent interface first:
 
 ```bash
 # Create VLAN 50 interface
+
 sudo ip link add link eth0 name eth0.50 type vlan id 50
 sudo ip link set eth0.50 up
 

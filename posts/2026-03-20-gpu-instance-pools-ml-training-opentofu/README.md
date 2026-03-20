@@ -182,4 +182,4 @@ tofu apply tfplan
 
 ## Summary
 
-GPU instance pools with spot/preemptible instances and queue-based auto-scaling dramatically reduce ML training costs. OpenTofu manages launch templates, auto-scaling groups, and GPU instance configurations on both AWS and GCP — providing cost-efficient, elastic training infrastructure.
+GPU instance pools with spot/preemptible instances and queue-based auto-scaling dramatically reduce ML training costs. OpenTofu manages launch templates, auto-scaling groups, and GPU instance configurations on both AWS and GCP - providing cost-efficient, elastic training infrastructure.

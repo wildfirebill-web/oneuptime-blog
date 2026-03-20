@@ -53,6 +53,7 @@ The schema defines what parameters developers can configure:
 
 ```yaml
 # schema/schema.yaml
+
 schema:
   format:
     openapi: "3.0.0"

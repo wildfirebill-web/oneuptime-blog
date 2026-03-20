@@ -23,6 +23,7 @@ A single NUT server can monitor multiple UPS units and serve multiple client mac
 
 ```bash
 # Install NUT
+
 sudo apt update
 sudo apt install -y nut nut-client
 

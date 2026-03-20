@@ -14,6 +14,7 @@ GCP Pub/Sub is the globally distributed message queue and streaming platform. It
 
 ```hcl
 # main.tf
+
 terraform {
   required_providers {
     google = {
@@ -33,7 +34,7 @@ resource "google_pubsub_topic" "orders" {
   name    = "orders"
   project = var.project_id
 
-  # Message retention — keep unacknowledged messages for 7 days
+  # Message retention - keep unacknowledged messages for 7 days
   message_retention_duration = "604800s"
 
   # Use a regional topic for lower latency and higher throughput
@@ -66,19 +67,19 @@ resource "google_pubsub_subscription" "orders_processor" {
   topic   = google_pubsub_topic.orders.name
   project = var.project_id
 
-  # Acknowledge deadline — processor must ack within 600 seconds
+  # Acknowledge deadline - processor must ack within 600 seconds
   ack_deadline_seconds = 600
 
-  # Message retention — keep unacknowledged messages for 7 days
+  # Message retention - keep unacknowledged messages for 7 days
   message_retention_duration = "604800s"
 
-  # Retry policy — retry with exponential backoff
+  # Retry policy - retry with exponential backoff
   retry_policy {
     minimum_backoff = "10s"
     maximum_backoff = "600s"
   }
 
-  # Dead letter policy — move to DLQ after 5 failed deliveries
+  # Dead letter policy - move to DLQ after 5 failed deliveries
   dead_letter_policy {
     dead_letter_topic     = google_pubsub_topic.orders_dlq.id
     max_delivery_attempts = 5
@@ -178,7 +179,7 @@ resource "google_pubsub_topic" "orders_validated" {
 ## Best Practices
 
 - Always configure a dead letter policy on subscriptions to prevent failed messages from blocking the queue indefinitely.
-- Grant Pub/Sub's service account publisher access on the DLQ topic — without this, dead-lettering silently fails.
-- Use pull subscriptions for high-throughput processing — push subscriptions add HTTP overhead and have lower throughput limits.
-- Set `message_retention_duration` based on your consumer's recovery time — if your consumer has a 1-hour outage window, retain messages for longer.
+- Grant Pub/Sub's service account publisher access on the DLQ topic - without this, dead-lettering silently fails.
+- Use pull subscriptions for high-throughput processing - push subscriptions add HTTP overhead and have lower throughput limits.
+- Set `message_retention_duration` based on your consumer's recovery time - if your consumer has a 1-hour outage window, retain messages for longer.
 - Use schemas to enforce message contracts between publishers and subscribers, preventing silent data quality issues.

@@ -102,6 +102,7 @@ Create a VXLAN interface on Linux using the `ip` command. This example creates a
 # vxlan-setup.sh - Create a basic VXLAN interface
 
 # Configuration variables
+
 VNI=100                    # VXLAN Network Identifier
 VXLAN_IF="vxlan100"        # VXLAN interface name
 LOCAL_IP="192.168.1.10"    # Local VTEP IP address

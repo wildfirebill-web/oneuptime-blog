@@ -41,6 +41,7 @@ Catch the most basic errors first:
 
 ```yaml
 # .github/workflows/argocd-checks.yaml
+
 name: ArgoCD Configuration Checks
 on:
   pull_request:
@@ -273,7 +274,7 @@ Show what would change in the cluster:
             app_diff=$(argocd app diff "$app" \
               --local "apps/$app/production/" 2>&1) || true
             if [ -n "$app_diff" ]; then
-              report="${report}### $app\n\`\`\`diff\n${app_diff}\n\`\`\`\n\n"
+              report="${report}### $app\n```diff\n${app_diff}\n```\n\n"
             fi
           done
 

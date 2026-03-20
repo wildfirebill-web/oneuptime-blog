@@ -16,6 +16,7 @@ Start with a cluster that has enough resources and the right networking configur
 
 ```bash
 # Create a resource group
+
 az group create --name istio-rg --location eastus
 
 # Create an AKS cluster with Azure CNI

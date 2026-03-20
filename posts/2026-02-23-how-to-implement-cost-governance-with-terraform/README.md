@@ -22,6 +22,7 @@ AWS Budgets allow you to set custom cost thresholds and receive alerts when actu
 
 ```hcl
 # Overall account budget
+
 resource "aws_budgets_budget" "account_monthly" {
   name              = "account-monthly-budget"
   budget_type       = "COST"

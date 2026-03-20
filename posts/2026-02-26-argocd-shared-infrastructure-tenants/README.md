@@ -51,6 +51,7 @@ The platform team gets an AppProject with broad permissions to manage shared inf
 
 ```yaml
 # Platform team's project - manages shared infrastructure
+
 apiVersion: argoproj.io/v1alpha1
 kind: AppProject
 metadata:

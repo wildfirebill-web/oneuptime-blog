@@ -95,6 +95,7 @@ For more control and automation, you can set up Always Encrypted manually.
 
 ```bash
 # Create an RSA key in Key Vault for the Column Master Key
+
 az keyvault key create \
     --vault-name mykeyvault \
     --name always-encrypted-cmk \

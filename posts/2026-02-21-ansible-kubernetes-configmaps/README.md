@@ -27,6 +27,7 @@ The most basic ConfigMap holds simple key-value pairs that your application read
 
 ```yaml
 # playbook: create-configmap-basic.yml
+
 # Creates a ConfigMap with application settings as key-value pairs
 ---
 - name: Create Kubernetes ConfigMap

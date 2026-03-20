@@ -22,6 +22,7 @@ Typesense's strengths include strong typo tolerance, vector search support for s
 
 ```bash
 # Add Typesense repository
+
 curl -fsSL https://dl.typesense.org/repo/apt/pubkey.gpg | \
   sudo gpg --dearmor -o /usr/share/keyrings/typesense-archive-keyring.gpg
 

@@ -135,6 +135,7 @@ This connects to the Oracle instance using SQL*Plus.
 
 ```bash
 # Connect with SQL*Plus
+
 sqlplus admin/'YourStrongPassword123!'@'(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=my-app-oracle.abc123.us-east-1.rds.amazonaws.com)(PORT=1521))(CONNECT_DATA=(SID=MYAPP)))'
 ```
 

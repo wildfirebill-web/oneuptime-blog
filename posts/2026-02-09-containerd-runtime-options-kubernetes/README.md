@@ -18,6 +18,7 @@ Generate a default configuration file:
 
 ```bash
 # Generate default containerd configuration
+
 containerd config default > /etc/containerd/config.toml
 
 # Restart containerd to apply changes
@@ -190,7 +191,7 @@ Configure private registries, mirrors, and authentication in the registry sectio
       password = "password"
 ```
 
-## Resource Limits and Performance Tuning
+Resource Limits and Performance Tuning
 
 Configure resource limits and performance parameters for the containerd daemon:
 

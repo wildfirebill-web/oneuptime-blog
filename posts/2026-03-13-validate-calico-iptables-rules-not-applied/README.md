@@ -35,6 +35,7 @@ for NODE in $(kubectl get nodes -o jsonpath='{.items[*].metadata.name}'); do
   echo "Node $NODE: filter chains=$COUNT, nat chains=$NAT_COUNT"
 done
 # Expected: filter chains >= 10, nat chains >= 2
+
 ```
 
 **Validation Step 2: Verify MASQUERADE rule present**

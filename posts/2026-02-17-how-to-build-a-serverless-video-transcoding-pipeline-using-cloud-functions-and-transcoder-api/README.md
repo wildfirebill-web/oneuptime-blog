@@ -31,6 +31,7 @@ Enable the required APIs and set up the storage buckets.
 
 ```bash
 # Enable all necessary APIs
+
 gcloud services enable transcoder.googleapis.com
 gcloud services enable cloudfunctions.googleapis.com
 gcloud services enable pubsub.googleapis.com

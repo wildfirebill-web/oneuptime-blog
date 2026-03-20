@@ -27,6 +27,7 @@ A typical SOPS setup with Flux includes:
 
 ```yaml
 # .sops.yaml at the repository root
+
 creation_rules:
   - path_regex: .*.yaml
     encrypted_regex: ^(data|stringData)$

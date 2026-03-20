@@ -512,6 +512,7 @@ flowchart LR
 # Performance characteristics by index type and query pattern
 
 # Traditional Secondary Index (2i)
+
 # - Scatter-gather to all nodes
 # - Good: low-cardinality + partition key
 # - Bad: high-cardinality standalone queries

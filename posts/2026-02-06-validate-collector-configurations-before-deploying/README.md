@@ -26,6 +26,7 @@ The Collector binary includes a `validate` subcommand that parses the configurat
 
 ```bash
 # Validate a single configuration file
+
 # The --config flag points to the file you want to check
 otelcol validate --config /etc/otelcol/config.yaml
 

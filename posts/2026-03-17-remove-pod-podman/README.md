@@ -18,6 +18,7 @@ When you no longer need a pod, removing it cleans up all associated containers a
 
 ```bash
 # Stop the pod first
+
 podman pod stop my-pod
 
 # Remove the pod and all its containers

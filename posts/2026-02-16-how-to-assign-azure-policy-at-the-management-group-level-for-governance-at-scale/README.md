@@ -52,6 +52,7 @@ Azure has hundreds of built-in policies covering security, compliance, cost mana
 
 ```bash
 # Assign a built-in policy at the management group level
+
 # This policy requires all resource groups to have a CostCenter tag
 az policy assignment create \
   --name "require-costcenter-tag" \

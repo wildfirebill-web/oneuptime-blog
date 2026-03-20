@@ -66,6 +66,7 @@ resource "aws_globalaccelerator_listener" "https" {
 
 ```hcl
 # Primary region endpoint group (us-east-1)
+
 resource "aws_globalaccelerator_endpoint_group" "us_east_1" {
   listener_arn                  = aws_globalaccelerator_listener.https.id
   endpoint_group_region         = "us-east-1"
@@ -128,4 +129,4 @@ curl -v https://api.example.com 2>&1 | grep -i "x-amzn-trace-id"
 
 ## Conclusion
 
-Global Accelerator delivers the most benefit for users geographically distant from your primary AWS region—the AWS private backbone significantly outperforms public internet routing across continents. Configure `traffic_dial_percentage = 0` on secondary regions during normal operation and use it for emergency failover, or use percentage-based routing for active-active multi-region deployments. The static IPs simplify firewall allowlisting compared to ALB DNS names that can change over time.
+Global Accelerator delivers the most benefit for users geographically distant from your primary AWS region-the AWS private backbone significantly outperforms public internet routing across continents. Configure `traffic_dial_percentage = 0` on secondary regions during normal operation and use it for emergency failover, or use percentage-based routing for active-active multi-region deployments. The static IPs simplify firewall allowlisting compared to ALB DNS names that can change over time.

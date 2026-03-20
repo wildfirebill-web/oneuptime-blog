@@ -209,6 +209,7 @@ import os
 DEFAULT_MAX = int(os.environ.get("DEFAULT_MAX_SIZE", "1048576"))
 
 # Path-specific limits
+
 SIZE_LIMITS = {
     "/api/upload": 50 * 1024 * 1024,     # 50MB
     "/api/import": 100 * 1024 * 1024,    # 100MB

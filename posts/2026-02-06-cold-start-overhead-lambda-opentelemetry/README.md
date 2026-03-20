@@ -143,6 +143,7 @@ Exporting telemetry directly from your Lambda function means the SDK has to mana
 
 ```yaml
 # collector-config.yaml
+
 # Minimal collector config for the Lambda extension
 receivers:
   otlp:

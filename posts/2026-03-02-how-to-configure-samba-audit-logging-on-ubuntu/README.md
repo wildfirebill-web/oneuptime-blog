@@ -22,6 +22,7 @@ Samba must be installed and running:
 
 ```bash
 # Install Samba if not already present
+
 sudo apt update
 sudo apt install samba -y
 

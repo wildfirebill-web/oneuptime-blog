@@ -40,6 +40,7 @@ The playbook loops over a list of dictionaries.
 
 ```yaml
 # deploy-vhosts.yml
+
 # Generates Nginx vhost configs from a single template
 - name: Deploy Nginx virtual hosts
   hosts: webservers

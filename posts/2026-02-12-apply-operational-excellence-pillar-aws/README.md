@@ -32,6 +32,7 @@ The most fundamental shift. Every manual process should become automated:
 
 ```hcl
 # Example: even a simple test environment should be in code
+
 module "test_environment" {
   source = "./modules/environment"
 

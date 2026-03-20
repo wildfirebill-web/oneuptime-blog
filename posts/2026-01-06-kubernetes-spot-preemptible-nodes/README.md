@@ -45,6 +45,7 @@ Using eksctl simplifies spot node group creation. Specifying multiple instance t
 
 ```bash
 # Using eksctl to create a managed spot node group
+
 # Multiple instance types increase spot availability
 eksctl create nodegroup \
   --cluster my-cluster \

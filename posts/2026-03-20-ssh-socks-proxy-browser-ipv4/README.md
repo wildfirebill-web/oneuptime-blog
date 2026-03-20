@@ -8,12 +8,13 @@ Description: Learn how to create an SSH SOCKS5 proxy to tunnel browser traffic o
 
 ---
 
-An SSH SOCKS proxy creates an encrypted tunnel between your machine and a remote server. By configuring your browser to use this proxy, all web traffic is relayed through the remote server's IPv4 address — useful for accessing region-restricted content or securing traffic on untrusted networks.
+An SSH SOCKS proxy creates an encrypted tunnel between your machine and a remote server. By configuring your browser to use this proxy, all web traffic is relayed through the remote server's IPv4 address - useful for accessing region-restricted content or securing traffic on untrusted networks.
 
 ## Creating the SOCKS Proxy
 
 ```bash
 # Start a SOCKS5 proxy on local port 1080, tunneled through the SSH server
+
 # -D: dynamic application-level port forwarding (SOCKS)
 # -C: compress traffic (optional, helps on slow connections)
 # -f: run in background

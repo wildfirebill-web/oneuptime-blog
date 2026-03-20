@@ -37,6 +37,7 @@ graph TD
 
 ```bash
 # Show thin pool data and metadata usage
+
 lvs -o lv_name,lv_size,data_percent,metadata_percent vg_data/thinpool
 ```
 

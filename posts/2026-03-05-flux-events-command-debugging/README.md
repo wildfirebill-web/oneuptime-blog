@@ -127,6 +127,7 @@ A common debugging pattern is to check events across the dependency chain. For e
 
 ```bash
 # Check the Kustomization events
+
 flux events --for Kustomization/apps -n flux-system
 
 # If the Kustomization reports "source not ready", check the source

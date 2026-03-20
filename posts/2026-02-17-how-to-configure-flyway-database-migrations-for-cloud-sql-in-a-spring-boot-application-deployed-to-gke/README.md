@@ -108,6 +108,7 @@ Configure Flyway in `application.properties`:
 
 ```properties
 # Datasource configuration for Cloud SQL via socket factory
+
 spring.datasource.url=jdbc:mysql:///mydb?cloudSqlInstance=my-project:us-central1:my-instance&socketFactory=com.google.cloud.sql.mysql.SocketFactory
 spring.datasource.username=app_user
 spring.datasource.password=${DB_PASSWORD}

@@ -36,6 +36,7 @@ Never start with fixes before understanding the cause:
 
 ```bash
 # Full verbose output of what's broken
+
 sudo apt-get -f install --dry-run
 
 # Check the broken state

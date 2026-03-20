@@ -45,6 +45,7 @@ Run regular plan checks to detect drift:
 
 ```yaml
 # .github/workflows/drift-detection.yml
+
 name: Detect Infrastructure Drift
 
 on:

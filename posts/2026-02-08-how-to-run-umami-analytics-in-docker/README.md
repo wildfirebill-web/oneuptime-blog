@@ -24,6 +24,7 @@ Docker and Docker Compose are required. Umami is very resource-efficient, using 
 
 ```bash
 # Verify Docker is ready
+
 docker --version
 docker compose version
 ```

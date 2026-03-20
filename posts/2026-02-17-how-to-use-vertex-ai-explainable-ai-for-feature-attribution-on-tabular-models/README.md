@@ -43,6 +43,7 @@ from google.cloud.aiplatform import explain
 aiplatform.init(project="your-project-id", location="us-central1")
 
 # Define the explanation metadata
+
 # This tells Vertex AI which inputs are features and which output to explain
 explanation_metadata = explain.ExplanationMetadata(
     inputs={

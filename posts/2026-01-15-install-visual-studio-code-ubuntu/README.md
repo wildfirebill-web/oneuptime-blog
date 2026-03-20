@@ -37,6 +37,7 @@ Snap packages are self-contained and automatically update. This is the simplest 
 
 ```bash
 # Install VS Code using Snap
+
 # The --classic flag allows VS Code to access files outside its sandbox
 sudo snap install code --classic
 

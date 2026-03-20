@@ -6,12 +6,13 @@ Tags: Calico, Kubernetes, IPv4, CNI, Pod CIDR, Networking
 
 Description: Install Calico CNI on a Kubernetes cluster and configure it to use a custom IPv4 CIDR pool for pod address allocation.
 
-Calico is a popular CNI plugin that provides networking and network policy for Kubernetes. By default it uses `192.168.0.0/16` for pod IPs — here's how to customize that to match your cluster's Pod CIDR.
+Calico is a popular CNI plugin that provides networking and network policy for Kubernetes. By default it uses `192.168.0.0/16` for pod IPs - here's how to customize that to match your cluster's Pod CIDR.
 
 ## Prerequisites
 
 ```bash
 # Verify kubeadm was initialized with a matching Pod CIDR
+
 kubectl cluster-info dump | grep cluster-cidr
 # or check controller-manager flags
 kubectl get pod -n kube-system kube-controller-manager-<node> -o yaml | grep cidr
@@ -114,4 +115,4 @@ kubectl get pods -n kube-system | grep calico
 kubectl rollout status daemonset/calico-node -n calico-system
 ```
 
-The Calico `blockSize` (default `/26`) controls how the pool CIDR is subdivided per node — adjust it if you need more or fewer pod addresses per node.
+The Calico `blockSize` (default `/26`) controls how the pool CIDR is subdivided per node - adjust it if you need more or fewer pod addresses per node.

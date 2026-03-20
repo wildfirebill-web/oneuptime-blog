@@ -18,7 +18,7 @@ Cisco IOS-XE (15.2+) and IOS-XR support BGP origin validation via RPKI. Routers 
 
 ## Step 1: Configure the RPKI Cache Server
 
-```
+```text
 ! IOS-XE: Configure RPKI cache (RTR) server
 router bgp 64496
  bgp rpki server tcp 192.0.2.100 port 3323 refresh 600
@@ -29,7 +29,7 @@ router bgp 64496
 
 ## Step 2: Verify RPKI Cache Connection
 
-```
+```text
 ! Check RPKI cache server status
 show bgp rpki server
 
@@ -43,7 +43,7 @@ show bgp rpki server
 
 ## Step 3: Enable BGP Origin Validation
 
-```
+```text
 ! Enable origin validation for BGP
 router bgp 64496
  bgp origin-validation signal ibgp
@@ -56,7 +56,7 @@ router bgp 64496
 
 ## Step 4: Configure Route Maps to Act on Validation State
 
-```
+```text
 ! Define route-maps for each validation state
 route-map RPKI-POLICY permit 10
  match rpki valid
@@ -82,7 +82,7 @@ router bgp 64496
 
 ## Step 5: Verify Origin Validation Status
 
-```
+```text
 ! Show BGP IPv6 table with OV (Origin Validation) status
 show bgp ipv6 unicast
 
@@ -102,7 +102,7 @@ show bgp ipv6 unicast rpki valid
 
 On Cisco IOS-XR, the configuration syntax differs:
 
-```
+```text
 ! IOS-XR RPKI configuration
 router bgp 64496
  rpki server 2001:db8:validator::1

@@ -20,6 +20,7 @@ You need IAM permissions to use it. Here's a policy that grants access:
 
 ```hcl
 # IAM policy for Well-Architected Tool access
+
 resource "aws_iam_policy" "well_architected" {
   name = "well-architected-tool-access"
 

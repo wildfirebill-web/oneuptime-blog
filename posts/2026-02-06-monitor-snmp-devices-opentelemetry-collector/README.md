@@ -43,6 +43,7 @@ Second, you need the OpenTelemetry Collector Contrib distribution. The SNMP rece
 
 ```bash
 # Download the contrib distribution
+
 # Replace the version with the latest available
 wget https://github.com/open-telemetry/opentelemetry-collector-releases/releases/download/v0.98.0/otelcol-contrib_0.98.0_linux_amd64.tar.gz
 

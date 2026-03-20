@@ -41,6 +41,7 @@ graph TD
 
 ```bash
 # Install the Azure ML CLI extension
+
 az extension add --name ml
 
 # Install the Python SDK

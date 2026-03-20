@@ -61,6 +61,7 @@ The `persistentKeepalive` setting is configured per peer in the WireGuard interf
 
 ```yaml
 # Talos machine configuration with keepalive
+
 machine:
   network:
     interfaces:

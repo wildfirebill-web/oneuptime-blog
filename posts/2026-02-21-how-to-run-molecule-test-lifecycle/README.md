@@ -48,6 +48,7 @@ The simplest way to run everything.
 
 ```bash
 # Run the complete test lifecycle
+
 molecule test
 
 # Run a specific scenario

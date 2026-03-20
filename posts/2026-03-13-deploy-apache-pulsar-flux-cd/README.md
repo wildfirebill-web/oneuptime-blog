@@ -27,6 +27,7 @@ Deploying Pulsar through Flux CD gives you GitOps control over all cluster compo
 
 ```yaml
 # infrastructure/sources/pulsar-helm.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

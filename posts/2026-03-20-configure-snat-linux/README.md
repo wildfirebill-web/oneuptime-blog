@@ -27,6 +27,7 @@ Source NAT (SNAT) modifies the **source IP address** of outgoing packets. It is 
 
 ```bash
 # Enable IP forwarding
+
 echo 1 > /proc/sys/net/ipv4/ip_forward
 
 # Translate all traffic from 192.168.1.0/24 to 203.0.113.1 on eth1

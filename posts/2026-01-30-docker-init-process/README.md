@@ -111,6 +111,7 @@ For more control, install Tini directly in your image:
 FROM node:20-alpine
 
 # Install tini
+
 RUN apk add --no-cache tini
 
 # Set tini as the entrypoint

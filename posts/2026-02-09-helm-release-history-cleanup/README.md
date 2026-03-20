@@ -18,6 +18,7 @@ View release history:
 
 ```bash
 # List all revisions
+
 helm history myapp
 
 # Show detailed history

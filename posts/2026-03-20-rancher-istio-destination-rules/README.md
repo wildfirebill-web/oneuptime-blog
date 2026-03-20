@@ -6,7 +6,7 @@ Tags: Rancher, Kubernetes, Istio, DestinationRule, Load Balancing, Service Mesh
 
 Description: Learn how to configure Istio DestinationRules to control load balancing, connection pool settings, and circuit breakers for services in Rancher-managed clusters.
 
-DestinationRules in Istio define policies that apply to traffic after routing has occurred. While VirtualServices handle the "where" of traffic routing, DestinationRules handle the "how" — specifying load balancing algorithms, connection pool sizes, outlier detection, and TLS settings for connections to service subsets. This guide covers DestinationRule configuration in Rancher-managed Kubernetes clusters.
+DestinationRules in Istio define policies that apply to traffic after routing has occurred. While VirtualServices handle the "where" of traffic routing, DestinationRules handle the "how" - specifying load balancing algorithms, connection pool sizes, outlier detection, and TLS settings for connections to service subsets. This guide covers DestinationRule configuration in Rancher-managed Kubernetes clusters.
 
 ## Prerequisites
 
@@ -27,6 +27,7 @@ The most common use of DestinationRules is defining subsets that VirtualServices
 
 ```yaml
 # subsets-destination-rule.yaml
+
 apiVersion: networking.istio.io/v1alpha3
 kind: DestinationRule
 metadata:

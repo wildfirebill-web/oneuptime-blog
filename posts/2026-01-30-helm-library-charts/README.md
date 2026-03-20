@@ -61,6 +61,7 @@ First, the Chart.yaml needs to declare this as a library chart.
 
 ```yaml
 # common-library/Chart.yaml
+
 apiVersion: v2
 name: common-library
 description: Advanced Helm library with reusable templates

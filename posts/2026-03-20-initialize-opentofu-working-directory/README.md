@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, tofu init, Getting Started, Infrastructure as Code, DevOps
+Tags: OpenTofu, Tofu init, Getting Started, Infrastructure as Code, DevOps
 
 Description: A guide to understanding and using the tofu init command to set up an OpenTofu working directory.
 
@@ -22,6 +22,7 @@ Running `tofu init` performs these tasks:
 
 ```bash
 # Navigate to your configuration directory
+
 cd /path/to/your/project
 
 # Run init

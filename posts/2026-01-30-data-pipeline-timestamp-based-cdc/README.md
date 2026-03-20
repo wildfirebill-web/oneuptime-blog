@@ -150,6 +150,7 @@ Here is a complete implementation of a timestamp-based CDC extractor:
 
 ```python
 # cdc_extractor.py
+
 import logging
 from datetime import datetime, timezone
 from typing import Optional, Iterator, Dict, Any

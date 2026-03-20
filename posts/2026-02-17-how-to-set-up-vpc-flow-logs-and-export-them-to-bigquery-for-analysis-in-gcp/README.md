@@ -18,6 +18,7 @@ Flow logs are enabled at the subnet level. You can configure them when creating 
 
 ```bash
 # Enable flow logs on an existing subnet with custom settings
+
 gcloud compute networks subnets update prod-us-central1 \
   --region=us-central1 \
   --enable-flow-logs \

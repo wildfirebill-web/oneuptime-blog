@@ -14,6 +14,7 @@ OpenID Connect (OIDC) federation lets CI/CD systems like GitHub Actions assume A
 
 ```hcl
 # TLS certificate thumbprint for GitHub's OIDC endpoint
+
 data "tls_certificate" "github" {
   url = "https://token.actions.githubusercontent.com"
 }

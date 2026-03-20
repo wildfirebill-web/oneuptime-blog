@@ -28,6 +28,7 @@ The most effective way to eliminate cold starts is provisioned concurrency. This
 
 ```hcl
 # Lambda function with optimized settings
+
 resource "aws_lambda_function" "optimized" {
   filename         = data.archive_file.function_code.output_path
   function_name    = "optimized-function"

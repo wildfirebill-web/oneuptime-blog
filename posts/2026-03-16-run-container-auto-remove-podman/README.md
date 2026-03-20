@@ -20,6 +20,7 @@ Use the `--rm` flag to enable automatic cleanup:
 
 ```bash
 # Container is removed immediately after it exits
+
 podman run --rm alpine echo "This container will be auto-removed"
 
 # Verify it is gone

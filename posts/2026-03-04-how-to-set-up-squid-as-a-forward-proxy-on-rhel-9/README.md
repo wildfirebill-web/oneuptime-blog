@@ -28,6 +28,7 @@ Key settings:
 
 ```bash
 # Listen port
+
 http_port 3128
 
 # Access control

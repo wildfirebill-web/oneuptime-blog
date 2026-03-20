@@ -67,6 +67,7 @@ resource "azurerm_api_management" "main" {
 
 ```hcl
 # Store configuration values referenced in policies
+
 resource "azurerm_api_management_named_value" "backend_url" {
   name                = "backend-url"
   api_management_name = azurerm_api_management.main.name
@@ -81,7 +82,7 @@ resource "azurerm_api_management_named_value" "api_key" {
   api_management_name = azurerm_api_management.main.name
   resource_group_name = azurerm_resource_group.apim.name
   display_name        = "Backend API Key"
-  secret              = true  # Mark as sensitive — value not exposed in API
+  secret              = true  # Mark as sensitive - value not exposed in API
 
   value_from_key_vault {
     secret_id = azurerm_key_vault_secret.backend_api_key.versionless_id
@@ -118,7 +119,7 @@ resource "azurerm_api_management_product" "enterprise" {
   published             = true
 }
 
-# Product policy — apply rate limiting to Starter plan
+# Product policy - apply rate limiting to Starter plan
 resource "azurerm_api_management_product_policy" "starter" {
   product_id          = azurerm_api_management_product.starter.product_id
   api_management_name = azurerm_api_management.main.name

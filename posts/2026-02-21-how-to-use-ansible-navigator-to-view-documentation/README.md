@@ -22,6 +22,7 @@ The basic command to view module documentation:
 
 ```bash
 # View documentation for a specific module
+
 ansible-navigator doc ansible.builtin.copy
 
 # View documentation for a community module

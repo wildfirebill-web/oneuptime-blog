@@ -31,6 +31,7 @@ The Drone runner authenticates to the Drone server using a shared RPC secret. St
 kubectl create namespace drone
 
 # Store the RPC secret (must match the Drone server's DRONE_RPC_SECRET)
+
 kubectl create secret generic drone-rpc-secret \
   --namespace drone \
   --from-literal=DRONE_RPC_SECRET=your-shared-rpc-secret-here

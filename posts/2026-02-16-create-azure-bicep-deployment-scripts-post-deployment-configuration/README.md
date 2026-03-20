@@ -401,6 +401,7 @@ To check the logs of a failed script, use the Azure CLI.
 
 ```bash
 # List deployment script resources in the resource group
+
 az deployment-scripts list --resource-group rg-myapp
 
 # View the logs of a specific deployment script

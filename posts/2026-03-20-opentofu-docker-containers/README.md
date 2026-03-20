@@ -20,6 +20,7 @@ Learn how to build custom OpenTofu Docker images and run tofu commands in contai
 
 ```bash
 # Verify OpenTofu installation
+
 tofu version
 
 # Set up required environment variables

@@ -16,6 +16,7 @@ RHEL ships with several predefined crypto policies:
 
 ```bash
 # List available policies
+
 ls /usr/share/crypto-policies/policies/
 
 # The main policies:

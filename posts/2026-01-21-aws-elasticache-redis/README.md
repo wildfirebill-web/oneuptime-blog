@@ -35,6 +35,7 @@ First, create a subnet group that defines which subnets ElastiCache can use:
 
 ```bash
 # Create a subnet group using AWS CLI
+
 aws elasticache create-cache-subnet-group \
     --cache-subnet-group-name my-redis-subnet-group \
     --cache-subnet-group-description "Subnet group for Redis cluster" \

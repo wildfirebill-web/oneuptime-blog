@@ -33,6 +33,7 @@ The lifecycle of a Fleet Bundle follows these stages:
 
 ```bash
 # List all bundles across all namespaces
+
 kubectl get bundles -A
 
 # List bundles in a specific workspace

@@ -66,6 +66,7 @@ This means:
 
 ```bash
 # Run all benchmarks
+
 go test -bench=.
 
 # Run specific benchmark by name

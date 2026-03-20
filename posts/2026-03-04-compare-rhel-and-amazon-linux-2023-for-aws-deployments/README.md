@@ -32,6 +32,7 @@ Amazon Linux 2023 is designed specifically for AWS, while RHEL runs on any cloud
 
 ```bash
 # Enable the service to start on boot
+
 sudo systemctl enable <service-name>
 
 # Start the service

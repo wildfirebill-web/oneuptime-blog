@@ -20,6 +20,7 @@ Install the Cloud Storage Node.js client.
 
 ```bash
 # Install the Cloud Storage npm package
+
 npm install @google-cloud/storage
 ```
 

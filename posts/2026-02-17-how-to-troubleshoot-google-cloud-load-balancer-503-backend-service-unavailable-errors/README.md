@@ -25,6 +25,7 @@ The main reasons the load balancer returns 503:
 
 ```bash
 # Check health of all backends
+
 gcloud compute backend-services get-health my-backend-service \
     --global \
     --project=my-project

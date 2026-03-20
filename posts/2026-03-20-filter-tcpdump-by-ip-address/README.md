@@ -16,6 +16,7 @@ Description: Learn how to filter tcpdump captures by source IP, destination IP, 
 
 ```bash
 # Capture traffic to/from a specific IP
+
 sudo tcpdump -i eth0 host 10.0.0.5
 
 # Capture traffic FROM a specific IP (source)
@@ -170,11 +171,11 @@ sudo tcpdump -i eth0 -nn src 10.0.0.5 and udp port 53
 
 ## Best Practices
 
-1. **Always use `-nn`** — skips DNS resolution for faster output and clearer IPs
+1. **Always use `-nn`** - skips DNS resolution for faster output and clearer IPs
 2. **Save to file with `-w`** for complex analysis in Wireshark
 3. **Limit capture size** with `-c 1000` to avoid filling disk
 4. **Use `-s 0`** to capture full packet payload: `tcpdump -s 0 -i eth0 host X`
-5. **Run as root or with sudo** — pcap requires privileged access
+5. **Run as root or with sudo** - pcap requires privileged access
 
 ---
 
@@ -184,4 +185,4 @@ tcpdump's BPF filter syntax makes it easy to isolate traffic by IP, subnet, prot
 
 ---
 
-*Monitor network connectivity and track incidents with [OneUptime](https://oneuptime.com) — real-time uptime monitoring and alerting.*
+*Monitor network connectivity and track incidents with [OneUptime](https://oneuptime.com) - real-time uptime monitoring and alerting.*

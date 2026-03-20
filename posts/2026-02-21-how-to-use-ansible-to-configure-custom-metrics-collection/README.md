@@ -82,6 +82,7 @@ The textfile collector is the simplest way to expose custom metrics. You write a
 
 ```yaml
 # roles/textfile_metrics/defaults/main.yml
+
 textfile_collector_dir: "/var/lib/node_exporter/textfile_collector"
 textfile_scripts_dir: "/opt/metrics/scripts"
 textfile_metrics_user: "node_exporter"

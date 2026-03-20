@@ -31,6 +31,7 @@ When deploying or editing an application in Portainer:
 
 ```yaml
 # Inject a single key from a Secret as an environment variable
+
 env:
   - name: DB_PASSWORD
     valueFrom:

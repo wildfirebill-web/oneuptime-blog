@@ -24,6 +24,7 @@ Start with a simple managed resource that generates connection secrets.
 
 ```yaml
 # rds-instance.yaml
+
 apiVersion: rds.aws.upbound.io/v1beta1
 kind: Instance
 metadata:

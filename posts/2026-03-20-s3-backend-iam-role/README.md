@@ -1,4 +1,4 @@
-# How to Configure S3 Backend with IAM Role Assumption in OpenTofu
+# How to Configure S3 Backend with IAM Role Assumption in OpenTofu (2)
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -51,6 +51,7 @@ terraform {
 }
 
 # Separate provider configuration for deploying to prod account
+
 provider "aws" {
   region = "us-east-1"
 

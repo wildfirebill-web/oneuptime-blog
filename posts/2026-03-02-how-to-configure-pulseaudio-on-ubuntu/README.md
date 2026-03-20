@@ -22,6 +22,7 @@ PulseAudio has been the default sound server on Ubuntu for many years, sitting b
 
 ```bash
 # Check PulseAudio status
+
 pulseaudio --check && echo "Running" || echo "Not running"
 
 # List all audio output devices (sinks)

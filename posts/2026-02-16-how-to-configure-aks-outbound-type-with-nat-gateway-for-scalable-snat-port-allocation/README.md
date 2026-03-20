@@ -49,6 +49,7 @@ NAT Gateway needs to be associated with a subnet. Let's create the networking in
 
 ```bash
 # Create a resource group for all the resources
+
 az group create \
   --name myAKSResourceGroup \
   --location eastus

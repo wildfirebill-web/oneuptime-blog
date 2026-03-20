@@ -138,6 +138,7 @@ Your application must parse the PROXY protocol header. For NGINX:
 
 ```nginx
 # nginx.conf
+
 http {
     server {
         listen 8080 proxy_protocol;

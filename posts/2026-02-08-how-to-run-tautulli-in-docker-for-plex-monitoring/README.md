@@ -27,6 +27,7 @@ Tautulli needs your Plex authentication token to connect. Find it through any of
 
 ```bash
 # Method 1: Check the Plex server's XML page
+
 # Visit this URL in your browser while signed into Plex:
 # https://app.plex.tv/desktop#!/settings/server
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Containers, DevOps, Rootless, Socket, Security
+Tags: Podman, Containers, DevOps, Rootless, Sockets, Security
 
 Description: Learn how to enable and configure the Podman socket for rootless users to provide API access without requiring root privileges.
 
@@ -20,6 +20,7 @@ Verify your system supports rootless containers before enabling the socket.
 
 ```bash
 # Check that your user has subordinate UID/GID mappings
+
 grep "$(whoami)" /etc/subuid
 grep "$(whoami)" /etc/subgid
 

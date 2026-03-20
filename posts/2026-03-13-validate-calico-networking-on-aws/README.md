@@ -28,6 +28,7 @@ kubectl get pods -n calico-system
 kubectl get pods -n tigera-operator
 
 # All pods should be Running
+
 ```
 
 Check that IP pools are configured:

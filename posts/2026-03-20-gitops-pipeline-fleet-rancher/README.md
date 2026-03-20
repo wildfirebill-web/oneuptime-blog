@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: rancher, fleet, gitops, kubernetes, ci-cd
+Tags: Rancher, Fleet, GitOps, Kubernetes, Ci-cd
 
 Description: Complete guide to setting up a GitOps deployment pipeline using Rancher Fleet for declarative cluster management.
 
@@ -20,6 +20,7 @@ Rancher Fleet is a GitOps continuous delivery solution built into Rancher. It en
 
 ```bash
 # Check Fleet pods in Rancher management cluster
+
 kubectl get pods -n cattle-fleet-system
 
 # Expected pods:
@@ -71,7 +72,7 @@ kubectl get gitrepo my-app-gitops -n fleet-default
 
 ## Step 3: Repository Structure
 
-```
+```text
 kubernetes-manifests/
 ├── fleet.yaml              # Fleet configuration
 ├── apps/

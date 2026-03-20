@@ -1,4 +1,4 @@
-# How to Set Up GitOps Deployments with Portainer
+# How to Set Up GitOps Deployments with Portainer - Setup
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -39,7 +39,7 @@ graph LR
 
 ## Organizing Your Git Repository for GitOps
 
-```
+```text
 my-repo/
 ├── docker/
 │   ├── docker-compose.yml           # Production compose file
@@ -55,6 +55,7 @@ my-repo/
 
 ```yaml
 # docker/docker-compose.yml
+
 version: "3.8"
 
 services:

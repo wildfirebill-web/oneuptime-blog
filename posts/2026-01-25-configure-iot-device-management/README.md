@@ -147,6 +147,7 @@ CREATE INDEX idx_devices_tags ON devices USING GIN(tags);
 
 ```python
 # device_registry.py
+
 # Device registry service implementation
 
 from dataclasses import dataclass, field

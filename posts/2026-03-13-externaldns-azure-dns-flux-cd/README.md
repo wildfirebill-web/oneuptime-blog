@@ -23,6 +23,7 @@ ExternalDNS automates DNS record management for Kubernetes Services and Ingresse
 
 ```yaml
 # clusters/production/sources/externaldns-helm.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

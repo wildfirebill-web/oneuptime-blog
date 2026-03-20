@@ -16,6 +16,7 @@ tofuenv is a version manager for OpenTofu, similar to rbenv for Ruby or nvm for 
 
 ```bash
 # Clone tofuenv to ~/.tofuenv
+
 git clone --depth=1 https://github.com/tofuutils/tofuenv.git ~/.tofuenv
 
 # Add to PATH

@@ -27,6 +27,7 @@ The tradeoff is that pgvector on Cloud SQL will not match the throughput of purp
 
 ```bash
 # Install required packages
+
 pip install langchain langchain-google-cloud-sql-pg langchain-google-vertexai google-cloud-aiplatform
 ```
 

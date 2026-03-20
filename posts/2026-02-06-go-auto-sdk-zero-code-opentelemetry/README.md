@@ -61,6 +61,7 @@ The OpenTelemetry Go auto-instrumentation runs as a sidecar or separate process 
 
 ```bash
 # Download the auto-instrumentation binary
+
 wget https://github.com/open-telemetry/opentelemetry-go-instrumentation/releases/latest/download/otel-go-auto-linux-amd64
 
 chmod +x otel-go-auto-linux-amd64

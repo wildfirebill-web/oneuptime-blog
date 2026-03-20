@@ -20,6 +20,7 @@ Download the official Memcached image.
 
 ```bash
 # Pull the latest Memcached image
+
 podman pull docker.io/library/memcached:latest
 
 # Verify the image

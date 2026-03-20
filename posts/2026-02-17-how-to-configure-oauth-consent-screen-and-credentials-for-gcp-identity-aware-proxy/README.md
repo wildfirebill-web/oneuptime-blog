@@ -43,6 +43,7 @@ For the consent screen (also known as the IAP "brand"), use the IAP API.
 
 ```bash
 # Create an IAP brand (OAuth consent screen) for internal users
+
 gcloud iap oauth-brands create \
     --application_title="My Internal App" \
     --support_email="admin@company.com" \

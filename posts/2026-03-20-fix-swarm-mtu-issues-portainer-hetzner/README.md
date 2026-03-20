@@ -19,6 +19,7 @@ Symptoms include:
 
 ```bash
 # Check the MTU of your host network interface
+
 ip link show eth0
 
 # Check the MTU of Docker overlay networks

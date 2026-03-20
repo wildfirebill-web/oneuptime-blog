@@ -60,6 +60,7 @@ Define different parameter sets per environment:
 
 ```hcl
 # terraform.tfvars for production
+
 db_parameters = [
   {
     name  = "shared_buffers"

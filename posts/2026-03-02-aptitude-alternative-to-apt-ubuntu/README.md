@@ -14,6 +14,7 @@ Description: Learn how to use aptitude as a powerful alternative to APT on Ubunt
 
 ```bash
 # aptitude is not installed by default on Ubuntu Server
+
 sudo apt install aptitude
 
 # Verify it's working

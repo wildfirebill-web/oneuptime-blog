@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Lightweight 4over6, lw4o6, IPv6 Transition, ISP
+Tags: IPv6, Lightweight 4over6, Lw4o6, IPv6 Transition, ISP
 
 Description: An explanation of Lightweight 4over6 (lw4o6), an IPv6 transition technology that extends DS-Lite with port-restricted NAT to reduce AFTR state table overhead for ISP deployments.
 
@@ -22,7 +22,7 @@ In standard DS-Lite, the AFTR maintains a NAT44 session table for every active c
 
 In lw4o6:
 - The **CPE (lwB4)** performs the NAT44 locally, using only its assigned port range
-- The **AFTR (lwAFTR)** decapsulates IPv6 tunnels and forwards IPv4 — with no NAT state
+- The **AFTR (lwAFTR)** decapsulates IPv6 tunnels and forwards IPv4 - with no NAT state
 - The AFTR only needs to know which IPv4 address and port range each CPE is assigned
 
 ```mermaid
@@ -46,9 +46,9 @@ lw4o6 sits between DS-Lite and MAP-E in complexity and statefulness.
 
 ## The lwAFTR Binding Table
 
-Instead of a per-session NAT table, the lwAFTR maintains a **binding table** — one entry per subscriber CPE. Each entry maps:
+Instead of a per-session NAT table, the lwAFTR maintains a **binding table** - one entry per subscriber CPE. Each entry maps:
 
-```
+```text
 CPE IPv6 address ↔ (IPv4 address, Port Set)
 
 Example binding table:
@@ -69,6 +69,7 @@ The lwB4 CPE must:
 
 ```bash
 # On lwB4 (CPE): Configure port-restricted NAT
+
 # Subscriber is assigned IPv4 203.0.113.5, ports 1024-2047 (PSID 0, ratio 64)
 iptables -t nat -A POSTROUTING -o eth0.pppoe -p tcp \
     -j SNAT --to-source 203.0.113.5:1024-2047
@@ -94,7 +95,7 @@ ip route add default dev lw4o6-0
 
 The lwB4 receives its IPv4 address and port set via DHCPv6:
 
-```
+```text
 DHCPv6 options sent by ISP to lwB4:
 - Option 5: IPv4 address (203.0.113.5/32)
 - Option 22: Excluded ports (0-1023 reserved)

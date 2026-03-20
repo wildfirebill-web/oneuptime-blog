@@ -69,6 +69,7 @@ Every PR runs linting and testing:
 
 ```yaml
 # .github/workflows/lint.yml
+
 name: Ansible Lint and Validate
 
 on:

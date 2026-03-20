@@ -47,6 +47,7 @@ If your sync windows have `manualSync: true`, the simplest override is to trigge
 
 ```bash
 # Manual sync during a deny window (works if manualSync: true)
+
 argocd app sync my-critical-app
 
 # Manual selective sync for just the hotfix

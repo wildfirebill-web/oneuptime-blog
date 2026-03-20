@@ -203,6 +203,7 @@ Use the Azure CLI to create the necessary resources.
 
 ```bash
 # Create a resource group
+
 az group create --name task-api-rg --location eastus
 
 # Create an App Service plan (Linux, Basic tier)

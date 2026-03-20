@@ -16,6 +16,7 @@ Your CPU must support hardware virtualization. Check this first:
 
 ```bash
 # Check for hardware virtualization support
+
 egrep -c '(vmx|svm)' /proc/cpuinfo
 # Any number > 0 means you have it
 

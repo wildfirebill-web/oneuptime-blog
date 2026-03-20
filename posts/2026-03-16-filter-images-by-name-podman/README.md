@@ -20,6 +20,7 @@ The simplest filter is passing the image name directly to `podman images`.
 
 ```bash
 # Show only nginx images
+
 podman images nginx
 
 # Show only alpine images

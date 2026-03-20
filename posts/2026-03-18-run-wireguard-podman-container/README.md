@@ -31,6 +31,7 @@ WireGuard runs as a kernel module on the host even when the userspace tools are 
 
 ```bash
 # Load the WireGuard kernel module on the host
+
 sudo modprobe wireguard
 
 # Verify the module is loaded

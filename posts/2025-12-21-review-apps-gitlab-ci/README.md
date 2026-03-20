@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GitLab, CI/CD, Review Apps, Environment, Preview, Merge Request
+Tags: GitLab, CI/CD, Review Apps, Environments, Preview, Merge Request
 
 Description: Learn how to set up review apps in GitLab CI to automatically deploy preview environments for every merge request. This guide covers dynamic environments, cleanup, and best practices.
 
@@ -237,6 +237,7 @@ stop_review:
 
 ```yaml
 # docker-compose.review.yml
+
 services:
   app:
     build: .

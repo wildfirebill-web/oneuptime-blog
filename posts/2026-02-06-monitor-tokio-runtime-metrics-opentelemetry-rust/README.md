@@ -45,6 +45,7 @@ Add required crates to your `Cargo.toml`:
 ```toml
 [dependencies]
 # Tokio with metrics and tracing support
+
 tokio = { version = "1.35", features = ["full", "tracing"] }
 tokio-metrics = "0.3"
 

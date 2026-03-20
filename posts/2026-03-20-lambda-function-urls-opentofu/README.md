@@ -58,6 +58,7 @@ resource "aws_lambda_function" "api" {
 
 ```hcl
 # Public URL with no authentication - anyone can invoke
+
 resource "aws_lambda_function_url" "public" {
   function_name      = aws_lambda_function.api.function_name
   authorization_type = "NONE"  # Public access

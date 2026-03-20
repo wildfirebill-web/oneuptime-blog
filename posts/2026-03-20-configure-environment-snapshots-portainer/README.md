@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Snapshots, Configuration, Performance, Environments
+Tags: Portainer, Snapshot, Configuration, Performance, Environments
 
 Description: Configure the snapshot frequency and behavior for individual Portainer environments to balance UI freshness with system performance.
 
@@ -34,6 +34,7 @@ TOKEN=$(curl -s -X POST \
   --insecure | python3 -c "import sys,json; print(json.load(sys.stdin)['jwt'])")
 
 # List all environments
+
 curl -s https://localhost:9443/api/endpoints \
   -H "Authorization: Bearer $TOKEN" \
   --insecure | python3 -c "

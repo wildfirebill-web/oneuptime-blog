@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: rancher, migration, lens, kubernetes, dashboard
+Tags: Rancher, Migration, Lens, Kubernetes, Dashboards
 
 Description: Guide to transitioning from Lens IDE to Rancher Dashboard for centralized multi-cluster management.
 
@@ -45,6 +45,7 @@ echo "=== Workload Inventory ==="
 echo ""
 echo "Services/Applications:"
 # Docker Swarm example:
+
 # docker service ls --format "table {{.Name}}\t{{.Image}}\t{{.Replicas}}"
 
 # Docker Compose example:

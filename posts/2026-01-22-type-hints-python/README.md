@@ -20,6 +20,7 @@ Type hints were introduced in Python 3.5 and have evolved significantly. They do
 
 ```python
 # Basic types
+
 name: str = "Alice"
 age: int = 30
 height: float = 5.9

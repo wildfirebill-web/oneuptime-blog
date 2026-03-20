@@ -1,8 +1,8 @@
-# How to Configure Message Queue Persistence in Rancher
+# How to Configure Message Queue Persistence in Rancher - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Kubernetes, Message Queue, Persistence, Storage, Durability
+Tags: Rancher, Kubernetes, Message Queues, Persistence, Storage, Durability
 
 Description: Configure persistent message storage for RabbitMQ, Kafka, and NATS on Rancher to ensure messages survive pod restarts and node failures.
 
@@ -22,6 +22,7 @@ Message persistence ensures that messages are not lost when broker pods restart,
 
 ```yaml
 # rabbitmq-persistence-values.yaml - Persistent RabbitMQ configuration
+
 apiVersion: rabbitmq.com/v1beta1
 kind: RabbitmqCluster
 metadata:

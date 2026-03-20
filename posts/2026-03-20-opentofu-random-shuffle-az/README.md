@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Random, Availability Zones, random_shuffle, Infrastructure Distribution
+Tags: OpenTofu, Random, Availability Zones, Random_shuffle, Infrastructure Distribution
 
 Description: Learn how to use random_shuffle in OpenTofu for randomized availability zone assignment to distribute resources across zones without hardcoding zone names.
 
@@ -14,6 +14,7 @@ Description: Learn how to use random_shuffle in OpenTofu for randomized availabi
 
 ```hcl
 # main.tf - Randomized AZ selection
+
 data "aws_availability_zones" "available" {
   state = "available"
 }

@@ -16,6 +16,7 @@ The most straightforward way to remove a user is to set `state: absent` on the `
 
 ```yaml
 # remove-user-basic.yml - Remove a user account
+
 - name: Remove a user account
   hosts: all
   become: yes

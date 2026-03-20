@@ -510,6 +510,7 @@ Access the Eureka dashboard and API endpoints.
 
 ```bash
 # Eureka dashboard
+
 open http://localhost:8761
 
 # Get all applications (JSON)

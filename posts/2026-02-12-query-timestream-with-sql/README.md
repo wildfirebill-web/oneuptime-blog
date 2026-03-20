@@ -293,6 +293,7 @@ WHERE device_id = 'sensor-001'
 
 ```bash
 # Run a Timestream query from the AWS CLI
+
 aws timestream-query query \
   --query-string "SELECT device_id, MAX(time) AS last_seen FROM iot_data.sensor_readings WHERE time > ago(1h) GROUP BY device_id ORDER BY last_seen DESC LIMIT 10"
 ```

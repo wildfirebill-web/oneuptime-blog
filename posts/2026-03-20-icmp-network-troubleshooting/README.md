@@ -27,7 +27,8 @@ graph TD
 ## Step 1: Test Local Stack
 
 ```bash
-# Test loopback — confirms IP stack is functional
+# Test loopback - confirms IP stack is functional
+
 ping -c 1 127.0.0.1
 
 # Test own IP address
@@ -102,7 +103,7 @@ check_host() {
     if ping -c 2 -W 2 "$host" &>/dev/null; then
         echo "OK: $desc ($host)"
     else
-        echo "FAIL: $desc ($host) — unreachable"
+        echo "FAIL: $desc ($host) - unreachable"
     fi
 }
 
@@ -114,4 +115,4 @@ check_host 1.1.1.1      "Internet (Cloudflare DNS)"
 
 ## Conclusion
 
-ICMP is the fastest path to network diagnosis. A systematic approach — loopback, gateway, remote IP, DNS — isolates problems quickly to the correct layer. ICMP error messages tell you exactly what the network thinks is wrong. Capture these messages with tcpdump to get the full picture, especially for intermittent issues that don't reproduce when you're actively looking.
+ICMP is the fastest path to network diagnosis. A systematic approach - loopback, gateway, remote IP, DNS - isolates problems quickly to the correct layer. ICMP error messages tell you exactly what the network thinks is wrong. Capture these messages with tcpdump to get the full picture, especially for intermittent issues that don't reproduce when you're actively looking.

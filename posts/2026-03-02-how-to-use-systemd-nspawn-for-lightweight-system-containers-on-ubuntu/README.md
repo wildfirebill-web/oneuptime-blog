@@ -30,6 +30,7 @@ You need a minimal root filesystem to start. There are several ways to create on
 
 ```bash
 # Install debootstrap
+
 sudo apt install -y debootstrap
 
 # Create a minimal Ubuntu 22.04 root filesystem in /var/lib/machines/mycontainer
@@ -248,7 +249,7 @@ sudo systemd-nspawn \
 # BindReadOnly=/etc/ssl:/etc/ssl-host
 ```
 
-## Resource Limits
+Resource Limits
 
 Use systemd slice configuration to limit container resources:
 

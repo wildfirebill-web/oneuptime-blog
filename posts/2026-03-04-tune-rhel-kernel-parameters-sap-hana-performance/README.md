@@ -16,6 +16,7 @@ The simplest way to apply most settings is through the tuned profile:
 
 ```bash
 # Install tuned profiles for SAP
+
 sudo dnf install -y tuned-profiles-sap-hana
 
 # Activate the SAP HANA profile

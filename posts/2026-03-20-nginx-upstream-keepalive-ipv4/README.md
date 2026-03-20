@@ -8,7 +8,7 @@ Description: Configure Nginx upstream keepalive connections to reuse persistent 
 
 ## Introduction
 
-By default, Nginx opens a new TCP connection to upstream backends for every proxied request. Enabling keepalive connections in the upstream block allows Nginx to maintain a pool of idle connections that can be reused, significantly reducing latency and CPU overhead—especially at high request rates.
+By default, Nginx opens a new TCP connection to upstream backends for every proxied request. Enabling keepalive connections in the upstream block allows Nginx to maintain a pool of idle connections that can be reused, significantly reducing latency and CPU overhead-especially at high request rates.
 
 ## How Upstream Keepalive Works
 
@@ -88,6 +88,7 @@ Use `ss` to confirm connections remain in ESTABLISHED state after requests compl
 
 ```bash
 # Watch TCP connections to backend port 8080
+
 watch -n 1 "ss -tn dst 192.168.1.10:8080"
 
 # Expected output shows connections in ESTABLISHED state

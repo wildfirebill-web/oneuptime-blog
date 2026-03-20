@@ -34,6 +34,7 @@ If you are creating a new instance, you can enable persistence right from the st
 
 ```bash
 # Create a Memorystore instance with RDB persistence enabled
+
 # Snapshots will be taken every 12 hours
 gcloud redis instances create my-persistent-redis \
   --size=5 \

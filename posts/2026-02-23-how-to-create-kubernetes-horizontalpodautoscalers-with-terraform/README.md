@@ -24,6 +24,7 @@ kubectl get deployment metrics-server -n kube-system
 
 ```hcl
 # providers.tf
+
 terraform {
   required_version = ">= 1.0"
 

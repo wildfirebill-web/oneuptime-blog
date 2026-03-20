@@ -68,6 +68,7 @@ Configure your AWS credentials before using boto3. You can use environment varia
 
 ```bash
 # Using environment variables
+
 export AWS_ACCESS_KEY_ID=your_access_key
 export AWS_SECRET_ACCESS_KEY=your_secret_key
 export AWS_DEFAULT_REGION=us-east-1

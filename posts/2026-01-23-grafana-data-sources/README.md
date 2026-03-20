@@ -30,6 +30,7 @@ Prometheus is the most common data source for Grafana in Kubernetes environments
 
 ```yaml
 # Basic Prometheus data source configuration
+
 Name: Prometheus
 Type: Prometheus
 URL: http://prometheus-server:9090

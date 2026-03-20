@@ -33,6 +33,7 @@ First, create a Pub/Sub topic that will receive alert notifications:
 
 ```bash
 # Create the Pub/Sub topic for alert notifications
+
 gcloud pubsub topics create alert-notifications --project=my-project
 
 # Create a notification channel in Cloud Monitoring that sends to this topic

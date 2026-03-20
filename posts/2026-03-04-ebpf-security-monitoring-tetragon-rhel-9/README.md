@@ -31,6 +31,7 @@ Traditional auditd captures syscalls but generates massive log volumes and canno
 
 ```bash
 # Add the Cilium Tetragon repository
+
 cat <<'REPO' | sudo tee /etc/yum.repos.d/cilium-tetragon.repo
 [cilium-tetragon]
 name=Cilium Tetragon

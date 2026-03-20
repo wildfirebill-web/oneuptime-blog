@@ -16,6 +16,7 @@ APT identifies packages by both name and architecture. When you have multi-arch 
 
 ```bash
 # Check current system architecture
+
 dpkg --print-architecture
 # Output: amd64
 

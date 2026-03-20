@@ -36,6 +36,7 @@ Before creating the MIG, you need an instance template. This defines what each V
 
 ```bash
 # Create an instance template for the managed instance group
+
 gcloud compute instance-templates create web-server-template \
   --machine-type=e2-medium \
   --image-family=debian-12 \

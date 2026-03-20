@@ -32,6 +32,7 @@ Here is a simple example that patches a Deployment to change its replica count.
 
 ```yaml
 # kustomization-patch.yaml - Patch a deployment's replica count
+
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
 metadata:

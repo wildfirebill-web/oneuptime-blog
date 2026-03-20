@@ -201,6 +201,7 @@ First, create an IAM policy for cost data access:
 
 ```python
 # aws_cost_exporter.py
+
 # Exports AWS cost data as Prometheus metrics
 # Requires: boto3, prometheus_client
 

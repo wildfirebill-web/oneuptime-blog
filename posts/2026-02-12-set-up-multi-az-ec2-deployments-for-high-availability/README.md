@@ -46,6 +46,7 @@ Start with a VPC that has subnets in at least two (ideally three) AZs:
 
 ```bash
 # Create a VPC
+
 VPC_ID=$(aws ec2 create-vpc \
   --cidr-block 10.0.0.0/16 \
   --query 'Vpc.VpcId' --output text)

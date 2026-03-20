@@ -13,7 +13,7 @@ Docker Swarm supports IPv6 through overlay networks, which span multiple hosts. 
 ## Configure Each Swarm Node for IPv6
 
 ```json
-// /etc/docker/daemon.json — apply to ALL swarm nodes (manager and workers)
+// /etc/docker/daemon.json - apply to ALL swarm nodes (manager and workers)
 {
   "ipv6": true,
   "ip6tables": true,
@@ -27,6 +27,7 @@ Docker Swarm supports IPv6 through overlay networks, which span multiple hosts. 
 
 ```bash
 # Apply on each node and restart
+
 sudo systemctl restart docker
 
 # Initialize Swarm (manager node)

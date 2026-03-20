@@ -26,6 +26,7 @@ Examine the current security context settings of your Flux controllers:
 
 ```bash
 # Check all Flux controller security contexts
+
 for deploy in source-controller kustomize-controller helm-controller notification-controller; do
   echo "=== $deploy ==="
   kubectl get deployment "$deploy" -n flux-system -o json | \

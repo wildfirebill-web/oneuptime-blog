@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: rancher, education, kubernetes, multi-tenant, student-environments
+Tags: Rancher, Education, Kubernetes, Multi-Tenant, Student-environments
 
 Description: A guide to deploying Rancher for educational institutions, covering multi-tenant student environments, course-based namespace management, and cost-effective cluster operations.
 
@@ -12,7 +12,7 @@ Educational institutions face unique Kubernetes challenges: hundreds of students
 
 ## Architecture
 
-```
+```text
 University Rancher Platform
 ├── Faculty Cluster (production course deployments)
 │   ├── Project: Computer Science
@@ -31,7 +31,7 @@ University Rancher Platform
 
 Create Rancher Projects to isolate courses and departments:
 
-```
+```text
 Rancher UI → Cluster → Projects → New Project
 
 Project: cs-101-intro-programming
@@ -56,6 +56,7 @@ Automate student namespace creation with a script:
 ```bash
 #!/bin/bash
 # create-student-namespaces.sh
+
 # Creates a namespace for each student in the roster
 
 STUDENTS_FILE="students.txt"
@@ -201,7 +202,7 @@ spec:
 
 ## Step 7: LDAP Integration for University SSO
 
-```
+```text
 Rancher UI → Global Settings → Auth → LDAP
 - Server: ldaps://ldap.university.edu:636
 - Service Account DN: cn=rancher-svc,ou=service,dc=university,dc=edu

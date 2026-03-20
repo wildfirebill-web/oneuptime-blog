@@ -17,6 +17,7 @@ Monitoring your Calico dashboards' health ensures that the visualization layer r
 ```bash
 #!/bin/bash
 # monitor-grafana-dashboard-health.sh
+
 GRAFANA_URL="${GRAFANA_URL}"
 TOKEN="${GRAFANA_TOKEN}"
 

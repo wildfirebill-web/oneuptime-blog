@@ -24,6 +24,7 @@ Install the vcluster CLI:
 
 ```bash
 # Install vcluster CLI
+
 curl -s -L "https://github.com/loft-sh/vcluster/releases/latest" | \
   sed -nE 's!.*"([^"]*vcluster-linux-amd64)".*!https://github.com\1!p' | \
   xargs -n 1 curl -L -o vcluster && \

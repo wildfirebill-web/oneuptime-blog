@@ -25,6 +25,7 @@ Cilium on OpenShift is typically deployed through the Cilium Operator available 
 
 ```bash
 # Check OpenShift and Kubernetes version
+
 oc version
 
 # Check the cluster version (OpenShift-specific)

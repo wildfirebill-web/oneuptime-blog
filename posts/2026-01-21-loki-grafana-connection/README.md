@@ -41,6 +41,7 @@ Create a provisioning file for automated setup:
 
 ```yaml
 # /etc/grafana/provisioning/datasources/loki.yaml
+
 apiVersion: 1
 
 datasources:

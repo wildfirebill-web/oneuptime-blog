@@ -358,6 +358,7 @@ Option 1 - Ignore the Secret resources created by ESO:
 
 ```yaml
 # In the Application spec
+
 spec:
   ignoreDifferences:
     - group: ""

@@ -17,6 +17,7 @@ PROJECT="my-project"
 REGION="us-east1"
 
 # Create Cloud Router for Interconnect
+
 gcloud compute routers create router-interconnect \
     --project="$PROJECT" \
     --network=vpc-main \
@@ -129,7 +130,7 @@ output "customer_router_ipv6" {
 
 ## On-Premises Router Configuration (Example: Cisco)
 
-```
+```text
 ! On-premises router configuration for IPv6 BGP over Interconnect
 ! Interface configuration for VLAN 100
 interface GigabitEthernet0/0.100

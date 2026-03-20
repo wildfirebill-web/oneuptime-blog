@@ -8,7 +8,7 @@ Description: Learn how to migrate your infrastructure workflows from Terraform E
 
 ## Introduction
 
-env0 is a self-service cloud management platform that supports OpenTofu natively. It provides features comparable to Terraform Enterprise — workspace management, variable management, approval workflows, RBAC, and cost estimation — while supporting open-source execution engines. Migrating to env0 with OpenTofu removes licensing costs and vendor lock-in.
+env0 is a self-service cloud management platform that supports OpenTofu natively. It provides features comparable to Terraform Enterprise - workspace management, variable management, approval workflows, RBAC, and cost estimation - while supporting open-source execution engines. Migrating to env0 with OpenTofu removes licensing costs and vendor lock-in.
 
 ## Phase 1: Map TFE Workspaces to env0 Environments
 
@@ -16,6 +16,7 @@ env0 uses "environments" where TFE uses "workspaces."
 
 ```bash
 # Export TFE workspace inventory
+
 curl -s -H "Authorization: Bearer $TFE_TOKEN" \
   "https://app.terraform.io/api/v2/organizations/$TFE_ORG/workspaces" | \
   jq -r '.data[] | [.attributes.name, .attributes["terraform-version"], .attributes["working-directory"]] | @csv'
@@ -172,4 +173,4 @@ resource "env0_team_project_assignment" "infra_app" {
 
 ## Summary
 
-Migrating from Terraform Enterprise to env0 with OpenTofu involves creating env0 templates and environments matching your TFE workspaces, migrating state files from TFE's managed backend to your own S3 backend, and replicating approval workflows and RBAC configuration. env0's native OpenTofu support means you simply set `type = "opentofu"` on templates. Migrate incrementally — one environment at a time — to minimize risk and validate each migration before decommissioning TFE workspaces.
+Migrating from Terraform Enterprise to env0 with OpenTofu involves creating env0 templates and environments matching your TFE workspaces, migrating state files from TFE's managed backend to your own S3 backend, and replicating approval workflows and RBAC configuration. env0's native OpenTofu support means you simply set `type = "opentofu"` on templates. Migrate incrementally - one environment at a time - to minimize risk and validate each migration before decommissioning TFE workspaces.

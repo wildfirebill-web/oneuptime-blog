@@ -45,6 +45,7 @@ Shelves contain books. Books contain chapters. Chapters contain pages. You can a
 
 ```bash
 # Create the BookStack project directory
+
 mkdir -p ~/bookstack/{db,uploads,storage}
 cd ~/bookstack
 ```

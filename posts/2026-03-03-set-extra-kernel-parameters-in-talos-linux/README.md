@@ -33,6 +33,7 @@ Talos Linux reads kernel parameters from the machine configuration and bakes the
 
 ```bash
 # View the current kernel command line on a running node
+
 talosctl read /proc/cmdline --nodes <NODE_IP>
 
 # Typical output:

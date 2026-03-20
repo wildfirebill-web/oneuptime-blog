@@ -74,6 +74,7 @@ Configure Flyway in your `application.yml`. The defaults work for most cases, bu
 
 ```yaml
 # application.yml
+
 spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/myapp

@@ -20,6 +20,7 @@ Enable diagnostic logging to send APIM request data to Log Analytics.
 
 ```bash
 # Enable diagnostic settings for API Management
+
 az monitor diagnostic-settings create \
   --name "apim-diagnostics" \
   --resource "/subscriptions/{sub-id}/resourceGroups/myRG/providers/Microsoft.ApiManagement/service/myAPIM" \

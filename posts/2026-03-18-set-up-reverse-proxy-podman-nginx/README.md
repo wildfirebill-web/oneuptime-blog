@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, NGINX, Reverse Proxy, Containers, Networking
+Tags: Podman, Nginx, Reverse Proxy, Containers, Networking
 
 Description: Learn how to set up a reverse proxy using Podman and Nginx to route traffic to multiple backend containers, including configuration examples and best practices.
 

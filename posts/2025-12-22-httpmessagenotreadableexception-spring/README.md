@@ -180,6 +180,7 @@ public class UserRequest {
 
 ```yaml
 # application.yml
+
 spring:
   jackson:
     mapper:

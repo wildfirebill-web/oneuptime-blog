@@ -69,6 +69,7 @@ Start with a root-level Dockerfile that handles the entire monorepo. This approa
 # syntax=docker/dockerfile:1.4
 
 # Stage 1: Base image with package manager
+
 FROM node:20-alpine AS base
 
 # Install pnpm globally

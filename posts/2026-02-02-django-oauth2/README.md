@@ -54,6 +54,7 @@ INSTALLED_APPS = [
 ]
 
 # Site ID is required by allauth
+
 SITE_ID = 1
 
 # Authentication backends

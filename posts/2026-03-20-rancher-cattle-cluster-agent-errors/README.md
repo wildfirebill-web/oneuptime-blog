@@ -21,6 +21,7 @@ The `cattle-cluster-agent` runs in the `cattle-system` namespace of every downst
 
 ```bash
 # Check status and restart count
+
 kubectl get pods -n cattle-system -l app=cattle-cluster-agent
 
 # Check events on the pod
@@ -121,7 +122,7 @@ kubectl get deployment -n cattle-system cattle-cluster-agent -o json \
 ## Step 4: Force Re-registration
 
 ```bash
-# Delete the agent deployment — Rancher will attempt to recreate it
+# Delete the agent deployment - Rancher will attempt to recreate it
 kubectl delete deployment -n cattle-system cattle-cluster-agent
 
 # If Rancher can't reach the cluster to recreate it, manually apply:
@@ -171,4 +172,4 @@ kubectl patch deployment cattle-cluster-agent -n cattle-system --type=json -p='[
 
 ## Conclusion
 
-The `cattle-cluster-agent` is a single point of failure for Rancher's management connectivity to downstream clusters. Regular monitoring of agent pod status, restart counts, and log output is essential. The most common failures — TLS errors, connection refusals, and RBAC misconfiguration — all have clear signatures in the logs and can be resolved with targeted fixes. Adding an observability alert on `cattle-cluster-agent` restart count is highly recommended for production environments.
+The `cattle-cluster-agent` is a single point of failure for Rancher's management connectivity to downstream clusters. Regular monitoring of agent pod status, restart counts, and log output is essential. The most common failures - TLS errors, connection refusals, and RBAC misconfiguration - all have clear signatures in the logs and can be resolved with targeted fixes. Adding an observability alert on `cattle-cluster-agent` restart count is highly recommended for production environments.

@@ -58,6 +58,7 @@ Here are the essential Prometheus queries you need:
 
 ```promql
 # Percentage of requests being rate limited (using Istio standard metrics)
+
 sum(rate(istio_requests_total{response_code="429", destination_service_name="my-service"}[5m]))
 /
 sum(rate(istio_requests_total{destination_service_name="my-service"}[5m]))

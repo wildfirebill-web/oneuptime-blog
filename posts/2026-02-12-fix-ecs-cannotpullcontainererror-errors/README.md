@@ -18,6 +18,7 @@ First, get the actual error message. The high-level `CannotPullContainerError` i
 
 ```bash
 # Get the stopped task's error details
+
 aws ecs describe-tasks \
     --cluster my-cluster \
     --tasks <task-arn> \

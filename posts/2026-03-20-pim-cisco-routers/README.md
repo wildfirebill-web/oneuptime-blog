@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: PIM, Multicast, Cisco, Routing, IGMP, Networking, RP
+Tags: PIM, Multicast, Cisco, Routing, IGMP, Networking, RPS
 
 Description: Configure PIM Sparse Mode and PIM Dense Mode on Cisco IOS routers to enable multicast routing, set up a Rendezvous Point, and verify multicast distribution trees.
 
@@ -12,7 +12,7 @@ PIM (Protocol Independent Multicast) is the routing protocol that builds multica
 
 ## Enable PIM on Cisco IOS
 
-```
+```text
 ! Step 1: Enable IP multicast routing globally:
 ip multicast-routing
 ip multicast-routing distributed  ! For distributed CEF platforms
@@ -40,7 +40,7 @@ show ip pim neighbor
 
 ## Configure Static Rendezvous Point (RP)
 
-```
+```text
 ! The RP is the meeting point for sources and receivers in PIM-SM
 
 ! Configure static RP (simplest method):
@@ -66,7 +66,7 @@ interface Loopback0
 
 ## Configure Auto-RP (Dynamic RP Discovery)
 
-```
+```text
 ! Auto-RP uses two components:
 ! - RP Candidate: announces itself as RP
 ! - Mapping Agent: collects RP announcements and distributes
@@ -97,7 +97,7 @@ show ip pim rp mapping
 
 ## Verify PIM Multicast Routing
 
-```
+```text
 ! View multicast routing table:
 show ip mroute
 ! (* 239.1.1.1) = Shared tree entry (via RP)
@@ -128,7 +128,7 @@ show ip pim tunnel
 
 ## Configure PIM Dense Mode
 
-```
+```text
 ! PIM Dense Mode: floods then prunes
 ! Good for: dense receiver networks, testing
 
@@ -152,7 +152,7 @@ show ip mroute 239.1.1.1 pruned
 
 ## Troubleshoot PIM Issues
 
-```
+```text
 ! PIM troubleshooting commands:
 
 ! Check all PIM interfaces and neighbors:

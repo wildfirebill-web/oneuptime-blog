@@ -35,6 +35,7 @@ Install the OpenTelemetry Operator using Helm. The operator manages two custom r
 
 ```bash
 # Add the OpenTelemetry Helm repository
+
 helm repo add open-telemetry https://open-telemetry.github.io/opentelemetry-helm-charts
 
 # Install the operator with cert-manager dependency

@@ -30,6 +30,7 @@ Create a CiliumNetworkPolicy that restricts HTTP access on the Death Star.
 
 ```yaml
 # Apply this L7 policy to restrict Death Star API access by HTTP method and path
+
 apiVersion: cilium.io/v2
 kind: CiliumNetworkPolicy
 metadata:

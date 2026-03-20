@@ -18,6 +18,7 @@ USBGuard is a software framework that implements USB device authorization polici
 
 ```bash
 # Install USBGuard
+
 sudo dnf install usbguard -y
 
 # Verify installation

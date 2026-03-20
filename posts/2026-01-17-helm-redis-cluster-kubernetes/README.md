@@ -55,6 +55,7 @@ flowchart TB
 
 ```bash
 # Add Bitnami repository
+
 helm repo add bitnami https://charts.bitnami.com/bitnami
 
 # Update repositories
@@ -576,7 +577,7 @@ DBSIZE
 MONITOR
 ```
 
-## Resource Sizing Guide
+Resource Sizing Guide
 
 | Use Case | CPU | Memory | Storage | Replicas |
 |----------|-----|--------|---------|----------|

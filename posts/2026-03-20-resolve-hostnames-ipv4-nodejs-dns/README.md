@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Node.js, DNS, IPv4, Hostname Resolution, dns module, Networking
+Tags: Node.js, DNS, IPv4, Hostname Resolution, Dns module, Networking
 
 Description: Learn how to resolve hostnames to IPv4 addresses in Node.js using the dns module, including A record lookups, custom DNS servers, and async/await patterns.
 

@@ -52,6 +52,7 @@ Flux CD runs as a set of lightweight controllers on your cluster:
 
 ```yaml
 # Flux CD bootstrap - minimal components
+
 # flux bootstrap github --owner=my-org --repository=fleet-repo --path=clusters/production
 
 # The result is a set of controllers in the flux-system namespace:
@@ -392,7 +393,7 @@ jx preview create
 jx get environments
 ```
 
-## Resource Requirements
+Resource Requirements
 
 | Component | Flux CD | Jenkins X |
 |---|---|---|

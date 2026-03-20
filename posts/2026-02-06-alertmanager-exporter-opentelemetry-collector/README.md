@@ -529,6 +529,7 @@ Configure Alertmanager to receive and route alerts from the OpenTelemetry Collec
 
 ```yaml
 # alertmanager.yml
+
 global:
   resolve_timeout: 5m
 

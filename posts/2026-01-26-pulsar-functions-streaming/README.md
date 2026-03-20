@@ -88,6 +88,7 @@ Before writing functions, set up a local Pulsar instance with function support e
 
 ```bash
 # Pull the Pulsar image
+
 docker pull apachepulsar/pulsar:3.3.0
 
 # Run Pulsar standalone with function worker enabled

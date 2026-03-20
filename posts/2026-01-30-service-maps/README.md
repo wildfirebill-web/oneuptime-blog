@@ -1152,7 +1152,7 @@ export async function getServiceMapHandler(req: Request, res: Response) {
 }
 ```
 
-### Example output
+Example output
 
 When you query the `/api/service-map` endpoint, you get a response like this:
 

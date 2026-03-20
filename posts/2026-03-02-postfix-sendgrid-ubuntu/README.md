@@ -28,6 +28,7 @@ The API key looks like: `SG.abcdefghijklmnop.qrstuvwxyz1234567890`
 
 ```bash
 # Install Postfix and SASL libraries
+
 sudo apt update
 sudo apt install -y postfix libsasl2-modules mailutils
 

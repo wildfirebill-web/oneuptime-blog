@@ -276,6 +276,7 @@ from opentelemetry.instrumentation.flask import FlaskInstrumentor
 from opentelemetry.instrumentation.logging import LoggingInstrumentor
 
 # Configure tracing
+
 trace.set_tracer_provider(TracerProvider())
 otlp_exporter = OTLPSpanExporter(endpoint="http://tempo:4317", insecure=True)
 trace.get_tracer_provider().add_span_processor(BatchSpanProcessor(otlp_exporter))

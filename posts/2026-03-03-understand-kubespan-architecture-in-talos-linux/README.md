@@ -26,6 +26,7 @@ By default, Talos uses a public discovery service hosted at `https://discovery.t
 
 ```bash
 # View discovery members from a node
+
 talosctl get discoveredmembers --nodes <node-ip>
 
 # Output shows each cluster member and their endpoints

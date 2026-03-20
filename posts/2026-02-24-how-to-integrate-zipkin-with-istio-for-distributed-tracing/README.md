@@ -304,6 +304,7 @@ Generate some traffic and check Zipkin:
 
 ```bash
 # Generate test traffic
+
 for i in $(seq 1 20); do
   kubectl exec deploy/sleep -- curl -s http://httpbin:8000/get
 done

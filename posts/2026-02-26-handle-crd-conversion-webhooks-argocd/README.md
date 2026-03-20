@@ -45,6 +45,7 @@ First, deploy the conversion webhook service. This goes in the lowest sync wave:
 
 ```yaml
 # Wave -3: Namespace
+
 apiVersion: v1
 kind: Namespace
 metadata:

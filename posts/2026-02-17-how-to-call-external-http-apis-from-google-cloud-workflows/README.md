@@ -18,6 +18,7 @@ The `http.get` and `http.post` built-in functions handle HTTP requests.
 
 ```yaml
 # basic-http-calls.yaml
+
 main:
   steps:
     # Simple GET request to a public API

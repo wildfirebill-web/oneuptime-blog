@@ -16,6 +16,7 @@ Before working with LDAP in Ansible, you need the `python-ldap` library on the c
 
 ```bash
 # Install the Python LDAP library
+
 pip3 install python-ldap
 
 # Install the community.general collection

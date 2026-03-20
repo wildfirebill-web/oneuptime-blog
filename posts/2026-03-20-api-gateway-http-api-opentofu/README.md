@@ -42,6 +42,7 @@ resource "aws_apigatewayv2_api" "main" {
 
 ```hcl
 # Lambda integration
+
 resource "aws_apigatewayv2_integration" "lambda" {
   api_id             = aws_apigatewayv2_api.main.id
   integration_type   = "AWS_PROXY"

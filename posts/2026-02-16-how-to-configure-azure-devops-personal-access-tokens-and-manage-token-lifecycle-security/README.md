@@ -39,6 +39,7 @@ For automation, you can create PATs programmatically using the Token Administrat
 
 ```bash
 # Create a PAT using the Azure DevOps REST API
+
 # Note: You need an existing PAT or OAuth token with Token Administration scope
 
 ORG="your-organization"

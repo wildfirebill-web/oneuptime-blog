@@ -8,11 +8,11 @@ Description: Set up a GCP Internal TCP/UDP Load Balancer to distribute IPv4 traf
 
 ## Introduction
 
-GCP's Internal TCP/UDP Load Balancer (now called Internal passthrough Network Load Balancer) distributes layer-4 traffic to backends within the same VPC using an internal IPv4 address. Traffic stays within Google's private network — ideal for internal services like databases, message queues, or microservice APIs.
+GCP's Internal TCP/UDP Load Balancer (now called Internal passthrough Network Load Balancer) distributes layer-4 traffic to backends within the same VPC using an internal IPv4 address. Traffic stays within Google's private network - ideal for internal services like databases, message queues, or microservice APIs.
 
 ## Architecture
 
-```
+```text
 Clients (internal VMs) → Internal forwarding rule (10.0.2.100:8080)
                            → Backend service
                              → [vm-a, vm-b, vm-c] (backend instances)
@@ -22,6 +22,7 @@ Clients (internal VMs) → Internal forwarding rule (10.0.2.100:8080)
 
 ```bash
 # Create an unmanaged instance group with your backend VMs
+
 gcloud compute instance-groups unmanaged create backend-ig \
   --zone us-east1-b
 

@@ -14,6 +14,7 @@ A RHEL CUPS print server can share printers with Windows, macOS, and other Linux
 
 ```bash
 # Enable sharing in CUPS
+
 sudo cupsctl --share-printers
 
 # Share a specific printer

@@ -10,7 +10,7 @@ Description: Deploy MAP-E (Mapping of Address and Port - Encapsulation) at ISP s
 
 MAP-E (RFC 7597) is similar to MAP-T but uses encapsulation (IPv4-in-IPv6) rather than translation. IPv4 packets are encapsulated in IPv6 and sent to a Border Relay (BR), which decapsulates and forwards them to the IPv4 internet.
 
-Like MAP-T, MAP-E is stateless — the CE derives its IPv4 address and port range algorithmically from its IPv6 prefix.
+Like MAP-T, MAP-E is stateless - the CE derives its IPv4 address and port range algorithmically from its IPv6 prefix.
 
 ## MAP-E vs MAP-T
 
@@ -36,6 +36,7 @@ The BR decapsulates IPv4-in-IPv6 and performs NAPT from the shared pool:
 
 ```bash
 # Configure MAP-E BR as an IPv6 tunnel endpoint on Linux
+
 # Create a tunnel interface for MAP-E decapsulation
 ip -6 tunnel add map-e-br mode ip4ip6 \
     local 2001:db8:br::1 \
@@ -53,7 +54,7 @@ iptables -t nat -A POSTROUTING -o eth0 \
 
 On OpenWRT with the `map` package installed:
 
-```
+```text
 # /etc/config/network
 
 config interface 'wan6'

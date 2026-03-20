@@ -43,6 +43,7 @@ Start by installing ArgoCD without connecting it to any deployment workflows. Co
 
 ```yaml
 # Create an ArgoCD application that observes but does not sync
+
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:

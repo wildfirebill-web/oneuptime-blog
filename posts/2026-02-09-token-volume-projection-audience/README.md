@@ -24,6 +24,7 @@ Here's a simple example of projecting a ServiceAccount token with custom propert
 
 ```yaml
 # pod-with-projected-token.yaml
+
 apiVersion: v1
 kind: Pod
 metadata:

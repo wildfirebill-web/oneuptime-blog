@@ -305,6 +305,7 @@ Users can create multiple instances of a provider with different configurations 
 
 ```hcl
 # User's Terraform configuration
+
 provider "cloud" {
   region = "us-east-1"
 }

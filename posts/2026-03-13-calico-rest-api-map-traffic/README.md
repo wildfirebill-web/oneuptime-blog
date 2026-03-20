@@ -47,6 +47,7 @@ The pipeline's REST API calls affect what traffic reaches the new service within
 **Example pipeline script**:
 ```bash
 # Deploy the service, then immediately apply policy
+
 kubectl apply -f new-service-deployment.yaml
 
 # Apply deny-all policy via REST API

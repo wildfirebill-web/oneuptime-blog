@@ -32,6 +32,7 @@ graph LR
 
 ```bash
 # Install udica
+
 sudo dnf install -y udica
 ```
 

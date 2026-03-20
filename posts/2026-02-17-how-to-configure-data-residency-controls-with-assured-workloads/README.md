@@ -30,6 +30,7 @@ Create an Assured Workloads folder with the appropriate compliance regime and lo
 
 ```bash
 # Create an Assured Workloads folder for EU data residency
+
 # Using the EU_REGIONS_AND_SUPPORT compliance regime
 gcloud assured workloads create \
   --organization=ORG_ID \

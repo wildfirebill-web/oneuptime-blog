@@ -33,6 +33,7 @@ flowchart TD
 # Enable debug mode with set -x
 
 # Method 1: Enable at script start
+
 set -x
 
 echo "This command will be traced"

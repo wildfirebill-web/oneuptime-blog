@@ -14,6 +14,7 @@ The "nothing provides" error in DNF means a package you are trying to install re
 
 ```bash
 # Typical error message:
+
 # Error: Problem: nothing provides libfoo.so.2()(64bit) needed by package-1.0-1.el9.x86_64
 
 # This means package-1.0 needs libfoo.so.2, but no enabled repo has it

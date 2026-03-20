@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: L2TP, IPSec, VPN, IPv4, Linux, Remote Access
+Tags: L2TP, IPsec, VPN, IPv4, Linux, Remote Access
 
 Description: Configure an L2TP/IPSec VPN server on Linux using xl2tpd and StrongSwan for IPv4 remote access compatible with native Windows and macOS clients.
 
@@ -39,6 +39,7 @@ conn L2TP-PSK
 
 ```conf
 # /etc/ipsec.secrets
+
 %any %any : PSK "YourPresharedKey"
 ```
 

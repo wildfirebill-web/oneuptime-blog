@@ -310,6 +310,7 @@ SETTINGS index_granularity = 8192;
 
 ```bash
 # Bulk API
+
 curl -X POST "localhost:9200/_bulk" -H 'Content-Type: application/json' --data-binary @logs.ndjson
 
 # Logstash pipeline

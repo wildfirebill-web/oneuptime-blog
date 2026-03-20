@@ -1,8 +1,8 @@
-# How to Configure Hot Reloading for Applications on Rancher
+# How to Configure Hot Reloading for Applications on Rancher - Reload
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Kubernetes, Hot Reload, Development, Live Update
+Tags: Rancher, Kubernetes, Hot Reload, Development, Live Updates
 
 Description: Configure hot reloading for Node.js, Python, Go, and Java applications running in Rancher Kubernetes clusters to speed up your development feedback loop.
 
@@ -20,6 +20,7 @@ Hot reloading allows your application to reflect code changes instantly without 
 
 ```dockerfile
 # Dockerfile.dev - Node.js development container
+
 FROM node:18-alpine
 WORKDIR /app
 
@@ -248,4 +249,4 @@ containers:
 
 ## Conclusion
 
-Hot reloading dramatically speeds up the development feedback loop for Kubernetes applications on Rancher. By choosing the appropriate hot reload solution for each language runtime—Nodemon for Node.js, Uvicorn's reload flag for Python, Air for Go, and Spring DevTools for Java—you can achieve near-instant code updates. Combined with file sync tools like Skaffold or Telepresence, this workflow provides a local development experience while running on the actual Rancher cluster infrastructure.
+Hot reloading dramatically speeds up the development feedback loop for Kubernetes applications on Rancher. By choosing the appropriate hot reload solution for each language runtime-Nodemon for Node.js, Uvicorn's reload flag for Python, Air for Go, and Spring DevTools for Java-you can achieve near-instant code updates. Combined with file sync tools like Skaffold or Telepresence, this workflow provides a local development experience while running on the actual Rancher cluster infrastructure.

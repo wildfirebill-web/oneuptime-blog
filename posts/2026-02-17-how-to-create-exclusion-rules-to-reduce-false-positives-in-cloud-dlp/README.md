@@ -143,6 +143,7 @@ def inspect_with_dictionary_exclusion(project_id, content):
     return response
 
 # Test - "Virginia" and "555-0100" should be excluded
+
 sample = """
 Customer Virginia Smith called from 555-0100 about account 123-45-6789.
 Her real number is 408-555-1234 and SSN is 567-89-0123.

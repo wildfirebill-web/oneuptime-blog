@@ -59,6 +59,7 @@ Let's see this in action:
 
 ```bash
 # Test the standard analyzer
+
 curl -X POST "localhost:9200/_analyze?pretty" -H 'Content-Type: application/json' -d'
 {
   "analyzer": "standard",

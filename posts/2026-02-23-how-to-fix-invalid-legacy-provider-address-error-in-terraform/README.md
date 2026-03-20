@@ -52,6 +52,7 @@ The most direct fix is to update the provider addresses in your state file:
 
 ```bash
 # Replace the legacy provider address with the new format
+
 terraform state replace-provider \
   "registry.terraform.io/-/aws" \
   "registry.terraform.io/hashicorp/aws"

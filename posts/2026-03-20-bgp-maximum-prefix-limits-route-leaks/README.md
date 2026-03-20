@@ -8,13 +8,13 @@ Description: Learn how to configure BGP maximum-prefix limits on neighbor sessio
 
 ## Why Maximum-Prefix Limits Matter
 
-Route leaks—where an AS accidentally or maliciously advertises prefixes it shouldn't—have caused major Internet outages. BGP maximum-prefix limits provide a circuit breaker: when the number of prefixes received from a neighbor exceeds the configured limit, the session is torn down or a warning is triggered, protecting your routing table from corruption.
+Route leaks-where an AS accidentally or maliciously advertises prefixes it shouldn't-have caused major Internet outages. BGP maximum-prefix limits provide a circuit breaker: when the number of prefixes received from a neighbor exceeds the configured limit, the session is torn down or a warning is triggered, protecting your routing table from corruption.
 
 ## Step 1: Set a Maximum-Prefix Limit
 
 The `maximum-prefix` command sets how many prefixes can be received from a neighbor before action is taken:
 
-```
+```text
 router bgp 65001
  ! Accept maximum 500 prefixes from this customer
  ! Session tears down if exceeded
@@ -34,7 +34,7 @@ The percentage threshold triggers a syslog warning when that percentage of the l
 
 By default, once a session is torn down due to maximum-prefix, it stays down until manually cleared. Use `restart` to automatically re-establish after a cooldown period:
 
-```
+```text
 router bgp 65001
  ! Tear down session if >500 prefixes received, auto-restart after 5 minutes
  neighbor 10.0.0.1 maximum-prefix 500 restart 5
@@ -58,7 +58,7 @@ Always set the limit 20–25% above the expected prefix count to accommodate nor
 
 Check the current prefix count per neighbor to set appropriate limits:
 
-```
+```text
 Router# show ip bgp summary
 
 Neighbor        V     AS   MsgRcvd MsgSent   TblVer  InQ OutQ Up/Down  State/PfxRcd
@@ -74,14 +74,14 @@ Set limits approximately 25% above the `PfxRcd` value.
 
 When a session trips the maximum-prefix limit, the log shows:
 
-```
+```text
 %BGP-3-MAXPFX: No. of prefix received from 10.0.0.1 (afi 0) reaches 500, max 500
 %BGP-5-ADJCHANGE: neighbor 10.0.0.1 Down MAXPFX reached
 ```
 
 To restore the session after the peer has corrected their announcements:
 
-```
+```text
 ! Clear the BGP session to allow it to re-establish
 Router# clear ip bgp 10.0.0.1
 
@@ -92,7 +92,7 @@ Router# clear ip bgp 10.0.0.1
 
 For routers using address-family model, configure maximum-prefix within the address family:
 
-```
+```text
 router bgp 65001
  address-family ipv4 unicast
   neighbor 10.0.0.1 maximum-prefix 500 80 warning-only
@@ -101,4 +101,4 @@ router bgp 65001
 
 ## Conclusion
 
-BGP maximum-prefix limits are a critical defensive measure against route leaks and BGP table flooding. Configure limits on every neighbor session—use `warning-only` for iBGP peers and established ISP connections, and automatic tear-down with `restart` for customer peerings where prefix counts should be predictable and small.
+BGP maximum-prefix limits are a critical defensive measure against route leaks and BGP table flooding. Configure limits on every neighbor session-use `warning-only` for iBGP peers and established ISP connections, and automatic tear-down with `restart` for customer peerings where prefix counts should be predictable and small.

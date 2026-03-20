@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, NGINX, SELinux, Troubleshooting, Linux
+Tags: RHEL, Nginx, SELinux, Troubleshooting, Linux
 
 Description: A focused guide to diagnosing and fixing SELinux network connection denials for Nginx on RHEL.
 
@@ -28,6 +28,7 @@ Check the audit log for denials:
 
 ```bash
 # Search for recent AVC denials related to nginx
+
 sudo ausearch -m avc -ts recent | grep nginx
 ```
 

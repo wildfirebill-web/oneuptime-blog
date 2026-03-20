@@ -16,6 +16,7 @@ Removing a group is straightforward. Set `state: absent`:
 
 ```yaml
 # remove-group-basic.yml - Remove a group
+
 - name: Remove a group
   hosts: all
   become: yes

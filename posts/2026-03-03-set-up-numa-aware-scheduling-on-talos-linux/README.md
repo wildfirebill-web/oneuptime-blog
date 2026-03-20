@@ -34,6 +34,7 @@ Before configuring anything, understand your node's NUMA layout:
 
 ```bash
 # Check NUMA node information
+
 talosctl read /sys/devices/system/node/online --nodes 10.0.0.1
 
 # Check which CPUs belong to which NUMA node

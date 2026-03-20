@@ -16,7 +16,7 @@ Description: Learn how to configure NAT Gateway and NAT Instances in AWS VPC to 
 
 ## Architecture Overview
 
-```
+```text
 Public Subnet:
   Internet Gateway → NAT Gateway (gets Elastic IP)
   
@@ -46,6 +46,7 @@ Private Subnet:
 
 ```bash
 # Allocate Elastic IP
+
 aws ec2 allocate-address --domain vpc
 
 # Create NAT Gateway

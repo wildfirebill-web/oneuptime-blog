@@ -24,6 +24,7 @@ The `//` separates the package location from the sub-directory path within it.
 
 ```hcl
 # Reference a specific module directory within a monorepo
+
 module "vpc" {
   source = "git::https://github.com/acme-corp/terraform-modules.git//modules/vpc?ref=v2.0.0"
 
@@ -93,7 +94,7 @@ module "app_sg" {
 
 Sub-directories work particularly well with monorepo module layouts:
 
-```
+```text
 terraform-modules/
 ├── aws/
 │   ├── vpc/         → source = "...//aws/vpc"

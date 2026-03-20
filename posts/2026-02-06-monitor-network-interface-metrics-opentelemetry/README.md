@@ -47,6 +47,7 @@ Enable the network scraper in the hostmetrics receiver:
 
 ```yaml
 # otel-collector-config.yaml
+
 receivers:
   hostmetrics:
     collection_interval: 30s

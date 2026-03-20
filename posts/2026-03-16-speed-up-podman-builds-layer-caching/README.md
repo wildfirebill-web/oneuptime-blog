@@ -20,6 +20,7 @@ Podman evaluates each instruction in your Containerfile sequentially. For each i
 
 ```bash
 # First build: all layers are built from scratch
+
 podman build -t myapp:v1 .
 # Output: Each step shows "STEP X: ..."
 

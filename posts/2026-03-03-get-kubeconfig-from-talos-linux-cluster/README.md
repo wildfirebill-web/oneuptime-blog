@@ -18,6 +18,7 @@ The simplest way to get your kubeconfig:
 
 ```bash
 # Make sure your talosctl config is set
+
 export TALOSCONFIG="$(pwd)/talosconfig"
 
 # Retrieve the kubeconfig

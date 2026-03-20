@@ -36,6 +36,7 @@ TypeScript and ESLint complement each other:
 
 ```bash
 # Install ESLint and TypeScript ESLint packages
+
 npm install --save-dev eslint @typescript-eslint/parser @typescript-eslint/eslint-plugin
 
 # Or with yarn

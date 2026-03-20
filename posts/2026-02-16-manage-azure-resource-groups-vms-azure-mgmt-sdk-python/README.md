@@ -18,6 +18,7 @@ The management SDKs are organized by resource type. You install only the ones yo
 
 ```bash
 # Install the management SDKs for resources and compute
+
 pip install azure-identity azure-mgmt-resource azure-mgmt-compute azure-mgmt-network
 ```
 

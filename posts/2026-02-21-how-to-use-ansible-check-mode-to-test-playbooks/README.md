@@ -16,6 +16,7 @@ The simplest way to use check mode is the `--check` flag:
 
 ```bash
 # Dry run - no changes will be made to target hosts
+
 ansible-playbook deploy.yml --check
 
 # Combine with diff to see what would change

@@ -52,6 +52,7 @@ The application writes logs to a shared volume. The adapter reads these logs, pa
 
 ```yaml
 # log-adapter-deployment.yaml
+
 # This deployment runs a legacy application with a log transformation adapter
 apiVersion: apps/v1
 kind: Deployment
@@ -1071,7 +1072,7 @@ spec:
               app: app-with-exporter
 ```
 
-## Resource Limits for Adapters
+Resource Limits for Adapters
 
 Adapters should use minimal resources. Here are guidelines for sizing adapter containers.
 

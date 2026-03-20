@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, AWS, IoT Core, IoT Rules, Data Pipeline, Infrastructure as Code
+Tags: OpenTofu, AWS, IoT Core, IoT Rules, Data Pipelines, Infrastructure as Code
 
 Description: Learn how to create AWS IoT Core rules to route device messages to DynamoDB, Lambda, S3, and SNS using OpenTofu.
 
@@ -59,6 +59,7 @@ resource "aws_iot_topic_rule" "process_alerts" {
 }
 
 # Grant IoT permission to invoke Lambda
+
 resource "aws_lambda_permission" "iot_invoke" {
   statement_id  = "AllowIoTInvoke"
   action        = "lambda:InvokeFunction"
@@ -160,4 +161,4 @@ tofu apply tfplan
 
 ## Summary
 
-AWS IoT Core rules engine provides SQL-based message routing to AWS services. OpenTofu manages rules, actions (DynamoDB, Lambda, S3, SNS), error actions, and IAM roles — creating a complete IoT data pipeline as code.
+AWS IoT Core rules engine provides SQL-based message routing to AWS services. OpenTofu manages rules, actions (DynamoDB, Lambda, S3, SNS), error actions, and IAM roles - creating a complete IoT data pipeline as code.

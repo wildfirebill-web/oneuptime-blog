@@ -143,6 +143,7 @@ resource "google_memcache_instance" "envs" {
 
 ```hcl
 # Allow application to access Memcached via service account
+
 resource "google_project_iam_member" "memcache_access" {
   project = var.project_id
   role    = "roles/memcache.viewer"

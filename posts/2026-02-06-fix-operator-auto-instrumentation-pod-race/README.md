@@ -29,6 +29,7 @@ Check if the instrumentation init container is present:
 
 ```bash
 # List init containers for your application pod
+
 kubectl get pod my-app-pod -o jsonpath='{.spec.initContainers[*].name}'
 
 # If auto-instrumentation is working, you should see something like:

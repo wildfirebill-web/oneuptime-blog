@@ -10,7 +10,7 @@ Description: Learn how to configure PAT (also called NAT Overload) to allow many
 
 PAT (Port Address Translation), also called NAT Overload, maps multiple private IP addresses to a single public IP by using different port numbers. This is the most common form of NAT used in homes and offices.
 
-```
+```text
 192.168.1.10:54321 → 203.0.113.1:1024  (toward 8.8.8.8:80)
 192.168.1.20:54322 → 203.0.113.1:1025  (toward 8.8.8.8:80)
 192.168.1.30:54323 → 203.0.113.1:1026  (toward 1.1.1.1:443)
@@ -48,6 +48,7 @@ For dynamic external IPs (DHCP):
 
 ```bash
 # Enable forwarding
+
 echo 1 > /proc/sys/net/ipv4/ip_forward
 
 # MASQUERADE: automatically uses current IP of eth1

@@ -2,16 +2,17 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: iftop, Linux, Networking, Traffic Monitoring, Bandwidth, IPv4
+Tags: Iftop, Linux, Networking, Traffic Monitoring, Bandwidth, IPv4
 
 Description: Use iftop to display real-time bandwidth usage per connection on a Linux interface, identifying which hosts and connections are consuming the most bandwidth.
 
-iftop shows a live, sorted list of network connections and their bandwidth usage — like top for network traffic. It immediately answers "which host is using all my bandwidth?" without complex analysis.
+iftop shows a live, sorted list of network connections and their bandwidth usage - like top for network traffic. It immediately answers "which host is using all my bandwidth?" without complex analysis.
 
 ## Install iftop
 
 ```bash
 # Debian/Ubuntu
+
 sudo apt install iftop -y
 
 # RHEL/CentOS
@@ -39,7 +40,7 @@ sudo iftop -i eth0 -nP
 
 ## Reading iftop Output
 
-```
+```javascript
                               12.5Kb          25.0Kb          37.5Kb
 ┌─────────────────────────────────────────────────────────────────────┐
  192.168.1.100:54321     =>     8.8.8.8:443          1.20Mb  2.30Mb  1.90Mb
@@ -61,7 +62,7 @@ TOTAL:          cum:   2.32MB   peak:   3.60Mb    rates:   1.71Mb  3.09Mb  2.53M
 
 While iftop is running:
 
-```
+```text
 Key    Action
 -----  -----------------------------------------
 n      Toggle DNS resolution
@@ -119,4 +120,4 @@ sudo iftop -i eth0 -n -t -s 60 > /tmp/iftop-report.txt
 cat /tmp/iftop-report.txt
 ```
 
-iftop provides the fastest answer to "what's consuming my bandwidth right now?" — a question that becomes urgent during network slowdowns and is frustratingly hard to answer with most other tools.
+iftop provides the fastest answer to "what's consuming my bandwidth right now?" - a question that becomes urgent during network slowdowns and is frustratingly hard to answer with most other tools.

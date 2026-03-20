@@ -56,6 +56,7 @@ Bridged networking connects VMs directly to the physical network. VMs appear as 
 
 ```bash
 # Create bridge
+
 sudo nmcli connection add type bridge ifname br0 con-name br0
 
 # Add the physical interface as a slave

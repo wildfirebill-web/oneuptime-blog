@@ -58,6 +58,7 @@ resource "azurerm_resource_group" "functions" {
 }
 
 # Storage account required by Azure Functions runtime
+
 resource "azurerm_storage_account" "functions" {
   name                     = "stfuncsprodeus"
   resource_group_name      = azurerm_resource_group.functions.name

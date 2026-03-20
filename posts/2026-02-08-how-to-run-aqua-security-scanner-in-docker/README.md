@@ -47,6 +47,7 @@ Pull an image through Docker and scan it immediately.
 
 ```bash
 # Scan a public image for vulnerabilities
+
 docker run --rm aquasec/trivy:latest image nginx:latest
 
 # Scan with only high and critical severity results

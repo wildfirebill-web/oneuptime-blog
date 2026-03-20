@@ -8,7 +8,7 @@ Description: Learn how to manage development environments with OpenTofu using ri
 
 ---
 
-Development environments are often the most neglected part of infrastructure management. They grow organically, accumulate resources, and become expensive. OpenTofu brings the same rigor to dev environments as production — consistent configuration, cost control, and easy teardown.
+Development environments are often the most neglected part of infrastructure management. They grow organically, accumulate resources, and become expensive. OpenTofu brings the same rigor to dev environments as production - consistent configuration, cost control, and easy teardown.
 
 ## Dev Environment Principles
 
@@ -21,6 +21,7 @@ Development environments are often the most neglected part of infrastructure man
 
 ```hcl
 # environments/dev/main.tf
+
 terraform {
   required_providers {
     aws = {
@@ -80,7 +81,7 @@ resource "aws_db_instance" "dev" {
   username          = "admin"
   password          = random_password.dev_db.result
 
-  # Dev-specific settings — no multi-AZ, shorter backup retention
+  # Dev-specific settings - no multi-AZ, shorter backup retention
   multi_az                = false
   backup_retention_period = 1
   skip_final_snapshot     = true  # OK to skip for dev environments
@@ -165,8 +166,8 @@ tofu workspace delete alice
 
 ## Best Practices
 
-- Use `t3.micro`/`t3.small` for dev databases and servers — avoid the temptation to match production sizing.
-- Enable auto-shutdown schedules — dev environments running 24/7 cost 3x more than those running only during business hours.
-- Use `skip_final_snapshot = true` and `backup_retention_period = 1` for dev databases — speed over durability.
+- Use `t3.micro`/`t3.small` for dev databases and servers - avoid the temptation to match production sizing.
+- Enable auto-shutdown schedules - dev environments running 24/7 cost 3x more than those running only during business hours.
+- Use `skip_final_snapshot = true` and `backup_retention_period = 1` for dev databases - speed over durability.
 - Set spending alerts at the developer level using AWS Budgets with workspace-based tags.
 - Create a Makefile or script wrapper for common operations (`make dev-up`, `make dev-down`) to lower the barrier to environment management.

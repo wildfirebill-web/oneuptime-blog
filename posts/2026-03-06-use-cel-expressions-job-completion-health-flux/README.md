@@ -24,6 +24,7 @@ A Kubernetes Job status has different fields than long-running workloads:
 
 ```yaml
 # Example completed Job status
+
 status:
   conditions:
     - type: Complete

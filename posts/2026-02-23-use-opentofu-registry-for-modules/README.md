@@ -28,6 +28,7 @@ Browse the registry or search by keyword:
 
 ```bash
 # The registry web interface at registry.opentofu.org lets you search
+
 # and filter by cloud provider, category, and popularity
 
 # You can also find modules on GitHub by searching for

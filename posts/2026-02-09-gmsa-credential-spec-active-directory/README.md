@@ -24,6 +24,7 @@ Install the CredentialSpec PowerShell module on a domain-joined Windows machine:
 
 ```powershell
 # Install from PowerShell Gallery
+
 Install-Module CredentialSpec -Force
 
 # Verify installation

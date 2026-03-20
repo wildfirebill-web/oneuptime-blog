@@ -29,6 +29,7 @@ AWS has made significant improvements with S3 Block Public Access settings. Your
 
 ```python
 # restrict-s3-public-access.sentinel
+
 # Prevents S3 buckets from having public access
 
 import "tfplan/v2" as tfplan

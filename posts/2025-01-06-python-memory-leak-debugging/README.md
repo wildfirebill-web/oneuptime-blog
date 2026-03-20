@@ -20,6 +20,7 @@ Python uses reference counting plus a cyclic garbage collector:
 
 ```python
 # Reference counting
+
 x = [1, 2, 3]  # refcount = 1
 y = x          # refcount = 2
 del x          # refcount = 1

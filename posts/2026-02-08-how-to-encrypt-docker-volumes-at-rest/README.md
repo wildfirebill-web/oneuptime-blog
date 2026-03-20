@@ -22,6 +22,7 @@ First, create a file that will serve as the encrypted block device:
 
 ```bash
 # Create a 1GB file to use as an encrypted disk image
+
 dd if=/dev/urandom of=/opt/docker-encrypted.img bs=1M count=1024
 ```
 

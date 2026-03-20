@@ -49,6 +49,7 @@ BACKUP_FILE="$BACKUP_DIR/backup-$DATE.tar.gz"
 CHECKSUM_FILE="$BACKUP_DIR/backup-$DATE.sha256"
 
 # Create backup
+
 tar -czf "$BACKUP_FILE" "$SOURCE_DIR"
 
 # Generate checksum

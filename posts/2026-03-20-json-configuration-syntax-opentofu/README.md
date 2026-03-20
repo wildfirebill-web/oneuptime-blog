@@ -14,6 +14,7 @@ OpenTofu supports two configuration file formats: HCL (with `.tf` extension) and
 
 ```hcl
 # HCL syntax (main.tf)
+
 variable "environment" {
   type    = string
   default = "dev"

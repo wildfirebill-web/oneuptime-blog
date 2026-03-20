@@ -20,6 +20,7 @@ Build arguments are visible in the image history and should never contain secret
 
 ```bash
 # BAD: Secret visible in image history
+
 podman build --build-arg API_KEY=sk-12345 -t myapp .
 podman history myapp
 # Shows: --build-arg API_KEY=sk-12345

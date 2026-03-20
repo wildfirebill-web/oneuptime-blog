@@ -30,6 +30,7 @@ Dex is an OIDC provider that federates with LDAP. Deploy Dex in your cluster:
 
 ```yaml
 # dex-config.yaml
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

@@ -24,6 +24,7 @@ The cost is that you lose two disks worth of capacity to parity. With four 1 TB 
 
 ```bash
 # Install mdadm
+
 sudo dnf install -y mdadm
 
 # Wipe all target disks

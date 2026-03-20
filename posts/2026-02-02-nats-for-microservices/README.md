@@ -58,6 +58,7 @@ Start a NATS server with JetStream enabled for message persistence.
 
 ```bash
 # Run NATS with JetStream enabled for persistence
+
 docker run -d \
   --name nats \
   -p 4222:4222 \

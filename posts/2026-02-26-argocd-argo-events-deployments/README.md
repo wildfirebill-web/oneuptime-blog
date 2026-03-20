@@ -40,6 +40,7 @@ Install Argo Events in its own namespace:
 
 ```bash
 # Create namespace
+
 kubectl create namespace argo-events
 
 # Install Argo Events

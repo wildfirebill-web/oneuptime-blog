@@ -32,6 +32,7 @@ First, confirm the server is actually running and accessible from the Azure port
 
 ```bash
 # Check the server status
+
 az postgres flexible-server show \
   --resource-group my-rg \
   --name my-postgres-server \

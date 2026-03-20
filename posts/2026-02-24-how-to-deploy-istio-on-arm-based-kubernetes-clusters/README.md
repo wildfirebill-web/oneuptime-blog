@@ -243,7 +243,7 @@ spec:
       - kube-system
 ```
 
-## Resource Tuning for ARM
+Resource Tuning for ARM
 
 ARM instances like Graviton often have more cores but lower per-core performance compared to equivalent x86 instances. Adjust Istio resource requests accordingly:
 

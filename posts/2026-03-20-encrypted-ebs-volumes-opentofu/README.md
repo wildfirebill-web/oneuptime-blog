@@ -19,6 +19,7 @@ EBS encryption uses AWS KMS to encrypt data at rest, data in transit between the
 
 ```hcl
 # Customer-managed KMS key for EBS encryption
+
 resource "aws_kms_key" "ebs" {
   description             = "KMS key for EBS volume encryption"
   deletion_window_in_days = 30

@@ -64,6 +64,7 @@ Before installation, ensure you have:
 
 ```bash
 # Verify Rancher is running (should return Rancher pods)
+
 kubectl get pods -n cattle-system
 
 # Verify Helm is installed

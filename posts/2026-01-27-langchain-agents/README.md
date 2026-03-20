@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: LangChain, AI, Agents, LLM, Python, OpenAI, Tools, Autonomous Systems
+Tags: LangChain, AI, Agent, LLM, Python, OpenAI, Tools, Autonomous Systems
 
 Description: Learn how to build AI agents with LangChain that can reason, use tools, and take actions to accomplish complex tasks autonomously.
 
@@ -27,6 +27,7 @@ Unlike chains (which follow predetermined steps), agents dynamically choose thei
 
 ```python
 # agents_intro.py
+
 # Basic agent structure - the model decides what actions to take
 from langchain.agents import create_react_agent, AgentExecutor
 from langchain_openai import ChatOpenAI

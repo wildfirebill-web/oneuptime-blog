@@ -32,6 +32,7 @@ First, create a cluster with both Fargate and Fargate Spot capacity providers:
 
 ```bash
 # Create an ECS cluster with both capacity providers
+
 aws ecs create-cluster \
   --cluster-name my-cluster \
   --capacity-providers FARGATE FARGATE_SPOT \

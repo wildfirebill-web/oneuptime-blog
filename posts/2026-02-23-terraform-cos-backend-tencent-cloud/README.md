@@ -25,6 +25,7 @@ First, create a bucket for your state files. You can do this through the Tencent
 
 ```bash
 # Using Tencent Cloud CLI (tccli)
+
 # Create a bucket in the ap-guangzhou region
 tccli cos CreateBucket \
   --Bucket "terraform-state-1234567890" \

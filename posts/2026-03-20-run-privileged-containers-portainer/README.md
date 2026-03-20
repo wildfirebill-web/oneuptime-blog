@@ -1,4 +1,4 @@
-# How to Run Privileged Containers in Portainer
+# How to Run Privileged Containers in Portainer - Run
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -21,6 +21,7 @@ When creating or editing a container in Portainer:
 
 ```bash
 # Equivalent docker run command for device mapping
+
 docker run -d \
   --device /dev/video0:/dev/video0 \
   --device /dev/snd \

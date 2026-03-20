@@ -167,6 +167,7 @@ For multi-environment setups, create per-environment secrets with the same keys 
 
 ```yaml
 # Staging secret
+
 apiVersion: v1
 kind: Secret
 metadata:

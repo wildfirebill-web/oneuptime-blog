@@ -50,6 +50,7 @@ Key settings to configure:
 
 ```bash
 # Database connection
+
 POSTGRES_DB=infisical
 POSTGRES_USER=infisical
 POSTGRES_PASSWORD=generate_a_strong_password_here

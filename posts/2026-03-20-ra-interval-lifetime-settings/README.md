@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Router Advertisement, radvd, Timing, Lifetime, Networking
+Tags: IPv6, Router Advertisement, Radvd, Timing, Lifetimes, Networking
 
 Description: Understand how Router Advertisement interval and lifetime settings affect client behavior, network convergence time, and battery life on wireless devices.
 
@@ -33,6 +33,7 @@ RFC 4861 defines critical constraints:
 
 ```text
 # /etc/radvd.conf - RFC default timing
+
 interface eth1 {
     AdvSendAdvert on;
     MinRtrAdvInterval 33;    # ~1/3 of MaxRtrAdvInterval

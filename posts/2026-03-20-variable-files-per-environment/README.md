@@ -12,7 +12,7 @@ Managing multiple environments (dev, staging, production) is a common challenge 
 
 ## Directory Structure
 
-```
+```text
 infrastructure/
 ├── main.tf             # Shared infrastructure code
 ├── variables.tf        # Variable declarations
@@ -33,6 +33,7 @@ infrastructure/
 
 ```hcl
 # environments/dev.tfvars
+
 environment    = "dev"
 aws_region     = "us-east-1"
 instance_type  = "t3.micro"

@@ -51,6 +51,7 @@ flowchart TD
 
 ```bash
 # Install Operator SDK
+
 brew install operator-sdk
 
 # Or download directly

@@ -266,6 +266,7 @@ Simulate backend degradation and watch the limits adjust:
 
 ```bash
 # In one terminal, generate steady traffic
+
 kubectl exec deploy/sleep -- sh -c 'while true; do curl -s -o /dev/null -w "%{http_code}\n" http://backend-service:8080/api; done'
 
 # In another terminal, add artificial latency to the backend

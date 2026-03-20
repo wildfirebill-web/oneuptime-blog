@@ -84,6 +84,7 @@ After updating the ConfigMap, restart the ArgoCD components to pick up the chang
 
 ```bash
 # Restart the application controller and server
+
 kubectl rollout restart deployment argocd-server -n argocd
 kubectl rollout restart statefulset argocd-application-controller -n argocd
 

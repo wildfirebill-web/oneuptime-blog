@@ -8,12 +8,13 @@ Description: Learn how to test and validate dual-stack IPv4 and IPv6 connectivit
 
 ## Overview
 
-Testing dual-stack connectivity means verifying that both IPv4 and IPv6 paths work independently and that address selection behaves correctly. A common mistake is assuming that because IPv4 works, the network is correctly configured — IPv6 could be silently broken without detection.
+Testing dual-stack connectivity means verifying that both IPv4 and IPv6 paths work independently and that address selection behaves correctly. A common mistake is assuming that because IPv4 works, the network is correctly configured - IPv6 could be silently broken without detection.
 
 ## Basic Connectivity Tests
 
 ```bash
 # IPv4 ping
+
 ping -4 -c 4 8.8.8.8
 
 # IPv6 ping
@@ -135,7 +136,7 @@ openssl s_client -connect [2001:db8::10]:443 -servername www.example.com
 
 ```bash
 #!/bin/bash
-# dual-stack-check.sh — basic dual-stack health verification
+# dual-stack-check.sh - basic dual-stack health verification
 
 TARGETS_V4=("8.8.8.8" "1.1.1.1")
 TARGETS_V6=("2001:4860:4860::8888" "2606:4700:4700::1111")
@@ -191,4 +192,4 @@ done
 
 ## Summary
 
-Test dual-stack by independently verifying IPv4 and IPv6 with `ping -4/-6`, `traceroute -4/-6`, and `curl -4/-6`. Confirm DNS returns both A and AAAA records. Verify the IPv6 default route exists (`ip -6 route show | grep default`) and services listen on `[::]:port`. Use the health check script to automate verification. Always test PMTUD by pinging with large packet sizes (`ping -6 -s 1400`) — blocked Packet Too Big ICMPv6 causes silent large-transfer failures.
+Test dual-stack by independently verifying IPv4 and IPv6 with `ping -4/-6`, `traceroute -4/-6`, and `curl -4/-6`. Confirm DNS returns both A and AAAA records. Verify the IPv6 default route exists (`ip -6 route show | grep default`) and services listen on `[::]:port`. Use the health check script to automate verification. Always test PMTUD by pinging with large packet sizes (`ping -6 -s 1400`) - blocked Packet Too Big ICMPv6 causes silent large-transfer failures.

@@ -65,6 +65,7 @@ Start with a simple locustfile that defines your load test behavior:
 
 ```python
 # locustfile.py
+
 from locust import HttpUser, task, between
 
 class ApiUser(HttpUser):

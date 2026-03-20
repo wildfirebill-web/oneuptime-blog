@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: portainer, ssl, tls, certificate-renewal, zero-downtime, maintenance
+Tags: Portainer, SSL, TLS, Certificate-renewal, Zero-Downtime, Maintenance
 
 Description: A guide to renewing SSL/TLS certificates for Portainer with minimal or zero downtime using proper renewal procedures.
 
 ## Overview
 
-Certificate expiry causes immediate service disruption — browsers refuse connections and automation breaks. Portainer does not perform hot-reloading of certificates, so a container restart is required after renewal. However, with proper preparation and scripting, renewal can be completed in seconds with minimal user impact. This guide covers renewal strategies for all Portainer deployment types.
+Certificate expiry causes immediate service disruption - browsers refuse connections and automation breaks. Portainer does not perform hot-reloading of certificates, so a container restart is required after renewal. However, with proper preparation and scripting, renewal can be completed in seconds with minimal user impact. This guide covers renewal strategies for all Portainer deployment types.
 
 ## Prerequisites
 
@@ -27,6 +27,7 @@ Pre-stage the new certificate before restarting:
 ```bash
 #!/bin/bash
 # renew-portainer-cert.sh
+
 set -e
 
 DOMAIN="portainer.example.com"

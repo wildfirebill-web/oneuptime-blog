@@ -30,6 +30,7 @@ Before isolating CPUs, understand your system's topology:
 
 ```bash
 # CPU count and topology
+
 lscpu | grep -E "CPU\(s\)|Thread|Core|Socket|NUMA"
 
 # Detailed CPU topology

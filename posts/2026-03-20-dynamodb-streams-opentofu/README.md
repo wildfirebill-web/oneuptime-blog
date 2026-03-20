@@ -157,6 +157,7 @@ tofu plan
 tofu apply
 
 # Check stream status
+
 aws dynamodb describe-table \
   --table-name my-project-events \
   --query 'Table.{StreamEnabled: StreamSpecification.StreamEnabled, StreamArn: LatestStreamArn}'

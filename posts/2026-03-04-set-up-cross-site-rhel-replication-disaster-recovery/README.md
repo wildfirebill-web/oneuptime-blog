@@ -17,6 +17,7 @@ For most use cases, scheduled rsync over SSH provides reliable cross-site replic
 ```bash
 #!/bin/bash
 # /usr/local/bin/cross-site-replicate.sh
+
 # Replicate data to a remote disaster recovery site
 
 PRIMARY_DIRS="/etc /home /var/www /var/lib/pgsql"

@@ -29,6 +29,7 @@ Kubewarden ships with a default PolicyServer configured via the `kubewarden-defa
 
 ```bash
 # View the default PolicyServer
+
 kubectl get policyserver default -o yaml
 
 # Check the default PolicyServer's status

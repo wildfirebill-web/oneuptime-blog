@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: DNS, DoH, HTTPS, Privacy, Security, Linux, systemd-resolved
+Tags: DNS, DoH, HTTPS, Privacy, Security, Linux, Systemd-resolved
 
 Description: Configure DNS over HTTPS on Linux using systemd-resolved, dnscrypt-proxy, or cloudflared to encrypt DNS queries and prevent eavesdropping.
 
@@ -14,6 +14,7 @@ DNS over HTTPS (DoH) sends DNS queries inside HTTPS traffic on port 443, prevent
 
 ```bash
 # systemd-resolved supports DNS over TLS (similar privacy, port 853):
+
 # /etc/systemd/resolved.conf:
 cat > /etc/systemd/resolved.conf << 'EOF'
 [Resolve]
@@ -137,7 +138,7 @@ for i in $(seq 1 10); do dig google.com > /dev/null; sleep 1; done
 
 ## Public DoH Servers
 
-```
+```yaml
 Provider      | URL                              | Notes
 --------------|----------------------------------|------------------
 Cloudflare    | https://1.1.1.1/dns-query        | No logging option: 1.1.1.2

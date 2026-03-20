@@ -12,7 +12,7 @@ The `cattle-cluster-agent` and `cattle-node-agent` are responsible for maintaini
 
 ## Understanding the Agent Architecture
 
-```
+```text
 Rancher Server (management cluster)
         ↑  WebSocket connection (wss://)
 cattle-cluster-agent (downstream cluster)
@@ -26,6 +26,7 @@ The `cattle-cluster-agent` establishes an outbound WebSocket tunnel to Rancher. 
 
 ```bash
 # Check the cluster agent
+
 kubectl get pods -n cattle-system
 
 # Expected: cattle-cluster-agent-<hash>   1/1   Running
@@ -137,7 +138,7 @@ kubectl set env deployment/cattle-cluster-agent -n cattle-system \
 If all else fails, force the agent to re-register with Rancher:
 
 ```bash
-# Delete the agent deployment — Rancher will recreate it automatically
+# Delete the agent deployment - Rancher will recreate it automatically
 kubectl delete deployment -n cattle-system cattle-cluster-agent
 
 # Watch the agent come back
@@ -161,4 +162,4 @@ Ensure the downstream cluster's egress rules allow:
 
 ## Conclusion
 
-Rancher agent connection issues almost always trace back to network reachability, TLS certificate trust, incorrect server URLs, or proxy misconfiguration. Work through each layer methodically — pod status, network connectivity, certificate validity, and proxy settings — and the agent will re-establish its connection to the Rancher management server.
+Rancher agent connection issues almost always trace back to network reachability, TLS certificate trust, incorrect server URLs, or proxy misconfiguration. Work through each layer methodically - pod status, network connectivity, certificate validity, and proxy settings - and the agent will re-establish its connection to the Rancher management server.

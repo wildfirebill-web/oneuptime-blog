@@ -35,6 +35,7 @@ mkdir -p /opt/portainer-certs
 cd /opt/portainer-certs
 
 # Generate CA key and certificate
+
 openssl genrsa -out ca.key 4096
 openssl req -new -x509 -days 3650 \
   -key ca.key \

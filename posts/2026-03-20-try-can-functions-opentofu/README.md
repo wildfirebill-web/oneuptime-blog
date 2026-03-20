@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, try, can, Error Handling, HCL, Functions, Infrastructure as Code
+Tags: OpenTofu, Try, Can, Error Handling, HCL, Functions, Infrastructure as Code
 
 Description: Learn how to use try() and can() in OpenTofu to safely access optional attributes, handle missing keys, and provide fallback values without causing configuration errors.
 
@@ -14,6 +14,7 @@ Description: Learn how to use try() and can() in OpenTofu to safely access optio
 
 ```hcl
 # try(expression1, expression2, ...) returns first non-error result
+
 # If all expressions error, try() itself errors
 
 variable "config" {
@@ -24,7 +25,7 @@ variable "config" {
 }
 
 locals {
-  # Safe access to optional attribute — falls back to default
+  # Safe access to optional attribute - falls back to default
   retries = try(var.config.retries, 3)
   # var.config.retries would error (key not found), so returns 3
 
@@ -51,7 +52,7 @@ variable "instance_config" {
 locals {
   # Check if optional field exists
   is_spot = can(var.instance_config.spot_price)
-  # false — spot_price not in the map
+  # false - spot_price not in the map
 
   # Check if a conversion would succeed
   is_valid_number = can(tonumber("42"))   # true
@@ -100,7 +101,7 @@ module "bastion" {
 }
 
 locals {
-  # Safely get bastion IP — null if bastion not created
+  # Safely get bastion IP - null if bastion not created
   bastion_ip = try(module.bastion[0].public_ip, null)
 }
 
@@ -121,12 +122,12 @@ resource "aws_security_group_rule" "bastion_ssh" {
 
 ```hcl
 variable "tags" {
-  type    = any  # Flexible type — may be map or null
+  type    = any  # Flexible type - may be map or null
   default = null
 }
 
 locals {
-  # Safe tag access — handle both map and null cases
+  # Safe tag access - handle both map and null cases
   environment_tag = try(var.tags.Environment, "unknown")
   all_tags = try(var.tags, {})  # Default to empty map if null
 }
@@ -160,7 +161,7 @@ locals {
   value1 = coalesce(null, "", "fallback")  # "fallback" (skips null and "")
   value2 = coalesce("first", "second")     # "first"
 
-  # try() catches errors — coalesce() does not
+  # try() catches errors - coalesce() does not
   safe_access = try(var.config.nested.deep.value, "default")  # Works
   # coalesce(var.config.nested.deep.value, "default") would ERROR if nested/deep don't exist
 }
@@ -186,4 +187,4 @@ locals {
 
 ## Conclusion
 
-`try()` and `can()` provide error-safe expression evaluation for optional attributes, nullable values, and type conversions. Use `try(expr, default)` as a two-argument pattern for safe attribute access with a fallback. Use `can(expr)` in validation blocks to check if a conversion or attribute access would succeed. Avoid overusing them — if a variable should always have a value, require it explicitly. Use `try()` and `can()` specifically for genuinely optional configuration that has reasonable defaults.
+`try()` and `can()` provide error-safe expression evaluation for optional attributes, nullable values, and type conversions. Use `try(expr, default)` as a two-argument pattern for safe attribute access with a fallback. Use `can(expr)` in validation blocks to check if a conversion or attribute access would succeed. Avoid overusing them - if a variable should always have a value, require it explicitly. Use `try()` and `can()` specifically for genuinely optional configuration that has reasonable defaults.

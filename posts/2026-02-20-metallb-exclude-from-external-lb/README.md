@@ -29,6 +29,7 @@ Kubernetes automatically adds this label to control-plane nodes starting with Ku
 
 ```bash
 # Check which nodes have the exclude label
+
 kubectl get nodes -L node.kubernetes.io/exclude-from-external-load-balancers
 ```
 

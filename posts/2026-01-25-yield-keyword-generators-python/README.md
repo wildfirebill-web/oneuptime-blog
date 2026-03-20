@@ -23,6 +23,7 @@ def count_up_to(max):
         count += 1
 
 # Create a generator object
+
 counter = count_up_to(5)
 
 # Get values one at a time

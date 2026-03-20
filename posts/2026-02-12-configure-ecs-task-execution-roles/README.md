@@ -30,6 +30,7 @@ AWS provides a managed policy called `AmazonECSTaskExecutionRolePolicy` that cov
 
 ```hcl
 # Terraform - Create the execution role
+
 resource "aws_iam_role" "ecs_execution" {
   name = "ecsTaskExecutionRole"
 

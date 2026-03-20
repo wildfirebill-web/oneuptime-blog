@@ -76,6 +76,7 @@ Code reuse is automatic. There is one copy of every `.tf` file. All workspaces e
 
 ```hcl
 # Single main.tf used by all workspaces
+
 resource "aws_instance" "web" {
   count         = var.instance_count
   instance_type = var.instance_type

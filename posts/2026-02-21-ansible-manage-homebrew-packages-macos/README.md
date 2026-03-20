@@ -26,6 +26,7 @@ If Homebrew is not yet installed on the target machine, you can install it.
 
 ```yaml
 # Install Homebrew on a fresh macOS system
+
 - name: Check if Homebrew is installed
   ansible.builtin.stat:
     path: /opt/homebrew/bin/brew

@@ -37,6 +37,7 @@ variable "environments" {
 }
 
 # Create one complete application stack per environment
+
 module "app_stack" {
   for_each = var.environments
   source   = "./modules/app-stack"
@@ -147,4 +148,4 @@ module "ecs_service" {
 
 ## Conclusion
 
-Module `for_each` is the most powerful DRY pattern in OpenTofu — it lets you define infrastructure once as a module and instantiate it as many times as needed from a structured data map. Combined with output collection using `for` expressions, this pattern scales elegantly from two environments to dozens without any code changes to the module itself.
+Module `for_each` is the most powerful DRY pattern in OpenTofu - it lets you define infrastructure once as a module and instantiate it as many times as needed from a structured data map. Combined with output collection using `for` expressions, this pattern scales elegantly from two environments to dozens without any code changes to the module itself.

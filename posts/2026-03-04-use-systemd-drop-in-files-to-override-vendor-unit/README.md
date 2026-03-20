@@ -22,6 +22,7 @@ Create a drop-in directory and override file:
 
 ```bash
 # Create the drop-in directory
+
 sudo mkdir -p /etc/systemd/system/httpd.service.d/
 
 # Create an override file

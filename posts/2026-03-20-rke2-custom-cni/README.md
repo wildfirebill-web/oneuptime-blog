@@ -16,6 +16,7 @@ RKE2 ships with Canal as the default CNI plugin, but you can replace it with any
 
 ```yaml
 # /etc/rancher/rke2/config.yaml (on server nodes)
+
 cni: none          # Disable built-in CNI plugins
 disable:
   - rke2-canal     # Disable Canal chart
@@ -150,6 +151,6 @@ kubectl describe node <node-name> | grep -A 10 Conditions
 
 ## Best Practices
 
-- Set `cni: none` before installing RKE2 — changing CNI plugins after installation requires a cluster reinstall or careful manual migration.
-- Match the `cluster-cidr` in RKE2 config exactly with the pod CIDR configured in the CNI — a mismatch causes pod networking failures.
+- Set `cni: none` before installing RKE2 - changing CNI plugins after installation requires a cluster reinstall or careful manual migration.
+- Match the `cluster-cidr` in RKE2 config exactly with the pod CIDR configured in the CNI - a mismatch causes pod networking failures.
 - For Cilium with `kubeProxyReplacement: strict`, ensure kube-proxy is also disabled in RKE2 to avoid conflicts.

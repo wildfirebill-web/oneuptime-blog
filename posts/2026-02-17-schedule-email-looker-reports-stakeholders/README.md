@@ -91,6 +91,7 @@ def create_dashboard_schedule(dashboard_id, recipients, cron_tab):
     return created
 
 # Schedule a dashboard to be sent every Monday at 8 AM ET
+
 create_dashboard_schedule(
     dashboard_id=42,
     recipients=["exec-team@company.com", "vp-sales@company.com"],

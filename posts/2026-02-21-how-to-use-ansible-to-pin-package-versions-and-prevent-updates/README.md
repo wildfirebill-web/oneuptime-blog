@@ -22,6 +22,7 @@ The `dpkg_selections` module controls how dpkg treats packages. Setting a packag
 
 ```yaml
 # Hold a package to prevent upgrades
+
 - name: Hold PostgreSQL at current version
   ansible.builtin.dpkg_selections:
     name: postgresql-15

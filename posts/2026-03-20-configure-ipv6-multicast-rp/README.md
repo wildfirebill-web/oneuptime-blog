@@ -12,10 +12,11 @@ The Rendezvous Point (RP) is a router in a PIM-SM network where multicast source
 
 ## Static RP Configuration
 
-Static RP is the simplest approach — all routers are manually configured with the RP address:
+Static RP is the simplest approach - all routers are manually configured with the RP address:
 
 ```bash
 # On all PIM routers in the domain (FRR vtysh)
+
 vtysh
 configure terminal
 
@@ -61,12 +62,12 @@ write memory
 IPv6 has a unique feature called Embedded RP, where the RP address is embedded in the multicast group address itself. This eliminates the need for BSR or static RP configuration.
 
 An embedded RP group address looks like:
-```
+```text
 ff7<scope>:0<RP prefix length><RP prefix len>:<RP address low 32 bits>:<group ID>
 ```
 
 Example:
-```
+```text
 RP address: 2001:db8:1::1
 Embedded RP group: ff7e:0240:2001:db8:1::1:beef
 ```

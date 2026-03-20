@@ -12,7 +12,7 @@ While essential ICMPv6 must never be blocked, some ICMPv6 messages can be weapon
 
 ## Dangerous ICMPv6 Attack Vectors
 
-```
+```text
 ICMPv6-based attacks:
 
 1. Rogue Router Advertisement (Type 134) attack:
@@ -44,6 +44,7 @@ ICMPv6-based attacks:
 
 ```bash
 # Only allow RA from specific trusted routers (by source address)
+
 # Block all other RAs
 
 # Allow RA from your legitimate router's link-local address
@@ -114,7 +115,7 @@ sudo ip6tables -A INPUT -p icmpv6 --icmpv6-type redirect -j DROP
 
 ## SEND (Secure Neighbor Discovery)
 
-```
+```text
 SEND (RFC 3971) provides cryptographic authentication for NDP:
 
 - Uses RSA keys to sign NS/NA/RS/RA messages

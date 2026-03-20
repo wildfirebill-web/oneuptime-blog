@@ -57,6 +57,7 @@ These alerts monitor the health of your Talos Linux nodes. Since you cannot SSH 
 
 ```yaml
 # talos-node-alerts.yaml
+
 apiVersion: monitoring.coreos.com/v1
 kind: PrometheusRule
 metadata:

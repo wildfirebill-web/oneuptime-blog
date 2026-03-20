@@ -24,6 +24,7 @@ If you have not set up the management cluster yet, start with that:
 
 ```bash
 # Create a management cluster with kind
+
 kind create cluster --name capi-mgmt
 
 # Initialize CAPI with AWS and Talos providers

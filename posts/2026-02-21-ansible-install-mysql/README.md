@@ -29,6 +29,7 @@ roles/mysql_install/
 
 ```yaml
 # roles/mysql_install/defaults/main.yml
+
 # Default settings for MySQL installation
 ---
 mysql_version: "8.0"

@@ -25,6 +25,7 @@ graph LR
 
 ```bash
 # GCE Instance: projects/{project}/zones/{zone}/instances/{name}
+
 tofu import google_compute_instance.web \
   "projects/my-project/zones/us-central1-a/instances/web-server-1"
 
@@ -140,8 +141,8 @@ tofu plan -generate-config-out=generated_instances.tf
 
 ## Best Practices
 
-- Use `gcloud` commands to discover resource IDs before writing import blocks — GCP resource IDs follow patterns that are easy to look up.
+- Use `gcloud` commands to discover resource IDs before writing import blocks - GCP resource IDs follow patterns that are easy to look up.
 - Import networking resources first (VPCs, subnets, firewall rules), then compute resources that depend on them.
-- After import, run `tofu plan` and review carefully — GCP resources often have many computed fields in the generated config that will cause drift.
+- After import, run `tofu plan` and review carefully - GCP resources often have many computed fields in the generated config that will cause drift.
 - Use `ignore_changes` for fields managed outside OpenTofu (like `metadata.annotations` in Kubernetes resources managed by GKE).
-- Activate Google Cloud APIs before importing resources that depend on them — `google_project_service` resources are often needed.
+- Activate Google Cloud APIs before importing resources that depend on them - `google_project_service` resources are often needed.

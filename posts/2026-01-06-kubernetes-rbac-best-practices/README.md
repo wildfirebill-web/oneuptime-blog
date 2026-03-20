@@ -55,6 +55,7 @@ These commands help you audit existing permissions and understand who can do wha
 
 ```bash
 # List all permissions for the current user
+
 kubectl auth can-i --list
 
 # Check if a specific user can create pods in production

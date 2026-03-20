@@ -61,6 +61,7 @@ def detect_text(bucket, key):
     return full_text, lines
 
 # Extract text from a scanned document
+
 text, lines = detect_text('my-documents', 'scans/contract-page1.png')
 print(text)
 ```

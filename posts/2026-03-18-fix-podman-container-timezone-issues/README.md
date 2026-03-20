@@ -165,6 +165,7 @@ podman run -e TZ=America/New_York \
            mysql:8.0
 
 # Then set the timezone in MySQL
+
 podman exec -it my-mysql mysql -u root -p -e "SET GLOBAL time_zone = 'America/New_York';"
 ```
 

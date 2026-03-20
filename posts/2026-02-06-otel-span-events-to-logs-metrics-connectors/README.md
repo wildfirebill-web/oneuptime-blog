@@ -14,6 +14,7 @@ A span event is a structured annotation with a timestamp, a name, and attributes
 
 ```python
 # Python: adding span events
+
 from opentelemetry import trace
 
 tracer = trace.get_tracer("order-service")

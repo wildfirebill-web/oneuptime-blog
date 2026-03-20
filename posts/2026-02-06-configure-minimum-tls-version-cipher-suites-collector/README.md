@@ -282,6 +282,7 @@ This command tests what TLS version and cipher suite the Collector negotiates.
 
 ```bash
 # Test the TLS handshake against the Collector's gRPC endpoint
+
 # The -tls1_2 flag forces TLS 1.2 to verify it is accepted
 openssl s_client -connect localhost:4317 -tls1_2 -brief
 ```

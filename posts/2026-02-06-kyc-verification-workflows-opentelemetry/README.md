@@ -24,6 +24,7 @@ A typical KYC workflow consists of:
 
 ```python
 # kyc_observability.py
+
 from opentelemetry import trace, metrics
 
 tracer = trace.get_tracer("kyc.verification")

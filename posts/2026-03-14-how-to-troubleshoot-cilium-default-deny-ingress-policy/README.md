@@ -24,6 +24,7 @@ Common issues include DNS resolution failing (because DNS traffic is also blocke
 
 ```bash
 # Use Hubble to see what is being dropped
+
 hubble observe --verdict DROPPED --last 50
 
 # Filter for specific namespaces

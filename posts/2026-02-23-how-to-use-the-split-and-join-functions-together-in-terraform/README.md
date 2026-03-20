@@ -16,6 +16,7 @@ Before combining them, let's make sure the basics are clear:
 
 ```hcl
 # split(separator, string) -> list
+
 split(",", "a,b,c,d")
 # Result: ["a", "b", "c", "d"]
 

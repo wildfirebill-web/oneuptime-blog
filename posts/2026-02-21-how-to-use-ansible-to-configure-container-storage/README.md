@@ -33,6 +33,7 @@ Named volumes are the recommended way to persist data:
 
 ```yaml
 # roles/container_storage/tasks/volumes.yml
+
 # Create and manage Docker named volumes
 - name: Create application data volumes
   community.docker.docker_volume:

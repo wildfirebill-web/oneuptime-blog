@@ -6,7 +6,7 @@ Tags: RKE2, Kubernetes, Secret Encryption, Security, Encryption at Rest, Rancher
 
 Description: Learn how to enable and manage secret encryption at rest in RKE2 to protect sensitive cluster data stored in etcd.
 
-Kubernetes secrets are base64-encoded by default, which provides no actual encryption — anyone with etcd access can decode them. Enabling encryption at rest ensures that secrets stored in etcd are encrypted with a strong cipher. RKE2 provides a built-in secret encryption mechanism that can be enabled and rotated. This guide covers the complete lifecycle of secret encryption in RKE2.
+Kubernetes secrets are base64-encoded by default, which provides no actual encryption - anyone with etcd access can decode them. Enabling encryption at rest ensures that secrets stored in etcd are encrypted with a strong cipher. RKE2 provides a built-in secret encryption mechanism that can be enabled and rotated. This guide covers the complete lifecycle of secret encryption in RKE2.
 
 ## Prerequisites
 
@@ -29,6 +29,7 @@ RKE2 provides a built-in command to manage secret encryption:
 
 ```bash
 # Enable secret encryption on the cluster
+
 sudo rke2 secrets-encrypt enable
 
 # This command:
@@ -229,4 +230,4 @@ kubectl delete secret test-encryption
 
 ## Conclusion
 
-Enabling secret encryption at rest in RKE2 is an essential security control that protects sensitive credentials and configuration data from unauthorized access to the etcd datastore. The built-in `rke2 secrets-encrypt` command simplifies the process of enabling, verifying, and rotating encryption keys. For compliance frameworks like HIPAA, PCI DSS, and government security standards, encryption at rest is a mandatory requirement. Once enabled, ensure you have a secure backup of your encryption keys — losing them means losing access to all encrypted secrets in your cluster.
+Enabling secret encryption at rest in RKE2 is an essential security control that protects sensitive credentials and configuration data from unauthorized access to the etcd datastore. The built-in `rke2 secrets-encrypt` command simplifies the process of enabling, verifying, and rotating encryption keys. For compliance frameworks like HIPAA, PCI DSS, and government security standards, encryption at rest is a mandatory requirement. Once enabled, ensure you have a secure backup of your encryption keys - losing them means losing access to all encrypted secrets in your cluster.

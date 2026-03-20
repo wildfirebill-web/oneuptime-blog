@@ -50,6 +50,7 @@ The `blockSize` determines how many IPs are reserved per node. Too large wastes 
 
 ```yaml
 # For clusters with 50-500 nodes, /24 (256 IPs) per node is typical
+
 spec:
   blockSize: 24   # /24 = 256 IPs per node
 

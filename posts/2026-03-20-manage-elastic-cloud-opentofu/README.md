@@ -35,6 +35,7 @@ provider "ec" {
 
 ```hcl
 # Get the latest deployment template for AWS
+
 data "ec_deployment_template" "aws" {
   id     = "aws-storage-optimized"
   region = "us-east-1"
@@ -184,4 +185,4 @@ resource "elasticstack_kibana_space" "engineering" {
 
 ## Conclusion
 
-Managing Elastic Cloud with OpenTofu enables reproducible search infrastructure with consistent index templates, lifecycle policies, and cluster configurations. The two-provider pattern (ec for cluster creation, elasticstack for cluster configuration) mirrors how you'd provision a server with OpenTofu and configure it with Ansible — each tool in its domain.
+Managing Elastic Cloud with OpenTofu enables reproducible search infrastructure with consistent index templates, lifecycle policies, and cluster configurations. The two-provider pattern (ec for cluster creation, elasticstack for cluster configuration) mirrors how you'd provision a server with OpenTofu and configure it with Ansible - each tool in its domain.

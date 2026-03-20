@@ -35,6 +35,7 @@ Here's a minimal configuration to send markers to Honeycomb. This example shows 
 
 ```yaml
 # Receivers for collecting marker data
+
 receivers:
   # HTTP receiver for webhook-style marker creation
   otlp:

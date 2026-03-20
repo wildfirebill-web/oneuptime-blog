@@ -20,6 +20,7 @@ AWS Fargate for EKS runs each Kubernetes pod on isolated serverless compute, eli
 
 ```hcl
 # IAM role that Fargate uses to pull container images and write logs
+
 resource "aws_iam_role" "fargate" {
   name = "${var.cluster_name}-fargate-pod-execution-role"
 

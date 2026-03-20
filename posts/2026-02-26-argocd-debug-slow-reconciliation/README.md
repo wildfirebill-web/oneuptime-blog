@@ -26,6 +26,7 @@ Start with metrics to identify where time is being spent:
 
 ```bash
 # Port-forward the controller metrics endpoint
+
 kubectl port-forward svc/argocd-application-controller-metrics -n argocd 8082:8082 &
 
 # Check reconciliation duration (in seconds)

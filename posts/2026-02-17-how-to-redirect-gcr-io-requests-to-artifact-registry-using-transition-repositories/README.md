@@ -33,6 +33,7 @@ Before starting:
 
 ```bash
 # Enable the Artifact Registry API
+
 gcloud services enable artifactregistry.googleapis.com --project=my-project-id
 ```
 

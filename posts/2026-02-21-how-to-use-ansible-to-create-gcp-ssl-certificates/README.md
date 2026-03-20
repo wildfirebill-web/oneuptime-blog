@@ -26,6 +26,7 @@ Before diving into playbooks, let us clarify the difference.
 
 ```bash
 # Install the GCP collection
+
 ansible-galaxy collection install google.cloud
 ```
 

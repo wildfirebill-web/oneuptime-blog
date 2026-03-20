@@ -52,6 +52,7 @@ Create environment files in your project root:
 
 ```bash
 # .env - default values, loaded in all environments
+
 REACT_APP_NAME=My Application
 
 # .env.local - local overrides, not committed to git

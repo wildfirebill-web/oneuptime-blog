@@ -22,6 +22,7 @@ This guide covers how to use `flux list artifacts` effectively, including filter
 
 ```bash
 # Verify Flux CLI installation
+
 flux version --client
 ```
 

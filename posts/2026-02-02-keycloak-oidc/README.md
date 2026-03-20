@@ -178,6 +178,7 @@ The following bash commands demonstrate creating clients programmatically, which
 
 ```bash
 # First, authenticate with the Keycloak admin CLI
+
 /opt/keycloak/bin/kcadm.sh config credentials \
   --server https://keycloak.example.com \
   --realm master \

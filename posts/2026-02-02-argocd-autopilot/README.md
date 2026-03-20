@@ -66,6 +66,7 @@ Download the binary directly from GitHub releases and move it to your PATH.
 
 ```bash
 # Download the latest release for Linux
+
 VERSION=$(curl --silent "https://api.github.com/repos/argoproj-labs/argocd-autopilot/releases/latest" | grep '"tag_name"' | sed -E 's/.*"([^"]+)".*/\1/')
 curl -L --output - https://github.com/argoproj-labs/argocd-autopilot/releases/download/$VERSION/argocd-autopilot-linux-amd64.tar.gz | tar zx
 sudo mv argocd-autopilot /usr/local/bin/
@@ -601,7 +602,7 @@ metadata:
     managed-by: argocd
 ```
 
-### Resource Quotas
+Resource Quotas
 
 Apply resource quotas to namespaces for resource governance.
 

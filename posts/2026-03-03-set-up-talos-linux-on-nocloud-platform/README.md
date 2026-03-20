@@ -42,6 +42,7 @@ Make sure you have:
 
 ```bash
 # Install talosctl
+
 curl -sL https://talos.dev/install | sh
 
 # Verify

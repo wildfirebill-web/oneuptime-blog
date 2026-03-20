@@ -37,6 +37,7 @@ Here is a configuration that monitors multiple endpoints:
 
 ```yaml
 # config.yaml - Certificate expiration monitoring
+
 receivers:
   httpcheck:
     targets:

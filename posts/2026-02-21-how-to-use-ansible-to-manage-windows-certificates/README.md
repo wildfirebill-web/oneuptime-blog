@@ -34,6 +34,7 @@ The most common operation is importing a PFX (PKCS#12) file that contains a cert
 
 ```yaml
 # playbook-import-pfx.yml
+
 # Imports an SSL certificate from a PFX file into the Windows certificate store
 - name: Import SSL certificate
   hosts: windows

@@ -55,6 +55,7 @@ The CNI plugin installs its configuration as a file in the CNI config directory.
 
 ```bash
 # Using a debug container
+
 kubectl debug node/worker-1 -it --image=busybox
 
 # Inside the debug container

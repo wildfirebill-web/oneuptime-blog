@@ -31,6 +31,7 @@ ArgoCD uses Redis for:
 
 ```bash
 # Get Redis pod status
+
 kubectl get pods -n argocd -l app.kubernetes.io/name=argocd-redis -o wide
 
 # Check for restarts

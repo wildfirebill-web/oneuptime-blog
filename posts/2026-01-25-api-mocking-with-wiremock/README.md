@@ -18,6 +18,7 @@ Download and run WireMock as a standalone server:
 
 ```bash
 # Download WireMock
+
 wget https://repo1.maven.org/maven2/org/wiremock/wiremock-standalone/3.3.1/wiremock-standalone-3.3.1.jar
 
 # Run WireMock

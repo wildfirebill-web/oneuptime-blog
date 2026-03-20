@@ -37,6 +37,7 @@ flowchart LR
 
 ```yaml
 # felixconfiguration-metrics.yaml
+
 apiVersion: projectcalico.org/v3
 kind: FelixConfiguration
 metadata:

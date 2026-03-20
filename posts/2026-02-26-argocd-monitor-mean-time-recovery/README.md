@@ -43,6 +43,7 @@ A failure can be defined as any of these ArgoCD events:
 
 ```promql
 # Application sync failed
+
 argocd_app_sync_total{phase="Failed"}
 
 # Application health degraded

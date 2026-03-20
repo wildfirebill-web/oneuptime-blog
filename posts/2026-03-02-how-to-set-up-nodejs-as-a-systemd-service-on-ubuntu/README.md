@@ -16,6 +16,7 @@ Have Node.js installed and your application working when run manually. If you ne
 
 ```bash
 # Install Node.js 20.x from NodeSource
+
 curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash -
 sudo apt install nodejs
 

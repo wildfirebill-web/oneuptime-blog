@@ -760,6 +760,7 @@ class ApplicationTest {
 
 ```dockerfile
 # Dockerfile
+
 FROM gradle:8.5-jdk17 AS build
 WORKDIR /app
 COPY build.gradle.kts settings.gradle.kts ./

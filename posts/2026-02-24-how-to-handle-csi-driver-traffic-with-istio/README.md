@@ -38,6 +38,7 @@ If your CSI driver namespace has sidecar injection enabled (which is uncommon bu
 
 ```yaml
 # Controller deployment
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

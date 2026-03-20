@@ -83,6 +83,7 @@ Key fields:
 
 ```bash
 # Create bundle directory structure
+
 mkdir -p bundle/policy bundle/data
 
 # Add policies

@@ -575,6 +575,7 @@ console.log('Preview:', nodemailer.getTestMessageUrl(info));
 
 ```yaml
 # docker-compose.yml
+
 services:
   mailhog:
     image: mailhog/mailhog

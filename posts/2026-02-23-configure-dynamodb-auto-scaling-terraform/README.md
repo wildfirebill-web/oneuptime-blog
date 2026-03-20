@@ -35,6 +35,7 @@ provider "aws" {
 }
 
 # DynamoDB table with provisioned capacity
+
 resource "aws_dynamodb_table" "orders" {
   name         = "orders"
   billing_mode = "PROVISIONED"

@@ -18,6 +18,7 @@ The simplest use case is appending a line to the end of a file:
 
 ```yaml
 # Add a line to the end of a file
+
 - name: Add monitoring server to hosts file
   ansible.builtin.lineinfile:
     path: /etc/hosts

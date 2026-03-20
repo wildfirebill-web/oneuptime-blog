@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: rancher, teleport, secure-access, kubernetes, zero-trust, pam
+Tags: Rancher, Teleport, Secure-access, Kubernetes, Zero-trust, PAM
 
 Description: A guide to integrating Rancher with Teleport for zero-trust privileged access management, covering Kubernetes access, audit trails, and role-based access via Teleport.
 
@@ -12,7 +12,7 @@ Teleport is an open-source privileged access management (PAM) platform that prov
 
 ## Architecture
 
-```
+```text
 Developer/Operator
       |
    [MFA Authentication]
@@ -37,6 +37,7 @@ Developer/Operator
 
 ```yaml
 # Teleport Helm values (teleport-cluster)
+
 auth_service:
   enabled: true
   cluster_name: "teleport.company.com"

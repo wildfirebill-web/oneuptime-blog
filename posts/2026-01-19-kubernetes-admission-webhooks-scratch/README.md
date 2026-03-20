@@ -490,6 +490,7 @@ func validatePod(req *admissionv1.AdmissionRequest) *admissionv1.AdmissionRespon
 
 ```yaml
 # deploy/deployment.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

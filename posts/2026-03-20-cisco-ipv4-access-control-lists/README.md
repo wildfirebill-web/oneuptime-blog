@@ -8,12 +8,12 @@ Description: Configure standard and extended IPv4 ACLs on Cisco IOS routers to f
 
 ## Introduction
 
-Cisco IPv4 ACLs filter packets entering or exiting an interface. Standard ACLs match only source IP; extended ACLs match source, destination, protocol, and ports. Correct placement and direction are critical — an ACL applied in the wrong direction or on the wrong interface either blocks legitimate traffic or does nothing.
+Cisco IPv4 ACLs filter packets entering or exiting an interface. Standard ACLs match only source IP; extended ACLs match source, destination, protocol, and ports. Correct placement and direction are critical - an ACL applied in the wrong direction or on the wrong interface either blocks legitimate traffic or does nothing.
 
-## Standard ACL — Permit Specific Subnet
+## Standard ACL - Permit Specific Subnet
 
 ```cisco
-! Permit only 192.168.1.0/24 — deny everything else
+! Permit only 192.168.1.0/24 - deny everything else
 ip access-list standard ALLOW-MGMT
  permit 192.168.1.0 0.0.0.255
  deny   any
@@ -23,7 +23,7 @@ line vty 0 4
  access-class ALLOW-MGMT in
 ```
 
-## Extended ACL — Block Specific Traffic
+## Extended ACL - Block Specific Traffic
 
 ```cisco
 ip access-list extended EDGE-FILTER
@@ -49,7 +49,7 @@ interface GigabitEthernet0/0
  ip access-group EDGE-FILTER in
 ```
 
-## Named ACL — Block a Host
+## Named ACL - Block a Host
 
 ```cisco
 ip access-list extended BLOCK-HOST
@@ -79,7 +79,7 @@ clear ip access-list counters EDGE-FILTER
 
 ## ACL Direction Reference
 
-```
+```text
 Inbound  (in):  Applied as packet arrives on the interface
                 Filters traffic ENTERING the router
                 Best for: blocking traffic from untrusted sources

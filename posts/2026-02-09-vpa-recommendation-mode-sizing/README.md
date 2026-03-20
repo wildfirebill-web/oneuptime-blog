@@ -120,6 +120,7 @@ VPA doesn't auto-update in Off mode. Apply recommendations manually:
 
 ```bash
 # Update deployment with Target values
+
 kubectl set resources deployment web-app -n production \
   --requests=cpu=300m,memory=512Mi
 ```

@@ -41,6 +41,7 @@ The GIL exists because CPython (the standard Python implementation) uses referen
 
 ```python
 # gil_demo.py
+
 # This demonstrates the GIL's impact on CPU-bound threading
 
 import threading

@@ -1,4 +1,4 @@
-# How to Access the Container Console (Exec) in Portainer
+# How to Access the Container Console (Exec) in Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Learn how to open an interactive shell inside a running Docker cont
 
 ## Introduction
 
-Portainer's container console (Exec) gives you an interactive shell inside a running container — directly from the browser, without needing SSH access to the host or Docker CLI. This is invaluable for debugging, running ad-hoc commands, and inspecting container state.
+Portainer's container console (Exec) gives you an interactive shell inside a running container - directly from the browser, without needing SSH access to the host or Docker CLI. This is invaluable for debugging, running ad-hoc commands, and inspecting container state.
 
 ## Prerequisites
 
@@ -41,7 +41,7 @@ Select the shell available in the container:
 | `/bin/ash` | BusyBox shell | Alpine Linux |
 | `/bin/zsh` | Z shell | Images with zsh installed |
 
-For Alpine-based images, always use `/bin/sh` — bash is not included.
+For Alpine-based images, always use `/bin/sh` - bash is not included.
 
 ### Choose a User
 
@@ -56,6 +56,7 @@ Click **Connect** to open the terminal:
 
 ```bash
 # You now have a shell inside the container
+
 # Example session for debugging a web app:
 
 # Check which directory you're in
@@ -127,15 +128,15 @@ ss -tlnp
 ### Inspect Application State
 
 ```bash
-# For Node.js apps — check if server is running:
+# For Node.js apps - check if server is running:
 ps aux | grep node
 curl http://localhost:3000/health
 
-# For Python apps — activate environment:
+# For Python apps - activate environment:
 python3 -c "import sys; print(sys.version)"
 python3 manage.py check --database default
 
-# For Java apps — list JVM processes:
+# For Java apps - list JVM processes:
 jps -lv
 # Check JVM memory:
 jstat -gc <pid>
@@ -196,7 +197,7 @@ docker exec -u 1000 my-container whoami
 
 In Portainer, use the console with a command like `/bin/sh -c "your command here"` for single commands.
 
-## Step 6: Console Not Available — Troubleshooting
+## Step 6: Console Not Available - Troubleshooting
 
 ### "Cannot use console"
 
@@ -219,4 +220,4 @@ docker run -it --rm \
 
 ## Conclusion
 
-Portainer's container console provides browser-based shell access to running containers, eliminating the need for SSH access. Use it for debugging application issues, verifying configuration, testing connectivity, and running maintenance commands. Always prefer debugging via logs and health checks first — the console is for deep investigation when logs aren't enough.
+Portainer's container console provides browser-based shell access to running containers, eliminating the need for SSH access. Use it for debugging application issues, verifying configuration, testing connectivity, and running maintenance commands. Always prefer debugging via logs and health checks first - the console is for deep investigation when logs aren't enough.

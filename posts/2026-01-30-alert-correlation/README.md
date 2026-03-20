@@ -67,6 +67,7 @@ Time-based correlation groups alerts that fire within a configurable window. If 
 
 ```yaml
 # correlation-rules.yaml
+
 # Group alerts firing within 60 seconds for the same host
 time_based:
   enabled: true

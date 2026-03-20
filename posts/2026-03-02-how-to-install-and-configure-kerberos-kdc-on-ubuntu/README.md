@@ -36,6 +36,7 @@ Kerberos requires working forward and reverse DNS resolution:
 
 ```bash
 # Set your hostname
+
 sudo hostnamectl set-hostname kdc.example.com
 
 # Verify

@@ -35,6 +35,7 @@ First, create the Pub/Sub topic that receives security events:
 
 ```hcl
 # pubsub.tf
+
 # Topic for security events that trigger incident response
 
 resource "google_pubsub_topic" "security_events" {

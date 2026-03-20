@@ -129,6 +129,7 @@ Reference it in the RKE2 config:
 
 ```yaml
 # /etc/rancher/rke2/config.yaml
+
 kube-apiserver-arg:
   - "admission-control-config-file=/etc/rancher/rke2/rancher-pss.yaml"
 ```

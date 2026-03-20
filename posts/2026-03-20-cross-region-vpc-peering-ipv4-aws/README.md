@@ -62,6 +62,7 @@ resource "aws_vpc_peering_connection_accepter" "cross_region" {
 
 ```hcl
 # Route in US East pointing to EU West
+
 resource "aws_route" "us_to_eu" {
   provider                  = aws.us_east
   route_table_id            = aws_route_table.us_east_private.id

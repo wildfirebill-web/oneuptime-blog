@@ -32,6 +32,7 @@ Import the Talos Linux OVA and set up the required vSphere resources:
 
 ```bash
 # Download the Talos vSphere OVA
+
 wget https://github.com/siderolabs/talos/releases/download/v1.7.0/vmware-amd64.ova
 
 # Import the OVA as a template using govc

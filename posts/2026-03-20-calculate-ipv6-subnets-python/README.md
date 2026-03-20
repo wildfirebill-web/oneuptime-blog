@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Python, IPv6, Subnetting, ipaddress, Network Automation, IPAM
+Tags: Python, IPv6, Subnetting, Ipaddress, Network Automation, IPAM
 
 Description: Calculate IPv6 subnets, split networks, find available prefixes, and generate allocation plans using Python's ipaddress module.
 
@@ -23,6 +23,7 @@ def split_network(network_str: str, new_prefix: int) -> list[ipaddress.IPv6Netwo
     return list(parent.subnets(new_prefix=new_prefix))
 
 # Split a /48 into /56 subnets (for rack allocations)
+
 rack_subnets = split_network("2001:db8:1::/48", new_prefix=56)
 print(f"Total /56 subnets from /48: {len(rack_subnets)}")  # 256
 

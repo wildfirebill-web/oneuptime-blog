@@ -44,6 +44,7 @@ To enable the metrics generator, you need to configure it in your Tempo configur
 # tempo.yaml
 
 # Enable the metrics generator component
+
 metrics_generator:
   # Ring configuration for distributed deployments
   ring:

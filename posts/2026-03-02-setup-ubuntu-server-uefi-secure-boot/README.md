@@ -27,6 +27,7 @@ Before installation, verify your system is in UEFI mode with Secure Boot availab
 
 ```bash
 # Check Secure Boot status on a running Ubuntu system
+
 mokutil --sb-state
 # Output: SecureBoot enabled
 

@@ -16,6 +16,7 @@ First, export all data from the existing OpenLDAP instance:
 
 ```bash
 # Export the entire directory to LDIF
+
 slapcat -l /tmp/openldap-export.ldif
 
 # Export just the configuration (cn=config)

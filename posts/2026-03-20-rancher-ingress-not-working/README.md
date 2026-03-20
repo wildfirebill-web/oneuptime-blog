@@ -14,9 +14,10 @@ Ingress resources in Rancher-managed clusters can fail to route traffic for seve
 
 ```bash
 # Check the Ingress resource definition
+
 kubectl get ingress -n <namespace> <ingress-name> -o yaml
 
-# Look for the ADDRESS field — if empty, the Ingress controller hasn't admitted the resource
+# Look for the ADDRESS field - if empty, the Ingress controller hasn't admitted the resource
 kubectl get ingress -n <namespace>
 # NAME    CLASS   HOSTS                  ADDRESS         PORTS   AGE
 # myapp   nginx   myapp.example.com      10.0.0.100      80,443  5m

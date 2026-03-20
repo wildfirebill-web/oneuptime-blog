@@ -14,6 +14,7 @@ Default Apache SSL configurations on Ubuntu are not optimally secured. They ofte
 
 ```bash
 # Install Apache if needed
+
 sudo apt-get update
 sudo apt-get install -y apache2
 

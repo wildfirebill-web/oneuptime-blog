@@ -31,6 +31,7 @@ Look for:
 
 ```text
 # Good - correct namespace detected
+
 Transformed class jakarta/servlet/http/HttpServlet
 
 # Bad - wrong namespace or no transformation

@@ -20,6 +20,7 @@ The `for` loop iterates over a list of items. It's the most common loop type in 
 #!/bin/bash
 
 # Iterate over a simple list
+
 for fruit in apple banana cherry mango; do
     echo "Processing: $fruit"
 done

@@ -1,10 +1,10 @@
-# How to Fix "Image Not Found" Errors When Deploying in Portainer
+# How to Fix 'Image Not Found' Errors When Deploying in Portainer (2)
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Portainer, Docker, Troubleshooting, Images, Registry
 
-Description: Resolve "Image Not Found" errors in Portainer deployments caused by incorrect image names, missing registry credentials, network issues, or private registry configuration problems.
+Description: Resolve 'Image Not Found' errors in Portainer deployments caused by incorrect image names, missing registry credentials, network issues, or private registry configuration problems.
 
 ## Introduction
 
@@ -22,11 +22,12 @@ Description: Resolve "Image Not Found" errors in Portainer deployments caused by
 
 ```bash
 # Pull the image directly from CLI to test
+
 docker pull nginx:latest
 docker pull myregistry.com/myimage:v1.0
 
 # Common mistakes:
-# nginx:Latest (capital L — tags are case-sensitive)
+# nginx:Latest (capital L - tags are case-sensitive)
 # myimage:latest vs myimage (no tag defaults to latest, but should be explicit)
 # myregistry.com/myimage vs myregistry.com:5000/myimage (port is part of the name)
 ```
@@ -92,9 +93,9 @@ When your compose file references private images:
 version: "3.8"
 services:
   myapp:
-    # Private image — requires registry credentials in Portainer
+    # Private image - requires registry credentials in Portainer
     image: myregistry.com/myapp:v1.0
-    # No need to specify credentials here — configure in Portainer's Registries
+    # No need to specify credentials here - configure in Portainer's Registries
 ```
 
 In Portainer, when deploying the stack:

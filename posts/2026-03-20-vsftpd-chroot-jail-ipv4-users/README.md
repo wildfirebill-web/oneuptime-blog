@@ -24,6 +24,7 @@ systemctl enable --now vsftpd
 # /etc/vsftpd.conf
 
 # --- Network: IPv4 only ---
+
 listen=YES                  # Listen on IPv4
 listen_ipv6=NO              # Disable IPv6 listener
 

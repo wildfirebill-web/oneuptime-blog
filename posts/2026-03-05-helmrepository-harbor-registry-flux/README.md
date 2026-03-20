@@ -34,6 +34,7 @@ Harbor v2.0 and later supports two chart storage backends:
 
 ```bash
 # Log in to Harbor with Helm OCI
+
 helm registry login harbor.example.com --username admin --password Harbor12345
 
 # Package and push the chart

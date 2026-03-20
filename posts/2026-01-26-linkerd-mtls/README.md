@@ -73,6 +73,7 @@ Download and install the Linkerd CLI to manage your service mesh.
 
 ```bash
 # Download the latest Linkerd CLI
+
 curl --proto '=https' --tlsv1.2 -sSfL https://run.linkerd.io/install | sh
 
 # Add linkerd to your PATH

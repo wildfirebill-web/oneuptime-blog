@@ -82,6 +82,7 @@ The following configuration creates an IP pool and an L2 advertisement policy. L
 
 ```yaml
 # metallb-config.yaml
+
 # This configuration sets up MetalLB with a pool of IP addresses
 # for LoadBalancer services. The L2Advertisement tells MetalLB
 # to use Layer 2 mode (ARP/NDP) to advertise these IPs.

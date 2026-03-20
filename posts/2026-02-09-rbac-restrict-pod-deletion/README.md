@@ -28,6 +28,7 @@ Build a role that allows managing deployments but not deleting pods:
 
 ```yaml
 # deployment-manager-role.yaml
+
 apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRole
 metadata:

@@ -60,6 +60,7 @@ Create a workflow that runs on every push and pull request.
 
 ```yaml
 # .github/workflows/lint-test.yml
+
 name: Lint and Test Charts
 
 on:
@@ -587,7 +588,7 @@ jobs:
               
               # Generate diff
               CHART_DIFF=$(helm template test charts/$chart 2>/dev/null | head -100)
-              DIFF="$DIFF\n### $chart\n\`\`\`yaml\n$CHART_DIFF\n\`\`\`\n"
+              DIFF="$DIFF\n### $chart\n```yaml\n$CHART_DIFF\n```\n"
             fi
           done
           

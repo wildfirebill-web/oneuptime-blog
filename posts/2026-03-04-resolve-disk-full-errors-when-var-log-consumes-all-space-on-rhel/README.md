@@ -14,6 +14,7 @@ A full /var/log partition can prevent services from starting, cause applications
 
 ```bash
 # Check overall disk usage
+
 df -h
 
 # Find the largest files in /var/log

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Kubernetes, DNS, Route53, external-dns, ExternalDNS, Infrastructure as Code
+Tags: OpenTofu, Kubernetes, DNS, Route53, External-DNS, ExternalDNS, Infrastructure as Code
 
 Description: Learn how to automatically create DNS records for Kubernetes services using ExternalDNS deployed with OpenTofu, enabling Kubernetes to manage its own DNS entries in Route 53, Azure DNS, or Cloudflare.
 
@@ -23,6 +23,7 @@ graph LR
 
 ```hcl
 # externaldns_iam.tf
+
 resource "aws_iam_policy" "externaldns" {
   name = "${var.cluster_name}-externaldns"
 
@@ -162,8 +163,8 @@ resource "kubernetes_ingress_v1" "app" {
 
 ## Best Practices
 
-- Use `policy = "upsert-only"` to prevent ExternalDNS from deleting records it didn't create — `sync` mode can delete manually-managed records.
-- Set `txtOwnerId` to the cluster name — ExternalDNS uses TXT records to track ownership, preventing multi-cluster conflicts.
-- Use `domainFilters` to restrict ExternalDNS to specific zones — without this, it will try to manage all Route 53 zones in your account.
-- Set appropriate TTLs via annotation (`external-dns.alpha.kubernetes.io/ttl`) — lower TTLs for frequently-changing services, higher for stable ones.
+- Use `policy = "upsert-only"` to prevent ExternalDNS from deleting records it didn't create - `sync` mode can delete manually-managed records.
+- Set `txtOwnerId` to the cluster name - ExternalDNS uses TXT records to track ownership, preventing multi-cluster conflicts.
+- Use `domainFilters` to restrict ExternalDNS to specific zones - without this, it will try to manage all Route 53 zones in your account.
+- Set appropriate TTLs via annotation (`external-dns.alpha.kubernetes.io/ttl`) - lower TTLs for frequently-changing services, higher for stable ones.
 - Grant ExternalDNS IRSA permissions scoped to specific hosted zones in production rather than `arn:aws:route53:::hostedzone/*`.

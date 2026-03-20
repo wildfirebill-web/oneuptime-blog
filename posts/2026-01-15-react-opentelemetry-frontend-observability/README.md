@@ -755,7 +755,7 @@ export function initLongTaskMonitoring(): void {
 }
 ```
 
-### Resource Loading Performance
+Resource Loading Performance
 
 Monitor individual resource loading times.
 

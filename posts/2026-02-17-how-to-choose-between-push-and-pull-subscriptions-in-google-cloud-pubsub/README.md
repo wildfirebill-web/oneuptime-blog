@@ -29,6 +29,7 @@ In practice, you typically use the streaming pull API through a client library, 
 
 ```python
 # Pull subscriber using the Google Cloud Pub/Sub client library
+
 from google.cloud import pubsub_v1
 from concurrent.futures import TimeoutError
 

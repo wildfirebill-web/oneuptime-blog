@@ -30,7 +30,7 @@ A two-day intensive training program covers:
 
 Key concepts to convey:
 
-```
+```text
 IPv4 vs IPv6 Quick Reference
 ═══════════════════════════════════════════
 IPv4 Address:    192.168.1.100
@@ -38,17 +38,17 @@ IPv6 Address:    2001:0db8:0000:0001:0000:0000:0000:0100
 Compressed IPv6: 2001:db8:0:1::100
 
 Key differences for support staff:
-- IPv6 addresses are longer — this is normal
-- Customers have multiple IPv6 addresses per device — this is normal
-- No NAT in IPv6 — all devices are directly accessible (firewall is important!)
-- Link-local (fe80::) addresses are always present — they are not global
+- IPv6 addresses are longer - this is normal
+- Customers have multiple IPv6 addresses per device - this is normal
+- No NAT in IPv6 - all devices are directly accessible (firewall is important!)
+- Link-local (fe80::) addresses are always present - they are not global
 ```
 
 ## Module 2: Common Support Scenarios
 
 ### Scenario 1: "I don't have IPv6"
 
-```
+```text
 Decision Tree:
 1. Check if ISP provides IPv6 on customer's plan
 2. If yes: verify CPE model supports IPv6
@@ -61,7 +61,7 @@ Decision Tree:
 
 Explain Happy Eyeballs to the customer:
 
-```
+```text
 "Your device is trying IPv6 first, and if the site is slow over IPv6,
 it should automatically fall back to IPv4 within a few seconds.
 If it's consistently slow, we can investigate the path to that specific site."
@@ -69,7 +69,7 @@ If it's consistently slow, we can investigate the path to that specific site."
 
 ### Scenario 3: "My security camera doesn't work"
 
-Explain that IPv6 devices are directly reachable without port forwarding — the router firewall must be configured to allow or block inbound connections.
+Explain that IPv6 devices are directly reachable without port forwarding - the router firewall must be configured to allow or block inbound connections.
 
 ## Module 3: Diagnostic Commands
 
@@ -77,6 +77,7 @@ Teach support staff to guide customers through these checks:
 
 ```bash
 # Windows - check IPv6 status
+
 ipconfig | findstr "IPv6"
 
 # Mac - check IPv6 status

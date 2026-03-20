@@ -25,6 +25,7 @@ Critical signals during an OpenStack Calico upgrade include: Neutron agent heart
 
 ```bash
 # Monitor during OpenStack Calico upgrade
+
 watch -n15 'openstack network agent list | grep calico'
 
 # Check Neutron agent heartbeats

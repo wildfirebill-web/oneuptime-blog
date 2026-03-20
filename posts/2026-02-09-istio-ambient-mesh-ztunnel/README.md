@@ -34,6 +34,7 @@ Install Istio using the ambient profile. This configures the control plane for a
 
 ```bash
 # Download Istio 1.20 or later
+
 curl -L https://istio.io/downloadIstio | ISTIO_VERSION=1.20.0 sh -
 
 cd istio-1.20.0

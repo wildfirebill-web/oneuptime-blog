@@ -18,6 +18,7 @@ The container starts and stops without any output. This usually means Flask cras
 
 ```bash
 # Check the exit code
+
 docker ps -a --filter "name=flask-app"
 
 # View logs (even from stopped containers)

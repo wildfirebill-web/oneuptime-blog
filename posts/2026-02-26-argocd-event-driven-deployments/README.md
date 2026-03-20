@@ -37,6 +37,7 @@ Argo Events is a companion project to ArgoCD designed specifically for event-dri
 
 ```yaml
 # Install Argo Events
+
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:

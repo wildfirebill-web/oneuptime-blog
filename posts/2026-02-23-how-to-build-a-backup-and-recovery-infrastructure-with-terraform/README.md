@@ -31,6 +31,7 @@ The first step is creating a backup vault with encryption. This is where all you
 
 ```hcl
 # Primary backup vault with KMS encryption
+
 resource "aws_kms_key" "backup_key" {
   description             = "KMS key for backup encryption"
   deletion_window_in_days = 30
@@ -142,7 +143,7 @@ resource "aws_backup_plan" "production" {
 }
 ```
 
-## Resource Selection with Tags
+Resource Selection with Tags
 
 Rather than listing every resource individually, use tag-based selection so new resources automatically get backed up.
 

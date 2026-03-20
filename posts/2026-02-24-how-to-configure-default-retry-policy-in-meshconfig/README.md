@@ -181,6 +181,7 @@ Istio exposes metrics that show how retries are affecting your traffic:
 
 ```bash
 # Check retry stats on a proxy
+
 kubectl exec deploy/sleep -c istio-proxy -n sample -- \
   pilot-agent request GET stats | grep retry
 ```

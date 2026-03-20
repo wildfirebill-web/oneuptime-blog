@@ -25,6 +25,7 @@ When a node is in maintenance mode:
 
 ```bash
 # Try connecting to the node normally
+
 talosctl -n <node-ip> version
 
 # If that fails with a certificate error, try insecure mode

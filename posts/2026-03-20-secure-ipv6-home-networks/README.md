@@ -8,14 +8,14 @@ Description: Secure your home IPv6 network by configuring firewalls, enabling pr
 
 ## Why IPv6 Security Differs from IPv4
 
-In IPv4, NAT provides implicit security by hiding internal devices behind a single public IP. In IPv6, every device has a globally routable address — making explicit firewall rules essential.
+In IPv4, NAT provides implicit security by hiding internal devices behind a single public IP. In IPv6, every device has a globally routable address - making explicit firewall rules essential.
 
 ## 1. Enable IPv6 Firewall on Your Router
 
 Most modern routers block all unsolicited inbound IPv6 connections by default. Verify this is active:
 
 - **UniFi**: Settings → Firewall → IPv6 Rules → Default deny WAN In
-- **OpenWRT**: Network → Firewall → IPv6 rule set — verify "input" policy is "reject"
+- **OpenWRT**: Network → Firewall → IPv6 rule set - verify "input" policy is "reject"
 - **Asus**: Advanced → IPv6 → Firewall: Enable
 
 If your router doesn't have an explicit IPv6 firewall, apply it at the OS level on each device using nftables or ip6tables.
@@ -69,6 +69,7 @@ By default, SLAAC generates IPv6 addresses from the device's MAC address, which 
 **Linux:**
 ```bash
 # Enable privacy extensions permanently
+
 echo "net.ipv6.conf.all.use_tempaddr=2" >> /etc/sysctl.conf
 echo "net.ipv6.conf.default.use_tempaddr=2" >> /etc/sysctl.conf
 sysctl -p
@@ -83,7 +84,7 @@ sysctl -p
 Malicious devices can send fake RAs to redirect IPv6 traffic. Prevent this on your router:
 
 **OpenWRT - radvd only on trusted interfaces:**
-```
+```text
 # /etc/config/radvd
 config interface
     option interface 'br-lan'

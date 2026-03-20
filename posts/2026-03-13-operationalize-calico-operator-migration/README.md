@@ -31,6 +31,7 @@ flowchart LR
 ```bash
 #!/bin/bash
 # assess-cluster-for-migration.sh
+
 CLUSTER="${1:-$(kubectl config current-context)}"
 REPORT_FILE="migration-assessment-${CLUSTER}-$(date +%Y%m%d).txt"
 

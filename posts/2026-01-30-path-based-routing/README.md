@@ -33,6 +33,7 @@ The path must match exactly, character for character.
 
 ```yaml
 # Matches: /api/health
+
 # Does NOT match: /api/health/, /api/health/check, /api/healthz
 path: /api/health
 pathType: Exact

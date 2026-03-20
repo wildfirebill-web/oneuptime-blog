@@ -43,6 +43,7 @@ Each shard is responsible for a subset of clusters, determined by a consistent h
 
 ```yaml
 # argocd-cmd-params-cm ConfigMap
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

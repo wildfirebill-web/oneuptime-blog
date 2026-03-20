@@ -1,4 +1,4 @@
-# How to Configure Longhorn for High IOPS Workloads
+# How to Configure Longhorn for High IOPS Workloads - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -17,7 +17,8 @@ Longhorn's distributed architecture introduces replication overhead that can imp
 The fastest way to improve Longhorn IOPS is to use NVMe SSDs as the backing storage:
 
 ```bash
-# On each storage node — format and mount NVMe device
+# On each storage node - format and mount NVMe device
+
 mkfs.ext4 /dev/nvme0n1
 mkdir -p /var/lib/longhorn-nvme
 echo "/dev/nvme0n1 /var/lib/longhorn-nvme ext4 defaults 0 0" >> /etc/fstab
@@ -142,5 +143,5 @@ kubectl run fio-test \
 ## Best Practices
 
 - Use a replica count of 2 instead of 3 for write-heavy workloads where IOPS matters more than maximum redundancy.
-- Enable `dataLocality: strict` for databases — this forces the primary replica to the pod's node.
-- Pre-warm volumes before benchmarking — Longhorn caches improve IOPS over time.
+- Enable `dataLocality: strict` for databases - this forces the primary replica to the pod's node.
+- Pre-warm volumes before benchmarking - Longhorn caches improve IOPS over time.

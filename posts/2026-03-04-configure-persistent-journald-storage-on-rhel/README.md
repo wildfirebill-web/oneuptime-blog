@@ -14,6 +14,7 @@ By default on RHEL, journald may store logs in `/run/log/journal/`, which is a t
 
 ```bash
 # See where journals are stored currently
+
 journalctl --disk-usage
 
 # Check if persistent directory exists

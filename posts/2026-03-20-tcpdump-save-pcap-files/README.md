@@ -6,12 +6,13 @@ Tags: tcpdump, PCAP, Wireshark, Linux, Packet Capture, Networking
 
 Description: Save tcpdump network captures to PCAP files for offline analysis, sharing with colleagues, or loading into Wireshark for visual inspection.
 
-Saving captures to PCAP files lets you capture on a headless server, then analyze the data on your workstation with Wireshark. It also enables reproducible analysis — you can run filters against the same capture multiple times.
+Saving captures to PCAP files lets you capture on a headless server, then analyze the data on your workstation with Wireshark. It also enables reproducible analysis - you can run filters against the same capture multiple times.
 
 ## Write to a PCAP File
 
 ```bash
 # Save capture to file (Ctrl+C to stop)
+
 sudo tcpdump -i eth0 -w /tmp/capture.pcap
 
 # Save with filter (capture only HTTP/HTTPS)
@@ -102,4 +103,4 @@ sudo tcpdump -r /tmp/capture1.pcap -w - | \
   mergecap /tmp/capture2.pcap - -w /tmp/filtered-merged.pcap
 ```
 
-Saving to PCAP gives you a replayable record of network activity — essential for post-incident investigation, reproducing bugs, and detailed protocol analysis in Wireshark.
+Saving to PCAP gives you a replayable record of network activity - essential for post-incident investigation, reproducing bugs, and detailed protocol analysis in Wireshark.

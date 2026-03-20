@@ -51,6 +51,7 @@ kubectl create secret generic pomerium-secrets \
 
 ```yaml
 # clusters/my-cluster/pomerium/helm-repository.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

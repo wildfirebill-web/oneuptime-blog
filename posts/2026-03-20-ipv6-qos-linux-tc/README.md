@@ -12,7 +12,7 @@ Linux's `tc` (traffic control) command provides powerful QoS capabilities for IP
 
 ## Understanding Linux QoS Architecture
 
-```
+```text
 Linux QoS Components for IPv6:
 1. qdisc (queuing discipline): Defines scheduling algorithm (HTB, PRIO, etc.)
 2. class: Bandwidth allocation within a qdisc
@@ -33,6 +33,7 @@ IFACE="eth0"
 RATE="100mbit"  # Total interface bandwidth
 
 # Clear existing rules
+
 sudo tc qdisc del dev $IFACE root 2>/dev/null || true
 
 # Add root HTB qdisc

@@ -17,8 +17,8 @@ Description: Configure IPv6 routing and tunneling for data center interconnect l
 
 ## Native IPv6 DCI with BGP
 
-```
-! Cisco NX-OS — DCI link between DC1 and DC2
+```text
+! Cisco NX-OS - DCI link between DC1 and DC2
 
 ! DC1 (2001:db8:dc1::/48) interconnect interface
 interface Ethernet1/1
@@ -45,6 +45,7 @@ router bgp 65001
 # Linux VTEP with EVPN for DCI L2 extension
 
 # Create VXLAN interface at DC1
+
 ip link add vxlan100 type vxlan \
     id 100 \
     local 2001:db8:dc1::vtep \
@@ -90,7 +91,7 @@ ping6 -M do -s 8900 2001:db8:dc2::router
 
 ## BGP Communities for DCI Traffic Engineering
 
-```
+```bash
 # Tag routes with DCI-specific communities
 
 route-map DCI_EXPORT permit 10
@@ -110,7 +111,7 @@ route-map DCI_IMPORT permit 10
 
 ```bash
 #!/bin/bash
-# monitor-dci.sh — DCI IPv6 health check
+# monitor-dci.sh - DCI IPv6 health check
 
 DC1_ROUTER="2001:db8:dc1::router"
 DC2_ROUTER="2001:db8:dc2::router"
@@ -138,4 +139,4 @@ echo "IPv6 routes to DC2: ${ROUTES}"
 
 ## Conclusion
 
-IPv6 DCI configuration depends on the L2/L3 requirements. For pure L3 routing, use OSPFv3 or eBGP between sites with site-specific /48 prefixes advertised across the DCI link. For L2 extension (VM migration, stretched clusters), use EVPN-VXLAN with BGP EVPN Type 2 MAC/IP routes propagated between sites. Always account for DCI MTU — VXLAN over IPv6 adds 50 bytes overhead, so ensure the DCI link supports at least 9050 bytes for jumbo frame workloads. Use BGP communities to tag DCI-learned routes for traffic engineering and prefer intra-DC paths for local traffic.
+IPv6 DCI configuration depends on the L2/L3 requirements. For pure L3 routing, use OSPFv3 or eBGP between sites with site-specific /48 prefixes advertised across the DCI link. For L2 extension (VM migration, stretched clusters), use EVPN-VXLAN with BGP EVPN Type 2 MAC/IP routes propagated between sites. Always account for DCI MTU - VXLAN over IPv6 adds 50 bytes overhead, so ensure the DCI link supports at least 9050 bytes for jumbo frame workloads. Use BGP communities to tag DCI-learned routes for traffic engineering and prefer intra-DC paths for local traffic.

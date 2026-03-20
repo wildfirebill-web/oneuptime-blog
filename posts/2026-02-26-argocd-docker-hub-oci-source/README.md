@@ -36,6 +36,7 @@ Before ArgoCD can pull charts, you need to push them to Docker Hub.
 
 ```bash
 # Log in to Docker Hub with Helm
+
 helm registry login registry-1.docker.io -u myusername
 
 # Package your chart

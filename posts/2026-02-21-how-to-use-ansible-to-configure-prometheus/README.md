@@ -61,6 +61,7 @@ Your inventory defines what gets monitored. Each host group corresponds to a Pro
 
 ```yaml
 # inventory/hosts.yml
+
 all:
   children:
     monitoring:

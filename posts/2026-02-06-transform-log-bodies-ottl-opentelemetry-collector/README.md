@@ -20,6 +20,7 @@ Here's a simple example that converts all log bodies to uppercase:
 
 ```yaml
 # Basic transformation to uppercase log bodies
+
 processors:
   transform:
     log_statements:

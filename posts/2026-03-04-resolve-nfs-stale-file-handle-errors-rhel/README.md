@@ -16,6 +16,7 @@ Check which mounts are affected:
 
 ```bash
 # Try to list files on the NFS mount
+
 ls /mnt/nfs-share
 
 # If you get "Stale file handle", check the mount status

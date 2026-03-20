@@ -44,6 +44,7 @@ On your internet-connected workstation, download the list of images required by 
 RANCHER_VERSION=v2.9.3
 
 # Download the rancher-images.txt file
+
 curl -LO https://github.com/rancher/rancher/releases/download/${RANCHER_VERSION}/rancher-images.txt
 
 # Download the rancher-save-images.sh script

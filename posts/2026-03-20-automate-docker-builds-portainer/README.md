@@ -14,6 +14,7 @@ Automating Docker builds and deployments eliminates manual steps and ensures you
 
 ```yaml
 # docker-compose.yml - Private registry with build automation
+
 version: "3.8"
 
 networks:

@@ -17,8 +17,8 @@ textencodebase64(string, encoding)
 textdecodebase64(string, encoding)
 ```
 
-- **string** — the input string (or Base64 string for decode)
-- **encoding** — the character encoding (e.g., `"UTF-8"`, `"UTF-16LE"`, `"UTF-32"`)
+- **string** - the input string (or Base64 string for decode)
+- **encoding** - the character encoding (e.g., `"UTF-8"`, `"UTF-16LE"`, `"UTF-32"`)
 
 ## Basic Examples
 

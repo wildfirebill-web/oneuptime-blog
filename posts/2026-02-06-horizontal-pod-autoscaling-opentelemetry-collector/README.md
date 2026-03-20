@@ -38,6 +38,7 @@ Your cluster needs the Kubernetes Metrics Server installed. Most managed Kuberne
 
 ```bash
 # Install the Metrics Server (skip if already present in your cluster)
+
 kubectl apply -f https://github.com/kubernetes-sigs/metrics-server/releases/latest/download/components.yaml
 
 # Verify it is running

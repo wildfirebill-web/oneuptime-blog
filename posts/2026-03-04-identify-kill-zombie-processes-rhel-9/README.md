@@ -143,6 +143,7 @@ The double-fork technique prevents zombies by having the child fork again and ex
 
 ```bash
 # Parent forks child
+
 # Child forks grandchild
 # Child exits immediately (parent waits for child)
 # Grandchild runs independently, adopted by init

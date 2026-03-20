@@ -64,6 +64,7 @@ Enable the protection at the subscription level to cover all App Service instanc
 
 ```bash
 # Enable Microsoft Defender for App Service at the subscription level
+
 az security pricing create \
   --name AppServices \
   --tier Standard

@@ -8,7 +8,7 @@ Description: Combine VXLAN and network namespaces to provide isolated VXLAN over
 
 ## Introduction
 
-Combining VXLAN with network namespaces allows you to create isolated overlay networks for containers or processes. This is the fundamental mechanism behind Docker overlay networks and Kubernetes pod networking — each pod/container gets its own network namespace connected to a shared VXLAN overlay.
+Combining VXLAN with network namespaces allows you to create isolated overlay networks for containers or processes. This is the fundamental mechanism behind Docker overlay networks and Kubernetes pod networking - each pod/container gets its own network namespace connected to a shared VXLAN overlay.
 
 ## Architecture
 
@@ -24,6 +24,7 @@ flowchart TD
 
 ```bash
 # Create VXLAN interface
+
 ip link add vxlan0 type vxlan id 1000 dstport 4789 local 10.0.0.1 dev eth0
 ip link set vxlan0 up
 
@@ -94,4 +95,4 @@ ip netns exec ns1 ping -c 3 10.200.0.2
 
 ## Conclusion
 
-VXLAN with network namespaces creates isolated per-container overlay networking. Each namespace connects to a shared bridge via veth pairs, and the bridge connects to the VXLAN for multi-host reachability. Namespaces cannot communicate with each other or the VXLAN directly — all traffic flows through the bridge. This pattern directly mirrors how container runtimes implement multi-host networking.
+VXLAN with network namespaces creates isolated per-container overlay networking. Each namespace connects to a shared bridge via veth pairs, and the bridge connects to the VXLAN for multi-host reachability. Namespaces cannot communicate with each other or the VXLAN directly - all traffic flows through the bridge. This pattern directly mirrors how container runtimes implement multi-host networking.

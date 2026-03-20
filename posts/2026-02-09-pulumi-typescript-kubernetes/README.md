@@ -18,6 +18,7 @@ First, install Pulumi and create a new TypeScript project:
 
 ```bash
 # Install Pulumi CLI
+
 curl -fsSL https://get.pulumi.com | sh
 
 # Create new Kubernetes project

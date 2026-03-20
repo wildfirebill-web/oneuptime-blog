@@ -13,8 +13,8 @@ Allowing HTTP access to Portainer in production exposes your credentials and ses
 ## Understanding Portainer's HTTP Ports
 
 Portainer can expose two web interfaces:
-- **Port 9443**: HTTPS (TLS encrypted) — recommended
-- **Port 9000**: HTTP (unencrypted) — should be disabled in production
+- **Port 9443**: HTTPS (TLS encrypted) - recommended
+- **Port 9000**: HTTP (unencrypted) - should be disabled in production
 
 The key insight: port 9000 is only accessible if you explicitly map it with `-p 9000:9000` in your Docker run command. Simply omitting this mapping effectively disables HTTP.
 
@@ -24,6 +24,7 @@ Stop and recreate Portainer without the HTTP port:
 
 ```bash
 # Stop and remove current container
+
 docker stop portainer
 docker container rm portainer
 
@@ -101,7 +102,7 @@ curl -k -o /dev/null -w "%{http_code}" https://localhost:9443/
 ## Docker Compose Example
 
 ```yaml
-# docker-compose.yml — HTTP disabled
+# docker-compose.yml - HTTP disabled
 version: "3.8"
 
 services:

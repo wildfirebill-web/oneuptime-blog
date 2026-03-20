@@ -101,6 +101,7 @@ The `expression: "true"` means log everything. You can also filter selectively:
 
 ```yaml
 # Log only failed requests
+
 apiVersion: telemetry.istio.io/v1
 kind: Telemetry
 metadata:

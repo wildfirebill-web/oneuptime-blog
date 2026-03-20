@@ -20,6 +20,7 @@ Terraform providers use several common patterns for import IDs:
 
 ```bash
 # Simple ID - just the resource identifier
+
 terraform import aws_instance.web i-0abc123def456789a
 
 # ARN-based ID

@@ -18,6 +18,7 @@ The redirect URI in Portainer doesn't match what's registered with the IdP.
 
 ```bash
 # Check current Portainer redirect URI setting
+
 TOKEN=$(curl -s -X POST \
   https://portainer.example.com/api/auth \
   -H "Content-Type: application/json" \
@@ -126,7 +127,7 @@ When OAuth fails silently, use browser developer tools:
 5. Check the callback URL parameters for error codes
 
 Common callback parameters on error:
-```
+```text
 error=redirect_uri_mismatch
 error_description=...
 ```
@@ -171,4 +172,4 @@ curl -H "Authorization: Bearer $ACCESS_TOKEN" \
 
 ## Conclusion
 
-OAuth troubleshooting requires checking both the Portainer side (configuration, logs, network access) and the IdP side (client registration, redirect URIs, token claims). The most common issue is redirect URI mismatch — fix it by ensuring character-for-character identity between Portainer's setting and the IdP's registered URI. For harder issues, manual OAuth flow testing isolates whether the problem is in the IdP configuration or Portainer's token handling.
+OAuth troubleshooting requires checking both the Portainer side (configuration, logs, network access) and the IdP side (client registration, redirect URIs, token claims). The most common issue is redirect URI mismatch - fix it by ensuring character-for-character identity between Portainer's setting and the IdP's registered URI. For harder issues, manual OAuth flow testing isolates whether the problem is in the IdP configuration or Portainer's token handling.

@@ -31,6 +31,7 @@ RHEL includes an OSPP (Operating System Protection Profile) that maps to many NI
 
 ```bash
 # Install OpenSCAP
+
 dnf install -y openscap-scanner scap-security-guide
 
 # List profiles related to NIST/OSPP

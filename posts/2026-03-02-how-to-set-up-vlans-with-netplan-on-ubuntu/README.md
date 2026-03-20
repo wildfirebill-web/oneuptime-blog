@@ -26,6 +26,7 @@ Make sure the 8021q module is loaded:
 
 ```bash
 # Load the VLAN module
+
 sudo modprobe 8021q
 
 # Verify it's loaded

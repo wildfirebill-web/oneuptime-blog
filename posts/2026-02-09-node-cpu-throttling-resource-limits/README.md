@@ -28,6 +28,7 @@ Container runtime metrics expose throttling statistics. These metrics tell you h
 
 ```bash
 # Check throttling metrics for a pod using kubectl top
+
 kubectl top pod my-app-pod -n production --containers
 
 # Get detailed metrics from the node

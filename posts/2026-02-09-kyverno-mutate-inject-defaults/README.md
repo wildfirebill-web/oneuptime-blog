@@ -374,6 +374,7 @@ Test mutations before deploying them cluster-wide. Create a test pod and verify 
 
 ```bash
 # Create a simple pod
+
 cat <<EOF | kubectl apply -f -
 apiVersion: v1
 kind: Pod

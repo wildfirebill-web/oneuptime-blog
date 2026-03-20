@@ -18,6 +18,7 @@ Subpath mounts are useful when a single volume contains data for multiple servic
 
 ```bash
 # Create and populate a volume with multiple directories
+
 podman volume create shared-data
 podman run --rm -v shared-data:/data docker.io/library/alpine:latest \
   sh -c "mkdir -p /data/config /data/logs /data/uploads && \

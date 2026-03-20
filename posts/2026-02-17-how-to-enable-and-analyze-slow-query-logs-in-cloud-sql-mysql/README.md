@@ -16,6 +16,7 @@ Cloud SQL lets you configure MySQL database flags through the console or gcloud 
 
 ```bash
 # Enable the slow query log and set the threshold to 1 second
+
 # Queries taking longer than 1 second will be logged
 gcloud sql instances patch my-mysql-instance \
   --database-flags \

@@ -49,6 +49,7 @@ First, identify all Micrometer Tracing dependencies and usage patterns in your a
 
 ```bash
 # Find Micrometer dependencies in Maven
+
 mvn dependency:tree | grep micrometer
 
 # Find Micrometer dependencies in Gradle

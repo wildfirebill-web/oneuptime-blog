@@ -35,6 +35,7 @@ Each stage has different symptoms and different diagnostic tools.
 
 ```bash
 # These issues are hardware/firmware related, not Talos-specific
+
 # Check:
 # 1. Power supply connections
 # 2. RAM seating

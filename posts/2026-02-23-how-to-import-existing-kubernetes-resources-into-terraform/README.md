@@ -50,6 +50,7 @@ resource "kubernetes_namespace" "app" {
 }
 
 # Namespace import uses just the name
+
 import {
   to = kubernetes_namespace.app
   id = "application"

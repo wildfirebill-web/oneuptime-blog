@@ -98,6 +98,7 @@ If logrotate compresses old files (producing `.gz` files), the filelog receiver 
 
 ```yaml
 # logrotate config
+
 /var/log/app/*.log {
     daily
     rotate 7

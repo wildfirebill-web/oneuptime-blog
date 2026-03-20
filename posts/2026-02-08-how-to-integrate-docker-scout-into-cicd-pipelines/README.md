@@ -39,6 +39,7 @@ For CI/CD integration, you need:
 
 ```yaml
 # .github/workflows/docker-scout.yml
+
 name: Docker Scout Scan
 
 on:

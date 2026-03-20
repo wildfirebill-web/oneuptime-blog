@@ -25,6 +25,7 @@ def scan_port(host: str, port: int, timeout: float = 1.0) -> bool:
 
 
 # Scan common ports on localhost
+
 target = "127.0.0.1"
 common_ports = [22, 80, 443, 3000, 3306, 5432, 6379, 8080, 8443, 27017]
 

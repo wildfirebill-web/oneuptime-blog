@@ -26,6 +26,7 @@ Managing Cron-based scaling through Flux CD means your scheduled scaling windows
 
 ```yaml
 # clusters/my-cluster/keda-cron/business-hours-scaler.yaml
+
 apiVersion: keda.sh/v1alpha1
 kind: ScaledObject
 metadata:

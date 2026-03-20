@@ -79,6 +79,7 @@ Consider a scenario where you have two manifests in your Git repository:
 
 ```yaml
 # deployment.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

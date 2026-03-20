@@ -18,6 +18,7 @@ If you haven't enabled flow logs yet, set them up to deliver to S3:
 
 ```bash
 # Create a VPC flow log that delivers to S3
+
 aws ec2 create-flow-logs \
   --resource-type VPC \
   --resource-ids vpc-abc12345 \

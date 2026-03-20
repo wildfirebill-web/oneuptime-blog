@@ -46,6 +46,7 @@ The `argocd app set` command lets you change the tracking strategy at any time:
 
 ```bash
 # Switch from branch to tag
+
 argocd app set my-app --revision v1.5.2
 
 # Switch from tag to commit

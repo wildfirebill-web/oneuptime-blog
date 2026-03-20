@@ -16,6 +16,7 @@ You need the `amazon.aws` collection and `boto3` installed, plus valid AWS crede
 
 ```bash
 # Install required components
+
 ansible-galaxy collection install amazon.aws
 pip3 install boto3 botocore
 ```

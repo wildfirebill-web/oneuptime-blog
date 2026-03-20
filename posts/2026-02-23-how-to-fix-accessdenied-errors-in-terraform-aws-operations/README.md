@@ -32,6 +32,7 @@ Before fixing permissions, you need to know exactly which IAM identity Terraform
 
 ```bash
 # Check the current identity
+
 aws sts get-caller-identity
 ```
 
@@ -109,7 +110,7 @@ The most straightforward case. Your IAM policy simply does not include the requi
 
 Remember that Terraform needs permissions for both creating and reading resources. Even for a `terraform plan`, it needs describe/get/list permissions to refresh the state.
 
-### Resource-Level Restrictions
+Resource-Level Restrictions
 
 Your policy might allow the action but restrict it to specific resources:
 

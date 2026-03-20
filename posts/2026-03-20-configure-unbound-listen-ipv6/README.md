@@ -88,6 +88,7 @@ forward-zone:
 
 ```bash
 # Check configuration syntax
+
 unbound-checkconf
 
 # Restart Unbound

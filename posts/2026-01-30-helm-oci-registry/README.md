@@ -45,6 +45,7 @@ Start with a valid Helm chart directory:
 
 ```bash
 # Create a new chart (or use an existing one)
+
 helm create myapp
 
 # Package it into a .tgz file

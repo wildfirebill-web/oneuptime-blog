@@ -596,6 +596,7 @@ await getToken({
 
 ```python
 # oauth2_client.py
+
 # Python OAuth2 token request
 
 import requests

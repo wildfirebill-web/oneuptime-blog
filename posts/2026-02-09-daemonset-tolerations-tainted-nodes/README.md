@@ -223,6 +223,7 @@ When draining nodes for maintenance, add temporary taints:
 
 ```bash
 # Taint node for maintenance
+
 kubectl taint node node-1 maintenance=scheduled:NoExecute
 
 # DaemonSet tolerating maintenance

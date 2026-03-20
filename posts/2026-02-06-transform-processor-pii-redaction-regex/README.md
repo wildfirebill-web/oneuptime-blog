@@ -35,6 +35,7 @@ First, make sure you are using the OpenTelemetry Collector Contrib distribution.
 
 ```bash
 # Check which components are available in your Collector build
+
 otelcol-contrib components
 ```
 

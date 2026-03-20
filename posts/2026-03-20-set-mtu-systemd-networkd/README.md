@@ -14,6 +14,7 @@ MTU can be set in systemd-networkd through either a `.link` file (applied at ude
 
 ```ini
 # /etc/systemd/network/10-eth0.link
+
 [Match]
 MACAddress=aa:bb:cc:dd:ee:01
 

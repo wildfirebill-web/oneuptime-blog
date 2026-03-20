@@ -24,6 +24,7 @@ The only data that is truly gone at this point is the partition table entry itse
 
 ```bash
 # First, identify your drive (be absolutely sure of the device name)
+
 lsblk
 sudo fdisk -l
 

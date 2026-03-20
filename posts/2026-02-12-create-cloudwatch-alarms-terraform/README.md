@@ -54,6 +54,7 @@ resource "aws_sns_topic" "warning_alerts" {
 }
 
 # Subscribe an email endpoint to the critical topic
+
 resource "aws_sns_topic_subscription" "critical_email" {
   topic_arn = aws_sns_topic.critical_alerts.arn
   protocol  = "email"

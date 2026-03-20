@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, FreeBSD, Troubleshooting, Network Diagnostics, ping6
+Tags: IPv6, FreeBSD, Troubleshooting, Network Diagnostics, Ping6
 
 Description: A systematic guide to diagnosing and resolving IPv6 connectivity problems on FreeBSD, including address assignment, routing, NDP, and DNS issues.
 
@@ -10,6 +10,7 @@ Description: A systematic guide to diagnosing and resolving IPv6 connectivity pr
 
 ```bash
 # Show all IPv6 addresses on all interfaces
+
 ifconfig -a | grep inet6
 
 # Check a specific interface

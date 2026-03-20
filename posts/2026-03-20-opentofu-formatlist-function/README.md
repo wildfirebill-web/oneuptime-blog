@@ -1,4 +1,4 @@
-# How to Use the formatlist Function in OpenTofu
+# How to Use the formatlist Function in OpenTofu - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -16,8 +16,8 @@ The `formatlist` function in OpenTofu applies a format string to each element of
 formatlist(spec, values...)
 ```
 
-- **spec** — a printf-style format string
-- **values** — one or more lists (or scalars) providing values for the placeholders
+- **spec** - a printf-style format string
+- **values** - one or more lists (or scalars) providing values for the placeholders
 - Returns a list of formatted strings
 - When multiple list arguments are provided, they are zipped together
 

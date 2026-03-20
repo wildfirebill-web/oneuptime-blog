@@ -24,6 +24,7 @@ First, reserve an IP address in the region where your VM will run:
 
 ```bash
 # Reserve a static external IP address in the us-central1 region
+
 gcloud compute addresses create my-static-ip \
   --region=us-central1 \
   --network-tier=PREMIUM

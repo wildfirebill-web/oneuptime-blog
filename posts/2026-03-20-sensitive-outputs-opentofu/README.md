@@ -1,4 +1,4 @@
-# How to Mark Outputs as Sensitive in OpenTofu
+# How to Mark Outputs as Sensitive in OpenTofu - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -16,6 +16,7 @@ Marking outputs as `sensitive = true` prevents their values from being displayed
 # outputs.tf
 
 # Password output - must be sensitive
+
 output "database_password" {
   description = "The randomly generated database password"
   value       = random_password.db.result

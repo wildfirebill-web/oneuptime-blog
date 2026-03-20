@@ -51,6 +51,7 @@ Here is an example using the gcloud CLI to create a budget scoped to a specific 
 
 ```bash
 # Create a budget of $500/month for a specific project
+
 gcloud billing budgets create \
   --billing-account=01ABCD-EFGH23-456789 \
   --display-name="Production Monthly Budget" \

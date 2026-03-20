@@ -67,6 +67,7 @@ Here is a common mistake where each retry can take 30 seconds, but you only have
 
 ```yaml
 # Problematic: per-try timeout equals overall timeout
+
 apiVersion: networking.istio.io/v1beta1
 kind: VirtualService
 metadata:

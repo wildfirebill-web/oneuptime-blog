@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Ubuntu, DHCP, Networking, SysAdmin, Configuration
+Tags: Ubuntu, DHCP, Networking, Sysadmin, Configuration
 
 Description: Configure DHCP reservations on Ubuntu to assign fixed IP addresses to specific devices by MAC address using ISC DHCP and ISC Kea, with practical examples.
 
@@ -23,6 +23,7 @@ Before configuring reservations, you need the MAC address of each device. Severa
 
 ```bash
 # On the client machine, list network interfaces and their MAC addresses
+
 ip link show
 
 # Or use the older ifconfig

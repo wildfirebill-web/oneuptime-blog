@@ -10,7 +10,7 @@ IPv6 VPN leaks occur when a device with both IPv4 and IPv6 connectivity connects
 
 ## Understanding IPv6 VPN Leaks
 
-```
+```text
 Without leak prevention:
   IPv4 traffic → VPN tunnel → Internet (exits at VPN server)
   IPv6 traffic → Direct to Internet (leaks real IPv6 address!)
@@ -26,6 +26,7 @@ The simplest approach: if your VPN doesn't support IPv6, block all IPv6 outbound
 
 ```bash
 # Linux: block all outbound IPv6 except through VPN interface
+
 sudo ip6tables -A OUTPUT ! -o tun0 -j DROP
 
 # Allow loopback
@@ -103,7 +104,7 @@ ip6tables -I OUTPUT 1 ! -o tun0 -j DROP
 
 # /etc/openvpn/down.sh (run when VPN disconnects)
 #!/bin/bash
-# Remove the blocking rule (or keep it — depends on policy)
+# Remove the blocking rule (or keep it - depends on policy)
 ip6tables -D OUTPUT ! -o tun0 -j DROP
 ```
 
@@ -153,4 +154,4 @@ ping6 -c 2 2001:4860:4860::8888
 # - IPv6 is tunneled: works, but exits at VPN server IP
 ```
 
-Preventing IPv6 leaks is essential for any VPN deployment where privacy or security depends on all traffic exiting through the VPN — blocking or tunneling IPv6 ensures complete coverage.
+Preventing IPv6 leaks is essential for any VPN deployment where privacy or security depends on all traffic exiting through the VPN - blocking or tunneling IPv6 ensures complete coverage.

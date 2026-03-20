@@ -38,6 +38,7 @@ You'll need controls before you can create a framework. Let's start by creating 
 
 ```bash
 # Create a custom control for CloudTrail log validation
+
 aws auditmanager create-control \
   --name "CloudTrail-LogValidation" \
   --description "Ensures CloudTrail has log file validation enabled" \

@@ -536,6 +536,7 @@ These commands install the BCC (BPF Compiler Collection) tools, a suite of pre-b
 
 ```bash
 # Install BCC tools (Ubuntu/Debian)
+
 sudo apt-get install bpfcc-tools linux-headers-$(uname -r)
 
 # Try some tools - each provides instant visibility
@@ -583,7 +584,7 @@ sudo bpftrace -e 'tracepoint:syscalls:sys_enter_read { @start[tid] = nsecs; }
     }'
 ```
 
-### Resources for Learning
+Resources for Learning
 
 | Resource | Description |
 |----------|-------------|

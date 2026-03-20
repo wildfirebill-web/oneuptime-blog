@@ -1,4 +1,4 @@
-# How to Use the -target Flag for Targeted Plans in OpenTofu
+# How to Use the -target Flag for Targeted Plans in OpenTofu - Targeted Plans
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -14,6 +14,7 @@ The `-target` flag limits `tofu plan` and `tofu apply` to specific resources or 
 
 ```bash
 # Target a specific resource
+
 tofu plan -target=aws_instance.web
 tofu apply -target=aws_instance.web
 
@@ -79,7 +80,7 @@ tofu apply -target=aws_security_group.app
 
 OpenTofu shows a warning when you use `-target`:
 
-```
+```hcl
 Warning: Resource targeting is in effect
 ...
 Note that the -target option is not suitable for routine use, and is

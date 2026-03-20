@@ -33,6 +33,7 @@ Set up automatic quarantine for specific security events:
 
 ```bash
 # Quarantine on reverse shell detection
+
 curl -sk -X POST \
   "https://neuvector-manager:8443/v1/response/rule" \
   -H "Content-Type: application/json" \

@@ -32,6 +32,7 @@ While K3s works great on a single node, production deployments benefit from mult
 
 ```bash
 # On the server node (192.168.1.100)
+
 # Use a custom token for security
 curl -sfL https://get.k3s.io | \
     K3S_TOKEN="MySecureK3sToken" \

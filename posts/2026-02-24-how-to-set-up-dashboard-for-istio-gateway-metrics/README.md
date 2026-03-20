@@ -56,6 +56,7 @@ Track 4xx and 5xx responses separately:
 
 ```promql
 # 5xx errors
+
 sum(rate(istio_requests_total{reporter="source",source_workload="istio-ingressgateway",response_code=~"5.*"}[5m]))
 
 # 4xx errors

@@ -29,6 +29,7 @@ graph TD
 
 ```hcl
 # kms.tf
+
 resource "aws_kms_key" "app" {
   description             = "KMS key for ${var.environment} application data"
   deletion_window_in_days = 30
@@ -192,8 +193,8 @@ resource "aws_config_config_rule" "ebs_encrypted" {
 
 ## Best Practices
 
-- Enable EBS encryption by default at the account level — it protects all new volumes without per-resource configuration.
+- Enable EBS encryption by default at the account level - it protects all new volumes without per-resource configuration.
 - Use KMS customer-managed keys (CMKs) for sensitive data so you control the key lifecycle and rotation.
 - Enable `bucket_key_enabled = true` on S3 SSE-KMS to reduce KMS API calls by 99% and lower costs.
-- Use S3 bucket policies to deny unencrypted uploads and non-TLS requests — defense in depth against misconfiguration.
-- Enable key rotation on all KMS keys — annual rotation limits the exposure window if a key is compromised.
+- Use S3 bucket policies to deny unencrypted uploads and non-TLS requests - defense in depth against misconfiguration.
+- Enable key rotation on all KMS keys - annual rotation limits the exposure window if a key is compromised.

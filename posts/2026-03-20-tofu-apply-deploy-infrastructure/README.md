@@ -1,4 +1,4 @@
-# How to Use tofu apply to Deploy Infrastructure
+# How to Use tofu apply to Deploy Infrastructure - Tofu Deploy Infrastructure
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,12 +8,13 @@ Description: Learn how to use tofu apply to deploy and update infrastructure, ap
 
 ## Introduction
 
-`tofu apply` executes the changes described in an OpenTofu plan. It creates, modifies, and destroys cloud resources to bring your infrastructure into the desired state. Understanding how apply works — including confirmation prompts, saved plans, and error handling — is essential for safe infrastructure management.
+`tofu apply` executes the changes described in an OpenTofu plan. It creates, modifies, and destroys cloud resources to bring your infrastructure into the desired state. Understanding how apply works - including confirmation prompts, saved plans, and error handling - is essential for safe infrastructure management.
 
 ## Basic Usage
 
 ```bash
 # Apply changes (with interactive confirmation)
+
 tofu apply
 
 # OpenTofu shows the plan and asks:
@@ -121,7 +122,7 @@ When an apply partially fails:
 # Apply fails mid-way
 # Error: error creating Instance: InvalidSubnetID.NotFound
 
-# State is partially updated — some resources were created
+# State is partially updated - some resources were created
 tofu state list  # Shows what was created
 
 # Fix the issue and re-run apply

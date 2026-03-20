@@ -104,6 +104,7 @@ spec:
 
 ```bash
 # Test allowed path
+
 kubectl exec frontend -- curl http://api-backend:8080/api/users
 
 # Test denied path (should return 403)

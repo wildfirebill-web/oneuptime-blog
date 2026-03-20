@@ -22,6 +22,7 @@ Grafana publishes its official Helm charts through the Grafana community reposit
 
 ```yaml
 # helmrepository-grafana.yaml - Official Grafana Helm chart repository
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

@@ -35,6 +35,7 @@ OpenTelemetry SDKs include a built-in `TraceIdRatioBased` sampler. For consisten
 
 ```python
 # Configure consistent probability sampling at the SDK level.
+
 # All services in the chain must use the same base probability
 # to maintain consistency.
 from opentelemetry.sdk.trace import TracerProvider

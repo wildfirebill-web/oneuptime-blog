@@ -1,4 +1,4 @@
-# How to Create Docker Containers with OpenTofu
+# How to Create Docker Containers with OpenTofu - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -61,6 +61,7 @@ variable "environment" {
 
 ```hcl
 # Create namespace
+
 resource "kubernetes_namespace" "app" {
   metadata {
     name = var.namespace

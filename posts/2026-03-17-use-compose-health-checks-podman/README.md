@@ -18,6 +18,7 @@ Health checks provide a mechanism to verify that a service inside a container is
 
 ```yaml
 # docker-compose.yml
+
 version: "3.8"
 services:
   web:

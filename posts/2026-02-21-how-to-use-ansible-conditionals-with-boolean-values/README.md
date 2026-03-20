@@ -16,6 +16,7 @@ YAML recognizes several values as boolean. All of these are parsed as `true` by 
 
 ```yaml
 # YAML native boolean values
+
 ---
 - name: Boolean basics
   hosts: localhost

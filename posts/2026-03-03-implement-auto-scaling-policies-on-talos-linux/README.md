@@ -28,6 +28,7 @@ All auto-scaling starts with metrics. The metrics server provides CPU and memory
 
 ```bash
 # Install the metrics server
+
 kubectl apply -f https://github.com/kubernetes-sigs/metrics-server/releases/latest/download/components.yaml
 
 # Verify it is working

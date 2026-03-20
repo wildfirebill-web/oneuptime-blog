@@ -22,6 +22,7 @@ Before using nsenter, you need to identify the process ID (PID) of the target co
 
 ```bash
 # Find the node running your pod
+
 kubectl get pod nginx-app-5d7f8b9c4d-x8m2p -o wide
 
 # SSH to the node

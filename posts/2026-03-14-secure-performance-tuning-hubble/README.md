@@ -29,6 +29,7 @@ Monitor aggregation reduces CPU usage but can hide security-relevant events:
 
 ```yaml
 # Security-conscious aggregation settings
+
 # Use 'medium' not 'maximum' to preserve drop visibility
 monitorAggregation: medium
 monitorAggregationInterval: 5s
@@ -178,7 +179,7 @@ helm upgrade cilium cilium/cilium -n kube-system \
   --set hubble.export.static.enabled=true
 ```
 
-## Resource Limits as a Security Boundary
+Resource Limits as a Security Boundary
 
 Resource limits prevent a compromised or malfunctioning Hubble from consuming node resources:
 

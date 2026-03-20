@@ -1,4 +1,4 @@
-# How to Troubleshoot OAuth Login Issues in Portainer
+# How to Troubleshoot OAuth Login Issues in Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,12 +8,13 @@ Description: Diagnose and resolve common OAuth authentication failures in Portai
 
 ---
 
-OAuth login failures in Portainer can have many causes — from misconfigured redirect URIs to expired client secrets. This guide provides systematic troubleshooting steps.
+OAuth login failures in Portainer can have many causes - from misconfigured redirect URIs to expired client secrets. This guide provides systematic troubleshooting steps.
 
 ## Step 1: Enable Debug Logging
 
 ```bash
 # Restart Portainer with debug logging
+
 docker stop portainer && docker container rm portainer
 
 docker run -d \
@@ -34,7 +35,7 @@ docker logs -f portainer 2>&1 | grep -i "oauth\|token\|auth\|redirect"
 
 This is the most frequent OAuth error:
 
-```
+```text
 Error: redirect_uri_mismatch
 The redirect URI in the request did not match a registered redirect URI.
 ```
@@ -65,7 +66,7 @@ curl -X PUT https://localhost:9443/api/settings \
 
 ## Common Error: invalid_client
 
-```
+```text
 Error: invalid_client
 Client authentication failed.
 ```

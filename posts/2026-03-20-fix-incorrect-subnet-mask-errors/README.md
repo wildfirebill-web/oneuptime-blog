@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Subnet Mask, CIDR, Misconfiguration, Troubleshooting, Network
+Tags: Subnet Mask, CIDR, Misconfiguration, Troubleshooting, Networks
 
 Description: Learn how to detect and fix incorrect subnet mask configurations that cause devices to believe they're in different subnets, preventing communication even when hosts are on the same physical network.
 
@@ -10,7 +10,7 @@ Description: Learn how to detect and fix incorrect subnet mask configurations th
 
 A subnet mask mismatch means two devices on the same physical network think they're in different networks:
 
-```
+```text
 Device A: IP 192.168.1.10, mask 255.255.255.0  → subnet 192.168.1.0/24
 Device B: IP 192.168.1.20, mask 255.255.0.0    → subnet 192.168.0.0/16
 
@@ -23,6 +23,7 @@ Result: asymmetric routing, no communication
 
 ```bash
 # Scan network and compare subnet masks
+
 nmap -sn 192.168.1.0/24 -v
 
 # On each device, check the mask
@@ -63,7 +64,7 @@ ip route get 192.168.1.20
 ## Step 3: Fix on Linux
 
 ```bash
-# Temporary fix — set correct mask
+# Temporary fix - set correct mask
 sudo ip addr del 192.168.1.10/16 dev eth0    # Remove wrong mask
 sudo ip addr add 192.168.1.10/24 dev eth0    # Add correct mask
 sudo ip route add default via 192.168.1.1    # Restore default route
@@ -119,7 +120,7 @@ netsh interface ip set address name="Ethernet" static 192.168.1.10 255.255.255.0
 
 ## Step 5: Fix on Cisco IOS
 
-```
+```text
 Router# configure terminal
 Router(config)# interface GigabitEthernet0/0
 Router(config-if)# no ip address
@@ -156,4 +157,4 @@ for name, addr_str in devices:
 
 ## Conclusion
 
-Subnet mask mismatches cause two devices to see each other as being in different networks, even when physically adjacent. Diagnose with `ip route get [target-ip]` — if it shows the gateway instead of direct, the local mask is wrong. Fix on Linux with `ip addr del/add` or netplan, on Windows with `New-NetIPAddress -PrefixLength 24`, and on Cisco with `ip address X.X.X.X 255.255.255.0`. Audit all devices systematically to ensure consistent masks across the network.
+Subnet mask mismatches cause two devices to see each other as being in different networks, even when physically adjacent. Diagnose with `ip route get [target-ip]` - if it shows the gateway instead of direct, the local mask is wrong. Fix on Linux with `ip addr del/add` or netplan, on Windows with `New-NetIPAddress -PrefixLength 24`, and on Cisco with `ip address X.X.X.X 255.255.255.0`. Audit all devices systematically to ensure consistent masks across the network.

@@ -19,6 +19,7 @@ Rocky Linux is an enterprise-grade Linux distribution designed as a downstream r
 
 ```bash
 # Update all packages
+
 sudo dnf update -y
 
 # Disable swap

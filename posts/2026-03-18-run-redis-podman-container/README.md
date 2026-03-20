@@ -20,6 +20,7 @@ Download the official Redis image.
 
 ```bash
 # Pull the latest Redis image
+
 podman pull docker.io/library/redis:7
 
 # Verify the image

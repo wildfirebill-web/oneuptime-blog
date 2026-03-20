@@ -30,6 +30,7 @@ You will need:
 
 ```hcl
 # main.tf - Terraform and provider setup
+
 terraform {
   required_version = ">= 1.3.0"
 

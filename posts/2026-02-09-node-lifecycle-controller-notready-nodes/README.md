@@ -20,6 +20,7 @@ Check node status and conditions:
 
 ```bash
 # View all nodes and their status
+
 kubectl get nodes
 
 # Get detailed node conditions

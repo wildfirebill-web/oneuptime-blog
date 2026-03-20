@@ -24,6 +24,7 @@ sudo apt update
 sudo apt install -y openjdk-17-jre-headless
 
 # Verify Java is installed correctly
+
 java -version
 ```
 

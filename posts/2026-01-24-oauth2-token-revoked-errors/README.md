@@ -37,6 +37,7 @@ Different OAuth2 providers return this error in various formats.
 
 ```python
 # Common error formats
+
 # Standard OAuth2
 {"error": "invalid_token", "error_description": "The access token has been revoked"}
 

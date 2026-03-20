@@ -29,6 +29,7 @@ PodDisruptionBudgets must be deployed by Flux before you need them. Check that a
 
 ```yaml
 # deploy/pdb.yaml - in the application's Git repository
+
 apiVersion: policy/v1
 kind: PodDisruptionBudget
 metadata:

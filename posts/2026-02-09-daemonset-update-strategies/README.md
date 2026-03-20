@@ -131,6 +131,7 @@ After updating the DaemonSet spec, manually delete pods to trigger updates:
 
 ```bash
 # List DaemonSet pods
+
 kubectl get pods -l app=storage-driver -o wide
 
 # Update one node at a time

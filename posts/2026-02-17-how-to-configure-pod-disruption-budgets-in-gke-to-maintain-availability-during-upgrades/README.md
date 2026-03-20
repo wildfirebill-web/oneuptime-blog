@@ -52,6 +52,7 @@ The simplest PDB specifies the minimum number of pods that must be available at 
 
 ```yaml
 # pdb-min-available.yaml - At least 2 pods must be running at all times
+
 apiVersion: policy/v1
 kind: PodDisruptionBudget
 metadata:

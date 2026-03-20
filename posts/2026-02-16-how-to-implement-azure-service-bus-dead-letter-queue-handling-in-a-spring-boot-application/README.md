@@ -27,6 +27,7 @@ Each dead-lettered message includes properties that tell you why it was dead-let
 
 ```bash
 # Create a new Spring Boot project
+
 # Add these dependencies to pom.xml
 ```
 

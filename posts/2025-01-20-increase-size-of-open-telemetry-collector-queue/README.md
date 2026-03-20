@@ -18,6 +18,7 @@ The following YAML configuration shows how to modify the exporter section of you
 
 ```yaml
 # Exporter section of your OpenTelemetry Collector configuration file
+
 # Exporters define where and how telemetry data is sent
 exporters:
 

@@ -18,6 +18,7 @@ HAProxy uses the SPOE (Stream Processing Offload Engine) or a shared library for
 
 ```bash
 # Build the OpenTelemetry tracer plugin for HAProxy
+
 git clone https://github.com/haproxytech/opentracing-c-wrapper.git
 cd opentracing-c-wrapper
 mkdir build && cd build

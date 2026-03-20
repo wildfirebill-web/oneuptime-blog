@@ -411,6 +411,7 @@ Test that status and scale work independently.
 
 ```bash
 # Create an application
+
 cat <<EOF | kubectl apply -f -
 apiVersion: example.com/v1
 kind: Application

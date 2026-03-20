@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Aqua Security, Kubernetes, Container Security, DevSecOps
+Tags: Rancher, Aqua security, Kubernetes, Container Security, DevSecOps
 
 Description: Learn how to integrate Aqua Security with Rancher-managed Kubernetes clusters to enforce container image scanning, runtime protection, and compliance policies.
 
@@ -10,14 +10,14 @@ Description: Learn how to integrate Aqua Security with Rancher-managed Kubernete
 
 Aqua Security is a cloud-native security platform that provides:
 
-- **Image scanning** — Detect vulnerabilities in container images before deployment
-- **Runtime protection** — Monitor and block suspicious container behavior
-- **Compliance** — Enforce CIS benchmarks and custom security policies
-- **Network policies** — Micro-segmentation and firewall rules for containers
+- **Image scanning** - Detect vulnerabilities in container images before deployment
+- **Runtime protection** - Monitor and block suspicious container behavior
+- **Compliance** - Enforce CIS benchmarks and custom security policies
+- **Network policies** - Micro-segmentation and firewall rules for containers
 
 ## Architecture Overview
 
-```
+```text
 Rancher → Kubernetes Cluster → Aqua Server (Enforcer Pods)
                               ↓
                     Image Registry → Aqua Scanner
@@ -143,7 +143,7 @@ Configure Aqua to send alerts to Slack or email:
 
 1. **Scan images before pushing** to the registry using `aquasec scan` in CI/CD
 2. **Enable admission control** to prevent unscanned images from running
-3. **Use least-privilege runtime policies** — block shell access in production
+3. **Use least-privilege runtime policies** - block shell access in production
 4. **Integrate with Rancher RBAC** so only authorized users can change security policies
 5. **Set up alerts** for critical CVEs and policy violations
 

@@ -1,8 +1,8 @@
-# How to Configure the OSS Backend (Alibaba Cloud) in OpenTofu
+# How to Configure the OSS Backend (Alibaba Cloud) in OpenTofu - Opentofu
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, Infrastructure as Code, Backends
+Tags: OpenTofu, Terraform, Infrastructure as Code, Backend
 
 Description: Learn how to configure the OSS backend in OpenTofu to store state in Alibaba Cloud Object Storage Service with built-in locking via TableStore.
 
@@ -50,6 +50,7 @@ tofu init
 
 ```bash
 # Using aliyun CLI
+
 aliyun oss mb oss://acme-tofu-state --region cn-hangzhou
 
 # Enable versioning

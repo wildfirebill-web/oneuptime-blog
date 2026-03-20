@@ -73,6 +73,7 @@ After export, verify the file contains the expected resources:
 
 ```bash
 # Check file size
+
 ls -lh calico-export.yaml
 
 # Count resource types

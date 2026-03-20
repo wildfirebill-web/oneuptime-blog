@@ -16,6 +16,7 @@ The syntax is straightforward. You provide the namespace and collection name in 
 
 ```bash
 # Initialize a new collection
+
 ansible-galaxy collection init myorg.infrastructure
 ```
 

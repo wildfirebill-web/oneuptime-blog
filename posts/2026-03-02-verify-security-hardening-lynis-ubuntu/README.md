@@ -16,6 +16,7 @@ Ubuntu's package repositories include Lynis, but the version is often behind the
 
 ```bash
 # Add the CISOfy repository
+
 sudo wget -O - https://packages.cisofy.com/keys/cisofy-software-public.key | \
     sudo gpg --dearmor -o /usr/share/keyrings/cisofy-software.gpg
 

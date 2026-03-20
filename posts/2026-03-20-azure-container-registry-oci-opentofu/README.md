@@ -8,7 +8,7 @@ Description: Learn how to use Azure Container Registry as an OCI registry for di
 
 ## Introduction
 
-Azure Container Registry (ACR) is OCI-compliant and supports storing arbitrary OCI artifacts alongside container images. For Azure-centric organizations, ACR offers Azure AD authentication, geo-replication, private endpoints, and integration with existing Azure infrastructure — making it ideal for OpenTofu provider and module distribution.
+Azure Container Registry (ACR) is OCI-compliant and supports storing arbitrary OCI artifacts alongside container images. For Azure-centric organizations, ACR offers Azure AD authentication, geo-replication, private endpoints, and integration with existing Azure infrastructure - making it ideal for OpenTofu provider and module distribution.
 
 ## Creating ACR for OpenTofu
 
@@ -34,6 +34,7 @@ resource "azurerm_container_registry" "opentofu" {
 }
 
 # Geo-replication for multi-region availability
+
 resource "azurerm_container_registry_replication" "west_europe" {
   name                    = "westeurope"
   container_registry_name = azurerm_container_registry.opentofu.name

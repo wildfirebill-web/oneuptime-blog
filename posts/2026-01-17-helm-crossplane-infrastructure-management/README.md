@@ -61,6 +61,7 @@ flowchart TB
 
 ```bash
 # Add Crossplane Helm repository
+
 helm repo add crossplane-stable https://charts.crossplane.io/stable
 helm repo update
 

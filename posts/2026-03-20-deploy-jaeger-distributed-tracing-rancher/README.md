@@ -20,6 +20,7 @@ Jaeger is an open-source distributed tracing system originally built by Uber. It
 
 ```bash
 # Install cert-manager (required by Jaeger Operator)
+
 helm repo add jetstack https://charts.jetstack.io
 helm install cert-manager jetstack/cert-manager \
   --namespace cert-manager --create-namespace \

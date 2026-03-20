@@ -45,6 +45,7 @@ First, enable the runtime monitoring feature in GuardDuty.
 
 ```bash
 # Get your GuardDuty detector ID
+
 DETECTOR_ID=$(aws guardduty list-detectors --query 'DetectorIds[0]' --output text)
 
 # Enable ECS runtime monitoring

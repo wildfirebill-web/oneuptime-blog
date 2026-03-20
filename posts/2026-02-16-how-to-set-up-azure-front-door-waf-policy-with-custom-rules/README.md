@@ -47,6 +47,7 @@ flowchart TD
 
 ```bash
 # Create a resource group
+
 az group create --name rg-waf-fd-demo --location eastus
 
 # Create a WAF policy for Front Door

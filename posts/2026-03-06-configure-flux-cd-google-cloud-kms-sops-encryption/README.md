@@ -27,6 +27,7 @@ Create a KMS keyring and key for SOPS encryption.
 
 ```bash
 # Set environment variables
+
 export PROJECT_ID=$(gcloud config get-value project)
 export REGION="us-central1"
 export KEYRING_NAME="flux-sops-keyring"

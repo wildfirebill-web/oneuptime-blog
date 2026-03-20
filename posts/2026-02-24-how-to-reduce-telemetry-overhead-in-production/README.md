@@ -18,6 +18,7 @@ Before optimizing, measure what you are actually spending on telemetry. Check th
 
 ```bash
 # Get resource usage for all istio-proxy containers
+
 kubectl top pods -A --containers | grep istio-proxy | sort -k4 -rn | head -20
 ```
 

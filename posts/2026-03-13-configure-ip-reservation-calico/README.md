@@ -28,6 +28,7 @@ View any existing IP reservations before creating new ones.
 
 ```bash
 # List all IP reservations in the cluster
+
 calicoctl get ipreservations -o wide
 
 # Check current IPAM allocations to understand what is in use

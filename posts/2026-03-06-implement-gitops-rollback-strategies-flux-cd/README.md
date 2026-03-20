@@ -29,6 +29,7 @@ The simplest and most common rollback strategy. Create a new commit that undoes 
 
 ```bash
 # Identify the bad commit
+
 git log --oneline -10
 
 # Revert the specific commit

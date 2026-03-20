@@ -50,6 +50,7 @@ One of the most practical uses of `to_yaml` is generating Kubernetes resource de
 
 ```yaml
 # k8s_deploy.yml - Generate Kubernetes deployment manifest
+
 - name: Generate Kubernetes deployment
   hosts: localhost
   vars:

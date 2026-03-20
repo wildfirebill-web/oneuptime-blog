@@ -24,6 +24,7 @@ First, create an OIDC provider in your AWS account:
 
 ```bash
 # Get the OIDC issuer URL from your EKS cluster
+
 CLUSTER_NAME="my-cluster"
 REGION="us-east-1"
 

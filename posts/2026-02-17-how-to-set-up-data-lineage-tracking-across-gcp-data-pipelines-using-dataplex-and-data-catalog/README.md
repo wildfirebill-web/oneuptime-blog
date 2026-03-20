@@ -40,6 +40,7 @@ Data lineage is built into the Data Catalog API. Enable it:
 
 ```bash
 # Enable the Data Lineage API
+
 gcloud services enable datalineage.googleapis.com
 
 # Also make sure Data Catalog is enabled

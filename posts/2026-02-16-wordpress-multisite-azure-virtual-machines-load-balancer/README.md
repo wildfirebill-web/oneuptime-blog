@@ -39,6 +39,7 @@ Start by creating a virtual network and subnet for the VMs.
 
 ```bash
 # Create a resource group
+
 az group create --name rg-wp-multisite --location eastus
 
 # Create a virtual network

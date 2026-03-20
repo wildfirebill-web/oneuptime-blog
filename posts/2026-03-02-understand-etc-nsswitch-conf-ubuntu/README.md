@@ -37,6 +37,7 @@ A typical Ubuntu `nsswitch.conf`:
 
 ```text
 # /etc/nsswitch.conf
+
 #
 # Example configuration of GNU Name Service Switch functionality.
 # If you have the `glibc-doc-reference' and `info' packages installed, try:

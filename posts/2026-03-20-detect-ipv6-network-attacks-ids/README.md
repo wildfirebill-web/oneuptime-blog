@@ -16,6 +16,7 @@ IPv6 introduces several new attack vectors that traditional IPv4-focused IDS sys
 
 ```bash
 # Rogue RA sends fake default route to all hosts
+
 # Attacker becomes default gateway (MITM)
 
 # Detection with tcpdump

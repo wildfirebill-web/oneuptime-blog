@@ -103,6 +103,7 @@ resource "azurerm_key_vault_secret" "api_key" {
 
 ```hcl
 # Grant application managed identity the ability to read secrets
+
 resource "azurerm_role_assignment" "app_secret_reader" {
   scope                = azurerm_key_vault.main.id
   role_definition_name = "Key Vault Secrets User"  # Read-only

@@ -41,6 +41,7 @@ Here is a typical GitRepository configuration.
 
 ```yaml
 # Current GitRepository configuration
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: GitRepository
 metadata:

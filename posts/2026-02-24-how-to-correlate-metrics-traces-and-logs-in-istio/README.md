@@ -246,6 +246,7 @@ Loki derived fields configuration:
 
 ```yaml
 # In Grafana Loki data source configuration
+
 derivedFields:
 - datasourceUid: tempo-uid
   matcherRegex: '"trace_id":"([a-f0-9]+)"'

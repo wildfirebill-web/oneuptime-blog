@@ -146,6 +146,7 @@ If you're in a regulated environment, MemoryDB's security defaults save you from
 
 ```python
 # Typical ElastiCache pattern - cache-aside
+
 def get_user(user_id):
     # Check cache
     cached = redis.get(f"user:{user_id}")

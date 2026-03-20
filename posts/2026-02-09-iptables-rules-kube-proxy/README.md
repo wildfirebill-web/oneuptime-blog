@@ -18,6 +18,7 @@ Kube-proxy creates custom chains in both the NAT and filter tables:
 
 ```bash
 # View kube-proxy NAT chains
+
 iptables -t nat -L -n | grep KUBE
 
 # Key chains:

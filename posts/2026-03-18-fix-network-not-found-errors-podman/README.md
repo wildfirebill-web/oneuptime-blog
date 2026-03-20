@@ -67,6 +67,7 @@ DNS resolution is enabled by default for custom networks created with Netavark. 
 
 ```bash
 # DNS is enabled by default, no flag needed
+
 podman network create mynetwork
 
 # To disable DNS resolution

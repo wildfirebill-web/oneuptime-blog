@@ -18,6 +18,7 @@ The Compose `secrets` directive provides a secure way to pass sensitive informat
 
 ```yaml
 # docker-compose.yml
+
 version: "3.8"
 services:
   db:

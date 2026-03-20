@@ -74,6 +74,7 @@ If you prefer the command line, you can use curl to generate your project direct
 
 ```bash
 # Generate a Maven project with Spring Web and Actuator
+
 curl https://start.spring.io/starter.zip \
   -d type=maven-project \
   -d language=java \

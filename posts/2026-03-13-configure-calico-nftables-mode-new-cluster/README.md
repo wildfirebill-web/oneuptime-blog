@@ -77,6 +77,7 @@ calicoctl patch felixconfiguration default \
 
 ```bash
 # Check on a node
+
 nft list tables
 # Expected output includes tables like:
 # table ip calico-filter

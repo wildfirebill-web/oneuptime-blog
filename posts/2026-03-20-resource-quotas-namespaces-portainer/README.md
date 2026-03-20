@@ -1,4 +1,4 @@
-# How to Set Resource Quotas on Namespaces in Portainer
+# How to Set Resource Quotas on Namespaces in Portainer - Namespaces
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -34,6 +34,7 @@ In Portainer:
 
 ```yaml
 # Full resource quota for a production namespace
+
 apiVersion: v1
 kind: ResourceQuota
 metadata:

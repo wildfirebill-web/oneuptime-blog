@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: dpkt, DNS, IPv4, Packet Analysis, Python, Network Security, PCAP
+Tags: Dpkt, DNS, IPv4, Packet Analysis, Python, Network Security, PCAP
 
 Description: Parse and analyze DNS query and response packets from IPv4 traffic captures using the Python dpkt library to audit DNS usage and detect anomalies.
 
 ## Introduction
 
-DNS traffic analysis reveals which domains your hosts are resolving — useful for security auditing (detecting malware C2 domains), capacity planning, and debugging connectivity issues. `dpkt` provides efficient DNS parsing from PCAP files or live capture.
+DNS traffic analysis reveals which domains your hosts are resolving - useful for security auditing (detecting malware C2 domains), capacity planning, and debugging connectivity issues. `dpkt` provides efficient DNS parsing from PCAP files or live capture.
 
 ## Prerequisites
 
@@ -96,6 +96,7 @@ print(f"Total DNS A responses: {len(responses)}")
 from collections import Counter
 
 # Count queries per domain
+
 domain_counts = Counter(q['name'] for q in queries)
 
 print("\nTop 20 Queried Domains:")

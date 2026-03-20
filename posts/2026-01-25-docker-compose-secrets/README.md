@@ -57,6 +57,7 @@ echo "supersecretpassword" > secrets/db_password.txt
 echo "sk_live_abc123" > secrets/api_key.txt
 
 # Restrict file permissions
+
 chmod 600 secrets/*.txt
 ```
 

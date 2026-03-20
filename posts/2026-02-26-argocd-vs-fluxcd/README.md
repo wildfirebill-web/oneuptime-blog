@@ -59,6 +59,7 @@ In ArgoCD, you define applications using the `Application` custom resource:
 
 ```yaml
 # ArgoCD Application definition
+
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:

@@ -41,6 +41,7 @@ At minimum, pin your base image to a minor version:
 
 ```dockerfile
 # Bad - unpredictable base image
+
 FROM python:latest
 
 # Better - pinned to minor version

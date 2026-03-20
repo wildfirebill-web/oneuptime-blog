@@ -146,6 +146,7 @@ Use sync waves to delete the old resource before creating the new one:
 
 ```yaml
 # First, a PreSync hook to delete the old Job
+
 apiVersion: batch/v1
 kind: Job
 metadata:

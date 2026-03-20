@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: NFS, IPv4, Performance, rsize, wsize, Tuning, Linux, Networking
+Tags: NFS, IPv4, Performance, Rsize, Wsize, Tuning, Linux, Networking
 
 Description: Learn how to tune NFS rsize and wsize mount options for optimal throughput over IPv4 networks, including how to determine the right values for your environment.
 
@@ -30,6 +30,7 @@ Check current values:
 
 ```bash
 # View current NFS mount options including negotiated rsize/wsize
+
 mount | grep nfs
 
 # Or

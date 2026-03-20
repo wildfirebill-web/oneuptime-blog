@@ -16,6 +16,7 @@ Assign services to profiles using the `profiles` attribute. Services without pro
 
 ```yaml
 # docker-compose.yml
+
 version: '3.8'
 
 services:

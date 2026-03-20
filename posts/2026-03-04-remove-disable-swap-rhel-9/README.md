@@ -32,6 +32,7 @@ graph TD
 
 ```bash
 # Show all active swap
+
 swapon --show
 
 # Check fstab for swap entries

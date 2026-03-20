@@ -8,7 +8,7 @@ Description: Deploy code-server to run VS Code in your browser from anywhere usi
 
 ## Introduction
 
-code-server is VS Code running on a remote server, accessible through a web browser. It means you can code from any device — a tablet, Chromebook, or thin client — with a full VS Code experience. This guide covers deploying a secure, persistent code-server instance using Portainer.
+code-server is VS Code running on a remote server, accessible through a web browser. It means you can code from any device - a tablet, Chromebook, or thin client - with a full VS Code experience. This guide covers deploying a secure, persistent code-server instance using Portainer.
 
 ## Prerequisites
 
@@ -21,6 +21,7 @@ code-server is VS Code running on a remote server, accessible through a web brow
 
 ```yaml
 # docker-compose.yml - code-server (VS Code in browser)
+
 version: "3.8"
 
 networks:

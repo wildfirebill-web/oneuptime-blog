@@ -38,6 +38,7 @@ Start by creating the pool and provider:
 
 ```bash
 # Create a workforce identity pool
+
 gcloud iam workforce-pools create my-corp-pool \
     --organization=123456789 \
     --location=global \

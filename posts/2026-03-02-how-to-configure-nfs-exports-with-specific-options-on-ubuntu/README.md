@@ -30,6 +30,7 @@ Where `client_spec` can be:
 
 ```bash
 # Install NFS server packages
+
 sudo apt update
 sudo apt install nfs-kernel-server -y
 

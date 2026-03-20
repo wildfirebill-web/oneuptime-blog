@@ -25,6 +25,7 @@ Request a certificate using the AWS CLI:
 
 ```bash
 # For edge-optimized endpoints, always use us-east-1
+
 aws acm request-certificate \
   --domain-name "api.yourcompany.com" \
   --validation-method DNS \

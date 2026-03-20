@@ -48,6 +48,7 @@ graph LR
 ```bash
 #!/bin/bash
 # typha-health-check.sh
+
 NODES=$(kubectl get nodes --no-headers | wc -l)
 CONNECTIONS=$(kubectl exec -n calico-system deployment/calico-typha -- \
   wget -qO- http://localhost:9093/metrics 2>/dev/null | grep typha_connections_active | awk '{print $2}')

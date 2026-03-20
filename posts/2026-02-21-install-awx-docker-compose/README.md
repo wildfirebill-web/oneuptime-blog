@@ -22,6 +22,7 @@ You need a Linux host (Ubuntu 22.04 recommended) with:
 
 ```bash
 # Verify Docker is installed and running
+
 docker version
 docker compose version
 

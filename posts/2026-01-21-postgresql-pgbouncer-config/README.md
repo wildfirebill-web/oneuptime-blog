@@ -20,6 +20,7 @@ PgBouncer is a lightweight connection pooler for PostgreSQL that significantly r
 
 ```bash
 # Ubuntu/Debian
+
 sudo apt install pgbouncer
 
 # RHEL/CentOS

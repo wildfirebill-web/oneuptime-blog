@@ -23,6 +23,7 @@ If your cluster uses kube-proxy in IPVS mode, you need to enable strict ARP befo
 
 ```bash
 # Edit the kube-proxy ConfigMap to enable strict ARP
+
 kubectl edit configmap -n kube-system kube-proxy
 
 # Set strictARP: true under ipvs configuration

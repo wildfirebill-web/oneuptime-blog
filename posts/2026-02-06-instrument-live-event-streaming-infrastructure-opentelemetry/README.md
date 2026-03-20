@@ -27,6 +27,7 @@ tracer = trace.get_tracer("livestream.infra", "1.0.0")
 meter = metrics.get_meter("livestream.infra.metrics", "1.0.0")
 
 # Viewer count (updated periodically)
+
 concurrent_viewers = meter.create_observable_gauge(
     name="livestream.viewers.concurrent",
     description="Number of concurrent viewers across all streams",

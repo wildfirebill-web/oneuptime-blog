@@ -53,6 +53,7 @@ Create PriorityClasses for system components that must always run.
 
 ```yaml
 # clusters/my-cluster/priority-classes/system-priority-classes.yaml
+
 apiVersion: scheduling.k8s.io/v1
 kind: PriorityClass
 metadata:

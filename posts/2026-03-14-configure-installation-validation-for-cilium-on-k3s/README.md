@@ -29,6 +29,7 @@ Enable built-in Cilium health checking in your Helm values:
 
 ```yaml
 # cilium-validation-values.yaml
+
 # Helm values that enable comprehensive health checking
 
 # Enable health checking between Cilium agents

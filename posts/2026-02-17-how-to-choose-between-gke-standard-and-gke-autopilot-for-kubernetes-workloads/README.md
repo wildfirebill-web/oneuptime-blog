@@ -49,6 +49,7 @@ If your workloads require specific node configurations - custom kernel parameter
 
 ```bash
 # Create a Standard cluster with custom node pool configuration
+
 gcloud container clusters create my-standard-cluster \
     --region=us-central1 \
     --num-nodes=3 \

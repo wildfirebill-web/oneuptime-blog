@@ -26,6 +26,7 @@ Start by creating a data exchange. This is the container where you will publish 
 
 ```bash
 # Create a data exchange for sharing analytics data
+
 gcloud bigquery analytics-hub data-exchanges create analytics_exchange \
   --location=us \
   --display-name="Company Analytics Data Exchange" \

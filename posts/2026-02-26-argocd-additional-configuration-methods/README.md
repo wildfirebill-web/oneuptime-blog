@@ -351,7 +351,7 @@ metadata:
     notifications.argoproj.io/subscribe.on-sync-succeeded.slack: my-channel
 ```
 
-### Resource Annotations
+Resource Annotations
 
 ```yaml
 metadata:
@@ -413,6 +413,7 @@ All ConfigMaps and non-sensitive Secrets should be stored in Git and managed by 
 
 ```yaml
 # App of apps for ArgoCD self-management
+
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:

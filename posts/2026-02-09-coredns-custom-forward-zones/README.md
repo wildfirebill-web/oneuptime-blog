@@ -24,6 +24,7 @@ Start by examining your existing CoreDNS configuration:
 
 ```bash
 # View current CoreDNS ConfigMap
+
 kubectl get configmap coredns -n kube-system -o yaml
 ```
 

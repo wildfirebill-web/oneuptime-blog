@@ -391,6 +391,7 @@ Changes first deploy to dev. Only after dev is healthy does staging sync. Produc
 
 ```bash
 # List all generated applications
+
 argocd appset get myapp-per-env
 
 # Check environment-specific applications

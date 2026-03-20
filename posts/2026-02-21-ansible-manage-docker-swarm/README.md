@@ -40,6 +40,7 @@ Your inventory needs to separate managers from workers. Here is a sample invento
 
 ```ini
 # inventory/swarm.ini - Swarm cluster inventory
+
 [swarm_managers]
 manager1 ansible_host=10.0.1.10
 manager2 ansible_host=10.0.1.11

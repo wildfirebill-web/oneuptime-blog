@@ -66,6 +66,7 @@ Set up everything you need to observe the exercise in advance:
 
 ```bash
 # Create a temporary monitoring dashboard for the game day
+
 gcloud monitoring dashboards create --config-from-file=game-day-dashboard.json
 
 # Make sure Cloud Logging is capturing all relevant logs

@@ -75,7 +75,7 @@ Open `http://<host>:5678` and log in.
 
 Create a simple workflow that sends a Slack message when an HTTP webhook is triggered:
 
-1. Add a **Webhook** trigger node — copy the generated URL.
+1. Add a **Webhook** trigger node - copy the generated URL.
 2. Add a **Slack** node with your OAuth token.
 3. Set the Slack message to `{{ $json.body.message }}`.
 4. Activate the workflow.

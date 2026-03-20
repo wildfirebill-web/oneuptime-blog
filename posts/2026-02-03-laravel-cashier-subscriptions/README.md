@@ -147,6 +147,7 @@ Add your Stripe credentials to your `.env` file:
 
 ```bash
 # Get these from https://dashboard.stripe.com/apikeys
+
 STRIPE_KEY=pk_test_your_publishable_key_here
 STRIPE_SECRET=sk_test_your_secret_key_here
 

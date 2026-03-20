@@ -34,6 +34,7 @@ Start by enabling the required APIs and creating the Pub/Sub topics.
 
 ```bash
 # Enable all necessary APIs
+
 gcloud services enable pubsub.googleapis.com
 gcloud services enable cloudfunctions.googleapis.com
 gcloud services enable firestore.googleapis.com

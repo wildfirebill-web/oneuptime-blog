@@ -28,6 +28,7 @@ Find deprecated APIs currently in use:
 
 ```bash
 # Check for deprecated API requests in the last hour
+
 kubectl get --raw /metrics | \
   grep apiserver_requested_deprecated_apis
 

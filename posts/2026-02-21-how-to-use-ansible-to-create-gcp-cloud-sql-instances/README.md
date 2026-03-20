@@ -22,6 +22,7 @@ ansible-galaxy collection install google.cloud
 pip install google-auth requests google-api-python-client
 
 # Enable required APIs
+
 gcloud services enable sqladmin.googleapis.com servicenetworking.googleapis.com --project=my-project-123
 ```
 

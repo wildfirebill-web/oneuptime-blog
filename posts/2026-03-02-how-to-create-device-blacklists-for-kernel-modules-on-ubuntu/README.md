@@ -24,6 +24,7 @@ Before blacklisting, identify the exact module name.
 
 ```bash
 # List currently loaded modules
+
 lsmod
 
 # Find which module handles a specific PCI device

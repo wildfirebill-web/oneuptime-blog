@@ -364,6 +364,7 @@ from opentelemetry.sdk.trace.export import ConsoleSpanExporter, SimpleSpanProces
 from opentelemetry.sdk.resources import Resource, SERVICE_NAME
 
 # Create a resource with service information
+
 resource = Resource(attributes={
     SERVICE_NAME: "my-python-service"
 })

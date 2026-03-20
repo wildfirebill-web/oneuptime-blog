@@ -14,6 +14,7 @@ Hot Standby maintains a full-capacity, fully operational environment in the DR r
 
 ```hcl
 # main.tf - Hot standby mirrors production exactly
+
 module "app_primary" {
   source    = "./modules/app-environment"
   providers = { aws = aws.primary }

@@ -88,6 +88,7 @@ Inventory all your Kubernetes workloads.
 
 ```bash
 # Export all deployments, services, and config from your K8s cluster
+
 kubectl get deployments --all-namespaces -o yaml > k8s-deployments.yaml
 kubectl get services --all-namespaces -o yaml > k8s-services.yaml
 kubectl get configmaps --all-namespaces -o yaml > k8s-configmaps.yaml

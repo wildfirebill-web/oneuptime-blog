@@ -129,6 +129,7 @@ def generate_signed_policy(
 
 
 # Generate a policy for user image uploads
+
 policy = generate_signed_policy(
     bucket_name="my-upload-bucket",
     key_prefix="uploads/user-123/",

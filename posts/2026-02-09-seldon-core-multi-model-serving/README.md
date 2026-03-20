@@ -21,6 +21,7 @@ helm repo add seldon https://storage.googleapis.com/seldon-charts
 helm repo update
 
 # Install Seldon Core operator
+
 helm install seldon-core seldon/seldon-core-operator \
   --namespace seldon-system \
   --create-namespace \

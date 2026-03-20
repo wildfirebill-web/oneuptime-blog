@@ -86,6 +86,7 @@ securityContext:
 
 ```bash
 # Verify fsGroup is working
+
 kubectl exec mypod -- ls -la /data
 # Files should show group ownership matching fsGroup
 ```

@@ -36,6 +36,7 @@ The simplest cause is running Git commands in a directory that was never initial
 
 ```bash
 # Check if you're in a git repository
+
 ls -la | grep .git
 # If no output, there's no .git directory
 

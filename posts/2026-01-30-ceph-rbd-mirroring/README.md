@@ -154,6 +154,7 @@ Calculate your bandwidth needs based on change rate:
 
 ```bash
 # Estimate replication bandwidth
+
 # Formula: (Daily change rate in GB) * 8 / (Replication window in seconds)
 # Example: 100GB daily changes, replicated over 24 hours
 # (100 * 8) / 86400 = 9.26 Mbps minimum
@@ -858,7 +859,7 @@ ceph config set global ms_client_mode secure
 ceph config get global ms_cluster_mode
 ```
 
-### Resource Limits
+Resource Limits
 
 Prevent rbd-mirror from consuming excessive resources.
 

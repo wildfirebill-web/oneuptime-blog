@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, base64encode, User Data, EC2, Cloud Init, Startup Scripts
+Tags: OpenTofu, Base64encode, User Data, EC2, Cloud Init, Startup Scripts
 
 Description: Learn how to use base64encode in OpenTofu to encode EC2 user data scripts, Kubernetes secrets, and other binary or multi-line content for cloud resources.
 
@@ -14,6 +14,7 @@ Description: Learn how to use base64encode in OpenTofu to encode EC2 user data s
 
 ```hcl
 # main.tf - Encode user data for EC2
+
 resource "aws_instance" "app" {
   ami           = data.aws_ami.amazon_linux.id
   instance_type = "m5.large"

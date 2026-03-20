@@ -1,10 +1,10 @@
-# How to Fix "WiFi Doesn't Have a Valid IP Configuration" on Windows
+# How to Fix 'WiFi Doesn't Have a Valid IP Configuration' on Windows
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: WiFi, Windows, IP Configuration, DHCP, Troubleshooting
 
-Description: Learn how to fix the "WiFi doesn't have a valid IP configuration" error on Windows by resetting the network stack, flushing DHCP, and reconfiguring the wireless adapter.
+Description: Learn how to fix the 'WiFi doesn't have a valid IP configuration' error on Windows by resetting the network stack, flushing DHCP, and reconfiguring the wireless adapter.
 
 ## What Causes This Error?
 
@@ -72,6 +72,7 @@ ipconfig /renew
 
 ```powershell
 # PowerShell - Disable and re-enable the wireless adapter
+
 Get-NetAdapter -Name "Wi-Fi" | Disable-NetAdapter -Confirm:$false
 Start-Sleep -Seconds 3
 Get-NetAdapter -Name "Wi-Fi" | Enable-NetAdapter

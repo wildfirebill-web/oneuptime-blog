@@ -42,6 +42,7 @@ The memory limiter processor is the most important backpressure mechanism in the
 
 ```yaml
 # Collector config with tuned memory limiter
+
 processors:
   memory_limiter:
     # How often to check the current memory usage

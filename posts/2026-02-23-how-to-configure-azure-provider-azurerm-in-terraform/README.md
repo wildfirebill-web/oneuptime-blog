@@ -22,6 +22,7 @@ If you are using the Azure CLI, log in first:
 
 ```bash
 # Log in to Azure
+
 az login
 
 # Verify your subscription

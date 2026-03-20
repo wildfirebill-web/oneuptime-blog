@@ -24,6 +24,7 @@ Start by installing K3s on your edge node. K3s requires minimal system resources
 
 ```bash
 # Install K3s with default Traefik ingress
+
 curl -sfL https://get.k3s.io | sh -
 
 # Verify K3s is running

@@ -55,6 +55,7 @@ Using the CLI:
 
 ```bash
 # Add labels when registering a cluster
+
 argocd cluster add my-cluster \
   --label environment=production \
   --label region=us-east-1 \

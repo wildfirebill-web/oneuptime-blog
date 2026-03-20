@@ -33,6 +33,7 @@ Check what propagation format each service uses:
 
 ```bash
 # Check environment variables on each service
+
 kubectl exec -it service-a-pod -- env | grep OTEL_PROPAGATORS
 kubectl exec -it service-b-pod -- env | grep OTEL_PROPAGATORS
 

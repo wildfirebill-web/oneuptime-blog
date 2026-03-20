@@ -75,6 +75,7 @@ You can also create locked assignments using Azure PowerShell, which is handy fo
 
 ```powershell
 # First, get the reference to your published blueprint
+
 $blueprint = Get-AzBlueprint -ManagementGroupId "myMG" -Name "myBlueprint" -LatestPublished
 
 # Create the assignment with Do Not Delete locking

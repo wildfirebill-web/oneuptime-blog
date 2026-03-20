@@ -29,6 +29,7 @@ Understand whether VPA is being overridden by Flux:
 
 ```bash
 # Check VPA recommendations
+
 kubectl describe vpa my-service -n team-alpha
 # Recommendation:
 #   Container Recommendations:

@@ -16,6 +16,7 @@ The `user` module handles all aspects of user account management:
 
 ```bash
 # Create a basic user
+
 ansible all -m user -a "name=deploy" --become
 
 # Create a user with a specific shell and home directory

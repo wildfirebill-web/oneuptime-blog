@@ -57,6 +57,7 @@ from opentelemetry.exporter.otlp.proto.grpc.trace_exporter import OTLPSpanExport
 from opentelemetry.sdk.resources import Resource
 
 # Configure the tracer for agent workflows
+
 resource = Resource.create({
     "service.name": "ai-agent-service",
     "service.version": "1.0.0"

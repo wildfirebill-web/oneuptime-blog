@@ -22,6 +22,7 @@ Regardless of the CI/CD platform, the pattern is the same:
 
 ```bash
 # The universal pattern in pseudocode
+
 terraform init
 terraform workspace select -or-create $ENVIRONMENT
 terraform plan -var-file="envs/${ENVIRONMENT}.tfvars" -out=tfplan
@@ -191,7 +192,7 @@ jobs:
               issue_number: context.issue.number,
               owner: context.repo.owner,
               repo: context.repo.repo,
-              body: `### Terraform Plan for \`${{ steps.ws.outputs.name }}\`\n\`\`\`\n${truncated}\n\`\`\``
+              body: `### Terraform Plan for \`${{ steps.ws.outputs.name }}\`\n```\n${truncated}\n````
             });
 
       - name: Apply

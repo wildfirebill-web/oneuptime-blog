@@ -14,6 +14,7 @@ Antrea is a CNI plugin built on Open vSwitch (OVS) that supports IPv6, dual-stac
 
 ```bash
 # Install Antrea with dual-stack support
+
 kubectl apply -f https://github.com/antrea-io/antrea/releases/latest/download/antrea.yml
 
 # Or with Helm

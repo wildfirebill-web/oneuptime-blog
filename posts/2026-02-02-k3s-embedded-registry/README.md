@@ -64,6 +64,7 @@ The following code block shows the basic structure of the registries.yaml file. 
 
 ```yaml
 # /etc/rancher/k3s/registries.yaml
+
 # K3s registry configuration file
 # Defines mirrors and authentication for container registries
 

@@ -12,7 +12,7 @@ VMware NSX provides software-defined networking for vSphere environments and sup
 
 ## NSX-T: Enable IPv6 on Segments
 
-```
+```text
 # NSX Manager UI steps:
 
 1. Go to Networking → Segments
@@ -28,7 +28,7 @@ VMware NSX provides software-defined networking for vSphere environments and sup
 
 ## NSX-T: Tier-1 Gateway with IPv6
 
-```
+```text
 # Configure Tier-1 Gateway for IPv6
 
 1. Go to Networking → Tier-1 Gateways
@@ -47,7 +47,7 @@ VMware NSX provides software-defined networking for vSphere environments and sup
 
 ## NSX-T: Tier-0 Gateway BGP with IPv6
 
-```
+```nginx
 # NSX-T Tier-0 BGP for IPv6 peering
 
 1. Go to Networking → Tier-0 Gateways
@@ -64,7 +64,7 @@ VMware NSX provides software-defined networking for vSphere environments and sup
 
 ## NSX-T: DHCPv6 for VM Address Assignment
 
-```
+```text
 # Configure NSX DHCPv6 server on a segment
 
 1. Go to Networking → DHCP
@@ -82,7 +82,7 @@ VMs on the segment will get IPv6 addresses from NSX DHCPv6.
 
 ## NSX-T: IPv6 Security Policies
 
-```
+```text
 # NSX Distributed Firewall with IPv6
 
 1. Go to Security → Distributed Firewall
@@ -108,7 +108,7 @@ Example: Allow IPv6 web traffic
 
 ## NSX-T: NAT64 for IPv6-Only VMs
 
-```
+```text
 # Configure NAT64 on Tier-1 Gateway for IPv6-only VMs to reach IPv4
 
 1. Go to Networking → Tier-1 Gateways → NAT
@@ -155,6 +155,7 @@ def create_ipv6_segment(name: str, ipv6_subnet: str, gateway: str) -> dict:
     return response.json()
 
 # Create segment with IPv6
+
 segment = create_ipv6_segment(
     name="ipv6-web-segment",
     ipv6_subnet="2001:db8:web::/64",
@@ -180,4 +181,4 @@ ping6 -c4 2001:4860:4860::8888  # Ping external IPv6
 
 ## Conclusion
 
-VMware NSX-T supports IPv6 throughout its stack — overlay segments, DHCPv6, Tier-1/Tier-0 gateways with IPv6 routing, BGP IPv6 peering, distributed firewall policies for IPv6 traffic, and NAT64 for IPv6-to-IPv4 translation. Configuration is done through the NSX Manager UI or REST API. Enabling IPv6 forwarding on Tier-1 gateways is required for inter-segment IPv6 routing. ICMPv6 must be explicitly permitted in distributed firewall policies as NSX does not allow it by default in deny-all configurations.
+VMware NSX-T supports IPv6 throughout its stack - overlay segments, DHCPv6, Tier-1/Tier-0 gateways with IPv6 routing, BGP IPv6 peering, distributed firewall policies for IPv6 traffic, and NAT64 for IPv6-to-IPv4 translation. Configuration is done through the NSX Manager UI or REST API. Enabling IPv6 forwarding on Tier-1 gateways is required for inter-segment IPv6 routing. ICMPv6 must be explicitly permitted in distributed firewall policies as NSX does not allow it by default in deny-all configurations.

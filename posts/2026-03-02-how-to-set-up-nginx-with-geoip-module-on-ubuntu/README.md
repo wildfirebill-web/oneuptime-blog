@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Ubuntu, NGINX, GeoIP, Security, Web Server
+Tags: Ubuntu, Nginx, GeoIP, Security, Web Server
 
 Description: Configure Nginx with the GeoIP module on Ubuntu to restrict access, redirect users, or customize content based on their geographic location.
 
@@ -41,6 +41,7 @@ MaxMind requires a free account to download their databases. Register at https:/
 
 ```bash
 # Install geoipupdate tool for automatic database updates
+
 sudo apt install geoipupdate -y
 ```
 

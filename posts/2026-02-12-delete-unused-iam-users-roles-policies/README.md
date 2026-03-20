@@ -93,6 +93,7 @@ Access Advisor shows which services a user has actually accessed. It's more gran
 
 ```bash
 # Generate a service last accessed details report for a user
+
 JOB_ID=$(aws iam generate-service-last-accessed-details \
   --arn arn:aws:iam::123456789012:user/old-developer \
   --query 'JobId' --output text)

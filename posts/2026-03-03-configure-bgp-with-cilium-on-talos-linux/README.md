@@ -34,6 +34,7 @@ First, enable the BGP control plane in Cilium:
 
 ```bash
 # Upgrade Cilium with BGP enabled
+
 helm upgrade cilium cilium/cilium \
   --namespace kube-system \
   --reuse-values \

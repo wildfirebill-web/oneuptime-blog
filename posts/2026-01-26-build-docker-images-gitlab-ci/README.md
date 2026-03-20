@@ -101,6 +101,7 @@ Optimize image size with multi-stage Dockerfiles.
 
 ```dockerfile
 # Dockerfile
+
 # Build stage - includes build tools
 FROM node:20-alpine AS builder
 WORKDIR /app

@@ -30,6 +30,7 @@ Create VMs with specific labels to test policy enforcement.
 
 ```bash
 # Create VMs with different labels via OpenStack properties
+
 openstack server create --project label-test \
   --flavor m1.small --image ubuntu-22.04 \
   --network test-network \

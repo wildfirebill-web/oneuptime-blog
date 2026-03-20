@@ -41,6 +41,7 @@ The controller runs in your cluster and holds the private key for decryption. In
 
 ```bash
 # Add the Sealed Secrets Helm repository
+
 helm repo add sealed-secrets https://bitnami-labs.github.io/sealed-secrets
 
 # Update repository cache to get latest charts

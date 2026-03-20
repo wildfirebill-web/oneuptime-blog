@@ -61,6 +61,7 @@ Create a values file for a customized deployment:
 
 ```yaml
 # flux-aio-values.yaml
+
 values:
   controllers:
     source: true

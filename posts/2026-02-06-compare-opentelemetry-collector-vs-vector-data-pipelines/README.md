@@ -46,6 +46,7 @@ Vector uses TOML (or YAML) configuration with a sources-transforms-sinks model:
 
 ```toml
 # Vector configuration for collecting and routing logs
+
 # Sources define where data comes from
 [sources.app_logs]
 type = "file"

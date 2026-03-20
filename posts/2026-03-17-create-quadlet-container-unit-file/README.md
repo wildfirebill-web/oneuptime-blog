@@ -18,6 +18,7 @@ Quadlet is Podman's native integration with systemd. Instead of writing complex 
 
 ```ini
 # ~/.config/containers/systemd/webapp.container
+
 [Container]
 Image=docker.io/library/nginx:alpine
 PublishPort=8080:80
@@ -117,7 +118,7 @@ Restart=always
 WantedBy=default.target
 ```
 
-## Resource Limits
+Resource Limits
 
 ```ini
 # ~/.config/containers/systemd/limited-app.container

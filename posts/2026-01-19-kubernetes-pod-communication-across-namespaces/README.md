@@ -53,6 +53,7 @@ Kubernetes DNS automatically creates records for services. The full DNS name fol
 
 ```yaml
 # backend/deployment.yaml
+
 # Deploy a backend API in the backend namespace
 apiVersion: apps/v1
 kind: Deployment

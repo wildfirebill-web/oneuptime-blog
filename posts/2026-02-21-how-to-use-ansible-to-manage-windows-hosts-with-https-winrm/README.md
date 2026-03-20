@@ -34,6 +34,7 @@ First, set up WinRM with an HTTPS listener on each Windows host. This can be don
 
 ```yaml
 # playbook-setup-winrm-https.yml
+
 # Configures WinRM HTTPS listener using a self-signed certificate
 # Run this initially via another mechanism (e.g., user data script, manual setup)
 - name: Configure WinRM HTTPS

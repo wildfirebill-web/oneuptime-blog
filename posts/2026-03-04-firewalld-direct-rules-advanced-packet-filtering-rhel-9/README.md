@@ -40,6 +40,7 @@ firewall-cmd --direct --add-rule ipv4 <table> <chain> <priority> <rule>
 
 ```bash
 # Block all traffic from a specific IP
+
 firewall-cmd --direct --add-rule ipv4 filter INPUT 0 -s 203.0.113.50 -j DROP --permanent
 firewall-cmd --reload
 ```

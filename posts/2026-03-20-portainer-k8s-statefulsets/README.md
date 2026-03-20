@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Kubernetes, StatefulSets, Databases, Storage
+Tags: Portainer, Kubernetes, StatefulSets, Database, Storage
 
 Description: Deploy and manage Kubernetes StatefulSets for databases and stateful applications via Portainer's Kubernetes interface.
 
@@ -21,6 +21,7 @@ StatefulSets are Kubernetes workload objects for managing stateful applications.
 
 ```yaml
 # postgres-statefulset.yml - deploy via Portainer
+
 apiVersion: v1
 kind: Service
 metadata:

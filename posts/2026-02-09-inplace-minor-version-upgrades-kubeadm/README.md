@@ -16,6 +16,7 @@ Before upgrading, verify your cluster's current state and check the upgrade path
 
 ```bash
 # Check current cluster version
+
 kubectl version --short
 kubectl get nodes
 

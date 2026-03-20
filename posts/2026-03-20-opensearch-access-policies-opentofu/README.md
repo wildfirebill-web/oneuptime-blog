@@ -140,6 +140,7 @@ resource "aws_iam_role_policy" "search_reader" {
 
 ```hcl
 # Restrict access to specific VPC only
+
 resource "aws_opensearch_domain_policy" "vpc_only" {
   domain_name = aws_opensearch_domain.main.domain_name
 
@@ -164,4 +165,4 @@ resource "aws_opensearch_domain_policy" "vpc_only" {
 
 ## Conclusion
 
-OpenSearch access policies in OpenTofu give you version-controlled, auditable access control. Define resource-based domain policies for IAM-level access, enable fine-grained access control for index and document-level permissions, and restrict access to your VPC using vpc_options with a VPC-scoped condition in the access policy. Grant least-privilege permissions — read-only for consumers, write for shippers, admin only for operations.
+OpenSearch access policies in OpenTofu give you version-controlled, auditable access control. Define resource-based domain policies for IAM-level access, enable fine-grained access control for index and document-level permissions, and restrict access to your VPC using vpc_options with a VPC-scoped condition in the access policy. Grant least-privilege permissions - read-only for consumers, write for shippers, admin only for operations.

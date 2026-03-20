@@ -28,6 +28,7 @@ Troubleshooting etcdv3 paths requires the ability to inspect raw etcd data, comp
 
 ```bash
 # Check if the policy exists in etcd
+
 etcdctl get /calico/v1/policy/ --prefix --keys-only | grep "my-policy-name"
 
 # If missing, the policy may not have been written to etcd

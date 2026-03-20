@@ -18,6 +18,7 @@ Start by measuring the gap between what is allocated and what is actually used:
 
 ```bash
 # Get resource requests for all istio-proxy containers
+
 kubectl get pods -A -o jsonpath='{range .items[*]}{range .spec.containers[?(@.name=="istio-proxy")]}{.resources.requests.cpu},{.resources.requests.memory}{"\n"}{end}{end}' | sort | uniq -c | sort -rn
 ```
 

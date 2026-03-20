@@ -22,6 +22,7 @@ Here is a template that uses both:
 ```jinja2
 {# This is a Jinja2 comment. It will NOT appear in the output file. #}
 # This is an output comment. It WILL appear in the rendered config.
+
 server {
     listen {{ listen_port }};
     {# TODO: Add SSL support once certs are provisioned #}

@@ -916,6 +916,7 @@ Test query performance with realistic data volumes:
 
 ```bash
 # Profile query execution
+
 GET /my_index/_search
 {
   "profile": true,

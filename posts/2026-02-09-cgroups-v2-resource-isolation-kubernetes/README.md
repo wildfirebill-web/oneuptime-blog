@@ -30,6 +30,7 @@ First, verify whether your system uses cgroups v1 or v2:
 
 ```bash
 # Check cgroups version
+
 mount | grep cgroup
 
 # Output for cgroups v1:

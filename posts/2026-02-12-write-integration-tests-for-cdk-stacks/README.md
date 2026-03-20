@@ -24,6 +24,7 @@ Install the integration testing library.
 
 ```bash
 # Install the CDK integration test library
+
 npm install --save-dev @aws-cdk/integ-tests-alpha
 ```
 

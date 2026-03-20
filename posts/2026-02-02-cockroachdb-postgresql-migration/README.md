@@ -99,6 +99,7 @@ Extract your existing schema using pg_dump, then modify it for CockroachDB compa
 
 ```bash
 # Export schema only from PostgreSQL
+
 pg_dump --schema-only \
     --no-owner \
     --no-privileges \

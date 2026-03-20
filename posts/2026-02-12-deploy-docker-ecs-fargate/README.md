@@ -40,6 +40,7 @@ And the Dockerfile.
 
 ```dockerfile
 # Dockerfile - multi-stage build for small production image
+
 FROM node:20-alpine AS builder
 WORKDIR /app
 COPY package*.json ./

@@ -32,6 +32,7 @@ Create a pod by sending a POST request to the pods endpoint.
 
 ```bash
 # Create a simple pod
+
 curl --unix-socket $XDG_RUNTIME_DIR/podman/podman.sock \
   -X POST \
   -H "Content-Type: application/json" \

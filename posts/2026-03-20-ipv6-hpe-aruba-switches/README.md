@@ -16,6 +16,7 @@ HPE/Aruba switches running ArubaOS-CX (modern) or ProVision/AdvancedTraffic (leg
 
 ```bash
 # Enable IPv6 unicast routing globally
+
 switch# configure terminal
 switch(config)# ipv6 unicast-routing
 ```

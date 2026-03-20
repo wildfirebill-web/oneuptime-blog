@@ -1,4 +1,4 @@
-# How to Troubleshoot ISP Customer IPv6 Issues
+# How to Troubleshoot ISP Customer IPv6 Issues - Issues
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -18,10 +18,11 @@ Description: A structured guide for ISP support staff to diagnose and resolve co
 
 ### Step 1: Verify CPE Has IPv6 WAN Address
 
-Check the ISP side first — does the BNG/BRAS show an active IPv6 session?
+Check the ISP side first - does the BNG/BRAS show an active IPv6 session?
 
 ```bash
 # On BNG (Cisco IOS): find customer session
+
 show subscriber session uid <customer-id> detail | include IPv6
 
 # Check DHCPv6 lease on DHCP server
@@ -109,7 +110,7 @@ mtr -6 2001:4860:4860::8888
 
 ## Escalation Decision Tree
 
-```
+```nginx
 Customer reports no IPv6
 ├── BNG shows no IPv6 session → Check RADIUS, CPE model, port configuration
 ├── BNG shows session, no PD → Check DHCPv6 pool, relay configuration

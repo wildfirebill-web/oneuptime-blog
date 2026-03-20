@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Oracle Cloud, Load Balancers, OCI, Infrastructure as Code
+Tags: OpenTofu, Oracle Cloud, Load Balancer, OCI, Infrastructure as Code
 
 Description: Learn how to create OCI Load Balancers with OpenTofu, including backend sets, listeners, and health checks for production traffic distribution.
 

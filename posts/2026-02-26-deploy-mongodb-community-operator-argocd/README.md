@@ -25,6 +25,7 @@ The Community Operator is available through a Helm chart maintained by MongoDB. 
 
 ```yaml
 # argocd/mongodb-operator.yaml
+
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:

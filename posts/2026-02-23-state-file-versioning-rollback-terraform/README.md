@@ -24,6 +24,7 @@ If you're using the S3 backend, enable versioning on the bucket:
 
 ```hcl
 # Create the S3 bucket with versioning enabled
+
 resource "aws_s3_bucket" "terraform_state" {
   bucket = "my-terraform-state"
 

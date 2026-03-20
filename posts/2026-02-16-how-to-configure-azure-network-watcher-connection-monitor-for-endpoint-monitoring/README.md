@@ -55,6 +55,7 @@ Source VMs need the Network Watcher agent to run connectivity tests:
 
 ```bash
 # Install on Linux VMs
+
 az vm extension set \
   --resource-group myResourceGroup \
   --vm-name sourceVM1 \

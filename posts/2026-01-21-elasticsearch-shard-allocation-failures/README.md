@@ -127,6 +127,7 @@ curl -u elastic:password -X PUT "localhost:9200/_cluster/settings" -H 'Content-T
 Permanent fix - free disk space:
 ```bash
 # Delete old indices
+
 curl -u elastic:password -X DELETE "localhost:9200/logs-2023.*"
 
 # Reset watermarks

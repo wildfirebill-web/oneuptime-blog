@@ -56,6 +56,7 @@ Define your servers and configuration variables.
 
 ```yaml
 # inventory/production.yml
+
 all:
   hosts:
     app1:

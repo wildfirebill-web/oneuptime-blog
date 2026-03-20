@@ -26,6 +26,7 @@ Before installing Android Studio, ensure your Ubuntu system meets the minimum re
 
 ```bash
 # Check your system specifications
+
 # View CPU information
 lscpu | grep -E "Architecture|CPU|Model name|Virtualization"
 

@@ -25,6 +25,7 @@ graph LR
 
 ```bash
 # Helm stores release data as Kubernetes secrets
+
 kubectl get secrets -l owner=helm
 # Output:
 # sh.helm.release.v1.myapp.v1   helm.sh/release.v1   1   10d

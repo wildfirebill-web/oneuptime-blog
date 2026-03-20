@@ -27,6 +27,7 @@ Flux supports native ECR authentication using the `provider` field. This is the 
 
 ```yaml
 # imagerepository-ecr.yaml
+
 # Scan an AWS ECR image using native provider authentication
 apiVersion: image.toolkit.fluxcd.io/v1
 kind: ImageRepository

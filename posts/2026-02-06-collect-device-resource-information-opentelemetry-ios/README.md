@@ -418,7 +418,7 @@ class ResourceInspector {
 }
 ```
 
-## Resource Detection Best Practices
+Resource Detection Best Practices
 
 Collect resource attributes that provide value for analysis. Avoid collecting personally identifiable information like device names, user IDs, or location data in resource attributes. This data persists across all telemetry and could create privacy concerns.
 

@@ -36,6 +36,7 @@ Config needs an S3 bucket to store configuration snapshots and history files.
 
 ```bash
 # Create the bucket
+
 aws s3 mb s3://my-config-bucket-111111111111
 
 # Apply the required bucket policy

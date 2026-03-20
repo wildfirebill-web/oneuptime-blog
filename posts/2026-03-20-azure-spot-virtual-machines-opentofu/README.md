@@ -123,6 +123,7 @@ resource "azurerm_linux_virtual_machine_scale_set" "spot" {
 
 ```hcl
 # Azure Scheduled Events listener (run on the VM)
+
 # Monitor: http://169.254.169.254/metadata/scheduledevents
 
 resource "azurerm_virtual_machine_extension" "eviction_handler" {
@@ -180,4 +181,4 @@ az vm list-skus \
 
 ## Conclusion
 
-Use `eviction_policy = "Delete"` for stateless batch workloads (avoids ongoing disk charges after eviction) and `eviction_policy = "Deallocate"` for workloads that need to resume from where they stopped. Setting `max_bid_price = -1` means you pay up to the on-demand price and reduce eviction frequency—useful for longer batch jobs. For VM Scale Sets, deploy across multiple zones with `spot_restore` enabled to automatically replace evicted instances. Always poll the Azure Scheduled Events endpoint (http://169.254.169.254/metadata/scheduledevents) from within Spot VMs to get the 30-second eviction warning and save checkpoint state.
+Use `eviction_policy = "Delete"` for stateless batch workloads (avoids ongoing disk charges after eviction) and `eviction_policy = "Deallocate"` for workloads that need to resume from where they stopped. Setting `max_bid_price = -1` means you pay up to the on-demand price and reduce eviction frequency-useful for longer batch jobs. For VM Scale Sets, deploy across multiple zones with `spot_restore` enabled to automatically replace evicted instances. Always poll the Azure Scheduled Events endpoint (http://169.254.169.254/metadata/scheduledevents) from within Spot VMs to get the 30-second eviction warning and save checkpoint state.

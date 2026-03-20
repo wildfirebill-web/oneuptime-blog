@@ -22,6 +22,7 @@ Deploy the operator using Helm:
 
 ```bash
 # Add Solr operator Helm repository
+
 helm repo add apache-solr https://solr.apache.org/charts
 helm repo update
 

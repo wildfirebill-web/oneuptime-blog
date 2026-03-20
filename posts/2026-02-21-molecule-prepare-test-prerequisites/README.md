@@ -29,6 +29,7 @@ Create a `prepare.yml` in your Molecule scenario directory.
 
 ```yaml
 # molecule/default/prepare.yml
+
 ---
 - name: Prepare
   hosts: all

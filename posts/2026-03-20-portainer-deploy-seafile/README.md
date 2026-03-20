@@ -1,4 +1,4 @@
-# How to Deploy Seafile via Portainer
+# How to Deploy Seafile via Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -77,6 +77,7 @@ Log in with your admin credentials and configure:
 
 ```bash
 # Access Seafile container
+
 docker exec -it seafile bash
 
 # Check service status

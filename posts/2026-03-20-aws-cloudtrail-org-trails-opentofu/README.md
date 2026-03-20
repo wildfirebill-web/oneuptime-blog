@@ -89,6 +89,7 @@ resource "aws_s3_bucket_policy" "cloudtrail" {
 }
 
 # Object lock to prevent log deletion (compliance)
+
 resource "aws_s3_bucket_object_lock_configuration" "cloudtrail" {
   bucket = aws_s3_bucket.cloudtrail.id
 
@@ -162,7 +163,7 @@ resource "aws_cloudwatch_metric_alarm" "root_usage" {
   period              = 300
   statistic           = "Sum"
   threshold           = 0
-  alarm_description   = "Root account was used — investigate immediately"
+  alarm_description   = "Root account was used - investigate immediately"
   alarm_actions       = [aws_sns_topic.security_alerts.arn]
 }
 ```

@@ -106,6 +106,7 @@ If you have orphaned resources that need to be removed, you can clean them up us
 
 ```bash
 # List all orphaned resources for a deleted Kustomization
+
 kubectl get all --all-namespaces \
   -l kustomize.toolkit.fluxcd.io/name=my-app \
   -l kustomize.toolkit.fluxcd.io/namespace=flux-system

@@ -43,6 +43,7 @@ The most common optimistic locking implementation uses a version column. Every u
 
 ```python
 # models.py
+
 # SQLAlchemy models with optimistic locking support
 from sqlalchemy import Column, Integer, String, Numeric, DateTime, event
 from sqlalchemy.orm import declarative_base, validates

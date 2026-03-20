@@ -1,4 +1,4 @@
-# How to Pre-Stage Edge Agents with Join Tokens
+# How to Pre-Stage Edge Agents with Join Tokens - Agents
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -31,6 +31,7 @@ TOKEN=$(curl -s -X POST \
   --insecure | python3 -c "import sys,json; print(json.load(sys.stdin)['jwt'])")
 
 # Create an edge environment and get the deployment script
+
 curl -X POST \
   https://portainer.example.com:9443/api/endpoints \
   -H "Authorization: Bearer $TOKEN" \

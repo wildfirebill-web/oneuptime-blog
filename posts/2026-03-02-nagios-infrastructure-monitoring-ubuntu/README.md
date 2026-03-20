@@ -16,6 +16,7 @@ Ubuntu's repositories include Nagios, but the version is often outdated. Install
 
 ```bash
 # Install build dependencies
+
 sudo apt update
 sudo apt install -y build-essential apache2 php libapache2-mod-php \
   libgd-dev libssl-dev libmcrypt-dev openssl wget unzip

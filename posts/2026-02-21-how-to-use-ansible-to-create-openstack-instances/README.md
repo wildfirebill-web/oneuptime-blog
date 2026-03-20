@@ -23,6 +23,7 @@ Make sure you have:
 
 ```bash
 # Install required packages
+
 ansible-galaxy collection install openstack.cloud
 pip install openstacksdk
 ```

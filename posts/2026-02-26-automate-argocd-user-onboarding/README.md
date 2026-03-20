@@ -29,6 +29,7 @@ Here is a comprehensive onboarding script that handles local account creation an
 ```bash
 #!/bin/bash
 # onboard-user.sh - Automate ArgoCD user onboarding
+
 set -euo pipefail
 
 USERNAME="${1:?Usage: $0 <username> <role> <team>}"

@@ -1,8 +1,8 @@
-# How to Deploy Sensor Data Collection Pipelines with Portainer
+# How to Deploy Sensor Data Collection Pipelines with Portainer (2)
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, IoT, Sensor Data, Docker, Data Pipeline
+Tags: Portainer, IoT, Sensor Data, Docker, Data Pipelines
 
 Description: Build and deploy end-to-end sensor data collection pipelines using Portainer, combining MQTT, Telegraf, InfluxDB, and Grafana.
 
@@ -12,7 +12,7 @@ Sensor data collection pipelines are the backbone of IoT and industrial monitori
 
 ## Pipeline Architecture
 
-```
+```text
 Sensors -> MQTT Broker -> Telegraf -> InfluxDB -> Grafana
               |
           Node-RED (Optional processing)
@@ -30,6 +30,7 @@ Create a Portainer stack with all pipeline components:
 
 ```yaml
 # sensor-pipeline-stack.yaml
+
 version: "3.8"
 
 services:

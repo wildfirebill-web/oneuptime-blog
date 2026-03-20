@@ -16,8 +16,8 @@ The `formatdate` function in OpenTofu formats a timestamp string into a specifie
 formatdate(spec, timestamp)
 ```
 
-- **spec** — a format string using special tokens
-- **timestamp** — an RFC 3339 timestamp string
+- **spec** - a format string using special tokens
+- **timestamp** - an RFC 3339 timestamp string
 
 ## Format Tokens
 

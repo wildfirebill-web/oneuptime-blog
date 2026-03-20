@@ -16,6 +16,7 @@ The `trimspace` function removes spaces, tabs, newlines, and other whitespace ch
 
 ```hcl
 # Basic syntax
+
 trimspace(string)
 ```
 

@@ -1,4 +1,4 @@
-# How to Use the TF_ENCRYPTION Environment Variable in OpenTofu
+# How to Use the TF_ENCRYPTION Environment Variable in OpenTofu - Variable
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Learn how to use the TF_ENCRYPTION environment variable to configur
 
 ## Introduction
 
-The `TF_ENCRYPTION` environment variable allows you to configure OpenTofu state and plan encryption entirely through an environment variable — no changes to your `.tf` files required. This is especially useful in CI/CD pipelines, for injecting encryption configs at runtime, or when managing encryption separately from application configuration.
+The `TF_ENCRYPTION` environment variable allows you to configure OpenTofu state and plan encryption entirely through an environment variable - no changes to your `.tf` files required. This is especially useful in CI/CD pipelines, for injecting encryption configs at runtime, or when managing encryption separately from application configuration.
 
 ## Why Use TF_ENCRYPTION?
 
@@ -42,7 +42,8 @@ plan {
 }
 '
 
-# Now run any OpenTofu command — encryption is applied
+# Now run any OpenTofu command - encryption is applied
+
 tofu init
 tofu plan
 tofu apply
@@ -134,7 +135,7 @@ state {
 If your `.tf` files already contain an `encryption` block, `TF_ENCRYPTION` is **merged** with the HCL configuration. This lets you define the method in HCL and inject keys via the environment:
 
 ```hcl
-# encryption.tf — defines the method structure
+# encryption.tf - defines the method structure
 terraform {
   encryption {
     # The key provider will come from TF_ENCRYPTION env var

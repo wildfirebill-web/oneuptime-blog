@@ -28,6 +28,7 @@ Cloud Armor provides several layers of protection:
 
 ```bash
 # Install the GCP Ansible collection
+
 ansible-galaxy collection install google.cloud
 ```
 

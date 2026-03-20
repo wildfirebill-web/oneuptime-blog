@@ -38,6 +38,7 @@ Create a configuration file with custom API server settings:
 
 ```yaml
 # kubeadm-config.yaml
+
 apiVersion: kubeadm.k8s.io/v1beta3
 kind: ClusterConfiguration
 kubernetesVersion: v1.28.0

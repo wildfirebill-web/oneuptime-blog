@@ -159,6 +159,7 @@ To reclaim abandoned leases, you need to stop the server, remove them from the l
 systemctl stop dhcpd
 
 # Back up the lease file
+
 cp /var/lib/dhcpd/dhcpd.leases /var/lib/dhcpd/dhcpd.leases.backup
 
 # Remove abandoned entries (be careful with this)

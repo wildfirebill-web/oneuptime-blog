@@ -35,6 +35,7 @@ A test hook is simply a Pod manifest with a special annotation. Place test files
 
 ```yaml
 # templates/tests/test-connection.yaml
+
 apiVersion: v1
 kind: Pod
 metadata:

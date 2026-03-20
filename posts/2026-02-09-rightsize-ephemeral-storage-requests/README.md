@@ -33,6 +33,7 @@ View storage usage for running pods:
 
 ```bash
 # Check ephemeral storage usage on nodes
+
 kubectl get nodes --no-headers | while read node _; do
   echo "=== Node: $node ==="
   kubectl describe node $node | grep -A 5 "Allocated resources"

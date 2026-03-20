@@ -111,6 +111,7 @@ Retrieve cost estimation data programmatically:
 
 ```bash
 # Get the cost estimate for a specific run
+
 RUN_ID="run-abc123"
 
 curl \

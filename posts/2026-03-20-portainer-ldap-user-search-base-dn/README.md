@@ -8,13 +8,13 @@ Description: Configure the LDAP User Search Base DN and filters in Portainer to 
 
 ## Introduction
 
-The LDAP User Search Base DN is the starting point in your directory tree where Portainer searches for user accounts during login. Getting this right is critical — too broad and performance suffers, too narrow and legitimate users can't log in. This guide explains how to configure optimal Base DN settings.
+The LDAP User Search Base DN is the starting point in your directory tree where Portainer searches for user accounts during login. Getting this right is critical - too broad and performance suffers, too narrow and legitimate users can't log in. This guide explains how to configure optimal Base DN settings.
 
 ## Understanding Base DN
 
 The Base DN (Distinguished Name) specifies the root node in the LDAP tree from which searches begin. For example:
 
-```
+```text
 dc=example,dc=com                              # Entire directory
 ou=users,dc=example,dc=com                    # Just the users OU
 ou=staff,ou=users,dc=example,dc=com           # Nested OU
@@ -27,7 +27,7 @@ Portainer searches the Base DN and all its sub-entries (subtree scope) to find u
 
 ### Single OU
 
-```
+```text
 User Base DN: ou=users,dc=example,dc=com
 ```
 
@@ -36,23 +36,23 @@ Best for: Small organizations with a flat user structure.
 ### Department-based OUs
 
 For multiple departments:
-```
+```text
 ou=employees,dc=example,dc=com
 ```
 
 And a filter that excludes disabled accounts:
-```
+```text
 User Filter: (&(objectClass=inetOrgPerson)(!(pwdAccountLockedTime=*)))
 ```
 
 ### Active Directory Domains
 
-```
+```text
 User Base DN: dc=corp,dc=example,dc=com
 ```
 
 With a filter for enabled accounts only:
-```
+```text
 User Filter: (&(objectClass=user)(!(userAccountControl:1.2.840.113556.1.4.803:=2)))
 ```
 
@@ -104,6 +104,7 @@ Use `ldapsearch` to explore your directory before configuring Portainer:
 
 ```bash
 # List top-level OUs
+
 ldapsearch -x \
   -H ldap://ldap.example.com:389 \
   -D "cn=portainer-bind,dc=example,dc=com" \
@@ -134,27 +135,27 @@ ldapsearch -x \
 ## LDAP Filter Best Practices
 
 ### Basic user filter (OpenLDAP)
-```
+```text
 (objectClass=inetOrgPerson)
 ```
 
 ### Users with email (requires email to be present)
-```
+```text
 (&(objectClass=inetOrgPerson)(mail=*))
 ```
 
 ### Active Directory - active users only
-```
+```text
 (&(objectClass=user)(objectCategory=person)(!(userAccountControl:1.2.840.113556.1.4.803:=2)))
 ```
 
 ### Restrict to specific group members
-```
+```text
 (&(objectClass=inetOrgPerson)(memberOf=cn=portainer-users,ou=groups,dc=example,dc=com))
 ```
 
 ### Active Directory - users in a specific group (nested groups)
-```
+```text
 (&(objectClass=user)(memberOf:1.2.840.113556.1.4.1941:=cn=portainer-users,ou=groups,dc=corp,dc=example,dc=com))
 ```
 

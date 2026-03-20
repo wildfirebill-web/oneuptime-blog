@@ -16,6 +16,7 @@ Add `push "route ..."` directives to your server configuration for each subnet c
 # /etc/openvpn/server/server.conf
 
 # Push a specific corporate subnet to all clients
+
 push "route 192.168.10.0 255.255.255.0"
 push "route 172.16.0.0 255.240.0.0"
 push "route 10.100.0.0 255.255.0.0"

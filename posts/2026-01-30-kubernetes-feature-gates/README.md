@@ -71,6 +71,7 @@ To enable feature gates on the kube-apiserver, modify its manifest or startup co
 
 ```yaml
 # /etc/kubernetes/manifests/kube-apiserver.yaml
+
 apiVersion: v1
 kind: Pod
 metadata:

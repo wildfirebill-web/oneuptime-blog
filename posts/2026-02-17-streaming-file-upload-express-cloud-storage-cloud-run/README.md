@@ -33,6 +33,7 @@ This means you can handle gigabyte-sized uploads on a Cloud Run instance with on
 
 ```bash
 # Initialize the project
+
 mkdir streaming-upload && cd streaming-upload
 npm init -y
 npm install express @google-cloud/storage busboy

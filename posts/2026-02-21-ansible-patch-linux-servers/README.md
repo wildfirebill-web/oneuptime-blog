@@ -18,6 +18,7 @@ Let us start with the fundamentals. This playbook updates all packages on a grou
 
 ```yaml
 # patch-servers.yml - Basic server patching playbook
+
 ---
 - name: Patch Linux servers
   hosts: "{{ target_group | default('staging') }}"

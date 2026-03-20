@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Database Backups, AWS, RDS, Azure, GCP, Infrastructure as Code
+Tags: OpenTofu, Database Backup, AWS, RDS, Azure, GCP, Infrastructure as Code
 
-Description: Learn how to configure database backup policies with OpenTofu — setting retention periods, backup windows, automated snapshots, and cross-region backup replication for RDS, Azure SQL, and Cloud SQL.
+Description: Learn how to configure database backup policies with OpenTofu - setting retention periods, backup windows, automated snapshots, and cross-region backup replication for RDS, Azure SQL, and Cloud SQL.
 
 ## Introduction
 
-Database backup policies define retention periods, backup windows, and cross-region replication for disaster recovery. OpenTofu manages backup configuration across AWS RDS, Azure SQL, and GCP Cloud SQL as code — ensuring consistent backup policies enforced across all environments.
+Database backup policies define retention periods, backup windows, and cross-region replication for disaster recovery. OpenTofu manages backup configuration across AWS RDS, Azure SQL, and GCP Cloud SQL as code - ensuring consistent backup policies enforced across all environments.
 
 ## AWS RDS Backup Configuration
 
@@ -22,7 +22,7 @@ resource "aws_db_instance" "app" {
 
   # Backup configuration
   backup_retention_period   = 30          # Days to retain automated backups
-  backup_window             = "03:00-04:00"  # UTC — daily backup window
+  backup_window             = "03:00-04:00"  # UTC - daily backup window
   maintenance_window        = "Sun:04:00-Sun:05:00"
 
   # Keep final snapshot on deletion
@@ -51,6 +51,7 @@ resource "aws_db_instance" "app" {
 
 ```hcl
 # Automatically copy snapshots to a secondary region
+
 resource "aws_db_instance_automated_backups_replication" "dr" {
   source_db_instance_arn    = aws_db_instance.app.arn
   kms_key_id                = aws_kms_key.rds_replica.arn  # Key in destination region

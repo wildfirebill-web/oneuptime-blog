@@ -63,6 +63,7 @@ Save this configuration to `/etc/docker/daemon.json` and restart Docker:
 
 ```bash
 # Apply the configuration
+
 sudo systemctl restart docker
 
 # Verify the configuration is active

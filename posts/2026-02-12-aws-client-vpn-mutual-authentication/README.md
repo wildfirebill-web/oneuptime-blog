@@ -18,6 +18,7 @@ You'll need a certificate authority (CA) to issue server and client certificates
 
 ```bash
 # Clone Easy-RSA
+
 git clone https://github.com/OpenVPN/easy-rsa.git
 cd easy-rsa/easyrsa3
 

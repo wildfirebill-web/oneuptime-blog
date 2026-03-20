@@ -1,8 +1,8 @@
-# How to Understand Unique-Local Addresses (fc00::/7)
+# How to Understand Unique-Local Addresses (fc00::/7) - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Unique-Local, ULA, fc00, RFC 4193, Private Networking
+Tags: IPv6, Unique-Local, ULA, Fc00, RFC 4193, Private Networking
 
 Description: Understand IPv6 Unique-Local Addresses (fc00::/7), how they function as the IPv6 equivalent of RFC 1918 private addresses, and how to generate and use them.
 
@@ -12,10 +12,10 @@ Unique-Local Addresses (ULA), defined in RFC 4193, are the IPv6 equivalent of IP
 
 ## ULA Structure
 
-```
+```text
 fc00::/7 covers two sub-ranges:
-  fc00::/8 — Centrally assigned (not yet defined)
-  fd00::/8 — Locally generated (most common — use this)
+  fc00::/8 - Centrally assigned (not yet defined)
+  fd00::/8 - Locally generated (most common - use this)
 
 Format for fd00::/8:
   fd  XX:XXXX:XXXX  ::/48  (global ID, randomly chosen)
@@ -58,6 +58,7 @@ def generate_ula_prefix() -> str:
     return f"{prefix_addr}/48"
 
 # Example
+
 ula_prefix = generate_ula_prefix()
 print(f"Generated ULA /48: {ula_prefix}")
 # Example: fd1a:2b3c:4d5e::/48

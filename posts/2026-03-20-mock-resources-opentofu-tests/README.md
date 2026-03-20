@@ -142,7 +142,7 @@ run "instance_outputs_are_populated" {
   command = plan
 
   assert {
-    # The module outputs the instance ARN — verify it's set
+    # The module outputs the instance ARN - verify it's set
     condition     = output.instance_arn == "arn:aws:ec2:us-east-1:123456789012:instance/i-mocked"
     error_message = "Instance ARN output not set correctly from mock"
   }
@@ -159,7 +159,8 @@ run "instance_outputs_are_populated" {
 When you use `mock_provider` without `mock_resource`, OpenTofu auto-generates values:
 
 ```hcl
-# Without mock_resource — all attributes get auto-generated values
+# Without mock_resource - all attributes get auto-generated values
+
 mock_provider "aws" {}
 
 run "basic_plan_test" {

@@ -12,7 +12,7 @@ Neighbor Unreachability Detection (NUD) is an NDP mechanism that actively verifi
 
 ## NUD State Machine
 
-```
+```text
 NUD States for a neighbor cache entry:
 
 INCOMPLETE:
@@ -67,18 +67,19 @@ stateDiagram-v2
 
 ```bash
 # View NUD timing parameters on Linux
+
 cat /proc/sys/net/ipv6/neigh/eth0/base_reachable_time_ms
-# Default: 30000 ms (30 seconds) — how long REACHABLE state lasts
+# Default: 30000 ms (30 seconds) - how long REACHABLE state lasts
 # Actual REACHABLE_TIME is randomized: 0.5x to 1.5x base_reachable_time
 
 cat /proc/sys/net/ipv6/neigh/eth0/delay_first_probe_time
-# Default: 5 (seconds) — DELAY state duration before moving to PROBE
+# Default: 5 (seconds) - DELAY state duration before moving to PROBE
 
 cat /proc/sys/net/ipv6/neigh/eth0/retrans_time_ms
-# Default: 1000 ms — interval between NUD probe NS messages
+# Default: 1000 ms - interval between NUD probe NS messages
 
 cat /proc/sys/net/ipv6/neigh/eth0/ucast_solicit
-# Default: 3 — maximum unicast NS probes before FAILED
+# Default: 3 - maximum unicast NS probes before FAILED
 
 # For faster failure detection (e.g., 3-second detection):
 sudo sysctl -w net.ipv6.neigh.eth0.base_reachable_time_ms=3000
@@ -112,7 +113,7 @@ sudo tcpdump -i eth0 -v \
 
 ## Upper-Layer Confirmation
 
-```
+```text
 NUD can be confirmed without sending NS probes:
 Upper-layer protocols (TCP, TLS) can confirm reachability:
 

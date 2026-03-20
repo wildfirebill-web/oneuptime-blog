@@ -8,12 +8,13 @@ Description: A guide to setting and using default values for OpenTofu input vari
 
 ## Introduction
 
-Default values for OpenTofu variables make configurations easier to use by providing sensible presets that can be overridden when needed. A variable with a default is optional — users only need to provide a value if they want to override the default.
+Default values for OpenTofu variables make configurations easier to use by providing sensible presets that can be overridden when needed. A variable with a default is optional - users only need to provide a value if they want to override the default.
 
 ## Setting Default Values
 
 ```hcl
 # String default
+
 variable "aws_region" {
   type    = string
   default = "us-east-1"

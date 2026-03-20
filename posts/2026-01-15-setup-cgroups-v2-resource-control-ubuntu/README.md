@@ -36,6 +36,7 @@ cgroups v2 addresses these limitations with a unified approach:
 
 ```text
 # cgroups v1 structure (multiple hierarchies)
+
 /sys/fs/cgroup/cpu/
 /sys/fs/cgroup/memory/
 /sys/fs/cgroup/blkio/
@@ -1311,7 +1312,7 @@ systemctl status my-task.scope
 journalctl -u my-task.scope
 ```
 
-## Resource Delegation
+Resource Delegation
 
 Resource delegation allows non-root users to manage cgroups within a delegated subtree.
 

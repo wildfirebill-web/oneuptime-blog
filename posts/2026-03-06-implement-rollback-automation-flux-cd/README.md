@@ -31,6 +31,7 @@ Flux's HelmRelease resource supports automatic rollback when a Helm upgrade fail
 
 ```yaml
 # HelmRelease with automatic rollback configuration
+
 apiVersion: helm.toolkit.fluxcd.io/v2
 kind: HelmRelease
 metadata:

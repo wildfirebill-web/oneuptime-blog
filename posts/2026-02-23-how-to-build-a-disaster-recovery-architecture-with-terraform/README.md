@@ -29,6 +29,7 @@ Regardless of your DR strategy, backups are essential. Start with automated back
 
 ```hcl
 # AWS Backup vault for centralized backup management
+
 resource "aws_backup_vault" "main" {
   name        = "${var.project_name}-backup-vault"
   kms_key_arn = aws_kms_key.backup.arn

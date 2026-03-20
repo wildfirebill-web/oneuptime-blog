@@ -44,6 +44,7 @@ If you already have the bucket in your configuration without `force_destroy`, ad
 
 ```bash
 # Step 1: Add force_destroy = true to the bucket resource
+
 # Step 2: Apply to update the bucket
 terraform apply
 

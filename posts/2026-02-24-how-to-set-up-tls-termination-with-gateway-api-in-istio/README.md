@@ -20,6 +20,7 @@ First, you need a TLS certificate. For production, you'd get this from a Certifi
 
 ```bash
 # Generate a self-signed certificate
+
 openssl req -x509 -nodes -days 365 -newkey rsa:2048 \
   -keyout tls.key -out tls.crt \
   -subj "/CN=app.example.com" \

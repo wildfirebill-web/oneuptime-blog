@@ -14,6 +14,7 @@ AWS RDS supports IPv6 connections through dual-stack DB instances. When enabled,
 
 ```bash
 # Create RDS instance with dual-stack mode
+
 aws rds create-db-instance \
     --db-instance-identifier mydb \
     --db-instance-class db.t3.micro \
@@ -179,4 +180,4 @@ psql "host=${ENDPOINT} port=5432 user=admin dbname=myapp sslmode=require"
 
 ## Conclusion
 
-RDS dual-stack mode (`network_type = "DUAL"`) creates RDS instances that respond to both IPv4 and IPv6 connections using the same endpoint DNS name. The DNS name resolves to both A and AAAA records, allowing applications to connect over whichever protocol is preferred. RDS subnet groups must include IPv6-enabled subnets. Security groups must have explicit IPv6 rules allowing database port access. Applications connecting to RDS over IPv6 need no code changes — the connection string hostname resolves to an IPv6 address automatically when Happy Eyeballs or explicit IPv6 preference is configured.
+RDS dual-stack mode (`network_type = "DUAL"`) creates RDS instances that respond to both IPv4 and IPv6 connections using the same endpoint DNS name. The DNS name resolves to both A and AAAA records, allowing applications to connect over whichever protocol is preferred. RDS subnet groups must include IPv6-enabled subnets. Security groups must have explicit IPv6 rules allowing database port access. Applications connecting to RDS over IPv6 need no code changes - the connection string hostname resolves to an IPv6 address automatically when Happy Eyeballs or explicit IPv6 preference is configured.

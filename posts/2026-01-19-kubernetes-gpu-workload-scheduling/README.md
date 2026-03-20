@@ -52,6 +52,7 @@ flowchart TD
 
 ```bash
 # Check NVIDIA driver installation
+
 nvidia-smi
 
 # Verify driver version

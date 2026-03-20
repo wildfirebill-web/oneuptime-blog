@@ -14,6 +14,7 @@ ML model serving requires low-latency inference, GPU resource management, and tr
 
 ```bash
 # Install KServe (requires cert-manager and Knative)
+
 kubectl apply -f https://github.com/kserve/kserve/releases/download/v0.12.0/kserve.yaml
 ```
 

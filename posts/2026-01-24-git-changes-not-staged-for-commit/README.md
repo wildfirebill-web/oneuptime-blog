@@ -36,6 +36,7 @@ When Git says "Changes not staged for commit", it means you have modified files 
 
 ```bash
 # See the full status
+
 git status
 
 # Output example:

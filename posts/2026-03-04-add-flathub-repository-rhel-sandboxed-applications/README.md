@@ -14,6 +14,7 @@ Flathub is the largest repository of Flatpak applications, hosting thousands of 
 
 ```bash
 # Install Flatpak if not already installed
+
 sudo dnf install -y flatpak
 
 # Verify the installation

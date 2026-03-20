@@ -16,6 +16,7 @@ Monitoring IPAM release workflows reveals patterns in IP leakage that point to s
 
 ```bash
 # Run IPAM check to identify issues
+
 calicoctl ipam check
 
 # Verify specific IP before release

@@ -555,6 +555,7 @@ from typing import Optional, List, Dict
 import logging
 
 # Configure logging for pipeline observability
+
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 

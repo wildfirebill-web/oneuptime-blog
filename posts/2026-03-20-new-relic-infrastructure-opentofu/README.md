@@ -8,7 +8,7 @@ Description: Learn how to deploy New Relic infrastructure monitoring and APM on 
 
 ---
 
-New Relic provides full-stack observability — infrastructure metrics, APM traces, logs, and browser monitoring. The New Relic Kubernetes bundle deploys all agents in a single Helm release. OpenTofu manages both the agent deployment and New Relic alert policies.
+New Relic provides full-stack observability - infrastructure metrics, APM traces, logs, and browser monitoring. The New Relic Kubernetes bundle deploys all agents in a single Helm release. OpenTofu manages both the agent deployment and New Relic alert policies.
 
 ## New Relic Agent Architecture
 
@@ -108,6 +108,7 @@ resource "helm_release" "newrelic_bundle" {
 
 ```hcl
 # newrelic_alerts.tf
+
 terraform {
   required_providers {
     newrelic = {
@@ -178,6 +179,6 @@ resource "newrelic_notification_channel" "slack" {
 
 - Enable `lowDataMode = true` for non-production environments to reduce New Relic ingest costs by ~50%.
 - Use the `newrelic` Terraform provider to manage alert policies and dashboards alongside the agent deployment.
-- Store the New Relic license key in a Kubernetes Secret — don't put it in Helm values files that are committed to git.
+- Store the New Relic license key in a Kubernetes Secret - don't put it in Helm values files that are committed to git.
 - Configure `nri-prometheus` with `require_scrape_enabled_label_for_nodes = true` to avoid collecting metrics from system pods you don't care about.
 - Use New Relic's `lowDataMode` in development and staging to save on data ingest costs while keeping full fidelity in production.

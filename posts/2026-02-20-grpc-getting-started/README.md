@@ -367,6 +367,7 @@ grpcServer := grpc.NewServer(
 
 ```bash
 # Install the protoc compiler and Go plugins
+
 # Then generate Go code from your .proto files
 
 protoc \

@@ -402,6 +402,7 @@ spec:
 
 ```yaml
 # Literal value
+
 customTags:
   my_tag:
     literal:

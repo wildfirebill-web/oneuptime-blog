@@ -30,6 +30,7 @@ Check that all Calico components are running and healthy on every node.
 
 ```bash
 # Verify calico-node pods are running on all nodes
+
 kubectl get pods -n kube-system -l k8s-app=calico-node -o wide
 # Expected: One calico-node pod per node, all in Running state
 

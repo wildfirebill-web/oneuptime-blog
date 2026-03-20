@@ -18,6 +18,7 @@ Container image metadata controls how a container behaves when it runs, includin
 
 ```bash
 # Ensure Buildah and Podman are installed
+
 buildah --version
 podman --version
 

@@ -27,6 +27,7 @@ Test basic connectivity:
 
 ```bash
 # Test if you can reach Docker Hub
+
 curl -v https://registry-1.docker.io/v2/ 2>&1 | head -20
 
 # Test with your corporate proxy

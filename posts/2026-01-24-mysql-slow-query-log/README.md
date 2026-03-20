@@ -53,6 +53,7 @@ For permanent configuration, add these settings to your MySQL configuration file
 
 [mysqld]
 # Enable slow query logging
+
 slow_query_log = 1
 
 # Log file location

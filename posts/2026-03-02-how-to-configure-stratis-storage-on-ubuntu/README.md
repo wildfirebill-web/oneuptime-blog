@@ -26,6 +26,7 @@ Stratis is available in Ubuntu's package repositories starting from Ubuntu 20.04
 
 ```bash
 # Update package lists
+
 sudo apt-get update
 
 # Install stratisd (the daemon) and stratis-cli (the command-line tool)

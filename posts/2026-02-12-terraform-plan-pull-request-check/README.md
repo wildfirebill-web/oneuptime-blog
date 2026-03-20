@@ -27,8 +27,9 @@ With an automated plan, every PR gets:
 
 Here's a complete workflow that runs Terraform plan on PRs and posts the output as a comment.
 
-```yaml
+````yaml
 # .github/workflows/terraform-plan.yml
+
 name: Terraform Plan
 
 on:
@@ -90,9 +91,9 @@ jobs:
 
             <details><summary>Show Plan Output</summary>
 
-            \`\`\`
+            ```
             ${{ steps.plan.outputs.stdout }}
-            \`\`\`
+            ```
 
             </details>
 
@@ -108,7 +109,7 @@ jobs:
       - name: Fail on Plan Error
         if: steps.plan.outcome == 'failure'
         run: exit 1
-```
+````
 
 Let me break down the key pieces.
 

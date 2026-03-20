@@ -26,6 +26,7 @@ Duplicate IP addresses happen when two hosts on the same subnet share the same I
 
 ```bash
 # -D flag exits with code 1 if a reply is received
+
 arping -D -I eth0 -c 2 192.168.1.50
 
 # Check result
@@ -85,7 +86,7 @@ done
 
 In Wireshark, apply the filter:
 
-```
+```text
 arp.duplicate-address-detected
 ```
 
@@ -138,4 +139,3 @@ scan_for_duplicates('192.168.1.0/24')
 
 - [How to Use arping to Test ARP Resolution](https://oneuptime.com/blog/post/2026-03-20-arping-test-arp-resolution/view)
 - [How to Understand Gratuitous ARP and Its Uses](https://oneuptime.com/blog/post/2026-03-20-gratuitous-arp-uses/view)
-- [How to Configure DHCP Reservations for Static Assignments](https://oneuptime.com/blog/post/2026-03-20-dhcp-reservations-static-ip/view)

@@ -54,6 +54,7 @@ The most common use case is generating a function from a natural language descri
 
 ```python
 # Generate a function with specific requirements
+
 result = generate_code("""
 Write a Python function called 'retry_with_backoff' that:
 - Takes a callable, max_retries (default 3), and base_delay (default 1.0)

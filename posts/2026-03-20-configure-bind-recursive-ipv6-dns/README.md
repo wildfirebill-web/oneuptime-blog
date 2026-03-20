@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: BIND, DNS, IPv6, Recursive, Resolver, named, DNSSEC
+Tags: BIND, DNS, IPv6, Recursive, Resolver, Named, DNSSEC
 
 Description: Configure BIND9 as a recursive (caching) DNS resolver that communicates over IPv6 transport, with proper forwarders, ACLs, and DNSSEC validation.
 
@@ -55,7 +55,7 @@ options {
         8.8.4.4;
     };
 
-    # forward only — don't do full recursion if forwarders fail
+    # forward only - don't do full recursion if forwarders fail
     forward first;  # Try forwarders first, fall back to recursion
 };
 ```
@@ -73,7 +73,7 @@ options {
     query-source-v6 address 2001:db8::53;
 
     # Set outbound interface for queries
-    # (not usually needed — let the OS route)
+    # (not usually needed - let the OS route)
 };
 ```
 
@@ -96,6 +96,7 @@ options {
 named-checkconf
 
 # Restart and verify
+
 systemctl restart bind9
 systemctl status bind9
 

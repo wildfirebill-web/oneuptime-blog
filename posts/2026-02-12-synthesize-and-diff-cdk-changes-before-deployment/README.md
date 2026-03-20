@@ -18,6 +18,7 @@ The `synth` command converts your CDK code into a CloudFormation template. It ru
 
 ```bash
 # Synthesize the CloudFormation template
+
 cdk synth
 ```
 
@@ -201,7 +202,7 @@ jobs:
               issue_number: context.issue.number,
               owner: context.repo.owner,
               repo: context.repo.repo,
-              body: `## CDK Diff\n\`\`\`\n${diff}\n\`\`\``,
+              body: `## CDK Diff\n```\n${diff}\n````,
             });
 ```
 

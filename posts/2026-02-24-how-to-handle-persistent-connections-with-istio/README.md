@@ -231,6 +231,7 @@ Keep an eye on connection metrics:
 
 ```promql
 # Active connections per destination
+
 envoy_cluster_upstream_cx_active{cluster_name=~"outbound.*"}
 
 # Connection timeouts

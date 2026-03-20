@@ -62,6 +62,7 @@ Test the default directory structure using `ldapsearch`:
 
 ```bash
 # Search with the admin bind DN
+
 ldapsearch -x -H ldap://localhost \
   -b "dc=example,dc=com" \
   -D "cn=admin,dc=example,dc=com" \

@@ -22,6 +22,7 @@ Start by deploying the Waypoint server on your existing infrastructure.
 
 ```hcl
 # ECS cluster for Waypoint server
+
 resource "aws_ecs_cluster" "waypoint" {
   name = "waypoint-${var.environment}"
 

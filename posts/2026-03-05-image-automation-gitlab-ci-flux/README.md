@@ -26,6 +26,7 @@ Create a `.gitlab-ci.yml` that builds and pushes a container image to the GitLab
 
 ```yaml
 # .gitlab-ci.yml
+
 stages:
   - build
   - push

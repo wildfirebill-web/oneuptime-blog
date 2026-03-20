@@ -4,16 +4,17 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: OpenTofu, IAM, AWS, Security, Users, Groups, Infrastructure as Code
 
-Description: Learn how to manage AWS IAM users, groups, and memberships with OpenTofu — creating users, organizing them into groups with policies, setting up programmatic access, and enforcing MFA requirements.
+Description: Learn how to manage AWS IAM users, groups, and memberships with OpenTofu - creating users, organizing them into groups with policies, setting up programmatic access, and enforcing MFA requirements.
 
 ## Introduction
 
-AWS IAM users and groups control human and programmatic access to AWS APIs. OpenTofu manages users, group memberships, policy attachments, and access key lifecycle — all as code that can be reviewed, audited, and version-controlled. For human users, prefer AWS SSO (IAM Identity Center) over long-lived IAM users.
+AWS IAM users and groups control human and programmatic access to AWS APIs. OpenTofu manages users, group memberships, policy attachments, and access key lifecycle - all as code that can be reviewed, audited, and version-controlled. For human users, prefer AWS SSO (IAM Identity Center) over long-lived IAM users.
 
 ## IAM Groups with Policies
 
 ```hcl
-# Group for developers — read-only to production, full access to dev
+# Group for developers - read-only to production, full access to dev
+
 resource "aws_iam_group" "developers" {
   name = "developers"
   path = "/engineering/"
@@ -58,7 +59,7 @@ resource "aws_iam_group_policy_attachment" "ops_admin" {
   policy_arn = "arn:aws:iam::aws:policy/AdministratorAccess"
 }
 
-# Group for security team — read-only security services
+# Group for security team - read-only security services
 resource "aws_iam_group" "security" {
   name = "security"
   path = "/security/"
@@ -220,10 +221,10 @@ resource "aws_iam_account_password_policy" "main" {
   allow_users_to_change_password = true
   max_password_age               = 90   # Force rotation every 90 days
   password_reuse_prevention      = 24   # Cannot reuse last 24 passwords
-  hard_expiry                    = false # Don't lock out — warn instead
+  hard_expiry                    = false # Don't lock out - warn instead
 }
 ```
 
 ## Conclusion
 
-IAM users and groups with OpenTofu provide auditable access management for AWS. Use groups to assign permissions — never attach policies directly to users, as group-based policies scale better across team changes. For human users, prefer AWS IAM Identity Center (SSO) over long-lived IAM users — it integrates with your identity provider and doesn't require access key management. When IAM users are necessary (legacy systems, specific tooling), enforce MFA with the deny policy shown above and rotate access keys regularly using the `aws_iam_access_key` resource with a version suffix.
+IAM users and groups with OpenTofu provide auditable access management for AWS. Use groups to assign permissions - never attach policies directly to users, as group-based policies scale better across team changes. For human users, prefer AWS IAM Identity Center (SSO) over long-lived IAM users - it integrates with your identity provider and doesn't require access key management. When IAM users are necessary (legacy systems, specific tooling), enforce MFA with the deny policy shown above and rotate access keys regularly using the `aws_iam_access_key` resource with a version suffix.

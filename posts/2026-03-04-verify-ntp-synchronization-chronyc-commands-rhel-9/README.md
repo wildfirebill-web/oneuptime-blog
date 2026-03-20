@@ -16,6 +16,7 @@ chronyc can run interactively or with a single command:
 
 ```bash
 # Run a single command
+
 chronyc tracking
 
 # Enter interactive mode

@@ -30,6 +30,7 @@ Terraform uses provider aliases to work with multiple subscriptions simultaneous
 
 ```hcl
 # versions.tf
+
 terraform {
   required_version = ">= 1.5.0"
 

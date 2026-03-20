@@ -30,29 +30,29 @@ This guide covers parsing techniques specific to zsh completion output.
 
 
 
-\`\`\`bash
+```bash
 ## Capture the completion output
 cilium-bugtool completion zsh > /tmp/bugtool-zsh-completion.zsh
 wc -l /tmp/bugtool-zsh-completion.zsh
-\`\`\`
+```
 
 ### Extracting Subcommands
 
-\`\`\`bash
+```bash
 ## Extract commands with descriptions
 grep -oP "'[a-z][-a-z]*\[.*?\]" /tmp/bugtool-zsh-completion.zsh |   sed "s/'//g;s/\[/: /;s/\]//" | sort -u
-\`\`\`
+```
 
 ### Extracting Flags
 
-\`\`\`bash
+```bash
 ## Extract flags with descriptions
 grep -oP "'--[a-z][-a-z0-9]*\[.*?\]" /tmp/bugtool-zsh-completion.zsh |   sed "s/'//g;s/\[/: /;s/\]//" | sort -u
-\`\`\`
+```
 
 ### Python Parser
 
-\`\`\`python
+```python
 #!/usr/bin/env python3
 """Parse cilium-bugtool zsh completion output."""
 import re, json, sys
@@ -69,12 +69,13 @@ def parse_zsh_completion(filepath):
 if __name__ == '__main__':
     path = sys.argv[1] if len(sys.argv) > 1 else '/tmp/bugtool-zsh-completion.zsh'
     print(json.dumps(parse_zsh_completion(path), indent=2))
-\`\`\`
+```
 
 ## Verification
 
 ```bash
 # Verify parsing
+
 python3 parse_zsh_completion.py /tmp/bugtool-zsh-completion.zsh | jq '.commands | length'
 python3 parse_zsh_completion.py /tmp/bugtool-zsh-completion.zsh | jq '.flags | length'
 ```

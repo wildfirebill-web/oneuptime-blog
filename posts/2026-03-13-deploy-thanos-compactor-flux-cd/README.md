@@ -29,6 +29,7 @@ Store S3 credentials as an encrypted Kubernetes Secret for the compactor to use.
 
 ```yaml
 # clusters/my-cluster/thanos/compactor-objstore-secret.yaml
+
 apiVersion: v1
 kind: Secret
 metadata:

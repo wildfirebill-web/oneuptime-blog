@@ -34,6 +34,7 @@ resource "aws_s3_bucket" "basic" {
 }
 
 # Configure SSE-S3 encryption
+
 resource "aws_s3_bucket_server_side_encryption_configuration" "basic" {
   bucket = aws_s3_bucket.basic.id
 

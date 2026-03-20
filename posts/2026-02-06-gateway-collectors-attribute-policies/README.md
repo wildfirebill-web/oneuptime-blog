@@ -26,6 +26,7 @@ Here is the foundation of a Gateway Collector that enforces attribute policies:
 
 ```yaml
 # gateway-collector.yaml
+
 receivers:
   otlp:
     protocols:

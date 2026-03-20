@@ -30,6 +30,7 @@ The simplest approach is to disable the service registry and use only the Kubern
 
 ```yaml
 # air-gapped-discovery.yaml
+
 cluster:
   discovery:
     enabled: true

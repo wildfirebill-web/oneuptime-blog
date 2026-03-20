@@ -25,6 +25,7 @@ CNI plugins are simple binaries that receive JSON on stdin and write JSON to std
 
 ```bash
 # Install the standard CNI plugins package
+
 sudo apt update
 sudo apt install -y containernetworking-plugins
 

@@ -12,7 +12,7 @@ One of the most important design decisions in IPv6 was to fix the base header at
 
 ## Why Variable Length Headers Are Problematic
 
-```
+```text
 IPv4 packet processing (variable header):
 1. Read first byte → extract IHL (header length)
 2. Multiply IHL × 4 to get actual header length in bytes
@@ -27,7 +27,7 @@ This prevents hardware acceleration because:
 
 ## IPv6 Fixed Header Benefits
 
-```
+```text
 IPv6 packet processing (fixed 40-byte header):
 1. Always: offset 40 = start of payload or first extension header
 2. Next Header field at byte 6 tells you what is at offset 40
@@ -48,6 +48,7 @@ Because the header is fixed, every field is at a predictable byte offset:
 
 ```python
 # All IPv6 header fields at fixed byte offsets
+
 IPV6_FIELD_OFFSETS = {
     # Field name: (byte_offset, byte_length)
     "version_tc_fl":       (0, 4),   # version[3:0] + traffic_class + flow_label
@@ -75,9 +76,9 @@ dst_bytes = extract_field(raw_header, "destination_address")  # Always bytes 24-
 
 ## Extension Headers: Flexibility Without Variability
 
-Options are not removed — they are moved to extension headers that are optional and placed after the fixed header:
+Options are not removed - they are moved to extension headers that are optional and placed after the fixed header:
 
-```
+```text
 Why this is better:
 - Routers that don't need to process options skip them entirely
 - The fixed base header is always processed the same way
@@ -92,7 +93,7 @@ IPv6: Options are in extension headers; transit routers skip them
 
 ## Impact on Router Hardware
 
-```
+```text
 Cisco ASR 9000 IPv6 forwarding:
   Fixed header → ASIC can parallelize field extraction
   Simultaneous reads:
@@ -111,7 +112,7 @@ Cisco ASR 9000 IPv6 forwarding:
 
 Why 40 bytes instead of IPv4's 20-byte minimum?
 
-```
+```text
 IPv4 addresses: 32 bits × 2 = 8 bytes
 IPv6 addresses: 128 bits × 2 = 32 bytes
 

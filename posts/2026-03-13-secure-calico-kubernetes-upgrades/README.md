@@ -16,6 +16,7 @@ Calico upgrades represent a critical security moment: you're replacing core netw
 
 ```bash
 # Verify new Calico images with cosign before updating ImageSet
+
 CALICO_VERSION="v3.28.0"
 REGISTRY="registry.internal.example.com/calico"
 

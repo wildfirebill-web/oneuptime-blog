@@ -12,10 +12,11 @@ Docker does not natively provide bandwidth limiting per container, but Linux's `
 
 ## Finding the Container's veth Interface
 
-Each Docker container gets a veth pair — one end inside the container, one on the host. Find the host-side veth:
+Each Docker container gets a veth pair - one end inside the container, one on the host. Find the host-side veth:
 
 ```bash
 # Get the container's network interface index
+
 CONTAINER_IFINDEX=$(docker exec my-container cat /sys/class/net/eth0/iflink)
 
 # Find the matching veth on the host

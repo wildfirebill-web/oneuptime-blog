@@ -45,6 +45,7 @@ Download and install the binary:
 
 ```bash
 # Download the latest release (adjust version as needed)
+
 curl -LO https://github.com/rancher/cli/releases/download/v2.8.0/rancher-linux-amd64-v2.8.0.tar.gz
 
 # Extract the archive

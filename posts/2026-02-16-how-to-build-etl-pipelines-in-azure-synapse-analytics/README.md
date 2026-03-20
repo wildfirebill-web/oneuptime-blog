@@ -129,6 +129,7 @@ For more complex transformations, use a PySpark notebook.
 
 ```python
 # Read raw sales data from the data lake
+
 from pyspark.sql.functions import col, when, lit, current_timestamp
 
 raw_sales = spark.read.parquet(

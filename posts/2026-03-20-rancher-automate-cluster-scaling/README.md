@@ -1,8 +1,8 @@
-# How to Automate Cluster Scaling in Rancher
+# How to Automate Cluster Scaling in Rancher - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: rancher, autoscaling, cluster-autoscaler, kubernetes, automation
+Tags: Rancher, Autoscaling, Cluster-autoscaler, Kubernetes, Automation
 
 Description: A guide to automating cluster scaling in Rancher using the Cluster Autoscaler, node pool scaling via the API, and HPA for workload scaling.
 
@@ -18,6 +18,7 @@ HPA scales application pods based on CPU, memory, or custom metrics:
 
 ```yaml
 # HPA that scales based on CPU utilization
+
 apiVersion: autoscaling/v2
 kind: HorizontalPodAutoscaler
 metadata:

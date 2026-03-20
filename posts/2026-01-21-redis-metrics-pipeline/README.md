@@ -82,6 +82,7 @@ class MetricsCollector:
         return pipe.execute()
 
 # Usage
+
 collector = MetricsCollector()
 
 # Single metric

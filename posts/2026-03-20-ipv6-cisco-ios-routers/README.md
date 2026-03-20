@@ -12,7 +12,7 @@ Cisco IOS has comprehensive IPv6 support that has been production-ready since IO
 
 ## Step 1: Enable IPv6 Unicast Routing
 
-```
+```text
 ! Enable IPv6 routing globally (disabled by default)
 Router(config)# ipv6 unicast-routing
 
@@ -22,7 +22,7 @@ Router(config)# ipv6 cef
 
 ## Step 2: Assign IPv6 Addresses to Interfaces
 
-```
+```text
 ! Assign a static IPv6 address
 Router(config)# interface GigabitEthernet0/0
 Router(config-if)# ipv6 address 2001:db8:1:1::1/64
@@ -41,7 +41,7 @@ Router(config-if)# ipv6 address 2001:db8::1/128
 
 ## Step 3: Configure Static IPv6 Routes
 
-```
+```text
 ! Add a static route to a specific destination
 Router(config)# ipv6 route 2001:db8:2::/48 GigabitEthernet0/1 2001:db8:0:1::2
 
@@ -54,7 +54,7 @@ Router(config)# ipv6 route ::/0 GigabitEthernet0/1 2001:db8:isp2::1 200
 
 ## Step 4: Configure OSPFv3
 
-```
+```text
 ! Enable OSPFv3 on the router
 Router(config)# ipv6 router ospf 1
 Router(config-rtr)# router-id 1.1.1.1
@@ -73,7 +73,7 @@ Router(config-rtr)# passive-interface Loopback0
 
 ## Step 5: Configure IPv6 ACLs
 
-```
+```text
 ! IPv6 ACLs use named lists (not numbered like IPv4)
 Router(config)# ipv6 access-list BLOCK-INBOUND
 
@@ -96,7 +96,7 @@ Router(config-if)# ipv6 traffic-filter BLOCK-INBOUND in
 
 ## Step 6: Configure DHCPv6 Server
 
-```
+```text
 ! Create a DHCPv6 pool
 Router(config)# ipv6 dhcp pool LAN-POOL
 Router(config-dhcpv6)# address prefix 2001:db8:1:1::/64 lifetime 86400 14400
@@ -110,7 +110,7 @@ Router(config-if)# ipv6 dhcp server LAN-POOL
 
 ## Verification Commands
 
-```
+```text
 ! Show IPv6 interface details
 Router# show ipv6 interface GigabitEthernet0/0
 
@@ -135,7 +135,7 @@ Router# ping ipv6 2001:db8:2::1 source GigabitEthernet0/0
 
 ## Saving the Configuration
 
-```
+```text
 ! Save running config to startup config
 Router# copy running-config startup-config
 ! or:

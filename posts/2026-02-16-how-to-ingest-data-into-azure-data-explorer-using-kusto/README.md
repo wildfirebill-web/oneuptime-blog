@@ -112,6 +112,7 @@ import tempfile
 import os
 
 # Create connection to the ingestion endpoint
+
 # Note: use the ingest- prefix for the ingestion endpoint
 cluster_ingest_uri = "https://ingest-mycluster.eastus.kusto.windows.net"
 database = "mydb"

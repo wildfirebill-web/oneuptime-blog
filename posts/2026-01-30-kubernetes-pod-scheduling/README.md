@@ -30,6 +30,7 @@ First, add labels to your nodes to categorize them.
 
 ```bash
 # Add a label to identify nodes with SSDs
+
 kubectl label nodes worker-node-1 disktype=ssd
 
 # Add labels for environment and hardware type

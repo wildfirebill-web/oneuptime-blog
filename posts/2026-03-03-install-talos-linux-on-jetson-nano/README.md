@@ -38,6 +38,7 @@ Gather your hardware and software:
 
 ```bash
 # Install talosctl
+
 curl -sL https://talos.dev/install | sh
 
 # Install kubectl

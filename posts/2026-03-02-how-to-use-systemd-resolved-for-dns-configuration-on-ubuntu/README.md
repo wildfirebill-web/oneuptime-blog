@@ -22,6 +22,7 @@ The symlink `/etc/resolv.conf -> /run/systemd/resolve/stub-resolv.conf` points a
 
 ```bash
 # Check the status of systemd-resolved
+
 sudo systemctl status systemd-resolved
 
 # See current DNS configuration

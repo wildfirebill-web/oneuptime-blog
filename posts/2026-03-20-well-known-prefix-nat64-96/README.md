@@ -16,15 +16,16 @@ The well-known prefix `64:ff9b::/96` is defined in RFC 6052 for use with NAT64 t
 
 The format is:
 
-```
+```text
 64:ff9b::[IPv4 address]
 ```
 
 For example, to reach `8.8.8.8`:
 
-```
+```text
 64:ff9b::8.8.8.8
 # or in full hexadecimal:
+
 64:ff9b::0808:0808
 ```
 
@@ -59,7 +60,7 @@ ip -6 route add 64:ff9b::/96 via 2001:db8::nat64
 
 ## DNS64 Configuration for BIND
 
-```
+```text
 plugin query "/usr/lib/bind/dns64.so" {
     dns64 64:ff9b::/96 {
         clients { any; };

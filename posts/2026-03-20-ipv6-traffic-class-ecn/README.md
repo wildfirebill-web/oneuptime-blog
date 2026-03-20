@@ -12,16 +12,16 @@ The lower 2 bits of the IPv6 Traffic Class byte implement ECN (Explicit Congesti
 
 ## ECN Field Layout
 
-```
+```yaml
 Traffic Class byte (8 bits):
   [7][6][5][4][3][2] [1][0]
   |<---- DSCP ----->|<ECN>|
 
 ECN codepoints (2 bits):
-  00 = Not-ECT (Not ECN-Capable Transport) — default
+  00 = Not-ECT (Not ECN-Capable Transport) - default
   01 = ECT(1)  (ECN-Capable Transport, codepoint 1)
   10 = ECT(0)  (ECN-Capable Transport, codepoint 0)
-  11 = CE      (Congestion Experienced) — set by routers at congestion
+  11 = CE      (Congestion Experienced) - set by routers at congestion
 ```
 
 ## How ECN Works End-to-End
@@ -44,7 +44,7 @@ sequenceDiagram
 
 ## ECN vs Traditional Drop
 
-```
+```text
 Without ECN:
   Congested router → drop packet
   TCP detects packet loss → slow start → reduces window drastically
@@ -62,6 +62,7 @@ With ECN:
 
 ```bash
 # Check current ECN setting
+
 cat /proc/sys/net/ipv4/tcp_ecn
 # 0 = disabled
 # 1 = enabled (negotiate ECN on all TCP connections)
@@ -107,10 +108,10 @@ def parse_traffic_class(traffic_class_byte: int) -> dict:
     ecn  = traffic_class_byte & 0x3
 
     ecn_names = {
-        0b00: "Not-ECT (0) — not ECN capable",
-        0b01: "ECT(1) — ECN capable (codepoint 1)",
-        0b10: "ECT(0) — ECN capable (codepoint 0)",
-        0b11: "CE — Congestion Experienced",
+        0b00: "Not-ECT (0) - not ECN capable",
+        0b01: "ECT(1) - ECN capable (codepoint 1)",
+        0b10: "ECT(0) - ECN capable (codepoint 0)",
+        0b11: "CE - Congestion Experienced",
     }
 
     return {
@@ -125,8 +126,8 @@ def parse_traffic_class(traffic_class_byte: int) -> dict:
 test_values = [
     0x00,  # DSCP=0, ECN=Not-ECT
     0xB8,  # DSCP=46 (EF), ECN=Not-ECT
-    0xBA,  # DSCP=46 (EF), ECN=ECT(1) — VoIP capable of ECN
-    0xBB,  # DSCP=46 (EF), ECN=CE — congestion experienced
+    0xBA,  # DSCP=46 (EF), ECN=ECT(1) - VoIP capable of ECN
+    0xBB,  # DSCP=46 (EF), ECN=CE - congestion experienced
 ]
 
 for tc in test_values:

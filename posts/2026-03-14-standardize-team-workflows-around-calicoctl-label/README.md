@@ -29,6 +29,7 @@ Start by defining a standard set of label keys and allowed values:
 
 ```yaml
 # label-taxonomy.yaml
+
 # Standard label definitions for all Calico resources
 labels:
   required:

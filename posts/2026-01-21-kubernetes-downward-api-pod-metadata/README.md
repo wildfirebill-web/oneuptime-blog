@@ -222,6 +222,7 @@ Reading the files:
 ```bash
 kubectl exec downward-volume -- cat /etc/podinfo/labels
 # Output:
+
 # app="web"
 # component="frontend"
 # version="v2"

@@ -63,6 +63,7 @@ Using a customer-managed key gives you control over key rotation and the ability
 
 ```bash
 # Create a KMS key for MSK
+
 aws kms create-key \
   --description "MSK encryption key" \
   --key-usage ENCRYPT_DECRYPT \

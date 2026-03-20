@@ -49,6 +49,7 @@ Before diving into code, install the required packages for working with LangChai
 
 ```bash
 # Core LangChain packages
+
 pip install langchain langchain-community langchain-openai
 
 # Vector store backends (install what you need)

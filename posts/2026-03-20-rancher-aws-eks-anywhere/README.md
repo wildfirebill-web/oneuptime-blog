@@ -22,6 +22,7 @@ EKS Anywhere (EKS-A) lets you run AWS-supported Kubernetes clusters on-premises 
 
 ```bash
 # Generate a cluster configuration
+
 eksctl anywhere generate clusterconfig my-rancher-cluster \
   --provider vsphere > my-rancher-cluster.yaml
 

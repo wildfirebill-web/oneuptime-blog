@@ -18,6 +18,7 @@ First, make sure access logging is turned on for your ALB:
 
 ```bash
 # Enable access logging for an Application Load Balancer
+
 aws elbv2 modify-load-balancer-attributes \
   --load-balancer-arn arn:aws:elasticloadbalancing:us-east-1:123456789012:loadbalancer/app/my-alb/abc123 \
   --attributes \

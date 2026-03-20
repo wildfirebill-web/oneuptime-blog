@@ -75,6 +75,7 @@ locals {
 }
 
 # In tofu console:
+
 # > type(local.my_list)
 # "tuple"
 # > type(local.my_set)

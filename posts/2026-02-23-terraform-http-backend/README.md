@@ -26,6 +26,7 @@ Here is the minimal configuration:
 
 ```hcl
 # backend.tf
+
 terraform {
   backend "http" {
     # URL for GET and POST operations

@@ -54,6 +54,7 @@ Clustering adds complexity, so if a single instance meets your needs, keep it si
 
 ```bash
 # Create a Premium tier Redis cache with 3 shards
+
 az redis create \
   --resource-group myResourceGroup \
   --name my-redis-cluster \

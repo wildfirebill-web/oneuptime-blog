@@ -180,6 +180,7 @@ Inhibition prevents certain alerts from firing when others are already active. T
 
 ```yaml
 # Inhibit less severe alerts when critical ones are firing
+
 inhibit_rules:
   # If a critical alert is firing, suppress warnings for the same service
   - source_match:

@@ -31,6 +31,7 @@ SSH into each node and run the kernel validation:
 
 ```bash
 # Check kernel version - must be 4.9.17 or higher
+
 uname -r
 
 # Verify eBPF filesystem is mounted

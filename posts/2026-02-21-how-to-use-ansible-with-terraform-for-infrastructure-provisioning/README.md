@@ -73,6 +73,7 @@ resource "aws_instance" "web" {
 }
 
 # Generate an Ansible inventory from Terraform resources
+
 resource "local_file" "ansible_inventory" {
   content = templatefile("${path.module}/templates/inventory.tftpl", {
     web_servers = aws_instance.web[*]

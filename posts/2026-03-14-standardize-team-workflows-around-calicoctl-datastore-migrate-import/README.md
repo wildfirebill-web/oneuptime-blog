@@ -75,6 +75,7 @@ echo "Operator: $USER"
 echo "Date: $(date)"
 
 # Confirm readiness
+
 read -p "Have you completed the pre-migration checklist? (yes/no): " READY
 if [ "$READY" != "yes" ]; then
   echo "Complete the checklist first."

@@ -36,6 +36,7 @@ Before connecting nodes to Omni, you need:
 
 ```bash
 # Install omnictl
+
 curl -sL https://omni.siderolabs.com/install | sh
 
 # Verify installation

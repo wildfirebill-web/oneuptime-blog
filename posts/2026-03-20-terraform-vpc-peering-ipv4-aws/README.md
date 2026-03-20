@@ -16,6 +16,7 @@ VPC peering connects two VPCs so their IPv4 address spaces can communicate priva
 # vpc_peering.tf
 
 # Create peering connection (requester)
+
 resource "aws_vpc_peering_connection" "main" {
   vpc_id      = aws_vpc.main.id        # Requester VPC
   peer_vpc_id = aws_vpc.secondary.id  # Accepter VPC

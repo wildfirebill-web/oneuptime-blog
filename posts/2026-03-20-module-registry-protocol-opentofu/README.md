@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: OpenTofu, Module Registry, Protocol, Internals, Infrastructure as Code
 
-Description: Learn how the OpenTofu module registry protocol works — how modules are discovered, downloaded, and versioned, and how to run your own private module registry.
+Description: Learn how the OpenTofu module registry protocol works - how modules are discovered, downloaded, and versioned, and how to run your own private module registry.
 
 ## Introduction
 
@@ -12,7 +12,7 @@ When you specify `source = "terraform-aws-modules/vpc/aws"`, OpenTofu performs a
 
 ## Module Source Address Format
 
-```
+```text
 [<HOSTNAME>/]<NAMESPACE>/<MODULE_NAME>/<PROVIDER>
 
 Examples:
@@ -29,6 +29,7 @@ Before downloading modules, OpenTofu discovers the registry's API endpoints:
 
 ```bash
 # Step 1: Fetch .well-known/terraform.json from the registry host
+
 curl -s https://registry.opentofu.org/.well-known/terraform.json | jq .
 
 # Response:
@@ -82,7 +83,7 @@ Option 1: Simple static file server (read-only):
 
 ```python
 #!/usr/bin/env python3
-# private-registry/server.py — minimal module registry
+# private-registry/server.py - minimal module registry
 
 import json
 from http.server import HTTPServer, BaseHTTPRequestHandler

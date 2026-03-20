@@ -25,6 +25,7 @@ EKS adds complexity because AWS manages the control plane, and Cilium must work 
 
 ```bash
 # Check Kubernetes version
+
 kubectl version --short
 
 # Cilium 1.15+ requires Kubernetes 1.21+

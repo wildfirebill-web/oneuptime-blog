@@ -29,6 +29,7 @@ graph LR
 
 ```bash
 # Create a Service Bus namespace
+
 az servicebus namespace create \
   --name order-events-ns \
   --resource-group microservices-rg \

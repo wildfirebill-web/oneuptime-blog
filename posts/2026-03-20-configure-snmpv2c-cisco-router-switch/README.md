@@ -14,7 +14,7 @@ SNMPv2c (Simple Network Management Protocol version 2 with community-based secur
 
 ## Step 1: Configure a Read-Only Community String
 
-```
+```text
 ! Configure a read-only community - NMS can poll but not change settings
 Router(config)# snmp-server community public RO
 
@@ -32,7 +32,7 @@ Always pair community strings with an ACL to prevent unauthorized polling.
 
 These fields help identify the device in your NMS:
 
-```
+```text
 ! Set contact information
 Router(config)# snmp-server contact "NetOps Team - netops@example.com"
 
@@ -47,7 +47,7 @@ Router(config)# hostname Core-Router-01
 
 Send SNMP traps to your NMS when events occur:
 
-```
+```text
 ! Send SNMPv2c traps to the NMS server
 Router(config)# snmp-server host 192.168.1.100 version 2c public
 
@@ -66,7 +66,7 @@ Router(config)# snmp-server trap-source Loopback0
 
 Restrict which interfaces respond to SNMP queries:
 
-```
+```text
 ! Only respond to SNMP queries on the management interface
 Router(config)# snmp-server trap-source GigabitEthernet0/0
 Router(config)# ip access-list standard SNMP_ACCESS
@@ -78,7 +78,7 @@ Router(config)# snmp-server community Net0ps_M0n!t0r RO SNMP_ACCESS
 
 ## Step 5: Verify SNMP Configuration
 
-```
+```bash
 ! View current SNMP configuration
 Router# show snmp
 
@@ -104,6 +104,7 @@ Common SNMP OIDs for interface monitoring:
 
 ```bash
 # Interface description
+
 snmpwalk -v2c -c public 192.168.1.1 ifDescr
 
 # Interface operational status (1=up, 2=down)
@@ -120,7 +121,7 @@ snmpwalk -v2c -c public 192.168.1.1 ifOutOctets
 
 The Engine ID uniquely identifies the SNMP agent. Set it explicitly for consistent identification:
 
-```
+```text
 Router(config)# snmp-server engineID local 0000000001020304
 ```
 

@@ -1,4 +1,4 @@
-# How to Fix Container Console Not Loading Behind a Reverse Proxy
+# How to Fix Container Console Not Loading Behind a Reverse Proxy (2)
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -24,6 +24,7 @@ Any break in this chain causes the console to fail.
 
 ```bash
 # Test the console without the proxy (direct access)
+
 # Open http://your-host:9000 directly (bypass the proxy)
 # Try the container console
 
@@ -36,7 +37,7 @@ Any break in this chain causes the console to fail.
 
 ## Step 2: Check Browser Console for Specific Errors
 
-```
+```text
 F12 → Console tab
 
 Common error messages:
@@ -46,7 +47,7 @@ Common error messages:
 - Blank terminal, no error → Buffer/flush issue
 ```
 
-## Step 3: Nginx — Console-Specific Configuration
+## Step 3: Nginx - Console-Specific Configuration
 
 ```nginx
 server {

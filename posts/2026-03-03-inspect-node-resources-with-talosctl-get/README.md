@@ -25,6 +25,7 @@ You query these resources using `talosctl get`.
 
 ```bash
 # Get all resources of a given type
+
 talosctl get <resource-type> --nodes <node-ip>
 
 # Get a specific resource by ID

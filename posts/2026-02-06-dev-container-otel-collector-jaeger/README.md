@@ -121,6 +121,7 @@ Create a simple `Dockerfile` in `.devcontainer`:
 FROM mcr.microsoft.com/devcontainers/python:3.12
 
 # Install OpenTelemetry packages for Python
+
 RUN pip install \
     opentelemetry-api \
     opentelemetry-sdk \

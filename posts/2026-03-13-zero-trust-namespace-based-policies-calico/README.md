@@ -72,6 +72,7 @@ spec:
 
 ```yaml
 # Allow monitoring to scrape all namespaces
+
 apiVersion: projectcalico.org/v3
 kind: GlobalNetworkPolicy
 metadata:

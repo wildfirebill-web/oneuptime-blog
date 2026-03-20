@@ -16,6 +16,7 @@ Kafka requires Java:
 
 ```bash
 # Install Java 17
+
 sudo dnf install -y java-17-openjdk java-17-openjdk-devel
 java -version
 ```

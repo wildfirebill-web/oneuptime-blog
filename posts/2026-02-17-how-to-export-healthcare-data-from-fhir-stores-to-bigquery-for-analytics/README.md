@@ -41,6 +41,7 @@ This command creates the dataset in the matching region:
 
 ```bash
 # Create BigQuery dataset in the same region as your FHIR store
+
 bq mk --dataset \
   --location=us-central1 \
   --description="Exported FHIR data for healthcare analytics" \

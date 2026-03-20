@@ -14,6 +14,7 @@ After registering a RHEL system, you need to attach subscriptions to access soft
 
 ```bash
 # Automatically attach the best available subscription
+
 sudo subscription-manager attach --auto
 
 # Check what was attached

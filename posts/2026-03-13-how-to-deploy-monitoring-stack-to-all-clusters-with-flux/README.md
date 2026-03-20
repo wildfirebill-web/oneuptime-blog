@@ -64,6 +64,7 @@ repo/
 
 ```yaml
 # infrastructure/sources/prometheus-community.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

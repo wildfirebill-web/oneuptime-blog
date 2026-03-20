@@ -655,6 +655,7 @@ spec:
 
 ```bash
 # Port forward to pod
+
 kubectl port-forward postgres-monitored-1 9187:9187
 
 # Fetch metrics

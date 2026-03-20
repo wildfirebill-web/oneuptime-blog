@@ -31,6 +31,7 @@ If you are creating a new cluster, enable the driver at creation time:
 
 ```bash
 # Create a GKE cluster with the Filestore CSI driver enabled
+
 gcloud container clusters create my-cluster \
   --zone=us-central1-a \
   --num-nodes=3 \

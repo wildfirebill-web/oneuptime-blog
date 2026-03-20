@@ -40,6 +40,7 @@ kubectl exec -n kube-system ds/cilium -- \
   cilium-dbg endpoint list | grep <pod-ip>
 
 # Get endpoint ID from above output
+
 kubectl exec -n kube-system ds/cilium -- \
   cilium-dbg endpoint get <endpoint-id> | grep -A30 "policy"
 ```

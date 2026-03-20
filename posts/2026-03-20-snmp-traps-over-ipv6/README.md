@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: SNMP, Traps, IPv6, Network Monitoring, Alert, Net-SNMP, Notifications
+Tags: SNMP, Traps, IPv6, Network Monitoring, Alerts, Net-SNMP, Notifications
 
 Description: Configure SNMP trap sending and receiving over IPv6, enabling devices to send event notifications to monitoring systems using IPv6 transport.
 
@@ -16,6 +16,7 @@ SNMP traps are asynchronous notifications sent from network devices to managemen
 # /etc/snmp/snmpd.conf - Configure trap destinations over IPv6
 
 # Send SNMPv2c traps to IPv6 NMS
+
 trapsink udp6:[2001:db8::nms]:162 public
 
 # Send to multiple NMS over IPv6
@@ -142,7 +143,7 @@ echo "$(date): Link DOWN on ${HOSTNAME}" >> /var/log/trap_events.log
 
 ## Network Device Trap Configuration
 
-```
+```text
 ! Cisco IOS - Send traps over IPv6
 snmp-server enable traps
 snmp-server host 2001:db8::nms version 2c public udp-port 162

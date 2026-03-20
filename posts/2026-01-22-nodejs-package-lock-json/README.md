@@ -108,6 +108,7 @@ Records the entire dependency tree including nested dependencies:
 **Applications (recommended):**
 ```bash
 # Always commit for deployable applications
+
 git add package-lock.json
 git commit -m "Lock dependencies"
 ```

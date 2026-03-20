@@ -29,6 +29,7 @@ The most common AWS-specific failures involve cross-AZ traffic being dropped by 
 
 ```bash
 # Run a ping from pod in AZ1 to pod in AZ2
+
 kubectl exec test-pod-az1 -- ping -c 3 192.168.1.50
 # If this fails but same-AZ works, it's a cross-AZ issue
 ```

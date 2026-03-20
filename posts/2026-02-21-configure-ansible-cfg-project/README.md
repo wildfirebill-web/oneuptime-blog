@@ -23,6 +23,7 @@ For project-specific configurations, place the file in your project's root direc
 
 ```bash
 # Create a project directory with ansible.cfg
+
 mkdir -p ~/projects/web-infrastructure
 cd ~/projects/web-infrastructure
 touch ansible.cfg inventory.ini

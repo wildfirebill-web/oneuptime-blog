@@ -25,6 +25,7 @@ Before using `win_domain`, the target server needs the AD DS role installed. You
 
 ```yaml
 # prerequisites.yml - Install AD DS prerequisites
+
 ---
 - name: Install AD DS prerequisites
   hosts: new_domain_controllers

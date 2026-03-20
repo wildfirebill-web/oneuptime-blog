@@ -35,6 +35,7 @@ This creates an application that:
 
 ```bash
 # Specify a specific branch
+
 argocd app create my-app \
   --repo https://github.com/my-org/manifests.git \
   --revision main \

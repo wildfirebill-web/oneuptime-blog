@@ -44,6 +44,7 @@ For Orin-based devices:
 
 ```bash
 # On your host computer, use NVIDIA SDK Manager
+
 # or the L4T flash tools
 # Download JetPack SDK from NVIDIA's developer site
 

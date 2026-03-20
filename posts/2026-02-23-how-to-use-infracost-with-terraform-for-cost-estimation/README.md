@@ -18,6 +18,7 @@ Infracost is an open-source tool that estimates the monthly cost of Terraform co
 
 ```bash
 # macOS
+
 brew install infracost
 
 # Linux

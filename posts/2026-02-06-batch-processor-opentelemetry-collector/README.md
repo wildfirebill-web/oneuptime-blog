@@ -223,6 +223,7 @@ Measure your telemetry generation rate:
 
 ```bash
 # Query your collector metrics endpoint
+
 curl http://localhost:8888/metrics | grep receiver_accepted
 
 # Look for metrics like:

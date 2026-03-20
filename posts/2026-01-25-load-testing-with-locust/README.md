@@ -16,6 +16,7 @@ Install Locust using pip:
 
 ```bash
 # Install Locust
+
 pip install locust
 
 # Verify installation

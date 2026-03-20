@@ -24,6 +24,7 @@ The key insight: `UNSET` is not a success indicator. It means "I have no opinion
 
 ```python
 # WRONG - Do not treat client errors as span errors
+
 @app.route("/api/users/<user_id>")
 def get_user(user_id):
     with tracer.start_as_current_span("get-user") as span:

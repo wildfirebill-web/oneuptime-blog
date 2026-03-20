@@ -124,4 +124,4 @@ tofu apply tfplan
 
 ## Summary
 
-Azure Communication Services provides a unified platform for SMS, email, chat, and calling. Using OpenTofu you can provision ACS resources, configure email domains, and wire up Event Grid subscriptions for event-driven communication workflows — all from version-controlled configuration.
+Azure Communication Services provides a unified platform for SMS, email, chat, and calling. Using OpenTofu you can provision ACS resources, configure email domains, and wire up Event Grid subscriptions for event-driven communication workflows - all from version-controlled configuration.

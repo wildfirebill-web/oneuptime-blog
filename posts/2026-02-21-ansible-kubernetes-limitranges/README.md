@@ -40,6 +40,7 @@ The most common use case: set defaults and bounds for individual containers.
 
 ```yaml
 # playbook: create-container-limitrange.yml
+
 # Sets default resource requests and limits for containers
 ---
 - name: Create Container LimitRange

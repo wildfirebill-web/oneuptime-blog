@@ -20,6 +20,7 @@ crane is a fast, efficient tool for working with container registries. It copies
 
 ```bash
 # Install crane using Go
+
 go install github.com/google/go-containerregistry/cmd/crane@latest
 
 # Or download a pre-built binary (Linux)

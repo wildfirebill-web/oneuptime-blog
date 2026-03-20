@@ -22,6 +22,7 @@ This playbook creates users from a dictionary:
 
 ```yaml
 # playbook.yml - Loop over a dictionary of users
+
 ---
 - name: Create user accounts
   hosts: all

@@ -43,6 +43,7 @@ The most direct fix is to add the missing namespace to the project's destination
 
 ```bash
 # Add a specific namespace on the local cluster
+
 argocd proj add-destination my-project https://kubernetes.default.svc production
 
 # Verify it was added

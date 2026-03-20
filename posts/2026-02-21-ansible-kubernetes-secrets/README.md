@@ -22,6 +22,7 @@ This guide covers creating different types of Kubernetes Secrets with Ansible, i
 
 ```bash
 # Install the required pieces
+
 ansible-galaxy collection install kubernetes.core
 pip install kubernetes
 ```

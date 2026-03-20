@@ -29,6 +29,7 @@ When you create a VPN connection with `static_routes_only = false`, AWS automati
 # vpn-bgp.tf - VPN connection with BGP routing
 
 # Virtual Private Gateway with custom ASN
+
 resource "aws_vpn_gateway" "main" {
   vpc_id = aws_vpc.main.id
 

@@ -35,6 +35,7 @@ Streaming ingestion must be enabled at the cluster level first. This is done thr
 
 ```bash
 # Enable streaming ingestion on the ADX cluster
+
 # This requires a cluster restart which takes a few minutes
 az kusto cluster update \
   --resource-group my-resource-group \

@@ -39,6 +39,7 @@ Before debugging Alertmanager, confirm that Prometheus is actually firing alerts
 
 ```bash
 # Check the Prometheus alerts API
+
 curl -s http://prometheus:9090/api/v1/alerts | jq '.data.alerts[] | select(.state=="firing")'
 
 # Check if Prometheus can reach Alertmanager

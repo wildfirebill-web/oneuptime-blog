@@ -54,6 +54,7 @@ If exporting to Azure Storage, create a storage account.
 
 ```bash
 # Create a storage account for log archiving
+
 az storage account create \
   --name stlogarchive \
   --resource-group rg-monitoring \

@@ -112,6 +112,7 @@ On each node, update `/etc/hosts`:
 
 ```bash
 # Add these lines to /etc/hosts on all nodes
+
 sudo tee -a /etc/hosts << EOF
 192.168.1.101 pg-node1
 192.168.1.102 pg-node2

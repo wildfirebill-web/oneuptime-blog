@@ -18,6 +18,7 @@ For a quick solution, a shell script with cron works well for small environments
 
 ```bash
 # Create a basic HTTP uptime check script
+
 sudo tee /usr/local/bin/uptime-check.sh << 'EOF'
 #!/bin/bash
 # Simple HTTP uptime monitor with email alerting

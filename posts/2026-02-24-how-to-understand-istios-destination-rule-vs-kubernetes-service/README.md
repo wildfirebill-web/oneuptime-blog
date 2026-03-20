@@ -109,6 +109,7 @@ With a DestinationRule, you override those defaults.
 
 ```yaml
 # Least Request - sends to the backend with fewest active requests
+
 trafficPolicy:
   loadBalancer:
     simple: LEAST_REQUEST

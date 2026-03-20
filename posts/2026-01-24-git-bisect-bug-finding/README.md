@@ -34,6 +34,7 @@ flowchart TD
 
 ```bash
 # Start the bisect session
+
 git bisect start
 
 # Mark the current commit as bad (has the bug)

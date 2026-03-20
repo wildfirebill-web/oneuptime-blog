@@ -28,6 +28,7 @@ In this guide you will configure the Backstage Kubernetes plugin to surface Flux
 
 ```bash
 # In your Backstage app directory
+
 yarn --cwd packages/app add @backstage/plugin-kubernetes
 yarn --cwd packages/backend add @backstage/plugin-kubernetes-backend
 ```

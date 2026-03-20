@@ -44,6 +44,7 @@ By default, `argocd app get` returns the cached state. To force a fresh comparis
 
 ```bash
 # Normal refresh - compare against cached Git state
+
 argocd app get my-app --refresh
 
 # Hard refresh - re-fetch from Git, re-render manifests, then compare
@@ -166,7 +167,7 @@ Possible health statuses:
 - **Missing** - Resources are missing
 - **Unknown** - Health cannot be determined
 
-### Resource Table
+Resource Table
 
 The bottom section lists every managed resource:
 

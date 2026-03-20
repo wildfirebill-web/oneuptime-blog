@@ -22,6 +22,7 @@ Before installing the AI Lab extension, you need Podman and Podman Desktop insta
 
 ```bash
 # On Fedora/RHEL
+
 sudo dnf install podman -y
 
 # On Ubuntu/Debian

@@ -32,6 +32,7 @@ The `ServiceL2Status` resource shows the current L2 advertisement state for a se
 
 ```bash
 # List all ServiceL2Status resources across all namespaces
+
 kubectl get servicel2status -A
 ```
 

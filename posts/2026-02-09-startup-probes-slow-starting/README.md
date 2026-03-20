@@ -250,6 +250,7 @@ Implement the startup endpoint to track progress:
 
 ```python
 # Python Flask example
+
 from flask import Flask, jsonify
 import threading
 import time

@@ -26,6 +26,7 @@ For this guide, we will focus on the Standard tier, which is what most productio
 
 ```hcl
 # versions.tf
+
 terraform {
   required_version = ">= 1.5.0"
 

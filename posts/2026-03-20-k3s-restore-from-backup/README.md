@@ -8,7 +8,7 @@ Description: Step-by-step instructions for restoring a K3s cluster from an etcd 
 
 ## Introduction
 
-When disaster strikes — whether from accidental deletion, data corruption, or a failed upgrade — having a reliable restore procedure is essential. K3s provides built-in tools to restore from etcd snapshots. This guide covers restoring from both SQLite and etcd snapshot backups, including single-node and HA cluster scenarios.
+When disaster strikes - whether from accidental deletion, data corruption, or a failed upgrade - having a reliable restore procedure is essential. K3s provides built-in tools to restore from etcd snapshots. This guide covers restoring from both SQLite and etcd snapshot backups, including single-node and HA cluster scenarios.
 
 ## Prerequisites
 
@@ -23,6 +23,7 @@ For single-server K3s deployments using the default SQLite backend:
 
 ```bash
 # Step 1: Stop K3s
+
 systemctl stop k3s
 
 # Step 2: Verify the backup file exists

@@ -1,4 +1,4 @@
-# How to Migrate Containers Between Portainer Environments
+# How to Migrate Containers Between Portainer Environments - Portainer
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,13 +8,13 @@ Description: Learn how to move containers and stacks from one Portainer environm
 
 ---
 
-Portainer makes multi-environment management easy, but moving workloads between environments — for example, from staging to production, or from one Docker host to another — requires a methodical approach. This guide covers migrating containers, stacks, and their data between Portainer-managed environments.
+Portainer makes multi-environment management easy, but moving workloads between environments - for example, from staging to production, or from one Docker host to another - requires a methodical approach. This guide covers migrating containers, stacks, and their data between Portainer-managed environments.
 
 ---
 
 ## Understanding Portainer Environments
 
-In Portainer, each Docker host or Kubernetes cluster is a separate "environment." Containers in one environment cannot be directly moved to another from the UI — you need to export configurations and transfer data manually.
+In Portainer, each Docker host or Kubernetes cluster is a separate "environment." Containers in one environment cannot be directly moved to another from the UI - you need to export configurations and transfer data manually.
 
 ---
 
@@ -33,6 +33,7 @@ Alternatively, if you have access to the host filesystem:
 
 ```bash
 # Find the Portainer-managed stack files on the source host
+
 ls /var/lib/docker/volumes/portainer_data/_data/compose/
 
 # Copy the specific stack directory

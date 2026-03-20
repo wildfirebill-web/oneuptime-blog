@@ -22,6 +22,7 @@ Before installing AWS CLI, ensure you have:
 
 ```bash
 # Install prerequisites if not already present
+
 sudo apt update
 sudo apt install -y curl unzip
 ```

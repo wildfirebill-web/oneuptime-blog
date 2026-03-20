@@ -24,6 +24,7 @@ The simplest way to request a Spot Instance is through a standard RunInstances c
 
 ```bash
 # Launch a single Spot Instance
+
 aws ec2 run-instances \
   --image-id ami-0abcdef1234567890 \
   --instance-type m5.large \

@@ -33,6 +33,7 @@ This is one of the strongest arguments for running Multi-AZ in production. The m
 
 ```bash
 # Check the current maintenance window for an instance
+
 aws rds describe-db-instances \
   --db-instance-identifier my-database \
   --query 'DBInstances[0].{MaintenanceWindow:PreferredMaintenanceWindow,PendingMaintenance:PendingModifiedValues}'

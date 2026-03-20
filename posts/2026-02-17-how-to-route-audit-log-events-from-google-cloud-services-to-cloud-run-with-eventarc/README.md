@@ -27,6 +27,7 @@ Eventarc can trigger on Admin Activity and Data Access logs. Admin Activity logs
 
 ```bash
 # Enable required APIs
+
 gcloud services enable \
   run.googleapis.com \
   eventarc.googleapis.com \

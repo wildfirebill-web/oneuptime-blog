@@ -18,6 +18,7 @@ In Terraform 0.11, the `map` function constructed a map from alternating key-val
 
 ```hcl
 # Old Terraform 0.11 syntax (DEPRECATED)
+
 # map("name", "web", "type", "t3.micro")
 # This produced {name = "web", type = "t3.micro"}
 ```

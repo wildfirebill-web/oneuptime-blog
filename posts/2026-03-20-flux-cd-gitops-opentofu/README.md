@@ -26,6 +26,7 @@ graph LR
 
 ```hcl
 # flux.tf
+
 resource "helm_release" "flux" {
   name             = "flux2"
   repository       = "https://fluxcd-community.github.io/helm-charts"
@@ -197,6 +198,6 @@ resource "kubernetes_manifest" "flux_alert" {
 
 - Use `interval: 1m` for GitRepository polling in non-production and `1m` for production to balance responsiveness with API rate limits.
 - Enable `prune: true` on Kustomizations to automatically delete resources removed from Git.
-- Configure rollback on HelmRelease failures — this prevents broken releases from staying deployed indefinitely.
-- Wire Flux notifications to Slack or GitHub commit status — teams need to know when deployments succeed or fail.
-- Use GitHub webhook receivers instead of polling for faster deployments in production — webhooks trigger reconciliation immediately on push.
+- Configure rollback on HelmRelease failures - this prevents broken releases from staying deployed indefinitely.
+- Wire Flux notifications to Slack or GitHub commit status - teams need to know when deployments succeed or fail.
+- Use GitHub webhook receivers instead of polling for faster deployments in production - webhooks trigger reconciliation immediately on push.

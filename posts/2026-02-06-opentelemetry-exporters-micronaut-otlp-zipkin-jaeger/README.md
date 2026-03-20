@@ -92,6 +92,7 @@ OTLP (OpenTelemetry Protocol) is the recommended exporter for modern deployments
 
 ```yaml
 # application.yml - OTLP with gRPC
+
 tracing:
   enabled: true
 

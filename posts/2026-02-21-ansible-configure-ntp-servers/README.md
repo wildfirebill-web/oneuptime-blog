@@ -28,6 +28,7 @@ Here is a playbook that installs and configures chrony:
 
 ```yaml
 # configure_chrony.yml - Install and configure chrony time synchronization
+
 ---
 - name: Configure chrony NTP
   hosts: all

@@ -95,6 +95,7 @@ Test it:
 
 ```bash
 # Goes to v1 (default)
+
 curl http://my-service:8080/api
 
 # Goes to v2

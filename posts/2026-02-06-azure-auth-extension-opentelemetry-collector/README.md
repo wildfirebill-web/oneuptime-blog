@@ -32,6 +32,7 @@ When running on Azure infrastructure, managed identity is the simplest and most 
 
 ```yaml
 # collector-config.yaml
+
 extensions:
   # Configure Azure auth with system-assigned managed identity
   azureauth:

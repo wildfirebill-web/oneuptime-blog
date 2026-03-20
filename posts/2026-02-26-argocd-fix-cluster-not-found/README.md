@@ -44,6 +44,7 @@ The most common cause - the cluster was never added to ArgoCD.
 
 ```bash
 # First, make sure your kubeconfig has the remote cluster context
+
 kubectl config get-contexts
 
 # Add the cluster to ArgoCD

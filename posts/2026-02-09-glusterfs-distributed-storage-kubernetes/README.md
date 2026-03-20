@@ -30,6 +30,7 @@ You need at least 3 nodes with additional disks for GlusterFS storage. Label you
 
 ```bash
 # Label storage nodes
+
 kubectl label node node1 storagenode=glusterfs
 kubectl label node node2 storagenode=glusterfs
 kubectl label node node3 storagenode=glusterfs

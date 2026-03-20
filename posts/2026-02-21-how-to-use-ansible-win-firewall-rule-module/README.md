@@ -16,6 +16,7 @@ The most common operation is opening a port for inbound traffic.
 
 ```yaml
 # basic-firewall-rule.yml - Create inbound firewall rules
+
 ---
 - name: Configure Windows Firewall rules
   hosts: windows_servers

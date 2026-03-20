@@ -54,6 +54,7 @@ Samba provides SMB/CIFS file sharing on Linux and supports IPv6 natively from ve
 
 ```bash
 # Restart Samba
+
 systemctl restart smbd nmbd
 
 # Check that smbd listens on IPv6
@@ -139,7 +140,7 @@ print(f'{literal}.ipv6-literal.net')
     realm = EXAMPLE.COM
     workgroup = EXAMPLE
 
-    # AD controller with IPv6 — use hostname, not IP
+    # AD controller with IPv6 - use hostname, not IP
     # Kerberos resolves DC hostnames to AAAA records
     kerberos method = secrets and keytab
     winbind use default domain = yes
@@ -158,7 +159,7 @@ ip6tables -A INPUT -p tcp --dport 139 -s 2001:db8:clients::/48 -j ACCEPT
 ip6tables -A INPUT -p udp --dport 137 -s 2001:db8:clients::/48 -j ACCEPT
 ip6tables -A INPUT -p udp --dport 138 -s 2001:db8:clients::/48 -j ACCEPT
 
-# SMB3 encryption — only port 445 is needed for modern clients
+# SMB3 encryption - only port 445 is needed for modern clients
 ip6tables -A INPUT -p tcp --dport 445 -j ACCEPT
 
 ip6tables-save > /etc/ip6tables/rules.v6

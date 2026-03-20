@@ -26,6 +26,7 @@ On each Windows node (run in PowerShell as Administrator):
 
 ```powershell
 # Enable Windows containers feature
+
 Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V -All
 Enable-WindowsOptionalFeature -Online -FeatureName containers -All
 

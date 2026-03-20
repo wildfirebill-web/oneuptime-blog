@@ -32,6 +32,7 @@ The best place to discover Operators is OperatorHub.io, which catalogs hundreds 
 
 ```bash
 # Search for operators on Artifact Hub
+
 # Visit https://artifacthub.io and filter by "Operator"
 
 # Or use the OLM (Operator Lifecycle Manager) catalog

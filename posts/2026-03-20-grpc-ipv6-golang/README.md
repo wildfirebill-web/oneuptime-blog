@@ -30,7 +30,7 @@ type server struct {
 
 func main() {
     // Listen on all IPv6 interfaces (:: is IPv6 equivalent of 0.0.0.0)
-    // Use [::]:50051 format — square brackets are required for IPv6
+    // Use [::]:50051 format - square brackets are required for IPv6
     listener, err := net.Listen("tcp", "[::]:50051")
     if err != nil {
         log.Fatalf("Failed to listen: %v", err)
@@ -174,6 +174,7 @@ healthServer.SetServingStatus("greeter", grpc_health_v1.HealthCheckResponse_SERV
 
 ```bash
 # Test gRPC server over IPv6 with grpcurl
+
 grpcurl -plaintext '[2001:db8::1]:50051' list
 grpcurl -plaintext '[2001:db8::1]:50051' helloworld.Greeter/SayHello
 

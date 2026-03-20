@@ -121,6 +121,7 @@ For production, use environment variables instead of hardcoding credentials.
 
 ```yaml
 # In docker-compose or Kubernetes
+
 environment:
   PG_DATABASE_URL: ${DATABASE_URL}
 ```

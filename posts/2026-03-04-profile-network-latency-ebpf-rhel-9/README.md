@@ -33,6 +33,7 @@ First, install the BCC tools and bpftrace, which give you ready-made eBPF script
 
 ```bash
 # Install BCC tools - these are pre-built eBPF programs for common tasks
+
 sudo dnf install -y bcc-tools bpftrace
 
 # Verify the kernel supports BTF (BPF Type Format) - needed for CO-RE programs

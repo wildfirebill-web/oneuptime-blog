@@ -30,6 +30,7 @@ Here is how to upload a TensorFlow model to the Model Registry:
 
 ```python
 # upload_model.py
+
 # Uploads a trained model to Vertex AI Model Registry
 
 from google.cloud import aiplatform

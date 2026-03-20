@@ -12,6 +12,7 @@ Description: Learn how to configure Apache Cassandra to use IPv6 addresses for n
 # /etc/cassandra/cassandra.yaml
 
 # Address for inter-node communication (seeds, gossip)
+
 listen_address: ""            # Empty = use listen_interface
 listen_interface: eth0        # Use interface name
 

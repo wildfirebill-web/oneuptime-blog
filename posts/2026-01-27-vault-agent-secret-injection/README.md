@@ -46,6 +46,7 @@ Here is a minimal Vault Agent configuration file that demonstrates the core conc
 
 ```hcl
 # vault-agent-config.hcl
+
 # This configuration sets up Vault Agent with Kubernetes auto-auth
 # and renders database credentials to a file
 

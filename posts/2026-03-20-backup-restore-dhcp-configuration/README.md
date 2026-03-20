@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: DHCP, Backup, Restore, Linux, sysadmin, Network Management
+Tags: DHCP, Backup, Restore, Linux, Sysadmin, Network Management
 
 Description: Regularly backing up the DHCP configuration file and lease database ensures you can quickly restore service after a server failure, with automated scripts to schedule backups and validate restores.
 
@@ -19,7 +19,7 @@ Description: Regularly backing up the DHCP configuration file and lease database
 
 ```bash
 #!/bin/bash
-# dhcp-backup.sh — run daily via cron
+# dhcp-backup.sh - run daily via cron
 
 BACKUP_DIR="/var/backups/dhcp"
 DATE=$(date +%Y%m%d_%H%M%S)
@@ -27,6 +27,7 @@ DATE=$(date +%Y%m%d_%H%M%S)
 mkdir -p "$BACKUP_DIR"
 
 # Stop server briefly to ensure lease file consistency (optional)
+
 # sudo systemctl stop isc-dhcp-server
 
 tar czf "$BACKUP_DIR/dhcp-backup-$DATE.tar.gz" \
@@ -96,7 +97,7 @@ Start-Service -Name DHCPServer
 
 ## Key Takeaways
 
-- Back up both `dhcpd.conf` and `dhcpd.leases` — the config defines pools, leases define current assignments.
+- Back up both `dhcpd.conf` and `dhcpd.leases` - the config defines pools, leases define current assignments.
 - Run `dhcpd -t -cf /etc/dhcp/dhcpd.conf` to validate the config before starting the restored service.
 - Automate daily backups with cron; retain 30 days of history.
 - Test the restore procedure on a non-production system to verify it works before you need it.

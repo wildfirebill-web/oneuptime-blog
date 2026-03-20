@@ -14,6 +14,7 @@ DNS round-robin distributes traffic across multiple servers by returning differe
 
 ```bash
 # Multiple A records for the same name = round-robin:
+
 cat >> /etc/bind/zones/db.example.com << 'EOF'
 ; Round-robin across 3 web servers:
 www     60  IN  A  10.20.0.10

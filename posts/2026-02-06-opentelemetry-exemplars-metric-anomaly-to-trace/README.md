@@ -48,6 +48,7 @@ from opentelemetry.sdk.metrics._internal.exemplar import (
 )
 
 # Create meter provider with trace-based exemplar filtering
+
 reader = PeriodicExportingMetricReader(
     OTLPMetricExporter(endpoint="http://localhost:4317"),
 )

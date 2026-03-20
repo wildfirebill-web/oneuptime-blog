@@ -31,6 +31,7 @@ You need Docker and Docker Compose on your server. For automatic SSL certificate
 
 ```bash
 # Confirm Docker is ready
+
 docker --version
 docker compose version
 ```

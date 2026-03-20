@@ -58,6 +58,7 @@ SSH into your Raspberry Pi node and confirm ARP is the problem:
 
 ```bash
 # Check if MetalLB assigned an IP (EXTERNAL-IP should not be <pending>)
+
 kubectl get svc -A | grep LoadBalancer
 
 # Check MetalLB speaker logs for ARP activity

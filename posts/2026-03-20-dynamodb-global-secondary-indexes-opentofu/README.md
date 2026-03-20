@@ -112,6 +112,7 @@ tofu plan
 tofu apply
 
 # Query using GSI
+
 aws dynamodb query \
   --table-name <table-name> \
   --index-name CustomerOrders \
@@ -121,4 +122,4 @@ aws dynamodb query \
 
 ## Conclusion
 
-Choose `projection_type = "ALL"` when you frequently access many attributes from GSI query results—it avoids costly table fetches but doubles storage. Use `INCLUDE` to project only the attributes your queries need, and `KEYS_ONLY` for aggregate queries that only need IDs. GSI writes consume additional write capacity since every table write that touches indexed attributes also writes to the GSI. Design your GSI partition keys to distribute load evenly—hot partition keys on GSIs cause the same throttling issues as on base tables.
+Choose `projection_type = "ALL"` when you frequently access many attributes from GSI query results-it avoids costly table fetches but doubles storage. Use `INCLUDE` to project only the attributes your queries need, and `KEYS_ONLY` for aggregate queries that only need IDs. GSI writes consume additional write capacity since every table write that touches indexed attributes also writes to the GSI. Design your GSI partition keys to distribute load evenly-hot partition keys on GSIs cause the same throttling issues as on base tables.

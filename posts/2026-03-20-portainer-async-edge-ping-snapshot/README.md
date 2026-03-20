@@ -1,4 +1,4 @@
-# How to Configure Async Edge Agent Ping and Snapshot Frequency
+# How to Configure Async Edge Agent Ping and Snapshot Frequency (2)
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -46,6 +46,7 @@ How often the agent sends a full environment snapshot (container list, status, r
 
 ```yaml
 # docker-compose.yml
+
 version: "3.8"
 
 services:

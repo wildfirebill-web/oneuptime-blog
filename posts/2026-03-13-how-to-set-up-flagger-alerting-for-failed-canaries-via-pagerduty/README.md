@@ -34,6 +34,7 @@ Store the PagerDuty integration key as a Kubernetes Secret.
 
 ```yaml
 # pagerduty-secret.yaml
+
 # Kubernetes Secret containing the PagerDuty integration key
 apiVersion: v1
 kind: Secret

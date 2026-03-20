@@ -16,6 +16,7 @@ iptables accepts both numeric types and symbolic names:
 
 ```bash
 # List all supported ICMP type names
+
 iptables -p icmp --help 2>&1 | grep "icmp-type"
 
 # Common names:
@@ -30,7 +31,7 @@ iptables -p icmp --help 2>&1 | grep "icmp-type"
 ## Allow Inbound ICMP Selectively
 
 ```bash
-# Flush existing INPUT ICMP rules (be careful — don't lock yourself out)
+# Flush existing INPUT ICMP rules (be careful - don't lock yourself out)
 iptables -D INPUT -p icmp -j DROP 2>/dev/null
 
 # 1. Allow ping requests (rate-limited to prevent flood)
@@ -108,7 +109,7 @@ ping -c 3 8.8.8.8
 ping -s 1400 -M do -c 3 8.8.8.8
 
 # Test that blocked ICMP types are dropped
-# (Type 15 = information request — should be blocked)
+# (Type 15 = information request - should be blocked)
 hping3 --icmp --icmp-type 15 -c 1 <your-server>
 ```
 

@@ -221,6 +221,7 @@ Use the Kubernetes Downward API to inject pod and container metadata as environm
 
 ```yaml
 # deployment.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

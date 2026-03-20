@@ -55,6 +55,7 @@ flowchart TB
 
 ```bash
 # Install Calico as the CNI
+
 kubectl create -f https://raw.githubusercontent.com/projectcalico/calico/v3.26.4/manifests/tigera-operator.yaml
 
 # Install Calico custom resources

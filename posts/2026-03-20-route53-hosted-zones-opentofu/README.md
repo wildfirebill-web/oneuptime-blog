@@ -25,6 +25,7 @@ graph TD
 
 ```hcl
 # route53.tf
+
 resource "aws_route53_zone" "main" {
   name    = var.domain_name
   comment = "Public hosted zone for ${var.domain_name}"
@@ -164,8 +165,8 @@ output "name_servers" {
 
 ## Best Practices
 
-- After creating a hosted zone, update your domain registrar's NS records to Route 53's name servers — this is done outside OpenTofu.
+- After creating a hosted zone, update your domain registrar's NS records to Route 53's name servers - this is done outside OpenTofu.
 - Use `evaluate_target_health = true` on alias records to Route 53 won't return an unhealthy endpoint.
 - Use low TTLs (60s) during migrations and increase them (300-3600s) once DNS is stable.
-- Separate public and private hosted zones rather than using split-horizon DNS in a single zone — it's cleaner.
+- Separate public and private hosted zones rather than using split-horizon DNS in a single zone - it's cleaner.
 - Create health checks for critical endpoints and attach them to routing policies to enable automatic failover.

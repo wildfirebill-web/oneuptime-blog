@@ -70,6 +70,7 @@ curl http://loki:3100/metrics
 
 ```yaml
 # prometheus.yml
+
 scrape_configs:
   - job_name: 'loki'
     kubernetes_sd_configs:

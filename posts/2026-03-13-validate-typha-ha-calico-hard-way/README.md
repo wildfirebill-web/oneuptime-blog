@@ -57,6 +57,7 @@ This is the most important HA validation test.
 
 ```bash
 # Apply a baseline policy
+
 kubectl apply -f - <<EOF
 apiVersion: networking.k8s.io/v1
 kind: NetworkPolicy

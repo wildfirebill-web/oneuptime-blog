@@ -91,6 +91,7 @@ Update all references in your Git repository to use the new API version:
 
 ```yaml
 # Before
+
 apiVersion: example.com/v1alpha1
 kind: MyResource
 metadata:

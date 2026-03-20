@@ -28,6 +28,7 @@ Let's start with the most common scenario: nginx Ingress controller. First, ensu
 
 ```bash
 # Check nginx Ingress installation
+
 kubectl get pods -n ingress-nginx
 
 # Install nginx Ingress if needed

@@ -20,6 +20,7 @@ In rootless Podman, the host user (e.g., UID 1000) is mapped to UID 0 inside the
 
 ```bash
 # Check your subordinate UID/GID ranges
+
 cat /etc/subuid
 # Output: user:100000:65536
 

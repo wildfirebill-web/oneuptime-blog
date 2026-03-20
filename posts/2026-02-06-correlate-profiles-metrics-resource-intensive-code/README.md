@@ -20,6 +20,7 @@ Make sure your profiling agent and metrics SDK use identical resource attributes
 
 ```yaml
 # Collector config with resource detection
+
 receivers:
   otlp:
     protocols:

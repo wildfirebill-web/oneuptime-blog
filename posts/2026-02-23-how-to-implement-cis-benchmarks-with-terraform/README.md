@@ -20,6 +20,7 @@ You cannot manage root access keys with Terraform, but you can monitor for them:
 
 ```hcl
 # AWS Config rule to check for root access keys
+
 resource "aws_config_config_rule" "no_root_access_keys" {
   name = "iam-root-access-key-check"
 

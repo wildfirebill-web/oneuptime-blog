@@ -22,6 +22,7 @@ Install Knative Eventing components:
 
 ```bash
 # Install Eventing CRDs
+
 kubectl apply -f https://github.com/knative/eventing/releases/download/knative-v1.12.0/eventing-crds.yaml
 
 # Install Eventing core

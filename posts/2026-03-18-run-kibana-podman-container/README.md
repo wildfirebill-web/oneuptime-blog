@@ -20,6 +20,7 @@ Download the official Kibana image matching your Elasticsearch version.
 
 ```bash
 # Pull Kibana 8.x (must match your Elasticsearch version)
+
 podman pull docker.io/library/kibana:8.12.0
 
 # Verify the image

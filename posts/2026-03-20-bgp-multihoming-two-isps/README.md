@@ -29,7 +29,7 @@ graph TD
 
 ## Step 1: Configure eBGP Sessions to Both ISPs
 
-```
+```text
 router bgp 65001
  bgp router-id 1.1.1.1
 
@@ -51,7 +51,7 @@ router bgp 65001
 
 Use Local Preference to prefer ISP1 for all outbound traffic. Higher local-preference wins:
 
-```
+```text
 ! Set high local-pref for routes received from ISP1 (preferred)
 route-map ISP1_IN permit 10
  set local-preference 200
@@ -71,7 +71,7 @@ With local-preference 200 from ISP1, all outbound traffic uses ISP1. If ISP1 fai
 
 To influence which ISP external traffic prefers to enter your network, use AS-path prepending. Prepending your AS number multiple times on ISP2 makes that path appear longer and less preferred:
 
-```
+```text
 ! Prepend AS on advertisements to ISP2 to make it less preferred
 route-map TO_ISP2_OUT permit 10
  match ip address prefix-list OUR_PREFIX
@@ -89,7 +89,7 @@ router bgp 65001
 
 ## Step 4: Verify Both Sessions Are Up
 
-```
+```text
 Router# show ip bgp summary
 
 Neighbor        V     AS   MsgRcvd MsgSent   TblVer  InQ OutQ Up/Down  State/PfxRcd
@@ -101,7 +101,7 @@ Neighbor        V     AS   MsgRcvd MsgSent   TblVer  InQ OutQ Up/Down  State/Pfx
 
 Simulate ISP1 failure by shutting down the interface or clearing the BGP session:
 
-```
+```text
 ! Simulate failure (test only)
 Router# clear ip bgp 203.0.113.1
 
@@ -113,7 +113,7 @@ Router# show ip route bgp | head -20
 
 Redistribute a default route from BGP into your IGP so internal routers know to exit via the CE router:
 
-```
+```text
 router bgp 65001
  ! Generate a default route into BGP (requires a default in the RIB)
  default-information originate

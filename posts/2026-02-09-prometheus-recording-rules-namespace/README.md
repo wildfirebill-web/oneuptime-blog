@@ -302,6 +302,7 @@ Example of efficient chaining:
 
 ```yaml
 # Base rule with filtering
+
 - record: namespace:container_cpu_base:sum_rate
   expr: |
     sum by (namespace) (

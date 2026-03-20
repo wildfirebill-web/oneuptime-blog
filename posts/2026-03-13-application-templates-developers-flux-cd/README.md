@@ -50,6 +50,7 @@ platform-gitops/
 
 ```yaml
 # templates/web-app/base/deployment.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

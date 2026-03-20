@@ -22,6 +22,7 @@ You can see device units in action:
 
 ```bash
 # List active device units
+
 systemctl list-units --type=device
 
 # Show a specific device unit

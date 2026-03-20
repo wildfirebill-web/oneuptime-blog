@@ -28,6 +28,7 @@ Here is a minimal policy:
 
 ```hcl
 # imports
+
 import "tfplan/v2" as tfplan
 
 # helper function

@@ -28,7 +28,7 @@ A team in Portainer:
 
 ### Step 2: Name and Create the Team
 
-```
+```text
 Team name: DevOps
 ```
 
@@ -38,6 +38,7 @@ Click **Create team**.
 
 ```bash
 # Get admin token
+
 TOKEN=$(curl -s -X POST \
   https://portainer.example.com/api/auth \
   -H "Content-Type: application/json" \

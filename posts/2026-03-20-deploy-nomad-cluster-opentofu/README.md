@@ -120,6 +120,7 @@ resource "aws_launch_template" "nomad_client" {
 
 ```hcl
 # nomad-server.hcl template
+
 locals {
   nomad_server_config = <<-CONFIG
     datacenter = "${var.datacenter}"
@@ -225,4 +226,4 @@ job "web-app" {
 
 ## Conclusion
 
-Deploying Nomad with OpenTofu creates a flexible workload orchestration platform alongside Consul for service discovery. The Consul integration is a first-class feature in Nomad's configuration — jobs automatically register with Consul for service discovery and health checking. Use the Nomad provider to manage ACL policies and namespaces, but submit jobs via the Nomad CLI or API during deployments to maintain proper separation between infrastructure and application concerns.
+Deploying Nomad with OpenTofu creates a flexible workload orchestration platform alongside Consul for service discovery. The Consul integration is a first-class feature in Nomad's configuration - jobs automatically register with Consul for service discovery and health checking. Use the Nomad provider to manage ACL policies and namespaces, but submit jobs via the Nomad CLI or API during deployments to maintain proper separation between infrastructure and application concerns.

@@ -45,6 +45,7 @@ graph TD
 
 ```toml
 # pyproject.toml
+
 # Modern Python project configuration
 
 [project]

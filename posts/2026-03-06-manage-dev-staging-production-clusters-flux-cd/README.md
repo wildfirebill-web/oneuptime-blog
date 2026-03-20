@@ -88,6 +88,7 @@ fleet-repo/
 
 ```bash
 # Bootstrap the development cluster
+
 kubectl config use-context dev-cluster
 flux bootstrap github \
   --owner=your-org \

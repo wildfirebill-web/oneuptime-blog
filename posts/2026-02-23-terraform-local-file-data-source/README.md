@@ -180,6 +180,7 @@ data "local_file" "k8s_config" {
 }
 
 # Parse YAML (requires Terraform 1.0+)
+
 locals {
   deployment = yamldecode(data.local_file.k8s_config.content)
 }

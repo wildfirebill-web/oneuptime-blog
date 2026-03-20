@@ -29,6 +29,7 @@ flowchart LR
 
 ```bash
 # Install Gatekeeper using the official Helm chart
+
 helm repo add gatekeeper https://open-policy-agent.github.io/gatekeeper/charts
 helm repo update
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Debugging, Kubernetes, kubectl debug, Ephemeral Containers, Troubleshooting
+Tags: Rancher, Debugging, Kubernetes, Kubectl debug, Ephemeral Containers, Troubleshooting
 
 Description: Use kubectl debug, ephemeral containers, and debug sidecars to troubleshoot running applications in Rancher clusters without modifying production images.
 
@@ -16,6 +16,7 @@ The simplest approach creates a copy of the pod with a debug container image:
 
 ```bash
 # Create a copy of the pod with a debug container
+
 # --copy-to creates a new pod with the same spec plus your debug container
 kubectl debug pod/myapp-7d4f9b6c-xkv8p \
   -n production \

@@ -63,6 +63,7 @@ The Apache Pulsar Helm chart is the recommended way to deploy on Kubernetes.
 
 ```yaml
 # argocd/pulsar.yaml
+
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:

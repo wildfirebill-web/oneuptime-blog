@@ -101,6 +101,7 @@ You might want different filtering rules per workload:
 
 ```yaml
 # API Gateway: log everything (customer-facing, needs full audit trail)
+
 apiVersion: telemetry.istio.io/v1
 kind: Telemetry
 metadata:

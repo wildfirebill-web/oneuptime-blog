@@ -20,6 +20,7 @@ For standard Hive workloads, a Hadoop cluster is sufficient:
 
 ```bash
 # Create an HDInsight Hadoop cluster with Hive support
+
 az hdinsight create \
   --name my-hive-cluster \
   --resource-group my-resource-group \

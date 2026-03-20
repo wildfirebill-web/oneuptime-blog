@@ -33,6 +33,7 @@ The simplest case: you reference a resource that needs a provider, but you never
 
 ```hcl
 # This fails - no aws provider configured
+
 resource "aws_instance" "web" {
   ami           = "ami-0123456789abcdef0"
   instance_type = "t3.micro"

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, Ingresses, Rate-limiting, NGINX, Traefik, Ddos-protection, Throttling, Security
+Tags: Kubernetes, Ingresses, Rate-limiting, Nginx, Traefik, Ddos-protection, Throttling, Security
 
 Description: A practical guide to implementing rate limiting at the Kubernetes ingress level using NGINX annotations, Traefik middleware, and best practices for DDoS protection.
 
@@ -57,6 +57,7 @@ NGINX Ingress provides several annotations for rate limiting:
 
 ```yaml
 # ingress-rate-limit-basic.yaml
+
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:

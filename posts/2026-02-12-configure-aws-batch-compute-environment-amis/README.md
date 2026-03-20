@@ -24,6 +24,7 @@ AWS Batch provides several built-in AMI types through the `ec2Configuration` set
 
 ```bash
 # Create a compute environment with the NVIDIA AMI
+
 aws batch create-compute-environment \
   --compute-environment-name gpu-env \
   --type MANAGED \

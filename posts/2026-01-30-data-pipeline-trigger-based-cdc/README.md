@@ -460,6 +460,7 @@ $$ LANGUAGE plpgsql;
 
 ```python
 # Python example: Wrapping batch operations with context
+
 import psycopg2
 import uuid
 

@@ -45,6 +45,7 @@ Click "New library panel" to open the panel editor. Configure your panel as you 
 
 ```yaml
 # Example: Service Health Panel Configuration
+
 Panel Type: Stat
 Data Source: Prometheus
 

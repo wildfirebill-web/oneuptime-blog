@@ -42,6 +42,7 @@ flowchart TB
 
 ```bash
 # Check current project
+
 gcloud config get-value project
 
 # List all configured projects

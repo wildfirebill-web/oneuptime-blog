@@ -1,14 +1,14 @@
-# How to Migrate from Kubernetes Dashboard to Portainer
+# How to Migrate from Kubernetes Dashboard to Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, Portainer, Migration, Container Management, DevOps, Dashboard
+Tags: Kubernetes, Portainer, Migration, Container Management, DevOps, Dashboards
 
 Description: Learn how to migrate your Kubernetes management workflow from the native Kubernetes Dashboard to Portainer for a richer feature set and unified multi-environment control.
 
 ---
 
-Kubernetes Dashboard is minimal by design — it gives you visibility but not much control. Portainer goes further: stack deployments, registry management, role-based access, and a consistent UI across Docker and Kubernetes environments. This guide walks you through migrating from one to the other.
+Kubernetes Dashboard is minimal by design - it gives you visibility but not much control. Portainer goes further: stack deployments, registry management, role-based access, and a consistent UI across Docker and Kubernetes environments. This guide walks you through migrating from one to the other.
 
 ---
 
@@ -30,6 +30,7 @@ If you no longer want the old dashboard running, remove it cleanly before procee
 
 ```bash
 # Delete the Kubernetes Dashboard deployment and associated resources
+
 kubectl delete -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.7.0/aio/deploy/recommended.yaml
 
 # Confirm all dashboard resources are removed
@@ -88,10 +89,10 @@ In the Portainer UI:
 
 ## Step 5: Recreate Your Workloads as Stacks
 
-Portainer's stack feature lets you manage workloads using familiar YAML manifests — a big step up from the Kubernetes Dashboard.
+Portainer's stack feature lets you manage workloads using familiar YAML manifests - a big step up from the Kubernetes Dashboard.
 
 ```yaml
-# example-stack.yaml — deploy an Nginx workload as a Portainer stack
+# example-stack.yaml - deploy an Nginx workload as a Portainer stack
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -130,7 +131,7 @@ Portainer's RBAC model mirrors what Kubernetes offers but through a friendlier i
 
 ## Monitoring with OneUptime
 
-Once Portainer is managing your workloads, integrate OneUptime to monitor service health across all your Kubernetes namespaces — giving you uptime checks, on-call alerts, and status pages in one place.
+Once Portainer is managing your workloads, integrate OneUptime to monitor service health across all your Kubernetes namespaces - giving you uptime checks, on-call alerts, and status pages in one place.
 
 ---
 

@@ -118,6 +118,7 @@ During an incident, an admin can temporarily assign a user to the `emergency-res
 
 ```bash
 # Grant emergency access (done by admin during incident)
+
 # This would typically be automated through your incident management tool
 argocd account update-password --account emergency-user
 

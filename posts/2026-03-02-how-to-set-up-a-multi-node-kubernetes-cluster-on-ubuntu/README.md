@@ -38,6 +38,7 @@ Kubernetes requires swap to be disabled. The kubelet will refuse to start if swa
 
 ```bash
 # Disable swap immediately
+
 sudo swapoff -a
 
 # Comment out swap entries to persist across reboots

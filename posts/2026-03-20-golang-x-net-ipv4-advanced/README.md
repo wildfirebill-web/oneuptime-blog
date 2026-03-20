@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Go, IPv4, golang.org/x/net, Networking, Multicast, Socket Options
+Tags: Go, IPv4, Golang.org/x/net, Networking, Multicast, Socket Options
 
 Description: Learn how to use the golang.org/x/net/ipv4 package to access advanced IPv4 socket options including TTL control, multicast, and control messages in Go.
 

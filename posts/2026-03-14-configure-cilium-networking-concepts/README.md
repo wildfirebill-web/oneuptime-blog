@@ -30,6 +30,7 @@ Apply the following Helm values to configure cilium networking concepts:
 
 ```yaml
 # cilium-networking-values.yaml
+
 # Core networking configuration for Cilium
 operator:
   replicas: 1

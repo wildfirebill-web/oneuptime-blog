@@ -49,6 +49,7 @@ In the server BIOS/UEFI:
 
 ```bash
 # SSH into a Harvester node
+
 ssh rancher@192.168.1.11
 
 # Check if IOMMU is enabled

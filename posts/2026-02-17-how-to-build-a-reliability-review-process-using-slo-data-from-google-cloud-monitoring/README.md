@@ -36,6 +36,7 @@ Start by defining SLOs for each critical service:
 
 ```python
 # setup_slos.py - Create SLOs for reliability tracking
+
 from google.cloud import monitoring_v3
 
 client = monitoring_v3.ServiceMonitoringServiceClient()

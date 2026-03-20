@@ -40,6 +40,7 @@ If you have not already enabled the Cloud DNS API, do so now.
 
 ```bash
 # Enable the Cloud DNS API for your project
+
 gcloud services enable dns.googleapis.com --project=my-project
 ```
 

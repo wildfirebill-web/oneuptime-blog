@@ -39,6 +39,7 @@ NeuVector's packet capture feature allows you to record network packets from spe
 
 ```bash
 # Start a packet capture on a specific workload
+
 WORKLOAD_ID="abc123def456"
 
 curl -sk -X POST \

@@ -35,6 +35,7 @@ Full backups capture everything. Run them during maintenance windows since they 
 
 ```bash
 # Create a full server backup (stops services temporarily)
+
 sudo ipa-backup
 
 # The backup is stored in /var/lib/ipa/backup/

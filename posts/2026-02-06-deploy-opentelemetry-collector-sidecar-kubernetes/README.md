@@ -502,12 +502,13 @@ spec:
         emptyDir: {}
 ```
 
-## Resource Management for Sidecars
+Resource Management for Sidecars
 
 Proper resource allocation is critical for sidecars. Here are sizing recommendations:
 
 ```yaml
 # Lightweight forwarding sidecar
+
 resources:
   requests:
     memory: "64Mi"

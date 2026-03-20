@@ -441,6 +441,7 @@ Track termination duration:
 
 ```bash
 # Add timestamp to pod annotations
+
 metadata:
   annotations:
     shutdown-start: "2026-02-09T10:15:30Z"

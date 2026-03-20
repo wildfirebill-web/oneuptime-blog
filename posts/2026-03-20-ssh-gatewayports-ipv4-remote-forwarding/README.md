@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: SSH, GatewayPorts, IPv4, sshd_config, Remote Port Forwarding, Server
+Tags: SSH, GatewayPorts, IPv4, Sshd_config, Remote Port Forwarding, Server
 
 Description: Configure the GatewayPorts directive in sshd_config to allow SSH remote port forwards to bind to specific IPv4 addresses instead of only localhost.
 
@@ -24,6 +24,7 @@ By default, SSH remote port forwards (`-R`) bind only to `127.0.0.1` on the serv
 # /etc/ssh/sshd_config
 
 # Option 1: Allow all remote forwards on all interfaces
+
 GatewayPorts yes
 
 # Option 2: Let clients choose the bind address (recommended)

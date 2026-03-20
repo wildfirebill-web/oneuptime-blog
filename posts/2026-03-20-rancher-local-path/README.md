@@ -1,4 +1,4 @@
-# How to Set Up Local Path Provisioner for Development in Rancher
+# How to Set Up Local Path Provisioner for Development in Rancher (2)
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -20,6 +20,7 @@ The Local Path Provisioner, developed by Rancher Labs, provides a simple way to 
 
 ```bash
 # Install using the official manifest
+
 kubectl apply -f https://raw.githubusercontent.com/rancher/local-path-provisioner/v0.0.26/deploy/local-path-storage.yaml
 
 # Verify installation

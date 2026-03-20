@@ -1,4 +1,4 @@
-# How to Understand the Encapsulating Security Payload (ESP) in IPv6
+# How to Understand the Encapsulating Security Payload (ESP) in IPv6 (2)
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -12,7 +12,7 @@ The Encapsulating Security Payload (ESP, Next Header = 50) is the workhorse of I
 
 ## ESP Packet Structure
 
-```
+```text
 ESP wraps the payload with header and trailer:
 
 [IPv6 Header][ESP Header][Encrypted Payload][ESP Trailer][ESP Auth Data]
@@ -36,7 +36,7 @@ ESP Auth Data (variable):
 
 ## Transport vs Tunnel Mode
 
-```
+```text
 Transport Mode (end-to-end between two hosts):
   [IPv6][ESP Header][Encrypted: TCP + Data][ESP Trailer][ICV]
   The IPv6 header is visible; only payload is encrypted
@@ -53,6 +53,7 @@ Tunnel Mode (VPN between two gateways):
 # Configure ESP between two hosts using ip xfrm
 
 # On Host A (2001:db8::1):
+
 # Add Security Association (outbound to Host B)
 sudo ip xfrm state add \
     src 2001:db8::1 dst 2001:db8::2 \
@@ -77,7 +78,7 @@ sudo tcpdump -i eth0 "ip6[6] == 50"  # ESP packets
 
 ## strongSwan Configuration (Modern IPsec)
 
-```
+```text
 # /etc/ipsec.conf - strongSwan site-to-site VPN over IPv6
 
 config setup

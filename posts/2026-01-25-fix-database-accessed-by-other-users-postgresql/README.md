@@ -181,6 +181,7 @@ ALTER DATABASE mydb OWNER TO new_owner;
 
 ```bash
 # Option 1: Drop and recreate
+
 psql -U postgres -d postgres -c "DROP DATABASE mydb WITH (FORCE);"
 createdb -U postgres mydb
 pg_restore -U postgres -d mydb backup.dump

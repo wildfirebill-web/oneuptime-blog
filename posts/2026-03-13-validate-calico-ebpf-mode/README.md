@@ -26,6 +26,7 @@ A common false positive in eBPF validation is checking only the Installation res
 ```bash
 #!/bin/bash
 # validate-ebpf-programs.sh
+
 echo "=== BPF Program Validation ==="
 
 for node in $(kubectl get nodes -o jsonpath='{.items[*].metadata.name}'); do

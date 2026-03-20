@@ -1,4 +1,4 @@
-# How to Request IPv6 Address Space from LACNIC
+# How to Request IPv6 Address Space from LACNIC - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -12,7 +12,7 @@ LACNIC serves Latin America and the Caribbean. IPv6 space is allocated from rang
 
 ## Membership and Fees
 
-```
+```text
 LACNIC membership categories (2024, USD approximate):
 
 Category 1: ~$400/year (small orgs, end-users)
@@ -28,7 +28,7 @@ IPv6 allocation:
 
 ## Application Process
 
-```
+```sql
 1. Register at https://milacnic.lacnic.net/
    - Create organization account
    - Provide legal entity details
@@ -54,7 +54,7 @@ IPv6 allocation:
 
 ## LACNIC Whois Registration
 
-```
+```text
 # Register IPv6 allocation in LACNIC Whois Database
 
 inet6num:       2800:db8::/32
@@ -68,6 +68,7 @@ nic-hdl-br:     ORG-EXAMPLE
 source:         LACNIC
 
 # Announce route via milacnic portal or LACNIC REST API
+
 ```
 
 ## RPKI via LACNIC
@@ -93,4 +94,4 @@ curl "https://rpki.lacnic.net/api/validity/AS65001/2800:db8::/32"
 
 ## Conclusion
 
-LACNIC membership provides IPv6 allocations for Latin American and Caribbean organizations. The initial /32 is available immediately upon membership approval. Register resources in the LACNIC Whois Database and create RPKI ROAs to secure BGP announcements. LACNIC has Spanish and Portuguese language support for all services. Organizations outside the Latin American region cannot receive resources directly from LACNIC — they must contact their regional RIR (ARIN, RIPE NCC, APNIC, or AFRINIC).
+LACNIC membership provides IPv6 allocations for Latin American and Caribbean organizations. The initial /32 is available immediately upon membership approval. Register resources in the LACNIC Whois Database and create RPKI ROAs to secure BGP announcements. LACNIC has Spanish and Portuguese language support for all services. Organizations outside the Latin American region cannot receive resources directly from LACNIC - they must contact their regional RIR (ARIN, RIPE NCC, APNIC, or AFRINIC).

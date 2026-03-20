@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, Ingresses, Troubleshooting, NGINX, Networking, TLS, DevOps
+Tags: Kubernetes, Ingresses, Troubleshooting, Nginx, Networking, TLS, DevOps
 
 Description: Learn how to diagnose and fix Kubernetes Ingress issues including 404 errors, TLS problems, routing failures, and ingress controller configuration problems.
 
@@ -36,6 +36,7 @@ flowchart TD
 
 ```bash
 # Check if ingress controller is running
+
 kubectl get pods -n ingress-nginx
 # or for Traefik
 kubectl get pods -n traefik

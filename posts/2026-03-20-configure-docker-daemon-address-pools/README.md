@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Docker, Networking, IPv4, daemon.json, Address Pools, Configuration
+Tags: Docker, Networking, IPv4, daemon.json, Address Pool, Configuration
 
 Description: Configure Docker daemon default address pools in /etc/docker/daemon.json to control which IPv4 subnets are used when creating new bridge networks without an explicit subnet.
 
@@ -40,6 +40,7 @@ With this config, when you run `docker network create mynet`, Docker will pick `
 sudo systemctl restart docker
 
 # Verify by creating a network without specifying a subnet
+
 docker network create test-pool
 docker network inspect test-pool | grep '"Subnet"'
 # Should show: "Subnet": "10.200.0.0/24"

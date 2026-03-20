@@ -20,6 +20,7 @@ Podman Desktop extensions follow a standard structure:
 
 ```bash
 # Create the extension project directory
+
 mkdir my-podman-extension
 cd my-podman-extension
 

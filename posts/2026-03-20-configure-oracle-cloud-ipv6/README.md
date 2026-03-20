@@ -14,6 +14,7 @@ Oracle Cloud Infrastructure (OCI) supports IPv6 on Virtual Cloud Networks (VCNs)
 
 ```bash
 # OCI CLI: create VCN with IPv6
+
 oci network vcn create \
   --compartment-id "ocid1.compartment.oc1...." \
   --display-name "my-vcn" \
@@ -29,7 +30,7 @@ oci network vcn add-ipv6-vcn-cidr \
 ## Terraform: VCN with IPv6
 
 ```hcl
-# main.tf — OCI VCN with IPv6
+# main.tf - OCI VCN with IPv6
 resource "oci_core_vcn" "main" {
   compartment_id = var.compartment_id
   display_name   = "ipv6-vcn"

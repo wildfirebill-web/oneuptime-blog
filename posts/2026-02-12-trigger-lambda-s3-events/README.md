@@ -101,6 +101,7 @@ First, grant S3 permission to invoke your Lambda function:
 
 ```bash
 # Add permission for S3 to invoke Lambda
+
 aws lambda add-permission \
   --function-name image-processor \
   --statement-id s3-trigger \

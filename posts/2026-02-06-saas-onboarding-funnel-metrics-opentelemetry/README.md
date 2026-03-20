@@ -24,6 +24,7 @@ Each step is a measurable event. The goal is to track how many users reach each 
 
 ```python
 # onboarding_metrics.py
+
 from opentelemetry import metrics, trace
 from time import time
 

@@ -110,6 +110,7 @@ First, register an application in Azure AD for your webhook endpoint.
 
 ```bash
 # Create an Azure AD application for your webhook
+
 APP_ID=$(az ad app create \
   --display-name "EventGrid-WebhookAuth" \
   --query "appId" \

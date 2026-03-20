@@ -26,6 +26,7 @@ Before starting, make sure you have:
 
 ```bash
 # Authenticate doctl
+
 doctl auth init
 
 # Save kubeconfig for your cluster

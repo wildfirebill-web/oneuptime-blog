@@ -20,6 +20,7 @@ When you log out, systemd kills all processes in your user session. Rootless Pod
 
 ```bash
 # Start a rootless container
+
 podman run -d --name test-app nginx
 
 # Check which systemd scope it runs under

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, AWS, IoT, Kinesis, Data Pipeline, Infrastructure as Code
+Tags: OpenTofu, AWS, IoT, Kinesis, Data Pipelines, Infrastructure as Code
 
 Description: Learn how to build end-to-end IoT data pipelines from device ingestion through Kinesis, Lambda, and S3 using OpenTofu.
 
@@ -147,4 +147,4 @@ tofu apply tfplan
 
 ## Summary
 
-IoT data pipelines require careful design for high throughput and cost efficiency. OpenTofu manages the complete pipeline — IoT Core rules, Kinesis streams, Lambda processors, Firehose delivery to Parquet, and DynamoDB hot storage — as reproducible, version-controlled infrastructure code.
+IoT data pipelines require careful design for high throughput and cost efficiency. OpenTofu manages the complete pipeline - IoT Core rules, Kinesis streams, Lambda processors, Firehose delivery to Parquet, and DynamoDB hot storage - as reproducible, version-controlled infrastructure code.

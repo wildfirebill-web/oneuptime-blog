@@ -22,6 +22,7 @@ The X-Ray SDK provides instrumentation specifically designed for AWS services:
 
 ```python
 # AWS X-Ray SDK instrumentation for a Python application
+
 # Patches AWS SDK and HTTP libraries automatically
 from aws_xray_sdk.core import xray_recorder
 from aws_xray_sdk.core import patch_all

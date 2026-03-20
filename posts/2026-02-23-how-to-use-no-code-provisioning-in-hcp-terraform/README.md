@@ -153,6 +153,7 @@ Push the module to a VCS repository following the naming convention `terraform-<
 
 ```bash
 # Repository name: terraform-aws-web-app
+
 # Structure:
 # terraform-aws-web-app/
 #   main.tf

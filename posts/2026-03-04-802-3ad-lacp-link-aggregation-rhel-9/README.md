@@ -40,6 +40,7 @@ LACP PDUs (Protocol Data Units) are exchanged between the server and switch to e
 
 ```bash
 # Create an 802.3ad bond with fast LACP rate and layer3+4 hashing
+
 nmcli connection add type bond con-name bond0 ifname bond0 \
   bond.options "mode=802.3ad,miimon=100,lacp_rate=fast,xmit_hash_policy=layer3+4"
 ```

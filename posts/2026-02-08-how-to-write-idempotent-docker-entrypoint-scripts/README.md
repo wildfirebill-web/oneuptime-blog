@@ -34,6 +34,7 @@ set -euo pipefail
 INIT_FLAG="/data/.initialized"
 
 # Only run first-time setup if the flag file does not exist
+
 if [ ! -f "$INIT_FLAG" ]; then
     echo "Running first-time initialization..."
 

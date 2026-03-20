@@ -8,7 +8,7 @@ Description: Configure correct broadcast addresses on Linux network interfaces u
 
 ## Introduction
 
-When you assign an IP address to a Linux interface, the kernel automatically computes the broadcast address. However, there are cases where you need to set a custom broadcast — when using non-standard addressing, VPN overlays, or legacy applications that expect a specific value.
+When you assign an IP address to a Linux interface, the kernel automatically computes the broadcast address. However, there are cases where you need to set a custom broadcast - when using non-standard addressing, VPN overlays, or legacy applications that expect a specific value.
 
 ## How the Kernel Computes the Default Broadcast
 
@@ -17,7 +17,8 @@ For a given network address and prefix length, the broadcast is the last address
 ## Assigning an IP with the Default Broadcast
 
 ```bash
-# Assign 192.168.1.100/24 — kernel automatically sets broadcast to 192.168.1.255
+# Assign 192.168.1.100/24 - kernel automatically sets broadcast to 192.168.1.255
+
 sudo ip addr add 192.168.1.100/24 dev eth0
 
 # Verify the broadcast address assigned
@@ -63,7 +64,7 @@ ip -4 addr show dev eth0
 
 On Debian/Ubuntu systems using `ifupdown`:
 
-```
+```text
 # /etc/network/interfaces
 auto eth0
 iface eth0 inet static
@@ -77,7 +78,7 @@ If broadcast is omitted, `ifupdown` computes it automatically.
 
 ## Netplan Configuration (Ubuntu)
 
-Netplan does not have an explicit broadcast field — it computes the broadcast from the CIDR prefix automatically:
+Netplan does not have an explicit broadcast field - it computes the broadcast from the CIDR prefix automatically:
 
 ```yaml
 # /etc/netplan/01-netcfg.yaml

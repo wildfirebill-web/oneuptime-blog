@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Python, IPv4, Sorting, ipaddress, Networking, stdlib
+Tags: Python, IPv4, Sorting, Ipaddress, Networking, Stdlib
 
 Description: Learn how to sort IPv4 address lists correctly in Python, avoiding the lexicographic pitfall of string sorting by using integer-based comparison with the ipaddress module.
 
@@ -20,7 +20,8 @@ ips = [
     "10.0.0.100",
 ]
 
-# Use IPv4Address as the sort key — sorts by 32-bit integer value
+# Use IPv4Address as the sort key - sorts by 32-bit integer value
+
 sorted_ips = sorted(ips, key=ipaddress.IPv4Address)
 print(sorted_ips)
 # ['10.0.0.9', '10.0.0.10', '10.0.0.100', '10.0.0.200', '172.16.0.1', '192.168.1.1']
@@ -31,11 +32,11 @@ print(sorted_ips)
 ```python
 ips = ["10.0.0.200", "10.0.0.10", "10.0.0.9"]
 
-# String sort — lexicographic, gives wrong order
+# String sort - lexicographic, gives wrong order
 print(sorted(ips))
 # ['10.0.0.10', '10.0.0.200', '10.0.0.9']  ← WRONG (200 before 9?)
 
-# Integer sort via IPv4Address — correct
+# Integer sort via IPv4Address - correct
 import ipaddress
 print(sorted(ips, key=ipaddress.IPv4Address))
 # ['10.0.0.9', '10.0.0.10', '10.0.0.200']  ← CORRECT
@@ -120,4 +121,4 @@ for h in sorted_hosts:
 
 ## Conclusion
 
-Always sort IPv4 addresses using `ipaddress.IPv4Address` as the sort key — it compares by integer value and produces numerically correct ordering. String sort treats IP octets as text characters, giving wrong results for mixed-length octets. For lists containing invalid IP strings, use a safe key function that falls back gracefully. The same pattern applies to `IPv4Network` objects, which sort by network address and then prefix length.
+Always sort IPv4 addresses using `ipaddress.IPv4Address` as the sort key - it compares by integer value and produces numerically correct ordering. String sort treats IP octets as text characters, giving wrong results for mixed-length octets. For lists containing invalid IP strings, use a safe key function that falls back gracefully. The same pattern applies to `IPv4Network` objects, which sort by network address and then prefix length.

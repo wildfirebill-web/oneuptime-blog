@@ -55,6 +55,7 @@ Create the template bundle directory structure:
 
 ```bash
 # Environment template directory structure
+
 mkdir -p env-template/v1/infrastructure
 ```
 

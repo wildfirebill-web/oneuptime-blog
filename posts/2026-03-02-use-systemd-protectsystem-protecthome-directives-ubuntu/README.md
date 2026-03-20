@@ -125,6 +125,7 @@ User=myapp
 Group=myapp
 
 # Lock down the filesystem
+
 ProtectSystem=strict
 ProtectHome=true
 

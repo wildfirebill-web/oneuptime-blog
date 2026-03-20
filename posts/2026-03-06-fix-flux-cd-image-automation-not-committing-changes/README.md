@@ -26,6 +26,7 @@ First, confirm that the ImageRepository is scanning successfully.
 
 ```bash
 # Check the status of all ImageRepository resources
+
 kubectl get imagerepositories -A
 
 # Get detailed status for a specific repository

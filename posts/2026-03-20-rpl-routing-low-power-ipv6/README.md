@@ -33,7 +33,7 @@ Each node has a "rank" in the DODAG. The root has rank 1. Nodes increase rank as
 ### Objective Functions
 
 - **OF0**: Default, uses hop count (simple but suboptimal)
-- **MRHOF**: Minimum Rank with Hysteresis Objective Function (RFC 6719) — uses ETX for better link quality selection
+- **MRHOF**: Minimum Rank with Hysteresis Objective Function (RFC 6719) - uses ETX for better link quality selection
 
 ## RPL Control Messages
 
@@ -60,6 +60,7 @@ OpenThread uses RPL-like routing internally. To observe the routing behavior:
 # OpenThread CLI commands for understanding mesh routing
 
 # Show the current parent
+
 > parent
 # Ext Addr: 0011223344556677
 # Rloc16: 0x9c00

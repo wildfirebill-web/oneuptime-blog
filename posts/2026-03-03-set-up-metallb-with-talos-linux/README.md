@@ -37,6 +37,7 @@ Talos Linux requires some specific configuration to work well with MetalLB. In p
 
 ```yaml
 # Talos machine config for MetalLB compatibility
+
 cluster:
   proxy:
     extraArgs:

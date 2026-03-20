@@ -40,6 +40,7 @@ By default, RabbitMQ triggers a memory alarm when it uses more than 40% of avail
 
 ```bash
 # Check current memory status
+
 rabbitmqctl status | grep -A 20 "memory"
 
 # Sample output showing memory alarm

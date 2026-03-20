@@ -29,6 +29,7 @@ You can create a service principal using the Azure CLI, PowerShell, or the Azure
 
 ```bash
 # Create a service principal with Contributor role on the subscription
+
 az ad sp create-for-rbac \
   --name "terraform-sp" \
   --role "Contributor" \

@@ -32,6 +32,7 @@ Write policy options:
 
 ```bash
 # List all block devices
+
 lsblk -o NAME,SIZE,TYPE,ROTA,MODEL
 # ROTA=1 means spinning disk, ROTA=0 means SSD
 

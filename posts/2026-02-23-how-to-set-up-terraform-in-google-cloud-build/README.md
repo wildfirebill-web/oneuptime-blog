@@ -27,6 +27,7 @@ Before starting, make sure you have:
 
 ```bash
 # Enable required APIs
+
 gcloud services enable cloudbuild.googleapis.com
 gcloud services enable cloudresourcemanager.googleapis.com
 gcloud services enable iam.googleapis.com

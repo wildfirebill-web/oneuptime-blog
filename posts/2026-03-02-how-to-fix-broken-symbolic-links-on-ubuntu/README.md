@@ -14,6 +14,7 @@ A symbolic link (symlink) points to a path. When the target at that path no long
 
 ```bash
 # Show the difference between a working and broken symlink
+
 ls -la /usr/bin/python3
 # lrwxrwxrwx 1 root root 9 Mar 1 2026 /usr/bin/python3 -> python3.10
 # ^ This is a working symlink pointing to python3.10

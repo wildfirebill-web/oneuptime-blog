@@ -33,6 +33,7 @@ Define edge nodes with their location-specific attributes:
 
 ```yaml
 # inventories/edge/hosts.yml
+
 # Edge computing node inventory
 all:
   children:

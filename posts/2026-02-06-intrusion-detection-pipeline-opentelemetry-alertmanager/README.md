@@ -168,6 +168,7 @@ Configure Alertmanager to handle security alerts with appropriate routing and no
 
 ```yaml
 # alertmanager.yml
+
 global:
   resolve_timeout: 5m
 

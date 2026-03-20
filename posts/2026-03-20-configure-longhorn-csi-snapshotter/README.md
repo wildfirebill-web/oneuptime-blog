@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Longhorn, Kubernetes, Storage, CSI, Snapshots, VolumeSnapshot
+Tags: Longhorn, Kubernetes, Storage, CSI, Snapshot, VolumeSnapshot
 
 Description: Configure the Kubernetes CSI snapshotter components and VolumeSnapshotClasses to enable standard Kubernetes snapshot APIs with Longhorn storage.
 
@@ -22,6 +22,7 @@ The Kubernetes CSI Snapshotter is an external controller that works alongside CS
 
 ```bash
 # Install the VolumeSnapshot CRDs (if not already present)
+
 kubectl apply -f https://raw.githubusercontent.com/kubernetes-csi/external-snapshotter/v6.3.3/client/config/crd/snapshot.storage.k8s.io_volumesnapshotclasses.yaml
 
 kubectl apply -f https://raw.githubusercontent.com/kubernetes-csi/external-snapshotter/v6.3.3/client/config/crd/snapshot.storage.k8s.io_volumesnapshotcontents.yaml

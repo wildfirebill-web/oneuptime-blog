@@ -37,6 +37,7 @@ Whichever limit is hit first determines when Event Grid stops retrying.
 
 ```bash
 # Create a subscription with custom retry policy
+
 az eventgrid event-subscription create \
   --name sub-orders-resilient \
   --source-resource-id "/subscriptions/{sub-id}/resourceGroups/rg-events/providers/Microsoft.EventGrid/topics/topic-orders" \

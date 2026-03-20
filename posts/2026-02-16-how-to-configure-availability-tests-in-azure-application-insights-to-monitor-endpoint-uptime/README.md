@@ -191,6 +191,7 @@ You can add this service tag to your firewall or NSG rules.
 
 ```bash
 # Get the IP ranges for availability test locations
+
 az network service-tag list \
   --location eastus \
   --query "values[?name=='ApplicationInsightsAvailability'].properties.addressPrefixes" \

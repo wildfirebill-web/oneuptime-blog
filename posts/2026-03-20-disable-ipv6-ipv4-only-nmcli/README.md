@@ -14,6 +14,7 @@ Disabling IPv6 with NetworkManager is done per-connection using `ipv6.method`. S
 
 ```bash
 # Disable IPv6 on a specific connection
+
 nmcli connection modify "Wired connection 1" \
     ipv6.method disabled
 

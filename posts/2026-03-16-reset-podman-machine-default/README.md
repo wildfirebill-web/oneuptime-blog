@@ -20,6 +20,7 @@ Podman does not have a dedicated `reset` command for machines. The standard appr
 
 ```bash
 # The reset process in three steps
+
 podman machine stop my-machine
 podman machine rm --force my-machine
 podman machine init my-machine

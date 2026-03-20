@@ -14,6 +14,7 @@ When firewalld is not running on RHEL, your system either has no active firewall
 
 ```bash
 # Check the service status
+
 sudo systemctl status firewalld
 
 # Check if firewalld is enabled at boot

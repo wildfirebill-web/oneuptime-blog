@@ -33,6 +33,7 @@ Test the integration with a quick `curl` command. This sends a sample RFC5424 sy
 
 ```bash
 # Send a test syslog message to OneUptime
+
 # The message format follows RFC5424: <PRI>VERSION TIMESTAMP HOSTNAME APP-NAME PROCID MSGID [STRUCTURED-DATA] MSG
 curl \
   -X POST https://oneuptime.com/syslog/v1/logs \

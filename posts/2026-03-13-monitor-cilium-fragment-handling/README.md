@@ -32,6 +32,7 @@ Inspect the current MTU configuration in Cilium:
 
 ```bash
 # Check Cilium's configured MTU
+
 cilium config view | grep -i mtu
 
 # View the MTU reported by Cilium on each node

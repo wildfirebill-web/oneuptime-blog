@@ -43,6 +43,7 @@ Enable the Prometheus endpoint in `application.yml`:
 
 ```yaml
 # application.yml
+
 management:
   endpoints:
     web:

@@ -54,6 +54,7 @@ Before setting up cross-region DR:
 
 ```bash
 # Switch to DR region cluster
+
 kubectl config use-context us-west-cluster
 
 # Install ArgoCD matching primary version

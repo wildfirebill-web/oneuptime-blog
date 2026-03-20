@@ -12,7 +12,7 @@ An EKS cluster module needs to handle the cluster itself, IAM roles for nodes an
 
 ## Module Structure
 
-```
+```text
 modules/eks-cluster/
 ├── main.tf
 ├── node-groups.tf
@@ -74,6 +74,7 @@ variable "tags" { type = map(string); default = {} }
 
 ```hcl
 # IAM role for EKS cluster control plane
+
 resource "aws_iam_role" "cluster" {
   name = "${var.cluster_name}-cluster-role"
   assume_role_policy = jsonencode({

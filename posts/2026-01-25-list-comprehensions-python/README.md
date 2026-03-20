@@ -22,6 +22,7 @@ The basic structure of a list comprehension is:
 # [expression for item in iterable]
 
 # Traditional loop
+
 squares = []
 for x in range(10):
     squares.append(x ** 2)

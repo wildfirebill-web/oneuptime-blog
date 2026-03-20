@@ -66,6 +66,7 @@ Locality flags help CockroachDB understand your topology and place replicas appr
 
 ```bash
 # Start node 1 in us-east-1a
+
 cockroach start \
   --insecure \
   --advertise-addr=node1.example.com:26257 \

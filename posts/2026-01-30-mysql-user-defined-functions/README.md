@@ -202,6 +202,7 @@ void levenshtein_deinit(UDF_INIT *initid) {
 
 ```bash
 # Find MySQL include path
+
 mysql_config --include
 
 # Compile on Linux

@@ -14,6 +14,7 @@ OpenTofu 1.7 added `for_each` support to import blocks. This allows you to impor
 
 ```hcl
 # Import multiple EC2 instances at once
+
 locals {
   existing_instances = {
     "web-1" = "i-0123456789abcdef0"

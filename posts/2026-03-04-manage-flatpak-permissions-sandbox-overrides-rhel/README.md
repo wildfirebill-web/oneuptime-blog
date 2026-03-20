@@ -14,6 +14,7 @@ Flatpak applications run in sandboxed environments with restricted access to the
 
 ```bash
 # View the permissions of an installed Flatpak application
+
 flatpak info --show-permissions org.mozilla.firefox
 
 # View the complete metadata including sandbox settings

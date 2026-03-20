@@ -58,6 +58,7 @@ flowchart LR
 
 ```promql
 # Average CPU usage over the last hour
+
 avg_over_time(node_cpu_utilization[1h])
 
 # Average response time over the last 24 hours

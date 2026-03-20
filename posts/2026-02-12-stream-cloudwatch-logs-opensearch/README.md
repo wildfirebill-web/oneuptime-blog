@@ -31,6 +31,7 @@ You'll need an OpenSearch domain already running. If you don't have one:
 
 ```bash
 # Create an OpenSearch domain (this takes 15-20 minutes)
+
 aws opensearch create-domain \
   --domain-name "log-analytics" \
   --engine-version "OpenSearch_2.11" \

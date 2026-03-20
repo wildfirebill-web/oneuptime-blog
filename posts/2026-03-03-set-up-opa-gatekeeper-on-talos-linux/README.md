@@ -24,6 +24,7 @@ The recommended installation method is through the official Helm chart.
 
 ```bash
 # Add the Gatekeeper Helm repository
+
 helm repo add gatekeeper https://open-policy-agent.github.io/gatekeeper/charts
 helm repo update
 

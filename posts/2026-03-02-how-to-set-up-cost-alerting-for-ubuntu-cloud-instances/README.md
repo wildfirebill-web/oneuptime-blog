@@ -18,6 +18,7 @@ AWS Budgets is the primary cost alerting tool. You set a spending threshold and 
 
 ```bash
 # Install and configure AWS CLI
+
 sudo apt-get install -y awscli
 aws configure
 

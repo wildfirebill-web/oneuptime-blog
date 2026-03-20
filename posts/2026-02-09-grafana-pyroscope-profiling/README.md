@@ -22,6 +22,7 @@ Start with a standalone Pyroscope server for development and testing.
 
 ```yaml
 # docker-compose.yml
+
 version: '3.8'
 
 services:

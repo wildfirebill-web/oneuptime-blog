@@ -32,6 +32,7 @@ Here is the standard setup:
 
 ```text
 # Repo 1: Application Source Code
+
 myorg/backend-api
   src/
   tests/

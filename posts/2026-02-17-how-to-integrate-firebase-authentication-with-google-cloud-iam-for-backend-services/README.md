@@ -152,6 +152,7 @@ app.listen(port, () => {
 
 ```bash
 # Build and deploy
+
 gcloud builds submit --tag gcr.io/my-project/auth-backend
 
 gcloud run deploy auth-backend \

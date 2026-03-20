@@ -27,6 +27,7 @@ When you create a new ECS cluster, you can attach capacity providers right away.
 
 ```hcl
 # Create an ECS cluster with Fargate capacity providers
+
 resource "aws_ecs_cluster" "main" {
   name = "my-app-cluster"
 }

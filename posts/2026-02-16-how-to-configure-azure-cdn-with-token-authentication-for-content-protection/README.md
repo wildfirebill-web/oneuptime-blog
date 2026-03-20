@@ -134,6 +134,7 @@ Here is the same thing in Python:
 
 ```python
 # Token generation for Azure CDN Verizon Premium
+
 # Generates time-limited signed URLs for content protection
 
 import time

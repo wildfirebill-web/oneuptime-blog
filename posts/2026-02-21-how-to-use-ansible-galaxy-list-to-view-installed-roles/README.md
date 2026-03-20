@@ -16,6 +16,7 @@ The simplest form lists all installed roles:
 
 ```bash
 # List all installed roles
+
 ansible-galaxy list
 ```
 

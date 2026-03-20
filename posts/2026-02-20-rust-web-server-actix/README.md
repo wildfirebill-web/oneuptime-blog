@@ -18,6 +18,7 @@ Start by creating a new Rust project and adding dependencies:
 
 ```toml
 # Cargo.toml
+
 [package]
 name = "actix-api"
 version = "0.1.0"

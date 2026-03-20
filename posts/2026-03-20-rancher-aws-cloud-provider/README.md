@@ -54,6 +54,7 @@ Every node in the cluster must be tagged:
 
 ```bash
 # Tag all EC2 instances in the cluster
+
 CLUSTER_NAME="my-rancher-cluster"
 
 for instance_id in $(aws ec2 describe-instances \

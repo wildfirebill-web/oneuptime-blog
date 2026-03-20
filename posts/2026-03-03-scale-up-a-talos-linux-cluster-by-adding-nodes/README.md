@@ -22,6 +22,7 @@ Before adding nodes, consider what you need:
 
 ```bash
 # Check current cluster state
+
 kubectl get nodes
 talosctl -n <any-node-ip> get members
 ```

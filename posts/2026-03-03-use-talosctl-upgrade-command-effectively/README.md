@@ -35,6 +35,7 @@ Specifies which node to upgrade. You can specify one node at a time (recommended
 
 ```bash
 # Single node (recommended)
+
 talosctl upgrade --nodes 192.168.1.10 \
   --image ghcr.io/siderolabs/installer:v1.7.0
 

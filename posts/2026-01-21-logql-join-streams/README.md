@@ -106,6 +106,7 @@ func RequestIDMiddleware() gin.HandlerFunc {
 
 ```logql
 # Find all logs for a specific request
+
 {job=~".*-service"} |= "req-12345"
 ```
 

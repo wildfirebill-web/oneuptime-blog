@@ -1,8 +1,8 @@
-# How to Configure the GCS Backend in OpenTofu
+# How to Configure the GCS Backend in OpenTofu - Opentofu
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, Infrastructure as Code, Backends, GCP
+Tags: OpenTofu, Terraform, Infrastructure as Code, Backend, GCP
 
 Description: Learn how to configure the Google Cloud Storage (GCS) backend in OpenTofu to store state files with built-in locking and encryption.
 
@@ -58,12 +58,13 @@ resource "google_storage_bucket" "tofu_state" {
 
 ```bash
 # Application Default Credentials (local development)
+
 gcloud auth application-default login
 
 # Service account key file
 export GOOGLE_APPLICATION_CREDENTIALS="/path/to/sa-key.json"
 
-# Workload Identity (GKE — no credentials needed)
+# Workload Identity (GKE - no credentials needed)
 ```
 
 ## Multiple Environments
@@ -87,7 +88,7 @@ terraform {
 ```
 
 State files:
-```
+```text
 gs://acme-tofu-state/
 ├── production/infrastructure/default.tfstate
 └── staging/infrastructure/default.tfstate
@@ -134,7 +135,7 @@ terraform {
 ```
 
 With workspaces:
-```
+```text
 gs://acme-tofu-state/
 ├── app/default.tfstate          (default workspace)
 ├── app/staging.tfstate          (staging workspace)

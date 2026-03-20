@@ -21,6 +21,7 @@ terraform {
 }
 
 # More specific constraint
+
 terraform {
   # Require 1.5.x but not 1.6.0 or higher
   required_version = "~> 1.5.0"

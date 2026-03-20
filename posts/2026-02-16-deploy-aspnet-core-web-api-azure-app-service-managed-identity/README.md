@@ -98,6 +98,7 @@ Let me create all the resources needed.
 
 ```bash
 # Variables
+
 RG="api-demo-rg"
 LOCATION="eastus"
 APP_NAME="my-secure-api"

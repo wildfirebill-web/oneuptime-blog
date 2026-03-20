@@ -8,7 +8,7 @@ Description: Learn how to create AWS IoT Core policies to control device permiss
 
 ## Introduction
 
-AWS IoT Core policies control what actions a device (certificate) is authorized to perform — connecting, publishing to topics, and subscribing to topics. Well-scoped policies follow the principle of least privilege. OpenTofu manages IoT policies as code.
+AWS IoT Core policies control what actions a device (certificate) is authorized to perform - connecting, publishing to topics, and subscribing to topics. Well-scoped policies follow the principle of least privilege. OpenTofu manages IoT policies as code.
 
 ## Basic Device Policy
 
@@ -134,4 +134,4 @@ tofu apply tfplan
 
 ## Summary
 
-AWS IoT Core policies provide granular authorization for device connections, topic publishing, and subscriptions. OpenTofu manages policy documents with thing-specific variable substitution (`${!iot:ClientId}`) and certificate attachments — enabling secure, least-privilege IoT fleet management.
+AWS IoT Core policies provide granular authorization for device connections, topic publishing, and subscriptions. OpenTofu manages policy documents with thing-specific variable substitution (`${!iot:ClientId}`) and certificate attachments - enabling secure, least-privilege IoT fleet management.

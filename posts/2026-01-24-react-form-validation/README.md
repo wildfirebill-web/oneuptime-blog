@@ -259,6 +259,7 @@ For complex forms, use React Hook Form with Zod for type-safe schema validation:
 
 ```bash
 # Install required packages
+
 npm install react-hook-form zod @hookform/resolvers
 ```
 

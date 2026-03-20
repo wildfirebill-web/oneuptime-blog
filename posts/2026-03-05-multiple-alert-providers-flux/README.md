@@ -26,6 +26,7 @@ Set up providers for different notification services.
 
 ```bash
 # Create secrets for each provider
+
 kubectl create secret generic slack-webhook \
   --namespace=flux-system \
   --from-literal=address=https://hooks.slack.com/services/YOUR/SLACK/WEBHOOK

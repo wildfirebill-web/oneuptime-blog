@@ -353,6 +353,7 @@ Configure RBAC for the Kubernetes API access:
 
 ```yaml
 # rbac.yaml
+
 apiVersion: v1
 kind: ServiceAccount
 metadata:

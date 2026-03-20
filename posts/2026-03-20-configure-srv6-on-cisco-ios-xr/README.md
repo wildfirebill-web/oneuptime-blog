@@ -1,4 +1,4 @@
-# How to Configure SRv6 on Cisco IOS-XR
+# How to Configure SRv6 on Cisco IOS-XR - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -12,7 +12,7 @@ Cisco IOS-XR supports SRv6 from release 7.0.x onward. Configuration involves def
 
 ## Step 1: Enable SRv6 and Define a Locator
 
-```
+```javascript
 ! Enable SRv6 globally
 segment-routing srv6
  encapsulation
@@ -31,7 +31,7 @@ segment-routing srv6
 
 ## Step 2: Enable SRv6 in IS-IS
 
-```
+```text
 router isis CORE
  address-family ipv6 unicast
   segment-routing srv6
@@ -45,7 +45,7 @@ This causes IS-IS to advertise the locator prefix and the node's SID mappings to
 
 ## Step 3: Define SIDs for Services
 
-```
+```bash
 ! Define SIDs for L3VPN (End.DT6 for IPv6 VPN table)
 vrf CUSTOMER_A
  address-family ipv6 unicast
@@ -71,7 +71,7 @@ IOS-XR automatically allocates a SID for the VRF using the End.DT6 function.
 
 ## Step 4: Traffic Engineering with SRv6
 
-```
+```text
 ! Configure an SRv6 TE policy
 segment-routing
  traffic-eng
@@ -94,7 +94,7 @@ segment-routing
 
 ## Step 5: Verify SRv6 Configuration
 
-```
+```javascript
 ! Show all configured locators
 show segment-routing srv6 locator
 
@@ -115,7 +115,7 @@ traceroute ipv6 5f00:2:1::1 source 5f00:1:1::1
 
 ## Step 6: Monitor SRv6 Forwarding
 
-```
+```text
 ! Show SRv6 forwarding table
 show segment-routing srv6 forwarding
 
@@ -128,7 +128,7 @@ show segment-routing srv6 micro-sid
 
 ## uSID Configuration (Optional Compression)
 
-```
+```text
 ! Enable micro-SID (uSID) compression
 segment-routing srv6
  locators

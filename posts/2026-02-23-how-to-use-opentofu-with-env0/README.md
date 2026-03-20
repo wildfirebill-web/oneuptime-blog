@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: OpenTofu, Env0, IaC, Terraform, DevOps, CI/CD
+Tags: OpenTofu, env0, IaC, Terraform, DevOps, CI/CD
 
 Description: Learn how to integrate OpenTofu with env0 for scalable infrastructure automation, including environment management, cost estimation, policy enforcement, and team collaboration workflows.
 
@@ -49,6 +49,7 @@ Templates define the blueprint for an environment. This is where you specify tha
 
 ```yaml
 # .env0.yml in your repository root
+
 version: 1
 
 # Specify OpenTofu as the IaC tool

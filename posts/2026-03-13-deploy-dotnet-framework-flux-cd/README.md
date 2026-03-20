@@ -30,6 +30,7 @@ This guide covers deploying a .NET Framework WCF service and a Web Forms applica
 
 ```dockerfile
 # Multi-stage build for .NET Framework WCF service
+
 FROM mcr.microsoft.com/dotnet/framework/sdk:4.8-windowsservercore-ltsc2022 AS build
 WORKDIR /src
 

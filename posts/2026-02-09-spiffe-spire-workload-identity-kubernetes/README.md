@@ -288,6 +288,7 @@ Register workloads to receive SPIFFE IDs:
 
 ```bash
 # Exec into SPIRE server pod
+
 SERVER_POD=$(kubectl get pod -n spire -l app=spire-server -o jsonpath='{.items[0].metadata.name}')
 
 # Create registration entry for a workload

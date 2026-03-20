@@ -26,6 +26,7 @@ Amazon Q Developer is available as an extension for several IDEs:
 
 ```bash
 # Install the Amazon Q extension from the VS Code marketplace
+
 # Open VS Code, go to Extensions, search for "Amazon Q"
 # Or install from command line:
 code --install-extension amazonwebservices.amazon-q-vscode

@@ -36,6 +36,7 @@ LACP (mode 4) requires switch support and coordination, but gives you true activ
 
 ```bash
 # List network interfaces
+
 ip link show
 
 # Check interface driver and hardware details

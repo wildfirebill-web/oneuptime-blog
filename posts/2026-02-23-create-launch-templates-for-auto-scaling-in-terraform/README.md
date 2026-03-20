@@ -18,6 +18,7 @@ Start with the essentials: AMI, instance type, security groups, and an instance 
 
 ```hcl
 # Look up the latest Amazon Linux 2023 AMI
+
 data "aws_ami" "al2023" {
   most_recent = true
   owners      = ["amazon"]

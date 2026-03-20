@@ -98,6 +98,7 @@ The default sidecar resource configuration in Istio:
 
 ```yaml
 # Default values from Istio
+
 resources:
   requests:
     cpu: 100m

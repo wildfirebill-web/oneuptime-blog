@@ -27,6 +27,7 @@ The general pattern is: create a Role or ClusterRole that defines what actions a
 
 ```hcl
 # providers.tf
+
 terraform {
   required_version = ">= 1.0"
 

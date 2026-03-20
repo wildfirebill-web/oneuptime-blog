@@ -15,6 +15,7 @@ A WireGuard dual-stack tunnel assigns both IPv4 and IPv6 addresses to the tunnel
 
 [Interface]
 # Assign both IPv4 and IPv6 tunnel addresses
+
 Address = 10.0.0.1/24
 Address = fd00:wg::/64
 
@@ -145,4 +146,4 @@ sudo wg show wg0
 watch -n 1 sudo wg show
 ```
 
-WireGuard's dual-stack tunnel configuration is straightforward — add multiple `Address` directives and include both IPv4 and IPv6 CIDRs in `AllowedIPs` to achieve full dual-stack VPN connectivity in a single tunnel.
+WireGuard's dual-stack tunnel configuration is straightforward - add multiple `Address` directives and include both IPv4 and IPv6 CIDRs in `AllowedIPs` to achieve full dual-stack VPN connectivity in a single tunnel.

@@ -33,6 +33,7 @@ Before configuring Portainer, verify the LDAP server is accessible:
 
 ```bash
 # Test 1: Anonymous connectivity
+
 ldapsearch -x \
   -H ldap://ldap.example.com:389 \
   -b "dc=example,dc=com" \

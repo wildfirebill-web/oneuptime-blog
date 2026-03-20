@@ -284,6 +284,7 @@ The logs from this Job can be retrieved for post-mortem analysis:
 
 ```bash
 # After a sync failure, check the debug Job logs
+
 kubectl logs -n my-app -l job-name=sync-fail-debug
 ```
 

@@ -23,6 +23,7 @@ This design means most of your machines never reach out to the internet for time
 
 ```bash
 # Install chrony
+
 sudo apt update
 sudo apt install chrony
 

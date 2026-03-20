@@ -18,6 +18,7 @@ The `with_fileglob` keyword ran a glob pattern on the Ansible control machine (n
 
 ```yaml
 # OLD: Copy all .conf files from a local directory to remote hosts
+
 - name: Copy configuration files
   ansible.builtin.copy:
     src: "{{ item }}"

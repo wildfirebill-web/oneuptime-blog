@@ -220,6 +220,7 @@ Use Kyverno to enforce HIPAA-required security controls:
 
 ```yaml
 # Policy: PHI workloads must be encrypted in transit
+
 apiVersion: kyverno.io/v1
 kind: ClusterPolicy
 metadata:

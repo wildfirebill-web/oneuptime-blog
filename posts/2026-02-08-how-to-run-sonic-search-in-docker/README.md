@@ -36,6 +36,7 @@ Run Sonic with Docker:
 
 ```bash
 # Start Sonic on port 1491
+
 docker run -d \
   --name sonic \
   -p 1491:1491 \

@@ -22,6 +22,7 @@ Before starting the migration, record your current configuration:
 
 ```bash
 # Check the Rancher version
+
 docker exec rancher kubectl get settings server-version -o jsonpath='{.value}'
 
 # Note the hostname

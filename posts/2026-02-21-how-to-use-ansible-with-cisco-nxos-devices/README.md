@@ -16,6 +16,7 @@ Ansible's `cisco.nxos` collection provides modules specifically designed for NX-
 
 ```bash
 # Install the Cisco NX-OS collection
+
 ansible-galaxy collection install cisco.nxos
 ansible-galaxy collection install ansible.netcommon
 ```

@@ -18,6 +18,7 @@ Kubernetes network policies are defined through the API, but the CNI plugin is r
 
 ```bash
 # Install Cilium on your Talos cluster
+
 helm repo add cilium https://helm.cilium.io/
 helm install cilium cilium/cilium \
   --namespace kube-system \

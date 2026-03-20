@@ -57,6 +57,7 @@ This recording rule calculates the error ratio over a 5-minute window. We use `r
 
 ```yaml
 # prometheus/rules/sli_recording_rules.yml
+
 groups:
   - name: sli_recording_rules
     interval: 30s

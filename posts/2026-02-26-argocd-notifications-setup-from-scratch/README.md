@@ -39,6 +39,7 @@ If you installed ArgoCD v2.3 or later, the notification controller should alread
 
 ```bash
 # Check if the notification controller is running
+
 kubectl get pods -n argocd -l app.kubernetes.io/component=notifications-controller
 
 # Expected output:

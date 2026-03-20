@@ -32,6 +32,7 @@ The controller's memory usage grows linearly with the number of applications and
 
 ```yaml
 # Controller resources for ~100 applications
+
 apiVersion: apps/v1
 kind: StatefulSet
 metadata:

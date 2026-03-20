@@ -16,6 +16,7 @@ Consider this task that loops over a list of dictionaries:
 
 ```yaml
 # Without label: output is cluttered with full dictionary contents
+
 - name: Configure services
   ansible.builtin.systemd:
     name: "{{ item.name }}"

@@ -94,6 +94,7 @@ podman pod create --name kafka-pod \
   -p 2181:2181
 
 # ZooKeeper
+
 podman run -d --pod kafka-pod \
   --name zookeeper \
   -e ZOOKEEPER_CLIENT_PORT=2181 \

@@ -47,6 +47,7 @@ flowchart LR
 
 ```haproxy
 # Basic stick table configuration
+
 # Define a table that tracks client IPs with a 30-minute expiry
 backend my_backend
     # Create stick table: type=ip, size=100k entries, expire after 30m

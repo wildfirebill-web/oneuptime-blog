@@ -32,6 +32,7 @@ provider "twilio" {
 
 ```hcl
 # Search for available numbers
+
 data "twilio_phone_numbers_available_local" "us_numbers" {
   country_code = "US"
   area_code    = "415"

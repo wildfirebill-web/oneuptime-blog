@@ -14,6 +14,7 @@ HTTP/3 uses QUIC (UDP-based transport) instead of TCP. IPv6 is particularly well
 
 ```bash
 # Check if Nginx has QUIC/HTTP3 support
+
 nginx -V 2>&1 | grep -i quic
 
 # If not, compile from source or use a package with QUIC support

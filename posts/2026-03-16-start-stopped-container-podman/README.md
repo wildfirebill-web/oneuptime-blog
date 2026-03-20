@@ -20,6 +20,7 @@ Start a stopped container by name or ID.
 
 ```bash
 # Create and stop a container first
+
 podman create --name my-web -p 8080:80 docker.io/library/nginx:latest
 
 # Start the container

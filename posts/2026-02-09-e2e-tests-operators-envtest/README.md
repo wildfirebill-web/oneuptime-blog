@@ -26,6 +26,7 @@ Install envtest binaries:
 
 ```bash
 # Install setup-envtest tool
+
 go install sigs.k8s.io/controller-runtime/tools/setup-envtest@latest
 
 # Download Kubernetes binaries

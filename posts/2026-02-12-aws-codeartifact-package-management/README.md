@@ -36,6 +36,7 @@ A domain is your top-level organizational unit. All repositories live inside a d
 
 ```bash
 # Create a CodeArtifact domain
+
 aws codeartifact create-domain \
   --domain my-org
 

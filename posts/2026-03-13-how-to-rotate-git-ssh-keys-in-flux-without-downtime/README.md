@@ -49,6 +49,7 @@ Generate a new Ed25519 key pair (recommended) or RSA key pair.
 
 ```bash
 # Ed25519 (recommended)
+
 ssh-keygen -t ed25519 -C "flux-rotation-$(date +%Y%m%d)" -f new-flux-key -N ""
 
 # Or RSA 4096 if Ed25519 is not supported

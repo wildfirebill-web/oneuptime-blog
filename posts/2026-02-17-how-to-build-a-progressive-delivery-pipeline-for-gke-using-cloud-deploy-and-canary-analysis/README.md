@@ -40,6 +40,7 @@ First, define your delivery pipeline. This tells Cloud Deploy the sequence of ta
 
 ```yaml
 # clouddeploy.yaml - Delivery pipeline definition
+
 apiVersion: deploy.cloud.google.com/v1
 kind: DeliveryPipeline
 metadata:

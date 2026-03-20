@@ -68,6 +68,7 @@ First, install Alembic and SQLAlchemy:
 
 ```bash
 # Using pip
+
 pip install alembic sqlalchemy psycopg2-binary
 
 # Using Poetry

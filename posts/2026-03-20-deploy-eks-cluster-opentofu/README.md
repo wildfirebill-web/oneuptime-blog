@@ -14,6 +14,7 @@ Amazon Elastic Kubernetes Service (EKS) is the managed Kubernetes service on AWS
 
 ```hcl
 # Control plane role
+
 resource "aws_iam_role" "eks_cluster" {
   name = "${var.cluster_name}-cluster-role"
 
@@ -163,4 +164,4 @@ output "oidc_provider_arn" { value = aws_iam_openid_connect_provider.eks.arn }
 
 ## Conclusion
 
-EKS with managed node groups offloads Kubernetes control plane management to AWS. Enable IRSA from the start—it is the secure way to grant pods access to AWS services without node-level IAM permissions.
+EKS with managed node groups offloads Kubernetes control plane management to AWS. Enable IRSA from the start-it is the secure way to grant pods access to AWS services without node-level IAM permissions.

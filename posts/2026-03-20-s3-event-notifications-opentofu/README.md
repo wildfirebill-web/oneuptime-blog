@@ -24,6 +24,7 @@ resource "aws_s3_bucket" "uploads" {
 }
 
 # Lambda function to process uploaded files
+
 resource "aws_lambda_function" "processor" {
   function_name    = "s3-upload-processor"
   role             = var.lambda_role_arn

@@ -18,6 +18,7 @@ The bucket name should match your domain name if you plan to use a custom domain
 
 ```bash
 # Create the bucket
+
 aws s3api create-bucket \
   --bucket my-static-site \
   --region us-east-1

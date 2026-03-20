@@ -295,6 +295,7 @@ GOOS=linux GOARCH=amd64 go build -o extensions/my-telemetry-extension main.go
 chmod +x extensions/my-telemetry-extension
 
 # Package as a layer
+
 zip -r extension.zip extensions/
 ```
 

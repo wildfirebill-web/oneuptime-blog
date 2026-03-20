@@ -37,6 +37,7 @@ You need to disable both the default CNI (Flannel) and kube-proxy in your Talos 
 
 ```yaml
 # Control plane machine config for Cilium
+
 machine:
   # Allow scheduling on control plane if needed
   # (remove if you have dedicated worker nodes)

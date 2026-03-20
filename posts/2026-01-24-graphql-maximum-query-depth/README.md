@@ -16,6 +16,7 @@ Query depth refers to how many levels of nesting exist in a GraphQL query. Each 
 
 ```graphql
 # Query Depth Example
+
 # Depth 0: query root
 query {
   # Depth 1: user field

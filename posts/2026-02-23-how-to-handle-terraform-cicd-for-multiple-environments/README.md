@@ -26,6 +26,7 @@ Workspaces let you manage multiple environments from a single configuration:
 
 ```hcl
 # main.tf - Configuration that adapts per workspace
+
 locals {
   env_config = {
     dev = {

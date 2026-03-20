@@ -44,6 +44,7 @@ graph TD
 
 ```bash
 # Get the top-level health status
+
 curl -s -k -H "Authorization: Bearer $ARGOCD_TOKEN" \
   "https://argocd.example.com/api/v1/applications/my-app" | \
   jq '{

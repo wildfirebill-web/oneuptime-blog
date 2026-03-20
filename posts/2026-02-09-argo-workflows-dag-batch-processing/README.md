@@ -24,6 +24,7 @@ Start by installing Argo Workflows in your cluster. The recommended approach use
 
 ```bash
 # Create namespace
+
 kubectl create namespace argo
 
 # Install Argo Workflows
@@ -335,7 +336,7 @@ spec:
 
 This pattern dynamically creates processing tasks based on runtime data, allowing you to parallelize work across any number of partitions.
 
-## Resource Management for DAG Tasks
+Resource Management for DAG Tasks
 
 Set resource requests and limits for each task type to ensure efficient cluster utilization.
 

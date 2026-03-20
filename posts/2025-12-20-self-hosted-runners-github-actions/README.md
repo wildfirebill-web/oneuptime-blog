@@ -38,6 +38,7 @@ Install a runner on a Linux VM:
 
 ```bash
 # Create a directory for the runner
+
 mkdir actions-runner && cd actions-runner
 
 # Download the runner package

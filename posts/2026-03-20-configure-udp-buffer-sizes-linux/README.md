@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: UDP, Buffer, Linux, Performance, sysctl, Kernel
+Tags: UDP, Buffer, Linux, Performance, Sysctl, Kernel
 
 Description: Configure UDP socket receive and send buffer sizes at the kernel and application level to prevent packet drops in high-throughput UDP applications.
 
@@ -12,7 +12,7 @@ UDP packet loss due to buffer overflow is one of the most common UDP performance
 
 ## Understanding UDP Buffers
 
-```
+```text
 UDP receive path:
   NIC → kernel ring buffer → socket receive buffer → application read
 
@@ -30,6 +30,7 @@ Drops occur when:
 
 ```bash
 # Kernel maximums (ceiling for what applications can request)
+
 sysctl net.core.rmem_max    # Max receive buffer size
 sysctl net.core.wmem_max    # Max send buffer size
 sysctl net.core.rmem_default  # Default receive buffer size

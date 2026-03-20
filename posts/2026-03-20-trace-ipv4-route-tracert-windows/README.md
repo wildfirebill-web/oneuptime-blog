@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Windows, Networking, tracert, IPv4, Route Tracing, Diagnostics
+Tags: Windows, Networking, Tracert, IPv4, Route Tracing, Diagnostics
 
 Description: Use tracert on Windows to trace the IPv4 path to a destination, interpret each hop's latency and IP address, and identify where packet loss or delays occur.
 
@@ -22,7 +22,7 @@ tracert 8.8.8.8
 
 ## Reading tracert Output
 
-```
+```text
 Tracing route to google.com [142.250.80.46]
 over a maximum of 30 hops:
 
@@ -59,7 +59,7 @@ tracert -4 google.com
 
 ## Interpreting `* * *` Hops
 
-`* * *` does not always mean packet loss. Many routers filter ICMP "Time Exceeded" responses for security. If the trace continues past a `* * *` hop, the path is intact — only that router is not responding.
+`* * *` does not always mean packet loss. Many routers filter ICMP "Time Exceeded" responses for security. If the trace continues past a `* * *` hop, the path is intact - only that router is not responding.
 
 A true failure shows all remaining hops as `* * *` and never reaches the destination.
 
@@ -68,16 +68,17 @@ A true failure shows all remaining hops as `* * *` and never reaches the destina
 Compare RTT at each hop:
 - Sudden jump from 5ms to 200ms at hop 4: possible congestion or routing issue at that router
 - Consistent high latency from hop 4 onward: congestion at or near hop 4
-- Decreasing latency: ICMP prioritization artifact — not a real problem
+- Decreasing latency: ICMP prioritization artifact - not a real problem
 
 ## Using tracert to Find Routing Asymmetry
 
-Run tracert in both directions (from A to B and from B to A). If the hops differ significantly, routing is asymmetric — useful to know when diagnosing firewall issues.
+Run tracert in both directions (from A to B and from B to A). If the hops differ significantly, routing is asymmetric - useful to know when diagnosing firewall issues.
 
 ## PowerShell Alternative
 
 ```powershell
 # Equivalent to tracert in PowerShell
+
 Test-NetConnection -ComputerName "google.com" -TraceRoute
 
 # Or use the built-in tracert via cmd

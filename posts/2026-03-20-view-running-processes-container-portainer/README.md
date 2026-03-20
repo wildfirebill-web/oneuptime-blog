@@ -1,4 +1,4 @@
-# How to View Running Processes Inside a Container in Portainer
+# How to View Running Processes Inside a Container in Portainer - View Container
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -22,6 +22,7 @@ Navigate to **Containers > [Container Name] > Stats** to view:
 
 ```bash
 # Access container logs via Docker CLI
+
 docker logs my-container
 
 # Follow logs in real time

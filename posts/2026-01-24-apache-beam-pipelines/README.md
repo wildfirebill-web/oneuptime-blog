@@ -43,6 +43,7 @@ Start with a simple pipeline that reads data, transforms it, and writes results.
 
 ```python
 # basic_pipeline.py
+
 # A simple Apache Beam pipeline for processing events
 
 import apache_beam as beam

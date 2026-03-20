@@ -20,6 +20,7 @@ Once you have created a network namespace, you need to run commands inside it to
 
 ```bash
 # Run a single command inside the namespace "ns1"
+
 ip netns exec ns1 <command>
 
 # Examples:
@@ -137,4 +138,4 @@ EOF
 
 ## Conclusion
 
-`ip netns exec` is the primary tool for running commands inside network namespaces. It works with any binary — shells, ping, curl, tcpdump, or custom applications. For interactive sessions, launch a bash shell with a modified prompt to avoid confusion about which network context you are in. For unnamed container namespaces, use `nsenter` with the `/proc/<pid>/ns/net` path.
+`ip netns exec` is the primary tool for running commands inside network namespaces. It works with any binary - shells, ping, curl, tcpdump, or custom applications. For interactive sessions, launch a bash shell with a modified prompt to avoid confusion about which network context you are in. For unnamed container namespaces, use `nsenter` with the `/proc/<pid>/ns/net` path.

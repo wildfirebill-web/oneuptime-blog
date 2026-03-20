@@ -10,7 +10,7 @@ Description: Learn how to diagnose and fix SSL certificate chain errors, includi
 
 An SSL/TLS certificate chain works like this:
 
-```
+```text
 Root CA (trusted by browsers) - self-signed
   └── Intermediate CA (signed by Root CA)
       └── Your Server Certificate (signed by Intermediate CA)
@@ -34,6 +34,7 @@ Use `openssl s_client` to see exactly what chain the server is presenting:
 
 ```bash
 # Check the complete chain the server sends
+
 openssl s_client -connect example.com:443 -showcerts 2>/dev/null
 
 # Count the certificates in the chain

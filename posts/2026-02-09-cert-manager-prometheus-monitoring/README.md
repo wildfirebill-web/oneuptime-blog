@@ -30,6 +30,7 @@ cert-manager exposes metrics by default. Verify metrics endpoint:
 
 ```bash
 # Check cert-manager metrics endpoint
+
 kubectl port-forward -n cert-manager deployment/cert-manager 9402:9402
 
 # Query metrics

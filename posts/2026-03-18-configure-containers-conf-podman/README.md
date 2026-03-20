@@ -20,6 +20,7 @@ Podman reads `containers.conf` from multiple locations, with later files overrid
 
 ```bash
 # Check which configuration files Podman is currently using
+
 podman info --format '{{.Host.ConfigFiles}}'
 
 # The search order (lowest to highest priority):

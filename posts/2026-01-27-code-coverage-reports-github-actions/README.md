@@ -29,6 +29,7 @@ Generate coverage reports using Jest:
 
 ```yaml
 # .github/workflows/coverage.yml
+
 name: Code Coverage
 
 on:

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: LDAP, Replication, IPv6, OpenLDAP, High Availability, Directory Service
+Tags: LDAP, Replication, IPv6, OpenLDAP, High Availability, Directory Services
 
 Description: Configure OpenLDAP multi-master and provider-consumer replication over IPv6 to build a highly available directory service on IPv6 networks.
 
@@ -12,7 +12,7 @@ LDAP replication ensures directory availability and distributes read load. Setti
 
 ## OpenLDAP Replication Architecture
 
-```
+```text
 Provider (Master)          Consumer (Replica)
 [2001:db8::10]:389   →→→   [2001:db8::11]:389
                     LDAP Sync Replication (syncrepl)
@@ -24,6 +24,7 @@ Configure the provider to send changes to consumers:
 
 ```bash
 # Create provider configuration LDIF
+
 cat > /tmp/provider_sync.ldif << 'EOF'
 dn: cn=config
 changetype: modify

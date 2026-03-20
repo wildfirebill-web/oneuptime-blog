@@ -284,6 +284,7 @@ Write a simple test that sends the same request twice with the same idempotency 
 
 ```bash
 # First request
+
 curl -X POST http://api.example.com/api/orders \
   -H "Content-Type: application/json" \
   -H "x-idempotency-key: test-123" \

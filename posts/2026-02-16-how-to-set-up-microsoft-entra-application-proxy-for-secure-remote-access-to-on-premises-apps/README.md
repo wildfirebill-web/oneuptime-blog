@@ -63,6 +63,7 @@ The connector runs as a Windows service called "Microsoft Entra Private Network 
 
 ```powershell
 # Check the connector service status
+
 Get-Service -Name "WAPCSvc"
 
 # Check the connector updater service (handles auto-updates)

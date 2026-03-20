@@ -32,6 +32,7 @@ Terraform Enterprise tracks events across several categories:
 
 ```bash
 # Get the most recent audit log events
+
 curl -s \
   --header "Authorization: Bearer ${TFE_ADMIN_TOKEN}" \
   "${TFE_URL}/api/v2/organization/audit-trail?page[size]=20" | \

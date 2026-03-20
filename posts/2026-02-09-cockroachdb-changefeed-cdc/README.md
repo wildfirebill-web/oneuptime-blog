@@ -28,6 +28,7 @@ Deploy Kafka cluster for changefeed output:
 
 ```yaml
 # kafka-deployment.yaml
+
 apiVersion: v1
 kind: Service
 metadata:

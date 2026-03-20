@@ -26,6 +26,7 @@ Check for evicted pods across your cluster.
 
 ```bash
 # Find evicted pods
+
 kubectl get pods --all-namespaces --field-selector status.phase=Failed
 
 # Filter for eviction-specific reasons

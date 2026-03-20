@@ -44,6 +44,7 @@ Verify mTLS is working:
 
 ```bash
 # Check mTLS status for all services
+
 istioctl authn tls-check -n edge-app
 
 # Verify from proxy stats

@@ -16,6 +16,7 @@ Bitbucket Server uses a different URL format than other Git providers. Understan
 
 ```text
 # Bitbucket Server HTTPS clone URL
+
 https://bitbucket.company.com/scm/PROJECT_KEY/repo-name.git
 
 # Bitbucket Server SSH clone URL

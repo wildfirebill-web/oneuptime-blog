@@ -18,6 +18,7 @@ If you want to keep using MongoDB as-is, Atlas on GCP is the lowest-friction pat
 
 ```bash
 # Atlas is configured through the Atlas CLI or web console
+
 # Install the Atlas CLI
 brew install mongodb-atlas-cli
 

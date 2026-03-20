@@ -119,6 +119,7 @@ First, install OCM or create compatible resources.
 
 ```yaml
 # Placement resource defines the selection criteria
+
 apiVersion: cluster.open-cluster-management.io/v1beta1
 kind: Placement
 metadata:

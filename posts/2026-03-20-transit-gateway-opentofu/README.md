@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: OpenTofu, Transit Gateway, AWS, Networking, VPC, Infrastructure as Code
 
-Description: Learn how to configure AWS Transit Gateway using OpenTofu — attaching VPCs, creating route tables, configuring VPN attachments, and managing inter-VPC routing at scale.
+Description: Learn how to configure AWS Transit Gateway using OpenTofu - attaching VPCs, creating route tables, configuring VPN attachments, and managing inter-VPC routing at scale.
 
 ## Introduction
 
@@ -70,13 +70,14 @@ resource "aws_ec2_transit_gateway_vpc_attachment" "main" {
 ## Route Tables
 
 ```hcl
-# Shared services route table — all VPCs can reach shared services
+# Shared services route table - all VPCs can reach shared services
+
 resource "aws_ec2_transit_gateway_route_table" "shared" {
   transit_gateway_id = aws_ec2_transit_gateway.main.id
   tags               = { Name = "shared-services-rt" }
 }
 
-# Application route table — app VPCs can only reach shared services
+# Application route table - app VPCs can only reach shared services
 resource "aws_ec2_transit_gateway_route_table" "apps" {
   transit_gateway_id = aws_ec2_transit_gateway.main.id
   tags               = { Name = "apps-rt" }

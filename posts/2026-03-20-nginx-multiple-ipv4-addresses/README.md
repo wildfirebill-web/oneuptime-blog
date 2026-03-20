@@ -16,6 +16,7 @@ Before configuring Nginx, ensure multiple IPs are assigned. On Linux:
 
 ```bash
 # View current IP addresses
+
 ip addr show
 
 # Add a secondary IP (temporary)

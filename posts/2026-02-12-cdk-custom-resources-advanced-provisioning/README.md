@@ -140,6 +140,7 @@ Here's the corresponding Lambda handler:
 
 ```python
 # lambda/custom-resource/index.py - Custom resource handler
+
 import json
 import boto3
 import logging

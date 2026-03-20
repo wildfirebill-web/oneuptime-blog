@@ -8,7 +8,7 @@ Description: Learn how to design self-healing infrastructure using OpenTofu that
 
 ---
 
-Self-healing infrastructure automatically detects failures and recovers from them — replacing unhealthy instances, rescheduling failed tasks, and restoring desired state. OpenTofu provisions the components that enable self-healing: health checks, Auto Scaling groups, and automated recovery mechanisms.
+Self-healing infrastructure automatically detects failures and recovers from them - replacing unhealthy instances, rescheduling failed tasks, and restoring desired state. OpenTofu provisions the components that enable self-healing: health checks, Auto Scaling groups, and automated recovery mechanisms.
 
 ## EC2 Auto Recovery
 
@@ -16,6 +16,7 @@ AWS Auto Recovery automatically restarts EC2 instances when underlying hardware 
 
 ```hcl
 # main.tf
+
 terraform {
   required_providers {
     aws = {
@@ -78,7 +79,7 @@ resource "aws_autoscaling_group" "app" {
     version = "$Latest"
   }
 
-  # Use ELB health checks — more thorough than EC2 health checks
+  # Use ELB health checks - more thorough than EC2 health checks
   health_check_type         = "ELB"
   health_check_grace_period = 300  # Give instances 5 min to start
 
@@ -111,7 +112,7 @@ resource "aws_ecs_service" "app" {
     container_port   = 8080
   }
 
-  # Enable circuit breaker — stop rollouts that keep failing
+  # Enable circuit breaker - stop rollouts that keep failing
   deployment_circuit_breaker {
     enable   = true
     rollback = true  # Automatically rollback failed deployments
@@ -168,7 +169,7 @@ resource "aws_cloudwatch_metric_alarm" "rds_failover" {
   threshold           = 0
   treat_missing_data  = "breaching"
 
-  alarm_description = "RDS connection count dropped to zero — possible failover or outage"
+  alarm_description = "RDS connection count dropped to zero - possible failover or outage"
   alarm_actions     = [var.alert_sns_topic_arn]
 
   dimensions = {
@@ -179,8 +180,8 @@ resource "aws_cloudwatch_metric_alarm" "rds_failover" {
 
 ## Best Practices
 
-- Use ELB health checks (not EC2 health checks) for ASG groups — they verify application availability, not just instance reachability.
-- Set appropriate health check grace periods — too short and healthy instances get terminated during startup.
+- Use ELB health checks (not EC2 health checks) for ASG groups - they verify application availability, not just instance reachability.
+- Set appropriate health check grace periods - too short and healthy instances get terminated during startup.
 - Enable deployment circuit breakers on ECS services to stop automatic rollback when new task definitions keep failing.
-- Pair self-healing with alerting — automatic recovery is great, but your team should still know when healing events occur.
+- Pair self-healing with alerting - automatic recovery is great, but your team should still know when healing events occur.
 - Test recovery regularly using Chaos Engineering tools (AWS FIS, chaos-mesh) to verify your healing mechanisms work as expected.

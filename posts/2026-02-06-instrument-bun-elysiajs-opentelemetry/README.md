@@ -16,6 +16,7 @@ Start by creating a new ElysiaJS project with OpenTelemetry dependencies:
 
 ```bash
 # Initialize project
+
 mkdir elysia-otel-demo
 cd elysia-otel-demo
 bun init -y

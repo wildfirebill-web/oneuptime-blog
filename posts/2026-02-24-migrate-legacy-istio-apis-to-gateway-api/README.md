@@ -52,6 +52,7 @@ Before you start migrating, get a full picture of what you have:
 
 ```bash
 # List all Istio networking resources
+
 kubectl get virtualservices --all-namespaces
 kubectl get destinationrules --all-namespaces
 kubectl get gateways --all-namespaces

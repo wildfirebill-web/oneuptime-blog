@@ -34,6 +34,7 @@ For custom private DNS zone:
 
 ```bash
 # Create private DNS zone first
+
 az network private-dns zone create \
   --resource-group myResourceGroup \
   --name privatelink.eastus.azmk8s.io

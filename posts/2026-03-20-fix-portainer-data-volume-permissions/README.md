@@ -20,6 +20,7 @@ Portainer stores its database (`portainer.db`), TLS certificates, and agent keys
 
 ```bash
 # Inspect ownership of files in the Portainer data volume
+
 docker run --rm -v portainer_data:/data alpine ls -la /data
 
 # You should see something like:

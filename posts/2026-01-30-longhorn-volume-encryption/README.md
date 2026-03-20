@@ -52,6 +52,7 @@ Longhorn expects a Secret containing a `CRYPTO_KEY_VALUE` field with a passphras
 
 ```yaml
 # encryption-secret.yaml
+
 # This Secret stores the passphrase for LUKS encryption.
 # The passphrase must be base64-encoded when using stringData.
 apiVersion: v1

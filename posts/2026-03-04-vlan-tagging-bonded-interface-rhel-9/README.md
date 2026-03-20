@@ -41,6 +41,7 @@ If you do not already have a bond set up, create one:
 
 ```bash
 # Create a bond with 802.3ad (LACP) mode for maximum throughput
+
 nmcli connection add type bond con-name bond0 ifname bond0 bond.options "mode=802.3ad,miimon=100,lacp_rate=fast"
 
 # Add slave interfaces

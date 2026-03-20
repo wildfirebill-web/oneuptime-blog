@@ -17,8 +17,8 @@ sensitive(value)
 nonsensitive(value)
 ```
 
-- `sensitive(value)` — marks the value as sensitive (redacted in output)
-- `nonsensitive(value)` — removes the sensitive marking
+- `sensitive(value)` - marks the value as sensitive (redacted in output)
+- `nonsensitive(value)` - removes the sensitive marking
 
 ## Basic Examples
 
@@ -29,6 +29,7 @@ output "password" {
 }
 
 # Using sensitive() function to mark a computed value
+
 locals {
   derived_token = sensitive("${var.prefix}-${var.secret_key}")
 }
@@ -75,7 +76,7 @@ variable "db_password" {
 }
 
 locals {
-  # Combine into connection string — mark as sensitive
+  # Combine into connection string - mark as sensitive
   connection_string = sensitive(
     "postgresql://${var.db_username}:${var.db_password}@${aws_db_instance.main.endpoint}/${var.db_name}"
   )
@@ -116,7 +117,7 @@ locals {
 }
 
 output "db_host" {
-  value = local.db_host  # Not marked sensitive — will show in plan
+  value = local.db_host  # Not marked sensitive - will show in plan
 }
 ```
 

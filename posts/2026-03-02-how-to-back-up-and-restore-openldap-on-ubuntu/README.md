@@ -27,6 +27,7 @@ Both are equally important. If you restore directory data but not configuration,
 
 ```bash
 # Export the main directory database (database 1)
+
 sudo slapcat -n 1 -l /backup/ldap-data-$(date +%F).ldif
 
 # Verify the backup file looks correct

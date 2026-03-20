@@ -18,6 +18,7 @@ The `podman network disconnect` command removes a container from a network witho
 
 ```bash
 # Disconnect a container from a specific network
+
 podman network disconnect mynetwork webapp
 
 # Verify the container is no longer on the network

@@ -44,6 +44,7 @@ The most reliable place to extract the tenant ID is in your API middleware, befo
 
 ```python
 # tenant_middleware.py
+
 # Extract tenant ID and inject it into OpenTelemetry context
 
 from opentelemetry import trace, context, baggage

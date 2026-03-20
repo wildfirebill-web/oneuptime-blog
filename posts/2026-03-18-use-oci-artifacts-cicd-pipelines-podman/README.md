@@ -20,6 +20,7 @@ Your CI/CD runner needs Podman 5.x or later and registry credentials.
 
 ```bash
 # Verify Podman on the CI runner
+
 podman --version
 
 # Log in to the registry (use CI/CD secrets for credentials)

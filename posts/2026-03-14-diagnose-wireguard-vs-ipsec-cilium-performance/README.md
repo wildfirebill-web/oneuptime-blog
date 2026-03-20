@@ -30,6 +30,7 @@ Test both protocols under identical conditions:
 
 ```bash
 # Test 1: WireGuard
+
 helm upgrade cilium cilium/cilium --namespace kube-system \
   --set encryption.enabled=true \
   --set encryption.type=wireguard

@@ -24,6 +24,7 @@ You might wonder why you would use Ansible if Docker Compose already handles mul
 
 ```bash
 # Install the community.docker collection
+
 ansible-galaxy collection install community.docker
 
 # Install the Docker Python SDK and compose support

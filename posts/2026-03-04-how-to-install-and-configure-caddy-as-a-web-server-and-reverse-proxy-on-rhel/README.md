@@ -14,6 +14,7 @@ Caddy is a modern web server that provides automatic HTTPS by default. It has a 
 
 ```bash
 # Add the Caddy repository
+
 sudo dnf install -y dnf-plugins-core
 sudo dnf copr enable @caddy/caddy -y
 

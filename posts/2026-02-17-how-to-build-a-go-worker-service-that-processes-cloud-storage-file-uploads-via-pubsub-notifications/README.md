@@ -33,6 +33,7 @@ First, create the buckets, topic, and notification.
 
 ```bash
 # Create the input and output buckets
+
 gsutil mb -l us-central1 gs://my-uploads-bucket
 gsutil mb -l us-central1 gs://my-processed-bucket
 

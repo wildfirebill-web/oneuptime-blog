@@ -16,6 +16,7 @@ The error appears differently depending on your client:
 
 ```python
 # Python redis-py
+
 redis.exceptions.ConnectionError: Error 111 connecting to localhost:6379. Connection refused.
 
 # Node.js ioredis

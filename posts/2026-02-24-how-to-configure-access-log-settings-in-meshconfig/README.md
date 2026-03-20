@@ -221,6 +221,7 @@ Example of using response flags for debugging:
 
 ```bash
 # Find all circuit breaker trips
+
 kubectl logs -l app=my-service -c istio-proxy | grep "UO"
 
 # Find all upstream connection failures

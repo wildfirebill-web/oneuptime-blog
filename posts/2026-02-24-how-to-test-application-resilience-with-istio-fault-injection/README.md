@@ -69,6 +69,7 @@ What to verify:
 
 ```bash
 # Apply the fault
+
 kubectl apply -f payment-complete-failure.yaml
 
 # Run your test suite or manually test the user flows

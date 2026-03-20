@@ -22,6 +22,7 @@ Configure the resource detection processor in the OpenTelemetry Collector to aut
 
 ```yaml
 # collector-config.yaml
+
 receivers:
   otlp:
     protocols:

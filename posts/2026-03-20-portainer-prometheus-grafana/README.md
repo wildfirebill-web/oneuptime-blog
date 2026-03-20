@@ -103,6 +103,7 @@ Create the prometheus.yml file before deploying (bind-mounted into the container
 
 ```bash
 # On the host, create config file
+
 mkdir -p /opt/monitoring
 cat > /opt/monitoring/prometheus.yml << 'EOF'
 global:
@@ -173,11 +174,11 @@ curl -I http://localhost:3000
 3. Go to **Configuration** → **Data Sources** → **Add data source**
 4. Select **Prometheus**
 5. Configure:
-   ```
-   URL: http://prometheus:9090    (container name — they're on the same network)
+   ```text
+   URL: http://prometheus:9090    (container name - they're on the same network)
    Access: Server (default)
    ```
-6. Click **Save & Test** — should show "Data source is working"
+6. Click **Save & Test** - should show "Data source is working"
 
 ## Step 6: Import Pre-Built Dashboards
 
@@ -207,4 +208,4 @@ Or manually through Grafana UI:
 
 ## Conclusion
 
-Deploying Prometheus and Grafana as a Portainer stack gives you a complete container and host monitoring solution managed through a single interface. cAdvisor provides rich container-level metrics including CPU, memory, and network per container, while Node Exporter captures host-level metrics like disk usage and system load. Pre-built Grafana dashboards from grafana.com make it quick to get useful visualizations without building them from scratch — start with dashboard IDs 14282 and 1860 for immediate value.
+Deploying Prometheus and Grafana as a Portainer stack gives you a complete container and host monitoring solution managed through a single interface. cAdvisor provides rich container-level metrics including CPU, memory, and network per container, while Node Exporter captures host-level metrics like disk usage and system load. Pre-built Grafana dashboards from grafana.com make it quick to get useful visualizations without building them from scratch - start with dashboard IDs 14282 and 1860 for immediate value.

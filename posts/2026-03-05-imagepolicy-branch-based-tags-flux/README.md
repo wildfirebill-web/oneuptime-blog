@@ -221,6 +221,7 @@ Check the status of each component:
 
 ```bash
 # Verify scanned tags
+
 flux get image repository myapp
 
 # Check each environment's selected tag

@@ -21,6 +21,7 @@ helm repo add jupyterhub https://hub.jupyter.org/helm-chart/
 helm repo update
 
 # View available versions
+
 helm search repo jupyterhub/jupyterhub --versions | head -5
 ```
 

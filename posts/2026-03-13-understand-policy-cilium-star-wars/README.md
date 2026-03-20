@@ -89,6 +89,7 @@ graph TD
 
 ```bash
 # Apply the L7 policy
+
 kubectl apply -f https://raw.githubusercontent.com/cilium/cilium/HEAD/examples/minikube/sw_l3_l4_l7_policy.yaml
 
 # Describe the policy

@@ -122,6 +122,7 @@ For example:
 
 ```yaml
 # Istio DestinationRule
+
 connectionPool:
   tcp:
     idleTimeout: 1800s  # 30 minutes

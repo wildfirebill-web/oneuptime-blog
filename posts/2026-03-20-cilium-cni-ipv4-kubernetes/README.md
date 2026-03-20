@@ -12,6 +12,7 @@ Cilium is a CNI plugin powered by eBPF that provides high-performance networking
 
 ```bash
 # Cilium requires Linux kernel 4.9.17+ (5.10+ recommended for full feature set)
+
 uname -r
 
 # Initialize cluster WITHOUT kube-proxy (optional, Cilium can replace it)

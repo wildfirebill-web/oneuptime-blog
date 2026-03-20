@@ -18,6 +18,7 @@ When you add `backup: true` to a `copy` task, Ansible creates a backup of the ex
 
 ```yaml
 # Copy a new config file, backing up the existing one first
+
 - name: Update application config with backup
   ansible.builtin.copy:
     src: files/app.conf

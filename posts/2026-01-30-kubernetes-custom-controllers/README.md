@@ -45,6 +45,7 @@ cd webapp-controller
 go mod init github.com/example/webapp-controller
 
 # Install controller-runtime and client-go
+
 go get sigs.k8s.io/controller-runtime@v0.17.0
 go get k8s.io/client-go@v0.29.0
 go get k8s.io/apimachinery@v0.29.0

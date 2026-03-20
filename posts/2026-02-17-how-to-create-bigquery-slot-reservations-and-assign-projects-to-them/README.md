@@ -35,6 +35,7 @@ First, purchase the total number of slots you need.
 
 ```bash
 # Create a 500-slot Enterprise commitment with annual pricing
+
 gcloud bq reservations create-capacity-commitment \
   --project=my-admin-project \
   --location=us-central1 \

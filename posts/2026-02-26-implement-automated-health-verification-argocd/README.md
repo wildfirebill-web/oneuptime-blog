@@ -205,6 +205,7 @@ ArgoCD's self-heal feature automatically fixes drift, but you can extend this wi
 
 ```yaml
 # Enable self-heal on the Application
+
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:

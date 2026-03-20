@@ -24,6 +24,7 @@ When `calicoctl ipam show` produces errors, it typically indicates problems with
 
 ```bash
 # Verify datastore configuration
+
 export DATASTORE_TYPE=kubernetes
 calicoctl get nodes
 

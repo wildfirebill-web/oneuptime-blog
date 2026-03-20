@@ -10,6 +10,7 @@ Description: Configure Python gRPC servers and clients to use IPv6 addresses, wi
 
 ```bash
 # Install gRPC for Python
+
 pip install grpcio grpcio-tools
 
 # Verify installation
@@ -64,7 +65,7 @@ def serve():
     server = grpc.server(futures.ThreadPoolExecutor(max_workers=10))
     hello_pb2_grpc.add_GreeterServicer_to_server(GreeterServicer(), server)
 
-    # Bind to all IPv6 interfaces — [::] is the IPv6 wildcard
+    # Bind to all IPv6 interfaces - [::] is the IPv6 wildcard
     # Python gRPC uses [::]:port format
     listen_addr = "[::]:50051"
     server.add_insecure_port(listen_addr)

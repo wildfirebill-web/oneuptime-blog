@@ -14,6 +14,7 @@ Postfix connection timeouts manifest as deferred mail with errors like "Connecti
 
 ```bash
 # Check mail queue for timeout errors
+
 sudo postqueue -p
 
 # View detailed error

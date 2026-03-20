@@ -28,6 +28,7 @@ The default read-ahead on RHEL is typically 128 KB (256 sectors of 512 bytes eac
 
 ```bash
 # Check read-ahead for a specific device
+
 blockdev --getra /dev/sda
 ```
 

@@ -1,4 +1,4 @@
-# How to Monitor Docker Swarm Cluster Health from Portainer
+# How to Monitor Docker Swarm Cluster Health from Portainer - Cluster
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -34,6 +34,7 @@ echo "Time: $(date)"
 echo ""
 
 # Node health
+
 echo "--- Nodes ---"
 curl -s \
   -H "X-API-Key: $API_KEY" \

@@ -99,6 +99,7 @@ graph LR
 
 ```bash
 # Install Click for CLI building
+
 pip install click
 
 # Optional: Add rich for better terminal output

@@ -38,6 +38,7 @@ def get_with_token(url, token):
 from ansible.module_utils.urls import url_argument_spec
 
 # Adds standard URL parameters: url, url_username, url_password,
+
 # validate_certs, force_basic_auth, etc.
 module_args = url_argument_spec()
 module_args.update(dict(

@@ -37,6 +37,7 @@ sudo apt install python3-pip python3-venv git -y
 
 ```bash
 # Create a dedicated user
+
 sudo useradd -m -s /bin/bash buildbot
 sudo mkdir -p /opt/buildbot
 

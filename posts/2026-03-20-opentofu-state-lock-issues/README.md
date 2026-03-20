@@ -20,6 +20,7 @@ Learn how to diagnose and resolve OpenTofu state lock issues caused by interrupt
 
 ```bash
 # Verify OpenTofu installation
+
 tofu version
 
 # Set up required environment variables

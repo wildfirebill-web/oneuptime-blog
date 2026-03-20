@@ -24,6 +24,7 @@ Requirements:
 
 ```bash
 # Attach debug container to running pod
+
 kubectl debug -it <pod-name> --image=busybox --target=<container-name>
 ```
 

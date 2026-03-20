@@ -33,6 +33,7 @@ Before cluster initialization, generate the static pod manifest:
 
 ```bash
 # Set your desired virtual IP
+
 export VIP=192.168.1.100
 
 # Set the network interface (usually eth0)
@@ -476,7 +477,7 @@ kube-vip is lightweight but has performance characteristics to consider:
 - **BGP mode**: Scales better for larger deployments and integrates with existing routing infrastructure.
 - **Leader election**: Only one node actively handles each VIP. For high throughput, distribute services across multiple VIPs.
 
-### Resource Usage
+Resource Usage
 
 kube-vip has minimal resource requirements:
 

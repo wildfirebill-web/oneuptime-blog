@@ -46,6 +46,7 @@ Enable PSA by adding labels to namespaces. No additional installation is needed.
 
 ```yaml
 # namespace-restricted.yaml
+
 # This namespace enforces the "restricted" profile.
 # Pods that violate the restricted profile will be rejected.
 apiVersion: v1

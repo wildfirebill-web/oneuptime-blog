@@ -16,6 +16,7 @@ The Apache error log is always the first place to look:
 
 ```bash
 # View the Apache error log in real time
+
 sudo tail -f /var/log/apache2/error.log
 
 # Or view the last 50 lines

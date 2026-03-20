@@ -14,6 +14,7 @@ Satellite Remote Execution (REX) lets you run arbitrary commands, shell scripts,
 
 ```bash
 # Verify remote execution is enabled on the Satellite or Capsule
+
 satellite-installer --enable-foreman-proxy-plugin-remote-execution-script
 
 # Check that the REX SSH key exists

@@ -78,6 +78,7 @@ Here is how to create the same policy using PowerShell with the Microsoft Graph 
 
 ```powershell
 # Connect to Microsoft Graph with Intune permissions
+
 Connect-MgGraph -Scopes "DeviceManagementConfiguration.ReadWrite.All"
 
 # Create a Windows compliance policy

@@ -1,4 +1,4 @@
-# How to Create GCP Cloud Scheduler Jobs with OpenTofu
+# How to Create GCP Cloud Scheduler Jobs with OpenTofu - Jobs
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 

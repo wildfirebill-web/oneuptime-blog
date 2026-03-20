@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: telnet, netcat, TCP, Linux, Networking, Connectivity Testing
+Tags: Telnet, netcat, TCP, Linux, Networking, Connectivity Testing
 
 Description: Use telnet and netcat (nc) to test TCP port connectivity without a full application client, verifying that a specific port is open and reachable from your host.
 
@@ -12,6 +12,7 @@ When you need to verify that port 3306 is reachable from your app server before 
 
 ```bash
 # Basic TCP connectivity test: telnet <host> <port>
+
 telnet 192.168.1.100 22
 
 # Success output:
@@ -55,7 +56,7 @@ nc -zv -w 5 192.168.1.100 3306
 
 ```bash
 #!/bin/bash
-# check-connectivity.sh — Test connectivity to required services
+# check-connectivity.sh - Test connectivity to required services
 
 check_port() {
     HOST="$1"
@@ -121,4 +122,4 @@ nc -zv -w 5 192.168.1.100 3306
 # Timeout            = slow response  → firewall issue
 ```
 
-telnet and nc are the "is the door open?" tools of networking — before spending time debugging application configuration, always confirm the basic TCP connection works.
+telnet and nc are the "is the door open?" tools of networking - before spending time debugging application configuration, always confirm the basic TCP connection works.

@@ -16,6 +16,7 @@ Docker can consume significant disk space with images, containers, volumes, and 
 
 ```bash
 # Overview of Docker disk usage
+
 docker system df
 
 # Example output:

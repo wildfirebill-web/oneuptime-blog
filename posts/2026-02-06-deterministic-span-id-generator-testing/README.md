@@ -20,6 +20,7 @@ When writing tests for instrumented code, random trace and span IDs make asserti
 
 ```python
 # deterministic_id_generator.py
+
 from opentelemetry.sdk.trace.id_generator import IdGenerator
 import struct
 

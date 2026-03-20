@@ -42,6 +42,7 @@ First, ensure you're collecting the Collector's internal metrics:
 
 ```yaml
 # Configure Collector to export its own metrics
+
 service:
   telemetry:
     # Enable detailed internal metrics

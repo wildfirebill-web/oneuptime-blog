@@ -70,6 +70,7 @@ This example demonstrates the fundamental pattern: fetch a page with requests, p
 
 ```python
 # basic_scraping.py
+
 # Simple web scraping with BeautifulSoup
 import requests
 from bs4 import BeautifulSoup

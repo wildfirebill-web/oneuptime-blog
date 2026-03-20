@@ -50,6 +50,7 @@ You can create these columns through the SharePoint UI or through a PowerShell s
 
 ```powershell
 # Connect to SharePoint Online
+
 Connect-PnPOnline -Url "https://yourcompany.sharepoint.com/sites/documents" -Interactive
 
 # Add approval workflow columns to the library

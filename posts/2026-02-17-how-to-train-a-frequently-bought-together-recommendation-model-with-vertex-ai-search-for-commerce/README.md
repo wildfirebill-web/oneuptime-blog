@@ -85,6 +85,7 @@ def record_purchase(project_id, visitor_id, order_id, products):
     return response
 
 # Example: Record a purchase with multiple items
+
 record_purchase(
     "my-project",
     "visitor-456",

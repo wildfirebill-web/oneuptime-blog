@@ -1,4 +1,4 @@
-# How to Set Up Azure Application Gateway for IPv4 Load Balancing
+# How to Set Up Azure Application Gateway for IPv4 Load Balancing - Setup App
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -61,6 +61,7 @@ az network application-gateway create \
 
 ```bash
 # Add or update a backend pool with VM IP addresses
+
 az network application-gateway address-pool update \
   --resource-group $RESOURCE_GROUP \
   --gateway-name my-appgw \
@@ -153,4 +154,4 @@ az network public-ip show \
 
 ## Conclusion
 
-Azure Application Gateway provides Layer 7 load balancing with URL routing, SSL termination, and optional WAF. Use Standard_v2 or WAF_v2 SKU. Application Gateway requires a dedicated subnet — do not place other resources in that subnet. V2 SKUs support autoscaling and availability zone redundancy.
+Azure Application Gateway provides Layer 7 load balancing with URL routing, SSL termination, and optional WAF. Use Standard_v2 or WAF_v2 SKU. Application Gateway requires a dedicated subnet - do not place other resources in that subnet. V2 SKUs support autoscaling and availability zone redundancy.

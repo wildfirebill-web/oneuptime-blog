@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Windows, Routing Table, netsh, PowerShell
+Tags: IPv6, Windows, Routing Table, Netsh, PowerShell
 
 Description: Learn how to view and interpret the IPv6 routing table on Windows using netsh, route, and PowerShell commands.
 
@@ -54,6 +54,7 @@ netsh interface ipv6 show route | findstr "2001:db8"
 
 ```powershell
 # Show all IPv6 routes
+
 Get-NetRoute -AddressFamily IPv6
 
 # Sample output:

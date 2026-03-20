@@ -53,6 +53,7 @@ Then configure your Ansible inventory.
 
 ```yaml
 # inventory/eos_switches.yml - Arista EOS with httpapi
+
 ---
 all:
   children:

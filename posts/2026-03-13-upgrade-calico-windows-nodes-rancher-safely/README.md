@@ -24,6 +24,7 @@ Rancher may have opinions about Calico version - it pins the Calico version that
 
 ```bash
 # Check the Calico version Rancher expects
+
 kubectl get configmap -n kube-system rke2-chart-values -o yaml | grep calico
 ```
 

@@ -36,6 +36,7 @@ To install the Amplify CLI if you have not already:
 
 ```bash
 # Install the Amplify CLI globally
+
 npm install -g @aws-amplify/cli
 
 # Configure it with your AWS credentials

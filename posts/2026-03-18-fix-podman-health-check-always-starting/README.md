@@ -75,6 +75,7 @@ Many health checks use `curl` or `wget`, but minimal container images do not inc
 
 ```dockerfile
 # This health check will fail in Alpine images without curl
+
 HEALTHCHECK CMD curl -f http://localhost:8080/health || exit 1
 ```
 

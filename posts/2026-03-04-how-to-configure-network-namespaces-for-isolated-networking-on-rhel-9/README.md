@@ -33,6 +33,7 @@ sudo ip netns exec test-ns ip link show
 
 ```bash
 # Create veth pair
+
 sudo ip link add veth0 type veth peer name veth1
 
 # Move one end to the namespace

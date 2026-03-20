@@ -33,6 +33,7 @@ Deploy Drone CI itself using ArgoCD:
 
 ```yaml
 # drone-server-app.yaml
+
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:

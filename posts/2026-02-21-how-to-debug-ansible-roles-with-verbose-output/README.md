@@ -16,6 +16,7 @@ The most basic debugging tool is the `-v` flag. Ansible supports four levels of 
 
 ```bash
 # Level 1: Show task results
+
 ansible-playbook site.yml -v
 
 # Level 2: Show task input parameters

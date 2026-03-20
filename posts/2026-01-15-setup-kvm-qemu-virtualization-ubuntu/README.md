@@ -21,6 +21,7 @@ KVM (Kernel-based Virtual Machine) is Linux's built-in hypervisor that provides 
 
 ```bash
 # Check CPU supports virtualization
+
 egrep -c '(vmx|svm)' /proc/cpuinfo
 # Output should be > 0
 
@@ -292,7 +293,7 @@ virsh snapshot-revert ubuntu-vm snap1
 virsh snapshot-delete ubuntu-vm snap1
 ```
 
-## Resource Management
+Resource Management
 
 ### CPU and Memory
 

@@ -48,6 +48,7 @@ Ubuntu requires two main packages for SNMP functionality: `snmpd` (the SNMP daem
 
 ```bash
 # Update package index
+
 sudo apt update
 
 # Install SNMP daemon (agent) and utilities

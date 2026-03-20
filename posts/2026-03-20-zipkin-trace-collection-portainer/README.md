@@ -1,4 +1,4 @@
-# How to Deploy Zipkin for Trace Collection via Portainer
+# How to Deploy Zipkin for Trace Collection via Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -14,6 +14,7 @@ Zipkin is a lightweight, battle-tested distributed tracing system originally dev
 
 ```yaml
 # docker-compose.yml - Zipkin all-in-one (in-memory storage)
+
 version: "3.8"
 
 services:
@@ -272,4 +273,4 @@ curl -s "http://localhost:9411/api/v2/trace/YOUR_TRACE_ID" | \
 
 ## Conclusion
 
-Zipkin provides distributed tracing with minimal operational overhead. The MySQL storage backend with the `openzipkin/zipkin-mysql` image comes pre-configured with the correct schema, making deployment straightforward. The `zipkin-dependencies` service computes the service dependency graph daily, showing you which services call which — invaluable for understanding microservice architectures. Zipkin's API supports both the native Zipkin format and B3 propagation headers, ensuring compatibility with virtually any tracing client library. For large-scale deployments, switch to Elasticsearch storage, which Zipkin supports natively. Portainer manages the complete tracing stack alongside your application services, with a single redeploy command to update Zipkin when new versions are released.
+Zipkin provides distributed tracing with minimal operational overhead. The MySQL storage backend with the `openzipkin/zipkin-mysql` image comes pre-configured with the correct schema, making deployment straightforward. The `zipkin-dependencies` service computes the service dependency graph daily, showing you which services call which - invaluable for understanding microservice architectures. Zipkin's API supports both the native Zipkin format and B3 propagation headers, ensuring compatibility with virtually any tracing client library. For large-scale deployments, switch to Elasticsearch storage, which Zipkin supports natively. Portainer manages the complete tracing stack alongside your application services, with a single redeploy command to update Zipkin when new versions are released.

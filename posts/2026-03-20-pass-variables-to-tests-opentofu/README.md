@@ -18,6 +18,7 @@ The simplest approach is declaring variables directly in the test file. Top-leve
 # module.tftest.hcl
 
 # Top-level: applies to all run blocks
+
 variables {
   region      = "us-east-1"
   environment = "test"
@@ -87,7 +88,7 @@ tofu test \
 
 ## Method 4: Environment Variables
 
-Set `TF_VAR_<name>` environment variables to supply values without modifying any files—ideal for secrets in CI:
+Set `TF_VAR_<name>` environment variables to supply values without modifying any files-ideal for secrets in CI:
 
 ```bash
 # Set via environment variables
@@ -149,4 +150,4 @@ tofu test -var="bucket_prefix=staging" -var="region=eu-west-1"
 
 ## Conclusion
 
-OpenTofu's layered variable system gives tests the same flexibility as regular modules. Use inline `variables` blocks for fixed test data, `.tfvars` files for environment presets, and environment variables for secrets—keeping your tests both readable and secure.
+OpenTofu's layered variable system gives tests the same flexibility as regular modules. Use inline `variables` blocks for fixed test data, `.tfvars` files for environment presets, and environment variables for secrets-keeping your tests both readable and secure.

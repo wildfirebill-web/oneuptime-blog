@@ -36,6 +36,7 @@ Here is how it looks on different Flux resource types:
 
 ```yaml
 # Suspending a GitRepository stops fetching new commits
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: GitRepository
 metadata:

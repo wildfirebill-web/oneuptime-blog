@@ -20,6 +20,7 @@ On RHEL, dnf-automatic is provided by the `dnf-automatic` package.
 
 ```bash
 # Install dnf-automatic
+
 sudo dnf install dnf-automatic -y
 
 # Verify the installation

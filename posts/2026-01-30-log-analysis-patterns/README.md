@@ -41,6 +41,7 @@ Here is a basic pattern structure in a configuration format that many log analys
 
 ```yaml
 # Pattern definition for HTTP request logs
+
 # Each pattern needs a unique name for reference in alerts and dashboards
 patterns:
   - name: "http_request"

@@ -14,6 +14,7 @@ One of the main advantages of import blocks over the CLI `tofu import` command i
 
 ```hcl
 # import.tf
+
 import {
   to = aws_s3_bucket.existing
   id = "my-existing-bucket"
@@ -77,11 +78,11 @@ tofu plan
 # 3. See what differs between your config and real resource
 # 4. Update your configuration to match
 
-# 5. Re-run plan — repeat until:
+# 5. Re-run plan - repeat until:
 tofu plan
 # Plan: 1 to import, 0 to add, 0 to change, 0 to destroy.
 
-# 6. Apply — clean import with no modifications
+# 6. Apply - clean import with no modifications
 tofu apply
 ```
 

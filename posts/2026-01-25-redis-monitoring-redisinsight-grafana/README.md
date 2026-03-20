@@ -22,6 +22,7 @@ RedisInsight is a free GUI tool from Redis that provides real-time monitoring, d
 
 ```bash
 # Run RedisInsight in Docker
+
 docker run -d --name redisinsight \
   -p 5540:5540 \
   -v redisinsight:/data \

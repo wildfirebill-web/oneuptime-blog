@@ -23,6 +23,7 @@ You need:
 
 ```bash
 # Verify Docker
+
 docker --version
 docker compose version
 ```

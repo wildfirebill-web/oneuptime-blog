@@ -135,6 +135,7 @@ EOF
 
 ```bash
 # Should succeed
+
 kubectl exec -n aws-policy-test web-frontend -- wget -qO- http://api-svc
 
 # Should fail

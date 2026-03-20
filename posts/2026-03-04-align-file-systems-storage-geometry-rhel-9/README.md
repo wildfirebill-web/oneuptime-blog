@@ -35,6 +35,7 @@ graph TD
 
 ```bash
 # Check partition start sectors
+
 parted /dev/sda unit s print
 ```
 

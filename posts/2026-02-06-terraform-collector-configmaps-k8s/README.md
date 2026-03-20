@@ -299,6 +299,7 @@ Use Terraform workspaces or variable files for different environments:
 
 ```bash
 # Production
+
 terraform apply -var-file=environments/production.tfvars
 
 # Staging

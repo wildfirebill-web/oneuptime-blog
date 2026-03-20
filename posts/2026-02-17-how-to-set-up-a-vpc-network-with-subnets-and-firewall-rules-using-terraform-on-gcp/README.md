@@ -29,6 +29,7 @@ Start with a VPC network with custom subnet mode:
 
 ```hcl
 # vpc.tf - Custom VPC network
+
 resource "google_compute_network" "main" {
   name                    = "main-vpc"
   auto_create_subnetworks = false  # We will create subnets manually

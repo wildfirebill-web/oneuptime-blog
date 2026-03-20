@@ -20,6 +20,7 @@ Insecure registries are appropriate in limited scenarios.
 
 ```bash
 # Common scenarios for insecure registries:
+
 # - Local development registries running on localhost
 # - CI/CD build environments with internal registries
 # - Testing environments with self-signed certificates

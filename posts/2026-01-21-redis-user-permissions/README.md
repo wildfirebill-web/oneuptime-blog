@@ -85,6 +85,7 @@ class PermissionCache:
             r.delete(*keys)
 
 # Usage
+
 cache = PermissionCache()
 
 # Cache permissions for a user
@@ -320,7 +321,7 @@ print(f"Can editor read posts: {rbac.has_permission('user123', 'read:posts')}")
 print(f"Can editor delete posts: {rbac.has_permission('user123', 'delete:posts')}")
 ```
 
-## Resource-Level Permissions
+Resource-Level Permissions
 
 ```python
 class ResourcePermissionCache:

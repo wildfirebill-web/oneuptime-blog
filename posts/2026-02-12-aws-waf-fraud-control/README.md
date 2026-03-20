@@ -325,6 +325,7 @@ Track ACFP metrics to understand the scale of fraudulent activity.
 
 ```bash
 # Get ACFP block metrics
+
 aws cloudwatch get-metric-statistics \
   --namespace AWS/WAFV2 \
   --metric-name BlockedRequests \

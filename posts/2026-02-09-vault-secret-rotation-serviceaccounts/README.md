@@ -22,6 +22,7 @@ Set up Kubernetes authentication in Vault:
 
 ```bash
 # Enable Kubernetes auth
+
 vault auth enable kubernetes
 
 # Configure with cluster information

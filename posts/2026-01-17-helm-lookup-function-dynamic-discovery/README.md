@@ -46,6 +46,7 @@ flowchart TB
 # lookup(apiVersion, kind, namespace, name)
 
 # Returns empty dict if resource not found
+
 # Returns resource if found
 # During helm template (no cluster), always returns empty dict
 ```

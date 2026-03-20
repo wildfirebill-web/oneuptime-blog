@@ -23,6 +23,7 @@ For adding hardware tokens to an existing password system, the typical patterns 
 
 ```text
 # Pattern 1: Password AND token required (two-factor)
+
 auth required pam_unix.so
 auth required pam_token.so
 

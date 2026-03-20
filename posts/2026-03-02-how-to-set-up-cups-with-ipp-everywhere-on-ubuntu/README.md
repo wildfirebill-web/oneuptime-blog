@@ -25,6 +25,7 @@ Printers manufactured after 2012 commonly support IPP Everywhere. Look for "AirP
 
 ```bash
 # Install CUPS and IPP Everywhere support
+
 sudo apt update
 sudo apt install cups cups-ipp-utils printer-driver-cups-pdf avahi-daemon -y
 

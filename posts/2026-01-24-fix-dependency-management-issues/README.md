@@ -34,6 +34,7 @@ Version conflicts in npm often manifest as "Cannot find module" or unexpected be
 
 ```bash
 # Identify duplicate packages
+
 npm ls lodash
 
 # Output might show:

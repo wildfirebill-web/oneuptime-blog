@@ -142,6 +142,7 @@ public class NewPaymentService implements PaymentService {
 
 ```properties
 # application.properties
+
 feature.new-payment=true
 ```
 

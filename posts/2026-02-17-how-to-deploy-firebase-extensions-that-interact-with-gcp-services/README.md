@@ -33,6 +33,7 @@ Use the Firebase CLI to install it:
 
 ```bash
 # Install the Firestore BigQuery Export extension
+
 firebase ext:install firebase/firestore-bigquery-export \
   --project YOUR_PROJECT_ID
 ```

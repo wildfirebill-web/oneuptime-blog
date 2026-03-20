@@ -28,6 +28,7 @@ The two most common challenge types are:
 
 ```bash
 # Install Certbot
+
 sudo apt update
 sudo apt install certbot
 

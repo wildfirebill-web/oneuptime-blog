@@ -151,6 +151,7 @@ Global and per-Application ignoreDifferences are additive. You can use global se
 
 ```yaml
 # argocd-cm: Global - always ignore replicas
+
 resource.customizations.ignoreDifferences.apps_Deployment: |
   jqPathExpressions:
     - .spec.replicas

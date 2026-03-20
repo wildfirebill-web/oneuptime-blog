@@ -33,6 +33,7 @@ Your Skaffold file tells Cloud Deploy how to render and deploy your manifests.
 
 ```yaml
 # skaffold.yaml - Tells Cloud Deploy where your manifests are and how to deploy them
+
 apiVersion: skaffold/v4beta7
 kind: Config
 metadata:

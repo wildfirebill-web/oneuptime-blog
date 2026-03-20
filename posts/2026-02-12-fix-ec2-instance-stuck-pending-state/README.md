@@ -35,6 +35,7 @@ Check for EBS volume limits in your account:
 
 ```bash
 # Check your current EBS volume count and limits
+
 aws service-quotas get-service-quota \
   --service-code ebs \
   --quota-code L-D18FCD1D \

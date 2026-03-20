@@ -64,6 +64,7 @@ Apply the change:
 kubectl apply -f cluster.yaml
 
 # Watch rolling update
+
 kubectl get pods -l cnpg.io/cluster=postgres-cluster -w
 ```
 

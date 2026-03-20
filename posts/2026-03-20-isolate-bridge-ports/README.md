@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Bridge, Port Isolation, Linux, ebtables, Private VLAN, Networking, Security
+Tags: Bridge, Port Isolation, Linux, Ebtables, Private VLAN, Networking, Security
 
 Description: Learn how to isolate Linux bridge ports from communicating with each other while still allowing all ports to reach the upstream gateway, using ebtables or VLAN-based private isolation.
 
@@ -20,6 +20,7 @@ Port isolation prevents direct VM-to-VM or host-to-host communication through th
 
 ```bash
 # Install ebtables
+
 apt install ebtables -y
 
 # Drop all traffic between bridge ports (except from/to external)
@@ -60,7 +61,7 @@ ip link set tap0 type bridge_slave isolated on
 ip link set tap1 type bridge_slave isolated on
 ip link set tap2 type bridge_slave isolated on
 
-# The uplink (eth0) is NOT isolated — it can communicate with all ports
+# The uplink (eth0) is NOT isolated - it can communicate with all ports
 # Isolated ports cannot communicate with each other, only with non-isolated ports
 
 # Verify

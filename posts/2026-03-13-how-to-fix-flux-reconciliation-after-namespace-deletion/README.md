@@ -90,6 +90,7 @@ Ensure your Git repository includes the namespace definition:
 
 ```yaml
 # namespaces/production.yaml
+
 apiVersion: v1
 kind: Namespace
 metadata:

@@ -43,6 +43,7 @@ Check if injection is enabled for the namespace.
 
 ```bash
 # Check namespace labels
+
 kubectl get namespace default --show-labels
 
 # Enable injection

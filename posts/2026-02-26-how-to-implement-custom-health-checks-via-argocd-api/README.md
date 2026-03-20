@@ -40,6 +40,7 @@ Custom health checks are written as Lua scripts and stored in the `argocd-cm` Co
 
 ```yaml
 # argocd-cm ConfigMap with custom health checks
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

@@ -14,6 +14,7 @@ Google Artifact Registry (the successor to GCR) and GCR support IPv6 as Google's
 
 ```bash
 # Check if Artifact Registry resolves to IPv6
+
 dig AAAA us-docker.pkg.dev +short
 dig AAAA gcr.io +short
 dig AAAA us.gcr.io +short

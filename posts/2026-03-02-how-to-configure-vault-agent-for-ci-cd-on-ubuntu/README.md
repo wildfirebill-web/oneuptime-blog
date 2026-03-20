@@ -16,6 +16,7 @@ Vault Agent is included in the `vault` package:
 
 ```bash
 # Add HashiCorp's official GPG key and repository
+
 sudo apt-get update && sudo apt-get install -y wget gpg
 
 wget -O- https://apt.releases.hashicorp.com/gpg | \

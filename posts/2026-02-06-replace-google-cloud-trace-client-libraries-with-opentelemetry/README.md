@@ -65,6 +65,7 @@ In Python, the setup typically uses the `google-cloud-trace` package or OpenCens
 
 ```python
 # IDENTIFY: Old Cloud Trace setup in Python
+
 from opencensus.ext.stackdriver import trace_exporter as stackdriver_exporter
 from opencensus.trace import tracer as tracer_module
 

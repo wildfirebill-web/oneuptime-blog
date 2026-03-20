@@ -40,6 +40,7 @@ graph TB
 
 ```bash
 # On both servers, run the SAP preconfigure roles
+
 sudo dnf install -y rhel-system-roles-sap ansible-core
 
 # For the database server

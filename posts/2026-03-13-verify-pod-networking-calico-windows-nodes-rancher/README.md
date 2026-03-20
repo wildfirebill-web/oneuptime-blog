@@ -71,6 +71,7 @@ kubectl run linux-verify --image=busybox -- sleep 300
 WIN_IP=$(kubectl get pod win-verify -o jsonpath='{.status.podIP}')
 
 # Linux to Windows
+
 kubectl exec linux-verify -- ping -c3 $WIN_IP
 ```
 

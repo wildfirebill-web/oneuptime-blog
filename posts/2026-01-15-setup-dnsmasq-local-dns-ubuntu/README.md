@@ -54,6 +54,7 @@ First, update your package lists and upgrade existing packages:
 
 ```bash
 # Update package lists
+
 sudo apt update
 
 # Upgrade installed packages (optional but recommended)

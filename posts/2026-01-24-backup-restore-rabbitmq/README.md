@@ -62,6 +62,7 @@ flowchart TD
 
 ```bash
 # Export all definitions (exchanges, queues, bindings, users, vhosts, policies)
+
 curl -u admin:password \
     http://localhost:15672/api/definitions \
     -o rabbitmq-definitions.json

@@ -236,6 +236,7 @@ Test leader election by running multiple replicas and observing behavior:
 
 ```bash
 # Deploy with 3 replicas
+
 kubectl scale deployment my-controller --replicas=3
 
 # Check which instance is the leader

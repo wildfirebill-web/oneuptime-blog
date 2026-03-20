@@ -315,6 +315,7 @@ Check error rates:
 
 ```bash
 # From Prometheus - compare error rates
+
 # Canary error rate
 rate(istio_requests_total{destination_service="my-app-canary.production.svc.cluster.local",response_code=~"5.."}[5m])
 /

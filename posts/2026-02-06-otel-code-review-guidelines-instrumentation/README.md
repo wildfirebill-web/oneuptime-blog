@@ -32,6 +32,7 @@ This is the most common mistake. Reviewers should reject any span name that incl
 
 ```python
 # REJECT: span name contains a variable ID
+
 # This creates thousands of unique span names, breaking aggregation
 with tracer.start_as_current_span(f"process-order-{order_id}") as span:
     pass

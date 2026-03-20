@@ -184,12 +184,13 @@ microk8s join 192.168.1.10:25000/token-goes-here
 
 Istio works across all nodes automatically. The sidecars get injected regardless of which node the pod lands on, and istiod manages configuration distribution to all Envoy proxies across the cluster.
 
-## Resource Tuning for MicroK8s
+Resource Tuning for MicroK8s
 
 MicroK8s on a small machine (like a Raspberry Pi or a small VM) benefits from trimmed-down Istio settings:
 
 ```yaml
 # istio-microk8s.yaml
+
 apiVersion: install.istio.io/v1alpha1
 kind: IstioOperator
 spec:

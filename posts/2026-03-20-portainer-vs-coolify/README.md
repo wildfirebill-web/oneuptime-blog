@@ -40,6 +40,7 @@ Portainer and Coolify both help you manage containerized applications on your ow
 
 ```bash
 # Coolify one-line installation
+
 curl -fsSL https://cdn.coollabs.io/coolify/install.sh | bash
 
 # Or Docker-based installation
@@ -160,7 +161,7 @@ EOF
 
 ### Coolify Wins For:
 
-```
+```bash
 1. Web app developers who want Heroku-like simplicity
 2. Teams deploying mostly Node.js, Python, PHP web applications
 3. Organizations wanting automated SSL and domain management
@@ -170,7 +171,7 @@ EOF
 
 ### Portainer Wins For:
 
-```
+```bash
 1. Teams running mixed workloads (apps + background workers + databases)
 2. Organizations needing Kubernetes management
 3. Docker Swarm users
@@ -198,4 +199,4 @@ EOF
 
 ## Conclusion
 
-Coolify and Portainer serve different users. Coolify is ideal for developers who want a self-hosted Heroku experience — push code to GitHub and get a running application with SSL and a domain. Portainer is ideal for infrastructure teams who need comprehensive Docker and Kubernetes management with granular control, enterprise access controls, and multi-environment support. For web developers deploying applications without complex infrastructure needs, Coolify reduces operational overhead significantly. For platform teams managing diverse containerized workloads across multiple environments, Portainer provides the depth of control and visibility needed.
+Coolify and Portainer serve different users. Coolify is ideal for developers who want a self-hosted Heroku experience - push code to GitHub and get a running application with SSL and a domain. Portainer is ideal for infrastructure teams who need comprehensive Docker and Kubernetes management with granular control, enterprise access controls, and multi-environment support. For web developers deploying applications without complex infrastructure needs, Coolify reduces operational overhead significantly. For platform teams managing diverse containerized workloads across multiple environments, Portainer provides the depth of control and visibility needed.

@@ -71,6 +71,7 @@ resource "aws_s3_bucket" "main" {
 }
 
 # Block all public access by default
+
 resource "aws_s3_bucket_public_access_block" "main" {
   bucket                  = aws_s3_bucket.main.id
   block_public_acls       = true
@@ -148,4 +149,4 @@ output "bucket_regional_domain_name" { value = aws_s3_bucket.main.bucket_regiona
 
 ## Conclusion
 
-This S3 module enforces security best practices by default — public access is always blocked, encryption is always enabled, and versioning can be toggled. Lifecycle rules with dynamic blocks handle any number of transition and expiration policies. The bucket policy is optional and passed as a pre-rendered JSON string for maximum flexibility.
+This S3 module enforces security best practices by default - public access is always blocked, encryption is always enabled, and versioning can be toggled. Lifecycle rules with dynamic blocks handle any number of transition and expiration policies. The bucket policy is optional and passed as a pre-rendered JSON string for maximum flexibility.

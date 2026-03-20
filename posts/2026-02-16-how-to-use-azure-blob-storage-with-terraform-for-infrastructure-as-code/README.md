@@ -18,6 +18,7 @@ Before writing any Terraform configuration, set up authentication. The recommend
 
 ```bash
 # Create a service principal for Terraform
+
 az ad sp create-for-rbac \
   --name "sp-terraform" \
   --role Contributor \

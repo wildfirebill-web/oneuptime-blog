@@ -34,6 +34,7 @@ This is probably the most common use case. Kubernetes stores secret values as ba
 
 ```yaml
 # k8s_secrets.yml - Generate Kubernetes Secret manifest
+
 - name: Generate Kubernetes secrets
   hosts: localhost
   vars:

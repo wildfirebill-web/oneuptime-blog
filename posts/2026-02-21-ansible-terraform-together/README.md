@@ -51,6 +51,7 @@ infrastructure/
 
 ```hcl
 # terraform/main.tf - Create VMs
+
 resource "aws_instance" "web" {
   count         = 3
   ami           = var.ami_id

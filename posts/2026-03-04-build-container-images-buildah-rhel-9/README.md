@@ -179,6 +179,7 @@ Keep your final images small by using multi-stage builds:
 ```bash
 cat > Containerfile << 'EOF'
 # Build stage
+
 FROM registry.access.redhat.com/ubi9/ubi as builder
 RUN dnf install -y gcc make
 COPY app.c /src/app.c

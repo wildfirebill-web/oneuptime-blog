@@ -34,6 +34,7 @@ Here's a minimal configuration to enable the Jaeger Remote Sampling extension:
 
 ```yaml
 # collector-config.yaml
+
 extensions:
   # Configure Jaeger Remote Sampling extension
   jaeger_remote_sampling:

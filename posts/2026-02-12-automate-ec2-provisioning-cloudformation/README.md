@@ -37,6 +37,7 @@ Deploy it with the AWS CLI:
 
 ```bash
 # Create the stack
+
 aws cloudformation create-stack \
   --stack-name simple-ec2 \
   --template-body file://template.yaml

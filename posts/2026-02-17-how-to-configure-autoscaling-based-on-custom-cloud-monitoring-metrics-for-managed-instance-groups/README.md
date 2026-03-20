@@ -31,6 +31,7 @@ Here is how to create a metric descriptor explicitly:
 
 ```bash
 # Create a custom metric descriptor for queue depth
+
 gcloud monitoring metrics-descriptors create \
     custom.googleapis.com/app/queue_depth \
     --type=GAUGE \

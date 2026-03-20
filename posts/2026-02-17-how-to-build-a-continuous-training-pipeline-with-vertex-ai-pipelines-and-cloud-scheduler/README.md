@@ -37,6 +37,7 @@ First, the data preparation component that fetches and processes fresh training 
 
 ```python
 # components/data_prep.py
+
 from kfp.v2 import dsl
 from kfp.v2.dsl import Dataset, Output, Input, Metrics
 

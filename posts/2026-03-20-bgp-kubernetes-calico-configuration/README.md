@@ -24,6 +24,7 @@ graph TD
 
 ```bash
 # Install Calico with the operator
+
 kubectl create -f https://raw.githubusercontent.com/projectcalico/calico/v3.27.0/manifests/tigera-operator.yaml
 
 # Install with BGP enabled (no overlay)

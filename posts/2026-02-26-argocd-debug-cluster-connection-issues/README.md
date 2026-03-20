@@ -16,6 +16,7 @@ Before diving into debugging, recognize the symptoms:
 
 ```bash
 # Check cluster connection status
+
 argocd cluster list
 
 # Output showing a disconnected cluster:

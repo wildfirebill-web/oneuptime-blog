@@ -16,6 +16,7 @@ The collection needs `boto3` and `botocore`, the standard AWS Python SDKs.
 
 ```bash
 # Install the collection
+
 ansible-galaxy collection install amazon.aws
 
 # Install Python dependencies

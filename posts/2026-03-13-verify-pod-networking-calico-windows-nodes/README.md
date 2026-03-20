@@ -32,6 +32,7 @@ Both should show `Running` status.
 
 ```powershell
 # List all HNS endpoints (one per running pod on the Windows node)
+
 Get-HnsEndpoint | Select-Object Id, IPAddress, MacAddress
 ```
 

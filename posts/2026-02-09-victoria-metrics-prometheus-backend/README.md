@@ -289,6 +289,7 @@ For massive deployments, use VictoriaMetrics cluster mode:
 
 ```yaml
 # vmstorage - stores data
+
 apiVersion: apps/v1
 kind: StatefulSet
 metadata:

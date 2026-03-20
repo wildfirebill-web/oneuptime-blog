@@ -589,6 +589,7 @@ Alert when connection pool is near capacity:
 
 ```yaml
 # Example Prometheus alert rule
+
 - alert: PostgreSQLHighConnections
   expr: |
     (postgresql.backends / postgresql.connection.max) > 0.8

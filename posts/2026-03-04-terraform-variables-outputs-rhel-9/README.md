@@ -31,6 +31,7 @@ graph TD
 # variables.tf - Different variable types
 
 # Simple string variable
+
 variable "environment" {
   description = "Deployment environment (dev, staging, prod)"
   type        = string

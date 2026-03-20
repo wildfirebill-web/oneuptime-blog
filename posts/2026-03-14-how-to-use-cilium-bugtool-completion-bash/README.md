@@ -32,6 +32,7 @@ This guide covers generating, installing, and using bash completions for cilium-
 
 ```bash
 # Generate bash completion and source it immediately
+
 source <(cilium-bugtool completion bash)
 
 # Test it works

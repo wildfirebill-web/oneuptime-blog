@@ -12,7 +12,7 @@ When a Mobile Node is away from home and needs to register its Care-of Address, 
 
 ## The Discovery Problem
 
-```
+```text
 Home Network: 2001:db8:home::/64
 
 Mobile Node knows:
@@ -29,7 +29,7 @@ Mobile Node does NOT know:
 
 RFC 3775 defines a well-known anycast address structure for Home Agents. The Home Agent Anycast Address is formed from the home prefix with the subnet-router anycast suffix.
 
-```
+```text
 Home prefix:            2001:db8:home::/64
 HA Anycast Address:     2001:db8:home::fdff:ffff:ffff:fffe
                         (subnet-router anycast = all 1s in interface ID
@@ -56,7 +56,7 @@ sequenceDiagram
 
 ### DHAAD Request (MH Type 7)
 
-```
+```text
 Mobility Header (Type 7):
   Reserved: 0
   Identifier: 0x1234  (random, used to match reply)
@@ -66,7 +66,7 @@ Mobility Header (Type 7):
 
 ### DHAAD Reply (MH Type 8)
 
-```
+```text
 Mobility Header (Type 8):
   Reserved: 0
   Identifier: 0x1234  (matches request)
@@ -105,6 +105,7 @@ def compute_ha_anycast_address(home_prefix: str) -> str:
 
 
 # Example usage
+
 prefix = "2001:db8:home::/64"
 anycast = compute_ha_anycast_address(prefix)
 print(f"HA Anycast Address: {anycast}")
@@ -116,7 +117,7 @@ print(f"HA Anycast Address: {anycast}")
 In the UMIP mip6d configuration:
 
 ```bash
-# /etc/mip6d.conf — HA configuration for DHAAD
+# /etc/mip6d.conf - HA configuration for DHAAD
 NodeConfig HA;
 
 Interface "eth0" {
@@ -147,4 +148,4 @@ dig SRV _mip6._udp.home.example.com
 
 ## Conclusion
 
-DHAAD enables Mobile Nodes to discover Home Agents dynamically using anycast addressing, removing the need for static HA configuration on the MN. The anycast address is deterministically derived from the home prefix. Ensure your Home Agent is properly responding to DHAAD requests — monitor this with OneUptime's UDP/ICMP probes.
+DHAAD enables Mobile Nodes to discover Home Agents dynamically using anycast addressing, removing the need for static HA configuration on the MN. The anycast address is deterministically derived from the home prefix. Ensure your Home Agent is properly responding to DHAAD requests - monitor this with OneUptime's UDP/ICMP probes.

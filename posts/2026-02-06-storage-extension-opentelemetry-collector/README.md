@@ -34,6 +34,7 @@ Here's a simple configuration enabling the Storage extension with the file stora
 
 ```yaml
 # collector-config.yaml
+
 extensions:
   # Configure file storage extension
   file_storage:

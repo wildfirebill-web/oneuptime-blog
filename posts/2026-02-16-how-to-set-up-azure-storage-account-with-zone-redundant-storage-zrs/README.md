@@ -50,6 +50,7 @@ Creating a ZRS storage account is straightforward - you just specify the ZRS SKU
 
 ```bash
 # Create a resource group
+
 az group create \
   --name rg-ha-storage \
   --location eastus2

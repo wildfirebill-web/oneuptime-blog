@@ -69,6 +69,7 @@ resource "google_storage_bucket" "cdn_origin" {
 }
 
 # Make the bucket publicly readable for CDN to serve content
+
 resource "google_storage_bucket_iam_member" "public_read" {
   bucket = google_storage_bucket.cdn_origin.name
   role   = "roles/storage.objectViewer"

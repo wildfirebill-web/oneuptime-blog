@@ -37,6 +37,7 @@ Verify your Docker installation with these commands.
 
 ```bash
 # Check Docker version
+
 docker --version
 
 # Check Docker Compose version

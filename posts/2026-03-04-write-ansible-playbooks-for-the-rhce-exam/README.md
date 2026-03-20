@@ -14,6 +14,7 @@ The RHCE exam is based on Ansible. You need to write playbooks from scratch unde
 
 ```ini
 # inventory
+
 [webservers]
 web1.example.com
 web2.example.com

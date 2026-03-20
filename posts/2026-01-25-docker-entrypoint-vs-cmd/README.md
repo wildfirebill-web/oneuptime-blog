@@ -20,6 +20,7 @@ When both are present, CMD provides default arguments to ENTRYPOINT.
 
 ```dockerfile
 # CMD alone - easily overridden
+
 FROM ubuntu:22.04
 CMD ["echo", "Hello World"]
 

@@ -28,6 +28,7 @@ Kubeless is typically installed via a manifest. We'll manage it with a GitReposi
 
 ```yaml
 # clusters/my-cluster/kubeless/gitrepository.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: GitRepository
 metadata:

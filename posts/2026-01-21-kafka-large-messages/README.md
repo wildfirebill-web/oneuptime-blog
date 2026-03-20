@@ -34,6 +34,7 @@ Kafka has a default message size limit of 1MB, but many applications need to sen
 
 ```properties
 # server.properties
+
 message.max.bytes=10485760  # 10MB
 replica.fetch.max.bytes=10485760  # 10MB
 ```

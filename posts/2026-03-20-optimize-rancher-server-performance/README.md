@@ -16,6 +16,7 @@ Rancher Server's resource requests are often too low for large deployments:
 
 ```yaml
 # rancher-values.yaml (helm upgrade)
+
 resources:
   requests:
     cpu: "2"

@@ -31,6 +31,7 @@ Start every investigation by confirming Typha pods are running and ready:
 
 ```bash
 # Show all Typha pods with their status and node placement
+
 kubectl get pods -n kube-system -l k8s-app=calico-typha -o wide
 
 # If pods are not Running, describe the pod to see events and conditions

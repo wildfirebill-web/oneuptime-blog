@@ -53,6 +53,7 @@ The FRR-K8s operator manages the FRR DaemonSet and watches for FRRConfiguration 
 
 ```bash
 # Add the FRR-K8s Helm repository
+
 helm repo add frr-k8s https://metallb.github.io/frr-k8s
 
 # Update your local chart index

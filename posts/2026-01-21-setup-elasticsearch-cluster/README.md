@@ -36,6 +36,7 @@ First, install Elasticsearch on each node:
 
 ```bash
 # Import Elasticsearch GPG key
+
 wget -qO - https://artifacts.elastic.co/GPG-KEY-elasticsearch | sudo gpg --dearmor -o /usr/share/keyrings/elasticsearch-keyring.gpg
 
 # Add the Elasticsearch repository

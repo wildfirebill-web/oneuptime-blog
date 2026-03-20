@@ -18,6 +18,7 @@ Get MinIO running in seconds:
 
 ```bash
 # Start MinIO with default credentials
+
 docker run -d \
   --name minio \
   -p 9000:9000 \

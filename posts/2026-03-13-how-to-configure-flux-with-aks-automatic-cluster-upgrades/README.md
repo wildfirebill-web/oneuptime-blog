@@ -27,6 +27,7 @@ AKS offers several auto-upgrade channels. Choose the one that matches your risk 
 
 ```bash
 # Patch: auto-upgrades to the latest patch version (e.g., 1.28.3 -> 1.28.5)
+
 az aks update \
   --resource-group my-resource-group \
   --name my-flux-cluster \

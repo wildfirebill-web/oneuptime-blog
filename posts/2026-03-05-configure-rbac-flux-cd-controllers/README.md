@@ -31,6 +31,7 @@ Before customizing RBAC, inspect the existing roles and bindings that Flux insta
 
 ```bash
 # List all ClusterRoles related to Flux
+
 kubectl get clusterroles | grep flux
 
 # List all ClusterRoleBindings related to Flux

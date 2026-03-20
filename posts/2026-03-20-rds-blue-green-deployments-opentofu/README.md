@@ -14,6 +14,7 @@ AWS RDS Blue/Green Deployments allow you to make database changes in a staging (
 
 ```hcl
 # First, the production (blue) database must exist
+
 resource "aws_db_instance" "blue" {
   identifier        = "${var.app_name}-db-${var.environment}"
   engine            = "mysql"
@@ -140,4 +141,4 @@ tofu apply tfplan
 
 ## Summary
 
-RDS Blue/Green Deployments enable safe, low-downtime database changes by maintaining a synchronized green environment. OpenTofu manages deployment creation and the production database configuration — while switchover is performed via the AWS CLI or console when ready.
+RDS Blue/Green Deployments enable safe, low-downtime database changes by maintaining a synchronized green environment. OpenTofu manages deployment creation and the production database configuration - while switchover is performed via the AWS CLI or console when ready.

@@ -43,6 +43,7 @@ Compare counts between source and destination systems.
 
 ```python
 # Compare source database count with search index count
+
 # This validates that all records made it through the pipeline
 
 def calculate_coverage_sli(source_db, search_index, time_window):

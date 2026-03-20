@@ -21,6 +21,7 @@ The simplest approach uses a Podman network to connect your application with a d
 ```bash
 #!/bin/bash
 # Basic integration test with Podman: app + database
+
 # Uses a custom network for container name resolution
 
 # Create an isolated network for the test

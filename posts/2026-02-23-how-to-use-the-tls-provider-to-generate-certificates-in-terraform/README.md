@@ -16,6 +16,7 @@ In this guide, we will explore the TLS provider comprehensively. We will cover g
 
 ```hcl
 # main.tf - Provider configuration
+
 terraform {
   required_version = ">= 1.5.0"
 

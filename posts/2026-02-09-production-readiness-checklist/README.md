@@ -16,7 +16,7 @@ Applications must meet basic functional requirements before production deploymen
 
 Test the application under realistic production scenarios. Synthetic development load doesn't reveal issues that appear under actual user patterns. Run sustained load tests for hours or days to catch memory leaks and performance degradation.
 
-## Resource Configuration
+Resource Configuration
 
 Set appropriate resource requests and limits for all containers. Requests reserve capacity for your workload, while limits prevent resource overconsumption.
 
@@ -260,6 +260,7 @@ Implement comprehensive logging, metrics, and tracing.
 
 ```yaml
 # Prometheus metrics example
+
 apiVersion: v1
 kind: Service
 metadata:

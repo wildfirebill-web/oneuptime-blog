@@ -364,6 +364,7 @@ Use Prometheus to monitor your gateway:
 
 ```text
 # Request rate by path
+
 sum(rate(istio_requests_total{reporter="destination",destination_service_name="istio-ingressgateway"}[5m])) by (request_url_path)
 
 # Error rate

@@ -44,6 +44,7 @@ Here's a function that processes an order event, validates it, and returns a res
 
 ```python
 # lambda_function.py - Order processing function
+
 import json
 from datetime import datetime
 

@@ -33,6 +33,7 @@ If you have a dedicated machine available, HAProxy is a reliable choice:
 
 ```text
 # /etc/haproxy/haproxy.cfg
+
 frontend kubernetes-api
     bind *:6443
     mode tcp

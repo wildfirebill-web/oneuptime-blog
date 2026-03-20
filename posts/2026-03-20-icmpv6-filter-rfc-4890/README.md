@@ -12,7 +12,7 @@ RFC 4890 ("Recommendations for Filtering ICMPv6 Messages in Firewalls") provides
 
 ## RFC 4890 Filtering Categories
 
-```
+```text
 RFC 4890 classifies ICMPv6 messages into:
 
 Category 1: SHOULD NOT be filtered (essential for IPv6 operation)
@@ -46,6 +46,7 @@ Category 5: SHOULD be filtered (dangerous)
 
 ```bash
 # Transit firewall: sits between the Internet and your network
+
 # Allows routable IPv6 traffic + essential ICMPv6
 
 # Start with a clean slate for ICMPv6
@@ -125,4 +126,4 @@ sudo nft add rule ip6 filter input icmpv6 type echo-request accept
 
 ## Conclusion
 
-RFC 4890 provides a clear and practical framework for ICMPv6 filtering. The key principles: allow all four error message types (Types 1-4) at all boundary types; block NDP (Types 133-137) at transit firewalls but allow them on local segments; allow MLD (Types 130-132, 143) on segments using multicast. The distinction between "local link" and "transit" boundaries is the most important concept — NDP messages are only valid on the link where they originate and must never be routed.
+RFC 4890 provides a clear and practical framework for ICMPv6 filtering. The key principles: allow all four error message types (Types 1-4) at all boundary types; block NDP (Types 133-137) at transit firewalls but allow them on local segments; allow MLD (Types 130-132, 143) on segments using multicast. The distinction between "local link" and "transit" boundaries is the most important concept - NDP messages are only valid on the link where they originate and must never be routed.

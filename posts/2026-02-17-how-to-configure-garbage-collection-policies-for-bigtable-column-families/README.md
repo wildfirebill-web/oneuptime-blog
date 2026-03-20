@@ -41,6 +41,7 @@ The `cbt` CLI is the quickest way to set GC policies. Here are the three types o
 
 ```bash
 # Keep only the 1 most recent version of each cell
+
 # Good for data where you only care about the current value
 cbt setgcpolicy my-table my-family maxversions=1
 

@@ -30,6 +30,7 @@ Cloud Identity groups can be created through the Google Admin Console, the Cloud
 
 ```bash
 # Create a group for GCP project administrators
+
 gcloud identity groups create gcp-project-admins@yourcompany.com \
   --organization=yourcompany.com \
   --display-name="GCP Project Admins" \

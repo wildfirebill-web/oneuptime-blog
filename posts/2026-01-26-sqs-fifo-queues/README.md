@@ -54,6 +54,7 @@ FIFO queue names must end with the `.fifo` suffix. This is not optional.
 
 ```bash
 # Create a basic FIFO queue
+
 aws sqs create-queue \
   --queue-name my-orders.fifo \
   --attributes '{

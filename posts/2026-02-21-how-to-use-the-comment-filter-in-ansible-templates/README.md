@@ -18,6 +18,7 @@ By default, the comment filter uses shell-style `#` comments:
 
 ```yaml
 # Wrap text in shell-style comments
+
 - name: Basic comment filter
   ansible.builtin.debug:
     msg: "{{ 'This file is managed by Ansible' | comment }}"

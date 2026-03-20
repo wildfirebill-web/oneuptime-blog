@@ -113,6 +113,7 @@ curl -u elastic:password -X PUT "localhost:9200/site-content" -H 'Content-Type: 
 
 ```bash
 # Blog post
+
 curl -u elastic:password -X POST "localhost:9200/site-content/_doc" -H 'Content-Type: application/json' -d'
 {
   "url": "https://example.com/blog/getting-started-elasticsearch",

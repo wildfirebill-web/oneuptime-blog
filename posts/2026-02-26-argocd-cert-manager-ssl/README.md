@@ -32,6 +32,7 @@ For ArgoCD, this means you never have to manually create or rotate TLS certifica
 
 ```bash
 # Install cert-manager with Helm
+
 helm repo add jetstack https://charts.jetstack.io
 helm repo update
 

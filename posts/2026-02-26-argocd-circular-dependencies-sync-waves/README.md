@@ -36,6 +36,7 @@ Kubernetes Services can be created before the Deployment that backs them. A Serv
 
 ```yaml
 # Wave -1: Create Services first (DNS records registered immediately)
+
 apiVersion: v1
 kind: Service
 metadata:

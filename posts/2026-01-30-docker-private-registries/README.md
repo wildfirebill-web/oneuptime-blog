@@ -33,6 +33,7 @@ The simplest method uses `docker login` to authenticate with your private regist
 
 ```bash
 # Login to a private registry
+
 docker login registry.company.com
 
 # Login with username directly

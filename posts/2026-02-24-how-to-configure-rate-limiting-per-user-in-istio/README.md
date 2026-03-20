@@ -271,6 +271,7 @@ Test with different users to verify independent tracking:
 
 ```bash
 # User A - should have their own limit
+
 for i in $(seq 1 110); do
   curl -s -o /dev/null -w "%{http_code} " \
     -H "Authorization: Bearer $USER_A_JWT" \

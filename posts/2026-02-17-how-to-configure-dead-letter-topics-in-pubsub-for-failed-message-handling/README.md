@@ -43,6 +43,7 @@ Let me walk through the complete setup. First, create the dead letter topic and 
 
 ```bash
 # Create the dead letter topic
+
 gcloud pubsub topics create order-events-dlq
 
 # Create a subscription on the DLQ for reviewing failed messages

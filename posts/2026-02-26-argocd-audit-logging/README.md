@@ -22,6 +22,7 @@ Enable detailed audit logging in the ArgoCD API server by modifying the argocd-c
 
 ```yaml
 # argocd-cmd-params-cm.yaml
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

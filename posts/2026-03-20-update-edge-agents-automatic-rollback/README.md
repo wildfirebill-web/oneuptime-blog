@@ -1,8 +1,8 @@
-# How to Update Edge Agents with Automatic Rollback
+# How to Update Edge Agents with Automatic Rollback - Agents Automatic
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Edge Agent, Update, Rollback, Maintenance
+Tags: Portainer, Edge Agent, Updates, Rollback, Maintenance
 
 Description: Update Portainer Edge Agents remotely with automatic rollback capability if the update fails.
 
@@ -31,6 +31,7 @@ TOKEN=$(curl -s -X POST \
   --insecure | python3 -c "import sys,json; print(json.load(sys.stdin)['jwt'])")
 
 # Create an edge environment and get the deployment script
+
 curl -X POST \
   https://portainer.example.com:9443/api/endpoints \
   -H "Authorization: Bearer $TOKEN" \

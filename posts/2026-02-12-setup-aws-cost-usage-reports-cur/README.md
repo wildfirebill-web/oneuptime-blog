@@ -20,6 +20,7 @@ First, create the S3 bucket that will store your reports.
 
 ```bash
 # Create the bucket
+
 aws s3 mb s3://my-company-cur-reports --region us-east-1
 
 # Add the required bucket policy for CUR to write to it

@@ -25,6 +25,7 @@ When you deploy an application from Portainer to Kubernetes, it automatically cr
 
 ```yaml
 # Portainer creates a secret like this automatically
+
 apiVersion: v1
 kind: Secret
 metadata:

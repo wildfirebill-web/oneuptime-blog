@@ -28,6 +28,7 @@ Breaking any link in this chain causes a Secure Boot failure and prevents bootin
 
 ```bash
 # Check if Secure Boot is currently enabled
+
 sudo mokutil --sb-state
 # Expected output: SecureBoot enabled
 

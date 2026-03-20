@@ -67,6 +67,7 @@ Check the current CAE configuration using PowerShell:
 
 ```powershell
 # Connect to Microsoft Graph
+
 Connect-MgGraph -Scopes "Policy.Read.All"
 
 # Check if CAE is enabled at the tenant level

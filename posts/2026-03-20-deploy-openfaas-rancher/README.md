@@ -1,8 +1,8 @@
-# How to Deploy OpenFaaS on Rancher
+# How to Deploy OpenFaaS on Rancher - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: rancher, openfaas, serverless, functions, kubernetes
+Tags: Rancher, OpenFaaS, Serverless, Functions, Kubernetes
 
 Description: Guide to deploying OpenFaaS serverless functions platform on Rancher for easy function-as-a-service workloads.
 
@@ -14,6 +14,7 @@ OpenFaaS (Functions as a Service) makes it easy to deploy serverless functions t
 
 ```bash
 # Create namespaces
+
 kubectl apply -f https://raw.githubusercontent.com/openfaas/faas-netes/master/namespaces.yml
 
 # Add OpenFaaS chart repository

@@ -193,6 +193,7 @@ You can test by overloading the service and watching for 503s:
 
 ```bash
 # Use fortio for load testing
+
 kubectl apply -f https://raw.githubusercontent.com/istio/istio/release-1.20/samples/httpbin/sample-client/fortio-deploy.yaml
 
 FORTIO_POD=$(kubectl get pod -l app=fortio -o jsonpath='{.items[0].metadata.name}')

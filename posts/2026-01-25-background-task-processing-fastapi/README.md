@@ -33,6 +33,7 @@ FastAPI includes a simple mechanism for running tasks after a response is sent. 
 
 ```python
 # background_tasks_basic.py
+
 # Using FastAPI's built-in BackgroundTasks for simple async work
 from fastapi import FastAPI, BackgroundTasks
 from datetime import datetime

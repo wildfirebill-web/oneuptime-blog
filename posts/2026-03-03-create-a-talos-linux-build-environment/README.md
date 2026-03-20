@@ -36,6 +36,7 @@ Start with the essential packages.
 
 ```bash
 # Update package lists
+
 sudo apt-get update
 
 # Install build essentials

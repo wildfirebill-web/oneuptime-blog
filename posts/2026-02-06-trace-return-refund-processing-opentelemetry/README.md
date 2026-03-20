@@ -243,6 +243,7 @@ Set up metrics to track whether you are meeting your refund timing promises.
 
 ```python
 # Query: Average refund processing time by payment method
+
 REFUND_SLA_QUERY = """
 SELECT
     attributes['payment.method'] as method,

@@ -27,6 +27,7 @@ The default mode. LXD creates a software bridge (`lxdbr0`) and attaches containe
 
 ```bash
 # List LXD networks
+
 lxc network list
 
 # Inspect the default bridge

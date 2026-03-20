@@ -29,6 +29,7 @@ Start with KMS keys. Different categories of secrets should use different keys s
 
 ```hcl
 # KMS key for database credentials
+
 resource "aws_kms_key" "database_secrets" {
   description             = "Encryption key for database credentials"
   deletion_window_in_days = 30

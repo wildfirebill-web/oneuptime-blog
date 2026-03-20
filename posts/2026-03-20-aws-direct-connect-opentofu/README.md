@@ -8,7 +8,7 @@ Description: Learn how to configure AWS Direct Connect resources with OpenTofu, 
 
 ## Introduction
 
-AWS Direct Connect provides dedicated private network connectivity between on-premises data centers and AWS, bypassing the public internet for more consistent network performance, lower latency, and higher bandwidth. OpenTofu manages the AWS side of the connection—VIFs, BGP configuration, and Direct Connect Gateways—while the physical circuit provisioning is handled by AWS and colocation providers.
+AWS Direct Connect provides dedicated private network connectivity between on-premises data centers and AWS, bypassing the public internet for more consistent network performance, lower latency, and higher bandwidth. OpenTofu manages the AWS side of the connection-VIFs, BGP configuration, and Direct Connect Gateways-while the physical circuit provisioning is handled by AWS and colocation providers.
 
 ## Prerequisites
 
@@ -20,6 +20,7 @@ AWS Direct Connect provides dedicated private network connectivity between on-pr
 
 ```hcl
 # DX Gateway enables connectivity to multiple VPCs across regions and accounts
+
 resource "aws_dx_gateway" "main" {
   name            = "${var.project_name}-dx-gateway"
   amazon_side_asn = "64512"  # AWS-side BGP ASN (private range: 64512-65534)
@@ -145,4 +146,4 @@ aws directconnect describe-virtual-interfaces \
 
 ## Conclusion
 
-Direct Connect physical provisioning (ordering circuits) is done outside Terraform through AWS or partner portals; OpenTofu manages the logical configuration on top. For production Direct Connect setups, always deploy two VIFs on separate physical connections in separate colocation facilities for redundancy. Use a Direct Connect Gateway with a Transit Gateway attachment for the most scalable architecture—it allows a single DX connection to reach all VPCs across regions.
+Direct Connect physical provisioning (ordering circuits) is done outside Terraform through AWS or partner portals; OpenTofu manages the logical configuration on top. For production Direct Connect setups, always deploy two VIFs on separate physical connections in separate colocation facilities for redundancy. Use a Direct Connect Gateway with a Transit Gateway attachment for the most scalable architecture-it allows a single DX connection to reach all VPCs across regions.

@@ -32,6 +32,7 @@ Typha needs its own identity to authenticate with the Kubernetes API server.
 
 ```yaml
 # typha-serviceaccount.yaml
+
 # ServiceAccount used by Typha to authenticate with the Kubernetes API server
 apiVersion: v1
 kind: ServiceAccount

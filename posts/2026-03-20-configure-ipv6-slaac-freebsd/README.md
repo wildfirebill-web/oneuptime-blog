@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, FreeBSD, SLAAC, rtsold, Router Advertisements
+Tags: IPv6, FreeBSD, SLAAC, Rtsold, Router Advertisement
 
 Description: Learn how to configure Stateless Address Autoconfiguration (SLAAC) on FreeBSD using rtsold to process Router Advertisements and automatically assign IPv6 addresses.
 
 ## How SLAAC Works on FreeBSD
 
-```
+```text
 Router sends RA with prefix 2001:db8::/64
   │
   └─► rtsold (on client) processes the RA
@@ -25,6 +25,7 @@ Router sends RA with prefix 2001:db8::/64
 
 cat >> /etc/rc.conf << 'EOF'
 # Accept Router Advertisements on em0
+
 ifconfig_em0_ipv6="inet6 accept_rtadv"
 
 # Enable Router Solicitation daemon

@@ -29,6 +29,7 @@ Ensure CRD schema validation is active:
 
 ```bash
 # Verify CRD validation is enabled (default in Cilium 1.12+)
+
 kubectl get crd ciliumnetworkpolicies.cilium.io \
   -o jsonpath='{.spec.versions[0].schema.openAPIV3Schema.type}'
 # Should output: object

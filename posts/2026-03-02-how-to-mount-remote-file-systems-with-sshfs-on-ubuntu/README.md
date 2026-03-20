@@ -14,6 +14,7 @@ sshfs (SSH Filesystem) uses FUSE and an SSH connection to mount a remote directo
 
 ```bash
 # Install sshfs (also installs FUSE as a dependency)
+
 sudo apt update
 sudo apt install sshfs -y
 

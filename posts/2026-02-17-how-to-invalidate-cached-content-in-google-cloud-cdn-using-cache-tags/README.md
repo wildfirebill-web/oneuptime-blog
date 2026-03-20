@@ -27,6 +27,7 @@ The simplest form of invalidation targets a specific URL path.
 
 ```bash
 # Invalidate a specific URL path
+
 gcloud compute url-maps invalidate-cdn-cache my-url-map \
     --path="/images/logo.png" \
     --project=my-project

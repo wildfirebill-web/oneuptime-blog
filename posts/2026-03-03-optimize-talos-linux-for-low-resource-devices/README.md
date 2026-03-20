@@ -37,6 +37,7 @@ The API server is one of the largest consumers. Reduce its memory footprint by l
 
 ```yaml
 # Machine config patches for a leaner control plane
+
 cluster:
   apiServer:
     extraArgs:

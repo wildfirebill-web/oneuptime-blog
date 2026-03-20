@@ -28,6 +28,7 @@ You can see which modules are loaded on a Talos node:
 
 ```bash
 # List all currently loaded kernel modules
+
 talosctl read /proc/modules --nodes <node-ip>
 
 # Count the number of loaded modules

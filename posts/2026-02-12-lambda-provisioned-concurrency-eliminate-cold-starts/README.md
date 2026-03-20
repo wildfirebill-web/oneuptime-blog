@@ -46,6 +46,7 @@ First, publish a version:
 
 ```bash
 # Publish a version of your function
+
 VERSION=$(aws lambda publish-version \
   --function-name my-api-function \
   --description "Production release v2.1" \

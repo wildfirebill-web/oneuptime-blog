@@ -89,6 +89,7 @@ from opentelemetry.sdk.trace.export import BatchSpanProcessor
 from opentelemetry.exporter.otlp.proto.grpc.trace_exporter import OTLPSpanExporter
 
 # Configure OpenTelemetry to export to a backend
+
 provider = TracerProvider()
 processor = BatchSpanProcessor(
     OTLPSpanExporter(endpoint="http://backend:4317")

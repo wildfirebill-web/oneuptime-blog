@@ -1,4 +1,4 @@
-# How to Configure Kubernetes Application Environment Variables in Portainer
+# How to Configure Kubernetes Application Environment Variables in Portainer (2)
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -27,7 +27,7 @@ Best for non-sensitive configuration that varies per deployment.
 3. Click **+ Add environment variable**
 4. Enter name and value:
 
-```
+```text
 Name:   NODE_ENV         Value: production
 Name:   PORT             Value: 8080
 Name:   LOG_LEVEL        Value: info
@@ -80,7 +80,7 @@ data:
 
 In Portainer application form, under **Environment → From ConfigMap**:
 
-```
+```text
 ConfigMap: app-config
 Key:       NODE_ENV         → env var name: NODE_ENV
 Key:       LOG_LEVEL        → env var name: LOG_LEVEL
@@ -146,7 +146,7 @@ stringData:    # Portainer accepts plain text, auto-encodes
 
 In Portainer form, under **Environment → From Secret**:
 
-```
+```text
 Secret: db-credentials
 Key:    DB_PASSWORD → env var name: DB_PASSWORD
 ```
@@ -246,6 +246,7 @@ When using `envFrom` and `env` together:
 
 ```bash
 # View all env vars in a running pod
+
 kubectl exec -it <pod-name> -n production -- env | sort
 
 # Check a specific variable
@@ -256,4 +257,4 @@ In Portainer: navigate to the pod and use the **Console** feature to run `env`.
 
 ## Conclusion
 
-Portainer makes it easy to configure all three Kubernetes environment variable patterns — direct values, ConfigMap references, and Secret references — through both the form interface and YAML editor. For best practices, store configuration in ConfigMaps, sensitive data in Secrets, and use direct values only for truly static, non-sensitive settings. This separation makes it easy to update configuration without redeploying applications.
+Portainer makes it easy to configure all three Kubernetes environment variable patterns - direct values, ConfigMap references, and Secret references - through both the form interface and YAML editor. For best practices, store configuration in ConfigMaps, sensitive data in Secrets, and use direct values only for truly static, non-sensitive settings. This separation makes it easy to update configuration without redeploying applications.

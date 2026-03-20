@@ -36,6 +36,7 @@ PipeWire must be installed and running. Check:
 systemctl --user status pipewire
 pactl info | grep "Server Name"
 # Should show: PulseAudio (on PipeWire x.x.x)
+
 ```
 
 ### Install JACK Compatibility Libraries

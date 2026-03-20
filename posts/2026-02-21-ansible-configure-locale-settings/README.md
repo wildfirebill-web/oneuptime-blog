@@ -32,6 +32,7 @@ This playbook installs, generates, and sets the system locale:
 
 ```yaml
 # configure-locales.yml - Set up system locale
+
 ---
 - name: Configure System Locale
   hosts: all

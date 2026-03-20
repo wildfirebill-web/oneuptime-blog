@@ -26,6 +26,7 @@ This guide covers practical uses of `calicoctl version` beyond basic version che
 
 ```bash
 # Check calicoctl client version (works without cluster access)
+
 calicoctl version
 
 # Example output:

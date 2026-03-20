@@ -35,6 +35,7 @@ The stable channel contains releases that have passed all testing stages. This i
 
 ```bash
 # Install from stable (this is the default)
+
 sudo snap install firefox
 
 # Explicitly specify stable

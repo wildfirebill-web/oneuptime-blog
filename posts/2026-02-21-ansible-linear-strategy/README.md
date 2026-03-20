@@ -16,6 +16,7 @@ Consider a playbook with 3 tasks running against 4 hosts:
 
 ```yaml
 # site.yml - Simple playbook demonstrating linear execution
+
 ---
 - name: Configure web servers
   hosts: web-01, web-02, web-03, web-04

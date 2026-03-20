@@ -53,6 +53,7 @@ import time
 r = redis.Redis()
 
 # Without pipeline - slow
+
 start = time.time()
 for i in range(1000):
     r.set(f'key:{i}', f'value:{i}')

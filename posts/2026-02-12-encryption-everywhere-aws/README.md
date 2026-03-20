@@ -37,6 +37,7 @@ This Terraform configuration creates a KMS key structure suitable for a producti
 
 ```hcl
 # Primary encryption key for application data
+
 resource "aws_kms_key" "app_data" {
   description             = "Encryption key for application data"
   deletion_window_in_days = 30

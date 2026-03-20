@@ -28,6 +28,7 @@ Check which version your system uses:
 
 ```bash
 # Check if cgroups v2 is active
+
 # If this directory has files like cgroup.controllers, you are on v2
 ls /sys/fs/cgroup/cgroup.controllers 2>/dev/null && echo "cgroups v2" || echo "cgroups v1"
 

@@ -1,4 +1,4 @@
-# How to Use the chunklist Function in OpenTofu
+# How to Use the chunklist Function in OpenTofu - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -74,7 +74,7 @@ variable "resource_arns" {
 }
 
 locals {
-  # IAM policies have limits — chunk ARNs into groups
+  # IAM policies have limits - chunk ARNs into groups
   arn_chunks = chunklist(var.resource_arns, 25)
 }
 

@@ -184,6 +184,7 @@ class BaselineCollector:
 
 
 # Usage example
+
 if __name__ == "__main__":
     collector = BaselineCollector("http://prometheus:9090")
 

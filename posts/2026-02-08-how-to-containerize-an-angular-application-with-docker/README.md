@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Docker, Angular, Containerization, Frontend, DevOps, NGINX
+Tags: Docker, Angular, Containerization, Frontend, DevOps, Nginx
 
 Description: A step-by-step guide to containerizing Angular applications with Docker using multi-stage builds and Nginx for production
 
@@ -51,6 +51,7 @@ The first stage installs dependencies and builds the Angular project:
 
 ```dockerfile
 # Stage 1: Build the Angular application
+
 FROM node:20-alpine AS build
 
 # Set the working directory inside the container

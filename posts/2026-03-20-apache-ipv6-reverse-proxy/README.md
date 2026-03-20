@@ -14,6 +14,7 @@ Apache httpd supports IPv6 through its `Listen` directive and `mod_proxy` module
 
 ```bash
 # Enable proxy modules
+
 a2enmod proxy proxy_http proxy_balancer lbmethod_byrequests ssl headers remoteip
 systemctl reload apache2
 ```
@@ -29,7 +30,7 @@ systemctl reload apache2
     Redirect permanent / https://app.example.com/
 </VirtualHost>
 
-# IPv6 VirtualHost — must use brackets
+# IPv6 VirtualHost - must use brackets
 <VirtualHost [::]:80>
     ServerName app.example.com
     Redirect permanent / https://app.example.com/
@@ -52,7 +53,7 @@ systemctl reload apache2
     RequestHeader set X-Real-IP       "%{REMOTE_ADDR}e"
 </VirtualHost>
 
-# IPv6 HTTPS — separate VirtualHost directive
+# IPv6 HTTPS - separate VirtualHost directive
 <VirtualHost [::]:443>
     ServerName app.example.com
     SSLEngine On
@@ -89,7 +90,7 @@ Listen 443
 <VirtualHost [::]:80>
     ServerName api.example.com
 
-    # IPv6 backend — must use brackets in ProxyPass URL
+    # IPv6 backend - must use brackets in ProxyPass URL
     ProxyPass        / http://[2001:db8::10]:8080/
     ProxyPassReverse / http://[2001:db8::10]:8080/
 

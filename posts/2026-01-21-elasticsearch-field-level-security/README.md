@@ -23,6 +23,7 @@ Ensure security is enabled:
 
 ```yaml
 # elasticsearch.yml
+
 xpack.security.enabled: true
 ```
 

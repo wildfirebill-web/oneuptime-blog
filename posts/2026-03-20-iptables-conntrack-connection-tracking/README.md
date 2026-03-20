@@ -2,15 +2,15 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: iptables, conntrack, Linux, Firewall, Stateful, Networking
+Tags: iptables, Conntrack, Linux, Firewall, Stateful, Networking
 
 Description: Use iptables connection tracking (conntrack) and the state module to create stateful firewall rules that track TCP session states and automatically handle return traffic.
 
-Connection tracking is what makes iptables a stateful firewall. Without it, you'd need separate rules for both directions of every connection. With it, you write rules for new connections only — iptables automatically allows established and related packets back.
+Connection tracking is what makes iptables a stateful firewall. Without it, you'd need separate rules for both directions of every connection. With it, you write rules for new connections only - iptables automatically allows established and related packets back.
 
 ## How Connection Tracking Works
 
-```
+```text
 Without conntrack:
   Need: allow outbound TCP port 80 AND allow inbound responses on ephemeral ports
   (impossible to write reliable rules for random return ports)
@@ -20,16 +20,17 @@ With conntrack:
   Auto-allow: any ESTABLISHED packet back from 8.8.8.8 to 10.0.0.1 on that flow
 
 States:
-  NEW         — First packet of a new connection
-  ESTABLISHED — Part of an existing connection
-  RELATED     — Related to an existing connection (FTP data, ICMP errors)
-  INVALID     — Doesn't match any known state (should be dropped)
+  NEW         - First packet of a new connection
+  ESTABLISHED - Part of an existing connection
+  RELATED     - Related to an existing connection (FTP data, ICMP errors)
+  INVALID     - Doesn't match any known state (should be dropped)
 ```
 
 ## Basic Stateful Firewall
 
 ```bash
 # Allow established and related connections (covers return traffic)
+
 sudo iptables -A INPUT -m state --state ESTABLISHED,RELATED -j ACCEPT
 sudo iptables -A OUTPUT -m state --state ESTABLISHED,RELATED -j ACCEPT
 
@@ -127,4 +128,4 @@ cat /proc/sys/net/netfilter/nf_conntrack_max
 sudo sysctl -w net.netfilter.nf_conntrack_max=262144
 ```
 
-Connection tracking is the foundation of stateful firewalling — it eliminates the need to write complex rules for return traffic and enables accurate matching based on TCP session state.
+Connection tracking is the foundation of stateful firewalling - it eliminates the need to write complex rules for return traffic and enables accurate matching based on TCP session state.

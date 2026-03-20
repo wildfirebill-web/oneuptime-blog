@@ -44,6 +44,7 @@ resource "azurerm_cognitive_account" "openai" {
 
 ```hcl
 # GPT-4o deployment for chat completions
+
 resource "azurerm_cognitive_deployment" "gpt4o" {
   name                 = "gpt-4o"
   cognitive_account_id = azurerm_cognitive_account.openai.id
@@ -155,4 +156,4 @@ tofu apply tfplan
 
 ## Summary
 
-Azure OpenAI Service provides enterprise-grade access to GPT and embedding models with private networking and Azure RBAC. OpenTofu manages the Cognitive Services account, model deployments at specified capacities, private endpoints, and access roles — creating a secure, reproducible AI infrastructure.
+Azure OpenAI Service provides enterprise-grade access to GPT and embedding models with private networking and Azure RBAC. OpenTofu manages the Cognitive Services account, model deployments at specified capacities, private endpoints, and access roles - creating a secure, reproducible AI infrastructure.

@@ -20,6 +20,7 @@ Here is how this looks when recording an exception manually in Python:
 
 ```python
 # Recording an exception on the current span
+
 from opentelemetry import trace
 
 tracer = trace.get_tracer("order-service")

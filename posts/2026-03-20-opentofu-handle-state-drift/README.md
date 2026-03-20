@@ -1,4 +1,4 @@
-# How to Handle State Drift in OpenTofu
+# How to Handle State Drift in OpenTofu - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,15 +8,16 @@ Description: Learn how to detect and handle state drift in OpenTofu when real in
 
 ## Introduction
 
-State drift occurs when real infrastructure is changed outside of OpenTofu — through the cloud console, CLI, another tool, or manual API calls. OpenTofu's state no longer reflects reality, which causes incorrect plans and unexpected changes.
+State drift occurs when real infrastructure is changed outside of OpenTofu - through the cloud console, CLI, another tool, or manual API calls. OpenTofu's state no longer reflects reality, which causes incorrect plans and unexpected changes.
 
 ## Detecting Drift
 
 ```bash
 # Refresh state to detect drift
+
 tofu refresh
 
-# Or run a plan — OpenTofu refreshes before planning by default
+# Or run a plan - OpenTofu refreshes before planning by default
 tofu plan
 
 # Example drift detection in plan output:
@@ -50,7 +51,7 @@ Use when: the manual change was unintentional, violates policy, or is not the ap
 Update the configuration to match the manually changed infrastructure:
 
 ```hcl
-# Someone added an ingress rule — add it to configuration
+# Someone added an ingress rule - add it to configuration
 resource "aws_security_group" "app" {
   name   = "app-sg"
   vpc_id = var.vpc_id
@@ -117,13 +118,13 @@ Exit codes from `tofu plan`:
 
 ## Preventing Drift
 
-1. **Require OpenTofu for all changes** — disable direct console access
+1. **Require OpenTofu for all changes** - disable direct console access
 2. **Use SCPs / IAM policies** to prevent manual changes to managed resources
-3. **Regular drift checks** — run `tofu plan` in CI daily
-4. **Enforce through code review** — all infrastructure changes via PR
+3. **Regular drift checks** - run `tofu plan` in CI daily
+4. **Enforce through code review** - all infrastructure changes via PR
 
 ```hcl
-# AWS Service Control Policy — prevent direct EC2 changes
+# AWS Service Control Policy - prevent direct EC2 changes
 resource "aws_organizations_policy" "prevent_direct_changes" {
   name    = "prevent-direct-ec2-changes"
   content = jsonencode({
@@ -144,4 +145,4 @@ resource "aws_organizations_policy" "prevent_direct_changes" {
 
 ## Conclusion
 
-State drift is inevitable in shared environments — handle it with a clear policy. Use `tofu plan` to detect drift, decide whether to revert it (apply) or accept it (update configuration), and prevent future drift through IAM restrictions and automated drift detection in CI. Regular `tofu plan` runs catch drift early before it compounds.
+State drift is inevitable in shared environments - handle it with a clear policy. Use `tofu plan` to detect drift, decide whether to revert it (apply) or accept it (update configuration), and prevent future drift through IAM restrictions and automated drift detection in CI. Regular `tofu plan` runs catch drift early before it compounds.

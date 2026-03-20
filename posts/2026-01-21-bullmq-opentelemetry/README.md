@@ -577,6 +577,7 @@ Configure Jaeger as the tracing backend:
 
 ```yaml
 # docker-compose.yml
+
 version: '3.8'
 
 services:

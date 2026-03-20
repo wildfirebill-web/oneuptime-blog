@@ -22,6 +22,7 @@ Geo-identification happens at Google's edge before the request reaches your back
 
 ```bash
 # Create a security policy for geo-based rules
+
 gcloud compute security-policies create geo-policy \
     --description="Geographic access restriction policy" \
     --project=my-project

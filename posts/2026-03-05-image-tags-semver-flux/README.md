@@ -33,6 +33,7 @@ flux bootstrap github \
 
 ```yaml
 # image-automation/image-repository.yaml
+
 apiVersion: image.toolkit.fluxcd.io/v1
 kind: ImageRepository
 metadata:

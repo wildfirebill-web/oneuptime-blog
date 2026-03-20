@@ -20,6 +20,7 @@ Here is a simple Terraform configuration that creates an AWS S3 bucket:
 
 ```hcl
 # main.tf - a basic Terraform configuration
+
 provider "aws" {
   region = "us-east-1"
 }

@@ -39,6 +39,7 @@ The easiest way to get started is running NATS with Docker. This command starts 
 
 ```bash
 # Run NATS server with JetStream enabled
+
 docker run -d --name nats \
   -p 4222:4222 \
   -p 8222:8222 \

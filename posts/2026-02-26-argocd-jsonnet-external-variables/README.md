@@ -22,6 +22,7 @@ ArgoCD supports passing external variables through the Application spec under th
 
 ```yaml
 # argocd-app-staging.yaml - Application with Jsonnet external variables
+
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:

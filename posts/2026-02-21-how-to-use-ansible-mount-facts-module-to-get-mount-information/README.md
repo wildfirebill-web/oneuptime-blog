@@ -16,6 +16,7 @@ Mount information is part of the standard fact gathering process. When `gather_f
 
 ```yaml
 # basic-mount-facts.yml
+
 # Shows all mount points from standard fact gathering
 ---
 - name: Show mount facts

@@ -63,6 +63,7 @@ Memberlist uses a gossip protocol for peer-to-peer communication. It requires no
 
 ```yaml
 # memberlist-ring-config.yaml
+
 # Memberlist configuration for Mimir ring coordination
 # This is the recommended approach for most deployments
 

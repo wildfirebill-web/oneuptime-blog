@@ -1,14 +1,14 @@
-# How to Convert Certificates to PEM Format for Portainer
+# How to Convert Certificates to PEM Format for Portainer - Certs
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: portainer, ssl, tls, pem, certificates, openssl, conversion
+Tags: Portainer, SSL, TLS, PEM, Certificates, OpenSSL, Conversion
 
 Description: A guide to converting SSL/TLS certificates from various formats (DER, PFX/PKCS#12, PKCS#7, Java Keystore) to PEM format for use with Portainer.
 
 ## Overview
 
-Portainer requires SSL certificates in PEM format (Base64-encoded DER with `-----BEGIN CERTIFICATE-----` headers). Certificates from enterprise CAs, Windows environments, or Java applications often come in other formats — DER, PKCS#12 (PFX), PKCS#7, or JKS. This guide covers converting all common certificate formats to PEM for use with Portainer.
+Portainer requires SSL certificates in PEM format (Base64-encoded DER with `-----BEGIN CERTIFICATE-----` headers). Certificates from enterprise CAs, Windows environments, or Java applications often come in other formats - DER, PKCS#12 (PFX), PKCS#7, or JKS. This guide covers converting all common certificate formats to PEM for use with Portainer.
 
 ## Prerequisites
 
@@ -30,6 +30,7 @@ Portainer requires SSL certificates in PEM format (Base64-encoded DER with `----
 
 ```bash
 # Check if file is PEM (shows text headers)
+
 head -1 certificate.crt
 # PEM: -----BEGIN CERTIFICATE-----
 # DER/Binary: shows non-text characters

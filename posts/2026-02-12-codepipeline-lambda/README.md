@@ -33,6 +33,7 @@ my-lambda-app/
 
 ```yaml
 # template.yml - SAM template with deployment preferences
+
 AWSTemplateFormatVersion: '2010-09-09'
 Transform: AWS::Serverless-2016-10-31
 

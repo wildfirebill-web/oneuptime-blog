@@ -20,6 +20,7 @@ Description: Configure systemd-logind on Ubuntu to manage user sessions, control
 
 ```bash
 # Check logind status
+
 systemctl status systemd-logind
 
 # View active sessions

@@ -16,6 +16,7 @@ This pattern is the foundation of decoupled, event-driven architectures. The pro
 
 ```hcl
 # SQS queue that will trigger Lambda
+
 resource "aws_sqs_queue" "orders" {
   name = "order-processing-queue"
 

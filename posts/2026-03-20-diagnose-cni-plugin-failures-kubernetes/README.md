@@ -12,6 +12,7 @@ CNI (Container Network Interface) failures during pod creation prevent pods from
 
 ```bash
 # Find pods stuck in ContainerCreating
+
 kubectl get pods --all-namespaces | grep ContainerCreating
 
 # Get the detailed error

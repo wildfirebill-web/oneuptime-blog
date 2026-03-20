@@ -55,6 +55,7 @@ First, create a Certificate Authority and server certificates.
 
 ```bash
 # Create directory structure for certificates
+
 mkdir -p nats-certs/{ca,server,client}
 cd nats-certs
 

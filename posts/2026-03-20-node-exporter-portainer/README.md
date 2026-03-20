@@ -8,7 +8,7 @@ Description: Learn how to deploy Prometheus Node Exporter as a Portainer stack t
 
 ## What Is Node Exporter?
 
-Node Exporter is a Prometheus exporter for hardware and OS metrics on Linux hosts. While cAdvisor monitors containers, Node Exporter monitors the host itself — CPU, memory, disk, network, filesystem, and more.
+Node Exporter is a Prometheus exporter for hardware and OS metrics on Linux hosts. While cAdvisor monitors containers, Node Exporter monitors the host itself - CPU, memory, disk, network, filesystem, and more.
 
 ## Metrics Node Exporter Collects
 
@@ -61,6 +61,7 @@ Note: `pid: host` allows Node Exporter to accurately measure process metrics.
 
 ```bash
 # Check metrics endpoint
+
 curl http://localhost:9100/metrics | head -20
 
 # Check specific metrics

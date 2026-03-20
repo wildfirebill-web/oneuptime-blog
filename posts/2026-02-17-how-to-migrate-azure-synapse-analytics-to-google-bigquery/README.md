@@ -99,6 +99,7 @@ This is the most common approach for large datasets. Export from Synapse to Parq
 
 ```bash
 # In Synapse, use CETAS (CREATE EXTERNAL TABLE AS SELECT) to export to Parquet
+
 # Run this in Synapse SQL:
 # CREATE EXTERNAL TABLE export_sales
 # WITH (

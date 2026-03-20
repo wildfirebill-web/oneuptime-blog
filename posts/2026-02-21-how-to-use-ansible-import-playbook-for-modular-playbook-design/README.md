@@ -14,6 +14,7 @@ The `ansible.builtin.import_playbook` directive lets you build a master playbook
 
 ```yaml
 # site.yml - master playbook
+
 - import_playbook: playbooks/common.yml
 - import_playbook: playbooks/security.yml
 - import_playbook: playbooks/databases.yml

@@ -41,6 +41,7 @@ TestDisk and PhotoRec come bundled together in the `testdisk` package. Here are 
 
 ```bash
 # Update the package list to ensure you get the latest version
+
 sudo apt update
 
 # Install TestDisk (includes PhotoRec)

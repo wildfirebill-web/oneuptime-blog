@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, Ingresses, Networking, NGINX, Traefik, HAProxy, DevOps
+Tags: Kubernetes, Ingresses, Networking, Nginx, Traefik, HAProxy, DevOps
 
 Description: A comprehensive comparison of NGINX, Traefik, and HAProxy Ingress controllers with installation guides, configuration examples, and decision criteria for choosing the right one.
 
@@ -51,6 +51,7 @@ This Helm installation deploys the NGINX Ingress Controller with 2 replicas for 
 
 ```bash
 # Add the official ingress-nginx Helm repository
+
 helm repo add ingress-nginx https://kubernetes.github.io/ingress-nginx
 helm repo update
 

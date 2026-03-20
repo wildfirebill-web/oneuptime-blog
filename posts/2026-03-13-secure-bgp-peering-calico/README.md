@@ -83,6 +83,7 @@ Prevent route leaks by filtering out prefixes that are too large or too small:
 
 ```bash
 # Check current BGP configuration
+
 calicoctl get bgpconfiguration default -o yaml
 ```
 

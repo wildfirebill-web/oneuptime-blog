@@ -68,6 +68,7 @@ Look for a `calico-node-windows` DaemonSet.
 
 ```powershell
 # On each Windows node
+
 Get-WindowsFeature Containers
 Get-Service containerd
 Get-Service kubelet

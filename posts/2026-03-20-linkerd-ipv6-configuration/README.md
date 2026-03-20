@@ -14,6 +14,7 @@ Linkerd requires the underlying Kubernetes cluster to support dual-stack. Verify
 
 ```bash
 # Check the cluster has dual-stack service CIDRs
+
 kubectl get configmap kubeadm-config -n kube-system -o yaml | grep -A 5 networking
 
 # Check a pod has both IPv4 and IPv6 addresses
@@ -217,4 +218,4 @@ kubectl logs -n linkerd deploy/linkerd-destination | grep -i "ipv6\|error" | tai
 kubectl get endpoints my-service -o yaml | grep -A 3 "addresses"
 ```
 
-Linkerd handles IPv6 transparently on dual-stack clusters — no Linkerd-specific IPv6 configuration is needed beyond having a working dual-stack Kubernetes cluster. The Linkerd proxy intercepts both IPv4 and IPv6 traffic through iptables/ip6tables rules set up at pod startup.
+Linkerd handles IPv6 transparently on dual-stack clusters - no Linkerd-specific IPv6 configuration is needed beyond having a working dual-stack Kubernetes cluster. The Linkerd proxy intercepts both IPv4 and IPv6 traffic through iptables/ip6tables rules set up at pod startup.

@@ -86,6 +86,7 @@ The following command verifies your Istio installation is ready for sidecar inje
 
 ```bash
 # Verify Istio installation and check that the sidecar injector webhook is running
+
 # This command lists all Istio system pods and their status
 kubectl get pods -n istio-system
 
@@ -841,7 +842,7 @@ kubectl get deployment my-app -n my-application -o yaml | \
 
 ## Best Practices
 
-### Resource Configuration
+Resource Configuration
 
 Always configure appropriate resources for sidecars based on your workload:
 

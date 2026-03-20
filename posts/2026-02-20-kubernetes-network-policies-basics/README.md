@@ -39,6 +39,7 @@ Check if your cluster supports Network Policies:
 
 ```bash
 # Check which CNI plugin is installed
+
 kubectl get pods -n kube-system | grep -E "calico|cilium|weave"
 
 # If using Calico, verify it is running

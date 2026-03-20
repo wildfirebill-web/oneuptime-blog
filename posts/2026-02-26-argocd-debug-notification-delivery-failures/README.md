@@ -27,6 +27,7 @@ The notifications controller is the pod that evaluates triggers and sends messag
 
 ```bash
 # Check if the controller pod exists and is running
+
 kubectl get pods -n argocd -l app.kubernetes.io/component=notifications-controller
 
 # Expected output:

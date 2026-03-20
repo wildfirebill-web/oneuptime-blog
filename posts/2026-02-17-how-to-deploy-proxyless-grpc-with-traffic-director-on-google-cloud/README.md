@@ -33,6 +33,7 @@ You need a GKE cluster with workload identity enabled, since the gRPC bootstrap 
 
 ```bash
 # Create a GKE cluster with workload identity
+
 gcloud container clusters create proxyless-grpc-cluster \
     --zone=us-central1-a \
     --num-nodes=3 \

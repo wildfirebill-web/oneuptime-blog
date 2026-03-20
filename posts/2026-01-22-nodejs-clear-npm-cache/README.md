@@ -14,6 +14,7 @@ npm cache stores downloaded packages to speed up future installations. Sometimes
 
 ```bash
 # Clear npm cache (force required since npm 5)
+
 npm cache clean --force
 
 # Verify cache integrity

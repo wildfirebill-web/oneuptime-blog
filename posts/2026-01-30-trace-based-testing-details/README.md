@@ -72,6 +72,7 @@ Tracetest is purpose-built for trace-based testing. It captures traces and lets 
 
 ```yaml
 # tracetest.yaml - Test definition
+
 type: Test
 spec:
   name: Checkout Flow Validation

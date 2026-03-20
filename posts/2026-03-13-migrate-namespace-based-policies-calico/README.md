@@ -24,6 +24,7 @@ Migrating to Calico namespace-based policies under `projectcalico.org/v3` requir
 
 ```bash
 # Find policies using pod selectors that could use namespace selectors instead
+
 kubectl get networkpolicies --all-namespaces -o json | jq '.items[] | {
   name: .metadata.name,
   namespace: .metadata.namespace,

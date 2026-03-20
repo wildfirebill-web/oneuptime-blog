@@ -36,6 +36,7 @@ Each gateway node needs its own WireGuard key pair.
 
 ```bash
 # Generate keys for Site A gateway
+
 wg genkey | tee site-a-private.key | wg pubkey > site-a-public.key
 
 # Generate keys for Site B gateway

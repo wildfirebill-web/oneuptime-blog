@@ -12,9 +12,9 @@ pfSense handles NAT under **Firewall → NAT** with three types:
 
 | NAT Type | Use Case |
 |----------|---------|
-| Port Forward | DNAT — inbound port forwarding |
+| Port Forward | DNAT - inbound port forwarding |
 | 1:1 NAT | Static bidirectional IP mapping |
-| Outbound NAT | SNAT — internal hosts reach internet |
+| Outbound NAT | SNAT - internal hosts reach internet |
 
 ## Outbound NAT (Masquerade / Source NAT)
 
@@ -69,6 +69,7 @@ For more control, switch to **Manual Outbound NAT**:
 
 ```bash
 # Edit config via SSH on pfSense
+
 # File: /cf/conf/config.xml
 # Or use pfSense API packages
 ```
@@ -92,15 +93,15 @@ When using 1:1 NAT, you need to exclude the host from outbound NAT:
 
 ## Verifying NAT on pfSense
 
-- **Diagnostics → States** — view active connection state table
-- **Status → Firewall Logs** — see blocked or passed connections
-- **Diagnostics → Packet Capture** — capture traffic on any interface
+- **Diagnostics → States** - view active connection state table
+- **Status → Firewall Logs** - see blocked or passed connections
+- **Diagnostics → Packet Capture** - capture traffic on any interface
 
 ### pfSense States Table
 
 Under **Diagnostics → States**, filter by IP to see NAT translations:
 
-```
+```text
 Proto  SrcIP:SrcPort          DestIP:DestPort         State
 TCP    192.168.1.10:54321  →  203.0.113.1:80   →  8.8.8.8:80  ESTABLISHED
 ```
@@ -124,5 +125,4 @@ TCP    192.168.1.10:54321  →  203.0.113.1:80   →  8.8.8.8:80  ESTABLISHED
 **Related Reading:**
 
 - [How to Configure Hairpin NAT for Internal Access to Public Services](https://oneuptime.com/blog/post/2026-03-20-hairpin-nat-internal-access/view)
-- [How to Set Up DHCP on pfSense](https://oneuptime.com/blog/post/2026-03-20-dhcp-pfsense-setup/view)
 - [How to Configure Source NAT (SNAT) on Linux](https://oneuptime.com/blog/post/2026-03-20-configure-snat-linux/view)

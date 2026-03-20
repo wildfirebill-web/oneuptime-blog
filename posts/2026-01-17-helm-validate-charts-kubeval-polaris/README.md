@@ -46,6 +46,7 @@ flowchart TB
 
 ```bash
 # Lint a chart
+
 helm lint charts/myapp
 
 # Lint with strict mode

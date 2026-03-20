@@ -14,6 +14,7 @@ RRDtool (Round-Robin Database tool) provides time-series storage and graphing. B
 
 ```bash
 # Ubuntu/Debian
+
 sudo apt install rrdtool librrds-perl -y
 
 # Verify installation

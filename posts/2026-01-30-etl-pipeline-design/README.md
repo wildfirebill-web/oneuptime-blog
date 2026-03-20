@@ -85,6 +85,7 @@ Full extraction pulls all data from the source system each time. This is simple 
 
 ```python
 # full_extraction.py
+
 # Full extraction pattern for database sources
 # Use this when data volumes are small or you need complete refreshes
 

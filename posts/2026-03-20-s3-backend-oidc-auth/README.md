@@ -1,4 +1,4 @@
-# How to Configure S3 Backend with OIDC Authentication in OpenTofu
+# How to Configure S3 Backend with OIDC Authentication in OpenTofu - Auth
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -19,9 +19,10 @@ OIDC authentication eliminates the need for long-lived AWS credentials in CI/CD 
 ## Step 1: Set Up the OIDC Identity Provider in AWS
 
 ```hcl
-# oidc.tf — Run once to configure AWS to trust your CI/CD OIDC provider
+# oidc.tf - Run once to configure AWS to trust your CI/CD OIDC provider
 
 # GitHub Actions OIDC Provider
+
 resource "aws_iam_openid_connect_provider" "github" {
   url = "https://token.actions.githubusercontent.com"
 
@@ -99,7 +100,7 @@ terraform {
     region         = "us-east-1"
     encrypt        = true
     dynamodb_table = "terraform-state-locks"
-    # No credentials here — provided by the environment
+    # No credentials here - provided by the environment
   }
 }
 ```

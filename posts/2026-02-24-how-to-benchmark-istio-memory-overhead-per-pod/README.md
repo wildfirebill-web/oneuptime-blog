@@ -79,6 +79,7 @@ For more precise measurements, use Prometheus metrics:
 
 ```promql
 # Memory usage of istio-proxy containers
+
 container_memory_working_set_bytes{
   container="istio-proxy",
   namespace="bench-istio"

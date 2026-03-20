@@ -16,6 +16,7 @@ Docker contexts store connection information for remote Docker hosts.
 
 ```bash
 # Create context for remote host
+
 docker context create remote-server \
   --docker "host=ssh://user@192.168.1.100"
 

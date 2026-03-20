@@ -24,6 +24,7 @@ Verify your ArgoCD version supports OCI:
 ```bash
 argocd version --client
 # Should be v2.4.0 or later
+
 ```
 
 ## Publishing a Chart to OCI

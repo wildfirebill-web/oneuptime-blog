@@ -50,6 +50,7 @@ If you are using the Amplify CLI:
 
 ```bash
 # Add geo resources to your Amplify project
+
 amplify add geo
 
 # Follow the prompts:

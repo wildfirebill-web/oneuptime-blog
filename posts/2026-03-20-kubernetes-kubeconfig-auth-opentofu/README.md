@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Kubernetes, Infrastructure as Code, IaC, Kubeconfig, Authentication
+Tags: OpenTofu, Kubernetes, Infrastructure as Code, IaC, kubeconfig, Authentication
 
 Description: Learn how to authenticate OpenTofu's Kubernetes provider using kubeconfig files, including context selection, multi-cluster management, and OIDC authentication.
 
@@ -25,6 +25,7 @@ provider "kubernetes" {
 
 ```hcl
 # List contexts with: kubectl config get-contexts
+
 provider "kubernetes" {
   config_path    = "~/.kube/config"
   config_context = "prod-cluster-admin@prod-cluster"

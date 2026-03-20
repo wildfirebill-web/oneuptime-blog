@@ -152,6 +152,7 @@ terraform {
 }
 
 # Reference the provider by its local name
+
 provider "aws_useast" {
   region = "us-east-1"
 }

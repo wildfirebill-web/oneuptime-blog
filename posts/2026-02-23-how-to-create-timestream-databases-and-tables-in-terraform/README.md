@@ -20,6 +20,7 @@ Timestream is serverless, meaning there are no instances to manage. You simply c
 
 ```hcl
 # Configure Terraform
+
 terraform {
   required_providers {
     aws = {

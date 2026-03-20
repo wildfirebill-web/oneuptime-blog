@@ -22,6 +22,7 @@ Check what DNS your container is currently using:
 
 ```bash
 # Inspect the DNS configuration inside a running container
+
 docker exec my-container cat /etc/resolv.conf
 ```
 

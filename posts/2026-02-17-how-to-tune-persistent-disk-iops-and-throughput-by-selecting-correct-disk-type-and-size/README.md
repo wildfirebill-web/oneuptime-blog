@@ -31,6 +31,7 @@ Before making changes, understand your current I/O patterns:
 
 ```bash
 # Install fio for benchmarking
+
 sudo apt-get update && sudo apt-get install -y fio
 
 # Test random read IOPS (simulates database reads)

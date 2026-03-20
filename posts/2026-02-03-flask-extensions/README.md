@@ -42,6 +42,7 @@ Here's a minimal extension showing the basic structure:
 
 ```python
 # flask_example/__init__.py
+
 from flask import current_app
 
 class ExampleExtension:

@@ -20,6 +20,7 @@ Download the official Elasticsearch image.
 
 ```bash
 # Pull the Elasticsearch 8.x image
+
 podman pull docker.io/library/elasticsearch:8.12.0
 
 # Verify the image

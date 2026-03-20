@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: IPv4, Subnetting, Point-to-Point, WAN, Networking, /30
 
-Description: A /30 subnet provides exactly 2 usable host addresses, making it the traditional choice for point-to-point links between two routers where only two addresses are needed and broadcast overhead should be minimized.
+Description: A /30 subnet provides exactly 2 usable host addresses, making it the traditional choice for point-to-point links between two routers where only two addresses are needed and broadcast overhead...
 
 ## /30 Subnet Structure
 
@@ -14,7 +14,7 @@ A /30 subnet has:
 - **2 usable host addresses**
 - **1 broadcast address** (all ones)
 
-```
+```text
 Network:    x.x.x.0   (11111100 final mask → block size 4)
 Host A:     x.x.x.1
 Host B:     x.x.x.2
@@ -37,7 +37,7 @@ for s in subnets_30[:8]:
 ```
 
 Output:
-```
+```text
 Total /30 subnets in a /24: 64
 First 8 /30 subnets:
   192.168.1.0/30       Host-A=192.168.1.1  Host-B=192.168.1.2
@@ -50,6 +50,7 @@ First 8 /30 subnets:
 
 ```bash
 # Router A side
+
 sudo ip addr add 10.10.10.1/30 dev eth1
 
 # Router B side
@@ -90,7 +91,7 @@ for i, (r1, r2) in enumerate(connections):
 
 ## Key Takeaways
 
-- /30 provides exactly 2 usable host addresses — ideal for router-to-router links.
+- /30 provides exactly 2 usable host addresses - ideal for router-to-router links.
 - One /24 yields 64 /30 subnets, making it an efficient P2P link pool.
 - /31 (RFC 3021) is even more efficient with no broadcast, but requires both sides to support it.
 - Allocate a dedicated block (e.g., 10.254.0.0/24) for all P2P links to keep them organized.

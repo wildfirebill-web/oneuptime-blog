@@ -33,6 +33,7 @@ In production environments, test NetworkPolicy changes in a staging namespace fi
 
 ```bash
 # Quick diagnosis: check for NetworkPolicies with default deny
+
 kubectl get networkpolicy -n <namespace> -o yaml | grep -A 5 "podSelector: {}"
 
 # Check if IPIP is configured correctly

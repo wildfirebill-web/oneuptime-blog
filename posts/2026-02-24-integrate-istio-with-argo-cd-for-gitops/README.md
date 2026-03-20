@@ -212,6 +212,7 @@ Different environments often need different Istio settings. Use Kustomize overla
 
 ```yaml
 # overlays/staging/kustomization.yaml
+
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:

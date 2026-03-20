@@ -35,6 +35,7 @@ You need both the Python and Java SDKs available, plus the expansion service JAR
 
 ```bash
 # Install the Apache Beam Python SDK with GCP extras
+
 pip install apache-beam[gcp]
 
 # Download the expansion service JAR (match versions with your Python SDK)

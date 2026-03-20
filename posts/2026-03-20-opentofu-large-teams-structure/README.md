@@ -20,6 +20,7 @@ Learn how to design scalable OpenTofu project structures for large engineering t
 
 ```bash
 # Verify OpenTofu installation
+
 tofu version
 
 # Set up required environment variables

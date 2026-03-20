@@ -118,6 +118,7 @@ def analyze_header(header: Dict[str, Any]) -> Dict[str, str]:
 
 
 # Example usage
+
 token = "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6ImtleS0xIn0..."
 result = inspect_jwt_header(token)
 print(json.dumps(result, indent=2))

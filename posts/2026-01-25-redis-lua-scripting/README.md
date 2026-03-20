@@ -18,6 +18,7 @@ import redis
 r = redis.Redis(host='localhost', port=6379, db=0)
 
 # Simple Lua script
+
 script = """
 return 'Hello from Lua!'
 """

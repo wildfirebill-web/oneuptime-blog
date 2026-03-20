@@ -20,6 +20,7 @@ Download the official HAProxy image.
 
 ```bash
 # Pull the latest HAProxy image
+
 podman pull docker.io/library/haproxy:2.9
 
 # Verify the image

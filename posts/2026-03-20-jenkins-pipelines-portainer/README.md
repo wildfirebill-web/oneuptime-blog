@@ -2,18 +2,19 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Jenkins, CI/CD, DevOps, Automation, Pipeline
+Tags: Portainer, Docker, Jenkins, CI/CD, DevOps, Automation, Pipelines
 
 Description: Configure Jenkins declarative pipelines to build Docker images and deploy stacks to Portainer using the Portainer API and webhooks.
 
 ## Introduction
 
-Jenkins is the most widely deployed CI/CD automation server. This guide covers deploying Jenkins alongside Portainer, configuring pipelines that build Docker images, run tests, and deploy to Portainer environments — all from a single Jenkinsfile.
+Jenkins is the most widely deployed CI/CD automation server. This guide covers deploying Jenkins alongside Portainer, configuring pipelines that build Docker images, run tests, and deploy to Portainer environments - all from a single Jenkinsfile.
 
 ## Step 1: Deploy Jenkins with Docker Support
 
 ```yaml
 # docker-compose.yml - Jenkins for Docker builds
+
 version: "3.8"
 
 networks:

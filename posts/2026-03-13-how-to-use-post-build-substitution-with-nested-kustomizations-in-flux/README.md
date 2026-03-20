@@ -181,6 +181,7 @@ Both parent and child Kustomizations reference it:
 
 ```yaml
 # In child Kustomization
+
 spec:
   postBuild:
     substituteFrom:

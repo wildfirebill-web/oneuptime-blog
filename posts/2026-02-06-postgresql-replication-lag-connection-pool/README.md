@@ -205,6 +205,7 @@ The `pg_monitor` role gives read access to system statistics views.
 
 ```yaml
 # Replication lag too high
+
 - alert: PostgreSQLReplicationLag
   condition: postgresql.replication.data_delay > 10485760
   for: 5m

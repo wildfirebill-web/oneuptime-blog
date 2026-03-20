@@ -60,6 +60,7 @@ This example demonstrates a basic middleware that logs the time taken by each re
 
 ```python
 # timing_middleware.py
+
 from fastapi import FastAPI, Request
 import time
 import logging

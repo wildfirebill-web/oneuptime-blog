@@ -62,6 +62,7 @@ The following command creates a new token with an attached policy and a 24-hour 
 
 ```bash
 # Create a token with a specific policy
+
 vault token create -policy="my-app-policy" -ttl="24h"
 
 # Create a token with metadata for auditing

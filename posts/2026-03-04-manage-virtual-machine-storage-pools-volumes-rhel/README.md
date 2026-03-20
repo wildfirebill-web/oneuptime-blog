@@ -14,6 +14,7 @@ libvirt uses storage pools to manage the locations where virtual machine disk im
 
 ```bash
 # List all storage pools and their state
+
 sudo virsh pool-list --all
 
 # Show details of a specific pool

@@ -20,6 +20,7 @@ Install using kubectl:
 
 ```bash
 # Install the Training Operator
+
 kubectl apply -k "github.com/kubeflow/training-operator/manifests/overlays/standalone?ref=v1.7.0"
 
 # Verify installation

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rust, Option, Result, Error Handling, Functional Programming
+Tags: Rust, Options, Result, Error Handling, Functional Programming
 
 Description: Learn how to use Option and Result types effectively in Rust. Master combinators, pattern matching, and the ? operator for clean, expressive error handling.
 

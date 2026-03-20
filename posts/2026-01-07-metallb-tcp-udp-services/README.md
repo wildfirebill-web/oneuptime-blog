@@ -74,6 +74,7 @@ The following configuration exposes a PostgreSQL database through MetalLB. We de
 
 ```yaml
 # postgresql-service.yaml
+
 # This manifest creates a LoadBalancer service for PostgreSQL
 # MetalLB will assign an external IP from the configured pool
 apiVersion: v1

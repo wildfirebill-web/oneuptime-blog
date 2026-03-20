@@ -20,6 +20,7 @@ String-based SQL has several problems:
 
 ```python
 # Problems with raw SQL strings
+
 query = "SELECT * FROM users WHERE status = " + status  # SQL injection
 query = f"SELECT * FROM users WHERE age > {age} AND name = {name}"  # Missing quotes
 query = "SELECT * FROM users WERE status = 'active'"  # Typo in WHERE

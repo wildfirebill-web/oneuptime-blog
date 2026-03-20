@@ -577,6 +577,7 @@ Step Functions integrates with X-Ray for distributed tracing across services.
 
 ```yaml
 # SAM template
+
 StepFunction:
   Type: AWS::Serverless::StateMachine
   Properties:

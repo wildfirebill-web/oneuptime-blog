@@ -74,6 +74,7 @@ Store your performance budgets in a configuration file that lives alongside your
 
 ```yaml
 # performance-budgets.yaml
+
 budgets:
   - endpoint: "/api/orders"
     method: "POST"

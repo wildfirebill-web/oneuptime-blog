@@ -20,6 +20,7 @@ Start by checking what Podman Desktop is reporting:
 
 ```bash
 # Check if Podman is installed and accessible
+
 podman --version
 
 # Check the overall Podman status

@@ -37,6 +37,7 @@ graph TB
 
 ```bash
 # Create resources
+
 az group create --name saas-demo-rg --location eastus
 
 # Create the SQL Server

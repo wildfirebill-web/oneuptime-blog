@@ -175,6 +175,7 @@ Specific endpoints on the admin interface:
 
 ```bash
 # List all listeners
+
 kubectl exec -it <pod-name> -c istio-proxy -- curl localhost:15000/listeners
 
 # Show cluster stats

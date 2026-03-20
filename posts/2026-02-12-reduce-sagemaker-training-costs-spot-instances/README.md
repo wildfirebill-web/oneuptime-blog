@@ -51,6 +51,7 @@ region = session.boto_region_name
 xgb_image = image_uris.retrieve('xgboost', region, '1.7-1')
 
 # Create estimator with spot training enabled
+
 xgb_estimator = sagemaker.estimator.Estimator(
     image_uri=xgb_image,
     role=role,

@@ -33,6 +33,7 @@ This guide covers systematic troubleshooting of cilium-bugtool fish completion i
 
 ```bash
 # Check user completions
+
 ls -la ~/.config/fish/completions/cilium-bugtool.fish 2>/dev/null
 
 # Check system completions

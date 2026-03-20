@@ -40,6 +40,7 @@ Duration formats:
 **Static secrets (rarely change):**
 ```yaml
 # clusters/my-cluster/apps/myapp/externalsecret-static.yaml
+
 apiVersion: external-secrets.io/v1beta1
 kind: ExternalSecret
 metadata:

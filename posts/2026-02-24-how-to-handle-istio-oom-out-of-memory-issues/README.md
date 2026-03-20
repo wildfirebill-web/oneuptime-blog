@@ -18,6 +18,7 @@ The first step is identifying that an OOM kill happened. Kubernetes logs this in
 
 ```bash
 # Check for OOMKilled sidecars across all namespaces
+
 kubectl get pods -A -o json | jq -r '
   .items[] |
   .metadata.namespace as $ns |

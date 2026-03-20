@@ -32,6 +32,7 @@ Debug symbols are essential for meaningful profiles. Configure your release buil
 
 ```toml
 # Cargo.toml
+
 # Release profile with debug symbols for profiling
 
 [profile.release]

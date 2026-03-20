@@ -26,7 +26,7 @@ For automation or custom dashboards, use the Portainer API:
 
 ```python
 #!/usr/bin/env python3
-# list-all-containers.py — fetch containers from all Portainer environments
+# list-all-containers.py - fetch containers from all Portainer environments
 
 import requests
 import json
@@ -37,6 +37,7 @@ API_TOKEN = "your-api-token"  # From Account Settings > Access Tokens
 headers = {"X-API-Key": API_TOKEN}
 
 # Step 1: Get all environments
+
 environments = requests.get(
     f"{PORTAINER_URL}/api/endpoints",
     headers=headers
@@ -77,7 +78,7 @@ for c in sorted(all_containers, key=lambda x: x["environment"]):
 
 ## Sample Output
 
-```
+```yaml
 Total running containers: 47
 
 Environment                    Container                      Image                                    Status

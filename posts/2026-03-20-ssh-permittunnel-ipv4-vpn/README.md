@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: SSH, PermitTunnel, IPv4, VPN, tun, Layer 3 Tunneling
+Tags: SSH, PermitTunnel, IPv4, VPN, Tun, Layer 3 Tunneling
 
 Description: Configure SSH PermitTunnel to create Layer 3 IPv4 VPN-like tunnels using tun devices, routing entire subnets over an encrypted SSH connection.
 
 ## Introduction
 
-SSH `PermitTunnel` enables creation of tun/tap virtual network devices between client and server, allowing Layer 3 routing over SSH. This creates a full VPN-like connection without dedicated VPN software—useful for emergency access when VPN infrastructure is unavailable.
+SSH `PermitTunnel` enables creation of tun/tap virtual network devices between client and server, allowing Layer 3 routing over SSH. This creates a full VPN-like connection without dedicated VPN software-useful for emergency access when VPN infrastructure is unavailable.
 
 ## Server-Side Configuration
 
@@ -16,6 +16,7 @@ SSH `PermitTunnel` enables creation of tun/tap virtual network devices between c
 # /etc/ssh/sshd_config (on SSH server)
 
 # Enable tun device forwarding
+
 PermitTunnel yes     # Enables both tun (layer 3) and tap (layer 2)
 # PermitTunnel point-to-point  # Layer 3 only (IPv4 routing)
 

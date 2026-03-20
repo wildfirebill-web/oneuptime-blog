@@ -18,6 +18,7 @@ Create a VLAN subinterface from the physical NIC, then create a bridge and add t
 modprobe 8021q
 
 # Create VLAN 100 on eth0
+
 ip link add link eth0 name eth0.100 type vlan id 100
 ip link set eth0 up
 ip link set eth0.100 up
@@ -51,7 +52,7 @@ ip link set eth0 up
 bridge vlan add dev eth0 vid 10 tagged
 bridge vlan add dev eth0 vid 20 tagged
 
-# For a VM virtual interface (e.g., vnet0) — assign to VLAN 10 (untagged/access)
+# For a VM virtual interface (e.g., vnet0) - assign to VLAN 10 (untagged/access)
 bridge vlan add dev vnet0 vid 10 untagged pvid
 
 # Assign an IP to VLAN 10 on the bridge for host access

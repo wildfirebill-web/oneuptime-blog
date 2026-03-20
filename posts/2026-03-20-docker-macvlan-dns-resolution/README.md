@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Docker, macvlan, DNS, Networking, IPv4, Containers
+Tags: Docker, Macvlan, DNS, Networking, IPv4, Containers
 
 Description: Configure working DNS resolution for containers in Docker macvlan networks, which bypass Docker's built-in DNS server and require explicit DNS configuration.
 
 ## Introduction
 
-Docker's `macvlan` driver assigns containers their own MAC and IP addresses on the physical network, making them appear as separate hosts. However, macvlan containers bypass Docker's embedded DNS server, so you must configure DNS explicitly — otherwise name resolution fails silently.
+Docker's `macvlan` driver assigns containers their own MAC and IP addresses on the physical network, making them appear as separate hosts. However, macvlan containers bypass Docker's embedded DNS server, so you must configure DNS explicitly - otherwise name resolution fails silently.
 
 ## The DNS Problem with macvlan
 
@@ -16,6 +16,7 @@ Docker's built-in DNS (`127.0.0.11`) is only available on user-defined bridge ne
 
 ```bash
 # On a macvlan container, Docker's DNS is not reachable
+
 nslookup other-container
 # Server: 127.0.0.11 -- this is NOT available in macvlan
 ```

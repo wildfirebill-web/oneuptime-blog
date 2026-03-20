@@ -10,6 +10,7 @@ Description: Learn how to configure MariaDB to accept connections over IPv6 by s
 
 ```ini
 # /etc/mysql/mariadb.conf.d/50-server.cnf (Debian/Ubuntu)
+
 # /etc/my.cnf.d/server.cnf (RHEL/CentOS)
 
 [mysqld]

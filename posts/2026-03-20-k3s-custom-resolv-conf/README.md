@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: K3s, Kubernetes, Rancher, DNS, Resolv.conf, CoreDNS
+Tags: K3s, Kubernetes, Rancher, DNS, resolv.conf, CoreDNS
 
 Description: Learn how to configure K3s to use a custom resolv.conf for pod DNS resolution, including upstream DNS servers and search domains.
 
 ## Introduction
 
-DNS resolution in Kubernetes involves multiple layers: pod DNS configuration, CoreDNS cluster DNS, and the upstream DNS servers that CoreDNS forwards to. By default, K3s reads the host's `/etc/resolv.conf` to determine upstream DNS servers. In some environments — such as when using systemd-resolved, VPN clients, or corporate DNS servers — the default resolv.conf may not work correctly for pod DNS resolution. This guide covers how to configure a custom resolv.conf for K3s.
+DNS resolution in Kubernetes involves multiple layers: pod DNS configuration, CoreDNS cluster DNS, and the upstream DNS servers that CoreDNS forwards to. By default, K3s reads the host's `/etc/resolv.conf` to determine upstream DNS servers. In some environments - such as when using systemd-resolved, VPN clients, or corporate DNS servers - the default resolv.conf may not work correctly for pod DNS resolution. This guide covers how to configure a custom resolv.conf for K3s.
 
 ## How K3s Handles DNS
 
@@ -25,6 +25,7 @@ Many modern Linux distributions use `systemd-resolved`, which sets `/etc/resolv.
 
 ```bash
 # Check if systemd-resolved is active
+
 systemctl status systemd-resolved
 
 # Check current resolv.conf

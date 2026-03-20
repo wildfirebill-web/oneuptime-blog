@@ -32,6 +32,7 @@ If you have a previous installation, clean it up first to avoid conflicts:
 
 ```bash
 # Remove all NVIDIA packages
+
 sudo apt purge 'nvidia-*' 'cuda-*' 'libcuda*' 'libcudnn*' -y
 sudo apt autoremove -y
 

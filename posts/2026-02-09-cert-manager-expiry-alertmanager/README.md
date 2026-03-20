@@ -58,6 +58,7 @@ Verify Prometheus is scraping cert-manager metrics:
 
 ```bash
 # Port-forward to Prometheus
+
 kubectl port-forward -n monitoring svc/prometheus-operated 9090:9090
 
 # Query for cert-manager metrics

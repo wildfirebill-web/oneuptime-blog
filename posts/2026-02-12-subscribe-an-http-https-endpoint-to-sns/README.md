@@ -16,6 +16,7 @@ There's more complexity here compared to other subscription types because your e
 
 ```bash
 # Subscribe an HTTPS endpoint to an SNS topic
+
 aws sns subscribe \
   --topic-arn arn:aws:sns:us-east-1:123456789012:order-notifications \
   --protocol https \

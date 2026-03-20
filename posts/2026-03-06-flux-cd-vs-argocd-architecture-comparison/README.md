@@ -28,6 +28,7 @@ Flux CD is composed of several independent controllers, each running as its own 
 
 ```yaml
 # Flux CD controller architecture
+
 # Each controller is a separate deployment in the flux-system namespace
 
 # 1. Source Controller - manages Git repos, Helm repos, OCI repos, S3 buckets
@@ -311,7 +312,7 @@ spec:
         maxDuration: 3m
 ```
 
-## Resource Management Comparison
+Resource Management Comparison
 
 ### How Flux CD Manages Resources
 

@@ -28,6 +28,7 @@ Start with a simple quota for a team namespace.
 
 ```yaml
 # team-alpha-quota.yaml
+
 apiVersion: v1
 kind: ResourceQuota
 metadata:

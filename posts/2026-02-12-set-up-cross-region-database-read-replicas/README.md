@@ -52,6 +52,7 @@ Standard RDS supports cross-region read replicas for MySQL, MariaDB, PostgreSQL,
 
 ```bash
 # Create a cross-region read replica of your RDS primary instance
+
 aws rds create-db-instance-read-replica \
   --db-instance-identifier my-eu-replica \
   --source-db-instance-identifier arn:aws:rds:us-east-1:123456789012:db:my-primary-db \

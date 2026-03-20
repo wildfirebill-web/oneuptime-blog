@@ -43,6 +43,7 @@ To create aggregated sinks, you need:
 
 ```bash
 # Create an organization-level sink that routes all audit logs to BigQuery
+
 gcloud logging sinks create org-audit-to-bigquery \
   bigquery.googleapis.com/projects/central-logging-project/datasets/org_audit_logs \
   --organization=ORGANIZATION_ID \

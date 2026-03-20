@@ -34,6 +34,7 @@ resource "azurerm_resource_group" "registry" {
 }
 
 # Premium SKU required for geo-replication
+
 resource "azurerm_container_registry" "global" {
   name                = "myappregistryglobal"
   resource_group_name = azurerm_resource_group.registry.name
@@ -148,4 +149,4 @@ resource "azurerm_role_assignment" "aks_pull" {
 
 ## Conclusion
 
-ACR geo-replication in OpenTofu ensures fast container image pulls from any region and provides registry resilience. Use for_each to manage multiple replica regions uniformly, enable zone redundancy in regions that support it for within-region HA, and grant AcrPull to each regional AKS cluster's kubelet identity. The single login_server URL works globally — Azure routes pull requests to the nearest replica automatically.
+ACR geo-replication in OpenTofu ensures fast container image pulls from any region and provides registry resilience. Use for_each to manage multiple replica regions uniformly, enable zone redundancy in regions that support it for within-region HA, and grant AcrPull to each regional AKS cluster's kubelet identity. The single login_server URL works globally - Azure routes pull requests to the nearest replica automatically.

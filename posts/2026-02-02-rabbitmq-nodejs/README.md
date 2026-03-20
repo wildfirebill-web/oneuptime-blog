@@ -48,6 +48,7 @@ You can run RabbitMQ using Docker, which provides a quick and isolated environme
 
 ```bash
 # Run RabbitMQ with management UI on Docker
+
 docker run -d --name rabbitmq \
   -p 5672:5672 \
   -p 15672:15672 \

@@ -8,7 +8,7 @@ Description: Learn how to customize CoreDNS configuration in K3s to support cust
 
 ## Introduction
 
-K3s deploys CoreDNS as the cluster DNS provider. While the default configuration handles most use cases, custom DNS requirements — such as resolving internal company domains, overriding specific hostnames, or forwarding DNS queries to custom resolvers — require modifying the CoreDNS ConfigMap. This guide covers common CoreDNS customization scenarios in K3s.
+K3s deploys CoreDNS as the cluster DNS provider. While the default configuration handles most use cases, custom DNS requirements - such as resolving internal company domains, overriding specific hostnames, or forwarding DNS queries to custom resolvers - require modifying the CoreDNS ConfigMap. This guide covers common CoreDNS customization scenarios in K3s.
 
 ## Understanding CoreDNS Configuration
 
@@ -18,6 +18,7 @@ CoreDNS configuration (Corefile) uses a plugin-based architecture where plugins 
 
 ```bash
 # View the current CoreDNS ConfigMap
+
 kubectl get configmap coredns -n kube-system -o yaml
 
 # The Corefile is in the 'data.Corefile' key

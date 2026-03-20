@@ -27,6 +27,7 @@ Let's trace a wire transfer through each middleware component.
 
 ```python
 # wire_transfer_pipeline.py
+
 from opentelemetry import trace, metrics
 from opentelemetry.trace.propagation import TraceContextTextMapPropagator
 

@@ -18,6 +18,7 @@ Unlike traditional distributions where you edit kubelet configuration files or s
 
 ```yaml
 # talos-machine-config.yaml
+
 machine:
   kubelet:
     # Command-line arguments
@@ -58,7 +59,7 @@ machine:
     kernel.pid_max: "4194304"         # Increase max PIDs system-wide
 ```
 
-## Resource Reservation
+Resource Reservation
 
 Kubelet should reserve resources for system processes to prevent pods from consuming everything:
 

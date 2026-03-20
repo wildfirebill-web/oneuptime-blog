@@ -212,6 +212,7 @@ Without these markers, the template may produce extra blank lines. Compare:
 
 ```yaml
 # Without whitespace trimming - may produce extra blank lines
+
 messageTemplate: |
   Files:
   {{ range $filename, $_ := .Changed.FileChanges }}

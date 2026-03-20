@@ -36,6 +36,7 @@ The Yocto Project is the most common build system for custom embedded Linux. Pod
 
 ```bash
 # In your Yocto build directory
+
 cd poky
 git clone https://git.yoctoproject.org/meta-virtualization
 git clone https://git.openembedded.org/meta-openembedded
@@ -454,7 +455,7 @@ if $all_healthy; then
 fi
 ```
 
-### Resource Usage Tracking
+Resource Usage Tracking
 
 ```bash
 # Log container resource usage to a file for later analysis

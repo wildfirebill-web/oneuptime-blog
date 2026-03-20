@@ -18,6 +18,7 @@ Most modern Linux distributions have moved to cgroups v2, which provides a unifi
 
 ```yaml
 # check-cgroup-version.yml - Determine cgroup version across fleet
+
 ---
 - name: Check cgroup version
   hosts: all
@@ -54,7 +55,7 @@ Most modern Linux distributions have moved to cgroups v2, which provides a unifi
         var: controllers.stdout_lines
 ```
 
-## Resource Limit Architecture
+Resource Limit Architecture
 
 ```mermaid
 flowchart TD

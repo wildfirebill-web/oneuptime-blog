@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, MSS Clamping, TCP, MTU, ip6tables
+Tags: IPv6, MSS Clamping, TCP, MTU, Ip6tables
 
 Description: Understand how TCP Maximum Segment Size clamping works for IPv6, when to use it, and how to configure MSS clamping with ip6tables and nftables.
 
@@ -12,7 +12,7 @@ TCP Maximum Segment Size (MSS) clamping modifies the MSS value in TCP SYN packet
 
 ## How MSS Clamping Works
 
-```
+```text
 Normal TCP without MSS clamping on a tunnel:
 
 SYN: Host A advertises MSS=1440 (1500 - 40 IPv6 - 20 TCP)
@@ -35,13 +35,14 @@ Result: No fragmentation, no packet loss
 
 ```bash
 # Method 1: Static MSS value (use when you know the exact path MTU)
+
 # Formula: MSS = (effective_mtu) - 40 (IPv6) - 20 (TCP)
 # For a 6in4 tunnel with 1480 effective MTU: MSS = 1480 - 60 = 1420
 sudo ip6tables -t mangle -A FORWARD \
     -p tcp --tcp-flags SYN,RST SYN \
     -j TCPMSS --set-mss 1420
 
-# Method 2: Dynamic clamping (preferred — uses PMTU cache)
+# Method 2: Dynamic clamping (preferred - uses PMTU cache)
 # Automatically reads the PMTU cache and clamps to that value
 sudo ip6tables -t mangle -A FORWARD \
     -p tcp --tcp-flags SYN,RST SYN \

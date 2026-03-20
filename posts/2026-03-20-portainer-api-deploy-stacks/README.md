@@ -1,4 +1,4 @@
-# How to Deploy Stacks via the Portainer API
+# How to Deploy Stacks via the Portainer API - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Learn how to create, update, and manage Docker Compose stacks in Po
 
 ## Introduction
 
-Portainer stacks are multi-container applications defined by Docker Compose files. The Portainer API lets you deploy new stacks, update existing ones, and trigger redeployments — all without touching the Portainer UI. This is the foundation for CI/CD pipeline integration.
+Portainer stacks are multi-container applications defined by Docker Compose files. The Portainer API lets you deploy new stacks, update existing ones, and trigger redeployments - all without touching the Portainer UI. This is the foundation for CI/CD pipeline integration.
 
 ## Prerequisites
 
@@ -36,6 +36,7 @@ TOKEN="your-jwt-or-api-key"
 ENDPOINT_ID=1   # Your Docker environment ID
 
 # Create a new stack by passing the Compose content as a string
+
 COMPOSE_CONTENT=$(cat << 'EOF'
 version: "3.8"
 services:
@@ -159,7 +160,7 @@ Here is a complete GitHub Actions-style deployment script:
 
 ```bash
 #!/bin/bash
-# deploy-stack.sh — Deploy or update a stack in Portainer
+# deploy-stack.sh - Deploy or update a stack in Portainer
 
 set -euo pipefail
 

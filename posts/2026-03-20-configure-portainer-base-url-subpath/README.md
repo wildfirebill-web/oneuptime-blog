@@ -16,6 +16,7 @@ Start Portainer with the `--base-url` flag to set the subpath:
 
 ```bash
 # Run Portainer accessible at /portainer/ subpath
+
 docker run -d \
   -p 8000:8000 \
   -p 9443:9443 \

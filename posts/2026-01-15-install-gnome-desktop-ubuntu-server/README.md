@@ -39,6 +39,7 @@ Ubuntu offers several GNOME desktop packages with varying levels of completeness
 
 ```bash
 # View package information for each option
+
 apt show ubuntu-desktop-minimal
 apt show ubuntu-desktop
 apt show vanilla-gnome-desktop
@@ -502,7 +503,7 @@ gsettings set org.gnome.desktop.remote-desktop.rdp tls-cert '/path/to/cert.pem'
 gsettings set org.gnome.desktop.remote-desktop.rdp tls-key '/path/to/key.pem'
 ```
 
-## Resource Usage Considerations
+Resource Usage Considerations
 
 ### Monitoring Resource Usage
 

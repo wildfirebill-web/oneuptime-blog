@@ -75,6 +75,7 @@ The simplest configuration uses EC2 instance profiles for automatic authenticati
 
 ```yaml
 # extensions section configures AWS proxy
+
 extensions:
   # AWS proxy extension with instance profile authentication
   awsproxy:

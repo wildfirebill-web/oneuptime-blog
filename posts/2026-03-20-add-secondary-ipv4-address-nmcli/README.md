@@ -8,12 +8,13 @@ Description: Add a secondary (additional) IPv4 address to an existing network in
 
 ## Introduction
 
-Adding a secondary IPv4 address allows an interface to be reachable at multiple IPs — useful for virtual hosting, service redundancy, or separating management and data traffic. nmcli supports multiple `ipv4.addresses` entries per connection.
+Adding a secondary IPv4 address allows an interface to be reachable at multiple IPs - useful for virtual hosting, service redundancy, or separating management and data traffic. nmcli supports multiple `ipv4.addresses` entries per connection.
 
 ## Add a Secondary IP Address
 
 ```bash
 # Show current connection
+
 nmcli connection show "Wired connection 1" | grep ipv4.addresses
 
 # Append a secondary IP (+ prefix = add without removing existing)

@@ -8,12 +8,13 @@ Description: Learn how to write effective bug reports for OpenTofu that help mai
 
 ## Introduction
 
-A well-written bug report dramatically increases the chance of your issue being fixed quickly. Maintainers need to reproduce the problem, understand its impact, and identify the cause — all from your report. This guide shows how to write effective OpenTofu bug reports.
+A well-written bug report dramatically increases the chance of your issue being fixed quickly. Maintainers need to reproduce the problem, understand its impact, and identify the cause - all from your report. This guide shows how to write effective OpenTofu bug reports.
 
 ## Before Filing a Bug
 
 ```bash
 # 1. Check if the bug is already reported
+
 # Search GitHub issues: https://github.com/opentofu/opentofu/issues
 
 # 2. Verify you're on the latest version
@@ -88,7 +89,7 @@ go version >> version_info.txt 2>/dev/null || true
 
 ## Bug Report Template
 
-```markdown
+````markdown
 ## Bug Description
 <!-- A clear, concise description of the bug -->
 
@@ -124,7 +125,7 @@ resource "aws_s3_bucket" "test" {
 OpenTofu should produce a valid plan showing resources to create.
 
 ## Actual Behavior
-```
+```text
 panic: runtime error: invalid memory address or nil pointer dereference
 [signal SIGSEGV: segmentation violation code=0x1]
 goroutine 1 [running]:
@@ -138,7 +139,7 @@ github.com/opentofu/opentofu/internal/lang.evaluateForEachExpression(...)
 - This worked in OpenTofu 1.8.5
 - Does not occur when null values are absent
 - Debug log attached: debug.log
-```
+````
 
 ## Where to File the Bug
 
@@ -148,4 +149,4 @@ github.com/opentofu/opentofu/internal/lang.evaluateForEachExpression(...)
 
 ## Summary
 
-Effective bug reports include the exact versions involved, a minimal reproducible configuration, the expected versus actual behavior, and debug logs. The investment in creating a good bug report pays off in faster resolution — maintainers can immediately reproduce and fix the issue rather than asking for more information.
+Effective bug reports include the exact versions involved, a minimal reproducible configuration, the expected versus actual behavior, and debug logs. The investment in creating a good bug report pays off in faster resolution - maintainers can immediately reproduce and fix the issue rather than asking for more information.

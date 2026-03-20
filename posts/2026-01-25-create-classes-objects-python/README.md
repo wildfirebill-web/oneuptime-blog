@@ -20,6 +20,7 @@ class Dog:
     pass
 
 # Create an instance (object)
+
 my_dog = Dog()
 print(type(my_dog))  # <class '__main__.Dog'>
 ```

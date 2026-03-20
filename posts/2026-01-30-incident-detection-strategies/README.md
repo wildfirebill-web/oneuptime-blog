@@ -116,6 +116,7 @@ Mature teams aim for 80% or more of incidents detected proactively. Track your d
 
 ```python
 # detection_metrics.py
+
 # Track the source of incident detection for continuous improvement
 
 from dataclasses import dataclass

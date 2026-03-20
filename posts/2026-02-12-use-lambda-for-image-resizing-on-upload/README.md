@@ -37,6 +37,7 @@ Create a new project and install dependencies:
 
 ```bash
 # Initialize the project and install Sharp for image processing
+
 mkdir image-resizer && cd image-resizer
 npm init -y
 npm install @aws-sdk/client-s3 sharp

@@ -43,6 +43,7 @@ The first layer controls which namespaces ArgoCD watches at all. Only explicitly
 
 ```yaml
 # argocd-cmd-params-cm - be explicit, avoid wildcards
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

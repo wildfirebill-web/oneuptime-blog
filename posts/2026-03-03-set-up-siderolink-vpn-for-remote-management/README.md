@@ -45,6 +45,7 @@ The easiest way to use SideroLink is through Sidero Omni SaaS. When you boot a T
 
 ```bash
 # Generate an Omni-enabled image
+
 omnictl download --output talos-omni.iso
 
 # The image includes kernel arguments for SideroLink:

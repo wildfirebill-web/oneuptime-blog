@@ -30,6 +30,7 @@ Install the operator using kubectl:
 
 ```bash
 # Install the operator
+
 kubectl apply -f https://github.com/rabbitmq/cluster-operator/releases/latest/download/cluster-operator.yml
 
 # Verify operator installation

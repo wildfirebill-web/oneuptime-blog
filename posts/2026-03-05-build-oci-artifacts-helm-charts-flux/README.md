@@ -27,6 +27,7 @@ Start with a standard Helm chart structure.
 
 ```bash
 # Typical Helm chart directory structure
+
 tree charts/myapp/
 # charts/myapp/
 # ├── Chart.yaml

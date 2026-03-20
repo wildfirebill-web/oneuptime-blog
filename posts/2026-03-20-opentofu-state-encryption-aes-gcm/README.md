@@ -1,4 +1,4 @@
-# How to Use AES-GCM Encryption Method for State in OpenTofu
+# How to Use AES-GCM Encryption Method for State in OpenTofu - Opentofu
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -14,10 +14,10 @@ AES-GCM (Advanced Encryption Standard in Galois/Counter Mode) is the encryption 
 
 OpenTofu's state encryption has two layers:
 
-1. **Key provider** — supplies the encryption keys (PBKDF2, AWS KMS, GCP KMS, etc.)
-2. **Method** — defines how those keys are used to encrypt data (AES-GCM is the only built-in method)
+1. **Key provider** - supplies the encryption keys (PBKDF2, AWS KMS, GCP KMS, etc.)
+2. **Method** - defines how those keys are used to encrypt data (AES-GCM is the only built-in method)
 
-```
+```text
 Key Provider (supplies key material)
          ↓
 AES-GCM Method (encrypts/decrypts state using the key)
@@ -69,7 +69,7 @@ encryption {
 
 ## Multiple Methods for Key Rotation
 
-During key rotation, configure two methods — the new key for encryption, old for decryption fallback:
+During key rotation, configure two methods - the new key for encryption, old for decryption fallback:
 
 ```hcl
 encryption {

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, Infrastructure as Code, Backends, AWS
+Tags: OpenTofu, Terraform, Infrastructure as Code, Backend, AWS
 
 Description: Learn how to configure the OpenTofu S3 backend to assume an IAM role for cross-account state access and principle of least privilege.
 
@@ -28,6 +28,7 @@ terraform {
 
 ```hcl
 # Workload account: deploy infrastructure
+
 # Shared services account: store state
 
 terraform {
@@ -112,7 +113,7 @@ terraform {
 For security, avoid committing the role ARN:
 
 ```hcl
-# backend.tf — commited to version control
+# backend.tf - commited to version control
 terraform {
   backend "s3" {
     bucket = "central-tofu-state"
@@ -154,4 +155,4 @@ provider "aws" {
 
 ## Conclusion
 
-IAM role assumption in the S3 backend enables secure cross-account state storage following the principle of least privilege. The role in the state account needs only S3 and DynamoDB permissions — it does not need infrastructure permissions. Use external IDs for additional security and partial backend configuration to keep sensitive role ARNs out of version control.
+IAM role assumption in the S3 backend enables secure cross-account state storage following the principle of least privilege. The role in the state account needs only S3 and DynamoDB permissions - it does not need infrastructure permissions. Use external IDs for additional security and partial backend configuration to keep sensitive role ARNs out of version control.

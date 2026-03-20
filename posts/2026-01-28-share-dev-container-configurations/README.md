@@ -177,6 +177,7 @@ org-devcontainer-templates/
 
 ```bash
 # Clone template into new project
+
 npx degit yourorg/devcontainer-templates/templates/nodejs/.devcontainer .devcontainer
 
 # Or use GitHub template repository feature

@@ -80,6 +80,7 @@ ALTER TABLE events DROP PARTITION '202401';
 
 ```bash
 # Using clickhouse-backup
+
 clickhouse-backup create_remote --tables default.events 2024-01-archive
 
 # Upload to S3

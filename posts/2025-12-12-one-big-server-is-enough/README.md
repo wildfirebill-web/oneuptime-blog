@@ -83,6 +83,7 @@ For most applications, Docker Compose provides everything you need:
 
 ```yaml
 # Note: The 'version' attribute is obsolete in modern Docker Compose and can be removed.
+
 services:
   app:
     image: your-app:latest

@@ -14,6 +14,7 @@ By default, Docker containers use the Docker daemon's DNS settings, which typica
 
 ```bash
 # Run a container with custom DNS servers
+
 docker run -d \
   --name my-app \
   --dns 192.168.1.10 \
@@ -28,7 +29,7 @@ docker exec my-app cat /etc/resolv.conf
 
 Expected `/etc/resolv.conf` in the container:
 
-```
+```text
 search corp.example.com
 nameserver 192.168.1.10
 nameserver 192.168.1.11

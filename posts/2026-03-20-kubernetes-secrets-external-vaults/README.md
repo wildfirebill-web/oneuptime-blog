@@ -1,4 +1,4 @@
-# How to Configure Kubernetes Secrets with External Vaults in Rancher
+# How to Configure Kubernetes Secrets with External Vaults in Rancher (2)
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -12,7 +12,7 @@ Kubernetes native Secrets are base64-encoded, not encrypted at rest by default, 
 
 ## Architecture Overview
 
-```
+```text
 ┌─────────────────────────────────────────┐
 │  Kubernetes Cluster (Rancher-managed)   │
 │                                         │
@@ -51,6 +51,7 @@ helm install external-secrets \
 
 ```bash
 # Enable Kubernetes auth in Vault
+
 vault auth enable kubernetes
 
 # Configure the Kubernetes auth method

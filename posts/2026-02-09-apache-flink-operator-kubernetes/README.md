@@ -22,6 +22,7 @@ Deploy the operator and custom resource definitions:
 
 ```bash
 # Add Flink operator Helm repository
+
 helm repo add flink-operator-repo https://downloads.apache.org/flink/flink-kubernetes-operator-1.7.0/
 helm repo update
 

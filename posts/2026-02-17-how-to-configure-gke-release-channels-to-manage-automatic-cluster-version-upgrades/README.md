@@ -48,6 +48,7 @@ You can set the release channel when creating a cluster or update an existing on
 
 ```bash
 # Create a new cluster in the Regular release channel
+
 gcloud container clusters create prod-cluster \
   --region us-central1 \
   --release-channel regular \

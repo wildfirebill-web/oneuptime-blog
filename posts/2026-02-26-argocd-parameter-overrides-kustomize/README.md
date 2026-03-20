@@ -135,6 +135,7 @@ The CLI provides commands to set Kustomize overrides on existing applications:
 
 ```bash
 # Override the image tag
+
 argocd app set my-app-staging \
   --kustomize-image myregistry/my-app:v1.2.3
 

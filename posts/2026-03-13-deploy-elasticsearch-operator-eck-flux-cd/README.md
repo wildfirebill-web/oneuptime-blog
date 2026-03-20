@@ -25,6 +25,7 @@ Deploying ECK through Flux CD gives you GitOps control over the operator install
 
 ```yaml
 # infrastructure/sources/elastic-helm.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

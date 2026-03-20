@@ -18,6 +18,7 @@ Make sure you have `ansible-core` installed, which includes `ansible-test`:
 
 ```bash
 # Install ansible-core (includes ansible-test)
+
 pip install ansible-core
 
 # Verify ansible-test is available

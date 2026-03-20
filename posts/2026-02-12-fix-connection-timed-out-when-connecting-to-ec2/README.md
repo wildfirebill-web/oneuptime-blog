@@ -29,6 +29,7 @@ Before diving deep, check these common issues first:
 
 ```bash
 # Check instance state and IP
+
 aws ec2 describe-instances \
   --instance-ids i-1234567890abcdef0 \
   --query "Reservations[*].Instances[*].[State.Name,PublicIpAddress,PrivateIpAddress,SubnetId,VpcId]" \

@@ -352,6 +352,7 @@ Configure the database connection and JPA settings.
 
 ```yaml
 # application.yml - Application configuration
+
 spring:
   datasource:
     # Database connection settings

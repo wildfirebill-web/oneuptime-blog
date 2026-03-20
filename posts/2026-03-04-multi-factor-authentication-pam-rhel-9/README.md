@@ -41,6 +41,7 @@ The package is available from the EPEL repository.
 
 ```bash
 # Enable the EPEL repository
+
 sudo dnf install epel-release -y
 
 # Install the Google Authenticator PAM module

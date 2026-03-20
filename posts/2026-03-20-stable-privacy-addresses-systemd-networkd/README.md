@@ -29,6 +29,7 @@ Create or edit a `.network` file for your interface in `/etc/systemd/network/`:
 
 ```ini
 # /etc/systemd/network/10-eth0.network
+
 # Configure eth0 with stable privacy IPv6 address generation
 
 [Match]

@@ -48,6 +48,7 @@ On your NAT device, you need to set up port forwarding for two UDP ports:
 
 ```text
 # Example: NAT port forwarding rules
+
 # Forward UDP 500 to internal VPN device
 UDP 500  -> 192.168.1.1:500
 

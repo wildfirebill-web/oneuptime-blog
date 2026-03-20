@@ -21,6 +21,7 @@ VLANs (Virtual LANs) allow you to segment network traffic on a single physical i
 
 ```bash
 # Load the VLAN kernel module
+
 modprobe 8021q
 
 # Verify it is loaded

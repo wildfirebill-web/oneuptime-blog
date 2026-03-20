@@ -10,6 +10,7 @@ Description: Learn how to configure a Spring Boot application to bind its embedd
 
 ```properties
 # Bind to all interfaces (default)
+
 server.address=0.0.0.0
 server.port=8080
 

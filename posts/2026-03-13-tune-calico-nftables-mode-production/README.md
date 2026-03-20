@@ -39,6 +39,7 @@ For high-throughput clusters, increase the nf_conntrack table size.
 
 ```bash
 # On each node
+
 cat >> /etc/sysctl.d/99-calico-nft.conf << EOF
 net.netfilter.nf_conntrack_max = 1048576
 net.netfilter.nf_conntrack_buckets = 262144

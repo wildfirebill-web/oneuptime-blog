@@ -40,6 +40,7 @@ Add tags when creating a VM:
 
 ```bash
 # Create a web server with appropriate tags
+
 gcloud compute instances create web-1 \
     --zone=us-central1-a \
     --machine-type=e2-medium \

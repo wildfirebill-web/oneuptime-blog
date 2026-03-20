@@ -49,6 +49,7 @@ First, check what IP ranges your subnet has:
 
 ```bash
 # Describe the subnet to see all IP ranges
+
 gcloud compute networks subnets describe your-subnet \
   --region=us-central1 \
   --format="yaml(ipCidrRange, secondaryIpRanges)" \

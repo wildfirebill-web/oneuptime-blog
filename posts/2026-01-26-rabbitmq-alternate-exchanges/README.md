@@ -311,6 +311,7 @@ Apply alternate exchange to existing exchanges via policy:
 
 ```bash
 # Set alternate exchange for all exchanges matching pattern
+
 rabbitmqctl set_policy AE "^orders\\." \
   '{"alternate-exchange": "unrouted"}' \
   --apply-to exchanges

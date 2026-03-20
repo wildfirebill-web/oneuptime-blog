@@ -14,13 +14,14 @@ Workspaces provide a lightweight mechanism for environment isolation. Each works
 
 ```bash
 # Create workspaces for each environment
+
 tofu workspace new development
 tofu workspace new staging
 tofu workspace new production
 ```
 
 ```hcl
-# main.tf — single configuration for all environments
+# main.tf - single configuration for all environments
 resource "aws_instance" "web" {
   ami           = data.aws_ami.ubuntu.id
   instance_type = local.instance_type
@@ -84,7 +85,7 @@ resource "aws_cloudwatch_metric_alarm" "high_cpu" {
 
 ## Separate State per Environment in S3
 
-```
+```text
 s3://acme-tofu-state/
 ├── infrastructure/terraform.tfstate           (default workspace)
 └── infrastructure/env:/
@@ -114,7 +115,7 @@ resource "null_resource" "workspace_check" {
 ## CI/CD Deployment Pipeline
 
 ```yaml
-# GitHub Actions — deploy to environment based on branch
+# GitHub Actions - deploy to environment based on branch
 on:
   push:
     branches: [main, staging, develop]

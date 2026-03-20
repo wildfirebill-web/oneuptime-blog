@@ -20,6 +20,7 @@ S3 caching is the most flexible option. The cache is uploaded to S3 after each b
 
 ```bash
 # Create an S3 bucket for build cache
+
 aws s3 mb s3://my-codebuild-cache --region us-east-1
 
 # Set a lifecycle policy to expire old cache files

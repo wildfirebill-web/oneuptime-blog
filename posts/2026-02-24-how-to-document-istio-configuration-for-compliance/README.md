@@ -60,6 +60,7 @@ cat << EOF
 EOF
 
 # Check mesh-wide mTLS
+
 MESH_MTLS=$(kubectl get peerauthentication -n istio-system -o json 2>/dev/null | \
   jq -r '.items[] | select(.metadata.name == "default") | .spec.mtls.mode // "NOT SET"')
 

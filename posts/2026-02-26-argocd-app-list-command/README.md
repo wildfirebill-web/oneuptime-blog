@@ -73,6 +73,7 @@ Full JSON output with all application details. Combined with `jq`, this is extre
 
 ```bash
 # Get names and health status
+
 argocd app list -o json | jq '.items[] | {name: .metadata.name, health: .status.health.status}'
 
 # Find applications with sync errors

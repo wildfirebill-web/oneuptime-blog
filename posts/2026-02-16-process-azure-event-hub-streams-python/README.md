@@ -42,6 +42,7 @@ graph LR
 
 ```bash
 # Install the SDK packages
+
 pip install azure-eventhub azure-identity azure-eventhub-checkpointstoreblob-aio
 
 # Create an Event Hub namespace and hub

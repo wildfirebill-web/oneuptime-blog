@@ -293,6 +293,7 @@ After configuring anti-affinity, verify that pods are actually spread out:
 
 ```bash
 # Check which nodes istiod pods run on
+
 kubectl get pods -n istio-system -l app=istiod -o wide
 
 # Check which zones they are in

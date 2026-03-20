@@ -37,6 +37,7 @@ To add health checks, specify the resources you want to monitor in the `spec.hea
 
 ```yaml
 # kustomization-health.yaml - Kustomization with health checks
+
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
 metadata:

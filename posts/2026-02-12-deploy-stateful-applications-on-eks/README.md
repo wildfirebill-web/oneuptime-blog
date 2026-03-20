@@ -50,6 +50,7 @@ EKS requires the EBS CSI driver for dynamic volume provisioning. Install it as a
 
 ```bash
 # Create IRSA for the EBS CSI driver
+
 eksctl create iamserviceaccount \
   --cluster my-cluster \
   --namespace kube-system \

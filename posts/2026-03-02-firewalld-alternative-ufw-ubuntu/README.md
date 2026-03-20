@@ -26,6 +26,7 @@ First, disable UFW to avoid conflicts:
 
 ```bash
 # Disable UFW before installing firewalld
+
 sudo systemctl stop ufw
 sudo systemctl disable ufw
 

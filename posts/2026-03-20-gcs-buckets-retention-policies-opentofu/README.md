@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, GCP, Google Cloud Storage, GCS, Retention Policy, Terraform, Compliance
+Tags: OpenTofu, GCP, Google Cloud Storage, GCS, Retention policy, Terraform, Compliance
 
 Description: Learn how to create Google Cloud Storage buckets and configure retention policies with OpenTofu to enforce minimum object retention periods for compliance and data protection.
 
@@ -16,6 +16,7 @@ GCS retention policies prevent objects from being deleted or overwritten before 
 
 ```hcl
 # providers.tf
+
 provider "google" {
   project = var.project_id
   region  = "us-central1"
@@ -65,7 +66,7 @@ locals {
 
 ## Locked Retention Policy (WORM)
 
-A locked retention policy creates a Write-Once-Read-Many (WORM) bucket. Once locked, it cannot be reduced or removed — only extended:
+A locked retention policy creates a Write-Once-Read-Many (WORM) bucket. Once locked, it cannot be reduced or removed - only extended:
 
 ```hcl
 resource "google_storage_bucket" "compliance_archive" {
@@ -74,7 +75,7 @@ resource "google_storage_bucket" "compliance_archive" {
 
   retention_policy {
     retention_period = 94608000  # 3 years
-    is_locked        = true      # WORM — irreversible!
+    is_locked        = true      # WORM - irreversible!
   }
 
   uniform_bucket_level_access = true
@@ -228,10 +229,10 @@ gsutil rm gs://audit-logs-my-project/test.txt
 
 ## Best Practices
 
-1. **Start unlocked** — test retention periods before locking, since locked policies are irreversible
+1. **Start unlocked** - test retention periods before locking, since locked policies are irreversible
 2. **Combine with object versioning** for full protection against overwrites
 3. **Use COLDLINE/ARCHIVE** storage class for long-retention archives to minimize cost
-4. **Document retention decisions** — note the regulation that requires each retention period
+4. **Document retention decisions** - note the regulation that requires each retention period
 5. **Enable audit logging** on the bucket for access tracking during the retention period
 
 ---

@@ -28,6 +28,7 @@ Use templates to combine individual secret fields into a PostgreSQL connection s
 
 ```yaml
 # clusters/my-cluster/apps/myapp/externalsecret-template-connstr.yaml
+
 apiVersion: external-secrets.io/v1beta1
 kind: ExternalSecret
 metadata:

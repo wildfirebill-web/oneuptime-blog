@@ -16,6 +16,7 @@ Before optimizing, understand your starting point:
 
 ```bash
 # Check istiod resource usage
+
 kubectl top pods -n istio-system -l app=istiod
 
 # Check push latency

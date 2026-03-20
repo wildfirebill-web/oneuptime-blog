@@ -1,4 +1,4 @@
-# How to Deploy Nginx via Portainer
+# How to Deploy Nginx via Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Deploy Nginx as a web server or reverse proxy using Portainer, with
 
 ## Introduction
 
-Nginx is one of the most widely deployed web servers and reverse proxies in the world. Deploying it via Portainer makes it easy to manage configuration files, update to new versions, and monitor access logs — all from a web browser.
+Nginx is one of the most widely deployed web servers and reverse proxies in the world. Deploying it via Portainer makes it easy to manage configuration files, update to new versions, and monitor access logs - all from a web browser.
 
 ## Quick Deploy via Portainer UI
 
@@ -58,6 +58,7 @@ Create `nginx.conf` in your stack directory:
 
 ```nginx
 # nginx.conf - main configuration
+
 user  nginx;
 worker_processes  auto;
 

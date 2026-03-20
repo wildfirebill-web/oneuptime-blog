@@ -31,6 +31,7 @@ Create the global network and core network:
 
 ```bash
 # Create the global network first
+
 aws networkmanager create-global-network \
   --description "Cloud WAN Global Network"
 

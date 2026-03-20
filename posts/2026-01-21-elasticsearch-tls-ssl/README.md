@@ -33,6 +33,7 @@ Before configuring TLS, ensure you have:
 
 ```bash
 # Generate CA certificate
+
 /usr/share/elasticsearch/bin/elasticsearch-certutil ca \
   --out /etc/elasticsearch/certs/elastic-stack-ca.p12 \
   --pass ""

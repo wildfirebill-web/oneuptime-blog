@@ -12,7 +12,7 @@ Options within IPv6's Hop-by-Hop and Destination Options headers use TLV (Type-L
 
 ## TLV Encoding Rules
 
-```
+```yaml
 General option format (except Pad1):
   +---+---+---+---+---+---+---+---+
   | Action|C| Option Type (5 bits)|
@@ -32,7 +32,7 @@ Special: Pad1 option (type = 0x00):
 
 ## Option Type Byte Breakdown
 
-```
+```text
 Bit 7-6: Action when unrecognized:
   00 = skip option, continue processing
   01 = discard packet silently
@@ -149,6 +149,7 @@ def handle_unknown_option(opt: TLVOption):
         raise StopIteration("Send ICMPv6 Parameter Problem to all")
 
 # Example: parse a Hop-by-Hop header with Router Alert + PadN
+
 # Router Alert: type=0x05, len=2, value=0x0000 (MLD)
 # PadN: type=0x01, len=0 (2 bytes total)
 hbh_options = bytes([
@@ -168,7 +169,7 @@ for opt in options:
 
 TLV options must be aligned to their natural boundary within the header:
 
-```
+```text
 Option alignment: xn+y means the option starts at an offset
 that satisfies (offset % x) == y from the start of the header
 
@@ -184,4 +185,4 @@ Use Pad1 (one byte) and PadN (N bytes) to achieve alignment:
 
 ## Conclusion
 
-TLV option processing in IPv6 extension headers requires careful attention to the action bits in the Type byte — they tell you exactly what to do when you encounter an unknown option. The Pad1 and PadN options handle alignment requirements. Always check alignment constraints when implementing new options, and honor the action semantics when implementing an IPv6 stack to ensure correct behavior with unknown future options.
+TLV option processing in IPv6 extension headers requires careful attention to the action bits in the Type byte - they tell you exactly what to do when you encounter an unknown option. The Pad1 and PadN options handle alignment requirements. Always check alignment constraints when implementing new options, and honor the action semantics when implementing an IPv6 stack to ensure correct behavior with unknown future options.

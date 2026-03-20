@@ -29,6 +29,7 @@ To see all services running on a node:
 
 ```bash
 # List all services on a node
+
 talosctl services --nodes 192.168.1.10
 ```
 

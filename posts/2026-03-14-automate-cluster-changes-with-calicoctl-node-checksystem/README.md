@@ -64,6 +64,7 @@ runcmd:
 
 ```yaml
 # roles/calico-prereqs/tasks/main.yaml
+
 ---
 - name: Load required kernel modules
   modprobe:

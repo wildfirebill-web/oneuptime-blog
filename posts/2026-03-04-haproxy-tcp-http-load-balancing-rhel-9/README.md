@@ -85,6 +85,7 @@ You can have both in the same configuration by setting the mode per section:
 
 ```bash
 # Create a mixed-mode HAProxy configuration
+
 sudo tee /etc/haproxy/haproxy.cfg > /dev/null <<'EOF'
 global
     log /dev/log local0

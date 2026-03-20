@@ -8,7 +8,7 @@ Description: Configure and use Portainer webhooks to trigger stack redeployments
 
 ## Introduction
 
-Portainer webhooks provide a simple HTTP endpoint that triggers a stack or service update when called. This is the simplest way to integrate Portainer with CI/CD pipelines — your pipeline pushes a new image and calls the webhook, Portainer pulls the latest image and restarts the service. No Portainer API key required.
+Portainer webhooks provide a simple HTTP endpoint that triggers a stack or service update when called. This is the simplest way to integrate Portainer with CI/CD pipelines - your pipeline pushes a new image and calls the webhook, Portainer pulls the latest image and restarts the service. No Portainer API key required.
 
 ## Step 1: Configure Portainer Stack Webhooks
 
@@ -31,6 +31,7 @@ The URL format: `https://portainer.yourdomain.com/api/webhooks/{uuid}`
 
 ```bash
 # Test webhook with curl (no authentication required)
+
 curl -X POST "https://portainer.yourdomain.com/api/webhooks/your-webhook-uuid"
 
 # Expected response: 204 No Content (empty body)
@@ -232,4 +233,4 @@ docker inspect my_container | jq '.[].State.StartedAt'
 
 ## Conclusion
 
-Portainer webhooks provide the simplest possible CI/CD integration — a single HTTP POST triggers a full stack redeployment. The URL contains a secret UUID, making it reasonably secure without requiring API key management in your pipelines. Combine webhooks with health checks to verify deployments succeeded, and use multi-environment webhooks to promote changes through Dev → Staging → Production in a controlled pipeline.
+Portainer webhooks provide the simplest possible CI/CD integration - a single HTTP POST triggers a full stack redeployment. The URL contains a secret UUID, making it reasonably secure without requiring API key management in your pipelines. Combine webhooks with health checks to verify deployments succeeded, and use multi-environment webhooks to promote changes through Dev → Staging → Production in a controlled pipeline.

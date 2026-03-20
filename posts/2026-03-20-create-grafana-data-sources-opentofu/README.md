@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Grafana, Data Sources, Observability, Infrastructure as Code
+Tags: OpenTofu, Grafana, Data Source, Observability, Infrastructure as Code
 
 Description: Learn how to configure Grafana data sources with OpenTofu to connect your dashboards to Prometheus, Loki, CloudWatch, and other backends as code.
 
@@ -106,6 +106,7 @@ resource "grafana_data_source" "cloudwatch" {
 }
 
 # Or with explicit credentials
+
 resource "grafana_data_source" "cloudwatch_explicit" {
   type = "cloudwatch"
   name = "CloudWatch (explicit)"

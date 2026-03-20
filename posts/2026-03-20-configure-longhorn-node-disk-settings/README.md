@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Longhorn, Kubernetes, Storage, Configuration, Nodes, Disks
+Tags: Longhorn, Kubernetes, Storage, Configuration, Node, Disk
 
 Description: Learn how to configure Longhorn node and disk settings including storage allocation, scheduling policies, and disk management for optimal cluster storage performance.
 
@@ -21,6 +21,7 @@ Each Kubernetes worker node that runs Longhorn has:
 
 ```bash
 # List all Longhorn nodes and their status
+
 kubectl get nodes.longhorn.io -n longhorn-system
 
 # Detailed node information

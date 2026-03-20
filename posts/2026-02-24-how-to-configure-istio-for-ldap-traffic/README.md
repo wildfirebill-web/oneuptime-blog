@@ -238,6 +238,7 @@ Istio provides TCP-level metrics for LDAP traffic:
 
 ```promql
 # Connection rate to LDAP
+
 rate(istio_tcp_connections_opened_total{destination_service="openldap.directory.svc.cluster.local"}[5m])
 
 # Bytes transferred

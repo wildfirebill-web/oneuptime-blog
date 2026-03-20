@@ -47,6 +47,7 @@ Define your target servers in the inventory file.
 
 ```yaml
 # inventory/hosts.yml
+
 all:
   hosts:
     web1:

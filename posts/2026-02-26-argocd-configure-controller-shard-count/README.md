@@ -42,6 +42,7 @@ Check these metrics with:
 
 ```bash
 # Check controller memory usage
+
 kubectl top pod -n argocd -l app.kubernetes.io/name=argocd-application-controller
 
 # Check if the controller is falling behind

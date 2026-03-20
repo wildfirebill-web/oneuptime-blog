@@ -1,4 +1,4 @@
-# How to Use the basename and dirname Functions in OpenTofu
+# How to Use the basename and dirname Functions in OpenTofu - Functions
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -10,8 +10,8 @@ Description: Learn how to use the basename and dirname functions in OpenTofu to 
 
 OpenTofu provides two complementary path manipulation functions:
 
-- `basename(path)` — returns the final component of a path (the filename)
-- `dirname(path)` — returns the directory portion of a path (everything before the last component)
+- `basename(path)` - returns the final component of a path (the filename)
+- `dirname(path)` - returns the directory portion of a path (everything before the last component)
 
 These are useful when working with file paths that come from variables, data sources, or computed values.
 
@@ -124,7 +124,7 @@ resource "aws_s3_object" "configs" {
 
 - `basename` and `dirname` use forward slashes as path separators on all platforms; they do not convert Windows-style backslash paths.
 - `dirname` on a path with no directory component (e.g., just a filename) returns `"."`.
-- `basename` on a path ending with a slash returns an empty string — avoid trailing slashes.
+- `basename` on a path ending with a slash returns an empty string - avoid trailing slashes.
 - These functions perform pure string manipulation; they do not check whether the path exists on disk.
 
 ## Conclusion

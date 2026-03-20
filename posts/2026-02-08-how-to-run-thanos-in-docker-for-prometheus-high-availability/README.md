@@ -35,6 +35,7 @@ You need Docker and Docker Compose installed on your system. Verify the installa
 
 ```bash
 # Check Docker version (19.03+ recommended)
+
 docker --version
 
 # Check Docker Compose version (v2+ recommended)

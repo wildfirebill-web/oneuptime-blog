@@ -72,6 +72,7 @@ Register the task definition:
 
 ```bash
 # Register the task definition with extra storage
+
 aws ecs register-task-definition \
   --cli-input-json file://task-definition.json
 ```

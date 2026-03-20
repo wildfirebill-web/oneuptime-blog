@@ -14,6 +14,7 @@ Over time, Ubuntu accumulates downloaded packages, old kernels, temporary files,
 
 ```bash
 # Overview of disk usage
+
 df -h
 
 # Find large directories

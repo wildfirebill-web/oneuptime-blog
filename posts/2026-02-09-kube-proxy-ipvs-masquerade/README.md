@@ -60,6 +60,7 @@ kubectl apply -f kube-proxy-config.yaml
 kubectl rollout restart daemonset/kube-proxy -n kube-system
 
 # Wait for rollout to complete
+
 kubectl rollout status daemonset/kube-proxy -n kube-system
 ```
 

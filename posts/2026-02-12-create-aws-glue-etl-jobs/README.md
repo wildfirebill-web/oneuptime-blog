@@ -31,6 +31,7 @@ For most ETL workloads, Spark jobs are the way to go. Python Shell is good for l
 
 ```python
 # Create a Glue ETL job that transforms CSV to Parquet
+
 import boto3
 
 glue = boto3.client('glue', region_name='us-east-1')

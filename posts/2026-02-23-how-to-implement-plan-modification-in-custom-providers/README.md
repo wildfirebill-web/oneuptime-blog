@@ -329,7 +329,7 @@ type ObjectPlanModifier interface {
 }
 ```
 
-## Resource-Level Plan Modification
+Resource-Level Plan Modification
 
 In addition to attribute-level plan modifiers, you can implement resource-level plan modification using the `ModifyPlan` method:
 

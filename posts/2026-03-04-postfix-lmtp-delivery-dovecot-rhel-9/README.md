@@ -41,6 +41,7 @@ graph LR
 
 ```bash
 # Install Dovecot with LMTP support
+
 sudo dnf install -y dovecot dovecot-pigeonhole
 ```
 

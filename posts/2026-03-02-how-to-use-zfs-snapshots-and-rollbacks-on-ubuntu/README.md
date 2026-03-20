@@ -28,6 +28,7 @@ This means:
 
 ```bash
 # Format: zfs snapshot <dataset>@<snapshot-name>
+
 sudo zfs snapshot datapool/web@before-upgrade
 
 # With a timestamp name (common pattern)

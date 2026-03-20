@@ -16,6 +16,7 @@ When you apply a configuration with `--mode staged`, Talos saves the new configu
 
 ```bash
 # Stage a configuration change
+
 talosctl apply-config --nodes 10.0.1.10 --patch @my-change.yaml --mode staged
 ```
 

@@ -22,6 +22,7 @@ The ArgoCD CLI provides the simplest way to register a public repository:
 
 ```bash
 # Add a public GitHub repository
+
 argocd repo add https://github.com/argoproj/argocd-example-apps.git
 ```
 

@@ -42,6 +42,7 @@ First, register Google as an identity provider in your AWS account:
 
 ```bash
 # Get Google's OIDC thumbprint (you need this for the provider)
+
 # The thumbprint for accounts.google.com
 THUMBPRINT="08745487e891c19e3078c1f2a07e452950ef36f6"
 

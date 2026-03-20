@@ -74,6 +74,7 @@ Create the role using the CLI.
 
 ```bash
 # Create the role with the trust policy
+
 aws iam create-role \
   --role-name TransferFamilySFTPRole \
   --assume-role-policy-document file://trust-policy.json

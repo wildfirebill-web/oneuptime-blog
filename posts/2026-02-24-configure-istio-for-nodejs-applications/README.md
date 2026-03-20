@@ -343,7 +343,7 @@ spec:
 
 Node.js runs on a single thread, so it is more susceptible to overload than multi-threaded runtimes. Circuit breaking at the mesh level adds an important layer of protection.
 
-## Resource Tuning
+Resource Tuning
 
 Node.js is single-threaded, so giving it more than 1 CPU core does not help a single process. If you need more throughput, use the cluster module or run more replicas:
 

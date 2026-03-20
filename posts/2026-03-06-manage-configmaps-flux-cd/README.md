@@ -47,6 +47,7 @@ apps/
 
 ```yaml
 # apps/myapp/base/configmap.yaml
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Networking, NAT, Linux, nftables, IPv4
 
-Description: Learn how to configure NAT, MASQUERADE, SNAT, DNAT, and port forwarding on Linux using nftables — the modern replacement for iptables.
+Description: Learn how to configure NAT, MASQUERADE, SNAT, DNAT, and port forwarding on Linux using nftables - the modern replacement for iptables.
 
 ## Why nftables?
 
@@ -21,12 +21,13 @@ nftables is the modern Linux packet filtering framework that replaces iptables. 
 nft --version
 
 # Enable nftables service
+
 systemctl enable --now nftables
 ```
 
 ## NAT Table Structure in nftables
 
-```
+```text
 table inet nat {
     chain prerouting {
         type nat hook prerouting priority -100;

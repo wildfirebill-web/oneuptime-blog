@@ -10,6 +10,7 @@ Description: Learn how to configure IPv6 DNS server addresses on Windows using P
 
 ```powershell
 # Set IPv6 DNS servers (replaces existing DNS settings)
+
 Set-DnsClientServerAddress -InterfaceAlias "Ethernet" `
     -ServerAddresses "2001:4860:4860::8888", "2001:4860:4860::8844", "8.8.8.8"
 
@@ -42,7 +43,7 @@ netsh interface ipv6 set dnsservers "Ethernet" source=dhcp
 
 ## Configure IPv6 DNS via GUI
 
-```
+```sql
 Steps:
 1. Open ncpa.cpl (Win + R → ncpa.cpl)
 
@@ -61,7 +62,7 @@ Steps:
 
 ## Well-Known IPv6 DNS Servers
 
-```
+```text
 Google Public DNS:
   Primary:   2001:4860:4860::8888
   Secondary: 2001:4860:4860::8844

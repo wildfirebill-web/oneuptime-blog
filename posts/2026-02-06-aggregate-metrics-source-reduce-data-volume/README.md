@@ -53,6 +53,7 @@ OpenTelemetry defines three core metric instruments, each with default aggregati
 
 ```python
 # Example: Creating metrics with default aggregation
+
 from opentelemetry import metrics
 from opentelemetry.sdk.metrics import MeterProvider
 from opentelemetry.sdk.metrics.export import PeriodicExportingMetricReader

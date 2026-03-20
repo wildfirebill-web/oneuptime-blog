@@ -30,6 +30,7 @@ sequenceDiagram
 
 ```hcl
 # main.tf
+
 terraform {
   required_providers {
     aws = {
@@ -47,10 +48,10 @@ provider "aws" {
 resource "aws_iam_openid_connect_provider" "github_actions" {
   url = "https://token.actions.githubusercontent.com"
 
-  # The client ID list — for GitHub Actions, use the AWS STS audience
+  # The client ID list - for GitHub Actions, use the AWS STS audience
   client_id_list = ["sts.amazonaws.com"]
 
-  # GitHub's OIDC thumbprint — verify this matches the current cert
+  # GitHub's OIDC thumbprint - verify this matches the current cert
   # Get current value: openssl s_client -servername token.actions.githubusercontent.com \
   #   -connect token.actions.githubusercontent.com:443 < /dev/null 2>/dev/null | \
   #   openssl x509 -fingerprint -sha1 -noout

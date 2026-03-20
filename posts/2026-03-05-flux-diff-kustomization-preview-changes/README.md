@@ -109,6 +109,7 @@ The most powerful use of `flux diff kustomization` is in pull request reviews. S
 
 ```yaml
 # .github/workflows/flux-diff.yaml
+
 name: Flux Diff
 on:
   pull_request:
@@ -147,7 +148,7 @@ jobs:
               issue_number: context.issue.number,
               owner: context.repo.owner,
               repo: context.repo.repo,
-              body: `### Flux Diff Preview\n\`\`\`diff\n${process.env.DIFF}\n\`\`\``
+              body: `### Flux Diff Preview\n```diff\n${process.env.DIFF}\n````
             })
         env:
           DIFF: ${{ steps.diff.outputs.diff }}

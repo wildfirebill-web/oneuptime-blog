@@ -20,6 +20,7 @@ This Terraform configuration creates a properly isolated database network.
 
 ```hcl
 # Private subnets for databases - no internet access
+
 resource "aws_subnet" "db_a" {
   vpc_id                  = aws_vpc.main.id
   cidr_block              = "10.0.10.0/24"

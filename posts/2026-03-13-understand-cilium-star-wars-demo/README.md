@@ -47,6 +47,7 @@ The key insight is that without any policy, both the `tiefighter` (Empire) and `
 
 ```bash
 # Apply the Star Wars demo manifests
+
 kubectl create -f https://raw.githubusercontent.com/cilium/cilium/HEAD/examples/minikube/http-sw-app.yaml
 
 # Verify the pods are running

@@ -28,6 +28,7 @@ Add an IPv6 CIDR block to an existing VPC:
 
 ```bash
 # Associate an Amazon-provided IPv6 CIDR block with your VPC
+
 aws ec2 associate-vpc-cidr-block \
   --vpc-id vpc-0abc123def456 \
   --amazon-provided-ipv6-cidr-block

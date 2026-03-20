@@ -18,6 +18,7 @@ The warning appears when pandas cannot determine whether you are modifying a cop
 import pandas as pd
 
 # Create a DataFrame
+
 df = pd.DataFrame({
     'name': ['Alice', 'Bob', 'Charlie'],
     'age': [25, 30, 35],

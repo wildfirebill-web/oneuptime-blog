@@ -39,6 +39,7 @@ Before setting up the pipeline, create a staging slot for your Function App.
 
 ```bash
 # Create a staging deployment slot for the Function App
+
 az functionapp deployment slot create \
   --name "my-function-app" \
   --resource-group "my-rg" \

@@ -35,6 +35,7 @@ Download and deploy the agent VM image for your hypervisor (VMware ESXi, Hyper-V
 
 ```bash
 # Get the activation key from the agent VM
+
 # The agent must be reachable on port 80 for activation
 curl -s "http://AGENT_IP_ADDRESS/?activationRegion=us-east-1&redirect_type=TEXT"
 

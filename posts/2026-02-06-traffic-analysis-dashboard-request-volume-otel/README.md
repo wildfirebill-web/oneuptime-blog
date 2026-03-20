@@ -28,6 +28,7 @@ A standard metrics pipeline works for traffic analysis. The one addition worth m
 
 ```yaml
 # otel-collector-config.yaml
+
 receivers:
   otlp:
     protocols:

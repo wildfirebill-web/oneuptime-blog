@@ -132,6 +132,7 @@ For multi-team clusters, assign each team a namespace with appropriate quotas:
 
 ```yaml
 # Development team - smaller quota
+
 apiVersion: v1
 kind: ResourceQuota
 metadata:

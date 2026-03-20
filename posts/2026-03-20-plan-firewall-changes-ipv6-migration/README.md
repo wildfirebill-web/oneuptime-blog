@@ -8,7 +8,7 @@ Description: Plan and implement firewall rule changes for IPv6 migration, includ
 
 ## Introduction
 
-IPv6 firewall planning is more complex than simply copying IPv4 rules to IPv6 equivalents. IPv6 has mandatory ICMPv6 requirements — blocking ICMPv6 breaks NDP (neighbor discovery), path MTU discovery, and router advertisements. Stateful firewalls must be configured for IPv6 separately from IPv4 on most platforms.
+IPv6 firewall planning is more complex than simply copying IPv4 rules to IPv6 equivalents. IPv6 has mandatory ICMPv6 requirements - blocking ICMPv6 breaks NDP (neighbor discovery), path MTU discovery, and router advertisements. Stateful firewalls must be configured for IPv6 separately from IPv4 on most platforms.
 
 ## Step 1: Audit Existing IPv4 Rules
 
@@ -28,17 +28,18 @@ ip6tables -L -n -v --line-numbers
 
 ## Step 2: Mandatory ICMPv6 Rules
 
-These ICMPv6 types MUST be allowed — blocking them breaks IPv6 functionality:
+These ICMPv6 types MUST be allowed - blocking them breaks IPv6 functionality:
 
 ```bash
 # /etc/ip6tables-essential.rules
-# Essential ICMPv6 rules — NEVER block these
+
+# Essential ICMPv6 rules - NEVER block these
 
 # Allow all ICMPv6 in the FORWARD chain
 ip6tables -A FORWARD -p ipv6-icmp --icmpv6-type echo-request  -j ACCEPT
 ip6tables -A FORWARD -p ipv6-icmp --icmpv6-type echo-reply    -j ACCEPT
 
-# NDP — Neighbor Solicitation and Advertisement (required for Layer 2 resolution)
+# NDP - Neighbor Solicitation and Advertisement (required for Layer 2 resolution)
 ip6tables -A INPUT  -p ipv6-icmp --icmpv6-type neighbor-solicitation  -j ACCEPT
 ip6tables -A INPUT  -p ipv6-icmp --icmpv6-type neighbor-advertisement -j ACCEPT
 ip6tables -A OUTPUT -p ipv6-icmp --icmpv6-type neighbor-solicitation  -j ACCEPT
@@ -52,7 +53,7 @@ ip6tables -A INPUT  -p ipv6-icmp --icmpv6-type router-solicitation     -j ACCEPT
 ip6tables -A INPUT  -p ipv6-icmp --icmpv6-type packet-too-big -j ACCEPT
 ip6tables -A FORWARD -p ipv6-icmp --icmpv6-type packet-too-big -j ACCEPT
 
-# Multicast Listener Discovery (MLD — required for IPv6 multicast)
+# Multicast Listener Discovery (MLD - required for IPv6 multicast)
 ip6tables -A INPUT -p ipv6-icmp --icmpv6-type 130 -j ACCEPT  # MLD Query
 ip6tables -A INPUT -p ipv6-icmp --icmpv6-type 131 -j ACCEPT  # MLD Report
 ip6tables -A INPUT -p ipv6-icmp --icmpv6-type 132 -j ACCEPT  # MLD Done
@@ -101,7 +102,7 @@ ip6tables -A INPUT -s ::/128          -j DROP           # Unspecified
 ip6tables-save > /etc/ip6tables.rules
 ```
 
-## Step 4: Rule Comparison — IPv4 vs IPv6
+## Step 4: Rule Comparison - IPv4 vs IPv6
 
 Mapping common IPv4 rules to IPv6 equivalents:
 
@@ -123,7 +124,7 @@ curl -6 -v https://your-server.example.com
 
 # Verify ICMPv6 works (NDP must function)
 ip -6 neigh show
-# Should show neighbors — if empty, NDP may be blocked
+# Should show neighbors - if empty, NDP may be blocked
 
 # Check path MTU discovery
 tracepath6 2001:4860:4860::8888
@@ -138,7 +139,7 @@ curl -6 https://ipv6.icanhazip.com
 Modern systems should use nftables for unified IPv4/IPv6 management:
 
 ```nftables
-# /etc/nftables.conf — unified IPv4/IPv6 rules
+# /etc/nftables.conf - unified IPv4/IPv6 rules
 
 table inet filter {
     chain input {
@@ -168,4 +169,4 @@ table inet filter {
 
 ## Conclusion
 
-IPv6 firewall planning requires three things IPv4 doesn't: allowing essential ICMPv6 types (NDP, PMTUD, MLD), creating separate or unified rulesets for IPv6, and understanding that IPv6 has no NAT so all addresses are routable. Never block all ICMPv6 — doing so breaks neighbor discovery and causes mysterious connectivity failures. Use nftables where possible for unified IPv4/IPv6 ruleset management, reducing the maintenance burden of maintaining parallel rule sets.
+IPv6 firewall planning requires three things IPv4 doesn't: allowing essential ICMPv6 types (NDP, PMTUD, MLD), creating separate or unified rulesets for IPv6, and understanding that IPv6 has no NAT so all addresses are routable. Never block all ICMPv6 - doing so breaks neighbor discovery and causes mysterious connectivity failures. Use nftables where possible for unified IPv4/IPv6 ruleset management, reducing the maintenance burden of maintaining parallel rule sets.

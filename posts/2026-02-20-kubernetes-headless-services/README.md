@@ -46,6 +46,7 @@ flowchart TD
 
 ```yaml
 # headless-service.yaml
+
 # Headless service for a PostgreSQL StatefulSet
 apiVersion: v1
 kind: Service

@@ -30,6 +30,7 @@ Before (GCR):
 
 ```hcl
 # Old GCR configuration - this resource will be deprecated
+
 resource "google_container_registry" "registry" {
   project  = var.project_id
   location = "US"

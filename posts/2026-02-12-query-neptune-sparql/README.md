@@ -30,6 +30,7 @@ Before querying, let's get some data in. You can load RDF data in several format
 
 ```turtle
 # social-network.ttl - sample RDF data in Turtle format
+
 @prefix : <http://example.org/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .

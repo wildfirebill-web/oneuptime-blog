@@ -96,6 +96,7 @@ To audit which syscalls a container attempts, temporarily use `SCMP_ACT_LOG` as 
 ```bash
 kubectl logs -n kube-system <node-agent-pod>
 # or on the node:
+
 dmesg | grep "seccomp"
 ```
 

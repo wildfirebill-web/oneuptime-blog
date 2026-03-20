@@ -30,6 +30,7 @@ Create three namespaces: one for ambient mode, one for sidecar mode, and one wit
 
 ```bash
 # Ambient namespace
+
 kubectl create namespace bench-ambient
 kubectl label namespace bench-ambient istio.io/dataplane-mode=ambient
 

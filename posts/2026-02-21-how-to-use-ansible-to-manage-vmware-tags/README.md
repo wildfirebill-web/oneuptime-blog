@@ -32,6 +32,7 @@ Tag categories define the groups that tags belong to. Each category has a cardin
 
 ```yaml
 # create-tag-categories.yml
+
 ---
 - name: Create VMware tag categories
   hosts: localhost

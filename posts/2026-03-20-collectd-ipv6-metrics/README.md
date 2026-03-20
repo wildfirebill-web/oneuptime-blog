@@ -12,6 +12,7 @@ Collectd is a lightweight system statistics daemon widely used in network monito
 
 ```xml
 # /etc/collectd/collectd.conf - IPv6 metrics collection
+
 Hostname "web-01.example.com"
 BaseDir "/var/lib/collectd"
 PIDFile "/var/run/collectd.pid"

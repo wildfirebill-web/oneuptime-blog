@@ -22,6 +22,7 @@ The simplest form encrypts a string you type interactively:
 
 ```bash
 # Encrypt a string interactively
+
 # You'll be prompted for the vault password, then the string to encrypt
 ansible-vault encrypt_string --name 'db_password'
 ```

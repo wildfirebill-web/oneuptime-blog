@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, DNS, dnsmasq, AAAA Records, Small Network
+Tags: IPv6, DNS, Dnsmasq, AAAA Records, Small Network
 
 Description: Learn how to add IPv6 AAAA records in dnsmasq for local network name resolution in home labs, small offices, and embedded Linux deployments.
 
@@ -14,10 +14,11 @@ dnsmasq is a lightweight DNS forwarder and DHCP server commonly used in small ne
 
 dnsmasq reads `/etc/hosts` by default. Adding IPv6 entries there serves both A and AAAA records:
 
-```
+```text
 # /etc/hosts
 
 # IPv4 entries
+
 192.168.1.10    server1.local server1
 192.168.1.20    server2.local server2
 

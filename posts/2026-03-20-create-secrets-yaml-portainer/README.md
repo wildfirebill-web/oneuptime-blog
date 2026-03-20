@@ -22,6 +22,7 @@ The `stringData` field accepts plain text values and Kubernetes encodes them aut
 
 ```yaml
 # Using stringData - NO base64 encoding needed
+
 apiVersion: v1
 kind: Secret
 metadata:

@@ -16,6 +16,7 @@ In Terraform, you cannot do this:
 
 ```hcl
 # THIS DOES NOT WORK IN TERRAFORM
+
 variable "environment" {
   type = string
 }

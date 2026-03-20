@@ -2,9 +2,10 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: rancher, gpu, monitoring, prometheus, grafana, dcgm
+Tags: Rancher, GPU, Monitoring, Prometheus, Grafana, Dcgm
 
 Description: Guide to setting up comprehensive GPU monitoring in Rancher using DCGM Exporter, Prometheus, and Grafana dashboards.
+
 ## Introduction
 
 Monitoring GPU usage is critical for optimizing utilization, diagnosing performance issues, and planning capacity. Rancher combined with NVIDIA DCGM Exporter and Prometheus provides rich GPU observability.
@@ -22,6 +23,7 @@ Monitoring GPU usage is critical for optimizing utilization, diagnosing performa
 
 ```yaml
 # dcgm-exporter-values.yaml (part of GPU Operator)
+
 dcgmExporter:
   enabled: true
   version: 3.2.5-3.1.8-ubuntu20.04

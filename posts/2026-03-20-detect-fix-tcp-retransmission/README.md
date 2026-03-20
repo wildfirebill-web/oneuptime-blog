@@ -14,6 +14,7 @@ A TCP retransmission occurs when the sender doesn't receive an ACK within the ex
 
 ```bash
 # Check kernel-wide TCP retransmission statistics
+
 netstat -s | grep -i "retransmit"
 # RetransSegs: 12345   <- total retransmitted segments since boot
 
@@ -47,7 +48,7 @@ tcpdump -r /tmp/retrans.pcap -n | awk '
 
 ## Wireshark Retransmission Analysis
 
-```
+```text
 # In Wireshark:
 # Filter: tcp.analysis.retransmission
 #   Shows all retransmitted packets (colored in red by default)

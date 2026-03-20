@@ -20,6 +20,7 @@ The `podman logs` command is the primary way to view container output.
 
 ```bash
 # View all logs from a container
+
 podman logs my-container
 
 # View logs using the container ID

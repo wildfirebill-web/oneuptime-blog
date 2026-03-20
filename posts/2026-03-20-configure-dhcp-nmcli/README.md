@@ -14,6 +14,7 @@ NetworkManager uses DHCP by default for new connections. Use `nmcli` to explicit
 
 ```bash
 # Change an existing static connection to DHCP
+
 nmcli connection modify "Wired connection 1" \
     ipv4.method auto \
     ipv4.addresses "" \

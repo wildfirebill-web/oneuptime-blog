@@ -733,6 +733,7 @@ public class ConsumerLagMonitor {
 
 ```bash
 # Describe consumer group and see lag
+
 kafka-consumer-groups.sh --bootstrap-server localhost:9092 \
   --describe --group my-consumer-group
 

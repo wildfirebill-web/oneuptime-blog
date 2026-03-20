@@ -48,6 +48,7 @@ Custom configurations let you specify exactly where leaders should be placed. Th
 
 ```bash
 # Create a custom multi-region configuration with European leader
+
 gcloud spanner instance-configs create custom-eur-config \
   --display-name="Custom Europe Leader Config" \
   --base-config=regional-europe-west1 \

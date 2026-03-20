@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Podman, Registries, Image Pull, Linux
+Tags: RHEL, Podman, Registry, Image Pull, Linux
 
 Description: A comprehensive guide to configuring container registries, authentication, mirror registries, and image pull policies for Podman on RHEL.
 
@@ -55,6 +55,7 @@ sudo vi /etc/containers/registries.conf
 
 ```toml
 # Registries searched when using short names
+
 unqualified-search-registries = ["registry.redhat.io", "registry.access.redhat.com", "docker.io", "quay.io"]
 ```
 

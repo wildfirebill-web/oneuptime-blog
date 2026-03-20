@@ -18,6 +18,7 @@ Registry configuration lives under `machine.registries` in the Talos machine con
 
 ```yaml
 # Basic registry configuration structure
+
 machine:
   registries:
     mirrors:

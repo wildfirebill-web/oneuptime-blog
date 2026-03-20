@@ -199,6 +199,7 @@ aws iam attach-role-policy \
 
 ```yaml
 # infrastructure/ebs-csi/helmrepository.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

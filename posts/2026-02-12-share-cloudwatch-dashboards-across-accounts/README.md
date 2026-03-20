@@ -55,6 +55,7 @@ Then create the role with minimal permissions:
 
 ```bash
 # Create the IAM role for cross-account dashboard viewing
+
 aws iam create-role \
   --role-name CloudWatchDashboardViewer \
   --assume-role-policy-document file://trust-policy.json

@@ -39,6 +39,7 @@ First, set up your address pools. You need separate pools for IPv4 and IPv6, or 
 
 ```yaml
 # ipaddresspool.yaml
+
 # Defines the pool of IPv4 addresses MetalLB can assign
 apiVersion: metallb.io/v1beta1
 kind: IPAddressPool

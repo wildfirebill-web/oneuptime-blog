@@ -1,8 +1,8 @@
-# How to Set Up Chaos Engineering with Litmus on Rancher
+# How to Set Up Chaos Engineering with Litmus on Rancher - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: rancher, litmus, chaos-engineering, resilience, kubernetes
+Tags: Rancher, Litmus, Chaos-engineering, Resilience, Kubernetes
 
 Description: A guide to setting up LitmusChaos on Rancher-managed Kubernetes clusters for chaos engineering experiments to improve application resilience.
 
@@ -18,6 +18,7 @@ LitmusChaos provides a catalog of chaos experiments (ChaosHub) including pod del
 
 ```bash
 # Add LitmusChaos Helm repository
+
 helm repo add litmuschaos https://litmuschaos.github.io/litmus-helm/
 helm repo update
 

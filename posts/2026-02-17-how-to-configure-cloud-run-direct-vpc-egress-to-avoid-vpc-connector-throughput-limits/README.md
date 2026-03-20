@@ -54,6 +54,7 @@ Before configuring Direct VPC Egress, you need:
 
 ```bash
 # Enable required APIs
+
 gcloud services enable run.googleapis.com compute.googleapis.com
 ```
 

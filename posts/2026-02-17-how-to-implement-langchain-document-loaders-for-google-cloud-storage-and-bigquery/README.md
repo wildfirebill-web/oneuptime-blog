@@ -25,6 +25,7 @@ Install the necessary packages:
 
 ```bash
 # Install LangChain with Google Cloud integrations
+
 pip install langchain langchain-google-community langchain-community google-cloud-storage google-cloud-bigquery
 ```
 

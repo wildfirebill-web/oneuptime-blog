@@ -28,6 +28,7 @@ Let's create an ExternalName service for an external PostgreSQL database hosted 
 
 ```yaml
 # external-database-service.yaml
+
 apiVersion: v1
 kind: Service
 metadata:

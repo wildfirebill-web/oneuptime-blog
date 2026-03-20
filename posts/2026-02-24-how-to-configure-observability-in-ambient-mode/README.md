@@ -267,6 +267,7 @@ After setting up observability, run a quick test to make sure data flows through
 
 ```bash
 # Generate some traffic
+
 kubectl run test-client -n default --image=curlimages/curl --rm -it -- sh -c 'for i in $(seq 1 100); do curl -s http://my-app.default.svc.cluster.local:8080/health; done'
 
 # Check ztunnel metrics

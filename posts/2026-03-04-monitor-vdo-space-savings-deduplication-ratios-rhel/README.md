@@ -14,6 +14,7 @@ Monitoring VDO (Virtual Data Optimizer) volumes is essential to understand how e
 
 ```bash
 # Get a human-readable overview of all VDO volumes
+
 sudo vdostats --human-readable
 
 # Sample output:

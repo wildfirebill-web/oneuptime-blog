@@ -26,6 +26,7 @@ Producer throughput is influenced by several factors:
 
 ```properties
 # Batch size in bytes (default: 16384)
+
 batch.size=65536
 
 # Time to wait for batch to fill (default: 0)

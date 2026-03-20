@@ -20,6 +20,7 @@ The Terraform Rancher2 provider is the official way to manage Rancher resources 
 
 ```hcl
 # provider-methods.tf - Different authentication approaches
+
 # Method 1: API Token (recommended for CI/CD)
 provider "rancher2" {
   api_url   = "https://rancher.example.com"

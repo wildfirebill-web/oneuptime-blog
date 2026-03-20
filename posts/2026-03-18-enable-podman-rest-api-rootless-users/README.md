@@ -31,6 +31,7 @@ Ensure your system supports rootless containers.
 
 ```bash
 # Check that your user has subordinate UID/GID ranges
+
 grep $USER /etc/subuid
 grep $USER /etc/subgid
 

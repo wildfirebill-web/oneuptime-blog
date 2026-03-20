@@ -2,11 +2,11 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Modules, Refactoring, moved Blocks, Infrastructure as Code
+Tags: OpenTofu, Modules, Refactoring, Moved Blocks, Infrastructure as Code
 
 Description: Learn how to break apart a monolithic OpenTofu configuration into reusable modules without disrupting running infrastructure.
 
-Monolithic configurations — all resources in a single directory — become unmanageable as they grow. Refactoring them into modules improves organization, enables reuse, and makes it easier for multiple teams to work on infrastructure concurrently. This guide provides a step-by-step approach using `moved` blocks for safe migration.
+Monolithic configurations - all resources in a single directory - become unmanageable as they grow. Refactoring them into modules improves organization, enables reuse, and makes it easier for multiple teams to work on infrastructure concurrently. This guide provides a step-by-step approach using `moved` blocks for safe migration.
 
 ## Signs You Need Modularization
 
@@ -19,7 +19,7 @@ Monolithic configurations — all resources in a single directory — become unm
 
 Group resources by domain:
 
-```
+```text
 Monolithic main.tf (500+ lines)
 ├── VPC, subnets, route tables, internet gateway → modules/networking/
 ├── Security groups → modules/networking/ or modules/security/
@@ -34,6 +34,7 @@ Monolithic main.tf (500+ lines)
 mkdir -p modules/{networking,compute,database,storage,iam}
 
 # Each module gets these files
+
 for mod in networking compute database storage iam; do
   touch modules/$mod/{main.tf,variables.tf,outputs.tf}
 done
@@ -97,7 +98,7 @@ module "compute" {
 
 ## Step 5: Add moved Blocks for All Migrated Resources
 
-This is the critical step — map every resource from its old root address to its new module address:
+This is the critical step - map every resource from its old root address to its new module address:
 
 ```hcl
 # moved.tf
@@ -141,4 +142,4 @@ tofu apply
 
 ## Conclusion
 
-Modularizing a monolithic configuration is a multi-step process that requires planning, careful `moved` block authoring, and incremental verification. Take it one module at a time, run `tofu plan` after each batch of `moved` blocks, and never apply until the plan shows only moves — no creates or destroys.
+Modularizing a monolithic configuration is a multi-step process that requires planning, careful `moved` block authoring, and incremental verification. Take it one module at a time, run `tofu plan` after each batch of `moved` blocks, and never apply until the plan shows only moves - no creates or destroys.

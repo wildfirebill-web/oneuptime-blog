@@ -26,6 +26,7 @@ You need to identify the time ranges:
 
 ```bash
 # Deployment happened at 2026-02-05 14:30:00 UTC
+
 # Baseline: 1 hour before deployment
 BASELINE_FROM="2026-02-05T13:30:00Z"
 BASELINE_UNTIL="2026-02-05T14:30:00Z"

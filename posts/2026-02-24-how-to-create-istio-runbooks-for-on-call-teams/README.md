@@ -33,6 +33,7 @@ Step 1: Identify which services are affected:
 
 ```bash
 # Check which services have high error rates
+
 kubectl exec -it deploy/istio-ingressgateway -n istio-system -c istio-proxy -- \
   pilot-agent request GET stats | grep "upstream_rq_5xx"
 ```

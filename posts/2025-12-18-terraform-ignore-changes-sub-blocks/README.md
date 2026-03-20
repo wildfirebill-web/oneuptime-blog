@@ -385,6 +385,7 @@ flowchart TD
 
 ```hcl
 # WRONG - missing index for list blocks
+
 lifecycle {
   ignore_changes = [root_block_device.volume_size]
 }

@@ -30,6 +30,7 @@ Enable the Operator Identity Management Beta feature:
 
 ```bash
 # Check current Cilium version (requires 1.13+)
+
 cilium version
 
 # Enable Operator-managed identities via Helm

@@ -16,6 +16,7 @@ The key etcd flags for IPv6:
 
 ```bash
 # etcd listen and advertise addresses for IPv6
+
 --listen-peer-urls=https://[2001:db8::1]:2380
 --listen-client-urls=https://[2001:db8::1]:2379,https://[::1]:2379
 --initial-advertise-peer-urls=https://[2001:db8::1]:2380

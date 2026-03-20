@@ -108,6 +108,7 @@ Avoid these patterns that break idempotency:
 
 ```python
 # BAD: Always writes file regardless of current content
+
 with open(path, 'w') as f:
     f.write(content)
 module.exit_json(changed=True)  # Always reports changed!

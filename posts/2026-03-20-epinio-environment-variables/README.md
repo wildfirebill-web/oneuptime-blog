@@ -21,6 +21,7 @@ How to Configure Epinio Application Environment Variables demonstrates how Epini
 
 ```bash
 # Create application directory
+
 mkdir my-app && cd my-app
 
 # Initialize the application

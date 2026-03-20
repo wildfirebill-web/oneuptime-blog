@@ -25,6 +25,7 @@ The `platform` directive specifies the target operating system and architecture 
 
 ```yaml
 # Specify the target platform for a service
+
 version: "3.8"
 
 services:

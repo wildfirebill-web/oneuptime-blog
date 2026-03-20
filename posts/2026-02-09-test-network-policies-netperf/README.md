@@ -104,6 +104,7 @@ Run baseline netperf tests:
 
 ```bash
 # Run TCP throughput test
+
 kubectl exec -n test-client deployment/netperf-client -- \
   netperf -H netperf-server.default.svc.cluster.local -l 30 -t TCP_STREAM
 

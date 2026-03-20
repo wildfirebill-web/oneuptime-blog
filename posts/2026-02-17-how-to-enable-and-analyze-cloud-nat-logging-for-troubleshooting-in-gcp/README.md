@@ -18,6 +18,7 @@ Cloud NAT logging is disabled by default. Enable it on your NAT gateway:
 
 ```bash
 # Enable logging with all events
+
 gcloud compute routers nats update your-nat-gateway \
   --router=your-router \
   --region=us-central1 \

@@ -37,6 +37,7 @@ flowchart TD
 
 ```bash
 # List all history entries for an application
+
 # Shows revision number, deployment time, and sync status
 argocd app history myapp
 

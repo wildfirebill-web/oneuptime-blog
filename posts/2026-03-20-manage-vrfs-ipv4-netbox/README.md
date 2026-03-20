@@ -21,6 +21,7 @@ Via web UI: IPAM → VRFs → + Add
 
 ```bash
 # Create a VRF via API
+
 # "enforce_unique" prevents duplicate IPs within the VRF
 curl -X POST \
   -H "Authorization: Token <TOKEN>" \

@@ -14,6 +14,7 @@ GCP Assured Workloads creates compliance-controlled environments by restricting 
 
 ```hcl
 # main.tf - Assured Workloads folder with FedRAMP Moderate controls
+
 resource "google_assured_workloads_workload" "fedramp_workload" {
   display_name       = "FedRAMP Moderate Workload"
   compliance_regime  = "FEDRAMP_MODERATE"

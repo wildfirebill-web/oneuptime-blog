@@ -16,6 +16,7 @@ This is useful when a server connects to a switch configured for trunking, or wh
 
 ```bash
 # Verify the 8021q kernel module is available
+
 modinfo 8021q
 
 # Load it if it isn't already loaded

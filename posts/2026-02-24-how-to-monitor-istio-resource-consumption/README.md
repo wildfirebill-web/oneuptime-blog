@@ -25,6 +25,7 @@ The quickest way to check current resource usage:
 
 ```bash
 # Control plane resource usage
+
 kubectl top pods -n istio-system
 
 # Sidecar resource usage in a specific namespace
@@ -283,7 +284,7 @@ spec:
 
 These recording rules let you query historical trends like "how has average sidecar memory usage changed over the last 30 days?"
 
-## Resource Monitoring Checklist
+Resource Monitoring Checklist
 
 Here is a quick checklist for comprehensive Istio resource monitoring:
 

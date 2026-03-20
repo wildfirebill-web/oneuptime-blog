@@ -14,6 +14,7 @@ Description: A practical guide to using curl for testing HTTP and HTTPS endpoint
 
 ```bash
 # Fetch a URL and print response body to stdout
+
 curl https://example.com
 
 # Fetch headers only (-I = HEAD request)

@@ -14,8 +14,9 @@ GitHub Actions is one of the most popular CI/CD platforms for infrastructure aut
 
 Start with a simple workflow that runs plan on pull requests and apply on merge to main:
 
-```yaml
+````yaml
 # .github/workflows/opentofu.yml
+
 name: OpenTofu
 
 on:
@@ -83,9 +84,9 @@ jobs:
 
             const body = `## OpenTofu Plan
 
-            \`\`\`
+            ```
             ${truncated}
-            \`\`\`
+            ```
 
             *Pushed by: @${{ github.actor }}*`;
 
@@ -157,7 +158,7 @@ jobs:
       - name: Apply
         working-directory: ${{ env.WORKING_DIR }}
         run: tofu apply -auto-approve plan.bin
-```
+````
 
 ## Setting Up OIDC Authentication
 
@@ -386,7 +387,7 @@ jobs:
               owner: context.repo.owner,
               repo: context.repo.repo,
               title: 'Infrastructure Drift Detected',
-              body: `## Drift Report\n\n\`\`\`\n${drift}\n\`\`\``,
+              body: `## Drift Report\n\n```\n${drift}\n````,
               labels: ['infrastructure', 'drift'],
             });
 ```

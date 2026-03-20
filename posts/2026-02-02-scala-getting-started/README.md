@@ -31,6 +31,7 @@ The easiest way to get started is using Coursier, the Scala installer. It sets u
 
 ```bash
 # On macOS with Homebrew
+
 brew install coursier/formulas/coursier && cs setup
 
 # On Linux

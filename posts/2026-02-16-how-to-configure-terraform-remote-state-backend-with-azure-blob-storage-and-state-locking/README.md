@@ -36,6 +36,7 @@ Here is a script to create the resources using the Azure CLI:
 
 ```bash
 # Set variables for the storage account
+
 RESOURCE_GROUP_NAME="rg-terraform-state"
 STORAGE_ACCOUNT_NAME="tfstate$(openssl rand -hex 4)"
 CONTAINER_NAME="tfstate"

@@ -26,6 +26,7 @@ A positive value means "older than" and a negative value means "newer than":
 
 ```yaml
 # Find files older than 30 days
+
 - name: Find log files older than 30 days
   ansible.builtin.find:
     paths: /var/log/myapp

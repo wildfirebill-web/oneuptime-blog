@@ -34,6 +34,7 @@ Configure the Spanner connection in `application.properties`:
 
 ```properties
 # Spanner instance and database configuration
+
 spring.cloud.gcp.spanner.instance-id=my-instance
 spring.cloud.gcp.spanner.database=my-database
 spring.cloud.gcp.project-id=my-project

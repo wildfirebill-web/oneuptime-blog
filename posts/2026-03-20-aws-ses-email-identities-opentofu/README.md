@@ -14,6 +14,7 @@ AWS Simple Email Service (SES) requires you to verify domain or email address id
 
 ```hcl
 # Verify a single email address (AWS sends a confirmation email)
+
 resource "aws_ses_email_identity" "sender" {
   email = "noreply@example.com"
 }

@@ -45,6 +45,7 @@ Here is a Terraform configuration that provisions an RDS instance and generates 
 
 ```bash
 # terraform/main.tf structure
+
 # This file provisions infrastructure and generates K8s manifests
 ```
 

@@ -122,6 +122,7 @@ You can also manually install dependencies using the deno install command:
 
 ```bash
 # Install all dependencies defined in deno.json
+
 deno install
 
 # This creates a node_modules directory with all packages

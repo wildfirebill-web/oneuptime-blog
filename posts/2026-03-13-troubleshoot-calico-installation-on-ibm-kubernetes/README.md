@@ -29,6 +29,7 @@ IKS requires specific configuration for calicoctl to access the Calico datastore
 
 ```bash
 # Download IKS-specific calicoctl configuration
+
 ibmcloud ks cluster config --cluster <cluster-id> --admin --network
 
 # Verify calicoctl can connect to the IKS datastore

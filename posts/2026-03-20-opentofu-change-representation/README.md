@@ -4,15 +4,15 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: OpenTofu, Plan Output, Change Representation, Infrastructure as Code, DevOps
 
-Description: Learn how to read OpenTofu plan output — understanding the symbols, colors, and JSON change representations that indicate what will be created, updated, replaced, or destroyed.
+Description: Learn how to read OpenTofu plan output - understanding the symbols, colors, and JSON change representations that indicate what will be created, updated, replaced, or destroyed.
 
 ## Introduction
 
-OpenTofu's plan output uses a consistent set of symbols and annotations to represent what will happen to each resource. Reading plans accurately is a critical skill — it's your last line of defense before changes reach production.
+OpenTofu's plan output uses a consistent set of symbols and annotations to represent what will happen to each resource. Reading plans accurately is a critical skill - it's your last line of defense before changes reach production.
 
 ## Plan Symbols
 
-```
+```text
 + create          Green:  New resource will be created
 - destroy         Red:    Resource will be deleted
 ~ update in-place Yellow: Resource modified without recreation
@@ -25,7 +25,8 @@ OpenTofu's plan output uses a consistent set of symbols and annotations to repre
 ## Create (+)
 
 ```hcl
-# This resource doesn't exist in state — will be created
+# This resource doesn't exist in state - will be created
+
 resource "aws_s3_bucket" "new" {
   bucket = "my-new-bucket"
 }
@@ -33,7 +34,7 @@ resource "aws_s3_bucket" "new" {
 
 Plan output:
 
-```
+```hcl
   # aws_s3_bucket.new will be created
   + resource "aws_s3_bucket" "new" {
       + arn                         = (known after apply)
@@ -46,7 +47,7 @@ Plan output:
 ## Update In-Place (~)
 
 ```hcl
-# Only the tags changed — AWS can update this without recreation
+# Only the tags changed - AWS can update this without recreation
 resource "aws_s3_bucket" "existing" {
   bucket = "my-existing-bucket"
   tags = { Environment = "prod" }  # was "staging"
@@ -55,7 +56,7 @@ resource "aws_s3_bucket" "existing" {
 
 Plan output:
 
-```
+```hcl
   # aws_s3_bucket.existing will be updated in-place
   ~ resource "aws_s3_bucket" "existing" {
       ~ tags = {
@@ -79,7 +80,7 @@ resource "aws_instance" "web" {
 
 Plan output:
 
-```
+```hcl
   # aws_instance.web must be replaced
 -/+ resource "aws_instance" "web" {
       ~ ami                   = "ami-old-version" -> "ami-new-version" # forces replacement
@@ -107,7 +108,7 @@ resource "aws_instance" "web" {
 
 Plan output shows `+/-` instead of `-/+`:
 
-```
+```hcl
   # aws_instance.web must be replaced
 +/- resource "aws_instance" "web" {
       ~ ami = "ami-old-version" -> "ami-new-version" # forces replacement
@@ -142,7 +143,7 @@ Actions array in JSON:
 
 ## Reading Sensitive Value Changes
 
-```
+```hcl
   # aws_db_instance.postgres will be updated in-place
   ~ resource "aws_db_instance" "postgres" {
       ~ password = (sensitive value)
@@ -150,11 +151,11 @@ Actions array in JSON:
     }
 ```
 
-Sensitive values show as `(sensitive value)` — they're changed but not displayed in the plan.
+Sensitive values show as `(sensitive value)` - they're changed but not displayed in the plan.
 
 ## Reading (known after apply)
 
-```
+```hcl
   + resource "aws_instance" "web" {
       + id         = (known after apply)
       + public_ip  = (known after apply)
@@ -169,7 +170,7 @@ Sensitive values show as `(sensitive value)` — they're changed but not display
 
 Watch for these before approving:
 
-```
+```hcl
 1. Unexpected -/+ (recreation): Will cause downtime
    Check if there's a lifecycle.create_before_destroy option
 

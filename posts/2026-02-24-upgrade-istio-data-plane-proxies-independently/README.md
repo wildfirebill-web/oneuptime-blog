@@ -36,6 +36,7 @@ Before upgrading anything, know where each proxy stands:
 
 ```bash
 # List all proxies and their versions
+
 istioctl proxy-status
 ```
 

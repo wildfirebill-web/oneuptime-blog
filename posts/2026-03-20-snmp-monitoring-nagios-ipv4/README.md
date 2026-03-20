@@ -14,6 +14,7 @@ Nagios uses the Net-SNMP tools and the `check_snmp` plugin (from nagios-plugins)
 
 ```bash
 # Install Nagios Core and plugins (Ubuntu/Debian)
+
 sudo apt-get install -y nagios4 nagios-plugins
 
 # Install Net-SNMP tools for check_snmp
@@ -27,7 +28,7 @@ sudo download-mibs
 
 Create a host configuration file for a Cisco router:
 
-```
+```text
 # /etc/nagios4/conf.d/cisco-router.cfg
 
 define host {
@@ -47,7 +48,7 @@ define host {
 
 Define service checks for common SNMP metrics:
 
-```
+```text
 # Check system uptime via SNMP
 define service {
     host_name               core-router-01
@@ -84,7 +85,7 @@ define service {
 
 Define the check_snmp command template:
 
-```
+```bash
 # /etc/nagios4/conf.d/commands.cfg
 
 define command {

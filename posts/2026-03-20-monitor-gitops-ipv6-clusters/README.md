@@ -13,7 +13,7 @@ Monitoring GitOps deployments in IPv6 clusters requires visibility into both the
 ## ArgoCD Metrics for IPv6 Cluster Monitoring
 
 ```yaml
-# argocd-metrics-scrape.yaml — Prometheus ServiceMonitor for ArgoCD
+# argocd-metrics-scrape.yaml - Prometheus ServiceMonitor for ArgoCD
 
 apiVersion: monitoring.coreos.com/v1
 kind: ServiceMonitor
@@ -31,6 +31,7 @@ spec:
 
 ---
 # ArgoCD server metrics (application sync status)
+
 apiVersion: monitoring.coreos.com/v1
 kind: ServiceMonitor
 metadata:
@@ -64,7 +65,7 @@ time() - argocd_app_info{sync_status="Synced"} * on(name, namespace) group_right
 ## Flux CD Metrics for IPv6 Cluster
 
 ```yaml
-# flux-metrics.yaml — Prometheus scrape for Flux controllers
+# flux-metrics.yaml - Prometheus scrape for Flux controllers
 
 apiVersion: monitoring.coreos.com/v1
 kind: PodMonitor
@@ -126,7 +127,7 @@ groups:
           severity: critical
         annotations:
           summary: "Flux GitRepository {{ $labels.name }} is not ready"
-          description: "Cannot fetch from Git repository — check IPv6 connectivity"
+          description: "Cannot fetch from Git repository - check IPv6 connectivity"
 
       # ArgoCD cannot connect to Git (IPv6 connectivity issue)
       - alert: ArgoCDGitFetchErrors
@@ -136,13 +137,13 @@ groups:
           severity: warning
         annotations:
           summary: "ArgoCD Git fetch errors"
-          description: "ArgoCD failing to fetch from Git — check IPv6 Git server"
+          description: "ArgoCD failing to fetch from Git - check IPv6 Git server"
 ```
 
 ## Blackbox Exporter: Probe Deployed IPv6 Services
 
 ```yaml
-# blackbox-ipv6-probes.yaml — Check deployed services are reachable over IPv6
+# blackbox-ipv6-probes.yaml - Check deployed services are reachable over IPv6
 
 apiVersion: monitoring.coreos.com/v1
 kind: Probe
@@ -167,7 +168,7 @@ spec:
 ```
 
 ```yaml
-# blackbox.yml — HTTP module for IPv6 probing
+# blackbox.yml - HTTP module for IPv6 probing
 modules:
   http_2xx_ipv6:
     prober: http
@@ -241,4 +242,4 @@ kubectl exec -n flux-system deployment/source-controller -- \
 
 ## Conclusion
 
-Monitoring GitOps deployments in IPv6 clusters involves scraping ArgoCD and Flux CD metrics with Prometheus ServiceMonitor or PodMonitor resources, and adding alert rules for sync failures and Git source connectivity errors. The most valuable alerts catch Git repository fetch failures early — these often indicate IPv6 connectivity issues between the GitOps controller and the Git server. Supplement GitOps-level monitoring with Blackbox Exporter probes using `preferred_ip_protocol: ip6` to verify that deployed applications are actually reachable over IPv6. Grafana dashboards combining sync status, source health, and IPv6 service probe results provide complete GitOps visibility for IPv6 clusters.
+Monitoring GitOps deployments in IPv6 clusters involves scraping ArgoCD and Flux CD metrics with Prometheus ServiceMonitor or PodMonitor resources, and adding alert rules for sync failures and Git source connectivity errors. The most valuable alerts catch Git repository fetch failures early - these often indicate IPv6 connectivity issues between the GitOps controller and the Git server. Supplement GitOps-level monitoring with Blackbox Exporter probes using `preferred_ip_protocol: ip6` to verify that deployed applications are actually reachable over IPv6. Grafana dashboards combining sync status, source health, and IPv6 service probe results provide complete GitOps visibility for IPv6 clusters.

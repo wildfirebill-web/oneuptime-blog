@@ -16,6 +16,7 @@ The `--become` flag tells Ansible to execute the task with elevated privileges. 
 
 ```bash
 # Without --become: runs as your SSH user
+
 ansible all -a "whoami"
 # Output: deploy
 

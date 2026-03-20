@@ -33,6 +33,7 @@ Before implementing anything, define your labeling standard. Every organization 
 
 ```yaml
 # Standard cost allocation labels
+
 metadata:
   labels:
     # Who owns this resource

@@ -33,6 +33,7 @@ Start with a chart showing requests per second. This gives you a baseline for wh
 
 ```text
 # Total request rate across all URL map rules
+
 fetch https_lb_rule
 | metric 'loadbalancing.googleapis.com/https/request_count'
 | group_by [matched_url_path_rule], [val: rate(value.request_count)]

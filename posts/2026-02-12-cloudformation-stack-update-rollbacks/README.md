@@ -44,6 +44,7 @@ First, figure out what went wrong:
 
 ```bash
 # Find the first failure event in the stack
+
 aws cloudformation describe-stack-events \
   --stack-name my-app-prod \
   --query 'StackEvents[?ResourceStatus==`UPDATE_FAILED`].[Timestamp,LogicalResourceId,ResourceStatusReason]' \

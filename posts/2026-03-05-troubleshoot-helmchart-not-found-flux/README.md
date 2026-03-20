@@ -34,6 +34,7 @@ Start by examining the HelmChart resource status for specific error details.
 
 ```bash
 # Get the HelmChart status with conditions
+
 kubectl get helmchart -n flux-system -o wide
 
 # Describe the HelmChart for full condition details

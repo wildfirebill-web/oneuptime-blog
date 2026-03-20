@@ -28,6 +28,7 @@ The first step is creating a schematic that describes what your ISO should conta
 
 ```yaml
 # bare-metal-schematic.yaml
+
 # Schematic for Intel-based bare metal servers
 customization:
   systemExtensions:

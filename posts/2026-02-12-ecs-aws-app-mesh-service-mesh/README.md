@@ -46,6 +46,7 @@ Start by creating a mesh. This is straightforward:
 
 ```bash
 # Create the mesh - this is the top-level container for everything
+
 aws appmesh create-mesh \
   --mesh-name my-app-mesh \
   --spec egressFilter={type=DROP_ALL}

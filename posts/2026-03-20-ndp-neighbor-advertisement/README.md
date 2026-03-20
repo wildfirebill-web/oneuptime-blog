@@ -12,7 +12,7 @@ Neighbor Advertisement (NA) is ICMPv6 Type 136, the IPv6 replacement for ARP rep
 
 ## NA Message Format
 
-```
+```text
 ICMPv6 Neighbor Advertisement (Type 136):
 
  0                   1                   2                   3
@@ -36,7 +36,7 @@ IPv6 Header:
 
 ## NA Flags: R, S, O
 
-```
+```text
 R flag (Router):
   1 = The sender is a router
   0 = The sender is a host
@@ -59,7 +59,7 @@ O flag (Override):
 
 ## Solicited vs Unsolicited NA
 
-```
+```text
 Solicited NA (sent in response to NS):
   Source:      Owner of the Target Address
   Destination: Unicast to the NS sender (or ff02::1 for DAD response)
@@ -81,6 +81,7 @@ Unsolicited NA (proactive advertisement):
 
 ```bash
 # Capture all Neighbor Advertisement messages
+
 sudo tcpdump -i eth0 -v "icmp6 and ip6[40] == 136"
 
 # Capture unsolicited NAs (sent to ff02::1)
@@ -145,4 +146,4 @@ def parse_neighbor_advertisement(na_data: bytes) -> dict:
 
 ## Conclusion
 
-Neighbor Advertisement is the reply to Neighbor Solicitation and the proactive announcement of address changes. The three flags — Router (R), Solicited (S), and Override (O) — precisely communicate the nature and intent of the advertisement. Solicited NAs confirm reachability and trigger REACHABLE state in the neighbor cache. Unsolicited NAs with O=1 update all neighbors' caches when a MAC address changes, preventing stale cache entries after failover. The Hop Limit of 255 prevents spoofed NAs from remote attackers.
+Neighbor Advertisement is the reply to Neighbor Solicitation and the proactive announcement of address changes. The three flags - Router (R), Solicited (S), and Override (O) - precisely communicate the nature and intent of the advertisement. Solicited NAs confirm reachability and trigger REACHABLE state in the neighbor cache. Unsolicited NAs with O=1 update all neighbors' caches when a MAC address changes, preventing stale cache entries after failover. The Hop Limit of 255 prevents spoofed NAs from remote attackers.

@@ -402,6 +402,7 @@ The application manifests include Rollout resources:
 
 ```yaml
 # rollouts/rollout.yaml
+
 apiVersion: argoproj.io/v1alpha1
 kind: Rollout
 metadata:

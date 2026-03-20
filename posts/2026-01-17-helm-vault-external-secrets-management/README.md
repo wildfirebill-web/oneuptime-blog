@@ -64,6 +64,7 @@ helm repo add hashicorp https://helm.releases.hashicorp.com
 helm repo update
 
 # Search available versions
+
 helm search repo hashicorp/vault --versions
 ```
 

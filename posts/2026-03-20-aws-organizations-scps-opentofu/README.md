@@ -20,6 +20,7 @@ Service Control Policies (SCPs) are organizational policies that set maximum per
 
 ```hcl
 # Data source to get the organization details
+
 data "aws_organizations_organization" "main" {}
 
 # Create an OU structure
@@ -167,4 +168,4 @@ tofu apply
 
 ## Conclusion
 
-SCPs are the most powerful governance tool in AWS Organizations—they apply to all principals in an account, including the root user, and cannot be overridden by account-level policies. Use them for immutable guardrails: region restrictions, protecting audit infrastructure, preventing privilege escalation, and enforcing tagging. Remember that SCPs only deny—they don't grant permissions. Accounts still need identity-based policies to allow actions within the SCP's allowed boundary.
+SCPs are the most powerful governance tool in AWS Organizations-they apply to all principals in an account, including the root user, and cannot be overridden by account-level policies. Use them for immutable guardrails: region restrictions, protecting audit infrastructure, preventing privilege escalation, and enforcing tagging. Remember that SCPs only deny-they don't grant permissions. Accounts still need identity-based policies to allow actions within the SCP's allowed boundary.

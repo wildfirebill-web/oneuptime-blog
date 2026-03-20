@@ -35,6 +35,7 @@ Every chaos runbook should have these sections:
 **Prerequisites**:
 ```bash
 # Verify the namespace exists and has Istio injection
+
 kubectl get namespace bookinfo --show-labels
 
 # Verify all pods are running

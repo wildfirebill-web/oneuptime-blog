@@ -28,6 +28,7 @@ Let us start with the most basic loop.
 
 ```hcl
 # templates/packages.sh.tpl
+
 #!/bin/bash
 apt-get update -y
 

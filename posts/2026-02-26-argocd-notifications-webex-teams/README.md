@@ -26,6 +26,7 @@ Next, get the Room ID where you want to send messages:
 
 ```bash
 # List rooms the bot belongs to
+
 curl -X GET https://webexapis.com/v1/rooms \
   -H "Authorization: Bearer YOUR_BOT_TOKEN"
 ```

@@ -14,6 +14,7 @@ Leapp is Red Hat's official tool for in-place major version upgrades. It upgrade
 
 ```bash
 # Ensure RHEL 7 is fully updated
+
 sudo yum update -y
 
 # Verify your subscription provides access to RHEL 8 content

@@ -69,6 +69,7 @@ Controls how aggressively the kernel swaps memory pages. Lower values keep more 
 
 ```bash
 # View current value
+
 sysctl vm.swappiness
 
 # Set to 10 (good for servers)

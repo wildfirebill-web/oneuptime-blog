@@ -18,6 +18,7 @@ You need the Organization Policy Administrator role at the organization level to
 
 ```hcl
 # Provider configuration
+
 provider "google" {
   project = var.project_id
   region  = var.region

@@ -24,6 +24,7 @@ Or from the command line:
 
 ```bash
 # Enable the screen reader via GNOME settings
+
 gsettings set org.gnome.desktop.a11y.applications screen-reader-enabled true
 
 # Start Orca immediately

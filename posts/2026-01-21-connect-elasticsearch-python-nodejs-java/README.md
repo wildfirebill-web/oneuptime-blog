@@ -32,6 +32,7 @@ pip install elasticsearch[async]
 from elasticsearch import Elasticsearch
 
 # Connect to local Elasticsearch
+
 es = Elasticsearch("https://localhost:9200")
 
 # Check connection

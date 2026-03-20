@@ -41,7 +41,7 @@ graph TB
 
 Before optimizing, you need visibility into where waste exists. Start by collecting utilization data across all resources.
 
-### Resource Utilization Analysis Script
+Resource Utilization Analysis Script
 
 This Python script analyzes AWS EC2 instance utilization using CloudWatch metrics to identify optimization candidates.
 
@@ -165,6 +165,7 @@ class ResourceAnalyzer:
         return report
 
 # Run the analysis
+
 if __name__ == '__main__':
     analyzer = ResourceAnalyzer(region='us-east-1')
     report = analyzer.generate_report()

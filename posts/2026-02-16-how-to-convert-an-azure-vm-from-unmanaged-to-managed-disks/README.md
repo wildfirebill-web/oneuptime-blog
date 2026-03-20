@@ -46,6 +46,7 @@ First, verify whether your VM is using managed or unmanaged disks:
 
 ```bash
 # Check the OS disk type - if managedDisk is null, it is unmanaged
+
 az vm show \
   --resource-group myResourceGroup \
   --name myVM \

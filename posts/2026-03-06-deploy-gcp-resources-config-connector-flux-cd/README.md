@@ -38,6 +38,7 @@ If you are using GKE, enable the Config Connector add-on. For non-GKE clusters, 
 
 ```yaml
 # config-connector-helmrelease.yaml
+
 # HelmRelease to install Config Connector operator
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository

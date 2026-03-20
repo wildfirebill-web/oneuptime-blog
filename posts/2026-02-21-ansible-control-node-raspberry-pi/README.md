@@ -36,6 +36,7 @@ After booting, update the system:
 
 ```bash
 # Update everything to latest
+
 sudo apt update && sudo apt upgrade -y
 
 # Install basic tools

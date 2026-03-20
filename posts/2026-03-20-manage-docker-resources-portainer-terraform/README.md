@@ -8,7 +8,7 @@ Description: Learn how to manage Docker containers, networks, and volumes in Por
 
 ## Overview
 
-Beyond stacks and environments, the Portainer Terraform provider supports managing individual Docker resources — giving you fine-grained control over standalone containers, custom networks, and named volumes as code.
+Beyond stacks and environments, the Portainer Terraform provider supports managing individual Docker resources - giving you fine-grained control over standalone containers, custom networks, and named volumes as code.
 
 ## Managing Docker Networks
 
@@ -16,6 +16,7 @@ Beyond stacks and environments, the Portainer Terraform provider supports managi
 # networks.tf
 
 # Create a custom bridge network
+
 resource "portainer_docker_network" "app_network" {
   endpoint_id = portainer_environment.production.id
 

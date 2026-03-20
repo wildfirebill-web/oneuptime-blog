@@ -67,6 +67,7 @@ Flux will commit its own manifests to `clusters/production/flux-system/` if they
 
 ```bash
 # Watch the bootstrap progress
+
 flux get all -A --watch
 ```
 

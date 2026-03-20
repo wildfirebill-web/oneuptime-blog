@@ -31,6 +31,7 @@ dracut organizes functionality into modules. Each module is a directory containi
 
 ```bash
 # List all available dracut modules
+
 dracut --list-modules
 
 # Show which modules are currently included in the initramfs

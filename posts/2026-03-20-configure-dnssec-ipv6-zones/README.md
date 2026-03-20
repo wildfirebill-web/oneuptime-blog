@@ -24,6 +24,7 @@ DNSSEC cryptographically signs DNS records, preventing attackers from injecting 
 
 ```bash
 # Create directory for DNSSEC keys
+
 mkdir -p /etc/named/keys/example.com
 cd /etc/named/keys/example.com
 

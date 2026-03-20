@@ -47,6 +47,7 @@ Use Flux's Helm controller to install Istio in a GitOps-friendly way.
 
 ```yaml
 # infrastructure/istio/namespace.yaml
+
 apiVersion: v1
 kind: Namespace
 metadata:

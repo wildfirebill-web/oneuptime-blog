@@ -45,6 +45,7 @@ Start with a minimal configuration:
 
 ```yaml
 # Basic Kubelet Stats Receiver configuration
+
 # Collects metrics from the local node's Kubelet
 receivers:
   kubeletstats:
@@ -318,7 +319,7 @@ receivers:
 
 In production, avoid `insecure_skip_verify: true`. Instead, configure proper certificate validation. The service account CA certificate is automatically mounted into pods.
 
-## Resource Attributes
+Resource Attributes
 
 The receiver automatically adds Kubernetes metadata:
 
@@ -833,7 +834,7 @@ If node-level metrics are missing:
 
 ## Use Cases
 
-### Resource Optimization
+Resource Optimization
 
 Kubelet Stats helps rightsize containers:
 

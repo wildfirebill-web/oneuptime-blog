@@ -12,7 +12,7 @@ The Segment Routing Header (SRH) is an IPv6 Routing Header (Type 4), defined in 
 
 ## SRH Wire Format
 
-```
+```text
  0                   1                   2                   3
  0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
 +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
@@ -57,7 +57,7 @@ The Segment Routing Header (SRH) is an IPv6 Routing Header (Type 4), defined in 
 
 **Critical**: The segment list is stored in **reverse order**. The first SID to visit is at index [Last Entry], and the final destination is at index [0].
 
-```
+```text
 Example path: A → B → C → D
 
 Segment List in SRH:
@@ -81,7 +81,7 @@ def process_srh(packet):
     sid_function = lookup_local_sid(packet.ipv6.destination)
 
     if sid_function is None:
-        # Not a local SID — transit processing
+        # Not a local SID - transit processing
         forward_packet(packet)
         return
 
@@ -107,6 +107,7 @@ from scapy.all import *
 from scapy.contrib.segment_routing import IPv6ExtHdrSegmentRouting
 
 # Craft a packet with SRH (2 waypoints + final destination)
+
 pkt = (
     IPv6(src="2001:db8::1", dst="5f00:1:2:0:e001::") /
     IPv6ExtHdrSegmentRouting(

@@ -207,6 +207,7 @@ You can't optimize what you don't measure. Key metrics to watch:
 
 ```bash
 # Check istiod push times
+
 kubectl exec -n istio-system deploy/istiod -- curl -s localhost:15014/metrics | grep pilot_xds_push_time
 
 # Check number of proxies connected

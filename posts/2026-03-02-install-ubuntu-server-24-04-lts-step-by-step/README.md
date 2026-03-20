@@ -27,6 +27,7 @@ On Linux or macOS, use `dd` to write the ISO directly to the USB drive. Identify
 
 ```bash
 # List block devices to find your USB drive (e.g., /dev/sdb or /dev/disk2)
+
 lsblk
 ```
 

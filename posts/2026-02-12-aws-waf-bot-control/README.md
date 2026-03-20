@@ -36,6 +36,7 @@ This adds the Bot Control managed rule group to your web ACL:
 
 ```bash
 # First, get your current web ACL config
+
 aws wafv2 get-web-acl \
   --name my-web-acl \
   --scope REGIONAL \

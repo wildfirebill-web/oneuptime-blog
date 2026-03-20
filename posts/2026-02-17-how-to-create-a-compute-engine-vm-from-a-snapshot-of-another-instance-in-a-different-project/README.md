@@ -27,6 +27,7 @@ In the source project, create a snapshot of the VM you want to clone:
 
 ```bash
 # Create a snapshot of the source VM's boot disk
+
 gcloud compute disks snapshot source-vm \
     --zone=us-central1-a \
     --snapshot-names=source-vm-snapshot \

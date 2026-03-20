@@ -16,6 +16,7 @@ On RHEL/CentOS/Fedora, Podman is usually pre-installed or available in the defau
 
 ```bash
 # Install Podman on RHEL/CentOS/Fedora
+
 sudo dnf install -y podman
 
 # Install Podman on Ubuntu

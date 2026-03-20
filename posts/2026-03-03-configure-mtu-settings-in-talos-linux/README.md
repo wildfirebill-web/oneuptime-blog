@@ -37,6 +37,7 @@ Set the MTU in the interface configuration:
 
 ```yaml
 # machine-config.yaml
+
 machine:
   network:
     interfaces:

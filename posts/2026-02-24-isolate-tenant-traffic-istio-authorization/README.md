@@ -46,6 +46,7 @@ Test it:
 ```bash
 kubectl exec -n tenant-a deploy/sleep -- curl -s -o /dev/null -w "%{http_code}" http://httpbin.tenant-a:8000/get
 # Should return 403
+
 ```
 
 ## Allowing Intra-Tenant Traffic

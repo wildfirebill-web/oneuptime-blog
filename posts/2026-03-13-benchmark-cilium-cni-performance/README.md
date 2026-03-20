@@ -24,6 +24,7 @@ Cilium's eBPF datapath is designed for high performance, and with kube-proxy rep
 
 ```bash
 # Deploy server on a specific node
+
 kubectl run netperf-server --image=networkstatic/netperf \
   --overrides='{"spec":{"nodeName":"<server-node>"}}' \
   -- netserver -D

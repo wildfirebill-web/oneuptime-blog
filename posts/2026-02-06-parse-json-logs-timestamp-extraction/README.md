@@ -53,6 +53,7 @@ Applications use many timestamp formats. Here are the most common ones and their
 
 ```yaml
 # ISO 8601 with timezone
+
 # "2026-02-06T14:23:45.123Z"
 timestamp:
   parse_from: attributes.timestamp

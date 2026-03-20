@@ -16,6 +16,7 @@ ECR authentication tokens are obtained using the AWS CLI:
 
 ```bash
 # Get an ECR login token (valid for 12 hours)
+
 aws ecr get-login-password --region us-east-1
 
 # This outputs a token you use as a password with username "AWS"

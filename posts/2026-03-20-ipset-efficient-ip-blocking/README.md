@@ -2,16 +2,17 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ipset, iptables, Linux, Security, Firewall, DDoS
+Tags: Ipset, iptables, Linux, Security, Firewall, DDoS
 
 Description: Use ipset to create high-performance IP blocklists and allowlists that iptables can match against in O(1) time, far outperforming individual iptables rules.
 
-Blocking thousands of IPs with individual iptables rules creates a linear lookup chain that degrades performance. ipset stores IP addresses in a hash table — iptables can match against 100,000 IPs as fast as matching against one.
+Blocking thousands of IPs with individual iptables rules creates a linear lookup chain that degrades performance. ipset stores IP addresses in a hash table - iptables can match against 100,000 IPs as fast as matching against one.
 
 ## Install ipset
 
 ```bash
 # Debian/Ubuntu
+
 sudo apt install ipset -y
 
 # RHEL/CentOS
@@ -95,7 +96,7 @@ sudo iptables -A INPUT -m set --match-set temp-block src -j DROP
 
 ```bash
 #!/bin/bash
-# update-blocklist.sh — Pull threat feed and update ipset
+# update-blocklist.sh - Pull threat feed and update ipset
 
 BLOCKLIST_URL="https://www.spamhaus.org/drop/drop.txt"
 
@@ -140,11 +141,11 @@ for i in $(seq 1 10000); do
     sudo ipset add blocklist "10.$((i/256)).$((i%256)).1" 2>/dev/null
 done
 
-# ipset lookup is O(1) — constant time regardless of set size
+# ipset lookup is O(1) - constant time regardless of set size
 # vs 10,000 iptables rules which are O(n) linear search
 
 # Check set statistics
 sudo ipset list blocklist | grep "Number of entries"
 ```
 
-ipset is essential when blocking more than a few hundred IPs — it keeps iptables performance constant even with millions of blocked addresses.
+ipset is essential when blocking more than a few hundred IPs - it keeps iptables performance constant even with millions of blocked addresses.

@@ -44,6 +44,7 @@ curl -s http://localhost:9962/metrics | grep bgp
 
 ```bash
 # Session state (1=established, 0=not established)
+
 cilium_bgp_session_state
 
 # Number of prefixes advertised to each peer

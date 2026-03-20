@@ -336,6 +336,7 @@ When you curl your metrics endpoint with the correct Accept header, you'll see e
 
 ```bash
 # Request metrics with OpenMetrics format to see exemplars
+
 curl -H "Accept: application/openmetrics-text" http://localhost:8080/metrics
 ```
 

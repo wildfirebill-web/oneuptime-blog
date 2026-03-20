@@ -429,6 +429,7 @@ Add filtering to reduce noise and costs:
 
 ```yaml
 # Fluentd filter configuration
+
 <filter kubernetes.**>
   @type grep
   <exclude>

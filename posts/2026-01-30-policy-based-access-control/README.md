@@ -67,6 +67,7 @@ Rego policies follow a straightforward structure. Each policy defines rules that
 
 ```rego
 # policy.rego
+
 # This policy controls access to documents based on user department
 
 package documents.authz
@@ -313,7 +314,7 @@ allow if {
 }
 ```
 
-### Resource Ownership
+Resource Ownership
 
 Users can modify only resources they created.
 

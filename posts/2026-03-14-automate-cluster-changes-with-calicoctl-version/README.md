@@ -31,6 +31,7 @@ The first step in automation is reliably parsing the version information:
 ```bash
 #!/bin/bash
 # extract-calico-version.sh
+
 # Extracts client and cluster versions from calicoctl
 
 CLIENT_VERSION=$(calicoctl version 2>/dev/null | grep "Client Version:" | awk '{print $3}')

@@ -454,6 +454,7 @@ SETTINGS
 CUTOFF_DATE=$(date -d "6 months ago" +%Y%m)
 
 # Drop old partitions
+
 clickhouse-client --query "
     SELECT DISTINCT partition
     FROM system.parts

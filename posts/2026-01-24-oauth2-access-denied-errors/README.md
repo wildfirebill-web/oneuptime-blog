@@ -73,6 +73,7 @@ The most common cause is the user clicking "Deny" or "Cancel" on the consent scr
 
 ```python
 # URL callback with user denial
+
 # https://yourapp.com/callback?error=access_denied&error_description=The+user+denied+the+request
 
 # Error response

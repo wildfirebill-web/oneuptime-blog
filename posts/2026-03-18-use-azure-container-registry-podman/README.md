@@ -20,6 +20,7 @@ Install and configure the Azure CLI.
 
 ```bash
 # Install Azure CLI (Linux)
+
 curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
 
 # Login to Azure

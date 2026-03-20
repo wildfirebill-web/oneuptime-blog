@@ -21,6 +21,7 @@ Meta-monitoring - monitoring the monitoring system - is essential for Calico obs
 
 ```yaml
 # prometheus-rules-meta-monitoring.yaml
+
 apiVersion: monitoring.coreos.com/v1
 kind: PrometheusRule
 metadata:

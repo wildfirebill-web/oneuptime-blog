@@ -30,6 +30,7 @@ The simplest way to enforce image pull policies is through a Kyverno mutation po
 
 ```yaml
 # enforce-image-pull-policy.yaml
+
 apiVersion: kyverno.io/v1
 kind: ClusterPolicy
 metadata:

@@ -52,6 +52,7 @@ The server component must be compiled from source:
 
 ```bash
 # Download the latest release (check https://guacamole.apache.org/releases/)
+
 GUAC_VERSION="1.5.5"
 wget "https://downloads.apache.org/guacamole/${GUAC_VERSION}/source/guacamole-server-${GUAC_VERSION}.tar.gz" \
     -O /tmp/guacamole-server.tar.gz

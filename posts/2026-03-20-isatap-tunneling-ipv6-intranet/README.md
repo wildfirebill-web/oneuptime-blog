@@ -12,14 +12,14 @@ ISATAP (RFC 5214) allows IPv6 hosts to communicate over IPv4 intranets by embedd
 
 ## ISATAP Address Format
 
-```
+```text
 ISATAP address: <64-bit prefix>::0:5efe:a.b.c.d
                 <64-bit prefix>::200:5efe:a.b.c.d  (globally unique)
                 <64-bit prefix>::0:5efe:10.0.0.5
 
 For host 10.0.0.5 with prefix 2001:db8::/64:
 IPv6 address: 2001:db8::0:5efe:a00:5
-(10.0.0.5 in hex = 0a.00.00.05 = a00:005 — wait: 10=0a, 0=00, 0=00, 5=05)
+(10.0.0.5 in hex = 0a.00.00.05 = a00:005 - wait: 10=0a, 0=00, 0=00, 5=05)
 Full: 2001:db8::5efe:a00:5
 ```
 
@@ -27,6 +27,7 @@ Full: 2001:db8::5efe:a00:5
 
 ```bash
 # Create ISATAP tunnel interface
+
 sudo ip tunnel add isatap0 mode isatap local 10.0.0.5 ttl 64
 
 # Bring interface up

@@ -1,4 +1,4 @@
-# How to Understand the Authentication Header (AH) in IPv6
+# How to Understand the Authentication Header (AH) in IPv6 - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,11 +8,11 @@ Description: Learn how the IPv6 Authentication Header provides data integrity an
 
 ## Overview
 
-The Authentication Header (AH) is IPsec protocol 51 (Next Header value 51 in IPv6). It provides data integrity and authentication for IPv6 packets — ensuring the packet came from a legitimate sender and was not modified in transit. AH does NOT provide confidentiality (no encryption). It is rarely used alone today, as ESP with authentication provides both integrity and encryption.
+The Authentication Header (AH) is IPsec protocol 51 (Next Header value 51 in IPv6). It provides data integrity and authentication for IPv6 packets - ensuring the packet came from a legitimate sender and was not modified in transit. AH does NOT provide confidentiality (no encryption). It is rarely used alone today, as ESP with authentication provides both integrity and encryption.
 
 ## AH Header Structure
 
-```
+```text
  0                   1                   2                   3
  0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
 +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
@@ -28,7 +28,7 @@ The Authentication Header (AH) is IPsec protocol 51 (Next Header value 51 in IPv
 +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
 ```
 
-- **SPI**: 32-bit identifier — with destination IP and protocol, uniquely identifies the SA
+- **SPI**: 32-bit identifier - with destination IP and protocol, uniquely identifies the SA
 - **Sequence Number**: Anti-replay protection (increments with each packet)
 - **ICV**: HMAC-SHA1-96 or HMAC-SHA256-128 over the packet
 
@@ -52,7 +52,7 @@ AH calculates an ICV over the IPv6 header, extension headers, and payload, but m
 
 In transport mode, AH is inserted between the IPv6 header and the upper-layer header:
 
-```
+```text
 Before AH:
 [IPv6: src=A, dst=B, NH=TCP] [TCP] [Data]
 
@@ -64,7 +64,7 @@ After AH Transport Mode:
 
 In tunnel mode, the original packet is encapsulated:
 
-```
+```text
 [Outer IPv6: src=GW1, dst=GW2, NH=51] [AH: Next=IPv6, ICV=...] [Inner IPv6] [TCP] [Data]
 ```
 
@@ -72,6 +72,7 @@ In tunnel mode, the original packet is encapsulated:
 
 ```bash
 # Create AH Security Association (SA)
+
 ip xfrm state add \
   src 2001:db8:1::1 dst 2001:db8:2::1 \
   proto ah spi 0x100 \
@@ -113,15 +114,15 @@ tcpdump -i eth0 'ip6 proto 51' -n -v
 
 ## Why AH Is Rarely Used Alone
 
-1. **No encryption**: Data is visible in plaintext — any eavesdropper can read it
-2. **NAT incompatibility**: AH authenticates the IP header including addresses — NAT changes the source address, breaking AH verification
-3. **ESP does both**: ESP with authentication provides integrity + confidentiality — superset of AH
+1. **No encryption**: Data is visible in plaintext - any eavesdropper can read it
+2. **NAT incompatibility**: AH authenticates the IP header including addresses - NAT changes the source address, breaking AH verification
+3. **ESP does both**: ESP with authentication provides integrity + confidentiality - superset of AH
 4. **Deployment complexity**: Most IPsec deployments use ESP-only or ESP+AH in high-security scenarios
 
 ## When AH Makes Sense
 
 AH is appropriate when:
-- Confidentiality is not required (performance optimization — no encryption)
+- Confidentiality is not required (performance optimization - no encryption)
 - Routing infrastructure needs to authenticate packets without decrypting them
 - Protocol-level integrity verification is needed in addition to application-layer TLS
 - Combined with ESP in very high-security deployments (AH outside ESP)
@@ -130,7 +131,7 @@ AH is appropriate when:
 
 For maximum protection:
 
-```
+```text
 [IPv6] [AH] [ESP] [Encrypted TCP/Data] [ESP-Trailer] [ESP-Auth]
 
 AH authenticates: IPv6 header + AH header + ESP header + encrypted payload
@@ -145,4 +146,4 @@ ip xfrm policy add src ... dst ... tmpl proto ah ... tmpl proto esp ...
 
 ## Summary
 
-AH (Authentication Header, NH=51) provides integrity and authentication for IPv6 packets without encryption. It inserts between the IPv6 header and upper-layer protocol, calculating an HMAC over immutable header fields and payload. AH is incompatible with NAT (because NAT modifies the source address, invalidating the ICV) and is rarely used alone — most deployments use ESP with authentication (which provides both integrity and confidentiality). AH is still relevant in specific high-security scenarios requiring outer header integrity verification.
+AH (Authentication Header, NH=51) provides integrity and authentication for IPv6 packets without encryption. It inserts between the IPv6 header and upper-layer protocol, calculating an HMAC over immutable header fields and payload. AH is incompatible with NAT (because NAT modifies the source address, invalidating the ICV) and is rarely used alone - most deployments use ESP with authentication (which provides both integrity and confidentiality). AH is still relevant in specific high-security scenarios requiring outer header integrity verification.

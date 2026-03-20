@@ -42,6 +42,7 @@ Create the Nginx configuration:
 
 ```nginx
 # /etc/nginx/conf.d/app.conf
+
 # Dynamic upstream configuration loaded from a separate file
 
 upstream app_backend {

@@ -37,6 +37,7 @@ kubectl exec $NODE_POD -n kube-system -- wget -qO- http://localhost:9099/readine
 kubectl exec $NODE_POD -n kube-system -- \
   wget -qO- http://localhost:9099/readiness 2>/dev/null
 # Expected: returns 200 OK
+
 ```
 
 **Validation Step 2: Calico iptables rules applied on node**

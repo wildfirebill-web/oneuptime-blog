@@ -16,6 +16,7 @@ GitLab (Omnibus package) uses a bundled Nginx. Enabling IPv6 requires updating t
 # /etc/gitlab/gitlab.rb
 
 # Set external URL with FQDN (must have AAAA record for IPv6)
+
 external_url 'https://gitlab.example.com'
 
 # Enable Nginx to listen on IPv6

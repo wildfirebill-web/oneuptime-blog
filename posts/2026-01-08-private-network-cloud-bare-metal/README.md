@@ -100,6 +100,7 @@ GCP VPC:
 
 ```bash
 # Ubuntu/Debian
+
 sudo apt update
 sudo apt install -y strongswan strongswan-pki libcharon-extra-plugins
 

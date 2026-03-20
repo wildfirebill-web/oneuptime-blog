@@ -31,6 +31,7 @@ List all BlockAffinity resources to understand how blocks are distributed:
 
 ```bash
 # List all block affinity resources (node-to-block assignments)
+
 calicoctl get blockaffinities -o wide
 
 # Show block affinity for a specific node

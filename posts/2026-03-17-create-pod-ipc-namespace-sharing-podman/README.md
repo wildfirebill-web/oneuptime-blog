@@ -18,6 +18,7 @@ Inter-Process Communication (IPC) namespace sharing enables containers to exchan
 
 ```bash
 # IPC is shared by default in Podman pods
+
 podman pod create --name ipc-pod
 
 # Verify IPC is in the shared namespaces

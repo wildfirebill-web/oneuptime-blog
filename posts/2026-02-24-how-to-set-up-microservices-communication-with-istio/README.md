@@ -270,6 +270,7 @@ Istio automatically collects metrics for all service-to-service calls. You can s
 
 ```bash
 # Check proxy status
+
 istioctl proxy-status
 
 # See the Envoy clusters configured for a pod

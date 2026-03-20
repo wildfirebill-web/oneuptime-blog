@@ -34,6 +34,7 @@ Before optimizing, figure out how much cross-zone traffic you currently have. Us
 
 ```text
 # Total bytes transferred cross-zone (approximate)
+
 sum(rate(istio_tcp_sent_bytes_total{reporter="source"}[24h])) by (source_workload, destination_workload)
 ```
 

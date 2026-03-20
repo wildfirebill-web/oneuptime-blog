@@ -10,7 +10,7 @@ Description: Learn how to diagnose and fix slow network performance caused by in
 
 TCP window size limits how much data can be in-flight before the sender must wait for an acknowledgment. On high-latency links, a small window creates a bandwidth bottleneck:
 
-```
+```text
 Max throughput = Window Size / RTT
 
 Example: Window = 64KB, RTT = 50ms
@@ -22,6 +22,7 @@ Even on a 1 Gbps link, you'll only get 10.5 Mbps with this window!
 
 ```bash
 # Measure current throughput
+
 iperf3 -c server_ip -t 30
 
 # Check if TCP window size is limiting factor
@@ -35,7 +36,7 @@ iperf3 -c server_ip -t 30 -w 256K   # Force 256KB window
 ## Step 2: Check Current TCP Buffer Settings
 
 ```bash
-# Linux — view current TCP buffer limits
+# Linux - view current TCP buffer limits
 sysctl net.ipv4.tcp_rmem    # Receive buffer: min/default/max
 sysctl net.ipv4.tcp_wmem    # Send buffer: min/default/max
 sysctl net.core.rmem_max    # Socket receive buffer max
@@ -73,7 +74,7 @@ print(f'Required buffer: {bdp/1024/1024:.1f} MB')
 ## Step 4: Tune TCP Buffers on Linux
 
 ```bash
-# /etc/sysctl.conf — add these settings
+# /etc/sysctl.conf - add these settings
 sudo tee -a /etc/sysctl.conf << 'EOF'
 
 # TCP buffer sizes (min/default/max)
@@ -97,7 +98,7 @@ sudo sysctl -p
 
 ## Step 5: Check for Window Size Issues in Wireshark
 
-```
+```text
 Wireshark filters for window size problems:
 
 1. Find Zero Window (receiver buffer full):
@@ -117,7 +118,7 @@ Wireshark filters for window size problems:
 ## Step 6: Fix Windows TCP Auto-Tuning
 
 ```cmd
-REM Windows — check auto-tuning status
+REM Windows - check auto-tuning status
 netsh int tcp show global
 REM Look for: Receive Window Auto-Tuning Level: disabled (BAD)
 

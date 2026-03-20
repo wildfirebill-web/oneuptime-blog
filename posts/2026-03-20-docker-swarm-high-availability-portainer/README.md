@@ -8,7 +8,7 @@ Description: Configure a Docker Swarm cluster with multiple manager nodes for hi
 
 ---
 
-Docker Swarm high availability requires multiple manager nodes so the cluster survives individual node failures. The Raft consensus algorithm used by Swarm requires a quorum of managers — always use an odd number (3 or 5). Portainer manages the entire HA Swarm from a single web interface.
+Docker Swarm high availability requires multiple manager nodes so the cluster survives individual node failures. The Raft consensus algorithm used by Swarm requires a quorum of managers - always use an odd number (3 or 5). Portainer manages the entire HA Swarm from a single web interface.
 
 ## Swarm HA Architecture
 
@@ -34,6 +34,7 @@ Save the join tokens:
 
 ```bash
 # Get manager join token
+
 docker swarm join-token manager
 
 # Get worker join token

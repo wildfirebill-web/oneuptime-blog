@@ -42,6 +42,7 @@ Start with a simple configuration that reads from a single log file:
 
 ```yaml
 # Basic configuration to read JSON logs from a file
+
 # This assumes each line is a complete JSON object
 receivers:
   filelog:
@@ -491,7 +492,7 @@ service:
 
 For high-volume scenarios, increase batch sizes and poll frequency. The `max_log_size` prevents memory issues with extremely long log lines.
 
-## Resource Attributes
+Resource Attributes
 
 Add resource-level attributes to identify log sources:
 

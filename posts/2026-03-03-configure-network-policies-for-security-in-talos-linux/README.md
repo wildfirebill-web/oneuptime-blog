@@ -26,6 +26,7 @@ If you are using Flannel (the default in some setups), you will need to switch t
 
 ```bash
 # Install Cilium CLI
+
 curl -L --remote-name-all https://github.com/cilium/cilium-cli/releases/latest/download/cilium-linux-amd64.tar.gz
 tar xzvf cilium-linux-amd64.tar.gz
 sudo mv cilium /usr/local/bin/

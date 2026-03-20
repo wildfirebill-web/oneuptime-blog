@@ -16,6 +16,7 @@ ModSecurity writes to two places: the Apache error log (for rule match summaries
 
 ```bash
 # Apache error log - quick overview of WAF activity
+
 sudo tail -f /var/log/apache2/error.log | grep ModSecurity
 
 # ModSecurity audit log - full request details

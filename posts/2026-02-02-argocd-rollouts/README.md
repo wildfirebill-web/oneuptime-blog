@@ -48,6 +48,7 @@ kubectl create namespace argo-rollouts
 kubectl apply -n argo-rollouts -f https://github.com/argoproj/argo-rollouts/releases/latest/download/install.yaml
 
 # Verify installation
+
 kubectl wait --for=condition=Ready pods --all -n argo-rollouts --timeout=120s
 ```
 

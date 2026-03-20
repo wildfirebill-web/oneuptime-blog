@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: WireGuard, IPv6, Routing, VPN, AllowedIPs, Network
+Tags: WireGuard, IPv6, Routing, VPN, AllowedIPs, Networks
 
 Description: A guide to configuring WireGuard's AllowedIPs to route IPv6 traffic through WireGuard tunnels, including full tunnel, split tunnel, and specific prefix routing.
 
@@ -14,6 +14,7 @@ The `AllowedIPs` directive accepts CIDR notation for both IPv4 and IPv6:
 
 ```ini
 # Route all IPv6 traffic through the peer
+
 AllowedIPs = ::/0
 
 # Route only specific IPv6 prefixes
@@ -26,7 +27,7 @@ AllowedIPs = 0.0.0.0/0, ::/0
 ## Full Tunnel Configuration (All IPv6 Through VPN)
 
 ```ini
-# /etc/wireguard/wg0.conf (client — full tunnel)
+# /etc/wireguard/wg0.conf (client - full tunnel)
 
 [Interface]
 Address = fd00:wg::2/128
@@ -44,7 +45,7 @@ PersistentKeepalive = 25
 ## Split Tunnel Configuration (Specific IPv6 Prefixes)
 
 ```ini
-# /etc/wireguard/wg0.conf (client — split tunnel)
+# /etc/wireguard/wg0.conf (client - split tunnel)
 
 [Interface]
 Address = fd00:wg::2/128

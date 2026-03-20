@@ -24,6 +24,7 @@ On RHEL, mod_rewrite is included with httpd and loaded by default:
 
 ```bash
 # Check if mod_rewrite is loaded
+
 httpd -M | grep rewrite
 ```
 

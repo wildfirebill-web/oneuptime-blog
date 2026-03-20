@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: mTLS, TLS, Client Certificates, Nginx, Security, Authentication
+Tags: mTLS, TLS, Client Certificate, Nginx, Security, Authentication
 
 Description: Learn how to configure mutual TLS authentication where both the server and client present certificates, enabling strong cryptographic identity verification for APIs and services.
 
 ## What Is Mutual TLS?
 
-In standard TLS, only the server presents a certificate (one-way TLS). In mutual TLS (mTLS), both the server and client present certificates. The server verifies the client's certificate against a trusted CA, and the client verifies the server's certificate. This provides strong, cryptographic client identity verification—no passwords or API keys needed.
+In standard TLS, only the server presents a certificate (one-way TLS). In mutual TLS (mTLS), both the server and client present certificates. The server verifies the client's certificate against a trusted CA, and the client verifies the server's certificate. This provides strong, cryptographic client identity verification-no passwords or API keys needed.
 
 ## mTLS Use Cases
 
@@ -23,6 +23,7 @@ For mTLS, you need your own CA to sign client certificates:
 
 ```bash
 # Create CA private key
+
 openssl genrsa -out ca.key 4096
 
 # Create CA certificate (self-signed, valid 10 years)

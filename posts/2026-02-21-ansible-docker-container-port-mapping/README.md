@@ -36,6 +36,7 @@ The simplest form maps a host port to a container port using the `ports` paramet
 
 ```yaml
 # basic_ports.yml - Simple port mapping examples
+
 ---
 - name: Container with Basic Port Mapping
   hosts: docker_hosts

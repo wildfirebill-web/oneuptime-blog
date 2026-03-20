@@ -236,6 +236,7 @@ Here is a practical evidence collector that gathers data from multiple sources.
 
 ```python
 # Evidence collector for incident investigation
+
 # Aggregates data from logs, metrics, traces, and changes
 from dataclasses import dataclass, field
 from datetime import datetime, timedelta

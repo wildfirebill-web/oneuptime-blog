@@ -57,6 +57,7 @@ The easiest way to run the Collector is using Docker:
 
 ```bash
 # Pull the official OpenTelemetry Collector image
+
 docker pull otel/opentelemetry-collector:latest
 
 # Run the collector with a custom configuration file
@@ -483,7 +484,7 @@ flowchart TB
     C3 --> Backend
 ```
 
-### Resource Recommendations
+Resource Recommendations
 
 For production deployments, consider these resource allocations:
 

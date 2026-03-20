@@ -32,6 +32,7 @@ Start with a simple routing tree for multiple teams:
 
 ```yaml
 # alertmanager-config.yaml
+
 apiVersion: v1
 kind: Secret
 metadata:

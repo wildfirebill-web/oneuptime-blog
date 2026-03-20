@@ -38,6 +38,7 @@ First, confirm the attachment exists and check its current state:
 
 ```bash
 # Check the attachment state and details
+
 gcloud compute interconnects attachments describe my-partner-attachment \
     --region=us-east4 \
     --format="yaml(name, state, pairingKey, edgeAvailabilityDomain, type, creationTimestamp)"

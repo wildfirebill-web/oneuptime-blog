@@ -79,6 +79,7 @@ Here's a basic configuration to send data to Tinybird:
 
 ```yaml
 # Basic Tinybird exporter configuration
+
 exporters:
   tinybird:
     # Tinybird API endpoint (regional endpoint)

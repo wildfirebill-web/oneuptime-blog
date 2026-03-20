@@ -19,7 +19,7 @@ These rules apply equally to IPv4 and IPv6. The transport protocol (IPv4 or IPv6
 
 A DNS query over IPv6 uses the same DNS message format as IPv4. The only differences are at the IP layer:
 
-```
+```text
 Outer IPv6 Header:
   Source: 2001:db8:client::1
   Destination: 2001:db8::53 (DNS server IPv6 address)
@@ -37,6 +37,7 @@ DNS Message: (identical format to IPv4)
 
 ```bash
 # Most DNS queries use UDP
+
 # dig uses UDP by default
 dig AAAA example.com @2001:4860:4860::8888
 

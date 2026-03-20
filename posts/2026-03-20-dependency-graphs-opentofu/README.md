@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Dependency Graphs, Graphviz, tofu graph, Infrastructure as Code
+Tags: OpenTofu, Dependency Graph, Graphviz, Tofu graph, Infrastructure as Code
 
 Description: Learn how to generate and visualize resource dependency graphs in OpenTofu to understand how resources relate to each other.
 
@@ -14,6 +14,7 @@ Run `tofu graph` in any initialized OpenTofu directory:
 
 ```bash
 # Generate the dependency graph in DOT format
+
 tofu graph
 
 # Save the output to a file for rendering

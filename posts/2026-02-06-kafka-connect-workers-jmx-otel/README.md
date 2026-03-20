@@ -76,6 +76,7 @@ service:
 
 ```text
 # Worker-level metrics
+
 kafka.connect.worker.connector_count       - Number of connectors on this worker
 kafka.connect.worker.task_count            - Number of running tasks
 kafka.connect.worker.connector_startup_attempts_total - Startup attempts

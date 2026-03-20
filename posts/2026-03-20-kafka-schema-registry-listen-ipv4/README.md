@@ -14,6 +14,7 @@ Schema Registry stores and manages Avro, JSON Schema, and Protobuf schemas for K
 
 ```bash
 # Add Confluent repository
+
 curl -O https://packages.confluent.io/deb/7.5/archive.key
 apt-key add archive.key
 add-apt-repository "deb https://packages.confluent.io/deb/7.5 stable main"

@@ -21,6 +21,7 @@ Cilium is a powerful CNI (Container Network Interface) plugin that uses eBPF (ex
 
 ```bash
 # Check kernel version
+
 uname -r
 
 # Cilium requires minimum kernel 4.9.17

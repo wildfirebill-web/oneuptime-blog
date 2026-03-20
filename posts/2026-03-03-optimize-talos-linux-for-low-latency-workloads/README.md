@@ -26,6 +26,7 @@ In Talos Linux, you can isolate CPUs through the machine configuration:
 
 ```yaml
 # talos-machine-config.yaml
+
 machine:
   install:
     extraKernelArgs:

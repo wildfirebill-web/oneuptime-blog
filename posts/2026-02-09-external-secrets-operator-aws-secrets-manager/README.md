@@ -30,6 +30,7 @@ Install ESO using Helm:
 
 ```bash
 # Add External Secrets Helm repository
+
 helm repo add external-secrets https://charts.external-secrets.io
 helm repo update
 

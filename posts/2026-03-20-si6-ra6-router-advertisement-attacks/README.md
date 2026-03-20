@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: SI6 Networks, ra6, IPv6, Router Advertisement, Security Testing, ICMPv6
+Tags: SI6 Networks, Ra6, IPv6, Router Advertisement, Security Testing, ICMPv6
 
 Description: A guide to using the SI6 Networks ra6 tool for testing Router Advertisement handling in authorized lab environments to identify IPv6 security vulnerabilities.
 
@@ -21,6 +21,7 @@ sudo pacman -S ipv6toolkit          # Arch Linux
 
 ```bash
 # Send a basic Router Advertisement from eth0
+
 sudo ra6 -i eth0
 
 # Send an RA announcing a specific prefix

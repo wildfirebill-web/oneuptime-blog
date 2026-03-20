@@ -52,6 +52,7 @@ Build Windows images with dedicated user accounts:
 FROM mcr.microsoft.com/windows/servercore:ltsc2022
 
 # Create a non-admin user
+
 RUN net user appuser SecurePassword123! /add && \
     net localgroup Users appuser /add
 

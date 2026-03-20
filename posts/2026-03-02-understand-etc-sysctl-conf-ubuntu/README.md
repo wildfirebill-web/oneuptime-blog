@@ -44,6 +44,7 @@ Changes via `sysctl -w` or direct `/proc/sys/` writes are **temporary** - they r
 
 ```bash
 # View the default sysctl.conf
+
 cat /etc/sysctl.conf
 ```
 

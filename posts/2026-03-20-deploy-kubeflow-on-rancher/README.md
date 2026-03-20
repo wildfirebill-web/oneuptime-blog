@@ -36,6 +36,7 @@ git checkout ${KUBEFLOW_VERSION}
 
 ```bash
 # Install all Kubeflow components (this takes 10-20 minutes)
+
 while ! kustomize build example | kubectl apply -f -; do
   echo "Retrying due to resource ordering..."
   sleep 10

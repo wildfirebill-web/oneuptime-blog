@@ -16,6 +16,7 @@ The two most popular libraries are Sharp (fast, native bindings) and Jimp (pure 
 
 ```bash
 # Sharp - fast native library
+
 npm install sharp
 
 # Jimp - pure JavaScript, no native dependencies

@@ -22,6 +22,7 @@ Quadlet is a systemd generator that reads `.container`, `.pod`, `.network`, and 
 
 ```ini
 # ~/.config/containers/systemd/web.container
+
 [Container]
 Image=docker.io/library/nginx:stable
 PublishPort=8080:80

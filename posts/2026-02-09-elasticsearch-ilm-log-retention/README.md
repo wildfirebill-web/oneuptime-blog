@@ -29,6 +29,7 @@ Define an ILM policy for Kubernetes logs:
 
 ```bash
 # Create ILM policy
+
 curl -X PUT "https://elasticsearch.logging.svc:9200/_ilm/policy/kubernetes-logs-policy?pretty" \
   -u elastic:$ELASTIC_PASSWORD \
   -H 'Content-Type: application/json' \

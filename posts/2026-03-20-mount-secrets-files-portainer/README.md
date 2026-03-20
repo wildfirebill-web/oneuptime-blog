@@ -57,6 +57,7 @@ volumes:
 
 ```bash
 # Create TLS secret from certificate files
+
 kubectl create secret tls my-tls-secret \
   --cert=fullchain.pem \
   --key=privkey.pem \

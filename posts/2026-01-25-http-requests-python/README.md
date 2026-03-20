@@ -22,6 +22,7 @@ pip install requests
 import requests
 
 # Simple GET request
+
 response = requests.get("https://api.github.com/users/octocat")
 
 # Check status

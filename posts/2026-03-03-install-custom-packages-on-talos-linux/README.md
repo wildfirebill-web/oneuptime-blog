@@ -37,6 +37,7 @@ Sidero Labs maintains an official extensions repository. You can browse availabl
 
 ```bash
 # List available official extensions using crane
+
 crane ls ghcr.io/siderolabs/extensions
 
 # Or check the GitHub repository

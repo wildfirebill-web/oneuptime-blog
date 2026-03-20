@@ -38,6 +38,7 @@ You need:
 
 ```bash
 # Verify cert-manager is running
+
 kubectl get pods -n cert-manager
 
 # Check cert-manager CRDs are present

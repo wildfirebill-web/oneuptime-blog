@@ -14,6 +14,7 @@ Description: View and filter routing table entries on Linux using ip route show,
 
 ```bash
 # Show all routes in the main table
+
 ip route show
 
 # Sample output:

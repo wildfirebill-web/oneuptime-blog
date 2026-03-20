@@ -254,6 +254,7 @@ Configure CloudFront for HLS streaming with signed URLs for access control:
 
 ```bash
 # Create a CloudFront distribution for video delivery
+
 aws cloudfront create-distribution \
   --distribution-config '{
     "Origins": {

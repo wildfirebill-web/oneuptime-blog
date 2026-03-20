@@ -31,6 +31,7 @@ SOCKS5 is a versatile proxy protocol that handles any type of traffic (HTTP, HTT
 
 ```bash
 # Update packages
+
 sudo apt update
 
 # Install Dante server

@@ -29,6 +29,7 @@ NeuVector's compliance checks are defined as scripts that run inside containers.
 
 ```bash
 # Create a custom compliance check via NeuVector API
+
 curl -sk -X POST \
   -H "X-Auth-Token: $TOKEN" \
   -H "Content-Type: application/json" \
@@ -139,6 +140,6 @@ In the NeuVector UI:
 ## Best Practices
 
 - Name custom checks with a consistent prefix (e.g., `MY-001`) to distinguish them from built-in checks.
-- Keep compliance scripts idempotent — they may run multiple times per day.
+- Keep compliance scripts idempotent - they may run multiple times per day.
 - Schedule compliance scans weekly or before audits using NeuVector's recurring scan feature.
 - Integrate compliance reports with your ticketing system (Jira, ServiceNow) for remediation tracking.

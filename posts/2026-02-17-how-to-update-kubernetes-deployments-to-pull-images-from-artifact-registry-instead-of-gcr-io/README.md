@@ -18,6 +18,7 @@ Every container image reference needs to change from the GCR format to the Artif
 
 ```text
 # Old GCR path
+
 gcr.io/my-project-id/my-app:v1.0.0
 
 # New Artifact Registry path

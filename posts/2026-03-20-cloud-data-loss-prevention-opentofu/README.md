@@ -14,6 +14,7 @@ Cloud DLP automatically discovers and classifies sensitive data (PII, PHI, finan
 
 ```hcl
 # main.tf - Enable Cloud DLP API
+
 resource "google_project_service" "dlp" {
   service = "dlp.googleapis.com"
 }

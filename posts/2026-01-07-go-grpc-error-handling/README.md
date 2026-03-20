@@ -501,7 +501,7 @@ func getClientID(ctx context.Context) string {
 }
 ```
 
-### Resource Information with ResourceInfo
+Resource Information with ResourceInfo
 
 When an operation fails due to a specific resource, provide detailed resource information:
 

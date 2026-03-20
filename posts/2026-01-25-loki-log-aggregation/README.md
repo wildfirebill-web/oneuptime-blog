@@ -52,6 +52,7 @@ Start with a simple Docker Compose configuration for development:
 
 ```yaml
 # docker-compose.yml
+
 # Loki stack for local development
 version: '3.8'
 

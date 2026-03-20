@@ -17,6 +17,7 @@ Compare these two approaches to accepting a `-f file -v -n 10` style invocation:
 Without getopts:
 ```bash
 # Fragile manual parsing
+
 while [ "$#" -gt 0 ]; do
     case "$1" in
         -f) file="$2"; shift 2 ;;

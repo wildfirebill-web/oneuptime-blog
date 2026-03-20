@@ -314,6 +314,7 @@ Track inference-specific metrics:
 
 ```bash
 # Requests per model
+
 sum(rate(istio_requests_total{
   destination_service="vllm-server.ml-serving.svc.cluster.local"
 }[5m])) by (destination_workload)

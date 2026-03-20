@@ -75,6 +75,7 @@ Install the required packages for Node.js. The mongodb-client-encryption package
 
 ```bash
 # Install MongoDB driver and encryption library
+
 npm install mongodb mongodb-client-encryption
 
 # For automatic encryption, you also need the crypt_shared library

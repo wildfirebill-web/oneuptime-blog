@@ -37,6 +37,7 @@ Add a dedicated frontend section to expose Prometheus metrics on a separate port
 
 ```haproxy
 # haproxy.cfg
+
 # Enable the Prometheus metrics endpoint on an internal-only port
 frontend prometheus
     # Bind to port 8405 - keep this behind your firewall

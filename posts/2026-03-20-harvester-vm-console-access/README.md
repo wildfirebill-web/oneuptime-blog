@@ -1,8 +1,8 @@
-# How to Access VM Console in Harvester
+# How to Access VM Console in Harvester - Access
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Harvester, Kubernetes, Virtualization, HCI, Console, VNC, virtctl
+Tags: Harvester, Kubernetes, Virtualization, HCI, Console, VNC, Virtctl
 
 Description: Learn how to access virtual machine consoles in Harvester using the web-based VNC console, virtctl, and serial console methods.
 
@@ -37,6 +37,7 @@ The `virtctl` tool provides console access from the command line:
 
 ```bash
 # Get the KubeVirt version running in your cluster
+
 KUBEVIRT_VERSION=$(kubectl get kubevirt -n harvester-system \
     -o jsonpath='{.items[0].status.observedKubeVirtVersion}')
 

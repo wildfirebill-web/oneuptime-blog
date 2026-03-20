@@ -24,6 +24,7 @@ Ubuntu offers two main DHCPv6 servers: ISC DHCP (isc-dhcp-server) and Kea (isc-k
 
 ```bash
 # Install ISC DHCP server (older but widely documented)
+
 sudo apt update
 sudo apt install isc-dhcp-server -y
 

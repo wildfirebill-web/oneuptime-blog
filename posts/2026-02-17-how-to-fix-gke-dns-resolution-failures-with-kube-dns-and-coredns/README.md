@@ -43,6 +43,7 @@ Start by verifying DNS is actually broken and identifying what type of resolutio
 
 ```bash
 # Launch a debug pod with DNS tools
+
 kubectl run dns-debug --image=busybox:1.36 --rm -it --restart=Never -- sh
 ```
 

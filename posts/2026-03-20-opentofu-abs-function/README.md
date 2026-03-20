@@ -16,13 +16,14 @@ The `abs` function in OpenTofu returns the absolute value of a given number, str
 abs(number)
 ```
 
-- **number** — any numeric value (integer or float)
+- **number** - any numeric value (integer or float)
 - Returns the same number if positive, or its positive equivalent if negative.
 
 ## Basic Examples
 
 ```hcl
 # Simple absolute value usage
+
 output "positive_value" {
   value = abs(5)    # Returns 5
 }
@@ -133,7 +134,7 @@ tofu console
 
 ## Common Mistakes
 
-- Passing a string instead of a number — OpenTofu will raise a type error.
+- Passing a string instead of a number - OpenTofu will raise a type error.
 - Using `abs` when you actually need `max(0, value)` to clamp a value at zero with an upper bound too.
 
 ## Conclusion

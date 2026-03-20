@@ -10,7 +10,7 @@ Description: Configure gRPC channel options including keepalive, connection time
 
 gRPC channel options control low-level transport behavior: TCP keepalive, backoff on reconnect, message size limits, and connection management. Tuning these parameters is essential for stable long-lived connections over IPv4 networks.
 
-## Go — Comprehensive Channel Configuration
+## Go - Comprehensive Channel Configuration
 
 ```go
 package main
@@ -56,7 +56,7 @@ func newGRPCConn(target string) (*grpc.ClientConn, error) {
 }
 ```
 
-## Python — Channel Options
+## Python - Channel Options
 
 ```python
 import grpc

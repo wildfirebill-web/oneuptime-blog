@@ -25,6 +25,7 @@ graph LR
 
 ```yaml
 # playbooks/deploy-stack.yml
+
 # Deploy CloudFormation stack and configure instances
 ---
 - name: Deploy CloudFormation stack

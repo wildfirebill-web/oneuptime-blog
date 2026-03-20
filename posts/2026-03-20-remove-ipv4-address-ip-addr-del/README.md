@@ -8,12 +8,13 @@ Description: Remove an IPv4 address from a Linux network interface using ip addr
 
 ## Introduction
 
-`ip addr del` removes an IPv4 address from a network interface. The exact address and prefix length must match what was assigned. This is immediate but not persistent — use persistent network configuration tools for permanent changes.
+`ip addr del` removes an IPv4 address from a network interface. The exact address and prefix length must match what was assigned. This is immediate but not persistent - use persistent network configuration tools for permanent changes.
 
 ## Remove an IP Address
 
 ```bash
 # Remove a specific IP address
+
 ip addr del 192.168.1.100/24 dev eth0
 
 # Verify removal
@@ -98,4 +99,4 @@ nmcli connection up "myconn"
 
 ## Conclusion
 
-`ip addr del <address>/<prefix> dev <interface>` removes an IP immediately. Use `ip addr flush dev <interface>` to remove all IPs at once. Remember that `ip addr del` changes are not persistent — update your network configuration files to prevent the address from returning after a reboot.
+`ip addr del <address>/<prefix> dev <interface>` removes an IP immediately. Use `ip addr flush dev <interface>` to remove all IPs at once. Remember that `ip addr del` changes are not persistent - update your network configuration files to prevent the address from returning after a reboot.

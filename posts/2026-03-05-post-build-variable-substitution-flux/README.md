@@ -35,6 +35,7 @@ Create a ConfigMap with your variables as key-value pairs, then reference it in 
 
 ```yaml
 # env-vars-configmap.yaml - Variables stored in a ConfigMap
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

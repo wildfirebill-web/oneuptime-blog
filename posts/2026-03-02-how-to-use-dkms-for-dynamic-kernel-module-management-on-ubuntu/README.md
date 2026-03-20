@@ -18,6 +18,7 @@ DKMS maintains a source tree for each registered module and hooks into the kerne
 
 ```bash
 # Install DKMS and the build essentials needed to compile modules
+
 sudo apt update
 sudo apt install dkms build-essential linux-headers-$(uname -r)
 

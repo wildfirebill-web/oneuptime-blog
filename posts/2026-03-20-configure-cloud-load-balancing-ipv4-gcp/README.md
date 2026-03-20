@@ -12,7 +12,7 @@ GCP Cloud Load Balancing is global and anycast-based. An HTTP(S) load balancer u
 
 ## Architecture
 
-```
+```text
 Client
   ↓ (anycast global IP)
 Forwarding Rule (frontend)
@@ -32,6 +32,7 @@ Instance Group (VMs in us-central1, us-east1, etc.)
 PROJECT_ID="my-gcp-project"
 
 # Create a managed instance group
+
 gcloud compute instance-groups managed create web-ig \
   --project=$PROJECT_ID \
   --zone=us-central1-a \
@@ -151,4 +152,4 @@ gcloud compute backend-services get-health web-backend \
 
 ## Conclusion
 
-GCP HTTP(S) Load Balancing is global — a single anycast IP routes to the nearest healthy backend. Build the chain: health check → backend service → instance groups → URL map → target proxy → forwarding rule. Use managed SSL certificates for automatic HTTPS. Add Cloud Armor security policies to the backend service for DDoS protection and WAF rules.
+GCP HTTP(S) Load Balancing is global - a single anycast IP routes to the nearest healthy backend. Build the chain: health check → backend service → instance groups → URL map → target proxy → forwarding rule. Use managed SSL certificates for automatic HTTPS. Add Cloud Armor security policies to the backend service for DDoS protection and WAF rules.

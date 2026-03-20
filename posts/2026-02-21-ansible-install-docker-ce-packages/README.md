@@ -19,6 +19,7 @@ The official Docker CE installation on Ubuntu involves adding the Docker reposit
 ```yaml
 ---
 # playbook: install-docker-ubuntu.yml
+
 # Install Docker CE on Ubuntu 22.04/24.04
 - hosts: ubuntu_servers
   become: true

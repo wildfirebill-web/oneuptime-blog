@@ -24,25 +24,26 @@ The KSK creates a trust anchor chain: parent zone has DS record → DS points to
 | Ed25519 | 15 | 256-bit | Modern, very fast |
 | RSASHA256 | 8 | 2048-bit | Legacy, still common |
 
-ECDSA algorithms produce smaller keys and signatures than RSA, which reduces DNS response sizes — important for IPv6 zones with large AAAA records.
+ECDSA algorithms produce smaller keys and signatures than RSA, which reduces DNS response sizes - important for IPv6 zones with large AAAA records.
 
 ## Generating Keys with dnssec-keygen
 
 ```bash
 # Create directory for keys
+
 mkdir -p /var/named/keys/example.com
 cd /var/named/keys/example.com
 
 # Generate ZSK (Zone Signing Key)
-# ECDSAP256SHA256 (algorithm 13) — recommended
+# ECDSAP256SHA256 (algorithm 13) - recommended
 dnssec-keygen \
     -a ECDSAP256SHA256 \
     -n ZONE \
     example.com
 
 # Output files:
-# Kexample.com.+013+XXXXX.key    — public key (add to zone)
-# Kexample.com.+013+XXXXX.private — private key (keep secure!)
+# Kexample.com.+013+XXXXX.key    - public key (add to zone)
+# Kexample.com.+013+XXXXX.private - private key (keep secure!)
 
 # Generate KSK (Key Signing Key)
 # Add -f KSK flag
@@ -53,8 +54,8 @@ dnssec-keygen \
     example.com
 
 # Output:
-# Kexample.com.+013+YYYYY.key    — public KSK
-# Kexample.com.+013+YYYYY.private — private KSK
+# Kexample.com.+013+YYYYY.key    - public KSK
+# Kexample.com.+013+YYYYY.private - private KSK
 
 # View key details
 cat Kexample.com.+013+XXXXX.key
@@ -71,7 +72,7 @@ cat Kexample.com.+013+YYYYY.key
 ## Generating Ed25519 Keys (Modern)
 
 ```bash
-# Ed25519 — algorithm 15, fastest signing
+# Ed25519 - algorithm 15, fastest signing
 # Supported in BIND 9.12+, Knot DNS 2.7+
 
 # ZSK with Ed25519
@@ -119,8 +120,8 @@ dnssec-keygen \
                 <Resalt>P100D</Resalt>
                 <Hash>
                     <Algorithm>1</Algorithm>  <!-- SHA-1 for NSEC3 hash -->
-                    <Iterations>0</Iterations> <!-- 0 iterations — RFC 9276 recommendation -->
-                    <Salt length="0"/>         <!-- No salt — RFC 9276 recommendation -->
+                    <Iterations>0</Iterations> <!-- 0 iterations - RFC 9276 recommendation -->
+                    <Salt length="0"/>         <!-- No salt - RFC 9276 recommendation -->
                 </Hash>
             </NSEC3>
         </Denial>
@@ -232,4 +233,4 @@ done
 
 ## Conclusion
 
-DNSSEC key generation starts with choosing the right algorithm — ECDSAP256SHA256 (algorithm 13) is the current recommendation, offering small key sizes, fast signing, and wide support. Generate separate ZSK and KSK per zone using `dnssec-keygen`, using the `-f KSK` flag to mark key signing keys. Store private key files with strict permissions (600) and back them up immediately. For production deployments, use OpenDNSSEC for automated key lifecycle management or an HSM for KSK storage. Ed25519 (algorithm 15) is the most modern option for new deployments where all resolvers support it.
+DNSSEC key generation starts with choosing the right algorithm - ECDSAP256SHA256 (algorithm 13) is the current recommendation, offering small key sizes, fast signing, and wide support. Generate separate ZSK and KSK per zone using `dnssec-keygen`, using the `-f KSK` flag to mark key signing keys. Store private key files with strict permissions (600) and back them up immediately. For production deployments, use OpenDNSSEC for automated key lifecycle management or an HSM for KSK storage. Ed25519 (algorithm 15) is the most modern option for new deployments where all resolvers support it.

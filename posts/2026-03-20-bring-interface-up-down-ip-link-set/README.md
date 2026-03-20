@@ -14,6 +14,7 @@ The `ip link set` command controls the link-layer state of network interfaces. B
 
 ```bash
 # Bring eth0 up
+
 sudo ip link set eth0 up
 
 # Verify the state

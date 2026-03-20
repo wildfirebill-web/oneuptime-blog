@@ -41,6 +41,7 @@ The user enters their password followed by their 6-digit TOTP code (from Google 
 
 ```bash
 # Install the PAM module
+
 sudo dnf install -y epel-release
 sudo dnf install -y google-authenticator qrencode
 ```

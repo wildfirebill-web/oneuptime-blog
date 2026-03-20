@@ -28,6 +28,7 @@ Classic sensor approach:
 
 ```python
 # DAG that waits for a file in GCS before processing
+
 from airflow import DAG
 from airflow.providers.google.cloud.sensors.gcs import GCSObjectExistenceSensor
 from airflow.providers.google.cloud.operators.dataflow import DataflowStartFlexTemplateOperator

@@ -50,6 +50,7 @@ Here's a minimal configuration to get started. This example connects to a local 
 
 ```yaml
 # receivers: Define how telemetry enters the Collector
+
 receivers:
   # Elasticsearch receiver scrapes metrics from ES nodes
   elasticsearch:

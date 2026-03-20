@@ -245,6 +245,7 @@ For load balancers without native slow start, implement it using dynamic weight 
 
 ```python
 # slow_start_controller.py
+
 import time
 import requests
 from dataclasses import dataclass

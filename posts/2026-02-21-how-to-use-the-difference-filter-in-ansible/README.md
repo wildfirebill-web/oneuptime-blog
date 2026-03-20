@@ -16,6 +16,7 @@ Think of it as subtraction for lists. If list A contains `[1, 2, 3, 4, 5]` and l
 
 ```yaml
 # Find items in list A that are not in list B
+
 - name: Basic difference example
   ansible.builtin.debug:
     msg: "{{ list_a | difference(list_b) }}"

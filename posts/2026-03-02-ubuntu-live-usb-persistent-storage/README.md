@@ -28,6 +28,7 @@ The overlay has a size limit set when you create it. Once it fills up, you canno
 
 ```bash
 # Add the mkusb PPA
+
 sudo add-apt-repository universe
 sudo add-apt-repository ppa:mkusb/ppa
 sudo apt update

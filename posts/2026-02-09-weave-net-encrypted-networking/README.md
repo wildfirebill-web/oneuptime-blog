@@ -18,6 +18,7 @@ Install Weave Net with encryption enabled:
 
 ```bash
 # Generate a strong encryption password
+
 WEAVE_PASSWORD=$(openssl rand -base64 32)
 echo $WEAVE_PASSWORD > weave-password.txt
 

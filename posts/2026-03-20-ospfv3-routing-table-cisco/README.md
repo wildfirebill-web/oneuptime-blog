@@ -12,7 +12,7 @@ After configuring OSPFv3, verifying that routes are correctly installed in the r
 
 ## Primary Verification Commands
 
-```
+```text
 ! Show all IPv6 routes learned via OSPFv3
 Router# show ipv6 route ospf
 
@@ -25,7 +25,7 @@ Router# show ospfv3 route
 
 ## Interpreting the show ipv6 route ospf Output
 
-```
+```text
 Router# show ipv6 route ospf
 
 IPv6 Routing Table - default - 6 entries
@@ -58,7 +58,7 @@ Path cost is the sum of interface costs along the path. Default interface cost =
 
 ## Show OSPFv3 Route Detail
 
-```
+```text
 ! Show OSPFv3 internal route table (before kernel install)
 Router# show ospfv3 route
 
@@ -73,7 +73,7 @@ O  2001:db8:2::/48 [0/30] area 0, via fe80::3 on GigabitEthernet0/1
 
 ## Verifying a Specific Route
 
-```
+```text
 ! Check if a specific prefix is in the routing table
 Router# show ipv6 route 2001:db8:1::/48
 
@@ -87,7 +87,7 @@ Routing entry for 2001:DB8:1::/48
 
 ## Checking ECMP Routes
 
-```
+```text
 ! Two ECMP OSPFv3 paths to same destination
 Router# show ipv6 route ospf
 
@@ -98,7 +98,7 @@ O   2001:db8:1::/48 [110/20]
 
 ## Debugging OSPFv3 Route Installation
 
-```
+```text
 ! Enable debugging for SPF calculation
 Router# debug ospfv3 spf
 

@@ -22,6 +22,7 @@ Starting with a simple static scrape configuration demonstrates the core concept
 
 ```yaml
 # collector-config.yaml - basic Prometheus receiver setup
+
 receivers:
   prometheus:
     config:

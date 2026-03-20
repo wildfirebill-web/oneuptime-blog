@@ -84,6 +84,7 @@ resource "azurerm_eventhub" "telemetry" {
 }
 
 # Grant IoT Central system identity access to send to Event Hub
+
 resource "azurerm_role_assignment" "iotc_eventhub" {
   scope                = azurerm_eventhub.telemetry.id
   role_definition_name = "Azure Event Hubs Data Sender"
@@ -120,4 +121,4 @@ tofu apply tfplan
 
 ## Summary
 
-Azure IoT Central simplifies IoT device management with a managed SaaS platform. OpenTofu provisions the application, configures network access rules, and sets up managed identity permissions for data export to Event Hubs — enabling consistent IoT platform deployments across environments.
+Azure IoT Central simplifies IoT device management with a managed SaaS platform. OpenTofu provisions the application, configures network access rules, and sets up managed identity permissions for data export to Event Hubs - enabling consistent IoT platform deployments across environments.

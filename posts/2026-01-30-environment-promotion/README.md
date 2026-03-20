@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: DevOps, Promotion, Environment, GitOps
+Tags: DevOps, Promotion, Environments, GitOps
 
 Description: Learn to implement environment promotion from dev to staging to production.
 
@@ -64,6 +64,7 @@ Here is the base kustomization file that references all shared resources:
 
 ```yaml
 # base/kustomization.yaml
+
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:

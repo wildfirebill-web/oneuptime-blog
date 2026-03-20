@@ -36,6 +36,7 @@ ParallelCluster is distributed as a Python package.
 
 ```bash
 # Install the ParallelCluster CLI
+
 pip3 install aws-parallelcluster
 
 # Verify the installation

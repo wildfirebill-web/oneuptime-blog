@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, RFC 6434, Compliance, Standards, Node Requirements, Networking
+Tags: IPv6, RFC 6434, Compliance, Standard, Node Requirements, Networking
 
 Description: Understand the IPv6 node requirements defined in RFC 6434, which specifies mandatory and recommended features that IPv6-capable devices must implement.
 
@@ -12,7 +12,7 @@ RFC 6434 ("IPv6 Node Requirements") defines the minimum set of IPv6 features tha
 
 ## RFC 6434 Key Requirements Overview
 
-```
+```text
 RFC 6434 (obsoletes RFC 4294) defines requirements for:
 - IPv6 addressing
 - ICMPv6 (RFC 4443)
@@ -29,6 +29,7 @@ RFC 6434 (obsoletes RFC 4294) defines requirements for:
 
 ```bash
 # RFC 6434 §4 - Addressing:
+
 # - MUST support link-local addresses (FE80::/10)
 # - MUST support loopback address (::1)
 # - MUST support multicast addresses
@@ -142,7 +143,7 @@ echo "net.ipv6.conf.default.use_tempaddr=2" | sudo tee -a /etc/sysctl.conf
 
 ## Compliance Checklist
 
-```
+```text
 RFC 6434 Compliance Checklist:
 [ ] Link-local address assigned on all IPv6 interfaces
 [ ] Loopback address ::1 configured

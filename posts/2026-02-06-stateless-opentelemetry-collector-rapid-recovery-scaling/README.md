@@ -29,6 +29,7 @@ Here is a minimal stateless collector configuration:
 
 ```yaml
 # stateless-collector.yaml
+
 # This collector holds no local state. Queues are kept small because
 # the upstream load balancer will redistribute traffic to healthy instances
 # if this one fails. Processors are limited to stateless operations.

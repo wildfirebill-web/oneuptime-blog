@@ -34,6 +34,7 @@ The `create` command provisions test instances using the configured driver. It r
 
 ```bash
 # Create test instances
+
 molecule create
 ```
 

@@ -20,6 +20,7 @@ Define a custom network in a `.network` file:
 
 ```ini
 # ~/.config/containers/systemd/mynet.network
+
 [Network]
 # Use bridge driver (default)
 Driver=bridge

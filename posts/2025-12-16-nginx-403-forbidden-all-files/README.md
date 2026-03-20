@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: NGINX, Troubleshooting, Permissions, 403 Forbidden, Linux, DevOps
+Tags: Nginx, Troubleshooting, Permissions, 403 Forbidden, Linux, DevOps
 
 Description: Learn how to diagnose and fix Nginx 403 Forbidden errors for all files, covering permission issues, SELinux contexts, configuration mistakes, and common pitfalls.
 
@@ -47,6 +47,7 @@ The Nginx error log provides crucial information:
 
 ```bash
 # View recent errors
+
 tail -50 /var/log/nginx/error.log
 
 # Watch errors in real-time

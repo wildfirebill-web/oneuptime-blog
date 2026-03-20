@@ -18,6 +18,7 @@ The `anytrue` function accepts a list of boolean values and returns `true` if at
 
 ```hcl
 # Basic syntax
+
 anytrue(list)
 ```
 

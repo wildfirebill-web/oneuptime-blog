@@ -37,6 +37,7 @@ Burn rate alerts are built on top of SLOs. If you do not have one yet, create it
 
 ```bash
 # Create a 99.9% availability SLO with a 30-day rolling window
+
 gcloud monitoring slos create \
     --service=my-api-service \
     --display-name="API Availability - 99.9%" \

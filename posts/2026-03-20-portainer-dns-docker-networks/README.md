@@ -1,4 +1,4 @@
-# How to Configure DNS for Docker Networks in Portainer
+# How to Configure DNS for Docker Networks in Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -22,12 +22,13 @@ On custom bridge networks, Docker runs an embedded DNS server at `127.0.0.11`. T
 - Forwards external DNS queries to the host's configured DNS resolvers
 - Supports aliases (container reachable by multiple names)
 
-The default bridge network does NOT provide this DNS service — only custom networks do.
+The default bridge network does NOT provide this DNS service - only custom networks do.
 
 ## Step 1: Configure DNS at Container Creation (CLI)
 
 ```bash
 # Set custom DNS server for a container:
+
 docker run -d \
   --name my-app \
   --dns 1.1.1.1 \             # Primary DNS server
@@ -80,7 +81,7 @@ docker network create app-network
 # Start a database:
 docker run -d --name postgres --network app-network postgres:15-alpine
 
-# Start an app that connects by name — Docker DNS resolves "postgres":
+# Start an app that connects by name - Docker DNS resolves "postgres":
 docker run -d \
   --name api \
   --network app-network \
@@ -100,7 +101,7 @@ docker exec api nslookup postgres
 Aliases allow a container to be reachable by multiple names on a network:
 
 ```yaml
-# docker-compose.yml — DNS aliases
+# docker-compose.yml - DNS aliases
 version: "3.8"
 
 services:
@@ -129,7 +130,7 @@ networks:
 For a self-hosted DNS resolver:
 
 ```yaml
-# docker-compose.yml — Pi-hole as network DNS
+# docker-compose.yml - Pi-hole as network DNS
 version: "3.8"
 
 services:
@@ -189,4 +190,4 @@ docker network inspect my-network | jq '.[].Containers | keys'
 
 ## Conclusion
 
-Docker's embedded DNS on custom networks provides automatic service discovery by container name — the foundation of container-to-container communication in Compose and Swarm. For external DNS, configure servers at the daemon level (daemon.json) for global defaults, at the container level (`--dns`) for per-container overrides, or in Compose via the `dns` key. DNS aliases let a single container be reachable by multiple names, which is useful for zero-downtime migrations where the DNS name must remain stable across container replacements.
+Docker's embedded DNS on custom networks provides automatic service discovery by container name - the foundation of container-to-container communication in Compose and Swarm. For external DNS, configure servers at the daemon level (daemon.json) for global defaults, at the container level (`--dns`) for per-container overrides, or in Compose via the `dns` key. DNS aliases let a single container be reachable by multiple names, which is useful for zero-downtime migrations where the DNS name must remain stable across container replacements.

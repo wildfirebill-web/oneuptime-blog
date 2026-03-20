@@ -32,6 +32,7 @@ tracer = trace.get_tracer("pricing.service")
 meter = metrics.get_meter("pricing.service")
 
 # Track conversion accuracy and performance
+
 conversion_duration = meter.create_histogram(
     "currency.conversion.duration",
     unit="ms",

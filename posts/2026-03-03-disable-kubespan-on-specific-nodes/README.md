@@ -26,6 +26,7 @@ Each Talos node has its own machine configuration, and KubeSpan can be enabled o
 
 ```yaml
 # disable-kubespan.yaml
+
 machine:
   network:
     kubespan:

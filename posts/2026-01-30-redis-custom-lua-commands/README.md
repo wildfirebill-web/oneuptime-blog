@@ -54,6 +54,7 @@ EVAL "return redis.call('GET', KEYS[1])" 1 mykey
 
 ```bash
 # First, load the script
+
 SCRIPT LOAD "return redis.call('GET', KEYS[1])"
 # Returns: "a42059b356c875f0717db19a51f6aaa9161e77a0"
 

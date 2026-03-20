@@ -37,6 +37,7 @@ Create the SNS topic and subscription:
 
 ```bash
 # Create an SNS topic for health notifications
+
 aws sns create-topic --name aws-health-notifications \
   --region us-east-1
 

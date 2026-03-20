@@ -14,6 +14,7 @@ The `ip` command from the `iproute2` package is the modern replacement for `ifco
 
 ```bash
 # Assign 192.168.1.100 with a /24 prefix to eth0
+
 sudo ip addr add 192.168.1.100/24 dev eth0
 
 # Verify the assignment
@@ -22,7 +23,7 @@ ip addr show dev eth0
 
 Expected output:
 
-```
+```text
 2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP
     link/ether 00:1a:2b:3c:4d:5e brd ff:ff:ff:ff:ff:ff
     inet 192.168.1.100/24 brd 192.168.1.255 scope global eth0
@@ -105,7 +106,7 @@ sudo netplan apply
 
 **Debian /etc/network/interfaces:**
 
-```
+```text
 auto eth0
 iface eth0 inet static
     address 192.168.1.100

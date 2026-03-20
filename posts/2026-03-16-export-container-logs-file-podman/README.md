@@ -18,6 +18,7 @@ Container logs are ephemeral by default. When a container is removed, its logs a
 
 ```bash
 # Export all logs to a file
+
 podman logs my-container > container-logs.txt 2>&1
 
 # Export stdout and stderr to separate files

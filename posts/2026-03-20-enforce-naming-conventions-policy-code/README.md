@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Policy as Code, Naming Conventions, OPA, tflint, Governance
+Tags: OpenTofu, Policy as Code, Naming Conventions, OPA, TFLint, Governance
 
-Description: Learn how to enforce resource naming conventions in OpenTofu using tflint naming rules, OPA Rego policies, and custom validation functions — ensuring consistent, predictable resource names across your infrastructure.
+Description: Learn how to enforce resource naming conventions in OpenTofu using tflint naming rules, OPA Rego policies, and custom validation functions - ensuring consistent, predictable resource names across...
 
 ## Introduction
 
-Inconsistent resource naming causes operational pain: unclear ownership, failed automation scripts, and difficulty auditing. OpenTofu lets you enforce naming conventions at multiple layers — from linting during development to policy gates in CI/CD.
+Inconsistent resource naming causes operational pain: unclear ownership, failed automation scripts, and difficulty auditing. OpenTofu lets you enforce naming conventions at multiple layers - from linting during development to policy gates in CI/CD.
 
 ## Layer 1: tflint Naming Convention Rules
 
@@ -16,6 +16,7 @@ Configure tflint to enforce snake_case for all HCL identifiers:
 
 ```hcl
 # .tflint.hcl
+
 rule "terraform_naming_convention" {
   enabled = true
 

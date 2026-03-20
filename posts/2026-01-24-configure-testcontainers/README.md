@@ -150,6 +150,7 @@ class SpringPostgresTest {
 
 ```python
 # requirements-test.txt
+
 testcontainers[postgres,redis,kafka]==3.7.1
 pytest==7.4.0
 psycopg2-binary==2.9.9

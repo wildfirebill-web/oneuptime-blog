@@ -8,7 +8,7 @@ Description: Learn how to view, manage, and clear notifications in Portainer, in
 
 ---
 
-Portainer's notification system captures important events — container failures, stack deployment results, agent connectivity changes — and displays them in the notification bell in the top navigation bar.
+Portainer's notification system captures important events - container failures, stack deployment results, agent connectivity changes - and displays them in the notification bell in the top navigation bar.
 
 ## Accessing Notifications
 
@@ -39,6 +39,7 @@ Click a notification to mark it as read. The badge count decreases. Click the **
 
 ```bash
 # Via Portainer UI:
+
 # 1. Open the notification panel
 # 2. Click "Clear all" to remove all notifications
 

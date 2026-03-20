@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Troubleshooting, Endpoints, Stability, Docker, Agent
+Tags: Portainer, Troubleshooting, Endpoint, Stability, Docker, Agent
 
 Description: Learn how to diagnose and resolve endpoint instability in Portainer, where environments frequently toggle between online and offline states.
 
 ---
 
-Endpoint instability — environments that randomly go offline and come back — is usually caused by snapshot timeouts, overloaded Docker hosts, or network congestion. This guide covers systematic diagnosis and remediation.
+Endpoint instability - environments that randomly go offline and come back - is usually caused by snapshot timeouts, overloaded Docker hosts, or network congestion. This guide covers systematic diagnosis and remediation.
 
 ## Understanding Endpoint Health Checks
 
@@ -18,6 +18,7 @@ Portainer polls each endpoint every `--snapshot-interval` seconds (default 60s).
 
 ```bash
 # Look for snapshot-related errors
+
 docker logs portainer 2>&1 | grep -i "snapshot\|endpoint\|error" | tail -50
 
 # Common error patterns:

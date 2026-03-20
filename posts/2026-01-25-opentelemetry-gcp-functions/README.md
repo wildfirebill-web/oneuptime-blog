@@ -260,6 +260,7 @@ async function processMessage(data) {
 
 ```txt
 # requirements.txt
+
 functions-framework
 opentelemetry-api
 opentelemetry-sdk

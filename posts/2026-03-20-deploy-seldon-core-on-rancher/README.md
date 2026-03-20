@@ -23,6 +23,7 @@ helm repo add seldonio https://storage.googleapis.com/seldon-charts
 helm repo update
 
 # Install Seldon Core
+
 helm install seldon-core seldonio/seldon-core-operator \
   --namespace seldon-system \
   --create-namespace \
@@ -135,4 +136,4 @@ histogram_quantile(0.99,
 
 ## Conclusion
 
-Seldon Core on Rancher provides production-grade ML model serving with built-in A/B testing, canary deployments, and observability. The Custom Resource approach integrates naturally with GitOps workflows—model deployments are YAML files that can be version-controlled and deployed through the same pipelines as application code.
+Seldon Core on Rancher provides production-grade ML model serving with built-in A/B testing, canary deployments, and observability. The Custom Resource approach integrates naturally with GitOps workflows-model deployments are YAML files that can be version-controlled and deployed through the same pipelines as application code.

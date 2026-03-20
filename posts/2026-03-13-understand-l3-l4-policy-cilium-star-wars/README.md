@@ -26,6 +26,7 @@ The L3/L4 policy stage of the demo is also where the limitation of connection-le
 
 ```yaml
 # sw_l3_l4_policy.yaml
+
 apiVersion: "cilium.io/v2"
 kind: CiliumNetworkPolicy
 metadata:

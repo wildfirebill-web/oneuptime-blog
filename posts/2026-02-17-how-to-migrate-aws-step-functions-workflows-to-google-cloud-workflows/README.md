@@ -45,6 +45,7 @@ The equivalent in Cloud Workflows:
 
 ```yaml
 # Google Cloud Workflows - YAML format
+
 main:
   steps:
     - getOrder:

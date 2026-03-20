@@ -24,6 +24,7 @@ edition = "2021"
 
 [dependencies]
 # CLI argument parsing
+
 clap = { version = "4", features = ["derive", "env"] }
 
 # Error handling

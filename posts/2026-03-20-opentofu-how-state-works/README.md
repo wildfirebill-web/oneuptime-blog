@@ -1,11 +1,10 @@
----
-title: "How State Works in OpenTofu"
-author: nawazdhandala
-tags: opentofu, terraform, iac, state
-description: "Understand how OpenTofu state works, what it stores, why it's critical, and how to manage it safely."
----
-
 # How State Works in OpenTofu
+
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
+
+Tags: OpenTofu, Terraform, IaC, State
+
+Description: Understand how OpenTofu state works, what it stores, why it's critical, and how to manage it safely.
 
 OpenTofu state is the mechanism that maps your configuration to real-world infrastructure. Without state, OpenTofu cannot know what resources already exist, what needs to be created, or what needs to be destroyed.
 
@@ -46,7 +45,7 @@ State is a JSON file that records:
 
 ## Why State Is Critical
 
-```
+```hcl
 Without state:
 1. tofu plan runs
 2. OpenTofu calls AWS API: "does this instance exist?"
@@ -64,7 +63,8 @@ With state:
 ## The State Lifecycle
 
 ```bash
-# 1. No state exists — all resources are "new"
+# 1. No state exists - all resources are "new"
+
 tofu plan
 # Plan: 5 to add, 0 to change, 0 to destroy
 
@@ -80,7 +80,7 @@ cat terraform.tfstate  # Contains i-0123456789
 tofu plan
 # No changes. Infrastructure is up-to-date.
 
-# 5. Change config — plan shows diff
+# 5. Change config - plan shows diff
 # (change instance_type = "t3.large")
 tofu plan
 # aws_instance.web will be updated in-place
@@ -90,14 +90,14 @@ tofu plan
 ## State Storage Backends
 
 ```hcl
-# Local state (default) — stored in terraform.tfstate
+# Local state (default) - stored in terraform.tfstate
 terraform {
   backend "local" {
     path = "terraform.tfstate"
   }
 }
 
-# Remote state — S3 with DynamoDB locking
+# Remote state - S3 with DynamoDB locking
 terraform {
   backend "s3" {
     bucket         = "my-terraform-state"

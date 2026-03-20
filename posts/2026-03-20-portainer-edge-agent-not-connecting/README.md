@@ -1,4 +1,4 @@
-# How to Fix Edge Agent Not Connecting to Portainer Server
+# How to Fix Edge Agent Not Connecting to Portainer Server - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Diagnose and resolve Edge Agent connection failures to the Portaine
 
 ## Introduction
 
-The Portainer Edge Agent is designed for environments where the Portainer server cannot directly reach the Docker host — the agent initiates an outbound connection (reverse tunnel) to the server. When this connection fails, edge devices appear offline and cannot be managed. This guide covers all common failure points.
+The Portainer Edge Agent is designed for environments where the Portainer server cannot directly reach the Docker host - the agent initiates an outbound connection (reverse tunnel) to the server. When this connection fails, edge devices appear offline and cannot be managed. This guide covers all common failure points.
 
 ## How Edge Agent Connectivity Works
 
@@ -17,12 +17,13 @@ Unlike the standard agent (where the server connects to the agent), the Edge Age
 2. Creates a reverse tunnel
 3. Portainer uses this tunnel to send management commands
 
-This means the edge device only needs outbound internet access — no inbound ports required.
+This means the edge device only needs outbound internet access - no inbound ports required.
 
 ## Step 1: Verify the Edge Agent Is Running
 
 ```bash
 # On the edge device, check if the agent is running
+
 docker ps | grep portainer-edge-agent
 
 # Check logs
@@ -94,7 +95,7 @@ docker stop portainer && docker rm portainer
 docker run -d \
   -p 9000:9000 \
   -p 9443:9443 \
-  -p 8000:8000 \   # Edge Agent tunnel port — REQUIRED
+  -p 8000:8000 \   # Edge Agent tunnel port - REQUIRED
   --name portainer \
   --restart=unless-stopped \
   -v /var/run/docker.sock:/var/run/docker.sock \
@@ -175,7 +176,7 @@ timedatectl show | grep NTPSynchronized
 ## Step 10: Verify Edge Environment Status in Portainer
 
 1. In Portainer, go to **Environments**
-2. Find the Edge environment — check the **Last Check-in** timestamp
+2. Find the Edge environment - check the **Last Check-in** timestamp
 3. If stale (>5 minutes ago), the agent is not connecting
 4. Click **Browse** → view the connection key details
 5. Re-generate the key if needed and redeploy the agent

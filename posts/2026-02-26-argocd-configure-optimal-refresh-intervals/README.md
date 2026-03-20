@@ -45,6 +45,7 @@ The reconciliation interval controls how often the controller performs a soft re
 
 ```yaml
 # argocd-cm ConfigMap
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

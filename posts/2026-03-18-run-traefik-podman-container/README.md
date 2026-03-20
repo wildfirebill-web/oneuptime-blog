@@ -20,6 +20,7 @@ Download the official Traefik image.
 
 ```bash
 # Pull the latest Traefik image
+
 podman pull docker.io/library/traefik:v3.0
 
 # Verify the image

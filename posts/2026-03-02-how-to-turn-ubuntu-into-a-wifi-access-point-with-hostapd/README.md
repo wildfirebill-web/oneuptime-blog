@@ -16,6 +16,7 @@ Not all wireless adapters support AP mode. Check your adapter's capabilities fir
 
 ```bash
 # Install iw for wireless interface information
+
 sudo apt-get install -y iw
 
 # Check your wireless interface name

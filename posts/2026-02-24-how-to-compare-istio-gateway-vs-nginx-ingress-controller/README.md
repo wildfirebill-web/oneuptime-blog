@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Istio, NGINX, Ingresses, Kubernetes, Gateway
+Tags: Istio, Nginx, Ingresses, Kubernetes, Gateway
 
 Description: A hands-on comparison of Istio Gateway and NGINX Ingress Controller covering configuration, features, performance, and operational trade-offs for Kubernetes traffic management.
 
@@ -18,6 +18,7 @@ This comparison covers the practical differences between the two so you can make
 
 ```bash
 # Install NGINX Ingress Controller
+
 helm install ingress-nginx ingress-nginx/ingress-nginx \
   --namespace ingress-nginx --create-namespace
 ```

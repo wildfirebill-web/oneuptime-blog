@@ -8,11 +8,11 @@ Description: Apply a structured decision framework to choose between TCP and UDP
 
 ## Introduction
 
-Every networked application must choose between TCP and UDP. The choice is not about which protocol is "better" — it is about which properties your application needs. Making the wrong choice means either building complex reliability logic on top of UDP unnecessarily, or accepting TCP's latency when your application would benefit from UDP's speed.
+Every networked application must choose between TCP and UDP. The choice is not about which protocol is "better" - it is about which properties your application needs. Making the wrong choice means either building complex reliability logic on top of UDP unnecessarily, or accepting TCP's latency when your application would benefit from UDP's speed.
 
 ## Decision Framework
 
-```
+```text
 Question 1: Does every message need to arrive?
   YES → Strongly prefer TCP (reliability built-in)
   NO  → UDP is viable; continue to question 2
@@ -37,6 +37,7 @@ Question 5: Are messages short (< 1 packet) and infrequent?
 
 ```bash
 # === Financial Transactions ===
+
 # Requirement: every order must arrive, in order, exactly once
 # Choice: TCP
 # Reason: TCP reliability and ordering match requirement exactly
@@ -116,4 +117,4 @@ curl -I --http3 https://example.com 2>/dev/null | grep -i "alt-svc\|http/3"
 
 ## Conclusion
 
-The choice is mechanical once you know your requirements. If all messages must arrive in order: use TCP. If you can tolerate loss and need low latency: use UDP. If you need broadcast/multicast: you must use UDP. For modern high-performance applications that want reliability with lower latency than TCP, QUIC (UDP-based) is the right answer. There is no universal winner — the right choice depends entirely on the application's reliability, ordering, and latency requirements.
+The choice is mechanical once you know your requirements. If all messages must arrive in order: use TCP. If you can tolerate loss and need low latency: use UDP. If you need broadcast/multicast: you must use UDP. For modern high-performance applications that want reliability with lower latency than TCP, QUIC (UDP-based) is the right answer. There is no universal winner - the right choice depends entirely on the application's reliability, ordering, and latency requirements.

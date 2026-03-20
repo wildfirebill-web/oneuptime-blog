@@ -248,6 +248,7 @@ Blue-green deployments work for TCP services too:
 
 ```yaml
 # Phase 1: All traffic to blue
+
 apiVersion: networking.istio.io/v1beta1
 kind: VirtualService
 metadata:

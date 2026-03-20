@@ -37,6 +37,7 @@ Before using the Cluster generator, you need clusters registered in ArgoCD. The 
 
 ```bash
 # Add a cluster to ArgoCD
+
 argocd cluster add my-staging-cluster --name staging
 
 # Add with labels for filtering

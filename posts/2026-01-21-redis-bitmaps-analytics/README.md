@@ -38,6 +38,7 @@ Use cases:
 
 ```bash
 # Set bit at offset
+
 SETBIT user:logins:2024-01-15 12345 1
 # Sets bit at position 12345 to 1
 

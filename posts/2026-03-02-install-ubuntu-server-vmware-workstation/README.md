@@ -81,6 +81,7 @@ Click "Customize Hardware" before finishing:
 
 ```text
 # Recommended hardware settings:
+
 Memory: 2048 MB
 Processors: 2 cores
 Hard Disk: 40 GB NVMe (thin)

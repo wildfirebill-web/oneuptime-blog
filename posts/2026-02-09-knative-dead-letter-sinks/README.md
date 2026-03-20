@@ -24,6 +24,7 @@ Set up a dead letter sink for a Broker:
 
 ```yaml
 # dlq-handler-service.yaml
+
 apiVersion: serving.knative.dev/v1
 kind: Service
 metadata:

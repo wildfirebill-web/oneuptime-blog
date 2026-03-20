@@ -14,6 +14,7 @@ The Datadog Agent automatically detects and reports the host's IPv6 addresses. N
 
 ```yaml
 # /etc/datadog-agent/datadog.yaml - Core agent configuration
+
 api_key: "{{ your_datadog_api_key }}"
 site: "datadoghq.com"
 
@@ -47,9 +48,9 @@ instances:
 ```
 
 Metrics collected include:
-- `system.net.bytes_rcvd` — per interface (covers IPv6 traffic on dual-stack interfaces)
+- `system.net.bytes_rcvd` - per interface (covers IPv6 traffic on dual-stack interfaces)
 - `system.net.bytes_sent`
-- `system.net.tcp6.established` — IPv6 TCP connections
+- `system.net.tcp6.established` - IPv6 TCP connections
 
 ## Step 3: Configure HTTP Check for IPv6 Endpoints
 

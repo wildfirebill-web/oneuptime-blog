@@ -16,6 +16,7 @@ Description: Learn how to use tofu destroy to safely remove all infrastructure m
 tofu destroy
 
 # OpenTofu shows what will be destroyed:
+
 # Plan: 0 to add, 0 to change, 5 to destroy.
 #
 # Do you really want to destroy all resources?
@@ -30,7 +31,7 @@ tofu destroy
 tofu plan -destroy
 ```
 
-This is equivalent to `tofu destroy` but without execution — useful for reviewing the destruction plan.
+This is equivalent to `tofu destroy` but without execution - useful for reviewing the destruction plan.
 
 ## Auto-Approve Destroy
 
@@ -58,9 +59,9 @@ tofu destroy -var-file=environments/staging.tfvars -auto-approve
 
 ## Destroy Order
 
-OpenTofu respects dependencies — resources are destroyed in reverse dependency order:
+OpenTofu respects dependencies - resources are destroyed in reverse dependency order:
 
-```
+```text
 aws_instance.web depends on aws_security_group.web
 → aws_instance.web is destroyed first
 → aws_security_group.web is destroyed after

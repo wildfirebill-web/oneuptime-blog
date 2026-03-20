@@ -42,6 +42,7 @@ Let me show the complete DAG first, then break down each section:
 
 ```python
 # dags/daily_sales_pipeline.py
+
 from airflow import DAG
 from airflow.providers.google.cloud.sensors.gcs import GCSObjectExistenceAsyncSensor
 from airflow.providers.google.cloud.operators.gcs import GCSListObjectsOperator

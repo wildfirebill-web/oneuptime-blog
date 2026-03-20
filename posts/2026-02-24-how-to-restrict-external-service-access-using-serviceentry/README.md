@@ -45,6 +45,7 @@ Now, selectively allow external services by creating ServiceEntries. This become
 
 ```yaml
 # Allow payment processing
+
 apiVersion: networking.istio.io/v1
 kind: ServiceEntry
 metadata:

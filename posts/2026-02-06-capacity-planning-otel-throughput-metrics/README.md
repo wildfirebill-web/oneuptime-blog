@@ -14,6 +14,7 @@ For capacity planning, you need two categories of metrics: throughput (how much 
 
 ```python
 # capacity_metrics.py
+
 import psutil
 import os
 from opentelemetry import metrics

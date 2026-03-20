@@ -38,6 +38,7 @@ flowchart TD
 
 ```bash
 # Step 1: Find the deleted file using lsof
+
 # Look for files marked as (deleted)
 sudo lsof 2>/dev/null | grep '(deleted)' | grep 'your-filename'
 

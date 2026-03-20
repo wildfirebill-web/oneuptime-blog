@@ -21,6 +21,7 @@ Navigate to **Stacks** > **Add Stack**:
 
 ```yaml
 # docker-compose.yml - PostgREST
+
 version: "3.8"
 
 services:
@@ -102,7 +103,7 @@ GRANT USAGE, SELECT ON SEQUENCE api.todos_id_seq TO authenticated;
 
 ## Step 3: Set Environment Variables in Portainer
 
-```
+```text
 AUTHENTICATOR_PASSWORD=authenticator-password
 POSTGRES_PASSWORD=your-postgres-password
 JWT_SECRET=your-jwt-secret-min-32-chars
@@ -143,4 +144,4 @@ curl http://localhost:3000/ | python3 -m json.tool | head -50
 
 ## Conclusion
 
-PostgREST maps your PostgreSQL schema directly to HTTP endpoints — no application code needed. The `PGRST_DB_SCHEMAS` variable controls which schemas are exposed. All authorization is handled via PostgreSQL roles and Row Level Security (RLS) policies. JWT claims (like `role`) are passed to PostgreSQL as `request.jwt.claims`, enabling per-user row-level access control.
+PostgREST maps your PostgreSQL schema directly to HTTP endpoints - no application code needed. The `PGRST_DB_SCHEMAS` variable controls which schemas are exposed. All authorization is handled via PostgreSQL roles and Row Level Security (RLS) policies. JWT claims (like `role`) are passed to PostgreSQL as `request.jwt.claims`, enabling per-user row-level access control.

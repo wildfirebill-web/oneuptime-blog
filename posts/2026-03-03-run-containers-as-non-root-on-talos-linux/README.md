@@ -24,6 +24,7 @@ The first step is building container images that support non-root execution. Her
 
 ```dockerfile
 # Dockerfile for a non-root Node.js application
+
 FROM node:20-alpine
 
 # Create a non-root user and group

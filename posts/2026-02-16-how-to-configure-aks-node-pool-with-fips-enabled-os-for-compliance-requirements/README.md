@@ -36,6 +36,7 @@ You can enable FIPS on the default node pool during cluster creation.
 
 ```bash
 # Create a new AKS cluster with FIPS enabled on the default node pool
+
 az aks create \
   --resource-group myResourceGroup \
   --name myFIPSCluster \

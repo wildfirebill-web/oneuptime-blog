@@ -35,6 +35,7 @@ variable "datadog_app_key" { type = string; sensitive = true }
 
 ```hcl
 # First create the monitors that form the SLI
+
 resource "datadog_monitor" "api_uptime" {
   name    = "API Service Health Check"
   type    = "metric alert"

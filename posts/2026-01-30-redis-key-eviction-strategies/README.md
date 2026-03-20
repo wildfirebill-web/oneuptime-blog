@@ -40,6 +40,7 @@ This returns detailed memory information:
 
 ```text
 # Memory
+
 used_memory:1073741824
 used_memory_human:1.00G
 used_memory_rss:1288490188

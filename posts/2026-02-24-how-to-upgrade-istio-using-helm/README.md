@@ -18,6 +18,7 @@ Before touching anything, run through these checks:
 
 ```bash
 # 1. Current version
+
 helm list -n istio-system
 istioctl version
 

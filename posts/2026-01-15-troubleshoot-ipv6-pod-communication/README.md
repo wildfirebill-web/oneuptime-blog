@@ -46,6 +46,7 @@ Check your cluster's IP configuration:
 
 ```bash
 # Check cluster CIDR configuration
+
 kubectl cluster-info dump | grep -i cidr
 
 # Check pod IP families

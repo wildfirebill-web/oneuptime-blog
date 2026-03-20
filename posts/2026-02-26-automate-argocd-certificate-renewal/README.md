@@ -30,6 +30,7 @@ First, install a Certificate resource for ArgoCD:
 
 ```yaml
 # argocd-certificate.yaml
+
 apiVersion: cert-manager.io/v1
 kind: Certificate
 metadata:

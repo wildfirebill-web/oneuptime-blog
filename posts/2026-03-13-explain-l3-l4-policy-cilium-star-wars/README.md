@@ -26,6 +26,7 @@ This technical explanation is intended for engineers who need to understand Cili
 
 ```bash
 # View all security identities assigned by Cilium
+
 kubectl exec -n kube-system ds/cilium -- cilium identity list
 
 # View the identity for the xwing pod specifically

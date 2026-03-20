@@ -39,6 +39,7 @@ This command creates a Free tier product:
 
 ```bash
 # Create a Free tier API product
+
 curl -X POST \
   "https://apigee.googleapis.com/v1/organizations/YOUR_ORG/apiproducts" \
   -H "Authorization: Bearer $(gcloud auth print-access-token)" \

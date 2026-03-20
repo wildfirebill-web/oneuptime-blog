@@ -16,6 +16,7 @@ The basic command to view an inventory:
 
 ```bash
 # Browse inventory interactively
+
 ansible-navigator inventory -i inventory.yml
 
 # View inventory in stdout mode

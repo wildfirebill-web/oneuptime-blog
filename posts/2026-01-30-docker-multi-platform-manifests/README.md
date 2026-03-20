@@ -42,6 +42,7 @@ Docker Buildx extends the docker build command with additional features, includi
 
 ```bash
 # Check if buildx is available
+
 docker buildx version
 
 # Expected output:

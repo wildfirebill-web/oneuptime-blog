@@ -34,6 +34,7 @@ First, install `talosctl` on your workstation:
 
 ```bash
 # On macOS using Homebrew
+
 brew install siderolabs/tap/talosctl
 
 # On Linux using the install script

@@ -20,7 +20,7 @@ Key differences from NetFlow v9:
 
 On Cisco IOS XE (ASR, ISR 4K, Catalyst 9K), configure IPFIX via Flexible NetFlow:
 
-```
+```text
 ! Create a flow record with IPFIX-compatible fields
 flow record IPFIX_RECORD
  match ipv4 source address
@@ -61,8 +61,9 @@ interface GigabitEthernet0/0
 
 ## Step 2: Configure IPFIX on Juniper Junos
 
-```
+```text
 # Junos IPFIX configuration (flow-server)
+
 set forwarding-options flow-export-format ipfix-version9
 
 set services flow-monitoring version-ipfix template IPV4_TEMPLATE
@@ -135,7 +136,7 @@ nfdump -R /var/log/ipfix/ -t "$(date -d '1 hour ago' +%Y/%m/%d.%H:%M):now" \
 
 ## Step 6: Verify IPFIX Export
 
-```
+```bash
 ! Cisco IOS - verify export is working
 Router# show flow exporter IPFIX_EXPORTER statistics
 

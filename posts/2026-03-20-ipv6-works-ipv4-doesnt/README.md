@@ -8,7 +8,7 @@ Description: Diagnose and fix situations where IPv6 connectivity is working but 
 
 ## Introduction
 
-When IPv6 works but IPv4 does not, the root cause is typically in the IPv4 layer specifically — IPv6 and IPv4 use separate address assignment, routing, and firewall mechanisms. Common causes include DHCP failure (no IPv4 address assigned), missing IPv4 default route, NAT table overflow, ISP IPv4 outage, or firewall rules blocking IPv4 but not IPv6. This guide provides systematic diagnosis and fixes.
+When IPv6 works but IPv4 does not, the root cause is typically in the IPv4 layer specifically - IPv6 and IPv4 use separate address assignment, routing, and firewall mechanisms. Common causes include DHCP failure (no IPv4 address assigned), missing IPv4 default route, NAT table overflow, ISP IPv4 outage, or firewall rules blocking IPv4 but not IPv6. This guide provides systematic diagnosis and fixes.
 
 ## Diagnostic Checklist
 
@@ -59,6 +59,7 @@ nslookup google.com 2001:4860:4860::8888 2>/dev/null | grep "Address" || echo "I
 
 ```bash
 # Symptom: No inet address on interface (only link-local IPv4 169.254.x.x or nothing)
+
 ip -4 addr show eth0
 
 # Fix 1: Request DHCP manually
@@ -150,4 +151,4 @@ traceroute6 2001:4860:4860::8888
 
 ## Conclusion
 
-When IPv6 works but IPv4 fails, diagnose in order: check IPv4 address assignment (DHCP failure is common), verify IPv4 default route exists, check iptables rules for IPv4-specific blocks, verify NAT masquerade is configured for IPv4 outbound, and test if the issue is at the ISP level. IPv6 and IPv4 use completely separate routing, DHCP, and firewall paths — a failure in one does not affect the other. The most common cause is DHCP failure combined with working IPv6 SLAAC, which assigns IPv6 automatically without DHCP.
+When IPv6 works but IPv4 fails, diagnose in order: check IPv4 address assignment (DHCP failure is common), verify IPv4 default route exists, check iptables rules for IPv4-specific blocks, verify NAT masquerade is configured for IPv4 outbound, and test if the issue is at the ISP level. IPv6 and IPv4 use completely separate routing, DHCP, and firewall paths - a failure in one does not affect the other. The most common cause is DHCP failure combined with working IPv6 SLAAC, which assigns IPv6 automatically without DHCP.

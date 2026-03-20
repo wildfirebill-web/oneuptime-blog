@@ -30,6 +30,7 @@ graph LR
 
 ```yaml
 # recovery-objectives.yaml
+
 # Define RTO and RPO for each service tier
 
 service_tiers:

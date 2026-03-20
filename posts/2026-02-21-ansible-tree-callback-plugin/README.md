@@ -33,6 +33,7 @@ The tree callback is a notification callback, not a stdout callback. This means 
 
 ```ini
 # ansible.cfg - Enable the tree callback alongside normal output
+
 [defaults]
 # Keep your preferred stdout callback
 stdout_callback = default

@@ -37,6 +37,7 @@ flowchart TD
 
 ```bash
 # Create HITRUST-aligned custom roles for healthcare workloads
+
 # Clinical data viewer - can read patient data but not modify
 gcloud iam roles create clinicalDataViewer \
     --project=healthcare-project \

@@ -18,6 +18,7 @@ A CNAME (Canonical Name) record tells DNS resolvers "the answer to this query is
 
 ```bash
 # Create a CNAME record
+
 aws route53 change-resource-record-sets \
   --hosted-zone-id Z0123456789ABCDEFGHIJ \
   --change-batch '{

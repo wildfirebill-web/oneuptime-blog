@@ -53,6 +53,7 @@ Set the number of results per page using the `limit` query parameter:
 
 ```bash
 # Get 10 clusters per page
+
 api "${RANCHER_URL}/v3/clusters?limit=10" | jq '{
   total: .pagination.total,
   returned: (.data | length),

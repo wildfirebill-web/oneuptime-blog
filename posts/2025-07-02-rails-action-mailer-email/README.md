@@ -71,6 +71,7 @@ Action Mailer comes bundled with Rails. Generate a new mailer:
 
 ```bash
 # Generate a mailer for user-related emails
+
 rails generate mailer UserMailer
 
 # This creates:

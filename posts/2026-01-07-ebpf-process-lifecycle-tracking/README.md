@@ -61,6 +61,7 @@ This command installs the necessary development tools and BCC (BPF Compiler Coll
 
 ```bash
 # Install required packages on Ubuntu/Debian
+
 sudo apt-get update
 sudo apt-get install -y \
     bpfcc-tools \

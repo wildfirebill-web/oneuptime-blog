@@ -209,6 +209,7 @@ In application code using the Spanner client library, this looks more natural:
 
 ```python
 # Python example: read-modify-write a JSON field
+
 from google.cloud import spanner
 import json
 

@@ -40,6 +40,7 @@ flowchart TB
 
 ```yaml
 # spire-server.yaml
+
 apiVersion: apps/v1
 kind: StatefulSet
 metadata:

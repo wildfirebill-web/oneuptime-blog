@@ -326,6 +326,7 @@ Check on your existing budgets with the CLI.
 
 ```bash
 # List all budgets
+
 aws budgets describe-budgets \
   --account-id 123456789012 \
   --query 'Budgets[*].{Name:BudgetName,Limit:BudgetLimit.Amount,Actual:CalculatedSpend.ActualSpend.Amount,Forecast:CalculatedSpend.ForecastedSpend.Amount}'

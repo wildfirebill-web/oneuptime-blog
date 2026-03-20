@@ -159,6 +159,7 @@ For EKS with IRSA (IAM Roles for Service Accounts):
 
 ```yaml
 # IAM Policy for Loki
+
 {
   "Version": "2012-10-17",
   "Statement": [

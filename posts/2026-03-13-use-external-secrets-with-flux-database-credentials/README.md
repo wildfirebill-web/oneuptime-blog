@@ -52,6 +52,7 @@ Organize database credentials as JSON objects in the external store:
 
 ```yaml
 # clusters/my-cluster/apps/myapp/externalsecret-postgres.yaml
+
 apiVersion: external-secrets.io/v1beta1
 kind: ExternalSecret
 metadata:

@@ -18,8 +18,8 @@ DOCSIS 3.0+ supports native IPv6 for cable subscribers. The IPv6 provisioning fl
 
 ## Cisco CMTS: IPv6 Configuration
 
-```
-! Cisco uBR or cBR-8 CMTS — IPv6 configuration
+```text
+! Cisco uBR or cBR-8 CMTS - IPv6 configuration
 
 ! Configure cable interface for IPv6
 interface Cable1/0/1
@@ -81,6 +81,7 @@ show ipv6 dhcp binding | head -20
 
 ```bash
 # Check cable modem IPv6 registration
+
 show cable modem ipv6 | grep "online"
 
 # DHCPv6 statistics

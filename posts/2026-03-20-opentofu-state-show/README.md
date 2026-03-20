@@ -1,11 +1,10 @@
----
-title: "Using tofu state show in OpenTofu"
-author: nawazdhandala
-tags: opentofu, terraform, iac, state
-description: "Learn how to use tofu state show to inspect the full attributes of a specific resource in your OpenTofu state."
----
-
 # Using tofu state show in OpenTofu
+
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
+
+Tags: OpenTofu, Terraform, IaC, State
+
+Description: Learn how to use tofu state show to inspect the full attributes of a specific resource in your OpenTofu state.
 
 The `tofu state show` command displays all the attributes of a specific resource stored in state. It's invaluable for debugging unexpected plan behavior, verifying resource properties, and understanding what OpenTofu knows about your infrastructure.
 
@@ -13,6 +12,7 @@ The `tofu state show` command displays all the attributes of a specific resource
 
 ```bash
 # Show a specific resource
+
 tofu state show aws_instance.web
 
 # Example output:
@@ -159,7 +159,7 @@ tofu show -state=path/to/terraform.tfstate
 
 ```bash
 #!/bin/bash
-# resource-inventory.sh — export key attributes
+# resource-inventory.sh - export key attributes
 
 echo "Resource Inventory"
 echo "=================="

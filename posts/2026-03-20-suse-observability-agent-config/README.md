@@ -14,7 +14,7 @@ The SUSE Observability agent runs on each Kubernetes cluster you want to monitor
 
 ## Agent Architecture
 
-```
+```text
 ┌─────────────────────────────────────────┐
 │          Kubernetes Cluster             │
 │                                         │
@@ -37,6 +37,7 @@ The SUSE Observability agent runs on each Kubernetes cluster you want to monitor
 
 ```yaml
 # agent-values.yaml
+
 stackstate:
   apiKey: "your-api-key"
   cluster:
@@ -207,6 +208,6 @@ kubectl rollout restart daemonset/suse-observability-agent-node-agent -n suse-ob
 
 ## Best Practices
 
-- Set a meaningful `cluster.name` that identifies the environment and region — this name appears in the topology view and cannot be easily changed.
+- Set a meaningful `cluster.name` that identifies the environment and region - this name appears in the topology view and cannot be easily changed.
 - Enable log collection selectively for namespaces with high log volume to avoid overwhelming the Observability server.
 - Use `tolerations` on the node agent to ensure it runs on control-plane nodes for complete cluster visibility.

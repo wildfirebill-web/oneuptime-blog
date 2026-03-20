@@ -26,6 +26,7 @@ Enable Envoy metrics collection:
 
 ```yaml
 # cilium-ingress-monitoring.yaml
+
 envoy:
   enabled: true
   prometheus:

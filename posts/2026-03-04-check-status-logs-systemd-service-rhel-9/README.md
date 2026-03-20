@@ -20,6 +20,7 @@ The most common command for a quick health check:
 
 ```bash
 # Get the current status of httpd
+
 sudo systemctl status httpd
 ```
 

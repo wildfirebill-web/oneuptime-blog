@@ -42,6 +42,7 @@ This is the most straightforward approach. After building and pushing the image,
 
 ```yaml
 # .github/workflows/build-deploy.yml
+
 name: Build and Deploy
 on:
   push:

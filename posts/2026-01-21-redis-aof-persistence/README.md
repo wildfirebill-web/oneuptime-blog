@@ -25,6 +25,7 @@ Enable and configure AOF in your `redis.conf` file:
 
 ```bash
 # Enable AOF persistence
+
 appendonly yes
 
 # The name of the append-only file

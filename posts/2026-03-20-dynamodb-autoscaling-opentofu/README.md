@@ -1,4 +1,4 @@
-# How to Configure DynamoDB Auto Scaling with OpenTofu
+# How to Configure DynamoDB Auto Scaling with OpenTofu - Autoscaling
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -59,6 +59,7 @@ resource "aws_dynamodb_table" "scalable" {
 
 ```hcl
 # Register table read capacity as a scalable target
+
 resource "aws_appautoscaling_target" "table_read" {
   max_capacity       = 100
   min_capacity       = 5
@@ -158,4 +159,4 @@ aws application-autoscaling describe-scaling-activities \
 
 ## Conclusion
 
-DynamoDB Auto Scaling with a 70% utilization target provides a balance between cost and performance headroom. For tables with highly bursty traffic, consider using `PAY_PER_REQUEST` mode instead since auto scaling has a response lag of a few minutes. Always configure auto scaling on GSIs separately—GSI capacity is independent of table capacity and throttles independently.
+DynamoDB Auto Scaling with a 70% utilization target provides a balance between cost and performance headroom. For tables with highly bursty traffic, consider using `PAY_PER_REQUEST` mode instead since auto scaling has a response lag of a few minutes. Always configure auto scaling on GSIs separately-GSI capacity is independent of table capacity and throttles independently.

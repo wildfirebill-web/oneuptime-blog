@@ -34,6 +34,7 @@ This means a stolen session token is less useful because the device check will f
 
 ```bash
 # Enable required APIs
+
 gcloud services enable \
   beyondcorp.googleapis.com \
   iap.googleapis.com \

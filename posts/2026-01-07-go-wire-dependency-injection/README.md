@@ -82,6 +82,7 @@ To get started with Wire, you need to install the Wire command-line tool:
 
 ```bash
 # Install the Wire code generator tool
+
 # This provides the 'wire' command for generating dependency injection code
 go install github.com/google/wire/cmd/wire@latest
 

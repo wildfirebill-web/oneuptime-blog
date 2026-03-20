@@ -1,4 +1,4 @@
-# How to Secure Your Portainer Installation
+# How to Secure Your Portainer Installation - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -16,6 +16,7 @@ Never run Portainer over HTTP in production. Use Let's Encrypt via Traefik/Nginx
 
 ```bash
 # Run Portainer with your own TLS certificate
+
 docker run -d \
   -p 9443:9443 \
   --name portainer \
@@ -82,7 +83,7 @@ In **Settings > Security**:
 
 For each Docker/Swarm environment:
 
-```
+```text
 Settings > Environments > [Your Env] > Security settings:
 - Disable: Allow privileged mode
 - Disable: Allow bind mounts

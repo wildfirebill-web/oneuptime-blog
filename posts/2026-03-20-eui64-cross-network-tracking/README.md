@@ -31,12 +31,13 @@ flowchart LR
 
 Because the IID portion of the address never changes regardless of which network you join, any party that can observe IPv6 traffic can:
 
-1. **Correlate sessions across networks** — the same IID appears at home, at a coffee shop, and at the office
-2. **Recover the hardware MAC** — trivially by reversing the EUI-64 transform
-3. **Identify device manufacturer** — the first three bytes of a MAC are the OUI (Organizationally Unique Identifier), identifying the hardware vendor
+1. **Correlate sessions across networks** - the same IID appears at home, at a coffee shop, and at the office
+2. **Recover the hardware MAC** - trivially by reversing the EUI-64 transform
+3. **Identify device manufacturer** - the first three bytes of a MAC are the OUI (Organizationally Unique Identifier), identifying the hardware vendor
 
 ```bash
 # Demonstration: reverse EUI-64 to recover MAC address
+
 # Given IPv6 address: 2001:db8::021a:2bff:fe3c:4d5e
 # IID: 021a:2bff:fe3c:4d5e
 

@@ -29,6 +29,7 @@ Before you can bootstrap, you need to have your Talos Linux nodes provisioned an
 
 ```bash
 # Generate machine configuration
+
 talosctl gen config my-cluster https://192.168.1.10:6443
 
 # This creates three files:

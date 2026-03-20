@@ -41,6 +41,7 @@ Pull and run the DDOT Collector container:
 
 ```bash
 # Run the Datadog Distribution of the OTel Collector
+
 docker run -d \
   --name ddot-collector \
   -e DD_API_KEY=your-datadog-api-key \

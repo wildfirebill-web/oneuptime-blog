@@ -27,6 +27,7 @@ Each storage service (blob, file, queue, table, dfs) needs its own private endpo
 
 ```bash
 # Create a private endpoint for blob storage
+
 az network private-endpoint create \
   --name pe-storage-blob \
   --resource-group my-resource-group \

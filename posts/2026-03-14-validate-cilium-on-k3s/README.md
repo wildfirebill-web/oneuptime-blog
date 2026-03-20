@@ -29,6 +29,7 @@ Start with the built-in status command that validates all Cilium components:
 
 ```bash
 # Check overall Cilium status
+
 cilium status
 
 # Expected output should show:

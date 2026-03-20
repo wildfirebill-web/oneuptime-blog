@@ -31,6 +31,7 @@ By default, any cluster-admin can modify IP pools. Scope this to a dedicated rol
 
 ```yaml
 # ipam-operator-role.yaml
+
 # ClusterRole for engineers authorized to perform IPAM splits
 apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRole

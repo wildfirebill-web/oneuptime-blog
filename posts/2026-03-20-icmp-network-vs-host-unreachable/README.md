@@ -23,6 +23,7 @@ ICMP Destination Unreachable Type 3 has two closely related codes that are often
 
 ```bash
 # Watch for both codes simultaneously
+
 tcpdump -i eth0 -n -v 'icmp[0]=3 and (icmp[1]=0 or icmp[1]=1)'
 
 # Network Unreachable example output:
@@ -88,7 +89,7 @@ ping -c 3 <your-server-ip>
 
 ## Quick Diagnostic Decision Tree
 
-```
+```text
 Receiving ICMP Unreachable?
   ├── Code 0 (Network Unreachable)
   │   └── Check routing table on the router that sent the ICMP
@@ -101,4 +102,4 @@ Receiving ICMP Unreachable?
 
 ## Conclusion
 
-Network Unreachable (Code 0) and Host Unreachable (Code 1) are routing layer and host layer problems respectively. Code 0 means a router lacks a route — fix the routing configuration. Code 1 means the network is routable but the specific host isn't responding — the problem is at the host (down, ARP failure, or Layer 2 issue). The ICMP source IP tells you which router identified the problem, giving you a precise location to investigate.
+Network Unreachable (Code 0) and Host Unreachable (Code 1) are routing layer and host layer problems respectively. Code 0 means a router lacks a route - fix the routing configuration. Code 1 means the network is routable but the specific host isn't responding - the problem is at the host (down, ARP failure, or Layer 2 issue). The ICMP source IP tells you which router identified the problem, giving you a precise location to investigate.

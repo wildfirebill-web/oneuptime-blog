@@ -27,6 +27,7 @@ Flux resources reconcile on a configured interval. For example:
 
 ```yaml
 # A kustomization that reconciles every 10 minutes
+
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
 metadata:

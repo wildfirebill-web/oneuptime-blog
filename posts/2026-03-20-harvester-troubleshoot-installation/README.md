@@ -1,4 +1,4 @@
-# How to Troubleshoot Harvester Installation Issues
+# How to Troubleshoot Harvester Installation Issues - Installation
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: A comprehensive troubleshooting guide for resolving common Harveste
 
 ## Introduction
 
-Installing Harvester on bare metal involves hardware setup, network configuration, OS installation, and Kubernetes bootstrap — each of which can encounter issues. This guide covers the most common installation problems and their solutions, organized by the phase in which they typically occur.
+Installing Harvester on bare metal involves hardware setup, network configuration, OS installation, and Kubernetes bootstrap - each of which can encounter issues. This guide covers the most common installation problems and their solutions, organized by the phase in which they typically occur.
 
 ## Common Installation Issues
 
@@ -23,6 +23,7 @@ Installing Harvester on bare metal involves hardware setup, network configuratio
 
 ```bash
 # Verify the USB was written correctly
+
 # Check the ISO checksum first
 sha512sum harvester-v1.3.0-amd64.iso
 # Compare with the published checksum
@@ -300,4 +301,4 @@ echo "Debug bundle saved to /tmp/harvester-debug-$(date +%Y%m%d).tar.gz"
 
 ## Conclusion
 
-Harvester installation issues typically fall into a few categories: hardware compatibility, network misconfiguration, or Kubernetes bootstrap failures. The key to efficient troubleshooting is accessing the system console early, checking system logs, and verifying each layer — hardware → OS → network → Kubernetes → Harvester components. Most issues are solvable with the right log access and targeted fixes. When in doubt, the Harvester community forums and GitHub issues are excellent resources with solutions from users who have encountered similar problems.
+Harvester installation issues typically fall into a few categories: hardware compatibility, network misconfiguration, or Kubernetes bootstrap failures. The key to efficient troubleshooting is accessing the system console early, checking system logs, and verifying each layer - hardware → OS → network → Kubernetes → Harvester components. Most issues are solvable with the right log access and targeted fixes. When in doubt, the Harvester community forums and GitHub issues are excellent resources with solutions from users who have encountered similar problems.

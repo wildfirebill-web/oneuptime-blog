@@ -12,6 +12,7 @@ ProxyJump (`-J`) creates a tunnel through an intermediate SSH server (jump host 
 
 ```bash
 # Jump through bastion at 2001:db8::1 to reach internal server at 2001:db8::100
+
 ssh -J user@2001:db8::1 admin@2001:db8::100
 
 # Multiple jump hosts (chained)
@@ -26,7 +27,7 @@ ssh -J user@2001:db8::1 -6 admin@destination.internal
 
 ## ~/.ssh/config with ProxyJump
 
-```
+```text
 # ~/.ssh/config
 
 # Define the jump host (bastion)
@@ -60,7 +61,7 @@ Host app-server-2
 
 ## ProxyCommand Alternative (Older SSH Versions)
 
-```
+```text
 # ~/.ssh/config (for SSH < 7.3 that lacks ProxyJump)
 
 Host internal-server
@@ -105,7 +106,7 @@ rsync -av /local/dir/ internal-server:/remote/
 
 ## Multi-Hop ProxyJump
 
-```
+```text
 # ~/.ssh/config
 
 # Three-hop jump: internet → DMZ bastion → internal jump → final server

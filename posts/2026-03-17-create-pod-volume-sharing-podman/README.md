@@ -18,6 +18,7 @@ While pods share network and IPC namespaces by default, filesystem sharing requi
 
 ```bash
 # Create a named volume
+
 podman volume create shared-data
 
 # Create a pod

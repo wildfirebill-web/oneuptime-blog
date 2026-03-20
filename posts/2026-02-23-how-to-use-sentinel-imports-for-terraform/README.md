@@ -29,6 +29,7 @@ The `tfplan/v2` import is the most commonly used import. It gives you access to 
 
 ```python
 # Import the plan data
+
 import "tfplan/v2" as tfplan
 
 # Access all resource changes

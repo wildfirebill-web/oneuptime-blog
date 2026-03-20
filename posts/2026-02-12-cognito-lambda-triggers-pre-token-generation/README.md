@@ -263,6 +263,7 @@ Then invoke it locally:
 
 ```bash
 # Test the Lambda function with the sample event
+
 aws lambda invoke \
     --function-name pre-token-generation \
     --payload file://test-event.json \

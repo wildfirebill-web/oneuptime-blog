@@ -19,6 +19,7 @@ S3 Same-Region Replication copies objects within the same AWS region to a differ
 
 ```hcl
 # Source production bucket
+
 resource "aws_s3_bucket" "production" {
   bucket = "${var.project_name}-production"
   tags   = { Name = "production-bucket" }

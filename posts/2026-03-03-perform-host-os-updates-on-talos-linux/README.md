@@ -18,6 +18,7 @@ Talos Linux eliminates all of this. The OS is built as a single squashfs image t
 
 ```bash
 # Check the current Talos version (which IS the OS version)
+
 talosctl version -n <node-ip>
 
 # Example output:

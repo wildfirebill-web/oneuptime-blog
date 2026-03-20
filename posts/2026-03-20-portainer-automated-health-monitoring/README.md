@@ -1,4 +1,4 @@
-# How to Set Up Automated Container Health Monitoring with Portainer
+# How to Set Up Automated Container Health Monitoring with Portainer (2)
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -14,6 +14,7 @@ Portainer provides visibility into container health, but proactive monitoring re
 
 ```yaml
 # docker-compose.yml with health checks
+
 version: '3.8'
 
 services:

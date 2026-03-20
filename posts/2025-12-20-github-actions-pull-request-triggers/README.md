@@ -308,7 +308,7 @@ jobs:
               owner: context.repo.owner,
               repo: context.repo.repo,
               issue_number: context.issue.number,
-              body: `## Coverage Report\n\`\`\`\n${coverage}\n\`\`\``
+              body: `## Coverage Report\n```\n${coverage}\n````
             });
 ```
 

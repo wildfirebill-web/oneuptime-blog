@@ -1,11 +1,10 @@
----
-title: "Passing Providers to Modules in OpenTofu"
-author: nawazdhandala
-tags: opentofu, terraform, iac, modules, providers
-description: "Learn how to pass provider configurations to child modules in OpenTofu for multi-region and cross-account deployments."
----
-
 # Passing Providers to Modules in OpenTofu
+
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
+
+Tags: OpenTofu, Terraform, IaC, Modules, Provider
+
+Description: Learn how to pass provider configurations to child modules in OpenTofu for multi-region and cross-account deployments.
 
 By default, child modules inherit their parent's default provider configurations. When you use provider aliases or need explicit routing of providers, use the `providers` argument to pass specific provider configurations to modules.
 
@@ -17,6 +16,7 @@ provider "aws" {
 }
 
 # Module inherits the default aws provider
+
 module "vpc" {
   source     = "./modules/vpc"
   cidr_block = "10.0.0.0/16"

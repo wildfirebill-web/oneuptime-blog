@@ -26,6 +26,7 @@ flowchart TB
 
 ```bash
 # Source host: push to registry
+
 docker tag myapp:latest registry.example.com/myapp:latest
 docker push registry.example.com/myapp:latest
 

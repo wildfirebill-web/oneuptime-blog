@@ -34,6 +34,7 @@ Cloud Spanner is the only globally distributed database that provides external c
 
 ```bash
 # Create a multi-region Spanner instance
+
 gcloud spanner instances create global-app-db \
   --config=nam-eur-asia1 \
   --description="Global active-active database" \

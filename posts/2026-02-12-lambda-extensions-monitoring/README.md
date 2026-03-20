@@ -43,6 +43,7 @@ Before building your own, check if your monitoring tool provides a Lambda extens
 
 ```bash
 # Add the Datadog Lambda layer
+
 aws lambda update-function-configuration \
   --function-name my-function \
   --layers arn:aws:lambda:us-east-1:464622532012:layer:Datadog-Extension:latest \

@@ -44,6 +44,7 @@ Use `ansible-galaxy init` to create the standard structure.
 
 ```bash
 # Create a new role with the standard directory layout
+
 ansible-galaxy init roles/nginx
 
 # The generated structure:

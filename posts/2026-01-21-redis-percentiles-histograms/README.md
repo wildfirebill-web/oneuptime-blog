@@ -107,6 +107,7 @@ class PercentileTracker:
         }
 
 # Usage
+
 tracker = PercentileTracker('latency:api:users')
 
 # Add sample latency data

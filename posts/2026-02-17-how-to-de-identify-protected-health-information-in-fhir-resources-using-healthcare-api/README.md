@@ -41,6 +41,7 @@ The following command creates a new FHIR store in the same dataset to hold the d
 
 ```bash
 # Create a destination FHIR store for de-identified data
+
 gcloud healthcare fhir-stores create deidentified-fhir-store \
   --dataset=my-dataset \
   --location=us-central1 \

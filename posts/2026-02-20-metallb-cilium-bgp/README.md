@@ -59,6 +59,7 @@ Give MetalLB and Cilium separate, non-overlapping IP ranges:
 
 ```yaml
 # metallb-pool.yaml
+
 # MetalLB handles this IP range (legacy services)
 apiVersion: metallb.io/v1beta1
 kind: IPAddressPool

@@ -27,6 +27,7 @@ The most basic DNS configuration is setting your upstream resolvers in the machi
 
 ```yaml
 # Configure upstream DNS servers
+
 machine:
   network:
     nameservers:

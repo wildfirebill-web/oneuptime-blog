@@ -124,6 +124,7 @@ The Collector exposes batch processor metrics:
 
 ```text
 # Batch size distribution
+
 otelcol_processor_batch_batch_send_size
 
 # Time taken to export a batch

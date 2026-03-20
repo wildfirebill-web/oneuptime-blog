@@ -22,6 +22,7 @@ Deploy the Collector using Docker for quick setup and testing.
 
 ```yaml
 # docker-compose.yml
+
 version: '3.8'
 
 services:

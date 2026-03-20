@@ -22,6 +22,7 @@ Since DuckDB is an embedded database, you build it into your application image. 
 
 ```dockerfile
 # Dockerfile
+
 FROM python:3.12-slim
 
 # Install DuckDB and useful analytics libraries

@@ -95,6 +95,7 @@ Error: x509: certificate signed by unknown authority (intermediate certificate m
 
 ```bash
 # Check certificate from a server
+
 openssl s_client -connect oneuptime.com:443 -servername oneuptime.com
 
 # Save certificate to file

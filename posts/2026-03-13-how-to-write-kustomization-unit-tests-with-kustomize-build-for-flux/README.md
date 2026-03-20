@@ -23,6 +23,7 @@ Flux Kustomizations apply kustomize overlays to your cluster. Before these overl
 
 ```bash
 # macOS (Homebrew)
+
 brew install kustomize
 
 # Linux (binary download)

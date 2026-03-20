@@ -58,6 +58,7 @@ If you installed ArgoCD with Helm, enable LFS in your values file:
 
 ```yaml
 # values.yaml
+
 repoServer:
   extraArgs:
     - --enable-git-lfs

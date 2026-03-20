@@ -37,6 +37,7 @@ You need a complete inventory of every application, service, and dependency in y
 
 ```bash
 # Use Google's StratoZone or Migration Center for automated discovery
+
 # Migration Center agent collects data from your servers
 
 # Install the Migration Center discovery agent on Linux servers

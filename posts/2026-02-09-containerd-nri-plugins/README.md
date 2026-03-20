@@ -22,6 +22,7 @@ Enable NRI in containerd configuration.
 
 ```toml
 # /etc/containerd/config.toml
+
 version = 2
 
 [plugins."io.containerd.nri.v1.nri"]

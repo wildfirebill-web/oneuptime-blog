@@ -43,6 +43,7 @@ Set `imagePullPolicy: IfNotPresent` for production workloads so nodes use cached
 
 ```yaml
 # In your Git-managed deployment manifests
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

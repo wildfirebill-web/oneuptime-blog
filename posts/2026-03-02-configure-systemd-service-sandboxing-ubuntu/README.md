@@ -20,6 +20,7 @@ systemd provides an analysis tool that rates a service's security posture:
 
 ```bash
 # Analyze a service's security configuration
+
 systemd-analyze security nginx.service
 
 # Example output (EXPOSURE is a 0-10 scale, lower is better):

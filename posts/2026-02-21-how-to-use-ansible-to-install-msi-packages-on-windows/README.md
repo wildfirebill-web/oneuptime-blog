@@ -27,6 +27,7 @@ The simplest case is installing an MSI that has already been copied to the targe
 
 ```yaml
 # playbook-install-msi.yml
+
 # Installs an MSI package from a local path on the Windows host
 - name: Install MSI package
   hosts: windows

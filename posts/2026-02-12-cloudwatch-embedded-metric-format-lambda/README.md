@@ -255,6 +255,7 @@ One of the best things about EMF is that the full JSON structure ends up in Clou
 
 ```text
 # Find the slowest orders processed in the last hour
+
 fields @timestamp, OrderId, CustomerId, ProcessingTime
 | filter ProcessingTime > 1000
 | sort ProcessingTime desc

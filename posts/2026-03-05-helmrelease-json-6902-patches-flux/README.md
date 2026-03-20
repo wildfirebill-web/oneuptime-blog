@@ -31,6 +31,7 @@ In Flux HelmRelease v2, JSON 6902 patches are configured under the post-renderer
 
 ```yaml
 # Structure of patchesJson6902 in a HelmRelease post-renderer
+
 postRenderers:
   - kustomize:
       patchesJson6902:

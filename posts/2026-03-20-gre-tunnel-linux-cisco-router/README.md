@@ -12,7 +12,7 @@ GRE is an open standard (RFC 2784), so Linux and Cisco routers interoperate nati
 
 ## Topology
 
-```
+```text
 Linux Host:  Public IP = 10.0.0.1, Tunnel IP = 172.16.0.1/30, LAN = 192.168.1.0/24
 Cisco Router: Public IP = 10.0.0.2, Tunnel IP = 172.16.0.2/30, LAN = 192.168.2.0/24
 ```
@@ -21,6 +21,7 @@ Cisco Router: Public IP = 10.0.0.2, Tunnel IP = 172.16.0.2/30, LAN = 192.168.2.0
 
 ```bash
 # Load GRE module
+
 modprobe ip_gre
 
 # Create the GRE tunnel
@@ -50,7 +51,7 @@ iptables -A FORWARD -o gre0 -j ACCEPT
 
 ## Cisco Router Configuration
 
-```
+```text
 ! Cisco IOS configuration (provided for reference)
 interface Tunnel0
  ip address 172.16.0.2 255.255.255.252
@@ -75,7 +76,7 @@ ip tunnel add gre0 mode gre \
 ```
 
 **Cisco:**
-```
+```text
 interface Tunnel0
  tunnel key 12345
 ```
@@ -113,4 +114,4 @@ traceroute 192.168.2.1
 
 ## Conclusion
 
-Linux GRE tunnels interoperate natively with Cisco IOS GRE tunnels. Match the tunnel mode (`gre ip` on Cisco = `mode gre` on Linux), local/remote IPs, optional key, and add routes for the remote LAN on both sides. The only difference is the configuration syntax — the underlying GRE protocol is identical.
+Linux GRE tunnels interoperate natively with Cisco IOS GRE tunnels. Match the tunnel mode (`gre ip` on Cisco = `mode gre` on Linux), local/remote IPs, optional key, and add routes for the remote LAN on both sides. The only difference is the configuration syntax - the underlying GRE protocol is identical.

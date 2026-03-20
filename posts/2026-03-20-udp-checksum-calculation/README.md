@@ -2,17 +2,17 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: UDP, Checksum, Networking, Protocol, Linux, Error Detection
+Tags: UDP, Checksums, Networking, Protocol, Linux, Error Detection
 
 Description: Understand how UDP checksum calculation works, when it can be disabled, and how to detect and handle UDP checksum errors.
 
 ## Introduction
 
-The UDP checksum provides end-to-end error detection for UDP datagrams. It is optional in IPv4 (a zero checksum means "not computed") but mandatory in IPv6. The checksum covers the UDP header, payload, and a pseudo-header containing IP addresses — catching bit errors that occur anywhere from source to destination. Understanding when checksums matter and how Linux handles them is important for high-performance UDP applications.
+The UDP checksum provides end-to-end error detection for UDP datagrams. It is optional in IPv4 (a zero checksum means "not computed") but mandatory in IPv6. The checksum covers the UDP header, payload, and a pseudo-header containing IP addresses - catching bit errors that occur anywhere from source to destination. Understanding when checksums matter and how Linux handles them is important for high-performance UDP applications.
 
 ## How UDP Checksum Works
 
-```
+```yaml
 UDP checksum covers a "pseudo-header" + UDP header + data:
 
 Pseudo-header:
@@ -40,6 +40,7 @@ Mismatch = bit error (packet discarded).
 
 ```bash
 # Modern NICs compute UDP checksums in hardware (offloading)
+
 # The kernel doesn't compute them; the NIC does just before transmission
 
 # Check NIC checksum offload status:
@@ -122,4 +123,4 @@ ethtool -k eth0 | grep -E "gso|gro|tso"
 
 ## Conclusion
 
-UDP checksum provides the only built-in data integrity guarantee for UDP. It is computed over the payload plus IP addressing, ensuring end-to-end integrity. In Linux, checksum computation is offloaded to the NIC by default — visible in `ethtool -k`. Monitor `UdpInCsumErrors` in `nstat` to detect data corruption on your network path. Zero checksums (allowed in IPv4) should only be used when higher-level integrity checks exist. Never disable checksums on untrusted network paths or when data integrity matters.
+UDP checksum provides the only built-in data integrity guarantee for UDP. It is computed over the payload plus IP addressing, ensuring end-to-end integrity. In Linux, checksum computation is offloaded to the NIC by default - visible in `ethtool -k`. Monitor `UdpInCsumErrors` in `nstat` to detect data corruption on your network path. Zero checksums (allowed in IPv4) should only be used when higher-level integrity checks exist. Never disable checksums on untrusted network paths or when data integrity matters.

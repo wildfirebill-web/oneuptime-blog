@@ -42,6 +42,7 @@ The TOTP secrets engine is not enabled by default. Mount it at a path of your ch
 
 ```bash
 # Enable the TOTP secrets engine at the default path
+
 vault secrets enable totp
 
 # Or mount at a custom path for organizational clarity

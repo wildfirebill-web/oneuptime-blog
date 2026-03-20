@@ -49,6 +49,7 @@ Create a configuration file for each node. Each node needs a unique port and clu
 
 ```bash
 # Create directories for each node
+
 mkdir -p /opt/redis-cluster/{7000,7001,7002,7003,7004,7005}
 
 # Generate configuration for each node

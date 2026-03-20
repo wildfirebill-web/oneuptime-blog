@@ -50,6 +50,7 @@ For automation and repeatable deployments, use the CLI:
 
 ```bash
 # Add an allow rule for a specific IP range (office network)
+
 az webapp config access-restriction add \
     --resource-group my-resource-group \
     --name my-app-service \

@@ -445,6 +445,7 @@ Type 137 - Redirect (block from untrusted sources)
 
 ```bash
 # Allow established connections
+
 ip6tables -A INPUT -m state --state ESTABLISHED,RELATED -j ACCEPT
 
 # Allow essential ICMPv6

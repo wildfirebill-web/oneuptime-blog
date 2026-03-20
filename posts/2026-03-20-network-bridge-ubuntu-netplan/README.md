@@ -20,13 +20,14 @@ Ubuntu's Netplan provides a declarative way to configure network bridges that pe
 
 ```yaml
 # /etc/netplan/01-bridge.yaml
+
 network:
   version: 2
   renderer: networkd
 
   ethernets:
     eth0:
-      # eth0 becomes a bridge port — no IP needed
+      # eth0 becomes a bridge port - no IP needed
       dhcp4: false
 
   bridges:

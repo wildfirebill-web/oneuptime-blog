@@ -38,6 +38,7 @@ Click the "New Silence" button to open the silence creation form. You will need 
 
 ```yaml
 # Matcher configuration in the UI
+
 alertname = HighMemoryUsage
 service = payment-gateway
 environment = production

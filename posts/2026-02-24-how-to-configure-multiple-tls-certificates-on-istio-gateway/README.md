@@ -23,6 +23,7 @@ First, create Kubernetes secrets containing your TLS certificates. Each domain g
 
 ```bash
 # Create secret for api.example.com
+
 kubectl create secret tls api-example-cert \
   --cert=api.example.com.crt \
   --key=api.example.com.key \

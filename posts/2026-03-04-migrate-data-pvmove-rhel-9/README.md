@@ -26,6 +26,7 @@ Move all data off a physical volume:
 
 ```bash
 # Move all data from /dev/sdb to any available space in the VG
+
 sudo pvmove /dev/sdb
 ```
 

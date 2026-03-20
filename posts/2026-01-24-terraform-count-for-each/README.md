@@ -32,6 +32,7 @@ resource "aws_instance" "web" {
 }
 
 # Access instances by index
+
 output "instance_ids" {
   value = aws_instance.web[*].id
 }

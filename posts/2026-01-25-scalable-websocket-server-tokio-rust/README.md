@@ -20,6 +20,7 @@ First, create a new Rust project and add the required dependencies. We'll use to
 
 ```toml
 # Cargo.toml
+
 [package]
 name = "websocket-server"
 version = "0.1.0"

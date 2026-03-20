@@ -20,6 +20,7 @@ Initialize a TypeScript project for Cloud Functions.
 
 ```bash
 # Create the project directory
+
 mkdir my-cloud-function && cd my-cloud-function
 
 # Initialize the project

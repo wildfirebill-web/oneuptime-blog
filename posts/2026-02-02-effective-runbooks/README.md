@@ -366,6 +366,7 @@ This example shows the difference between unclear and clear instruction writing.
 
 ```markdown
 # Unclear
+
 You may want to check the logs for any errors that might indicate the root cause.
 
 # Clear

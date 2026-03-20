@@ -19,6 +19,7 @@ RIP (Routing Information Protocol) is a distance-vector routing protocol. It:
 
 ```bash
 # Ubuntu/Debian
+
 apt install frr
 
 # Enable RIP daemon
@@ -52,7 +53,7 @@ exit
 
 ## RIP Interface Configuration
 
-```
+```text
 interface eth1
  ! Set metric for this interface
  ip rip metric-offset 2
@@ -65,7 +66,7 @@ exit
 
 ## RIP Authentication (RIPv2 MD5)
 
-```
+```text
 interface eth1
  ip rip authentication mode md5
  ip rip authentication key-chain RIP_KEY
@@ -79,7 +80,7 @@ exit
 
 ## Redistributing Routes into RIP
 
-```
+```text
 router rip
  ! Redistribute connected routes
  redistribute connected metric 1
@@ -107,7 +108,7 @@ vtysh -c "show ip rip status"
 
 Sample `show ip rip` output:
 
-```
+```text
 Codes: R - RIP, C - connected, S - Static, O - OSPF, B - BGP
 
 Network         Next Hop         Metric  From            Tag Time

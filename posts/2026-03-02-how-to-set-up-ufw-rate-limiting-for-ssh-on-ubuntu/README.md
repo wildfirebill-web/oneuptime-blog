@@ -27,6 +27,7 @@ This is effective against brute-force attacks because it slows them down dramati
 
 ```bash
 # Check UFW is enabled
+
 sudo ufw status
 
 # Enable rate limiting for SSH (port 22)

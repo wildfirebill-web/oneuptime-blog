@@ -22,6 +22,7 @@ You can enable webhooks through the API or the UI. Here is the API approach.
 
 ```bash
 # Enable GitHub webhook on job template ID 10
+
 curl -s -X PATCH \
   -H "Authorization: Bearer ${AWX_TOKEN}" \
   -H "Content-Type: application/json" \

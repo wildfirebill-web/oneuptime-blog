@@ -32,6 +32,7 @@ Find deployments and statefulsets scaled to zero that still hold resources:
 
 ```bash
 # Find zero-replica deployments with PVCs
+
 kubectl get deploy --all-namespaces -o json | \
   jq -r '.items[] |
     select(.spec.replicas == 0) |

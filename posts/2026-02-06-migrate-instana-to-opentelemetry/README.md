@@ -62,6 +62,7 @@ The Instana host agent runs as a system service and needs to be stopped and remo
 
 ```bash
 # Stop the Instana agent service
+
 sudo systemctl stop instana-agent
 sudo systemctl disable instana-agent
 

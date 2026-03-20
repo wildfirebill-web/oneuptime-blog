@@ -24,6 +24,7 @@ export HTTPS_PROXY="http://corporate-proxy.internal:3128"
 export NO_PROXY="otel-collector.observability.svc.cluster.local,10.0.0.0/8,.internal"
 
 # Your OTLP exporter endpoint
+
 export OTEL_EXPORTER_OTLP_ENDPOINT="http://otel-collector.observability.svc.cluster.local:4317"
 ```
 

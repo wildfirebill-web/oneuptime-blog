@@ -82,6 +82,7 @@ Once your metrics land in a Prometheus-compatible backend, calculate SLO complia
 
 ```promql
 # Current availability over the last 30 days
+
 1 - (
   sum(increase(http_server_request_errors_total[30d]))
   /

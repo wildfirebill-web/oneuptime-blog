@@ -45,6 +45,7 @@ Active-active mode requires two public IPs, one for each gateway instance:
 
 ```bash
 # Create the first public IP for the gateway
+
 az network public-ip create \
   --name vpn-gw-pip1 \
   --resource-group myResourceGroup \

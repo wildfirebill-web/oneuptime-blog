@@ -30,6 +30,7 @@ Install Graphviz to render the DOT output as an image:
 
 ```bash
 # macOS
+
 brew install graphviz
 
 # Ubuntu/Debian
@@ -91,7 +92,7 @@ digraph {
 }
 ```
 
-Arrows represent dependencies — `aws_subnet.public` depends on `aws_vpc.main`.
+Arrows represent dependencies - `aws_subnet.public` depends on `aws_vpc.main`.
 
 ## Practical Uses
 

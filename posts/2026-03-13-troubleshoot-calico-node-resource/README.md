@@ -25,6 +25,7 @@ Calico Node resource issues typically manifest as BGP routing problems or pod co
 
 ```bash
 # Compare Kubernetes and Calico node lists
+
 kubectl get nodes -o name | sed 's|node/||' | sort > /tmp/k8s-nodes.txt
 calicoctl get nodes -o json | python3 -c 'import json,sys; [print(n["metadata"]["name"]) for n in json.load(sys.stdin)["items"]]' | sort > /tmp/calico-nodes.txt
 diff /tmp/k8s-nodes.txt /tmp/calico-nodes.txt

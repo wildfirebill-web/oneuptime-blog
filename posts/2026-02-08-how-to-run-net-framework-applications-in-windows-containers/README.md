@@ -30,6 +30,7 @@ Microsoft provides specialized base images for .NET Framework containers.
 
 ```powershell
 # ASP.NET 4.8 on Server Core (includes IIS and ASP.NET)
+
 docker pull mcr.microsoft.com/dotnet/framework/aspnet:4.8-windowsservercore-ltsc2022
 
 # .NET Framework 4.8 Runtime (for console apps and services)

@@ -16,6 +16,7 @@ The `docker stats` command provides a live stream of resource usage for running 
 
 ```bash
 # Monitor all running containers
+
 docker stats
 
 # Monitor specific containers

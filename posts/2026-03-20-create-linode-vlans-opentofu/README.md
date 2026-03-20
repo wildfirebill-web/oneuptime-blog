@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Linode, VLANs, Private Networking, Infrastructure as Code
+Tags: OpenTofu, Linode, VLAN, Private Networking, Infrastructure as Code
 
 Description: Learn how to use Linode VLANs with OpenTofu to create isolated private networks for secure inter-instance communication.
 
@@ -31,7 +31,7 @@ resource "linode_instance" "app" {
     purpose = "public"
   }
 
-  # VLAN interface (eth1) — all instances on the same label form a VLAN
+  # VLAN interface (eth1) - all instances on the same label form a VLAN
   interface {
     purpose   = "vlan"
     label     = "production-vlan"            # Instances sharing this label are in the same VLAN
@@ -53,7 +53,7 @@ resource "linode_instance" "database" {
   root_pass       = var.root_password
   authorized_keys = [var.ssh_public_key]
 
-  # No public interface — only VLAN connectivity
+  # No public interface - only VLAN connectivity
   interface {
     purpose      = "vlan"
     label        = "production-vlan"
@@ -66,6 +66,7 @@ resource "linode_instance" "database" {
 
 ```hcl
 # Web tier with public + VLAN interfaces
+
 resource "linode_instance" "web" {
   count = 2
   label = "web-${count.index + 1}"

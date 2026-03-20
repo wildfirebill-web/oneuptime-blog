@@ -22,6 +22,7 @@ You need a Kubernetes cluster with Rook operator already deployed and a function
 
 ```bash
 # Check Rook operator
+
 kubectl get pods -n rook-ceph -l app=rook-ceph-operator
 
 # Verify Ceph cluster status

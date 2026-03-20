@@ -24,6 +24,7 @@ Or install directly from source:
 
 ```bash
 # Clone repository
+
 git clone https://github.com/ahmetb/kubectl-tree.git
 cd kubectl-tree
 

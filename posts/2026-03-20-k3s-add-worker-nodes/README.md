@@ -8,7 +8,7 @@ Description: Learn how to expand your K3s cluster by adding worker nodes to incr
 
 ## Introduction
 
-As your workloads grow, you'll need to scale out your K3s cluster by adding worker nodes. K3s makes this remarkably simple — joining a new agent node requires just a single command with the server URL and token. This guide covers adding worker nodes to both single-server and HA K3s clusters.
+As your workloads grow, you'll need to scale out your K3s cluster by adding worker nodes. K3s makes this remarkably simple - joining a new agent node requires just a single command with the server URL and token. This guide covers adding worker nodes to both single-server and HA K3s clusters.
 
 ## Prerequisites
 
@@ -23,6 +23,7 @@ First, retrieve the information needed to join new nodes:
 
 ```bash
 # On the K3s server node, get the server IP/hostname
+
 hostname -I | awk '{print $1}'
 
 # Get the node token (needed for agent authentication)
@@ -221,4 +222,4 @@ curl -k https://<server-ip>:6443/healthz
 
 ## Conclusion
 
-Adding worker nodes to K3s is one of its most compelling features — a single install command is all that's needed. For production environments, use a config file approach for consistent, reproducible node configuration. As your cluster grows, consider using infrastructure-as-code tools like Ansible or Terraform to manage node additions at scale.
+Adding worker nodes to K3s is one of its most compelling features - a single install command is all that's needed. For production environments, use a config file approach for consistent, reproducible node configuration. As your cluster grows, consider using infrastructure-as-code tools like Ansible or Terraform to manage node additions at scale.

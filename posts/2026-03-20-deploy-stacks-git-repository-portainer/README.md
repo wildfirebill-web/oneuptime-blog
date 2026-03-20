@@ -32,6 +32,7 @@ For private repositories, enable authentication:
 
 ```bash
 # For GitHub, use a Personal Access Token (PAT) as the password
+
 # Username: your-github-username
 # Password: ghp_yourpersonalaccesstoken
 
@@ -63,7 +64,7 @@ production/stack.yml         # Custom filename
 
 For multi-environment setups, maintain separate compose files in the same repository:
 
-```
+```text
 my-repo/
 ├── docker-compose.yml          # Base configuration
 ├── docker-compose.prod.yml     # Production overrides

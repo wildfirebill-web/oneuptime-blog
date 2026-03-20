@@ -36,6 +36,7 @@ This Terraform configuration sets up Config rules for common compliance requirem
 
 ```hcl
 # Enable AWS Config
+
 resource "aws_config_configuration_recorder" "main" {
   name     = "config-recorder"
   role_arn = aws_iam_role.config.arn

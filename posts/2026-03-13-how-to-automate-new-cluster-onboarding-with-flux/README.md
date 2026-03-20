@@ -47,6 +47,7 @@ Create a comprehensive onboarding script that handles the entire process:
 set -euo pipefail
 
 # Required parameters
+
 CLUSTER_NAME="${1:?Usage: $0 <cluster-name> <environment> <region> <cloud-provider>}"
 CLUSTER_ENV="${2:?Specify environment: staging, production}"
 CLUSTER_REGION="${3:?Specify region: us-east-1, eu-west-1, etc.}"

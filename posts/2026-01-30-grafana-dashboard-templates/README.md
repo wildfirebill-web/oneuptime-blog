@@ -395,6 +395,7 @@ For Prometheus queries with multiple values:
 
 ```promql
 # Using regex format for label matching
+
 http_requests_total{service=~"${service:regex}"}
 
 # Using pipe format

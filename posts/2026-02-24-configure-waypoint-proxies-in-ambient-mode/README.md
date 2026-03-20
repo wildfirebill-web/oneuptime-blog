@@ -290,6 +290,7 @@ Since waypoint proxies are Envoy-based, you can use the same proxy debugging too
 
 ```bash
 # View routes
+
 istioctl proxy-config routes deploy/bookinfo-waypoint -n bookinfo
 
 # View clusters

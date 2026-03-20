@@ -32,6 +32,7 @@ The most common cause is a typo or incorrect subscription ID. Azure subscription
 
 ```bash
 # Find your correct subscription ID
+
 az account list --output table
 
 # Output shows:

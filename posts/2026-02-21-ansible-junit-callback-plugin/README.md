@@ -20,6 +20,7 @@ The junit callback is a notification callback, so it runs alongside your normal 
 
 ```ini
 # ansible.cfg - Enable JUnit XML output
+
 [defaults]
 callback_whitelist = junit
 

@@ -10,10 +10,11 @@ Service mesh failover ensures traffic is redirected when endpoints become unheal
 
 ## Understanding Endpoint Failover with IPv6
 
-In a dual-stack cluster, a service may have both IPv4 and IPv6 endpoints. The service mesh's load balancer treats each pod's IPv4 and IPv6 addresses as the same endpoint — failover removes the entire pod from rotation, not just one IP version.
+In a dual-stack cluster, a service may have both IPv4 and IPv6 endpoints. The service mesh's load balancer treats each pod's IPv4 and IPv6 addresses as the same endpoint - failover removes the entire pod from rotation, not just one IP version.
 
 ```bash
 # Check current endpoints for a service (both IPv4 and IPv6)
+
 kubectl get endpoints my-service -o yaml
 
 # In dual-stack, each endpoint has two addresses:
@@ -175,7 +176,7 @@ spec:
           weight: 100
         - name: my-service-backup
           port: 80
-          weight: 0      # Zero weight — only used when v1 is unhealthy
+          weight: 0      # Zero weight - only used when v1 is unhealthy
 ```
 
 ## Testing IPv6 Failover

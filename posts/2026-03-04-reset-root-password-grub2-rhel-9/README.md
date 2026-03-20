@@ -55,6 +55,7 @@ You will land at a `switch_root:/#` prompt. The actual root filesystem is mounte
 
 ```bash
 # Remount the root filesystem as read-write
+
 mount -o remount,rw /sysroot
 ```
 

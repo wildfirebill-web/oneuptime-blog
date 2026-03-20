@@ -87,6 +87,7 @@ from datetime import datetime, timezone
 es = Elasticsearch("http://localhost:9200")
 
 # Index a document with IPv6 addresses
+
 doc = {
     "@timestamp": datetime.now(timezone.utc).isoformat(),
     "client_ip": "2001:db8::1",          # IPv6 compressed
@@ -131,7 +132,7 @@ GET /network-logs-*/_search
 ```
 
 ```json
-// CIDR subnet range query — finds all addresses in 2001:db8::/32
+// CIDR subnet range query - finds all addresses in 2001:db8::/32
 GET /network-logs-*/_search
 {
   "query": {
@@ -237,4 +238,4 @@ query_ipv6_subnet(es, "network-logs-*", "2001:db8::/32")
 
 ## Conclusion
 
-Elasticsearch's native `ip` field type handles IPv6 addresses transparently, supporting both compressed and full notation, IPv4-mapped addresses, and CIDR range queries via `term` filters. Use index templates to enforce consistent mapping across rolling indices. CIDR queries with the `ip` field type are particularly powerful for subnet-based filtering — they outperform scripted or keyword-based approaches for large log volumes.
+Elasticsearch's native `ip` field type handles IPv6 addresses transparently, supporting both compressed and full notation, IPv4-mapped addresses, and CIDR range queries via `term` filters. Use index templates to enforce consistent mapping across rolling indices. CIDR queries with the `ip` field type are particularly powerful for subnet-based filtering - they outperform scripted or keyword-based approaches for large log volumes.

@@ -14,6 +14,7 @@ Exim4 is the default MTA on Debian-based systems. It supports IPv6 but requires 
 
 ```bash
 # Check what addresses Exim is listening on
+
 ss -tlnp | grep exim
 
 # Check current Exim configuration

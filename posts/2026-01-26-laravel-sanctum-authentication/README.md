@@ -39,6 +39,7 @@ Sanctum comes pre-installed in new Laravel applications starting from Laravel 8.
 
 ```bash
 # Install Sanctum via Composer
+
 composer require laravel/sanctum
 
 # Publish the Sanctum configuration and migration files

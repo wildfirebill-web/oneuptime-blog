@@ -54,6 +54,7 @@ The OpenTelemetry Collector provides the `probabilistic_sampler` processor for i
 
 ```yaml
 # otel-collector-config.yaml
+
 receivers:
   otlp:
     protocols:

@@ -26,6 +26,7 @@ This guide walks through configuring manual plan approval, reviewing plans in th
 
 ```yaml
 # infrastructure/terraform/production-database.yaml
+
 apiVersion: infra.contrib.fluxcd.io/v1alpha2
 kind: Terraform
 metadata:

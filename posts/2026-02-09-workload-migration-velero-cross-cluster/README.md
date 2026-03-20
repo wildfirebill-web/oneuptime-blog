@@ -32,6 +32,7 @@ Install Velero in the source cluster with AWS S3 backend:
 
 ```bash
 # Create S3 bucket for backups
+
 aws s3 mb s3://velero-backups-migration --region us-east-1
 
 # Create IAM user with S3 permissions

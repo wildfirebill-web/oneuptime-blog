@@ -141,6 +141,7 @@ Monthly Tasks:
 **Elastic Cloud:**
 ```bash
 # Upgrades are managed via UI or API
+
 # 1. Click "Upgrade" in console
 # 2. Select target version
 # 3. Rolling upgrade happens automatically

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Monitoring, Multi-Cluster, Dashboard, Kubernetes, Health, Observability
+Tags: Rancher, Monitoring, Multi-Cluster, Dashboards, Kubernetes, Health, Observability
 
 Description: Learn how to use the Rancher dashboard and integrated monitoring tools to track the health of multiple Kubernetes clusters from a single pane of glass.
 
@@ -30,6 +30,7 @@ Use Fleet to install the Rancher Monitoring app on every cluster simultaneously:
 
 ```yaml
 # gitrepo-monitoring.yaml
+
 apiVersion: fleet.cattle.io/v1alpha1
 kind: GitRepo
 metadata:
@@ -150,6 +151,6 @@ kubectl get bundledeployment -n fleet-default \
 
 ## Best Practices
 
-- Configure **dead-man's-switch alerts** that fire if a cluster stops sending metrics — this catches complete cluster failures.
+- Configure **dead-man's-switch alerts** that fire if a cluster stops sending metrics - this catches complete cluster failures.
 - Use Rancher's **Global Alerting** to route critical alerts to PagerDuty with the cluster name in the payload.
 - Review the **Rancher audit log** alongside cluster health metrics to correlate operations with health changes.

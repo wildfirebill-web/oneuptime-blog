@@ -62,6 +62,7 @@ To avoid protocol detection overhead, always name your ports:
 
 ```bash
 # Check if protocol detection is being used
+
 istioctl proxy-config clusters deploy/my-service -n default -o json | \
   python3 -c "
 import json, sys

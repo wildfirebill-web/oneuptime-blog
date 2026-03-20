@@ -2,18 +2,19 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, IPv6, Ingress, NGINX, Dual-Stack, Load Balancer
+Tags: Kubernetes, IPv6, Ingress, Nginx, Dual-Stack, Load Balancer
 
 Description: Configure Kubernetes Ingress controllers for IPv6, set up nginx-ingress-controller to accept IPv6 client connections, and create Ingress resources for dual-stack traffic routing.
 
 ## Introduction
 
-Kubernetes Ingress provides HTTP/HTTPS routing to services. For IPv6 support, the Ingress controller (typically NGINX or Traefik) must bind to IPv6 addresses. The NGINX Ingress Controller supports IPv6 by binding to `::` (all interfaces) when IPv6 is enabled. Ingress objects themselves are address-family agnostic — IPv6 access is handled at the controller level, not in Ingress YAML.
+Kubernetes Ingress provides HTTP/HTTPS routing to services. For IPv6 support, the Ingress controller (typically NGINX or Traefik) must bind to IPv6 addresses. The NGINX Ingress Controller supports IPv6 by binding to `::` (all interfaces) when IPv6 is enabled. Ingress objects themselves are address-family agnostic - IPv6 access is handled at the controller level, not in Ingress YAML.
 
 ## Install NGINX Ingress Controller with IPv6
 
 ```bash
 # Install NGINX Ingress Controller
+
 kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.9.5/deploy/static/provider/cloud/deploy.yaml
 
 # Check if NGINX service has IPv6 ClusterIP
@@ -152,4 +153,4 @@ dig AAAA example.com
 
 ## Conclusion
 
-Configure Kubernetes NGINX Ingress for IPv6 by setting `bind-address: "::"` in the Ingress controller's ConfigMap, patching the Service to use `ipFamilyPolicy: PreferDualStack`, and adding IPv6 load balancer annotations in cloud environments. Ingress YAML resources themselves are IP-family agnostic — IPv6 routing happens at the controller level. Add AAAA DNS records pointing to the Ingress controller's external IPv6 for clients to connect via IPv6. Verify connectivity with `curl -6 -H "Host: example.com" https://[ingress-ipv6]/`.
+Configure Kubernetes NGINX Ingress for IPv6 by setting `bind-address: "::"` in the Ingress controller's ConfigMap, patching the Service to use `ipFamilyPolicy: PreferDualStack`, and adding IPv6 load balancer annotations in cloud environments. Ingress YAML resources themselves are IP-family agnostic - IPv6 routing happens at the controller level. Add AAAA DNS records pointing to the Ingress controller's external IPv6 for clients to connect via IPv6. Verify connectivity with `curl -6 -H "Host: example.com" https://[ingress-ipv6]/`.

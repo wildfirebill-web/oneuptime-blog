@@ -27,6 +27,7 @@ Media files are typically large and stored on a NAS. Set up NFS access to your m
 
 ```yaml
 # media-pv.yaml
+
 apiVersion: v1
 kind: PersistentVolume
 metadata:

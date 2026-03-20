@@ -37,6 +37,7 @@ Stream selectors use labels to identify log streams.
 
 ```logql
 # Exact match
+
 {job="nginx"}
 
 # Multiple labels (AND logic)

@@ -94,6 +94,7 @@ This command provides a quick overview of the cluster status including any healt
 
 ```bash
 # Display the overall cluster health status
+
 # The output shows HEALTH_OK, HEALTH_WARN, or HEALTH_ERR
 ceph health detail
 ```

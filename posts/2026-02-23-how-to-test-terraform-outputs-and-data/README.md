@@ -22,6 +22,7 @@ Consider a simple networking module:
 # modules/networking/outputs.tf
 
 # The VPC ID for use by other modules
+
 output "vpc_id" {
   description = "The ID of the created VPC"
   value       = aws_vpc.main.id

@@ -262,6 +262,7 @@ Remove the label to stop a container from being auto-updated:
 podman container stop web
 podman container rm web
 # Recreate without the auto-update label
+
 podman run -d --name web -p 8080:80 docker.io/library/nginx:latest
 ```
 

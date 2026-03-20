@@ -31,6 +31,7 @@ SSH into each node and verify that all required binaries and configuration files
 ```bash
 #!/bin/bash
 # verify-node-binaries.sh
+
 # Run this script on each cluster node via SSH
 
 echo "=== Calico Binary Verification ==="

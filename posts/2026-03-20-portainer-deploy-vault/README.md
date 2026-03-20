@@ -1,4 +1,4 @@
-# How to Deploy Vault (HashiCorp) via Portainer
+# How to Deploy Vault (HashiCorp) via Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -71,6 +71,7 @@ listener "tcp" {
 }
 
 # UI settings
+
 ui = true
 
 # API address
@@ -168,4 +169,4 @@ docker exec -e VAULT_TOKEN=hvs.roottoken vault \
 
 ## Conclusion
 
-HashiCorp Vault deployed via Portainer provides enterprise-grade secrets management for self-hosted environments. Centralizing secrets eliminates hardcoded credentials and provides audit logging of all access. The file backend is suitable for small deployments — for high availability, consider the Raft integrated storage backend with multiple Vault nodes.
+HashiCorp Vault deployed via Portainer provides enterprise-grade secrets management for self-hosted environments. Centralizing secrets eliminates hardcoded credentials and provides audit logging of all access. The file backend is suitable for small deployments - for high availability, consider the Raft integrated storage backend with multiple Vault nodes.

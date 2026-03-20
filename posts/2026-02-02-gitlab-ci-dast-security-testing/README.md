@@ -60,6 +60,7 @@ The following configuration includes the GitLab DAST template and defines the ta
 
 ```yaml
 # Include the official GitLab DAST template
+
 include:
   - template: DAST.gitlab-ci.yml
 

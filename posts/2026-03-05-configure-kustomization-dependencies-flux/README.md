@@ -33,6 +33,7 @@ To declare a dependency, add the name (and optionally namespace) of the Kustomiz
 
 ```yaml
 # infrastructure.yaml - No dependencies, deployed first
+
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
 metadata:

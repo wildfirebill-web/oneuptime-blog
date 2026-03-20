@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Laravel, PHP, NGINX, Web Development, Framework
+Tags: RHEL, Laravel, PHP, Nginx, Web Development, Framework
 
 Description: Deploy a Laravel PHP application on RHEL with Nginx and PHP-FPM, including proper file permissions, Nginx configuration, and SELinux settings.
 
@@ -14,6 +14,7 @@ Laravel is a popular PHP framework for building web applications. This guide cov
 
 ```bash
 # Install Nginx, PHP 8.2 with Laravel-required extensions
+
 sudo dnf install -y nginx php-fpm php-cli php-mysqlnd php-pgsql \
   php-xml php-mbstring php-curl php-zip php-gd php-bcmath \
   php-intl php-opcache php-tokenizer unzip

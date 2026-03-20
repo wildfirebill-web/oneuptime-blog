@@ -30,6 +30,7 @@ If you do not already have a Fargate-enabled cluster, create one.
 
 ```bash
 # Create an EKS cluster with Fargate support
+
 eksctl create cluster \
   --name flux-fargate-cluster \
   --region us-east-1 \

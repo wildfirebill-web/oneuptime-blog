@@ -38,6 +38,7 @@ graph TD
 ```toml
 [dependencies]
 # Seccomp filtering
+
 seccompiler = "0.4"
 
 # Landlock filesystem sandboxing

@@ -40,6 +40,7 @@ Upload the manifest to S3.
 
 ```bash
 # Save and upload the manifest
+
 aws s3 cp /tmp/sales-manifest.json s3://my-analytics-bucket/manifests/sales-manifest.json
 ```
 

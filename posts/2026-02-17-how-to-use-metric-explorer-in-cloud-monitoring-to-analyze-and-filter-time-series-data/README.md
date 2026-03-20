@@ -106,6 +106,7 @@ If you are familiar with PromQL from Prometheus, switch to PromQL mode for a mor
 
 ```promql
 # Request rate by service
+
 sum by (service_name)(rate(run_googleapis_com:request_count[5m]))
 
 # 95th percentile latency

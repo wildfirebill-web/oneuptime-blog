@@ -29,6 +29,7 @@ Bind mounts map a host directory or file directly into the container. The contai
 
 ```bash
 # Old syntax with -v (still works)
+
 docker run -v /host/path:/container/path my-image
 
 # New syntax with --mount (more explicit)

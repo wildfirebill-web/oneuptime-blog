@@ -10,12 +10,13 @@ Description: Learn how to use ethtool to view and increase NIC ring buffer sizes
 
 A NIC ring buffer (also called a descriptor ring) is a circular queue between the NIC hardware and the kernel. Incoming packets are placed in the receive ring; outgoing packets are placed in the transmit ring.
 
-If the ring fills up because the CPU can't drain it fast enough, packets are dropped at the NIC level — before they ever reach the kernel TCP stack. This is a common cause of packet loss on high-traffic servers.
+If the ring fills up because the CPU can't drain it fast enough, packets are dropped at the NIC level - before they ever reach the kernel TCP stack. This is a common cause of packet loss on high-traffic servers.
 
 ## Step 1: Check Current Ring Buffer Sizes
 
 ```bash
 # View current and maximum ring buffer sizes
+
 ethtool -g eth0
 
 # Output:

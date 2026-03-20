@@ -27,6 +27,7 @@ Before changing affinity, see what a process is currently configured for:
 
 ```bash
 # Check CPU affinity of a process by PID
+
 taskset -p 1234
 ```
 

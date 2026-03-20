@@ -44,6 +44,7 @@ Different AMIs use different default usernames. This is the most common cause.
 
 ```bash
 # Wrong - using "root" on Amazon Linux
+
 ssh root@54.123.45.67
 
 # Correct

@@ -57,6 +57,7 @@ Verify that your system supports rootless containers by checking the required ke
 
 ```bash
 # Check kernel version (should be 4.18+ for full rootless support)
+
 uname -r
 
 # Verify user namespaces are enabled
@@ -662,7 +663,7 @@ podman exec secure-nginx touch /etc/test || echo "Root filesystem is read-only"
 podman rm -f secure-nginx
 ```
 
-## Resource Limits and Cgroups
+Resource Limits and Cgroups
 
 Resource limits prevent containers from exhausting host resources, whether through bugs or malicious activity.
 

@@ -35,6 +35,7 @@ Default probes are fine for basic setups, but custom probes give you much more c
 
 ```bash
 # Create a custom health probe with specific path and settings
+
 az network application-gateway probe create \
   --gateway-name myAppGateway \
   --resource-group myResourceGroup \

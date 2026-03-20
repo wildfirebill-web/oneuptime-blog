@@ -12,7 +12,7 @@ IPv6 Privacy Extensions (RFC 8981, formerly RFC 4941) generate random, temporary
 
 ## How Privacy Extensions Work
 
-```
+```text
 Privacy Extensions Address Generation:
 
 Standard SLAAC (EUI-64):
@@ -41,6 +41,7 @@ Both addresses exist simultaneously:
 
 ```bash
 # Check current status
+
 cat /proc/sys/net/ipv6/conf/eth0/use_tempaddr
 # 0 = disabled (use permanent EUI-64)
 # 1 = generate temporary, but prefer permanent
@@ -128,7 +129,7 @@ nmcli connection up "Wired connection 1"
 
 ## Privacy Extensions on Other Systems
 
-```
+```bash
 Windows:
   Default: Enabled (use_tempaddr=2 equivalent)
   Check: netsh interface ipv6 show privacy

@@ -27,6 +27,7 @@ First, install Prometheus and Grafana:
 
 ```bash
 # Add Prometheus community Helm repo
+
 helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
 helm repo update
 

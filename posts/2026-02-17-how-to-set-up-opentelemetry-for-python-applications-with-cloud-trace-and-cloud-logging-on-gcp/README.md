@@ -18,6 +18,7 @@ Start by installing the OpenTelemetry packages and the Google Cloud exporters:
 
 ```bash
 # Core OpenTelemetry packages
+
 pip install opentelemetry-api opentelemetry-sdk
 
 # Google Cloud exporters

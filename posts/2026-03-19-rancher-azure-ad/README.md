@@ -54,6 +54,7 @@ Generate a client secret for the application:
 
 ```plaintext
 Description: Rancher Authentication
+
 Expires: 24 months
 ```
 
@@ -95,6 +96,7 @@ Alternatively, configure permissions using the Azure CLI:
 
 ```bash
 # Get the app ID
+
 APP_ID="xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
 
 # Add Microsoft Graph permissions

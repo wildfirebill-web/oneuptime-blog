@@ -45,6 +45,7 @@ Before deploying HPC Cache, you need:
 
 ```bash
 # Register the HPC Cache resource provider
+
 az provider register --namespace Microsoft.StorageCache
 
 # Wait for registration

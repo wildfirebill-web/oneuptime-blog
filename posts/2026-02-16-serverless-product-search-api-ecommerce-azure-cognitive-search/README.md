@@ -32,6 +32,7 @@ flowchart TD
 
 ```bash
 # Create a resource group
+
 az group create --name rg-search --location eastus
 
 # Create a Cognitive Search service

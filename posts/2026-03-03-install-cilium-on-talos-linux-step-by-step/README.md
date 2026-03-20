@@ -29,6 +29,7 @@ Create a patch file for your configuration:
 
 ```yaml
 # cilium-talos-patch.yaml
+
 cluster:
   network:
     # Disable the default Flannel CNI

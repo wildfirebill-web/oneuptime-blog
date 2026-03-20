@@ -16,6 +16,7 @@ Ansible gathers detailed facts about every host. Use these to generate server do
 
 ```yaml
 # playbooks/generate-docs.yml
+
 # Generate infrastructure documentation from live data
 - name: Collect infrastructure data
   hosts: all

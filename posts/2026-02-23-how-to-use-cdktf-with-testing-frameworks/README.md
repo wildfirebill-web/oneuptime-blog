@@ -16,6 +16,7 @@ Start with a properly configured testing environment:
 
 ```bash
 # Install testing dependencies
+
 npm install --save-dev jest @types/jest ts-jest
 
 # The CDKTF package includes testing utilities

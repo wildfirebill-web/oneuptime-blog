@@ -26,6 +26,7 @@ The edge key encodes the Portainer server URL and tunnel port. It is generated w
 
 ```bash
 # On the edge host, verify the agent container started with the correct key
+
 docker logs portainer_edge_agent 2>&1 | head -20
 
 # Look for:

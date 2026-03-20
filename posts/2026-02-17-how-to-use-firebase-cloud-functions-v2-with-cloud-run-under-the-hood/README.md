@@ -35,6 +35,7 @@ The concurrency change alone is transformative. In v1, each function instance ha
 
 ```bash
 # Create a new Firebase project (or use existing)
+
 mkdir my-functions-app && cd my-functions-app
 firebase init functions
 

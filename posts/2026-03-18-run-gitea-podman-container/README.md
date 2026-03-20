@@ -20,6 +20,7 @@ Download the official Gitea image.
 
 ```bash
 # Pull the latest Gitea image
+
 podman pull docker.io/gitea/gitea:latest
 
 # Verify the image

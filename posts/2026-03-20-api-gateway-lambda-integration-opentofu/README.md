@@ -8,7 +8,7 @@ Description: Learn how to configure API Gateway Lambda proxy integration with Op
 
 ## Introduction
 
-API Gateway Lambda proxy integration passes the entire HTTP request as a structured event to Lambda and expects a structured response with statusCode, headers, and body. Proxy integration is the most common pattern—it gives Lambda full control over the response without requiring API Gateway mapping templates. This post covers both REST API (v1) and HTTP API (v2) Lambda integrations, including permission setup and URL path parameter mapping.
+API Gateway Lambda proxy integration passes the entire HTTP request as a structured event to Lambda and expects a structured response with statusCode, headers, and body. Proxy integration is the most common pattern-it gives Lambda full control over the response without requiring API Gateway mapping templates. This post covers both REST API (v1) and HTTP API (v2) Lambda integrations, including permission setup and URL path parameter mapping.
 
 ## Prerequisites
 
@@ -132,6 +132,7 @@ tofu plan
 tofu apply
 
 # Test the API
+
 curl -X POST https://<api-id>.execute-api.<region>.amazonaws.com/prod/users \
   -H "Content-Type: application/json" \
   -d '{"name": "Test User"}'
@@ -139,4 +140,4 @@ curl -X POST https://<api-id>.execute-api.<region>.amazonaws.com/prod/users \
 
 ## Conclusion
 
-Use HTTP API (v2) with `payload_format_version = "2.0"` for new Lambda integrations—it has lower latency, lower cost, and simpler request/response format than REST API. The `source_arn` in `aws_lambda_permission` should use `/*/*` to allow invocations from any stage and method; for tighter security, specify the exact stage and method. Always set `depends_on = [aws_api_gateway_integration.lambda]` in the deployment resource to ensure the integration is created before the deployment is triggered.
+Use HTTP API (v2) with `payload_format_version = "2.0"` for new Lambda integrations-it has lower latency, lower cost, and simpler request/response format than REST API. The `source_arn` in `aws_lambda_permission` should use `/*/*` to allow invocations from any stage and method; for tighter security, specify the exact stage and method. Always set `depends_on = [aws_api_gateway_integration.lambda]` in the deployment resource to ensure the integration is created before the deployment is triggered.

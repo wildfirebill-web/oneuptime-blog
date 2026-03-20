@@ -1,4 +1,4 @@
-# How to Set Up Service Update Configuration in Portainer on Swarm
+# How to Set Up Service Update Configuration in Portainer on Swarm - Swarm
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -61,6 +61,7 @@ services:
 
 ```bash
 # Update a service to a new image version
+
 docker service update --image my-api:2.1.0 api
 
 # Force re-deploy without changing the image (useful for config changes)

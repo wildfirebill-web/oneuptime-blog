@@ -29,6 +29,7 @@ Verify that Cilium has fragment tracking enabled.
 
 ```bash
 # Check if fragment tracking is enabled in the ConfigMap
+
 kubectl -n kube-system get configmap cilium-config \
   -o jsonpath='{.data.enable-ipv4-fragment-tracking}'
 

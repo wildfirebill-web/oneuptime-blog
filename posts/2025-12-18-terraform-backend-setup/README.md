@@ -67,6 +67,7 @@ variable "environment" {
 }
 
 # S3 bucket for Terraform state
+
 resource "aws_s3_bucket" "terraform_state" {
   bucket = "${var.project_name}-terraform-state-${var.environment}"
 

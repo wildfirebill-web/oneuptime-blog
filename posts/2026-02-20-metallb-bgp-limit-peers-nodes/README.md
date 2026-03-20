@@ -49,6 +49,7 @@ First, add labels to the nodes that should participate in BGP peering.
 
 ```bash
 # Label specific nodes as edge nodes.
+
 # Only these nodes will establish BGP sessions with the upstream router.
 kubectl label node node-1 network-role=edge
 kubectl label node node-2 network-role=edge

@@ -75,6 +75,7 @@ When the base table has data in its streaming buffer, incremental refresh may no
 
 ```bash
 # Check if the base table has a streaming buffer
+
 bq show --format=prettyjson my_dataset.events | python3 -c "
 import json, sys
 table = json.load(sys.stdin)

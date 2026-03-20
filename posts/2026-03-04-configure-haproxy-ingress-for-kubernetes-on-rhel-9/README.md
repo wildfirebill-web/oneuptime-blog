@@ -33,6 +33,7 @@ Verify your cluster is healthy:
 
 ```bash
 # Check cluster nodes are ready
+
 kubectl get nodes
 ```
 

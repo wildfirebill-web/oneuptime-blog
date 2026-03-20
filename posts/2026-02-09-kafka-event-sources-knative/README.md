@@ -24,6 +24,7 @@ Install Knative Eventing if you haven't already:
 
 ```bash
 # Install Knative Eventing CRDs
+
 kubectl apply -f https://github.com/knative/eventing/releases/latest/download/eventing-crds.yaml
 
 # Install Knative Eventing core components

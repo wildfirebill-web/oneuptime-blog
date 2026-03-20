@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Kubernetes, GitOps, Manifests, ArgoCD, Flux CD, Dual-Stack
+Tags: IPv6, Kubernetes, GitOps, Manifest, ArgoCD, Flux CD, Dual-Stack
 
 Description: Write and deploy Kubernetes manifests with IPv6 service configuration, dual-stack settings, and IPv6-aware health checks using GitOps tools like ArgoCD and Flux CD.
 
@@ -109,7 +109,7 @@ spec:
             httpGet:
               path: /health
               port: 8080
-              # Kubernetes probes use pod IP — works for both IPv4 and IPv6
+              # Kubernetes probes use pod IP - works for both IPv4 and IPv6
             initialDelaySeconds: 10
             periodSeconds: 30
 
@@ -155,6 +155,7 @@ bases:
   - ../../base
 
 # Patches for IPv6-only environment
+
 patches:
   # Change service to IPv6-only
   - patch: |
@@ -267,4 +268,4 @@ kubectl run -it --rm debug --image=nicolaka/netshoot -- \
 
 ## Conclusion
 
-Kubernetes manifests for IPv6 GitOps deployments specify `ipFamilyPolicy` and `ipFamilies` on services to control dual-stack or IPv6-only operation. Application containers should bind to `[::]` rather than `0.0.0.0` for IPv6 dual-stack support. Kustomize overlays enable environment-specific IPv6 configuration without duplicating base manifests. ArgoCD and Flux CD deploy these manifests from Git repositories without special IPv6 consideration — the manifests themselves carry the IPv6 configuration. Use `--dry-run=server` to validate manifests against the cluster before committing to Git. Flux's `postBuild.substitute` enables parameterizing IPv6 prefixes and addresses per environment.
+Kubernetes manifests for IPv6 GitOps deployments specify `ipFamilyPolicy` and `ipFamilies` on services to control dual-stack or IPv6-only operation. Application containers should bind to `[::]` rather than `0.0.0.0` for IPv6 dual-stack support. Kustomize overlays enable environment-specific IPv6 configuration without duplicating base manifests. ArgoCD and Flux CD deploy these manifests from Git repositories without special IPv6 consideration - the manifests themselves carry the IPv6 configuration. Use `--dry-run=server` to validate manifests against the cluster before committing to Git. Flux's `postBuild.substitute` enables parameterizing IPv6 prefixes and addresses per environment.

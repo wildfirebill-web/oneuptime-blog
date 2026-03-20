@@ -18,6 +18,7 @@ Using Proxmox `pct` CLI on the Proxmox host:
 
 ```bash
 # Download Ubuntu 22.04 template if not available
+
 pveam update
 pveam download local ubuntu-22.04-standard_22.04-1_amd64.tar.zst
 

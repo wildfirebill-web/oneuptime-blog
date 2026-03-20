@@ -60,6 +60,7 @@ Locust fires events throughout the test lifecycle. Hook into these to track cust
 
 ```python
 # locustfile.py - Basic custom metrics with events
+
 from locust import HttpUser, task, between, events
 import time
 from collections import defaultdict

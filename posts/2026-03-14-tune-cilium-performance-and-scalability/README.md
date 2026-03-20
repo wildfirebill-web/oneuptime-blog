@@ -43,6 +43,7 @@ helm upgrade cilium cilium/cilium --namespace kube-system \
 
 ```bash
 # BPF map sizes for large clusters
+
 helm upgrade cilium cilium/cilium --namespace kube-system \
   --set bpf.ctGlobalTCPMax=1048576 \
   --set bpf.ctGlobalAnyMax=524288 \

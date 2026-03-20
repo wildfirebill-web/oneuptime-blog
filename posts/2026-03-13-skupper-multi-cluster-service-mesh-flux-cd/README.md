@@ -25,6 +25,7 @@ Managing Skupper through Flux CD allows you to define inter-cluster service conn
 
 ```yaml
 # clusters/cluster-01/infrastructure/skupper.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

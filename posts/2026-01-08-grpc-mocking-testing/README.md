@@ -47,6 +47,7 @@ flowchart TB
 
 ```bash
 # Install gomock
+
 go get github.com/golang/mock/gomock
 
 # Install mockgen

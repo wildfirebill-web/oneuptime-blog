@@ -20,6 +20,7 @@ The key distinction from regular permissions: even a root process cannot modify 
 
 ```bash
 # List attributes for files in current directory
+
 lsattr
 
 # List a specific file

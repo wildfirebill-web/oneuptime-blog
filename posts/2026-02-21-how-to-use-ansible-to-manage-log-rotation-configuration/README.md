@@ -22,6 +22,7 @@ The simplest approach is using the `copy` module with inline content.
 
 ```yaml
 # Deploy a logrotate configuration for a custom application
+
 - name: Deploy logrotate config for myapp
   ansible.builtin.copy:
     content: |

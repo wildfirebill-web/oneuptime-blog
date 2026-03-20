@@ -142,6 +142,7 @@ HOSTNAME=$3
 echo "Starting Rancher DR recovery..."
 
 # Install cert-manager
+
 kubectl apply -f https://github.com/cert-manager/cert-manager/releases/download/v1.13.3/cert-manager.yaml
 kubectl wait --for=condition=Available -n cert-manager deployment/cert-manager --timeout=120s
 

@@ -20,6 +20,7 @@ Before planning any upgrade, you need a clear picture of what you are working wi
 
 ```bash
 # How many namespaces have sidecar injection
+
 kubectl get ns -l istio-injection=enabled --no-headers | wc -l
 kubectl get ns -L istio.io/rev | grep -v "<none>" | wc -l
 
@@ -174,7 +175,7 @@ Provide real-time updates in a shared channel:
 [10:45] Starting namespace: search-indexing
 ```
 
-## Resource Planning
+Resource Planning
 
 Running two Istio revisions doubles the control plane resource usage:
 

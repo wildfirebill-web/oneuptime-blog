@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: HAProxy, IPv4, Frontend, Bind, Load Balancing, Networking
+Tags: HAProxy, IPv4, Frontend, BIND, Load Balancing, Networking
 
 Description: Configure HAProxy frontend sections to listen on specific IPv4 addresses and ports, controlling exactly which network interfaces accept incoming traffic.
 
@@ -32,6 +32,7 @@ defaults
     timeout server  60s
 
 # Frontend: listen on a specific IPv4 address
+
 frontend http_in
     # Bind to specific IPv4 address on port 80
     bind 203.0.113.10:80

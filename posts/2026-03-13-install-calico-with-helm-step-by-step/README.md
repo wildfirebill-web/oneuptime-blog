@@ -25,6 +25,7 @@ This guide covers installing Calico using the official Tigera Helm charts, which
 
 ```bash
 # Add the official Tigera Helm repository
+
 helm repo add projectcalico https://docs.tigera.io/calico/charts
 
 # Update the local Helm cache

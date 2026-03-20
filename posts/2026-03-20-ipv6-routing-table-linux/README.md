@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Linux, Routing Table, ip Command, Networking
+Tags: IPv6, Linux, Routing Table, ip command, Networking
 
 Description: Learn how to view and interpret the IPv6 routing table on Linux using the ip command and other tools.
 
@@ -14,6 +14,7 @@ Linux provides multiple tools to view the IPv6 routing table. The modern approac
 
 ```bash
 # Show the main IPv6 routing table
+
 ip -6 route show
 
 # Sample output:

@@ -48,6 +48,7 @@ spec:
 
 ```bash
 # Apply policy
+
 calicoctl apply -f migrate-globalnetworkpolicy.yaml
 
 # Verify policy is active

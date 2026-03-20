@@ -26,6 +26,7 @@ All nodes in the cluster must have synchronized clocks (NTP), share a common use
 
 ```bash
 # On ALL nodes (controller and compute)
+
 sudo apt update
 sudo apt install -y slurm-wlm slurmd slurmctld munge
 

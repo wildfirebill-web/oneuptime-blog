@@ -147,7 +147,7 @@ Often your operator reads ConfigMaps or Secrets that it does not own but referen
 //+kubebuilder:rbac:groups="",resources=secrets,verbs=get;list;watch
 ```
 
-### Resource Names Restriction
+Resource Names Restriction
 
 You can restrict access to specific named resources:
 

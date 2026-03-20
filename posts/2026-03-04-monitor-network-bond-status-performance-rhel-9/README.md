@@ -16,6 +16,7 @@ The kernel exposes bond information through the proc filesystem:
 
 ```bash
 # Full bond status report
+
 cat /proc/net/bonding/bond0
 ```
 

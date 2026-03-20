@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, NGINX, SSL, TLS, Let's Encrypt, Certbot, Linux
+Tags: RHEL, Nginx, SSL, TLS, Let's Encrypt, Certbot, Linux
 
 Description: Step-by-step instructions for securing Nginx with free TLS certificates from Let's Encrypt using Certbot on RHEL, including automatic renewal.
 
@@ -21,6 +21,7 @@ Securing your Nginx web server with HTTPS is essential. Let's Encrypt provides f
 
 ```bash
 # Enable EPEL repository
+
 sudo dnf install -y epel-release
 
 # Install Certbot with the Nginx plugin

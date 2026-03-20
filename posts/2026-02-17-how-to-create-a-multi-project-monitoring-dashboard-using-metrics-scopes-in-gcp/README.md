@@ -49,6 +49,7 @@ You can also manage metrics scopes from the command line:
 
 ```bash
 # Add a monitored project to the scoping project's metrics scope
+
 gcloud beta monitoring metrics-scopes create \
   projects/monitored-project-id \
   --project=scoping-project-id

@@ -16,6 +16,7 @@ There is an important distinction to make: `fileglob` searches for files on the 
 
 ```yaml
 # Basic fileglob: find all .conf files in the files directory
+
 - name: List configuration files
   ansible.builtin.debug:
     msg: "Found file: {{ item }}"

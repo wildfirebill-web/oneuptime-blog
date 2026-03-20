@@ -18,6 +18,7 @@ A metric filter watches a CloudWatch log group for specific patterns and increme
 
 ```hcl
 # Configure the AWS provider
+
 terraform {
   required_providers {
     aws = {

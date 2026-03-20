@@ -29,6 +29,7 @@ This playbook installs and configures an iSCSI target with LIO (Linux-IO):
 
 ```yaml
 # configure-iscsi-target.yml - Set up iSCSI target server
+
 ---
 - name: Configure iSCSI Target Server
   hosts: storage_servers

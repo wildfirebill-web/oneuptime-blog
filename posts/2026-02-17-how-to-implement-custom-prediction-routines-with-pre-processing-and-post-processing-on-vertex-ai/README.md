@@ -251,6 +251,7 @@ from google.cloud import aiplatform
 from google.cloud.aiplatform.prediction import LocalModel
 
 # Define the local model with the custom predictor
+
 local_model = LocalModel.build_cpr_model(
     "predictor.py",  # Path to your predictor file
     "ImageClassificationPredictor",  # Class name

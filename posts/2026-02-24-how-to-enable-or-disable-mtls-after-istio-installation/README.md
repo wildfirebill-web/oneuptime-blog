@@ -20,6 +20,7 @@ Istio has three mTLS modes:
 
 ```bash
 # Check current mTLS configuration
+
 kubectl get peerauthentication --all-namespaces
 ```
 

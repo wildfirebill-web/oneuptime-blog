@@ -29,6 +29,7 @@ This playbook generates a Certificate Signing Request (CSR) on the target host, 
 
 ```yaml
 # cert-management.yml - Full certificate lifecycle with delegation
+
 ---
 - name: Manage SSL certificates
   hosts: webservers

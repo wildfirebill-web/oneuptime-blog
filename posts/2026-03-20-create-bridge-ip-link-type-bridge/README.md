@@ -14,6 +14,7 @@ Description: Create a Linux network bridge using ip link add type bridge, add me
 
 ```bash
 # Create bridge br0
+
 ip link add name br0 type bridge
 
 # Bring it up
@@ -103,4 +104,4 @@ ip link delete br0
 
 ## Conclusion
 
-`ip link add name br0 type bridge` creates a bridge, and `ip link set <interface> master br0` attaches member interfaces. The bridge device gets the IP address — not the members. Enable STP with `ip link set br0 type bridge stp_state 1`. Use `bridge link show` to verify members and `bridge fdb show` for the MAC table.
+`ip link add name br0 type bridge` creates a bridge, and `ip link set <interface> master br0` attaches member interfaces. The bridge device gets the IP address - not the members. Enable STP with `ip link set br0 type bridge stp_state 1`. Use `bridge link show` to verify members and `bridge fdb show` for the MAC table.

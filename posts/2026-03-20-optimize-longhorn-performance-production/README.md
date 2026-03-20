@@ -1,4 +1,4 @@
-# How to Optimize Longhorn Performance for Production
+# How to Optimize Longhorn Performance for Production - Optimize Production
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -25,6 +25,7 @@ Production Longhorn optimization covers five areas:
 
 ```bash
 # Check disk types on each node
+
 lsblk -d -o NAME,TYPE,ROTA,SIZE,MODEL
 # ROTA=0 means SSD/NVMe
 

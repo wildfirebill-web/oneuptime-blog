@@ -12,6 +12,7 @@ curl is the most accessible tool for testing HTTP/3. Modern versions (7.86+) inc
 
 ```bash
 # Check if your curl supports HTTP/3
+
 curl --version | grep -E "HTTP3|quic|ngtcp2|quiche"
 
 # Test HTTP/3 over IPv6 (force IPv6 with -6)
@@ -59,8 +60,8 @@ NGTCP2_LOG=all ngtcp2client 2001:db8::1 443 https://example.com/
 
 ## Browser-Based Testing
 
-```
-# Chrome/Edge — check QUIC connections
+```text
+# Chrome/Edge - check QUIC connections
 chrome://net-internals/#quic
 
 # Check if site uses HTTP/3

@@ -86,6 +86,7 @@ Create a Flux `HelmRepository` for the Cluster Autoscaler chart.
 
 ```yaml
 # clusters/my-cluster/cluster-autoscaler/helmrepository.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

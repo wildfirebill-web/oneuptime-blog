@@ -191,6 +191,7 @@ def format_timestamp(seconds):
     return f"{hours:02d}:{minutes:02d}:{secs:02d}"
 
 # Format and print the transcript
+
 formatted = format_diarized_transcript(words)
 print(formatted)
 ```

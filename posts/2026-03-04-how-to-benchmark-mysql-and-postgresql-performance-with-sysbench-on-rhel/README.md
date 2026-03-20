@@ -14,6 +14,7 @@ sysbench is a multi-threaded benchmark tool commonly used to evaluate database p
 
 ```bash
 # Install sysbench from EPEL
+
 sudo dnf install -y epel-release
 sudo dnf install -y sysbench
 ```

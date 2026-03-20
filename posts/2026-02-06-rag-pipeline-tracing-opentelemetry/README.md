@@ -49,6 +49,7 @@ from opentelemetry.exporter.otlp.proto.grpc.trace_exporter import OTLPSpanExport
 from opentelemetry.sdk.resources import Resource
 
 # Define the service resource so traces are labeled correctly
+
 resource = Resource.create({
     "service.name": "rag-pipeline",
     "service.version": "1.0.0",

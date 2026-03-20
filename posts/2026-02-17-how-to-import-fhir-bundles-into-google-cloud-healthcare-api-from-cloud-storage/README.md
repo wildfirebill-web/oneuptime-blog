@@ -99,6 +99,7 @@ def create_ndjson_file(resources):
     return "\n".join(lines)
 
 # Create a bundle and save it
+
 bundle = create_patient_bundle(100)
 with open("patients_bundle.json", "w") as f:
     json.dump(bundle, f, indent=2)

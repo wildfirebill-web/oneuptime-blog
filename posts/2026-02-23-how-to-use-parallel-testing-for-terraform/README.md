@@ -93,6 +93,7 @@ Run with parallelism control:
 
 ```bash
 # Run all tests in parallel (Go default: GOMAXPROCS)
+
 go test -v -timeout 30m ./...
 
 # Limit parallelism to 4 tests at a time

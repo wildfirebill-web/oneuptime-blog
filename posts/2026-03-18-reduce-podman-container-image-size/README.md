@@ -20,6 +20,7 @@ Start by understanding what is consuming space in your existing images:
 
 ```bash
 # Check image size
+
 podman images --format "{{.Repository}}:{{.Tag}} {{.Size}}"
 
 # Inspect layer sizes

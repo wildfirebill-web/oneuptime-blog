@@ -50,6 +50,7 @@ During the soft delete retention period:
 
 ```bash
 # Check soft delete status on a vault
+
 az backup vault backup-properties show \
     --resource-group rg-backup-eastus2 \
     --name rsv-backup-eastus2-001 \

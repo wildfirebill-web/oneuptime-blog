@@ -47,6 +47,7 @@ For the pilot, use the simplest possible setup:
 
 ```yaml
 # Phase 1: Minimal collector configuration for the pilot.
+
 # Single collector instance receiving from pilot services only.
 receivers:
   otlp:

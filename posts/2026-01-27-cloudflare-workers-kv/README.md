@@ -22,6 +22,7 @@ A namespace is a container for your key-value pairs. You create namespaces using
 
 ```bash
 # Install Wrangler if you haven't already
+
 npm install -g wrangler
 
 # Authenticate with Cloudflare

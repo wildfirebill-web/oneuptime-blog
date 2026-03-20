@@ -103,6 +103,7 @@ For the classic percentile view:
 
 ```promql
 # P50
+
 histogram_quantile(0.50, sum(rate(istio_request_duration_milliseconds_bucket{
   reporter="destination",
   destination_service=~"$service"

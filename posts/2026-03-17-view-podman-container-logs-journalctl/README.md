@@ -18,6 +18,7 @@ When Podman containers run as systemd services, their output is captured by the 
 
 ```bash
 # View all logs for a container service
+
 journalctl --user -u webapp.service
 
 # Follow logs in real time (like tail -f)

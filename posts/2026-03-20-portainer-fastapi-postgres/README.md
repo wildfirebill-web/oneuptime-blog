@@ -1,4 +1,4 @@
-# How to Deploy a FastAPI + PostgreSQL Stack via Portainer
+# How to Deploy a FastAPI + PostgreSQL Stack via Portainer - Postgres
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -20,6 +20,7 @@ FastAPI is a modern, high-performance Python web framework with automatic OpenAP
 
 ```dockerfile
 # Dockerfile
+
 FROM python:3.12-slim
 
 # Install system dependencies

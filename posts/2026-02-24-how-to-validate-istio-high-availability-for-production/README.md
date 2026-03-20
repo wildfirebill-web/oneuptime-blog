@@ -162,6 +162,7 @@ The only way to know if HA works is to test it. Kill an istiod pod and verify th
 
 ```bash
 # Get current istiod pods
+
 kubectl get pods -n istio-system -l app=istiod
 
 # Kill one pod

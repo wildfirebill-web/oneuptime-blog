@@ -68,6 +68,7 @@ First, configure node attributes to identify hot, warm, and cold nodes:
 
 ```yaml
 # On hot nodes (fast SSDs, more RAM)
+
 # elasticsearch.yml
 node.attr.data: hot
 

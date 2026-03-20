@@ -40,6 +40,7 @@ The key Calico artifact is the MASQUERADE iptables rule:
 ```bash
 sudo iptables -t nat -L CALICO-MASQ -n -v
 # Shows: MASQUERADE rules for pod CIDRs exiting the cluster
+
 ```
 
 ## Scenario 2: Egress with NetworkPolicy (IP-Based)

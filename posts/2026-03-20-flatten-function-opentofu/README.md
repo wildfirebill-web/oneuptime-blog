@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, flatten, List Functions, HCL, Infrastructure as Code, DevOps
+Tags: OpenTofu, Flatten, List Functions, HCL, Infrastructure as Code, DevOps
 
 Description: Learn how to use the flatten function in OpenTofu to convert nested lists of lists into a single flat list.
 

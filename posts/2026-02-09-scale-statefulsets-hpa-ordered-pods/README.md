@@ -269,6 +269,7 @@ When HPA scales down a StatefulSet, PersistentVolumeClaims are not deleted autom
 
 ```bash
 # After scaling from 5 to 3 replicas
+
 kubectl get pvc -n database
 ```
 

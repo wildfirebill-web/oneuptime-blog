@@ -34,6 +34,7 @@ This Collector configuration filters out metrics from known noisy sources and li
 
 ```yaml
 # otel-collector-config.yaml
+
 processors:
   # Drop specific noisy metrics entirely
   filter/drop_noisy:

@@ -76,6 +76,7 @@ The simplest approach is to set the sampling ratio through an environment variab
 
 ```bash
 # Set in your deployment manifest (Kubernetes, Docker Compose, etc.)
+
 OTEL_TRACES_SAMPLER=parentbased_traceidratio
 OTEL_TRACES_SAMPLER_ARG=0.1
 ```

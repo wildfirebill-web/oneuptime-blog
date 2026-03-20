@@ -48,6 +48,7 @@ from msrest.authentication import ApiKeyCredentials
 import os
 
 # Connect to the training endpoint
+
 training_key = "your-training-key"
 training_endpoint = "https://your-resource.cognitiveservices.azure.com/"
 

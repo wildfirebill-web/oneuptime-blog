@@ -20,6 +20,7 @@ Use the `--sysctl` flag to set kernel parameters:
 
 ```bash
 # Set a network sysctl parameter
+
 podman run --rm --sysctl net.ipv4.ip_forward=1 alpine sh -c "
   sysctl net.ipv4.ip_forward
 "

@@ -30,6 +30,7 @@ The simplest Mapping connects an URL path to a Kubernetes service.
 
 ```yaml
 # apps/backend/ambassador-mappings/api-mapping.yaml
+
 apiVersion: getambassador.io/v3alpha1
 kind: Mapping
 metadata:

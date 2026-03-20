@@ -25,7 +25,7 @@ In Fleet (and GitOps generally):
 - The Git repository is the single source of truth
 - Rolling back means changing Git state to match a previous desired state
 - Fleet automatically reconciles clusters to match the current Git state
-- There is no separate "rollback command" — it's always a Git operation
+- There is no separate "rollback command" - it's always a Git operation
 
 ## Strategy 1: Git Revert (Recommended)
 
@@ -33,6 +33,7 @@ The safest rollback approach is `git revert`, which creates a new commit that un
 
 ```bash
 # Step 1: Identify the problematic commit
+
 git log --oneline -10
 
 # Example output:
@@ -218,4 +219,4 @@ kubectl get bundles -n fleet-default \
 
 ## Conclusion
 
-Fleet rollbacks leverage Git's natural version control capabilities to restore previous application states across all managed clusters simultaneously. Whether you use `git revert` for production-safe history preservation, commit pinning for immediate emergency rollbacks, or branch/tag-based strategies for structured release management, Fleet ensures all clusters converge to the specified state without manual intervention on each cluster. The key principle is that rollback is always a Git operation — Fleet takes care of propagating that change to your infrastructure.
+Fleet rollbacks leverage Git's natural version control capabilities to restore previous application states across all managed clusters simultaneously. Whether you use `git revert` for production-safe history preservation, commit pinning for immediate emergency rollbacks, or branch/tag-based strategies for structured release management, Fleet ensures all clusters converge to the specified state without manual intervention on each cluster. The key principle is that rollback is always a Git operation - Fleet takes care of propagating that change to your infrastructure.

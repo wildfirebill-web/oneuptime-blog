@@ -89,6 +89,7 @@ Use a two-step approach for safety:
 
 ```bash
 # Step 1: Verify which nodes will be affected
+
 kubectl get nodes -l 'rack in (rack1,rack2)'
 
 # Step 2: Apply the updated peer

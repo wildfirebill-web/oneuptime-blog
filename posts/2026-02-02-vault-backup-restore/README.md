@@ -68,6 +68,7 @@ The following command verifies your Vault CLI installation and authentication st
 
 ```bash
 # Check Vault version
+
 vault version
 
 # Verify Vault status

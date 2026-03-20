@@ -122,6 +122,7 @@ The following command installs the required cryptsetup package on Debian/Ubuntu 
 
 ```bash
 # Install cryptsetup on all OSD nodes
+
 # This package provides the dm-crypt kernel module and userspace tools
 sudo apt-get update && sudo apt-get install -y cryptsetup
 ```

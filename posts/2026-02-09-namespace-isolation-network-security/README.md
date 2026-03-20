@@ -30,6 +30,7 @@ Create default-deny network policies:
 
 ```yaml
 # Deny all ingress traffic by default
+
 apiVersion: networking.k8s.io/v1
 kind: NetworkPolicy
 metadata:

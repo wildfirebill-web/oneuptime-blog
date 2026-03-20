@@ -281,6 +281,7 @@ metadata:
     - resources-finalizer.argocd.argoproj.io
 
 # Without the finalizer, deleting the Application leaves resources in the cluster
+
 # (orphan behavior)
 ```
 

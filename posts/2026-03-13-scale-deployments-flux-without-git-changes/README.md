@@ -28,6 +28,7 @@ Observe the conflict before learning to avoid it:
 
 ```bash
 # Manually scale up (replicas declared as 2 in Git)
+
 kubectl scale deployment my-service -n team-alpha --replicas=10
 
 # Wait for Flux's next reconciliation (check interval)

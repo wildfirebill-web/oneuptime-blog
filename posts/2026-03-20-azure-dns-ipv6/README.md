@@ -17,6 +17,7 @@ RG="rg-dns"
 ZONE_NAME="example.com"
 
 # Create DNS zone
+
 az network dns zone create \
     --resource-group "$RG" \
     --name "$ZONE_NAME"

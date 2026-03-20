@@ -18,6 +18,7 @@ In batch processing, computing an average is straightforward: sum all values, di
 
 ```python
 # Batch processing - simple but requires all data in memory
+
 def batch_average(values):
     return sum(values) / len(values)
 ```

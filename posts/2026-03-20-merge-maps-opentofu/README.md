@@ -2,9 +2,9 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, merge, Maps, HCL, Functions, Infrastructure as Code
+Tags: OpenTofu, Merge, Maps, HCL, Functions, Infrastructure as Code
 
-Description: Learn how to use the merge() function in OpenTofu to combine multiple maps — merging tag sets, configuration objects, and default-with-override patterns.
+Description: Learn how to use the merge() function in OpenTofu to combine multiple maps - merging tag sets, configuration objects, and default-with-override patterns.
 
 ## Introduction
 
@@ -41,6 +41,7 @@ locals {
 
 ```hcl
 # Common tags applied to all resources
+
 locals {
   common_tags = {
     ManagedBy   = "opentofu"
@@ -164,7 +165,7 @@ provider "aws" {
 }
 
 # Resource-level tags merge with default_tags automatically
-# No need for explicit merge — AWS provider handles it
+# No need for explicit merge - AWS provider handles it
 resource "aws_instance" "web" {
   ami           = data.aws_ami.latest.id
   instance_type = "t3.medium"
@@ -180,7 +181,7 @@ resource "aws_instance" "web" {
 
 ## Nested Map Merge Caveat
 
-`merge()` is a shallow merge — it doesn't recursively merge nested maps:
+`merge()` is a shallow merge - it doesn't recursively merge nested maps:
 
 ```hcl
 locals {
@@ -201,4 +202,4 @@ locals {
 
 ## Conclusion
 
-`merge()` combines maps with last-value-wins semantics, making it ideal for tag inheritance, default-with-override patterns, and combining configuration from multiple sources. Use empty maps `{}` for conditional additions (they have no effect on the merged result). Remember that `merge()` is shallow — nested maps are replaced, not recursively merged. For deep nested merges, apply explicit nested `merge()` calls for each nested level.
+`merge()` combines maps with last-value-wins semantics, making it ideal for tag inheritance, default-with-override patterns, and combining configuration from multiple sources. Use empty maps `{}` for conditional additions (they have no effect on the merged result). Remember that `merge()` is shallow - nested maps are replaced, not recursively merged. For deep nested merges, apply explicit nested `merge()` calls for each nested level.

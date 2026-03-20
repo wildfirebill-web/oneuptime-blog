@@ -30,6 +30,7 @@ When deploying, you provide values for required parameters and optionally overri
 
 ```bash
 # Deploy with inline parameters
+
 az deployment group create \
   --resource-group "rg-myapp-dev" \
   --template-file "main.bicep" \

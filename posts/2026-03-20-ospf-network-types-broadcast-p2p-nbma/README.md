@@ -25,7 +25,7 @@ If two routers have different network types on the same link, their Hello interv
 
 ## Step 1: Check the Current Network Type
 
-```
+```text
 Router# show ip ospf interface GigabitEthernet0/0
 
 GigabitEthernet0/0 is up, line protocol is up
@@ -39,7 +39,7 @@ GigabitEthernet0/0 is up, line protocol is up
 
 On point-to-point links (e.g., GRE tunnels, serial links), disable DR election to speed up convergence:
 
-```
+```text
 Router(config)# interface Tunnel0
 ! Change from default broadcast to point-to-point
 Router(config-if)# ip ospf network point-to-point
@@ -49,9 +49,9 @@ With Point-to-Point, there's no DR/BDR election, and OSPF forms a full adjacency
 
 ## Step 3: Configure NBMA for Frame Relay Hub-and-Spoke
 
-Frame Relay does not broadcast—it's non-broadcast multi-access. Configure NBMA on the hub and manually specify neighbors:
+Frame Relay does not broadcast-it's non-broadcast multi-access. Configure NBMA on the hub and manually specify neighbors:
 
-```
+```text
 ! On the hub router
 Hub(config)# interface Serial0/0
 Hub(config-if)# ip ospf network non-broadcast
@@ -70,9 +70,9 @@ Spoke(config-if)# ip ospf priority 0    ! Prevent spokes from becoming DR
 
 ## Step 4: Use Point-to-Multipoint for Easier Frame Relay Configuration
 
-Point-to-Multipoint is often simpler than NBMA for partial-mesh Frame Relay—no manual neighbors needed:
+Point-to-Multipoint is often simpler than NBMA for partial-mesh Frame Relay-no manual neighbors needed:
 
-```
+```text
 ! On hub
 Hub(config-if)# ip ospf network point-to-multipoint
 
@@ -86,7 +86,7 @@ With Point-to-Multipoint, OSPF treats each spoke as a separate point-to-point co
 
 OSPF treats loopback interfaces as stub hosts (/32) by default, even if the address is configured as /24:
 
-```
+```text
 ! Loopback is always advertised as /32 unless you change the network type
 Router# show ip ospf interface Loopback0
 ! Network Type LOOPBACK, Cost: 1
@@ -100,7 +100,7 @@ Router(config-if)# ip ospf network point-to-point
 
 After changing network type, reset the OSPF process to force re-election and re-adjacency:
 
-```
+```text
 ! Clear OSPF process to force re-election (brief disruption)
 Router# clear ip ospf process
 

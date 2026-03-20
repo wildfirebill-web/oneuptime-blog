@@ -40,6 +40,7 @@ Run Suricata in IDS mode with a single command.
 
 ```bash
 # Start Suricata in IDS mode monitoring the host network
+
 # Host network mode gives Suricata direct access to network interfaces
 docker run -d \
   --name suricata \

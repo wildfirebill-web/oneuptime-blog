@@ -2,9 +2,9 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Conditional Resources, count, for_each, Infrastructure as Code, HCL
+Tags: OpenTofu, Conditional Resources, Count, for_each, Infrastructure as Code, HCL
 
-Description: Learn how to create optional resources in OpenTofu using count and for_each — conditionally provisioning infrastructure based on variables, environment, or feature flags.
+Description: Learn how to create optional resources in OpenTofu using count and for_each - conditionally provisioning infrastructure based on variables, environment, or feature flags.
 
 ## Introduction
 
@@ -21,6 +21,7 @@ variable "enable_monitoring" {
 }
 
 # Only created when enable_monitoring = true
+
 resource "aws_cloudwatch_log_group" "app" {
   count             = var.enable_monitoring ? 1 : 0
   name              = "/app/${var.environment}/logs"

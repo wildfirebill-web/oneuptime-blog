@@ -18,6 +18,7 @@ Most Docker Compose projects work with Podman with minimal changes. The main dif
 
 ```bash
 # Install Podman
+
 sudo dnf install podman    # Fedora/RHEL
 sudo apt install podman    # Ubuntu/Debian
 

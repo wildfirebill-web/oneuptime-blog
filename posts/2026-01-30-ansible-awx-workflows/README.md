@@ -74,6 +74,7 @@ Projects link AWX to your Git repositories containing Ansible playbooks.
 
 ```yaml
 # awx-resources/project.yml
+
 ---
 - name: Create AWX Project
   awx.awx.project:

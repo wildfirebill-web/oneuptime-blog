@@ -58,6 +58,7 @@ flowchart TB
 
 ```bash
 # macOS with Homebrew
+
 brew install redis
 brew services start redis
 

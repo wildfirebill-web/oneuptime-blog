@@ -49,6 +49,7 @@ flowchart TD
 
 ```bash
 # Check overall node health and alarms
+
 rabbitmqctl status
 
 # Look for these alarm indicators:

@@ -18,6 +18,7 @@ Most teams start with inline security group definitions like this:
 
 ```hcl
 # This works but doesn't scale - you'll copy-paste this everywhere
+
 resource "aws_security_group" "web" {
   name_prefix = "web-"
   vpc_id      = var.vpc_id

@@ -34,6 +34,7 @@ The Collector needs an OTLP receiver to accept metrics from your applications an
 
 ```yaml
 # otel-collector-config.yaml
+
 # Receives OTel metrics and sends them to Mimir via remote write
 
 receivers:

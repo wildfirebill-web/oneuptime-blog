@@ -50,6 +50,7 @@ The first step is ensuring every piece of telemetry carries the information need
 
 ```python
 # Add data residency context to telemetry.
+
 # The data_region attribute determines where this data can be stored.
 from opentelemetry import trace, context, baggage
 from opentelemetry.baggage import set_baggage

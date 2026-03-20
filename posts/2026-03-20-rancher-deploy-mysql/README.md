@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Kubernetes, MySQL, Databases, Helm
+Tags: Rancher, Kubernetes, MySQL, Database, Helm
 
 Description: Deploy a production-ready MySQL database on Rancher-managed Kubernetes clusters using Helm with persistent storage, replication, and backup configuration.
 
 ## Introduction
 
-MySQL is one of the world's most popular relational databases. Deploying MySQL on Rancher-managed Kubernetes clusters enables you to benefit from Kubernetes orchestration—automatic restarts, health checks, and scaling—while maintaining your existing MySQL workloads. This guide covers deploying MySQL using the Bitnami Helm chart with persistent storage and high availability.
+MySQL is one of the world's most popular relational databases. Deploying MySQL on Rancher-managed Kubernetes clusters enables you to benefit from Kubernetes orchestration-automatic restarts, health checks, and scaling-while maintaining your existing MySQL workloads. This guide covers deploying MySQL using the Bitnami Helm chart with persistent storage and high availability.
 
 ## Prerequisites
 
@@ -21,6 +21,7 @@ MySQL is one of the world's most popular relational databases. Deploying MySQL o
 
 ```bash
 # Add Bitnami chart repository
+
 helm repo add bitnami https://charts.bitnami.com/bitnami
 helm repo update
 

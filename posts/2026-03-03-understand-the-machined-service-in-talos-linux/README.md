@@ -47,6 +47,7 @@ The most important job of `machined` is processing the machine configuration. Th
 
 ```yaml
 # Simplified machine configuration structure
+
 machine:
   type: controlplane
   network:
@@ -163,7 +164,7 @@ talosctl -n 192.168.1.10 logs machined -f
 talosctl -n 192.168.1.10 logs machined | grep "config"
 ```
 
-## Resource Management
+Resource Management
 
 The `machined` service exposes the system state through a resource-based model. You can query these resources to understand the current state of the node:
 

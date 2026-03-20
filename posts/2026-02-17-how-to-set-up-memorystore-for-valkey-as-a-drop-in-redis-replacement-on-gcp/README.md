@@ -24,6 +24,7 @@ Set up a Valkey instance using the gcloud CLI:
 
 ```bash
 # Enable the Memorystore API if not already enabled
+
 gcloud services enable memorystore.googleapis.com
 
 # Create a standalone Valkey instance for development or small workloads

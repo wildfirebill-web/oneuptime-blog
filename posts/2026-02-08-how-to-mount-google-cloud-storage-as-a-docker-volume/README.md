@@ -18,6 +18,7 @@ Create a bucket if you do not have one:
 
 ```bash
 # Create a GCS bucket
+
 gsutil mb -l us-central1 gs://my-app-storage-bucket
 ```
 

@@ -28,6 +28,7 @@ The first thing to do is look at what exactly is different:
 
 ```bash
 # View the diff between desired and live state
+
 argocd app diff my-app
 ```
 
@@ -170,7 +171,7 @@ Some controllers modify resources they manage. For example:
 kubectl get deployment my-deployment -o yaml | grep -B 2 -A 10 "managedFields"
 ```
 
-### Resource Version and Generation Changes
+Resource Version and Generation Changes
 
 These fields change automatically and should never cause OutOfSync. If they do, it is usually a tracking configuration issue:
 

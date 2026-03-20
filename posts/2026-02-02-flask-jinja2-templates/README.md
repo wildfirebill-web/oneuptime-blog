@@ -59,6 +59,7 @@ The render_template function loads templates from the templates directory and pa
 
 ```python
 # app.py
+
 from flask import Flask, render_template
 
 app = Flask(__name__)

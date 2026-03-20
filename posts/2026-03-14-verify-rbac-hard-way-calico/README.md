@@ -30,6 +30,7 @@ Create RBAC roles that match your organization's access model. Start with three 
 
 ```yaml
 # calico-rbac-roles.yaml
+
 # ClusterRole for full Calico network administration
 apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRole

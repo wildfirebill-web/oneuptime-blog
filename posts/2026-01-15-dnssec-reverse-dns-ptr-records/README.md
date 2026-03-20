@@ -66,6 +66,7 @@ Check your current setup:
 
 ```bash
 # Verify BIND version supports DNSSEC
+
 named -v
 
 # Check if dnssec-keygen is available

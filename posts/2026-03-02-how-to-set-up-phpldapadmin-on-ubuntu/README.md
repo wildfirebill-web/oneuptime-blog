@@ -21,6 +21,7 @@ phpLDAPadmin is a web-based LDAP browser and management tool written in PHP. It 
 
 ```bash
 # Update package list
+
 sudo apt update
 
 # Install Apache and PHP with required extensions

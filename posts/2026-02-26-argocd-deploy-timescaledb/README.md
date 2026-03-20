@@ -59,6 +59,7 @@ Configure TimescaleDB with optimized settings:
 
 ```yaml
 # base/configmap.yaml
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

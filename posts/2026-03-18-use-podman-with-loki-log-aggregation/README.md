@@ -26,6 +26,7 @@ Create the Loki configuration:
 
 ```yaml
 # ~/loki/config/loki-config.yml
+
 auth_enabled: false
 
 server:

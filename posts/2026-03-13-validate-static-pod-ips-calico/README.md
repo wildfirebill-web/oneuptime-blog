@@ -27,6 +27,7 @@ Assign a static IP using Calico IPAM annotations on the pod template.
 
 ```yaml
 # statefulset-static-ip.yaml - StatefulSet with static IP assignment
+
 apiVersion: apps/v1
 kind: StatefulSet
 metadata:

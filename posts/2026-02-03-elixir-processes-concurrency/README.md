@@ -30,6 +30,7 @@ Before diving into code, it helps to understand what makes BEAM processes specia
 
 ```elixir
 # Check how lightweight processes are
+
 # This creates 100,000 processes and measures memory
 defmodule ProcessDemo do
   def count_processes do

@@ -30,6 +30,7 @@ Dataproc Serverless custom containers must be based on a specific Spark base ima
 
 ```bash
 # List available base images
+
 gcloud artifacts docker images list \
   us-docker.pkg.dev/cloud-dataproc/container/spark \
   --include-tags

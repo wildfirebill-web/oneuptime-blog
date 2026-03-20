@@ -23,6 +23,7 @@ This guide covers avoid mistakes High-Connection Workloads in Calico with produc
 
 ```yaml
 # Optimize for high-connection workloads
+
 apiVersion: projectcalico.org/v3
 kind: NetworkPolicy
 metadata:

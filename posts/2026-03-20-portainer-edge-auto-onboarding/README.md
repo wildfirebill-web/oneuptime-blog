@@ -1,4 +1,4 @@
-# How to Set Up Automatic Edge Environment Onboarding in Portainer
+# How to Set Up Automatic Edge Environment Onboarding in Portainer (2)
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -37,6 +37,7 @@ TOKEN=$(curl -s -X POST \
   | python3 -c "import sys,json; print(json.load(sys.stdin)['jwt'])")
 
 # Create an edge key for auto-onboarding
+
 curl -X POST \
   -H "Authorization: Bearer $TOKEN" \
   -H "Content-Type: application/json" \

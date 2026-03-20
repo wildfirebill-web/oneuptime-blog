@@ -2,18 +2,19 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Performance, Snapshots, Configuration, Tuning
+Tags: Portainer, Docker, Performance, Snapshot, Configuration, Tuning
 
 Description: Tune Portainer's snapshot interval settings to balance real-time container visibility with system performance, especially in environments with many containers or limited resources.
 
 ## Introduction
 
-Portainer snapshots are periodic captures of the Docker environment state — running containers, images, volumes, networks, and services. By default, Portainer takes a snapshot every 60 seconds. On a host with hundreds of containers, this generates significant Docker API load. Understanding how snapshots work and tuning the interval appropriately for your environment is key to maintaining Portainer's responsiveness while minimizing overhead.
+Portainer snapshots are periodic captures of the Docker environment state - running containers, images, volumes, networks, and services. By default, Portainer takes a snapshot every 60 seconds. On a host with hundreds of containers, this generates significant Docker API load. Understanding how snapshots work and tuning the interval appropriately for your environment is key to maintaining Portainer's responsiveness while minimizing overhead.
 
 ## Step 1: Understanding Portainer Snapshots
 
 ```bash
 # What happens during a snapshot:
+
 # 1. Portainer calls Docker API: GET /containers/json
 # 2. Calls: GET /images/json
 # 3. Calls: GET /volumes
@@ -72,7 +73,7 @@ volumes:
 
 ## Step 3: Choose Interval Based on Your Use Case
 
-```
+```text
 Use Case                           Recommended Interval
 -------                            --------------------
 Active development (many changes)  60s  (real-time visibility)
@@ -187,4 +188,4 @@ docker service create \
 
 ## Conclusion
 
-The right snapshot interval balances visibility against overhead. For active development environments, 60 seconds gives you real-time feedback in Portainer's UI. For stable production environments with hundreds of containers, 300-600 seconds significantly reduces Docker API load without meaningfully impacting observability — containers don't change state every minute in production. Monitor Docker daemon metrics to detect when snapshot polling is creating API backpressure, and adjust the interval accordingly. The Portainer API's manual snapshot trigger lets you get fresh data on-demand when needed despite longer automatic intervals.
+The right snapshot interval balances visibility against overhead. For active development environments, 60 seconds gives you real-time feedback in Portainer's UI. For stable production environments with hundreds of containers, 300-600 seconds significantly reduces Docker API load without meaningfully impacting observability - containers don't change state every minute in production. Monitor Docker daemon metrics to detect when snapshot polling is creating API backpressure, and adjust the interval accordingly. The Portainer API's manual snapshot trigger lets you get fresh data on-demand when needed despite longer automatic intervals.

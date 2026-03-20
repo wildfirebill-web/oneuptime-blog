@@ -16,6 +16,7 @@ Skaffold's `live_update` feature syncs file changes directly into the running co
 
 ```yaml
 # skaffold.yaml
+
 build:
   artifacts:
     - image: myregistry/nodeapp

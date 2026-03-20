@@ -16,6 +16,7 @@ The fundamental pattern is: pull code, install dependencies, restart service.
 
 ```yaml
 # playbook-basic-deploy.yml
+
 # Basic deployment: pull code, install deps, restart service
 - name: Deploy application
   hosts: webservers

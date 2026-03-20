@@ -14,6 +14,7 @@ When a RHEL system is running slow, the first step is to identify the bottleneck
 
 ```bash
 # Launch top
+
 top
 
 # Key columns:

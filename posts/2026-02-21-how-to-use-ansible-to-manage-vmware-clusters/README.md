@@ -35,6 +35,7 @@ Use the `community.vmware.vmware_cluster` module to create and configure cluster
 
 ```yaml
 # create-cluster.yml
+
 ---
 - name: Create and configure VMware clusters
   hosts: localhost

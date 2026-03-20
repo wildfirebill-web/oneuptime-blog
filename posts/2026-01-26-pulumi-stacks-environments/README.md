@@ -64,6 +64,7 @@ my-app-infra/
 
 ```bash
 # Create a new Pulumi project
+
 pulumi new aws-typescript --name my-app-infra
 
 # Create additional stacks for each environment

@@ -680,6 +680,7 @@ flowchart TB
 
 ```yaml
 # pnpm-workspace.yaml
+
 packages:
   - 'packages/*'
   - 'apps/*'

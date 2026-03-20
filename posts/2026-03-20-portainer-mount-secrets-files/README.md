@@ -1,4 +1,4 @@
-# How to Mount Secrets as Files in Portainer
+# How to Mount Secrets as Files in Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Learn how to mount Kubernetes Secrets as files inside containers us
 
 ## Introduction
 
-Mounting Secrets as files in containers is more secure than environment variable injection for highly sensitive data. Files are stored in `tmpfs` (in-memory) on the node — they never touch disk. Applications read credentials directly from the filesystem, which is a well-established pattern for credentials files, TLS certificates, and SSH keys. Portainer supports Secret volume mounts through its application form and YAML editor.
+Mounting Secrets as files in containers is more secure than environment variable injection for highly sensitive data. Files are stored in `tmpfs` (in-memory) on the node - they never touch disk. Applications read credentials directly from the filesystem, which is a well-established pattern for credentials files, TLS certificates, and SSH keys. Portainer supports Secret volume mounts through its application form and YAML editor.
 
 ## Prerequisites
 
@@ -20,12 +20,12 @@ Mounting Secrets as files in containers is more secure than environment variable
 
 Secret files stored in tmpfs offer security advantages:
 
-```
-In-memory (tmpfs)     — Files never written to node disk
-Auto-updated          — Volume mounts sync when Secret changes (after ~60s)
-Process isolation     — Files not visible via /proc/<pid>/environ
-Access control        — File permissions (chmod) restrict access within container
-Structured data       — Better for certificates, keys, credential files
+```text
+In-memory (tmpfs)     - Files never written to node disk
+Auto-updated          - Volume mounts sync when Secret changes (after ~60s)
+Process isolation     - Files not visible via /proc/<pid>/environ
+Access control        - File permissions (chmod) restrict access within container
+Structured data       - Better for certificates, keys, credential files
 ```
 
 Environment variables are visible via process inspection; files are more restricted.
@@ -66,7 +66,7 @@ When creating or editing an application:
 1. Go to the **Volumes** section
 2. Click **+ Add volume**
 3. Configure:
-   ```
+   ```text
    Type: Secret
    Secret name: app-credentials
    Mount path: /run/secrets
@@ -109,6 +109,7 @@ For HTTPS clients that need to verify TLS certificates:
 
 ```yaml
 # TLS Secret
+
 apiVersion: v1
 kind: Secret
 metadata:
@@ -144,7 +145,7 @@ volumes:
           mode: 0444
         - key: tls.key
           path: tls.key
-          mode: 0400   # Private key — read-only by owner only
+          mode: 0400   # Private key - read-only by owner only
 ```
 
 ## Step 5: Mount SSH Private Key

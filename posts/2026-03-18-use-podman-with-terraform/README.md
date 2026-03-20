@@ -20,6 +20,7 @@ Terraform does not have a dedicated Podman provider, but the Docker provider wor
 
 ```bash
 # Enable rootless Podman socket
+
 systemctl --user enable --now podman.socket
 
 # Verify the socket

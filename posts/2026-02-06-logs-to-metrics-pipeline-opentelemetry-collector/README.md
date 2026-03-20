@@ -127,6 +127,7 @@ Once your metrics land in your backend (Prometheus, OneUptime, or any OTLP-compa
 
 ```promql
 # Alert if more than 50 errors per minute on any route
+
 rate(http_server_error_count_total[1m]) > 50
 ```
 

@@ -27,6 +27,7 @@ Create your environment file to store OAuth credentials:
 
 ```bash
 # .env
+
 GOOGLE_CLIENT_ID=your-google-client-id
 GOOGLE_CLIENT_SECRET=your-google-client-secret
 GITHUB_CLIENT_ID=your-github-client-id

@@ -157,6 +157,7 @@ Flux controllers expose Prometheus metrics that include drift-related informatio
 
 ```promql
 # Count of reconciliation failures (may indicate drift correction issues)
+
 sum(gotk_reconcile_condition{type="Ready", status="False"}) by (kind, name, namespace)
 
 # Reconciliation duration (spikes may indicate large drift corrections)

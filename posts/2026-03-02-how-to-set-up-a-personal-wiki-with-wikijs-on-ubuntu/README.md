@@ -25,6 +25,7 @@ This guide covers both direct installation and Docker Compose installation.
 
 ```bash
 # Install PostgreSQL
+
 sudo apt update && sudo apt install -y postgresql postgresql-contrib
 
 sudo systemctl enable --now postgresql

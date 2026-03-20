@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Docker, WordPress, NGINX, MySQL, PHP, Docker Compose, CMS, Web Development
+Tags: Docker, WordPress, Nginx, MySQL, PHP, Docker Compose, CMS, Web Development
 
 Description: Deploy WordPress with Docker Compose using Nginx as a reverse proxy, MySQL for the database, and PHP-FPM for processing.
 
@@ -32,6 +32,7 @@ Docker and Docker Compose installed on your server. At least 1 GB of RAM for a b
 
 ```bash
 # Verify Docker installation
+
 docker --version
 docker compose version
 ```

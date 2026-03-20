@@ -1259,6 +1259,7 @@ Create an optimized multi-stage Dockerfile for production deployments.
 
 ```dockerfile
 # Build stage
+
 FROM node:20-alpine AS builder
 
 WORKDIR /app

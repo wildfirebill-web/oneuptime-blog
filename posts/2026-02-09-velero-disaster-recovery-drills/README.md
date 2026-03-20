@@ -36,6 +36,7 @@ echo "Date: $(date)"
 echo "Operator: $USER"
 
 # Step 1: Verify latest backup exists
+
 echo ""
 echo "Step 1: Checking latest backup..."
 LATEST_BACKUP=$(velero backup get -o json | jq -r '.items | sort_by(.metadata.creationTimestamp) | last | .metadata.name')

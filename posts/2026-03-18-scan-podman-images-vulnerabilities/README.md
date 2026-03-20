@@ -24,6 +24,7 @@ Trivy is a widely-used open-source vulnerability scanner that works well with Po
 
 ```bash
 # Install Trivy on Fedora/RHEL
+
 sudo dnf install -y trivy
 
 # Or install on Debian/Ubuntu

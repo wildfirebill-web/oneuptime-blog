@@ -22,6 +22,7 @@ Validating L7 circuit breaking ensures that your services are protected from cas
 
 ```bash
 # Confirm Envoy is enabled
+
 cilium status | grep "L7 Proxy"
 
 # Verify Envoy is handling traffic for the target service

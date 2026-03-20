@@ -26,6 +26,7 @@ Configure EBS volumes with specific IOPS and throughput parameters.
 
 ```yaml
 # aws-gp3-standard.yaml
+
 apiVersion: storage.k8s.io/v1
 kind: StorageClass
 metadata:

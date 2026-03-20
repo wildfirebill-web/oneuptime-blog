@@ -1,4 +1,4 @@
-# How to Use Workspaces for Environment Isolation in OpenTofu
+# How to Use Workspaces for Environment Isolation in OpenTofu - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -14,6 +14,7 @@ Workspaces provide state isolation between environments, allowing a single OpenT
 
 ```bash
 # Initialize and create workspaces
+
 tofu init
 
 tofu workspace new development
@@ -201,7 +202,7 @@ tofu state list
 ### Using the Same Resource Names Across Workspaces
 
 ```hcl
-# BAD: Same bucket name in all environments — will fail
+# BAD: Same bucket name in all environments - will fail
 resource "aws_s3_bucket" "app" {
   bucket = "my-app-bucket"  # S3 bucket names must be globally unique
 }

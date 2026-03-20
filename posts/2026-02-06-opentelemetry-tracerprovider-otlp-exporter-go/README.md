@@ -24,6 +24,7 @@ Install the OpenTelemetry SDK and OTLP exporter packages.
 
 ```bash
 # Core OpenTelemetry SDK
+
 go get -u go.opentelemetry.io/otel
 go get -u go.opentelemetry.io/otel/sdk/trace
 go get -u go.opentelemetry.io/otel/sdk/resource

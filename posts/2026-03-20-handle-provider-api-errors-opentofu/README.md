@@ -6,7 +6,7 @@ Tags: OpenTofu, Error Handling, Provider Errors, Debugging, Infrastructure as Co
 
 Description: Learn strategies for handling, diagnosing, and working around provider API errors in OpenTofu to build more resilient infrastructure pipelines.
 
-Provider API errors are a fact of life in cloud infrastructure management — rate limits, eventual consistency, transient network issues, and service-specific constraints all produce errors that can interrupt an `tofu apply`. This guide covers strategies for diagnosing, handling, and recovering from these errors.
+Provider API errors are a fact of life in cloud infrastructure management - rate limits, eventual consistency, transient network issues, and service-specific constraints all produce errors that can interrupt an `tofu apply`. This guide covers strategies for diagnosing, handling, and recovering from these errors.
 
 ## Understanding Provider Error Types
 
@@ -25,6 +25,7 @@ Enable verbose provider logging to see the raw API calls and responses:
 
 ```bash
 # Log level: TRACE (most verbose), DEBUG, INFO, WARN, ERROR
+
 export TF_LOG=DEBUG
 export TF_LOG_PATH=tofu-debug.log
 

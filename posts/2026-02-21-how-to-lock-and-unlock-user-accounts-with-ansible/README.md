@@ -28,6 +28,7 @@ The `password_lock` parameter is the simplest way to lock an account:
 
 ```yaml
 # lock-account.yml - Lock a user account
+
 - name: Lock a user account
   hosts: all
   become: yes

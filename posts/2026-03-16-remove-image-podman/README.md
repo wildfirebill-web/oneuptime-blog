@@ -20,6 +20,7 @@ Remove an image by its name and tag.
 
 ```bash
 # Remove an image by name and tag
+
 podman rmi nginx:1.25
 
 # Remove an image using the full qualified name

@@ -21,6 +21,7 @@ This example shapes a 100 Mbps link into three service tiers:
 
 ```bash
 # Step 1: Create the root HTB qdisc
+
 # handle 1: assigns ID; default 40 sends unclassified traffic to class 1:40
 sudo tc qdisc add dev eth0 root handle 1: htb default 40
 
@@ -29,15 +30,15 @@ sudo tc class add dev eth0 parent 1: classid 1:1 htb rate 100mbit burst 15k
 
 # Step 3: Define traffic tiers
 
-# Tier 1 — Critical (VoIP, SSH): 40 Mbps guaranteed, up to 100 Mbps
+# Tier 1 - Critical (VoIP, SSH): 40 Mbps guaranteed, up to 100 Mbps
 sudo tc class add dev eth0 parent 1:1 classid 1:10 \
   htb rate 40mbit ceil 100mbit burst 15k prio 1
 
-# Tier 2 — Standard (web, email): 40 Mbps guaranteed, up to 80 Mbps
+# Tier 2 - Standard (web, email): 40 Mbps guaranteed, up to 80 Mbps
 sudo tc class add dev eth0 parent 1:1 classid 1:20 \
   htb rate 40mbit ceil 80mbit burst 15k prio 2
 
-# Tier 3 — Bulk (backups, downloads): 20 Mbps guaranteed, up to 60 Mbps
+# Tier 3 - Bulk (backups, downloads): 20 Mbps guaranteed, up to 60 Mbps
 sudo tc class add dev eth0 parent 1:1 classid 1:30 \
   htb rate 20mbit ceil 60mbit burst 15k prio 3
 

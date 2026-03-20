@@ -20,6 +20,7 @@ Check which providers in your configuration are community-maintained:
 
 ```bash
 # List all providers in your configuration
+
 terraform providers
 
 # Check the source of each provider

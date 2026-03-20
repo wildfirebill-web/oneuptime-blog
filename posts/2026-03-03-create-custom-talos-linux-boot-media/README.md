@@ -40,6 +40,7 @@ The factory generates a unique image ID based on your selections. You can then d
 
 ```bash
 # Download a custom image from the factory
+
 # The URL includes your unique schematic ID
 wget "https://factory.talos.dev/image/<SCHEMATIC_ID>/v1.9.0/metal-amd64.iso"
 

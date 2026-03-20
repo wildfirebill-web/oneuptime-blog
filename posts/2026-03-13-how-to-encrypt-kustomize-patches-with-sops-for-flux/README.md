@@ -201,6 +201,7 @@ To modify an encrypted patch:
 
 ```bash
 # Open in editor with automatic decrypt/re-encrypt
+
 sops secret-env-patch.yaml
 
 # Or decrypt, edit manually, and re-encrypt

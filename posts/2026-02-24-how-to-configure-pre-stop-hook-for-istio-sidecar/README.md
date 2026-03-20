@@ -101,6 +101,7 @@ Wait, that's not quite right. Both preStop hooks run simultaneously, so having t
 
 ```yaml
 # Application preStop: 3 seconds (just for endpoint removal propagation)
+
 # Sidecar preStop: 8 seconds (wait for app to shut down first)
 ```
 

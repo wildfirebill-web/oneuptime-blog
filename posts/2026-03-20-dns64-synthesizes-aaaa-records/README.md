@@ -44,7 +44,7 @@ DNS64 only synthesizes a AAAA record when ALL of the following are true:
 2. The domain has **no** real AAAA record (no native IPv6)
 3. The domain **does** have at least one A record
 
-If a real AAAA record exists, DNS64 returns it unchanged — it does **not** override native IPv6 records.
+If a real AAAA record exists, DNS64 returns it unchanged - it does **not** override native IPv6 records.
 
 ## When Does DNS64 NOT Synthesize?
 
@@ -56,7 +56,7 @@ If a real AAAA record exists, DNS64 returns it unchanged — it does **not** ove
 ## Example: Comparing Normal vs DNS64 Resolution
 
 Normal DNS resolution (IPv4-capable client):
-```
+```text
 ; Query: AAAA example.com
 ;; ANSWER SECTION:
 ; (empty - no AAAA record)
@@ -67,7 +67,7 @@ example.com. 3600 IN A 93.184.216.34
 ```
 
 DNS64 resolution (IPv6-only client using DNS64 server):
-```
+```text
 ; Query: AAAA example.com → DNS64 synthesizes
 ;; ANSWER SECTION:
 example.com. 60 IN AAAA 64:ff9b::5db8:d822

@@ -57,6 +57,7 @@ Here are the default files:
 
 ```yaml
 # roles/app_deploy/defaults/main.yml
+
 # Balanced defaults - good starting point for most environments
 app_name: myapp
 app_user: appuser

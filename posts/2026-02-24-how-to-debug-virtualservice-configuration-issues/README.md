@@ -16,6 +16,7 @@ Start with the basics:
 
 ```bash
 # List all VirtualServices in the namespace
+
 kubectl get virtualservices -n default
 
 # Get the full YAML of your VirtualService

@@ -27,6 +27,7 @@ cert-manager handles the Let's Encrypt ACME protocol, certificate issuance, and 
 
 ```bash
 # Install cert-manager using kubectl
+
 kubectl apply -f https://github.com/cert-manager/cert-manager/releases/download/v1.14.0/cert-manager.yaml
 
 # Wait for cert-manager to be ready

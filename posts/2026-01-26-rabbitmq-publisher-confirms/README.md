@@ -16,6 +16,7 @@ Without publisher confirms, this code might lose messages:
 
 ```python
 # Dangerous - no delivery guarantee
+
 channel.basic_publish(exchange='', routing_key='orders', body=message)
 # Message might be lost if:
 # - Network fails

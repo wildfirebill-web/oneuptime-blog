@@ -43,6 +43,7 @@ First, document your current Classic VPN configuration:
 
 ```bash
 # List existing Classic VPN gateways
+
 gcloud compute target-vpn-gateways list \
   --project=your-project-id
 

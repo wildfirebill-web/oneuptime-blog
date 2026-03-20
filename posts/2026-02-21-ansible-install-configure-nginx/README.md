@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, NGINX, Web Server, Reverse Proxy
+Tags: Ansible, Nginx, Web Server, Reverse Proxy
 
 Description: Complete guide to automating Nginx installation, configuration, and SSL setup using Ansible playbooks for web servers and reverse proxies.
 
@@ -22,6 +22,7 @@ This guide covers installing and configuring Nginx using Ansible, including SSL/
 
 ```ini
 # inventory/webservers.ini
+
 [webservers]
 web-1 ansible_host=10.0.12.10
 web-2 ansible_host=10.0.12.11

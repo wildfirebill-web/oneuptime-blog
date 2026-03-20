@@ -26,6 +26,7 @@ Install KubeFed on your host cluster using Helm:
 
 ```bash
 # Add KubeFed Helm repository
+
 helm repo add kubefed-charts https://raw.githubusercontent.com/kubernetes-sigs/kubefed/master/charts
 helm repo update
 

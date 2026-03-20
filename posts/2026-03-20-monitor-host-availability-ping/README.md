@@ -12,7 +12,7 @@ Continuous ping monitoring detects outages in real time and builds a history of 
 
 ```bash
 #!/bin/bash
-# monitor.sh — Alert when host goes down or comes up
+# monitor.sh - Alert when host goes down or comes up
 
 HOST="${1:-8.8.8.8}"
 INTERVAL=5
@@ -40,7 +40,7 @@ done
 
 ```bash
 #!/bin/bash
-# monitor-log.sh — Log all state changes with timestamps
+# monitor-log.sh - Log all state changes with timestamps
 
 HOST="${1:-192.168.1.1}"
 LOGFILE="/var/log/ping-monitor-${HOST}.log"
@@ -72,7 +72,7 @@ done
 
 ```bash
 #!/bin/bash
-# uptime-check.sh — Measure uptime over N pings
+# uptime-check.sh - Measure uptime over N pings
 
 HOST="${1:-8.8.8.8}"
 COUNT=100  # Number of pings
@@ -96,7 +96,7 @@ echo "Availability: ${UPTIME}%"
 
 ```bash
 #!/bin/bash
-# multi-host-monitor.sh — Monitor multiple hosts in parallel
+# multi-host-monitor.sh - Monitor multiple hosts in parallel
 
 HOSTS=("192.168.1.1" "192.168.1.10" "8.8.8.8" "1.1.1.1")
 
@@ -114,6 +114,7 @@ monitor_host() {
 }
 
 # Start monitoring each host in background
+
 for host in "${HOSTS[@]}"; do
     monitor_host "$host" &
 done
@@ -126,7 +127,7 @@ wait
 
 ```bash
 #!/bin/bash
-# alert-monitor.sh — Email alert when host goes down
+# alert-monitor.sh - Email alert when host goes down
 
 HOST="192.168.1.1"
 ALERT_EMAIL="ops@example.com"
@@ -173,4 +174,4 @@ sudo systemctl start ping-monitor
 sudo journalctl -u ping-monitor -f
 ```
 
-Continuous ping monitoring is the simplest form of availability monitoring — reliable, low-resource, and easy to extend with alerting and logging as your needs grow.
+Continuous ping monitoring is the simplest form of availability monitoring - reliable, low-resource, and easy to extend with alerting and logging as your needs grow.

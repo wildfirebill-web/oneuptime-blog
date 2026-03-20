@@ -33,6 +33,7 @@ Let's build a book management API. Start by creating a new Django project:
 
 ```bash
 # Create and activate virtual environment
+
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 

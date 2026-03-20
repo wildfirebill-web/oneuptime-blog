@@ -53,7 +53,7 @@ config wifi-iface 'corporate_wifi'
 ```
 
 **Cisco WLC configuration:**
-```
+```text
 wlan CorporateWiFi 1 CorporateWiFi
   client vlan 10
   mobility anchor 192.168.1.200    # Mobility anchor keeps same subnet
@@ -69,6 +69,7 @@ When roaming, clients try to renew their existing DHCP lease:
 
 ```bash
 # /etc/dhcp/dhcpd.conf - configure for roaming clients
+
 subnet 192.168.10.0 netmask 255.255.255.0 {
     range 192.168.10.100 192.168.10.200;
     option routers 192.168.10.1;

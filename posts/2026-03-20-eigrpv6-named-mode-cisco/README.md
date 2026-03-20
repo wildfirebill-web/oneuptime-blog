@@ -8,11 +8,11 @@ Description: Learn how to configure named EIGRP (the modern EIGRP configuration 
 
 ## Overview
 
-Named EIGRP (available since IOS 15.0(1)M) is the modern way to configure EIGRP. It provides a single EIGRP process that handles multiple address families (IPv4, IPv6, VPNv4) within one hierarchical configuration block — eliminating the need for separate Classic EIGRPv6 processes.
+Named EIGRP (available since IOS 15.0(1)M) is the modern way to configure EIGRP. It provides a single EIGRP process that handles multiple address families (IPv4, IPv6, VPNv4) within one hierarchical configuration block - eliminating the need for separate Classic EIGRPv6 processes.
 
 ## Named EIGRP Configuration for IPv6
 
-```
+```text
 ! Create a named EIGRP process
 Router(config)# router eigrp MY_NETWORK
 
@@ -37,7 +37,7 @@ Router(config-router-af)# exit-address-family
 
 ## Configuring Both IPv4 and IPv6 in One Process
 
-```
+```text
 Router(config)# router eigrp DUAL_STACK_NETWORK
 
 ! IPv4 address family
@@ -53,7 +53,7 @@ Router(config-router-af)# exit-address-family
 
 ## Interface-Specific Configuration
 
-```
+```text
 Router(config)# router eigrp MY_NETWORK
 Router(config-router)# address-family ipv6 unicast autonomous-system 1
 
@@ -74,7 +74,7 @@ Router(config-router-af)# exit-address-family
 
 ## Authentication in Named EIGRP
 
-```
+```text
 ! Configure SHA-256 authentication (Named mode supports SHA, Classic only supports MD5)
 Router(config)# router eigrp MY_NETWORK
 Router(config-router)# address-family ipv6 unicast autonomous-system 1
@@ -85,7 +85,7 @@ Router(config-router-af-interface)#  exit-af-interface
 
 ## Verification Commands
 
-```
+```text
 ! Show EIGRP IPv6 neighbors
 Router# show eigrp address-family ipv6 neighbors
 
@@ -104,7 +104,7 @@ Router# show eigrp protocols
 
 ## Sample Output
 
-```
+```text
 Router# show eigrp address-family ipv6 neighbors
 
 EIGRP-IPv6 VR(MY_NETWORK) Address-Family Neighbors for AS(1)

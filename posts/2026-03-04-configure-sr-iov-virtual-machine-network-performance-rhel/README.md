@@ -20,6 +20,7 @@ SR-IOV allows a single physical network adapter to present itself as multiple vi
 
 ```bash
 # Check if IOMMU is currently enabled
+
 dmesg | grep -i iommu
 
 # Enable IOMMU in the kernel boot parameters

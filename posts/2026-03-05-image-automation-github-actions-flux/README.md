@@ -36,6 +36,7 @@ Create a workflow that builds and pushes a container image with a SemVer or buil
 
 ```yaml
 # .github/workflows/build-and-push.yaml
+
 name: Build and Push Image
 
 on:

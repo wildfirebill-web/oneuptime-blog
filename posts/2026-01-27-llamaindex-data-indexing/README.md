@@ -41,6 +41,7 @@ Set up your environment with the necessary API keys:
 
 ```python
 # Set up environment variables for API access
+
 import os
 os.environ["OPENAI_API_KEY"] = "your-api-key-here"
 ```

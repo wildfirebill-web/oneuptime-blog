@@ -499,6 +499,7 @@ ORDER BY dbt_valid_from;
 
 ```bash
 # Run all snapshots
+
 dbt snapshot
 
 # Run specific snapshot

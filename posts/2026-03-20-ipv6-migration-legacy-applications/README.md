@@ -16,6 +16,7 @@ Place an IPv6-capable reverse proxy in front of the legacy IPv4 application:
 
 ```nginx
 # Nginx as IPv6 frontend for legacy IPv4 app
+
 server {
     # Accept IPv6 connections
     listen [::]:443 ssl;
@@ -82,7 +83,7 @@ options {
 };
 ```
 
-Legacy IPv6-only clients resolve `hostname.example.com` — if only an A record exists, DNS64 synthesizes a AAAA record like `64:ff9b::192.0.2.1`, which NAT64 translates to the real IPv4 address.
+Legacy IPv6-only clients resolve `hostname.example.com` - if only an A record exists, DNS64 synthesizes a AAAA record like `64:ff9b::192.0.2.1`, which NAT64 translates to the real IPv4 address.
 
 ## Strategy 3: IPv6 Wrapper Script
 
@@ -90,7 +91,7 @@ For applications that accept a configuration file with a bind address:
 
 ```bash
 #!/bin/bash
-# ipv6_wrapper.sh — Launch legacy app with IPv6 binding via socat
+# ipv6_wrapper.sh - Launch legacy app with IPv6 binding via socat
 
 LEGACY_APP_PORT=8080
 WRAPPER_PORT=8080
@@ -172,4 +173,4 @@ data:
 
 ## Conclusion
 
-Legacy application IPv6 migration rarely requires modifying the application itself. A reverse proxy (Nginx or HAProxy) accepting IPv6 and forwarding to a local IPv4 listener handles most cases with minimal complexity. For legacy applications that need to call IPv4-only external services, NAT64/DNS64 provides transparent translation. Always choose the simplest approach — a socat one-liner wrapping a legacy binary is far more maintainable than a complex in-place IPv6 port of an unmaintained codebase.
+Legacy application IPv6 migration rarely requires modifying the application itself. A reverse proxy (Nginx or HAProxy) accepting IPv6 and forwarding to a local IPv4 listener handles most cases with minimal complexity. For legacy applications that need to call IPv4-only external services, NAT64/DNS64 provides transparent translation. Always choose the simplest approach - a socat one-liner wrapping a legacy binary is far more maintainable than a complex in-place IPv6 port of an unmaintained codebase.

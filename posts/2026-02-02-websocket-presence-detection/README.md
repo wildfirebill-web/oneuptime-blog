@@ -47,6 +47,7 @@ Let us set up a Node.js project for our presence system:
 
 ```bash
 # Create project directory
+
 mkdir websocket-presence && cd websocket-presence
 
 # Initialize npm project

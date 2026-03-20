@@ -192,6 +192,7 @@ With more than a handful of tenants, this configuration grows quickly. A practic
 import yaml
 
 # Define tenants and their settings
+
 tenants = {
     "acme-corp": {"endpoint": "acme.backend.internal:4317", "sampling": 100, "batch_size": 1024},
     "globex": {"endpoint": "globex.backend.internal:4317", "sampling": 50, "batch_size": 512},

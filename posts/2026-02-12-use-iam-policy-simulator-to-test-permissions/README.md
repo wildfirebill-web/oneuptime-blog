@@ -55,6 +55,7 @@ Using the CLI:
 
 ```bash
 # Test whether jane.smith can read from a specific S3 bucket
+
 aws iam simulate-principal-policy \
   --policy-source-arn arn:aws:iam::123456789012:user/jane.smith \
   --action-names s3:GetObject \

@@ -470,6 +470,7 @@ Configure branch protection to require CI:
 
 ```yaml
 # Give jobs clear names for branch protection
+
 jobs:
   lint:
     name: Lint

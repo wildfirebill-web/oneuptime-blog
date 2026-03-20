@@ -27,6 +27,7 @@ Image policy markers are inline comments that tell the image automation controll
 
 ```yaml
 # {"$imagepolicy": "NAMESPACE:POLICY_NAME"}
+
 ```
 
 There are also variants that extract only part of the image reference:

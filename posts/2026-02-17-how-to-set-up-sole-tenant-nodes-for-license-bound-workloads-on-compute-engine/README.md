@@ -28,6 +28,7 @@ First, check what node types are available in your target zone:
 
 ```bash
 # List available sole-tenant node types in a specific zone
+
 gcloud compute sole-tenancy node-types list --zone=us-central1-a
 ```
 

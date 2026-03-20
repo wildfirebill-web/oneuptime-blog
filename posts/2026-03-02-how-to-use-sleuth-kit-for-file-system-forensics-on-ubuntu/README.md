@@ -14,6 +14,7 @@ The Sleuth Kit (TSK) is a collection of command-line forensic tools that Autopsy
 
 ```bash
 # Install from the Ubuntu repository
+
 sudo apt update
 sudo apt install -y sleuthkit
 

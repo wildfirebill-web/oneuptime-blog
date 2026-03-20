@@ -16,6 +16,7 @@ This guide covers creating PersistentVolumes with Terraform, including different
 
 ```hcl
 # providers.tf
+
 terraform {
   required_version = ">= 1.0"
 

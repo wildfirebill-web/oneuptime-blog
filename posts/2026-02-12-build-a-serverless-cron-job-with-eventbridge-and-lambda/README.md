@@ -32,6 +32,7 @@ graph LR
 
 ```python
 # Lambda function for a daily database cleanup cron job
+
 import boto3
 import json
 from datetime import datetime, timedelta

@@ -47,6 +47,7 @@ Download the Talos Linux image for your architecture:
 
 ```bash
 # Download the Talos ISO (for x86_64)
+
 curl -LO https://github.com/siderolabs/talos/releases/download/v1.6.0/metal-amd64.iso
 
 # Or for Raspberry Pi

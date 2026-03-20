@@ -67,6 +67,7 @@ Use a Kustomize overlay to match all labeled resources and apply the prune-disab
 
 ```yaml
 # kustomization.yaml
+
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:

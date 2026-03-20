@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: NFS, Kerberos, IPv4, Security, Authentication, Linux, krb5
+Tags: NFS, Kerberos, IPv4, Security, Authentication, Linux, Krb5
 
 Description: Learn how to configure NFS exports secured with Kerberos authentication on IPv4 to prevent unauthorized access to shared filesystems.
 
@@ -23,6 +23,7 @@ NFS without Kerberos relies only on IP-based access control and trusts client UI
 ```bash
 dnf install nfs-utils krb5-workstation -y    # RHEL/Rocky
 # or
+
 apt install nfs-kernel-server krb5-user -y   # Debian/Ubuntu
 ```
 
@@ -93,7 +94,7 @@ systemctl enable --now rpc-gssd
 # Get a Kerberos ticket (as a regular user)
 kinit user@EXAMPLE.COM
 
-# Access the NFS share — should work with the ticket
+# Access the NFS share - should work with the ticket
 ls /mnt/nfs
 
 # Without a valid ticket, access should be denied

@@ -28,6 +28,7 @@ Before creating recording rules, identify which queries actually need optimizati
 
 ```bash
 # Find slowest queries in Prometheus logs
+
 kubectl logs -n monitoring prometheus-0 | grep "query" | grep -E "took [0-9]+\.[0-9]+s" | sort -t= -k4 -n | tail -20
 ```
 

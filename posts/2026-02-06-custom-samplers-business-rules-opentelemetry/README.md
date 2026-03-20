@@ -68,6 +68,7 @@ Your sampler returns a `SamplingResult` containing:
 
 ```python
 # business_sampler.py
+
 from opentelemetry.sdk.trace.sampling import (
     Sampler,
     SamplingResult,

@@ -8,7 +8,7 @@ Description: A systematic guide to diagnosing and resolving IPv6 load balancer c
 
 ## Troubleshooting Decision Tree
 
-```
+```text
 Cannot reach IPv6 load balancer VIP?
 ├─ VIP has IPv6 address?
 │   ip -6 addr show | grep vip
@@ -26,6 +26,7 @@ Cannot reach IPv6 load balancer VIP?
 
 ```bash
 # Check VIP is on an interface
+
 ip -6 addr show | grep "2001:db8::vip"
 
 # For keepalived VIP: check which node owns it
@@ -49,7 +50,7 @@ ss -6 -tlnp | grep nginx
 # IPVS (virtual service exists)
 sudo ipvsadm -L -n | grep "2001:db8::vip"
 
-# LVS doesn't listen on ports like HAProxy/nginx — it works at kernel level
+# LVS doesn't listen on ports like HAProxy/nginx - it works at kernel level
 # Verify the virtual service exists in ipvsadm
 ```
 
@@ -128,7 +129,7 @@ sudo tail -f /var/log/nginx/error.log | grep -i "upstream\|IPv6\|connect"
 ## Step 6: Test Backend Directly
 
 ```bash
-# Bypass the load balancer — test backends directly
+# Bypass the load balancer - test backends directly
 for server in 2001:db8::server1 2001:db8::server2 2001:db8::server3; do
   echo -n "Testing $server: "
   curl -6 -s -o /dev/null -w "%{http_code}" \
@@ -177,4 +178,4 @@ wireshark lb-debug.pcap
 # Look for: SYN without SYN-ACK (backend down), RSTs (connection refused)
 ```
 
-Systematic troubleshooting — working from VIP configuration through firewall, forwarding, and backend health — identifies the layer where IPv6 load balancer connectivity fails.
+Systematic troubleshooting - working from VIP configuration through firewall, forwarding, and backend health - identifies the layer where IPv6 load balancer connectivity fails.

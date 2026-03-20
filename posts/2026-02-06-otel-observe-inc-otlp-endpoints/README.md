@@ -124,6 +124,7 @@ resource = Resource.create({
 })
 
 # Traces
+
 trace_exporter = OTLPSpanExporter(
     endpoint=OBSERVE_ENDPOINT,
     headers=(("authorization", f"Bearer {auth_token}"),),

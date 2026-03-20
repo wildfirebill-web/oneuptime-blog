@@ -37,6 +37,7 @@ First, install the required packages in your NestJS project.
 
 ```bash
 # Install class-validator and class-transformer
+
 npm install class-validator class-transformer
 ```
 

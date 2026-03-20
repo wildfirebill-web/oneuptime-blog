@@ -56,6 +56,7 @@ Configure the timeout in your RabbitMQ configuration file (`rabbitmq.conf`):
 
 ```ini
 # Consumer timeout in milliseconds (default: 1800000 = 30 minutes)
+
 # Set to 0 to disable (not recommended for production)
 consumer_timeout = 300000
 

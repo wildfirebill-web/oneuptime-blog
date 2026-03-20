@@ -29,6 +29,7 @@ The Flux Operator exposes Prometheus metrics on a dedicated port. By default, th
 
 ```bash
 # Find the Flux Operator pod
+
 kubectl get pods -n flux-system -l app.kubernetes.io/name=flux-operator
 
 # Port-forward to check available metrics

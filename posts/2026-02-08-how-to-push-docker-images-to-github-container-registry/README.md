@@ -36,6 +36,7 @@ Create a PAT with the `write:packages` scope:
 
 ```bash
 # Login to GHCR using your PAT
+
 echo YOUR_GITHUB_PAT | docker login ghcr.io -u YOUR_GITHUB_USERNAME --password-stdin
 
 # Verify the login

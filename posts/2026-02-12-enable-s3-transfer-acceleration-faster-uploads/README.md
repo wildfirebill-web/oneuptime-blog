@@ -37,6 +37,7 @@ Enable Transfer Acceleration on a bucket:
 
 ```bash
 # Enable Transfer Acceleration
+
 aws s3api put-bucket-accelerate-configuration \
     --bucket my-bucket \
     --accelerate-configuration Status=Enabled

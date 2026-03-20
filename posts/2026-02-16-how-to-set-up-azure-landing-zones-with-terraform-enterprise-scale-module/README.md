@@ -51,6 +51,7 @@ Permissions are the trickiest part. The module creates management groups and ass
 
 ```bash
 # Elevate access to manage all Azure subscriptions and management groups
+
 az rest --method post \
   --url "/providers/Microsoft.Authorization/elevateAccess?api-version=2016-07-01"
 ```

@@ -34,6 +34,7 @@ Before making changes, check the current mTLS configuration in your cluster:
 
 ```bash
 # Check mesh-wide peer authentication
+
 kubectl get peerauthentication --all-namespaces
 
 # Check if mTLS is working between services

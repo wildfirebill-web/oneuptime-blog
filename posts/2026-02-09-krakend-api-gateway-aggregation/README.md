@@ -22,6 +22,7 @@ You can run KrakenD as a Docker container, which is the simplest approach for bo
 
 ```bash
 # Pull the official KrakenD image
+
 docker pull devopsfaith/krakend:2.5
 
 # Create a basic configuration directory

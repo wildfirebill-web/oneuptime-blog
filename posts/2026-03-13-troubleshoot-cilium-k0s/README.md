@@ -29,6 +29,7 @@ Confirm Cilium is correctly installed and running on k0s.
 
 ```bash
 # Check k0s status
+
 k0s status
 
 # Verify Cilium pods are running

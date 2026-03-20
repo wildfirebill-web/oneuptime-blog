@@ -20,6 +20,7 @@ Portainer ships with a self-signed certificate that causes browser warnings. Rep
 
 ```bash
 # Create a directory to store certificate files
+
 mkdir -p /opt/portainer/certs
 
 # Copy your certificate and key

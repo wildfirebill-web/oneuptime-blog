@@ -334,6 +334,7 @@ After applying all policies, test each role:
 
 ```bash
 # Test frontend role - should succeed
+
 kubectl exec frontend-pod -- curl -s -o /dev/null -w "%{http_code}" http://product-catalog:8080/products/1
 
 # Test frontend trying to delete - should get 403

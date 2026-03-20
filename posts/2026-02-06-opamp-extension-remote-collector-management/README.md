@@ -36,6 +36,7 @@ Here's a minimal configuration to enable the OpAMP extension:
 
 ```yaml
 # collector-config.yaml
+
 extensions:
   # Configure OpAMP client extension
   opamp:

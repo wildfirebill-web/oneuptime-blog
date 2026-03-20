@@ -39,6 +39,7 @@ Read-only variables in Bash are created using either the `readonly` builtin or `
 # Explicitly declaring a variable as read-only
 
 # Create a read-only variable
+
 readonly CONFIG_PATH="/etc/myapp/config.yaml"
 
 # Later in the script, attempting to change it

@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Node.js, Socket Options, IPv4, TCP, net Module, Performance, Networking
+Tags: Node.js, Socket Options, IPv4, TCP, Net Module, Performance, Networking
 
 Description: Configure low-level IPv4 socket options in Node.js using the net module's built-in methods and the optional socket-on-connect technique for advanced tuning.
 
 ## Introduction
 
-The Node.js `net` module exposes several socket options through its `Socket` and `Server` classes. Properly configuring these options — such as `TCP_NODELAY`, keep-alive settings, and buffer sizes — can significantly improve performance and reliability for TCP-based applications over IPv4.
+The Node.js `net` module exposes several socket options through its `Socket` and `Server` classes. Properly configuring these options - such as `TCP_NODELAY`, keep-alive settings, and buffer sizes - can significantly improve performance and reliability for TCP-based applications over IPv4.
 
 ## Available Socket Options in Node.js
 
@@ -27,7 +27,7 @@ Nagle's algorithm buffers small packets to reduce overhead. For low-latency appl
 const net = require('net');
 
 const server = net.createServer((socket) => {
-  // Disable Nagle's algorithm — send packets immediately
+  // Disable Nagle's algorithm - send packets immediately
   socket.setNoDelay(true);
   
   socket.on('data', (data) => {
@@ -76,7 +76,7 @@ const server = net.createServer((socket) => {
   socket.setTimeout(60000);
   
   socket.on('timeout', () => {
-    console.log(`Client ${socket.remoteAddress} idle for 60s — closing`);
+    console.log(`Client ${socket.remoteAddress} idle for 60s - closing`);
     socket.end('Idle timeout\n');
   });
   
@@ -100,7 +100,7 @@ const server = net.createServer({ allowHalfOpen: true }, (socket) => {
   socket.on('data', (data) => received.push(data));
   
   socket.on('end', () => {
-    // Remote finished writing — process and respond
+    // Remote finished writing - process and respond
     const body = Buffer.concat(received);
     console.log(`Received ${body.length} bytes`);
     

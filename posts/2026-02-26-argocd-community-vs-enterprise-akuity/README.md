@@ -42,6 +42,7 @@ The open source ArgoCD provides a complete GitOps deployment solution.
 
 ```yaml
 # Everything in ArgoCD community is fully functional
+
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:

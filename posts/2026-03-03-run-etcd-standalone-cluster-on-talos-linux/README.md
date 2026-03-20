@@ -29,6 +29,7 @@ etcd requires TLS for secure communication. We will use cert-manager:
 
 ```yaml
 # etcd-namespace.yaml
+
 apiVersion: v1
 kind: Namespace
 metadata:

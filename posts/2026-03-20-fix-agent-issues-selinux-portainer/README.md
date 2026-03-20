@@ -14,6 +14,7 @@ SELinux (Security-Enhanced Linux) is enabled by default on RHEL, CentOS, and Fed
 
 ```bash
 # Agent container starts but Portainer shows "Unable to Connect"
+
 docker logs portainer_agent 2>&1 | grep -i "permission\|denied\|selinux"
 
 # Check for SELinux denials in the audit log

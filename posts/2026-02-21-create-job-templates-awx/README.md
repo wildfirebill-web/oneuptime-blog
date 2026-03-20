@@ -33,6 +33,7 @@ Here is how to create a basic job template using the AWX API.
 
 ```bash
 # Create a job template
+
 curl -X POST "https://awx.example.com/api/v2/job_templates/" \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer $AWX_TOKEN" \

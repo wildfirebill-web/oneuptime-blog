@@ -22,6 +22,7 @@ Files in `/etc/systemd/system/` override those in `/lib/systemd/system/`. When y
 
 ```bash
 # List all loaded unit files and their paths
+
 systemctl list-unit-files
 
 # Show where a specific unit file is loaded from

@@ -307,6 +307,7 @@ SERVICE_URL="http://web-service.$NAMESPACE.svc.cluster.local"
 echo "Testing preStop hook effectiveness..."
 
 # Start continuous requests
+
 (
   while true; do
     RESPONSE=$(curl -s -o /dev/null -w "%{http_code}" $SERVICE_URL)

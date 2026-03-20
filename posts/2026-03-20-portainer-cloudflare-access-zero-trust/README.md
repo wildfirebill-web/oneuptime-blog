@@ -1,4 +1,4 @@
-# How to Configure Cloudflare Access with Portainer for Zero Trust
+# How to Configure Cloudflare Access with Portainer for Zero Trust (2)
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -23,17 +23,18 @@ Cloudflare Access adds a zero-trust authentication layer in front of Portainer, 
 3. Click **Add new**
 
 **Option A: Google Workspace**
-```
+```text
 Type: Google
 App ID: your-client-id.apps.googleusercontent.com
 Client Secret: your-google-client-secret
 
 # In Google Cloud Console, create OAuth credentials:
+
 # Authorized redirect URI: https://YOUR_TEAM.cloudflareaccess.com/cdn-cgi/access/callback
 ```
 
 **Option B: GitHub**
-```
+```text
 Type: GitHub
 App ID: your-github-app-client-id
 Client Secret: your-github-app-client-secret
@@ -42,8 +43,8 @@ Client Secret: your-github-app-client-secret
 # Authorization callback URL: https://YOUR_TEAM.cloudflareaccess.com/cdn-cgi/access/callback
 ```
 
-**Option C: One-Time PIN (simplest — uses email)**
-```
+**Option C: One-Time PIN (simplest - uses email)**
+```text
 Type: One-time PIN
 # No additional configuration needed
 # Users receive a PIN via email to authenticate
@@ -55,7 +56,7 @@ Type: One-time PIN
 2. Choose **Self-hosted**
 3. Configure:
 
-```
+```text
 Application Configuration:
   Application name: Portainer Admin
   Session duration: 24 hours
@@ -70,7 +71,7 @@ Logo: Upload Portainer logo (optional)
 Policies control who can access Portainer:
 
 **Policy 1: Allow specific team members**
-```
+```text
 Policy name: Engineering Team
 Action: Allow
 Include rules:
@@ -79,7 +80,7 @@ Include rules:
 ```
 
 **Policy 2: Allow by email domain**
-```
+```text
 Policy name: Company Employees
 Action: Allow
 Include rules:
@@ -88,7 +89,7 @@ Include rules:
 ```
 
 **Policy 3: Allow by GitHub organization**
-```
+```text
 Policy name: GitHub Org Members
 Action: Allow
 Include rules:
@@ -97,7 +98,7 @@ Include rules:
 ```
 
 **Policy 4: Block everyone except specific IPs (bypass for internal access)**
-```
+```text
 Policy name: Office Network
 Action: Allow
 Include rules:
@@ -107,7 +108,7 @@ Include rules:
 
 ## Step 4: Configure Application Settings
 
-```
+```text
 CORS Settings (if Portainer API is accessed from other apps):
   Access-Control-Allow-Origin: https://portainer.example.com
   Allow credentials: true
@@ -127,7 +128,7 @@ For CI/CD or scripts that access Portainer API through the Cloudflare Access lay
 
 1. Go to **Access** → **Service Auth** → **Service Tokens** → **Create Service Token**
 
-```
+```text
 Name: portainer-cicd-token
 Token duration: 1 year
 ```
@@ -144,7 +145,7 @@ curl -X POST https://portainer.example.com/api/auth \
 ```
 
 Update your Cloudflare Access application policy to allow the service token:
-```
+```text
 Policy name: Service Accounts
 Action: Service Auth
 Include rules:
@@ -157,7 +158,7 @@ Include rules:
 If you're using Portainer Edge Agents, they need to reach Portainer without browser-based authentication:
 
 1. Create a **Bypass** policy for the Edge Agent path:
-```
+```text
 Policy name: Edge Agent Bypass
 Action: Bypass (no authentication)
 Include rules:

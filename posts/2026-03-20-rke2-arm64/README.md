@@ -30,6 +30,7 @@ ARM64 (AArch64) processors are increasingly common in both cloud environments (A
 
 ```bash
 # Confirm the system is ARM64
+
 uname -m
 # Expected output: aarch64
 

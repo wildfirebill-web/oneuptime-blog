@@ -1,8 +1,8 @@
-# How to Use .auto.tfvars for Automatic Variable Loading in OpenTofu
+# How to Use .auto.tfvars for Automatic Variable Loading in OpenTofu - Opentofu
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Variables, auto.tfvars, Infrastructure as Code, DevOps
+Tags: OpenTofu, Variables, Auto.tfvars, Infrastructure as Code, DevOps
 
 Description: A guide to using .auto.tfvars files for automatic variable loading in OpenTofu without explicit -var-file flags.
 
@@ -14,6 +14,7 @@ Files with the `.auto.tfvars` suffix are automatically loaded by OpenTofu withou
 
 ```bash
 # Files automatically loaded (in alphabetical order):
+
 # 1. terraform.tfvars
 # 2. terraform.tfvars.json
 # 3. *.auto.tfvars (alphabetically)
@@ -77,7 +78,7 @@ instance_count = 2
 
 Structure per-environment directories:
 
-```
+```text
 environments/
 ├── dev/
 │   ├── main.tf          # Symlink or copy of root main.tf
@@ -132,7 +133,7 @@ tofu apply -var="instance_count=10"
 
 ## When to Use .auto.tfvars
 
-```
+```text
 Use .auto.tfvars for:
 - Common variables shared across all plans in a directory
 - Per-environment directories where all plans need the same variables

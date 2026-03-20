@@ -14,6 +14,7 @@ Linux has supported IPv6 jumbograms since the early kernel 2.6 series. Enabling 
 
 ```bash
 # Check current MTU and maximum supported MTU for an interface
+
 ip link show eth0
 ethtool eth0 | grep -i mtu
 

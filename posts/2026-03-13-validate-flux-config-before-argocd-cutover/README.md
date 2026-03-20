@@ -47,6 +47,7 @@ check() {
 echo "=== Validating Flux configuration for: $APP ==="
 
 # Check 1: Kustomization exists
+
 check "Kustomization exists" \
   "kubectl get kustomization $APP -n $NAMESPACE"
 

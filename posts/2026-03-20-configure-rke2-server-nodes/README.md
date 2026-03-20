@@ -16,6 +16,7 @@ RKE2 (Rancher Kubernetes Engine 2) is a fully conformant Kubernetes distribution
 
 ```bash
 # Download and run the RKE2 installer
+
 curl -sfL https://get.rke2.io | sh -
 
 # Enable and start the RKE2 server service
@@ -31,7 +32,7 @@ RKE2 reads its configuration from `/etc/rancher/rke2/config.yaml`. Create this f
 ```yaml
 # /etc/rancher/rke2/config.yaml
 
-# Shared cluster secret — all nodes must use the same token
+# Shared cluster secret - all nodes must use the same token
 token: my-super-secret-cluster-token
 
 # TLS SANs added to the API server certificate
@@ -137,4 +138,4 @@ systemctl enable --now rke2-server.service
 
 - Always set `tls-san` to include your load balancer DNS name before starting the first server.
 - Store the token in a secrets manager, not plaintext in configuration management.
-- Run 3 or 5 server nodes for HA — never 2 or 4 (etcd requires an odd quorum).
+- Run 3 or 5 server nodes for HA - never 2 or 4 (etcd requires an odd quorum).

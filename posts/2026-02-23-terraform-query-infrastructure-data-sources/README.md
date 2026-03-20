@@ -18,6 +18,7 @@ A data source performs a read-only query against your cloud provider (or other d
 
 ```hcl
 # This reads information about an existing VPC
+
 data "aws_vpc" "main" {
   tags = {
     Name = "production-vpc"

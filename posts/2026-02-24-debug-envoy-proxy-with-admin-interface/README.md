@@ -16,6 +16,7 @@ The admin interface is only accessible from within the pod (it binds to localhos
 
 ```bash
 # Direct access from the pod
+
 kubectl exec <pod-name> -c istio-proxy -- curl -s localhost:15000/help
 
 # Port forward for browser access

@@ -184,6 +184,7 @@ from pymongo import MongoClient
 from pymongo.pool import PoolOptions
 
 # Python driver pool configuration
+
 client = MongoClient(
     'mongodb://localhost:27017/mydb',
     # Maximum connections per server

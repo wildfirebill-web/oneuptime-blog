@@ -40,6 +40,7 @@ Here is the variable definition in your playbook or vars file:
 
 ```yaml
 # vars/servers.yml - List of servers with environment labels
+
 servers:
   - name: web01
     environment: production

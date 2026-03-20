@@ -2,18 +2,19 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, API, Endpoints, Automation, REST API
+Tags: Portainer, API, Endpoint, Automation, REST API
 
 Description: Learn how to list and filter all Portainer environments (endpoints) using the REST API for automation and scripting.
 
 ## Overview
 
-In Portainer's API, "endpoints" refer to what the UI calls "environments" — your connected Docker, Kubernetes, and Swarm targets. The `/api/endpoints` endpoint lets you query them programmatically.
+In Portainer's API, "endpoints" refer to what the UI calls "environments" - your connected Docker, Kubernetes, and Swarm targets. The `/api/endpoints` endpoint lets you query them programmatically.
 
 ## Basic Listing
 
 ```bash
 # List all endpoints
+
 curl -s "https://portainer.mycompany.com/api/endpoints" \
   -H "Authorization: Bearer ${API_TOKEN}" | jq '.'
 ```

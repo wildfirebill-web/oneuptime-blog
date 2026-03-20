@@ -29,6 +29,7 @@ Maven resolves the conflict using "nearest wins" strategy. If `module-web` is th
 mvn dependency:tree -Dincludes=io.opentelemetry
 
 # Look for conflicting versions:
+
 # [INFO] \- io.opentelemetry:opentelemetry-api:jar:1.30.0:compile
 # [INFO] \- io.opentelemetry:opentelemetry-sdk:jar:1.34.0:compile
 ```

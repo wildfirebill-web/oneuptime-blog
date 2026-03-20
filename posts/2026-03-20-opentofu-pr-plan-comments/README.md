@@ -20,6 +20,7 @@ Learn how to automatically post OpenTofu plan output as pull request comments fo
 
 ```bash
 # Verify OpenTofu installation
+
 tofu version
 
 # Set up required environment variables

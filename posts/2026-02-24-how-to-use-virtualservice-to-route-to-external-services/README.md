@@ -384,6 +384,7 @@ Your application connects to `external-db` as if it were an internal Kubernetes 
 
 ```bash
 # Check the ServiceEntry was registered
+
 kubectl get serviceentries -n default
 
 # Verify Istio can resolve the external host

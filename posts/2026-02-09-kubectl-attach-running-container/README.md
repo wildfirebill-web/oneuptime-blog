@@ -97,6 +97,7 @@ Attach to a Redis container and run commands:
 kubectl attach -it redis-pod
 
 # Now you can type Redis commands
+
 > SET mykey "Hello"
 OK
 > GET mykey

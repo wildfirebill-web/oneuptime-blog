@@ -20,6 +20,7 @@ An Ingress resource on its own does nothing. You need an Ingress controller runn
 
 ```hcl
 # providers.tf
+
 terraform {
   required_version = ">= 1.0"
 

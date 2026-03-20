@@ -24,6 +24,7 @@ Understanding Calico's MAC address assignment is important for debugging layer-2
 
 ```bash
 # View MAC address of a pod interface
+
 kubectl exec test-pod -- ip link show eth0
 
 # View the corresponding veth on the host

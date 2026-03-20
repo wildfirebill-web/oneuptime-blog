@@ -150,6 +150,7 @@ sudo fio --name=read_test --directory=/fast --rw=randread --bs=4K \
 
 ```bash
 # First run (cache cold)
+
 sudo fio --name=read_test --directory=/fast --rw=randread --bs=4K \
   --size=2G --numjobs=4 --runtime=60 --time_based --group_reporting
 

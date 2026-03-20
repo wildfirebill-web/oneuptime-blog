@@ -32,6 +32,7 @@ Before diving into specific fixes, run these diagnostic commands:
 
 ```bash
 # List all configured repositories
+
 argocd repo list
 
 # Test a specific repository

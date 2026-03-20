@@ -12,7 +12,7 @@ Docker includes an embedded DNS server that runs at `127.0.0.11` inside every co
 
 ## How Docker DNS Works
 
-```
+```bash
 Container A wants to reach "database"
     │
     ├─ Container checks /etc/resolv.conf
@@ -29,6 +29,7 @@ Container A wants to reach "database"
 
 ```bash
 # View DNS settings inside a container
+
 docker exec my_container cat /etc/resolv.conf
 
 # Docker injects:
@@ -221,4 +222,4 @@ docker run --rm --net=host nicolaka/netshoot tcpdump -n port 53
 
 ## Conclusion
 
-Docker's embedded DNS makes container service discovery automatic and reliable. For most use cases, the defaults work perfectly — service names resolve to container IPs within the same network. Custom DNS servers add ad blocking (Pi-hole), split-horizon DNS keeps internal names private, and extra_hosts handles edge cases where a DNS server isn't available. Portainer's container exec feature makes DNS debugging straightforward without SSH access.
+Docker's embedded DNS makes container service discovery automatic and reliable. For most use cases, the defaults work perfectly - service names resolve to container IPs within the same network. Custom DNS servers add ad blocking (Pi-hole), split-horizon DNS keeps internal names private, and extra_hosts handles edge cases where a DNS server isn't available. Portainer's container exec feature makes DNS debugging straightforward without SSH access.

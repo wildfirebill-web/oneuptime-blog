@@ -23,6 +23,7 @@ WireGuard kernel support is built into the RHEL kernel. You just need the usersp
 
 ```bash
 # Enable EPEL if not already done
+
 sudo dnf install -y epel-release
 
 # Install WireGuard tools

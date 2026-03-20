@@ -68,6 +68,7 @@ Before migrating, thoroughly assess your environment.
 
 ```bash
 # Count total iptables rules
+
 sudo iptables -L -n | wc -l
 sudo iptables -t nat -L -n | wc -l
 sudo iptables -t mangle -L -n | wc -l

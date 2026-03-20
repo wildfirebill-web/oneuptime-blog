@@ -29,6 +29,7 @@ data "external" "example" {
 }
 
 # Use the result
+
 output "result" {
   value = data.external.example.result
 }

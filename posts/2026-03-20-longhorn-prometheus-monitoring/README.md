@@ -32,6 +32,7 @@ If using the Prometheus Operator (e.g., via kube-prometheus-stack), create a Ser
 
 ```yaml
 # longhorn-servicemonitor.yaml
+
 apiVersion: monitoring.coreos.com/v1
 kind: ServiceMonitor
 metadata:

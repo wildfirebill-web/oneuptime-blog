@@ -117,6 +117,7 @@ Once it returns `RUNNING`, you're good to go. The describe command also gives yo
 
 ```bash
 # Get the broker endpoints
+
 aws mq describe-broker --broker-id <broker-id> \
   --query 'BrokerInstances[*].Endpoints'
 ```

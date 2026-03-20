@@ -41,6 +41,7 @@ output "db_uri" {
 
 ```hcl
 # Create a database within the cluster
+
 resource "digitalocean_database_db" "app" {
   cluster_id = digitalocean_database_cluster.postgres.id
   name       = "appdb"

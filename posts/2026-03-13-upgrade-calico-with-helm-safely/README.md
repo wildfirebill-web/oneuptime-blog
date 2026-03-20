@@ -30,6 +30,7 @@ Validate the current Helm release and cluster state.
 
 ```bash
 # Check current Calico Helm release
+
 helm list -n tigera-operator
 
 # View the current release values

@@ -71,6 +71,7 @@ Test the policy:
 
 ```bash
 # Fails validation
+
 kubectl run nginx --image=nginx
 
 # Passes validation

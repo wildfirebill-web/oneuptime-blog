@@ -28,6 +28,7 @@ The fastest way to get ADC working locally is with your own user credentials:
 
 ```bash
 # Set up ADC with your Google account
+
 gcloud auth application-default login
 ```
 

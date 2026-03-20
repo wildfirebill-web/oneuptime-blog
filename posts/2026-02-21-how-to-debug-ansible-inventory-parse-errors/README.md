@@ -29,6 +29,7 @@ The first thing to do is verify what Ansible sees in your inventory:
 
 ```bash
 # List all hosts Ansible can see
+
 ansible-inventory --list
 
 # List hosts in a specific inventory file

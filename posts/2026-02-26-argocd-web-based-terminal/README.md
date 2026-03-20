@@ -35,6 +35,7 @@ The web-based terminal is disabled by default for security reasons. You need to 
 
 ```yaml
 # Edit the argocd-cm ConfigMap
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

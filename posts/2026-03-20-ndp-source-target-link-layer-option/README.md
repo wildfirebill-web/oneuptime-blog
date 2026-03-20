@@ -12,7 +12,7 @@ The Source Link-Layer Address (SLLA, Type 1) and Target Link-Layer Address (TLLA
 
 ## Option Format
 
-```
+```text
 Source Link-Layer Address (Type 1) and Target Link-Layer Address (Type 2):
 
  0                   1                   2                   3
@@ -32,7 +32,7 @@ The Length field adjusts accordingly for non-6-byte addresses
 
 ## When Each Option Is Included
 
-```
+```text
 Source Link-Layer Address (Type 1):
   In NS: MUST be included (unless NS source is :: for DAD)
          Reason: Allows target to update neighbor cache without separate NA
@@ -100,6 +100,7 @@ def build_tlla_option(mac_address: str) -> bytes:
     return struct.pack("!BB", 2, 1) + mac_bytes
 
 # Example
+
 slla = build_slla_option("00:11:22:33:44:55")
 parsed = parse_slla_tlla(slla)
 print(f"SLLA: type={parsed['type_name']}, MAC={parsed['mac_address']}")
@@ -111,7 +112,7 @@ print(f"TLLA: type={parsed['type_name']}, MAC={parsed['mac_address']}")
 
 ## Neighbor Cache Update from SLLA/TLLA
 
-```
+```text
 When a node receives NDP with SLLA/TLLA:
 
 Receiving NS with SLLA:

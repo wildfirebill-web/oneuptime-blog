@@ -56,6 +56,7 @@ The filter plugin:
 
 ```python
 # plugins/filter/network_utils.py
+
 import ipaddress
 import re
 

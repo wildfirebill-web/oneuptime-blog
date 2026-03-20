@@ -25,6 +25,7 @@ resource "aws_cloudwatch_event_bus" "application" {
 
 ```hcl
 # Allow another AWS account to publish events to this bus
+
 resource "aws_cloudwatch_event_bus_policy" "cross_account" {
   event_bus_name = aws_cloudwatch_event_bus.application.name
 

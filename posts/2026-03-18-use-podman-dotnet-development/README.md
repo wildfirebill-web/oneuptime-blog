@@ -22,6 +22,7 @@ Microsoft publishes official .NET images in two main categories:
 
 ```bash
 # SDK image - includes the compiler, CLI tools, and runtime (for development)
+
 podman pull mcr.microsoft.com/dotnet/sdk:8.0
 
 # ASP.NET runtime image - runtime only, for production (no compiler)

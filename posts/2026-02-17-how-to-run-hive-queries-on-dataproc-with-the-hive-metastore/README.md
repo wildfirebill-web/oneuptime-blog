@@ -27,6 +27,7 @@ The Dataproc Metastore service runs as a standalone resource in your project. Cr
 
 ```bash
 # Create a managed Dataproc Metastore service
+
 gcloud metastore services create my-hive-metastore \
   --location=us-central1 \
   --tier=DEVELOPER \

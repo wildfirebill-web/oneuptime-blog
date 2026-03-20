@@ -8,12 +8,13 @@ Description: Learn how to capture packets on a remote Linux server using tcpdump
 
 ## The Remote Capture Challenge
 
-When troubleshooting network issues on a remote server, you need to capture packets where the traffic flows — not on your laptop. The solution is to run tcpdump on the remote server and pipe the capture through SSH to Wireshark on your local machine.
+When troubleshooting network issues on a remote server, you need to capture packets where the traffic flows - not on your laptop. The solution is to run tcpdump on the remote server and pipe the capture through SSH to Wireshark on your local machine.
 
 ## Step 1: Stream Remote Capture to Local Wireshark
 
 ```bash
 # Run tcpdump on remote server, pipe through SSH to local Wireshark
+
 # This streams live packets without writing files on the server
 
 # Basic remote capture
@@ -51,7 +52,7 @@ ssh user@remote-server "sudo timeout 30 tcpdump -i eth0 -n -w - 'port 8080'" \
 ## Step 3: Use SSH Config for Convenience
 
 ```bash
-# ~/.ssh/config — set up reusable server config
+# ~/.ssh/config - set up reusable server config
 cat >> ~/.ssh/config << 'EOF'
 Host myserver
     HostName 192.168.1.100
@@ -91,7 +92,7 @@ ssh user@remote-server "sudo tcpdump -i any -n -w - 'not port 22'" | wireshark -
 # Capture only IPv4 traffic
 ssh user@remote-server "sudo tcpdump -i eth0 -n -w - 'ip and not port 22'" | wireshark -k -i -
 
-# Higher packet rate — increase buffer
+# Higher packet rate - increase buffer
 ssh user@remote-server "sudo tcpdump -i eth0 -n -B 65536 -w - 'not port 22'" | wireshark -k -i -
 # -B 65536 = 64MB kernel buffer to reduce drops
 ```
@@ -100,7 +101,7 @@ ssh user@remote-server "sudo tcpdump -i eth0 -n -B 65536 -w - 'not port 22'" | w
 
 ```bash
 #!/bin/bash
-# capture-on-remote.sh — start capture when issue detected
+# capture-on-remote.sh - start capture when issue detected
 
 REMOTE="user@192.168.1.100"
 LOCAL_DIR="/tmp/captures"

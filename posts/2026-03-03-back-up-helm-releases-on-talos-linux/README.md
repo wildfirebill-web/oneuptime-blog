@@ -20,6 +20,7 @@ You can see these secrets by running:
 
 ```bash
 # List all Helm release secrets in a namespace
+
 kubectl get secrets -n my-namespace -l owner=helm
 ```
 

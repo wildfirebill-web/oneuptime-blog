@@ -22,6 +22,7 @@ Unattached EBS volumes continue to incur charges even though nothing is using th
 
 ```hcl
 # Lambda function to detect unattached EBS volumes
+
 resource "aws_lambda_function" "find_unused_ebs" {
   filename         = data.archive_file.unused_ebs.output_path
   function_name    = "find-unused-ebs-volumes"

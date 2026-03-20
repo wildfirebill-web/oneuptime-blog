@@ -20,6 +20,7 @@ For example, if you have a string like this:
 
 ```hcl
 # This is what a typical tfvars string looks like
+
 region = "us-east-1"
 instance_type = "t3.medium"
 enable_monitoring = true

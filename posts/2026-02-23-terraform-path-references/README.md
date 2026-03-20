@@ -22,6 +22,7 @@ Here is what each one resolves to:
 
 ```hcl
 # Print all three to see the difference
+
 output "module_path" {
   value = path.module
 }

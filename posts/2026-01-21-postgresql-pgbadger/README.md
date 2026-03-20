@@ -14,6 +14,7 @@ pgBadger is a powerful log analyzer that generates detailed reports from Postgre
 
 ```bash
 # Ubuntu/Debian
+
 sudo apt install pgbadger
 
 # From CPAN

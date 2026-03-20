@@ -14,6 +14,7 @@ Grafana provides visualization for metrics, logs, and traces. OpenTofu deploys G
 
 ```hcl
 # main.tf - Deploy Grafana via official Helm chart
+
 resource "random_password" "grafana_admin" {
   length  = 24
   special = false

@@ -18,6 +18,7 @@ The simplest approach is to use the pre-built Code OSS image that Google provide
 
 ```bash
 # Create a workstation configuration with Code OSS as the IDE
+
 gcloud workstations configs create vscode-config \
     --project=my-project \
     --region=us-central1 \

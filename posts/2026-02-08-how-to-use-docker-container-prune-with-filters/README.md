@@ -18,6 +18,7 @@ Without any filters, `docker container prune` removes every stopped container:
 
 ```bash
 # Remove all stopped containers
+
 docker container prune
 ```
 

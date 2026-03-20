@@ -551,6 +551,7 @@ Enable these Prometheus metrics to monitor topology-aware routing:
 
 ```yaml
 # kube-proxy metrics
+
 - kube_proxy_sync_proxy_rules_duration_seconds
 - kube_proxy_sync_proxy_rules_endpoint_changes_total
 

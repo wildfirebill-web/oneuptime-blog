@@ -24,6 +24,7 @@ K3s is a lightweight Kubernetes distribution ideal for Raspberry Pi. Install it 
 
 ```bash
 # Install K3s on the primary (server) node
+
 curl -sfL https://get.k3s.io | sh -
 
 # Get the node token for joining worker nodes

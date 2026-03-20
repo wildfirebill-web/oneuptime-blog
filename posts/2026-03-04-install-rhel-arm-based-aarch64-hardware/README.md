@@ -14,6 +14,7 @@ RHEL provides full support for the aarch64 (ARM 64-bit) architecture, covering s
 
 ```bash
 # Log into the Red Hat Customer Portal
+
 # Navigate to: https://access.redhat.com/downloads/content/rhel
 # Select "Red Hat Enterprise Linux 9" and architecture "aarch64"
 # Download the DVD ISO or Boot ISO

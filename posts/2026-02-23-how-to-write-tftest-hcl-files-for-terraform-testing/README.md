@@ -16,6 +16,7 @@ A `.tftest.hcl` file can contain these top-level blocks:
 
 ```hcl
 # Provider configurations for tests
+
 provider "aws" {
   region = "us-east-1"
 }

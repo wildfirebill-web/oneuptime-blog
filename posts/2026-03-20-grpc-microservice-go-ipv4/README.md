@@ -8,7 +8,7 @@ Description: Learn how to build a production-ready gRPC microservice in Go that 
 
 ## Project Structure
 
-```
+```text
 greeter/
 ├── proto/hello.proto
 ├── main.go
@@ -156,4 +156,4 @@ spec:
 
 ## Conclusion
 
-A production gRPC microservice in Go registers the application servicer, the standard health service, and gRPC reflection. Use `net.Listen("tcp4", addr)` to explicitly restrict to IPv4. Signal handlers set the health status to `NOT_SERVING` before calling `GracefulStop` to drain traffic — this is essential for zero-downtime rolling deployments. Configure Kubernetes readiness and liveness probes using `grpc_health_probe` to integrate with the cluster's health checking infrastructure.
+A production gRPC microservice in Go registers the application servicer, the standard health service, and gRPC reflection. Use `net.Listen("tcp4", addr)` to explicitly restrict to IPv4. Signal handlers set the health status to `NOT_SERVING` before calling `GracefulStop` to drain traffic - this is essential for zero-downtime rolling deployments. Configure Kubernetes readiness and liveness probes using `grpc_health_probe` to integrate with the cluster's health checking infrastructure.

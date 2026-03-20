@@ -16,6 +16,7 @@ NeuVector's scanner component performs vulnerability assessment on container ima
 
 ```bash
 # Check if the NeuVector scanner pod is running
+
 kubectl get pods -n neuvector -l app=neuvector-scanner-pod
 
 # Check scanner logs for errors
@@ -141,5 +142,5 @@ curl -sk -X POST \
 
 - Run at least 3 scanner replicas in production to handle concurrent scan requests.
 - Ensure the scanner can reach `nvd.nist.gov` and `registry.hub.docker.com` for CVE updates.
-- Set up alerts for CVE database staleness — if the DB hasn't updated in 24 hours, something is wrong.
-- Allocate at least 1GB RAM per scanner pod — scanning large images requires significant memory.
+- Set up alerts for CVE database staleness - if the DB hasn't updated in 24 hours, something is wrong.
+- Allocate at least 1GB RAM per scanner pod - scanning large images requires significant memory.

@@ -33,6 +33,7 @@ After applying any fix, the calico-node pod must be restarted cleanly. A fresh s
 
 ```bash
 # Get crash reason from previous container
+
 NODE_POD=<calico-node-pod-name>
 kubectl logs $NODE_POD -n kube-system --previous -c calico-node | tail -30
 ```

@@ -20,6 +20,7 @@ First, create the secret:
 
 ```bash
 # Create the secret
+
 echo -n "my-database-password" | podman secret create db_password -
 ```
 

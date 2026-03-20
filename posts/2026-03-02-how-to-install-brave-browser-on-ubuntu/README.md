@@ -16,6 +16,7 @@ Brave Software maintains their own APT repository. The installation process adds
 
 ```bash
 # Install prerequisites
+
 sudo apt update
 sudo apt install -y curl gpg
 

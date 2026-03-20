@@ -38,6 +38,7 @@ spec:
 calicoctl apply -f ippool-ipip.yaml
 
 # Verify IPIP tunnel interface
+
 ip link show tunl0
 ip addr show tunl0
 ```

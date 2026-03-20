@@ -20,6 +20,7 @@ Traefik can run as a standalone binary, in Docker, or via a package manager. The
 
 ```bash
 # Download the latest Traefik release (check https://github.com/traefik/traefik/releases)
+
 TRAEFIK_VERSION="v3.1.0"
 wget "https://github.com/traefik/traefik/releases/download/${TRAEFIK_VERSION}/traefik_${TRAEFIK_VERSION}_linux_amd64.tar.gz"
 

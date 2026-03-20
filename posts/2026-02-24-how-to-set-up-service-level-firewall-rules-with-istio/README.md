@@ -335,6 +335,7 @@ Test each allowed path:
 
 ```bash
 # frontend -> order-service (allowed)
+
 kubectl exec deploy/frontend -c frontend -- curl -s -o /dev/null -w "%{http_code}" -X GET http://order-service.default.svc.cluster.local/api/orders/list
 # Expected: 200
 

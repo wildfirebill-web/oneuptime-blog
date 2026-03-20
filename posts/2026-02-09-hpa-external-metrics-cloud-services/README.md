@@ -24,6 +24,7 @@ KEDA (Kubernetes Event Driven Autoscaling) provides the easiest way to use exter
 
 ```bash
 # Install KEDA using Helm
+
 helm repo add kedacore https://kedacore.github.io/charts
 helm repo update
 

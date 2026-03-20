@@ -117,6 +117,7 @@ The namespace selector on the webhook determines which namespaces get sidecar in
 
 ```bash
 # Check if any non-admin users can label namespaces
+
 kubectl auth can-i update namespaces --as=system:serviceaccount:default:default
 ```
 

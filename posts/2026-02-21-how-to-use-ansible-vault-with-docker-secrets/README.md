@@ -20,6 +20,7 @@ Here is a quick manual example to set the stage:
 
 ```bash
 # Create a Docker secret from the command line
+
 echo -n "SuperSecretPassword" | docker secret create db_password -
 
 # List existing secrets

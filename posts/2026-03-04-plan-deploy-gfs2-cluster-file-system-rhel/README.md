@@ -19,6 +19,7 @@ You need at least two RHEL nodes with:
 
 ```bash
 # Install required packages on all nodes
+
 sudo dnf install -y gfs2-utils dlm lvm2-lockd
 
 # Enable the high-availability repository if needed

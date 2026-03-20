@@ -28,6 +28,7 @@ When a canary rollout is created, you can inspect its phases to understand the c
 
 ```bash
 # Describe the rollout to see all phases and their status
+
 gcloud deploy rollouts describe rel-v2-to-prod-0001 \
   --delivery-pipeline=my-app-pipeline \
   --release=rel-v2 \

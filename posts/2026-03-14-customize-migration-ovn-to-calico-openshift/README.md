@@ -30,6 +30,7 @@ Before customizing the migration, you need a complete picture of your current OV
 
 ```bash
 # Export all NetworkPolicy resources across all namespaces
+
 oc get networkpolicy --all-namespaces -o yaml > ovn-network-policies.yaml
 
 # Export OVN-specific EgressFirewall resources

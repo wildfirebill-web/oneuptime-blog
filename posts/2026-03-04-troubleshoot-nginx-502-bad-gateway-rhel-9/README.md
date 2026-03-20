@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, NGINX, 502, Troubleshooting, Linux
+Tags: RHEL, Nginx, 502, Troubleshooting, Linux
 
 Description: A systematic approach to diagnosing and fixing 502 Bad Gateway errors when using Nginx as a reverse proxy on RHEL.
 
@@ -22,6 +22,7 @@ This is always the first step. The error log tells you exactly what went wrong:
 
 ```bash
 # Check the last 30 lines of the error log
+
 sudo tail -30 /var/log/nginx/error.log
 ```
 

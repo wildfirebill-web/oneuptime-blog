@@ -50,6 +50,7 @@ flowchart TB
 
 ```bash
 # Create a compacted topic with recommended settings
+
 kafka-topics.sh --create \
   --bootstrap-server localhost:9092 \
   --topic user-profiles \

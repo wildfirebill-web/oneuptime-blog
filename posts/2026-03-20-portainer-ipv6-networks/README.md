@@ -8,7 +8,7 @@ Description: Learn how to enable and configure IPv6 networking for Docker contai
 
 ## Introduction
 
-IPv6 support in Docker enables containers to communicate using IPv6 addresses, participate in IPv6-only networks, and operate in dual-stack environments where both IPv4 and IPv6 are available. This is increasingly important as IPv4 address space is exhausted and many networks and services prefer or require IPv6. Docker requires explicit IPv6 enablement — it is off by default.
+IPv6 support in Docker enables containers to communicate using IPv6 addresses, participate in IPv6-only networks, and operate in dual-stack environments where both IPv4 and IPv6 are available. This is increasingly important as IPv4 address space is exhausted and many networks and services prefer or require IPv6. Docker requires explicit IPv6 enablement - it is off by default.
 
 ## Prerequisites
 
@@ -22,6 +22,7 @@ Edit the Docker daemon configuration:
 
 ```bash
 # Edit /etc/docker/daemon.json:
+
 sudo tee /etc/docker/daemon.json << 'EOF'
 {
   "ipv6": true,
@@ -153,7 +154,7 @@ curl -6 http://[fd00:cafe::10]/
 Nginx needs explicit IPv6 listen directives:
 
 ```nginx
-# nginx.conf — listen on both IPv4 and IPv6
+# nginx.conf - listen on both IPv4 and IPv6
 server {
     listen 80;          # IPv4
     listen [::]:80;     # IPv6

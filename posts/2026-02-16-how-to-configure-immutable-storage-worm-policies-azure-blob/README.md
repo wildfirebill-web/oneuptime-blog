@@ -51,6 +51,7 @@ Immutability policies are set at the container level. All blobs in the container
 
 ```bash
 # Create a container for immutable data
+
 az storage container create \
   --account-name mystorageaccount \
   --name compliance-data

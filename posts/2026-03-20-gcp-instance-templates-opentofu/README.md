@@ -14,6 +14,7 @@ GCP Instance Templates define the configuration for VM instances in Managed Inst
 
 ```hcl
 # main.tf - Instance template for web server fleet
+
 resource "google_compute_instance_template" "web_template" {
   name_prefix  = "web-server-template-"
   machine_type = "e2-medium"

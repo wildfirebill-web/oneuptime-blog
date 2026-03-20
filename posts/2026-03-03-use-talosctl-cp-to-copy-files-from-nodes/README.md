@@ -22,6 +22,7 @@ To copy a file from a node to your local machine:
 
 ```bash
 # Copy a file from a node
+
 talosctl cp --nodes 192.168.1.10 /var/log/audit/audit.log ./audit.log
 ```
 

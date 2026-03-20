@@ -209,6 +209,7 @@ def analyze_processing_bottleneck(consumer_traces):
 
 ```python
 # Example: batch processing to reduce per-message overhead
+
 class BatchProcessor:
     def __init__(self, batch_size=100, flush_interval_ms=1000):
         self.batch = []

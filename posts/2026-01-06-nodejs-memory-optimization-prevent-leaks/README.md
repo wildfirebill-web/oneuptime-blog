@@ -342,6 +342,7 @@ function trackObject(obj, id) {
 
 ```bash
 # See GC activity
+
 node --trace-gc app.js
 
 # Output:

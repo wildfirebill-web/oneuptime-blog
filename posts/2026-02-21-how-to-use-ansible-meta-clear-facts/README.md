@@ -16,6 +16,7 @@ Consider a playbook that installs a new kernel, reboots the host, and then needs
 
 ```yaml
 # The problem: stale facts after system changes
+
 ---
 - name: Kernel upgrade (stale fact problem)
   hosts: all

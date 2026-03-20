@@ -324,6 +324,7 @@ If the external authorizer allows a request, it still needs to pass DENY and ALL
 
 ```yaml
 # External auth for complex business logic
+
 apiVersion: security.istio.io/v1
 kind: AuthorizationPolicy
 metadata:

@@ -1,4 +1,4 @@
-# How to Configure RKE2 Networking with Cilium
+# How to Configure RKE2 Networking with Cilium - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -19,6 +19,7 @@ Cilium is a modern CNI plugin that uses Linux eBPF (extended Berkeley Packet Fil
 
 ```yaml
 # /etc/rancher/rke2/config.yaml - Configure Cilium as CNI
+
 cni: cilium
 
 # Since Cilium handles kube-proxy functionality via eBPF,

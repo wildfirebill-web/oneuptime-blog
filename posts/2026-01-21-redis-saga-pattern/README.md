@@ -307,6 +307,7 @@ class SagaError(Exception):
     pass
 
 # Order Saga Example
+
 def create_order_saga(orchestrator: SagaOrchestrator,
                       order_data: Dict) -> Saga:
     """Create an order processing saga."""

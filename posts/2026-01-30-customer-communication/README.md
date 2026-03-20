@@ -127,6 +127,7 @@ Structure your status page components to match how customers experience your pro
 
 ```yaml
 # Status page component hierarchy
+
 components:
   - name: "Web Application"
     children:

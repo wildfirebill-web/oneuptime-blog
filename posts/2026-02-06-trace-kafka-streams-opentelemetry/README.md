@@ -37,6 +37,7 @@ The OpenTelemetry Java agent provides automatic instrumentation for Kafka client
 
 ```bash
 # Start Kafka Streams application with OpenTelemetry agent
+
 java -javaagent:/opt/opentelemetry-javaagent.jar \
   -Dotel.service.name=order-stream-processor \
   -Dotel.exporter.otlp.endpoint=http://otel-collector:4317 \

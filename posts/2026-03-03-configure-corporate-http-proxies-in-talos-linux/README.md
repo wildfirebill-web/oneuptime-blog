@@ -18,6 +18,7 @@ Proxy settings in Talos Linux are configured as machine environment variables:
 
 ```yaml
 # machine-config.yaml
+
 machine:
   env:
     http_proxy: "http://proxy.corp.internal:3128"

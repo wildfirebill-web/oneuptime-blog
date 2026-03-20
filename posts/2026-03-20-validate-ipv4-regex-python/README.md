@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Python, Regex, IPv4, Validation, re module, Networking
+Tags: Python, Regex, IPv4, Validation, Re module, Networking
 
 Description: Learn how to validate IPv4 address strings using regular expressions in Python, with progressively stricter patterns and best practices.
 
@@ -12,6 +12,7 @@ Description: Learn how to validate IPv4 address strings using regular expression
 import re
 
 # Naive pattern: 4 groups of 1-3 digits separated by dots
+
 # Does NOT validate octet range (0-255)
 NAIVE_IPV4 = re.compile(r"^\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}$")
 
@@ -81,7 +82,7 @@ print(f"Found IPs: {ips}")  # ['192.168.1.50', '10.0.0.1']
 import ipaddress
 
 def is_valid_ipv4(s: str) -> bool:
-    """More reliable than regex — handles all edge cases correctly."""
+    """More reliable than regex - handles all edge cases correctly."""
     try:
         ipaddress.IPv4Address(s)
         return True
@@ -116,4 +117,4 @@ print(f"ipaddress:  {ipaddress_time:.3f}s")
 
 ## Conclusion
 
-For simple IP validation in Python, a strict regex validates the 0-255 octet range. However, `ipaddress.IPv4Address` is the preferred production approach—it's correct, handles all edge cases, and is a standard library function. Use regex when you need to extract IPs from text (log files, emails, HTML) where `ipaddress` can't be used directly on substrings.
+For simple IP validation in Python, a strict regex validates the 0-255 octet range. However, `ipaddress.IPv4Address` is the preferred production approach-it's correct, handles all edge cases, and is a standard library function. Use regex when you need to extract IPs from text (log files, emails, HTML) where `ipaddress` can't be used directly on substrings.

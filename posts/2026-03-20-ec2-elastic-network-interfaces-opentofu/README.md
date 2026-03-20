@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, AWS, EC2, ENI, Networking, Infrastructure as Code, Multi-homed
+Tags: OpenTofu, AWS, EC2, ENI, Networking, Infrastructure as Code, Multi-Homed
 
 Description: Learn how to create and attach EC2 Elastic Network Interfaces (ENIs) using OpenTofu to enable multi-homed instances, static IP addresses, and network appliance configurations.
 
@@ -20,6 +20,7 @@ Elastic Network Interfaces (ENIs) are virtual network cards that you can create 
 
 ```hcl
 # Create an ENI in a private subnet with a static private IP
+
 resource "aws_network_interface" "primary" {
   subnet_id   = var.private_subnet_id
   private_ips = ["10.0.1.50"]  # Optional: specify static IP
@@ -136,4 +137,4 @@ tofu apply
 
 ## Conclusion
 
-Elastic Network Interfaces provide flexible networking for EC2 instances, enabling management separation, network appliance configurations, and elastic IP failover. For high-availability patterns, create ENIs with attached EIPs in your configuration—when an instance fails, terminate it and launch a replacement that reattaches the same ENI, preserving IP addresses and security group settings.
+Elastic Network Interfaces provide flexible networking for EC2 instances, enabling management separation, network appliance configurations, and elastic IP failover. For high-availability patterns, create ENIs with attached EIPs in your configuration-when an instance fails, terminate it and launch a replacement that reattaches the same ENI, preserving IP addresses and security group settings.

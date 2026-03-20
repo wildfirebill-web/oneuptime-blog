@@ -153,6 +153,7 @@ Catch problems before they even get committed:
 
 ```yaml
 # .pre-commit-config.yaml
+
 repos:
   - repo: local
     hooks:

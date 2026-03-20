@@ -24,6 +24,7 @@ Before promoting a server, install the AD DS role and configure DNS.
 
 ```yaml
 # dc-prerequisites.yml - Prepare a server for DC promotion
+
 ---
 - name: Prepare server for DC promotion
   hosts: new_dc

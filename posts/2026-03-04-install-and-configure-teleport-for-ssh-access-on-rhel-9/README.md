@@ -20,6 +20,7 @@ Teleport for SSH Access can be installed and configured on RHEL to provide robus
 
 ```bash
 # Update the system first
+
 sudo dnf update -y
 
 # Install the required packages

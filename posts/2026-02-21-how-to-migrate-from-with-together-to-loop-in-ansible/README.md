@@ -18,6 +18,7 @@ The `with_together` keyword paired up elements from multiple lists by their inde
 
 ```yaml
 # OLD: with_together pairs lists element-by-element
+
 - name: Create users with specific UIDs
   ansible.builtin.user:
     name: "{{ item.0 }}"

@@ -42,6 +42,7 @@ Create an IP pool for the Istio Ingress Gateway:
 
 ```yaml
 # metallb-istio-pool.yaml
+
 # Reserve IPs for the Istio Ingress Gateway.
 apiVersion: metallb.io/v1beta1
 kind: IPAddressPool

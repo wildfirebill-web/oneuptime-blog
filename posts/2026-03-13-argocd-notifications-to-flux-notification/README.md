@@ -24,6 +24,7 @@ This guide walks through converting common ArgoCD notification configurations to
 
 ```bash
 # Export existing notification config
+
 kubectl get configmap argocd-notifications-cm -n argocd -o yaml > argocd-notifications-backup.yaml
 
 # Export notification secrets

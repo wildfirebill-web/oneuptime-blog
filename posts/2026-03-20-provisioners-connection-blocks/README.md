@@ -73,7 +73,7 @@ resource "aws_instance" "app" {
 resource "aws_instance" "private_app" {
   ami           = var.ami_id
   instance_type = "t3.micro"
-  subnet_id     = aws_subnet.private.id  # Private subnet — no public IP
+  subnet_id     = aws_subnet.private.id  # Private subnet - no public IP
 
   connection {
     type        = "ssh"
@@ -207,4 +207,4 @@ connection {
 
 ## Conclusion
 
-Connection blocks are required for `remote-exec` and `file` provisioners. Use SSH for Linux instances with key-based authentication, WinRM for Windows, and the `bastion_host` parameters when instances are in private subnets. Always use variables or secrets management for private keys — never hardcode them. Set appropriate timeouts for instances that take time to boot. Where possible, prefer user_data or AWS Systems Manager over connection-based provisioners.
+Connection blocks are required for `remote-exec` and `file` provisioners. Use SSH for Linux instances with key-based authentication, WinRM for Windows, and the `bastion_host` parameters when instances are in private subnets. Always use variables or secrets management for private keys - never hardcode them. Set appropriate timeouts for instances that take time to boot. Where possible, prefer user_data or AWS Systems Manager over connection-based provisioners.

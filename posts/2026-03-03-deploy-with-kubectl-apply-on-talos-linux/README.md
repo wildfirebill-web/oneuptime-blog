@@ -18,6 +18,7 @@ Make sure your workstation is configured to talk to your Talos Linux cluster:
 
 ```bash
 # Generate kubeconfig from Talos
+
 talosctl kubeconfig --nodes <control-plane-ip>
 
 # Verify cluster access

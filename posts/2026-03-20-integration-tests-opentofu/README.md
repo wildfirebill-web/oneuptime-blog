@@ -8,7 +8,7 @@ Description: Learn how to write integration tests for OpenTofu configurations us
 
 ## Introduction
 
-Integration tests use `command = apply` in OpenTofu test files to create real infrastructure, validate it, and destroy it. Unlike unit tests with mock providers, integration tests verify that your module works with the actual cloud provider — catching API changes, permission issues, and configuration errors that mocks cannot detect.
+Integration tests use `command = apply` in OpenTofu test files to create real infrastructure, validate it, and destroy it. Unlike unit tests with mock providers, integration tests verify that your module works with the actual cloud provider - catching API changes, permission issues, and configuration errors that mocks cannot detect.
 
 ## Basic Integration Test
 
@@ -16,6 +16,7 @@ Integration tests use `command = apply` in OpenTofu test files to create real in
 # tests/integration/vpc_integration.tftest.hcl
 
 # No mock_provider - use real AWS provider
+
 provider "aws" {
   region = "us-east-1"
 }

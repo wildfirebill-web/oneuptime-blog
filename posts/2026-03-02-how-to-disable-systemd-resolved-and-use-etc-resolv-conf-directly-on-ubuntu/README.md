@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Ubuntu, DNS, Systemd-resolved, Networking, Resolv.conf
+Tags: Ubuntu, DNS, Systemd-resolved, Networking, resolv.conf
 
 Description: Step-by-step instructions for disabling systemd-resolved on Ubuntu and configuring /etc/resolv.conf for direct DNS resolution without the stub resolver.
 
@@ -27,6 +27,7 @@ Before making changes, understand what you have:
 
 ```bash
 # Check if systemd-resolved is running
+
 systemctl status systemd-resolved
 
 # Check what resolv.conf currently is

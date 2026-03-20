@@ -41,6 +41,7 @@ If there is an `oidc.config` or `dex.config` section, SSO is configured. To disa
 
 ```bash
 # Remove OIDC configuration
+
 kubectl -n argocd patch configmap argocd-cm --type json -p '[
   {"op": "remove", "path": "/data/oidc.config"}
 ]'

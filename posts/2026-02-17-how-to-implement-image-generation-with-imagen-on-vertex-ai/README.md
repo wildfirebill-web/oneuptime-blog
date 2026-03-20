@@ -34,6 +34,7 @@ Enable the required API with this command:
 
 ```bash
 # Enable the Vertex AI API for your project
+
 gcloud services enable aiplatform.googleapis.com --project=your-project-id
 ```
 

@@ -36,6 +36,7 @@ When a broker fails, Kafka automatically elects new leaders for affected partiti
 # server.properties
 
 # Time before a broker is considered dead
+
 zookeeper.session.timeout.ms=18000
 
 # For KRaft mode

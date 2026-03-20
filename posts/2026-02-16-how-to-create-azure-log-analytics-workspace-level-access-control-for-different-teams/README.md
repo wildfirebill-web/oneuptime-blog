@@ -28,6 +28,7 @@ First, verify your workspace access control mode:
 
 ```bash
 # Check the current access control mode
+
 az monitor log-analytics workspace show \
   --resource-group myRG \
   --workspace-name myWorkspace \

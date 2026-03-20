@@ -18,6 +18,7 @@ Run the following command to inspect the HelmRepository status:
 
 ```bash
 # Check the status and conditions of a specific HelmRepository
+
 kubectl get helmrepository <repo-name> -n flux-system -o yaml
 ```
 

@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: OpenTofu, JSON Output, Automation, CI/CD, Infrastructure as Code, Scripting
 
-Description: Learn how to use OpenTofu's JSON output formats for plan files, state, and provider schemas — enabling automation, CI/CD integration, and programmatic processing of infrastructure changes.
+Description: Learn how to use OpenTofu's JSON output formats for plan files, state, and provider schemas - enabling automation, CI/CD integration, and programmatic processing of infrastructure changes.
 
 ## Introduction
 
@@ -14,6 +14,7 @@ OpenTofu provides JSON-formatted output for plans, state, provider schemas, and 
 
 ```bash
 # Generate a plan and convert to JSON
+
 tofu plan -out=tfplan.binary
 tofu show -json tfplan.binary > tfplan.json
 
@@ -26,7 +27,7 @@ cat tfplan.json | jq 'keys'
 
 ### resource_changes
 
-The most useful section — shows what will change:
+The most useful section - shows what will change:
 
 ```bash
 # Show all planned changes
@@ -118,7 +119,7 @@ cat provider-schema.json | jq '
 
 ```bash
 #!/bin/bash
-# scripts/analyze-plan.sh — analyze a plan before applying
+# scripts/analyze-plan.sh - analyze a plan before applying
 
 set -euo pipefail
 

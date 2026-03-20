@@ -28,6 +28,7 @@ This guide covers the Django Dockerfile, the migration Job pattern, PostgreSQL c
 
 ```dockerfile
 # Dockerfile
+
 FROM python:3.12-slim AS base
 ENV PYTHONDONTWRITEBYTECODE=1 \
     PYTHONUNBUFFERED=1

@@ -26,6 +26,7 @@ Implement strict communication boundaries for a frontend/backend/database archit
 
 ```yaml
 # Allow ingress to frontend from internet (via ingress controller)
+
 apiVersion: projectcalico.org/v3
 kind: NetworkPolicy
 metadata:

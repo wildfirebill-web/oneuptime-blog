@@ -14,7 +14,7 @@ Description: Enable IPv6 routing and forwarding on Cisco IOS routers with essent
 
 ## Step 1: Enable IPv6 Routing Globally
 
-```
+```text
 ! Enter global configuration mode
 Router> enable
 Router# configure terminal
@@ -32,7 +32,7 @@ Router# show ipv6 route
 
 ## Step 2: Configure IPv6 on an Interface
 
-```
+```text
 Router(config)# interface GigabitEthernet0/0
 
 ! Assign a static IPv6 address
@@ -51,8 +51,8 @@ Router(config-if)# exit
 
 ## Step 3: Enable Router Advertisements
 
-```
-! Enable IPv6 ND (Router Advertisements) — on by default when ipv6 unicast-routing is set
+```text
+! Enable IPv6 ND (Router Advertisements) - on by default when ipv6 unicast-routing is set
 Router(config)# interface GigabitEthernet0/0
 Router(config-if)# ipv6 nd prefix 2001:db8:1::/64
 Router(config-if)# ipv6 nd ra-interval 200
@@ -64,7 +64,7 @@ Router(config-if)# ipv6 nd suppress-ra
 
 ## Step 4: Verify the Configuration
 
-```
+```text
 ! Show all IPv6 addresses on all interfaces
 Router# show ipv6 interface brief
 
@@ -86,7 +86,7 @@ Router# traceroute ipv6 2001:db8:1::1
 
 ## Step 5: Save Configuration
 
-```
+```text
 ! Save the running configuration to NVRAM
 Router# write memory
 ! Or:
@@ -95,7 +95,7 @@ Router# copy running-config startup-config
 
 ## Full Configuration Example
 
-```
+```nginx
 ! Complete router configuration for dual-stack
 ipv6 unicast-routing
 ipv6 cef

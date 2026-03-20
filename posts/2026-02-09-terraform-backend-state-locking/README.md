@@ -20,6 +20,7 @@ AWS S3 with DynamoDB provides a robust backend for Terraform state:
 
 ```hcl
 # backend.tf
+
 terraform {
   backend "s3" {
     bucket         = "my-terraform-state"

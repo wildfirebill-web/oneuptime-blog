@@ -22,6 +22,7 @@ Validating Calico metrics monitoring means confirming not just that Prometheus h
 ```bash
 #!/bin/bash
 # validate-calico-metrics-monitoring.sh
+
 PROMETHEUS_URL="${1:-http://localhost:9090}"
 FAILURES=0
 

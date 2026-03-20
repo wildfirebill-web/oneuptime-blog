@@ -289,6 +289,7 @@ producer = KafkaProducer(
 )
 
 # Send a message
+
 producer.send('test-topic', {'message': 'Hello, Kafka!'})
 producer.flush()
 print("Message sent successfully!")

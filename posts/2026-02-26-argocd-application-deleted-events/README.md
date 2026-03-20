@@ -48,6 +48,7 @@ ArgoCD Notifications can detect when an application is about to be deleted by wa
 
 ```yaml
 # argocd-notifications-cm ConfigMap
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

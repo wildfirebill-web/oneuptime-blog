@@ -31,6 +31,7 @@ Update a policy with a completely new definition:
 export DATASTORE_TYPE=kubernetes
 
 # Step 1: Get the current policy
+
 calicoctl get globalnetworkpolicy allow-web -o yaml > /tmp/allow-web-current.yaml
 
 # Step 2: Create the replacement policy

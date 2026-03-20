@@ -66,6 +66,7 @@ Start with a basic structure that wraps an ActiveRecord query:
 # app/queries/active_users_query.rb
 
 # Query Object for fetching active users
+
 # This encapsulates the logic for what makes a user "active"
 class ActiveUsersQuery
   # Initialize with an optional base relation

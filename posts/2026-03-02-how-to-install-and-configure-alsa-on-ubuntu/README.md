@@ -28,6 +28,7 @@ When PulseAudio or PipeWire isn't running, applications with ALSA support can st
 
 ```bash
 # Core ALSA utilities (usually pre-installed)
+
 sudo apt-get install -y alsa-utils alsa-base
 
 # ALSA tools for advanced debugging

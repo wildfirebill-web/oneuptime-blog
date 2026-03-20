@@ -12,7 +12,7 @@ SRV records specify the location (hostname and port) of services. They're used f
 
 SRV records follow the format: `priority weight port target`
 
-```
+```text
 _service._proto.name  TTL  IN  SRV  priority  weight  port  target
 ```
 
@@ -41,6 +41,7 @@ resource "aws_route53_record" "sip_tcp" {
 
 ```hcl
 # Client-to-server XMPP
+
 resource "aws_route53_record" "xmpp_client" {
   zone_id = data.aws_route53_zone.main.zone_id
   name    = "_xmpp-client._tcp.example.com"

@@ -12,9 +12,9 @@ OpenTofu 1.11 introduced write-only attributes for resource schemas. A write-onl
 
 ## What Are Write-Only Attributes
 
-Write-only attributes flow in one direction — into the provider — and are never written to the state file.
+Write-only attributes flow in one direction - into the provider - and are never written to the state file.
 
-```
+```hcl
 Normal attribute lifecycle:
   tofu apply → provider creates resource → attribute stored in state ← tofu plan reads
 
@@ -51,6 +51,7 @@ Sensitive attributes are stored in state (encrypted), write-only attributes are 
 
 ```hcl
 # Sensitive attribute - stored in state, masked in output
+
 resource "aws_db_instance" "with_sensitive" {
   password = var.db_password  # stored in state as sensitive
 }

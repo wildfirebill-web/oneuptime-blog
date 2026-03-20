@@ -18,6 +18,7 @@ Install the framework:
 
 ```bash
 # Install the Functions Framework and any dependencies
+
 pip install functions-framework google-cloud-storage google-cloud-pubsub
 ```
 

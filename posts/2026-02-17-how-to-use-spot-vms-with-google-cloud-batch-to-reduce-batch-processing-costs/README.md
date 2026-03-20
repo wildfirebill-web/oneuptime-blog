@@ -37,6 +37,7 @@ The simplest configuration just sets the provisioning model to SPOT in the alloc
 
 ```bash
 # Create a batch job using Spot VMs
+
 gcloud batch jobs submit spot-batch-job \
   --location=us-central1 \
   --config=- <<'EOF'

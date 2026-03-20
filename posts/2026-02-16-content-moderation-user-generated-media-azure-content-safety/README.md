@@ -42,6 +42,7 @@ The key insight is that you do not need to moderate everything manually. Content
 
 ```bash
 # Create a Content Safety resource
+
 az cognitiveservices account create \
   --name content-safety-service \
   --resource-group rg-moderation \

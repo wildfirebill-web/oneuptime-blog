@@ -41,6 +41,7 @@ You can also set up channels with the gcloud CLI:
 
 ```bash
 # Create an email notification channel
+
 gcloud beta monitoring channels create \
   --type=email \
   --display-name="Data Platform Team Email" \

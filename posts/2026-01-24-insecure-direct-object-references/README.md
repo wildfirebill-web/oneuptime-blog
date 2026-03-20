@@ -61,6 +61,7 @@ app.get('/api/invoices/:id', async (req, res) => {
 
 ```python
 # VULNERABLE: No authorization check
+
 @app.route('/api/documents/<int:doc_id>')
 def get_document(doc_id):
     # Directly fetches document without checking ownership

@@ -18,6 +18,7 @@ Start by defining your logging standards in group variables.
 
 ```yaml
 # group_vars/all_network/logging.yml - Centralized logging configuration
+
 ---
 logging_config:
   # Syslog servers

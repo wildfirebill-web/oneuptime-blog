@@ -28,6 +28,7 @@ Install Trivy on your system:
 
 ```bash
 # macOS with Homebrew
+
 brew install trivy
 
 # Linux with apt

@@ -128,6 +128,7 @@ Deploy with a specific parameter file.
 
 ```bash
 # Deploy to dev
+
 az deployment group create \
   --resource-group rg-app-dev \
   --template-file main.bicep \

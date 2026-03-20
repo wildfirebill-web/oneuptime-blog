@@ -18,6 +18,7 @@ Setting up Omni SaaS takes just a few minutes:
 
 ```bash
 # Step 1: Sign up at https://omni.siderolabs.com
+
 # You will receive an account and a unique Omni endpoint
 
 # Step 2: Install the omnictl CLI

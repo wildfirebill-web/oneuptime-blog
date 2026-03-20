@@ -52,6 +52,7 @@ Update your Repo configuration to enable Telemetry events. In `config/config.exs
 
 ```elixir
 # Standard Ecto repo configuration
+
 config :my_app, MyApp.Repo,
   username: "postgres",
   password: "postgres",

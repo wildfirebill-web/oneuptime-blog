@@ -41,6 +41,7 @@ Click **+ New nested policy** under the root policy. Configure the following fie
 
 ```yaml
 # Example Policy Configuration
+
 matching_labels:
   - label: team
     operator: "="

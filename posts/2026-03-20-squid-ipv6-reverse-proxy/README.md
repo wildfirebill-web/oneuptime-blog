@@ -14,6 +14,7 @@ Configure Squid as an IPv6 reverse proxy (HTTP accelerator) to cache and load ba
 
 ```bash
 # Ensure IPv6 is enabled and functional
+
 ip -6 addr show
 ping6 -c 3 ::1
 

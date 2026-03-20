@@ -20,6 +20,7 @@ Integrating the Google Cloud cloud provider with Rancher-managed clusters unlock
 
 ```bash
 # Set variables
+
 PROJECT_ID="my-gcp-project"
 SA_NAME="rancher-cloud-provider"
 

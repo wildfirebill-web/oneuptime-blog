@@ -45,6 +45,7 @@ For environments with high API rate limits or many independent resources, increa
 
 ```bash
 # Increase parallelism for faster operations
+
 # Default is 10, increase for more concurrent API calls
 terraform apply -parallelism=20
 
@@ -615,7 +616,7 @@ flowchart LR
 
 ---
 
-## Resource Targeting
+Resource Targeting
 
 When working on specific resources, targeting reduces scope and speeds up operations.
 

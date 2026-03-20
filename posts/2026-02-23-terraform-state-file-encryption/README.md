@@ -56,6 +56,7 @@ The simplest approach - Amazon manages the encryption keys:
 
 ```hcl
 # backend.tf
+
 terraform {
   backend "s3" {
     bucket  = "my-terraform-state"

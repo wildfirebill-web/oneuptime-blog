@@ -16,6 +16,7 @@ The `ARG` instruction defines a variable that users can pass at build-time.
 
 ```dockerfile
 # Dockerfile
+
 FROM ubuntu:22.04
 
 # Define a build argument with a default value

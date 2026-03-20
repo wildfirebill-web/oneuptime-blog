@@ -1,4 +1,4 @@
-# How to Deploy a LAMP Stack via Portainer
+# How to Deploy a LAMP Stack via Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -93,6 +93,7 @@ The base `php:8.2-apache` image lacks common extensions. Create a custom Dockerf
 
 ```yaml
 # Alternative: use a Dockerfile for the web service
+
   web:
     build:
       context: ./docker/php
@@ -146,7 +147,7 @@ RUN curl -sS https://getcomposer.org/installer | php -- \
 
 ```php
 <?php
-// www/index.php — test connectivity to MySQL
+// www/index.php - test connectivity to MySQL
 
 $host = getenv('MYSQL_HOST') ?: 'db';
 $dbname = getenv('MYSQL_DATABASE') ?: 'lampapp';

@@ -47,6 +47,7 @@ Before starting, ensure you have:
 
 ```bash
 # Create a resource group
+
 az group create \
     --name myResourceGroup \
     --location eastus

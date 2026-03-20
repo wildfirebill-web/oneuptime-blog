@@ -14,6 +14,7 @@ Dell PowerSwitch series (S3248, S5248, Z9xxx) runs Dell OS10 (SmartFabric OS10),
 
 ```bash
 # Enter configuration mode
+
 switch# configure terminal
 
 # Enable IPv6 unicast routing

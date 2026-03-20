@@ -130,6 +130,7 @@ Use the Patroni REST API to inspect cluster health:
 
 ```bash
 # Check which node is primary
+
 curl -s http://localhost:8008/cluster | jq '.members[] | {name, role, state}'
 
 # Trigger a manual switchover

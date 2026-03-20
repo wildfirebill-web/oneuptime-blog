@@ -24,6 +24,7 @@ The most common eBPF failures are: kernel version too old (silently falls back t
 
 ```bash
 # Is Felix actually running in eBPF mode?
+
 kubectl logs -n calico-system ds/calico-node -c calico-node | \
   grep -E "BPF|eBPF|dataplane"
 

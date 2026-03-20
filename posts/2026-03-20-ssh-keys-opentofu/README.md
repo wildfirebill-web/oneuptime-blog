@@ -4,16 +4,17 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: OpenTofu, SSH Keys, AWS, EC2, Security, Infrastructure as Code
 
-Description: Learn how to manage SSH key pairs with OpenTofu — generating keys with the TLS provider, importing existing public keys, storing private keys in AWS Secrets Manager, and rotating keys safely.
+Description: Learn how to manage SSH key pairs with OpenTofu - generating keys with the TLS provider, importing existing public keys, storing private keys in AWS Secrets Manager, and rotating keys safely.
 
 ## Introduction
 
-SSH key pairs authenticate access to EC2 instances. OpenTofu manages key pairs declaratively — generating new RSA/ECDSA keys, importing existing public keys into AWS, and securely storing private key material in Secrets Manager. Using code-managed keys ensures consistent key distribution across environments and enables key rotation without manual steps.
+SSH key pairs authenticate access to EC2 instances. OpenTofu manages key pairs declaratively - generating new RSA/ECDSA keys, importing existing public keys into AWS, and securely storing private key material in Secrets Manager. Using code-managed keys ensures consistent key distribution across environments and enables key rotation without manual steps.
 
 ## Generate Key Pair with TLS Provider
 
 ```hcl
 # Generate RSA private key locally
+
 resource "tls_private_key" "app" {
   algorithm = "RSA"
   rsa_bits  = 4096
@@ -144,7 +145,7 @@ resource "null_resource" "setup" {
 }
 ```
 
-## Outputs (Safe — Public Key Only)
+## Outputs (Safe - Public Key Only)
 
 ```hcl
 output "key_pair_name" {
@@ -154,10 +155,10 @@ output "key_pair_name" {
 
 output "public_key_openssh" {
   value       = tls_private_key.app.public_key_openssh
-  description = "Public key in OpenSSH format — safe to share"
+  description = "Public key in OpenSSH format - safe to share"
 }
 
-# Never output private keys directly — use Secrets Manager ARN
+# Never output private keys directly - use Secrets Manager ARN
 output "private_key_secret_arn" {
   value       = aws_secretsmanager_secret.app_private_key.arn
   description = "Secrets Manager ARN for the private key"
@@ -166,4 +167,4 @@ output "private_key_secret_arn" {
 
 ## Conclusion
 
-Managing SSH keys with OpenTofu's TLS provider gives you code-managed key generation and rotation. Store private key material exclusively in Secrets Manager — never in OpenTofu state files (state is stored encrypted in S3 with state encryption enabled). Prefer ECDSA P256 over RSA for better performance with equivalent security. Rotate keys by incrementing a `key_version` variable, which creates a new key pair and triggers an instance refresh in the Auto Scaling Group to deploy instances with the new key.
+Managing SSH keys with OpenTofu's TLS provider gives you code-managed key generation and rotation. Store private key material exclusively in Secrets Manager - never in OpenTofu state files (state is stored encrypted in S3 with state encryption enabled). Prefer ECDSA P256 over RSA for better performance with equivalent security. Rotate keys by incrementing a `key_version` variable, which creates a new key pair and triggers an instance refresh in the Auto Scaling Group to deploy instances with the new key.

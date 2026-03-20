@@ -27,6 +27,7 @@ Before configuring TPM support, verify that your hardware has a TPM 2.0 chip and
 
 ```bash
 # Check if the Talos node has a TPM device available
+
 talosctl read /sys/class/tpm/tpm0/tpm_version_major --nodes <node-ip>
 
 # The output should be "2" for TPM 2.0

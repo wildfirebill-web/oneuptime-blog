@@ -39,6 +39,7 @@ You need a Talos installer image that includes both the NVIDIA kernel modules an
 
 ```bash
 # Create a schematic with NVIDIA extensions
+
 curl -X POST https://factory.talos.dev/schematics \
   -H "Content-Type: application/json" \
   -d '{

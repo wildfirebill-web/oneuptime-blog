@@ -28,6 +28,7 @@ tracer = trace.get_tracer("moderation.pipeline", "1.0.0")
 meter = metrics.get_meter("moderation.metrics", "1.0.0")
 
 # Classification latency by content type and model
+
 classification_latency = meter.create_histogram(
     name="moderation.classification.latency",
     description="Time to classify content using AI model",

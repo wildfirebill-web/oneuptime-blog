@@ -42,6 +42,7 @@ graph TD
 
 ```bash
 # Download k0s
+
 curl -sSLf https://get.k0s.sh | sudo sh
 
 # Install and start as a single node (controller + worker)
@@ -356,7 +357,7 @@ spec:
           - CreateNamespace=true
 ```
 
-## Resource Optimization
+Resource Optimization
 
 K0s is often chosen for its small footprint. Keep ArgoCD lean.
 

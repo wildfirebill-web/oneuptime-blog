@@ -14,6 +14,7 @@ Netplan configures DNS servers via the `nameservers` key under each interface. D
 
 ```yaml
 # /etc/netplan/01-netcfg.yaml
+
 network:
   version: 2
   ethernets:

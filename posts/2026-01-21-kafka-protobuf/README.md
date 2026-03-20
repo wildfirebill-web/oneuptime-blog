@@ -196,6 +196,7 @@ from confluent_kafka.schema_registry.protobuf import ProtobufSerializer, Protobu
 from confluent_kafka.serialization import SerializationContext, MessageField
 
 # Import generated protobuf classes
+
 from user_pb2 import User
 
 def create_protobuf_producer():

@@ -96,6 +96,7 @@ First, define recording rules that calculate error rates for each window size:
 
 ```yaml
 # prometheus/rules/slo-recording.yaml
+
 # Pre-compute error rates across multiple time windows for efficient alerting
 
 groups:

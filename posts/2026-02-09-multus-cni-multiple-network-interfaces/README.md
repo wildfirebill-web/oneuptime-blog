@@ -46,6 +46,7 @@ Define a secondary network using macvlan:
 
 ```yaml
 # macvlan-network.yaml
+
 apiVersion: k8s.cni.cncf.io/v1
 kind: NetworkAttachmentDefinition
 metadata:

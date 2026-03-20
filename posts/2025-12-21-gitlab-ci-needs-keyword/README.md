@@ -51,6 +51,7 @@ Specify which jobs a job depends on using the `needs` keyword.
 
 ```yaml
 # .gitlab-ci.yml
+
 stages:
   - build
   - test

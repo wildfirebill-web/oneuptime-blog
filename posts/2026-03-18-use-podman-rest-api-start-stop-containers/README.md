@@ -20,6 +20,7 @@ Start a previously created container by sending a POST request to the start endp
 
 ```bash
 # Start a container by name
+
 curl --unix-socket $XDG_RUNTIME_DIR/podman/podman.sock \
   -X POST \
   http://localhost/v4.0.0/libpod/containers/my-nginx/start

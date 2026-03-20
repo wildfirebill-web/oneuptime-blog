@@ -55,6 +55,7 @@ On the same node, traffic flows through veth pairs in the host network namespace
 
 ```bash
 # Verify on the node:
+
 ip route show 192.168.1.5
 # Output: 192.168.1.5 dev cali<hash> scope link
 ```

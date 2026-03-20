@@ -229,6 +229,7 @@ Monitor which node groups are selected during scale-up.
 
 ```bash
 # Check Cluster Autoscaler logs for expander decisions
+
 kubectl logs -n kube-system deployment/cluster-autoscaler | \
   grep -i "priority"
 

@@ -18,6 +18,7 @@ MicroK8s is a lightweight Kubernetes distribution ideal for development, CI/CD, 
 
 ```bash
 # Check that the host has a routable IPv6 address
+
 ip -6 addr show
 
 # Verify IPv6 connectivity

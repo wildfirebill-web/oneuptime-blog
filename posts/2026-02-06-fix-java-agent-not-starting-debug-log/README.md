@@ -12,6 +12,7 @@ When the OpenTelemetry Java agent does not work, the first step is always to ena
 
 ```bash
 # Method 1: System property
+
 java -javaagent:opentelemetry-javaagent.jar \
      -Dotel.javaagent.debug=true \
      -jar myapp.jar

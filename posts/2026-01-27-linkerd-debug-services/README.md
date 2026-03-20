@@ -37,6 +37,7 @@ Before diving into debugging, ensure your Linkerd installation is healthy.
 
 ```bash
 # Verify the Linkerd control plane is running correctly
+
 # This command validates all control plane components and their configurations
 linkerd check
 

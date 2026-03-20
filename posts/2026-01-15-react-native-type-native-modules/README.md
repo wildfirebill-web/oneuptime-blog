@@ -103,6 +103,7 @@ When you run Codegen, it generates native interfaces that match your TypeScript 
 
 ```bash
 # iOS
+
 cd ios && pod install
 
 # Android

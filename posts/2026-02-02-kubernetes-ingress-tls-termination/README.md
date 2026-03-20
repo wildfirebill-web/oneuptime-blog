@@ -53,6 +53,7 @@ Create a TLS secret from existing certificate files:
 
 ```bash
 # Create a TLS secret from certificate and key files
+
 # The certificate file should include the full chain (your cert + intermediates)
 kubectl create secret tls my-app-tls \
   --cert=fullchain.pem \

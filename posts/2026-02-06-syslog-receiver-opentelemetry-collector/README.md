@@ -474,6 +474,7 @@ Configure rsyslog to forward logs to the collector:
 # /etc/rsyslog.d/50-otel-collector.conf
 
 # Forward all logs via TCP with TLS
+
 $DefaultNetstreamDriver gtls
 $ActionSendStreamDriverMode 1
 $ActionSendStreamDriverAuthMode x509/name

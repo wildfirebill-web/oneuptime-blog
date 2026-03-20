@@ -37,6 +37,7 @@ Using the 64-bit OS is strongly recommended for K3s on Pi 4:
 
 ```bash
 # SSH into the Pi 4
+
 ssh pi@pi4-k3s-01.local
 
 # Update the system

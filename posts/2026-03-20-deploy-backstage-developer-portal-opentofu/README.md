@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Backstage, Developer Portal, Internal Developer Platform, IDP
+Tags: OpenTofu, Backstage, Developer Portal, Internal Developer Platform, IdP
 
 Description: Learn how to deploy Spotify's Backstage developer portal on AWS using OpenTofu with RDS PostgreSQL, ECS Fargate, and GitHub integration for an internal developer platform.
 
@@ -122,6 +122,7 @@ resource "aws_ecs_task_definition" "backstage" {
 
 ```dockerfile
 # Dockerfile for Backstage
+
 FROM node:18-bookworm-slim AS packages
 WORKDIR /app
 COPY package.json yarn.lock ./
@@ -149,4 +150,4 @@ CMD ["node", "packages/backend", "--config", "app-config.yaml"]
 
 ## Conclusion
 
-Deploying Backstage with OpenTofu creates an internal developer platform that grows with your organization. The `APP_CONFIG_` prefixed environment variables map directly to Backstage's `app-config.yaml` settings, allowing configuration without baking it into the Docker image. Build the Backstage Docker image in CI/CD (it includes your plugins and customizations), push to ECR, and reference the image tag in OpenTofu. The RDS backend is essential for multi-instance deployments — the in-memory SQLite backend won't work in ECS.
+Deploying Backstage with OpenTofu creates an internal developer platform that grows with your organization. The `APP_CONFIG_` prefixed environment variables map directly to Backstage's `app-config.yaml` settings, allowing configuration without baking it into the Docker image. Build the Backstage Docker image in CI/CD (it includes your plugins and customizations), push to ECR, and reference the image tag in OpenTofu. The RDS backend is essential for multi-instance deployments - the in-memory SQLite backend won't work in ECS.

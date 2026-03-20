@@ -14,6 +14,7 @@ When players cannot connect to your IPv6 game server, systematic troubleshooting
 
 ```bash
 # Check IPv6 address assignment
+
 ip -6 addr show scope global
 
 # Verify address is not just link-local (fe80::)

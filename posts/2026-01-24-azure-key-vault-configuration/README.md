@@ -63,6 +63,7 @@ flowchart TB
 
 ```bash
 # Create resource group
+
 az group create --name rg-security --location eastus
 
 # Create Key Vault with RBAC authorization (recommended)

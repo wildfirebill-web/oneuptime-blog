@@ -38,6 +38,7 @@ Before HPA can read CPU and memory metrics, you need the Metrics Server installe
 
 ```bash
 # Install Metrics Server in your cluster
+
 kubectl apply -f https://github.com/kubernetes-sigs/metrics-server/releases/latest/download/components.yaml
 
 # Verify it is running

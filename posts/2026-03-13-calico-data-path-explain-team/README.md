@@ -58,6 +58,7 @@ For platform engineers who need to debug the data path:
 **Identifying which pod interface to inspect**:
 ```bash
 # Get the veth interface name for a pod
+
 POD_IFACE=$(kubectl exec my-pod -- ip route show | grep default | awk '{print $NF}')
 echo "Pod's interface: $POD_IFACE"
 

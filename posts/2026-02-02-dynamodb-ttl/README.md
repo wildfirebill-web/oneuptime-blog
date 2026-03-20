@@ -78,6 +78,7 @@ Enable TTL on an existing table by specifying the attribute name that contains y
 
 ```bash
 # Enable TTL on the 'sessions' table using 'expirationTime' as the TTL attribute
+
 aws dynamodb update-time-to-live \
     --table-name sessions \
     --time-to-live-specification \

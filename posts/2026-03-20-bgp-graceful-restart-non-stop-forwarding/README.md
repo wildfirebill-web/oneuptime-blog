@@ -32,7 +32,7 @@ sequenceDiagram
 
 On Cisco IOS, graceful restart is enabled per address family:
 
-```
+```text
 router bgp 65001
  ! Enable graceful restart globally
  bgp graceful-restart
@@ -48,7 +48,7 @@ The `restart-time` is advertised to helpers so they know how long to retain stal
 
 ## Step 2: Verify Graceful Restart Capability Is Negotiated
 
-```
+```text
 Router# show ip bgp neighbors 203.0.113.1
 
 ! Look for:
@@ -63,16 +63,16 @@ Both the restarting router and the helper must support and advertise the GR capa
 
 On platforms that support NSF (like Cisco 7600, ASR series), enable NSF awareness:
 
-```
+```text
 ! Enable NSF awareness (helps BGP peers using NSF)
 router bgp 65001
  bgp graceful-restart
  ! NSF is automatically enabled on supported platforms
 ```
 
-On IOS XE/XR platforms, NSF may be enabled by default—verify with:
+On IOS XE/XR platforms, NSF may be enabled by default-verify with:
 
-```
+```text
 Router# show ip bgp neighbors | include NSF
 ! Output should show: NSF aware route processor
 ```
@@ -95,7 +95,7 @@ router bgp 65001
 
 Test GR behavior in a lab by clearing the BGP process and observing stale route handling:
 
-```
+```text
 ! Clear BGP process (simulates restart)
 Router# clear ip bgp * soft
 

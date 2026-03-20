@@ -31,6 +31,7 @@ flowchart TD
 
 ```bash
 # List workspaces
+
 terraform workspace list
 
 # Create new workspace

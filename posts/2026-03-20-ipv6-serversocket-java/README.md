@@ -15,7 +15,7 @@ import java.net.*;
 public class IPv6TCPServer {
 
     public static void main(String[] args) throws IOException {
-        // Bind to [::]:8080 — accepts both IPv4 and IPv6 on dual-stack
+        // Bind to [::]:8080 - accepts both IPv4 and IPv6 on dual-stack
         InetAddress bindAddr = InetAddress.getByName("::");
         ServerSocket server = new ServerSocket(8080, 50, bindAddr);
 
@@ -180,4 +180,4 @@ public class NIOIPv6Server {
 
 ## Conclusion
 
-Java's `ServerSocket` supports IPv6 by binding to `InetAddress.getByName("::")`. For IPv6-only sockets, use `ServerSocketChannel` with NIO and configure `IPV6_V6ONLY`. Dual-stack connections present IPv4 clients as IPv4-mapped `::ffff:x.x.x.x` — detect and unwrap these for accurate client IP logging. NIO's `Selector` provides event-driven I/O for high-concurrency IPv6 servers without one thread per connection.
+Java's `ServerSocket` supports IPv6 by binding to `InetAddress.getByName("::")`. For IPv6-only sockets, use `ServerSocketChannel` with NIO and configure `IPV6_V6ONLY`. Dual-stack connections present IPv4 clients as IPv4-mapped `::ffff:x.x.x.x` - detect and unwrap these for accurate client IP logging. NIO's `Selector` provides event-driven I/O for high-concurrency IPv6 servers without one thread per connection.

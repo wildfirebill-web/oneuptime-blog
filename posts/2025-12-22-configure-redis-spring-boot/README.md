@@ -63,6 +63,7 @@ flowchart TD
 
 ```yaml
 # application.yml
+
 spring:
   data:
     redis:

@@ -25,6 +25,7 @@ Unlike pod label validation, namespace label validation is often overlooked beca
 ```bash
 #!/bin/bash
 # validate-namespace-labels.sh
+
 REQUIRED_NS_LABELS=("environment" "team")
 POLICY_DIR="policies/"
 EXIT_CODE=0

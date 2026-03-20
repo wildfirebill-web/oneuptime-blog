@@ -226,6 +226,7 @@ Upload templates to a storage account and use a SAS token for access.
 
 ```bash
 # Create a storage account for templates
+
 az storage account create \
   --name armtemplatesstore \
   --resource-group rg-shared \

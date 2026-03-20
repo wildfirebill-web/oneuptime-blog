@@ -31,6 +31,7 @@ First, check if you have any rules allowing SSH from anywhere:
 
 ```bash
 # Find firewall rules that allow SSH from 0.0.0.0/0
+
 gcloud compute firewall-rules list \
   --filter="allowed[].ports:22 AND sourceRanges:0.0.0.0/0" \
   --format="table(name, network, sourceRanges, targetTags)"

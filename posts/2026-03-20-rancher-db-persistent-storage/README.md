@@ -1,8 +1,8 @@
-# How to Configure Persistent Storage for Databases in Rancher
+# How to Configure Persistent Storage for Databases in Rancher - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Kubernetes, Storage, PersistentVolume, Databases, Longhorn
+Tags: Rancher, Kubernetes, Storage, PersistentVolume, Database, Longhorn
 
 Description: Configure persistent storage for databases in Rancher using StorageClasses, PersistentVolumes, and Longhorn for reliable data persistence across pod restarts.
 
@@ -23,6 +23,7 @@ Longhorn is Rancher's recommended distributed block storage:
 
 ```bash
 # Install Longhorn from Rancher Apps catalog
+
 # Or use Helm
 helm repo add longhorn https://charts.longhorn.io
 helm repo update

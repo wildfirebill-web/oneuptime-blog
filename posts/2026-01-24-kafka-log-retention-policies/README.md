@@ -49,6 +49,7 @@ flowchart TD
 # /etc/kafka/server.properties
 
 # Default retention for all topics (7 days)
+
 log.retention.hours=168
 
 # Or use milliseconds for precise control

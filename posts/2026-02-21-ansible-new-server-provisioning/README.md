@@ -14,6 +14,7 @@ Every time a new server comes online, it needs the same set of baseline configur
 
 ```yaml
 # roles/provision/defaults/main.yml - Server provisioning defaults
+
 provision_hostname_prefix: srv
 provision_timezone: UTC
 provision_locale: en_US.UTF-8

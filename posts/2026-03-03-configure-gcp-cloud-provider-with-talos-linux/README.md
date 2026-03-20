@@ -37,6 +37,7 @@ The cloud provider needs a GCP service account with specific roles. Create one:
 
 ```bash
 # Create the service account
+
 gcloud iam service-accounts create talos-cloud-provider \
   --display-name="Talos Cloud Provider" \
   --project=my-project

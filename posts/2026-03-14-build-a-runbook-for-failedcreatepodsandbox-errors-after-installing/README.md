@@ -29,6 +29,7 @@ Begin by gathering context about the failure scope and timing.
 
 ```bash
 # Step 1: Identify affected pods and nodes
+
 # This shows all pods with sandbox creation failures
 kubectl get events --all-namespaces \
   --field-selector reason=FailedCreatePodSandBox \

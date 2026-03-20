@@ -157,6 +157,7 @@ Generate some test traffic and check the distribution:
 
 ```bash
 # Generate 1000 requests
+
 for i in $(seq 1 1000); do
   curl -s -o /dev/null -w "%{http_code}" http://web-app.production/api/version
 done

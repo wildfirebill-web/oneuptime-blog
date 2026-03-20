@@ -28,6 +28,7 @@ Install the DigitalOcean CLI:
 
 ```bash
 # Install doctl
+
 brew install doctl  # macOS
 snap install doctl  # Linux
 

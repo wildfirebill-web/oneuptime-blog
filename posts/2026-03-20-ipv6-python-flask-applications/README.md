@@ -32,6 +32,7 @@ Run with:
 ```bash
 python app.py
 # Access via: http://[::1]:5000  (localhost IPv6)
+
 # Or: http://[2001:db8::1]:5000  (global IPv6)
 ```
 

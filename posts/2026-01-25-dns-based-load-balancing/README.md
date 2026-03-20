@@ -39,6 +39,7 @@ The simplest form of DNS load balancing returns multiple A records in rotating o
 
 ```bash
 # /etc/named.conf - Main BIND configuration
+
 options {
     directory "/var/named";
     listen-on port 53 { any; };

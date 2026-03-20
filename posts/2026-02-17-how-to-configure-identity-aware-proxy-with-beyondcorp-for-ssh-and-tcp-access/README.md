@@ -33,6 +33,7 @@ This means your VMs can have no external IP addresses and no firewall rules allo
 
 ```bash
 # Enable the IAP API
+
 gcloud services enable iap.googleapis.com --project=my-project-id
 ```
 

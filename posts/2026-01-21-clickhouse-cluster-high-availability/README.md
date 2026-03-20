@@ -136,6 +136,7 @@ echo ruok | nc keeper-1.example.com 9181
 
 echo mntr | nc keeper-1.example.com 9181
 # Shows detailed metrics including leader status
+
 ```
 
 ### Option B: Apache ZooKeeper

@@ -40,6 +40,7 @@ Here is a complete Docker Compose setup that runs the entire Zabbix stack.
 
 ```yaml
 # docker-compose.yml - Full Zabbix monitoring stack
+
 # Includes server, web UI, PostgreSQL, and SNMP trap handling
 version: "3.8"
 

@@ -28,6 +28,7 @@ Start by creating a new cluster with the target Kubernetes version. The green cl
 
 ```bash
 # For EKS example
+
 aws eks create-cluster \
   --name production-green \
   --version 1.29 \

@@ -28,6 +28,7 @@ graph TD
 
 ```yaml
 # roles/monitoring/defaults/main.yml - Monitoring stack configuration
+
 prometheus_version: "2.48.0"
 grafana_version: "10.2.0"
 node_exporter_version: "1.7.0"

@@ -18,6 +18,7 @@ Start by creating hosted zones for your domains:
 
 ```hcl
 # Primary public hosted zone
+
 resource "aws_route53_zone" "primary" {
   name    = var.domain_name
   comment = "Primary domain for ${var.project_name}"

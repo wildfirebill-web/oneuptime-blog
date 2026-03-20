@@ -27,6 +27,7 @@ Create a new CDK project:
 
 ```bash
 # Create a new CDK project in TypeScript
+
 mkdir eks-cdk && cd eks-cdk
 cdk init app --language typescript
 

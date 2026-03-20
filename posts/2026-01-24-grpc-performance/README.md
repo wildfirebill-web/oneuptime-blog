@@ -51,6 +51,7 @@ One of the most common issues is creating too many connections or not reusing th
 
 ```python
 # BAD: Creating a new channel for every request
+
 # This creates connection overhead and can exhaust file descriptors
 def make_request_bad(data):
     # New connection for every call - very inefficient

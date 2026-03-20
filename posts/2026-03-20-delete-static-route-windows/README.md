@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Windows, Networking, route, Static Route, IPv4, Network Configuration
+Tags: Windows, Networking, Routes, Static Routes, IPv4, Network Configuration
 
 Description: Delete specific static routes from the Windows routing table using route delete, remove persistent routes, and clean up the routing table after network reconfiguration.
 
@@ -38,7 +38,7 @@ route delete 0.0.0.0 mask 0.0.0.0
 
 ## Deleting All Routes to a Network
 
-Using a wildcard — the `*` pattern matches any mask:
+Using a wildcard - the `*` pattern matches any mask:
 
 ```cmd
 :: Delete all routes to 10.0.0.0 regardless of mask
@@ -61,10 +61,11 @@ route print | findstr "10.0.0"
 route print | findstr /i "persistent"
 ```
 
-If the route still appears in the Persistent Routes section, it survived as a registry entry — use PowerShell:
+If the route still appears in the Persistent Routes section, it survived as a registry entry - use PowerShell:
 
 ```powershell
 # Remove persistent route via PowerShell
+
 Remove-NetRoute -DestinationPrefix "10.0.0.0/8" -NextHop "192.168.1.254" -Confirm:$false
 ```
 

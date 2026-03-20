@@ -6,20 +6,21 @@ Tags: Service Mesh, IPv6, Debugging, Istio, Linkerd, Envoy, Troubleshooting
 
 Description: A guide to debugging IPv6 connectivity and configuration issues in service meshes, covering iptables inspection, proxy logs, traffic capture, and common failure modes.
 
-IPv6 issues in service meshes often present as mysterious connection failures — traffic works on IPv4 but fails on IPv6, or services appear healthy but receive no IPv6 traffic. This guide provides systematic debugging approaches.
+IPv6 issues in service meshes often present as mysterious connection failures - traffic works on IPv4 but fails on IPv6, or services appear healthy but receive no IPv6 traffic. This guide provides systematic debugging approaches.
 
 ## Common IPv6 Service Mesh Failure Modes
 
-1. **ip6tables rules missing** — Sidecar doesn't intercept IPv6 traffic
-2. **Proxy binds only to IPv4** — Listener configured as `0.0.0.0`, not `::`
-3. **DNS returns IPv4 only** — Pod DNS config missing AAAA record lookup
-4. **Certificate SAN mismatch** — IPv6 address not in certificate
-5. **Upstream cluster DNS resolution** — `dns_lookup_family` set to V4_ONLY
+1. **ip6tables rules missing** - Sidecar doesn't intercept IPv6 traffic
+2. **Proxy binds only to IPv4** - Listener configured as `0.0.0.0`, not `::`
+3. **DNS returns IPv4 only** - Pod DNS config missing AAAA record lookup
+4. **Certificate SAN mismatch** - IPv6 address not in certificate
+5. **Upstream cluster DNS resolution** - `dns_lookup_family` set to V4_ONLY
 
 ## Step 1: Verify Pod Has IPv6 Address
 
 ```bash
 # Check the pod's IP addresses
+
 kubectl get pod <pod-name> -o jsonpath='{.status.podIPs}'
 # Should show: [{"ip":"10.0.0.5"},{"ip":"fd00::5"}]
 
@@ -34,7 +35,7 @@ kubectl exec <pod-name> -c app -- ip -6 route show
 ## Step 2: Check Sidecar ip6tables Rules
 
 ```bash
-# Istio — check ip6tables PREROUTING/OUTPUT rules
+# Istio - check ip6tables PREROUTING/OUTPUT rules
 kubectl exec <pod-name> -c istio-proxy -- \
   ip6tables -t nat -L -n -v
 
@@ -55,7 +56,7 @@ kubectl exec <pod-name> -c istio-proxy -- \
 ## Step 3: Check Proxy Listener Bindings
 
 ```bash
-# Istio/Envoy — check what Envoy is listening on
+# Istio/Envoy - check what Envoy is listening on
 kubectl exec <pod-name> -c istio-proxy -- \
   ss -6 -tlnp
 
@@ -68,7 +69,7 @@ kubectl exec <pod-name> -c istio-proxy -- \
 kubectl exec <pod-name> -c istio-proxy -- \
   netstat -tlnp | grep :::
 
-# Linkerd — check proxy listeners
+# Linkerd - check proxy listeners
 kubectl exec <pod-name> -c linkerd-proxy -- \
   ss -6 -tlnp | grep LISTEN
 ```

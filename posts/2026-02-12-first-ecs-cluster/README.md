@@ -29,6 +29,7 @@ The simplest way to create a cluster is with the AWS CLI.
 
 ```bash
 # Create a basic ECS cluster - this creates a Fargate-ready cluster
+
 aws ecs create-cluster \
   --cluster-name my-first-cluster \
   --capacity-providers FARGATE FARGATE_SPOT \

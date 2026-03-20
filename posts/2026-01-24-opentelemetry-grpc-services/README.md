@@ -58,6 +58,7 @@ flowchart LR
 
 ```python
 # Install required packages:
+
 # pip install opentelemetry-instrumentation-grpc
 # pip install opentelemetry-exporter-otlp
 # pip install grpcio

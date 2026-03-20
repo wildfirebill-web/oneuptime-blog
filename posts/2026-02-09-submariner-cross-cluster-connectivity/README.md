@@ -26,6 +26,7 @@ Install the Submariner command-line tool:
 
 ```bash
 # Download subctl
+
 curl -Ls https://get.submariner.io | bash
 
 # Add to PATH

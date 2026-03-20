@@ -50,6 +50,7 @@ Google Cloud Pub/Sub offers a native exactly-once delivery feature that handles 
 
 ```python
 # enable_exactly_once.py
+
 # Enable exactly-once delivery on a Pub/Sub subscription
 
 from google.cloud import pubsub_v1

@@ -29,6 +29,7 @@ Review which nodes have taints and what taint keys are in use.
 
 ```bash
 # List all nodes with their taints
+
 kubectl get nodes -o custom-columns=NAME:.metadata.name,TAINTS:.spec.taints
 
 # Get detailed taint information for a specific node pool

@@ -20,6 +20,7 @@ Navigate to **Stacks** > **Add Stack**:
 
 ```yaml
 # docker-compose.yml - Meilisearch
+
 version: "3.8"
 
 services:
@@ -54,7 +55,7 @@ networks:
 
 ## Step 2: Set Environment Variables in Portainer
 
-```
+```text
 MEILI_MASTER_KEY=your-master-key-min-16-chars
 ```
 
@@ -139,4 +140,4 @@ print(results["hits"])
 
 ## Conclusion
 
-Meilisearch stores all data and indexes in the `MEILI_DB_PATH` directory. In `production` mode, always set a `MEILI_MASTER_KEY` — all requests must include an `Authorization: Bearer <key>` header. Use the Meilisearch dashboard (available in development mode at `http://localhost:7700`) to explore indexes and test queries. Generate scoped API keys for client-side search to prevent users from accessing admin endpoints.
+Meilisearch stores all data and indexes in the `MEILI_DB_PATH` directory. In `production` mode, always set a `MEILI_MASTER_KEY` - all requests must include an `Authorization: Bearer <key>` header. Use the Meilisearch dashboard (available in development mode at `http://localhost:7700`) to explore indexes and test queries. Generate scoped API keys for client-side search to prevent users from accessing admin endpoints.

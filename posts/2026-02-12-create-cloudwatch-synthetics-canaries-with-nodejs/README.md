@@ -83,6 +83,7 @@ Deploy via the AWS CLI.
 
 ```bash
 # First, zip your canary script
+
 # The file must be in a specific directory structure
 mkdir -p nodejs/node_modules
 cp heartbeat-canary.js nodejs/node_modules/heartbeat-canary.js

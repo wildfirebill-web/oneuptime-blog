@@ -16,6 +16,7 @@ The `subversion` module checks out a repository to a destination directory:
 
 ```yaml
 # playbook-svn-checkout.yml
+
 # Checks out an SVN repository to the specified destination
 - name: Checkout SVN repository
   hosts: webservers

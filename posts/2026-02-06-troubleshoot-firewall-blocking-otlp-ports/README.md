@@ -14,6 +14,7 @@ The symptoms vary depending on the firewall behavior. Some firewalls drop packet
 
 ```text
 # Timeout symptoms (firewall drops packets)
+
 context deadline exceeded
 export timeout: context deadline exceeded after 30s
 

@@ -142,6 +142,7 @@ Bundle and deploy the shared flow:
 
 ```bash
 # Create the zip bundle
+
 cd security-shared-flow
 zip -r ../security-shared-flow.zip sharedflowbundle/
 cd ..

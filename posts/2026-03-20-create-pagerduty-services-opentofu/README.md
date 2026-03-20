@@ -29,6 +29,7 @@ provider "pagerduty" {
 
 ```hcl
 # Look up existing users
+
 data "pagerduty_user" "alice" {
   email = "alice@example.com"
 }

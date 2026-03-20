@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: IPv6, Jumbograms, Jumbo Payload, RFC 2675, HPC Networking
 
-Description: Understand IPv6 jumbograms — packets exceeding 65535 bytes — how they work using the Jumbo Payload option, when they are useful, and their requirements.
+Description: Understand IPv6 jumbograms - packets exceeding 65535 bytes - how they work using the Jumbo Payload option, when they are useful, and their requirements.
 
 ## Introduction
 
@@ -12,7 +12,7 @@ IPv6's Payload Length field is 16 bits, supporting a maximum payload of 65535 by
 
 ## Standard IPv6 vs Jumbogram Size Limits
 
-```
+```text
 Standard IPv6 packet:
   Payload Length field: 16 bits → max 65535 bytes payload
   Total packet size: 40 (header) + 65535 = 65575 bytes maximum
@@ -34,7 +34,7 @@ Practical maximum (limited by link MTU):
 
 Jumbograms use a Hop-by-Hop Options extension header with the Jumbo Payload option:
 
-```
+```text
 Hop-by-Hop Options Header with Jumbo Payload option:
 
 Byte 0: Next Header (type of header after Hop-by-Hop)
@@ -52,7 +52,7 @@ When a jumbogram is sent:
 
 ## Jumbogram Requirements and Constraints
 
-```
+```text
 RFC 2675 requirements:
 
 1. Must not be fragmented
@@ -134,6 +134,7 @@ def parse_jumbo_payload_header(data: bytes) -> dict:
     return {"has_jumbo": False, "next_header": next_header}
 
 # Example: Build header for a 100,000-byte jumbogram
+
 header = build_jumbo_payload_header(17, 100000)  # 17 = UDP
 print(f"Hop-by-Hop header: {header.hex()}")
 
@@ -143,4 +144,4 @@ print(f"Jumbo length: {parsed['jumbo_length']} bytes")
 
 ## Conclusion
 
-IPv6 jumbograms address the 65535-byte payload limit by using a 32-bit Jumbo Payload Length option in a Hop-by-Hop Options header. They are applicable only on high-performance network links that support MTUs above 65535 bytes — InfiniBand, some HPC interconnects, and specialized storage networks. On standard Ethernet (1500 or 9000 bytes jumbo frames), jumbograms provide no benefit. The most important constraint: jumbograms cannot be fragmented, so the link MTU must be large enough to carry the entire packet.
+IPv6 jumbograms address the 65535-byte payload limit by using a 32-bit Jumbo Payload Length option in a Hop-by-Hop Options header. They are applicable only on high-performance network links that support MTUs above 65535 bytes - InfiniBand, some HPC interconnects, and specialized storage networks. On standard Ethernet (1500 or 9000 bytes jumbo frames), jumbograms provide no benefit. The most important constraint: jumbograms cannot be fragmented, so the link MTU must be large enough to carry the entire packet.

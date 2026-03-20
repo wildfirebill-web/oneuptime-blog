@@ -16,6 +16,7 @@ Monitoring IPv6 IPsec tunnels ensures you detect failures, track performance, an
 
 ```bash
 # List all active IKE SAs
+
 swanctl --list-sas
 
 # Sample output:
@@ -61,7 +62,7 @@ watch -n 2 "ip -s xfrm state list | grep -A 3 'spi 0x'"
 
 ```bash
 #!/bin/bash
-# check-ipv6-vpn.sh — Monitor strongSwan IPv6 tunnels
+# check-ipv6-vpn.sh - Monitor strongSwan IPv6 tunnels
 
 TUNNEL_NAME="site1-site2"
 REMOTE_HOST="2001:db8:site2::1"
@@ -111,10 +112,10 @@ docker run -d -p 9912:9912 -v /var/run/charon.vici:/var/run/charon.vici \
   ghcr.io/dennisstritzke/ipsec-exporter
 
 # Metrics available:
-# ipsec_ikesa_established — Number of established IKE SAs
-# ipsec_childsa_installed — Number of installed CHILD SAs
-# ipsec_bytes_in_total  — Total bytes inbound per SA
-# ipsec_bytes_out_total — Total bytes outbound per SA
+# ipsec_ikesa_established - Number of established IKE SAs
+# ipsec_childsa_installed - Number of installed CHILD SAs
+# ipsec_bytes_in_total  - Total bytes inbound per SA
+# ipsec_bytes_out_total - Total bytes outbound per SA
 # ipsec_packets_in_total
 # ipsec_packets_out_total
 ```
@@ -172,7 +173,7 @@ snmpget -v2c -c public localhost IPSEC-MIB::ikeSaState.1
 
 ```bash
 #!/bin/bash
-# check_ipsec_ipv6.sh — Nagios plugin
+# check_ipsec_ipv6.sh - Nagios plugin
 
 TUNNEL="$1"
 SA_COUNT=$(swanctl --list-sas 2>/dev/null | grep -c "ESTABLISHED")

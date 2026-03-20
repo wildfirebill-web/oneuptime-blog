@@ -260,6 +260,7 @@ If WebSocket connections fail to establish:
 
 ```bash
 # Check if the upgrade header passes through
+
 kubectl logs <pod-name> -c istio-proxy -n default | grep "101\|upgrade"
 
 # Check listener config

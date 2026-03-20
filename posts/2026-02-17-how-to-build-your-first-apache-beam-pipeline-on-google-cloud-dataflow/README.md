@@ -32,6 +32,7 @@ First, install the Apache Beam SDK for Python with the GCP extras.
 
 ```bash
 # Install Apache Beam with GCP support
+
 pip install 'apache-beam[gcp]'
 ```
 

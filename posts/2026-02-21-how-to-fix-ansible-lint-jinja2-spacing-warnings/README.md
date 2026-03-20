@@ -20,6 +20,7 @@ The main rule is straightforward: there should be exactly one space after `{{` a
 
 ```yaml
 # Various Jinja2 spacing violations
+
 ---
 - name: Deploy application
   hosts: webservers

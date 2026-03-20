@@ -16,6 +16,7 @@ Go compiles to a single binary, making it ideal for Lambda.
 
 ```hcl
 # The Go binary is built and zipped before Terraform runs
+
 # Build command: GOOS=linux GOARCH=amd64 go build -o bootstrap main.go && zip function.zip bootstrap
 
 data "archive_file" "go_app" {

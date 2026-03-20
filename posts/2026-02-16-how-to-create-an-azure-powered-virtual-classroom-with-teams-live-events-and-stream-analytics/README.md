@@ -134,6 +134,7 @@ import json
 from datetime import datetime
 
 # Event Hub client for publishing engagement events
+
 producer = EventHubProducerClient.from_connection_string(
     conn_str=os.environ["EVENT_HUB_CONNECTION"],
     eventhub_name="classroom-events"

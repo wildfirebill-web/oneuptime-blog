@@ -30,6 +30,7 @@ This command enables all audit log types for Cloud KMS at the organization level
 
 ```bash
 # Enable comprehensive audit logging for Cloud KMS
+
 gcloud organizations set-iam-policy 123456789 --format=json | \
   python3 -c "
 import json, sys

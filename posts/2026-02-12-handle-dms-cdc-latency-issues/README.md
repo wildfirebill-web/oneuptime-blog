@@ -37,6 +37,7 @@ Knowing which metric is high tells you where to focus your investigation.
 
 ```bash
 # Compare source and target latency over the last hour
+
 aws cloudwatch get-metric-data \
   --metric-data-queries '[
     {

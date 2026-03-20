@@ -58,6 +58,7 @@ Configure the central Prometheus to scrape from source instances:
 
 ```yaml
 # prometheus.yml on central/global Prometheus
+
 global:
   scrape_interval: 60s
   evaluation_interval: 60s

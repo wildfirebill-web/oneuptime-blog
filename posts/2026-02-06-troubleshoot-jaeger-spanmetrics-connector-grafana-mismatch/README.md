@@ -36,6 +36,7 @@ Query the Collector's Prometheus endpoint or your metrics backend:
 
 ```bash
 # If using the prometheus exporter
+
 curl -s http://collector:8889/metrics | grep "spanmetrics"
 ```
 

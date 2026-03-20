@@ -16,6 +16,7 @@ Red Hat offers several subscription options:
 
 ```bash
 # Self-Support: ~$349/year per server (business hours, web only)
+
 # Standard: ~$799/year per server (business hours, web + phone)
 # Premium: ~$1,299/year per server (24/7 support, web + phone)
 

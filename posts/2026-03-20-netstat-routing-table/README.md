@@ -2,19 +2,20 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Netstat, Routing, Linux, IPv4, Networking, Diagnostics
+Tags: netstat, Routing, Linux, IPv4, Networking, Diagnostics
 
 Description: Use netstat -r to display the kernel IPv4 routing table, understand routing entries, and diagnose routing problems on Linux.
 
-The routing table tells the kernel where to send packets for each destination. Displaying it with netstat reveals your default gateway, directly connected networks, and any static routes — essential for diagnosing connectivity issues.
+The routing table tells the kernel where to send packets for each destination. Displaying it with netstat reveals your default gateway, directly connected networks, and any static routes - essential for diagnosing connectivity issues.
 
 ## Display the Routing Table
 
 ```bash
 # Show kernel routing table (same as route -n)
+
 netstat -r
 
-# Numeric output (no DNS lookups — faster)
+# Numeric output (no DNS lookups - faster)
 netstat -rn
 
 # IPv4 only
@@ -55,7 +56,7 @@ netstat -rn | grep '^0.0.0.0'
 # All traffic not matching a more specific route goes to 192.168.1.1
 
 # If default route is missing:
-# No internet connectivity — only local network works
+# No internet connectivity - only local network works
 ```
 
 ## Troubleshoot Routing Problems
@@ -67,7 +68,7 @@ netstat -rn | grep "10.50.0"
 
 # Check which interface handles local traffic
 netstat -rn | grep "192.168.1"
-# Should show U (not UG) — directly connected
+# Should show U (not UG) - directly connected
 
 # Check for metric (lower = preferred)
 netstat -rn
@@ -95,7 +96,7 @@ ip route show
 
 ```bash
 #!/bin/bash
-# check-routes.sh — Verify critical routes exist
+# check-routes.sh - Verify critical routes exist
 
 check_route() {
     DEST="$1"
@@ -111,4 +112,4 @@ check_route "192.168.1.0"     # Local LAN
 check_route "10.0.0.0"        # VPN network
 ```
 
-The routing table is the first place to check when a host can't reach a destination — if there's no matching route, packets are dropped before they ever leave the machine.
+The routing table is the first place to check when a host can't reach a destination - if there's no matching route, packets are dropped before they ever leave the machine.

@@ -22,6 +22,7 @@ Deploy Milvus using the official Helm chart:
 
 ```bash
 # Add Milvus Helm repository
+
 helm repo add milvus https://milvus-io.github.io/milvus-helm/
 helm repo update
 

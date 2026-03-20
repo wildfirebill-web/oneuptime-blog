@@ -34,6 +34,7 @@ Here is the format Vertex AI expects:
 
 ```python
 # prepare_data.py
+
 # Prepare training data for Gemini fine-tuning
 
 import json

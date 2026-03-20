@@ -25,6 +25,7 @@ Key differences from RHEL/Debian-based systems:
 
 ```ini
 # inventory/hosts
+
 [sles]
 sles-web01 ansible_host=10.0.6.10
 sles-db01  ansible_host=10.0.6.20

@@ -36,6 +36,7 @@ DMS requires the source MongoDB to be configured as a replica set. This is becau
 
 ```bash
 # If running standalone MongoDB, convert to a replica set
+
 # Edit mongod.conf and add:
 # replication:
 #   replSetName: "rs0"

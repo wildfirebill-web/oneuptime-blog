@@ -14,6 +14,7 @@ Ubuntu handles SMB/CIFS mounts through the `cifs-utils` package, which provides 
 
 ```bash
 # Install the CIFS kernel module and utilities
+
 sudo apt update
 sudo apt install -y cifs-utils
 

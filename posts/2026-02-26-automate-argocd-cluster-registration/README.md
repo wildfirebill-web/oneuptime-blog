@@ -28,6 +28,7 @@ The simplest automation approach wraps the ArgoCD CLI:
 ```bash
 #!/bin/bash
 # register-cluster.sh - Register a Kubernetes cluster with ArgoCD
+
 set -euo pipefail
 
 CLUSTER_NAME="${1:?Usage: $0 <cluster-name> <kubeconfig-context>}"

@@ -1,4 +1,4 @@
-# How to Troubleshoot Container Logs Not Showing in Portainer
+# How to Troubleshoot Container Logs Not Showing in Portainer - Container
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -22,6 +22,7 @@ Navigate to **Containers > [Container Name] > Stats** to view:
 
 ```bash
 # Access container logs via Docker CLI
+
 docker logs my-container
 
 # Follow logs in real time

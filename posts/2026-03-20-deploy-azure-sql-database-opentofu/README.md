@@ -68,6 +68,7 @@ resource "azurerm_mssql_database" "app" {
 
 ```hcl
 # Allow Azure services
+
 resource "azurerm_mssql_firewall_rule" "azure_services" {
   name             = "allow-azure-services"
   server_id        = azurerm_mssql_server.main.id

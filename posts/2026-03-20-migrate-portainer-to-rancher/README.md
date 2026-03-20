@@ -1,4 +1,4 @@
-# How to Migrate from Portainer to Rancher
+# How to Migrate from Portainer to Rancher - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -24,6 +24,7 @@ In Portainer, navigate to each environment and document:
 
 ```bash
 # Export Docker Compose stacks from Portainer
+
 # Use Portainer API to list stacks
 curl -s -H "X-API-Key: your-portainer-api-key" \
   https://portainer.example.com/api/stacks | jq '.[] | {name, type, status}'

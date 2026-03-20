@@ -26,6 +26,7 @@ Flux uses two CRDs: Provider (destination) and Alert (filter + routing):
 
 ```yaml
 # Slack provider
+
 apiVersion: notification.toolkit.fluxcd.io/v1
 kind: Provider
 metadata:

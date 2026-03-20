@@ -14,6 +14,7 @@ Azure Database for MySQL Flexible Server is a fully managed MySQL service offeri
 
 ```hcl
 # main.tf - VNet and subnet for MySQL Flexible Server
+
 resource "azurerm_subnet" "mysql_subnet" {
   name                 = "mysql-subnet"
   resource_group_name  = azurerm_resource_group.rg.name

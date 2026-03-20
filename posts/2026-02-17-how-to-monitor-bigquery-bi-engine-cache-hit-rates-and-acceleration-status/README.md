@@ -134,6 +134,7 @@ You can also check the reservation itself through the API.
 
 ```bash
 # Check current BI Engine reservation details including utilization
+
 curl -s \
   -H "Authorization: Bearer $(gcloud auth print-access-token)" \
   "https://bigqueryreservation.googleapis.com/v1/projects/my-project/locations/us-central1/biReservation" \

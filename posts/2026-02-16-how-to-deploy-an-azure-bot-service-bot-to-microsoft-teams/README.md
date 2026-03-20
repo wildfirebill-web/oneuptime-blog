@@ -50,6 +50,7 @@ Create a directory for your Teams app package:
 
 ```bash
 # Create the Teams app package structure
+
 mkdir teams-app
 cd teams-app
 ```

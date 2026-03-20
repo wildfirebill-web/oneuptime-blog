@@ -22,6 +22,7 @@ Build a service account for deploying applications.
 
 ```yaml
 # rbac-cicd-deployer.yaml
+
 apiVersion: v1
 kind: ServiceAccount
 metadata:

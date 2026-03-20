@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, IPv6, kube-proxy, iptables, ipvs, Dual-Stack
+Tags: Kubernetes, IPv6, Kube-proxy, iptables, IPVS, Dual-Stack
 
 Description: Configure kube-proxy for IPv6 and dual-stack Kubernetes clusters, understand how kube-proxy manages iptables and ipvs rules for IPv6 services, and troubleshoot IPv6 service routing issues.
 
@@ -14,6 +14,7 @@ kube-proxy manages network rules that route traffic to Kubernetes Services. In d
 
 ```yaml
 # kube-proxy ConfigMap for dual-stack
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

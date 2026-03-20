@@ -18,6 +18,7 @@ RHEL defaults to a 5-second timeout, which is a reasonable middle ground.
 
 ```bash
 # View the current GRUB timeout setting
+
 grep GRUB_TIMEOUT /etc/default/grub
 
 # Check what the running GRUB config says

@@ -26,6 +26,7 @@ helm repo update
 
 ```yaml
 # nats-values.yaml
+
 cluster:
   enabled: true
   replicas: 3    # Three-node cluster

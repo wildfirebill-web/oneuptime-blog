@@ -26,6 +26,7 @@ Evaluate based on your specific requirements for support, compatibility, perform
 
 ```bash
 # Enable the service to start on boot
+
 sudo systemctl enable <service-name>
 
 # Start the service

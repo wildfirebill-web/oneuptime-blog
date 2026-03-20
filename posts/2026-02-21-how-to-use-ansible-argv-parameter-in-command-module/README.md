@@ -18,6 +18,7 @@ Consider a scenario where you need to create a file with spaces in the name, or 
 
 ```yaml
 # using cmd with special characters can be tricky
+
 - name: Create file with spaces (cmd approach)
   ansible.builtin.command:
     cmd: touch "/tmp/my file with spaces.txt"

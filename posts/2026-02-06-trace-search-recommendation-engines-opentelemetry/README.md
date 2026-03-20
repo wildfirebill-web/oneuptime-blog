@@ -53,6 +53,7 @@ from opentelemetry.exporter.otlp.proto.grpc.metric_exporter import OTLPMetricExp
 from opentelemetry.sdk.resources import Resource
 
 # Resource identifies this service in all telemetry data
+
 resource = Resource.create({
     "service.name": "search-service",
     "service.version": "3.1.0",

@@ -44,6 +44,7 @@ The most common way to set forks is in your ansible.cfg file:
 
 ```ini
 # ansible.cfg
+
 [defaults]
 # Set the default number of parallel processes
 forks = 20

@@ -24,6 +24,7 @@ The notification-controller supports the same `--concurrent` flag as the other F
 
 ```yaml
 # clusters/my-cluster/flux-system/notification-controller-patch.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -78,7 +79,7 @@ The notification-controller is generally lightweight compared to the kustomize o
 
 If one of your alert providers has high latency, increasing concurrency prevents it from blocking deliveries to other providers. However, the notification-controller does not implement per-provider rate limiting, so be careful not to overwhelm external services with too many concurrent requests.
 
-## Resource Adjustments
+Resource Adjustments
 
 The notification-controller uses relatively little CPU and memory, but you should still bump limits when increasing concurrency:
 

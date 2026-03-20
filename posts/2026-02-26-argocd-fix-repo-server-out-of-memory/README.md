@@ -52,6 +52,7 @@ The biggest memory consumers are:
 
 ```bash
 # Check pod status and restart count
+
 kubectl get pods -n argocd -l app.kubernetes.io/name=argocd-repo-server
 
 # Check termination reason

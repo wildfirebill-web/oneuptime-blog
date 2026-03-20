@@ -296,6 +296,7 @@ Each subset generates its own Envoy cluster with its own metrics:
 
 ```bash
 # Check stats for a specific subset
+
 kubectl exec deploy/my-service -c istio-proxy -- \
   curl -s localhost:15000/stats | grep "outbound|8080|stable|product-service"
 

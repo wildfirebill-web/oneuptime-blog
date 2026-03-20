@@ -37,6 +37,7 @@ Install the required packages to get started with OpenTelemetry metrics collecti
 
 ```bash
 # Install the core OpenTelemetry SDK and metrics packages
+
 npm install @opentelemetry/sdk-node \
   @opentelemetry/sdk-metrics \
   @opentelemetry/exporter-metrics-otlp-grpc \

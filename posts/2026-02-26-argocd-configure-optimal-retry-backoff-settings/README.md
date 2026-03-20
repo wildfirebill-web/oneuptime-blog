@@ -74,6 +74,7 @@ The initial backoff duration should be long enough for the transient issue to re
 
 ```yaml
 # For transient API server errors (503, timeouts)
+
 # Short initial duration - these resolve quickly
 retry:
   limit: 5

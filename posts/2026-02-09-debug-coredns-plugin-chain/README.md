@@ -37,6 +37,7 @@ Typical problems and their symptoms:
 
 ```yaml
 # BAD: Cache after forward
+
 .:53 {
     forward . 8.8.8.8
     cache 30  # Too late - queries already forwarded

@@ -32,6 +32,7 @@ Meilisearch ships as a single binary with no dependencies:
 
 ```bash
 # Download and install the latest version
+
 curl -L https://install.meilisearch.com | sh
 
 # Move the binary to a system-wide location

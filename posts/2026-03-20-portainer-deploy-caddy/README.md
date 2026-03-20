@@ -1,4 +1,4 @@
-# How to Deploy Caddy via Portainer
+# How to Deploy Caddy via Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -47,6 +47,7 @@ Create `Caddyfile` in your stack directory:
 # Caddyfile - Caddy web server configuration
 
 # Global options
+
 {
     email admin@example.com
     

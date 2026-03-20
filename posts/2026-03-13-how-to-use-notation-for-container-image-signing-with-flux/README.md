@@ -25,6 +25,7 @@ Install Notation:
 
 ```bash
 # Install Notation on Linux
+
 curl -sSL https://github.com/notaryproject/notation/releases/latest/download/notation_linux_amd64.tar.gz | tar -xz -C /usr/local/bin notation
 
 # Install on macOS

@@ -23,6 +23,7 @@ You can override the location with the `TF_CLI_CONFIG_FILE` environment variable
 
 ```bash
 # Point Terraform at a custom config file location
+
 export TF_CLI_CONFIG_FILE="/path/to/custom/terraformrc"
 ```
 

@@ -1,4 +1,4 @@
-# How to Set Up GitOps for Portainer Configuration with Terraform
+# How to Set Up GitOps for Portainer Configuration with Terraform (2)
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Learn how to implement GitOps for Portainer itself using Terraform,
 
 ## Introduction
 
-GitOps for Portainer means that your Portainer configuration — environments, users, teams, stacks, and access policies — is stored in Git and applied automatically. Changes are proposed via pull requests, reviewed by teammates, and applied by a CI/CD pipeline. This creates an auditable, collaborative workflow for infrastructure management.
+GitOps for Portainer means that your Portainer configuration - environments, users, teams, stacks, and access policies - is stored in Git and applied automatically. Changes are proposed via pull requests, reviewed by teammates, and applied by a CI/CD pipeline. This creates an auditable, collaborative workflow for infrastructure management.
 
 ## Prerequisites
 
@@ -19,7 +19,7 @@ GitOps for Portainer means that your Portainer configuration — environments, u
 
 ## Step 1: Repository Structure
 
-```
+```text
 portainer-infra/
 ├── .github/
 │   └── workflows/
@@ -129,10 +129,11 @@ module "prod_k8s" {
 }
 ```
 
-## Step 4: GitHub Actions — Plan on PR
+## Step 4: GitHub Actions - Plan on PR
 
 ```yaml
 # .github/workflows/plan.yml
+
 name: Terraform Plan
 
 on:
@@ -184,11 +185,11 @@ jobs:
               issue_number: context.issue.number,
               owner: context.repo.owner,
               repo: context.repo.repo,
-              body: `## Terraform Plan — ${{ matrix.environment }}\n\`\`\`\n${plan.slice(-3000)}\n\`\`\``
+              body: `## Terraform Plan - ${{ matrix.environment }}\n```\n${plan.slice(-3000)}\n````
             });
 ```
 
-## Step 5: GitHub Actions — Apply on Merge
+## Step 5: GitHub Actions - Apply on Merge
 
 ```yaml
 # .github/workflows/apply.yml
@@ -267,4 +268,4 @@ jobs:
 
 ## Conclusion
 
-GitOps for Portainer configuration with Terraform creates a fully auditable, collaborative infrastructure management process. Every change to Portainer — whether adding a new environment, provisioning users, or deploying a stack — goes through a PR review process with automated `terraform plan` output. Drift detection ensures your actual Portainer state stays aligned with your declared configuration. This approach scales well for large teams and multi-environment setups.
+GitOps for Portainer configuration with Terraform creates a fully auditable, collaborative infrastructure management process. Every change to Portainer - whether adding a new environment, provisioning users, or deploying a stack - goes through a PR review process with automated `terraform plan` output. Drift detection ensures your actual Portainer state stays aligned with your declared configuration. This approach scales well for large teams and multi-environment setups.

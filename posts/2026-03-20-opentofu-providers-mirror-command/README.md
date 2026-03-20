@@ -1,11 +1,10 @@
----
-title: "Using tofu providers mirror in OpenTofu"
-author: nawazdhandala
-tags: opentofu, terraform, iac, providers, mirror
-description: "Learn how to use the tofu providers mirror command to download providers for offline use and air-gapped deployments."
----
-
 # Using tofu providers mirror in OpenTofu
+
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
+
+Tags: OpenTofu, Terraform, IaC, Provider, Mirror
+
+Description: Learn how to use the tofu providers mirror command to download providers for offline use and air-gapped deployments.
 
 The `tofu providers mirror` command downloads provider packages from the registry and saves them in a local directory, creating a filesystem mirror. This mirror can then be used for offline installations or shared across your organization.
 
@@ -13,6 +12,7 @@ The `tofu providers mirror` command downloads provider packages from the registr
 
 ```bash
 # Download providers for the current configuration to a directory
+
 tofu providers mirror /path/to/mirror
 
 # Example
@@ -26,7 +26,7 @@ tofu providers mirror /opt/terraform-providers
 
 After running `tofu providers mirror /opt/tf-mirror`:
 
-```
+```text
 /opt/tf-mirror/
 └── registry.opentofu.org/
     └── hashicorp/

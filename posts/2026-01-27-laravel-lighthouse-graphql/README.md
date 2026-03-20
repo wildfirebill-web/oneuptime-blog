@@ -27,6 +27,7 @@ Key benefits:
 
 ```bash
 # Install via Composer
+
 composer require nuwave/lighthouse
 
 # Publish the default schema

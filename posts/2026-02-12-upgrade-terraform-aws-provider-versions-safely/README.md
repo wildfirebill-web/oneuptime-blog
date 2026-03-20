@@ -24,6 +24,7 @@ Your version constraint in Terraform controls which upgrades are allowed:
 
 ```hcl
 # Common version constraint patterns
+
 terraform {
   required_providers {
     aws = {

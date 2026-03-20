@@ -111,6 +111,7 @@ sudo ipa-getcert status -f /etc/pki/tls/certs/httpd.crt
 
 ```bash
 # Find all certificates
+
 ipa cert-find
 
 # Find certificates for a specific host

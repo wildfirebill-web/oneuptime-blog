@@ -27,6 +27,7 @@ Inspect the k0sctl.yaml to confirm Cilium is correctly specified.
 
 ```yaml
 # k0sctl.yaml - Example with Cilium as CNI
+
 apiVersion: k0sctl.k0sproject.io/v1beta1
 kind: Cluster
 metadata:

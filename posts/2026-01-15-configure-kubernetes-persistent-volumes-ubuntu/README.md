@@ -30,6 +30,7 @@ Update your system packages and install essential tools for Kubernetes storage m
 
 ```bash
 # Update system packages
+
 sudo apt update && sudo apt upgrade -y
 
 # Install required packages for NFS and iSCSI (common storage backends)

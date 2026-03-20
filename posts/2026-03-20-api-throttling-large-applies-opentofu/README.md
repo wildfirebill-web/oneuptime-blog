@@ -16,6 +16,7 @@ The most direct solution is limiting how many resources OpenTofu creates concurr
 
 ```bash
 # Default parallelism is 10; reduce for throttle-prone operations
+
 tofu apply -parallelism=5 -out=tfplan
 
 # For very large applies with many IAM/S3 calls
@@ -44,7 +45,7 @@ provider "aws" {
 
 Break a monolithic configuration into smaller, targeted modules that can be applied independently.
 
-```
+```text
 infrastructure/
 ├── networking/          # VPC, subnets, route tables
 ├── security/            # IAM roles, security groups, KMS

@@ -20,6 +20,7 @@ Create a file named `docker-bake.hcl` in your project root:
 # docker-bake.hcl - simple single-target build
 
 # Define a build target
+
 target "app" {
   # Path to the Dockerfile
   dockerfile = "Dockerfile"

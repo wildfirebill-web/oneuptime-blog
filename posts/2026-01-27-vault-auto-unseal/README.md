@@ -46,6 +46,7 @@ AWS Key Management Service (KMS) provides a secure and highly available key mana
 
 ```bash
 # Create a KMS key for Vault auto-unseal
+
 # This creates a symmetric key that Vault will use to encrypt/decrypt its master key
 aws kms create-key \
   --description "Vault Auto-Unseal Key" \

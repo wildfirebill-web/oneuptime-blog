@@ -26,6 +26,7 @@ This guide walks through a systematic debugging approach for namespace-based Cal
 
 ```bash
 # Check labels on all namespaces
+
 kubectl get namespaces --show-labels
 
 # Check specific namespace

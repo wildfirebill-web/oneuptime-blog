@@ -37,6 +37,7 @@ The most direct approach - tell MetalLB exactly which IP you want:
 
 ```bash
 # Check the current IP of your service
+
 kubectl get svc my-service -o jsonpath='{.status.loadBalancer.ingress[0].ip}'
 # Output: 10.0.50.5
 ```

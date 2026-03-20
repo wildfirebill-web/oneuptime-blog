@@ -48,6 +48,7 @@ Enable the CSIStorageCapacity feature gate and configure the CSI driver to repor
 
 ```yaml
 # CSI driver configuration with storage capacity tracking
+
 apiVersion: storage.k8s.io/v1
 kind: CSIDriver
 metadata:

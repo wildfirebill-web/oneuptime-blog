@@ -14,6 +14,7 @@ HAProxy is a high-performance load balancer used in production by major companie
 
 ```yaml
 # roles/haproxy/tasks/main.yml
+
 ---
 - name: Add HAProxy PPA
   ansible.builtin.apt_repository:

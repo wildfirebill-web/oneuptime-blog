@@ -28,6 +28,7 @@ The simplest case - you have a VPC with private subnets and want to create a sub
 
 ```hcl
 # DB subnet group using existing private subnets
+
 resource "aws_db_subnet_group" "main" {
   name        = "myapp-db-subnets"
   description = "DB subnet group for myapp databases"

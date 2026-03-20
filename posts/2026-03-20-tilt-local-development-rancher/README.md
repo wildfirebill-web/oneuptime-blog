@@ -1,4 +1,4 @@
-# How to Set Up Tilt for Local Development with Rancher
+# How to Set Up Tilt for Local Development with Rancher - Local Development
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -14,6 +14,7 @@ Tilt is a developer experience tool that provides a visual dashboard for your Ku
 
 ```bash
 # macOS
+
 brew install tilt-dev/tap/tilt
 
 # Linux

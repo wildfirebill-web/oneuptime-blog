@@ -84,6 +84,7 @@ If your application listens on a port that conflicts with Istio's internal ports
 
 ```bash
 # Check what ports your listeners are on
+
 istioctl proxy-config listener productpage-v1-6b746f74dc-9rlmh.bookinfo | awk '{print $2}' | sort -n | uniq
 ```
 

@@ -30,6 +30,7 @@ Navigate to https://console.redhat.com/insights/remediations to see all your rem
 
 ```bash
 # You can also list remediations using the Insights API
+
 curl -s -H "Authorization: Bearer $TOKEN" \
   https://console.redhat.com/api/remediations/v1/remediations | \
   python3 -m json.tool

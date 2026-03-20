@@ -1,4 +1,4 @@
-# How to Create Named Volumes in Portainer
+# How to Create Named Volumes in Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -34,7 +34,7 @@ Named volumes are stored in Docker's volume directory:
 2. Click **Add volume**.
 3. Fill in the form:
 
-```
+```text
 Name:   postgres-data
 Driver: local
 ```
@@ -45,7 +45,7 @@ Driver: local
 
 For the `local` driver, you can configure additional options:
 
-```
+```text
 Name:   app-data
 Driver: local
 Options:
@@ -66,7 +66,7 @@ After creating a volume, attach it to a container:
 4. Under **Volume**, select the named volume from the dropdown.
 5. Enter the container path.
 
-```
+```text
 Volume:          postgres-data
 Container path:  /var/lib/postgresql/data
 Mode:            Read/Write
@@ -78,6 +78,7 @@ The most common way to use named volumes:
 
 ```yaml
 # docker-compose.yml with named volumes
+
 version: "3.8"
 
 services:
@@ -114,7 +115,7 @@ services:
       - postgres
       - redis
 
-# Volume definitions — Docker creates these automatically
+# Volume definitions - Docker creates these automatically
 volumes:
   postgres_data:     # Default: local driver
   redis_data:

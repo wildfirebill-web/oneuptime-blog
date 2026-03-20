@@ -24,6 +24,7 @@ You need:
 
 ```bash
 # Create the ACS resource
+
 az communication create \
   --name my-acs-resource \
   --resource-group communication-rg \

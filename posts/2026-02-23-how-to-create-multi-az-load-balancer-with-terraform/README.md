@@ -24,6 +24,7 @@ Create a VPC with public and private subnets across three AZs:
 
 ```hcl
 # Configure the AWS provider
+
 terraform {
   required_providers {
     aws = {

@@ -571,6 +571,7 @@ Visual testing in CI requires special consideration for baseline management, cro
 
 ```yaml
 # .github/workflows/visual-tests.yml
+
 name: Visual Regression Tests
 
 on:

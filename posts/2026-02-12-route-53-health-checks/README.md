@@ -26,6 +26,7 @@ The most common type. Route 53 sends HTTP, HTTPS, or TCP requests from health ch
 
 ```bash
 # Create an HTTPS health check
+
 aws route53 create-health-check \
   --caller-reference "web-app-health-$(date +%s)" \
   --health-check-config '{

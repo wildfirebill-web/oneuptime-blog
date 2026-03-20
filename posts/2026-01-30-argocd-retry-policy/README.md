@@ -288,7 +288,7 @@ retry:
     maxDuration: 10m
 ```
 
-### Resource Quota Exhaustion
+Resource Quota Exhaustion
 
 If sync fails due to quota limits, retrying quickly does not help. Use longer intervals.
 
@@ -366,6 +366,7 @@ And the corresponding manifests with sync wave annotations.
 
 ```yaml
 # Wave -1: Custom Resource Definitions
+
 apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:

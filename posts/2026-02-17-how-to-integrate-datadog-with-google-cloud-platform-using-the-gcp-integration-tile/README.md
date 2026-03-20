@@ -27,6 +27,7 @@ Datadog needs a service account with specific permissions to read metrics and lo
 
 ```bash
 # Create a service account for Datadog
+
 gcloud iam service-accounts create datadog-integration \
     --display-name="Datadog GCP Integration" \
     --project=my-gcp-project

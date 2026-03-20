@@ -77,6 +77,7 @@ Managing static host entries gets tedious. A better approach uses a separate Con
 
 ```yaml
 # split-horizon-records.yaml
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

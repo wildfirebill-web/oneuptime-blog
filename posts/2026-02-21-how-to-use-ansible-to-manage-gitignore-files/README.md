@@ -14,6 +14,7 @@ A well-crafted `.gitignore` file prevents unwanted files from being tracked: bui
 
 ```yaml
 # playbook-gitignore.yml
+
 # Deploys a comprehensive .gitignore file to a project repository
 - name: Deploy .gitignore
   hosts: webservers

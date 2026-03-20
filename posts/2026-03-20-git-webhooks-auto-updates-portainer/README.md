@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, GitOps, Webhooks, GitHub, Auto-Updates
+Tags: Portainer, GitOps, Webhooks, GitHub, Auto-Update
 
 Description: Learn how to configure Portainer and your Git repository to automatically redeploy stacks via webhooks on every push.
 
@@ -48,6 +48,7 @@ Instead of Portainer polling Git for changes, webhooks let your Git provider (Gi
 
 ```bash
 # Test the Portainer stack webhook manually
+
 curl -X POST "https://portainer.mycompany.com/api/stacks/webhooks/abc123token"
 # Expect: 204 No Content
 
@@ -94,4 +95,4 @@ In Portainer:
 
 ## Conclusion
 
-Git webhooks provide the fastest Portainer auto-update mechanism — deployments trigger within seconds of a push. Combine them with your CI/CD pipeline (build image, update tag in docker-compose.yml, commit, push) for a complete automated delivery chain.
+Git webhooks provide the fastest Portainer auto-update mechanism - deployments trigger within seconds of a push. Combine them with your CI/CD pipeline (build image, update tag in docker-compose.yml, commit, push) for a complete automated delivery chain.

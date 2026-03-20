@@ -14,6 +14,7 @@ powertop is an Intel-developed tool that analyzes power consumption on Linux sys
 
 ```bash
 # Install powertop from the RHEL repositories
+
 sudo dnf install -y powertop
 ```
 

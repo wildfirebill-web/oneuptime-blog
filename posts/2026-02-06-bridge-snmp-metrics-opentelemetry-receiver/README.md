@@ -18,6 +18,7 @@ Here is a collector configuration that polls a set of network switches and route
 
 ```yaml
 # otel-collector-snmp.yaml
+
 receivers:
   snmp:
     # Poll every 30 seconds

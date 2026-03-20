@@ -14,7 +14,7 @@ Rancher Fleet is a GitOps engine built into Rancher that continuously synchroniz
 
 ## Architecture
 
-```
+```text
 Developer pushes to Git
          ↓
 GitHub Actions runs tests
@@ -45,6 +45,7 @@ Fleet uses cluster labels to target deployments:
 # In Rancher UI: Cluster Management → Edit Cluster → Labels and Annotations
 
 # Or via kubectl
+
 kubectl label cluster.fleet.cattle.io/production \
     env=production \
     region=us-east-1 \
@@ -243,8 +244,8 @@ kubectl describe gitrepo myapp -n fleet-default
 ### Rancher UI Monitoring
 
 1. Open Rancher → **Continuous Delivery** (Fleet)
-2. Select **Git Repos** — see sync status for each repo
-3. Select **Bundles** — see per-cluster deployment status
+2. Select **Git Repos** - see sync status for each repo
+3. Select **Bundles** - see per-cluster deployment status
 4. Red = out of sync or error, Green = deployed successfully
 
 ---
@@ -266,9 +267,9 @@ git push origin main
 
 ## Best Practices
 
-1. **Use tags not branches** for production deployments — tags are immutable
+1. **Use tags not branches** for production deployments - tags are immutable
 2. **Validate manifests in CI** before they reach Fleet
-3. **Monitor bundle status** with alerting — failed bundles should page on-call
+3. **Monitor bundle status** with alerting - failed bundles should page on-call
 4. **Use `prune: true`** to automatically clean up deleted resources
 5. **Separate config repos** from app code repos for cleaner history
 

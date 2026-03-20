@@ -35,6 +35,7 @@ The most common cause is simply a typo in the variable name.
 
 ```yaml
 # vars/main.yml - Variable definition
+
 database_host: "db.example.com"
 
 # tasks/main.yml - WRONG: typo in variable name

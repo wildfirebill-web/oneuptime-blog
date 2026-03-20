@@ -719,6 +719,7 @@ CREATE TABLE dead_letter_messages (
 
 ```yaml
 # Prometheus alerting rules for message loss detection
+
 groups:
   - name: message_reliability
     rules:

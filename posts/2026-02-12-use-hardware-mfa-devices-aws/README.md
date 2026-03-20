@@ -65,6 +65,7 @@ You can also do this via CLI, though it's more involved:
 
 ```bash
 # Enable a FIDO2 security key for an IAM user
+
 # First, start the registration from the console
 # CLI registration for FIDO2 requires the WebAuthn API which is browser-based
 

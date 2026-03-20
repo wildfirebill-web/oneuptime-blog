@@ -20,6 +20,7 @@ Consider this simple Compute Engine configuration:
 
 ```hcl
 # main.tf - Original configuration
+
 resource "google_compute_instance" "web" {
   name         = "web-server"
   machine_type = "e2-medium"

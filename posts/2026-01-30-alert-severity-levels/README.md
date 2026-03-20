@@ -74,6 +74,7 @@ Critical alerts represent active incidents affecting users or revenue. These dem
 
 ```yaml
 # Critical alert: Database connection pool exhausted
+
 # All new requests are failing
 alert: DatabaseConnectionPoolExhausted
 expr: |

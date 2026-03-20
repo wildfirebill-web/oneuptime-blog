@@ -31,6 +31,7 @@ The primary tool for managing initramfs images is `update-initramfs`:
 
 ```bash
 # Update initramfs for the currently running kernel
+
 sudo update-initramfs -u
 
 # Update for a specific kernel version

@@ -25,6 +25,7 @@ This guide covers the more common full GPU passthrough for NVIDIA GPUs, with not
 
 ```bash
 # Verify GPU is present
+
 lspci | grep -i "vga\|3d\|display"
 
 # For NVIDIA GPUs specifically

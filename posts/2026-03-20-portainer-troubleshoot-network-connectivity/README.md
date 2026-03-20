@@ -29,6 +29,7 @@ Container networking issues are among the most common problems in Docker environ
 
 ```bash
 # Check which networks a container is on:
+
 docker inspect container1 --format '{{range $net, $_ := .NetworkSettings.Networks}}{{$net}} {{end}}'
 docker inspect container2 --format '{{range $net, $_ := .NetworkSettings.Networks}}{{$net}} {{end}}'
 
@@ -144,15 +145,15 @@ docker run -p 8081:8080 my-image   # Map to different host port
 ## Step 7: Common Fixes Summary
 
 ```bash
-# Fix 1: Containers on different networks — connect them:
+# Fix 1: Containers on different networks - connect them:
 docker network connect shared-net container-a
 
-# Fix 2: Default bridge (no DNS) — recreate on custom network:
+# Fix 2: Default bridge (no DNS) - recreate on custom network:
 docker network create app-net
 docker stop my-app && docker rm my-app
 docker run -d --network app-net --name my-app my-image
 
-# Fix 3: No internet from container — check forwarding:
+# Fix 3: No internet from container - check forwarding:
 sudo sysctl net.ipv4.ip_forward
 # Should be 1; if 0:
 sudo sysctl -w net.ipv4.ip_forward=1
@@ -169,4 +170,4 @@ sudo systemctl restart docker
 
 ## Conclusion
 
-Systematic troubleshooting starts with verifying both containers share the same custom network (not the default bridge), then testing connectivity with a debug container, checking iptables and port bindings, and investigating MTU mismatches for intermittent failures. The `nicolaka/netshoot` image is the most complete debugging toolkit — deploy it on any Docker network for comprehensive diagnostics. Most connectivity issues resolve by ensuring containers are on the same custom bridge network and that Docker's iptables rules are intact.
+Systematic troubleshooting starts with verifying both containers share the same custom network (not the default bridge), then testing connectivity with a debug container, checking iptables and port bindings, and investigating MTU mismatches for intermittent failures. The `nicolaka/netshoot` image is the most complete debugging toolkit - deploy it on any Docker network for comprehensive diagnostics. Most connectivity issues resolve by ensuring containers are on the same custom bridge network and that Docker's iptables rules are intact.

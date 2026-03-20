@@ -70,6 +70,7 @@ Before configuring Interconnect, ensure you have the following in place.
 
 ```bash
 # Verify you have the necessary IAM permissions
+
 gcloud projects get-iam-policy my-project \
     --flatten="bindings[].members" \
     --filter="bindings.role:roles/compute.networkAdmin"

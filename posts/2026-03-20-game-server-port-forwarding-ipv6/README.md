@@ -16,6 +16,7 @@ With IPv4, most home and enterprise networks use NAT requiring explicit port for
 
 ```bash
 # Check your server's global IPv6 address
+
 ip -6 addr show scope global
 
 # Verify outbound IPv6 connectivity

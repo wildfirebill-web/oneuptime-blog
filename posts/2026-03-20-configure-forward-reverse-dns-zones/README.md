@@ -14,6 +14,7 @@ Forward DNS resolves names to IP addresses (A records). Reverse DNS resolves IP 
 
 ```bash
 # Forward zone: example.com → 10.20.0.x
+
 # /etc/bind/zones/db.example.com:
 
 cat > /etc/bind/zones/db.example.com << 'EOF'
@@ -174,4 +175,4 @@ dig NS 0.20.10.in-addr.arpa
 
 ## Conclusion
 
-Forward and reverse DNS zones are configured separately but should be consistent — every PTR record should have a matching A record pointing back. Forward zones use standard hostnames as record names. Reverse zones use the network address reversed as the zone name, with individual PTR records using just the host portion. After configuration, test both directions with `dig` and `dig -x`. For public IP addresses, ensure your ISP has delegated the reverse zone to your nameservers before PTR records will work for external queries.
+Forward and reverse DNS zones are configured separately but should be consistent - every PTR record should have a matching A record pointing back. Forward zones use standard hostnames as record names. Reverse zones use the network address reversed as the zone name, with individual PTR records using just the host portion. After configuration, test both directions with `dig` and `dig -x`. For public IP addresses, ensure your ISP has delegated the reverse zone to your nameservers before PTR records will work for external queries.

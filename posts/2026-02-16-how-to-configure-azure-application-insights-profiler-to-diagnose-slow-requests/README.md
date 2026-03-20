@@ -49,6 +49,7 @@ For programmatic setup, you can enable it through application settings:
 
 ```bash
 # Enable Application Insights Profiler on an App Service
+
 az webapp config appsettings set \
   --resource-group myRG \
   --name myWebApp \

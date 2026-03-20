@@ -51,6 +51,7 @@ This error occurs when you try to create a subnet with an IP range that overlaps
 
 ```bash
 # List all subnets in the project
+
 gcloud compute networks subnets list
 
 # Check specific network's subnets

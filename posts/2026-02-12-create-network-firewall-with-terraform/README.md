@@ -33,6 +33,7 @@ The firewall needs its own subnets, separate from your application subnets:
 
 ```hcl
 # Firewall subnets - one per AZ
+
 resource "aws_subnet" "firewall" {
   count             = length(var.availability_zones)
   vpc_id            = aws_vpc.main.id

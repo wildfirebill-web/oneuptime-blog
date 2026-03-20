@@ -158,6 +158,7 @@ This buildspec runs a full build and test cycle for a Node.js application.
 
 ```yaml
 # buildspec.yml
+
 version: 0.2
 
 env:

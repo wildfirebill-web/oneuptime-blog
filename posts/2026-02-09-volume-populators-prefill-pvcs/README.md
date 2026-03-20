@@ -29,6 +29,7 @@ Verify feature availability:
 
 ```bash
 # Check if volume data sources are available
+
 kubectl api-resources | grep -i volumepopulator
 
 # Check for VolumePopulator CRD

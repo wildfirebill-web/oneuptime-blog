@@ -165,6 +165,7 @@ Generate a token for the CI bot:
 
 ```bash
 # Create a local account for the CI bot
+
 kubectl patch configmap argocd-cm -n argocd --type merge -p '
 {
   "data": {

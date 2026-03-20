@@ -38,6 +38,7 @@ Note the **Client ID** and generate a **Client Secret**.
 kubectl create namespace teleport
 
 # GitHub OAuth credentials for Teleport SSO
+
 kubectl create secret generic teleport-github-secret \
   --namespace teleport \
   --from-literal=client-id=your_github_client_id \

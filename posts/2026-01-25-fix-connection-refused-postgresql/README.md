@@ -22,6 +22,7 @@ psql: error: could not connect to server: Connection refused
     TCP/IP connections on port 5432?
 
 # Or from application code:
+
 FATAL: could not connect to server: Connection refused
 ```
 

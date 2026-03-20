@@ -35,6 +35,7 @@ If you are creating a new storage account, specify geo-redundant replication fro
 
 ```bash
 # Create a storage account with RA-GZRS redundancy
+
 az storage account create \
   --name stdrprod2026 \
   --resource-group rg-dr \

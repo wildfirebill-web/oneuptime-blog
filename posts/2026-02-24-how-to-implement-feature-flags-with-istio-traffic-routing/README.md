@@ -260,6 +260,7 @@ Managing VirtualService YAML files manually works for a few features, but it doe
 
 ```yaml
 # feature-config.yaml (stored in a ConfigMap)
+
 features:
   new-checkout:
     service: checkout

@@ -21,6 +21,7 @@ from opentelemetry.sdk.metrics.export import PeriodicExportingMetricReader
 from opentelemetry.exporter.otlp.proto.grpc.metric_exporter import OTLPMetricExporter
 
 # Set up the meter provider
+
 reader = PeriodicExportingMetricReader(
     OTLPMetricExporter(endpoint="otel-collector.yourgame.com:4317"),
     export_interval_millis=10000

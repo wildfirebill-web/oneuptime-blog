@@ -38,6 +38,7 @@ Start with a simple Haystack application in Docker.
 
 ```dockerfile
 # Dockerfile
+
 # Haystack RAG application with FastAPI
 FROM python:3.11-slim
 

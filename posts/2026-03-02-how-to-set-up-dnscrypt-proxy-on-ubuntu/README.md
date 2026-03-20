@@ -19,6 +19,7 @@ sudo apt update
 sudo apt install dnscrypt-proxy
 
 # Check the version
+
 dnscrypt-proxy --version
 ```
 

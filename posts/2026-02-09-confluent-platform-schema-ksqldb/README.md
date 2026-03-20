@@ -360,6 +360,7 @@ from confluent_kafka.schema_registry.avro import AvroSerializer
 from confluent_kafka import Producer
 
 # Schema Registry client
+
 sr_client = SchemaRegistryClient({
     'url': 'http://schema-registry.confluent.svc.cluster.local:8081'
 })

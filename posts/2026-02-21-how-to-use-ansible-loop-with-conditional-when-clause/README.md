@@ -16,6 +16,7 @@ When you attach a `when` clause to a looped task, Ansible evaluates the conditio
 
 ```yaml
 # Process only items that match a condition
+
 - name: Install packages that are marked as required
   ansible.builtin.apt:
     name: "{{ item.name }}"

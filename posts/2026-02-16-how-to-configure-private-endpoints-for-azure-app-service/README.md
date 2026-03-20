@@ -35,6 +35,7 @@ The key behaviors:
 
 ```bash
 # Create a subnet for private endpoints (if you do not have one)
+
 az network vnet subnet create \
   --resource-group myAppRG \
   --vnet-name myVNet \

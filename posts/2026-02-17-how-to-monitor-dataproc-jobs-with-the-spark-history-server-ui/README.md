@@ -25,6 +25,7 @@ If the component gateway is not enabled on your cluster, you can enable it durin
 
 ```bash
 # Create a cluster with the component gateway enabled
+
 gcloud dataproc clusters create monitoring-cluster \
   --region=us-central1 \
   --image-version=2.1-debian11 \

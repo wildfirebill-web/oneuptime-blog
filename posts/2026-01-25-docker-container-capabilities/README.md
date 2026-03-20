@@ -51,6 +51,7 @@ Docker containers start with a limited set of capabilities by default:
 
 ```bash
 # View default capabilities
+
 docker run --rm alpine cat /proc/1/status | grep Cap
 
 # Decode capability bitmask

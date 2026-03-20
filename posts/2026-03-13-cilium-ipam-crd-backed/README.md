@@ -29,6 +29,7 @@ The CRD-backed IPAM is used automatically with cluster-pool mode:
 
 ```bash
 # Verify CRD-backed IPAM is active (default with cluster-pool)
+
 kubectl -n kube-system get configmap cilium-config \
   -o jsonpath='{.data.ipam}'
 # Should return: cluster-pool

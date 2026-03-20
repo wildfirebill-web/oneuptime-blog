@@ -95,6 +95,7 @@ def connect_to_milvus(
         raise ConnectionError("Failed to connect to Milvus")
 
 # Usage
+
 connect_to_milvus()
 ```
 
@@ -722,7 +723,7 @@ def configure_search_params(index_type: str, accuracy_priority: bool = False) ->
     return params.get(index_type, params["HNSW"])
 ```
 
-### Resource Management
+Resource Management
 
 ```python
 from pymilvus import Collection, utility

@@ -20,6 +20,7 @@ Restic for Cloud Backups can be installed and configured on RHEL to provide robu
 
 ```bash
 # Update the system first
+
 sudo dnf update -y
 
 # Install the required packages

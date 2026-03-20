@@ -22,6 +22,7 @@ Let us start by examining what each of these contains.
 
 ```yaml
 # disk-facts-overview.yml
+
 # Shows the main disk-related fact categories
 ---
 - name: Display disk facts overview

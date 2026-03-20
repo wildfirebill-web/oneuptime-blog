@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, GitHub Actions, Environment, CI/CD, DevOps, Infrastructure as Code, Approval
+Tags: Terraform, GitHub Actions, Environments, CI/CD, DevOps, Infrastructure as Code, Approval
 
 Description: Configure GitHub Actions environments for Terraform deployments with approval gates, environment-specific secrets, and promotion workflows across dev, staging, and production.
 
@@ -51,6 +51,7 @@ Here is a workflow that plans on PRs and applies through environments on merge:
 
 ```yaml
 # .github/workflows/terraform.yml
+
 name: Terraform Deploy
 
 on:

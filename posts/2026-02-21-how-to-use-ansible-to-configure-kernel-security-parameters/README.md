@@ -42,6 +42,7 @@ This playbook sets fundamental kernel security parameters using the sysctl modul
 
 ```yaml
 # kernel_hardening.yml - Apply kernel security parameters
+
 ---
 - name: Configure kernel security parameters
   hosts: all

@@ -29,6 +29,7 @@ The setup is almost identical to a single-region trail - you just add the `--is-
 
 ```bash
 # Create a multi-region trail
+
 aws cloudtrail create-trail \
   --name org-multi-region-trail \
   --s3-bucket-name cloudtrail-central-logs-123456789012 \

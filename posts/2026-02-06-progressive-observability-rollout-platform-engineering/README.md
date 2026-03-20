@@ -32,6 +32,7 @@ Deploy the OpenTelemetry Collector and configure it with conservative resource l
 
 ```yaml
 # phase1-collector-config.yaml
+
 # Minimal collector for the pilot phase - one service, basic pipeline
 receivers:
   otlp:

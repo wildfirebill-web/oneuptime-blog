@@ -179,6 +179,7 @@ Edit `postgresql.conf`:
 
 ```ini
 # Increase from default of 64
+
 max_locks_per_transaction = 256
 
 # For workloads with many partitions or tables per query

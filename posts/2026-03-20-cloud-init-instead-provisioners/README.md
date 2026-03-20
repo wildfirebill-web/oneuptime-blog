@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, cloud-init, EC2, Provisioners, Infrastructure as Code, AWS
+Tags: OpenTofu, Cloud-init, EC2, Provisioners, Infrastructure as Code, AWS
 
 Description: Learn how to replace OpenTofu remote-exec provisioners with cloud-init user data for more reliable and idiomatic instance initialization.
 
@@ -84,6 +84,7 @@ EOF
 
 ```hcl
 # templates/user_data.sh.tftpl
+
 #!/bin/bash
 APP_ENV="${app_env}"
 DB_HOST="${db_host}"

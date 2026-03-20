@@ -25,6 +25,7 @@ Or better, use Helm for more control:
 
 ```yaml
 # values.yaml for production EKS
+
 global:
   image:
     tag: v2.10.0

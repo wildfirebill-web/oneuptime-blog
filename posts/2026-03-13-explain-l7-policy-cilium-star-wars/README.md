@@ -37,6 +37,7 @@ The key is the `redirect` entry in the eBPF proxy map. When a TCP connection is 
 
 ```bash
 # View active proxy listeners
+
 kubectl exec -n kube-system ds/cilium -- cilium bpf proxy list
 
 # Check Envoy is running in the Cilium pod

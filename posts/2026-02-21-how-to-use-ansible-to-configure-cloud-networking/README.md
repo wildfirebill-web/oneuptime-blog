@@ -38,6 +38,7 @@ graph TD
 
 ```yaml
 # playbooks/aws-networking.yml
+
 ---
 - name: Configure AWS VPC networking
   hosts: localhost

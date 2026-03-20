@@ -25,6 +25,7 @@ K3s has minimal requirements compared to standard Kubernetes distributions.
 
 ```bash
 # Disable swap (optional for K3s but recommended)
+
 sudo swapoff -a
 
 # Ensure required kernel modules are loaded

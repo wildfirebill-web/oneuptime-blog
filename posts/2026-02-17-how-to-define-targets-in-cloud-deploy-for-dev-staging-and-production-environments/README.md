@@ -31,6 +31,7 @@ Enable the Cloud Deploy API if you have not already done so.
 
 ```bash
 # Enable the Cloud Deploy API in your project
+
 gcloud services enable clouddeploy.googleapis.com
 ```
 

@@ -35,6 +35,7 @@ When a cluster uses a token to register, Fleet creates a `Cluster` resource in t
 
 ```yaml
 # registration-token-default.yaml
+
 apiVersion: fleet.cattle.io/v1alpha1
 kind: ClusterRegistrationToken
 metadata:
@@ -236,4 +237,4 @@ kubectl get clusters.fleet.cattle.io -n fleet-default -w
 
 ## Conclusion
 
-ClusterRegistrationTokens are the secure gateway for onboarding Kubernetes clusters into Fleet management. By choosing appropriate TTLs for your use case — short-lived for one-time registrations and longer-lived for automated edge deployments — you balance security with operational convenience. Regular token rotation and workspace-level token isolation ensure that your Fleet management plane remains secure even as you scale to hundreds or thousands of managed clusters.
+ClusterRegistrationTokens are the secure gateway for onboarding Kubernetes clusters into Fleet management. By choosing appropriate TTLs for your use case - short-lived for one-time registrations and longer-lived for automated edge deployments - you balance security with operational convenience. Regular token rotation and workspace-level token isolation ensure that your Fleet management plane remains secure even as you scale to hundreds or thousands of managed clusters.

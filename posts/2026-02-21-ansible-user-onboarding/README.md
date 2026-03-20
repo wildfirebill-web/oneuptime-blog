@@ -14,6 +14,7 @@ When a new team member joins, they need accounts on servers, SSH access, appropr
 
 ```yaml
 # roles/onboarding/defaults/main.yml - User onboarding configuration
+
 onboarding_shell: /bin/bash
 onboarding_home_base: /home
 onboarding_skeleton_dir: /etc/skel

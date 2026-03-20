@@ -171,6 +171,7 @@ Add DNS records using etcdctl or API:
 
 ```bash
 # Install etcdctl in a pod
+
 kubectl run etcdctl --image=quay.io/coreos/etcd:v3.5.9 --rm -it -- sh
 
 # Inside the pod, set environment

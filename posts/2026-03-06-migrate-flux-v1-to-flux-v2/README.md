@@ -58,6 +58,7 @@ Before migrating, document everything Flux v1 is currently managing.
 
 ```bash
 # List all Flux v1 resources
+
 kubectl get all -n flux
 
 # Check Flux v1 configuration

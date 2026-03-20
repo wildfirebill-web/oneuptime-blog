@@ -364,6 +364,7 @@ Istio automatically generates metrics for all traffic passing through the mesh. 
 
 ```bash
 # Check p99 latency for model serving
+
 kubectl exec -n istio-system deploy/prometheus -- \
   promtool query instant 'histogram_quantile(0.99, sum(rate(istio_request_duration_milliseconds_bucket{destination_service="tf-serving.ml-serving.svc.cluster.local"}[5m])) by (le, destination_version))'
 ```

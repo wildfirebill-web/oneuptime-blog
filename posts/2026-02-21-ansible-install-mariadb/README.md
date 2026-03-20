@@ -35,6 +35,7 @@ roles/mariadb_install/
 
 ```yaml
 # roles/mariadb_install/defaults/main.yml
+
 # Default settings for MariaDB installation
 ---
 mariadb_version: "11.4"

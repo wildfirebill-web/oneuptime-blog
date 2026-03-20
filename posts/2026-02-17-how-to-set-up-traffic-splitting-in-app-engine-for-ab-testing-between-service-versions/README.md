@@ -20,6 +20,7 @@ Deploy version 1:
 
 ```bash
 # Deploy the current stable version
+
 gcloud app deploy app.yaml --version=v1 --no-promote
 ```
 

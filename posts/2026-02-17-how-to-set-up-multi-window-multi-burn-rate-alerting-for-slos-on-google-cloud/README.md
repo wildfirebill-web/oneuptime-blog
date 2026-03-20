@@ -47,6 +47,7 @@ Start with a solid SLO definition.
 
 ```bash
 # Create the SLO that will be the basis for burn rate alerts
+
 gcloud monitoring slos create \
     --service=my-api-service \
     --slo-id=availability-slo \

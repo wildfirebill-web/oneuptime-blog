@@ -89,6 +89,7 @@ You can use OpenSSL to generate test certificates.
 
 ```bash
 # Generate root CA key and certificate
+
 openssl genrsa -out root-ca.key 4096
 openssl req -new -x509 -days 1826 -key root-ca.key \
   -subj "/CN=P2S Root CA" -out root-ca.crt
@@ -138,4 +139,4 @@ tofu apply tfplan
 
 ## Summary
 
-Azure Point-to-Site VPN enables secure remote access for individual users. OpenTofu manages the VPN Gateway P2S configuration including client address pools, protocol selection, and either certificate or Azure AD authentication — all as version-controlled infrastructure code.
+Azure Point-to-Site VPN enables secure remote access for individual users. OpenTofu manages the VPN Gateway P2S configuration including client address pools, protocol selection, and either certificate or Azure AD authentication - all as version-controlled infrastructure code.

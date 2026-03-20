@@ -95,8 +95,9 @@ docker logs portainer
 docker stop portainer && docker rm portainer
 docker pull portainer/portainer-ce:latest
 # Re-run the deploy command
+
 ```
 
 ## Conclusion
 
-Portainer CE on Fedora gives you a modern web UI for Docker container management. Note the Podman compatibility consideration on Fedora — once Docker is properly configured, Portainer runs reliably with the `--restart=always` policy.
+Portainer CE on Fedora gives you a modern web UI for Docker container management. Note the Podman compatibility consideration on Fedora - once Docker is properly configured, Portainer runs reliably with the `--restart=always` policy.

@@ -18,6 +18,7 @@ This guide covers Vagrant with VirtualBox (the most portable provider) and the c
 
 ```bash
 # Download and add the Oracle VirtualBox GPG key
+
 wget -O- https://www.virtualbox.org/download/oracle_vbox_2016.asc | \
     sudo gpg --dearmor -o /usr/share/keyrings/oracle-vbox.gpg
 

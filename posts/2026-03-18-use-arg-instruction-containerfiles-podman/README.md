@@ -22,6 +22,7 @@ The ARG instruction declares a build-time variable with an optional default valu
 
 ```dockerfile
 # ARG with a default value
+
 ARG VERSION=1.0.0
 
 # ARG without a default (must be provided at build time)

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, AWS, S3, Access Points, Multi-Tenant, IAM, Infrastructure as Code
+Tags: OpenTofu, AWS, S3, Access Point, Multi-Tenant, IAM, Infrastructure as Code
 
 Description: Learn how to create S3 Access Points using OpenTofu to provide customized access paths with different permissions for different applications accessing the same S3 bucket.
 
@@ -36,6 +36,7 @@ resource "aws_s3_bucket_public_access_block" "shared_data" {
 
 ```hcl
 # Access point for the analytics team - read-only to analytics/ prefix
+
 resource "aws_s3_access_point" "analytics" {
   bucket = aws_s3_bucket.shared_data.id
   name   = "analytics-access-point"

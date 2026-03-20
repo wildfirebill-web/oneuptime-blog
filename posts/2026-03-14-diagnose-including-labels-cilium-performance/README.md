@@ -29,6 +29,7 @@ When Cilium is configured with the `labels` setting, only specified labels are i
 
 ```bash
 # Check current label include list
+
 cilium config view | grep "^labels"
 
 # If the output is empty, ALL labels are included (no filtering)

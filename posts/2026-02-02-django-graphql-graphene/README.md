@@ -70,6 +70,7 @@ Add Graphene-Django to your installed apps and configure the schema path in your
 
 ```python
 # settings.py
+
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',

@@ -311,6 +311,7 @@ Track how each priority tier is performing using Prometheus queries:
 
 ```bash
 # Request rate by priority
+
 sum(rate(istio_requests_total{destination_service="backend-service.production.svc.cluster.local"}[5m])) by (request_headers_x_priority)
 
 # Error rate by priority

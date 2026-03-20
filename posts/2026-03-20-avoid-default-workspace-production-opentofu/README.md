@@ -8,7 +8,7 @@ Description: Learn why using the default workspace for production is risky and h
 
 ## Introduction
 
-The `default` workspace is OpenTofu's initial workspace. Using it for production infrastructure creates a dangerous ambiguity — the workspace name provides no signal about what environment you're operating in, and switching to a non-default workspace accidentally may go unnoticed. This post explains why and how to structure production environments safely.
+The `default` workspace is OpenTofu's initial workspace. Using it for production infrastructure creates a dangerous ambiguity - the workspace name provides no signal about what environment you're operating in, and switching to a non-default workspace accidentally may go unnoticed. This post explains why and how to structure production environments safely.
 
 ## Why Default Workspace Is Risky for Production
 
@@ -16,6 +16,7 @@ The `default` workspace lacks environmental clarity.
 
 ```bash
 # Dangerous: No clear indication of what environment you're in
+
 tofu workspace show
 # default
 
@@ -25,7 +26,7 @@ tofu workspace show
 tofu workspace show
 # production
 
-# OR better yet — use separate directories:
+# OR better yet - use separate directories:
 pwd
 # /infrastructure/environments/prod
 ```
@@ -83,9 +84,9 @@ resource "null_resource" "workspace_guard" {
 
 ## Option 2: Use Separate Directories Per Environment (Recommended)
 
-This is the superior approach — no workspace confusion possible.
+This is the superior approach - no workspace confusion possible.
 
-```
+```text
 environments/
 ├── dev/
 │   ├── main.tf
@@ -135,4 +136,4 @@ tofu apply plan.tfplan
 
 ## Summary
 
-The default workspace provides no environmental signal and creates easy mistakes. For persistent environments (dev, staging, prod), use separate directories with separate state backends — the directory path itself makes the environment unambiguous. Reserve workspaces for ephemeral use cases like PR environments. If you must use workspaces for environments, add validation code that fails if run in the default workspace, and always show the current workspace prominently in your terminal prompt and CI/CD logs.
+The default workspace provides no environmental signal and creates easy mistakes. For persistent environments (dev, staging, prod), use separate directories with separate state backends - the directory path itself makes the environment unambiguous. Reserve workspaces for ephemeral use cases like PR environments. If you must use workspaces for environments, add validation code that fails if run in the default workspace, and always show the current workspace prominently in your terminal prompt and CI/CD logs.

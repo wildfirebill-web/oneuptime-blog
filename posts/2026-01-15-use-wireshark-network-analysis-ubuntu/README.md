@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Wireshark, Network Analysis, Ubuntu, Linux, Packet Capture, Security, Troubleshooting, Tshark, Protocol Analysis
+Tags: Wireshark, Network Analysis, Ubuntu, Linux, Packet Capture, Security, Troubleshooting, tshark, Protocol Analysis
 
 Description: A comprehensive guide to installing, configuring, and using Wireshark for deep network packet analysis and troubleshooting on Ubuntu Linux systems.
 
@@ -31,6 +31,7 @@ The following commands verify your system is ready for Wireshark installation.
 
 ```bash
 # Check Ubuntu version (18.04 LTS or newer recommended)
+
 lsb_release -a
 
 # Verify you have sudo privileges for installation

@@ -50,6 +50,7 @@ Every Trivy Rego policy needs specific metadata and structure.
 
 ```rego
 # METADATA
+
 # title: Containers must not run as root
 # description: Running as root increases the attack surface
 # schemas:

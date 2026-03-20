@@ -30,6 +30,7 @@ Check your dependencies for known vulnerabilities. This catches issues in third-
 
 ```yaml
 # .github/workflows/security.yml
+
 name: Security Scanning
 
 on:

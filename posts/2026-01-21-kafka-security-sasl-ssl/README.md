@@ -27,6 +27,7 @@ Kafka supports multiple security mechanisms:
 # generate-ca.sh
 
 # Set variables
+
 CA_PASSWORD="ca-password"
 VALIDITY_DAYS=365
 

@@ -121,6 +121,7 @@ For disaster recovery, you can replicate automated backups to another AWS region
 
 ```hcl
 # Enable automated backup replication to another region
+
 resource "aws_db_instance_automated_backups_replication" "dr" {
   source_db_instance_arn = aws_db_instance.main.arn
   retention_period       = 14  # Can differ from source retention

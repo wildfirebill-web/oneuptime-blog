@@ -18,6 +18,7 @@ Define health checks in your Docker Compose files to let Docker know how to test
 
 ```yaml
 # webapp-with-healthcheck-stack.yml
+
 version: "3.8"
 
 services:
@@ -65,7 +66,7 @@ Poll the Portainer API to identify unhealthy containers across all environments.
 
 ```python
 #!/usr/bin/env python3
-# check_container_health.py — monitor health status via Portainer API
+# check_container_health.py - monitor health status via Portainer API
 
 import requests
 import json
@@ -125,7 +126,7 @@ if __name__ == "__main__":
 
 ```bash
 #!/bin/bash
-# auto-restart-unhealthy.sh — restart unhealthy containers via Portainer API
+# auto-restart-unhealthy.sh - restart unhealthy containers via Portainer API
 
 PORTAINER_URL="https://portainer.example.com"
 API_KEY="ptr_your_api_key_here"

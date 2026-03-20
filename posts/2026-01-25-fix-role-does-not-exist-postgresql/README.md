@@ -54,6 +54,7 @@ ORDER BY rolname;
 
 ```bash
 # Check current user
+
 whoami
 
 # PostgreSQL defaults to system username if not specified

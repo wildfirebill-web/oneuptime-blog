@@ -26,6 +26,7 @@ Always synchronize your package database before installing new packages:
 
 ```bash
 # Synchronize package databases and upgrade all packages
+
 sudo pacman -Syu
 ```
 

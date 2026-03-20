@@ -27,6 +27,7 @@ Elasticsearch requires specific kernel parameters, particularly `vm.max_map_coun
 
 ```yaml
 # talos-es-patch.yaml
+
 machine:
   sysctls:
     # Required by Elasticsearch for memory-mapped files

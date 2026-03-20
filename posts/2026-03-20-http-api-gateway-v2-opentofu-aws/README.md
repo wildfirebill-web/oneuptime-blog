@@ -16,6 +16,7 @@ AWS API Gateway v2 HTTP API is a cost-effective, low-latency API gateway optimiz
 
 ```hcl
 # api_gateway.tf
+
 resource "aws_apigatewayv2_api" "main" {
   name          = "my-http-api"
   protocol_type = "HTTP"
@@ -211,10 +212,10 @@ output "custom_domain_url" {
 
 ## Best Practices
 
-1. **Use HTTP API over REST API** for new projects — it's cheaper and faster
-2. **Enable access logging** for all stages — critical for debugging production issues
+1. **Use HTTP API over REST API** for new projects - it's cheaper and faster
+2. **Enable access logging** for all stages - critical for debugging production issues
 3. **Set throttling limits** to protect your Lambda functions from traffic spikes
-4. **Use payload format version 2.0** for Lambda integrations — cleaner request format
+4. **Use payload format version 2.0** for Lambda integrations - cleaner request format
 5. **Enable X-Ray tracing** for end-to-end latency visibility
 
 ---
@@ -225,4 +226,4 @@ AWS API Gateway v2 HTTP API with OpenTofu provides a serverless API layer with m
 
 ---
 
-*Monitor your API endpoints with [OneUptime](https://oneuptime.com) — synthetic monitoring and uptime checks.*
+*Monitor your API endpoints with [OneUptime](https://oneuptime.com) - synthetic monitoring and uptime checks.*

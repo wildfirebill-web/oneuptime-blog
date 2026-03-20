@@ -24,6 +24,7 @@ variable "enable_monitoring" {
 }
 
 # Only created when monitoring is enabled
+
 resource "aws_cloudwatch_metric_alarm" "cpu_high" {
   count = var.enable_monitoring ? 1 : 0
 

@@ -67,6 +67,7 @@ The following commands install the Sealed Secrets controller using Helm, which m
 
 ```bash
 # Add the Sealed Secrets Helm repository
+
 helm repo add sealed-secrets https://bitnami-labs.github.io/sealed-secrets
 helm repo update
 

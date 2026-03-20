@@ -8,7 +8,7 @@ Description: Learn how to provision containerized workloads on AWS ECS and Kuber
 
 ---
 
-OpenTofu can provision the entire container infrastructure stack — ECS clusters, task definitions, Kubernetes deployments, and the supporting networking — enabling fully automated container deployments.
+OpenTofu can provision the entire container infrastructure stack - ECS clusters, task definitions, Kubernetes deployments, and the supporting networking - enabling fully automated container deployments.
 
 ---
 
@@ -16,6 +16,7 @@ OpenTofu can provision the entire container infrastructure stack — ECS cluster
 
 ```hcl
 # ECS Cluster
+
 resource "aws_ecs_cluster" "main" {
   name = "my-cluster"
 }
@@ -126,4 +127,4 @@ resource "kubernetes_deployment" "app" {
 
 ## Summary
 
-Use `aws_ecs_task_definition` and `aws_ecs_service` to deploy containers on AWS Fargate, or the Kubernetes provider's `kubernetes_deployment` for Kubernetes clusters. Both approaches let you version-control your container configurations, set resource limits, configure networking, and integrate with load balancers — all through OpenTofu.
+Use `aws_ecs_task_definition` and `aws_ecs_service` to deploy containers on AWS Fargate, or the Kubernetes provider's `kubernetes_deployment` for Kubernetes clusters. Both approaches let you version-control your container configurations, set resource limits, configure networking, and integrate with load balancers - all through OpenTofu.

@@ -70,6 +70,7 @@ The GitRepository remains as the primary source. ArtifactGenerator sits between 
 
 ```yaml
 # This stays unchanged
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: GitRepository
 metadata:

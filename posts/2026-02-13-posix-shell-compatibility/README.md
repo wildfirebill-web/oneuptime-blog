@@ -47,6 +47,7 @@ Bash arrays are not part of POSIX. This fails under `dash`:
 
 ```sh
 # WRONG: Bash arrays do not exist in POSIX sh
+
 items=("apple" "banana" "cherry")
 for item in "${items[@]}"; do
     echo "$item"

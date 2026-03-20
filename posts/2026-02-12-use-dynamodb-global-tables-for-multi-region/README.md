@@ -52,6 +52,7 @@ Start by creating your table in the primary region with streams enabled.
 
 ```bash
 # Create the base table in us-east-1 with streams enabled
+
 aws dynamodb create-table \
   --table-name UserProfiles \
   --attribute-definitions AttributeName=user_id,AttributeType=S \

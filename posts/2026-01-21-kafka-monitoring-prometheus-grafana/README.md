@@ -159,6 +159,7 @@ Or in `server.properties`:
 
 ```properties
 # Enable JMX
+
 JMX_PORT=9999
 ```
 

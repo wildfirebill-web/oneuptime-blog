@@ -18,6 +18,7 @@ Istio is primarily written in Go. You will need:
 
 ```bash
 # Install Go (1.21+)
+
 # On macOS
 brew install go
 

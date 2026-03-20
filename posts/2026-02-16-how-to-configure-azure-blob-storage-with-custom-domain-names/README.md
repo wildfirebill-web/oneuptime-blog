@@ -35,6 +35,7 @@ The record needs to propagate before Azure will accept the mapping. You can veri
 
 ```bash
 # Check if the CNAME record has propagated
+
 nslookup assets.yourdomain.com
 # Should return mystorageaccount.blob.core.windows.net
 ```

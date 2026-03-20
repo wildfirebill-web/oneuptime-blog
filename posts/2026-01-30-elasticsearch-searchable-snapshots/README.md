@@ -77,6 +77,7 @@ First, install the repository-s3 plugin on all nodes:
 
 ```bash
 # Install the S3 repository plugin
+
 bin/elasticsearch-plugin install repository-s3
 
 # Add credentials to the Elasticsearch keystore

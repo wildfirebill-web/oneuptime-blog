@@ -44,6 +44,7 @@ Example of a tuned CloudNativePG cluster for a transactional workload:
 
 ```yaml
 # infrastructure/databases/postgres/production/cluster.yaml
+
 apiVersion: postgresql.cnpg.io/v1
 kind: Cluster
 metadata:

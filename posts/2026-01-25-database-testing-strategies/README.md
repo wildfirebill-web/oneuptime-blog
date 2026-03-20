@@ -625,6 +625,7 @@ describe('Data Integrity', () => {
 
 ```yaml
 # .github/workflows/database-tests.yaml
+
 name: Database Tests
 
 on: [push, pull_request]

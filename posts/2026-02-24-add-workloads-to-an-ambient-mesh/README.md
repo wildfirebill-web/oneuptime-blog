@@ -87,6 +87,7 @@ Send traffic between two enrolled pods and verify it is encrypted by checking zt
 
 ```bash
 # Send a test request
+
 kubectl exec deploy/frontend -n my-app -- curl -s http://backend:8080/health
 
 # Check ztunnel logs for the connection

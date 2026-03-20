@@ -25,6 +25,7 @@ When you register a cluster with Fleet (or Rancher), Fleet creates a `Cluster` c
 
 ```bash
 # List all Fleet cluster resources across namespaces
+
 kubectl get clusters.fleet.cattle.io -A
 
 # View a specific cluster with its labels
@@ -37,7 +38,7 @@ A good labeling strategy should cover the dimensions you need for deployment tar
 
 ### Recommended Label Dimensions
 
-```
+```text
 # Environment labels
 env: dev | staging | production
 
@@ -231,4 +232,4 @@ kubectl describe bundle my-app -n fleet-default
 
 ## Conclusion
 
-Labels are the most powerful and flexible targeting mechanism in Fleet. A well-designed labeling strategy allows you to create deployment rules that automatically adapt as your cluster fleet grows and evolves. By consistently applying meaningful labels to your clusters — covering environment, region, team, and purpose — you can write targeting rules once and trust that they will correctly route deployments to the right clusters indefinitely.
+Labels are the most powerful and flexible targeting mechanism in Fleet. A well-designed labeling strategy allows you to create deployment rules that automatically adapt as your cluster fleet grows and evolves. By consistently applying meaningful labels to your clusters - covering environment, region, team, and purpose - you can write targeting rules once and trust that they will correctly route deployments to the right clusters indefinitely.

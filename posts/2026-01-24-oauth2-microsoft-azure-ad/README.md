@@ -65,6 +65,7 @@ Navigate to Certificates & secrets > New client secret. Copy the secret value im
 
 ```bash
 # .env file
+
 AZURE_AD_TENANT_ID=your-tenant-id-or-common
 AZURE_AD_CLIENT_ID=your-application-client-id
 AZURE_AD_CLIENT_SECRET=your-client-secret

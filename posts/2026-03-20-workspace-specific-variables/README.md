@@ -1,4 +1,4 @@
-# How to Use Workspace-Specific Variable Values in OpenTofu
+# How to Use Workspace-Specific Variable Values in OpenTofu - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -16,6 +16,7 @@ Maintain a `.tfvars` file per environment:
 
 ```bash
 # File structure
+
 project/
 ├── main.tf
 ├── variables.tf
@@ -51,7 +52,7 @@ tofu apply -var-file=production.tfvars
 
 ## Pattern 2: Locals Map (Self-Contained)
 
-Store all environment configs in a locals block — no separate files needed:
+Store all environment configs in a locals block - no separate files needed:
 
 ```hcl
 # locals.tf

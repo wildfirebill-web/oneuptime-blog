@@ -24,15 +24,15 @@ traceroute to 8.8.8.8 (8.8.8.8), 30 hops max, 60 byte packets
 
 ## Understanding Hop Numbers
 
-```
-Hop 1 — Your default gateway (local router)
+```nginx
+Hop 1 - Your default gateway (local router)
          Latency should be < 5ms on LAN
          If > 10ms: potential LAN congestion or WiFi issues
 
-Hop 2+ — ISP or upstream routers
+Hop 2+ - ISP or upstream routers
           Latency increases with each hop, but should be gradual
 
-Last hop — The destination
+Last hop - The destination
             If missing → destination is up but blocks probes
 ```
 
@@ -40,6 +40,7 @@ Last hop — The destination
 
 ```bash
 # Format: hop_num  ip_address  rtt1  rtt2  rtt3
+
   3  172.16.1.254    9.1 ms   8.8 ms   9.3 ms
 
 # Three round-trip measurements for reliability
@@ -62,26 +63,26 @@ Last hop — The destination
 
 # Possible causes:
 # 1. Router rate-limits ICMP TTL Exceeded responses (most common)
-#    → Not a real problem — packets still pass through
+#    → Not a real problem - packets still pass through
 # 2. Router firewall blocks ICMP outbound
 # 3. Router is very congested
 # 4. Actual routing problem at this hop
 
 # KEY INSIGHT: If hop 4 shows *** but hop 5 replies normally,
-# hop 4 IS working — it just doesn't respond to traceroute probes.
+# hop 4 IS working - it just doesn't respond to traceroute probes.
 # Only worry about *** if subsequent hops also fail.
 ```
 
 ## Interpreting Latency Patterns
 
 ```bash
-# Good path — gradual latency increase:
+# Good path - gradual latency increase:
  1  192.168.1.1      1ms
  2  10.1.0.1         8ms    +7ms (ISP edge)
  3  72.14.0.1       12ms    +4ms (ISP transit)
  4  8.8.8.8         13ms    +1ms (Google edge)
 
-# Bad path — sudden latency spike:
+# Bad path - sudden latency spike:
  1  192.168.1.1      1ms
  2  10.1.0.1         8ms
  3  209.0.0.1      180ms  ← PROBLEM LINK between hop 2 and 3
@@ -114,7 +115,7 @@ traceroute -n 10.50.0.1
 traceroute -w 1 -n 8.8.8.8    # Faster output, gives up sooner
 
 # -q sets number of probes per hop (default 3)
-traceroute -q 1 -n 8.8.8.8    # Only 1 probe per hop — faster
+traceroute -q 1 -n 8.8.8.8    # Only 1 probe per hop - faster
 
 # -I uses ICMP instead of UDP (gets through more firewalls)
 sudo traceroute -I -n 8.8.8.8

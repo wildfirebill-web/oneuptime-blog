@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: NGINX, WebSocket, Troubleshooting, Real-Time, DevOps
+Tags: Nginx, WebSocket, Troubleshooting, Real-Time, DevOps
 
 Description: Learn how to diagnose and fix WebSocket 400 Bad Request errors when using Nginx as a reverse proxy, including proper upgrade headers, timeouts, and connection handling.
 
@@ -134,6 +134,7 @@ The `map` directive handles both cases:
 **Problem:**
 ```nginx
 # WRONG - missing upgrade headers
+
 location /ws {
     proxy_pass http://backend:3000;
 }

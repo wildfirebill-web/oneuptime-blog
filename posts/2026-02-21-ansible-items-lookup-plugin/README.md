@@ -22,6 +22,7 @@ This playbook installs multiple packages:
 
 ```yaml
 # playbook.yml - Install packages using items
+
 ---
 - name: Install required packages
   hosts: all

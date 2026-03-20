@@ -18,6 +18,7 @@ The syntax is straightforward:
 
 ```dockerfile
 # Set the working directory to /app
+
 WORKDIR /app
 ```
 

@@ -43,6 +43,7 @@ For automated or GitOps-driven workflows, use the Rancher API:
 
 ```bash
 # Set the light-mode logo (base64-encoded PNG)
+
 LOGO_B64=$(base64 -w 0 /path/to/logo-light.png)
 
 curl -sk -X PUT \

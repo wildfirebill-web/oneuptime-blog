@@ -18,6 +18,7 @@ Sometimes you need to run a health check on demand rather than waiting for the n
 
 ```bash
 # Run the health check for a specific container
+
 podman healthcheck run my-web-app
 
 # The command returns the exit code:

@@ -30,6 +30,7 @@ This guide covers automated deployment of cilium-bugtool PowerShell completions.
 
 ```powershell
 # install-bugtool-completion.ps1
+
 # Automated installer for cilium-bugtool PowerShell completions
 
 \$ErrorActionPreference = "Stop"

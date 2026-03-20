@@ -14,6 +14,7 @@ Quickly seeing all interfaces and their IPv4 addresses is one of the most common
 
 ```bash
 # Show all addresses on all interfaces
+
 ip addr show
 
 # Short alias
@@ -61,7 +62,7 @@ ip -4 addr show | awk '/inet / {print $NF, $2}'
 
 Output:
 
-```
+```text
 lo 127.0.0.1/8
 eth0 192.168.1.100/24
 eth1 10.0.0.5/30

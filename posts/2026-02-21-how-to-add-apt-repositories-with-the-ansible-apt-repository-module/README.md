@@ -16,6 +16,7 @@ The simplest case is adding a PPA (Personal Package Archive) on Ubuntu:
 
 ```yaml
 # Add a PPA repository for the latest Git version
+
 - name: Add Git PPA
   ansible.builtin.apt_repository:
     repo: ppa:git-core/ppa

@@ -54,6 +54,7 @@ Here's a user data script that installs the agent on boot:
 ```bash
 #!/bin/bash
 # User data script to install CodeDeploy agent
+
 yum update -y
 yum install -y ruby wget
 

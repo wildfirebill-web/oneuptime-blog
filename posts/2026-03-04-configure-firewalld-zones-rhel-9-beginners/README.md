@@ -44,6 +44,7 @@ RHEL ships with several predefined zones:
 
 ```bash
 # See which zone is the default
+
 firewall-cmd --get-default-zone
 
 # List all active zones and their interfaces

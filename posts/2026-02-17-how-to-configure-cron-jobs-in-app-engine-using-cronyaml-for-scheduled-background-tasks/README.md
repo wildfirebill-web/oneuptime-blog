@@ -18,6 +18,7 @@ Create a `cron.yaml` file in the root of your App Engine project:
 
 ```yaml
 # cron.yaml - Schedule background tasks for App Engine
+
 cron:
   # Generate a daily report at 2 AM UTC
   - description: "Daily Report Generator"

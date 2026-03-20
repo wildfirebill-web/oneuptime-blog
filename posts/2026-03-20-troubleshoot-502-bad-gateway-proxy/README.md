@@ -8,7 +8,7 @@ Description: A systematic guide to diagnosing and resolving HTTP 502 Bad Gateway
 
 ## What Is a 502 Bad Gateway?
 
-A `502 Bad Gateway` error means the proxy (Nginx, HAProxy, etc.) received an invalid or no response from the upstream server. The proxy itself is running fine—the problem lies between the proxy and your application server.
+A `502 Bad Gateway` error means the proxy (Nginx, HAProxy, etc.) received an invalid or no response from the upstream server. The proxy itself is running fine-the problem lies between the proxy and your application server.
 
 ## Common Causes
 
@@ -23,13 +23,14 @@ A `502 Bad Gateway` error means the proxy (Nginx, HAProxy, etc.) received an inv
 
 ```bash
 # Tail the error log for recent 502 entries
+
 tail -f /var/log/nginx/error.log | grep "502\|upstream\|connect"
 ```
 
 Common error patterns:
-- `connect() failed (111: Connection refused)` — upstream not listening
-- `upstream timed out` — upstream too slow to respond
-- `no live upstreams while connecting to upstream` — all upstream servers are down
+- `connect() failed (111: Connection refused)` - upstream not listening
+- `upstream timed out` - upstream too slow to respond
+- `no live upstreams while connecting to upstream` - all upstream servers are down
 
 ## Step 2: Verify the Upstream Is Running
 

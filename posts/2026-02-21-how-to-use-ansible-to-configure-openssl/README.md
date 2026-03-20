@@ -24,6 +24,7 @@ This playbook installs OpenSSL and the development libraries on both Debian and 
 
 ```yaml
 # install_openssl.yml - Ensures OpenSSL is installed on all target hosts
+
 ---
 - name: Install and configure OpenSSL
   hosts: all

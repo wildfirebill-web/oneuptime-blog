@@ -14,6 +14,7 @@ The `FileNotFoundError` occurs when Python tries to access a file or directory t
 
 ```python
 # FileNotFoundError occurs when:
+
 open("nonexistent.txt", "r")  # File doesn't exist
 open("/wrong/path/file.txt", "r")  # Invalid path
 os.listdir("/missing/directory")  # Directory doesn't exist

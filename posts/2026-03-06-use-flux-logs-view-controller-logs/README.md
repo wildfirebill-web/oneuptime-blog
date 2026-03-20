@@ -26,6 +26,7 @@ Verify the Flux installation:
 
 ```bash
 # Check Flux components are running
+
 flux check
 ```
 

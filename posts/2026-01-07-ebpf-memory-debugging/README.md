@@ -135,6 +135,7 @@ The following script checks and installs the necessary dependencies for eBPF dev
 #!/bin/bash
 
 # Check kernel version - eBPF requires kernel 4.4+ for basic features
+
 # and 5.8+ for advanced memory debugging features
 echo "Checking kernel version..."
 uname -r

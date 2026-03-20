@@ -18,6 +18,7 @@ Here is the simplest form of the command:
 
 ```bash
 # Build an image directly from a public GitHub repo
+
 docker build https://github.com/your-org/your-app.git
 ```
 

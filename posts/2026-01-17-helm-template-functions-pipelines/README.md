@@ -14,6 +14,7 @@ Helm templates use double curly braces for actions and expressions.
 
 ```yaml
 # Basic value reference
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

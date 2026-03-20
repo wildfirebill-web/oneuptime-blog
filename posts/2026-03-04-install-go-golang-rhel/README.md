@@ -14,6 +14,7 @@ Go is a statically typed, compiled language well suited for systems programming,
 
 ```bash
 # Install Go from RHEL AppStream
+
 sudo dnf install -y golang
 
 # Check version

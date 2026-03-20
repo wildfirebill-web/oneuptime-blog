@@ -1,4 +1,4 @@
-# How to Monitor Windows Nodes in Rancher
+# How to Monitor Windows Nodes in Rancher - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -20,6 +20,7 @@ Monitoring Windows nodes in Kubernetes requires Windows-specific exporters since
 
 ```yaml
 # windows-exporter-daemonset.yaml - Deploy Windows Exporter on Windows nodes
+
 apiVersion: apps/v1
 kind: DaemonSet
 metadata:

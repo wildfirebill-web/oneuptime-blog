@@ -29,6 +29,7 @@ This applies when the physical or virtual disk has been made larger and you need
 
 ```bash
 # Check current disk and partition sizes
+
 lsblk
 sudo fdisk -l /dev/sda
 ```

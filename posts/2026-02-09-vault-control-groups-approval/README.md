@@ -24,6 +24,7 @@ Define control group requirements in policies:
 
 ```hcl
 # Policy requiring control group for production database credentials
+
 path "database/creds/production" {
   capabilities = ["read"]
   control_group = {

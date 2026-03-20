@@ -28,6 +28,7 @@ This guide provides the methodology and commands for baseline performance manage
 
 ```bash
 # Optimal Cilium configuration for near-baseline performance
+
 helm upgrade cilium cilium/cilium --namespace kube-system \
   --set tunnel=disabled \
   --set routingMode=native \

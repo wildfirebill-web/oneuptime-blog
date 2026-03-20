@@ -59,6 +59,7 @@ When you apply this pod, kubectl displays warnings:
 ```bash
 kubectl apply -f pod.yaml
 # Warning: would violate PodSecurity "restricted:latest": runAsNonRoot != true
+
 # pod/test-pod created
 ```
 

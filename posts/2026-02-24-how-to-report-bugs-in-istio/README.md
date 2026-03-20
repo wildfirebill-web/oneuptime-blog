@@ -20,6 +20,7 @@ Before filing an issue, rule out common non-bugs:
 
 ```bash
 # Search existing issues
+
 gh issue list --repo istio/istio --search "your error message" --state open
 gh issue list --repo istio/istio --search "your error message" --state closed
 ```

@@ -36,6 +36,7 @@ Before blaming propagation, confirm the change actually took effect in Route 53:
 
 ```bash
 # Check the record directly from Route 53 name servers
+
 aws route53 list-resource-record-sets \
     --hosted-zone-id Z1234567890 \
     --query "ResourceRecordSets[?Name=='app.example.com.']"

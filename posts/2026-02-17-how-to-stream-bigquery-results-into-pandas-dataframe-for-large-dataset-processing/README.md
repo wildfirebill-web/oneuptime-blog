@@ -20,6 +20,7 @@ from google.cloud import bigquery
 client = bigquery.Client()
 
 # This query might return hundreds of millions of rows
+
 query = """
     SELECT *
     FROM `my-project.logs.application_events`

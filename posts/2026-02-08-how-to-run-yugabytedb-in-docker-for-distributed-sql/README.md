@@ -37,6 +37,7 @@ For quick testing, run a single node that combines both master and tserver.
 
 ```bash
 # Run a single YugabyteDB node
+
 docker run -d \
   --name yugabytedb \
   -p 5433:5433 \

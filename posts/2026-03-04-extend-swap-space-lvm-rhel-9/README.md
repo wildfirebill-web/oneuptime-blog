@@ -16,6 +16,7 @@ Before making changes, understand what you have:
 
 ```bash
 # Show active swap devices
+
 swapon --show
 
 # Check memory and swap totals

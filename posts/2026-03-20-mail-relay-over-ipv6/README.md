@@ -27,6 +27,7 @@ Configure Postfix on the relay server to accept connections from IPv6 clients:
 # /etc/postfix/main.cf on the relay server
 
 # Listen on all interfaces including IPv6
+
 inet_protocols = all
 
 # Accept relay from internal IPv6 networks

@@ -43,6 +43,7 @@ from opentelemetry.sdk.trace.export import ConsoleSpanExporter, BatchSpanProcess
 import time
 
 # Set up tracing
+
 provider = TracerProvider()
 provider.add_span_processor(BatchSpanProcessor(ConsoleSpanExporter()))
 trace.set_tracer_provider(provider)

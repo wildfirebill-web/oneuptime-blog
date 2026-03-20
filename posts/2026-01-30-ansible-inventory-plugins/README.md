@@ -84,6 +84,7 @@ Let's build a plugin that reads hosts from a JSON API. This example fetches serv
 
 ```bash
 # Create the plugin directory structure
+
 mkdir -p inventory_plugins
 touch inventory_plugins/__init__.py
 touch inventory_plugins/service_registry.py

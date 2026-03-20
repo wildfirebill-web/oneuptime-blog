@@ -206,6 +206,7 @@ When multiple VirtualService resources match the same host, Istio merges them. T
 
 ```yaml
 # Bad - two VirtualServices for the same host in the same namespace
+
 # The merge order is undefined
 ---
 # Good - one VirtualService per host with all rules

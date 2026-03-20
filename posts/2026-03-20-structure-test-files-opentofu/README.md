@@ -12,7 +12,7 @@ Well-structured test files make tests easy to find, run selectively, and maintai
 
 ## Recommended Directory Structure
 
-```
+```text
 modules/my-module/
 ├── main.tf
 ├── variables.tf
@@ -47,7 +47,8 @@ modules/my-module/
 
 ```hcl
 # tests/unit.tftest.hcl
-# Fast tests — no real cloud resources, no credentials needed
+
+# Fast tests - no real cloud resources, no credentials needed
 
 # ──── Provider Mocks ────────────────────────────────────────────────────────
 mock_provider "aws" {
@@ -98,7 +99,7 @@ run "accepts_valid_environment" {
   variables {
     environment = "production"
   }
-  # No expect_failures — should succeed
+  # No expect_failures - should succeed
   assert {
     condition     = true
     error_message = "Should not reach here"
@@ -127,7 +128,7 @@ run "rejects_empty_name" {
 
 ```hcl
 # tests/integration.tftest.hcl
-# Slow tests — creates real AWS resources, requires credentials
+# Slow tests - creates real AWS resources, requires credentials
 
 # ──── Variables ──────────────────────────────────────────────────────────────
 variables {

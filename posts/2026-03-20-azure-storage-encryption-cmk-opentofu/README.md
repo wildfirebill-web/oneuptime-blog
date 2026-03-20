@@ -14,6 +14,7 @@ By default, Azure Storage encrypts data with Microsoft-managed keys. For regulat
 
 ```hcl
 # main.tf - Key Vault for storing the customer-managed key
+
 data "azurerm_client_config" "current" {}
 
 resource "azurerm_key_vault" "kv" {

@@ -18,6 +18,7 @@ On custom bridge networks, Docker runs an embedded DNS server at 127.0.0.11 insi
 
 ```bash
 # Create a custom network (required - default bridge does not support this)
+
 docker network create app-network
 ```
 

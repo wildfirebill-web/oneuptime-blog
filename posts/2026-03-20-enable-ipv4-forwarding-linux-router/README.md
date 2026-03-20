@@ -15,7 +15,7 @@ A Linux machine with two or more network interfaces can act as a router by:
 
 ## Network Topology
 
-```
+```text
 [Network A]  192.168.1.0/24        [Network B]  192.168.2.0/24
      |                                    |
   eth0: 192.168.1.1             eth1: 192.168.2.1
@@ -26,6 +26,7 @@ A Linux machine with two or more network interfaces can act as a router by:
 
 ```bash
 # Configure eth0 (LAN A)
+
 ip addr add 192.168.1.1/24 dev eth0
 ip link set eth0 up
 
@@ -63,7 +64,7 @@ ip route add default via 192.168.2.1
 ip route add 192.168.2.0/24 via 192.168.1.1
 ```
 
-## Step 4: Optional — Configure iptables for Forwarding
+## Step 4: Optional - Configure iptables for Forwarding
 
 By default with no iptables rules, forwarding is allowed. But if iptables has a DROP policy:
 
@@ -87,7 +88,7 @@ ping 192.168.2.10
 traceroute 192.168.2.10
 
 # Expected:
-# 1. 192.168.1.1  (Linux router — eth0)
+# 1. 192.168.1.1  (Linux router - eth0)
 # 2. 192.168.2.10 (destination host)
 ```
 

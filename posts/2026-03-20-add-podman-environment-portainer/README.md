@@ -35,6 +35,7 @@ TOKEN=$(curl -s -X POST \
   --insecure | python3 -c "import sys,json; print(json.load(sys.stdin)['jwt'])")
 
 # Add environment via API
+
 curl -X POST \
   https://localhost:9443/api/endpoints \
   -H "Authorization: Bearer $TOKEN" \

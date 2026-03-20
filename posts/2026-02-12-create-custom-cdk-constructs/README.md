@@ -289,6 +289,7 @@ To share constructs across projects, publish them as npm packages.
 
 ```bash
 # Set up the construct library project
+
 mkdir my-constructs && cd my-constructs
 cdk init lib --language typescript
 ```

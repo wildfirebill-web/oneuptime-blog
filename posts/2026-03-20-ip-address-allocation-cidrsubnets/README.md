@@ -8,7 +8,7 @@ Description: Learn how to use OpenTofu's built-in cidrsubnets and cidrsubnet fun
 
 ## Why Automate CIDR Allocation?
 
-Manually assigning CIDR ranges to subnets is tedious and error-prone, especially as your infrastructure grows. OpenTofu provides built-in functions — `cidrsubnet` and `cidrsubnets` — to automatically calculate non-overlapping subnet ranges from a parent CIDR block.
+Manually assigning CIDR ranges to subnets is tedious and error-prone, especially as your infrastructure grows. OpenTofu provides built-in functions - `cidrsubnet` and `cidrsubnets` - to automatically calculate non-overlapping subnet ranges from a parent CIDR block.
 
 ## Understanding cidrsubnet
 
@@ -16,6 +16,7 @@ Manually assigning CIDR ranges to subnets is tedious and error-prone, especially
 
 ```hcl
 # Given 10.0.0.0/16, add 8 bits → /24 subnets
+
 cidrsubnet("10.0.0.0/16", 8, 0)   # = 10.0.0.0/24
 cidrsubnet("10.0.0.0/16", 8, 1)   # = 10.0.1.0/24
 cidrsubnet("10.0.0.0/16", 8, 2)   # = 10.0.2.0/24
@@ -136,11 +137,11 @@ output "private_subnet_cidrs" {
 
 ## Best Practices
 
-1. **Plan your IP space up front** — reserve ranges for future VPCs and on-premises networks
-2. **Use consistent newbits** — keep subnet sizes uniform for simplicity
-3. **Document your CIDR scheme** — add comments explaining the allocation strategy
+1. **Plan your IP space up front** - reserve ranges for future VPCs and on-premises networks
+2. **Use consistent newbits** - keep subnet sizes uniform for simplicity
+3. **Document your CIDR scheme** - add comments explaining the allocation strategy
 4. **Avoid overlapping ranges** with VPN or peered networks
-5. **Leave headroom** — don't use 100% of the VPC CIDR to allow future expansion
+5. **Leave headroom** - don't use 100% of the VPC CIDR to allow future expansion
 
 ## Conclusion
 

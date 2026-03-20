@@ -45,6 +45,7 @@ Find your dedicated SQL pool endpoint:
 
 ```bash
 # Get the Synapse workspace SQL endpoint
+
 az synapse workspace show \
   --name my-synapse-workspace \
   --resource-group rg-synapse \

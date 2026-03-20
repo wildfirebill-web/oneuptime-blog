@@ -126,6 +126,7 @@ def setup_rag_backend(project_id: str, location: str, data_store_id: str, gcs_ur
     return engine_result
 
 # Set up the backend
+
 setup_rag_backend(
     project_id="your-project-id",
     location="global",

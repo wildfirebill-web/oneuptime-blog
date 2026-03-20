@@ -290,6 +290,7 @@ Typically, you'd populate these from the Kubernetes Downward API in your deploym
 
 ```yaml
 # Kubernetes Deployment
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -373,7 +374,7 @@ processors:
         value: anonymized-service
 ```
 
-## Resource Processor vs. Attributes Processor
+Resource Processor vs. Attributes Processor
 
 Understanding when to use each processor is crucial:
 
@@ -430,7 +431,7 @@ service:
 
 This separation maintains a clean distinction between service identity (resource) and request-specific context (attributes).
 
-## Resource Detection
+Resource Detection
 
 The OpenTelemetry Collector can automatically detect resource attributes from the environment using the `resourcedetection` processor:
 
@@ -491,7 +492,7 @@ processors:
 
 This enables dynamic configuration without modifying the collector config file for each deployment.
 
-## Resource Attributes Flow
+Resource Attributes Flow
 
 Understanding how resource attributes flow through the collector:
 

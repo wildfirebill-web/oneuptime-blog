@@ -317,6 +317,7 @@ echo | openssl s_client -connect myapp.example.com:443 -servername myapp.example
 
 ```bash
 # Check the gateway is listening
+
 istioctl proxy-config listener <gateway-pod> -n istio-system
 
 # Look for port 443 in the output

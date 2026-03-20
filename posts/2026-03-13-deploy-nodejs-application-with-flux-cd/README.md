@@ -28,6 +28,7 @@ This guide covers containerizing a Node.js Express application, setting up the F
 
 ```dockerfile
 # Dockerfile - multi-stage build for minimal production image
+
 FROM node:20-alpine AS deps
 WORKDIR /app
 COPY package*.json ./

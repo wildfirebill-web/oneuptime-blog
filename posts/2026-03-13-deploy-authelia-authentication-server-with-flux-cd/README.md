@@ -29,6 +29,7 @@ Flux CD manages the Authelia deployment, configuration, and secret references de
 kubectl create namespace authelia
 
 # Core Authelia secrets
+
 kubectl create secret generic authelia-secrets \
   --namespace authelia \
   --from-literal=jwt-secret=$(openssl rand -hex 32) \

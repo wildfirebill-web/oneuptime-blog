@@ -31,6 +31,7 @@ Ensure you have Helm 3.x installed and kubectl configured to access your cluster
 
 ```bash
 # Verify Helm is installed
+
 helm version
 
 # Verify kubectl can access your cluster

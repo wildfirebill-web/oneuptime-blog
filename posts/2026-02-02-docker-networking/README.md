@@ -66,6 +66,7 @@ The following command creates a container on the default bridge network:
 
 ```bash
 # Run a container on the default bridge network
+
 docker run -d --name web-server nginx:alpine
 
 # Inspect the container's network settings

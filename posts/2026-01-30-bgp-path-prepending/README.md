@@ -227,6 +227,7 @@ Juniper uses policy statements with the `as-path-prepend` action:
 
 ```junos
 # Define the prefix list
+
 policy-options {
     prefix-list ADVERTISE-ROUTES {
         203.0.113.0/24;

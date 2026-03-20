@@ -16,6 +16,7 @@ Kubernetes generates a hash of the pod template spec and adds it as a label to p
 
 ```bash
 # View pod labels
+
 kubectl get pods --show-labels
 
 # Output shows pod-template-hash

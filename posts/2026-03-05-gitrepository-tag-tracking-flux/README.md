@@ -26,6 +26,7 @@ To track a specific tag, set `spec.ref.tag` in the GitRepository spec. The Sourc
 
 ```yaml
 # gitrepository-tag.yaml - Track a specific Git tag
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: GitRepository
 metadata:

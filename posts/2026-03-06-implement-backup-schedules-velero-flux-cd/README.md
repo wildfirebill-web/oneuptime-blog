@@ -28,6 +28,7 @@ Install Velero as part of your infrastructure stack managed by Flux CD.
 
 ```yaml
 # infrastructure/velero/namespace.yaml
+
 # Dedicated namespace for Velero
 apiVersion: v1
 kind: Namespace

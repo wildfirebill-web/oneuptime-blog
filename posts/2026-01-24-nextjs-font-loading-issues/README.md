@@ -152,6 +152,7 @@ Verify font file exists:
 
 ```bash
 # Check if font file exists
+
 ls -la public/fonts/
 ```
 

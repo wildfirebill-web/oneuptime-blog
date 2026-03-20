@@ -164,6 +164,7 @@ Alternatively, you can use the `bq` command-line tool which supports table copy 
 
 ```bash
 # Copy the partitioned table to the original table name
+
 bq cp --force \
   my_project:my_dataset.orders_partitioned_new \
   my_project:my_dataset.orders

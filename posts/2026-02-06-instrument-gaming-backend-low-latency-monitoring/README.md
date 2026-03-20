@@ -535,6 +535,7 @@ The Collector configuration needs to handle the mix of high-frequency metrics an
 
 ```yaml
 # otel-collector-config.yaml
+
 receivers:
   otlp:
     protocols:

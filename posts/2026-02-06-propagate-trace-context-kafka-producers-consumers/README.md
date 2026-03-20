@@ -243,6 +243,7 @@ Install the required packages first.
 
 ```bash
 # Install OpenTelemetry SDK and Kafka instrumentation for Python
+
 pip install opentelemetry-api \
     opentelemetry-sdk \
     opentelemetry-exporter-otlp \

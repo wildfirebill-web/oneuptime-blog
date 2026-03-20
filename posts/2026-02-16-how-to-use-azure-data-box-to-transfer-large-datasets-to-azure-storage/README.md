@@ -30,6 +30,7 @@ The following commands create a Data Box order through the CLI, specifying the d
 
 ```bash
 # Create a resource group for the Data Box order
+
 az group create \
   --name rg-databox-migration \
   --location eastus2

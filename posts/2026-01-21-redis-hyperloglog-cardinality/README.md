@@ -39,6 +39,7 @@ When NOT to use HyperLogLog:
 
 ```bash
 # Add single element
+
 PFADD visitors "user123"
 # Returns 1 if cardinality changed, 0 otherwise
 

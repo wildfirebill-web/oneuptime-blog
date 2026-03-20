@@ -57,6 +57,7 @@ Let us break down each component:
 ### Example of a simple ACL definition
 ```haproxy
 # Match requests where the path starts with /api
+
 acl is_api path_beg /api
 
 # Match requests from a specific IP range

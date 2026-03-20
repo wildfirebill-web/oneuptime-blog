@@ -104,6 +104,7 @@ Two VirtualServices targeting the same host in the same namespace:
 
 ```yaml
 # vs-1.yaml
+
 apiVersion: networking.istio.io/v1
 kind: VirtualService
 metadata:

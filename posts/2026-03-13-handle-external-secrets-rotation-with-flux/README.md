@@ -29,6 +29,7 @@ The first step in supporting rotation is ensuring ESO checks for new values freq
 
 ```yaml
 # clusters/my-cluster/apps/myapp/externalsecret-rotating-db.yaml
+
 apiVersion: external-secrets.io/v1beta1
 kind: ExternalSecret
 metadata:

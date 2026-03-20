@@ -103,6 +103,7 @@ The ingester configuration lives under the `ingester` key in your Tempo config f
 
 ```yaml
 # tempo.yaml - Basic ingester configuration
+
 ingester:
   # Maximum time a trace can remain in the ingester
   # Traces older than this are force-flushed
@@ -389,7 +390,7 @@ ingester:
     ingestion_time_range_slack: 2m
 ```
 
-### Resource Requests for Kubernetes
+Resource Requests for Kubernetes
 
 Based on your configuration, set appropriate resource limits:
 

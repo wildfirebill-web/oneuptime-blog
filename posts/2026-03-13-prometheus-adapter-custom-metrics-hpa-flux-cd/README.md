@@ -23,6 +23,7 @@ Prometheus Adapter implements the Kubernetes custom metrics API by translating P
 
 ```yaml
 # clusters/production/infrastructure/prometheus-adapter.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

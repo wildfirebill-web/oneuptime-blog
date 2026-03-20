@@ -62,6 +62,7 @@ The GKE cluster needs enough resources to run Apigee components. The minimum rec
 
 ```bash
 # Create a GKE cluster for Apigee Hybrid
+
 gcloud container clusters create apigee-hybrid \
   --project YOUR_PROJECT_ID \
   --region us-central1 \

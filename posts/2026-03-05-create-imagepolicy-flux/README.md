@@ -34,6 +34,7 @@ The most common policy selects the latest semantic version tag.
 
 ```yaml
 # imagepolicy-semver.yaml
+
 # Select the latest semver tag for the my-app image
 apiVersion: image.toolkit.fluxcd.io/v1
 kind: ImagePolicy

@@ -194,6 +194,7 @@ Track how long the proxy takes to become ready:
 
 ```bash
 # Check when the proxy container started vs when it became ready
+
 kubectl describe pod my-pod -n my-namespace | grep -A5 "istio-proxy"
 
 # Check proxy startup in events

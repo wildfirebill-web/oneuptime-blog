@@ -55,6 +55,7 @@ Add `revertOnDeletion: true` to your Canary resource:
 
 ```yaml
 # canary.yaml
+
 apiVersion: flagger.app/v1beta1
 kind: Canary
 metadata:

@@ -28,6 +28,7 @@ Create the Celery application with Redis as both the message broker and result b
 
 ```python
 # celery_app.py
+
 from celery import Celery
 import os
 

@@ -1,4 +1,4 @@
-# How to Deploy Paperless-ngx via Portainer
+# How to Deploy Paperless-ngx via Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -97,6 +97,7 @@ Drop documents into the consume folder for automatic processing:
 
 ```bash
 # Copy a document to the consume folder
+
 cp invoice.pdf /var/lib/docker/volumes/paperless_consume/_data/
 
 # Or configure Paperless to watch a network share

@@ -27,6 +27,7 @@ This guide covers configuring pod kill, container kill, and CPU stress chaos exp
 
 ```bash
 # Confirm all Chaos Mesh pods are running
+
 kubectl get pods -n chaos-mesh
 
 # Verify CRDs are installed

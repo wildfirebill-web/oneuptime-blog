@@ -27,6 +27,7 @@ Rspamd provides its own apt repository with more recent versions than Ubuntu's d
 
 ```bash
 # Add the Rspamd signing key
+
 curl https://rspamd.com/apt-stable/gpg.key | \
   sudo gpg --dearmor -o /usr/share/keyrings/rspamd.gpg
 

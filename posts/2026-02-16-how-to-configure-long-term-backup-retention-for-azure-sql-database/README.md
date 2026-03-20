@@ -91,6 +91,7 @@ Click "Apply". The policy takes effect immediately, and the next eligible backup
 
 ```bash
 # Set a long-term retention policy
+
 # W=4 weeks, M=12 months, Y=5 years, yearly backup from week 1
 az sql db ltr-policy set \
     --resource-group myResourceGroup \

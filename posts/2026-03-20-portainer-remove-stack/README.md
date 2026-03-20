@@ -8,7 +8,7 @@ Description: Learn how to safely remove Docker Compose stacks in Portainer, unde
 
 ## Introduction
 
-Removing a stack in Portainer stops and removes all containers, networks, and (optionally) volumes associated with that stack. Understanding exactly what gets removed — and what doesn't — is critical to avoid accidental data loss. Portainer's stack removal is equivalent to running `docker compose down` with configurable options for volume handling.
+Removing a stack in Portainer stops and removes all containers, networks, and (optionally) volumes associated with that stack. Understanding exactly what gets removed - and what doesn't - is critical to avoid accidental data loss. Portainer's stack removal is equivalent to running `docker compose down` with configurable options for volume handling.
 
 ## Prerequisites
 
@@ -26,7 +26,7 @@ Removing a stack in Portainer stops and removes all containers, networks, and (o
 | Images | No | No |
 | Portainer stack metadata | Yes | Yes |
 
-By default, named volumes persist after stack removal to prevent accidental data loss. This is intentional — you must explicitly choose to remove volumes.
+By default, named volumes persist after stack removal to prevent accidental data loss. This is intentional - you must explicitly choose to remove volumes.
 
 ## Step 1: Back Up Volumes Before Removal
 
@@ -34,6 +34,7 @@ Before removing a stack, back up any important data:
 
 ```bash
 # Identify volumes used by the stack:
+
 docker compose ps -q | xargs docker inspect \
   --format '{{.Name}}: {{range .Mounts}}{{.Name}} {{end}}'
 
@@ -49,7 +50,7 @@ echo "Backup complete: $(ls -lh /backup/)"
 
 ## Step 2: Remove the Stack via Portainer UI
 
-### Remove Without Deleting Volumes (Safe — Default)
+### Remove Without Deleting Volumes (Safe - Default)
 
 1. Navigate to **Stacks** in Portainer.
 2. Check the checkbox next to the stack.
@@ -151,7 +152,7 @@ For ephemeral stacks in CI/CD environments:
 
 ```bash
 #!/bin/bash
-# cleanup-old-stacks.sh — Remove stacks older than N days
+# cleanup-old-stacks.sh - Remove stacks older than N days
 
 # Via Portainer API:
 curl -s "${PORTAINER_URL}/api/stacks" \
@@ -167,4 +168,4 @@ curl -s "${PORTAINER_URL}/api/stacks" \
 
 ## Conclusion
 
-Removing a stack in Portainer is a two-decision process: remove now, and remove volumes or not. The default behavior preserves volumes to prevent accidental data loss — always back up important volumes before removal if you plan to delete them. Use the CLI (`docker compose down --volumes`) for scripted cleanup, and use Portainer's UI confirmation dialog for manual removals where you need to verify the volume decision. After removal, run `docker volume prune` and `docker network prune` to clean up any lingering orphaned resources.
+Removing a stack in Portainer is a two-decision process: remove now, and remove volumes or not. The default behavior preserves volumes to prevent accidental data loss - always back up important volumes before removal if you plan to delete them. Use the CLI (`docker compose down --volumes`) for scripted cleanup, and use Portainer's UI confirmation dialog for manual removals where you need to verify the volume decision. After removal, run `docker volume prune` and `docker network prune` to clean up any lingering orphaned resources.

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Naming, random, Resource Names, Conventions
+Tags: OpenTofu, Naming, Random, Resource Names, Conventions
 
 Description: Learn how to create consistent, unique resource names in OpenTofu using random suffixes, naming conventions, and the format function for provider-specific constraints.
 
@@ -14,6 +14,7 @@ Resource naming in OpenTofu must balance uniqueness requirements (globally uniqu
 
 ```hcl
 # modules/naming/main.tf - Centralized naming convention
+
 variable "project"     { type = string }
 variable "environment" { type = string }
 variable "component"   { type = string }

@@ -24,6 +24,7 @@ Ubuntu mounts several tmpfs filesystems by default.
 
 ```bash
 # List all mounted filesystems, filter for tmpfs
+
 mount | grep tmpfs
 
 # Example output:

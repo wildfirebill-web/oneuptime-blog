@@ -59,6 +59,7 @@ Now query business metrics:
 
 ```promql
 # Orders per minute
+
 sum(rate(istio_requests_total{
   destination_service_name="my-api",
   business_operation="create_order",

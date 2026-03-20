@@ -16,6 +16,7 @@ OpenShift-specific Calico upgrade mistakes often stem from treating OCP like van
 
 ```bash
 # WRONG - initiating Calico upgrade while OCP is also updating
+
 # Check if OCP is currently upgrading before starting Calico upgrade
 oc get clusterversion -o jsonpath='{.items[0].status.conditions[?(@.type=="Progressing")].status}'
 # If "True" - OCP upgrade in progress. STOP - do not start Calico upgrade.

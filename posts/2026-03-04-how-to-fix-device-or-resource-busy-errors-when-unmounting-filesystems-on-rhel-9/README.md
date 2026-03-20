@@ -43,6 +43,7 @@ sudo fuser -k -9 /mnt/data
 
 ```bash
 # Check if any shell has the mount as cwd
+
 sudo fuser -mv /mnt/data | grep bash
 ```
 

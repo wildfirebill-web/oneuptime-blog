@@ -10,31 +10,32 @@ Traffic prioritization ensures that critical applications like VoIP, SSH, and DN
 
 ## Architecture
 
-```
+```text
 eth0 → Root HTB (100 Mbps total)
-         ├── Class 1:10 — Critical (VoIP, SSH)  — 40 Mbps guaranteed
-         ├── Class 1:20 — Interactive (HTTP)    — 40 Mbps guaranteed
-         └── Class 1:30 — Bulk (default)        — 20 Mbps guaranteed
+         ├── Class 1:10 - Critical (VoIP, SSH)  - 40 Mbps guaranteed
+         ├── Class 1:20 - Interactive (HTTP)    - 40 Mbps guaranteed
+         └── Class 1:30 - Bulk (default)        - 20 Mbps guaranteed
 ```
 
 ## Step 1: Create HTB Root and Classes
 
 ```bash
 # Root HTB qdisc, default traffic goes to bulk class (1:30)
+
 sudo tc qdisc add dev eth0 root handle 1: htb default 30
 
 # Root class encompassing all bandwidth
 sudo tc class add dev eth0 parent 1: classid 1:1 htb rate 100mbit burst 15k
 
-# Critical class: VoIP, SSH — priority 1 (highest)
+# Critical class: VoIP, SSH - priority 1 (highest)
 sudo tc class add dev eth0 parent 1:1 classid 1:10 \
   htb rate 40mbit ceil 100mbit burst 15k prio 1
 
-# Interactive class: HTTP/HTTPS — priority 2
+# Interactive class: HTTP/HTTPS - priority 2
 sudo tc class add dev eth0 parent 1:1 classid 1:20 \
   htb rate 40mbit ceil 100mbit burst 15k prio 2
 
-# Bulk class: everything else — priority 3 (lowest)
+# Bulk class: everything else - priority 3 (lowest)
 sudo tc class add dev eth0 parent 1:1 classid 1:30 \
   htb rate 20mbit ceil 100mbit burst 15k prio 3
 ```

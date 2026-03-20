@@ -32,6 +32,7 @@ First, you need an IAM role that SageMaker can assume:
 
 ```bash
 # Create an IAM role for SageMaker
+
 aws iam create-role \
   --role-name SageMakerExecutionRole \
   --assume-role-policy-document '{

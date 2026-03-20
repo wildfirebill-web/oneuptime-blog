@@ -20,6 +20,7 @@ The traditional approach looks like this:
 
 ```python
 # app.py - the old way
+
 from flask import Flask
 
 app = Flask(__name__)

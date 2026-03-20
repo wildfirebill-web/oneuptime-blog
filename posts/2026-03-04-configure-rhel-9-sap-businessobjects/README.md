@@ -36,6 +36,7 @@ graph TB
 
 ```bash
 # Install the packages required by BusinessObjects
+
 sudo dnf install -y \
   glibc.i686 \
   glibc.x86_64 \

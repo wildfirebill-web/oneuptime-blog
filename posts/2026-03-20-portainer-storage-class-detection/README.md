@@ -1,8 +1,8 @@
-# How to Fix "Storage Class Detection Error" in Portainer
+# How to Fix 'Storage Class Detection Error' in Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Kubernetes, Troubleshooting, Storage, PersistentVolumes
+Tags: Portainer, Docker, Kubernetes, Troubleshooting, Storage, PersistentVolume
 
 Description: Resolve storage class detection errors in Portainer's Kubernetes environment view, including missing storage class CRDs, permission issues, and cluster configuration problems.
 
@@ -14,6 +14,7 @@ Description: Resolve storage class detection errors in Portainer's Kubernetes en
 
 ```bash
 # Check Portainer logs for Kubernetes storage class errors
+
 docker logs portainer 2>&1 | grep -i "storageclass\|storage class\|kubernetes\|k8s" | tail -20
 
 # Common error patterns:

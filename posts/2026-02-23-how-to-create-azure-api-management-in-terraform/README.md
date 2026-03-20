@@ -51,6 +51,7 @@ resource "azurerm_resource_group" "apim" {
 }
 
 # Create the APIM instance
+
 resource "azurerm_api_management" "main" {
   name                = "apim-prod-001"
   location            = azurerm_resource_group.apim.location

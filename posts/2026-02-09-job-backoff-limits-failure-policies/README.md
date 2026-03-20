@@ -186,6 +186,7 @@ import sys
 import os
 
 # Exit code definitions
+
 EXIT_SUCCESS = 0
 EXIT_RETRIABLE_ERROR = 1
 EXIT_INVALID_INPUT = 2

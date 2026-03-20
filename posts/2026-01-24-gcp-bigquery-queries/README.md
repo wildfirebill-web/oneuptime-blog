@@ -44,6 +44,7 @@ Always check how much data a query will scan before executing it.
 
 ```bash
 # Dry run to estimate cost
+
 bq query --dry_run --use_legacy_sql=false '
 SELECT
     user_id,

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Ubuntu, Networking, Ethtool, Troubleshooting, Hardware
+Tags: Ubuntu, Networking, ethtool, Troubleshooting, Hardware
 
 Description: Comprehensive guide to using ethtool on Ubuntu to diagnose network interface card problems, check link speed, duplex settings, driver info, and interface statistics.
 
@@ -16,6 +16,7 @@ When network performance is poor or connectivity is unreliable, ethtool often re
 
 ```bash
 # ethtool is installed by default on most Ubuntu systems
+
 which ethtool
 # /usr/sbin/ethtool
 

@@ -115,6 +115,7 @@ def get_instance_hourly_cost(instance_type, region):
     return pricing.get(instance_type, 0.10)  # Default estimate
 
 # Example usage
+
 if __name__ == '__main__':
     idle = analyze_ec2_utilization(threshold=10)
     print(f"Found {len(idle)} potentially idle instances")

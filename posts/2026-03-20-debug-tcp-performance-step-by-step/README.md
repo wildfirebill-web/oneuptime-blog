@@ -8,11 +8,11 @@ Description: Follow a systematic step-by-step methodology to diagnose TCP perfor
 
 ## Introduction
 
-TCP performance problems are multi-layered. The same symptom — "transfers are slow" — can have a dozen different causes. A systematic approach rules out each possible cause methodically, avoiding the trap of applying fixes randomly and not knowing what actually helped.
+TCP performance problems are multi-layered. The same symptom - "transfers are slow" - can have a dozen different causes. A systematic approach rules out each possible cause methodically, avoiding the trap of applying fixes randomly and not knowing what actually helped.
 
 ## The Diagnostic Ladder
 
-```
+```text
 Layer 7 (Application) → is the app the bottleneck?
 Layer 4 (TCP)         → window, retransmissions, congestion?
 Layer 3 (IP/routing)  → routing, MTU, fragmentation?
@@ -25,6 +25,7 @@ Start at Layer 1 and work up.
 
 ```bash
 # Check for interface errors (CRC, frame errors = hardware/cable issue)
+
 ip -s link show eth0
 # RX errors, dropped, overruns should all be 0
 # TX errors should be 0
@@ -38,7 +39,7 @@ journalctl -k | grep "eth0.*link"
 dmesg | grep "eth0" | grep -i "up\|down"
 ```
 
-## Step 2: Layer 3 — Routing and MTU
+## Step 2: Layer 3 - Routing and MTU
 
 ```bash
 # Verify correct path and MTU
@@ -54,7 +55,7 @@ ping -c 100 -i 0.2 10.20.0.5 | tail -3
 # Any loss% > 0: investigate path
 ```
 
-## Step 3: TCP Layer — Window and Retransmissions
+## Step 3: TCP Layer - Window and Retransmissions
 
 ```bash
 # Check current TCP performance metrics
@@ -113,4 +114,4 @@ ss -tin state established | awk '
 
 ## Conclusion
 
-Systematic TCP debugging starts at the physical layer and works up. Hardware errors trump everything — fix duplex mismatches and interface errors first. MTU issues cause mysterious hangs — test with large DF-set pings. TCP window and retransmission analysis reveals whether the bottleneck is buffer size, packet loss, or congestion. Application profiling catches the cases where the network is fine but the app can't keep up with incoming data.
+Systematic TCP debugging starts at the physical layer and works up. Hardware errors trump everything - fix duplex mismatches and interface errors first. MTU issues cause mysterious hangs - test with large DF-set pings. TCP window and retransmission analysis reveals whether the bottleneck is buffer size, packet loss, or congestion. Application profiling catches the cases where the network is fine but the app can't keep up with incoming data.

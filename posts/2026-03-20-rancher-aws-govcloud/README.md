@@ -22,6 +22,7 @@ AWS GovCloud is AWS's isolated region designed for US government workloads requi
 
 ```bash
 # Log in to GovCloud ECR
+
 aws ecr get-login-password \
   --region us-gov-west-1 \
   | docker login \

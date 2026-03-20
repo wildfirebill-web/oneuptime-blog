@@ -227,6 +227,7 @@ EOF
 done
 
 # Clean up
+
 kubectl delete virtualservice inventory-service -n production
 echo "Fault injection removed."
 ```

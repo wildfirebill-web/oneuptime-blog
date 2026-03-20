@@ -525,6 +525,7 @@ props.put(ConsumerConfig.PARTITION_ASSIGNMENT_STRATEGY_CONFIG,
 
 ```bash
 # View consumer group details including partition assignment
+
 kafka-consumer-groups.sh --bootstrap-server localhost:9092 \
     --describe --group order-processors
 ```

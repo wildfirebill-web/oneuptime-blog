@@ -28,6 +28,7 @@ Add the JupyterHub Helm repository:
 
 ```bash
 # Add the JupyterHub Helm chart repository
+
 helm repo add jupyterhub https://hub.jupyter.org/helm-chart/
 helm repo update
 ```
@@ -288,7 +289,7 @@ singleuser:
         readOnly: false
 ```
 
-## Resource Management
+Resource Management
 
 To prevent any single user from consuming all cluster resources, configure resource quotas:
 

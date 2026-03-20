@@ -40,6 +40,7 @@ Define quotas for compute resources and object counts:
 
 ```yaml
 # resource-quota.yaml
+
 apiVersion: v1
 kind: ResourceQuota
 metadata:

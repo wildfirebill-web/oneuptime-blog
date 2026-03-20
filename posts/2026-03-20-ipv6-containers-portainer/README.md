@@ -24,6 +24,7 @@ IPv6 is disabled in Docker by default. With IPv6 adoption increasing and ISPs pr
 
 ```bash
 # Apply daemon changes
+
 sudo systemctl restart docker
 
 # Verify IPv6 is enabled

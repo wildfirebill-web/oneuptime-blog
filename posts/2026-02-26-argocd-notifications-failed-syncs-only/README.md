@@ -18,6 +18,7 @@ If you installed ArgoCD via Helm, notifications might already be included. Other
 
 ```bash
 # Install ArgoCD Notifications
+
 kubectl apply -n argocd \
   -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/notifications_catalog/install.yaml
 ```

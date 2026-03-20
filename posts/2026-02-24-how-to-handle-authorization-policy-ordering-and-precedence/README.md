@@ -43,6 +43,7 @@ Example that demonstrates this:
 
 ```yaml
 # This ALLOW policy allows everything from the backend namespace
+
 apiVersion: security.istio.io/v1
 kind: AuthorizationPolicy
 metadata:

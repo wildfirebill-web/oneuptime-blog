@@ -170,6 +170,7 @@ There are several ways to handle trust domains in multi-cluster Istio:
 
 ```yaml
 # Cluster 1
+
 meshConfig:
   trustDomain: mycompany.com
 

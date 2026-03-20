@@ -36,6 +36,7 @@ The Protocol field at byte 9 of the IPv4 header is an 8-bit integer. IANA mainta
 
 ```bash
 # View the full protocols database
+
 cat /etc/protocols
 
 # Look up by number (e.g., 89 = OSPF)

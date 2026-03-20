@@ -16,6 +16,7 @@ Before compiling Python, you need development tools and libraries that Python de
 
 ```bash
 # Install the base development tools
+
 sudo dnf groupinstall -y "Development Tools"
 
 # Install libraries that Python modules need

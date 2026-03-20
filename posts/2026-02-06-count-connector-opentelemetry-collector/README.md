@@ -36,6 +36,7 @@ The Count Connector configuration consists of defining what to count and how to 
 
 ```yaml
 # Define the count connector in the connectors section
+
 connectors:
   count:
     # Generate metrics from spans

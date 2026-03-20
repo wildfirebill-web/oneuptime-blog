@@ -24,6 +24,7 @@ Enable AGIC on your AKS cluster:
 
 ```bash
 # Create an Application Gateway
+
 az network application-gateway create \
   --name istio-appgw \
   --resource-group istio-rg \

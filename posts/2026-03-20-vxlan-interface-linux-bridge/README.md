@@ -26,13 +26,14 @@ flowchart LR
 
 ```bash
 # On Host A (underlay: 10.0.0.1)
+
 ip link add vxlan0 type vxlan \
     id 100 \
     dstport 4789 \
     local 10.0.0.1 \
     dev eth0
 
-# DO NOT assign an IP to vxlan0 — the bridge will handle that
+# DO NOT assign an IP to vxlan0 - the bridge will handle that
 ip link set vxlan0 up
 ```
 

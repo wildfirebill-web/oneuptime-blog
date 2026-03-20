@@ -20,6 +20,7 @@ Install Podman using Homebrew:
 
 ```bash
 # Install Podman via Homebrew
+
 brew install podman
 
 # Verify the installation

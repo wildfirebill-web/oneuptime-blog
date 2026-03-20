@@ -70,6 +70,7 @@ Help engineers understand the big picture:
 
 ```yaml
 # Database StatefulSet - link to data architecture docs
+
 apiVersion: apps/v1
 kind: StatefulSet
 metadata:

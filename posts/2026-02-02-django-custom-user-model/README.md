@@ -53,6 +53,7 @@ If you just need to add extra fields while keeping the username-based authentica
 
 ```python
 # accounts/models.py
+
 # Extending AbstractUser to add custom fields while keeping username authentication
 from django.contrib.auth.models import AbstractUser
 from django.db import models

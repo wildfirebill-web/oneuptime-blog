@@ -59,6 +59,7 @@ Before diving into specific solutions, run through this quick checklist:
 
 ```bash
 # 1. Is the Collector running?
+
 docker ps | grep otel
 # or
 systemctl status otel-collector

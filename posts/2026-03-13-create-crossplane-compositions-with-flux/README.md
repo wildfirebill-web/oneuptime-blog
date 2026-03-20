@@ -45,6 +45,7 @@ The XRD defines the API schema that developers use to request infrastructure.
 
 ```yaml
 # infrastructure/crossplane/compositions/postgresql/xrd.yaml
+
 apiVersion: apiextensions.crossplane.io/v1
 kind: CompositeResourceDefinition
 metadata:

@@ -14,6 +14,7 @@ Red Hat provides dedicated System Roles for SAP that automate the complex OS-lev
 
 ```bash
 # Install the RHEL System Roles for SAP
+
 sudo dnf install -y rhel-system-roles-sap
 
 # Verify the roles are installed

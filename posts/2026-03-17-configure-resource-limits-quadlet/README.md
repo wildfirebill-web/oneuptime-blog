@@ -18,6 +18,7 @@ Resource limits ensure that no single container can monopolize host resources. Q
 
 ```ini
 # ~/.config/containers/systemd/myapp.container
+
 [Unit]
 Description=Application with memory limits
 

@@ -24,6 +24,7 @@ The cleanest approach is disabling automatic mounting on the ServiceAccount itse
 
 ```yaml
 # no-token-serviceaccount.yaml
+
 apiVersion: v1
 kind: ServiceAccount
 metadata:

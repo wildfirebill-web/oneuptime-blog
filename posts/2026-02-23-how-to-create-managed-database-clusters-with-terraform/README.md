@@ -31,6 +31,7 @@ Aurora is the most popular managed relational database cluster on AWS. It provid
 
 ```hcl
 # Configure the AWS provider
+
 provider "aws" {
   region = "us-east-1"
 }

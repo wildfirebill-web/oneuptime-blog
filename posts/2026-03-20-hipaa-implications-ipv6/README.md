@@ -12,7 +12,7 @@ HIPAA Security Rule requires covered entities and business associates to protect
 
 ## HIPAA Security Rule and IPv6
 
-```
+```text
 HIPAA Security Rule §164.312 - Technical Safeguards
 These apply equally to IPv4 and IPv6 networks:
 
@@ -33,6 +33,7 @@ technology used to transmit or store ePHI.
 # Restrict ePHI system access by IPv6 address
 
 # Only allow healthcare application servers in IPv6 subnet
+
 sudo ip6tables -A INPUT -p tcp \
   -s 2001:db8:healthcare::/48 \
   --dport 8080 \
@@ -130,7 +131,7 @@ EOF
 
 ## Business Associate Agreements (BAA) and IPv6
 
-```
+```text
 HIPAA BAA Considerations for IPv6:
 
 Cloud providers handling ePHI over IPv6 must sign BAA:

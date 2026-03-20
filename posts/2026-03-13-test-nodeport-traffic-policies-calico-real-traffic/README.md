@@ -55,6 +55,7 @@ spec:
 
 ```bash
 # Apply the policy
+
 calicoctl apply -f test-nodeport-traffic.yaml
 
 # Verify traffic behavior

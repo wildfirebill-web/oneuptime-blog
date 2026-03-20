@@ -44,6 +44,7 @@ Create a Python module that builds model cards programmatically:
 
 ```python
 # model_card_builder.py - Build model cards for Vertex AI models
+
 from google.cloud import aiplatform
 from datetime import datetime
 import json

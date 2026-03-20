@@ -95,6 +95,7 @@ For projects using specific features, install additional plugins as needed:
 
 ```bash
 # For SVGR (importing SVGs as React components)
+
 npm install -D vite-plugin-svgr
 
 # For environment variable handling

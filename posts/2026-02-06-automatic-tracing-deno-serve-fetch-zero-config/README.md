@@ -80,6 +80,7 @@ To enable automatic tracing, run the server with OpenTelemetry configuration:
 
 ```bash
 # Export traces to a local OTLP collector
+
 deno run --unstable-otel \
   --allow-net \
   --allow-env \

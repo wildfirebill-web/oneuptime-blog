@@ -101,6 +101,7 @@ https://login.microsoftonline.com/{tenant-id}/v2.0/.well-known/openid-configurat
 
 ```bash
 # Create a new client in Keycloak using the admin CLI
+
 # First, get an admin token
 ADMIN_TOKEN=$(curl -s \
   -d "client_id=admin-cli" \

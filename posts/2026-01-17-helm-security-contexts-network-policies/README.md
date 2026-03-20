@@ -43,6 +43,7 @@ Configure the security context in your Deployment template.
 
 ```yaml
 # templates/deployment.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

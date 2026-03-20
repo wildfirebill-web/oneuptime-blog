@@ -42,6 +42,7 @@ def translate_text(text, target_language, source_language='auto'):
     }
 
 # Translate to several languages
+
 text = "Our monitoring platform helps you detect and resolve incidents faster."
 
 languages = {

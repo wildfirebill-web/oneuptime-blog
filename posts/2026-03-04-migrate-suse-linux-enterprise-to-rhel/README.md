@@ -14,6 +14,7 @@ There is no in-place conversion tool from SLES to RHEL because the distributions
 
 ```bash
 # On SLES: List all installed packages
+
 rpm -qa --queryformat '%{NAME}\n' | sort > /tmp/sles-packages.txt
 
 # Document running services

@@ -20,6 +20,7 @@ Podman checks multiple locations for the registries configuration.
 
 ```bash
 # System-wide configuration (requires root to edit)
+
 ls -la /etc/containers/registries.conf
 
 # User-level configuration (overrides system-wide for current user)

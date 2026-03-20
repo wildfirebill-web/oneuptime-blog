@@ -137,6 +137,7 @@ Use `exec` form in your Dockerfile:
 
 ```dockerfile
 # Good - app becomes PID 1
+
 CMD ["./my-app"]
 
 # Bad - shell is PID 1, app does not get SIGTERM

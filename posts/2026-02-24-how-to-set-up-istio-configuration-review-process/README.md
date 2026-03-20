@@ -31,6 +31,7 @@ Use GitHub's CODEOWNERS file to require reviews from people who understand Istio
 # .github/CODEOWNERS
 
 # Mesh-wide configuration requires platform team review
+
 istio/mesh/ @platform-team
 istio/gateways/ @platform-team
 

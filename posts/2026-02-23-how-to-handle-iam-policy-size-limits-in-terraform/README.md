@@ -33,6 +33,7 @@ Before hitting the limit, you can check policy sizes proactively.
 
 ```hcl
 # Output the policy JSON to check its size
+
 output "policy_size" {
   value = length(data.aws_iam_policy_document.large_policy.json)
 }

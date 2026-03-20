@@ -10,8 +10,8 @@ DNS delegation lets you delegate responsibility for a subdomain to a separate DN
 
 ## Why Delegate DNS?
 
-```
-example.com          (root zone — platform team)
+```text
+example.com          (root zone - platform team)
   ├── api.example.com     (delegated to api team zone)
   ├── app.example.com     (delegated to app team zone)
   └── staging.example.com (delegated to staging zone)
@@ -20,7 +20,8 @@ example.com          (root zone — platform team)
 ## Parent Zone Setup (Route53)
 
 ```hcl
-# Parent zone — owned by platform team
+# Parent zone - owned by platform team
+
 data "aws_route53_zone" "root" {
   name         = "example.com."
   private_zone = false
@@ -59,7 +60,7 @@ resource "aws_route53_record" "api_ns" {
   zone_id = data.aws_route53_zone.root.zone_id
   name    = "api.example.com"
   type    = "NS"
-  ttl     = 172800  # 48 hours — NS records have high TTL
+  ttl     = 172800  # 48 hours - NS records have high TTL
 
   records = aws_route53_zone.api.name_servers
 }

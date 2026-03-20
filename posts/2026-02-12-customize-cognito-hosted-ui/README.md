@@ -30,6 +30,7 @@ First, make sure you have a domain configured:
 
 ```hcl
 # Cognito-provided domain
+
 resource "aws_cognito_user_pool_domain" "main" {
   domain       = "my-app-auth"
   user_pool_id = aws_cognito_user_pool.main.id

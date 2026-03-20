@@ -42,6 +42,7 @@ Kubernetes audit logging records all API server requests. This is required for a
 
 ```yaml
 # audit-policy.yaml
+
 # Defines what API events to log and at what detail level
 apiVersion: audit.k8s.io/v1
 kind: Policy

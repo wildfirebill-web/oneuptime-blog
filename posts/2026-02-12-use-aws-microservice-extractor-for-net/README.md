@@ -313,6 +313,7 @@ Deploy each microservice independently using ECS Fargate or Lambda:
 
 ```yaml
 # CloudFormation for deploying extracted microservices
+
 Resources:
   OrderService:
     Type: AWS::ECS::Service

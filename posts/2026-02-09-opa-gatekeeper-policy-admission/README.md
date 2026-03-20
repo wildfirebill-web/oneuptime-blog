@@ -113,6 +113,7 @@ Test the policy:
 
 ```bash
 # This will fail
+
 kubectl create namespace test-namespace
 
 # This will succeed
@@ -172,7 +173,7 @@ spec:
       - "myregistry.azurecr.io/"
 ```
 
-## Resource Limits Policy
+Resource Limits Policy
 
 Require resource limits on all containers:
 

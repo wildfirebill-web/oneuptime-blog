@@ -40,6 +40,7 @@ If you are running on EKS, you can use the ADOT Collector image which includes t
 
 ```bash
 # Pull the contrib collector image which includes the awsxray exporter
+
 docker pull otel/opentelemetry-collector-contrib:0.98.0
 ```
 

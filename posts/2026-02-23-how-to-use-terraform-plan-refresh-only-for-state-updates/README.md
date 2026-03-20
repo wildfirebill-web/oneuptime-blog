@@ -24,6 +24,7 @@ With `-refresh-only`, Terraform stops after step 1. It shows you what changed in
 
 ```bash
 # Normal plan - shows what Terraform wants to change
+
 terraform plan
 
 # Refresh-only plan - shows what changed in the cloud
@@ -224,7 +225,7 @@ jobs:
               owner: context.repo.owner,
               repo: context.repo.repo,
               title: `Infrastructure drift detected in ${{ matrix.environment }}`,
-              body: `Drift was detected during the scheduled check.\n\n\`\`\`\n${report}\n\`\`\``,
+              body: `Drift was detected during the scheduled check.\n\n```\n${report}\n````,
               labels: ['terraform', 'drift', '${{ matrix.environment }}']
             });
 ```

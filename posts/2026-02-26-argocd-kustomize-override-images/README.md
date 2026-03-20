@@ -33,6 +33,7 @@ This is the standard Kustomize approach. Add an `images` section to your overlay
 
 ```yaml
 # overlays/production/kustomization.yaml
+
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 

@@ -14,12 +14,12 @@ Portainer and Docker expose several management ports that, if left unrestricted,
 
 | Port | Service | Risk Level |
 |------|---------|------------|
-| `9443` | Portainer HTTPS | High — full container management |
-| `9000` | Portainer HTTP | Critical — unencrypted management |
-| `8000` | Portainer Edge Agent | Medium — for edge environments |
-| `2375` | Docker API (no TLS) | Critical — root-equivalent access |
-| `2376` | Docker API (TLS) | High — root-equivalent with auth |
-| `2377` | Docker Swarm manager | High — Swarm cluster management |
+| `9443` | Portainer HTTPS | High - full container management |
+| `9000` | Portainer HTTP | Critical - unencrypted management |
+| `8000` | Portainer Edge Agent | Medium - for edge environments |
+| `2375` | Docker API (no TLS) | Critical - root-equivalent access |
+| `2376` | Docker API (TLS) | High - root-equivalent with auth |
+| `2377` | Docker Swarm manager | High - Swarm cluster management |
 
 ## Step 1: Close Unneeded Ports
 
@@ -27,6 +27,7 @@ First, identify which ports are currently open:
 
 ```bash
 # Check listening ports
+
 ss -tlnp | grep -E "(9443|9000|8000|2375|2376|2377)"
 
 # Check from external perspective
@@ -217,4 +218,4 @@ nmap -p 9443 10.0.0.100
 
 ## Conclusion
 
-Restricting Portainer management ports is a critical security measure. Bind Portainer to internal or VPN-only interfaces, use firewall rules to restrict access by source IP, disable the plain HTTP port entirely, and never expose the Docker API TCP port without TLS. Combine port restrictions with VPN-only access for maximum protection — ports that are not reachable from the internet cannot be exploited.
+Restricting Portainer management ports is a critical security measure. Bind Portainer to internal or VPN-only interfaces, use firewall rules to restrict access by source IP, disable the plain HTTP port entirely, and never expose the Docker API TCP port without TLS. Combine port restrictions with VPN-only access for maximum protection - ports that are not reachable from the internet cannot be exploited.

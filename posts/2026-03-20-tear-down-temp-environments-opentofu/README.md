@@ -8,12 +8,13 @@ Description: Learn how to safely tear down temporary OpenTofu environments using
 
 ---
 
-Temporary environments — PR previews, spike testing environments, performance test environments — accumulate quickly and become expensive if not destroyed. OpenTofu makes teardown as easy as creation, but it requires proper workflows and guardrails to avoid destroying the wrong environment.
+Temporary environments - PR previews, spike testing environments, performance test environments - accumulate quickly and become expensive if not destroyed. OpenTofu makes teardown as easy as creation, but it requires proper workflows and guardrails to avoid destroying the wrong environment.
 
 ## Safe Destroy Workflow
 
 ```bash
 # Always plan destroy first to review what will be deleted
+
 tofu plan -destroy -out=destroy.tfplan
 
 # Review the plan carefully
@@ -150,7 +151,7 @@ resource "aws_budgets_budget" "temp_env" {
 ## Best Practices
 
 - Always tag ephemeral resources with `EnvironmentType = "ephemeral"` and `PR = "<number>"` for automated cleanup.
-- Run `tofu plan -destroy` and review before applying destroy — check for resources not in state that may be orphaned.
+- Run `tofu plan -destroy` and review before applying destroy - check for resources not in state that may be orphaned.
 - Set AWS Budgets alerts for ephemeral environments to catch runaway costs early.
 - Keep state files after destroy long enough (7+ days) to debug any issues with cleanup.
-- Remove workspace state after destroy to prevent confusion — `tofu workspace delete` after `tofu destroy`.
+- Remove workspace state after destroy to prevent confusion - `tofu workspace delete` after `tofu destroy`.

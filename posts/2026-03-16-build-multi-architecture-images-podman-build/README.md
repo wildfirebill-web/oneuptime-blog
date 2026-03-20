@@ -20,6 +20,7 @@ The simplest case targets one platform.
 
 ```bash
 # Build for a specific platform
+
 podman build --platform linux/amd64 -t myapp:amd64 .
 podman build --platform linux/arm64 -t myapp:arm64 .
 ```

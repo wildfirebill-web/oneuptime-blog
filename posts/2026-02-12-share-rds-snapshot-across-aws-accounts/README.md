@@ -41,6 +41,7 @@ The CLI approach is better for automation. Here's how to share a snapshot with a
 
 ```bash
 # Share a manual RDS snapshot with another AWS account
+
 aws rds modify-db-snapshot-attribute \
   --db-snapshot-identifier my-manual-snapshot \
   --attribute-name restore \

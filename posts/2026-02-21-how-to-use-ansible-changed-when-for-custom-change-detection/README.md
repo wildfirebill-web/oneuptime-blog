@@ -22,6 +22,7 @@ Here is the default behavior with the command module:
 
 ```yaml
 # This always reports "changed" even when nothing changes
+
 - name: Check if application is configured
   ansible.builtin.command:
     cmd: /opt/app/bin/check-config

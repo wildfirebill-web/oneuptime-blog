@@ -152,6 +152,7 @@ Check that Prometheus is actually scraping these targets:
 kubectl port-forward svc/prometheus 9090:9090 -n monitoring
 
 # Then open http://localhost:9090/targets in your browser
+
 ```
 
 All the Istio targets should show as UP.

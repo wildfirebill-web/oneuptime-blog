@@ -33,6 +33,7 @@ Automatically isolate containers that exhibit malicious behavior:
 
 ```bash
 # Create a response rule to quarantine on reverse shell detection
+
 curl -sk -X POST \
   "https://neuvector-manager:8443/v1/response/rule" \
   -H "Content-Type: application/json" \

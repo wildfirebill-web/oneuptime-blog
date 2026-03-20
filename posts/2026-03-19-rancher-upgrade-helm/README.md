@@ -27,6 +27,7 @@ Upgrading Helm charts is a routine operation for keeping your applications up to
 
 ```bash
 # Update repository index
+
 helm repo update
 
 # Check the current version

@@ -31,13 +31,14 @@ dns64:
     prefix: 64:ff9b::/96
 
     # Synthesize only when no AAAA record exists
-    # (default behavior — no extra config needed)
+    # (default behavior - no extra config needed)
 ```
 
 ## Step 2: Custom NAT64 Prefix
 
 ```yaml
 # If your NAT64 gateway uses a custom /96 prefix
+
 dns64:
     prefix: 2001:db8:1::/96
 
@@ -59,7 +60,7 @@ server:
 
 # Or use the dns64-synthall option (synthesize even with AAAA)
 # dns64:
-#     synthall: no  # default: no — don't synthesize if AAAA exists
+#     synthall: no  # default: no - don't synthesize if AAAA exists
 ```
 
 ## Step 4: Validate and Test
@@ -74,7 +75,7 @@ unbound-anchor -a /var/lib/unbound/root.key
 # Start Unbound
 systemctl restart unbound
 
-# Test synthesis — domain with A only
+# Test synthesis - domain with A only
 dig AAAA ipv4only.example.com @::1
 # Expected: 64:ff9b::<ipv4>
 

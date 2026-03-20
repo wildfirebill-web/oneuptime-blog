@@ -65,6 +65,7 @@ Flux CD is a good fit for multi-cluster GitOps because it supports multi-tenancy
 
 ```bash
 # Bootstrap Flux on the dev cluster
+
 flux bootstrap github \
   --context=dev \
   --owner=your-org \

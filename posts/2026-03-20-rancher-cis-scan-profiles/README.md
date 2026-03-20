@@ -32,6 +32,7 @@ Rancher ships with several built-in scan profiles:
 
 ```bash
 # List all available scan profiles
+
 kubectl get clusterscanprofile -A
 
 # View details of a specific profile

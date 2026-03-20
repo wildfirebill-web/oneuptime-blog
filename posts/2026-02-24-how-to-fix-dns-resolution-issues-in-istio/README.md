@@ -33,6 +33,7 @@ Start by testing DNS from inside the pod:
 
 ```bash
 # Test from the application container
+
 kubectl exec <pod-name> -c my-app -n production -- nslookup orders-service
 
 # Test from the sidecar container

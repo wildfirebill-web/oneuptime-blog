@@ -34,6 +34,7 @@ Create a ResourceQuota for each namespace. This sets a hard cap on total resourc
 
 ```yaml
 # quota-team-alpha.yaml - Resource quota for team-alpha namespace
+
 apiVersion: v1
 kind: ResourceQuota
 metadata:

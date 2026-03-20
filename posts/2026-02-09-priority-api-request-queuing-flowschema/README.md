@@ -18,6 +18,7 @@ The API server comes with built-in FlowSchemas and PriorityLevelConfigurations. 
 
 ```bash
 # List existing FlowSchemas
+
 kubectl get flowschemas
 
 # View a specific FlowSchema

@@ -191,6 +191,7 @@ module.exports = errorMiddleware;
 
 ```python
 # error_handling.py
+
 from opentelemetry import trace
 from opentelemetry.trace import Status, StatusCode
 

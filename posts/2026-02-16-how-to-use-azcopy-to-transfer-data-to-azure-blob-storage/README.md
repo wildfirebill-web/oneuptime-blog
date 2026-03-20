@@ -20,6 +20,7 @@ AzCopy is a standalone binary that does not require installation in the traditio
 
 ```powershell
 # Download AzCopy using PowerShell
+
 Invoke-WebRequest -Uri "https://aka.ms/downloadazcopy-v10-windows" -OutFile "azcopy.zip"
 Expand-Archive -Path "azcopy.zip" -DestinationPath "C:\Tools\AzCopy"
 # Add to PATH or use the full path to the executable

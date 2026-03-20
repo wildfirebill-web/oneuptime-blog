@@ -46,6 +46,7 @@ PASSWORD="your-keystore-password"
 CA_PASSWORD="your-ca-password"
 
 # Create directory for certificates
+
 mkdir -p /opt/kafka/ssl
 cd /opt/kafka/ssl
 

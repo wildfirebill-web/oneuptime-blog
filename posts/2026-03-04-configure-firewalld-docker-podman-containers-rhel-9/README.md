@@ -37,6 +37,7 @@ The simplest approach is to accept that Docker manages its own port publishing a
 
 ```bash
 # Only publish ports on localhost (not externally accessible)
+
 docker run -d -p 127.0.0.1:8080:80 nginx
 
 # Or bind to a specific interface

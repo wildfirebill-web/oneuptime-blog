@@ -39,6 +39,7 @@ flux bootstrap github \
 
 ```yaml
 # clusters/production/apps/myapp.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: GitRepository
 metadata:

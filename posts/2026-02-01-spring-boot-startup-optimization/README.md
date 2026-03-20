@@ -42,6 +42,7 @@ Enable the startup endpoint in your application properties:
 
 ```yaml
 # Enable the startup actuator endpoint to measure startup time breakdown
+
 management:
   endpoints:
     web:

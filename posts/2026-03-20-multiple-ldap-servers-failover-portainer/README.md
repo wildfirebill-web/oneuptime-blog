@@ -28,6 +28,7 @@ In production environments, a single LDAP server is a single point of failure fo
 
 ```bash
 # Authenticate
+
 TOKEN=$(curl -s -X POST \
   https://localhost:9443/api/auth \
   -H "Content-Type: application/json" \

@@ -80,7 +80,7 @@ These systems must be migrated first as they enable everything else:
 
 | System | Reason |
 |--------|--------|
-| DNS resolvers | AAAA record resolution — without this, nothing else works |
+| DNS resolvers | AAAA record resolution - without this, nothing else works |
 | Core routers | Carry IPv6 traffic between all other systems |
 | Internet firewall | Must allow IPv6 before any external-facing service goes live |
 | Network monitoring | Visibility before rollout; catch issues early |
@@ -115,11 +115,11 @@ Complex or high-risk changes; tackle after team has practice:
 |--------|---------|
 | Legacy billing/ERP | NAT64 proxy if vendor can't update |
 | Hardware-based systems | Contact vendor for IPv6 roadmap |
-| Outsourced/SaaS | Vendor dependency — engage early |
+| Outsourced/SaaS | Vendor dependency - engage early |
 
 ## Decision Matrix
 
-```
+```text
                     HIGH VALUE
                     ^
 Wave 1              |              Wave 2
@@ -135,4 +135,4 @@ Wave 3              |              Wave 4
 
 ## Conclusion
 
-Prioritize IPv6 migration by starting with systems that unblock everything else (DNS, core routers, firewalls), then move to external-facing services that deliver business value, followed by internal services, and finally legacy or complex systems. Use the priority score formula to rank within each wave when resources are constrained. A phased wave approach limits blast radius — an issue in Wave 2 does not affect the foundation infrastructure enabled in Wave 1.
+Prioritize IPv6 migration by starting with systems that unblock everything else (DNS, core routers, firewalls), then move to external-facing services that deliver business value, followed by internal services, and finally legacy or complex systems. Use the priority score formula to rank within each wave when resources are constrained. A phased wave approach limits blast radius - an issue in Wave 2 does not affect the foundation infrastructure enabled in Wave 1.

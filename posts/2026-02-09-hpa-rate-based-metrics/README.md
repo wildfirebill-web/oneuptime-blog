@@ -149,6 +149,7 @@ kubectl apply -f prometheus-adapter-config.yaml
 kubectl rollout restart deployment prometheus-adapter -n monitoring
 
 # Check metrics are available
+
 kubectl get --raw "/apis/custom.metrics.k8s.io/v1beta1/namespaces/production/pods/*/http_requests_per_second" | jq .
 ```
 

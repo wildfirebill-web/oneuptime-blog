@@ -16,6 +16,7 @@ Disabling Nagle's algorithm (setting TCP_NODELAY) tells the TCP stack to send da
 import socket
 
 # Method 1: Direct socket
+
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 s.setsockopt(socket.IPPROTO_TCP, socket.TCP_NODELAY, 1)  # Disable Nagle
 s.connect(('10.20.0.5', 8080))
@@ -116,7 +117,7 @@ ss -tin state established 'dport = :6379' | grep nodelay
 
 ## System-Wide Approach
 
-There is no sysctl to disable Nagle globally for all connections — it must be done per-socket. However, you can patch your application or use LD_PRELOAD to intercept socket calls:
+There is no sysctl to disable Nagle globally for all connections - it must be done per-socket. However, you can patch your application or use LD_PRELOAD to intercept socket calls:
 
 ```bash
 # For testing only: intercept socket creation with LD_PRELOAD
@@ -138,4 +139,4 @@ EOF
 
 ## Conclusion
 
-Disabling Nagle's algorithm for interactive applications is straightforward — set TCP_NODELAY on each connected socket after creation. For client code, set it before or right after connect(). For server code, set it on each accepted connection. Every major language's networking library provides a direct method for this. The 40ms latency improvement for request-response protocols is immediate and measurable.
+Disabling Nagle's algorithm for interactive applications is straightforward - set TCP_NODELAY on each connected socket after creation. For client code, set it before or right after connect(). For server code, set it on each accepted connection. Every major language's networking library provides a direct method for this. The 40ms latency improvement for request-response protocols is immediate and measurable.

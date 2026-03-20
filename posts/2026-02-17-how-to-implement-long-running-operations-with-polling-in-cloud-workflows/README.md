@@ -33,6 +33,7 @@ Here is a straightforward polling implementation.
 
 ```yaml
 # polling-workflow.yaml
+
 # Polls a long-running operation until it completes
 main:
   steps:

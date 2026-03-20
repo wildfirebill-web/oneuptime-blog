@@ -33,6 +33,7 @@ The simplest and most modern approach uses SSH's `ProxyJump` option (`-J` flag).
 
 ```ini
 # inventory.ini
+
 # Bastion host (accessible directly)
 [bastion]
 bastion.example.com ansible_host=203.0.113.10 ansible_user=jumpuser

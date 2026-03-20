@@ -18,6 +18,7 @@ The most straightforward approach is to specify packages through the gcloud CLI 
 
 ```bash
 # Install PyPI packages in a Composer environment
+
 gcloud composer environments update my-composer-env \
   --location=us-central1 \
   --update-pypi-packages-from-file=requirements.txt

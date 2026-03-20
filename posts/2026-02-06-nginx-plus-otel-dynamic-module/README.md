@@ -14,6 +14,7 @@ The NGINX Plus OpenTelemetry module is distributed through the NGINX Plus reposi
 
 ```bash
 # On Debian/Ubuntu
+
 sudo apt-get update
 sudo apt-get install nginx-plus-module-otel
 

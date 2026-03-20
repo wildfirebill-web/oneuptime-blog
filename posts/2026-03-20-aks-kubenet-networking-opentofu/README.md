@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Azure, AKS, kubenet, Kubernetes Networking, Route Tables, Infrastructure as Code
+Tags: OpenTofu, Azure, AKS, Kubenet, Kubernetes Networking, Route Tables, Infrastructure as Code
 
 Description: Learn how to configure AKS with kubenet networking using OpenTofu, where nodes get VNet IPs but pods use a private CIDR routed through user-defined routes.
 
@@ -21,6 +21,7 @@ kubenet is AKS's simpler networking option where only nodes receive Azure VNet I
 
 ```hcl
 # AKS will add routes to this table for pod CIDRs per node
+
 resource "azurerm_route_table" "aks" {
   name                          = "${var.project_name}-aks-rt"
   location                      = var.location
@@ -184,4 +185,4 @@ kubectl run test --image=busybox -it --rm --restart=Never -- wget -qO- http://ba
 
 ## Conclusion
 
-kubenet is recommended when subnet IP space is limited or when your workloads don't need direct pod-level access from outside the cluster. The key limitation is that pod IPs (from `pod_cidr`) are not directly routable from on-premises or peered VNets—if pods need to be directly addressable externally, use Azure CNI. Always grant AKS `Network Contributor` on the route table—without this, AKS cannot add the per-node pod CIDR routes, and cross-node pod communication will fail. The route table must be associated with the AKS node subnet before cluster creation.
+kubenet is recommended when subnet IP space is limited or when your workloads don't need direct pod-level access from outside the cluster. The key limitation is that pod IPs (from `pod_cidr`) are not directly routable from on-premises or peered VNets-if pods need to be directly addressable externally, use Azure CNI. Always grant AKS `Network Contributor` on the route table-without this, AKS cannot add the per-node pod CIDR routes, and cross-node pod communication will fail. The route table must be associated with the AKS node subnet before cluster creation.

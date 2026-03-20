@@ -12,7 +12,7 @@ A VM host typically needs high-availability bonded uplinks and VLAN-separated ne
 
 ## Target Topology
 
-```
+```text
 Physical NICs: eth0 + eth1
       ↓ bond (LACP)
     bond0
@@ -25,6 +25,7 @@ Physical NICs: eth0 + eth1
 
 ```yaml
 # /etc/netplan/01-vm-host.yaml
+
 network:
   version: 2
   renderer: networkd

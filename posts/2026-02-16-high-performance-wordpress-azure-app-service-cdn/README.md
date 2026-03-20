@@ -18,6 +18,7 @@ Azure App Service runs your WordPress PHP application in a managed environment. 
 
 ```bash
 # Create a resource group
+
 az group create --name rg-wordpress --location eastus
 
 # Create an App Service plan (B2 is a good starting point for WordPress)

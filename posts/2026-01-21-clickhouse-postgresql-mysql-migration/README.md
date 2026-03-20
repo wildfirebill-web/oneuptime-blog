@@ -150,6 +150,7 @@ Export from PostgreSQL:
 
 ```bash
 # Export to CSV
+
 psql -h localhost -U postgres -d mydb -c "\COPY (SELECT * FROM events) TO '/tmp/events.csv' WITH CSV HEADER"
 
 # Or use COPY for better performance

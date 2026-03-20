@@ -63,6 +63,7 @@ from opentelemetry.sdk.trace.export import BatchSpanProcessor
 from opentelemetry.exporter.otlp.proto.grpc.trace_exporter import OTLPSpanExporter
 
 # ParentBasedTraceIdRatio samples 25% of root spans
+
 # and follows the parent decision for child spans
 sampler = ParentBasedTraceIdRatio(0.25)
 

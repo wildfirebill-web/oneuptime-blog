@@ -34,6 +34,7 @@ Before installing APISIX, ensure your Ubuntu system meets these requirements.
 
 ```bash
 # Check Ubuntu version (20.04 LTS or newer recommended)
+
 lsb_release -a
 
 # Update system packages to ensure we have the latest security patches

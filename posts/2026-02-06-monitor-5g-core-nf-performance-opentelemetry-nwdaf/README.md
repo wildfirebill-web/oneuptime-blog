@@ -24,6 +24,7 @@ First, configure the OpenTelemetry Collector to receive metrics from your 5G cor
 
 ```yaml
 # otel-collector-config.yaml
+
 receivers:
   prometheus:
     config:

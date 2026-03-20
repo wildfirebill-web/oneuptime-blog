@@ -16,6 +16,7 @@ Google Cloud assigns IPv6 ranges to subnets when the `stack-type` is set to `IPV
 PROJECT="my-gcp-project"
 
 # External dual-stack subnet (public IPv6)
+
 gcloud compute networks subnets create subnet-public \
     --network=vpc-main \
     --region=us-east1 \

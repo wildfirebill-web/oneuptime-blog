@@ -41,6 +41,7 @@ This is the most common pattern. The primary handles all writes, and read replic
 
 ```bash
 # Create the primary instance
+
 gcloud sql instances create primary-db \
   --database-version=POSTGRES_15 \
   --tier=db-custom-4-16384 \

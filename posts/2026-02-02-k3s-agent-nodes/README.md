@@ -62,6 +62,7 @@ The first step is to retrieve the node token from your K3s server. Run the follo
 
 ```bash
 # Retrieve the node-token from the K3s server
+
 # The token file is created automatically during server installation
 sudo cat /var/lib/rancher/k3s/server/node-token
 ```
@@ -292,7 +293,7 @@ Kubernetes exposes node conditions that indicate health status. Monitor these co
 kubectl describe node k3s-agent-1 | grep -A 10 "Conditions:"
 ```
 
-### Resource Monitoring Script
+Resource Monitoring Script
 
 The following script provides a quick overview of resource utilization across all agent nodes.
 
@@ -487,7 +488,7 @@ graph TB
     S2 --> A4
 ```
 
-### Resource Reservations
+Resource Reservations
 
 Reserve resources on agent nodes to ensure system stability. Configure kubelet to set aside resources for system processes.
 

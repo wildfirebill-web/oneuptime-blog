@@ -8,7 +8,7 @@ Description: Configure NeuVector to automatically scan container registries for 
 
 ## Introduction
 
-Registry scanning in NeuVector allows you to periodically scan all images stored in your container registries — not just the ones currently running. This gives you a complete inventory of vulnerabilities across your entire image library, enabling proactive remediation before images are deployed.
+Registry scanning in NeuVector allows you to periodically scan all images stored in your container registries - not just the ones currently running. This gives you a complete inventory of vulnerabilities across your entire image library, enabling proactive remediation before images are deployed.
 
 ## Prerequisites
 
@@ -25,7 +25,7 @@ In the NeuVector UI:
 2. Click **Add Registry**
 3. Fill in the form:
 
-```
+```text
 Name: dockerhub
 Registry: https://registry-1.docker.io
 Username: your-dockerhub-username
@@ -38,6 +38,7 @@ Via API:
 
 ```bash
 # Add Docker Hub registry
+
 curl -sk -X POST \
   "https://neuvector-manager:8443/v1/scan/registry" \
   -H "Content-Type: application/json" \

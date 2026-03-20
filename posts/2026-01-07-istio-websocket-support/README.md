@@ -54,6 +54,7 @@ The following configuration creates a basic VirtualService that routes WebSocket
 
 ```yaml
 # VirtualService configuration for WebSocket routing
+
 # This resource tells Istio how to route incoming requests to the correct backend
 apiVersion: networking.istio.io/v1beta1
 kind: VirtualService

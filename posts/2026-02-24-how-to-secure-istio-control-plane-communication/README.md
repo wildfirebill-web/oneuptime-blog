@@ -47,6 +47,7 @@ xDS (Envoy's configuration discovery protocol) is how istiod delivers configurat
 
 ```bash
 # Check the xDS connection from a sidecar
+
 istioctl proxy-config bootstrap <pod-name> -o json | \
   jq '.bootstrap.dynamicResources.adsConfig'
 ```

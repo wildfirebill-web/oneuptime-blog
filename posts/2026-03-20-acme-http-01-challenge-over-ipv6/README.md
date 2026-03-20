@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ACME, HTTP-01, IPv6, Let's Encrypt, TLS, Certificate, Nginx
+Tags: ACME, HTTP-01, IPv6, Let's Encrypt, TLS, Certificates, Nginx
 
 Description: Learn how to set up and validate ACME HTTP-01 domain ownership challenges over IPv6, including web server configuration, firewall rules, and troubleshooting validation failures.
 
@@ -13,7 +13,7 @@ The ACME HTTP-01 challenge verifies domain ownership by placing a token file at 
 ## How HTTP-01 Challenge Works
 
 The ACME client places a file at:
-```
+```text
 http://yourdomain.example.com/.well-known/acme-challenge/<token>
 ```
 
@@ -23,6 +23,7 @@ Let's Encrypt fetches this URL over HTTP (port 80). If your DNS has an AAAA reco
 
 ```bash
 # Verify AAAA record exists
+
 dig AAAA yourdomain.example.com +short
 # Expected: 2001:db8::1 (your server's IPv6 address)
 

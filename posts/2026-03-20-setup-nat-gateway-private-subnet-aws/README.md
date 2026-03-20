@@ -14,6 +14,7 @@ A NAT Gateway allows instances in private subnets to make outbound IPv4 connecti
 
 ```bash
 # Allocate a static public IP for the NAT Gateway
+
 EIP_ALLOC=$(aws ec2 allocate-address \
   --domain vpc \
   --query 'AllocationId' \

@@ -45,6 +45,7 @@ Start with a quick overview of the system before diving into specifics.
 
 ```bash
 # Quick system overview - uptime and load averages
+
 # The three numbers show 1, 5, and 15 minute load averages
 # Load average should be less than the number of CPU cores
 uptime

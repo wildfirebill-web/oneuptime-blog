@@ -63,6 +63,7 @@ If you need to query recent data first, use a reverse timestamp so the most rece
 
 ```python
 # GOOD: Reverse timestamp distributes data better
+
 # and allows efficient "most recent first" scans
 import time
 

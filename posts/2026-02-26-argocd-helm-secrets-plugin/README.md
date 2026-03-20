@@ -39,6 +39,7 @@ Create a Dockerfile:
 
 ```dockerfile
 # Dockerfile for custom ArgoCD repo server
+
 FROM quay.io/argoproj/argocd:v2.9.3
 
 # Switch to root to install tools

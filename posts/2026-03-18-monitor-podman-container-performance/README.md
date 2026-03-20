@@ -20,6 +20,7 @@ The simplest way to monitor Podman containers is the built-in `stats` command:
 
 ```bash
 # Real-time stats for all running containers
+
 podman stats
 
 # Stats for specific containers

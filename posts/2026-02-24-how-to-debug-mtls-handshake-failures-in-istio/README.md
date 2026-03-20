@@ -80,6 +80,7 @@ kubectl exec <source-pod> -c istio-proxy -n <namespace> -- \
 
 ```bash
 # Source pod certificates
+
 istioctl proxy-config secret <source-pod> -n <namespace>
 
 # Destination pod certificates

@@ -65,6 +65,7 @@ Before enabling SnapStart, verify your function meets these requirements:
 
 ```bash
 # Update function configuration to enable SnapStart
+
 aws lambda update-function-configuration \
     --function-name my-function \
     --snap-start ApplyOn=PublishedVersions

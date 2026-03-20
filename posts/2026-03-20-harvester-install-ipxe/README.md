@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Harvester, Kubernetes, Virtualization, HCI, iPXE, PXE Boot
+Tags: Harvester, Kubernetes, Virtualization, HCI, IPXE, PXE Boot
 
 Description: Learn how to automate Harvester installation across multiple bare metal servers using iPXE network booting for scalable data center deployments.
 
@@ -37,6 +37,7 @@ Create a directory structure to serve the Harvester boot files:
 
 ```bash
 # Create the directory structure
+
 sudo mkdir -p /var/www/html/harvester/v1.3.0
 
 # Download the required boot artifacts

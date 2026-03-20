@@ -24,6 +24,7 @@ A failed Flux CD upgrade can manifest in several ways:
 
 ```bash
 # Quick health check to identify failure
+
 flux check
 
 # Check pod status in the flux-system namespace

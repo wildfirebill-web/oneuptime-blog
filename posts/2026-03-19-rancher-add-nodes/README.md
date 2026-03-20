@@ -163,6 +163,7 @@ Before adding any node, ensure it meets these requirements:
 
 ```bash
 # Check available resources
+
 free -h          # Memory (minimum 4 GB for workers)
 nproc            # CPU cores (minimum 2)
 df -h /          # Disk space (minimum 20 GB)

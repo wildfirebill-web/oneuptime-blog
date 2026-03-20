@@ -26,6 +26,7 @@ The integration account holds all your B2B artifacts. You need at least a Standa
 
 ```bash
 # Create an integration account
+
 az resource create \
   --resource-group rg-b2b \
   --resource-type "Microsoft.Logic/integrationAccounts" \

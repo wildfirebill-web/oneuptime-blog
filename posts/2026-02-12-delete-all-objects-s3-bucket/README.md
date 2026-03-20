@@ -16,6 +16,7 @@ If your bucket has no versioning and a manageable number of objects (under 100,0
 
 ```bash
 # Delete all objects in a non-versioned bucket
+
 aws s3 rm s3://my-bucket --recursive
 ```
 

@@ -2,18 +2,19 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Prometheus, Pushgateway, IPv4, Metrics, Configuration, Short-Lived Jobs, Monitoring
+Tags: Prometheus, Pushgateway, IPv4, Metrics, Configuration, Short-lived Jobs, Monitoring
 
 Description: Learn how to configure the Prometheus Pushgateway to listen on a specific IPv4 address and accept metrics from batch jobs and short-lived processes.
 
 ---
 
-Prometheus normally pulls metrics from long-running services. For short-lived batch jobs that exit before Prometheus can scrape them, the Pushgateway acts as an intermediary — jobs push metrics to it, and Prometheus scrapes the Pushgateway.
+Prometheus normally pulls metrics from long-running services. For short-lived batch jobs that exit before Prometheus can scrape them, the Pushgateway acts as an intermediary - jobs push metrics to it, and Prometheus scrapes the Pushgateway.
 
 ## Installing Pushgateway
 
 ```bash
 # Download Pushgateway binary
+
 wget https://github.com/prometheus/pushgateway/releases/latest/download/pushgateway-*.linux-amd64.tar.gz
 tar xzf pushgateway-*.linux-amd64.tar.gz
 mv pushgateway-*/pushgateway /usr/local/bin/
@@ -51,7 +52,7 @@ curl -s http://10.0.0.5:9091/metrics | grep pushgateway_build
 
 ```bash
 #!/bin/bash
-# backup_job.sh — run nightly backup and push metrics
+# backup_job.sh - run nightly backup and push metrics
 
 START=$(date +%s)
 
@@ -115,4 +116,4 @@ curl -X DELETE http://10.0.0.5:9091/metrics/job/backup_job
 - Use `--web.listen-address=ip:port` to bind Pushgateway to a specific IPv4 address.
 - Set `honor_labels: true` in the Prometheus scrape config so the job/instance labels pushed by the client are preserved.
 - Delete pushed metrics after the job completes to avoid stale data polluting dashboards.
-- Pushgateway is NOT a replacement for Prometheus scraping long-lived services — use it only for batch jobs and ephemeral processes.
+- Pushgateway is NOT a replacement for Prometheus scraping long-lived services - use it only for batch jobs and ephemeral processes.

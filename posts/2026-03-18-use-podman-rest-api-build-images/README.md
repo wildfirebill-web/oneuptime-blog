@@ -32,6 +32,7 @@ First, create a project directory with a Containerfile and any necessary source 
 
 ```bash
 # Create a sample project
+
 mkdir -p /tmp/myapp
 cat > /tmp/myapp/Containerfile << 'EOF'
 FROM docker.io/library/node:20-alpine

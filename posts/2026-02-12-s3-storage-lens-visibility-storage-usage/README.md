@@ -26,6 +26,7 @@ Every AWS account gets a default dashboard, but creating custom ones lets you fo
 
 ```bash
 # Create a Storage Lens dashboard with free metrics
+
 aws s3control put-storage-lens-configuration \
   --account-id 123456789012 \
   --config-id my-storage-dashboard \

@@ -31,6 +31,7 @@ sequenceDiagram
 
 ```bash
 # Basic traceroute (Linux uses UDP by default)
+
 traceroute 8.8.8.8
 
 # ICMP-based traceroute (less likely to be filtered)
@@ -39,7 +40,7 @@ traceroute -I 8.8.8.8
 # TCP-based traceroute on port 80 (most firewall-friendly)
 traceroute -T -p 80 8.8.8.8
 
-# Numeric output (no DNS reverse lookups — much faster)
+# Numeric output (no DNS reverse lookups - much faster)
 traceroute -n 8.8.8.8
 
 # Increase max hops (default 30)
@@ -48,7 +49,7 @@ traceroute -m 50 8.8.8.8
 
 ## Reading Traceroute Output
 
-```
+```text
 traceroute to 8.8.8.8, 30 hops max, 60 byte packets
  1  192.168.1.1  1.234 ms  1.156 ms  1.089 ms   <- Local router
  2  10.0.0.1     5.432 ms  5.391 ms  5.401 ms   <- ISP edge
@@ -66,16 +67,16 @@ Column meanings:
 ## Identifying Problems
 
 ```bash
-# High latency at a specific hop followed by normal latency — expected (router deprioritizes ICMP)
-# High latency that persists from a hop onward — actual congestion or long-distance link
+# High latency at a specific hop followed by normal latency - expected (router deprioritizes ICMP)
+# High latency that persists from a hop onward - actual congestion or long-distance link
 
 # Example: latency jump at hop 5
 # 4  10.0.0.5     2.1 ms
 # 5  203.0.113.1  87.3 ms  <- transatlantic or satellite link
 # 6  10.1.0.1     89.2 ms  <- latency maintained, normal for this path
 
-# Asterisks at one hop but normal afterward — router doesn't reply to ICMP, not a problem
-# Asterisks from a certain hop onward — packet loss or firewall dropping probes
+# Asterisks at one hop but normal afterward - router doesn't reply to ICMP, not a problem
+# Asterisks from a certain hop onward - packet loss or firewall dropping probes
 ```
 
 ## Traceroute with Different Protocol Options

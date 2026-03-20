@@ -90,6 +90,7 @@ The most common use of extension providers is for telemetry. Here are the teleme
 
 ```yaml
 # Define the provider
+
 - name: tempo-traces
   opentelemetry:
     service: tempo.observability.svc.cluster.local

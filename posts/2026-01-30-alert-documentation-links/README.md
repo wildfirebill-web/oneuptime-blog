@@ -80,6 +80,7 @@ Alert annotations are metadata fields attached to alerts that provide additional
 
 ```yaml
 # prometheus/alerts/infrastructure.yml
+
 groups:
   - name: infrastructure
     rules:

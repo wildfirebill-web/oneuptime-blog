@@ -14,6 +14,7 @@ The `run_once` directive tells Ansible to execute a task on only one host, even 
 
 ```yaml
 # run-once-example.yml
+
 ---
 - name: Deploy application
   hosts: webservers

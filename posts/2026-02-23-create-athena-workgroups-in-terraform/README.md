@@ -32,6 +32,7 @@ Here is a straightforward Athena workgroup with a dedicated results location:
 
 ```hcl
 # S3 bucket for storing query results
+
 resource "aws_s3_bucket" "athena_results" {
   bucket = "my-company-athena-results"
 

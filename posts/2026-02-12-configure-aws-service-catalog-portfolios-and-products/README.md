@@ -43,6 +43,7 @@ Start by creating a portfolio for a logical grouping of infrastructure. You migh
 
 ```bash
 # Create a portfolio for data engineering team resources
+
 aws servicecatalog create-portfolio \
   --display-name "Data Engineering Infrastructure" \
   --provider-name "Platform Team" \

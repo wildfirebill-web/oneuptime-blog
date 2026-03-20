@@ -68,6 +68,7 @@ flowchart TD
 
 ```bash
 # Check encryption status
+
 kubectl exec -n kube-system ds/cilium -- cilium-dbg encrypt status
 
 # Check xfrm states on a node (run on the node directly)

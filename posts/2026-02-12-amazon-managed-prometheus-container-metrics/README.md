@@ -35,6 +35,7 @@ AMP is API-compatible with Prometheus, so any tool that speaks PromQL can query 
 
 ```bash
 # Create an AMP workspace
+
 aws amp create-workspace \
   --alias "production-metrics" \
   --tags Environment=production

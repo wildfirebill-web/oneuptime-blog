@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Ubuntu, NGINX, WordPress, Web Server
+Tags: Ubuntu, Nginx, WordPress, Web Server
 
 Description: A complete guide to configuring Nginx for WordPress Multisite on Ubuntu, covering both subdomain and subdirectory network setups with PHP-FPM and SSL.
 
@@ -16,6 +16,7 @@ Before configuring Nginx, you need a working WordPress Multisite installation an
 
 ```bash
 # Install required packages
+
 sudo apt update
 sudo apt install nginx php8.3-fpm php8.3-mysql php8.3-xml php8.3-curl \
   php8.3-gd php8.3-mbstring php8.3-zip php8.3-intl mysql-server

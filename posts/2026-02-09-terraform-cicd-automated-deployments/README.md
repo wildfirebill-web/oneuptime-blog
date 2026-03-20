@@ -14,8 +14,9 @@ Automating Terraform deployments through CI/CD pipelines brings consistency, rep
 
 Implement a complete Terraform CI/CD pipeline with GitHub Actions:
 
-```yaml
+````yaml
 # .github/workflows/terraform.yml
+
 name: Terraform Kubernetes Deployment
 
 on:
@@ -108,9 +109,9 @@ jobs:
             const output = `#### Terraform Plan
             <details><summary>Show Plan</summary>
 
-            \`\`\`
+            ```
             ${plan}
-            \`\`\`
+            ```
 
             </details>`;
 
@@ -160,4 +161,4 @@ jobs:
         run: |
           kubectl get deployments -A
           kubectl get services -A
-```
+````

@@ -33,7 +33,7 @@ Mattermost is a self-hosted team messaging platform. Enabling IPv6 access involv
 }
 ```
 
-```
+```text
 Note: Mattermost's "ListenAddress": ":8065" binds to all interfaces
 including IPv6 (equivalent to [::]:8065 in Go)
 
@@ -45,6 +45,7 @@ when binding to ":port" on dual-stack systems.
 
 ```nginx
 # /etc/nginx/sites-available/mattermost
+
 upstream mattermost {
     server 127.0.0.1:8065;
     keepalive 32;

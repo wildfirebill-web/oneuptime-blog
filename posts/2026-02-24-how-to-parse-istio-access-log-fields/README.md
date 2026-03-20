@@ -242,6 +242,7 @@ Multiple flags can appear together. For example, `URX,UC` means retries were exh
 
 ```bash
 # Get response code and flags for all requests
+
 kubectl logs deploy/my-service -c istio-proxy | awk '{print $6, $7}'
 
 # Get path, response code, and duration

@@ -105,6 +105,7 @@ Using BIND's `dnssec-keygen`:
 
 ```bash
 # Generate a new ZSK for your zone
+
 dnssec-keygen -a RSASHA256 -b 2048 -n ZONE example.com
 
 # For ECDSA (recommended for modern deployments)

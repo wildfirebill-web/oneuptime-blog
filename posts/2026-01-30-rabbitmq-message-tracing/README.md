@@ -64,6 +64,7 @@ The tracing plugin comes bundled with RabbitMQ but is disabled by default. Enabl
 
 ```bash
 # Enable the rabbitmq_tracing plugin
+
 rabbitmq-plugins enable rabbitmq_tracing
 
 # Verify it's enabled

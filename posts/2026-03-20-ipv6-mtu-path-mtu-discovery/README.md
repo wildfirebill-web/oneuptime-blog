@@ -8,11 +8,11 @@ Description: Diagnose and fix IPv6 MTU black holes and Path MTU Discovery failur
 
 ## Introduction
 
-IPv6 does not allow routers to fragment packets — only the sender can fragment. Path MTU Discovery (PMTUD) relies on ICMPv6 "Packet Too Big" messages to inform senders of the maximum transmission unit along a path. When "Packet Too Big" messages are blocked by firewalls, large packets are silently dropped, causing TCP connections to complete the handshake but stall when sending data. This is called an "MTU black hole."
+IPv6 does not allow routers to fragment packets - only the sender can fragment. Path MTU Discovery (PMTUD) relies on ICMPv6 "Packet Too Big" messages to inform senders of the maximum transmission unit along a path. When "Packet Too Big" messages are blocked by firewalls, large packets are silently dropped, causing TCP connections to complete the handshake but stall when sending data. This is called an "MTU black hole."
 
 ## Understanding IPv6 MTU
 
-```
+```text
 Minimum IPv6 MTU: 1280 bytes (all routers must support)
 Default Ethernet MTU: 1500 bytes
 IPv6 header: 40 bytes (vs IPv4's 20 bytes)
@@ -28,6 +28,7 @@ Typical MTU issues:
 
 ```bash
 # Show MTU for all interfaces
+
 ip link show | grep mtu
 
 # Show specific interface MTU

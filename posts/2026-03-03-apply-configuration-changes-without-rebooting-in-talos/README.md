@@ -16,6 +16,7 @@ When you apply a configuration change to a Talos node, you can specify one of se
 
 ```bash
 # Auto mode (default) - reboots if the change requires it
+
 talosctl apply-config --nodes 10.0.1.10 --patch @change.yaml --mode auto
 
 # No-reboot mode - fails if the change requires a reboot

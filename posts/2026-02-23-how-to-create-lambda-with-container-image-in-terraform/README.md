@@ -31,6 +31,7 @@ provider "aws" {
 }
 
 # ECR repository for the Lambda image
+
 resource "aws_ecr_repository" "lambda_app" {
   name                 = "lambda-app"
   image_tag_mutability = "MUTABLE"

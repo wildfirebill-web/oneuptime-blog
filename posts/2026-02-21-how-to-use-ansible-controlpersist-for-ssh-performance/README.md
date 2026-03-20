@@ -44,6 +44,7 @@ Ansible enables ControlPersist by default with these settings:
 
 ```ini
 # Default SSH args in recent Ansible versions
+
 [ssh_connection]
 ssh_args = -o ControlMaster=auto -o ControlPersist=60s
 ```

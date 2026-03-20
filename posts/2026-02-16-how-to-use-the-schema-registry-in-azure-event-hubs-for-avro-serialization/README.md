@@ -32,6 +32,7 @@ Schema groups organize related schemas together. Think of them like namespaces f
 
 ```bash
 # Create a schema group with Avro serialization and forward compatibility
+
 az eventhubs namespace schema-registry create \
   --resource-group my-resource-group \
   --namespace-name my-eventhubs-namespace \

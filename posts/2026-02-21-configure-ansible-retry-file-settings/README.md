@@ -24,6 +24,7 @@ You can then re-run the playbook against only these hosts:
 
 ```bash
 # Re-run the playbook against only the failed hosts
+
 ansible-playbook deploy.yml --limit @deploy.retry
 ```
 

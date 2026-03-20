@@ -24,6 +24,7 @@ Getting Docker Desktop installed:
 
 ```bash
 # Download and install Docker Desktop from the DMG
+
 # Or use Homebrew cask
 brew install --cask docker
 
@@ -48,7 +49,7 @@ docker version
 
 Colima's setup is fully command-line driven. No account creation, no license agreement click-through, no GUI application eating memory in your menu bar.
 
-## Resource Configuration
+Resource Configuration
 
 Docker Desktop manages resources through its preferences GUI. You allocate a fixed amount of CPU, memory, and disk to the VM.
 

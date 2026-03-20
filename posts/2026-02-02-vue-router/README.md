@@ -48,6 +48,7 @@ The following command installs Vue Router 4, which is compatible with Vue 3.
 
 ```bash
 # Install Vue Router for Vue 3
+
 npm install vue-router@4
 ```
 

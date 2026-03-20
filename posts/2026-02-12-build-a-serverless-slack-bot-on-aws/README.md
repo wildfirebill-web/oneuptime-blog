@@ -43,6 +43,7 @@ Store these in Secrets Manager:
 
 ```bash
 # Store Slack credentials securely
+
 aws secretsmanager create-secret \
   --name slack-bot-credentials \
   --secret-string '{

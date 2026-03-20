@@ -1,4 +1,4 @@
-# How to Add GitLab Container Registry to Portainer
+# How to Add GitLab Container Registry to Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -26,9 +26,10 @@ GitLab's built-in Container Registry provides a convenient way to store images b
 
 Image paths follow the pattern:
 
-```
+```text
 registry.gitlab.com/{namespace}/{project-name}/{image-name}:{tag}
 # Example:
+
 registry.gitlab.com/myorg/myapp/backend:latest
 registry.gitlab.com/myorg/myapp/frontend:v2.0
 ```
@@ -41,7 +42,7 @@ Deploy tokens are project or group-level tokens specifically designed for deploy
 2. Go to **Settings → Repository → Deploy tokens**
 3. Click **Add a deploy token**
 4. Fill in:
-   ```
+   ```text
    Name:       portainer-pull
    Expires at: (set 1 year from now)
    Username:   portainer (custom username)
@@ -57,7 +58,7 @@ For personal projects or testing:
 1. Go to **User Settings → Access Tokens**
 2. Click **Add a personal access token**
 3. Configure:
-   ```
+   ```text
    Token name:     portainer-registry
    Expiration:     (set future date)
    Scopes:         [x] read_registry
@@ -73,7 +74,7 @@ For personal projects or testing:
 
 ### For gitlab.com
 
-```
+```text
 Registry type:  GitLab
 URL:           registry.gitlab.com
 Username:      portainer          (deploy token username)
@@ -82,7 +83,7 @@ Password:      gldt-xxxxx...     (deploy token value)
 
 ### For Self-Hosted GitLab
 
-```
+```text
 Registry type:  Custom registry
 URL:           registry.gitlab.yourdomain.com
 Username:      portainer          (or your GitLab username for PAT)
@@ -166,7 +167,7 @@ For organizations with multiple GitLab projects deploying to the same Portainer:
 2. Grant `read_registry` scope
 3. Use the same token in Portainer for all projects under that group
 
-```
+```text
 Group URL:   registry.gitlab.com/myorg/{any-project-in-group}/{image}:tag
 ```
 
@@ -174,7 +175,7 @@ Group URL:   registry.gitlab.com/myorg/{any-project-in-group}/{image}:tag
 
 ### Authentication Failed
 
-```
+```text
 Error: unauthorized: HTTP Basic: Access denied
 ```
 
@@ -201,4 +202,4 @@ sudo systemctl restart docker
 
 ## Conclusion
 
-Integrating GitLab Container Registry with Portainer closes the loop on your CI/CD pipeline — GitLab builds and stores images, and Portainer deploys them. Using deploy tokens with minimal scope (`read_registry` only) follows security best practices. Combined with GitLab CI webhooks triggering Portainer deployments, you have a complete automated deployment workflow.
+Integrating GitLab Container Registry with Portainer closes the loop on your CI/CD pipeline - GitLab builds and stores images, and Portainer deploys them. Using deploy tokens with minimal scope (`read_registry` only) follows security best practices. Combined with GitLab CI webhooks triggering Portainer deployments, you have a complete automated deployment workflow.

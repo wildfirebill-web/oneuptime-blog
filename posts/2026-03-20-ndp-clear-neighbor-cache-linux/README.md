@@ -14,6 +14,7 @@ Clearing the IPv6 neighbor cache forces re-resolution of IPv6 addresses to MAC a
 
 ```bash
 # Delete a single neighbor entry
+
 sudo ip -6 neigh del 2001:db8::1 dev eth0
 
 # Delete the link-local entry for a neighbor
@@ -42,7 +43,7 @@ ip -6 neigh show dev eth0
 
 ## When to Clear the Neighbor Cache
 
-```
+```bash
 Scenarios requiring neighbor cache clearing:
 
 1. MAC address change (host replaced NIC or VM migrated):

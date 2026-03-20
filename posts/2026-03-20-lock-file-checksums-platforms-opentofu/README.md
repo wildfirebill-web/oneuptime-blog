@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Lock File, Checksums, Cross-Platform, darwin, linux, windows, Infrastructure as Code
+Tags: OpenTofu, Lock File, Checksums, Cross-Platform, Darwin, Linux, Windows, Infrastructure as Code
 
 Description: Learn how to manage OpenTofu lock file checksums for multiple operating systems and CPU architectures so teams using macOS, Linux, and Windows can all use the same committed lock file.
 
 ---
 
-The `.terraform.lock.hcl` file stores cryptographic checksums for each provider binary per platform. When team members or CI/CD systems use different operating systems or CPU architectures, the lock file must include checksums for all platforms — otherwise `tofu init` fails with a hash mismatch error.
+The `.terraform.lock.hcl` file stores cryptographic checksums for each provider binary per platform. When team members or CI/CD systems use different operating systems or CPU architectures, the lock file must include checksums for all platforms - otherwise `tofu init` fails with a hash mismatch error.
 
 ## Platform Checksum Architecture
 
@@ -24,25 +24,26 @@ graph TD
 ## Understanding Checksum Types
 
 The lock file contains two types of checksums:
-- `h1:` — hash of the zip file containing the provider binary for a specific platform
-- `zh:` — hash of the source zip (platform-independent)
+- `h1:` - hash of the zip file containing the provider binary for a specific platform
+- `zh:` - hash of the source zip (platform-independent)
 
 ```hcl
-# .terraform.lock.hcl — example with multiple platforms
+# .terraform.lock.hcl - example with multiple platforms
+
 provider "registry.opentofu.org/hashicorp/aws" {
   version     = "5.40.0"
   constraints = "~> 5.0"
 
   hashes = [
-    # darwin/amd64 — macOS Intel
+    # darwin/amd64 - macOS Intel
     "h1:Abc123...",
-    # darwin/arm64 — macOS Apple Silicon (M1/M2/M3)
+    # darwin/arm64 - macOS Apple Silicon (M1/M2/M3)
     "h1:Def456...",
-    # linux/amd64 — most CI/CD systems
+    # linux/amd64 - most CI/CD systems
     "h1:Ghi789...",
-    # linux/arm64 — Graviton EC2, ARM runners
+    # linux/arm64 - Graviton EC2, ARM runners
     "h1:Jkl012...",
-    # windows/amd64 — Windows developers
+    # windows/amd64 - Windows developers
     "h1:Mno345...",
     # Source zip hash (platform-independent)
     "zh:Pqr678...",
@@ -107,7 +108,7 @@ for platform in "${REQUIRED_PLATFORMS[@]}"; do
   if git diff --quiet .terraform.lock.hcl; then
     echo "✓ $platform checksums present"
   else
-    echo "✗ $platform checksums missing — adding..."
+    echo "✗ $platform checksums missing - adding..."
     git add .terraform.lock.hcl
   fi
 done
@@ -181,8 +182,8 @@ tofu providers lock \
 
 ## Best Practices
 
-- Run `tofu providers lock -platform=...` for every platform used by your team when first creating a configuration or adding a new provider — don't wait for team members to hit hash mismatch errors.
-- Include `darwin/arm64` by default for any Mac-using team — Apple Silicon became the default Mac architecture in 2020, and omitting it causes errors for every developer with an M-series Mac.
-- Set up a CI check that validates platform checksums when `providers.tf` changes — this catches the omission automatically when providers are added or updated.
-- After running `tofu providers lock`, always review the lock file diff to ensure only the expected checksums were added — unexpected changes may indicate provider version resolution differences.
-- Document the `tofu providers lock` command in your team's CONTRIBUTING.md with the exact platforms to include — make it easy for contributors to update the lock file correctly.
+- Run `tofu providers lock -platform=...` for every platform used by your team when first creating a configuration or adding a new provider - don't wait for team members to hit hash mismatch errors.
+- Include `darwin/arm64` by default for any Mac-using team - Apple Silicon became the default Mac architecture in 2020, and omitting it causes errors for every developer with an M-series Mac.
+- Set up a CI check that validates platform checksums when `providers.tf` changes - this catches the omission automatically when providers are added or updated.
+- After running `tofu providers lock`, always review the lock file diff to ensure only the expected checksums were added - unexpected changes may indicate provider version resolution differences.
+- Document the `tofu providers lock` command in your team's CONTRIBUTING.md with the exact platforms to include - make it easy for contributors to update the lock file correctly.

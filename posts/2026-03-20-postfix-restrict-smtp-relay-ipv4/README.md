@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Postfix, IPv4, SMTP Relay, Access Control, Security, mynetworks
+Tags: Postfix, IPv4, SMTP Relay, Access Control, Security, Mynetworks
 
 Description: Restrict Postfix SMTP relay access to specific IPv4 addresses and subnets using mynetworks, smtpd_client_restrictions, and cidr map files.
 
@@ -16,6 +16,7 @@ An unrestricted SMTP relay will be exploited by spammers within hours of being e
 # /etc/postfix/main.cf
 
 # Explicit trusted relay senders (more secure than mynetworks_style)
+
 mynetworks = 127.0.0.0/8, 10.0.0.5, 10.0.0.6, 192.168.1.0/24
 
 # The relay restriction uses mynetworks
@@ -97,7 +98,7 @@ swaks --to external@gmail.com \
   --server YOUR_MAIL_SERVER_IP
 
 # Expected: rejection with "Relay access denied"
-# If accepted: you have an open relay — fix immediately!
+# If accepted: you have an open relay - fix immediately!
 ```
 
 ## Monitoring Relay Decisions

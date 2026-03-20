@@ -10,7 +10,7 @@ Description: Fixed-Length Subnet Masking (FLSM) uses the same prefix length for 
 
 FLSM divides a parent block into equal-sized pieces. All subnets share the same prefix length:
 
-```
+```text
 Parent: 192.168.1.0/24 divided into /27 (FLSM):
   192.168.1.0/27   (30 hosts)
   192.168.1.32/27  (30 hosts)
@@ -23,7 +23,7 @@ Parent: 192.168.1.0/24 divided into /27 (FLSM):
 All subnets: 30 usable hosts, whether they need 2 or 30.
 ```
 
-**FLSM Problem**: A P2P link needing 2 hosts gets a /27 with 30 usable — 28 wasted.
+**FLSM Problem**: A P2P link needing 2 hosts gets a /27 with 30 usable - 28 wasted.
 
 ## VLSM: Right-Size Each Subnet
 
@@ -74,7 +74,7 @@ vlsm_demo()
 ## Routing Protocol Requirements
 
 - **FLSM**: Compatible with RIPv1, IGRP (classful protocols).
-- **VLSM**: Requires classless protocols: RIPv2, OSPF, EIGRP, BGP — all carry the prefix length.
+- **VLSM**: Requires classless protocols: RIPv2, OSPF, EIGRP, BGP - all carry the prefix length.
 
 ## Key Takeaways
 

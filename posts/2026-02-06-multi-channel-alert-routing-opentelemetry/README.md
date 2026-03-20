@@ -32,6 +32,7 @@ Here is the Collector configuration that exports metrics via the Prometheus expo
 
 ```yaml
 # otel-collector-config.yaml
+
 receivers:
   otlp:
     protocols:

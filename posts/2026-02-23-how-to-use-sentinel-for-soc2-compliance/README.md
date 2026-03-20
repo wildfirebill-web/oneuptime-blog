@@ -34,6 +34,7 @@ SOC2 CC6.1 requires that logical access to systems is restricted. In cloud infra
 
 ```python
 # soc2-cc6-network-access.sentinel
+
 # CC6.1: Restrict logical access to information assets
 # Enforce that security groups do not allow unrestricted inbound access
 

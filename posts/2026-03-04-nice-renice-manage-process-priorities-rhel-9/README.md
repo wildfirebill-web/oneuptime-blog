@@ -47,6 +47,7 @@ Launch a command with a specific nice value:
 
 ```bash
 # Low priority (nice to other processes)
+
 nice -n 19 ./my-backup-script.sh
 
 # Default nice (10)

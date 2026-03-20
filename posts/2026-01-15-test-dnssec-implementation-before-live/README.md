@@ -52,6 +52,7 @@ First, verify your zone is properly signed:
 
 ```bash
 # Check if DNSKEY records exist
+
 dig @your-nameserver.com example.com DNSKEY +dnssec +multi
 
 # Check for RRSIG records on your A record

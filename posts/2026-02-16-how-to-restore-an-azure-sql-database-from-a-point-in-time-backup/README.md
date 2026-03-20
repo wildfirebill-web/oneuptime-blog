@@ -54,6 +54,7 @@ To change the short-term retention period:
 
 ```bash
 # Set backup retention to 28 days
+
 az sql db str-policy set \
     --resource-group myResourceGroup \
     --server myserver \

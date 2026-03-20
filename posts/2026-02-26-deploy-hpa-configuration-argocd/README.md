@@ -31,6 +31,7 @@ The cleanest solution is to omit the `replicas` field from your Deployment manif
 
 ```yaml
 # deployment.yaml - No replicas field
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

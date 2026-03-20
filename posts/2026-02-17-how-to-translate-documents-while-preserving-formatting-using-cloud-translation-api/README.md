@@ -79,6 +79,7 @@ def translate_document(project_id, location, input_path, output_path, source_lan
     return response
 
 # Translate a PDF from English to Spanish
+
 translate_document(
     project_id="your-project-id",
     location="us-central1",

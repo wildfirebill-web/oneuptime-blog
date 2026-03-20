@@ -62,6 +62,7 @@ First, ensure you have the necessary AWS permissions and dependencies:
 
 ```bash
 # Install required Python packages
+
 pip install boto3 pandas schedule
 
 # Configure AWS credentials

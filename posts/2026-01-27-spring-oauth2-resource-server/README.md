@@ -93,6 +93,7 @@ The most basic configuration requires only specifying your authorization server'
 
 ```yaml
 # application.yml
+
 spring:
   security:
     oauth2:

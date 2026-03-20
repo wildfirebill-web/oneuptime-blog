@@ -95,6 +95,7 @@ Online migration requires the Premium tier of DMS.
 
 ```bash
 # Create a DMS instance with Premium SKU
+
 az dms create \
   --name my-dms-online \
   --resource-group rg-migration \

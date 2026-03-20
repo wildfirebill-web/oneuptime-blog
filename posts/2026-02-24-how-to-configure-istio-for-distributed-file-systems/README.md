@@ -215,6 +215,7 @@ Even with port exclusions, you can monitor the health of your file system setup:
 
 ```bash
 # Check if NFS connections are being established
+
 kubectl exec -n default deploy/myapp -c istio-proxy -- \
   pilot-agent request GET /stats | grep nfs
 

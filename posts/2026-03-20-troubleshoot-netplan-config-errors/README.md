@@ -14,6 +14,7 @@ Netplan errors fall into categories: YAML syntax errors (caught by `netplan gene
 
 ```bash
 # Check for errors without applying
+
 netplan generate
 
 # Sample error output:

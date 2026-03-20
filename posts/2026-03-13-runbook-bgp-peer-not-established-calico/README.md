@@ -29,6 +29,7 @@ This runbook guides on-call engineers through restoring BGP peer sessions that a
 ```bash
 calicoctl node status
 # Note which peers are not Established and their state
+
 ```
 
 **Step 2: Get BGP peer configuration**

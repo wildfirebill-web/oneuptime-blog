@@ -33,6 +33,7 @@ The most common scenario is pointing at a cluster that doesn't exist. Maybe the 
 
 ```bash
 # List all clusters in the current region
+
 aws ecs list-clusters
 
 # Check if a specific cluster exists

@@ -29,6 +29,7 @@ First, create a Job manifest for running kube-bench against the control plane no
 
 ```yaml
 # kube-bench-control-plane.yaml
+
 # Run CIS benchmarks against Talos control plane nodes
 apiVersion: batch/v1
 kind: Job

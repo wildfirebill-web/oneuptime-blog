@@ -51,6 +51,7 @@ You can create scheduled queries using the `bq` command-line tool.
 
 ```bash
 # Create a scheduled query that runs daily at 6 AM UTC
+
 # Results are written to the daily_revenue_summary table
 bq mk --transfer_config \
   --project_id=my_project \

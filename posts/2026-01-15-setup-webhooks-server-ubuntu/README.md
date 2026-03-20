@@ -47,6 +47,7 @@ The `webhook` tool is a lightweight, configurable server written in Go. It handl
 
 ```bash
 # Update package lists
+
 sudo apt update
 
 # Install webhook from official repositories

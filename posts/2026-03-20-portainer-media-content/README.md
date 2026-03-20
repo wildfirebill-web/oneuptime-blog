@@ -24,6 +24,7 @@ A typical containerized media platform includes:
 
 ```yaml
 # transcoding-stack/docker-compose.yml
+
 version: '3.8'
 services:
   ingest:

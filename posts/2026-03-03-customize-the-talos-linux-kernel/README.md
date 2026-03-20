@@ -30,6 +30,7 @@ Talos maintains its kernel configuration in the source repository. The configura
 
 ```bash
 # Clone the Talos repository
+
 git clone https://github.com/siderolabs/talos.git
 cd talos
 

@@ -28,6 +28,7 @@ A typical configuration creates separate pipelines for traces, metrics, and logs
 
 ```yaml
 # Basic pipeline structure
+
 service:
   pipelines:
     traces:
@@ -186,7 +187,7 @@ processors:
 
 Without batching, the Collector exports each span, metric, or log individually. With batching, it accumulates data and sends larger, more efficient requests.
 
-### Resource Processor
+Resource Processor
 
 The resource processor adds, modifies, or removes resource attributes. This enriches telemetry with environmental context.
 

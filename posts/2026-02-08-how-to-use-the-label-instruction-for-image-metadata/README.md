@@ -18,6 +18,7 @@ LABEL takes one or more key-value pairs:
 
 ```dockerfile
 # Single label
+
 LABEL maintainer="team@example.com"
 
 # Multiple labels on separate lines

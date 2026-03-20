@@ -35,6 +35,7 @@ Start by deploying the same container image to Cloud Run in each target region. 
 
 ```bash
 # Build and push the container image
+
 gcloud builds submit --tag gcr.io/my-project/my-app:v1.0.0
 
 # Deploy to us-central1

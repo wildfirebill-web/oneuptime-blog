@@ -25,6 +25,7 @@ Before starting, ensure you have:
 
 ```bash
 # Add GPG key
+
 curl https://raw.githubusercontent.com/fluent/fluent-bit/master/install.sh | sh
 ```
 

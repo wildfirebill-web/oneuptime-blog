@@ -14,6 +14,7 @@ The Elemental MachineInventory is a Kubernetes-native registry of all bare metal
 
 ```bash
 # List all machines in inventory
+
 kubectl get machineinventory -n fleet-default
 
 # Get detailed output with labels

@@ -18,6 +18,7 @@ Many Ansible modules accept lists natively. Passing a list to the module is alwa
 
 ```yaml
 # SLOW: One module call per package (15 SSH round trips)
+
 - name: Install packages one at a time
   ansible.builtin.apt:
     name: "{{ item }}"

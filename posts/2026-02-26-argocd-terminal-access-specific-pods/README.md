@@ -111,6 +111,7 @@ Then scope exec permissions to that project:
 
 ```yaml
 # In argocd-rbac-cm
+
 policy.csv: |
   p, role:staging-debugger, exec, create, staging-only/*, allow
 ```

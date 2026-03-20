@@ -14,6 +14,7 @@ CRI-O supports OpenTelemetry tracing natively. Configure it in the CRI-O configu
 
 ```toml
 # /etc/crio/crio.conf.d/10-tracing.conf
+
 [crio.tracing]
 # Enable OpenTelemetry tracing
 enable_tracing = true

@@ -30,6 +30,7 @@ Here is a comprehensive default-deny setup for a control plane node:
 
 ```yaml
 # Host-level firewall for control plane - allow only necessary traffic
+
 apiVersion: v1alpha1
 kind: NetworkRuleConfig
 name: cp-default-deny

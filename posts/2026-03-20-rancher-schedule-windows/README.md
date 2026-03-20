@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Windows, Scheduling, Node Selector, Affinity
+Tags: Rancher, Windows, Scheduling, Node Selectors, Affinity
 
 Description: Configure Kubernetes scheduling rules to direct Windows workloads to Windows nodes using node selectors, node affinity, taints, and tolerations in Rancher clusters.
 
@@ -20,6 +20,7 @@ Proper workload scheduling in mixed OS clusters ensures that Windows containers 
 
 ```yaml
 # Simplest approach: nodeSelector
+
 # Every Windows workload MUST have this
 apiVersion: apps/v1
 kind: Deployment

@@ -20,6 +20,7 @@ The Terraform CLI version determines which HCL features are available and how st
 
 ```hcl
 # versions.tf - pin the required Terraform version
+
 terraform {
   # Use a narrow constraint to prevent drift
   required_version = ">= 1.7.0, < 1.8.0"

@@ -16,6 +16,7 @@ Navigate to **Stacks > Add Stack** in Portainer:
 
 ```yaml
 # node-red-stack.yml
+
 version: "3.8"
 
 services:
@@ -46,10 +47,10 @@ volumes:
 
 After deploying, access the Node-RED editor at `http://<host>:1880`. Install extra nodes via the **Palette Manager** (Menu > Manage Palette > Install):
 
-- `node-red-contrib-mqtt-broker` — embedded MQTT broker
-- `node-red-contrib-influxdb` — write directly to InfluxDB
-- `node-red-dashboard` — build web-based dashboards
-- `node-red-contrib-postgresql` — PostgreSQL integration
+- `node-red-contrib-mqtt-broker` - embedded MQTT broker
+- `node-red-contrib-influxdb` - write directly to InfluxDB
+- `node-red-dashboard` - build web-based dashboards
+- `node-red-contrib-postgresql` - PostgreSQL integration
 
 Alternatively, pre-install nodes in the Docker image using a custom `package.json`:
 

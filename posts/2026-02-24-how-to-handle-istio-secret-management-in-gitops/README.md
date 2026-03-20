@@ -129,6 +129,7 @@ Create a SOPS config file:
 
 ```yaml
 # .sops.yaml
+
 creation_rules:
   - path_regex: secrets/.*\.yaml$
     age: age1qxr4y3xv8scqp9rx5g8d7jvwzetjnp7l0d3y5zy5xwq8q7k3d9s2lh6v0

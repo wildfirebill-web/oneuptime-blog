@@ -259,6 +259,7 @@ Here's a complete RBAC setup using JWT claims across multiple services:
 
 ```yaml
 # Viewer access - read-only endpoints
+
 apiVersion: security.istio.io/v1
 kind: AuthorizationPolicy
 metadata:

@@ -20,6 +20,7 @@ When you run `podman unshare`, Podman creates a new user namespace with the same
 
 ```bash
 # Enter the rootless Podman user namespace
+
 podman unshare id
 # Output: uid=0(root) gid=0(root) groups=0(root)
 

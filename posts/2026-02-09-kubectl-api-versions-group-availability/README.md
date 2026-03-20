@@ -78,6 +78,7 @@ Filter the output to check if a specific API is available:
 
 ```bash
 # Check if apps/v1 is available
+
 kubectl api-versions | grep "apps/v1"
 
 # Check for Ingress API versions

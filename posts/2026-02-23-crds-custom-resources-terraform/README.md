@@ -24,6 +24,7 @@ The most common way to install CRDs is through the Helm chart that ships with th
 
 ```hcl
 # Install cert-manager which includes its CRDs
+
 resource "helm_release" "cert_manager" {
   name             = "cert-manager"
   repository       = "https://charts.jetstack.io"

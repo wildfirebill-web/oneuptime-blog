@@ -27,6 +27,7 @@ Check the ImageRepository and ImagePolicy status:
 
 ```bash
 # Check all ImageRepositories
+
 kubectl get imagerepositories -A
 
 # Get detailed error for a specific ImageRepository

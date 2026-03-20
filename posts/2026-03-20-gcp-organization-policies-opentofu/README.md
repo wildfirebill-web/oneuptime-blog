@@ -14,6 +14,7 @@ GCP Organization Policies let you centrally constrain and enforce security confi
 
 ```hcl
 # main.tf - Restrict resource creation to specific regions
+
 resource "google_org_policy_policy" "restrict_regions" {
   name   = "organizations/${var.org_id}/policies/gcp.resourceLocations"
   parent = "organizations/${var.org_id}"

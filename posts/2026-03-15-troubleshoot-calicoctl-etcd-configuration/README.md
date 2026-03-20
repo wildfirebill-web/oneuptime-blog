@@ -47,6 +47,7 @@ Check that etcd endpoints are reachable:
 
 ```bash
 # Parse endpoints and test each one
+
 IFS=',' read -ra ENDPOINTS <<< "$ETCD_ENDPOINTS"
 for EP in "${ENDPOINTS[@]}"; do
   HOST=$(echo "$EP" | sed 's|https\?://||' | cut -d: -f1)

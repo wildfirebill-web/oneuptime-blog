@@ -62,6 +62,7 @@ Organize your AKS configuration as a reusable module:
 
 ```hcl
 # modules/aks/variables.tf
+
 variable "cluster_name" {
   type        = string
   description = "Name of the AKS cluster"

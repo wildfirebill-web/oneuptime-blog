@@ -29,6 +29,7 @@ Different Kubernetes platforms apply different taints to Windows nodes.
 
 ```bash
 # Check existing taints on Windows nodes
+
 kubectl describe node windows-worker-1 | grep Taints
 
 # Common Windows node taints:

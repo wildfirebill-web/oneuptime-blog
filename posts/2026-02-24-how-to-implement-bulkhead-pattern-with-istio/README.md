@@ -215,6 +215,7 @@ You need to know how close each bulkhead is to its limits. If a bulkhead is alwa
 
 ```promql
 # Active connections per upstream cluster
+
 envoy_cluster_upstream_cx_active
 
 # Pending requests per upstream cluster

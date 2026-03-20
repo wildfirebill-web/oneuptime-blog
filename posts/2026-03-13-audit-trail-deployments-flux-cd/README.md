@@ -29,6 +29,7 @@ Flux emits Kubernetes Events and also sends notifications via its alerting syste
 
 ```yaml
 # clusters/production/monitoring/audit-provider.yaml
+
 apiVersion: notification.toolkit.fluxcd.io/v1
 kind: Provider
 metadata:

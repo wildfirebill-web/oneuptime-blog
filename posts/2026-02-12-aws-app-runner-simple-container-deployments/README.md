@@ -40,6 +40,7 @@ The fastest way to deploy a container:
 
 ```bash
 # Create an App Runner service from an ECR image
+
 aws apprunner create-service \
   --service-name my-api \
   --source-configuration '{

@@ -26,6 +26,7 @@ Flux CD's pull-based model is naturally suited for edge: each edge cluster indep
 
 ```yaml
 # Edge cluster bootstrap with limited resources
+
 flux install \
   --components=source-controller,kustomize-controller,helm-controller \
   --toleration-keys=node.kubernetes.io/not-ready \

@@ -66,7 +66,7 @@ func (p *Pool) Get() (net.Conn, error) {
         }
         return conn, nil
     default:
-        // Pool empty — create a new connection (up to maxSize in flight)
+        // Pool empty - create a new connection (up to maxSize in flight)
         return net.DialTimeout("tcp4", p.address, p.timeout)
     }
 }
@@ -80,7 +80,7 @@ func (p *Pool) Put(conn net.Conn) {
     case p.conns <- conn:
         // Returned to pool successfully
     default:
-        // Pool is full — close the excess connection
+        // Pool is full - close the excess connection
         conn.Close()
     }
 }
@@ -147,7 +147,7 @@ func main() {
             response, err := reader.ReadString('\n')
             if err != nil {
                 fmt.Printf("Request %d: read error: %v\n", reqNum, err)
-                pool.Put(conn)   // Still put back — checkConn will detect if dead
+                pool.Put(conn)   // Still put back - checkConn will detect if dead
                 return
             }
             

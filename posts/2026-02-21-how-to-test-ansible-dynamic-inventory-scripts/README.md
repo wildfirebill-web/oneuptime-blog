@@ -64,6 +64,7 @@ Here is a sample inventory script that queries a hypothetical API:
 ```python
 #!/usr/bin/env python3
 # inventory/cloud_inventory.py
+
 # Dynamic inventory script that queries a cloud API for hosts
 import json
 import sys

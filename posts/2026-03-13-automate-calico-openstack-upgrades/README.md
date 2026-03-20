@@ -25,6 +25,7 @@ The OpenStack layer requires Ansible as the primary tool since Neutron agents ru
 
 ```yaml
 # ansible/playbooks/calico-openstack-upgrade.yaml
+
 ---
 - name: Upgrade Calico on OpenStack
   hosts: all

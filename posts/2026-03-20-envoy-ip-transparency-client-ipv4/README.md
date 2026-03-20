@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Envoy, IP Transparency, IPv4, Client IP, PROXY Protocol, Service Mesh
+Tags: Envoy, IP Transparency, IPv4, Client IP, Proxy Protocol, Service Mesh
 
 Description: Configure Envoy to preserve original client IPv4 addresses using IP transparency, XFF headers, or the PROXY protocol when forwarding traffic to upstream services.
 
@@ -117,6 +117,7 @@ listeners:
 
 ```bash
 # Create a debug backend that echoes headers
+
 python3 -c "
 from http.server import HTTPServer, BaseHTTPRequestHandler
 import json

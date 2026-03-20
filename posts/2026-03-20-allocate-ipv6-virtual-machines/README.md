@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, IPAM, Virtual Machines, Address Allocation, DHCPv6, SLAAC
+Tags: IPv6, IPAM, Virtual Machine, Address Allocation, DHCPv6, SLAAC
 
 Description: Implement IPv6 address allocation strategies for virtual machines using SLAAC, DHCPv6 reservations, and IPAM integration to ensure unique, trackable IPv6 addresses for each VM.
 
@@ -12,7 +12,7 @@ Allocating IPv6 addresses to virtual machines requires choosing between SLAAC (a
 
 ## Address Allocation Strategies
 
-```
+```text
 Strategy 1: SLAAC (Stateless Address Autoconfiguration)
 ├─ VM generates address from MAC using EUI-64
 ├─ Predictable if MAC is known
@@ -28,7 +28,7 @@ Strategy 2: DHCPv6 Stateful
 Strategy 3: Static (IPAM-assigned)
 ├─ IPAM allocates next available /128 from prefix
 ├─ Passed to VM via cloud-init, Terraform, or Ansible
-├─ Most traceable — IPAM owns the record
+├─ Most traceable - IPAM owns the record
 └─ Requires automation for scalability
 ```
 
@@ -60,6 +60,7 @@ def slaac_address(prefix: str, mac: str) -> str:
     return str(addr)
 
 # Example: VM with MAC 52:54:00:ab:cd:01 on prefix 2001:db8:vms::/64
+
 mac = "52:54:00:ab:cd:01"
 prefix = "2001:db8:vms::/64"
 ipv6 = slaac_address(prefix, mac)
@@ -255,4 +256,4 @@ def bulk_allocate_from_csv(csv_file: str, prefix_id: int) -> list:
 
 ## Conclusion
 
-IPv6 address allocation for VMs involves three approaches: SLAAC (predictable from MAC, no server needed), DHCPv6 reservations (by DUID/MAC in Kea or ISC DHCP), and IPAM-driven static assignment (most traceable). The SLAAC EUI-64 algorithm is deterministic — knowing a VM's MAC lets you predict its SLAAC address for a given /64 prefix. For production environments, IPAM integration via NetBox or similar tools provides centralized tracking of which VM holds which IPv6 address. Terraform and cloud-init work together for automated allocation: Terraform queries the IPAM API for the next available IPv6, then passes it to cloud-init for configuration during VM boot.
+IPv6 address allocation for VMs involves three approaches: SLAAC (predictable from MAC, no server needed), DHCPv6 reservations (by DUID/MAC in Kea or ISC DHCP), and IPAM-driven static assignment (most traceable). The SLAAC EUI-64 algorithm is deterministic - knowing a VM's MAC lets you predict its SLAAC address for a given /64 prefix. For production environments, IPAM integration via NetBox or similar tools provides centralized tracking of which VM holds which IPv6 address. Terraform and cloud-init work together for automated allocation: Terraform queries the IPAM API for the next available IPv6, then passes it to cloud-init for configuration during VM boot.

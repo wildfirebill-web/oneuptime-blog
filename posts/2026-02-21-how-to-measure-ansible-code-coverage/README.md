@@ -28,6 +28,7 @@ If you write custom Ansible modules in Python, you can use Coverage.py directly:
 
 ```bash
 # Install coverage
+
 pip install coverage
 ```
 

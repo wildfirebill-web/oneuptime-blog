@@ -59,6 +59,7 @@ cat > Containerfile << 'EOF'
 FROM registry.access.redhat.com/ubi9/ubi
 
 # Install packages using dnf (full package manager)
+
 RUN dnf install -y httpd mod_ssl php && \
     dnf clean all
 

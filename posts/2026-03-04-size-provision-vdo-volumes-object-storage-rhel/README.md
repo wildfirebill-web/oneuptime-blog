@@ -14,6 +14,7 @@ VDO (Virtual Data Optimizer) provides inline deduplication and compression for b
 
 ```bash
 # Install VDO and its dependencies
+
 sudo dnf install -y vdo kmod-kvdo
 ```
 

@@ -193,6 +193,7 @@ Now you can enable diagnostic logging by setting an environment variable:
 
 ```bash
 # Enable debug-level diagnostic logging for a single run
+
 OTEL_LOG_LEVEL=debug node app.js
 
 # Enable only error-level logging in production

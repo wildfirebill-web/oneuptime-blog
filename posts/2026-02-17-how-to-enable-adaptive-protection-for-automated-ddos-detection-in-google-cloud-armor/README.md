@@ -48,6 +48,7 @@ Adaptive Protection requires the Managed Protection Plus tier.
 
 ```bash
 # Enable Managed Protection Plus for your project
+
 gcloud compute security-policies update my-security-policy \
     --enable-ml \
     --project=my-project

@@ -30,6 +30,7 @@ EKS supports spot instances through managed node groups. Create a spot node grou
 
 ```yaml
 # spot-nodegroup.yaml
+
 apiVersion: eksctl.io/v1alpha5
 kind: ClusterConfig
 

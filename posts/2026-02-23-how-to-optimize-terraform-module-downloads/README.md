@@ -25,6 +25,7 @@ Each module is stored in the `.terraform/modules/` directory within your project
 
 ```hcl
 # Registry module - downloaded from registry.terraform.io
+
 module "vpc" {
   source  = "terraform-aws-modules/vpc/aws"
   version = "5.0.0"

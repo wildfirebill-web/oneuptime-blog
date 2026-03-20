@@ -29,6 +29,7 @@ Both result in the same outcome: automatic deletion of the secret when the time 
 
 ```bash
 # Create a secret that expires on a specific date
+
 echo -n "temp-api-key-abc123" | gcloud secrets create partner-api-key \
   --data-file=- \
   --replication-policy="automatic" \

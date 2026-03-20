@@ -31,6 +31,7 @@ The new (and recommended) way uses `aws configure sso` which walks you through t
 
 ```bash
 # Configure a new SSO profile
+
 aws configure sso
 
 # SSO session name (Recommended): my-org

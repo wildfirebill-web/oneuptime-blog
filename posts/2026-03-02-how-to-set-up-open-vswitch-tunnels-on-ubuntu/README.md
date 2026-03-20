@@ -45,6 +45,7 @@ sudo apt update
 sudo apt install openvswitch-switch openvswitch-common -y
 
 # Verify OVS is running
+
 sudo systemctl status openvswitch-switch
 
 # Check OVS version

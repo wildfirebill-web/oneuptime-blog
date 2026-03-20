@@ -21,6 +21,7 @@ The key combination is `poll: 0`, which tells Ansible to start the task and imme
 
 ```yaml
 # basic_async.yml - Basic background task execution
+
 ---
 - name: Basic background command execution
   hosts: all

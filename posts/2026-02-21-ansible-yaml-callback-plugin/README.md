@@ -16,6 +16,7 @@ Add it to your `ansible.cfg`:
 
 ```ini
 # ansible.cfg - Switch to YAML output formatting
+
 [defaults]
 stdout_callback = yaml
 ```

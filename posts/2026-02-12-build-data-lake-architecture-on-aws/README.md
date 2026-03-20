@@ -42,6 +42,7 @@ Create the S3 buckets for each zone:
 
 ```bash
 # Raw zone - data lands here exactly as it arrives
+
 aws s3 mb s3://my-datalake-raw --region us-east-1
 
 # Clean zone - validated, deduplicated, and format-standardized

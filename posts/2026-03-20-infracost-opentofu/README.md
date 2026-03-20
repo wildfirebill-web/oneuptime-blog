@@ -20,6 +20,7 @@ Learn how to integrate Infracost with OpenTofu for cloud cost estimation in CI/C
 
 ```bash
 # Verify OpenTofu installation
+
 tofu version
 
 # Set up required environment variables

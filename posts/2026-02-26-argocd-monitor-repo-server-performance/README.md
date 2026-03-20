@@ -43,6 +43,7 @@ Each of these operations has associated metrics that tell you where time is bein
 
 ```promql
 # Git request count by type and status
+
 rate(argocd_git_request_total[5m]) by (request_type, grpc_code)
 
 # Git request duration - 95th percentile
@@ -76,7 +77,7 @@ histogram_quantile(0.95,
 rate(argocd_repo_server_request_total[5m])
 ```
 
-### Resource Utilization Metrics
+Resource Utilization Metrics
 
 ```promql
 # CPU usage

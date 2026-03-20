@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, DNS, Resolv.conf, Linux Administration
+Tags: Ansible, DNS, resolv.conf, Linux Administration
 
 Description: Learn how to manage /etc/resolv.conf with Ansible including templates, immutable flags, and handling systemd-resolved conflicts.
 
@@ -18,6 +18,7 @@ First, let us look at what a well-configured `/etc/resolv.conf` looks like:
 
 ```text
 # /etc/resolv.conf - DNS resolver configuration
+
 nameserver 10.0.0.2
 nameserver 10.0.0.3
 nameserver 8.8.8.8

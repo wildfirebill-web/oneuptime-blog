@@ -16,6 +16,7 @@ Create a kickstart file that defines your standard server build:
 
 ```bash
 # /var/www/html/ks/rhel9-baseline.ks
+
 # RHEL 9 Baseline Kickstart
 
 # System language and keyboard

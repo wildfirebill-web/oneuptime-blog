@@ -27,6 +27,7 @@ The easiest way to install ESO is through its official Helm chart. Start by addi
 
 ```bash
 # Add the External Secrets Helm repository
+
 helm repo add external-secrets https://charts.external-secrets.io
 
 # Update the repo index

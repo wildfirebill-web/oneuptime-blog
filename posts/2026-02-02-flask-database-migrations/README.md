@@ -101,6 +101,7 @@ Install Flask-Migrate and its dependencies using pip.
 
 ```bash
 # Install Flask-Migrate (includes Alembic as a dependency)
+
 pip install flask-migrate
 
 # Install Flask-SQLAlchemy if not already installed

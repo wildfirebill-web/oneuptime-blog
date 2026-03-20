@@ -27,6 +27,7 @@ FRRouting's `bfdd` daemon handles BFD sessions:
 
 ```bash
 # Add FRRouting repository
+
 curl -s https://deb.frrouting.org/frr/keys.gpg | \
   sudo tee /usr/share/keyrings/frrouting.gpg > /dev/null
 

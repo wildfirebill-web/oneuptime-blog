@@ -84,6 +84,7 @@ The most effective way to handle warnings is to prevent bad configuration from b
 echo "Running Istio configuration analysis..."
 
 # Analyze the namespace being deployed to
+
 NAMESPACE=$1
 RESULT=$(istioctl analyze -n "$NAMESPACE" 2>&1)
 ERRORS=$(echo "$RESULT" | grep -c "^Error")

@@ -46,6 +46,7 @@ graph TD
 
 ```bash
 # Place a temporary hold on a specific object
+
 gcloud storage objects update gs://my-bucket/legal/contract-2026-001.pdf \
   --temporary-hold
 ```

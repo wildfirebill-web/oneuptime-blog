@@ -35,6 +35,7 @@ LDS tells Envoy what network addresses and ports to listen on. In Istio, listene
 
 ```bash
 # View listeners pushed to a sidecar via LDS
+
 istioctl proxy-config listeners deploy/my-app -n default
 ```
 

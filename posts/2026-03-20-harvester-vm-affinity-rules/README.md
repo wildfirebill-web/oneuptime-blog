@@ -26,6 +26,7 @@ Schedule VMs on nodes with specific labels:
 
 ```bash
 # Add labels to nodes for targeting
+
 kubectl label node harvester-node-01 node-role=storage-heavy
 kubectl label node harvester-node-02 node-role=compute-heavy
 kubectl label node harvester-node-03 node-role=storage-heavy
@@ -320,4 +321,4 @@ kubectl get vmi -A \
 
 ## Conclusion
 
-Affinity and anti-affinity rules are essential tools for production VM deployments in Harvester. Anti-affinity ensures that your high-availability replicas are actually distributed across different physical nodes — without it, all replicas might end up on the same node, defeating the purpose of HA. Node affinity helps optimize performance by targeting VMs to hardware with the right capabilities (NVMe storage, high-memory nodes). Start with anti-affinity for all HA workloads and add node affinity as you optimize for specific hardware characteristics.
+Affinity and anti-affinity rules are essential tools for production VM deployments in Harvester. Anti-affinity ensures that your high-availability replicas are actually distributed across different physical nodes - without it, all replicas might end up on the same node, defeating the purpose of HA. Node affinity helps optimize performance by targeting VMs to hardware with the right capabilities (NVMe storage, high-memory nodes). Start with anti-affinity for all HA workloads and add node affinity as you optimize for specific hardware characteristics.

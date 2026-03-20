@@ -32,6 +32,7 @@ roles/otel-collector/
 # roles/otel-collector/defaults/main.yml
 
 # Collector version and download
+
 otel_collector_version: "0.96.0"
 otel_collector_arch: "amd64"
 otel_collector_download_url: "https://github.com/open-telemetry/opentelemetry-collector-releases/releases/download/v{{ otel_collector_version }}/otelcol-contrib_{{ otel_collector_version }}_linux_{{ otel_collector_arch }}.tar.gz"

@@ -16,6 +16,7 @@ YAML files should be encoded in UTF-8. Most modern editors and systems default t
 
 ```yaml
 # UTF-8 characters work directly in YAML
+
 greeting: "Bonjour le monde"
 japanese: "Ansible is great"
 emoji_name: "test_service"

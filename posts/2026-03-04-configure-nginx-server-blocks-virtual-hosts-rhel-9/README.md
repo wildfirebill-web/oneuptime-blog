@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, NGINX, Server Blocks, Virtual Hosts, Linux
+Tags: RHEL, Nginx, Server Blocks, Virtual Hosts, Linux
 
 Description: Learn how to host multiple websites on a single Nginx server using server blocks on RHEL.
 
@@ -24,6 +24,7 @@ Set up separate document roots for each site:
 
 ```bash
 # Create document roots for two sites
+
 sudo mkdir -p /var/www/alpha.example.com/html
 sudo mkdir -p /var/www/beta.example.com/html
 ```

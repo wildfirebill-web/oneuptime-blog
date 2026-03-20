@@ -328,6 +328,7 @@ Set up alerts for workflow failures so you catch issues early.
 
 ```bash
 # Create an alert for failed Logic App runs
+
 az monitor metrics alert create \
   --name "alert-logic-app-failures" \
   --resource-group rg-workflows \

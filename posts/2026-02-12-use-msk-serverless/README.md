@@ -66,6 +66,7 @@ aws kafka get-bootstrap-brokers \
   --cluster-arn arn:aws:kafka:us-east-1:123456789:cluster/serverless-kafka/abc-123
 
 # Output will show the IAM bootstrap endpoint
+
 # boot-abc123.c1.kafka-serverless.us-east-1.amazonaws.com:9098
 ```
 

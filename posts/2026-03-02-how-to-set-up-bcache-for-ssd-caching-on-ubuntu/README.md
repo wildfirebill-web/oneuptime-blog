@@ -24,6 +24,7 @@ Bcache support is built into the Linux kernel since 3.10. Check that your kernel
 
 ```bash
 # Check for bcache kernel module
+
 modinfo bcache
 
 # Load the module if not already loaded

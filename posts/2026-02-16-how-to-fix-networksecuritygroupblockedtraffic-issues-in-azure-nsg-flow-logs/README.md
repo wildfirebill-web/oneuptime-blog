@@ -31,6 +31,7 @@ If you have not enabled flow logs yet, do that first:
 
 ```bash
 # Create a storage account for flow logs if you do not already have one
+
 az storage account create \
   --resource-group myResourceGroup \
   --name mynsgflowlogs \

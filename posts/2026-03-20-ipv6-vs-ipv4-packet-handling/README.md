@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, IPv4, Packet Handling, Routers, Networking
+Tags: IPv6, IPv4, Packet Handling, Router, Networking
 
 Description: Compare how IPv6 and IPv4 packets are processed by routers, highlighting key differences in fragmentation, checksums, and option processing that affect performance.
 
@@ -34,7 +34,7 @@ graph TD
 
 ## Fragmentation: The Biggest Difference
 
-```
+```text
 IPv4:
   - Any router on the path CAN fragment packets
   - Fragmentation at intermediate hops is transparent to endpoints
@@ -51,6 +51,7 @@ IPv6:
 
 ```python
 # Behavior comparison
+
 def router_receive_oversized_packet(protocol: str, mtu: int = 1500):
     """Simulate router behavior when receiving an oversized packet."""
     packet_size = 1600  # Larger than MTU
@@ -77,7 +78,7 @@ router_receive_oversized_packet("IPv6")
 
 ## Header Checksum Processing
 
-```
+```text
 IPv4:
   1. Router verifies header checksum (ensures header wasn't corrupted)
   2. Decrements TTL
@@ -96,7 +97,7 @@ Performance impact at 10 Gbps (10M+ packets/sec):
 
 ## Options/Extension Headers
 
-```
+```text
 IPv4 Options:
   - All routers must check for options (even if none present)
   - Some options require per-hop processing
@@ -143,4 +144,4 @@ cat /proc/net/snmp6 | grep -E "Ip6InDelivers|Ip6OutForwDatagrams"
 
 ## Conclusion
 
-IPv6's packet handling is fundamentally simpler and more efficient than IPv4. Routers do less work per packet: no checksum operations, no fragmentation decisions, and no variable-length header parsing. The trade-off is that sources must do more work — they are responsible for all fragmentation and must maintain path MTU state. This architectural shift moves complexity to the network edges (endpoints) and simplifies the core network, enabling higher forwarding rates in modern hardware.
+IPv6's packet handling is fundamentally simpler and more efficient than IPv4. Routers do less work per packet: no checksum operations, no fragmentation decisions, and no variable-length header parsing. The trade-off is that sources must do more work - they are responsible for all fragmentation and must maintain path MTU state. This architectural shift moves complexity to the network edges (endpoints) and simplifies the core network, enabling higher forwarding rates in modern hardware.

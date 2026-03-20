@@ -44,6 +44,7 @@ First, let's customize the tunnel options when creating the VPN:
 
 ```bash
 # Create VPN with custom tunnel configurations
+
 VPN_ID=$(aws ec2 create-vpn-connection \
   --type ipsec.1 \
   --customer-gateway-id $CGW_ID \

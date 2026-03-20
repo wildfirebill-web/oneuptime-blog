@@ -21,6 +21,7 @@ You can also watch the GitHub repository for security advisories:
 
 ```bash
 # Check the latest Istio releases for security patches
+
 gh api repos/istio/istio/releases --jq '.[0:5] | .[] | {tag: .tag_name, date: .published_at, name: .name}'
 ```
 

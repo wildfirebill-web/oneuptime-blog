@@ -47,6 +47,7 @@ def prepare_vectors_for_index(embeddings, ids, output_path):
     print(f"Wrote {len(ids)} vectors to {output_path}")
 
 # Example: prepare 1 million 768-dimensional embeddings
+
 embeddings = np.random.randn(1_000_000, 768).astype(np.float32)
 ids = [f"doc_{i}" for i in range(1_000_000)]
 

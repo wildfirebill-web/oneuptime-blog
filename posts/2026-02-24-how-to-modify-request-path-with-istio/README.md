@@ -322,6 +322,7 @@ Verify your path rewrites are working:
 
 ```bash
 # Deploy httpbin as a test backend
+
 kubectl apply -f https://raw.githubusercontent.com/istio/istio/release-1.20/samples/httpbin/httpbin.yaml
 
 # Test the rewrite - httpbin echoes back the received URL

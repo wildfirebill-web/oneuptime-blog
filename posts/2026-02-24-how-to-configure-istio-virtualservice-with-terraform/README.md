@@ -156,6 +156,7 @@ Now you can gradually shift traffic by changing the variable:
 
 ```bash
 # Start with 10% canary traffic
+
 terraform apply -var="canary_weight=10"
 
 # Increase to 50%

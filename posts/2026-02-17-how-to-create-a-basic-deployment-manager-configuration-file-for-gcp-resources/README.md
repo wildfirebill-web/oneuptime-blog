@@ -38,6 +38,7 @@ Let me start with the simplest possible configuration - creating a single Cloud 
 
 ```yaml
 # simple-bucket.yaml
+
 # Creates a single Cloud Storage bucket
 resources:
 - name: my-first-bucket

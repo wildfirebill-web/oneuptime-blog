@@ -14,6 +14,7 @@ An `unreachable` route drops packets to a destination and sends an ICMP "network
 
 ```bash
 # Drop traffic to 10.99.0.0/24 and send ICMP unreachable
+
 ip route add unreachable 10.99.0.0/24
 ```
 
@@ -23,7 +24,7 @@ ip route add unreachable 10.99.0.0/24
 # Show routes of type unreachable
 ip route show type unreachable
 
-# Test — sender receives ICMP unreachable
+# Test - sender receives ICMP unreachable
 ping -c 3 10.99.0.1
 # Expected: "Network is unreachable" or ICMP error from the local host
 ```
@@ -40,8 +41,8 @@ ip route add unreachable 10.0.5.100/32
 | Type | Packet fate | ICMP sent |
 |---|---|---|
 | `blackhole` | Dropped silently | No |
-| `unreachable` | Dropped | ICMP 3/0 — Net Unreachable |
-| `prohibit` | Dropped | ICMP 3/9 — Admin Prohibited |
+| `unreachable` | Dropped | ICMP 3/0 - Net Unreachable |
+| `prohibit` | Dropped | ICMP 3/9 - Admin Prohibited |
 | `throw` | Continues lookup in next table | No |
 
 ## Use Unreachable in Policy Routing

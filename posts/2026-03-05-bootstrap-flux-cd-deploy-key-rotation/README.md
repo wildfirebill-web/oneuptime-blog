@@ -16,6 +16,7 @@ When you bootstrap Flux CD using SSH, the bootstrap process generates an Ed25519
 
 ```bash
 # Bootstrap Flux with SSH (default behavior for GitHub)
+
 flux bootstrap github \
   --owner=your-org \
   --repository=fleet-infra \

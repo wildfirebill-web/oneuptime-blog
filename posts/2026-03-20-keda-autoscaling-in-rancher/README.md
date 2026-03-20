@@ -8,7 +8,7 @@ Description: Install KEDA in Rancher and configure event-driven autoscaling for 
 
 ## Introduction
 
-KEDA (Kubernetes Event-Driven Autoscaling) extends Kubernetes HPA with event-source-aware autoscaling. It can scale deployments and jobs based on Kafka consumer lag, RabbitMQ queue depth, Redis list length, Prometheus metrics, and dozens of other event sources—including scaling to zero replicas when idle.
+KEDA (Kubernetes Event-Driven Autoscaling) extends Kubernetes HPA with event-source-aware autoscaling. It can scale deployments and jobs based on Kafka consumer lag, RabbitMQ queue depth, Redis list length, Prometheus metrics, and dozens of other event sources-including scaling to zero replicas when idle.
 
 ## Step 1: Install KEDA
 
@@ -28,6 +28,7 @@ kubectl get pods -n keda
 
 ```yaml
 # kafka-scaler.yaml
+
 apiVersion: keda.sh/v1alpha1
 kind: ScaledObject
 metadata:

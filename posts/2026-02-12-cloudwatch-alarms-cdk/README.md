@@ -18,6 +18,7 @@ If you don't already have a CDK project, spin one up quickly:
 
 ```bash
 # Initialize a new CDK project with TypeScript
+
 mkdir cloudwatch-alarms && cd cloudwatch-alarms
 npx cdk init app --language typescript
 npm install @aws-cdk/aws-cloudwatch @aws-cdk/aws-cloudwatch-actions @aws-cdk/aws-sns @aws-cdk/aws-sns-subscriptions

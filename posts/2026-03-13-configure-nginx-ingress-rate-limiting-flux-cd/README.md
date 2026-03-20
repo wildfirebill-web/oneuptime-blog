@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, Kubernetes, GitOps, NGINX, Ingress, Rate Limiting, Security, DDoS Protection
+Tags: Flux CD, Kubernetes, GitOps, Nginx, Ingress, Rate Limiting, Security, DDoS Protection
 
 Description: Configure rate limiting on NGINX Ingress Controller using annotations and ConfigMaps managed by Flux CD to protect backend services from traffic spikes and abuse.
 
@@ -30,6 +30,7 @@ Configure baseline rate limiting for all NGINX-managed routes through the global
 
 ```yaml
 # infrastructure/nginx-ingress/helmrelease.yaml (partial - add to values.controller.config)
+
 apiVersion: helm.toolkit.fluxcd.io/v2
 kind: HelmRelease
 metadata:

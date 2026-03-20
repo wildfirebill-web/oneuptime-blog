@@ -29,6 +29,7 @@ This guide deploys Dex using the official Helm chart with GitHub and a static pa
 kubectl create namespace dex
 
 # GitHub OAuth App credentials
+
 kubectl create secret generic dex-connectors-secret \
   --namespace dex \
   --from-literal=GITHUB_CLIENT_ID=your_github_client_id \

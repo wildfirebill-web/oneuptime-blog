@@ -8,14 +8,15 @@ Description: Use prefix lists to filter specific routes from being advertised or
 
 ## Introduction
 
-Prefix lists are ordered access control lists for IP prefixes. They match routes based on network address and prefix length, and are used to filter routing updates in OSPF, BGP, and other protocols. Prefix lists are preferred over access lists for route filtering because they can match on prefix length ranges — for example, all /24s within a /16.
+Prefix lists are ordered access control lists for IP prefixes. They match routes based on network address and prefix length, and are used to filter routing updates in OSPF, BGP, and other protocols. Prefix lists are preferred over access lists for route filtering because they can match on prefix length ranges - for example, all /24s within a /16.
 
 ## Prefix List Syntax
 
-```
+```text
 ip prefix-list NAME [seq NUMBER] permit|deny PREFIX [le LENGTH] [ge LENGTH]
 
 # le = less than or equal (prefix length must be <= this)
+
 # ge = greater than or equal (prefix length must be >= this)
 ```
 

@@ -45,6 +45,7 @@ Set up three dedicated etcd nodes. On each node:
 
 ```bash
 # Download etcd
+
 ETCD_VER=v3.5.10
 wget https://github.com/etcd-io/etcd/releases/download/${ETCD_VER}/etcd-${ETCD_VER}-linux-amd64.tar.gz
 

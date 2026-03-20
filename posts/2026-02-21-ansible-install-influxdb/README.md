@@ -26,6 +26,7 @@ InfluxDB 2.x is a complete rewrite. It replaces the separate components (InfluxD
 
 ```ini
 # inventory/influxdb.ini
+
 [influxdb_servers]
 influxdb-1 ansible_host=10.0.6.10
 

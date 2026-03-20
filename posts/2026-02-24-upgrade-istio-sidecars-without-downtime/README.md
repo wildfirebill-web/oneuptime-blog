@@ -140,6 +140,7 @@ With all the prerequisites in place, the actual sidecar upgrade is a rolling res
 
 ```bash
 # Start with non-critical namespaces
+
 kubectl rollout restart deployment -n internal-tools
 kubectl rollout status deployment -n internal-tools --timeout=600s
 

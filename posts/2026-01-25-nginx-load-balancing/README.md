@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: NGINX, Load Balancing, High Availability, DevOps, Scalability
+Tags: Nginx, Load Balancing, High Availability, DevOps, Scalability
 
 Description: A practical guide to implementing load balancing with Nginx, covering round-robin, weighted, least connections, and IP hash algorithms with production-ready configurations.
 
@@ -30,6 +30,7 @@ The simplest configuration distributes requests evenly across all servers:
 # /etc/nginx/conf.d/load-balancer.conf
 
 # Define backend servers
+
 upstream backend {
     server 192.168.1.10:8080;  # Backend server 1
     server 192.168.1.11:8080;  # Backend server 2

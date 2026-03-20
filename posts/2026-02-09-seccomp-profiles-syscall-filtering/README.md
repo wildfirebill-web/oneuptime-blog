@@ -163,6 +163,7 @@ Store custom profiles on nodes and reference them:
 
 ```yaml
 # Create ConfigMap with seccomp profile
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

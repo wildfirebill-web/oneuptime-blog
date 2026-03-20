@@ -127,6 +127,7 @@ Label the nodes that need GRE tunnels:
 
 ```bash
 # Label nodes that should have GRE tunnels
+
 kubectl label node talos-worker-1 gre-tunnel=enabled
 ```
 

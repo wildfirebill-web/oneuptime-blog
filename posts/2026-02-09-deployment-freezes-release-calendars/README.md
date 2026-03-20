@@ -132,6 +132,7 @@ Deploy this webhook as a service in your cluster:
 
 ```yaml
 # freeze-webhook.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

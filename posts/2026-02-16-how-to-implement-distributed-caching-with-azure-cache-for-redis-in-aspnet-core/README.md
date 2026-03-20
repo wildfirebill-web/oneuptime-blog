@@ -29,6 +29,7 @@ You can create a Redis cache through the Azure Portal or the CLI. Here is the CL
 
 ```bash
 # Create a resource group if you do not have one
+
 az group create --name myResourceGroup --location eastus
 
 # Create a Basic tier Redis cache (use Standard or Premium for production)

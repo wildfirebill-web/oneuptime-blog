@@ -24,6 +24,7 @@ NoMachine does not distribute through Ubuntu's repositories, so download from th
 
 ```bash
 # Download the current .deb package (check https://www.nomachine.com/download for latest version)
+
 wget https://download.nomachine.com/download/8.14/Linux/nomachine_8.14.2_1_amd64.deb
 
 # Install it

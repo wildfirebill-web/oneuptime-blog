@@ -35,6 +35,7 @@ Your `.gitignore` should exclude the `.terraform` directory but include the lock
 # .gitignore for Terraform projects
 
 # Exclude the downloaded provider binaries and module cache
+
 .terraform/
 
 # Include the lock file (do NOT add this to .gitignore)

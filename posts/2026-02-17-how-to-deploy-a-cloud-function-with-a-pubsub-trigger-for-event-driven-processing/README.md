@@ -18,6 +18,7 @@ First, create the Pub/Sub topic that your function will subscribe to:
 
 ```bash
 # Create a Pub/Sub topic
+
 gcloud pubsub topics create user-events
 
 # Verify it was created

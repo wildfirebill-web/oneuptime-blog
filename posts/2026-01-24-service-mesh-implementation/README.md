@@ -60,6 +60,7 @@ flowchart TD
 
 ```bash
 # Download Istio
+
 curl -L https://istio.io/downloadIstio | sh -
 cd istio-*
 

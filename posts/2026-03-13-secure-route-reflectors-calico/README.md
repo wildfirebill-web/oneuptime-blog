@@ -24,6 +24,7 @@ Route reflectors solve this by acting as BGP hubs: instead of each node peering 
 
 ```bash
 # Label nodes that will act as route reflectors
+
 kubectl label node rr-node-1 calico-route-reflector=true
 kubectl label node rr-node-2 calico-route-reflector=true
 

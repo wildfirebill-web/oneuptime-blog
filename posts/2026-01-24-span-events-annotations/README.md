@@ -396,6 +396,7 @@ Use consistent, hierarchical event names:
 
 ```python
 # Good: Clear hierarchy and meaning
+
 span.add_event("cache.lookup.started")
 span.add_event("cache.lookup.hit")
 span.add_event("cache.lookup.miss")

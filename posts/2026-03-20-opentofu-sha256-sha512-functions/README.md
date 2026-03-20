@@ -1,4 +1,4 @@
-# How to Use the sha256 and sha512 Functions in OpenTofu
+# How to Use the sha256 and sha512 Functions in OpenTofu - Functions
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -10,8 +10,8 @@ Description: Learn how to use sha256 and sha512 in OpenTofu to compute cryptogra
 
 OpenTofu provides two SHA-2 hash functions:
 
-- `sha256(string)` — returns a 64-character lowercase hex SHA-256 hash
-- `sha512(string)` — returns a 128-character lowercase hex SHA-512 hash
+- `sha256(string)` - returns a 64-character lowercase hex SHA-256 hash
+- `sha512(string)` - returns a 128-character lowercase hex SHA-512 hash
 
 These are the recommended hashing functions when security matters, as SHA-256 and SHA-512 are cryptographically strong and widely used for integrity checking.
 
@@ -64,6 +64,7 @@ locals {
 }
 
 # Validate that the config file matches the expected hash
+
 resource "null_resource" "config_check" {
   triggers = {
     hash = local.actual_config_hash
@@ -110,10 +111,10 @@ locals {
   input = "opentofu"
 
   hashes = {
-    md5    = md5(input)    # 32 hex chars  — not secure
-    sha1   = sha1(input)   # 40 hex chars  — not secure
-    sha256 = sha256(input) # 64 hex chars  — secure
-    sha512 = sha512(input) # 128 hex chars — secure, larger output
+    md5    = md5(input)    # 32 hex chars  - not secure
+    sha1   = sha1(input)   # 40 hex chars  - not secure
+    sha256 = sha256(input) # 64 hex chars  - secure
+    sha512 = sha512(input) # 128 hex chars - secure, larger output
   }
 }
 ```
@@ -121,7 +122,7 @@ locals {
 ## Important Notes
 
 - Use `sha256` or `sha512` whenever the hash has security implications (integrity verification, fingerprinting sensitive data).
-- The `source_code_hash` attribute on `aws_lambda_function` expects a **Base64-encoded SHA-256** hash — use `filebase64sha256` for that specific use case.
+- The `source_code_hash` attribute on `aws_lambda_function` expects a **Base64-encoded SHA-256** hash - use `filebase64sha256` for that specific use case.
 - SHA-256 is generally the recommended choice as it provides strong security with a manageable output size.
 - Both functions produce hexadecimal output; use `base64sha256` or `base64sha512` for Base64-encoded output.
 

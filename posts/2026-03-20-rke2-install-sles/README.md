@@ -20,6 +20,7 @@ SUSE Linux Enterprise Server (SLES) is a popular enterprise Linux distribution i
 
 ```bash
 # Register SLES with SUSE Customer Center (if not already registered)
+
 sudo SUSEConnect -r <REGISTRATION_CODE> -e <EMAIL>
 
 # Add container module (required for container tools)

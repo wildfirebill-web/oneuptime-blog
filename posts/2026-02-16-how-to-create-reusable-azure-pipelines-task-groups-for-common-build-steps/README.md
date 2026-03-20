@@ -106,6 +106,7 @@ Then reference it in your YAML.
 
 ```yaml
 # azure-pipelines.yml - Using a task group in YAML
+
 trigger:
   - main
 

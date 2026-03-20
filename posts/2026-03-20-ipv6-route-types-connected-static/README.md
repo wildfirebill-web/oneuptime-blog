@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: IPv6, Routing, Connected Routes, Static Routes, Dynamic Routing
 
-Description: Learn the three main IPv6 route types — connected, static, and dynamic — how each is created, and when to use each type in network design.
+Description: Learn the three main IPv6 route types - connected, static, and dynamic - how each is created, and when to use each type in network design.
 
 ## Overview
 
@@ -16,6 +16,7 @@ Connected routes are automatically added by the kernel when an IPv6 address is a
 
 ```bash
 # Assign an address to create connected routes
+
 sudo ip -6 addr add 2001:db8:1::1/64 dev eth0
 
 # The kernel automatically adds:
@@ -24,14 +25,14 @@ ip -6 route show | grep "proto kernel"
 # fe80::/64 dev eth0 proto kernel scope link src fe80::1 metric 256
 ```
 
-Connected routes have `proto kernel` and `scope link` — meaning no gateway is needed, the destination is directly reachable.
+Connected routes have `proto kernel` and `scope link` - meaning no gateway is needed, the destination is directly reachable.
 
 ## Static Routes
 
 Static routes are manually configured by an administrator and remain until explicitly removed (or the system reboots if not persisted):
 
 ```bash
-# Add a static route — appears as 'proto static'
+# Add a static route - appears as 'proto static'
 sudo ip -6 route add 2001:db8:2::/48 via fe80::router dev eth0
 
 ip -6 route show | grep "proto static"
@@ -110,4 +111,4 @@ ip -6 route show
 
 ## Summary
 
-IPv6 has three route types: **connected** (proto kernel, created by assigning addresses), **static** (proto static, manually configured), and **dynamic** (proto ospf/bgp/ripng, learned from routing protocols). Each serves a different purpose. In practice, most networks use all three together — connected for local subnets, static for simple stub sites, and dynamic protocols for scalable multi-router topologies.
+IPv6 has three route types: **connected** (proto kernel, created by assigning addresses), **static** (proto static, manually configured), and **dynamic** (proto ospf/bgp/ripng, learned from routing protocols). Each serves a different purpose. In practice, most networks use all three together - connected for local subnets, static for simple stub sites, and dynamic protocols for scalable multi-router topologies.

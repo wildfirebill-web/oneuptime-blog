@@ -65,6 +65,7 @@ Network and special filesystems should always have `0` here.
 cat /etc/fstab
 
 # Or with line numbers
+
 cat -n /etc/fstab
 ```
 

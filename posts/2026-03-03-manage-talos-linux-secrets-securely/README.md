@@ -27,6 +27,7 @@ The Talos machine configuration contains sensitive data:
 
 ```yaml
 # These are the sensitive fields in a machine config
+
 machine:
   ca:
     crt: <sensitive>

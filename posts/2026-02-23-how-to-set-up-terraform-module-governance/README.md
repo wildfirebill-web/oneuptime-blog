@@ -26,6 +26,7 @@ Define minimum requirements that every module must meet before publication:
 # Module Quality Standards
 
 # 1. Structure Requirements
+
 # Every module must have these files:
 # - main.tf          Resources
 # - variables.tf     Input variables with types and descriptions

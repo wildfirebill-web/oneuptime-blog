@@ -62,6 +62,7 @@ sequenceDiagram
 
 ```bash
 # Test basic TLS connectivity to collector
+
 openssl s_client -connect collector.example.com:4317 -showcerts
 
 # Test with specific TLS version

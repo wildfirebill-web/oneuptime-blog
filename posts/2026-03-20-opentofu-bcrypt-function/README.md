@@ -16,8 +16,8 @@ The `bcrypt` function in OpenTofu computes a bcrypt hash of a given string. bcry
 bcrypt(string, cost)
 ```
 
-- **string** — the password or string to hash
-- **cost** — optional cost factor (default is 10; range 4-31)
+- **string** - the password or string to hash
+- **cost** - optional cost factor (default is 10; range 4-31)
 - Returns a bcrypt hash string
 
 **Important:** bcrypt generates a different hash each time (even for the same input) due to random salt generation. This means the resource will show a diff on every `tofu plan`. Use with caution in sensitive resources.
@@ -71,6 +71,7 @@ resource "aws_instance" "jumpbox" {
 Cloud-init template:
 ```yaml
 # cloud-init.yaml.tpl
+
 #cloud-config
 users:
   - name: ${username}
@@ -135,7 +136,7 @@ resource "kubernetes_secret" "nginx_auth" {
 1. Identify passwords that need bcrypt hashing.
 2. Use `bcrypt(password)` or `bcrypt(password, cost)`.
 3. Store the hash (not the plaintext) in your configuration.
-4. Be aware the hash changes on each `plan` — consider storing in a separate resource or using `ignore_changes`.
+4. Be aware the hash changes on each `plan` - consider storing in a separate resource or using `ignore_changes`.
 
 ```bash
 tofu console

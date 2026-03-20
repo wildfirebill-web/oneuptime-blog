@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, IPsec, Juniper, JunOS, VPN
+Tags: IPv6, IPsec, Juniper, Junos, VPN
 
 Description: Learn how to configure IPv6 IPsec site-to-site VPNs on Juniper routers using JunOS, including IKEv2 policy, security associations, and route-based VPN configuration.
 
@@ -14,8 +14,9 @@ Juniper JunOS supports IPv6 IPsec using IKEv2 with route-based VPN configuration
 
 ### IKEv2 Proposal and Policy
 
-```
+```text
 # IKEv2 Proposal (cipher suites)
+
 set security ike proposal IKEv2-PROP
     authentication-method pre-shared-keys
     dh-group group14
@@ -41,7 +42,7 @@ set security ike gateway IPV6-GATEWAY
 
 ### IPsec Proposal and Policy
 
-```
+```text
 # IPsec Proposal (ESP transform)
 set security ipsec proposal ESP-PROP
     protocol esp
@@ -65,7 +66,7 @@ set security ipsec vpn IPV6-VPN
 
 ### Secure Tunnel Interface (st0)
 
-```
+```text
 # Create and configure the tunnel interface
 set interfaces st0 unit 0 family inet6 address 2001:db8:vti::1/64
 set interfaces st0 unit 0 description "IPv6 VPN to Site2"
@@ -76,7 +77,7 @@ set routing-options rib inet6.0 static route 2001:db8:site2::/48 next-hop st0.0
 
 ### Security Zones and Policies
 
-```
+```text
 # Place tunnel interface in VPN zone
 set security zones security-zone VPN interfaces st0.0
 
@@ -103,7 +104,7 @@ set security address-book global address site2-network 2001:db8:site2::/48
 
 ## AES-GCM (AEAD) Configuration
 
-```
+```text
 # Use AES-GCM for better performance (single-pass auth+encryption)
 set security ipsec proposal ESP-GCM-PROP
     protocol esp
@@ -115,7 +116,7 @@ set security ipsec proposal ESP-GCM-PROP
 
 ## Verification Commands
 
-```
+```text
 # Show IKEv2 security associations
 show security ike security-associations
 
@@ -143,7 +144,7 @@ ping6 2001:db8:site2::1 routing-instance default count 5
 
 ## Troubleshooting
 
-```
+```text
 # Clear and re-establish
 clear security ike security-associations
 clear security ipsec security-associations

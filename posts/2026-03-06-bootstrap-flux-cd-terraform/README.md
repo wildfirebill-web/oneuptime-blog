@@ -29,6 +29,7 @@ Start by creating a new Terraform project with the required providers.
 
 ```hcl
 # versions.tf
+
 # Define required providers for Flux CD bootstrapping
 terraform {
   required_version = ">= 1.5.0"

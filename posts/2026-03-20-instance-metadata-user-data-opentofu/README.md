@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: AWS, OpenTofu, EC2, User Data, Cloud-Init, Infrastructure as Code
+Tags: AWS, OpenTofu, EC2, User Data, Cloud-init, Infrastructure as Code
 
 Description: Learn how to configure EC2 instance metadata settings and pass user data scripts using OpenTofu for automated instance bootstrapping.
 
@@ -129,6 +129,7 @@ resource "aws_launch_template" "app" {
 
 ```bash
 # IMDSv2 - get token first
+
 TOKEN=$(curl -X PUT "http://169.254.169.254/latest/api/token" \
   -H "X-aws-ec2-metadata-token-ttl-seconds: 21600")
 
@@ -142,11 +143,11 @@ curl -H "X-aws-ec2-metadata-token: $TOKEN" \
 
 ## Best Practices
 
-1. **Always use IMDSv2** — set `http_tokens = "required"` to prevent SSRF attacks
-2. **Keep user data idempotent** — scripts should be safe to run multiple times
-3. **Log user data output** — cloud-init logs to `/var/log/cloud-init-output.log`
+1. **Always use IMDSv2** - set `http_tokens = "required"` to prevent SSRF attacks
+2. **Keep user data idempotent** - scripts should be safe to run multiple times
+3. **Log user data output** - cloud-init logs to `/var/log/cloud-init-output.log`
 4. **Use `user_data_replace_on_change = true`** to force instance replacement when scripts change
-5. **Avoid secrets in user data** — use SSM Parameter Store or Secrets Manager instead
+5. **Avoid secrets in user data** - use SSM Parameter Store or Secrets Manager instead
 
 ## Conclusion
 

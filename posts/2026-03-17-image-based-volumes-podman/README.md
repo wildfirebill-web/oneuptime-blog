@@ -20,6 +20,7 @@ First, build an image that contains the data you want to serve as a volume:
 
 ```dockerfile
 # Containerfile.data
+
 FROM docker.io/library/alpine:latest
 COPY ./config-files /data
 COPY ./static-assets /assets

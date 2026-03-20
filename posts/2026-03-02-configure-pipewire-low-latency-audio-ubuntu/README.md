@@ -20,6 +20,7 @@ PipeWire should already be installed and running. Verify:
 systemctl --user status pipewire
 pactl info | grep "Server Name"
 # Should show: PulseAudio (on PipeWire x.x.x)
+
 ```
 
 Also install the PipeWire development tools:

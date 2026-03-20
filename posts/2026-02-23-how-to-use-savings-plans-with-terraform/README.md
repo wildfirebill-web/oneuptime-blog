@@ -23,6 +23,7 @@ Analyze your Terraform-managed compute to determine the right commitment:
 ```bash
 #!/bin/bash
 # analyze-compute-for-savings-plans.sh
+
 # Estimate hourly compute spend from Terraform state
 
 # Get all EC2 instances from state

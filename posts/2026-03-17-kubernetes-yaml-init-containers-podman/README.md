@@ -18,6 +18,7 @@ Init containers are specialized containers that run before application container
 
 ```yaml
 # pod-with-init.yaml
+
 apiVersion: v1
 kind: Pod
 metadata:

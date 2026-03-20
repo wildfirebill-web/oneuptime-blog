@@ -22,6 +22,7 @@ View the watermark in the Dataflow monitoring UI or via the command line:
 
 ```bash
 # Get the watermark and other timing info for the job
+
 gcloud dataflow metrics list JOB_ID \
     --region=us-central1 \
     --source=service \

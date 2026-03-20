@@ -47,6 +47,7 @@ Strong keys start with strong randomness. Never roll your own random number gene
 
 ```bash
 # Generate a 256-bit AES key using system entropy
+
 openssl rand -base64 32 > aes-key.txt
 
 # Generate an RSA 4096-bit key pair

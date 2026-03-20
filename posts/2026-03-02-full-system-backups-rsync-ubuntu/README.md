@@ -29,6 +29,7 @@ Create a destination directory for your backup:
 
 ```bash
 # Create backup destination - this can be a local drive, NAS, or mounted remote filesystem
+
 sudo mkdir -p /mnt/backup/system-backup
 ```
 

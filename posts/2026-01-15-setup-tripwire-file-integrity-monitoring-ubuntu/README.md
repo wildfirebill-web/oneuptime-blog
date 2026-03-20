@@ -53,6 +53,7 @@ Before installing Tripwire, update your system packages to ensure you have the l
 
 ```bash
 # Update package lists
+
 sudo apt update
 
 # Upgrade existing packages

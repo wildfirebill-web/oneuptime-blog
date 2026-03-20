@@ -42,6 +42,7 @@ Here is the full correct sequence in Python, covering all the pieces:
 
 ```python
 # tracing_setup.py: Complete initialization in the correct order
+
 import atexit
 from opentelemetry import trace
 from opentelemetry.sdk.trace import TracerProvider

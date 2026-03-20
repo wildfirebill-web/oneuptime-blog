@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: portainer, ssl, tls, kubernetes, cert-manager, ingress
+Tags: Portainer, SSL, TLS, Kubernetes, Cert-Manager, Ingress
 
 Description: A guide to configuring SSL/TLS for Portainer deployed on Kubernetes using Kubernetes Secrets, cert-manager, and Ingress.
 
@@ -21,6 +21,7 @@ When Portainer runs on Kubernetes, TLS can be handled at multiple levels: the Po
 
 ```bash
 # Create TLS secret from certificate files
+
 kubectl create secret tls portainer-tls \
   --cert=/opt/certs/portainer.crt \
   --key=/opt/certs/portainer.key \

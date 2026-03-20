@@ -1,4 +1,4 @@
-# How to Deploy Loki via Portainer
+# How to Deploy Loki via Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -162,6 +162,7 @@ After adding Loki as a data source in Grafana, use LogQL to query:
 
 ```logql
 # All error logs
+
 {job="containerlogs"} |= "ERROR"
 
 # Nginx access logs

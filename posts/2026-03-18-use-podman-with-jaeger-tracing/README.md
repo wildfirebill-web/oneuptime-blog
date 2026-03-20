@@ -56,6 +56,7 @@ pip install opentelemetry-api opentelemetry-sdk \
 
 ```python
 # app.py
+
 from flask import Flask, request, jsonify
 from opentelemetry import trace
 from opentelemetry.sdk.trace import TracerProvider

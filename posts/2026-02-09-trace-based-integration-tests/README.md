@@ -24,6 +24,7 @@ Start by deploying a complete test environment in Kubernetes with all microservi
 
 ```yaml
 # test-environment.yaml
+
 apiVersion: v1
 kind: Namespace
 metadata:

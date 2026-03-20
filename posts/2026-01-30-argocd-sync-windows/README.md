@@ -409,6 +409,7 @@ Different rules for different environments:
 
 ```yaml
 # Development - no restrictions
+
 apiVersion: argoproj.io/v1alpha1
 kind: AppProject
 metadata:

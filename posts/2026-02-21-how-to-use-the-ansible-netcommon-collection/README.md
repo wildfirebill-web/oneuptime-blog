@@ -14,6 +14,7 @@ The `ansible.netcommon` collection provides the foundation for all network autom
 
 ```bash
 # Install the ansible.netcommon collection
+
 ansible-galaxy collection install ansible.netcommon
 
 # Check installed version

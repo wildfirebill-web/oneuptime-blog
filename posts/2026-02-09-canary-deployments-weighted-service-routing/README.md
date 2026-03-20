@@ -18,6 +18,7 @@ The simplest approach uses replica ratios to control traffic distribution:
 
 ```yaml
 # Stable version - 90% of traffic (9 replicas)
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

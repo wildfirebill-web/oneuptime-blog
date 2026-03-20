@@ -22,6 +22,7 @@ Use MongoDB's official repository to get the current version:
 
 ```bash
 # Install prerequisites
+
 sudo apt update && sudo apt install -y gnupg curl
 
 # Add MongoDB's GPG key

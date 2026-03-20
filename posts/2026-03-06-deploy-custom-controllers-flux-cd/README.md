@@ -25,6 +25,7 @@ This guide covers deploying custom controllers with Flux CD, managing CRDs safel
 
 ```yaml
 # Organize controller deployments clearly
+
 # infrastructure/
 #   controllers/
 #     my-controller/

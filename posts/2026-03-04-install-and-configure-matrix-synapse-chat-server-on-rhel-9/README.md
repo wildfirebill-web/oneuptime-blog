@@ -20,6 +20,7 @@ Matrix Synapse Chat Server can be installed and configured on RHEL to provide ro
 
 ```bash
 # Update the system first
+
 sudo dnf update -y
 
 # Install the required packages

@@ -20,6 +20,7 @@ Use the `--health-start-period` flag to define the initialization grace period:
 
 ```bash
 # Give the container 60 seconds to start before counting failures
+
 podman run -d \
   --name java-app \
   --health-cmd "curl -f http://localhost:8080/actuator/health || exit 1" \

@@ -21,6 +21,7 @@ Tilt is a development tool that orchestrates multi-service Kubernetes applicatio
 
 ```bash
 # macOS
+
 brew install tilt
 
 # Linux

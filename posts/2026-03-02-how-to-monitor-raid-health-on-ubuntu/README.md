@@ -16,6 +16,7 @@ The most direct way to check array health:
 
 ```bash
 # Quick overview of all arrays
+
 cat /proc/mdstat
 
 # Detailed status of a specific array

@@ -108,6 +108,7 @@ GraphQL allows you to extend existing types rather than redefining them. This is
 
 ```graphql
 # schemas/base.graphql
+
 # Define the root types once
 type Query {
   _empty: String

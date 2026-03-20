@@ -27,6 +27,7 @@ resource "aws_secretsmanager_secret" "db_credentials" {
 }
 
 # Set the secret value (reference from existing secret or variable)
+
 # Note: store the actual value via console/CLI, or use sensitive variable
 resource "aws_secretsmanager_secret_version" "db_credentials" {
   secret_id = aws_secretsmanager_secret.db_credentials.id

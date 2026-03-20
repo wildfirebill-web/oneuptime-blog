@@ -38,6 +38,7 @@ Start diagnosing MTU issues by checking the configured MTU on pod network interf
 
 ```bash
 # Check MTU inside a pod
+
 kubectl exec -it my-app-pod -- ip link show
 
 # Look for the mtu value in the output

@@ -107,6 +107,7 @@ Before setting limits, measure what your proxies actually use:
 
 ```bash
 # Real-time CPU usage per container
+
 kubectl top pods --containers -l app=catalog-service
 
 # Or use Prometheus

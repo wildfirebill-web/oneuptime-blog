@@ -33,6 +33,7 @@ The referenced file uses a simple key-value format, one variable per line:
 
 ```bash
 # /etc/myapp/environment
+
 # This file is managed separately from the unit file
 
 DATABASE_URL=postgresql://user:password@localhost:5432/mydb

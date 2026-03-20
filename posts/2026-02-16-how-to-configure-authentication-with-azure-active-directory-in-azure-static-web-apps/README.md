@@ -130,6 +130,7 @@ You can also set these via the CLI.
 
 ```bash
 # Set the AAD client ID as an application setting
+
 az staticwebapp appsettings set \
   --name my-static-app \
   --resource-group myResourceGroup \

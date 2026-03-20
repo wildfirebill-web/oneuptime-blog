@@ -22,6 +22,7 @@ Cosign supports multiple key types. For production use on GCP, KMS-managed keys 
 
 ```hcl
 # kms.tf
+
 # KMS key for Cosign image signing
 
 resource "google_kms_key_ring" "cosign" {

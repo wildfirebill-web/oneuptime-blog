@@ -20,6 +20,7 @@ The first step in any cgroup troubleshooting is knowing which version is active:
 
 ```bash
 # Check the cgroup filesystem type
+
 stat -fc %T /sys/fs/cgroup/
 # "cgroup2fs" = v2 (good for rootless)
 # "tmpfs" = v1 or hybrid (may cause issues)

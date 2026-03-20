@@ -29,6 +29,7 @@ In a real production environment, you would use a proper PKI infrastructure or a
 
 ```bash
 # Create a directory structure for the CA
+
 mkdir -p ~/iot-certs/{ca,devices}
 cd ~/iot-certs
 

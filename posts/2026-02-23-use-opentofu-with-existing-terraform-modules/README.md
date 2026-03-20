@@ -25,6 +25,7 @@ Public modules from the Terraform Registry work with OpenTofu out of the box:
 
 ```hcl
 # This module source works with both Terraform and OpenTofu
+
 module "vpc" {
   source  = "terraform-aws-modules/vpc/aws"
   version = "5.1.0"

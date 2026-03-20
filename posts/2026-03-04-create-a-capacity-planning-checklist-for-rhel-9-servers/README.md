@@ -31,6 +31,7 @@ Production environments require systematic verification before, during, and afte
 
 ```bash
 # Collect baseline metrics
+
 sar -u 1 10 > cpu_baseline.txt
 sar -r 1 10 > memory_baseline.txt
 sar -d 1 10 > disk_baseline.txt

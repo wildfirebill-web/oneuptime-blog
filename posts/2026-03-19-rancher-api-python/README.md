@@ -26,6 +26,7 @@ import json
 import urllib3
 
 # Disable SSL warnings for self-signed certificates
+
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 RANCHER_URL = "https://rancher.example.com"
@@ -343,7 +344,7 @@ def onboard_users(client, csv_file, cluster_id, role="cluster-member"):
 onboard_users(client, "users.csv", "c-m-abc12345")
 ```
 
-### Resource Inventory Export
+Resource Inventory Export
 
 ```python
 import json

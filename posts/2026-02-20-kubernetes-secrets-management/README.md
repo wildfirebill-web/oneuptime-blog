@@ -27,6 +27,7 @@ Base64 is encoding, not encryption. Anyone can decode it:
 
 ```bash
 # This is NOT secure - base64 is trivially reversible
+
 echo "cGFzc3dvcmQxMjM=" | base64 --decode
 # Output: password123
 ```

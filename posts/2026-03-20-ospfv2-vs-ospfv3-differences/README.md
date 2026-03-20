@@ -8,7 +8,7 @@ Description: A detailed comparison of OSPFv2 and OSPFv3 covering protocol change
 
 ## Overview
 
-OSPFv3 (RFC 5340) is not simply OSPFv2 with IPv6 addresses substituted — it underwent significant architectural changes. Understanding these differences is essential for network engineers transitioning from IPv4 OSPF to IPv6 environments.
+OSPFv3 (RFC 5340) is not simply OSPFv2 with IPv6 addresses substituted - it underwent significant architectural changes. Understanding these differences is essential for network engineers transitioning from IPv4 OSPF to IPv6 environments.
 
 ## Side-by-Side Comparison
 
@@ -34,14 +34,14 @@ OSPFv3 introduces new LSA types and removes addressing from existing ones:
 | 3 | Summary LSA | Inter-Area Prefix LSA | Carries prefixes instead of subnets |
 | 4 | ASBR Summary | Inter-Area Router LSA | Changed content |
 | 5 | AS External | AS External LSA | Carries IPv6 prefixes |
-| 8 | N/A | Link LSA | NEW — carries link-local address + on-link prefixes |
-| 9 | Opaque | Intra-Area Prefix LSA | NEW — carries intra-area prefixes |
+| 8 | N/A | Link LSA | NEW - carries link-local address + on-link prefixes |
+| 9 | Opaque | Intra-Area Prefix LSA | NEW - carries intra-area prefixes |
 
 ## Authentication Changes
 
 OSPFv2 has authentication built into its packet header. OSPFv3 removes this entirely and relies on IPsec:
 
-```
+```text
 ! OSPFv2 MD5 authentication (Cisco)
 interface GigabitEthernet0/0
  ip ospf authentication message-digest
@@ -56,7 +56,7 @@ interface GigabitEthernet0/0
 
 On dual-stack routers, both protocols run independently:
 
-```
+```text
 ! Cisco: Enable both on the same interface
 interface GigabitEthernet0/0
  ip address 10.0.0.1 255.255.255.0
@@ -65,8 +65,9 @@ interface GigabitEthernet0/0
  ospfv3 1 ipv6 area 0     ! OSPFv3
 ```
 
-```
+```text
 # FRRouting: Both protocols active
+
 router ospf
  network 10.0.0.0/24 area 0
 
@@ -84,4 +85,4 @@ router ospf6
 
 ## Summary
 
-OSPFv3 is architecturally cleaner than OSPFv2 — it separates topology from addressing, uses IPsec for authentication, and supports multiple instances per link. For engineers familiar with OSPFv2, the concepts (areas, DR/BDR, LSA flooding) are identical, but the implementation details differ significantly, especially around authentication and LSA types.
+OSPFv3 is architecturally cleaner than OSPFv2 - it separates topology from addressing, uses IPsec for authentication, and supports multiple instances per link. For engineers familiar with OSPFv2, the concepts (areas, DR/BDR, LSA flooding) are identical, but the implementation details differ significantly, especially around authentication and LSA types.

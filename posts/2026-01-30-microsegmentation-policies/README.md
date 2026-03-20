@@ -88,6 +88,7 @@ Start with a deny-all policy. This ensures no pod can communicate unless explici
 
 ```yaml
 # default-deny-all.yaml
+
 # This policy blocks all ingress and egress traffic for pods in the namespace.
 # Apply this first, then add specific allow rules for required communication paths.
 apiVersion: networking.k8s.io/v1

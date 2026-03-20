@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Monitoring, Virtual Networks, Prometheus, NetFlow, Wireshark
+Tags: IPv6, Monitoring, Virtual Network, Prometheus, NetFlow, Wireshark
 
 Description: Monitor IPv6 traffic in virtual machine networks using Prometheus, NetFlow/IPFIX, tcpdump, and hypervisor-specific tools to gain visibility into virtual network IPv6 flows.
 
@@ -22,6 +22,7 @@ import re
 import time
 
 # Metrics
+
 ipv6_rx_bytes = Gauge('vnet_ipv6_rx_bytes_total', 'IPv6 bytes received', ['interface', 'vm'])
 ipv6_tx_bytes = Gauge('vnet_ipv6_tx_bytes_total', 'IPv6 bytes sent', ['interface', 'vm'])
 ndp_neighbors = Gauge('ipv6_ndp_neighbors', 'NDP neighbor table entries', ['state'])
@@ -136,7 +137,7 @@ wireshark ipv6.pcap
 
 ## VMware vSphere: Port Mirroring for IPv6 Analysis
 
-```
+```text
 # VMware: configure vSphere Distributed Switch port mirror
 # for capturing IPv6 traffic from VMs
 
@@ -212,4 +213,4 @@ groups:
 
 ## Conclusion
 
-Monitoring IPv6 in virtual networks requires combining hypervisor-level tools (tcpdump on vnet/tap interfaces, OVS sFlow, VMware port mirroring) with Prometheus metrics collectors. KVM VM interfaces appear as `vnet0`, `vnet1`, etc. on the host — capturing on these interfaces shows all traffic for that VM. OVS provides per-port statistics and supports sFlow/NetFlow export for IPv6 traffic to external collectors. Key metrics to monitor are NDP neighbor table size (STALE entries indicate stale VMs), DHCPv6 lease pool utilization, and IPv6 throughput per VM to detect IPv6-only connectivity failures.
+Monitoring IPv6 in virtual networks requires combining hypervisor-level tools (tcpdump on vnet/tap interfaces, OVS sFlow, VMware port mirroring) with Prometheus metrics collectors. KVM VM interfaces appear as `vnet0`, `vnet1`, etc. on the host - capturing on these interfaces shows all traffic for that VM. OVS provides per-port statistics and supports sFlow/NetFlow export for IPv6 traffic to external collectors. Key metrics to monitor are NDP neighbor table size (STALE entries indicate stale VMs), DHCPv6 lease pool utilization, and IPv6 throughput per VM to detect IPv6-only connectivity failures.

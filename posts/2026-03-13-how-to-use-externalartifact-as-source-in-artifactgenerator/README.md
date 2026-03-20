@@ -88,6 +88,7 @@ The typical workflow involves a CI pipeline that builds and packages manifests, 
 
 ```yaml
 # .github/workflows/build-manifests.yaml
+
 name: Build and Publish Manifests
 on:
   push:

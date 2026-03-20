@@ -24,6 +24,7 @@ Pod Security Admission is enabled by default in Kubernetes 1.25+. For older vers
 
 ```yaml
 # /etc/kubernetes/manifests/kube-apiserver.yaml
+
 apiVersion: v1
 kind: Pod
 metadata:

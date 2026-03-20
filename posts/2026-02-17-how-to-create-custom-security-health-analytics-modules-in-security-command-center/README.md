@@ -42,6 +42,7 @@ This gcloud command creates a custom module that checks for the required label o
 
 ```bash
 # Create a custom SHA module to detect instances without cost-center label
+
 gcloud scc custom-modules sha create \
   --organization=123456789 \
   --display-name="missing-cost-center-label" \

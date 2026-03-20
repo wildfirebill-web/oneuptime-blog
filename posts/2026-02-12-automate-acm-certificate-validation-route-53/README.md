@@ -32,6 +32,7 @@ Here's a complete script that automates the entire flow using the AWS CLI.
 ```bash
 #!/bin/bash
 # Fully automated ACM certificate request and validation with Route 53
+
 set -euo pipefail
 
 DOMAIN="app.example.com"

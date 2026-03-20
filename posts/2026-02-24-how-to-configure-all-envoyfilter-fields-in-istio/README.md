@@ -367,6 +367,7 @@ To verify your EnvoyFilter is applied:
 
 ```bash
 # Check the effective Envoy config
+
 istioctl proxy-config listeners <pod-name> -n <namespace> -o json
 
 # Check clusters

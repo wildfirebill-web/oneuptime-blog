@@ -8,7 +8,7 @@ Description: Learn how to manage workspace-specific variable values in OpenTofu 
 
 ## Introduction
 
-OpenTofu workspaces share configuration files but need different values per environment — different instance sizes, replica counts, domain names, or feature flags. Several patterns let you define workspace-specific values while keeping a single configuration.
+OpenTofu workspaces share configuration files but need different values per environment - different instance sizes, replica counts, domain names, or feature flags. Several patterns let you define workspace-specific values while keeping a single configuration.
 
 ## Pattern 1: Lookup Map with terraform.workspace
 
@@ -45,6 +45,7 @@ resource "aws_launch_template" "app" {
 
 ```hcl
 # variables.tf
+
 variable "instance_type"  { type = string }
 variable "min_capacity"    { type = number }
 variable "domain_name"     { type = string }
@@ -141,4 +142,4 @@ resource "aws_cloudfront_distribution" "cdn" {
 
 ## Conclusion
 
-The lookup map pattern is the most concise for workspace-specific values — define all configurations in a single `locals` block and index by `terraform.workspace`. For complex configurations with many variables, separate `.tfvars` files per workspace are more maintainable. Use `coalesce` to allow explicit overrides when needed. Always validate that `terraform.workspace` matches an expected value using a precondition to prevent misconfigurations.
+The lookup map pattern is the most concise for workspace-specific values - define all configurations in a single `locals` block and index by `terraform.workspace`. For complex configurations with many variables, separate `.tfvars` files per workspace are more maintainable. Use `coalesce` to allow explicit overrides when needed. Always validate that `terraform.workspace` matches an expected value using a precondition to prevent misconfigurations.

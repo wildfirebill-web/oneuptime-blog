@@ -46,6 +46,7 @@ Define the base deployment, service, and ingress.
 
 ```yaml
 # apps/api-server/base/deployment.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

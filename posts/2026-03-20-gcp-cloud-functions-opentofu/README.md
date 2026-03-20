@@ -24,6 +24,7 @@ graph LR
 
 ```hcl
 # function.tf
+
 resource "google_storage_bucket" "functions_code" {
   name          = "${var.project_id}-functions-code"
   location      = var.region
@@ -177,8 +178,8 @@ resource "google_cloudfunctions2_function" "private" {
 
 ## Best Practices
 
-- Use Gen 2 (`google_cloudfunctions2_function`) for all new deployments — Gen 2 offers longer timeouts (up to 60 minutes), higher concurrency, and runs on Cloud Run for better observability.
-- Store function code in GCS and upload new zips for each deployment — this provides a version history and makes rollbacks possible.
-- Use `ingress_settings = "ALLOW_INTERNAL_AND_GCLB"` for functions accessed via load balancers — this prevents direct public internet access while allowing Cloud Load Balancing traffic.
-- Attach a dedicated service account to each function with minimal permissions — avoid using the default compute service account, which has broad project-level access.
-- Use VPC Access Connector for functions that need to access private VPC resources (databases, internal APIs) — without it, functions can only reach public internet endpoints.
+- Use Gen 2 (`google_cloudfunctions2_function`) for all new deployments - Gen 2 offers longer timeouts (up to 60 minutes), higher concurrency, and runs on Cloud Run for better observability.
+- Store function code in GCS and upload new zips for each deployment - this provides a version history and makes rollbacks possible.
+- Use `ingress_settings = "ALLOW_INTERNAL_AND_GCLB"` for functions accessed via load balancers - this prevents direct public internet access while allowing Cloud Load Balancing traffic.
+- Attach a dedicated service account to each function with minimal permissions - avoid using the default compute service account, which has broad project-level access.
+- Use VPC Access Connector for functions that need to access private VPC resources (databases, internal APIs) - without it, functions can only reach public internet endpoints.

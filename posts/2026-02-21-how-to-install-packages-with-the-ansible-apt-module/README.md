@@ -16,6 +16,7 @@ The simplest use case is installing a single package. Here is how you install `n
 
 ```yaml
 # Install a single package
+
 - name: Install nginx
   ansible.builtin.apt:
     name: nginx

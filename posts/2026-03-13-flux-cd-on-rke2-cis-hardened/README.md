@@ -25,6 +25,7 @@ Bootstrapping Flux CD on a CIS-hardened RKE2 cluster requires some additional co
 
 ```bash
 # RKE2 CIS profile requires specific kernel parameters
+
 cat >> /etc/sysctl.d/60-rke2-cis.conf << EOF
 vm.panic_on_oom=0
 vm.overcommit_memory=1

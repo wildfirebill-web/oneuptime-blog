@@ -48,6 +48,7 @@ Copy the endpoint and API key.
 
 ```bash
 # Install the Azure Document Intelligence SDK
+
 pip install azure-ai-documentintelligence
 ```
 

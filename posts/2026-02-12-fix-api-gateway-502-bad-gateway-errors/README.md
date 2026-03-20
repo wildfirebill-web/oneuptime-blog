@@ -41,6 +41,7 @@ Key requirements:
 
 ```python
 # WRONG: body is not a string
+
 def lambda_handler(event, context):
     return {
         'statusCode': 200,

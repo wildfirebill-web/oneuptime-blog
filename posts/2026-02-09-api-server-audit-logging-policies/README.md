@@ -38,6 +38,7 @@ Create an audit policy file on each control plane node:
 
 ```yaml
 # /etc/kubernetes/audit-policy.yaml
+
 apiVersion: audit.k8s.io/v1
 kind: Policy
 rules:

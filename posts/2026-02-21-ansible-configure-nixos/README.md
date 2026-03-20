@@ -92,6 +92,7 @@ The Nix configuration template:
 
 ```nix
 # configuration.nix.j2 - NixOS system configuration managed by Ansible
+
 { config, pkgs, ... }:
 
 {

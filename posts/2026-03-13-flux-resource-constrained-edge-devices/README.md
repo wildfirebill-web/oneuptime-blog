@@ -29,6 +29,7 @@ Before optimizing, establish a baseline.
 
 ```bash
 # Check current Flux controller resource usage
+
 kubectl top pods -n flux-system
 
 # Example output (default installation):

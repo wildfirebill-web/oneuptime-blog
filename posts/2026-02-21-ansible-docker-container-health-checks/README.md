@@ -32,6 +32,7 @@ The `docker_container` module accepts a `healthcheck` parameter. Here is a simpl
 
 ```yaml
 # basic_healthcheck.yml - Simple HTTP health check
+
 ---
 - name: Deploy Container with Health Check
   hosts: docker_hosts

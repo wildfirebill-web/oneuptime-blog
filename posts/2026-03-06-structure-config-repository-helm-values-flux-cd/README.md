@@ -66,6 +66,7 @@ Start by defining HelmRepository sources that Flux CD will use to fetch charts.
 
 ```yaml
 # helm/sources/bitnami.yaml
+
 # HelmRepository for Bitnami charts used across the organization
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository

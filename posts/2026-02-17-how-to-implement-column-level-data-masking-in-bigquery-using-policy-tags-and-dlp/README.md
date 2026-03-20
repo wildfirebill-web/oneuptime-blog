@@ -28,6 +28,7 @@ First, create a taxonomy and policy tags for your sensitive data categories:
 
 ```bash
 # Enable required APIs
+
 gcloud services enable datacatalog.googleapis.com
 gcloud services enable bigquerydatapolicy.googleapis.com
 gcloud services enable dlp.googleapis.com

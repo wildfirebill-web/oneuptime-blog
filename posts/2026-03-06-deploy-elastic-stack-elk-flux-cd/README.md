@@ -40,6 +40,7 @@ clusters/
 
 ```yaml
 # clusters/my-cluster/elastic-stack/namespace.yaml
+
 apiVersion: v1
 kind: Namespace
 metadata:

@@ -26,6 +26,7 @@ If a loaded module causes issues:
 
 ```bash
 # Check if a module is in use
+
 lsmod | grep <module-name>
 
 # Unload a module (only if not in use)

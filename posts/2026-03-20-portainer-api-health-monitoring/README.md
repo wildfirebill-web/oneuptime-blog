@@ -20,6 +20,7 @@ Portainer's UI shows container health status visually, but for automated alertin
 
 ```bash
 # Get all containers with their health status
+
 curl -s \
   -H "X-API-Key: your-api-key" \
   "https://portainer.example.com/api/endpoints/1/docker/containers/json?all=true" \

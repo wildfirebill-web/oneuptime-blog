@@ -37,6 +37,7 @@ graph TD
 
 ```bash
 # Typical error message
+
 MongoNetworkError: connect ECONNREFUSED 127.0.0.1:27017
 ```
 

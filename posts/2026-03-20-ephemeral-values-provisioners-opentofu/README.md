@@ -191,6 +191,7 @@ resource "terraform_data" "configure_app" {
 
 ```hcl
 # DO: Use ephemeral values for secrets in provisioners
+
 ephemeral "aws_secretsmanager_secret_version" "secret" {
   secret_id = "myapp/secret"
 }

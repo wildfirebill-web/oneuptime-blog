@@ -25,6 +25,7 @@ The Bitnami Redis Helm chart supports Sentinel mode out of the box. Create an Ar
 
 ```yaml
 # argocd/redis-sentinel.yaml
+
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:

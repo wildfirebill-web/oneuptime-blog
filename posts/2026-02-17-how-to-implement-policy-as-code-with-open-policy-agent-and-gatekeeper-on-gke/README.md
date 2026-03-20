@@ -22,6 +22,7 @@ First, make sure you have a GKE cluster. Then install Gatekeeper using kubectl:
 
 ```bash
 # Install Gatekeeper v3.15 on your GKE cluster
+
 kubectl apply -f https://raw.githubusercontent.com/open-policy-agent/gatekeeper/v3.15.0/deploy/gatekeeper.yaml
 
 # Verify the installation - all pods should be Running

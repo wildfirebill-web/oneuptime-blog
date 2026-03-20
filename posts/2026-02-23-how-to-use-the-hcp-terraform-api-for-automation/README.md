@@ -24,6 +24,7 @@ Here is the basic structure of an API call:
 
 ```bash
 # Basic API call structure
+
 curl \
   --header "Authorization: Bearer $TFC_TOKEN" \
   --header "Content-Type: application/vnd.api+json" \

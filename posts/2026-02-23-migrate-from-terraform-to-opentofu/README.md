@@ -16,6 +16,7 @@ Assess your current Terraform setup:
 
 ```bash
 # Check your Terraform version
+
 terraform version
 
 # List all workspaces

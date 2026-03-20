@@ -148,6 +148,7 @@ Each step in the saga is a Lambda function. Here are the implementations.
 
 ```python
 # Charges the customer and returns the payment transaction ID
+
 import boto3
 import json
 import uuid

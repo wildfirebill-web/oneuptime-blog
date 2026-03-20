@@ -23,6 +23,7 @@ Telecommunications providers are virtualizing network functions through NFV (Net
 
 ```bash
 # Telecom workloads require specific kernel parameters
+
 cat >> /etc/sysctl.conf << 'EOF'
 # Network performance tuning for telecom
 net.core.rmem_max = 134217728

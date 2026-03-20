@@ -18,6 +18,7 @@ The simplest way to define a security group with multiple rules is to put everyt
 
 ```hcl
 # Security group for a web application server
+
 resource "aws_security_group" "web_app" {
   name_prefix = "web-app-"
   description = "Security group for web application servers"

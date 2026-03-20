@@ -32,6 +32,7 @@ Using AWS Backint Agent as an example:
 
 ```bash
 # Download the AWS Backint Agent
+
 cd /tmp
 curl -LO https://s3.amazonaws.com/aws-sap-hana-backup/aws-backint-agent-latest.tar.gz
 

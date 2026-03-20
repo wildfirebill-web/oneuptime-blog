@@ -183,6 +183,7 @@ Python applications face similar issues:
 
 ```python
 # WRONG: Using request context for background tasks
+
 from fastapi import FastAPI, Request, BackgroundTasks
 from opentelemetry import trace
 

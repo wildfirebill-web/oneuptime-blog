@@ -28,6 +28,7 @@ Think of it like nvm for Node.js or pyenv for Python, but for Terraform.
 
 ```bash
 # Install tfenv via Homebrew
+
 brew install tfenv
 ```
 

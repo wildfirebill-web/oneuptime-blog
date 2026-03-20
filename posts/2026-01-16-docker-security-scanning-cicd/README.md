@@ -109,6 +109,7 @@ jobs:
 
 ```yaml
 # .gitlab-ci.yml
+
 stages:
   - build
   - scan

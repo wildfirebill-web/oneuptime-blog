@@ -74,6 +74,7 @@ When you have several related CRDs, group them under a common category. Here's a
 
 ```yaml
 # Application CRD
+
 apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:

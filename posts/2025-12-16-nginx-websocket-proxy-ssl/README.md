@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: NGINX, WebSocket, SSL, TLS, Proxy, Real-Time
+Tags: Nginx, WebSocket, SSL, TLS, Proxy, Real-Time
 
 Description: Learn how to configure Nginx as a secure WebSocket proxy with SSL termination, including connection upgrades, timeouts, load balancing, and troubleshooting common issues.
 
@@ -40,6 +40,7 @@ Start with this minimal configuration:
 # /etc/nginx/sites-available/websocket
 
 # Map for connection upgrade header
+
 map $http_upgrade $connection_upgrade {
     default upgrade;
     ''      close;

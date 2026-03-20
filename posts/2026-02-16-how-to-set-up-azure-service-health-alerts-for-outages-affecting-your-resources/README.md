@@ -84,6 +84,7 @@ First, create an action group:
 
 ```bash
 # Create a resource group for monitoring resources if you don't have one
+
 az group create \
   --name rg-monitoring \
   --location eastus

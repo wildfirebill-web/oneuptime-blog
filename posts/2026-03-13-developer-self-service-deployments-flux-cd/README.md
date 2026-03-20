@@ -41,6 +41,7 @@ Verify the controllers are running:
 ```bash
 flux check
 # ✔ image-reflector-controller: deployment ready
+
 # ✔ image-automation-controller: deployment ready
 ```
 

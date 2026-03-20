@@ -43,6 +43,7 @@ The CronJob needs minimal permissions: list nodes and patch the Typha Deployment
 
 ```yaml
 # typha-autoscaler-rbac.yaml
+
 # RBAC resources for the Typha autoscaler CronJob
 apiVersion: v1
 kind: ServiceAccount

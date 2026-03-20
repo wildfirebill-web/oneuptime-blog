@@ -14,6 +14,7 @@ TLS termination means the load balancer (HAProxy) handles the TLS encryption/dec
 
 ```bash
 # Install HAProxy (Ubuntu/Debian)
+
 sudo apt-get install -y haproxy
 
 # Verify version (2.4+ recommended for TLS 1.3)
@@ -35,7 +36,7 @@ chown haproxy:haproxy /etc/haproxy/certs/example.com.pem
 
 ## Step 3: Configure HAProxy for TLS Termination
 
-```
+```text
 # /etc/haproxy/haproxy.cfg
 
 global
@@ -104,7 +105,7 @@ backend web_servers
 
 ## Step 4: Enable HAProxy Stats (Optional)
 
-```
+```text
 #------------------------------------------------------
 # Stats Page
 #------------------------------------------------------
@@ -144,7 +145,7 @@ ls /etc/haproxy/certs/
 
 Reference the directory in the bind directive:
 
-```
+```text
 frontend https_frontend
     bind *:443 ssl crt /etc/haproxy/certs/ alpn h2,http/1.1
 ```

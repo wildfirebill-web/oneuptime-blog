@@ -79,6 +79,7 @@ High Severity Incident Created
 Title: @{triggerBody()?['object']?['properties']?['title']}
 Severity: @{triggerBody()?['object']?['properties']?['severity']}
 Description: @{triggerBody()?['object']?['properties']?['description']}
+
 Incident URL: @{triggerBody()?['object']?['properties']?['incidentUrl']}
 
 Entities:
@@ -93,6 +94,7 @@ The playbook's managed identity needs permissions to interact with Sentinel and 
 
 ```powershell
 # Get the playbook's managed identity
+
 $logicApp = Get-AzResource -Name "Notify-Teams-HighSeverity" -ResourceType "Microsoft.Logic/workflows"
 $principalId = (Get-AzADServicePrincipal -DisplayName "Notify-Teams-HighSeverity").Id
 

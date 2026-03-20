@@ -91,6 +91,7 @@ Create the IP pool that MetalLB will allocate from when services request a LoadB
 
 ```yaml
 # ip-address-pool.yaml
+
 # Defines the range of IPs available for Kubernetes LoadBalancer services
 apiVersion: metallb.io/v1beta1
 kind: IPAddressPool

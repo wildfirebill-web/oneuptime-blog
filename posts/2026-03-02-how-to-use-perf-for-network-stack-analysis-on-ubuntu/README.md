@@ -20,6 +20,7 @@ Description: Learn how to use the Linux perf tool on Ubuntu to profile and analy
 
 ```bash
 # Install perf for the current kernel
+
 sudo apt update
 sudo apt install -y linux-tools-common linux-tools-$(uname -r) linux-tools-generic
 

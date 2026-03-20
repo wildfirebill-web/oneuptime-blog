@@ -203,6 +203,7 @@ set -e
 echo "=== Blue-Green Cutover ==="
 
 # Verify green is healthy
+
 echo "Checking green deployment health..."
 READY_REPLICAS=$(kubectl get deployment green-deployment \
   -o jsonpath='{.status.readyReplicas}')

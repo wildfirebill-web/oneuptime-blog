@@ -228,6 +228,7 @@ Scale different worker deployments for different queues.
 
 ```yaml
 # High-priority queue workers
+
 apiVersion: keda.sh/v1alpha1
 kind: ScaledObject
 metadata:

@@ -12,6 +12,7 @@ ELB access logs capture detailed request information including client IP, reques
 
 ```hcl
 # S3 bucket to store ALB access logs
+
 resource "aws_s3_bucket" "alb_logs" {
   bucket = "alb-access-logs-${data.aws_caller_identity.current.account_id}"
 }

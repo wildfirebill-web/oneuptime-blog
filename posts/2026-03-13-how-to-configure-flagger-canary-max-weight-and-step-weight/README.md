@@ -230,6 +230,7 @@ Monitor the current canary weight during a rollout:
 
 ```bash
 # Check current weight
+
 kubectl get canary api-server -n production \
   -o jsonpath='{.status.canaryWeight}'
 

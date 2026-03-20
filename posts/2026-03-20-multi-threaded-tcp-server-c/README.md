@@ -149,4 +149,4 @@ int main(void) {
 
 ## Conclusion
 
-Multi-threaded TCP servers in C use `pthread_create` to spawn a thread per accepted connection. Pass client data via a heap-allocated struct (not stack!) to avoid race conditions from variable reuse in the accept loop. Call `pthread_detach` to release thread resources automatically when the handler returns. Use a semaphore to cap concurrent threads and prevent resource exhaustion under load. Always `free` the argument struct inside the thread function — not in the main loop, since the thread is running concurrently.
+Multi-threaded TCP servers in C use `pthread_create` to spawn a thread per accepted connection. Pass client data via a heap-allocated struct (not stack!) to avoid race conditions from variable reuse in the accept loop. Call `pthread_detach` to release thread resources automatically when the handler returns. Use a semaphore to cap concurrent threads and prevent resource exhaustion under load. Always `free` the argument struct inside the thread function - not in the main loop, since the thread is running concurrently.

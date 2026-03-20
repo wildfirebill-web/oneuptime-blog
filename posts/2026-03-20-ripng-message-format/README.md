@@ -14,7 +14,7 @@ RIPng messages are sent via UDP over IPv6. Understanding the message format help
 
 A RIPng message consists of a fixed header followed by one or more Route Table Entries (RTEs):
 
-```
+```text
  0                   1                   2                   3
  0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
 +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
@@ -51,7 +51,7 @@ A RIPng message consists of a fixed header followed by one or more Route Table E
 
 When a router needs to specify a next hop other than the message sender, it uses a special RTE:
 
-```
+```text
 If Metric = 0xFF (255):
   - The IPv6 Prefix field contains the next-hop address
   - Prefix Length = 0
@@ -63,6 +63,7 @@ If Metric = 0xFF (255):
 
 ```bash
 # Capture RIPng traffic (UDP port 521)
+
 sudo tcpdump -i eth0 -n -v "udp port 521"
 
 # Example output:
@@ -104,7 +105,7 @@ sudo tcpdump -i eth0 -n "udp port 521 and ip6[48] == 1"
 
 Each RIPng message can carry a maximum of 25 RTEs per packet. For larger routing tables, multiple messages are sent:
 
-```
+```text
 Maximum packet size for 25 RTEs:
 Header: 4 bytes
 25 × RTE: 25 × 20 bytes = 500 bytes

@@ -32,6 +32,7 @@ Define your standard Istio resources as a base:
 
 ```yaml
 # base/virtual-service.yaml
+
 apiVersion: networking.istio.io/v1
 kind: VirtualService
 metadata:

@@ -8,27 +8,28 @@ Description: Configure a 6to4 tunnel to provide IPv6 connectivity over an IPv4 n
 
 ## Introduction
 
-6to4 (RFC 3056) automatically derives an IPv6 address from an existing public IPv4 address using the 2002::/16 prefix. An IPv4 address of a.b.c.d becomes the IPv6 prefix `2002:aabb:ccdd::/48`. 6to4 requires a public IPv4 address — it does not work behind NAT.
+6to4 (RFC 3056) automatically derives an IPv6 address from an existing public IPv4 address using the 2002::/16 prefix. An IPv4 address of a.b.c.d becomes the IPv6 prefix `2002:aabb:ccdd::/48`. 6to4 requires a public IPv4 address - it does not work behind NAT.
 
 ## Address Derivation
 
-```
+```text
 IPv4 address: 203.0.113.10
 Hex: cb.00.71.0a
 6to4 prefix: 2002:cb00:710a::/48
 
 IPv4: 10.0.0.5
 Hex: 0a.00.00.05
-6to4 prefix: 2002:0a00:0005::/48  (private — DON'T use 6to4 with private IPs!)
+6to4 prefix: 2002:0a00:0005::/48  (private - DON'T use 6to4 with private IPs!)
 ```
 
 ## Checking Prerequisites
 
 ```bash
 # 6to4 requires a public IPv4 address (not RFC1918)
+
 # Check your public IP
 curl -4 https://ifconfig.me
-# If result is 10.x, 172.16-31.x, or 192.168.x — 6to4 will NOT work
+# If result is 10.x, 172.16-31.x, or 192.168.x - 6to4 will NOT work
 
 # Check if 6to4 module is available
 modprobe sit

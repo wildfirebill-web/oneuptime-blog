@@ -68,6 +68,7 @@ Before switching, document the current configuration:
 
 ```bash
 # Save current policies
+
 kubectl get authorizationpolicy -n target-namespace -o yaml > auth-policies-backup.yaml
 kubectl get peerauthentication -n target-namespace -o yaml > peer-auth-backup.yaml
 kubectl get virtualservice -n target-namespace -o yaml > virtualservice-backup.yaml

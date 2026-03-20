@@ -18,6 +18,7 @@ You need Docker and the Python packages for Molecule:
 
 ```bash
 # Install Docker (Ubuntu)
+
 sudo apt-get update
 sudo apt-get install -y docker.io
 sudo usermod -aG docker $USER

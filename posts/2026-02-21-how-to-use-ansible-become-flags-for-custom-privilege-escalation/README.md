@@ -18,6 +18,7 @@ When Ansible escalates privileges, it constructs a command like this:
 
 ```bash
 # Default sudo command Ansible generates:
+
 sudo -H -S -n -u root /bin/bash -c 'the_actual_command'
 ```
 

@@ -43,6 +43,7 @@ SAST analyzes source code without executing it, finding vulnerabilities early in
 
 ```python
 # Install bandit for Python security scanning
+
 # pip install bandit
 
 # Example vulnerable code that bandit would flag

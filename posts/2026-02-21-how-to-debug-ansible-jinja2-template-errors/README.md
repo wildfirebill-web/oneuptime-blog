@@ -37,6 +37,7 @@ AnsibleUndefinedVariable: 'database_host' is undefined
 
 ```yaml
 # Step 1: Check if the variable exists at all
+
 - name: Show all defined variables
   ansible.builtin.debug:
     var: vars.keys() | list | sort

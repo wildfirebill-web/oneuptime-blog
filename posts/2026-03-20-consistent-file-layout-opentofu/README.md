@@ -2,17 +2,17 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, File Layout, Best Practices, Infrastructure as Code, Organization, Team Collaboration
+Tags: OpenTofu, File Layout, Best Practices, Infrastructure as Code, Organizations, Team Collaboration
 
-Description: Learn the standard file layout for OpenTofu configurations and modules — what goes in each file and why — so every team member knows exactly where to find and add code.
+Description: Learn the standard file layout for OpenTofu configurations and modules - what goes in each file and why - so every team member knows exactly where to find and add code.
 
 ## Introduction
 
-A consistent file layout means every OpenTofu practitioner on your team knows exactly where variable declarations live, where to add a new resource, and where outputs are defined — without reading the entire configuration. This guide defines the standard layout and explains the rationale behind each file.
+A consistent file layout means every OpenTofu practitioner on your team knows exactly where variable declarations live, where to add a new resource, and where outputs are defined - without reading the entire configuration. This guide defines the standard layout and explains the rationale behind each file.
 
 ## Standard Root Configuration Layout
 
-```
+```text
 environment/prod/
 ├── main.tf          # Resource declarations and module calls
 ├── variables.tf     # Input variable declarations
@@ -30,8 +30,9 @@ environment/prod/
 ### main.tf
 
 ```hcl
-# main.tf — resource blocks and module calls
-# The primary file — where the infrastructure is defined
+# main.tf - resource blocks and module calls
+
+# The primary file - where the infrastructure is defined
 
 module "networking" {
   source      = "../../modules/networking"
@@ -48,7 +49,7 @@ resource "aws_ecs_cluster" "main" {
 ### variables.tf
 
 ```hcl
-# variables.tf — ONLY variable declarations, no default values with secrets
+# variables.tf - ONLY variable declarations, no default values with secrets
 variable "vpc_cidr" {
   type        = string
   description = "CIDR block for the VPC"
@@ -64,7 +65,7 @@ variable "environment" {
 ### locals.tf
 
 ```hcl
-# locals.tf — computed values derived from variables
+# locals.tf - computed values derived from variables
 locals {
   environment = var.environment
   name_prefix = "${var.company}-${var.environment}"
@@ -79,7 +80,7 @@ locals {
 ### data.tf
 
 ```hcl
-# data.tf — all data sources in one place
+# data.tf - all data sources in one place
 data "aws_availability_zones" "available" {
   state = "available"
 }
@@ -99,7 +100,7 @@ data "aws_ami" "amazon_linux" {
 ### outputs.tf
 
 ```hcl
-# outputs.tf — all outputs in one place
+# outputs.tf - all outputs in one place
 output "vpc_id" {
   description = "ID of the VPC"
   value       = module.networking.vpc_id
@@ -113,7 +114,7 @@ output "cluster_arn" {
 
 ## Module File Layout
 
-```
+```text
 modules/networking/
 ├── main.tf       # Resource definitions
 ├── variables.tf  # Input variable declarations
@@ -124,20 +125,20 @@ modules/networking/
 ## terraform.tfvars vs variables.tf
 
 ```hcl
-# variables.tf — DECLARATIONS (committed to version control)
+# variables.tf - DECLARATIONS (committed to version control)
 variable "instance_type" {
   type    = string
   default = "t3.medium"
 }
 
-# terraform.tfvars — VALUES (committed if non-sensitive)
+# terraform.tfvars - VALUES (committed if non-sensitive)
 instance_type = "t3.medium"
 vpc_cidr      = "10.0.0.0/16"
 environment   = "prod"
 ```
 
 ```bash
-# .gitignore — exclude files with real secrets
+# .gitignore - exclude files with real secrets
 *.tfvars
 !example.tfvars    # Commit only the example with placeholder values
 ```

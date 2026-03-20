@@ -31,6 +31,7 @@ Before starting, enable the required APIs and set up Artifact Registry:
 
 ```bash
 # Enable the required GCP APIs
+
 gcloud services enable \
   cloudbuild.googleapis.com \
   artifactregistry.googleapis.com \

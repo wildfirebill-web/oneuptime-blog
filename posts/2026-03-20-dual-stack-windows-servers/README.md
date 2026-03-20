@@ -14,6 +14,7 @@ Windows Server supports dual-stack natively. Both IPv4 and IPv6 stacks are insta
 
 ```powershell
 # Show all IP addresses
+
 Get-NetIPAddress | Select-Object InterfaceAlias, AddressFamily, IPAddress, PrefixLength
 
 # Show routes for both families
@@ -99,7 +100,7 @@ Get-NetIPConfiguration -InterfaceAlias "Ethernet"
 # IPv6DefaultGateway   : 2001:db8::1
 # DNSServer            : 192.0.2.53, 2001:db8::53
 
-# Resolve hostname — should show A and AAAA
+# Resolve hostname - should show A and AAAA
 Resolve-DnsName example.com | Select-Object Name, Type, IPAddress
 
 # Traceroute via IPv6
@@ -125,7 +126,7 @@ netsh interface ipv6 show prefixpolicies
 #     30       2      2002::/16        (6to4)
 #      5      5      2001::/32        (Teredo)
 
-# Force IPv4 preference (not recommended — workaround for broken IPv6)
+# Force IPv4 preference (not recommended - workaround for broken IPv6)
 netsh interface ipv6 set prefixpolicy ::ffff:0:0/96 100 4
 ```
 
@@ -184,4 +185,4 @@ netstat -an | findstr "LISTENING" | findstr ":::"
 
 ## Summary
 
-Windows Server dual-stack uses `New-NetIPAddress` for static addressing of both families, with `Set-DnsClientServerAddress` for DNS. Disable tunneling mechanisms (6to4, Teredo, ISATAP) to avoid accidental IPv6 bypass paths. Windows prefers IPv6 by default per RFC 6724 — override only if IPv6 is broken, not as a permanent configuration. Ensure firewall rules cover both address families and verify applications listen on `:::port` for IPv6 alongside `0.0.0.0:port` for IPv4.
+Windows Server dual-stack uses `New-NetIPAddress` for static addressing of both families, with `Set-DnsClientServerAddress` for DNS. Disable tunneling mechanisms (6to4, Teredo, ISATAP) to avoid accidental IPv6 bypass paths. Windows prefers IPv6 by default per RFC 6724 - override only if IPv6 is broken, not as a permanent configuration. Ensure firewall rules cover both address families and verify applications listen on `:::port` for IPv6 alongside `0.0.0.0:port` for IPv4.

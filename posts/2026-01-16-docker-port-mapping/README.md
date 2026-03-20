@@ -29,6 +29,7 @@ The bridge network creates an isolated network where containers get their own IP
 
 ```bash
 # Publish container port 80 to host port 8080
+
 docker run -p 8080:80 nginx
 
 # Syntax: -p [host_ip:]host_port:container_port[/protocol]

@@ -91,6 +91,7 @@ Create a new panel and select the Stat visualization type:
 
 ```yaml
 # Panel Configuration
+
 Panel Type: Stat
 Data Source: Prometheus (or your preferred source)
 

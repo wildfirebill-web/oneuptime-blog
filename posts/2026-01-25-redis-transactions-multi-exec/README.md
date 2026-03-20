@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Redis, Transactions, MULTI, EXEC, Watch, Atomicity, Concurrency
+Tags: Redis, Transactions, MULTI, Exec, Watch, Atomicity, Concurrency
 
 Description: Learn how to use Redis transactions with MULTI/EXEC to execute multiple commands atomically.
 
@@ -24,6 +24,7 @@ A Redis transaction consists of three stages:
 
 ```bash
 # Start a transaction
+
 MULTI
 
 # Queue commands (these return "QUEUED", not results)

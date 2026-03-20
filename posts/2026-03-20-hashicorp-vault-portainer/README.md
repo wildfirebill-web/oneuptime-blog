@@ -17,7 +17,8 @@ HashiCorp Vault is the gold standard for secrets management in containerized env
 Start with a development Vault instance to learn the workflow, then harden it for production.
 
 ```yaml
-# vault-stack.yml — HashiCorp Vault deployment
+# vault-stack.yml - HashiCorp Vault deployment
+
 version: "3.8"
 
 services:
@@ -28,7 +29,7 @@ services:
     ports:
       - "8200:8200"
     environment:
-      VAULT_DEV_ROOT_TOKEN_ID: "root-dev-token"    # dev mode only — change for production
+      VAULT_DEV_ROOT_TOKEN_ID: "root-dev-token"    # dev mode only - change for production
       VAULT_DEV_LISTEN_ADDRESS: "0.0.0.0:8200"
       VAULT_ADDR: "http://0.0.0.0:8200"
     cap_add:
@@ -75,7 +76,7 @@ vault kv get secret/myapp/config
 Vault policies control what secrets each application can access.
 
 ```hcl
-# myapp-policy.hcl — grant read-only access to myapp secrets
+# myapp-policy.hcl - grant read-only access to myapp secrets
 path "secret/data/myapp/*" {
   capabilities = ["read", "list"]
 }
@@ -112,7 +113,7 @@ vault write -f auth/approle/role/myapp/secret-id
 Use the Vault Agent sidecar to fetch and inject secrets into your application.
 
 ```yaml
-# app-with-vault-stack.yml — app with Vault Agent sidecar
+# app-with-vault-stack.yml - app with Vault Agent sidecar
 version: "3.8"
 
 services:
@@ -143,10 +144,10 @@ volumes:
 
 ---
 
-## Step 5: Python Example — Fetch Secrets Directly from Vault
+## Step 5: Python Example - Fetch Secrets Directly from Vault
 
 ```python
-# vault_secrets.py — fetch secrets using the hvac Python client
+# vault_secrets.py - fetch secrets using the hvac Python client
 import hvac
 
 def get_vault_secrets(vault_url: str, token: str, secret_path: str) -> dict:

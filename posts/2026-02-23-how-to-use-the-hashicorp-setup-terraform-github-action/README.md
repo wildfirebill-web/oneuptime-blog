@@ -18,6 +18,7 @@ At its simplest, the action installs a specific version of Terraform:
 
 ```yaml
 # .github/workflows/terraform.yml
+
 name: Terraform
 
 on:
@@ -93,7 +94,7 @@ By default, the action installs a wrapper script around the Terraform binary. Th
 
 This is incredibly useful for workflows that need to process Terraform output:
 
-```yaml
+````yaml
 steps:
   - uses: hashicorp/setup-terraform@v3
 
@@ -112,9 +113,9 @@ steps:
     with:
       script: |
         const output = `#### Terraform Plan
-        \`\`\`
+        ```
         ${{ steps.plan.outputs.stdout }}
-        \`\`\`
+        ```
         *Exit code: ${{ steps.plan.outputs.exitcode }}*`;
 
         github.rest.issues.createComment({
@@ -123,7 +124,7 @@ steps:
           repo: context.repo.repo,
           body: output
         });
-```
+````
 
 ### When to Disable the Wrapper
 
@@ -264,7 +265,7 @@ steps:
 
 Terraform plan output can contain sensitive values. Handle it carefully in PR comments:
 
-```yaml
+````yaml
 - name: Terraform Plan
   id: plan
   run: terraform plan -no-color -input=false
@@ -288,9 +289,9 @@ Terraform plan output can contain sensitive values. Handle it carefully in PR co
       <details>
       <summary>Click to expand</summary>
 
-      \`\`\`terraform
+      ```terraform
       ${plan}
-      \`\`\`
+      ```
 
       </details>
 
@@ -342,7 +343,7 @@ For organizations with many repositories, concurrent runs may hit API rate limit
 concurrency:
   group: terraform-${{ github.ref }}
   cancel-in-progress: false
-```
+````
 
 ## Conclusion
 

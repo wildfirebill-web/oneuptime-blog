@@ -76,6 +76,7 @@ Before switching, find out what external services your workloads are calling. En
 
 ```bash
 # Enable access logs if not already enabled
+
 kubectl edit configmap istio -n istio-system
 # Add: accessLogFile: /dev/stdout
 ```

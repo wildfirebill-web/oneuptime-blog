@@ -16,7 +16,7 @@ Managing hundreds or thousands of edge devices with Portainer requires operation
 
 Organize devices into groups that reflect your operational reality:
 
-```
+```text
 Geographic groups:
   - na-us-west
   - na-us-east
@@ -38,7 +38,7 @@ Combined tags:
 
 Give each device a unique, meaningful ID that encodes its location and type:
 
-```
+```text
 Format: <site>-<type>-<number>
 Examples:
   - chicago-factory-001
@@ -52,7 +52,7 @@ Examples:
 
 Never deploy to your entire fleet at once:
 
-```
+```text
 Phase 1: Canary (5% of devices)  → Monitor for 24 hours
 Phase 2: Pilot (20% of devices)  → Monitor for 48 hours
 Phase 3: Full rollout (100%)     → Deploy remaining
@@ -75,15 +75,16 @@ Design applications to operate fully when disconnected from Portainer:
 
 ```yaml
 # Always use restart: always for edge containers
+
 services:
   data-collector:
-    image: myregistry/collector:1.2.3    # Pin version — no pull needed when offline
+    image: myregistry/collector:1.2.3    # Pin version - no pull needed when offline
     restart: always                        # Restart even without Portainer connectivity
     environment:
       - OFFLINE_BUFFER_HOURS=72           # Buffer 72 hours of data locally
 ```
 
-The edge device operates independently of the Portainer server — Portainer is only needed for management operations (deployment, log viewing, remote console).
+The edge device operates independently of the Portainer server - Portainer is only needed for management operations (deployment, log viewing, remote console).
 
 ## Security Hardening
 
@@ -116,7 +117,7 @@ services:
       # Only this container has socket access
 
   data-collector:
-    # No Docker socket — this container cannot manage other containers
+    # No Docker socket - this container cannot manage other containers
     image: myregistry/collector:1.2.3
 ```
 
@@ -134,7 +135,7 @@ Script edge device provisioning for consistency:
 
 ```bash
 #!/bin/bash
-# edge-provision.sh — run this on each new edge device
+# edge-provision.sh - run this on each new edge device
 
 set -euo pipefail
 
@@ -166,4 +167,4 @@ echo "Device $DEVICE_ID provisioned and connected to Portainer"
 
 ## Summary
 
-Effective edge device management in Portainer requires thoughtful device grouping, staged update rollouts, offline-capable application design, security hardening, and automated provisioning. Invest in these practices before your fleet grows — retrofitting operational discipline into a large fleet is significantly harder than building it from the start.
+Effective edge device management in Portainer requires thoughtful device grouping, staged update rollouts, offline-capable application design, security hardening, and automated provisioning. Invest in these practices before your fleet grows - retrofitting operational discipline into a large fleet is significantly harder than building it from the start.

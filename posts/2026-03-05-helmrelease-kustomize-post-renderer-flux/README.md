@@ -372,6 +372,7 @@ Check the HelmRelease status for post-renderer errors:
 
 ```bash
 # Check for errors in the HelmRelease status
+
 kubectl get helmrelease my-application -n default -o yaml | grep -A 10 "conditions"
 
 # View Helm controller logs for post-renderer processing details

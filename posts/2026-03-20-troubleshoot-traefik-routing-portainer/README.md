@@ -1,4 +1,4 @@
-# How to Troubleshoot Traefik Routing Issues with Portainer
+# How to Troubleshoot Traefik Routing Issues with Portainer - Part 3
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -77,6 +77,7 @@ Check that the entrypoint in the label matches a configured entrypoint:
 ```bash
 docker inspect traefik | grep -A5 "Cmd"
 # Look for: --entrypoints.websecure.address=:443
+
 ```
 
 ## Step 6: Rule Syntax Issues

@@ -28,6 +28,7 @@ On all nodes, configure consistent hostname resolution:
 
 ```bash
 # On each node, set the appropriate hostname
+
 # On head-node:
 sudo hostnamectl set-hostname head-node
 

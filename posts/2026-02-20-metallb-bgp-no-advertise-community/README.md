@@ -64,6 +64,7 @@ Define the pool of service IPs that MetalLB can allocate.
 
 ```yaml
 # IPAddressPool defines the range of IPs for LoadBalancer services
+
 # These IPs will be announced via BGP with the no-advertise community
 apiVersion: metallb.io/v1beta1
 kind: IPAddressPool

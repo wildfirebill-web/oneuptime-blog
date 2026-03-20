@@ -59,7 +59,7 @@ Click on the template you want to deploy. A configuration panel expands below th
 
 For this example, we will deploy **MySQL**:
 
-```
+```text
 Template: MySQL
 Image:    mysql:8
 ```
@@ -70,13 +70,13 @@ Fill in the configuration fields:
 
 ### Basic Settings
 
-```
+```text
 Name:     my-mysql          # Unique container name on this host
 ```
 
 ### Port Mappings
 
-```
+```text
 3306 → 3306    # Map MySQL port (change host port if needed)
 ```
 
@@ -84,7 +84,7 @@ Name:     my-mysql          # Unique container name on this host
 
 The template pre-populates common MySQL variables:
 
-```
+```text
 MYSQL_ROOT_PASSWORD:  [enter-secure-password]
 MYSQL_DATABASE:       mydb
 MYSQL_USER:           myuser
@@ -93,21 +93,21 @@ MYSQL_PASSWORD:       [enter-secure-password]
 
 ### Volume Configuration
 
-```
+```text
 /var/lib/mysql → /data/mysql    # Persist data to host path
 ```
 
-Or use a named volume by leaving the host path blank — Portainer creates a named volume automatically.
+Or use a named volume by leaving the host path blank - Portainer creates a named volume automatically.
 
 ### Network
 
-```
+```sql
 Network: bridge    # Default; or select a custom network
 ```
 
 ### Restart Policy
 
-```
+```text
 Restart policy: Unless stopped    # Restart unless manually stopped
 ```
 
@@ -115,12 +115,12 @@ Restart policy: Unless stopped    # Restart unless manually stopped
 
 Expand the **Advanced options** section for:
 
-- **Labels** — Add Docker labels for organization or proxy routing
-- **CPU limit** — Constrain CPU usage
-- **Memory limit** — Set memory limits (e.g., 512m)
-- **Privileged mode** — Run with extended privileges (use with caution)
+- **Labels** - Add Docker labels for organization or proxy routing
+- **CPU limit** - Constrain CPU usage
+- **Memory limit** - Set memory limits (e.g., 512m)
+- **Privileged mode** - Run with extended privileges (use with caution)
 
-```
+```text
 Memory limit: 512m
 CPU limit:    0.5
 ```
@@ -138,7 +138,7 @@ CPU limit:    0.5
 2. Click the container name to view details
 3. Check the **Logs** tab for startup messages:
 
-```
+```text
 2024-01-15T10:00:00 [Note] MySQL init process done. Ready for start up.
 2024-01-15T10:00:01 [Note] mysqld: ready for connections.
 ```
@@ -147,6 +147,7 @@ CPU limit:    0.5
 
 ```bash
 # Connect to MySQL from another container
+
 docker exec -it my-mysql mysql -u root -p
 
 # Or test the port from the host

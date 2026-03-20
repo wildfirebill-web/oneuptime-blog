@@ -17,6 +17,7 @@ Description: Learn how to diagnose and fix ARP resolution failures that prevent 
 
 ```bash
 # Look for FAILED or INCOMPLETE entries
+
 ip neigh show
 
 # Example of a failed entry:

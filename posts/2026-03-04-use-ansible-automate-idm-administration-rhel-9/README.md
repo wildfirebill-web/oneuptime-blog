@@ -28,6 +28,7 @@ ansible-galaxy collection install freeipa.ansible_freeipa
 
 ```ini
 # inventory/hosts
+
 [ipaserver]
 idm1.example.com
 

@@ -24,6 +24,7 @@ Install the Okteto CLI:
 
 ```bash
 # macOS
+
 brew install okteto/cli/okteto
 
 # Linux

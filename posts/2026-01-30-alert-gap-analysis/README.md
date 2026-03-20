@@ -56,6 +56,7 @@ Create a matrix that maps every service to its associated alerts. This reveals s
 
 ```yaml
 # service-alert-inventory.yaml
+
 services:
   - name: payment-api
     tier: critical

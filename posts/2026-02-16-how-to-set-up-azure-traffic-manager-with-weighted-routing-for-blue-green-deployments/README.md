@@ -35,6 +35,7 @@ This is not exact because it is DNS-based. The actual traffic split depends on D
 
 ```bash
 # Create a Traffic Manager profile with weighted routing
+
 az network traffic-manager profile create \
   --resource-group myResourceGroup \
   --name blueGreenProfile \

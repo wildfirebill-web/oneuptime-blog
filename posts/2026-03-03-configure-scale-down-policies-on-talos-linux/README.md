@@ -35,6 +35,7 @@ The `behavior` field in the HPA spec gives you fine-grained control over scaling
 
 ```yaml
 # hpa-with-scaledown.yaml
+
 apiVersion: autoscaling/v2
 kind: HorizontalPodAutoscaler
 metadata:

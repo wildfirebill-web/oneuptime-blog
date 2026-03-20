@@ -39,6 +39,7 @@ Build an assessment playbook that checks for common debt indicators:
 
 ```yaml
 # playbooks/assess-technical-debt.yml
+
 # Scan infrastructure for technical debt indicators
 - name: Assess technical debt
   hosts: all

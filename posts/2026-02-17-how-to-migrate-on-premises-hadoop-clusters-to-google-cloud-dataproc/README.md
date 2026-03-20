@@ -26,6 +26,7 @@ Before migrating anything, catalog your current Hadoop environment:
 
 ```bash
 # List all HDFS data directories and their sizes
+
 hdfs dfs -du -s -h /user/*
 hdfs dfs -du -s -h /data/*
 

@@ -14,6 +14,7 @@ An AWS VPC is the foundational IPv4 networking construct in AWS. Terraform's `aw
 
 ```hcl
 # provider.tf
+
 terraform {
   required_providers {
     aws = {

@@ -23,6 +23,7 @@ Install kops:
 
 ```bash
 # macOS
+
 brew install kops
 
 # Linux

@@ -35,6 +35,7 @@ Start with a basic workflow that runs tests on every push and pull request.
 
 ```yaml
 # .github/workflows/ci.yml
+
 name: CI Pipeline
 
 # Define what triggers this workflow

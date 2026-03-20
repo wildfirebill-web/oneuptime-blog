@@ -55,6 +55,7 @@ Create a comprehensive schema for service metadata.
 
 ```yaml
 # service-catalog-schema.yaml
+
 type: object
 required:
   - name

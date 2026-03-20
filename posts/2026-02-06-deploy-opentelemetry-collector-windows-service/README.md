@@ -23,6 +23,7 @@ First, download the OpenTelemetry Collector binary for Windows. The OpenTelemetr
 
 ```powershell
 # Create installation directory
+
 New-Item -ItemType Directory -Path "C:\Program Files\OpenTelemetry Collector" -Force
 
 # Download the latest Collector binary (replace version as needed)

@@ -69,6 +69,7 @@ Apply a deny-all policy in each tenant namespace, then allow only intra-tenant t
 
 ```yaml
 # Deny all traffic by default
+
 apiVersion: security.istio.io/v1
 kind: AuthorizationPolicy
 metadata:
@@ -345,7 +346,7 @@ spec:
 
 Acme can't reach PayPal, and Globex can't reach Stripe. Each tenant's external dependencies are isolated.
 
-## Resource Quotas for Tenants
+Resource Quotas for Tenants
 
 Istio policies don't limit compute resources. Combine them with Kubernetes resource quotas:
 

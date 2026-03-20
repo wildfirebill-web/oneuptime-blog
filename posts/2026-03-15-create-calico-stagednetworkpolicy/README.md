@@ -162,6 +162,7 @@ If the selector syntax is invalid, remember that Calico uses its own selector sy
 
 ```bash
 # Correct Calico selector syntax
+
 selector: app == 'api-server' && version == 'v2'
 ```
 

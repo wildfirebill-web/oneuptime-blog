@@ -10,6 +10,7 @@ Description: Using tcpdump to capture DHCP traffic reveals the complete DORA exc
 
 ```bash
 # Capture all DHCP traffic (UDP 67 and 68) on eth0
+
 sudo tcpdump -i eth0 -n 'port 67 or port 68'
 
 # With verbose output (shows DHCP options)
@@ -22,7 +23,7 @@ sudo tcpdump -i eth0 -n 'port 67 or port 68' -w /tmp/dhcp.pcap
 ## Reading the Capture
 
 Sample verbose output:
-```
+```text
 12:01:01 IP 0.0.0.0.68 > 255.255.255.255.67: BOOTP/DHCP, Request
     DHCP Message Type: DHCP Discover (1)
     Client Ethernet: aa:bb:cc:dd:ee:ff
@@ -91,11 +92,11 @@ for pkt in pcap:
 | Discover + Offer + no ACK | Firewall blocking port 68 responses |
 | Discover + NAK | Client requesting IP from wrong subnet |
 | Multiple Offers | Rogue DHCP server present |
-| Discover with 0.0.0.0 src | Normal — client has no IP yet |
+| Discover with 0.0.0.0 src | Normal - client has no IP yet |
 
 ## Key Takeaways
 
 - `sudo tcpdump -i eth0 -v 'port 67 or port 68'` is the fastest diagnostic for DHCP issues.
 - Seeing only Discovers with no Offers means the server is unreachable or the pool is exhausted.
-- Multiple DHCP Offers indicate a rogue server — investigate immediately.
+- Multiple DHCP Offers indicate a rogue server - investigate immediately.
 - Use `-w /tmp/dhcp.pcap` to save captures for later Wireshark analysis.

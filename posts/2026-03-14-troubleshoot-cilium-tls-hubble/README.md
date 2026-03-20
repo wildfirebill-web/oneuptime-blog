@@ -29,6 +29,7 @@ Start by checking the current state of Hubble TLS certificates:
 
 ```bash
 # Check if TLS secrets exist
+
 kubectl -n kube-system get secrets | grep hubble
 
 # Expected secrets:

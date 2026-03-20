@@ -235,6 +235,7 @@ For production deployments, you should use managed federation with Apollo Studio
 
 ```bash
 # Install Rover CLI
+
 npm install -g @apollo/rover
 
 # Compose your supergraph schema from subgraph schemas

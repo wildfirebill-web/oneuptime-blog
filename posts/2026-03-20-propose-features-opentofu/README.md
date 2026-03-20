@@ -14,6 +14,7 @@ OpenTofu is community-driven and welcomes feature proposals. However, a well-str
 
 ```bash
 # 1. Search existing issues and discussions to avoid duplicates
+
 # https://github.com/opentofu/opentofu/issues
 # https://github.com/opentofu/opentofu/discussions
 
@@ -83,7 +84,7 @@ requiring a module instance per account.
 ### Community Interest
 This is tracked in the OpenTofu community forum with 47 upvotes:
 [link to forum post]
-```
+```text
 
 ## Writing an RFC for Large Features
 

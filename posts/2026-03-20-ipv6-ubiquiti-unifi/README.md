@@ -57,6 +57,7 @@ SSH into the UniFi Gateway (USG or UDM/UDM-Pro):
 
 ```bash
 # Show IPv6 addresses on all interfaces
+
 show interfaces detail | grep -A3 inet6
 
 # Show IPv6 routing table
@@ -102,9 +103,9 @@ rdisc6 eth0
 ```
 
 **Issue: DHCPv6-PD not working with ISP**
-- Some ISPs require a specific DUID type — check ISP documentation
+- Some ISPs require a specific DUID type - check ISP documentation
 - Try enabling **Rapid Commit** in WAN settings
-- Verify the ISP actually provides IPv6 — test from the WAN interface directly
+- Verify the ISP actually provides IPv6 - test from the WAN interface directly
 
 **Issue: IPv6 works but DNS fails**
 - Verify RDNSS is being advertised in RA (`rdisc6 eth0`)

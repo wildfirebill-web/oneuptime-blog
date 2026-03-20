@@ -8,15 +8,15 @@ Description: Learn how to safely rotate encryption keys for OpenTofu state files
 
 ## Introduction
 
-Key rotation is a security best practice that limits the exposure window if a key is compromised. OpenTofu's state encryption system supports key rotation through fallback method configuration — you can add a new key for encryption while keeping the old key available for decryption until all state is re-encrypted.
+Key rotation is a security best practice that limits the exposure window if a key is compromised. OpenTofu's state encryption system supports key rotation through fallback method configuration - you can add a new key for encryption while keeping the old key available for decryption until all state is re-encrypted.
 
 ## Rotation Strategy
 
 The rotation process has three phases:
 
-1. **Add new key with fallback** — encrypt new writes with new key, decrypt old state with old key
-2. **Re-encrypt state** — run `tofu apply -refresh-only` to rewrite state with new key
-3. **Remove old key** — once state is fully re-encrypted, remove the fallback
+1. **Add new key with fallback** - encrypt new writes with new key, decrypt old state with old key
+2. **Re-encrypt state** - run `tofu apply -refresh-only` to rewrite state with new key
+3. **Remove old key** - once state is fully re-encrypted, remove the fallback
 
 ## Phase 1: Configure New Key with Fallback
 
@@ -63,6 +63,7 @@ encryption {
 
 ```bash
 # Apply refresh-only to rewrite state with the new key
+
 tofu apply -refresh-only
 # Confirm: yes
 

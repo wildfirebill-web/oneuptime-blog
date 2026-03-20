@@ -53,6 +53,7 @@ This launches an EC2 instance with Nitro Enclaves enabled:
 
 ```bash
 # Launch instance with enclave support
+
 aws ec2 run-instances \
   --image-id ami-0123456789abcdef0 \
   --instance-type m5.xlarge \

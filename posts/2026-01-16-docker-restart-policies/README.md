@@ -28,6 +28,7 @@ By default, containers don't restart automatically.
 ```bash
 docker run --restart no nginx
 # Or simply (no is the default)
+
 docker run nginx
 ```
 

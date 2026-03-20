@@ -6,12 +6,13 @@ Tags: iptables, Ubuntu, Linux, Firewall, Persistence, Security
 
 Description: Save iptables rules on Ubuntu so they survive reboots using iptables-persistent, netfilter-persistent, or systemd service methods.
 
-iptables rules are stored in memory — they disappear on reboot unless explicitly saved. Ubuntu provides several methods to persist rules, with iptables-persistent being the standard approach.
+iptables rules are stored in memory - they disappear on reboot unless explicitly saved. Ubuntu provides several methods to persist rules, with iptables-persistent being the standard approach.
 
 ## Method 1: iptables-persistent (Recommended)
 
 ```bash
 # Install iptables-persistent
+
 sudo apt install iptables-persistent -y
 
 # During installation, a dialog asks:
@@ -133,4 +134,4 @@ sudo iptables-save > /etc/iptables/rules.v4
 sudo netfilter-persistent reload
 ```
 
-Saving rules should be a reflex after every change — rules in memory disappear at the next reboot, potentially exposing your server until someone notices the firewall is gone.
+Saving rules should be a reflex after every change - rules in memory disappear at the next reboot, potentially exposing your server until someone notices the firewall is gone.

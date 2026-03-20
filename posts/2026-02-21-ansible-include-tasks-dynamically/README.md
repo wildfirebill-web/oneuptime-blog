@@ -16,6 +16,7 @@ Create a task file and include it from your playbook.
 
 ```yaml
 # tasks/install-nginx.yml - a reusable task file
+
 ---
 - name: Install nginx
   apt:

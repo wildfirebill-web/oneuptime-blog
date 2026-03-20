@@ -8,12 +8,13 @@ Description: Create DHCP reservations on Windows Server to ensure specific devic
 
 ## Introduction
 
-A DHCP reservation ties a specific IPv4 address to a MAC address. The DHCP server always assigns the reserved address to the matching device, giving it a "pseudo-static" IP while still managing it through DHCP — eliminating the need to configure static IPs on the device itself.
+A DHCP reservation ties a specific IPv4 address to a MAC address. The DHCP server always assigns the reserved address to the matching device, giving it a "pseudo-static" IP while still managing it through DHCP - eliminating the need to configure static IPs on the device itself.
 
 ## Creating a Reservation via PowerShell
 
 ```powershell
 # Create a reservation for a printer with MAC 00-1A-2B-3C-4D-5E
+
 Add-DhcpServerv4Reservation `
     -ScopeId 192.168.1.0 `
     -IPAddress 192.168.1.50 `
@@ -91,7 +92,7 @@ The DHCP server will now offer the reserved IP.
 ## Finding a Device's MAC Address
 
 ```cmd
-:: On Windows client — find MAC for creating a reservation
+:: On Windows client - find MAC for creating a reservation
 getmac /v
 ipconfig /all | findstr "Physical"
 

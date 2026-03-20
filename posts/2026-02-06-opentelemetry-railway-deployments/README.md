@@ -40,6 +40,7 @@ Start by adding the OpenTelemetry packages to your project. We'll use the Node.j
 
 ```bash
 # Install the OpenTelemetry SDK and auto-instrumentation
+
 npm install @opentelemetry/sdk-node \
   @opentelemetry/auto-instrumentations-node \
   @opentelemetry/exporter-trace-otlp-http \

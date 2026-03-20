@@ -46,6 +46,7 @@ Here is a simple example demonstrating block, rescue, and always:
 
 ```yaml
 # playbook.yml
+
 # Basic block error handling example
 ---
 - name: Deploy application with error handling

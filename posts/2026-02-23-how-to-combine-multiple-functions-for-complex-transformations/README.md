@@ -153,6 +153,7 @@ locals {
 }
 
 # Now use for_each with the flattened map
+
 resource "aws_subnet" "all" {
   for_each = local.subnet_map
 

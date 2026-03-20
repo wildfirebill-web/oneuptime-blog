@@ -25,7 +25,7 @@ GitOps uses Git as the single source of truth for infrastructure and application
 
 ### Monorepo Pattern
 
-```
+```text
 gitops-repo/
 ├── clusters/
 │   ├── production/
@@ -51,7 +51,7 @@ gitops-repo/
 
 ### Multi-Repo Pattern (Recommended for Large Teams)
 
-```
+```text
 config-repo/         # Platform/infrastructure config
   ├── clusters/
   └── global/
@@ -71,6 +71,7 @@ app-backend-repo/    # Backend team owns this
 
 ```yaml
 # clusters/production/fleet.yaml
+
 apiVersion: fleet.cattle.io/v1alpha1
 kind: GitRepo
 metadata:
@@ -96,7 +97,7 @@ spec:
 
 ### Recommended: Environment Branches
 
-```
+```text
 main        → Production (protected, requires PR + review)
 staging     → Staging (requires PR)
 develop     → Development (direct push allowed)
@@ -248,13 +249,13 @@ spec:
 
 ## Best Practices Summary
 
-1. **Pin image tags** in production — never use `latest` in prod manifests
-2. **Use PRs for all production changes** — peer review before deployment
-3. **Never store secrets in Git** — use External Secrets or Sealed Secrets
-4. **Test in dev/staging first** — enforce environment promotion gates
-5. **Monitor Fleet sync status** — alert on out-of-sync clusters
+1. **Pin image tags** in production - never use `latest` in prod manifests
+2. **Use PRs for all production changes** - peer review before deployment
+3. **Never store secrets in Git** - use External Secrets or Sealed Secrets
+4. **Test in dev/staging first** - enforce environment promotion gates
+5. **Monitor Fleet sync status** - alert on out-of-sync clusters
 6. **Use resource quotas** in Git manifests to prevent runaway resource usage
-7. **Audit Git history** for compliance — every deployment is traceable
+7. **Audit Git history** for compliance - every deployment is traceable
 
 ---
 

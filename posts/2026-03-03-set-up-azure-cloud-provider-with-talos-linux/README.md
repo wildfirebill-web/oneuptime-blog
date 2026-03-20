@@ -33,6 +33,7 @@ The Azure cloud provider needs credentials to interact with Azure APIs. Create a
 
 ```bash
 # Create a service principal for the cloud provider
+
 az ad sp create-for-rbac \
   --name "talos-cloud-provider" \
   --role Contributor \

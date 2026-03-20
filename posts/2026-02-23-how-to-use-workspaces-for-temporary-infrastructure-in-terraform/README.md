@@ -23,6 +23,7 @@ What makes this different from regular workspace usage is the emphasis on cleanu
 
 ```bash
 # Create a workspace for a customer demo
+
 terraform workspace new demo-acme-corp-2026-02-23
 
 # Apply the configuration

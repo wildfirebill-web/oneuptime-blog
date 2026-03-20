@@ -18,6 +18,7 @@ The `podman-compose up` command reads your `docker-compose.yml`, creates the nec
 
 ```bash
 # Start all services in the foreground (logs stream to terminal)
+
 podman-compose up
 
 # Start all services in detached (background) mode

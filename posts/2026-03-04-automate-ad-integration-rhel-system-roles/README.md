@@ -30,6 +30,7 @@ On your Ansible control node:
 
 ```bash
 # Install RHEL System Roles
+
 sudo dnf install rhel-system-roles -y
 
 # Verify installation

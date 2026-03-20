@@ -1,4 +1,4 @@
-# How to Deploy Strapi CMS via Portainer
+# How to Deploy Strapi CMS via Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -21,6 +21,7 @@ Navigate to **Stacks** > **Add Stack**:
 
 ```yaml
 # docker-compose.yml - Strapi
+
 version: "3.8"
 
 services:
@@ -86,7 +87,7 @@ Generate secrets using:
 openssl rand -base64 32
 ```
 
-```
+```text
 DB_PASSWORD=your-postgres-password
 JWT_SECRET=<generated-base64-secret>
 ADMIN_JWT_SECRET=<generated-base64-secret>
@@ -104,7 +105,7 @@ Open `http://<host>:1337/admin` to create your first admin account.
 1. Go to **Content-Type Builder** in the admin panel
 2. Create a **Collection Type** named `Article`
 3. Add fields: `title` (Text), `content` (Rich Text), `publishedAt` (Date)
-4. Click **Save** — Strapi auto-generates REST and GraphQL endpoints
+4. Click **Save** - Strapi auto-generates REST and GraphQL endpoints
 
 ## Step 5: Use the API
 

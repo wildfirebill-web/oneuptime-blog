@@ -35,6 +35,7 @@ Create a bucket for incoming raw data:
 
 ```bash
 # Create a bucket for raw data files
+
 gsutil mb -l us-central1 gs://my-project-raw-data/
 
 # Create a bucket for Dataflow temporary files

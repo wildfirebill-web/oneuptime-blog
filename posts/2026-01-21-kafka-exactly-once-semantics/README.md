@@ -671,6 +671,7 @@ main().catch(console.error);
 # server.properties
 
 # Transaction log configuration
+
 transaction.state.log.replication.factor=3
 transaction.state.log.min.isr=2
 transaction.state.log.num.partitions=50

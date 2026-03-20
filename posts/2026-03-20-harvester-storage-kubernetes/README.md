@@ -1,4 +1,4 @@
-# How to Set Up Harvester Storage for Kubernetes
+# How to Set Up Harvester Storage for Kubernetes - Part 3
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -14,7 +14,7 @@ Harvester uses Longhorn as its built-in storage backend, providing hyperconverge
 
 ## Storage Architecture in Harvester
 
-```
+```text
 ┌─────────────────────────────────────────┐
 │           Harvester Cluster             │
 │                                         │
@@ -38,6 +38,7 @@ Harvester uses Longhorn as its built-in storage backend, providing hyperconverge
 
 ```bash
 # Connect to the Harvester management cluster
+
 export KUBECONFIG=/path/to/harvester-kubeconfig
 
 # Check Longhorn is running
@@ -56,8 +57,8 @@ kubectl get node.longhorn.io -n longhorn-system
 kubectl get storageclass
 
 # Harvester provides these by default:
-# harvester-longhorn (default) — 3 replicas
-# longhorn — standard Longhorn StorageClass
+# harvester-longhorn (default) - 3 replicas
+# longhorn - standard Longhorn StorageClass
 ```
 
 ---
@@ -192,6 +193,6 @@ EOF
 
 ## Best Practices
 
-- Use `WaitForFirstConsumer` volume binding mode for Kubernetes clusters on Harvester — this ensures volumes are created on the same Harvester node as the VM, reducing cross-node storage traffic.
-- Size Harvester node disks generously — Longhorn volumes for both the VMs and the guest Kubernetes workloads compete for the same physical storage.
-- Tag SSDs and HDDs differently in Longhorn (`disk-type=ssd`, `disk-type=hdd`) and create separate StorageClasses for each — this lets you route database workloads to SSDs and archival workloads to HDDs.
+- Use `WaitForFirstConsumer` volume binding mode for Kubernetes clusters on Harvester - this ensures volumes are created on the same Harvester node as the VM, reducing cross-node storage traffic.
+- Size Harvester node disks generously - Longhorn volumes for both the VMs and the guest Kubernetes workloads compete for the same physical storage.
+- Tag SSDs and HDDs differently in Longhorn (`disk-type=ssd`, `disk-type=hdd`) and create separate StorageClasses for each - this lets you route database workloads to SSDs and archival workloads to HDDs.

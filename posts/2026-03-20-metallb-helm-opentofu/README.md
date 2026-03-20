@@ -14,6 +14,7 @@ MetalLB provides a network load balancer implementation for bare metal Kubernete
 
 ```hcl
 # main.tf - Deploy MetalLB via Helm
+
 resource "helm_release" "metallb" {
   name             = "metallb"
   repository       = "https://metallb.github.io/metallb"

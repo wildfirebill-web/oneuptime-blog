@@ -16,6 +16,7 @@ Before creating the Portainer stack, prepare the Mosquitto configuration on the 
 
 ```bash
 # Create the config directory structure on the host
+
 mkdir -p /opt/mosquitto/{config,data,log,certs}
 
 # Create password file for authentication
@@ -42,7 +43,7 @@ certfile /mosquitto/certs/server.crt
 keyfile /mosquitto/certs/server.key
 tls_version tlsv1.2
 
-# Persistence settings — messages survive broker restart
+# Persistence settings - messages survive broker restart
 persistence true
 persistence_location /mosquitto/data/
 
@@ -74,7 +75,7 @@ services:
       - /opt/mosquitto/log:/mosquitto/log
       - /opt/mosquitto/certs:/mosquitto/certs:ro
     ports:
-      - "1883:1883"    # MQTT (plaintext — restrict via firewall)
+      - "1883:1883"    # MQTT (plaintext - restrict via firewall)
       - "8883:8883"    # MQTT over TLS
       - "9001:9001"    # MQTT over WebSocket
     restart: unless-stopped
@@ -130,15 +131,15 @@ client.publish(
 Mosquitto exposes broker statistics via a special `$SYS` topic tree. Subscribe to monitor broker health:
 
 ```bash
-# Subscribe to broker statistics — useful for monitoring
+# Subscribe to broker statistics - useful for monitoring
 mosquitto_sub -h localhost -u iot-client -P your_password \
   -t "\$SYS/broker/#" -v
 ```
 
 Key metrics to watch:
-- `$SYS/broker/clients/connected` — active client count
-- `$SYS/broker/messages/received` — total messages received
-- `$SYS/broker/load/messages/received/1min` — message rate
+- `$SYS/broker/clients/connected` - active client count
+- `$SYS/broker/messages/received` - total messages received
+- `$SYS/broker/load/messages/received/1min` - message rate
 
 ## Summary
 

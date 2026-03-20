@@ -40,6 +40,7 @@ This is the fastest path. Synapse Link continuously exports Dataverse tables to 
 
 ```bash
 # Create the Data Lake Storage account
+
 az storage account create \
   --name std365datalake \
   --resource-group rg-d365-analytics \

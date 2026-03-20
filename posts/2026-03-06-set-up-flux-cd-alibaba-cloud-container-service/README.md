@@ -28,6 +28,7 @@ Set up the CLI with your credentials.
 
 ```bash
 # Configure the Alibaba Cloud CLI
+
 aliyun configure set \
   --profile default \
   --mode AK \

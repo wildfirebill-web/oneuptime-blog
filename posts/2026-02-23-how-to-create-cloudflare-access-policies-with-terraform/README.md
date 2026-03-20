@@ -52,6 +52,7 @@ variable "domain" {
 
 ```hcl
 # access-app.tf - Define a protected application
+
 resource "cloudflare_access_application" "admin_panel" {
   zone_id          = var.zone_id
   name             = "Admin Panel"

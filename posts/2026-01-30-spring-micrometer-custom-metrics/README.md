@@ -431,6 +431,7 @@ After setting up metrics, query them in Prometheus:
 
 ```promql
 # Orders per second (rate over 5 minutes)
+
 rate(orders_created_total[5m])
 
 # 99th percentile checkout duration

@@ -27,6 +27,7 @@ graph LR
 
 ```yaml
 # .gitlab-ci.yml - Terraform + Ansible pipeline
+
 stages:
   - validate
   - plan

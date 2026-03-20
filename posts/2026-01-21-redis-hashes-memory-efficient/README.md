@@ -23,6 +23,7 @@ The magic happens with ziplist encoding - it stores data in a contiguous memory 
 
 ```bash
 # Check current settings
+
 redis-cli CONFIG GET hash-max-ziplist-entries
 redis-cli CONFIG GET hash-max-ziplist-value
 

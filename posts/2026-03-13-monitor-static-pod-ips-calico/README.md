@@ -29,6 +29,7 @@ Use the Calico annotation to request a static IP for a pod or StatefulSet.
 
 ```yaml
 # statefulset-static-ip.yaml
+
 # StatefulSet with static IP annotations for consistent addressing
 apiVersion: apps/v1
 kind: StatefulSet

@@ -52,6 +52,7 @@ variable "domain" {
 
 ```hcl
 # basic-worker.tf - Simple hello world worker
+
 resource "cloudflare_worker_script" "hello" {
   account_id = var.account_id
   name       = "hello-worker"

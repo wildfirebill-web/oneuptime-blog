@@ -58,6 +58,7 @@ First, enable AOF in your Redis configuration:
 
 ```conf
 # Enable AOF persistence
+
 appendonly yes
 
 # AOF filename

@@ -28,6 +28,7 @@ The KDC has two main components: the Authentication Service (AS) that issues TGT
 
 ```bash
 # Install the KDC server and admin packages
+
 sudo dnf install krb5-server krb5-libs krb5-workstation -y
 ```
 

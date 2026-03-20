@@ -16,6 +16,7 @@ Data corruption can occur due to hardware failures, bugs, or improper shutdowns.
 
 ```bash
 # Check if checksums enabled
+
 sudo -u postgres psql -c "SHOW data_checksums;"
 
 # Verify checksums (offline)

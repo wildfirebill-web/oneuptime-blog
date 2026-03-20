@@ -515,6 +515,7 @@ spring:
     name: grpc-user-service
 
 # gRPC Server Configuration
+
 grpc:
   server:
     port: 9090

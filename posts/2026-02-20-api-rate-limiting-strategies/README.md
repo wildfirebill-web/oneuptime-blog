@@ -28,6 +28,7 @@ The simplest approach. Divide time into fixed windows (for example, 1-minute int
 
 ```python
 # fixed_window.py
+
 # Simple fixed window rate limiter using Redis
 
 import time

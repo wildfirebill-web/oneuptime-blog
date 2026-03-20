@@ -16,6 +16,7 @@ The simplest form copies a file from the Ansible controller to the remote hosts:
 
 ```bash
 # Copy a local file to all web servers
+
 ansible webservers -m copy -a "src=./nginx.conf dest=/etc/nginx/nginx.conf"
 ```
 

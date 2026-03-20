@@ -12,10 +12,10 @@ The IPv4 header contains a 3-bit Flags field. The Don't Fragment (DF) bit is bit
 
 ## Flags Field Layout
 
-```
+```text
 Bit 0: Reserved (must be 0)
-Bit 1: DF — Don't Fragment
-Bit 2: MF — More Fragments
+Bit 1: DF - Don't Fragment
+Bit 2: MF - More Fragments
 ```
 
 In the raw header bytes, the Flags field occupies the top 3 bits of byte offset 6.
@@ -28,6 +28,7 @@ The following script sends a packet with the DF flag set and a payload large eno
 from scapy.all import IP, ICMP, Raw, sr1
 
 # 'DF' = 2 in Scapy's flags field
+
 pkt = IP(dst="8.8.8.8", flags="DF") / ICMP() / Raw(b"A" * 1400)
 
 # Send and wait for a response

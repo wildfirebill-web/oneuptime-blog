@@ -52,6 +52,7 @@ Demonstrate that access is granted based on need and follows the principle of le
 
 ```bash
 # Evidence: Export IAM policies for all projects
+
 for project in $(gcloud projects list --format='value(projectId)'); do
   gcloud projects get-iam-policy $project --format=json > "evidence/iam-policy-${project}.json"
 done

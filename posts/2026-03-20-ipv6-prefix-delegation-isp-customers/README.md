@@ -63,8 +63,9 @@ Configure Kea to delegate /56 prefixes to residential customers:
 
 For ISCs older dhcpd, configure PD like this:
 
-```
+```text
 # dhcpd6.conf
+
 subnet6 2001:db8:0100::/40 {
     prefix6 2001:db8:0100:: 2001:db8:01ff:: /56;
 
@@ -86,7 +87,7 @@ interface "eth0" {
 
 On OpenWRT (typical residential router):
 
-```
+```text
 # /etc/config/network
 config interface 'wan6'
     option ifname  'eth0.2'
@@ -117,7 +118,7 @@ radvdump
 
 For ISPs managing prefix delegation centrally via RADIUS:
 
-```
+```text
 # FreeRADIUS users file - assign specific prefix per customer
 customer@isp.com Cleartext-Password := "password"
     Framed-IPv6-Prefix = "2001:db8:cust1::/56",

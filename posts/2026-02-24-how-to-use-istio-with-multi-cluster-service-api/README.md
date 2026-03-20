@@ -55,6 +55,7 @@ mkdir -p certs
 cd certs
 
 # Create root CA
+
 openssl req -x509 -sha256 -nodes -days 3650 \
   -newkey rsa:4096 \
   -subj '/O=example Inc./CN=example.com' \

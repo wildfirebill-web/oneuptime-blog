@@ -119,6 +119,7 @@ Make sure you install the correct instrumentation package:
 
 ```bash
 # Correct
+
 npm install @opentelemetry/instrumentation-prisma
 
 # Not a real package - do not confuse with community packages

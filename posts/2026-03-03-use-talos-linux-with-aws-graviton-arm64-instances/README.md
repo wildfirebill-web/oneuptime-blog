@@ -30,6 +30,7 @@ Talos publishes ARM64 AMIs alongside x86 AMIs for every release:
 
 ```bash
 # Find Talos ARM64 AMIs
+
 aws ec2 describe-images \
   --owners 540036508848 \
   --filters \

@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Node.js, TCP, IPv4, Chat, Networking, net Module, Sockets
+Tags: Node.js, TCP, IPv4, Chat, Networking, Net Module, Sockets
 
 Description: Build a multi-user text chat server in Node.js using raw IPv4 TCP sockets with username registration, public messaging, and direct messages.
 
 ## Introduction
 
-A chat server is an excellent project for learning TCP socket programming. This implementation uses Node.js's `net` module to create a multi-user chat room over IPv4 with username registration, broadcast messaging, and private direct messages — all without any external dependencies.
+A chat server is an excellent project for learning TCP socket programming. This implementation uses Node.js's `net` module to create a multi-user chat room over IPv4 with username registration, broadcast messaging, and private direct messages - all without any external dependencies.
 
 ## Complete Chat Server
 
@@ -178,6 +178,7 @@ server.listen(PORT, HOST, () => {
 
 ```bash
 # Connect to the chat server
+
 telnet localhost 3000
 
 # Or with netcat

@@ -63,6 +63,7 @@ def srv6_overhead(num_sids: int) -> int:
     return 40 + 8 + (num_sids * 16)
 
 # Typical 3-label MPLS VPN
+
 mpls_vpn = mpls_overhead(3)  # Inner VC + Outer transport + LDP = 12 bytes
 
 # SRv6 L3VPN (ingress encap + 2 waypoints + End.DT6)
@@ -93,7 +94,7 @@ print(f"SRv6 efficiency: {(1500-srv6_vpn)/1500*100:.1f}%")
 
 ## Migration Strategy: SR-MPLS → SRv6
 
-```
+```text
 Phase 1: Deploy SR-MPLS (Segment Routing with MPLS labels)
   - Simpler migration from traditional MPLS
   - Same control plane as SRv6 (IS-IS, OSPF, BGP SR-Policy)
@@ -114,7 +115,7 @@ Phase 4: Decommission MPLS
 
 uSID reduces SRv6 overhead to near-MPLS levels by packing multiple micro-SIDs into a single 128-bit SID.
 
-```
+```text
 Standard SRv6 SID: 5f00:1:2:0:e001::   (1 node per SID)
 uSID container:    5f00:0101:0201:0301:: (3 nodes in one SID)
 ```

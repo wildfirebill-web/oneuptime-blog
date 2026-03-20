@@ -16,6 +16,7 @@ RabbitMQ defaults to listening on all interfaces (0.0.0.0) for AMQP (port 5672) 
 # /etc/rabbitmq/rabbitmq.conf
 
 # Bind AMQP listener to specific IPv4
+
 listeners.tcp.1 = 10.0.0.5:5672
 
 # Also bind to localhost for local connections

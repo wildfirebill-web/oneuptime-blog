@@ -48,6 +48,7 @@ Install the sqlcipher3 package which provides Python bindings for SQLCipher.
 
 ```bash
 # On macOS, install SQLCipher first
+
 brew install sqlcipher
 
 # Install Python bindings

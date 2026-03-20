@@ -20,6 +20,7 @@ The mapping format is `container_id:host_id:size`:
 
 ```bash
 # Syntax: --uidmap container_id:host_id:size
+
 # Maps a range of container UIDs to a range of host UIDs
 
 # Example: map container UID 0 to host UID 1000, one ID

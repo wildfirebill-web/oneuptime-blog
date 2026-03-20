@@ -33,6 +33,7 @@ Each version is split into small segments (typically 2-6 seconds). The video pla
 
 ```bash
 # Enable the Transcoder API
+
 gcloud services enable transcoder.googleapis.com
 
 # Install the client library

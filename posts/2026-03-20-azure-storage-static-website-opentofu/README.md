@@ -14,6 +14,7 @@ Azure Storage supports hosting static websites (HTML, CSS, JavaScript) directly 
 
 ```hcl
 # main.tf - Storage account with static website hosting enabled
+
 resource "azurerm_storage_account" "static_site" {
   name                     = "mystaticsitehosting"
   resource_group_name      = azurerm_resource_group.rg.name

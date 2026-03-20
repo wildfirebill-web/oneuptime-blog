@@ -39,6 +39,7 @@ innodb_autoinc_lock_mode=2
 bind-address=0.0.0.0
 
 # Galera settings
+
 wsrep_on=ON
 wsrep_provider=/usr/lib64/galera/libgalera_smm.so
 wsrep_cluster_name="my-galera-cluster"

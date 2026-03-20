@@ -27,6 +27,7 @@ In this guide you will deploy Kong as an API gateway alongside two backend micro
 
 ```yaml
 # clusters/production/sources/kong.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

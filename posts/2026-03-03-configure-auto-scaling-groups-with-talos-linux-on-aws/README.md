@@ -31,6 +31,7 @@ The launch template defines what each worker node looks like. It includes the AM
 
 ```bash
 # Encode the worker configuration for user-data
+
 ENCODED_CONFIG=$(base64 -i worker.yaml)
 
 # Create the launch template

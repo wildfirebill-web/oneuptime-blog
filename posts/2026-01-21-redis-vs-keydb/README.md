@@ -46,6 +46,7 @@ Redis 6.0 added I/O threads for network operations:
 
 ```bash
 # redis.conf
+
 io-threads 4
 io-threads-do-reads yes
 ```

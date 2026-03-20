@@ -47,6 +47,7 @@ Enable the required APIs:
 
 ```bash
 # Enable Cloud Trace API
+
 gcloud services enable cloudtrace.googleapis.com
 
 # Enable Cloud Monitoring API
@@ -245,7 +246,7 @@ exporters:
       queue_size: 5000
 ```
 
-## Resource Detection for Google Cloud
+Resource Detection for Google Cloud
 
 The collector can automatically detect Google Cloud resources and add appropriate labels:
 

@@ -34,6 +34,7 @@ The easiest way to install sqlc on macOS or Linux is through Homebrew:
 
 ```bash
 # Install sqlc using Homebrew
+
 brew install sqlc
 ```
 

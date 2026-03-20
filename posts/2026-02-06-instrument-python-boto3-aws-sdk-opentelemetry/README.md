@@ -24,6 +24,7 @@ Without instrumentation, AWS API calls are black boxes. OpenTelemetry makes them
 
 ```bash
 # Install boto3 and OpenTelemetry packages
+
 pip install boto3
 pip install opentelemetry-api opentelemetry-sdk
 pip install opentelemetry-instrumentation-botocore

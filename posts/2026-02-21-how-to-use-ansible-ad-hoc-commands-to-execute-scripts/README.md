@@ -16,6 +16,7 @@ The `script` module is purpose-built for running local scripts on remote hosts. 
 
 ```bash
 # Execute a local script on all web servers
+
 ansible webservers -m script -a "./scripts/health_check.sh"
 
 # Execute with arguments

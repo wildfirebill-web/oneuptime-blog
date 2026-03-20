@@ -434,6 +434,7 @@ Vector exposes Prometheus metrics:
 
 ```yaml
 # Prometheus scrape config
+
 scrape_configs:
 - job_name: 'vector'
   kubernetes_sd_configs:

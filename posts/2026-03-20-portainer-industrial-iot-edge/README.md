@@ -39,6 +39,7 @@ For Debian/Ubuntu-based industrial Linux:
 # Install Docker Engine on an industrial Linux gateway
 
 # Update package index
+
 apt-get update
 
 # Install prerequisites
@@ -218,4 +219,4 @@ services:
 
 ## Conclusion
 
-Portainer provides a reliable management layer for IIoT edge deployments. By combining Docker's containerization benefits with Portainer's central management, you can deploy, update, and monitor industrial workloads — OPC-UA servers, MQTT brokers, time-series databases — across your entire factory floor from a single pane of glass.
+Portainer provides a reliable management layer for IIoT edge deployments. By combining Docker's containerization benefits with Portainer's central management, you can deploy, update, and monitor industrial workloads - OPC-UA servers, MQTT brokers, time-series databases - across your entire factory floor from a single pane of glass.

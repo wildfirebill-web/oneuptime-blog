@@ -16,6 +16,7 @@ Create a new ASP.NET Core Web API project and add the necessary packages:
 
 ```bash
 # Create the project
+
 dotnet new webapi -n EfCoreTracingDemo
 cd EfCoreTracingDemo
 

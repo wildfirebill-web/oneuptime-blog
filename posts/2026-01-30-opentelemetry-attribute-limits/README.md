@@ -99,6 +99,7 @@ from opentelemetry.exporter.otlp.proto.grpc.trace_exporter import OTLPSpanExport
 from opentelemetry.sdk.resources import Resource
 
 # Create span limits
+
 span_limits = SpanLimits(
     # Maximum attributes per span
     max_attributes=128,

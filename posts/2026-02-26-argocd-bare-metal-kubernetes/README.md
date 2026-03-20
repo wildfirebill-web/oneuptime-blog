@@ -25,6 +25,7 @@ The biggest difference between cloud and bare-metal Kubernetes is load balancing
 
 ```bash
 # Install MetalLB
+
 kubectl apply -f https://raw.githubusercontent.com/metallb/metallb/v0.14.3/config/manifests/metallb-native.yaml
 
 # Wait for MetalLB pods to be ready

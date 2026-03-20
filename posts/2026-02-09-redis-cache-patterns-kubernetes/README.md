@@ -22,6 +22,7 @@ Start with a Redis deployment optimized for caching:
 
 ```yaml
 # redis-cache.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

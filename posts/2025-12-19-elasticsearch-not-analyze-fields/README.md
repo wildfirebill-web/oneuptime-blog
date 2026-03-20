@@ -107,6 +107,7 @@ Now you can:
 
 ```bash
 # Full-text search
+
 curl -X GET "localhost:9200/articles/_search" -H 'Content-Type: application/json' -d'
 {
   "query": {

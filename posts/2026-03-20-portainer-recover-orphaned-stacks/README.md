@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Portainer, Docker, Stacks, Recovery, Troubleshooting, DevOps
 
-Description: Learn how to recover orphaned Docker stacks in Portainer — containers running outside Portainer's knowledge that need to be brought back under management.
+Description: Learn how to recover orphaned Docker stacks in Portainer - containers running outside Portainer's knowledge that need to be brought back under management.
 
 ## Introduction
 
@@ -20,7 +20,7 @@ Orphaned stacks occur when Docker containers are running but Portainer has lost 
 
 1. **Portainer reinstall/data loss**: Portainer's data volume (`portainer_data`) is deleted or corrupted.
 2. **Direct CLI deployment**: `docker compose up` or `docker stack deploy` run directly on the host, bypassing Portainer.
-3. **Environment re-addition**: A Docker endpoint is removed from Portainer and re-added — Portainer loses the stack metadata.
+3. **Environment re-addition**: A Docker endpoint is removed from Portainer and re-added - Portainer loses the stack metadata.
 4. **Portainer version migration**: Some upgrades don't preserve stack association metadata.
 
 ## Step 1: Identify Orphaned Containers
@@ -29,6 +29,7 @@ Identify containers that Portainer isn't managing:
 
 ```bash
 # List all running containers and their Compose project labels:
+
 docker ps --format "table {{.Names}}\t{{.Labels}}" | grep "compose.project"
 
 # Show all containers grouped by Compose project:
@@ -120,7 +121,7 @@ docker run --rm \
   -v /backup:/backup \
   alpine tar czf /backup/portainer_data_$(date +%Y%m%d).tar.gz -C /source .
 
-# Strategy 3: Use Git-based stacks — the source of truth is in Git, not Portainer:
+# Strategy 3: Use Git-based stacks - the source of truth is in Git, not Portainer:
 # Even if Portainer loses the stack record, you can redeploy from Git
 # and the containers will reconnect to existing volumes
 
@@ -142,7 +143,7 @@ docker ps --format '{{.Labels}}' | \
 find /opt/stacks /home -name "docker-compose.yml" 2>/dev/null
 
 # 3. For each found compose file, redeploy as a stack in Portainer
-#    using the same name — containers continue running, Portainer
+#    using the same name - containers continue running, Portainer
 #    re-associates with them
 
 # 4. Verify each service shows as Running in Portainer after re-association

@@ -18,6 +18,7 @@ The `ansible.windows.win_shell` module with PowerShell networking cmdlets is the
 
 ```yaml
 # playbook-static-ip.yml
+
 # Configures a static IP address on a Windows server
 - name: Configure static IP address
   hosts: windows

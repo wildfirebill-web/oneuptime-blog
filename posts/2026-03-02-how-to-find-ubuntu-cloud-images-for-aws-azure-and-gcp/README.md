@@ -27,6 +27,7 @@ The most reliable method is querying AWS directly:
 
 ```bash
 # Install AWS CLI if not already installed
+
 sudo apt install awscli -y
 
 # Configure AWS credentials

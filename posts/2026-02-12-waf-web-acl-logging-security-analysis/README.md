@@ -32,6 +32,7 @@ Here's how to enable WAF logging using the AWS CLI. The log group name must star
 
 ```bash
 # Create a CloudWatch log group for WAF logs
+
 aws logs create-log-group \
   --log-group-name aws-waf-logs-my-web-acl
 

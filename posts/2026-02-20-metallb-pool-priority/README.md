@@ -42,6 +42,7 @@ Priority is set inside the `serviceAllocation` block of the IPAddressPool:
 
 ```yaml
 # pool-primary.yaml
+
 # Primary pool - tried first (lowest priority number)
 apiVersion: metallb.io/v1beta1
 kind: IPAddressPool

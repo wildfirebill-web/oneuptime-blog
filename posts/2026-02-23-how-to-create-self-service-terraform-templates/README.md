@@ -24,6 +24,7 @@ A good self-service template should abstract away complexity while still offerin
 
 ```hcl
 # modules/self-service/web-application/main.tf
+
 # This module provides a complete web application stack
 # that developers can deploy with minimal configuration
 

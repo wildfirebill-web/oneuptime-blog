@@ -1,4 +1,4 @@
-# How to Configure DevSpace with Rancher
+# How to Configure DevSpace with Rancher - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -21,6 +21,7 @@ DevSpace is an open-source developer tool for Kubernetes that provides a streaml
 
 ```bash
 # macOS
+
 brew install devspace
 
 # Linux

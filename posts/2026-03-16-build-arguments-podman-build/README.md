@@ -20,6 +20,7 @@ Build arguments are defined with `ARG` in the Containerfile and supplied with `-
 
 ```bash
 # Containerfile with a build argument
+
 cat > Containerfile << 'EOF'
 ARG BASE_IMAGE=docker.io/library/python:3.12-slim
 FROM ${BASE_IMAGE}

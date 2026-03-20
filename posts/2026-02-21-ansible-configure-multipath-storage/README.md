@@ -26,6 +26,7 @@ The first step is getting the right packages installed on all your storage-conne
 
 ```yaml
 # install-multipath.yml - Install device-mapper-multipath and dependencies
+
 ---
 - name: Install and enable multipath
   hosts: san_connected

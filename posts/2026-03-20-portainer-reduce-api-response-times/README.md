@@ -20,6 +20,7 @@ TOKEN=$(curl -s -X POST https://portainer.example.com/api/auth \
   -d '{"Username":"admin","Password":"adminpassword"}' | jq -r .jwt)
 
 # Measure key API endpoints
+
 for endpoint in /api/endpoints /api/stacks /api/containers/json; do
   time curl -s -H "Authorization: Bearer $TOKEN" \
     "https://portainer.example.com$endpoint" > /dev/null
@@ -99,7 +100,7 @@ server {
 }
 ```
 
-Only cache read-only endpoints like `/api/endpoints` — never cache authentication or write operations.
+Only cache read-only endpoints like `/api/endpoints` - never cache authentication or write operations.
 
 ## Fix 5: Allocate More CPU to Portainer
 

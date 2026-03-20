@@ -18,6 +18,7 @@ First, create a Cosmos DB account configured for the MongoDB API:
 
 ```bash
 # Create a Cosmos DB account with MongoDB API
+
 # The --kind MongoDB flag sets the API type
 az cosmosdb create \
     --name myMongoCosmosAccount \

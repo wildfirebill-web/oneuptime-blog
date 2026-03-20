@@ -30,6 +30,7 @@ Add the graphql-ruby gem to your Gemfile and run the generator to scaffold the b
 
 ```bash
 # Add to Gemfile
+
 bundle add graphql
 
 # Generate the GraphQL scaffold

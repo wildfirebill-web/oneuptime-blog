@@ -98,6 +98,7 @@ For a complete restoration, create a new snapshot of the snapshot and swap:
 
 ```bash
 # Unmount the original
+
 sudo umount /documents
 
 # Create a new filesystem from the snapshot

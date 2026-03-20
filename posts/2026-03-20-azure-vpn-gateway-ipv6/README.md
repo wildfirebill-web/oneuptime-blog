@@ -17,6 +17,7 @@ RG="rg-vpn"
 LOCATION="eastus"
 
 # VNet and GatewaySubnet with IPv6
+
 az network vnet create \
     --resource-group "$RG" \
     --name vnet-vpn \

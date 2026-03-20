@@ -22,6 +22,7 @@ Configure the batch processor with essential parameters for timeout and batch si
 
 ```yaml
 # basic-batch-config.yaml
+
 receivers:
   otlp:
     protocols:

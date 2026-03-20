@@ -29,6 +29,7 @@ Not all GPU types are available in all zones. Check availability first:
 
 ```bash
 # List available GPU types in a specific zone
+
 gcloud compute accelerator-types list --filter="zone:us-central1-a"
 ```
 

@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Portainer, Media, Content Delivery, Docker, Streaming, CDN
 
-Description: Configure Portainer to manage containerized media processing, transcoding, and content delivery workloads — from ingest pipelines to origin servers and streaming endpoints.
+Description: Configure Portainer to manage containerized media processing, transcoding, and content delivery workloads - from ingest pipelines to origin servers and streaming endpoints.
 
 ---
 
@@ -27,6 +27,7 @@ Use Portainer to deploy an FFmpeg-based transcoding pipeline:
 
 ```yaml
 # media-transcode-stack.yml
+
 version: "3.8"
 
 services:

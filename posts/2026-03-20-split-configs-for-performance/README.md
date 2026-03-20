@@ -18,7 +18,7 @@ Good split points have these characteristics:
 - Resources that don't need frequent coordination with other groups
 - Resources with clear input/output contracts
 
-```
+```text
 networking/      → VPC, subnets, internet gateways, NAT (changes quarterly)
 security/        → Security groups, IAM roles, KMS keys (changes weekly)
 data/            → RDS, ElastiCache, S3 buckets (changes monthly)
@@ -33,6 +33,7 @@ services/        → ECS tasks, Lambda, App Config (changes daily)
 mkdir -p infrastructure/{networking,security,data,compute,platform,services}
 
 # Each directory gets its own backend configuration
+
 for dir in networking security data compute platform services; do
   cat > "infrastructure/$dir/backend.tf" <<EOF
 terraform {
@@ -117,13 +118,13 @@ tofu plan   # Should show no changes
 
 | Configuration | Resources | Plan Time Before | Plan Time After |
 |---|---|---|---|
-| Monolith | 500 | 25 minutes | — |
-| networking | 50 | — | 1 minute |
-| security | 40 | — | 45 seconds |
-| data | 30 | — | 40 seconds |
-| compute | 80 | — | 2 minutes |
-| platform | 50 | — | 1.5 minutes |
-| services | 250 | — | 4 minutes |
+| Monolith | 500 | 25 minutes | - |
+| networking | 50 | - | 1 minute |
+| security | 40 | - | 45 seconds |
+| data | 30 | - | 40 seconds |
+| compute | 80 | - | 2 minutes |
+| platform | 50 | - | 1.5 minutes |
+| services | 250 | - | 4 minutes |
 
 ## Conclusion
 

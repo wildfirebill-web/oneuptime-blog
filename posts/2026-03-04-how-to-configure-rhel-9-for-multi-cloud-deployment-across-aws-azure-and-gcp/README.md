@@ -23,6 +23,7 @@ Use a consistent kickstart file across all cloud providers:
 
 ```bash
 # rhel9-cloud.ks
+
 lang en_US.UTF-8
 keyboard us
 timezone UTC --utc

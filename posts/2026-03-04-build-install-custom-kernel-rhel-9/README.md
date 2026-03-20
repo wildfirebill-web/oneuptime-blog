@@ -24,6 +24,7 @@ Building a custom kernel is straightforward but it takes time, both in CPU cycle
 
 ```bash
 # Install the development tools group
+
 sudo dnf groupinstall "Development Tools" -y
 
 # Install kernel-specific build dependencies

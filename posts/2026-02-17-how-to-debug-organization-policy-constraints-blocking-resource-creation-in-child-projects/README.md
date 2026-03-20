@@ -41,6 +41,7 @@ See what the effective (inherited + local) policy is for a specific constraint:
 
 ```bash
 # Check the effective policy for a constraint on your project
+
 gcloud resource-manager org-policies describe \
     constraints/compute.vmExternalIpAccess \
     --project=your-project-id \

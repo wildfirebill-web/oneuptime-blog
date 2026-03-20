@@ -35,6 +35,7 @@ First, set up where the mirrored traffic will go. The most common approach is se
 
 ```bash
 # Create a mirror target pointing to a Network Load Balancer
+
 aws ec2 create-traffic-mirror-target \
   --network-load-balancer-arn arn:aws:elasticloadbalancing:us-east-1:123456789012:loadbalancer/net/inspection-nlb/abc123 \
   --description "IDS inspection fleet" \

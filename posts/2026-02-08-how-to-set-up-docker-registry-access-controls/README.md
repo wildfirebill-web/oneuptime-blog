@@ -18,6 +18,7 @@ The simplest way to protect a Docker registry is HTTP basic authentication. This
 
 ```bash
 # Create a directory for authentication files
+
 mkdir -p /opt/registry/auth
 
 # Generate an htpasswd file with bcrypt encryption

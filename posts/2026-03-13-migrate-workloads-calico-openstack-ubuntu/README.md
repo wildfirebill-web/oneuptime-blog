@@ -51,6 +51,7 @@ Clean up OVS bridges:
 
 ```bash
 # On each compute node
+
 sudo systemctl stop neutron-openvswitch-agent
 sudo ovs-vsctl del-br br-int
 sudo ovs-vsctl del-br br-ex

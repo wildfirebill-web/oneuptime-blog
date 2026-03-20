@@ -16,6 +16,7 @@ The command follows a source-to-destination pattern with colons separating pod n
 
 ```bash
 # Copy from pod to local
+
 kubectl cp <pod-name>:<source-path> <local-dest-path>
 
 # Copy from local to pod

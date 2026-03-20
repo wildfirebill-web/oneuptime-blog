@@ -27,6 +27,7 @@ First, ensure security is enabled in `elasticsearch.yml`:
 xpack.security.enabled: true
 xpack.security.transport.ssl.enabled: true
 # Additional TLS configuration...
+
 ```
 
 Set up built-in user passwords:

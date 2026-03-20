@@ -18,6 +18,7 @@ Start with the Dataflow console or CLI. The job-level error message often points
 
 ```bash
 # Get the job status and error messages
+
 gcloud dataflow jobs describe JOB_ID \
   --region=us-central1 \
   --format="yaml(currentState, currentStateTime, type, stageStates)"

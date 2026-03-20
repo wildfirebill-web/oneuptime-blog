@@ -34,6 +34,7 @@ Because threaded IRQ handlers are regular kernel threads, you can:
 
 ```bash
 # List all IRQs with their current thread and CPU affinity
+
 cat /proc/interrupts
 
 # Check if IRQ threads exist (they appear as irq/<NUM> processes)

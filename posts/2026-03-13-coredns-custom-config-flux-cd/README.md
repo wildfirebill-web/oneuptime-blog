@@ -24,6 +24,7 @@ CoreDNS configuration lives in the `coredns` ConfigMap in the `kube-system` name
 
 ```bash
 # View the current CoreDNS configuration
+
 kubectl get configmap coredns -n kube-system -o yaml
 ```
 

@@ -66,6 +66,7 @@ The Locust web UI displays real-time metrics. Understanding each metric is cruci
 
 ```python
 # locustfile.py - Access stats programmatically
+
 from locust import HttpUser, task, between, events
 
 @events.test_stop.add_listener

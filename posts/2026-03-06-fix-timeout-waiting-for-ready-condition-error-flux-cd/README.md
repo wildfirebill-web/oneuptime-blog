@@ -18,6 +18,7 @@ Check the Kustomization or HelmRelease status:
 
 ```bash
 # Check all Kustomizations
+
 kubectl get kustomizations -A
 
 # Get the detailed error

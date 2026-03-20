@@ -120,6 +120,7 @@ When cloning VMs, VDO automatically deduplicates the identical blocks:
 
 ```bash
 # Clone a VM
+
 sudo virt-clone --original vm1 --name vm2 --auto-clone
 
 # Or manually copy and register

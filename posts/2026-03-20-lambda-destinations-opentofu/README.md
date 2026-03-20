@@ -19,6 +19,7 @@ Lambda Destinations allow you to route the result of an asynchronous function in
 
 ```hcl
 # SQS queue for successful invocations
+
 resource "aws_sqs_queue" "success" {
   name                      = "lambda-success-destination"
   message_retention_seconds = 86400  # 1 day
@@ -160,4 +161,4 @@ tofu apply
 
 ## Conclusion
 
-Lambda Destinations provide a clean pattern for handling async invocation results without polling or complex retry logic. The destination message includes the original request payload, response payload, function metadata, and request context—giving downstream consumers full visibility into the invocation outcome. Use SQS destinations when order doesn't matter, SNS for fan-out to multiple consumers, and EventBridge for complex routing rules.
+Lambda Destinations provide a clean pattern for handling async invocation results without polling or complex retry logic. The destination message includes the original request payload, response payload, function metadata, and request context-giving downstream consumers full visibility into the invocation outcome. Use SQS destinations when order doesn't matter, SNS for fan-out to multiple consumers, and EventBridge for complex routing rules.

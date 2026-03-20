@@ -21,6 +21,7 @@ Here is the skeleton:
 
 ```python
 # callback_plugins/notify_base.py - Base pattern for notification callbacks
+
 import os
 import time
 import json

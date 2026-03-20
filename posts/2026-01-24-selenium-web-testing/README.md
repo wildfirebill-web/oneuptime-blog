@@ -44,6 +44,7 @@ Start by installing Selenium and a WebDriver manager to handle driver binaries a
 
 ```bash
 # Install Selenium and webdriver-manager
+
 pip install selenium webdriver-manager
 ```
 

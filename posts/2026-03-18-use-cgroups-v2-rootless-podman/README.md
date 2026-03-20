@@ -20,6 +20,7 @@ First, determine which cgroup version your system is running:
 
 ```bash
 # Check if cgroups v2 is active
+
 stat -fc %T /sys/fs/cgroup/
 # Output "cgroup2fs" means v2 is active
 # Output "tmpfs" means v1 is active (or hybrid)

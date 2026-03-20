@@ -28,6 +28,7 @@ graph LR
 
 ```bash
 # See which authselect profile is currently active
+
 sudo authselect current
 ```
 

@@ -35,6 +35,7 @@ The scheduler tracks compute usage over a configurable time window (the "share d
 
 ```bash
 # Create a fair-share scheduling policy
+
 aws batch create-scheduling-policy \
   --name multi-team-policy \
   --fairshare-policy '{

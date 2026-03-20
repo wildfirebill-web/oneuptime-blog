@@ -14,6 +14,7 @@ A cross-forest trust between IdM and Active Directory (AD) lets AD users access 
 
 ```bash
 # IdM server must have:
+
 # - Integrated DNS or proper DNS delegation
 # - Samba packages installed for trust support
 

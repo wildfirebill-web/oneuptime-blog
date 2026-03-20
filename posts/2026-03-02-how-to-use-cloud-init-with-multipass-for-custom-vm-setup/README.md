@@ -28,6 +28,7 @@ Use the `--cloud-init` flag with either a file path or `-` for stdin:
 
 ```bash
 # Using a file
+
 multipass launch 24.04 --name myvm --cloud-init ./my-config.yaml
 
 # Using stdin (heredoc)

@@ -18,6 +18,7 @@ The kubernetes.core collection provides modules for managing Kubernetes resource
 
 ```bash
 # Install the Kubernetes collection
+
 ansible-galaxy collection install kubernetes.core
 
 # Install required Python dependencies

@@ -16,6 +16,7 @@ The `cidrsubnets` function takes a parent CIDR prefix and a list of new bit valu
 
 ```hcl
 # Allocate three /24 subnets from a /16 parent
+
 output "subnets" {
   value = cidrsubnets("10.0.0.0/16", 8, 8, 8)
   # Result: ["10.0.0.0/24", "10.0.1.0/24", "10.0.2.0/24"]

@@ -8,12 +8,13 @@ Description: Configure BIND9 as an authoritative DNS server for a domain, includ
 
 ## Introduction
 
-BIND9 (Berkeley Internet Name Domain) is the most widely deployed DNS server. As an authoritative server, it holds the definitive records for a domain — other resolvers query it for the ground truth. This guide covers setting up BIND9 for a domain, creating zone files, configuring SOA and NS records, and restricting BIND to authoritative-only mode (not recursive).
+BIND9 (Berkeley Internet Name Domain) is the most widely deployed DNS server. As an authoritative server, it holds the definitive records for a domain - other resolvers query it for the ground truth. This guide covers setting up BIND9 for a domain, creating zone files, configuring SOA and NS records, and restricting BIND to authoritative-only mode (not recursive).
 
 ## Installation
 
 ```bash
 # Ubuntu/Debian:
+
 apt-get install bind9 bind9-utils bind9-doc -y
 
 # CentOS/RHEL:

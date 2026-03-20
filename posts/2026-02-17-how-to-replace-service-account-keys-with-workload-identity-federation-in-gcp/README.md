@@ -48,6 +48,7 @@ Enable the required APIs:
 
 ```bash
 # Enable required APIs for Workload Identity Federation
+
 gcloud services enable \
   iam.googleapis.com \
   sts.googleapis.com \

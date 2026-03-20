@@ -164,6 +164,7 @@ You can also set a default expiration on the entire dataset.
 
 ```bash
 # Set default table expiration for a dataset to 30 days
+
 bq update --default_table_expiration=2592000 my_project:staging
 ```
 

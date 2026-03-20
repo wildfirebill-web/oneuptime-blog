@@ -78,6 +78,7 @@ Tags are your primary tool for organizing and querying devices. Set them from th
 
 ```bash
 # Update device twin tags for a specific device
+
 # Tags are cloud-side only - the device never sees them
 az iot hub device-twin update \
     --hub-name iothub-production-001 \

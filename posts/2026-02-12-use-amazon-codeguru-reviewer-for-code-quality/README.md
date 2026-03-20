@@ -40,6 +40,7 @@ Or do it programmatically:
 
 ```python
 # Associate a GitHub repository with CodeGuru Reviewer
+
 import boto3
 
 codeguru = boto3.client('codeguru-reviewer', region_name='us-east-1')
@@ -142,7 +143,7 @@ Each recommendation includes:
 
 ## Common Issues CodeGuru Catches
 
-### Resource Leaks
+Resource Leaks
 
 CodeGuru is particularly good at catching resource leaks. Consider this Java code:
 

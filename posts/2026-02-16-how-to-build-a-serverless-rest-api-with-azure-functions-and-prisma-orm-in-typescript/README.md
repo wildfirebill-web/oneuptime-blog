@@ -16,6 +16,7 @@ In this post, we will build a complete serverless REST API using Azure Functions
 
 ```bash
 # Create a new Azure Functions project with TypeScript
+
 func init prisma-api --typescript
 cd prisma-api
 

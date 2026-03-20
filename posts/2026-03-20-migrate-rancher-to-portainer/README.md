@@ -22,6 +22,7 @@ Rancher is a full-featured Kubernetes management platform, but its complexity an
 
 ```bash
 # Export all namespaces and workloads from Rancher-managed clusters
+
 # Using kubectl with Rancher kubeconfig
 
 # Get all deployments

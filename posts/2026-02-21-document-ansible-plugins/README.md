@@ -24,6 +24,7 @@ Here is a complete example for a lookup plugin:
 
 ```python
 # plugins/lookup/vault_secret.py
+
 DOCUMENTATION = """
     name: vault_secret
     author: Your Name (@yourgithub)

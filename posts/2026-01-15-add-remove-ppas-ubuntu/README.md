@@ -26,6 +26,7 @@ PPAs are:
 
 ```bash
 # Add PPA
+
 sudo add-apt-repository ppa:user/ppa-name
 
 # Example: Add graphics drivers PPA

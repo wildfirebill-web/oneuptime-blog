@@ -35,6 +35,7 @@ Before building anything, you need to know the exact kernel version your Talos i
 
 ```bash
 # Check the kernel version on a running Talos node
+
 talosctl -n 192.168.1.10 version
 
 # Get detailed kernel information

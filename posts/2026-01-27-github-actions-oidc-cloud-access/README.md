@@ -50,6 +50,7 @@ sequenceDiagram
 
 ```bash
 # Create the OIDC provider in AWS
+
 aws iam create-open-id-connect-provider \
   --url https://token.actions.githubusercontent.com \
   --client-id-list sts.amazonaws.com \

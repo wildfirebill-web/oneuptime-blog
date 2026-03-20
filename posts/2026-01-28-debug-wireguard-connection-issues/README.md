@@ -39,6 +39,7 @@ Start by checking if the WireGuard interface exists and is configured.
 
 ```bash
 # Check if interface exists
+
 ip link show wg0
 
 # If not found, the interface is not up

@@ -26,6 +26,7 @@ Before configuring verification, ensure your application images are signed. Here
 
 ```bash
 # Generate a Cosign key pair
+
 cosign generate-key-pair
 
 # Sign an image with your private key

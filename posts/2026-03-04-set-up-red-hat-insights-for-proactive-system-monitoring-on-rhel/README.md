@@ -14,6 +14,7 @@ Red Hat Insights is a SaaS-based analysis service included with every RHEL subsc
 
 ```bash
 # Install the insights client (usually pre-installed on RHEL 9)
+
 sudo dnf install -y insights-client
 
 # Register the system with Red Hat Insights

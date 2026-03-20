@@ -62,7 +62,7 @@ docker run -d \
 
 Navigate to:
 
-```
+```text
 https://<orange-pi-ip>:9443
 ```
 
@@ -103,6 +103,7 @@ Change the port mapping if needed (e.g., `-p 19443:9443`).
 docker stop portainer && docker rm portainer
 docker pull portainer/portainer-ce:latest
 # Re-run the docker run command
+
 ```
 
 ## Conclusion

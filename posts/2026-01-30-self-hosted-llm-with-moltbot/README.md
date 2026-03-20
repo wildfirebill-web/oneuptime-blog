@@ -220,6 +220,7 @@ This Docker Compose file sets up Moltbot with all necessary configurations:
 
 ```yaml
 # docker-compose.yml
+
 version: '3.8'
 services:
   moltbot:

@@ -34,6 +34,7 @@ Modern Linux kernels (4.x and above) include full IPv6 VRRP support. Verify IPv6
 
 ```bash
 # Check IPv6 kernel module
+
 lsmod | grep ipv6
 
 # Verify IPv6 is enabled on your interface

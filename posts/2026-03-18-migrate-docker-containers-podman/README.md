@@ -20,6 +20,7 @@ Before migrating, inventory your current Docker setup.
 
 ```bash
 # List all running Docker containers
+
 docker ps --format "table {{.ID}}\t{{.Image}}\t{{.Names}}\t{{.Status}}"
 
 # List all containers including stopped ones

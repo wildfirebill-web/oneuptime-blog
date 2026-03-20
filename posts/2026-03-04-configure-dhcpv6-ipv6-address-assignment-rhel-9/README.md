@@ -47,6 +47,7 @@ cat > /etc/dhcp/dhcpd6.conf << 'EOF'
 # DHCPv6 server configuration
 
 # Global options
+
 default-lease-time 3600;
 max-lease-time 7200;
 log-facility local7;

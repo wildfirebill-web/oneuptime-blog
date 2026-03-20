@@ -43,6 +43,7 @@ First, ensure the ArtifactGenerator controller is available in your Flux install
 
 ```yaml
 # flux-system/kustomization.yaml
+
 # Verify that the artifact-generator component is included
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization

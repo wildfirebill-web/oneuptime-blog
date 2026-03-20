@@ -32,6 +32,7 @@ After the learning period, review what files your containers access:
 
 ```bash
 # Get file access profile for a group
+
 curl -sk \
   "https://neuvector-manager:8443/v1/file/profile/group/nv.webapp.default" \
   -H "X-Auth-Token: ${TOKEN}" | jq '.process_profile.process_list'
@@ -49,7 +50,7 @@ In the NeuVector UI:
 3. Click **Add Rule**
 4. Configure the rule:
 
-```
+```text
 Filter: /etc/nginx/nginx.conf
 Recursive: No
 Applications: nginx

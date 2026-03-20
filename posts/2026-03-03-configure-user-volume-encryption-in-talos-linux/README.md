@@ -25,6 +25,7 @@ The simplest way to enable disk encryption is with a static passphrase. While th
 
 ```yaml
 # machine-config-basic-encryption.yaml
+
 # Enable basic disk encryption with a static passphrase
 machine:
   systemDiskEncryption:

@@ -16,6 +16,7 @@ When a container uses more memory than its limit allows, the Linux kernel termin
 
 ```bash
 # Check if a pod was OOMKilled
+
 kubectl describe pod myapp-xyz
 
 # Look for:

@@ -34,6 +34,7 @@ If starting with Ubuntu Server:
 
 ```bash
 # Update packages
+
 sudo apt update
 
 # Install lightweight desktop (XFCE recommended for VNC)

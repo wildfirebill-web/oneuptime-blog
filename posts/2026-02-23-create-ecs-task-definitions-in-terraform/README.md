@@ -16,6 +16,7 @@ Getting the task definition right is important because mistakes here cascade int
 
 ```hcl
 # ECS task definition
+
 resource "aws_ecs_task_definition" "app" {
   family                   = "myapp"
   requires_compatibilities = ["FARGATE"]

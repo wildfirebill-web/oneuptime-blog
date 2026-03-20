@@ -30,6 +30,7 @@ If BGP peers are not reaching the Established state, fix the peering configurati
 
 ```yaml
 # Fix 1: Correct the BGPConfiguration with proper AS number
+
 # Apply this if nodes have mismatched AS numbers
 apiVersion: projectcalico.org/v3
 kind: BGPConfiguration

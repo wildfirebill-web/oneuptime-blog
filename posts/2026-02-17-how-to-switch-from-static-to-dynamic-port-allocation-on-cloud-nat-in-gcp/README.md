@@ -49,6 +49,7 @@ Before switching, check your current setup:
 
 ```bash
 # Describe your current NAT configuration
+
 gcloud compute routers nats describe your-nat-gateway \
   --router=your-router \
   --region=us-central1 \

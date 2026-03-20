@@ -49,6 +49,7 @@ This is the faster path. AWS handles the ordering service, certificate authoriti
 
 ```bash
 # Create a Hyperledger Fabric 2.2 network with your first organization
+
 aws managedblockchain create-network \
   --name "TradeFinanceNetwork" \
   --framework HYPERLEDGER_FABRIC \

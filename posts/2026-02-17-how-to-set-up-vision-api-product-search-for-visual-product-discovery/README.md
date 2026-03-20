@@ -41,6 +41,7 @@ Before getting started:
 
 ```bash
 # Enable the Vision API
+
 gcloud services enable vision.googleapis.com
 
 # Install the Python client library

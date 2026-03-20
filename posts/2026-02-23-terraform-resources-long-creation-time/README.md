@@ -37,6 +37,7 @@ resource "aws_db_instance" "production" {
 
 ```hcl
 # RDS instances - especially large or encrypted ones
+
 resource "aws_db_instance" "main" {
   identifier     = "production"
   engine         = "postgres"

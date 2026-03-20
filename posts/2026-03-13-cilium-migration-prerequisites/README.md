@@ -30,6 +30,7 @@ Ensure your nodes meet the kernel and system requirements:
 
 ```bash
 # Check kernel version on all nodes
+
 kubectl get nodes -o wide
 kubectl debug node/<node-name> -it --image=ubuntu -- uname -r
 

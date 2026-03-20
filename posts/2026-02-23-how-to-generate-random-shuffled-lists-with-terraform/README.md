@@ -20,6 +20,7 @@ The random_shuffle resource accepts an input list and produces a result list wit
 
 ```hcl
 # main.tf - Provider configuration
+
 terraform {
   required_version = ">= 1.5.0"
 

@@ -10,12 +10,13 @@ Description: Enable IPv6 access for AWS API Gateway HTTP and REST APIs using dua
 
 AWS API Gateway supports IPv6 through its dualstack endpoint mode introduced for HTTP APIs. REST APIs gain IPv6 access via custom domain names backed by CloudFront, which has been dualstack-enabled since 2021.
 
-## HTTP API — Enable Dualstack Endpoint
+## HTTP API - Enable Dualstack Endpoint
 
 AWS HTTP APIs (v2) support a built-in dualstack endpoint. Enable it at creation time or update an existing API.
 
 ```bash
 # Create a new HTTP API with dualstack enabled
+
 aws apigatewayv2 create-api \
   --name "MyIPv6API" \
   --protocol-type HTTP \
@@ -31,7 +32,7 @@ aws apigatewayv2 update-api \
 
 After enabling dualstack, the default execute-api endpoint resolves both A and AAAA records.
 
-## REST API — IPv6 via CloudFront Custom Domain
+## REST API - IPv6 via CloudFront Custom Domain
 
 REST APIs do not have a native dualstack toggle, but a custom domain backed by CloudFront provides IPv6 access.
 
@@ -71,10 +72,10 @@ aws cloudfront update-distribution \
   --if-match $(jq -r '.ETag' dist-config.json)
 ```
 
-## Terraform Example — HTTP API with Dualstack
+## Terraform Example - HTTP API with Dualstack
 
 ```hcl
-# main.tf — AWS HTTP API Gateway with IPv6 dualstack
+# main.tf - AWS HTTP API Gateway with IPv6 dualstack
 
 resource "aws_apigatewayv2_api" "ipv6_api" {
   name          = "ipv6-http-api"
@@ -108,12 +109,12 @@ curl -6 https://abc123def.execute-api.us-east-1.amazonaws.com/health
 curl -6 https://api.example.com/health
 ```
 
-## Lambda Integration — Handle IPv6 Client IPs
+## Lambda Integration - Handle IPv6 Client IPs
 
 When clients connect over IPv6, API Gateway passes the client address in `requestContext.identity.sourceIp`. Your Lambda function receives it correctly without changes.
 
 ```python
-# Lambda handler — IPv6 source IP is in the event automatically
+# Lambda handler - IPv6 source IP is in the event automatically
 def handler(event, context):
     source_ip = event['requestContext']['identity']['sourceIp']
     # source_ip may be e.g. "2001:db8::1" for IPv6 clients

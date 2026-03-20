@@ -16,6 +16,7 @@ Exports are how CloudFormation stacks share values with each other. When you exp
 
 ```yaml
 # Stack A exports a VPC ID
+
 Outputs:
   VpcId:
     Value: !Ref MyVPC

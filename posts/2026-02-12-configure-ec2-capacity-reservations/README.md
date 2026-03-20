@@ -27,6 +27,7 @@ Here's how to reserve capacity for 10 m5.xlarge instances in us-east-1a:
 
 ```bash
 # Reserve capacity for 10 m5.xlarge instances in us-east-1a
+
 RESERVATION_ID=$(aws ec2 create-capacity-reservation \
   --instance-type m5.xlarge \
   --instance-platform Linux/UNIX \

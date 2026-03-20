@@ -452,6 +452,7 @@ module.exports = { AuthenticatedHttpClient };
 
 ```python
 # token_manager.py
+
 # Python implementation of OAuth2 token refresh handling
 
 import time

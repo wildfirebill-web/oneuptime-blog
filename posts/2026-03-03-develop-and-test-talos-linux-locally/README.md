@@ -31,6 +31,7 @@ The fastest way to get a local Talos cluster is with Docker.
 
 ```bash
 # Create a basic cluster with 1 control plane and 2 workers
+
 talosctl cluster create \
   --name dev-cluster \
   --controlplanes 1 \

@@ -1,4 +1,4 @@
-# How to Create a NAT Gateway with OpenTofu on AWS
+# How to Create a NAT Gateway with OpenTofu on AWS - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -37,6 +37,7 @@ provider "aws" {
 
 ```hcl
 # One EIP per AZ for high availability
+
 resource "aws_eip" "nat" {
   count  = length(var.availability_zones)
   domain = "vpc"

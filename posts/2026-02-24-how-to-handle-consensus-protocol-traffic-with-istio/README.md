@@ -266,6 +266,7 @@ Even when consensus traffic goes through the sidecar, Istio can only see TCP-lev
 
 ```promql
 # Connection health between consensus members
+
 istio_tcp_connections_opened_total{
   source_workload="my-consensus-cluster",
   destination_workload="my-consensus-cluster"

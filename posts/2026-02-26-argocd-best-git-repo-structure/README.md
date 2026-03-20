@@ -68,6 +68,7 @@ Application code and Kubernetes manifests live in separate repositories.
 
 ```text
 # Repo 1: Application code (one per service or monorepo)
+
 api-service/
   src/
   Dockerfile

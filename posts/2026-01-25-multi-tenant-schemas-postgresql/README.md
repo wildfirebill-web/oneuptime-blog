@@ -150,6 +150,7 @@ def tenant_context(conn, tenant_id):
         cursor.execute("RESET app.current_tenant")
 
 # Usage
+
 with tenant_context(conn, 'acme') as cursor:
     cursor.execute("SELECT * FROM users")
     users = cursor.fetchall()  # Only acme users

@@ -40,6 +40,7 @@ You can also set this through an ARM template or Azure CLI. Here is the Azure CL
 
 ```bash
 # Update the Stream Analytics job with a 10-minute late arrival tolerance
+
 # The value is specified in the ISO 8601 duration format
 az stream-analytics job update \
   --resource-group my-resource-group \

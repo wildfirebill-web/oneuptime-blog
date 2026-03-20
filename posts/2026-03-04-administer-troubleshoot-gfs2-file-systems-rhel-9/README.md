@@ -60,6 +60,7 @@ To add nodes beyond the original journal count:
 
 ```bash
 # Add 2 more journals
+
 sudo gfs2_jadd -j 2 /shared
 ```
 

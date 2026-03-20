@@ -55,6 +55,7 @@ This error means the total container memory (heap + overhead) exceeded the limit
 
 ```python
 # Solution: Increase memory overhead
+
 # Default overhead is max(384MB, 0.1 * executor memory)
 
 spark.conf.set("spark.executor.memory", "10g")

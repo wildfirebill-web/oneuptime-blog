@@ -55,6 +55,7 @@ For bash:
 
 ```bash
 # On local machine with cilium CLI
+
 cilium-agent completion bash > /etc/bash_completion.d/cilium-agent
 
 # Or for the current session

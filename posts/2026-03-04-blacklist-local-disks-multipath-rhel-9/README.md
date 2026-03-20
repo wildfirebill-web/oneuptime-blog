@@ -60,6 +60,7 @@ The most reliable method is blacklisting by WWID:
 
 ```bash
 # Find the WWID of local disks
+
 sudo /lib/udev/scsi_id -g -u /dev/sda
 ```
 

@@ -20,6 +20,7 @@ The storage.conf file controls the containers/storage library used by Podman.
 
 ```bash
 # Check the current storage configuration
+
 podman info --format '{{.Store.GraphDriverName}}'
 podman info --format '{{.Store.GraphRoot}}'
 podman info --format '{{.Store.RunRoot}}'

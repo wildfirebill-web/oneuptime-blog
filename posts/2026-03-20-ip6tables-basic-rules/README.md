@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, ip6tables, Firewall, Linux, Security
+Tags: IPv6, Ip6tables, Firewall, Linux, Security
 
 Description: Learn the fundamentals of ip6tables for IPv6 firewalling on Linux, including tables, chains, rule syntax, and building a basic but complete IPv6 firewall policy.
 
 ## Overview
 
-ip6tables is the Linux kernel's IPv6 packet filtering framework — the IPv6 counterpart to iptables. It uses the same netfilter architecture with tables (filter, mangle, nat) and chains (INPUT, OUTPUT, FORWARD, PREROUTING, POSTROUTING). ip6tables rules control which IPv6 packets are accepted, dropped, or modified.
+ip6tables is the Linux kernel's IPv6 packet filtering framework - the IPv6 counterpart to iptables. It uses the same netfilter architecture with tables (filter, mangle, nat) and chains (INPUT, OUTPUT, FORWARD, PREROUTING, POSTROUTING). ip6tables rules control which IPv6 packets are accepted, dropped, or modified.
 
 ## ip6tables vs iptables
 
@@ -27,6 +27,7 @@ ip6tables -[ADIRF] chain [-s src] [-d dst] [-p proto] [-i in-iface] [-o out-ifac
           [protocol-specific options] -j TARGET
 
 # Common flags:
+
 # -A: Append rule to chain
 # -I: Insert rule at position
 # -D: Delete rule
@@ -76,7 +77,7 @@ ip6tables -A INPUT -m conntrack --ctstate ESTABLISHED,RELATED -j ACCEPT
 ### Step 4: Allow Essential ICMPv6 (RFC 4890)
 
 ```bash
-# Packet Too Big — MUST allow (required for PMTUD)
+# Packet Too Big - MUST allow (required for PMTUD)
 ip6tables -A INPUT -p icmpv6 --icmpv6-type packet-too-big -j ACCEPT
 
 # Destination Unreachable
@@ -88,13 +89,13 @@ ip6tables -A INPUT -p icmpv6 --icmpv6-type time-exceeded -j ACCEPT
 # Parameter Problem
 ip6tables -A INPUT -p icmpv6 --icmpv6-type parameter-problem -j ACCEPT
 
-# NDP — only from link-local sources
+# NDP - only from link-local sources
 ip6tables -A INPUT -s fe80::/10 -p icmpv6 --icmpv6-type router-advertisement -j ACCEPT
 ip6tables -A INPUT -s fe80::/10 -p icmpv6 --icmpv6-type router-solicitation -j ACCEPT
 ip6tables -A INPUT -s fe80::/10 -p icmpv6 --icmpv6-type neighbour-solicitation -j ACCEPT
 ip6tables -A INPUT -s fe80::/10 -p icmpv6 --icmpv6-type neighbour-advertisement -j ACCEPT
 
-# Echo (ping) — allow but rate-limit
+# Echo (ping) - allow but rate-limit
 ip6tables -A INPUT -p icmpv6 --icmpv6-type echo-request -m limit --limit 5/s -j ACCEPT
 ip6tables -A INPUT -p icmpv6 --icmpv6-type echo-reply -j ACCEPT
 ```

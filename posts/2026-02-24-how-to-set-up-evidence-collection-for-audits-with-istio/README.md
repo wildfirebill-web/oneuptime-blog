@@ -35,6 +35,7 @@ EVIDENCE_DIR="/evidence/config-snapshots/$DATE"
 mkdir -p "$EVIDENCE_DIR"
 
 # mTLS configuration
+
 kubectl get peerauthentication --all-namespaces -o yaml \
   > "$EVIDENCE_DIR/peer-authentication.yaml"
 

@@ -8,7 +8,7 @@ Description: Learn about OpenTofu backend options for storing state, including l
 
 ## Introduction
 
-The OpenTofu backend determines where state files are stored and how locking is implemented. Choosing the right backend for your team — local file, cloud object storage, or a dedicated service — is one of the first infrastructure decisions you make when adopting OpenTofu.
+The OpenTofu backend determines where state files are stored and how locking is implemented. Choosing the right backend for your team - local file, cloud object storage, or a dedicated service - is one of the first infrastructure decisions you make when adopting OpenTofu.
 
 ## Local Backend (Default)
 
@@ -22,7 +22,7 @@ terraform {
 }
 ```
 
-```
+```text
 When to use: Personal projects, learning, single-user environments
 Avoid for: Team environments (no locking, no remote access)
 ```
@@ -45,6 +45,7 @@ terraform {
 
 ```bash
 # Create the S3 bucket for state storage
+
 aws s3api create-bucket \
   --bucket my-company-tofu-state \
   --region us-east-1
@@ -135,7 +136,7 @@ terraform {
 
 Use consistent key naming conventions to organize state across projects.
 
-```
+```text
 Recommended state key hierarchy:
 {company}/{team}/{environment}/{service}/terraform.tfstate
 
@@ -160,4 +161,4 @@ tofu state list
 
 ## Summary
 
-Choose your backend based on your cloud provider and team size. For AWS use S3 with native locking (`use_lockfile = true`), for Azure use Azure Blob Storage, and for GCP use GCS. All team projects should use remote backends with encryption and versioning enabled. Use a consistent key naming convention to keep state files organized. Avoid sharing a single state file across multiple environments — use separate keys per environment.
+Choose your backend based on your cloud provider and team size. For AWS use S3 with native locking (`use_lockfile = true`), for Azure use Azure Blob Storage, and for GCP use GCS. All team projects should use remote backends with encryption and versioning enabled. Use a consistent key naming convention to keep state files organized. Avoid sharing a single state file across multiple environments - use separate keys per environment.

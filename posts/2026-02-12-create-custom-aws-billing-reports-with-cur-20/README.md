@@ -37,6 +37,7 @@ First, define the export configuration:
 
 ```bash
 # Create a CUR 2.0 data export
+
 aws bcm-data-exports create-export \
   --export '{
     "Name": "monthly-detailed-billing",

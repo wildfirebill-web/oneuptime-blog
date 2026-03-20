@@ -10,7 +10,7 @@ Description: Learn how to detect if your ISP is placing you behind Carrier-Grade
 
 Carrier-Grade NAT (CGNAT), also called Large-Scale NAT (LSN), is NAT performed by your ISP before traffic reaches your home router. Your ISP assigns you a **shared private IP** from the 100.64.0.0/10 range (RFC 6598) instead of a public IP.
 
-```
+```text
 [Your PC]          [Your Router]    [ISP CGNAT]       [Internet]
 192.168.1.10 → NAT → 100.64.x.x → NAT → 203.0.113.1 → 8.8.8.8
 ```
@@ -19,7 +19,7 @@ Carrier-Grade NAT (CGNAT), also called Large-Scale NAT (LSN), is NAT performed b
 
 The shared address space defined in RFC 6598:
 
-```
+```text
 100.64.0.0/10 (100.64.0.0 – 100.127.255.255)
 ```
 
@@ -29,6 +29,7 @@ This range is specifically reserved for ISP CGNAT use and is not routable on the
 
 ```bash
 # Check if your router's WAN IP is in 100.64.0.0/10
+
 # From inside your network, check the gateway IP assigned by ISP
 
 import ipaddress
@@ -105,10 +106,10 @@ curl http://YOUR_EXTERNAL_IP:8080
 
 ## Workarounds for CGNAT
 
-1. **Request a public IP from ISP** — many offer it as an upgrade
-2. **Use a VPN with port forwarding** — e.g., Mullvad, AirVPN offer port forwarding through their servers
-3. **Use a cloud relay** — route traffic through a VPS (frp, ngrok, bore)
-4. **IPv6** — IPv6 bypasses CGNAT entirely (each device gets a global IPv6)
+1. **Request a public IP from ISP** - many offer it as an upgrade
+2. **Use a VPN with port forwarding** - e.g., Mullvad, AirVPN offer port forwarding through their servers
+3. **Use a cloud relay** - route traffic through a VPS (frp, ngrok, bore)
+4. **IPv6** - IPv6 bypasses CGNAT entirely (each device gets a global IPv6)
 
 ## Key Takeaways
 
@@ -120,5 +121,4 @@ curl http://YOUR_EXTERNAL_IP:8080
 **Related Reading:**
 
 - [How to Work Around CGNAT for Port Forwarding](https://oneuptime.com/blog/post/2026-03-20-cgnat-workaround-port-forwarding/view)
-- [How to Understand the Shared Address Space (100.64.0.0/10)](https://oneuptime.com/blog/post/2026-03-20-shared-address-space-100-64/view)
 - [How to Diagnose and Fix Double NAT Problems](https://oneuptime.com/blog/post/2026-03-20-double-nat-problems/view)

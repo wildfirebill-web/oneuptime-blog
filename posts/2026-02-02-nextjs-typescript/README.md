@@ -68,6 +68,7 @@ The quickest way to start a Next.js project with TypeScript is using create-next
 
 ```bash
 # Create a new Next.js project with TypeScript
+
 npx create-next-app@latest my-app --typescript
 
 # Navigate into the project directory

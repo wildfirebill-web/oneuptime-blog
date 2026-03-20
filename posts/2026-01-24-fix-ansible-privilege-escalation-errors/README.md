@@ -64,6 +64,7 @@ Ansible needs to provide a sudo password, but none was configured.
 
 ```bash
 # Prompt for become password when running playbook
+
 ansible-playbook playbook.yml --ask-become-pass
 
 # Or use the short form

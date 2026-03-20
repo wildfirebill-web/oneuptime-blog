@@ -34,6 +34,7 @@ To find the list of supported facilities:
 
 ```bash
 # List available Interconnect locations
+
 gcloud compute interconnects locations list \
     --format="table(name, description, facilityProvider, city)"
 ```

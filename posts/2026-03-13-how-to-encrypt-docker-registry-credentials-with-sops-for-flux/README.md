@@ -236,6 +236,7 @@ When registry passwords change, update the encrypted secret:
 
 ```bash
 # Decrypt, update credentials, re-encrypt
+
 sops registry-secret.yaml
 # Edit the password in the opened editor
 # Save and close - SOPS re-encrypts automatically

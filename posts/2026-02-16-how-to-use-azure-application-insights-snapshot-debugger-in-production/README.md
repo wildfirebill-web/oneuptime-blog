@@ -38,6 +38,7 @@ For more control, add the NuGet package to your project:
 
 ```bash
 # Install the Snapshot Collector NuGet package
+
 dotnet add package Microsoft.ApplicationInsights.SnapshotCollector
 ```
 

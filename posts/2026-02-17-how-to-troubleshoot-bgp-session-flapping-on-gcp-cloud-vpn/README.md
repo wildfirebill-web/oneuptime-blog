@@ -34,6 +34,7 @@ Check the BGP session status and history:
 
 ```bash
 # Check current BGP peer status
+
 gcloud compute routers get-status your-router \
   --region=us-central1 \
   --format="yaml(result.bgpPeerStatus)" \

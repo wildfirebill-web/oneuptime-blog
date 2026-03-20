@@ -520,6 +520,7 @@ Macros can be frustrating to debug because errors point to generated code you ca
 
 ```bash
 # Using cargo-expand (install with: cargo install cargo-expand)
+
 cargo expand
 
 # Expand a specific module

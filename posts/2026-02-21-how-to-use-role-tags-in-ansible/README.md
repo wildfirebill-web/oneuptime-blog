@@ -16,6 +16,7 @@ The simplest way to tag a role is when you list it in the `roles:` section:
 
 ```yaml
 # site.yml
+
 # Tag entire roles for selective execution
 ---
 - hosts: all

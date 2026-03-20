@@ -14,6 +14,7 @@ DigitalOcean provides native IPv6 for Droplets at no additional cost. Each Dropl
 
 ```bash
 # Using doctl CLI
+
 doctl compute droplet create my-server \
   --region nyc3 \
   --size s-2vcpu-4gb \
@@ -46,7 +47,7 @@ output "ipv6_address" {
 ## Configuring the OS for IPv6
 
 ```bash
-# On Ubuntu 22.04 — DigitalOcean auto-configures IPv6 via cloud-init
+# On Ubuntu 22.04 - DigitalOcean auto-configures IPv6 via cloud-init
 # Verify the address is assigned
 ip -6 addr show eth0
 # inet6 2604:a880:400:d0::1/64 scope global

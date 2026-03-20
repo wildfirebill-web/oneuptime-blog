@@ -22,6 +22,7 @@ This provider is different from cloud-specific DNS providers like AWS Route 53 o
 
 ```hcl
 # versions.tf - Declare the DNS provider
+
 terraform {
   required_version = ">= 1.0"
 

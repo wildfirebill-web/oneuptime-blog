@@ -14,6 +14,7 @@ When a critical kernel CVE is announced, you can apply the fix immediately using
 
 ```bash
 # Get the exact kernel version
+
 uname -r
 # Example output: 5.14.0-362.8.1.el9_3.x86_64
 

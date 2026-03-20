@@ -20,6 +20,7 @@ Each compose project uses a project name prefix to avoid container name collisio
 
 ```bash
 # Project A - runs in /home/user/project-a
+
 cd /home/user/project-a
 podman-compose up -d
 # Creates: project-a_web_1, project-a_db_1

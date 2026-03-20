@@ -31,7 +31,7 @@ graph LR
 
 Set a lower MED on your primary entry point and a higher MED on the backup:
 
-```
+```text
 ! On R1 (primary entry) - set low MED to attract traffic
 route-map SET_MED_PRIMARY permit 10
  set metric 100
@@ -53,7 +53,7 @@ router bgp 65001
 
 You can set different MED values for different prefixes to split inbound load:
 
-```
+```text
 ip prefix-list SITE_A_PREFIX seq 10 permit 192.168.10.0/24
 ip prefix-list SITE_B_PREFIX seq 10 permit 192.168.20.0/24
 
@@ -73,7 +73,7 @@ route-map R1_OUT permit 30
 
 By default, Cisco IOS only compares MED between routes from the same neighboring AS. Enable `always-compare-med` to compare MED regardless of origin:
 
-```
+```text
 router bgp 65001
  ! Compare MED from ALL neighbors, not just same-AS peers
  bgp always-compare-med
@@ -82,11 +82,11 @@ router bgp 65001
  bgp bestpath med missing-as-worst
 ```
 
-Use `always-compare-med` carefully—it changes path selection behavior globally.
+Use `always-compare-med` carefully-it changes path selection behavior globally.
 
 ## Step 4: Verify MED Values in BGP Table
 
-```
+```text
 ! View routes sent to a neighbor
 Router# show ip bgp neighbors 203.0.113.1 advertised-routes
 
@@ -103,7 +103,7 @@ Router# show ip bgp 192.168.0.0/24
 
 ## Step 5: Limitations of MED
 
-MED is only a **suggestion**—the neighboring AS can choose to ignore it. Many ISPs do ignore customer MED values. For reliable inbound traffic control, consider:
+MED is only a **suggestion**-the neighboring AS can choose to ignore it. Many ISPs do ignore customer MED values. For reliable inbound traffic control, consider:
 
 - **AS-path prepending:** More universally respected
 - **Prefix deaggregation:** Advertise more-specifics via one ISP (use carefully)

@@ -64,6 +64,7 @@ server = true
 bootstrap_expect = 3
 
 # Network configuration
+
 bind_addr = "10.1.0.10"
 client_addr = "0.0.0.0"
 

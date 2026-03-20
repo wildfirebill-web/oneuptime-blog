@@ -10,6 +10,7 @@ Description: Learn how to delete static routes on Linux using ip route del and h
 
 ```bash
 # Delete a specific network route
+
 ip route del 10.0.0.0/24
 
 # Delete route via a specific gateway

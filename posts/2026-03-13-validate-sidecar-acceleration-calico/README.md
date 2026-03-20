@@ -24,6 +24,7 @@ This is one of the most impactful performance optimizations available for micros
 
 ```bash
 # Verify eBPF is enabled
+
 calicoctl get felixconfiguration default -o yaml | grep bpfEnabled
 
 # Check sidecar proxy detection

@@ -28,6 +28,7 @@ For small setups, inotifywait works fine. Watchman offers advantages for:
 
 ```bash
 # Install latest Watchman release
+
 WATCHMAN_VERSION="2024.01.22.00"
 
 # Download binary release

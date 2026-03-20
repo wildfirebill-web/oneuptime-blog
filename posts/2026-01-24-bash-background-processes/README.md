@@ -33,6 +33,7 @@ Background processes are essential for building efficient Bash scripts that can 
 #!/bin/bash
 
 # Run command in background with &
+
 long_running_command &
 
 # Get the PID of the last background process

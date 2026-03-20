@@ -29,6 +29,7 @@ Start with the access logs on both sides:
 
 ```bash
 # Check the client sidecar logs
+
 kubectl logs <client-pod> -c istio-proxy -n production --tail=50
 
 # Check the server sidecar logs

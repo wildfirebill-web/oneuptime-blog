@@ -34,6 +34,7 @@ $state = $module.Params.state
 $value = $module.Params.value
 
 # Check current state
+
 $current = Get-ItemProperty -Path "HKLM:\SOFTWARE\MyApp" -Name $name -ErrorAction SilentlyContinue
 
 if ($state -eq 'present') {

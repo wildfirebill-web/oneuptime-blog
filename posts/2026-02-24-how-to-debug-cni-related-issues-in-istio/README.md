@@ -66,6 +66,7 @@ The CNI plugin logs are your best friend here. Pull the logs from the CNI Daemon
 
 ```bash
 # Find the CNI pod on the problematic node
+
 NODE_NAME="your-node-name"
 CNI_POD=$(kubectl get pods -n istio-system -l k8s-app=istio-cni-node \
   --field-selector spec.nodeName=${NODE_NAME} -o jsonpath='{.items[0].metadata.name}')

@@ -22,6 +22,7 @@ Calico node diagnostics focus on the health and configuration of individual clus
 
 ```bash
 # Find which node a problem pod is running on
+
 kubectl get pod <pod-name> -n <namespace> -o jsonpath='{.spec.nodeName}'
 
 # Get the calico-node pod running on that node

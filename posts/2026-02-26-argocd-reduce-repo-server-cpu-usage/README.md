@@ -31,6 +31,7 @@ The repo server caches generated manifests. If the Git commit hash has not chang
 
 ```yaml
 # argocd-cmd-params-cm ConfigMap
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

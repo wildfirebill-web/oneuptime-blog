@@ -16,6 +16,7 @@ XRDP is available from the EPEL repository.
 
 ```bash
 # Enable EPEL repository
+
 sudo dnf install -y epel-release
 
 # Install XRDP and the TigerVNC backend

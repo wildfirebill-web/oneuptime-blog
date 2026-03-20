@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, syslog-ng, Syslog, Log Management, Linux
+Tags: IPv6, Syslog-ng, Syslog, Log Management, Linux
 
 Description: Configure syslog-ng to accept log messages from IPv6 sources, define IPv6-aware sources and destinations, and filter logs by IPv6 source address ranges.
 
@@ -26,6 +26,7 @@ options {
 };
 
 # Source: accept UDP syslog on all IPv6 interfaces
+
 source s_ipv6_udp {
     network(
         ip("::"),

@@ -14,7 +14,7 @@ Firewalls often need to participate in OSPF to dynamically learn and advertise r
 
 ### Enable FRR and Configure OSPF
 
-```
+```text
 Services → FRR Global/Zebra:
   Enable FRR: ✓
   Default Router ID: 10.0.0.1
@@ -27,7 +27,7 @@ Services → FRR OSPF:
 
 ### Add OSPF Networks via the Web UI
 
-```
+```text
 FRR OSPF → Networks:
   Network: 10.0.0.0/30, Area: 0.0.0.0    ← WAN transit link
   Network: 192.168.1.0/24, Area: 0.0.0.1  ← LAN
@@ -50,7 +50,7 @@ EOF
 
 ### Enable OSPF on a Virtual Router
 
-```
+```text
 Network → Virtual Routers → [Your VR] → OSPF:
   Enable: ✓
   Router ID: 10.0.0.2
@@ -71,6 +71,7 @@ Add an Interface to the Area:
 
 ```bash
 # Commit the following candidate configuration via CLI
+
 set network virtual-router vr1 protocol ospf enable yes
 set network virtual-router vr1 protocol ospf router-id 10.0.0.2
 set network virtual-router vr1 protocol ospf area 0.0.0.0 type normal
@@ -82,7 +83,7 @@ commit
 
 ### Firewall Policy for OSPF Traffic (PAN-OS)
 
-```
+```text
 Policy → Security:
 Add Rule:
   Name: Allow-OSPF
@@ -96,7 +97,7 @@ Add Rule:
 
 ### Enable OSPF via CLI
 
-```
+```text
 # FortiOS CLI
 config router ospf
     set router-id 10.0.0.3
@@ -127,7 +128,7 @@ end
 
 ### Verify on FortiGate
 
-```
+```text
 get router info ospf neighbor
 get router info ospf interface
 get router info routing-table ospf

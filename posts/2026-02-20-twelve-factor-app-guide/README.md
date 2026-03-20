@@ -49,6 +49,7 @@ Never rely on system-wide packages. Declare all dependencies explicitly in a man
 
 ```dockerfile
 # Dockerfile demonstrating explicit dependency declaration
+
 FROM python:3.12-slim
 
 WORKDIR /app

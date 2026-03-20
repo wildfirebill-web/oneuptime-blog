@@ -22,6 +22,7 @@ Create the project:
 
 ```bash
 # Create project structure
+
 mkdir -p nim-docker-demo/src
 cd nim-docker-demo
 ```
@@ -345,7 +346,7 @@ Run tests:
 docker build --target test -t nim-test .
 ```
 
-## Resource Usage
+Resource Usage
 
 Nim binaries are remarkably efficient:
 

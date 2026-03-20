@@ -30,6 +30,7 @@ Always capture the current state before making label changes:
 ```bash
 #!/bin/bash
 # snapshot-labels.sh
+
 # Creates a snapshot of all Calico resource labels
 
 SNAPSHOT_DIR="label-snapshots/$(date +%Y%m%d-%H%M%S)"

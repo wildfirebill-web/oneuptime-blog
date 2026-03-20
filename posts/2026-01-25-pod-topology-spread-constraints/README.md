@@ -418,6 +418,7 @@ spec:
 
 ```bash
 # View zone labels on nodes
+
 kubectl get nodes -L topology.kubernetes.io/zone
 
 # View all topology labels

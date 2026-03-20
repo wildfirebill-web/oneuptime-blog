@@ -68,6 +68,7 @@ Build a custom image with Flyway and your migrations:
 
 ```dockerfile
 # Dockerfile
+
 FROM flyway/flyway:9.22
 
 # Copy migration files

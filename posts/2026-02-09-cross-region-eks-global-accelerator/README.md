@@ -64,6 +64,7 @@ Using Terraform for both regions:
 
 ```hcl
 # multi-region-eks.tf
+
 module "eks_east" {
   source = "./modules/eks"
 

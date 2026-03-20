@@ -121,6 +121,7 @@ resource.type="cloud_run_revision" AND (severity=ERROR OR severity=CRITICAL)
 
 ```text
 # Compute Engine instances
+
 resource.type="gce_instance"
 
 # Cloud Run services

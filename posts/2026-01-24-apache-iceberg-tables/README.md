@@ -44,6 +44,7 @@ Iceberg maintains metadata separately from data files, which enables many of its
 
 ```python
 # create_iceberg_table.py
+
 # This example uses PySpark to create an Iceberg table with partitioning
 
 from pyspark.sql import SparkSession

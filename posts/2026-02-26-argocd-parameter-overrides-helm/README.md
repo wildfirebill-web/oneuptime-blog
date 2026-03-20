@@ -62,6 +62,7 @@ spec:
 
 ```bash
 # Set a single parameter
+
 argocd app set nginx-production --helm-set replicaCount=5
 
 # Set nested parameters

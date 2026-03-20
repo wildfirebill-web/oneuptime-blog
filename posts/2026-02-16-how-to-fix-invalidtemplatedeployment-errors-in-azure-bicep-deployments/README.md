@@ -23,6 +23,7 @@ InvalidTemplateDeployment is a wrapper error. The actual cause is in the inner e
 
 ```bash
 # Get detailed deployment error information
+
 az deployment group show \
   --resource-group my-rg \
   --name my-deployment \

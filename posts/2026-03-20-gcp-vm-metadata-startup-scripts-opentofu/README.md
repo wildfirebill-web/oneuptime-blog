@@ -14,6 +14,7 @@ GCP VM metadata stores key-value pairs accessible from within the VM at `metadat
 
 ```hcl
 # main.tf - VM with startup script in metadata
+
 resource "google_compute_instance" "web_server" {
   name         = "web-server"
   machine_type = "e2-medium"

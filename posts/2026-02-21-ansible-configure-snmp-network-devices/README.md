@@ -18,6 +18,7 @@ Start by defining your SNMP configuration in group variables. This keeps the dat
 
 ```yaml
 # group_vars/all_network.yml - Shared SNMP configuration
+
 ---
 snmp_config:
   # SNMPv2c communities (for legacy monitoring tools)

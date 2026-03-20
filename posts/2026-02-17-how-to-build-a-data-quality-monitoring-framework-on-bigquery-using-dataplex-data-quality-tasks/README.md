@@ -28,6 +28,7 @@ flowchart TD
 
 ```bash
 # Enable the Dataplex API
+
 gcloud services enable dataplex.googleapis.com
 
 # Create a Dataplex lake for organizing data quality assets

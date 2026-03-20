@@ -429,6 +429,7 @@ Test webhook behavior:
 
 ```bash
 # Create a minimal application
+
 kubectl apply -f - <<EOF
 apiVersion: example.com/v1
 kind: Application

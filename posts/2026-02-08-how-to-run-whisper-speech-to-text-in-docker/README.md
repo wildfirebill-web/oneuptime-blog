@@ -28,6 +28,7 @@ The simplest way to run Whisper is using a pre-built container.
 
 ```bash
 # Run Whisper with the base model on CPU
+
 docker run --rm \
   -v $(pwd)/audio:/audio \
   onerahmet/openai-whisper-asr-webservice:latest \

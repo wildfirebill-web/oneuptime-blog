@@ -29,6 +29,7 @@ Each business domain gets its own Dataplex lake. A lake is the top-level organiz
 
 ```bash
 # Create a lake for each business domain
+
 # Each lake represents a domain team's data territory
 
 # Orders domain

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Grafana, Kubernetes, Ingresses, NGINX, URL Rewrite
+Tags: Grafana, Kubernetes, Ingresses, Nginx, URL Rewrite
 
 Description: Learn how to configure Kubernetes Ingress URL rewrites for Grafana when serving from a subpath, including Nginx Ingress annotations and Grafana root_url configuration.
 
@@ -63,6 +63,7 @@ Grafana must know its public URL to generate correct links for assets, redirects
 ```ini
 [server]
 # The full public URL including subpath
+
 root_url = https://monitoring.example.com/grafana/
 
 # Serve from subpath

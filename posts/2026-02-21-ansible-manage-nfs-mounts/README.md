@@ -18,6 +18,7 @@ This playbook installs and configures an NFS server with exports:
 
 ```yaml
 # configure-nfs-server.yml - Set up NFS server
+
 ---
 - name: Configure NFS Server
   hosts: nfs_servers

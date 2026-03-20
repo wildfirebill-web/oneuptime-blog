@@ -14,7 +14,7 @@ Cross-data-center replication over IPv6 eliminates NAT traversal issues and simp
 
 Dedicate a specific subnet for replication traffic to allow targeted QoS and firewall policies:
 
-```
+```text
 DC1 Replication Subnet: 2001:db8:1:repl::/64  (hex: 2001:db8:1:7265::/64)
 DC2 Replication Subnet: 2001:db8:2:repl::/64
 
@@ -26,8 +26,9 @@ DC2 DB Replica:  2001:db8:2:7265::10
 
 Configure PostgreSQL primary to accept replication connections over IPv6:
 
-```
+```text
 # postgresql.conf on Primary (DC1)
+
 listen_addresses = '*'
 wal_level = replica
 max_wal_senders = 5
@@ -38,7 +39,7 @@ host  replication  replicator  2001:db8:2:7265::/64  scram-sha-256
 
 Connect the standby to the primary using an IPv6 connection string:
 
-```
+```text
 # recovery.conf / postgresql.conf on Replica (DC2)
 primary_conninfo = 'host=2001:db8:1:7265::10 port=5432 user=replicator password=secret'
 ```
@@ -72,7 +73,7 @@ ip6tables -A INPUT -p tcp --dport 5432 -j DROP
 
 Configure Ceph monitors and OSDs to bind to IPv6 addresses:
 
-```
+```text
 # ceph.conf
 [global]
 ms_bind_ipv6 = true

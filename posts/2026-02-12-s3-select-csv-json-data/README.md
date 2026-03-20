@@ -45,6 +45,7 @@ Query it with the AWS CLI.
 
 ```bash
 # Query CSV data - find all sales in us-east with revenue over 5000
+
 aws s3api select-object-content \
   --bucket analytics-bucket \
   --key sales/2025-data.csv \

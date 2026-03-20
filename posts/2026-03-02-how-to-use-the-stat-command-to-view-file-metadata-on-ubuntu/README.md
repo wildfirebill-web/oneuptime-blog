@@ -51,6 +51,7 @@ The difference between Size and Blocks matters for sparse files:
 
 ```bash
 # Create a sparse file (appears large, uses minimal disk space)
+
 dd if=/dev/zero of=/tmp/sparse.dat bs=1 count=0 seek=1G
 
 stat /tmp/sparse.dat

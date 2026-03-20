@@ -83,6 +83,7 @@ The following configuration demonstrates simple change detection using path-base
 # .gitlab-ci.yml - Root configuration file
 
 # Define stages for the pipeline execution order
+
 stages:
   - build
   - test

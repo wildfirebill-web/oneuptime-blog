@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: PowerDNS, Recursor, DNS, IPv6, Recursive, pdns-recursor, DNSSEC
+Tags: PowerDNS, Recursor, DNS, IPv6, Recursive, Pdns-recursor, DNSSEC
 
 Description: Configure PowerDNS Recursor to listen on IPv6, resolve queries using IPv6 transport, and apply access controls for IPv6 client networks.
 
@@ -22,6 +22,7 @@ apt-get install -y pdns-recursor
 # /etc/powerdns/recursor.conf
 
 # Listen on all IPv4 and IPv6 interfaces
+
 local-address=0.0.0.0, ::
 
 # Or specific addresses

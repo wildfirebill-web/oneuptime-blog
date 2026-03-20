@@ -27,6 +27,7 @@ This playbook collects information about all block devices on your servers:
 
 ```yaml
 # discover-disks.yml - Find available disks on target hosts
+
 ---
 - name: Discover Available Disks
   hosts: all

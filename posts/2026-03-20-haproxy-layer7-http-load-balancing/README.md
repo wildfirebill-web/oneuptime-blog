@@ -8,7 +8,7 @@ Description: Configure HAProxy in HTTP mode for Layer 7 load balancing, enabling
 
 ## Introduction
 
-Layer 7 (HTTP mode) load balancing allows HAProxy to inspect HTTP content—headers, URLs, cookies—enabling sophisticated routing decisions. You can route `/api/` to one backend, `/static/` to another, and add or modify HTTP headers in transit.
+Layer 7 (HTTP mode) load balancing allows HAProxy to inspect HTTP content-headers, URLs, cookies-enabling sophisticated routing decisions. You can route `/api/` to one backend, `/static/` to another, and add or modify HTTP headers in transit.
 
 ## Complete HTTP Load Balancer Configuration
 
@@ -39,6 +39,7 @@ defaults
     timeout http-keep-alive 10s  # Idle time for keepalive connections
 
 # Frontend: HTTP entry point
+
 frontend http_in
     bind 203.0.113.10:80
 

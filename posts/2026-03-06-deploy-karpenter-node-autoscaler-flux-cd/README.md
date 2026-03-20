@@ -57,6 +57,7 @@ clusters/
 
 ```yaml
 # clusters/my-cluster/karpenter/namespace.yaml
+
 apiVersion: v1
 kind: Namespace
 metadata:

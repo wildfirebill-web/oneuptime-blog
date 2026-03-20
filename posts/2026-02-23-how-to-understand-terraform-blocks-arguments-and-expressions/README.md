@@ -18,6 +18,7 @@ A block is a container for content. It has a type, zero or more labels, and a bo
 
 ```hcl
 # Block type: "resource"
+
 # Labels: "aws_instance" (resource type) and "web" (local name)
 # Body: everything inside the curly braces
 resource "aws_instance" "web" {

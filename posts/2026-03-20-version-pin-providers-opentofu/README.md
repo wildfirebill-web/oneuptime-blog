@@ -8,7 +8,7 @@ Description: Learn how to pin provider versions in OpenTofu using version constr
 
 ## Introduction
 
-Provider version pinning ensures that everyone on your team — and every CI/CD pipeline — uses the same provider binary. Without pinning, `tofu init` can silently upgrade providers between runs, introducing breaking changes.
+Provider version pinning ensures that everyone on your team - and every CI/CD pipeline - uses the same provider binary. Without pinning, `tofu init` can silently upgrade providers between runs, introducing breaking changes.
 
 ## Version Constraint Syntax
 
@@ -27,7 +27,7 @@ terraform {
     }
     azurerm = {
       source  = "hashicorp/azurerm"
-      version = "= 3.98.0"   # Exact pin — maximum stability, less flexibility
+      version = "= 3.98.0"   # Exact pin - maximum stability, less flexibility
     }
     random = {
       source  = "hashicorp/random"
@@ -51,7 +51,8 @@ terraform {
 After running `tofu init`, the lock file records the exact resolved version:
 
 ```hcl
-# .terraform.lock.hcl — ALWAYS commit this file
+# .terraform.lock.hcl - ALWAYS commit this file
+
 provider "registry.opentofu.org/hashicorp/aws" {
   version     = "5.40.0"
   constraints = "~> 5.0"

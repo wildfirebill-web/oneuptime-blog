@@ -28,6 +28,7 @@ To ensure a specific, tested version of Flux runs on your cluster, pin the versi
 
 ```yaml
 # flux-instance-exact-version.yaml
+
 # FluxInstance pinned to an exact Flux version
 apiVersion: fluxcd.controlplane.io/v1
 kind: FluxInstance

@@ -12,7 +12,7 @@ Storing OpenTofu configurations in version control is the foundation of GitOps f
 
 ## What to Commit
 
-```
+```text
 ALWAYS COMMIT:
   *.tf                        → All configuration files
   .terraform.lock.hcl         → Provider version lock file (critical)
@@ -29,7 +29,7 @@ SOMETIMES COMMIT:
 
 ## What NOT to Commit
 
-```
+```text
 NEVER COMMIT:
   .terraform/                 → Downloaded providers and modules (large binaries)
   *.tfstate                   → State files (contain secrets)
@@ -48,6 +48,7 @@ NEVER COMMIT:
 # .gitignore for OpenTofu projects
 
 # Local .terraform directories
+
 **/.terraform/
 
 # .tfstate files
@@ -72,7 +73,7 @@ override.tf.json
 *_override.tf
 *_override.tf.json
 
-# Include lock file — important for reproducibility
+# Include lock file - important for reproducibility
 !.terraform.lock.hcl
 
 # Binary plan files
@@ -99,7 +100,7 @@ git commit -m "changes"
 
 ## Branch Strategy
 
-```
+```text
 main          → Production-ready configurations (protected)
   └── staging → Staging configurations (requires passing CI)
        └── feature/* → Feature branches (PR against staging or main)

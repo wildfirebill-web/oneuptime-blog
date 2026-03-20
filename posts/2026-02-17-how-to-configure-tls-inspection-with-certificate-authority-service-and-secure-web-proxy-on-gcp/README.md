@@ -46,6 +46,7 @@ You need:
 
 ```bash
 # Enable required APIs
+
 gcloud services enable privateca.googleapis.com
 gcloud services enable networksecurity.googleapis.com
 gcloud services enable certificatemanager.googleapis.com

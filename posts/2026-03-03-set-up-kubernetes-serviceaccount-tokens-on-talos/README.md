@@ -18,6 +18,7 @@ In modern Kubernetes (1.22+), the tokens are projected tokens with bounded lifet
 
 ```bash
 # List ServiceAccounts in a namespace
+
 kubectl get serviceaccounts -n default
 
 # See the default ServiceAccount details

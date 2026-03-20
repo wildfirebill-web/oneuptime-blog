@@ -42,6 +42,7 @@ Create dedicated service accounts for emergency access. These accounts should be
 
 ```bash
 # Create a break-glass project that is separate from production
+
 gcloud projects create break-glass-project \
     --name="Break Glass Access" \
     --organization=ORG_ID

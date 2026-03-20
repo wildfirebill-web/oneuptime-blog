@@ -41,6 +41,7 @@ Create an AKS cluster with a system node pool and a user node pool for WooCommer
 
 ```bash
 # Create a resource group
+
 az group create --name rg-woocommerce --location eastus
 
 # Create the AKS cluster

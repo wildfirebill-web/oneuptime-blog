@@ -29,6 +29,7 @@ Configure Cilium to expose metrics for Prometheus scraping:
 
 ```bash
 # Upgrade Cilium with metrics enabled
+
 helm upgrade cilium cilium/cilium --version 1.16.5 \
   --namespace kube-system \
   --reuse-values \

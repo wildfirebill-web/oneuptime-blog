@@ -47,6 +47,7 @@ Here is what the relevant section of the machine config looks like:
 
 ```yaml
 # Machine configuration with SideroLink settings
+
 machine:
   network:
     interfaces:

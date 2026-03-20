@@ -44,6 +44,7 @@ BuildKit is the default builder in Docker Desktop and recent Docker Engine versi
 
 ```bash
 # Set environment variable for a single build
+
 DOCKER_BUILDKIT=1 docker build -t myimage .
 
 # Or enable permanently in your shell profile

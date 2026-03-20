@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: TCP, WAN, Performance, Latency, sysctl, Linux, High-Latency
+Tags: TCP, WAN, Performance, Latency, Sysctl, Linux, High-Latency
 
 Description: Learn how to optimize TCP for high-latency WAN links by tuning socket buffers, enabling BBR, adjusting keepalive settings, and using TCP optimization appliances.
 
@@ -10,15 +10,16 @@ Description: Learn how to optimize TCP for high-latency WAN links by tuning sock
 
 On high-latency WAN links (>50ms RTT), TCP performance degrades for several reasons:
 
-1. **Small buffers** — Default buffers can't keep the pipe full (BDP constraint)
-2. **CUBIC slow start** — Takes many RTTs to ramp up to full speed
-3. **Packet loss sensitivity** — CUBIC halves the window on any loss event
-4. **Keepalive timeouts** — Connections die prematurely over idle periods
+1. **Small buffers** - Default buffers can't keep the pipe full (BDP constraint)
+2. **CUBIC slow start** - Takes many RTTs to ramp up to full speed
+3. **Packet loss sensitivity** - CUBIC halves the window on any loss event
+4. **Keepalive timeouts** - Connections die prematurely over idle periods
 
 ## Step 1: Calculate Your WAN BDP
 
 ```bash
 # Measure RTT to your WAN destination
+
 ping -c 20 remote-office.example.com
 # Assume avg RTT = 80ms for cross-country
 
@@ -47,7 +48,7 @@ net.ipv4.tcp_window_scaling = 1
 net.ipv4.tcp_timestamps = 1
 net.ipv4.tcp_sack = 1
 
-# Slow start after idle — reduce to avoid large initial bursts
+# Slow start after idle - reduce to avoid large initial bursts
 net.ipv4.tcp_slow_start_after_idle = 0
 
 # Increase keepalive settings for WAN idle connections

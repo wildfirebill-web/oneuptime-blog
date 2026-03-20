@@ -18,6 +18,7 @@ Consider this task that deploys a Prometheus alerting rule:
 
 ```yaml
 # This will FAIL because Ansible tries to evaluate {{ $value }} as Jinja2
+
 - name: Deploy Prometheus alert rule
   copy:
     content: |

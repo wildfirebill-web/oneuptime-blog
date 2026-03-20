@@ -38,6 +38,7 @@ To move all 500GB from `/dev/sdb`, you need at least 500GB free across other PVs
 
 ```bash
 # Move everything off /dev/sdb to anywhere with free space in data_vg
+
 sudo pvmove /dev/sdb
 ```
 

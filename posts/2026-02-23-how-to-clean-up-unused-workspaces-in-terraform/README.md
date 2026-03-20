@@ -18,6 +18,7 @@ The first step is figuring out which workspaces are actually unused. There are s
 
 ```bash
 # Get a list of all workspaces
+
 terraform workspace list
 
 # Count them

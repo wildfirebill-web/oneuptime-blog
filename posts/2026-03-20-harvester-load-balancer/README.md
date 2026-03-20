@@ -29,6 +29,7 @@ The load balancer is included in Harvester but may need to be explicitly enabled
 
 ```bash
 # Check if the load balancer controller is running
+
 kubectl get pods -n harvester-system | grep lb
 
 # Check the load balancer CRDs
@@ -45,10 +46,11 @@ kubectl get crd | grep loadbalancer
 2. Click **Create**
 3. Configure:
 
-```
+```text
 Name:            web-app-lb
 Namespace:       default
 Description:     Load balancer for web application VMs
+
 ```
 
 ### Via kubectl

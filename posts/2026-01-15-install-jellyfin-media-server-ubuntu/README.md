@@ -37,6 +37,7 @@ Check your Ubuntu version and update your system before proceeding.
 
 ```bash
 # Display current Ubuntu version to verify compatibility
+
 lsb_release -a
 
 # Update package lists and upgrade existing packages

@@ -29,6 +29,7 @@ Cilium and Hubble require specific Linux kernel features:
 
 ```bash
 # Check kernel version on cluster nodes
+
 kubectl get nodes -o json | python3 -c "
 import json, sys
 nodes = json.load(sys.stdin)

@@ -8,18 +8,18 @@ Description: Understand IPv6 Unique Local Addresses (ULA) in the fc00::/7 range,
 
 ## Introduction
 
-IPv6 Unique Local Addresses (ULA) serve a similar purpose to IPv4 private addresses (10.0.0.0/8, 172.16.0.0/12, 192.168.0.0/16) — they are used for local communications within a site or organization and are not routable on the public internet. Defined in RFC 4193, ULAs occupy the `fc00::/7` prefix range.
+IPv6 Unique Local Addresses (ULA) serve a similar purpose to IPv4 private addresses (10.0.0.0/8, 172.16.0.0/12, 192.168.0.0/16) - they are used for local communications within a site or organization and are not routable on the public internet. Defined in RFC 4193, ULAs occupy the `fc00::/7` prefix range.
 
 ## ULA Address Structure
 
 The `fc00::/7` block encompasses two halves:
 
-- `fc00::/8` — Reserved but not yet defined
-- `fd00::/8` — Currently allocated for use (the practical ULA range)
+- `fc00::/8` - Reserved but not yet defined
+- `fd00::/8` - Currently allocated for use (the practical ULA range)
 
 In practice, all deployed ULAs use the `fd00::/8` range. A ULA address has this structure:
 
-```
+```text
 | 7 bits  | 1 bit | 40 bits  | 16 bits  | 64 bits          |
 | fc00::/7| L bit | Global ID| Subnet ID| Interface ID     |
 ```
@@ -35,6 +35,7 @@ RFC 4193 defines an algorithm for generating a pseudo-random Global ID based on 
 
 ```bash
 # Generate a random ULA prefix using Python
+
 python3 -c "
 import os
 import binascii
@@ -52,7 +53,7 @@ print(f'Your ULA prefix: {prefix}')
 ```
 
 Example output:
-```
+```text
 Your ULA prefix: fdb4:a3c1:82ef::/48
 ```
 

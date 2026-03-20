@@ -71,6 +71,7 @@ The hosting plan has the biggest impact on cold start behavior.
 
 ```bash
 # Check your current hosting plan
+
 az functionapp show \
   --resource-group my-rg \
   --name my-function-app \

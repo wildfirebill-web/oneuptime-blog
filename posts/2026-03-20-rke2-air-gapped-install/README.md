@@ -20,6 +20,7 @@ Air-gapped environments are isolated networks with no direct internet access, co
 
 ```bash
 # Set the RKE2 version to download
+
 RKE2_VERSION="v1.28.8+rke2r1"
 
 # Create a directory for artifacts

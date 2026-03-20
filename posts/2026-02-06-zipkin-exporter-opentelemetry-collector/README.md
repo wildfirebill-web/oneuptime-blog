@@ -35,6 +35,7 @@ Here's a simple configuration to send traces from the OpenTelemetry Collector to
 
 ```yaml
 # Receive traces in OpenTelemetry Protocol format
+
 receivers:
   otlp:
     protocols:

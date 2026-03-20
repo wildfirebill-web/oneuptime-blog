@@ -1,14 +1,14 @@
-# How to Use the reverse Function in OpenTofu
+# How to Use the reverse Function in OpenTofu - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, reverse, List Functions, HCL, Infrastructure as Code, DevOps
+Tags: OpenTofu, Reverse, List Functions, HCL, Infrastructure as Code, DevOps
 
 Description: Learn how to use the reverse function in OpenTofu to reverse the order of elements in a list.
 
 ---
 
-`reverse()` takes a list and returns a new list with the same elements in reversed order. Note: this is for reversing lists — for reversing strings, use `strrev()`.
+`reverse()` takes a list and returns a new list with the same elements in reversed order. Note: this is for reversing lists - for reversing strings, use `strrev()`.
 
 ---
 
@@ -121,9 +121,9 @@ locals {
 locals {
   items = ["banana", "apple", "cherry"]
 
-  reversed = reverse(local.items)   # ["cherry", "apple", "banana"] — original order reversed
-  sorted   = sort(local.items)      # ["apple", "banana", "cherry"] — alphabetically sorted
-  sorted_desc = reverse(sort(local.items))  # ["cherry", "banana", "apple"] — desc sort
+  reversed = reverse(local.items)   # ["cherry", "apple", "banana"] - original order reversed
+  sorted   = sort(local.items)      # ["apple", "banana", "cherry"] - alphabetically sorted
+  sorted_desc = reverse(sort(local.items))  # ["cherry", "banana", "apple"] - desc sort
 }
 ```
 

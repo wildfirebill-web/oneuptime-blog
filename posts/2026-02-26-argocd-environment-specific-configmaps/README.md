@@ -16,6 +16,7 @@ Start by defining a base ConfigMap with default values that work for development
 
 ```yaml
 # base/configmap.yaml
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

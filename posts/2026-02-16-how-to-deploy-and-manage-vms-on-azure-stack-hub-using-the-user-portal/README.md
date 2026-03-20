@@ -136,6 +136,7 @@ For Linux VMs, connect via SSH using the public IP or private IP (if you have VP
 
 ```bash
 # Connect to a Linux VM via SSH
+
 ssh azureuser@10.20.1.4
 
 # Or using the public IP

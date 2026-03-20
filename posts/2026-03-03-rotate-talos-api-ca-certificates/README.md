@@ -38,6 +38,7 @@ Before starting rotation, check the current state of your certificates.
 
 ```bash
 # Check Talos API certificate expiration
+
 talosctl -n 10.0.1.10 get certificate
 
 # View the current CA certificate details

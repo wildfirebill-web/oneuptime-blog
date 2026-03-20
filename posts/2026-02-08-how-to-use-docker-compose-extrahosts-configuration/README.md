@@ -18,6 +18,7 @@ This is the Docker Compose equivalent of the `--add-host` flag in `docker run`.
 
 ```yaml
 # Basic extra_hosts usage
+
 version: "3.8"
 
 services:

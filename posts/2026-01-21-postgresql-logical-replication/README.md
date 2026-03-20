@@ -35,6 +35,7 @@ On the source (publisher) server:
 
 ```conf
 # postgresql.conf
+
 wal_level = logical                  # Required for logical replication
 max_wal_senders = 10                 # Max replication connections
 max_replication_slots = 10           # Max replication slots

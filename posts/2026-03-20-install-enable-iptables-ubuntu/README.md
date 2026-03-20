@@ -12,6 +12,7 @@ Ubuntu uses nftables as its default firewall backend on modern versions, but ipt
 
 ```bash
 # iptables is usually pre-installed on Ubuntu
+
 iptables --version
 
 # View current rules (likely empty on fresh install)
@@ -44,9 +45,9 @@ sudo iptables -L OUTPUT --line-numbers
 sudo iptables -L FORWARD --line-numbers
 
 # Three default tables:
-# filter (default) — INPUT, FORWARD, OUTPUT chains
-# nat             — PREROUTING, POSTROUTING, OUTPUT chains
-# mangle          — packet modification
+# filter (default) - INPUT, FORWARD, OUTPUT chains
+# nat             - PREROUTING, POSTROUTING, OUTPUT chains
+# mangle          - packet modification
 ```
 
 ## Set Up a Basic Firewall
@@ -55,7 +56,7 @@ Start with safe rules that don't lock you out:
 
 ```bash
 #!/bin/bash
-# setup-iptables.sh — Basic firewall setup
+# setup-iptables.sh - Basic firewall setup
 
 # Flush existing rules
 sudo iptables -F
@@ -132,4 +133,4 @@ sudo iptables -L INPUT -n -v --line-numbers
 #   45  2340 ACCEPT     tcp  --  *      *       0.0.0.0/0 0.0.0.0/0  tcp dpt:22
 ```
 
-iptables is the foundation of Linux firewalling — even when using UFW or firewalld, those tools generate iptables rules underneath, making iptables knowledge essential.
+iptables is the foundation of Linux firewalling - even when using UFW or firewalld, those tools generate iptables rules underneath, making iptables knowledge essential.

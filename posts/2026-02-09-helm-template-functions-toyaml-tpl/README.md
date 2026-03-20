@@ -18,6 +18,7 @@ Without toYaml, you would need to manually iterate and format nested structures.
 
 ```yaml
 # values.yaml
+
 resources:
   limits:
     cpu: 1000m

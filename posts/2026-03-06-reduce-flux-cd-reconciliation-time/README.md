@@ -32,6 +32,7 @@ By default, Flux polls sources at fixed intervals. Webhooks eliminate polling de
 
 ```yaml
 # Receiver that triggers reconciliation on Git push events
+
 apiVersion: notification.toolkit.fluxcd.io/v1
 kind: Receiver
 metadata:

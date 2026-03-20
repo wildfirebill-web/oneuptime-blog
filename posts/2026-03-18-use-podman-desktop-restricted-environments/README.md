@@ -27,6 +27,7 @@ Restricted environments typically present these challenges:
 
 ```bash
 # Check your current user permissions
+
 id
 groups
 

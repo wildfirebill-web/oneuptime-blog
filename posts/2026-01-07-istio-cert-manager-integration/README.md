@@ -76,6 +76,7 @@ The following commands verify your environment is ready for the integration:
 
 ```bash
 # Verify Kubernetes cluster is running and accessible
+
 # This command should return cluster information including version
 kubectl cluster-info
 

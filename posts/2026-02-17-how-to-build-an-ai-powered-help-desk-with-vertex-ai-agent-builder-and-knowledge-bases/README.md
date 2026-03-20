@@ -29,6 +29,7 @@ graph LR
 
 ```bash
 # Enable the required APIs
+
 gcloud services enable \
     discoveryengine.googleapis.com \
     aiplatform.googleapis.com \

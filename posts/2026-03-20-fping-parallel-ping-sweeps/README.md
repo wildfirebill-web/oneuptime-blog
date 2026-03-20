@@ -2,18 +2,19 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: fping, Networking, ICMP, Linux, Network Discovery, Monitoring
+Tags: Fping, Networking, ICMP, Linux, Network Discovery, Monitoring
 
 Description: Use fping to perform fast parallel ping sweeps of entire subnets, check host availability lists, and integrate network reachability checks into scripts.
 
 ## Introduction
 
-fping is a ping utility that sends ICMP Echo Requests to multiple hosts simultaneously in a round-robin fashion rather than waiting for each host to respond before moving to the next. This makes it dramatically faster than sequential pinging — checking 254 hosts in a /24 subnet takes seconds instead of minutes.
+fping is a ping utility that sends ICMP Echo Requests to multiple hosts simultaneously in a round-robin fashion rather than waiting for each host to respond before moving to the next. This makes it dramatically faster than sequential pinging - checking 254 hosts in a /24 subnet takes seconds instead of minutes.
 
 ## Installation and Basic Usage
 
 ```bash
 # Install fping
+
 apt install fping     # Debian/Ubuntu
 yum install fping     # RHEL/CentOS
 

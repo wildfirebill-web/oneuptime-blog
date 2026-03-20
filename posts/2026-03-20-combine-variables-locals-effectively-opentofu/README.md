@@ -8,7 +8,7 @@ Description: Learn best practices for combining input variables and local values
 
 ---
 
-Variables and locals serve distinct purposes: variables accept external input, locals compute derived values. Understanding when to use each — and how to combine them — is key to writing clean, maintainable OpenTofu configurations.
+Variables and locals serve distinct purposes: variables accept external input, locals compute derived values. Understanding when to use each - and how to combine them - is key to writing clean, maintainable OpenTofu configurations.
 
 ---
 
@@ -26,7 +26,8 @@ Variables and locals serve distinct purposes: variables accept external input, l
 ## Pattern 1: Locals Derive Values from Variables
 
 ```hcl
-# variables.tf — external inputs
+# variables.tf - external inputs
+
 variable "environment" {
   type = string
 }
@@ -40,7 +41,7 @@ variable "region" {
   default = "us-east-1"
 }
 
-# locals.tf — derived values (NOT configurable by callers)
+# locals.tf - derived values (NOT configurable by callers)
 locals {
   # Compute derived values from variables
   name_prefix    = "${var.project}-${var.environment}"
@@ -132,7 +133,7 @@ resource "aws_instance" "services" {
 ## Pattern 4: Variables for What, Locals for How
 
 ```hcl
-# Variables answer "what" — they're the knobs callers can turn
+# Variables answer "what" - they're the knobs callers can turn
 variable "enable_high_availability" {
   type    = bool
   default = false
@@ -143,7 +144,7 @@ variable "database_size" {
   default = "small"
 }
 
-# Locals answer "how" — they implement the policy based on inputs
+# Locals answer "how" - they implement the policy based on inputs
 locals {
   # Translate abstract sizes to concrete values
   db_instance_class = {

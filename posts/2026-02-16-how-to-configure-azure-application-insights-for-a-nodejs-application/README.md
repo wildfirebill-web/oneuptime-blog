@@ -18,6 +18,7 @@ If you do not already have an Application Insights resource, create one:
 
 ```bash
 # Create an Application Insights resource backed by a Log Analytics workspace
+
 az monitor app-insights component create \
   --app my-node-app-insights \
   --location eastus \

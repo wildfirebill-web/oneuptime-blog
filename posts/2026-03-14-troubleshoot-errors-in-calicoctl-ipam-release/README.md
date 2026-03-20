@@ -24,6 +24,7 @@ When `calicoctl ipam release` produces errors, it typically indicates problems w
 
 ```bash
 # Verify datastore configuration
+
 export DATASTORE_TYPE=kubernetes
 calicoctl get nodes
 

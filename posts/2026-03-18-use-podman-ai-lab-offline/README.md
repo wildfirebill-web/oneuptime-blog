@@ -23,6 +23,7 @@ You need two machines for the initial setup:
 
 ```bash
 # On the online machine, ensure Podman is installed
+
 podman --version
 
 # Create a staging directory for offline assets

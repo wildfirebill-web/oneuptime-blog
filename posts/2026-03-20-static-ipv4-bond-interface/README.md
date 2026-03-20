@@ -19,6 +19,7 @@ After creating a bond interface, you need to assign it a static IPv4 address for
 
 ```bash
 # Assign a static IP to bond0
+
 ip addr add 192.168.1.100/24 dev bond0
 
 # Add the default gateway

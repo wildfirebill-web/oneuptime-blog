@@ -38,6 +38,7 @@ For specific integrations, install additional packages:
 
 ```bash
 # For scikit-learn integration
+
 pip install mlflow[sklearn]
 
 # For PyTorch integration

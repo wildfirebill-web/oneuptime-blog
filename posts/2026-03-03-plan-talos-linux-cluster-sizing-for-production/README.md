@@ -82,6 +82,7 @@ Three control plane nodes is the standard for most production deployments. Going
 
 ```yaml
 # Talos configuration for a 3-node control plane
+
 cluster:
   controlPlane:
     endpoint: https://10.0.1.100:6443
@@ -232,7 +233,7 @@ For bare metal, have a scaling plan that answers:
 - How long does it take to provision and add a new node?
 - Do we have spare hardware available for emergency scaling?
 
-## Resource Reservations
+Resource Reservations
 
 Talos Linux automatically reserves some resources for system components. You can adjust the kubelet's resource reservation:
 

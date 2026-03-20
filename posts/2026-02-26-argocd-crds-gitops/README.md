@@ -32,6 +32,7 @@ Sync waves let you control the order in which ArgoCD applies resources. Lower wa
 
 ```yaml
 # CRD - applied first (wave -2)
+
 apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:

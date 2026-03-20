@@ -31,6 +31,7 @@ Comments in Terraform should explain why, not what. The code already shows what 
 
 ```hcl
 # BAD: Restating the code
+
 # Create a t3.large instance
 resource "aws_instance" "api" {
   instance_type = "t3.large"

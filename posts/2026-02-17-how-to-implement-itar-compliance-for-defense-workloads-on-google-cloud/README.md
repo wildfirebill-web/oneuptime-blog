@@ -40,6 +40,7 @@ Google Cloud's Assured Workloads with the IL4 compliance regime satisfies the in
 
 ```bash
 # Enable the Assured Workloads API
+
 gcloud services enable assuredworkloads.googleapis.com
 
 # Create an Assured Workloads folder with IL4 compliance

@@ -30,6 +30,7 @@ SonarQube needs a dedicated namespace and a secret containing the PostgreSQL cre
 
 ```yaml
 # clusters/my-cluster/sonarqube/namespace.yaml
+
 apiVersion: v1
 kind: Namespace
 metadata:

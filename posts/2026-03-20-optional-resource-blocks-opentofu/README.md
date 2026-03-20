@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, optional, HCL, Modules, Variables
+Tags: OpenTofu, Terraform, Optional, HCL, Modules, Variables
 
 Description: Learn how to create truly optional resource blocks in OpenTofu using optional() type constraints, null defaults, and count-based conditional creation patterns.
 

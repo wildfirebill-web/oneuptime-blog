@@ -39,6 +39,7 @@ Both clusters serve traffic simultaneously:
 
 ```yaml
 # Global load balancer distributes traffic
+
 # to healthy clusters based on latency or geography
 
 # Cluster 1: us-west

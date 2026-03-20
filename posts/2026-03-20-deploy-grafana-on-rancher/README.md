@@ -19,6 +19,7 @@ helm repo update
 
 ```yaml
 # grafana-values.yaml
+
 adminUser: admin
 adminPassword: "securepassword"
 
@@ -136,4 +137,4 @@ notifiers:
 
 ## Conclusion
 
-A standalone Grafana deployment on Rancher provides maximum flexibility for visualization. Pre-provisioning data sources and dashboards via Helm values enables GitOps management of your entire monitoring configuration—dashboards are code, not manual UI configurations.
+A standalone Grafana deployment on Rancher provides maximum flexibility for visualization. Pre-provisioning data sources and dashboards via Helm values enables GitOps management of your entire monitoring configuration-dashboards are code, not manual UI configurations.

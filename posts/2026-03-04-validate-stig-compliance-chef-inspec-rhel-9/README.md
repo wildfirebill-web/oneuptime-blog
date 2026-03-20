@@ -14,6 +14,7 @@ Chef InSpec is a testing framework that lets you write human-readable compliance
 
 ```bash
 # Download and install InSpec
+
 curl -L https://omnitruck.chef.io/install.sh | bash -s -- -P inspec
 
 # Verify the installation

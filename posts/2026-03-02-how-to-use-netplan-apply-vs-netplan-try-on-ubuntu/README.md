@@ -37,6 +37,7 @@ The workflow looks like this:
 
 ```bash
 # Edit your netplan configuration
+
 sudo nano /etc/netplan/01-netcfg.yaml
 ```
 

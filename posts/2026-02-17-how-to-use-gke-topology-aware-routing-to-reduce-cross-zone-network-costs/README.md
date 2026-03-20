@@ -45,6 +45,7 @@ Enabling it is straightforward. You add an annotation to your Service:
 
 ```yaml
 # service.yaml - Service with topology-aware routing enabled
+
 apiVersion: v1
 kind: Service
 metadata:

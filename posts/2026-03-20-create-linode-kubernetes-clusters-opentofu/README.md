@@ -114,6 +114,7 @@ output "api_endpoint" {
 
 ```bash
 # Decode and save kubeconfig from Terraform output
+
 tofu output -raw kubeconfig | base64 -d > /tmp/kubeconfig.yaml
 
 # Deploy to the cluster

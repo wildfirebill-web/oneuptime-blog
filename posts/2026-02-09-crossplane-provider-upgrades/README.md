@@ -26,6 +26,7 @@ Before upgrading any provider in production, complete these verification steps:
 
 ```bash
 # 1. Check current provider version and health
+
 kubectl get providers
 kubectl get providerrevision
 

@@ -37,6 +37,7 @@ Here is a comprehensive export script that handles all resource types and saniti
 ```bash
 #!/bin/bash
 # export-argocd.sh
+
 # Exports all ArgoCD state to a directory
 set -euo pipefail
 

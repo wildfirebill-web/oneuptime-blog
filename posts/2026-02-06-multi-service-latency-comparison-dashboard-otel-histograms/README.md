@@ -26,6 +26,7 @@ The collector needs to receive these histogram metrics and forward them to a bac
 
 ```yaml
 # otel-collector-config.yaml
+
 receivers:
   otlp:
     protocols:

@@ -28,6 +28,7 @@ macOS does not natively support Linux containers, so Podman creates a lightweigh
 
 ```bash
 # Install Podman using Homebrew
+
 brew install podman
 
 # Initialize a Podman machine (downloads a Fedora CoreOS VM image)

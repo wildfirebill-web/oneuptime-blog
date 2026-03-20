@@ -20,6 +20,7 @@ The `jstack` utility is the most common way to capture thread dumps from a runni
 
 ```bash
 # Find the process ID of your Java application
+
 jps -l
 
 # Capture a thread dump

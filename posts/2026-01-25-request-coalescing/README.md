@@ -53,6 +53,7 @@ sequenceDiagram
 
 ```python
 # singleflight.py
+
 import asyncio
 from typing import Dict, Any, Callable, TypeVar, Awaitable
 from dataclasses import dataclass

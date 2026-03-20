@@ -23,6 +23,7 @@ This guide walks through setting up Helm authentication for various repository t
 
 ```bash
 # Verify Flux installation
+
 flux check
 
 # List existing Helm sources

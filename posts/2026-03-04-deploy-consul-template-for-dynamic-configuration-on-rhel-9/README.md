@@ -32,6 +32,7 @@ Download the binary:
 
 ```bash
 # Download Consul Template
+
 CT_VERSION="0.37.4"
 curl -LO https://releases.hashicorp.com/consul-template/${CT_VERSION}/consul-template_${CT_VERSION}_linux_amd64.zip
 sudo dnf install -y unzip

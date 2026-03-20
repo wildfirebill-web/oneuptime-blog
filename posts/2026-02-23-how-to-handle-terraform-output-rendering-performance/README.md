@@ -30,6 +30,7 @@ ANSI color codes add overhead to output processing, especially when piped throug
 
 ```bash
 # Without color (faster, cleaner for CI/CD)
+
 terraform plan -no-color
 
 # With color (default in interactive terminals)

@@ -18,6 +18,7 @@ Let us start with a PostgreSQL instance and build up from there:
 
 ```hcl
 # sql.tf - Basic Cloud SQL PostgreSQL instance
+
 resource "google_sql_database_instance" "main" {
   name             = "main-db"
   database_version = "POSTGRES_15"

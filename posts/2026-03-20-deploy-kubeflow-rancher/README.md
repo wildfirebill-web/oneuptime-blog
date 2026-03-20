@@ -1,10 +1,11 @@
-# How to Deploy Kubeflow on Rancher
+# How to Deploy Kubeflow on Rancher - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: rancher, kubeflow, mlops, kubernetes, machine-learning
+Tags: Rancher, Kubeflow, MLOps, Kubernetes, Machine-learning
 
 Description: Step-by-step guide to deploying Kubeflow ML platform on Rancher for end-to-end machine learning workflows.
+
 ## Introduction
 
 Kubeflow is an ML platform built on Kubernetes that orchestrates ML workflows, notebooks, training, and serving. Deploying it on Rancher gives you a complete MLOps environment with enterprise-grade cluster management.
@@ -29,6 +30,7 @@ kustomize version
 
 ```bash
 # Clone the Kubeflow manifests repository
+
 git clone https://github.com/kubeflow/manifests.git
 cd manifests
 git checkout v1.8.0

@@ -45,6 +45,7 @@ Check kubelet configuration:
 
 ```bash
 # View kubelet config file
+
 cat /var/lib/kubelet/config.yaml
 
 # Check kubelet command-line args

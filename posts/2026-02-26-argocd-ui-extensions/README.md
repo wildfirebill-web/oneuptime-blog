@@ -40,6 +40,7 @@ First, you need to set up a development environment for building extensions.
 
 ```bash
 # Clone the ArgoCD repository for reference
+
 git clone https://github.com/argoproj/argo-cd.git
 cd argo-cd
 

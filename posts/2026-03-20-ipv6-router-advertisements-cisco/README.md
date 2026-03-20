@@ -20,7 +20,7 @@ Cisco routers natively support IPv6 Router Advertisements through the `ipv6 nd` 
 
 Global IPv6 routing must be enabled before configuring RA on any interface:
 
-```
+```text
 ! Enable IPv6 unicast routing globally
 Router(config)# ipv6 unicast-routing
 
@@ -30,7 +30,7 @@ Router# show ipv6 interface brief
 
 ## Configuring a Basic Router Advertisement
 
-```
+```text
 ! Assign an IPv6 address and enable RA on the LAN interface
 Router(config)# interface GigabitEthernet0/0
 Router(config-if)# ipv6 address 2001:db8:1:1::1/64
@@ -44,7 +44,7 @@ Router(config-if)# no ipv6 nd ra suppress
 
 ## Configuring Prefix Advertisement Options
 
-```
+```text
 ! Control prefix options in the RA
 Router(config)# interface GigabitEthernet0/0
 
@@ -63,7 +63,7 @@ Router(config-if)# ipv6 nd other-config-flag         ! O flag = 1
 
 IOS-XE 16.6+ supports advertising DNS servers directly in RA (RFC 8106):
 
-```
+```text
 ! Advertise a DNS server via Router Advertisement
 Router(config)# interface GigabitEthernet0/0
 Router(config-if)# ipv6 nd ra dns server 2001:db8:1:1::53 infinite
@@ -75,7 +75,7 @@ Router(config-if)# ipv6 nd ra dns search-list corp.example.com infinite
 
 ## Configuring Router Preference
 
-```
+```text
 ! Set the default router preference (high, medium, or low)
 Router(config)# interface GigabitEthernet0/0
 Router(config-if)# ipv6 nd router-preference High
@@ -87,7 +87,7 @@ Router(config-if)# ipv6 nd router-preference High
 
 For interfaces where RAs should not be sent (e.g., uplink/WAN interfaces):
 
-```
+```text
 ! Suppress RA on the WAN-facing interface
 Router(config)# interface GigabitEthernet0/1
 Router(config-if)# ipv6 nd ra suppress all
@@ -95,7 +95,7 @@ Router(config-if)# ipv6 nd ra suppress all
 
 ## Verifying Router Advertisement Configuration
 
-```
+```text
 ! Show RA configuration and statistics for an interface
 Router# show ipv6 interface GigabitEthernet0/0
 
@@ -111,7 +111,7 @@ Router# debug ipv6 nd
 
 Sample output of `show ipv6 interface`:
 
-```
+```text
 GigabitEthernet0/0 is up, line protocol is up
   IPv6 is enabled, link-local address is FE80::1
   Global unicast address(es):

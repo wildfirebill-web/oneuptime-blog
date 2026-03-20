@@ -28,6 +28,7 @@ Start by installing the bundle through Composer. The bundle requires PHP 8.1 or 
 
 ```bash
 # Install the FriendsOfOpenTelemetry bundle
+
 composer require friendsofopentelemetry/opentelemetry-bundle
 
 # Install the OTLP exporter for sending data to collectors

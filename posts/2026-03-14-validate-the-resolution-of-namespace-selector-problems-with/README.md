@@ -28,6 +28,7 @@ This guide provides a structured validation process with automated checks and ma
 ```bash
 #!/bin/bash
 # validate-ns-labels.sh
+
 # Checks that all non-system namespaces have the required labels
 
 REQUIRED_LABELS=("environment" "team")

@@ -18,6 +18,7 @@ Let me start with a simple but realistic API. This one manages a list of tasks -
 
 ```bash
 # Project setup
+
 mkdir flask-api && cd flask-api
 python -m venv venv
 source venv/bin/activate

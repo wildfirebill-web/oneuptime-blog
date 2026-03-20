@@ -19,6 +19,7 @@ Receive Packet Steering (RPS) and Transmit Packet Steering (XPS) are software-ba
 
 ```bash
 # Check the number of hardware queues
+
 ethtool -l ens192
 
 # List the RX and TX queues

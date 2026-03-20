@@ -16,6 +16,7 @@ The VNI is specified at VXLAN interface creation time using the `id` parameter:
 
 ```bash
 # Create VXLAN with VNI 100
+
 ip link add vxlan100 type vxlan id 100 dstport 4789 dev eth0
 
 # Create VXLAN with VNI 200 (different overlay segment)
@@ -58,13 +59,13 @@ ip link set vxlan300 up
 
 ## VNI Isolation
 
-Hosts on different VNIs cannot communicate directly — even if they use overlapping IP ranges:
+Hosts on different VNIs cannot communicate directly - even if they use overlapping IP ranges:
 
 ```bash
 # Host A: VNI 100, IP 10.100.0.1
-# Host B: VNI 200, IP 10.100.0.1 (same IP, different VNI — completely isolated)
+# Host B: VNI 200, IP 10.100.0.1 (same IP, different VNI - completely isolated)
 
-# This ping will NOT work — different VNIs are completely isolated
+# This ping will NOT work - different VNIs are completely isolated
 # ping 10.100.0.1 from VNI 100 cannot reach VNI 200
 ```
 
@@ -83,4 +84,4 @@ ip link add vxlan20000 type vxlan id 20000 dstport 4789 dev eth0
 
 ## Conclusion
 
-The VNI is the core identifier in VXLAN that creates segment isolation, analogous to a VLAN ID. All VTEPs sharing the same VNI participate in the same overlay segment. VNIs range from 0 to 16,777,215 (2^24 - 1), supporting far more segments than 802.1Q VLANs. VNI cannot be changed after interface creation — delete and recreate the interface to change the VNI.
+The VNI is the core identifier in VXLAN that creates segment isolation, analogous to a VLAN ID. All VTEPs sharing the same VNI participate in the same overlay segment. VNIs range from 0 to 16,777,215 (2^24 - 1), supporting far more segments than 802.1Q VLANs. VNI cannot be changed after interface creation - delete and recreate the interface to change the VNI.

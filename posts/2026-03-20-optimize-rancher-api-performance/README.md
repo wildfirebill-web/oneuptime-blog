@@ -16,6 +16,7 @@ Listing all pods, events, or deployments without pagination can overwhelm the AP
 
 ```bash
 # Bad: Lists all pods in all namespaces at once
+
 kubectl get pods --all-namespaces
 
 # Better: Use --chunk-size to page through results

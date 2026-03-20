@@ -64,6 +64,7 @@ resource = Resource.create({
 })
 
 # Tracing for individual checkout flows
+
 trace_provider = TracerProvider(resource=resource)
 trace_provider.add_span_processor(
     BatchSpanProcessor(OTLPSpanExporter(endpoint="otel-collector:4317"))

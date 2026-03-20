@@ -16,13 +16,13 @@ TCP Fast Open (TFO) allows data to be sent in the TCP SYN packet on repeat conne
 sequenceDiagram
     participant C as Client
     participant S as Server
-    Note over C,S: First connection — get TFO cookie
+    Note over C,S: First connection - get TFO cookie
     C->>S: SYN (request TFO cookie)
     S->>C: SYN+ACK (TFO cookie)
     C->>S: ACK + HTTP Request
     S->>C: HTTP Response
 
-    Note over C,S: Subsequent connections — 0-RTT data
+    Note over C,S: Subsequent connections - 0-RTT data
     C->>S: SYN + TFO cookie + HTTP Request
     S->>C: HTTP Response (data sent before 3WHS complete)
 ```
@@ -31,6 +31,7 @@ sequenceDiagram
 
 ```bash
 # Check current TFO setting
+
 sysctl net.ipv4.tcp_fastopen
 # 0 = disabled
 # 1 = client mode
@@ -53,7 +54,7 @@ Note: TFO uses the same kernel parameter for both IPv4 and IPv6.
 ## Step 2: Configure NGINX to Use TFO
 
 ```nginx
-# nginx.conf — enable TFO on IPv6 listeners
+# nginx.conf - enable TFO on IPv6 listeners
 server {
     # fastopen=256 enables TFO with a queue size of 256
     listen [::]:80 fastopen=256 reuseport;
@@ -77,7 +78,7 @@ server = socket.socket(socket.AF_INET6, socket.SOCK_STREAM)
 server.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
 server.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEPORT, 1)
 
-# Enable TCP Fast Open — value is the queue length for pending TFO requests
+# Enable TCP Fast Open - value is the queue length for pending TFO requests
 # TCP_FASTOPEN = 23 on Linux
 TCP_FASTOPEN = 23
 server.setsockopt(socket.IPPROTO_TCP, TCP_FASTOPEN, 5)
@@ -100,7 +101,7 @@ while True:
 ```python
 import socket
 
-# MSG_FASTOPEN flag — not available as a Python constant, define it
+# MSG_FASTOPEN flag - not available as a Python constant, define it
 MSG_FASTOPEN = 0x20000000
 
 client = socket.socket(socket.AF_INET6, socket.SOCK_STREAM)
@@ -137,4 +138,4 @@ curl -6 --tcp-fastopen https://example.com/
 
 ## Conclusion
 
-TCP Fast Open reduces connection latency by one RTT on repeat connections. The kernel setting applies to both IPv4 and IPv6 — simply enable `tcp_fastopen = 3` and add `fastopen=` to your NGINX listeners. Monitor connection setup times with OneUptime to quantify the improvement.
+TCP Fast Open reduces connection latency by one RTT on repeat connections. The kernel setting applies to both IPv4 and IPv6 - simply enable `tcp_fastopen = 3` and add `fastopen=` to your NGINX listeners. Monitor connection setup times with OneUptime to quantify the improvement.

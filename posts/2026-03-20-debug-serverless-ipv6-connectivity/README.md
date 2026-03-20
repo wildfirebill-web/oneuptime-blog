@@ -14,6 +14,7 @@ Debug IPv6 connectivity issues in serverless functions including VPC networking,
 
 ```bash
 # Ensure IPv6 is enabled and functional
+
 ip -6 addr show
 ping6 -c 3 ::1
 

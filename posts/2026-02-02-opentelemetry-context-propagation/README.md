@@ -145,6 +145,7 @@ Python applications use a similar configuration pattern. The set_global_textmap 
 
 ```python
 # telemetry_setup.py
+
 import os
 from opentelemetry import trace
 from opentelemetry.sdk.trace import TracerProvider

@@ -30,6 +30,7 @@ Start with a `.gitpod.yml` file in your repository:
 
 ```yaml
 # .gitpod.yml
+
 image:
   file: .gitpod.Dockerfile
 
@@ -463,7 +464,7 @@ tasks:
 
 Document Gitpod workflows in your repository:
 
-```markdown
+````markdown
 # Development with Gitpod
 
 ## Quick Start
@@ -482,7 +483,7 @@ Click the button to open a workspace:
 
 ## Common Commands
 
-\`\`\`bash
+```bash
 # View your pods
 kubectl get pods
 
@@ -494,7 +495,7 @@ kubectx staging
 
 # Save workspace state
 save_workspace
-\`\`\`
+```
 
 ## Environment Variables
 
@@ -502,7 +503,7 @@ Set these in Gitpod settings:
 
 - `KUBECONFIG_BASE64`: Base64-encoded kubeconfig
 - `DOCKER_REGISTRY_TOKEN`: Container registry access
-\`\`\`
 ```
+````
 
 Gitpod with Kubernetes integration delivers instant, consistent development environments accessible from anywhere. Developers can contribute without local setup, and teams gain reproducible environments that match production.

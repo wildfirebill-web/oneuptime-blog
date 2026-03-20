@@ -16,6 +16,7 @@ Before any deployment strategy works, your application must support graceful shu
 
 ```yaml
 # apps/base/my-app/deployment.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

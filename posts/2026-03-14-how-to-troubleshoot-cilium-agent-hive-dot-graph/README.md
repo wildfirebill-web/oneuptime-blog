@@ -30,6 +30,7 @@ CILIUM_POD=$(kubectl -n kube-system get pods -l k8s-app=cilium \
   -o jsonpath='{.items[0].metadata.name}')
 
 # Check if the command exists in this version
+
 kubectl -n kube-system exec "$CILIUM_POD" -c cilium-agent -- \
   cilium-agent hive --help 2>&1
 

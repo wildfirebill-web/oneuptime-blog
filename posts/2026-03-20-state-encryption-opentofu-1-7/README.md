@@ -16,6 +16,7 @@ The simplest encryption uses a passphrase with PBKDF2 key derivation.
 
 ```hcl
 # main.tf
+
 terraform {
   encryption {
     key_provider "pbkdf2" "main" {

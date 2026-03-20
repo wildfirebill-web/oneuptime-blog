@@ -18,6 +18,7 @@ The most effective protection is preventing unauthorized users from deleting app
 
 ```yaml
 # argocd-rbac-cm ConfigMap
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

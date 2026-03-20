@@ -42,6 +42,7 @@ These commands provide a comprehensive overview of your storage resources and th
 
 ```bash
 # Check PVC status - shows binding state and storage class
+
 kubectl get pvc -n <namespace>
 
 # Check PV status - shows capacity, access modes, and reclaim policy

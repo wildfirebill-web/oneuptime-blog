@@ -20,6 +20,7 @@ Podman looks for TLS certificates in a specific directory structure.
 
 ```bash
 # System-wide certificate directory
+
 ls -la /etc/containers/certs.d/
 
 # Each registry gets its own subdirectory

@@ -37,6 +37,7 @@ You need:
 
 ```bash
 # Install the required packages
+
 pip install azure-search-documents azure-storage-blob
 ```
 

@@ -10,7 +10,7 @@ Linux `tc` can only shape outgoing (egress) traffic because by the time incoming
 
 ## How IFB Works
 
-```
+```text
 Inbound packets → eth0 ingress → redirect to ifb0 → ifb0 egress qdisc → shapes traffic
 ```
 
@@ -20,6 +20,7 @@ The redirection happens instantly, and the actual packet processing (delivery to
 
 ```bash
 # Load the IFB kernel module
+
 sudo modprobe ifb
 
 # Load automatically at boot

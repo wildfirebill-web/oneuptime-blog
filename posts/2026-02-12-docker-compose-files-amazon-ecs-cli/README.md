@@ -22,6 +22,7 @@ Note: AWS also offers the newer AWS Copilot CLI, which is the recommended tool f
 
 ```bash
 # Install on macOS
+
 sudo curl -Lo /usr/local/bin/ecs-cli \
   https://amazon-ecs-cli-linux-amd64-latest
 sudo chmod +x /usr/local/bin/ecs-cli

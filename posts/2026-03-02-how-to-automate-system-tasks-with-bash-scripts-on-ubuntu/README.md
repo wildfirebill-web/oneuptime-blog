@@ -20,6 +20,7 @@ Every production automation script should start with these lines:
 #!/bin/bash
 
 # Exit on error, unset variable use, and pipe failures
+
 set -euo pipefail
 
 # Script directory for relative path references

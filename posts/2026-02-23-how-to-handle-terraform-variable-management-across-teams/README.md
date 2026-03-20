@@ -26,6 +26,7 @@ The most common approach is using Terraform remote state data sources to read ou
 
 ```hcl
 # Application team's configuration
+
 # Read networking team's outputs
 data "terraform_remote_state" "networking" {
   backend = "s3"

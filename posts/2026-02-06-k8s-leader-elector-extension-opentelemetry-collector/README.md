@@ -74,6 +74,7 @@ Setting up the K8s Leader Elector Extension requires configuration in your Colle
 
 ```yaml
 # extensions section defines the leader election behavior
+
 extensions:
   # Configure leader election extension
   k8s_observer:
@@ -702,7 +703,7 @@ Missing permissions will prevent lease acquisition and election participation.
 
 ## Production Best Practices
 
-### Resource Limits and Failover
+Resource Limits and Failover
 
 Set appropriate resource limits to ensure reliable failover:
 

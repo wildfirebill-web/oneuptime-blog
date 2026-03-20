@@ -8,7 +8,7 @@ Description: Learn how to test and verify that your existing Terraform configura
 
 ## Introduction
 
-OpenTofu maintains backward compatibility with Terraform configurations, but subtle differences can exist — especially with newer Terraform versions or features. Testing compatibility before migrating ensures a smooth transition without surprises.
+OpenTofu maintains backward compatibility with Terraform configurations, but subtle differences can exist - especially with newer Terraform versions or features. Testing compatibility before migrating ensures a smooth transition without surprises.
 
 ## Side-by-Side Comparison Approach
 
@@ -16,6 +16,7 @@ The safest way to test compatibility is running both tools against the same conf
 
 ```bash
 # Run with Terraform
+
 terraform init -backend=false
 terraform plan -out=tf.plan
 terraform show -json tf.plan > tf-plan.json

@@ -26,6 +26,7 @@ Here is what happens when you use the Core distribution with a Contrib component
 
 ```yaml
 # This config references the tail_sampling processor
+
 processors:
   tail_sampling:
     decision_wait: 10s

@@ -23,6 +23,7 @@ Process substitution creates a temporary file descriptor (typically under `/dev/
 #!/bin/bash
 
 # Basic example: diff two command outputs
+
 diff <(ls /dir1) <(ls /dir2)
 
 # The shell creates temporary file descriptors

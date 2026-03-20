@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, chunklist, List Functions, HCL, Infrastructure as Code, DevOps
+Tags: OpenTofu, Chunklist, List Functions, HCL, Infrastructure as Code, DevOps
 
 Description: Learn how to use the chunklist function in OpenTofu to split a large list into smaller sub-lists of a specified maximum size.
 
@@ -48,7 +48,7 @@ variable "iam_users" {
 }
 
 locals {
-  # AWS IAM has limits on batch operations — process in groups of 5
+  # AWS IAM has limits on batch operations - process in groups of 5
   user_batches = chunklist(var.iam_users, 5)
   # [["user1"..."user5"], ["user6"..."user10"]]
 }
@@ -96,7 +96,7 @@ variable "notification_recipients" {
 }
 
 locals {
-  # SNS has a 10 recipient limit per publish — split into batches
+  # SNS has a 10 recipient limit per publish - split into batches
   recipient_batches = chunklist(var.notification_recipients, 10)
 }
 ```
@@ -117,6 +117,7 @@ locals {
 }
 
 # Process each chunk
+
 resource "aws_acm_certificate_validation" "batch" {
   count = length(local.cert_chunks)
 

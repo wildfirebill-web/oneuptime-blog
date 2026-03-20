@@ -38,6 +38,7 @@ Here's a Terraform configuration for the backend infrastructure. Run this once w
 
 ```hcl
 # backend-setup/main.tf
+
 # This creates the resources needed for remote state
 # Run this with local state: terraform init && terraform apply
 

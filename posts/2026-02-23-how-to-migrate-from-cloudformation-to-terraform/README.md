@@ -24,6 +24,7 @@ Start by listing all stacks and their resources:
 
 ```bash
 # List all CloudFormation stacks
+
 aws cloudformation list-stacks \
   --stack-status-filter CREATE_COMPLETE UPDATE_COMPLETE \
   --query 'StackSummaries[].[StackName,CreationTime]' \

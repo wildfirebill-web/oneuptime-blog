@@ -58,6 +58,7 @@ Before configuring quorum queues, ensure you have:
 
 ```bash
 # Check RabbitMQ version
+
 rabbitmqctl version
 
 # Check cluster status

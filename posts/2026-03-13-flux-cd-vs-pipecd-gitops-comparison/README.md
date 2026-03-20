@@ -26,6 +26,7 @@ Flux CD operates as a set of Kubernetes controllers using the pull model exclusi
 
 ```yaml
 # Flux manages Kubernetes resources via GitRepository + Kustomization
+
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
 metadata:

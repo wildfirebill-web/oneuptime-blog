@@ -81,7 +81,7 @@ networks:
 
 ## Environment Variables
 
-```
+```text
 MYSQL_DATABASE = wordpress
 MYSQL_USER = wp_user
 MYSQL_PASSWORD = wp-db-password
@@ -129,6 +129,7 @@ environment:
 
 ```bash
 # Via Portainer exec on wordpress container
+
 # Install WP-CLI
 curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
 chmod +x wp-cli.phar

@@ -52,6 +52,7 @@ variable "region" {
 }
 
 # Custom VPC for internal load balancing
+
 resource "google_compute_network" "internal" {
   name                    = "internal-lb-network"
   auto_create_subnetworks = false

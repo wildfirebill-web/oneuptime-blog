@@ -18,6 +18,7 @@ The first thing to check is whether the WireGuard interface was created successf
 
 ```bash
 # Check if the wg0 interface exists
+
 talosctl -n 192.168.1.1 get links
 
 # Look for wg0 in the output

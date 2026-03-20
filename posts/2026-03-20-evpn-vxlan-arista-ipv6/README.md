@@ -10,8 +10,8 @@ Description: Configure BGP EVPN with VXLAN over an IPv6 underlay on Arista EOS s
 
 Arista EOS supports IPv6 underlay for VXLAN via IS-IS or OSPFv3:
 
-```
-! Arista EOS — Leaf switch configuration
+```text
+! Arista EOS - Leaf switch configuration
 ! Enable VXLAN and EVPN
 daemon Snmp
 !
@@ -46,7 +46,7 @@ interface Ethernet1
 
 ## BGP EVPN over IPv6
 
-```
+```text
 ! BGP sessions use IPv6 loopbacks
 router bgp 65001
    router-id 1.1.1.1
@@ -70,7 +70,7 @@ router bgp 65001
 
 ## VXLAN Interface Configuration
 
-```
+```text
 ! VXLAN interface sourced from IPv6 loopback
 interface Vxlan1
    vxlan source-interface Loopback0
@@ -86,7 +86,7 @@ interface Vxlan1
 
 ## EVPN MAC/VRF Configuration
 
-```
+```bash
 ! EVPN MAC-VRF for VLAN 100
 router bgp 65001
    !
@@ -117,8 +117,8 @@ router bgp 65001
 
 ## Anycast Gateway
 
-```
-! Virtual gateway — same IP and MAC on all leafs
+```text
+! Virtual gateway - same IP and MAC on all leafs
 interface Vlan100
    vrf tenant1
    ip address virtual 10.100.0.1/24
@@ -134,7 +134,7 @@ ip virtual-router mac-address 00:1c:73:00:00:01
 
 ## Verification Commands
 
-```
+```text
 ! VXLAN status
 show vxlan interface
 show vxlan vtep
@@ -161,6 +161,7 @@ ping vrf tenant1 2001:db8:100::2
 
 ```python
 # Arista CloudVision EVPN provisioning script
+
 import requests
 import json
 

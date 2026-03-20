@@ -37,6 +37,7 @@ In a tfvars file:
 
 ```hcl
 # terraform.tfvars
+
 databases = {
   orders = {
     engine         = "postgres"

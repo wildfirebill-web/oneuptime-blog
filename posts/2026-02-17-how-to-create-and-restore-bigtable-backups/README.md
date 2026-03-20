@@ -18,6 +18,7 @@ You create backups using `gcloud` or client libraries. Each backup is associated
 
 ```bash
 # Create a backup of a table
+
 # The backup is stored in the specified cluster
 gcloud bigtable backups create my-backup-20260217 \
   --instance=my-instance \

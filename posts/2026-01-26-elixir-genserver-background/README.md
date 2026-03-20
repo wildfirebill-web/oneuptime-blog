@@ -44,6 +44,7 @@ Let us start with a simple job queue that processes tasks in the background.
 
 ```elixir
 # lib/my_app/job_queue.ex
+
 defmodule MyApp.JobQueue do
   use GenServer
 

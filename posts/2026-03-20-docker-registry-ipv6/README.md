@@ -14,6 +14,7 @@ Docker can pull and push images over IPv6 when the registry host resolves to an 
 
 ```bash
 # Pull from a registry accessible via IPv6
+
 # Registry at 2001:db8::1 on port 5000
 docker pull [2001:db8::1]:5000/myapp:latest
 
@@ -96,7 +97,7 @@ sudo cp registry.crt /etc/docker/certs.d/[2001:db8::1]:443/ca.crt
 ## Configure insecure-registries for IPv6
 
 ```json
-// /etc/docker/daemon.json — allow insecure HTTP registry over IPv6
+// /etc/docker/daemon.json - allow insecure HTTP registry over IPv6
 {
   "ipv6": true,
   "ip6tables": true,

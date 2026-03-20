@@ -73,6 +73,7 @@ Let's build this as infrastructure as code. Here's a CloudFormation template tha
 
 ```yaml
 # vpc-public-private.yaml
+
 AWSTemplateFormatVersion: '2010-09-09'
 Description: VPC with public and private subnets across two AZs
 

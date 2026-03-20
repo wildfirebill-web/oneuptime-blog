@@ -27,6 +27,7 @@ First, create a Key Vault and add some test secrets.
 
 ```bash
 # Create a resource group
+
 az group create --name talos-secrets-rg --location eastus
 
 # Create a Key Vault

@@ -38,6 +38,7 @@ The most common "timeout" is actually the proxy not running at all. Your applica
 
 ```bash
 # Check if the proxy process is running
+
 ps aux | grep cloud-sql-proxy
 
 # Check if anything is listening on the expected port

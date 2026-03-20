@@ -868,6 +868,7 @@ public class PaymentService {
 
 ```yaml
 # application.yml
+
 resilience4j:
   bulkhead:
     instances:

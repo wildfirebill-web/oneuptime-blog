@@ -4,16 +4,17 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: OpenTofu, Lambda, Serverless, AWS, Infrastructure as Code, Functions
 
-Description: Learn how to deploy AWS Lambda functions with OpenTofu — packaging code, configuring triggers, setting up IAM roles, environment variables, VPC networking, and function URLs.
+Description: Learn how to deploy AWS Lambda functions with OpenTofu - packaging code, configuring triggers, setting up IAM roles, environment variables, VPC networking, and function URLs.
 
 ## Introduction
 
-AWS Lambda runs code in response to events without provisioning servers. OpenTofu manages the function definition, IAM execution role, CloudWatch log group, event source mappings (SQS, DynamoDB Streams, S3), and API Gateway integration — all as declarative code.
+AWS Lambda runs code in response to events without provisioning servers. OpenTofu manages the function definition, IAM execution role, CloudWatch log group, event source mappings (SQS, DynamoDB Streams, S3), and API Gateway integration - all as declarative code.
 
 ## Lambda Function with Code Archive
 
 ```hcl
 # Package the function code
+
 data "archive_file" "lambda" {
   type        = "zip"
   source_dir  = "${path.module}/src"
@@ -221,4 +222,4 @@ output "lambda_function_url" {
 
 ## Conclusion
 
-Lambda with OpenTofu enables fully serverless application backends. Use `source_code_hash` from `archive_file` so OpenTofu only updates the function when code actually changes. Always create the CloudWatch log group explicitly with a retention policy — Lambda creates its own log group otherwise, defaulting to never-expire. For VPC Lambdas, allocate enough private IP addresses in the subnet to handle concurrent executions, and use `AWSLambdaVPCAccessExecutionRole` policy for ENI creation permissions.
+Lambda with OpenTofu enables fully serverless application backends. Use `source_code_hash` from `archive_file` so OpenTofu only updates the function when code actually changes. Always create the CloudWatch log group explicitly with a retention policy - Lambda creates its own log group otherwise, defaulting to never-expire. For VPC Lambdas, allocate enough private IP addresses in the subnet to handle concurrent executions, and use `AWSLambdaVPCAccessExecutionRole` policy for ENI creation permissions.

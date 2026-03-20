@@ -36,6 +36,7 @@ Start by installing the GPU Operator, which manages GPU drivers and device plugi
 
 ```bash
 # Add NVIDIA Helm repository
+
 helm repo add nvidia https://helm.ngc.nvidia.com/nvidia
 helm repo update
 

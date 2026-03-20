@@ -63,6 +63,7 @@ Create a trigger for each service with path filters so it only fires when that s
 
 ```bash
 # API Gateway trigger - fires when api-gateway code or shared libs change
+
 gcloud builds triggers create github \
   --name="deploy-api-gateway" \
   --repo-name=my-monorepo \

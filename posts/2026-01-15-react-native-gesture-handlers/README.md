@@ -130,6 +130,7 @@ const GestureHandlerExample: React.FC = () => {
 
 ```bash
 # Using npm
+
 npm install react-native-gesture-handler react-native-reanimated
 
 # Using yarn

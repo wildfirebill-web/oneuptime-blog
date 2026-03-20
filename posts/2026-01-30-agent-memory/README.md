@@ -323,6 +323,7 @@ class VectorMemoryStore:
 
 
 # Example: Using OpenAI embeddings
+
 def create_openai_embed_fn(api_key: str) -> Callable[[str], list[float]]:
     """Create embedding function using OpenAI API."""
     from openai import OpenAI

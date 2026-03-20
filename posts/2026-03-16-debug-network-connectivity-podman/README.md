@@ -20,6 +20,7 @@ Start with simple connectivity tests to isolate the problem.
 
 ```bash
 # Test outbound internet connectivity
+
 podman exec my-container ping -c 3 8.8.8.8
 
 # Test DNS resolution (separate from connectivity)

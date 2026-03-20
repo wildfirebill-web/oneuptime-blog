@@ -38,6 +38,7 @@ The easiest way to run a full TiDB cluster locally is with Docker Compose.
 
 ```yaml
 # docker-compose.yml
+
 version: "3.8"
 
 services:

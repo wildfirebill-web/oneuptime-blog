@@ -22,6 +22,7 @@ Before installing ArgoCD on vanilla Kubernetes, make sure your cluster meets the
 
 ```bash
 # Verify your cluster is healthy
+
 kubectl cluster-info
 kubectl get nodes -o wide
 

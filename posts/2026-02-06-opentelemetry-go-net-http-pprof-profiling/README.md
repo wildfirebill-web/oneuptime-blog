@@ -409,6 +409,7 @@ Once profiles are captured, you can analyze them using the `go tool pprof` comma
 
 ```bash
 # Analyze CPU profile for a specific trace
+
 go tool pprof -http=:8081 profiles/cpu-<trace-id>-<span-id>-<timestamp>.prof
 
 # Compare heap profiles before and after optimization

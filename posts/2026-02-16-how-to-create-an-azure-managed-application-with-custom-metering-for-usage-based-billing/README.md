@@ -390,6 +390,7 @@ Before going live, test your metering integration against the metering API sandb
 
 ```bash
 # Test a metering event against the sandbox
+
 curl -X POST \
   "https://marketplaceapi.microsoft.com/api/usageEvent?api-version=2018-08-31" \
   -H "Authorization: Bearer $TOKEN" \

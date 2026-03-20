@@ -43,6 +43,7 @@ resource "aws_eks_cluster" "main" {
 
 ```hcl
 # Grant an IAM role full cluster admin access
+
 resource "aws_eks_access_entry" "admin" {
   cluster_name  = aws_eks_cluster.main.name
   principal_arn = var.admin_role_arn

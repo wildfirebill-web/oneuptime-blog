@@ -48,6 +48,7 @@ The task that loads OS-specific variables:
 
 ```yaml
 # tasks/main.yml - load OS-specific variables with fallback chain
+
 - name: Load OS-specific variables
   ansible.builtin.include_vars: "{{ item }}"
   with_first_found:

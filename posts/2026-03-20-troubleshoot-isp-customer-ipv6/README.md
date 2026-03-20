@@ -26,7 +26,8 @@ flowchart TD
 Check that the customer's CPE router received a delegated prefix from the BNG/BRAS.
 
 ```bash
-# On BNG — check active DHCPv6-PD leases for customer
+# On BNG - check active DHCPv6-PD leases for customer
+
 # (Kea DHCP lease database)
 mysql -u kea -p kea -e "
   SELECT address, prefixlen, dhcp_identifier, expire
@@ -48,13 +49,13 @@ show dhcpv6 server binding detail | match "Prefix|State"
 A customer with no IPv6 usually has a session issue at layer 2 or authentication.
 
 ```bash
-# Cisco ASR9K — find subscriber session
+# Cisco ASR9K - find subscriber session
 show subscriber session all filter username customer@example.com detail | include IPv6
 
 # Juniper MX
 show subscribers extensive | match "User|IPv6|State"
 
-# FreeRADIUS — check recent accounting for customer
+# FreeRADIUS - check recent accounting for customer
 mysql -u radius -p radius -e "
   SELECT username, framedipv6prefix, delegatedipv6prefix,
          acctstarttime, acctstoptime
@@ -88,7 +89,7 @@ Even with a valid prefix, misconfigured routes will black-hole traffic.
 # Check that customer prefix is in routing table
 ip -6 route show 2001:db8:home:a0::/56
 
-# On BNG — verify subscriber route is installed
+# On BNG - verify subscriber route is installed
 show ipv6 route 2001:db8:home:a0:: detail
 
 # Traceroute from BNG to customer prefix
@@ -126,7 +127,7 @@ dig AAAA google.com @2606:4700:4700::1111
 Address the most frequent root causes found during diagnosis.
 
 ```bash
-# Fix 1: CPE not sending DHCPv6-PD request — restart DHCP client
+# Fix 1: CPE not sending DHCPv6-PD request - restart DHCP client
 # (on CPE running Linux)
 systemctl restart dhcpcd
 # or

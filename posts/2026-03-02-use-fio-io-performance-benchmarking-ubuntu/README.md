@@ -14,6 +14,7 @@ fio (Flexible I/O Tester) is the most capable open-source storage benchmarking t
 
 ```bash
 # Install from Ubuntu repositories
+
 sudo apt update
 sudo apt install fio -y
 

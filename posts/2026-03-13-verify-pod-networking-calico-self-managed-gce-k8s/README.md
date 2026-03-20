@@ -30,6 +30,7 @@ Create GCE VPC firewall rules to allow Calico networking protocols.
 
 ```bash
 # Get the network name used by your GCE instances
+
 NETWORK=<your-gce-network>
 PROJECT=<your-gcp-project>
 

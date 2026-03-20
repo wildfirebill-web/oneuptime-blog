@@ -32,6 +32,7 @@ Start with a new React app configured for Teams:
 
 ```bash
 # Create the React app with TypeScript
+
 npx create-react-app teams-tab --template typescript
 cd teams-tab
 

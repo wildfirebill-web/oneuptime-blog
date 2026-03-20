@@ -31,6 +31,7 @@ This gives you six combinations: `|`, `|-`, `|+`, `>`, `>-`, `>+`.
 
 ```yaml
 # 1. Literal + Clip (|) - preserves newlines, one trailing
+
 literal_clip: |
   line one
   line two

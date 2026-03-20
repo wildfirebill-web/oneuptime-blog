@@ -32,6 +32,7 @@ The `default-address-pools` setting in Docker's `daemon.json` defines the IPv6 (
 
 ```bash
 # Apply the configuration
+
 sudo systemctl restart docker
 
 # Verify the pool is configured

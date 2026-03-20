@@ -74,6 +74,7 @@ For automation, the Azure CLI lets you create these alerts programmatically. Her
 
 ```bash
 # Define variables
+
 RESOURCE_ID="/subscriptions/<sub-id>/resourceGroups/rg-prod/providers/Microsoft.Compute/virtualMachines/web-prod-01"
 ACTION_GROUP_ID="/subscriptions/<sub-id>/resourceGroups/rg-monitoring/providers/Microsoft.Insights/actionGroups/ops-team"
 

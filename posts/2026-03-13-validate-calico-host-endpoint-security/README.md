@@ -65,6 +65,7 @@ For the iptables dataplane, inspect the chains that Calico creates for host endp
 
 ```bash
 # SSH to a node and inspect Calico chains
+
 sudo iptables -L cali-to-hep-forward -n -v
 sudo iptables -L cali-from-hep-forward -n -v
 ```

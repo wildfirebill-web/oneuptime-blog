@@ -26,6 +26,7 @@ Identify the current scheduler for each block device.
 
 ```bash
 # List all block devices
+
 lsblk
 
 # Check scheduler for specific device

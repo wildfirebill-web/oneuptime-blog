@@ -40,6 +40,7 @@ Create a `HelmRepository` resource that points to the EKS Helm chart repository 
 
 ```yaml
 # clusters/my-cluster/appmesh/helmrepository.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

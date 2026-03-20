@@ -22,6 +22,7 @@ Python has several classes for representing dates and times:
 from datetime import date, time, datetime, timedelta
 
 # date - just a date (year, month, day)
+
 today = date.today()
 print(today)  # 2024-03-15
 

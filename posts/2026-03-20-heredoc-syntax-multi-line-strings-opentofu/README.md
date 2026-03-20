@@ -51,7 +51,7 @@ resource "aws_instance" "app" {
 }
 ```
 
-The content is treated as if the indentation doesn't exist — each line has leading whitespace trimmed to the level of the least-indented line.
+The content is treated as if the indentation doesn't exist - each line has leading whitespace trimmed to the level of the least-indented line.
 
 ---
 

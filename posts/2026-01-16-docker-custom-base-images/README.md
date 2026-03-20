@@ -38,6 +38,7 @@ Go can compile to static binaries that run without any dependencies.
 
 ```dockerfile
 # Build stage
+
 FROM golang:1.21-alpine AS builder
 
 WORKDIR /app

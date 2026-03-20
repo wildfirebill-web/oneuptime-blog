@@ -26,6 +26,7 @@ tls: failed to verify certificate: x509: certificate signed by unknown authority
 
 ```bash
 # Check all sources for certificate errors
+
 flux get sources all
 
 # Check GitRepository status

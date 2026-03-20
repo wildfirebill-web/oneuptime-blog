@@ -57,6 +57,7 @@ defaults
     timeout server      30s
 
 # Stats page
+
 listen stats
     bind *:8404
     mode http

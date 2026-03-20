@@ -36,6 +36,7 @@ Both subscriptions need to be in the same Azure AD tenant. You can verify this w
 
 ```bash
 # List subscriptions and their tenant IDs
+
 az account list --query "[].{Name:name, SubscriptionId:id, TenantId:tenantId}" -o table
 ```
 

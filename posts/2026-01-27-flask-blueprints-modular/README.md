@@ -20,6 +20,7 @@ A Blueprint is a way to organize related views, templates, and other code. Think
 
 ```python
 # blueprints/auth/routes.py
+
 from flask import Blueprint
 
 # Create a Blueprint instance

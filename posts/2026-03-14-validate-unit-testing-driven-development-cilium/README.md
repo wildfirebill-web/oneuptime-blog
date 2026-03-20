@@ -30,6 +30,7 @@ Line coverage alone is insufficient. Measure branch coverage and condition cover
 
 ```bash
 # Generate atomic coverage profile (tracks branch-level coverage)
+
 go test ./proxylib/myprotocol/... -coverprofile=coverage.out -covermode=atomic
 
 # View function-level coverage

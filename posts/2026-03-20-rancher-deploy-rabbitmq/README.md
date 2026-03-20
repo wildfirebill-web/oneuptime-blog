@@ -1,8 +1,8 @@
-# How to Deploy RabbitMQ on Rancher
+# How to Deploy RabbitMQ on Rancher - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Kubernetes, RabbitMQ, Message Queue, AMQP
+Tags: Rancher, Kubernetes, RabbitMQ, Message Queues, AMQP
 
 Description: Deploy a production-ready RabbitMQ cluster on Rancher using the RabbitMQ Cluster Operator with high availability, persistent storage, and monitoring.
 
@@ -21,6 +21,7 @@ RabbitMQ is a widely used open-source message broker supporting AMQP, MQTT, and 
 
 ```bash
 # Install RabbitMQ Cluster Operator
+
 kubectl apply -f "https://github.com/rabbitmq/cluster-operator/releases/latest/download/cluster-operator.yml"
 
 # Or via Helm

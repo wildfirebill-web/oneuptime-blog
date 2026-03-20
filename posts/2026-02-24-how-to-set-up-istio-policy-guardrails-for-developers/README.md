@@ -307,6 +307,7 @@ Before deploying policies, test them with `gator`:
 
 ```bash
 # Install gator
+
 go install github.com/open-policy-agent/gatekeeper/v3/cmd/gator@latest
 
 # Test a constraint against a resource

@@ -14,6 +14,7 @@ systemd-networkd supports WireGuard via `.netdev` files with `Kind=wireguard`. K
 
 ```bash
 # Generate a private key
+
 wg genkey | tee /etc/systemd/network/wg0.key | wg pubkey > /etc/systemd/network/wg0.pub
 
 # Restrict permissions on the private key

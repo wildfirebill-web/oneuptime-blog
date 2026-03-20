@@ -75,6 +75,7 @@ The simplest way to profile a script is from the command line:
 
 ```python
 # example_app.py
+
 # A sample application demonstrating common performance patterns
 
 import time

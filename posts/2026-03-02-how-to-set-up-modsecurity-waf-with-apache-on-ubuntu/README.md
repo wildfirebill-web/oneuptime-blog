@@ -14,6 +14,7 @@ ModSecurity is an open-source Web Application Firewall (WAF) that works as an Ap
 
 ```bash
 # Ensure Apache is installed
+
 sudo apt install apache2
 
 # Verify Apache is running

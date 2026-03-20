@@ -65,6 +65,7 @@ You can configure the TTL (time-to-live) for wrapped tokens to control how long 
 
 ```bash
 # Wrap a secret with a 5-minute TTL
+
 vault kv get -wrap-ttl=5m secret/data/myapp/credentials
 
 # Wrap a secret with a 1-hour TTL

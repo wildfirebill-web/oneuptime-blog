@@ -20,6 +20,7 @@ Containers often run processes as a specific user (e.g., UID 1000 or UID 0). If 
 
 ```bash
 # Create a volume and inspect its default permissions
+
 podman volume create appdata
 podman volume inspect appdata --format '{{ .Mountpoint }}'
 

@@ -220,6 +220,7 @@ Check who has which global roles:
 
 ```bash
 # List all global role bindings
+
 kubectl get globalrolebindings -o custom-columns=NAME:.metadata.name,ROLE:.globalRoleName,USER:.userName,GROUP:.groupPrincipalName
 
 # List all global roles

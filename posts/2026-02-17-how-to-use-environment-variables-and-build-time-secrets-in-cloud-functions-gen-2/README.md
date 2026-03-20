@@ -20,6 +20,7 @@ Environment variables are the simplest configuration mechanism. They are set at 
 
 ```bash
 # Set individual environment variables
+
 gcloud functions deploy my-function \
   --gen2 \
   --runtime=nodejs20 \

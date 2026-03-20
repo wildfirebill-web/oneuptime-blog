@@ -58,6 +58,7 @@ The JVM is the foundation of Cassandra performance. Incorrect JVM settings can c
 
 ```bash
 # /etc/cassandra/jvm.options
+
 # ============================================================
 # HEAP SETTINGS
 # ============================================================

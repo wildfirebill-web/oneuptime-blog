@@ -29,6 +29,7 @@ The simplest approach is using ArgoCD sync waves to ensure CRDs are created firs
 
 ```yaml
 # crds/certificate-crd.yaml
+
 apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:

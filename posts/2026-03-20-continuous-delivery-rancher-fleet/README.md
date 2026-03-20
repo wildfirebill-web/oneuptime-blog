@@ -8,7 +8,7 @@ Description: Learn how to set up GitOps-based continuous delivery using Rancher 
 
 ---
 
-Rancher Fleet is a built-in GitOps engine in Rancher. It watches Git repositories and continuously reconciles the desired state defined in Git with the actual state of your clusters — across one or thousands of clusters.
+Rancher Fleet is a built-in GitOps engine in Rancher. It watches Git repositories and continuously reconciles the desired state defined in Git with the actual state of your clusters - across one or thousands of clusters.
 
 ---
 
@@ -38,6 +38,7 @@ Create a `GitRepo` resource that points Fleet to your application repository:
 
 ```yaml
 # gitrepo-my-app.yaml
+
 apiVersion: fleet.cattle.io/v1alpha1
 kind: GitRepo
 metadata:
@@ -70,7 +71,7 @@ kubectl apply -f gitrepo-my-app.yaml
 
 Fleet expects a specific layout for Helm and Kustomize bundles:
 
-```
+```text
 k8s/
   fleet.yaml          # Bundle configuration
   deployment.yaml     # Raw Kubernetes manifests

@@ -23,6 +23,7 @@ Make sure you have these in place:
 
 ```bash
 # Enable Pub/Sub API and grant the necessary role
+
 gcloud services enable pubsub.googleapis.com --project=my-project-id
 
 gcloud projects add-iam-policy-binding my-project-id \

@@ -142,6 +142,7 @@ limits_config:
   max_query_parallelism: 32
 
 # Ruler configuration
+
 ruler:
   storage:
     type: local

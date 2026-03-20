@@ -16,6 +16,7 @@ Proper topic configuration is crucial for Kafka performance, reliability, and co
 
 ```bash
 # Create topic with defaults
+
 kafka-topics.sh --bootstrap-server localhost:9092 \
   --create --topic my-topic
 

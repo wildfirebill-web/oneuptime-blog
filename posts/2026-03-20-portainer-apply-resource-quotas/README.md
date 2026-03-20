@@ -1,4 +1,4 @@
-# How to Apply Resource Quotas in Portainer
+# How to Apply Resource Quotas in Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -47,7 +47,8 @@ Portainer creates the ResourceQuota object automatically.
 For more granular control, use `kubectl` in the KubeShell:
 
 ```yaml
-# resource-quota-team.yaml — Team namespace quota
+# resource-quota-team.yaml - Team namespace quota
+
 apiVersion: v1
 kind: ResourceQuota
 metadata:
@@ -185,7 +186,7 @@ Create a script to provision new team namespaces with standard quotas:
 
 ```bash
 #!/bin/bash
-# create-team-namespace.sh — Provision a new team namespace with quotas
+# create-team-namespace.sh - Provision a new team namespace with quotas
 
 TEAM_NAME=$1
 CPU_LIMIT="${2:-4}"

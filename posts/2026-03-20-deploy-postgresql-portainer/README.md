@@ -55,7 +55,7 @@ volumes:
 
 ## Portainer Environment Variables
 
-```
+```text
 POSTGRES_DB = myapp
 POSTGRES_USER = appuser
 POSTGRES_PASSWORD = secure-database-password
@@ -86,6 +86,7 @@ CREATE TABLE IF NOT EXISTS app.users (
 
 ```ini
 # Custom postgresql.conf settings (mount as volume or use container env)
+
 # Set via environment-like approach in docker-compose:
 command: >
   postgres

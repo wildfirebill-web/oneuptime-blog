@@ -29,6 +29,7 @@ This guide deploys Keycloak in production mode using the Bitnami Helm chart, bac
 kubectl create namespace keycloak
 
 # Keycloak admin credentials
+
 kubectl create secret generic keycloak-admin-secret \
   --namespace keycloak \
   --from-literal=admin-password=KeycloakAdmin1!

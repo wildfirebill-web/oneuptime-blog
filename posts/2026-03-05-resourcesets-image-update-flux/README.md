@@ -32,6 +32,7 @@ Here is a ResourceSet that generates ImageRepository and ImagePolicy resources f
 
 ```yaml
 # image-automation/resourceset.yaml
+
 apiVersion: fluxcd.controlplane.io/v1
 kind: ResourceSet
 metadata:
@@ -154,7 +155,7 @@ spec:
     strategy: Setters
 ```
 
-## ResourceSet with Registry Credentials
+ResourceSet with Registry Credentials
 
 If your applications use different registries, include the secret reference in the inputs.
 

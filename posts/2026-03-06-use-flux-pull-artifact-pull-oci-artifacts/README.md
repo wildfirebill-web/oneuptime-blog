@@ -24,6 +24,7 @@ Before getting started, make sure you have:
 
 ```bash
 # Verify Flux CLI is installed
+
 flux version --client
 
 # Ensure you have artifacts to pull

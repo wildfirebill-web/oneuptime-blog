@@ -25,6 +25,7 @@ Start with a simple cache for your dependencies.
 
 ```yaml
 # Cache node_modules for Node.js projects
+
 build:
   image: node:20
   cache:

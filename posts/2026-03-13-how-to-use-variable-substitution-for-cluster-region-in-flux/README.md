@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux, Kubernetes, GitOps, Multi-Cluster, Variable Substitution, Region, Kustomize, Post-Build
+Tags: Flux, Kubernetes, GitOps, Multi-Cluster, Variable Substitution, Regions, Kustomize, Post-Build
 
 Description: A hands-on guide to using Flux post-build variable substitution to dynamically configure region-specific settings like endpoints, storage classes, and DNS across multi-region clusters.
 

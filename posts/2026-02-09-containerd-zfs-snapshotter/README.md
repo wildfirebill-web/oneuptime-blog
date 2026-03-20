@@ -22,6 +22,7 @@ Install ZFS on Ubuntu nodes.
 
 ```bash
 # Install ZFS utilities
+
 sudo apt-get update
 sudo apt-get install -y zfsutils-linux
 

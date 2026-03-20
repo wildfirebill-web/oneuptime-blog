@@ -37,6 +37,7 @@ Look for pods stuck in `Pending`, `CrashLoopBackOff`, or `Init:Error`.
 
 ```bash
 # Tigera Operator logs
+
 kubectl logs -n tigera-operator deploy/tigera-operator --tail=50
 
 # calico-node logs on a specific node

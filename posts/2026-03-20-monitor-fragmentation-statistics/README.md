@@ -14,6 +14,7 @@ Linux kernel maintains detailed counters for all fragmentation and reassembly op
 
 ```bash
 # View all IP fragmentation and reassembly counters:
+
 cat /proc/net/snmp | awk '/^Ip:/{getline; print $0}' | tr ' ' '\n' | \
   grep -A1 'ReasmFails\|ReasmOKs\|ReasmTimeout\|FragCreates\|FragFails\|FragOKs' || \
   nstat -a | grep -i "frag\|reasmb"
@@ -120,7 +121,7 @@ chmod +x /usr/local/bin/frag_exporter.sh
 
 ## Interpret the Counters
 
-```
+```nginx
 Counter Interpretation:
 
 IpFragCreates > 0:
@@ -148,4 +149,4 @@ IpReasmFails / (IpReasmFails + IpReasmOKs) = reassembly failure rate
 
 ## Conclusion
 
-Monitor `IpReasmFails` as your primary fragmentation health metric. Any non-zero value means packets are being lost due to incomplete fragment reassembly. `IpFragCreates` indicates your host is fragmenting packets — check which applications are sending oversized UDP or using interfaces with wrong MTU. Set up alerts when `IpReasmFails` increases. The `nstat -d` tool provides per-interval deltas which are more useful than absolute counters for detecting new fragmentation events.
+Monitor `IpReasmFails` as your primary fragmentation health metric. Any non-zero value means packets are being lost due to incomplete fragment reassembly. `IpFragCreates` indicates your host is fragmenting packets - check which applications are sending oversized UDP or using interfaces with wrong MTU. Set up alerts when `IpReasmFails` increases. The `nstat -d` tool provides per-interval deltas which are more useful than absolute counters for detecting new fragmentation events.

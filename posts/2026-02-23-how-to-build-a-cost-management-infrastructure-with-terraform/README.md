@@ -31,6 +31,7 @@ Start with budgets that alert you before costs get out of hand.
 
 ```hcl
 # Monthly account-level budget
+
 resource "aws_budgets_budget" "monthly_total" {
   name         = "monthly-total-budget"
   budget_type  = "COST"
@@ -158,7 +159,7 @@ resource "aws_ce_anomaly_subscription" "alerts" {
 }
 ```
 
-## Resource Scheduling for Non-Production
+Resource Scheduling for Non-Production
 
 Dev and staging environments do not need to run 24/7. Schedule them to turn off outside business hours.
 

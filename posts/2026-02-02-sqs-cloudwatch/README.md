@@ -96,6 +96,7 @@ The following AWS CLI command retrieves the current message count for a queue:
 
 ```bash
 # Get the approximate number of visible messages in a queue
+
 # Replace YOUR_QUEUE_NAME with your actual queue name
 aws cloudwatch get-metric-statistics \
     --namespace AWS/SQS \

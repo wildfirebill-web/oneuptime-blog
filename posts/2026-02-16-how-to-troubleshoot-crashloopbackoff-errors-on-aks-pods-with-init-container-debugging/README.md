@@ -22,6 +22,7 @@ Start by getting an overview of what is happening.
 
 ```bash
 # List pods and their status
+
 kubectl get pods -n <namespace>
 
 # Example output showing CrashLoopBackOff

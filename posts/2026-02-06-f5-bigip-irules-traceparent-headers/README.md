@@ -29,6 +29,7 @@ This iRule checks if a `traceparent` header exists. If not, it generates one:
 
 ```tcl
 # iRule: otel_traceparent_inject
+
 when HTTP_REQUEST {
     # Check if traceparent header already exists
     if { [HTTP::header exists "traceparent"] } {

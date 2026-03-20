@@ -25,6 +25,7 @@ First, initialize your Go module and install the required dependencies.
 
 ```bash
 # Initialize a new Go module
+
 go mod init github.com/yourusername/k8s-controller
 
 # Install client-go and related packages
@@ -1291,7 +1292,7 @@ func handleError(err error) {
 }
 ```
 
-### Resource Version Management
+Resource Version Management
 
 Track resource versions to detect changes and avoid update conflicts.
 

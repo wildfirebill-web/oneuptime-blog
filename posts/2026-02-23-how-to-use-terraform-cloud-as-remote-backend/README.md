@@ -33,6 +33,7 @@ The `cloud` block was introduced in Terraform 1.1 and is the preferred way to in
 
 ```hcl
 # main.tf - Using the cloud block
+
 terraform {
   cloud {
     organization = "your-org"

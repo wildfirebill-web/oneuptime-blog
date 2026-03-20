@@ -50,6 +50,7 @@ This minimal configuration starts collecting all Kubernetes events from every na
 
 ```yaml
 # collector-config.yaml
+
 receivers:
   # Watch for Kubernetes events across all namespaces
   k8s_events:

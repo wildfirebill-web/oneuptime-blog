@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: rancher, disaster-recovery, automation, testing, kubernetes, ci-cd
+Tags: Rancher, Disaster-recovery, Automation, Testing, Kubernetes, Ci-cd
 
 Description: Guide to automating Rancher disaster recovery tests using scripts and CI/CD pipelines to ensure continuous DR readiness.
 
@@ -32,6 +32,7 @@ REPORT_FILE="/tmp/backup-verification-$(date +%Y%m%d).log"
 echo "=== Backup Verification $(date) ===" | tee "$REPORT_FILE"
 
 # List all backups
+
 BACKUPS=$(aws s3 ls "s3://${BUCKET}/rancher/" --recursive | sort)
 BACKUP_COUNT=$(echo "$BACKUPS" | wc -l)
 echo "Total backups found: $BACKUP_COUNT" | tee -a "$REPORT_FILE"

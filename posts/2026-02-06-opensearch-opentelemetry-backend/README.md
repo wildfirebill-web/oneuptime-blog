@@ -36,6 +36,7 @@ OpenSearch provides official Docker images that include both the search engine a
 
 ```yaml
 # docker-compose.yml - OpenSearch cluster with Dashboards
+
 version: "3.8"
 services:
   opensearch-node1:

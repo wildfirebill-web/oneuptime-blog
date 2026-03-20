@@ -238,6 +238,7 @@ CREATE TABLE tablename (...);
 
 ```bash
 # Find the orphaned file
+
 ls -la /var/lib/mysql/database_name/tablename.ibd
 
 # Stop MySQL

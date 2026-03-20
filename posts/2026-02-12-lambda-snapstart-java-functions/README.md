@@ -74,6 +74,7 @@ Using the CLI:
 
 ```bash
 # Enable SnapStart on your function
+
 aws lambda update-function-configuration \
   --function-name my-java-function \
   --snap-start ApplyOn=PublishedVersions

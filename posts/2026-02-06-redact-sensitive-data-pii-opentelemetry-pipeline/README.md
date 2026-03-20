@@ -132,6 +132,7 @@ Before deploying to production, test your redaction rules thoroughly. The simple
 
 ```bash
 # Start the collector with your config
+
 ./otelcol-contrib --config redaction-config.yaml
 
 # In another terminal, send a test log with sensitive data

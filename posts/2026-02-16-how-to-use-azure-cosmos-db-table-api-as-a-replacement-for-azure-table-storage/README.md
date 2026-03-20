@@ -30,6 +30,7 @@ The biggest wins are guaranteed latency and the automatic secondary indexing. Wi
 
 ```bash
 # Create a Cosmos DB account with Table API
+
 az cosmosdb create \
     --name myTableAccount \
     --resource-group myResourceGroup \

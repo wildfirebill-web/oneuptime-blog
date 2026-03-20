@@ -42,6 +42,7 @@ Generate a certificate using OpenSSL.
 
 ```bash
 # Generate a 2048-bit RSA private key and self-signed certificate
+
 # The certificate is valid for 2 years (730 days)
 openssl req -x509 \
   -newkey rsa:2048 \

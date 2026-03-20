@@ -62,6 +62,7 @@ The `tymphaName` field specifies the expected server name (SNI) that Felix uses 
 
 ```bash
 # Typha server certificate CN/SAN
+
 kubectl get secret calico-typha-tls -n calico-system \
   -o jsonpath='{.data.tls\.crt}' | base64 -d | \
   openssl x509 -noout -text | grep -A5 "Subject:\|Subject Alternative"

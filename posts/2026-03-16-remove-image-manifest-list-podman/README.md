@@ -20,6 +20,7 @@ Each image in a manifest list is identified by its digest (a SHA256 hash). To re
 
 ```bash
 # Inspect the manifest list to see all entries and their digests
+
 podman manifest inspect myapp:latest
 ```
 

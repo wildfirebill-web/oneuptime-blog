@@ -21,6 +21,7 @@ The SSL/TLS handshake is the negotiation phase where client and server agree on 
 
 ```bash
 # Get verbose handshake output
+
 openssl s_client -connect example.com:443 -debug 2>&1 | head -50
 
 # Test with specific protocol version

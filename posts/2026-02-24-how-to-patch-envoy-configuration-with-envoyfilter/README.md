@@ -342,6 +342,7 @@ Compare the configuration before and after:
 
 ```bash
 # Dump the full config
+
 istioctl proxy-config all deploy/my-app -n default -o json > /tmp/config-after.json
 
 # Search for the specific value you patched

@@ -313,6 +313,7 @@ func checkDatabase() error {
 
 ```python
 # health_service.py
+
 import grpc
 from concurrent import futures
 from grpc_health.v1 import health_pb2, health_pb2_grpc

@@ -6,11 +6,11 @@ Tags: Wireshark, BPF, Capture Filters, Networking, Packet Analysis
 
 Description: Apply BPF-based capture filters in Wireshark before starting a capture to reduce stored data, focusing only on traffic relevant to your investigation.
 
-Capture filters are applied before packets are stored — they reduce file size, improve performance, and keep your capture focused. Unlike display filters, they use BPF syntax (same as tcpdump) and cannot be changed during an active capture.
+Capture filters are applied before packets are stored - they reduce file size, improve performance, and keep your capture focused. Unlike display filters, they use BPF syntax (same as tcpdump) and cannot be changed during an active capture.
 
 ## Capture Filter vs Display Filter
 
-```
+```text
 Feature              Capture Filter          Display Filter
 -------------------  ----------------------  ----------------------
 When applied?        Before storing packet   After packet is stored
@@ -22,7 +22,7 @@ Effect on data       Permanently excludes    Just hides, not deleted
 
 ## Setting a Capture Filter in Wireshark
 
-```
+```text
 Method 1: Start screen
   Click on interface → click the small filter icon → type BPF filter
 
@@ -39,6 +39,7 @@ Method 3: Double-click with filter
 # These use BPF syntax, same as tcpdump
 
 # Capture only traffic to/from a specific host
+
 host 192.168.1.100
 
 # Capture specific port
@@ -98,7 +99,7 @@ not (src net 10.0.0.0/8 or src net 172.16.0.0/12 or src net 192.168.0.0/16)
 ## Saving Capture Filters for Reuse
 
 In Wireshark GUI:
-```
+```text
 1. Enter the filter in the filter field
 2. Click the "+" button next to the filter field
 3. Name the filter
@@ -123,4 +124,4 @@ Use both for layered filtering:
 # then shows only traffic to a specific server from that web traffic
 ```
 
-Capture filters are most valuable when analyzing high-traffic systems — without them, a busy production server generates gigabytes of capture data per minute, making analysis impractical.
+Capture filters are most valuable when analyzing high-traffic systems - without them, a busy production server generates gigabytes of capture data per minute, making analysis impractical.

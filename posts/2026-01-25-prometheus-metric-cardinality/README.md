@@ -31,6 +31,7 @@ High cardinality impacts:
 
 ```promql
 # Total number of active time series
+
 prometheus_tsdb_head_series
 
 # Time series created per second

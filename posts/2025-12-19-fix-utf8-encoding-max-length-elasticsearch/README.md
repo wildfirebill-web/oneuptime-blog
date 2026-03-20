@@ -183,6 +183,7 @@ def preprocess_document(doc, keyword_fields):
     return processed
 
 # Usage
+
 doc = {
     "title": "Short title",
     "content": "Very long content..." * 10000  # Long string

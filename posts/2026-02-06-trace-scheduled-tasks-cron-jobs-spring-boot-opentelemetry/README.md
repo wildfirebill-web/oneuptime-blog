@@ -74,6 +74,7 @@ Configure OpenTelemetry in application.properties:
 
 ```properties
 # OpenTelemetry configuration
+
 otel.service.name=scheduled-tasks-service
 otel.traces.exporter=otlp
 otel.exporter.otlp.endpoint=http://localhost:4317

@@ -347,6 +347,7 @@ def audit_context(connection, user_id):
         cursor.close()
 
 # Usage
+
 with psycopg2.connect(dsn) as conn:
     with conn:
         with audit_context(conn, 'user@example.com') as cursor:

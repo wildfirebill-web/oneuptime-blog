@@ -174,6 +174,7 @@ Compare the listed resources with what actually exists:
 
 ```bash
 # Check if the GitRepository exists
+
 kubectl -n flux-system get gitrepository flux-system
 
 # Check if a Kustomization exists (if referenced)

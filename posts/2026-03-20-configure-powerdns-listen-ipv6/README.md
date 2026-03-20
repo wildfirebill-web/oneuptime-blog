@@ -22,6 +22,7 @@ Edit `/etc/powerdns/pdns.conf`:
 # /etc/powerdns/pdns.conf
 
 # Listen on all IPv4 and IPv6 addresses
+
 # Format: address:port or just address
 local-address=0.0.0.0, ::
 
@@ -149,7 +150,7 @@ for item in data:
 ```bash
 # Check if IPv6 is enabled on the system
 sysctl net.ipv6.conf.all.disable_ipv6
-# If 1, IPv6 is disabled — enable it first:
+# If 1, IPv6 is disabled - enable it first:
 sysctl -w net.ipv6.conf.all.disable_ipv6=0
 
 # Check logs for binding errors

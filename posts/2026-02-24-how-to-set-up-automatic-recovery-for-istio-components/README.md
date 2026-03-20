@@ -312,6 +312,7 @@ Combine Prometheus alerting with a webhook-based recovery system. When Prometheu
 
 ```yaml
 # AlertManager configuration
+
 route:
   receiver: 'recovery-webhook'
   routes:

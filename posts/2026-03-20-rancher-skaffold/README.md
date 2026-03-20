@@ -21,6 +21,7 @@ Skaffold is a command-line tool for continuous development on Kubernetes. It wat
 
 ```bash
 # macOS
+
 brew install skaffold
 
 # Linux

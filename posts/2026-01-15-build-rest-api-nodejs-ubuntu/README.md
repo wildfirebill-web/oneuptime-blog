@@ -52,6 +52,7 @@ First, update your system packages:
 
 ```bash
 # Update the package list
+
 sudo apt update
 
 # Upgrade existing packages

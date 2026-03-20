@@ -16,6 +16,7 @@ Your RHEL system must be registered with Red Hat Subscription Manager. If it is 
 
 ```bash
 # Register the system with your Red Hat account
+
 sudo subscription-manager register --username your_username --password your_password
 
 # Attach the appropriate subscription

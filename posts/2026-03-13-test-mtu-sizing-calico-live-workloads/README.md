@@ -29,6 +29,7 @@ kubectl run file-server --image=nginx
 kubectl exec -it file-server -- dd if=/dev/urandom of=/usr/share/nginx/html/testfile bs=1M count=100
 
 # From another pod, download the file
+
 SERVER_IP=$(kubectl get pod file-server -o jsonpath='{.status.podIP}')
 kubectl exec client-pod -- curl -o /dev/null -w "%{speed_download}\n" http://${SERVER_IP}/testfile
 ```

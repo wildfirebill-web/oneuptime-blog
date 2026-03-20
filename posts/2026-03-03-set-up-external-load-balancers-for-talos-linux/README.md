@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Talos Linux, Load Balancer, External, HAProxy, NGINX, Kubernetes, Infrastructure
+Tags: Talos Linux, Load Balancer, External, HAProxy, Nginx, Kubernetes, Infrastructure
 
 Description: Configure external load balancers like HAProxy and Nginx for Talos Linux clusters to distribute traffic and provide high availability.
 
@@ -30,6 +30,7 @@ Install HAProxy on a dedicated machine (or VM):
 
 ```bash
 # On Ubuntu/Debian
+
 apt-get update && apt-get install -y haproxy
 
 # On RHEL/CentOS

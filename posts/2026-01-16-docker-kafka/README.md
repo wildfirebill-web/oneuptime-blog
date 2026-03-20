@@ -240,6 +240,7 @@ volumes:
 
 ```bash
 # Create topic
+
 docker exec kafka kafka-topics --create \
   --bootstrap-server localhost:9092 \
   --topic my-topic \

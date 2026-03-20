@@ -14,6 +14,7 @@ The `community.general` collection is the largest Ansible collection by module c
 
 ```bash
 # Install the collection
+
 ansible-galaxy collection install community.general
 
 # It is also included in the full 'ansible' package

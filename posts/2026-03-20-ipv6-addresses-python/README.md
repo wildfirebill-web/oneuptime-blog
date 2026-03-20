@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Python, IPv6, Networking, ipaddress, Socket Programming, Development
+Tags: Python, IPv6, Networking, Ipaddress, Socket Programming, Development
 
 Description: Handle, validate, parse, and compare IPv6 addresses in Python applications using the built-in ipaddress module and socket library.
 
@@ -18,6 +18,7 @@ The `ipaddress` module is the primary tool for IPv6 address handling:
 import ipaddress
 
 # Create an IPv6 address object
+
 addr = ipaddress.ip_address('2001:db8::1')
 print(addr)            # 2001:db8::1
 print(type(addr))      # <class 'ipaddress.IPv6Address'>

@@ -47,6 +47,7 @@ First, create service principals for each subscription:
 
 ```bash
 # Create a service principal for the production subscription
+
 az account set --subscription "Production"
 az ad sp create-for-rbac \
   --name "sp-terraform-production" \

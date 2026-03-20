@@ -22,6 +22,7 @@ Install Podman Desktop which includes Podman Machine.
 
 ```bash
 # macOS installation
+
 brew install podman
 
 # Initialize Podman Machine

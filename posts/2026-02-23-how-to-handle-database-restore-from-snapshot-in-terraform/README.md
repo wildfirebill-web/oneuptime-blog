@@ -20,6 +20,7 @@ The general workflow is: identify the snapshot you want to restore from, create 
 
 ```hcl
 # Configure Terraform
+
 terraform {
   required_providers {
     aws = {

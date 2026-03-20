@@ -27,6 +27,7 @@ Create and manage encrypted files with the `ansible-vault` command.
 
 ```bash
 # Create a new encrypted file
+
 # Opens your default editor to add content
 ansible-vault create secrets.yml
 

@@ -33,6 +33,7 @@ Everything starts in your application code where telemetry signals are created. 
 
 ```python
 # Your application generates telemetry through the OpenTelemetry API
+
 from opentelemetry import trace
 
 tracer = trace.get_tracer(__name__)

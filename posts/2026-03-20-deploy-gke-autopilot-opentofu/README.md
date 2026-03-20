@@ -8,7 +8,7 @@ Description: Learn how to deploy a Google Kubernetes Engine Autopilot cluster us
 
 ---
 
-GKE Autopilot manages the entire underlying node infrastructure — no node pools to configure, patch, or scale. You pay per pod rather than per node, making it cost-effective for variable workloads. OpenTofu provisions the cluster with minimal configuration.
+GKE Autopilot manages the entire underlying node infrastructure - no node pools to configure, patch, or scale. You pay per pod rather than per node, making it cost-effective for variable workloads. OpenTofu provisions the cluster with minimal configuration.
 
 ## GKE Autopilot vs Standard
 
@@ -25,6 +25,7 @@ graph LR
 
 ```hcl
 # network.tf
+
 resource "google_compute_network" "gke" {
   name                    = "${var.project_id}-gke-vpc"
   auto_create_subnetworks = false
@@ -71,7 +72,7 @@ resource "google_container_cluster" "autopilot" {
     services_secondary_range_name = "service-cidr"
   }
 
-  # Private cluster — nodes have no public IPs
+  # Private cluster - nodes have no public IPs
   private_cluster_config {
     enable_private_nodes    = true
     enable_private_endpoint = false  # Public control plane endpoint
@@ -85,7 +86,7 @@ resource "google_container_cluster" "autopilot" {
     }
   }
 
-  # Workload Identity — no service account keys in pods
+  # Workload Identity - no service account keys in pods
   workload_identity_config {
     workload_pool = "${var.project_id}.svc.id.goog"
   }
@@ -144,7 +145,7 @@ resource "google_service_account_iam_member" "workload_identity_binding" {
 ## Autopilot-Compatible Workload Annotations
 
 ```hcl
-# k8s_manifests.tf — Kubernetes resources for Autopilot
+# k8s_manifests.tf - Kubernetes resources for Autopilot
 resource "kubernetes_deployment" "app" {
   metadata {
     name      = "my-app"
@@ -210,8 +211,8 @@ output "workload_identity_pool" {
 
 ## Best Practices
 
-- Use Workload Identity instead of service account keys — Autopilot enforces this by default.
-- Set explicit resource requests on all containers — Autopilot uses these to provision the right node size and to bill correctly.
+- Use Workload Identity instead of service account keys - Autopilot enforces this by default.
+- Set explicit resource requests on all containers - Autopilot uses these to provision the right node size and to bill correctly.
 - Use `autopilot.gke.io/spot = "true"` annotations on non-critical workloads to reduce costs by up to 70%.
 - Enable Binary Authorization for production clusters to ensure only verified container images run.
 - Choose a regional cluster (specify region, not zone) for automatic multi-zone distribution without extra configuration.

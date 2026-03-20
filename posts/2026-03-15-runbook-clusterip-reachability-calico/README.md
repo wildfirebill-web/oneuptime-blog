@@ -60,6 +60,7 @@ A ClusterIP reachability runbook should contain these sections in order:
 
 ```bash
 # Determine which services depend on the affected ClusterIP
+
 kubectl get pods --all-namespaces -o json | \
   jq -r '.items[] | select(.spec.containers[].env[]?.value | strings | contains("<service-name>")) | "\(.metadata.namespace)/\(.metadata.name)"'
 

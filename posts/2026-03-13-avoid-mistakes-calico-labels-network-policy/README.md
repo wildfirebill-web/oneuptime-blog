@@ -26,6 +26,7 @@ Labels can be changed by anyone with `kubectl patch` access. If your zero trust 
 
 ```bash
 # Dangerous - easily manipulated
+
 selector: role == 'admin'
 
 # Safer - use immutable metadata like service accounts

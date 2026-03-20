@@ -14,6 +14,7 @@ The Portainer Agent and Portainer server are versioned together. Running mismatc
 
 ```bash
 # Check Portainer server version
+
 TOKEN=$(curl -s -X POST \
   https://portainer.example.com/api/auth \
   -H "Content-Type: application/json" \

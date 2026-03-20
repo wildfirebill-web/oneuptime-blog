@@ -144,6 +144,7 @@ class PubSubEventBus:
                 logger.error(f"Error processing message: {e}")
 
 # Usage
+
 r = redis.Redis()
 
 # Order Service

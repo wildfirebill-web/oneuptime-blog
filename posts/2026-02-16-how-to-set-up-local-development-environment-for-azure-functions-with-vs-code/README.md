@@ -24,6 +24,7 @@ The Azure Functions Core Tools is the local runtime that lets you run and debug 
 
 ```bash
 # On macOS using Homebrew
+
 brew tap azure/functions
 brew install azure-functions-core-tools@4
 

@@ -38,6 +38,7 @@ A fixture is simply a function that returns (or yields) a value. Here is a basic
 
 ```python
 # tests/conftest.py
+
 import pytest
 
 # Define a simple fixture that provides test data

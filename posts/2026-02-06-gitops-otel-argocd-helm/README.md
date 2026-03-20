@@ -39,6 +39,7 @@ Create a Helm chart that templates the Collector configuration:
 
 ```yaml
 # charts/otel-collector/Chart.yaml
+
 apiVersion: v2
 name: otel-collector
 description: OpenTelemetry Collector Helm chart

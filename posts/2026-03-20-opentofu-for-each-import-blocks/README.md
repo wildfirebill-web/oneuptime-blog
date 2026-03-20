@@ -1,4 +1,4 @@
-# How to Use for_each with Import Blocks in OpenTofu
+# How to Use for_each with Import Blocks in OpenTofu - Opentofu
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -14,6 +14,7 @@ Import blocks support `for_each`, allowing you to import many resources at once 
 
 ```hcl
 # Import multiple S3 buckets in one block
+
 import {
   for_each = toset(["data", "logs", "backups"])
   to = aws_s3_bucket.buckets[each.value]

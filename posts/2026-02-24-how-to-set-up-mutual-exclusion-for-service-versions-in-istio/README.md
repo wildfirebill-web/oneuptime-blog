@@ -326,6 +326,7 @@ When you want to move users from v1 to v2, do it gradually:
 
 ```yaml
 # Update the Lua filter to assign new users to v2
+
 request_handle:headers():add("x-service-version", "v2")
 ```
 

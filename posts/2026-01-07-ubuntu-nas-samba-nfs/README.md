@@ -28,6 +28,7 @@ First, identify all available storage devices on your system.
 
 ```bash
 # List all block devices with size and type information
+
 lsblk -o NAME,SIZE,TYPE,FSTYPE,MOUNTPOINT
 
 # Get detailed information about specific disks

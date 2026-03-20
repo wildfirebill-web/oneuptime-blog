@@ -8,11 +8,11 @@ Description: Configure two HAProxy servers with Keepalived for active-passive hi
 
 ## Introduction
 
-HAProxy itself is not HA — if the server running HAProxy fails, the load balancer becomes a single point of failure. Keepalived uses VRRP (Virtual Router Redundancy Protocol) to float a virtual IP (VIP) between two HAProxy nodes. The primary node holds the VIP; if it fails, the backup takes over in seconds.
+HAProxy itself is not HA - if the server running HAProxy fails, the load balancer becomes a single point of failure. Keepalived uses VRRP (Virtual Router Redundancy Protocol) to float a virtual IP (VIP) between two HAProxy nodes. The primary node holds the VIP; if it fails, the backup takes over in seconds.
 
 ## Architecture
 
-```
+```text
 Clients → Virtual IP 10.0.1.100
                ↓
   ┌────────────┴────────────┐
@@ -30,13 +30,14 @@ Both nodes load balance to:
 
 ```bash
 # On both nodes
+
 sudo apt-get update
 sudo apt-get install -y haproxy keepalived
 ```
 
 ## Step 2: Configure HAProxy (Identical on Both Nodes)
 
-```
+```text
 # /etc/haproxy/haproxy.cfg (same on haproxy-1 and haproxy-2)
 
 global
@@ -62,7 +63,7 @@ backend web-backends
 
 ## Step 3: Configure Keepalived on the Master Node
 
-```
+```text
 # /etc/keepalived/keepalived.conf on haproxy-1 (MASTER)
 
 global_defs {
@@ -101,7 +102,7 @@ vrrp_instance VI_1 {
 
 ## Step 4: Configure Keepalived on the Backup Node
 
-```
+```text
 # /etc/keepalived/keepalived.conf on haproxy-2 (BACKUP)
 # Same as master but with state BACKUP and lower priority
 

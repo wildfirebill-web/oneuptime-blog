@@ -24,6 +24,7 @@ Start by verifying the Ingress resource is configured correctly.
 
 ```bash
 # Check Ingress status
+
 kubectl get ingress myapp-ingress -n default
 
 # Get detailed information

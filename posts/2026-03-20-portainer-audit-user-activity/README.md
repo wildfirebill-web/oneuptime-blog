@@ -1,4 +1,4 @@
-# How to Audit User Activity in Portainer Business Edition
+# How to Audit User Activity in Portainer Business Edition - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Learn how to access and analyze user activity audit logs in Portain
 
 ## Introduction
 
-Portainer Business Edition includes comprehensive activity logging that records all user actions — container deployments, configuration changes, login events, and more. This audit trail is essential for security investigations, compliance requirements (SOC2, PCI-DSS, HIPAA), and understanding what changed before an incident.
+Portainer Business Edition includes comprehensive activity logging that records all user actions - container deployments, configuration changes, login events, and more. This audit trail is essential for security investigations, compliance requirements (SOC2, PCI-DSS, HIPAA), and understanding what changed before an incident.
 
 ## Prerequisites
 
@@ -57,6 +57,7 @@ Apply filters to find specific events:
 
 ```bash
 # Access logs via Portainer API
+
 TOKEN="your-admin-token"
 PORTAINER_URL="https://portainer.example.com"
 
@@ -158,7 +159,7 @@ curl -s -H "Authorization: Bearer $TOKEN" \
 
 ```bash
 #!/bin/bash
-# detect-suspicious-activity.sh — Run periodically
+# detect-suspicious-activity.sh - Run periodically
 
 PORTAINER_URL="https://portainer.example.com"
 TOKEN="your-admin-token"

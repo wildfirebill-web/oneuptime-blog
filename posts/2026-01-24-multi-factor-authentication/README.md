@@ -138,6 +138,7 @@ class TOTPManager:
 
 
 # Example usage in a Flask application
+
 from flask import Flask, request, jsonify, session
 from functools import wraps
 

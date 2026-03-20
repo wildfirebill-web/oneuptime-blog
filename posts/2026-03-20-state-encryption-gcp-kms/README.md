@@ -1,4 +1,4 @@
-# How to Configure State Encryption with GCP KMS in OpenTofu
+# How to Configure State Encryption with GCP KMS in OpenTofu - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -14,6 +14,7 @@ Google Cloud Key Management Service (Cloud KMS) provides a fully managed encrypt
 
 ```hcl
 # kms.tf
+
 resource "google_kms_key_ring" "terraform_state" {
   name     = "terraform-state-keyring"
   location = "global"  # Or a specific region
@@ -105,8 +106,8 @@ resource "google_kms_crypto_key_iam_binding" "terraform" {
 ```
 
 Required roles:
-- `roles/cloudkms.cryptoKeyEncrypterDecrypter` — to encrypt and decrypt data
-- `roles/cloudkms.viewer` — to view key metadata (optional but useful)
+- `roles/cloudkms.cryptoKeyEncrypterDecrypter` - to encrypt and decrypt data
+- `roles/cloudkms.viewer` - to view key metadata (optional but useful)
 
 ## Step 5: Using with GCS Backend
 

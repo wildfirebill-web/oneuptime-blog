@@ -107,6 +107,7 @@ SELECT * FROM s3(
 
 ```bash
 # Install clickhouse-backup on self-hosted
+
 wget https://github.com/AlexAkulov/clickhouse-backup/releases/latest/download/clickhouse-backup-linux-amd64.tar.gz
 tar -xzf clickhouse-backup-linux-amd64.tar.gz
 

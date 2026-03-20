@@ -71,6 +71,7 @@ Available options:
 
 ```yaml
 # Comparison of compression options:
+
 #
 # Algorithm  | CPU Usage | Compression Ratio | Best For
 # -----------|-----------|-------------------|---------

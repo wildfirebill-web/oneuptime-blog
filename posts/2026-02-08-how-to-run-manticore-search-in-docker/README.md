@@ -18,6 +18,7 @@ Run Manticore with a single command:
 
 ```bash
 # Start Manticore Search with persistent data
+
 docker run -d \
   --name manticore \
   -p 9306:9306 \

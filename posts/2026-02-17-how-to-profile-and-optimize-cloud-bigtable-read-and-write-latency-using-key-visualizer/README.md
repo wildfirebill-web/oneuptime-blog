@@ -37,6 +37,7 @@ Key Visualizer is available for any Bigtable table that has had at least 30 GB o
 
 ```bash
 # List your Bigtable instances
+
 gcloud bigtable instances list
 
 # Open Key Visualizer in the browser

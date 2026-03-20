@@ -1,4 +1,4 @@
-# How to Optimize Rancher Server Performance
+# How to Optimize Rancher Server Performance - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -20,6 +20,7 @@ As Rancher deployments grow to manage dozens or hundreds of clusters, server per
 
 ```yaml
 # rancher-values.yaml - Optimized Helm values for Rancher
+
 replicas: 3  # HA deployment
 
 resources:

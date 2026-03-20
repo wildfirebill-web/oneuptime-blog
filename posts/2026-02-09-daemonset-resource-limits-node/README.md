@@ -267,6 +267,7 @@ Measure actual usage to set realistic limits:
 
 ```bash
 # Get current resource usage
+
 kubectl top pods -n monitoring -l app=node-exporter
 
 # Get detailed metrics over time

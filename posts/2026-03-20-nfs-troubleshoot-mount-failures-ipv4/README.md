@@ -14,6 +14,7 @@ NFS mount failures manifest as cryptic errors. Systematic diagnosis starting fro
 
 ```bash
 # Step 1: Verify network connectivity
+
 ping -c 3 203.0.113.10
 
 # Step 2: Check if NFS server is running

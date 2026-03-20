@@ -33,6 +33,7 @@ Configure Flux to watch different branches per cluster:
 
 ```yaml
 # Development cluster
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: GitRepository
 metadata:

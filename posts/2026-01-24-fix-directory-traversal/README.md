@@ -45,6 +45,7 @@ app = Flask(__name__)
 UPLOAD_DIR = "/var/www/uploads"
 
 # VULNERABLE: Direct path concatenation
+
 @app.route('/download')
 def download_file():
     filename = request.args.get('filename')

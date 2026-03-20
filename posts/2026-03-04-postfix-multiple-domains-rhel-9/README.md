@@ -54,6 +54,7 @@ Add to `/etc/postfix/main.cf`:
 
 ```bash
 # Your primary domain stays in mydestination
+
 mydestination = mail.example.com, localhost
 
 # List the virtual alias domains

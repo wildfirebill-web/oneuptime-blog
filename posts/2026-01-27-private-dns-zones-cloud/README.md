@@ -27,6 +27,7 @@ Route 53 private hosted zones provide DNS resolution within one or more VPCs. Re
 
 ```bash
 # Create the private hosted zone associated with a VPC
+
 # The --caller-reference must be unique for each create request
 aws route53 create-hosted-zone \
   --name internal.mycompany.com \

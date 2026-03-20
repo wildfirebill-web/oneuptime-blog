@@ -60,6 +60,7 @@ provider "azuread" {}
 
 ```hcl
 # Random password for SQL admin
+
 resource "random_password" "sql_admin" {
   length           = 32
   special          = true

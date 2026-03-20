@@ -32,6 +32,7 @@ Start with the basics - are the tunnels up?
 
 ```bash
 # Check VPN tunnel status
+
 aws ec2 describe-vpn-connections \
   --vpn-connection-ids vpn-abc123 \
   --query 'VpnConnections[0].VgwTelemetry[*].{

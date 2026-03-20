@@ -18,6 +18,7 @@ Create a storage account and container through the Azure CLI.
 
 ```bash
 # Create a resource group
+
 az group create --name storage-demo-rg --location eastus
 
 # Create a storage account

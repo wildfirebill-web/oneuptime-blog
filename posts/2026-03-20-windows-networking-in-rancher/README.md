@@ -1,4 +1,4 @@
-# How to Configure Windows Networking in Rancher
+# How to Configure Windows Networking in Rancher - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -27,6 +27,7 @@ When creating the Rancher cluster, configure the network plugin:
 
 ```yaml
 # cluster.yaml (RKE)
+
 network:
   plugin: flannel
   options:

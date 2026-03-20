@@ -16,6 +16,7 @@ Network bonding combines multiple physical interfaces into a single logical inte
 
 ```ini
 # /etc/systemd/network/10-bond0.netdev
+
 [NetDev]
 Name=bond0
 Kind=bond
@@ -28,10 +29,10 @@ DownDelaySec=200ms
 ```
 
 Common bond modes:
-- `active-backup` — failover only
-- `balance-rr` — round-robin load balancing
-- `802.3ad` — LACP link aggregation
-- `balance-alb` — adaptive load balancing
+- `active-backup` - failover only
+- `balance-rr` - round-robin load balancing
+- `802.3ad` - LACP link aggregation
+- `balance-alb` - adaptive load balancing
 
 ---
 

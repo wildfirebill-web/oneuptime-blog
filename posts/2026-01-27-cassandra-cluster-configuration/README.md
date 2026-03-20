@@ -50,6 +50,7 @@ Key topology decisions:
 
 ```yaml
 # Example: GossipingPropertyFileSnitch configuration
+
 # Located at /etc/cassandra/cassandra-rackdc.properties
 
 # Define the datacenter and rack for this node

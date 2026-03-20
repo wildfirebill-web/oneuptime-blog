@@ -16,6 +16,7 @@ Before diving into logs and configuration, check the fundamentals:
 
 ```bash
 # Is CUPS running?
+
 sudo systemctl status cups
 
 # If not, start it

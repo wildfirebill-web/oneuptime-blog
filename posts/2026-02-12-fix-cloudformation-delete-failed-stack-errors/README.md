@@ -16,6 +16,7 @@ Start by finding out which resource is blocking deletion:
 
 ```bash
 # Find which resources failed to delete
+
 aws cloudformation describe-stack-events \
     --stack-name my-stack \
     --query 'StackEvents[?ResourceStatus==`DELETE_FAILED`].[LogicalResourceId,ResourceType,ResourceStatusReason]' \

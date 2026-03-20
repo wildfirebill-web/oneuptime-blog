@@ -316,6 +316,7 @@ import pika
 import json
 
 # Connection parameters
+
 credentials = pika.PlainCredentials('admin', 'password')
 parameters = pika.ConnectionParameters(
     host='rabbitmq.messaging.svc.cluster.local',

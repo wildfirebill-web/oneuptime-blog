@@ -28,6 +28,7 @@ Here is the configuration for a collector running in one region. You would deplo
 
 ```yaml
 # otel-collector-synthetic.yaml
+
 receivers:
   # HTTP check receiver probes endpoints on a schedule
   httpcheck:

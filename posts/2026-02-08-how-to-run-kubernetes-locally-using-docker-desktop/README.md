@@ -22,6 +22,7 @@ Verify the cluster is running:
 
 ```bash
 # Check that kubectl can connect to the Docker Desktop cluster
+
 kubectl cluster-info
 
 # List the nodes (you should see one node called "docker-desktop")
@@ -97,7 +98,7 @@ kubectl apply -f deployment.yaml
 kubectl get pods
 ```
 
-## Resource Allocation
+Resource Allocation
 
 Docker Desktop's Kubernetes cluster runs on your machine, so it competes with everything else for CPU and memory. Configure resource limits in Docker Desktop Settings > Resources.
 

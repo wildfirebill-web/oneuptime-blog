@@ -103,6 +103,7 @@ aws iam attach-role-policy \
 
 ```yaml
 # infrastructure/xray/namespace.yaml
+
 apiVersion: v1
 kind: Namespace
 metadata:

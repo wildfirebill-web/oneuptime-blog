@@ -30,6 +30,7 @@ Store all Calico resources in a Git repository with a clear directory structure:
 
 ```bash
 # Recommended repository structure
+
 calico-config/
   ├── base/
   │   ├── ippools/

@@ -8,7 +8,7 @@ Description: Learn how to run commands as a specific user in the Docker containe
 
 ## Introduction
 
-By default, Portainer's container console runs commands as the container's configured user. But there are times when you need to run as a different user — as root to debug permission issues, or as a specific application user to test permissions or run user-specific commands. Portainer lets you specify the user when opening the console.
+By default, Portainer's container console runs commands as the container's configured user. But there are times when you need to run as a different user - as root to debug permission issues, or as a specific application user to test permissions or run user-specific commands. Portainer lets you specify the user when opening the console.
 
 ## Prerequisites
 
@@ -27,7 +27,7 @@ By default, Portainer's container console runs commands as the container's confi
 5. Click **Connect**.
 
 User field accepts:
-```
+```text
 root           → Run as root (UID 0)
 www-data       → Run as www-data user (name)
 1000           → Run as UID 1000
@@ -42,6 +42,7 @@ Running as root gives you unrestricted access to the container:
 
 ```bash
 # In Portainer console dialog:
+
 User: root
 
 # Now inside the container:
@@ -225,4 +226,4 @@ docker exec -u appuser my-container ls -la /data
 
 ## Conclusion
 
-Specifying the user when opening a container console in Portainer is a small but important feature for both debugging and security verification. Run as root when you need unrestricted access for diagnosing permission issues, installing tools, or inspecting sensitive files. Run as the application user to verify that your application has the correct permissions and can access the resources it needs. Always return to proper security practices after debugging — avoid leaving root console sessions open unnecessarily.
+Specifying the user when opening a container console in Portainer is a small but important feature for both debugging and security verification. Run as root when you need unrestricted access for diagnosing permission issues, installing tools, or inspecting sensitive files. Run as the application user to verify that your application has the correct permissions and can access the resources it needs. Always return to proper security practices after debugging - avoid leaving root console sessions open unnecessarily.

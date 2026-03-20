@@ -18,6 +18,7 @@ Get Nexus running with a single command:
 
 ```bash
 # Start Nexus Repository Manager OSS
+
 docker run -d \
   --name nexus \
   -p 8081:8081 \

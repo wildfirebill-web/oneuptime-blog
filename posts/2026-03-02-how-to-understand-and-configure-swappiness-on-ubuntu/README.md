@@ -27,6 +27,7 @@ The default value of 60 works reasonably well for general-purpose systems, but i
 
 ```bash
 # Check the current swappiness value
+
 cat /proc/sys/vm/swappiness
 
 # Or with sysctl

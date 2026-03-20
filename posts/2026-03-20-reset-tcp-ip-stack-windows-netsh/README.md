@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Windows, Networking, netsh, TCP/IP, Reset, Troubleshooting
+Tags: Windows, Networking, Netsh, TCP/IP, Reset, Troubleshooting
 
 Description: Reset the Windows TCP/IP stack to its default state using netsh int ip reset to resolve persistent network connectivity issues caused by corrupted TCP/IP settings.
 
 ## Introduction
 
-When Windows TCP/IP connectivity is broken in ways that IP reconfiguration cannot fix — such as after malware infection, bad driver installation, or registry corruption — resetting the TCP/IP stack rewrites all TCP/IP registry entries to their default state.
+When Windows TCP/IP connectivity is broken in ways that IP reconfiguration cannot fix - such as after malware infection, bad driver installation, or registry corruption - resetting the TCP/IP stack rewrites all TCP/IP registry entries to their default state.
 
 ## When to Use This Command
 
@@ -32,7 +32,7 @@ netsh int ip reset
 
 Expected output:
 
-```
+```text
 Resetting Interface, OK!
 Resetting Unicast Address, OK!
 Resetting Neighbor, OK!
@@ -45,7 +45,7 @@ Resetting Echo Request, OK!
 Reset completed, reboot is required.
 ```
 
-The "failed" line is normal — some entries require running as SYSTEM to reset. Reboot after running.
+The "failed" line is normal - some entries require running as SYSTEM to reset. Reboot after running.
 
 ## Complete Network Stack Reset (Multiple Commands)
 
@@ -86,7 +86,7 @@ The reset takes effect only after a reboot:
 
 ```cmd
 :: Reboot immediately
-shutdown /r /t 5 /c "TCP/IP stack reset — rebooting"
+shutdown /r /t 5 /c "TCP/IP stack reset - rebooting"
 ```
 
 ## Checking Network Connectivity After Reboot
@@ -107,6 +107,7 @@ nslookup google.com
 
 ```powershell
 # Reset IP interfaces (less comprehensive than netsh, but available)
+
 Get-NetIPAddress | Remove-NetIPAddress -Confirm:$false -ErrorAction SilentlyContinue
 Get-NetRoute     | Remove-NetRoute     -Confirm:$false -ErrorAction SilentlyContinue
 
@@ -117,4 +118,4 @@ netsh winsock reset
 
 ## Conclusion
 
-`netsh int ip reset` is the nuclear option for Windows TCP/IP stack corruption — it rewrites all TCP/IP registry entries to defaults. Always combine it with `netsh winsock reset` and `ipconfig /flushdns`, then reboot. Verify connectivity systematically from loopback outward after the restart.
+`netsh int ip reset` is the nuclear option for Windows TCP/IP stack corruption - it rewrites all TCP/IP registry entries to defaults. Always combine it with `netsh winsock reset` and `ipconfig /flushdns`, then reboot. Verify connectivity systematically from loopback outward after the restart.

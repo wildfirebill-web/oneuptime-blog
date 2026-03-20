@@ -63,6 +63,7 @@ Now let's convert this to an automated workflow. We will use a script that can b
 ```python
 #!/usr/bin/env python3
 # automated_runbook.py
+
 # Automated runbook for handling unresponsive service
 
 import subprocess

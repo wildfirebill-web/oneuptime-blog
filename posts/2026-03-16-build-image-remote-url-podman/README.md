@@ -20,6 +20,7 @@ Podman can download a tarball, extract it, and use it as the build context.
 
 ```bash
 # Build from a remote tarball containing a Containerfile and source code
+
 podman build -t myapp:latest https://example.com/project/source.tar.gz
 
 # The tarball should contain a Containerfile or Dockerfile at its root

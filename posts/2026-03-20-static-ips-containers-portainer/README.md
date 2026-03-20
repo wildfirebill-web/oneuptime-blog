@@ -16,6 +16,7 @@ Docker only allows static IP assignment on user-defined networks, not the defaul
 
 ```bash
 # Create network with explicit subnet (required for static IPs)
+
 docker network create \
   --driver bridge \
   --subnet=172.20.0.0/24 \
@@ -195,4 +196,4 @@ docker network ls -q | xargs docker network inspect \
 
 ## Conclusion
 
-Static IPs in Docker provide predictable addressing for services that act as infrastructure — databases, caches, and DNS servers benefit most from fixed addresses. Always use user-defined networks with explicit subnets when assigning static IPs, and plan your IP ranges before deployment to avoid conflicts. Portainer's network management UI shows you all networks and their subnets at a glance, making it easy to identify available IP ranges for new services.
+Static IPs in Docker provide predictable addressing for services that act as infrastructure - databases, caches, and DNS servers benefit most from fixed addresses. Always use user-defined networks with explicit subnets when assigning static IPs, and plan your IP ranges before deployment to avoid conflicts. Portainer's network management UI shows you all networks and their subnets at a glance, making it easy to identify available IP ranges for new services.

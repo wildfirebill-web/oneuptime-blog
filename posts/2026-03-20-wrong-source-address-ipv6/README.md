@@ -21,7 +21,7 @@ When an IPv6 connection uses an unexpected source address:
 |---|---|
 | Multiple addresses on interface | RFC 6724 Rule 8 picks longest match |
 | Temporary address enabled | Rule 7 prefers temporary over permanent |
-| Deprecated address not removed | Still in table but Rule 3 skips it — confusing |
+| Deprecated address not removed | Still in table but Rule 3 skips it - confusing |
 | Wrong policy table labels | Label mismatch causes unexpected source |
 | Route via unexpected interface | Rule 5 picks address from outgoing interface |
 | Missing prefix in routing table | Kernel uses default route interface |
@@ -30,6 +30,7 @@ When an IPv6 connection uses an unexpected source address:
 
 ```bash
 # Method 1: Python socket trick (no traffic sent)
+
 python3 << 'EOF'
 import socket
 
@@ -41,12 +42,12 @@ s.close()
 print(f"Source address for {destination}: {source}")
 EOF
 
-# Method 2: tcpdump — capture actual outgoing packet
+# Method 2: tcpdump - capture actual outgoing packet
 tcpdump -i eth0 -n -c 5 'ip6' &
 curl -6 --silent https://example.com > /dev/null
 # Look for src address in tcpdump output
 
-# Method 3: ss — show established connections
+# Method 3: ss - show established connections
 ss -6 -n state established
 # Shows local (source) and remote (destination) addresses
 ```
@@ -55,7 +56,7 @@ ss -6 -n state established
 
 ```bash
 #!/bin/bash
-# diagnose-source.sh — Full RFC 6724 source selection analysis
+# diagnose-source.sh - Full RFC 6724 source selection analysis
 
 DESTINATION=${1:-"2001:db8::1"}
 
@@ -203,7 +204,7 @@ curl -6 --interface 2001:db8:1::10 https://example.com
 
 ```bash
 #!/bin/bash
-# verify-source.sh — Post-fix verification
+# verify-source.sh - Post-fix verification
 
 DESTINATION="2001:db8::1"
 EXPECTED_SOURCE="2001:db8:1::10"

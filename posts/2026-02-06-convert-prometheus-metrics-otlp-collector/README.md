@@ -43,6 +43,7 @@ Here is a minimal collector configuration that scrapes a Prometheus endpoint and
 
 ```yaml
 # otel-collector-config.yaml
+
 receivers:
   # Scrape Prometheus metrics from application endpoints
   prometheus:

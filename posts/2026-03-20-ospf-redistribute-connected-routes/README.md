@@ -61,7 +61,7 @@ EOF
 
 ## Cisco IOS Equivalent
 
-```
+```text
 router ospf 1
   redistribute connected subnets     ! "subnets" is required to include non-classful routes
   redistribute connected subnets route-map FILTER-CONNECTED
@@ -86,6 +86,7 @@ redistribute connected metric-type 2
 
 ```bash
 # Check OSPF database for Type 5 (external) LSAs
+
 vtysh -c "show ip ospf database external"
 
 # Verify the redistributed routes appear in OSPF
@@ -103,5 +104,5 @@ vtysh -c "show ip ospf border-routers"
 
 - `redistribute connected` in OSPF imports all directly connected IPv4 subnets as Type 5 LSAs.
 - Add `subnets` on Cisco IOS; FRR includes all prefixes by default.
-- Use a route map to limit which connected routes are redistributed — redistributing everything can cause routing instability.
+- Use a route map to limit which connected routes are redistributed - redistributing everything can cause routing instability.
 - Redistributed routes appear as `O E1` or `O E2` in the routing table of other OSPF routers.

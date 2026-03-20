@@ -18,6 +18,7 @@ Terragrunt requires Terraform to be installed first. Verify your Terraform insta
 
 ```bash
 # Check Terraform is installed
+
 terraform version
 
 # You should see output like:

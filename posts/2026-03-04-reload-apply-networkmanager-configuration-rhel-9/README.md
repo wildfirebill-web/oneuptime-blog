@@ -32,6 +32,7 @@ The `reapply` subcommand applies pending changes to an already active connection
 
 ```bash
 # Reapply changes to an active connection
+
 nmcli device reapply ens192
 ```
 

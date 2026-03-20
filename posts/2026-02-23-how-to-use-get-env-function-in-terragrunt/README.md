@@ -16,6 +16,7 @@ The function takes one or two arguments:
 
 ```hcl
 # With a default value - returns the default if the variable is not set
+
 get_env("VARIABLE_NAME", "default_value")
 
 # Without a default - Terragrunt errors if the variable is not set

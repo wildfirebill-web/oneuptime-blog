@@ -50,6 +50,7 @@ These commands create secrets for common Collector configuration values.
 
 ```bash
 # Enable the Secret Manager API if not already enabled
+
 gcloud services enable secretmanager.googleapis.com
 
 # Create a secret for the telemetry backend API key

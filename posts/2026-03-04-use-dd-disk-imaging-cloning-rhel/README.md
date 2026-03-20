@@ -16,6 +16,7 @@ Clone an entire disk to an image file:
 
 ```bash
 # Create a raw image of /dev/sda
+
 # bs sets the block size (larger values improve speed)
 # status=progress shows transfer progress
 sudo dd if=/dev/sda of=/backup/sda-image.img bs=4M status=progress

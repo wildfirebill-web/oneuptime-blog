@@ -245,6 +245,7 @@ Always test your integration before relying on it. Create a test alert:
 
 ```bash
 # Port-forward Alertmanager
+
 kubectl port-forward svc/alertmanager -n monitoring 9093:9093
 
 # Send a test alert

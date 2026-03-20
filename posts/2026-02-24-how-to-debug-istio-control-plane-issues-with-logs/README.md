@@ -16,6 +16,7 @@ Before diving into debug logs, check the basic health of the control plane:
 
 ```bash
 # Is Istiod running?
+
 kubectl get pods -n istio-system -l app=istiod
 
 # Check Istiod's own logs for obvious errors

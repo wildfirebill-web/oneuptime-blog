@@ -35,6 +35,7 @@ First, install the Gateway API CRDs:
 
 ```bash
 # Install Gateway API CRDs
+
 kubectl apply -f https://github.com/kubernetes-sigs/gateway-api/releases/download/v1.0.0/standard-install.yaml
 
 # Verify installation

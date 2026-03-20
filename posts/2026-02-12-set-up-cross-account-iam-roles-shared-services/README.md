@@ -38,6 +38,7 @@ Create a role that Account A can assume:
 
 ```bash
 # Create the trust policy allowing Account A to assume this role
+
 cat > trust-policy.json << 'EOF'
 {
   "Version": "2012-10-17",

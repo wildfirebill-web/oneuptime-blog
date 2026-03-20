@@ -29,6 +29,7 @@ The `-target` flag tells Terraform to only plan changes for specific resources:
 
 ```bash
 # Target a specific resource
+
 terraform plan -target=aws_instance.web
 
 # Target a specific module

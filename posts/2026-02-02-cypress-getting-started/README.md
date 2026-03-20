@@ -52,6 +52,7 @@ Initialize a new project and install Cypress as a dev dependency:
 
 ```bash
 # Create a new project directory
+
 mkdir my-cypress-project
 cd my-cypress-project
 

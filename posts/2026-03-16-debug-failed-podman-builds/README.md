@@ -20,6 +20,7 @@ The first step is always to carefully read the error output. Podman tells you wh
 
 ```bash
 # Run a build and capture the output
+
 podman build -t myapp:latest . 2>&1 | tee build.log
 
 # If the build fails, search for the error

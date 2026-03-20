@@ -46,6 +46,7 @@ The interval is configured in the `spec.interval` field of the HelmChart resourc
 
 ```yaml
 # helmrelease-with-interval.yaml
+
 # HelmRelease with explicit chart reconciliation interval
 apiVersion: helm.toolkit.fluxcd.io/v2
 kind: HelmRelease

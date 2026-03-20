@@ -30,6 +30,7 @@ You advertise extended resources by patching node status. The resource name must
 
 ```bash
 # Advertise 4 FPGAs on a node
+
 kubectl patch node worker-01 --type=json -p='[
   {
     "op": "add",

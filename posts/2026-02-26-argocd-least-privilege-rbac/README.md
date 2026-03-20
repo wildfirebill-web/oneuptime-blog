@@ -153,6 +153,7 @@ Each CI pipeline gets its own account with the absolute minimum permissions:
 
 ```yaml
 # In argocd-cm - create accounts with apiKey capability only
+
 data:
   accounts.frontend-ci: apiKey
   accounts.backend-ci: apiKey

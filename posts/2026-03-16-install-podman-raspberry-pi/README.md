@@ -25,6 +25,7 @@ The Raspberry Pi is a versatile platform for home labs, IoT projects, and edge c
 
 ```bash
 # Update package lists and upgrade all packages
+
 sudo apt update && sudo apt upgrade -y
 ```
 

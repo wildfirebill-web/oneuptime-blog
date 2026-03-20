@@ -37,6 +37,7 @@ Change sets eliminate the surprise factor.
 
 ```bash
 # Create a change set to preview an update
+
 aws cloudformation create-change-set \
   --stack-name my-app-prod \
   --template-body file://template.yaml \

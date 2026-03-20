@@ -91,6 +91,7 @@ Here's a comprehensive collector configuration with compression enabled:
 
 ```yaml
 # collector-compression-config.yaml
+
 receivers:
   otlp:
     protocols:

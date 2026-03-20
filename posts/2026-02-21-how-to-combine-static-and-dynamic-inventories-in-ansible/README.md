@@ -29,6 +29,7 @@ When you point Ansible at the directory, it loads every file:
 
 ```bash
 # Load all inventory sources from the directory
+
 ansible-playbook -i inventory/ site.yml
 ```
 

@@ -27,7 +27,7 @@ flowchart LR
 
 ### Basic Pipeline
 
-```yaml
+````yaml
 # .github/workflows/terraform.yml
 
 name: Terraform
@@ -104,9 +104,9 @@ jobs:
 
             <details><summary>Show Plan</summary>
 
-            \`\`\`terraform
+            ```terraform
             ${process.env.PLAN}
-            \`\`\`
+            ```
 
             </details>
 
@@ -184,7 +184,7 @@ jobs:
       - name: Terraform Apply
         if: github.event_name == 'push'
         run: terraform apply -auto-approve tfplan
-```
+````
 
 ## GitLab CI Pipeline
 
@@ -255,6 +255,7 @@ Use OIDC for secure, secret-free authentication:
 # github-oidc.tf
 
 # Create OIDC provider for GitHub
+
 resource "aws_iam_openid_connect_provider" "github" {
   url = "https://token.actions.githubusercontent.com"
 

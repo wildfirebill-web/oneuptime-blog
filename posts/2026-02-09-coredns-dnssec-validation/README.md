@@ -155,6 +155,7 @@ Query these metrics to detect validation issues:
 
 ```promql
 # Rate of SERVFAIL responses (potential validation failures)
+
 rate(coredns_dns_responses_total{rcode="SERVFAIL"}[5m]) > 0
 
 # DNSSEC cache hit rate

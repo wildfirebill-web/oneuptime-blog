@@ -89,6 +89,7 @@ Create panels for the most important Cilium metrics:
 
 ```promql
 # Panel 1: Policy drop rate by reason
+
 sum(rate(cilium_drop_count_total[5m])) by (reason)
 
 # Panel 2: Endpoint regeneration duration (p99)

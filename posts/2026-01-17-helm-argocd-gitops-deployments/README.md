@@ -56,6 +56,7 @@ helm repo update
 
 ```yaml
 # argocd-values.yaml
+
 global:
   domain: argocd.example.com
 

@@ -59,6 +59,7 @@ The foundation of zero-trust networking is a default deny policy. This blocks al
 
 ```yaml
 # bootstrap/network-policies/default-deny.yaml
+
 apiVersion: networking.k8s.io/v1
 kind: NetworkPolicy
 metadata:

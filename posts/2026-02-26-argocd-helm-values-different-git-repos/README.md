@@ -251,6 +251,7 @@ Common issues and solutions:
 
 ```bash
 # Check if ArgoCD can access both repositories
+
 argocd repo list
 
 # Verify the application sources

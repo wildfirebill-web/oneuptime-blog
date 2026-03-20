@@ -154,6 +154,7 @@ Coralogix has different endpoints per region. Make sure you use the correct one:
 
 ```yaml
 # US1
+
 domain: "coralogix.com"
 
 # US2

@@ -53,6 +53,7 @@ Not everything needs to be backed up - the OS files will be replaced. Focus on:
 
 ```bash
 # Files that need backing up:
+
 # 1. User home directories
 ls -la /home/
 

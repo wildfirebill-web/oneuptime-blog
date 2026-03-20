@@ -28,6 +28,7 @@ Define your NTP infrastructure in group variables so every device uses the same 
 
 ```yaml
 # group_vars/all_network.yml - Shared NTP configuration
+
 ---
 ntp_config:
   # Primary and backup NTP servers

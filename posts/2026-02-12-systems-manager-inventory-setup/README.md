@@ -39,6 +39,7 @@ You can verify which instances are already managed with this command:
 
 ```bash
 # List all instances managed by Systems Manager
+
 aws ssm describe-instance-information \
   --query "InstanceInformationList[].{Id:InstanceId,Name:ComputerName,Platform:PlatformType,AgentVersion:AgentVersion}" \
   --output table

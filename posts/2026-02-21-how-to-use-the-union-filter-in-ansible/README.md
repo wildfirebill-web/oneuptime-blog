@@ -16,6 +16,7 @@ If you have been using `list_a + list_b | unique` as a workaround, the `union` f
 
 ```yaml
 # Merge two lists and remove duplicates automatically
+
 - name: Basic union example
   ansible.builtin.debug:
     msg: "{{ list_a | union(list_b) }}"

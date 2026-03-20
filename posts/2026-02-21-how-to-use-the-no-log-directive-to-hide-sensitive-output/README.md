@@ -16,6 +16,7 @@ Consider this playbook that creates a database user:
 
 ```yaml
 # WITHOUT no_log - password visible in output
+
 - name: Create database user
   mysql_user:
     name: app_user

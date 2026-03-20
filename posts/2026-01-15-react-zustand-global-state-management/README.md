@@ -52,6 +52,7 @@ Let's start by setting up Zustand in a React project.
 
 ```bash
 # Using npm
+
 npm install zustand
 
 # Using yarn

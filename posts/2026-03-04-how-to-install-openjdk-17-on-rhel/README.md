@@ -14,6 +14,7 @@ OpenJDK 17 is a Long-Term Support (LTS) release of the Java Development Kit. RHE
 
 ```bash
 # Install the JDK (includes JRE + development tools)
+
 sudo dnf install -y java-17-openjdk java-17-openjdk-devel
 
 # Verify the installation

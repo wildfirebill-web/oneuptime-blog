@@ -31,6 +31,7 @@ The simplest approach - count requests in fixed time windows:
 
 ```python
 # fixed_window.py
+
 from fastapi import FastAPI, Request, HTTPException
 from collections import defaultdict
 import time

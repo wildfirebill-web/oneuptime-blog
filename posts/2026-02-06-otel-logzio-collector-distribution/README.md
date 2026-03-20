@@ -14,6 +14,7 @@ Logz.io provides Helm charts for Kubernetes deployment:
 
 ```bash
 # Add the Logz.io Helm repo
+
 helm repo add logzio-helm https://logzio.github.io/logzio-helm
 helm repo update
 

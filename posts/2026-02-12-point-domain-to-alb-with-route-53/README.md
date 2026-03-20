@@ -34,6 +34,7 @@ Get your ALB details:
 
 ```bash
 # Get the ALB DNS name and hosted zone ID
+
 aws elbv2 describe-load-balancers \
   --names my-application-alb \
   --query 'LoadBalancers[0].{DNSName:DNSName,HostedZoneId:CanonicalHostedZoneId}'

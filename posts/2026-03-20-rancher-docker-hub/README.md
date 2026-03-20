@@ -40,6 +40,7 @@ Using an access token is more secure than using your password:
 
 ```bash
 # Create Docker Hub credentials as a Kubernetes secret
+
 kubectl create secret docker-registry docker-hub-credentials \
   --docker-server=https://index.docker.io/v1/ \
   --docker-username=myusername \

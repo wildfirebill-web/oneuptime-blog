@@ -39,6 +39,7 @@ sudo nano /etc/systemd/system/worker@.service
 Description=Background Worker Instance %i
 Documentation=https://example.com/workers
 # This instance should start after network is available
+
 After=network.target
 
 # Template units can depend on each other

@@ -27,6 +27,7 @@ This guide walks through practical examples of using `calicoctl node status` for
 
 ```bash
 # Run on any Calico node
+
 sudo calicoctl node status
 ```
 

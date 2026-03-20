@@ -27,6 +27,7 @@ You could run SignalR on your own server, but then you are managing WebSocket co
 
 ```bash
 # Create a resource group
+
 az group create --name signalr-demo-rg --location eastus
 
 # Create a SignalR Service instance in serverless mode

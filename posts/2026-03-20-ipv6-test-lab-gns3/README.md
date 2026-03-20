@@ -17,6 +17,7 @@ GNS3 supports IPv6 natively through:
 
 ```bash
 # Install GNS3 on Ubuntu
+
 sudo add-apt-repository ppa:gns3/ppa
 sudo apt update
 sudo apt install gns3-gui gns3-server
@@ -42,8 +43,8 @@ docker build -t frr-lab:latest -f Dockerfile.frr-lab .
 
 After connecting nodes in GNS3, configure OSPFv3:
 
-```
-! FRR Router 1 (R1) — via vtysh console
+```text
+! FRR Router 1 (R1) - via vtysh console
 configure terminal
 !
 interface eth0
@@ -77,7 +78,7 @@ write
 
 ## BGP IPv6 in GNS3
 
-```
+```text
 ! R1 BGP configuration (eBGP between AS65001 and AS65002)
 configure terminal
 !
@@ -164,7 +165,7 @@ if __name__ == "__main__":
 
 After configuring routing:
 
-```
+```text
 # In FRR vtysh console
 show ipv6 route
 show ipv6 ospf6 neighbor
@@ -179,4 +180,4 @@ traceroute6 2001:db8:3::1
 
 ## Conclusion
 
-GNS3 provides a GUI-based environment for realistic IPv6 lab scenarios. FRR Docker containers are the quickest way to get started without needing commercial router images. The GNS3 REST API enables topology automation via Python. For Cisco IOS-based labs, GNS3 requires IOS/IOS-XE images from a valid Cisco entitlement. FRR covers OSPFv3, BGP4+ with IPv6 AFI, IS-IS, and static routing — sufficient for most IPv6 learning and testing scenarios.
+GNS3 provides a GUI-based environment for realistic IPv6 lab scenarios. FRR Docker containers are the quickest way to get started without needing commercial router images. The GNS3 REST API enables topology automation via Python. For Cisco IOS-based labs, GNS3 requires IOS/IOS-XE images from a valid Cisco entitlement. FRR covers OSPFv3, BGP4+ with IPv6 AFI, IS-IS, and static routing - sufficient for most IPv6 learning and testing scenarios.

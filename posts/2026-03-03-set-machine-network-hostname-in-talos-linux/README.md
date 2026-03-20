@@ -18,6 +18,7 @@ The hostname is part of the `machine.network` section in the Talos machine confi
 
 ```yaml
 # Set a static hostname
+
 machine:
   network:
     hostname: worker-01

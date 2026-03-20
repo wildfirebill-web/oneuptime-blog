@@ -43,6 +43,7 @@ Verify your Ubuntu version and update the system before proceeding.
 
 ```bash
 # Check your Ubuntu version to ensure compatibility
+
 lsb_release -a
 
 # Update package lists and upgrade existing packages

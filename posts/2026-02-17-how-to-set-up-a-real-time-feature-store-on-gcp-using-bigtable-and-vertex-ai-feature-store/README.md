@@ -38,6 +38,7 @@ Start by creating a feature store instance and defining your feature groups:
 
 ```bash
 # Enable the required APIs
+
 gcloud services enable aiplatform.googleapis.com
 gcloud services enable bigtable.googleapis.com
 gcloud services enable bigtableadmin.googleapis.com

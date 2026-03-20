@@ -44,6 +44,7 @@ Deploy VictoriaMetrics using Docker Compose:
 
 ```yaml
 # docker-compose.yml for VictoriaMetrics with Grafana
+
 version: "3"
 
 services:

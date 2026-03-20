@@ -25,6 +25,7 @@ When files change, lsyncd accumulates events for a short delay (default 20 secon
 
 ```bash
 # Install from Ubuntu repositories
+
 sudo apt update
 sudo apt install lsyncd rsync
 

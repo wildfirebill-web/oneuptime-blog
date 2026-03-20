@@ -31,6 +31,7 @@ List everything stored in your Key Vault.
 
 ```bash
 # List all secrets
+
 az keyvault secret list \
   --vault-name my-keyvault \
   --query '[*].{Name:name,Enabled:attributes.enabled,Created:attributes.created,Expires:attributes.expires}' \

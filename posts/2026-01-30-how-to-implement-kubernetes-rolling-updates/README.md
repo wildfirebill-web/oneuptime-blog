@@ -96,6 +96,7 @@ Kubernetes provides built-in commands to monitor the progress of your deployment
 
 ```bash
 # Watch the rollout status in real-time
+
 kubectl rollout status deployment/my-application
 
 # View rollout history

@@ -175,6 +175,7 @@ You also need to create an Event Grid subscription for your storage account. Thi
 
 ```bash
 # Create an Event Grid subscription that routes blob events to your function
+
 az eventgrid event-subscription create \
   --name blob-upload-sub \
   --source-resource-id /subscriptions/<SUB_ID>/resourceGroups/<RG>/providers/Microsoft.Storage/storageAccounts/<STORAGE_ACCOUNT> \

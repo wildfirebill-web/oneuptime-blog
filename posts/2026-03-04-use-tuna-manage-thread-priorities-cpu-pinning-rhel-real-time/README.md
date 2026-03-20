@@ -14,6 +14,7 @@ The `tuna` tool is a utility designed for real-time systems on RHEL. It provides
 
 ```bash
 # Install tuna from the RHEL repositories
+
 sudo dnf install -y tuna
 ```
 

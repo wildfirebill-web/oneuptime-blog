@@ -12,7 +12,7 @@ A well-designed security group module abstracts away the verbose AWS security gr
 
 ## Module Structure
 
-```
+```text
 modules/security-group/
 ├── main.tf
 ├── variables.tf

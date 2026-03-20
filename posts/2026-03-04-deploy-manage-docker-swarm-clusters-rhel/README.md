@@ -14,6 +14,7 @@ Docker Swarm is a container orchestration tool built into Docker. It is simpler 
 
 ```bash
 # Remove any old Docker packages
+
 sudo dnf remove docker docker-client docker-common docker-latest
 
 # Add the Docker CE repository

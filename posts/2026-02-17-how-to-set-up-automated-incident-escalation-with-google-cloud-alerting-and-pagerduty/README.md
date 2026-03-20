@@ -45,6 +45,7 @@ Back in GCP, create a notification channel that connects to your PagerDuty servi
 
 ```bash
 # Create a PagerDuty notification channel
+
 gcloud alpha monitoring channels create \
   --display-name="PagerDuty - Payment Service" \
   --type=pagerduty \

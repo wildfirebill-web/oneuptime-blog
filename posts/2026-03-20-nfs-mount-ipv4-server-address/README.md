@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: NFS, IPv4, Mount, Linux, Client, File System
+Tags: NFS, IPv4, Mount, Linux, Client, File Systems
 
 Description: Mount an NFS share from an IPv4 server address using the mount command, specify NFS version and mount options, and verify the mounted filesystem.
 
@@ -14,6 +14,7 @@ Mounting NFS shares on Linux clients requires the NFS client utilities and the s
 
 ```bash
 # Debian/Ubuntu
+
 sudo apt install nfs-common
 
 # RHEL/CentOS/Fedora
@@ -49,12 +50,12 @@ sudo mount -t nfs \
   203.0.113.10:/srv/data /mnt/nfs-data
 
 # Mount options explained:
-# rw          — Read-write
-# soft        — Return error if server unreachable (vs. hang indefinitely)
-# intr        — Allow interrupting hung NFS operations
-# rsize=8192  — Read buffer size in bytes
-# wsize=8192  — Write buffer size in bytes
-# timeo=14    — Timeout in tenths of a second (1.4 seconds)
+# rw          - Read-write
+# soft        - Return error if server unreachable (vs. hang indefinitely)
+# intr        - Allow interrupting hung NFS operations
+# rsize=8192  - Read buffer size in bytes
+# wsize=8192  - Write buffer size in bytes
+# timeo=14    - Timeout in tenths of a second (1.4 seconds)
 
 # For performance (large transfers):
 sudo mount -t nfs \

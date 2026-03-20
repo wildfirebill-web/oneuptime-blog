@@ -37,6 +37,7 @@ First, create a custom HAProxy configuration that proxies PostgreSQL connections
 
 ```text
 # haproxy-pg.cfg
+
 # Proxies local PostgreSQL connections to the actual database server
 
 global

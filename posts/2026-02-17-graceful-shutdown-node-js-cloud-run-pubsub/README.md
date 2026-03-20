@@ -354,6 +354,7 @@ By default, Cloud Run gives your container 10 seconds after SIGTERM before killi
 
 ```bash
 # Deploy with a longer termination grace period
+
 gcloud run deploy my-service \
   --source . \
   --region us-central1 \

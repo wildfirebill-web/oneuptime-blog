@@ -16,6 +16,7 @@ The simplest restart command:
 
 ```bash
 # Restart nginx on all web servers
+
 ansible webservers -m service -a "name=nginx state=restarted" --become
 ```
 

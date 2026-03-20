@@ -25,7 +25,8 @@ graph LR
 ## Import Block (Modern Approach)
 
 ```hcl
-# import.tf — generates configuration automatically
+# import.tf - generates configuration automatically
+
 import {
   id = "i-1234567890abcdef0"
   to = aws_instance.web
@@ -87,7 +88,7 @@ tofu import aws_eks_cluster.main my-cluster
 
 ```bash
 #!/bin/bash
-# import_script.sh — discover and import resources
+# import_script.sh - discover and import resources
 
 # Discover all EC2 instances in a region
 INSTANCES=$(aws ec2 describe-instances \
@@ -122,9 +123,9 @@ tofu plan -generate-config-out=generated_instances.tf
 tofu plan
 
 # Common issues after import:
-# 1. Tags that OpenTofu would add — add to your config
-# 2. Settings that differ — decide if your config or reality is correct
-# 3. Lifecycle rules — add ignore_changes for attributes you don't want to manage
+# 1. Tags that OpenTofu would add - add to your config
+# 2. Settings that differ - decide if your config or reality is correct
+# 3. Lifecycle rules - add ignore_changes for attributes you don't want to manage
 
 # Example: ignore tags managed externally
 resource "aws_instance" "web" {
@@ -141,8 +142,8 @@ resource "aws_instance" "web" {
 
 ## Best Practices
 
-- Use import blocks with `-generate-config-out` for new imports — the auto-generated configuration is a better starting point than writing from scratch.
-- Review generated configuration carefully before committing — it often includes computed attributes that should be removed.
+- Use import blocks with `-generate-config-out` for new imports - the auto-generated configuration is a better starting point than writing from scratch.
+- Review generated configuration carefully before committing - it often includes computed attributes that should be removed.
 - Import resources in logical groups (all networking together, then compute, etc.) rather than all at once.
 - Run `tofu plan` after each import to confirm no unintended changes will be applied on the next apply.
 - Use `ignore_changes` for attributes managed outside OpenTofu (like tags from AWS Config or auto-scaling) to prevent constant drift.

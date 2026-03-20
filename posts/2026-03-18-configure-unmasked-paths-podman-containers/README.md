@@ -22,6 +22,7 @@ By default, Podman overlays certain paths with `/dev/null` or an empty tmpfs so 
 
 ```bash
 # Show that certain paths are masked by default
+
 podman run --rm docker.io/library/alpine:latest \
   sh -c "
     echo '--- Default masked paths ---'

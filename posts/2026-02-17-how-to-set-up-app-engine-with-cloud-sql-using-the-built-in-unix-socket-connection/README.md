@@ -28,6 +28,7 @@ If you do not already have a Cloud SQL instance:
 
 ```bash
 # Create a PostgreSQL instance
+
 gcloud sql instances create my-db-instance \
   --database-version=POSTGRES_15 \
   --tier=db-f1-micro \

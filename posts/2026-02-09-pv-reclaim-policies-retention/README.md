@@ -26,6 +26,7 @@ StorageClasses define the default reclaim policy for dynamically provisioned vol
 
 ```yaml
 # storage-class-delete.yaml
+
 apiVersion: storage.k8s.io/v1
 kind: StorageClass
 metadata:

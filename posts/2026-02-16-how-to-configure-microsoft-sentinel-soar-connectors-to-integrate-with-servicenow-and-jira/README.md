@@ -321,6 +321,7 @@ Create an automation rule for Jira ticket creation. You might want different rul
 
 ```bash
 # Example: Create an automation rule via Sentinel API
+
 # This triggers the Jira playbook for medium and high severity incidents
 az sentinel automation-rule create \
   --resource-group myResourceGroup \

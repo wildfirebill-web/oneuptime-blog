@@ -196,6 +196,7 @@ For production with a reverse proxy:
 
 ```nginx
 # nginx.conf
+
 location /graphql {
     proxy_pass http://backend:4000;
     proxy_http_version 1.1;

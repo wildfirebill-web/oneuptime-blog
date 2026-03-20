@@ -18,6 +18,7 @@ Different databases use different connection string formats. PostgreSQL uses `po
 
 ```hcl
 # Configure Terraform
+
 terraform {
   required_providers {
     aws = {

@@ -65,6 +65,7 @@ The CI pipeline never touches the cluster; Flux CD does:
 
 ```yaml
 # CI updates the fleet repo
+
 # Flux reconciles the cluster
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization

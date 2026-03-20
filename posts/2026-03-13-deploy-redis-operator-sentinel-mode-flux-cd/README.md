@@ -26,6 +26,7 @@ This guide uses the `redis-operator` from OpsTree Labs (available on GitHub and 
 
 ```yaml
 # infrastructure/sources/ot-helm.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

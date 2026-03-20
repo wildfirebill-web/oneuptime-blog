@@ -49,6 +49,7 @@ For a cluster with three control plane nodes, you always have at least two healt
 
 ```bash
 # Step 1: Verify cluster health before starting
+
 kubectl get nodes
 talosctl etcd status --nodes 192.168.1.10
 

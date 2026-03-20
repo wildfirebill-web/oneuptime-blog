@@ -32,6 +32,7 @@ First, check that etcd is running and healthy:
 
 ```bash
 # Check etcd health using talosctl
+
 talosctl -n 192.168.1.10 etcd status
 
 # Check etcd member list

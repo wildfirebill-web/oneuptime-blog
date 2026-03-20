@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: SPAN, Port Mirroring, Switch, Packet Capture, Network Monitoring
+Tags: Span, Port Mirroring, Switch, Packet Capture, Network Monitoring
 
 Description: Learn how to configure Switched Port Analyzer (SPAN) port mirroring on Cisco, Arista, and Linux bridge switches to copy traffic from monitored ports to a capture device running Wireshark or tcpdump.
 
 ## What Is SPAN/Port Mirroring?
 
-SPAN (Switched Port Analyzer) copies traffic from one or more source ports to a destination port where a packet capture device is connected. The capture device receives a copy of all traffic — not just traffic destined for it.
+SPAN (Switched Port Analyzer) copies traffic from one or more source ports to a destination port where a packet capture device is connected. The capture device receives a copy of all traffic - not just traffic destined for it.
 
 ```mermaid
 graph LR
@@ -21,7 +21,7 @@ graph LR
 
 ## Step 1: Configure SPAN on Cisco IOS
 
-```
+```yaml
 ! Monitor a single port (GigabitEthernet0/1)
 ! Send copy to GigabitEthernet0/10 (where capture device is connected)
 
@@ -51,7 +51,7 @@ Switch# show monitor session 1
 
 ## Step 2: Mirror Multiple Source Ports
 
-```
+```text
 ! Mirror multiple specific ports
 Switch(config)# monitor session 1 source interface GigabitEthernet0/1 - 5 both
 
@@ -71,7 +71,7 @@ Switch(config)# no monitor session 1
 
 ## Step 3: Configure RSPAN (Remote SPAN Across Switches)
 
-```
+```text
 ! RSPAN sends mirrored traffic across the network to a remote switch
 
 ! Source switch configuration
@@ -97,6 +97,7 @@ Switch-Dest(config)# monitor session 1 destination interface GigabitEthernet0/10
 # Linux bridge with tc (traffic control) mirroring
 
 # Add mirror rule: copy all traffic from eth1 to eth2 (capture device)
+
 sudo tc qdisc add dev eth1 handle ffff: ingress
 sudo tc filter add dev eth1 parent ffff: u32 match u8 0 0 \
     action mirred egress mirror dev eth2
@@ -117,7 +118,7 @@ sudo tc qdisc del dev eth1 handle ffff: ingress
 
 ## Step 5: Configure on Arista EOS
 
-```
+```text
 ! Arista EOS SPAN configuration
 
 Switch# configure
@@ -159,7 +160,7 @@ wireshark /tmp/span-capture.pcap
 
 ## Step 7: SPAN Best Practices and Limitations
 
-```
+```text
 Limitations:
 1. SPAN destination port cannot be used for regular traffic
 2. SPAN may drop packets during congestion (hardware limit)

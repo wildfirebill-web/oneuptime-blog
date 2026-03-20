@@ -41,6 +41,7 @@ flowchart LR
 
 ```bash
 # Share an AMI with a specific AWS account
+
 aws ec2 modify-image-attribute \
     --image-id ami-0123456789abcdef0 \
     --launch-permission "Add=[{UserId=111122223333}]"

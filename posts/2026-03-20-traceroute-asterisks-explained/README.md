@@ -8,7 +8,7 @@ Description: Understand the multiple reasons why traceroute displays asterisks i
 
 ## Introduction
 
-Asterisks (`* * *`) in traceroute output indicate that no ICMP Time Exceeded response was received for that hop within the timeout period. This is often mistaken for a routing problem, but in most cases it simply means the router at that hop does not respond to traceroute probes — while still forwarding traffic normally.
+Asterisks (`* * *`) in traceroute output indicate that no ICMP Time Exceeded response was received for that hop within the timeout period. This is often mistaken for a routing problem, but in most cases it simply means the router at that hop does not respond to traceroute probes - while still forwarding traffic normally.
 
 ## Why Asterisks Appear
 
@@ -18,6 +18,7 @@ Routers often rate-limit ICMP Time Exceeded messages to avoid processing overhea
 
 ```bash
 # If some probes get through and others don't, it's rate limiting
+
 traceroute -n 8.8.8.8
 # 4  * 203.0.113.1  8.4 ms  *   <- partial responses = rate limiting
 ```
@@ -106,4 +107,4 @@ mtr --report -n 8.8.8.8
 
 ## Conclusion
 
-Asterisks in traceroute are often harmless. A router that shows `* * *` but the destination is reachable is simply not responding to ICMP/UDP probes — traffic still flows through it. True packet loss shows up as asterisks from a hop onward with a destination that also fails to respond to ping. Always verify destination reachability before assuming a router with asterisks is the problem.
+Asterisks in traceroute are often harmless. A router that shows `* * *` but the destination is reachable is simply not responding to ICMP/UDP probes - traffic still flows through it. True packet loss shows up as asterisks from a hop onward with a destination that also fails to respond to ping. Always verify destination reachability before assuming a router with asterisks is the problem.

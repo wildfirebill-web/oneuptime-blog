@@ -18,6 +18,7 @@ The service account needs specific BigQuery permissions to create datasets, run 
 
 ```bash
 # Create a dedicated service account for dbt Cloud
+
 gcloud iam service-accounts create dbt-cloud \
   --display-name="dbt Cloud Service Account" \
   --description="Used by dbt Cloud for data transformation"

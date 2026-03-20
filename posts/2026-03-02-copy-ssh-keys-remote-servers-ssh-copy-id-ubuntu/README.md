@@ -20,6 +20,7 @@ The simplest form of the command:
 
 ```bash
 # Copy your default public key to a remote server
+
 # You'll be prompted for the remote user's password
 ssh-copy-id user@remote-server.example.com
 ```

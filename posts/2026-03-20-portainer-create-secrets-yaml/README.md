@@ -1,4 +1,4 @@
-# How to Create Secrets via YAML Manifest in Portainer
+# How to Create Secrets via YAML Manifest in Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -22,6 +22,7 @@ Kubernetes stores secret data as base64-encoded strings in YAML:
 
 ```bash
 # Encode a value
+
 echo -n "my-password" | base64
 # Output: bXktcGFzc3dvcmQ=
 
@@ -30,7 +31,7 @@ echo "bXktcGFzc3dvcmQ=" | base64 --decode
 # Output: my-password
 
 # Important: -n flag prevents newline in encoded output
-echo "my-password" | base64     # WRONG — includes newline
+echo "my-password" | base64     # WRONG - includes newline
 echo -n "my-password" | base64  # CORRECT
 ```
 
@@ -60,7 +61,7 @@ data:
 
 ## Step 2: Using stringData (Recommended for Readability)
 
-The `stringData` field accepts plain text — Kubernetes encodes it automatically:
+The `stringData` field accepts plain text - Kubernetes encodes it automatically:
 
 ```yaml
 apiVersion: v1
@@ -70,7 +71,7 @@ metadata:
   namespace: production
 type: Opaque
 stringData:
-  # Plain text — no base64 encoding needed
+  # Plain text - no base64 encoding needed
   DATABASE_PASSWORD: "postgres-password-production"
   DATABASE_URL: "postgresql://app_user:postgres-password-production@postgres:5432/mydb"
   REDIS_PASSWORD: "redis-secret-password"
@@ -92,9 +93,9 @@ type: kubernetes.io/tls
 data:
   # Base64-encode certificate files:
   # cat tls.crt | base64 -w 0
-  tls.crt: LS0tLS1CRUdJTi...  # truncated — paste full base64
+  tls.crt: LS0tLS1CRUdJTi...  # truncated - paste full base64
   # cat tls.key | base64 -w 0
-  tls.key: LS0tLS1CRUdJTi...  # truncated — paste full base64
+  tls.key: LS0tLS1CRUdJTi...  # truncated - paste full base64
 ```
 
 Or use stringData for TLS (less common but valid):

@@ -29,6 +29,7 @@ Registry modules use a shorthand source format that is different from Git URLs:
 
 ```hcl
 # Format: <NAMESPACE>/<NAME>/<PROVIDER>
+
 module "vpc" {
   source  = "terraform-aws-modules/vpc/aws"
   version = "5.5.1"

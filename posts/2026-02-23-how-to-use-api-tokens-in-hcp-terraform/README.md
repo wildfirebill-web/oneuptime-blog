@@ -22,6 +22,7 @@ User tokens inherit all the permissions of the user who created them. If you are
 
 ```bash
 # Generate a user token via the CLI
+
 terraform login
 
 # This opens a browser window to app.terraform.io

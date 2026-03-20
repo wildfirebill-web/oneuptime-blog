@@ -54,6 +54,7 @@ AWX needs an X.509 certificate and private key for SAML signing and encryption.
 
 ```bash
 # Generate a self-signed certificate for AWX SAML
+
 openssl req -x509 -newkey rsa:2048 \
   -keyout awx-saml.key \
   -out awx-saml.crt \

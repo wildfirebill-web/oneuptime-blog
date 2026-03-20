@@ -16,6 +16,7 @@ The configuration model is based on "components" chained together: sources feed 
 
 ```bash
 # Install Vector using the official installation script
+
 curl -1sLf 'https://repositories.timber.io/public/vector/cfg/setup/bash.deb.sh' | \
     sudo -E bash
 

@@ -16,6 +16,7 @@ The `filemd5` function reads a file and returns its MD5 hash as a hex string:
 
 ```hcl
 # filemd5(path)
+
 # Returns the hex-encoded MD5 hash of a file
 filemd5("${path.module}/configs/app.yaml")
 # Returns something like: "d41d8cd98f00b204e9800998ecf8427e"

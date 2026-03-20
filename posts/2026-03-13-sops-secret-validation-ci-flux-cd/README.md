@@ -39,6 +39,7 @@ CI should only need public key information to verify encryption; decryption shou
 
 ```yaml
 # .sops.yaml - at the root of your fleet repository
+
 creation_rules:
   # Production secrets - encrypted with production Age key
   - path_regex: clusters/production/secrets/.*\.yaml$

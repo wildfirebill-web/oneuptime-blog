@@ -32,6 +32,7 @@ Create a deployment for Route53:
 
 ```yaml
 # externaldns-route53.yaml
+
 apiVersion: v1
 kind: ServiceAccount
 metadata:

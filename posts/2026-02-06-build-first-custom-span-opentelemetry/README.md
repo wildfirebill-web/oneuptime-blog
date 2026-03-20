@@ -38,6 +38,7 @@ Start with the simplest possible custom span. You'll instrument a function that 
 from opentelemetry import trace
 
 # Get a tracer instance
+
 # The name should be your module or library name
 tracer = trace.get_tracer(__name__)
 

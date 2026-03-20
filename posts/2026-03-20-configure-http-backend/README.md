@@ -8,21 +8,22 @@ Description: Learn how to configure the OpenTofu HTTP backend to store state in 
 
 ## Introduction
 
-The HTTP backend allows OpenTofu to store state in any system that exposes a RESTful HTTP API. It's highly flexible — you can use it with custom state storage services, GitLab's built-in Terraform state backend, or any API that implements the required protocol. This guide covers configuration, authentication, and locking.
+The HTTP backend allows OpenTofu to store state in any system that exposes a RESTful HTTP API. It's highly flexible - you can use it with custom state storage services, GitLab's built-in Terraform state backend, or any API that implements the required protocol. This guide covers configuration, authentication, and locking.
 
 ## HTTP Backend Protocol
 
 The HTTP backend expects a server that implements these endpoints:
-- `GET /state` — Retrieve the current state
-- `POST /state` — Update the state
-- `DELETE /state` — Delete the state (optional)
-- `LOCK /state` — Acquire a lock (optional)
-- `UNLOCK /state` — Release a lock (optional)
+- `GET /state` - Retrieve the current state
+- `POST /state` - Update the state
+- `DELETE /state` - Delete the state (optional)
+- `LOCK /state` - Acquire a lock (optional)
+- `UNLOCK /state` - Release a lock (optional)
 
 ## Basic Configuration
 
 ```hcl
 # backend.tf
+
 terraform {
   backend "http" {
     address        = "https://state-server.example.com/terraform/state/prod"
@@ -129,7 +130,7 @@ terraform {
   backend "http" {
     address = "https://state-server.example.com/state"
 
-    # Skip TLS verification (dev only — never in production!)
+    # Skip TLS verification (dev only - never in production!)
     skip_cert_verification = false
 
     # Custom CA certificate for self-signed certs

@@ -43,6 +43,7 @@ Before migrating, document all services, environments, and pipelines in Harness.
 
 ```bash
 # List all the services you need to migrate
+
 # Document for each service:
 # 1. Deployment type (Kubernetes, Helm, Kustomize)
 # 2. Artifact source (Docker registry, ECR, GCR, etc.)

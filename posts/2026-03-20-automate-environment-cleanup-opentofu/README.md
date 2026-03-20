@@ -39,6 +39,7 @@ resource "aws_instance" "feature_env" {
 
 ```yaml
 # .github/workflows/cleanup-environments.yml
+
 name: Cleanup Expired Environments
 
 on:
@@ -163,4 +164,4 @@ resource "aws_cloudwatch_event_target" "cleanup_lambda" {
 
 ## Summary
 
-Automated environment cleanup prevents cost accumulation from forgotten temporary environments. TTL tags, scheduled GitHub Actions pipelines, and PR-state-aware cleanup scripts ensure ephemeral environments are destroyed promptly when no longer needed — reducing cloud waste automatically.
+Automated environment cleanup prevents cost accumulation from forgotten temporary environments. TTL tags, scheduled GitHub Actions pipelines, and PR-state-aware cleanup scripts ensure ephemeral environments are destroyed promptly when no longer needed - reducing cloud waste automatically.

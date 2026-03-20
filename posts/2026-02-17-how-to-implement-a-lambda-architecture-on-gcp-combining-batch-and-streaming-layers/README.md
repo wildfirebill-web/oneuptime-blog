@@ -35,6 +35,7 @@ Pub/Sub acts as the entry point for all incoming data. Every event goes through 
 
 ```bash
 # Create the main event topic
+
 gcloud pubsub topics create raw-events
 
 # Create subscriptions for the streaming pipeline and the archiver

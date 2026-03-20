@@ -34,6 +34,7 @@ Here is a playbook that sets up a complete development environment on macOS or L
 
 ```yaml
 # dev-setup/setup.yml
+
 # Set up local development environment
 ---
 - name: Setup development environment

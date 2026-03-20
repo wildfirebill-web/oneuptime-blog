@@ -17,6 +17,7 @@ PgBouncer is a lightweight connection pooler for PostgreSQL. By default it may l
 
 [databases]
 # Database alias = connection string to PostgreSQL
+
 myapp = host=127.0.0.1 port=5432 dbname=myapp_production
 
 # Connect to a remote PostgreSQL server
@@ -187,4 +188,4 @@ psql -h 10.0.0.5 -p 6432 -U appuser myapp
 
 ## Conclusion
 
-PgBouncer listens on a specific IPv4 address by setting `listen_addr = 10.0.0.5` in `pgbouncer.ini`. Use `transaction` pool mode for most web applications — it provides the best connection reuse. Configure `auth_query` to pull credentials from PostgreSQL rather than maintaining a separate `userlist.txt`. Set `default_pool_size` based on your PostgreSQL `max_connections` limit (total across all PgBouncer instances must stay below that). Monitor pool health with `SHOW POOLS` and `SHOW STATS` in the admin console.
+PgBouncer listens on a specific IPv4 address by setting `listen_addr = 10.0.0.5` in `pgbouncer.ini`. Use `transaction` pool mode for most web applications - it provides the best connection reuse. Configure `auth_query` to pull credentials from PostgreSQL rather than maintaining a separate `userlist.txt`. Set `default_pool_size` based on your PostgreSQL `max_connections` limit (total across all PgBouncer instances must stay below that). Monitor pool health with `SHOW POOLS` and `SHOW STATS` in the admin console.

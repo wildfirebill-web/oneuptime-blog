@@ -27,6 +27,7 @@ This guide covers the most common calicoctl patch errors, their causes, and step
 
 ```bash
 # Error example
+
 calicoctl patch globalnetworkpolicy my-policy -p '{"spec":{"order":100}}'
 # Error: resource does not exist: GlobalNetworkPolicy(my-policy)
 

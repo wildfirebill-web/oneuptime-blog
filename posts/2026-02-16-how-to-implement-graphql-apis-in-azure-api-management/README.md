@@ -33,6 +33,7 @@ Whether you use pass-through or synthetic GraphQL, you need a schema. Here is an
 
 ```graphql
 # Product catalog GraphQL schema
+
 # Defines the types and queries available to clients
 type Product {
     id: ID!

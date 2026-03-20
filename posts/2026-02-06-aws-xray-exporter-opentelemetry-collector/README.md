@@ -71,6 +71,7 @@ Here is a minimal configuration for sending traces to AWS X-Ray:
 
 ```yaml
 # Basic AWS X-Ray exporter configuration
+
 exporters:
   awsxray:
     # AWS region where X-Ray data should be sent

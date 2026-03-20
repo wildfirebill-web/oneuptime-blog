@@ -36,6 +36,7 @@ You can also extract it from the server:
 
 ```bash
 # Extract the CA certificate from a running server
+
 openssl s_client -showcerts -connect git.internal.example.com:443 </dev/null 2>/dev/null \
   | awk '/BEGIN CERTIFICATE/,/END CERTIFICATE/{print}' > ca-bundle.crt
 ```

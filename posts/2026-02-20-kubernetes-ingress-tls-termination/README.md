@@ -32,6 +32,7 @@ There are three TLS modes:
 
 ```bash
 # Generate a self-signed certificate for development
+
 openssl req -x509 -nodes -days 365 -newkey rsa:2048 \
   -keyout tls.key \
   -out tls.crt \

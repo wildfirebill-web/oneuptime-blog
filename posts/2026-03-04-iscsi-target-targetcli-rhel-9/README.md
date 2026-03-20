@@ -43,6 +43,7 @@ You need a block device or file to back the iSCSI LUN. Options include:
 
 ```bash
 # List available disks
+
 lsblk
 ```
 

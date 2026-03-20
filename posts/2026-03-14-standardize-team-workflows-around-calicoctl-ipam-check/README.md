@@ -50,6 +50,7 @@ echo "Cluster: $(kubectl config current-context)"
 echo ""
 
 # Run check
+
 echo "--- IPAM Health Check ---"
 calicoctl ipam check
 

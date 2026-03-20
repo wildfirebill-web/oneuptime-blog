@@ -62,6 +62,7 @@ spec:
 
 ```bash
 # Verify Calico-Istio integration
+
 kubectl get pods -n istio-system | grep calico
 kubectl get pods -n calico-system | grep dikastes
 

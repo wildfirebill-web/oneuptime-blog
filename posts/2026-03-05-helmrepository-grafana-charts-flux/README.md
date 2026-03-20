@@ -16,6 +16,7 @@ The Grafana Helm repository is a standard HTTPS repository. Create the HelmRepos
 
 ```yaml
 # HelmRepository for Grafana's official Helm charts
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

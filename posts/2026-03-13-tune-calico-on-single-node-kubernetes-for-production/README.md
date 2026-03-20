@@ -30,6 +30,7 @@ On a single node, all pod traffic is local, making BGP and overlay encapsulation
 
 ```bash
 # Disable BGP on the default BGPConfiguration
+
 calicoctl patch bgpconfiguration default \
   --patch='{"spec": {"nodeToNodeMeshEnabled": false}}'
 

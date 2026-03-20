@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Node.js, IPv6, Parsing, Validation, net Module, Networking
+Tags: Node.js, IPv6, Parsing, Validation, Net Module, Networking
 
 Description: Parse and validate IPv6 addresses in Node.js using the built-in net module, parse CIDRs, handle zone IDs, and validate in Express middleware.
 
@@ -23,7 +23,7 @@ const tests = [
     '::',
     '2001:0db8:0000:0000:0000:0000:0000:0001',
     '::ffff:192.168.1.1',  // IPv4-mapped
-    'fe80::1%eth0',        // with zone ID — net.isIPv6 returns false
+    'fe80::1%eth0',        // with zone ID - net.isIPv6 returns false
     'not-an-address',
 ];
 
@@ -185,4 +185,4 @@ app.listen(3000, '::', () => console.log('Validator on [::]:3000'));
 
 ## Conclusion
 
-Node.js's `net.isIPv6()` provides fast IPv6 validation with no dependencies. For socket address parsing with brackets and ports, the URL API handles `[addr]:port` format. CIDR membership checks require BigInt arithmetic to handle the 128-bit address space. Zone IDs (the `%ifname` suffix) are not recognized by `net.isIPv6()` — strip them before validation. For production CIDR operations, consider the `ip6` or `netmask` npm packages which implement these algorithms reliably.
+Node.js's `net.isIPv6()` provides fast IPv6 validation with no dependencies. For socket address parsing with brackets and ports, the URL API handles `[addr]:port` format. CIDR membership checks require BigInt arithmetic to handle the 128-bit address space. Zone IDs (the `%ifname` suffix) are not recognized by `net.isIPv6()` - strip them before validation. For production CIDR operations, consider the `ip6` or `netmask` npm packages which implement these algorithms reliably.

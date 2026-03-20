@@ -32,6 +32,7 @@ Create four identical EBS volumes using the AWS CLI:
 
 ```bash
 # Create 4 gp3 volumes in the same AZ as your instance
+
 for i in 1 2 3 4; do
   aws ec2 create-volume \
     --volume-type gp3 \

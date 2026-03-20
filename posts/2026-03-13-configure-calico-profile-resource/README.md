@@ -24,6 +24,7 @@ In Kubernetes deployments, Profiles are primarily managed automatically - but un
 
 ```bash
 # List all profiles
+
 calicoctl get profiles
 
 # In Kubernetes, profiles correspond to namespaces

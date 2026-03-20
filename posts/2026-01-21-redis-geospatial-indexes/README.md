@@ -35,6 +35,7 @@ Limitations:
 
 ```bash
 # Add single location
+
 GEOADD locations -122.4194 37.7749 "San Francisco"
 # Returns 1 (new) or 0 (updated)
 

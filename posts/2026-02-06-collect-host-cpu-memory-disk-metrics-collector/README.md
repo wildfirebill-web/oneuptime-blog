@@ -40,6 +40,7 @@ On a Debian-based Linux host, you can install the Contrib distribution with:
 
 ```bash
 # Download the latest Collector Contrib .deb package
+
 wget https://github.com/open-telemetry/opentelemetry-collector-releases/releases/download/v0.96.0/otelcol-contrib_0.96.0_linux_amd64.deb
 
 # Install the package

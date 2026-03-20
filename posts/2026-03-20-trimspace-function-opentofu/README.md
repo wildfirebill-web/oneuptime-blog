@@ -1,8 +1,8 @@
-# How to Use the trimspace Function in OpenTofu
+# How to Use the trimspace Function in OpenTofu - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, trimspace, String Functions, HCL, Infrastructure as Code, DevOps
+Tags: OpenTofu, Trimspace, String Functions, HCL, Infrastructure as Code, DevOps
 
 Description: Learn how to use the trimspace function in OpenTofu to remove leading and trailing whitespace from strings, including spaces, tabs, and newlines.
 
@@ -40,7 +40,8 @@ locals {
 Many file formats (especially shell scripts and public keys) end with a trailing newline. Use `trimspace()` to clean them up:
 
 ```hcl
-# A public key file ends with a newline — trimspace() removes it
+# A public key file ends with a newline - trimspace() removes it
+
 data "local_file" "public_key" {
   filename = "${path.module}/keys/deploy.pub"
 }
@@ -128,4 +129,4 @@ Use `chomp()` when you only need to remove a trailing newline (common for comman
 
 ## Summary
 
-`trimspace()` removes all leading and trailing whitespace — spaces, tabs, and newlines — from a string. It's most commonly used when reading file contents or HTTP responses that include trailing newlines, and for normalizing user-provided string variables. Use `chomp()` if you only need to remove a single trailing newline.
+`trimspace()` removes all leading and trailing whitespace - spaces, tabs, and newlines - from a string. It's most commonly used when reading file contents or HTTP responses that include trailing newlines, and for normalizing user-provided string variables. Use `chomp()` if you only need to remove a single trailing newline.

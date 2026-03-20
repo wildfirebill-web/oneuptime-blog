@@ -48,6 +48,7 @@ Check your RDS events to see what triggered the failover:
 
 ```bash
 # Check recent RDS events
+
 aws rds describe-events \
   --source-identifier my-database \
   --source-type db-instance \

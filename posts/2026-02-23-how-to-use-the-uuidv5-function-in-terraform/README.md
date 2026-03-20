@@ -16,6 +16,7 @@ The critical difference:
 
 ```hcl
 # uuid() - random, different every time
+
 output "random" {
   value = uuid()
   # "a3f1b2c4-..." (different on every plan)

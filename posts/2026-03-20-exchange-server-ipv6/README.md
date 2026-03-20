@@ -12,7 +12,7 @@ Exchange Server supports IPv6 for SMTP, as well as client access protocols. Prop
 
 ## Exchange Server IPv6 Overview
 
-```
+```text
 Exchange IPv6 requires:
 - Windows Server with IPv6 enabled
 - Exchange 2013/2016/2019 (full IPv6 support)
@@ -28,6 +28,7 @@ Exchange IPv6 requires:
 # Open Exchange Management Shell
 
 # Check existing receive connectors
+
 Get-ReceiveConnector | Select Name, Bindings
 
 # Set Internet receive connector to listen on IPv6

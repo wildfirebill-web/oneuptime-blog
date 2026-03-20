@@ -26,6 +26,7 @@ On Talos Linux, you should dedicate a separate disk or partition for etcd data. 
 
 ```yaml
 # talos-machine-config.yaml
+
 machine:
   install:
     disk: /dev/sda                    # OS disk

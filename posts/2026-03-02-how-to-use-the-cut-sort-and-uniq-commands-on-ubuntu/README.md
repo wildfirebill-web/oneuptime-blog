@@ -18,6 +18,7 @@ Three commands - `cut`, `sort`, and `uniq` - show up constantly in shell pipelin
 
 ```bash
 # Extract characters 1 through 10 from each line
+
 cut -c 1-10 /var/log/auth.log
 
 # Extract only the 5th character

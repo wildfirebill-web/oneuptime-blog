@@ -28,6 +28,7 @@ Create the Pub/Sub topic and deploy your function.
 
 ```bash
 # Create the topic for background tasks
+
 gcloud pubsub topics create background-tasks
 
 # Create a dead letter topic for failed messages

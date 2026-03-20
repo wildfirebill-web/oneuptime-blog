@@ -27,6 +27,7 @@ HIPAA requires access controls that limit who and what can interact with PHI. Us
 
 ```yaml
 # clusters/hipaa/namespaces/phi-workloads.yaml
+
 apiVersion: v1
 kind: Namespace
 metadata:

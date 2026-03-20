@@ -18,6 +18,7 @@ The `spec.serviceAccountName` field tells the helm-controller to impersonate the
 
 ```yaml
 # helmrelease.yaml - HelmRelease with custom service account
+
 apiVersion: helm.toolkit.fluxcd.io/v2
 kind: HelmRelease
 metadata:

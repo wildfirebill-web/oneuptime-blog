@@ -35,6 +35,7 @@ Send a message to the bot, then query the Telegram API:
 
 ```bash
 # Replace BOT_TOKEN with your actual bot token
+
 curl -s "https://api.telegram.org/botBOT_TOKEN/getUpdates" | python3 -m json.tool
 ```
 

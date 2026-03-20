@@ -59,7 +59,7 @@ graph TB
 
 ---
 
-## Resource Naming Conventions
+Resource Naming Conventions
 
 Resource naming is where most APIs go wrong. Follow these rules for clean, predictable URLs.
 
@@ -136,6 +136,7 @@ flowchart LR
 
 ```python
 # rest_api_example.py
+
 from flask import Flask, request, jsonify
 from datetime import datetime
 

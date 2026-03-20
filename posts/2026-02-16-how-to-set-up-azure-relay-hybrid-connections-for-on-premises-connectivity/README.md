@@ -35,6 +35,7 @@ The on-premises listener connects outward to Azure. This means:
 
 ```bash
 # Create a resource group
+
 az group create --name rg-relay-demo --location eastus
 
 # Create a Relay namespace

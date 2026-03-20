@@ -76,6 +76,7 @@ This script demonstrates initializing a notes repository with Git. Each commit c
 ```bash
 #!/bin/bash
 # initialize-notes-repo.sh
+
 # Set up a Git-versioned notes repository
 
 # Create and initialize the notes directory

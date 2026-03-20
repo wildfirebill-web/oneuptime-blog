@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: OpenTofu, Azure, ExpressRoute, Hybrid Cloud, Private Connectivity, BGP, Infrastructure as Code
 
-Description: Learn how to configure Azure ExpressRoute resources with OpenTofu to establish dedicated private connections between on-premises networks and Azure with predictable performance and no internet exposure.
+Description: Learn how to configure Azure ExpressRoute resources with OpenTofu to establish dedicated private connections between on-premises networks and Azure with predictable performance and no internet...
 
 ## Introduction
 
@@ -49,6 +49,7 @@ output "service_key" {
 
 ```hcl
 # Wait for provider to provision the circuit before configuring peering
+
 resource "azurerm_express_route_circuit_peering" "private" {
   peering_type                  = "AzurePrivatePeering"
   express_route_circuit_name    = azurerm_express_route_circuit.main.name
@@ -150,4 +151,4 @@ az network express-route peering show \
 
 ## Conclusion
 
-ExpressRoute circuits take 3-5 business days for providers to provision after you share the service key—plan accordingly in project timelines. Use zone-redundant gateway SKUs (`ErGw1AZ`, `ErGw2AZ`, `ErGw3AZ`) for production to protect against availability zone failures. For the highest resilience, deploy two circuits from different providers in different peering locations and configure both for active-active BGP. ExpressRoute Global Reach allows on-premises sites connected to different ExpressRoute circuits to communicate with each other through the Azure backbone, eliminating the need for dedicated on-premises cross-site links.
+ExpressRoute circuits take 3-5 business days for providers to provision after you share the service key-plan accordingly in project timelines. Use zone-redundant gateway SKUs (`ErGw1AZ`, `ErGw2AZ`, `ErGw3AZ`) for production to protect against availability zone failures. For the highest resilience, deploy two circuits from different providers in different peering locations and configure both for active-active BGP. ExpressRoute Global Reach allows on-premises sites connected to different ExpressRoute circuits to communicate with each other through the Azure backbone, eliminating the need for dedicated on-premises cross-site links.

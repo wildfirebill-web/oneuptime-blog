@@ -8,11 +8,11 @@ Description: Configure SSH local port forwarding (-L) to securely access remote 
 
 ## Introduction
 
-SSH local port forwarding creates a tunnel from a local port to a remote service through an SSH server. Traffic arrives at your local port and is forwarded by the SSH server to the destination IP:port—enabling secure access to services that are not directly exposed to the internet.
+SSH local port forwarding creates a tunnel from a local port to a remote service through an SSH server. Traffic arrives at your local port and is forwarded by the SSH server to the destination IP:port-enabling secure access to services that are not directly exposed to the internet.
 
 ## Basic Local Port Forwarding
 
-```
+```text
 Client                   SSH Server              Target Service
   │                          │                        │
   │──── SSH tunnel ──────────│                        │
@@ -23,6 +23,7 @@ Client                   SSH Server              Target Service
 # Syntax: ssh -L [bind_address:]local_port:destination_host:destination_port user@ssh_server
 
 # Access remote web server through SSH tunnel
+
 ssh -L 8080:192.168.1.100:80 user@jump.example.com
 # Now: curl http://localhost:8080 reaches 192.168.1.100:80
 

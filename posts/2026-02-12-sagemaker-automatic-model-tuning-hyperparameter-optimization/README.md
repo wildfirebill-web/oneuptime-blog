@@ -53,6 +53,7 @@ bucket = session.default_bucket()
 region = session.boto_region_name
 
 # Get the XGBoost container
+
 xgb_image = image_uris.retrieve('xgboost', region, '1.7-1')
 
 # Create the base estimator

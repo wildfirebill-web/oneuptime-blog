@@ -40,6 +40,7 @@ Here is the simplest Debug exporter configuration:
 
 ```yaml
 # receivers configuration (how telemetry enters the Collector)
+
 receivers:
   otlp:
     protocols:

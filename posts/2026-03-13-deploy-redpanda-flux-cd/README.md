@@ -24,6 +24,7 @@ Deploying Redpanda through Flux CD gives you a GitOps-managed Kafka-compatible e
 
 ```yaml
 # infrastructure/sources/redpanda-helm.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

@@ -26,6 +26,7 @@ The program covers five key areas over four weeks:
 
 ```bash
 # Training environment: each trainee gets a VM
+
 # Automated provisioning script
 cat > setup-trainee-vm.sh << 'EOF'
 #!/bin/bash

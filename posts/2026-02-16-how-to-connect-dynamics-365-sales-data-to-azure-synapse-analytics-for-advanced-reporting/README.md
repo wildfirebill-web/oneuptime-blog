@@ -40,6 +40,7 @@ Or set it up programmatically:
 
 ```bash
 # Create the Azure Data Lake Storage account
+
 az storage account create \
   --name stdataverse365 \
   --resource-group rg-d365-analytics \

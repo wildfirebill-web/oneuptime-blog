@@ -13,7 +13,7 @@ Description: A thorough explanation of 464XLAT, the translation architecture use
 - **CLAT** (Customer-side Translator): runs on the device (phone, router)
 - **PLAT** (Provider-side Translator): runs in the carrier's network (equivalent to NAT64)
 
-The "464" name describes the translation path: **IPv4 → IPv6 → IPv4** — the application sends IPv4, the CLAT translates it to IPv6 for transport, and the PLAT translates it back to IPv4 to reach IPv4-only servers.
+The "464" name describes the translation path: **IPv4 → IPv6 → IPv4** - the application sends IPv4, the CLAT translates it to IPv6 for transport, and the PLAT translates it back to IPv4 to reach IPv4-only servers.
 
 ## Why 464XLAT Was Needed
 
@@ -56,6 +56,7 @@ A key feature of 464XLAT is automatic discovery of the PLAT's NAT64 prefix. The 
 
 ```bash
 # The device queries for AAAA record of ipv4only.arpa
+
 # The DNS64/PLAT returns a synthesized address that reveals the prefix
 dig AAAA ipv4only.arpa
 

@@ -28,6 +28,7 @@ This guide provides a repeatable validation checklist you can use after initial 
 ```bash
 kubectl get cm -n kube-system cilium-config -o jsonpath='{.data.enable-gateway-api-gamma}'
 # Expected: true
+
 ```
 
 ## Validate GatewayClass

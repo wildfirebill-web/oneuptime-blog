@@ -27,6 +27,7 @@ Verify that autoscaling is actually enabled and see the configured bounds:
 
 ```bash
 # Check the job's autoscaling settings
+
 gcloud dataflow jobs describe JOB_ID \
     --region=us-central1 \
     --format="json(environment.workerPools[0].autoscalingSettings, environment.workerPools[0].numWorkers)"

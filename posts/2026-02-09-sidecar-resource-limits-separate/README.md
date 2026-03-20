@@ -87,7 +87,7 @@ spec:
 
 The application gets 500m CPU and 512Mi memory as baseline, with the ability to burst to 1 CPU and 1Gi. The log forwarder sidecar gets much smaller allocations because it's a lightweight process that simply tails logs and forwards them.
 
-## Resource Sizing for Different Sidecar Types
+Resource Sizing for Different Sidecar Types
 
 Different sidecar patterns require different resource configurations. Let's examine common sidecar types and their typical resource needs.
 
@@ -218,6 +218,7 @@ Kubernetes assigns QoS classes based on resource configuration, which affects ho
 
 ```yaml
 # Guaranteed QoS - requests equal limits for all containers
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -357,7 +358,7 @@ spec:
 
 VPA monitors actual resource usage and adjusts requests accordingly. Setting different policies per container ensures each sidecar scales appropriately based on its actual needs.
 
-## Resource Quotas and Limit Ranges
+Resource Quotas and Limit Ranges
 
 Namespace-level resource policies can enforce sidecar resource configurations.
 

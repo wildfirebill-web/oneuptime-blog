@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Resources, Taint, Untaint, Infrastructure as Code, DevOps
+Tags: OpenTofu, Resources, Taints, Untaint, Infrastructure as Code, DevOps
 
 Description: A guide to using taint and untaint commands in OpenTofu to mark resources for forced recreation or remove that marking.
 
@@ -14,6 +14,7 @@ The `tofu taint` command marks a resource in the state file for forced recreatio
 
 ```bash
 # Mark a resource for replacement
+
 tofu taint aws_instance.web
 
 # Output:

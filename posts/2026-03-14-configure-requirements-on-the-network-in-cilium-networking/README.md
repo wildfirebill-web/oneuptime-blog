@@ -30,6 +30,7 @@ Apply the following Helm values to configure network requirements for cilium:
 
 ```yaml
 # cilium-network-requirements.yaml
+
 # Configuration with network requirement annotations
 
 # VXLAN mode requirements:

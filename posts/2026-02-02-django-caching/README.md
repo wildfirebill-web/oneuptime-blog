@@ -36,6 +36,7 @@ Add your cache configuration to `settings.py`. Here are the most common setups:
 
 ```python
 # settings.py
+
 CACHES = {
     "default": {
         "BACKEND": "django.core.cache.backends.redis.RedisCache",

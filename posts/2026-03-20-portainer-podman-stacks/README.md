@@ -1,4 +1,4 @@
-# How to Deploy Stacks to Podman via Portainer
+# How to Deploy Stacks to Podman via Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -20,6 +20,7 @@ With Podman's Docker-compatible API and `podman-compose` support, Portainer can 
 
 ```bash
 # Install podman-compose on the Podman host
+
 pip3 install podman-compose
 
 # Or via package manager

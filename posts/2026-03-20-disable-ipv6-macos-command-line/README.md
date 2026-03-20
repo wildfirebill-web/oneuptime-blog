@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, macOS, networksetup, Terminal, Disable IPv6
+Tags: IPv6, macOS, Networksetup, Terminal, Disable IPv6
 
 Description: Learn how to disable IPv6 on macOS using the networksetup command from Terminal, including disabling on all interfaces and making changes persistent.
 
@@ -10,6 +10,7 @@ Description: Learn how to disable IPv6 on macOS using the networksetup command f
 
 ```bash
 # Disable IPv6 on Wi-Fi
+
 networksetup -setv6off Wi-Fi
 
 # Disable IPv6 on Ethernet

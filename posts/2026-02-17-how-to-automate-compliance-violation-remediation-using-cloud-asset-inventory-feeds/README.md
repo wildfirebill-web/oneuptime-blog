@@ -35,6 +35,7 @@ Cloud Asset Inventory monitors resource changes across your entire project or or
 
 ```bash
 # Create a Pub/Sub topic for asset change notifications
+
 gcloud pubsub topics create asset-changes \
     --project=compliance-project
 

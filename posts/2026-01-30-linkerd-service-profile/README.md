@@ -27,6 +27,7 @@ Verify your Linkerd installation:
 
 ```bash
 # Check Linkerd control plane status
+
 linkerd check
 
 # Verify the viz extension is installed (required for per-route metrics)

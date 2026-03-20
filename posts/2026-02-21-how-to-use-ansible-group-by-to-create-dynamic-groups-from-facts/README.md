@@ -18,6 +18,7 @@ Here is a simple example that groups hosts by their operating system family:
 
 ```yaml
 # playbook.yml - Group hosts by OS family at runtime
+
 ---
 - name: Gather facts and create dynamic groups
   hosts: all

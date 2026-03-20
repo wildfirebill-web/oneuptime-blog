@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, SLAAC, DHCPv6, Router Advertisements, Network Configuration, Address Assignment, Linux, Networking
+Tags: IPv6, SLAAC, DHCPv6, Router Advertisement, Network Configuration, Address Assignment, Linux, Networking
 
 Description: A comprehensive comparison of SLAAC and DHCPv6 for IPv6 address assignment, including setup guides, configuration examples, and guidance on when to use each method.
 
@@ -92,6 +92,7 @@ Generates random, temporary addresses to enhance privacy:
 
 ```bash
 # Enable privacy extensions on Linux
+
 sudo sysctl -w net.ipv6.conf.all.use_tempaddr=2
 sudo sysctl -w net.ipv6.conf.default.use_tempaddr=2
 

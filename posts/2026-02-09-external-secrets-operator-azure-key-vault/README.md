@@ -28,6 +28,7 @@ Create a Key Vault to store your secrets:
 
 ```bash
 # Set variables
+
 RESOURCE_GROUP="my-resource-group"
 KEY_VAULT_NAME="my-keyvault-prod"
 LOCATION="eastus"

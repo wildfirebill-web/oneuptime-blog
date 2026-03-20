@@ -14,6 +14,7 @@ FRR is a modular routing suite. Each protocol has its own daemon. For OSPF, you 
 
 ```bash
 # Install FRR on Ubuntu/Debian
+
 sudo apt-get update
 sudo apt-get install -y frr
 
@@ -52,7 +53,7 @@ sudo vtysh
 
 Configure OSPF:
 
-```
+```text
 hostname# configure terminal
 
 ! Start OSPF process
@@ -78,7 +79,7 @@ hostname# write memory
 
 Alternatively, configure OSPF directly on the interface:
 
-```
+```text
 hostname# configure terminal
 
 ! Activate OSPF on eth0 in Area 0
@@ -145,7 +146,7 @@ ip route show proto ospf
 
 ## Step 8: Add OSPF Authentication
 
-```
+```text
 hostname# configure terminal
 hostname(config)# interface eth0
 ! MD5 authentication

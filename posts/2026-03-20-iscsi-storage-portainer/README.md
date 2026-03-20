@@ -8,7 +8,7 @@ Description: Learn how to configure iSCSI block storage and use it as persistent
 
 ---
 
-iSCSI (Internet Small Computer System Interface) lets you attach block storage devices over a TCP/IP network. For Portainer-managed containers, iSCSI provides high-performance block storage that appears as a local disk on each Docker host — ideal for databases and workloads requiring fast I/O.
+iSCSI (Internet Small Computer System Interface) lets you attach block storage devices over a TCP/IP network. For Portainer-managed containers, iSCSI provides high-performance block storage that appears as a local disk on each Docker host - ideal for databases and workloads requiring fast I/O.
 
 ---
 
@@ -16,8 +16,8 @@ iSCSI (Internet Small Computer System Interface) lets you attach block storage d
 
 - **Target**: The storage server (provides the LUN/disk)
 - **Initiator**: The client (your Docker host that mounts the storage)
-- **LUN**: Logical Unit Number — the virtual disk presented by the target
-- **IQN**: iSCSI Qualified Name — unique identifier for targets and initiators
+- **LUN**: Logical Unit Number - the virtual disk presented by the target
+- **IQN**: iSCSI Qualified Name - unique identifier for targets and initiators
 
 ---
 
@@ -25,6 +25,7 @@ iSCSI (Internet Small Computer System Interface) lets you attach block storage d
 
 ```bash
 # Install targetcli on your storage server (Ubuntu/Debian)
+
 sudo apt update && sudo apt install -y targetcli-fb
 
 # Start targetcli interactive shell
@@ -104,7 +105,7 @@ echo "UUID=<your-uuid> /mnt/iscsi-portainer ext4 _netdev 0 0" | sudo tee -a /etc
 With iSCSI mounted as `/mnt/iscsi-portainer`, use it as a bind mount in your Portainer stacks.
 
 ```yaml
-# database-stack.yml — high-performance database using iSCSI storage
+# database-stack.yml - high-performance database using iSCSI storage
 version: "3.8"
 
 services:

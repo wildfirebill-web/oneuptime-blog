@@ -31,6 +31,7 @@ Organize your Git repository to enforce the separation between platform admin an
 
 ```bash
 # Repository structure separating platform and tenant configs
+
 fleet-repo/
   clusters/
     production/

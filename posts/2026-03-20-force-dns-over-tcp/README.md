@@ -14,6 +14,7 @@ DNS defaults to UDP for efficiency but falls back to TCP when responses are too 
 
 ```bash
 # Force TCP for a single query:
+
 dig example.com +tcp
 
 # Verify TCP is used:
@@ -148,4 +149,4 @@ wait
 
 ## Conclusion
 
-Force TCP for DNS with `dig +tcp` for single queries. When UDP is blocked, TCP DNS provides a reliable fallback — verify both with `nc -z` (TCP) and `nc -zu` (UDP) tests. For production environments where UDP is blocked, configure `systemd-resolved` with `DNSOverTLS=yes` for encrypted TCP, or configure Unbound with `tcp-upstream: yes` for unencrypted TCP. DNS over TCP is 1-2ms slower than UDP due to the handshake but functionally identical for the responses themselves.
+Force TCP for DNS with `dig +tcp` for single queries. When UDP is blocked, TCP DNS provides a reliable fallback - verify both with `nc -z` (TCP) and `nc -zu` (UDP) tests. For production environments where UDP is blocked, configure `systemd-resolved` with `DNSOverTLS=yes` for encrypted TCP, or configure Unbound with `tcp-upstream: yes` for unencrypted TCP. DNS over TCP is 1-2ms slower than UDP due to the handshake but functionally identical for the responses themselves.

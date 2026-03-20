@@ -35,6 +35,7 @@ graph LR
 
 ```bash
 # Install Apache, PHP, and MariaDB
+
 sudo dnf install -y httpd php php-mysqlnd php-xml php-mbstring php-intl php-zip php-gd php-json php-curl mariadb-server
 
 # Enable and start MariaDB

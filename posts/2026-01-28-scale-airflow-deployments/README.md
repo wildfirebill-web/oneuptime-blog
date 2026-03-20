@@ -49,6 +49,7 @@ Airflow 2.0+ supports multiple schedulers for high availability and throughput:
 
 ```ini
 # airflow.cfg
+
 [scheduler]
 # Number of schedulers (run as separate processes)
 num_runs = -1  # Run continuously

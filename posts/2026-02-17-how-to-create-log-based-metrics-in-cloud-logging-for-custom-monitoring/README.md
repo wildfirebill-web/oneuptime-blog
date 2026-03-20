@@ -34,6 +34,7 @@ The simplest and most common use case - count how many errors your application p
 
 ```bash
 # Create a counter metric for application error logs
+
 gcloud logging metrics create application-error-count \
   --description="Count of application error log entries" \
   --log-filter='resource.type="cloud_run_revision" AND severity>=ERROR'

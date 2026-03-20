@@ -35,6 +35,7 @@ Separate partitions limit the blast radius of a full filesystem. At minimum, iso
 
 ```bash
 # Verify your partition layout after installation
+
 lsblk -f
 
 # Confirm separate partitions exist for critical paths

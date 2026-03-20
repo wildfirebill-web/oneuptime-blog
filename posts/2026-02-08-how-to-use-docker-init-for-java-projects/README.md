@@ -16,6 +16,7 @@ Create a basic Spring Boot application. You can use Spring Initializr or set one
 
 ```bash
 # Using Spring Initializr via curl
+
 curl https://start.spring.io/starter.tgz \
   -d dependencies=web,actuator \
   -d javaVersion=21 \

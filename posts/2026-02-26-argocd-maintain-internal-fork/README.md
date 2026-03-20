@@ -41,6 +41,7 @@ Start by creating a proper fork structure that makes it easy to track upstream c
 
 ```bash
 # Create your organization's fork on GitHub (or your internal Git hosting)
+
 # Then clone it locally
 git clone https://github.com/YOUR_ORG/argo-cd.git
 cd argo-cd

@@ -42,6 +42,7 @@ Jinja2 template for the socket unit:
 
 ```jinja2
 # roles/systemd_socket/templates/socket.j2
+
 [Unit]
 Description=Socket for {{ socket_description | default(socket_name) }}
 

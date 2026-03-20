@@ -54,6 +54,7 @@ graph LR
 
 ```bash
 # List all rules in filter table with line numbers
+
 # -L lists rules, -n shows numeric addresses, -v shows verbose output
 iptables -L -n -v --line-numbers
 

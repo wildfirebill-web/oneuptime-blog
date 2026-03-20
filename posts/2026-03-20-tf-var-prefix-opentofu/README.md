@@ -23,6 +23,7 @@ graph LR
 
 ```bash
 # Pass a simple string variable
+
 export TF_VAR_region="us-east-1"
 export TF_VAR_environment="production"
 
@@ -68,10 +69,10 @@ variable "enable_monitoring" {
 ## Complex Variable Types
 
 ```bash
-# Lists — use HCL list syntax
+# Lists - use HCL list syntax
 export TF_VAR_subnet_ids='["subnet-abc123", "subnet-def456", "subnet-ghi789"]'
 
-# Maps — use HCL map syntax
+# Maps - use HCL map syntax
 export TF_VAR_tags='{"Environment": "production", "Team": "platform", "ManagedBy": "opentofu"}'
 
 # Objects
@@ -79,7 +80,7 @@ export TF_VAR_database_config='{"engine": "postgres", "version": "15", "instance
 ```
 
 ```hcl
-# variables.tf — corresponding declarations for complex types
+# variables.tf - corresponding declarations for complex types
 variable "subnet_ids" {
   type = list(string)
 }
@@ -100,7 +101,7 @@ variable "database_config" {
 ## Sensitive Variables in CI/CD
 
 ```bash
-# GitHub Actions — set secrets as TF_VAR_ environment variables
+# GitHub Actions - set secrets as TF_VAR_ environment variables
 # In the GitHub Actions workflow:
 ```
 
@@ -137,7 +138,7 @@ jobs:
 ## Shell Profile for Local Development
 
 ```bash
-# ~/.zshrc or ~/.bashrc — development variable configuration
+# ~/.zshrc or ~/.bashrc - development variable configuration
 # WARNING: Don't store production secrets here
 
 # Non-sensitive development defaults
@@ -184,8 +185,8 @@ tofu plan -var=environment=test 2>&1 | grep "environment"
 
 ## Best Practices
 
-- Use `TF_VAR_` environment variables for secrets in CI/CD rather than `-var` flags — environment variables don't appear in process listings (`ps aux`) or shell history.
-- Mark sensitive variables with `sensitive = true` in their declarations — this prevents OpenTofu from printing the value in plan output and logs.
-- Set development defaults in shell profiles but always override in CI/CD — this prevents accidentally deploying development configurations to production.
+- Use `TF_VAR_` environment variables for secrets in CI/CD rather than `-var` flags - environment variables don't appear in process listings (`ps aux`) or shell history.
+- Mark sensitive variables with `sensitive = true` in their declarations - this prevents OpenTofu from printing the value in plan output and logs.
+- Set development defaults in shell profiles but always override in CI/CD - this prevents accidentally deploying development configurations to production.
 - Use consistent naming: if your variable is named `database_password`, the environment variable is `TF_VAR_database_password` (case-sensitive, exact match).
-- For complex objects and lists, validate the HCL syntax before setting the environment variable — invalid syntax produces confusing error messages during `tofu plan`.
+- For complex objects and lists, validate the HCL syntax before setting the environment variable - invalid syntax produces confusing error messages during `tofu plan`.

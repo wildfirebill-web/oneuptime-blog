@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Terraform, AWS, NAT Gateway, IPv4, Private Subnets, Infrastructure as Code
+Tags: Terraform, AWS, NAT Gateway, IPv4, Private Subnet, Infrastructure as Code
 
 Description: Create AWS NAT Gateways for IPv4 using Terraform to allow private subnet resources to reach the internet without exposing them to inbound connections.
 
@@ -16,6 +16,7 @@ AWS NAT Gateways enable private subnet resources (EC2, ECS, Lambda in VPC) to in
 # nat_gateway.tf
 
 # Allocate Elastic IP for NAT Gateway
+
 resource "aws_eip" "nat_a" {
   domain = "vpc"
 
@@ -40,7 +41,7 @@ resource "aws_nat_gateway" "nat_a" {
 ## Route Table for Private Subnet
 
 ```hcl
-# Private route table — routes internet traffic through NAT
+# Private route table - routes internet traffic through NAT
 resource "aws_route_table" "private_a" {
   vpc_id = aws_vpc.main.id
 
@@ -114,7 +115,7 @@ output "nat_public_ips" {
 ## Cost Optimization
 
 ```hcl
-# For dev/test — single NAT Gateway to save cost
+# For dev/test - single NAT Gateway to save cost
 variable "single_nat_gateway" {
   default = true
 }

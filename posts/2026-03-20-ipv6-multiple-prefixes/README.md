@@ -8,12 +8,13 @@ Description: Configure and manage hosts that receive multiple IPv6 prefixes via 
 
 ## Introduction
 
-A single IPv6 host can have multiple global addresses from different prefixes — either from multiple Router Advertisements, manual assignment, or both SLAAC and DHCPv6. Managing multiple prefixes requires understanding address lifetimes, default route selection, and how applications choose which source address to use.
+A single IPv6 host can have multiple global addresses from different prefixes - either from multiple Router Advertisements, manual assignment, or both SLAAC and DHCPv6. Managing multiple prefixes requires understanding address lifetimes, default route selection, and how applications choose which source address to use.
 
 ## Viewing Multiple Prefix Assignments
 
 ```bash
 # Show all IPv6 addresses with full details
+
 ip -6 addr show scope global
 
 # Show with lifetime information
@@ -31,8 +32,8 @@ ip -6 addr show scope global | grep -A3 "inet6"
 
 ```bash
 # SLAAC addresses have two lifetimes from the RA prefix option:
-# valid_lft  — address can be used (preferred or deprecated)
-# preferred_lft — address is preferred for new connections
+# valid_lft  - address can be used (preferred or deprecated)
+# preferred_lft - address is preferred for new connections
 
 # When preferred_lft expires, address becomes "deprecated"
 # New connections avoid deprecated addresses
@@ -155,4 +156,4 @@ ip -6 route show scope link dev eth0 2>/dev/null
 
 ## Conclusion
 
-Multiple IPv6 prefixes on a single host are common and expected in enterprise and multi-homed environments. Monitor addresses with `ip -6 addr show scope global` which shows lifetimes — preferred_lft=0 means deprecated. SLAAC automatically manages address lifetimes from RA prefix options. For static configurations, add all desired addresses with `ip -6 addr add` and corresponding on-link routes are added automatically. Ensure source address selection (RFC 6724) picks the correct address for each destination to avoid asymmetric routing.
+Multiple IPv6 prefixes on a single host are common and expected in enterprise and multi-homed environments. Monitor addresses with `ip -6 addr show scope global` which shows lifetimes - preferred_lft=0 means deprecated. SLAAC automatically manages address lifetimes from RA prefix options. For static configurations, add all desired addresses with `ip -6 addr add` and corresponding on-link routes are added automatically. Ensure source address selection (RFC 6724) picks the correct address for each destination to avoid asymmetric routing.

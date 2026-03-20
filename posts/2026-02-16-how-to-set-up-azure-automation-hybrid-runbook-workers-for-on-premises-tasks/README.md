@@ -51,6 +51,7 @@ If your machine is not already Azure Arc-enabled, start here:
 
 ```bash
 # Download and run the Azure Connected Machine agent on your on-prem server
+
 # This makes the machine visible in Azure Resource Manager
 # Run this ON the on-premises machine
 

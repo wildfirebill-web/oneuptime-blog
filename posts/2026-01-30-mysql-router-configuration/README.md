@@ -67,6 +67,7 @@ The bootstrap process is the recommended way to configure MySQL Router with an I
 
 ```bash
 # Bootstrap MySQL Router against your InnoDB Cluster
+
 mysqlrouter --bootstrap admin@primary-node:3306 \
     --directory /etc/mysqlrouter \
     --user mysqlrouter \

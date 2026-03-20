@@ -14,6 +14,7 @@ First, configure PostgreSQL to log slow queries. In `postgresql.conf`:
 
 ```ini
 # Log queries that take longer than 500ms
+
 log_min_duration_statement = 500
 
 # Use a parseable log format

@@ -13,13 +13,14 @@ Docker's `host` network mode removes the container's network namespace and share
 ## Running a Container in Host Network Mode
 
 ```bash
-# Run nginx using the host network — it listens on the host's port 80 directly
+# Run nginx using the host network - it listens on the host's port 80 directly
+
 docker run -d \
   --name nginx-host \
   --network host \
   nginx:alpine
 
-# No -p port mapping needed — nginx is directly on host:80
+# No -p port mapping needed - nginx is directly on host:80
 curl http://localhost:80
 ```
 

@@ -46,6 +46,7 @@ Define a simple deployment and service without environment-specific labels.
 
 ```yaml
 # apps/webapp/base/deployment.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

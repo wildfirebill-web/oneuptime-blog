@@ -20,6 +20,7 @@ Before you begin, make sure Podman is installed on your system.
 
 ```bash
 # Check if Podman is installed
+
 podman --version
 
 # On Fedora/RHEL/CentOS

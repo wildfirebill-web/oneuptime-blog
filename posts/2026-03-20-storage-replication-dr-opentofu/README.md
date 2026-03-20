@@ -14,6 +14,7 @@ Storage replication for DR ensures object data is durably replicated across geog
 
 ```hcl
 # main.tf - S3 CRR for DR
+
 resource "aws_s3_bucket" "source" {
   provider = aws.primary
   bucket   = "app-data-primary"

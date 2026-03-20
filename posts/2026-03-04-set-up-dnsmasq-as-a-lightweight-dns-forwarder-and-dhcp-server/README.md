@@ -30,6 +30,7 @@ sudo vi /etc/dnsmasq.conf
 
 ```ini
 # Listen on specific interface
+
 interface=eth0
 bind-interfaces
 

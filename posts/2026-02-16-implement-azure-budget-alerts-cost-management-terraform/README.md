@@ -18,6 +18,7 @@ The most common starting point is a subscription-level budget. This monitors tot
 
 ```hcl
 # main.tf
+
 # Configures the Azure provider and sets up a subscription-level budget
 
 terraform {
@@ -104,7 +105,7 @@ resource "azurerm_consumption_budget_subscription" "monthly" {
 
 The key thing to notice is the `threshold_type` parameter. The default is `Actual`, which triggers when real spend crosses the threshold. Setting it to `Forecasted` triggers based on Azure's projection of where spending is headed. Forecasted alerts give you time to react before costs actually exceed the budget.
 
-## Resource Group Budgets
+Resource Group Budgets
 
 Subscription-level budgets are useful for overall visibility, but they do not tell you which team or project is responsible for the spend. Resource group budgets let you get more granular.
 

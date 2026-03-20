@@ -47,6 +47,7 @@ The beauty of this model is that devices are manufactured with their credentials
 
 ```bash
 # Create a resource group for IoT resources
+
 az group create --name rg-iot-production --location eastus2
 
 # Create the IoT Hub (if not already created)

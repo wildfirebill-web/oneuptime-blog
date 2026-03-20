@@ -30,6 +30,7 @@ Verify the cluster meets version requirements and uses appropriate node images.
 
 ```bash
 # Check GKE cluster version and node configuration
+
 gcloud container clusters describe <cluster-name> \
   --zone <zone> \
   --format="yaml(currentMasterVersion,nodeConfig.imageType,networkConfig)"

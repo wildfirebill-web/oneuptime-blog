@@ -14,6 +14,7 @@ BigQuery Data Transfer Service automates data movement into BigQuery from Google
 
 ```hcl
 # main.tf - Enable BigQuery Data Transfer Service API
+
 resource "google_project_service" "bigquery_transfer" {
   service = "bigquerydatatransfer.googleapis.com"
 }

@@ -82,6 +82,7 @@ This configuration ensures that traffic originating from the IP on eth0 goes thr
 
 ```bash
 # Apply to a new or existing node
+
 talosctl apply-config --nodes 192.168.1.10 --file config.yaml
 
 # Verify routing rules

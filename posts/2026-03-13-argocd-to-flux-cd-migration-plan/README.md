@@ -28,6 +28,7 @@ Before writing any Flux YAML, inventory all ArgoCD resources:
 
 ```bash
 # Export all ArgoCD Applications
+
 kubectl get applications -n argocd -o yaml > argocd-applications-backup.yaml
 
 # Count applications by project

@@ -22,6 +22,7 @@ Initialize the project:
 
 ```bash
 # Create a new Dart project
+
 dart create -t server-shelf dart_docker_demo
 cd dart_docker_demo
 ```
@@ -335,7 +336,7 @@ time docker run --rm dart-app:latest /app/bin/server --help
 
 You will typically see startup times under 50ms, making Dart containers excellent candidates for auto-scaling scenarios where fast cold starts matter.
 
-## Resource Limits
+Resource Limits
 
 ```bash
 # Run with appropriate resource limits

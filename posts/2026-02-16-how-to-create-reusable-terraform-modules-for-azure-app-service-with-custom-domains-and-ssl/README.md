@@ -58,6 +58,7 @@ The variables file defines the module's interface. I organize them from required
 # modules/app-service/variables.tf
 
 # Required variables
+
 variable "name" {
   description = "Name of the web app (must be globally unique)"
   type        = string

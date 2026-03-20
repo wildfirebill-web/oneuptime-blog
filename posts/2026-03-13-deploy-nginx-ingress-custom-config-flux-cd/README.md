@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, Kubernetes, GitOps, NGINX, Ingress Controller, HelmRelease, Custom Configuration
+Tags: Flux CD, Kubernetes, GitOps, Nginx, Ingress Controller, HelmRelease, Custom Configuration
 
 Description: Deploy NGINX Ingress Controller with custom ConfigMap settings and annotation-based configuration using Flux CD HelmRelease for production-ready HTTP routing.
 
@@ -30,6 +30,7 @@ Register the official Kubernetes NGINX Ingress Helm repository.
 
 ```yaml
 # infrastructure/nginx-ingress/helmrepository.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

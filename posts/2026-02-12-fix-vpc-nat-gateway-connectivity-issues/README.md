@@ -31,6 +31,7 @@ Check the route table associated with your private subnet.
 
 ```bash
 # Find the route table associated with a specific subnet
+
 aws ec2 describe-route-tables \
   --filters "Name=association.subnet-id,Values=subnet-private123" \
   --query 'RouteTables[].Routes[]'

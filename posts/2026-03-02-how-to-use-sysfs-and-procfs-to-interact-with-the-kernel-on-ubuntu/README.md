@@ -20,6 +20,7 @@ Both are mounted automatically at boot:
 
 ```bash
 # Verify they're mounted
+
 mount | grep -E "proc|sysfs"
 # proc on /proc type proc (rw,nosuid,nodev,noexec,relatime)
 # sysfs on /sys type sysfs (rw,nosuid,nodev,noexec,relatime)

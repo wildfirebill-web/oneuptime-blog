@@ -96,6 +96,7 @@ variable "ssh_public_key" {
 # modules/rhel-server/main.tf - Server resources
 
 # Create the disk from the base image
+
 resource "libvirt_volume" "disk" {
   name           = "${var.server_name}.qcow2"
   pool           = var.pool_name

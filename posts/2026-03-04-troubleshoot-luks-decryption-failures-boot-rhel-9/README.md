@@ -52,6 +52,7 @@ If the system does not boot normally, use rescue mode:
 
 ```bash
 # List block devices
+
 lsblk
 
 # Check if the LUKS partition is present

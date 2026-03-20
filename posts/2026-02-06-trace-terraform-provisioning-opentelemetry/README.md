@@ -60,6 +60,7 @@ Start with a simple wrapper that traces the overall Terraform operations: init, 
 ```bash
 #!/bin/bash
 # scripts/traced-terraform.sh
+
 # Wraps Terraform commands in OpenTelemetry spans.
 # Each Terraform operation (init, plan, apply) becomes a span.
 # Usage: ./traced-terraform.sh apply -auto-approve

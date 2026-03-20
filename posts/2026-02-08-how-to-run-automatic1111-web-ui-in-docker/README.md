@@ -19,6 +19,7 @@ Automatic1111 (also known as AUTOMATIC1111/stable-diffusion-webui) is the most w
 
 ```bash
 # Verify NVIDIA GPU access in Docker
+
 docker run --rm --gpus all nvidia/cuda:12.0-base nvidia-smi
 
 # Check available disk space

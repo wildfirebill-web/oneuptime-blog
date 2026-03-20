@@ -16,6 +16,7 @@ Oracle Linux offers two kernel choices: the Red Hat Compatible Kernel (RHCK) and
 
 ```bash
 # Oracle Linux: Check which kernel is running
+
 uname -r
 # RHCK example: 5.14.0-362.8.1.el9_3.x86_64
 # UEK example: 5.15.0-200.131.27.el9uek.x86_64

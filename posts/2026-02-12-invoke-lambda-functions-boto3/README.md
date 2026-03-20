@@ -21,6 +21,7 @@ import json
 lambda_client = boto3.client('lambda')
 
 # Invoke a Lambda function synchronously
+
 response = lambda_client.invoke(
     FunctionName='my-data-processor',
     InvocationType='RequestResponse',

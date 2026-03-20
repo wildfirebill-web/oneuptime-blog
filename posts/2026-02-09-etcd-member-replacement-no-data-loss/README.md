@@ -18,6 +18,7 @@ Check cluster status:
 
 ```bash
 # Export etcd endpoints and credentials
+
 export ETCDCTL_API=3
 export ETCDCTL_ENDPOINTS=https://127.0.0.1:2379
 export ETCDCTL_CACERT=/etc/kubernetes/pki/etcd/ca.crt

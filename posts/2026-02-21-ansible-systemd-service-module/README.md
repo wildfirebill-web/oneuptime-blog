@@ -28,6 +28,7 @@ The basic interface is similar to the `service` module.
 
 ```yaml
 # Start and enable a service using the systemd module
+
 - name: Start and enable nginx
   ansible.builtin.systemd_service:
     name: nginx

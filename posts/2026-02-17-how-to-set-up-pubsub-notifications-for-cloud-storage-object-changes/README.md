@@ -29,6 +29,7 @@ The event types you can listen for are:
 
 ```bash
 # Create a topic for storage notifications
+
 gcloud pubsub topics create gcs-file-notifications
 ```
 

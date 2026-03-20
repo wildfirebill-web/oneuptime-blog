@@ -1,4 +1,4 @@
-# How to Use the textencodebase64 and textdecodebase64 Functions in OpenTofu
+# How to Use the textencodebase64 and textdecodebase64 Functions in OpenTofu (2)
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -10,8 +10,8 @@ Description: Learn how to use textencodebase64 and textdecodebase64 in OpenTofu 
 
 OpenTofu provides two functions for text encoding with explicit character set support:
 
-- `textencodebase64(string, encoding)` — encodes a string using the specified character encoding, then Base64-encodes the result
-- `textdecodebase64(string, encoding)` — Base64-decodes a string and then interprets the bytes using the specified character encoding
+- `textencodebase64(string, encoding)` - encodes a string using the specified character encoding, then Base64-encodes the result
+- `textdecodebase64(string, encoding)` - Base64-decodes a string and then interprets the bytes using the specified character encoding
 
 Unlike `base64encode` (which always uses UTF-8), these functions let you specify the character encoding. This is important when working with Windows-centric tools or services that require UTF-16 or other encodings.
 
@@ -48,12 +48,13 @@ Use `textdecodebase64` to decode Base64 data that uses a non-UTF-8 encoding.
 
 ```hcl
 # Example: decode a UTF-16LE encoded secret stored in a parameter
+
 data "aws_ssm_parameter" "windows_config" {
   name = "/windows/config"
 }
 
 locals {
-  # The parameter value is Base64-encoded UTF-16LE — decode it correctly
+  # The parameter value is Base64-encoded UTF-16LE - decode it correctly
   decoded_config = textdecodebase64(
     data.aws_ssm_parameter.windows_config.value,
     "UTF-16LE"

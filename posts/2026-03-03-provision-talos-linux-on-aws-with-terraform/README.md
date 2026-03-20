@@ -101,6 +101,7 @@ provider "aws" {
 }
 
 # Look up the official Talos AMI
+
 data "aws_ami" "talos" {
   most_recent = true
   owners      = ["540036508848"] # Sidero Labs AWS account

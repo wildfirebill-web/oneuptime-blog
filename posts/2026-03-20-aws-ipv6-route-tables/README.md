@@ -14,6 +14,7 @@ AWS route tables control IPv6 traffic routing just as they do for IPv4, but IPv6
 
 ```bash
 # Variables
+
 ROUTE_TABLE_ID="rtb-12345678"
 IGW_ID="igw-12345678"
 
@@ -96,7 +97,7 @@ resource "aws_route_table_association" "private_a" {
 
 ## Route Table Design Patterns
 
-```
+```text
 Public Subnet Route Table:
   0.0.0.0/0   → Internet Gateway (IGW)     [IPv4 inbound+outbound]
   ::/0        → Internet Gateway (IGW)     [IPv6 inbound+outbound]
@@ -151,4 +152,4 @@ PrivateRouteIPv6:
 
 ## Conclusion
 
-AWS IPv6 routing requires explicit `::/0` routes in each route table. Public subnets need `::/0 → Internet Gateway` for bidirectional IPv6 traffic. Private subnets that need outbound-only IPv6 access use `::/0 → Egress-Only Internet Gateway`. Unlike IPv4 NAT, IPv6 doesn't require port address translation — the Egress-Only IGW simply blocks inbound-initiated connections to private IPv6 addresses. Always verify routes with `aws ec2 describe-route-tables` and test from actual EC2 instances.
+AWS IPv6 routing requires explicit `::/0` routes in each route table. Public subnets need `::/0 → Internet Gateway` for bidirectional IPv6 traffic. Private subnets that need outbound-only IPv6 access use `::/0 → Egress-Only Internet Gateway`. Unlike IPv4 NAT, IPv6 doesn't require port address translation - the Egress-Only IGW simply blocks inbound-initiated connections to private IPv6 addresses. Always verify routes with `aws ec2 describe-route-tables` and test from actual EC2 instances.

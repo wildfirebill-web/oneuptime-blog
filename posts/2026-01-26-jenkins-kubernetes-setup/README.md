@@ -27,6 +27,7 @@ Let's verify your setup:
 
 ```bash
 # Check kubectl connection
+
 kubectl cluster-info
 
 # Verify Helm installation

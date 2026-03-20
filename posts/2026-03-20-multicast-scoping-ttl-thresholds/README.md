@@ -8,7 +8,7 @@ Description: Understand how IPv4 multicast scoping works through TTL thresholds 
 
 ## Introduction
 
-Multicast scoping prevents traffic from leaking beyond its intended boundary — a subnet, a campus, or a region. IPv4 uses two complementary scoping mechanisms: **TTL-based scoping** (per-hop decrement) and **administratively-scoped addresses** (RFC 2365).
+Multicast scoping prevents traffic from leaking beyond its intended boundary - a subnet, a campus, or a region. IPv4 uses two complementary scoping mechanisms: **TTL-based scoping** (per-hop decrement) and **administratively-scoped addresses** (RFC 2365).
 
 ## TTL-Based Scoping
 
@@ -29,7 +29,7 @@ A packet sent with TTL=1 will never cross a router. A packet sent with TTL=32 ca
 
 ## Administratively Scoped Addresses (RFC 2365)
 
-The **239.0.0.0/8** block is reserved for private, administratively-scoped multicast — analogous to RFC 1918 private unicast addresses. Packets in this range SHOULD NOT be forwarded outside the organization's administrative boundary.
+The **239.0.0.0/8** block is reserved for private, administratively-scoped multicast - analogous to RFC 1918 private unicast addresses. Packets in this range SHOULD NOT be forwarded outside the organization's administrative boundary.
 
 Sub-ranges within 239.0.0.0/8:
 
@@ -41,12 +41,12 @@ Sub-ranges within 239.0.0.0/8:
 
 ## Configuring TTL Thresholds on Cisco Routers
 
-```
-! Interface facing the WAN — block site-local multicast (TTL ≤ 15)
+```text
+! Interface facing the WAN - block site-local multicast (TTL ≤ 15)
 interface GigabitEthernet0/0
  ip multicast ttl-threshold 15
 
-! Interface facing the LAN — allow all local traffic
+! Interface facing the LAN - allow all local traffic
 interface GigabitEthernet0/1
  ip multicast ttl-threshold 0
 ```
@@ -55,6 +55,7 @@ interface GigabitEthernet0/1
 
 ```bash
 # smcroute does not directly expose TTL thresholds,
+
 # but iptables can enforce scope at the Linux level:
 
 # Drop multicast leaving the LAN interface with TTL <= 1
@@ -73,7 +74,7 @@ Prefer `239.x.x.x` addresses for any multicast that should stay within your orga
 #!/usr/bin/env python3
 import socket
 
-# Use an administratively-scoped address — will not be forwarded by
+# Use an administratively-scoped address - will not be forwarded by
 # well-configured border routers even if TTL > 1
 GROUP = "239.192.10.1"
 PORT  = 5000

@@ -14,6 +14,7 @@ Convert2RHEL supports converting Oracle Linux 7, 8, and 9 to the corresponding R
 
 ```bash
 # Verify your Oracle Linux version
+
 cat /etc/oracle-release
 # Oracle Linux Server release 8.9
 

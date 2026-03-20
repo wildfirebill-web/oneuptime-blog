@@ -10,11 +10,11 @@ Subnet overlap is one of the most common and frustrating networking problems. It
 
 ## Why Subnet Overlap is Problematic
 
-```
+```text
 Network A: 10.100.1.0/24 (Corporate)
 Network B: 10.100.1.0/24 (AWS VPC being connected via VPN)
 
-Problem: Packets destined for 10.100.1.50 — which network?
+Problem: Packets destined for 10.100.1.50 - which network?
 Router can't distinguish → routing breaks
 ```
 
@@ -23,6 +23,7 @@ Router can't distinguish → routing breaks
 ```python
 #!/usr/bin/env python3
 # check_overlap.py
+
 import ipaddress
 
 def check_overlaps(networks):
@@ -130,4 +131,4 @@ sudo iptables -t nat -A POSTROUTING \
 echo "Overlap check complete"
 ```
 
-Prevention is always better than troubleshooting — run overlap checks before any network interconnection project.
+Prevention is always better than troubleshooting - run overlap checks before any network interconnection project.

@@ -88,6 +88,7 @@ flowchart TB
 
 ```yaml
 # Confluent Cloud Capabilities
+
 cluster_types:
   - basic: "Single zone, limited throughput"
   - standard: "Multi-zone, higher throughput"

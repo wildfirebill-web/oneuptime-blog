@@ -315,6 +315,7 @@ def get_all_unique_values(index, field):
     return all_values
 
 # Usage
+
 categories = get_unique_values("products", "category")
 print(f"Categories: {categories}")
 

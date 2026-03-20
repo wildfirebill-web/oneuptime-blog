@@ -51,6 +51,7 @@ View your current NAT configuration:
 
 ```bash
 # Check current timeout settings
+
 gcloud compute routers nats describe your-nat-gateway \
   --router=your-router \
   --region=us-central1 \

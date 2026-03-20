@@ -52,6 +52,7 @@ Every workspace belongs to exactly one project. New workspaces go to the "Defaul
 
 ```hcl
 # Create projects for different parts of your infrastructure
+
 resource "tfe_project" "core_infra" {
   name         = "Core Infrastructure"
   organization = "your-org"

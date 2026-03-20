@@ -20,6 +20,7 @@ Before diving into examples, understanding the merge behavior for network config
 
 ```yaml
 # This patch ADDS eth1 without affecting eth0
+
 machine:
   network:
     interfaces:

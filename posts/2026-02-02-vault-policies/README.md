@@ -62,6 +62,7 @@ A policy defines paths and the capabilities allowed on those paths.
 
 ```hcl
 # Allow read access to the secret at secret/data/myapp
+
 path "secret/data/myapp" {
   capabilities = ["read"]
 }

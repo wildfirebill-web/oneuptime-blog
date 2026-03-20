@@ -32,6 +32,7 @@ graph LR
 
 ```bash
 # Install NFS client on all nodes
+
 sudo apt-get install -y nfs-common   # Ubuntu/Debian
 sudo yum install -y nfs-utils         # RHEL/CentOS
 ```
@@ -144,7 +145,7 @@ lsmod | grep nfsd
 
 ## Best Practices
 
-- RWX volumes have higher latency than RWO volumes due to the NFS layer — avoid using them for databases.
+- RWX volumes have higher latency than RWO volumes due to the NFS layer - avoid using them for databases.
 - Use RWX for shared configuration files, static assets, and log aggregation directories.
-- Set `nfsOptions: "vers=4.1"` — NFS v4.1 provides better performance than v3.
-- Monitor the share manager pod — if it crashes, all pods mounting the RWX volume will lose access until it recovers.
+- Set `nfsOptions: "vers=4.1"` - NFS v4.1 provides better performance than v3.
+- Monitor the share manager pod - if it crashes, all pods mounting the RWX volume will lose access until it recovers.

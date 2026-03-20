@@ -151,4 +151,4 @@ locals {
 
 ## Conclusion
 
-The `timecmp` function enables time-based logic in OpenTofu — from certificate expiry checking to deployment scheduling and feature flag activation. Use it with `timestamp()`, `timeadd()`, and `precondition` blocks to implement time-aware infrastructure policies.
+The `timecmp` function enables time-based logic in OpenTofu - from certificate expiry checking to deployment scheduling and feature flag activation. Use it with `timestamp()`, `timeadd()`, and `precondition` blocks to implement time-aware infrastructure policies.

@@ -23,6 +23,7 @@ Check your cluster is ready.
 
 ```bash
 # Verify cluster access
+
 kubectl cluster-info
 
 # Check available resources

@@ -25,6 +25,7 @@ Before diving into code, it helps to understand what makes StatefulSets special:
 
 ```hcl
 # providers.tf
+
 terraform {
   required_version = ">= 1.0"
 

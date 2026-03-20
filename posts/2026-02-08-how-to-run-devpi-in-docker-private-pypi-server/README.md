@@ -18,6 +18,7 @@ Run Devpi with minimal configuration:
 
 ```bash
 # Start Devpi server on port 3141
+
 docker run -d \
   --name devpi \
   -p 3141:3141 \

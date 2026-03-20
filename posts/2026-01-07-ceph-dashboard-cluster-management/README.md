@@ -58,6 +58,7 @@ Verify your cluster is healthy before proceeding:
 
 ```bash
 # Check the overall cluster health status
+
 # This command displays HEALTH_OK if everything is functioning properly
 ceph health
 

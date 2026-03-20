@@ -27,6 +27,7 @@ This guide provides the specific commands to optimize hardware configuration for
 
 ```bash
 # Maximize queues
+
 ethtool -L eth0 combined $(nproc)
 
 # Enable all relevant offloads

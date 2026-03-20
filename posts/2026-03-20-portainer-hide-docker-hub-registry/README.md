@@ -1,4 +1,4 @@
-# How to Hide Docker Hub from the Registry Dropdown in Portainer
+# How to Hide Docker Hub from the Registry Dropdown in Portainer (2)
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -19,11 +19,11 @@ By default, Portainer shows Docker Hub as an option in the registry dropdown whe
 
 Common reasons to hide Docker Hub:
 
-1. **Security policy** — Organization requires all images to be scanned before use
-2. **Air-gapped environments** — No internet access; Docker Hub is unreachable
-3. **Compliance** — All deployed software must be from approved registries
-4. **Standardization** — Enforce use of internal registry mirror
-5. **Rate limiting** — Prevent unauthenticated pulls that hit Docker Hub limits
+1. **Security policy** - Organization requires all images to be scanned before use
+2. **Air-gapped environments** - No internet access; Docker Hub is unreachable
+3. **Compliance** - All deployed software must be from approved registries
+4. **Standardization** - Enforce use of internal registry mirror
+5. **Rate limiting** - Prevent unauthenticated pulls that hit Docker Hub limits
 
 ## Step 1: Access Registry Settings
 
@@ -50,6 +50,7 @@ In some Portainer versions, you can completely remove Docker Hub from the list b
 
 ```bash
 # Get the admin JWT token
+
 TOKEN=$(curl -s -X POST http://portainer:9000/api/auth \
   -H "Content-Type: application/json" \
   -d '{"username":"admin","password":"yourpassword"}' | jq -r .jwt)

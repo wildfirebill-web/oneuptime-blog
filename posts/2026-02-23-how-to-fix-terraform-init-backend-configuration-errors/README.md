@@ -32,6 +32,7 @@ This happens when you modify anything in your backend block and then run `terraf
 
 ```bash
 # If you want to keep your existing state and move it to the new backend
+
 terraform init -migrate-state
 
 # If you want to start fresh with the new backend (existing state stays in old backend)

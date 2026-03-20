@@ -28,6 +28,7 @@ graph TD
 
 ```ini
 # inventory/multi-region.ini - Region-organized inventory
+
 [us_east_web]
 us-web-1 ansible_host=10.1.1.10
 us-web-2 ansible_host=10.1.1.11

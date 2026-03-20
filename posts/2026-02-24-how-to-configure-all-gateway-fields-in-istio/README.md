@@ -45,6 +45,7 @@ The selector is a simple label map. It matches against the labels on gateway pod
 
 ```yaml
 # Public gateway
+
 spec:
   selector:
     istio: public-gateway

@@ -26,6 +26,7 @@ Docker init requires Docker Desktop 4.18 or later. Verify your setup:
 
 ```bash
 # Check Docker version (need 4.18+ for docker init)
+
 docker version
 
 # Verify docker init is available

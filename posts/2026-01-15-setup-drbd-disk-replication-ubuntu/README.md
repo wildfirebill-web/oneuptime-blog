@@ -125,6 +125,7 @@ Identify an unused disk or partition on both servers. In this guide, we'll use `
 
 ```bash
 # List all block devices to identify available storage
+
 lsblk
 
 # Example output:
@@ -331,7 +332,7 @@ common {
 }
 ```
 
-### Resource Configuration
+Resource Configuration
 
 Create a resource configuration file on **both nodes**. The configuration must be identical on both servers:
 

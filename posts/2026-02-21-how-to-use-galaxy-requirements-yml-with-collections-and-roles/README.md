@@ -16,6 +16,7 @@ Since Ansible 2.10, the requirements file supports both `roles` and `collections
 
 ```yaml
 # requirements.yml - both roles and collections
+
 ---
 roles:
   - name: geerlingguy.nginx

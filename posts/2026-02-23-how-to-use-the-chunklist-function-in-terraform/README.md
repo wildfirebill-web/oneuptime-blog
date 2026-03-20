@@ -18,6 +18,7 @@ The `chunklist` function splits a single list into multiple smaller lists (chunk
 
 ```hcl
 # Syntax: chunklist(list, chunk_size)
+
 chunklist(list, size)
 ```
 

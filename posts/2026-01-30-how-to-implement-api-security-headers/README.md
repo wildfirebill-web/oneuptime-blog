@@ -436,6 +436,7 @@ Here is the equivalent implementation using Python and FastAPI.
 
 ```python
 # security_headers.py
+
 from fastapi import FastAPI, Request, Response, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from starlette.middleware.base import BaseHTTPMiddleware

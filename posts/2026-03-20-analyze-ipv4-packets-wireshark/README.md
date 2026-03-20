@@ -10,8 +10,9 @@ Description: Wireshark provides a graphical interface for capturing and dissecti
 
 Open Wireshark, select your interface, and start a capture. To focus on IPv4:
 
-```
+```text
 # Wireshark Capture Filter (BPF syntax, set before capture)
+
 ip
 ```
 
@@ -19,7 +20,7 @@ ip
 
 Display filters are applied to already-captured packets:
 
-```
+```text
 # Show only IPv4 packets
 ip
 

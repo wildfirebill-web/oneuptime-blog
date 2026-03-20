@@ -102,6 +102,7 @@ For automated reporting, use the AWS SDK:
 
 ```python
 # Retrieve carbon footprint data programmatically
+
 import boto3
 from datetime import datetime, timedelta
 

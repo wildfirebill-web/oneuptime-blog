@@ -419,6 +419,7 @@ SPANS_PER_SECOND=1000
 echo "Starting load test: ${SPANS_PER_SECOND} spans/sec for ${DURATION}s"
 
 # Use telemetrygen to generate test load
+
 docker run --rm --network host \
   ghcr.io/open-telemetry/opentelemetry-collector-contrib/telemetrygen:latest \
   traces \

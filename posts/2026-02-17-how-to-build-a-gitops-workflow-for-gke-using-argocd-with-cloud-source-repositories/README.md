@@ -38,6 +38,7 @@ Start by creating a GKE cluster (or use an existing one) and installing ArgoCD:
 
 ```bash
 # Create a GKE cluster for ArgoCD (or use existing)
+
 gcloud container clusters create argocd-cluster \
   --zone=us-central1-a \
   --num-nodes=3 \

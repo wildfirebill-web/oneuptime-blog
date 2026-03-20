@@ -12,12 +12,12 @@ Description: Understand the IPv6 Dummy Prefix 100:0:0:1::/64 (RFC 9003), its use
 
 ## Relationship to the Discard-Only Block
 
-```
-100::/64 — Discard-Only Address Block (RFC 6666)
+```text
+100::/64 - Discard-Only Address Block (RFC 6666)
   Used for RTBH (Remote Triggered Black Hole) filtering
   All traffic to 100::/64 should be discarded
 
-100:0:0:1::/64 — Dummy Prefix (RFC 9003)
+100:0:0:1::/64 - Dummy Prefix (RFC 9003)
   A specific /64 within the discard-only space
   Used as a placeholder/dummy in routing protocols
   Traffic discarded just as with the parent block
@@ -26,7 +26,8 @@ Description: Understand the IPv6 Dummy Prefix 100:0:0:1::/64 (RFC 9003), its use
 ## Use Cases for Dummy Prefixes
 
 ```bash
-# 1. BGP route reflector — needs a valid prefix to stay "active"
+# 1. BGP route reflector - needs a valid prefix to stay "active"
+
 # A BGP session that only redistributes other routes
 # needs at least one locally originated prefix to stay UP
 ip -6 route add blackhole 100:0:0:1::/64
@@ -42,7 +43,7 @@ router bgp 65001
 # When you want to test BGP/OSPF advertisement without real traffic
 ip -6 route add 100:0:0:1::/64 dev null
 
-# 3. Route reflector confederation — aggregate placeholder
+# 3. Route reflector confederation - aggregate placeholder
 # Advertise a summary route that points to discard
 ip -6 route add blackhole 100:0:0:1::/64
 ```

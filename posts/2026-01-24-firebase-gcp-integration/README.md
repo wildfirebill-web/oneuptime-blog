@@ -51,6 +51,7 @@ flowchart TB
 
 ```bash
 # Install Firebase CLI
+
 npm install -g firebase-tools
 
 # Login to Firebase

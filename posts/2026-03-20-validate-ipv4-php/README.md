@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: PHP, IPv4, Validation, filter_var, Regex, Networking
+Tags: PHP, IPv4, Validation, Filter_var, Regex, Networking
 
 Description: Learn how to validate IPv4 address strings in PHP using filter_var with FILTER_VALIDATE_IP, custom regex patterns, and practical request validation middleware examples.
 
@@ -22,7 +22,7 @@ $tests = [
     '256.0.0.1'       => false,   // Octet > 255
     '192.168.1'       => false,   // Missing octet
     '192.168.1.1.1'   => false,   // Extra octet
-    '192.168.01.1'    => false,   // Leading zero — rejected by filter_var
+    '192.168.01.1'    => false,   // Leading zero - rejected by filter_var
     '::1'             => false,   // IPv6
     ''                => false,   // Empty
 ];
@@ -129,4 +129,4 @@ print_r(extractIPv4($log));
 
 ## Conclusion
 
-`filter_var($ip, FILTER_VALIDATE_IP, FILTER_FLAG_IPV4)` is the idiomatic PHP approach — it correctly rejects leading zeros, out-of-range octets, and IPv6 addresses. Combine with `FILTER_FLAG_NO_PRIV_RANGE` and `FILTER_FLAG_NO_RES_RANGE` to enforce public-only IPs. In Laravel, the built-in `ip` and `ipv4` validation rules delegate to `filter_var` under the hood. Use the regex approach only when you need to extract IPs from freeform text.
+`filter_var($ip, FILTER_VALIDATE_IP, FILTER_FLAG_IPV4)` is the idiomatic PHP approach - it correctly rejects leading zeros, out-of-range octets, and IPv6 addresses. Combine with `FILTER_FLAG_NO_PRIV_RANGE` and `FILTER_FLAG_NO_RES_RANGE` to enforce public-only IPs. In Laravel, the built-in `ip` and `ipv4` validation rules delegate to `filter_var` under the hood. Use the regex approach only when you need to extract IPs from freeform text.

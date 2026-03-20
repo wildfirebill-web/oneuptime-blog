@@ -14,6 +14,7 @@ Description: Use mtr (My Traceroute) for real-time IPv6 network diagnostics that
 
 ```bash
 # Force IPv6 with the -6 flag
+
 mtr -6 ipv6.google.com
 
 # Interactive mode (default) - updates every second
@@ -53,7 +54,7 @@ mtr -6 --max-ttl 30 ipv6.google.com
 
 ## Interpreting mtr Output
 
-```
+```text
 Start: 2026-03-20T12:00:00+0000
 HOST: myhost                      Loss%   Snt   Last   Avg  Best  Wrst StDev
   1.|-- 2001:db8::1               0.0%    10    0.4    0.4   0.3   0.5   0.1
@@ -73,7 +74,7 @@ Column meanings:
 - `StDev`: Standard deviation (jitter)
 
 Interpreting patterns:
-- `???` (100% loss at middle hops): Router doesn't send ICMPv6 Time Exceeded — not necessarily a problem
+- `???` (100% loss at middle hops): Router doesn't send ICMPv6 Time Exceeded - not necessarily a problem
 - High loss only at the last hop: Destination firewall
 - Loss starting at hop N, continuing: Real packet loss at hop N
 - Loss only at one hop: That router rate-limits ICMP responses

@@ -21,6 +21,7 @@ When you pass `--admin-password` with a bcrypt-hashed password:
 
 ```bash
 # Method 1: Using Docker with httpd (most portable)
+
 docker run --rm httpd:2.4-alpine htpasswd -nbB admin yourpassword | cut -d ':' -f 2
 # Output: $2y$05$...
 
@@ -31,7 +32,7 @@ htpasswd -nbB admin yourpassword | cut -d ':' -f 2
 python3 -c "import bcrypt; print(bcrypt.hashpw(b'yourpassword', bcrypt.gensalt(rounds=5)).decode())"
 
 # Method 4: Using openssl (only for specific bcrypt implementations)
-# Note: openssl doesn't natively support bcrypt — use the above methods
+# Note: openssl doesn't natively support bcrypt - use the above methods
 
 # Save the hash for use
 HASH=$(docker run --rm httpd:2.4-alpine htpasswd -nbB admin yourpassword | cut -d ':' -f 2)
@@ -243,4 +244,4 @@ curl -X PUT \
 
 ## Conclusion
 
-The `--admin-password` flag is the recommended way to set the Portainer admin password in automated deployments. Use `--admin-password-file` for better security as it keeps the hash out of the process list. Remember that this flag only configures the password on initial database creation — for existing installations, use the Portainer UI or API to change passwords.
+The `--admin-password` flag is the recommended way to set the Portainer admin password in automated deployments. Use `--admin-password-file` for better security as it keeps the hash out of the process list. Remember that this flag only configures the password on initial database creation - for existing installations, use the Portainer UI or API to change passwords.

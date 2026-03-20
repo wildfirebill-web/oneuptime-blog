@@ -91,6 +91,7 @@ Set `max_connection_age` to be at least 2x `max_stream_lifetime` so that streams
 
 ```yaml
 # Good configuration:
+
 # Stream lifetime: 10 minutes
 # Connection age: 30 minutes
 # This allows 2-3 stream cycles per connection

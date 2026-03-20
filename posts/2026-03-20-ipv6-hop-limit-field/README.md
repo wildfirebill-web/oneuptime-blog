@@ -8,11 +8,11 @@ Description: Understand the IPv6 Hop Limit field, how it prevents routing loops,
 
 ## Introduction
 
-The IPv6 Hop Limit is an 8-bit field in the IPv6 header that limits the number of routers a packet can traverse before being discarded. It serves the same purpose as IPv4's TTL (Time To Live) — preventing packets from looping indefinitely in case of routing loops. Despite the name change, the behavior is identical: each router decrements the field by 1 and discards the packet (sending ICMPv6 Time Exceeded) when it reaches zero.
+The IPv6 Hop Limit is an 8-bit field in the IPv6 header that limits the number of routers a packet can traverse before being discarded. It serves the same purpose as IPv4's TTL (Time To Live) - preventing packets from looping indefinitely in case of routing loops. Despite the name change, the behavior is identical: each router decrements the field by 1 and discards the packet (sending ICMPv6 Time Exceeded) when it reaches zero.
 
 ## How Hop Limit Works
 
-```
+```text
 Source sets Hop Limit = 64
   ↓ Router 1 decrements → 63
   ↓ Router 2 decrements → 62
@@ -24,7 +24,7 @@ Source sets Hop Limit = 64
 
 ## Default Hop Limit Values
 
-```
+```text
 Typical initial values:
   64  - Linux, macOS (most Unix systems)
   128 - Windows
@@ -41,6 +41,7 @@ Special: 255 is used by NDP to ensure on-link delivery
 
 ```bash
 # View current default Hop Limit
+
 cat /proc/sys/net/ipv6/conf/all/hop_limit
 # Output: 64
 
@@ -62,7 +63,7 @@ traceroute6 -n 2001:4860:4860::8888
 
 A special use of Hop Limit is to restrict packet delivery to a specific scope:
 
-```
+```text
 Hop Limit = 1:  Only the directly connected segment (link-scope)
               → Used for NDP, Router Advertisements, etc.
               → Routers must NOT forward HL=1 packets
@@ -128,4 +129,4 @@ traceroute6 2001:db8::1
 
 ## Conclusion
 
-The IPv6 Hop Limit field is functionally identical to IPv4's TTL — it prevents routing loops and can be used to scope packet delivery. Key differences from TTL: the name emphasizes it is a hop count (not a timer), NDP requires HL=255 for security, and applications can control it per-socket using `IPV6_UNICAST_HOPS`. The most common default is 64, which is sufficient for any real-world path while keeping the value visible and meaningful in traceroute output.
+The IPv6 Hop Limit field is functionally identical to IPv4's TTL - it prevents routing loops and can be used to scope packet delivery. Key differences from TTL: the name emphasizes it is a hop count (not a timer), NDP requires HL=255 for security, and applications can control it per-socket using `IPV6_UNICAST_HOPS`. The most common default is 64, which is sufficient for any real-world path while keeping the value visible and meaningful in traceroute output.

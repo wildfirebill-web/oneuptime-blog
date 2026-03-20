@@ -44,6 +44,7 @@ For production environments, add your Docker Hub credentials to avoid rate limit
 
 ```bash
 # In the Docker Hub UI:
+
 # Account Settings > Security > New Access Token
 # Name it "portainer-<environment>" for easy identification
 

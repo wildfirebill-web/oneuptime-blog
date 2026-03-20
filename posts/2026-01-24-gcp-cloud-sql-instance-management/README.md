@@ -45,6 +45,7 @@ flowchart TB
 
 ```bash
 # Create a PostgreSQL instance
+
 gcloud sql instances create my-postgres \
     --database-version=POSTGRES_15 \
     --tier=db-custom-2-8192 \

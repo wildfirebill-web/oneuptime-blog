@@ -25,6 +25,7 @@ The simplest option for bare metal or environments without external load balance
 
 ```yaml
 # Machine config for each control plane node
+
 machine:
   network:
     interfaces:

@@ -181,6 +181,7 @@ Keep shared components in the `lib/` directory and reference them from service o
 
 ```yaml
 # lib/resource-limits/standard.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

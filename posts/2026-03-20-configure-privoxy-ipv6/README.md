@@ -22,6 +22,7 @@ apt-get install -y privoxy
 # /etc/privoxy/config
 
 # Listen on all IPv6 interfaces
+
 listen-address [::]:8118
 
 # Listen on IPv6 loopback only

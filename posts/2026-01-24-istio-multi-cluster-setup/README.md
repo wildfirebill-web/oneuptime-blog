@@ -49,6 +49,7 @@ Check cluster connectivity:
 
 ```bash
 # From cluster 1, test connectivity to cluster 2 API server
+
 kubectl --context=cluster1 run tmp --rm -it --image=curlimages/curl -- \
   curl -k https://<cluster2-api-server>:6443
 

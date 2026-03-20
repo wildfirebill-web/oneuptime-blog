@@ -114,6 +114,7 @@ spring:
             factory_class: org.hibernate.cache.jcache.JCacheRegionFactory
 
 # OpenTelemetry configuration
+
 otel:
   instrumentation:
     jdbc:

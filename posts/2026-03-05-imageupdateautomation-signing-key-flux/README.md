@@ -25,6 +25,7 @@ First, generate a GPG key pair dedicated to the Flux automation. Do not reuse pe
 
 ```bash
 # Generate a new GPG key
+
 gpg --batch --gen-key <<EOF
 %no-protection
 Key-Type: RSA

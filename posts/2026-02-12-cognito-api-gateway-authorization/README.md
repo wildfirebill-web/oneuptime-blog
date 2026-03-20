@@ -30,6 +30,7 @@ First, create the authorizer:
 
 ```bash
 # Get your API Gateway REST API ID
+
 API_ID=$(aws apigateway get-rest-apis --query "items[?name=='MyAPI'].id" --output text)
 
 # Create a Cognito authorizer

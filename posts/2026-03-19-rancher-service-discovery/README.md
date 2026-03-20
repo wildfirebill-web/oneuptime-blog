@@ -275,6 +275,7 @@ Check the health of service discovery components:
 
 ```bash
 # Verify CoreDNS is healthy
+
 kubectl get pods -n kube-system -l k8s-app=kube-dns
 
 # Check service endpoints

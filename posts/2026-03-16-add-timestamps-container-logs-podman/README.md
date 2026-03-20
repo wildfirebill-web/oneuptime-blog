@@ -18,6 +18,7 @@ Application logs may or may not include their own timestamps. Podman can prepend
 
 ```bash
 # View logs with Podman-generated timestamps
+
 podman logs --timestamps my-container
 
 # Short form using -t flag

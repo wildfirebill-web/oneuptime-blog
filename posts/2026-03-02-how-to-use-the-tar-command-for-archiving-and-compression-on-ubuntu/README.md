@@ -37,6 +37,7 @@ tar -cvf archive.tar files/ # Also valid
 
 ```bash
 # Create an archive of a directory
+
 tar cf backup.tar /var/www/html/
 
 # With verbose output (shows files being added)

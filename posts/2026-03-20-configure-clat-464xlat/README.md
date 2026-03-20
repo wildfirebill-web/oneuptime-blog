@@ -24,6 +24,7 @@ On Android, this is built into the OS. On Linux, you can configure it manually o
 
 ```bash
 # Install clatd on Ubuntu/Debian
+
 apt install clatd
 
 # Or install from source

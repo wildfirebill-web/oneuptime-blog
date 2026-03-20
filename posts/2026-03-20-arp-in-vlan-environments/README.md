@@ -8,9 +8,9 @@ Description: Learn how ARP works in VLAN-segmented networks, including inter-VLA
 
 ## ARP and VLAN Basics
 
-VLANs segment a physical network into multiple logical broadcast domains. Since ARP is a broadcast protocol, ARP requests are **confined to a single VLAN** — they cannot cross VLAN boundaries without help.
+VLANs segment a physical network into multiple logical broadcast domains. Since ARP is a broadcast protocol, ARP requests are **confined to a single VLAN** - they cannot cross VLAN boundaries without help.
 
-```
+```text
 VLAN 10 (192.168.10.0/24)   ←→ VLAN 20 (192.168.20.0/24)
   ARP broadcasts stay in VLAN 10     ARP broadcasts stay in VLAN 20
   Hosts can only ARP for 192.168.10.x  Hosts can only ARP for 192.168.20.x
@@ -43,6 +43,7 @@ A single router interface with VLAN sub-interfaces:
 
 ```bash
 # Linux with VLAN sub-interfaces
+
 # Create VLAN 10 sub-interface
 ip link add link eth1 name eth1.10 type vlan id 10
 ip addr add 192.168.10.1/24 dev eth1.10
@@ -63,7 +64,7 @@ Now the router performs ARP on each VLAN sub-interface independently.
 
 ARP packets in a VLAN-trunked environment are tagged with 802.1Q headers:
 
-```
+```text
 Ethernet Header:
   Destination: ff:ff:ff:ff:ff:ff
   Source: host_mac

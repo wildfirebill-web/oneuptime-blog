@@ -22,6 +22,7 @@ For a local backup, create a dedicated directory and register it as a repository
 
 ```bash
 # Create the backup directory
+
 sudo mkdir -p /var/backups/elasticsearch
 sudo chown elasticsearch:elasticsearch /var/backups/elasticsearch
 sudo chmod 750 /var/backups/elasticsearch

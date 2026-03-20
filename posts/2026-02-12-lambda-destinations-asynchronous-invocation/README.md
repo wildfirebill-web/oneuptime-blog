@@ -90,6 +90,7 @@ This command sets up an SQS queue as the on-success destination for a Lambda fun
 
 ```bash
 # Configure the success destination
+
 aws lambda put-function-event-invoke-config \
   --function-name my-processor-function \
   --destination-config '{

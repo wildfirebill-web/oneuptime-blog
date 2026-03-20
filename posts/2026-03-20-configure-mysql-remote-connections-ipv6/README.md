@@ -13,6 +13,7 @@ Description: Learn how to configure MySQL for remote connections over IPv6, cove
 
 [mysqld]
 # Listen on all interfaces (required for remote connections)
+
 bind-address = ::
 
 # Or listen on specific IPv6 address

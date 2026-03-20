@@ -51,6 +51,7 @@ cert-manager is one of the most common operators. It illustrates the CRD managem
 
 ```yaml
 # clusters/production/infrastructure/sources/jetstack.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

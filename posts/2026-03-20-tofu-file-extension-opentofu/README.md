@@ -18,6 +18,7 @@ Files with the `.tofu` extension are processed identically to `.tf` files but wi
 
 ```hcl
 # main.tofu - OpenTofu-specific configuration
+
 # This file will only be processed by OpenTofu, not Terraform
 
 terraform {
@@ -104,7 +105,7 @@ cp versions.tf versions.tofu
 
 ## Directory Structure with .tofu Files
 
-```
+```hcl
 project/
 ├── main.tf         # Shared configuration (used by both)
 ├── variables.tf    # Shared variables
@@ -123,7 +124,7 @@ TF_LOG=DEBUG tofu validate 2>&1 | grep "\.tofu\|\.tf"
 
 ## When to Use .tofu vs .tf
 
-```
+```hcl
 Use .tf when:
 - Configuration works for both Terraform and OpenTofu
 - You're not using OpenTofu-specific features

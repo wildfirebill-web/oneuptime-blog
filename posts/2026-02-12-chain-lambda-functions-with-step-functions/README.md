@@ -180,6 +180,7 @@ Here's the full CloudFormation template:
 
 ```yaml
 # Step Functions state machine with Lambda functions
+
 Resources:
   OrderProcessingStateMachine:
     Type: AWS::StepFunctions::StateMachine

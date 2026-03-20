@@ -62,6 +62,7 @@ The easiest way to set up HA is during server creation. If you are using the Azu
 
 ```bash
 # Create a MySQL Flexible Server with zone-redundant HA
+
 az mysql flexible-server create \
   --resource-group myResourceGroup \
   --name my-ha-mysql-server \

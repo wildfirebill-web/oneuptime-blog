@@ -554,6 +554,7 @@ ArgoCD supports Helm hooks through annotation mapping:
 
 ```yaml
 # Helm hook annotation
+
 annotations:
   "helm.sh/hook": pre-install,pre-upgrade
   "helm.sh/hook-weight": "-5"

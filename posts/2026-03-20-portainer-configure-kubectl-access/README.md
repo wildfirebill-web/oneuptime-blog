@@ -56,6 +56,7 @@ The downloaded file is pre-configured with:
 
 ```bash
 # Move kubeconfig to the default location
+
 mv ~/Downloads/portainer-kubeconfig.yaml ~/.kube/config
 
 # Or use it alongside an existing kubeconfig
@@ -110,7 +111,7 @@ For users who don't need local kubectl access, Portainer provides a browser-base
 3. Access is automatically scoped to the user's namespace permissions.
 
 ```bash
-# KubeShell example — already authenticated
+# KubeShell example - already authenticated
 kubectl get pods -n my-namespace
 kubectl logs deployment/myapp -n my-namespace --tail=50
 kubectl rollout status deployment/myapp -n my-namespace

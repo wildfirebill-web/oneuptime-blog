@@ -11,7 +11,8 @@ Restoring iptables rules from backup is your safety net after accidental flushes
 ## Create a Backup Before Making Changes
 
 ```bash
-# Always back up before changes — this is a 5-second habit that saves hours
+# Always back up before changes - this is a 5-second habit that saves hours
+
 sudo iptables-save > /tmp/iptables-backup-$(date +%Y%m%d-%H%M%S).txt
 
 # Create a versioned backup directory
@@ -42,7 +43,7 @@ sudo grep -A 1000 '*filter' /tmp/backup.txt | grep -B 1000 'COMMIT' \
 
 ```bash
 #!/bin/bash
-# safe-restore.sh — Restore with connectivity pre-check
+# safe-restore.sh - Restore with connectivity pre-check
 
 BACKUP="$1"
 
@@ -59,7 +60,7 @@ fi
 # Validate the file before restoring
 sudo iptables-restore --test < "$BACKUP"
 if [ $? -ne 0 ]; then
-    echo "Backup file has errors — restore aborted"
+    echo "Backup file has errors - restore aborted"
     exit 1
 fi
 
@@ -77,7 +78,7 @@ sleep 2
 if ping -c 1 -W 2 8.8.8.8 > /dev/null 2>&1; then
     echo "Connectivity check: OK"
 else
-    echo "WARNING: Cannot reach internet after restore — check rules"
+    echo "WARNING: Cannot reach internet after restore - check rules"
 fi
 ```
 
@@ -116,4 +117,4 @@ echo "0 2 * * * root iptables-save > /var/backups/iptables/rules-\$(date +\%Y\%m
   | sudo tee /etc/cron.d/iptables-backup
 ```
 
-The `iptables-restore` command restores the exact state of your firewall — both the rules and the chain default policies — making it the most complete recovery method available.
+The `iptables-restore` command restores the exact state of your firewall - both the rules and the chain default policies - making it the most complete recovery method available.

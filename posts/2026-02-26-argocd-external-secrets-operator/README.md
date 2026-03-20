@@ -69,6 +69,7 @@ First, create IAM credentials for ESO:
 
 ```bash
 # Create a Kubernetes secret with AWS credentials
+
 kubectl create secret generic aws-secret \
   --namespace external-secrets \
   --from-literal=access-key=AKIAIOSFODNN7EXAMPLE \

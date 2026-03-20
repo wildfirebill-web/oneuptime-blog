@@ -26,6 +26,7 @@ Start with a simple example. Create a ServiceAccount in one namespace and grant 
 
 ```bash
 # Create the monitoring namespace and ServiceAccount
+
 kubectl create namespace monitoring
 kubectl create serviceaccount prometheus -n monitoring
 ```

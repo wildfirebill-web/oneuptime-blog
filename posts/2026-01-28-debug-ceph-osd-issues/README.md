@@ -49,6 +49,7 @@ When you suspect OSD issues, start with cluster health:
 
 ```bash
 # Quick health check
+
 ceph health detail
 
 # Check OSD status

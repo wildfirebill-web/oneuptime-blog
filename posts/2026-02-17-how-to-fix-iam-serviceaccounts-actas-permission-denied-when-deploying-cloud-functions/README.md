@@ -31,6 +31,7 @@ Grant the `iam.serviceAccountUser` role to the user or service account that is d
 
 ```bash
 # Grant the Service Account User role to a developer
+
 # This allows them to deploy functions that run as the App Engine default SA
 gcloud iam service-accounts add-iam-policy-binding \
     my-project@appspot.gserviceaccount.com \

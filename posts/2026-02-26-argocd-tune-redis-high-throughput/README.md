@@ -86,6 +86,7 @@ ArgoCD components maintain connections to Redis. For large deployments, the defa
 
 ```yaml
 # Redis server configuration
+
 args:
 - redis-server
 - --maxmemory=2gb

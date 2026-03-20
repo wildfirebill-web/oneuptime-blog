@@ -60,6 +60,7 @@ Use kubectl's server-side dry-run to validate the ApplicationSet manifest withou
 
 ```bash
 # Server-side dry run - validates against the cluster API
+
 kubectl apply -f applicationset.yaml --dry-run=server -n argocd
 
 # Client-side dry run - validates YAML syntax only

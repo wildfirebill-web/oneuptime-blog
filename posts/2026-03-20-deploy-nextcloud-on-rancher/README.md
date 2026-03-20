@@ -8,7 +8,7 @@ Description: Deploy Nextcloud on Rancher for self-hosted file sharing and collab
 
 ## Introduction
 
-Nextcloud is an open-source file sharing and collaboration platform—a self-hosted alternative to Dropbox, Google Drive, and Microsoft 365. Deploying it on Rancher gives organizations full control over their data with enterprise features.
+Nextcloud is an open-source file sharing and collaboration platform-a self-hosted alternative to Dropbox, Google Drive, and Microsoft 365. Deploying it on Rancher gives organizations full control over their data with enterprise features.
 
 ## Step 1: Deploy Nextcloud with Helm
 
@@ -19,6 +19,7 @@ helm repo update
 
 ```yaml
 # nextcloud-values.yaml
+
 nextcloud:
   host: nextcloud.example.com
   username: admin

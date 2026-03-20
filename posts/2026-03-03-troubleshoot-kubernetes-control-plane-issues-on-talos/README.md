@@ -27,6 +27,7 @@ Start with a high-level health check:
 
 ```bash
 # Check if the API server responds
+
 kubectl get --raw='/healthz'
 
 # Check component statuses

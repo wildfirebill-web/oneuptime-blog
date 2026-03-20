@@ -16,6 +16,7 @@ At its simplest, the shell module runs a command through `/bin/sh` on the remote
 
 ```yaml
 # basic_shell.yml - Basic shell module examples
+
 ---
 - name: Basic shell module usage
   hosts: all

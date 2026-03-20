@@ -28,6 +28,7 @@ graph TD
 
 ```yaml
 # inventories/bare-metal/hosts.yml
+
 all:
   children:
     bare_metal:

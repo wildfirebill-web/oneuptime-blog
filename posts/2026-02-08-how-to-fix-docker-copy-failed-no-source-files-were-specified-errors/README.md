@@ -36,6 +36,7 @@ Check your `.dockerignore`:
 
 ```bash
 # View the dockerignore file
+
 cat .dockerignore
 ```
 

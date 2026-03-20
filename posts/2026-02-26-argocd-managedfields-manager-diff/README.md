@@ -18,6 +18,7 @@ Every Kubernetes resource has a `metadata.managedFields` array that tracks which
 
 ```bash
 # View managed fields for a Deployment
+
 kubectl get deployment my-app -o json | jq '.metadata.managedFields'
 ```
 

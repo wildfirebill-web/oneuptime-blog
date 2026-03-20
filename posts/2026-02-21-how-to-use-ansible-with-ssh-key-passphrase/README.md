@@ -24,6 +24,7 @@ The ssh-agent is a background process that holds decrypted SSH keys in memory. Y
 
 ```bash
 # Start ssh-agent (if not already running)
+
 eval "$(ssh-agent -s)"
 
 # Add your passphrase-protected key to the agent

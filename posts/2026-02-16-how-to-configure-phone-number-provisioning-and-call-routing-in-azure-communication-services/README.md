@@ -32,6 +32,7 @@ ACS provides several voice-related capabilities:
 
 ```bash
 # Create the ACS resource
+
 RESOURCE_GROUP="rg-communications"
 ACS_NAME="acs-voice-prod"
 LOCATION="unitedstates"

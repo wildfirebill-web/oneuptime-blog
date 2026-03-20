@@ -26,6 +26,7 @@ This guide walks through the complete `Terraform` CRD schema with practical exam
 
 ```yaml
 # infrastructure/sources/terraform-modules.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: GitRepository
 metadata:

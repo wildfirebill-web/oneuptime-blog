@@ -22,6 +22,7 @@ The default admin account is a security risk. After setting up SSO or local acco
 
 ```yaml
 # argocd-cm - disable admin account
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

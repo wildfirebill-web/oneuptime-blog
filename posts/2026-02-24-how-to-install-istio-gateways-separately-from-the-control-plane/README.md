@@ -28,6 +28,7 @@ Using istioctl, disable the default gateway:
 
 ```yaml
 # istiod-only.yaml
+
 apiVersion: install.istio.io/v1alpha1
 kind: IstioOperator
 spec:

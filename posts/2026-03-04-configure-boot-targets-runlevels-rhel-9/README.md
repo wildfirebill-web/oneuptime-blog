@@ -39,6 +39,7 @@ flowchart TD
 
 ```bash
 # See what target the system is currently running
+
 systemctl get-default
 
 # Check the active target

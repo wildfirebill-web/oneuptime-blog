@@ -18,6 +18,7 @@ The standard approach uses the AWS CLI to get a login password and pipe it to `d
 
 ```bash
 # Authenticate Docker with ECR
+
 aws ecr get-login-password --region us-east-1 | \
   docker login --username AWS --password-stdin 123456789.dkr.ecr.us-east-1.amazonaws.com
 ```

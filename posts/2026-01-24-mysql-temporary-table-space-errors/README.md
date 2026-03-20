@@ -66,6 +66,7 @@ SHOW VARIABLES LIKE '%heap%';
 
 ```bash
 # Check disk space on the temporary directory
+
 df -h /tmp
 
 # Check disk space on the MySQL data directory

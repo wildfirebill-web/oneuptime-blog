@@ -60,6 +60,7 @@ Modify the cluster parameter group to enable Parallel Query:
 
 ```bash
 # Enable Aurora Parallel Query in the cluster parameter group
+
 aws rds modify-db-cluster-parameter-group \
   --db-cluster-parameter-group-name my-aurora-params \
   --parameters "ParameterName=aurora_parallel_query,ParameterValue=ON,ApplyMethod=pending-reboot"

@@ -18,6 +18,7 @@ When managing secrets, you often need to check when a secret was created, which 
 
 ```bash
 # Inspect a secret by name
+
 podman secret inspect db_password
 
 # Example output:

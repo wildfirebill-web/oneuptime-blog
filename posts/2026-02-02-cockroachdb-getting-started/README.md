@@ -38,6 +38,7 @@ The fastest way to get a CockroachDB instance running. This command pulls the of
 
 ```bash
 # Pull and run CockroachDB in a container
+
 # Port 26257 is for SQL connections, 8080 is for the admin UI
 docker run -d \
   --name=cockroach \

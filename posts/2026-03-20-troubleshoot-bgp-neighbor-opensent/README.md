@@ -20,20 +20,20 @@ stateDiagram-v2
 
 ## Step 1: Confirm the Session Is in OpenSent
 
-```
+```text
 Router# show ip bgp summary
 
 Neighbor        V     AS   MsgRcvd MsgSent   TblVer  InQ OutQ Up/Down  State/PfxRcd
 203.0.113.2     4  65002        1       1        0    0    0  00:02:00  OpenSent
 ```
 
-`MsgSent: 1` and `MsgRcvd: 0` (or low) is characteristic of OpenSent—the OPEN was sent but nothing valid has come back.
+`MsgSent: 1` and `MsgRcvd: 0` (or low) is characteristic of OpenSent-the OPEN was sent but nothing valid has come back.
 
 ## Step 2: Check for NOTIFICATION Messages in Logs
 
 When a BGP OPEN is rejected, the peer sends a NOTIFICATION message with an error code. Check system logs:
 
-```
+```text
 Router# show log | include BGP|NOTIFICATION
 
 ! Common notification messages:
@@ -55,7 +55,7 @@ Router# show log | include BGP|NOTIFICATION
 
 The most common OpenSent issue is an AS number mismatch:
 
-```
+```text
 ! Verify what AS you configured for the neighbor
 Router# show run | section router bgp
 
@@ -72,7 +72,7 @@ router bgp 65001
 
 BGP requires a minimum hold time of 3 seconds. If one side sends 0 (disable hold timer) and the other doesn't accept it:
 
-```
+```text
 ! Check configured hold time
 Router# show ip bgp neighbors 203.0.113.2 | include hold
 
@@ -88,7 +88,7 @@ The hold time is negotiated to the lower of the two values in the OPEN messages.
 
 Two BGP routers in the same AS cannot have the same Router ID:
 
-```
+```text
 ! Check Router ID on both routers
 Router1# show ip bgp | include local router ID
 Router2# show ip bgp | include local router ID
@@ -104,7 +104,7 @@ For eBGP sessions, Router ID conflicts are possible if both routers share the sa
 
 For detailed OPEN message inspection:
 
-```
+```text
 ! Enable BGP open message debugging (use carefully)
 Router# debug ip bgp 203.0.113.2 events
 Router# debug ip bgp 203.0.113.2 opens
@@ -120,7 +120,7 @@ Router# no debug all
 
 If a peer doesn't support a BGP capability you're advertising (like multiprotocol extensions), disable it:
 
-```
+```text
 ! Disable capability negotiation if peer doesn't support it
 router bgp 65001
  neighbor 203.0.113.2 dont-capability-negotiate
@@ -128,4 +128,4 @@ router bgp 65001
 
 ## Conclusion
 
-BGP sessions stuck in OpenSent indicate that the TCP session was established but the OPEN message exchange failed. Always start by checking system logs for NOTIFICATION error codes. AS number mismatches (error 2/2) are most common—verify with `show run` that `remote-as` matches the peer's actual AS. For hold time or Router ID issues, adjust the relevant parameters and clear the session to retry.
+BGP sessions stuck in OpenSent indicate that the TCP session was established but the OPEN message exchange failed. Always start by checking system logs for NOTIFICATION error codes. AS number mismatches (error 2/2) are most common-verify with `show run` that `remote-as` matches the peer's actual AS. For hold time or Router ID issues, adjust the relevant parameters and clear the session to retry.

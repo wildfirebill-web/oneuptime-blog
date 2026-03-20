@@ -1,4 +1,4 @@
-# How to Set Variables Using Environment Variables with TF_VAR_ Prefix
+# How to Set Variables Using Environment Variables with TF_VAR_ Prefix (2)
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Learn how to use the TF_VAR_ prefix to set OpenTofu variable values
 
 ---
 
-Any environment variable prefixed with `TF_VAR_` is automatically read by OpenTofu as a variable value. This is the most secure way to pass sensitive values like passwords and API keys — they never appear in command history, process listings, or log files.
+Any environment variable prefixed with `TF_VAR_` is automatically read by OpenTofu as a variable value. This is the most secure way to pass sensitive values like passwords and API keys - they never appear in command history, process listings, or log files.
 
 ---
 
@@ -16,11 +16,12 @@ Any environment variable prefixed with `TF_VAR_` is automatically read by OpenTo
 
 ```bash
 # Set variables via environment variables
+
 export TF_VAR_region="us-east-1"
 export TF_VAR_instance_count="3"
 export TF_VAR_environment="production"
 
-# OpenTofu reads them automatically — no -var flags needed
+# OpenTofu reads them automatically - no -var flags needed
 tofu plan
 tofu apply
 ```
@@ -38,7 +39,7 @@ The environment variable name maps to the variable name:
 # INSECURE: password visible in shell history
 tofu apply -var="database_password=mysecret"
 
-# SECURE: use TF_VAR_ — doesn't appear in history
+# SECURE: use TF_VAR_ - doesn't appear in history
 export TF_VAR_database_password="mysecret"
 tofu apply
 
@@ -51,7 +52,7 @@ TF_VAR_database_password="mysecret" tofu apply
 ## TF_VAR_ in CI/CD Pipelines
 
 ```yaml
-# GitHub Actions — pass secrets via TF_VAR_
+# GitHub Actions - pass secrets via TF_VAR_
 - name: Deploy infrastructure
   env:
     TF_VAR_database_password: ${{ secrets.DB_PASSWORD }}
@@ -64,7 +65,7 @@ TF_VAR_database_password="mysecret" tofu apply
 ```
 
 ```yaml
-# GitLab CI — same approach
+# GitLab CI - same approach
 deploy:
   variables:
     TF_VAR_environment: "production"
@@ -98,7 +99,7 @@ tofu plan
 
 OpenTofu evaluates variables in this order (highest wins):
 
-```
+```text
 1. -var flags on the command line (highest priority)
 2. -var-file flags on the command line
 3. *.auto.tfvars files (alphabetically)

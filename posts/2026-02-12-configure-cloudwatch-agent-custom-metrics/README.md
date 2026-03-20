@@ -39,6 +39,7 @@ With this config, the agent listens on UDP port 8125. Your application sends met
 import socket
 
 # Simple StatsD client - no libraries needed
+
 def send_statsd(metric_name, value, metric_type='c'):
     """Send a metric to the local CloudWatch Agent via StatsD."""
     sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)

@@ -103,6 +103,7 @@ The first time you create a management group, Azure sets up the Tenant Root Grou
 
 ```bash
 # Elevate access for Global Administrator (one-time setup)
+
 # This grants the Global Admin user access to the root management group
 az rest --method post \
   --url "https://management.azure.com/providers/Microsoft.Authorization/elevateAccess?api-version=2016-07-01"

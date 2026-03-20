@@ -39,6 +39,7 @@ A production Terraform Enterprise deployment on AWS typically includes:
 # networking.tf
 
 # VPC for Terraform Enterprise
+
 resource "aws_vpc" "tfe" {
   cidr_block           = "10.0.0.0/16"
   enable_dns_hostnames = true

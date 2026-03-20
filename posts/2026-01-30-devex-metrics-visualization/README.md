@@ -203,6 +203,7 @@ For Python applications, here is the equivalent setup:
 
 ```python
 # metrics.py
+
 # Python metrics instrumentation using OpenTelemetry
 
 from opentelemetry import metrics

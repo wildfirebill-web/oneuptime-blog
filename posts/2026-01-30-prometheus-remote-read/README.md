@@ -277,6 +277,7 @@ First, start VictoriaMetrics with remote read support enabled:
 
 ```bash
 # Start VictoriaMetrics single-node
+
 docker run -d \
   --name victoriametrics \
   -p 8428:8428 \

@@ -18,6 +18,7 @@ Assess the current state of your cluster before removing any nodes.
 
 ```bash
 # Check current nodes
+
 kubectl get nodes -o wide
 
 # Check resource utilization

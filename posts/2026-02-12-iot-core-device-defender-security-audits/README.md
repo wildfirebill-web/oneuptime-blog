@@ -47,6 +47,7 @@ First, create an IAM role for Device Defender.
 
 ```bash
 # Create the Device Defender role
+
 cat > defender-trust.json << 'EOF'
 {
   "Version": "2012-10-17",

@@ -164,6 +164,7 @@ Default subscriptions and annotation-based subscriptions are additive. An applic
 
 ```yaml
 # Default subscription (in argocd-notifications-cm)
+
 subscriptions: |
   - recipients:
       - slack:global-alerts

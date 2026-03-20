@@ -38,6 +38,7 @@ This guide uses:
 
 ```bash
 # Set the server's hostname to its FQDN
+
 sudo hostnamectl set-hostname ipa.example.com
 
 # Verify

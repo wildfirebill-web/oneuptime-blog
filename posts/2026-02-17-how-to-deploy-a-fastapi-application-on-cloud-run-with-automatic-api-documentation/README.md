@@ -18,6 +18,7 @@ Let me start with a practical FastAPI application. This is not a hello-world exa
 
 ```python
 # main.py - FastAPI application with automatic documentation
+
 from fastapi import FastAPI, HTTPException, Query
 from pydantic import BaseModel, Field
 from typing import Optional

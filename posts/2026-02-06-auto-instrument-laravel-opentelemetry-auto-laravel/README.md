@@ -31,6 +31,7 @@ The OpenTelemetry PHP auto-instrumentation relies on a PHP extension that hooks 
 
 ```bash
 # Install the OpenTelemetry PHP extension via PECL
+
 pecl install opentelemetry
 
 # Enable the extension in your php.ini

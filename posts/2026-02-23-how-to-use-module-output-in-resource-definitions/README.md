@@ -18,6 +18,7 @@ The syntax for referencing a module output is `module.<MODULE_NAME>.<OUTPUT_NAME
 
 ```hcl
 # Create a VPC using a module
+
 module "vpc" {
   source = "./modules/vpc"
 

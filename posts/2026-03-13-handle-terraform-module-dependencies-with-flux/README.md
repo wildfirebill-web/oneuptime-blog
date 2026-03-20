@@ -27,6 +27,7 @@ The tf-controller by Weaveworks runs Terraform plans and applies within Kubernet
 
 ```bash
 # Add the tf-controller Helm repository
+
 helm repo add tf-controller https://weaveworks.github.io/tf-controller
 helm repo update
 

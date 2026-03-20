@@ -93,6 +93,7 @@ Generate tokens for each CI account:
 
 ```bash
 # Generate tokens
+
 argocd account generate-token --account frontend-ci
 argocd account generate-token --account backend-ci
 argocd account generate-token --account data-pipeline-ci

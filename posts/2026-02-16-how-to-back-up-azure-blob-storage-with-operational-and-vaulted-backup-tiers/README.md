@@ -69,6 +69,7 @@ Note: Blob backup uses a Backup vault (not a Recovery Services vault). These are
 
 ```bash
 # Create a Backup vault for blob storage protection
+
 az dataprotection backup-vault create \
     --resource-group rg-backup-eastus2 \
     --vault-name bv-blob-eastus2-001 \

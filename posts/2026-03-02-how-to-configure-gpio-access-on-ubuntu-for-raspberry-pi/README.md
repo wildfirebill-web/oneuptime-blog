@@ -30,6 +30,7 @@ On Raspberry Pi OS, the popular `RPi.GPIO` Python library uses the legacy sysfs 
 
 ```bash
 # Update package list
+
 sudo apt-get update
 
 # Install libgpiod tools (command-line GPIO access)

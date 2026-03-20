@@ -26,6 +26,7 @@ The goal of backup testing is to answer two questions: Is the data intact? Can I
 
 ```bash
 # Test tar archive integrity - checks headers and checksums
+
 tar --test-label --file=/mnt/backup/system-backup-20260302.tar.gz
 echo "Exit code: $?"
 

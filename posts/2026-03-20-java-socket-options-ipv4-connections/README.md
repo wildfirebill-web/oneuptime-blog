@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Java, Socket Options, IPv4, TCP, Performance, Networking, Socket
+Tags: Java, Socket Options, IPv4, TCP, Performance, Networking, Sockets
 
 Description: Configure Java Socket and ServerSocket options like SO_TIMEOUT, SO_KEEPALIVE, TCP_NODELAY, SO_REUSEADDR, and buffer sizes for optimized IPv4 TCP connections.
 
@@ -49,7 +49,7 @@ public class OptimizedSocketClient {
         
         // Set options AFTER connecting (some require an established connection)
         
-        // SO_TIMEOUT: read timeout — throw SocketTimeoutException after 30s
+        // SO_TIMEOUT: read timeout - throw SocketTimeoutException after 30s
         socket.setSoTimeout(30000);
         
         // TCP_NODELAY: disable Nagle's algorithm for low-latency sends

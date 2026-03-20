@@ -12,7 +12,7 @@ SLAAC failures typically manifest as hosts not receiving IPv6 addresses or route
 
 ## Diagnostic Flowchart
 
-```
+```text
 SLAAC Troubleshooting Flow:
 
 Host has no global IPv6 address?
@@ -36,6 +36,7 @@ Check address state   → ip -6 addr show | grep dynamic
 
 ```bash
 # Step 1: Verify IPv6 is enabled on the interface
+
 ip link show eth0 | grep "UP"
 # Should show UP LOWER_UP
 

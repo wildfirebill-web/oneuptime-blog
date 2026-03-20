@@ -58,6 +58,7 @@ First, create a Network Insights Path that defines the source and destination.
 
 ```bash
 # Create a path to test connectivity from EC2 instance to another on port 443
+
 aws ec2 create-network-insights-path \
   --source i-0abc123def456789a \
   --destination i-0abc123def456789b \

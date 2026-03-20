@@ -49,6 +49,7 @@ A Server resource defines a named set of ports on a workload. It acts as the tar
 
 ```yaml
 # server.yaml
+
 # Defines the HTTP port on the API service that policies will protect
 apiVersion: policy.linkerd.io/v1beta2
 kind: Server

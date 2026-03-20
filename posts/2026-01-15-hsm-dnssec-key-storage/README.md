@@ -107,6 +107,7 @@ flowchart TB
 
 ```bash
 # Connect to HSM admin console
+
 ssh admin@hsm.example.com
 
 # Create a new partition for DNSSEC

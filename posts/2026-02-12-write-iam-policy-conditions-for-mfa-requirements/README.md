@@ -135,6 +135,7 @@ As mentioned, `aws:MultiFactorAuthPresent` isn't set for long-term access key re
 
 ```bash
 # Get temporary credentials using MFA
+
 aws sts get-session-token \
   --serial-number arn:aws:iam::123456789012:mfa/jane.smith \
   --token-code 123456 \

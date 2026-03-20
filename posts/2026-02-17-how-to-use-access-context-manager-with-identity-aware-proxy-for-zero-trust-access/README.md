@@ -52,6 +52,7 @@ If you have not already, enable IAP for your application. Here is how to do it f
 
 ```bash
 # Enable the IAP API
+
 gcloud services enable iap.googleapis.com
 
 # Enable IAP for App Engine

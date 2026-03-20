@@ -22,6 +22,7 @@ Install OpenTelemetry and the instrumentation packages for your database librari
 
 ```bash
 # Core OpenTelemetry packages
+
 go get -u go.opentelemetry.io/otel
 go get -u go.opentelemetry.io/otel/sdk/trace
 go get -u go.opentelemetry.io/otel/exporters/stdout/stdouttrace

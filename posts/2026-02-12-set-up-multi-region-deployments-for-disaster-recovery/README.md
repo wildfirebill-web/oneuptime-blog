@@ -210,6 +210,7 @@ Automated failover is ideal, but you should also have a manual runbook for scena
 echo "Starting failover to DR region..."
 
 # Step 1: Promote Aurora read replica to primary
+
 aws rds failover-global-cluster \
   --global-cluster-identifier my-global-cluster \
   --target-db-cluster-identifier arn:aws:rds:eu-west-1:123456789:cluster:dr-cluster

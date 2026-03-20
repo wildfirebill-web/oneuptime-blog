@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, Kubernetes, Ingresses, NGINX, Monitoring, Metrics, Tracing
+Tags: OpenTelemetry, Kubernetes, Ingresses, Nginx, Monitoring, Metrics, Tracing
 
 Description: Learn how to monitor Kubernetes Ingress controller performance using OpenTelemetry for metrics collection, distributed tracing, and log analysis.
 
@@ -43,6 +43,7 @@ This collector configuration scrapes the NGINX Ingress Controller's Prometheus m
 
 ```yaml
 # otel-collector-config.yaml
+
 receivers:
   # Scrape Prometheus metrics from the NGINX Ingress Controller
   prometheus:

@@ -40,6 +40,7 @@ First, create a search service and populate an index. For this example, let us b
 
 ```bash
 # Create the Azure Cognitive Search service
+
 az search service create \
   --name search-products \
   --resource-group rg-teams-extension \

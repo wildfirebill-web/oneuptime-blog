@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rust, mio, Non-Blocking, IPv4, Networking, Event-Driven, epoll
+Tags: Rust, Mio, Non-Blocking, IPv4, Networking, Event-Driven, Epoll
 
 Description: Learn how to use the mio crate for non-blocking event-driven IPv4 networking in Rust, implementing an efficient single-threaded TCP echo server.
 
@@ -10,6 +10,7 @@ Description: Learn how to use the mio crate for non-blocking event-driven IPv4 n
 
 ```toml
 # Cargo.toml
+
 [dependencies]
 mio = { version = "1", features = ["net", "os-poll"] }
 ```
@@ -138,7 +139,7 @@ fn main() -> io::Result<()> {
 | `Token` | Identifies which source triggered an event |
 | `Interest::READABLE` | Watch for data available to read |
 | `Interest::WRITABLE` | Watch for buffer space available to write |
-| `WouldBlock` | Operation can't complete without blocking — try again |
+| `WouldBlock` | Operation can't complete without blocking - try again |
 | `register` | Add a source to the poll |
 | `reregister` | Change interest flags for a registered source |
 | `deregister` | Remove a source from the poll |

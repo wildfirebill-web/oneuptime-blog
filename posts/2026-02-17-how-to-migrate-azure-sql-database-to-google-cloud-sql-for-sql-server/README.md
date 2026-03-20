@@ -29,6 +29,7 @@ Document your database configuration and size.
 
 ```bash
 # Get Azure SQL server and database information
+
 az sql db list \
   --server my-sql-server \
   --resource-group my-rg \

@@ -95,6 +95,7 @@ Using Terraform:
 
 ```hcl
 # Okta SAML identity provider
+
 resource "aws_cognito_identity_provider" "okta" {
   user_pool_id  = aws_cognito_user_pool.main.id
   provider_name = "Okta"

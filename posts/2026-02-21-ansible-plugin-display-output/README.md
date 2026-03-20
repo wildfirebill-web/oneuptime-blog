@@ -16,6 +16,7 @@ The `Display` class lives in `ansible.utils.display`. Most plugin base classes p
 
 ```python
 # Two ways to access Display
+
 from ansible.utils.display import Display
 
 # Option 1: Create a module-level display instance

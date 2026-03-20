@@ -125,6 +125,7 @@ We will use PostgreSQL with pgvector for this guide. It is production-ready and 
 
 ```bash
 # For Docker
+
 docker run -d \
   --name pgvector-db \
   -e POSTGRES_PASSWORD=mysecretpassword \

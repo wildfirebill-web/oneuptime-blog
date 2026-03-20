@@ -16,6 +16,7 @@ Setting `connection: local` at the play level changes the connection method for 
 
 ```yaml
 # connection-local.yml - All tasks run locally
+
 ---
 - name: Manage cloud resources (all tasks run locally)
   hosts: localhost

@@ -197,6 +197,7 @@ from opentelemetry import metrics
 meter = metrics.get_meter("eprescribing-metrics", "1.0.0")
 
 # Time from prescriber signing to network acceptance
+
 submission_latency = meter.create_histogram(
     "eprescribing.submission_latency_ms",
     description="Time from prescription creation to network acceptance",

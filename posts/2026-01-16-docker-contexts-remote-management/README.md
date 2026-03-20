@@ -33,6 +33,7 @@ flowchart LR
 
 ```bash
 # List all contexts
+
 docker context ls
 
 # Example output:

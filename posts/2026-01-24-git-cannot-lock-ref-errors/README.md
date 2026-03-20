@@ -35,6 +35,7 @@ Here are the variations of this error you might encounter.
 
 ```bash
 # Branch reference lock error
+
 error: cannot lock ref 'refs/heads/main': Unable to create '/path/to/repo/.git/refs/heads/main.lock': File exists.
 
 # Remote tracking branch lock error

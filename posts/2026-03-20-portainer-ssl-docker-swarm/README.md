@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: portainer, ssl, tls, docker-swarm, security, certificates
+Tags: Portainer, SSL, TLS, Docker-swarm, Security, Certificates
 
 Description: A guide to configuring SSL/TLS certificates for Portainer deployed on Docker Swarm using Docker Secrets for certificate management.
 
 ## Overview
 
-When Portainer is deployed on Docker Swarm, certificate management takes advantage of Docker Secrets — an encrypted store for sensitive data. This approach is more secure than bind-mounting certificate files and integrates with Swarm's native secret management. This guide covers deploying Portainer on Swarm with proper SSL/TLS certificates.
+When Portainer is deployed on Docker Swarm, certificate management takes advantage of Docker Secrets - an encrypted store for sensitive data. This approach is more secure than bind-mounting certificate files and integrates with Swarm's native secret management. This guide covers deploying Portainer on Swarm with proper SSL/TLS certificates.
 
 ## Prerequisites
 
@@ -20,6 +20,7 @@ When Portainer is deployed on Docker Swarm, certificate management takes advanta
 
 ```bash
 # Generate certificates (same as standalone approach)
+
 mkdir -p /opt/portainer/certs
 
 openssl req -newkey rsa:2048 -nodes \

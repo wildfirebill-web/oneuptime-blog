@@ -34,6 +34,7 @@ TOKEN=$(curl -s -X POST \
   --insecure | python3 -c "import sys,json; print(json.load(sys.stdin)['jwt'])")
 
 # Get container ID by name
+
 CONTAINER_ID=$(curl -s "https://localhost:9443/api/endpoints/1/docker/containers/json?all=1" \
   -H "Authorization: Bearer $TOKEN" \
   --insecure | python3 -c "

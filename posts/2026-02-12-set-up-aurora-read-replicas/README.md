@@ -31,6 +31,7 @@ Adding a replica to an existing Aurora cluster is straightforward:
 
 ```bash
 # Add a read replica to an Aurora cluster
+
 aws rds create-db-instance \
   --db-instance-identifier myapp-aurora-reader-3 \
   --db-cluster-identifier myapp-aurora-cluster \

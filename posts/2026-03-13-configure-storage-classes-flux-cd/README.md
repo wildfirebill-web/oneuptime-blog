@@ -37,6 +37,7 @@ StorageClass Tiers:
 
 ```yaml
 # infrastructure/storage/storageclasses/aws-ebs-classes.yaml
+
 # AWS EKS: gp3 (general purpose SSD - default)
 apiVersion: storage.k8s.io/v1
 kind: StorageClass

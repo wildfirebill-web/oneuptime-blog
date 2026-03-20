@@ -36,6 +36,7 @@ Enable the required APIs with a single command:
 
 ```bash
 # Enable all required APIs for the backup automation pipeline
+
 gcloud services enable \
   cloudfunctions.googleapis.com \
   cloudscheduler.googleapis.com \

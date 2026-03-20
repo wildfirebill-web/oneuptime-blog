@@ -14,6 +14,7 @@ RHEL uses NetworkManager as the default network management daemon since RHEL 7. 
 
 ```bash
 # Show all connections and their IPv6 settings
+
 nmcli connection show
 
 # Show IPv6 details for a specific connection

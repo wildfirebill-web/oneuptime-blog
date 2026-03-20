@@ -18,6 +18,7 @@ Adding files to container images is one of the most common tasks in container bu
 
 ```bash
 # Ensure Buildah and Podman are installed
+
 buildah --version
 podman --version
 

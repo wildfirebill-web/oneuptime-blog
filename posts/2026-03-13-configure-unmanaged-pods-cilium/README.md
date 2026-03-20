@@ -29,6 +29,7 @@ Find pods that Cilium is not currently managing as endpoints.
 
 ```bash
 # List all pods and their Cilium endpoint status
+
 cilium endpoint list
 
 # Compare with all running pods to find any not in the endpoint list

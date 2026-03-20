@@ -56,6 +56,7 @@ telegraf/
 
 ```yaml
 # roles/telegraf/defaults/main.yml
+
 # InfluxData repository version
 telegraf_version: "latest"
 

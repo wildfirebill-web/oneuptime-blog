@@ -40,6 +40,7 @@ If you are creating a new cluster, enable Workload Identity at creation time. If
 
 ```bash
 # For a new cluster
+
 gcloud container clusters create my-cluster \
   --region us-central1 \
   --workload-pool YOUR_PROJECT_ID.svc.id.goog \

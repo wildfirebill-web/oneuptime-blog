@@ -28,6 +28,7 @@ To measure SDK overhead, compare resource usage with and without instrumentation
 
 ```python
 # Benchmark script that measures the CPU overhead of the OTel SDK
+
 # by timing a function with and without tracing enabled.
 import time
 from opentelemetry.sdk.trace import TracerProvider

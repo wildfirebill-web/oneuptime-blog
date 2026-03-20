@@ -12,7 +12,7 @@ Splitting a /48 into /64 subnets is the most common IPv6 subnetting task. Your I
 
 ## Understanding the Split
 
-```
+```yaml
 /48 prefix:  2001:db8:abcd::/48
              |<---48--->|<16>|<-------64------->|
              2001:0db8:abcd:SSSS:IIII:IIII:IIII:IIII
@@ -62,6 +62,7 @@ class IPv6SubnetPlanner:
         print(f"Last subnet:  {self.subnets[-1]}")
 
 # Example usage
+
 planner = IPv6SubnetPlanner("2001:db8:abcd::/48")
 planner.summary()
 
@@ -82,7 +83,7 @@ for s in branch_subnets:
 ### Option 1: Linear Decimal
 
 Simple sequential numbering:
-```
+```text
 :0001: → VLAN 1
 :0002: → VLAN 2
 :0003: → VLAN 3
@@ -93,7 +94,7 @@ Simple sequential numbering:
 
 ### Option 2: Hierarchical Hex (Site + VLAN)
 
-```
+```text
 Format: SSNN (2 hex digits site, 2 hex digits VLAN)
 
 :0100: → Site 01, Subnet 00 (management/infrastructure)
@@ -106,7 +107,7 @@ Format: SSNN (2 hex digits site, 2 hex digits VLAN)
 
 ### Option 3: Function-Based
 
-```
+```text
 :0000: → Core infrastructure / reserved
 :0001-00ff: → Servers / DMZ
 :0100-01ff: → Management
@@ -163,4 +164,4 @@ allocations:
 
 ## Conclusion
 
-Splitting a /48 into /64 subnets is straightforward: the 16-bit subnet field (bits 49-64) gives you 65,536 subnets to allocate. The critical design decision is your numbering scheme — hierarchical hex encoding (site + VLAN) scales best for multi-site organizations, while simple sequential numbering works for single-site deployments. Always document your allocation plan before configuring devices.
+Splitting a /48 into /64 subnets is straightforward: the 16-bit subnet field (bits 49-64) gives you 65,536 subnets to allocate. The critical design decision is your numbering scheme - hierarchical hex encoding (site + VLAN) scales best for multi-site organizations, while simple sequential numbering works for single-site deployments. Always document your allocation plan before configuring devices.

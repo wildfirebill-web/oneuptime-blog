@@ -24,6 +24,7 @@ fatal: [server1]: FAILED! => {
 
 ```yaml
 # WRONG: variable references itself
+
 vars:
   my_path: "{{ my_path }}/subdir"
 

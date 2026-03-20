@@ -80,6 +80,7 @@ Create `tests/unit_tests.tftest.hcl`:
 # tests/unit_tests.tftest.hcl
 
 # Variables for testing
+
 variables {
   vpc_name   = "test-vpc"
   cidr_block = "10.0.0.0/16"

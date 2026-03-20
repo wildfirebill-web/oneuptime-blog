@@ -54,6 +54,7 @@ Define notification channels and routing rules as Ansible variables. This makes 
 
 ```yaml
 # group_vars/all.yml
+
 alertmanager_version: "0.27.0"
 alertmanager_port: 9093
 alertmanager_resolve_timeout: 5m

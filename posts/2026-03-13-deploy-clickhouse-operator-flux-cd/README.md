@@ -25,6 +25,7 @@ The Altinity ClickHouse Operator is the most widely used operator for managing C
 
 ```yaml
 # infrastructure/sources/altinity-helm.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

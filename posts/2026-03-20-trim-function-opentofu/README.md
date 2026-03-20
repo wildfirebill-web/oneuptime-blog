@@ -1,8 +1,8 @@
-# How to Use the trim Function in OpenTofu
+# How to Use the trim Function in OpenTofu - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, trim, String Functions, HCL, Infrastructure as Code, DevOps
+Tags: OpenTofu, Trim, String Functions, HCL, Infrastructure as Code, DevOps
 
 Description: Learn how to use the trim function in OpenTofu to remove specified characters from the beginning and end of a string.
 
@@ -18,8 +18,8 @@ The `trim()` function removes specified characters from both the beginning and e
 trim(string, str_character_set)
 ```
 
-- `string` — the input string
-- `str_character_set` — a string containing the characters to remove (not a prefix/suffix, but a set of individual characters)
+- `string` - the input string
+- `str_character_set` - a string containing the characters to remove (not a prefix/suffix, but a set of individual characters)
 
 ---
 
@@ -52,7 +52,7 @@ variable "path_prefix" {
 }
 
 locals {
-  # Normalize path — remove leading and trailing slashes
+  # Normalize path - remove leading and trailing slashes
   clean_path = trim(var.path_prefix, "/")
   # "/api/v1/" → "api/v1"
 }

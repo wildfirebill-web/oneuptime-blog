@@ -28,7 +28,7 @@ module "example" {
 
 ## Project Structure Example
 
-```
+```text
 infrastructure/
 ├── environments/
 │   ├── dev/
@@ -73,6 +73,7 @@ provider "aws" {
 }
 
 # Reference modules with relative paths
+
 module "vpc" {
   source = "../../modules/vpc"
 
@@ -103,10 +104,10 @@ module "database" {
 
 ## Advantages of Local Modules
 
-1. **No versioning overhead** — changes take effect immediately
-2. **Easy debugging** — edit module code without publishing
-3. **Monorepo-friendly** — all code in one repository
-4. **Fast iteration** — no `tofu init` needed for source changes
+1. **No versioning overhead** - changes take effect immediately
+2. **Easy debugging** - edit module code without publishing
+3. **Monorepo-friendly** - all code in one repository
+4. **Fast iteration** - no `tofu init` needed for source changes
 
 ## Limitations
 

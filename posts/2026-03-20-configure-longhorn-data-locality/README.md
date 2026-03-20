@@ -26,6 +26,7 @@ Longhorn supports three data locality settings:
 
 ```bash
 # Set global default data locality to best-effort
+
 kubectl patch settings.longhorn.io default-data-locality \
   -n longhorn-system \
   --type merge \

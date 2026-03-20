@@ -29,6 +29,7 @@ If your team already knows SQL and uses PostgreSQL, TimescaleDB is often the low
 
 ```bash
 # Add PostgreSQL repository for the latest version
+
 sudo apt install -y gnupg2 curl
 
 curl -fsSL https://www.postgresql.org/media/keys/ACCC4CF8.asc | \

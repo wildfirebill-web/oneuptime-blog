@@ -24,6 +24,7 @@ The "execute" bit on a directory means the ability to enter it and access its co
 
 ```bash
 # See permissions for all home directories
+
 ls -la /home/
 
 # Check a specific user's home directory in detail

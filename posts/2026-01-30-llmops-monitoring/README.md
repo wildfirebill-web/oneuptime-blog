@@ -103,6 +103,7 @@ Langfuse is an open-source LLM observability platform that provides tracing, pro
 
 ```bash
 # Install the Langfuse SDK with OpenAI integration
+
 # This provides automatic instrumentation for OpenAI calls
 pip install langfuse openai
 ```

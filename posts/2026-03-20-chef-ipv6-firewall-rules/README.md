@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Chef, IPv6, Firewall, ip6tables, Automation, Security
+Tags: Chef, IPv6, Firewall, Ip6tables, Automation, Security
 
 Description: A guide to automating IPv6 firewall rule management with Chef using the firewall cookbook and custom resources for consistent ip6tables deployment.
 
@@ -12,6 +12,7 @@ Chef provides the `firewall` community cookbook for managing ip6tables rules dec
 
 ```ruby
 # Berksfile
+
 source 'https://supermarket.chef.io'
 cookbook 'firewall', '~> 2.7'
 ```

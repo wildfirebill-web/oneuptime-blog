@@ -26,6 +26,7 @@ talosctl is the command-line tool for interacting with the Talos API. It is the 
 
 ```bash
 # Basic node operations
+
 talosctl -n 10.0.0.11 version          # Check OS version
 talosctl -n 10.0.0.11 services         # List system services
 talosctl -n 10.0.0.11 service kubelet  # Check specific service status
@@ -126,7 +127,7 @@ talosctl -n 10.0.0.11 bootstrap
 talosctl -n 10.0.0.11 upgrade --image ghcr.io/siderolabs/installer:v1.7.0
 ```
 
-### Resource Management
+Resource Management
 
 Talos exposes its internal state through a resource model similar to Kubernetes. You can query resources to understand the current state of the system.
 

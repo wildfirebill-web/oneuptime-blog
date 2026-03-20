@@ -68,6 +68,7 @@ The most common issue. Your root module and a child module specify incompatible 
 
 ```hcl
 # Root module
+
 terraform {
   required_providers {
     aws = {

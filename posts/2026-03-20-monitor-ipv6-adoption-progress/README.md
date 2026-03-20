@@ -22,6 +22,7 @@ Tracking IPv6 adoption progress helps organizations measure the effectiveness of
 
 ```promql
 # Percentage of monitored hosts with IPv6 addresses
+
 (
   count(node_netstat_Ip6_InReceives > 0)
   /

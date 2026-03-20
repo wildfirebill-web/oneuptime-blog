@@ -24,6 +24,7 @@ First, configure your API server to act as an OIDC issuer. This is typically don
 
 ```yaml
 # kube-apiserver configuration
+
 apiVersion: v1
 kind: Pod
 metadata:

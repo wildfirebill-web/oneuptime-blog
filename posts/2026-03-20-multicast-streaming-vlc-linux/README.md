@@ -14,6 +14,7 @@ VLC Media Player supports multicast streaming using RTP/UDP over IPv4 multicast 
 
 ```bash
 # Stream a file as multicast UDP:
+
 vlc /path/to/video.mp4 \
   --sout '#rtp{dst=239.255.0.1,port=5004,mux=ts}' \
   --sout-rtp-ttl 16 \
@@ -191,4 +192,4 @@ ffplay "udp://@239.255.0.1:5004"
 
 ## Conclusion
 
-VLC multicast streaming uses `--sout '#rtp{dst=<group>,port=<port>}'` for sending and `vlc udp://@<group>:<port>` for receiving. Set TTL to `16` or higher for cross-router streaming — the default TTL of 1 restricts multicast to the local subnet. For production streaming, use MPEG-TS mux (`mux=ts`) which is designed for lossy networks. Troubleshoot reception issues by capturing with `tcpdump 'dst 239.x.x.x and udp port <port>'` and verifying the receiver joined the group with `ip maddr show`. For jitter and buffering issues, increase `--network-caching` on the receiver.
+VLC multicast streaming uses `--sout '#rtp{dst=<group>,port=<port>}'` for sending and `vlc udp://@<group>:<port>` for receiving. Set TTL to `16` or higher for cross-router streaming - the default TTL of 1 restricts multicast to the local subnet. For production streaming, use MPEG-TS mux (`mux=ts`) which is designed for lossy networks. Troubleshoot reception issues by capturing with `tcpdump 'dst 239.x.x.x and udp port <port>'` and verifying the receiver joined the group with `ip maddr show`. For jitter and buffering issues, increase `--network-caching` on the receiver.

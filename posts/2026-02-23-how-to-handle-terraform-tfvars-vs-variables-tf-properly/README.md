@@ -20,6 +20,7 @@ This post explains exactly what each file does, when to use each one, and how to
 
 ```hcl
 # variables.tf - the definition
+
 variable "environment" {
   description = "Deployment environment"
   type        = string

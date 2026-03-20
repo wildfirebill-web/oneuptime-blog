@@ -1,8 +1,8 @@
-# How to Configure Longhorn Backing Image
+# How to Configure Longhorn Backing Image - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Longhorn, Backing Image, Kubernetes, VM Images, Storage, Template Volumes, SUSE Rancher
+Tags: Longhorn, Backing Image, Kubernetes, VM Image, Storage, Template Volumes, SUSE Rancher
 
 Description: Learn how to configure Longhorn backing images to pre-populate volumes with base images such as OS images for virtual machines or base data for stateful applications.
 
@@ -14,7 +14,7 @@ Longhorn backing images allow you to create volumes pre-populated with a base im
 
 ## What Is a Backing Image?
 
-A Longhorn backing image is an immutable base image stored as a set of replicas in the cluster. When a volume is created with a backing image, it uses copy-on-write semantics — the base image is shared, and only changes are stored per-volume.
+A Longhorn backing image is an immutable base image stored as a set of replicas in the cluster. When a volume is created with a backing image, it uses copy-on-write semantics - the base image is shared, and only changes are stored per-volume.
 
 ---
 
@@ -22,6 +22,7 @@ A Longhorn backing image is an immutable base image stored as a set of replicas 
 
 ```yaml
 # backing-image-ubuntu.yaml
+
 apiVersion: longhorn.io/v1beta2
 kind: BackingImage
 metadata:
@@ -125,5 +126,5 @@ Harvester (Rancher's HCI platform) uses Longhorn backing images for VM disk temp
 
 - Set `minNumberOfCopies: 2` for production backing images to ensure availability during node failures.
 - Use checksums to verify backing image integrity after download.
-- Reuse backing images across multiple volumes to reduce storage consumption — the base data is shared via copy-on-write.
+- Reuse backing images across multiple volumes to reduce storage consumption - the base data is shared via copy-on-write.
 - Regularly clean up unused backing images to free storage capacity.

@@ -26,6 +26,7 @@ First, tag your Auto Scaling Groups with the required tags.
 
 ```bash
 # Tag ASG for Cluster Autoscaler discovery
+
 aws autoscaling create-or-update-tags \
   --tags \
   "ResourceId=my-node-group,ResourceType=auto-scaling-group,Key=k8s.io/cluster-autoscaler/enabled,Value=true,PropagateAtLaunch=true" \

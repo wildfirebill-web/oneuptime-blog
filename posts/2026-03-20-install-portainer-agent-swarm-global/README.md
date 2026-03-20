@@ -8,12 +8,13 @@ Description: Deploy the Portainer Agent as a global Docker Swarm service to auto
 
 ---
 
-In Docker Swarm, deploying the agent as a global service ensures it runs on every node — including nodes added in the future. This is the standard deployment pattern for Swarm environments.
+In Docker Swarm, deploying the agent as a global service ensures it runs on every node - including nodes added in the future. This is the standard deployment pattern for Swarm environments.
 
 ## Deploy Agent as Global Service
 
 ```bash
 # Deploy Portainer Agent as a global service (runs on ALL nodes)
+
 docker service create \
   --name portainer_agent \
   --network portainer_agent_network \

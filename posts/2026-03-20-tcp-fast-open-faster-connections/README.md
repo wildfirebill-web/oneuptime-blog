@@ -8,11 +8,11 @@ Description: Enable TCP Fast Open to reduce connection establishment latency by 
 
 ## Introduction
 
-TCP Fast Open (TFO) allows application data to be sent in the initial SYN packet, eliminating the extra round-trip that normally occurs before data can flow. For short-lived connections (like HTTP requests), this can reduce latency by an entire RTT — significant for global services where round-trip times are 50-200ms.
+TCP Fast Open (TFO) allows application data to be sent in the initial SYN packet, eliminating the extra round-trip that normally occurs before data can flow. For short-lived connections (like HTTP requests), this can reduce latency by an entire RTT - significant for global services where round-trip times are 50-200ms.
 
 ## How TCP Fast Open Works
 
-```
+```text
 Normal TCP:
 Client → SYN                    (RTT 1: handshake)
 Server → SYN-ACK
@@ -31,6 +31,7 @@ The TFO cookie is issued by the server on the first connection and cached by the
 
 ```bash
 # Check current TFO setting (default: 1 = client only)
+
 sysctl net.ipv4.tcp_fastopen
 
 # Values:
@@ -126,4 +127,4 @@ tcpdump -i eth0 -n -v 'tcp[tcpflags] & tcp-syn != 0 and tcp port 80'
 
 ## Conclusion
 
-TCP Fast Open provides meaningful latency reduction for repeat connections — typically saving one full RTT per connection. Enable it on servers (value 3) in all environments. The main limitation is that TFO data is not idempotent by default (could be replayed), so it's best for safe GET requests and similar read-only operations. Most modern browsers and HTTP clients support TFO transparently.
+TCP Fast Open provides meaningful latency reduction for repeat connections - typically saving one full RTT per connection. Enable it on servers (value 3) in all environments. The main limitation is that TFO data is not idempotent by default (could be replayed), so it's best for safe GET requests and similar read-only operations. Most modern browsers and HTTP clients support TFO transparently.

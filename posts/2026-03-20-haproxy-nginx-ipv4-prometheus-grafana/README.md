@@ -14,7 +14,7 @@ Monitoring your load balancers is critical for understanding traffic patterns, d
 
 ## Architecture
 
-```
+```text
 HAProxy / Nginx → Prometheus Exporter → Prometheus → Grafana
                   (metrics endpoint)      (scrape)    (dashboards)
 ```
@@ -27,6 +27,7 @@ HAProxy / Nginx → Prometheus Exporter → Prometheus → Grafana
 
 ```ini
 # /etc/haproxy/haproxy.cfg
+
 global
     log /dev/log local0
     stats socket /run/haproxy/admin.sock mode 660 level admin
@@ -252,8 +253,8 @@ groups:
 
 ## Best Practices
 
-1. **Monitor both frontends and backends** in HAProxy — separate metrics for each
-2. **Alert on backend health** not just request rates — a server going DOWN matters more
+1. **Monitor both frontends and backends** in HAProxy - separate metrics for each
+2. **Alert on backend health** not just request rates - a server going DOWN matters more
 3. **Use recording rules** for expensive queries to improve dashboard performance
 4. **Set retention** on Prometheus to match your storage budget
 5. **Use Grafana alerting** or Alertmanager for on-call notifications
@@ -266,4 +267,4 @@ Prometheus + Grafana provides rich observability for HAProxy and Nginx. Enable t
 
 ---
 
-*Complement your metrics monitoring with [OneUptime](https://oneuptime.com) — uptime monitoring and incident management.*
+*Complement your metrics monitoring with [OneUptime](https://oneuptime.com) - uptime monitoring and incident management.*

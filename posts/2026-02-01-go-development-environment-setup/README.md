@@ -20,6 +20,7 @@ The easiest way to install Go on macOS is through Homebrew:
 
 ```bash
 # Install Go using Homebrew
+
 brew install go
 
 # Verify the installation

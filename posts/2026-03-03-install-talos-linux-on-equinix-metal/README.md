@@ -14,6 +14,7 @@ Equinix Metal (formerly Packet) provides bare metal servers on demand, which mak
 
 ```bash
 # Install talosctl
+
 curl -sL https://talos.dev/install | sh
 
 # Install the Metal CLI

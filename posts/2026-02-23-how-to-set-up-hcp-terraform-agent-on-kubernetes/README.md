@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, HCP Terraform, Terraform Cloud, Kubernetes, Agents, Helm, DevOps
+Tags: Terraform, HCP Terraform, Terraform Cloud, Kubernetes, Agent, Helm, DevOps
 
 Description: Step-by-step guide to deploying HCP Terraform agents on Kubernetes for scalable, resilient Terraform execution in private environments.
 
@@ -36,6 +36,7 @@ There are several reasons Kubernetes is a good fit for running Terraform agents:
 
 ```yaml
 # namespace.yaml - Dedicated namespace for agents
+
 apiVersion: v1
 kind: Namespace
 metadata:

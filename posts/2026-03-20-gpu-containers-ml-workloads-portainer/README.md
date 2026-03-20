@@ -1,4 +1,4 @@
-# How to Set Up GPU Containers for ML Workloads in Portainer
+# How to Set Up GPU Containers for ML Workloads in Portainer - Workloads
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -20,6 +20,7 @@ Running ML training and inference workloads in containers with GPU access requir
 
 ```bash
 # Add NVIDIA Container Toolkit repository
+
 curl -fsSL https://nvidia.github.io/libnvidia-container/gpgkey | \
   sudo gpg --dearmor -o /usr/share/keyrings/nvidia-container-toolkit-keyring.gpg
 
@@ -103,7 +104,7 @@ services:
 A sample training script using the GPU:
 
 ```python
-# train.py — runs inside the container
+# train.py - runs inside the container
 import torch
 import torch.nn as nn
 
@@ -112,7 +113,7 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print(f"Training on: {device}")
 print(f"GPU: {torch.cuda.get_device_name(0) if torch.cuda.is_available() else 'N/A'}")
 
-# Simple model — move to GPU
+# Simple model - move to GPU
 model = nn.Sequential(
     nn.Linear(784, 256),
     nn.ReLU(),

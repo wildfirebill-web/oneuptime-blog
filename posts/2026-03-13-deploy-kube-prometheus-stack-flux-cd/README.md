@@ -29,6 +29,7 @@ Store the Slack webhook URL in an encrypted Secret.
 
 ```yaml
 # clusters/my-cluster/monitoring/alertmanager-secret.yaml
+
 apiVersion: v1
 kind: Secret
 metadata:

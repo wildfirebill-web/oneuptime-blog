@@ -16,6 +16,7 @@ The mail callback is a notification callback that works alongside your normal ou
 
 ```ini
 # ansible.cfg - Enable the mail callback
+
 [defaults]
 callback_whitelist = mail
 

@@ -252,6 +252,7 @@ With Istio, you get visibility into your object storage traffic:
 
 ```promql
 # Request rate to S3
+
 sum(rate(istio_requests_total{destination_service_name=~".*s3.*"}[5m]))
 
 # Bytes sent to S3 (upload volume)

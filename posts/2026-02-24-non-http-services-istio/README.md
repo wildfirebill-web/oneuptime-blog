@@ -54,6 +54,7 @@ For well-known protocols, Istio has dedicated prefixes:
 
 ```yaml
 # MySQL
+
 - name: mysql
   port: 3306
   targetPort: 3306

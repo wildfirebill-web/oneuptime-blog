@@ -40,6 +40,7 @@ The first line of defense is the application itself. When you instrument a healt
 
 ```python
 # patient_service.py
+
 # Instrument a healthcare API endpoint with PHI-safe span attributes
 
 from opentelemetry import trace

@@ -184,6 +184,7 @@ def convert_database_to_utf8mb4(host, user, password, database):
     connection.close()
 
 # Usage
+
 convert_database_to_utf8mb4(
     host='localhost',
     user='root',

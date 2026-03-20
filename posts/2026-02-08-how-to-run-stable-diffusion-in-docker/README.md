@@ -20,6 +20,7 @@ Verify your GPU setup:
 
 ```bash
 # Check that the NVIDIA driver is installed
+
 nvidia-smi
 
 # Check Docker can see the GPU

@@ -48,6 +48,7 @@ flowchart TD
 # Demonstration of default global scope in Bash
 
 # Global variable
+
 counter=0
 
 increment() {

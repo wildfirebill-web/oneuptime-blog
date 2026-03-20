@@ -68,6 +68,7 @@ Monitor debounce behavior:
 
 ```promql
 # Push events that were debounced
+
 rate(pilot_debounce_send[5m])
 
 # How often the max debounce time was hit

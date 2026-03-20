@@ -27,6 +27,7 @@ This guide deploys Elasticsearch using the Elastic Helm chart and Jaeger using t
 
 ```yaml
 # clusters/my-cluster/jaeger/elastic-helmrepository.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

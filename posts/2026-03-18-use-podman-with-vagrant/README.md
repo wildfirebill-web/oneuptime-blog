@@ -20,6 +20,7 @@ First, install Vagrant and the Docker provider (which works with Podman):
 
 ```bash
 # Install Vagrant
+
 sudo dnf install vagrant  # Fedora/RHEL
 # or
 sudo apt-get install vagrant  # Ubuntu/Debian

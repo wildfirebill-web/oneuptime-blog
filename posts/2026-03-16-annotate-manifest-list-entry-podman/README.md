@@ -18,6 +18,7 @@ The `podman manifest annotate` command lets you modify the metadata of individua
 
 ```bash
 # General syntax
+
 podman manifest annotate <manifest-list> <digest> [options]
 ```
 

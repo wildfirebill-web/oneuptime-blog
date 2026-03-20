@@ -22,6 +22,7 @@ Here is the simplest way to see the difference:
 
 ```yaml
 # command_vs_shell_basic.yml - Demonstrate the core difference
+
 ---
 - name: Show difference between command and shell
   hosts: localhost

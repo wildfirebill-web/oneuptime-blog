@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, libvirt, KVM, Virtual Networks, DHCPv6, Linux
+Tags: IPv6, Libvirt, KVM, Virtual Network, DHCPv6, Linux
 
 Description: Configure libvirt virtual networks with IPv6 subnets, DHCPv6 for guest address assignment, isolated IPv6 networks, and router advertisement configuration for VMs managed by libvirt.
 
@@ -13,7 +13,7 @@ libvirt manages virtual networks for KVM/QEMU VMs through its network configurat
 ## Create a libvirt Network with IPv6
 
 ```xml
-<!-- /tmp/net-ipv6-dual.xml — Dual-stack network with DHCPv4 and DHCPv6 -->
+<!-- /tmp/net-ipv6-dual.xml - Dual-stack network with DHCPv4 and DHCPv6 -->
 <network>
   <name>dual-stack</name>
   <forward mode='nat'>
@@ -42,6 +42,7 @@ libvirt manages virtual networks for KVM/QEMU VMs through its network configurat
 
 ```bash
 # Define, start, and autostart the network
+
 virsh net-define /tmp/net-ipv6-dual.xml
 virsh net-start dual-stack
 virsh net-autostart dual-stack
@@ -182,4 +183,4 @@ journalctl -u libvirtd -n 100 | grep -i ipv6
 
 ## Conclusion
 
-libvirt networks support IPv6 via the `<ip family='ipv6'>` element in network XML, supporting DHCPv6 ranges, static host reservations by DUID/ID, and SLAAC via built-in radvd. Three forwarding modes work with IPv6: isolated (no forward element), routed (`mode='route'`), and NAT (`mode='nat'`). The `virsh net-dhcp-leases` command shows both IPv4 and IPv6 leases. VMs connect to IPv6 networks by being attached to a libvirt network with IPv6 configuration — the guest OS receives the IPv6 prefix via SLAAC or DHCPv6 from libvirt's built-in radvd and dnsmasq processes.
+libvirt networks support IPv6 via the `<ip family='ipv6'>` element in network XML, supporting DHCPv6 ranges, static host reservations by DUID/ID, and SLAAC via built-in radvd. Three forwarding modes work with IPv6: isolated (no forward element), routed (`mode='route'`), and NAT (`mode='nat'`). The `virsh net-dhcp-leases` command shows both IPv4 and IPv6 leases. VMs connect to IPv6 networks by being attached to a libvirt network with IPv6 configuration - the guest OS receives the IPv6 prefix via SLAAC or DHCPv6 from libvirt's built-in radvd and dnsmasq processes.

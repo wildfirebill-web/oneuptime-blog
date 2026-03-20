@@ -24,6 +24,7 @@ Dataplane V2 must be enabled at cluster creation. It cannot be enabled on existi
 
 ```bash
 # Create new cluster with Dataplane V2
+
 gcloud container clusters create production-cluster \
   --enable-dataplane-v2 \
   --region us-central1 \

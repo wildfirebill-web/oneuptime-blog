@@ -24,6 +24,7 @@ Start by installing the Notation CLI on your system. Download the latest release
 
 ```bash
 # Download Notation for Linux
+
 curl -LO https://github.com/notaryproject/notation/releases/download/v1.0.0/notation_1.0.0_linux_amd64.tar.gz
 
 # Extract and install

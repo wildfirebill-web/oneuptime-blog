@@ -16,6 +16,7 @@ HTTP/2 requires TLS. Ensure your server has a valid certificate:
 
 ```bash
 # Verify TLS is working on IPv6
+
 openssl s_client -connect '[2001:db8::1]':443 -servername yourdomain.com < /dev/null
 ```
 

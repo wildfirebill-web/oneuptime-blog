@@ -21,6 +21,7 @@ Go is a popular choice for writing Kubewarden policies, especially for teams alr
 
 ```bash
 # Install TinyGo
+
 # macOS
 brew tap tinygo-org/tools
 brew install tinygo
@@ -53,7 +54,7 @@ go get github.com/kubewarden/policy-sdk-go
 
 ## Project Structure
 
-```
+```text
 my-go-policy/
 ├── go.mod
 ├── go.sum

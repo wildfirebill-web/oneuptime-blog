@@ -61,6 +61,7 @@ The foundation of multi-tenancy is tracking which tenant is making each request.
 
 ```python
 # tenant_context.py
+
 # Core tenant context management for multi-tenant API
 from fastapi import FastAPI, Request, HTTPException, Depends
 from contextvars import ContextVar

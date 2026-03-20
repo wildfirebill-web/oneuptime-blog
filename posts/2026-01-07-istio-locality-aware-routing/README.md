@@ -63,6 +63,7 @@ The following command displays the locality labels on your Kubernetes nodes, whi
 
 ```bash
 # View locality labels on your nodes
+
 kubectl get nodes --show-labels | grep -E "topology.kubernetes.io"
 
 # Example output:

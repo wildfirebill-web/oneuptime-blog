@@ -1,8 +1,8 @@
-# How to Deploy RabbitMQ via Portainer
+# How to Deploy RabbitMQ via Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, RabbitMQ, Message Queue, AMQP, Self-Hosted
+Tags: Portainer, Docker, RabbitMQ, Message Queues, AMQP, Self-Hosted
 
 Description: Deploy RabbitMQ via Portainer with the management plugin enabled for a feature-rich message broker with web-based administration.
 
@@ -56,6 +56,7 @@ Create `rabbitmq.conf`:
 # rabbitmq.conf
 
 # Default virtual host
+
 default_vhost = /
 
 # Heartbeat timeout in seconds

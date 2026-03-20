@@ -297,6 +297,7 @@ This script builds, tags, and pushes an image with both a version tag and a git 
 ```bash
 #!/bin/bash
 # ci-build.sh
+
 # Builds, tags, and pushes Docker image for CI/CD
 
 REGISTRY="registry.example.com/myteam"

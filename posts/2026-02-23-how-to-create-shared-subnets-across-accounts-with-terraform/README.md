@@ -26,6 +26,7 @@ First, enable sharing within your AWS Organization:
 
 ```hcl
 # In the management account, enable RAM sharing
+
 resource "aws_ram_sharing_with_aws_organization" "enable" {
   # This enables RAM sharing across all accounts in the organization
 }

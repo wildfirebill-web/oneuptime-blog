@@ -1,8 +1,8 @@
-# How to Deploy Elasticsearch on Rancher
+# How to Deploy Elasticsearch on Rancher - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Kubernetes, Elasticsearch, Search, Databases
+Tags: Rancher, Kubernetes, Elasticsearch, Search, Database
 
 Description: Deploy Elasticsearch on Rancher-managed Kubernetes clusters using the ECK operator or Helm chart for full-text search and log analytics workloads.
 
@@ -21,6 +21,7 @@ Elasticsearch is a distributed search and analytics engine built on Apache Lucen
 
 ```bash
 # Install ECK operator via Helm
+
 helm repo add elastic https://helm.elastic.co
 helm repo update
 

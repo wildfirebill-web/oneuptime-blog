@@ -24,6 +24,7 @@ Terraform includes a built-in Chef provisioner that bootstraps nodes with the Ch
 
 ```hcl
 # providers.tf
+
 terraform {
   required_version = ">= 1.0"
 

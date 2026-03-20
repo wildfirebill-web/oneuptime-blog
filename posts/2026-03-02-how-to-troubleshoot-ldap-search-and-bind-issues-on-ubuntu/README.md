@@ -25,6 +25,7 @@ Before assuming LDAP configuration is the issue, verify basic network connectivi
 
 ```bash
 # Test TCP connectivity to LDAP port
+
 nc -zv ldap.example.com 389
 
 # Test LDAPS port

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: portainer, database, maintenance, boltdb, performance
+Tags: Portainer, Database, Maintenance, BoltDB, Performance
 
 Description: A guide to compacting the Portainer BoltDB database to reclaim disk space and improve performance.
 
@@ -27,6 +27,7 @@ BoltDB uses a B-tree structure that does not automatically reclaim pages after d
 
 ```bash
 # Check current database size
+
 docker run --rm \
   -v portainer_data:/data \
   alpine \
@@ -65,7 +66,7 @@ docker run --rm \
 ```
 
 Expected output:
-```
+```text
 2026/03/20 10:00:00 Starting Portainer 2.19.0
 2026/03/20 10:00:01 Compacting database...
 2026/03/20 10:00:03 Database compacted successfully. Old size: 45MB, New size: 12MB

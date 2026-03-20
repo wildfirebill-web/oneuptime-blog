@@ -12,7 +12,7 @@ SDP (RFC 4566) describes multimedia sessions. For IPv6, the connection line (`c=
 
 ## SDP IPv6 Connection Line Syntax
 
-```
+```text
 SDP Field Reference:
 v=0                      (version)
 o=<user> <sess-id> <sess-version> IN IP6 <address>
@@ -39,7 +39,7 @@ a=rtpmap:32 MPV/90000
 
 ## IPv4-IPv6 Interworking in SDP
 
-```
+```text
 When bridging IPv4 and IPv6 calls, the media server generates
 separate SDP offers for each side:
 
@@ -58,6 +58,7 @@ The media server translates between IPv4 and IPv6 RTP streams.
 
 ```ini
 # /etc/asterisk/pjsip.conf
+
 # Configure SDP to include IPv6 address
 
 [transport-udp-ipv6]
@@ -177,7 +178,7 @@ print(sdp)
 
 ## WebRTC SDP with IPv6 Candidates
 
-```
+```text
 WebRTC SDP includes ICE candidates which DO show IPv6 addresses:
 
 a=candidate:1 1 udp 2113937151 2001:db8::client 50000 typ host

@@ -22,6 +22,7 @@ Technical debt in Terraform takes specific forms. Learn to recognize them.
 
 ```hcl
 # Technical debt: Provider version is years behind
+
 terraform {
   required_providers {
     aws = {

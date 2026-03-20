@@ -20,6 +20,7 @@ A typical Helm test pod looks like this inside a chart:
 
 ```yaml
 # templates/tests/test-connection.yaml (inside a Helm chart)
+
 apiVersion: v1
 kind: Pod
 metadata:

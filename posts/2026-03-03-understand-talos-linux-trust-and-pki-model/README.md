@@ -41,6 +41,7 @@ Cluster CA (Root of Trust)
 
 ```bash
 # Generate a cluster configuration (which creates the CA)
+
 talosctl gen config my-cluster https://10.0.0.10:6443
 
 # This creates secrets that include:

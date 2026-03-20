@@ -30,6 +30,7 @@ Ensure your EKS cluster has an OIDC provider configured:
 
 ```bash
 # Check if OIDC provider is configured
+
 aws eks describe-cluster --name my-cluster \
   --query "cluster.identity.oidc.issuer" --output text
 

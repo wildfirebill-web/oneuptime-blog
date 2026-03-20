@@ -20,6 +20,7 @@ Use the `--user` or `-u` flag to specify the user:
 
 ```bash
 # Run as user with UID 1000
+
 podman run -it --rm --user 1000 alpine id
 # Output: uid=1000 gid=0(root)
 

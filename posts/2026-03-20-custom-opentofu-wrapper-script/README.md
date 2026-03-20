@@ -15,6 +15,7 @@ A wrapper script around the `tofu` CLI enforces team conventions, adds safety ch
 ```bash
 #!/usr/bin/env bash
 # bin/tofu-wrapper.sh
+
 # Usage: ./bin/tofu-wrapper.sh <command> [options]
 set -euo pipefail
 

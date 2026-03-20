@@ -30,6 +30,7 @@ Store the GitHub token in a Kubernetes secret.
 
 ```bash
 # Create a secret containing the GitHub token
+
 kubectl create secret generic github-dispatch-token \
   --namespace=flux-system \
   --from-literal=token=ghp_YOUR_GITHUB_PERSONAL_ACCESS_TOKEN

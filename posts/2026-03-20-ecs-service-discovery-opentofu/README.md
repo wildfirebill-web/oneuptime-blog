@@ -34,6 +34,7 @@ resource "aws_service_discovery_private_dns_namespace" "main" {
 
 ```hcl
 # Service discovery entry for the API service
+
 resource "aws_service_discovery_service" "api" {
   name = "api"  # Results in DNS: api.myapp.local
 

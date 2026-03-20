@@ -14,6 +14,7 @@ fapolicyd (File Access Policy Daemon) is a user-space application whitelisting f
 
 ```bash
 # Install fapolicyd package
+
 sudo dnf install fapolicyd -y
 
 # Verify the installation

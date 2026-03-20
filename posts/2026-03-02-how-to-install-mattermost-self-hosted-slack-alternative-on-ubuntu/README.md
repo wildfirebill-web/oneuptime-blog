@@ -24,6 +24,7 @@ Mattermost is an open-source team messaging platform compatible with Slack's int
 sudo apt update && sudo apt upgrade -y
 
 # Install PostgreSQL
+
 sudo apt install -y postgresql postgresql-contrib
 
 sudo systemctl enable --now postgresql

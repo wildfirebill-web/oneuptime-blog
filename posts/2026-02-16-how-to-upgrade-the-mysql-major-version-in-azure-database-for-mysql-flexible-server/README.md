@@ -110,6 +110,7 @@ Use point-in-time restore or a read replica to create a test copy:
 
 ```bash
 # Restore your production server to a test instance
+
 az mysql flexible-server restore \
   --resource-group myResourceGroup \
   --name my-mysql-upgrade-test \

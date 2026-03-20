@@ -29,6 +29,7 @@ Core networking mode configuration:
 
 ```bash
 # Option 1: VXLAN tunnel mode (default, most compatible)
+
 helm upgrade cilium cilium/cilium \
   --namespace kube-system \
   --reuse-values \

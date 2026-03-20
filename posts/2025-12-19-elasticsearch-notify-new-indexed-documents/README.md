@@ -164,6 +164,7 @@ curl -X PUT "https://localhost:9200/_watcher/watch/new_order_slack_alert" \
 
 ```bash
 # Get watcher stats
+
 curl -X GET "https://localhost:9200/_watcher/stats" \
   -u elastic:password
 

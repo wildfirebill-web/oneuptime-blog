@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Providers, Network Mirror, Air-Gapped, Infrastructure as Code
+Tags: OpenTofu, Provider, Network Mirror, Air-Gapped, Infrastructure as Code
 
 Description: Learn how to set up and use the OpenTofu provider network mirror protocol to cache providers locally, enable air-gapped deployments, and speed up CI/CD pipelines.
 
@@ -12,8 +12,8 @@ The OpenTofu provider network mirror protocol allows you to serve provider plugi
 
 - **Air-gapped environments** with no internet access
 - **Faster CI/CD** by avoiding repeated downloads
-- **Consistency** — ensuring all environments use the same provider binaries
-- **Corporate policy compliance** — controlling which providers are used
+- **Consistency** - ensuring all environments use the same provider binaries
+- **Corporate policy compliance** - controlling which providers are used
 
 ## Mirror Types
 
@@ -28,7 +28,7 @@ OpenTofu supports two mirror types:
 
 Create a directory structure following the OpenTofu mirror format:
 
-```
+```text
 /opt/tofu-mirror/
 └── registry.opentofu.org/
     └── hashicorp/
@@ -42,6 +42,7 @@ Download providers using `tofu providers mirror`:
 
 ```bash
 # Create the mirror directory
+
 mkdir -p /opt/tofu-mirror
 
 # Download providers to the mirror
@@ -86,7 +87,7 @@ provider_installation {
 
 The network mirror protocol is an HTTP API that serves provider metadata and binaries. You can implement it with any HTTP server. The required endpoints are:
 
-```
+```text
 GET /<hostname>/<namespace>/<type>/index.json
 GET /<hostname>/<namespace>/<type>/<version>.json
 GET /<download-url>
@@ -171,7 +172,7 @@ In a CI/CD pipeline with a pre-populated mirror:
 
 After `tofu init`, verify providers are coming from the mirror:
 
-```
+```text
 Initializing provider plugins...
 - Finding hashicorp/aws versions matching "~> 5.0"...
 - Installing hashicorp/aws v5.40.0...
@@ -184,7 +185,7 @@ The `(filesystem mirror)` annotation confirms the mirror is being used.
 
 1. **Automate mirror syncing** via a scheduled job to keep it current
 2. **Include SHA256 checksums** in the mirror to maintain integrity verification
-3. **Version-lock the mirror** — only include provider versions you have approved
+3. **Version-lock the mirror** - only include provider versions you have approved
 4. **Use a network mirror** for shared CI/CD infrastructure to avoid disk space issues per runner
 5. **Document your mirror configuration** so team members can set it up consistently
 

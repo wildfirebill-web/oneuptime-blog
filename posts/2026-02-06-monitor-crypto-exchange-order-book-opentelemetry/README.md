@@ -28,6 +28,7 @@ from opentelemetry.sdk.metrics.export import PeriodicExportingMetricReader
 from opentelemetry.exporter.otlp.proto.grpc.metric_exporter import OTLPMetricExporter
 
 # Configure the meter provider with a 1-second export interval
+
 # Crypto markets move fast, so we want near-real-time metrics
 reader = PeriodicExportingMetricReader(
     OTLPMetricExporter(endpoint="http://otel-collector:4317"),

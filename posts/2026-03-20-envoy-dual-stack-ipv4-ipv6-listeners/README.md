@@ -12,10 +12,11 @@ Dual-stack deployments serve both IPv4 and IPv6 clients simultaneously. Envoy su
 
 ## Option 1: Separate Listeners per Protocol
 
-The cleanest approach — one listener for IPv4, one for IPv6.
+The cleanest approach - one listener for IPv4, one for IPv6.
 
 ```yaml
 # envoy-config.yaml
+
 static_resources:
   listeners:
     # IPv4 listener
@@ -139,4 +140,4 @@ curl -6 http://[::1]:8080/
 - Separate listeners for IPv4 (`0.0.0.0`) and IPv6 (`::`) is the clearest dual-stack approach.
 - `ipv4_compat: true` on an IPv6 listener accepts IPv4 clients via mapped addresses on Linux.
 - Set `use_remote_address: true` to correctly log the IPv4 address of clients connecting via mapped IPv6.
-- Upstream clusters remain IPv4-only — Envoy handles protocol translation between listener and cluster.
+- Upstream clusters remain IPv4-only - Envoy handles protocol translation between listener and cluster.

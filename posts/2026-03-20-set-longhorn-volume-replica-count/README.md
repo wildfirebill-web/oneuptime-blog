@@ -34,6 +34,7 @@ The global default applies to all new volumes created without an explicit replic
 
 ```bash
 # Set the global default replica count to 3
+
 kubectl patch settings.longhorn.io default-replica-count \
   -n longhorn-system \
   --type merge \
@@ -113,7 +114,7 @@ kubectl apply -f pvc-prod.yaml
 
 Longhorn will either create new replicas or mark excess replicas for deletion.
 
-### Via kubectl — Patch the Longhorn Volume
+### Via kubectl - Patch the Longhorn Volume
 
 ```bash
 # Get the volume name (may differ from PVC name)

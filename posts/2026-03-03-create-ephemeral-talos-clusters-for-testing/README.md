@@ -30,6 +30,7 @@ The fastest path to an ephemeral Talos cluster:
 
 ```bash
 # Create a cluster with a unique name
+
 CLUSTER_NAME="test-$(date +%s)"
 
 talosctl cluster create \

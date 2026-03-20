@@ -28,6 +28,7 @@ Inspect GitRepository events for rate limit errors:
 
 ```bash
 # Check the status of all Git sources
+
 flux get sources git
 
 # Look for rate-limit-related events

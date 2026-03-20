@@ -169,6 +169,7 @@ Over time, orphaned VirtualServices, DestinationRules, and ServiceEntries accumu
 
 ```bash
 # Find VirtualServices that reference non-existent services
+
 kubectl get virtualservices -A -o json | jq -r '.items[] | select(.spec.hosts[] as $h | ($h | test("^[a-z]")) and ([$h] | inside(["existing-services"]) | not)) | "\(.metadata.namespace)/\(.metadata.name)"'
 
 # Find DestinationRules without matching services

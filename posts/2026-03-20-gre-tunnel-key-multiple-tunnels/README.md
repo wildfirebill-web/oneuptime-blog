@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GRE, Tunnel Key, Linux, Multiple Tunnels, IPv4, ip tunnel, GRE Key
+Tags: GRE, Tunnel Key, Linux, Multiple Tunnels, IPv4, Ip tunnel, GRE Key
 
 Description: Learn how to configure GRE tunnel keys on Linux to multiplex multiple logical tunnels between the same pair of endpoints, using unique keys to differentiate traffic flows.
 
@@ -12,7 +12,7 @@ When multiple GRE tunnels share the same source and destination IPs, GRE keys di
 
 ## Why Use GRE Keys
 
-```
+```text
 Without keys: only one GRE tunnel possible between 10.0.0.1 and 10.0.0.2
 
 With keys:
@@ -25,6 +25,7 @@ With keys:
 
 ```bash
 # Tunnel for Tenant A (key 100)
+
 ip tunnel add gre-tenant-a \
   mode gre \
   local 10.0.0.1 \

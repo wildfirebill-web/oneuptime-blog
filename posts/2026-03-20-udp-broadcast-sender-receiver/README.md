@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv4, UDP, Broadcast, SO_BROADCAST, Socket, POSIX, Networking
+Tags: IPv4, UDP, Broadcast, SO_BROADCAST, Sockets, POSIX, Networking
 
 Description: Learn how to send and receive IPv4 UDP broadcast datagrams in C and Python using SO_BROADCAST, the limited broadcast address 255.255.255.255, and subnet-directed broadcasts.
 
@@ -10,9 +10,9 @@ Description: Learn how to send and receive IPv4 UDP broadcast datagrams in C and
 
 | Address | Scope |
 |---------|-------|
-| `255.255.255.255` | Limited broadcast — stays on local link (not forwarded) |
-| `192.168.1.255` | Directed broadcast — all hosts in `192.168.1.0/24` |
-| `10.0.0.255` | Directed broadcast — all hosts in `10.0.0.0/24` |
+| `255.255.255.255` | Limited broadcast - stays on local link (not forwarded) |
+| `192.168.1.255` | Directed broadcast - all hosts in `192.168.1.0/24` |
+| `10.0.0.255` | Directed broadcast - all hosts in `10.0.0.0/24` |
 
 ## UDP Broadcast Sender in C
 
@@ -29,7 +29,7 @@ Description: Learn how to send and receive IPv4 UDP broadcast datagrams in C and
 int main(void) {
     int fd = socket(AF_INET, SOCK_DGRAM, 0);
 
-    /* Must enable SO_BROADCAST — the kernel blocks broadcast sends by default */
+    /* Must enable SO_BROADCAST - the kernel blocks broadcast sends by default */
     int opt = 1;
     if (setsockopt(fd, SOL_SOCKET, SO_BROADCAST, &opt, sizeof(opt)) < 0) {
         perror("SO_BROADCAST"); return 1;
@@ -115,9 +115,10 @@ BCAST_ADDR = "255.255.255.255"
 BCAST_PORT = 9000
 
 # --- Sender ---
+
 def broadcast_sender():
     s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-    # Enable SO_BROADCAST — required for broadcast sends
+    # Enable SO_BROADCAST - required for broadcast sends
     s.setsockopt(socket.SOL_SOCKET, socket.SO_BROADCAST, 1)
     for i in range(5):
         msg = f"Service available at port 8080 (seq={i})".encode()
@@ -178,4 +179,4 @@ def discover_services(timeout: float = 6.0) -> list[dict]:
 
 ## Conclusion
 
-UDP broadcast requires setting `SO_BROADCAST` on the sender socket — the kernel blocks broadcast sends by default as a safety measure. Send to `255.255.255.255` for link-local broadcast or to the subnet's directed broadcast address (e.g., `192.168.1.255`) to reach all hosts in a specific subnet. Receivers bind to `INADDR_ANY` with `SO_REUSEADDR` to accept both unicast and broadcast datagrams on the same port. Broadcast is not routed between subnets — use multicast or a service registry for cross-subnet discovery. Use broadcast for lightweight LAN service discovery, avoiding the need for a central registry on small networks.
+UDP broadcast requires setting `SO_BROADCAST` on the sender socket - the kernel blocks broadcast sends by default as a safety measure. Send to `255.255.255.255` for link-local broadcast or to the subnet's directed broadcast address (e.g., `192.168.1.255`) to reach all hosts in a specific subnet. Receivers bind to `INADDR_ANY` with `SO_REUSEADDR` to accept both unicast and broadcast datagrams on the same port. Broadcast is not routed between subnets - use multicast or a service registry for cross-subnet discovery. Use broadcast for lightweight LAN service discovery, avoiding the need for a central registry on small networks.

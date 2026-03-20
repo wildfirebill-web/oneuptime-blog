@@ -35,6 +35,7 @@ Suppose you have these three policies:
 
 ```yaml
 # Mesh-wide: PERMISSIVE
+
 apiVersion: security.istio.io/v1
 kind: PeerAuthentication
 metadata:

@@ -26,6 +26,7 @@ Here is a script that rotates SSH keys for ArgoCD repository access:
 ```bash
 #!/bin/bash
 # rotate-ssh-key.sh - Rotate SSH key for ArgoCD repository credentials
+
 set -euo pipefail
 
 REPO_URL="${1:?Usage: $0 <repo-url-pattern>}"

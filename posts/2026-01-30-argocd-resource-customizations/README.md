@@ -572,6 +572,7 @@ EOF
 
 ```bash
 # Refresh the application
+
 argocd app get my-app --refresh
 
 # Check resource health

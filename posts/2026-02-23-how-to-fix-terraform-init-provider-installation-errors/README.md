@@ -27,6 +27,7 @@ This means Terraform cannot reach the HashiCorp registry. Common causes include 
 
 ```bash
 # Can you reach the registry?
+
 curl -I https://registry.terraform.io
 
 # Can you resolve the DNS?

@@ -31,6 +31,7 @@ Create a script to mirror all required Calico images:
 ```bash
 #!/bin/bash
 # mirror-calico-images.sh
+
 # Mirrors Calico images from public registries to your private registry
 
 set -euo pipefail

@@ -54,6 +54,7 @@ def allocate_ipv6_address(
     return allocated_addr
 
 # Usage
+
 ip = allocate_ipv6_address(
     prefix="2001:db8:0001:0001::/64",
     hostname="app-server-10",
@@ -101,7 +102,7 @@ print(f"New server will use: {ip}")
 ## Terraform Integration
 
 ```hcl
-# main.tf — Terraform with NetBox provider
+# main.tf - Terraform with NetBox provider
 
 terraform {
   required_providers {
@@ -192,4 +193,4 @@ deallocate_ipv6_address("2001:db8:0001:0001::10", "Server retired 2026-03-20")
 
 ## Conclusion
 
-Automating IPv6 address assignment through IPAM APIs (NetBox, Infoblox, etc.) eliminates manual allocation errors and ensures every address is tracked from the moment it is assigned. Use the `available-ips` endpoint (NetBox) or equivalent to atomically allocate the next available address without conflict checking in your automation code — the IPAM system handles concurrency. Integrate allocation into CI/CD pipelines so infrastructure provisioned through automation always updates IPAM, and build decommission workflows that mark addresses as deprecated rather than deleting them to preserve audit history.
+Automating IPv6 address assignment through IPAM APIs (NetBox, Infoblox, etc.) eliminates manual allocation errors and ensures every address is tracked from the moment it is assigned. Use the `available-ips` endpoint (NetBox) or equivalent to atomically allocate the next available address without conflict checking in your automation code - the IPAM system handles concurrency. Integrate allocation into CI/CD pipelines so infrastructure provisioned through automation always updates IPAM, and build decommission workflows that mark addresses as deprecated rather than deleting them to preserve audit history.

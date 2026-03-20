@@ -12,7 +12,7 @@ Keycloak is an open-source identity and access management solution providing SSO
 
 ## Infrastructure Overview
 
-```
+```text
 ALB (HTTPS) → ECS Fargate (Keycloak) → RDS PostgreSQL
 ```
 

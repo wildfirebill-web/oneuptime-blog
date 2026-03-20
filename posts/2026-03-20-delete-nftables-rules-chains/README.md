@@ -6,12 +6,13 @@ Tags: nftables, Linux, Firewall, Security, Rule Management
 
 Description: Delete specific nftables rules by handle, remove entire chains, and drop tables, understanding the dependency order required for successful deletion.
 
-Deleting nftables rules requires knowing their handles (equivalent to line numbers). Unlike iptables, you can't match rules by their full specification — handles are mandatory for targeted deletion.
+Deleting nftables rules requires knowing their handles (equivalent to line numbers). Unlike iptables, you can't match rules by their full specification - handles are mandatory for targeted deletion.
 
 ## Find Rule Handles First
 
 ```bash
 # List rules with handles (-a flag)
+
 sudo nft -a list ruleset
 
 # or for a specific chain:
@@ -108,7 +109,7 @@ flush chain inet filter input
 add rule inet filter input iif lo accept
 add rule inet filter input ct state established,related accept
 add rule inet filter input tcp dport 22 accept
-# (port 80 rule omitted — effectively deleted)
+# (port 80 rule omitted - effectively deleted)
 add rule inet filter input drop
 EOF
 
@@ -129,11 +130,11 @@ sudo nft add rule inet filter input tcp dport 80 accept
 ## Delete All nftables Rules (Complete Reset)
 
 ```bash
-# Delete EVERYTHING — all tables, chains, rules
+# Delete EVERYTHING - all tables, chains, rules
 sudo nft flush ruleset
 
-# This is the nuclear option — all firewall rules are removed
+# This is the nuclear option - all firewall rules are removed
 # All traffic will flow freely until rules are re-added
 ```
 
-Always get rule handles before attempting deletion — trying to delete without the correct handle will fail, and the `-a` flag to `nft list` is the only reliable way to find them.
+Always get rule handles before attempting deletion - trying to delete without the correct handle will fail, and the `-a` flag to `nft list` is the only reliable way to find them.

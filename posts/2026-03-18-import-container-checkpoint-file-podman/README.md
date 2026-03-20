@@ -59,6 +59,7 @@ This is required when importing on the same host where the original container st
 
 ```bash
 # Original container was checkpointed with --leave-running, so it still exists
+
 # Import with a different name to avoid conflicts
 sudo podman container restore --import=/tmp/web-app-checkpoint.tar.gz --name=web-app-copy
 ```

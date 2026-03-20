@@ -16,6 +16,7 @@ RHEL filesystems (XFS and ext4) support ACLs by default:
 
 ```bash
 # Verify ACL support on a filesystem
+
 mount | grep acl
 
 # For XFS (default on RHEL), ACLs are always supported

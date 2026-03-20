@@ -35,6 +35,7 @@ VPP fails to start if hugepages are not available.
 ```bash
 cat /proc/meminfo | grep Huge
 # Must show: HugePages_Total > 0 and HugePages_Free > 0
+
 ```
 
 If hugepages are not configured:

@@ -24,6 +24,7 @@ Verify your cluster is accessible.
 
 ```bash
 # Check cluster connectivity
+
 kubectl cluster-info
 
 # Run Flux pre-flight checks

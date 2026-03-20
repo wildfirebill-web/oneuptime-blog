@@ -28,6 +28,7 @@ This guide provides the specific steps for each aspect of tunnel performance man
 
 ```bash
 # Check current tunnel configuration
+
 cilium config view | grep tunnel
 cilium status --verbose | grep DatapathMode
 

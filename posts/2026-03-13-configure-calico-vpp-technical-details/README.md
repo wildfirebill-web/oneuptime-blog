@@ -41,6 +41,7 @@ graph LR
 
 ```plaintext
 # /etc/vpp/startup.conf
+
 buffers {
   # Total packet buffer memory
   # Rule of thumb: NIC line rate (bits/s) / 8 * 0.001 (1ms buffer depth)

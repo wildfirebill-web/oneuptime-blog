@@ -22,6 +22,7 @@ Podman stores data in different locations depending on whether it runs as root o
 
 ```bash
 # Rootless storage (default for regular users)
+
 ~/.local/share/containers/storage/
 
 # Root storage

@@ -43,6 +43,7 @@ The checkout service creates the root span for the entire order journey. This sp
 
 ```python
 # checkout_service.py
+
 # Create the root trace for an order fulfillment journey
 
 from opentelemetry import trace, context

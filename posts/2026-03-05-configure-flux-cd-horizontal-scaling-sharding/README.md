@@ -69,6 +69,7 @@ Here is a kustomization that creates a shard of the source-controller:
 
 ```yaml
 # shards/shard1/source-controller.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

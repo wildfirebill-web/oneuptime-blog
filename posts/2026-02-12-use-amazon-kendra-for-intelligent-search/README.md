@@ -28,6 +28,7 @@ The index is the core resource. It's where Kendra stores and searches your conte
 
 ```python
 # Create a Kendra index for enterprise document search
+
 import boto3
 
 kendra = boto3.client('kendra', region_name='us-east-1')

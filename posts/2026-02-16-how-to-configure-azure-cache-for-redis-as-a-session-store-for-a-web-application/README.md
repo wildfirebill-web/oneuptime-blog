@@ -39,6 +39,7 @@ If you do not already have one, create a Redis cache. For session storage, the S
 
 ```bash
 # Create a resource group
+
 az group create --name rg-session-store --location eastus
 
 # Create a Standard C1 Redis cache

@@ -123,6 +123,7 @@ Configure Kafka Schema Registry for your compatibility needs:
 
 ```bash
 # Check current compatibility level
+
 curl -X GET http://localhost:8081/config/my-topic-value
 
 # Set backward compatibility (default)

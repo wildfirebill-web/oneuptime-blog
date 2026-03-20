@@ -24,6 +24,7 @@ VPC Interface endpoints (powered by PrivateLink) provide private connectivity to
 
 ```hcl
 # endpoints_sg.tf
+
 resource "aws_security_group" "vpc_endpoints" {
   name        = "${var.prefix}-vpc-endpoints"
   description = "Allow HTTPS from VPC to interface endpoints"
@@ -37,7 +38,7 @@ resource "aws_security_group" "vpc_endpoints" {
     cidr_blocks = [data.aws_vpc.main.cidr_block]
   }
 
-  # No egress needed — endpoints only receive inbound connections
+  # No egress needed - endpoints only receive inbound connections
 
   tags = {
     Name        = "${var.prefix}-vpc-endpoints"
@@ -144,7 +145,7 @@ resource "aws_vpc_endpoint" "sts" {
 ## All EKS-Required Endpoints in One Module
 
 ```hcl
-# eks_endpoints.tf — complete set for fully private EKS clusters
+# eks_endpoints.tf - complete set for fully private EKS clusters
 locals {
   eks_interface_endpoints = {
     ec2              = "com.amazonaws.${var.region}.ec2"
@@ -195,15 +196,15 @@ variable "enable_interface_endpoints" {
     secretsmanager = true
     ecr            = true
     sts            = true
-    logs           = false  # $21.60/mo for 3 AZs — only enable if needed
+    logs           = false  # $21.60/mo for 3 AZs - only enable if needed
   }
 }
 ```
 
 ## Best Practices
 
-- Create all three SSM endpoints (`ssm`, `ssmmessages`, `ec2messages`) together — all three are required for Session Manager to function; missing any one causes silent connection failures.
-- Enable `private_dns_enabled = true` on all interface endpoints — this allows applications to use standard AWS service hostnames without configuration changes.
-- Place interface endpoints in private subnets, not public subnets — endpoints are used by private resources, and placing them in public subnets doesn't add security or functionality.
-- Calculate ROI before creating interface endpoints — each endpoint costs ~$7.20/month per AZ. At 3 AZs, that's $21.60/month per endpoint. Endpoints break even when they eliminate more than $21.60/month in NAT gateway data processing costs.
-- For EKS, start with the S3 gateway endpoint (free) and ECR interface endpoints (required for image pulls) — then add others as needed rather than creating all endpoints upfront.
+- Create all three SSM endpoints (`ssm`, `ssmmessages`, `ec2messages`) together - all three are required for Session Manager to function; missing any one causes silent connection failures.
+- Enable `private_dns_enabled = true` on all interface endpoints - this allows applications to use standard AWS service hostnames without configuration changes.
+- Place interface endpoints in private subnets, not public subnets - endpoints are used by private resources, and placing them in public subnets doesn't add security or functionality.
+- Calculate ROI before creating interface endpoints - each endpoint costs ~$7.20/month per AZ. At 3 AZs, that's $21.60/month per endpoint. Endpoints break even when they eliminate more than $21.60/month in NAT gateway data processing costs.
+- For EKS, start with the S3 gateway endpoint (free) and ECR interface endpoints (required for image pulls) - then add others as needed rather than creating all endpoints upfront.

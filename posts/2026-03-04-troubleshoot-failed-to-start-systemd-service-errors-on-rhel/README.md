@@ -14,6 +14,7 @@ When a systemd service fails to start on RHEL, you need to examine the service s
 
 ```bash
 # Get detailed status including recent log lines
+
 sudo systemctl status httpd.service
 
 # Key things to look for:

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, AWS, EBS, Snapshots, Data Lifecycle Manager, Backup, Infrastructure as Code
+Tags: OpenTofu, AWS, EBS, Snapshot, Data Lifecycle Manager, Backup, Infrastructure as Code
 
 Description: Learn how to create EBS snapshots and configure automated snapshot lifecycle policies using AWS Data Lifecycle Manager and OpenTofu to automate backup and retention.
 
@@ -19,6 +19,7 @@ EBS snapshots are incremental backups stored in S3. AWS Data Lifecycle Manager (
 
 ```hcl
 # Create an on-demand snapshot for immediate backup needs
+
 resource "aws_ebs_snapshot" "manual" {
   volume_id   = var.volume_id
   description = "Pre-migration snapshot - $(timestamp)"

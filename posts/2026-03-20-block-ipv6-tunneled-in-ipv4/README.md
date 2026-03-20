@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Security, Tunneling, Firewall, ip6tables
+Tags: IPv6, Security, Tunneling, Firewall, Ip6tables
 
 Description: Learn how to detect and block IPv6-in-IPv4 tunneling mechanisms (6to4, Teredo, ISATAP, 6in4) to prevent unauthorized IPv6 traffic on IPv4-only networks.
 
@@ -27,6 +27,7 @@ Protocol 41 is the most common carrier for IPv6 tunnels:
 
 ```bash
 # iptables: Block all IPv6-in-IPv4 (protocol 41)
+
 iptables -A INPUT   -p 41 -j DROP
 iptables -A OUTPUT  -p 41 -j DROP
 iptables -A FORWARD -p 41 -j DROP
@@ -58,7 +59,7 @@ iptables -A FORWARD -p udp --dport 3544 -j DROP
 
 # Block specific Teredo servers
 iptables -A OUTPUT -d teredo.ipv6.microsoft.com -j DROP
-# DNS-resolved — better to block by IP range or use DNS RPZ
+# DNS-resolved - better to block by IP range or use DNS RPZ
 ```
 
 ## Blocking GRE (Protocol 47)
@@ -97,7 +98,7 @@ nft add rule ip filter output  ip protocol 47 drop
 
 ## Cisco IOS ACL
 
-```
+```text
 ! Cisco: Block IPv6 tunnel protocols
 ip access-list extended BLOCK-IPV6-TUNNELS
   deny  41  any any        ! 6in4, 6to4, ISATAP (protocol 41)
@@ -159,7 +160,7 @@ tshark -i eth0 -Y 'ip.proto == 41' -T fields -e ip.src -e ip.dst
 
 # Check if 6to4 anycast is reachable (shouldn't be if blocked)
 ping 192.88.99.1
-# Should be blocked — if it responds, your filter is not working
+# Should be blocked - if it responds, your filter is not working
 ```
 
 ## Summary

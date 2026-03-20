@@ -29,6 +29,7 @@ Start by exporting your existing records from Route 53. The AWS CLI makes this s
 
 ```bash
 # List all hosted zones in Route 53
+
 aws route53 list-hosted-zones --output json
 
 # Export all records from a specific hosted zone

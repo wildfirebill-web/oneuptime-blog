@@ -100,6 +100,7 @@ meter = metrics.get_meter("classroom-sfu")
 tracer = trace.get_tracer("classroom-sfu")
 
 # Track per-participant stream quality
+
 stream_jitter = meter.create_histogram(
     "sfu.stream.jitter_ms",
     description="Jitter observed at the SFU for each participant stream",

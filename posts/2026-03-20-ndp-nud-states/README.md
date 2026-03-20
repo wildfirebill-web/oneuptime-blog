@@ -14,6 +14,7 @@ The IPv6 Neighbor Unreachability Detection (NUD) state machine has five primary 
 
 ```bash
 # View all neighbor cache entries with their states
+
 ip -6 neigh show
 
 # Example output (common states you'll see):

@@ -111,6 +111,7 @@ You can observe how the compression ratio evolves during a stream's lifetime:
 
 ```promql
 # Instantaneous compression ratio
+
 otelcol_exporter_otelarrow_compression_ratio
 
 # Plot this over time to see the warmup curve

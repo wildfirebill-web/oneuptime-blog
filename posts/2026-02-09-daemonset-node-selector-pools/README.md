@@ -22,6 +22,7 @@ First, label your nodes to identify pools:
 
 ```bash
 # Label nodes by instance type
+
 kubectl label node node-1 node-type=standard
 kubectl label node node-2 node-type=standard
 kubectl label node node-3 node-type=gpu

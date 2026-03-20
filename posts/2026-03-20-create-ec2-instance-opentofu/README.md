@@ -14,6 +14,7 @@ EC2 instances are the foundational compute resource in AWS. This guide walks thr
 
 ```hcl
 # Always look up the latest AMI rather than hardcoding an ID
+
 data "aws_ami" "ubuntu" {
   most_recent = true
   owners      = ["099720109477"]  # Canonical's official AWS account
@@ -117,7 +118,7 @@ resource "aws_instance" "web" {
     apt-get install -y nginx
     systemctl enable nginx
     systemctl start nginx
-    echo "<h1>$(hostname) — deployed by OpenTofu</h1>" > /var/www/html/index.html
+    echo "<h1>$(hostname) - deployed by OpenTofu</h1>" > /var/www/html/index.html
   EOF
 
   # Attach an EBS root volume with GP3 storage

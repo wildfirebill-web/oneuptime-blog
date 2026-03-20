@@ -42,6 +42,7 @@ If you do not already have a key ring, create one.
 
 ```bash
 # Create a key ring for signing keys
+
 gcloud kms keyrings create signing-keyring \
     --location=us-central1 \
     --project=my-project-id

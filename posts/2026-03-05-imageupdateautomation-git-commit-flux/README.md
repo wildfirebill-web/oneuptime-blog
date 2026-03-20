@@ -249,6 +249,7 @@ After applying the configuration, verify that commits are created correctly:
 
 ```bash
 # Check automation status
+
 flux get image update image-updater
 
 # View controller logs for commit details

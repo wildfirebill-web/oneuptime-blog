@@ -33,6 +33,7 @@ Compare your proposed changes against the currently deployed release:
 
 ```bash
 # Show differences for an upgrade
+
 helm diff upgrade myapp ./mychart -f values.yaml
 
 # Compare against a specific namespace
@@ -243,7 +244,7 @@ jobs:
       with:
         script: |
           const diff = `${{ steps.diff.outputs.diff }}`;
-          const body = `## Helm Diff Output\n\`\`\`diff\n${diff}\n\`\`\``;
+          const body = `## Helm Diff Output\n```diff\n${diff}\n````;
           github.rest.issues.createComment({
             issue_number: context.issue.number,
             owner: context.repo.owner,

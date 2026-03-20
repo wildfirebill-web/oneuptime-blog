@@ -16,6 +16,7 @@ Redis replication allows replica instances to maintain exact copies of a primary
 # /etc/redis/redis.conf (on the primary)
 
 # Bind to the primary's IPv4 address and localhost
+
 bind 10.0.0.10 127.0.0.1
 
 # Port
@@ -77,7 +78,7 @@ redis-cli -h 10.0.0.10 -a StrongPrimaryPassword123! INFO replication
 
 Expected output:
 
-```
+```text
 role:master
 connected_slaves:1
 slave0:ip=10.0.0.11,port=6379,state=online,offset=1024,lag=0

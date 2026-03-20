@@ -389,6 +389,7 @@ spec:
 
 ```bash
 # Get detailed health status
+
 argocd app get myapp
 
 # List resources with health

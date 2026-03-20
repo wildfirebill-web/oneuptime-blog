@@ -12,6 +12,7 @@ FastAPI applications typically run under uvicorn, which has two modes that break
 
 ```bash
 # This often breaks OpenTelemetry
+
 uvicorn main:app --reload
 ```
 

@@ -29,6 +29,7 @@ ZONE="us-central1-a"
 NODE_POOL="default-pool"
 
 # Check current surge upgrade settings
+
 gcloud container node-pools describe $NODE_POOL \
   --cluster=$CLUSTER_NAME \
   --zone=$ZONE \

@@ -213,6 +213,7 @@ You do not have to mirror everything at once. Start small and ramp up:
 
 ```yaml
 # Week 1: 5% of traffic
+
 mirrorPercentage:
   value: 5.0
 
@@ -231,7 +232,7 @@ mirrorPercentage:
 
 This is especially important if v2 is resource-intensive. Mirroring 100% of a high-traffic service doubles the load on your cluster, so plan capacity accordingly.
 
-## Resource Planning
+Resource Planning
 
 Since mirrored traffic creates real load on v2 pods, you need to allocate resources accordingly:
 

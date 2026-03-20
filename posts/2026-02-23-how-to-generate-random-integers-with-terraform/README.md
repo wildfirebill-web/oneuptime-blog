@@ -20,6 +20,7 @@ The random_integer resource produces a single random integer between a minimum a
 
 ```hcl
 # main.tf - Provider configuration
+
 terraform {
   required_version = ">= 1.5.0"
 

@@ -23,6 +23,7 @@ Ensure both IPv4 and IPv6 are configured and working:
 
 ```bash
 # Verify IPv4 connectivity
+
 ping -c 4 8.8.8.8
 
 # Verify IPv6 connectivity
@@ -49,7 +50,7 @@ sysctl --system
 
 Choose non-overlapping CIDR blocks:
 
-```
+```text
 # IPv4 CIDRs
 Pod CIDR (IPv4):     10.42.0.0/16
 Service CIDR (IPv4): 10.43.0.0/16

@@ -24,6 +24,7 @@ Let us explore each of these.
 
 ```yaml
 # memory-facts-overview.yml
+
 # Displays all memory-related facts
 ---
 - name: Show memory facts

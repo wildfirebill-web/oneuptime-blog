@@ -1,4 +1,4 @@
-# How to Set Up Keycloak as an OAuth Provider for Portainer
+# How to Set Up Keycloak as an OAuth Provider for Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -22,16 +22,17 @@ Keycloak is Red Hat's enterprise-grade identity and access management solution. 
 2. Select your realm (e.g., `myrealm`)
 3. Go to **Clients** → **Create client**
 
-```
+```text
 Client type:   OpenID Connect
 Client ID:     portainer
 Name:          Portainer
 Description:   Container Management Platform
+
 ```
 
 4. Click **Next** → Configure settings:
 
-```
+```text
 Client authentication: On (Confidential)
 Authorization:        Off
 Authentication flow:
@@ -42,7 +43,7 @@ Authentication flow:
 
 5. Click **Next** → Set redirect URIs:
 
-```
+```text
 Valid redirect URIs:
   https://portainer.example.com/
 
@@ -64,6 +65,7 @@ KEYCLOAK_URL="https://keycloak.example.com"
 REALM="myrealm"
 
 # Get discovery document
+
 curl -s "${KEYCLOAK_URL}/realms/${REALM}/.well-known/openid-configuration" \
   | python3 -c "
 import sys, json
@@ -76,7 +78,7 @@ print('Logout:', d['end_session_endpoint'])
 ```
 
 Keycloak endpoints:
-```
+```text
 Authorization URL: https://keycloak.example.com/realms/myrealm/protocol/openid-connect/auth
 Access Token URL:  https://keycloak.example.com/realms/myrealm/protocol/openid-connect/token
 Resource URL:      https://keycloak.example.com/realms/myrealm/protocol/openid-connect/userinfo
@@ -90,7 +92,7 @@ To include group membership in the token:
 1. Go to **Client Scopes** → create a new scope "groups" or use existing
 2. Add a **Group Membership** mapper:
 
-```
+```text
 Mapper Type:       Group Membership
 Token Claim Name:  groups
 Full group path:   Off (just group names)

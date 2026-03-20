@@ -1,4 +1,4 @@
-# How to Deploy Portainer on Linode/Akamai Cloud
+# How to Deploy Portainer on Linode/Akamai Cloud - Akamai Cloud
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -34,6 +34,7 @@ Linode, now part of Akamai Cloud, offers competitive pricing with excellent netw
 
 ```bash
 # Install and configure CLI
+
 pip3 install linode-cli
 linode-cli configure
 

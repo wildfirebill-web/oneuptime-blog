@@ -24,6 +24,7 @@ Enable the required APIs:
 
 ```bash
 # Enable the APIs needed for Anthos Service Mesh
+
 gcloud services enable mesh.googleapis.com
 gcloud services enable container.googleapis.com
 ```

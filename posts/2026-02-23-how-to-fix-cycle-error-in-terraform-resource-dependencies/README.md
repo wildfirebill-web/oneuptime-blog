@@ -31,6 +31,7 @@ Terraform builds a directed acyclic graph (DAG) of all your resources. The "acyc
 
 ```hcl
 # This creates a dependency: subnet depends on VPC
+
 resource "aws_vpc" "main" {
   cidr_block = "10.0.0.0/16"
 }

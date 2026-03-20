@@ -363,6 +363,7 @@ Always validate your modules before publishing. Bicep provides a build command t
 
 ```bash
 # Compile the module to verify it is valid
+
 az bicep build --file modules/app-service/main.bicep
 
 # Run what-if deployment to preview changes without applying

@@ -24,6 +24,7 @@ First, configure the Collector to export traces to Kafka:
 
 ```yaml
 # otel-collector-config.yaml
+
 receivers:
   otlp:
     protocols:

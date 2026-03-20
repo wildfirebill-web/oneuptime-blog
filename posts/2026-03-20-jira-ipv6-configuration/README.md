@@ -43,6 +43,7 @@ Jira runs on Apache Tomcat which supports IPv6. Configuring Jira for IPv6 access
 
 ```bash
 # Restart Jira after configuration change
+
 sudo systemctl restart jira
 
 # Verify Jira is listening on IPv6
@@ -75,7 +76,7 @@ server {
 
 ## Update Jira Base URL for IPv6
 
-```
+```text
 Jira Administration > System > General Configuration
 
 Base URL: https://jira.example.com

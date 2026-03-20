@@ -1,4 +1,4 @@
-# How to Import Multiple Resources at Once in OpenTofu
+# How to Import Multiple Resources at Once in OpenTofu - Opentofu
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Learn how to import many existing infrastructure resources into Ope
 
 ## Introduction
 
-Adopting OpenTofu for existing infrastructure often means importing dozens or hundreds of resources. Import blocks support batch importing — you can define many import blocks in a single file and apply them all at once. Combined with `for_each` on import blocks, you can import entire resource families in a single declaration.
+Adopting OpenTofu for existing infrastructure often means importing dozens or hundreds of resources. Import blocks support batch importing - you can define many import blocks in a single file and apply them all at once. Combined with `for_each` on import blocks, you can import entire resource families in a single declaration.
 
 ## Multiple Import Blocks in One File
 
@@ -16,6 +16,7 @@ Adopting OpenTofu for existing infrastructure often means importing dozens or hu
 # imports.tf
 
 # Import VPC
+
 import {
   to = aws_vpc.main
   id = "vpc-0abc123456"

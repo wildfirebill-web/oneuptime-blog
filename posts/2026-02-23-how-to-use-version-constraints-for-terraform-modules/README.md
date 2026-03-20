@@ -18,6 +18,7 @@ Version constraints work with the `version` argument in module blocks, but only 
 
 ```hcl
 # Version constraints work here
+
 module "vpc" {
   source  = "terraform-aws-modules/vpc/aws"
   version = "~> 5.5"  # This is a version constraint

@@ -26,6 +26,7 @@ Install MySQL Shell for cluster management:
 
 ```bash
 # Download MySQL Shell
+
 kubectl run mysql-shell --image=mysql/mysql-shell:8.0 -it --rm -- bash
 ```
 

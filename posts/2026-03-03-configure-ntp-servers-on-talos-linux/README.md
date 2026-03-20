@@ -16,6 +16,7 @@ Out of the box, Talos Linux synchronizes time using NTP. The default configurati
 
 ```bash
 # Check current time sync status
+
 talosctl -n 192.168.1.10 get timestatus
 
 # View the current NTP configuration

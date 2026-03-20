@@ -21,6 +21,7 @@ Machine registration failures are one of the most common issues when deploying E
 
 ```bash
 # View recent operator logs
+
 kubectl logs -n elemental-system \
   -l app=elemental-operator \
   --since=30m

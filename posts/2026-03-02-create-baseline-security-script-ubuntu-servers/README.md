@@ -31,6 +31,7 @@ Organize the script with clear sections, idempotent operations, and logging from
 ```bash
 #!/bin/bash
 # Ubuntu Server Baseline Security Script
+
 # Run as root at provisioning or on demand
 
 set -uo pipefail

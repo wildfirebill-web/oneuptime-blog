@@ -28,6 +28,7 @@ Configure Traefik to expose Prometheus metrics.
 
 ```yaml
 # traefik-metrics.yaml
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

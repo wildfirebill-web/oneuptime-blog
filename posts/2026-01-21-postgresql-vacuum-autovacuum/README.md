@@ -102,6 +102,7 @@ LIMIT 20;
 
 ```conf
 # postgresql.conf
+
 autovacuum = on                          # Enable autovacuum
 track_counts = on                        # Required for autovacuum
 ```

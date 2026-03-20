@@ -59,6 +59,7 @@ For simple setups, mirror traffic directly to a monitoring instance's ENI.
 
 ```bash
 # Create a mirror target pointing to a monitoring instance ENI
+
 aws ec2 create-traffic-mirror-target \
     --network-interface-id eni-monitoring-instance \
     --description "Security monitoring instance" \

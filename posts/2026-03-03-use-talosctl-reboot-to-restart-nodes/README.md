@@ -22,6 +22,7 @@ The simplest way to reboot a node is to target it directly by its IP address or 
 
 ```bash
 # Reboot a single node by IP address
+
 talosctl reboot --nodes 192.168.1.10
 ```
 

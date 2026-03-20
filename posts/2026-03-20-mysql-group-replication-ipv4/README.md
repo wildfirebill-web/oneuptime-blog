@@ -12,7 +12,7 @@ MySQL Group Replication provides a fault-tolerant cluster where data is replicat
 
 ## Architecture
 
-```
+```text
 Node 1: 10.0.0.1:3306 (Group Replication port: 33061)
 Node 2: 10.0.0.2:3306 (Group Replication port: 33061)
 Node 3: 10.0.0.3:3306 (Group Replication port: 33061)
@@ -24,6 +24,7 @@ Node 3: 10.0.0.3:3306 (Group Replication port: 33061)
 
 ```bash
 # /etc/mysql/mysql.conf.d/mysqld.cnf
+
 # Apply to EACH node, changing node-specific values
 
 [mysqld]
@@ -65,7 +66,7 @@ bind-address = 10.0.0.1          # Node-specific IP
 ## Initial Bootstrap (Node 1 Only)
 
 ```bash
-# On Node 1 — bootstrap the group:
+# On Node 1 - bootstrap the group:
 sudo mysql -u root -p
 
 SET GLOBAL group_replication_bootstrap_group = ON;
@@ -79,7 +80,7 @@ SELECT * FROM performance_schema.replication_group_members;
 ## Joining Nodes 2 and 3
 
 ```bash
-# On Node 2 and Node 3 — join the existing group:
+# On Node 2 and Node 3 - join the existing group:
 sudo mysql -u root -p
 
 -- Create replication user (needed on each node)

@@ -322,6 +322,7 @@ from confluent_kafka import Producer, Consumer
 import json
 
 # Producer
+
 def kafka_producer():
     producer = Producer({
         'bootstrap.servers': 'localhost:9092',

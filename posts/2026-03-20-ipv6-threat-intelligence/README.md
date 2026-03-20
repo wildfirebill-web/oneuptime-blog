@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Threat Intelligence, MISP, STIX, IOC, Security Analytics, SIEM
+Tags: IPv6, Threat Intelligence, Misp, STIX, IoC, Security Analytics, SIEM
 
 Description: Integrate IPv6 addresses and prefixes into threat intelligence workflows using MISP, STIX 2.1, and SIEM lookups for blocking, detection, and enrichment.
 
@@ -60,6 +60,7 @@ import pymisp
 from pymisp import PyMISP, MISPEvent, MISPAttribute
 
 # Connect to MISP instance (via IPv6)
+
 misp = PyMISP(
     url="https://[2001:db8::misp]/",
     key="your-api-key",
@@ -150,7 +151,7 @@ print(f"Exported {len(iocs)} IPv6 IOCs to {output_file}")
 
 ## Splunk: IPv6 Threat Intel Enrichment
 
-```
+```text
 # Enrich firewall events with threat intelligence
 index=firewall src_ip="*:*"
 
@@ -173,7 +174,7 @@ index=firewall src_ip="*:*"
 
 ```bash
 #!/bin/bash
-# update-ipv6-blocklist.sh — Apply threat intel as nftables rules
+# update-ipv6-blocklist.sh - Apply threat intel as nftables rules
 
 MISP_URL="https://[2001:db8::misp]"
 MISP_KEY="YOUR_API_KEY"
@@ -203,4 +204,4 @@ echo "Blocklist updated: $(echo "${MALICIOUS_IPS}" | wc -l) IPv6 addresses"
 
 ## Conclusion
 
-IPv6 threat intelligence workflows mirror IPv4 but require /64-prefix awareness — individual /128 addresses rotate due to privacy extensions, making prefix-level blocking more durable. Store IPv6 IOCs in STIX 2.1 format using the `ipv6-addr` object type. MISP handles IPv6 attributes natively — use `ip-src` and `ip-dst` attribute types with IPv6 values. Export IOCs to SIEM lookup tables with both the full address and the /64 prefix for enrichment at both levels. Automate blocklist updates from MISP to nftables sets for operational blocking, and run enrichment queries in Splunk or Elastic to identify IOC matches in historical logs.
+IPv6 threat intelligence workflows mirror IPv4 but require /64-prefix awareness - individual /128 addresses rotate due to privacy extensions, making prefix-level blocking more durable. Store IPv6 IOCs in STIX 2.1 format using the `ipv6-addr` object type. MISP handles IPv6 attributes natively - use `ip-src` and `ip-dst` attribute types with IPv6 values. Export IOCs to SIEM lookup tables with both the full address and the /64 prefix for enrichment at both levels. Automate blocklist updates from MISP to nftables sets for operational blocking, and run enrichment queries in Splunk or Elastic to identify IOC matches in historical logs.

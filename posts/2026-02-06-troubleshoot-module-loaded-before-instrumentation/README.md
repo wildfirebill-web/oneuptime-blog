@@ -97,6 +97,7 @@ Both imports are resolved at parse time. The execution order of the imported mod
 ```bash
 ts-node --require ./tracing.ts app.ts
 # or
+
 node --require ./tracing.js -r ts-node/register app.ts
 ```
 

@@ -63,6 +63,7 @@ The simplest approach assigns one playbook to each alert rule. This works well f
 
 ```yaml
 # Prometheus alerting rule with playbook link
+
 # Each alert includes a direct link to its response documentation
 
 groups:

@@ -34,6 +34,7 @@ Before moving resources between states, make sure you:
 
 ```bash
 # Back up the source state
+
 terraform -chdir=/path/to/source state pull > source-state-backup.json
 
 # Back up the destination state

@@ -47,6 +47,7 @@ First, install the required packages. You'll need the OpenTelemetry SDK, an OTLP
 
 ```bash
 # Install OpenTelemetry core packages and the OTLP exporter
+
 pip install opentelemetry-api opentelemetry-sdk opentelemetry-exporter-otlp
 
 # Install Hugging Face Transformers and a tokenizer backend

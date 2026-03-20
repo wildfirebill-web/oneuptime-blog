@@ -26,18 +26,19 @@ A Totally NSSA is the most restrictive while still allowing local external redis
 
 ### Area Border Router (ABR)
 
-```
+```text
 # On the ABR (connected to both the backbone and area 1)
+
 router ospf
   ospf router-id 10.0.0.1
   area 1 nssa no-summary    ! "no-summary" makes it Totally NSSA
 ```
 
-The `no-summary` flag is what makes an NSSA "totally" NSSA — it blocks Type 3 summary LSAs.
+The `no-summary` flag is what makes an NSSA "totally" NSSA - it blocks Type 3 summary LSAs.
 
 ### ASBR Inside the NSSA (Redistributing External Routes)
 
-```
+```text
 # On the ASBR inside area 1 (e.g., redistributing a connected route or BGP)
 router ospf
   ospf router-id 10.0.1.1
@@ -49,7 +50,7 @@ router ospf
 
 ### Example FRR Full Config
 
-```
+```text
 # ABR connecting backbone (area 0) to NSSA area 1
 frr defaults traditional
 
@@ -73,7 +74,7 @@ router ospf
 
 ## Cisco IOS Equivalent
 
-```
+```text
 router ospf 1
   router-id 10.0.0.1
   area 1 nssa no-summary    ! ABR: Totally NSSA

@@ -20,6 +20,7 @@ The injection happens automatically through a Kubernetes mutating webhook. When 
 
 ```yaml
 # Sidecar mode: namespace label
+
 apiVersion: v1
 kind: Namespace
 metadata:
@@ -68,7 +69,7 @@ Namespace (optional)
 └── waypoint proxy (shared by all pods in the namespace)
 ```
 
-## Resource Usage
+Resource Usage
 
 This is where the difference is most dramatic.
 

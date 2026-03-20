@@ -29,6 +29,7 @@ The most common problem is changes not being picked up:
 
 ```bash
 # Check if the ConfigMap exists with expected content
+
 kubectl -n kube-system get configmap cilium-hubble-export-config -o yaml
 
 # Check the ConfigMap resource version (changes increment this)

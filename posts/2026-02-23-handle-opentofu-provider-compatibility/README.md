@@ -26,6 +26,7 @@ Before starting a project, verify your providers are available:
 
 ```bash
 # Create a test config with just the providers
+
 mkdir compatibility-test && cd compatibility-test
 
 cat > providers.tf << 'EOF'

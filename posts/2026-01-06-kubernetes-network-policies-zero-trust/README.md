@@ -150,6 +150,7 @@ Frontend talks to API, API talks to database. Nothing else.
 
 ```yaml
 # Allow frontend to receive external traffic
+
 apiVersion: networking.k8s.io/v1
 kind: NetworkPolicy
 metadata:

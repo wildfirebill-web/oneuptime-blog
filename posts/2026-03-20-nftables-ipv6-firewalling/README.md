@@ -22,7 +22,7 @@ nftables is the modern replacement for ip6tables/iptables in Linux, available si
 
 ## nftables Families
 
-```
+```text
 ip    → IPv4 only
 ip6   → IPv6 only
 inet  → IPv4 and IPv6 (preferred for dual-stack)
@@ -35,6 +35,7 @@ netdev → Ingress/egress per device
 
 ```bash
 # Check nftables is running
+
 systemctl status nftables
 
 # List current ruleset
@@ -60,16 +61,16 @@ table ip6 filter {
         # Established/related
         ct state established,related accept
 
-        # Invalid — drop
+        # Invalid - drop
         ct state invalid drop
 
-        # Essential ICMPv6 — MUST allow
+        # Essential ICMPv6 - MUST allow
         ip6 nexthdr icmpv6 icmpv6 type destination-unreachable accept
         ip6 nexthdr icmpv6 icmpv6 type packet-too-big accept       # NEVER block
         ip6 nexthdr icmpv6 icmpv6 type time-exceeded accept
         ip6 nexthdr icmpv6 icmpv6 type parameter-problem accept
 
-        # NDP — link-local only
+        # NDP - link-local only
         ip6 saddr fe80::/10 ip6 nexthdr icmpv6 icmpv6 type {
             nd-router-solicit,
             nd-router-advert,
@@ -183,4 +184,4 @@ systemctl enable nftables
 
 ## Summary
 
-nftables for IPv6 uses `table ip6 filter` with `chain input/forward/output`. Key syntax differences from ip6tables: use `ip6 nexthdr icmpv6 icmpv6 type` (not `--icmpv6-type`), combine multiple conditions in single rules with `{ }` sets, and use `ct state` for connection tracking. Load configuration files with `nft -f /etc/nftables.conf`. nftables is atomic — applying a configuration file either completely succeeds or completely fails, preventing partial rule application. Enable persistence with `systemctl enable nftables`.
+nftables for IPv6 uses `table ip6 filter` with `chain input/forward/output`. Key syntax differences from ip6tables: use `ip6 nexthdr icmpv6 icmpv6 type` (not `--icmpv6-type`), combine multiple conditions in single rules with `{ }` sets, and use `ct state` for connection tracking. Load configuration files with `nft -f /etc/nftables.conf`. nftables is atomic - applying a configuration file either completely succeeds or completely fails, preventing partial rule application. Enable persistence with `systemctl enable nftables`.

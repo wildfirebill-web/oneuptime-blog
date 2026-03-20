@@ -1,10 +1,10 @@
-# How to Fix "Error: Provider Not Found" in OpenTofu
+# How to Fix 'Error: Provider Not Found' in OpenTofu
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: OpenTofu, Troubleshooting, Provider, Error, Infrastructure as Code, Debugging
 
-Description: Learn the common causes of the "Error: Provider Not Found" error in OpenTofu and how to resolve them by running init, checking registry addresses, and fixing lock files.
+Description: Learn the common causes of the 'Error: Provider Not Found' error in OpenTofu and how to resolve them by running init, checking registry addresses, and fixing lock files.
 
 ## Introduction
 
@@ -12,7 +12,7 @@ The "Error: Provider Not Found" error means OpenTofu cannot locate the provider 
 
 ## Common Error Messages
 
-```
+```hcl
 Error: Required providers are not installed
   The following providers are required by this configuration but are not installed:
   - hashicorp/aws
@@ -30,6 +30,7 @@ The most common cause is simply that `tofu init` has not been run (or was run wi
 
 ```bash
 # Download all required providers
+
 tofu init
 
 # If .terraform exists from a Terraform run, clear it first
@@ -42,7 +43,7 @@ tofu init
 Typos in the `source` attribute cause the registry to return a 404:
 
 ```hcl
-# WRONG — incorrect namespace
+# WRONG - incorrect namespace
 terraform {
   required_providers {
     aws = {

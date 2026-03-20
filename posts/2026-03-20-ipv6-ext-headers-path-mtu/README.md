@@ -12,7 +12,7 @@ IPv6 extension headers consume bytes from the available payload space, effective
 
 ## How Extension Headers Reduce Effective MTU
 
-```
+```text
 Standard IPv6 packet (no extension headers, 1500 MTU):
   [IPv6 (40)] [TCP (20)] [App Data (1440)]
   Available application data: 1440 bytes
@@ -66,6 +66,7 @@ def calculate_effective_mtu(
     }
 
 # Common scenarios
+
 print("=== No Extension Headers ===")
 result = calculate_effective_mtu(1500)
 print(f"TCP MSS: {result['tcp_mss']} bytes")
@@ -137,7 +138,7 @@ sudo ip6tables -t mangle -A FORWARD \
 
 IPv6 requires that every link have a minimum MTU of 1280 bytes. Extension headers do not change this requirement, but they do reduce the available application data:
 
-```
+```text
 Minimum MTU: 1280 bytes
 IPv6 base header: 40 bytes
 Minimum application payload space: 1280 - 40 = 1240 bytes
@@ -151,4 +152,4 @@ With Fragment Header + Hop-by-Hop:
 
 ## Conclusion
 
-Extension headers reduce the effective available payload space proportionally to their size. This is most critical in tunneling scenarios (IPv6-in-IPv6, GRE, IPsec tunnel mode) where multiple headers stack up. Path MTU Discovery handles this correctly in theory, but relies on ICMPv6 Packet Too Big messages being delivered — which is not always the case due to firewall misconfiguration. Always configure MSS clamping on tunnel endpoints and interfaces where MTU is constrained by extension header overhead.
+Extension headers reduce the effective available payload space proportionally to their size. This is most critical in tunneling scenarios (IPv6-in-IPv6, GRE, IPsec tunnel mode) where multiple headers stack up. Path MTU Discovery handles this correctly in theory, but relies on ICMPv6 Packet Too Big messages being delivered - which is not always the case due to firewall misconfiguration. Always configure MSS clamping on tunnel endpoints and interfaces where MTU is constrained by extension header overhead.

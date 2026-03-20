@@ -18,6 +18,7 @@ No matter what the volume issue is, always start with these commands.
 
 ```bash
 # Check pod status and events
+
 kubectl describe pod <pod-name>
 
 # Look at the PVC status

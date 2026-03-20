@@ -45,6 +45,7 @@ Define a dedicated namespace for the Vault Secrets Operator.
 
 ```yaml
 # clusters/my-cluster/vault-secrets-operator/namespace.yaml
+
 apiVersion: v1
 kind: Namespace
 metadata:

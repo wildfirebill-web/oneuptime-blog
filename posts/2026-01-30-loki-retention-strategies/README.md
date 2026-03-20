@@ -37,6 +37,7 @@ Here is a basic schema configuration using TSDB:
 
 ```yaml
 # loki-config.yaml
+
 schema_config:
   configs:
     - from: 2024-01-01

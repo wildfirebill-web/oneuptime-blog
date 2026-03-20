@@ -36,6 +36,7 @@ Here is a basic Collector configuration that scrapes two application endpoints:
 
 ```yaml
 # collector-config.yaml
+
 receivers:
   # The Prometheus receiver scrapes metrics in Prometheus exposition format
   prometheus:

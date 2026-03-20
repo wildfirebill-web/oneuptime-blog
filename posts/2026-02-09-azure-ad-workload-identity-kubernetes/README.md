@@ -24,6 +24,7 @@ Ensure your AKS cluster supports OIDC issuer and workload identity:
 
 ```bash
 # Create AKS cluster with OIDC issuer and workload identity enabled
+
 az aks create \
   --resource-group myResourceGroup \
   --name myAKSCluster \

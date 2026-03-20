@@ -14,6 +14,7 @@ HashiCorp Nomad is a workload orchestrator that can schedule containers, binarie
 
 ```bash
 # Add the HashiCorp repository
+
 sudo dnf config-manager --add-repo https://rpm.releases.hashicorp.com/RHEL/hashicorp.repo
 
 # Install Nomad

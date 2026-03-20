@@ -98,6 +98,7 @@ class PrefixSearch:
 
 
 # Usage
+
 r = redis.Redis(decode_responses=True)
 search = PrefixSearch(r, 'products')
 

@@ -27,6 +27,7 @@ Create a Kubernetes secret for authenticating webhook requests from your CI/CD p
 
 ```bash
 # Generate a random token
+
 TOKEN=$(head -c 12 /dev/urandom | shasum | cut -d ' ' -f1)
 
 # Create the secret

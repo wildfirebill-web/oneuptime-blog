@@ -44,7 +44,7 @@ trivy config ./modules/networking
 
 ## Understanding the Output
 
-```
+```text
 networking/main.tf (terraform)
 
 Tests: 14 (SUCCESSES: 11, FAILURES: 3, EXCEPTIONS: 0)
@@ -80,8 +80,9 @@ trivy config --format sarif --output trivy-results.sarif ./
 
 Create a `.trivyignore` file:
 
-```
+```text
 # Suppress known false positives
+
 AVD-AWS-0107
 AVD-AWS-0086
 ```

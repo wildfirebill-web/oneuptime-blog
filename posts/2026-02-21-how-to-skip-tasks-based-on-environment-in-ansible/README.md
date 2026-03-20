@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Environment, Conditional, DevOps
+Tags: Ansible, Environments, Conditional, DevOps
 
 Description: Learn how to skip or run Ansible tasks based on the deployment environment using variables, groups, and conditional logic.
 
@@ -16,6 +16,7 @@ The simplest approach is passing an environment variable and checking it in `whe
 
 ```yaml
 # Environment-based task skipping with a variable
+
 ---
 - name: Deploy application
   hosts: app_servers

@@ -26,6 +26,7 @@ etcd is the most critical component. Lose etcd and you lose your entire cluster 
 
 ```bash
 # Take an etcd snapshot from a control plane node
+
 talosctl etcd snapshot /tmp/etcd-backup.db \
   --nodes 10.0.1.10
 

@@ -14,6 +14,7 @@ Netplan supports VLAN configuration under the `vlans` key. Each VLAN entry speci
 
 ```yaml
 # /etc/netplan/01-netcfg.yaml
+
 network:
   version: 2
   ethernets:

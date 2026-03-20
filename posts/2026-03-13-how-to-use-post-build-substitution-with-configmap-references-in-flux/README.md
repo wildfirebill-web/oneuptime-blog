@@ -243,6 +243,7 @@ Use different ConfigMaps per environment to customize the same manifests for dif
 
 ```yaml
 # Production cluster ConfigMap
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

@@ -20,6 +20,7 @@ You have a Job manifest in your Git repository:
 
 ```yaml
 # deploy/job.yaml - A batch job
+
 apiVersion: batch/v1
 kind: Job
 metadata:

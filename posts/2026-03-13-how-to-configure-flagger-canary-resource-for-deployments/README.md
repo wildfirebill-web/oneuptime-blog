@@ -28,6 +28,7 @@ Before creating the Canary resource, you need a Deployment and a Service for Fla
 
 ```yaml
 # deployment.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

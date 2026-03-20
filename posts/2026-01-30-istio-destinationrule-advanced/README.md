@@ -43,6 +43,7 @@ Subsets let you partition service endpoints based on pod labels. This enables ca
 
 ```yaml
 # Define subsets based on version labels
+
 apiVersion: networking.istio.io/v1beta1
 kind: DestinationRule
 metadata:

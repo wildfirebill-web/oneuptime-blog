@@ -16,6 +16,7 @@ Ansible's `environment` keyword accepts a dictionary of key-value pairs. These v
 
 ```yaml
 # basic_env.yml - Setting environment variables on tasks
+
 ---
 - name: Basic environment variable usage
   hosts: all

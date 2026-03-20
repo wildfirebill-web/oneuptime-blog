@@ -39,6 +39,7 @@ Start by checking what state your BGP session is in.
 
 ```bash
 # Get the MetalLB speaker pod name
+
 SPEAKER_POD=$(kubectl get pods -n metallb-system \
   -l component=speaker \
   -o jsonpath='{.items[0].metadata.name}')

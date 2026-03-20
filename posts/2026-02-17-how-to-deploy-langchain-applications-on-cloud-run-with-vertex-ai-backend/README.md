@@ -34,6 +34,7 @@ langchain-service/
 
 ```python
 # app/config.py
+
 import os
 
 class Config:

@@ -19,6 +19,7 @@ Portainer is a web application. Without proper HTTP security headers, it's vulne
 
 ```nginx
 # /etc/nginx/conf.d/portainer.conf
+
 server {
     listen 443 ssl http2;
     server_name portainer.mycompany.com;

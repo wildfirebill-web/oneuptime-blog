@@ -68,6 +68,7 @@ First, update your system and install essential packages:
 
 ```bash
 # Update package lists and upgrade existing packages
+
 sudo apt update && sudo apt upgrade -y
 
 # Install essential utilities

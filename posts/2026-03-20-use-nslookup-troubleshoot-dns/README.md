@@ -14,6 +14,7 @@ Description: Use nslookup to query DNS records, test different resolvers, perfor
 
 ```bash
 # Simple lookup (uses system resolver):
+
 nslookup example.com
 
 # Output:

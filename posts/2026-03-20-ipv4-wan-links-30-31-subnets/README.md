@@ -1,4 +1,4 @@
-# How to Plan IPv4 Addressing for Point-to-Point WAN Links Using /30 or /31 Subnets
+# How to Plan IPv4 Addressing for WAN Links Using /30 or /31
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -11,7 +11,7 @@ Description: Learn how to allocate and configure IPv4 addresses for WAN point-to
 WAN point-to-point links connect two routers and only need 2 IP addresses. Two options:
 
 **Traditional /30 (4 addresses, 2 usable):**
-```
+```text
 Network:   10.254.0.0/30
 Router A:  10.254.0.1
 Router B:  10.254.0.2
@@ -19,8 +19,8 @@ Broadcast: 10.254.0.3
 Wasted:    2 addresses (network + broadcast)
 ```
 
-**Modern /31 (2 addresses, both usable — RFC 3021):**
-```
+**Modern /31 (2 addresses, both usable - RFC 3021):**
+```text
 Network:   10.254.0.0/31
 Router A:  10.254.0.0
 Router B:  10.254.0.1
@@ -36,8 +36,8 @@ For 1000 WAN links:
 
 Reserve a dedicated block for WAN point-to-point links:
 
-```
-10.254.0.0/16 — WAN Infrastructure
+```text
+10.254.0.0/16 - WAN Infrastructure
 
 Using /30 subnets (traditional):
   10.254.0.0/30   = WAN Link 1
@@ -56,7 +56,7 @@ Using /31 subnets (RFC 3021):
 
 ## Step 2: Configure a /30 WAN Link
 
-```
+```text
 ! Router A (10.254.0.1):
 interface GigabitEthernet0/0
  description WAN_Link_to_RouterB
@@ -76,7 +76,7 @@ RouterA# ping 10.254.0.2
 
 ## Step 3: Configure a /31 WAN Link (RFC 3021)
 
-```
+```text
 ! Router A (10.254.0.0):
 interface GigabitEthernet0/0
  description WAN_Link_to_RouterB_31
@@ -133,6 +133,7 @@ def allocate_wan_links(base_block, prefix_len, num_links):
     return links
 
 # Allocate /30 WAN links
+
 allocate_wan_links('10.254.0.0/16', 30, 5)
 
 # Allocate /31 WAN links (saves 50% address space)
@@ -143,7 +144,7 @@ allocate_wan_links('10.254.0.0/16', 31, 5)
 
 Create a consistent naming convention for easy reference:
 
-```
+```text
 Convention: 10.254.[link_group].[offset]
 
 Link groups by type:

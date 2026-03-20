@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, PHP, Laravel, Development Environment, Docker, Xdebug, Composer
+Tags: Portainer, PHP, Laravel, Development Environments, Docker, Xdebug, Composer
 
 Description: Learn how to set up a PHP Laravel development environment with Xdebug and hot-reload in a Docker container managed by Portainer.
 
@@ -66,6 +66,7 @@ volumes:
 
 ```dockerfile
 # Dockerfile.dev
+
 FROM php:8.3-cli-alpine
 
 RUN apk add --no-cache \

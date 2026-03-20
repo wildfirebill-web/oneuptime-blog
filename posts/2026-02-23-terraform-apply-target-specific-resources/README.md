@@ -16,6 +16,7 @@ The `-target` flag takes a resource address and tells Terraform to only plan and
 
 ```bash
 # Apply changes only to a specific resource
+
 terraform apply -target=aws_instance.web
 
 # Preview what would happen
@@ -37,7 +38,7 @@ terraform apply -target=aws_s3_bucket.data
 terraform apply -target=aws_db_instance.production
 ```
 
-### Resource with count
+Resource with count
 
 ```bash
 # Target a specific instance by index
@@ -45,7 +46,7 @@ terraform apply -target='aws_instance.web[0]'
 terraform apply -target='aws_instance.web[2]'
 ```
 
-### Resource with for_each
+Resource with for_each
 
 ```bash
 # Target a specific instance by key

@@ -68,6 +68,7 @@ Create the IAM user and attach this policy.
 
 ```bash
 # Create the IAM user
+
 aws iam create-user --user-name chronicle-cloudtrail-reader
 
 # Create the policy

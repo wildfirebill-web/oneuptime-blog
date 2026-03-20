@@ -28,6 +28,7 @@ If you are starting a new role with Molecule:
 
 ```bash
 # Install molecule and ansible-lint
+
 pip install molecule ansible-lint
 
 # Initialize a new role with Molecule

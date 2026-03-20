@@ -30,6 +30,7 @@ Here is how to set up tenant namespaces with Istio injection:
 
 ```bash
 # Create a tenant namespace
+
 kubectl create namespace tenant-acme
 kubectl label namespace tenant-acme istio-injection=enabled
 kubectl label namespace tenant-acme tenant=acme

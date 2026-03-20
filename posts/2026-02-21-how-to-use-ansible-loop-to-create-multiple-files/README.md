@@ -18,6 +18,7 @@ The most basic use case is creating several empty files. The `file` module with 
 
 ```yaml
 # create-files.yml
+
 # Creates multiple empty log files with specific ownership
 - name: Create empty log files
   hosts: webservers

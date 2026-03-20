@@ -370,6 +370,7 @@ Istio metrics will show you overall traffic patterns for the GraphQL endpoint. S
 
 ```bash
 # P99 latency for GraphQL endpoint
+
 kubectl exec -n istio-system deploy/prometheus -- \
   promtool query instant 'histogram_quantile(0.99, sum(rate(istio_request_duration_milliseconds_bucket{destination_service="graphql-api.graphql-services.svc.cluster.local"}[5m])) by (le))'
 ```

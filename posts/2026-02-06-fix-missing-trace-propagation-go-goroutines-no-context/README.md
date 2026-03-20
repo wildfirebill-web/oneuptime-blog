@@ -51,6 +51,7 @@ Search your codebase for goroutine launches that do not pass context:
 
 ```bash
 # Find goroutines that might be missing context
+
 # Look for 'go ' followed by function calls without 'ctx'
 grep -rn 'go func()' --include='*.go' .
 grep -rn 'go s\.' --include='*.go' .

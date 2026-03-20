@@ -97,6 +97,7 @@ flowchart LR
 ```text
 Monitor Name: API SSL Certificate
 Description: Monitors SSL certificate for api.example.com
+
 URL: https://api.example.com
 Port: 443 (default)
 Monitoring Interval: Every 6 hours
@@ -202,6 +203,7 @@ This alert configuration catches unexpected self-signed certificates in producti
 
 ```yaml
 # Alert when a self-signed certificate is detected
+
 # Self-signed certs in production are usually a misconfiguration
 Condition: SSL Certificate is self-signed   # Triggers when cert issuer equals subject
 Action: Immediate alert to security team    # High priority - potential security risk

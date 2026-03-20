@@ -59,6 +59,7 @@ connection = pika.BlockingConnection(pika.ConnectionParameters('localhost'))
 channel = connection.channel()
 
 # Declare a lazy queue using x-queue-mode argument
+
 channel.queue_declare(
     queue='orders-lazy',
     durable=True,

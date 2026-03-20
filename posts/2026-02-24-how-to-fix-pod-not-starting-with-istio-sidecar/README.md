@@ -18,6 +18,7 @@ Start by getting the pod status and events:
 
 ```bash
 # Get detailed pod status
+
 kubectl describe pod <pod-name> -n production
 
 # Check all container statuses
@@ -225,7 +226,7 @@ kubectl get pod <pod-name> -n production -o jsonpath='{.spec.containers[?(@.name
 
 If there is a conflict, change your application port.
 
-## Resource Quota Exceeded
+Resource Quota Exceeded
 
 If the namespace has resource quotas, the additional sidecar container might push the pod over the limit:
 

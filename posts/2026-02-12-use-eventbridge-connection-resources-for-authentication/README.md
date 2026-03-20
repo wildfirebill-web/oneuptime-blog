@@ -43,6 +43,7 @@ Datadog's API expects an `DD-API-KEY` header:
 
 ```bash
 # Connection with Datadog API key as a custom header
+
 aws events create-connection \
   --name datadog-connection \
   --authorization-type API_KEY \

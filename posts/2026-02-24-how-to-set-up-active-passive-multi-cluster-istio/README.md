@@ -34,6 +34,7 @@ Install Istio on both clusters with separate control planes. The passive cluster
 
 ```yaml
 # active-cluster.yaml
+
 apiVersion: install.istio.io/v1alpha1
 kind: IstioOperator
 spec:

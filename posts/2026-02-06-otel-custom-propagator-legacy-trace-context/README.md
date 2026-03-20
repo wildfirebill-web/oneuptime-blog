@@ -32,6 +32,7 @@ X-MyCompany-Baggage: key1=val1;key2=val2
 
 ```python
 # legacy_propagator.py
+
 from opentelemetry.context import Context, get_current
 from opentelemetry.context.context import Context
 from opentelemetry.propagators import textmap

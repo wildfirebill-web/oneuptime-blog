@@ -64,6 +64,7 @@ MySQL 5.7+ includes a utility to generate certificates automatically:
 
 ```bash
 # Generate SSL certificates
+
 mysql_ssl_rsa_setup --datadir=/var/lib/mysql
 
 # This creates:

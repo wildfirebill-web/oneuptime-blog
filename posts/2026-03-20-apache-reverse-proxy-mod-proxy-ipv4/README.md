@@ -14,6 +14,7 @@ Apache's `mod_proxy` and `mod_proxy_http` modules turn Apache into a powerful re
 
 ```bash
 # Enable proxy modules
+
 sudo a2enmod proxy
 sudo a2enmod proxy_http
 sudo a2enmod proxy_balancer

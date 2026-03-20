@@ -18,6 +18,7 @@ The smallest valid Collector configuration needs one receiver, one exporter, and
 
 ```yaml
 # minimal-config.yaml
+
 # The simplest possible Collector configuration
 receivers:
   # OTLP receiver accepts traces, metrics, and logs

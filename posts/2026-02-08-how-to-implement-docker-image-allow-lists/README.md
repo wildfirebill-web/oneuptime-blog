@@ -34,6 +34,7 @@ Install the OPA plugin:
 
 ```bash
 # Install the OPA Docker authorization plugin
+
 docker plugin install openpolicyagent/opa-docker-authz-v2:latest \
   opa-args="-policy-file /opa/policies/authz.rego"
 ```

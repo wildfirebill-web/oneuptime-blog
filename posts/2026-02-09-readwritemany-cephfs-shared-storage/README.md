@@ -26,6 +26,7 @@ Check your Ceph cluster status:
 
 ```bash
 # Verify Ceph cluster health
+
 ceph status
 
 # Check MDS status (required for CephFS)

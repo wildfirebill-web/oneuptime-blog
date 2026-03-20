@@ -25,6 +25,7 @@ Verify the configuration:
 
 ```bash
 # Check the JWKS endpoint
+
 curl -s https://www.googleapis.com/service_accounts/v1/jwk/securetoken@system.gserviceaccount.com | python3 -m json.tool
 ```
 

@@ -93,6 +93,7 @@ The easiest way to create a mirror:
 
 ```bash
 # Create the mirror directory
+
 sudo mkdir -p /opt/terraform/providers
 
 # Generate the mirror from your project

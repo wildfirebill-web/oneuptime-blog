@@ -111,6 +111,7 @@ If you need to add a subscription to an existing application without editing the
 
 ```bash
 # Add a Slack subscription
+
 kubectl annotate application frontend-app \
   -n argocd \
   notifications.argoproj.io/subscribe.on-sync-failed.slack=alerts-critical

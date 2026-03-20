@@ -52,6 +52,7 @@ Useful Prometheus queries:
 
 ```promql
 # Request rate per service
+
 rate(istio_requests_total{reporter="source"}[5m])
 
 # Error rate (5xx)

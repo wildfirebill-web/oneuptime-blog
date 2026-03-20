@@ -32,6 +32,7 @@ Prepend a Unix timestamp or sortable date to the SHA. The timestamp provides the
 
 ```bash
 # Build and tag with timestamp-sha format
+
 # This produces tags like: 1709654400-a1b2c3d
 TIMESTAMP=$(date +%s)
 SHA=$(git rev-parse --short HEAD)

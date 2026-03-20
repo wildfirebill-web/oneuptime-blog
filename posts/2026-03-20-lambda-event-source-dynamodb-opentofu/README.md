@@ -8,7 +8,7 @@ Description: Learn how to configure Lambda event source mappings for DynamoDB St
 
 ## Introduction
 
-DynamoDB Streams captures item-level changes in a DynamoDB table. Lambda event source mappings consume these change events to trigger real-time processing—useful for audit logs, search index updates, cache invalidation, and cross-region replication.
+DynamoDB Streams captures item-level changes in a DynamoDB table. Lambda event source mappings consume these change events to trigger real-time processing-useful for audit logs, search index updates, cache invalidation, and cross-region replication.
 
 ## Prerequisites
 
@@ -78,6 +78,7 @@ resource "aws_lambda_function" "stream_handler" {
 
 ```hcl
 # SQS queue for unprocessable DynamoDB stream events
+
 resource "aws_sqs_queue" "dynamodb_dlq" {
   name = "dynamodb-stream-failures"
 }

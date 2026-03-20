@@ -45,6 +45,7 @@ The recommended approach for production environments.
 
 ```bash
 # Add Prometheus community Helm repo
+
 helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
 helm repo update
 

@@ -351,6 +351,7 @@ Track when processes violate seccomp profiles:
 
 ```bash
 # Check kernel audit logs
+
 sudo ausearch -m SECCOMP --start recent
 
 # Example output shows blocked syscalls

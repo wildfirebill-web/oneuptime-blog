@@ -12,7 +12,7 @@ FTP operates in two modes: active and passive. Active mode requires the server t
 
 ## Active vs Passive Mode
 
-```
+```yaml
 Active Mode:
   Client --[command port 21]--> Server
   Client <--[data port 20]---- Server  (server initiates: breaks NAT)
@@ -28,6 +28,7 @@ Passive Mode:
 # /etc/vsftpd.conf
 
 # IPv4 only
+
 listen=YES
 listen_ipv6=NO
 

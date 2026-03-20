@@ -52,6 +52,7 @@ Here is how to do the same assignment using Azure CLI:
 
 ```bash
 # First, find the policy definition ID for the storage encryption policy
+
 az policy definition list \
   --query "[?contains(displayName, 'customer-managed key')].{Name:name, DisplayName:displayName}" \
   --output table

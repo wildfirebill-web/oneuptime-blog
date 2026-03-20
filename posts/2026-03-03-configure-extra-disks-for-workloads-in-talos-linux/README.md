@@ -147,6 +147,7 @@ Install the Local Path Provisioner pointed at your extra disk mount:
 
 ```yaml
 # Storage class backed by extra disk
+
 apiVersion: storage.k8s.io/v1
 kind: StorageClass
 metadata:

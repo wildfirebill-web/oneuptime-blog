@@ -36,6 +36,7 @@ The simplest way to get an exit code is from the `podman run` command itself.
 
 ```bash
 # Successful container
+
 podman run --rm docker.io/library/alpine:latest echo "Success"
 echo "Exit code: $?"
 

@@ -16,6 +16,7 @@ SIP (Session Initiation Protocol) handles call setup and teardown, while RTP car
 
 ```bash
 # Capture on the SIP port (5060 UDP/TCP) and RTP range
+
 sudo tcpdump -i eth0 -w voip-capture.pcap \
   'port 5060 or (udp portrange 10000-20000)'
 
@@ -26,7 +27,7 @@ wireshark voip-capture.pcap
 
 ## Display Filters for SIP Traffic
 
-```
+```text
 # Show all SIP traffic
 sip
 
@@ -60,7 +61,7 @@ Or use **Telephony** → **SIP Flows** to get a visual ladder diagram.
 
 ## Display Filters for RTP
 
-```
+```text
 # Show all RTP traffic
 rtp
 
@@ -83,17 +84,17 @@ rtp.p_type == 0
 
 ## Check for Common VoIP Issues
 
-```
-# 403 Forbidden — authentication failure
+```text
+# 403 Forbidden - authentication failure
 sip.Status-Code == 403
 
-# 408 Request Timeout — server not responding
+# 408 Request Timeout - server not responding
 sip.Status-Code == 408
 
-# 486 Busy Here — called party busy
+# 486 Busy Here - called party busy
 sip.Status-Code == 486
 
-# Jitter/packet loss — check RTP statistics
+# Jitter/packet loss - check RTP statistics
 # Telephony → RTP → RTP Streams → Analyze
 ```
 

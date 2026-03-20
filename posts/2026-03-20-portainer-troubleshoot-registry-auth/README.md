@@ -12,8 +12,9 @@ Registry authentication failures are some of the most common errors when deployi
 
 ## Common Error Messages
 
-```
+```bash
 # Docker Hub authentication failure
+
 Error: pull access denied for myorg/myimage, repository does not exist or may require 'docker login'
 
 # Private registry auth failure
@@ -202,7 +203,7 @@ registry.company.com//myimage           # Double slash
 
 ## Diagnostic Checklist
 
-```
+```bash
 [ ] Registry URL is correct (no trailing slash, correct port)
 [ ] Username is correct (check for robot$ prefix for Harbor/GitLab)
 [ ] Password/token is current (not expired)

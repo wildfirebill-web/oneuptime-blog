@@ -57,6 +57,7 @@ As an admin, you can test this without logging out by checking the UI behavior:
 
 ```bash
 # Verify via Portainer API - check environment settings
+
 TOKEN=$(curl -s -X POST https://portainer.example.com/api/auth \
   -H "Content-Type: application/json" \
   -d '{"username":"admin","password":"yourpassword"}' | jq -r '.jwt')
@@ -76,7 +77,7 @@ If you want specific non-admin users to have KubeShell access without full Porta
 3. Grant the team **environment admin** access (not global admin) to the specific Kubernetes environment.
 4. Environment admins can use KubeShell for that environment.
 
-```
+```text
 Portainer Role Hierarchy:
 - Global Admin     → Full access to all environments + KubeShell everywhere
 - Environment Admin → Full access to specific environment + KubeShell in that env

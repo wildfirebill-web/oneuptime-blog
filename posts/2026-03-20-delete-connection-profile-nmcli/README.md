@@ -14,6 +14,7 @@ NetworkManager stores connection profiles that persist across reboots. Deleting 
 
 ```bash
 # List all connection profiles
+
 nmcli connection show
 
 # Output:
@@ -107,5 +108,5 @@ nmcli connection reload  # Tell NM to reread connections
 
 - `nmcli connection delete <name>` removes the profile and disconnects the interface if active.
 - Use `nmcli connection show` to list all profiles and identify stale ones (those with no device in the DEVICE column).
-- Connection files are stored in `/etc/NetworkManager/system-connections/`; avoid deleting files directly — use nmcli.
+- Connection files are stored in `/etc/NetworkManager/system-connections/`; avoid deleting files directly - use nmcli.
 - After deleting all connections for an interface, `nmcli device disconnect <iface>` ensures the interface is fully brought down.

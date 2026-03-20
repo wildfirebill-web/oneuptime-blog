@@ -22,6 +22,7 @@ On your workstation, use `screen`, `minicom`, or `picocom` to connect:
 
 ```bash
 # Find the serial device
+
 ls /dev/ttyUSB* /dev/ttyS*
 
 # Connect with screen (115200 baud is common for servers)

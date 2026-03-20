@@ -47,6 +47,7 @@ First, enable the system-assigned managed identity on your Azure resource:
 
 ```bash
 # Enable managed identity on App Service
+
 az webapp identity assign \
   --name my-app-service \
   --resource-group my-rg

@@ -27,6 +27,7 @@ This guide covers the specific upgrade steps for Calico in an OpenStack environm
 
 ```bash
 # 1. Check Neutron ML2 plugin version compatibility
+
 neutron-db-manage --config-file /etc/neutron/neutron.conf   --config-file /etc/neutron/plugins/ml2/ml2_conf.ini   current
 
 # 2. Check all calico-felix agents on compute nodes

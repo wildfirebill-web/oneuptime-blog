@@ -31,6 +31,7 @@ Deploy Notary alongside your container registry:
 
 ```yaml
 # notary-stack.yml
+
 version: "3"
 services:
   notary-server:

@@ -28,13 +28,13 @@ graph LR
     ASBR["ASBR\n(redistributes BGP)"] --> Area0
 ```
 
-The stub area routers only know about Area 0 and Area 1 prefixes—all external destinations are reached via the default route from the ABR.
+The stub area routers only know about Area 0 and Area 1 prefixes-all external destinations are reached via the default route from the ABR.
 
 ## Step 1: Configure the ABR for Stub Area
 
 The ABR must be configured as a stub area boundary. Configure this on the ABR:
 
-```
+```text
 ! On the ABR connecting Area 0 and Area 1
 ABR(config)# router ospf 1
 ABR(config-router)# router-id 10.0.0.2
@@ -51,7 +51,7 @@ The ABR automatically injects a default route (Type-3 LSA) into the stub area.
 
 **Every router in Area 1 must be configured as stub.** If any router is not configured as stub, neighbor adjacency with the ABR will fail (Area type mismatch):
 
-```
+```text
 ! On internal router R1 in Area 1
 R1(config)# router ospf 1
 R1(config-router)# router-id 172.16.1.1
@@ -63,7 +63,7 @@ R1(config-router)# area 1 stub
 
 ## Step 3: Verify Stub Configuration
 
-```
+```text
 ! On any router in Area 1
 R1# show ip ospf
 
@@ -86,18 +86,18 @@ R1# show ip route ospf
 
 The ABR injects the default route with cost 1 by default. Adjust it:
 
-```
+```text
 ! Set the cost of the default route injected into the stub area
 ABR(config-router)# area 1 default-cost 10
 ```
 
-Use this when multiple ABRs serve the same stub area—set a higher cost on the backup ABR to prefer the primary.
+Use this when multiple ABRs serve the same stub area-set a higher cost on the backup ABR to prefer the primary.
 
 ## Step 5: Compare Routing Table Size
 
 On a stub area router, the routing table is significantly smaller:
 
-```
+```text
 ! Before stub configuration: might have thousands of O E2 routes
 R1# show ip route summary
 
@@ -110,4 +110,4 @@ R1# show ip route summary
 
 ## Conclusion
 
-OSPF stub areas reduce routing table size on branch routers by blocking Type-4 and Type-5 external LSAs and replacing them with a default route from the ABR. All routers in the area must be configured as stub—missing this on even one router prevents adjacency formation. Use `area X default-cost` to influence which ABR is used for the default route when multiple ABRs serve the stub area.
+OSPF stub areas reduce routing table size on branch routers by blocking Type-4 and Type-5 external LSAs and replacing them with a default route from the ABR. All routers in the area must be configured as stub-missing this on even one router prevents adjacency formation. Use `area X default-cost` to influence which ABR is used for the default route when multiple ABRs serve the stub area.

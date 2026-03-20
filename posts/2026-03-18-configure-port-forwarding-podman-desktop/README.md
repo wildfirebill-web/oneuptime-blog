@@ -20,6 +20,7 @@ Port forwarding maps a port on your host machine to a port inside the container.
 
 ```bash
 # Basic port forward: host port 8080 maps to container port 80
+
 podman run -d --name web -p 8080:80 nginx:alpine
 
 # Access the service at http://localhost:8080

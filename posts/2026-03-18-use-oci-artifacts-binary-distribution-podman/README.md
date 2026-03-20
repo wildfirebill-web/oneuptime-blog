@@ -30,6 +30,7 @@ Start by packaging a compiled binary as an OCI artifact.
 
 ```bash
 # Simulate building a Go binary
+
 cat > hello.go <<EOF
 package main
 

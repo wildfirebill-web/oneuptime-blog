@@ -36,6 +36,7 @@ sequenceDiagram
 
 ```bash
 # Install the OpenVPN LDAP authentication plugin
+
 sudo dnf install -y epel-release
 sudo dnf install -y openvpn-auth-ldap
 ```

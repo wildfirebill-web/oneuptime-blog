@@ -1,8 +1,8 @@
-# How to Manage Kubernetes Nodes from Portainer
+# How to Manage Kubernetes Nodes from Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Kubernetes, Nodes, Cluster Management, DevOps
+Tags: Portainer, Kubernetes, Node, Cluster Management, DevOps
 
 Description: Learn how to view, cordon, drain, and manage Kubernetes nodes using Portainer's node management interface.
 
@@ -35,7 +35,7 @@ The nodes list shows:
 
 Click on a node name to see:
 
-```
+```text
 Node: worker-01
 ─────────────────────────────────────
 Status:       Ready
@@ -76,6 +76,7 @@ Or via CLI:
 
 ```bash
 # Add labels
+
 kubectl label node worker-01 environment=production
 kubectl label node worker-01 disk=ssd
 kubectl label node worker-02 gpu=nvidia
@@ -217,4 +218,4 @@ In Portainer, navigate to the **Nodes** list to see pod counts per node.
 
 ## Conclusion
 
-Portainer provides a clear view of Kubernetes node health and simplifies common operations like adding labels and monitoring resource utilization. For maintenance operations like draining and cordoning, use the Portainer interface or kubectl — both achieve the same result. Establish a regular maintenance routine that includes draining nodes before any OS updates or hardware changes to ensure zero-downtime operations.
+Portainer provides a clear view of Kubernetes node health and simplifies common operations like adding labels and monitoring resource utilization. For maintenance operations like draining and cordoning, use the Portainer interface or kubectl - both achieve the same result. Establish a regular maintenance routine that includes draining nodes before any OS updates or hardware changes to ensure zero-downtime operations.

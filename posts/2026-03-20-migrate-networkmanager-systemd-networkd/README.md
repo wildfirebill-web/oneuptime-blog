@@ -14,6 +14,7 @@ Migrating from NetworkManager to systemd-networkd involves: documenting current 
 
 ```bash
 # List all NetworkManager connections
+
 nmcli connection show
 
 # Get details for each connection
@@ -112,7 +113,7 @@ systemctl stop systemd-networkd
 
 ## Common Migration Issues
 
-- Interface names may differ between tools — use `ip link show` to confirm
+- Interface names may differ between tools - use `ip link show` to confirm
 - NetworkManager stores WiFi passwords; systemd-networkd requires separate WPA supplicant config for wireless
 - VPN connections may need reconfiguration
 

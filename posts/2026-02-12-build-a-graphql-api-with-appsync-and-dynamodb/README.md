@@ -34,6 +34,7 @@ Start with a schema that models your domain. Here is an example for a task manag
 
 ```graphql
 # AppSync GraphQL schema
+
 type Task {
   id: ID!
   title: String!

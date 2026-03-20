@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Samba, IPv4, Security, hosts deny, Access Control, SMB, Configuration
+Tags: Samba, IPv4, Security, Hosts deny, Access Control, SMB, Configuration
 
 Description: Learn how to use Samba's hosts allow and hosts deny directives to block specific IPv4 addresses and CIDR ranges from accessing SMB shares.
 
@@ -75,6 +75,7 @@ Override global settings for individual shares:
 
 ```bash
 # Test smb.conf syntax
+
 testparm
 
 # Reload Samba without restarting (applies most changes)

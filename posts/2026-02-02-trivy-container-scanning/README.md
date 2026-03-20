@@ -34,6 +34,7 @@ Trivy supports multiple installation methods. Pick the one that fits your enviro
 
 ```bash
 # Install Trivy using Homebrew
+
 brew install trivy
 
 # Verify installation

@@ -14,6 +14,7 @@ Comparison operators in OpenTofu evaluate to `true` or `false` based on the rela
 
 ```hcl
 # ==  Equal to
+
 # !=  Not equal to
 # <   Less than
 # <=  Less than or equal to

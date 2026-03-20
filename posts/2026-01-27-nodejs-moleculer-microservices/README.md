@@ -32,6 +32,7 @@ Unlike frameworks that require external service meshes or container orchestratio
 
 ```bash
 # Create project directory
+
 mkdir moleculer-demo && cd moleculer-demo
 
 # Initialize project

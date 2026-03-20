@@ -18,7 +18,8 @@ Intermittent drops are challenging because:
 ## Step 1: Measure Packet Loss Continuously
 
 ```bash
-# mtr — combines ping and traceroute with continuous loss measurement
+# mtr - combines ping and traceroute with continuous loss measurement
+
 # Run for 5 minutes to capture intermittent drops
 mtr --report --report-cycles 300 8.8.8.8
 
@@ -166,7 +167,7 @@ tc -s qdisc show dev eth0
 
 # Check traffic rate vs interface capacity
 sar -n DEV 1 10 | grep eth0
-# rxkB/s and txkB/s — compare against max bandwidth
+# rxkB/s and txkB/s - compare against max bandwidth
 ```
 
 ## Conclusion

@@ -33,6 +33,7 @@ First, initialize Docker Swarm on your primary node. This creates a manager that
 
 ```bash
 # On the first node (becomes manager) - advertise-addr is this node's IP
+
 docker swarm init --advertise-addr <node1-ip>
 
 # Copy the join command from output, run on other nodes

@@ -26,6 +26,7 @@ Before configuring triggers, make sure you have the ArgoCD notifications control
 
 ```bash
 # Check if notifications controller is running
+
 kubectl get pods -n argocd -l app.kubernetes.io/component=notifications-controller
 ```
 

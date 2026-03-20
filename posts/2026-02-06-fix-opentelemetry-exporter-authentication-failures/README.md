@@ -41,6 +41,7 @@ Enable debug logging in your SDK to see exporter errors:
 import logging
 
 # Enable debug logging for the OpenTelemetry exporter.
+
 # This will show every export attempt and its result,
 # including authentication errors.
 logging.basicConfig(level=logging.DEBUG)

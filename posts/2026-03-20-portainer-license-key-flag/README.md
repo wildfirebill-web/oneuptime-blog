@@ -23,6 +23,7 @@ Free 5-node trial licenses are available without payment at [portainer.io/take-3
 
 ```bash
 # Start Portainer BE with license key
+
 docker run -d \
   -p 9000:9000 \
   -p 9443:9443 \

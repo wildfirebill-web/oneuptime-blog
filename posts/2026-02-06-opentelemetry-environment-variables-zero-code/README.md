@@ -388,6 +388,7 @@ Here's a production-ready configuration for a Node.js microservice exporting to 
 #!/bin/bash
 
 # Service identity
+
 export OTEL_SERVICE_NAME=checkout-api
 
 # Resource attributes

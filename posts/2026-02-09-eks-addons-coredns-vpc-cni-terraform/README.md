@@ -30,6 +30,7 @@ Configure essential add-ons:
 
 ```hcl
 # eks-addons.tf
+
 terraform {
   required_providers {
     aws = {

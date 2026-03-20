@@ -815,6 +815,7 @@ Use a WebSocket client like websocat to test your server.
 
 ```bash
 # Install websocat
+
 cargo install websocat
 
 # Connect to the server

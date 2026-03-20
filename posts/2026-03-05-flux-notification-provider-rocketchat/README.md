@@ -40,6 +40,7 @@ Store the Rocket.Chat webhook URL in a Kubernetes secret.
 
 ```bash
 # Create a secret containing the Rocket.Chat webhook URL
+
 kubectl create secret generic rocketchat-webhook-url \
   --namespace=flux-system \
   --from-literal=address=https://rocketchat.example.com/hooks/TOKEN_VALUE

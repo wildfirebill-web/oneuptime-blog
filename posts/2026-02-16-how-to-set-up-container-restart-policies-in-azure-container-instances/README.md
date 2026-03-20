@@ -40,6 +40,7 @@ The container does not restart regardless of how it exits. Once it stops, it sta
 
 ```bash
 # Deploy with Always restart policy (long-running service)
+
 az container create \
     --resource-group my-resource-group \
     --name web-server \

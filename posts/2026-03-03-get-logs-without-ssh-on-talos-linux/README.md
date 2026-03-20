@@ -18,6 +18,7 @@ Every service managed by Talos writes logs that are accessible through talosctl:
 
 ```bash
 # View kubelet logs
+
 talosctl logs kubelet --nodes 192.168.1.10
 
 # View etcd logs (control plane nodes only)

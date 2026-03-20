@@ -25,6 +25,7 @@ NATS publishes an official Helm chart. Create an ArgoCD Application to install i
 
 ```yaml
 # argocd/nats-cluster.yaml
+
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:

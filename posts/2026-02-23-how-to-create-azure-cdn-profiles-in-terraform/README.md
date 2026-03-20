@@ -16,6 +16,7 @@ This post covers creating Azure CDN profiles and endpoints in Terraform with pro
 
 ```hcl
 # versions.tf
+
 terraform {
   required_version = ">= 1.5.0"
 
@@ -32,7 +33,7 @@ provider "azurerm" {
 }
 ```
 
-## Resource Group and Origin Storage
+Resource Group and Origin Storage
 
 ```hcl
 # main.tf

@@ -22,6 +22,7 @@ When you set a property on a parent, all children inherit it unless they have th
 
 ```bash
 # Set a property
+
 sudo zfs set <property>=<value> <dataset>
 
 # Get a property (with source showing where it comes from)

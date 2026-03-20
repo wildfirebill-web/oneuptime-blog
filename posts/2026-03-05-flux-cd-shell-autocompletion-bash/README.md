@@ -30,6 +30,7 @@ The `bash-completion` package provides the infrastructure that autocompletion sc
 
 ```bash
 # Install bash-completion on Debian-based systems
+
 sudo apt-get update && sudo apt-get install -y bash-completion
 ```
 

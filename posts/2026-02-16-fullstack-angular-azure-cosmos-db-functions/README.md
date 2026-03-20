@@ -24,6 +24,7 @@ This guide builds a recipe management application using all three technologies.
 
 ```bash
 # Create resources
+
 az group create --name recipe-app-rg --location eastus
 
 # Create Cosmos DB account

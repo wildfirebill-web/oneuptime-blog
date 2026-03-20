@@ -45,6 +45,7 @@ Keyspaces supports CQL (Cassandra Query Language) but does not support everythin
 
 ```python
 # Script to check Cassandra schema for Keyspaces compatibility issues
+
 from cassandra.cluster import Cluster
 
 cluster = Cluster(['cassandra-node-1'])

@@ -153,6 +153,7 @@ Numbers from production are great, but you should also run controlled load tests
 
 ```bash
 # Baseline test without the plugin
+
 kubectl exec fortio-pod -- fortio load \
   -c 50 -qps 1000 -t 60s \
   http://my-service:8080/api/test

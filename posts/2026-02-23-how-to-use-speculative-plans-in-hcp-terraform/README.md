@@ -46,6 +46,7 @@ If you have not already:
 
 ```hcl
 # Create a VCS-connected workspace
+
 resource "tfe_workspace" "app_infra" {
   name           = "app-infrastructure"
   organization   = "your-org"

@@ -160,6 +160,7 @@ Check the HelmRelease status to see upgrade and rollback information:
 
 ```bash
 # View the HelmRelease status
+
 flux get helmrelease my-application -n production
 
 # Check for upgrade and rollback events

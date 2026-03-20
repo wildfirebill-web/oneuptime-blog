@@ -14,6 +14,7 @@ Azure Container Instances (ACI) is the simplest way to run containers in Azure. 
 
 ```bash
 # Install Azure collection and SDK
+
 ansible-galaxy collection install azure.azcollection
 pip install azure-identity azure-mgmt-containerinstance azure-mgmt-resource
 ```

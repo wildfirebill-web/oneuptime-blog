@@ -14,6 +14,7 @@ Description: Configure primary and secondary DNS servers on Windows network adap
 
 ```powershell
 # Set primary and secondary DNS on "Ethernet" adapter
+
 Set-DnsClientServerAddress `
     -InterfaceAlias "Ethernet" `
     -ServerAddresses @("8.8.8.8", "1.1.1.1")

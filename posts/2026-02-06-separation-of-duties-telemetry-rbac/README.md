@@ -23,6 +23,7 @@ The OpenTelemetry Collector supports bearer token authentication on its receiver
 
 ```yaml
 # otel-collector-rbac.yaml
+
 # Collector config with OIDC-based authentication on receivers
 
 extensions:

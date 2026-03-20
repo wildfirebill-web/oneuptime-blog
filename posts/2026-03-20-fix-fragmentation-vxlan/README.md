@@ -12,7 +12,7 @@ VXLAN (Virtual Extensible LAN) encapsulates Layer 2 frames in UDP/IP, adding 50 
 
 ## VXLAN Overhead Breakdown
 
-```
+```text
 VXLAN Encapsulation Overhead:
   Outer Ethernet header:  14 bytes
   Outer IP header:        20 bytes
@@ -34,6 +34,7 @@ VXLAN Encapsulation Overhead:
 
 ```bash
 # Create VXLAN interface with correct MTU:
+
 ip link add vxlan10 type vxlan id 10 \
   local 192.168.1.10 \
   remote 192.168.1.20 \

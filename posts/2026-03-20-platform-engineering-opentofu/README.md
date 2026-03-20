@@ -27,6 +27,7 @@ The platform team creates modules that enforce security, monitoring, and complia
 
 ```hcl
 # modules/platform-service/main.tf
+
 # This module represents the "golden path" for deploying a web service
 # It enforces: TLS, WAF, monitoring, tagging, and secret management
 
@@ -70,7 +71,7 @@ variable "desired_count" {
   }
 }
 
-# Platform-enforced locals — not overridable by calling modules
+# Platform-enforced locals - not overridable by calling modules
 locals {
   common_tags = {
     Service     = var.service_name
@@ -113,7 +114,7 @@ resource "aws_ecs_service" "main" {
   }
 }
 
-# Platform-enforced monitoring — auto-created for every service
+# Platform-enforced monitoring - auto-created for every service
 resource "aws_cloudwatch_metric_alarm" "high_cpu" {
   alarm_name          = "${var.service_name}-high-cpu"
   comparison_operator = "GreaterThanOrEqualToThreshold"
@@ -142,7 +143,7 @@ data "aws_ecs_cluster" "platform" {
 
 ```hcl
 # teams/orders-team/orders-api/main.tf
-# The application team's entire infrastructure — 10 lines
+# The application team's entire infrastructure - 10 lines
 module "orders_api" {
   source  = "git::https://github.com/myorg/platform-modules.git//platform-service?ref=v1.5.0"
 
@@ -179,7 +180,7 @@ resource "aws_ssm_parameter" "alert_topic" {
 
 ## Best Practices
 
-- Design platform modules to be opinionated — they should enforce security and operational standards, not just provide convenience.
+- Design platform modules to be opinionated - they should enforce security and operational standards, not just provide convenience.
 - Version your platform modules with semantic versioning so teams can upgrade deliberately and test before adopting new versions.
 - Provide migration guides when making breaking changes to platform module APIs.
 - Publish module documentation to an internal portal (Backstage, Confluence) so teams can discover what's available.

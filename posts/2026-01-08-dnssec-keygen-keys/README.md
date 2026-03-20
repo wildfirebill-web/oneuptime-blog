@@ -18,6 +18,7 @@ Before starting, ensure you have BIND utilities installed:
 
 ```bash
 # Debian/Ubuntu
+
 sudo apt-get update
 sudo apt-get install bind9-utils bind9-dnsutils
 

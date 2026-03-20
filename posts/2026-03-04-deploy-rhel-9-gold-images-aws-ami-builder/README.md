@@ -28,6 +28,7 @@ graph LR
 
 ```bash
 # Create a component that installs standard packages
+
 cat <<'COMPONENT' > rhel9-base-component.yaml
 name: RHEL9-Base-Config
 description: Base configuration for RHEL gold image

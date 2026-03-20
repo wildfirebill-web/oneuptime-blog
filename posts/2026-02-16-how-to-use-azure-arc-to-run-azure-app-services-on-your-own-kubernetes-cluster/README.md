@@ -37,6 +37,7 @@ You need the following before getting started:
 
 ```bash
 # Install required CLI extensions
+
 az extension add --name connectedk8s --upgrade
 az extension add --name k8s-extension --upgrade
 az extension add --name customlocation --upgrade

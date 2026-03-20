@@ -30,6 +30,7 @@ Here's a minimal configuration for the Google Client Auth extension using applic
 
 ```yaml
 # collector-config.yaml
+
 extensions:
   # Configure the Google Client Auth extension
   googleclientauth:

@@ -22,6 +22,7 @@ Enable KMS encryption for S3-backed Velero installations:
 
 ```bash
 # Create KMS key for Velero backups
+
 aws kms create-key \
   --description "Velero backup encryption key" \
   --key-policy file://kms-key-policy.json

@@ -1,4 +1,4 @@
-# How to Configure State Encryption with OpenBao in OpenTofu
+# How to Configure State Encryption with OpenBao in OpenTofu - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -21,6 +21,7 @@ OpenBao is an open-source fork of HashiCorp Vault that provides secret managemen
 
 ```bash
 # Enable the Transit secrets engine in OpenBao
+
 bao secrets enable transit
 
 # Create a named encryption key for OpenTofu state
@@ -207,4 +208,4 @@ bao write transit/rewrap/terraform-state \
 
 ## Conclusion
 
-OpenBao provides a self-hosted, open-source alternative to cloud KMS services for OpenTofu state encryption. It's ideal for organizations that need full control over their key management infrastructure or operate in air-gapped environments. The Transit secrets engine provides strong encryption, automatic key rotation, and detailed audit logs — all the features needed for production-grade state encryption.
+OpenBao provides a self-hosted, open-source alternative to cloud KMS services for OpenTofu state encryption. It's ideal for organizations that need full control over their key management infrastructure or operate in air-gapped environments. The Transit secrets engine provides strong encryption, automatic key rotation, and detailed audit logs - all the features needed for production-grade state encryption.

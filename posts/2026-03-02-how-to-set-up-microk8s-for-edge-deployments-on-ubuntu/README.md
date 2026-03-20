@@ -33,6 +33,7 @@ For comparison: a standard kubeadm cluster needs ~6 GB RAM just for control plan
 
 ```bash
 # Install the latest stable channel
+
 sudo snap install microk8s --classic --channel=1.29/stable
 
 # Add your user to the microk8s group (avoid sudo for kubectl)
@@ -122,7 +123,7 @@ sudo ufw allow 30000:32767/tcp
 sudo ufw allow 30000:32767/udp
 ```
 
-## Resource Limits for Edge Hardware
+Resource Limits for Edge Hardware
 
 On resource-constrained edge devices, set cluster-wide resource defaults:
 

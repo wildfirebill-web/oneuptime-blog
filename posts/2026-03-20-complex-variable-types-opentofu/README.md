@@ -38,6 +38,7 @@ variable "application" {
 
 ```hcl
 # Example value in terraform.tfvars
+
 application = {
   name    = "myapp"
   version = "2.0"

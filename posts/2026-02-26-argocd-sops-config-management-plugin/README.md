@@ -58,6 +58,7 @@ sops:
 
 ```yaml
 # plugin.yaml
+
 apiVersion: argoproj.io/v1alpha1
 kind: ConfigManagementPlugin
 metadata:

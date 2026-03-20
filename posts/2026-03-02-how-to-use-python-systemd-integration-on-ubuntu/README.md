@@ -23,6 +23,7 @@ When you run a Python script as a systemd service, you can log with `print()` an
 
 ```bash
 # Install the system package (recommended on Ubuntu)
+
 sudo apt update
 sudo apt install python3-systemd
 

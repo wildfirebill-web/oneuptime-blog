@@ -27,6 +27,7 @@ This is the safest scaling operation. When you scale from C1 to C2 (or P1 to P3)
 
 ```bash
 # Scale up from Standard C1 to Standard C3
+
 az redis update \
   --name my-redis-cache \
   --resource-group rg-redis \

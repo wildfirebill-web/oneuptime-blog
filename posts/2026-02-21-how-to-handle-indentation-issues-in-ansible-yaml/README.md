@@ -23,6 +23,7 @@ Indentation errors are the number one source of YAML parsing failures in Ansible
 
 ```yaml
 # This looks correct but has a tab character
+
 - name: Install packages
 	ansible.builtin.apt:  # TAB here - will fail
     name: nginx

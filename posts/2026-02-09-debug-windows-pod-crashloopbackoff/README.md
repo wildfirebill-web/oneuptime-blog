@@ -22,6 +22,7 @@ Start with basic kubectl commands:
 
 ```bash
 # Check pod status
+
 kubectl get pods
 
 # Describe the pod for events and state

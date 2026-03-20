@@ -22,6 +22,7 @@ First, let us set up the database infrastructure with Terraform:
 
 ```hcl
 # Configure Terraform
+
 terraform {
   required_providers {
     aws = {

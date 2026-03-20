@@ -66,6 +66,7 @@ Write barriers ensure data integrity but add overhead:
 
 ```bash
 # Disable barriers (only with battery-backed cache)
+
 /dev/vg_data/lv_data /data ext4 defaults,nobarrier 0 2
 ```
 

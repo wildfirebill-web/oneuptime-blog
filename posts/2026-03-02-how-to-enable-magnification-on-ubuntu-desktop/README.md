@@ -26,6 +26,7 @@ For more granular control, use `gsettings` from the terminal. This is especially
 
 ```bash
 # Enable the zoom feature
+
 gsettings set org.gnome.desktop.a11y.applications screen-magnifier-enabled true
 
 # Set the zoom factor (2.0 means 200% zoom)

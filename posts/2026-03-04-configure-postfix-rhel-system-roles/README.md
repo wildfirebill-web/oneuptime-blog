@@ -29,6 +29,7 @@ graph LR
 
 ```bash
 # Install system roles on the control node
+
 sudo dnf install rhel-system-roles
 ```
 

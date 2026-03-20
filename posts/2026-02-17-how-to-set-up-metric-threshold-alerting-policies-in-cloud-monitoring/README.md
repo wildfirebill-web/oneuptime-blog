@@ -29,6 +29,7 @@ Here is an alert that fires when any VM instance exceeds 80% CPU utilization for
 
 ```bash
 # Create an alerting policy for high CPU utilization
+
 gcloud alpha monitoring policies create \
   --display-name="High CPU Utilization" \
   --condition-display-name="CPU above 80%" \

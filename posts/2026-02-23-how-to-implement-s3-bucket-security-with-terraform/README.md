@@ -18,6 +18,7 @@ The most important S3 security setting is the public access block. Enable it at 
 
 ```hcl
 # Account-level public access block
+
 resource "aws_s3_account_public_access_block" "account" {
   block_public_acls       = true
   block_public_policy     = true

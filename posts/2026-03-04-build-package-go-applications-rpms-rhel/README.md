@@ -14,6 +14,7 @@ Packaging Go binaries as RPMs lets you distribute them through standard RHEL pac
 
 ```bash
 # Install RPM build tools
+
 sudo dnf install -y rpm-build rpmdevtools golang
 
 # Set up the RPM build directory structure

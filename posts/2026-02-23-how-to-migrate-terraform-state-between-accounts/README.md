@@ -20,6 +20,7 @@ Common scenarios include splitting a shared AWS account into separate production
 
 ```bash
 # Authenticate to the source AWS account
+
 export AWS_PROFILE=source-account
 
 # Pull the current state

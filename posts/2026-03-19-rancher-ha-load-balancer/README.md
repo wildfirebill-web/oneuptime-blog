@@ -47,6 +47,7 @@ Join the second and third nodes:
 
 ```bash
 # On node 2
+
 ssh ubuntu@192.168.1.102
 curl -sfL https://get.k3s.io | sh -s - server \
   --server https://192.168.1.101:6443 \

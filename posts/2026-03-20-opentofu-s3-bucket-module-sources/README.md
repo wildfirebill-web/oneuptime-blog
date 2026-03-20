@@ -24,6 +24,7 @@ The `s3::` prefix tells OpenTofu to use the S3 protocol handler. The URL follows
 
 ```hcl
 # Fetch a versioned module archive from S3
+
 module "vpc" {
   source = "s3::https://s3.amazonaws.com/acme-terraform-modules/vpc/v2.1.0.zip"
 
@@ -60,7 +61,7 @@ module "security_groups" {
 
 ## Authentication
 
-OpenTofu uses the standard AWS credential chain — the same mechanism used by the AWS CLI and Terraform AWS provider:
+OpenTofu uses the standard AWS credential chain - the same mechanism used by the AWS CLI and Terraform AWS provider:
 
 ```bash
 # Option 1: Environment variables
@@ -97,7 +98,7 @@ Restrict access to module archives using S3 bucket policies:
 
 A consistent naming convention makes modules easy to discover:
 
-```
+```text
 s3://acme-terraform-modules/
 ├── vpc/
 │   ├── v1.0.0.zip

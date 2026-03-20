@@ -14,6 +14,7 @@ Portainer uses ports 9000 (HTTP) and 9443 (HTTPS) by default. If another service
 
 ```bash
 # Check what process is using port 9000
+
 sudo ss -tlnp | grep 9000
 
 # Alternative using lsof
@@ -31,7 +32,7 @@ sudo ss -tlnp | grep LISTEN
 
 Example output showing a conflict:
 
-```
+```text
 LISTEN  0  128  0.0.0.0:9000  0.0.0.0:*  users:(("node",pid=1234,fd=8))
 ```
 
@@ -70,7 +71,7 @@ docker run -d \
 # Access at http://your-host:9001
 ```
 
-Note: The container's internal port stays 9000/9443 — only the host-side mapping changes.
+Note: The container's internal port stays 9000/9443 - only the host-side mapping changes.
 
 ## Step 4: Update an Existing Portainer Installation
 

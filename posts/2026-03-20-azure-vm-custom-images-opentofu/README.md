@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Azure, Custom Images, Shared Image Gallery, VMs, Golden Images, Infrastructure as Code
+Tags: OpenTofu, Azure, Custom Images, Shared Image Gallery, VMs, Golden Image, Infrastructure as Code
 
 Description: Learn how to create and use custom VM images with OpenTofu on Azure, including Azure Compute Gallery for image versioning and multi-region distribution.
 
@@ -87,6 +87,7 @@ resource "azurerm_shared_image_version" "v1" {
 
 ```hcl
 # Look up latest image version
+
 data "azurerm_shared_image_version" "latest" {
   name                = "latest"
   gallery_name        = azurerm_shared_image_gallery.main.name
@@ -159,4 +160,4 @@ az sig image-version list \
 
 ## Conclusion
 
-Always generalize (sysprep/waagent -deprovision) the source VM before creating an image—ungeneralized images contain machine-specific identifiers that cause problems with multiple VMs. Use Azure Compute Gallery over simple managed images for production: it supports replication, versioning, and sharing. Set `exclude_from_latest = true` on new image versions during testing, then set it to `false` after validation to promote the version to "latest". Replicate images to all regions where VMs will be deployed to reduce deployment time and avoid cross-region data transfer costs.
+Always generalize (sysprep/waagent -deprovision) the source VM before creating an image-ungeneralized images contain machine-specific identifiers that cause problems with multiple VMs. Use Azure Compute Gallery over simple managed images for production: it supports replication, versioning, and sharing. Set `exclude_from_latest = true` on new image versions during testing, then set it to `false` after validation to promote the version to "latest". Replicate images to all regions where VMs will be deployed to reduce deployment time and avoid cross-region data transfer costs.

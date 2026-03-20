@@ -38,6 +38,7 @@ For bare metal automation, you need:
 
 ```bash
 # Install required collections and libraries
+
 ansible-galaxy collection install community.general
 pip install pyghmi
 ```

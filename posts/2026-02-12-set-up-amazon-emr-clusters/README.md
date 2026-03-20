@@ -150,6 +150,7 @@ First, create a bootstrap script and upload it to S3.
 ```bash
 #!/bin/bash
 # bootstrap.sh - Install extra Python packages and configure the environment
+
 sudo pip3 install pandas numpy boto3 pyarrow
 sudo yum install -y htop
 echo "export PYSPARK_PYTHON=python3" | sudo tee -a /etc/environment

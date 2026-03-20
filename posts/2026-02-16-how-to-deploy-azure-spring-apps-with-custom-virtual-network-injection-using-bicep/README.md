@@ -320,6 +320,7 @@ Deploy the entire setup with a single command.
 
 ```bash
 # Create the resource group
+
 az group create --name rg-spring-apps --location eastus2
 
 # Deploy the Bicep template

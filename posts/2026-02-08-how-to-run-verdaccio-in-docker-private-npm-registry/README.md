@@ -18,6 +18,7 @@ Run Verdaccio with a single command:
 
 ```bash
 # Start Verdaccio on port 4873
+
 docker run -d \
   --name verdaccio \
   -p 4873:4873 \

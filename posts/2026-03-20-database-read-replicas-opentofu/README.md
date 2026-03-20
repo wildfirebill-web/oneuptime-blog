@@ -16,6 +16,7 @@ RDS read replicas are asynchronous copies of your primary database that serve re
 
 ```hcl
 # Primary database (must have backups enabled)
+
 resource "aws_db_instance" "primary" {
   identifier              = "primary-db"
   engine                  = "postgres"
@@ -40,7 +41,7 @@ resource "aws_db_instance" "replica" {
   replicate_source_db = aws_db_instance.primary.identifier
   instance_class      = "db.t3.medium"
 
-  # No db_name, username, password needed — inherited from primary
+  # No db_name, username, password needed - inherited from primary
   publicly_accessible    = false
   vpc_security_group_ids = [aws_security_group.rds.id]
   skip_final_snapshot    = true

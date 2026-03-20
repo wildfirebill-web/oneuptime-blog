@@ -358,6 +358,7 @@ This Python script extracts data from a PostgreSQL source database, handling con
 
 ```python
 # extract.py
+
 # Extracts data from source systems with incremental loading support
 
 import psycopg2

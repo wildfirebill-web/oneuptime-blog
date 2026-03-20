@@ -14,6 +14,7 @@ Envoy is a high-performance edge and service proxy used in service meshes (Istio
 
 ```bash
 # Ubuntu
+
 sudo apt-get update
 sudo apt-get install -y apt-transport-https ca-certificates curl gnupg-agent software-properties-common
 

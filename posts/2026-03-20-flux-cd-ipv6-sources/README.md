@@ -1,4 +1,4 @@
-# How to Configure Flux CD Source Controllers with IPv6
+# How to Configure Flux CD Source Controllers with IPv6 - Sources
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -14,6 +14,7 @@ Flux CD's source-controller manages connections to Git repositories, Helm reposi
 
 ```bash
 # Check Flux pods have IPv6 connectivity
+
 kubectl get pods -n flux-system
 
 # Verify source-controller can reach IPv6 endpoints

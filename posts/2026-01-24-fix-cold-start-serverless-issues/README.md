@@ -231,6 +231,7 @@ flowchart TB
 
 ```yaml
 # serverless.yml
+
 service: my-api
 
 provider:

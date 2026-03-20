@@ -216,6 +216,7 @@ Set up a log-based metric and alert so you know when this error is happening fre
 
 ```bash
 # Create a log-based metric for offset already exists errors
+
 gcloud logging metrics create bigquery-offset-already-exists \
     --description="Count of BigQuery Write API offset already exists errors" \
     --log-filter='resource.type="bigquery_resource" AND "offset already exists"' \

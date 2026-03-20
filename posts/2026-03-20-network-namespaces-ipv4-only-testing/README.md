@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Network Namespace, IPv4, Testing, Linux, netns, Isolation, Connectivity
+Tags: Network Namespaces, IPv4, Testing, Linux, Netns, Isolation, Connectivity
 
 Description: Learn how to use Linux network namespaces to create isolated IPv4-only testing environments that simulate specific network conditions without affecting host connectivity.
 
 ---
 
-Network namespaces provide a lightweight way to test IPv4 connectivity in isolation — simulating specific topologies, testing firewall rules, or verifying application behavior without network virtualization overhead.
+Network namespaces provide a lightweight way to test IPv4 connectivity in isolation - simulating specific topologies, testing firewall rules, or verifying application behavior without network virtualization overhead.
 
 ## Use Cases for IPv4-Only Namespace Testing
 
@@ -21,6 +21,7 @@ Network namespaces provide a lightweight way to test IPv4 connectivity in isolat
 
 ```bash
 # Create namespace
+
 ip netns add ipv4-test
 
 # Bring up loopback (required for localhost connectivity)
@@ -28,7 +29,7 @@ ip netns exec ipv4-test ip link set lo up
 
 # Verify: no IPv6 by default in new namespaces
 ip netns exec ipv4-test ip -6 addr show
-# (empty — good)
+# (empty - good)
 ```
 
 ## Disabling IPv6 in the Namespace

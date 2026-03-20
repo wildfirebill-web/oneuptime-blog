@@ -18,6 +18,7 @@ Retrieve logs from the previous container:
 
 ```bash
 # Get logs from previous container instance
+
 kubectl logs pod-name --previous
 
 # Short form

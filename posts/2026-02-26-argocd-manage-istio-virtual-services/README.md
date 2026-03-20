@@ -144,6 +144,7 @@ Use Kustomize patches to adjust traffic weights between environments:
 
 ```yaml
 # base/virtual-services/product-service.yaml
+
 apiVersion: networking.istio.io/v1beta1
 kind: VirtualService
 metadata:

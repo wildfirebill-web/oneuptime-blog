@@ -1,4 +1,4 @@
-# How to Set Up OpenTofu Autocompletion in Bash
+# How to Set Up OpenTofu Autocompletion in Bash - Autocompletion
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -18,6 +18,7 @@ OpenTofu includes a built-in command to install shell completion.
 
 ```bash
 # Install OpenTofu tab completion for Bash
+
 tofu -install-autocomplete
 
 # This adds a line to your ~/.bashrc similar to:
@@ -32,7 +33,7 @@ tofu -install-autocomplete
 # Source your updated .bashrc to apply immediately
 source ~/.bashrc
 
-# Test autocompletion — type "tofu " and press Tab
+# Test autocompletion - type "tofu " and press Tab
 tofu <TAB>
 # Expected output:
 # apply          console        destroy        force-unlock   import

@@ -26,6 +26,7 @@ Install the httpd package and the supporting tools:
 
 ```bash
 # Install the Apache web server package
+
 sudo dnf install -y httpd
 ```
 

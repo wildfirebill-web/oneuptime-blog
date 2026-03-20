@@ -44,6 +44,7 @@ graph TD
 
 ```yaml
 # tenants/base/tenant-a/namespace.yaml
+
 apiVersion: v1
 kind: Namespace
 metadata:

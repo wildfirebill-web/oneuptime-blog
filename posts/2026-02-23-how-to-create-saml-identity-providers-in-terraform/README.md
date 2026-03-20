@@ -39,6 +39,7 @@ The first step is to register your identity provider with AWS using its metadata
 
 ```hcl
 # Create the SAML provider from the IdP metadata
+
 resource "aws_iam_saml_provider" "corporate_idp" {
   name                   = "CorporateIdP"
   saml_metadata_document = file("${path.module}/metadata/idp-metadata.xml")

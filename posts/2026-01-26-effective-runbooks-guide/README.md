@@ -291,6 +291,7 @@ Automate this where possible:
 
 ```yaml
 # In your CI/CD pipeline
+
 - name: Check runbook impact
   script: |
     CHANGED_SERVICES=$(git diff --name-only HEAD~1 | grep "terraform/")

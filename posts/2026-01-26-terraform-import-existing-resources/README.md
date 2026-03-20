@@ -30,6 +30,7 @@ First, create a placeholder configuration matching the existing resource:
 # main.tf
 
 # Placeholder for existing S3 bucket
+
 resource "aws_s3_bucket" "existing_data" {
   bucket = "mycompany-existing-data-bucket"
 
@@ -314,7 +315,7 @@ terraform import aws_iam_role_policy_attachment.app my-role/arn:aws:iam::aws:pol
 
 ## Handling Import Errors
 
-### Resource Already Managed
+Resource Already Managed
 
 ```text
 Error: Resource already managed by Terraform
@@ -327,7 +328,7 @@ Solution: The resource is in another state file. Remove from the other state fir
 terraform state rm aws_instance.web
 ```
 
-### Resource Not Found
+Resource Not Found
 
 ```text
 Error: Cannot import non-existent resource

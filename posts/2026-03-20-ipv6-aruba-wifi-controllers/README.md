@@ -16,6 +16,7 @@ Aruba Networks (HPE) wireless controllers running AOS support IPv6 for managemen
 # AOS CLI - Configure IPv6 on management VLAN
 
 # Enter configuration mode
+
 (Aruba) # configure terminal
 
 # Configure IPv6 address on VLAN interface

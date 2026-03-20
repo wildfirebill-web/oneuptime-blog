@@ -20,6 +20,7 @@ A standard Dockerfile with regular COPY:
 
 ```dockerfile
 # Standard COPY - each layer depends on all previous layers
+
 FROM debian:bookworm-slim
 
 RUN apt-get update && \

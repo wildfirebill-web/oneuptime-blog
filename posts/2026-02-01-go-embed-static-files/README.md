@@ -456,6 +456,7 @@ Every embedded file increases your binary size by exactly the file's size plus a
 
 ```bash
 # Build without embedding
+
 go build -o app-minimal
 
 # Build with embedding  

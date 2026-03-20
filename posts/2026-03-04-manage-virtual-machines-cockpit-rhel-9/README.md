@@ -18,6 +18,7 @@ Install the virtualization packages and Cockpit VM module:
 
 ```bash
 # Install the virtualization host group
+
 sudo dnf install @virtualization-host-environment -y
 
 # Install the Cockpit VM management module

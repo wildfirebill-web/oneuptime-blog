@@ -18,6 +18,7 @@ Keeping track of auto-updates is important for maintaining system health. Podman
 
 ```bash
 # See which containers are configured for auto-update
+
 podman auto-update --dry-run
 ```
 

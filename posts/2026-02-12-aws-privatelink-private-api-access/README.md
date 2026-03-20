@@ -41,6 +41,7 @@ This creates a PrivateLink endpoint for S3 in your VPC:
 
 ```bash
 # Create an interface endpoint for S3
+
 aws ec2 create-vpc-endpoint \
   --vpc-id vpc-12345678 \
   --service-name com.amazonaws.us-east-1.s3 \

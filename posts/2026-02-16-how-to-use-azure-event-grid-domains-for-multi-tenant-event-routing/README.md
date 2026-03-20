@@ -35,6 +35,7 @@ Create the domain using the Azure CLI.
 
 ```bash
 # Create an Event Grid domain
+
 az eventgrid domain create \
   --name domain-saas-events \
   --resource-group rg-events \

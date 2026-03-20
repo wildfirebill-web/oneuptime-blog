@@ -18,6 +18,7 @@ RuntimeClass is a cluster-scoped resource that defines available container runti
 
 ```bash
 # List available runtime classes
+
 kubectl get runtimeclass
 
 # View details

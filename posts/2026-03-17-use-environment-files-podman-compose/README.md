@@ -20,6 +20,7 @@ podman-compose automatically reads a `.env` file in the same directory as your c
 
 ```bash
 # .env
+
 POSTGRES_VERSION=16
 APP_PORT=8080
 DB_PASSWORD=devsecret

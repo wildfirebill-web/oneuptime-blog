@@ -36,6 +36,7 @@ Next, add the IOMMU kernel parameter on your host system:
 
 ```bash
 # For Intel CPUs, add to GRUB_CMDLINE_LINUX in /etc/default/grub
+
 GRUB_CMDLINE_LINUX="intel_iommu=on iommu=pt"
 
 # For AMD CPUs

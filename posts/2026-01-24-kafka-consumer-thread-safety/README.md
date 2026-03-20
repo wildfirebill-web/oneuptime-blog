@@ -708,6 +708,7 @@ class ThreadSafeConsumerWrapper:
 
 
 # Example usage
+
 def example_handler(msg, worker_id: int):
     """Example message handler."""
     logger.info(f"Worker {worker_id}: {msg.partition()}/{msg.offset()}")

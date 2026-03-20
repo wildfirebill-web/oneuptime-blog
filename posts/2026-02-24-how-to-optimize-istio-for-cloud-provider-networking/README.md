@@ -269,6 +269,7 @@ Track Istio's performance overhead with these Prometheus queries:
 
 ```promql
 # P99 proxy latency
+
 histogram_quantile(0.99, sum(rate(istio_request_duration_milliseconds_bucket{reporter="destination"}[5m])) by (le, destination_service))
 
 # Sidecar memory usage

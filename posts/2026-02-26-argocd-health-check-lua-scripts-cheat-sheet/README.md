@@ -389,6 +389,7 @@ To test your Lua scripts before deploying them:
 
 ```bash
 # Check the current health assessment of an app
+
 argocd app get my-app --output json | jq '.status.resources[] | {kind, name, health}'
 
 # View the ArgoCD application controller logs for health check errors

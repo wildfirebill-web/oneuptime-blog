@@ -33,6 +33,7 @@ Create a Percy account and get your token:
 
 ```bash
 # Set the Percy token
+
 export PERCY_TOKEN=your_percy_token_here
 ```
 

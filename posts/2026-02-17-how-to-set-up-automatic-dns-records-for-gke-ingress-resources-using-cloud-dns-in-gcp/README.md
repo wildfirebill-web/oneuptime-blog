@@ -45,6 +45,7 @@ If you do not already have a managed zone, create one.
 
 ```bash
 # Create a public managed zone for your domain
+
 gcloud dns managed-zones create my-domain-zone \
     --dns-name=example.com. \
     --description="DNS zone for automated GKE records" \

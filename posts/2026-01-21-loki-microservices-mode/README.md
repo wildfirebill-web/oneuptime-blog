@@ -952,6 +952,7 @@ When scaling ingesters, follow this process:
 
 ```bash
 # 1. Update the StatefulSet replicas
+
 kubectl scale statefulset loki-ingester -n loki --replicas=5
 
 # 2. Monitor the ring status

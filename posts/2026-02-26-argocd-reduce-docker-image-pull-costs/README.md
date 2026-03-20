@@ -39,6 +39,7 @@ The default `imagePullPolicy` depends on the tag. For `latest` tags, it defaults
 
 ```yaml
 # deployment.yaml managed by ArgoCD
+
 spec:
   template:
     spec:

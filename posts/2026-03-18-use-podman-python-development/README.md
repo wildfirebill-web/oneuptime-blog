@@ -22,6 +22,7 @@ The official Python images on Docker Hub come in several variants. Picking the r
 
 ```bash
 # Full image - includes build tools, useful for development
+
 podman pull docker.io/library/python:3.12
 
 # Slim image - smaller, Debian-based, no build tools pre-installed

@@ -40,6 +40,7 @@ The `user-data` file drives the entire installation:
 
 ```yaml
 # http/user-data
+
 #cloud-config
 autoinstall:
   version: 1

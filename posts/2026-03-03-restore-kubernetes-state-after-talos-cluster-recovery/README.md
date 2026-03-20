@@ -22,6 +22,7 @@ When you recover from an etcd snapshot, Kubernetes sees the world as it was at t
 
 ```bash
 # After recovery, start by checking the overall cluster state
+
 kubectl get nodes
 kubectl get namespaces
 kubectl get pods --all-namespaces

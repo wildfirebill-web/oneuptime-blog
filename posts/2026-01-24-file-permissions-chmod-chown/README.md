@@ -39,6 +39,7 @@ flowchart TD
 
 ```bash
 # List files with permissions
+
 ls -la
 
 # Example output:

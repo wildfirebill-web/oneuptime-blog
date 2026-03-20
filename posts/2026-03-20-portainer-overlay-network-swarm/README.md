@@ -1,4 +1,4 @@
-# How to Create an Overlay Network in Portainer for Swarm
+# How to Create an Overlay Network in Portainer for Swarm - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -26,6 +26,7 @@ Overlay networks enable containers running on different Docker Swarm nodes to co
 
 ```bash
 # On the manager node:
+
 docker swarm init --advertise-addr 192.168.1.10
 
 # Get the worker join token:
@@ -44,21 +45,21 @@ docker swarm join \
 3. Click **Add network**.
 4. Configure:
 
-```
+```text
 Name:    myapp-overlay
 Driver:  overlay
 ```
 
 5. Network configuration:
 
-```
+```text
 Subnet:  10.0.1.0/24
 Gateway: 10.0.1.1
 ```
 
 6. Options:
 
-```
+```text
 Attachable: true   (allows standalone containers to attach to this network)
 Encrypted:  true   (encrypt overlay traffic)
 ```
@@ -235,9 +236,9 @@ Ensure these ports are open between Swarm nodes:
 
 ```bash
 # Required ports for Docker Swarm overlay:
-# TCP 2377 — cluster management (between managers)
-# TCP/UDP 7946 — node discovery
-# UDP 4789 — overlay network traffic (VXLAN)
+# TCP 2377 - cluster management (between managers)
+# TCP/UDP 7946 - node discovery
+# UDP 4789 - overlay network traffic (VXLAN)
 
 # Linux iptables:
 iptables -A INPUT -p tcp --dport 2377 -j ACCEPT

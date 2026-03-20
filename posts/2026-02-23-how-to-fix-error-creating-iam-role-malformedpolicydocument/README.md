@@ -47,6 +47,7 @@ Trust policies use `Principal` to define who can assume the role. They should no
 
 ```hcl
 # WRONG - trust policy with Resource field
+
 resource "aws_iam_role" "my_role" {
   name = "my-role"
 

@@ -18,6 +18,7 @@ First, make sure the service is being called with the right name. From namespace
 
 ```bash
 # Short name only works within the same namespace
+
 curl http://my-service:8080  # Only works if caller is in the same namespace
 
 # FQDN works across namespaces

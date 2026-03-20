@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, IPv4, TCP, Configuration, Networking, Database, skip-networking
+Tags: MySQL, IPv4, TCP, Configuration, Networking, Database, Skip-networking
 
 Description: Learn how to disable the MySQL skip-networking option to enable TCP connections over IPv4 and configure the bind address for secure remote access.
 
@@ -23,6 +23,7 @@ MySQL's `skip-networking` option disables all TCP/IP connections, leaving only U
 
 ```bash
 # Check if skip-networking is set
+
 grep -r "skip-networking" /etc/mysql/
 
 # Check the current bind-address

@@ -27,6 +27,7 @@ This guide provides actionable fixes for the most common test environment issues
 
 ```bash
 # Apply consistent configuration to all test nodes
+
 for node in $(kubectl get nodes -o name); do
   echo "=== $node ===" 
 

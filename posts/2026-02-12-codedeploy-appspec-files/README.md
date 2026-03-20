@@ -26,6 +26,7 @@ Here's a complete example:
 
 ```yaml
 # appspec.yml for EC2 deployments
+
 version: 0.0
 os: linux
 

@@ -1,4 +1,4 @@
-# How to Configure IPv6 on Linksys Home Routers
+# How to Configure IPv6 on Linksys Home Routers - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -12,14 +12,14 @@ IPv6 is supported on Linksys WRT series (WRT3200ACM, WRT32X), EA series (EA6900,
 
 ## GUI Configuration (EA/WRT Series)
 
-```
+```text
 Path: Connectivity → Internet Settings → IPv6
 
 IPv6 Mode options:
-  Automatic Configuration - DHCPv6  — most common ISP type
-  Automatic Configuration - SLAAC   — RA-only ISPs
-  Static IPv6 Address               — fixed WAN address
-  6to4                              — legacy tunnel (avoid)
+  Automatic Configuration - DHCPv6  - most common ISP type
+  Automatic Configuration - SLAAC   - RA-only ISPs
+  Static IPv6 Address               - fixed WAN address
+  6to4                              - legacy tunnel (avoid)
   Disabled
 
 For DHCPv6 (recommended for most ISPs):
@@ -38,7 +38,7 @@ LAN:
 
 Linksys Velop uses the Linksys app and a simplified web interface.
 
-```
+```nginx
 Linksys App → Wi-Fi → Advanced Settings → IPv6
 
 Or web GUI at 192.168.1.1:
@@ -59,7 +59,8 @@ For bridge/AP mode (no routing):
 WRT3200ACM and WRT32X support OpenWrt natively.
 
 ```bash
-# Install OpenWrt on WRT series — check openwrt.org for image
+# Install OpenWrt on WRT series - check openwrt.org for image
+
 # After installation, configure via LuCI or CLI
 
 # Configure DHCPv6-PD client on WAN
@@ -81,7 +82,7 @@ ip -6 route show
 ## Troubleshoot Linksys IPv6
 
 ```bash
-# Issue 1: IPv6 not detected — wrong mode selected
+# Issue 1: IPv6 not detected - wrong mode selected
 # Fix: Change to "Automatic Configuration - DHCPv6" and save
 
 # Issue 2: Router shows IPv6 WAN but LAN devices have no IPv6
@@ -122,4 +123,4 @@ curl -6 https://ipv6.google.com  # HTTP over IPv6
 
 ## Conclusion
 
-Linksys routers configure IPv6 under Connectivity → Internet Settings → IPv6. Select "Automatic Configuration - DHCPv6" for most ISPs, enable DHCP-PD, and enable RA advertisement to the LAN. Velop mesh systems automatically propagate IPv6 from the parent node through backhaul to all child nodes. For advanced users, replace the firmware with OpenWrt on WRT-series routers for full `odhcp6c` prefix delegation and LuCI IPv6 management. If LAN devices do not receive IPv6 addresses, confirm that Router Advertisement is enabled in the LAN settings — Linksys sometimes requires this to be explicitly toggled on.
+Linksys routers configure IPv6 under Connectivity → Internet Settings → IPv6. Select "Automatic Configuration - DHCPv6" for most ISPs, enable DHCP-PD, and enable RA advertisement to the LAN. Velop mesh systems automatically propagate IPv6 from the parent node through backhaul to all child nodes. For advanced users, replace the firmware with OpenWrt on WRT-series routers for full `odhcp6c` prefix delegation and LuCI IPv6 management. If LAN devices do not receive IPv6 addresses, confirm that Router Advertisement is enabled in the LAN settings - Linksys sometimes requires this to be explicitly toggled on.

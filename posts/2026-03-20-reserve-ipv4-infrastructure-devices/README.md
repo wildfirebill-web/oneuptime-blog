@@ -20,7 +20,7 @@ Without reservations, DHCP might assign different IPs after reboots.
 
 Reserve the low end of each subnet for network infrastructure:
 
-```
+```text
 Subnet: 192.168.1.0/24
 
 Reserved for infrastructure:
@@ -43,7 +43,7 @@ DHCP pool starts at:
 For infrastructure devices managed via DHCP:
 
 **ISC DHCPD:**
-```
+```text
 # /etc/dhcp/dhcpd.conf
 
 host core-switch {
@@ -66,10 +66,11 @@ host wifi-ap-floor1 {
 ```
 
 **dnsmasq:**
-```
+```text
 # /etc/dnsmasq.conf
 
 # DHCP reservations for infrastructure devices
+
 dhcp-host=AA:BB:CC:DD:EE:FF,192.168.1.4,core-switch,infinite
 dhcp-host=11:22:33:44:55:66,192.168.1.5,access-sw1,infinite
 dhcp-host=AA:11:BB:22:CC:33,192.168.1.10,ap-floor1,infinite
@@ -80,7 +81,7 @@ dhcp-host=AA:11:BB:22:CC:33,192.168.1.10,ap-floor1,infinite
 For devices that should use static configuration (more reliable than DHCP):
 
 **Cisco IOS Switch:**
-```
+```text
 ! Configure management VLAN IP
 interface vlan 1
  ip address 192.168.1.4 255.255.255.0
@@ -90,7 +91,7 @@ ip default-gateway 192.168.1.1
 ```
 
 **Cisco Wireless AP (capwap/standalone):**
-```
+```text
 ip address 192.168.1.10 255.255.255.0
 ip default-gateway 192.168.1.1
 ip name-server 192.168.1.11
@@ -100,9 +101,9 @@ ip name-server 192.168.1.11
 
 Loopback interfaces are used as router IDs and stable management addresses:
 
-```
+```text
 Loopback address scheme (dedicated block):
-  10.255.0.0/24 — Router loopback addresses
+  10.255.0.0/24 - Router loopback addresses
 
   10.255.0.1/32  = Core-Router-01
   10.255.0.2/32  = Core-Router-02
@@ -113,7 +114,7 @@ Loopback address scheme (dedicated block):
 ```
 
 **Cisco IOS:**
-```
+```text
 interface Loopback0
  description Router_Management_and_RouterID
  ip address 10.255.0.1 255.255.255.255

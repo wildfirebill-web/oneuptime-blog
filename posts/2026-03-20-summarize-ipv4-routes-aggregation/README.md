@@ -18,7 +18,7 @@ Route summarization (aggregation) replaces multiple specific routes with a singl
 
 For summarization to work, routes must be contiguous in the address space:
 
-```
+```text
 Can be summarized (contiguous):
   10.1.0.0/24
   10.1.1.0/24
@@ -39,7 +39,7 @@ To find the summary:
 2. Find the longest common bit prefix
 3. The summary prefix length = number of common bits
 
-```
+```text
 Summarize 10.1.0.0/24, 10.1.1.0/24, 10.1.2.0/24, 10.1.3.0/24:
 
 10.1.0.0  = 00001010.00000001.00000000.00000000
@@ -73,6 +73,7 @@ def summarize_routes(route_list):
     return collapsed
 
 # Example 1: Clean summarization
+
 summarize_routes(['10.1.0.0/24', '10.1.1.0/24', '10.1.2.0/24', '10.1.3.0/24'])
 # Result: 10.1.0.0/22
 
@@ -115,21 +116,21 @@ all_hosts_in_supernet = [n for n in supernet.subnets(prefixlen_diff=0)
 ## Step 5: Configure Route Summarization in Cisco IOS
 
 **OSPF Area Summary at ABR:**
-```
+```text
 router ospf 1
   area 1 range 10.1.0.0 255.255.252.0   ! Summarize 10.1.0-3.0/24 as 10.1.0.0/22
   area 2 range 10.2.0.0 255.255.252.0
 ```
 
 **BGP Aggregate:**
-```
+```text
 router bgp 65001
   aggregate-address 10.0.0.0 255.255.0.0 summary-only
   ! summary-only suppresses the more-specific routes
 ```
 
 **Static Route Aggregation:**
-```
+```text
 ! Advertise the aggregate, pull traffic with more-specific statics
 ip route 10.1.0.0 255.255.252.0 Null0   ! Aggregate (discard route)
 ! More-specific routes pointing to actual next-hops
@@ -139,4 +140,4 @@ ip route 10.1.1.0 255.255.255.0 192.168.1.3
 
 ## Conclusion
 
-Route summarization requires contiguous, power-of-2 aligned address blocks. Calculate summaries by finding the common bit prefix with Python's `ipaddress.collapse_addresses()`. Configure summarization in OSPF with `area X range` at ABRs and in BGP with `aggregate-address`. Hierarchical addressing design (where address allocation follows topology) is the key prerequisite for clean summarization — you can only summarize well what you planned well.
+Route summarization requires contiguous, power-of-2 aligned address blocks. Calculate summaries by finding the common bit prefix with Python's `ipaddress.collapse_addresses()`. Configure summarization in OSPF with `area X range` at ABRs and in BGP with `aggregate-address`. Hierarchical addressing design (where address allocation follows topology) is the key prerequisite for clean summarization - you can only summarize well what you planned well.

@@ -12,7 +12,7 @@ Cisco ASA supports IPv6 firewalling with stateful inspection. ASA uses security 
 
 ## Enable IPv6 on ASA Interfaces
 
-```
+```text
 ! Enable IPv6 globally
 ipv6 unicast-routing
 
@@ -38,16 +38,16 @@ interface GigabitEthernet0/1
 
 ### Create IPv6 ACL for Inbound Traffic
 
-```
+```text
 ! IPv6 ACL for outside interface (inbound = from internet)
 ipv6 access-list OUTSIDE-IN-V6
 
  ! Allow established TCP (handled by stateful engine, but explicit for clarity)
  permit tcp any any established
 
- ! Allow essential ICMPv6 — NEVER block these
+ ! Allow essential ICMPv6 - NEVER block these
  permit icmp6 any any unreachable             ! Type 1
- permit icmp6 any any packet-too-big          ! Type 2 — NEVER BLOCK
+ permit icmp6 any any packet-too-big          ! Type 2 - NEVER BLOCK
  permit icmp6 any any time-exceeded           ! Type 3
  permit icmp6 any any parameter-problem       ! Type 4
 
@@ -72,7 +72,7 @@ access-group OUTSIDE-IN-V6 in interface outside
 
 ## ICMPv6 Inspection Policy
 
-```
+```text
 ! Enable ICMPv6 stateful inspection
 ! This allows ICMP error messages related to established TCP/UDP flows
 policy-map global_policy
@@ -94,7 +94,7 @@ service-policy ICMPv6-POLICY interface outside
 
 ASA tracks IPv6 connections in its state table:
 
-```
+```text
 ! View active IPv6 connections
 show conn ipv6
 
@@ -115,7 +115,7 @@ packet-tracer input outside ipv6 2001:db8:ext::1 tcp 54321 2001:db8:srv::1 443 d
 
 For cleaner ACL management:
 
-```
+```text
 ! Create IPv6 object group for management hosts
 object-group network IPV6-MANAGEMENT
  network-object fd00:mgmt::/48
@@ -135,7 +135,7 @@ ipv6 access-list OUTSIDE-IN-V6
 
 ## IPv6 Connection Timeout and Limits
 
-```
+```text
 ! Configure IPv6 connection timeouts
 timeout conn 1:00:00
 
@@ -148,7 +148,7 @@ service-policy global_policy interface outside
 
 ## Bogon Filtering
 
-```
+```text
 ! Block documentation prefix from internet
 ipv6 access-list BOGON-BLOCK-V6
  deny ipv6 2001:db8::/32 any
@@ -162,7 +162,7 @@ access-group BOGON-BLOCK-V6 in interface outside
 
 ## Verification
 
-```
+```text
 ! Show IPv6 interface status
 show ipv6 interface
 
@@ -179,4 +179,4 @@ packet-tracer input outside ipv6 2001:db8:attacker::1 tcp 12345 2001:db8:srv::1 
 
 ## Summary
 
-Cisco ASA IPv6 firewalling uses security levels (inside=100, outside=0) for default policy and explicit ACLs for granular control. Enable IPv6 with `ipv6 unicast-routing` and `ipv6 enable` on each interface. Create IPv6 ACLs with `ipv6 access-list NAME` and attach with `access-group NAME in interface outside`. Always allow ICMPv6 Packet Too Big (type 2) — ASA may block it by default if not explicitly permitted. Use `packet-tracer` to test how specific IPv6 packets would be handled without actually sending them. Use object groups for manageable ACL definitions.
+Cisco ASA IPv6 firewalling uses security levels (inside=100, outside=0) for default policy and explicit ACLs for granular control. Enable IPv6 with `ipv6 unicast-routing` and `ipv6 enable` on each interface. Create IPv6 ACLs with `ipv6 access-list NAME` and attach with `access-group NAME in interface outside`. Always allow ICMPv6 Packet Too Big (type 2) - ASA may block it by default if not explicitly permitted. Use `packet-tracer` to test how specific IPv6 packets would be handled without actually sending them. Use object groups for manageable ACL definitions.

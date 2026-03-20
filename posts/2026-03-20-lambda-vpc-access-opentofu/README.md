@@ -33,6 +33,7 @@ resource "aws_iam_role" "lambda_vpc" {
 }
 
 # This policy grants permission to create and manage ENIs in the VPC
+
 resource "aws_iam_role_policy_attachment" "lambda_vpc_policy" {
   role       = aws_iam_role.lambda_vpc.name
   policy_arn = "arn:aws:iam::aws:policy/service-role/AWSLambdaVPCAccessExecutionRole"
@@ -152,4 +153,4 @@ tofu apply
 
 ## Conclusion
 
-VPC-enabled Lambda functions can access private resources like RDS, ElastiCache, and internal APIs. Place Lambda in private subnets with a NAT Gateway for outbound internet access. Be aware that VPC attachment adds 1-10 seconds to cold start time unless using provisioned concurrency, and Lambda may exhaust subnet IP addresses under high concurrency—use subnets with /24 or larger CIDR blocks.
+VPC-enabled Lambda functions can access private resources like RDS, ElastiCache, and internal APIs. Place Lambda in private subnets with a NAT Gateway for outbound internet access. Be aware that VPC attachment adds 1-10 seconds to cold start time unless using provisioned concurrency, and Lambda may exhaust subnet IP addresses under high concurrency-use subnets with /24 or larger CIDR blocks.

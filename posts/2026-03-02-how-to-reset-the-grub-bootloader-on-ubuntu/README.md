@@ -41,6 +41,7 @@ From the live environment, open a terminal and identify your disk layout:
 
 ```bash
 # List block devices
+
 lsblk
 
 # More detailed partition info

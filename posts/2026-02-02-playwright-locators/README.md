@@ -949,6 +949,7 @@ When locators do not work as expected, use these debugging techniques.
 
 ```bash
 # Run tests in debug mode
+
 npx playwright test --debug
 
 # Or use PWDEBUG environment variable

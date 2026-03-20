@@ -8,13 +8,13 @@ Description: Monitor IPv4 load balancer performance metrics including connection
 
 ## Introduction
 
-Monitoring a load balancer requires tracking both the load balancer itself (connections, errors, latency) and the health of individual backends. Different load balancers expose metrics differently — HAProxy has a stats page and socket, Nginx has a status page, and cloud LBs use CloudWatch/Azure Monitor/Cloud Monitoring.
+Monitoring a load balancer requires tracking both the load balancer itself (connections, errors, latency) and the health of individual backends. Different load balancers expose metrics differently - HAProxy has a stats page and socket, Nginx has a status page, and cloud LBs use CloudWatch/Azure Monitor/Cloud Monitoring.
 
 ## HAProxy Monitoring
 
 ### Enable the Stats Page
 
-```
+```text
 frontend stats
     bind 0.0.0.0:8404
     stats enable
@@ -30,6 +30,7 @@ frontend stats
 
 ```bash
 # Show all server states
+
 echo "show stat" | sudo socat stdio /run/haproxy/admin.sock | \
   awk -F',' '{print $1,$2,$18,$19,$47}' | \
   column -t
@@ -45,7 +46,7 @@ echo "show info" | sudo socat stdio /run/haproxy/admin.sock | grep ConnRate
 
 ### HAProxy Prometheus Exporter
 
-```
+```text
 frontend stats
     bind 0.0.0.0:8404
     http-request use-service prometheus-exporter if { path /metrics }

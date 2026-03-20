@@ -34,6 +34,7 @@ Here's a simple configuration that samples 10% of all traces:
 
 ```yaml
 # Basic probabilistic sampling configuration
+
 # Samples 10% of traces deterministically by trace ID
 receivers:
   otlp:

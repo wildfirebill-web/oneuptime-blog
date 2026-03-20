@@ -18,6 +18,7 @@ Over time, you may accumulate networks that are no longer needed. Podman provide
 
 ```bash
 # Remove a network by name
+
 podman network rm mynetwork
 
 # Remove a network by ID

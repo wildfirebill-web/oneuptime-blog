@@ -51,6 +51,7 @@ A public zone hosts records that are accessible from the internet:
 
 ```hcl
 # Public DNS zone for your domain
+
 resource "google_dns_managed_zone" "public" {
   name        = "public-zone"
   dns_name    = "${var.domain}."  # Must end with a dot

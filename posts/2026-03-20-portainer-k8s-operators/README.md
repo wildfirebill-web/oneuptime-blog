@@ -1,8 +1,8 @@
-# How to Deploy Kubernetes Operators via Portainer
+# How to Deploy Kubernetes Operators via Portainer - K8s
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Kubernetes, Operators, CRDs, DevOps
+Tags: Portainer, Kubernetes, Operator, CRD, DevOps
 
 Description: Deploy and manage Kubernetes Operators that extend cluster functionality using Portainer's Kubernetes YAML interface.
 
@@ -14,6 +14,7 @@ Kubernetes Operators are controllers that extend Kubernetes functionality for sp
 
 ```bash
 # Deploy Cert-Manager via Portainer's Helm integration
+
 # Kubernetes > Helm Charts > Search "cert-manager"
 # Or install via kubectl manifest:
 
@@ -132,8 +133,8 @@ spec:
 ## Monitoring Operators in Portainer
 
 Operators appear as standard Deployments in Portainer:
-- **Kubernetes > Applications** — shows Operator pods
-- **Kubernetes > Namespaces** — shows Operator namespace resources
+- **Kubernetes > Applications** - shows Operator pods
+- **Kubernetes > Namespaces** - shows Operator namespace resources
 - Custom resources appear under **Kubernetes > Advanced** for raw YAML access
 
 ```bash

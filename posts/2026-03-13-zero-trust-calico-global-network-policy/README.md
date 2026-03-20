@@ -48,6 +48,7 @@ spec:
 
 ```bash
 # Apply policy
+
 calicoctl apply -f zero-trust-globalnetworkpolicy.yaml
 
 # Verify policy is active

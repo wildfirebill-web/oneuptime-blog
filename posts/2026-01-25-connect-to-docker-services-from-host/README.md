@@ -35,6 +35,7 @@ The most common approach is port mapping. You tell Docker to forward traffic fro
 
 ```bash
 # Map host port 8080 to container port 3000
+
 # Syntax: -p <host_port>:<container_port>
 docker run -d -p 8080:3000 my-node-app
 

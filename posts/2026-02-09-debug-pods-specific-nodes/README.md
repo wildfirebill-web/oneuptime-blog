@@ -55,6 +55,7 @@ kubectl apply -f node-debug.yaml
 kubectl exec -it node-debug -- bash
 
 # Inside the pod, you have access to the entire node
+
 ls /host
 chroot /host
 ```

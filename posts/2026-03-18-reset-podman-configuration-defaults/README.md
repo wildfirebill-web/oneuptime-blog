@@ -20,6 +20,7 @@ Know what is removed during different types of resets.
 
 ```bash
 # Check current state before any reset
+
 echo "=== Current Podman State ==="
 echo "Images: $(podman images -q 2>/dev/null | wc -l)"
 echo "Containers: $(podman ps -aq 2>/dev/null | wc -l)"

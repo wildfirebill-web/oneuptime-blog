@@ -66,6 +66,7 @@ Podman can generate systemd unit files from running containers. Start your conta
 
 ```bash
 # Start a container with the configuration you want
+
 podman run -d --name mywebapp \
     -p 8080:80 \
     -v /data/webapp:/var/www/html:Z \
@@ -567,7 +568,7 @@ WantedBy=timers.target
 
 ---
 
-## Resource Management
+Resource Management
 
 ### CPU and Memory Limits
 
@@ -605,7 +606,7 @@ Restart=always
 WantedBy=multi-user.target
 ```
 
-### Resource Monitoring
+Resource Monitoring
 
 View resource usage for running services:
 

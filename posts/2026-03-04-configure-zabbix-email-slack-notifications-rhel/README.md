@@ -16,6 +16,7 @@ Timely alerts are critical for incident response. Zabbix supports multiple notif
 
 ```bash
 # Install postfix for sending emails
+
 sudo dnf install -y postfix mailx
 
 # Configure postfix as a relay (using an SMTP relay like Gmail or your mail server)

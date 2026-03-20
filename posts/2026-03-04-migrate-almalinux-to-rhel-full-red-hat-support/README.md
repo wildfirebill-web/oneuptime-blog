@@ -21,6 +21,7 @@ AlmaLinux is ABI-compatible with RHEL, making in-place conversion with Convert2R
 
 ```bash
 # Check your AlmaLinux version
+
 cat /etc/almalinux-release
 # AlmaLinux release 9.3 (Shamrock Pampas Cat)
 

@@ -108,6 +108,7 @@ First, ensure core dumps are enabled to capture debugging information.
 
 ```bash
 # Check current core dump settings
+
 ulimit -c
 
 # Enable core dumps (no size limit)

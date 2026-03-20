@@ -18,6 +18,7 @@ The buildMetadata field accepts several values that control what information get
 
 ```yaml
 # kustomization.yaml
+
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 

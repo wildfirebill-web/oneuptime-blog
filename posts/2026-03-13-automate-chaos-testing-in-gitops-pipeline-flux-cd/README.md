@@ -48,6 +48,7 @@ clusters/
 
 ```yaml
 # clusters/my-cluster/apps/myapp/imagepolicy.yaml
+
 apiVersion: image.toolkit.fluxcd.io/v1
 kind: ImagePolicy
 metadata:

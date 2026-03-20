@@ -4,11 +4,11 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: OpenTofu, Azure, Redis, Azure Cache for Redis, Infrastructure as Code
 
-Description: Learn how to deploy Azure Cache for Redis with OpenTofu — configuring cache tiers, private endpoints, persistence, geo-replication, and application connection strings.
+Description: Learn how to deploy Azure Cache for Redis with OpenTofu - configuring cache tiers, private endpoints, persistence, geo-replication, and application connection strings.
 
 ## Introduction
 
-Azure Cache for Redis provides a managed Redis service with automatic failover, patching, and monitoring. OpenTofu manages the Redis instance, private endpoint for network security, firewall rules, and diagnostic settings — giving you a reproducible, version-controlled cache deployment.
+Azure Cache for Redis provides a managed Redis service with automatic failover, patching, and monitoring. OpenTofu manages the Redis instance, private endpoint for network security, firewall rules, and diagnostic settings - giving you a reproducible, version-controlled cache deployment.
 
 ## Basic Azure Cache for Redis
 
@@ -49,7 +49,7 @@ resource "azurerm_redis_cache" "premium" {
   enable_non_ssl_port = false
   minimum_tls_version = "1.2"
 
-  shard_count = 2  # Redis clustering — Premium only
+  shard_count = 2  # Redis clustering - Premium only
 
   redis_configuration {
     maxmemory_policy            = "allkeys-lru"
@@ -107,6 +107,7 @@ resource "azurerm_private_dns_zone_virtual_network_link" "redis" {
 }
 
 # Disable public network access when using private endpoint
+
 resource "azurerm_redis_cache" "secure" {
   name                = "${var.environment}-secure-redis"
   resource_group_name = azurerm_resource_group.app.name

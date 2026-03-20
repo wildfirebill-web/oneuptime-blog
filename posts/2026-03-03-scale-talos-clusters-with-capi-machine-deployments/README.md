@@ -26,6 +26,7 @@ The simplest scaling operation is changing the number of worker nodes:
 
 ```bash
 # Scale workers from 3 to 5
+
 kubectl patch machinedeployment my-cluster-workers \
   --type merge -p '{"spec":{"replicas":5}}'
 

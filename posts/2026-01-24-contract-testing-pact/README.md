@@ -112,6 +112,7 @@ Let's set up contract testing for a consumer service that calls a user API.
 
 ```bash
 # For JavaScript/TypeScript projects
+
 npm install --save-dev @pact-foundation/pact
 
 # For Python projects

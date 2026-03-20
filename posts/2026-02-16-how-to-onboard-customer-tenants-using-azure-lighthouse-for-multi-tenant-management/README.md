@@ -143,6 +143,7 @@ If you have temporary access to the customer's subscription (for example, during
 
 ```bash
 # Log into the customer's tenant
+
 az login --tenant customer-tenant-id
 
 # Deploy the onboarding template at subscription scope

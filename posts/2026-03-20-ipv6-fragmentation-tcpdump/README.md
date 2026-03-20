@@ -14,6 +14,7 @@ tcpdump is the first tool to reach for when debugging IPv6 fragmentation issues.
 
 ```bash
 # Capture all IPv6 packets with a Fragment Header
+
 # (Next Header field at byte 6 of IPv6 header == 44)
 sudo tcpdump -i eth0 "ip6[6] == 44"
 

@@ -26,6 +26,7 @@ This guide covers configuring comprehensive retry and timeout policies in Linker
 
 ```yaml
 # clusters/my-cluster/linkerd-resilience/api-profile.yaml
+
 apiVersion: linkerd.io/v1alpha2
 kind: ServiceProfile
 metadata:

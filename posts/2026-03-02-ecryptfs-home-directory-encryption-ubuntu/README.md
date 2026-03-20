@@ -22,6 +22,7 @@ eCryptfs stores encrypted files in a lower directory (`.Private` or a separate d
 
 ```bash
 # Install eCryptfs userspace tools
+
 sudo apt update
 sudo apt install ecryptfs-utils -y
 

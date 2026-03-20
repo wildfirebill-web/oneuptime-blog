@@ -87,6 +87,7 @@ Create the topics with appropriate partition counts and replication factors for 
 
 ```bash
 # Create a topic for traces with 12 partitions and replication factor of 3
+
 # 12 partitions gives good parallelism for most mid-size deployments
 kafka-topics.sh --create \
   --bootstrap-server kafka-1:9092,kafka-2:9092,kafka-3:9092 \

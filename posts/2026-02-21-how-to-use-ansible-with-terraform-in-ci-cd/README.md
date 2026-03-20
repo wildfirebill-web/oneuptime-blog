@@ -54,6 +54,7 @@ Use a script that reads Terraform state and generates Ansible inventory.
 ```python
 #!/usr/bin/env python3
 # terraform_inventory.py - Generate Ansible inventory from Terraform state
+
 import json
 import subprocess
 import sys

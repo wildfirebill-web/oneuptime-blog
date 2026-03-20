@@ -28,6 +28,7 @@ This guide walks through forming a MicroK8s HA cluster, enabling necessary addon
 
 ```bash
 # Run on all three nodes
+
 sudo snap install microk8s --classic --channel=1.29/stable
 
 # Add your user to the microk8s group to avoid sudo

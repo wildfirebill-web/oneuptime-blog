@@ -1,4 +1,4 @@
-# How to Configure Multiple LDAP Servers for Failover in Portainer
+# How to Configure Multiple LDAP Servers for Failover in Portainer (2)
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Configure Portainer with multiple LDAP servers for high availabilit
 
 ## Introduction
 
-A single LDAP server is a single point of failure for authentication. If it goes down, no one can log in to Portainer. Configuring multiple LDAP servers provides failover — Portainer tries each server in order until one responds. This is especially important for production environments with uptime requirements.
+A single LDAP server is a single point of failure for authentication. If it goes down, no one can log in to Portainer. Configuring multiple LDAP servers provides failover - Portainer tries each server in order until one responds. This is especially important for production environments with uptime requirements.
 
 ## How LDAP Failover Works in Portainer
 
@@ -41,6 +41,7 @@ TOKEN=$(curl -s -X POST \
   | python3 -c "import sys,json; print(json.load(sys.stdin)['jwt'])")
 
 # Configure two LDAP servers
+
 curl -X PUT \
   -H "Authorization: Bearer $TOKEN" \
   -H "Content-Type: application/json" \
@@ -114,7 +115,7 @@ For AD environments with multiple domain controllers:
 ```
 
 **Pro tip**: Active Directory environments can also use the domain's DNS name which resolves to multiple DCs:
-```
+```text
 Host: corp.example.com
 Port: 636
 ```
@@ -175,4 +176,4 @@ sudo iptables -D OUTPUT -d ldap-primary.example.com -j DROP
 
 ## Conclusion
 
-Multiple LDAP server configuration in Portainer is straightforward — add each server to the `Servers` array in order of preference. Portainer handles failover automatically, trying each server until one responds. For production environments, at least two LDAP servers should be configured, ideally in separate availability zones or data centers.
+Multiple LDAP server configuration in Portainer is straightforward - add each server to the `Servers` array in order of preference. Portainer handles failover automatically, trying each server until one responds. For production environments, at least two LDAP servers should be configured, ideally in separate availability zones or data centers.

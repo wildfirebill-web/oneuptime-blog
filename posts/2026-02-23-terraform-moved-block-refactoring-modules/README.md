@@ -33,6 +33,7 @@ The simplest use case - you want a better name:
 
 ```hcl
 # Old name
+
 # resource "aws_s3_bucket" "data" { ... }
 
 # New name

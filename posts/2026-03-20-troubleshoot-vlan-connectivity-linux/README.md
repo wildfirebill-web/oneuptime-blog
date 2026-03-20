@@ -14,6 +14,7 @@ VLAN connectivity issues often stem from a few common causes: the `8021q` module
 
 ```bash
 # Check if 8021q is loaded
+
 lsmod | grep 8021q
 
 # If not loaded, load it
@@ -68,11 +69,11 @@ ip route show default
 # Generate a ping from the VLAN interface
 ping -I eth0.100 -c 3 192.168.100.1 &
 
-# Capture on parent interface — should see 802.1Q tags
+# Capture on parent interface - should see 802.1Q tags
 tcpdump -i eth0 -e vlan 100 -n
 
-# If you see frames but no response — the switch may not be forwarding VLAN 100
-# If you see NO frames at all — the VLAN interface is not sending traffic
+# If you see frames but no response - the switch may not be forwarding VLAN 100
+# If you see NO frames at all - the VLAN interface is not sending traffic
 ```
 
 ## Step 6: Check Switch Configuration
@@ -124,4 +125,4 @@ ip link set eth0.100 mtu 1496
 
 ## Conclusion
 
-Troubleshooting VLAN connectivity follows a top-down checklist: module loaded, interfaces up, IP assigned, route present, ARP working, and switch configured correctly. tcpdump on the parent interface is the most powerful verification tool — seeing `802.1Q vlan#<ID>` confirms that tagging is working on the Linux side.
+Troubleshooting VLAN connectivity follows a top-down checklist: module loaded, interfaces up, IP assigned, route present, ARP working, and switch configured correctly. tcpdump on the parent interface is the most powerful verification tool - seeing `802.1Q vlan#<ID>` confirms that tagging is working on the Linux side.

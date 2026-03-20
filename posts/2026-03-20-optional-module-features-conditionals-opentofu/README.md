@@ -2,18 +2,19 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, Modules, Conditionals, optional, HCL, Design Patterns
+Tags: OpenTofu, Terraform, Modules, Conditional, Optional, HCL, Design Pattern
 
 Description: Learn how to design OpenTofu modules with optional feature flags that let callers enable or disable specific capabilities without changing module code.
 
 ## Introduction
 
-Well-designed modules expose feature flags that let callers opt into optional capabilities — WAF protection, enhanced monitoring, read replicas, CDN, etc. This guide shows patterns for building modules that gracefully handle optional features.
+Well-designed modules expose feature flags that let callers opt into optional capabilities - WAF protection, enhanced monitoring, read replicas, CDN, etc. This guide shows patterns for building modules that gracefully handle optional features.
 
 ## Feature Flags Variable Pattern
 
 ```hcl
 # modules/web-app/variables.tf
+
 variable "features" {
   description = "Optional features to enable for the web application"
   type = object({
@@ -138,4 +139,4 @@ module "cdn" {
 
 ## Conclusion
 
-Feature flag patterns in modules give callers fine-grained control over which capabilities are provisioned, making modules reusable across environments with different requirements. The `optional()` type constraint with defaults makes calling modules ergonomic — callers only specify what they want to change from the defaults.
+Feature flag patterns in modules give callers fine-grained control over which capabilities are provisioned, making modules reusable across environments with different requirements. The `optional()` type constraint with defaults makes calling modules ergonomic - callers only specify what they want to change from the defaults.

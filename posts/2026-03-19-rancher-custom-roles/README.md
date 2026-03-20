@@ -205,6 +205,7 @@ To verify that the role works as expected, log in as the user who was assigned t
 
 ```bash
 # Should succeed for deployment-manager role
+
 kubectl get deployments -n default
 
 # Should succeed

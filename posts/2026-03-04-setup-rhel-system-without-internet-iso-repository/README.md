@@ -30,6 +30,7 @@ Get the ISO onto the air-gapped system using whatever method your environment al
 
 ```bash
 # Copy the ISO to a known location
+
 sudo cp /media/usb/rhel-9.3-x86_64-dvd.iso /opt/rhel9.iso
 ```
 

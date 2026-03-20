@@ -70,6 +70,7 @@ At this point, the actual root file system is mounted read-only at `/sysroot`. Y
 
 ```bash
 # Remount the real root file system as read-write
+
 mount -o remount,rw /sysroot
 ```
 

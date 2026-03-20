@@ -14,6 +14,7 @@ TCP throughput is limited by three factors: bandwidth, latency (RTT), and the TC
 
 ```bash
 # Capture TCP traffic from a specific host with tcpdump
+
 sudo tcpdump -i eth0 -w capture.pcap host 10.0.0.5 and tcp
 
 # Or specify a port
@@ -61,7 +62,7 @@ A flat blue line with a declining red line indicates the receiver's window is th
 1. Go to **Statistics > IO Graph**
 2. Set the Y-axis to **Bytes/Tick** for throughput view
 3. Add a filter line for your TCP stream:
-   ```
+   ```text
    tcp.stream eq 0
    ```
 4. Set the tick interval to 100ms or 1s

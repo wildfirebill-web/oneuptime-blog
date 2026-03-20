@@ -20,6 +20,7 @@ Containers on the default `podman` network can communicate by IP, but DNS resolu
 
 ```bash
 # Create a shared network with DNS enabled (the default)
+
 podman network create app-net
 
 # Run a database container

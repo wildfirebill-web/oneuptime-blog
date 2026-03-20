@@ -21,6 +21,7 @@ dotnet new web -n GraphQLBookstore
 cd GraphQLBookstore
 
 # Add Hot Chocolate packages
+
 dotnet add package HotChocolate.AspNetCore
 dotnet add package HotChocolate.Data
 dotnet add package HotChocolate.Data.EntityFramework

@@ -192,6 +192,7 @@ The preview overlay should use minimal resources since these environments are te
 
 ```yaml
 # k8s/overlays/preview/kustomization.yaml
+
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:
@@ -571,7 +572,7 @@ spec:
           - CreateNamespace=true
 ```
 
-## Resource Cleanup and Limits
+Resource Cleanup and Limits
 
 Preview environments can consume significant cluster resources. Implement safeguards to prevent runaway costs.
 

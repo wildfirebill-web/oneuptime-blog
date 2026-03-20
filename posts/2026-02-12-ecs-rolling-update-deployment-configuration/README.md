@@ -120,6 +120,7 @@ You can set deployment configuration when creating or updating a service.
 
 ```bash
 # Create a service with custom deployment configuration
+
 aws ecs create-service \
   --cluster my-cluster \
   --service-name my-service \

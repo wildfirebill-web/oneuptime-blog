@@ -18,6 +18,7 @@ The `format` function takes a format string followed by arguments that get subst
 # format(spec, values...)
 
 # Simple string substitution
+
 format("Hello, %s!", "Terraform")
 # Result: "Hello, Terraform!"
 

@@ -14,6 +14,7 @@ Prometheus defaults to listening on all interfaces (0.0.0.0:9090). On multi-home
 
 ```bash
 # Command-line flag (preferred)
+
 prometheus \
   --config.file=/etc/prometheus/prometheus.yml \
   --web.listen-address="10.0.0.5:9090" \
@@ -115,4 +116,4 @@ curl -s "http://10.0.0.5:9090/api/v1/query?query=up" | python3 -m json.tool
 
 ## Conclusion
 
-Set Prometheus's listen address with `--web.listen-address=ip:port`. Use a specific IPv4 address to limit exposure, or `127.0.0.1:9090` for maximum security with access through SSH tunnels or a reverse proxy. Always pair binding with firewall rules — Prometheus has no built-in authentication, so network-level access control is critical.
+Set Prometheus's listen address with `--web.listen-address=ip:port`. Use a specific IPv4 address to limit exposure, or `127.0.0.1:9090` for maximum security with access through SSH tunnels or a reverse proxy. Always pair binding with firewall rules - Prometheus has no built-in authentication, so network-level access control is critical.

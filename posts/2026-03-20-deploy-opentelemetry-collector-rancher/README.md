@@ -34,6 +34,7 @@ The DaemonSet collector runs on every node and collects node-level and pod-level
 
 ```yaml
 # otel-daemonset-values.yaml
+
 mode: daemonset   # One pod per node
 
 config:
@@ -142,4 +143,4 @@ env:
 
 ## Conclusion
 
-The OpenTelemetry Collector on Rancher provides a flexible telemetry pipeline that decouples application instrumentation from backend storage. Changing your trace or metrics backend requires only a collector configuration update—no application code changes needed.
+The OpenTelemetry Collector on Rancher provides a flexible telemetry pipeline that decouples application instrumentation from backend storage. Changing your trace or metrics backend requires only a collector configuration update-no application code changes needed.

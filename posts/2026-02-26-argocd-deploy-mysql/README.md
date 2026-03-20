@@ -16,6 +16,7 @@ For development or small workloads, deploy a single MySQL instance:
 
 ```yaml
 # apps/mysql/secret.yaml
+
 apiVersion: v1
 kind: Secret
 metadata:

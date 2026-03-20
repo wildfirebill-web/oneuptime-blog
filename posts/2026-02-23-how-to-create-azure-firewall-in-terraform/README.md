@@ -59,6 +59,7 @@ resource "azurerm_resource_group" "firewall" {
 }
 
 # Hub virtual network
+
 resource "azurerm_virtual_network" "hub" {
   name                = "vnet-hub-prod"
   location            = azurerm_resource_group.firewall.location

@@ -45,6 +45,7 @@ graph LR
 
 ```bash
 # macOS
+
 brew install grpcurl
 
 # Linux

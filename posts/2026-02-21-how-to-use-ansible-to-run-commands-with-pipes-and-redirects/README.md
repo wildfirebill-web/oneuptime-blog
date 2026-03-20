@@ -18,6 +18,7 @@ The `command` module executes binaries directly without invoking a shell. Pipe c
 
 ```yaml
 # command module treats pipe as a literal argument (this will NOT work as expected)
+
 - name: This will not pipe output to grep
   ansible.builtin.command:
     cmd: "ps aux | grep nginx"

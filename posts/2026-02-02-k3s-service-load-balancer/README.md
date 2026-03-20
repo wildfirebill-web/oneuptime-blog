@@ -58,6 +58,7 @@ ServiceLB comes enabled by default in K3s. Check that the controller is running 
 
 ```bash
 # Check if ServiceLB controller pods exist
+
 # You should see svclb-* pods for each LoadBalancer service
 kubectl get pods -n kube-system | grep svclb
 
@@ -504,7 +505,7 @@ spec:
       targetPort: 8080
 ```
 
-### Resource Limits for ServiceLB
+Resource Limits for ServiceLB
 
 While ServiceLB pods are lightweight, ensure nodes have headroom for them.
 

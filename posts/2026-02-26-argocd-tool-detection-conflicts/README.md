@@ -18,6 +18,7 @@ The first sign of a tool detection conflict is usually an unexpected error. For 
 
 ```bash
 # See the detected source type
+
 argocd app get my-app -o json | jq '{
   sourceType: .status.sourceType,
   path: .spec.source.path,

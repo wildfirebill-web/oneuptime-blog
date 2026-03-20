@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Alibaba Cloud, ECS, Infrastructure as Code, Virtual Machines
+Tags: OpenTofu, Alibaba Cloud, ECS, Infrastructure as Code, Virtual Machine
 
 Description: Learn how to create Alibaba Cloud ECS (Elastic Compute Service) instances with OpenTofu, including key pairs, security groups, and user data.
 

@@ -48,6 +48,7 @@ Start by creating the Pub/Sub infrastructure. You need a topic for incoming tele
 
 ```bash
 # Create the main telemetry topic where device data arrives
+
 gcloud pubsub topics create iot-telemetry
 
 # Create a dead-letter topic for messages that fail processing

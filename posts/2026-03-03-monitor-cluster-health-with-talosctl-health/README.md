@@ -29,6 +29,7 @@ This makes it a one-stop command for validating your entire cluster.
 
 ```bash
 # Run a health check against the cluster
+
 talosctl health --nodes <control-plane-ip>
 ```
 

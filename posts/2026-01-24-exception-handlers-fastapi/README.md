@@ -39,6 +39,7 @@ Let's start with a foundation that catches common errors and returns consistent 
 
 ```python
 # exception_handlers.py
+
 # Foundation for FastAPI exception handling
 from fastapi import FastAPI, Request, HTTPException
 from fastapi.responses import JSONResponse

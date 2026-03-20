@@ -38,6 +38,7 @@ Store it in a variable:
 
 ```bash
 # For IP-based (GKE, AKS, DigitalOcean)
+
 export GATEWAY_IP=$(kubectl get svc istio-ingressgateway -n istio-system \
   -o jsonpath='{.status.loadBalancer.ingress[0].ip}')
 

@@ -18,6 +18,7 @@ Restic is distributed as a single binary, which makes installation clean and sim
 
 ```yaml
 # install-restic.yml - Install Restic backup on all servers
+
 ---
 - name: Install Restic
   hosts: backup_clients

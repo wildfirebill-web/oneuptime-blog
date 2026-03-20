@@ -600,6 +600,7 @@ For zero-downtime migration on production tables, use Percona Toolkit:
 
 ```bash
 # Install Percona Toolkit first, then run:
+
 pt-online-schema-change \
   --alter "PARTITION BY RANGE (YEAR(order_date)) (
     PARTITION p2022 VALUES LESS THAN (2023),

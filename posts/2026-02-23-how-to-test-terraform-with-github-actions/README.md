@@ -16,6 +16,7 @@ Start with a workflow that runs on pull requests touching Terraform files.
 
 ```yaml
 # .github/workflows/terraform-test.yml
+
 name: Terraform Tests
 
 on:
@@ -188,7 +189,7 @@ Run the built-in test framework for each module.
 
 Show the Terraform plan directly in the pull request for human review.
 
-```yaml
+````yaml
   plan:
     name: Plan
     needs: unit-tests
@@ -226,9 +227,9 @@ Show the Terraform plan directly in the pull request for human review.
           script: |
             const output = `### Terraform Plan - ${{ matrix.environment }}
 
-            \`\`\`
+            ```
             ${{ steps.plan.outputs.stdout }}
-            \`\`\`
+            ```
 
             *Plan status: ${{ steps.plan.outcome }}*`;
 
@@ -262,7 +263,7 @@ Show the Terraform plan directly in the pull request for human review.
       - name: Fail on plan error
         if: steps.plan.outcome == 'failure'
         run: exit 1
-```
+````
 
 ## Stage 6: Integration Tests (On Demand)
 

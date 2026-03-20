@@ -16,6 +16,7 @@ The `from_yaml` filter converts a YAML-formatted string into an Ansible data str
 
 ```yaml
 # playbook-from-yaml.yml
+
 # Parses a YAML string from command output into Ansible variables
 - name: Parse YAML string
   hosts: localhost

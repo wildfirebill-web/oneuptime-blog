@@ -32,6 +32,7 @@ Talos provides an OVA image for vSphere. Download and import it:
 
 ```bash
 # Download the Talos vSphere OVA
+
 curl -LO https://github.com/siderolabs/talos/releases/download/v1.7.0/vmware-amd64.ova
 
 # Import the OVA into vSphere using govc

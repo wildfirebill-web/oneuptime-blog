@@ -83,6 +83,7 @@ For CI pipelines, maintain a suppressions file:
 
 ```yaml
 # .istio-analyze-suppress.yaml
+
 - code: IST0106
   resource: Namespace no-mesh
 - code: IST0108
@@ -184,7 +185,7 @@ jobs:
               issue_number: context.issue.number,
               owner: context.repo.owner,
               repo: context.repo.repo,
-              body: `## Istio Configuration Analysis Failed\n\n\`\`\`\n${output}\n\`\`\`\n\nPlease fix the issues above before merging.`
+              body: `## Istio Configuration Analysis Failed\n\n```\n${output}\n```\n\nPlease fix the issues above before merging.`
             });
 ```
 

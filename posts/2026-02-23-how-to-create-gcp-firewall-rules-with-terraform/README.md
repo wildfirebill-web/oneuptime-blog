@@ -33,6 +33,7 @@ Let's start with common rules:
 
 ```hcl
 # versions.tf
+
 terraform {
   required_version = ">= 1.5.0"
 

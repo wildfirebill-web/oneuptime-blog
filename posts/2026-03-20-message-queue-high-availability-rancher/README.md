@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, High Availability, Message Queue, Kubernetes, RabbitMQ, Kafka
+Tags: Rancher, High Availability, Message Queues, Kubernetes, RabbitMQ, Kafka
 
 Description: Learn how to configure high availability for message queue workloads in Rancher using replication, anti-affinity rules, and pod disruption budgets.
 
@@ -28,6 +28,7 @@ Anti-affinity ensures message queue replicas are spread across different physica
 
 ```yaml
 # Apply to any MQ StatefulSet
+
 spec:
   affinity:
     podAntiAffinity:

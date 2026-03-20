@@ -50,6 +50,7 @@ Important considerations:
 
 ```bash
 # Create the RDS PostgreSQL instance
+
 aws rds create-db-instance \
   --db-instance-identifier my-postgres-rds \
   --db-instance-class db.r6g.large \

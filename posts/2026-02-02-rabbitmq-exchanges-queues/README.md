@@ -60,6 +60,7 @@ Before we begin, ensure you have RabbitMQ installed and running. You can run Rab
 
 ```bash
 # Run RabbitMQ with management plugin enabled
+
 docker run -d --name rabbitmq \
   -p 5672:5672 \
   -p 15672:15672 \

@@ -20,6 +20,7 @@ Netmiko is a Python library that simplifies SSH connections to network devices. 
 pip install netmiko
 
 # Verify
+
 python3 -c "import netmiko; print(netmiko.__version__)"
 ```
 

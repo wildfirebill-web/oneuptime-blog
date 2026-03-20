@@ -57,6 +57,7 @@ import requests
 tracer = trace.get_tracer("order-service")
 
 # SERVER span: handling an incoming request
+
 def handle_create_order(request):
     # Framework auto-instrumentation usually creates the SERVER span
     # If you need to create it manually:

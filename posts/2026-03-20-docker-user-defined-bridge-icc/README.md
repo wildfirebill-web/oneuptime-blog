@@ -8,7 +8,7 @@ Description: Enable reliable inter-container communication using Docker user-def
 
 ## Introduction
 
-Docker's default bridge network (`docker0`) supports inter-container communication via IP addresses, but it lacks automatic DNS resolution. User-defined bridge networks solve this by providing built-in DNS so containers can reach each other by name — a critical feature for microservices.
+Docker's default bridge network (`docker0`) supports inter-container communication via IP addresses, but it lacks automatic DNS resolution. User-defined bridge networks solve this by providing built-in DNS so containers can reach each other by name - a critical feature for microservices.
 
 ## Default Bridge vs User-Defined Bridge
 
@@ -22,6 +22,7 @@ Docker's default bridge network (`docker0`) supports inter-container communicati
 
 ```bash
 # Create an isolated bridge network for your application
+
 docker network create \
   --driver bridge \
   --subnet 172.20.0.0/16 \
@@ -48,7 +49,7 @@ docker run -d \
   myapp:latest
 ```
 
-The `api` container can reach `postgres` by name — Docker's embedded DNS resolves `postgres` to the container's IP automatically.
+The `api` container can reach `postgres` by name - Docker's embedded DNS resolves `postgres` to the container's IP automatically.
 
 ## Docker Compose Example
 
@@ -130,4 +131,4 @@ This isolation enforces the principle of least privilege between services.
 
 ## Conclusion
 
-User-defined bridge networks are the recommended pattern for Docker application networking. They provide DNS resolution, isolation, and dynamic connection management — everything needed for reliable inter-container communication.
+User-defined bridge networks are the recommended pattern for Docker application networking. They provide DNS resolution, isolation, and dynamic connection management - everything needed for reliable inter-container communication.

@@ -8,7 +8,7 @@ Description: Learn how to use AWS named profiles in OpenTofu to manage multiple 
 
 ## Introduction
 
-AWS named profiles, stored in `~/.aws/credentials` and `~/.aws/config`, let you maintain multiple sets of credentials and configurations. OpenTofu supports named profiles via the `profile` argument in the provider block or the `AWS_PROFILE` environment variable—making it easy to deploy to different environments without changing your code.
+AWS named profiles, stored in `~/.aws/credentials` and `~/.aws/config`, let you maintain multiple sets of credentials and configurations. OpenTofu supports named profiles via the `profile` argument in the provider block or the `AWS_PROFILE` environment variable-making it easy to deploy to different environments without changing your code.
 
 ## Setting Up Named Profiles
 
@@ -16,6 +16,7 @@ Configure profiles in the standard AWS CLI files:
 
 ```ini
 # ~/.aws/credentials
+
 [default]
 aws_access_key_id     = AKIAIOSFODNN7EXAMPLE
 aws_secret_access_key = wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
@@ -155,4 +156,4 @@ tofu apply  # Uses the aws-dev profile automatically
 
 ## Conclusion
 
-Named profiles are ideal for local development workflows where a developer needs to interact with multiple AWS accounts. For CI/CD pipelines, prefer OIDC or IAM roles—but profiles remain the most ergonomic solution for daily developer use on a shared machine.
+Named profiles are ideal for local development workflows where a developer needs to interact with multiple AWS accounts. For CI/CD pipelines, prefer OIDC or IAM roles-but profiles remain the most ergonomic solution for daily developer use on a shared machine.

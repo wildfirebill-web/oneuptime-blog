@@ -22,6 +22,7 @@ from datetime import datetime
 from collections import Counter
 
 # Kea log format for address assignment
+
 # INFO  [kea-dhcp6.leases] ... LEASE6_ALLOC [hwtype=1 xx:xx:xx:xx:xx:xx], duid: [...], address: 2001:db8::1, valid-lft: 3600
 LEASE_ALLOC_RE = re.compile(
     r'LEASE6_ALLOC \[hwtype=\d+ (?P<mac>[0-9a-f:]+)\].*'
@@ -84,7 +85,7 @@ for prefix, count in stats["allocations"].most_common(10):
 
 ```bash
 #!/bin/bash
-# check_dhcpv6_pool.sh — alert on pool exhaustion
+# check_dhcpv6_pool.sh - alert on pool exhaustion
 
 # Query Kea DHCP statistics via REST API
 KEA_API="http://[::1]:8000"
@@ -116,7 +117,7 @@ fi
 
 ```python
 #!/usr/bin/env python3
-# dhcpv6_exporter.py — Prometheus exporter for DHCPv6 stats
+# dhcpv6_exporter.py - Prometheus exporter for DHCPv6 stats
 
 from prometheus_client import start_http_server, Gauge, Counter
 import subprocess
@@ -189,4 +190,4 @@ done <<< "$NEW_DUIDS"
 
 ## Conclusion
 
-IPv6 address allocation monitoring combines log parsing for DHCPv6 events (LEASE6_ALLOC, LEASE6_EXPIRE, LEASE6_RENEW) with REST API queries to the DHCP server for pool utilization metrics. Export these metrics to Prometheus and alert when pool utilization exceeds 80%. Track device DUIDs in allocation logs to detect new or unauthorized devices — unlike MAC-based tracking, DUIDs persist across network changes making them reliable device identifiers. Monitor prefix delegation logs separately to ensure customer/site prefixes are being correctly distributed.
+IPv6 address allocation monitoring combines log parsing for DHCPv6 events (LEASE6_ALLOC, LEASE6_EXPIRE, LEASE6_RENEW) with REST API queries to the DHCP server for pool utilization metrics. Export these metrics to Prometheus and alert when pool utilization exceeds 80%. Track device DUIDs in allocation logs to detect new or unauthorized devices - unlike MAC-based tracking, DUIDs persist across network changes making them reliable device identifiers. Monitor prefix delegation logs separately to ensure customer/site prefixes are being correctly distributed.

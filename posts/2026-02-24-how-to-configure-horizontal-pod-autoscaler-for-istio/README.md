@@ -137,6 +137,7 @@ Install Prometheus Adapter and configure it to expose Istio metrics:
 
 ```yaml
 # prometheus-adapter-config.yaml
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

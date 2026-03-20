@@ -68,6 +68,7 @@ spec:
 
 ```bash
 # Add the egress IP as a secondary IP on the gateway node's interface
+
 ip addr add 10.0.100.10/32 dev eth0
 
 # Or configure it via node annotations for Cilium to manage

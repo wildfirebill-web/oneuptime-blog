@@ -31,6 +31,7 @@ OLM is installed using the `operator-sdk` CLI tool or by applying manifests dire
 
 ```bash
 # Install the operator-sdk CLI (on macOS)
+
 brew install operator-sdk
 
 # Or download the binary directly

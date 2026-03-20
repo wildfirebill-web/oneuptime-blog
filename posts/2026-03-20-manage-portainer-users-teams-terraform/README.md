@@ -14,6 +14,7 @@ Managing users and teams through Terraform ensures your access control configura
 
 ```hcl
 # users.tf
+
 variable "team_members" {
   description = "Map of team members to create"
   type = map(object({

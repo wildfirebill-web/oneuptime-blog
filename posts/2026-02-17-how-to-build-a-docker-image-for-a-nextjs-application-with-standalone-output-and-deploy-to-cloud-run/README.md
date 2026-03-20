@@ -38,6 +38,7 @@ Here is the Dockerfile that takes full advantage of standalone mode.
 
 ```dockerfile
 # Stage 1: Install dependencies
+
 FROM node:20-alpine AS deps
 WORKDIR /app
 

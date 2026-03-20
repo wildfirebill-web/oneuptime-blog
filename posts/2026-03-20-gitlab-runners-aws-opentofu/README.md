@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, GitLab, CI/CD, AWS, EC2, Auto Scaling, Runners, Infrastructure as Code
+Tags: OpenTofu, GitLab, CI/CD, AWS, EC2, Auto Scaling, Runner, Infrastructure as Code
 
 Description: Learn how to deploy GitLab Runner on AWS EC2 with the Docker Machine executor and auto-scaling using OpenTofu, providing elastic CI/CD compute that scales from zero based on job demand.
 
@@ -24,6 +24,7 @@ graph TD
 
 ```hcl
 # iam.tf
+
 resource "aws_iam_role" "runner" {
   name = "${var.prefix}-gitlab-runner"
 
@@ -218,8 +219,8 @@ resource "aws_s3_bucket_lifecycle_configuration" "runner_cache" {
 
 ## Best Practices
 
-- Use Spot instances for worker instances with multiple fallback instance types — CI jobs tolerate interruption when runners are configured to retry.
-- Configure the shared S3 cache — without it, every job re-downloads dependencies, adding minutes to build times. The cache bucket pays for itself in compute savings.
-- Set `MaxBuilds = 10` on machine runners — after 10 builds, Docker Machine terminates and recreates the worker, preventing disk accumulation from Docker layers.
+- Use Spot instances for worker instances with multiple fallback instance types - CI jobs tolerate interruption when runners are configured to retry.
+- Configure the shared S3 cache - without it, every job re-downloads dependencies, adding minutes to build times. The cache bucket pays for itself in compute savings.
+- Set `MaxBuilds = 10` on machine runners - after 10 builds, Docker Machine terminates and recreates the worker, preventing disk accumulation from Docker layers.
 - Use time-based auto-scaling periods to maintain a few idle runners during business hours and scale to zero overnight and weekends.
-- Place the runner manager in a private subnet with SSM access — no SSH inbound access needed, and the manager never needs to be publicly accessible.
+- Place the runner manager in a private subnet with SSM access - no SSH inbound access needed, and the manager never needs to be publicly accessible.

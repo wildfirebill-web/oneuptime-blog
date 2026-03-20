@@ -18,6 +18,7 @@ pg_stat_statements is PostgreSQL's built-in extension for tracking query executi
 
 ```ini
 # postgresql.conf
+
 # Add to shared_preload_libraries (requires restart)
 shared_preload_libraries = 'pg_stat_statements'
 
@@ -96,7 +97,7 @@ LIMIT 10;
 
 ## Advanced Analysis
 
-### Resource Usage Analysis
+Resource Usage Analysis
 
 ```sql
 -- Queries consuming the most resources

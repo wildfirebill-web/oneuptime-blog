@@ -124,6 +124,7 @@ resource "aws_iam_instance_profile" "bastion" {
 
 ```hcl
 # Allow SSH from bastion to private instances
+
 resource "aws_security_group" "private_instances" {
   name        = "private-instances-sg"
   description = "Allow SSH from bastion only"
@@ -141,7 +142,7 @@ resource "aws_security_group" "private_instances" {
 
 ## Alternative: AWS Systems Manager Session Manager
 
-No bastion needed — use SSM for zero-SSH access.
+No bastion needed - use SSM for zero-SSH access.
 
 ```hcl
 # With SSM Session Manager, no bastion host is needed at all
@@ -180,4 +181,4 @@ resource "aws_cloudwatch_metric_alarm" "bastion_idle" {
 
 ## Summary
 
-A secure bastion host uses EC2 Instance Connect for temporary SSH keys (no persistent key pairs), IMDSv2 enforcement, encrypted EBS volumes, restrictive security groups allowing SSH only from known CIDRs, and CloudWatch logging for audit trails. Consider replacing the traditional bastion entirely with AWS Systems Manager Session Manager — it requires no open SSH ports, logs all session activity, and integrates with IAM for access control. The SSM approach eliminates the bastion host attack surface entirely.
+A secure bastion host uses EC2 Instance Connect for temporary SSH keys (no persistent key pairs), IMDSv2 enforcement, encrypted EBS volumes, restrictive security groups allowing SSH only from known CIDRs, and CloudWatch logging for audit trails. Consider replacing the traditional bastion entirely with AWS Systems Manager Session Manager - it requires no open SSH ports, logs all session activity, and integrates with IAM for access control. The SSM approach eliminates the bastion host attack surface entirely.

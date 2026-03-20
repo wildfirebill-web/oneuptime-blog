@@ -37,6 +37,7 @@ resource "aws_kinesis_stream" "events" {
 
 ```hcl
 # On-demand mode: automatically scales capacity
+
 resource "aws_kinesis_stream" "events_on_demand" {
   name = "events-on-demand"
 
@@ -89,7 +90,7 @@ resource "aws_lambda_event_source_mapping" "kinesis_processor" {
 ## Enhanced Fan-Out (Dedicated Consumer)
 
 ```hcl
-# Enhanced fan-out consumer — gets 2 MB/s per consumer instead of shared 2 MB/s
+# Enhanced fan-out consumer - gets 2 MB/s per consumer instead of shared 2 MB/s
 resource "aws_kinesis_stream_consumer" "analytics" {
   name       = "analytics-consumer"
   stream_arn = aws_kinesis_stream.events.arn

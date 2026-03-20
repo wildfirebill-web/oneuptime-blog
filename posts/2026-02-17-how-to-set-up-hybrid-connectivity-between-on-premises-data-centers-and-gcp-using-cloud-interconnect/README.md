@@ -56,6 +56,7 @@ Before setting up the interconnect, make sure your VPC is ready with the right s
 
 ```bash
 # Create a VPC network with custom subnets
+
 gcloud compute networks create hybrid-network \
   --subnet-mode=custom
 

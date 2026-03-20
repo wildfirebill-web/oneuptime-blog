@@ -14,6 +14,7 @@ Wrapper modules call upstream modules (from a registry or your own library) with
 
 ```hcl
 # modules/org-s3-bucket/main.tf
+
 # Wraps the public terraform-aws-modules/s3-bucket module
 # with organization security defaults
 

@@ -65,6 +65,7 @@ The base includes all resources shared across environments.
 
 ```yaml
 # apps/webapp/base/deployment.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

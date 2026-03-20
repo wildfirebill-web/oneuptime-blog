@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, Infrastructure as Code, Backends
+Tags: OpenTofu, Terraform, Infrastructure as Code, Backend
 
 Description: Learn how OpenTofu v1.8 introduced support for using input variables and locals in backend configuration, enabling dynamic and DRY backend definitions.
 
@@ -14,6 +14,7 @@ Before OpenTofu v1.8, backend blocks could not reference variables or locals. Al
 
 ```hcl
 # variables.tf
+
 variable "environment" {
   description = "Deployment environment"
   type        = string
@@ -125,12 +126,12 @@ After v1.8 (variables in backend):
 tofu init -var="environment=production"
 ```
 
-The v1.8 approach is more explicit — variables are declared with type constraints and descriptions, making the backend configuration self-documenting.
+The v1.8 approach is more explicit - variables are declared with type constraints and descriptions, making the backend configuration self-documenting.
 
 ## Limitations
 
 - Variables used in backends must be simple types (string, number, bool)
-- Complex expressions may not be fully supported — keep backend variable references straightforward
+- Complex expressions may not be fully supported - keep backend variable references straightforward
 - The `TF_VAR_*` environment variable mechanism still works for supplying values
 
 ```bash

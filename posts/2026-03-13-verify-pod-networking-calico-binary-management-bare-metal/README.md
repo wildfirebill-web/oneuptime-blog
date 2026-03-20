@@ -81,6 +81,7 @@ Each worker should show multiple BGP-learned routes.
 
 ```yaml
 # verify-calico.yml
+
 ---
 - name: Verify Calico networking
   hosts: all

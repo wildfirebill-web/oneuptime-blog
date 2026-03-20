@@ -28,6 +28,7 @@ The process has three steps: create the gateway, attach it to your VPC, and crea
 
 ```bash
 # Step 1: Create the internet gateway
+
 IGW_ID=$(aws ec2 create-internet-gateway \
   --tag-specifications 'ResourceType=internet-gateway,Tags=[{Key=Name,Value=production-igw}]' \
   --query 'InternetGateway.InternetGatewayId' \

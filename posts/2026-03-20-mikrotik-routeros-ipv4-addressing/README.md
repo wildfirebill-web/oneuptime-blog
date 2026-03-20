@@ -14,6 +14,7 @@ MikroTik RouterOS uses a flat IP address model: IP addresses are assigned to int
 
 ```mikrotik
 # Add IP address to ether1
+
 /ip address add address=192.168.1.1/24 interface=ether1 comment="LAN Gateway"
 
 # Add IP to ether2 (WAN)

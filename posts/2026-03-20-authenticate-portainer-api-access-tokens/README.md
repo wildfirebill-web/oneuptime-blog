@@ -25,14 +25,15 @@ For CI/CD pipelines and cron jobs, **access tokens are preferred** because they 
 4. Scroll to **Access tokens**.
 5. Click **Add access token**.
 6. Give it a descriptive name (e.g., `github-actions-deploy`).
-7. Copy the token — **you won't see it again**.
+7. Copy the token - **you won't see it again**.
 
 ## Using an Access Token in API Calls
 
-Access tokens are used identically to JWT tokens — just pass them as the Bearer token:
+Access tokens are used identically to JWT tokens - just pass them as the Bearer token:
 
 ```bash
 # Set your access token
+
 API_TOKEN="ptr_your_access_token_here"
 PORTAINER_URL="https://portainer.mycompany.com"
 
@@ -112,7 +113,7 @@ In Portainer UI:
 - Name tokens descriptively: `github-actions-prod`, `monitoring-cron`, `terraform-provider`.
 - Create one token per integration to enable targeted revocation.
 - Rotate tokens periodically and after team member changes.
-- Never embed tokens in code — use environment variables or secrets managers.
+- Never embed tokens in code - use environment variables or secrets managers.
 
 ## Conclusion
 

@@ -29,6 +29,7 @@ Start by confirming the overall IPAM state is healthy:
 
 ```bash
 # Check IPAM summary
+
 calicoctl ipam show
 
 # Check for any leaked or orphaned IPs

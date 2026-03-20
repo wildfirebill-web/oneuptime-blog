@@ -18,6 +18,7 @@ Before writing any Terraform code, understand what you are working with:
 
 ```python
 # scripts/inventory-existing-resources.py
+
 # Generate an inventory of existing cloud resources
 
 import boto3

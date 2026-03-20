@@ -45,6 +45,7 @@ On the FreeIPA server (if using IdM-integrated DNS):
 
 ```bash
 # Add a DNS forward zone for the AD domain
+
 ipa dnsforwardzone-add ad.example.com \
   --forwarder=10.0.0.10 \
   --forward-policy=only

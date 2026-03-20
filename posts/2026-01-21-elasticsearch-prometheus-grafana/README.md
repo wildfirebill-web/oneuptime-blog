@@ -117,6 +117,7 @@ helm install elasticsearch-exporter prometheus-community/prometheus-elasticsearc
 
 ```yaml
 # prometheus.yml
+
 scrape_configs:
   - job_name: 'elasticsearch'
     static_configs:

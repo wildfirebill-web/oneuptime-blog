@@ -18,6 +18,7 @@ When containers run as non-root users, the default root ownership on secret file
 
 ```bash
 # Create a secret
+
 echo -n "app-secret-value" | podman secret create app_secret -
 
 # Mount the secret with specific UID and GID

@@ -30,6 +30,7 @@ graph TB
 
 ```bash
 # Static SRv6 TE: route specific traffic via explicit SID path
+
 # Traffic destined for 10.0.100.0/24 takes explicit path
 
 # Method 1: Match by destination prefix
@@ -50,7 +51,7 @@ ip -6 route add 5f00:3::/32 table 200 \
 
 BGP distributes SRv6 TE policies from a controller or head-end to all participating routers.
 
-```
+```text
 ! BGP SR-Policy configuration (Cisco IOS-XR notation)
 router bgp 65000
  address-family link-state link-state
@@ -90,7 +91,7 @@ segment-routing traffic-eng
 
 Traffic is steered into TE policies by BGP Color communities.
 
-```
+```text
 ! Route policy to set color community
 route-policy SET-COLOR-100
   set extcommunity color 100
@@ -107,7 +108,7 @@ When BGP routes have color 100 and the endpoint is a known TE policy endpoint, t
 
 ## Step 4: ECMP and Weighted Candidate Paths
 
-```
+```text
 ! Multiple candidate paths for load balancing
 segment-routing traffic-eng
  policy LB-POLICY

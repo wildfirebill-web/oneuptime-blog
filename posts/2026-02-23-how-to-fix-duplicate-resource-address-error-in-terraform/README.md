@@ -37,6 +37,7 @@ The most straightforward case: you defined the same resource twice, maybe in dif
 
 ```hcl
 # main.tf
+
 resource "aws_instance" "web" {
   ami           = "ami-0123456789abcdef0"
   instance_type = "t3.micro"

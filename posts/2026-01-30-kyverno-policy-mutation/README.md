@@ -394,6 +394,7 @@ Testing is critical. Kyverno provides a CLI tool for policy testing.
 
 ```bash
 # macOS
+
 brew install kyverno
 
 # Linux

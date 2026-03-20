@@ -27,6 +27,7 @@ Before installing KDE Plasma, ensure your system meets these requirements:
 
 ```bash
 # Check your Ubuntu version
+
 # KDE Plasma works best on Ubuntu 22.04 LTS or newer
 lsb_release -a
 

@@ -30,6 +30,7 @@ L2 mode operates at the data link layer, similar to macvlan but sharing the pare
 
 ```bash
 # Create L2 IPvlan network
+
 docker network create -d ipvlan \
   --subnet=192.168.1.0/24 \
   --gateway=192.168.1.1 \

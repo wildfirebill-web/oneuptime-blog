@@ -18,6 +18,7 @@ Check the Kustomization status to confirm the decryption error:
 
 ```bash
 # List all Kustomizations and their status
+
 kubectl get kustomizations -A
 
 # Get detailed error information

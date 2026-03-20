@@ -20,6 +20,7 @@ Podman uses layered storage managed by the containers/storage library. Major ver
 
 ```bash
 # Check your current storage driver and configuration
+
 podman info --format 'Driver: {{.Store.GraphDriverName}}'
 podman info --format 'GraphRoot: {{.Store.GraphRoot}}'
 podman info --format 'RunRoot: {{.Store.RunRoot}}'

@@ -103,6 +103,7 @@ kubectl apply -f elasticsearch-policy.yaml
 
 ```bash
 # Authorized client - should succeed
+
 kubectl exec -it kibana-pod -- \
   curl -s http://elasticsearch:9200/allowed-index/_search
 

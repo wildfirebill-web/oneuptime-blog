@@ -28,6 +28,7 @@ A records map a domain name to an IPv4 address. This is the most fundamental rec
 
 ```bash
 # Point the root domain to a single IP
+
 gcloud dns record-sets create example.com. \
     --zone=my-zone \
     --type=A \

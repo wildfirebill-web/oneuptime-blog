@@ -32,6 +32,7 @@ The `order: asc` setting selects the tag that comes last alphabetically, which i
 
 ```yaml
 # imagepolicy-alphabetical.yaml
+
 # Select the alphabetically last (latest) tag
 apiVersion: image.toolkit.fluxcd.io/v1
 kind: ImagePolicy

@@ -24,6 +24,7 @@ Start by deploying the AWS KMS encryption provider for EKS or self-managed clust
 
 ```bash
 # Install AWS encryption provider
+
 kubectl apply -f https://raw.githubusercontent.com/kubernetes-sigs/aws-encryption-provider/master/deploy/aws-encryption-provider.yaml
 
 # Create KMS key in AWS

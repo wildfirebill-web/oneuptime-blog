@@ -133,6 +133,7 @@ echo "Retention period: $RETENTION_DAYS days"
 CUTOFF_DATE=$(date -d "$RETENTION_DAYS days ago" +%s)
 
 # Find and delete old snapshots
+
 kubectl get volumesnapshot -o json | \
   jq -r '.items[] |
     {

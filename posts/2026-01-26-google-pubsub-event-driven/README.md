@@ -95,6 +95,7 @@ Let's build a simple e-commerce event flow where order creation triggers multipl
 
 ```bash
 # Create a topic for order events
+
 gcloud pubsub topics create order-events
 
 # Verify the topic was created

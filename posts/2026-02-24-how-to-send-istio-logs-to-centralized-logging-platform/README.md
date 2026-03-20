@@ -296,6 +296,7 @@ After setting up your logging pipeline, verify that logs are flowing:
 
 ```bash
 # Generate some traffic
+
 kubectl exec deploy/sleep -n default -- curl -s http://httpbin.default:8080/get
 
 # Check Fluent Bit is processing

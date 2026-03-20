@@ -16,6 +16,7 @@ Squid's ACL system enables granular URL filtering: block specific domains, allow
 # /etc/squid/squid.conf
 
 # --- Define denied domain list ---
+
 # This ACL matches requests to any domain in the file
 acl blocked_sites dstdomain "/etc/squid/blocked_domains.txt"
 

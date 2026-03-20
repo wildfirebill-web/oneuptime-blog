@@ -14,6 +14,7 @@ OpenTofu provides encode/decode functions for JSON, YAML, and Base64, enabling d
 
 ```hcl
 # main.tf - JSON format conversions
+
 locals {
   # HCL map to JSON string
   policy_map = {

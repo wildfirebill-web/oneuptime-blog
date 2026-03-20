@@ -16,6 +16,7 @@ GoAccess is a real-time web log analyzer and viewer that works in a terminal or 
 # /etc/goaccess/goaccess.conf
 
 # For nginx combined log format
+
 log-format COMBINED
 
 # For custom nginx format with IPv6 in brackets

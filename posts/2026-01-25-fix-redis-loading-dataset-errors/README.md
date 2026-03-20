@@ -43,6 +43,7 @@ The loading time depends on:
 
 ```bash
 # Connect and check INFO during loading
+
 redis-cli INFO persistence
 
 # Look for these fields:

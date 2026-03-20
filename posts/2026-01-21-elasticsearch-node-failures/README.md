@@ -25,6 +25,7 @@ Elasticsearch nodes can fail for various reasons:
 
 ```bash
 # Check cluster health
+
 curl -X GET "localhost:9200/_cluster/health?pretty"
 ```
 

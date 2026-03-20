@@ -20,6 +20,7 @@ The reset command is far more aggressive than prune. It removes everything Podma
 
 ```bash
 # Reset Podman to factory defaults (will prompt for confirmation)
+
 podman system reset
 
 # Force reset without confirmation prompt

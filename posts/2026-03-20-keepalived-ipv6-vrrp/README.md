@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: keepalived, IPv6, VRRP, High Availability, Failover, Load Balancing
+Tags: Keepalived, IPv6, VRRP, High Availability, Failover, Load Balancing
 
 Description: A guide to configuring keepalived with VRRPv3 for IPv6 virtual IP addresses, providing high availability and automatic failover for IPv6 services.
 
@@ -119,6 +119,7 @@ vrrp_instance VI_IPV6_LB {
 }
 
 # IPv6 virtual server definition
+
 virtual_server_group ipv6_group {
     2001:db8::vip 80
 }

@@ -25,6 +25,7 @@ You can verify your cluster is healthy by running:
 
 ```bash
 # Check that all nodes are ready
+
 kubectl get nodes
 
 # Verify talosctl can reach the cluster

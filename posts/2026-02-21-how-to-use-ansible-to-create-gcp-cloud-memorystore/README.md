@@ -27,6 +27,7 @@ Install the GCP collection if you have not already:
 
 ```bash
 # Install the official Google Cloud Ansible collection
+
 ansible-galaxy collection install google.cloud
 ```
 

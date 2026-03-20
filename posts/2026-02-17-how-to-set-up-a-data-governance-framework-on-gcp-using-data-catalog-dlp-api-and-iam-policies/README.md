@@ -33,6 +33,7 @@ Data Catalog automatically discovers BigQuery tables. For other sources, you nee
 
 ```bash
 # Enable required APIs
+
 gcloud services enable datacatalog.googleapis.com
 gcloud services enable dlp.googleapis.com
 

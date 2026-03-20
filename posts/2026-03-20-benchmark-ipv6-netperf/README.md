@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, netperf, Benchmarking, TCP, UDP, Latency
+Tags: IPv6, Netperf, Benchmarking, TCP, UDP, Latency
 
 Description: Use netperf to benchmark IPv6 TCP bulk throughput, request-response latency, and UDP stream performance between hosts.
 
@@ -14,6 +14,7 @@ netperf provides a wider variety of test types than iperf3, including request-re
 
 ```bash
 # Install netperf
+
 apt-get install netperf       # Debian/Ubuntu
 yum install netperf           # RHEL/CentOS
 

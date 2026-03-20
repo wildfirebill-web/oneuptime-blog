@@ -87,6 +87,7 @@ In Prometheus's config:
 
 ```yaml
 # prometheus.yml
+
 scrape_configs:
 - job_name: 'otel-collector'
   scrape_interval: 30s

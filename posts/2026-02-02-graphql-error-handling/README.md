@@ -91,6 +91,7 @@ Syntax errors occur when the query string is malformed. GraphQL catches these du
 
 ```graphql
 # This query has a syntax error - missing closing brace
+
 query GetUser {
   user(id: "123") {
     name

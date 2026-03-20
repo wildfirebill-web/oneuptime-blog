@@ -22,6 +22,7 @@ The Java installation path depends on which version and distribution you install
 
 ```bash
 # List all Java installations
+
 ls /usr/lib/jvm/
 
 # Find the path for the currently active java binary

@@ -94,6 +94,7 @@ To force rotation regardless of expiration date:
 
 ```bash
 # Stop RKE2
+
 systemctl stop rke2-server
 
 # Delete the existing certificates (they will be regenerated)

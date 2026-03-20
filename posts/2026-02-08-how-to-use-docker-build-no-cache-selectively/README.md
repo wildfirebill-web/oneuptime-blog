@@ -16,6 +16,7 @@ Docker caches each layer in your Dockerfile. When you rebuild, Docker checks whe
 
 ```dockerfile
 # Example: cache invalidation cascade
+
 FROM node:20-alpine           # Layer 1 - cached
 RUN apk add --no-cache curl   # Layer 2 - cached
 COPY package.json ./          # Layer 3 - if package.json changes, this misses

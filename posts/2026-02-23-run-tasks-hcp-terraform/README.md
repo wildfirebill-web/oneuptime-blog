@@ -50,6 +50,7 @@ HMAC Key: your-secret-hmac-key (for verifying webhook authenticity)
 
 ```hcl
 # Create the run task at the organization level
+
 resource "tfe_organization_run_task" "security_scan" {
   name         = "security-scanner"
   organization = var.organization

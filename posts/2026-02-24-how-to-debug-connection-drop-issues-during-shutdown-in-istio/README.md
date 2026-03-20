@@ -18,6 +18,7 @@ Start by checking what errors clients are seeing:
 
 ```bash
 # Check the client-side sidecar logs during a deployment
+
 kubectl logs deploy/frontend -c istio-proxy -n default --since=2m | \
   grep -E "upstream connect error|disconnect/reset|no healthy upstream|overflow"
 ```

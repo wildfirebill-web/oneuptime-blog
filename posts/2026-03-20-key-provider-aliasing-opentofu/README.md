@@ -210,4 +210,4 @@ terraform {
 
 ## Conclusion
 
-Key provider aliasing in OpenTofu gives you precise control over which encryption keys are used for different scenarios. This enables clean key rotation patterns using old/new aliases, per-environment key separation, multi-region disaster recovery, and mixing key provider types within a single configuration. Design your alias naming convention to be self-documenting — including the year, environment, or purpose in the alias name makes the configuration easy to understand and maintain.
+Key provider aliasing in OpenTofu gives you precise control over which encryption keys are used for different scenarios. This enables clean key rotation patterns using old/new aliases, per-environment key separation, multi-region disaster recovery, and mixing key provider types within a single configuration. Design your alias naming convention to be self-documenting - including the year, environment, or purpose in the alias name makes the configuration easy to understand and maintain.

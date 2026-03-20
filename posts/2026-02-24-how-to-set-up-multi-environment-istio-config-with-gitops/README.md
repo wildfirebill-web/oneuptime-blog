@@ -77,6 +77,7 @@ Write your base resources with reasonable defaults that work for most environmen
 
 ```yaml
 # base/platform/gateway.yaml
+
 apiVersion: networking.istio.io/v1
 kind: Gateway
 metadata:

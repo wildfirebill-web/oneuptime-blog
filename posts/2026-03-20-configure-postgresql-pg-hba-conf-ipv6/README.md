@@ -8,8 +8,9 @@ Description: A detailed reference for configuring PostgreSQL's pg_hba.conf to al
 
 ## pg_hba.conf Format
 
-```
+```text
 # pg_hba.conf entry format:
+
 # TYPE  DATABASE  USER  ADDRESS  METHOD [OPTIONS]
 
 # TYPE: local, host, hostssl, hostnossl, hostgssenc, hostnogssenc

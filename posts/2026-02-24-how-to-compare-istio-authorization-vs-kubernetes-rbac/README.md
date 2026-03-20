@@ -26,6 +26,7 @@ RBAC is implemented through four resource types:
 
 ```yaml
 # Role: defines permissions within a namespace
+
 apiVersion: rbac.authorization.k8s.io/v1
 kind: Role
 metadata:

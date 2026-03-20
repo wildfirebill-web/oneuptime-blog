@@ -365,6 +365,7 @@ Unlike HTTP routing, TCP routing cannot match on source labels or namespaces in 
 
 ```bash
 # Check TCP connection stats
+
 kubectl exec deploy/tcp-service-v1 -c istio-proxy -- \
   curl -s localhost:15000/stats | grep "cx_total"
 

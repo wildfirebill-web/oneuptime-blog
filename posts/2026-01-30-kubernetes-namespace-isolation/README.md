@@ -20,6 +20,7 @@ Create a namespace with labels for policy enforcement and organization.
 
 ```yaml
 # namespace-team-alpha.yaml
+
 # Creates an isolated namespace with metadata labels for policy selection
 apiVersion: v1
 kind: Namespace
@@ -177,7 +178,7 @@ spec:
           port: 9090
 ```
 
-## Resource Quotas for Namespace Isolation
+Resource Quotas for Namespace Isolation
 
 Resource Quotas prevent one namespace from consuming all cluster resources.
 

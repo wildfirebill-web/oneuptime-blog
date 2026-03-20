@@ -66,6 +66,7 @@ def validate_ipv4_header(packet: bytes) -> bool:
     return True
 
 # Test with a minimal 20-byte header
+
 import struct, socket
 hdr = struct.pack("!BBHHHBBH4s4s",
     0x45, 0, 20, 0, 0, 64, 17, 0,

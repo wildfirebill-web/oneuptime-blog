@@ -60,6 +60,7 @@ Here's a minimal configuration for using SigV4 authentication with AWS services:
 
 ```yaml
 # Define the SigV4 auth extension
+
 extensions:
   # sigv4auth extension configuration
   sigv4auth:

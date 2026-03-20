@@ -16,6 +16,7 @@ The primary way to see shard assignments is through cluster secrets. ArgoCD stor
 
 ```bash
 # List all clusters and their shard assignments
+
 kubectl get secrets -n argocd \
   -l argocd.argoproj.io/secret-type=cluster \
   -o custom-columns=\

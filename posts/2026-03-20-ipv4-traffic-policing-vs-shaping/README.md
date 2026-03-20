@@ -29,6 +29,7 @@ The Token Bucket Filter (TBF) qdisc smooths bursts by queuing excess packets:
 
 ```bash
 # Shape outbound traffic on eth0 to 10 Mbit/s
+
 # TBF allows a burst of 32kb before queuing begins
 # rate: Sustained rate; burst: Burst bucket size; latency: Max packet wait time
 sudo tc qdisc add dev eth0 root handle 1: tbf \
@@ -40,7 +41,7 @@ sudo tc qdisc add dev eth0 root handle 1: tbf \
 sudo tc -s qdisc show dev eth0
 ```
 
-**When to use shaping**: On WAN uplinks where you want to smooth traffic and avoid congestion at the ISP — preventing router buffer bloat. Also useful for backing off a bulk transfer without causing retransmissions.
+**When to use shaping**: On WAN uplinks where you want to smooth traffic and avoid congestion at the ISP - preventing router buffer bloat. Also useful for backing off a bulk transfer without causing retransmissions.
 
 ## Configuring Traffic Policing
 

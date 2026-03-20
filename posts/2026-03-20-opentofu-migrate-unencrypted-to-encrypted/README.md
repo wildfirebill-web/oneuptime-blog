@@ -1,4 +1,4 @@
-# How to Migrate from Unencrypted to Encrypted State in OpenTofu
+# How to Migrate from Unencrypted to Encrypted State in OpenTofu - Opentofu
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Learn how to safely migrate existing unencrypted OpenTofu state to 
 
 ## Introduction
 
-Enabling state encryption on an existing configuration requires careful migration — you need to read the existing unencrypted state and write it back encrypted. OpenTofu supports this with the `enforced = false` setting, which allows reading unencrypted state during the transition period.
+Enabling state encryption on an existing configuration requires careful migration - you need to read the existing unencrypted state and write it back encrypted. OpenTofu supports this with the `enforced = false` setting, which allows reading unencrypted state during the transition period.
 
 ## Prerequisites
 
@@ -20,6 +20,7 @@ Enabling state encryption on an existing configuration requires careful migratio
 
 ```bash
 # Create a backup before starting migration
+
 tofu state pull > state-backup-pre-encryption-$(date +%Y%m%d).json
 
 # Verify the backup

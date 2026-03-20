@@ -8,7 +8,7 @@ Description: Learn how to configure K3s to pull container images from private re
 
 ## Introduction
 
-In production environments, you often need to pull container images from private registries — either for security (keeping proprietary images off public repositories) or for performance (local registries reduce pull times). K3s configures private registries through a `registries.yaml` file that supports mirrors, authentication, and TLS configuration.
+In production environments, you often need to pull container images from private registries - either for security (keeping proprietary images off public repositories) or for performance (local registries reduce pull times). K3s configures private registries through a `registries.yaml` file that supports mirrors, authentication, and TLS configuration.
 
 ## Registry Configuration File
 
@@ -56,6 +56,7 @@ Mirrors redirect pulls from one registry to another. This is useful for:
 
 ```yaml
 # /etc/rancher/k3s/registries.yaml
+
 mirrors:
   # Docker Hub mirror
   "docker.io":

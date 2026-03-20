@@ -14,6 +14,7 @@ By default, PHP stores sessions as files on disk. Using Redis as the session han
 
 ```bash
 # Install Redis server and PHP Redis extension
+
 sudo dnf install -y redis php-pecl-redis
 
 # Start and enable Redis

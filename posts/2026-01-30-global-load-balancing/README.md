@@ -110,6 +110,7 @@ Latency-based routing measures actual network latency between users and servers,
 
 ```hcl
 # terraform/route53_geolocation.tf
+
 # Geographic routing policy for multi-region deployment
 
 # Health check for US East region

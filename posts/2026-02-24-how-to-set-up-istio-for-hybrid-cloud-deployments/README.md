@@ -30,6 +30,7 @@ If you are using AWS and on-prem:
 
 ```bash
 # On-prem: Verify connectivity to AWS east-west gateway
+
 curl -v https://<aws-eastwest-gateway-ip>:15443
 
 # AWS: Verify connectivity to on-prem east-west gateway

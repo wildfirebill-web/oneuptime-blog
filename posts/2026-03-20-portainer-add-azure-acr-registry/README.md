@@ -1,4 +1,4 @@
-# How to Add Azure ACR as a Registry in Portainer
+# How to Add Azure ACR as a Registry in Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -21,12 +21,13 @@ Azure Container Registry (ACR) is Microsoft's managed Docker registry service ti
 
 Your ACR login server URL follows this format:
 
-```
+```text
 {registry-name}.azurecr.io
 ```
 
 ```bash
 # List all ACR instances in your subscription
+
 az acr list --query '[].{name:name,loginServer:loginServer}' -o table
 
 # Output:
@@ -55,7 +56,7 @@ az acr credential show --name myregistry
 ```
 
 Add to Portainer:
-```
+```text
 Registry type:  Custom registry (or Azure ACR if available)
 URL:           myregistry.azurecr.io
 Username:      myregistry
@@ -91,7 +92,7 @@ echo "Service Principal Password: $SP_PASSWORD"
 
 Add to Portainer:
 
-```
+```text
 Registry type:  Custom registry
 URL:           myregistry.azurecr.io
 Username:      {service-principal-id}    (the appId)
@@ -105,7 +106,7 @@ Password:      {service-principal-password}
 3. Select **Custom registry** (or Azure ACR if your Portainer version has it)
 4. Fill in:
 
-```
+```text
 Name:       Azure ACR (myregistry)
 URL:        myregistry.azurecr.io
 Username:   {admin-username or SP app ID}
@@ -193,18 +194,18 @@ az aks update \
 
 If your ACR is geo-replicated, the same login server serves all regions:
 
-```
+```text
 Primary:   myregistry.azurecr.io
 Replicas:  Automatically created in: eastus, westeurope, etc.
 ```
 
-All replicas use the same credentials — no additional Portainer configuration needed.
+All replicas use the same credentials - no additional Portainer configuration needed.
 
 ## Troubleshooting
 
 ### Unauthorized Error
 
-```
+```text
 Error: unauthorized: authentication required
 ```
 
@@ -214,7 +215,7 @@ Error: unauthorized: authentication required
 
 ### Repository Not Found
 
-```
+```text
 Error: repository name not valid
 ```
 

@@ -40,6 +40,7 @@ NV_USER="admin"
 NV_PASS="yourpassword"
 
 # Authenticate
+
 TOKEN=$(curl -sk -X POST \
   "${NV_URL}/v1/auth" \
   -H "Content-Type: application/json" \

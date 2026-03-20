@@ -1,4 +1,4 @@
-# How to Set Up Docker Swarm High Availability with Portainer
+# How to Set Up Docker Swarm High Availability with Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -20,6 +20,7 @@ Docker Swarm achieves high availability through redundant manager nodes using th
 
 ```bash
 # On manager1 (192.168.1.10)
+
 docker swarm init \
   --advertise-addr 192.168.1.10 \
   --listen-addr 192.168.1.10:2377

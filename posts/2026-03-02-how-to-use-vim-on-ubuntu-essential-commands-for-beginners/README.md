@@ -14,6 +14,7 @@ Vim is installed on nearly every Linux server you will ever access. When you SSH
 
 ```bash
 # Ubuntu often ships with vim.tiny. Install the full version:
+
 sudo apt update
 sudo apt install vim
 

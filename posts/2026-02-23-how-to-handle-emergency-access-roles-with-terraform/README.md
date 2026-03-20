@@ -18,6 +18,7 @@ Emergency access roles should be rarely used but always available. They need to 
 
 ```hcl
 # Configure providers for multi-cloud emergency access
+
 terraform {
   required_providers {
     aws = {

@@ -34,6 +34,7 @@ The rules in `/etc/audit/rules.d/` are loaded in alphabetical order. The immutab
 
 ```bash
 # List existing rule files
+
 ls -la /etc/audit/rules.d/
 
 # Common naming convention:

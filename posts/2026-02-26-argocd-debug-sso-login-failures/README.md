@@ -36,6 +36,7 @@ The most informative debugging step. Check both the ArgoCD server and Dex server
 
 ```bash
 # Stream ArgoCD server logs
+
 kubectl -n argocd logs -f deploy/argocd-server
 
 # Filter for auth-related messages

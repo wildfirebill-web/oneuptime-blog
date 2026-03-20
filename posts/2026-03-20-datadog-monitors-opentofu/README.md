@@ -41,6 +41,7 @@ provider "datadog" {
 # monitors.tf
 
 # High CPU usage monitor
+
 resource "datadog_monitor" "cpu_high" {
   name    = "[${var.environment}] High CPU Usage"
   type    = "metric alert"

@@ -47,6 +47,7 @@ First, upload your firmware binary to S3 with proper versioning:
 
 ```bash
 # Create a versioned S3 bucket for firmware
+
 aws s3api create-bucket \
   --bucket my-iot-firmware \
   --region us-east-1

@@ -73,6 +73,7 @@ Create a LookML view that wraps the prediction call:
 
 ```lookml
 # views/churn_predictions.view.lkml
+
 view: churn_predictions {
   derived_table: {
     sql: SELECT

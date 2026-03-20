@@ -22,6 +22,7 @@ The roles are distributed as an RPM package. Install them on your Ansible contro
 
 ```bash
 # Install the RHEL system roles package
+
 sudo dnf install rhel-system-roles
 ```
 

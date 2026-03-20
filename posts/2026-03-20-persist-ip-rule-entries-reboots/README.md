@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ip rule, Policy Routing, Linux, Persistent, systemd-networkd, IPv4, Reboots
+Tags: Ip rule, Policy Routing, Linux, Persistent, systemd-networkd, IPv4, Reboot
 
 Description: Learn how to make ip rule (policy routing) entries persistent across reboots on Linux using systemd-networkd, /etc/network/interfaces, and custom systemd services.
 
@@ -15,6 +15,7 @@ Description: Learn how to make ip rule (policy routing) entries persistent acros
 ```bash
 ip rule show
 # 0:     from all lookup local
+
 # 32766: from all lookup main
 # 32767: from all lookup default
 ```

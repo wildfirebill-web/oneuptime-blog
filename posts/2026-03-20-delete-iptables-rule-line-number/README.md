@@ -6,12 +6,13 @@ Tags: iptables, Linux, Firewall, Security, Rule Management
 
 Description: Delete specific iptables rules by line number or by exact rule specification, without flushing the entire chain or disrupting other firewall rules.
 
-Deleting the wrong rule — or all rules — can lock you out of a server. Targeting deletions by line number or exact specification lets you remove specific rules safely.
+Deleting the wrong rule - or all rules - can lock you out of a server. Targeting deletions by line number or exact specification lets you remove specific rules safely.
 
 ## Find the Line Number First
 
 ```bash
 # Always check line numbers before deleting
+
 sudo iptables -L INPUT -n --line-numbers
 
 # Output:
@@ -110,4 +111,4 @@ grep "dport 80" /etc/iptables/rules.v4
 sudo iptables -I INPUT 3 -p tcp --dport 80 -j ACCEPT
 ```
 
-Always save your iptables rules before making changes — `sudo iptables-save > /tmp/iptables-backup.txt` takes seconds and gives you a safety net if something goes wrong.
+Always save your iptables rules before making changes - `sudo iptables-save > /tmp/iptables-backup.txt` takes seconds and gives you a safety net if something goes wrong.

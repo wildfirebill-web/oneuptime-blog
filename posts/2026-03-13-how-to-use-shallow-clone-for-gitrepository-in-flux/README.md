@@ -137,6 +137,7 @@ Compare clone times with different configurations:
 
 ```bash
 # Time a reconciliation
+
 START=$(date +%s)
 kubectl annotate gitrepository my-repo -n flux-system \
   reconcile.fluxcd.io/requestedAt="$(date +%s)" --overwrite

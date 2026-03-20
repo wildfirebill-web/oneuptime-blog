@@ -71,6 +71,7 @@ If the script has no write operations or you can safely abort it:
 
 ```bash
 # Connect to Redis and kill the running script
+
 redis-cli SCRIPT KILL
 ```
 

@@ -56,6 +56,7 @@ First, let's look at the typical New Relic startup configuration that you will b
 
 ```bash
 # Old startup command with New Relic agent
+
 # The -javaagent flag loads the New Relic agent into the JVM
 # newrelic.yml contains the license key and app name
 # java -javaagent:/path/to/newrelic.jar \

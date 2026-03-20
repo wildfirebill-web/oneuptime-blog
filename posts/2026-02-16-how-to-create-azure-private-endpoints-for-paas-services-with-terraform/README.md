@@ -35,6 +35,7 @@ First, let us define the VNet and subnet that will host our Private Endpoints. P
 
 ```hcl
 # Resource group for all our resources
+
 resource "azurerm_resource_group" "main" {
   name     = "rg-private-endpoints-demo"
   location = "eastus"

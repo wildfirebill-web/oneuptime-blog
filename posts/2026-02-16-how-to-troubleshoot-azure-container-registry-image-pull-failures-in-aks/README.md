@@ -18,6 +18,7 @@ Start by looking at the pod events to understand what type of pull failure you a
 
 ```bash
 # Describe the failing pod to see events
+
 kubectl describe pod <pod-name> -n <namespace>
 ```
 

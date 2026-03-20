@@ -38,6 +38,7 @@ Edge security policies are a different type from standard backend policies:
 
 ```bash
 # Create an edge security policy for backend buckets
+
 gcloud compute security-policies create bucket-edge-policy \
   --type=CLOUD_ARMOR_EDGE \
   --description="Edge security policy for static content bucket" \

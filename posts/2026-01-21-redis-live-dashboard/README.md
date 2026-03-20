@@ -97,6 +97,7 @@ class MetricsStore:
 
 
 # Usage
+
 r = redis.Redis(decode_responses=True)
 metrics = MetricsStore(r)
 

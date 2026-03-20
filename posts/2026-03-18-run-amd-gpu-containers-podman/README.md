@@ -29,6 +29,7 @@ AMD GPU compute support through ROCm is available on specific GPU families. Chec
 
 ```bash
 # Check if your AMD GPU is detected
+
 lspci | grep -i amd
 # Example output:
 # 03:00.0 VGA compatible controller: Advanced Micro Devices, Inc. [AMD/ATI] Navi 21 [Radeon RX 6800]

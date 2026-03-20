@@ -24,6 +24,7 @@ Start by extending OTel's semantic conventions with your own:
 
 ```yaml
 # attribute-standards.yaml
+
 # Organization-wide attribute naming standards
 
 required_resource_attributes:

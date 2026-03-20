@@ -57,6 +57,7 @@ Test the iSCSI connection manually:
 
 ```bash
 # Login to the target
+
 sudo iscsiadm -m node -T iqn.2024-01.com.example:storage.lun1 -p <ISCSI_SERVER_IP>:3260 --login
 
 # Verify the device

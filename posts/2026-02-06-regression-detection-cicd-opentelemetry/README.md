@@ -38,6 +38,7 @@ Your integration tests need to generate meaningful OpenTelemetry data. Tag test 
 
 ```python
 # test_instrumentation.py
+
 import os
 import time
 from opentelemetry import trace, metrics

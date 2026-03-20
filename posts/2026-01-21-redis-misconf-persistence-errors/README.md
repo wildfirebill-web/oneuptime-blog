@@ -30,6 +30,7 @@ First, check Redis logs for specific error details:
 
 ```bash
 # Check Redis logs
+
 tail -100 /var/log/redis/redis-server.log
 
 # Or if using systemd

@@ -38,6 +38,7 @@ Before writing code, you need to set up IAP on your Cloud Run service.
 
 ```bash
 # Create a load balancer in front of Cloud Run
+
 # (IAP requires a load balancer - it does not work directly with Cloud Run URLs)
 
 # Create a serverless NEG

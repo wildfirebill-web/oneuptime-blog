@@ -21,7 +21,7 @@ Let's Encrypt provides free, trusted TLS certificates that Traefik can obtain an
 
 Let's Encrypt verifies domain ownership using challenges:
 
-```
+```text
 HTTP Challenge (httpChallenge):
   - Let's Encrypt sends GET /.well-known/acme-challenge/{token} to your server on port 80
   - Requires port 80 open to the internet
@@ -41,6 +41,7 @@ Define both staging and production resolvers to avoid rate limits during testing
 
 ```yaml
 # traefik.yml
+
 certificatesResolvers:
   # Staging resolver for testing (no rate limits, certs not trusted)
   letsencrypt-staging:
@@ -77,7 +78,7 @@ certificatesResolvers:
 Set environment variables for your DNS provider. Traefik supports 100+ providers:
 
 ```yaml
-# docker-compose.yml — Cloudflare DNS provider
+# docker-compose.yml - Cloudflare DNS provider
 services:
   traefik:
     image: traefik:v3.0
@@ -157,7 +158,7 @@ echo | openssl s_client -servername portainer.example.com \
 # Expected: notAfter is 90 days from issuance (Let's Encrypt cert lifetime)
 # Traefik renews at 60 days remaining
 
-# Force renewal (for testing — use staging)
+# Force renewal (for testing - use staging)
 # Stop Traefik, delete the cert entry from acme.json, restart Traefik
 docker stop traefik
 # Edit acme.json and remove the certificate entry for your domain

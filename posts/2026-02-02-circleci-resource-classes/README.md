@@ -136,6 +136,7 @@ The executor definitions below create reusable configurations that standardize r
 version: 2.1
 
 # Define reusable executors with preset resource classes
+
 executors:
   # Lightweight executor for simple operations
   node-small:
@@ -796,7 +797,7 @@ workflows:
               only: main
 ```
 
-## Resource Class Selection Guide
+Resource Class Selection Guide
 
 Use the decision matrix below to select appropriate resource classes:
 

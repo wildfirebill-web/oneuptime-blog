@@ -20,6 +20,7 @@ Start by initializing both the OpenTelemetry SDK and Sentry SDK in your applicat
 
 ```python
 # tracing_setup.py - Initialize OpenTelemetry first, then Sentry
+
 from opentelemetry import trace
 from opentelemetry.sdk.trace import TracerProvider
 from opentelemetry.sdk.trace.export import BatchSpanProcessor

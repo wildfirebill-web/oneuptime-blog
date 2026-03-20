@@ -25,6 +25,7 @@ On AWS, cross-AZ traffic patterns are particularly important to monitor because 
 
 ```bash
 # Enable VPC flow logs to CloudWatch
+
 aws ec2 create-flow-logs \
   --resource-type VPC \
   --resource-ids vpc-0123456789 \

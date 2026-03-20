@@ -14,6 +14,7 @@ ntopng is a network traffic analysis tool that provides a web-based dashboard fo
 
 ```bash
 # Add the ntop repository
+
 sudo tee /etc/yum.repos.d/ntop.repo << 'REPO'
 [ntop]
 name=ntop packages

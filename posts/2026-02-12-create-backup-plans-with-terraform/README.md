@@ -30,6 +30,7 @@ Here's how to create a backup vault with encryption:
 
 ```hcl
 # Create a KMS key for encrypting backups
+
 resource "aws_kms_key" "backup" {
   description             = "KMS key for AWS Backup vault encryption"
   deletion_window_in_days = 30

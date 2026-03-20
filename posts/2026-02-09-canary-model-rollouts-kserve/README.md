@@ -32,6 +32,7 @@ Build a predictor that exports detailed metrics:
 
 ```python
 # metrics_predictor.py
+
 import kserve
 import logging
 from typing import Dict

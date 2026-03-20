@@ -43,6 +43,7 @@ graph TD
 
 ```dockerfile
 # Stage 1: Build stage - uses full SDK image
+
 FROM python:3.12-slim AS builder
 
 # Set working directory

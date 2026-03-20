@@ -29,6 +29,7 @@ The tradeoffs compared to Rust:
 
 ```bash
 # Install Go (if not already installed)
+
 brew install go  # macOS
 # or download from https://go.dev/dl/
 

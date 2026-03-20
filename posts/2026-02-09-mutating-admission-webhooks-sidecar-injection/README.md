@@ -541,6 +541,7 @@ spec:
 EOF
 
 # Check the pod
+
 kubectl get pod test-app -o yaml
 ```
 

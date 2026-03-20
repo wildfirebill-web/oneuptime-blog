@@ -80,6 +80,7 @@ Add your JWT configuration to `application.yml`:
 
 ```yaml
 # application.yml
+
 jwt:
   secret: your-256-bit-secret-key-here-make-it-long-and-random
   expiration: 86400000  # 24 hours in milliseconds

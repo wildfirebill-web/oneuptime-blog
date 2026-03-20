@@ -14,6 +14,7 @@ BIRD (BIRD Internet Routing Daemon) is a lightweight and feature-rich routing da
 
 ```bash
 # Debian/Ubuntu
+
 sudo apt install bird2
 
 # RHEL/CentOS/Fedora
@@ -25,7 +26,7 @@ bird --version
 
 ## Basic OSPFv3 Configuration (BIRD2)
 
-```
+```bash
 # /etc/bird/bird.conf
 
 # Set the Router ID
@@ -34,7 +35,7 @@ router id 1.1.1.1;
 # Log to syslog
 log syslog all;
 
-# Protocol: device (required — learns connected routes)
+# Protocol: device (required - learns connected routes)
 protocol device {
     scan time 10;
 }
@@ -80,8 +81,8 @@ protocol ospf v3 OSPF_V6 {
 
 ## Multi-Area Configuration
 
-```
-# /etc/bird/bird.conf — OSPFv3 with Area 0 and Area 1
+```text
+# /etc/bird/bird.conf - OSPFv3 with Area 0 and Area 1
 
 protocol ospf v3 OSPF_V6 {
     ipv6;
@@ -103,7 +104,7 @@ protocol ospf v3 OSPF_V6 {
 
 ## Stub Area Configuration
 
-```
+```text
 protocol ospf v3 OSPF_V6 {
     ipv6;
 
@@ -122,7 +123,7 @@ protocol ospf v3 OSPF_V6 {
 
 ## Route Filtering with Export Filters
 
-```
+```bash
 # Export only specific prefixes into OSPFv3
 filter OSPF_EXPORT {
     if net ~ [ 2001:db8::/32+ ] then accept;

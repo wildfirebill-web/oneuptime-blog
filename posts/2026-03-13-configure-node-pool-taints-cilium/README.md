@@ -27,6 +27,7 @@ Apply taints to the node pool that should be restricted to specific workloads.
 
 ```bash
 # Add a custom taint to nodes in a GPU node pool
+
 kubectl taint nodes gpu-node-1 gpu-node-2 gpu-node-3 \
   workload-type=gpu:NoSchedule
 

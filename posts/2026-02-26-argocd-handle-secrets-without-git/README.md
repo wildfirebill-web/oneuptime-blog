@@ -42,6 +42,7 @@ flowchart LR
 
 ```bash
 # Install the Sealed Secrets controller
+
 helm repo add sealed-secrets https://bitnami-labs.github.io/sealed-secrets
 helm install sealed-secrets sealed-secrets/sealed-secrets -n kube-system
 

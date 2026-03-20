@@ -23,6 +23,7 @@ dotnet new webapi -n DapperDemo
 cd DapperDemo
 
 # Add Dapper and SQL Server packages
+
 dotnet add package Dapper
 dotnet add package Microsoft.Data.SqlClient
 dotnet add package Azure.Identity

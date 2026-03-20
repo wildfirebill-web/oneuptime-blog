@@ -20,6 +20,7 @@ Preview which containers have updates available:
 
 ```bash
 # Check for available updates without applying them
+
 podman auto-update --dry-run
 ```
 

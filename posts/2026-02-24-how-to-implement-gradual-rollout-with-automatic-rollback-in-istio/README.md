@@ -77,6 +77,7 @@ STEP_SIZE=10         # increase by 10% each step
 MAX_CANARY_WEIGHT=100
 
 # Get current canary weight
+
 CURRENT_WEIGHT=$(kubectl get virtualservice $VS_NAME -n $NAMESPACE \
   -o jsonpath='{.spec.http[0].route[1].weight}')
 

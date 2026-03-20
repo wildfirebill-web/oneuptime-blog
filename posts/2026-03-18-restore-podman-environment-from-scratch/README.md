@@ -33,6 +33,7 @@ On a fresh system, install Podman and any required tools:
 
 ```bash
 # Fedora/RHEL/CentOS
+
 sudo dnf install -y podman podman-plugins containernetworking-plugins
 
 # Ubuntu/Debian

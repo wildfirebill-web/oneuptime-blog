@@ -16,6 +16,7 @@ Start by configuring the Terraform provider in your project.
 
 ```hcl
 # main.tf
+
 terraform {
   required_version = ">= 1.0"
 

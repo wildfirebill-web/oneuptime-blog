@@ -26,6 +26,7 @@ Each field accepts specific values, ranges, or wildcards. Missing fields default
 
 ```ini
 # Use a specific timezone
+
 OnCalendar=America/New_York 2026-*-* 08:00:00
 
 # Use local time (default)

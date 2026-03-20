@@ -12,6 +12,7 @@ Just like in Node.js, Python OpenTelemetry instrumentation depends on import ord
 
 ```python
 # app.py - BROKEN ORDER
+
 from flask import Flask  # Flask is imported first
 from opentelemetry.instrumentation.flask import FlaskInstrumentor
 

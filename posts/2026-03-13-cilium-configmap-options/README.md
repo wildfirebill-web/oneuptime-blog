@@ -28,6 +28,7 @@ View and edit the ConfigMap:
 
 ```bash
 # View the complete ConfigMap
+
 kubectl -n kube-system get configmap cilium-config -o yaml
 
 # Examine specific options

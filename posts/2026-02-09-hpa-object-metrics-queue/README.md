@@ -129,6 +129,7 @@ Apply this configuration.
 kubectl apply -f hpa.yaml
 
 # Check HPA status
+
 kubectl get hpa queue-worker-hpa -n workers
 
 # Verify object metric is available

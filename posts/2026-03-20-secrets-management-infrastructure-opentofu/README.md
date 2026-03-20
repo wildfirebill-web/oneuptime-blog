@@ -49,6 +49,7 @@ resource "aws_kms_alias" "secrets" {
 
 ```hcl
 # Database credentials
+
 resource "aws_secretsmanager_secret" "db" {
   name        = "myapp/${var.environment}/database"
   description = "Database connection credentials"

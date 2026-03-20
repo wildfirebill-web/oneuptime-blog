@@ -21,6 +21,7 @@ Route 53 latency routing routes each DNS query to the AWS region that provides t
 
 ```hcl
 # US East 1 - serves users with lowest latency to us-east-1
+
 resource "aws_route53_record" "us_east_1" {
   zone_id        = var.hosted_zone_id
   name           = "api.${var.domain_name}"

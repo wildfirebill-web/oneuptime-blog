@@ -190,6 +190,7 @@ After applying your policies, verify that health checks work:
 
 ```bash
 # Check pod status - should be Running, not CrashLoopBackOff
+
 kubectl get pods -n my-app -l app=my-service
 
 # Check that health endpoint works without a token

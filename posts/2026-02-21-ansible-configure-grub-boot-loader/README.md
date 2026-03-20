@@ -28,6 +28,7 @@ This playbook manages kernel boot parameters through GRUB:
 
 ```yaml
 # configure-grub.yml - Manage GRUB bootloader settings
+
 ---
 - name: Configure GRUB Boot Loader
   hosts: all

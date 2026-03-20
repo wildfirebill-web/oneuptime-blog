@@ -31,6 +31,7 @@ First, create a health check for the primary endpoint.
 
 ```bash
 # Create a health check for the primary endpoint
+
 aws route53 create-health-check \
   --caller-reference "primary-health-$(date +%s)" \
   --health-check-config '{

@@ -29,6 +29,7 @@ Get a broad view of Cilium's health across all nodes.
 
 ```bash
 # Check Cilium status across the entire cluster
+
 cilium status --wait
 
 # List all Cilium pods and their health

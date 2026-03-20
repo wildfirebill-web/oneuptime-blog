@@ -26,6 +26,7 @@ First, create a CloudWatch Logs log group. It must be in us-east-1 for public ho
 
 ```bash
 # Create the log group in us-east-1 (required for public hosted zones)
+
 aws logs create-log-group \
   --log-group-name /aws/route53/example.com \
   --region us-east-1

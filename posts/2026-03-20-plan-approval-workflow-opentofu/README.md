@@ -14,6 +14,7 @@ Applying infrastructure changes without review is risky. A plan approval workflo
 
 ```yaml
 # .github/workflows/opentofu-approval.yml
+
 name: OpenTofu Plan and Apply
 
 on:
@@ -66,7 +67,7 @@ jobs:
           script: |
             const fs = require('fs');
             const planOutput = fs.readFileSync('environments/${{ matrix.environment }}/plan_output.txt', 'utf8');
-            const body = `## OpenTofu Plan – \`${{ matrix.environment }}\`\n\n\`\`\`\n${planOutput.slice(0, 65000)}\n\`\`\`\n\n**Summary:** ${{ steps.plan.outputs.summary }}`;
+            const body = `## OpenTofu Plan – \`${{ matrix.environment }}\`\n\n```\n${planOutput.slice(0, 65000)}\n```\n\n**Summary:** ${{ steps.plan.outputs.summary }}`;
             await github.rest.issues.createComment({
               ...context.repo,
               issue_number: context.issue.number,

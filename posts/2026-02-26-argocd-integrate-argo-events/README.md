@@ -40,6 +40,7 @@ graph TD
 
 ```bash
 # Create namespace
+
 kubectl create namespace argo-events
 
 # Install Argo Events

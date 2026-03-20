@@ -38,6 +38,7 @@ First, create Prometheus recording rules for error rates at each required window
 
 ```yaml
 # prometheus-rules/burn-rate-recording.yaml
+
 groups:
   - name: slo_burn_rate_recording
     interval: 30s

@@ -14,6 +14,7 @@ Module utilities (module_utils) let you share code between multiple custom modul
 
 ```python
 # plugins/module_utils/my_api.py
+
 # Shared API client for custom modules
 import json
 from ansible.module_utils.urls import open_url

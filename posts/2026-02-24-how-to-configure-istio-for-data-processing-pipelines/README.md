@@ -267,6 +267,7 @@ Istio generates metrics for all service-to-service traffic. You can use these to
 
 ```bash
 # Check request volume between pipeline stages
+
 kubectl exec -n istio-system deploy/prometheus -- \
   promtool query instant 'sum(rate(istio_requests_total{destination_service_namespace="data-pipeline"}[5m])) by (source_app, destination_app)'
 

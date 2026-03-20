@@ -32,6 +32,7 @@ FRR is available in the Ubuntu repositories, but the FRR project's own repositor
 
 ```bash
 # Add the FRR APT repository (using the stable release)
+
 curl -s https://deb.frrouting.org/frr/keys.gpg | sudo tee /usr/share/keyrings/frrouting.gpg > /dev/null
 
 FRRVER="frr-stable"

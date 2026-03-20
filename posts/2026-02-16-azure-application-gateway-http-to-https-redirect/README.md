@@ -49,6 +49,7 @@ If you already have a gateway running, skip to Step 2. Otherwise, let us set up 
 
 ```bash
 # Create a resource group
+
 az group create \
   --name rg-appgw \
   --location eastus

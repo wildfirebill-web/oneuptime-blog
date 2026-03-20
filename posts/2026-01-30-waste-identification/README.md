@@ -86,7 +86,7 @@ flowchart LR
 
 The foundation is a scheduled scanner that inventories resources and correlates them with utilization metrics.
 
-### Resource Inventory Collection
+Resource Inventory Collection
 
 ```python
 import boto3
@@ -1252,6 +1252,7 @@ class WasteDetectionPipeline:
 
 
 # Entry point for scheduled execution
+
 def main():
     """Main entry point for waste detection."""
     pipeline = WasteDetectionPipeline(

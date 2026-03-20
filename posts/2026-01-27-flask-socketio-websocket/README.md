@@ -33,6 +33,7 @@ Install Flask-SocketIO with an async server. For production, use eventlet or gev
 
 ```python
 # requirements.txt
+
 # Core dependencies for Flask-SocketIO
 flask>=2.0.0
 flask-socketio>=5.3.0

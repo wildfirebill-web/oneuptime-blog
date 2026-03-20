@@ -269,6 +269,7 @@ Check what inbound listeners Envoy has:
 
 ```bash
 # List all listeners - inbound ones start with "virtualInbound"
+
 istioctl proxy-config listener deploy/my-service -n backend
 
 # Get detailed config for inbound listeners

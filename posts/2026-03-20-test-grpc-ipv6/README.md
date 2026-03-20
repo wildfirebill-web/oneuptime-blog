@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: gRPC, IPv6, Testing, grpcurl, Integration Tests
+Tags: gRPC, IPv6, Testing, Grpcurl, Integration Tests
 
 Description: Test gRPC services over IPv6 using grpcurl, language-specific test frameworks, and automated integration testing approaches.
 
@@ -12,6 +12,7 @@ grpcurl is the `curl` equivalent for gRPC:
 
 ```bash
 # Install grpcurl
+
 go install github.com/fullstorydev/grpcurl/cmd/grpcurl@latest
 # Or: brew install grpcurl
 
@@ -214,4 +215,4 @@ Use [OneUptime](https://oneuptime.com) to continuously run health check monitors
 
 ## Conclusion
 
-Testing gRPC services over IPv6 uses the same tools as IPv4 testing — grpcurl, bufconn for unit tests, and standard gRPC clients for integration tests. Always use `[ipv6addr]:port` format in test configurations and run integration tests against real IPv6 addresses in CI/CD pipelines.
+Testing gRPC services over IPv6 uses the same tools as IPv4 testing - grpcurl, bufconn for unit tests, and standard gRPC clients for integration tests. Always use `[ipv6addr]:port` format in test configurations and run integration tests against real IPv6 addresses in CI/CD pipelines.

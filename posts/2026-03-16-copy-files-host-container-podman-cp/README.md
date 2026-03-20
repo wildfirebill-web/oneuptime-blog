@@ -20,6 +20,7 @@ The basic syntax follows the pattern `podman cp <source> <container>:<destinatio
 
 ```bash
 # Start a test container
+
 podman run -d --name my-app nginx:latest
 
 # Copy a single file into the container

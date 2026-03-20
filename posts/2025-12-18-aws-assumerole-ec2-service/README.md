@@ -124,6 +124,7 @@ Here is a complete working example:
 
 ```hcl
 # IAM Role with trust policy for EC2
+
 resource "aws_iam_role" "app_role" {
   name = "application-ec2-role"
 

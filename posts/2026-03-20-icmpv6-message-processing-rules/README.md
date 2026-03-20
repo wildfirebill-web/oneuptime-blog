@@ -12,7 +12,7 @@ RFC 4443 defines strict rules for when ICMPv6 error messages may and may not be 
 
 ## Rules for When NOT to Generate ICMPv6 Errors
 
-```
+```text
 RFC 4443 Section 2.4: Do NOT send ICMPv6 errors in response to:
 
 1. ICMPv6 error messages
@@ -38,7 +38,7 @@ RFC 4443 Section 2.4: Do NOT send ICMPv6 errors in response to:
 
 ## Rules for When TO Generate ICMPv6 Errors
 
-```
+```text
 RFC 4443: Generate ICMPv6 errors when:
 
 1. A packet CANNOT BE FORWARDED due to routing or MTU issues
@@ -130,6 +130,7 @@ def validate_icmpv6_message(
     }
 
 # Test validation
+
 tests = [
     ("2001:db8::1", "2001:db8::2", bytes([1, 0, 0, 0, 0, 0, 0, 0]), False),    # Valid
     ("::",         "2001:db8::2", bytes([1, 0, 0, 0, 0, 0, 0, 0]), False),    # Invalid src
@@ -145,7 +146,7 @@ for src, dst, data, mcast in tests:
 
 ## Rate Limiting Rules
 
-```
+```javascript
 RFC 4443 Section 2.4: Rate limiting:
 
 "An IPv6 node MUST limit the rate of ICMPv6 error messages it sends."

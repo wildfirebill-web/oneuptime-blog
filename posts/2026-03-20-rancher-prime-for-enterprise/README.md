@@ -1,10 +1,10 @@
-# How to Set Up Rancher Prime for Enterprise
+# How to Set Up Rancher Prime for Enterprise - For
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Rancher, Rancher Prime, Enterprise, SUSE, Support, Compliance, Security
 
-Description: Set up Rancher Prime for enterprise deployments with SUSE commercial support, enhanced security features, extended lifecycle support, and the additional enterprise capabilities that distinguish Prime from open-source Rancher.
+Description: Set up Rancher Prime for enterprise deployments with SUSE commercial support, enhanced security features, extended lifecycle support, and the additional enterprise capabilities that distinguish...
 
 ## Introduction
 
@@ -27,6 +27,7 @@ Rancher Prime is SUSE's commercial offering of Rancher, providing enterprise-gra
 
 ```bash
 # Register at https://www.suse.com/products/rancher/
+
 # Download your license key from SUSE Customer Center (SCC)
 
 # Configure SUSE registry credentials

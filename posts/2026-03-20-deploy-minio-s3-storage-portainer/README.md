@@ -61,6 +61,7 @@ The MinIO client `mc` can automate bucket creation. Run it as a one-off containe
 
 ```bash
 # Configure an alias for your MinIO instance
+
 docker run --rm --network host minio/mc \
   alias set local http://localhost:9000 minioadmin minioadmin123
 

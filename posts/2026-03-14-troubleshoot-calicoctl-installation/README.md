@@ -30,6 +30,7 @@ Start with a systematic diagnostic that identifies the failure category.
 ```bash
 #!/bin/bash
 # diagnose-calicoctl.sh
+
 # Systematic calicoctl installation diagnostic
 
 echo "=== Calicoctl Diagnostic Report ==="

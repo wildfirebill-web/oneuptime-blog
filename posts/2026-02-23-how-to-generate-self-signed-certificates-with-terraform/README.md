@@ -20,6 +20,7 @@ A self-signed certificate acts as both the issuer and the subject. Browsers and 
 
 ```hcl
 # main.tf
+
 terraform {
   required_version = ">= 1.5.0"
 

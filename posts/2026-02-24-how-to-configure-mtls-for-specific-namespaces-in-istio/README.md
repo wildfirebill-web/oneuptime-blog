@@ -141,6 +141,7 @@ Here is a complete example you can apply to set up per-namespace mTLS:
 
 ```yaml
 # Save as namespace-mtls-policies.yaml
+
 apiVersion: security.istio.io/v1
 kind: PeerAuthentication
 metadata:

@@ -40,6 +40,7 @@ Add the OIDC configuration to your Authelia configuration file:
 
 ```yaml
 # authelia configuration.yml
+
 identity_providers:
   oidc:
     # HMAC secret for signing (generate with: openssl rand -hex 32)

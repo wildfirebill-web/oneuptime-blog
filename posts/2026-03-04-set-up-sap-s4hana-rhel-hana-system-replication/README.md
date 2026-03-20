@@ -16,6 +16,7 @@ Both RHEL servers must be prepared for SAP HANA (see the preparation guide) with
 
 ```bash
 # Verify HANA is installed on both nodes
+
 su - hdbadm -c "HDB info"
 
 # Verify RHEL SAP repositories are enabled

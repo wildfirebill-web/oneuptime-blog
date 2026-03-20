@@ -206,6 +206,7 @@ Track policy violations through audit logs and warnings. Configure your logging 
 
 ```bash
 # View admission webhook decisions in audit log
+
 kubectl get events --all-namespaces | grep "PodSecurity"
 
 # Check for warning messages in kubectl output

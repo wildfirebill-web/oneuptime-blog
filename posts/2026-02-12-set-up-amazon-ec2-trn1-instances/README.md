@@ -28,6 +28,7 @@ Trn1 instances require specific service quotas. Check and request increases befo
 
 ```bash
 # Check your Trn1 vCPU quota (quota code for trn1)
+
 aws service-quotas get-service-quota \
   --service-code ec2 \
   --quota-code L-6B0D517C \

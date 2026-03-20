@@ -86,6 +86,7 @@ Allow replication connections from Debezium:
 
 ```text
 # Allow Debezium to connect for replication
+
 host    replication     debezium    10.0.0.0/8    scram-sha-256
 host    all             debezium    10.0.0.0/8    scram-sha-256
 ```

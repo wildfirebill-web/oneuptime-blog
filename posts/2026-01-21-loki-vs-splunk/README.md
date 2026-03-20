@@ -112,6 +112,7 @@ Savings with Loki: ~$130,000/year (62%)
 **Loki (LogQL):**
 ```logql
 # Find error logs
+
 {job="application"} |= "error"
 
 # Filter by level

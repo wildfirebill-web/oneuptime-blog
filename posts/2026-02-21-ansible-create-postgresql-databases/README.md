@@ -18,6 +18,7 @@ You need the PostgreSQL community collection and the `psycopg2` Python library o
 
 ```bash
 # Install the PostgreSQL Ansible collection
+
 ansible-galaxy collection install community.postgresql
 ```
 

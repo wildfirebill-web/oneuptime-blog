@@ -30,6 +30,7 @@ The bq command-line tool supports dry runs with the --dry_run flag.
 
 ```bash
 # Estimate how much data a query will process
+
 bq query --dry_run --use_legacy_sql=false \
   'SELECT user_id, event_type, timestamp
    FROM `my_project.analytics.events`

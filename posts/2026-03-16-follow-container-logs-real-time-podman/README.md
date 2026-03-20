@@ -18,6 +18,7 @@ When debugging live issues or monitoring application behavior, you need to see l
 
 ```bash
 # Follow logs from a running container
+
 podman logs --follow my-container
 
 # Short form using -f flag

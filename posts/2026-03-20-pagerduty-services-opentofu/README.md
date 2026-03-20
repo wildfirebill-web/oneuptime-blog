@@ -14,6 +14,7 @@ PagerDuty is the industry-standard incident management platform. Managing PagerD
 
 ```hcl
 # providers.tf
+
 terraform {
   required_providers {
     pagerduty = {
@@ -131,7 +132,7 @@ resource "pagerduty_service" "database" {
   acknowledgement_timeout = 600   # Re-trigger in 10 min for critical db issues
   escalation_policy       = pagerduty_escalation_policy.platform.id
 
-  # Use time-based urgency — critical during business hours
+  # Use time-based urgency - critical during business hours
   incident_urgency_rule {
     type = "use_support_hours"
 
@@ -184,7 +185,7 @@ output "cloudwatch_integration_key" {
 ## Best Practices
 
 - Use `data` sources for existing users rather than creating them with OpenTofu to avoid managing user lifecycle in code.
-- Set appropriate `acknowledgement_timeout` values — too short leads to alert fatigue, too long means slow response.
+- Set appropriate `acknowledgement_timeout` values - too short leads to alert fatigue, too long means slow response.
 - Use time-based urgency rules for non-critical services to avoid waking people up for low-severity issues outside business hours.
 - Store PagerDuty integration keys in a secrets manager after they are output from OpenTofu.
-- Version your escalation policies — store them as code to ensure new services follow team agreements.
+- Version your escalation policies - store them as code to ensure new services follow team agreements.

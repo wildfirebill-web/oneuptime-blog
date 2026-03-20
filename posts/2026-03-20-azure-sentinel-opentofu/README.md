@@ -14,6 +14,7 @@ Microsoft Sentinel is a cloud-native SIEM (Security Information and Event Manage
 
 ```hcl
 # main.tf - Sentinel requires a Log Analytics workspace
+
 resource "azurerm_log_analytics_workspace" "sentinel_law" {
   name                = "sentinel-workspace"
   location            = azurerm_resource_group.rg.location

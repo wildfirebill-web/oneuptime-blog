@@ -37,6 +37,7 @@ Extensions must be installed at the OS level before `CREATE EXTENSION` works.
 
 ```bash
 # Debian/Ubuntu
+
 sudo apt-get install postgresql-16-postgis-3
 
 # RHEL/CentOS

@@ -30,6 +30,7 @@ When an alert fires, capture the telemetry context that triggered it. This conte
 
 ```python
 # incident_context.py - Capture OTel alert context for action items
+
 from dataclasses import dataclass, field
 from datetime import datetime
 from typing import Optional

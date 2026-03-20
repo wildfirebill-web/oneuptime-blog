@@ -17,6 +17,7 @@ pip install ansible netmiko
 
 ```yaml
 # playbooks/deploy_acls.yml
+
 ---
 - name: Deploy IPv4 ACLs on Cisco IOS
   hosts: cisco_routers

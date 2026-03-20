@@ -56,6 +56,7 @@ spark = SparkSession.builder \
     .getOrCreate()
 
 # Define schema for incoming events
+
 event_schema = StructType([
     StructField("event_id", StringType()),
     StructField("user_id", StringType()),

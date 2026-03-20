@@ -26,6 +26,7 @@ You can have unlimited sessions, each with unlimited windows, each with unlimite
 
 ```bash
 # Create a new session named "api-project"
+
 tmux new-session -s api-project
 
 # Create a session and stay in the shell (don't attach)

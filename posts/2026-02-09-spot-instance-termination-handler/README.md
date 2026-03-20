@@ -22,6 +22,7 @@ Deploy using Helm:
 
 ```bash
 # Add EKS charts repository
+
 helm repo add eks https://aws.github.io/eks-charts
 helm repo update
 

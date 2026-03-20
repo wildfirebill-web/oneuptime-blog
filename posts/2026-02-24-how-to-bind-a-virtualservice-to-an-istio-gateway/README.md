@@ -209,6 +209,7 @@ If your VirtualService is not working with your Gateway, check these things:
 
 ```bash
 # Verify the Gateway exists
+
 kubectl get gateway my-gateway
 
 # Verify the VirtualService references the right gateway

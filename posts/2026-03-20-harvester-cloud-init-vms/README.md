@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Harvester, Kubernetes, Virtualization, HCI, Cloud-Init, Automation
+Tags: Harvester, Kubernetes, Virtualization, HCI, Cloud-init, Automation
 
 Description: A comprehensive guide to using cloud-init in Harvester VMs for automated configuration, software installation, and post-boot customization.
 
 ## Introduction
 
-Cloud-init is the industry-standard mechanism for initial VM configuration on first boot. In Harvester, cloud-init data is passed to VMs via a virtual CD-ROM drive using the `cloudInitNoCloud` volume source. Cloud-init can configure users, SSH keys, network interfaces, install packages, run commands, write files, and much more — allowing you to create fully configured VMs without manual intervention.
+Cloud-init is the industry-standard mechanism for initial VM configuration on first boot. In Harvester, cloud-init data is passed to VMs via a virtual CD-ROM drive using the `cloudInitNoCloud` volume source. Cloud-init can configure users, SSH keys, network interfaces, install packages, run commands, write files, and much more - allowing you to create fully configured VMs without manual intervention.
 
 ## Cloud-Init Data Structure
 
@@ -21,6 +21,7 @@ Cloud-init accepts two types of data:
 
 ```yaml
 # Example cloud-init user data
+
 # Must start with #cloud-config
 
 #cloud-config

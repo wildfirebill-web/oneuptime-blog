@@ -22,6 +22,7 @@ The `--hide-label` flag in Portainer allows you to hide specific containers from
 
 ```bash
 # Hide containers with specific labels
+
 docker run -d \
   -p 9000:9000 \
   -p 9443:9443 \
@@ -61,13 +62,13 @@ docker run -d \
 ```yaml
 version: "3.8"
 services:
-  # Application container — visible in Portainer
+  # Application container - visible in Portainer
   myapp:
     image: myapp:latest
     ports:
       - "8080:80"
 
-  # Management container — hidden from Portainer UI
+  # Management container - hidden from Portainer UI
   watchtower:
     image: containrrr/watchtower:latest
     restart: unless-stopped
@@ -79,7 +80,7 @@ services:
       WATCHTOWER_CLEANUP: "true"
       WATCHTOWER_SCHEDULE: "0 0 3 * * *"
 
-  # Monitoring agent — also hidden
+  # Monitoring agent - also hidden
   prometheus-exporter:
     image: prom/node-exporter:latest
     restart: unless-stopped
@@ -216,4 +217,4 @@ The `--hide-label` flag matches on the label `key=value` pair:
 
 ## Conclusion
 
-The `--hide-label` flag is a simple but powerful way to keep the Portainer UI clean by hiding infrastructure and management containers from users. Label any container you want to hide with the designated label (e.g., `com.portainer.hide=true`), and start Portainer with `--hide-label "com.portainer.hide=true"`. Hidden containers continue running normally and are accessible via the Docker CLI — they're only removed from the Portainer UI.
+The `--hide-label` flag is a simple but powerful way to keep the Portainer UI clean by hiding infrastructure and management containers from users. Label any container you want to hide with the designated label (e.g., `com.portainer.hide=true`), and start Portainer with `--hide-label "com.portainer.hide=true"`. Hidden containers continue running normally and are accessible via the Docker CLI - they're only removed from the Portainer UI.

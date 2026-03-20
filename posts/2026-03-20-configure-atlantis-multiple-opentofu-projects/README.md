@@ -14,6 +14,7 @@ Infrastructure monorepos often contain dozens of OpenTofu projects across multip
 
 ```yaml
 # atlantis.yaml
+
 version: 3
 
 # Define common settings that apply to all projects

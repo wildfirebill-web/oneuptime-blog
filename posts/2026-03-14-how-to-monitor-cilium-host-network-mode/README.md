@@ -22,6 +22,7 @@ Monitoring host network mode traffic gives visibility into traffic entering and 
 
 ```bash
 # Monitor host-originated traffic
+
 hubble observe --from-identity reserved:host --last 50
 
 # Monitor traffic to host

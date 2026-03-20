@@ -53,6 +53,7 @@ This is the recommended library for most Node.js applications. It uses synchrono
 
 ```bash
 # Install better-sqlite3
+
 npm install better-sqlite3
 
 # If you need TypeScript support

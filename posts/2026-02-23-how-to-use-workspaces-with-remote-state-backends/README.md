@@ -64,6 +64,7 @@ Workspace "prod":
 
 ```bash
 # List all state files in the bucket
+
 aws s3 ls s3://my-terraform-state/ --recursive
 
 # Output:

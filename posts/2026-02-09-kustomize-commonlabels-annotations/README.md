@@ -22,6 +22,7 @@ Apply labels to all resources:
 
 ```yaml
 # base/kustomization.yaml
+
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 
@@ -371,7 +372,7 @@ commonAnnotations:
   deployment-timestamp: "2026-02-09T10:30:00Z"
 ```
 
-## Resource quotas and limits
+Resource quotas and limits
 
 Label for quota tracking:
 

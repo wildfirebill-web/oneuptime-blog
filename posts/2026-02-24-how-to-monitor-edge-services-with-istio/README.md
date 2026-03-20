@@ -172,6 +172,7 @@ Edge metrics are most useful when aggregated centrally. Use Prometheus remote wr
 
 ```yaml
 # Add to prometheus.yml
+
 remote_write:
   - url: "https://metrics.central.example.com/api/v1/write"
     queue_config:

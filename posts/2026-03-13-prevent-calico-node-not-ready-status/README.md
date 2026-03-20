@@ -30,6 +30,7 @@ The most impactful preventive measure is setting appropriate resource requests a
 
 ```bash
 # Check current calico-node resource configuration
+
 kubectl get daemonset calico-node -n kube-system \
   -o jsonpath='{.spec.template.spec.containers[0].resources}'
 ```

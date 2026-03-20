@@ -20,6 +20,7 @@ Before instrumenting your Flask application, you need to install the required pa
 
 ```bash
 # Install core OpenTelemetry packages
+
 pip install opentelemetry-api opentelemetry-sdk
 
 # Install Flask instrumentation

@@ -32,6 +32,7 @@ Store the Grafana API token in a Kubernetes secret.
 
 ```bash
 # Create a secret containing the Grafana API token
+
 kubectl create secret generic grafana-token \
   --namespace=flux-system \
   --from-literal=token=YOUR_GRAFANA_API_TOKEN

@@ -1,4 +1,4 @@
-# How to Use the Documentation Address Space (2001:db8::/32 and 3fff::/20)
+# How to Use the Documentation Address Space (2001:db8::/32 and 3fff::/20) - Ipv6
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Understand and correctly use the IPv6 documentation address spaces 
 
 ## Introduction
 
-Documentation address spaces are reserved prefixes that should only appear in documentation, examples, and educational materials — never in real network configurations. Using these addresses in examples prevents accidental configuration errors and avoids ambiguity about whether an address is real.
+Documentation address spaces are reserved prefixes that should only appear in documentation, examples, and educational materials - never in real network configurations. Using these addresses in examples prevents accidental configuration errors and avoids ambiguity about whether an address is real.
 
 ## Documentation Prefixes
 
@@ -17,10 +17,11 @@ Documentation address spaces are reserved prefixes that should only appear in do
 | 2001:db8::/32 | RFC 3849 (2004) | Original documentation prefix |
 | 3fff::/20 | RFC 9637 (2024) | Larger block for modern documentation |
 
-## 2001:db8::/32 — The Classic Documentation Prefix
+## 2001:db8::/32 - The Classic Documentation Prefix
 
 ```bash
 # Correct usage in examples:
+
 # DNS zone files
 2001:db8::1    AAAA record for documentation
 2001:db8:1::1  AAAA record for subnet documentation
@@ -28,10 +29,10 @@ Documentation address spaces are reserved prefixes that should only appear in do
 # Configuration examples
 ip -6 addr add 2001:db8::1/64 dev eth0  # This is an EXAMPLE only
 
-# Never use these in production — they are not routable
+# Never use these in production - they are not routable
 ```
 
-## 3fff::/20 — The Modern Documentation Prefix
+## 3fff::/20 - The Modern Documentation Prefix
 
 ```python
 import ipaddress
@@ -63,7 +64,7 @@ for addr in example_doc_addresses:
 
 ## Guidelines for Documentation Use
 
-```
+```text
 DO:
   - Use 2001:db8::/32 in RFC examples, blog posts, man pages
   - Use 3fff::/20 when you need more address space in documentation
@@ -75,9 +76,9 @@ DO NOT:
   - Accept BGP routes for these prefixes from peers
 
 Example of WRONG usage (never do this):
-  # /etc/network/interfaces (WRONG — do not deploy this)
+  # /etc/network/interfaces (WRONG - do not deploy this)
   iface eth0 inet6 static
-    address 2001:db8::1/64    # DOCUMENTATION ADDRESS — NOT REAL
+    address 2001:db8::1/64    # DOCUMENTATION ADDRESS - NOT REAL
 ```
 
 ## Filtering Documentation Addresses
@@ -129,4 +130,4 @@ if bad:
 
 ## Conclusion
 
-Always use `2001:db8::/32` or `3fff::/20` in technical documentation, blog posts, and examples. Filter these prefixes from BGP and routing configurations. The Python validator above can be integrated into configuration management pipelines to detect accidentally deployed documentation addresses. Use real addresses in OneUptime monitoring — never documentation prefixes.
+Always use `2001:db8::/32` or `3fff::/20` in technical documentation, blog posts, and examples. Filter these prefixes from BGP and routing configurations. The Python validator above can be integrated into configuration management pipelines to detect accidentally deployed documentation addresses. Use real addresses in OneUptime monitoring - never documentation prefixes.

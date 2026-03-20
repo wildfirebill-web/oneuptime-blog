@@ -38,6 +38,7 @@ Sessions don't need a lot of memory per session (typically 1-10 KB each), but th
 
 ```bash
 # Create a Redis replication group optimized for session storage
+
 aws elasticache create-replication-group \
   --replication-group-id session-store \
   --replication-group-description "Session storage cluster" \

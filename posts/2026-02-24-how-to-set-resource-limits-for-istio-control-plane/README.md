@@ -101,6 +101,7 @@ Or using a values file:
 
 ```yaml
 # values-production.yaml
+
 pilot:
   resources:
     requests:

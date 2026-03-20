@@ -52,6 +52,7 @@ For production, deploy an etcd cluster with three or more nodes for fault tolera
 
 ```yaml
 # etcd-cluster.yml
+
 version: "3"
 services:
   etcd1:

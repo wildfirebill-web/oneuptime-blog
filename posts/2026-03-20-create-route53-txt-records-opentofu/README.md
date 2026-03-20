@@ -21,6 +21,7 @@ data "aws_route53_zone" "main" {
 
 ```hcl
 # Google Search Console verification
+
 resource "aws_route53_record" "google_verify" {
   zone_id = data.aws_route53_zone.main.zone_id
   name    = "example.com"
@@ -49,7 +50,7 @@ resource "aws_route53_record" "spf" {
 ## DKIM Record
 
 ```hcl
-# Google Workspace DKIM — key obtained from Google Admin Console
+# Google Workspace DKIM - key obtained from Google Admin Console
 resource "aws_route53_record" "dkim_google" {
   zone_id = data.aws_route53_zone.main.zone_id
   name    = "google._domainkey.example.com"

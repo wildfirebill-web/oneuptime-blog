@@ -8,7 +8,7 @@ Description: An introduction to BGPsec for IPv6 path security, covering its arch
 
 ## What is BGPsec?
 
-BGPsec (RFC 8205) extends BGP to provide cryptographic path validation. While RPKI validates route origin (which AS originated the prefix), BGPsec validates the entire AS path — proving that each AS legitimately received and re-announced the route.
+BGPsec (RFC 8205) extends BGP to provide cryptographic path validation. While RPKI validates route origin (which AS originated the prefix), BGPsec validates the entire AS path - proving that each AS legitimately received and re-announced the route.
 
 ## BGPsec vs RPKI Comparison
 
@@ -30,6 +30,7 @@ graph LR
 
 ```bash
 # BGPsec uses router keys registered in RPKI
+
 # Generate a router key (ECDSA P-256 is standard)
 openssl ecparam -name prime256v1 -genkey -noout -out router-key.pem
 
@@ -44,7 +45,7 @@ openssl ec -in router-key.pem -pubout -out router-key-pub.pem
 
 FRRouting has experimental BGPsec support:
 
-```
+```text
 # FRR configuration for BGPsec (experimental as of FRR 8.x)
 router bgp 64496
   bgp router-id 192.0.2.1
@@ -64,7 +65,7 @@ router bgp 64496
 
 BGPsec has significant challenges that limit current deployment:
 
-```
+```text
 Challenges:
 1. CPU overhead: Every BGP UPDATE requires cryptographic verification
 2. Path length sensitivity: Longer AS paths require more signatures

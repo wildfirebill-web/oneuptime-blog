@@ -90,6 +90,7 @@ def tcp_checksum_ipv6(src: str, dst: str,
     return internet_checksum(pseudo + segment)
 
 # Example: TCP SYN segment
+
 syn_checksum = tcp_checksum_ipv6(
     src="2001:db8::1", dst="2001:db8::2",
     src_port=54321, dst_port=443,

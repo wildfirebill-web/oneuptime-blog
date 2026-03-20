@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: IPv6, Flux CD, GitOps, Kubernetes, Source Controller, HelmRepository
 
-Description: Configure Flux CD source controllers (GitRepository, HelmRepository, OCIRepository) to pull from IPv6-addressed Git servers, Helm registries, and OCI repositories in dual-stack or IPv6-only Kubernetes clusters.
+Description: Configure Flux CD source controllers (GitRepository, HelmRepository, OCIRepository) to pull from IPv6-addressed Git servers, Helm registries, and OCI repositories in dual-stack or IPv6-only...
 
 ## Introduction
 
@@ -16,6 +16,7 @@ Flux CD uses Source Controllers to synchronize configuration from Git repositori
 # git-repo-ipv6.yaml
 
 # Secret with Git credentials for IPv6 server
+
 apiVersion: v1
 kind: Secret
 metadata:
@@ -253,4 +254,4 @@ flux reconcile source git myapp -n flux-system
 
 ## Conclusion
 
-Flux CD Source Controllers connect to IPv6 Git servers, Helm registries, and OCI registries using URLs with bracketed IPv6 literals (`https://[2001:db8::git]:443/`) or hostnames with AAAA DNS records. The `known_hosts` field in SSH secrets must include the IPv6 address of the Git server (using `[ipv6]:port` format from `ssh-keyscan`). TLS certificates for IPv6 HTTPS endpoints must include the IPv6 address as a Subject Alternative Name (SAN) IP entry. The source controller pod must have IPv6 access in the cluster network — verify with `kubectl exec` and `ip -6 addr show` inside the pod. For IPv6-only clusters, ensure Flux's services and endpoints receive IPv6 addresses from the cluster's dual-stack or IPv6-only CNI.
+Flux CD Source Controllers connect to IPv6 Git servers, Helm registries, and OCI registries using URLs with bracketed IPv6 literals (`https://[2001:db8::git]:443/`) or hostnames with AAAA DNS records. The `known_hosts` field in SSH secrets must include the IPv6 address of the Git server (using `[ipv6]:port` format from `ssh-keyscan`). TLS certificates for IPv6 HTTPS endpoints must include the IPv6 address as a Subject Alternative Name (SAN) IP entry. The source controller pod must have IPv6 access in the cluster network - verify with `kubectl exec` and `ip -6 addr show` inside the pod. For IPv6-only clusters, ensure Flux's services and endpoints receive IPv6 addresses from the cluster's dual-stack or IPv6-only CNI.

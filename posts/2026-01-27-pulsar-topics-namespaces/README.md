@@ -72,6 +72,7 @@ Tenants represent the highest level of isolation in Pulsar. They are typically u
 
 ```bash
 # Create a tenant with admin CLI
+
 # The --admin-roles flag specifies which roles can administer this tenant
 # The --allowed-clusters flag limits which clusters this tenant can use
 bin/pulsar-admin tenants create company-a \

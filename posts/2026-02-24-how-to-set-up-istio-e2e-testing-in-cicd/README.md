@@ -36,6 +36,7 @@ CLUSTER_NAME="istio-e2e-test"
 ISTIO_VERSION="1.20.0"
 
 # Create kind cluster
+
 cat <<EOF | kind create cluster --name $CLUSTER_NAME --config -
 kind: Cluster
 apiVersion: kind.x-k8s.io/v1alpha4

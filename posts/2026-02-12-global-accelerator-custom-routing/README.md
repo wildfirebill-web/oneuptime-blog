@@ -43,6 +43,7 @@ When a client connects to the accelerator on port 10150, traffic goes to Instanc
 
 ```bash
 # Create a custom routing accelerator
+
 aws globalaccelerator create-custom-routing-accelerator \
   --name "game-server-routing" \
   --ip-address-type IPV4 \

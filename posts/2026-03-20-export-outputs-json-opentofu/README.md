@@ -14,6 +14,7 @@ Exporting OpenTofu outputs as JSON provides a machine-readable format for integr
 
 ```bash
 # Export all outputs as JSON
+
 tofu output -json
 
 # Example output:
@@ -162,4 +163,4 @@ tofu output -json > staging-outputs.json
 
 ## Conclusion
 
-Exporting outputs as JSON is the most powerful way to integrate OpenTofu with the broader infrastructure automation ecosystem. The structured JSON format enables programmatic access to any output value, makes CI/CD integration straightforward, and allows complex post-deployment workflows using standard tools like `jq`. Design your outputs with JSON consumers in mind — use consistent naming and appropriate types for easy parsing.
+Exporting outputs as JSON is the most powerful way to integrate OpenTofu with the broader infrastructure automation ecosystem. The structured JSON format enables programmatic access to any output value, makes CI/CD integration straightforward, and allows complex post-deployment workflows using standard tools like `jq`. Design your outputs with JSON consumers in mind - use consistent naming and appropriate types for easy parsing.

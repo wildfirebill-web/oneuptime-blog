@@ -37,6 +37,7 @@ Before debugging networking, confirm the instance is actually running and health
 
 ```bash
 # Check instance state and status checks
+
 aws ec2 describe-instance-status \
   --instance-ids i-0abc123 \
   --query 'InstanceStatuses[0].{

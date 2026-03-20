@@ -1,4 +1,4 @@
-# How to Browse Storage Classes in Portainer
+# How to Browse Storage Classes in Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Learn how to view, understand, and use Kubernetes StorageClasses in
 
 ## Introduction
 
-StorageClasses define how Kubernetes dynamically provisions PersistentVolumes when a PersistentVolumeClaim is created. Instead of manually creating PVs, a StorageClass acts as a template that automatically provisions storage from the underlying infrastructure — AWS EBS, Azure Disk, GCE PD, or on-premises Ceph or NFS. Portainer provides visibility into available StorageClasses in your cluster. This guide covers browsing StorageClasses in Portainer and using them for dynamic provisioning.
+StorageClasses define how Kubernetes dynamically provisions PersistentVolumes when a PersistentVolumeClaim is created. Instead of manually creating PVs, a StorageClass acts as a template that automatically provisions storage from the underlying infrastructure - AWS EBS, Azure Disk, GCE PD, or on-premises Ceph or NFS. Portainer provides visibility into available StorageClasses in your cluster. This guide covers browsing StorageClasses in Portainer and using them for dynamic provisioning.
 
 ## Prerequisites
 
@@ -17,12 +17,12 @@ StorageClasses define how Kubernetes dynamically provisions PersistentVolumes wh
 
 ## What StorageClasses Define
 
-```
-Provisioner         — Which storage backend creates volumes (e.g., ebs.csi.aws.com)
-Parameters          — Storage backend-specific configuration (type, encryption)
-ReclaimPolicy       — What happens to PVs when PVCs are deleted (Delete/Retain)
-VolumeBindingMode   — When to bind PVCs (Immediate or WaitForFirstConsumer)
-AllowVolumeExpansion — Whether PVCs can be resized after creation
+```text
+Provisioner         - Which storage backend creates volumes (e.g., ebs.csi.aws.com)
+Parameters          - Storage backend-specific configuration (type, encryption)
+ReclaimPolicy       - What happens to PVs when PVCs are deleted (Delete/Retain)
+VolumeBindingMode   - When to bind PVCs (Immediate or WaitForFirstConsumer)
+AllowVolumeExpansion - Whether PVCs can be resized after creation
 ```
 
 ## Step 1: View StorageClasses in Portainer
@@ -32,7 +32,7 @@ AllowVolumeExpansion — Whether PVCs can be resized after creation
    or navigate to **Storage** → **StorageClasses**
 
 The list shows:
-```
+```text
 Name                     Provisioner                     ReclaimPolicy    Default
 standard                 kubernetes.io/no-provisioner    Delete           No
 gp3                      ebs.csi.aws.com                 Delete           Yes
@@ -46,7 +46,7 @@ local-path               rancher.io/local-path           Delete           No
 
 Click on a StorageClass in Portainer to see full configuration:
 
-```
+```text
 Name:            gp3
 Provisioner:     ebs.csi.aws.com
 ReclaimPolicy:   Delete
@@ -64,6 +64,7 @@ Parameters:
 
 ```bash
 # List all StorageClasses
+
 kubectl get storageclasses
 
 # Detailed view
@@ -191,7 +192,7 @@ spec:
   resources:
     requests:
       storage: 50Gi
-  # No storageClassName — uses cluster default
+  # No storageClassName - uses cluster default
 ```
 
 ## Step 6: Set a Default StorageClass
@@ -265,4 +266,4 @@ kubectl logs -f data-migrator -n production
 
 ## Conclusion
 
-StorageClasses are the foundation of dynamic storage provisioning in Kubernetes. Browsing StorageClasses in Portainer gives you visibility into available storage options and their configurations. Choose the right StorageClass for each workload's requirements — high IOPS for databases, bulk storage for file shares, local-path for development. Set `WaitForFirstConsumer` binding mode to avoid binding volumes in wrong availability zones, enable `allowVolumeExpansion` for flexibility, and keep a default StorageClass configured for workloads that don't specify one explicitly.
+StorageClasses are the foundation of dynamic storage provisioning in Kubernetes. Browsing StorageClasses in Portainer gives you visibility into available storage options and their configurations. Choose the right StorageClass for each workload's requirements - high IOPS for databases, bulk storage for file shares, local-path for development. Set `WaitForFirstConsumer` binding mode to avoid binding volumes in wrong availability zones, enable `allowVolumeExpansion` for flexibility, and keep a default StorageClass configured for workloads that don't specify one explicitly.

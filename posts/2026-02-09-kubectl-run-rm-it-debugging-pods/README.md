@@ -16,6 +16,7 @@ Create a temporary pod with automatic cleanup:
 
 ```bash
 # Run busybox with automatic cleanup
+
 kubectl run debug --rm -it --image=busybox -- /bin/sh
 
 # Inside the pod shell:

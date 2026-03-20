@@ -95,6 +95,7 @@ Run the tests:
 
 ```bash
 # Build the Wasm binary first
+
 cargo build --target wasm32-wasi --release
 
 # Run tests

@@ -87,6 +87,7 @@ Launch your application with the `--inspect` flag:
 
 ```bash
 # Start with inspector enabled
+
 node --inspect server.js
 
 # Or attach to a running process

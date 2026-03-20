@@ -1,8 +1,8 @@
-# How to Read Output Values with tofu output Command
+# How to Read Output Values with tofu output Command - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, tofu output, CLI, Infrastructure as Code, DevOps
+Tags: OpenTofu, Tofu output, CLI, Infrastructure as Code, DevOps
 
 Description: A guide to using the tofu output command to read and display infrastructure output values after deployment.
 
@@ -14,6 +14,7 @@ The `tofu output` command reads output values from your OpenTofu state and displ
 
 ```bash
 # Display all outputs
+
 tofu output
 
 # Example output:

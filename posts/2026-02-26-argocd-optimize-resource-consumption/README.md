@@ -43,6 +43,7 @@ By default, ArgoCD reconciles every 3 minutes. For stable production environment
 
 ```yaml
 # argocd-cmd-params-cm.yaml
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

@@ -134,6 +134,7 @@ The following recording rules demonstrate aggregation at the edge tier, summing 
 
 ```yaml
 # Edge tier recording rules - aggregate by service
+
 groups:
   - name: edge_aggregations
     interval: 15s

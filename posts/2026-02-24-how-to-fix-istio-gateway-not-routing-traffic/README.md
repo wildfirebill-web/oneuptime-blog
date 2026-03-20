@@ -18,6 +18,7 @@ Start with the basics. The ingress gateway is a regular Kubernetes deployment:
 
 ```bash
 # Check the gateway pods
+
 kubectl get pods -n istio-system -l app=istio-ingressgateway
 
 # Check the gateway service

@@ -14,6 +14,7 @@ AWS EC2 instances can be launched with IPv6 addresses automatically or have IPv6
 
 ```bash
 # Launch EC2 instance with IPv6 address
+
 aws ec2 run-instances \
     --image-id ami-12345678 \
     --instance-type t3.micro \

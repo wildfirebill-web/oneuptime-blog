@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: rancher, boundary, hashicorp, access-management, zero-trust, kubernetes
+Tags: Rancher, Boundary, HashiCorp, Access-management, Zero-trust, Kubernetes
 
 Description: A guide to integrating Rancher with HashiCorp Boundary for dynamic, identity-based access management to Kubernetes clusters and workloads.
 
@@ -12,7 +12,7 @@ HashiCorp Boundary provides identity-based access management for infrastructure,
 
 ## Architecture
 
-```
+```text
 User/Operator
      |
   [OIDC/LDAP Authentication]
@@ -38,6 +38,7 @@ User/Operator
 
 ```bash
 # Install Boundary controller using Helm
+
 helm repo add hashicorp https://helm.releases.hashicorp.com
 helm install boundary hashicorp/boundary \
   --namespace boundary \

@@ -66,6 +66,7 @@ Separate critical resources from non-critical ones into different Kustomizations
 
 ```yaml
 # Critical resources with health checks
+
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
 metadata:

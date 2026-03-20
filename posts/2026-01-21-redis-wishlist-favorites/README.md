@@ -123,6 +123,7 @@ class WishlistService:
         r.delete(key)
 
 # Usage
+
 wishlist = WishlistService()
 
 # Add items

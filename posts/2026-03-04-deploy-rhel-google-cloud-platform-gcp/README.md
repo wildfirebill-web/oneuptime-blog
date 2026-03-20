@@ -14,6 +14,7 @@ Google Cloud provides official RHEL images that are optimized for the GCP enviro
 
 ```bash
 # List available RHEL images
+
 gcloud compute images list --filter="family:rhel" --project=rhel-cloud
 
 # Show details for RHEL 9 images

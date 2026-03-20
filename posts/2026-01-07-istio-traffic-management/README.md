@@ -56,6 +56,7 @@ The following example shows a basic VirtualService configuration that routes all
 
 ```yaml
 # VirtualService for the reviews service
+
 # This configuration routes ALL traffic to the v1 subset of the reviews service
 # The 'hosts' field specifies which service this VirtualService applies to
 # The 'http' section contains the routing rules for HTTP traffic

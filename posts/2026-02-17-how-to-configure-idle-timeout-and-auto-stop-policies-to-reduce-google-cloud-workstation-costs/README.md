@@ -35,6 +35,7 @@ When creating a new workstation configuration, set both timeouts.
 
 ```bash
 # Create a workstation config with cost-saving timeouts
+
 gcloud workstations configs create cost-optimized-config \
   --cluster=dev-cluster \
   --region=us-central1 \

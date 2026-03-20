@@ -39,6 +39,7 @@ The simplest way to trigger a full relabel is to create a file called `.autorela
 
 ```bash
 # Create the autorelabel trigger file
+
 sudo touch /.autorelabel
 
 # Reboot the system

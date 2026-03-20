@@ -14,6 +14,7 @@ systemd-nspawn is a lightweight container runtime built directly into systemd. I
 
 ```bash
 # Install systemd-container which provides systemd-nspawn and machinectl
+
 sudo dnf install -y systemd-container
 ```
 

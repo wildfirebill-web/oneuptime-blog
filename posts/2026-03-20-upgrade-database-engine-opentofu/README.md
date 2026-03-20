@@ -63,6 +63,7 @@ Major upgrades (e.g., PostgreSQL 14 to 16) require more planning.
 
 ```hcl
 # Step 1: Set apply_immediately = false to schedule upgrade
+
 # Step 2: Take manual snapshot
 # Step 3: Update engine_version variable
 # Step 4: Run tofu plan to review changes
@@ -154,4 +155,4 @@ tofu apply -var="db_engine_version=16.2" -var="apply_immediately=true"
 
 ## Summary
 
-Database engine upgrades require careful planning, pre-upgrade snapshots, and validated parameter groups for new major versions. OpenTofu tracks engine version in state and applies upgrades predictably — making database upgrades a safe, auditable infrastructure change.
+Database engine upgrades require careful planning, pre-upgrade snapshots, and validated parameter groups for new major versions. OpenTofu tracks engine version in state and applies upgrades predictably - making database upgrades a safe, auditable infrastructure change.

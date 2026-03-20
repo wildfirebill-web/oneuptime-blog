@@ -67,6 +67,7 @@ Different namespaces might need different sampling rates. A staging environment 
 
 ```yaml
 # Staging - trace everything
+
 apiVersion: telemetry.istio.io/v1
 kind: Telemetry
 metadata:

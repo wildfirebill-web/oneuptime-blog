@@ -80,6 +80,7 @@ First, install the Microsoft identity platform library.
 
 ```bash
 # Install the MSAL library for Node.js and Express middleware
+
 npm install @azure/msal-node express-session
 ```
 

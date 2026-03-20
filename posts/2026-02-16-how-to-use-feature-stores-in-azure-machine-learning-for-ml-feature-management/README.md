@@ -41,6 +41,7 @@ graph TD
 
 ```bash
 # Install required packages
+
 pip install azure-ai-ml azureml-featurestore mltable
 ```
 

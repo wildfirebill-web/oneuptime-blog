@@ -41,6 +41,7 @@ Enable and configure the DNS server in Consul.
 
 ```hcl
 # DNS server configuration
+
 ports {
   dns = 8600
 }

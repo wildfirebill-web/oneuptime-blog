@@ -35,6 +35,7 @@ The `@gorhom/bottom-sheet` library is the most popular and feature-rich solution
 
 ```bash
 # Using npm
+
 npm install @gorhom/bottom-sheet
 
 # Using yarn

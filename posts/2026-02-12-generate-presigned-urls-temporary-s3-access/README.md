@@ -29,6 +29,7 @@ Using the AWS CLI:
 
 ```bash
 # Generate a presigned URL valid for 1 hour (3600 seconds)
+
 aws s3 presign s3://my-private-bucket/reports/monthly-report.pdf \
   --expires-in 3600
 ```

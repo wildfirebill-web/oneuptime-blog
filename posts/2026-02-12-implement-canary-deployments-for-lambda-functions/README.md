@@ -44,6 +44,7 @@ The easiest way to implement canary deployments is with SAM (Serverless Applicat
 
 ```yaml
 # template.yml - SAM template with canary deployment
+
 AWSTemplateFormatVersion: '2010-09-09'
 Transform: AWS::Serverless-2016-10-31
 

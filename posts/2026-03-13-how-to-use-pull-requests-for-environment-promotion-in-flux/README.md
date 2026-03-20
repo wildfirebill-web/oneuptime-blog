@@ -47,6 +47,7 @@ Use environment-specific branches:
 
 ```yaml
 # clusters/staging/flux-system/gotk-sync.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: GitRepository
 metadata:

@@ -1,4 +1,4 @@
-# How to Configure Longhorn ReadWriteMany (RWX) Volumes
+# How to Enable Longhorn ReadWriteMany (RWX) Volume Support
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -28,6 +28,7 @@ Longhorn RWX volumes work as follows:
 
 ```bash
 # Ubuntu/Debian
+
 apt-get install -y nfs-common
 
 # RHEL/CentOS/Rocky Linux
@@ -194,7 +195,7 @@ kubectl get service -n longhorn-system | grep share-manager
 
 RWX volumes have performance characteristics to be aware of:
 
-1. **All writes go through one share manager pod** — this is a single point of throughput
+1. **All writes go through one share manager pod** - this is a single point of throughput
 2. **Network overhead**: Remote nodes access data via NFSv4 (network latency applies)
 3. **Not suitable for write-heavy workloads** requiring very low latency from multiple nodes
 4. **Best for**: shared configuration, web content, log aggregation

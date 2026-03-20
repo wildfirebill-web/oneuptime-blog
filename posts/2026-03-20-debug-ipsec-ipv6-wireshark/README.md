@@ -16,6 +16,7 @@ Wireshark is invaluable for debugging IPv6 IPsec issues. It can capture and deco
 
 ```bash
 # Capture IKEv2 negotiation (UDP port 500 and 4500)
+
 tshark -i eth0 -f 'udp port 500 or udp port 4500' -w /tmp/ike-capture.pcap
 
 # Capture ESP traffic (protocol 50)
@@ -47,7 +48,7 @@ tcpdump -i eth0 'ip6[6] == 50' -n -v
 
 Open the capture file in Wireshark and apply the filter:
 
-```
+```text
 isakmp
 ```
 
@@ -55,7 +56,7 @@ isakmp
 
 In a successful negotiation you should see:
 
-```
+```text
 No.  Source          Dest            Protocol    Info
 1    gw1             gw2             ISAKMP      IKE_SA_INIT Request
 2    gw2             gw1             ISAKMP      IKE_SA_INIT Response
@@ -68,7 +69,7 @@ No.  Source          Dest            Protocol    Info
 ### Common IKEv2 Failure Points
 
 **Failure at IKE_SA_INIT:**
-```
+```text
 No response to IKE_SA_INIT → Firewall blocking UDP 500/4500
 Multiple IKE_SA_INIT retransmits → No response from remote
 
@@ -77,7 +78,7 @@ tshark -i eth0 -Y 'udp.dstport == 500 and ipv6.dst == 2001:db8:gw2::1'
 ```
 
 **NO_PROPOSAL_CHOSEN notification:**
-```
+```text
 Wireshark shows:
   IKE_SA_INIT Response with Notify: NO_PROPOSAL_CHOSEN
 → Cipher suites don't match between initiator and responder
@@ -86,7 +87,7 @@ Fix: Ensure both sides have matching 'proposals' in swanctl.conf
 ```
 
 **AUTHENTICATION_FAILED:**
-```
+```text
 IKE_AUTH Response with Notify: AUTHENTICATION_FAILED
 → PSK mismatch or certificate validation failure
 
@@ -163,7 +164,7 @@ ping6 -c 3 -M do -s 1400 2001:db8:site2::10
 # -M do: don't fragment
 # -s 1400: payload size
 
-# If this fails with "message too long" — MTU issue
+# If this fails with "message too long" - MTU issue
 # Fix: Set lower MTU on the tunnel or adjust TCP MSS
 ip -6 link set eth0 mtu 1400   # Reduce MTU to account for ESP overhead
 ```
@@ -171,9 +172,9 @@ ip -6 link set eth0 mtu 1400   # Reduce MTU to account for ESP overhead
 ```bash
 # Capture Packet Too Big messages
 tcpdump -i eth0 'icmp6 and ip6[40] == 2' -n -v
-# Type 2 = Packet Too Big — tells you the path MTU
+# Type 2 = Packet Too Big - tells you the path MTU
 ```
 
 ## Summary
 
-Wireshark and tshark are essential for debugging IPv6 IPsec. Capture IKEv2 with `udp port 500 or udp port 4500` and ESP with `ip6 proto 50`. Analyze IKEv2 failure messages — NO_PROPOSAL_CHOSEN means mismatched cipher suites, AUTHENTICATION_FAILED means wrong PSK or certificate. Configure Wireshark's ESP decryption with SPI and keys to see plaintext payload. Watch for MTU issues by capturing ICMPv6 Packet Too Big messages (type 2) — these indicate ESP overhead is causing fragmentation problems.
+Wireshark and tshark are essential for debugging IPv6 IPsec. Capture IKEv2 with `udp port 500 or udp port 4500` and ESP with `ip6 proto 50`. Analyze IKEv2 failure messages - NO_PROPOSAL_CHOSEN means mismatched cipher suites, AUTHENTICATION_FAILED means wrong PSK or certificate. Configure Wireshark's ESP decryption with SPI and keys to see plaintext payload. Watch for MTU issues by capturing ICMPv6 Packet Too Big messages (type 2) - these indicate ESP overhead is causing fragmentation problems.

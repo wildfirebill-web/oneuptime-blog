@@ -25,6 +25,7 @@ Traditional Linux user management splits account information across `/etc/passwd
 
 ```bash
 # Check systemd version (homed requires systemd 245+)
+
 systemctl --version
 
 # Install systemd-homed
@@ -114,7 +115,7 @@ homectl list | grep -i active
 
 For LUKS-backed homes, activation decrypts the LUKS volume and mounts it. Deactivation unmounts and re-encrypts.
 
-## Resource Limits per User
+Resource Limits per User
 
 One of homed's key features is per-user resource control:
 

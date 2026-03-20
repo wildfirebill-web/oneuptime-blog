@@ -26,6 +26,7 @@ Separate teams or applications using vhosts for isolation:
 
 ```yaml
 # infrastructure/messaging/rabbitmq/topology/vhost-orders.yaml
+
 apiVersion: rabbitmq.com/v1beta1
 kind: Vhost
 metadata:

@@ -44,6 +44,7 @@ Set up Prometheus to scrape metrics from both service meshes:
 
 ```yaml
 # prometheus-federated.yaml
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

@@ -37,6 +37,7 @@ Make sure istiod is configured to serve xDS to proxyless gRPC clients. This is e
 
 ```bash
 # Verify istiod is running
+
 kubectl get pods -n istio-system -l app=istiod
 
 # Check that the gRPC xDS port is exposed

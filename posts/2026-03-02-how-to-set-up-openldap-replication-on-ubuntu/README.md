@@ -31,6 +31,7 @@ The `syncprov` (Sync Provider) overlay must be enabled on the provider. Use LDAP
 
 ```bash
 # On ldap1 (the provider)
+
 sudo nano /tmp/syncprov-overlay.ldif
 ```
 

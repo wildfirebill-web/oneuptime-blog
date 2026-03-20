@@ -12,6 +12,7 @@ Blocking specific IPv4 addresses with iptables is a fundamental security control
 
 ```bash
 # Block all inbound traffic from a specific IP
+
 sudo iptables -A INPUT -s 203.0.113.50 -j DROP
 
 # Block all outbound traffic to a specific IP
@@ -123,4 +124,4 @@ sudo iptables -L INPUT -n -v
 sudo iptables -L INPUT -n | grep DROP
 ```
 
-For blocking hundreds of IPs, always use ipset — it uses a hash table for O(1) lookups versus O(n) for individual iptables rules.
+For blocking hundreds of IPs, always use ipset - it uses a hash table for O(1) lookups versus O(n) for individual iptables rules.

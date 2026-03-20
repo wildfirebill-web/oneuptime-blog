@@ -40,6 +40,7 @@ To remove existing actions:
 
 ```bash
 # Remove actions for StatefulSets
+
 kubectl patch configmap argocd-cm -n argocd --type json \
   -p='[{"op": "remove", "path": "/data/resource.customizations.actions.apps_StatefulSet"}]'
 ```

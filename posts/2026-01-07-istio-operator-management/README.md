@@ -84,6 +84,7 @@ The simplest way to install the Istio Operator is using the `istioctl` command-l
 
 ```bash
 # Install the Istio Operator controller into the istio-operator namespace
+
 # This creates the operator deployment and necessary RBAC resources
 istioctl operator init
 ```

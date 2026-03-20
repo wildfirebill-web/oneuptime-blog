@@ -27,6 +27,7 @@ Here is what a typical first attempt looks like:
 
 ```dockerfile
 # Bad example - produces an image over 800 MB
+
 FROM golang:1.22
 
 WORKDIR /app

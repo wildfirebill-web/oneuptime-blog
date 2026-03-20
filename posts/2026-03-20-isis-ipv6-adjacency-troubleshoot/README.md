@@ -12,18 +12,19 @@ IS-IS adjacency failures prevent IPv6 routes from being exchanged. Common causes
 
 ## Step 1: Check Neighbor State
 
-```
+```text
 ! Cisco
 Router# show isis neighbors
 
 System Id      Type Interface   IP Address    State  Holdtime Circuit Id
 R2             L2   Gi0/0       10.0.0.2      UP        22     R2.01
 
-! State should be "UP" — "Init" means one-way Hello, "DOWN" means no contact
+! State should be "UP" - "Init" means one-way Hello, "DOWN" means no contact
 ```
 
 ```bash
 # FRRouting
+
 vtysh -c "show isis neighbor"
 
 # State values:
@@ -34,7 +35,7 @@ vtysh -c "show isis neighbor"
 
 ## Step 2: Verify IS-IS is Enabled on the Interface
 
-```
+```text
 ! Cisco
 Router# show isis interface GigabitEthernet0/0
 ! Should show: IS-IS is ENABLED for IPv6
@@ -48,7 +49,7 @@ Router(config-if)# ipv6 router isis    ! Enable IPv6 IS-IS
 
 Both sides must agree on IS-IS level:
 
-```
+```text
 ! Cisco: Check configured level
 Router# show isis protocols | include is-type
 ! Both sides must be Level-1, Level-2, or L1-L2
@@ -63,7 +64,7 @@ Router# show isis protocols | include is-type
 
 For Level-1 adjacency, both routers must be in the same area:
 
-```
+```text
 ! Router A NET: 49.0001.0000.0000.0001.00 → Area 49.0001
 ! Router B NET: 49.0002.0000.0000.0002.00 → Area 49.0002
 ! These cannot form a Level-1 adjacency (different areas)
@@ -72,7 +73,7 @@ For Level-1 adjacency, both routers must be in the same area:
 
 ## Step 5: Check Authentication
 
-```
+```text
 ! Cisco: Verify authentication mode on interface
 Router# show isis interface GigabitEthernet0/0 | include Auth
 ! If authentication is configured on one side but not the other → adjacency fails
@@ -85,7 +86,7 @@ Router# show key chain ISIS_KEY | include key-string
 
 IS-IS PDUs must fit within the interface MTU:
 
-```
+```text
 ! Cisco: Check IS-IS hello PDU MTU
 Router# show isis interface GigabitEthernet0/0 | include MTU
 ! If LAN hello PDU size > interface MTU → adjacency fails
@@ -98,7 +99,7 @@ Router(config-if)# isis lsp-mtu 1400   ! Reduce IS-IS PDU size
 
 Juniper requires `family iso` on interfaces for IS-IS:
 
-```
+```text
 # Check if family iso is configured
 show interfaces ge-0/0/0.0 | grep iso
 

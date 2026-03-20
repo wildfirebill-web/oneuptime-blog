@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: K3s, Kubernetes, Upgrades, DevOps, Linux
+Tags: K3s, Kubernetes, Upgrade, DevOps, Linux
 
 Description: A step-by-step guide to manually upgrading K3s server and agent nodes to a new version with minimal disruption.
 
 ## Introduction
 
-While automated upgrade controllers are great for CI/CD pipelines, sometimes a manual, controlled upgrade is preferred — especially in production environments where you want explicit human oversight of each step. This guide covers the complete process for manually upgrading both K3s server and agent nodes.
+While automated upgrade controllers are great for CI/CD pipelines, sometimes a manual, controlled upgrade is preferred - especially in production environments where you want explicit human oversight of each step. This guide covers the complete process for manually upgrading both K3s server and agent nodes.
 
 ## Prerequisites
 
@@ -23,6 +23,7 @@ Before upgrading, verify your current cluster state:
 
 ```bash
 # Check current K3s version on each node
+
 k3s --version
 
 # Check Kubernetes version from the API

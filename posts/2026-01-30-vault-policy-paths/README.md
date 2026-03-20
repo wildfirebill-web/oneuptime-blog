@@ -18,6 +18,7 @@ A Vault policy consists of one or more path rules. Each rule specifies a path an
 
 ```hcl
 # Basic policy structure
+
 path "secret/data/myapp/*" {
   capabilities = ["create", "read", "update", "delete", "list"]
 }

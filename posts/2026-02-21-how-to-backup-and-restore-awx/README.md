@@ -29,6 +29,7 @@ The AWX Operator includes a built-in backup mechanism through a custom resource.
 
 ```yaml
 # awx-backup.yml
+
 ---
 apiVersion: awx.ansible.com/v1beta1
 kind: AWXBackup

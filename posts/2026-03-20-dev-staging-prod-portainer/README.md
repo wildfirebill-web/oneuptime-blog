@@ -12,7 +12,7 @@ Managing separate Dev/Staging/Prod environments in Portainer uses the Environmen
 
 ## Architecture
 
-```
+```text
 Portainer (Central Management)
     │
     ├─── Development Environment (Endpoint 1)
@@ -31,6 +31,7 @@ For each environment server, install the Portainer Agent:
 
 ```bash
 # Install on each server (dev, staging, prod)
+
 docker run -d \
   -p 9001:9001 \
   --name portainer_agent \
@@ -226,7 +227,7 @@ secrets:
 
 ## Step 5: Portainer Teams for Environment Access Control
 
-```
+```text
 Teams:
 ├── Developers
 │   ├── Access: Dev environment (full)

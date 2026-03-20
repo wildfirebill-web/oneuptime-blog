@@ -448,6 +448,7 @@ Some proxies interfere with WebSocket compression.
 
 ```nginx
 # NGINX configuration for WebSocket with compression passthrough
+
 upstream websocket_backend {
     server 127.0.0.1:8080;
 }

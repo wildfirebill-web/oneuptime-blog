@@ -389,6 +389,7 @@ For PreStop hooks, you can trigger a pod deletion and watch the logs:
 
 ```bash
 # Terminal 1: Watch logs
+
 kubectl logs -f my-pod
 
 # Terminal 2: Delete pod

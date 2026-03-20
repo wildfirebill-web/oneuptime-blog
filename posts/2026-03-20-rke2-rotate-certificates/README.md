@@ -1,4 +1,4 @@
-# How to Rotate RKE2 Certificates
+# How to Rotate RKE2 Certificates - Rotate Certificates
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -18,6 +18,7 @@ Before rotating, check when your certificates expire:
 
 ```bash
 # Check all RKE2 certificate expiry dates
+
 for cert in /var/lib/rancher/rke2/server/tls/*.crt; do
   echo "=== $cert ==="
   openssl x509 -in "$cert" -noout -dates 2>/dev/null
@@ -41,7 +42,7 @@ done
 RKE2 automatically rotates certificates that expire within 90 days when the server is restarted. This is the safest rotation method:
 
 ```bash
-# Restart RKE2 server — certificates expiring within 90 days are renewed
+# Restart RKE2 server - certificates expiring within 90 days are renewed
 systemctl restart rke2-server
 
 # Verify certificates were renewed
@@ -163,6 +164,6 @@ kubectl get pods -n kube-system
 
 ## Best Practices
 
-- Rotate certificates every 6 months rather than waiting for the 90-day auto-renewal window — this gives more predictable maintenance windows.
-- Always take an etcd snapshot before rotating certificates — a failed rotation can leave the cluster in a broken state.
+- Rotate certificates every 6 months rather than waiting for the 90-day auto-renewal window - this gives more predictable maintenance windows.
+- Always take an etcd snapshot before rotating certificates - a failed rotation can leave the cluster in a broken state.
 - Test certificate rotation in a staging cluster first to understand the restart sequence and any application impact.

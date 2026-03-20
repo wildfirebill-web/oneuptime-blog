@@ -48,6 +48,7 @@ graph TD
 
 ```bash
 # Register required resource providers
+
 az provider register --namespace Microsoft.Kubernetes
 az provider register --namespace Microsoft.KubernetesConfiguration
 az provider register --namespace Microsoft.ExtendedLocation

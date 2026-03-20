@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, IPv6, GKE, Kubernetes, Dual-Stack, Google Cloud, Container
+Tags: GCP, IPv6, GKE, Kubernetes, Dual-Stack, Google Cloud, Containers
 
 Description: Create Google Kubernetes Engine clusters with IPv6 support, configure dual-stack pod and service CIDR ranges, and deploy IPv6-aware workloads on GKE.
 
 ## Introduction
 
-Google Kubernetes Engine (GKE) supports dual-stack networking, allowing pods and services to receive both IPv4 and IPv6 addresses. GKE dual-stack clusters require a dual-stack subnet and use GKE's native VPC-native networking (Alias IPs). IPv6 in GKE requires GKE version 1.21+ and standard mode clusters — Autopilot clusters do not yet support dual-stack.
+Google Kubernetes Engine (GKE) supports dual-stack networking, allowing pods and services to receive both IPv4 and IPv6 addresses. GKE dual-stack clusters require a dual-stack subnet and use GKE's native VPC-native networking (Alias IPs). IPv6 in GKE requires GKE version 1.21+ and standard mode clusters - Autopilot clusters do not yet support dual-stack.
 
 ## Create a Dual-Stack GKE Cluster
 
@@ -18,6 +18,7 @@ REGION="us-east1"
 ZONE="us-east1-b"
 
 # First, create dual-stack subnet for GKE
+
 gcloud compute networks subnets create subnet-gke \
     --network=vpc-main \
     --region="$REGION" \

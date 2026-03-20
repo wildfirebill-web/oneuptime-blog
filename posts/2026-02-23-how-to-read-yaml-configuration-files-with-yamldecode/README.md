@@ -16,6 +16,7 @@ The standard approach combines `file()` to read the file and `yamldecode()` to p
 
 ```hcl
 # Read and parse a YAML configuration file
+
 locals {
   config = yamldecode(file("${path.module}/config.yaml"))
 }

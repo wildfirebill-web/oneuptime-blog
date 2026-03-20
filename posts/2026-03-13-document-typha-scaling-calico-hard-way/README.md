@@ -67,6 +67,7 @@ Store a snapshot of the actual deployed configuration in version control:
 
 ```bash
 # Generate a configuration snapshot for version control
+
 echo "# Typha Configuration Snapshot" > typha-config-snapshot.yaml
 echo "# Generated: $(date -u)" >> typha-config-snapshot.yaml
 echo "" >> typha-config-snapshot.yaml

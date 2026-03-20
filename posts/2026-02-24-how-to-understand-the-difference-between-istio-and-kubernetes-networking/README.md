@@ -20,6 +20,7 @@ Every pod gets its own IP address, and every pod can communicate with every othe
 
 ```bash
 # Every pod has its own IP
+
 kubectl get pods -o wide
 # NAME       READY   STATUS    IP            NODE
 # app-a      1/1     Running   10.244.1.5    node-1

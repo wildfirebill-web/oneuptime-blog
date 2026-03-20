@@ -304,6 +304,7 @@ When a Sealed Secret health check fails:
 
 ```bash
 # Check Kustomization status
+
 flux get kustomization app-secrets
 
 # Check SealedSecret status

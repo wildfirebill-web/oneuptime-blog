@@ -26,6 +26,7 @@ Before changing anything, back up your state file:
 
 ```bash
 # Back up local state file
+
 cp terraform.tfstate terraform.tfstate.backup-$(date +%Y%m%d%H%M%S)
 
 # If you have a backup state file too

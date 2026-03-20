@@ -21,6 +21,7 @@ ICMP Time Exceeded (Type 11) is generated when a router decrements a packet's TT
 
 ```bash
 # Traceroute sends probes with TTL=1, 2, 3, etc.
+
 # Each router sends back ICMP Type 11 Code 0 when it decrements TTL to 0
 # This reveals each hop's IP address and RTT
 

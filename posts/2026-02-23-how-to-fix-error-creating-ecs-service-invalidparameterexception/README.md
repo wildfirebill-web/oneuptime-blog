@@ -38,6 +38,7 @@ ECS requires a service-linked role to manage resources on your behalf. If this r
 
 ```bash
 # Check if the service-linked role exists
+
 aws iam get-role --role-name AWSServiceRoleForECS
 ```
 

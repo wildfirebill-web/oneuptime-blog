@@ -12,21 +12,22 @@ Well-known multicast groups are permanently assigned IPv6 multicast addresses re
 
 ## The Essential Well-Known Groups
 
-### ff02::1 — All Nodes (Link-Local)
+### ff02::1 - All Nodes (Link-Local)
 
 Every IPv6-capable interface automatically joins this group. Packets sent to `ff02::1` reach all IPv6 nodes on the link.
 
 ```bash
 # ping all nodes on the link (equivalent to IPv4 broadcast ping)
+
 ping6 -c 3 ff02::1%eth0
 
 # Verify your interface has joined ff02::1
 ip -6 maddr show dev eth0 | grep 'ff02::1'
 ```
 
-Used by: Neighbor Discovery (NDP) — Router Advertisement sent to ff02::1 to announce routes and prefixes.
+Used by: Neighbor Discovery (NDP) - Router Advertisement sent to ff02::1 to announce routes and prefixes.
 
-### ff02::2 — All Routers (Link-Local)
+### ff02::2 - All Routers (Link-Local)
 
 Only routers (devices with IPv6 forwarding enabled) join this group. Hosts send Router Solicitations to `ff02::2`.
 
@@ -40,11 +41,11 @@ ip -6 maddr show dev eth0 | grep 'ff02::2'
 sysctl net.ipv6.conf.eth0.forwarding  # 1 = router, joins ff02::2
 ```
 
-### ff02::5 and ff02::6 — OSPFv3
+### ff02::5 and ff02::6 - OSPFv3
 
 OSPFv3 (IPv6 version of OSPF) uses two multicast groups:
 
-```
+```text
 ff02::5 - OSPFv3 all SPF routers (all OSPFv3 neighbors)
 ff02::6 - OSPFv3 all DR/BDR (Designated Routers)
 ```
@@ -54,7 +55,7 @@ ff02::6 - OSPFv3 all DR/BDR (Designated Routers)
 ip -6 maddr show | grep -E 'ff02::5|ff02::6'
 ```
 
-### ff02::9 — RIPng Routers
+### ff02::9 - RIPng Routers
 
 RIPng (Routing Information Protocol for IPv6) uses `ff02::9` for routing updates:
 
@@ -64,15 +65,15 @@ RIPng (Routing Information Protocol for IPv6) uses `ff02::9` for routing updates
 tcpdump -i eth0 -n 'ip6 dst ff02::9'
 ```
 
-### ff02::a — EIGRP Routers
+### ff02::a - EIGRP Routers
 
 Cisco's EIGRP for IPv6 uses `ff02::a` for hello and update packets.
 
-### ff02::d — PIM Routers
+### ff02::d - PIM Routers
 
 Protocol Independent Multicast (PIM) uses `ff02::d` for hello messages between PIM routers.
 
-### ff02::fb — mDNS (Multicast DNS)
+### ff02::fb - mDNS (Multicast DNS)
 
 Multicast DNS uses `ff02::fb` for service discovery on the local link. This is used by Apple's Bonjour/Zeroconf and Avahi on Linux.
 
@@ -86,7 +87,7 @@ dns-sd -B _http._tcp local
 tcpdump -i eth0 -n 'ip6 dst ff02::fb and port 5353'
 ```
 
-### ff02::1:2 — DHCPv6 Relay Agents and Servers
+### ff02::1:2 - DHCPv6 Relay Agents and Servers
 
 DHCPv6 clients send to `ff02::1:2` (all relay agents and servers) for address requests:
 
@@ -96,13 +97,13 @@ DHCPv6 clients send to `ff02::1:2` (all relay agents and servers) for address re
 tcpdump -i eth0 -n 'ip6 dst ff02::1:2 and port 546'
 ```
 
-### ff02::1:3 — DHCPv6 Servers Only
+### ff02::1:3 - DHCPv6 Servers Only
 
 Used when communicating directly with DHCPv6 servers (without relays).
 
 ## Complete Reference Table
 
-```
+```text
 ff02::1    All nodes (every IPv6 node)
 ff02::2    All routers
 ff02::3    Unassigned

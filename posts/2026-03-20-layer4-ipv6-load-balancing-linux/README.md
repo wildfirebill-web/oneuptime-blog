@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Layer 4, Load Balancing, Linux, IPVS, ip6tables, Networking
+Tags: IPv6, Layer 4, Load Balancing, Linux, IPVS, Ip6tables, Networking
 
 Description: A guide to configuring Layer 4 IPv6 load balancing on Linux using IPVS, nftables, and ip6tables for TCP and UDP traffic distribution.
 
@@ -14,6 +14,7 @@ IPVS operates in the kernel and provides the highest performance:
 
 ```bash
 # Load required modules
+
 sudo modprobe ip_vs ip_vs_rr ip_vs_wrr ip_vs_lc
 
 # TCP load balancing (round-robin)
@@ -106,7 +107,7 @@ sudo ip6tables -t nat -A POSTROUTING \
 
 ## Method 5: HAProxy (TCP Mode)
 
-```
+```text
 # /etc/haproxy/haproxy.cfg
 
 global

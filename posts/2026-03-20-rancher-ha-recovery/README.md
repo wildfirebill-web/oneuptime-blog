@@ -21,6 +21,7 @@ When a Rancher HA node fails, the recovery procedure depends on the type of fail
 
 ```bash
 # Determine the failure type
+
 kubectl get nodes
 kubectl get pods -n kube-system | grep etcd
 kubectl get pods -n cattle-system
@@ -216,4 +217,4 @@ rke2 etcd-snapshot save \
 
 ## Conclusion
 
-Rancher HA recovery is straightforward for single-node failures—the cluster recovers automatically. The procedure becomes more involved for hardware replacement, requiring manual etcd member removal and node re-provisioning. The most extreme case—restoring from etcd snapshot—should be well-practiced through regular disaster recovery drills. The key prerequisites for fast recovery are: automated etcd snapshots to S3 or cloud storage, documented cluster token and configuration, and rehearsed procedures that your team can execute under pressure.
+Rancher HA recovery is straightforward for single-node failures-the cluster recovers automatically. The procedure becomes more involved for hardware replacement, requiring manual etcd member removal and node re-provisioning. The most extreme case-restoring from etcd snapshot-should be well-practiced through regular disaster recovery drills. The key prerequisites for fast recovery are: automated etcd snapshots to S3 or cloud storage, documented cluster token and configuration, and rehearsed procedures that your team can execute under pressure.

@@ -100,6 +100,7 @@ The following example skips CRD installation because CRDs are managed by a separ
 
 ```yaml
 # First, manage CRDs separately via Kustomization
+
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
 metadata:

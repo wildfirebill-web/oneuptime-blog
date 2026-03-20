@@ -56,6 +56,7 @@ sudo chmod +x /opt/scripts/teams-alert.sh
 
 ```bash
 # CPU alert
+
 sudo tee /etc/cron.d/teams-cpu-alert <<EOF
 */5 * * * * root CPU=\$(top -bn1 | grep "Cpu(s)" | awk '{print int(\$2)}'); [ \$CPU -gt 90 ] && /opt/scripts/teams-alert.sh "CPU usage at \${CPU}%" critical
 EOF

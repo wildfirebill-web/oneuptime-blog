@@ -43,6 +43,7 @@ Even though AWS now encrypts by default, explicitly setting the configuration ma
 
 ```bash
 # Set SSE-S3 as the default encryption for a bucket
+
 aws s3api put-bucket-encryption \
   --bucket my-app-bucket \
   --server-side-encryption-configuration '{

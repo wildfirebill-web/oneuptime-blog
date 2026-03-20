@@ -10,6 +10,7 @@ Description: A guide to using the `ip -6 addr` command to view, filter, and inte
 
 ```bash
 # Show all IPv6 addresses on all interfaces
+
 ip -6 addr show
 
 # Short form (same result)
@@ -35,10 +36,10 @@ $ ip -6 addr show dev eth0
 ```
 
 Explanation:
-- `2001:db8::10/64 scope global` — Routable, globally unique IPv6 address
-- `fe80::...` — Link-local address (always present on active IPv6 interfaces)
-- `valid_lft forever` — Address is permanently valid (static)
-- `preferred_lft forever` — Address is preferred for new connections
+- `2001:db8::10/64 scope global` - Routable, globally unique IPv6 address
+- `fe80::...` - Link-local address (always present on active IPv6 interfaces)
+- `valid_lft forever` - Address is permanently valid (static)
+- `preferred_lft forever` - Address is preferred for new connections
 
 ## Filtering by Scope
 

@@ -23,6 +23,7 @@ Octopus Deploy is a mature CD platform traditionally used for Windows and .NET d
 
 ```bash
 # Use Octopus REST API to inventory Kubernetes deployments
+
 curl -H "X-Octopus-ApiKey: API-XXXXXXXX" \
   https://your-octopus.example.com/api/deploymentprocesses \
   | jq '.Items[] | select(.Steps[].Actions[].ActionType | contains("Kubernetes"))' \

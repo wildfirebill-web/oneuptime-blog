@@ -16,6 +16,7 @@ Create a multi-stage pipeline with validation gates at each transition point.
 
 ```yaml
 # Change management pipeline stages
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

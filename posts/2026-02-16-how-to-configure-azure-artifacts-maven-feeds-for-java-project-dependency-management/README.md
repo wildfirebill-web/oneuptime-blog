@@ -50,6 +50,7 @@ For better security, you can encrypt the PAT using Maven's built-in password enc
 
 ```bash
 # Generate a master password and store it securely
+
 mvn --encrypt-master-password YourMasterPassword
 
 # Then encrypt your PAT with the master password

@@ -201,6 +201,7 @@ Your data needs source and destination coordinates. This query format supports r
 
 ```promql
 # Query returning: source_lat, source_lon, dest_lat, dest_lon, traffic_volume
+
 network_traffic_flow{source_region!="", dest_region!=""}
 ```
 

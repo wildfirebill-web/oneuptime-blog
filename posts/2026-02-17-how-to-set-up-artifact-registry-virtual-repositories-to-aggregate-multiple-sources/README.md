@@ -38,6 +38,7 @@ First, create the repositories that the virtual repository will aggregate:
 
 ```bash
 # Private repository for your own images
+
 gcloud artifacts repositories create internal-images \
   --repository-format=docker \
   --location=us-central1 \

@@ -25,6 +25,7 @@ Both are stored in ConfigMaps/Secrets in the ArgoCD namespace and can be managed
 
 ```bash
 # List all certificates (both TLS and SSH)
+
 argocd cert list
 ```
 

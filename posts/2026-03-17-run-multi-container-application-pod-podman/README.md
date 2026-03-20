@@ -24,6 +24,7 @@ A typical web application stack includes:
 
 ```bash
 # Create the pod with the externally exposed port
+
 podman pod create --name webapp-pod -p 8080:80
 ```
 

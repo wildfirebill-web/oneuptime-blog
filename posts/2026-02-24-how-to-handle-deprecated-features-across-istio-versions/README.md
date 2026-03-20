@@ -31,6 +31,7 @@ One of the most common deprecations in Istio is API version changes. Here is the
 
 ```yaml
 # Deprecated (but still functional in recent versions)
+
 apiVersion: networking.istio.io/v1alpha3
 
 # Current recommended

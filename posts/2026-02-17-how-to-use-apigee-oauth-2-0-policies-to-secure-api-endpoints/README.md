@@ -147,6 +147,7 @@ Request a token:
 
 ```bash
 # Encode client credentials as base64 (clientId:clientSecret)
+
 CREDENTIALS=$(echo -n "YOUR_CLIENT_ID:YOUR_CLIENT_SECRET" | base64)
 
 # Request an access token

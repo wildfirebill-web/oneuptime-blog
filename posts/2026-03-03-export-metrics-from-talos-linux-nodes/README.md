@@ -20,6 +20,7 @@ The metrics are available through the Talos API:
 
 ```bash
 # Retrieve raw Prometheus metrics from a Talos node
+
 talosctl -n 192.168.1.10 get metrics
 
 # You can also access metrics through the HTTP endpoint

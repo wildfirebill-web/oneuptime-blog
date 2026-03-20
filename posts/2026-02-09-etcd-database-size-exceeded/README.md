@@ -22,6 +22,7 @@ When etcd reaches its quota, API operations fail with specific error messages.
 
 ```bash
 # Typical error when creating or updating resources
+
 Error from server: etcdserver: mvcc: database space exceeded
 
 # kubectl commands fail

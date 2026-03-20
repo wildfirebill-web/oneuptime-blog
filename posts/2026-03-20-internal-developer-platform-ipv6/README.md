@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IDP, IPv6, Platform Engineering, Backstage, Crossplane
+Tags: IdP, IPv6, Platform Engineering, Backstage, Crossplane
 
 Description: Design Internal Developer Platforms (IDPs) that expose IPv6-aware infrastructure self-service to development teams.
 
@@ -24,6 +24,7 @@ Crossplane manages cloud infrastructure as Kubernetes custom resources. For IPv6
 
 ```yaml
 # vpc-ipv6.yaml
+
 apiVersion: ec2.aws.crossplane.io/v1beta1
 kind: VPC
 metadata:

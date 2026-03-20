@@ -20,6 +20,7 @@ The critical thing to understand is that the EPHEMERAL partition is designed to 
 
 ```bash
 # View the disk partitions on a Talos node
+
 talosctl -n 10.0.0.11 get blockdevices
 
 # Check usage of the ephemeral partition

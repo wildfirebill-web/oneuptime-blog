@@ -8,7 +8,7 @@ Description: Learn how to implement message framing techniques for Python TCP so
 
 ## The TCP Stream Problem
 
-TCP is a byte stream—it preserves order and reliability but has no concept of message boundaries. A single `send("hello")` might be received as `"hel"` and `"lo"` across two `recv()` calls, or two `send()` calls may arrive in one `recv()`. Message framing solves this.
+TCP is a byte stream-it preserves order and reliability but has no concept of message boundaries. A single `send("hello")` might be received as `"hel"` and `"lo"` across two `recv()` calls, or two `send()` calls may arrive in one `recv()`. Message framing solves this.
 
 ## Approach 1: Length Prefix Framing
 
@@ -110,6 +110,7 @@ def recv_fixed(sock: socket.socket) -> bytes:
 
 ```python
 # Server
+
 import socket, threading
 
 def handle(conn, addr):
@@ -145,4 +146,4 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as c:
 
 ## Conclusion
 
-Message framing is essential for any custom TCP protocol. Length prefix framing is the most robust choice for binary and mixed-content protocols. Delimiter framing works well for human-readable text protocols. Always buffer received bytes and check for complete messages—never assume `recv()` returns a complete message.
+Message framing is essential for any custom TCP protocol. Length prefix framing is the most robust choice for binary and mixed-content protocols. Delimiter framing works well for human-readable text protocols. Always buffer received bytes and check for complete messages-never assume `recv()` returns a complete message.

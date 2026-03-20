@@ -35,6 +35,7 @@ You will need:
 
 ```bash
 # Verify cluster health
+
 kubectl get nodes
 
 # Install the consul-k8s CLI

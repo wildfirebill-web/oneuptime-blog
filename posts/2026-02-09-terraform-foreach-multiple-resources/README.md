@@ -25,6 +25,7 @@ Let's start with a practical example of creating multiple Kubernetes namespaces 
 
 ```hcl
 # variables.tf
+
 variable "teams" {
   description = "Map of team namespaces with configuration"
   type = map(object({

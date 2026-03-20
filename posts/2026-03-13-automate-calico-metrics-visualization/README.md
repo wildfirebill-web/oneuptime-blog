@@ -16,6 +16,7 @@ Manually importing Grafana dashboards for each cluster is unsustainable at scale
 
 ```yaml
 # grafana-dashboards-calico.yaml
+
 # Grafana sidecar automatically imports ConfigMaps with grafana_dashboard label
 apiVersion: v1
 kind: ConfigMap

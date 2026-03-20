@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Networking, Routing, BGP, Recursive Lookup, IPv4, Troubleshooting
 
-Description: Understand recursive routing lookups — where a route's next-hop requires another routing lookup — and how misconfigurations cause routes to become invalid.
+Description: Understand recursive routing lookups - where a route's next-hop requires another routing lookup - and how misconfigurations cause routes to become invalid.
 
 ## Introduction
 
@@ -12,7 +12,7 @@ A recursive routing lookup occurs when a route's next-hop is not directly connec
 
 ## How Recursive Lookups Work
 
-```
+```text
 BGP route: 10.20.0.0/24 next-hop 192.0.2.1
            |
            +--> Recursive lookup for 192.0.2.1
@@ -28,6 +28,7 @@ The final resolved next-hop is 172.16.0.1 on eth0. If the OSPF route for 192.0.2
 
 ```bash
 # Show a BGP route with its recursive next-hop resolution
+
 vtysh -c "show ip bgp 10.20.0.0/24"
 
 # Look for "nexthop... resolved via..." in the output
@@ -92,4 +93,4 @@ ip route add 10.20.0.0/24 via 192.168.5.1
 
 ## Conclusion
 
-Recursive routing lookups form dependency chains between routes. A failure at any level in the chain invalidates all routes that depend on it. This is why IGP stability is critical in networks running BGP — if OSPF loses a route to a BGP next-hop, all BGP prefixes pointing to that next-hop become unreachable. Monitor your IGP health to protect BGP reachability.
+Recursive routing lookups form dependency chains between routes. A failure at any level in the chain invalidates all routes that depend on it. This is why IGP stability is critical in networks running BGP - if OSPF loses a route to a BGP next-hop, all BGP prefixes pointing to that next-hop become unreachable. Monitor your IGP health to protect BGP reachability.

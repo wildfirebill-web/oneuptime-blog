@@ -18,10 +18,11 @@ RFC 9099 emphasizes that proper address management is foundational to IPv6 secur
 
 - Use ULA (fc00::/7) for internal-only resources that should not be reachable from the internet
 - Use separate prefixes for infrastructure (routers, switches) vs user devices
-- Document all prefixes in IPAM systems — the large address space does not eliminate the need for address management
+- Document all prefixes in IPAM systems - the large address space does not eliminate the need for address management
 
 ```bash
 # Verify your prefix assignments are tracked
+
 # ULA for internal resources
 ip -6 addr show | grep 'fd'   # ULA addresses start with fd or fc
 
@@ -62,14 +63,14 @@ RFC 9099 provides specific guidance on which ICMPv6 types must be allowed and wh
 
 **Must Allow:**
 - Type 1 (Destination Unreachable)
-- Type 2 (Packet Too Big) — required for PMTUD
+- Type 2 (Packet Too Big) - required for PMTUD
 - Type 3 (Time Exceeded)
 - Type 4 (Parameter Problem)
-- Types 133-137 (NDP — on local link only)
+- Types 133-137 (NDP - on local link only)
 
 **May Block at Perimeter:**
-- Type 128/129 (Echo Request/Reply) — at administrator discretion
-- Types 148-149 (SEND — optional)
+- Type 128/129 (Echo Request/Reply) - at administrator discretion
+- Types 148-149 (SEND - optional)
 
 ```bash
 # ip6tables: Correct ICMPv6 policy
@@ -113,11 +114,11 @@ RFC 9099 recommends deploying these first-hop security mechanisms:
 - RA Guard (RFC 6105) on access switches
 - DHCPv6 Shield (RFC 7610)
 - Source Address Validation Improvement (SAVI, RFC 7039)
-- Secure Neighbor Discovery (SEND, RFC 3971) — where feasible
+- Secure Neighbor Discovery (SEND, RFC 3971) - where feasible
 
 ## Checklist from RFC 9099
 
-```
+```text
 [ ] Bogon prefix filtering at ingress/egress
 [ ] ICMPv6 policy follows required/optional guidance
 [ ] Extension header policy defined and enforced

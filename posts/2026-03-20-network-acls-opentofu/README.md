@@ -38,6 +38,7 @@ resource "aws_network_acl" "public" {
 
 ```hcl
 # Allow HTTPS inbound from anywhere
+
 resource "aws_network_acl_rule" "allow_https_in" {
   network_acl_id = aws_network_acl.public.id
   rule_number    = 100

@@ -39,6 +39,7 @@ The instance will come back up with the new compute resources but the same EBS v
 
 ```bash
 # Step 1: Stop the instance
+
 aws ec2 stop-instances --instance-ids i-0123456789abcdef0
 
 # Wait for it to fully stop

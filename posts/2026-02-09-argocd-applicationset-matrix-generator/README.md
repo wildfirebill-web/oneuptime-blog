@@ -435,6 +435,7 @@ View generated applications:
 
 ```bash
 # List all applications from ApplicationSet
+
 kubectl get applications -n argocd -l argocd.argoproj.io/application-set-name=multi-environment-app
 
 # View ApplicationSet status

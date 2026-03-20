@@ -78,6 +78,7 @@ START_DATE=$(date -d "90 days ago" +%Y-%m-%d)
 END_DATE=$(date +%Y-%m-%d)
 
 # Get object count and size by storage class
+
 aws s3api list-objects-v2 \
     --bucket $BUCKET_NAME \
     --query "Contents[].{Key: Key, Size: Size, StorageClass: StorageClass}" \

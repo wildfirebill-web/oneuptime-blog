@@ -39,6 +39,7 @@ Istio adds response flags to access logs that tell you why a request failed. Fir
 
 ```bash
 # Check if access logging is enabled
+
 kubectl get configmap istio -n istio-system -o yaml | grep accessLogFile
 ```
 

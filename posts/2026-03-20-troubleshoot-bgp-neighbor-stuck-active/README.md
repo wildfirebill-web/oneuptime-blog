@@ -8,7 +8,7 @@ Description: Learn how to diagnose and fix BGP neighbor sessions stuck in the Ac
 
 ## What Does "Active" State Mean?
 
-In BGP, the Active state means the router is trying to establish a TCP connection to the neighbor but has not succeeded. It is actively trying—hence the name. This is different from Idle (not trying) and Established (fully connected).
+In BGP, the Active state means the router is trying to establish a TCP connection to the neighbor but has not succeeded. It is actively trying-hence the name. This is different from Idle (not trying) and Established (fully connected).
 
 ```mermaid
 stateDiagram-v2
@@ -22,7 +22,7 @@ stateDiagram-v2
 
 ## Step 1: Verify the Session Is Stuck
 
-```
+```text
 Router# show ip bgp summary
 
 Neighbor        V     AS   MsgRcvd MsgSent   TblVer  InQ OutQ Up/Down  State/PfxRcd
@@ -35,7 +35,7 @@ The `State/PfxRcd` column shows `Active` instead of a prefix count.
 
 The most common cause of Active state is that the neighbor IP is unreachable:
 
-```
+```text
 ! Ping the neighbor IP
 Router# ping 203.0.113.2
 
@@ -52,7 +52,7 @@ If ping fails, fix the underlying routing or interface issue first.
 
 BGP uses TCP port 179. An ACL or firewall might be blocking it:
 
-```
+```text
 ! Test TCP connection to port 179
 Router# telnet 203.0.113.2 179
 
@@ -69,7 +69,7 @@ If telnet to port 179 fails but ping works, a firewall is blocking BGP.
 
 A mismatched AS number is a common cause of Active state. The session establishes TCP, then drops when the OPEN message reveals an unexpected AS number:
 
-```
+```text
 ! Verify what AS you're expecting from the neighbor
 Router# show run | section router bgp
 
@@ -84,7 +84,7 @@ Confirm the remote router's AS number with the peer directly.
 
 If MD5 authentication is configured on one side but not the other (or passwords don't match), the TCP SYN has an MD5 signature that the peer drops:
 
-```
+```text
 ! Check if authentication is configured
 Router# show run | section neighbor 203.0.113.2
 
@@ -97,7 +97,7 @@ Router# debug ip bgp 203.0.113.2 events
 
 If the above checks don't reveal the issue, enable BGP event debugging:
 
-```
+```text
 ! Enable debug for specific neighbor only (be careful on production)
 Router# debug ip bgp 203.0.113.2 events
 
@@ -108,7 +108,7 @@ Router# debug ip bgp 203.0.113.2 events
 
 Turn off debugging immediately after gathering information:
 
-```
+```text
 Router# no debug all
 ```
 
@@ -116,7 +116,7 @@ Router# no debug all
 
 For loopback-based iBGP peering, the `update-source` must be configured or the TCP connection comes from the wrong IP:
 
-```
+```text
 ! Verify update-source is set for loopback peering
 Router# show run | section router bgp
 
@@ -131,7 +131,7 @@ Router# show run | section router bgp
 
 eBGP sessions to non-directly-connected peers require `ebgp-multihop`:
 
-```
+```text
 ! If the neighbor is not directly connected, add multihop
 router bgp 65001
  neighbor 203.0.113.5 remote-as 65002
@@ -154,4 +154,4 @@ Without multihop, the TTL=1 on eBGP packets will cause them to be dropped by int
 
 ## Conclusion
 
-BGP Active state almost always indicates a TCP connectivity problem: the neighbor IP is unreachable, port 179 is blocked, the AS number is wrong, or authentication is mismatched. Work through the checklist systematically—start with `ping`, then check AS numbers and authentication—and use `debug ip bgp events` only after confirming basic connectivity.
+BGP Active state almost always indicates a TCP connectivity problem: the neighbor IP is unreachable, port 179 is blocked, the AS number is wrong, or authentication is mismatched. Work through the checklist systematically-start with `ping`, then check AS numbers and authentication-and use `debug ip bgp events` only after confirming basic connectivity.

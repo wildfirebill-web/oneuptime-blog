@@ -132,6 +132,7 @@ def import_documents(project_id, data_store_id, gcs_uri):
     return result
 
 # Import FAQ documents, product documentation, help articles
+
 import_documents("my-project", "support-knowledge-base", "gs://my-docs-bucket/support-docs/*")
 ```
 

@@ -20,6 +20,7 @@ A CSR contains three main components: the public key (generated from your privat
 
 ```hcl
 # main.tf
+
 terraform {
   required_version = ">= 1.5.0"
   required_providers {

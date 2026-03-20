@@ -45,6 +45,7 @@ The BGP session runs over the already-established IPsec tunnel. Both sides excha
 
 ```bash
 # Create a public IP for the gateway
+
 az network public-ip create \
   --resource-group myResourceGroup \
   --name vpnGatewayPIP \

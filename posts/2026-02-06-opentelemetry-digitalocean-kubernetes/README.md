@@ -57,6 +57,7 @@ If you do not already have a cluster, create one with `doctl`.
 
 ```bash
 # Create a DigitalOcean Kubernetes cluster with 3 nodes
+
 # Using the s-2vcpu-4gb size which is good for small-to-medium workloads
 doctl kubernetes cluster create otel-cluster \
   --region nyc1 \

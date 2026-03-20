@@ -70,6 +70,7 @@ The `ansible.cfg` needs to reference paths relative to its location within the m
 
 ```ini
 # ansible/ansible.cfg
+
 # Configuration relative to the ansible/ directory
 [defaults]
 roles_path = roles

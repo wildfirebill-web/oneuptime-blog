@@ -16,6 +16,7 @@ Create the required GCP resources using gcloud:
 
 ```bash
 # Create two VM instances for HANA HA
+
 gcloud compute instances create hana01 \
   --zone=us-central1-a \
   --machine-type=n2-highmem-32 \

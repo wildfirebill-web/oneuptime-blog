@@ -48,6 +48,7 @@ flowchart TB
 
 ```bash
 # Download Istio
+
 curl -L https://istio.io/downloadIstio | sh -
 cd istio-*
 export PATH=$PWD/bin:$PATH

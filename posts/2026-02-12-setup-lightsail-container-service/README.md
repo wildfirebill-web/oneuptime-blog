@@ -25,6 +25,7 @@ Choose the power level and number of nodes. Power levels determine CPU and RAM p
 
 ```bash
 # Create a container service with the nano power level and 1 node
+
 aws lightsail create-container-service \
   --service-name my-app-service \
   --power nano \

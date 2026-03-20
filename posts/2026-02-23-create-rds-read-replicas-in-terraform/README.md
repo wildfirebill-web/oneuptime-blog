@@ -28,6 +28,7 @@ The primary instance comes first. Then the replica references it:
 
 ```hcl
 # The primary RDS instance
+
 resource "aws_db_instance" "primary" {
   identifier = "myapp-primary"
 

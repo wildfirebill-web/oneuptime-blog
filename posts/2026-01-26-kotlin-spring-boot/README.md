@@ -36,6 +36,7 @@ The fastest way to start is using Spring Initializr. You can use the web interfa
 
 ```bash
 # Using Spring CLI
+
 spring init \
   --build=gradle \
   --java-version=17 \

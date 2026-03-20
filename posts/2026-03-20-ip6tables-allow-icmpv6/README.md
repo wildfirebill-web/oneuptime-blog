@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, ip6tables, ICMPv6, Firewall, RFC 4890
+Tags: IPv6, Ip6tables, ICMPv6, Firewall, RFC 4890
 
 Description: Learn which ICMPv6 types are essential and must never be blocked, which can be filtered at the perimeter, and how to write correct ip6tables rules following RFC 4890.
 
 ## Overview
 
-ICMPv6 is far more important in IPv6 than ICMP was in IPv4. Many critical IPv6 functions — Neighbor Discovery Protocol (NDP), Path MTU Discovery (PMTUD), and stateless address autoconfiguration (SLAAC) — depend on specific ICMPv6 message types. Incorrectly blocking ICMPv6 can break connectivity in subtle ways that are hard to diagnose.
+ICMPv6 is far more important in IPv6 than ICMP was in IPv4. Many critical IPv6 functions - Neighbor Discovery Protocol (NDP), Path MTU Discovery (PMTUD), and stateless address autoconfiguration (SLAAC) - depend on specific ICMPv6 message types. Incorrectly blocking ICMPv6 can break connectivity in subtle ways that are hard to diagnose.
 
 ## ICMPv6 Types Reference
 
@@ -31,7 +31,7 @@ ICMPv6 is far more important in IPv6 than ICMP was in IPv4. Many critical IPv6 f
 
 ## Why Packet Too Big (Type 2) Must NEVER Be Blocked
 
-IPv6 requires Path MTU Discovery (PMTUD, RFC 8201). Routers in IPv6 never fragment packets — they return a "Packet Too Big" ICMPv6 message to the sender, which then reduces its packet size.
+IPv6 requires Path MTU Discovery (PMTUD, RFC 8201). Routers in IPv6 never fragment packets - they return a "Packet Too Big" ICMPv6 message to the sender, which then reduces its packet size.
 
 If type 2 is blocked:
 - Large TCP transfers silently fail after the 3-way handshake
@@ -39,7 +39,8 @@ If type 2 is blocked:
 - VoIP, video streaming, and any large-packet application breaks
 
 ```bash
-# This rule MUST be present — NEVER remove it
+# This rule MUST be present - NEVER remove it
+
 ip6tables -A INPUT   -p icmpv6 --icmpv6-type packet-too-big -j ACCEPT
 ip6tables -A FORWARD -p icmpv6 --icmpv6-type packet-too-big -j ACCEPT
 ip6tables -A OUTPUT  -p icmpv6 --icmpv6-type packet-too-big -j ACCEPT
@@ -59,7 +60,7 @@ ip6tables -A INPUT -s fe80::/10 -p icmpv6 --icmpv6-type router-advertisement -j 
 ip6tables -A INPUT -s fe80::/10 -p icmpv6 --icmpv6-type neighbour-solicitation -j ACCEPT
 ip6tables -A INPUT -s fe80::/10 -p icmpv6 --icmpv6-type neighbour-advertisement -j ACCEPT
 
-# WRONG: Allowing NDP from anywhere — enables rogue RA attacks
+# WRONG: Allowing NDP from anywhere - enables rogue RA attacks
 # ip6tables -A INPUT -p icmpv6 --icmpv6-type router-advertisement -j ACCEPT
 ```
 
@@ -69,14 +70,14 @@ ip6tables -A INPUT -s fe80::/10 -p icmpv6 --icmpv6-type neighbour-advertisement 
 #!/bin/bash
 # Complete ICMPv6 ip6tables policy (RFC 4890 compliant)
 
-# ===== Critical — MUST allow (all directions) =====
+# ===== Critical - MUST allow (all directions) =====
 
 # Destination Unreachable (all codes)
 ip6tables -A INPUT   -p icmpv6 --icmpv6-type destination-unreachable -j ACCEPT
 ip6tables -A OUTPUT  -p icmpv6 --icmpv6-type destination-unreachable -j ACCEPT
 ip6tables -A FORWARD -p icmpv6 --icmpv6-type destination-unreachable -j ACCEPT
 
-# Packet Too Big — NEVER block
+# Packet Too Big - NEVER block
 ip6tables -A INPUT   -p icmpv6 --icmpv6-type packet-too-big -j ACCEPT
 ip6tables -A OUTPUT  -p icmpv6 --icmpv6-type packet-too-big -j ACCEPT
 ip6tables -A FORWARD -p icmpv6 --icmpv6-type packet-too-big -j ACCEPT
@@ -91,13 +92,13 @@ ip6tables -A INPUT   -p icmpv6 --icmpv6-type parameter-problem -j ACCEPT
 ip6tables -A OUTPUT  -p icmpv6 --icmpv6-type parameter-problem -j ACCEPT
 ip6tables -A FORWARD -p icmpv6 --icmpv6-type parameter-problem -j ACCEPT
 
-# ===== NDP — link-local only =====
+# ===== NDP - link-local only =====
 for NDPTYPE in router-solicitation router-advertisement neighbour-solicitation neighbour-advertisement; do
     ip6tables -A INPUT  -s fe80::/10 -p icmpv6 --icmpv6-type $NDPTYPE -j ACCEPT
     ip6tables -A OUTPUT -p icmpv6 --icmpv6-type $NDPTYPE -j ACCEPT
 done
 
-# ===== Echo — allow inbound with rate limit =====
+# ===== Echo - allow inbound with rate limit =====
 ip6tables -A INPUT  -p icmpv6 --icmpv6-type echo-request \
           -m limit --limit 10/second --limit-burst 30 -j ACCEPT
 ip6tables -A INPUT  -p icmpv6 --icmpv6-type echo-reply -j ACCEPT
@@ -127,4 +128,4 @@ traceroute6 -n 2001:db8::1
 
 ## Summary
 
-ICMPv6 requires careful filtering: never block Packet Too Big (type 2 — breaks PMTUD), Destination Unreachable (type 1), Time Exceeded (type 3), or Parameter Problem (type 4). Allow NDP types (133-137) only from link-local sources (fe80::/10) to prevent rogue Router Advertisement attacks. Rate-limit Echo Request (type 128) to prevent ICMP floods. Drop all other ICMPv6 types at the perimeter including MLD (130-132) from the internet. Follow RFC 4890 for complete guidance on the correct ICMPv6 filtering policy.
+ICMPv6 requires careful filtering: never block Packet Too Big (type 2 - breaks PMTUD), Destination Unreachable (type 1), Time Exceeded (type 3), or Parameter Problem (type 4). Allow NDP types (133-137) only from link-local sources (fe80::/10) to prevent rogue Router Advertisement attacks. Rate-limit Echo Request (type 128) to prevent ICMP floods. Drop all other ICMPv6 types at the perimeter including MLD (130-132) from the internet. Follow RFC 4890 for complete guidance on the correct ICMPv6 filtering policy.

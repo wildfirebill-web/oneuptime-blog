@@ -16,6 +16,7 @@ HAProxy supports IP-based persistence using the `stick-table` feature:
 
 ```haproxy
 # /etc/haproxy/haproxy.cfg
+
 frontend http_front
     bind *:80
     default_backend web_servers
@@ -74,7 +75,7 @@ upstream web_backends {
 
 ## AWS ALB Sticky Sessions
 
-AWS ALB uses cookies, not IP, for persistence — but you can configure it:
+AWS ALB uses cookies, not IP, for persistence - but you can configure it:
 
 ```bash
 # Enable sticky sessions on a target group (cookie-based)
@@ -96,7 +97,7 @@ aws elbv2 describe-target-group-attributes \
 
 ## Considerations and Limitations
 
-- **NAT issues**: Clients behind NAT share one public IP — all will be pinned to the same server, causing uneven load
+- **NAT issues**: Clients behind NAT share one public IP - all will be pinned to the same server, causing uneven load
 - **Mobile clients**: Mobile users often change IP addresses as they roam between networks
 - **Security**: Avoid session persistence for security-sensitive applications where IP spoofing is a concern
 - **Preferred alternative**: Use distributed session stores (Redis, Memcached) and stateless backend design instead of sticky sessions

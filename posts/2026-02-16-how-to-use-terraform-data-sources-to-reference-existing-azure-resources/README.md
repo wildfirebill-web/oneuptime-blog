@@ -24,6 +24,7 @@ The most common use case is referencing a resource group that already exists. He
 
 ```hcl
 # Look up an existing resource group by its name
+
 data "azurerm_resource_group" "existing" {
   name = "rg-production-networking"
 }

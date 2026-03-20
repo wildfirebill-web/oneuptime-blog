@@ -20,6 +20,7 @@ The key thing to understand: AWX stores vault passwords encrypted in its own dat
 
 ```bash
 # Create a Vault credential
+
 curl -s -X POST \
   -H "Authorization: Bearer ${AWX_TOKEN}" \
   -H "Content-Type: application/json" \

@@ -62,6 +62,7 @@ Or from API calls:
 
 ```bash
 # List all compute quotas for a region
+
 gcloud compute regions describe us-central1 \
     --format="table(quotas.metric,quotas.limit,quotas.usage)"
 

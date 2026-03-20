@@ -29,6 +29,7 @@ The most frequent issue is improper quote escaping when using heredoc syntax.
 
 ```hcl
 # WRONG - unescaped quotes cause parsing errors
+
 resource "aws_sfn_state_machine" "bad_example" {
   name     = "bad-state-machine"
   role_arn = aws_iam_role.step_functions.arn

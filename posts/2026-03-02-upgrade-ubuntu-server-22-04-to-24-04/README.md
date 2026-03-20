@@ -30,6 +30,7 @@ Before anything else, back up your data. If you are on a VM, take a snapshot now
 
 ```bash
 # On AWS: create an AMI or EBS snapshot
+
 # On DigitalOcean: use the Snapshot feature in the control panel
 # On bare metal: back up critical directories
 

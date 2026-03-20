@@ -31,6 +31,7 @@ CentOS Stream sits just ahead of RHEL in the development pipeline, receiving upd
 
 ```bash
 # Enable the service to start on boot
+
 sudo systemctl enable <service-name>
 
 # Start the service

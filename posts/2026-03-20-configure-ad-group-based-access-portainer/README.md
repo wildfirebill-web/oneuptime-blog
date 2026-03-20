@@ -14,7 +14,7 @@ Group-based access control in Portainer means AD group membership determines wha
 
 Before configuration, plan the mapping:
 
-```
+```text
 AD Group                    → Portainer Team         → Access
 ---------------------------------------------------------------------------
 GRP-Portainer-Admins       → portainer-admins       → All environments (Admin)
@@ -27,6 +27,7 @@ GRP-Portainer-ReadOnly     → read-only-users        → All environments (Read
 
 ```powershell
 # Run on a domain controller
+
 New-ADGroup -Name "GRP-Portainer-Admins" -GroupScope Global -GroupCategory Security
 New-ADGroup -Name "GRP-Portainer-DevOps" -GroupScope Global -GroupCategory Security
 New-ADGroup -Name "GRP-Portainer-Developers" -GroupScope Global -GroupCategory Security
@@ -105,7 +106,7 @@ echo "Teams:"
 echo "$TEAMS" | python3 -c "import sys,json; [print(f'  {t[\"Id\"]}: {t[\"Name\"]}') for t in json.load(sys.stdin)]"
 ```
 
-Then assign in the Portainer UI: **Environments > [Select Environment] > Access** — assign teams with appropriate roles.
+Then assign in the Portainer UI: **Environments > [Select Environment] > Access** - assign teams with appropriate roles.
 
 ## Verify Group-Based Access
 

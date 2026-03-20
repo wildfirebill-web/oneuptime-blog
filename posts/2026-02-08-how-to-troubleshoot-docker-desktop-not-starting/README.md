@@ -18,6 +18,7 @@ Before diving into platform-specific troubleshooting, try these universal fixes 
 
 ```bash
 # 1. Check if Docker is actually running (it might be starting slowly)
+
 docker info 2>&1
 # If this returns data, Docker is running despite the UI not showing it
 

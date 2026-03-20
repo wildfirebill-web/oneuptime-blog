@@ -22,6 +22,7 @@ The simplest way to retrieve a kubeconfig is:
 
 ```bash
 # Retrieve kubeconfig and merge it into the default location
+
 talosctl kubeconfig --nodes 192.168.1.10
 ```
 

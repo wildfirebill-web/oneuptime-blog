@@ -52,6 +52,7 @@ kubectl logs -n calico-system <calico-node-windows-pod> --tail=50
 
 ```powershell
 # Test connectivity to Rancher server
+
 Test-NetConnection -ComputerName rancher.example.com -Port 443
 Test-NetConnection -ComputerName rancher.example.com -Port 8443
 ```

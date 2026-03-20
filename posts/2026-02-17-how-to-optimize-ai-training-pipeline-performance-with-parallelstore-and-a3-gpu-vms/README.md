@@ -53,6 +53,7 @@ For a 4-node A3 cluster, each VM can consume up to 25 GB/s from the network. Tha
 
 ```bash
 # Create a Parallelstore instance sized for the training cluster
+
 gcloud parallelstore instances create training-pfs \
   --location=us-central1-a \
   --capacity-gib=102400 \

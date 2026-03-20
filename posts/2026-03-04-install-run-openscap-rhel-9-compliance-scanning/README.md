@@ -14,6 +14,7 @@ OpenSCAP is the open-source implementation of the SCAP (Security Content Automat
 
 ```bash
 # Install the OpenSCAP scanner
+
 dnf install -y openscap-scanner
 
 # Install the SCAP Security Guide (provides compliance profiles)

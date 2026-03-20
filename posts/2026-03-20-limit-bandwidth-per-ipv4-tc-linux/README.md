@@ -14,6 +14,7 @@ For a small number of IPs, create an HTB class for each and filter by source/des
 
 ```bash
 # Create root HTB qdisc
+
 sudo tc qdisc add dev eth0 root handle 1: htb default 999
 
 # Root class: 1 Gbps total
@@ -22,7 +23,7 @@ sudo tc class add dev eth0 parent 1: classid 1:1 htb rate 1000mbit
 # Catch-all class for unmatched traffic
 sudo tc class add dev eth0 parent 1:1 classid 1:999 htb rate 100mbit ceil 1000mbit
 
-# Per-IP classes — 10 Mbps limit for each IP
+# Per-IP classes - 10 Mbps limit for each IP
 sudo tc class add dev eth0 parent 1:1 classid 1:100 htb rate 10mbit ceil 10mbit
 sudo tc class add dev eth0 parent 1:1 classid 1:101 htb rate 10mbit ceil 10mbit
 sudo tc class add dev eth0 parent 1:1 classid 1:102 htb rate 10mbit ceil 10mbit
@@ -63,7 +64,7 @@ sudo tc filter add dev eth0 parent 1: prio 5 protocol ip u32 \
 
 ## Method 3: Using iptables MARK + tc
 
-Mark packets in iptables, then filter by mark in tc — this is more maintainable:
+Mark packets in iptables, then filter by mark in tc - this is more maintainable:
 
 ```bash
 # Mark packets from specific IPs in iptables

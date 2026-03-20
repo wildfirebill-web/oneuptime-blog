@@ -252,6 +252,7 @@ For production deployments, Kong provides enterprise-grade features out of the b
 
 ```yaml
 # kong.yml - Declarative configuration
+
 _format_version: "3.0"
 
 services:

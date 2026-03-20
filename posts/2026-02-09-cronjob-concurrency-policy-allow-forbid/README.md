@@ -235,6 +235,7 @@ Track active jobs from a CronJob:
 
 ```bash
 # Get all jobs created by a CronJob
+
 kubectl get jobs -l cronjob-name=database-backup
 
 # Count currently running jobs

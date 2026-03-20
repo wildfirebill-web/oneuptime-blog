@@ -39,6 +39,7 @@ The timeouts involved:
 
 ```bash
 # Check the backend service timeout
+
 gcloud compute backend-services describe my-backend-service \
     --global \
     --format="value(timeoutSec)" \

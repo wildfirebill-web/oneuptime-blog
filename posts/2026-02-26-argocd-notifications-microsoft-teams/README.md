@@ -210,6 +210,7 @@ If your Teams setup supports Adaptive Cards (through Workflows), use the webhook
 
 ```bash
 # Subscribe an application to Teams notifications
+
 kubectl annotate app my-app -n argocd \
   notifications.argoproj.io/subscribe.on-deployed.teams="deployments-channel"
 

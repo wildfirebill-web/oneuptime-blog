@@ -291,6 +291,7 @@ Track replication health through Istio's TCP metrics:
 
 ```promql
 # Bytes sent from replicas to primary (replication ACKs)
+
 istio_tcp_sent_bytes_total{
   source_workload="postgres",
   destination_workload="postgres"

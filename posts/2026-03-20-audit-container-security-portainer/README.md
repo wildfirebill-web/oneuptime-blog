@@ -16,6 +16,7 @@ Docker Bench is the industry-standard CIS Docker Benchmark audit tool:
 
 ```bash
 # Run Docker Bench for Security
+
 docker run --rm \
   --net host \
   --pid host \
@@ -215,4 +216,4 @@ echo "Report saved to: $REPORT_FILE"
 
 ## Conclusion
 
-Regular security audits catch configuration drift before it becomes a breach. Docker Bench for Security provides a CIS-benchmark-based score for your host and containers. Custom audit scripts let you check organization-specific policies. The most critical items to check are privileged containers, containers with Docker socket mounts, databases exposed to all interfaces, containers without resource limits, and containers running as root. Run audits on a schedule — at least weekly in production — and integrate them into your CI/CD pipeline using Portainer's webhook triggers.
+Regular security audits catch configuration drift before it becomes a breach. Docker Bench for Security provides a CIS-benchmark-based score for your host and containers. Custom audit scripts let you check organization-specific policies. The most critical items to check are privileged containers, containers with Docker socket mounts, databases exposed to all interfaces, containers without resource limits, and containers running as root. Run audits on a schedule - at least weekly in production - and integrate them into your CI/CD pipeline using Portainer's webhook triggers.

@@ -24,6 +24,7 @@ The ActiveMQ Artemis Operator manages Artemis broker clusters on Kubernetes thro
 
 ```yaml
 # infrastructure/sources/artemis-helm.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

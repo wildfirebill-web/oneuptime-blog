@@ -26,6 +26,7 @@ Set up separate providers for general and critical notification channels.
 
 ```yaml
 # Provider for general informational notifications
+
 apiVersion: notification.toolkit.fluxcd.io/v1
 kind: Provider
 metadata:

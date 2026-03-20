@@ -12,7 +12,7 @@ IPv6 Router Discovery, part of NDP (RFC 4861), allows hosts to automatically dis
 
 ## Router Discovery Process
 
-```
+```text
 Router Discovery Flow:
 
 1. On interface startup: Host sends Router Solicitation to ff02::2
@@ -43,6 +43,7 @@ Router Discovery Flow:
 
 ```bash
 # View the default router list (shown as IPv6 default routes)
+
 ip -6 route show default
 
 # Example with multiple routers:

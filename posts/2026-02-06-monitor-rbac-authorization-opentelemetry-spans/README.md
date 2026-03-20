@@ -16,6 +16,7 @@ Before writing code, define a consistent set of attributes for authorization dec
 
 ```yaml
 # RBAC span attribute schema
+
 authz.decision: "allow" | "deny"
 authz.policy.name: "the policy or rule that made the decision"
 authz.user.id: "the user or service identity"

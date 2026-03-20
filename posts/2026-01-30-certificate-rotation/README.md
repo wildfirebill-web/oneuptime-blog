@@ -96,6 +96,7 @@ Install Certbot and configure it to run as a systemd timer for reliable scheduli
 
 ```bash
 # Install certbot
+
 apt-get update && apt-get install -y certbot
 
 # Obtain initial certificate

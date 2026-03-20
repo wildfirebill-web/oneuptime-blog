@@ -81,6 +81,7 @@ Most forecasting models assume your data is **stationary**, meaning statistical 
 
 ```python
 # Check stationarity using the Augmented Dickey-Fuller test
+
 # A p-value < 0.05 suggests the data is stationary
 
 import pandas as pd

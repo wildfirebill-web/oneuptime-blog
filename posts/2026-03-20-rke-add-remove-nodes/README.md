@@ -8,7 +8,7 @@ Description: Learn how to dynamically add worker and control plane nodes to an R
 
 ## Introduction
 
-Scaling an RKE cluster by adding or removing nodes is a common operational task. RKE manages all node operations through the `cluster.yml` configuration file — to add or remove a node, you modify the file and re-run `rke up`. This guide covers both operations with safety best practices.
+Scaling an RKE cluster by adding or removing nodes is a common operational task. RKE manages all node operations through the `cluster.yml` configuration file - to add or remove a node, you modify the file and re-run `rke up`. This guide covers both operations with safety best practices.
 
 ## Adding a New Worker Node
 
@@ -18,6 +18,7 @@ On the new worker node, install Docker and configure SSH access:
 
 ```bash
 # Install Docker on the new node
+
 curl -fsSL https://get.docker.com | sudo sh
 sudo usermod -aG docker ubuntu
 sudo systemctl enable docker

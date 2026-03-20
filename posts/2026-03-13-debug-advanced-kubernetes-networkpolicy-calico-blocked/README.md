@@ -23,6 +23,7 @@ This guide covers debug Advanced K8s NetworkPolicy in Calico with production-rea
 
 ```yaml
 # Advanced Kubernetes NetworkPolicy combining namespace and pod selectors
+
 apiVersion: networking.k8s.io/v1
 kind: NetworkPolicy
 metadata:

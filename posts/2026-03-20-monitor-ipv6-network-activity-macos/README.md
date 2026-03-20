@@ -10,6 +10,7 @@ Description: Learn how to monitor IPv6 network activity on macOS using netstat, 
 
 ```bash
 # Show all active connections including IPv6
+
 netstat -an | grep '\..*\[.*\]\|tcp6\|udp6'
 
 # Show TCP/UDP sockets with IPv6 (cleaner filter)

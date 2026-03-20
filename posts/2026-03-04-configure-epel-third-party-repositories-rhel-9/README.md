@@ -27,6 +27,7 @@ Many EPEL packages depend on build libraries that live in the CodeReady Builder 
 
 ```bash
 # Enable the CodeReady Builder repository
+
 sudo subscription-manager repos --enable codeready-builder-for-rhel-9-x86_64-rpms
 ```
 

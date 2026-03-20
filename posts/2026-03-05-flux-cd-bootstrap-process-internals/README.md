@@ -16,6 +16,7 @@ A typical bootstrap command for GitHub looks like this.
 
 ```bash
 # Bootstrap Flux CD with a GitHub repository
+
 flux bootstrap github \
   --owner=myorg \
   --repository=fleet-infra \

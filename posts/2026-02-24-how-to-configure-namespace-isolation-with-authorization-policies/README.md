@@ -127,6 +127,7 @@ A common pattern is isolating environments that share a cluster:
 
 ```yaml
 # Production namespace - very strict
+
 apiVersion: security.istio.io/v1
 kind: AuthorizationPolicy
 metadata:

@@ -8,7 +8,7 @@ Description: Learn how to configure OSPF totally stubby areas to block both exte
 
 ## Totally Stubby vs. Stub Areas
 
-A regular stub area blocks Type-4 and Type-5 external LSAs but still floods Type-3 inter-area summary LSAs (routes from other OSPF areas). A **totally stubby area** blocks Type-3, Type-4, and Type-5 LSAs—only a single default route from the ABR remains. This is the most aggressive routing table reduction possible in OSPF.
+A regular stub area blocks Type-4 and Type-5 external LSAs but still floods Type-3 inter-area summary LSAs (routes from other OSPF areas). A **totally stubby area** blocks Type-3, Type-4, and Type-5 LSAs-only a single default route from the ABR remains. This is the most aggressive routing table reduction possible in OSPF.
 
 ## LSA Types in a Totally Stubby Area
 
@@ -31,9 +31,9 @@ Totally stubby areas are ideal for:
 
 ## Step 1: Configure the ABR for Totally Stubby Area
 
-The `no-summary` keyword is the difference between stub and totally stubby—it's a **Cisco-specific extension** applied only on the ABR:
+The `no-summary` keyword is the difference between stub and totally stubby-it's a **Cisco-specific extension** applied only on the ABR:
 
-```
+```text
 ! On the ABR - configure Area 1 as totally stubby
 ABR(config)# router ospf 1
 ABR(config-router)# area 1 stub no-summary
@@ -42,11 +42,11 @@ ABR(config-router)# area 1 stub no-summary
 ! All Type-3, Type-4, and Type-5 LSAs are blocked from Area 1
 ```
 
-## Step 2: Configure Internal Routers (Stub Only—Not Totally Stubby)
+## Step 2: Configure Internal Routers (Stub Only-Not Totally Stubby)
 
-Internal routers in the area only need to know they're in a stub area. The `no-summary` keyword is **not configured on internal routers**—it's ABR-only:
+Internal routers in the area only need to know they're in a stub area. The `no-summary` keyword is **not configured on internal routers**-it's ABR-only:
 
-```
+```text
 ! On internal router R1 in Area 1
 R1(config)# router ospf 1
 R1(config-router)# router-id 172.16.1.1
@@ -57,7 +57,7 @@ R1(config-router)# area 1 stub
 
 ## Step 3: Verify the Totally Stubby Configuration
 
-```
+```text
 ! On the ABR - check area configuration
 ABR# show ip ospf | begin Area 1
 
@@ -81,7 +81,7 @@ R1# show ip route ospf
 
 Control which ABR is preferred for the default route when multiple ABRs serve the area:
 
-```
+```text
 ! Primary ABR - low cost default route
 ABR1(config-router)# area 1 stub no-summary
 ABR1(config-router)# area 1 default-cost 5
@@ -97,7 +97,7 @@ Internal routers prefer ABR1 (cost 5) for all traffic, failing over to ABR2 (cos
 
 Run this comparison after configuring:
 
-```
+```text
 ! Show routing table size (should be much smaller with totally stubby)
 R1# show ip route summary
 

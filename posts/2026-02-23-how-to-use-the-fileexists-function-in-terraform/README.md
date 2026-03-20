@@ -16,6 +16,7 @@ The `fileexists` function takes a file path and returns a boolean:
 
 ```hcl
 # fileexists(path)
+
 # Returns true if the file exists, false otherwise
 fileexists("/etc/hostname")            # true (on most Linux systems)
 fileexists("/nonexistent/file.txt")    # false

@@ -100,6 +100,7 @@ Filters are cached and skip scoring:
 
 ```bash
 # Bad: Using query context for exact match
+
 curl -X GET "https://localhost:9200/products/_search" \
   -H "Content-Type: application/json" \
   -u elastic:password \

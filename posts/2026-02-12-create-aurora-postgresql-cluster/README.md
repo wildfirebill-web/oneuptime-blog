@@ -27,6 +27,7 @@ Start with the subnet group:
 
 ```bash
 # Create a DB subnet group spanning multiple AZs
+
 aws rds create-db-subnet-group \
   --db-subnet-group-name myapp-aurora-pg-subnets \
   --db-subnet-group-description "Subnets for Aurora PostgreSQL" \

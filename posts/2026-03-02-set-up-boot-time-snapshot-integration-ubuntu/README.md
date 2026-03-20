@@ -34,6 +34,7 @@ Verify your setup:
 
 ```bash
 # Check filesystem type
+
 df -T / | awk 'NR==2 {print $2}'
 
 # Check subvolume layout

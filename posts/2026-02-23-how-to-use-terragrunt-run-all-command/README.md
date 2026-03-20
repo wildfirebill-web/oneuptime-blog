@@ -16,6 +16,7 @@ The `run-all` command recursively finds all `terragrunt.hcl` files in the curren
 
 ```bash
 # Apply all modules under the current directory
+
 terragrunt run-all apply
 
 # Plan all modules under the current directory

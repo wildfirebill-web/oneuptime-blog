@@ -14,6 +14,7 @@ High availability on Azure distributes workloads across Availability Zones withi
 
 ```hcl
 # main.tf - Zone-redundant App Service Plan
+
 resource "azurerm_service_plan" "ha" {
   name                = "ha-app-plan"
   resource_group_name = azurerm_resource_group.rg.name

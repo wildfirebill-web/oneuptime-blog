@@ -41,6 +41,7 @@ Install the Azure Functions Core Tools for local development:
 
 ```bash
 # macOS
+
 brew tap azure/functions
 brew install azure-functions-core-tools@4
 

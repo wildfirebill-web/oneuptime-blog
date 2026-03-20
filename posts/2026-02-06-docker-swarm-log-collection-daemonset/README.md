@@ -14,6 +14,7 @@ Create a Docker Swarm stack file that deploys the Collector on every node:
 
 ```yaml
 # otel-stack.yaml
+
 version: "3.8"
 
 services:

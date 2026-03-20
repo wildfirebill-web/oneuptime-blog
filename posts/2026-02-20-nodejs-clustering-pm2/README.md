@@ -219,6 +219,7 @@ PM2 is a production process manager that handles clustering, monitoring, and res
 
 ```bash
 # Install PM2 globally
+
 npm install -g pm2
 
 # Start with cluster mode using all available cores

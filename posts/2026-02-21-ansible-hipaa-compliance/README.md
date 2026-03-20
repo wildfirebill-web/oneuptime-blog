@@ -14,6 +14,7 @@ HIPAA (Health Insurance Portability and Accountability Act) requires organizatio
 
 ```yaml
 # roles/hipaa/defaults/main.yml - HIPAA compliance settings
+
 hipaa_audit_enabled: true
 hipaa_encryption_at_rest: true
 hipaa_session_timeout: 900

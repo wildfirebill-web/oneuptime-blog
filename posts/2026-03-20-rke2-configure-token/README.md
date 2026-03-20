@@ -26,6 +26,7 @@ It is a best practice to define a custom token before starting your first server
 
 ```bash
 # Create the RKE2 configuration directory
+
 sudo mkdir -p /etc/rancher/rke2
 
 # Create the server config with a custom token
@@ -78,7 +79,7 @@ sudo cat /var/lib/rancher/rke2/server/node-token
 
 The output will look like:
 
-```
+```text
 K10a8f3e2b1c4d5e6f7a8b9c0d1e2f3a4b5c6d7e8f9a0b1c2d3e4f5a6b7c8d9e0::server:abcdef1234567890
 ```
 

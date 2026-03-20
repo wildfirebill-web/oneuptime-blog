@@ -49,6 +49,7 @@ exit $ERRORS
 
 ```bash
 # Compare published data with endpoint count
+
 kubectl get ciliumnodes -o json | jq '.items[] | {
   node: .metadata.name,
   published_used: (.status.ipam.used // {} | length)

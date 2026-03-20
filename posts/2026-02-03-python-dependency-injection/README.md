@@ -45,6 +45,7 @@ Consider this common pattern where a service creates its own dependencies intern
 
 ```python
 # bad_example.py
+
 # This class creates its own dependencies - hard to test and maintain
 import smtplib
 import psycopg2

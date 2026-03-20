@@ -28,6 +28,7 @@ The most common way to force a refresh:
 
 ```bash
 # Force refresh the application state
+
 argocd app get my-app --refresh
 ```
 

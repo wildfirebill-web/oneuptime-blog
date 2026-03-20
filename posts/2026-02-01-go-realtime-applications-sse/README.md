@@ -791,6 +791,7 @@ Each SSE connection holds an open HTTP connection. A single Go server can handle
 
 ```bash
 # Increase file descriptor limits on Linux
+
 ulimit -n 65535
 
 # Or configure in /etc/security/limits.conf

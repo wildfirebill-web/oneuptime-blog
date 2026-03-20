@@ -1272,6 +1272,7 @@ class AutomatedReportGenerator:
         pass
 
 # Example usage and scheduling
+
 async def run_weekly_report():
     """Run the weekly capacity report."""
     config = ReportConfig(

@@ -33,6 +33,7 @@ Install the troubleshooting tools:
 
 ```bash
 # Install SELinux troubleshooting tools
+
 sudo dnf install -y setroubleshoot-server setools-console
 ```
 

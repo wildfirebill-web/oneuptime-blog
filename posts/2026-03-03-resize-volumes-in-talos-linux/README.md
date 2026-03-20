@@ -28,6 +28,7 @@ To resize the EPHEMERAL partition after expanding the underlying disk, you typic
 
 ```bash
 # Step 1: Drain the node
+
 kubectl drain node-01 --ignore-daemonsets --delete-emptydir-data
 
 # Step 2: Expand the virtual disk in your hypervisor

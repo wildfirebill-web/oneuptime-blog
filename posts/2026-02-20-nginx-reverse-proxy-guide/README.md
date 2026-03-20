@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: NGINX, Reverse Proxy, Microservices, Load Balancing, Configuration
+Tags: Nginx, Reverse Proxy, Microservices, Load Balancing, Configuration
 
 Description: Learn how to configure Nginx as a reverse proxy for microservices with upstream backends, health checks, and load balancing.
 
@@ -32,6 +32,7 @@ Start with a minimal proxy setup that forwards all traffic to a single backend.
 
 ```nginx
 # /etc/nginx/conf.d/app.conf
+
 # Basic reverse proxy forwarding all requests to a backend on port 8001
 
 server {

@@ -18,6 +18,7 @@ Kind requires Docker and Go, though you can install the binary directly without 
 
 ```bash
 # Install Kind on macOS
+
 brew install kind
 
 # Install Kind on Linux (download the binary directly)

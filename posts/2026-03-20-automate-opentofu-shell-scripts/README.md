@@ -2,19 +2,20 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Shell Scripts, Automation, Bash, DevOps, Infrastructure as Code
+Tags: OpenTofu, Shell Script, Automation, Bash, DevOps, Infrastructure as Code
 
 Description: Learn how to write shell scripts to automate repetitive OpenTofu tasks like multi-workspace deployments, state manipulation, and environment bootstrapping.
 
 ## Introduction
 
-Shell scripts bridge the gap between OpenTofu's declarative model and the procedural tasks needed around it — looping over environments, bootstrapping state backends, and orchestrating multi-step deployments. This guide covers practical automation patterns.
+Shell scripts bridge the gap between OpenTofu's declarative model and the procedural tasks needed around it - looping over environments, bootstrapping state backends, and orchestrating multi-step deployments. This guide covers practical automation patterns.
 
 ## Multi-Environment Deployment Script
 
 ```bash
 #!/usr/bin/env bash
 # scripts/deploy-all-environments.sh
+
 set -euo pipefail
 
 ENVIRONMENTS=("dev" "staging" "prod")
@@ -134,4 +135,4 @@ echo "Import complete. Run 'tofu plan' to verify."
 
 ## Summary
 
-Shell scripts around OpenTofu handle the procedural aspects of infrastructure management — multi-environment deployments, backend bootstrapping, and bulk operations. Combining bash with tofu CLI creates powerful, automatable infrastructure workflows.
+Shell scripts around OpenTofu handle the procedural aspects of infrastructure management - multi-environment deployments, backend bootstrapping, and bulk operations. Combining bash with tofu CLI creates powerful, automatable infrastructure workflows.

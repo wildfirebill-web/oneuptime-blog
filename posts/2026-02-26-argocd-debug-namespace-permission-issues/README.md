@@ -44,6 +44,7 @@ Let us troubleshoot each layer systematically.
 
 ```bash
 # Check which namespaces ArgoCD watches
+
 kubectl get configmap argocd-cmd-params-cm -n argocd \
   -o jsonpath='{.data.application\.namespaces}'
 echo  # newline

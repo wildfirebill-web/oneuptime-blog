@@ -14,6 +14,7 @@ The default gateway is the router your host sends packets to when no more specif
 
 ```bash
 # Show default route
+
 ip route show default
 
 # Or
@@ -111,7 +112,7 @@ systemctl restart systemd-networkd
 
 ### Debian (legacy /etc/network/interfaces)
 
-```
+```text
 # /etc/network/interfaces
 auto eth0
 iface eth0 inet static

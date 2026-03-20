@@ -23,6 +23,7 @@ from sqlalchemy import create_engine, event
 import time
 
 # Standard OTel setup
+
 exporter = OTLPMetricExporter(endpoint="http://otel-collector:4317")
 reader = PeriodicExportingMetricReader(exporter, export_interval_millis=15000)
 provider = MeterProvider(metric_readers=[reader])

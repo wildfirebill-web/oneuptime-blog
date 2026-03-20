@@ -47,6 +47,7 @@ In the management account:
 
 ```bash
 # Enable IAM Identity Center (must be done in the management account)
+
 # Note: This is typically done through the console on first setup
 # The CLI equivalent creates the instance
 aws sso-admin create-instance-metadata

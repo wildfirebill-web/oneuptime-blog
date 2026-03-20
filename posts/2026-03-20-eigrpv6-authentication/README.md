@@ -12,7 +12,7 @@ EIGRPv6 supports authentication to prevent rogue routers from injecting false ro
 
 ## Classic EIGRPv6 MD5 Authentication
 
-```
+```text
 ! Step 1: Create a key chain with keys
 Router(config)# key chain EIGRP_AUTH
 Router(config-keychain)# key 1
@@ -32,7 +32,7 @@ Both neighbors must use the same key chain name and key string.
 
 Named EIGRP supports the stronger HMAC-SHA-256 algorithm:
 
-```
+```text
 Router(config)# router eigrp MY_NETWORK
 Router(config-router)# address-family ipv6 unicast autonomous-system 1
 Router(config-router-af)# af-interface GigabitEthernet0/0
@@ -41,11 +41,11 @@ Router(config-router-af-interface)#  exit-af-interface
 Router(config-router-af)# exit-address-family
 ```
 
-The key is specified directly — no separate key chain is needed for SHA-256 in Named mode.
+The key is specified directly - no separate key chain is needed for SHA-256 in Named mode.
 
 ## Applying to Multiple Interfaces
 
-```
+```text
 ! Named EIGRP: apply to default interface (all interfaces inherit)
 Router(config)# router eigrp MY_NETWORK
 Router(config-router)# address-family ipv6 unicast autonomous-system 1
@@ -61,14 +61,14 @@ Router(config-router-af-interface)#  exit-af-interface
 
 ## Verifying Authentication
 
-```
+```text
 ! Verify authentication is configured on an interface
 Router# show ipv6 eigrp interfaces detail | include Auth
   Authentication mode is md5, key-chain is "EIGRP_AUTH"
 
 ! Verify neighbors still form with authentication
 Router# show ipv6 eigrp neighbors
-! Neighbors should show as Established — if they drop, key mismatch
+! Neighbors should show as Established - if they drop, key mismatch
 
 ! Check for authentication failures in logs
 Router# show logging | include EIGRP | include auth
@@ -78,7 +78,7 @@ Router# show logging | include EIGRP | include auth
 
 Using key chains with overlapping accept/send lifetimes allows seamless key rotation:
 
-```
+```text
 ! Add a new key before the old one expires
 Router(config)# key chain EIGRP_AUTH
 Router(config-keychain)# key 1

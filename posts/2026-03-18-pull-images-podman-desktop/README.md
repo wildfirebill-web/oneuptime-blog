@@ -20,6 +20,7 @@ Ensure Podman Desktop is installed and running.
 
 ```bash
 # Verify Podman is available
+
 podman info
 
 # Check machine status (macOS/Windows)

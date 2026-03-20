@@ -20,6 +20,7 @@ You need three things running: your application (instrumented with OpenTelemetry
 
 ```yaml
 # docker-compose.yaml
+
 version: '3.8'
 services:
   app:

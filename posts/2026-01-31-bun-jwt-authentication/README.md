@@ -60,6 +60,7 @@ First, initialize a new Bun project and install the required dependencies. We us
 
 ```bash
 # Create a new project
+
 mkdir bun-jwt-auth && cd bun-jwt-auth
 bun init -y
 

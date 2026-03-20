@@ -37,6 +37,7 @@ The OpenTelemetry Collector's filter processor drops entire spans based on attri
 
 ```yaml
 # Collector configuration for trace filtering
+
 receivers:
   otlp:
     protocols:

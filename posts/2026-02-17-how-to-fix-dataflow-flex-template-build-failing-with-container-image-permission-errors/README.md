@@ -27,6 +27,7 @@ Check the build logs to find the exact failure point:
 
 ```bash
 # List recent Cloud Build builds
+
 gcloud builds list --limit=5 --format="table(id, status, createTime)"
 
 # Check the logs of a specific build

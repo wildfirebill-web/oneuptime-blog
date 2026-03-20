@@ -8,7 +8,7 @@ Description: Enable IPv6 access for GCP API Gateway by routing traffic through a
 
 ## Introduction
 
-GCP API Gateway itself does not expose a native IPv6 endpoint — it operates via a managed service URL. To serve IPv6 clients, you route API Gateway traffic through a Global External HTTPS Load Balancer, which supports IPv6 frontends natively.
+GCP API Gateway itself does not expose a native IPv6 endpoint - it operates via a managed service URL. To serve IPv6 clients, you route API Gateway traffic through a Global External HTTPS Load Balancer, which supports IPv6 frontends natively.
 
 ## Architecture Overview
 
@@ -24,6 +24,7 @@ graph LR
 
 ```bash
 # Create an API config from an OpenAPI spec
+
 gcloud api-gateway api-configs create my-api-config \
   --api=my-api \
   --openapi-spec=openapi.yaml \

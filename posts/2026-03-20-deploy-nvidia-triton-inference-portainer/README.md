@@ -20,7 +20,7 @@ NVIDIA Triton Inference Server is a high-performance inference platform that sup
 
 Triton requires a specific directory layout:
 
-```
+```text
 /opt/triton-models/
 ├── mnist-classifier/
 │   ├── config.pbtxt
@@ -40,6 +40,7 @@ Create a model config:
 
 ```protobuf
 # /opt/triton-models/mnist-classifier/config.pbtxt
+
 name: "mnist-classifier"
 platform: "tensorflow_savedmodel"
 
@@ -61,7 +62,7 @@ output [
   }
 ]
 
-# Dynamic batching — automatically groups requests for throughput
+# Dynamic batching - automatically groups requests for throughput
 dynamic_batching {
   preferred_batch_size: [ 8, 16, 32 ]
   max_queue_delay_microseconds: 5000
@@ -134,7 +135,7 @@ curl http://localhost:8000/v2/models/mnist-classifier
 ## Step 4: Run Inference
 
 ```python
-# triton_client.py — HTTP client using tritonclient
+# triton_client.py - HTTP client using tritonclient
 import tritonclient.http as httpclient
 import numpy as np
 
@@ -160,10 +161,10 @@ print(f"Predicted class: {predicted_class}")
 
 Triton exports Prometheus metrics on port 8002. Key metrics include:
 
-- `nv_inference_request_success` — successful inference requests
-- `nv_inference_queue_duration_us` — time requests spend in the queue
-- `nv_gpu_utilization` — GPU utilization percentage
-- `nv_gpu_memory_used_bytes` — GPU memory consumption
+- `nv_inference_request_success` - successful inference requests
+- `nv_inference_queue_duration_us` - time requests spend in the queue
+- `nv_gpu_utilization` - GPU utilization percentage
+- `nv_gpu_memory_used_bytes` - GPU memory consumption
 
 Add to your Prometheus scrape config:
 

@@ -31,6 +31,7 @@ graph TD
 
 ```bash
 # etcd-snapshot.sh
+
 # Takes a point-in-time snapshot of the etcd database
 # Run this on a control plane node or a pod with etcdctl access
 

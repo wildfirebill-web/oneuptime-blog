@@ -36,6 +36,7 @@ Traditional Linux systems have at least one way to get a shell: SSH, serial cons
 
 ```bash
 # These are all impossible on Talos Linux:
+
 ssh root@talos-node           # No SSH daemon
 talosctl -n 10.0.1.10 exec    # No exec/shell functionality
 # Physical console access     # No login prompt

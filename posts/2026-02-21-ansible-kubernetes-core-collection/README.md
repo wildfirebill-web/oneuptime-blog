@@ -38,6 +38,7 @@ Install the collection and its Python dependencies:
 
 ```bash
 # Install the kubernetes.core collection
+
 ansible-galaxy collection install kubernetes.core
 
 # Install required Python libraries

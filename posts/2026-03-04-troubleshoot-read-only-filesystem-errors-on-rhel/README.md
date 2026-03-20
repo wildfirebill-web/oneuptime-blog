@@ -14,6 +14,7 @@ A "Read-only file system" error means the kernel or mount configuration is preve
 
 ```bash
 # Check which filesystems are read-only
+
 mount | grep "ro,"
 
 # Check kernel messages for filesystem errors

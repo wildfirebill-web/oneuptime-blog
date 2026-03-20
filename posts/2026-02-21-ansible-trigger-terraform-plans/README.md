@@ -14,6 +14,7 @@ Sometimes you need Ansible to drive Terraform operations as part of a larger wor
 
 ```yaml
 # roles/terraform_runner/tasks/main.yml
+
 ---
 - name: Initialize Terraform
   community.general.terraform:

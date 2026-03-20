@@ -209,6 +209,7 @@ If the node is still online, leave the swarm from that node first:
 
 ```bash
 # Run this ON the node being removed
+
 docker swarm leave
 ```
 

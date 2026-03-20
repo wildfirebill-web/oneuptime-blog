@@ -20,6 +20,7 @@ Podman supports several storage drivers for different environments.
 
 ```bash
 # Check the currently active storage driver
+
 podman info --format '{{.Store.GraphDriverName}}'
 
 # View detailed driver information

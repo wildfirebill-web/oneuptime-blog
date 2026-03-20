@@ -27,6 +27,7 @@ First, enable the API if you have not already:
 
 ```bash
 # Enable the Web Security Scanner API
+
 gcloud services enable websecurityscanner.googleapis.com \
   --project=my-project-id
 ```

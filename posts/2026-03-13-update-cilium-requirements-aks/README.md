@@ -30,6 +30,7 @@ Verify the cluster's current network profile and Kubernetes version.
 
 ```bash
 # Get AKS cluster details including network plugin and policy
+
 az aks show \
   --resource-group <resource-group> \
   --name <cluster-name> \

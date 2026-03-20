@@ -26,6 +26,7 @@ The most straightforward approach is to check the provider configuration:
 
 ```python
 # restrict-aws-regions.sentinel
+
 # Limits AWS deployments to approved regions
 
 import "tfconfig/v2" as tfconfig

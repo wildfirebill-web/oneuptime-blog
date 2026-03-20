@@ -35,6 +35,7 @@ variable "ingress_rules" {
 }
 
 # Debug output - shows the raw data that for_each will receive
+
 output "debug_ingress_rules" {
   value = var.ingress_rules
 }

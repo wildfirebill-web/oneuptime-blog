@@ -14,6 +14,7 @@ The Host Metrics Receiver captures system-level metrics from the machine where t
 
 ```yaml
 # otel-collector-config.yaml
+
 receivers:
   # Host-level metrics for VMs and bare metal
   hostmetrics:

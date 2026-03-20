@@ -25,6 +25,7 @@ Install the base instrumentation tool and the libraries for frameworks you use.
 
 ```bash
 # Install the core instrumentation CLI
+
 pip install opentelemetry-distro opentelemetry-exporter-otlp
 
 # Install automatic instrumentation for your stack

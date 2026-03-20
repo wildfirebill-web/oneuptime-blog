@@ -51,6 +51,7 @@ Install Keepalived on both servers:
 
 ```bash
 # Install Keepalived on both primary and secondary servers
+
 sudo apt-get update
 sudo apt-get install -y keepalived
 ```

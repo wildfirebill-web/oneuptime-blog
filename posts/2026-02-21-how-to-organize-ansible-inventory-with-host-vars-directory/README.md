@@ -34,6 +34,7 @@ The inventory file stays clean:
 
 ```ini
 # inventory.ini
+
 # No inline variables needed - host_vars handles it all
 [webservers]
 web1.example.com

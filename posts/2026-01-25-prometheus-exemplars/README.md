@@ -34,6 +34,7 @@ Enable exemplar storage in Prometheus:
 
 ```yaml
 # prometheus.yml
+
 global:
   scrape_interval: 15s
   evaluation_interval: 15s

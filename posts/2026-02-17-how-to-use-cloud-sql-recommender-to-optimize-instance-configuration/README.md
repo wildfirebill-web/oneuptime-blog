@@ -27,6 +27,7 @@ Each recommendation includes an estimated cost impact, priority level, and the s
 
 ```bash
 # Enable the Recommender API
+
 gcloud services enable recommender.googleapis.com
 ```
 

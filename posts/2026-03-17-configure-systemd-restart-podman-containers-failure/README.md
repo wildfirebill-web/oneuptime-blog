@@ -20,6 +20,7 @@ In a Quadlet file, add restart settings to the `[Service]` section:
 
 ```ini
 # ~/.config/containers/systemd/myapp.container
+
 [Unit]
 Description=Application with restart policy
 

@@ -37,6 +37,7 @@ Check your policy to determine if it's L4 or L7:
 
 ```yaml
 # This is L4 - only uses namespace and port
+
 apiVersion: security.istio.io/v1
 kind: AuthorizationPolicy
 metadata:

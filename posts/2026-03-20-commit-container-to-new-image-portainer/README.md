@@ -1,4 +1,4 @@
-# How to Commit a Container to a New Image in Portainer
+# How to Commit a Container to a New Image in Portainer - New
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -12,14 +12,14 @@ Description: Use docker commit via Portainer's console to snapshot a running con
 
 ## When to Use docker commit
 
-- **Debugging** — snapshot a broken container for offline analysis
-- **Configuration capture** — save a manually configured container as an image
-- **Legacy migration** — migrate a long-running container with accumulated changes
-- **Development shortcut** — quickly capture work-in-progress state
+- **Debugging** - snapshot a broken container for offline analysis
+- **Configuration capture** - save a manually configured container as an image
+- **Legacy migration** - migrate a long-running container with accumulated changes
+- **Development shortcut** - quickly capture work-in-progress state
 
 **When NOT to use it:**
-- For production images — always use Dockerfiles for reproducibility
-- When secrets are in the container — they'll be baked into the image
+- For production images - always use Dockerfiles for reproducibility
+- When secrets are in the container - they'll be baked into the image
 
 ## Committing a Container via Portainer
 
@@ -27,6 +27,7 @@ Use Portainer's container console or exec feature to run the commit:
 
 ```bash
 # From the Portainer host shell, or via Portainer's container exec
+
 docker commit \
   --author "engineer@example.com" \
   --message "Added nginx custom configuration for example.com" \

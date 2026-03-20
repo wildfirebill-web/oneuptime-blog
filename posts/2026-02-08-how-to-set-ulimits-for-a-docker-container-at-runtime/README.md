@@ -18,6 +18,7 @@ Check the ulimits on your host system:
 
 ```bash
 # Display all current ulimits for your shell session
+
 ulimit -a
 ```
 

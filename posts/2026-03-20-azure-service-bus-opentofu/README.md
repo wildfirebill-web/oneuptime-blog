@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Azure, Service Bus, Messaging, Queues, Topics, Infrastructure as Code
+Tags: OpenTofu, Azure, Service Bus, Messaging, Queue, Topics, Infrastructure as Code
 
 Description: Learn how to provision Azure Service Bus namespaces, queues, topics, subscriptions, and authorization rules using OpenTofu for reliable asynchronous messaging between services.
 
@@ -26,6 +26,7 @@ graph LR
 
 ```hcl
 # service_bus.tf
+
 resource "azurerm_resource_group" "messaging" {
   name     = "rg-messaging-${var.environment}"
   location = var.location
@@ -40,7 +41,7 @@ resource "azurerm_servicebus_namespace" "main" {
   # Premium SKU features: private endpoints, dedicated capacity
   capacity = var.environment == "production" ? 1 : 0
 
-  # Disable local authentication — use Azure AD only
+  # Disable local authentication - use Azure AD only
   local_auth_enabled = false
 
   minimum_tls_version = "1.2"
@@ -104,7 +105,7 @@ resource "azurerm_servicebus_subscription" "inventory" {
   dead_lettering_on_filter_evaluation_error = true
   dead_lettering_on_message_expiration      = true
 
-  # SQL filter — only receive order-related events
+  # SQL filter - only receive order-related events
   rule {
     name        = "order-events-only"
     filter_type = "SqlFilter"
@@ -122,7 +123,7 @@ resource "azurerm_servicebus_subscription" "notifications" {
 ## RBAC Assignments
 
 ```hcl
-# rbac.tf — use managed identity instead of connection strings
+# rbac.tf - use managed identity instead of connection strings
 
 # Grant sender role to producer app
 resource "azurerm_role_assignment" "producer" {
@@ -141,8 +142,8 @@ resource "azurerm_role_assignment" "consumer" {
 
 ## Best Practices
 
-- Use `local_auth_enabled = false` to require Azure AD authentication — this prevents the use of SAS keys, which are harder to rotate and audit than managed identity assignments.
-- Set `max_delivery_count` and enable dead-letter queues — without a DLQ, poison messages can block queue processing indefinitely. Dead-lettering after N failures gives visibility into problematic messages.
-- Use `enable_partitioning = true` for high-throughput production queues — partitioned queues distribute load across multiple message brokers, dramatically increasing throughput.
-- Set appropriate `lock_duration` (30-300 seconds) based on your processing time — if processing takes longer than the lock duration, the message is redelivered to another consumer.
-- Grant RBAC roles at the queue or topic level rather than the namespace level — this limits each service to only the queues it needs, following the principle of least privilege.
+- Use `local_auth_enabled = false` to require Azure AD authentication - this prevents the use of SAS keys, which are harder to rotate and audit than managed identity assignments.
+- Set `max_delivery_count` and enable dead-letter queues - without a DLQ, poison messages can block queue processing indefinitely. Dead-lettering after N failures gives visibility into problematic messages.
+- Use `enable_partitioning = true` for high-throughput production queues - partitioned queues distribute load across multiple message brokers, dramatically increasing throughput.
+- Set appropriate `lock_duration` (30-300 seconds) based on your processing time - if processing takes longer than the lock duration, the message is redelivered to another consumer.
+- Grant RBAC roles at the queue or topic level rather than the namespace level - this limits each service to only the queues it needs, following the principle of least privilege.

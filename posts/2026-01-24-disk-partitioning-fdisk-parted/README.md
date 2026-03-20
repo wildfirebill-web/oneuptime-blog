@@ -40,6 +40,7 @@ flowchart TD
 
 ```bash
 # List all block devices with details
+
 lsblk -f
 
 # Example output:

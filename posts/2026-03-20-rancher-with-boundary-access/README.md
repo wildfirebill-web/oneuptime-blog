@@ -10,14 +10,14 @@ Description: Learn how to use HashiCorp Boundary with Rancher-managed Kubernetes
 
 HashiCorp Boundary is an identity-based access management tool that provides:
 
-- **Zero-trust access** — Users access resources through Boundary without network-level access to the target
-- **Session recording** — Audit trails of all access sessions
-- **Just-in-time credentials** — Integration with Vault for dynamic credentials
-- **Granular permissions** — Role-based access to specific hosts and ports
+- **Zero-trust access** - Users access resources through Boundary without network-level access to the target
+- **Session recording** - Audit trails of all access sessions
+- **Just-in-time credentials** - Integration with Vault for dynamic credentials
+- **Granular permissions** - Role-based access to specific hosts and ports
 
 ## Architecture
 
-```
+```bash
 Developer → Boundary Controller → Boundary Worker → Kubernetes API Server (Rancher)
                                                    → kubectl target
 ```
@@ -49,6 +49,7 @@ helm install boundary hashicorp/boundary \
 
 ```hcl
 # boundary.tf
+
 resource "boundary_scope" "org" {
   name                     = "my-org"
   description              = "Primary organization"
@@ -172,8 +173,8 @@ resource "boundary_storage_bucket" "sessions" {
 1. **Use OIDC authentication** tied to your identity provider (Okta, Azure AD)
 2. **Enable session recording** for privileged access to production clusters
 3. **Use Vault integration** for just-in-time kubeconfig credentials
-4. **Apply least-privilege targets** — separate targets for read-only vs admin access
-5. **Monitor boundary worker health** — workers are the access path; their failure blocks access
+4. **Apply least-privilege targets** - separate targets for read-only vs admin access
+5. **Monitor boundary worker health** - workers are the access path; their failure blocks access
 
 ## Conclusion
 

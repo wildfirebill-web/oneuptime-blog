@@ -55,6 +55,7 @@ The OpenTelemetry JavaScript SDK has a dedicated package for X-Ray propagation. 
 
 ```bash
 # Install the core OpenTelemetry packages along with the AWS X-Ray propagator
+
 npm install @opentelemetry/sdk-node \
   @opentelemetry/api \
   @opentelemetry/auto-instrumentations-node \

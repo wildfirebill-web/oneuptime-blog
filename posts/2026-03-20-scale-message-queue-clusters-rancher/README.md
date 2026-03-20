@@ -1,8 +1,8 @@
-# How to Scale Message Queue Clusters in Rancher
+# How to Scale Message Queue Clusters in Rancher - Message Queue Clusters
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Scaling, Message Queue, Kafka, RabbitMQ, Kubernetes HPA
+Tags: Rancher, Scaling, Message Queues, Kafka, RabbitMQ, Kubernetes HPA
 
 Description: Learn how to horizontally scale message queue clusters in Rancher by adding brokers, rebalancing partitions, and using KEDA for consumer autoscaling.
 
@@ -16,6 +16,7 @@ Kafka brokers are deployed as StatefulSets. Scaling up requires updating the rep
 
 ```bash
 # Scale Kafka from 3 to 5 brokers
+
 kubectl scale statefulset kafka-controller \
   --replicas=5 \
   -n messaging

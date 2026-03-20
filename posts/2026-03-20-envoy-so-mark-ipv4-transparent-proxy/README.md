@@ -8,7 +8,7 @@ Description: Learn how to configure Envoy's SO_MARK socket option to mark outbou
 
 ---
 
-`SO_MARK` sets a mark (an integer tag) on packets originating from a socket. Combined with Linux policy routing (`ip rule`) and `iptables`, this allows Envoy to route its own outbound packets differently from other processes — a key technique for transparent proxy deployments.
+`SO_MARK` sets a mark (an integer tag) on packets originating from a socket. Combined with Linux policy routing (`ip rule`) and `iptables`, this allows Envoy to route its own outbound packets differently from other processes - a key technique for transparent proxy deployments.
 
 ## Why SO_MARK Matters for Transparent Proxying
 
@@ -22,6 +22,7 @@ In a transparent proxy, intercepted traffic must not be re-intercepted by the sa
 
 ```yaml
 # envoy-config.yaml
+
 static_resources:
   clusters:
     - name: original_dst_cluster

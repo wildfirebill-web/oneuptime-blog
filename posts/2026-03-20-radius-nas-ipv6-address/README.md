@@ -8,7 +8,7 @@ Description: Configure and use the NAS-IPv6-Address RADIUS attribute (RFC 3162, 
 
 ## What Is NAS-IPv6-Address?
 
-NAS-IPv6-Address (RADIUS attribute 95, RFC 3162) identifies the IPv6 address of the Network Access Server (NAS) — the device sending RADIUS requests. It replaces NAS-IP-Address (attribute 4) for IPv6 NAS devices.
+NAS-IPv6-Address (RADIUS attribute 95, RFC 3162) identifies the IPv6 address of the Network Access Server (NAS) - the device sending RADIUS requests. It replaces NAS-IP-Address (attribute 4) for IPv6 NAS devices.
 
 The NAS includes this attribute when:
 - The NAS uses an IPv6 address to connect to the RADIUS server
@@ -17,7 +17,7 @@ The NAS includes this attribute when:
 
 ## NAS-IPv6-Address in Access-Request
 
-```
+```text
 RADIUS Access-Request packet (from IPv6 NAS):
 
 Attribute 4  (NAS-IP-Address):      Not present (IPv6 NAS)
@@ -30,8 +30,8 @@ Attribute 61 (NAS-Port-Type):       Ethernet
 
 ## Cisco IOS/IOS-XE: Configuring NAS-IPv6-Address
 
-```
-! Cisco IOS XE — RADIUS NAS IPv6 identification
+```text
+! Cisco IOS XE - RADIUS NAS IPv6 identification
 ipv6 address 2001:db8:nas::1/128 loopback0
 
 ! Configure RADIUS server (IPv6)
@@ -51,8 +51,9 @@ aaa authorization network default group radius
 
 ## Juniper Junos: NAS-IPv6-Address
 
-```
+```text
 # Junos configuration for IPv6 RADIUS NAS
+
 set access radius-server 2001:db8::radius secret mysecret
 set access radius-server 2001:db8::radius port 1812
 set access radius-server 2001:db8::radius source-address 2001:db8:nas::1
@@ -87,7 +88,7 @@ radclient -x -S [2001:db8::radius]:1812 auth testing123
 
 ## FreeRADIUS: Using NAS-IPv6-Address in Policy
 
-```
+```text
 # /etc/freeradius/3.0/policy.d/nas-ipv6
 # Apply different policies based on NAS IPv6 address
 
@@ -112,7 +113,7 @@ policy nas_ipv6_policy {
 
 ## FreeRADIUS: Client Verification Against NAS-IPv6-Address
 
-```
+```text
 # /etc/freeradius/3.0/clients.conf
 # RADIUS client (NAS) defined by IPv6 address
 
@@ -163,14 +164,14 @@ ORDER BY sessions DESC;
 ```
 
 ```bash
-# FreeRADIUS SQL accounting schema — ensure IPv6 columns exist
+# FreeRADIUS SQL accounting schema - ensure IPv6 columns exist
 mysql -u radius -p radius << 'EOF'
 ALTER TABLE radacct ADD COLUMN nasipv6address VARCHAR(50) DEFAULT NULL;
 ALTER TABLE radpostauth ADD COLUMN nasipv6address VARCHAR(50) DEFAULT NULL;
 EOF
 
 # FreeRADIUS mods-config/sql/main/mysql/queries.conf
-# accounting_start_query — include NAS-IPv6-Address
+# accounting_start_query - include NAS-IPv6-Address
 ```
 
 ## Troubleshooting NAS-IPv6-Address
@@ -191,7 +192,7 @@ radtest -x testuser testpass 2001:db8::radius 1812 testing123
 
 # Common issue: NAS-IPv6-Address not matching client block
 # FreeRADIUS looks up client by source IP of RADIUS packet
-# NAS-IPv6-Address attribute is informational — not used for auth
+# NAS-IPv6-Address attribute is informational - not used for auth
 ```
 
 ## Conclusion

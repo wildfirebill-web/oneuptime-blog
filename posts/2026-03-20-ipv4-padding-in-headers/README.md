@@ -18,7 +18,7 @@ The NOP option (type 1) and the End of Options List option (type 0) both serve a
 
 ## Visualizing Header Layout with Options
 
-```
+```text
  0                   1                   2                   3
  0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
 +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
@@ -46,6 +46,7 @@ def pad_ip_options(options: bytes) -> bytes:
     return options
 
 # Example: a 3-byte custom option (needs 1 byte of padding)
+
 raw_option = bytes([7, 3, 0])  # Record Route skeleton (type=7, len=3)
 padded = pad_ip_options(raw_option)
 print(f"Options length: {len(raw_option)} -> padded: {len(padded)}")

@@ -31,6 +31,7 @@ Strimzi supports two authentication types for KafkaUsers:
 
 ```yaml
 # infrastructure/messaging/users/orders-producer.yaml
+
 apiVersion: kafka.strimzi.io/v1beta2
 kind: KafkaUser
 metadata:

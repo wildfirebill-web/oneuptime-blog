@@ -14,6 +14,7 @@ The default gateway is the router that a host sends traffic to when no specific 
 
 ```bash
 # Add a default gateway
+
 # 'default' is equivalent to 0.0.0.0/0
 ip route add default via 192.168.1.1
 
@@ -112,4 +113,4 @@ ping -c 3 8.8.8.8
 
 ## Conclusion
 
-The default gateway is set with `ip route add default via <gateway-ip>`. It defines where traffic goes when no specific route matches — typically the router's LAN IP. For production servers, always configure the gateway in your distribution's network manager (Netplan, nmcli, systemd-networkd) for persistence. Use `ip route show default` to verify the current gateway.
+The default gateway is set with `ip route add default via <gateway-ip>`. It defines where traffic goes when no specific route matches - typically the router's LAN IP. For production servers, always configure the gateway in your distribution's network manager (Netplan, nmcli, systemd-networkd) for persistence. Use `ip route show default` to verify the current gateway.

@@ -27,6 +27,7 @@ Every production pod should have at least one NetworkPolicy:
 ```bash
 #!/bin/bash
 # find-unprotected-pods.sh
+
 for ns in $(kubectl get namespaces -o name | cut -d/ -f2); do
   # Skip system namespaces
   [[ "$ns" =~ ^(kube-system|calico-system|monitoring)$ ]] && continue

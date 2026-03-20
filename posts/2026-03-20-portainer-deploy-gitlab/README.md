@@ -1,4 +1,4 @@
-# How to Deploy GitLab via Portainer
+# How to Deploy GitLab via Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -72,6 +72,7 @@ After deployment (allow 2-5 minutes for initialization):
 
 ```bash
 # Get initial root password
+
 docker exec gitlab grep 'Password:' /etc/gitlab/initial_root_password
 ```
 

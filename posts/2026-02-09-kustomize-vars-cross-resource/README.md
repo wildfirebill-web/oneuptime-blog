@@ -22,6 +22,7 @@ Here's the traditional vars syntax:
 
 ```yaml
 # base/kustomization.yaml
+
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 
@@ -337,7 +338,7 @@ replacements:
     - metadata.labels.version
 ```
 
-## Resource name construction
+Resource name construction
 
 Build resource names from components:
 

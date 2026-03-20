@@ -27,6 +27,7 @@ GitHub Actions supports cron expressions for scheduling:
 
 ```yaml
 # .github/workflows/scheduled-drift-check.yml
+
 name: Scheduled Drift Detection
 
 on:
@@ -111,7 +112,7 @@ jobs:
               owner: context.repo.owner,
               repo: context.repo.repo,
               title: `Drift detected in ${{ matrix.component.name }} - ${new Date().toISOString().split('T')[0]}`,
-              body: `Scheduled drift check found changes in **${{ matrix.component.name }}**.\n\n\`\`\`\n${output.substring(0, 60000)}\n\`\`\``,
+              body: `Scheduled drift check found changes in **${{ matrix.component.name }}**.\n\n```\n${output.substring(0, 60000)}\n````,
               labels: ['drift', '${{ matrix.component.name }}']
             });
 ```

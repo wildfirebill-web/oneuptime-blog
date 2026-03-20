@@ -16,6 +16,7 @@ The most common reason to use `dpkg` directly is installing a `.deb` file you've
 
 ```bash
 # Install a local .deb file
+
 sudo dpkg -i package.deb
 
 # Install multiple .deb files at once

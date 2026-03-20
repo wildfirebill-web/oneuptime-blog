@@ -38,6 +38,7 @@ The error budget remaining metric, derived from your OpenTelemetry counters, fee
 
 ```yaml
 # prometheus-rules/error-budget-policy.yaml
+
 groups:
   - name: error_budget_policy
     interval: 1m

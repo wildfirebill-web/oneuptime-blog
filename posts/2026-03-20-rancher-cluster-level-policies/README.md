@@ -1,4 +1,4 @@
-# How to Configure Cluster-Level Policies in Rancher
+# How to Configure Cluster-Level Policies in Rancher - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -24,6 +24,7 @@ Cluster-level policies in Rancher enforce security guardrails, resource quotas, 
 
 ```yaml
 # gitrepo-gatekeeper.yaml
+
 apiVersion: fleet.cattle.io/v1alpha1
 kind: GitRepo
 metadata:
@@ -160,7 +161,7 @@ kubectl get namespaces --no-headers -o name \
 ## Step 5: Configure Network Policies
 
 ```yaml
-# network-policies/default-deny.yaml — Applied via Fleet to all clusters
+# network-policies/default-deny.yaml - Applied via Fleet to all clusters
 apiVersion: networking.k8s.io/v1
 kind: NetworkPolicy
 metadata:
@@ -284,4 +285,4 @@ kubectl get k8sallowedrepos approved-registries \
 
 ## Conclusion
 
-Cluster-level policies in Rancher enforce consistent security and governance across your entire cluster fleet. Using OPA Gatekeeper for admission control, Pod Security Standards for container security, Network Policies for traffic isolation, and Resource Quotas for fair resource allocation — all deployed via Fleet GitOps — you create a compliant, auditable platform where security is automated rather than manual. Start with `warn` enforcement mode and transition to `deny` once all existing workloads are compliant.
+Cluster-level policies in Rancher enforce consistent security and governance across your entire cluster fleet. Using OPA Gatekeeper for admission control, Pod Security Standards for container security, Network Policies for traffic isolation, and Resource Quotas for fair resource allocation - all deployed via Fleet GitOps - you create a compliant, auditable platform where security is automated rather than manual. Start with `warn` enforcement mode and transition to `deny` once all existing workloads are compliant.

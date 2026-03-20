@@ -27,6 +27,7 @@ We will implement a warm standby approach, which provides a good balance of cost
 
 ```hcl
 # providers.tf - Primary and DR region providers
+
 provider "aws" {
   region = var.primary_region
   alias  = "primary"

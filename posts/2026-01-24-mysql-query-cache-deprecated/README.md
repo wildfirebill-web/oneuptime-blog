@@ -54,6 +54,7 @@ SHOW VARIABLES LIKE 'query_cache%';
 
 ```ini
 # my.cnf configuration for MySQL 5.7
+
 [mysqld]
 # Enable query cache
 query_cache_type = 1

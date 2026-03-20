@@ -23,6 +23,7 @@ If you mistakenly released an IP that was still in use:
 
 ```bash
 # The released IP will be reallocated when a new pod needs it
+
 # The original pod may need to be restarted to get a new IP
 kubectl delete pod <affected-pod> -n <namespace>
 

@@ -29,6 +29,7 @@ If you do not have one already:
 
 ```bash
 # Create a Cloud Armor security policy
+
 gcloud compute security-policies create ua-filter-policy \
   --description="Filter traffic based on User-Agent headers" \
   --project=your-project-id

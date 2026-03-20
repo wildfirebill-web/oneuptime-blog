@@ -6,7 +6,7 @@ Tags: OpenTofu, DigitalOcean, App Platform, PaaS, Infrastructure as Code
 
 Description: Learn how to deploy applications on DigitalOcean App Platform using OpenTofu to define services, databases, and environment variables as code.
 
-DigitalOcean App Platform is a PaaS offering that deploys apps from Git repositories or container registries. OpenTofu lets you define your entire app spec — services, workers, databases, static sites, and environment variables — as declarative configuration.
+DigitalOcean App Platform is a PaaS offering that deploys apps from Git repositories or container registries. OpenTofu lets you define your entire app spec - services, workers, databases, static sites, and environment variables - as declarative configuration.
 
 ## Basic Web Service from a Git Repository
 

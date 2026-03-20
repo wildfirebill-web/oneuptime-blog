@@ -14,6 +14,7 @@ NetBox is the leading open source IPAM and network documentation tool. Its data 
 
 ```bash
 # Using NetBox CLI (Django manage.py shell)
+
 cd /opt/netbox
 python3 netbox/manage.py shell
 ```

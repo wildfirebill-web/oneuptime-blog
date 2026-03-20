@@ -42,6 +42,7 @@ flowchart TD
 
 ```bash
 # Check current version
+
 kubectl version
 
 # Review changelog for target version

@@ -65,6 +65,7 @@ Create a mapping document:
 
 ```yaml
 # Database decomposition mapping
+
 services:
   user-service:
     tables:

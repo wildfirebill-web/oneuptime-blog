@@ -16,6 +16,7 @@ The syntax mirrors `kubectl apply`:
 
 ```bash
 # Preview changes for a single file
+
 kubectl diff -f deployment.yaml
 
 # Preview changes for a directory
@@ -393,7 +394,7 @@ kubectl auth can-i get deployments
 kubectl auth can-i get configmaps
 ```
 
-### Resource Not Found
+Resource Not Found
 
 If the resource does not exist, diff shows the entire manifest as an addition:
 

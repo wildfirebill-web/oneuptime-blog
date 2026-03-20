@@ -2,18 +2,19 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MTR, Traceroute, Networking, Troubleshooting, IPv4, Linux
+Tags: mtr, Traceroute, Networking, Troubleshooting, IPv4, Linux
 
 Description: Use mtr to continuously monitor the network path to a destination, identify packet loss and latency issues at each hop, and distinguish transient from persistent problems.
 
 ## Introduction
 
-MTR (My Traceroute) combines traceroute and ping into a continuous monitoring tool. Where traceroute shows the path at one moment in time, MTR repeatedly probes each hop and calculates statistics — loss percentage, average RTT, jitter — for each router on the path. This makes it far more effective at catching intermittent problems.
+MTR (My Traceroute) combines traceroute and ping into a continuous monitoring tool. Where traceroute shows the path at one moment in time, MTR repeatedly probes each hop and calculates statistics - loss percentage, average RTT, jitter - for each router on the path. This makes it far more effective at catching intermittent problems.
 
 ## Installation and Basic Usage
 
 ```bash
 # Install MTR
+
 apt install mtr-tiny   # Debian/Ubuntu
 yum install mtr        # RHEL/CentOS
 
@@ -29,7 +30,7 @@ mtr -n --report 8.8.8.8
 
 ## Reading MTR Report Output
 
-```
+```text
 HOST: myserver            Loss%  Snt  Last  Avg  Best  Wrst StDev
   1. 192.168.1.1           0.0%   20   1.2  1.1   0.9   1.5   0.2
   2. 203.0.113.1            0.0%   20   5.4  5.3   5.1   5.9   0.2
@@ -100,7 +101,7 @@ mtr --report -n 192.168.1.10
 # Run MTR with high cycle count to detect jitter patterns
 mtr --report-cycles 100 --interval 0.2 -n voip-server.example.com
 
-# Look for StDev > 10ms at any hop — that's significant jitter
+# Look for StDev > 10ms at any hop - that's significant jitter
 # Also watch for Wrst (worst) RTT spikes which cause audio gaps
 ```
 

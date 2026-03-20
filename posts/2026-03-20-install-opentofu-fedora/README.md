@@ -22,6 +22,7 @@ Fedora is a community-driven Linux distribution sponsored by Red Hat, known for 
 
 ```bash
 # Add the OpenTofu repository using dnf config-manager
+
 sudo dnf config-manager --add-repo https://packages.opentofu.org/opentofu/tofu/config_file.repo?type=rpm-md
 
 # Or manually create the repo file

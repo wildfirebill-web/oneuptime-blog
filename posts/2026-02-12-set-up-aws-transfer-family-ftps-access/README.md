@@ -29,6 +29,7 @@ FTPS requires a TLS certificate for the server. You can use AWS Certificate Mana
 
 ```bash
 # Request a public certificate from ACM
+
 aws acm request-certificate \
   --domain-name "ftps.example.com" \
   --validation-method DNS \

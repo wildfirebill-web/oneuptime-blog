@@ -65,6 +65,7 @@ Now create the Cloud Function. Here is a Python-based Cloud Function that calls 
 
 ```python
 # main.py - Cloud Function to execute BigQuery stored procedure
+
 import functions_framework
 from google.cloud import bigquery
 from datetime import date, timedelta

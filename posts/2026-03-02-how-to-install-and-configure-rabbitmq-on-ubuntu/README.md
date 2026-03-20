@@ -39,6 +39,7 @@ Use the official RabbitMQ repository for the latest version:
 
 ```bash
 # Install prerequisites
+
 sudo apt update && sudo apt install -y curl gnupg apt-transport-https
 
 # Add Erlang (required by RabbitMQ) signing key

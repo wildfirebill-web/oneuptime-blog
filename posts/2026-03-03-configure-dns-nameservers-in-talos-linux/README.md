@@ -18,6 +18,7 @@ DNS nameservers in Talos Linux are configured in the `machine.network.nameserver
 
 ```yaml
 # machine-config.yaml
+
 machine:
   network:
     nameservers:

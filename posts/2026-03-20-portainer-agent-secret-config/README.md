@@ -1,8 +1,8 @@
-# How to Configure the Agent Secret Between Portainer Server and Agent
+# How to Configure the Agent Secret Between Portainer Server and Agent - Config
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Agent, Security, Authentication, Secret
+Tags: Portainer, Agent, Security, Authentication, Secrets
 
 Description: Configure a shared agent secret to secure the communication channel between the Portainer server and its agents.
 
@@ -14,6 +14,7 @@ By default, the Portainer Agent accepts connections from any Portainer server. T
 
 ```bash
 # Docker run
+
 docker run -d \
   --name portainer_agent \
   --restart always \

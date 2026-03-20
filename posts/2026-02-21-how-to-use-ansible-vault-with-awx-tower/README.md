@@ -39,6 +39,7 @@ flowchart TD
 
 ```bash
 # Create a vault credential using the AWX API
+
 curl -X POST "https://awx.example.com/api/v2/credentials/" \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer ${AWX_TOKEN}" \

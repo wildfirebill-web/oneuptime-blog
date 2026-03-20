@@ -497,6 +497,7 @@ React Native Debugger combines React DevTools and Redux DevTools with Chrome Dev
 
 ```bash
 # macOS
+
 brew install --cask react-native-debugger
 
 # Or download from GitHub releases

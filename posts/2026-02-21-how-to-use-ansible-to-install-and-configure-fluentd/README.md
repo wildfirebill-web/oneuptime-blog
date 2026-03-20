@@ -52,6 +52,7 @@ fluentd/
 
 ```yaml
 # roles/fluentd/defaults/main.yml
+
 # Installation method: "td-agent" (recommended) or "gem"
 fluentd_install_method: "td-agent"
 fluentd_version: "4"

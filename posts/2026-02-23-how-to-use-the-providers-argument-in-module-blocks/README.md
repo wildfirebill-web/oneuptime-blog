@@ -18,6 +18,7 @@ Before diving into the `providers` argument, it is important to understand the d
 
 ```hcl
 # Root module
+
 provider "aws" {
   region = "us-east-1"
 }

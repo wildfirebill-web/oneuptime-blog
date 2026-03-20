@@ -26,6 +26,7 @@ This is a significant security concern for production environments. Most Kuberne
 
 ```bash
 # Confirm no policies are currently active
+
 kubectl get networkpolicies
 kubectl get ciliumnetworkpolicies
 

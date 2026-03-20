@@ -20,6 +20,7 @@ Learn how to use OpenTofu's native Stacks feature for component-based infrastruc
 
 ```bash
 # Verify OpenTofu installation
+
 tofu version
 
 # Set up required environment variables

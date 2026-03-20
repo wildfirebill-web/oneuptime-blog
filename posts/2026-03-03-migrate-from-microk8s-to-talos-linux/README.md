@@ -27,6 +27,7 @@ Document your current MicroK8s configuration:
 
 ```bash
 # Check MicroK8s status and enabled addons
+
 microk8s status
 
 # List all enabled addons

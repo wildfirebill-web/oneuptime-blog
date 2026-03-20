@@ -16,6 +16,7 @@ The Spanner emulator is included with the Google Cloud SDK. If you have gcloud i
 
 ```bash
 # Install the Spanner emulator component
+
 gcloud components install cloud-spanner-emulator
 ```
 

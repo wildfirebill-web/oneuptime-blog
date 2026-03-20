@@ -105,6 +105,7 @@ Integrate IPReservation management into your infrastructure automation:
 ```bash
 #!/bin/bash
 # Script to reserve IPs from a list file
+
 # Each line in the file should contain one IP or CIDR
 
 RESERVATION_NAME="auto-reserved"

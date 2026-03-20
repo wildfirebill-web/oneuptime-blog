@@ -118,6 +118,7 @@ Apache Pulsar requires Java 17 or later. Here is how to install OpenJDK 17 on Ub
 
 ```bash
 # Update package index to ensure we get the latest versions
+
 sudo apt update
 
 # Install OpenJDK 17 (required by Pulsar 3.x)

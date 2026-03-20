@@ -27,6 +27,7 @@ Create Middleware that adds security headers to all responses.
 
 ```yaml
 # infrastructure/traefik/middleware/security-headers.yaml
+
 apiVersion: traefik.io/v1alpha1
 kind: Middleware
 metadata:

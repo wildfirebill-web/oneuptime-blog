@@ -18,6 +18,7 @@ If you create a file in an editor that uses a different encoding, Terraform may 
 
 ```bash
 # Check a file's encoding on Linux/Mac
+
 file -bi main.tf
 # Expected output: text/plain; charset=utf-8
 

@@ -14,6 +14,7 @@ The `strcontains` function was introduced in Terraform 1.5 and is the most strai
 
 ```hcl
 # Basic usage
+
 locals {
   environment_name = "production-us-east-1"
 

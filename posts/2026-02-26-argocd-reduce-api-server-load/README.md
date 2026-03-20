@@ -39,6 +39,7 @@ The API server uses Redis to cache application state. Ensure Redis is properly c
 
 ```yaml
 # argocd-cmd-params-cm ConfigMap
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

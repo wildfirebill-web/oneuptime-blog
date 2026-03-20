@@ -16,6 +16,7 @@ Understanding debhelper well will save you significant time when packaging softw
 
 ```bash
 # Install debhelper and related tools
+
 sudo apt update
 sudo apt install debhelper devscripts dh-make -y
 
@@ -235,6 +236,7 @@ Package: mypackage-dev
 Architecture: any
 Depends: mypackage (= ${binary:Version}), ${misc:Depends}
 Description: Development headers for mypackage
+
 EOF
 
 # Use per-package .install files to split files

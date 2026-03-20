@@ -16,6 +16,7 @@ The `uri` module is Ansible's HTTP client. It handles request methods, headers, 
 
 ```yaml
 # playbook-basic-api.yml
+
 # Makes a GET request to a REST API and displays the parsed response
 - name: Basic API call
   hosts: localhost

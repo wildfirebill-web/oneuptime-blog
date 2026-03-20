@@ -24,6 +24,7 @@ GitLab on a machine with less than 8GB RAM will work but will feel sluggish. At 
 
 ```bash
 # Update system
+
 sudo apt update && sudo apt upgrade -y
 
 # Install required dependencies

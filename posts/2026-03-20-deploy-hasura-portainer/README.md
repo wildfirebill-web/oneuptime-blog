@@ -1,4 +1,4 @@
-# How to Deploy Hasura GraphQL Engine via Portainer
+# How to Deploy Hasura GraphQL Engine via Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -20,6 +20,7 @@ Navigate to **Stacks** > **Add Stack**:
 
 ```yaml
 # docker-compose.yml - Hasura GraphQL Engine
+
 version: "3.8"
 
 services:
@@ -70,7 +71,7 @@ networks:
 
 ## Step 2: Set Environment Variables in Portainer
 
-```
+```text
 DB_PASSWORD=your-postgres-password
 HASURA_ADMIN_SECRET=your-admin-secret-min-32-chars
 HASURA_JWT_SECRET={"type":"HS256","key":"your-jwt-secret-min-32-chars"}
@@ -147,4 +148,4 @@ In the Hasura Console under **Data** > **<table>** > **Permissions**:
 
 ## Conclusion
 
-Hasura auto-generates a GraphQL API the moment you track your tables — no resolvers to write. The `HASURA_GRAPHQL_JWT_SECRET` enables token-based auth: include a JWT with `x-hasura-user-id` and `x-hasura-role` claims and Hasura enforces permissions automatically. Disable `HASURA_GRAPHQL_DEV_MODE` and `HASURA_GRAPHQL_ENABLE_CONSOLE` in production-facing deployments.
+Hasura auto-generates a GraphQL API the moment you track your tables - no resolvers to write. The `HASURA_GRAPHQL_JWT_SECRET` enables token-based auth: include a JWT with `x-hasura-user-id` and `x-hasura-role` claims and Hasura enforces permissions automatically. Disable `HASURA_GRAPHQL_DEV_MODE` and `HASURA_GRAPHQL_ENABLE_CONSOLE` in production-facing deployments.

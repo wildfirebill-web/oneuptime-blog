@@ -29,6 +29,7 @@ Web application access point:
 
 ```bash
 # Create access point for the web application
+
 WEB_AP=$(aws efs create-access-point \
   --file-system-id "fs-0abc123def456789" \
   --posix-user "Uid=1001,Gid=1001" \

@@ -32,6 +32,7 @@ A good chart starts with a well-designed values file. Here is one that covers bo
 
 ```yaml
 # my-istio-app/values.yaml
+
 replicaCount: 2
 
 image:

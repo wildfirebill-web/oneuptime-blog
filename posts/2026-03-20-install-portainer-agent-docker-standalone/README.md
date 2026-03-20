@@ -14,6 +14,7 @@ The Portainer Agent is a lightweight service that runs on each Docker host and e
 
 ```bash
 # Install Portainer Agent on the target Docker host
+
 # Port 9001 is the default agent communication port
 docker run -d \
   -p 9001:9001 \

@@ -48,6 +48,7 @@ To reduce drift correction latency:
 
 ```bash
 # Manually trigger immediate reconciliation
+
 flux reconcile kustomization myapp -n flux-system --with-source
 
 # Check if drift exists

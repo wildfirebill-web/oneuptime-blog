@@ -52,6 +52,7 @@ Let's start with a new TypeScript project.
 
 ```bash
 # Create project directory
+
 mkdir event-sourcing-nodejs
 cd event-sourcing-nodejs
 

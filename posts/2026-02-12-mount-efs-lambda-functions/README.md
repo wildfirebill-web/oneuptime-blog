@@ -41,6 +41,7 @@ Create a security group for your Lambda function if you don't have one:
 
 ```bash
 # Security group for Lambda function
+
 LAMBDA_SG=$(aws ec2 create-security-group \
   --group-name "lambda-efs-sg" \
   --description "Security group for Lambda functions with EFS" \

@@ -27,6 +27,7 @@ Keep your CA private keys on a secure, offline or restricted machine. The CA sig
 
 ```bash
 # Create a dedicated directory for CA operations
+
 mkdir -p ~/ssh-ca
 cd ~/ssh-ca
 

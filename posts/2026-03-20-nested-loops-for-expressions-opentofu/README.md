@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, for expressions, Nested Loops, HCL, Data Transformation
+Tags: OpenTofu, Terraform, For Expressions, Nested Loops, HCL, Data Transformation
 
 Description: Learn how to use nested for expressions in OpenTofu to create cartesian products and flatten complex nested data structures into resource-ready formats.
 
 ## Introduction
 
-Real infrastructure often requires creating resources for every combination of two lists — every region paired with every environment, every user paired with every role, etc. Nested `for` expressions let you compute these cartesian products directly in HCL.
+Real infrastructure often requires creating resources for every combination of two lists - every region paired with every environment, every user paired with every role, etc. Nested `for` expressions let you compute these cartesian products directly in HCL.
 
 ## Cartesian Product with Nested for
 
@@ -41,6 +41,7 @@ locals {
 }
 
 # Create an S3 bucket for every env-region combination
+
 resource "aws_s3_bucket" "regional_env" {
   for_each = local.env_region_pairs
 

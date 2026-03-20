@@ -30,6 +30,7 @@ Check every byte access in the OnData method and all functions it calls:
 
 ```bash
 # Find all slice index operations in the parser
+
 grep -n "\[.*\]" proxylib/myprotocol/myprotocolparser.go | grep -v "func\|type\|import\|//\|string"
 
 # Find all slice range operations

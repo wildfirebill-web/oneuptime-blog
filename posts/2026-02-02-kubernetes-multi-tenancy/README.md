@@ -76,6 +76,7 @@ For managing many tenants, automation is essential. The script below creates nam
 ```bash
 #!/bin/bash
 # create-tenant-namespace.sh
+
 # Creates a tenant namespace with standard configuration
 
 TENANT_NAME=$1
@@ -280,7 +281,7 @@ roleRef:
   apiGroup: rbac.authorization.k8s.io
 ```
 
-## Resource Quotas
+Resource Quotas
 
 Resource quotas prevent any single tenant from consuming all cluster resources. Without quotas, one misbehaving workload can starve others.
 

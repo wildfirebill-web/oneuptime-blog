@@ -36,6 +36,7 @@ All virtual mailboxes will be owned by a single system user:
 
 ```bash
 # Create the vmail group and user
+
 sudo groupadd -g 5000 vmail
 sudo useradd -u 5000 -g vmail -s /sbin/nologin -d /var/mail/vhosts -m vmail
 ```

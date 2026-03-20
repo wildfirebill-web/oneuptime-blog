@@ -33,6 +33,7 @@ Install the AWS Load Balancer Controller if you have not already:
 
 ```bash
 # Add the EKS Helm chart repo
+
 helm repo add eks https://aws.github.io/eks-charts
 helm repo update
 

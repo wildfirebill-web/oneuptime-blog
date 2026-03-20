@@ -32,6 +32,7 @@ The simplest configuration watches a single named resource.
 
 ```yaml
 # Alert watching a single Kustomization resource
+
 apiVersion: notification.toolkit.fluxcd.io/v1
 kind: Alert
 metadata:

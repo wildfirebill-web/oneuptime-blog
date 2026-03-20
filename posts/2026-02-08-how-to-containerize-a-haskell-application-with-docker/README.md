@@ -55,6 +55,7 @@ The package definition:
 
 ```yaml
 # package.yaml (for Stack) or as cabal file
+
 name: my-haskell-app
 version: 0.1.0.0
 

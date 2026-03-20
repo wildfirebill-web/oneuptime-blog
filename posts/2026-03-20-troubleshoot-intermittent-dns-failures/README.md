@@ -15,6 +15,7 @@ Intermittent DNS failures are among the most frustrating networking issues. Appl
 ```bash
 #!/bin/bash
 # DNS failure monitoring script - run in background
+
 # Logs every DNS failure with timestamp and details
 
 LOG="/var/log/dns-failures.log"

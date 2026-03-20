@@ -14,6 +14,7 @@ RabbitMQ AMQP without TLS sends messages in plaintext. AMQPS (AMQP with TLS) on 
 
 ```bash
 # CA certificate
+
 openssl genrsa -out ca.key 4096
 openssl req -new -x509 -days 3650 -key ca.key -out ca.crt \
   -subj "/CN=RabbitMQ CA"

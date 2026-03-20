@@ -28,6 +28,7 @@ First, create the resources that will hold your state file:
 
 ```bash
 # Set variables for reuse
+
 RESOURCE_GROUP="terraform-state-rg"
 STORAGE_ACCOUNT="tfstate$(openssl rand -hex 4)"  # Must be globally unique
 CONTAINER="tfstate"

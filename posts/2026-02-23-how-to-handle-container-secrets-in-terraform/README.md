@@ -18,6 +18,7 @@ Never put secrets directly in Terraform code:
 
 ```hcl
 # DO NOT do this - secrets in plain text
+
 resource "aws_ecs_task_definition" "bad_example" {
   # ...
   container_definitions = jsonencode([

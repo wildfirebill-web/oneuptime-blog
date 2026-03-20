@@ -28,6 +28,7 @@ Deploy Redis with RDB snapshot configuration:
 
 ```yaml
 # redis-rdb.yaml
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

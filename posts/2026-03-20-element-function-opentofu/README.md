@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, element, List Functions, HCL, Infrastructure as Code, DevOps
+Tags: OpenTofu, Element, List Functions, HCL, Infrastructure as Code, DevOps
 
 Description: Learn how to use the element function in OpenTofu to access list items by index with automatic wrapping for cycling through values.
 
 ---
 
-`element()` retrieves a single element from a list by index. Unlike direct indexing with `[n]`, `element()` wraps around cyclically when the index exceeds the list length — this makes it useful for distributing resources across a fixed set of values like availability zones.
+`element()` retrieves a single element from a list by index. Unlike direct indexing with `[n]`, `element()` wraps around cyclically when the index exceeds the list length - this makes it useful for distributing resources across a fixed set of values like availability zones.
 
 ---
 
@@ -89,7 +89,7 @@ locals {
   list = ["a", "b", "c"]
 
   # Direct indexing: errors if index out of bounds
-  direct = local.list[1]      # "b" — works
+  direct = local.list[1]      # "b" - works
   # local.list[10]            # Error: index out of range
 
   # element: wraps around cyclically
@@ -115,4 +115,4 @@ locals {
 
 ## Summary
 
-`element(list, index)` retrieves a list element by index with wrap-around cycling behavior. The cycling makes it ideal for distributing resources across a fixed set of values — placing subnets in availability zones, rotating instance types, or assigning resources to clusters in round-robin fashion. For accessing a specific position without cycling, use direct list indexing `list[n]` which fails with an error if the index is out of bounds.
+`element(list, index)` retrieves a list element by index with wrap-around cycling behavior. The cycling makes it ideal for distributing resources across a fixed set of values - placing subnets in availability zones, rotating instance types, or assigning resources to clusters in round-robin fashion. For accessing a specific position without cycling, use direct list indexing `list[n]` which fails with an error if the index is out of bounds.

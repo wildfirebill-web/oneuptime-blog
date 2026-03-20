@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Python, scapy, IPv6, Packet Crafting, Network Testing, Security
+Tags: Python, Scapy, IPv6, Packet Crafting, Network Testing, Security
 
 Description: Use Python's scapy library to craft, send, and capture IPv6 packets for network testing, protocol analysis, and security research.
 
@@ -12,6 +12,7 @@ Description: Use Python's scapy library to craft, send, and capture IPv6 packets
 pip install scapy
 
 # On Linux, scapy needs root or CAP_NET_RAW for raw socket access
+
 # Run scripts with sudo or grant capabilities
 ```
 
@@ -170,4 +171,4 @@ print(packet.show())
 
 ## Conclusion
 
-Scapy makes IPv6 packet crafting accessible in Python. From ICMPv6 pings to TCP SYN scans and NDP message construction, scapy handles IPv6 extension headers, checksum computation, and Layer 2 framing automatically. Use it for protocol testing, network security research, and custom network tool development — always in authorized environments.
+Scapy makes IPv6 packet crafting accessible in Python. From ICMPv6 pings to TCP SYN scans and NDP message construction, scapy handles IPv6 extension headers, checksum computation, and Layer 2 framing automatically. Use it for protocol testing, network security research, and custom network tool development - always in authorized environments.

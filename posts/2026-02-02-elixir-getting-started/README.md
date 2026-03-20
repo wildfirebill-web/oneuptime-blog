@@ -36,6 +36,7 @@ The easiest way to install Elixir depends on your operating system.
 
 ```bash
 # Install Elixir (this also installs Erlang as a dependency)
+
 brew install elixir
 
 # Verify the installation

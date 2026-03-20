@@ -146,6 +146,7 @@ Now create the budget and attach the action.
 
 ```bash
 # Step 1: Create the budget
+
 aws budgets create-budget \
   --account-id 123456789012 \
   --budget '{

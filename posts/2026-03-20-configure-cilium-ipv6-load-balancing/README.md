@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Cilium, IPv6, Load Balancing, Kubernetes, kube-proxy, eBPF
+Tags: Cilium, IPv6, Load Balancing, Kubernetes, Kube-proxy, eBPF
 
 Description: Configure Cilium's eBPF-based IPv6 service load balancing to replace kube-proxy, enable DSR, and configure session affinity for IPv6 services.
 
@@ -14,6 +14,7 @@ Cilium replaces kube-proxy for service load balancing using eBPF programs that o
 
 ```bash
 # Install Cilium with kube-proxy replacement
+
 helm install cilium cilium/cilium \
   --namespace kube-system \
   --set kubeProxyReplacement=true \
@@ -152,8 +153,8 @@ hubble observe --type l4 --verdict FORWARDED \
   --to-port 80 --ip-version ipv6 | head -20
 
 # Prometheus metrics
-# cilium_services_events_total{action="add"} — services created
-# cilium_backend_state_count{state="active"} — healthy backends
+# cilium_services_events_total{action="add"} - services created
+# cilium_backend_state_count{state="active"} - healthy backends
 ```
 
 ## Conclusion

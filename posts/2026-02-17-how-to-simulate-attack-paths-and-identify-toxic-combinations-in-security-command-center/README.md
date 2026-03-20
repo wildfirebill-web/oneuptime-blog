@@ -30,6 +30,7 @@ This command designates specific resource types as high-value targets for the si
 
 ```bash
 # Create a resource value configuration to mark BigQuery datasets as high-value
+
 gcloud scc resource-value-configs create \
   --organization=123456789 \
   --resource-type="bigquery.googleapis.com/Dataset" \

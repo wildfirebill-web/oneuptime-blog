@@ -119,6 +119,7 @@ If you need that kind of flexibility, you'll have to create separate PeerAuthent
 
 ```yaml
 # Can't do this:
+
 spec:
   selector:
     matchExpressions:

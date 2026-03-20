@@ -20,6 +20,7 @@ Here is how to configure the resource attribute in a Python service:
 
 ```python
 # Set team ownership as a resource attribute so every signal
+
 # emitted by this service carries the team identifier.
 from opentelemetry.sdk.resources import Resource
 from opentelemetry.sdk.trace import TracerProvider

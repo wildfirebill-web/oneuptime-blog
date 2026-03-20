@@ -22,6 +22,7 @@ This playbook creates directories for every combination of environment and servi
 
 ```yaml
 # playbook.yml - Create cross-product of directories
+
 ---
 - name: Create environment-service directory structure
   hosts: localhost

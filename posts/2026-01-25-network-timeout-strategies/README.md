@@ -61,6 +61,7 @@ Different timeouts protect against different failure modes:
 
 ```python
 # python_timeouts.py - Configure timeouts in Python HTTP clients
+
 import requests
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry

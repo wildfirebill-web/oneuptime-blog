@@ -26,6 +26,7 @@ RabbitMQ has a specific dependency on Erlang, and not just any Erlang. RabbitMQ 
 
 ```ini
 # inventory/rabbitmq.ini
+
 [rabbitmq_servers]
 rabbit-1 ansible_host=10.0.7.10
 rabbit-2 ansible_host=10.0.7.11

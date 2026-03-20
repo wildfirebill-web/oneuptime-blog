@@ -24,6 +24,7 @@ Traditional PXE uses TFTP exclusively, which is slow and lacks encryption. iPXE 
 
 ```bash
 # Install the pre-built iPXE binaries
+
 sudo apt update
 sudo apt install ipxe
 

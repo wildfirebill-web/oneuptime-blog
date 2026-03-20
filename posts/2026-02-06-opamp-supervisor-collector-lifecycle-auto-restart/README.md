@@ -26,6 +26,7 @@ The supervisor is part of the opentelemetry-collector-contrib repository. Build 
 
 ```bash
 # Build from source
+
 git clone https://github.com/open-telemetry/opentelemetry-collector-contrib.git
 cd opentelemetry-collector-contrib/cmd/opampsupervisor
 go build -o opamp-supervisor .

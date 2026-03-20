@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Harvester, Dev/Test, Virtual Machines, Kubernetes, Development Environment, SUSE Rancher, HCI
+Tags: Harvester, Dev/Test, Virtual Machine, Kubernetes, Development Environments, SUSE Rancher, HCI
 
 Description: Learn how to set up a Harvester cluster for development and testing environments including self-service VM provisioning, resource quotas, network isolation, and template-based VM creation.
 
@@ -14,7 +14,7 @@ Harvester is well-suited for dev/test environments because it combines virtual m
 
 ## Dev/Test Architecture
 
-```
+```text
 ┌──────────────────────────────────────────────┐
 │              Harvester Cluster               │
 │                                              │
@@ -37,6 +37,7 @@ Harvester is well-suited for dev/test environments because it combines virtual m
 
 ```yaml
 # dev-network.yaml
+
 apiVersion: k8s.cni.cncf.io/v1
 kind: NetworkAttachmentDefinition
 metadata:
@@ -246,5 +247,5 @@ Use Rancher to provision ephemeral K3s clusters on Harvester VMs for integration
 ## Best Practices
 
 - Create isolated VLANs per development team so test workloads cannot interfere with each other or with production networks.
-- Implement automated VM cleanup for idle or old VMs — storage costs accumulate quickly when developers forget to delete test VMs.
-- Use VM templates for common OS images and pre-install developer tools in the base images — this reduces VM provisioning time from minutes to seconds.
+- Implement automated VM cleanup for idle or old VMs - storage costs accumulate quickly when developers forget to delete test VMs.
+- Use VM templates for common OS images and pre-install developer tools in the base images - this reduces VM provisioning time from minutes to seconds.

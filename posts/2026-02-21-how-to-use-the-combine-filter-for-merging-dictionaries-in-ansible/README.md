@@ -16,6 +16,7 @@ This is one of the most practically useful filters in Ansible, and understanding
 
 ```yaml
 # Merge two dictionaries - second dict overrides first on conflicts
+
 - name: Basic combine example
   ansible.builtin.debug:
     msg: "{{ dict_a | combine(dict_b) }}"

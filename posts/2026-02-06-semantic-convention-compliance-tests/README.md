@@ -18,6 +18,7 @@ The OpenTelemetry specification defines required and optional attributes for eac
 
 ```python
 # semantic_rules.py
+
 RULES = {
     "http.server": {
         "required": [

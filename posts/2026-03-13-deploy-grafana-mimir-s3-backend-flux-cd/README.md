@@ -29,6 +29,7 @@ Encrypt this Secret with SOPS before committing to your Git repository.
 
 ```yaml
 # clusters/my-cluster/mimir/s3-secret.yaml
+
 apiVersion: v1
 kind: Secret
 metadata:

@@ -1,4 +1,4 @@
-# How to Deploy Tempo on Rancher for Trace Storage
+# How to Deploy Tempo on Rancher for Trace Storage - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Deploy Grafana Tempo on Rancher for cost-effective, scalable distri
 
 ## Introduction
 
-Grafana Tempo is a distributed tracing backend that stores traces in object storage (S3, GCS, Azure Blob) at minimal cost. Unlike Jaeger or Zipkin, Tempo doesn't index traces for ad-hoc search—instead, it uses trace IDs from logs and metrics to look up specific traces. This guide covers deploying Tempo on Rancher with the Grafana LGTM stack.
+Grafana Tempo is a distributed tracing backend that stores traces in object storage (S3, GCS, Azure Blob) at minimal cost. Unlike Jaeger or Zipkin, Tempo doesn't index traces for ad-hoc search-instead, it uses trace IDs from logs and metrics to look up specific traces. This guide covers deploying Tempo on Rancher with the Grafana LGTM stack.
 
 ## Prerequisites
 
@@ -23,6 +23,7 @@ For on-premises deployments without cloud object storage:
 
 ```bash
 # Deploy MinIO for Tempo backend
+
 helm repo add minio https://charts.min.io/
 helm install minio minio/minio \
   --namespace observability \

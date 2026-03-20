@@ -18,6 +18,7 @@ Start by measuring how much CPU the sidecar is actually using:
 
 ```bash
 # Current CPU usage per container
+
 kubectl top pod <pod-name> -n production --containers
 
 # CPU usage across all sidecars in a namespace

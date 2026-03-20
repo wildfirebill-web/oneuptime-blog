@@ -23,6 +23,7 @@ Before configuring WPA3, verify your hardware and driver support it:
 
 ```bash
 # Check if your WiFi adapter supports WPA3 (SAE)
+
 iw phy phy0 info | grep -A 30 "Supported interface modes"
 iw phy phy0 info | grep -i "sae\|wpa3"
 

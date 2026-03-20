@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Cisco, VRRP, IPv4, Gateway Redundancy, IOS, High Availability, Standards
+Tags: Cisco, VRRP, IPv4, Gateway Redundancy, IOS, High Availability, Standard
 
 Description: Configure Virtual Router Redundancy Protocol (VRRP) on Cisco IOS routers for standards-based IPv4 gateway redundancy, with priority, preemption, and object tracking.
 
@@ -55,7 +55,7 @@ show vrrp interface GigabitEthernet0/0
 ## Object Tracking Integration
 
 ```cisco
-! Track WAN uplink — reduce priority if it goes down
+! Track WAN uplink - reduce priority if it goes down
 track 1 interface GigabitEthernet0/1 line-protocol
 
 interface GigabitEthernet0/0
@@ -67,7 +67,7 @@ interface GigabitEthernet0/0
 ## Multi-Group VRRP for Load Sharing
 
 ```cisco
-! Router A — Master for Group 1 (VLAN 10), Backup for Group 2 (VLAN 20)
+! Router A - Master for Group 1 (VLAN 10), Backup for Group 2 (VLAN 20)
 interface GigabitEthernet0/0.10
  encapsulation dot1Q 10
  ip address 10.1.10.2 255.255.255.0

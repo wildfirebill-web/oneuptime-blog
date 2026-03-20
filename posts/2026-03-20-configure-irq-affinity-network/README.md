@@ -19,6 +19,7 @@ Pinning different NIC queue IRQs to different CPU cores:
 
 ```bash
 # List all IRQs and their associated devices
+
 cat /proc/interrupts | grep eth0
 
 # Output:

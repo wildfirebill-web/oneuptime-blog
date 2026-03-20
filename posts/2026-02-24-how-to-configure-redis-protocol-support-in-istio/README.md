@@ -316,6 +316,7 @@ Common debugging steps:
 
 ```bash
 # Check protocol detection
+
 istioctl x describe service redis -n default
 
 # Check listener config

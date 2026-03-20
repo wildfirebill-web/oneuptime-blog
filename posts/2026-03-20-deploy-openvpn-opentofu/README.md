@@ -138,6 +138,7 @@ resource "aws_security_group" "openvpn" {
 
 ```hcl
 # Add route to VPN server for private subnets that need to route back to VPN clients
+
 resource "aws_route" "vpn_return" {
   for_each               = toset(var.private_route_table_ids)
   route_table_id         = each.value

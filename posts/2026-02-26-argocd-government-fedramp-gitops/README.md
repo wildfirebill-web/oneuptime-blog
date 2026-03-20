@@ -31,6 +31,7 @@ You need to build ArgoCD with BoringCrypto (Go's FIPS-validated crypto module):
 
 ```yaml
 # Dockerfile.fips for ArgoCD with FIPS-compliant crypto
+
 FROM golang:1.22-bullseye AS builder
 
 # Enable FIPS-compliant BoringCrypto

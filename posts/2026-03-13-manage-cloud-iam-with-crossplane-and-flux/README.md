@@ -27,6 +27,7 @@ This guide demonstrates managing AWS IAM roles and policies using Crossplane's `
 
 ```yaml
 # infrastructure/iam/policies/s3-read-policy.yaml
+
 apiVersion: iam.aws.upbound.io/v1beta1
 kind: Policy
 metadata:

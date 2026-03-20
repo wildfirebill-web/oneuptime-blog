@@ -20,6 +20,7 @@ By default, `podman stats` streams updates continuously:
 
 ```bash
 # Start test containers
+
 podman run -d --name web nginx:latest
 podman run -d --name app python:3 python -c "
 import time

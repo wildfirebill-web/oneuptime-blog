@@ -24,6 +24,7 @@ Start with your `ansible.cfg` file. These settings make a massive difference at 
 
 ```ini
 # ansible.cfg
+
 # Performance-tuned configuration for large inventories
 [defaults]
 forks = 50

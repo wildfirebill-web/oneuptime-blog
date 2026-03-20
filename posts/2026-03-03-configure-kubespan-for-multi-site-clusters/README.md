@@ -44,6 +44,7 @@ When creating a multi-site cluster, generate the base configuration with KubeSpa
 
 ```bash
 # Generate config with KubeSpan enabled
+
 talosctl gen config multi-site-cluster https://203.0.113.10:6443 \
   --with-kubespan \
   --config-patch='[{"op": "add", "path": "/machine/network/kubespan/advertiseKubernetesNetworks", "value": true}]'

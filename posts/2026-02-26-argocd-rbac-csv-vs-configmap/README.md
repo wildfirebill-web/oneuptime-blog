@@ -130,6 +130,7 @@ You can actually use both inline and external policies together. ArgoCD merges t
 
 ```yaml
 # argocd-rbac-cm with inline policy
+
 data:
   policy.csv: |
     # Core policies

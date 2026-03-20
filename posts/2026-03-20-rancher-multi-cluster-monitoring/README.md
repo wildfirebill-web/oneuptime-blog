@@ -1,4 +1,4 @@
-# How to Set Up Multi-Cluster Monitoring in Rancher
+# How to Set Up Multi-Cluster Monitoring in Rancher - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -27,6 +27,7 @@ This guide covers Option B (federation) and Option C (Thanos).
 
 ```bash
 # In Rancher UI: Cluster → Monitoring → Install (Rancher Monitoring)
+
 # Or via Helm for each cluster:
 
 helm repo add rancher-charts https://charts.rancher.io
@@ -44,7 +45,7 @@ for cluster_kubeconfig in /tmp/kc-cluster-*.yaml; do
 done
 ```
 
-## Step 2: Option B — Set Up Prometheus Federation
+## Step 2: Option B - Set Up Prometheus Federation
 
 On the central monitoring cluster, configure federation:
 
@@ -91,7 +92,7 @@ kubectl patch prometheus -n cattle-monitoring-system rancher-monitoring-promethe
   --patch '{"spec":{"additionalScrapeConfigs":{"name":"additional-scrape-configs","key":"scrape-configs.yaml"}}}'
 ```
 
-## Step 3: Option C — Set Up Thanos for Long-Term Storage
+## Step 3: Option C - Set Up Thanos for Long-Term Storage
 
 ```bash
 # On each downstream cluster, configure Thanos Sidecar
@@ -112,7 +113,7 @@ kubectl patch prometheus -n cattle-monitoring-system rancher-monitoring-promethe
 ```
 
 ```yaml
-# thanos-objstore-secret — store metrics in S3
+# thanos-objstore-secret - store metrics in S3
 type: S3
 config:
   bucket: my-thanos-metrics

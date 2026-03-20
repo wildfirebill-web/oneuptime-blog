@@ -75,6 +75,7 @@ You can fix the stuck release by patching the latest Helm secret to change its s
 
 ```bash
 # List all release secrets
+
 kubectl get secrets -n production -l owner=helm,name=my-app
 
 # Delete the stuck pending release secret

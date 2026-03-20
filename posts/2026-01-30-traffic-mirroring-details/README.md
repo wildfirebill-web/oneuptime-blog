@@ -360,6 +360,7 @@ For production deployments, NGINX provides built-in mirroring support with minim
 
 ```nginx
 # nginx.conf - Traffic mirroring configuration
+
 upstream primary_backend {
     server primary-service:8080;
     keepalive 32;

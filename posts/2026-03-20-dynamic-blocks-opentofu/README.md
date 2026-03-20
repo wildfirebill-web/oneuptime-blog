@@ -14,6 +14,7 @@ Dynamic blocks allow you to generate multiple instances of a nested block within
 
 ```hcl
 # dynamic "block_name" {
+
 #   for_each = collection
 #   content {
 #     # Use iterator.key and iterator.value

@@ -41,6 +41,7 @@ Exclusive queues can only be accessed by the connection that created them:
 import pika
 
 # Connection 1 creates an exclusive queue
+
 connection1 = pika.BlockingConnection(
     pika.ConnectionParameters('localhost')
 )

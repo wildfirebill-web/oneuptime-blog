@@ -8,7 +8,7 @@ Description: Learn how to create and configure a Docker container using the Port
 
 ## Introduction
 
-One of Portainer's most approachable features is its web-based container creation interface. Whether you're new to Docker or a seasoned engineer who prefers a GUI for quick tasks, Portainer's container creation wizard makes it easy to configure every aspect of a container — from image and ports to volumes, environment variables, and resource limits.
+One of Portainer's most approachable features is its web-based container creation interface. Whether you're new to Docker or a seasoned engineer who prefers a GUI for quick tasks, Portainer's container creation wizard makes it easy to configure every aspect of a container - from image and ports to volumes, environment variables, and resource limits.
 
 ## Prerequisites
 
@@ -29,12 +29,13 @@ On the container creation form:
 
 - **Name**: Enter a meaningful name (e.g., `my-nginx`). Container names must be unique on the host.
 - **Image**: Enter the image name, such as:
-  - `nginx:latest` — latest Nginx from Docker Hub
-  - `postgres:15-alpine` — PostgreSQL 15 Alpine
-  - `myregistry.example.com/myapp:2.0` — a private registry image
+  - `nginx:latest` - latest Nginx from Docker Hub
+  - `postgres:15-alpine` - PostgreSQL 15 Alpine
+  - `myregistry.example.com/myapp:2.0` - a private registry image
 
-```
+```text
 # Examples:
+
 Image: nginx:alpine
 Image: redis:7-alpine
 Image: myorg/myapp:v2.1.0
@@ -64,7 +65,7 @@ Under the **Volumes** tab:
 - Choose a **Volume** from the dropdown or enter a host path for a bind mount.
 - Set **Read/Write** mode.
 
-```
+```text
 # Bind mount example:
 Host path:       /data/nginx/html
 Container path:  /usr/share/nginx/html
@@ -80,7 +81,7 @@ Mode:            Read/Write
 
 Under the **Env** tab, add environment variables:
 
-```
+```text
 # Key-value pairs
 POSTGRES_DB=myapp
 POSTGRES_USER=appuser
@@ -94,10 +95,10 @@ You can also click **Load variables from .env file** to upload a file.
 
 Under the **Restart policy** dropdown, select:
 
-- **No** — Container does not restart automatically.
-- **Always** — Always restart the container.
-- **On failure** — Restart only if the container exits with a non-zero code.
-- **Unless stopped** — Always restart unless explicitly stopped.
+- **No** - Container does not restart automatically.
+- **Always** - Always restart the container.
+- **On failure** - Restart only if the container exits with a non-zero code.
+- **Unless stopped** - Always restart unless explicitly stopped.
 
 For production services, select **Always** or **Unless stopped**.
 
@@ -106,7 +107,7 @@ For production services, select **Always** or **Unless stopped**.
 Under the **Resources** tab:
 
 - **Memory reservation**: Soft limit (e.g., 256 MB)
-- **Memory limit**: Hard limit (e.g., 512 MB) — container is killed if exceeded
+- **Memory limit**: Hard limit (e.g., 512 MB) - container is killed if exceeded
 - **CPU limit**: Maximum CPU usage (e.g., `0.5` = half a core)
 
 ## Step 8: Deploy the Container

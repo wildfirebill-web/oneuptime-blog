@@ -26,6 +26,7 @@ Flux controllers expose Prometheus metrics on port 8080:
 
 ```yaml
 # ServiceMonitor for all Flux controllers
+
 apiVersion: monitoring.coreos.com/v1
 kind: ServiceMonitor
 metadata:

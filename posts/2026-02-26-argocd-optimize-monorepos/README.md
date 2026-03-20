@@ -91,6 +91,7 @@ For monorepos especially, shallow clones make a huge difference:
 
 ```yaml
 # argocd-cmd-params-cm ConfigMap
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

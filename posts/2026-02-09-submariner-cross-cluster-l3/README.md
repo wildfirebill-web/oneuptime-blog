@@ -53,6 +53,7 @@ For this guide, I'll use two clusters:
 
 ```bash
 # Cluster A
+
 Pod CIDR: 10.244.0.0/16
 Service CIDR: 10.96.0.0/16
 Gateway Node: 203.0.113.10

@@ -22,6 +22,7 @@ Create a consistent labeling strategy for backup operations:
 
 ```yaml
 # Standard labels for backup selection
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

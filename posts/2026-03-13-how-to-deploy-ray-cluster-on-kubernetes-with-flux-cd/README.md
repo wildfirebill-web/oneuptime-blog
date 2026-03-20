@@ -27,6 +27,7 @@ In this guide you will deploy the KubeRay operator using Flux CD, create a RayCl
 
 ```yaml
 # clusters/production/sources/kuberay.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

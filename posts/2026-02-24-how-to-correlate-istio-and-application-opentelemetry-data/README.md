@@ -64,6 +64,7 @@ from opentelemetry.trace.propagation import TraceContextTextMapPropagator
 from opentelemetry.sdk.resources import Resource
 
 # Configure propagators for both W3C and B3
+
 set_global_textmap(CompositePropagator([
     TraceContextTextMapPropagator(),
     B3MultiFormat(),
@@ -261,7 +262,7 @@ request_counter = meter.create_counter(
 request_counter.add(1, {"endpoint": "/orders", "method": "POST"})
 ```
 
-## Resource Attribute Alignment
+Resource Attribute Alignment
 
 For correlation to work well in backends like Grafana, resource attributes should be consistent between Istio and application telemetry:
 

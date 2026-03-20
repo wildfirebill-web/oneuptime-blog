@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: cert-manager, Kubernetes, IPv6, TLS, Let's Encrypt, ACME, Helm
+Tags: Cert-Manager, Kubernetes, IPv6, TLS, Let's Encrypt, ACME, Helm
 
 Description: Deploy and configure cert-manager in an IPv6-enabled Kubernetes cluster to automatically provision and renew TLS certificates for your services.
 
@@ -16,6 +16,7 @@ Verify your Kubernetes cluster has IPv6 networking enabled:
 
 ```bash
 # Check node IPv6 addresses
+
 kubectl get nodes -o wide
 
 # Verify pod IPv6 CIDR is configured

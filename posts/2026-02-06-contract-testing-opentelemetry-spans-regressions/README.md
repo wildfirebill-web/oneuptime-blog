@@ -226,6 +226,7 @@ from opentelemetry.sdk.trace import TracerProvider
 from opentelemetry.sdk.trace.export.in_memory import InMemorySpanExporter
 
 # Use an in-memory exporter to capture spans during tests
+
 exporter = InMemorySpanExporter()
 
 @pytest.fixture(autouse=True)

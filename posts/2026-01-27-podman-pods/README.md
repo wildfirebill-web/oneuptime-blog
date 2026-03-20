@@ -52,6 +52,7 @@ graph TB
 
 ```bash
 # Create an empty pod named "my-app"
+
 # The pod is created with a pause container that holds the namespaces
 podman pod create --name my-app
 
@@ -665,7 +666,7 @@ podman healthcheck run webapp-healthy
 podman inspect webapp-healthy --format '{{.State.Health.Status}}'
 ```
 
-### Resource Management
+Resource Management
 
 ```bash
 # Set resource limits at pod level

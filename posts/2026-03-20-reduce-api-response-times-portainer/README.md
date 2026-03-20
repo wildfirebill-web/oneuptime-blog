@@ -1,4 +1,4 @@
-# How to Reduce API Response Times in Portainer
+# How to Reduce API Response Times in Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -14,6 +14,7 @@ Slow Portainer API responses affect both the UI experience and CI/CD pipelines t
 
 ```bash
 # Baseline measurement - measure key API endpoints
+
 PORTAINER_URL="https://portainer.example.com"
 TOKEN="your_api_token"
 
@@ -171,7 +172,7 @@ volumes:
 
 ## Step 5: Reduce Docker API Latency
 
-Portainer proxies Docker API calls — if the Docker daemon is slow, Portainer is slow:
+Portainer proxies Docker API calls - if the Docker daemon is slow, Portainer is slow:
 
 ```bash
 # Check Docker daemon API response time directly

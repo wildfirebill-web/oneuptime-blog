@@ -522,6 +522,7 @@ defmodule MyAppWeb.ChannelMetrics do
 end
 
 # In application.ex
+
 MyAppWeb.ChannelMetrics.setup()
 ```
 

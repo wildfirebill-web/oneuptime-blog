@@ -12,6 +12,7 @@ This guide walks through creating a production-ready web server on Hetzner Cloud
 
 ```hcl
 # versions.tf
+
 terraform {
   required_providers {
     hcloud = {

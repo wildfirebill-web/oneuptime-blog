@@ -24,6 +24,7 @@ Create a ServiceAccount with appropriate permissions:
 
 ```yaml
 # serviceaccount.yaml
+
 apiVersion: v1
 kind: ServiceAccount
 metadata:

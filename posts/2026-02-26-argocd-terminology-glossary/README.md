@@ -132,9 +132,9 @@ A health status indicating that a resource is in the process of becoming healthy
 
 A health status indicating that a resource is intentionally paused. For example, a CronJob that is suspended or an Argo Rollout paused during analysis.
 
-## Resource Terminology
+Resource Terminology
 
-### Resource Hook
+Resource Hook
 
 A mechanism for running tasks at specific points during the sync lifecycle. Hooks are annotated with `argocd.argoproj.io/hook` and can be PreSync, Sync, PostSync, or SyncFail.
 
@@ -158,7 +158,7 @@ Controls when hook resources are cleaned up. Options: `HookSucceeded` (delete af
 
 A Kubernetes mechanism used by ArgoCD to control deletion behavior. The `resources-finalizer.argocd.argoproj.io` finalizer ensures that deleting an Application also deletes its managed Kubernetes resources.
 
-### Resource Tracking
+Resource Tracking
 
 How ArgoCD identifies which resources belong to which Application. Can use labels, annotations, or both. The tracking method affects how ArgoCD discovers and manages resources.
 

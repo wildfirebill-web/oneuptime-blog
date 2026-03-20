@@ -54,6 +54,7 @@ npx react-native init AuthFlowDemo --template react-native-template-typescript
 cd AuthFlowDemo
 
 # Install React Navigation dependencies
+
 npm install @react-navigation/native @react-navigation/native-stack @react-navigation/bottom-tabs
 npm install react-native-screens react-native-safe-area-context
 

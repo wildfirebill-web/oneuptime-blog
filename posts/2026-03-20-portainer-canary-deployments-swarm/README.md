@@ -1,8 +1,8 @@
-# How to Implement Canary Deployments with Portainer on Swarm
+# How to Implement Canary Deployments with Portainer on Swarm - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Canary Deployment, Docker Swarm, Zero Downtime, Traefik, CI/CD
+Tags: Portainer, Canary Deployments, Docker Swarm, Zero Downtime, Traefik, CI/CD
 
 Description: Learn how to implement canary deployments with Portainer on Docker Swarm to gradually roll out new versions to a small percentage of traffic before full release.
 
@@ -78,6 +78,7 @@ Increase canary traffic over time as confidence grows:
 
 ```bash
 # Phase 1: 10% canary
+
 # Set: stable weight=90, canary weight=10
 
 # Phase 2: After 30 minutes with no errors, increase to 30%
@@ -110,7 +111,7 @@ while true; do
   echo "Canary error rate: $ERROR_RATE"
 
   if (( $(echo "$ERROR_RATE > $THRESHOLD_ERROR_RATE" | bc -l) )); then
-    echo "ERROR RATE TOO HIGH — rolling back canary"
+    echo "ERROR RATE TOO HIGH - rolling back canary"
     # Remove canary weights and route 100% to stable
     docker service update \
       --label-add "traefik.http.services.weighted-api.weighted.services[0].weight=100" \

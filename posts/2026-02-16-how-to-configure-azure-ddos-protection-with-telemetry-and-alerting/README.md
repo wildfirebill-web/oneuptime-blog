@@ -34,6 +34,7 @@ For any production workload, DDoS Network Protection is worth the investment. Th
 
 ```bash
 # Create a DDoS Protection Plan
+
 az network ddos-protection create \
   --resource-group myResourceGroup \
   --name myDDoSPlan \

@@ -1,4 +1,4 @@
-# How to Deploy Portainer on Vultr Cloud
+# How to Deploy Portainer on Vultr Cloud - Part 3
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -33,6 +33,7 @@ Vultr offers 32 global locations, competitive pricing, and simple deployment opt
 
 ```bash
 # Install CLI
+
 pip install vultr-cli  # or download from GitHub
 
 # Create instance
@@ -51,7 +52,7 @@ vultr-cli instance create \
 3. Name: `portainer-fw`
 4. Add inbound rules:
 
-```
+```text
 Protocol  Port   Source
 TCP       22     Your IP/32
 TCP       9000   Your IP/32

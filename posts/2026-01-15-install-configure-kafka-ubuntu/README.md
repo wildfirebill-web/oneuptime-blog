@@ -23,6 +23,7 @@ Kafka requires Java:
 
 ```bash
 # Install OpenJDK 11
+
 sudo apt update
 sudo apt install openjdk-11-jdk -y
 

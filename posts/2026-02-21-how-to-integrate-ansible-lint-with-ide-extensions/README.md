@@ -18,6 +18,7 @@ VS Code has the best ansible-lint integration thanks to the official Ansible ext
 
 ```bash
 # Install the Ansible extension from the command line
+
 code --install-extension redhat.ansible
 ```
 

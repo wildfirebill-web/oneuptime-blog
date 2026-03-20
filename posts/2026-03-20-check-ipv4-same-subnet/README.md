@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Python, IPv4, Subnet, Networking, ipaddress, CIDR
+Tags: Python, IPv4, Subnets, Networking, Ipaddress, CIDR
 
 Description: Learn how to determine whether two IPv4 addresses belong to the same subnet in Python, using the ipaddress module and bitwise masking with a given prefix length or subnet mask.
 

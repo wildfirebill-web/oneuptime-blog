@@ -26,6 +26,7 @@ In Portainer navigate to **Configs** (or use secrets in Swarm mode). Create the 
 
 ```yaml
 # prometheus.yml
+
 global:
   scrape_interval: 15s
   evaluation_interval: 15s

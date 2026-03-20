@@ -38,6 +38,7 @@ Build a dedicated migration container that contains your migration scripts and t
 
 ```yaml
 # docker/migrations/Dockerfile
+
 # Example Dockerfile for a migration container
 # FROM your-base-image
 # COPY migrations/ /migrations/

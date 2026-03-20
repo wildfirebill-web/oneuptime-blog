@@ -31,6 +31,7 @@ Before starting, gather this information from your AD administrator:
 
 ```bash
 # Test connectivity to your AD domain controller
+
 # Run this from a machine that can reach AD
 openssl s_client -connect ad.company.com:636 < /dev/null 2>/dev/null | \
     openssl x509 -noout -subject -issuer

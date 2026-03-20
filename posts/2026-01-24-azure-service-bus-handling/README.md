@@ -58,6 +58,7 @@ flowchart LR
 
 ```bash
 # Create resource group
+
 az group create --name rg-messaging --location eastus
 
 # Create Service Bus namespace (Standard or Premium)

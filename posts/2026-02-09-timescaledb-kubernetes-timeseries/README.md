@@ -29,6 +29,7 @@ Create a values file for your production deployment:
 
 ```yaml
 # timescaledb-values.yaml
+
 replicaCount: 3
 
 image:

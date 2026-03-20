@@ -37,6 +37,7 @@ graph TB
 
 ```bash
 # Enable the SAP-specific repositories
+
 sudo subscription-manager repos \
   --enable=rhel-9-for-x86_64-sap-solutions-rpms \
   --enable=rhel-9-for-x86_64-sap-netweaver-rpms

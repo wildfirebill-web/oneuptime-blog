@@ -16,6 +16,7 @@ Determine if you are using hardware RAID, firmware (fake) RAID, or software RAID
 
 ```bash
 # Check for Linux software RAID (mdadm)
+
 cat /proc/mdstat
 
 # Check for device-mapper RAID (dmraid/fake RAID)

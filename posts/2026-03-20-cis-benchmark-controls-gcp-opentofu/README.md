@@ -11,10 +11,11 @@ The CIS GCP Foundations Benchmark provides security recommendations for GCP. Ope
 ## Section 1: IAM
 
 ```hcl
-# CIS 1.1 — Avoid using corporate login credentials (service accounts for automation)
+# CIS 1.1 - Avoid using corporate login credentials (service accounts for automation)
+
 # Enforced via organization policy
 
-# CIS 1.4 — Ensure that service account keys are rotated within 90 days
+# CIS 1.4 - Ensure that service account keys are rotated within 90 days
 # This is enforced via an organization policy constraint
 resource "google_organization_policy" "disable_sa_key_creation" {
   org_id     = data.google_organization.main.org_id
@@ -25,14 +26,14 @@ resource "google_organization_policy" "disable_sa_key_creation" {
   }
 }
 
-# CIS 1.5 — Ensure that service accounts do not have admin privileges
+# CIS 1.5 - Ensure that service accounts do not have admin privileges
 # Enforced via IAM binding reviews (detected via policy-as-code tools)
 ```
 
 ## Section 2: Logging and Monitoring
 
 ```hcl
-# CIS 2.1 — Ensure that Cloud Audit Logs are configured for all services
+# CIS 2.1 - Ensure that Cloud Audit Logs are configured for all services
 resource "google_project_iam_audit_config" "all_services" {
   project = var.project_id
   service = "allServices"
@@ -48,7 +49,7 @@ resource "google_project_iam_audit_config" "all_services" {
   }
 }
 
-# CIS 2.2 — Ensure that sinks are configured for all log entries
+# CIS 2.2 - Ensure that sinks are configured for all log entries
 resource "google_logging_project_sink" "all_logs" {
   name        = "all-logs-sink"
   project     = var.project_id
@@ -58,7 +59,7 @@ resource "google_logging_project_sink" "all_logs" {
   unique_writer_identity = true
 }
 
-# CIS 2.11 — Ensure that the log metric filter and alerts exist for project ownership changes
+# CIS 2.11 - Ensure that the log metric filter and alerts exist for project ownership changes
 resource "google_logging_metric" "project_ownership" {
   name   = "project-ownership-changes"
   project = var.project_id
@@ -91,7 +92,7 @@ resource "google_monitoring_alert_policy" "project_ownership" {
 ## Section 3: Networking
 
 ```hcl
-# CIS 3.1 — Ensure the default network does not exist in projects
+# CIS 3.1 - Ensure the default network does not exist in projects
 resource "google_compute_project_metadata" "disable_default_network" {
   # This is enforced via organization policy
 }
@@ -103,7 +104,7 @@ resource "google_organization_policy" "skip_default_network" {
   boolean_policy { enforced = true }
 }
 
-# CIS 3.6 — Ensure SSH access from the internet is blocked
+# CIS 3.6 - Ensure SSH access from the internet is blocked
 resource "google_compute_firewall" "deny_ssh_internet" {
   name    = "deny-ssh-from-internet"
   network = google_compute_network.main.id
@@ -121,7 +122,7 @@ resource "google_compute_firewall" "deny_ssh_internet" {
 ## Section 4: Virtual Machines
 
 ```hcl
-# CIS 4.1 — Ensure that instances are not configured to use the default service account
+# CIS 4.1 - Ensure that instances are not configured to use the default service account
 # with full API access
 resource "google_compute_instance" "cis_compliant" {
   name         = "compliant-instance"
@@ -134,7 +135,7 @@ resource "google_compute_instance" "cis_compliant" {
     scopes = ["cloud-platform"]  # Use cloud-platform with fine-grained IAM
   }
 
-  # CIS 4.4 — Ensure OS login is enabled
+  # CIS 4.4 - Ensure OS login is enabled
   metadata = {
     enable-oslogin = "TRUE"
   }
@@ -143,7 +144,7 @@ resource "google_compute_instance" "cis_compliant" {
     initialize_params {
       image = "debian-cloud/debian-12"
     }
-    # CIS 4.7 — Ensure VM disks are encrypted with CMEK
+    # CIS 4.7 - Ensure VM disks are encrypted with CMEK
     kms_key_self_link = google_kms_crypto_key.vm_disk.id
   }
 }

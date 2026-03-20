@@ -8,11 +8,11 @@ Description: The IPv4 Identification field is a 16-bit value used to uniquely id
 
 ## What Is the IPv4 Identification Field?
 
-The Identification (ID) field in the IPv4 header is a 16-bit value assigned by the sender to each datagram. When a packet is fragmented during transit, all resulting fragments share the same Identification value. The receiving host uses this value—combined with the source address, destination address, and protocol—to group fragments together and reassemble the original datagram.
+The Identification (ID) field in the IPv4 header is a 16-bit value assigned by the sender to each datagram. When a packet is fragmented during transit, all resulting fragments share the same Identification value. The receiving host uses this value-combined with the source address, destination address, and protocol-to group fragments together and reassemble the original datagram.
 
 ## IPv4 Header Layout
 
-```
+```text
  0                   1                   2                   3
  0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
 +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
@@ -34,6 +34,7 @@ The following Python example uses Scapy to inspect the Identification field:
 from scapy.all import IP, ICMP, Raw, send, sniff
 
 # Craft a packet with a specific Identification value
+
 pkt = IP(dst="192.168.1.1", id=12345) / ICMP() / Raw(b"X" * 100)
 
 # Display the Identification field

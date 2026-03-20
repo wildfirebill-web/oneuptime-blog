@@ -4,15 +4,15 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: IPv4, Networking, Network Design, Multi-Site, Subnetting, Enterprise
 
-Description: Planning subnets for a multi-site network requires hierarchical address allocation, per-site blocks for route summarization, dedicated ranges for different segment types, and P2P links for inter-site WAN connections.
+Description: Planning subnets for a multi-site network requires hierarchical address allocation, per-site blocks for route summarization, dedicated ranges for different segment types, and P2P links for...
 
 ## Design Principles
 
-1. **One /16 per site** (or /20 for smaller sites) — enables route summarization.
-2. **Consistent VLAN-to-subnet mapping** — VLAN 10 = third octet .10, etc.
+1. **One /16 per site** (or /20 for smaller sites) - enables route summarization.
+2. **Consistent VLAN-to-subnet mapping** - VLAN 10 = third octet .10, etc.
 3. **Dedicated P2P block** for WAN links.
-4. **Management block** — out-of-band management IPs.
-5. **DMZ block** — separated from internal VLANs.
+4. **Management block** - out-of-band management IPs.
+5. **DMZ block** - separated from internal VLANs.
 
 ## Example: 4-Site Enterprise on 10.0.0.0/8
 
@@ -77,6 +77,7 @@ for i, (a, b) in enumerate(WAN_CONNECTIONS):
 With this design, each site advertises a single /16:
 ```bash
 # Site router: advertise only the summary
+
 # FRRouting/BGP
 router bgp 65001
   address-family ipv4 unicast

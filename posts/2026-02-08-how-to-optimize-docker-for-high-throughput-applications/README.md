@@ -20,6 +20,7 @@ Host networking eliminates the virtual network stack entirely. The container sha
 
 ```bash
 # Run with host networking - no network namespace overhead
+
 docker run -d --network host --name fast-proxy nginx:latest
 ```
 

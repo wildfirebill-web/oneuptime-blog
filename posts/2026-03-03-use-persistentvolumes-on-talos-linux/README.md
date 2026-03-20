@@ -30,6 +30,7 @@ With static provisioning, an administrator creates PVs manually:
 
 ```yaml
 # static-pv.yaml
+
 apiVersion: v1
 kind: PersistentVolume
 metadata:

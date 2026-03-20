@@ -48,6 +48,7 @@ The most common cause is that the script file lacks the execute permission bit.
 
 ```bash
 # Check current permissions
+
 ls -la myscript.sh
 # Output: -rw-r--r-- 1 user group 1234 Jan 24 10:00 myscript.sh
 #         No 'x' in permissions = cannot execute

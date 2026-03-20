@@ -26,6 +26,7 @@ The critical thing to understand is that QoS is determined by ALL containers in 
 
 ```bash
 # Check QoS class for all pods in a namespace
+
 kubectl get pods -n my-namespace -o jsonpath='{range .items[*]}{.metadata.name}{"\t"}{.status.qosClass}{"\n"}{end}'
 
 # Check QoS class specifically for pods with sidecars

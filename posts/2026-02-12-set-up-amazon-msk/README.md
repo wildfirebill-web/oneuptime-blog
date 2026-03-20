@@ -103,6 +103,7 @@ This creates an MSK configuration with tuned broker settings for production use.
 
 ```bash
 # Create a configuration file
+
 cat > kafka-config.properties << 'EOF'
 auto.create.topics.enable=false
 default.replication.factor=3

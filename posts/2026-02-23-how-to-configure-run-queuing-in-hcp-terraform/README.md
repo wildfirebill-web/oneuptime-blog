@@ -33,6 +33,7 @@ Speculative plans from pull requests do not block the queue for other run types.
 
 ```bash
 # Trigger a speculative (plan-only) run
+
 curl -s \
   --request POST \
   --header "Authorization: Bearer $TF_TOKEN" \

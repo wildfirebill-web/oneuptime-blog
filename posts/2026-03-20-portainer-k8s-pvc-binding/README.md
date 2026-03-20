@@ -23,6 +23,7 @@ PVC States:
 
 ```bash
 # Check PVC status
+
 kubectl get pvc -n production
 # NAME        STATUS    VOLUME   CAPACITY   ACCESS MODES   STORAGECLASS   AGE
 # db-data     Pending   <none>   <none>     <none>         fast-ssd       5m

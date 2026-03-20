@@ -49,6 +49,7 @@ If binlog is not configured, update your `my.cnf`:
 
 ```ini
 # my.cnf - Required settings for DMS migration
+
 [mysqld]
 log_bin = mysql-bin
 binlog_format = ROW

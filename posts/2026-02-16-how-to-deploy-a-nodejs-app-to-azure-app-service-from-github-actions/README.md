@@ -26,6 +26,7 @@ Start by creating the App Service resources:
 
 ```bash
 # Create a resource group
+
 az group create --name myAppRG --location eastus
 
 # Create an App Service plan (B1 tier for production-like testing)

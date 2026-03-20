@@ -27,6 +27,7 @@ Check for eviction events:
 
 ```bash
 # Find evicted pods
+
 kubectl get pods -A --field-selector=status.phase=Failed | grep Evicted
 
 # Check events for eviction reasons

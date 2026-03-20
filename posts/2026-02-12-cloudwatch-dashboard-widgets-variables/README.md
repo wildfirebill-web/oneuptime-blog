@@ -290,6 +290,7 @@ A complete dashboard definition with variables might look like this in your Clou
 
 ```bash
 # Deploy a dashboard with variables
+
 aws cloudwatch put-dashboard \
   --dashboard-name "app-overview" \
   --dashboard-body file://dashboard-with-vars.json

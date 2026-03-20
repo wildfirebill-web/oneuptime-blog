@@ -14,13 +14,13 @@ Wireshark is the most powerful tool for deep-diving into broadcast traffic. Its 
 
 In Wireshark's capture filter field, enter:
 
-```
+```text
 ether broadcast
 ```
 
 Or, to also capture multicast:
 
-```
+```text
 ether multicast
 ```
 
@@ -30,8 +30,9 @@ This limits the capture to only broadcast and multicast frames, reducing capture
 
 Once captured, use these display filters in the filter bar:
 
-```
+```text
 # All Ethernet broadcasts
+
 eth.dst == ff:ff:ff:ff:ff:ff
 
 # ARP broadcasts only
@@ -52,7 +53,7 @@ ssdp
 
 ## Finding the Top Broadcast Senders
 
-Navigate to **Statistics > Endpoints** and click the **Ethernet** tab. Sort by **Packets** in the **TX** column — the highest senders are your broadcast sources.
+Navigate to **Statistics > Endpoints** and click the **Ethernet** tab. Sort by **Packets** in the **TX** column - the highest senders are your broadcast sources.
 
 For IP-level breakdown, check **Statistics > Conversations > IPv4** and filter for destination `255.255.255.255`.
 
@@ -72,7 +73,7 @@ Navigate to **Statistics > Protocol Hierarchy** to see which protocols account f
 
 Apply a display filter for the top offending protocol:
 
-```
+```text
 arp
 ```
 
@@ -80,11 +81,11 @@ Then navigate to **Statistics > Conversations > Ethernet**. The source MAC sendi
 
 To confirm it is gratuitous or anomalous:
 
-```
+```text
 arp.opcode == 1 && arp.src.proto_ipv4 == arp.dst.proto_ipv4
 ```
 
-This filter matches **gratuitous ARP requests** — a host announcing its own IP, which could indicate IP address conflicts or a loop.
+This filter matches **gratuitous ARP requests** - a host announcing its own IP, which could indicate IP address conflicts or a loop.
 
 ## Exporting Broadcast Statistics to CSV
 

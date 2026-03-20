@@ -26,6 +26,7 @@ This guide provides a complete runbook with decision trees, diagnostic commands,
 
 ```bash
 # Determine what the reporter is experiencing
+
 # Symptom A: Traffic is flowing that should be blocked
 # Symptom B: Traffic is blocked that should be allowed
 

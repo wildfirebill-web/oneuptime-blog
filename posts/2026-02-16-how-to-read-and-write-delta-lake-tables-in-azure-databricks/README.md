@@ -35,6 +35,7 @@ The most common approach is to write a DataFrame as a Delta table.
 # create_delta_table.py - Create a Delta table from a DataFrame
 
 # Create sample data
+
 data = [
     (1, "Alice", "Engineering", 95000),
     (2, "Bob", "Marketing", 82000),

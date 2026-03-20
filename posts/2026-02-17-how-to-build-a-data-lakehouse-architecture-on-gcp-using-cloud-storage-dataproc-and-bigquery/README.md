@@ -43,6 +43,7 @@ Create separate buckets for each layer of the lakehouse:
 
 ```bash
 # Create buckets for each data layer
+
 gcloud storage buckets create gs://myproject-lakehouse-bronze \
   --location=us-central1 \
   --uniform-bucket-level-access

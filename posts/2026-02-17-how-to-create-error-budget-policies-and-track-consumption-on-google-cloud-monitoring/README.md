@@ -32,6 +32,7 @@ First, set up an SLO that serves as the basis for error budget tracking.
 
 ```bash
 # Create an availability SLO with 30-day rolling window
+
 gcloud monitoring slos create \
     --service=my-api-service \
     --slo-id=main-availability-slo \

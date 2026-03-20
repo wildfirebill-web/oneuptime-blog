@@ -16,6 +16,7 @@ At its simplest, `loop` takes a list and executes the task once for each item. T
 
 ```yaml
 # Install multiple packages in a single task using loop
+
 - name: Install required packages
   ansible.builtin.apt:
     name: "{{ item }}"

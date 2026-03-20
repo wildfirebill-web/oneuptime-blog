@@ -32,6 +32,7 @@ The Zalando Postgres Operator is a battle-tested solution for running PostgreSQL
 
 ```bash
 # Add the Zalando Helm repository
+
 helm repo add postgres-operator-charts https://opensource.zalando.com/postgres-operator/charts/postgres-operator
 helm repo update
 

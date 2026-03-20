@@ -208,6 +208,7 @@ You can manage secure files programmatically using the Azure DevOps REST API or 
 
 ```bash
 # Upload a new secure file using the Azure DevOps CLI
+
 az pipelines secure-file upload \
   --org "https://dev.azure.com/your-org" \
   --project "your-project" \

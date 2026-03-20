@@ -24,6 +24,7 @@ Good SLIs measure what users actually experience. The most common SLI types are:
 
 ```yaml
 # Example SLI definitions
+
 slis:
   availability:
     description: "Percentage of requests that succeed"

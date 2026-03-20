@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Node.js, Sockets, IPv4, Error Handling, net module, Events
+Tags: Node.js, Sockets, IPv4, Error Handling, Net Module, Events
 
 Description: Learn how to handle the most common socket errors and events in Node.js IPv4 TCP and UDP networking for robust, production-ready applications.
 
@@ -108,7 +108,7 @@ const server = net.createServer((socket) => {
 
     socket.on('error', (err) => {
         if (err.code === 'ECONNRESET') {
-            // Client disconnected without proper FIN — common in practice
+            // Client disconnected without proper FIN - common in practice
             console.log(`${addr} reset the connection (client crashed or network issue)`);
         } else {
             console.error(`${addr} socket error: ${err.code} ${err.message}`);
@@ -172,4 +172,4 @@ stateDiagram-v2
 
 ## Conclusion
 
-Always attach an `error` event listener to every socket in Node.js—unhandled error events crash the process. Use the `err.code` property to differentiate `ECONNREFUSED` (port not open), `ECONNRESET` (abrupt disconnect), `ETIMEDOUT` (firewall dropping packets), and other common errors. Call `socket.destroy()` when handling errors to ensure cleanup even if `end()` was never called.
+Always attach an `error` event listener to every socket in Node.js-unhandled error events crash the process. Use the `err.code` property to differentiate `ECONNREFUSED` (port not open), `ECONNRESET` (abrupt disconnect), `ETIMEDOUT` (firewall dropping packets), and other common errors. Call `socket.destroy()` when handling errors to ensure cleanup even if `end()` was never called.

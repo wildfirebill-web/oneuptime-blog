@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Docker, Networking, Veth, Bridge, iptables, Container Networking, Linux Networking
+Tags: Docker, Networking, veth, Bridge, iptables, Container Networking, Linux Networking
 
 Description: A hands-on guide to Docker networking internals covering veth pairs, Linux bridges, iptables rules, and how containers communicate with each other.
 
@@ -16,6 +16,7 @@ When Docker installs, it creates a Linux bridge called `docker0`. This bridge ac
 
 ```bash
 # View the docker0 bridge interface
+
 ip addr show docker0
 
 # See the bridge details

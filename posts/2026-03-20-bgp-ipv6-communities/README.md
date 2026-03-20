@@ -99,9 +99,9 @@ IXPs often define well-known communities for traffic engineering:
 
 ```bash
 ! Example: Accept routes tagged by peer with their community
-! 65002:100 = "customer routes" — prefer these
-! 65002:200 = "peer routes" — normal preference
-! 65002:300 = "upstream routes" — lower preference
+! 65002:100 = "customer routes" - prefer these
+! 65002:200 = "peer routes" - normal preference
+! 65002:300 = "upstream routes" - lower preference
 
 bgp community-list standard CUSTOMER_ROUTES permit 65002:100
 bgp community-list standard PEER_ROUTES     permit 65002:200
@@ -127,6 +127,7 @@ route-map PROCESS_IXP_ROUTES permit 99
 
 ```bash
 # Show communities on received routes
+
 vtysh -c "show bgp ipv6 unicast" | grep Community
 
 # Show detail for a specific route including communities

@@ -28,6 +28,7 @@ Start by examining exactly what ArgoCD thinks is different:
 
 ```bash
 # View the diff summary
+
 argocd app diff my-app
 
 # View diff with full context

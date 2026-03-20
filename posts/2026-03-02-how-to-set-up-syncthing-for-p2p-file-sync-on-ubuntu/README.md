@@ -16,6 +16,7 @@ The practical difference from cloud sync services: your data never touches someo
 
 ```bash
 # Add the Syncthing repository
+
 curl -s https://syncthing.net/release-key.txt | sudo gpg --dearmor -o /usr/share/keyrings/syncthing.gpg
 
 echo "deb [signed-by=/usr/share/keyrings/syncthing.gpg] https://apt.syncthing.net/ syncthing stable" | \

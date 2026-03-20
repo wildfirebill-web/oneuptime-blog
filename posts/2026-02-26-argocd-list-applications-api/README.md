@@ -16,6 +16,7 @@ The simplest call returns all applications your token has access to:
 
 ```bash
 # List all applications
+
 curl -s -k -H "Authorization: Bearer $ARGOCD_TOKEN" \
   https://argocd.example.com/api/v1/applications | jq .
 ```

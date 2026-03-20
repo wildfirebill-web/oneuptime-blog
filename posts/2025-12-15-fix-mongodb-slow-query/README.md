@@ -74,6 +74,7 @@ db.system.profile.find({
 
 ```bash
 # Find slow queries in MongoDB log
+
 grep "COMMAND" /var/log/mongodb/mongod.log | grep -E "[0-9]{4}ms"
 
 # Using mongotop to see collection activity

@@ -13,7 +13,7 @@ DHCP leases expire after a configured time. Clients attempt to renew at 50% and 
 2. The client gets an APIPA address (169.254.x.x) or no IP
 3. All network connections drop
 
-This appears as periodic, predictable disconnections — often every 1-2 hours (if the DHCP server uses short lease times).
+This appears as periodic, predictable disconnections - often every 1-2 hours (if the DHCP server uses short lease times).
 
 ## Step 1: Identify DHCP-Related Disconnections
 
@@ -22,6 +22,7 @@ Look for the pattern: disconnections at regular intervals:
 **Linux:**
 ```bash
 # Check NetworkManager logs for DHCP events
+
 journalctl -u NetworkManager --since "24 hours ago" | grep -i "dhcp\|lease\|renew\|expire"
 
 # Check DHCP lease files

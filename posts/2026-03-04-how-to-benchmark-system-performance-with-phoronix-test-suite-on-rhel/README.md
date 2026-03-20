@@ -14,6 +14,7 @@ Phoronix Test Suite (PTS) is an open-source benchmarking platform that provides 
 
 ```bash
 # Install dependencies
+
 sudo dnf install -y php-cli php-xml php-json wget
 
 # Download and install the latest Phoronix Test Suite

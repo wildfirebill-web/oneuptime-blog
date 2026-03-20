@@ -91,6 +91,7 @@ Create a custom configuration:
 
 ```yaml
 # istio-eks.yaml
+
 apiVersion: install.istio.io/v1alpha1
 kind: IstioOperator
 spec:
@@ -185,7 +186,7 @@ spec:
             service.beta.kubernetes.io/aws-load-balancer-backend-protocol: tcp
 ```
 
-## Resource Considerations for EKS
+Resource Considerations for EKS
 
 Istio adds resource overhead. Each Envoy sidecar uses roughly 50-100 MB of memory and some CPU. On EKS, plan your node sizes accordingly:
 

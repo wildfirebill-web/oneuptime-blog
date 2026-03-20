@@ -23,6 +23,7 @@ On every node:
 
 ```bash
 # Disable swap
+
 sudo swapoff -a
 sudo sed -i '/swap/d' /etc/fstab
 

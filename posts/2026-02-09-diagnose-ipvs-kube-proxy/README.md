@@ -22,6 +22,7 @@ Before troubleshooting, confirm that kube-proxy is actually running in IPVS mode
 
 ```bash
 # Check kube-proxy mode from ConfigMap
+
 kubectl -n kube-system get configmap kube-proxy -o yaml | grep mode
 
 # Check running kube-proxy pods

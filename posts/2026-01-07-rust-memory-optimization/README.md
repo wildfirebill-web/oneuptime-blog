@@ -109,6 +109,7 @@ static ALLOCATOR: CountingAllocator = CountingAllocator;
 
 ```toml
 # Cargo.toml
+
 [dependencies]
 dhat = { version = "0.3", optional = true }
 

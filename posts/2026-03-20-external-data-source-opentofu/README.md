@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Data Sources, external, Shell Scripts, Infrastructure as Code, DevOps
+Tags: OpenTofu, Data Source, External, Shell Script, Infrastructure as Code, DevOps
 
 Description: A guide to using the external data source in OpenTofu to run external programs and scripts to fetch data that isn't available through standard provider data sources.
 
@@ -48,6 +48,7 @@ data "external" "aws_account_info" {
 }
 
 # The script receives JSON on stdin with the query map
+
 # It must write a flat JSON string map to stdout
 ```
 

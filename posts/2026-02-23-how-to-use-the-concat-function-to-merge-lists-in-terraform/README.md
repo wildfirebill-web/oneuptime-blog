@@ -16,6 +16,7 @@ The `concat` function takes two or more lists as arguments and returns a single 
 
 ```hcl
 # concat(list1, list2, ...)
+
 # Merges multiple lists into one
 concat(["a", "b"], ["c", "d"], ["e"])
 # Returns: ["a", "b", "c", "d", "e"]

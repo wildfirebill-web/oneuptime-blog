@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, HCL, For_each, Sets, Infrastructure as Code
+Tags: Terraform, HCL, for_each, Sets, Infrastructure as Code
 
 Description: Learn how to use the Terraform for_each meta-argument with sets of strings to create multiple resources, understand the difference between sets and maps in for_each.
 
@@ -193,6 +193,7 @@ Use a **map** when:
 
 ```hcl
 # Set is enough - each namespace just needs a name
+
 resource "kubernetes_namespace" "this" {
   for_each = toset(["frontend", "backend", "monitoring"])
 

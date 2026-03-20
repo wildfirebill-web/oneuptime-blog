@@ -51,6 +51,7 @@ Base configuration:
 
 ```yaml
 # base/backup-storage-location.yaml
+
 apiVersion: velero.io/v1
 kind: BackupStorageLocation
 metadata:

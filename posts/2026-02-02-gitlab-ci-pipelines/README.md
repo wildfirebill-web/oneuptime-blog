@@ -32,6 +32,7 @@ Let's start with a minimal working example. This pipeline has a single job that 
 
 ```yaml
 # .gitlab-ci.yml - Minimal pipeline configuration
+
 # This file must be in the root of your repository
 
 # Define the stages in order of execution

@@ -4,11 +4,11 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: OpenTofu, Lock File, Git Conflicts, Provider Versions, Merge Conflicts, Infrastructure as Code
 
-Description: Learn how to resolve merge conflicts in the OpenTofu .terraform.lock.hcl dependency lock file when multiple team members upgrade providers simultaneously, with strategies to prevent conflicts in the future.
+Description: Learn how to resolve merge conflicts in the OpenTofu .terraform.lock.hcl dependency lock file when multiple team members upgrade providers simultaneously, with strategies to prevent conflicts in...
 
 ---
 
-Lock file conflicts occur when two branches both update provider versions. Because the lock file is auto-generated HCL with complex checksums, standard git conflict resolution doesn't work — attempting to manually merge checksums produces invalid files. The correct approach is to regenerate the lock file after resolving provider version conflicts in `providers.tf`.
+Lock file conflicts occur when two branches both update provider versions. Because the lock file is auto-generated HCL with complex checksums, standard git conflict resolution doesn't work - attempting to manually merge checksums produces invalid files. The correct approach is to regenerate the lock file after resolving provider version conflicts in `providers.tf`.
 
 ## Conflict Scenario
 
@@ -22,8 +22,9 @@ graph TD
 
 ## Understanding the Conflict
 
-```
-# .terraform.lock.hcl after merge conflict — INVALID HCL
+```hcl
+# .terraform.lock.hcl after merge conflict - INVALID HCL
+
 provider "registry.opentofu.org/hashicorp/aws" {
 <<<<<<< HEAD
   version     = "5.40.0"
@@ -51,7 +52,7 @@ provider "registry.opentofu.org/hashicorp/aws" {
 git status
 # modified: .terraform.lock.hcl (both modified)
 
-# Step 2: Resolve providers.tf first — decide which version wins
+# Step 2: Resolve providers.tf first - decide which version wins
 # Edit providers.tf to use the desired version constraint
 cat providers.tf
 
@@ -112,7 +113,7 @@ tofu plan
 ## Git Configuration to Prevent Conflicts
 
 ```bash
-# .gitattributes — mark lock file as requiring special merge handling
+# .gitattributes - mark lock file as requiring special merge handling
 # This tells git not to auto-merge the lock file
 echo '.terraform.lock.hcl merge=ours' >> .gitattributes
 
@@ -173,8 +174,8 @@ jobs:
 
 ## Best Practices
 
-- When resolving lock file conflicts, always regenerate the file with `tofu init -upgrade` rather than manually editing checksums — checksums are cryptographic hashes that must match exactly.
-- Resolve `providers.tf` version constraints before regenerating the lock file — the lock file is derived from the version constraints, not the other way around.
-- Use Renovate or Dependabot to automate provider upgrades through dedicated PRs — this serializes upgrades and prevents simultaneous version changes that cause conflicts.
-- Add `.gitattributes` to mark the lock file as requiring manual merge resolution (`merge=ours`) — this prevents git from attempting an auto-merge that produces invalid HCL.
-- In CI, explicitly check for conflict markers (`<<<<<<<`) in the lock file before running `tofu init` — a lock file with conflict markers causes confusing errors that are hard to diagnose.
+- When resolving lock file conflicts, always regenerate the file with `tofu init -upgrade` rather than manually editing checksums - checksums are cryptographic hashes that must match exactly.
+- Resolve `providers.tf` version constraints before regenerating the lock file - the lock file is derived from the version constraints, not the other way around.
+- Use Renovate or Dependabot to automate provider upgrades through dedicated PRs - this serializes upgrades and prevents simultaneous version changes that cause conflicts.
+- Add `.gitattributes` to mark the lock file as requiring manual merge resolution (`merge=ours`) - this prevents git from attempting an auto-merge that produces invalid HCL.
+- In CI, explicitly check for conflict markers (`<<<<<<<`) in the lock file before running `tofu init` - a lock file with conflict markers causes confusing errors that are hard to diagnose.

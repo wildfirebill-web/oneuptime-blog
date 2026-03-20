@@ -272,6 +272,7 @@ Set up role-based access control for different teams:
 
 ```yaml
 # Production team access
+
 apiVersion: v1
 kind: ServiceAccount
 metadata:

@@ -38,6 +38,7 @@ For Bitbucket Cloud, create an app password with repository read permissions.
 
 ```bash
 # Bitbucket Cloud: Create an app password
+
 # Navigate to: Bitbucket Settings > App passwords
 # Required permissions: Repositories - Read
 

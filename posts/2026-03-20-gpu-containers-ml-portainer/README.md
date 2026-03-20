@@ -23,6 +23,7 @@ Ensure your system meets the requirements:
 
 ```bash
 # Check available resources
+
 free -h
 nproc
 df -h

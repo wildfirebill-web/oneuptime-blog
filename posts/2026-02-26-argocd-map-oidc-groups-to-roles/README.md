@@ -21,6 +21,7 @@ ArgoCD uses a Casbin-based RBAC system with two types of rules:
 
 ```text
 # Policy: role can perform action on resource
+
 p, <role>, <resource>, <action>, <object>, <effect>
 
 # Group mapping: subject has role

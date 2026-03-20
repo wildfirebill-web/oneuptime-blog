@@ -80,6 +80,7 @@ Verify kubectl can reach your K3s cluster before proceeding.
 
 ```bash
 # Confirm connectivity to K3s cluster and view existing contexts
+
 kubectl config get-contexts
 
 # Switch to K3s context (adjust name based on your setup)

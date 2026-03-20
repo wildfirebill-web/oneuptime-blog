@@ -2,18 +2,19 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Docker, Networking, IPv4, docker network inspect, Diagnostics
+Tags: Docker, Networking, IPv4, Docker network inspect, Diagnostics
 
 Description: Use docker network inspect to view complete IPv4 configuration for Docker networks including subnet, gateway, connected containers, and IPAM details.
 
 ## Introduction
 
-`docker network inspect` provides the authoritative view of a Docker network's configuration — IPAM settings, connected containers with their IP addresses, driver options, and scope. It is the first tool to reach for when debugging container networking.
+`docker network inspect` provides the authoritative view of a Docker network's configuration - IPAM settings, connected containers with their IP addresses, driver options, and scope. It is the first tool to reach for when debugging container networking.
 
 ## Basic Inspection
 
 ```bash
 # Inspect the default bridge network
+
 docker network inspect bridge
 
 # Inspect a custom network

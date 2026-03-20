@@ -46,6 +46,7 @@ The most common error. Your GPU runs out of VRAM trying to load the model or pro
 
 ```bash
 # Check current GPU memory usage
+
 nvidia-smi
 
 # Monitor GPU memory in real-time

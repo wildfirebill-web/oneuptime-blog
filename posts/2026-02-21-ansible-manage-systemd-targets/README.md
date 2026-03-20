@@ -31,6 +31,7 @@ Here is a playbook that sets the default target across your fleet:
 
 ```yaml
 # set-default-target.yml - Ensure all production servers boot to multi-user target
+
 ---
 - name: Configure default systemd target
   hosts: production_servers

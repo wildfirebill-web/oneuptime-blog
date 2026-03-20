@@ -44,6 +44,7 @@ The Raspberry Pi's Broadcom Wi-Fi works out of the box with the `rpi_generic` Ta
 
 ```yaml
 # Machine config for Wi-Fi
+
 machine:
   network:
     interfaces:

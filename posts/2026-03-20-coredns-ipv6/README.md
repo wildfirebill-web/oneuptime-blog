@@ -14,6 +14,7 @@ CoreDNS is the default DNS provider for Kubernetes and handles both A (IPv4) and
 
 ```bash
 # Check CoreDNS pods are running
+
 kubectl -n kube-system get pods -l k8s-app=kube-dns
 
 # View CoreDNS ConfigMap
@@ -26,7 +27,7 @@ kubectl -n kube-system get svc kube-dns -o jsonpath='{.spec.clusterIPs}'
 
 ## CoreDNS Corefile for Dual-Stack
 
-```
+```text
 # Default Corefile that works with dual-stack
 .:53 {
     errors
@@ -89,7 +90,7 @@ kubectl exec dnstest -- nslookup "$SVC_IPV6"
 
 ## Configure External DNS64 Forwarder
 
-```
+```text
 # Corefile with DNS64 forwarder for IPv6-only pods
 .:53 {
     errors

@@ -59,6 +59,7 @@ Timer files are stored in `/etc/systemd/system/` for system-wide timers or `~/.c
 
 ```ini
 # /etc/systemd/system/my-task.timer
+
 # Timer unit file structure breakdown
 
 [Unit]

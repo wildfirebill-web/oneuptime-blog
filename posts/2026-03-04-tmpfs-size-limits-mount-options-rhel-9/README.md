@@ -16,6 +16,7 @@ Without a size limit, tmpfs defaults to 50% of RAM:
 
 ```bash
 # Check default tmpfs sizes
+
 df -h -t tmpfs
 ```
 

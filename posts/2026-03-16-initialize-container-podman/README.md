@@ -28,6 +28,7 @@ The container lifecycle:
 
 ```bash
 # Create a container
+
 podman create --name my-container docker.io/library/alpine:latest echo "Hello"
 
 # Check the status (should be "Created")

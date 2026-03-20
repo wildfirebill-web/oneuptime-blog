@@ -1,4 +1,4 @@
-# How to Understand the 6to4 Address Space (2002::/16)
+# How to Understand the 6to4 Address Space (2002::/16) - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -12,7 +12,7 @@ Description: Understand the 6to4 address space 2002::/16 (RFC 3056) that encodes
 
 ## 6to4 Address Format
 
-```
+```text
 2002:AABB:CCDD::/48
   2002    = 6to4 prefix
   AABB    = first 16 bits of IPv4 address (hex)
@@ -57,6 +57,7 @@ def is_6to4(addr: str) -> bool:
 
 ```bash
 # Disable 6to4 on Linux
+
 # Remove any 6to4 tunnel interfaces
 ip tunnel del tun6to4 2>/dev/null
 

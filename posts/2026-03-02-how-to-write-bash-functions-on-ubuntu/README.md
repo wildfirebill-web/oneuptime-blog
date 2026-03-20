@@ -16,6 +16,7 @@ Bash supports two syntax styles for defining functions:
 
 ```bash
 # Style 1: function keyword (explicit, clear)
+
 function greet() {
     echo "Hello, $1"
 }

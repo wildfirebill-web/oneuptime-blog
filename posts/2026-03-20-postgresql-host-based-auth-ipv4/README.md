@@ -14,6 +14,7 @@ PostgreSQL host-based authentication combines `postgresql.conf` (binding) and `p
 
 ```bash
 # Step 1: Configure listen_addresses
+
 sudo nano /etc/postgresql/16/main/postgresql.conf
 # listen_addresses = '*'    # Or specific IP: '10.0.0.5'
 

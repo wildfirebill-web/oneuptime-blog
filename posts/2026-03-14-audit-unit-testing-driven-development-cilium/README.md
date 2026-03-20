@@ -30,6 +30,7 @@ Begin by cataloging all tests and their purposes:
 
 ```bash
 # List all test functions
+
 grep -n "^func Test" proxylib/myprotocol/*_test.go | sort
 
 # Count tests by category

@@ -52,6 +52,7 @@ Here is how to create a read replica in the same region:
 
 ```bash
 # Create a read replica in the same region as the source
+
 az mysql flexible-server replica create \
   --resource-group myResourceGroup \
   --name my-mysql-replica-1 \

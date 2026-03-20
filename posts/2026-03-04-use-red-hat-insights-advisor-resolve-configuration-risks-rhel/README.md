@@ -20,6 +20,7 @@ You can also check recommendations from the command line.
 
 ```bash
 # Run a fresh data collection
+
 sudo insights-client
 
 # Check the number of recommendations for this system

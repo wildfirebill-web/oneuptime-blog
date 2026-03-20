@@ -16,6 +16,7 @@ First, create a full RHEL installation inside a machine directory:
 
 ```bash
 # Install the container tools
+
 sudo dnf install -y systemd-container
 
 # Create the machine directory

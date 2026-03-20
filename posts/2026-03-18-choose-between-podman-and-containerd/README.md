@@ -37,6 +37,7 @@ containerd runs as a system daemon that must be started and running before any c
 
 ```bash
 # containerd requires a running daemon
+
 sudo systemctl start containerd
 sudo ctr images pull docker.io/library/nginx:latest
 sudo ctr run docker.io/library/nginx:latest web

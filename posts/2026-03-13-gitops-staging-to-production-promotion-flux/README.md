@@ -43,6 +43,7 @@ fleet-infra/
 
 ```yaml
 # apps/my-app/staging/kustomization.yaml
+
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:

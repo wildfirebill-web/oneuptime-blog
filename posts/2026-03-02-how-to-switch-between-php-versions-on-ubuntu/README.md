@@ -16,6 +16,7 @@ Before switching, know what you currently have:
 
 ```bash
 # Check default CLI PHP version
+
 php --version
 
 # Check which binary php points to

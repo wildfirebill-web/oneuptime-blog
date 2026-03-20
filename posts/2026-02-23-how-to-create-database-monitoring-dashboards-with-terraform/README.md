@@ -18,6 +18,7 @@ Different AWS database services expose different CloudWatch metrics. For RDS and
 
 ```hcl
 # Configure Terraform
+
 terraform {
   required_providers {
     aws = {

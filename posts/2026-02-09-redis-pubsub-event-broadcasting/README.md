@@ -45,6 +45,7 @@ import redis
 r = redis.Redis(host='redis.default.svc.cluster.local', port=6379)
 
 # Publish message to channel
+
 r.publish('notifications', 'User logged in')
 
 # Publish JSON data

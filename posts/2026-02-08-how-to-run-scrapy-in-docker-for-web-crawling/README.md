@@ -43,6 +43,7 @@ Here is a Dockerfile optimized for Scrapy:
 
 ```dockerfile
 # Dockerfile - Scrapy crawling environment with all parsing dependencies
+
 FROM python:3.12-slim
 
 # Install system dependencies for lxml and other parsing libraries

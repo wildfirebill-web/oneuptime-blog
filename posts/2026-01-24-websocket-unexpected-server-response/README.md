@@ -144,6 +144,7 @@ sequenceDiagram
 
 ```nginx
 # Check if the error is from Nginx by looking at response headers
+
 # Nginx typically includes "nginx" in Server header
 
 # Correct Nginx configuration for WebSocket

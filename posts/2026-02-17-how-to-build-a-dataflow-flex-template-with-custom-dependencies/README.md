@@ -43,6 +43,7 @@ The pipeline code for a Flex Template looks like a normal Apache Beam pipeline. 
 
 ```python
 # src/pipeline.py
+
 import apache_beam as beam
 from apache_beam.options.pipeline_options import PipelineOptions, SetupOptions
 from src.transforms import ParseRecord, EnrichWithLookup, ValidateSchema

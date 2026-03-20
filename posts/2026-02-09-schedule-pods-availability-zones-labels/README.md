@@ -16,6 +16,7 @@ Cloud providers automatically label nodes with their availability zone:
 
 ```bash
 # View zone labels on nodes
+
 kubectl get nodes -L topology.kubernetes.io/zone
 
 # Example output:

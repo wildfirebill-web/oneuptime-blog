@@ -40,6 +40,7 @@ Velero metrics are enabled by default. Verify the metrics endpoint is accessible
 
 ```bash
 # Port-forward to access metrics locally
+
 kubectl port-forward -n velero deployment/velero 8085:8085
 
 # View raw metrics

@@ -39,6 +39,7 @@ The foundation of incident response is a clear severity classification. Here is 
 
 ```yaml
 # severity-definitions.yaml
+
 # This configuration defines how your team categorizes incidents
 
 severities:

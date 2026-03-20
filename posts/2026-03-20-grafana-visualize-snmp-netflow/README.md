@@ -25,6 +25,7 @@ graph LR
 
 ```bash
 # Install InfluxDB 2.x
+
 wget https://dl.influxdata.com/influxdb/releases/influxdb2_2.7.1_amd64.deb
 sudo dpkg -i influxdb2_2.7.1_amd64.deb
 sudo systemctl enable influxdb && sudo systemctl start influxdb

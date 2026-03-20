@@ -33,6 +33,7 @@ The caller passes this as a block:
 
 ```hcl
 # terraform.tfvars or module call
+
 database = {
   engine         = "postgres"
   engine_version = "15.4"

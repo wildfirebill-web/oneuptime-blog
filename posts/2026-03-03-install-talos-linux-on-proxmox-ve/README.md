@@ -22,6 +22,7 @@ Install the client tools on your workstation:
 
 ```bash
 # Install talosctl
+
 curl -sL https://talos.dev/install | sh
 
 # Install kubectl

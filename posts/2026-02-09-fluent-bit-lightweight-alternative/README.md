@@ -24,6 +24,7 @@ Deploy Fluent Bit as a DaemonSet to run on every node:
 
 ```yaml
 # fluent-bit-daemonset.yaml
+
 apiVersion: apps/v1
 kind: DaemonSet
 metadata:

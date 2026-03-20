@@ -18,6 +18,7 @@ Start with a namespace module that bundles all isolation components together.
 
 ```hcl
 # variables for the namespace module
+
 variable "namespace_name" {
   type = string
 }
@@ -200,7 +201,7 @@ resource "kubernetes_network_policy" "allow_external" {
 }
 ```
 
-## Resource Quotas
+Resource Quotas
 
 Resource quotas prevent a single namespace from consuming all cluster resources.
 

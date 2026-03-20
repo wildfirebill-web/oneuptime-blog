@@ -27,6 +27,7 @@ This guide walks you through deploying Nexus OSS (open-source edition) using the
 
 ```yaml
 # clusters/my-cluster/nexus/namespace.yaml
+
 apiVersion: v1
 kind: Namespace
 metadata:

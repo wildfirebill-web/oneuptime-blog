@@ -38,6 +38,7 @@ SAP HANA is NUMA-aware and performs best with proper NUMA configuration.
 
 ```bash
 # Check the current NUMA topology
+
 numactl --hardware
 
 # Verify NUMA balancing is enabled (recommended by SAP)

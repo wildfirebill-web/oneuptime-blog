@@ -24,6 +24,7 @@ IPv6 addresses can appear in several forms:
 ```python
 #!/usr/bin/env python3
 # ipv6_regex.py
+
 # Regex patterns for extracting IPv6 addresses from logs
 
 import re

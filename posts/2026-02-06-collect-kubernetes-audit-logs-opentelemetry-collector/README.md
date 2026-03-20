@@ -46,6 +46,7 @@ This policy captures important security events at the Metadata level while loggi
 
 ```yaml
 # audit-policy.yaml
+
 # Defines what the API server should audit
 # Rules are evaluated in order - first match wins
 apiVersion: audit.k8s.io/v1

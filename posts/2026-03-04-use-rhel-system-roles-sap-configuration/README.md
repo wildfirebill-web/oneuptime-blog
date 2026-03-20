@@ -32,6 +32,7 @@ graph LR
 
 ```bash
 # Install the SAP system roles package
+
 sudo dnf install -y rhel-system-roles-sap ansible-core
 
 # Verify the roles are available

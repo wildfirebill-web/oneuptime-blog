@@ -25,6 +25,7 @@ Open PowerShell or Command Prompt as Administrator:
 
 ```powershell
 # Install WSL with the default Ubuntu distribution
+
 wsl --install
 
 # Or install with a specific Ubuntu version

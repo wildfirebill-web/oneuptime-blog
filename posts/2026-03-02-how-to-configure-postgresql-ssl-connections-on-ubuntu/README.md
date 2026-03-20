@@ -17,6 +17,7 @@ First, check whether SSL is already enabled:
 ```bash
 sudo -u postgres psql -c "SHOW ssl;"
 # If output is 'on', SSL is already running
+
 # If 'off', it needs to be enabled
 
 # If SSL is on, check what certificates are being used

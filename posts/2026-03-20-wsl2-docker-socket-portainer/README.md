@@ -1,4 +1,4 @@
-# How to Troubleshoot WSL2 Docker Socket Issues with Portainer
+# How to Troubleshoot WSL2 Docker Socket Issues with Portainer - Part 3
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -19,6 +19,7 @@ Description: Learn how to diagnose and fix Docker socket connectivity issues whe
 
 ```bash
 # Error:
+
 # Got permission denied while trying to connect to the Docker daemon socket
 # at unix:///var/run/docker.sock
 

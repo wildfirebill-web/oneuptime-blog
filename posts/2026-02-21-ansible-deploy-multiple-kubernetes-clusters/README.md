@@ -29,6 +29,7 @@ If all your cluster credentials are in a single kubeconfig file with multiple co
 
 ```yaml
 # playbook: deploy-multi-context.yml
+
 # Deploys to multiple clusters using kubeconfig contexts
 ---
 - name: Deploy to multiple Kubernetes clusters

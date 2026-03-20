@@ -16,6 +16,7 @@ By default, snapd uses a built-in schedule that spreads refresh checks throughou
 
 ```bash
 # See the current refresh timer configuration
+
 snap get system refresh.timer
 
 # See when the last refresh ran and when the next one is scheduled

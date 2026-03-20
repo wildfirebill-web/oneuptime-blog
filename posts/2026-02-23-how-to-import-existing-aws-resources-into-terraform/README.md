@@ -36,6 +36,7 @@ First, write the resource configuration:
 
 ```hcl
 # ec2.tf - Configuration for existing EC2 instance
+
 resource "aws_instance" "app_server" {
   ami           = "ami-0abcdef1234567890"
   instance_type = "t3.large"

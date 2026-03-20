@@ -26,6 +26,7 @@ This guide provides a structured rollout process that validates label coverage, 
 
 ```bash
 # Audit all pods missing required labels
+
 kubectl get pods --all-namespaces -o json | python3 << 'EOF'
 import json, sys
 data = json.load(sys.stdin)

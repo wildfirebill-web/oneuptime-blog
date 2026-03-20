@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Wireshark, IPv6, Router Advertisements, NDP, SLAAC, ICMPv6
+Tags: Wireshark, IPv6, Router Advertisement, NDP, SLAAC, ICMPv6
 
 Description: A guide to capturing and analyzing IPv6 Router Advertisement (RA) messages in Wireshark to verify SLAAC configuration, prefix distribution, and router settings.
 
@@ -12,6 +12,7 @@ Router Advertisements (RAs) are ICMPv6 type 134 messages sent by routers to anno
 
 ```wireshark
 # Show ALL Router Advertisement messages
+
 icmpv6.type == 134
 
 # Show Router Solicitations (sent by clients to request RAs)
@@ -46,7 +47,7 @@ icmpv6.type == 134 && icmpv6.nd.ra.flag.m == 0 && icmpv6.nd.ra.flag.o == 0
 
 Click on any RA packet and expand the **ICMPv6** tree to see:
 
-```
+```text
 Internet Control Message Protocol v6
   Type: Router Advertisement (134)
   Code: 0
@@ -126,4 +127,4 @@ sudo tcpdump -i eth0 'icmp6[0] == 134' -n -l 2>/dev/null | \
   awk '{print $1, $3, $NF}'
 ```
 
-Router Advertisement analysis in Wireshark provides a complete picture of what prefix information, flags, and DNS server addresses are being sent to IPv6 clients — making it the definitive tool for verifying SLAAC configuration.
+Router Advertisement analysis in Wireshark provides a complete picture of what prefix information, flags, and DNS server addresses are being sent to IPv6 clients - making it the definitive tool for verifying SLAAC configuration.

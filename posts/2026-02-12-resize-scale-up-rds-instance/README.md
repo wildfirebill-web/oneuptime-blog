@@ -33,6 +33,7 @@ Before resizing, understand what you're working with:
 
 ```bash
 # Check current instance details including class, storage, and engine
+
 aws rds describe-db-instances \
   --db-instance-identifier my-database \
   --query 'DBInstances[0].{Class:DBInstanceClass,Engine:Engine,Storage:AllocatedStorage,StorageType:StorageType,MultiAZ:MultiAZ,Status:DBInstanceStatus}'

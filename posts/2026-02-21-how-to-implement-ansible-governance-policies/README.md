@@ -38,6 +38,7 @@ Enforce code quality through automated checks:
 
 ```yaml
 # .ansible-lint
+
 # Strict linting rules for governance
 profile: production
 
@@ -251,7 +252,7 @@ Prevent dangerous operations at the playbook level:
   when: env_name == 'production'
 ```
 
-## Resource Limits
+Resource Limits
 
 Prevent runaway automation:
 

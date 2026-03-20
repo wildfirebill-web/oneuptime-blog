@@ -28,6 +28,7 @@ The Kong Ingress Controller watches Kubernetes resources and translates them int
 
 ```bash
 # Add Kong Helm repository
+
 helm repo add kong https://charts.konghq.com
 helm repo update
 

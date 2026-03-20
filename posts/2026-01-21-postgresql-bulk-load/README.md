@@ -44,6 +44,7 @@ COPY users FROM '/path/to/data.csv' WITH (
 
 ```bash
 # Using pipe
+
 zcat data.csv.gz | psql -c "COPY users FROM STDIN WITH (FORMAT csv)"
 
 # Or

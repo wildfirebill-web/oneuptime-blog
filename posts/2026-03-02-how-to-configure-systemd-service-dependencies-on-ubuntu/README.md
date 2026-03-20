@@ -28,6 +28,7 @@ These are independent. `After=` alone does not cause a unit to be started - it o
 Description=My Application
 
 # Start this service after these units (if they are being started)
+
 After=network-online.target postgresql.service redis.service
 
 # Start this service before these units

@@ -24,6 +24,7 @@ The most direct approach is reading the Dockerfile itself. The `FROM` instructio
 
 ```bash
 # If you have the Dockerfile locally, just read the FROM line
+
 grep "^FROM" Dockerfile
 ```
 

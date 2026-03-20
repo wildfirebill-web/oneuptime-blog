@@ -20,6 +20,7 @@ Start by confirming the SSH daemon is running and enabled.
 
 ```bash
 # Check if sshd is active
+
 systemctl status sshd
 
 # Enable sshd to start on boot (usually already enabled)

@@ -34,6 +34,7 @@ The response is typically fast: restarting calico-node on the affected node repr
 
 ```bash
 # If alert fired, check which node
+
 kubectl get pods -n kube-system -l k8s-app=calico-node -o wide
 # Look for pods in non-Running state
 

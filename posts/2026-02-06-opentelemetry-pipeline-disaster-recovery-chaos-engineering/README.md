@@ -28,6 +28,7 @@ Litmus is a Kubernetes-native chaos engineering framework that works well for te
 
 ```yaml
 # chaos-pod-kill.yaml
+
 # This Litmus experiment kills one otel-collector pod every 60 seconds
 # for a 5-minute window. It validates that the remaining pods absorb the
 # traffic and that Kubernetes restarts the killed pod within your RTO target.

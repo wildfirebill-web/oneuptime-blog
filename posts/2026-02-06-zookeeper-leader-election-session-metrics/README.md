@@ -68,6 +68,7 @@ The receiver uses Zookeeper's four-letter commands (`mntr`, `ruok`, `srvr`). Ena
 
 ```text
 # zoo.cfg
+
 4lw.commands.whitelist=mntr,ruok,srvr,stat,conf
 ```
 

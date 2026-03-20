@@ -56,6 +56,7 @@ In your monitoring account, create an OAM sink. This is the receiving end for te
 
 ```bash
 # In the monitoring account: create the OAM sink
+
 aws oam create-sink \
   --name "organization-monitoring-sink" \
   --region us-east-1

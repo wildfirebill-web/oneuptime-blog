@@ -242,6 +242,7 @@ For Mayastor, you need to define DiskPools on nodes:
 
 ```yaml
 # DiskPool on node 1
+
 apiVersion: openebs.io/v1beta2
 kind: DiskPool
 metadata:

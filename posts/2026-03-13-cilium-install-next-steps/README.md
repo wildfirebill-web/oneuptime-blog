@@ -24,6 +24,7 @@ This guide presents the next steps in priority order, from the must-do immediate
 
 ```bash
 # Run comprehensive connectivity test
+
 cilium connectivity test
 
 # If all tests pass, your network plane is healthy

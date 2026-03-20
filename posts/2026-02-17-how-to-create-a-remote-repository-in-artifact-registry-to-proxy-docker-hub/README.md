@@ -40,6 +40,7 @@ Create a remote repository that points to Docker Hub:
 
 ```bash
 # Create a remote repository that proxies Docker Hub
+
 gcloud artifacts repositories create dockerhub-proxy \
   --repository-format=docker \
   --location=us-central1 \

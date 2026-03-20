@@ -27,6 +27,7 @@ This playbook creates a swap file and activates it:
 
 ```yaml
 # configure-swap-file.yml - Create and enable swap file
+
 ---
 - name: Configure Swap File
   hosts: all

@@ -8,12 +8,13 @@ Description: Allocate and associate an AWS Elastic IP address with an EC2 instan
 
 ## Introduction
 
-An Elastic IP (EIP) is a static public IPv4 address allocated from AWS's pool. Unlike auto-assigned public IPs (which change on every stop/start), an EIP stays with your account until you release it. This makes EIPs essential for services that need a predictable, unchanging public IP — such as DNS A records, firewall allowlists, or SSL certificates tied to an IP.
+An Elastic IP (EIP) is a static public IPv4 address allocated from AWS's pool. Unlike auto-assigned public IPs (which change on every stop/start), an EIP stays with your account until you release it. This makes EIPs essential for services that need a predictable, unchanging public IP - such as DNS A records, firewall allowlists, or SSL certificates tied to an IP.
 
 ## Allocating an Elastic IP
 
 ```bash
 # Allocate a new Elastic IP from the AWS pool
+
 aws ec2 allocate-address \
   --domain vpc \
   --region us-east-1

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Linux, Networking, IPv4, ip command, Virtual IPs, Network Configuration
+Tags: Linux, Networking, IPv4, ip command, Virtual IP, Network Configuration
 
 Description: Add multiple IPv4 addresses to a single Linux network interface using ip addr add, including secondary addresses, label aliases, and how to make them persistent.
 
@@ -14,6 +14,7 @@ Linux allows a single physical interface to host multiple IPv4 addresses simulta
 
 ```bash
 # Primary address (already assigned)
+
 sudo ip addr add 192.168.1.100/24 dev eth0
 
 # Add a second address to the same interface
@@ -28,7 +29,7 @@ ip -4 addr show dev eth0
 
 Output:
 
-```
+```text
 2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP>
     inet 192.168.1.100/24 brd 192.168.1.255 scope global eth0
     inet 192.168.1.101/24 brd 192.168.1.255 scope global secondary eth0
@@ -91,7 +92,7 @@ network:
 
 **Debian /etc/network/interfaces:**
 
-```
+```text
 auto eth0
 iface eth0 inet static
     address 192.168.1.100

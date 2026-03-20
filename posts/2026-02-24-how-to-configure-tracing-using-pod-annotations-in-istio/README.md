@@ -127,6 +127,7 @@ When investigating a production issue, you often want to increase the sampling r
 
 ```bash
 # Add the annotation to increase sampling
+
 kubectl patch deployment my-service -p '
 {
   "spec": {

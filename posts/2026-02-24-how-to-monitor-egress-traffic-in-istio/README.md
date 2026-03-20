@@ -145,6 +145,7 @@ If you use an egress gateway, it generates its own set of metrics. This gives yo
 
 ```promql
 # All traffic through the egress gateway
+
 sum(rate(istio_requests_total{
   source_workload="istio-egressgateway"
 }[5m])) by (destination_service_name, response_code)

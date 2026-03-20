@@ -304,6 +304,7 @@ Test alert routing by checking which receiver an alert would match:
 
 ```bash
 # Amtool can check routing
+
 kubectl exec -it alertmanager-rancher-monitoring-alertmanager-0 \
   -n cattle-monitoring-system \
   -c alertmanager -- \

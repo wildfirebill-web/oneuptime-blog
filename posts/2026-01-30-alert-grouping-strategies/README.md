@@ -94,6 +94,7 @@ The `group_by` parameter defines which label combinations create distinct alert 
 
 ```yaml
 # alertmanager.yml
+
 # Basic configuration showing route structure with grouping
 
 route:

@@ -52,6 +52,7 @@ Configure basic gateway routes with tracing in mind:
 
 ```yaml
 # application.yml
+
 spring:
   cloud:
     gateway:

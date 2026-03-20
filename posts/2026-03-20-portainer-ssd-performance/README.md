@@ -14,6 +14,7 @@ Portainer's embedded boltdb database performs significantly better on SSDs than 
 
 ```bash
 # Check what storage device Portainer data is on
+
 docker inspect portainer --format '{{range .Mounts}}{{.Source}} -> {{.Destination}}{{end}}'
 # Output: /var/lib/docker/volumes/portainer_data/_data -> /data
 
@@ -178,4 +179,4 @@ done
 
 ## Conclusion
 
-SSD storage for Portainer's database is one of the most impactful infrastructure changes you can make. boltdb is write-heavy — every snapshot creates database transactions — and spinning disk latency makes these writes the bottleneck. Moving to SSD typically reduces API response times by 50-80% in environments with many containers. For Docker's overlay2 storage, SSD dramatically speeds up container startups and image builds. The NVMe `none` I/O scheduler eliminates kernel-level scheduling overhead for drives that have their own intelligent queuing. Benchmark before and after to quantify the improvement for your specific workload.
+SSD storage for Portainer's database is one of the most impactful infrastructure changes you can make. boltdb is write-heavy - every snapshot creates database transactions - and spinning disk latency makes these writes the bottleneck. Moving to SSD typically reduces API response times by 50-80% in environments with many containers. For Docker's overlay2 storage, SSD dramatically speeds up container startups and image builds. The NVMe `none` I/O scheduler eliminates kernel-level scheduling overhead for drives that have their own intelligent queuing. Benchmark before and after to quantify the improvement for your specific workload.

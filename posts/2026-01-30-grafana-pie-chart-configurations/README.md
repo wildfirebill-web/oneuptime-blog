@@ -438,6 +438,7 @@ Combine small slices into an "Other" category using recording rules or query tra
 
 ```yaml
 # Prometheus recording rule
+
 groups:
   - name: pie_chart_helpers
     rules:

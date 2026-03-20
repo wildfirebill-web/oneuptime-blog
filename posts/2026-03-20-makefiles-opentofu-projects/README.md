@@ -14,6 +14,7 @@ Makefiles provide a simple, universal interface for complex command sequences. T
 
 ```makefile
 # Makefile
+
 # OpenTofu project automation
 
 # ─── Variables ────────────────────────────────────────────────────────────────

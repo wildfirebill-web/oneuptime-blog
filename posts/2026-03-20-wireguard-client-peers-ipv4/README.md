@@ -14,6 +14,7 @@ Run this on the client machine (or generate server-side and distribute securely)
 
 ```bash
 # Generate a private key and derive the public key from it
+
 wg genkey | tee client_private.key | wg pubkey > client_public.key
 
 # Protect the private key

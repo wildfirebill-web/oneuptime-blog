@@ -39,6 +39,7 @@ First, check that your taxonomy and policy tags are set up correctly.
 
 ```bash
 # List taxonomies in your project
+
 gcloud data-catalog taxonomies list \
     --location=us \
     --project=my-project

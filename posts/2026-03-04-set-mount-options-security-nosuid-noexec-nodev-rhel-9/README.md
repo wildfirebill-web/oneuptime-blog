@@ -164,6 +164,7 @@ Verify nosuid works:
 
 ```bash
 # Create a SUID test (as root)
+
 cp /bin/cat /tmp/cat_test
 chmod u+s /tmp/cat_test
 ls -l /tmp/cat_test

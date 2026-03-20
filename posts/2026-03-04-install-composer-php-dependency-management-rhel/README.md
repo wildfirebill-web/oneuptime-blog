@@ -14,6 +14,7 @@ Composer is the standard dependency manager for PHP projects. It handles package
 
 ```bash
 # Make sure PHP CLI is installed
+
 sudo dnf install -y php-cli php-zip php-mbstring php-xml unzip
 
 # Download the Composer installer

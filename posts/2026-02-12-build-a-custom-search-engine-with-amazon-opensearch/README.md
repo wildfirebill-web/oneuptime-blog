@@ -32,6 +32,7 @@ You can create a domain through CloudFormation or the SDK. For production, use d
 
 ```python
 # Create an OpenSearch domain
+
 import boto3
 
 opensearch = boto3.client('opensearch')

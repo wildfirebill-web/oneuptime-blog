@@ -34,6 +34,7 @@ At minimum, set up alarms for errors and throttles:
 
 ```yaml
 # CloudFormation: Essential Lambda alarms
+
 Resources:
   # Alert when errors exceed threshold
   ErrorAlarm:

@@ -30,6 +30,7 @@ Before wiping, cleanly remove the node from the Kubernetes cluster:
 
 ```bash
 # Get node name
+
 NODE_NAME="worker-3"
 
 # Drain workloads

@@ -250,6 +250,7 @@ Test that policies are enforced:
 
 ```bash
 # List all network policies
+
 kubectl get networkpolicies -n production
 
 # Describe a specific policy

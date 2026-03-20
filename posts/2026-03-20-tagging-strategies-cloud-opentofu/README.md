@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Tagging, Cloud Resources, Cost Management, Best Practices, Infrastructure as Code
+Tags: OpenTofu, Tagging, Cloud resources, Cost Management, Best Practices, Infrastructure as Code
 
 Description: Learn how to implement a consistent, enforceable tagging strategy for cloud resources managed by OpenTofu using default_tags, locals, and validation rules.
 
@@ -16,6 +16,7 @@ Define the required tags as a standard set:
 
 ```hcl
 # locals.tf
+
 locals {
   # Mandatory tags applied to every resource
   required_tags = {
@@ -32,7 +33,7 @@ locals {
 
 ## AWS: Using default_tags at the Provider Level
 
-The most powerful approach — tags applied to every resource automatically:
+The most powerful approach - tags applied to every resource automatically:
 
 ```hcl
 provider "aws" {
@@ -53,7 +54,7 @@ provider "aws" {
 resource "aws_instance" "web" {
   ami           = data.aws_ami.amazon_linux.id
   instance_type = "t3.medium"
-  # No tags block needed — default_tags applies automatically
+  # No tags block needed - default_tags applies automatically
   # You can still add resource-specific tags
   tags = {
     Name = "web-server-prod"

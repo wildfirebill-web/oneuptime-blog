@@ -20,6 +20,7 @@ Download a file from a URL during the build:
 
 ```dockerfile
 # Basic ADD with a remote URL
+
 FROM debian:bookworm-slim
 
 # Download a file from a URL and place it in the container

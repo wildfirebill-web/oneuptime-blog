@@ -24,6 +24,7 @@ Local port forwarding makes a remote service accessible on a local port. The tra
 
 ```bash
 # Basic syntax
+
 # ssh -L [bind_address:]local_port:destination_host:destination_port user@ssh_server
 
 # Access a remote database that's only listening on localhost

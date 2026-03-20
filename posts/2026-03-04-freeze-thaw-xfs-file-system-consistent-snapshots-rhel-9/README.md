@@ -196,6 +196,7 @@ Add cleanup logic to the snapshot script:
 
 ```bash
 # Remove snapshots older than 7 days
+
 for snap in $(lvs --noheadings -o lv_name vg_data | grep "^  snap_"); do
     snap_date=$(echo "$snap" | sed 's/snap_//' | cut -d_ -f1)
     if [ "$(date -d "$snap_date" +%s 2>/dev/null)" -lt "$(date -d '7 days ago' +%s)" ]; then

@@ -328,6 +328,7 @@ Point your domain to the DigitalOcean Load Balancer IP:
 
 ```bash
 # Get the load balancer IP
+
 export LB_IP=$(kubectl get svc istio-ingressgateway -n istio-system -o jsonpath='{.status.loadBalancer.ingress[0].ip}')
 
 # Create a DNS A record (if using DigitalOcean DNS)
@@ -354,7 +355,7 @@ Access Kiali to visualize your service mesh:
 kubectl port-forward svc/kiali -n istio-system 20001:20001
 ```
 
-## Resource Considerations
+Resource Considerations
 
 DigitalOcean droplets have fixed CPU and memory. Unlike AWS or GCP, you cannot independently scale CPU and memory. Plan your node sizes carefully:
 

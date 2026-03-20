@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, TCP, Linux, sysctl, Performance, Kernel
+Tags: IPv6, TCP, Linux, Sysctl, Performance, Kernel
 
 Description: Fine-tune Linux TCP parameters for IPv6 connections including congestion control, keepalive settings, and TIME_WAIT handling for production workloads.
 
@@ -16,6 +16,7 @@ Modern congestion control algorithms like BBR significantly outperform cubic on 
 
 ```bash
 # Check available congestion control algorithms
+
 sysctl net.ipv4.tcp_available_congestion_control
 
 # Check currently active algorithm
@@ -88,7 +89,7 @@ net.ipv4.tcp_fastopen = 3
 ```
 
 ```python
-# Python server with TFO enabled — works for both IPv4 and IPv6
+# Python server with TFO enabled - works for both IPv4 and IPv6
 import socket
 
 server = socket.socket(socket.AF_INET6, socket.SOCK_STREAM)

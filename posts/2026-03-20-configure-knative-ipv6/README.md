@@ -14,6 +14,7 @@ Knative provides a serverless experience on Kubernetes. Knative Serving handles 
 
 ```bash
 # Install Knative Serving CRDs and core
+
 kubectl apply -f https://github.com/knative/serving/releases/download/knative-v1.13.0/serving-crds.yaml
 kubectl apply -f https://github.com/knative/serving/releases/download/knative-v1.13.0/serving-core.yaml
 

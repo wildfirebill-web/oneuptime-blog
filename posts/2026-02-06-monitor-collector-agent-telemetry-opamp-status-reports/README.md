@@ -24,6 +24,7 @@ First, configure the collector to expose its internal telemetry metrics via Prom
 
 ```yaml
 # collector-config.yaml
+
 service:
   telemetry:
     metrics:

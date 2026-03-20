@@ -38,6 +38,7 @@ Let's build a generator that creates multiple similar Deployments from a compact
 
 ```yaml
 # generators/multiapp.yaml
+
 apiVersion: generators.example.com/v1
 kind: MultiAppGenerator
 metadata:

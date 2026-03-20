@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: OpenTofu, Infracost, Cost Estimation, FinOps, Infrastructure as Code, DevOps
 
-Description: Learn how to integrate Infracost with OpenTofu to get cloud cost estimates before applying changes — surfacing cost impact directly in pull requests and CI/CD pipelines.
+Description: Learn how to integrate Infracost with OpenTofu to get cloud cost estimates before applying changes - surfacing cost impact directly in pull requests and CI/CD pipelines.
 
 ## Introduction
 
@@ -14,6 +14,7 @@ Infracost integrates with OpenTofu to show the hourly and monthly cost of infras
 
 ```bash
 # macOS
+
 brew install infracost
 
 # Linux
@@ -39,7 +40,7 @@ infracost breakdown --path tfplan.json --format table
 
 Sample output:
 
-```
+```text
 Name                                    Quantity  Unit         Monthly Cost
 aws_instance.web_server
   Instance usage (Linux/UNIX)           730       hours        $33.58
@@ -55,7 +56,7 @@ TOTAL                                                          $99.24
 
 ## Comparing Costs: Before vs After
 
-The most powerful feature is `diff` — shows the cost change for proposed modifications:
+The most powerful feature is `diff` - shows the cost change for proposed modifications:
 
 ```bash
 # Compare current state (main branch) with changes (feature branch)
@@ -66,7 +67,7 @@ git stash pop  # or checkout feature branch
 infracost diff --path . --compare-to infracost-base.json
 ```
 
-```
+```text
 Monthly cost change for .
   Before: $99.24
   After:  $187.45
@@ -134,7 +135,7 @@ jobs:
 ## infracost.yml Configuration File
 
 ```yaml
-# infracost.yml — project-level configuration
+# infracost.yml - project-level configuration
 version: 0.1
 
 projects:
@@ -175,4 +176,4 @@ fi
 
 ## Conclusion
 
-Infracost makes cloud costs visible in the development workflow — before infrastructure is deployed. By posting cost diffs on pull requests, engineers see the financial impact of their changes alongside code review. Set cost thresholds in CI to block unexpectedly expensive changes and integrate `infracost.yml` to track costs across multiple environments.
+Infracost makes cloud costs visible in the development workflow - before infrastructure is deployed. By posting cost diffs on pull requests, engineers see the financial impact of their changes alongside code review. Set cost thresholds in CI to block unexpectedly expensive changes and integrate `infracost.yml` to track costs across multiple environments.

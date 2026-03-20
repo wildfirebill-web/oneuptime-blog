@@ -163,6 +163,7 @@ class BackupCompressor:
 
 
 # Example usage: Select algorithm based on backup type
+
 def select_algorithm_for_backup(backup_type: str, priority: str) -> BackupCompressor:
     """
     Select the optimal compression algorithm based on backup requirements.

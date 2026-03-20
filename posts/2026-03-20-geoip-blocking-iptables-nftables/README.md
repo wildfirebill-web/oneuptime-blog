@@ -12,6 +12,7 @@ GeoIP blocking restricts traffic by country of origin, reducing the attack surfa
 
 ```bash
 # Install xtables-addons (provides geoip module for iptables)
+
 sudo apt install xtables-addons-common libtext-csv-xs-perl -y
 
 # Download and install GeoIP database
@@ -45,7 +46,7 @@ Use publicly available country CIDR lists with ipset:
 
 ```bash
 #!/bin/bash
-# block-country.sh — Block a country by downloading its IP ranges
+# block-country.sh - Block a country by downloading its IP ranges
 
 COUNTRY="CN"  # ISO country code
 IPSET_NAME="block-${COUNTRY}"

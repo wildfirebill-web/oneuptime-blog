@@ -47,6 +47,7 @@ resource "aws_cloudfront_origin_access_control" "react_app" {
 }
 
 # Bucket policy allowing CloudFront OAC access
+
 data "aws_iam_policy_document" "react_app_bucket" {
   statement {
     principals {

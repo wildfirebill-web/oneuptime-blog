@@ -234,6 +234,7 @@ Apply the rule and wait a few minutes for the alert to fire and the email to be 
 ```bash
 kubectl apply -f test-email-alert.yaml
 # Wait for email
+
 kubectl delete -f test-email-alert.yaml
 ```
 

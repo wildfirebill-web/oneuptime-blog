@@ -56,6 +56,7 @@ These environment variables tell the SDK which specific headers to record as spa
 
 ```bash
 # Only capture specific safe request headers
+
 export OTEL_INSTRUMENTATION_HTTP_CAPTURE_HEADERS_SERVER_REQUEST="content-type,accept,user-agent,x-request-id"
 
 # Only capture specific safe response headers

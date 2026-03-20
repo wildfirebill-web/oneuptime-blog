@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Linux, Network Namespaces, systemd, Persistence, Networking, Automation
+Tags: Linux, Network Namespaces, Systemd, Persistence, Networking, Automation
 
 Description: Make network namespace configurations survive reboots by creating systemd service units that recreate namespaces, interfaces, and routes at boot time.
 
 ## Introduction
 
-Network namespaces created with `ip netns add` are not persistent — they disappear on reboot. To retain your namespace topology across reboots, you need to automate the setup using systemd service units or network management tools like systemd-networkd.
+Network namespaces created with `ip netns add` are not persistent - they disappear on reboot. To retain your namespace topology across reboots, you need to automate the setup using systemd service units or network management tools like systemd-networkd.
 
 ## Prerequisites
 
@@ -30,6 +30,7 @@ cat > /usr/local/bin/setup-namespaces.sh << 'EOF'
 set -e
 
 # Create namespace
+
 ip netns add ns1 2>/dev/null || true
 
 # Create veth pair

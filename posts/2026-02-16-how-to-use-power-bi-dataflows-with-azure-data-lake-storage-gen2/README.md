@@ -43,6 +43,7 @@ After the account is created, create a container (file system) inside it. Name i
 
 ```bash
 # Create the storage account with hierarchical namespace enabled
+
 az storage account create \
     --name pbiDataLakeStore \
     --resource-group rg-powerbi \

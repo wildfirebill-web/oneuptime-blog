@@ -32,6 +32,7 @@ APIBASE="http://localhost:8080"
 
 ```bash
 # Discover the Calico API group
+
 curl -s $APIBASE/apis/projectcalico.org/v3 | jq '.resources[].name'
 # Expected: List of Calico resource types
 

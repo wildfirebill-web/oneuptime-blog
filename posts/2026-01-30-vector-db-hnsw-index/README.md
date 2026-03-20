@@ -258,6 +258,7 @@ import numpy as np
 import faiss
 
 # Configuration
+
 DIMENSION = 1536      # Vector dimension (e.g., OpenAI embeddings)
 NUM_VECTORS = 100000  # Number of vectors to index
 M = 32                # Max connections per node

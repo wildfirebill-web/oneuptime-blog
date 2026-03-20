@@ -18,6 +18,7 @@ Get Gitea running with a single command:
 
 ```bash
 # Start Gitea with SQLite (simplest setup)
+
 docker run -d \
   --name gitea \
   -p 3000:3000 \
@@ -290,7 +291,7 @@ docker exec gitea unzip /data/gitea-dump-*.zip -d /data/restore/
 docker compose start gitea
 ```
 
-## Resource Usage
+Resource Usage
 
 Gitea is remarkably lightweight compared to alternatives:
 

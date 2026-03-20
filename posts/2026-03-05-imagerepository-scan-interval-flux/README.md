@@ -33,6 +33,7 @@ Here is an ImageRepository with a 10-minute scan interval.
 
 ```yaml
 # imagerepository-interval.yaml
+
 # Scan the image every 10 minutes
 apiVersion: image.toolkit.fluxcd.io/v1
 kind: ImageRepository

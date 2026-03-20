@@ -82,6 +82,7 @@ First, set up your Go project structure:
 
 ```bash
 # Create project directory
+
 mkdir vault-secrets-myengine && cd vault-secrets-myengine
 
 # Initialize Go module

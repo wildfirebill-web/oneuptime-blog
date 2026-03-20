@@ -90,6 +90,7 @@ Check if all expected resources appear in the output. If a resource is missing, 
 
 ```yaml
 # Check that all resources are listed
+
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:

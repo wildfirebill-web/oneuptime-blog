@@ -8,12 +8,13 @@ Description: Identify TCP congestion collapse where network utilization drops dr
 
 ## Introduction
 
-TCP congestion collapse is a state where network utilization drops to near zero even though links are 100% utilized — because all the traffic is retransmissions of lost data rather than new data delivery. It was a major problem in early internet history and can still occur in heavily overloaded networks. Detection requires monitoring retransmission rates, goodput (useful throughput), and queue depths simultaneously.
+TCP congestion collapse is a state where network utilization drops to near zero even though links are 100% utilized - because all the traffic is retransmissions of lost data rather than new data delivery. It was a major problem in early internet history and can still occur in heavily overloaded networks. Detection requires monitoring retransmission rates, goodput (useful throughput), and queue depths simultaneously.
 
 ## Signs of Congestion Collapse
 
 ```bash
 # Sign 1: Interface utilization near 100% but application throughput very low
+
 watch -n 1 "ip -s link show eth0 | grep 'TX bytes'"
 
 # Compare interface byte rate vs application data rate:

@@ -29,6 +29,7 @@ OpenEBS Local PV needs access to specific host paths. Create a machine config pa
 
 ```yaml
 # openebs-patch.yaml
+
 machine:
   kubelet:
     extraMounts:

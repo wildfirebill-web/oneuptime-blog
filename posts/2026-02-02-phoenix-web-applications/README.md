@@ -30,6 +30,7 @@ You need Elixir, Erlang, and Node.js (for asset compilation). On macOS with Home
 
 ```bash
 # Install Elixir (includes Erlang as a dependency)
+
 brew install elixir
 
 # Verify installation

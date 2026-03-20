@@ -53,6 +53,7 @@ Define a base FluxInstance that contains common configuration shared across all 
 
 ```yaml
 # base/flux-instance.yaml
+
 # Base FluxInstance template for all clusters
 apiVersion: fluxcd.controlplane.io/v1
 kind: FluxInstance

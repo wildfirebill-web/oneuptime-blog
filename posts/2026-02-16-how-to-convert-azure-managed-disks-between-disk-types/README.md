@@ -29,6 +29,7 @@ The basic process is: deallocate the VM, update the disk SKU, then start the VM.
 
 ```bash
 # Step 1: Deallocate the VM
+
 # The VM must be stopped (deallocated) to change the disk type
 az vm deallocate \
   --name my-vm \

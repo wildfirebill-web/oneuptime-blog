@@ -81,6 +81,7 @@ Verify the role does not grant broader permissions.
 ```bash
 kubectl auth can-i create pods --as=system:serviceaccount:calico-system:typha-autoscaler
 # Should return: no
+
 ```
 
 ## Step 3: Pod Security Context for Typha Replicas

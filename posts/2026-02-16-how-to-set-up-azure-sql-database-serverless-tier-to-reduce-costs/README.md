@@ -91,6 +91,7 @@ Here is the CLI command to create a serverless database:
 
 ```bash
 # Create a new serverless database with auto-pause enabled
+
 az sql db create \
     --resource-group myResourceGroup \
     --server myserver \

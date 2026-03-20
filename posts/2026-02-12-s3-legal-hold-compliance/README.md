@@ -28,6 +28,7 @@ Quick reminder - Object Lock must be enabled at bucket creation time.
 
 ```bash
 # Create a bucket with Object Lock enabled
+
 aws s3api create-bucket \
   --bucket my-legal-hold-bucket \
   --region us-east-1 \

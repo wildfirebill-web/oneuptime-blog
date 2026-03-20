@@ -108,6 +108,7 @@ The following Python script demonstrates how to implement automated abort criter
 
 ```python
 # game_day_monitor.py
+
 # This script monitors key metrics and automatically triggers abort if thresholds are exceeded
 
 import time

@@ -24,6 +24,7 @@ Ansible provides CPU information through several fact keys:
 
 ```yaml
 # cpu-facts-overview.yml
+
 # Displays all major CPU-related facts
 ---
 - name: Show CPU facts

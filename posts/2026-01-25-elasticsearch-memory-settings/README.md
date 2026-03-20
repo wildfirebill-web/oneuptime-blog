@@ -59,6 +59,7 @@ Elasticsearch heap should be set to no more than 50% of available RAM, leaving t
 # /etc/elasticsearch/jvm.options.d/heap.options
 
 # Set initial and maximum heap to the same value
+
 # This prevents expensive heap resizing
 -Xms16g
 -Xmx16g

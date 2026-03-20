@@ -16,6 +16,7 @@ The default ApplicationSet template syntax uses double curly braces without a do
 
 ```yaml
 # Default fasttemplate syntax
+
 name: '{{cluster}}-{{app}}'
 ```
 

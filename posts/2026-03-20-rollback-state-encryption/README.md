@@ -1,4 +1,4 @@
-# How to Roll Back State Encryption in OpenTofu
+# How to Roll Back State Encryption in OpenTofu - Rollback
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Learn how to safely roll back OpenTofu state encryption and return 
 
 ## Introduction
 
-There are situations where you need to roll back state encryption: a key is lost, a legacy tool can't read encrypted state, or you're migrating to a different encryption approach. OpenTofu supports this through the reverse migration process — disabling encryption while allowing reads of the currently encrypted state.
+There are situations where you need to roll back state encryption: a key is lost, a legacy tool can't read encrypted state, or you're migrating to a different encryption approach. OpenTofu supports this through the reverse migration process - disabling encryption while allowing reads of the currently encrypted state.
 
 ## Warning: Understand the Risks
 
@@ -23,9 +23,10 @@ You must have the current encryption key to decrypt state:
 
 ```bash
 # Verify you can read state with the current configuration
+
 tofu state list
 
-# If this fails, you may not have the correct key — stop here
+# If this fails, you may not have the correct key - stop here
 ```
 
 ## Step 2: Configure Decryption-Only Mode
@@ -99,11 +100,11 @@ tofu state list
 Once state is unencrypted, remove the encryption block entirely:
 
 ```hcl
-# encryption.tf — simplified after rollback
+# encryption.tf - simplified after rollback
 terraform {
   required_version = ">= 1.7.0"
 
-  # No encryption block — state is stored unencrypted
+  # No encryption block - state is stored unencrypted
 }
 ```
 
@@ -176,4 +177,4 @@ terraform {
 
 ## Conclusion
 
-Rolling back state encryption is a reversible operation as long as you retain the original encryption key. The fallback mechanism makes this safe — OpenTofu can decrypt existing state while writing new state unencrypted. Always have a plan for key custody before enabling encryption, and ensure backups exist at each stage of the process. After rolling back, implement compensating controls (backend-level encryption, strict access policies) to maintain security.
+Rolling back state encryption is a reversible operation as long as you retain the original encryption key. The fallback mechanism makes this safe - OpenTofu can decrypt existing state while writing new state unencrypted. Always have a plan for key custody before enabling encryption, and ensure backups exist at each stage of the process. After rolling back, implement compensating controls (backend-level encryption, strict access policies) to maintain security.

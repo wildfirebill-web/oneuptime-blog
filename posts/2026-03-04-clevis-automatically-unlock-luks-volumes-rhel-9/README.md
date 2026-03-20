@@ -16,6 +16,7 @@ Install the Clevis packages on the client system:
 
 ```bash
 # Install Clevis with Tang and LUKS support
+
 sudo dnf install clevis clevis-luks clevis-dracut -y
 ```
 

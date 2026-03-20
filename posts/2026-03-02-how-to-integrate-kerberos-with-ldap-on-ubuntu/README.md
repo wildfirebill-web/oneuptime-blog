@@ -31,6 +31,7 @@ MIT Kerberos ships with an LDAP schema. Load it into slapd:
 
 ```bash
 # Find the schema file
+
 find /usr/share -name "kerberos*.ldif" 2>/dev/null
 # Usually: /usr/share/doc/krb5-kdc-ldap/kerberos.schema.gz
 

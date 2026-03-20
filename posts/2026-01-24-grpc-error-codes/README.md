@@ -75,6 +75,7 @@ from grpc_status import rpc_status
 from google.rpc import status_pb2, error_details_pb2
 
 # Server-side: Returning proper error codes
+
 class UserServiceServicer(user_pb2_grpc.UserServiceServicer):
 
     def GetUser(self, request, context):

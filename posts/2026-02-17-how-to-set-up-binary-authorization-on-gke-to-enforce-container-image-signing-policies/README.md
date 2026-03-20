@@ -49,6 +49,7 @@ You need:
 
 ```bash
 # Enable required APIs
+
 gcloud services enable \
   binaryauthorization.googleapis.com \
   containeranalysis.googleapis.com \

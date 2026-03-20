@@ -62,6 +62,7 @@ The instances are your actual Istio configuration. This is the more important pa
 mkdir -p istio-export/resources
 
 # Get all Istio CRD names (short names for kubectl)
+
 ISTIO_RESOURCES=$(kubectl api-resources --api-group=networking.istio.io -o name 2>/dev/null)
 ISTIO_RESOURCES="$ISTIO_RESOURCES $(kubectl api-resources --api-group=security.istio.io -o name 2>/dev/null)"
 ISTIO_RESOURCES="$ISTIO_RESOURCES $(kubectl api-resources --api-group=telemetry.istio.io -o name 2>/dev/null)"

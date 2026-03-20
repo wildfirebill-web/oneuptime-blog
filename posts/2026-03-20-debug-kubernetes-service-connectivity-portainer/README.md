@@ -27,49 +27,49 @@ In Portainer, go to **Kubernetes > Namespaces > [namespace] > Services** and con
 - Target port matches the container's port
 - Selector labels match the pod's labels
 
-\`\`\`bash
+```bash
 kubectl get svc -n production
 kubectl describe svc my-service -n production
-\`\`\`
+```
 
 ## Step 2: Test DNS Resolution from a Pod
 
 Use Portainer's terminal to exec into a running pod and test DNS:
 
-\`\`\`bash
-# Test DNS resolution
+```bash
+## Test DNS resolution
 nslookup my-service
 nslookup my-service.production.svc.cluster.local
 
-# Test connectivity
+## Test connectivity
 curl -v http://my-service:8080/health
 nc -zv my-service 8080
-\`\`\`
+```
 
 ## Step 3: Check Endpoint Readiness
 
 A service with no endpoints means the selector labels don't match any running pods:
 
-\`\`\`bash
-# Check endpoints — empty means no matching pods
+```bash
+## Check endpoints - empty means no matching pods
 kubectl get endpoints my-service -n production
 
-# Compare selector labels
+## Compare selector labels
 kubectl get svc my-service -n production -o yaml | grep -A 5 selector
 kubectl get pods -n production --show-labels
-\`\`\`
+```
 
 ## Step 4: Test Network Policies
 
 If network policies are present, they may block legitimate traffic:
 
-\`\`\`bash
-# List network policies in the namespace
+```bash
+## List network policies in the namespace
 kubectl get networkpolicies -n production
 
-# Run a connectivity test from the source pod namespace
+## Run a connectivity test from the source pod namespace
 kubectl exec -n production <source-pod> -- curl http://target-service:8080
-\`\`\`
+```
 
 ## Step 5: Check Service Type
 

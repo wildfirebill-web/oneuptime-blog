@@ -33,6 +33,7 @@ Check IP pool encapsulation settings and eBPF mode:
 
 ```bash
 # Verify IP pools have encapsulation disabled
+
 calicoctl get ippools -o yaml | grep -E "encapsulation:|ipipMode:|vxlanMode:"
 
 # Confirm eBPF mode is enabled

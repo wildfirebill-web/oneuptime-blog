@@ -78,6 +78,7 @@ class RateLimitedSampler:
         return f"RateLimitedSampler({self.max_traces_per_second}/s)"
 
 # Allow maximum 5 traces per second from batch processing
+
 sampler = RateLimitedSampler(max_traces_per_second=5)
 
 provider = TracerProvider(sampler=sampler)

@@ -20,6 +20,7 @@ First, you need a runner environment where Podman is available. You can use a sh
 
 ```yaml
 # .gitlab-ci.yml
+
 # Use a base image that has Podman pre-installed
 image: quay.io/podman/stable:latest
 

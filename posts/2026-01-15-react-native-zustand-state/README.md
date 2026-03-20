@@ -44,6 +44,7 @@ Let us start by installing Zustand in your React Native project:
 
 ```bash
 # Using npm
+
 npm install zustand
 
 # Using yarn

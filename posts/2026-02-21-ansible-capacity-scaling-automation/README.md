@@ -33,6 +33,7 @@ Query Prometheus for load metrics and scale accordingly:
 
 ```yaml
 # playbooks/auto-scale.yml
+
 # Scale infrastructure based on current metrics
 ---
 - name: Evaluate scaling metrics

@@ -21,6 +21,7 @@ Validating Calico NetworkSet resources involves confirming that the correct IP a
 
 ```bash
 # List all namespace-scoped NetworkSets
+
 calicoctl get networksets -A
 
 # List GlobalNetworkSets

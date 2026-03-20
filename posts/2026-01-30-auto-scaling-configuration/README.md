@@ -70,6 +70,7 @@ Before configuring auto-scaling, ensure you have the following components instal
 
 ```bash
 # Install Metrics Server (required for HPA and VPA)
+
 kubectl apply -f https://github.com/kubernetes-sigs/metrics-server/releases/latest/download/components.yaml
 
 # Verify Metrics Server is running

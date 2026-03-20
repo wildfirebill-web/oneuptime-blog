@@ -25,6 +25,7 @@ Install the NSX Ansible collection.
 
 ```bash
 # Install the official VMware NSX-T Ansible collection
+
 ansible-galaxy collection install vmware.ansible_for_nsxt
 
 # Also install required Python libraries

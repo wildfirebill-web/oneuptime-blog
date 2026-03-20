@@ -14,6 +14,7 @@ Service Account authentication is the standard approach for OpenTofu CI/CD pipel
 
 ```hcl
 # service-account.tf
+
 resource "google_service_account" "terraform" {
   account_id   = "sa-opentofu-runner"
   display_name = "OpenTofu Runner Service Account"
@@ -42,7 +43,7 @@ resource "google_project_iam_member" "terraform_editor" {
 gcloud iam service-accounts keys create opentofu-sa-key.json \
   --iam-account=sa-opentofu-runner@my-project.iam.gserviceaccount.com
 
-# Add to .gitignore — never commit key files!
+# Add to .gitignore - never commit key files!
 echo "*.json" >> .gitignore
 echo "opentofu-sa-key.json" >> .gitignore
 ```
@@ -71,7 +72,7 @@ export GOOGLE_CREDENTIALS=$(cat opentofu-sa-key.json)
 ```
 
 ```hcl
-# backend.tf — no credentials field needed when using env var
+# backend.tf - no credentials field needed when using env var
 terraform {
   backend "gcs" {
     bucket = "my-terraform-state-bucket"
@@ -84,7 +85,7 @@ terraform {
 ### Option 3: Inline Credentials
 
 ```hcl
-# Less secure — only for testing
+# Less secure - only for testing
 terraform {
   backend "gcs" {
     bucket      = "my-terraform-state-bucket"
@@ -103,7 +104,7 @@ EOF
 
 ## Service Account Impersonation (Recommended)
 
-Service account impersonation is more secure than key files — your identity assumes the SA's permissions without needing the SA's key:
+Service account impersonation is more secure than key files - your identity assumes the SA's permissions without needing the SA's key:
 
 ```hcl
 # backend.tf

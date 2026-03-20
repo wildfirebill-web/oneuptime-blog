@@ -33,6 +33,7 @@ Start by defining budgets in a configuration file that your platform tooling man
 
 ```yaml
 # telemetry-budgets.yaml
+
 # Managed by the platform team, consumed by Collector config generation
 teams:
   alpha:

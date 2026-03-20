@@ -121,7 +121,7 @@ Fargate tasks typically take 30-60 seconds to start. The infrastructure needs to
 
 EC2 tasks start faster (5-15 seconds) when an instance with available capacity already exists, because the instance is already running and often has the image cached. But if a new instance needs to launch, add 2-3 minutes for that.
 
-### Resource Ceiling
+Resource Ceiling
 
 Fargate maxes out at 4 vCPU and 30 GB memory per task. For most workloads that's plenty, but if you need a task with 16 GB of RAM for in-memory processing or GPU access, EC2 is your only option.
 
@@ -182,6 +182,7 @@ You don't have to pick one. A single ECS cluster can use both Fargate and EC2 th
 
 ```bash
 # Cluster with both Fargate and EC2 capacity providers
+
 aws ecs create-cluster \
   --cluster-name hybrid-cluster \
   --capacity-providers FARGATE FARGATE_SPOT ec2-on-demand ec2-spot \

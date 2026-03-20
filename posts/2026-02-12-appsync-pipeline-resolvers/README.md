@@ -296,6 +296,7 @@ This shows how multiple resolvers share the same validation function:
 
 ```yaml
 # Create Order uses all three functions
+
 CreateOrderResolver:
   Type: AWS::AppSync::Resolver
   Properties:

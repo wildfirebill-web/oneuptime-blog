@@ -45,6 +45,7 @@ The common pattern: CI/CD runs in account A, deploys to account B.
 
 ```hcl
 # Account A: CI/CD account (where OpenTofu runs)
+
 # Account B: Target account (where resources are created)
 
 provider "aws" {

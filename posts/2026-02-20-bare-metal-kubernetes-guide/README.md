@@ -42,6 +42,7 @@ Run these commands on every node (both control plane and worker nodes).
 ```bash
 #!/bin/bash
 # prepare-node.sh
+
 # Prepares a bare metal server for Kubernetes installation
 
 # Disable swap (Kubernetes requires swap to be off)

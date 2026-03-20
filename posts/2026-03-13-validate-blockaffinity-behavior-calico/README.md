@@ -29,6 +29,7 @@ View all current block affinity assignments to understand which nodes own which 
 
 ```bash
 # List all BlockAffinity objects in the cluster
+
 calicoctl get blockaffinity -o wide
 
 # Show block affinities for a specific node

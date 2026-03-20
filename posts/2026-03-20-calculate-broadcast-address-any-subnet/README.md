@@ -8,7 +8,7 @@ Description: Calculate the directed broadcast address for any IPv4 subnet using 
 
 ## Introduction
 
-The broadcast address of a subnet is the last address in the range — all host bits set to 1. Every device on that subnet receives a packet sent to this address. Calculating it correctly is essential for network configuration, firewall rules, and troubleshooting.
+The broadcast address of a subnet is the last address in the range - all host bits set to 1. Every device on that subnet receives a packet sent to this address. Calculating it correctly is essential for network configuration, firewall rules, and troubleshooting.
 
 ## The Formula
 
@@ -16,14 +16,14 @@ The broadcast address of a subnet is the last address in the range — all host 
 2. Apply a **wildcard mask** (inverse of subnet mask) using bitwise OR
 3. The result is the broadcast address
 
-```
+```text
 Broadcast = Network Address | Wildcard Mask
 Wildcard  = ~SubnetMask  (bitwise NOT of the mask)
 ```
 
 ## Worked Example: 192.168.1.0/24
 
-```
+```text
 Subnet mask:   255.255.255.0   = 11111111.11111111.11111111.00000000
 Wildcard mask:   0.  0.  0.255 = 00000000.00000000.00000000.11111111
 Network:       192.168.1.0     = 11000000.10101000.00000001.00000000
@@ -33,7 +33,7 @@ Broadcast:     192.168.1.255   = 11000000.10101000.00000001.11111111
 
 ## Worked Example: 10.10.10.128/26
 
-```
+```text
 /26 mask: 255.255.255.192 = ...11000000
 Wildcard:   0.  0.  0. 63 = ...00111111
 Network:  10.10.10.128     = ...10000000
@@ -61,6 +61,7 @@ def subnet_info(cidr: str):
     print(f"Usable Hosts:     {net.num_addresses - 2}")
 
 # Run from command line: python3 script.py 192.168.5.64/27
+
 if len(sys.argv) > 1:
     subnet_info(sys.argv[1])
 else:
@@ -82,7 +83,7 @@ ipcalc 192.168.5.0/27
 
 Output:
 
-```
+```text
 Address:   192.168.5.0          11000000.10101000.00000101. 00000000
 Netmask:   255.255.255.224 = 27 11111111.11111111.11111111. 11100000
 Wildcard:  0.0.0.31             00000000.00000000.00000000. 00011111
@@ -107,4 +108,4 @@ Hosts/Net: 30
 
 ## Conclusion
 
-The broadcast address is always the bitwise OR of the network address and the wildcard mask. Use Python's `ipaddress` module or `ipcalc` for instant calculations, and keep the pattern — all host bits set to 1 — in mind when manually verifying subnet boundaries.
+The broadcast address is always the bitwise OR of the network address and the wildcard mask. Use Python's `ipaddress` module or `ipcalc` for instant calculations, and keep the pattern - all host bits set to 1 - in mind when manually verifying subnet boundaries.

@@ -41,6 +41,7 @@ Exponential backoff increases delay between retries, giving servers time to reco
 
 ```python
 # exponential_backoff.py - Basic exponential backoff implementation
+
 import time
 import random
 import requests

@@ -25,6 +25,7 @@ When a domain user connects to a Samba share, Samba needs to map that user's Win
 
 ```bash
 # Verify DNS resolves the domain
+
 nslookup company.local
 
 # Install required packages

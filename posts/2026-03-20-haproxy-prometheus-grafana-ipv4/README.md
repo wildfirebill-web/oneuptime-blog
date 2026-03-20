@@ -12,7 +12,7 @@ HAProxy 2.0+ includes a native Prometheus exporter endpoint that exposes detaile
 
 ## Enabling Prometheus Exporter in HAProxy
 
-```
+```text
 # /etc/haproxy/haproxy.cfg
 
 global
@@ -39,6 +39,7 @@ backend app_servers
 
 ```bash
 # Restart HAProxy
+
 sudo systemctl restart haproxy
 
 # Test Prometheus endpoint

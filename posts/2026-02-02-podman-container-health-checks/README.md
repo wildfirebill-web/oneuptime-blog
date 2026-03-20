@@ -43,6 +43,7 @@ RUN npm ci --omit=dev
 COPY . .
 
 # HEALTHCHECK parameters:
+
 #   --interval=30s: Run the check every 30 seconds
 #   --timeout=5s: Fail if the check takes longer than 5 seconds
 #   --start-period=10s: Grace period for container startup

@@ -42,6 +42,7 @@ flowchart TD
 #!/bin/bash
 
 # Problematic - count is empty
+
 count=""
 if [ $count -gt 0 ]; then  # FAILS
     echo "Count is positive"

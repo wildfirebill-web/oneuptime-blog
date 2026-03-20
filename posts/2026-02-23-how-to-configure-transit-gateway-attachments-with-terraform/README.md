@@ -26,6 +26,7 @@ Start by creating the Transit Gateway itself:
 
 ```hcl
 # Configure the AWS provider
+
 terraform {
   required_providers {
     aws = {

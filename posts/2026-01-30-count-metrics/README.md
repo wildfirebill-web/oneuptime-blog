@@ -206,6 +206,7 @@ class LabeledCounterChild:
 
 
 # Usage example
+
 http_requests = LabeledCounter(
     name="http_requests_total",
     label_names=("method", "endpoint", "status_code")

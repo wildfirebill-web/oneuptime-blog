@@ -18,6 +18,7 @@ Containers are ephemeral by design. When a container is removed, its writable la
 
 ```bash
 # Create a named volume
+
 podman volume create mydata
 
 # The command outputs the volume name

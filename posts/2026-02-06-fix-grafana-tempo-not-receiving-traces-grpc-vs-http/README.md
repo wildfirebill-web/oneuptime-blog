@@ -22,6 +22,7 @@ The Collector's `otlp` exporter defaults to gRPC. Tempo might be configured for 
 
 ```yaml
 # This is gRPC by default
+
 exporters:
   otlp:
     endpoint: tempo:4317    # gRPC endpoint

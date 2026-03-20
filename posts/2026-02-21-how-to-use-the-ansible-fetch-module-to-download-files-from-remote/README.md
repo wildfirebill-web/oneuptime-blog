@@ -18,6 +18,7 @@ The simplest usage pulls a single file from a remote host:
 
 ```yaml
 # Fetch a file from a remote host to the control node
+
 - name: Download application log
   ansible.builtin.fetch:
     src: /var/log/myapp/app.log

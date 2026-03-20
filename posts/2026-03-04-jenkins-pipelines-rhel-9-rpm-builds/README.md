@@ -27,6 +27,7 @@ graph LR
 
 ```bash
 # Install RPM build tools
+
 sudo dnf install -y rpm-build rpmdevtools rpmlint mock createrepo
 
 # Add the jenkins user to the mock group

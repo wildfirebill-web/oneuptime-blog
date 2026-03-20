@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Datadog, Infrastructure as Code, IaC, SLOs, Reliability, Observability
+Tags: OpenTofu, Datadog, Infrastructure as Code, IaC, SLO, Reliability, Observability
 
 Description: Learn how to create Datadog Service Level Objectives with metric and monitor-based SLOs using OpenTofu.
 

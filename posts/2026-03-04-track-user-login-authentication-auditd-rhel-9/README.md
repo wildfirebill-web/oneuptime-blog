@@ -18,6 +18,7 @@ Make sure auditd is installed and running:
 
 ```bash
 # Verify auditd is active
+
 sudo systemctl status auditd
 
 # If not installed, install it

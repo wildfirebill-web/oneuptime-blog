@@ -45,6 +45,7 @@ Let us build a module that checks RHEL subscription status:
 ```python
 #!/usr/bin/python
 # library/rhel_subscription_check.py
+
 # Custom module to check RHEL subscription status
 
 from ansible.module_utils.basic import AnsibleModule

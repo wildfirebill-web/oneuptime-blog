@@ -253,6 +253,7 @@ Mitigate this by:
 
 ```bash
 # Example iptables rule on each node (cloud or on-prem)
+
 iptables -A INPUT -p tcp --dport 30080 -s 203.0.113.0/24 -j ACCEPT
 iptables -A INPUT -p tcp --dport 30080 -j DROP
 ```

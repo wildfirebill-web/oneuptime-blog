@@ -22,6 +22,7 @@ The `podman image trust` command provides two subcommands: `show` to display cur
 
 ```bash
 # Display the current trust configuration
+
 podman image trust show
 ```
 

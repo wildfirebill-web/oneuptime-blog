@@ -41,6 +41,7 @@ Here's a minimal Flask setup that works out of the box.
 
 ```python
 # application.py - Entry point for Elastic Beanstalk
+
 from flask import Flask
 
 application = Flask(__name__)

@@ -36,6 +36,7 @@ Run all three NSQ components:
 
 ```bash
 # Create a network for NSQ components to communicate
+
 docker network create nsq-net
 
 # Start nsqlookupd - the discovery service

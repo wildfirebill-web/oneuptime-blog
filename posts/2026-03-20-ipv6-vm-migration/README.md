@@ -2,9 +2,9 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, VM Migration, vMotion, Live Migration, VMware, Hyper-V, KVM
+Tags: IPv6, VM Migration, VMotion, Live Migration, VMware, Hyper-V, KVM
 
-Description: Configure IPv6 for virtual machine live migration in VMware vMotion, Hyper-V Live Migration, and KVM QEMU migration, ensuring the migration network uses IPv6 and VMs retain connectivity after migration.
+Description: Configure IPv6 for virtual machine live migration in VMware vMotion, Hyper-V Live Migration, and KVM QEMU migration, ensuring the migration network uses IPv6 and VMs retain connectivity after...
 
 ## Introduction
 
@@ -16,6 +16,7 @@ VM live migration moves running virtual machines between hypervisor hosts with m
 # Configure vMotion VMkernel adapter for IPv6
 
 # Step 1: Add IPv6 address to vMotion VMkernel adapter (esxcli)
+
 esxcli network ip interface ipv6 address add \
     --interface-name vmk1 \
     --ip 2001:db8:vmotion::10 \
@@ -158,4 +159,4 @@ Test-VMMigration -Name "MyVM" -DestinationHost "[2001:db8::20]"
 
 ## Conclusion
 
-VM live migration over IPv6 is supported natively by VMware vMotion (configure vMotion VMkernel with IPv6 addresses), Hyper-V Live Migration (use `Add-VMMigrationNetwork` with IPv6 CIDR), and KVM QEMU migration (use bracket notation for IPv6 destination in `virsh migrate`). After migration, VMs retain their IPv6 addresses — the hypervisor sends gratuitous NDP to update neighbor caches on connected switches. Use a dedicated IPv6 network segment for migration traffic to isolate it from VM data traffic and simplify firewall rules. The migration network IPv6 prefix should be reachable between all hosts in the cluster without going through the production network.
+VM live migration over IPv6 is supported natively by VMware vMotion (configure vMotion VMkernel with IPv6 addresses), Hyper-V Live Migration (use `Add-VMMigrationNetwork` with IPv6 CIDR), and KVM QEMU migration (use bracket notation for IPv6 destination in `virsh migrate`). After migration, VMs retain their IPv6 addresses - the hypervisor sends gratuitous NDP to update neighbor caches on connected switches. Use a dedicated IPv6 network segment for migration traffic to isolate it from VM data traffic and simplify firewall rules. The migration network IPv6 prefix should be reachable between all hosts in the cluster without going through the production network.

@@ -24,6 +24,7 @@ The default tier (`default`) has order 1000 and contains all standard NetworkPol
 
 ```yaml
 # Lower order = higher priority
+
 # Tier evaluation: security (100) → platform (500) → default (1000)
 ```
 

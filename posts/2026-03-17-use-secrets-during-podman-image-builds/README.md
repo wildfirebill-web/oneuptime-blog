@@ -18,6 +18,7 @@ During image builds, you often need credentials to access private package regist
 
 ```bash
 # Create a secret file
+
 echo -n "my-npm-token" > /tmp/npm_token
 
 # Build with the secret available

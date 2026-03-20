@@ -24,6 +24,7 @@ Here is a Terraform configuration that sets up two GCP providers, one for the US
 
 ```hcl
 # Default provider - targets us-central1
+
 provider "google" {
   project = var.project_id
   region  = "us-central1"

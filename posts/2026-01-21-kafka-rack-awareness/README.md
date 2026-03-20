@@ -30,6 +30,7 @@ Each broker needs a rack identifier in its configuration:
 # server.properties
 
 # Unique broker ID
+
 broker.id=1
 
 # Rack identifier

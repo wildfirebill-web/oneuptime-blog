@@ -48,6 +48,7 @@ Key concepts:
 
 ```yaml
 # prometheus.yml or command line args
+
 # Keep data for 15 days
 --storage.tsdb.retention.time=15d
 ```

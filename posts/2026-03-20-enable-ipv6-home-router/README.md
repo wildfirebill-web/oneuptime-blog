@@ -35,7 +35,7 @@ Most home routers support these IPv6 connection types:
 
 | Connection Type | When to Use |
 |----------------|------------|
-| Auto-detect / Automatic | Try this first — works with most ISPs |
+| Auto-detect / Automatic | Try this first - works with most ISPs |
 | DHCPv6 | ISP assigns a fixed IPv6 prefix |
 | Native IPv6 (SLAAC) | ISP sends Router Advertisements |
 | IPv6 Prefix Delegation | ISP delegates a /56 or /48 block |
@@ -47,7 +47,7 @@ For most residential ISPs, select **Auto-detect** or **DHCPv6**.
 
 Enable prefix delegation so your router distributes IPv6 addresses to all home devices:
 
-```
+```text
 WAN IPv6 Type: DHCPv6
 Prefix Delegation: Enable
 Prefix Size: /56 or /64 (depends on ISP)

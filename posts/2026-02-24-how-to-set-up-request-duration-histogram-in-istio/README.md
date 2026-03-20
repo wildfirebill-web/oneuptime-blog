@@ -236,6 +236,7 @@ Istio reports metrics from both the client side (`reporter="source"`) and the se
 
 ```promql
 # Client-side P95
+
 histogram_quantile(0.95,
   sum(rate(istio_request_duration_milliseconds_bucket{reporter="source", destination_service_name="payment-service"}[5m])) by (le)
 )

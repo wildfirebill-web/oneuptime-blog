@@ -46,6 +46,7 @@ The configuration is minimal because SelfSigned issuers don't require authentica
 kubectl apply -f selfsigned-clusterissuer.yaml
 
 # Verify the issuer is ready
+
 kubectl get clusterissuer selfsigned-issuer
 ```
 

@@ -31,6 +31,7 @@ tracer = trace.get_tracer("ecommerce.recommendations", "1.0.0")
 meter = metrics.get_meter("ecommerce.recommendations", "1.0.0")
 
 # Latency histogram for the full recommendation pipeline
+
 reco_latency = meter.create_histogram(
     name="reco.latency_ms",
     description="End-to-end recommendation generation latency",

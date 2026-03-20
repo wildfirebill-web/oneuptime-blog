@@ -16,6 +16,7 @@ The standard UFW syntax `ufw allow 22` creates a rule that accepts SSH connectio
 
 ```bash
 # Global rule - applies to all interfaces
+
 sudo ufw allow 22/tcp
 
 # Interface-specific rule

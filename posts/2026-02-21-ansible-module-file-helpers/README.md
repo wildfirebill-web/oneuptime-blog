@@ -40,6 +40,7 @@ def run_module():
 
 ```python
 # Create timestamped backup before modifying
+
 backup_file = module.backup_local(path)
 ```
 

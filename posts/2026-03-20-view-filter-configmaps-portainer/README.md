@@ -1,8 +1,8 @@
-# How to View and Filter ConfigMaps in Portainer
+# How to View and Filter ConfigMaps in Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Kubernetes, ConfigMap, Management, DevOps
+Tags: Portainer, Kubernetes, ConfigMaps, Management, DevOps
 
 Description: Learn how to browse, search, and filter Kubernetes ConfigMaps in Portainer to manage application configurations.
 
@@ -20,6 +20,7 @@ Use the namespace dropdown at the top of the list to filter ConfigMaps to a spec
 
 ```bash
 # Equivalent CLI command to list ConfigMaps in a namespace
+
 kubectl get configmaps --namespace=production
 
 # List across all namespaces

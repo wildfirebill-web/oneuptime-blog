@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubewarden, OCI Registry, Policy Distribution, WebAssembly, Kubernetes, SUSE Rancher, kwctl
+Tags: Kubewarden, OCI Registry, Policy Distribution, WebAssembly, Kubernetes, SUSE Rancher, Kwctl
 
 Description: Learn how to annotate, sign, and publish Kubewarden WebAssembly policies to an OCI-compatible registry so they can be distributed and deployed across Kubernetes clusters.
 
 ---
 
-Kubewarden policies are distributed as OCI artifacts — the same format used for container images. This allows you to use any OCI-compatible registry (ghcr.io, Docker Hub, Harbor, or a private registry) to host and version your policies.
+Kubewarden policies are distributed as OCI artifacts - the same format used for container images. This allows you to use any OCI-compatible registry (ghcr.io, Docker Hub, Harbor, or a private registry) to host and version your policies.
 
 ---
 
@@ -18,6 +18,7 @@ Before publishing, compile your policy:
 
 ```bash
 # Rust policy
+
 cargo build --target wasm32-wasi --release
 cp target/wasm32-wasi/release/my-policy.wasm .
 
@@ -202,6 +203,6 @@ kubectl apply -f cluster-admission-policy.yaml
 
 ## Best Practices
 
-- Always sign policies before deploying to production clusters — Kubewarden supports signature verification natively.
+- Always sign policies before deploying to production clusters - Kubewarden supports signature verification natively.
 - Use semantic versioning tags (v0.1.0) alongside `latest` so policy deployments are reproducible.
 - Store `metadata.yaml` alongside the policy source code in version control so metadata and logic stay in sync.

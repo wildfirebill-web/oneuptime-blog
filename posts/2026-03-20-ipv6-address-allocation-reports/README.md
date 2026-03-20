@@ -158,4 +158,4 @@ print("HTML report: ipv6_report.html")
 
 ## Conclusion
 
-IPv6 allocation reports should answer three questions: what is allocated and to whom (inventory), what is empty or potentially reclaim-able (optimization), and what is the growth trend (capacity planning). Generate reports weekly from IPAM via API rather than manually, and export to CSV for stakeholders who need spreadsheet access. The most actionable report content is the list of /48 prefixes with no child /64 allocations — these are candidates for reclamation or reuse.
+IPv6 allocation reports should answer three questions: what is allocated and to whom (inventory), what is empty or potentially reclaim-able (optimization), and what is the growth trend (capacity planning). Generate reports weekly from IPAM via API rather than manually, and export to CSV for stakeholders who need spreadsheet access. The most actionable report content is the list of /48 prefixes with no child /64 allocations - these are candidates for reclamation or reuse.

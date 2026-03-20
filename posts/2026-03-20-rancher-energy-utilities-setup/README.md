@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: rancher, energy, utilities, scada, edge, kubernetes, nerc-cip
+Tags: Rancher, Energy, Utilities, SCADA, Edge, Kubernetes, Nerc-cip
 
 Description: A guide to deploying Rancher for energy and utilities organizations, covering SCADA integration, NERC CIP compliance, grid management, and renewable energy monitoring.
 
@@ -20,7 +20,7 @@ Energy and utility companies manage complex IT/OT convergence challenges: grid m
 
 ## Architecture
 
-```
+```text
 Enterprise IT Zone (Rancher-managed)
 ├── Business Intelligence Platform
 ├── Customer Portal (web-facing)
@@ -41,6 +41,7 @@ Control Zone (Isolated - NERC CIP)
 
 ```yaml
 # Strict network isolation for OT DMZ namespace
+
 apiVersion: networking.k8s.io/v1
 kind: NetworkPolicy
 metadata:

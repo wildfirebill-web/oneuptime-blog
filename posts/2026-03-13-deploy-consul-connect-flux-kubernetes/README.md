@@ -26,6 +26,7 @@ This guide covers deploying Consul Connect on Kubernetes using Flux CD HelmRelea
 
 ```yaml
 # clusters/my-cluster/consul/namespace.yaml
+
 apiVersion: v1
 kind: Namespace
 metadata:

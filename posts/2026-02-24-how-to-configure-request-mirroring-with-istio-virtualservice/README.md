@@ -193,6 +193,7 @@ Since the mirror response is discarded, you need to monitor it through other mea
 
 ```bash
 # Check v2 logs for errors
+
 kubectl logs deploy/my-app-v2 -c my-app -f
 
 # Check v2 proxy metrics

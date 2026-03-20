@@ -29,6 +29,7 @@ Use the official Istio Helm charts for a fully GitOps-managed installation.
 
 ```yaml
 # infrastructure/sources/istio-helm.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

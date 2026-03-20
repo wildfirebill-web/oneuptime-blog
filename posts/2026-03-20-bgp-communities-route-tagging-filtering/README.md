@@ -23,7 +23,7 @@ BGP communities are optional transitive attributes attached to route announcemen
 
 Use a route map to set a community value on routes before sending them to a neighbor:
 
-```
+```text
 ! Create a route map to tag routes with community 65001:100
 route-map SET_COMMUNITY permit 10
  ! Match the specific prefix to tag
@@ -44,7 +44,7 @@ Without `send-community`, communities are stripped before the update is sent.
 
 On the receiving router, create a community list to match the tag:
 
-```
+```text
 ! Define a community list matching community 65001:100
 ip community-list standard CUST_ROUTES permit 65001:100
 
@@ -65,7 +65,7 @@ router bgp 65002
 
 ISPs commonly use communities to let customers control how their routes are announced. Example: customer sets community `65001:200` to request no-export to specific peers:
 
-```
+```bash
 ! ISP router: match customer's no-export community
 ip community-list standard NO_PEER_EXPORT permit 65001:200
 
@@ -82,7 +82,7 @@ route-map CUSTOMER_IN permit 20
 
 Use communities to mark routes by geographic region for selective advertising:
 
-```
+```text
 ! Mark routes learned from the European PoP
 route-map EUROPE_TAG permit 10
  set community 65001:300 additive
@@ -98,7 +98,7 @@ route-map PREFER_US permit 20
 
 ## Step 5: View Communities in the BGP Table
 
-```
+```text
 ! Show BGP table with community column
 Router# show ip bgp community 65001:100
 

@@ -16,6 +16,7 @@ The most common use of `map` is extracting a single field from a list of objects
 
 ```yaml
 # playbook-extract-attr.yml
+
 # Extracts the hostname field from a list of server objects
 - name: Extract attributes with map
   hosts: localhost

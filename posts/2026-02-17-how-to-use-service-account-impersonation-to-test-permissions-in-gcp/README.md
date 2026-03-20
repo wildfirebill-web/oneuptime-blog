@@ -41,6 +41,7 @@ First, you need the `roles/iam.serviceAccountTokenCreator` role on the target se
 
 ```bash
 # Grant yourself permission to impersonate a service account
+
 gcloud iam service-accounts add-iam-policy-binding \
   app-backend@my-project.iam.gserviceaccount.com \
   --member="user:developer@example.com" \

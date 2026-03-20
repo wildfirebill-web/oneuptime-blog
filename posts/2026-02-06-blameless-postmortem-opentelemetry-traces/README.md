@@ -25,6 +25,7 @@ The first step is ensuring you have trace data from the incident window. If you 
 
 ```yaml
 # otel-collector-config.yaml
+
 processors:
   # Tail-based sampling retains interesting traces
   tail_sampling:

@@ -38,6 +38,7 @@ Ubuntu's official repositories are divided into four components:
 
 ```bash
 # View the main sources file
+
 cat /etc/apt/sources.list
 
 # View all additional source files

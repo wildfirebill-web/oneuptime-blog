@@ -16,6 +16,7 @@ The most direct approach is setting `ansible_port` per host:
 
 ```ini
 # inventory/hosts
+
 [webservers]
 web01 ansible_host=10.0.1.10 ansible_port=22
 web02 ansible_host=10.0.1.11 ansible_port=2222

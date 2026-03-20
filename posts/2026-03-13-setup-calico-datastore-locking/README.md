@@ -42,6 +42,7 @@ Calico datastore locking (`calicoctl datastore migrate lock`) prevents Felix fro
 
 ```bash
 # Step 1: Export current state
+
 DATASTORE_TYPE=etcdv3 calicoctl datastore migrate export \
   > calico-migration-backup.yaml
 

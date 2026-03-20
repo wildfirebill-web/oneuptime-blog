@@ -35,6 +35,7 @@ Never run Portainer over HTTP in production. Use HTTPS with a valid TLS certific
 
 ```bash
 # Option A: Use Portainer with TLS certificates directly
+
 docker run -d \
   --name portainer \
   --restart=unless-stopped \
@@ -99,7 +100,7 @@ docker run -d \
 Add firewall rules:
 
 ```bash
-# UFW — Allow only specific source IPs
+# UFW - Allow only specific source IPs
 sudo ufw allow from 10.0.0.0/8 to any port 9443 comment "Portainer - VPN only"
 sudo ufw deny 9443
 

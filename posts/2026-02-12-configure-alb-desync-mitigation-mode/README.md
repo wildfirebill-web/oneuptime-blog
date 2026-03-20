@@ -76,6 +76,7 @@ graph TD
 
 ```bash
 # Check the current desync mitigation mode
+
 aws elbv2 describe-load-balancer-attributes \
     --load-balancer-arn arn:aws:elasticloadbalancing:us-east-1:123456789012:loadbalancer/app/my-alb/abc123 \
     --query 'Attributes[?Key==`routing.http.desync_mitigation_mode`].Value' \

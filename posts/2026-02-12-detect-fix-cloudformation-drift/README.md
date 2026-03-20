@@ -27,6 +27,7 @@ Common causes of drift:
 
 ```bash
 # Start a drift detection operation
+
 DETECTION_ID=$(aws cloudformation detect-stack-drift \
   --stack-name my-app-prod \
   --query 'StackDriftDetectionId' \

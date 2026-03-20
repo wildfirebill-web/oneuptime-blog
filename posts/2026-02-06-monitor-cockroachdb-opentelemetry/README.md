@@ -51,6 +51,7 @@ This collector configuration scrapes metrics from a three-node CockroachDB clust
 
 ```yaml
 # otel-collector-config.yaml
+
 receivers:
   # Scrape CockroachDB's built-in Prometheus metrics endpoint
   prometheus:

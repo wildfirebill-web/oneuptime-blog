@@ -8,11 +8,11 @@ Description: Learn how to build a developer self-service infrastructure platform
 
 ## Introduction
 
-A developer self-service platform allows developers to provision infrastructure themselves through opinionated modules and automated workflows — without needing to understand the underlying cloud complexity. Platform engineers build the modules; developers call them. This guide shows how to structure the platform.
+A developer self-service platform allows developers to provision infrastructure themselves through opinionated modules and automated workflows - without needing to understand the underlying cloud complexity. Platform engineers build the modules; developers call them. This guide shows how to structure the platform.
 
 ## The Platform Module Architecture
 
-```
+```text
 platform-modules/           (Platform team owns)
 ├── environments/           # Create complete environments
 │   ├── dev-environment/
@@ -38,7 +38,8 @@ Platform team builds opinionated modules that hide complexity.
 
 ```hcl
 # platform-modules/services/web-api/main.tf
-# This module is what developers call — they don't see the ECS/ALB complexity
+
+# This module is what developers call - they don't see the ECS/ALB complexity
 
 variable "service_name" {
   type        = string
@@ -88,7 +89,7 @@ variable "health_check_path" {
 
 ```hcl
 # platform-modules/services/web-api/internal.tf
-# Developers don't interact with this — it's all internal platform logic
+# Developers don't interact with this - it's all internal platform logic
 
 data "aws_ssm_parameter" "cluster_arn" {
   name = "/platform/${var.environment}/ecs/cluster-arn"
@@ -215,4 +216,4 @@ jobs:
 
 ## Summary
 
-A developer self-service platform uses platform engineering principles: platform teams build opinionated, production-grade modules that encapsulate all infrastructure complexity; developers call these modules with a handful of parameters. The key is a clean abstraction layer — developers specify what (service name, image, config) and the module handles how (ECS, ALB, autoscaling, logging). Version and semver your platform modules so developers can pin versions and upgrade on their own schedule.
+A developer self-service platform uses platform engineering principles: platform teams build opinionated, production-grade modules that encapsulate all infrastructure complexity; developers call these modules with a handful of parameters. The key is a clean abstraction layer - developers specify what (service name, image, config) and the module handles how (ECS, ALB, autoscaling, logging). Version and semver your platform modules so developers can pin versions and upgrade on their own schedule.

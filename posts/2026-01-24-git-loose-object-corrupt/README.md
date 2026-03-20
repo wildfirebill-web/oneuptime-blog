@@ -18,6 +18,7 @@ When Git encounters a corrupt loose object, you'll see errors like these:
 
 ```bash
 # Typical corrupt object errors
+
 error: object file .git/objects/ab/cdef1234567890... is corrupted
 fatal: loose object abcdef1234567890... (stored in .git/objects/ab/cdef1234567890...) is corrupt
 

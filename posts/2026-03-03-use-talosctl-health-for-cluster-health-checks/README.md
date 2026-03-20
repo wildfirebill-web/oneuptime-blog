@@ -33,6 +33,7 @@ This is the most thorough single-command health check available for a Talos Linu
 
 ```bash
 # Run a health check targeting any control plane node
+
 talosctl health --nodes <control-plane-ip>
 ```
 

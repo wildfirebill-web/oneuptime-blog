@@ -51,6 +51,7 @@ To check if your instance is EBS-optimized:
 
 ```bash
 # Check EBS optimization status for a running instance
+
 aws ec2 describe-instances \
     --instance-ids i-0123456789abcdef0 \
     --query 'Reservations[0].Instances[0].EbsOptimized'

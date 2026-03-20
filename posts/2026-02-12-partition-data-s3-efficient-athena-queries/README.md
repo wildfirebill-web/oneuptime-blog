@@ -178,6 +178,7 @@ If you're producing data from a Glue job or Spark application, make sure to writ
 
 ```python
 # Writing partitioned data from a Glue ETL job
+
 from awsglue.context import GlueContext
 from pyspark.context import SparkContext
 from pyspark.sql import functions as F

@@ -21,6 +21,7 @@ OpenVPN has been the workhorse of Linux VPN solutions for years. While WireGuard
 
 ```bash
 # Enable EPEL
+
 sudo dnf install -y epel-release
 
 # Install OpenVPN and the certificate management tool

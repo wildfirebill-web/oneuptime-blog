@@ -40,6 +40,7 @@ Start by enabling Migration Hub in your chosen home region. This is important be
 
 ```python
 # Enable Migration Hub and set home region
+
 import boto3
 
 migration_hub = boto3.client('migrationhub-config')

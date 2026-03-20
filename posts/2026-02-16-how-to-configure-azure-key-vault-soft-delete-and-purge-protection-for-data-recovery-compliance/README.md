@@ -37,6 +37,7 @@ This script checks all Key Vaults in your subscription and reports their protect
 
 ```bash
 # List all Key Vaults with their soft-delete and purge protection settings
+
 az keyvault list --query "[].{name:name, resourceGroup:resourceGroup, softDelete:properties.enableSoftDelete, purgeProtection:properties.enablePurgeProtection, retentionDays:properties.softDeleteRetentionInDays}" -o table
 ```
 

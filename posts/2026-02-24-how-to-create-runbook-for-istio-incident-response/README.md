@@ -34,6 +34,7 @@ When an Istio-related alert fires, start here:
 
 ```bash
 # Check if istiod is running
+
 kubectl get pods -n istio-system -l app=istiod
 
 # Check if gateways are running

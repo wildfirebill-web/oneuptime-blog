@@ -93,7 +93,7 @@ Change these immediately after first login.
 
 ## Step 4: Deploy the Application Stack in Portainer
 
-The app doesn't need to expose ports to the host — NPM handles external access:
+The app doesn't need to expose ports to the host - NPM handles external access:
 
 ```yaml
 version: "3.8"
@@ -175,7 +175,7 @@ Restrict access to the Portainer UI through NPM:
 
 - Use Let's Encrypt certificates via NPM for automatic renewal.
 - Connect NPM and all app containers to a shared Docker network.
-- Do not expose application container ports to the host — route everything through NPM.
+- Do not expose application container ports to the host - route everything through NPM.
 - Enable "Block Common Exploits" on all proxy hosts.
 - Use access lists to restrict the NPM admin panel to trusted IPs.
 

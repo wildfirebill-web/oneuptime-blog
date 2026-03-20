@@ -116,6 +116,7 @@ Different application types need different capabilities:
 
 ```yaml
 # Database requiring file capabilities
+
 apiVersion: v1
 kind: Pod
 metadata:

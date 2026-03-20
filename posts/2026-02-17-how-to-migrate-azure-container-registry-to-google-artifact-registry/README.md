@@ -31,6 +31,7 @@ List all repositories and images in your Azure Container Registry.
 
 ```bash
 # List all repositories in the registry
+
 az acr repository list \
   --name myacr \
   --output table

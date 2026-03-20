@@ -82,6 +82,7 @@ The org-level sink captures logs from all projects. You need organization-level 
 # org-sink.tf - Organization-level logging sink
 
 # Sink for admin activity audit logs
+
 resource "google_logging_organization_sink" "admin_activity" {
   name             = "org-admin-activity-to-bigquery"
   org_id           = var.org_id

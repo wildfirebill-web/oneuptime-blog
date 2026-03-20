@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MySQL, IPv4, bind-address, Remote Connections, Configuration, Database
+Tags: MySQL, IPv4, Bind-address, Remote Connections, Configuration, Database
 
 Description: Configure MySQL's bind-address in my.cnf to accept remote connections from specific IPv4 addresses, and create user grants to allow remote access.
 
@@ -14,6 +14,7 @@ By default, MySQL binds to `127.0.0.1` and only accepts local connections. To al
 
 ```bash
 # /etc/mysql/mysql.conf.d/mysqld.cnf (Ubuntu/Debian)
+
 # or /etc/my.cnf (RHEL/CentOS)
 
 [mysqld]

@@ -82,6 +82,7 @@ The OpenTelemetry approach provides vendor-neutral instrumentation that can send
 
 ```python
 # OpenTelemetry instrumentation example
+
 # This code is vendor-neutral and can send data to any OTel-compatible backend
 
 from opentelemetry import trace

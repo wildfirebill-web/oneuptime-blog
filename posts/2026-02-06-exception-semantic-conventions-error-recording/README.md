@@ -48,6 +48,7 @@ This Python example shows both the convenient method and the manual approach. Th
 
 ```python
 # Two approaches to recording exceptions on spans.
+
 # The record_exception method is convenient and handles
 # stack trace extraction automatically. The manual approach
 # gives you full control over the event attributes.

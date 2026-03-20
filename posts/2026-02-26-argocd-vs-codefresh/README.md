@@ -44,6 +44,7 @@ When you run ArgoCD yourself, you deploy and manage all components.
 
 ```yaml
 # You manage the full ArgoCD stack
+
 # Installation via Helm
 helm install argocd argo/argo-cd -n argocd --create-namespace \
   --set server.replicas=2 \

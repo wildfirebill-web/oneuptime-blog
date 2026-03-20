@@ -45,6 +45,7 @@ First, create your target groups. Each target group should point to the appropri
 
 ```bash
 # Create the first target group for the API (port 8080)
+
 aws elbv2 create-target-group \
   --name api-targets \
   --protocol HTTP \

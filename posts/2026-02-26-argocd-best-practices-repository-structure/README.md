@@ -78,6 +78,7 @@ Separate repositories for platform config, team configs, and application source 
 
 ```text
 # Platform config repo (platform-config)
+
 argocd/
   install/
   projects/

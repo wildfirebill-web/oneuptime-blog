@@ -47,6 +47,7 @@ Here's what vendor lock-in looks like:
 
 ```python
 # Vendor-specific instrumentation (example with fictional VendorX)
+
 from vendorx import trace
 
 @trace.instrument()

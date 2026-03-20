@@ -26,6 +26,7 @@ Before detaching, verify what you have attached:
 
 ```bash
 # Check attachment status
+
 pro status
 
 # See account and subscription information

@@ -78,6 +78,7 @@ Before applying any bucket policy, validate the JSON:
 
 ```bash
 # Validate JSON syntax with Python
+
 echo '{"Version":"2012-10-17","Statement":[]}' | python3 -m json.tool
 
 # Or validate a policy file

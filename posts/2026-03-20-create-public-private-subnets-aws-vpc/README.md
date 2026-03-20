@@ -4,11 +4,11 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: AWS, VPC, Subnets, IPv4, Public Subnet, Private Subnet, Networking
 
-Description: Create public and private IPv4 subnets in an AWS VPC across multiple availability zones, configure auto-assign public IPs for public subnets, and understand the routing differences between subnet types.
+Description: Create public and private IPv4 subnets in an AWS VPC across multiple availability zones, configure auto-assign public IPs for public subnets, and understand the routing differences between subnet...
 
 ## Introduction
 
-AWS subnets are classified as public or private based on their route table configuration — not the subnet itself. A subnet is public if it has a route to an Internet Gateway (IGW). Private subnets route outbound traffic through a NAT Gateway instead.
+AWS subnets are classified as public or private based on their route table configuration - not the subnet itself. A subnet is public if it has a route to an Internet Gateway (IGW). Private subnets route outbound traffic through a NAT Gateway instead.
 
 ## Architecture
 
@@ -28,6 +28,7 @@ graph TD
 VPC_ID=vpc-0abc123def456
 
 # Public subnets
+
 aws ec2 create-subnet --vpc-id $VPC_ID --cidr-block 10.0.1.0/24 \
   --availability-zone us-east-1a \
   --tag-specifications 'ResourceType=subnet,Tags=[{Key=Name,Value=public-1a}]'

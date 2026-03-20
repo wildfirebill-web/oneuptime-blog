@@ -223,6 +223,7 @@ Here's a complete setup showing DENY and ALLOW working together:
 
 ```yaml
 # Layer 1: Hard DENY - always blocked
+
 apiVersion: security.istio.io/v1
 kind: AuthorizationPolicy
 metadata:

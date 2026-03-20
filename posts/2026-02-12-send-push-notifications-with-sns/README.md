@@ -32,6 +32,7 @@ First, create a platform application for FCM in SNS.
 
 ```bash
 # Create an SNS platform application for FCM (Android/Web)
+
 # You'll need the FCM API key from the Firebase console
 aws sns create-platform-application \
   --name MyApp-FCM \

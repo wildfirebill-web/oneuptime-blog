@@ -39,6 +39,7 @@ Download the Talos image and flash it to all three SD cards:
 
 ```bash
 # Download the Pi image
+
 curl -LO https://github.com/siderolabs/talos/releases/latest/download/metal-rpi_generic-arm64.raw.xz
 xz -d metal-rpi_generic-arm64.raw.xz
 

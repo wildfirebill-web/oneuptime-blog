@@ -42,6 +42,7 @@ The setup is straightforward. Specify the source file system and the destination
 
 ```bash
 # Create cross-region replication
+
 aws efs create-replication-configuration \
   --source-file-system-id "fs-0abc123def456789" \
   --destinations '[{

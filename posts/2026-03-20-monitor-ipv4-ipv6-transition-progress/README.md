@@ -8,7 +8,7 @@ Description: Learn how to track and measure the progress of IPv4 to IPv6 migrati
 
 ## Why Monitoring the Transition Matters
 
-Migrating from IPv4 to IPv6 is rarely done overnight. Most networks operate in a dual-stack mode for an extended period—serving both protocols simultaneously. Without systematic monitoring, it's easy to lose track of which hosts are IPv6-capable, which tunnels are active, and whether IPv6 traffic is actually being preferred over IPv4 where intended.
+Migrating from IPv4 to IPv6 is rarely done overnight. Most networks operate in a dual-stack mode for an extended period-serving both protocols simultaneously. Without systematic monitoring, it's easy to lose track of which hosts are IPv6-capable, which tunnels are active, and whether IPv6 traffic is actually being preferred over IPv4 where intended.
 
 ## Step 1: Inventory Dual-Stack Hosts
 
@@ -16,6 +16,7 @@ Start by identifying which hosts in your network already have IPv6 addresses ass
 
 ```bash
 # Scan a subnet for hosts responding on both IPv4 and IPv6
+
 nmap -6 -sn fe80::/64 --interface eth0   # link-local discovery
 nmap -4 -sn 192.168.1.0/24               # baseline IPv4 count
 ```

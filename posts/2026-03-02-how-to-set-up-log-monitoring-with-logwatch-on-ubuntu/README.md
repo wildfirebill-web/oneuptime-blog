@@ -14,6 +14,7 @@ Logwatch is a log analysis tool that processes your system logs and generates re
 
 ```bash
 # Install logwatch and its dependencies
+
 sudo apt update
 sudo apt install logwatch
 

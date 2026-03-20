@@ -136,6 +136,7 @@ Use different emails for different environments to make it clear which cluster g
 
 ```yaml
 # Staging automation
+
 spec:
   git:
     commit:

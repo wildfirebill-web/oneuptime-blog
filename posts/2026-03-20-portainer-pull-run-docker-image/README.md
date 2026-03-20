@@ -31,8 +31,9 @@ In the pull dialog:
 
 - **Image**: Enter the full image reference.
 
-```
+```bash
 # Public Docker Hub images:
+
 nginx:alpine
 redis:7
 postgres:15-alpine
@@ -54,7 +55,7 @@ Click **Pull the image**. Portainer will display a progress indicator while the 
 
 ## Method 2: Pull During Container Creation
 
-This is the most common workflow — Portainer pulls the image automatically when you deploy:
+This is the most common workflow - Portainer pulls the image automatically when you deploy:
 
 1. Navigate to **Containers > Add container**.
 2. Enter the image name in the **Image** field.
@@ -62,7 +63,7 @@ This is the most common workflow — Portainer pulls the image automatically whe
 4. Configure the rest of your container settings.
 5. Click **Deploy the container**.
 
-```
+```text
 # In the container creation form:
 Name:   my-redis
 Image:  redis:7-alpine
@@ -78,7 +79,7 @@ Image:  redis:7-alpine
 2. Click **Add registry**.
 3. Fill in the details:
 
-```
+```text
 Registry provider: Custom registry
 Name:              My Private Registry
 Registry URL:      registry.example.com:5000
@@ -113,7 +114,7 @@ Or during container creation, select the registry in the **Registry** dropdown.
 2. Enter the image name.
 3. Configure:
 
-```
+```text
 Name:              my-nginx-web
 Image:             nginx:alpine
 Port mapping:      8080 → 80

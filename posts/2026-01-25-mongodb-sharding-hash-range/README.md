@@ -91,6 +91,7 @@ Config servers must be a replica set:
 
 ```bash
 # On each config server (3 servers minimum)
+
 mongod --configsvr --replSet configReplSet --port 27019 \
   --dbpath /data/configdb --bind_ip 0.0.0.0
 ```

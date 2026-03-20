@@ -29,6 +29,7 @@ Create a Gateway with TCP listeners:
 
 ```yaml
 # tcp-gateway.yaml
+
 apiVersion: gateway.networking.k8s.io/v1
 kind: Gateway
 metadata:

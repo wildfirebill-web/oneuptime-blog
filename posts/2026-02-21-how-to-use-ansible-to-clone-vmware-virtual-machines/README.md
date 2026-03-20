@@ -33,6 +33,7 @@ The `community.vmware.vmware_guest` module handles cloning when you specify a `t
 
 ```yaml
 # clone-vm.yml
+
 ---
 - name: Clone a VMware virtual machine
   hosts: localhost

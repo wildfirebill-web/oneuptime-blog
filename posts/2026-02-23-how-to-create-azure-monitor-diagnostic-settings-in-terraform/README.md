@@ -36,6 +36,7 @@ resource "azurerm_resource_group" "main" {
 }
 
 # Create the Log Analytics workspace destination
+
 resource "azurerm_log_analytics_workspace" "main" {
   name                = "law-central-logging"
   location            = azurerm_resource_group.main.location

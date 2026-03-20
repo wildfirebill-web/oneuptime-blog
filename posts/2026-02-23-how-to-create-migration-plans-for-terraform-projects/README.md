@@ -46,6 +46,7 @@ Document everything about the current setup:
 ```bash
 #!/bin/bash
 # inventory.sh
+
 # Generate a complete inventory of current Terraform setup
 
 echo "## Current State Inventory"

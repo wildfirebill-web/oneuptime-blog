@@ -16,6 +16,7 @@ The simplest use case pushes files from the controller to the managed host.
 
 ```yaml
 # Sync a local directory to remote hosts
+
 - name: Deploy application files
   ansible.posix.synchronize:
     src: /opt/build/output/webapp/

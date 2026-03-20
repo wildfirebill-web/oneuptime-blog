@@ -43,6 +43,7 @@ The `sentinel.hcl` file defines the policy set configuration:
 
 ```hcl
 # sentinel.hcl
+
 # Main configuration for the Sentinel policy set
 
 # Import shared module

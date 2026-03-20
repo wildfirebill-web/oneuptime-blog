@@ -12,6 +12,7 @@ IPsec tunnel failures fall into a few categories: connectivity failures (can't r
 
 ```bash
 # Can the two gateways communicate?
+
 ping <REMOTE_GATEWAY_IP>
 
 # Verify UDP port 500 (IKE) is accessible
@@ -125,7 +126,7 @@ sudo iptables -A FORWARD -m policy --dir out --pol ipsec -j ACCEPT
 # Capture IKE and ESP traffic for analysis
 sudo tcpdump -i eth0 -n '(udp port 500 or udp port 4500 or proto 50)' -w ipsec.pcap
 
-# Analyze with Wireshark — IKEv2 dissector shows the full negotiation
+# Analyze with Wireshark - IKEv2 dissector shows the full negotiation
 wireshark ipsec.pcap
 ```
 

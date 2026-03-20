@@ -175,6 +175,7 @@ The `include` and `exclude` fields use glob patterns. This filters at the file l
 
 ```yaml
 # Include only production manifests
+
 directory:
   include: "production/*.yaml"
   exclude: ""

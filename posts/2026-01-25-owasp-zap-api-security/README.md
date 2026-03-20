@@ -54,6 +54,7 @@ Download from https://www.zaproxy.org/download/ for Windows, macOS, or Linux.
 
 ```bash
 # Pull the stable image
+
 docker pull zaproxy/zap-stable
 
 # Run ZAP in daemon mode

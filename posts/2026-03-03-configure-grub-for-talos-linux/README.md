@@ -57,6 +57,7 @@ On a running Talos system using GRUB, you can inspect the configuration:
 
 ```bash
 # Check the boot loader type
+
 talosctl dmesg | grep -i grub
 
 # View the current kernel command line (set by GRUB)

@@ -55,6 +55,7 @@ FAILED! => {"msg": "async_status - Job timed out"}
 ```yaml
 ---
 # basic-async.yml - Understanding async parameters
+
 - name: Basic async task example
   hosts: all
   tasks:

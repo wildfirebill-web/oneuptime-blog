@@ -20,6 +20,7 @@ Let me show this with a Python application using SQLAlchemy, but the approach wo
 
 ```bash
 # Install the required packages
+
 pip install opentelemetry-api opentelemetry-sdk opentelemetry-exporter-cloud-trace
 pip install opentelemetry-instrumentation-sqlalchemy
 pip install sqlalchemy pg8000

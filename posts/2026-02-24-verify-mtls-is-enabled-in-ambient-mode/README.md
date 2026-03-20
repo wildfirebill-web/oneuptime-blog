@@ -74,6 +74,7 @@ For a more human-readable check, use the Prometheus web UI or Grafana:
 
 ```promql
 # Count of mTLS connections in the last 5 minutes
+
 sum(rate(istio_tcp_connections_opened_total{connection_security_policy="mutual_tls"}[5m])) by (source_workload, destination_workload)
 ```
 

@@ -232,6 +232,7 @@ Usage example showing how tags connect queries to tables.
 
 ```python
 # Cache a query that joins users and orders
+
 cache = TaggedQueryCache("redis://localhost:6379")
 await cache.connect()
 

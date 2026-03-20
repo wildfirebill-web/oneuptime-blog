@@ -22,6 +22,7 @@ Start by looking at the connector's throughput and instance count in Cloud Monit
 
 ```bash
 # Check the current state of your VPC connector
+
 gcloud compute networks vpc-access connectors describe your-connector \
     --region=us-central1 \
     --format="json(machineType, minInstances, maxInstances, minThroughput, maxThroughput, state)"

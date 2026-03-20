@@ -19,7 +19,7 @@ Navigate to **System > Package Manager > Available Packages**:
 
 Navigate to **Services > HAProxy > Backend > Add**:
 
-```
+```text
 Name:           web-backend
 Mode:           HTTP
 Balance:        roundrobin
@@ -40,7 +40,7 @@ Health checking:
 
 Navigate to **Services > HAProxy > Frontend > Add**:
 
-```
+```text
 Name:           http-frontend
 Status:         Active
 Bind address:   0.0.0.0:80
@@ -49,13 +49,14 @@ Type:           HTTP/HTTPS
 Default backend: web-backend
 
 # ACL-based routing (optional)
+
 ACL name: is-api   expression: path_beg /api/
 Use backend: api-backend  when: is-api
 ```
 
 ## HTTPS Termination
 
-```
+```sql
 Frontend bind:  0.0.0.0:443
 Type: HTTP/HTTPS (SSL offloading)
 SSL Offloading: checked
@@ -95,11 +96,12 @@ backend web-backend
 ## Firewall Rule for HAProxy
 
 Navigate to **Firewall > Rules > WAN > Add**:
-```
+```text
 Protocol: TCP
 Destination: WAN address
 Port: 80, 443
 Description: Allow HTTP/HTTPS to HAProxy
+
 ```
 
 ## Monitor HAProxy Status

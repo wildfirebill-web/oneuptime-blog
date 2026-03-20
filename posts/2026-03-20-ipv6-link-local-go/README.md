@@ -21,11 +21,11 @@ func main() {
     // Link-local addresses: fe80::/10
     // REQUIRE a zone ID (interface name) to be usable
 
-    // Parse link-local — valid without zone but not usable for sockets
+    // Parse link-local - valid without zone but not usable for sockets
     addr, _ := netip.ParseAddr("fe80::1")
     fmt.Println("Is link-local:", addr.IsLinkLocalUnicast())  // true
 
-    // With zone ID — for socket operations
+    // With zone ID - for socket operations
     addrWithZone, _ := netip.ParseAddrPort("[fe80::1%eth0]:8080")
     fmt.Println("Addr:", addrWithZone.Addr())   // fe80::1%eth0
     fmt.Println("Zone:", addrWithZone.Addr().Zone())  // eth0
@@ -33,7 +33,7 @@ func main() {
     // net.IP approach
     ip := net.ParseIP("fe80::1")
     fmt.Println("net.IP link-local:", ip.IsLinkLocalUnicast())  // true
-    // net.IP has no zone ID — must use net.IPAddr or net.UDPAddr
+    // net.IP has no zone ID - must use net.IPAddr or net.UDPAddr
 
     // For binding, always specify interface
     ipAddr := &net.IPAddr{IP: ip, Zone: "eth0"}
@@ -249,4 +249,4 @@ func main() {
 
 ## Conclusion
 
-IPv6 link-local addresses in Go require a zone ID (interface name) for all socket operations — without it, the OS cannot determine which interface to use. Always specify zone IDs: in `net.IPAddr{Zone: "eth0"}`, in `net.UDPAddr{Zone: "eth0"}`, or by appending `%iface` to the address string in dial/listen calls (`"[fe80::1%eth0]:8080"`). Use `net/netip.Addr.Zone()` to extract the zone from a parsed address. For link-local multicast (service discovery protocols like mDNS), use `net.ListenMulticastUDP` with the interface's `Zone` field set. Always check `ip.IsLinkLocalUnicast()` before using a link-local address and ensure your application handles the zone ID requirement gracefully.
+IPv6 link-local addresses in Go require a zone ID (interface name) for all socket operations - without it, the OS cannot determine which interface to use. Always specify zone IDs: in `net.IPAddr{Zone: "eth0"}`, in `net.UDPAddr{Zone: "eth0"}`, or by appending `%iface` to the address string in dial/listen calls (`"[fe80::1%eth0]:8080"`). Use `net/netip.Addr.Zone()` to extract the zone from a parsed address. For link-local multicast (service discovery protocols like mDNS), use `net.ListenMulticastUDP` with the interface's `Zone` field set. Always check `ip.IsLinkLocalUnicast()` before using a link-local address and ensure your application handles the zone ID requirement gracefully.

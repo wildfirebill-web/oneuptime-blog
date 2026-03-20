@@ -16,6 +16,7 @@ Start by checking if the host itself is overloaded:
 
 ```bash
 # Overall system load
+
 uptime
 top -bn1 | head -20
 

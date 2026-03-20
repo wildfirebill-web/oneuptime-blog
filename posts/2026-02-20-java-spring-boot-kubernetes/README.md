@@ -47,6 +47,7 @@ Kubernetes health probes rely on Spring Boot Actuator endpoints.
 
 ```yaml
 # application.yml - Configure Actuator for Kubernetes
+
 management:
   endpoints:
     web:

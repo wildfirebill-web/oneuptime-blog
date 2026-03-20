@@ -8,12 +8,13 @@ Description: Learn how to configure comprehensive health checks across AWS, Azur
 
 ## Overview
 
-Health checks are the foundation of high availability — they detect failures and trigger routing changes or instance replacement. OpenTofu configures layered health checks: shallow for load balancer routing, deep for application readiness, and synthetic for external monitoring.
+Health checks are the foundation of high availability - they detect failures and trigger routing changes or instance replacement. OpenTofu configures layered health checks: shallow for load balancer routing, deep for application readiness, and synthetic for external monitoring.
 
 ## Step 1: AWS ALB Health Checks
 
 ```hcl
 # main.tf - Multi-level health checks
+
 # Shallow health check for load balancer (fast, lightweight)
 resource "aws_lb_target_group" "shallow" {
   name     = "app-tg-shallow"

@@ -222,6 +222,7 @@ Once the model is trained and validated, deploy it as a managed online endpoint 
 
 ```bash
 # Register the model in Azure ML
+
 az ml model create \
   --name credit-risk-model \
   --version 1 \

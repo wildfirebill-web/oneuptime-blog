@@ -16,6 +16,7 @@ The `terraform.workspace` expression is a built-in value that returns the name o
 
 ```hcl
 # Simple usage - embed workspace name in a resource name
+
 resource "aws_s3_bucket" "data" {
   bucket = "myapp-data-${terraform.workspace}"
 
@@ -27,7 +28,7 @@ resource "aws_s3_bucket" "data" {
 
 When you are in the "dev" workspace, the bucket is named `myapp-data-dev`. Switch to "prod" and it becomes `myapp-data-prod`. Same code, different results.
 
-## Resource Naming
+Resource Naming
 
 The most common use is preventing name collisions across workspaces:
 

@@ -164,6 +164,7 @@ One of Vault's killer features is dynamic secrets. Instead of static database pa
 
 ```bash
 # Enable the database secrets engine
+
 kubectl exec -n vault vault-0 -- vault secrets enable database
 
 # Configure the database connection

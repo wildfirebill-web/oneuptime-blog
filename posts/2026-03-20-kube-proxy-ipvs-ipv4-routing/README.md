@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, kube-proxy, IPVS, IPv4, Service Routing, Performance
+Tags: Kubernetes, Kube-proxy, IPVS, IPv4, Service Routing, Performance
 
 Description: Switch kube-proxy from iptables to IPVS mode for improved IPv4 service routing performance in large Kubernetes clusters with many services.
 
@@ -12,6 +12,7 @@ IPVS (IP Virtual Server) mode uses Linux's in-kernel load balancer instead of ip
 
 ```bash
 # Load required kernel modules on all nodes
+
 sudo modprobe ip_vs
 sudo modprobe ip_vs_rr
 sudo modprobe ip_vs_wrr

@@ -181,6 +181,7 @@ Key metrics exposed by the Pulsar client:
 
 ```yaml
 # Producer metrics captured by OpenTelemetry
+
 # pulsar.client.producer.message.send.duration - Histogram of send latencies
 # pulsar.client.producer.message.send.size - Size of published messages
 # pulsar.client.producer.message.pending.count - Messages waiting to be sent

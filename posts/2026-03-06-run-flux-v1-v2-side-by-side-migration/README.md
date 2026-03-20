@@ -30,6 +30,7 @@ Before adding Flux v2, document your Flux v1 configuration.
 
 ```bash
 # Check Flux v1 version and namespace
+
 kubectl get pods -n flux -l app=flux
 
 # List Flux v1 managed namespaces

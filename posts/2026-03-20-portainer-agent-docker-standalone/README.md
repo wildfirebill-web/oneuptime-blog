@@ -1,4 +1,4 @@
-# How to Install Portainer Agent on Docker Standalone
+# How to Install Portainer Agent on Docker Standalone - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -42,6 +42,7 @@ docker run -d \
 
 ```yaml
 # docker-compose-agent.yml
+
 version: "3.8"
 
 services:

@@ -24,6 +24,7 @@ Docker distinguishes between several categories of images. Knowing the differenc
 
 ```bash
 # See the breakdown of image categories
+
 docker system df -v | head -40
 ```
 

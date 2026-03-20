@@ -24,6 +24,7 @@ Some key characteristics of SquashFS:
 
 ```bash
 # On a typical Linux system, you can inspect SquashFS images
+
 # (not directly on Talos, since there is no shell)
 unsquashfs -l talos-rootfs.sqsh | head -20
 

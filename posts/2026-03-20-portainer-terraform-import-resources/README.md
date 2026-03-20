@@ -1,10 +1,10 @@
-# How to Import Existing Portainer Resources into Terraform
+# How to Import Existing Portainer Resources into Terraform - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Portainer, Terraform, Infrastructure, Migration, DevOps
 
-Description: Learn how to import existing Portainer resources — environments, users, teams, and stacks — into Terraform state so you can manage them as code without recreating them.
+Description: Learn how to import existing Portainer resources - environments, users, teams, and stacks - into Terraform state so you can manage them as code without recreating them.
 
 ## Introduction
 
@@ -23,6 +23,7 @@ The `terraform import` command associates an existing resource with a Terraform 
 
 ```bash
 # General syntax
+
 terraform import <resource_type>.<resource_name> <resource_id>
 ```
 
@@ -74,26 +75,26 @@ curl -s -H "X-API-Key: $TOKEN" "$PORTAINER_URL/api/registries" | \
 Before importing, write the Terraform config that matches your existing resources:
 
 ```hcl
-# environments.tf — Match your existing environment
+# environments.tf - Match your existing environment
 resource "portainer_environment" "production" {
   name             = "production"         # Must match actual name
   environment_url  = "unix:///var/run/docker.sock"
   environment_type = 1
 }
 
-# users.tf — Match your existing users
+# users.tf - Match your existing users
 resource "portainer_user" "admin_user" {
   username = "john.doe"
   password = "placeholder"  # Required by provider but won't be changed on import
   role     = 2
 }
 
-# teams.tf — Match your existing teams
+# teams.tf - Match your existing teams
 resource "portainer_team" "devops" {
   name = "devops"
 }
 
-# registries.tf — Match existing registry
+# registries.tf - Match existing registry
 resource "portainer_registry" "harbor" {
   name           = "Company Harbor"
   registry_type  = 6
@@ -103,7 +104,7 @@ resource "portainer_registry" "harbor" {
   password       = "placeholder"  # Will not overwrite on import
 }
 
-# stacks.tf — Match existing stack
+# stacks.tf - Match existing stack
 resource "portainer_stack" "myapp" {
   name               = "my-app"
   endpoint_id        = 1
@@ -151,7 +152,7 @@ For many resources, use a script:
 
 ```bash
 #!/bin/bash
-# bulk-import.sh — Import all Portainer resources
+# bulk-import.sh - Import all Portainer resources
 
 PORTAINER_URL="https://portainer.example.com"
 TOKEN="your-api-key"
@@ -188,7 +189,7 @@ echo "Import complete. Run 'terraform plan' to check for drift."
 Terraform 1.5+ supports `import` blocks in configuration:
 
 ```hcl
-# imports.tf — Terraform 1.5+ import blocks
+# imports.tf - Terraform 1.5+ import blocks
 import {
   to = portainer_environment.production
   id = "1"

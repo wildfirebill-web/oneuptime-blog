@@ -26,6 +26,7 @@ The simplest approach uses redis-cli commands:
 
 ```bash
 # Export all keys to a file
+
 redis-cli KEYS '*' > keys.txt
 
 # Export key-value pairs

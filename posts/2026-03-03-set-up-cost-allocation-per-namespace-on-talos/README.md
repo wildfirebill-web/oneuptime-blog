@@ -26,6 +26,7 @@ OpenCost is an open-source project that provides real-time cost allocation for K
 
 ```bash
 # Add the OpenCost Helm repository
+
 helm repo add opencost https://opencost.github.io/opencost-helm-chart
 helm repo update
 

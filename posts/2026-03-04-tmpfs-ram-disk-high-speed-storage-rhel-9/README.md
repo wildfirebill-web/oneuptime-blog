@@ -33,6 +33,7 @@ RHEL already uses tmpfs for several system directories:
 
 ```bash
 # Show existing tmpfs mounts
+
 mount | grep tmpfs
 ```
 

@@ -23,6 +23,7 @@ Create a custom processor that wraps your redaction logic and emits metrics:
 
 ```python
 # Redaction processor that emits compliance metrics
+
 from opentelemetry import metrics
 from opentelemetry.sdk.metrics import MeterProvider
 import re

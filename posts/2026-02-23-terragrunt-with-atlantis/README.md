@@ -27,6 +27,7 @@ Atlantis doesn't ship with Terragrunt, so you need to add it to the Atlantis Doc
 
 ```dockerfile
 # Dockerfile for Atlantis with Terragrunt
+
 FROM ghcr.io/runatlantis/atlantis:latest
 
 # Install Terragrunt

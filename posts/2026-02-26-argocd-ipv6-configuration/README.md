@@ -30,6 +30,7 @@ Before configuring ArgoCD, make sure your cluster supports dual-stack. Check the
 
 ```bash
 # Check if the cluster is configured for dual-stack
+
 kubectl get nodes -o jsonpath='{.items[0].spec.podCIDRs}'
 
 # Check if services support dual-stack

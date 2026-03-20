@@ -16,6 +16,7 @@ AWX exposes a Prometheus-compatible metrics endpoint at `/api/v2/metrics/`. This
 
 ```bash
 # Fetch AWX metrics in Prometheus format
+
 curl -s -H "Authorization: Bearer ${AWX_TOKEN}" \
   https://awx.example.com/api/v2/metrics/
 ```

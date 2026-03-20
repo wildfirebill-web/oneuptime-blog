@@ -28,6 +28,7 @@ Here is an example DaemonSet that runs a log collector on every node:
 
 ```yaml
 # daemonset.yaml
+
 apiVersion: apps/v1
 kind: DaemonSet
 metadata:

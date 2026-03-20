@@ -17,12 +17,13 @@ All End functions follow the same basic pattern:
 2. Execute the function-specific action
 3. If Segments Left > 0: advance to next segment and forward
 
-## End — Plain IPv6 Endpoint
+## End - Plain IPv6 Endpoint
 
 The simplest End function: decrement Segments Left and forward to the next SID.
 
 ```bash
 # Linux: configure End behavior
+
 ip -6 route add 5f00:1:1::1/128 \
   encap seg6local action End \
   dev lo
@@ -35,7 +36,7 @@ ip -6 route add 5f00:1:1::1/128 \
 
 **Use case**: Plain transit hop in a segment list.
 
-## End.X — Cross-Connect to Specific Interface/Next-Hop
+## End.X - Cross-Connect to Specific Interface/Next-Hop
 
 End.X advances the segment pointer and forwards out a specified interface.
 
@@ -50,9 +51,9 @@ ip -6 route add 5f00:1:1:0:e001::/128 \
 # Traffic destined for this SID always exits via eth0 to fe80::2
 ```
 
-**Use case**: Traffic Engineering — force traffic through a specific link.
+**Use case**: Traffic Engineering - force traffic through a specific link.
 
-## End.T — Table Lookup
+## End.T - Table Lookup
 
 End.T advances the segment pointer and looks up the next destination in a specified routing table.
 
@@ -68,7 +69,7 @@ ip -6 route add 5f00:1:1:0:e002::/128 \
 
 **Use case**: VRF-based forwarding without decapsulation.
 
-## End.DX4 — Decapsulate and IPv4 Cross-Connect
+## End.DX4 - Decapsulate and IPv4 Cross-Connect
 
 Removes the outer IPv6 header and forwards the inner IPv4 packet to a specific IPv4 next-hop.
 
@@ -81,7 +82,7 @@ ip -6 route add 5f00:1:1:0:e003::/128 \
 
 **Use case**: SRv6 → IPv4 gateway function.
 
-## End.DX6 — Decapsulate and IPv6 Cross-Connect
+## End.DX6 - Decapsulate and IPv6 Cross-Connect
 
 Removes the outer SRv6 encapsulation and forwards the inner IPv6 packet.
 
@@ -94,7 +95,7 @@ ip -6 route add 5f00:1:1:0:e004::/128 \
 
 **Use case**: Final decapsulation at the egress PE into a customer segment.
 
-## End.DT4 — Decapsulate into IPv4 VPN Table
+## End.DT4 - Decapsulate into IPv4 VPN Table
 
 Removes outer IPv6 header and routes the inner IPv4 packet using a specified VRF table.
 
@@ -107,7 +108,7 @@ ip -6 route add 5f00:1:1:0:e005::/128 \
 
 **Use case**: IPv4 L3VPN delivery.
 
-## End.DT6 — Decapsulate into IPv6 VPN Table
+## End.DT6 - Decapsulate into IPv6 VPN Table
 
 Removes outer IPv6 header and routes the inner IPv6 packet using a specified VRF table.
 
@@ -120,7 +121,7 @@ ip -6 route add 5f00:1:1:0:e006::/128 \
 
 **Use case**: IPv6 L3VPN delivery.
 
-## End.DT46 — Decapsulate into IPv4 or IPv6 Table
+## End.DT46 - Decapsulate into IPv4 or IPv6 Table
 
 Handles both IPv4 and IPv6 inner packets, using the same VRF table.
 
@@ -131,7 +132,7 @@ ip -6 route add 5f00:1:1:0:e007::/128 \
   dev lo
 ```
 
-## End.B6.Encaps — Encapsulate with New SRH
+## End.B6.Encaps - Encapsulate with New SRH
 
 Applies a new SRv6 policy to the packet (policy-based chaining).
 

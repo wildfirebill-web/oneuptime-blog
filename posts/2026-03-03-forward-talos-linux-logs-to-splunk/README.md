@@ -47,6 +47,7 @@ You can also create the token via the Splunk REST API:
 
 ```bash
 # Create an HEC token via API
+
 curl -k -u admin:password \
   https://splunk.example.com:8089/servicesNS/admin/splunk_httpinput/data/inputs/http \
   -d name=talos-linux-logs \

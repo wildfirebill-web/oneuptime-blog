@@ -18,6 +18,7 @@ Every patch in Kustomize can include a target section that specifies which resou
 
 ```yaml
 # kustomization.yaml
+
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 

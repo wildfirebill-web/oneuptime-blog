@@ -26,6 +26,7 @@ Here is an OpenTelemetry Collector config that captures the network metrics we n
 
 ```yaml
 # otel-collector-config.yaml
+
 receivers:
   hostmetrics:
     collection_interval: 30s

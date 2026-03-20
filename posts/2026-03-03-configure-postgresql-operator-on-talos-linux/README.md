@@ -34,6 +34,7 @@ Deploy the operator using Helm.
 
 ```bash
 # Add the CloudNativePG Helm repository
+
 helm repo add cnpg https://cloudnative-pg.github.io/charts
 
 # Update the chart cache

@@ -29,6 +29,7 @@ Before migrating, catalog what you have:
 
 ```bash
 # Connect to your existing Cassandra cluster with cqlsh
+
 cqlsh my-cassandra-host 9042
 
 # List all keyspaces

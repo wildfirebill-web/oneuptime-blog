@@ -18,6 +18,7 @@ The fastest way to check uptime is an ad-hoc Ansible command:
 
 ```bash
 # Check uptime across all servers
+
 ansible all -m command -a "uptime" -o
 
 # Check uptime for a specific group

@@ -17,6 +17,7 @@ Configure OTLP export in `grafana.ini` or through environment variables:
 
 [tracing.opentelemetry.otlp]
 # OTLP gRPC endpoint
+
 address = otel-collector:4317
 # Propagation format
 propagation = w3c

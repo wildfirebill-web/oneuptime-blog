@@ -16,8 +16,8 @@ The `cidrsubnets` function in OpenTofu allocates multiple consecutive subnets fr
 cidrsubnets(prefix, newbits...)
 ```
 
-- **prefix** — the parent CIDR block
-- **newbits...** — one argument per desired subnet, each specifying additional prefix bits
+- **prefix** - the parent CIDR block
+- **newbits...** - one argument per desired subnet, each specifying additional prefix bits
 - Returns a list of CIDR strings, one per requested subnet
 
 ## Basic Examples

@@ -24,6 +24,7 @@ graph TD
 
 ```hcl
 # iam.tf
+
 resource "google_service_account" "vertex_ai" {
   account_id   = "${var.prefix}-vertex-ai"
   display_name = "Vertex AI Service Account"
@@ -118,7 +119,7 @@ resource "google_notebooks_instance" "workbench" {
   network = google_compute_network.ml.id
   subnet  = google_compute_subnetwork.ml.id
 
-  # No public IP — access via IAP
+  # No public IP - access via IAP
   no_public_ip        = true
   no_proxy_access     = false
 
@@ -208,8 +209,8 @@ resource "google_project_service" "artifact_registry" {
 
 ## Best Practices
 
-- Set `no_public_ip = true` on Workbench instances and use Identity-Aware Proxy (IAP) for access — this avoids exposing notebook instances to the internet.
-- Use Vertex AI managed notebooks rather than individual Workbench instances for teams — managed notebooks auto-shutdown and provide better multi-user isolation.
-- Store training data and model artifacts in GCS with versioning enabled — this provides a history of datasets and enables reproducible training runs.
-- Use Artifact Registry rather than Container Registry for training images — Artifact Registry supports cleanup policies to prevent storage costs from accumulating with old images.
-- Enable required GCP APIs via `google_project_service` resources — Vertex AI operations fail silently if APIs are not enabled, causing confusing error messages.
+- Set `no_public_ip = true` on Workbench instances and use Identity-Aware Proxy (IAP) for access - this avoids exposing notebook instances to the internet.
+- Use Vertex AI managed notebooks rather than individual Workbench instances for teams - managed notebooks auto-shutdown and provide better multi-user isolation.
+- Store training data and model artifacts in GCS with versioning enabled - this provides a history of datasets and enables reproducible training runs.
+- Use Artifact Registry rather than Container Registry for training images - Artifact Registry supports cleanup policies to prevent storage costs from accumulating with old images.
+- Enable required GCP APIs via `google_project_service` resources - Vertex AI operations fail silently if APIs are not enabled, causing confusing error messages.

@@ -6,7 +6,7 @@ Tags: OpenTofu, Plan JSON, Safety, CI/CD, Infrastructure as Code
 
 Description: Learn how to programmatically detect destructive resource changes in OpenTofu plan JSON to prevent accidental deletions and replacements in automated pipelines.
 
-Destructive changes — deletions and replacements — can cause data loss and service outages. Detecting them automatically in CI/CD pipelines lets you block dangerous applies, require manual approval, or alert on-call engineers before infrastructure is affected.
+Destructive changes - deletions and replacements - can cause data loss and service outages. Detecting them automatically in CI/CD pipelines lets you block dangerous applies, require manual approval, or alert on-call engineers before infrastructure is affected.
 
 ## What Counts as Destructive?
 
@@ -22,6 +22,7 @@ Destructive changes — deletions and replacements — can cause data loss and s
 
 ```bash
 # List all resources being deleted
+
 jq -r '.resource_changes[] |
   select(.change.actions == ["delete"]) |
   .address' plan.json
@@ -41,7 +42,7 @@ jq -r '.resource_changes[] |
 
 ```python
 #!/usr/bin/env python3
-# detect-destructive.py — fail the pipeline if destructive changes are found
+# detect-destructive.py - fail the pipeline if destructive changes are found
 
 import json, sys
 

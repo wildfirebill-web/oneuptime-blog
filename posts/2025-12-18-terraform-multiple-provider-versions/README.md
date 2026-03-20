@@ -30,6 +30,7 @@ Here's how to set up multiple provider configurations:
 
 ```hcl
 # Default provider configuration
+
 provider "aws" {
   region = "us-east-1"
 }

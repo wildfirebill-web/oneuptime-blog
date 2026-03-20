@@ -30,6 +30,7 @@ Each Cilium agent pod runs dozens of controllers. Start by listing them to under
 
 ```bash
 # List all controllers on a specific Cilium agent
+
 kubectl -n kube-system exec ds/cilium -- cilium status controllers
 
 # Get detailed controller status with JSON output for parsing

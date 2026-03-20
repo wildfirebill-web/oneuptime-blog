@@ -18,6 +18,7 @@ Install the packages you need from npm.
 
 ```bash
 # Install core utilities
+
 npm install @aws-lambda-powertools/logger
 npm install @aws-lambda-powertools/tracer
 npm install @aws-lambda-powertools/metrics

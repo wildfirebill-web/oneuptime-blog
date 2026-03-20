@@ -22,6 +22,7 @@ Portainer's Angular frontend re-fetches data from the Docker API on every tab na
 
 ```bash
 # Measure the raw Docker API response time for the containers endpoint
+
 time curl -s --unix-socket /var/run/docker.sock \
   http://localhost/containers/json?all=1 | wc -c
 

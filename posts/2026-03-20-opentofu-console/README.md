@@ -16,6 +16,7 @@ Description: Learn how to use tofu console to interactively evaluate OpenTofu ex
 tofu console
 
 # Output:
+
 # >
 ```
 

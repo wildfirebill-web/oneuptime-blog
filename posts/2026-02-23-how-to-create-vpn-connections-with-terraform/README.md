@@ -28,6 +28,7 @@ Client VPN lets your team access private VPC resources from anywhere. It uses mu
 # client-vpn.tf - AWS Client VPN endpoint
 
 # Generate server and client certificates using ACM
+
 resource "aws_acm_certificate" "vpn_server" {
   private_key       = file("${path.module}/certs/server.key")
   certificate_body  = file("${path.module}/certs/server.crt")

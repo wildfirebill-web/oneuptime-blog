@@ -52,6 +52,7 @@ First, check the current idle timeout setting on your NAT Gateway:
 
 ```bash
 # Check the current idle timeout (in minutes)
+
 az network nat gateway show \
   --name myNatGateway \
   --resource-group myResourceGroup \

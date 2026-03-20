@@ -22,6 +22,7 @@ Configure file audit logging with persistence:
 
 ```bash
 # Enable file audit device
+
 kubectl -n vault exec -it vault-0 -- vault audit enable file \
   file_path=/vault/logs/audit.log \
   log_raw=false \

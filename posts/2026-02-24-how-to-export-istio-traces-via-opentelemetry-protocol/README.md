@@ -283,6 +283,7 @@ Generate some traffic and check:
 
 ```bash
 # Generate traffic
+
 kubectl run curl-test --image=curlimages/curl:7.85.0 --rm -it -- \
   sh -c "for i in \$(seq 1 20); do curl -s http://my-service/api; done"
 

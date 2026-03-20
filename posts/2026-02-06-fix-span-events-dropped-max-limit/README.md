@@ -39,6 +39,7 @@ The OpenTelemetry specification defines a default limit of 128 events per span. 
 
 ```python
 # Default SpanLimits in the Python SDK
+
 # max_events = 128
 # max_attributes = 128
 # max_links = 128

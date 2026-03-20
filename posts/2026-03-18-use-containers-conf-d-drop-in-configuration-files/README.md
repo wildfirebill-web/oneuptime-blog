@@ -20,6 +20,7 @@ Podman reads drop-in files from specific directories.
 
 ```bash
 # Drop-in directory locations (processed in order):
+
 # 1. /usr/share/containers/containers.conf.d/  (vendor drop-ins)
 # 2. /etc/containers/containers.conf.d/         (system-wide drop-ins)
 # 3. ~/.config/containers/containers.conf.d/    (user-level drop-ins)

@@ -40,6 +40,7 @@ sequenceDiagram
 
 ```bash
 # Create a Traffic Manager profile with performance routing
+
 az network traffic-manager profile create \
     --resource-group myResourceGroup \
     --name myTrafficManagerProfile \

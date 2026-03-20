@@ -18,6 +18,7 @@ RKE2 supports scheduled snapshots via the server configuration file:
 
 ```yaml
 # /etc/rancher/rke2/config.yaml (on all server nodes)
+
 etcd-snapshot-schedule-cron: "0 */6 * * *"   # Every 6 hours
 etcd-snapshot-retention: 10                   # Keep last 10 snapshots
 etcd-snapshot-dir: /var/lib/rancher/rke2/server/db/snapshots
@@ -146,5 +147,5 @@ kubectl get pods -A
 ## Best Practices
 
 - Take a manual snapshot before any major cluster change (upgrades, adding nodes, policy changes) in addition to the scheduled snapshots.
-- Always store snapshots off-cluster (S3 or another storage system) — local snapshots are lost if the node fails.
-- Test your restore procedure in a staging environment regularly — a backup is only useful if the restore works.
+- Always store snapshots off-cluster (S3 or another storage system) - local snapshots are lost if the node fails.
+- Test your restore procedure in a staging environment regularly - a backup is only useful if the restore works.

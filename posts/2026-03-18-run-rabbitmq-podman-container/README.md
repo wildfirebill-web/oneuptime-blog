@@ -20,6 +20,7 @@ Download the official RabbitMQ image with the management plugin included.
 
 ```bash
 # Pull RabbitMQ with the management UI
+
 podman pull docker.io/library/rabbitmq:3-management
 
 # Verify the image

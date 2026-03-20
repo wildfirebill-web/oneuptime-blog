@@ -23,7 +23,7 @@ Consider a routing table with these entries:
 
 For a packet destined to `2001:db8:1:10::50`:
 
-```
+```text
 ::/0             → matches (0 bits)
 2001:db8::/32    → matches (32 bits)
 2001:db8:1::/48  → matches (48 bits)
@@ -48,6 +48,7 @@ graph TD
 
 ```bash
 # Set up example routes for testing
+
 sudo ip -6 route add 2001:db8::/32 via fe80::2 dev eth1
 sudo ip -6 route add 2001:db8:1::/48 via fe80::3 dev eth2
 sudo ip -6 route add 2001:db8:1:10::/64 via fe80::4 dev eth3
@@ -98,7 +99,7 @@ ip -6 route show 2001:db8:1::/48
 
 ## Black Hole and Null Routes
 
-A null route (black hole) uses a specific prefix to silently drop traffic — it wins via LPM over less-specific routes:
+A null route (black hole) uses a specific prefix to silently drop traffic - it wins via LPM over less-specific routes:
 
 ```bash
 # Add a null route to block traffic to a specific prefix

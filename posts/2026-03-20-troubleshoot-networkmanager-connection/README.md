@@ -27,6 +27,7 @@ sudo systemctl enable NetworkManager
 
 ```bash
 # List all connections
+
 nmcli connection show
 
 # List device status

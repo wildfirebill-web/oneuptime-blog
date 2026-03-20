@@ -471,6 +471,7 @@ export async function generateStaticParams() {
 
 ```bash
 # Run build with verbose output
+
 npm run build 2>&1 | tee build.log
 
 # Search for generateStaticParams output

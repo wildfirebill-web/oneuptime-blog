@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Linux, Debian, Networking, IPv4, Network Configuration, ifupdown
+Tags: Linux, Debian, Networking, IPv4, Network Configuration, Ifupdown
 
 Description: Configure static and DHCP IPv4 addresses, routes, and DNS on Debian using /etc/network/interfaces and the ifupdown system.
 
@@ -12,14 +12,15 @@ Debian and older Ubuntu systems use `/etc/network/interfaces` with the `ifupdown
 
 ## Basic DHCP Configuration
 
-```
+```text
 # /etc/network/interfaces
 
 # Loopback
+
 auto lo
 iface lo inet loopback
 
-# DHCP on eth0 — request IP from DHCP server automatically at boot
+# DHCP on eth0 - request IP from DHCP server automatically at boot
 auto eth0
 iface eth0 inet dhcp
 ```
@@ -28,7 +29,7 @@ The `auto eth0` directive brings the interface up at boot. Without it, you must 
 
 ## Static IP Configuration
 
-```
+```text
 # /etc/network/interfaces
 
 auto lo
@@ -46,7 +47,7 @@ iface eth0 inet static
 
 ## Multiple Addresses (Secondary)
 
-```
+```text
 # Primary interface
 auto eth0
 iface eth0 inet static
@@ -63,7 +64,7 @@ iface eth0:1 inet static
 
 ## Static Routes with post-up
 
-```
+```text
 auto eth0
 iface eth0 inet static
     address 192.168.1.100
@@ -77,7 +78,7 @@ iface eth0 inet static
 
 ## Running Commands After Interface Up
 
-```
+```text
 auto eth0
 iface eth0 inet static
     address 192.168.1.100
@@ -104,7 +105,7 @@ ip -4 addr show eth0
 
 For large configurations, split into directory:
 
-```
+```text
 # At the end of /etc/network/interfaces:
 source /etc/network/interfaces.d/*.cfg
 ```

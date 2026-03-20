@@ -22,6 +22,7 @@ Install Sealed Secrets in each cluster:
 
 ```bash
 # Install the controller
+
 helm install sealed-secrets sealed-secrets/sealed-secrets \
   --namespace kube-system
 ```

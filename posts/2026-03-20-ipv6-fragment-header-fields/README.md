@@ -12,7 +12,7 @@ The IPv6 Fragment Header (Next Header value 44) is an 8-byte extension header th
 
 ## Fragment Header Structure
 
-```
+```text
 IPv6 Fragment Header (8 bytes total):
 
  0                   1                   2                   3
@@ -34,7 +34,7 @@ Field breakdown:
 
 ## Detailed Field Descriptions
 
-```
+```text
 Next Header (8 bits):
   - Identifies the type of the header that follows the Fragment Header
   - For the first fragment: type of the original next header (TCP=6, UDP=17, etc.)
@@ -101,6 +101,7 @@ def parse_fragment_header(data: bytes) -> dict:
     }
 
 # Example: Parse a fragment header for the second fragment
+
 # Next Header = 6 (TCP), Offset = 184 bytes (23 units of 8), M=1, ID=0xABCD1234
 second_fragment_header = struct.pack("!BBHI", 6, 0, (23 << 3) | 1, 0xABCD1234)
 result = parse_fragment_header(second_fragment_header)

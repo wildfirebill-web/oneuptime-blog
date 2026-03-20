@@ -24,6 +24,7 @@ When designing Helm charts for IPv6-ready deployments:
 # values.yaml
 
 # Network configuration
+
 networking:
   # Enable IPv6 support
   ipv6:

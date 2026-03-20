@@ -30,6 +30,7 @@ Configure a pod or StatefulSet with a static IP:
 
 ```yaml
 # static-ip-statefulset.yaml - StatefulSet with static IP via Calico IPAM annotation
+
 apiVersion: apps/v1
 kind: StatefulSet
 metadata:

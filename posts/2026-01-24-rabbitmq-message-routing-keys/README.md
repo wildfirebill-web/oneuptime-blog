@@ -148,6 +148,7 @@ flowchart LR
 
 ```python
 # topic_exchange.py
+
 import pika
 import json
 

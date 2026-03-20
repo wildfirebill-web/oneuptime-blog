@@ -14,6 +14,7 @@ GCP VPC Peering enables private connectivity between two VPC networks (in the sa
 
 ```hcl
 # main.tf - Two VPCs to peer
+
 resource "google_compute_network" "vpc_a" {
   project                 = var.project_a_id
   name                    = "vpc-network-a"

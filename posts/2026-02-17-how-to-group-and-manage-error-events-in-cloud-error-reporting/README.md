@@ -42,6 +42,7 @@ Here is how to list error groups using the gcloud CLI:
 
 ```bash
 # List all open error groups for your project
+
 gcloud beta error-reporting events list \
   --project=my-gcp-project \
   --service=my-api-service \

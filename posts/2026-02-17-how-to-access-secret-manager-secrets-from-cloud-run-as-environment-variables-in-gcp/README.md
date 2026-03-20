@@ -34,6 +34,7 @@ If you have not already stored your secrets in Secret Manager, do that first:
 
 ```bash
 # Store a database password
+
 echo -n "db-password-value" | gcloud secrets create db-password \
   --data-file=- \
   --replication-policy="automatic" \

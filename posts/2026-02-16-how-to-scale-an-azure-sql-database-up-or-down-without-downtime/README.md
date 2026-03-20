@@ -81,6 +81,7 @@ The CLI is useful for scripting and can be integrated into CI/CD pipelines.
 
 ```bash
 # Scale a database from S1 to S3 (higher DTU)
+
 az sql db update \
     --resource-group myResourceGroup \
     --server myserver \

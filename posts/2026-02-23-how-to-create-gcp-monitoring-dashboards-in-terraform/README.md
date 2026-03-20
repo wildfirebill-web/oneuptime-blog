@@ -38,6 +38,7 @@ GCP dashboards are defined as JSON configurations:
 
 ```hcl
 # Create a monitoring dashboard for compute resources
+
 resource "google_monitoring_dashboard" "compute" {
   dashboard_json = jsonencode({
     displayName = "Compute Engine Overview"

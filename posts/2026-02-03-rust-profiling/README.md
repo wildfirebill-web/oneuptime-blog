@@ -16,6 +16,7 @@ Before profiling anything, make sure you're profiling the right build. Rust's de
 
 ```bash
 # Debug build - DO NOT profile this for performance
+
 cargo build
 
 # Release build - profile this one

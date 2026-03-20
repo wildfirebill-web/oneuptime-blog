@@ -155,6 +155,7 @@ This class provides a unified interface for generating embeddings with support f
 
 ```python
 # embedding_generator.py
+
 import os
 import hashlib
 import json

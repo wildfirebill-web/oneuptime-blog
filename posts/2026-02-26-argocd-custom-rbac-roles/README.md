@@ -227,6 +227,7 @@ Always test your RBAC policies before applying them. Use the `argocd admin setti
 
 ```bash
 # Test if the deployer role can sync an app
+
 argocd admin settings rbac can role:deployer sync applications 'frontend/web-app' \
   --policy-file policy.csv
 # Output: Yes

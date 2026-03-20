@@ -35,6 +35,7 @@ Before configuring the Collector, you need to enable the HAProxy stats interface
 
 ```text
 # In haproxy.cfg
+
 # Enable the stats page on port 8404
 frontend stats
     bind *:8404

@@ -35,6 +35,7 @@ These control the maximum read and write buffer sizes in bytes. Larger values me
 
 ```bash
 # Mount with tuned buffer sizes
+
 sudo mount -t nfs -o rsize=65536,wsize=65536,hard,noatime 192.168.1.10:/srv/nfs/data /mnt/nfs-data
 ```
 

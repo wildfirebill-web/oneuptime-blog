@@ -33,6 +33,7 @@ kubectl get nodes --context="${CTX_CLUSTER1}" -o jsonpath='{.items[0].metadata.l
 
 kubectl get nodes --context="${CTX_CLUSTER2}" -o jsonpath='{.items[0].metadata.labels.topology\.kubernetes\.io/region}'
 # us-west-2
+
 ```
 
 Services should be deployed in both clusters so there are endpoints to fail over to:

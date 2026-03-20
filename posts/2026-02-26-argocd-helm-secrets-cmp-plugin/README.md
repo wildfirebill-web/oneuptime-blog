@@ -36,6 +36,7 @@ This means your Helm chart stays clean and unaware of encryption - only the valu
 
 ```yaml
 # plugin.yaml
+
 apiVersion: argoproj.io/v1alpha1
 kind: ConfigManagementPlugin
 metadata:

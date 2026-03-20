@@ -12,7 +12,7 @@ Linux kernel support for SEND is limited and primarily implemented in user space
 
 ## Linux SEND Support Status
 
-```
+```text
 Linux SEND implementation status:
 
 Kernel:
@@ -38,6 +38,7 @@ For academic/research use of SEND on Linux:
 
 ```bash
 # Check if the kernel has CONFIG_IPV6_SIOCSIFADDR hooks
+
 # (required for SEND user-space interaction)
 zcat /boot/config-$(uname -r) | grep -E "SEND|CGA"
 # Look for CONFIG_IPV6_OPTIMISTIC_DAD and other relevant options

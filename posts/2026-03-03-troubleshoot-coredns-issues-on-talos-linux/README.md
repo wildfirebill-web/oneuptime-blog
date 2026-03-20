@@ -29,6 +29,7 @@ Start with the basics:
 
 ```bash
 # Check CoreDNS pod status
+
 kubectl -n kube-system get pods -l k8s-app=kube-dns
 
 # Check the CoreDNS service

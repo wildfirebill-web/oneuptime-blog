@@ -48,6 +48,7 @@ A portfolio is a collection of related products. You might have portfolios like 
 
 ```bash
 # Create a portfolio
+
 aws servicecatalog create-portfolio \
   --display-name "Standard Databases" \
   --provider-name "Platform Engineering" \

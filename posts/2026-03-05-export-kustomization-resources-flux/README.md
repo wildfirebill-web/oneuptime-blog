@@ -25,6 +25,7 @@ Use `flux export ks` to export a specific Kustomization resource:
 
 ```bash
 # Export a single Kustomization named "my-app"
+
 flux export ks my-app
 ```
 

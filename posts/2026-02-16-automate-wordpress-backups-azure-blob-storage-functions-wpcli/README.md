@@ -36,6 +36,7 @@ Create a storage account with lifecycle management for automatic cost optimizati
 
 ```bash
 # Create a storage account for backups
+
 az storage account create \
   --name wpbackupstorage \
   --resource-group rg-wordpress \

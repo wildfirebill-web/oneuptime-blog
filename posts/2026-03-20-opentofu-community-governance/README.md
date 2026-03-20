@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: OpenTofu, Community, Governance, Linux Foundation, Open Source, Infrastructure as Code
 
-Description: Learn how OpenTofu is governed — the Linux Foundation stewardship, steering committee, RFC process, and how the community contributes to the project's direction and development.
+Description: Learn how OpenTofu is governed - the Linux Foundation stewardship, steering committee, RFC process, and how the community contributes to the project's direction and development.
 
 ## Introduction
 
@@ -12,7 +12,7 @@ OpenTofu is a community-driven project under the Linux Foundation. Unlike Terraf
 
 ## Project Structure
 
-```
+```hcl
 OpenTofu Project
 ├── Linux Foundation (legal/fiscal home)
 │   └── OpenTofu Steering Committee (governance)
@@ -36,7 +36,7 @@ Current steering committee members represent organizations including Gruntwork, 
 
 New features go through a public RFC (Request for Comments) process:
 
-```
+```hcl
 1. Community member identifies a need
    └── Discusses in GitHub issues or OpenTofu Slack
 
@@ -67,6 +67,7 @@ Example RFCs that became features:
 
 ```bash
 # Set up development environment
+
 git clone https://github.com/opentofu/opentofu.git
 cd opentofu
 
@@ -85,7 +86,7 @@ go test ./internal/command/... -v
 
 ## Community Channels
 
-```
+```text
 GitHub:  github.com/opentofu/opentofu
          - Issues: bug reports and feature requests
          - Discussions: design discussions
@@ -106,7 +107,7 @@ Weekly Meeting:
 
 ## Release Cadence
 
-```
+```text
 Major versions (x.0.0): Breaking changes, every 12-18 months
 Minor versions (1.x.0):  New features, every 3-4 months
 Patch versions (1.x.x):  Bug fixes, as needed
@@ -120,7 +121,7 @@ Support policy:
 
 The OpenTofu Registry (`registry.opentofu.org`) is separately governed:
 
-```
+```text
 Policy:
 - Mirrors all providers from registry.terraform.io
 - Accepts community-submitted providers directly
@@ -133,7 +134,7 @@ github.com/opentofu/registry
 
 ## Security Disclosure
 
-```
+```text
 Security vulnerabilities in OpenTofu:
   Email: security@opentofu.org
 

@@ -33,6 +33,7 @@ Root CA Certificate (10 year lifetime by default)
 
 ```bash
 # Check current CA certificate expiry
+
 kubectl get secret istio-ca-secret -n istio-system -o jsonpath='{.data.ca-cert\.pem}' | \
   base64 -d | openssl x509 -noout -dates -subject
 

@@ -20,6 +20,7 @@ The talosctl command line tool is your primary interface for node-level storage 
 
 ```bash
 # List all disks on a node
+
 talosctl -n 10.0.0.11 disks
 
 # Sample output:

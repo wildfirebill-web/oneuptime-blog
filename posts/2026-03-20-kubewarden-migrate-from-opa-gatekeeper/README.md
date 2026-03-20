@@ -1,4 +1,4 @@
-# How to Migrate from OPA Gatekeeper to Kubewarden
+# How to Migrate from OPA Gatekeeper to Kubewarden - Gatekeeper
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -34,6 +34,7 @@ This guide covers migrating from Gatekeeper to Kubewarden with minimal disruptio
 
 ```bash
 # List all Gatekeeper constraint templates
+
 kubectl get constrainttemplates
 
 # List all Gatekeeper constraints (instances)
@@ -280,4 +281,4 @@ kubectl get pods -A | grep -v Running | grep -v Completed
 
 ## Conclusion
 
-Migrating from OPA Gatekeeper to Kubewarden requires careful planning but the benefits — language flexibility, WebAssembly performance, and simpler configuration — are significant. The side-by-side migration approach minimizes risk by running both systems simultaneously in monitor vs. enforce mode, giving you confidence in the Kubewarden policies before removing Gatekeeper. For common policies, the Kubewarden Policy Hub provides ready-to-use replacements, while custom Rego policies require a rewrite but gain the benefits of type safety and better tooling.
+Migrating from OPA Gatekeeper to Kubewarden requires careful planning but the benefits - language flexibility, WebAssembly performance, and simpler configuration - are significant. The side-by-side migration approach minimizes risk by running both systems simultaneously in monitor vs. enforce mode, giving you confidence in the Kubewarden policies before removing Gatekeeper. For common policies, the Kubewarden Policy Hub provides ready-to-use replacements, while custom Rego policies require a rewrite but gain the benefits of type safety and better tooling.

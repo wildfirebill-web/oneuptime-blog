@@ -1,4 +1,4 @@
-# How to Configure S3 Backend with Customer-Provided Encryption Keys in OpenTofu
+# How to Configure S3 Backend with Customer-Provided Encryption Keys in Open (2)
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,14 +8,14 @@ Description: Learn how to configure the OpenTofu S3 backend with customer-provid
 
 ## Introduction
 
-SSE-C (Server-Side Encryption with Customer-Provided Keys) gives you complete control over the encryption keys used to protect your S3 objects. Unlike SSE-S3 or SSE-KMS, with SSE-C you manage the keys entirely — AWS handles the encryption and decryption but never stores your keys. This guide covers configuring SSE-C for the OpenTofu S3 backend.
+SSE-C (Server-Side Encryption with Customer-Provided Keys) gives you complete control over the encryption keys used to protect your S3 objects. Unlike SSE-S3 or SSE-KMS, with SSE-C you manage the keys entirely - AWS handles the encryption and decryption but never stores your keys. This guide covers configuring SSE-C for the OpenTofu S3 backend.
 
 ## How SSE-C Works
 
 With SSE-C:
 1. You provide the encryption key in every S3 request
 2. AWS uses your key to encrypt/decrypt the object
-3. AWS does NOT store the key — it's used only during the request
+3. AWS does NOT store the key - it's used only during the request
 4. If you lose the key, the data is permanently inaccessible
 
 ## Step 1: Generate an Encryption Key
@@ -24,6 +24,7 @@ SSE-C requires a 256-bit (32-byte) AES key, base64-encoded:
 
 ```bash
 # Generate a random 32-byte key and base64-encode it
+
 openssl rand -base64 32
 
 # Example output: mUbp9NXK8GNKvSvOCiSSWnBFN+pHAqBIJXnWkPMcuiI=
@@ -86,7 +87,7 @@ tofu init
 # Verify state is accessible with the key
 tofu state list
 
-# Apply — state written with SSE-C
+# Apply - state written with SSE-C
 tofu apply
 ```
 
@@ -147,4 +148,4 @@ Avoid SSE-C when:
 
 ## Conclusion
 
-SSE-C for the S3 backend provides maximum control over your encryption keys — but also maximum responsibility. The key is never stored by AWS, giving you full custody, but also full risk. Only use SSE-C when your compliance requirements mandate it and when you have robust key management processes in place. For most production environments, SSE-KMS provides the right balance of control, auditability, and operational safety.
+SSE-C for the S3 backend provides maximum control over your encryption keys - but also maximum responsibility. The key is never stored by AWS, giving you full custody, but also full risk. Only use SSE-C when your compliance requirements mandate it and when you have robust key management processes in place. For most production environments, SSE-KMS provides the right balance of control, auditability, and operational safety.

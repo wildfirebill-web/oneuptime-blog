@@ -27,6 +27,7 @@ Felix must be explicitly configured to handle IPv6. Without these settings, Feli
 
 ```yaml
 # felixconfig-ipv6.yaml
+
 # Configure Felix for IPv6 support
 apiVersion: projectcalico.org/v3
 kind: FelixConfiguration

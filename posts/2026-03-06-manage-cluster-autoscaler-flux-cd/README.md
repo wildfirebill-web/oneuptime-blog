@@ -29,6 +29,7 @@ First, define a HelmRepository source so Flux can pull the Cluster Autoscaler ch
 
 ```yaml
 # clusters/my-cluster/sources/cluster-autoscaler-repo.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

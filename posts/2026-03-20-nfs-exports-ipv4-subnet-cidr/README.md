@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: NFS, IPv4, CIDR, Subnet, Exports, Access Control
+Tags: NFS, IPv4, CIDR, Subnets, Export, Access Control
 
 Description: Use CIDR notation in /etc/exports to grant NFS access to entire IPv4 subnets, configure different permissions per subnet, and manage multi-site NFS access control.
 
@@ -16,6 +16,7 @@ NFS exports support CIDR notation for granting access to entire subnets at once,
 # /etc/exports
 
 # Allow entire /24 subnet (256 addresses)
+
 /srv/data  192.168.1.0/24(rw,sync,no_subtree_check)
 
 # Allow /16 subnet (65536 addresses)
@@ -52,7 +53,7 @@ NFS exports support multiple formats for specifying clients:
 ## Multi-Site Configuration
 
 ```bash
-# /etc/exports — multi-office setup
+# /etc/exports - multi-office setup
 
 # Headquarters (read-write)
 /srv/company-files  10.1.0.0/24(rw,sync,no_subtree_check,root_squash)
@@ -88,7 +89,7 @@ sudo umount /mnt/test
 ## Security Considerations
 
 ```bash
-# Avoid overly broad subnets — be as specific as possible
+# Avoid overly broad subnets - be as specific as possible
 # Instead of:
 /srv/sensitive  0.0.0.0/0(rw,sync)   # NEVER do this
 

@@ -45,6 +45,7 @@ kubectl get daemonset -n cilium-spire spire-agent
 
 ```bash
 # Check SPIFFE identities assigned to pods
+
 kubectl exec -n cilium-spire spire-server-0 -- \
   spire-server entry show
 

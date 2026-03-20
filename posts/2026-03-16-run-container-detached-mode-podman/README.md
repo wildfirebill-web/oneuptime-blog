@@ -20,6 +20,7 @@ Use the `-d` flag to start a container in the background:
 
 ```bash
 # Run Nginx in the background
+
 podman run -d nginx
 ```
 

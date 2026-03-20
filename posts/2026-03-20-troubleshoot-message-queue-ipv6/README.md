@@ -2,14 +2,15 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, RabbitMQ, Kafka, NATS, Message Queue, Troubleshooting
+Tags: IPv6, RabbitMQ, Kafka, NATS, Message Queues, Troubleshooting
 
 Description: A systematic guide to diagnosing and resolving IPv6 connectivity problems with message queue systems including RabbitMQ, Kafka, NATS, and other messaging infrastructure.
 
 ## Common IPv6 Message Queue Errors
 
-```
+```text
 # RabbitMQ AMQP client
+
 Error: connect ECONNREFUSED [2001:db8::10]:5672
 
 # Kafka producer

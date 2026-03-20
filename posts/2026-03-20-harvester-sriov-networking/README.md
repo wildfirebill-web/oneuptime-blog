@@ -1,4 +1,4 @@
-# How to Configure Harvester SR-IOV for Network Performance
+# How to Configure Harvester SR-IOV for Network Performance - Networking
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -32,6 +32,7 @@ Verify IOMMU is active:
 ```bash
 dmesg | grep -e DMAR -e IOMMU | head -5
 # Should show: "IOMMU enabled"
+
 ```
 
 ---
@@ -155,5 +156,5 @@ spec:
 ## Best Practices
 
 - Use SR-IOV for latency-sensitive workloads like financial trading systems or HPC applications.
-- Keep at least 2 VFs per node for cluster management traffic — do not allocate all VFs to VMs.
+- Keep at least 2 VFs per node for cluster management traffic - do not allocate all VFs to VMs.
 - Monitor VF utilization using `ethtool -S ens3` or the DPDK PMD stats.

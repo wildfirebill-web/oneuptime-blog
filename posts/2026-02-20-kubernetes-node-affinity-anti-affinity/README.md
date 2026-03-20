@@ -32,6 +32,7 @@ Before using node affinity, label your nodes to create the selection criteria.
 
 ```bash
 # Label nodes by their purpose
+
 kubectl label nodes worker-1 workload-type=general
 kubectl label nodes worker-2 workload-type=general
 kubectl label nodes worker-3 workload-type=gpu

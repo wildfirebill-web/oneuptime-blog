@@ -91,6 +91,7 @@ Gatekeeper provides the admission review in `input.review` and your Constraint p
 package example
 
 # Access the Kubernetes resource being validated
+
 resource := input.review.object
 
 # Access the resource metadata

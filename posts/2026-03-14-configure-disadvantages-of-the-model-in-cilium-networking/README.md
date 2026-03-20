@@ -30,6 +30,7 @@ Apply the following Helm values to configure disadvantages of the encapsulation 
 
 ```yaml
 # cilium-encap-mitigate-values.yaml
+
 # Configuration to mitigate encapsulation disadvantages
 
 # Set explicit MTU to account for VXLAN overhead (1500 - 50 = 1450)

@@ -14,6 +14,7 @@ Infoblox provides integrated DDI (DNS, DHCP, IPAM) with comprehensive IPv6 suppo
 
 ```bash
 # Create a network view for IPv6 (via WAPI)
+
 curl -u admin:password \
     -H "Content-Type: application/json" \
     -X POST \
@@ -161,4 +162,4 @@ wapi_post("dns:dns64synthesisgroup", {
 
 ## Conclusion
 
-Infoblox provides enterprise-grade IPv6 IPAM through its WAPI REST API with atomic DDI operations — a single API call can allocate an address, create an AAAA record, and create a PTR record. The `_nextavailableip` endpoint for IPv6 networks automates address allocation without conflict checking. Use Infoblox's DNS64 feature when deploying IPv6-only environments that still need to reach IPv4-only external services. The extattrs (extensible attributes) system enables custom metadata like VLAN ID, environment, and owner tracking on IPv6 prefixes.
+Infoblox provides enterprise-grade IPv6 IPAM through its WAPI REST API with atomic DDI operations - a single API call can allocate an address, create an AAAA record, and create a PTR record. The `_nextavailableip` endpoint for IPv6 networks automates address allocation without conflict checking. Use Infoblox's DNS64 feature when deploying IPv6-only environments that still need to reach IPv4-only external services. The extattrs (extensible attributes) system enables custom metadata like VLAN ID, environment, and owner tracking on IPv6 prefixes.

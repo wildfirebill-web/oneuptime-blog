@@ -19,6 +19,7 @@ sudo apt update
 sudo apt install httpie
 
 # Verify installation
+
 http --version
 ```
 

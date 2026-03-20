@@ -14,7 +14,7 @@ Upper-layer protocols (TCP, UDP, ICMPv6) in IPv6 compute checksums over their ow
 
 RFC 8200 defines the IPv6 pseudo-header as:
 
-```
+```text
  0                   1                   2                   3
  0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
 +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
@@ -100,6 +100,7 @@ def compute_udp_checksum(src: str, dst: str,
     return checksum(checksum_input)
 
 # Example: compute checksum for a DNS query
+
 src = "2001:db8::1"
 dst = "2001:db8::53"
 dns_query = b'\x00\x01\x01\x00\x00\x01\x00\x00\x00\x00\x00\x00' + \
@@ -145,7 +146,7 @@ print(f"ICMPv6 checksum: 0x{csum:04X}")
 
 ## Why the Pseudo-Header Catches Address Misdelivery
 
-```
+```text
 Without pseudo-header in checksum:
   A packet to wrong address might still have valid TCP/UDP checksum
   → Misdelivered silently

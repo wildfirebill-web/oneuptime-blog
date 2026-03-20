@@ -16,6 +16,7 @@ virt-viewer is the recommended tool for connecting to VM displays:
 
 ```bash
 # Install virt-viewer
+
 sudo dnf install -y virt-viewer
 
 # Connect to a running VM by name

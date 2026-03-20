@@ -14,6 +14,7 @@ The Neighbor Discovery Protocol (NDP) is IPv6's replacement for ARP. It handles 
 
 ```bash
 # Show IPv6 neighbor (NDP) cache
+
 ip -6 neigh show
 
 # Show cache for specific interface
@@ -23,13 +24,13 @@ ip -6 neigh show dev eth0
 ip -6 neigh show state REACHABLE
 
 # Neighbor states:
-# REACHABLE  — recently confirmed reachable
-# STALE      — not confirmed recently, but may still work
-# DELAY      — checking reachability after STALE timeout
-# PROBE      — actively sending Neighbor Solicitations
-# FAILED     — NDP probes failed, host unreachable
-# NOARP      — no NDP needed (e.g., loopback)
-# PERMANENT  — static entry
+# REACHABLE  - recently confirmed reachable
+# STALE      - not confirmed recently, but may still work
+# DELAY      - checking reachability after STALE timeout
+# PROBE      - actively sending Neighbor Solicitations
+# FAILED     - NDP probes failed, host unreachable
+# NOARP      - no NDP needed (e.g., loopback)
+# PERMANENT  - static entry
 ```
 
 ## Step 2: Test NDP Resolution
@@ -166,4 +167,4 @@ sudo ip6tables -L INPUT -n 2>/dev/null | grep "icmp6\|ICMPv6\|neighbor" || echo 
 
 ## Conclusion
 
-NDP failures prevent IPv6 communication even between hosts on the same subnet. Diagnose with `ip -6 neigh show` to see cache states, use `ndisc6` to manually probe specific neighbors, and capture traffic with `tcpdump` filtering on ICMPv6 types 135/136. The most common cause of NDP failure is a firewall blocking ICMPv6 — ensure types 135 (Neighbor Solicitation) and 136 (Neighbor Advertisement) are allowed on all interfaces. Flush stale/failed cache entries with `ip -6 neigh flush dev eth0` to force re-resolution.
+NDP failures prevent IPv6 communication even between hosts on the same subnet. Diagnose with `ip -6 neigh show` to see cache states, use `ndisc6` to manually probe specific neighbors, and capture traffic with `tcpdump` filtering on ICMPv6 types 135/136. The most common cause of NDP failure is a firewall blocking ICMPv6 - ensure types 135 (Neighbor Solicitation) and 136 (Neighbor Advertisement) are allowed on all interfaces. Flush stale/failed cache entries with `ip -6 neigh flush dev eth0` to force re-resolution.

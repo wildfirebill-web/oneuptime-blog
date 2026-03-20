@@ -123,6 +123,7 @@ The `resolution` field tells Istio how to resolve the service entry's hosts to I
 
 ```yaml
 # Static resolution with explicit endpoints
+
 spec:
   hosts:
     - my-database

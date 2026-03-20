@@ -303,6 +303,7 @@ metrics:
 
 ```promql
 # Container CPU usage over time
+
 rate(container_cpu_usage_seconds_total{container="app",pod=~"webapp-.*"}[5m])
 
 # Scaling events

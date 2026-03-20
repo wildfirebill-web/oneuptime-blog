@@ -24,6 +24,7 @@ First, check what your current timeout is:
 
 ```bash
 # Check the function's timeout setting
+
 aws lambda get-function-configuration \
   --function-name my-function \
   --query '{Timeout:Timeout,MemorySize:MemorySize}'

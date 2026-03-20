@@ -216,6 +216,7 @@ To update the encrypted values:
 
 ```bash
 # Decrypt, edit, and re-encrypt
+
 sops myapp-helm-values.yaml
 # This opens the file in your editor with decrypted content
 # Make changes, save, and SOPS re-encrypts automatically

@@ -118,6 +118,7 @@ For Python with SQLAlchemy, the approach uses the pool events system.
 
 ```python
 # pool_metrics.py
+
 from opentelemetry import metrics
 from sqlalchemy import event
 import time

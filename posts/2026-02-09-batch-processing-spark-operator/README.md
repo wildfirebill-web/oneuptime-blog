@@ -24,6 +24,7 @@ You can install the Spark Operator using Helm, which is the recommended approach
 
 ```bash
 # Add the Spark Operator Helm repository
+
 helm repo add spark-operator https://googlecloudplatform.github.io/spark-on-k8s-operator
 helm repo update
 

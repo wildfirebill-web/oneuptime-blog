@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ws, Node.js, WebSocket, IPv6, JavaScript
+Tags: Ws, Node.js, WebSocket, IPv6, JavaScript
 
 Description: Configure the ws Node.js library to serve WebSocket connections over IPv6 with TLS, authentication, and connection management.
 
@@ -28,7 +28,7 @@ WebSocket connections are HTTP upgrades. For IPv6 support, ensure:
 ### Server Binding
 
 ```javascript
-// Node.js ws library — bind to IPv6
+// Node.js ws library - bind to IPv6
 const WebSocket = require('ws');
 const wss = new WebSocket.Server({ host: '::', port: 8080 });
 
@@ -43,6 +43,7 @@ wss.on('connection', (ws, req) => {
 
 ```bash
 # Allow WebSocket port over IPv6
+
 sudo ip6tables -A INPUT -p tcp --dport 8080 -j ACCEPT -m comment --comment "WebSocket IPv6"
 
 # Verify the rule is in place
@@ -52,7 +53,7 @@ sudo ip6tables -L INPUT -v -n | grep 8080
 ### Client Connection
 
 ```javascript
-// Browser or Node.js client — IPv6 address needs brackets
+// Browser or Node.js client - IPv6 address needs brackets
 const socket = new WebSocket('ws://[2001:db8::1]:8080/');
 
 socket.addEventListener('open', () => {

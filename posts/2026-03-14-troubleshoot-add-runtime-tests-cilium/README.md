@@ -28,6 +28,7 @@ When runtime tests fail before exercising the parser:
 
 ```bash
 # Check cluster health
+
 kubectl get nodes -o wide
 kubectl get pods -n kube-system
 

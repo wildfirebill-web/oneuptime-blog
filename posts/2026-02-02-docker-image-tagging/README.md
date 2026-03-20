@@ -46,6 +46,7 @@ The following command shows how to tag an image with multiple identifiers:
 
 ```bash
 # Build and tag an image with multiple tags
+
 # The -t flag specifies the tag for the built image
 docker build -t myapp:latest \
              -t myapp:v1.2.3 \

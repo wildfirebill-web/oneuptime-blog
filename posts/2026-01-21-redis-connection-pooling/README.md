@@ -251,6 +251,7 @@ class RedisPoolManager:
 
 
 # Usage example
+
 def main():
     # Create pool manager
     pool = RedisPoolManager(

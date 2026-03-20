@@ -43,6 +43,7 @@ The SQL Server extension is deployed as an Arc machine extension. You can instal
 
 ```bash
 # Install the SQL Server extension on a Windows Arc server
+
 az connectedmachine extension create \
     --machine-name "sql-server-01" \
     --resource-group "arc-servers-rg" \

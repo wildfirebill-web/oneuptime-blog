@@ -132,6 +132,7 @@ The Dockerfile defines how Docker builds your image layer by layer. Each instruc
 
 ```dockerfile
 # Step 1: Use Alpine-based Node.js for a smaller image (~50MB vs ~350MB)
+
 # Alpine Linux is a security-focused, lightweight distribution
 FROM node:22-alpine
 

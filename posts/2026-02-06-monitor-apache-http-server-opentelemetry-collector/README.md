@@ -18,6 +18,7 @@ First, check if mod_status is loaded.
 
 ```bash
 # Check loaded modules
+
 apachectl -M | grep status
 
 # You should see: status_module (shared)

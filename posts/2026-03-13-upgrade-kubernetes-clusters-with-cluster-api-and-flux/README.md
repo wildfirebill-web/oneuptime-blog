@@ -43,6 +43,7 @@ Configure Flux to watch the cluster definition repository.
 
 ```yaml
 # flux-capi-gitrepository.yaml - Flux GitRepository for cluster definitions
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: GitRepository
 metadata:

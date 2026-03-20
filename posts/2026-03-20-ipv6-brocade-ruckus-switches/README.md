@@ -14,6 +14,7 @@ Brocade switches (now Ruckus/CommScope) running FastIron OS (FI) support full IP
 
 ```bash
 # Enable IPv6 unicast routing globally
+
 Switch(config)# ipv6 unicast-routing
 
 # Enable IPv6 CEF (optional, for performance)

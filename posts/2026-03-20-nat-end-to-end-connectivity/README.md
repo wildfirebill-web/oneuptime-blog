@@ -19,7 +19,7 @@ NAT fundamentally breaks this model.
 
 ## How NAT Breaks End-to-End
 
-```
+```text
 IPv4 Internet Model (with NAT):
 
 [192.168.1.10] → [NAT Router] → [Internet] → [External Host]
@@ -30,12 +30,12 @@ IPv4 Internet Model (with NAT):
 
 ### What NAT Breaks
 
-1. **Inbound connections** — external hosts cannot initiate connections to private IPs
-2. **Self-hosting** — requires explicit port forwarding configuration
-3. **Peer-to-peer** — requires NAT traversal (STUN/TURN/ICE)
-4. **Protocol transparency** — some protocols (FTP, SIP, H.323) embed IPs in payloads
-5. **IP-based security** — certificates and security models based on IP identity are complicated
-6. **Multicast across NAT** — not supported in standard NAT
+1. **Inbound connections** - external hosts cannot initiate connections to private IPs
+2. **Self-hosting** - requires explicit port forwarding configuration
+3. **Peer-to-peer** - requires NAT traversal (STUN/TURN/ICE)
+4. **Protocol transparency** - some protocols (FTP, SIP, H.323) embed IPs in payloads
+5. **IP-based security** - certificates and security models based on IP identity are complicated
+6. **Multicast across NAT** - not supported in standard NAT
 
 ## Applications That Require Special NAT Handling
 
@@ -60,7 +60,7 @@ NAT provides **stateful packet filtering** as a side effect:
 
 IPv6 was designed to restore end-to-end connectivity:
 
-```
+```text
 IPv6 Design:
 - 128-bit addresses: enough for every device to have a unique global address
 - No NAT required by design
@@ -82,11 +82,11 @@ Comparison:
 
 Even with IPv6, NAT has legitimate uses:
 
-1. **IPv4 address conservation** — unavoidable given IPv4 exhaustion
-2. **Network renumbering** — change ISP without renumbering all internal hosts
-3. **Privacy** — hide internal host count from external observers
-4. **Load balancing** — multiple backends behind one IP (DNAT)
-5. **Policy routing** — select source IP for different traffic types
+1. **IPv4 address conservation** - unavoidable given IPv4 exhaustion
+2. **Network renumbering** - change ISP without renumbering all internal hosts
+3. **Privacy** - hide internal host count from external observers
+4. **Load balancing** - multiple backends behind one IP (DNAT)
+5. **Policy routing** - select source IP for different traffic types
 
 ## Key Takeaways
 

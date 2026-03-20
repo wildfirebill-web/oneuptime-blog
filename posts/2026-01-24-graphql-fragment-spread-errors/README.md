@@ -44,6 +44,7 @@ This error occurs when a fragment is spread on an incompatible type.
 
 ```graphql
 # Schema
+
 type User {
   id: ID!
   name: String!

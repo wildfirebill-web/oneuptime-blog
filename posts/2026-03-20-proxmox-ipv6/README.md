@@ -13,12 +13,13 @@ Proxmox VE is a hypervisor platform that uses Linux bridges (vmbr0, vmbr1, etc.)
 ## Configure IPv6 on Proxmox Host Bridge
 
 ```bash
-# /etc/network/interfaces — Proxmox host network configuration
+# /etc/network/interfaces - Proxmox host network configuration
 
 auto lo
 iface lo inet loopback
 
 # Physical NIC
+
 auto eth0
 iface eth0 inet manual
 
@@ -54,7 +55,7 @@ ifreload -a
 
 ## Configure IPv6 in Proxmox Web UI
 
-```
+```text
 1. Node → System → Network
 2. Click "Edit" on vmbr0
 3. Add IPv6 Address: 2001:db8::10/64

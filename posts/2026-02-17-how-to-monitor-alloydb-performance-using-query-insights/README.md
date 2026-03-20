@@ -32,6 +32,7 @@ To enable it on an existing primary instance:
 
 ```bash
 # Enable Query Insights on an existing AlloyDB instance
+
 gcloud alloydb instances update my-primary-instance \
   --cluster=my-cluster \
   --region=us-central1 \

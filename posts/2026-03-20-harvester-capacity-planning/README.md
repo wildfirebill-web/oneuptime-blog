@@ -32,6 +32,7 @@ Start by documenting all planned VMs:
 
 ```bash
 # If migrating from an existing environment, export VM inventory
+
 # For VMware:
 # govc find / -type m | xargs -I {} govc vm.info {} > vm-inventory.txt
 
@@ -62,7 +63,7 @@ awk -F',' 'NR>1 {cpu+=$2; ram+=$3; disk+=$4} END {
 
 ## Step 2: Calculate CPU Capacity
 
-```
+```text
 CPU Capacity Formula:
   Total physical cores needed = (Total vCPU) / (CPU overcommit ratio)
 
@@ -93,9 +94,9 @@ echo "Minimum physical cores per node: ${PER_NODE}"
 
 ## Step 3: Calculate Memory Capacity
 
-Memory overcommit is riskier than CPU overcommit — VMs will be killed if the host runs out of memory (OOM). Conservative memory planning is recommended:
+Memory overcommit is riskier than CPU overcommit - VMs will be killed if the host runs out of memory (OOM). Conservative memory planning is recommended:
 
-```
+```text
 Memory Capacity Formula:
   Total physical RAM needed = (Total VM RAM) + (System overhead) + (HA buffer)
 
@@ -131,7 +132,7 @@ echo "Select node with: $((PER_NODE_HA + 16)) GB RAM (round up)"
 
 ## Step 4: Calculate Storage Capacity
 
-```
+```text
 Storage Capacity Formula:
   Total storage needed = (Sum of VM disk sizes) * (Replica count) * (Overprovisioning factor)
 
@@ -172,7 +173,7 @@ echo "Storage per node: ${PER_NODE} GB"
 
 ## Step 5: Calculate Network Bandwidth
 
-```
+```text
 Network Bandwidth Planning:
 
   Management network: 1 GbE is typically sufficient
@@ -270,4 +271,4 @@ kubectl top nodes --sort-by=memory
 
 ## Conclusion
 
-Effective capacity planning for Harvester requires careful consideration of CPU, memory, storage, and network requirements — all of which are interconnected. The most common mistakes are underestimating memory (leading to OOM events), underestimating storage (leading to no space for replicas or growth), and failing to account for the HA overhead (needing to sustain full workloads on N-1 nodes). Use the worksheet to calculate your requirements systematically, add appropriate buffers, and monitor actual utilization post-deployment to refine future capacity additions. Plan for at least 12-18 months of growth in your initial sizing.
+Effective capacity planning for Harvester requires careful consideration of CPU, memory, storage, and network requirements - all of which are interconnected. The most common mistakes are underestimating memory (leading to OOM events), underestimating storage (leading to no space for replicas or growth), and failing to account for the HA overhead (needing to sustain full workloads on N-1 nodes). Use the worksheet to calculate your requirements systematically, add appropriate buffers, and monitor actual utilization post-deployment to refine future capacity additions. Plan for at least 12-18 months of growth in your initial sizing.

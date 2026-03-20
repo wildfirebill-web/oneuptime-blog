@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rust, IPv6, Networking, std::net, Socket Programming, Development
+Tags: Rust, IPv6, Networking, Std::net, Socket Programming, Development
 
 Description: Handle, parse, validate, and use IPv6 addresses in Rust applications using std::net types including Ipv6Addr, IpAddr, and TcpListener for safe IPv6 networking.
 

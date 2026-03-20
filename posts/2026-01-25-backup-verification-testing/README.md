@@ -57,6 +57,7 @@ BACKUP_FILE="$1"
 CHECKSUM_FILE="${BACKUP_FILE}.sha256"
 
 # Generate checksum during backup
+
 sha256sum "$BACKUP_FILE" > "$CHECKSUM_FILE"
 
 # Verify checksum

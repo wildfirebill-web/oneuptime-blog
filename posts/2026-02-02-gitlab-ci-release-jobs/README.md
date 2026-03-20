@@ -56,6 +56,7 @@ The following configuration creates a minimal release job that triggers on tag p
 
 ```yaml
 # .gitlab-ci.yml - Basic release job configuration
+
 # The release-cli image includes all tools needed for creating releases
 stages:
   - build
@@ -593,7 +594,7 @@ flowchart TB
     Validation --> Build --> Test --> Prepare --> Release
 ```
 
-```yaml
+````yaml
 # Complete production release pipeline
 # Save as .gitlab-ci.yml in your repository root
 
@@ -779,14 +780,14 @@ generate-changelog:
       ## Installation
 
       ### npm
-      \`\`\`bash
+      ```bash
       npm install @myorg/${PACKAGE_NAME}@${VERSION}
-      \`\`\`
+      ```
 
       ### Docker
-      \`\`\`bash
+      ```bash
       docker pull ${CI_REGISTRY_IMAGE}:${CI_COMMIT_TAG}
-      \`\`\`
+      ```
 
       ### Binary
       Download the appropriate binary for your platform from the assets below.
@@ -794,9 +795,9 @@ generate-changelog:
       ## Verification
 
       All release artifacts include SHA256 checksums. Verify your download:
-      \`\`\`bash
+      ```bash
       sha256sum -c checksums.txt
-      \`\`\`
+      ```
 
       ## Links
 
@@ -932,7 +933,7 @@ notify-release:
   rules:
     - if: $CI_COMMIT_TAG
   allow_failure: true
-```
+````
 
 ---
 

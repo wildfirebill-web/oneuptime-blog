@@ -28,6 +28,7 @@ Start with a VM that has all your software installed and configured the way you 
 
 ```bash
 # Example: install your application dependencies
+
 sudo apt update && sudo apt upgrade -y
 sudo apt install -y nginx nodejs npm
 

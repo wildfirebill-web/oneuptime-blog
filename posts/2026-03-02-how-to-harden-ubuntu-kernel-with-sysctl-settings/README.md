@@ -24,6 +24,7 @@ You can read any parameter:
 
 ```bash
 # Read a single parameter
+
 sysctl net.ipv4.ip_forward
 
 # Read all parameters

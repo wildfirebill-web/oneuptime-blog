@@ -63,6 +63,7 @@ user=spark, access=WRITE, path=hdfs://namenode:8020/checkpoints/app
 
 ```bash
 # For HDFS checkpoints
+
 hdfs dfs -mkdir -p /checkpoints/spark-app
 hdfs dfs -chown spark:spark /checkpoints/spark-app
 hdfs dfs -chmod 755 /checkpoints/spark-app

@@ -28,6 +28,7 @@ import json
 from datetime import timedelta
 
 # Initialize Redis client
+
 cache = redis.Redis(host='localhost', port=6379, db=0)
 
 def get_user_profile(user_id: str) -> dict:

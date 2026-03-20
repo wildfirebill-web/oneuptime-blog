@@ -31,6 +31,7 @@ One of the most common debugging scenarios is investigating network issues betwe
 
 ```bash
 # Check if the DNS resolution works for a service
+
 nslookup my-service.my-namespace.svc.cluster.local
 
 # Test TCP connectivity to another service

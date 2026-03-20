@@ -57,6 +57,7 @@ The example below creates a service account and grants it a specific SCC. Then y
 
 ```bash
 # Create a dedicated service account
+
 oc create serviceaccount web-sa -n my-namespace
 
 # Allow it to use the anyuid SCC

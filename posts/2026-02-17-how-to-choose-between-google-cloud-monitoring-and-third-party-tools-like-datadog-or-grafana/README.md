@@ -34,6 +34,7 @@ Here is a typical Cloud Monitoring setup:
 
 ```bash
 # Create a custom dashboard with key metrics
+
 gcloud monitoring dashboards create --config-from-file=dashboard.json
 
 # Create an alerting policy for a Cloud Run service

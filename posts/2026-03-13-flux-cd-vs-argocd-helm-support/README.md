@@ -25,6 +25,7 @@ Flux CD manages Helm through two controllers:
 
 ```yaml
 # Flux HelmRelease example
+
 apiVersion: helm.toolkit.fluxcd.io/v2
 kind: HelmRelease
 metadata:

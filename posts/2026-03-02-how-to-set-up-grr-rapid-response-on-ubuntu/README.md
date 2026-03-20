@@ -26,6 +26,7 @@ GRR provides pre-built server packages and Docker images. The recommended method
 
 ```bash
 # Install prerequisites
+
 sudo apt update
 sudo apt install -y python3-pip python3-venv python3-dev \
   build-essential libssl-dev libffi-dev \

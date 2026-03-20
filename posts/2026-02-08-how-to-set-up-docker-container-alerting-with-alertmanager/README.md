@@ -31,6 +31,7 @@ Create a Docker Compose file for the full stack:
 
 ```yaml
 # docker-compose.monitoring.yml - Complete monitoring and alerting stack
+
 version: "3.9"
 
 services:

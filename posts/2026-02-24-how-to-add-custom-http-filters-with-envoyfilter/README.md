@@ -359,6 +359,7 @@ After applying an EnvoyFilter, verify it was installed correctly:
 
 ```bash
 # Check the HTTP filter chain
+
 istioctl proxy-config listeners deploy/my-app -n default -o json | \
   jq '.[].filterChains[].filters[] | select(.name=="envoy.filters.network.http_connection_manager") | .typedConfig.httpFilters[].name'
 ```

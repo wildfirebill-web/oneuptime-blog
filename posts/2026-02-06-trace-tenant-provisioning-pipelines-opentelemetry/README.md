@@ -25,6 +25,7 @@ Each step has its own failure modes and dependencies. Let us trace the entire pi
 
 ```python
 # provisioning_service.py
+
 from opentelemetry import trace
 from opentelemetry.trace import StatusCode
 

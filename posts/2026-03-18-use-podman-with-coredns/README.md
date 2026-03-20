@@ -26,6 +26,7 @@ Create the Corefile (CoreDNS configuration):
 
 ```text
 # ~/coredns/config/Corefile
+
 .:53 {
     forward . 8.8.8.8 8.8.4.4
     log

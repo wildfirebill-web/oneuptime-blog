@@ -12,7 +12,7 @@ On a shared AKS cluster, one misbehaving deployment can eat up all the CPU and m
 
 Resource quotas set hard caps on the total resources a namespace can consume. Limit ranges set defaults and constraints on individual pods and containers. Together, they form the resource governance layer that makes multi-tenant AKS clusters viable.
 
-## Resource Quotas: Namespace-Level Caps
+Resource Quotas: Namespace-Level Caps
 
 A ResourceQuota defines the maximum amount of compute resources, storage, and object counts that a namespace can use. Once a quota is in place, Kubernetes rejects any pod creation that would exceed the limit.
 
@@ -20,6 +20,7 @@ Here is a comprehensive quota for a team namespace.
 
 ```yaml
 # team-alpha-quota.yaml
+
 # Sets resource limits for the team-alpha namespace
 # Prevents any single team from consuming more than their fair share
 apiVersion: v1

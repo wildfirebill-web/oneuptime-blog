@@ -38,6 +38,7 @@ calicoctl get nodes -o yaml > backup-nodes.yaml
 
 ```bash
 # Check encapsulation mode
+
 calicoctl get ippools -o yaml | grep -E "ipipMode|vxlanMode"
 ```
 

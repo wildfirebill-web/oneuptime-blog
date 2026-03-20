@@ -36,6 +36,7 @@ The simplest approach is managing a JSON or YAML configuration file:
 
 ```yaml
 # roles/feature_flags/templates/feature_flags.json.j2
+
 # Feature flag configuration deployed to application servers
 {
   "flags": {

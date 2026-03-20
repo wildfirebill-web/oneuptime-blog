@@ -36,6 +36,7 @@ Run this as a pre-deploy step in your CI/CD pipeline:
 
 ```yaml
 # GitHub Actions example
+
 - name: Validate Istio config
   run: |
     istioctl analyze -f manifests/istio/ --output-threshold Error
@@ -87,7 +88,7 @@ istioctl proxy-config secret -n default deployment/my-app | grep -i "not after"
 istioctl ztunnel-config certificates | grep -v "VALID"
 ```
 
-## Resource Pre-Checks
+Resource Pre-Checks
 
 Make sure the cluster has enough resources for the deployment:
 

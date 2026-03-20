@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, Networking, Tcpdump, Troubleshooting, Packet Capture
+Tags: Kubernetes, Networking, tcpdump, Troubleshooting, Packet Capture
 
 Description: Use tcpdump to capture and analyze network traffic on Kubernetes nodes for debugging connectivity issues, examining pod communication, and identifying network problems at the packet level.
 
@@ -22,6 +22,7 @@ Use kubectl debug to run tcpdump on a node:
 
 ```bash
 # Start a debug container on the node with host networking
+
 kubectl debug node/<node-name> -it --image=nicolaka/netshoot
 
 # This drops you into a shell on the node with network tools available

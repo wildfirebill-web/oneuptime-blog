@@ -36,6 +36,7 @@ provider "aws" {
 
 ```hcl
 # Dead-letter queue for failed message processing
+
 resource "aws_sqs_queue" "dlq" {
   name = "my-queue-dlq"
 

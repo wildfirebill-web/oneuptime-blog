@@ -20,6 +20,7 @@ HashiCorp Nomad is a workload orchestrator that can schedule containers, VMs, an
 
 ```bash
 # Update the system first
+
 sudo dnf update -y
 
 # Add HashiCorp repository

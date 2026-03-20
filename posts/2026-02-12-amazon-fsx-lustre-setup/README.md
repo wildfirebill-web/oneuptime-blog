@@ -45,6 +45,7 @@ Here's the simplest setup - a scratch file system with S3 integration:
 
 ```bash
 # Create a scratch FSx for Lustre file system
+
 aws fsx create-file-system \
   --file-system-type LUSTRE \
   --storage-capacity 1200 \

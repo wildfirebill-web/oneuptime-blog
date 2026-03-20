@@ -18,6 +18,7 @@ Initialize a Go module and add the Functions Framework:
 
 ```bash
 # Create the project directory and initialize the module
+
 mkdir my-function && cd my-function
 go mod init example.com/my-function
 

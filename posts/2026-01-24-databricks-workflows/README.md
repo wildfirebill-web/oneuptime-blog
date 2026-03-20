@@ -37,6 +37,7 @@ You can create workflows through the UI, REST API, or Databricks Asset Bundles. 
 
 ```python
 # workflow_config.py
+
 # Define a workflow using the Databricks SDK
 
 from databricks.sdk import WorkspaceClient

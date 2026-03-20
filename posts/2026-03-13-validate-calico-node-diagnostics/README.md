@@ -17,6 +17,7 @@ Validating Calico node health requires confirming four signals per node: Felix i
 ```bash
 #!/bin/bash
 # validate-calico-nodes.sh
+
 PASS=0
 FAIL=0
 

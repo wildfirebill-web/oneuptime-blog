@@ -29,6 +29,7 @@ The foundation of state disaster recovery on AWS is S3 cross-region replication:
 
 ```hcl
 # primary-state-bucket.tf - Primary state storage in us-east-1
+
 provider "aws" {
   alias  = "primary"
   region = "us-east-1"

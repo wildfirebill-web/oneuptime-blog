@@ -96,6 +96,7 @@ These are the key metrics to monitor for Alertmanager health:
 
 ```promql
 # Total notifications sent by integration type
+
 sum by (integration) (rate(alertmanager_notifications_total[5m]))
 
 # Failed notifications by integration - should be zero

@@ -45,6 +45,7 @@ The simplest integration pattern where CircleCI updates the deployment manifest:
 
 ```yaml
 # .circleci/config.yml
+
 version: 2.1
 
 executors:

@@ -8,7 +8,7 @@ Description: A complete guide to creating a bootable Harvester USB drive and per
 
 ## Introduction
 
-USB boot is the most straightforward method to install Harvester on physical servers. It requires minimal infrastructure — just a USB drive and the Harvester ISO. This method is particularly useful for initial cluster setup, lab environments, or situations where network booting isn't available. This guide covers USB creation on Linux, macOS, and Windows, followed by the full installation walkthrough.
+USB boot is the most straightforward method to install Harvester on physical servers. It requires minimal infrastructure - just a USB drive and the Harvester ISO. This method is particularly useful for initial cluster setup, lab environments, or situations where network booting isn't available. This guide covers USB creation on Linux, macOS, and Windows, followed by the full installation walkthrough.
 
 ## Prerequisites
 
@@ -24,6 +24,7 @@ USB boot is the most straightforward method to install Harvester on physical ser
 
 ```bash
 # Download the latest Harvester release
+
 HARVESTER_VERSION="v1.3.0"
 wget https://releases.rancher.com/harvester/${HARVESTER_VERSION}/harvester-${HARVESTER_VERSION}-amd64.iso
 
@@ -91,7 +92,7 @@ Use the free tool **Rufus** to create the bootable USB:
 
 Before booting, configure the server firmware settings:
 
-```
+```text
 BIOS/UEFI Settings to Configure:
 ├── Virtualization Technology (VT-x / AMD-V)  → ENABLED
 ├── VT-d / IOMMU                               → ENABLED (for PCI passthrough)
@@ -112,7 +113,7 @@ BIOS/UEFI Settings to Configure:
 1. Insert the USB drive into the server
 2. Power on and press the boot menu key (usually F12)
 3. Select the USB device from the boot menu
-4. The Harvester GRUB menu loads — select **Install Harvester**
+4. The Harvester GRUB menu loads - select **Install Harvester**
 
 ## Step 5: Navigate the Interactive Installer
 
@@ -120,7 +121,7 @@ The Harvester installer uses a text-based UI (TUI). Use arrow keys to navigate a
 
 ### Select Installation Mode
 
-```
+```text
 ┌─────────────────────────────────┐
 │  Installation Mode              │
 │                                 │
@@ -149,7 +150,7 @@ DNS Servers: 8.8.8.8, 8.8.4.4
 
 The Virtual IP provides a stable endpoint for the Harvester API and UI:
 
-```
+```text
 Cluster VIP: 192.168.1.100
 VIP Mode: Static
 
@@ -163,7 +164,7 @@ VIP Mode: Static
 
 Choose the disk for the Harvester OS:
 
-```
+```text
 Available Disks:
   /dev/sda  - 250 GB  Samsung 870 EVO  [RECOMMENDED - OS disk]
   /dev/sdb  - 2 TB    Seagate Barracuda  [Will be used for VM storage]
@@ -174,7 +175,7 @@ Select: /dev/sda
 
 ### Set Passwords
 
-```
+```text
 Admin Password (UI access):  ●●●●●●●●●●●●
 Confirm Password:             ●●●●●●●●●●●●
 
@@ -200,7 +201,7 @@ Review the configuration summary and confirm the installation. The installer wil
 
 After the server reboots, remove the USB drive. The Harvester terminal UI will display the access information:
 
-```
+```text
 Harvester v1.3.0 installed successfully
 
   Dashboard URL: https://192.168.1.100

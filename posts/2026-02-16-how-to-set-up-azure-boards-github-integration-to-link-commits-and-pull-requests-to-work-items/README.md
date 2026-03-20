@@ -52,6 +52,7 @@ The integration uses a simple syntax: include `AB#<work-item-id>` in your commit
 
 ```bash
 # Commit that links to work item 1234
+
 git commit -m "Fix null pointer exception in user authentication AB#1234"
 
 # Commit that links to multiple work items

@@ -24,6 +24,7 @@ Let's start with a simple Let's Encrypt ClusterIssuer using HTTP-01 challenges. 
 
 ```yaml
 # letsencrypt-cluster-issuer.yaml
+
 apiVersion: cert-manager.io/v1
 kind: ClusterIssuer
 metadata:

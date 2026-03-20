@@ -58,6 +58,7 @@ Snapshots are:
 
 ```bash
 # First, install the S3 repository plugin on all nodes
+
 # sudo bin/elasticsearch-plugin install repository-s3
 
 # Add S3 credentials to keystore on all nodes

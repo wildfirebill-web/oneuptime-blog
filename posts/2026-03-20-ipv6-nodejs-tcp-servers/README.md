@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Node.js, IPv6, TCP, net Module, Networking
+Tags: Node.js, IPv6, TCP, Net Module, Networking
 
 Description: Create IPv6 TCP servers in Node.js using the net module, handle dual-stack connections, and build protocol-aware servers.
 

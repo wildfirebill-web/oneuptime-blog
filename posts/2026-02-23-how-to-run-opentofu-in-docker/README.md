@@ -16,6 +16,7 @@ The OpenTofu project publishes official Docker images to GitHub Container Regist
 
 ```bash
 # Pull the latest OpenTofu image
+
 docker pull ghcr.io/opentofu/opentofu:latest
 
 # Pull a specific version

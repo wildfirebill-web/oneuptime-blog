@@ -1,4 +1,4 @@
-# How to Fix "Error: Invalid Provider Configuration" in OpenTofu
+# How to Fix 'Error: Invalid Provider Configuration' in OpenTofu
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -12,7 +12,7 @@ Description: Learn how to diagnose and fix invalid provider configuration errors
 
 ## Common Error Forms
 
-```
+```hcl
 Error: Invalid provider configuration
   Provider "registry.opentofu.org/hashicorp/aws" requires explicit configuration.
   Add a provider block to the root module with necessary arguments, or pass
@@ -31,7 +31,8 @@ Error: Unsupported argument
 Check the provider's documentation for required arguments:
 
 ```hcl
-# WRONG — missing required region
+# WRONG - missing required region
+
 provider "aws" {}
 
 # CORRECT
@@ -46,7 +47,7 @@ provider "aws" {
 ## Fix 2: Fix Incorrect Attribute Names
 
 ```hcl
-# WRONG — attribute name typo
+# WRONG - attribute name typo
 provider "aws" {
   region    = "us-east-1"
   assume_role_arn = "arn:aws:iam::123456789012:role/role-name"  # Wrong
@@ -64,14 +65,14 @@ provider "aws" {
 ## Fix 3: Provider Alias Mismatch
 
 ```hcl
-# WRONG — resource references undefined alias
+# WRONG - resource references undefined alias
 resource "aws_instance" "west" {
   provider = aws.us-west-2   # This alias doesn't exist
   ami      = "ami-abc123"
   instance_type = "t3.micro"
 }
 
-# CORRECT — define the alias first
+# CORRECT - define the alias first
 provider "aws" {
   alias  = "us-west-2"
   region = "us-west-2"
@@ -89,7 +90,7 @@ resource "aws_instance" "west" {
 If a module uses a non-default provider, you must pass it explicitly:
 
 ```hcl
-# WRONG — module uses aws.west but it's not passed
+# WRONG - module uses aws.west but it's not passed
 module "west_vpc" {
   source = "./modules/vpc"
 }

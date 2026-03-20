@@ -96,6 +96,7 @@ build:
     expire_in: 1 week
 
 # Other examples
+
 artifacts:
   expire_in: 30 days
   # expire_in: 1 month

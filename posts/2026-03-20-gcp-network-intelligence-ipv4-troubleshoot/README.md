@@ -8,7 +8,7 @@ Description: Use GCP Network Intelligence Center's connectivity tests, network t
 
 ## Introduction
 
-GCP Network Intelligence Center is a suite of tools for monitoring, analyzing, and troubleshooting network configurations. It includes Connectivity Tests, Network Topology, Firewall Insights, and Performance Dashboard — providing visibility into why IPv4 traffic flows or fails.
+GCP Network Intelligence Center is a suite of tools for monitoring, analyzing, and troubleshooting network configurations. It includes Connectivity Tests, Network Topology, Firewall Insights, and Performance Dashboard - providing visibility into why IPv4 traffic flows or fails.
 
 ## Tool Overview
 
@@ -21,10 +21,11 @@ GCP Network Intelligence Center is a suite of tools for monitoring, analyzing, a
 
 ## Connectivity Tests
 
-Connectivity Tests simulate packet paths and tell you whether traffic between two endpoints is allowed or blocked — and why.
+Connectivity Tests simulate packet paths and tell you whether traffic between two endpoints is allowed or blocked - and why.
 
 ```bash
 # Test TCP connectivity from a VM to an external IP
+
 gcloud network-management connectivity-tests create vm-to-internet \
   --source-instance projects/my-project/zones/us-east1-b/instances/my-vm \
   --destination-ip-address 8.8.8.8 \

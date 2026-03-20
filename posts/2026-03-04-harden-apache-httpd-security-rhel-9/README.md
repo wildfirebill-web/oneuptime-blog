@@ -24,6 +24,7 @@ By default Apache sends its version and OS in response headers and error pages. 
 
 ```bash
 # Create a security hardening config file
+
 sudo tee /etc/httpd/conf.d/security.conf > /dev/null <<'EOF'
 # Hide Apache version from response headers
 ServerTokens Prod

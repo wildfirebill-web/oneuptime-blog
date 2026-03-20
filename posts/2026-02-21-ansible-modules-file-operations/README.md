@@ -75,6 +75,7 @@ if __name__ == '__main__':
 
 ```python
 # Use module's built-in backup
+
 if module.params.get('backup') and os.path.exists(path):
     backup_file = module.backup_local(path)
 ```

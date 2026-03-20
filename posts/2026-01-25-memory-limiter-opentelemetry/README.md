@@ -56,6 +56,7 @@ The maximum memory the collector should use. Set this below your container or sy
 
 ```yaml
 # Container with 2GB limit
+
 memory_limiter:
   limit_mib: 1800  # 90% of 2GB
 

@@ -16,6 +16,7 @@ First, create an Artifact Registry repository in Docker format (OCI artifacts us
 
 ```bash
 # Create a Docker-format repository for Helm charts
+
 gcloud artifacts repositories create helm-charts \
   --repository-format=docker \
   --location=us-central1 \

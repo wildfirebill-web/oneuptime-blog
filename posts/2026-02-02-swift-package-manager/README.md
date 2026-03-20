@@ -103,6 +103,7 @@ The following command creates a new package with the standard directory structur
 
 ```bash
 # Create a new directory for your package
+
 mkdir MySwiftPackage
 cd MySwiftPackage
 

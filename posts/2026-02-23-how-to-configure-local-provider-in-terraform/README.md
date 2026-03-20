@@ -21,6 +21,7 @@ It is a simple provider with a focused purpose: create and manage files and dire
 
 ```hcl
 # versions.tf - Declare the Local provider
+
 terraform {
   required_version = ">= 1.0"
 

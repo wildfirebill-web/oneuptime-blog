@@ -18,6 +18,7 @@ In rootless mode, Podman cannot use iptables directly for port forwarding. Inste
 
 ```bash
 # Publish a port (works the same as root mode syntax)
+
 podman run -d --name web \
   -p 8080:80 \
   docker.io/library/nginx:latest

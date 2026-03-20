@@ -39,6 +39,7 @@ On each Windows node (via RDP or WinRM):
 
 ```powershell
 # Check Windows version
+
 Get-ComputerInfo | Select-Object WindowsProductName, WindowsVersion
 
 # Check containerd is running

@@ -16,6 +16,7 @@ Before applying a new policy, test it without enforcement:
 
 ```bash
 # Back up the current working policy
+
 sudo cp /etc/usbguard/rules.conf /etc/usbguard/rules.conf.known-good
 
 # Apply the new policy

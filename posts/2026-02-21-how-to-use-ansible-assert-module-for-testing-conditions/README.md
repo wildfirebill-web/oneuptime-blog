@@ -16,6 +16,7 @@ The assert module takes a list of conditions in the `that` parameter. All condit
 
 ```yaml
 # Basic assertion - verify a variable is defined and has a value
+
 - name: Verify deployment version is specified
   ansible.builtin.assert:
     that:

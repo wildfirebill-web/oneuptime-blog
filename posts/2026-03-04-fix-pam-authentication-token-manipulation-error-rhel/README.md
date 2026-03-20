@@ -16,6 +16,7 @@ The "Authentication token manipulation error" typically appears when trying to c
 
 ```bash
 # Check permissions on the shadow file
+
 ls -la /etc/shadow
 # Should be: ---------- 1 root root (mode 000) or -rw------- (mode 600)
 

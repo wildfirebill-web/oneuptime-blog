@@ -10,6 +10,7 @@ Description: Test GraphQL APIs over IPv6 using curl, Insomnia, automated testing
 
 ```bash
 # Basic GraphQL query over IPv6
+
 curl -6 -X POST http://[::1]:4000/graphql \
   -H "Content-Type: application/json" \
   -d '{"query": "{ hello }"}'
@@ -181,4 +182,4 @@ Use [OneUptime](https://oneuptime.com) to set up automated GraphQL health checks
 
 ## Conclusion
 
-Testing GraphQL APIs over IPv6 requires using IPv6 URLs in the format `http://[ipv6addr]:port/graphql`. All standard testing tools — curl, Jest, pytest, k6 — support IPv6 addresses. Automate IPv6-specific tests in CI/CD pipelines to catch connectivity regressions early.
+Testing GraphQL APIs over IPv6 requires using IPv6 URLs in the format `http://[ipv6addr]:port/graphql`. All standard testing tools - curl, Jest, pytest, k6 - support IPv6 addresses. Automate IPv6-specific tests in CI/CD pipelines to catch connectivity regressions early.

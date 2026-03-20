@@ -30,6 +30,7 @@ Create a structured patch request workflow using Git:
 
 ```bash
 # Recommended repository structure for patch requests
+
 calico-patches/
   ├── templates/
   │   └── patch-request.yaml

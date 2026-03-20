@@ -58,6 +58,7 @@ Tune batch settings based on your throughput:
 
 ```yaml
 # Low-volume pipeline (< 100 spans/sec)
+
 processors:
   batch/low-volume:
     timeout: 30s

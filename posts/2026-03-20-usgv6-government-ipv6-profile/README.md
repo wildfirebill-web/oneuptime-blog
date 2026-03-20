@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: USGv6, IPv6, Government, Compliance, NIST, Federal, Standards
+Tags: USGv6, IPv6, Government, Compliance, NIST, Federal, Standard
 
 Description: Understand the USGv6 profile which defines IPv6 technical requirements for US federal government networks, equipment procurement, and deployment standards.
 
@@ -12,7 +12,7 @@ USGv6 (US Government IPv6 Profile) is a technical specification developed by NIS
 
 ## USGv6 Background
 
-```
+```text
 USGv6 History:
 - Developed by NIST (National Institute of Standards and Technology)
 - Published as NIST SP 500-267: "A Profile for IPv6 in the US Government"
@@ -27,7 +27,7 @@ Key Documents:
 
 ## USGv6 Product Categories
 
-```
+```text
 USGv6 defines requirements for product categories:
 
 1. Host Devices
@@ -56,6 +56,7 @@ USGv6 defines requirements for product categories:
 # USGv6 Host Profile requirements (subset):
 
 # 1. IPv6 Addressing
+
 # - Static, SLAAC, and DHCPv6 support required
 # Test SLAAC:
 cat /proc/sys/net/ipv6/conf/eth0/autoconf
@@ -113,7 +114,7 @@ cat /etc/radvd.conf
 
 ## USGv6 Testing and Certification
 
-```
+```text
 USGv6 Testing Organizations:
 - UNH InterOperability Laboratory (UNH-IOL)
 - Spirent Communications

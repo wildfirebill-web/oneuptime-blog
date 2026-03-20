@@ -8,12 +8,13 @@ Description: Create Docker IPvlan networks with IPv6 support using L2 and L3 mod
 
 ## Introduction
 
-IPvlan is a Docker network driver that gives containers direct L2 (Ethernet) or L3 (IP routing) network access using the parent interface's MAC address. Unlike Macvlan, IPvlan shares the parent's MAC address — all containers use the host's MAC. IPvlan L3 mode is particularly useful when you want containers to have IPv6 addresses routed at layer 3 without changing MAC addresses, making it compatible with networks that restrict MAC address changes (like some cloud environments).
+IPvlan is a Docker network driver that gives containers direct L2 (Ethernet) or L3 (IP routing) network access using the parent interface's MAC address. Unlike Macvlan, IPvlan shares the parent's MAC address - all containers use the host's MAC. IPvlan L3 mode is particularly useful when you want containers to have IPv6 addresses routed at layer 3 without changing MAC addresses, making it compatible with networks that restrict MAC address changes (like some cloud environments).
 
 ## IPvlan L2 Mode with IPv6
 
 ```bash
 # L2 mode: containers are on the same L2 segment as the host
+
 # All containers share the parent interface's MAC address
 
 docker network create \
@@ -59,7 +60,7 @@ docker network create \
     --subnet 2001:db8:containers::/64 \
     ipvlan-l3-net
 
-# NOTE: L3 mode has NO gateway — routing is handled by ipvlan driver
+# NOTE: L3 mode has NO gateway - routing is handled by ipvlan driver
 # The upstream router needs a route:
 # ip -6 route add 2001:db8:containers::/64 via <host-eth0-ipv6>
 
@@ -109,7 +110,7 @@ services:
 
 ## IPvlan vs Macvlan Comparison
 
-```
+```text
 Feature              IPvlan              Macvlan
 -----------          ----------          ----------
 MAC address          Shared (host MAC)   Unique per container

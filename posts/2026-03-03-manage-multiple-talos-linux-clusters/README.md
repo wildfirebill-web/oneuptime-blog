@@ -24,6 +24,7 @@ The first step is establishing a dedicated management workstation or jump box. T
 
 ```bash
 # Create a directory structure for cluster configs
+
 mkdir -p ~/talos-clusters/{dev,staging,prod-us,prod-eu}
 
 # Each directory holds its own talosconfig and kubeconfig

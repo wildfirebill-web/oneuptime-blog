@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Latency, Jitter, Monitoring, ping, iperf3, Networking
+Tags: IPv6, Latency, Jitter, Monitoring, Ping, iperf3, Networking
 
 Description: Measure IPv6 network latency and jitter using ping6, iperf3 UDP mode, and custom Python scripts to establish baselines and detect degradation over time.
 
@@ -13,13 +13,14 @@ Latency (round-trip time) and jitter (variation in latency) are critical quality
 ## Step 1: Basic Latency Measurement with ping6
 
 ```bash
-# Standard latency measurement — 100 packets
+# Standard latency measurement - 100 packets
+
 ping6 -c 100 2001:db8::1
 
-# High-frequency measurement — 1000 packets at 10 pps
+# High-frequency measurement - 1000 packets at 10 pps
 ping6 -c 1000 -i 0.1 2001:db8::1
 
-# Flood ping (requires root) — maximum rate
+# Flood ping (requires root) - maximum rate
 sudo ping6 -f -c 10000 2001:db8::1
 
 # Specify packet size to test path fragmentation behavior
@@ -28,7 +29,7 @@ ping6 -c 100 -s 8972 2001:db8::1   # Jumbo frame test
 ```
 
 Output parsing:
-```
+```text
 # Key output line:
 # rtt min/avg/max/mdev = 0.451/0.612/1.203/0.087 ms
 # mdev = mean deviation ≈ jitter
@@ -42,7 +43,7 @@ iperf3's UDP mode reports jitter directly.
 # Start server on remote host
 iperf3 -s -6 -p 5201
 
-# Run UDP test — 1 Mbps for 60 seconds, report every second
+# Run UDP test - 1 Mbps for 60 seconds, report every second
 iperf3 -6 -c 2001:db8::1 \
   -u \              # UDP mode
   -b 1M \           # 1 Mbps send rate
@@ -60,7 +61,7 @@ iperf3 -6 -c 2001:db8::1 -u -b 1M -t 60 -J > jitter_test.json
 import json
 import statistics
 
-# jitter_analysis.py — parse iperf3 JSON output for jitter statistics
+# jitter_analysis.py - parse iperf3 JSON output for jitter statistics
 
 with open("jitter_test.json") as f:
     data = json.load(f)
@@ -90,7 +91,7 @@ if jitter_values:
 
 ```bash
 #!/bin/bash
-# ipv6-latency-monitor.sh — log latency every 60 seconds
+# ipv6-latency-monitor.sh - log latency every 60 seconds
 
 TARGET="2001:db8::1"
 LOG="/var/log/ipv6-latency.csv"

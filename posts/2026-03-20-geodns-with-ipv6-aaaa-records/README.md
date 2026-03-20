@@ -18,6 +18,7 @@ PowerDNS has a native GeoIP backend that supports IPv6 AAAA responses based on c
 
 ```bash
 # Ubuntu/Debian
+
 apt install pdns-backend-geoip libmaxminddb-dev
 
 # Download MaxMind GeoLite2 database (requires free registration)

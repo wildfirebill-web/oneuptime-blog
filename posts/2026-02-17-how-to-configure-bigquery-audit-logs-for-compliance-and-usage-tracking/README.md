@@ -28,6 +28,7 @@ To get meaningful audit trails, you need to enable Data Access logs for BigQuery
 
 ```bash
 # Get the current IAM audit config
+
 gcloud projects get-iam-policy my-project --format=json > /tmp/policy.json
 ```
 

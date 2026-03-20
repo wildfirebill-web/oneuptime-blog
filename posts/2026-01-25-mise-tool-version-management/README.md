@@ -26,6 +26,7 @@ Install mise using your preferred method:
 
 ```bash
 # macOS with Homebrew
+
 brew install mise
 
 # Linux/macOS with curl

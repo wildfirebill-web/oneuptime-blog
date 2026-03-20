@@ -32,6 +32,7 @@ Define a Kubernetes Job that performs the pre-deployment task.
 
 ```yaml
 # apps/my-app/pre-deploy/job.yaml
+
 apiVersion: batch/v1
 kind: Job
 metadata:

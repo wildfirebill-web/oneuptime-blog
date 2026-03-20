@@ -33,6 +33,7 @@ You can check for TPM availability on an existing Talos node:
 
 ```bash
 # Check for TPM device
+
 talosctl get hardwareinfo --nodes 192.168.1.10 -o yaml
 ```
 

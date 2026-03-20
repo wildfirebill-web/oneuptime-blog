@@ -47,6 +47,7 @@ Verify your GKE cluster is VPC-native:
 
 ```bash
 # Check that the GKE cluster uses IP aliases (VPC-native mode)
+
 gcloud container clusters describe my-cluster \
   --zone=us-central1-a \
   --format="value(ipAllocationPolicy.useIpAliases)"

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Ntpd, Chrony, Migration, NTP, Linux
+Tags: RHEL, ntpd, Chrony, Migration, NTP, Linux
 
 Description: A step-by-step guide for migrating from ntpd (ntp) to chrony on RHEL, including configuration translation and validation.
 
@@ -37,6 +37,7 @@ Before changing anything, capture your existing setup:
 
 ```bash
 # On the old RHEL 6/7 system, save the ntp configuration
+
 cat /etc/ntp.conf
 ```
 

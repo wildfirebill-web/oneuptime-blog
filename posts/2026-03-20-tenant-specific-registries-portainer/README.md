@@ -1,4 +1,4 @@
-# How to Set Up Tenant-Specific Registries in Portainer
+# How to Set Up Tenant-Specific Registries in Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -14,6 +14,7 @@ In multi-tenant environments, image registry access is as important as environme
 
 ```yaml
 # docker-compose.yml - Tenant-isolated registries
+
 version: "3.8"
 
 services:

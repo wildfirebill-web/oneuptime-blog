@@ -241,6 +241,7 @@ class BackupChecksumManager:
 
 
 # Example usage
+
 if __name__ == "__main__":
     manager = BackupChecksumManager(
         backup_dir="/backups/daily/2024-01-15",

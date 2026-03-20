@@ -20,6 +20,7 @@ The single biggest time saver in CI/CD is caching. Without caching, every pipeli
 
 ```yaml
 # GitHub Actions
+
 jobs:
   terraform:
     runs-on: ubuntu-latest

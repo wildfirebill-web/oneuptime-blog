@@ -27,6 +27,7 @@ Nested virtualization allows a virtual machine running on Harvester to itself ru
 
 ```bash
 # SSH into each Harvester node
+
 ssh rancher@192.168.1.11
 
 # Check if nested virtualization is already enabled
@@ -255,7 +256,7 @@ spec:
 
 Nested virtualization has overhead at each layer:
 
-```
+```text
 Layer 1: Physical hardware
 Layer 2: Harvester KVM (5-15% overhead)
 Layer 3: Guest VM KVM (additional 5-15% overhead)

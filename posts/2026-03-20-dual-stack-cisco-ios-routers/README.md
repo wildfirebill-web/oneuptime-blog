@@ -12,7 +12,7 @@ Cisco IOS routers support dual-stack by running IPv4 and IPv6 simultaneously on 
 
 ## Enable IPv6 Unicast Routing
 
-```
+```text
 Router# configure terminal
 Router(config)# ipv6 unicast-routing
 Router(config)# end
@@ -20,7 +20,7 @@ Router(config)# end
 
 ## Configure Dual-Stack Interfaces
 
-```
+```text
 Router# configure terminal
 
 ! Configure GigabitEthernet0/0 (LAN interface)
@@ -43,7 +43,7 @@ Router(config-if)# exit
 
 ## IPv4 Default Route and IPv6 Default Route
 
-```
+```text
 ! IPv4 default route
 Router(config)# ip route 0.0.0.0 0.0.0.0 203.0.113.254
 
@@ -53,7 +53,7 @@ Router(config)# ipv6 route ::/0 2001:db8:5678:1::254
 
 ## Verify Configuration
 
-```
+```text
 ! Verify IPv4 interfaces
 Router# show ip interface brief
 ! Expected: GigabitEthernet0/0  10.0.0.1  YES  up  up
@@ -77,7 +77,7 @@ Router# ping 2001:db8:5678:1::254    ! IPv6
 
 ## Configuring OSPFv2 (IPv4) and OSPFv3 (IPv6)
 
-```
+```text
 ! IPv4 OSPF
 Router(config)# router ospf 1
 Router(config-router)# network 10.0.0.0 0.0.0.255 area 0
@@ -97,7 +97,7 @@ Router(config-if)# exit
 
 ## DHCPv4 and DHCPv6 Server
 
-```
+```text
 ! DHCPv4 pool
 Router(config)# ip dhcp pool LAN_V4
 Router(dhcp-config)# network 10.0.0.0 255.255.255.0
@@ -122,7 +122,7 @@ Router(config-if)# exit
 
 ## Access Control Lists for Both Protocols
 
-```
+```text
 ! IPv4 ACL
 Router(config)# ip access-list extended ALLOW_WEB
 Router(config-ext-nacl)# permit tcp any host 10.0.0.10 eq 80
@@ -138,4 +138,4 @@ Router(config-ipv6-acl)# deny ipv6 any any log
 
 ## Conclusion
 
-Cisco IOS dual-stack requires `ipv6 unicast-routing` globally, then both `ip address` and `ipv6 address` on each interface. Separate routing protocols handle each family: OSPFv2 for IPv4, OSPFv3 for IPv6. ACLs are also separate (`ip access-list` vs `ipv6 access-list`). Verify both stacks with `show ip interface brief` and `show ipv6 interface brief`. Dual-stack on IOS is transparent to connected hosts — they see both IPv4 and IPv6 gateways automatically.
+Cisco IOS dual-stack requires `ipv6 unicast-routing` globally, then both `ip address` and `ipv6 address` on each interface. Separate routing protocols handle each family: OSPFv2 for IPv4, OSPFv3 for IPv6. ACLs are also separate (`ip access-list` vs `ipv6 access-list`). Verify both stacks with `show ip interface brief` and `show ipv6 interface brief`. Dual-stack on IOS is transparent to connected hosts - they see both IPv4 and IPv6 gateways automatically.

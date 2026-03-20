@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: LDAP, IPv6, Monitoring, Prometheus, Health Check, OpenLDAP, Alerting
+Tags: LDAP, IPv6, Monitoring, Prometheus, Health Checks, OpenLDAP, Alerting
 
 Description: Monitor LDAP server availability and performance over IPv6 using Prometheus, custom health check scripts, and alerting to ensure directory service reliability.
 
@@ -23,6 +23,7 @@ BIND_PW="adminpassword"
 BASE_DN="dc=example,dc=com"
 
 # Check 1: Port reachability over IPv6
+
 check_port() {
   if nc -6 -w 3 "$LDAP_SERVER" "$LDAP_PORT" < /dev/null > /dev/null 2>&1; then
     echo "OK: LDAP port $LDAP_PORT reachable on [$LDAP_SERVER]"

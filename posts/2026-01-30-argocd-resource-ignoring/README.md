@@ -367,6 +367,7 @@ Use the ArgoCD CLI to see the actual diff.
 
 ```bash
 # Show the diff for an application
+
 argocd app diff myapp
 
 # Show the diff with details

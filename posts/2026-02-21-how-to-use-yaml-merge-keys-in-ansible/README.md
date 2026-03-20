@@ -14,6 +14,7 @@ YAML merge keys (`<<`) let you combine one mapping into another, effectively inh
 
 ```yaml
 # Define a base configuration with an anchor
+
 base_config: &defaults
   restart_policy: unless-stopped
   network: app-network

@@ -12,6 +12,7 @@ strongSwan is a widely used open-source IPsec implementation that supports IPv6 
 
 ```bash
 # Debian/Ubuntu
+
 sudo apt-get install strongswan strongswan-swanctl charon-systemd
 
 # Check version (5.x supports IKEv2 and IPv6 well)

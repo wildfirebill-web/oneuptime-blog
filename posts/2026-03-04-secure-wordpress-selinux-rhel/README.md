@@ -14,6 +14,7 @@ SELinux adds a mandatory access control layer that limits what the web server pr
 
 ```bash
 # Check SELinux status
+
 getenforce
 # Should return: Enforcing
 

@@ -2,17 +2,17 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, Infrastructure as Code, Backends, AWS, Security
+Tags: OpenTofu, Terraform, Infrastructure as Code, Backend, AWS, Security
 
 Description: Learn how to configure the OpenTofu S3 backend with customer-provided encryption keys (SSE-C) for full control over state file encryption.
 
 ## Introduction
 
-Customer-Provided Encryption Keys (SSE-C) for S3 allow you to provide the encryption key on each request rather than storing it in AWS. S3 encrypts and decrypts using your key but never persists the key itself. This provides maximum key control — AWS never has access to your encryption key.
+Customer-Provided Encryption Keys (SSE-C) for S3 allow you to provide the encryption key on each request rather than storing it in AWS. S3 encrypts and decrypts using your key but never persists the key itself. This provides maximum key control - AWS never has access to your encryption key.
 
 ## How SSE-C Works
 
-```
+```text
 You provide key → S3 encrypts data → S3 discards key
 You provide key → S3 decrypts data → S3 discards key
 ```
@@ -39,10 +39,11 @@ terraform {
 
 ```bash
 # Generate a random 256-bit key
+
 openssl rand -base64 32
 
 # Output: base64-encoded 32-byte key
-# Store this securely — loss means permanent data loss!
+# Store this securely - loss means permanent data loss!
 
 # Example: store in AWS Secrets Manager
 aws secretsmanager create-secret \
@@ -80,7 +81,7 @@ tofu plan
 Keep the key out of version-controlled configuration files:
 
 ```hcl
-# backend.tf — committed to source control (no key here)
+# backend.tf - committed to source control (no key here)
 terraform {
   backend "s3" {
     bucket = "my-tofu-state"
@@ -131,4 +132,4 @@ tofu state push state-backup.json
 
 ## Conclusion
 
-SSE-C provides maximum key control for the most security-conscious environments. AWS never stores your encryption key, ensuring complete key sovereignty. The trade-off is operational complexity — you must manage key storage, distribution, and rotation manually. Use SSE-KMS unless you have specific compliance requirements mandating customer key control.
+SSE-C provides maximum key control for the most security-conscious environments. AWS never stores your encryption key, ensuring complete key sovereignty. The trade-off is operational complexity - you must manage key storage, distribution, and rotation manually. Use SSE-KMS unless you have specific compliance requirements mandating customer key control.

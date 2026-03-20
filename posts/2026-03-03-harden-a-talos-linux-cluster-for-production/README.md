@@ -31,6 +31,7 @@ By default, any valid Talos client certificate has full admin access. Enable RBA
 
 ```yaml
 # Machine configuration
+
 machine:
   features:
     rbac: true

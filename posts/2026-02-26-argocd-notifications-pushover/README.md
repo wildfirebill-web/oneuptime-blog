@@ -176,6 +176,7 @@ Priority levels in Pushover:
 
 ```bash
 # Regular deployments
+
 kubectl annotate app my-app -n argocd \
   notifications.argoproj.io/subscribe.on-deployed-pushover.pushover=""
 

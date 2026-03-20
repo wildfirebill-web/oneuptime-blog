@@ -42,6 +42,7 @@ Expose via `/metrics` endpoint (automatically scraped by Prometheus).
 
 ```yaml
 # Via PodMonitor (if using Prometheus Operator)
+
 apiVersion: monitoring.coreos.com/v1
 kind: PodMonitor
 metadata:

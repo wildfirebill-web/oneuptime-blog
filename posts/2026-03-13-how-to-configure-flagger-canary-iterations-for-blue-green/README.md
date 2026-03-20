@@ -219,6 +219,7 @@ Track the iteration count during a rollout:
 
 ```bash
 # Watch canary status and iterations
+
 kubectl get canary backend-api -n production -w
 
 # Check the iteration progress in events

@@ -150,6 +150,7 @@ Send logs to different outputs based on log content:
 
 ```yaml
 # Error logs go to a dedicated output
+
 apiVersion: logging.banzaicloud.io/v1beta1
 kind: Flow
 metadata:

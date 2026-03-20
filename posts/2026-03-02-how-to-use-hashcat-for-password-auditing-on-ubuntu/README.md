@@ -18,6 +18,7 @@ Hashcat is available directly from Ubuntu's package repositories, but the versio
 
 ```bash
 # Install via apt (simpler, slightly older version)
+
 sudo apt update
 sudo apt install hashcat -y
 

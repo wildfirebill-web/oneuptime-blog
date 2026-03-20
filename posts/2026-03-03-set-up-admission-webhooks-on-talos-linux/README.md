@@ -119,6 +119,7 @@ Admission webhooks must serve HTTPS. The easiest way to handle certificates on T
 
 ```yaml
 # webhook-certificate.yaml
+
 apiVersion: cert-manager.io/v1
 kind: Certificate
 metadata:

@@ -48,6 +48,7 @@ The JMX Exporter converts Kafka's JMX metrics to Prometheus format.
 
 ```yaml
 # kafka-jmx-config.yml
+
 lowercaseOutputName: true
 lowercaseOutputLabelNames: true
 

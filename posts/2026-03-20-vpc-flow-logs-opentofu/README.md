@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: OpenTofu, VPC Flow Logs, AWS, Security, Monitoring, Infrastructure as Code
 
-Description: Learn how to enable and configure AWS VPC Flow Logs using OpenTofu — publishing to CloudWatch Logs or S3, customizing log format, and querying logs with Athena.
+Description: Learn how to enable and configure AWS VPC Flow Logs using OpenTofu - publishing to CloudWatch Logs or S3, customizing log format, and querying logs with Athena.
 
 ## Introduction
 
@@ -191,4 +191,4 @@ resource "aws_glue_catalog_table" "flow_logs" {
 
 ## Conclusion
 
-VPC Flow Logs with OpenTofu capture all network traffic for security and compliance. Use CloudWatch Logs for real-time alerting on rejected connections, and S3 with Parquet format for efficient historical analysis via Athena. Enable flow logs on all VPCs in production — the cost is primarily storage, which Glacier transitions and lifecycle rules keep manageable. Custom log formats provide richer data including VPC ID, subnet ID, and instance ID for easier troubleshooting.
+VPC Flow Logs with OpenTofu capture all network traffic for security and compliance. Use CloudWatch Logs for real-time alerting on rejected connections, and S3 with Parquet format for efficient historical analysis via Athena. Enable flow logs on all VPCs in production - the cost is primarily storage, which Glacier transitions and lifecycle rules keep manageable. Custom log formats provide richer data including VPC ID, subnet ID, and instance ID for easier troubleshooting.

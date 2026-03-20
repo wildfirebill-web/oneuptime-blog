@@ -24,6 +24,7 @@ Before configuring fallback behavior, you need Karpenter installed and running. 
 
 ```bash
 # Set environment variables for your cluster
+
 export CLUSTER_NAME="your-cluster-name"
 export AWS_REGION="us-east-1"
 export AWS_ACCOUNT_ID=$(aws sts get-caller-identity --query Account --output text)

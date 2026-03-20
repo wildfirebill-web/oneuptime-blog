@@ -68,6 +68,7 @@ Check your current connectors with this command:
 
 ```bash
 # List all data connectors configured in your Sentinel workspace
+
 az sentinel data-connector list \
   --resource-group rg-sentinel \
   --workspace-name law-sentinel-prod \

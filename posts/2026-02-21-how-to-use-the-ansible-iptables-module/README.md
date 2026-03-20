@@ -18,6 +18,7 @@ The most fundamental rule is allowing SSH so you do not lock yourself out:
 
 ```yaml
 # allow SSH traffic on port 22
+
 ---
 - name: Basic iptables rules
   hosts: all

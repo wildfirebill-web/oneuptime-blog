@@ -25,6 +25,7 @@ flowchart LR
 
 ```bash
 # Install Kerberos client tools
+
 sudo dnf install krb5-workstation -y
 
 # Edit the Kerberos configuration

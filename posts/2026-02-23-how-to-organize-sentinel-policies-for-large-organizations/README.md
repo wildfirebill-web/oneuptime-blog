@@ -87,6 +87,7 @@ Reusable functions prevent code duplication across policies:
 
 ```python
 # lib/common-functions.sentinel
+
 # Shared helper functions for all policies
 
 # Filter resources by type and action

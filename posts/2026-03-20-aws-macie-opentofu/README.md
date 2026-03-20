@@ -8,7 +8,7 @@ Description: Learn how to enable and configure AWS Macie with OpenTofu to automa
 
 ## Introduction
 
-AWS Macie uses machine learning to automatically discover, classify, and protect sensitive data in S3. It identifies personally identifiable information (PII), financial data, credentials, and custom sensitive data patterns. Macie also provides a security posture assessment of S3 buckets—flagging publicly accessible buckets, unencrypted buckets, and buckets shared with external accounts.
+AWS Macie uses machine learning to automatically discover, classify, and protect sensitive data in S3. It identifies personally identifiable information (PII), financial data, credentials, and custom sensitive data patterns. Macie also provides a security posture assessment of S3 buckets-flagging publicly accessible buckets, unencrypted buckets, and buckets shared with external accounts.
 
 ## Prerequisites
 
@@ -29,6 +29,7 @@ resource "aws_macie2_account" "main" {
 
 ```hcl
 # One-time classification job for sensitive data discovery
+
 resource "aws_macie2_classification_job" "full_scan" {
   depends_on = [aws_macie2_account.main]
 
@@ -157,4 +158,4 @@ aws macie2 list-findings \
 
 ## Conclusion
 
-Macie is essential for organizations handling PII or financial data in S3—it continuously monitors bucket security posture and can discover sensitive data you didn't know existed. Start with a one-time scan of your most sensitive buckets to establish a baseline, then enable scheduled scans for ongoing discovery. Use custom data identifiers to detect business-specific sensitive patterns that Macie's built-in managed identifiers don't cover, and route HIGH/CRITICAL findings to your security team for immediate investigation.
+Macie is essential for organizations handling PII or financial data in S3-it continuously monitors bucket security posture and can discover sensitive data you didn't know existed. Start with a one-time scan of your most sensitive buckets to establish a baseline, then enable scheduled scans for ongoing discovery. Use custom data identifiers to detect business-specific sensitive patterns that Macie's built-in managed identifiers don't cover, and route HIGH/CRITICAL findings to your security team for immediate investigation.

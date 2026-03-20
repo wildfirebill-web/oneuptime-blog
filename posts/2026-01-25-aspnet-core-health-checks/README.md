@@ -482,6 +482,7 @@ Configure your Kubernetes deployment to use health probes:
 
 ```yaml
 # deployment.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

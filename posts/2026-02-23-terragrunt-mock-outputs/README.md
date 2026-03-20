@@ -16,6 +16,7 @@ Consider this dependency setup:
 
 ```hcl
 # app/terragrunt.hcl
+
 dependency "vpc" {
   config_path = "../vpc"
 }

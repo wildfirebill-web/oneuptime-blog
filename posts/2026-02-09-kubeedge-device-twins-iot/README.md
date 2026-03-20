@@ -37,6 +37,7 @@ Create a model for environmental sensors:
 
 ```yaml
 # environmental-sensor-model.yaml
+
 apiVersion: devices.kubeedge.io/v1beta1
 kind: DeviceModel
 metadata:

@@ -219,6 +219,7 @@ Podman Compose creates a default network for each project. Containers can reach 
 
 ```bash
 # From the web container, reach the db service by name
+
 podman-compose exec web curl http://api:8000
 ```
 

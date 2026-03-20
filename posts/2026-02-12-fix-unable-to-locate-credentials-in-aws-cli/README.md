@@ -36,6 +36,7 @@ The simplest fix for local development is to configure credentials directly.
 
 ```bash
 # Set up credentials interactively
+
 aws configure
 
 # It will prompt for:

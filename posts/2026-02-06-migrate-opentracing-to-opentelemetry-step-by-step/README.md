@@ -36,6 +36,7 @@ For Python projects, look for:
 
 ```python
 # Common OpenTracing imports in Python codebases
+
 import opentracing
 from opentracing import Tracer
 from opentracing.ext import tags

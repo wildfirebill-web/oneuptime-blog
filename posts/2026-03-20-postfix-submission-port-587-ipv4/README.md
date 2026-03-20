@@ -26,6 +26,7 @@ Postfix's `master.cf` controls which services run. Uncomment or add the submissi
 # /etc/postfix/master.cf
 
 # Uncomment the submission line (port 587)
+
 submission inet n       -       y       -       -       smtpd
   -o syslog_name=postfix/submission
   -o smtpd_tls_security_level=encrypt     # Require STARTTLS

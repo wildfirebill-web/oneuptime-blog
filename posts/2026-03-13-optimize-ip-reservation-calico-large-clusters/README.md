@@ -28,6 +28,7 @@ Gather all IP addresses within your pod CIDR range that must not be allocated to
 
 ```bash
 # Common IPs to reserve within pod CIDR ranges:
+
 # - Network gateway IPs
 # - Management IP ranges
 # - Static monitoring agent IPs

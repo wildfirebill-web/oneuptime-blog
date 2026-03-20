@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: K3s, Kubernetes, NGINX, Ingress, Networking, DevOps
+Tags: K3s, Kubernetes, Nginx, Ingress, Networking, DevOps
 
 Description: Learn how to replace K3s's default Traefik ingress controller with the NGINX Ingress Controller for more familiar ingress management.
 
@@ -25,6 +25,7 @@ Prevent K3s from deploying Traefik at installation or by modifying the config:
 
 ```bash
 # Install K3s without Traefik
+
 curl -sfL https://get.k3s.io | \
   INSTALL_K3S_EXEC="--disable traefik" \
   sh -
@@ -270,4 +271,4 @@ metadata:
 
 ## Conclusion
 
-Replacing Traefik with NGINX Ingress in K3s is straightforward — disable Traefik during installation, then deploy NGINX via Helm or K3s's HelmChart CRD. NGINX Ingress provides a familiar, well-documented annotation system and is backed by a large community. For most web application deployments, NGINX Ingress is an excellent choice that integrates seamlessly with cert-manager for automated TLS certificate management.
+Replacing Traefik with NGINX Ingress in K3s is straightforward - disable Traefik during installation, then deploy NGINX via Helm or K3s's HelmChart CRD. NGINX Ingress provides a familiar, well-documented annotation system and is backed by a large community. For most web application deployments, NGINX Ingress is an excellent choice that integrates seamlessly with cert-manager for automated TLS certificate management.

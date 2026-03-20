@@ -24,6 +24,7 @@ The governor is the key decision-maker. Different governors optimize for differe
 
 ```bash
 # Install cpufrequtils for easy management
+
 sudo apt install -y cpufrequtils linux-tools-common linux-tools-$(uname -r)
 
 # Show current frequency information for all CPUs

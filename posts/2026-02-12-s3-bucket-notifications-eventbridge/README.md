@@ -28,6 +28,7 @@ This is the only S3-side configuration needed. One toggle.
 
 ```bash
 # Enable EventBridge notifications for the bucket
+
 aws s3api put-bucket-notification-configuration \
   --bucket my-data-bucket \
   --notification-configuration '{

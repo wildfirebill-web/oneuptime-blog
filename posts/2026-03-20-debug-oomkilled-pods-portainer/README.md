@@ -14,41 +14,41 @@ OOMKilled (Out Of Memory Killed) occurs when a container exceeds its memory limi
 
 In Portainer, open the pod detail and check the container's last termination reason:
 
-\`\`\`bash
+```bash
 kubectl get pod <pod-name> -n production -o jsonpath='{.status.containerStatuses[0].lastState.terminated.reason}'
-# Output: OOMKilled
-\`\`\`
+## Output: OOMKilled
+```
 
 Also visible in pod events:
 
-\`\`\`
+```text
 Warning  OOMKilling  Container api exceeded memory limit
-\`\`\`
+```
 
 ## Step 2: Check Current Memory Limit
 
-\`\`\`bash
+```bash
 kubectl get pod <pod-name> -n production -o jsonpath='{.spec.containers[0].resources}'
-# Output: {"limits":{"memory":"256Mi"},"requests":{"memory":"128Mi"}}
-\`\`\`
+## Output: {"limits":{"memory":"256Mi"},"requests":{"memory":"128Mi"}}
+```
 
 ## Step 3: View Memory Usage Before the Kill
 
 If you have Metrics Server or Prometheus, check peak memory usage:
 
-\`\`\`bash
-# Current memory usage (requires Metrics Server)
+```bash
+## Current memory usage (requires Metrics Server)
 kubectl top pod <pod-name> -n production
 kubectl top pods -n production --sort-by=memory
-\`\`\`
+```
 
 ## Step 4: Check Application Logs for Memory Patterns
 
 View logs just before the OOMKill for clues:
 
-\`\`\`bash
+```bash
 kubectl logs <pod-name> --previous -n production | tail -100
-\`\`\`
+```
 
 Look for:
 - Large data loads (queries returning millions of rows)
@@ -59,13 +59,13 @@ Look for:
 
 Edit the deployment via Portainer's manifest editor:
 
-\`\`\`yaml
+```yaml
 resources:
   requests:
     memory: "256Mi"   # What Kubernetes reserves
   limits:
     memory: "1Gi"     # Maximum before OOMKill (increase this)
-\`\`\`
+```
 
 Set the limit 20-50% above observed peak usage to provide headroom.
 

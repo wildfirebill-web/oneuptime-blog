@@ -24,6 +24,7 @@ First, your spans need to carry the data required for impact scoring. Add user i
 
 ```python
 # instrumented_handler.py
+
 from opentelemetry import trace
 
 tracer = trace.get_tracer("api-service")

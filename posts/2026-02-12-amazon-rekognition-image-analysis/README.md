@@ -69,6 +69,7 @@ def detect_labels(image, max_labels=20, min_confidence=75):
     return labels
 
 # Detect labels in an S3 image
+
 image = analyze_from_s3('my-images-bucket', 'photos/office.jpg')
 labels = detect_labels(image)
 ```

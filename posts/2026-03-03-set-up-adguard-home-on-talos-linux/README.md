@@ -29,6 +29,7 @@ DNS is a critical service. If your DNS server goes down, nothing on your network
 
 ```yaml
 # adguard-namespace.yaml
+
 apiVersion: v1
 kind: Namespace
 metadata:

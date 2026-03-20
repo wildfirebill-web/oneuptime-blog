@@ -78,6 +78,7 @@ Partition by category for queries that browse within a category. If most queries
 
 ```bash
 # Create the Cosmos DB container for products
+
 az cosmosdb sql container create \
   --account-name ecommerce-catalog-db \
   --resource-group ecommerce-rg \

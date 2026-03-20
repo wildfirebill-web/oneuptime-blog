@@ -26,6 +26,7 @@ GRETAP is a variant of GRE that tunnels Ethernet frames (Layer 2) rather than ju
 
 ```bash
 # Create GRETAP tunnel interface
+
 ip link add gretap0 type gretap \
     local 10.0.0.1 \
     remote 10.0.0.2
@@ -99,7 +100,7 @@ bridge fdb show br br-l2vpn | grep gretap0
 ## Capture GRETAP Traffic
 
 ```bash
-# GRETAP uses IP protocol 47 (GRE) — capture on physical interface
+# GRETAP uses IP protocol 47 (GRE) - capture on physical interface
 tcpdump -i eth0 proto gre -n
 
 # To see the inner Ethernet frames in detail

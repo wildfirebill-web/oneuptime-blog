@@ -148,6 +148,7 @@ db.createUser({
 ```bash
 #!/bin/bash
 # init-scripts/02-seed-data.sh
+
 set -e
 
 mongosh -u "$MONGO_INITDB_ROOT_USERNAME" -p "$MONGO_INITDB_ROOT_PASSWORD" --authenticationDatabase admin <<EOF

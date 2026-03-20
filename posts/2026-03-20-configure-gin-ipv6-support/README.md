@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Gin, Go, Golang, IPv6, Web Framework, Dual-Stack, net/http
+Tags: Gin, Go, Golang, IPv6, Web Framework, Dual-Stack, Net/http
 
 Description: Configure the Gin web framework to listen on IPv6, extract client IPv6 addresses, and handle IPv6 in middleware using Go's standard net/netip package.
 
@@ -205,6 +205,7 @@ func (rl *RateLimiter) Allow(ip string) bool {
 go run main.go
 
 # Test IPv6
+
 curl -6 http://[::1]:8080/
 curl -6 http://[2001:db8::1]:8080/endpoint \
     -d '{"address":"2001:db8::42","port":443}'

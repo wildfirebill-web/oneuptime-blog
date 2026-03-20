@@ -12,7 +12,7 @@ DNS resolution converts a hostname like `api.example.com` into an IP address thr
 
 ## The Resolution Chain
 
-```
+```text
 Application queries: "What is the IP for api.example.com?"
 
 Step 1: Check local cache
@@ -47,6 +47,7 @@ Step 7: Recursive resolver caches result (per TTL) and returns to client
 
 ```bash
 # Follow the complete delegation chain:
+
 dig +trace api.example.com
 
 # Output shows each step:
@@ -127,4 +128,4 @@ dig +time=2 api.example.com
 
 ## Conclusion
 
-DNS resolution is a hierarchical delegation chain: root → TLD → authoritative → client. Use `dig +trace` to follow the complete chain and see which step is slow or failing. A cached response bypasses steps 4-6 and is limited by the configured recursive resolver's cache. For troubleshooting, always distinguish between cached responses (from recursive resolver) and authoritative responses (from the domain's nameserver) — TTL expiration forces a fresh authoritative query.
+DNS resolution is a hierarchical delegation chain: root → TLD → authoritative → client. Use `dig +trace` to follow the complete chain and see which step is slow or failing. A cached response bypasses steps 4-6 and is limited by the configured recursive resolver's cache. For troubleshooting, always distinguish between cached responses (from recursive resolver) and authoritative responses (from the domain's nameserver) - TTL expiration forces a fresh authoritative query.

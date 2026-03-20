@@ -38,6 +38,7 @@ graph LR
 
 ```bash
 # Set variables
+
 export RESOURCE_GROUP="rg-fluxcd-demo"
 export LOCATION="eastus"
 export KEY_VAULT_NAME="kv-fluxcd-sops"

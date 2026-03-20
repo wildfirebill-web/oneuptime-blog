@@ -16,6 +16,7 @@ This filter was introduced in Ansible 2.10 as part of the `ansible.builtin` coll
 
 ```yaml
 # Join path components safely
+
 - name: Basic path join
   ansible.builtin.debug:
     msg: "{{ ['/var', 'log', 'myapp', 'app.log'] | path_join }}"

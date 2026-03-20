@@ -21,6 +21,7 @@ The VMware vSphere cloud provider enables Kubernetes clusters running on vSphere
 
 ```bash
 # Enable disk UUID on VMs (required for vSphere Cloud Provider)
+
 # Run from vSphere CLI or govc on each VM:
 govc vm.change -vm "/<datacenter>/vm/<vm-name>" \
   -e "disk.enableUUID=true"
@@ -174,7 +175,7 @@ spec:
       storage: 10Gi
 EOF
 
-# Check PVC status — should transition to Bound
+# Check PVC status - should transition to Bound
 kubectl get pvc vsphere-pvc-test -w
 
 # Verify the VMDK was created in vCenter

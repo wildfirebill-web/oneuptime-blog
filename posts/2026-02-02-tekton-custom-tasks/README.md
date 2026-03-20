@@ -68,6 +68,7 @@ Verify your Tekton installation with this command.
 
 ```bash
 # Check Tekton Pipelines version
+
 kubectl get deploy tekton-pipelines-controller -n tekton-pipelines -o jsonpath='{.spec.template.spec.containers[0].image}'
 ```
 
@@ -1454,7 +1455,7 @@ spec:
               app.kubernetes.io/name: approval-task-controller
 ```
 
-### Resource Quotas
+Resource Quotas
 
 Set appropriate resource limits to prevent runaway resource consumption.
 

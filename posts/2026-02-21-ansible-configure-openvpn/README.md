@@ -22,6 +22,7 @@ OpenVPN has been the standard open-source VPN solution for over two decades. Whi
 
 ```yaml
 # install_openvpn.yml - Install OpenVPN and PKI tools
+
 ---
 - name: Install OpenVPN
   hosts: vpn_server

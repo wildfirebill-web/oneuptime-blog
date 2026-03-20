@@ -16,6 +16,7 @@ Terraform provider blocks have a limitation: they cannot use dynamic expressions
 
 ```hcl
 # This works - locals and variables are resolved at plan time
+
 provider "aws" {
   region = local.region
 }

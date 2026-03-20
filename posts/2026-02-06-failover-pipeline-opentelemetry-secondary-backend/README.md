@@ -22,6 +22,7 @@ Start by defining both backends as separate OTLP exporters in your collector con
 
 ```yaml
 # collector-config.yaml
+
 # Define two OTLP exporters - primary and secondary.
 # The primary has aggressive retry settings. The secondary is a standby
 # that receives data when the primary pipeline is unhealthy.

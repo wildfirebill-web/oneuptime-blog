@@ -64,6 +64,7 @@ Deploy and verify:
 kubectl apply -f ephemeral-pod.yaml
 
 # Check the pod
+
 kubectl get pod data-processor
 
 # Verify the ephemeral PVC was created
@@ -337,7 +338,7 @@ spec:
                   storage: 20Gi
 ```
 
-## Resource Limits for Ephemeral Storage
+Resource Limits for Ephemeral Storage
 
 Control ephemeral storage usage with resource quotas:
 

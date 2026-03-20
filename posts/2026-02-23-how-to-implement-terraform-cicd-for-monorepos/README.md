@@ -54,6 +54,7 @@ The first step is figuring out which directories actually changed. There are sev
 
 ```yaml
 # .github/workflows/terraform.yml
+
 name: Terraform Monorepo
 
 on:
@@ -361,7 +362,7 @@ Post a consolidated plan summary for all affected directories:
         const planFile = `${dir}/plan-output.txt`;
         if (fs.existsSync(planFile)) {
           const plan = fs.readFileSync(planFile, 'utf8');
-          body += `### ${dir}\n\n\`\`\`\n${plan.substring(0, 10000)}\n\`\`\`\n\n`;
+          body += `### ${dir}\n\n```\n${plan.substring(0, 10000)}\n```\n\n`;
         }
       }
 

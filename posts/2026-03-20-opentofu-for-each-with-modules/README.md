@@ -112,12 +112,13 @@ A key advantage of `for_each` over `count`: adding or removing an instance only 
 
 ```hcl
 # Adding "uat" to the map only creates module.app_cluster["uat"]
+
 # Other instances are unaffected
 variable "environments" {
   default = {
     dev     = { ... }
     staging = { ... }
-    uat     = { ... }  # New — only this instance is created
+    uat     = { ... }  # New - only this instance is created
     prod    = { ... }
   }
 }

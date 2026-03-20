@@ -1,10 +1,10 @@
-# How to Deploy Healthchecks.io via Portainer
+# How to Deploy Healthchecks.io via Portainer - A Practical Guide
 
-Author: [Nawaz Dhandala](https://github.com/nawazdhandala)
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Healthchecks, Cron Monitoring, Self-Hosted, Docker, Job Monitoring, Alerting
+Tags: Portainer, HealthCheck, Cron Monitoring, Self-Hosted, Docker, Job Monitoring, Alerting
 
-Description: Learn how to deploy a self-hosted Healthchecks.io instance via Portainer using Docker Compose. This guide covers PostgreSQL integration, email and notification setup, cron job ping configuration, and best practices for monitoring scheduled tasks reliably.
+Description: Learn how to deploy a self-hosted Healthchecks.io instance via Portainer using Docker Compose. This guide covers PostgreSQL integration, email and notification setup, cron job ping configuration...
 
 ---
 
@@ -65,7 +65,7 @@ services:
       # Remove this if using a reverse proxy
       - "8000:8000"
     environment:
-      # Database connection — must match the db service credentials above
+      # Database connection - must match the db service credentials above
       DB: postgres
       DB_HOST: db
       DB_PORT: "5432"
@@ -73,10 +73,10 @@ services:
       DB_USER: hcuser
       DB_PASSWORD: hcpassword
 
-      # Secret key for Django sessions — generate with: openssl rand -hex 32
+      # Secret key for Django sessions - generate with: openssl rand -hex 32
       SECRET_KEY: "changeme-generate-a-strong-secret-key-here"
 
-      # Site root URL — used in notification emails and ping URLs
+      # Site root URL - used in notification emails and ping URLs
       SITE_ROOT: "https://hc.example.com"
       SITE_NAME: "My Healthchecks"
 
@@ -88,7 +88,7 @@ services:
       EMAIL_HOST_PASSWORD: "smtp-password"
       EMAIL_USE_TLS: "True"
 
-      # Admin superuser — created automatically on first start
+      # Admin superuser - created automatically on first start
       SUPERUSER_EMAIL: "admin@example.com"
       SUPERUSER_PASSWORD: "change-this-admin-password"
 
@@ -100,7 +100,7 @@ services:
     networks:
       - healthchecks-net
     labels:
-      # Traefik v3 reverse proxy labels — remove if not using Traefik
+      # Traefik v3 reverse proxy labels - remove if not using Traefik
       - "traefik.enable=true"
       - "traefik.http.routers.healthchecks.rule=Host(`hc.example.com`)"
       - "traefik.http.routers.healthchecks.entrypoints=websecure"
@@ -149,7 +149,7 @@ Log in with your superuser credentials and click **Add Check**:
 
 After saving, you will see a unique ping URL like:
 
-```
+```text
 https://hc.example.com/ping/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
 ```
 
@@ -162,6 +162,7 @@ Add a `curl` call at the end of your cron scripts to send a success ping:
 set -e
 
 # Your actual job commands
+
 pg_dump -U postgres mydb > /backup/mydb-$(date +%Y%m%d).sql
 gzip /backup/mydb-$(date +%Y%m%d).sql
 
@@ -184,7 +185,7 @@ if [ $EXIT_CODE -eq 0 ]; then
   # Ping success
   curl -fsS --retry 3 "https://hc.example.com/ping/your-check-uuid" > /dev/null
 else
-  # Ping failure — triggers immediate alert
+  # Ping failure - triggers immediate alert
   curl -fsS --retry 3 "https://hc.example.com/ping/your-check-uuid/fail" > /dev/null
 fi
 ```

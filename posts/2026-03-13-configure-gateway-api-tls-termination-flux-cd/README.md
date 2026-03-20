@@ -30,6 +30,7 @@ Verify the Gateway API CRDs are available at the correct version.
 
 ```bash
 # Check installed Gateway API CRDs
+
 kubectl get crd | grep gateway.networking.k8s.io
 
 # Expected output:

@@ -204,6 +204,7 @@ This script queries for unfinished items from the last sprint and outputs them a
 
 ```bash
 # Fetch unfinished items from the previous sprint using the REST API
+
 curl -s -u ":$PAT" \
   "https://dev.azure.com/myorg/myproject/_apis/wit/wiql?api-version=7.0" \
   -H "Content-Type: application/json" \

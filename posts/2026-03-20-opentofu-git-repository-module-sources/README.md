@@ -1,4 +1,4 @@
-# How to Use Git Repository Module Sources in OpenTofu
+# How to Use Git Repository Module Sources in OpenTofu - Repository
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -19,10 +19,10 @@ module "name" {
 ```
 
 Key components:
-- `git::` — prefix to identify this as a generic Git source
-- URL — the HTTPS or SSH URL to the repository
-- `//path` — optional subdirectory within the repo (double slash)
-- `?ref=` — optional reference (tag, branch, or commit hash)
+- `git::` - prefix to identify this as a generic Git source
+- URL - the HTTPS or SSH URL to the repository
+- `//path` - optional subdirectory within the repo (double slash)
+- `?ref=` - optional reference (tag, branch, or commit hash)
 
 ## HTTPS Source with a Tag
 
@@ -39,6 +39,7 @@ module "vpc" {
 
 ```hcl
 # SSH is preferred in CI/CD environments with configured SSH keys
+
 module "eks" {
   source = "git::ssh://git@github.com/acme-corp/terraform-modules.git//modules/eks?ref=v1.5.2"
 
@@ -63,7 +64,7 @@ module "rds" {
 ## Referencing a Branch (Development Only)
 
 ```hcl
-# Use branches only for development/testing — never in production
+# Use branches only for development/testing - never in production
 module "feature_test" {
   source = "git::https://github.com/acme-corp/terraform-modules.git//modules/vpc?ref=feature/new-subnet-logic"
 
@@ -101,9 +102,9 @@ tofu init -upgrade
 
 - The `//` separator between the repository URL and the subdirectory path is required. It tells OpenTofu where the repository URL ends and the subdirectory begins.
 - Always pin to a `?ref=` value in production. Using a branch means the module can change unexpectedly.
-- Git sources do not use OpenTofu's lock file (`tofu providers lock`) — only the `ref` parameter controls versioning.
+- Git sources do not use OpenTofu's lock file (`tofu providers lock`) - only the `ref` parameter controls versioning.
 - Use HTTPS for public repositories and SSH for private repositories in CI/CD pipelines.
-- GitHub and Bitbucket have shorter syntax (without `git::`) — see dedicated posts for those.
+- GitHub and Bitbucket have shorter syntax (without `git::`) - see dedicated posts for those.
 
 ## Conclusion
 

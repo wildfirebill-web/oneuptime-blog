@@ -14,6 +14,7 @@ Working on multiple infrastructure projects often requires different OpenTofu ve
 
 ```bash
 # Switch to a specific installed version
+
 tofuenv use 1.9.0
 
 # Verify

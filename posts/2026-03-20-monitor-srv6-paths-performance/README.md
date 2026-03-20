@@ -1,4 +1,4 @@
-# How to Monitor SRv6 Paths and Performance
+# How to Monitor SRv6 Paths and Performance - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -14,6 +14,7 @@ SRv6 paths require active monitoring because a SID becoming unreachable silently
 
 ```bash
 # FRR BFD for SRv6 path monitoring
+
 # /etc/frr/frr.conf
 
 bfd

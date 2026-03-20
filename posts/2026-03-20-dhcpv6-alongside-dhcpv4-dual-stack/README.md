@@ -33,6 +33,7 @@ subnet 10.0.0.0 netmask 255.255.255.0 {
 # /etc/dhcp/dhcpd6.conf
 
 # DHCPv6 server
+
 authoritative;
 
 # Preferred and valid lifetimes
@@ -93,9 +94,9 @@ interface eth0 {
 ```
 
 ```bash
-# /etc/dhcp/dhcpd6.conf — stateless mode
+# /etc/dhcp/dhcpd6.conf - stateless mode
 subnet6 2001:db8:1234:1::/64 {
-    # No range6 — no stateful addresses
+    # No range6 - no stateful addresses
     # Only provide configuration info:
     option dhcp6.name-servers 2001:db8:1234:1::1;
     option dhcp6.domain-search "example.com";

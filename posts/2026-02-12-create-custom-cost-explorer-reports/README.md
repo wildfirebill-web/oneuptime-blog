@@ -273,6 +273,7 @@ Wrap your reports in a Lambda function triggered by CloudWatch Events on a sched
 
 ```hcl
 # Schedule weekly report delivery
+
 resource "aws_cloudwatch_event_rule" "weekly_cost_report" {
   name                = "weekly-cost-report"
   description         = "Trigger weekly cost report"

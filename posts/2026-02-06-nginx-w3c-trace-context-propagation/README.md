@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, NGINX, W3C Trace Context, Header Propagation
+Tags: OpenTelemetry, Nginx, W3C Trace Context, Header Propagation
 
 Description: Configure NGINX to properly propagate W3C traceparent and tracestate headers to upstream services for end-to-end distributed tracing.
 
@@ -167,6 +167,7 @@ Use curl to send a request with trace headers and verify they reach the backend:
 
 ```bash
 # Send a request with traceparent through NGINX
+
 curl -v \
   -H "traceparent: 00-4bf92f3577b34da6a3ce929d0e0e4736-00f067aa0ba902b7-01" \
   -H "tracestate: oneuptime=test123" \

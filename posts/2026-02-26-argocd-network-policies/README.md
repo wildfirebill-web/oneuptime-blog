@@ -371,6 +371,7 @@ After applying policies, verify ArgoCD still works:
 
 ```bash
 # Apply all policies
+
 kubectl apply -f network-policies/
 
 # Check that ArgoCD server is still accessible

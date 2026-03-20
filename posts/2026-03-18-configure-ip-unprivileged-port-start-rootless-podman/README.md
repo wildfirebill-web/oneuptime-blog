@@ -20,6 +20,7 @@ Before making changes, verify the current setting on your system:
 
 ```bash
 # Read the current value
+
 cat /proc/sys/net/ipv4/ip_unprivileged_port_start
 # Default output: 1024
 

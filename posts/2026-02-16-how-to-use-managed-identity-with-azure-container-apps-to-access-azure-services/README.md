@@ -25,6 +25,7 @@ The simplest approach is a system-assigned identity. Enable it with one command.
 
 ```bash
 # Enable system-assigned managed identity
+
 az containerapp identity assign \
   --name my-api \
   --resource-group my-rg \

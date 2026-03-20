@@ -12,6 +12,7 @@ Ansible's `assert` module transforms configuration checks into auditable validat
 
 ```yaml
 # validate-ipv6-address.yml - Assert IPv6 address is correctly configured
+
 ---
 - name: Validate IPv6 address configuration
   hosts: all

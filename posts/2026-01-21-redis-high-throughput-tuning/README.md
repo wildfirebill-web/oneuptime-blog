@@ -18,6 +18,7 @@ Description: A comprehensive guide to tuning Redis for high throughput workloads
 
 ```bash
 # Basic benchmark
+
 redis-benchmark -h localhost -p 6379 -c 50 -n 100000 -a password
 
 # Realistic benchmark with pipelining

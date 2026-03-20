@@ -104,6 +104,7 @@ ENTRYPOINT ["/provider"]
 
 ```yaml
 # provider-deployment.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

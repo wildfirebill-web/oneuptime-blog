@@ -34,6 +34,7 @@ resource "aws_ecs_cluster" "main" {
 }
 
 # Account-level default for Container Insights
+
 resource "aws_ecs_account_setting_default" "container_insights" {
   name  = "containerInsights"
   value = "enabled"  # Enable for all new clusters in this account
@@ -202,4 +203,4 @@ aws cloudwatch get-metric-statistics \
 
 ## Conclusion
 
-Container Insights is essential for ECS Fargate workloads where you can't access underlying EC2 instances—it's the only way to get task-level CPU and memory metrics. Note that Container Insights charges for custom CloudWatch metrics ($0.30/metric/month); monitor the metric count if cost is a concern. Alert on `RunningTaskCount` dropping below expected values—this catches service degradation that pure CPU/memory metrics miss.
+Container Insights is essential for ECS Fargate workloads where you can't access underlying EC2 instances-it's the only way to get task-level CPU and memory metrics. Note that Container Insights charges for custom CloudWatch metrics ($0.30/metric/month); monitor the metric count if cost is a concern. Alert on `RunningTaskCount` dropping below expected values-this catches service degradation that pure CPU/memory metrics miss.

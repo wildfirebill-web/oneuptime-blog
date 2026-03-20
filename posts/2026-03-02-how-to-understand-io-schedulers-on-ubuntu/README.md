@@ -16,6 +16,7 @@ Ubuntu uses the blk-mq (multi-queue block layer) architecture, and the available
 
 ```bash
 # Check available and current scheduler for a device
+
 cat /sys/block/sda/queue/scheduler
 
 # Output example:

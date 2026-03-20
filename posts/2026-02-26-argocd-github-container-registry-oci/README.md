@@ -35,6 +35,7 @@ GitHub Container Registry has several advantages for GitOps workflows:
 
 ```bash
 # Create a personal access token with write:packages scope
+
 # Go to: Settings > Developer settings > Personal access tokens > Fine-grained tokens
 
 # Log in to GHCR with Helm

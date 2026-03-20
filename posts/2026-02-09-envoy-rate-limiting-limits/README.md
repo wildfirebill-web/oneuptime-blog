@@ -355,6 +355,7 @@ Track these metrics:
 
 ```promql
 # Local rate limit rejections
+
 envoy_http_local_rate_limit_rate_limited
 
 # Global rate limit calls

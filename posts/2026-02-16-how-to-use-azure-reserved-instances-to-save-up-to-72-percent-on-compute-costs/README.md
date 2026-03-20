@@ -29,6 +29,7 @@ Before buying reservations, you need to understand which VMs run consistently. R
 
 ```bash
 # List all running VMs with their sizes and locations
+
 az vm list \
   --query "[?powerState=='VM running'].{Name: name, Size: hardwareProfile.vmSize, Location: location, RG: resourceGroup}" \
   --show-details \

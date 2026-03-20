@@ -110,6 +110,7 @@ Add Sidekiq to your Gemfile:
 # Gemfile
 
 # Main Sidekiq gem
+
 gem 'sidekiq', '~> 7.2'
 
 # The web UI is included with sidekiq; just require 'sidekiq/web' in routes.rb

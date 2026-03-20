@@ -12,9 +12,9 @@ IPv6 Source Guard is a switch-level feature that validates every IPv6 packet's s
 
 ## How IPv6 Source Guard Works
 
-The binding table is the foundation — source guard enforces it.
+The binding table is the foundation - source guard enforces it.
 
-```
+```text
 IPv6 Source Guard Flow:
 
 Step 1: Binding table is built (IPv6 Snooping):
@@ -36,7 +36,7 @@ Protection provided:
 
 ## Binding Table Sources
 
-```
+```text
 How the binding table is populated:
 
 Source 1: NDP (Neighbor Solicitation / Neighbor Advertisement)
@@ -62,7 +62,7 @@ View binding table:
 
 ## Cisco IOS IPv6 Source Guard Configuration
 
-```
+```text
 ! Prerequisites: IPv6 Snooping must be configured first
 
 ! Step 1: Enable IPv6 Snooping (builds binding table)
@@ -91,7 +91,7 @@ interface range GigabitEthernet1/0/1 - 23
 
 ## Verifying IPv6 Source Guard
 
-```
+```text
 ! Show IPv6 Source Guard policies
 show ipv6 source-guard policy
 
@@ -120,7 +120,7 @@ show ipv6 source-guard statistics
 
 SLAAC addresses require special handling because they are not learned from DHCPv6.
 
-```
+```text
 ! Problem: SLAAC host generates address via RA + EUI-64
 ! The address doesn't appear in DHCPv6 REPLY
 ! Source Guard may not have a binding for it
@@ -148,6 +148,7 @@ On Linux hosts, source validation can be approximated with ip6tables.
 
 ```bash
 # On a Linux router/gateway: validate IPv6 source addresses
+
 # using strict reverse path filtering (RPF)
 
 # Enable strict RPF for IPv6

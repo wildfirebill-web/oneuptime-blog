@@ -17,6 +17,7 @@ Every task in Ansible returns a result dictionary. The `register` keyword captur
 ```yaml
 ---
 # basic-register.yml
+
 # Capture command output and display it
 
 - hosts: webservers

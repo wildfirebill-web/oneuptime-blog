@@ -616,6 +616,7 @@ producer.send(new ProducerRecord<>("logs", null, logEntry));
 
 ```bash
 # Check partition sizes
+
 kafka-log-dirs.sh --bootstrap-server localhost:9092 \
   --topic-list my-topic --describe
 

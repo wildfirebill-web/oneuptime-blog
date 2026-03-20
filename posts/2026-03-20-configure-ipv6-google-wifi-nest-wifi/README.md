@@ -8,7 +8,7 @@ Description: Configure IPv6 on Google Wifi and Nest Wifi mesh systems using the 
 
 ## Google Wifi and Nest Wifi IPv6 Support
 
-Google Wifi and Nest Wifi support IPv6 but with a different model from traditional routers — Google handles most IPv6 configuration automatically. The system:
+Google Wifi and Nest Wifi support IPv6 but with a different model from traditional routers - Google handles most IPv6 configuration automatically. The system:
 - Automatically requests DHCPv6 and SLAAC from the ISP
 - Automatically distributes IPv6 via RA to connected devices
 - Applies a stateful firewall by default
@@ -53,6 +53,7 @@ Since Google Wifi auto-configures IPv6, the best verification is from a connecte
 
 ```bash
 # Mac/Linux: check for global IPv6 address
+
 ifconfig | grep "inet6" | grep -v "fe80" | grep -v "::1"
 
 # Windows
@@ -80,7 +81,7 @@ Note: Custom DNS in Google Home only accepts IPv4 addresses in some app versions
 
 ## Step 5: IPv6 Firewall on Google Wifi
 
-Google Wifi blocks all unsolicited inbound IPv6 connections by default — this is the firewall you can't configure directly. This behavior is intentional and appropriate for a home router.
+Google Wifi blocks all unsolicited inbound IPv6 connections by default - this is the firewall you can't configure directly. This behavior is intentional and appropriate for a home router.
 
 To allow inbound IPv6 connections (for home servers, gaming, etc.):
 - Use the **Port Forwarding** feature in Google Home app (this works for both IPv4 and IPv6 in newer firmware)
@@ -103,4 +104,4 @@ Nest Wifi Pro has enhanced IPv6 support and handles prefix delegation more relia
 
 ## Conclusion
 
-Google Wifi and Nest Wifi automate IPv6 configuration — when your ISP provides IPv6, Google Wifi handles the DHCPv6/SLAAC negotiation and RA distribution without manual configuration. Verify operation through connected devices or the `test-ipv6.com` test site.
+Google Wifi and Nest Wifi automate IPv6 configuration - when your ISP provides IPv6, Google Wifi handles the DHCPv6/SLAAC negotiation and RA distribution without manual configuration. Verify operation through connected devices or the `test-ipv6.com` test site.

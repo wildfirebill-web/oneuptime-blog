@@ -32,6 +32,7 @@ ClickHouse supports inserting data in Apache Arrow format natively via its HTTP 
 
 ```bash
 # Insert Arrow IPC data directly into ClickHouse
+
 curl -X POST "http://clickhouse:8123/?query=INSERT+INTO+otel_traces+FORMAT+Arrow" \
   --data-binary @traces.arrow \
   -H "Content-Type: application/octet-stream"

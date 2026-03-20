@@ -20,6 +20,7 @@ The modern Sigma toolchain is `sigma-cli`, which replaces the older `sigmac` too
 
 ```bash
 # Create a Python virtual environment
+
 sudo apt install python3-pip python3-venv
 python3 -m venv /opt/sigma-venv
 source /opt/sigma-venv/bin/activate

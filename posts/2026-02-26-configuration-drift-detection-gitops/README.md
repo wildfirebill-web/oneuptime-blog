@@ -54,6 +54,7 @@ ArgoCD does not do a simple text comparison. It performs a semantic diff that un
 
 ```bash
 # View the diff for an application
+
 argocd app diff my-app
 
 # Example output:

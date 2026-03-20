@@ -19,7 +19,7 @@ Modules let you:
 
 A minimal module requires three files:
 
-```
+```text
 modules/
 └── s3-website/
     ├── main.tf        # Resource definitions
@@ -149,6 +149,7 @@ module "prod_website" {
 }
 
 # Access module outputs
+
 output "dev_website_url" {
   value = module.dev_website.website_endpoint
 }

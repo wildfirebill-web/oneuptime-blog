@@ -16,6 +16,7 @@ Before looking at Istio-specific issues, confirm that basic Kubernetes networkin
 
 ```bash
 # From the source pod, can you resolve the destination DNS?
+
 kubectl exec deploy/frontend -n frontend-ns -c frontend -- \
   nslookup backend.backend-ns.svc.cluster.local
 

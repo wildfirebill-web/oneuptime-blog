@@ -18,6 +18,7 @@ The admin interface runs on port 15000 in Istio sidecars and port 4191 in Linker
 
 ```bash
 # For Istio
+
 kubectl port-forward -n production deploy/api-gateway 15000:15000
 
 # For Linkerd

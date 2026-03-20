@@ -18,6 +18,7 @@ Everything in Pinpoint lives inside a project (also called an application). Thin
 
 ```bash
 # Create a new Pinpoint project
+
 aws pinpoint create-app \
   --create-application-request Name=my-marketing-app
 

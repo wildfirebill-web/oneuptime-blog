@@ -29,6 +29,7 @@ Created automatically for every Service:
 
 ```yaml
 # Problem: Endpoints are auto-generated from Service selectors
+
 # Solution: Exclude from ArgoCD tracking globally
 
 # In argocd-cm ConfigMap

@@ -31,6 +31,7 @@ The Raspberry Pi 4 has an EEPROM that controls the boot process. Make sure it is
 
 ```bash
 # On a Raspberry Pi running Raspberry Pi OS
+
 sudo apt update
 sudo apt install rpi-eeprom
 sudo rpi-eeprom-update -a

@@ -39,6 +39,7 @@ First, authenticate the Flux CLI with GHCR.
 
 ```bash
 # Log in to GHCR using your GitHub username and personal access token
+
 echo $GITHUB_TOKEN | flux push artifact oci://ghcr.io/YOUR_ORG/manifests/app:latest \
   --path=./deploy \
   --source="$(git config --get remote.origin.url)" \

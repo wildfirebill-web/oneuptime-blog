@@ -20,6 +20,7 @@ Before copying images, you need Skopeo installed on your system. It is typically
 
 ```bash
 # Install Skopeo on Fedora/RHEL/CentOS
+
 sudo dnf install -y skopeo
 
 # Install Skopeo on Ubuntu/Debian

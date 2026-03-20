@@ -136,6 +136,7 @@ class TextractTableExtractor:
         return dict_tables
 
 # Usage
+
 def extract_tables_from_document(bucket, key):
     """Extract all tables from a document."""
     response = textract.analyze_document(

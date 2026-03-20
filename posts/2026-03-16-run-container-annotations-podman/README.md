@@ -20,6 +20,7 @@ Use the `--annotation` flag to attach annotations:
 
 ```bash
 # Add a single annotation
+
 podman run -d --name web \
   --annotation description="Main web server" \
   nginx:latest

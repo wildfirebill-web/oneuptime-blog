@@ -6,7 +6,7 @@ Tags: AWS, Terraform, IPv6, Route Tables, VPC, Networking
 
 Description: A guide to configuring AWS route tables with IPv6 routes using Terraform, covering public, private, and egress-only routing patterns.
 
-AWS route tables require explicit IPv6 routes — adding an IPv4 default route does not automatically create an IPv6 counterpart. This guide covers the three main IPv6 routing patterns used in AWS VPC designs.
+AWS route tables require explicit IPv6 routes - adding an IPv4 default route does not automatically create an IPv6 counterpart. This guide covers the three main IPv6 routing patterns used in AWS VPC designs.
 
 ## IPv6 Routing Patterns
 
@@ -20,6 +20,7 @@ AWS route tables require explicit IPv6 routes — adding an IPv4 default route d
 
 ```hcl
 # rt-public.tf - Route table for public subnets with dual-stack default routes
+
 resource "aws_route_table" "public" {
   vpc_id = aws_vpc.main.id
 
@@ -132,4 +133,4 @@ ping6 -c 3 2001:4860:4860::8888
 ping6 -c 3 2001:4860:4860::8888
 ```
 
-Correct IPv6 route table configuration is the foundation of AWS dual-stack networking — without the right next-hop entries, even properly addressed instances will fail to route IPv6 traffic.
+Correct IPv6 route table configuration is the foundation of AWS dual-stack networking - without the right next-hop entries, even properly addressed instances will fail to route IPv6 traffic.

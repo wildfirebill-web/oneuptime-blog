@@ -16,6 +16,7 @@ The simplest report comes from collecting facts across all hosts:
 
 ```yaml
 # playbook-basic-report.yml
+
 # Gathers facts from all hosts and generates a text infrastructure report
 - name: Gather facts from all hosts
   hosts: all

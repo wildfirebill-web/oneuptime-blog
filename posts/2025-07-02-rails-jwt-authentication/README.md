@@ -64,6 +64,7 @@ Add these gems to your Gemfile for JWT handling, secure password storage, and Re
 
 ```ruby
 # Gemfile
+
 # JWT encoding and decoding
 gem 'jwt'
 

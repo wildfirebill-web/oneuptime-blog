@@ -32,6 +32,7 @@ First, authenticate your CLI with HCP Terraform:
 terraform login
 
 # Opens a browser window to app.terraform.io
+
 # You authorize the CLI and get a token
 # The token is stored at ~/.terraform.d/credentials.tfrc.json
 ```

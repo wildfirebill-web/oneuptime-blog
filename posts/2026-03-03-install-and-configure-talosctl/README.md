@@ -32,6 +32,7 @@ The most direct way to install talosctl:
 
 ```bash
 # Download the latest release for Linux (amd64)
+
 curl -sL https://github.com/siderolabs/talos/releases/latest/download/talosctl-linux-amd64 -o talosctl
 
 # For macOS (Apple Silicon)

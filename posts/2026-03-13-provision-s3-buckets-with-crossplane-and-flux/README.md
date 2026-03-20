@@ -26,6 +26,7 @@ This guide covers provisioning S3 buckets with security best practices baked in,
 
 ```yaml
 # infrastructure/storage/s3/application-assets-bucket.yaml
+
 apiVersion: s3.aws.upbound.io/v1beta1
 kind: Bucket
 metadata:

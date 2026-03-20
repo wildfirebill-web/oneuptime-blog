@@ -18,6 +18,7 @@ Start by initializing a new Node.js project and installing the required packages
 
 ```bash
 # Initialize the project
+
 mkdir grpc-node-service && cd grpc-node-service
 npm init -y
 

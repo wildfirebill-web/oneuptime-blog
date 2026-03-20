@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Load Balancer, Monitoring, Health Check, Prometheus, Alerting
+Tags: IPv6, Load Balancer, Monitoring, Health Checks, Prometheus, Alerting
 
 Description: A guide to monitoring IPv6 load balancer health, backend server availability, and traffic metrics using Prometheus, HAProxy stats, and custom health checks.
 
@@ -10,8 +10,9 @@ Monitoring IPv6 load balancer health involves tracking backend server availabili
 
 ## HAProxy IPv6 Statistics
 
-```
+```text
 # Enable HAProxy stats in /etc/haproxy/haproxy.cfg
+
 frontend stats
     bind [::1]:8404     # IPv6 loopback for stats
     stats enable
@@ -69,17 +70,17 @@ scrape_configs:
 node_exporter --collector.ipvs
 
 # Key IPVS metrics:
-# node_ipvs_connections_total — total connections handled
-# node_ipvs_incoming_bytes_total — bytes received
-# node_ipvs_outgoing_bytes_total — bytes sent
-# node_ipvs_backend_connections_active — active connections per backend
+# node_ipvs_connections_total - total connections handled
+# node_ipvs_incoming_bytes_total - bytes received
+# node_ipvs_outgoing_bytes_total - bytes sent
+# node_ipvs_backend_connections_active - active connections per backend
 ```
 
 ## Custom IPv6 Health Check Script
 
 ```bash
 #!/bin/bash
-# ipv6-lb-health.sh — Check IPv6 load balancer backend health
+# ipv6-lb-health.sh - Check IPv6 load balancer backend health
 
 LB_VIP="2001:db8::vip"
 BACKENDS=(

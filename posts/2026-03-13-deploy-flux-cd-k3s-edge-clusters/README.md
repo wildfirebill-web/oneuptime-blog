@@ -28,6 +28,7 @@ This guide covers installing K3s, bootstrapping Flux with K3s-specific optimizat
 
 ```bash
 # Install K3s with minimal features for edge use
+
 # --disable=traefik: Remove Traefik if using NGINX or no ingress
 # --disable=servicelb: Remove Klipper LB if not needed
 curl -sfL https://get.k3s.io | sh -s - \

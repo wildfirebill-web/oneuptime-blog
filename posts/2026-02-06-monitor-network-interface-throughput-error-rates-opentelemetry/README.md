@@ -28,6 +28,7 @@ Here is a complete collector configuration that scrapes network metrics every 30
 
 ```yaml
 # otel-collector-config.yaml
+
 receivers:
   hostmetrics:
     # Scrape interval for all host metrics

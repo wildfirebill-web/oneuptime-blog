@@ -16,6 +16,7 @@ Upgrading Redis in production requires careful planning to avoid service disrupt
 
 ```bash
 # Check current version
+
 redis-cli INFO server | grep redis_version
 
 # Review release notes for breaking changes

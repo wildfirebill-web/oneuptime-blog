@@ -50,6 +50,7 @@ Choose a dedicated server for the proxy:
 
 ```bash
 # Update the system
+
 sudo apt update && sudo apt upgrade -y
 
 # Install PostgreSQL

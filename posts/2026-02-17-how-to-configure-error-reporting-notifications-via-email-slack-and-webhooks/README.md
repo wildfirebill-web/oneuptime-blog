@@ -37,6 +37,7 @@ You can also set this up using the gcloud CLI. Here is how to create an email no
 
 ```bash
 # Create an email notification channel for error alerts
+
 gcloud beta monitoring channels create \
   --display-name="Error Reporting Email" \
   --type=email \

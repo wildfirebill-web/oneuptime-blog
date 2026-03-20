@@ -23,6 +23,7 @@ Generate the required secret key before starting:
 
 ```bash
 # Generate a secret key for Authentik
+
 echo "AUTHENTIK_SECRET_KEY=$(openssl rand -base64 36)" >> .env
 
 # Generate a PostgreSQL password

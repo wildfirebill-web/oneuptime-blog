@@ -35,6 +35,7 @@ AWS Batch needs several IAM roles. The service role lets Batch manage resources,
 
 ```hcl
 # Batch service role
+
 resource "aws_iam_role" "batch_service" {
   name = "batch-service-role"
 

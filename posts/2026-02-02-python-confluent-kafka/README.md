@@ -34,6 +34,7 @@ Install confluent-kafka with pip. You'll also want avro support if you're using 
 
 ```bash
 # Basic installation
+
 pip install confluent-kafka
 
 # With Avro serialization support

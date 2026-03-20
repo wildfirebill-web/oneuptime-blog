@@ -728,6 +728,7 @@ describe('N+1 Query Detection', () => {
 
 ```yaml
 # .github/workflows/graphql-tests.yaml
+
 name: GraphQL Tests
 
 on: [push, pull_request]

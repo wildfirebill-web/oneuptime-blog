@@ -18,6 +18,7 @@ The naive approach mounts the host's Docker socket into a CI pod:
 
 ```yaml
 # DO NOT use this in production - security risk
+
 volumes:
   - hostPath:
       path: /var/run/docker.sock

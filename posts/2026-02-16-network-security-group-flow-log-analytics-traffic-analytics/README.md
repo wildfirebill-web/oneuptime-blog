@@ -42,6 +42,7 @@ Network Watcher is automatically created in each region when you create a VNet, 
 
 ```bash
 # Check if Network Watcher exists in the target region
+
 az network watcher list --output table
 
 # If missing, create it

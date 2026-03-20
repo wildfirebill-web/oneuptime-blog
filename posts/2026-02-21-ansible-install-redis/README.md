@@ -26,6 +26,7 @@ Start with an inventory file that groups your Redis servers.
 
 ```ini
 # inventory/redis.ini
+
 [redis_servers]
 redis-01 ansible_host=10.0.2.10
 redis-02 ansible_host=10.0.2.11

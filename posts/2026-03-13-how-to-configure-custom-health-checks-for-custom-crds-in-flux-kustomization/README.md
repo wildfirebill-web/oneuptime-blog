@@ -268,6 +268,7 @@ When a custom resource health check fails:
 
 ```bash
 # Check Kustomization status
+
 flux get kustomization certificates
 
 # Check the custom resource status

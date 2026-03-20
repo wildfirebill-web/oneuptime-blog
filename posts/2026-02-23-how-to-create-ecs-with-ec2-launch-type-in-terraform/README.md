@@ -31,6 +31,7 @@ provider "aws" {
 }
 
 # Reference existing VPC and subnets
+
 data "aws_vpc" "main" {
   filter {
     name   = "tag:Name"

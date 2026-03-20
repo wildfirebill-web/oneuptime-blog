@@ -50,6 +50,7 @@ Each provider directory has its own backend configuration pointing to a differen
 
 ```hcl
 # infrastructure/aws/networking/backend.tf
+
 terraform {
   backend "s3" {
     bucket = "terraform-state-aws"

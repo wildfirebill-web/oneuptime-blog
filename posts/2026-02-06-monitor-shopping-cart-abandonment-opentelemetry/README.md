@@ -25,6 +25,7 @@ meter = metrics.get_meter("cart.abandonment.monitor")
 tracer = trace.get_tracer("cart.service")
 
 # Counter for cart state transitions
+
 cart_transitions = meter.create_counter(
     "cart.state.transitions",
     description="Tracks cart state changes",

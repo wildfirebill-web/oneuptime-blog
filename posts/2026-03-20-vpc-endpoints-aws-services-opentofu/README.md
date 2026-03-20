@@ -25,6 +25,7 @@ graph TD
 
 ```hcl
 # gateway_endpoints.tf
+
 resource "aws_vpc_endpoint" "s3" {
   vpc_id            = var.vpc_id
   service_name      = "com.amazonaws.${var.region}.s3"
@@ -129,7 +130,7 @@ resource "aws_vpc_endpoint" "optional" {
 ## EKS-Required Endpoints
 
 ```hcl
-# eks_endpoints.tf — required for EKS nodes in private subnets
+# eks_endpoints.tf - required for EKS nodes in private subnets
 locals {
   eks_required_endpoints = {
     ec2         = "com.amazonaws.${var.region}.ec2"
@@ -180,8 +181,8 @@ resource "aws_vpc_endpoint" "s3_restricted" {
 
 ## Best Practices
 
-- Always create S3 and DynamoDB gateway endpoints — they're free and immediately reduce NAT gateway data processing costs for any traffic to these services.
-- For EKS clusters in private subnets, create all ECR, STS, EC2, and CloudWatch Logs endpoints — without these, nodes cannot pull images or register with the cluster.
+- Always create S3 and DynamoDB gateway endpoints - they're free and immediately reduce NAT gateway data processing costs for any traffic to these services.
+- For EKS clusters in private subnets, create all ECR, STS, EC2, and CloudWatch Logs endpoints - without these, nodes cannot pull images or register with the cluster.
 - Use `private_dns_enabled = true` on interface endpoints so applications use the standard AWS service endpoint hostname without any code changes.
-- Create endpoint security groups that allow HTTPS (port 443) from the VPC CIDR — interface endpoints are ENIs and require security group rules.
+- Create endpoint security groups that allow HTTPS (port 443) from the VPC CIDR - interface endpoints are ENIs and require security group rules.
 - Calculate break-even for interface endpoints: each endpoint costs ~$7.20/month per AZ; compare against NAT gateway data processing at $0.045/GB. For a private VPC with moderate API traffic, endpoints usually pay for themselves.

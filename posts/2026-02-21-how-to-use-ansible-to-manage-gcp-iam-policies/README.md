@@ -46,6 +46,7 @@ The `google.cloud.gcp_resourcemanager_policy` module manages project-level IAM p
 
 ```yaml
 # grant-role.yml - Grant a specific IAM role to a user
+
 ---
 - name: Grant IAM Role
   hosts: localhost

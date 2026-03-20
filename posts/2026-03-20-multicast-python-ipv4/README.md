@@ -26,7 +26,7 @@ import json
 
 MCAST_GROUP = "239.255.0.1"
 MCAST_PORT  = 5007
-TTL         = 2    # hops — 1 = same subnet, >1 = multiple hops
+TTL         = 2    # hops - 1 = same subnet, >1 = multiple hops
 
 def multicast_sender():
     sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
@@ -109,6 +109,7 @@ def join_groups(sock: socket.socket, groups: list[str]) -> None:
         print(f"Joined {group}")
 
 # Receive from multiple groups on the same socket
+
 sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 sock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
 sock.bind(("0.0.0.0", 5007))
@@ -117,4 +118,4 @@ join_groups(sock, ["239.255.0.1", "239.255.0.2"])
 
 ## Conclusion
 
-IPv4 multicast sends one packet that is delivered to all group members — more efficient than unicast to each peer. Set `IP_MULTICAST_TTL` to `1` for LAN-only delivery. Call `IP_ADD_MEMBERSHIP` to join a group (sends an IGMP report) and `IP_DROP_MEMBERSHIP` on shutdown. Use addresses in the `239.0.0.0/8` range for private multicast that won't leak onto the internet. Applications for multicast include service discovery, real-time data distribution (market data, game state), and cluster coordination.
+IPv4 multicast sends one packet that is delivered to all group members - more efficient than unicast to each peer. Set `IP_MULTICAST_TTL` to `1` for LAN-only delivery. Call `IP_ADD_MEMBERSHIP` to join a group (sends an IGMP report) and `IP_DROP_MEMBERSHIP` on shutdown. Use addresses in the `239.0.0.0/8` range for private multicast that won't leak onto the internet. Applications for multicast include service discovery, real-time data distribution (market data, game state), and cluster coordination.

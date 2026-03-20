@@ -129,6 +129,7 @@ If you have many services, manually creating service accounts gets tedious. Use 
 
 ```yaml
 # kustomization.yaml
+
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:

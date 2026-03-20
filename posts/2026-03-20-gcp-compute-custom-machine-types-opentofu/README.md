@@ -16,6 +16,7 @@ GCP custom machine types follow the format: `custom-{vCPUs}-{memoryMB}`. Extende
 
 ```hcl
 # main.tf - Custom machine type with specific vCPU and memory
+
 resource "google_compute_instance" "custom_vm" {
   name         = "my-custom-vm"
   zone         = "us-central1-a"

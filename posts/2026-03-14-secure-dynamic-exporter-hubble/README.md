@@ -29,6 +29,7 @@ The dynamic exporter ConfigMap should only be modifiable by authorized personnel
 
 ```yaml
 # dynamic-exporter-rbac.yaml
+
 apiVersion: rbac.authorization.k8s.io/v1
 kind: Role
 metadata:

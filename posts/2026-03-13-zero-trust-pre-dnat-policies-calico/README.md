@@ -53,6 +53,7 @@ spec:
 
 ```bash
 # Apply pre-DNAT policy
+
 calicoctl apply -f pre-dnat-policy.yaml
 
 # Verify policy is active

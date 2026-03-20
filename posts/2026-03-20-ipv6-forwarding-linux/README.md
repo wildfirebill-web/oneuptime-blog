@@ -1,19 +1,20 @@
-# How to Enable IPv6 Forwarding on Linux
+# How to Enable IPv6 Forwarding on Linux - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Linux, Forwarding, sysctl, Router
+Tags: IPv6, Linux, Forwarding, Sysctl, Router
 
 Description: Learn how to enable IPv6 packet forwarding on Linux to turn a host into a router, including persistent configuration and interface-specific settings.
 
 ## Overview
 
-By default, Linux hosts do not forward IPv6 packets between interfaces — they only accept packets addressed to themselves. To act as an IPv6 router, you must enable IP forwarding via the `sysctl` interface.
+By default, Linux hosts do not forward IPv6 packets between interfaces - they only accept packets addressed to themselves. To act as an IPv6 router, you must enable IP forwarding via the `sysctl` interface.
 
 ## Checking Current Forwarding State
 
 ```bash
 # Check global IPv6 forwarding state
+
 sysctl net.ipv6.conf.all.forwarding
 # net.ipv6.conf.all.forwarding = 0  (disabled by default)
 
@@ -25,7 +26,7 @@ sysctl net.ipv6.conf.eth1.forwarding
 ## Enabling IPv6 Forwarding Temporarily
 
 ```bash
-# Enable globally for all interfaces (not persistent — lost on reboot)
+# Enable globally for all interfaces (not persistent - lost on reboot)
 sudo sysctl -w net.ipv6.conf.all.forwarding=1
 
 # Alternatively, write directly to the /proc filesystem
@@ -116,4 +117,4 @@ IPv6AcceptRA=no   # Disable RA acceptance on router interfaces
 
 ## Summary
 
-Enable IPv6 forwarding with `sysctl -w net.ipv6.conf.all.forwarding=1` and persist it in `/etc/sysctl.d/`. When forwarding is enabled globally, Router Advertisement acceptance is disabled by default — use `accept_ra=2` on WAN interfaces that still need to receive a default route from upstream. Always verify forwarding is active before testing inter-network routing.
+Enable IPv6 forwarding with `sysctl -w net.ipv6.conf.all.forwarding=1` and persist it in `/etc/sysctl.d/`. When forwarding is enabled globally, Router Advertisement acceptance is disabled by default - use `accept_ra=2` on WAN interfaces that still need to receive a default route from upstream. Always verify forwarding is active before testing inter-network routing.

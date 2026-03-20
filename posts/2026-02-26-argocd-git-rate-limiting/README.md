@@ -30,6 +30,7 @@ ArgoCD makes Git requests during every reconciliation cycle. With 200 applicatio
 
 ```bash
 # Look for rate limit errors in repo server logs
+
 kubectl logs -n argocd deployment/argocd-repo-server --tail=500 | \
   grep -iE "rate.limit|429|too many|abuse|secondary"
 ```

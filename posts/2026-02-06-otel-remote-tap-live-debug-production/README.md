@@ -16,6 +16,7 @@ Remote tap exposes a WebSocket or gRPC endpoint on the collector. When you conne
 
 ```yaml
 # otel-collector-config.yaml
+
 receivers:
   otlp:
     protocols:

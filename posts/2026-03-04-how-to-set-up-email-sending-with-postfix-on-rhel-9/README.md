@@ -28,6 +28,7 @@ Set the following parameters:
 
 ```bash
 # Basic settings
+
 myhostname = mail.example.com
 mydomain = example.com
 myorigin = $mydomain

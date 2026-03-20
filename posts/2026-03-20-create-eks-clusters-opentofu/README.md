@@ -173,6 +173,7 @@ resource "aws_eks_addon" "kube_proxy" {
 }
 
 # EBS CSI Driver for persistent volumes
+
 resource "aws_eks_addon" "ebs_csi_driver" {
   cluster_name             = aws_eks_cluster.main.name
   addon_name               = "aws-ebs-csi-driver"

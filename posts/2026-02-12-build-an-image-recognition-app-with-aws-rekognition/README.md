@@ -36,6 +36,7 @@ graph TD
 
 ```yaml
 # CloudFormation for the image recognition application
+
 AWSTemplateFormatVersion: '2010-09-09'
 Resources:
   ImageBucket:

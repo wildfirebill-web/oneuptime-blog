@@ -23,6 +23,7 @@ Before setting up verification, sign your images using Cosign:
 
 ```bash
 # Sign an image using Cosign keyless signing (recommended)
+
 cosign sign ghcr.io/myorg/webapp:v1.0.0
 
 # Or sign with a key pair

@@ -1,8 +1,8 @@
-# How to Install Portainer Business Edition
+# How to Install Portainer Business Edition - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: portainer, portainer-business, installation, enterprise, license
+Tags: Portainer, Portainer-business, Installation, Enterprise, License
 
 Description: A guide to installing Portainer Business Edition with license activation, covering Docker, Docker Swarm, and Kubernetes deployments.
 
@@ -21,6 +21,7 @@ Portainer Business Edition (BE) adds enterprise features on top of Portainer CE 
 
 ```bash
 # Create data volume
+
 docker volume create portainer_data
 
 # Install Portainer Business Edition
@@ -112,7 +113,7 @@ docker run -d \
 
 ## Setting Up LDAP/AD Integration (BE Feature)
 
-```
+```text
 Portainer UI → Settings → Authentication → LDAP
 
 Configuration:
@@ -127,7 +128,7 @@ Configuration:
 
 ## Setting Up Team-Based Access (BE Feature)
 
-```
+```text
 Portainer UI → Settings → Teams → Add Team
 
 Create teams:
@@ -140,7 +141,7 @@ Then assign teams to environments with appropriate roles.
 
 ## Configuring Automated Backups (BE Feature)
 
-```
+```text
 Portainer UI → Settings → Backup → Configure Backup
 
 Options:

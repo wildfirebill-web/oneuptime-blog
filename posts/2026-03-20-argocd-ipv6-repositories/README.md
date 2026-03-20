@@ -1,4 +1,4 @@
-# How to Configure ArgoCD Application Sources with IPv6 Git URLs
+# How to Configure ArgoCD Application Sources with IPv6 Git URLs - Repositories
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -20,6 +20,7 @@ ArgoCD manages Kubernetes applications by syncing from Git repositories. When yo
 
 ```bash
 # Check that ArgoCD pods are running in IPv6 cluster
+
 kubectl get pods -n argocd -o wide
 
 # Verify the argocd-server pod can reach IPv6 resources

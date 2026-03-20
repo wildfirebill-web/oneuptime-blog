@@ -28,7 +28,8 @@ sequenceDiagram
 ## Observing PMTUD in Action
 
 ```bash
-# Set DF bit and send large packet — triggers PMTUD if path MTU < 1500
+# Set DF bit and send large packet - triggers PMTUD if path MTU < 1500
+
 ping -s 1472 -M do -c 3 8.8.8.8
 # -s 1472: payload size (1472 + 28 byte IP+ICMP header = 1500 bytes)
 # -M do: set Don't Fragment bit

@@ -35,6 +35,7 @@ Before you can use SCPs, you need to enable them in your organization:
 
 ```bash
 # Enable service control policies in AWS Organizations
+
 aws organizations enable-policy-type \
   --root-id r-abc1 \
   --policy-type SERVICE_CONTROL_POLICY

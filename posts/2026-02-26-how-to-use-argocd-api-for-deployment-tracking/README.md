@@ -22,6 +22,7 @@ Each application stores a history of sync operations. Query it through the API.
 
 ```bash
 # Get the deployment history for an application
+
 curl -s -k "$ARGOCD_URL/api/v1/applications/web-app-production" \
   -H "$AUTH_HEADER" | jq '[.status.history[] | {
     id: .id,

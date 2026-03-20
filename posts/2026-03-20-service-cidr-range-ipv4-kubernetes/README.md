@@ -2,15 +2,15 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, IPv4, Service CIDR, ClusterIP, Networking, kubeadm
+Tags: Kubernetes, IPv4, Service CIDR, ClusterIP, Networking, Kubeadm
 
 Description: Set the IPv4 service CIDR for Kubernetes ClusterIP addresses during cluster initialization and understand how it affects service IP assignment.
 
-The service CIDR defines the IPv4 range from which Kubernetes assigns ClusterIP addresses to services. These are virtual IPs implemented by kube-proxy using iptables or IPVS — they don't correspond to real network interfaces.
+The service CIDR defines the IPv4 range from which Kubernetes assigns ClusterIP addresses to services. These are virtual IPs implemented by kube-proxy using iptables or IPVS - they don't correspond to real network interfaces.
 
 ## Planning the Service CIDR
 
-```
+```text
 Default: 10.96.0.0/12 (about 1 million addresses)
 Custom:  10.96.0.0/16 (65,534 services)
 Small:   10.96.0.0/20 (4,094 services)
@@ -26,6 +26,7 @@ Rules:
 
 ```yaml
 # kubeadm-config.yaml
+
 apiVersion: kubeadm.k8s.io/v1beta3
 kind: ClusterConfiguration
 networking:
@@ -75,7 +76,7 @@ kubectl get svc my-app
 ## Requesting a Specific ClusterIP
 
 ```yaml
-# service.yaml — request a specific ClusterIP within the service CIDR
+# service.yaml - request a specific ClusterIP within the service CIDR
 apiVersion: v1
 kind: Service
 metadata:

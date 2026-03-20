@@ -32,6 +32,7 @@ Install the Dapr CLI and initialize:
 
 ```bash
 # Install Dapr CLI (macOS/Linux)
+
 curl -fsSL https://raw.githubusercontent.com/dapr/cli/master/install/install.sh | bash
 
 # Initialize Dapr locally (installs Redis, Zipkin for development)

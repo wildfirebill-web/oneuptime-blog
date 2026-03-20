@@ -14,6 +14,7 @@ Description: Master the terraform plan command to preview infrastructure changes
 
 ```bash
 # Preview what Terraform will do
+
 terraform plan
 ```
 

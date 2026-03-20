@@ -1,4 +1,4 @@
-# How to Set Up Let's Encrypt ACME with Traefik for Portainer
+# How to Set Up Let's Encrypt ACME with Traefik for Portainer - Letsencrypt
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -16,6 +16,7 @@ Description: Step-by-step guide to configuring Traefik's ACME integration with L
 
 ```bash
 # Create directories
+
 mkdir -p /opt/traefik/data
 
 # Create and lock the ACME storage file
@@ -145,7 +146,7 @@ docker logs traefik --follow 2>&1 | grep -E "acme|cert|error"
 
 Successful issuance looks like:
 
-```
+```text
 level=debug msg="Obtaining certificate for domains \"portainer.yourdomain.com\""
 level=info msg="Certificate obtained successfully"
 ```
@@ -174,4 +175,4 @@ Always test with staging to avoid hitting production rate limits.
 
 ## Conclusion
 
-Traefik's Let's Encrypt integration makes HTTPS effortless — once configured, any container running behind Traefik via Portainer gets a valid certificate automatically, with no manual renewal process or CA cost.
+Traefik's Let's Encrypt integration makes HTTPS effortless - once configured, any container running behind Traefik via Portainer gets a valid certificate automatically, with no manual renewal process or CA cost.

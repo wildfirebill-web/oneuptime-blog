@@ -30,6 +30,7 @@ Let's configure Envoy to hedge requests to a backend service. The configuration 
 
 ```yaml
 # envoy-hedging-config.yaml
+
 static_resources:
   listeners:
   - name: listener_0

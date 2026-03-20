@@ -25,6 +25,7 @@ sudo apt-get update
 sudo apt-get install -y pass
 
 # Optionally install password generation support (included in many setups)
+
 sudo apt-get install -y pwgen
 ```
 

@@ -171,6 +171,7 @@ If the installer cannot find the IdM server:
 
 ```bash
 # Specify the server directly
+
 sudo ipa-client-install --server=idm1.example.com --domain=example.com
 ```
 

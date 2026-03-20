@@ -24,7 +24,7 @@ ip dhcp snooping vlan 10,20
 ! Enable DAI per VLAN
 ip arp inspection vlan 10,20
 
-! Trust the uplink — ARP from trusted ports is not validated
+! Trust the uplink - ARP from trusted ports is not validated
 interface GigabitEthernet0/24
  description Uplink-to-Distribution
  ip arp inspection trust

@@ -65,6 +65,7 @@ After running `terraform apply`, export the outputs.
 
 ```bash
 # Export all outputs to a JSON file
+
 terraform output -json > ../ansible/group_vars/all/terraform_outputs.json
 ```
 

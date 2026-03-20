@@ -234,6 +234,7 @@ Here is the same pattern implemented in Python using Flask.
 
 ```python
 # deprecation.py
+
 # Flask extension for adding deprecation headers to API responses
 
 from flask import Flask, request, g

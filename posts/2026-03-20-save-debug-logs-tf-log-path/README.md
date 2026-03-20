@@ -8,12 +8,13 @@ Description: Learn how to use TF_LOG_PATH to redirect OpenTofu debug logs to a f
 
 ## Introduction
 
-By default, `TF_LOG` writes debug output to stderr, mixing it with normal OpenTofu output in the terminal. `TF_LOG_PATH` redirects all log messages to a file, keeping the terminal clean and preserving logs for later analysis — essential for long apply sessions or CI/CD debugging.
+By default, `TF_LOG` writes debug output to stderr, mixing it with normal OpenTofu output in the terminal. `TF_LOG_PATH` redirects all log messages to a file, keeping the terminal clean and preserving logs for later analysis - essential for long apply sessions or CI/CD debugging.
 
 ## Basic Usage
 
 ```bash
 # Write DEBUG logs to a file
+
 export TF_LOG=DEBUG
 export TF_LOG_PATH=/tmp/opentofu-debug.log
 tofu plan
@@ -28,7 +29,7 @@ For multiple runs in the same session, append timestamps to avoid overwriting:
 
 ```bash
 #!/bin/bash
-# run-tofu.sh — always save logs with timestamps
+# run-tofu.sh - always save logs with timestamps
 
 LOG_DIR="./logs"
 mkdir -p "$LOG_DIR"

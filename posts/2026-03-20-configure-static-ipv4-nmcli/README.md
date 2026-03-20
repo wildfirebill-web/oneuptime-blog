@@ -14,6 +14,7 @@ Description: Configure a static IPv4 address on a Linux network interface using 
 
 ```bash
 # Identify the connection name
+
 nmcli connection show
 
 # Set static IP method and address

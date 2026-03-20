@@ -14,6 +14,7 @@ Envoy is a high-performance proxy designed for service mesh architectures. As a 
 
 ```bash
 # Download the official Envoy binary
+
 sudo dnf install -y yum-utils
 sudo rpm --import https://getenvoy.io/gpg
 sudo yum-config-manager --add-repo https://tetrate.bintray.com/getenvoy-rpm/centos/tetrate-getenvoy-rpm.repo

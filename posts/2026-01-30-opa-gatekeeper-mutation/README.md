@@ -71,6 +71,7 @@ Mutation is disabled by default. Enable it during installation.
 
 ```bash
 # Install Gatekeeper with mutation enabled
+
 helm install gatekeeper gatekeeper/gatekeeper \
   --namespace gatekeeper-system \
   --create-namespace \

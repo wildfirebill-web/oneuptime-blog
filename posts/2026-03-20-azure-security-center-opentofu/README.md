@@ -14,6 +14,7 @@ Azure Security Center (now part of Microsoft Defender for Cloud) provides unifie
 
 ```hcl
 # main.tf - Enable Defender for Cloud standard tier on key resource types
+
 resource "azurerm_security_center_subscription_pricing" "defender_vms" {
   tier          = "Standard"
   resource_type = "VirtualMachines"

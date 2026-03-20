@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Nginx, Load Balancing, least_conn, IPv4, Reverse Proxy, Performance
+Tags: Nginx, Load Balancing, Least_conn, IPv4, Reverse Proxy, Performance
 
 Description: Configure Nginx upstream load balancing using the least_conn algorithm to route new connections to the backend with the fewest active connections.
 
 ## Introduction
 
-Nginx supports multiple load balancing algorithms. `least_conn` routes each new request to the backend with the fewest active connections — ideal when backend response times vary significantly or when some requests are long-lived (WebSocket, file uploads).
+Nginx supports multiple load balancing algorithms. `least_conn` routes each new request to the backend with the fewest active connections - ideal when backend response times vary significantly or when some requests are long-lived (WebSocket, file uploads).
 
 ## Load Balancing Algorithms in Nginx
 
@@ -122,6 +122,7 @@ server {
 
 ```bash
 # Check real-time connection stats
+
 curl http://127.0.0.1:8080/nginx_status
 ```
 

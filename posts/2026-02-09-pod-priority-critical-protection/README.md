@@ -62,6 +62,7 @@ Apply priority classes to pod specifications:
 
 ```yaml
 # Critical database
+
 apiVersion: apps/v1
 kind: StatefulSet
 metadata:

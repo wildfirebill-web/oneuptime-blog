@@ -29,6 +29,7 @@ This guide covers how to run connectivity tests, how to interpret the output, an
 Confirm all Cilium agents are healthy before running connectivity tests.
 ```bash
 # Check overall Cilium status
+
 cilium status --wait
 
 # Verify all DaemonSet pods are running

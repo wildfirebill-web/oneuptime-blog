@@ -1,4 +1,4 @@
-# How to Set Up OpenTofu Autocompletion in Zsh
+# How to Set Up OpenTofu Autocompletion in Zsh - Autocompletion
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Learn how to enable tab autocompletion for OpenTofu commands in Zsh
 
 ---
 
-Tab autocompletion in Zsh gives you instant access to OpenTofu commands, flags, and options without memorizing them. Zsh's completion system is particularly powerful — it shows descriptions alongside completions and supports filtering. This guide covers setup with and without Oh My Zsh.
+Tab autocompletion in Zsh gives you instant access to OpenTofu commands, flags, and options without memorizing them. Zsh's completion system is particularly powerful - it shows descriptions alongside completions and supports filtering. This guide covers setup with and without Oh My Zsh.
 
 ---
 
@@ -18,6 +18,7 @@ OpenTofu's built-in autocomplete installer works for both Bash and Zsh.
 
 ```zsh
 # Install OpenTofu autocompletion for Zsh
+
 tofu -install-autocomplete
 
 # This appends a line to ~/.zshrc similar to:
@@ -82,7 +83,7 @@ source ~/.zshrc
 For the best Zsh-native experience, create a custom completion function.
 
 ```zsh
-# ~/.zsh/completions/_tofu — create this file
+# ~/.zsh/completions/_tofu - create this file
 # Place it in a directory on your $fpath
 
 #compdef tofu

@@ -38,6 +38,7 @@ Multiple machines run the Restic client and send encrypted backup data to the RE
 
 ```bash
 # Create the Restic server project directory
+
 mkdir -p ~/restic-server/{data,htpasswd}
 cd ~/restic-server
 ```

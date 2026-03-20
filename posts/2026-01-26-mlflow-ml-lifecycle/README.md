@@ -60,6 +60,7 @@ Start by installing MLflow and its dependencies:
 
 ```bash
 # Install MLflow with all optional dependencies
+
 pip install mlflow[extras]
 
 # For a minimal installation

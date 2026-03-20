@@ -57,6 +57,7 @@ flowchart TD
 
 ```bash
 # Install cert-manager CRDs and components
+
 kubectl apply -f https://github.com/cert-manager/cert-manager/releases/download/v1.13.0/cert-manager.yaml
 
 # Wait for pods to be ready

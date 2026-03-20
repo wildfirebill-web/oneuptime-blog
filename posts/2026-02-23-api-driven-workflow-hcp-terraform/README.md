@@ -28,6 +28,7 @@ All API calls require a Bearer token. Use an organization token, team token, or 
 
 ```bash
 # Set your API token
+
 export TFC_TOKEN="your-api-token-here"
 
 # All API calls include this header

@@ -26,6 +26,7 @@ This guide covers installing Calico on a kubeadm cluster running on DigitalOcean
 
 ```bash
 # Create a firewall rule allowing cluster-internal communication
+
 doctl compute firewall create \
   --name k8s-cluster-firewall \
   --inbound-rules "protocol:tcp,ports:all,droplet_id:DROPLET1_ID droplet_id:DROPLET2_ID" \

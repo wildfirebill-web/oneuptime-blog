@@ -50,7 +50,7 @@ resource "vultr_startup_script" "portainer" {
 }
 
 resource "vultr_instance" "portainer" {
-  plan       = "vc2-1c-1gb"  # 1 vCPU, 1 GB RAM — ~$6/month
+  plan       = "vc2-1c-1gb"  # 1 vCPU, 1 GB RAM - ~$6/month
   region     = "ewr"          # New Jersey
   os_id      = 1743            # Ubuntu 22.04
   label      = "portainer"

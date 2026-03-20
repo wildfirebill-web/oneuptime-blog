@@ -56,6 +56,7 @@ import dbus.mainloop.glib
 from gi.repository import GLib
 
 # Set up the GLib main loop for D-Bus
+
 dbus.mainloop.glib.DBusGMainLoop(set_as_default=True)
 
 # Bus name and object path

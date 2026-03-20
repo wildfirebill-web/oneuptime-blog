@@ -256,6 +256,7 @@ def normalize_phone(phone):
     return re.sub(r'[^0-9]', '', phone)
 
 # Index with normalized phone
+
 doc = {
     "name": "John Doe",
     "phone": normalize_phone("(555) 123-4567"),  # Stored as "5551234567"

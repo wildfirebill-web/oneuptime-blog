@@ -131,6 +131,7 @@ Before running any commands, authenticate the CLI to your Keycloak instance.
 
 ```bash
 # Configure credentials for the admin CLI
+
 /opt/keycloak/bin/kcadm.sh config credentials \
   --server https://keycloak.example.com \
   --realm master \

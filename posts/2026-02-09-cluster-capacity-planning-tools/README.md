@@ -18,6 +18,7 @@ The simplest capacity tool is built into kubectl. The top command shows current 
 
 ```bash
 # View node capacity and usage
+
 kubectl top nodes
 
 # Output shows:

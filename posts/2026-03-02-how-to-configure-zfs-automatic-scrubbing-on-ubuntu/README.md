@@ -27,6 +27,7 @@ Without scrubbing, corruption is only detected when data is read. A file you hav
 
 ```bash
 # Start a scrub on the 'tank' pool
+
 sudo zpool scrub tank
 ```
 

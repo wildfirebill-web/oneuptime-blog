@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: rke2, k3s, kubernetes, distribution, comparison, suse-rancher
+Tags: RKE2, K3s, Kubernetes, Distribution, Comparison, Suse-rancher
 
 Description: A comprehensive comparison of RKE2 and K3s to help you choose the right Kubernetes distribution for your production or edge workloads.
 
@@ -47,6 +47,7 @@ RKE2 runs Kubernetes components as static pods on the control plane. Each compon
 
 ```bash
 # Install RKE2 server
+
 curl -sfL https://get.rke2.io | sh -
 
 # Enable and start RKE2 service
@@ -95,7 +96,7 @@ secrets-encryption: true
 
 K3s has reasonable security defaults but is not CIS-hardened out of the box. Security hardening requires additional configuration.
 
-## Resource Requirements
+Resource Requirements
 
 | Resource | RKE2 (3-node HA) | K3s (3-node HA) |
 |---|---|---|

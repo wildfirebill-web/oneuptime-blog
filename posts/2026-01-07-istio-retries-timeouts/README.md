@@ -54,6 +54,7 @@ The following example demonstrates a basic retry configuration that attempts up 
 
 ```yaml
 # VirtualService with basic retry configuration
+
 # This configuration retries failed requests up to 3 times
 apiVersion: networking.istio.io/v1beta1
 kind: VirtualService

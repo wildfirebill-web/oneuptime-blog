@@ -42,6 +42,7 @@ Not every application needs the same DR level. Define your tiers.
 
 ```yaml
 # vars/dr_config.yml
+
 ---
 dr_tiers:
   tier1_critical:

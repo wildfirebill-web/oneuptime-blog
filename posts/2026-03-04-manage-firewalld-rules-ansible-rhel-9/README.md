@@ -29,6 +29,7 @@ graph TD
 
 ```yaml
 # playbook-firewall.yml
+
 # Configure firewalld on RHEL servers
 ---
 - name: Configure firewall rules

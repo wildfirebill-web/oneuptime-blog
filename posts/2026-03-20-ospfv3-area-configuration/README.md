@@ -8,7 +8,7 @@ Description: Understand how OSPFv3 areas work for IPv6 networks, including backb
 
 ## Overview
 
-OSPFv3 uses the same area concept as OSPFv2 — areas divide the network into smaller flooding domains to reduce LSA overhead and improve scalability. The backbone area (Area 0) connects all other areas.
+OSPFv3 uses the same area concept as OSPFv2 - areas divide the network into smaller flooding domains to reduce LSA overhead and improve scalability. The backbone area (Area 0) connects all other areas.
 
 ## OSPFv3 Area Hierarchy
 
@@ -28,7 +28,7 @@ graph TD
 
 | Area Type | External Routes | Type 3 LSAs | Use Case |
 |-----------|----------------|-------------|----------|
-| Backbone (Area 0) | Yes | Yes | Core — all areas connect here |
+| Backbone (Area 0) | Yes | Yes | Core - all areas connect here |
 | Regular | Yes | Yes | Standard area with full LSDB |
 | Stub | No | Yes | Branch sites with single exit |
 | Totally Stub | No | No (only default) | Maximum filtering |
@@ -36,7 +36,7 @@ graph TD
 
 ## Configuring Areas on Cisco IOS
 
-```
+```text
 ! Regular area (Area 1)
 Router(config)# router ospfv3 1
 Router(config-router)# address-family ipv6 unicast
@@ -91,6 +91,7 @@ An ABR has interfaces in two or more areas. It generates Type 3 (Inter-Area Pref
 
 ```bash
 # Verify ABR role on FRRouting
+
 vtysh -c "show ipv6 ospf"
 # Should show: This router is an ABR
 
@@ -102,7 +103,7 @@ vtysh -c "show ipv6 ospf database inter-prefix"
 
 Virtual links extend Area 0 connectivity through a transit area when a non-backbone area has no direct connection to the backbone:
 
-```
+```text
 ! Cisco: Configure virtual link through Area 1 to reach router 2.2.2.2
 Router(config)# router ospfv3 1
 Router(config-router)# address-family ipv6 unicast

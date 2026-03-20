@@ -25,6 +25,7 @@ Before starting or stopping, check the current state:
 
 ```bash
 # List all machines and their status
+
 podman machine list
 
 # Example output:

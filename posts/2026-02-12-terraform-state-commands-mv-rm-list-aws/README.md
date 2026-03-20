@@ -18,6 +18,7 @@ This is your starting point. It shows every resource Terraform is tracking:
 
 ```bash
 # List all resources in state
+
 terraform state list
 ```
 

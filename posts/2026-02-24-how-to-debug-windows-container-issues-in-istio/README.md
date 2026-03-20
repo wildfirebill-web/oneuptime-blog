@@ -87,6 +87,7 @@ When Linux pods with sidecars cannot reach a Windows service:
 
 ```bash
 # Test from a Linux pod
+
 kubectl exec -n linux-apps deploy/linux-client -- \
   curl -v --connect-timeout 10 http://windows-api.windows-apps:80/
 ```

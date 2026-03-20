@@ -42,6 +42,7 @@ from confluent_kafka import TopicPartition
 meter = metrics.get_meter("kafka.lag.monitor")
 
 # Create a gauge that reports consumer lag per partition
+
 lag_gauge = meter.create_observable_gauge(
     name="kafka.consumer_group.lag",
     description="Consumer group lag in number of messages",

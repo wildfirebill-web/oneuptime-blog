@@ -20,6 +20,7 @@ Here's how to create groups using the AWS CLI:
 
 ```bash
 # Create an admin group with highest precedence (lowest number = highest priority)
+
 aws cognito-idp create-group \
     --user-pool-id us-east-1_XXXXXXXXX \
     --group-name Admins \

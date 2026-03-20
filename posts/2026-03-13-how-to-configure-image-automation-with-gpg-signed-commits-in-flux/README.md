@@ -177,6 +177,7 @@ To rotate the GPG key, generate a new key pair, update the Kubernetes secret, an
 
 ```bash
 # Generate new key
+
 gpg --batch --gen-key new-key-config
 
 # Update the secret

@@ -37,6 +37,7 @@ Run `INFO memory` and look for these fields:
 ```text
 127.0.0.1:6379> INFO memory
 # Memory
+
 used_memory:1073741824
 used_memory_human:1.00G
 used_memory_rss:1610612736

@@ -50,14 +50,14 @@ In pfSense 2.5.2+, WireGuard is built-in. On older versions:
 
 Navigate to **Firewall → Rules**.
 
-**WAN Rules** — Allow incoming WireGuard traffic:
+**WAN Rules** - Allow incoming WireGuard traffic:
 - Action: Pass
 - Interface: WAN
 - Protocol: UDP
 - Destination Port: 51820
 - Description: Allow WireGuard VPN
 
-**WireGuard Interface Rules** — Allow VPN client traffic:
+**WireGuard Interface Rules** - Allow VPN client traffic:
 - Action: Pass
 - Interface: WireGuard
 - Source: WireGuard subnet (`10.0.0.0/24`)

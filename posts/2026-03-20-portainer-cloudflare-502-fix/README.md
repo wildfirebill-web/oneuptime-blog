@@ -1,4 +1,4 @@
-# How to Fix 502 Bad Gateway Errors with Cloudflare Tunnel and Portainer
+# How to Fix 502 Bad Gateway with Cloudflare Tunnel in Portainer
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -22,6 +22,7 @@ First, verify the tunnel itself is connected:
 
 ```bash
 # Check cloudflared container logs
+
 docker logs cloudflared --tail=50
 
 # Look for connection state
@@ -34,9 +35,9 @@ docker logs cloudflared 2>&1 | grep -E "(registered|disconnected|error|ERR)"
 # INF Registered tunnel connection connIndex=3
 
 # Problem indicators:
-# ERR Failed to dial to origin — Can't reach the backend
-# ERR Unable to reach the origin service — Backend not responding
-# WRN Retrying connection — Network/auth issues
+# ERR Failed to dial to origin - Can't reach the backend
+# ERR Unable to reach the origin service - Backend not responding
+# WRN Retrying connection - Network/auth issues
 ```
 
 ```bash
@@ -69,7 +70,7 @@ ingress:
 ```
 
 **In Cloudflare Dashboard (for token-mode tunnels):**
-```
+```text
 Public Hostname → Edit service configuration:
   Type: HTTP
   URL: portainer:9000
@@ -90,7 +91,7 @@ docker exec cloudflared wget -qO- --timeout=10 http://portainer:9000 && echo "OK
 docker inspect cloudflared | jq '.[].NetworkSettings.Networks | keys'
 docker inspect portainer | jq '.[].NetworkSettings.Networks | keys'
 
-# They must share a network — connect if not
+# They must share a network - connect if not
 docker network connect proxy cloudflared
 docker network connect proxy portainer
 
@@ -103,7 +104,7 @@ docker exec cloudflared wget -qO- --timeout=10 http://portainer:9000 && echo "OK
 Cloudflare Tunnel has default timeouts that may be too short for Portainer operations:
 
 ```yaml
-# config.yml — Increase timeout settings
+# config.yml - Increase timeout settings
 ingress:
   - hostname: portainer.example.com
     service: http://portainer:9000

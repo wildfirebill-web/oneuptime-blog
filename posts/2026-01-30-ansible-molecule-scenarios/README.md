@@ -32,6 +32,7 @@ Install Molecule with your preferred driver. Docker is the most common choice fo
 pip install molecule molecule-docker
 
 # For other drivers
+
 pip install molecule-vagrant
 pip install molecule-podman
 pip install molecule-ec2

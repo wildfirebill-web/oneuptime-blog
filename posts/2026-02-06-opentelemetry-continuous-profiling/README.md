@@ -52,6 +52,7 @@ Let's start with a Go application since Go has the most mature profiling support
 
 ```bash
 # Install the OpenTelemetry profiling SDK and OTLP exporter
+
 # These packages are still in alpha, so pin your versions carefully
 go get go.opentelemetry.io/contrib/profiling@latest
 go get go.opentelemetry.io/otel/exporters/otlp/otlpprofile/otlpprofilegrpc@latest

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, AWS, RDS, Database Migration, Multi-Region, Infrastructure as Code
+Tags: OpenTofu, AWS, RDS, Database Migrations, Multi-Region, Infrastructure as Code
 
 Description: Learn how to migrate RDS databases between AWS regions using snapshots, cross-region replication, and read replicas with OpenTofu.
 
@@ -14,6 +14,7 @@ Migrating a database to a different region requires careful planning to minimize
 
 ```hcl
 # Source region (us-east-1)
+
 provider "aws" {
   alias  = "source"
   region = "us-east-1"
@@ -144,4 +145,4 @@ tofu apply tfplan
 
 ## Summary
 
-Database region migration requires a choice between snapshot-based migration (higher RPO) and cross-region read replica promotion (near-zero RPO). OpenTofu manages snapshot copies, restored instances, cross-region replicas, and target networking — providing a reproducible migration process with minimal manual steps.
+Database region migration requires a choice between snapshot-based migration (higher RPO) and cross-region read replica promotion (near-zero RPO). OpenTofu manages snapshot copies, restored instances, cross-region replicas, and target networking - providing a reproducible migration process with minimal manual steps.

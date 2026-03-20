@@ -37,6 +37,7 @@ First, add Sidekiq to your Gemfile:
 
 ```ruby
 # Gemfile
+
 gem 'sidekiq', '~> 7.2'  # Use the latest stable version
 ```
 

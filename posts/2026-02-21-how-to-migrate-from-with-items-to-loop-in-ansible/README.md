@@ -29,6 +29,7 @@ Before:
 
 ```yaml
 # OLD: Using with_items
+
 - name: Install packages
   ansible.builtin.apt:
     name: "{{ item }}"

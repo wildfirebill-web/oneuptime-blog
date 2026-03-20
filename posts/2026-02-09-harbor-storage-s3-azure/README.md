@@ -42,6 +42,7 @@ First, create an S3 bucket:
 
 ```bash
 # Create S3 bucket for Harbor
+
 aws s3 mb s3://my-harbor-registry --region us-east-1
 
 # Enable versioning for data protection

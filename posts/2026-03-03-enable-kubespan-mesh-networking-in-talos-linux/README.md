@@ -24,6 +24,7 @@ Also confirm that your Talos version supports KubeSpan:
 
 ```bash
 # Check Talos version
+
 talosctl version --nodes <node-ip>
 ```
 

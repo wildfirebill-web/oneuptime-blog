@@ -45,6 +45,7 @@ ipconfig /all
 
 ```bash
 # On Linux/router: Check if DHCP server is running
+
 systemctl status isc-dhcp-server
 systemctl status dnsmasq
 

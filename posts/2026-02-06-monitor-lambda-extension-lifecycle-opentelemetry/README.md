@@ -418,6 +418,7 @@ If you are running the OpenTelemetry Collector as a Lambda extension, you especi
 
 ```yaml
 # collector-config.yaml for a Lambda extension collector
+
 receivers:
   otlp:
     protocols:

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Env0, Infrastructure as Code, IaC, GitOps, Platform
+Tags: OpenTofu, env0, Infrastructure as Code, IaC, GitOps, Platform
 
 Description: Learn how to configure Env0 for automated OpenTofu deployments with approval workflows and TTL environments.
 
@@ -20,6 +20,7 @@ Learn how to configure Env0 for automated OpenTofu deployments with approval wor
 
 ```bash
 # Verify OpenTofu installation
+
 tofu version
 
 # Set up required environment variables

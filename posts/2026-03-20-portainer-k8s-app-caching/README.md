@@ -43,6 +43,7 @@ TOKEN=$(curl -s -X POST http://localhost:9000/api/auth \
   -d '{"Username":"admin","Password":"yourpassword"}' | jq -r .jwt)
 
 # Get current endpoint configuration
+
 curl -s -H "Authorization: Bearer $TOKEN" \
   http://localhost:9000/api/endpoints/2 | jq '.Kubernetes'
 
@@ -163,4 +164,4 @@ If you suspect the cache is serving stale data:
 
 ## Conclusion
 
-Application data caching for Kubernetes is one of the most impactful performance features in Portainer for large clusters. Enable it for any Kubernetes environment with more than 50 namespaces or 200+ resources. The default 60-second interval works well for most deployments — increase it to 300+ seconds for stable production clusters to minimize Kubernetes API server load.
+Application data caching for Kubernetes is one of the most impactful performance features in Portainer for large clusters. Enable it for any Kubernetes environment with more than 50 namespaces or 200+ resources. The default 60-second interval works well for most deployments - increase it to 300+ seconds for stable production clusters to minimize Kubernetes API server load.

@@ -28,6 +28,7 @@ The first thing your overview dashboard needs is a quick health indicator for ea
 
 ```text
 # Error rate by service over the last 5 minutes
+
 fetch cloud_run_revision
 | metric 'run.googleapis.com/request_count'
 | align rate(5m)

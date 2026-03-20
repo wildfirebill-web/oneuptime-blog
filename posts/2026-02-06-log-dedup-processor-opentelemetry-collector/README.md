@@ -55,6 +55,7 @@ Here is a basic configuration that deduplicates based on log message:
 
 ```yaml
 # RECEIVERS: Accept logs via OTLP
+
 receivers:
   otlp:
     protocols:

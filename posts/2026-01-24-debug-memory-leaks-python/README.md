@@ -22,6 +22,7 @@ Python uses reference counting plus a garbage collector for cyclic references:
 import sys
 
 # Reference counting in action
+
 a = [1, 2, 3]
 print(sys.getrefcount(a))  # 2 (a + temporary for getrefcount)
 

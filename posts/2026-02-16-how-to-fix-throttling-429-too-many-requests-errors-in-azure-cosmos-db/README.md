@@ -30,6 +30,7 @@ First, understand the scope of the problem. Open the Azure portal, go to your Co
 
 ```bash
 # Query Cosmos DB metrics using Azure CLI
+
 az monitor metrics list \
   --resource "/subscriptions/<sub-id>/resourceGroups/myRG/providers/Microsoft.DocumentDB/databaseAccounts/myCosmosAccount" \
   --metric "TotalRequestUnits,ThrottledRequests" \

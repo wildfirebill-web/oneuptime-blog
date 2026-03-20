@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, HCL, Infrastructure as Code, Local, DevOps
+Tags: Terraform, HCL, Infrastructure as Code, Locals, DevOps
 
 Description: Learn how to define and use local values in Terraform to create named expressions, reduce repetition, and keep your infrastructure code clean and maintainable.
 
@@ -18,6 +18,7 @@ A local value assigns a name to an expression. Think of it like a local variable
 
 ```hcl
 # Define local values in a locals block
+
 locals {
   # Simple string assignment
   environment = "production"

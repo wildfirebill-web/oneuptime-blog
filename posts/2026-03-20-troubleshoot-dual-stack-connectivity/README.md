@@ -14,6 +14,7 @@ Dual-stack deployments introduce new failure modes: an application may prefer IP
 
 ```bash
 # Happy Eyeballs (RFC 8305): clients try IPv6 first, fall back to IPv4 if IPv6 fails
+
 # When something is "slow" in dual-stack, IPv6 is often broken
 
 # Test which protocol is being used:
@@ -127,4 +128,4 @@ echo "GET / HTTP/1.0" | nc -6 example.com 80
 
 ## Conclusion
 
-Dual-stack troubleshooting starts by isolating which protocol family has the issue using `curl -4` / `curl -6` or `ping -4` / `ping -6`. Check DNS returns the correct records for both families, verify default routes exist for both IPv4 and IPv6, and ensure IPv6 isn't disabled on the interface. Slow connections often indicate a broken IPv6 path causing Happy Eyeballs delays — fix the IPv6 path or disable AAAA records until IPv6 is properly working.
+Dual-stack troubleshooting starts by isolating which protocol family has the issue using `curl -4` / `curl -6` or `ping -4` / `ping -6`. Check DNS returns the correct records for both families, verify default routes exist for both IPv4 and IPv6, and ensure IPv6 isn't disabled on the interface. Slow connections often indicate a broken IPv6 path causing Happy Eyeballs delays - fix the IPv6 path or disable AAAA records until IPv6 is properly working.

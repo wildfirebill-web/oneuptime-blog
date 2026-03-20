@@ -16,6 +16,7 @@ The timer is a notification callback, so it adds to your existing output rather 
 
 ```ini
 # ansible.cfg - Enable the timer callback
+
 [defaults]
 callback_whitelist = timer
 ```

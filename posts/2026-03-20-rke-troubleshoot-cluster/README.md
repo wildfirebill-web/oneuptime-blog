@@ -16,6 +16,7 @@ RKE clusters run Kubernetes components as Docker containers. When something goes
 export KUBECONFIG=kube_config_cluster.yml
 
 # Check overall node health
+
 kubectl get nodes -o wide
 
 # Check all system pods

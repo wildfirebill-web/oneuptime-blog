@@ -72,7 +72,7 @@ HTTP/2 average latency:    8-12ms (p50), 20-25ms (p99)
 HTTP/1.1 average latency:  15-25ms (p50), 50-80ms (p99)
 ```
 
-### Resource Usage
+Resource Usage
 
 gRPC is more efficient with resources:
 
@@ -94,6 +94,7 @@ Here's an optimized gRPC configuration for the OpenTelemetry Collector:
 
 ```yaml
 # collector-grpc-config.yaml
+
 receivers:
   otlp:
     protocols:

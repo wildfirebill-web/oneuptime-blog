@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Go, IPv6, Templates, HTML, text/template, html/template
+Tags: Go, IPv6, Templates, HTML, Text/template, Html/template
 
 Description: Handle IPv6 addresses in Go templates including proper formatting, URL generation, and custom template functions.
 
@@ -145,6 +145,7 @@ import (
 
 const nginxIPv6Template = `
 # Auto-generated nginx configuration for IPv6 servers
+
 # Generated: {{.Timestamp}}
 
 {{range .Upstreams}}

@@ -131,6 +131,7 @@ from google.cloud.aiplatform import hyperparameter_tuning as hpt
 aiplatform.init(project="your-project-id", location="us-central1")
 
 # Define the custom training job
+
 custom_job = aiplatform.CustomJob(
     display_name="fraud-model-training",
     worker_pool_specs=[

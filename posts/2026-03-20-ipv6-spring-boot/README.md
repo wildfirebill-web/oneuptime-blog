@@ -10,6 +10,7 @@ Description: Configure IPv6 support in Spring Boot applications including server
 
 ```properties
 # application.properties
+
 server.address=::
 server.port=8080
 ```

@@ -311,6 +311,7 @@ Set up IAP for your Cloud Run service:
 
 ```bash
 # Enable the IAP API
+
 gcloud services enable iap.googleapis.com
 
 # Deploy the Cloud Run service

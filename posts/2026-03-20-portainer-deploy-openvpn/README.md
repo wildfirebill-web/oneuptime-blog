@@ -1,8 +1,8 @@
-# How to Deploy OpenVPN via Portainer
+# How to Deploy OpenVPN via Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, OpenVPN, VPN, Self-Hosted, Network, Privacy
+Tags: Portainer, Docker, OpenVPN, VPN, Self-Hosted, Networks, Privacy
 
 Description: Deploy OpenVPN via Portainer using the kylemanna/openvpn image for a flexible, widely-compatible VPN server with easy client certificate management.
 
@@ -22,6 +22,7 @@ Before deploying the container stack, initialize the configuration:
 
 ```bash
 # Create a volume for OpenVPN data
+
 docker volume create openvpn-data
 
 # Initialize the configuration (replace vpn.example.com with your hostname)

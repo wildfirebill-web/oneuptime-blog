@@ -28,6 +28,7 @@ This guide provides the specific steps for each aspect of tunnel performance man
 
 ```bash
 # Start new clusters with native routing
+
 helm install cilium cilium/cilium --namespace kube-system \
   --set tunnel=disabled \
   --set routingMode=native \

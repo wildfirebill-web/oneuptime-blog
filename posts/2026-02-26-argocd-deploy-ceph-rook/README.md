@@ -140,6 +140,7 @@ The CephCluster manifest:
 
 ```yaml
 # rook-ceph/cluster/ceph-cluster.yaml
+
 apiVersion: ceph.rook.io/v1
 kind: CephCluster
 metadata:

@@ -24,6 +24,7 @@ AppArmor profiles operate in one of several modes. Enforce mode actively blocks 
 
 ```bash
 # View all profiles and their modes
+
 sudo aa-status
 
 # Filter to see just enforce mode profiles

@@ -24,6 +24,7 @@ Deploy Kyverno to your cluster:
 kubectl create -f https://github.com/kyverno/kyverno/releases/download/v1.10.0/install.yaml
 
 # Verify installation
+
 kubectl get pods -n kyverno
 kubectl get validatingwebhookconfigurations
 kubectl get mutatingwebhookconfigurations

@@ -45,6 +45,7 @@ Enable Defender for Key Vault at the subscription level to protect all vaults au
 
 ```bash
 # Enable Microsoft Defender for Key Vault
+
 az security pricing create \
   --name KeyVaults \
   --tier Standard

@@ -30,6 +30,7 @@ Check if AppArmor is enabled on your Talos nodes.
 
 ```bash
 # Verify AppArmor is available on Talos nodes
+
 kubectl run apparmor-check --image=busybox --rm -it --restart=Never -- \
   cat /sys/module/apparmor/parameters/enabled
 # Should output: Y

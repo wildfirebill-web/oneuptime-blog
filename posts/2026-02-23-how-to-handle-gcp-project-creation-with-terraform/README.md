@@ -24,6 +24,7 @@ Creating projects requires specific permissions. Your Terraform service account 
 
 ```hcl
 # Create a new GCP project
+
 resource "google_project" "project" {
   name       = "My Application - ${var.environment}"
   project_id = "my-app-${var.environment}-${random_id.project_suffix.hex}"

@@ -1,4 +1,4 @@
-# How to Use Telepresence with Rancher Clusters
+# How to Use Telepresence with Rancher Clusters - With Clusters
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -20,6 +20,7 @@ Telepresence creates a two-way proxy between your local machine and a Rancher-ma
 
 ```bash
 # macOS
+
 brew install datawire/blackbird/telepresence
 
 # Linux

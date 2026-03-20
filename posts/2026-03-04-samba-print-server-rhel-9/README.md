@@ -22,6 +22,7 @@ Samba can act as a print server, making CUPS-managed printers available to Windo
 
 ```bash
 # Install Samba and CUPS
+
 sudo dnf install -y samba samba-client cups cups-filters
 ```
 

@@ -31,6 +31,7 @@ Automate Felix configuration changes based on environment or time of day:
 ```bash
 #!/bin/bash
 # auto-felix-config.sh
+
 # Automatically adjusts Felix configuration based on environment
 
 set -euo pipefail

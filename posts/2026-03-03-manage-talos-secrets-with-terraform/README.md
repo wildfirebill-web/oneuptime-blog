@@ -28,6 +28,7 @@ The official Talos Terraform provider from Sidero Labs makes it straightforward 
 
 ```hcl
 # Configure the Talos provider
+
 terraform {
   required_providers {
     talos = {

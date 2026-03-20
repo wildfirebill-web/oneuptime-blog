@@ -14,6 +14,7 @@ Microservices on GCP use GKE for container orchestration, Cloud Endpoints or API
 
 ```hcl
 # main.tf - GKE cluster for microservices
+
 resource "google_container_cluster" "microservices" {
   name     = "microservices-cluster"
   location = "us-central1"

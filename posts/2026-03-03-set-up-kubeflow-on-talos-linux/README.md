@@ -29,6 +29,7 @@ Kubeflow requires a default StorageClass. Verify one exists:
 
 ```bash
 # Check for a default StorageClass
+
 kubectl get storageclass
 ```
 

@@ -19,6 +19,7 @@ Mixed content occurs when an HTTPS page loads resources (images, scripts, styles
 
 ```bash
 # Use curl to check for HTTP references in page HTML
+
 curl -sk https://example.com | grep -Eo 'src="http://[^"]*"' | head -20
 
 # Use the browser console: open DevTools → Console tab

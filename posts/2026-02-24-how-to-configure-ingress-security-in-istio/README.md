@@ -347,6 +347,7 @@ Track security-related metrics at the gateway:
 
 ```bash
 # Check authorization policy denials
+
 kubectl exec -it <gateway-pod> -c istio-proxy -n istio-system -- \
   pilot-agent request GET stats | grep "rbac"
 

@@ -10,15 +10,15 @@ Description: Learn how NAT interacts with IPsec VPN tunnels, how to configure NA
 
 IPsec has inherent conflicts with NAT because:
 
-1. **ESP (IP Protocol 50)** — no port numbers, so PAT cannot track sessions
-2. **IKE integrity checks** — some IPsec modes verify packet headers including IPs
-3. **AH (Authentication Header)** — cryptographically signs the IP header; NAT breaks it
+1. **ESP (IP Protocol 50)** - no port numbers, so PAT cannot track sessions
+2. **IKE integrity checks** - some IPsec modes verify packet headers including IPs
+3. **AH (Authentication Header)** - cryptographically signs the IP header; NAT breaks it
 
 ## IPsec NAT Traversal (NAT-T)
 
 NAT-T (RFC 3947) wraps ESP packets in UDP on port 4500, allowing PAT to track them:
 
-```
+```text
 Without NAT-T:   [IP Header][ESP Header][Encrypted Payload]
 With NAT-T:      [IP Header][UDP:4500][NAT-T Header][ESP][Encrypted Payload]
 ```
@@ -29,6 +29,7 @@ IKE (UDP 500) detects NAT presence by comparing internal IP with external IP. If
 
 ```bash
 # /etc/ipsec.conf
+
 conn site-to-site
     type=tunnel
     keyexchange=ikev2
@@ -111,7 +112,7 @@ iptables -A FORWARD -m policy --dir out --pol ipsec -j ACCEPT
 
 ## Key Takeaways
 
-- IPsec uses NAT-T (UDP 4500) to traverse NAT devices — ensure port 4500 is open.
+- IPsec uses NAT-T (UDP 4500) to traverse NAT devices - ensure port 4500 is open.
 - Add NAT exemptions so traffic going through IPsec tunnels is not also SNAT'd.
 - `forceencaps=yes` in strongSwan forces NAT-T even when NAT is not detected.
 - Overlapping subnets in IPsec can be handled by NATting one side to a different range.

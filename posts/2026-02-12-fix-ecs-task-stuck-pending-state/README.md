@@ -26,6 +26,7 @@ The task stays in PENDING until all of these succeed or ECS gives up.
 
 ```bash
 # Check the task's current status and reason
+
 aws ecs describe-tasks \
     --cluster my-cluster \
     --tasks <task-arn> \

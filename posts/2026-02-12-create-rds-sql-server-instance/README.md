@@ -130,6 +130,7 @@ This command connects to the RDS SQL Server instance using sqlcmd.
 
 ```bash
 # Connect with sqlcmd
+
 sqlcmd -S my-app-sqlserver.abc123.us-east-1.rds.amazonaws.com,1433 \
   -U admin \
   -P 'YourStrongPassword123!'

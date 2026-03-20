@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: kubewarden, opa-gatekeeper, policy-engine, kubernetes, comparison
+Tags: Kubewarden, Opa-gatekeeper, Policy-engine, Kubernetes, Comparison
 
 Description: A comprehensive comparison of Kubewarden and OPA Gatekeeper for Kubernetes policy enforcement, covering policy authoring, performance, and operational experience.
 
@@ -43,6 +43,7 @@ Gatekeeper uses ConstraintTemplates (written in Rego) and Constraints (instances
 
 ```yaml
 # ConstraintTemplate: Require labels
+
 apiVersion: templates.gatekeeper.sh/v1
 kind: ConstraintTemplate
 metadata:

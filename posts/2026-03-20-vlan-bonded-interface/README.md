@@ -8,7 +8,7 @@ Description: Create VLAN subinterfaces on top of a Linux bonded interface to com
 
 ## Introduction
 
-Combining bonding with VLANs is a common production pattern: bonding provides link redundancy or aggregation, while VLANs segment traffic. You create the bond first, then add VLAN subinterfaces on top of it — exactly as you would with a physical interface.
+Combining bonding with VLANs is a common production pattern: bonding provides link redundancy or aggregation, while VLANs segment traffic. You create the bond first, then add VLAN subinterfaces on top of it - exactly as you would with a physical interface.
 
 ## Prerequisites
 
@@ -20,6 +20,7 @@ Combining bonding with VLANs is a common production pattern: bonding provides li
 
 ```bash
 # Load bonding and 8021q modules
+
 modprobe bonding
 modprobe 8021q
 
@@ -124,4 +125,4 @@ cat /proc/net/bonding/bond0  # eth1 should now be active
 
 ## Conclusion
 
-VLANs on bonded interfaces combine the redundancy of link bonding with the segmentation of 802.1Q VLANs. Create the bond first, then add VLAN subinterfaces to the bond interface. Failover is transparent to the VLAN configuration — all VLAN interfaces remain operational as long as at least one bond slave is active.
+VLANs on bonded interfaces combine the redundancy of link bonding with the segmentation of 802.1Q VLANs. Create the bond first, then add VLAN subinterfaces to the bond interface. Failover is transparent to the VLAN configuration - all VLAN interfaces remain operational as long as at least one bond slave is active.

@@ -48,6 +48,7 @@ Verify how the Kubernetes API server knows to route projectcalico.org requests t
 
 ```bash
 # View the APIService registration that defines the routing rule
+
 kubectl get apiservice v3.projectcalico.org -o yaml
 
 # The caBundle field contains the TLS certificate used to authenticate the Calico API server

@@ -27,6 +27,7 @@ Gather data on current pod density to inform your CIDR planning decisions.
 
 ```bash
 # Check current IP pool block size
+
 calicoctl get ippool -o jsonpath='{range .items[*]}{.metadata.name}{": blockSize="}{.spec.blockSize}{"\n"}{end}'
 
 # Calculate pods per node to understand density

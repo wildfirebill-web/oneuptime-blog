@@ -130,6 +130,7 @@ getIPv4Addresses().forEach(({ interface: iface, ip }) => {
 
 ```bash
 # Check which IP the server is bound to
+
 ss -tlnp | grep 8080
 
 # Or with netstat

@@ -32,6 +32,7 @@ Open a terminal once the desktop loads.
 
 ```bash
 # List all disks and partitions with filesystem info
+
 lsblk -f
 
 # More detailed view

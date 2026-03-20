@@ -20,6 +20,7 @@ An unqualified image name is one that does not include a registry prefix.
 
 ```bash
 # Qualified name: includes the full registry path
+
 podman pull docker.io/library/nginx:latest
 
 # Unqualified name: no registry prefix

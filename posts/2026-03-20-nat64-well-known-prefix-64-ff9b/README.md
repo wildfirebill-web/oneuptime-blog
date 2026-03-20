@@ -12,7 +12,7 @@ The NAT64 Well-Known Prefix `64:ff9b::/96` is defined in RFC 6052. It is used to
 
 ## Address Construction
 
-```
+```text
 64:ff9b::/96 + IPv4 address (32 bits) = IPv6 address
 
 Example:
@@ -55,6 +55,7 @@ def nat64_wkp_to_ipv4(ipv6_str: str) -> str:
     return str(ipaddress.IPv4Address(ipv4_int))
 
 # Tests
+
 print(ipv4_to_nat64_wkp("93.184.216.34"))   # 64:ff9b::5db8:d822
 print(ipv4_to_nat64_wkp("8.8.8.8"))         # 64:ff9b::808:808
 print(nat64_wkp_to_ipv4("64:ff9b::808:808"))# 8.8.8.8

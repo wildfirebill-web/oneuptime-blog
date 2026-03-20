@@ -12,7 +12,7 @@ ESP (Encapsulating Security Payload) is IPsec protocol 50 (Next Header value 50 
 
 ## ESP Header Structure
 
-```
+```text
  0                   1                   2                   3
  0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
 +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
@@ -34,8 +34,8 @@ ESP (Encapsulating Security Payload) is IPsec protocol 50 (Next Header value 50 
 ```
 
 Key points:
-- **SPI + Sequence Number**: Unencrypted — receiver uses SPI to find the SA
-- **IV**: Unencrypted — needed by receiver to decrypt
+- **SPI + Sequence Number**: Unencrypted - receiver uses SPI to find the SA
+- **IV**: Unencrypted - needed by receiver to decrypt
 - **Payload + Padding + Next Header**: Encrypted
 - **ICV**: MAC over SPI, Sequence Number, IV, and Payload
 
@@ -45,10 +45,10 @@ Modern ESP deployments should use AEAD (Authenticated Encryption with Associated
 
 | Algorithm | Key Size | Auth | Notes |
 |-----------|----------|------|-------|
-| AES-GCM-128 | 128-bit | Built-in | Preferred — AEAD |
+| AES-GCM-128 | 128-bit | Built-in | Preferred - AEAD |
 | AES-GCM-256 | 256-bit | Built-in | High-security |
 | ChaCha20-Poly1305 | 256-bit | Built-in | Software-efficient |
-| AES-CBC-256 + HMAC-SHA256 | 256-bit | Separate | Legacy — avoid if possible |
+| AES-CBC-256 + HMAC-SHA256 | 256-bit | Separate | Legacy - avoid if possible |
 
 Avoid:
 - DES, 3DES (too weak)
@@ -57,7 +57,7 @@ Avoid:
 
 ## ESP Transport Mode for IPv6
 
-```
+```text
 Before ESP:
 [IPv6: src=A, dst=B, NH=TCP] [TCP] [Data]
 
@@ -67,6 +67,7 @@ After ESP Transport Mode:
 
 ```bash
 # Linux: Create ESP transport mode SA
+
 ip xfrm state add \
   src 2001:db8:1::1 dst 2001:db8:2::1 \
   proto esp spi 0x100 \
@@ -84,7 +85,7 @@ ip xfrm state add \
 
 ## ESP Tunnel Mode for IPv6
 
-```
+```text
 Before ESP Tunnel Mode:
 Original: [IPv6: src=A, dst=B] [TCP] [Data]
 
@@ -111,7 +112,7 @@ ip xfrm policy add \
 
 When ESP must pass through NAT, NAT-T encapsulates ESP in UDP port 4500:
 
-```
+```text
 Normal ESP: [IPv6] [ESP (protocol 50)] [Encrypted payload]
 NAT-T ESP:  [IPv6] [UDP: dport=4500] [Non-ESP Marker (4 bytes)] [ESP] [Encrypted payload]
 ```
@@ -151,4 +152,4 @@ ip xfrm state list | grep -A5 '2001:db8:2::1' | grep bytes
 
 ## Summary
 
-ESP (Next Header 50) is the primary IPsec protocol for IPv6, providing both confidentiality (encryption) and data integrity. Use AES-GCM (AEAD) for both authentication and encryption in a single pass — preferred over separate AES-CBC + HMAC configurations. Transport mode protects the payload while preserving original IPv6 headers; tunnel mode encapsulates the entire original packet for gateway-to-gateway VPNs. NAT-T (UDP port 4500) enables ESP to traverse NAT devices. Modern deployments use IKEv2 (strongSwan/Libreswan) for automated SA negotiation rather than manual `ip xfrm` commands.
+ESP (Next Header 50) is the primary IPsec protocol for IPv6, providing both confidentiality (encryption) and data integrity. Use AES-GCM (AEAD) for both authentication and encryption in a single pass - preferred over separate AES-CBC + HMAC configurations. Transport mode protects the payload while preserving original IPv6 headers; tunnel mode encapsulates the entire original packet for gateway-to-gateway VPNs. NAT-T (UDP port 4500) enables ESP to traverse NAT devices. Modern deployments use IKEv2 (strongSwan/Libreswan) for automated SA negotiation rather than manual `ip xfrm` commands.

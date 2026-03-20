@@ -81,6 +81,7 @@ Available comparison tests:
 
 ```yaml
 # filter_servers.yml - Filter servers based on properties
+
 - name: Configure servers by role
   hosts: localhost
   vars:

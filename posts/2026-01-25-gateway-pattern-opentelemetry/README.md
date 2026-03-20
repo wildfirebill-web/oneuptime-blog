@@ -59,6 +59,7 @@ The agent collector runs on each node alongside your applications. Keep it light
 
 ```yaml
 # agent-collector-config.yaml
+
 receivers:
   otlp:
     protocols:

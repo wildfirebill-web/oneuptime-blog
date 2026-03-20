@@ -93,6 +93,7 @@ Lumen is Laravel's micro-framework, perfect for building fast microservices. The
 
 ```bash
 # Install Lumen via Composer
+
 composer create-project --prefer-dist laravel/lumen user-service
 
 # Navigate to the project

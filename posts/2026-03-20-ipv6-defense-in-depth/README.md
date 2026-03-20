@@ -8,7 +8,7 @@ Description: Learn how to implement a layered defense-in-depth security model fo
 
 ## Overview
 
-Defense-in-depth for IPv6 applies the same principle as IPv4: no single security control should be the only line of defense. Each layer — physical, network, host, application — must have IPv6-aware security controls. This is especially important during IPv4-to-IPv6 transitions when gaps between layers are common.
+Defense-in-depth for IPv6 applies the same principle as IPv4: no single security control should be the only line of defense. Each layer - physical, network, host, application - must have IPv6-aware security controls. This is especially important during IPv4-to-IPv6 transitions when gaps between layers are common.
 
 ## Defense-in-Depth Model for IPv6
 
@@ -29,6 +29,7 @@ The first layer blocks clearly malicious or invalid IPv6 traffic at the network 
 
 ```bash
 # Block bogon prefixes at ingress
+
 ip6tables -A INPUT -s ::/128 -j DROP
 ip6tables -A INPUT -s ::1/128 -j DROP
 ip6tables -A INPUT -s 2001:db8::/32 -j DROP
@@ -95,7 +96,7 @@ alert ipv6 any any -> $HOME_NET any (
 
 First-hop security protects against Layer 2 IPv6 attacks:
 
-```
+```text
 Controls for access switches:
 - RA Guard: Blocks rogue Router Advertisements
 - DHCPv6 Guard: Blocks rogue DHCPv6 servers
@@ -111,7 +112,7 @@ interface range Gi0/1-24
 
 ## Layer 5: Host Firewall
 
-Every host needs its own IPv6 firewall — don't rely only on network firewalls:
+Every host needs its own IPv6 firewall - don't rely only on network firewalls:
 
 ```bash
 # Minimal host firewall (ip6tables)
@@ -139,10 +140,10 @@ ip6tables -A INPUT -s fd00:mgmt::/48 -p tcp --dport 22 -j ACCEPT
 
 ## Layer 6: Application Security
 
-The innermost layer — application-level security:
+The innermost layer - application-level security:
 
 ```bash
-# Enforce TLS/HTTPS — same requirement for IPv4 and IPv6
+# Enforce TLS/HTTPS - same requirement for IPv4 and IPv6
 # In nginx, listen on both
 listen [::]:443 ssl;   # IPv6
 listen 443 ssl;        # IPv4

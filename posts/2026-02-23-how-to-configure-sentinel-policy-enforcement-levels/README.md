@@ -75,6 +75,7 @@ The primary way to set enforcement levels is in the `sentinel.hcl` file:
 # sentinel.hcl
 
 # Security policies - always enforced
+
 policy "enforce-encryption" {
     source            = "./security/enforce-encryption.sentinel"
     enforcement_level = "hard-mandatory"

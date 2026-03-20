@@ -24,6 +24,7 @@ Linkerd is a lightweight, security-focused service mesh that pairs well with Fla
 
 ```bash
 # Create an EKS cluster
+
 eksctl create cluster \
   --name flagger-linkerd \
   --region us-west-2 \

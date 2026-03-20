@@ -29,6 +29,7 @@ Start by creating a new .NET console application and adding the Cosmos DB NuGet 
 
 ```bash
 # Create a new console application
+
 dotnet new console -n CosmosChangeFeedDemo
 cd CosmosChangeFeedDemo
 

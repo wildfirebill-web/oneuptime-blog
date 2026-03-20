@@ -20,6 +20,7 @@ MTTR is calculated using the formula below. This metric helps you understand you
 
 ```python
 # MTTR (Mean Time To Recovery) Formula
+
 # =====================================
 # Measures average time to restore service after failures
 

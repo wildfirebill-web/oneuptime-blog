@@ -83,6 +83,7 @@ Before deploying the stack, create `prometheus.yml` on the Portainer host:
 
 ```yaml
 # /path/to/stack/prometheus.yml
+
 global:
   scrape_interval: 15s
   evaluation_interval: 15s

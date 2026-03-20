@@ -18,6 +18,7 @@ Relabeling happens before scraping. The `__address__` label contains the target'
 
 ```yaml
 # /etc/prometheus/prometheus.yml
+
 scrape_configs:
   - job_name: 'node_exporter'
     static_configs:
@@ -113,5 +114,5 @@ relabel_configs:
 
 - Use `regex` capture groups with `replacement: '$1'` to extract the IPv4 from `__address__`.
 - `action: keep` filters targets; `action: drop` removes matching targets from scraping.
-- `__address__` is the writable label for the scrape address — modify it in relabeling to change what gets scraped.
+- `__address__` is the writable label for the scrape address - modify it in relabeling to change what gets scraped.
 - Relabeling runs before scraping; `metric_relabel_configs` runs on already-scraped metrics.

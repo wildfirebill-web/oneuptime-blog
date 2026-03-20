@@ -22,6 +22,7 @@ Configure the tail sampling processor in the OpenTelemetry Collector to sample b
 
 ```yaml
 # collector-tail-sampling.yaml
+
 receivers:
   otlp:
     protocols:

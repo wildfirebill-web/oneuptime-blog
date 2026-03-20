@@ -16,6 +16,7 @@ You need an active RHEL for Real Time subscription.
 
 ```bash
 # Verify your subscription includes the RT repository
+
 sudo subscription-manager repos --list | grep rt
 
 # Enable the real-time repository

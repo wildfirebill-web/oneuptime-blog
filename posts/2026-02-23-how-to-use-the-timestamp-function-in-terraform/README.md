@@ -16,6 +16,7 @@ The function takes no arguments and returns the current UTC time:
 
 ```hcl
 # Returns the current UTC time in RFC 3339 format
+
 output "current_time" {
   value = timestamp()
   # Example: "2026-02-23T14:30:05Z"

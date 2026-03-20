@@ -26,6 +26,7 @@ Let's instrument a Python-based SMS gateway that accepts messages over HTTP and 
 
 ```python
 # sms_gateway.py
+
 from opentelemetry import trace, metrics
 from opentelemetry.trace import StatusCode
 import time

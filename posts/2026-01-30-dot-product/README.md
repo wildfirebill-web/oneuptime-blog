@@ -89,6 +89,7 @@ def dot_product_basic(a: list[float], b: list[float]) -> float:
 
 
 # Example usage
+
 query = [0.5, 0.3, 0.8, 0.1]
 document = [0.4, 0.6, 0.2, 0.9]
 

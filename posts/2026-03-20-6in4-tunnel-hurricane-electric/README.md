@@ -14,7 +14,8 @@ Hurricane Electric's Tunnelbroker.net provides free 6in4 tunnels that encapsulat
 
 ```bash
 # 1. Register at https://tunnelbroker.net/ (free)
-# 2. Create a new tunnel — enter your public IPv4 address
+
+# 2. Create a new tunnel - enter your public IPv4 address
 # 3. Note your tunnel details:
 #    Server IPv4: 216.66.88.98       (HE's endpoint)
 #    Server IPv6: 2001:470:1f14:xxx::1/64

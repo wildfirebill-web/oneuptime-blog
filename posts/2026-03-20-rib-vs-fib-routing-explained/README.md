@@ -16,6 +16,7 @@ The RIB contains all routes from all protocols, including non-best paths. It is 
 
 ```bash
 # FRR's RIB (includes all protocols and non-best paths)
+
 vtysh -c "show ip route"
 
 # Show all routes including non-selected ones
@@ -64,11 +65,11 @@ journalctl -u frr | grep -i "install\|kernel\|error"
 
 On hardware routers, the FIB is stored in specialized TCAM (Ternary Content Addressable Memory) for wire-speed lookups:
 
-```
+```text
 RIB (software, full table) --> Best path selection --> FIB (hardware/kernel)
 ```
 
-When the hardware FIB is full (common on low-cost switches with large BGP tables), routes overflow to software forwarding — causing significant performance degradation.
+When the hardware FIB is full (common on low-cost switches with large BGP tables), routes overflow to software forwarding - causing significant performance degradation.
 
 ## FIB Lookup Process
 
@@ -99,4 +100,4 @@ ip monitor route
 
 ## Conclusion
 
-The RIB is the policy database — it stores everything known about routes. The FIB is the operational database — it stores only what's needed for fast packet forwarding. In a healthy network, the best route in the RIB matches what's in the FIB. Discrepancies between the two are important diagnostic signals that point to installation failures, policy conflicts, or resource exhaustion.
+The RIB is the policy database - it stores everything known about routes. The FIB is the operational database - it stores only what's needed for fast packet forwarding. In a healthy network, the best route in the RIB matches what's in the FIB. Discrepancies between the two are important diagnostic signals that point to installation failures, policy conflicts, or resource exhaustion.

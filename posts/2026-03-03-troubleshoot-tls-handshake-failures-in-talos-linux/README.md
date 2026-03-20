@@ -53,6 +53,7 @@ Check that your talosconfig contains valid credentials:
 
 ```bash
 # View your current talosctl configuration
+
 talosctl config info
 
 # Check the path to your talosconfig

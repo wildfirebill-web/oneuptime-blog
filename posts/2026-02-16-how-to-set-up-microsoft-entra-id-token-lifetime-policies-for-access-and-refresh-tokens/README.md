@@ -41,6 +41,7 @@ First, install and connect to Microsoft Graph PowerShell. This script connects w
 
 ```powershell
 # Install the Microsoft Graph module if you do not have it
+
 Install-Module Microsoft.Graph -Scope CurrentUser
 
 # Connect with the required permissions for policy management

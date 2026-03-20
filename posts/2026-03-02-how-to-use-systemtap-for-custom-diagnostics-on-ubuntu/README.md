@@ -21,6 +21,7 @@ SystemTap provides a scripting language for dynamically instrumenting a running 
 
 ```bash
 # Install SystemTap and dependencies
+
 sudo apt update
 sudo apt install -y systemtap systemtap-runtime
 

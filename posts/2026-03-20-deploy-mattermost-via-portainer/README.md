@@ -73,7 +73,7 @@ Open `http://<host>:8065` to complete setup and create the first team.
 
 Configure SMTP for email invites and notifications under **System Console > Environment > SMTP**:
 
-```
+```text
 SMTP Server: smtp.example.com
 SMTP Port:   587
 SMTP Username: no-reply@example.com

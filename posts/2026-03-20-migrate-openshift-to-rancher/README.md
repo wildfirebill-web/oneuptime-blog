@@ -1,4 +1,4 @@
-# How to Migrate from OpenShift to Rancher
+# How to Migrate from OpenShift to Rancher - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -28,6 +28,7 @@ Export all resources from OpenShift:
 
 ```bash
 # Export all namespaces (projects)
+
 oc get projects -o json > projects.json
 
 # Export workloads per namespace
@@ -192,7 +193,7 @@ kubectl get pvc -n production
 
 ## Best Practices
 
-- Address security contexts early — they are the most common source of migration issues.
+- Address security contexts early - they are the most common source of migration issues.
 - Test non-production environments thoroughly before production migration.
 - Use Rancher's Projects and RBAC to replicate OpenShift's Project-level access controls.
 - Consider Tekton or Argo CD as CI/CD replacements for OpenShift Pipelines.
@@ -200,4 +201,4 @@ kubectl get pvc -n production
 
 ## Conclusion
 
-Migrating from OpenShift to Rancher requires addressing OpenShift-specific APIs — particularly Routes, DeploymentConfigs, and SCCs — but the underlying Kubernetes primitives map cleanly. The result is a platform with the same enterprise capabilities, lower licensing costs, and greater community ecosystem support.
+Migrating from OpenShift to Rancher requires addressing OpenShift-specific APIs - particularly Routes, DeploymentConfigs, and SCCs - but the underlying Kubernetes primitives map cleanly. The result is a platform with the same enterprise capabilities, lower licensing costs, and greater community ecosystem support.

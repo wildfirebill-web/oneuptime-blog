@@ -31,6 +31,7 @@ Check the current state with:
 
 ```bash
 # View all GitRepository resources and their status
+
 kubectl get gitrepositories -A
 
 # Get detailed error message

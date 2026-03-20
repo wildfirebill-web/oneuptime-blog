@@ -24,6 +24,7 @@ Here is how to create a managed workbench instance using the Python SDK:
 
 ```python
 # create_workbench.py
+
 # Create a Vertex AI Workbench managed instance
 
 from google.cloud import aiplatform

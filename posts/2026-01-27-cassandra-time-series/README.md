@@ -215,6 +215,7 @@ CREATE TABLE events_hourly (
 
 ```python
 # Python: Calculate hour bucket for inserts and queries
+
 from datetime import datetime, timedelta
 
 def get_hour_bucket(timestamp: datetime) -> datetime:

@@ -16,6 +16,7 @@ The assert module takes a list of conditions in the `that` parameter. All condit
 
 ```yaml
 # Basic assertion examples
+
 ---
 - name: Precondition checks
   hosts: all

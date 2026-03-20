@@ -30,6 +30,7 @@ The most common qdiscs for bandwidth control:
 
 ```bash
 # Show qdiscs on all interfaces
+
 tc qdisc show
 
 # Show qdiscs on a specific interface

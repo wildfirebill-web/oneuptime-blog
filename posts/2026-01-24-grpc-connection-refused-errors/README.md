@@ -69,6 +69,7 @@ flowchart LR
 
 ```bash
 # Check if process is running
+
 ps aux | grep grpc-server
 
 # Check if port is being listened on

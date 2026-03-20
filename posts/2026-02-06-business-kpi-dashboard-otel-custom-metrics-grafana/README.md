@@ -22,6 +22,7 @@ Here is an example in Python that tracks order-related business metrics:
 
 ```python
 # business_metrics.py
+
 from opentelemetry import metrics
 
 # Get the meter for your service

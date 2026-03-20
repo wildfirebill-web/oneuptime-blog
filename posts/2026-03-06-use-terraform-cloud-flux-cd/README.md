@@ -43,6 +43,7 @@ Create a workspace in Terraform Cloud for your infrastructure.
 
 ```hcl
 # terraform-cloud/main.tf
+
 # Configure the Terraform Cloud backend
 terraform {
   cloud {

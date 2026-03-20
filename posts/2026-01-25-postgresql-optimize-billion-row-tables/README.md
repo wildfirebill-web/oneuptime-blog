@@ -282,6 +282,7 @@ ALTER ROLE analyst SET work_mem = '512MB';
 
 ```ini
 # postgresql.conf
+
 max_parallel_workers = 8
 max_parallel_workers_per_gather = 4
 parallel_tuple_cost = 0.01

@@ -32,6 +32,7 @@ For public images, no authentication is needed.
 
 ```yaml
 # imagerepository-ghcr-public.yaml
+
 # Scan a public GHCR image
 apiVersion: image.toolkit.fluxcd.io/v1
 kind: ImageRepository

@@ -18,6 +18,7 @@ The cleanest approach is to terminate TLS at the Ingress controller and proxy HT
 
 ```bash
 # Create a TLS secret from your certificate and key files
+
 kubectl create secret tls portainer-tls \
   --cert=/path/to/portainer.crt \
   --key=/path/to/portainer.key \

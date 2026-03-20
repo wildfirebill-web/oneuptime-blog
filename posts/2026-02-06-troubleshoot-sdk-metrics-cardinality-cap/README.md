@@ -17,6 +17,7 @@ meter = metrics.get_meter("my-service")
 counter = meter.create_counter("http.requests")
 
 # Each unique combination of attributes = one time series
+
 counter.add(1, {"method": "GET", "path": "/users", "status": 200})     # Series 1
 counter.add(1, {"method": "POST", "path": "/users", "status": 201})    # Series 2
 counter.add(1, {"method": "GET", "path": "/orders", "status": 200})    # Series 3

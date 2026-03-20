@@ -30,6 +30,7 @@ The request timeout is the one you usually need to adjust for long-running tasks
 
 ```bash
 # Set the request timeout to 30 minutes (1800 seconds)
+
 gcloud run deploy my-service \
   --image=us-central1-docker.pkg.dev/MY_PROJECT/my-repo/my-app:latest \
   --region=us-central1 \

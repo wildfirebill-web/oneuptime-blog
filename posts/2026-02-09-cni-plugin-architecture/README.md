@@ -62,6 +62,7 @@ When kubelet asks the container runtime to create a pod, the runtime follows thi
 
 ```bash
 # 1. Create network namespace
+
 ip netns add <container-id>
 
 # 2. Execute CNI plugin with ADD command

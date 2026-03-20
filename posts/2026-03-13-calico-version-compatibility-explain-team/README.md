@@ -43,6 +43,7 @@ SREs need to build version compatibility checks into their operational processes
 
 ```bash
 # Add this check to your cluster health runbook
+
 K8S_MINOR=$(kubectl version --short 2>/dev/null | grep Server | grep -o '1\.[0-9]*')
 CALICO_VERSION=$(kubectl get pods -n calico-system -l k8s-app=calico-node \
   -o jsonpath='{.items[0].spec.containers[0].image}' | grep -o 'v[0-9]*\.[0-9]*')

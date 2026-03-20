@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Backup, Safety, Upgrades, Administration, BoltDB
+Tags: Portainer, Backup, Safety, Upgrade, Administration, BoltDB
 
 Description: Learn how to create a point-in-time backup of the Portainer database before performing major changes like upgrades, bulk deletions, or configuration overhauls.
 
@@ -15,6 +15,7 @@ Taking a backup before any major change to Portainer gives you a fast rollback p
 ```bash
 #!/bin/bash
 # Quick backup before any major change
+
 BACKUP_FILE="/tmp/portainer-pre-change-$(date +%Y%m%d-%H%M%S).tar.gz"
 
 # Create backup without stopping Portainer (uses live database)

@@ -99,6 +99,7 @@ When a force push has already caused issues, you need to force ArgoCD to drop it
 
 ```bash
 # Hard refresh the application
+
 argocd app get my-app --hard-refresh
 
 # Or use the CLI to manually refresh

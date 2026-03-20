@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Harvester, Kubernetes, Virtualization, HCI, Security, Cloud-Init
+Tags: Harvester, Kubernetes, Virtualization, HCI, Security, Cloud-init
 
 Description: Learn how to configure secure access credentials for virtual machines in Harvester using cloud-init, SSH keys, and Kubernetes secrets.
 
@@ -25,6 +25,7 @@ The most secure approach for Linux VMs:
 
 ```yaml
 # vm-with-ssh-keys.yaml
+
 apiVersion: kubevirt.io/v1
 kind: VirtualMachine
 metadata:
@@ -320,4 +321,4 @@ EOF
 
 ## Conclusion
 
-Secure credential management is foundational to VM security in Harvester. Using SSH keys stored in Kubernetes Secrets — rather than hardcoded passwords — provides stronger security and easier key rotation. The `accessCredentials` feature with qemu-guest-agent integration is particularly powerful because it allows credential updates without VM restarts. Combine proper credential management with network segmentation and RBAC to create a defense-in-depth security posture for your VM workloads.
+Secure credential management is foundational to VM security in Harvester. Using SSH keys stored in Kubernetes Secrets - rather than hardcoded passwords - provides stronger security and easier key rotation. The `accessCredentials` feature with qemu-guest-agent integration is particularly powerful because it allows credential updates without VM restarts. Combine proper credential management with network segmentation and RBAC to create a defense-in-depth security posture for your VM workloads.

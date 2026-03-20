@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPsec, PSK, Pre-Shared Key, strongSwan, Linux, VPN
+Tags: IPsec, PSK, Pre-Shared Keys, strongSwan, Linux, VPN
 
 Description: Configure IPsec VPN authentication using pre-shared keys (PSK) on Linux with strongSwan, including secure key generation and secrets file management.
 
@@ -12,13 +12,14 @@ Pre-shared keys (PSK) are the simplest authentication method for IPsec. Both sid
 
 ```bash
 # Generate a strong PSK (32+ characters recommended)
+
 openssl rand -base64 32
 # Example output: 7mV8JkXq2nP4bR1hD9cF5wL3yN6tG0sI
 
 # Or use /dev/urandom
 dd if=/dev/urandom bs=32 count=1 2>/dev/null | base64 | tr -d '\n'
 
-# Store it securely — never use weak PSKs
+# Store it securely - never use weak PSKs
 ```
 
 ## Configuring PSK in ipsec.secrets
@@ -30,7 +31,7 @@ The `ipsec.secrets` file holds authentication credentials:
 
 # Format: local_id remote_id : PSK "secret"
 
-# Simple form — any peer can authenticate with this PSK
+# Simple form - any peer can authenticate with this PSK
 %any %any : PSK "your-very-long-random-secret-here"
 
 # Specific peer PSK (more secure)

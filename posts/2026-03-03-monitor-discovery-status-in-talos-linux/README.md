@@ -16,6 +16,7 @@ Talos exposes several resources related to discovery that you can query:
 
 ```bash
 # Discovered members - the list of known cluster members
+
 talosctl get discoveredmembers --nodes <node-ip>
 
 # Cluster identity - the cluster ID used for discovery

@@ -178,6 +178,7 @@ FROM golang:1.21 AS builder
 # ... build your app ...
 
 # Download grpc-health-probe
+
 RUN GRPC_HEALTH_PROBE_VERSION=v0.4.22 && \
     wget -qO/bin/grpc_health_probe \
     https://github.com/grpc-ecosystem/grpc-health-probe/releases/download/${GRPC_HEALTH_PROBE_VERSION}/grpc_health_probe-linux-amd64 && \

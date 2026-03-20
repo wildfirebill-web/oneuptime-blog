@@ -66,6 +66,7 @@ The Pub/Sub service account needs permission to write to your BigQuery table. Th
 
 ```bash
 # Get your project number
+
 PROJECT_NUMBER=$(gcloud projects describe my-project --format="value(projectNumber)")
 
 # Grant BigQuery data editor role to the Pub/Sub service account

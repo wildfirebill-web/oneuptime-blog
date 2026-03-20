@@ -18,6 +18,7 @@ The simplest restart uses the `service` module with `state: restarted`.
 
 ```yaml
 # Restart nginx
+
 - name: Restart nginx
   ansible.builtin.service:
     name: nginx

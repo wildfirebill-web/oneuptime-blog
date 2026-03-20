@@ -30,6 +30,7 @@ In Portainer's Kubernetes environment, deploy ESO using Helm or the manifest.
 
 ```bash
 # Add the External Secrets Helm repository
+
 helm repo add external-secrets https://charts.external-secrets.io
 helm repo update
 
@@ -53,7 +54,7 @@ Or deploy via Portainer's Helm interface:
 A `SecretStore` tells ESO how to authenticate with your external secrets provider.
 
 ```yaml
-# aws-secret-store.yaml — connect to AWS Secrets Manager
+# aws-secret-store.yaml - connect to AWS Secrets Manager
 apiVersion: external-secrets.io/v1beta1
 kind: SecretStore
 metadata:
@@ -90,7 +91,7 @@ kubectl create secret generic aws-credentials \
 An `ExternalSecret` tells ESO which secret to fetch and what Kubernetes secret to create.
 
 ```yaml
-# app-external-secret.yaml — sync secrets from AWS to Kubernetes
+# app-external-secret.yaml - sync secrets from AWS to Kubernetes
 apiVersion: external-secrets.io/v1beta1
 kind: ExternalSecret
 metadata:
@@ -132,7 +133,7 @@ kubectl describe externalsecret myapp-secrets
 Deploy an application via Portainer that reads the synced Kubernetes secret.
 
 ```yaml
-# app-deployment.yaml — deployed via Portainer stack
+# app-deployment.yaml - deployed via Portainer stack
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -170,7 +171,7 @@ spec:
 ## Step 5: Monitor Secret Sync in Portainer
 
 In Portainer's Kubernetes view:
-- **Namespaces > default > Secrets** — shows the synced `myapp-k8s-secret`
+- **Namespaces > default > Secrets** - shows the synced `myapp-k8s-secret`
 - The ESO refreshes the secret based on `refreshInterval`
 - For immediate rotation: `kubectl annotate externalsecret myapp-secrets force-sync=$(date +%s) --overwrite`
 

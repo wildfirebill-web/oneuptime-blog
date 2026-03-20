@@ -87,6 +87,7 @@ For targeted debugging, set only the relevant loggers to debug:
 
 ```bash
 # Debug HTTP routing
+
 istioctl proxy-config log productpage-v1-6b746f74dc-9rlmh.bookinfo \
   --level http:debug,router:debug,connection:debug
 

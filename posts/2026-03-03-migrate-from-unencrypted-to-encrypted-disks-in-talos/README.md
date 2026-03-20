@@ -39,6 +39,7 @@ First, create the machine configuration with encryption enabled. Start with your
 
 ```yaml
 # worker-encrypted.yaml
+
 machine:
   type: worker
   systemDiskEncryption:

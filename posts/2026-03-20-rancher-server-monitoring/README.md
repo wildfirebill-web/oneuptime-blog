@@ -1,4 +1,4 @@
-# How to Monitor Rancher Server Resource Usage
+# How to Monitor Rancher Server Resource Usage - Monitoring
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -20,6 +20,7 @@ Monitoring Rancher server resource usage is essential for maintaining reliable c
 
 ```bash
 # Rancher exposes Prometheus metrics at /metrics
+
 # Verify metrics are accessible
 curl -sk \
   -H "Authorization: Bearer $TOKEN" \

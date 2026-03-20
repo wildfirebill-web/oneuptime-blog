@@ -18,6 +18,7 @@ AWS Budgets are the most straightforward way to track and alert on cloud spendin
 
 ```hcl
 # Overall monthly budget
+
 resource "aws_budgets_budget" "monthly_total" {
   name              = "total-monthly-budget"
   budget_type       = "COST"

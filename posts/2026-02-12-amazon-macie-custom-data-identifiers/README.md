@@ -43,6 +43,7 @@ This creates a custom identifier for employee IDs matching the pattern EMP-XXXXX
 
 ```bash
 # Create custom data identifier for employee IDs
+
 aws macie2 create-custom-data-identifier \
   --name "InternalEmployeeID" \
   --description "Detects internal employee identifiers in format EMP-XXXXXX" \

@@ -27,6 +27,7 @@ The versionlock plugin is the cleanest way to pin packages to specific versions.
 
 ```bash
 # Install the versionlock plugin
+
 sudo dnf install -y python3-dnf-plugin-versionlock
 ```
 

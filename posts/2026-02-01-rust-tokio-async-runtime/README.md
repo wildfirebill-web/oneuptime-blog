@@ -30,6 +30,7 @@ First, add Tokio to your project. The "full" feature flag enables all components
 
 ```toml
 # Cargo.toml
+
 [dependencies]
 tokio = { version = "1", features = ["full"] }
 ```

@@ -27,6 +27,7 @@ Create two instance templates - one for the current version and one for the cana
 
 ```bash
 # Create the stable version template (v1)
+
 gcloud compute instance-templates create app-template-v1 \
     --machine-type=e2-medium \
     --image-family=my-app-v1 \

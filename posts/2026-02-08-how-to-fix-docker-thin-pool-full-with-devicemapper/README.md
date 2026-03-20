@@ -20,6 +20,7 @@ Check your current thin pool status:
 
 ```bash
 # View Docker's storage driver and data usage
+
 docker info | grep -A 20 "Storage Driver"
 ```
 

@@ -36,6 +36,7 @@ Counters are monotonically increasing values. They only go up (or reset to zero 
 
 ```python
 # counters.py
+
 # Track total events with Prometheus counters
 
 from prometheus_client import Counter

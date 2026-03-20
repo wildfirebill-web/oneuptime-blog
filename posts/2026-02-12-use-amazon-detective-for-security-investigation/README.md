@@ -41,6 +41,7 @@ Detective needs to be enabled and given time to build its behavior graph. The gr
 
 ```bash
 # Enable Amazon Detective
+
 aws detective create-graph \
     --tags '{"Environment": "production"}'
 

@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, for_each, toset, Lists, HCL
+Tags: OpenTofu, Terraform, for_each, Toset, Lists, HCL
 
 Description: Learn how to use toset with for_each in OpenTofu to create resources from a list of unique string values with stable, name-based identities.
 
 ## Introduction
 
-`for_each` requires a map or set — not a list. The `toset()` function converts a list to a set of unique strings, enabling `for_each` iteration over lists while giving each resource a stable string identity (the element value itself) rather than a numeric index.
+`for_each` requires a map or set - not a list. The `toset()` function converts a list to a set of unique strings, enabling `for_each` iteration over lists while giving each resource a stable string identity (the element value itself) rather than a numeric index.
 
 ## Basic toset Usage
 
@@ -19,6 +19,7 @@ variable "environments" {
 }
 
 # Convert list to set so for_each has stable string keys
+
 resource "aws_s3_bucket" "env_config" {
   for_each = toset(var.environments)
 
@@ -144,4 +145,4 @@ output "env_bucket_list" {
 
 ## Conclusion
 
-`toset` bridges the gap between lists (which users naturally provide as input) and the set/map that `for_each` requires. The resulting resources use the string element value as their identity, making them stable against list reordering. Remember that sets are unordered and deduplicated — if element order matters, use a map instead.
+`toset` bridges the gap between lists (which users naturally provide as input) and the set/map that `for_each` requires. The resulting resources use the string element value as their identity, making them stable against list reordering. Remember that sets are unordered and deduplicated - if element order matters, use a map instead.

@@ -28,6 +28,7 @@ The workspace-level retention setting applies to all tables by default. You can 
 
 ```bash
 # Set workspace-level retention to 90 days
+
 az monitor log-analytics workspace update \
   --resource-group rg-monitoring \
   --workspace-name law-central \

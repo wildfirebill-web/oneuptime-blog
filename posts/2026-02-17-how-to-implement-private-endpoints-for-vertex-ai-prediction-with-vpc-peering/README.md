@@ -43,6 +43,7 @@ These commands configure the VPC peering:
 
 ```bash
 # Reserve an IP range for Google's service network
+
 gcloud compute addresses create vertex-ai-range \
     --global \
     --purpose=VPC_PEERING \

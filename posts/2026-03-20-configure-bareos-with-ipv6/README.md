@@ -12,7 +12,7 @@ Bareos (Backup Archiving Recovery Open Sourced) is a fork of Bacula with modern 
 
 ## Bareos Architecture Overview
 
-```
+```text
 bareos-dir (Director)    bareos-sd (Storage)    bareos-fd (File Daemon)
 Port 9101                Port 9103              Port 9102
 Manages jobs             Stores backups         Runs on clients
@@ -22,6 +22,7 @@ Manages jobs             Stores backups         Runs on clients
 
 ```bash
 # RHEL/CentOS
+
 sudo dnf install bareos bareos-director bareos-storage bareos-filedaemon -y
 
 # Ubuntu/Debian

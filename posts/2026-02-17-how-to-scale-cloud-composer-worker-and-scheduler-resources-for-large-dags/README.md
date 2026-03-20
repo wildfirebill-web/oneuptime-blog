@@ -28,6 +28,7 @@ Before scaling, figure out what is actually the bottleneck:
 
 ```bash
 # Check environment health and resource usage
+
 gcloud composer environments describe my-composer-env \
   --location=us-central1 \
   --format="yaml(config.workloadsConfig)"

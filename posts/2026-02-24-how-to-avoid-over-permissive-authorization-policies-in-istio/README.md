@@ -20,6 +20,7 @@ An authorization policy is over-permissive when it grants more access than a ser
 
 ```yaml
 # This is effectively no security at all
+
 apiVersion: security.istio.io/v1
 kind: AuthorizationPolicy
 metadata:

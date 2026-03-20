@@ -24,6 +24,7 @@ Containers run as systemd services under `machine.slice` and get full systemd in
 
 ```bash
 # Install systemd-container (includes machinectl and nspawn)
+
 sudo apt update
 sudo apt install systemd-container
 
@@ -215,7 +216,7 @@ VirtualEthernet=yes
 # Private=no
 ```
 
-## Resource Limits for Containers
+Resource Limits for Containers
 
 Apply resource limits through systemd's cgroup integration:
 

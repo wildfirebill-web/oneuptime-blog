@@ -42,6 +42,7 @@ graph TD
 
 ```bash
 # Check actual hostname
+
 hostname -f
 
 # Verify what MongoDB sees

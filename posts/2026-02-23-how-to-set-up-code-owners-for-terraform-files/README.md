@@ -28,6 +28,7 @@ Assign ownership based on the type of infrastructure:
 
 ```text
 # Networking team owns all VPC, subnet, and routing configs
+
 /modules/networking/           @org/networking-team
 /environments/*/networking.tf  @org/networking-team
 

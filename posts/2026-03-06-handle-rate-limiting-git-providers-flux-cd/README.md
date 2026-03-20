@@ -28,6 +28,7 @@ Flux CD controllers continuously poll Git repositories for changes, and each pol
 
 ```bash
 # Look for rate-limit related errors in Flux events
+
 kubectl get events -n flux-system --field-selector reason=ReconciliationFailed
 
 # Check source-controller logs for HTTP 429 responses

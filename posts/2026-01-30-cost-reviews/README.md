@@ -55,6 +55,7 @@ Define each review tier with clear ownership and scope.
 
 ```yaml
 # config/cost-review-schedule.yaml
+
 # Cost review schedule configuration
 
 review_tiers:

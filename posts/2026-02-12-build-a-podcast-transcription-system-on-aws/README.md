@@ -35,6 +35,7 @@ When a podcast episode is uploaded to S3, a Lambda function kicks off the transc
 
 ```yaml
 # CloudFormation for podcast transcription infrastructure
+
 AWSTemplateFormatVersion: '2010-09-09'
 Resources:
   PodcastBucket:

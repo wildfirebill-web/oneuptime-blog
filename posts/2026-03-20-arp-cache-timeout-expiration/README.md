@@ -10,7 +10,7 @@ Description: Learn how ARP cache entries expire on Linux, how timeouts are confi
 
 ARP cache entries do not last forever. Linux manages the lifecycle through several states:
 
-```
+```text
 INCOMPLETE → REACHABLE → STALE → DELAY → PROBE → FAILED
 ```
 
@@ -26,6 +26,7 @@ INCOMPLETE → REACHABLE → STALE → DELAY → PROBE → FAILED
 
 ```bash
 # View ARP cache timing parameters
+
 sysctl -a | grep neigh.default
 
 # Key parameters:

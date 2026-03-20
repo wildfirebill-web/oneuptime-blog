@@ -32,6 +32,7 @@ Verify network isolation:
 
 ```bash
 # On cluster-vpc-a, try to reach a pod IP in cluster-vpc-b (should fail)
+
 kubectl --context=cluster-vpc-a run test --image=busybox --rm -it -- ping <pod-ip-in-cluster-vpc-b>
 ```
 

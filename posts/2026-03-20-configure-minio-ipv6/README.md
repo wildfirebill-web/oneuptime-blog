@@ -10,6 +10,7 @@ Description: Learn how to configure MinIO object storage server to listen on IPv
 
 ```bash
 # Start MinIO on specific IPv6 address
+
 MINIO_ROOT_USER=minioadmin MINIO_ROOT_PASSWORD=minioadmin \
 minio server --address "[2001:db8::10]:9000" \
     --console-address "[2001:db8::10]:9001" \

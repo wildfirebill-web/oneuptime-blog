@@ -26,6 +26,7 @@ Create secondary subnets for pods with larger CIDR ranges:
 
 ```bash
 # Add secondary CIDR block to VPC
+
 aws ec2 associate-vpc-cidr-block \
   --vpc-id vpc-12345678 \
   --cidr-block 100.64.0.0/16 \

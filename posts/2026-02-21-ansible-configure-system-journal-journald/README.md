@@ -29,6 +29,7 @@ This playbook configures journald for persistent log storage with size limits:
 
 ```yaml
 # configure-journald.yml - Set up systemd-journald
+
 ---
 - name: Configure systemd-journald
   hosts: all

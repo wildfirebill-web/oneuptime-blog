@@ -22,6 +22,7 @@ For Kubernetes 1.30+, ValidatingAdmissionPolicy is enabled by default. For earli
 
 ```bash
 # Check if the API is available
+
 kubectl api-resources | grep validatingadmissionpolicies
 
 # If using kubeadm, add to the API server configuration

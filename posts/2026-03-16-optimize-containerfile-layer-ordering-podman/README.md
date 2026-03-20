@@ -39,6 +39,7 @@ FROM node:20-alpine
 WORKDIR /app
 
 # Copies everything, including source code
+
 COPY . .
 
 # This reinstalls all deps every time any file changes

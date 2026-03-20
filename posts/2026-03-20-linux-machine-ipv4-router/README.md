@@ -8,7 +8,7 @@ Description: Turn a Linux machine into a fully functional IPv4 router with IP fo
 
 ## Introduction
 
-A standard Linux machine can act as a router for IPv4 traffic with minimal configuration. By enabling IP forwarding in the kernel and configuring routes between interfaces, you can route traffic between subnets — useful for home labs, cloud VPCs, and edge routing scenarios.
+A standard Linux machine can act as a router for IPv4 traffic with minimal configuration. By enabling IP forwarding in the kernel and configuring routes between interfaces, you can route traffic between subnets - useful for home labs, cloud VPCs, and edge routing scenarios.
 
 ## Prerequisites
 
@@ -22,6 +22,7 @@ By default, the Linux kernel drops packets that arrive on one interface and are 
 
 ```bash
 # Enable immediately (does not survive reboot)
+
 sysctl -w net.ipv4.ip_forward=1
 
 # Make permanent across reboots

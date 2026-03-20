@@ -30,6 +30,7 @@ Verify the cluster and Calico are fully healthy before beginning.
 
 ```bash
 # Check EKS cluster status
+
 aws eks describe-cluster \
   --name <cluster-name> \
   --region <region> \

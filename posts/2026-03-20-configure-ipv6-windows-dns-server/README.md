@@ -4,12 +4,13 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: IPv6, Windows Server, DNS, AAAA Records, PowerShell
 
-Description: Learn how to configure Windows DNS Server to handle IPv6 — including making DNS listen on IPv6 addresses, adding AAAA records, and configuring reverse DNS zones for IPv6.
+Description: Learn how to configure Windows DNS Server to handle IPv6 - including making DNS listen on IPv6 addresses, adding AAAA records, and configuring reverse DNS zones for IPv6.
 
 ## Make DNS Server Listen on IPv6
 
 ```powershell
 # Windows DNS Server listens on all addresses by default including IPv6
+
 # Verify DNS is listening on IPv6
 Get-DnsServerSetting | Select-Object ListeningIPAddress
 
@@ -48,7 +49,7 @@ Remove-DnsServerResourceRecord `
 
 ## Add AAAA Records via DNS Manager GUI
 
-```
+```text
 Steps:
 1. Open DNS Manager (dnsmgmt.msc)
 

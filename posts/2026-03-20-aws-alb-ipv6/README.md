@@ -14,6 +14,7 @@ AWS Application Load Balancers support IPv6 through a "dualstack" IP address typ
 
 ```bash
 # Create ALB with dualstack (IPv4 + IPv6) mode
+
 aws elbv2 create-load-balancer \
     --name my-dualstack-alb \
     --subnets subnet-pub-a subnet-pub-b \
@@ -167,4 +168,4 @@ curl -H "Host: www.example.com" "https://[${IPV6_ADDR}]/"
 
 ## Conclusion
 
-ALB dualstack mode (`ip_address_type = "dualstack"`) creates DNS records with both A and AAAA entries, enabling IPv6 clients to connect while maintaining full IPv4 support. The ALB handles IPv6 termination and can forward to IPv4-only backends, making it an effective IPv6 gateway for existing IPv4 workloads. Ensure the ALB's security group includes IPv6 rules for both HTTP (80) and HTTPS (443) — these are separate from IPv4 rules. Route53 ALIAS records for ALBs automatically include both address families.
+ALB dualstack mode (`ip_address_type = "dualstack"`) creates DNS records with both A and AAAA entries, enabling IPv6 clients to connect while maintaining full IPv4 support. The ALB handles IPv6 termination and can forward to IPv4-only backends, making it an effective IPv6 gateway for existing IPv4 workloads. Ensure the ALB's security group includes IPv6 rules for both HTTP (80) and HTTPS (443) - these are separate from IPv4 rules. Route53 ALIAS records for ALBs automatically include both address families.

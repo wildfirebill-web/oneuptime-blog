@@ -24,6 +24,7 @@ class User:
     email: str
 
 # This works even though age should be an int
+
 user = User(name="Alice", age="not a number", email="invalid")
 print(user)  # User(name='Alice', age='not a number', email='invalid')
 ```

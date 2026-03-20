@@ -14,6 +14,7 @@ RHEL virtualization with KVM has specific support boundaries for guest operating
 
 ```bash
 # Validate your host meets virtualization requirements
+
 sudo virt-host-validate
 
 # Check the KVM and libvirt versions
@@ -21,7 +22,7 @@ rpm -q qemu-kvm libvirt
 virsh version
 ```
 
-## Resource Maximums (RHEL 9)
+Resource Maximums (RHEL 9)
 
 Key resource limits for KVM on RHEL 9:
 

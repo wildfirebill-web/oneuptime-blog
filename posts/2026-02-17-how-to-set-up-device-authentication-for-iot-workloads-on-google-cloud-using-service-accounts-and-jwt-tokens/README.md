@@ -36,6 +36,7 @@ Create a service account with minimal permissions that devices will use:
 
 ```bash
 # Create a service account for IoT devices
+
 gcloud iam service-accounts create iot-devices \
   --display-name="IoT Device Service Account"
 

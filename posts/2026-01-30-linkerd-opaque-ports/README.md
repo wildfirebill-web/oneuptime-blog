@@ -74,6 +74,7 @@ The most common approach is to annotate individual pods or deployments. This con
 
 ```yaml
 # Deployment with opaque port annotations for database connections
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

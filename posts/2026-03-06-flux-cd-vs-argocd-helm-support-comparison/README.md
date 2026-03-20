@@ -50,6 +50,7 @@ Flux CD separates the chart source definition from the release configuration, pr
 
 ```yaml
 # Define the Helm repository source
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

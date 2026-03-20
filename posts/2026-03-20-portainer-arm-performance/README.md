@@ -1,4 +1,4 @@
-# How to Optimize Portainer Performance on ARM Devices
+# How to Optimize Portainer Performance on ARM Devices - Part 3
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -51,6 +51,7 @@ Key settings explained:
 
 ```bash
 # Disable swap (if using SSD; enable if using SD card with limited RAM)
+
 sudo systemctl disable dphys-swapfile
 
 # Or configure zram swap (faster than disk swap on ARM)

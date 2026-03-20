@@ -38,6 +38,7 @@ On a machine with internet access, download the ArgoCD installation manifests.
 
 ```bash
 # Download the specific version you want to install
+
 ARGOCD_VERSION=v2.13.3
 
 # Download the install manifest

@@ -41,6 +41,7 @@ The enterprise-scale module creates the foundation of your Azure environment:
 
 ```hcl
 # versions.tf
+
 terraform {
   required_version = ">= 1.5.0"
 

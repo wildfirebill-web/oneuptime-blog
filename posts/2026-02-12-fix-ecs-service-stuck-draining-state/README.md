@@ -49,6 +49,7 @@ Check your target group's deregistration delay:
 
 ```bash
 # Check the deregistration delay setting
+
 aws elbv2 describe-target-group-attributes \
     --target-group-arn arn:aws:elasticloadbalancing:us-east-1:123456789012:targetgroup/my-tg/abc123 \
     --query 'Attributes[?Key==`deregistration_delay.timeout_seconds`]'

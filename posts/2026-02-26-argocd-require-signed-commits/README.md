@@ -30,6 +30,7 @@ Every person and system that will commit changes needs a GPG key:
 
 ```bash
 # For each developer
+
 gpg --full-generate-key
 # Choose: RSA and RSA, 4096 bits, expiry of 1-2 years
 

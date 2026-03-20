@@ -32,6 +32,7 @@ from opentelemetry.exporter.otlp.proto.grpc.trace_exporter import OTLPSpanExport
 from opentelemetry.sdk.resources import Resource
 
 # Create a resource that identifies this service
+
 resource = Resource.create({
     "service.name": "order-event-producer",
     "service.version": "1.0.0"

@@ -35,6 +35,7 @@ If you have a Gmail account or Google Workspace account, you can use it as a rel
 
 ```bash
 # Install SASL authentication libraries
+
 sudo apt install libsasl2-modules -y
 
 # Edit the Postfix main configuration

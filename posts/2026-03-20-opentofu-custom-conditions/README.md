@@ -11,9 +11,9 @@ Description: Learn how to use custom conditions including validation rules, prec
 Custom conditions in OpenTofu allow you to enforce rules and constraints directly in your infrastructure code. They help catch configuration errors early, validate inputs, and ensure outputs meet expectations before resources are created or after they are provisioned.
 
 OpenTofu supports three types of custom conditions:
-- **Variable validation** — validate input variable values
-- **Preconditions** — assert conditions before a resource or data source is created
-- **Postconditions** — assert conditions after a resource or data source is created
+- **Variable validation** - validate input variable values
+- **Preconditions** - assert conditions before a resource or data source is created
+- **Postconditions** - assert conditions after a resource or data source is created
 
 ## Variable Validation
 
@@ -143,11 +143,11 @@ output "db_endpoint" {
 
 ## Step-by-Step Usage
 
-1. **Identify the rule** — decide whether the rule is about input (variable validation), resource precondition, or output postcondition.
-2. **Write the condition expression** — use any OpenTofu expression that evaluates to `true` or `false`.
-3. **Write a clear error message** — include dynamic values using `${...}` to help diagnose failures.
-4. **Run `tofu validate`** — catches syntax errors before applying.
-5. **Run `tofu plan`** — conditions are evaluated during the plan phase.
+1. **Identify the rule** - decide whether the rule is about input (variable validation), resource precondition, or output postcondition.
+2. **Write the condition expression** - use any OpenTofu expression that evaluates to `true` or `false`.
+3. **Write a clear error message** - include dynamic values using `${...}` to help diagnose failures.
+4. **Run `tofu validate`** - catches syntax errors before applying.
+5. **Run `tofu plan`** - conditions are evaluated during the plan phase.
 
 ## Best Practices
 

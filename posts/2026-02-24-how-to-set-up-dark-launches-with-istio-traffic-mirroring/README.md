@@ -169,6 +169,7 @@ The whole point of dark launching is to observe how the new version behaves. Che
 
 ```bash
 # Check v2 pod logs for errors
+
 kubectl logs -l app=payment-service,version=v2 -n default --tail=100
 
 # Check Envoy proxy logs for the mirror traffic

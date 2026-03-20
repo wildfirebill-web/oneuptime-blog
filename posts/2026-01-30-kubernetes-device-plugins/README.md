@@ -871,6 +871,7 @@ Device plugins should run as DaemonSets to ensure one instance per node.
 
 ```yaml
 # deploy/daemonset.yaml
+
 apiVersion: apps/v1
 kind: DaemonSet
 metadata:

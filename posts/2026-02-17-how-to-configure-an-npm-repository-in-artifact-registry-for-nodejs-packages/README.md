@@ -18,6 +18,7 @@ Start by enabling the API and creating the repository:
 
 ```bash
 # Enable Artifact Registry API
+
 gcloud services enable artifactregistry.googleapis.com --project=my-project
 
 # Create an npm repository

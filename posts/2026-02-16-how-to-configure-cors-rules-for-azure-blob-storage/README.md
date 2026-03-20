@@ -22,6 +22,7 @@ CORS only affects browser-based requests. Server-side code, CLI tools, and SDKs 
 
 ```bash
 # Add a CORS rule to the blob service
+
 # This rule allows GET and PUT requests from a specific origin
 az storage cors add \
   --account-name mystorageaccount \

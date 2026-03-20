@@ -30,6 +30,7 @@ Kubewarden's Policy Server exposes metrics on port 8080 by default. Create a Ser
 
 ```yaml
 # kubewarden-servicemonitor.yaml
+
 apiVersion: monitoring.coreos.com/v1
 kind: ServiceMonitor
 metadata:
@@ -164,6 +165,6 @@ kubectl get policyreport -A -o json | \
 
 ## Best Practices
 
-- Alert on error-level decisions — a policy returning `error` means it could not evaluate the admission request.
-- Monitor for sudden spikes in deny rate — this could indicate a new policy blocking legitimate workloads.
+- Alert on error-level decisions - a policy returning `error` means it could not evaluate the admission request.
+- Monitor for sudden spikes in deny rate - this could indicate a new policy blocking legitimate workloads.
 - Use the Audit Scanner to identify existing resources that violate newly added policies before enforcing them.

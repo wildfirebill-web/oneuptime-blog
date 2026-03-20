@@ -57,6 +57,7 @@ If your application logs include IP addresses (like ALB access logs), this rule 
 
 ```bash
 # Create a rule to find top IP addresses by request count
+
 aws cloudwatch put-insight-rule \
   --rule-name "TopIPAddresses" \
   --rule-state "ENABLED" \

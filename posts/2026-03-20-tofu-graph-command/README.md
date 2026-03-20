@@ -4,16 +4,17 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: OpenTofu, Graph Command, Debugging, Visualization, Infrastructure as Code
 
-Description: Learn how to use the `tofu graph` command to visualize resource dependencies — generating DOT format graphs that reveal apply order, circular dependencies, and module relationships.
+Description: Learn how to use the `tofu graph` command to visualize resource dependencies - generating DOT format graphs that reveal apply order, circular dependencies, and module relationships.
 
 ## Introduction
 
-`tofu graph` outputs a DOT-format representation of the resource dependency graph. When rendered with Graphviz, it becomes a visual map of your infrastructure — showing which resources depend on which, in what order they'll be created, and where cycles exist.
+`tofu graph` outputs a DOT-format representation of the resource dependency graph. When rendered with Graphviz, it becomes a visual map of your infrastructure - showing which resources depend on which, in what order they'll be created, and where cycles exist.
 
 ## Basic Usage
 
 ```bash
 # Generate DOT format output
+
 tofu graph
 
 # Pipe directly to Graphviz for PNG output

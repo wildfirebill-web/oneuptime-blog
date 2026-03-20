@@ -80,6 +80,7 @@ The Host header in the request must match the hosts in both the Gateway and Virt
 
 ```bash
 # This might not match because the Host header is the IP
+
 curl http://34.120.1.100/api/data
 
 # This sets the correct Host header

@@ -49,6 +49,7 @@ Always verify an IP is truly orphaned before releasing it. Releasing an IP that 
 
 ```bash
 # Check if any pod is using the IP
+
 kubectl get pods -A -o wide | grep "10.244.1.15"
 
 # Check IPAM allocation details

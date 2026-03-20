@@ -22,6 +22,7 @@ Validate your TLS configuration:
 
 ```bash
 # Check certificate expiration
+
 openssl x509 -in /etc/pki/tls/certs/server.crt -noout -dates
 
 # Verify certificate chain

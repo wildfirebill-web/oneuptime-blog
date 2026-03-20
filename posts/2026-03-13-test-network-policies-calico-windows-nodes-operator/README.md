@@ -99,6 +99,7 @@ kubectl apply -f policies.yaml
 
 ```bash
 # Should succeed
+
 kubectl exec -n win-policy-test linux-client -- wget -qO- --timeout=10 http://$WIN_IP
 
 # Deploy a denied client and test

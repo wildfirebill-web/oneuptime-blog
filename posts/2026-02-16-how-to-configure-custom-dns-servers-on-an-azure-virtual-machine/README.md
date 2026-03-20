@@ -29,6 +29,7 @@ This is the most common approach and affects all VMs in the VNet:
 
 ```bash
 # Set custom DNS servers on the VNet
+
 az network vnet update \
   --resource-group myResourceGroup \
   --name myVNet \

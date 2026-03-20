@@ -16,6 +16,7 @@ Sort by specifying a JSONPath expression:
 
 ```bash
 # Sort pods by creation timestamp (age)
+
 kubectl get pods --sort-by=.metadata.creationTimestamp
 
 # Sort nodes by name

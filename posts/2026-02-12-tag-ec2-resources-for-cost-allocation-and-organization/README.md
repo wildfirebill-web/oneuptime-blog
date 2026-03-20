@@ -45,6 +45,7 @@ The best time to tag is at creation. Here's how to tag instances at launch:
 
 ```bash
 # Launch an instance with a comprehensive tag set
+
 aws ec2 run-instances \
   --image-id ami-0abc123 \
   --instance-type m5.large \

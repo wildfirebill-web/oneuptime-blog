@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: macOS, IPv4, Networking, Network Configuration, Static IP, sysadmin
+Tags: macOS, IPv4, Networking, Network Configuration, Static IP, Sysadmin
 
 Description: IPv4 addresses on macOS can be configured through System Settings, the networksetup command-line tool, or temporary assignments with the ifconfig command.
 
@@ -25,6 +25,7 @@ Description: IPv4 addresses on macOS can be configured through System Settings, 
 
 ```bash
 # List all network services
+
 networksetup -listallnetworkservices
 
 # Assign a static IP to "Wi-Fi" (replace with your service name)

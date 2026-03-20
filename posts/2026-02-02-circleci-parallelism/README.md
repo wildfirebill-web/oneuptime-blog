@@ -41,6 +41,7 @@ The following configuration demonstrates a basic parallel test setup where the t
 
 ```yaml
 # .circleci/config.yml
+
 # Version 2.1 provides access to parallelism features and orbs
 version: 2.1
 
@@ -775,7 +776,7 @@ flowchart TB
 
 Always use timing-based splitting when possible and ensure you store test results to build accurate timing data.
 
-### Resource Contention
+Resource Contention
 
 Running too many parallel containers can exhaust shared resources like database connections or API rate limits.
 

@@ -178,6 +178,7 @@ Schema directives let you define authorization rules right in your schema defini
 
 ```graphql
 # schema.graphql
+
 directive @auth on FIELD_DEFINITION
 directive @hasRole(role: String!) on FIELD_DEFINITION
 

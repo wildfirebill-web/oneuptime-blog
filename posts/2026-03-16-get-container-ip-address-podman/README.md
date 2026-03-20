@@ -20,6 +20,7 @@ The simplest command to get a container's IP address:
 
 ```bash
 # Start a test container
+
 podman run -d --name my-app nginx:latest
 
 # Get the IP address

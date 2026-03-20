@@ -80,6 +80,7 @@ Update the Azure AD SAML configuration with these values:
 
 ```text
 # Values to copy from IAM Identity Center to Azure AD
+
 ACS URL:    https://us-east-1.signin.aws.amazon.com/saml (from Identity Center)
 Issuer:     https://us-east-1.signin.aws.amazon.com/saml (from Identity Center)
 ```

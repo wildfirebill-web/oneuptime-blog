@@ -43,6 +43,7 @@ On each K3s node in all clusters:
 
 ```bash
 # Ubuntu/Debian
+
 sudo apt update
 sudo apt install wireguard wireguard-tools -y
 

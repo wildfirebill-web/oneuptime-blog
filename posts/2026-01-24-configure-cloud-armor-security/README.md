@@ -40,6 +40,7 @@ flowchart LR
 
 ```bash
 # Create a new security policy
+
 gcloud compute security-policies create my-security-policy \
     --description="Security policy for production application"
 

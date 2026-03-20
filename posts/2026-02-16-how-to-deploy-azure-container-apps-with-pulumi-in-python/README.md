@@ -43,6 +43,7 @@ Create a new Pulumi Python project:
 
 ```bash
 # Create a new Pulumi project with the Azure Native provider
+
 mkdir container-apps && cd container-apps
 pulumi new azure-python
 

@@ -30,6 +30,7 @@ For local development, the credentials file is the easiest option.
 
 ```bash
 # Configure credentials
+
 aws configure
 ```
 

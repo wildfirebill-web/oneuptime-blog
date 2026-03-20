@@ -26,6 +26,7 @@ Before adding any scaling policies, you need to register your ECS service as a s
 
 ```bash
 # Register the ECS service as a scalable target
+
 aws application-autoscaling register-scalable-target \
   --service-namespace ecs \
   --resource-id service/my-cluster/api-service \

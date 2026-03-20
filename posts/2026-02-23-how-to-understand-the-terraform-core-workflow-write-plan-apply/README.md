@@ -41,6 +41,7 @@ The Write phase is where you define your desired infrastructure state in HCL (Ha
 
 ```hcl
 # Example: defining a simple web server setup
+
 provider "aws" {
   region = "us-east-1"
 }

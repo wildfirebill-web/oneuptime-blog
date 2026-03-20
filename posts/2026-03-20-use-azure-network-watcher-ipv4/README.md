@@ -23,12 +23,13 @@ az network watcher configure \
   --enabled true
 ```
 
-## IP Flow Verify — Check if NSG Allows Traffic
+## IP Flow Verify - Check if NSG Allows Traffic
 
 Answers: "Will an NSG allow or block this specific flow?"
 
 ```bash
 # Check if inbound TCP port 80 from 203.0.113.10 is allowed to a VM
+
 az network watcher test-ip-flow \
   --resource-group my-network-rg \
   --vm app-vm-01 \
@@ -40,7 +41,7 @@ az network watcher test-ip-flow \
 
 Output shows `Allow` or `Deny` and which NSG rule caused the decision.
 
-## Next Hop — Determine Routing Decision
+## Next Hop - Determine Routing Decision
 
 Answers: "What does Azure route my traffic to next?"
 
@@ -55,7 +56,7 @@ az network watcher show-next-hop \
 
 Output shows `nextHopType` (Internet, VirtualAppliance, VirtualNetworkGateway, None) and `nextHopIpAddress`.
 
-## Connection Troubleshoot — End-to-End Connectivity
+## Connection Troubleshoot - End-to-End Connectivity
 
 Answers: "Can VM A reach VM B or an external host?"
 
@@ -127,7 +128,7 @@ az network watcher flow-log create \
 
 ## Common Troubleshooting Workflow
 
-```
+```text
 1. IP Flow Verify       → Is the NSG allowing/blocking?
 2. Next Hop             → Is routing correct?
 3. Connection Troubleshoot → End-to-end path (combines routing + NSG)

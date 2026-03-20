@@ -160,6 +160,7 @@ Unbound is a popular validating resolver with excellent logging capabilities:
 
 ```yaml
 # /etc/unbound/unbound.conf
+
 server:
     # Enable DNSSEC validation
     auto-trust-anchor-file: "/var/lib/unbound/root.key"

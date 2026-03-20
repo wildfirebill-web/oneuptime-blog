@@ -44,6 +44,7 @@ Docker supports multiple logging drivers that control how container logs are col
 
 ```yaml
 # docker-compose.yml equivalent
+
 logging:
   driver: json-file
   options:
@@ -53,7 +54,7 @@ logging:
 ```
 
 In Portainer logging options:
-```
+```text
 max-size: 10m
 max-file: 5
 compress: true
@@ -104,7 +105,7 @@ logging:
 ```
 
 In Portainer logging options:
-```
+```text
 loki-url: http://loki:3100/loki/api/v1/push
 loki-batch-size: 400
 loki-external-labels: container_name={{.Name}}
@@ -149,7 +150,7 @@ All new containers will use this driver unless overridden.
 
 In Portainer, you can override the daemon default for any container:
 
-```
+```text
 # Container uses none driver (silences noisy debug containers)
 Driver: none
 
@@ -175,7 +176,7 @@ If you need both Portainer log viewing AND forwarding, use `json-file` locally a
 
 - **Always set `max-size` and `max-file`** for `json-file` driver to prevent disk exhaustion.
 - **Use `fluentd-async: true`** with Fluentd to prevent container startup failures if Fluentd is unavailable.
-- **Use centralized logging** for production — json-file on every host doesn't scale.
+- **Use centralized logging** for production - json-file on every host doesn't scale.
 - **Add context labels** to logs (container name, site, environment) for easier filtering.
 
 ## Conclusion

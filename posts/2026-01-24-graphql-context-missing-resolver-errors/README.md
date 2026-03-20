@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GraphQL, Resolvers, Apollo Server, Debugging, Authentication, Backend
+Tags: GraphQL, Resolver, Apollo Server, Debugging, Authentication, Backend
 
 Description: Learn how to diagnose and fix context missing errors in GraphQL resolvers, including proper context setup, authentication handling, and debugging techniques.
 

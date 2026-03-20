@@ -21,6 +21,7 @@ Route 53 failover routing automatically directs traffic to a backup (secondary) 
 
 ```hcl
 # Health check for the primary endpoint
+
 resource "aws_route53_health_check" "primary" {
   fqdn              = var.primary_endpoint_fqdn
   port              = 443

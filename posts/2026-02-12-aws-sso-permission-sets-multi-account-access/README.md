@@ -49,6 +49,7 @@ This command creates a permission set with a 4-hour session duration attached to
 
 ```bash
 # Create a custom permission set
+
 aws sso-admin create-permission-set \
   --instance-arn arn:aws:sso:::instance/ssoins-1234567890abcdef \
   --name "DevOpsEngineer" \

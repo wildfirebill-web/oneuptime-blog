@@ -35,6 +35,7 @@ The cluster is the foundation. It defines the network, region, and some security
 
 ```bash
 # Create a workstation cluster in your preferred region
+
 # The cluster needs to be in the same VPC as your other resources
 gcloud workstations clusters create dev-cluster \
     --project=my-project \

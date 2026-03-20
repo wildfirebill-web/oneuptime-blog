@@ -20,9 +20,9 @@ Netgear routers support IPv6 across the Nighthawk, Orbi, and business-grade line
 
 Select the appropriate connection type based on your ISP:
 
-**For Auto Config (most common — ISP provides DHCPv6):**
+**For Auto Config (most common - ISP provides DHCPv6):**
 1. Select **Auto Config** from the IP Address Type dropdown
-2. Check the status after saving — you should see a WAN IPv6 address assigned
+2. Check the status after saving - you should see a WAN IPv6 address assigned
 
 **For DHCPv6 with Prefix Delegation:**
 1. Select **DHCP** from the IP Address Type dropdown
@@ -67,6 +67,7 @@ In the router's status page:
 
 ```bash
 # From a Windows PC on the network
+
 ipconfig /all
 # Look for "IPv6 Address" under the adapter - should show a global address
 

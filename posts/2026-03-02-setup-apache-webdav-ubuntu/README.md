@@ -26,6 +26,7 @@ This makes it suitable for collaborative editing tools (LibreOffice, Microsoft O
 
 ```bash
 # Update packages
+
 sudo apt update
 
 # Install Apache if not already installed

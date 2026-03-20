@@ -1,4 +1,4 @@
-# How to Override Team Roles for Individual Users in Portainer
+# How to Override Team Roles for Individual Users in Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -13,13 +13,13 @@ Sometimes you need to give one team member a different role than the rest of the
 ## How Role Overrides Work
 
 Portainer resolves a user's effective role using this priority order:
-1. **Direct user access policy** (highest priority) — overrides team role
-2. **Team access policy** — applies to all team members
-3. **Group access policy** — inherited by environments in the group
+1. **Direct user access policy** (highest priority) - overrides team role
+2. **Team access policy** - applies to all team members
+3. **Group access policy** - inherited by environments in the group
 
 When both a user policy and team policy exist for the same environment, the **more permissive** role takes effect.
 
-**Important**: You can only grant a higher role via direct user policy — you cannot restrict a user to less than what their team has. If you need to restrict a user, consider removing them from the team.
+**Important**: You can only grant a higher role via direct user policy - you cannot restrict a user to less than what their team has. If you need to restrict a user, consider removing them from the team.
 
 ## Granting Elevated Access to One User
 
@@ -33,6 +33,7 @@ TOKEN=$(curl -s -X POST \
   | python3 -c "import sys,json; print(json.load(sys.stdin)['jwt'])")
 
 # Team 3 (QA team) has Helpdesk access to environment 1
+
 # Add direct Standard User access for user 7 (QA lead) in environment 1
 
 curl -X PUT \
@@ -138,15 +139,15 @@ for env in envs:
 
 For complex scenarios with many exceptions, consider creating sub-teams:
 
-```
+```text
 qa-team → all QA engineers → Helpdesk access to Production
 qa-leads → QA team leaders → Standard User access to Production
 
-(Alice is in both qa-team and qa-leads — her effective role is Standard User)
+(Alice is in both qa-team and qa-leads - her effective role is Standard User)
 ```
 
 This avoids per-user exceptions and keeps the access model team-based.
 
 ## Conclusion
 
-User-level access overrides in Portainer provide flexibility for exception cases without restructuring your team setup. The key rule is that direct user policies can only elevate access above what a team provides — to restrict a user below their team's level, you must restructure team membership. For many exceptions, consider whether creating more granular teams would be cleaner than maintaining individual overrides.
+User-level access overrides in Portainer provide flexibility for exception cases without restructuring your team setup. The key rule is that direct user policies can only elevate access above what a team provides - to restrict a user below their team's level, you must restructure team membership. For many exceptions, consider whether creating more granular teams would be cleaner than maintaining individual overrides.

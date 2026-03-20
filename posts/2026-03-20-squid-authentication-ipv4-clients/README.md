@@ -14,6 +14,7 @@ Squid supports several authentication schemes. Basic authentication with an htpa
 
 ```bash
 # Install the apache2-utils package for htpasswd
+
 apt install apache2-utils -y  # Debian/Ubuntu
 # or
 dnf install httpd-tools -y    # RHEL/Rocky
@@ -72,13 +73,13 @@ http_access deny all
 ## Testing Authentication
 
 ```bash
-# Request without credentials — should return 407 Proxy Authentication Required
+# Request without credentials - should return 407 Proxy Authentication Required
 curl -x http://192.168.1.10:3128 http://example.com
 
 # Request with valid credentials
 curl -x http://user1:password@192.168.1.10:3128 http://example.com
 
-# Request with invalid credentials — should be denied
+# Request with invalid credentials - should be denied
 curl -x http://baduser:wrongpass@192.168.1.10:3128 http://example.com
 ```
 
@@ -87,7 +88,7 @@ curl -x http://baduser:wrongpass@192.168.1.10:3128 http://example.com
 By default Squid logs the authenticated username in the access log.
 
 ```bash
-# View access log — third field is the authenticated username
+# View access log - third field is the authenticated username
 tail -f /var/log/squid/access.log
 # Example: 1710844800.000  100 192.168.1.5 TCP_MISS/200 ... user1 DIRECT/...
 ```

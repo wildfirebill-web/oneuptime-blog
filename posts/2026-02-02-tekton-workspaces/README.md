@@ -64,6 +64,7 @@ The following task definition declares a workspace named "source" where files ca
 
 ```yaml
 # task-with-workspace.yaml
+
 # A basic task demonstrating workspace usage for file operations
 apiVersion: tekton.dev/v1
 kind: Task

@@ -32,6 +32,7 @@ The primary rotation configuration parameters are duration and renewBefore:
 
 ```yaml
 # basic-rotation-config.yaml
+
 apiVersion: cert-manager.io/v1
 kind: Certificate
 metadata:

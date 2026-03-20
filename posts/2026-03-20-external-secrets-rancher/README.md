@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: rancher, vault, external-secrets, kubernetes, security
+Tags: Rancher, Vault, External-secrets, Kubernetes, Security
 
 Description: Guide to integrating HashiCorp Vault or AWS Secrets Manager with Rancher for secure secret management.
 
@@ -31,6 +31,7 @@ How to Configure Kubernetes Secrets with External Vaults in Rancher addresses th
 
 ```bash
 # Run a basic security audit
+
 kubectl get pods --all-namespaces -o json | jq -r '
   .items[] | 
   select(

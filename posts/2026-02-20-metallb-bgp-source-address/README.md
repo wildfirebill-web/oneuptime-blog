@@ -48,6 +48,7 @@ First, determine which IP address the upstream router expects the BGP session to
 
 ```bash
 # List all network interfaces and their IPs on the node.
+
 # Identify the interface connected to the network where the BGP peer lives.
 ip addr show
 

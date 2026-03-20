@@ -37,6 +37,7 @@ The first thing to check is which route table your subnet actually uses:
 
 ```bash
 # Find the route table associated with a specific subnet
+
 aws ec2 describe-route-tables \
   --filters "Name=association.subnet-id,Values=subnet-abc123" \
   --query 'RouteTables[0].{RouteTableId:RouteTableId,Routes:Routes[*].{Dest:DestinationCidrBlock,Target:GatewayId||NatGatewayId||TransitGatewayId||VpcPeeringConnectionId||NetworkInterfaceId}}'

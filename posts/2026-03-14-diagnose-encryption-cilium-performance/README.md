@@ -31,6 +31,7 @@ cilium encrypt status
 # Shows: Encryption type, keys, and node status
 
 # Check which traffic is encrypted
+
 tcpdump -i eth0 -n 'udp port 51871' -c 10  # WireGuard
 tcpdump -i eth0 -n esp -c 10  # IPsec
 ```

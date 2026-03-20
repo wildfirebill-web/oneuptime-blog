@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, kube-proxy, iptables, IPv4, Service Routing, Networking
+Tags: Kubernetes, Kube-proxy, iptables, IPv4, Service Routing, Networking
 
 Description: Configure and understand kube-proxy's iptables mode for IPv4 Kubernetes service routing, including how to tune it for performance and debug rule issues.
 
@@ -10,7 +10,7 @@ kube-proxy in iptables mode is the default service proxy in Kubernetes. It progr
 
 ## How iptables Mode Works
 
-```
+```text
 Pod sends to ClusterIP 10.96.45.123:80
 → iptables KUBE-SERVICES chain intercepts
 → KUBE-SVC-xxx chain selects random endpoint
@@ -22,6 +22,7 @@ Pod sends to ClusterIP 10.96.45.123:80
 
 ```bash
 # Check kube-proxy configuration
+
 kubectl get configmap kube-proxy -n kube-system -o yaml | grep mode
 # Expected: mode: "iptables" (or empty, which defaults to iptables)
 

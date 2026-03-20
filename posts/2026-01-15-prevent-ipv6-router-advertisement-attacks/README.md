@@ -65,6 +65,7 @@ An attacker broadcasts RAs with a higher router preference, becoming the default
 
 ```bash
 # Attacker's perspective (for educational purposes)
+
 # Using tools like radvd, THC-IPv6, or Scapy
 
 # Legitimate router sends:

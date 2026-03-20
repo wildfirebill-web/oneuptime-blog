@@ -589,6 +589,7 @@ class CausalConsistencyStore:
 
 
 # Example usage demonstrating causal ordering
+
 def demonstrate_causal_consistency():
     """
     Demonstrates that causally related operations are always

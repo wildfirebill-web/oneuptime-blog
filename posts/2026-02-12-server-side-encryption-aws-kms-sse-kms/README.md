@@ -27,6 +27,7 @@ You can use the AWS-managed S3 key (alias `aws/s3`) or create your own customer-
 
 ```bash
 # Create a customer-managed KMS key
+
 aws kms create-key \
   --description "S3 encryption key for production data" \
   --key-usage ENCRYPT_DECRYPT \

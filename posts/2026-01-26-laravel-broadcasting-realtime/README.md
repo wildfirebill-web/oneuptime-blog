@@ -43,6 +43,7 @@ First, install the Laravel Broadcasting dependencies. If you're using Pusher as 
 
 ```bash
 # Install Pusher PHP SDK for server-side broadcasting
+
 composer require pusher/pusher-php-server
 
 # Install Laravel Echo and Pusher JS for the frontend

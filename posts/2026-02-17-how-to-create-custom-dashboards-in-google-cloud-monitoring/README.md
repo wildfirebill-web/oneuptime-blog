@@ -133,6 +133,7 @@ Create the dashboard using the gcloud CLI.
 
 ```bash
 # Create a dashboard from a JSON definition file
+
 gcloud monitoring dashboards create --config-from-file=dashboard.json
 ```
 

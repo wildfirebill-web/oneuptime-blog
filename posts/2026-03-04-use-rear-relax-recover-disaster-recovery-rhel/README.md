@@ -14,6 +14,7 @@ ReaR (Relax-and-Recover) is a disaster recovery framework included in RHEL repos
 
 ```bash
 # Install ReaR
+
 sudo dnf install -y rear genisoimage syslinux-extlinux
 
 # Verify installation

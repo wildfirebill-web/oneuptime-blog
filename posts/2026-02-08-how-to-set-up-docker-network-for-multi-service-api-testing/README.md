@@ -26,6 +26,7 @@ This command creates a bridge network with a descriptive name for your testing s
 
 ```bash
 # Create a custom bridge network for API testing
+
 docker network create --driver bridge api-test-network
 ```
 

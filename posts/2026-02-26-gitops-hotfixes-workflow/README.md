@@ -45,6 +45,7 @@ Create a dedicated hotfix branch pattern that triggers a stripped-down pipeline:
 
 ```yaml
 # .github/workflows/hotfix.yaml
+
 name: Hotfix Pipeline
 on:
   push:

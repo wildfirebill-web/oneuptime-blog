@@ -46,6 +46,7 @@ The manifest file controls how the collection is built and what metadata appears
 
 ```yaml
 # galaxy.yml - collection manifest
+
 ---
 namespace: devops_tooling
 name: infrastructure

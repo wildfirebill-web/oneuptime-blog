@@ -26,6 +26,7 @@ Firezone uses an omnibus package (similar to GitLab's approach - all dependencie
 
 ```bash
 # Download and run the installer
+
 sudo bash -c "$(curl -fsSL https://raw.githubusercontent.com/firezone/firezone/legacy/scripts/install.sh)"
 ```
 

@@ -122,6 +122,7 @@ Use `RequireNot` to block specific addresses:
 
 ```apache
 # Old Apache 2.2 syntax (deprecated):
+
 Order deny,allow
 Deny from all
 Allow from 192.168.1.0/24

@@ -24,6 +24,7 @@ This is the simplest form of redundancy and works well for boot drives, small da
 
 ```bash
 # Install the mdadm package
+
 sudo dnf install -y mdadm
 ```
 

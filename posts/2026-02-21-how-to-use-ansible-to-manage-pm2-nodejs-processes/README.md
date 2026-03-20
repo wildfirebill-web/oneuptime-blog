@@ -138,6 +138,7 @@ Common PM2 operations through Ansible:
 
 ```yaml
 # Stop a specific application
+
 - name: Stop the API server
   ansible.builtin.command: "pm2 stop api-server"
   become: yes

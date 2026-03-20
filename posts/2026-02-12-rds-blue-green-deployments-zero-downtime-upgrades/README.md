@@ -56,6 +56,7 @@ Let's upgrade a MySQL 8.0.32 instance to 8.0.36:
 
 ```bash
 # Create the Blue/Green deployment
+
 aws rds create-blue-green-deployment \
   --blue-green-deployment-name my-db-upgrade \
   --source arn:aws:rds:us-east-1:123456789012:db:my-production-db \

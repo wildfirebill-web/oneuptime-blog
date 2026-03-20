@@ -1,4 +1,4 @@
-# How to Configure Edge Agent Poll Frequency
+# How to Configure Edge Agent Poll Frequency - Portainer
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -16,6 +16,7 @@ In standard mode, the `EDGE_POLL_INTERVAL` controls how frequently the agent che
 
 ```bash
 # Default: 5 seconds
+
 docker run -d \
   -e EDGE=1 \
   -e EDGE_ID=device-id \

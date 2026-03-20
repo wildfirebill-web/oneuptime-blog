@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Dependency Graphs, Infrastructure as Code, Debugging, HCL
+Tags: OpenTofu, Dependency Graph, Infrastructure as Code, Debugging, HCL
 
 Description: Understand how to interpret OpenTofu dependency graphs to trace resource ordering, identify bottlenecks, and reason about apply behavior.
 
@@ -25,7 +25,7 @@ graph TD
 In this graph:
 - `provider.aws` initializes first.
 - `aws_vpc.main` is created next.
-- `aws_subnet.public` and `aws_security_group.web` can be created **in parallel** — they both depend only on the VPC.
+- `aws_subnet.public` and `aws_security_group.web` can be created **in parallel** - they both depend only on the VPC.
 - `aws_instance.web` waits for both the subnet and security group.
 - `aws_eip.web` is created last, after the instance.
 
@@ -68,10 +68,11 @@ When `tofu apply` runs:
 
 ## Detecting Critical Paths
 
-The critical path is the longest chain of sequential dependencies — it determines the minimum total apply time:
+The critical path is the longest chain of sequential dependencies - it determines the minimum total apply time:
 
 ```hcl
 # Example: this chain creates a sequential bottleneck
+
 resource "aws_vpc" "main" { ... }
 resource "aws_subnet" "a" { vpc_id = aws_vpc.main.id }
 resource "aws_subnet" "b" { vpc_id = aws_subnet.a.id }  # Unnecessary! Should depend on VPC
@@ -103,7 +104,7 @@ If a resource fails or is skipped, follow its edges upward in the graph to find 
 tofu graph | grep "aws_db_instance.main"
 ```
 
-Look at all nodes pointing to `aws_db_instance.main` — one of those is the resource that failed or is missing.
+Look at all nodes pointing to `aws_db_instance.main` - one of those is the resource that failed or is missing.
 
 ## Conclusion
 

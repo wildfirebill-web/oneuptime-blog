@@ -201,6 +201,7 @@ Here is a collector configuration tuned for CI/CD trace data from Jenkins.
 
 ```yaml
 # otel-collector-config.yaml
+
 # Collector configuration optimized for Jenkins CI/CD traces.
 # Enriches spans with additional metadata and batches them for export.
 receivers:

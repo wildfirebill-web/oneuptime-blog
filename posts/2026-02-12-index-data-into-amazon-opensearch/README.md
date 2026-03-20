@@ -36,6 +36,7 @@ If you don't specify an ID, OpenSearch generates one automatically. Use auto-gen
 
 ```bash
 # Auto-generated ID (faster for write-heavy workloads)
+
 curl -XPOST "https://vpc-my-domain.us-east-1.es.amazonaws.com/app-logs/_doc" \
   -H "Content-Type: application/json" \
   -u admin:Admin\$ecure123! \

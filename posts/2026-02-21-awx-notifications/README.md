@@ -33,6 +33,7 @@ Notifications are configured in two steps:
 
 ```yaml
 # create-notifications.yml
+
 ---
 - name: Configure AWX Notifications
   hosts: localhost

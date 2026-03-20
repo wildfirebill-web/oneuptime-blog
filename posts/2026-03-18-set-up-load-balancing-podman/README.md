@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Podman, Load Balancing, NGINX, HAProxy, Containers, Scaling
+Tags: Podman, Load Balancing, Nginx, HAProxy, Containers, Scaling
 
 Description: Learn how to distribute traffic across multiple Podman containers using Nginx and HAProxy as load balancers, with health checks and different balancing algorithms.
 
@@ -279,6 +279,7 @@ For Nginx, add the new server to the upstream block and reload:
 
 ```bash
 # Add "server backend-4:80;" to the upstream block
+
 podman exec nginx-lb nginx -s reload
 ```
 

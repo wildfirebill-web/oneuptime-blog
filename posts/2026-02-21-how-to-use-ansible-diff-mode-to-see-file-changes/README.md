@@ -16,6 +16,7 @@ Add `--diff` to any `ansible-playbook` command:
 
 ```bash
 # Show diffs for all file changes
+
 ansible-playbook configure.yml --diff
 
 # Combine with check mode for a dry run with diffs

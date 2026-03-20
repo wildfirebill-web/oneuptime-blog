@@ -41,6 +41,7 @@ cat /sys/kernel/security/ima/ascii_runtime_measurements | wc -l
 ```bash
 sudo tee /etc/ima/ima-policy <<EOF
 # Measure all executed files
+
 measure func=BPRM_CHECK mask=MAY_EXEC
 # Measure shared libraries
 measure func=FILE_MMAP mask=MAY_EXEC

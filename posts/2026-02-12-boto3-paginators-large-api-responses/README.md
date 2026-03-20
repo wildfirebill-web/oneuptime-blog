@@ -22,6 +22,7 @@ import boto3
 s3 = boto3.client('s3')
 
 # This only returns UP TO 1000 objects
+
 response = s3.list_objects_v2(Bucket='my-bucket')
 objects = response.get('Contents', [])
 print(f"Found {len(objects)} objects")  # Max 1000, even if there are more

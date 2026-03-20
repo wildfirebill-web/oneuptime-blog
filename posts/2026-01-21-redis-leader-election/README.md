@@ -247,6 +247,7 @@ class NotLeaderError(Exception):
 
 
 # Usage example
+
 if __name__ == "__main__":
     election = LeaderElection(
         election_name='scheduler',

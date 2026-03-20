@@ -22,6 +22,7 @@ The error appears when commands that expect a specific number of arguments recei
 #!/bin/bash
 
 # This will fail with "too many arguments"
+
 filename="my file with spaces.txt"
 if [ -f $filename ]; then
     echo "File exists"

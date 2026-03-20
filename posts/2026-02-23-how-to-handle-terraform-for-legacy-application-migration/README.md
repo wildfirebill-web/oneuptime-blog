@@ -18,6 +18,7 @@ Start by documenting the legacy application's infrastructure requirements:
 
 ```yaml
 # migration/legacy-assessment.yaml
+
 # Legacy application infrastructure assessment
 
 application:

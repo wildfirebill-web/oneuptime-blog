@@ -37,6 +37,7 @@ The most common reason circuit breakers do not work is simply not having a Desti
 
 ```bash
 # Check if DestinationRule exists for your service
+
 kubectl get destinationrules -A | grep <service-name>
 ```
 

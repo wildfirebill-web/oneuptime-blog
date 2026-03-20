@@ -279,6 +279,7 @@ Test your failover before you need it. The easiest way is to temporarily make yo
 
 ```bash
 # Temporarily fail the health check (through a feature flag or config)
+
 curl -X POST https://app-primary.example.com/admin/force-unhealthy
 
 # Watch Route 53 health check status change

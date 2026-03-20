@@ -16,6 +16,7 @@ The rescue section executes when any task inside the associated `block` section 
 
 ```yaml
 # Basic rescue behavior
+
 ---
 - name: Rescue behavior demo
   hosts: localhost

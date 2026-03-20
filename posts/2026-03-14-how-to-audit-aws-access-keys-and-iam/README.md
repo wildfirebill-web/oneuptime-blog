@@ -22,6 +22,7 @@ Auditing AWS IAM in Cilium tracks credential usage patterns, identifies permissi
 
 ```bash
 # Check when the IAM role was last used
+
 aws iam get-role --role-name cilium-role \
   --query 'Role.RoleLastUsed'
 

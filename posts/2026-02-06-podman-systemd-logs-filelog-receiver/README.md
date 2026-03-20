@@ -14,6 +14,7 @@ First, create a container and generate a systemd unit file for it:
 
 ```bash
 # Create the container (but do not start it yet)
+
 podman create \
   --name web-server \
   --label app=web \

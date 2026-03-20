@@ -1,4 +1,4 @@
-# How to Set Up RKE2 High Availability
+# How to Set Up RKE2 High Availability - Setup
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -32,8 +32,9 @@ graph TD
 
 Configure your load balancer (HAProxy, Nginx, AWS NLB) to forward traffic to all server nodes:
 
-```
+```text
 # HAProxy config snippet
+
 frontend rke2-api
     bind *:6443
     default_backend rke2-servers
@@ -132,9 +133,9 @@ systemctl enable --now rke2-agent.service
 
 | Scenario | Status |
 |---|---|
-| 1 server node down | Cluster continues — etcd quorum maintained |
-| 2 server nodes down | Cluster loses quorum — no API writes possible |
-| Load balancer down | Cluster continues — existing connections unaffected |
+| 1 server node down | Cluster continues - etcd quorum maintained |
+| 2 server nodes down | Cluster loses quorum - no API writes possible |
+| Load balancer down | Cluster continues - existing connections unaffected |
 
 ---
 
@@ -142,4 +143,4 @@ systemctl enable --now rke2-agent.service
 
 - Use a health check on the load balancer targeting `/healthz` on port 6443 to automatically remove unhealthy server nodes.
 - Schedule regular etcd snapshots to S3 (`etcd-snapshot-schedule-cron`, `etcd-snapshot-dir`).
-- Do not run user workloads on server nodes — add taints to keep them control-plane-only.
+- Do not run user workloads on server nodes - add taints to keep them control-plane-only.

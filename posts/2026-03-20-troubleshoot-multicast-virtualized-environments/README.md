@@ -8,7 +8,7 @@ Description: Diagnose multicast delivery failures in VMware, KVM, and Docker env
 
 ## Introduction
 
-Virtualized environments add extra networking layers — virtual switches, hypervisor bridges, and overlay networks — that can silently drop multicast traffic. This guide covers the most common failure points and how to fix them.
+Virtualized environments add extra networking layers - virtual switches, hypervisor bridges, and overlay networks - that can silently drop multicast traffic. This guide covers the most common failure points and how to fix them.
 
 ## VMware vSwitch: Enable Promiscuous Mode and Forged Transmits
 
@@ -30,6 +30,7 @@ Linux bridges (virbr0, br0) forward multicast by default, but `multicast_snoopin
 
 ```bash
 # Check current multicast snooping state on the bridge
+
 cat /sys/class/net/virbr0/bridge/multicast_snooping
 
 # If snooping is enabled (1), it needs a querier to work correctly
@@ -106,4 +107,4 @@ If the overlay uses multicast for tunnel discovery, verify the underlay switches
 
 ## Conclusion
 
-Most multicast failures in virtualized environments trace back to a virtual switch or bridge blocking frames due to snooping without a querier, or missing security policy exceptions. Check each layer — hypervisor policy, bridge snooping, and iptables forwarding — systematically.
+Most multicast failures in virtualized environments trace back to a virtual switch or bridge blocking frames due to snooping without a querier, or missing security policy exceptions. Check each layer - hypervisor policy, bridge snooping, and iptables forwarding - systematically.

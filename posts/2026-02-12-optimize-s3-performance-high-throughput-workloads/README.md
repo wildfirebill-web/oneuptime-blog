@@ -75,6 +75,7 @@ def parallel_upload(directory, s3_prefix, max_workers=20):
         print(f"Failed: {failed}")
 
 # Upload 10,000 files with 20 parallel threads
+
 parallel_upload('/data/exports/', 'exports/2026-02-12', max_workers=20)
 ```
 

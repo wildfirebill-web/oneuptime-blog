@@ -26,6 +26,7 @@ Here is a deployment playbook that handles PostgreSQL database operations throug
 
 ```yaml
 # postgres-deploy.yml - Application deployment with PostgreSQL migration
+
 ---
 - name: Deploy application with database migration
   hosts: appservers

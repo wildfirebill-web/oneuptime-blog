@@ -80,6 +80,7 @@ kubectl patch daemonset calico-node -n kube-system --type='json' \
 ```bash
 calicoctl get bgppeer -o yaml
 # Correct peer IP and AS number, then:
+
 calicoctl apply -f corrected-bgppeer.yaml
 ```
 

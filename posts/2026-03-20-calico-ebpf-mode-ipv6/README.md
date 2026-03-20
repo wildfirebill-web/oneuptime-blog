@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Calico, eBPF, IPv6, Kubernetes, XDP, kube-proxy Replacement, Performance
+Tags: Calico, eBPF, IPv6, Kubernetes, XDP, Kube-proxy Replacement, Performance
 
 Description: Configure Calico in eBPF mode for high-performance IPv6 packet forwarding, replacing kube-proxy with eBPF-native service load balancing.
 
@@ -14,6 +14,7 @@ Configure Calico in eBPF mode for high-performance IPv6 packet forwarding, repla
 
 ```bash
 # Ensure IPv6 is enabled and functional
+
 ip -6 addr show
 ping6 -c 3 ::1
 

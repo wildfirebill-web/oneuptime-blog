@@ -39,6 +39,7 @@ Use S3 for document storage with versioning enabled for audit trails:
 
 ```bash
 # Create the document storage bucket with versioning
+
 aws s3api create-bucket \
   --bucket company-documents-prod \
   --region us-east-1

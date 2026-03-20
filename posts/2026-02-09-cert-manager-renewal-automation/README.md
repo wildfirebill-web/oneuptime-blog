@@ -26,6 +26,7 @@ Control renewal timing through the renewBefore field in Certificate specificatio
 
 ```yaml
 # example-certificate-renewal.yaml
+
 apiVersion: cert-manager.io/v1
 kind: Certificate
 metadata:

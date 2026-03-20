@@ -44,6 +44,7 @@ Before touching anything, record the existing setup:
 
 ```bash
 # Show the current team connection details
+
 nmcli connection show team0
 
 # Check team runner and link watchers

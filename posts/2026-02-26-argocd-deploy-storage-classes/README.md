@@ -29,6 +29,7 @@ With ArgoCD, StorageClass definitions are version-controlled, reviewed, and depl
 
 ```yaml
 # gp3-storage-class.yaml
+
 apiVersion: storage.k8s.io/v1
 kind: StorageClass
 metadata:

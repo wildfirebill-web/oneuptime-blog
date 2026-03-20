@@ -20,6 +20,7 @@ Podman machines come with certain host directories mounted by default. The exact
 
 ```bash
 # Check current mounts on a machine
+
 podman machine inspect my-machine
 
 # On macOS, the default volume mount is $HOME:$HOME

@@ -22,6 +22,7 @@ server:
   grpc_listen_port: 9096
 
 # Storage configuration (local for development)
+
 common:
   path_prefix: /var/loki
   storage:

@@ -1421,6 +1421,7 @@ Automate API registration through your CI/CD pipeline for consistent catalog upd
 
 ```yaml
 # .github/workflows/api-catalog-sync.yml
+
 name: Sync API to Catalog
 
 on:

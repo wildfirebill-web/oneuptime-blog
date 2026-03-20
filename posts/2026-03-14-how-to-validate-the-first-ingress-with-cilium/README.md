@@ -30,6 +30,7 @@ echo "=== Cilium Ingress Validation ==="
 ERRORS=0
 
 # Check IngressClass exists
+
 if kubectl get ingressclass cilium &>/dev/null; then
   echo "PASS: IngressClass 'cilium' exists"
 else

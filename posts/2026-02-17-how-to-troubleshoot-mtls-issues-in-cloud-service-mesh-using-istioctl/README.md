@@ -18,6 +18,7 @@ First, make sure you have istioctl installed and configured for your Cloud Servi
 
 ```bash
 # Install istioctl (if not already installed)
+
 curl -L https://istio.io/downloadIstio | sh -
 
 # Add to your PATH

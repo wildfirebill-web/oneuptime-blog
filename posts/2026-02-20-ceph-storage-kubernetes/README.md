@@ -40,6 +40,7 @@ You need a Kubernetes cluster with at least three worker nodes. Each node should
 
 ```bash
 # Verify your cluster nodes are ready
+
 kubectl get nodes -o wide
 
 # Check for available raw disks on each node

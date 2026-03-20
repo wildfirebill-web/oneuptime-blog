@@ -16,6 +16,7 @@ SSSD stores cached credentials in a local database (typically under `/var/lib/ss
 
 ```bash
 # Check current SSSD status
+
 sudo systemctl status sssd
 
 # View the SSSD cache databases

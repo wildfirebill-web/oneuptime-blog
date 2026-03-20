@@ -69,6 +69,7 @@ Next, provide vCenter Server credentials. The appliance uses these to connect to
 
 ```powershell
 # Create a read-only role in vCenter for Azure Migrate discovery
+
 # This role grants the minimum permissions needed for VM enumeration and performance data collection
 New-VIRole -Name "AzureMigrateRole" -Privilege (Get-VIPrivilege -Id @(
     "System.Anonymous",

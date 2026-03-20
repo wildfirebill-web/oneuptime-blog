@@ -10,7 +10,7 @@ Ansible automates IPv6 address configuration across fleets of Linux servers. Whe
 
 ## Playbook Structure
 
-```
+```text
 ipv6-config/
 ├── inventory.ini
 ├── site.yml
@@ -24,6 +24,7 @@ ipv6-config/
 
 ```yaml
 # roles/ipv6_address/tasks/nmcli.yml
+
 ---
 - name: Configure IPv6 address via NetworkManager
   community.general.nmcli:

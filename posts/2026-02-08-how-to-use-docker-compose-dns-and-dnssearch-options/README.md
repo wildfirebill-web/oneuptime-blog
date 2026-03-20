@@ -16,6 +16,7 @@ When you start a container, Docker sets up DNS resolution based on the daemon co
 
 ```bash
 # See the DNS configuration inside a running container
+
 docker run --rm alpine cat /etc/resolv.conf
 ```
 

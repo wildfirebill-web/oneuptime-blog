@@ -25,6 +25,7 @@ With native Istio, you manage canary traffic manually by creating two Deployment
 
 ```yaml
 # Primary (stable) Deployment
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

@@ -16,6 +16,7 @@ Consider this playbook:
 
 ```yaml
 # broken-order.yml - Handler runs too late
+
 ---
 - name: Setup and verify web server
   hosts: webservers

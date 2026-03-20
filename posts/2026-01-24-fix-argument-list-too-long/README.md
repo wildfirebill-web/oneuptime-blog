@@ -40,6 +40,7 @@ flowchart TD
 # The error occurs when argument list exceeds kernel limit
 
 # Check your system's limit
+
 getconf ARG_MAX
 # Typical values: 2097152 (2MB) on Linux, 262144 (256KB) on older systems
 

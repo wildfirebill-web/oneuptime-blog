@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: MAP-T, IPv6, IPv4, Stateless, Translation, ISP, Transition
 
-Description: Configure MAP-T (Mapping of Address and Port with Translation) for stateless IPv4-to-IPv6 translation in ISP networks, enabling IPv4 connectivity over IPv6-only infrastructure without state maintenance.
+Description: Configure MAP-T (Mapping of Address and Port with Translation) for stateless IPv4-to-IPv6 translation in ISP networks, enabling IPv4 connectivity over IPv6-only infrastructure without state...
 
 ## Introduction
 
@@ -12,7 +12,7 @@ MAP-T (RFC 7599) is a stateless IPv4-to-IPv6 translation mechanism for ISP deplo
 
 ## How MAP-T Works
 
-```
+```text
 IPv4 Client → CE (CPE) →[IPv4→IPv6 translation]→ IPv6 Network →[IPv6→IPv4]→ BR → IPv4 Internet
              [stateless]                                         [stateless]
 ```
@@ -24,8 +24,9 @@ Key elements:
 
 ## MAP-T Rule Example
 
-```
+```text
 # MAP domain parameters:
+
 # IPv6 prefix: 2001:db8::/32 (End-user prefix length: 56)
 # IPv4 prefix: 192.0.2.0/24
 # EA bits: 16 (Embedded Address bits)
@@ -87,7 +88,7 @@ sudo ip -6 route add 2001:db8::/32 dev br0
 # Route IPv4 space back to internet
 sudo ip route add 192.0.2.0/24 dev br0
 
-# No NAT needed — translation is stateless
+# No NAT needed - translation is stateless
 sudo sysctl -w net.ipv4.ip_forward=1
 sudo sysctl -w net.ipv6.conf.all.forwarding=1
 ```
@@ -147,7 +148,7 @@ sudo tcpdump -i br0 -n 'ip or ip6'
 
 ## DHCPv6 MAP-T Rule Distribution
 
-```
+```text
 # ISP DHCPv6 server distributes MAP rules to CEs
 # dhcpd6.conf
 option dhcp6.map-rule code 89 = string;
@@ -161,4 +162,4 @@ subnet6 2001:db8:c000::/40 {
 
 ## Conclusion
 
-MAP-T provides stateless IPv4-to-IPv6 translation for ISP networks. Unlike DS-Lite, there is no per-connection state on the Border Relay — each CE has a deterministic IPv4 address and port range derived algorithmically from its IPv6 prefix. This enables horizontal scaling of the BR without state synchronization. The CE translates IPv4 packets from LAN clients directly to IPv6 using the MAP-T algorithm. ISPs distribute MAP rules to CEs via DHCPv6 option 89. MAP-T is particularly suited to large-scale deployments where DS-Lite's stateful NAT becomes a bottleneck.
+MAP-T provides stateless IPv4-to-IPv6 translation for ISP networks. Unlike DS-Lite, there is no per-connection state on the Border Relay - each CE has a deterministic IPv4 address and port range derived algorithmically from its IPv6 prefix. This enables horizontal scaling of the BR without state synchronization. The CE translates IPv4 packets from LAN clients directly to IPv6 using the MAP-T algorithm. ISPs distribute MAP rules to CEs via DHCPv6 option 89. MAP-T is particularly suited to large-scale deployments where DS-Lite's stateful NAT becomes a bottleneck.

@@ -36,6 +36,7 @@ Define a reusable workflow with the `workflow_call` trigger:
 
 ```yaml
 # .github/workflows/build-and-test.yml
+
 name: Build and Test
 
 on:

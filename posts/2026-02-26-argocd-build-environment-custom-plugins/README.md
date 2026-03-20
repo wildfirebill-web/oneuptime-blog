@@ -268,6 +268,7 @@ Create a `plugin-config.yaml` in your application directory:
 
 ```yaml
 # plugin-config.yaml
+
 image:
   repository: myorg/backend-api
 

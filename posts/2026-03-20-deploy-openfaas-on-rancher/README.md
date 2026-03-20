@@ -21,6 +21,7 @@ arkade install faas-cli
 
 ```bash
 # Add OpenFaaS repository
+
 helm repo add openfaas https://openfaas.github.io/faas-netes/
 helm repo update
 

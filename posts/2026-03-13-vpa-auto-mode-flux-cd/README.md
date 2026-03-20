@@ -22,6 +22,7 @@ Vertical Pod Autoscaler (VPA) automatically adjusts CPU and memory requests for 
 
 ```yaml
 # clusters/production/infrastructure/vpa.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

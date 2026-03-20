@@ -38,6 +38,7 @@ Check what host keys ArgoCD currently has configured:
 
 ```bash
 # View the known hosts ConfigMap
+
 kubectl get configmap argocd-ssh-known-hosts-cm -n argocd -o yaml
 
 # Or use the ArgoCD CLI

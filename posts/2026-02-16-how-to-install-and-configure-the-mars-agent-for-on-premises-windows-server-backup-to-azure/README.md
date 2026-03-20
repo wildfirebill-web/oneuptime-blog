@@ -41,6 +41,7 @@ If you do not already have one:
 
 ```bash
 # Create a resource group and vault for on-premises backups
+
 az group create --name rg-backup-onprem --location eastus2
 
 az backup vault create \

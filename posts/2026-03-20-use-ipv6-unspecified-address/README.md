@@ -12,7 +12,7 @@ The IPv6 unspecified address `::` (all 128 bits zero) indicates the absence of a
 
 ## RFC 4291 Definition
 
-```
+```text
 The unspecified address, ::
 Full form: 0000:0000:0000:0000:0000:0000:0000:0000
 CIDR:      ::/128
@@ -33,6 +33,7 @@ Properties:
 import socket
 
 # IPv6 server listening on all interfaces (:: = any)
+
 sock = socket.socket(socket.AF_INET6, socket.SOCK_STREAM)
 sock.setsockopt(socket.IPPROTO_IPV6, socket.IPV6_V6ONLY, 0)  # Accept IPv4-mapped too
 sock.bind(("::", 8080))
@@ -41,19 +42,19 @@ print("Listening on :: port 8080 (all interfaces)")
 ```
 
 ```go
-// Go — listen on all IPv6 interfaces
+// Go - listen on all IPv6 interfaces
 lis, err := net.Listen("tcp6", "[::]:8080")
 ```
 
 ```nginx
-# Nginx — listen on all IPv6 addresses
+# Nginx - listen on all IPv6 addresses
 listen [::]:80;
 listen [::]:443 ssl;
 ```
 
-### 2. DAD (Duplicate Address Detection) — Automatic Use
+### 2. DAD (Duplicate Address Detection) - Automatic Use
 
-```
+```text
 When a host assigns itself a new IPv6 address, it first uses ::
 as the source address in a Neighbor Solicitation message to check
 if the address is already in use:
@@ -67,9 +68,9 @@ If no response in ~1 second, the address is tentative-free.
 
 ### 3. Default Route
 
-```
-::/0  — The IPv6 default route (all destinations)
-      — Equivalent to IPv4's 0.0.0.0/0
+```text
+::/0  - The IPv6 default route (all destinations)
+      - Equivalent to IPv4's 0.0.0.0/0
 
 Linux:
   ip -6 route add default via 2001:db8::1
@@ -80,12 +81,12 @@ Cisco IOS:
 
 ## Incorrect Uses (Avoid)
 
-```
+```text
 WRONG: Setting :: as a routed interface address
   ip -6 addr add ::/128 dev eth0  ← Never do this
 
 WRONG: Using :: as a destination in applications
-  connect(sock, "::", 80)  ← Means "no destination" — will fail or behave unexpectedly
+  connect(sock, "::", 80)  ← Means "no destination" - will fail or behave unexpectedly
 
 WRONG: Treating :: as "any host" in firewall rules
   The firewall should use ::/0 (any destination) not :: (unspecified)

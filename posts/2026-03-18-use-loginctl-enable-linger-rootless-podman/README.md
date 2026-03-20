@@ -20,6 +20,7 @@ By default, systemd manages user services through a user manager instance that s
 
 ```bash
 # Without linger:
+
 # Login  -> systemd starts user@1000.service
 # Logout -> systemd stops user@1000.service (kills all user processes)
 

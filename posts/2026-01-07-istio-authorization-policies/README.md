@@ -87,6 +87,7 @@ The following YAML shows the fundamental structure of an AuthorizationPolicy wit
 
 ```yaml
 # AuthorizationPolicy defines access control rules for workloads in the mesh
+
 apiVersion: security.istio.io/v1
 kind: AuthorizationPolicy
 metadata:

@@ -20,6 +20,7 @@ Start by measuring what you have.
 
 ```bash
 # List images with sizes
+
 podman images --format "table {{.Repository}}:{{.Tag}}\t{{.Size}}"
 
 # Get detailed size information

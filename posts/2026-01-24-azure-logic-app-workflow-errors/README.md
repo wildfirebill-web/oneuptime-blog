@@ -40,6 +40,7 @@ The first step in debugging is examining the run history to identify exactly whe
 
 ```bash
 # List recent workflow runs
+
 # This shows trigger status and overall run result
 az logic workflow run list \
   --resource-group myResourceGroup \

@@ -380,6 +380,7 @@ Test the connection:
 
 ```bash
 # Test TCP connectivity
+
 kubectl run tcp-test --rm -it --image=busybox -- nc -vz <gateway-ip> 5432
 ```
 

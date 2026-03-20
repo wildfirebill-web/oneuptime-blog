@@ -2,18 +2,19 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, flatten, for_each, Collections, Functions
+Tags: OpenTofu, Terraform, Flatten, for_each, Collections, Functions
 
 Description: Learn how to use the flatten function and for expressions in OpenTofu to convert nested data structures into flat maps suitable for for_each-based resource creation.
 
 ## Overview
 
-OpenTofu's `for_each` requires a flat map or set. When configuration data is naturally hierarchical — like environments containing services, regions containing subnets, or teams containing members — you must flatten it before iterating. The `flatten` function combined with `for` expressions is the idiomatic solution.
+OpenTofu's `for_each` requires a flat map or set. When configuration data is naturally hierarchical - like environments containing services, regions containing subnets, or teams containing members - you must flatten it before iterating. The `flatten` function combined with `for` expressions is the idiomatic solution.
 
 ## Basic flatten Usage
 
 ```hcl
 # Without flatten: nested lists
+
 locals {
   nested = [
     ["a", "b", "c"],
@@ -271,4 +272,4 @@ resource "aws_route53_record" "records" {
 
 ## Summary
 
-The `flatten` function combined with nested `for` expressions is the standard OpenTofu pattern for generating `for_each`-compatible maps from hierarchical data. The three-step workflow — build nested list with `flatten([for outer : [for inner : {...}]])`, then convert to a map with a unique composite key — handles any depth of nesting. This pattern is especially valuable for generating security group rules, DNS records, IAM bindings, and Kubernetes resources where the source data naturally groups by multiple dimensions.
+The `flatten` function combined with nested `for` expressions is the standard OpenTofu pattern for generating `for_each`-compatible maps from hierarchical data. The three-step workflow - build nested list with `flatten([for outer : [for inner : {...}]])`, then convert to a map with a unique composite key - handles any depth of nesting. This pattern is especially valuable for generating security group rules, DNS records, IAM bindings, and Kubernetes resources where the source data naturally groups by multiple dimensions.

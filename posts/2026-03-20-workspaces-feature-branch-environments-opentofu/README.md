@@ -8,12 +8,13 @@ Description: Learn how to use OpenTofu workspaces to create ephemeral feature br
 
 ## Introduction
 
-OpenTofu workspaces allow you to maintain multiple independent state files from the same configuration. Combined with CI/CD pipelines, workspaces enable ephemeral feature branch environments — isolated infrastructure instances created for each feature branch, tested, then destroyed when the branch is merged or closed. This pattern catches infrastructure issues before they reach staging or production.
+OpenTofu workspaces allow you to maintain multiple independent state files from the same configuration. Combined with CI/CD pipelines, workspaces enable ephemeral feature branch environments - isolated infrastructure instances created for each feature branch, tested, then destroyed when the branch is merged or closed. This pattern catches infrastructure issues before they reach staging or production.
 
 ## Workspace Basics for Feature Branches
 
 ```bash
 # Create a workspace for a feature branch
+
 git checkout -b feature/add-redis-cache
 # Work on infrastructure changes...
 
@@ -241,4 +242,4 @@ curl -s \
 
 ## Conclusion
 
-Workspaces for feature branches enable ephemeral infrastructure testing with the same configuration as production, parameterized by workspace name. The GitHub Actions workflow creates the workspace when a PR opens, deploys the infrastructure, posts the URL as a PR comment, and destroys everything when the PR closes. Cost controls — reduced instance sizes for non-default workspaces, automatic shutdown tags, and stale workspace cleanup — prevent feature environments from accumulating costs. This pattern is most valuable for infrastructure-heavy applications where testing with real (though smaller) cloud resources catches issues that unit tests miss.
+Workspaces for feature branches enable ephemeral infrastructure testing with the same configuration as production, parameterized by workspace name. The GitHub Actions workflow creates the workspace when a PR opens, deploys the infrastructure, posts the URL as a PR comment, and destroys everything when the PR closes. Cost controls - reduced instance sizes for non-default workspaces, automatic shutdown tags, and stale workspace cleanup - prevent feature environments from accumulating costs. This pattern is most valuable for infrastructure-heavy applications where testing with real (though smaller) cloud resources catches issues that unit tests miss.

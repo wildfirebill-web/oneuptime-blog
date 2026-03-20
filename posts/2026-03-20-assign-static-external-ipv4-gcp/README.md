@@ -8,7 +8,7 @@ Description: Reserve and assign static external IPv4 addresses to GCP Compute En
 
 ## Introduction
 
-GCP assigns ephemeral external IPs by default — these change when you stop and restart an instance. Static external IPv4 addresses are reserved and remain assigned to your project until you release them, even when not attached to an instance.
+GCP assigns ephemeral external IPs by default - these change when you stop and restart an instance. Static external IPv4 addresses are reserved and remain assigned to your project until you release them, even when not attached to an instance.
 
 ## Reserving a Static External IPv4 Address
 
@@ -17,6 +17,7 @@ PROJECT_ID="my-gcp-project"
 REGION="us-central1"
 
 # Reserve a regional static IP
+
 gcloud compute addresses create web-static-ip \
   --project=$PROJECT_ID \
   --region=$REGION

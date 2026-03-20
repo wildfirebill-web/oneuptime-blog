@@ -10,6 +10,7 @@ Description: Learn how to secure gRPC connections with TLS over IPv4 in Python a
 
 ```bash
 # CA
+
 openssl req -x509 -newkey rsa:4096 -days 3650 -nodes \
     -keyout ca.key -out ca.crt -subj "/CN=gRPC-CA"
 
@@ -65,7 +66,7 @@ print(resp.message)
 ## Python: mTLS Server + Client
 
 ```python
-# Server — require client certificate
+# Server - require client certificate
 def serve_mtls():
     with open("server.key","rb") as f: key  = f.read()
     with open("server.crt","rb") as f: cert = f.read()
@@ -81,7 +82,7 @@ def serve_mtls():
     server.start()
     server.wait_for_termination()
 
-# Client — present its own certificate
+# Client - present its own certificate
 def call_mtls():
     with open("ca.crt","rb") as f:     ca    = f.read()
     with open("client.key","rb") as f: key   = f.read()

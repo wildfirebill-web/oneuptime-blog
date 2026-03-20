@@ -30,6 +30,7 @@ Here's how to set yourself as a Lake Formation admin:
 
 ```bash
 # Register yourself as a Lake Formation administrator
+
 aws lakeformation put-data-lake-settings \
     --data-lake-settings '{
         "DataLakeAdmins": [

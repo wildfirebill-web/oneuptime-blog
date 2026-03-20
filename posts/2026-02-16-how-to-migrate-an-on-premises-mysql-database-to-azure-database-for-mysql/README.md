@@ -32,6 +32,7 @@ Azure Database for MySQL Flexible Server supports MySQL 5.7 and 8.0. If your on-
 
 ```bash
 # Check your current MySQL version
+
 mysql -u root -p -e "SELECT VERSION();"
 ```
 

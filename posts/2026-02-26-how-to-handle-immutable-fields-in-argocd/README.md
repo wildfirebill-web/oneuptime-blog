@@ -59,6 +59,7 @@ For a more targeted approach, use the CLI:
 
 ```bash
 # Replace only specific resources
+
 argocd app sync my-app --resource batch:Job:my-job --replace
 ```
 

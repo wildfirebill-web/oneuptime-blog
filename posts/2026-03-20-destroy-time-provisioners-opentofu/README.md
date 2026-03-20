@@ -1,10 +1,10 @@
-# How to Use Destroy-Time Provisioners in OpenTofu
+# How to Use Destroy-Time Provisioners in OpenTofu - Opentofu
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: OpenTofu, Provisioners, Destroy-Time, Infrastructure as Code, Cleanup
 
-Description: Learn how to use destroy-time provisioners in OpenTofu to run cleanup tasks—such as deregistering from service registries or archiving data—before a resource is destroyed.
+Description: Learn how to use destroy-time provisioners in OpenTofu to run cleanup tasks-such as deregistering from service registries or archiving data-before a resource is destroyed.
 
 ## Introduction
 
@@ -85,7 +85,7 @@ resource "aws_rds_cluster" "main" {
 
 ## Important Limitation: No Interpolation of Other Resources
 
-Destroy-time provisioners cannot reference other resources or data sources—only `self` references are allowed. This is because during destroy, other resources may have already been removed from state:
+Destroy-time provisioners cannot reference other resources or data sources-only `self` references are allowed. This is because during destroy, other resources may have already been removed from state:
 
 ```hcl
 provisioner "remote-exec" {
@@ -133,4 +133,4 @@ Destroy-time provisioners run during `tofu destroy`, `tofu apply` when a resourc
 
 ## Conclusion
 
-Destroy-time provisioners are the safety net for graceful infrastructure teardown. Use them for deregistration, notification, and cleanup tasks—but keep them simple and tolerant of failure using `on_failure = continue` to prevent stuck destroy operations.
+Destroy-time provisioners are the safety net for graceful infrastructure teardown. Use them for deregistration, notification, and cleanup tasks-but keep them simple and tolerant of failure using `on_failure = continue` to prevent stuck destroy operations.

@@ -1,4 +1,4 @@
-# How to Deploy a Fargate Service with OpenTofu on AWS
+# How to Deploy a Fargate Service with OpenTofu on AWS - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 

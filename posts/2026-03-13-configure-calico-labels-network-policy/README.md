@@ -28,6 +28,7 @@ Before writing any policies, define a consistent labeling strategy:
 
 ```yaml
 # Recommended label schema for network policy
+
 labels:
   app: frontend          # Application name
   tier: web              # Architecture tier (web, api, data, cache)

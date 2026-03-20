@@ -28,6 +28,7 @@ data "aws_ami" "amazon_linux" {
 }
 
 # Full-featured launch template with all common configuration
+
 resource "aws_launch_template" "app" {
   name        = "app-launch-template"
   description = "Launch template for application servers"

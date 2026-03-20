@@ -32,6 +32,7 @@ The ArgoCD UI is served by the API server (argocd-server).
 
 ```bash
 # Check if the API server is running
+
 kubectl get pods -n argocd -l app.kubernetes.io/name=argocd-server
 
 # Check for recent restarts

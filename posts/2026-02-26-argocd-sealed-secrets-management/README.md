@@ -67,6 +67,7 @@ helm install sealed-secrets sealed-secrets/sealed-secrets \
 
 ```bash
 # macOS
+
 brew install kubeseal
 
 # Linux

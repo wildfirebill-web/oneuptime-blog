@@ -27,7 +27,7 @@ Azure Monitor integrates natively with Azure SQL Database to provide:
 
 Not all metrics are equally important. Here are the ones I watch closely.
 
-### Resource Utilization
+Resource Utilization
 
 **CPU percentage**: The percentage of allocated CPU being used. Consistently above 80% means you are approaching the limit and should consider scaling up or optimizing queries.
 
@@ -117,6 +117,7 @@ While metrics give you high-level numbers, diagnostic logs provide the details. 
 
 ```bash
 # Enable diagnostic logging to a Log Analytics workspace
+
 az monitor diagnostic-settings create \
     --resource "/subscriptions/{sub-id}/resourceGroups/myResourceGroup/providers/Microsoft.Sql/servers/myserver/databases/mydb" \
     --name "sql-diagnostics" \

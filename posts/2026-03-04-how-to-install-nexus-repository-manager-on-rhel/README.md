@@ -14,6 +14,7 @@ Sonatype Nexus Repository Manager is a universal artifact repository that suppor
 
 ```bash
 # Install Java 8 or 11 (required by Nexus)
+
 sudo dnf install -y java-11-openjdk java-11-openjdk-devel
 java -version
 ```

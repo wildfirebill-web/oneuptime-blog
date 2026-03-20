@@ -23,6 +23,7 @@ For most cases, the DVD ISO is the safer choice. Download it and verify the chec
 
 ```bash
 # Verify the SHA-256 checksum of the downloaded ISO
+
 sha256sum rhel-9.4-x86_64-dvd.iso
 ```
 

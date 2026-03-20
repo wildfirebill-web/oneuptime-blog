@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, IPv4, Networking, Header, Protocol, Performance
+Tags: IPv6, IPv4, Networking, Headers, Protocol, Performance
 
 Description: Compare the IPv6 and IPv4 header structures to understand the design tradeoffs, efficiency improvements, and practical performance implications for modern networks.
 
@@ -54,7 +54,7 @@ graph TD
 
 ### 1. Fixed Header Size Enables Hardware Optimization
 
-```
+```text
 IPv4: IHL field required to skip variable options → branching in fast-path code
 IPv6: always 40 bytes → parse at fixed offset → simpler hardware parser
 ```
@@ -70,17 +70,18 @@ ip_header->check = ip_checksum(ip_header, ip_header->ihl * 4);
 
 /* IPv6 router: just decrement hop limit, no checksum */
 ipv6_header->hop_limit--;
-/* Done — no checksum update needed */
+/* Done - no checksum update needed */
 ```
 
 This saves CPU cycles at every routing hop across the internet.
 
 ### 3. Fragmentation Is End-to-End Only
 
-IPv4 routers can fragment packets. IPv6 routers cannot — only the source host fragments, reducing router state and processing.
+IPv4 routers can fragment packets. IPv6 routers cannot - only the source host fragments, reducing router state and processing.
 
 ```bash
 # IPv6 fragmentation is done by the source (Path MTU Discovery)
+
 # Check the PMTU to a destination
 ip -6 route get 2001:db8::1 | grep mtu
 
@@ -98,7 +99,7 @@ However, for larger jumbo frames (9000 bytes):
 - IPv4: 20/9000 = **0.22% overhead**
 - IPv6: 40/9000 = **0.44% overhead**
 
-The absolute overhead is 20 bytes — negligible at any meaningful bandwidth.
+The absolute overhead is 20 bytes - negligible at any meaningful bandwidth.
 
 ## Conclusion
 

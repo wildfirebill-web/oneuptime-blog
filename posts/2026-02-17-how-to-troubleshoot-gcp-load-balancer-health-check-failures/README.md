@@ -22,6 +22,7 @@ Key detail: Health check probes come from the IP ranges `35.191.0.0/16` and `130
 
 ```bash
 # Check backend health for a backend service
+
 gcloud compute backend-services get-health my-backend-service \
     --global \
     --format="table(status.healthStatus.instance, status.healthStatus.healthState)"

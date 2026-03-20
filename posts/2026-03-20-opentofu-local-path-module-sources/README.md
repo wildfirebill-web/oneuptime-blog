@@ -1,4 +1,4 @@
-# How to Use Local Path Module Sources in OpenTofu
+# How to Use Local Path Module Sources in OpenTofu - Path
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -25,6 +25,7 @@ The path must start with `./` or `../` to be recognized as a local path.
 
 ```hcl
 # Reference a module in a subdirectory
+
 module "vpc" {
   source = "./modules/vpc"
 
@@ -44,7 +45,7 @@ module "shared_security" {
 
 Local paths are ideal for monorepos where multiple applications share infrastructure modules:
 
-```
+```text
 infrastructure/
 ├── modules/
 │   ├── vpc/
@@ -90,26 +91,26 @@ module "database" {
 Unlike registry or Git sources, local path modules do not support or require version constraints.
 
 ```hcl
-# Local path modules use the exact files on disk — no version needed
+# Local path modules use the exact files on disk - no version needed
 module "security_groups" {
   source = "./modules/security"
 
   vpc_id      = var.vpc_id
   environment = var.environment
-  # Note: no `version` argument — not supported for local paths
+  # Note: no `version` argument - not supported for local paths
 }
 ```
 
 ## Re-initialization Not Required
 
-When you change local module code, you do not need to run `tofu init` again — the changes are picked up on the next `tofu plan`. This makes local modules ideal for rapid development.
+When you change local module code, you do not need to run `tofu init` again - the changes are picked up on the next `tofu plan`. This makes local modules ideal for rapid development.
 
 ## Important Notes
 
 - The path must start with `./` or `../`. A path without these prefixes is treated as a registry module, not a local path.
 - Local modules do not support version constraints.
 - When you move to sharing modules across repositories, switch to Git-based or registry sources.
-- `tofu init` copies local module contents into `.terraform/modules/` — re-run it if you rename a module.
+- `tofu init` copies local module contents into `.terraform/modules/` - re-run it if you rename a module.
 
 ## Conclusion
 

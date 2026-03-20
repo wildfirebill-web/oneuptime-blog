@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, tofu apply, Getting Started, Infrastructure as Code, DevOps
+Tags: OpenTofu, Tofu apply, Getting Started, Infrastructure as Code, DevOps
 
 Description: A guide to using the tofu apply command to provision and modify infrastructure with OpenTofu.
 
@@ -14,6 +14,7 @@ Description: A guide to using the tofu apply command to provision and modify inf
 
 ```bash
 # Navigate to your project
+
 cd /path/to/your/project
 
 # Run apply (generates a plan and prompts for confirmation)
@@ -133,7 +134,7 @@ tofu output -json
 
 ## Understanding Apply Output
 
-```
+```text
 # Sample apply output:
 random_id.project_suffix: Creating...
 random_id.project_suffix: Creation complete after 0s [id=a1b2c3d4]

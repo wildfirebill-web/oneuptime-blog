@@ -41,6 +41,7 @@ In a Fleet multi-cluster setup:
 
 ```yaml
 # cluster-registration-token.yaml
+
 apiVersion: fleet.cattle.io/v1alpha1
 kind: ClusterRegistrationToken
 metadata:
@@ -131,7 +132,7 @@ kubectl apply -f clustergroups.yaml
 
 ## Step 4: Structure Your Git Repository
 
-```
+```text
 platform-configs/
 ├── infrastructure/
 │   ├── fleet.yaml           # Targets: all clusters
@@ -252,4 +253,4 @@ kubectl get bundles -A -o wide
 
 ## Conclusion
 
-Fleet's multi-cluster deployment capabilities enable organizations to manage hundreds of clusters from a single Git repository with minimal operational overhead. By combining cluster registration, label-based targeting, ClusterGroups, and multiple GitRepo resources, you can implement sophisticated deployment topologies — from simple all-cluster deployments to complex progressive rollouts. The key to success is a thoughtful labeling strategy and well-organized repository structure that scales as your infrastructure grows.
+Fleet's multi-cluster deployment capabilities enable organizations to manage hundreds of clusters from a single Git repository with minimal operational overhead. By combining cluster registration, label-based targeting, ClusterGroups, and multiple GitRepo resources, you can implement sophisticated deployment topologies - from simple all-cluster deployments to complex progressive rollouts. The key to success is a thoughtful labeling strategy and well-organized repository structure that scales as your infrastructure grows.

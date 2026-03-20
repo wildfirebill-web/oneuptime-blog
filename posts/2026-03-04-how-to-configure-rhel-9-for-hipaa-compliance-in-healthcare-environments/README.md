@@ -53,6 +53,7 @@ Configure audit rules:
 ```bash
 sudo tee /etc/audit/rules.d/hipaa.rules <<EOF
 # Monitor authentication files
+
 -w /etc/passwd -p wa -k identity
 -w /etc/shadow -p wa -k identity
 -w /etc/group -p wa -k identity

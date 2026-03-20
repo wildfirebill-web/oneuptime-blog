@@ -18,6 +18,7 @@ Every backend migration should begin with these steps:
 
 ```bash
 # Step 1: Ensure no one else is running Terraform
+
 # Communicate with your team and pause CI/CD pipelines
 
 # Step 2: Back up the current state

@@ -42,6 +42,7 @@ Here is how to manage versions through the CLI:
 
 ```bash
 # Add a new version (this becomes the "latest")
+
 echo -n "password-v1" | gcloud secrets versions add my-secret \
   --data-file=- --project=my-project-id
 

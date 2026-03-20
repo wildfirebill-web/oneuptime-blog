@@ -12,10 +12,11 @@ OpenTofu uses files with the `.tf` extension to store HCL (HashiCorp Configurati
 
 ## How OpenTofu Reads .tf Files
 
-OpenTofu reads **all** `.tf` files in a directory when you run any command. The order of the files doesn't matter — OpenTofu merges all configurations together:
+OpenTofu reads **all** `.tf` files in a directory when you run any command. The order of the files doesn't matter - OpenTofu merges all configurations together:
 
 ```bash
 # All these files are read together
+
 ls *.tf
 # main.tf
 # variables.tf
@@ -81,7 +82,7 @@ locals {
 
 ## Organizing Large Configurations
 
-```
+```text
 project/
 ├── main.tf           # Core resources
 ├── variables.tf      # All variables

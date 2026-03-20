@@ -36,6 +36,7 @@ This example shows a validator that ensures a username follows specific rules. T
 
 ```python
 # validators.py
+
 # Basic field validators in Pydantic v2
 from pydantic import BaseModel, field_validator, ValidationError
 

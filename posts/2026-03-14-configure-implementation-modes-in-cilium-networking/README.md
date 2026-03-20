@@ -30,6 +30,7 @@ Apply the following Helm values to configure implementation modes in cilium netw
 
 ```yaml
 # cilium-tunnel-mode-values.yaml
+
 # Implementation mode configuration
 
 # Option 1: VXLAN overlay (default, works everywhere)

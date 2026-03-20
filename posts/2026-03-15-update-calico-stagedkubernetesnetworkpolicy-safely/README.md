@@ -154,6 +154,7 @@ If the update is rejected with a conflict error, re-fetch the latest version and
 ```bash
 kubectl get stagedkubernetesnetworkpolicy allow-web-ingress -n production -o yaml > latest.yaml
 # Edit latest.yaml with your changes
+
 kubectl apply -f latest.yaml
 ```
 

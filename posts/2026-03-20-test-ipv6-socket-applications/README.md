@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Testing, Socket Programming, Networking, netcat, socat, Unit Testing
+Tags: IPv6, Testing, Socket Programming, Networking, netcat, Socat, Unit Testing
 
 Description: Test IPv6 socket applications using netcat, socat, and automated testing techniques to verify servers bind correctly, clients connect over IPv6, and protocols work as expected.
 
@@ -14,6 +14,7 @@ Testing IPv6 socket applications requires verifying that servers listen on IPv6,
 
 ```bash
 # Test IPv6 server connectivity (is port open?)
+
 nc -6 -z -v ::1 8080
 nc -6 -z -v 2001:db8::10 443
 

@@ -44,6 +44,7 @@ Deploy the full production infrastructure in the primary region.
 
 ```bash
 # Create the primary Cloud SQL instance with HA
+
 gcloud sql instances create primary-db \
   --database-version=POSTGRES_15 \
   --tier=db-custom-4-16384 \

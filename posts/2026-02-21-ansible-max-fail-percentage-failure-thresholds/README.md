@@ -14,6 +14,7 @@ The `max_fail_percentage` directive tells Ansible to abort a play when the perce
 
 ```yaml
 # safe-deploy.yml - Stop if more than 25% of hosts fail
+
 ---
 - name: Deploy application
   hosts: webservers

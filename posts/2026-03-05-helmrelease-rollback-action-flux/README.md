@@ -34,6 +34,7 @@ Here is a HelmRelease with rollback configured alongside upgrade remediation.
 
 ```yaml
 # helmrelease.yaml - HelmRelease with rollback configuration
+
 apiVersion: helm.toolkit.fluxcd.io/v2
 kind: HelmRelease
 metadata:

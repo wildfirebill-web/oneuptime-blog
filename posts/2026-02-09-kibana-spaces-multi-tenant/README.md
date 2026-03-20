@@ -26,6 +26,7 @@ Create a space for the development team:
 
 ```bash
 # Using Kibana API to create space
+
 curl -X POST "http://kibana:5601/api/spaces/space" \
   -H "kbn-xsrf: true" \
   -H "Content-Type: application/json" \

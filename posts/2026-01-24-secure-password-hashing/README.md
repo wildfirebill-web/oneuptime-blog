@@ -40,6 +40,7 @@ Before diving into proper techniques, let's understand common mistakes.
 
 ```python
 # DANGEROUS - Never do this!
+
 def store_user(username, password):
     # Storing plaintext password - catastrophic if breached
     db.execute("INSERT INTO users (username, password) VALUES (%s, %s)",

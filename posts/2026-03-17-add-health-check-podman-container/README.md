@@ -24,6 +24,7 @@ Use the `--health-cmd` flag when running a container:
 
 ```bash
 # Add a basic HTTP health check to a web server container
+
 podman run -d \
   --name my-web-app \
   --health-cmd "curl -f http://localhost:8080/health || exit 1" \

@@ -34,6 +34,7 @@ First, determine your ArgoCD API base URL. If you are using port-forward:
 
 ```bash
 # Port-forward the ArgoCD API server
+
 kubectl port-forward svc/argocd-server -n argocd 8080:443
 
 # Your base URL becomes
@@ -148,7 +149,7 @@ curl -s -k -H "Authorization: Bearer $ARGOCD_TOKEN" \
   https://localhost:8080/api/v1/applications/my-app | jq '.status.sync'
 ```
 
-### Resource Operations
+Resource Operations
 
 ```bash
 # List application resources

@@ -74,6 +74,7 @@ Datasources define where Grafana fetches metrics, logs, and traces. Create a YAM
 
 ```yaml
 # API version for datasource provisioning
+
 apiVersion: 1
 
 # List of datasources to provision

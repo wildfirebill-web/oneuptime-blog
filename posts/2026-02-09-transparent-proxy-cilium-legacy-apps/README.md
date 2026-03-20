@@ -77,6 +77,7 @@ Legacy apps often use hostnames instead of Kubernetes service names. Configure D
 
 ```yaml
 # legacy-dns-config.yaml
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

@@ -93,6 +93,7 @@ Scanners degrade over time due to dust, vibration, and label quality. Tracking r
 
 ```python
 # Metrics for scanner monitoring
+
 scanner_read_rate = meter.create_counter(
     "sort.scanner.reads",
     description="Total scanner read attempts by result"

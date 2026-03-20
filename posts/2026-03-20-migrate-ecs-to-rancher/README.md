@@ -196,4 +196,4 @@ In Rancher, use the **Import YAML** feature or connect a Fleet Git repository to
 
 ## Conclusion
 
-Migrating from ECS to Rancher-managed Kubernetes requires careful mapping of ECS constructs to Kubernetes equivalents. By following a methodical approach — secrets, IAM, networking, and storage — you can achieve a smooth migration that unlocks the full power of the Kubernetes ecosystem.
+Migrating from ECS to Rancher-managed Kubernetes requires careful mapping of ECS constructs to Kubernetes equivalents. By following a methodical approach - secrets, IAM, networking, and storage - you can achieve a smooth migration that unlocks the full power of the Kubernetes ecosystem.

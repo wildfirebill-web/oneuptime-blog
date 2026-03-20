@@ -26,6 +26,7 @@ Each unique selector expression creates a separate IP set in the kernel. Reducin
 
 ```bash
 # Audit unique selectors across all policies
+
 calicoctl get globalnetworkpolicies -o yaml | \
   python3 -c "
 import sys, yaml

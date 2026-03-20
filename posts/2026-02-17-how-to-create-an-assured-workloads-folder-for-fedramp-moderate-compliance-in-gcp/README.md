@@ -34,6 +34,7 @@ Before creating an Assured Workloads folder, you need:
 
 ```bash
 # Verify you have organization-level access
+
 gcloud organizations list
 
 # Check your current IAM roles at the organization level
@@ -88,7 +89,7 @@ gcloud assured workloads list \
 
 After the folder is created, several organization policies are automatically applied. Let us examine what each one does.
 
-### Resource Location Restriction
+Resource Location Restriction
 
 This policy ensures all resources are created in US locations:
 
@@ -229,7 +230,7 @@ gcloud assured workloads violations list \
 
 If you get an error like "Service X is not allowed under the current organization policy," it means that service has not been authorized for FedRAMP Moderate. Check the list of authorized services in the GCP documentation and use an alternative if available.
 
-### Resource Location Denied
+Resource Location Denied
 
 Attempting to create resources outside of US regions will fail:
 

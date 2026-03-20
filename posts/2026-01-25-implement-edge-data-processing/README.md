@@ -62,6 +62,7 @@ Start with a simple pipeline for filtering and aggregating sensor data.
 
 ```python
 # edge_pipeline.py
+
 # Lightweight edge data processing pipeline
 
 from abc import ABC, abstractmethod

@@ -20,6 +20,7 @@ With IP forwarding enabled, the kernel checks its routing table for each incomin
 
 ```bash
 # Check IPv4 forwarding status
+
 cat /proc/sys/net/ipv4/ip_forward
 # 0 = disabled, 1 = enabled
 

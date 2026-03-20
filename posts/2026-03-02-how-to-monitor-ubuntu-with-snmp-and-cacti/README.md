@@ -16,6 +16,7 @@ Each Ubuntu server you want to monitor needs snmpd configured to respond to SNMP
 
 ```bash
 # Install snmpd on each host to monitor
+
 sudo apt update
 sudo apt install snmpd snmp-mibs-downloader
 

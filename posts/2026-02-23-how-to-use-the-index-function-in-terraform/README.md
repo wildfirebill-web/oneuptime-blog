@@ -18,6 +18,7 @@ The `index` function finds the first occurrence of a given value in a list and r
 
 ```hcl
 # Returns the index of value in the list
+
 index(list, value)
 ```
 

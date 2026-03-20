@@ -32,6 +32,7 @@ Configure the Collector to export JSON-encoded telemetry to Kafka:
 
 ```yaml
 # collector-config.yaml
+
 receivers:
   otlp:
     protocols:

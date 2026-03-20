@@ -34,6 +34,7 @@ You need gRPC version 1.41 or later for xDS support. The feature is available in
 
 ```bash
 # Enable the required APIs
+
 gcloud services enable trafficdirector.googleapis.com
 gcloud services enable compute.googleapis.com
 ```

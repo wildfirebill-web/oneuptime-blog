@@ -50,6 +50,7 @@ Start by enabling the required APIs and creating the Cloud Tasks queue.
 
 ```bash
 # Enable required APIs
+
 gcloud services enable \
   cloudtasks.googleapis.com \
   cloudfunctions.googleapis.com

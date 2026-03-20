@@ -24,6 +24,7 @@ Canonical provides official Ubuntu Server images for Raspberry Pi. Download from
 
 ```bash
 # Download Ubuntu 24.04 LTS for Raspberry Pi (64-bit ARM)
+
 wget https://cdimage.ubuntu.com/releases/24.04/release/ubuntu-24.04-preinstalled-server-arm64+raspi.img.xz
 
 # Verify the checksum

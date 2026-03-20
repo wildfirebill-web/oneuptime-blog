@@ -42,6 +42,7 @@ First, quantify how bad the problem is:
 
 ```bash
 # Check function execution times in logs
+
 # Look for outliers that are much slower than average
 gcloud functions logs read my-function \
     --region=us-central1 \

@@ -142,6 +142,7 @@ Use a directive-based approach to keep authorization logic declarative and visib
 
 ```graphql
 # Define a custom directive for role-based access
+
 directive @auth(requires: Role = USER) on FIELD_DEFINITION
 
 enum Role {

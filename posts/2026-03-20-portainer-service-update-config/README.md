@@ -8,7 +8,7 @@ Description: Learn how to configure rolling update policies for Docker Swarm ser
 
 ## Introduction
 
-The service update configuration in Docker Swarm controls how new versions are deployed — how many replicas update simultaneously, how long to wait between batches, and what to do if an update fails. Portainer exposes these settings through its service editor, enabling zero-downtime deployments. This guide covers all update configuration options.
+The service update configuration in Docker Swarm controls how new versions are deployed - how many replicas update simultaneously, how long to wait between batches, and what to do if an update fails. Portainer exposes these settings through its service editor, enabling zero-downtime deployments. This guide covers all update configuration options.
 
 ## Prerequisites
 
@@ -31,7 +31,7 @@ The service update configuration in Docker Swarm controls how new versions are d
 
 ### stop-first (Default)
 
-```
+```text
 Replica 1: Stop old → Start new (brief downtime if only 1 replica)
 Replica 2: Stop old → Start new
 ```
@@ -40,7 +40,7 @@ Best for: Services where running 2 versions simultaneously would cause issues (e
 
 ### start-first (Zero-Downtime)
 
-```
+```text
 Replica 1: Start new → Wait for healthy → Stop old (no downtime)
 Replica 2: Start new → Wait for healthy → Stop old
 ```
@@ -54,7 +54,7 @@ When creating or editing a service:
 1. Scroll to **Update/Rollback config**
 2. Set update configuration:
 
-```
+```text
 Update configuration:
   Parallelism:         2
   Delay:               10s
@@ -164,6 +164,7 @@ update_config:
 
 ```bash
 # Update to a new image version
+
 docker service update \
   --image myapp:v2.0 \
   my-service

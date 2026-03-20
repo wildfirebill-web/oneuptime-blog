@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: DHCP, VoIP, Option 150, TFTP, Cisco, sysadmin
+Tags: DHCP, VoIP, Option 150, TFTP, Cisco, Sysadmin
 
 Description: DHCP option 150 is a Cisco-proprietary option that delivers the TFTP server address to Cisco IP phones, enabling them to download their firmware and configuration automatically during boot.
 
@@ -12,10 +12,11 @@ Option 150 is a Cisco proprietary extension to DHCP that provides the IP address
 
 ## ISC dhcpd Configuration
 
-```
+```text
 # /etc/dhcp/dhcpd.conf
 
 # Define option 150 as a TFTP server IP address
+
 option tftp-server-address code 150 = ip-address;
 
 subnet 10.0.30.0 netmask 255.255.255.0 {
@@ -37,7 +38,7 @@ subnet 10.0.30.0 netmask 255.255.255.0 {
 
 Use vendor class matching to send option 150 only to Cisco phones:
 
-```
+```text
 # /etc/dhcp/dhcpd.conf
 class "cisco-phone" {
     match if substring(option vendor-class-identifier, 0, 5) = "Cisco";
@@ -54,7 +55,7 @@ subnet 10.0.30.0 netmask 255.255.255.0 {
 
 ## dnsmasq Configuration
 
-```
+```text
 # /etc/dnsmasq.conf
 
 # Option 150 as hex (0x96 = 150 in decimal)

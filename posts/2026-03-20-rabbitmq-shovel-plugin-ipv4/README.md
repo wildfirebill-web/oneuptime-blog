@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RabbitMQ, Shovel, IPv4, AMQP, Messaging, Plugin, Configuration
+Tags: RabbitMQ, Shovel, IPv4, AMQP, Messaging, Plugins, Configuration
 
 Description: Learn how to configure the RabbitMQ Shovel plugin to move messages from a queue on one IPv4 broker to an exchange on another broker.
 
@@ -29,6 +29,7 @@ systemctl restart rabbitmq-server
 # /etc/rabbitmq/rabbitmq.conf
 
 # Define a static shovel (configured at startup)
+
 shovel.my_shovel.source.protocol = amqp091
 shovel.my_shovel.source.uris.1   = amqp://admin:password@127.0.0.1:5672
 shovel.my_shovel.source.queue    = source-queue

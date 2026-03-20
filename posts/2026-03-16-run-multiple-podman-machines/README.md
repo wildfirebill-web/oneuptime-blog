@@ -20,6 +20,7 @@ Start by initializing several machines with different configurations.
 
 ```bash
 # Create a machine for web development
+
 podman machine init web-dev --cpus 2 --memory 4096 --disk-size 50
 
 # Create a machine for database work

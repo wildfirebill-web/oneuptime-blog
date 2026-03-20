@@ -36,6 +36,7 @@ StarRocks has three node types:
 
 ```yaml
 # starrocks-operator-app.yaml
+
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:

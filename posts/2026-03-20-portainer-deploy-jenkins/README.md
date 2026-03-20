@@ -1,4 +1,4 @@
-# How to Deploy Jenkins via Portainer
+# How to Deploy Jenkins via Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -49,6 +49,7 @@ volumes:
 
 ```bash
 # Get initial admin password
+
 docker exec jenkins cat /var/jenkins_home/secrets/initialAdminPassword
 ```
 

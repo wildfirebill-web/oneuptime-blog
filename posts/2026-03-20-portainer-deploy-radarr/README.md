@@ -1,4 +1,4 @@
-# How to Deploy Radarr via Portainer
+# How to Deploy Radarr via Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -75,7 +75,7 @@ Import movies from Trakt.tv, IMDb lists, or other sources:
 
 In **Settings > Media Management > Movie Naming**:
 
-```
+```text
 {Movie Title} ({Release Year}) [IMDB-{ImdbId}] {Edition Tags} {Quality Full}
 ```
 
@@ -91,6 +91,7 @@ Configure Radarr to upgrade quality automatically:
 
 ```bash
 # Get all movies
+
 curl "http://localhost:7878/api/v3/movie" \
   -H "X-Api-Key: your_radarr_api_key"
 

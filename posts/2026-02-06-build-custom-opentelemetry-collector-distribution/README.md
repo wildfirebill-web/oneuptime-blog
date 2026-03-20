@@ -47,6 +47,7 @@ Install the OCB tool with the following command:
 
 ```bash
 # Install the OpenTelemetry Collector Builder tool
+
 # This is the official tool for creating custom collector distributions
 go install go.opentelemetry.io/collector/cmd/builder@latest
 ```

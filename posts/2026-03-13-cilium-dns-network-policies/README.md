@@ -115,6 +115,7 @@ egress:
 
 ```bash
 # Watch DNS requests from a specific pod
+
 hubble observe --namespace production \
   --pod payment-service-xxx \
   --protocol dns \

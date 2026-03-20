@@ -8,7 +8,7 @@ Description: Deploy the Portainer Edge Agent on ARM-based devices such as Raspbe
 
 ## Introduction
 
-ARM devices — Raspberry Pi, Jetson Nano, Orange Pi, and similar single-board computers — are widely used for IoT, edge computing, and lightweight workloads. Portainer's Edge Agent supports ARM32 (armv7) and ARM64 (aarch64) architectures, allowing these devices to be managed centrally from a Portainer Business Edition server. This guide covers deploying the Edge Agent on ARM hardware with best practices for low-resource and intermittently connected environments.
+ARM devices - Raspberry Pi, Jetson Nano, Orange Pi, and similar single-board computers - are widely used for IoT, edge computing, and lightweight workloads. Portainer's Edge Agent supports ARM32 (armv7) and ARM64 (aarch64) architectures, allowing these devices to be managed centrally from a Portainer Business Edition server. This guide covers deploying the Edge Agent on ARM hardware with best practices for low-resource and intermittently connected environments.
 
 ## Supported Architectures
 
@@ -17,7 +17,7 @@ ARM devices — Raspberry Pi, Jetson Nano, Orange Pi, and similar single-board c
 | ARM 32-bit (armv7) | Raspberry Pi 2/3 (32-bit OS) | `portainer/agent:latest` |
 | ARM 64-bit (aarch64) | Raspberry Pi 4/5 (64-bit OS), Jetson Nano | `portainer/agent:latest` |
 
-Portainer's official images are multi-arch manifests — the correct variant is pulled automatically based on the host architecture.
+Portainer's official images are multi-arch manifests - the correct variant is pulled automatically based on the host architecture.
 
 ## Prerequisites
 
@@ -30,6 +30,7 @@ Portainer's official images are multi-arch manifests — the correct variant is 
 
 ```bash
 # On Raspberry Pi OS or Debian/Ubuntu ARM
+
 curl -fsSL https://get.docker.com | sh
 
 # Add the current user to the docker group
@@ -152,7 +153,7 @@ services:
 
 Create `/opt/portainer/.env`:
 
-```
+```text
 EDGE_ID=your-edge-id-here
 EDGE_KEY=your-edge-key-here
 ```

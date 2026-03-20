@@ -120,6 +120,7 @@ flowchart TD
 
 ```python
 # data_ingestion_component.py
+
 # This component fetches data from a source and validates it
 # before passing it to the feature engineering stage
 

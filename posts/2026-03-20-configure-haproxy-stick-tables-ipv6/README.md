@@ -90,6 +90,7 @@ frontend http_front
 
 ```haproxy
 # IPv6 clients may use multiple addresses (privacy extensions)
+
 # Tracking /64 prefix instead of individual address
 # Note: HAProxy doesn't natively support prefix tracking,
 # but you can use a Lua script or map to normalize to /64

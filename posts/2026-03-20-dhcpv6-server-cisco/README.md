@@ -43,7 +43,7 @@ ipv6 dhcp pool CLIENTS
 interface GigabitEthernet0/1
  ipv6 address 2001:db8:1::1/64
  ipv6 dhcp server CLIENTS
- ! M=1 O=1 in RA — tells clients to use DHCPv6
+ ! M=1 O=1 in RA - tells clients to use DHCPv6
  ipv6 nd managed-config-flag
  ipv6 nd other-config-flag
 ```
@@ -60,7 +60,7 @@ ipv6 dhcp pool OPTIONS-ONLY
 interface GigabitEthernet0/1
  ipv6 address 2001:db8:1::1/64
  ipv6 dhcp server OPTIONS-ONLY
- ! O=1 only — clients use SLAAC for addresses, DHCPv6 for options
+ ! O=1 only - clients use SLAAC for addresses, DHCPv6 for options
  ipv6 nd other-config-flag
 ```
 
@@ -133,7 +133,7 @@ debug ipv6 dhcp detail
 
 ## Example Output
 
-```
+```text
 Router# show ipv6 dhcp binding
 
 Client: FE80::211:22FF:FE33:4455
@@ -169,8 +169,8 @@ clear ipv6 dhcp binding *
 
 ## Best Practices
 
-1. **Always set RA flags** — `managed-config-flag` for stateful, `other-config-flag` for stateless
-2. **Set appropriate lifetimes** — T1 = 50% of valid lifetime, T2 = 80%
+1. **Always set RA flags** - `managed-config-flag` for stateful, `other-config-flag` for stateless
+2. **Set appropriate lifetimes** - T1 = 50% of valid lifetime, T2 = 80%
 3. **Use address exclusions** for routers, servers with static addresses
 4. **Monitor bindings** regularly to detect address exhaustion
 5. **Enable logging** for DHCPv6 events on production routers

@@ -89,6 +89,7 @@ This example shows a simple generation request with streaming disabled for easie
 
 ```bash
 # Send a basic generation request to Ollama
+
 # The stream: false option returns the complete response at once
 curl http://localhost:11434/api/generate -d '{
   "model": "llama3.2",

@@ -37,6 +37,7 @@ Create a dedicated namespace for Terraform state:
 
 ```bash
 # Create a namespace for Terraform state
+
 kubectl create namespace terraform-state
 
 # Verify the namespace

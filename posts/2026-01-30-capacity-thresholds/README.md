@@ -106,6 +106,7 @@ class WarningThresholdCalculator:
 
 
 # Example: Database storage capacity planning
+
 db_metrics = GrowthMetrics(
     current_utilization=65,      # Currently at 65%
     weekly_growth_rate=3,        # Growing 3% per week
@@ -269,7 +270,7 @@ db_config = ThresholdConfig(
 print(db_config.to_prometheus_rules())
 ```
 
-## Resource-Specific Thresholds
+Resource-Specific Thresholds
 
 Different resources have different characteristics and require tailored threshold strategies.
 

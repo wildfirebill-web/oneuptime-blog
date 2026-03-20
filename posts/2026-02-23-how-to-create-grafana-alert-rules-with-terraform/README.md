@@ -35,6 +35,7 @@ variable "grafana_auth" { type = string; sensitive = true }
 
 ```hcl
 # Email contact point
+
 resource "grafana_contact_point" "email" {
   name = "Operations Email"
 

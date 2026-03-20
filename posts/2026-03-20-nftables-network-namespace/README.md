@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: nftables, Network Namespace, Linux, Firewall, Isolation, netns, IPv4
+Tags: nftables, Network Namespaces, Linux, Firewall, Isolation, Netns, IPv4
 
 Description: Learn how to configure nftables firewall rules inside Linux network namespaces for isolated firewall policies, testing environments, and container-like network isolation.
 
@@ -14,6 +14,7 @@ Each Linux network namespace has its own nftables rule set. This allows independ
 
 ```bash
 # Create a new namespace
+
 ip netns add testns
 
 # Verify

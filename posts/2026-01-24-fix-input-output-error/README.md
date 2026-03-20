@@ -40,6 +40,7 @@ graph TD
 # Typical I/O error messages in dmesg or /var/log/syslog:
 
 # Generic I/O error
+
 "I/O error, dev sda, sector 123456789"
 
 # SCSI errors

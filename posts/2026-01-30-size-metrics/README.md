@@ -503,6 +503,7 @@ Here is the equivalent implementation for Python applications using OpenTelemetr
 
 ```python
 # size_metrics.py
+
 # Size metrics implementation for Python applications
 
 from opentelemetry import metrics

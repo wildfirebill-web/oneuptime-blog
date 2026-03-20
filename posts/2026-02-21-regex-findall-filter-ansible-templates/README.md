@@ -33,6 +33,7 @@ One of the most common uses is pulling IP addresses from text:
 
 ```yaml
 # extract_ips.yml - Find all IPs in command output
+
 - name: Get current connections
   ansible.builtin.shell: ss -tn state established
   register: connections

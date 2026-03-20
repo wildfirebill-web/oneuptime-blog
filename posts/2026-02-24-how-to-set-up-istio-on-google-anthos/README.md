@@ -27,6 +27,7 @@ Before starting, make sure you have:
 
 ```bash
 # Verify gcloud is installed and configured
+
 gcloud version
 gcloud config get-value project
 

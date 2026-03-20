@@ -1,4 +1,4 @@
-# How to Use the local-exec Provisioner in OpenTofu
+# How to Use the local-exec Provisioner in OpenTofu - Opentofu
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Learn how to use the `local-exec` provisioner in OpenTofu to run co
 
 ## Introduction
 
-The `local-exec` provisioner runs a command on the local machine—the computer or CI runner where OpenTofu is executing—after a resource is created. It is commonly used to trigger post-provisioning scripts, register resources with external systems, or invoke tools that do not have an OpenTofu provider.
+The `local-exec` provisioner runs a command on the local machine-the computer or CI runner where OpenTofu is executing-after a resource is created. It is commonly used to trigger post-provisioning scripts, register resources with external systems, or invoke tools that do not have an OpenTofu provider.
 
 > **Note:** OpenTofu considers provisioners a last resort. Prefer cloud-init, user data, or proper provider resources where possible. See the post on why provisioners are a last resort for details.
 

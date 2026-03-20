@@ -236,6 +236,7 @@ public class SchedulerConfig implements SchedulingConfigurer {
 
 ```yaml
 # application.yml
+
 spring:
   task:
     scheduling:

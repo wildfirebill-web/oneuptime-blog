@@ -8,7 +8,7 @@ Description: Learn how to create and manage an Azure AD client secret for the Po
 
 ## Introduction
 
-After registering an Azure AD application for Portainer's ACI integration, you need to create a client secret — the credential Portainer uses to authenticate with Azure APIs. This guide covers secret creation, proper storage, and rotation procedures.
+After registering an Azure AD application for Portainer's ACI integration, you need to create a client secret - the credential Portainer uses to authenticate with Azure APIs. This guide covers secret creation, proper storage, and rotation procedures.
 
 ## Prerequisites
 
@@ -21,7 +21,7 @@ After registering an Azure AD application for Portainer's ACI integration, you n
 A client secret is essentially a password for your Azure AD application. Key characteristics:
 
 - Has an **expiry date** (up to 24 months from creation)
-- Is only displayed **once** at creation — you cannot retrieve it again
+- Is only displayed **once** at creation - you cannot retrieve it again
 - Multiple secrets can exist simultaneously (useful during rotation)
 - Should be stored securely and never committed to source control
 
@@ -52,6 +52,7 @@ A client secret is essentially a password for your Azure AD application. Key cha
 
 ```bash
 # Log into Azure
+
 az login
 
 # Set your app ID

@@ -16,8 +16,8 @@ The `pow` function in OpenTofu computes the result of raising a base number to a
 pow(base, exponent)
 ```
 
-- **base** — the number to raise
-- **exponent** — the power to raise the base to
+- **base** - the number to raise
+- **exponent** - the power to raise the base to
 - Returns a float value
 
 ## Basic Examples

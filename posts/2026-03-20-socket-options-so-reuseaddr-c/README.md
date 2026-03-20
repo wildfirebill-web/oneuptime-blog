@@ -28,7 +28,7 @@ int get_opt(int fd, int level, int optname) {
 }
 ```
 
-## SO_REUSEADDR — Restart Without TIME_WAIT
+## SO_REUSEADDR - Restart Without TIME_WAIT
 
 ```c
 int fd = socket(AF_INET, SOCK_STREAM, 0);
@@ -37,10 +37,10 @@ int opt = 1;
 if (setsockopt(fd, SOL_SOCKET, SO_REUSEADDR, &opt, sizeof(opt)) < 0) {
     perror("SO_REUSEADDR");
 }
-/* Now fast server restart works — no "Address already in use" error */
+/* Now fast server restart works - no "Address already in use" error */
 ```
 
-## SO_KEEPALIVE — Detect Dead Connections
+## SO_KEEPALIVE - Detect Dead Connections
 
 ```c
 int opt = 1;
@@ -57,7 +57,7 @@ setsockopt(fd, IPPROTO_TCP, TCP_KEEPCNT,    &count,    sizeof(count));
 #endif
 ```
 
-## TCP_NODELAY — Disable Nagle's Algorithm
+## TCP_NODELAY - Disable Nagle's Algorithm
 
 ```c
 /* Reduce latency for small messages (e.g., interactive protocols) */
@@ -67,7 +67,7 @@ if (setsockopt(fd, IPPROTO_TCP, TCP_NODELAY, &opt, sizeof(opt)) < 0) {
 }
 ```
 
-## SO_SNDBUF / SO_RCVBUF — Buffer Sizes
+## SO_SNDBUF / SO_RCVBUF - Buffer Sizes
 
 ```c
 int sndbuf = 256 * 1024;   /* 256 KB send buffer */
@@ -82,7 +82,7 @@ getsockopt(fd, SOL_SOCKET, SO_SNDBUF, &sndbuf, &len);
 printf("Actual send buffer: %d bytes\n", sndbuf);
 ```
 
-## SO_RCVTIMEO / SO_SNDTIMEO — Timeouts
+## SO_RCVTIMEO / SO_SNDTIMEO - Timeouts
 
 ```c
 #include <sys/time.h>

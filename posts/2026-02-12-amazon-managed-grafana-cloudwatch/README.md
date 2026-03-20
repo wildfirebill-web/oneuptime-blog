@@ -29,6 +29,7 @@ Before we dive into setup, here's why you might want Grafana:
 
 ```bash
 # Create a Managed Grafana workspace
+
 aws grafana create-workspace \
   --account-access-type CURRENT_ACCOUNT \
   --authentication-providers AWS_SSO \

@@ -6,12 +6,13 @@ Tags: nmap, IPv6, Network Scanning, Security, Penetration Testing, Network Disco
 
 Description: A guide to using nmap to scan IPv6 networks and hosts, covering the -6 flag, address discovery, port scanning, and OS detection over IPv6.
 
-nmap supports IPv6 scanning via the `-6` flag. IPv6 scanning differs from IPv4 because the address space is too large to scan sequentially — scanning /64 subnets is impractical. Instead, discovery relies on known addresses, multicast, or DNS.
+nmap supports IPv6 scanning via the `-6` flag. IPv6 scanning differs from IPv4 because the address space is too large to scan sequentially - scanning /64 subnets is impractical. Instead, discovery relies on known addresses, multicast, or DNS.
 
 ## Basic IPv6 Scanning
 
 ```bash
 # Scan a single IPv6 host (requires -6 flag)
+
 nmap -6 2001:db8::10
 
 # Ping scan a specific IPv6 host

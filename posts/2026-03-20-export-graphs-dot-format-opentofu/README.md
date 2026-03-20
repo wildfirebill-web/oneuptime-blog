@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, DOT Format, Graphviz, Dependency Graphs, Infrastructure as Code
+Tags: OpenTofu, DOT Format, Graphviz, Dependency Graph, Infrastructure as Code
 
 Description: Learn how to export OpenTofu dependency graphs to DOT format for rendering, sharing, and analysis with graph visualization tools.
 
@@ -14,6 +14,7 @@ Redirect the `tofu graph` output to a `.dot` file:
 
 ```bash
 # Export the default plan graph
+
 tofu graph > infrastructure.dot
 
 # Export the apply graph
@@ -61,7 +62,7 @@ The `-draw-cycles` flag highlights any circular dependency cycles, making them e
 
 ## Customizing DOT Output with Post-Processing
 
-Enhance the raw DOT output before rendering — for example, color nodes by resource type:
+Enhance the raw DOT output before rendering - for example, color nodes by resource type:
 
 ```python
 #!/usr/bin/env python3

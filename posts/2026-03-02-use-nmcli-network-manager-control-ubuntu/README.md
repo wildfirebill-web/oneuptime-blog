@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Ubuntu, Networking, Nmcli, NetworkManager, WiFi
+Tags: Ubuntu, Networking, nmcli, NetworkManager, WiFi
 
 Description: Learn how to use nmcli to manage network connections on Ubuntu, including WiFi, Ethernet, VPN, and connection profiles from the command line.
 
@@ -14,6 +14,7 @@ Description: Learn how to use nmcli to manage network connections on Ubuntu, inc
 
 ```bash
 # Show NetworkManager status and all connections at a glance
+
 nmcli
 
 # Show connection status (cleaner summary)

@@ -1,4 +1,4 @@
-# How to Attach Secrets to Applications in Portainer
+# How to Attach Secrets to Applications in Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Learn how to create Kubernetes Secrets and attach them to applicati
 
 ## Introduction
 
-Kubernetes Secrets provide a way to store and manage sensitive information that applications need — database passwords, API tokens, TLS certificates. Unlike ConfigMaps, Secrets are base64-encoded (not encrypted by default, but can be configured with at-rest encryption). Portainer makes creating and attaching Secrets straightforward. This guide covers the complete workflow.
+Kubernetes Secrets provide a way to store and manage sensitive information that applications need - database passwords, API tokens, TLS certificates. Unlike ConfigMaps, Secrets are base64-encoded (not encrypted by default, but can be configured with at-rest encryption). Portainer makes creating and attaching Secrets straightforward. This guide covers the complete workflow.
 
 ## Prerequisites
 
@@ -31,7 +31,7 @@ Kubernetes Secrets are base64-encoded, not encrypted, by default. For production
 3. Click **+ Add secret**
 4. Configure:
 
-```
+```text
 Name:      db-credentials
 Namespace: production
 Type:      Opaque
@@ -39,7 +39,7 @@ Type:      Opaque
 
 5. Add key-value pairs (Portainer encodes values automatically):
 
-```
+```text
 Key: DB_PASSWORD    Value: MySecurePassword123!
 Key: DB_USER        Value: appuser
 Key: REDIS_PASSWORD Value: RedisPass456!
@@ -76,7 +76,7 @@ When creating/editing an application:
 2. Click **+ From Secret**
 3. Configure:
 
-```
+```sql
 Secret: db-credentials
   [x] Import all keys as environment variables
 
@@ -144,6 +144,7 @@ For HTTPS/TLS configuration:
 
 ```bash
 # Create TLS secret from cert files
+
 kubectl create secret tls my-tls-secret \
   --cert=path/to/tls.crt \
   --key=path/to/tls.key \

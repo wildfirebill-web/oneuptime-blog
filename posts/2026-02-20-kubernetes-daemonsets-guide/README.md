@@ -30,6 +30,7 @@ Here is a DaemonSet that deploys a Fluentd log collector on every node:
 
 ```yaml
 # fluentd-daemonset.yaml
+
 # Deploy Fluentd on every node to collect container logs
 # and forward them to a central logging backend.
 apiVersion: apps/v1

@@ -27,6 +27,7 @@ The `spec.targetNamespace` field on a Kustomization forces all namespaced resour
 
 ```yaml
 # Kustomization that deploys all resources to the "production" namespace
+
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
 metadata:

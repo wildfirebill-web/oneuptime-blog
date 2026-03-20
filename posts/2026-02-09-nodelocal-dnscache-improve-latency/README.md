@@ -34,6 +34,7 @@ Download and customize the official manifest:
 
 ```bash
 # Download manifest
+
 wget https://raw.githubusercontent.com/kubernetes/kubernetes/master/cluster/addons/dns/nodelocaldns/nodelocaldns.yaml
 
 # Customize for your cluster

@@ -18,6 +18,7 @@ A typical single-stage Dockerfile for a Go application looks like this:
 
 ```dockerfile
 # Single-stage build - the final image contains everything
+
 FROM golang:1.22
 WORKDIR /app
 COPY go.mod go.sum ./

@@ -18,6 +18,7 @@ pg_restore is PostgreSQL's utility for restoring databases from backups created 
 
 ```bash
 # Restore custom format backup to existing database
+
 pg_restore -h localhost -U postgres -d mydb backup.dump
 
 # Restore directory format backup

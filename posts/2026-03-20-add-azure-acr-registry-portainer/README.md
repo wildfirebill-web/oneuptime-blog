@@ -16,6 +16,7 @@ Azure Container Registry (ACR) is Microsoft's managed Docker registry service. Y
 
 ```bash
 # Enable admin account on your ACR
+
 az acr update -n myregistry --admin-enabled true
 
 # Get admin credentials

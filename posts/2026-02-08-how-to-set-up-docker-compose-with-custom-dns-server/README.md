@@ -18,6 +18,7 @@ The `dns` key in a service definition sets the DNS servers for that container:
 
 ```yaml
 # docker-compose.yml - basic custom DNS setup
+
 version: "3.8"
 
 services:

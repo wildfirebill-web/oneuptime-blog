@@ -43,6 +43,7 @@ Export cluster resources you might need later:
 
 ```bash
 # Export all custom resources
+
 kubectl get all -A -o yaml > cluster-resources-backup.yaml
 
 # Export configmaps and secrets

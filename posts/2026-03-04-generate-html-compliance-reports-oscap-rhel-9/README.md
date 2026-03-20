@@ -14,6 +14,7 @@ A well-formatted compliance report can save hours of back-and-forth with auditor
 
 ```bash
 # Install prerequisites
+
 dnf install -y openscap-scanner scap-security-guide
 
 # Generate an HTML report during a compliance scan

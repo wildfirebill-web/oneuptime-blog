@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Resources, enabled, Meta-Argument, Infrastructure as Code, DevOps
+Tags: OpenTofu, Resources, Enabled, Meta-Arguments, Infrastructure as Code, DevOps
 
 Description: A guide to using the enabled meta-argument in OpenTofu to conditionally enable or disable resources and data sources.
 
@@ -34,6 +34,7 @@ resource "aws_instance" "bastion" {
 
 ```hcl
 # Old pattern: count = 0 to disable
+
 resource "aws_instance" "bastion_old" {
   count = var.create_bastion ? 1 : 0
 

@@ -290,6 +290,7 @@ Socket.io starts with HTTP polling then upgrades to WebSocket. Both requests mus
 
 ```nginx
 # Define upstream servers with sticky sessions
+
 upstream socketio {
     ip_hash;  # Route based on client IP - same IP always goes to same server
     server app1:3000;

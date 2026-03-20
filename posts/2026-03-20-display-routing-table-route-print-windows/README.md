@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Windows, Networking, route, Routing Table, IPv4, Diagnostics
+Tags: Windows, Networking, Routes, Routing Table, IPv4, Diagnostics
 
 Description: Display and interpret the Windows IPv4 routing table using route print, understand the output columns, and filter for specific routes.
 
@@ -29,7 +29,7 @@ route print -4
 
 ## Understanding the IPv4 Route Table Columns
 
-```
+```text
 IPv4 Route Table
 ===========================================================================
 Active Routes:
@@ -77,7 +77,7 @@ route print | findstr /i "persistent"
 
 Persistent routes are shown in a separate section at the bottom:
 
-```
+```text
 Persistent Routes:
   Network Address          Netmask  Gateway Address  Metric
          10.0.0.0        255.0.0.0      192.168.1.254       1
@@ -87,6 +87,7 @@ Persistent Routes:
 
 ```powershell
 # Show IPv4 routing table with full details
+
 Get-NetRoute -AddressFamily IPv4 | Sort-Object RouteMetric | Format-Table
 
 # Show default routes only

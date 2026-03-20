@@ -19,6 +19,7 @@ Three directives control the basic restart behavior:
 ```ini
 [Service]
 # When to restart (on-failure, always, on-abnormal, on-abort, on-watchdog, on-success, no)
+
 Restart=on-failure
 
 # How long to wait before restarting

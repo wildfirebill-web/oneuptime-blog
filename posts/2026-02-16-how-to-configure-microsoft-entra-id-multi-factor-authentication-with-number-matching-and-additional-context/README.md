@@ -71,6 +71,7 @@ You can also configure this using PowerShell:
 
 ```powershell
 # Connect to Microsoft Graph with the required scopes
+
 Connect-MgGraph -Scopes "Policy.ReadWrite.AuthenticationMethod"
 
 # Get the current Microsoft Authenticator authentication method configuration

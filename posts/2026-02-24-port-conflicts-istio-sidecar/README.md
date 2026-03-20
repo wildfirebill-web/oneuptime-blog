@@ -245,6 +245,7 @@ After making changes, verify the actual iptables rules and proxy configuration:
 
 ```bash
 # Check iptables rules
+
 kubectl exec my-pod -c istio-proxy -- iptables -t nat -S
 
 # Check proxy listeners

@@ -680,6 +680,7 @@ fn main() {
 port = 8080
 debug = true
 # Database settings
+
 db_host = "localhost"
 db_port = 5432"#;
 

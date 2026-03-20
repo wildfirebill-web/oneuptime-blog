@@ -114,6 +114,7 @@ A common source of the conflict error is trying to make a resource conditional w
 
 ```hcl
 # This does NOT work - you cannot combine count and for_each
+
 resource "aws_security_group_rule" "ingress" {
   count    = var.enable_ingress ? 1 : 0
   for_each = var.ingress_rules

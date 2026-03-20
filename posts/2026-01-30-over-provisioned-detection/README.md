@@ -67,6 +67,7 @@ Different resources have different acceptable utilization ranges. A database ser
 
 ```yaml
 # over-provisioning-thresholds.yaml
+
 thresholds:
   compute:
     cpu:

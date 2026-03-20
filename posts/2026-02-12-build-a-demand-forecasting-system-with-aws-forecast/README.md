@@ -46,6 +46,7 @@ Upload your data to S3:
 
 ```python
 # Upload training data to S3
+
 import boto3
 import pandas as pd
 

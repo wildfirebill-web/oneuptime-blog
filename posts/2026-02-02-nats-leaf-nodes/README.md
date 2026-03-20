@@ -61,6 +61,7 @@ The hub cluster needs to accept leaf node connections on a dedicated port. Here 
 
 ```hcl
 # hub-server.conf
+
 # Main NATS server configuration for the hub cluster
 
 # Standard client port

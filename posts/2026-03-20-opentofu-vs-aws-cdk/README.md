@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: OpenTofu, AWS CDK, Comparison, Infrastructure as Code, AWS, DevOps
 
-Description: Compare OpenTofu and AWS CDK — their programming models, testing approaches, and multi-cloud capabilities — to choose the right infrastructure as code tool for AWS workloads.
+Description: Compare OpenTofu and AWS CDK - their programming models, testing approaches, and multi-cloud capabilities - to choose the right infrastructure as code tool for AWS workloads.
 
 ## Introduction
 
@@ -63,7 +63,7 @@ const apiHandler = new lambda.Function(this, 'ApiHandler', {
 
 ## CDK Constructs vs OpenTofu Modules
 
-CDK's strongest feature is high-level constructs — opinionated, pre-configured resources:
+CDK's strongest feature is high-level constructs - opinionated, pre-configured resources:
 
 ```typescript
 // CDK L3 Construct: ApplicationLoadBalancedFargateService
@@ -143,19 +143,19 @@ func TestLambdaDeployment(t *testing.T) {
 
 ## When OpenTofu Wins
 
-**Multi-cloud** — CDK is AWS-only. OpenTofu manages AWS, Azure, GCP, and 3,000+ other providers.
+**Multi-cloud** - CDK is AWS-only. OpenTofu manages AWS, Azure, GCP, and 3,000+ other providers.
 
-**Operations-focused teams** — HCL is readable without programming experience. CDK requires TypeScript/Python fluency.
+**Operations-focused teams** - HCL is readable without programming experience. CDK requires TypeScript/Python fluency.
 
-**Existing Terraform investment** — Direct migration path with identical HCL syntax.
+**Existing Terraform investment** - Direct migration path with identical HCL syntax.
 
 ## When CDK Wins
 
-**Developer-friendly abstractions** — L2/L3 constructs pre-configure complex multi-resource patterns (ECS + ALB + IAM) with sensible defaults.
+**Developer-friendly abstractions** - L2/L3 constructs pre-configure complex multi-resource patterns (ECS + ALB + IAM) with sensible defaults.
 
-**TypeScript/Python teams** — Developers use familiar languages, IDEs, and testing frameworks.
+**TypeScript/Python teams** - Developers use familiar languages, IDEs, and testing frameworks.
 
-**CloudFormation ecosystem** — Benefits from CloudFormation's automatic rollback and deep AWS service integrations.
+**CloudFormation ecosystem** - Benefits from CloudFormation's automatic rollback and deep AWS service integrations.
 
 ## Conclusion
 

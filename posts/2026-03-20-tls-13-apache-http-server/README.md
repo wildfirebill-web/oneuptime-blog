@@ -16,6 +16,7 @@ Description: Learn how to enable TLS 1.3 on Apache HTTP Server with strong ciphe
 
 ```bash
 # Check Apache version
+
 apache2 -v
 
 # Check OpenSSL version (must be 1.1.1+)

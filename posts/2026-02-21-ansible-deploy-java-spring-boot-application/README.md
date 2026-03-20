@@ -41,6 +41,7 @@ springboot-deploy/
 
 ```yaml
 # inventory/hosts.yml
+
 all:
   hosts:
     app1:

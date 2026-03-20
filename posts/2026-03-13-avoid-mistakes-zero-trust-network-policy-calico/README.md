@@ -27,6 +27,7 @@ This guide covers avoid mistakes zero trust network policies in Calico, includin
 
 ```yaml
 # Layer 1: Global default deny
+
 apiVersion: projectcalico.org/v3
 kind: GlobalNetworkPolicy
 metadata:

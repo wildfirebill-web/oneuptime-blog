@@ -8,7 +8,7 @@ Description: Learn how to configure the shared memory (shm_size) for Docker cont
 
 ## Introduction
 
-Docker containers have a default `/dev/shm` (shared memory) size of 64 MB. Many applications — web browsers running in headless mode, PostgreSQL, certain machine learning frameworks, and video processing tools — require significantly more shared memory to function correctly. Portainer lets you configure this limit when creating a container.
+Docker containers have a default `/dev/shm` (shared memory) size of 64 MB. Many applications - web browsers running in headless mode, PostgreSQL, certain machine learning frameworks, and video processing tools - require significantly more shared memory to function correctly. Portainer lets you configure this limit when creating a container.
 
 ## Prerequisites
 
@@ -30,9 +30,10 @@ Shared memory (`/dev/shm`) is a tmpfs filesystem used for inter-process communic
 3. Find the **Shared memory size** field.
 4. Enter the size in MB.
 
-```
+```text
 Shared memory size: 256   (MB)
 # or
+
 Shared memory size: 2048  (MB for ML workloads)
 ```
 
@@ -179,9 +180,9 @@ ls -la /dev/shm/
 ## Best Practices
 
 - **Set shm_size explicitly** for Chrome/Selenium, ML workloads, and PostgreSQL.
-- **Don't over-allocate** — shm_size counts against the container's memory limit.
+- **Don't over-allocate** - shm_size counts against the container's memory limit.
 - **Use `--disable-dev-shm-usage`** for Chrome if you can't increase shm_size.
-- **Monitor actual usage** — set `shm_size` to match actual requirements, not arbitrary large values.
+- **Monitor actual usage** - set `shm_size` to match actual requirements, not arbitrary large values.
 
 ## Conclusion
 

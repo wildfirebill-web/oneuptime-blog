@@ -39,6 +39,7 @@ APT is the package management system used by Debian, Ubuntu, Linux Mint, and oth
 
 ```bash
 # Update the package index from all configured repositories
+
 # Always run this before installing or upgrading packages
 sudo apt update
 

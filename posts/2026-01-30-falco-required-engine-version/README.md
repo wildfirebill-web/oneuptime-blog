@@ -33,6 +33,7 @@ To specify a required engine version in your rules file, use the `required_engin
 
 ```yaml
 # Specify the minimum required engine version
+
 - required_engine_version: 0.31.0
 
 # Your rules follow below

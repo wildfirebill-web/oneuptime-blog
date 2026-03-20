@@ -24,7 +24,7 @@ flowchart TD
     A[Wrong address selected] --> B{Source or Destination?}
     B --> C[Source address wrong]
     B --> D[Destination sorted wrong]
-    C --> E[Check ip addr — deprecated/scope?]
+    C --> E[Check ip addr - deprecated/scope?]
     C --> F[Check ip addrlabel list]
     C --> G[Python socket connect test]
     D --> H[Check /etc/gai.conf precedence]
@@ -39,6 +39,7 @@ flowchart TD
 
 ```bash
 # Python one-liner: show getaddrinfo sort order
+
 python3 -c "
 import socket
 import sys
@@ -97,8 +98,8 @@ ip -6 addr show | grep "inet6" | while read -r line; do
     scope=$(echo "$line" | awk '{print $4}')
     flags=$(echo "$line" | awk '{print $5}')
     deprecated=""
-    [ "$flags" = "deprecated" ] && deprecated="(DEPRECATED — Rule 3 skips this)"
-    [ "$flags" = "temporary" ] && temp="(temporary — Rule 7 prefers this)"
+    [ "$flags" = "deprecated" ] && deprecated="(DEPRECATED - Rule 3 skips this)"
+    [ "$flags" = "temporary" ] && temp="(temporary - Rule 7 prefers this)"
     echo "  ${addr} scope=${scope} ${deprecated}${temp}"
 done
 
@@ -186,21 +187,21 @@ PYEOF
 ## Fixing Common Issues
 
 ```bash
-# Fix 1: Deprecated address being skipped — restore preferred lifetime
+# Fix 1: Deprecated address being skipped - restore preferred lifetime
 ip addr change 2001:db8:1::10/64 dev eth0 preferred_lft forever
 
-# Fix 2: Wrong label causing incorrect source — override label
+# Fix 2: Wrong label causing incorrect source - override label
 ip addrlabel add prefix 2001:db8::/32 label 99  # unique label
 # Now connections to this destination won't match ULA source label 13
 
-# Fix 3: Temporary addresses not used — enable privacy extensions
+# Fix 3: Temporary addresses not used - enable privacy extensions
 sysctl -w net.ipv6.conf.eth0.use_tempaddr=2
 
-# Fix 4: IPv4 preferred when IPv6 expected — restore gai.conf defaults
+# Fix 4: IPv4 preferred when IPv6 expected - restore gai.conf defaults
 rm -f /etc/gai.conf
 # Or explicitly set IPv6 precedence higher than IPv4
 
-# Fix 5: ULA used for global destination — check label 13 scope
+# Fix 5: ULA used for global destination - check label 13 scope
 # ULA fc00::/7 label 13 should NOT match global ::/0 label 1
 # If it does, someone modified the policy table
 ip addrlabel flush  # restore kernel defaults

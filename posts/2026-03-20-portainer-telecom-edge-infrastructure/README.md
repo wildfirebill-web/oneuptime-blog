@@ -1,4 +1,4 @@
-# How to Set Up Portainer for Telecommunications Edge Infrastructure
+# How to Set Up Portainer for Telecommunications Edge Infrastructure (2)
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,19 +8,20 @@ Description: Deploy and manage containerized network functions and edge applicat
 
 ---
 
-Telecommunications operators run distributed infrastructure across thousands of edge sites — central offices, cell towers, and data centers. Portainer's Edge Agent and Kubernetes integration support containerized network functions (CNFs) and edge applications at these sites.
+Telecommunications operators run distributed infrastructure across thousands of edge sites - central offices, cell towers, and data centers. Portainer's Edge Agent and Kubernetes integration support containerized network functions (CNFs) and edge applications at these sites.
 
 ## Telecom Edge Use Cases for Portainer
 
-- **vCPE (Virtual Customer Premises Equipment)** — SD-WAN, firewall, and routing functions
-- **MEC (Multi-Access Edge Computing)** — application hosting close to the radio
-- **OSS/BSS microservices** — operations and business support systems
-- **Network probes** — traffic monitoring and quality measurement
+- **vCPE (Virtual Customer Premises Equipment)** - SD-WAN, firewall, and routing functions
+- **MEC (Multi-Access Edge Computing)** - application hosting close to the radio
+- **OSS/BSS microservices** - operations and business support systems
+- **Network probes** - traffic monitoring and quality measurement
 
 ## Step 1: Deploy a vCPE Stack
 
 ```yaml
-# vcpe-stack.yml — virtual CPE for enterprise customer edge
+# vcpe-stack.yml - virtual CPE for enterprise customer edge
+
 version: "3.8"
 
 services:
@@ -168,4 +169,4 @@ Telecom operators must meet strict compliance requirements:
 
 ## Summary
 
-Portainer provides telecom operators with a practical approach to managing containerized network functions at edge sites. Its Edge Agent model — outbound connections only, no inbound firewall rules needed — is well-suited to the security requirements of telecom infrastructure.
+Portainer provides telecom operators with a practical approach to managing containerized network functions at edge sites. Its Edge Agent model - outbound connections only, no inbound firewall rules needed - is well-suited to the security requirements of telecom infrastructure.

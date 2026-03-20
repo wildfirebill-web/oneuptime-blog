@@ -14,6 +14,7 @@ Azure Data Lake Storage Gen2 (ADLS Gen2) combines the capabilities of Azure Blob
 
 ```hcl
 # main.tf - ADLS Gen2 requires hierarchical namespace to be enabled
+
 resource "azurerm_storage_account" "adls" {
   name                     = "myadlsgen2storage"
   resource_group_name      = azurerm_resource_group.rg.name

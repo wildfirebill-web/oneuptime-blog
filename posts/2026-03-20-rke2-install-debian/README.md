@@ -19,6 +19,7 @@ Debian is a widely used Linux distribution known for its stability and extensive
 
 ```bash
 # Update package lists and upgrade existing packages
+
 sudo apt-get update && sudo apt-get upgrade -y
 
 # Install required packages

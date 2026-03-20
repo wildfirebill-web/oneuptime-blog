@@ -20,6 +20,7 @@ Use AWS Instance Scheduler to automate start/stop schedules:
 
 ```hcl
 # Tag-based scheduling: instances with these tags will be managed
+
 resource "aws_instance" "dev_server" {
   ami           = var.ami_id
   instance_type = "t3.large"

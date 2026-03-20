@@ -39,6 +39,7 @@ Create a VM with only an internal IP address:
 
 ```bash
 # Create a VM with no external IP address
+
 gcloud compute instances create private-vm \
     --zone=us-central1-a \
     --machine-type=e2-medium \

@@ -26,6 +26,7 @@ You will also want `talosctl` available for testing the generated images.
 
 ```bash
 # Install talosctl
+
 curl -sL https://talos.dev/install | sh
 
 # Verify installation

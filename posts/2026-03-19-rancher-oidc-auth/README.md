@@ -58,6 +58,7 @@ Find your provider's OIDC discovery endpoint:
 
 ```bash
 # Keycloak
+
 curl -s "https://keycloak.example.com/realms/your-realm/.well-known/openid-configuration" | jq
 
 # Auth0

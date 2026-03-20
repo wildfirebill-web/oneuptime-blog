@@ -16,6 +16,7 @@ The most basic install command pulls the latest version of a collection:
 
 ```bash
 # Install the latest version of community.docker
+
 ansible-galaxy collection install community.docker
 ```
 

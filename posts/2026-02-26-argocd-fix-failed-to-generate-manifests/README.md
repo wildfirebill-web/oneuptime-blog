@@ -159,6 +159,7 @@ failed to generate manifests: signal: killed
 kubectl top pods -n argocd -l app.kubernetes.io/name=argocd-repo-server
 
 # Check for OOMKilled events
+
 kubectl describe pod -n argocd -l app.kubernetes.io/name=argocd-repo-server | \
   grep -A5 "Last State"
 ```

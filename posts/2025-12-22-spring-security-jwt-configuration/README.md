@@ -67,6 +67,7 @@ sequenceDiagram
 
 ```yaml
 # application.yml
+
 jwt:
   secret: your-256-bit-secret-key-must-be-at-least-32-characters-long
   expiration: 86400000  # 24 hours in milliseconds

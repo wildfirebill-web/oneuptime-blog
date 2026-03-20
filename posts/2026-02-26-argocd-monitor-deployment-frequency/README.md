@@ -29,6 +29,7 @@ The primary metric is `argocd_app_sync_total`, which is a counter that increment
 
 ```promql
 # Total syncs per application
+
 argocd_app_sync_total
 
 # Labels available:

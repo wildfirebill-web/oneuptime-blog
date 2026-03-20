@@ -26,7 +26,7 @@ VXLAN and GRE are both popular overlay tunneling protocols on Linux, but they ha
 
 ## Overhead Comparison
 
-```
+```text
 Physical MTU: 1500 bytes
 
 GRE:   1500 - 24 = 1476 bytes usable
@@ -39,6 +39,7 @@ GRE has 26 bytes less overhead than VXLAN.
 
 ```bash
 # Use VXLAN when:
+
 # 1. You need Layer 2 extension (MAC-level bridging between sites)
 # 2. You're building a container/Kubernetes overlay
 # 3. You need more than 4094 VLAN segments

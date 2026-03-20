@@ -20,6 +20,7 @@ Download the official Pi-hole image.
 
 ```bash
 # Pull the latest Pi-hole image
+
 podman pull docker.io/pihole/pihole:latest
 
 # Verify the image

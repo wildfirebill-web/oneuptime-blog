@@ -59,6 +59,7 @@ Decide on your licensing model:
 
 ```bash
 # Option 1: License Included (AWS provides the license)
+
 # No prep needed - select this during wizard
 
 # Option 2: Bring Your Own License (BYOL)

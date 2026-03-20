@@ -16,6 +16,7 @@ The `group` module is part of `ansible.builtin`, so it is available out of the b
 
 ```yaml
 # create-group-basic.yml - Create a basic group
+
 - name: Create a group
   hosts: all
   become: yes

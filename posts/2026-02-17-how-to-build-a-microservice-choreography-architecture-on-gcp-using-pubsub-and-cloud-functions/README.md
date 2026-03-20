@@ -35,6 +35,7 @@ Create the Pub/Sub topics that form your event bus. Each topic represents a doma
 
 ```bash
 # Create topics for domain events - named after what happened, not who sends them
+
 gcloud pubsub topics create user-registered
 gcloud pubsub topics create email-sent
 gcloud pubsub topics create account-provisioned

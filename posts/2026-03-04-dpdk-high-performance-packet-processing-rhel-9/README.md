@@ -37,6 +37,7 @@ Before starting, make sure you have:
 
 ```bash
 # Enable the CodeReady Builder repository for development headers
+
 sudo subscription-manager repos --enable codeready-builder-for-rhel-9-x86_64-rpms
 
 # Install DPDK and development packages

@@ -50,6 +50,7 @@ sequenceDiagram
 
 ```bash
 # Check if logged in
+
 docker login
 
 # View stored credentials

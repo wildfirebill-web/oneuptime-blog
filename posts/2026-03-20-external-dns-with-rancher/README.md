@@ -27,6 +27,7 @@ helm repo update
 
 ```bash
 # Create an IAM policy allowing Route53 record management
+
 # Then create a Kubernetes Secret with the credentials
 kubectl create secret generic route53-credentials \
   --from-literal=aws_access_key_id=YOUR_ACCESS_KEY \

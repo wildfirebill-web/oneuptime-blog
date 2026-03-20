@@ -30,6 +30,7 @@ The simplest check is whether the VIP responds to requests:
 
 ```bash
 # Check API server health through VIP
+
 curl -sk --connect-timeout 5 https://192.168.1.100:6443/healthz
 # Should return "ok"
 

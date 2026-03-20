@@ -12,7 +12,7 @@ Modern .NET applications (ASP.NET Core) run cross-platform on both Linux and Win
 
 ## Choose the Right Runtime
 
-```
+```text
 .NET Framework 4.x → Must use Windows nodes
 .NET Core / .NET 5+ → Prefer Linux nodes (smaller images, better performance)
 .NET Core targeting Windows APIs → Windows nodes required
@@ -22,6 +22,7 @@ Modern .NET applications (ASP.NET Core) run cross-platform on both Linux and Win
 
 ```dockerfile
 # .NET Framework 4.8 Web API
+
 FROM mcr.microsoft.com/dotnet/framework/sdk:4.8-windowsservercore-ltsc2022 AS build
 WORKDIR /app
 

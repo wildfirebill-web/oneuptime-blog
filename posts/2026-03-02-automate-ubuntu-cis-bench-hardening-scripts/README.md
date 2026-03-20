@@ -25,6 +25,7 @@ Organize the hardening script into sections matching the CIS benchmark chapters.
 
 ```bash
 # Create a working directory for hardening scripts
+
 sudo mkdir -p /opt/hardening/{scripts,logs,reports}
 sudo chmod 700 /opt/hardening
 

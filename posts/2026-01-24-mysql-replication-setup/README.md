@@ -40,6 +40,7 @@ Before setting up replication, ensure both servers can communicate and have cons
 
 ```bash
 # Check MySQL version on both servers
+
 mysql --version
 
 # Ensure source and replica can communicate on port 3306

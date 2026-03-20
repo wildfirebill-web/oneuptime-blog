@@ -42,6 +42,7 @@ The following workflow configuration triggers on pull request events and runs es
 
 ```yaml
 # .github/workflows/pr-checks.yml
+
 # Workflow that runs on every pull request targeting main branch
 name: Pull Request Checks
 

@@ -115,6 +115,7 @@ The first step in any troubleshooting session is to check the overall cluster he
 
 ```bash
 # Check the overall cluster health status
+
 # This provides a quick summary of any issues affecting the cluster
 ceph health detail
 

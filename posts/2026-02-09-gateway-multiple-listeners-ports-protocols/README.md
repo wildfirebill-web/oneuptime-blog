@@ -27,6 +27,7 @@ Configure a Gateway supporting HTTP, HTTPS, TLS passthrough, TCP, and UDP:
 
 ```yaml
 # multi-protocol-gateway.yaml
+
 apiVersion: gateway.networking.k8s.io/v1
 kind: Gateway
 metadata:

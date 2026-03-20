@@ -8,9 +8,9 @@ Description: Learn how to put Portainer behind Cloudflare Access for zero-trust 
 
 ## What Is Cloudflare Access?
 
-Cloudflare Access sits in front of your application and authenticates users before forwarding requests to your backend. Even if someone finds your Portainer URL, they must first authenticate through Cloudflare — they never reach Portainer without valid identity.
+Cloudflare Access sits in front of your application and authenticates users before forwarding requests to your backend. Even if someone finds your Portainer URL, they must first authenticate through Cloudflare - they never reach Portainer without valid identity.
 
-```
+```text
 User → Cloudflare Access (identity check) → Cloudflare Tunnel → Portainer
          ↓ if not authenticated
          Cloudflare login page (Google, GitHub, etc.)
@@ -27,10 +27,10 @@ User → Cloudflare Access (identity check) → Cloudflare Tunnel → Portainer
 1. **Zero Trust → Settings → Authentication → Login methods**
 2. Click **Add new** and select your provider:
 
-```
+```text
 Google: Enter Client ID and Client Secret from Google OAuth
 GitHub: Enter Client ID and Client Secret from GitHub OAuth app
-OTP Email: No setup required — Cloudflare sends email codes
+OTP Email: No setup required - Cloudflare sends email codes
 ```
 
 ## Step 2: Create an Access Application
@@ -39,7 +39,7 @@ OTP Email: No setup required — Cloudflare sends email codes
 2. Select **Self-hosted**
 3. Configure:
 
-```
+```text
 Application name:    Portainer
 Application domain:  portainer.yourdomain.com
 Session duration:    24h (or your preference)
@@ -49,7 +49,7 @@ Session duration:    24h (or your preference)
 
 Policies define who can access Portainer:
 
-```
+```text
 Policy name:   Allow Team
 Decision:      Allow
 
@@ -65,7 +65,7 @@ Include rules:
 
 For stricter control, require a specific group:
 
-```
+```text
 Include:
   Email domain: yourcompany.com
 Require:
@@ -108,7 +108,7 @@ If Portainer webhooks need to be accessible without auth:
 
 1. Create a **Bypass** policy for the webhook path:
 
-```
+```text
 Policy name:   Webhook Bypass
 Decision:      Bypass
 

@@ -42,6 +42,7 @@ First, create a GitRepository for the shared resources.
 
 ```yaml
 # shared-resources-source.yaml - The shared resources repository
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: GitRepository
 metadata:

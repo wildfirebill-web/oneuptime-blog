@@ -137,6 +137,7 @@ The most common search pattern looks for errors within a specific time window. S
 
 ```bash
 # Elasticsearch query: Find all errors in payment-service in the last hour
+
 # Uses bool query to combine multiple conditions
 curl -X POST "localhost:9200/logs-*/_search" -H 'Content-Type: application/json' -d'
 {

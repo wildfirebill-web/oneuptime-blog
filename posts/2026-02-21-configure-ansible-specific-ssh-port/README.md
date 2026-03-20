@@ -20,6 +20,7 @@ The most granular approach is setting the port for each host individually:
 
 ```ini
 # inventory.ini
+
 [webservers]
 web01 ansible_host=10.0.0.10 ansible_port=2222
 web02 ansible_host=10.0.0.11 ansible_port=2222

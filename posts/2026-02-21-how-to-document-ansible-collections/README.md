@@ -191,6 +191,7 @@ Test your documentation locally with `ansible-doc`:
 
 ```bash
 # View module documentation
+
 ansible-doc my_namespace.my_collection.config_entry
 
 # View examples only

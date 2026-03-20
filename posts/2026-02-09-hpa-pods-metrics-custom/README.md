@@ -24,6 +24,7 @@ Start by instrumenting your application to export custom metrics.
 
 ```python
 # Python Flask example with prometheus_client
+
 from flask import Flask
 from prometheus_client import Counter, Gauge, Histogram, generate_latest, REGISTRY
 import time

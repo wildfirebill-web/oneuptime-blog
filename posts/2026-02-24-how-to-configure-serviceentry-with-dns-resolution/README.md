@@ -56,6 +56,7 @@ This works great for most cloud-hosted APIs. AWS, Google Cloud, and Azure APIs a
 
 ```bash
 # Verify DNS resolution is working
+
 istioctl proxy-config endpoints deploy/my-app | grep example.com
 ```
 

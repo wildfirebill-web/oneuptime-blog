@@ -29,6 +29,7 @@ The simplest mapping changes the namespace during restore:
 
 ```bash
 # Restore production backup to staging namespace
+
 velero restore create production-to-staging \
   --from-backup production-backup-20260209 \
   --namespace-mappings production:staging

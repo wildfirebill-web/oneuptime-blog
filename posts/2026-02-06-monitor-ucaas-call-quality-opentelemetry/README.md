@@ -181,6 +181,7 @@ The Session Border Controller sees all calls and has accurate quality data. Inst
 
 ```python
 # sbc_metrics.py
+
 from opentelemetry import metrics
 
 meter = metrics.get_meter("ucaas.sbc")

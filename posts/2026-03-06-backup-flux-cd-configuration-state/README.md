@@ -47,6 +47,7 @@ Flux CD stores critical secrets that are not in Git. These include Git deploy ke
 ```bash
 #!/bin/bash
 # scripts/backup-flux-secrets.sh
+
 # Exports all Flux CD secrets to encrypted backup files
 
 BACKUP_DIR="flux-backup-$(date +%Y%m%d-%H%M%S)"

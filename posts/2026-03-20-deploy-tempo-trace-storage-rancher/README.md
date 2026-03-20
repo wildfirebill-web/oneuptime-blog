@@ -36,6 +36,7 @@ kubectl create secret generic tempo-s3-credentials \
 
 ```yaml
 # tempo-values.yaml
+
 tempo:
   storage:
     trace:

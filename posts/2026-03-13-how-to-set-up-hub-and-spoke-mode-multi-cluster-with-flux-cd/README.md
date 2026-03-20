@@ -288,6 +288,7 @@ Since all Flux resources live on the management cluster, monitoring is centraliz
 kubectl config use-context management-cluster
 
 # View all Kustomizations across all spokes
+
 flux get kustomizations
 
 # Check a specific spoke cluster

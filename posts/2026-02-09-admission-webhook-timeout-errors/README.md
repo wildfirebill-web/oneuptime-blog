@@ -35,6 +35,7 @@ Start by listing all admission webhooks registered in your cluster. Both validat
 
 ```bash
 # List validating webhooks
+
 kubectl get validatingwebhookconfiguration
 
 # List mutating webhooks

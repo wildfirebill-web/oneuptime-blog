@@ -29,6 +29,7 @@ Store device-specific configuration in ConfigMaps, managed by Flux through Kusto
 
 ```yaml
 # apps/base/iot-device/configmap.yaml
+
 # Base configuration template
 apiVersion: v1
 kind: ConfigMap

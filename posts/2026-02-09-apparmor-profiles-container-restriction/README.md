@@ -49,6 +49,7 @@ Verify AppArmor is enabled on nodes:
 
 ```bash
 # Check if AppArmor is running
+
 sudo aa-status
 
 # List loaded profiles

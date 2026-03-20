@@ -30,6 +30,7 @@ Harbor is a CNCF-graduated registry that supports pull-through proxying and can 
 
 ```yaml
 # infrastructure/harbor/helmrelease.yaml
+
 apiVersion: helm.toolkit.fluxcd.io/v2
 kind: HelmRelease
 metadata:

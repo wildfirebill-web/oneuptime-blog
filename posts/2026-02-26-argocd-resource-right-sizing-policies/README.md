@@ -34,6 +34,7 @@ The Vertical Pod Autoscaler (VPA) monitors actual resource usage and generates r
 
 ```yaml
 # VPA in recommendation mode - does not modify pods
+
 apiVersion: autoscaling.k8s.io/v1
 kind: VerticalPodAutoscaler
 metadata:

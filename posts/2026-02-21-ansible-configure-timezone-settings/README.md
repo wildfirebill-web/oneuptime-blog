@@ -29,6 +29,7 @@ This playbook sets the timezone to UTC on all servers:
 
 ```yaml
 # set-timezone.yml - Configure timezone across all servers
+
 ---
 - name: Configure System Timezone
   hosts: all

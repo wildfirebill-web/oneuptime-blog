@@ -37,6 +37,7 @@ You can create the resource through the Azure portal, but using the CLI keeps th
 
 ```bash
 # Create a resource group if you don't have one already
+
 az group create --name rg-pubsub-demo --location eastus
 
 # Create the Web PubSub resource with the Free tier for testing

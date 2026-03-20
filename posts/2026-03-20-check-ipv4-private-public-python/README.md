@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Python, IPv4, Private, Public, ipaddress, Networking
+Tags: Python, IPv4, Private, Public, Ipaddress, Networking
 
 Description: Learn how to determine whether an IPv4 address is private (RFC 1918), public (globally routable), loopback, link-local, or reserved using Python's ipaddress standard library.
 
@@ -40,6 +40,7 @@ for ip in ["192.168.1.1", "8.8.8.8", "127.0.0.1", "169.254.1.1", "224.0.0.1", "0
 import ipaddress
 
 # RFC 1918 private address ranges
+
 PRIVATE_RANGES = [
     ipaddress.IPv4Network("10.0.0.0/8"),
     ipaddress.IPv4Network("172.16.0.0/12"),

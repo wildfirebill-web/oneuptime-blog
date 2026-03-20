@@ -1,10 +1,10 @@
-# How to Fix "Network Cable Unplugged" Errors Caused by Duplex Mismatch
+# How to Fix 'Network Cable Unplugged' Errors Caused by Duplex Mismatch
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Duplex Mismatch, Ethernet, ethtool, Network Troubleshooting, Linux, Cisco, Speed
 
-Description: Learn how to diagnose and fix duplex mismatch issues that cause intermittent connectivity, high error rates, and "network cable unplugged" errors on Ethernet interfaces.
+Description: Learn how to diagnose and fix duplex mismatch issues that cause intermittent connectivity, high error rates, and 'network cable unplugged' errors on Ethernet interfaces.
 
 ---
 
@@ -12,7 +12,7 @@ A duplex mismatch occurs when one side of an Ethernet link auto-negotiates to ha
 
 ## Symptoms of Duplex Mismatch
 
-```
+```text
 - Interface shows UP but ping drops packets intermittently
 - Very slow throughput (< 10% of link speed)
 - High error/collision counters on one side
@@ -24,6 +24,7 @@ A duplex mismatch occurs when one side of an Ethernet link auto-negotiates to ha
 
 ```bash
 # Check current speed and duplex
+
 ethtool eth0
 
 # Output:
@@ -62,7 +63,7 @@ ACTION=="add", SUBSYSTEM=="net", KERNEL=="eth0", \
 
 ## Fixing on Cisco IOS
 
-```
+```text
 ! Force speed and duplex on switch port
 interface FastEthernet0/1
   speed 100
@@ -75,7 +76,7 @@ show interface FastEthernet0/1 | include duplex|speed|error
 
 ## Best Practice: Match Both Sides
 
-```
+```text
 Preferred: Both sides auto-negotiate
   Linux:  ethtool -s eth0 autoneg on
   Cisco:  speed auto / duplex auto

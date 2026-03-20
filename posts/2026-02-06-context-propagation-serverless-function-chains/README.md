@@ -37,6 +37,7 @@ Before tackling propagation, let us establish a solid base configuration for Lam
 
 ```bash
 # Add the OpenTelemetry Lambda layer to your function.
+
 # This layer includes the SDK, auto-instrumentation, and a collector.
 aws lambda update-function-configuration \
   --function-name my-function \

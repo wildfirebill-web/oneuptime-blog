@@ -16,6 +16,7 @@ The simplest approach is to listen on port 80 and issue a `301 Moved Permanently
 
 ```nginx
 # /etc/nginx/sites-available/example.com
+
 server {
     listen 80;
     listen [::]:80;

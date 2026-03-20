@@ -213,6 +213,7 @@ class PriorityBasedSampler(Sampler):
 
 
 # Usage
+
 from opentelemetry import trace
 from opentelemetry.sdk.trace import TracerProvider
 

@@ -1,4 +1,4 @@
-# How to Fix Portainer Not Working Behind Cloudflare Tunnel
+# How to Fix Portainer Not Working Behind Cloudflare Tunnel - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -22,6 +22,7 @@ Cloudflare Tunnel (formerly Argo Tunnel) is a popular way to expose self-hosted 
 
 ```bash
 # In the Cloudflare Dashboard:
+
 # 1. Log in to Cloudflare Dashboard
 # 2. Go to your domain → Network
 # 3. Find "WebSockets"
@@ -183,7 +184,7 @@ services:
   portainer:
     image: portainer/portainer-ce:latest
     restart: unless-stopped
-    # Only expose locally — accessed via Cloudflare Tunnel
+    # Only expose locally - accessed via Cloudflare Tunnel
     expose:
       - "9443"
     # No public port binding needed with Cloudflare Tunnel

@@ -12,7 +12,7 @@ Classic EIGRPv6 uses the `ipv6 router eigrp` configuration mode. This is the old
 
 ## Prerequisites
 
-```
+```text
 ! Enable IPv6 unicast routing
 Router(config)# ipv6 unicast-routing
 
@@ -24,10 +24,10 @@ Router# show running-config | include ipv6 unicast-routing
 
 Unlike EIGRP for IPv4, classic EIGRPv6 is enabled per-interface (not per-network statement) and is shutdown by default:
 
-```
+```text
 ! Step 1: Create the EIGRPv6 process
 Router(config)# ipv6 router eigrp 1
-Router(config-rtr)# eigrp router-id 1.1.1.1    ! Required — no auto-derive from IPv4
+Router(config-rtr)# eigrp router-id 1.1.1.1    ! Required - no auto-derive from IPv4
 Router(config-rtr)# no shutdown                 ! EIGRPv6 is shutdown by default!
 
 ! Step 2: Enable EIGRPv6 on interfaces
@@ -46,7 +46,7 @@ Router(config-if)# ipv6 eigrp 1
 
 EIGRPv6 requires a 32-bit Router ID, just like OSPFv3. If there is no IPv4 address on the router, it must be set manually:
 
-```
+```text
 Router(config)# ipv6 router eigrp 1
 Router(config-rtr)# eigrp router-id 1.1.1.1   ! Using dotted decimal notation
 Router(config-rtr)# no shutdown
@@ -54,7 +54,7 @@ Router(config-rtr)# no shutdown
 
 ## Passive Interfaces
 
-```
+```text
 ! Suppress EIGRPv6 on a specific interface (still advertises the prefix)
 Router(config)# ipv6 router eigrp 1
 Router(config-rtr)# passive-interface GigabitEthernet0/2
@@ -62,7 +62,7 @@ Router(config-rtr)# passive-interface GigabitEthernet0/2
 
 ## Configuring Timers
 
-```
+```text
 ! Change hello and hold timers on an interface
 Router(config)# interface GigabitEthernet0/0
 Router(config-if)# ipv6 hello-interval eigrp 1 5    ! Hello every 5 seconds
@@ -71,7 +71,7 @@ Router(config-if)# ipv6 hold-time eigrp 1 15        ! Hold time 15 seconds
 
 ## Authentication
 
-```
+```text
 ! MD5 authentication for classic EIGRPv6
 Router(config)# key chain EIGRP_KEY
 Router(config-keychain)# key 1
@@ -84,7 +84,7 @@ Router(config-if)# ipv6 authentication key-chain eigrp 1 EIGRP_KEY
 
 ## Verification Commands
 
-```
+```text
 ! Show EIGRPv6 neighbors
 Router# show ipv6 eigrp neighbors
 
@@ -100,7 +100,7 @@ Router# show ipv6 eigrp
 
 ## Sample Neighbor Output
 
-```
+```text
 Router# show ipv6 eigrp neighbors
 
 IPv6-EIGRP neighbors for process 1

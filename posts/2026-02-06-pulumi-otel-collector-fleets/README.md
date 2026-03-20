@@ -16,6 +16,7 @@ When you have 20 teams each needing their own Collector with slightly different 
 
 ```bash
 # Create a new Pulumi project
+
 pulumi new kubernetes-typescript --name otel-fleet
 
 # Install dependencies

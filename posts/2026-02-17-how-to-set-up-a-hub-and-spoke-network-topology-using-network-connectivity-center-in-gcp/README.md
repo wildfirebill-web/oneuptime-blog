@@ -38,6 +38,7 @@ Before setting up NCC:
 
 ```bash
 # Enable the required APIs
+
 gcloud services enable networkconnectivity.googleapis.com
 gcloud services enable compute.googleapis.com
 ```

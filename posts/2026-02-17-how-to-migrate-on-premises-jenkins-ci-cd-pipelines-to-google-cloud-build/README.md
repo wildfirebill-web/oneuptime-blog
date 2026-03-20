@@ -88,6 +88,7 @@ Here is the equivalent Cloud Build configuration:
 
 ```yaml
 # cloudbuild.yaml - after migration
+
 steps:
   # Install dependencies
   - name: 'node:18'

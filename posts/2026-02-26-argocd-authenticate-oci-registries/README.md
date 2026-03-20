@@ -31,6 +31,7 @@ The most common method. Works with most registries that support basic auth or to
 
 ```bash
 # Add repository with credentials via CLI
+
 argocd repo add ghcr.io/your-org/charts \
   --type helm \
   --enable-oci \

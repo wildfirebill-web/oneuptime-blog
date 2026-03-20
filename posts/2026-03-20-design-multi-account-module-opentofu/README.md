@@ -14,6 +14,7 @@ Managing multiple AWS accounts through OpenTofu requires a module that can provi
 
 ```hcl
 # Root configuration: define a provider alias per account
+
 variable "accounts" {
   type = map(object({
     account_id = string

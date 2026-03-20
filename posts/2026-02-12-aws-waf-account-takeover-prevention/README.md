@@ -314,6 +314,7 @@ Check how ATP is performing with CloudWatch metrics:
 
 ```bash
 # Get ATP block metrics
+
 aws cloudwatch get-metric-statistics \
   --namespace AWS/WAFV2 \
   --metric-name BlockedRequests \

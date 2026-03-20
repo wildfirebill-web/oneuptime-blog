@@ -31,6 +31,7 @@ First, let's identify what's causing the error:
 
 ```bash
 # Check if mongod exists anywhere
+
 # On Linux/macOS
 which mongod
 whereis mongod

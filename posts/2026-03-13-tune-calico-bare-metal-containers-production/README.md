@@ -38,6 +38,7 @@ eBPF bypasses iptables entirely, reducing latency and CPU usage.
 
 ```bash
 # Disable kube-proxy
+
 kubectl patch ds kube-proxy -n kube-system \
   -p '{"spec":{"template":{"spec":{"nodeSelector":{"non-calico":"true"}}}}}'
 

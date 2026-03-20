@@ -24,6 +24,7 @@ fatal: [server1]: FAILED! => {
 
 ```yaml
 # WRONG: cannot use both src and content
+
 - copy:
     src: /local/file.txt
     content: "some text"

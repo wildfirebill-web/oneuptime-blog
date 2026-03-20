@@ -20,6 +20,7 @@ An overlay mount combines a lower (read-only) directory with an upper (writable)
 
 ```bash
 # Basic overlay mount syntax with --mount
+
 podman run --rm \
   --mount type=overlay,source=/home/user/base-config,target=/config \
   docker.io/library/alpine:latest ls /config

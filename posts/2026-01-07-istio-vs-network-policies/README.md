@@ -128,6 +128,7 @@ The following policy demonstrates how to restrict ingress traffic to a backend s
 
 ```yaml
 # network-policy-backend.yaml
+
 # This policy restricts access to backend pods, allowing only frontend pods
 # to communicate on port 8080. All other ingress traffic is denied by default.
 apiVersion: networking.k8s.io/v1

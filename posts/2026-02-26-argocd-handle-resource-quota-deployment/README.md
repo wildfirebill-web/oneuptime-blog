@@ -46,6 +46,7 @@ The simplest fix is to account for surge capacity in your quota:
 
 ```yaml
 # namespace-quota.yaml
+
 apiVersion: v1
 kind: ResourceQuota
 metadata:

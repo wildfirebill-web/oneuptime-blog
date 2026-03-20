@@ -36,6 +36,7 @@ Here's a Terraform configuration that demonstrates tightly scoped IAM for a Lamb
 
 ```hcl
 # Each Lambda function gets its own role
+
 resource "aws_iam_role" "order_processor" {
   name = "order-processor-lambda-role"
 

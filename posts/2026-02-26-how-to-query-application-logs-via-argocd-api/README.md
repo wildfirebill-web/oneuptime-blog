@@ -18,6 +18,7 @@ ArgoCD exposes logs through the application resource endpoint. You query logs fo
 
 ```bash
 # Basic log query for a pod in an ArgoCD application
+
 curl -s -k "$ARGOCD_URL/api/v1/applications/my-web-app/logs" \
   -H "$AUTH_HEADER" \
   --data-urlencode "namespace=web-app" \

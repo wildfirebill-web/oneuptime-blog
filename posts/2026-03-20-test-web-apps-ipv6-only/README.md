@@ -14,6 +14,7 @@ Testing web applications with IPv6-only connections uncovers hard-coded IPv4 add
 
 ```bash
 # Force IPv6 connection to a website
+
 curl -6 https://example.com
 
 # Verbose output showing IPv6 connection details

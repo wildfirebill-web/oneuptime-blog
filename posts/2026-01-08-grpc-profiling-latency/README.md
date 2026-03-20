@@ -265,6 +265,7 @@ class ProfilingInterceptor(grpc.ServerInterceptor):
 
 ```bash
 # Collect 30-second CPU profile
+
 go tool pprof http://localhost:6060/debug/pprof/profile?seconds=30
 
 # Save profile for later analysis

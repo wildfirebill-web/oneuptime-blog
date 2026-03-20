@@ -46,6 +46,7 @@ The scaling happens instantly - there is no warm-up period and no delay. Cosmos 
 
 ```bash
 # Create a new container with autoscale throughput
+
 # The max-throughput parameter sets the autoscale ceiling
 az cosmosdb sql container create \
     --account-name myCosmosAccount \

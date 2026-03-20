@@ -20,6 +20,7 @@ Download the official Apache httpd image.
 
 ```bash
 # Pull the official Apache HTTP Server image
+
 podman pull docker.io/library/httpd:latest
 
 # Verify the image is available

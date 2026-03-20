@@ -173,6 +173,7 @@ After a snapshot is taken, verify it is valid:
 
 ```bash
 # On the RKE2 control plane node
+
 ETCDCTL_API=3 etcdctl snapshot status /var/lib/rancher/rke2/server/db/snapshots/SNAPSHOT_NAME \
   --write-out=table
 ```

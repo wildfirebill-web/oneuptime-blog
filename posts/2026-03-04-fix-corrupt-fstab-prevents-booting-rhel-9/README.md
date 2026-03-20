@@ -34,6 +34,7 @@ If the system drops to an emergency shell on its own, you are already in the rig
 
 ```bash
 # Remount root filesystem read-write
+
 mount -o remount,rw /
 
 # Edit fstab to fix the problem

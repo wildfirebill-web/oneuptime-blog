@@ -72,6 +72,7 @@ The `oc` command-line tool is your primary interface for interacting with OpenSh
 
 ```bash
 # Using Homebrew
+
 brew install openshift-cli
 
 # Verify the installation

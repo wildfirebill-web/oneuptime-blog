@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Go, UDP, Multicast, IPv4, Networking, golang.org/x/net
+Tags: Go, UDP, Multicast, IPv4, Networking, Golang.org/x/net
 
 Description: Learn how to implement a UDP IPv4 multicast listener and sender in Go using the golang.org/x/net/ipv4 package for group communication.
 

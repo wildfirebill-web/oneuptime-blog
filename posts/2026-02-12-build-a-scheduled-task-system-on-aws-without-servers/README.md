@@ -45,6 +45,7 @@ Here is the CloudFormation for the core infrastructure:
 
 ```yaml
 # CloudFormation for serverless scheduling infrastructure
+
 AWSTemplateFormatVersion: '2010-09-09'
 Resources:
   # DLQ for failed schedule invocations

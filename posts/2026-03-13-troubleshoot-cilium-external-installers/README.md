@@ -27,6 +27,7 @@ Determine the installation method to understand the management model.
 
 ```bash
 # Check the Cilium version and installation signature
+
 cilium version
 kubectl get pods -n kube-system -l k8s-app=cilium -o yaml | grep image
 

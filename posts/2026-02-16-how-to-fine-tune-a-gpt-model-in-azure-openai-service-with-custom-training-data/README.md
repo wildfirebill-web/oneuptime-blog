@@ -93,6 +93,7 @@ def validate_training_file(filepath):
     return len(errors) == 0
 
 # Run validation
+
 validate_training_file("training_data.jsonl")
 ```
 

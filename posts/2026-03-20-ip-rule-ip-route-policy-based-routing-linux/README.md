@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Linux, Networking, Policy Routing, ip rule, ip route, IPv4
+Tags: Linux, Networking, Policy Routing, Ip rule, Ip route, IPv4
 
 Description: Implement policy-based routing on Linux using ip rule to match traffic by source, destination, or mark, and ip route to direct matched traffic to custom routing tables.
 
@@ -16,12 +16,13 @@ The kernel evaluates routing rules in priority order (lower = higher priority). 
 
 ```bash
 # View all current routing rules
+
 ip rule show
 ```
 
 Default rules:
 
-```
+```text
 0:      from all lookup local       # Local addresses (highest priority)
 32766:  from all lookup main        # Standard routing table
 32767:  from all lookup default     # Usually empty fallback

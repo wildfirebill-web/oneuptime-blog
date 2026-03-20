@@ -29,6 +29,7 @@ Here are the most common patterns you will use:
 
 ```yaml
 # Match all applications in a project
+
 p, role:viewer, applications, get, myproject/*, allow
 
 # Match all applications in all projects

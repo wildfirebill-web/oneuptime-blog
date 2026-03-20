@@ -17,6 +17,7 @@ RESOURCE_GROUP="my-network-rg"
 STORAGE_ACCOUNT="mystorageaccount"
 
 # Get the storage account resource ID
+
 STORAGE_ID=$(az storage account show \
   --resource-group $RESOURCE_GROUP \
   --name $STORAGE_ACCOUNT \

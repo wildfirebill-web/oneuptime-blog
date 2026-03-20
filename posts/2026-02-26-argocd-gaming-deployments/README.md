@@ -42,6 +42,7 @@ Game servers are typically deployed as individual pods, each hosting a game sess
 
 ```yaml
 # ArgoCD Application for Agones game server infrastructure
+
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:

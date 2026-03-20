@@ -18,6 +18,7 @@ With server-side apply, the Kubernetes API server maintains a list of field mana
 
 ```bash
 # View the field managers for a resource
+
 kubectl get deployment my-app -n production -o yaml | grep -A 20 managedFields
 ```
 

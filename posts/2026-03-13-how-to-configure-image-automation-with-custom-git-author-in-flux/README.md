@@ -141,6 +141,7 @@ Having a consistent author name lets you filter commits in the Git log:
 
 ```bash
 # Show only automated commits
+
 git log --author="Flux Bot" --oneline
 
 # Show only human commits

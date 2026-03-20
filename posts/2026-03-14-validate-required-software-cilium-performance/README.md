@@ -28,6 +28,7 @@ This guide provides the complete validation framework for Cilium performance tes
 ```bash
 #!/bin/bash
 # validate-software.sh
+
 set -euo pipefail
 PASS=true
 

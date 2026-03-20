@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, count, Resources, HCL, Infrastructure as Code, DevOps
+Tags: OpenTofu, Count, Resources, HCL, Infrastructure as Code, DevOps
 
 Description: Learn how to use the count meta-argument to create multiple instances of a resource from a single block in OpenTofu.
 
@@ -16,6 +16,7 @@ The `count` meta-argument tells OpenTofu to create multiple instances of a resou
 
 ```hcl
 # Create 3 identical EC2 instances
+
 resource "aws_instance" "web" {
   count = 3
 
@@ -148,4 +149,4 @@ Use `for_each` when:
 
 ## Summary
 
-`count` is perfect for creating N identical instances or conditionally creating/skipping a resource. Use `count.index` to differentiate instances (for names, subnet assignment, etc.). Be aware that count uses integer indices — removing items from the middle of the source list will shift indices and may cause unintended resource replacements. For named resources, prefer `for_each`.
+`count` is perfect for creating N identical instances or conditionally creating/skipping a resource. Use `count.index` to differentiate instances (for names, subnet assignment, etc.). Be aware that count uses integer indices - removing items from the middle of the source list will shift indices and may cause unintended resource replacements. For named resources, prefer `for_each`.

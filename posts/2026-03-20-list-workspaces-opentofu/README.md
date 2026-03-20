@@ -14,6 +14,7 @@ The `tofu workspace list` command shows all workspaces in your current configura
 
 ```bash
 # List all workspaces
+
 tofu workspace list
 
 # Example output:
@@ -69,7 +70,7 @@ echo "Currently in: $CURRENT_WS"
 
 # Conditional logic based on workspace
 if [ "$(tofu workspace show)" = "production" ]; then
-  echo "Deploying to production — extra review required"
+  echo "Deploying to production - extra review required"
 fi
 ```
 
@@ -154,4 +155,4 @@ find . -path "*/terraform.tfstate.d/*/terraform.tfstate" -printf "%P\n"
 
 ## Conclusion
 
-`tofu workspace list` is a simple but essential command for workspace management. Use it to verify available environments, confirm your current active workspace, and audit the workspaces in your configuration. Combine it with `tofu workspace show` for scripting — the latter returns just the current workspace name, making it ideal for conditional logic in CI/CD pipelines.
+`tofu workspace list` is a simple but essential command for workspace management. Use it to verify available environments, confirm your current active workspace, and audit the workspaces in your configuration. Combine it with `tofu workspace show` for scripting - the latter returns just the current workspace name, making it ideal for conditional logic in CI/CD pipelines.

@@ -28,8 +28,9 @@ Here is the flow:
 
 ## GitHub Actions Implementation
 
-```yaml
+````yaml
 # .github/workflows/terraform-plan.yml
+
 # Runs on pull requests to show what will change
 name: Terraform Plan
 
@@ -103,9 +104,9 @@ jobs:
 
             const body = `### Terraform Plan Output
 
-            \`\`\`
+            ```
             ${truncated}
-            \`\`\`
+            ```
 
             *Plan generated from commit ${context.sha.substring(0, 8)}*`;
 
@@ -135,7 +136,7 @@ jobs:
                 body: body,
               });
             }
-```
+````
 
 ```yaml
 # .github/workflows/terraform-apply.yml

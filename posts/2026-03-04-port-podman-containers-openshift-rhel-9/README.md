@@ -45,6 +45,7 @@ cat > Containerfile << 'EOF'
 FROM registry.access.redhat.com/ubi9/ubi-minimal
 
 # Install your application
+
 RUN microdnf install -y httpd && microdnf clean all
 
 # Adjust permissions so arbitrary UIDs can work

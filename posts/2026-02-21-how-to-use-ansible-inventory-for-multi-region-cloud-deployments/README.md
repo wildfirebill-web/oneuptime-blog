@@ -38,6 +38,7 @@ Here is a YAML inventory that organizes hosts by both region and role:
 
 ```yaml
 # inventory/multi-region.yml
+
 all:
   vars:
     ansible_user: deploy

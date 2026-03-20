@@ -27,6 +27,7 @@ Ubuntu's main repository includes OpenJDK packages:
 
 ```bash
 # Update package lists
+
 sudo apt update
 
 # Install the default JDK (typically the latest LTS version)

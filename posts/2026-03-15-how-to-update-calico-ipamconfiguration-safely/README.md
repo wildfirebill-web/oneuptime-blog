@@ -117,6 +117,7 @@ For production clusters, coordinate IPAM changes with a maintenance window:
 
 ```bash
 # Step 1: Cordon all nodes to prevent new pod scheduling
+
 for node in $(kubectl get nodes -o jsonpath='{.items[*].metadata.name}'); do kubectl cordon $node; done
 
 # Step 2: Apply the IPAM change

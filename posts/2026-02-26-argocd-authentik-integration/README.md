@@ -174,6 +174,7 @@ data:
 
 ```bash
 # Restart Dex to pick up changes
+
 kubectl rollout restart deployment argocd-dex-server -n argocd
 
 # Watch for successful startup

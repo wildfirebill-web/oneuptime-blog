@@ -14,6 +14,7 @@ AWS Lambda supports IPv6 in two contexts: Lambda Function URLs with dualstack mo
 
 ```bash
 # Create a Lambda function URL with dualstack mode
+
 FUNCTION_ARN="arn:aws:lambda:us-east-1:123456789:function:my-function"
 
 aws lambda create-function-url-config \
@@ -177,4 +178,4 @@ API_ID=$(aws apigatewayv2 create-api \
 
 ## Conclusion
 
-Lambda IPv6 support comes through two paths: Function URLs that can be accessed over IPv6 directly (when in dualstack mode), and VPC-connected functions that can make outbound IPv6 connections through IPv6-enabled subnets with Egress-Only Internet Gateways. For public IPv6 access to API-style Lambda functions, put CloudFront (with `is_ipv6_enabled = true`) in front of Lambda Function URLs or API Gateway. Lambda functions themselves have no IPv4/IPv6 settings — IPv6 behavior depends entirely on the VPC and subnet configuration.
+Lambda IPv6 support comes through two paths: Function URLs that can be accessed over IPv6 directly (when in dualstack mode), and VPC-connected functions that can make outbound IPv6 connections through IPv6-enabled subnets with Egress-Only Internet Gateways. For public IPv6 access to API-style Lambda functions, put CloudFront (with `is_ipv6_enabled = true`) in front of Lambda Function URLs or API Gateway. Lambda functions themselves have no IPv4/IPv6 settings - IPv6 behavior depends entirely on the VPC and subnet configuration.

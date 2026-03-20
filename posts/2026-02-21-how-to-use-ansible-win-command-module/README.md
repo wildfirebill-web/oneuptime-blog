@@ -29,6 +29,7 @@ Here is the simplest way to use `win_command` in a playbook.
 
 ```yaml
 # basic-command.yml - Run a simple command on Windows hosts
+
 ---
 - name: Run basic commands on Windows
   hosts: windows_servers

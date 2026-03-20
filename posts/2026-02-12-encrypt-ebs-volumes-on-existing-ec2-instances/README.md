@@ -28,6 +28,7 @@ The process: snapshot the unencrypted volume, copy the snapshot with encryption 
 
 ```bash
 # Create a snapshot of the existing unencrypted volume
+
 SNAP_ID=$(aws ec2 create-snapshot \
     --volume-id vol-unencrypted-0123456 \
     --description "Snapshot for encryption migration" \

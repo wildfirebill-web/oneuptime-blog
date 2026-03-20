@@ -25,6 +25,7 @@ locals {
 }
 
 # Standalone IPv6 public IP for a single resource
+
 resource "azurerm_public_ip" "ipv6_primary" {
   name                = "pip-ipv6-primary"
   location            = local.location

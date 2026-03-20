@@ -33,6 +33,7 @@ We covered automated provisioning in detail in a separate post, but here is a su
 ```bash
 #!/bin/bash
 # create-namespace.sh
+
 NAMESPACE=$1
 TEAM=$2
 PURPOSE=$3

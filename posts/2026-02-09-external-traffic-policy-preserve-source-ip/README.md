@@ -31,6 +31,7 @@ Set the policy in your service definition:
 
 ```yaml
 # web-service-local-policy.yaml
+
 apiVersion: v1
 kind: Service
 metadata:

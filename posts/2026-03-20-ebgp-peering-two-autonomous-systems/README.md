@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: BGP, eBGP, Cisco IOS, Routing, Autonomous Systems, Peering
+Tags: BGP, EBGP, Cisco IOS, Routing, Autonomous Systems, Peering
 
 Description: Learn how to establish an eBGP peering session between two autonomous systems, including neighbor configuration, authentication, and route verification.
 
 ## eBGP vs iBGP
 
-External BGP (eBGP) runs between routers in **different** autonomous systems (AS), typically across a direct physical or logical link. Internal BGP (iBGP) runs within a single AS. eBGP peers are almost always directly connected, so the TTL for eBGP packets defaults to 1—meaning multihop requires explicit configuration.
+External BGP (eBGP) runs between routers in **different** autonomous systems (AS), typically across a direct physical or logical link. Internal BGP (iBGP) runs within a single AS. eBGP peers are almost always directly connected, so the TTL for eBGP packets defaults to 1-meaning multihop requires explicit configuration.
 
 ## Topology
 
@@ -19,7 +19,7 @@ graph LR
 
 ## Step 1: Configure the ISP Router (AS 65100)
 
-```
+```nginx
 ISP# configure terminal
 
 router bgp 65100
@@ -36,7 +36,7 @@ ISP(config-router)# end
 
 ## Step 2: Configure the CE Router (AS 65200)
 
-```
+```text
 CE# configure terminal
 
 router bgp 65200
@@ -55,7 +55,7 @@ CE(config-router)# end
 
 BGP sessions should always be authenticated to prevent hijacking:
 
-```
+```text
 ! On ISP router
 ISP(config-router)# neighbor 203.0.113.2 password Str0ngP@ssw0rd!
 
@@ -69,14 +69,14 @@ Both sides must use the same password or the TCP session will not establish.
 
 Documenting neighbors makes troubleshooting much faster:
 
-```
+```text
 ! On CE router
 CE(config-router)# neighbor 203.0.113.1 description ISP-Uplink-AS65100
 ```
 
 ## Step 5: Verify the eBGP Session
 
-```
+```text
 CE# show ip bgp summary
 
 Neighbor        V     AS   MsgRcvd MsgSent   TblVer  InQ OutQ Up/Down  State/PfxRcd
@@ -87,7 +87,7 @@ The session is established and one prefix has been received from the ISP.
 
 ## Step 6: Verify Received Routes
 
-```
+```text
 CE# show ip bgp neighbors 203.0.113.1 received-routes
 
    Network          Next Hop            Metric LocPrf Weight Path
@@ -96,14 +96,14 @@ CE# show ip bgp neighbors 203.0.113.1 received-routes
 
 Activate `soft-reconfiguration inbound` on the neighbor if received-routes shows nothing:
 
-```
+```text
 CE(config-router)# neighbor 203.0.113.1 soft-reconfiguration inbound
 CE# clear ip bgp 203.0.113.1 soft in
 ```
 
 ## Step 7: Confirm Route Is in the Routing Table
 
-```
+```text
 CE# show ip route bgp
 
 B        198.51.100.0/24 [20/0] via 203.0.113.1, 00:20:10

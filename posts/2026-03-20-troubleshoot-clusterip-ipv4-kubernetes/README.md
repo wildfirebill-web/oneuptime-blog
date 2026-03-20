@@ -2,21 +2,22 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, ClusterIP, IPv4, Troubleshooting, kube-proxy, Networking
+Tags: Kubernetes, ClusterIP, IPv4, Troubleshooting, Kube-proxy, Networking
 
 Description: Diagnose and fix common IPv4 ClusterIP service connectivity failures in Kubernetes including iptables issues, DNS problems, and endpoint mismatches.
 
-ClusterIP services provide stable IPv4 addresses for pod-to-pod communication within a cluster. When they stop working, traffic fails silently — no TCP reset, just timeouts.
+ClusterIP services provide stable IPv4 addresses for pod-to-pod communication within a cluster. When they stop working, traffic fails silently - no TCP reset, just timeouts.
 
 ## Step 1: Verify the Service and Endpoints
 
 ```bash
 # Check the service exists and has a ClusterIP
+
 kubectl get svc my-service -n my-namespace
 # NAME         TYPE        CLUSTER-IP      PORT(S)   AGE
 # my-service   ClusterIP   10.96.45.123    80/TCP    10m
 
-# CRITICAL: Check endpoints — this is the most common issue
+# CRITICAL: Check endpoints - this is the most common issue
 kubectl get endpoints my-service -n my-namespace
 # NAME         ENDPOINTS           AGE
 # my-service   10.244.1.5:8080    10m   ← Pods are running
@@ -34,7 +35,7 @@ kubectl get svc my-service -n my-namespace -o jsonpath='{.spec.selector}'
 
 # Find pods matching this selector
 kubectl get pods -n my-namespace -l "app=my-app,version=v1"
-# If no pods show, the labels don't match — check pod labels
+# If no pods show, the labels don't match - check pod labels
 kubectl get pod my-pod -n my-namespace --show-labels
 ```
 
@@ -81,7 +82,7 @@ sudo iptables -t nat -L KUBE-SERVICES -n | grep 10.96.45.123
 kubectl exec debug -- nslookup my-service.my-namespace.svc.cluster.local
 
 # Expected: server: 10.96.0.10 (CoreDNS), Address: 10.96.45.123
-# If NXDOMAIN: DNS configuration issue — check CoreDNS
+# If NXDOMAIN: DNS configuration issue - check CoreDNS
 ```
 
 ## Common Causes and Fixes

@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Linux, KVM, Network Bridge, Virtualization, libvirt, Networking, QEMU
+Tags: Linux, KVM, Network Bridge, Virtualization, Libvirt, Networking, QEMU
 
 Description: Configure a Linux bridge for KVM virtual machines so that VMs get direct access to the physical network with IP addresses on the same subnet as the host.
 
 ## Introduction
 
-By default, KVM uses NAT networking (virbr0) which isolates VMs from the physical network. For production environments where VMs need to be directly accessible on the network — with their own IP addresses — a bridge interface connects VM tap interfaces directly to the physical network.
+By default, KVM uses NAT networking (virbr0) which isolates VMs from the physical network. For production environments where VMs need to be directly accessible on the network - with their own IP addresses - a bridge interface connects VM tap interfaces directly to the physical network.
 
 ## Prerequisites
 
@@ -20,6 +20,7 @@ By default, KVM uses NAT networking (virbr0) which isolates VMs from the physica
 
 ```bash
 # Flush IP from eth0
+
 ip addr flush dev eth0
 
 # Create bridge

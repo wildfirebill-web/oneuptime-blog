@@ -25,6 +25,7 @@ graph LR
 
 ```hcl
 # main.tf
+
 terraform {
   required_providers {
     google = {

@@ -16,6 +16,7 @@ MaxMind provides free GeoLite2 databases and paid GeoIP2 databases:
 
 ```bash
 # Sign up for a free MaxMind account at https://dev.maxmind.com/geoip/geolite2-free-geolocation-data/
+
 # Then download with your license key:
 
 # GeoLite2-City (most comprehensive)

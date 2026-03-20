@@ -35,6 +35,7 @@ graph TB
 
 ```bash
 # Create a launch template for RHEL instances
+
 aws ec2 create-launch-template \
   --launch-template-name rhel9-web-template \
   --version-description "RHEL web server v1" \

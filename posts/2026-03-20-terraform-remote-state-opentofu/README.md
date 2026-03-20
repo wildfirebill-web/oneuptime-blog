@@ -8,7 +8,7 @@ Description: Learn how to use the terraform_remote_state data source in OpenTofu
 
 ## Introduction
 
-Large infrastructure setups are often split across multiple OpenTofu configurations — for example, a networking layer managed separately from application resources. The `terraform_remote_state` data source allows one configuration to read the output values of another, enabling cross-stack data sharing without tight coupling.
+Large infrastructure setups are often split across multiple OpenTofu configurations - for example, a networking layer managed separately from application resources. The `terraform_remote_state` data source allows one configuration to read the output values of another, enabling cross-stack data sharing without tight coupling.
 
 ## When to Use terraform_remote_state
 
@@ -23,6 +23,7 @@ The remote configuration must declare outputs for any values you want to share:
 
 ```hcl
 # networking/outputs.tf
+
 output "vpc_id" {
   description = "The ID of the VPC"
   value       = aws_vpc.main.id

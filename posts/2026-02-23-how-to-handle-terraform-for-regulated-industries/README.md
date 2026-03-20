@@ -18,6 +18,7 @@ Different regulations have different but overlapping requirements:
 
 ```yaml
 # compliance/regulatory-matrix.yaml
+
 # Mapping of regulatory requirements to Terraform controls
 
 regulations:

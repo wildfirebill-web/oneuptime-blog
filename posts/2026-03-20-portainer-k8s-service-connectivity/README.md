@@ -1,4 +1,4 @@
-# How to Debug Kubernetes Service Connectivity Issues in Portainer
+# How to Debug Kubernetes Service Connectivity Issues in Portainer - K8s
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -24,6 +24,7 @@ Verify:
 
 ```bash
 # The most common mistake: selector doesn't match pod labels
+
 kubectl get service myapp -n production -o yaml | grep -A5 selector
 
 # Check pod labels

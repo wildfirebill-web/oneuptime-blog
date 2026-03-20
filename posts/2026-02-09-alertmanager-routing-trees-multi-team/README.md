@@ -127,6 +127,7 @@ Match alerts using multiple label conditions:
 ```yaml
 routes:
 # Database team - all database alerts
+
 - match_re:
     alertname: '.*Database.*|.*MySQL.*|.*Postgres.*'
   receiver: database-team

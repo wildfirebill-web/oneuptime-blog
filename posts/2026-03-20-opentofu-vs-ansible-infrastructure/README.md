@@ -8,7 +8,7 @@ Description: Learn the key differences between OpenTofu and Ansible for infrastr
 
 ## Introduction
 
-OpenTofu and Ansible are both popular infrastructure automation tools, but they serve different purposes. OpenTofu excels at provisioning immutable infrastructure declaratively, while Ansible is better suited for configuration management and procedural automation. Understanding their differences helps you choose the right tool — or the right combination.
+OpenTofu and Ansible are both popular infrastructure automation tools, but they serve different purposes. OpenTofu excels at provisioning immutable infrastructure declaratively, while Ansible is better suited for configuration management and procedural automation. Understanding their differences helps you choose the right tool - or the right combination.
 
 ## Core Philosophy
 
@@ -73,6 +73,7 @@ OpenTofu is the right choice for:
 
 ```hcl
 # OpenTofu is ideal for this
+
 module "vpc" { source = "./modules/vpc" }
 module "eks" {
   source = "./modules/eks"

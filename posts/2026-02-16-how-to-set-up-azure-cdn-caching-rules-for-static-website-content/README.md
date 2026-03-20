@@ -45,6 +45,7 @@ If you already have a CDN endpoint, skip to Step 2.
 
 ```bash
 # Create a resource group
+
 az group create --name rg-cdn-caching-demo --location eastus
 
 # Create a storage account for static website hosting

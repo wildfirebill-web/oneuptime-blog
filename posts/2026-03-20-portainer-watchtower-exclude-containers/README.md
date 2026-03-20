@@ -18,10 +18,11 @@ Not every container should be auto-updated. Databases with data migrations, cont
 
 ## Step 1: Label-Based Exclusion (Recommended)
 
-The cleanest method — add a label to any container you want to exclude:
+The cleanest method - add a label to any container you want to exclude:
 
 ```yaml
 # In any Portainer stack
+
 services:
   postgres:
     image: postgres:15-alpine
@@ -77,7 +78,7 @@ services:
       WATCHTOWER_CLEANUP: "true"
 
       # Exclude specific container names (comma-separated)
-      # Note: This is NOT an environment variable — use the --ignore flag
+      # Note: This is NOT an environment variable - use the --ignore flag
     command: >
       --interval 86400
       --cleanup
@@ -127,7 +128,7 @@ services:
   # NOT updated: no label (in opt-in mode)
   postgres:
     image: postgres:15
-    # No Watchtower labels — excluded by default in opt-in mode
+    # No Watchtower labels - excluded by default in opt-in mode
 
   # NOT updated: explicitly excluded
   portainer:

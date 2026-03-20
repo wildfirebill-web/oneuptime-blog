@@ -14,6 +14,7 @@ SCTP (Stream Control Transmission Protocol) combines the reliability of TCP with
 
 ```bash
 # Load the SCTP module
+
 sudo modprobe sctp
 
 # Verify it is loaded

@@ -22,6 +22,7 @@ The failover itself takes about 30 seconds to a few minutes. During this time, e
 
 ```bash
 # Create a Cloud SQL instance with high availability
+
 gcloud sql instances create production-db \
   --database-version=POSTGRES_15 \
   --tier=db-custom-4-16384 \

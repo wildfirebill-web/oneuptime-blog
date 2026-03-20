@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: neuvector, aqua-security, container-security, kubernetes, comparison
+Tags: NeuVector, Aqua-security, Container-security, Kubernetes, Comparison
 
 Description: A detailed comparison of NeuVector and Aqua Security for container and Kubernetes security, covering runtime protection, vulnerability scanning, and compliance.
 
@@ -44,6 +44,7 @@ NeuVector's core differentiator is its Deep Packet Inspection (DPI) engine that 
 
 ```yaml
 # NeuVector network policy example
+
 apiVersion: neuvector.com/v1
 kind: NvSecurityRule
 metadata:

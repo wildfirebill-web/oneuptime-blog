@@ -42,6 +42,7 @@ The OpenTelemetry Collector uses YAML:
 
 ```yaml
 # OpenTelemetry Collector configuration
+
 # Defines a simple traces pipeline with OTLP receiver and exporter
 receivers:
   otlp:

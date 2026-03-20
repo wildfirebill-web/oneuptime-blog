@@ -22,6 +22,7 @@ Install Karpenter on EKS:
 
 ```bash
 # Create Karpenter namespace
+
 kubectl create namespace karpenter
 
 # Install using Helm

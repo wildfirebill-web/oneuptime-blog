@@ -26,6 +26,7 @@ First, install cert-manager, which the operator requires for webhook certificate
 
 ```bash
 # Install cert-manager for managing TLS certificates
+
 kubectl apply -f https://github.com/cert-manager/cert-manager/releases/download/v1.13.0/cert-manager.yaml
 
 # Wait for cert-manager to be ready

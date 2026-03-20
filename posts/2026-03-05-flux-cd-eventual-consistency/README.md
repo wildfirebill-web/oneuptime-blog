@@ -80,6 +80,7 @@ When Flux applies a set of manifests, some resources may succeed while others fa
 
 ```yaml
 # Flux reports partial failures in the status conditions
+
 status:
   conditions:
     - type: Ready

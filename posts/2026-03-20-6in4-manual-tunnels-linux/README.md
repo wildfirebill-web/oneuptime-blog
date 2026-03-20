@@ -8,11 +8,11 @@ Description: Learn how to configure 6in4 (IPv6-in-IPv4) manual tunnels on Linux 
 
 ## Overview
 
-6in4 (also called SIT — Simple Internet Transition) encapsulates IPv6 packets inside IPv4 using IP protocol 41. It creates a point-to-point link between two IPv4 endpoints. The tunnel is manually configured — both endpoints must know each other's IPv4 and IPv6 addresses. This is the mechanism used by IPv6 tunnel brokers like Hurricane Electric.
+6in4 (also called SIT - Simple Internet Transition) encapsulates IPv6 packets inside IPv4 using IP protocol 41. It creates a point-to-point link between two IPv4 endpoints. The tunnel is manually configured - both endpoints must know each other's IPv4 and IPv6 addresses. This is the mechanism used by IPv6 tunnel brokers like Hurricane Electric.
 
 ## How 6in4 Works
 
-```
+```text
 [Linux Host A]                    [Tunnel Endpoint / Broker]
   IPv4: 203.0.113.10                IPv4: 198.51.100.1
   IPv6: 2001:db8::2/64              IPv6: 2001:db8::1/64
@@ -29,6 +29,7 @@ IPv6 packet from host:
 
 ```bash
 # Load the sit kernel module if not loaded
+
 sudo modprobe sit
 
 # Create tunnel interface
@@ -152,7 +153,7 @@ sudo ip -6 route add 2001:db8:abcd::1/128 dev sit1
 # Default route
 sudo ip -6 route add ::/0 via 2001:db8:abcd::1 dev sit1
 
-# LAN interface — use /48 prefix
+# LAN interface - use /48 prefix
 sudo ip addr add 2001:db8:abcd:1::1/64 dev eth1
 
 # Enable RA for LAN hosts
@@ -189,7 +190,7 @@ ip -6 addr show sit1
 # Check IPv6 default route
 ip -6 route show default
 
-# MTU — 6in4 reduces MTU by 20 bytes (IPv4 header)
+# MTU - 6in4 reduces MTU by 20 bytes (IPv4 header)
 # Default Ethernet MTU 1500 - 20 = 1480 for IPv6 over sit
 ip link show sit1 | grep mtu
 # mtu 1480

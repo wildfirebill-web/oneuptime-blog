@@ -16,6 +16,7 @@ A working NFS server and client setup on Ubuntu. If you need to set up NFS from 
 
 ```bash
 # On the server
+
 sudo apt install nfs-kernel-server -y
 
 # On the client

@@ -68,6 +68,7 @@ Deploy a test application:
 
 ```yaml
 # test-local-policy.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

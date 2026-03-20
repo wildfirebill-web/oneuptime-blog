@@ -22,6 +22,7 @@ module "name" {
 
 ```hcl
 # Fetch a versioned module from GCS
+
 module "vpc" {
   source = "gcs::https://www.googleapis.com/storage/v1/acme-terraform-modules/vpc/v2.0.0.zip"
 
@@ -55,7 +56,7 @@ gcloud auth application-default login
 # Option 2: Service account key file
 export GOOGLE_APPLICATION_CREDENTIALS="/path/to/service-account.json"
 
-# Option 3: Workload Identity (when running on GKE/Cloud Build — no credentials needed)
+# Option 3: Workload Identity (when running on GKE/Cloud Build - no credentials needed)
 ```
 
 ## IAM Policy for Module Access
@@ -71,7 +72,7 @@ gcloud storage buckets add-iam-policy-binding gs://acme-terraform-modules \
 
 ## Organizing Modules in GCS
 
-```
+```text
 gs://acme-terraform-modules/
 ├── vpc/
 │   ├── v1.0.0.zip
@@ -125,7 +126,7 @@ steps:
 
 - Embed the version in the GCS object path to ensure reproducible `tofu init` runs.
 - Use GCS bucket versioning as an additional safety net.
-- Restrict bucket access using IAM roles — prefer `roles/storage.objectViewer` over broader permissions.
+- Restrict bucket access using IAM roles - prefer `roles/storage.objectViewer` over broader permissions.
 - GCS module sources support all standard archive formats (`.zip`, `.tar.gz`).
 
 ## Conclusion

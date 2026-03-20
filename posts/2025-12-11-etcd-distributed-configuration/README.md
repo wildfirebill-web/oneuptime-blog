@@ -42,6 +42,7 @@ Download and install etcd on your servers:
 
 ```bash
 # Download etcd
+
 ETCD_VER=v3.5.11
 curl -L https://github.com/etcd-io/etcd/releases/download/${ETCD_VER}/etcd-${ETCD_VER}-linux-amd64.tar.gz -o etcd.tar.gz
 

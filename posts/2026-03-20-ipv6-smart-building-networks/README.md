@@ -14,7 +14,7 @@ Smart buildings contain thousands of IPv6-connected devices: HVAC sensors, light
 
 A typical smart building receives a /48 from the enterprise, which is subdivided for different building systems:
 
-```
+```text
 Enterprise /32
 └── Building-A /48 (2001:db8:a::/48)
     ├── HVAC /64 (2001:db8:a:1::/64)          - 18 quintillion addresses
@@ -33,6 +33,7 @@ Enterprise /32
 ```bash
 #!/bin/bash
 # building_ipv6_plan.sh
+
 # Generate IPv6 addressing plan for a smart building
 
 BUILDING_PREFIX="2001:db8:a"
@@ -63,7 +64,7 @@ done
 
 For the HVAC system, structured addresses help with operations:
 
-```
+```text
 HVAC Subnet: 2001:db8:a:1::/64
 
 2001:db8:a:1::1      - HVAC controller (gateway)
@@ -160,4 +161,4 @@ curl -s -X POST https://netbox.example.com/api/ipam/prefixes/ \
 
 ## Conclusion
 
-Planning IPv6 addressing for smart buildings requires a hierarchical approach that maps to the physical and functional organization of building systems. Allocating separate /64 subnets per system enables precise firewall policies, simplified monitoring, and clear DNS naming. DHCPv6 with reservations provides address tracking, while an IPAM tool ensures the addressing plan remains current as devices are added, moved, or replaced. The vast IPv6 address space means you never need to reuse addresses — each device can have a unique, descriptive address for its entire lifetime.
+Planning IPv6 addressing for smart buildings requires a hierarchical approach that maps to the physical and functional organization of building systems. Allocating separate /64 subnets per system enables precise firewall policies, simplified monitoring, and clear DNS naming. DHCPv6 with reservations provides address tracking, while an IPAM tool ensures the addressing plan remains current as devices are added, moved, or replaced. The vast IPv6 address space means you never need to reuse addresses - each device can have a unique, descriptive address for its entire lifetime.

@@ -25,6 +25,7 @@ Before migrating, verify your Elasticsearch version is compatible:
 
 ```bash
 # Check your current Elasticsearch version
+
 curl -s http://elasticsearch-host:9200/ | jq '.version.number'
 
 # Check index compatibility

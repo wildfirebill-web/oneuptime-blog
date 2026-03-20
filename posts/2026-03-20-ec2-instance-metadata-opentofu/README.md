@@ -50,6 +50,7 @@ resource "aws_instance" "secure" {
 
 ```hcl
 # Disable the metadata endpoint entirely for high-security workloads
+
 resource "aws_instance" "no_metadata" {
   ami           = data.aws_ami.amazon_linux.id
   instance_type = "t3.micro"

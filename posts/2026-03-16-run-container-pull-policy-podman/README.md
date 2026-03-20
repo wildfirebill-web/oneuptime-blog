@@ -29,6 +29,7 @@ This policy ensures you always run the latest version of an image.
 
 ```bash
 # Always pull the latest image before running
+
 podman run --rm \
   --pull=always \
   docker.io/library/alpine:latest \

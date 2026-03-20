@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Node.js, IPv6, DNS, AAAA, PTR, dns Module, Networking
+Tags: Node.js, IPv6, DNS, AAAA, PTR, Dns module, Networking
 
 Description: Perform IPv6 DNS operations in Node.js including AAAA record lookups, reverse PTR queries, controlling resolution order, and using the dns/promises API.
 

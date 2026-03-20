@@ -24,6 +24,7 @@ The simplest use of `changed_when` is with a boolean value:
 
 ```yaml
 # basic-changed-when.yml - Suppress false change reports
+
 ---
 - name: Demonstrate changed_when basics
   hosts: all

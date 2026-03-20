@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IS-IS, Juniper, IPv6, JunOS, Routing
+Tags: IS-IS, Juniper, IPv6, Junos, Routing
 
 Description: Step-by-step guide to configuring IS-IS for IPv6 routing on Juniper routers using JunOS, including multi-topology and per-interface metric configuration.
 
@@ -12,8 +12,9 @@ Juniper JunOS natively supports IS-IS for both IPv4 and IPv6. IPv6 reachability 
 
 ## Basic IS-IS IPv6 Configuration
 
-```
+```text
 # Set the NET (ISO network address)
+
 set routing-options router-id 1.1.1.1
 set protocols isis interface lo0.0 passive
 
@@ -31,7 +32,7 @@ set protocols isis level 1 disable    ! Level-2 only
 
 ## Full IS-IS IPv6 Configuration
 
-```
+```text
 protocols {
     isis {
         level 1 disable;              # Level-2 only operation
@@ -76,7 +77,7 @@ interfaces {
 
 ## Setting IPv6-Specific Interface Metrics
 
-```
+```text
 # Set different metrics for IPv6 topology (per-interface)
 set protocols isis interface ge-0/0/0.0 topologies ipv6-unicast metric 20
 set protocols isis interface ge-0/0/1.0 topologies ipv6-unicast metric 15
@@ -84,7 +85,7 @@ set protocols isis interface ge-0/0/1.0 topologies ipv6-unicast metric 15
 
 ## IS-IS Authentication
 
-```
+```text
 # Authentication per-interface
 set protocols isis interface ge-0/0/0.0 level 2 authentication-key "secretkey"
 set protocols isis interface ge-0/0/0.0 level 2 authentication-type md5
@@ -96,7 +97,7 @@ set protocols isis level 2 authentication-type md5
 
 ## Verification Commands
 
-```
+```text
 # Show IS-IS adjacencies
 show isis adjacency
 
@@ -118,7 +119,7 @@ show isis interface
 
 ## Sample Output
 
-```
+```text
 user@router> show isis adjacency
 
 Interface       System         L State     Hold (secs) SNPA

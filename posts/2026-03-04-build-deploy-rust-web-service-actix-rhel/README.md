@@ -14,6 +14,7 @@ Actix Web is one of the fastest web frameworks available, built on Rust's async 
 
 ```bash
 # Install build dependencies
+
 sudo dnf install -y gcc gcc-c++ make curl openssl-devel
 
 # Install Rust via rustup

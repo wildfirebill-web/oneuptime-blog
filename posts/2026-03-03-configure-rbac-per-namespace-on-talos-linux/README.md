@@ -36,6 +36,7 @@ Developers need to deploy applications, check logs, and debug pods. They should 
 
 ```yaml
 # developer-role.yaml
+
 apiVersion: rbac.authorization.k8s.io/v1
 kind: Role
 metadata:

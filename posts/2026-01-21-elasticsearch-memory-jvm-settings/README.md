@@ -36,6 +36,7 @@ Edit the JVM options file at `/etc/elasticsearch/jvm.options.d/heap.options`:
 
 ```bash
 # Create a custom heap configuration file
+
 sudo nano /etc/elasticsearch/jvm.options.d/heap.options
 ```
 

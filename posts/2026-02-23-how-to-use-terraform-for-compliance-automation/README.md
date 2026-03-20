@@ -18,6 +18,7 @@ The compliance automation stack has three layers: preventive controls that block
 
 ```hcl
 # compliance/preventive/encryption.rego
+
 # Preventive control: Block unencrypted resources
 
 package terraform.compliance.preventive

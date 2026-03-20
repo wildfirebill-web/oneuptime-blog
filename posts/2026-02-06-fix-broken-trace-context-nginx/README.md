@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTelemetry, NGINX, Trace Context, Distributed Tracing, Troubleshooting, W3C TraceContext
+Tags: OpenTelemetry, Nginx, Trace Context, Distributed Tracing, Troubleshooting, W3C TraceContext
 
 Description: Learn how to diagnose and fix broken trace context propagation when HTTP requests pass through NGINX reverse proxies in OpenTelemetry setups.
 
@@ -70,6 +70,7 @@ Then send a request through NGINX with a manually crafted `traceparent` header:
 
 ```bash
 # Send a request through NGINX with a known traceparent header
+
 # If the downstream service does not receive this header, NGINX is stripping it
 curl -H "traceparent: 00-4bf92f3577b34da6a3ce929d0e0e4736-00f067aa0ba902b7-01" \
      http://your-nginx-host/debug-headers

@@ -18,6 +18,7 @@ Before blaming Istio for strange behavior, verify that the sidecar is actually t
 
 ```bash
 # Check if the pod has a sidecar
+
 kubectl get pod my-pod -o jsonpath='{.spec.containers[*].name}'
 # Should show: my-app istio-proxy
 

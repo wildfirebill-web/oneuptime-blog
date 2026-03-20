@@ -74,6 +74,7 @@ Define shared variables that all roles need.
 
 ```yaml
 # group_vars/all.yml - Shared variables for all roles
+
 ---
 gcp_project: "my-project-id"
 gcp_auth_kind: "serviceaccount"

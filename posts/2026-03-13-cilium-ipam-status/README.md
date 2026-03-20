@@ -29,6 +29,7 @@ IPAM status is automatically managed but can be influenced:
 
 ```bash
 # View full IPAM status for all nodes
+
 kubectl get ciliumnodes -o json | \
   jq '.items[] | {
     node: .metadata.name,

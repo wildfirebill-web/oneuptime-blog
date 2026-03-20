@@ -206,10 +206,11 @@ tofu plan
 tofu apply
 
 # View canary runs
+
 aws synthetics describe-canaries-last-run \
   --names my-project-api-health
 ```
 
 ## Conclusion
 
-Synthetics Canaries provide proactive availability monitoring that catches outages before users report them. Schedule canaries to match your SLO measurement intervals—every 5 minutes for P1 APIs, every 15-30 minutes for less critical endpoints. Store canary artifacts for at least 14 days for failure runs to enable post-incident investigation, and create CloudWatch alarms on the `SuccessPercent` metric to integrate canary failures into your existing alerting workflow.
+Synthetics Canaries provide proactive availability monitoring that catches outages before users report them. Schedule canaries to match your SLO measurement intervals-every 5 minutes for P1 APIs, every 15-30 minutes for less critical endpoints. Store canary artifacts for at least 14 days for failure runs to enable post-incident investigation, and create CloudWatch alarms on the `SuccessPercent` metric to integrate canary failures into your existing alerting workflow.

@@ -16,6 +16,7 @@ IMA is built into the RHEL kernel. Verify it is active:
 
 ```bash
 # Check if IMA is enabled
+
 dmesg | grep -i ima
 
 # View current IMA measurements

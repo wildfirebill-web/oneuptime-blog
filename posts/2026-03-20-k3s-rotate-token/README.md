@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: K3s, Kubernetes, Security, Tokens, DevOps
+Tags: K3s, Kubernetes, Security, Token, DevOps
 
 Description: Learn how to rotate the K3s cluster token to maintain security and prevent unauthorized nodes from joining your cluster.
 
 ## Introduction
 
-The K3s cluster token (`K3S_TOKEN`) is a shared secret used to authenticate nodes joining the cluster. If this token is compromised, an attacker could join unauthorized nodes to your cluster. Rotating the token periodically — or immediately after a suspected compromise — is a critical security practice. This guide explains the process for safely rotating the K3s token without disrupting running workloads.
+The K3s cluster token (`K3S_TOKEN`) is a shared secret used to authenticate nodes joining the cluster. If this token is compromised, an attacker could join unauthorized nodes to your cluster. Rotating the token periodically - or immediately after a suspected compromise - is a critical security practice. This guide explains the process for safely rotating the K3s token without disrupting running workloads.
 
 ## Understanding K3s Token Usage
 
@@ -29,6 +29,7 @@ The token is stored at `/var/lib/rancher/k3s/server/node-token` on the server an
 
 ```bash
 # View the current node token
+
 cat /var/lib/rancher/k3s/server/node-token
 
 # The token has the format:

@@ -122,6 +122,7 @@ Pytest's built-in JUnit reporter sometimes produces incomplete reports. Here's h
 
 ```bash
 # Basic JUnit XML output
+
 pytest --junitxml=reports/junit.xml
 
 # With additional metadata

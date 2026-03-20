@@ -54,6 +54,7 @@ kubectl logs $NODE_POD -n kube-system --previous -c calico-node 2>/dev/null \
 
 ```bash
 # Look for these key patterns:
+
 grep -i "kernel\|module\|permission\|refused\|unauthorized\|etcd\|conflict" \
   /tmp/calico-crash-*.log | head -20
 ```

@@ -40,6 +40,7 @@ Here is a policy that checks resource names in Terraform follow a specific patte
 
 ```python
 # enforce-naming.sentinel
+
 # Enforces naming conventions on Terraform resource names
 
 import "tfconfig/v2" as tfconfig

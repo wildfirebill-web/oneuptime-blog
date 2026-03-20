@@ -21,6 +21,7 @@ The GitOps workflow with Podman and ArgoCD follows a clear pattern: build with P
 ```bash
 #!/bin/bash
 # The GitOps flow with Podman and ArgoCD:
+
 # 1. Developer pushes code to the application repository
 # 2. CI pipeline builds the image with Podman and pushes to a registry
 # 3. CI updates the Kubernetes manifests in the GitOps repository

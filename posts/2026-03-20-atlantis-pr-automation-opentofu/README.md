@@ -35,6 +35,7 @@ The easiest way to run Atlantis is via Docker or Kubernetes. Here is a minimal D
 
 ```yaml
 # docker-compose.yml
+
 version: "3"
 services:
   atlantis:
@@ -134,7 +135,7 @@ workflows:
 
 Once Atlantis is running, team members interact with infrastructure through PR comments:
 
-```
+```text
 # Trigger a plan manually
 atlantis plan
 

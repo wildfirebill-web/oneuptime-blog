@@ -29,6 +29,7 @@ MongoDB works best with specific kernel parameters. Talos Linux lets you configu
 
 ```yaml
 # talos-mongodb-patch.yaml
+
 machine:
   sysctls:
     # MongoDB recommends disabling transparent huge pages

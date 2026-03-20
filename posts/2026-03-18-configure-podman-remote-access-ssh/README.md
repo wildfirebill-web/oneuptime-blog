@@ -20,6 +20,7 @@ Generate a dedicated SSH key pair for Podman remote access.
 
 ```bash
 # Generate an Ed25519 key pair (recommended for security and performance)
+
 ssh-keygen -t ed25519 -f ~/.ssh/podman-remote -N "" -C "podman-remote-$(hostname)"
 
 # Set proper permissions on the key files

@@ -14,6 +14,7 @@ The "CROSSSLOT Keys in request don't hash to the same slot" error occurs in Redi
 
 ```python
 # Error message:
+
 # redis.exceptions.ResponseError: CROSSSLOT Keys in request don't hash to the same slot
 
 from redis.cluster import RedisCluster

@@ -29,6 +29,7 @@ First, gather information about Redis memory usage:
 
 ```bash
 # Connect to Redis and check memory info
+
 redis-cli INFO memory
 ```
 

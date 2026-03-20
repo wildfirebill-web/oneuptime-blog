@@ -28,6 +28,7 @@ First, map interface names to their SNMP indices:
 
 ```bash
 # Walk all interface descriptions to find index numbers
+
 snmpwalk -v2c -c public 192.168.1.1 ifDescr
 
 # Output:

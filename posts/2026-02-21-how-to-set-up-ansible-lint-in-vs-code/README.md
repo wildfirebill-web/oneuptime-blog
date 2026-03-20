@@ -18,6 +18,7 @@ Before configuring VS Code, make sure you have ansible-lint installed and access
 
 ```bash
 # Install ansible-lint in a virtual environment or globally
+
 pip install ansible-lint
 
 # Verify it works

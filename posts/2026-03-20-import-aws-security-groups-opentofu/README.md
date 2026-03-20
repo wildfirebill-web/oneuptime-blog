@@ -14,6 +14,7 @@ Security groups can be imported into OpenTofu as a single resource (with inline 
 
 ```bash
 # Get security group ID and rules
+
 SG_ID="sg-0123456789abcdef0"
 
 aws ec2 describe-security-groups --group-ids $SG_ID \
@@ -139,4 +140,4 @@ import {
 
 ## Conclusion
 
-Choose the inline rules approach when a single team manages all rules for a security group. Choose the separate `aws_security_group_rule` approach when rules come from multiple sources. Note that you cannot mix inline rules in `aws_security_group` with separate `aws_security_group_rule` resources — pick one approach per security group.
+Choose the inline rules approach when a single team manages all rules for a security group. Choose the separate `aws_security_group_rule` approach when rules come from multiple sources. Note that you cannot mix inline rules in `aws_security_group` with separate `aws_security_group_rule` resources - pick one approach per security group.

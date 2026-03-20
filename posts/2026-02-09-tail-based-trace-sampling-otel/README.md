@@ -35,6 +35,7 @@ Deploy a two-tier collector architecture:
 
 ```yaml
 # Agent collector (on each node)
+
 apiVersion: apps/v1
 kind: DaemonSet
 metadata:

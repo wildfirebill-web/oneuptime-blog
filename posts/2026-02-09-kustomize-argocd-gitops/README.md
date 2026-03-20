@@ -18,6 +18,7 @@ Create an ArgoCD Application that uses a Kustomize directory:
 
 ```yaml
 # argocd/application.yaml
+
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:

@@ -35,6 +35,7 @@ This stops Flux from committing image tag changes but still allows scanning and 
 
 ```bash
 # Suspend the ImageUpdateAutomation to stop commits
+
 flux suspend image update flux-system -n flux-system
 ```
 

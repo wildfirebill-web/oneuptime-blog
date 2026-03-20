@@ -24,6 +24,7 @@ Start by deploying Syft in your cluster for on-demand SBOM generation:
 
 ```bash
 # Install Syft CLI locally for testing
+
 curl -sSfL https://raw.githubusercontent.com/anchore/syft/main/install.sh | sh -s -- -b /usr/local/bin
 
 # Generate SBOM for a test image

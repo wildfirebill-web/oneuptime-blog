@@ -16,6 +16,7 @@ This is particularly useful in home labs, small office networks, and development
 
 ```bash
 # Install the Avahi daemon and utilities
+
 sudo apt update
 sudo apt install -y avahi-daemon avahi-utils libnss-mdns
 

@@ -14,6 +14,7 @@ Managing secrets in infrastructure code is one of the most critical security cha
 
 ```hcl
 # INSECURE: Secret value is stored in state file
+
 data "aws_secretsmanager_secret_version" "db_pass" {
   secret_id = "myapp/db-password"
 }

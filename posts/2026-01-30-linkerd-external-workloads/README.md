@@ -61,6 +61,7 @@ Before setting up External Workloads, ensure you have:
 
 ```bash
 # Linkerd 2.14+ installed with External Workloads enabled
+
 linkerd check
 
 # Verify External Workloads feature is available

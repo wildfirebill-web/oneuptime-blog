@@ -35,6 +35,7 @@ TOKEN=$(curl -s -X POST \
   --insecure | python3 -c "import sys,json; print(json.load(sys.stdin)['jwt'])")
 
 # Enable OAuth and hide the internal login form
+
 curl -X PUT \
   https://localhost:9443/api/settings \
   -H "Authorization: Bearer $TOKEN" \
@@ -61,13 +62,13 @@ curl -X PUT \
 
 When `HideInternalAuth` is true, the internal login form is hidden but can be accessed via a direct URL:
 
-```
+```text
 https://portainer.example.com/#!/auth
 ```
 
 Some versions use a query parameter to bypass the SSO redirect:
 
-```
+```text
 https://portainer.example.com/?auth=local
 ```
 

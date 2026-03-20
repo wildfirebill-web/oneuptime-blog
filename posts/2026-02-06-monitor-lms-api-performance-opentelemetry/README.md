@@ -134,6 +134,7 @@ For Moodle, the pattern is similar but the API structure differs since Moodle us
 
 ```python
 # Python example for Moodle web service monitoring
+
 from opentelemetry import trace
 from opentelemetry.trace import SpanKind
 import requests

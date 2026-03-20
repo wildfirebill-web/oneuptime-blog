@@ -30,6 +30,7 @@ Here is a script that generates standardized ArgoCD projects from a team configu
 ```bash
 #!/bin/bash
 # create-team-project.sh - Generate and apply ArgoCD project for a new team
+
 set -euo pipefail
 
 TEAM_NAME="${1:?Usage: $0 <team-name> [tier]}"

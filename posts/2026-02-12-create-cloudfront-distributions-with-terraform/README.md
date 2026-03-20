@@ -20,6 +20,7 @@ First, create the S3 bucket and an Origin Access Control (OAC) so CloudFront can
 
 ```hcl
 # S3 bucket for static assets
+
 resource "aws_s3_bucket" "website" {
   bucket = "my-website-assets-2026"
 }

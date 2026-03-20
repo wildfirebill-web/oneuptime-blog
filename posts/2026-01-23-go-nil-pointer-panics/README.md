@@ -283,6 +283,7 @@ func processUser(user *User) {
 
 ```bash
 # Install delve
+
 go install github.com/go-delve/delve/cmd/dlv@latest
 
 # Debug your program

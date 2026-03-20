@@ -22,6 +22,7 @@ Add a stats frontend section:
 
 ```text
 # HAProxy Stats Configuration
+
 frontend stats
     # Listen on a dedicated port for stats
     bind *:8404

@@ -8,11 +8,11 @@ Description: Understand the 16-bit IPv6 Payload Length field, how it differs fro
 
 ## Introduction
 
-The IPv6 Payload Length is a 16-bit field that specifies the number of bytes following the 40-byte IPv6 header. Unlike IPv4's Total Length (which includes the header), IPv6's Payload Length counts only the payload — extension headers plus the upper-layer PDU. Understanding this field is important for implementing or debugging IPv6 packet processing.
+The IPv6 Payload Length is a 16-bit field that specifies the number of bytes following the 40-byte IPv6 header. Unlike IPv4's Total Length (which includes the header), IPv6's Payload Length counts only the payload - extension headers plus the upper-layer PDU. Understanding this field is important for implementing or debugging IPv6 packet processing.
 
 ## Field Specification
 
-```
+```text
 IPv6 Payload Length:
   - 16-bit unsigned integer
   - Units: bytes
@@ -59,6 +59,7 @@ def calculate_ipv6_payload_length(
     return payload_length
 
 # Example: TCP segment with no extension headers
+
 tcp_segment = b"\x00\x50\xab\xcd" + b"\x00" * 16  # 20-byte TCP header (simplified)
 payload_len = calculate_ipv6_payload_length(upper_layer_data=tcp_segment)
 print(f"Payload Length: {payload_len} bytes")  # 20
@@ -99,9 +100,9 @@ def parse_ipv6_header(raw_bytes: bytes) -> dict:
 
 ## Special Case: Zero Payload Length (Jumbograms)
 
-When the Payload Length field is `0`, it signals that the packet is a **Jumbogram** — a packet larger than 65,535 bytes. The actual size is carried in a Hop-by-Hop Options extension header using the Jumbo Payload Option:
+When the Payload Length field is `0`, it signals that the packet is a **Jumbogram** - a packet larger than 65,535 bytes. The actual size is carried in a Hop-by-Hop Options extension header using the Jumbo Payload Option:
 
-```
+```text
 Payload Length = 0 (signals Jumbogram)
   ↓
 Hop-by-Hop Options Header MUST be present

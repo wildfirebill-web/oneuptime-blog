@@ -22,6 +22,7 @@ The fastest way to find the current AMIs is through the Talos release page or th
 
 ```bash
 # Find Talos Linux AMIs in your region (replace with your region)
+
 aws ec2 describe-images \
   --owners 540036508848 \
   --filters "Name=name,Values=talos-v1.7*" \

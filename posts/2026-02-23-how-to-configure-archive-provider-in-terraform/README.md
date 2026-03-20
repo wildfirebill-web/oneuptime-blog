@@ -21,6 +21,7 @@ The Archive provider creates zip archives from files, directories, or inline con
 
 ```hcl
 # versions.tf - Declare the Archive provider
+
 terraform {
   required_version = ">= 1.0"
 

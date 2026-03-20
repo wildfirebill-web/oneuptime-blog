@@ -29,6 +29,7 @@ From the initramfs shell:
 
 ```bash
 # List available block devices
+
 ls /dev/sd* /dev/nvme* /dev/vd* 2>/dev/null
 
 # Or use

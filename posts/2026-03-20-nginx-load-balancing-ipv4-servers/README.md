@@ -66,7 +66,7 @@ server {
 
 ## Least Connections Algorithm
 
-Routes each new request to the backend with the fewest active connections—best for backends with variable response times:
+Routes each new request to the backend with the fewest active connections-best for backends with variable response times:
 
 ```nginx
 upstream app_servers {
@@ -115,6 +115,7 @@ Use a loop to verify traffic is distributed across backends:
 
 ```bash
 # Send 10 requests and watch which backend responds
+
 for i in $(seq 1 10); do
     curl -s http://example.com/whoami
 done

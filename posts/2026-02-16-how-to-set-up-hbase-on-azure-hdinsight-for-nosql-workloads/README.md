@@ -30,6 +30,7 @@ Provision an HBase cluster using the Azure CLI:
 
 ```bash
 # Create an HDInsight HBase cluster
+
 # Region servers run on worker nodes, so size them according to your workload
 az hdinsight create \
   --name my-hbase-cluster \

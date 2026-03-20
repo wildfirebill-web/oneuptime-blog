@@ -141,6 +141,7 @@ Good combinations:
 
 ```yaml
 # 2 threads with 2 CPU limit - each thread gets a core
+
 resources:
   limits:
     cpu: "2"

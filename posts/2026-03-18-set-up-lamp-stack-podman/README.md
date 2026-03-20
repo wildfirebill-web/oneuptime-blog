@@ -30,6 +30,7 @@ Start by creating a pod that publishes all the ports you need:
 
 ```bash
 # Create the LAMP pod with port mappings
+
 podman pod create \
   --name lamp-stack \
   -p 8080:80 \

@@ -29,6 +29,7 @@ Let us start by checking your current kernel and network configuration:
 
 ```bash
 # Check Ubuntu version and kernel
+
 lsb_release -a
 uname -r
 

@@ -98,6 +98,7 @@ Deploy this with fault injection enabled in your staging environment:
 
 ```bash
 # Deploy to Cloud Run with fault injection enabled in staging
+
 gcloud run deploy order-service \
   --image=gcr.io/my-project/order-service:latest \
   --set-env-vars=ENABLE_FAULT_INJECTION=true \

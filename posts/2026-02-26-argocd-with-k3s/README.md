@@ -40,6 +40,7 @@ If you do not have K3s yet, install it with a single command.
 
 ```bash
 # Install K3s with default options
+
 curl -sfL https://get.k3s.io | sh -
 
 # Verify K3s is running
@@ -164,7 +165,7 @@ spec:
     certResolver: letsencrypt
 ```
 
-## Resource Optimization for K3s
+Resource Optimization for K3s
 
 K3s environments often have limited RAM and CPU. Tune ArgoCD's resource requests.
 

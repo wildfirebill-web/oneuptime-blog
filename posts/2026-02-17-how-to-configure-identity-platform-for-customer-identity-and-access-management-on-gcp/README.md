@@ -29,6 +29,7 @@ Start by enabling the service and configuring basic settings.
 
 ```bash
 # Enable Identity Platform API
+
 gcloud services enable identitytoolkit.googleapis.com \
   --project=my-app-project
 

@@ -27,6 +27,7 @@ Verify your cluster meets version skew requirements before upgrading.
 echo "Checking version skew across cluster components..."
 
 # Get API server versions
+
 API_VERSIONS=$(kubectl get pods -n kube-system -l component=kube-apiserver \
   -o jsonpath='{.items[*].spec.containers[0].image}' | \
   tr ' ' '\n' | sort -u)

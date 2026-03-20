@@ -42,6 +42,7 @@ First, install Rust using rustup, the official Rust toolchain installer:
 
 ```bash
 # Install rustup (Linux/macOS)
+
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
 # Verify installation

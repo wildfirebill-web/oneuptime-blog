@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, IPv6, Firewall, ip6tables, UFW, Security
+Tags: Ansible, IPv6, Firewall, Ip6tables, UFW, Security
 
 Description: A guide to configuring IPv6 firewall rules on Linux hosts using Ansible, covering UFW, ip6tables, and firewalld.
 
@@ -12,6 +12,7 @@ Configuring IPv6 firewall rules with Ansible ensures consistent security policy 
 
 ```yaml
 # ufw-ipv6.yml - Configure UFW IPv6 rules
+
 ---
 - name: Configure IPv6 firewall rules with UFW
   hosts: ubuntu_servers

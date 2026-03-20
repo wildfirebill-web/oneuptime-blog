@@ -30,6 +30,7 @@ Spring Boot's layered JAR mode splits the JAR into layers that change at differe
 
 ```dockerfile
 # Dockerfile - extract and run using Spring Boot layered JAR
+
 FROM eclipse-temurin:21-jre-alpine AS extractor
 WORKDIR /app
 # Copy the fat JAR built by Maven/Gradle

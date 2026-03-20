@@ -53,6 +53,7 @@ Before enabling FastPath, check that your gateway supports it:
 
 ```bash
 # Check the current gateway SKU
+
 az network vnet-gateway show \
   --name myExpressRouteGateway \
   --resource-group myResourceGroup \

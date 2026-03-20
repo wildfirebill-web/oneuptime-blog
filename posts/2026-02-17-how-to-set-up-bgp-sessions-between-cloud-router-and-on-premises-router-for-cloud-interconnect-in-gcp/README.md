@@ -40,6 +40,7 @@ Your on-premises router needs a different ASN. If your organization already has 
 
 ```bash
 # Create Cloud Router with a specific ASN
+
 gcloud compute routers create ic-router \
     --network=my-vpc \
     --region=us-east4 \

@@ -19,7 +19,8 @@ Since 40 > 35, IPv6 destinations are tried first when both AAAA and A records ex
 ### Method 1: Modify /etc/gai.conf (Recommended)
 
 ```bash
-# /etc/gai.conf — raise IPv4 precedence above IPv6
+# /etc/gai.conf - raise IPv4 precedence above IPv6
+
 cat > /etc/gai.conf << 'EOF'
 # Labels (unchanged)
 label ::1/128        0
@@ -29,7 +30,7 @@ label 2002::/16      2
 label 2001::/32      5
 label fc00::/7       13
 
-# Precedence — IPv4-mapped higher than IPv6 global
+# Precedence - IPv4-mapped higher than IPv6 global
 precedence ::1/128       50
 precedence ::ffff:0:0/96 100   # IPv4: was 35, now highest
 precedence ::/0           40   # IPv6 global
@@ -191,7 +192,7 @@ java -Djava.net.preferIPv6Addresses=true -jar app.jar
 
 ```bash
 #!/bin/bash
-# test-preference.sh — Verify current IP version preference
+# test-preference.sh - Verify current IP version preference
 
 echo "Current gai.conf state:"
 grep "^precedence" /etc/gai.conf 2>/dev/null | sort -k3 -rn | head -5
@@ -222,4 +223,4 @@ for family in [socket.AF_INET6, socket.AF_INET]:
 
 ## Conclusion
 
-IPv4/IPv6 preference on dual-stack systems is controlled by the RFC 6724 policy table. On Linux and macOS, edit `/etc/gai.conf` to change precedence values — raise `::ffff:0:0/96` precedence above 40 to prefer IPv4, or keep it at 35 (default) to prefer IPv6. On Windows, use `netsh interface ipv6 add prefixpolicy` for the same effect. Individual applications can override with address family hints in `getaddrinfo()` calls, or command-line flags like `curl -4` / `curl -6`. Never disable IPv6 at the kernel level unless absolutely necessary — prefer policy table adjustments that keep IPv6 functional.
+IPv4/IPv6 preference on dual-stack systems is controlled by the RFC 6724 policy table. On Linux and macOS, edit `/etc/gai.conf` to change precedence values - raise `::ffff:0:0/96` precedence above 40 to prefer IPv4, or keep it at 35 (default) to prefer IPv6. On Windows, use `netsh interface ipv6 add prefixpolicy` for the same effect. Individual applications can override with address family hints in `getaddrinfo()` calls, or command-line flags like `curl -4` / `curl -6`. Never disable IPv6 at the kernel level unless absolutely necessary - prefer policy table adjustments that keep IPv6 functional.

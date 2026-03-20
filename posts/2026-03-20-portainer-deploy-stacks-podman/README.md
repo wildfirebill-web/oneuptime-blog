@@ -61,6 +61,7 @@ volumes:
 
 ```yaml
 # Workaround for rootless: use port mapping instead of host networking
+
 services:
   app:
     ports:

@@ -23,6 +23,7 @@ Before starting, you need:
 
 ```bash
 # Enable the Cloud SQL Admin API
+
 gcloud services enable sqladmin.googleapis.com --project=my-project-id
 
 # Grant Cloud SQL Admin role to Config Connector service account

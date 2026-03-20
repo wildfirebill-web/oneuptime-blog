@@ -28,6 +28,7 @@ Before configuring anything, understand what's currently in your initramfs:
 
 ```bash
 # List kernel versions with their initramfs files
+
 ls -lh /boot/initrd.img-*
 
 # List contents of the current initramfs

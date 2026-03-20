@@ -1,8 +1,8 @@
-# How to Filter Applications by Namespace in Portainer
+# How to Filter Applications by Namespace in Portainer - Apps
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Kubernetes, Namespaces, Applications, DevOps
+Tags: Portainer, Kubernetes, Namespaces, Application, DevOps
 
 Description: Learn how to filter and view applications by namespace in Portainer to quickly find and manage workloads across a multi-namespace Kubernetes cluster.
 
@@ -25,13 +25,13 @@ Portainer's Kubernetes interface has a namespace selector at the top of the scre
 4. All resource views (Applications, Services, ConfigMaps, etc.) now filter to that namespace
 
 Available options:
-```
-All namespaces      — Show resources from every namespace
-default             — The default Kubernetes namespace
-kube-system         — System components (hidden by default)
-production          — Your production namespace
-staging             — Your staging namespace
-development         — Your development namespace
+```text
+All namespaces      - Show resources from every namespace
+default             - The default Kubernetes namespace
+kube-system         - System components (hidden by default)
+production          - Your production namespace
+staging             - Your staging namespace
+development         - Your development namespace
 ```
 
 ## Step 2: Filter Applications in the Applications List
@@ -45,12 +45,12 @@ Navigate to **Applications** in the sidebar:
 5. Use the search bar to filter by application name within the selected namespace
 
 The list shows:
-```
+```text
 Name          Namespace      Stack     Status    Created
-my-api        production     —         Running   2 days ago
-my-frontend   production     —         Running   2 days ago
-redis         staging        —         Running   5 hours ago
-postgres      development    —         Running   1 day ago
+my-api        production     -         Running   2 days ago
+my-frontend   production     -         Running   2 days ago
+redis         staging        -         Running   5 hours ago
+postgres      development    -         Running   1 day ago
 ```
 
 ## Step 3: Use kubectl to Filter by Namespace
@@ -59,6 +59,7 @@ For command-line filtering alongside Portainer:
 
 ```bash
 # List all deployments in a specific namespace
+
 kubectl get deployments -n production
 
 # List pods with namespace filter
@@ -101,9 +102,9 @@ kubectl config set-context --current --namespace=staging
 
 Portainer Business Edition provides additional filtering capabilities:
 
-1. **Environment-level namespace access** — Team members only see their assigned namespaces
-2. **Namespace quick-switch** — Switch between namespaces without leaving the current view
-3. **Cross-namespace search** — Search across all namespaces in the global search
+1. **Environment-level namespace access** - Team members only see their assigned namespaces
+2. **Namespace quick-switch** - Switch between namespaces without leaving the current view
+3. **Cross-namespace search** - Search across all namespaces in the global search
 
 For teams, this means:
 - The backend team logs in and only sees `production` and `staging` (their assigned namespaces)
@@ -114,7 +115,7 @@ For teams, this means:
 
 The namespace filter applies to all Kubernetes resource types in Portainer:
 
-```
+```text
 Applications (Deployments, StatefulSets, DaemonSets)
 Services
 ConfigMaps

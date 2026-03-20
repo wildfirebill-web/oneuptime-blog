@@ -171,6 +171,7 @@ class ServiceMeshCacheClient:
                 break
 
 # Usage
+
 r = redis.Redis(host='localhost', port=6379, decode_responses=True)
 cache_client = ServiceMeshCacheClient(r, default_ttl=300)
 

@@ -40,6 +40,7 @@ Here is a Collector configuration that receives OTLP data and writes it to S3 in
 
 ```yaml
 # otel-collector-config.yaml
+
 # This config receives OTLP telemetry and exports to S3 in batched Parquet-friendly format
 
 receivers:

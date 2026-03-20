@@ -27,6 +27,7 @@ The Ubuntu server must use the Active Directory domain controller as its DNS ser
 
 ```bash
 # Check current DNS configuration
+
 resolvectl status
 
 # For Ubuntu 22.04+ with netplan

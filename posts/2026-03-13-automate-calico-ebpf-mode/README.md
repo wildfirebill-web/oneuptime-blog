@@ -35,6 +35,7 @@ flowchart TD
 
 ```hcl
 # terraform/modules/k8s-node/variables.tf
+
 variable "node_ami" {
   description = "AMI with kernel 5.10+ for eBPF support"
   # Ubuntu 22.04 LTS: kernel 5.15 (meets eBPF requirements)

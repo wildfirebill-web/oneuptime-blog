@@ -60,6 +60,7 @@ The connection settings establish how Keycloak communicates with your directory 
 
 ```properties
 # Connection URL - use ldaps:// for secure connections
+
 Connection URL: ldaps://ldap.example.com:636
 
 # Bind credentials - service account for directory queries

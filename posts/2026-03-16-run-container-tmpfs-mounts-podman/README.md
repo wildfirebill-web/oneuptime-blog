@@ -20,6 +20,7 @@ Use the `--tmpfs` flag to create an in-memory mount point:
 
 ```bash
 # Mount tmpfs at /tmp
+
 podman run --rm --tmpfs /tmp alpine sh -c "
   echo 'Writing to tmpfs...'
   echo 'hello world' > /tmp/test.txt

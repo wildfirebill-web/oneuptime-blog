@@ -64,6 +64,7 @@ The `phase` field is critical because it determines where your plugin runs in En
 
 ```yaml
 # Authentication phase - runs first
+
 spec:
   phase: AUTHN
 

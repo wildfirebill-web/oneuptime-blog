@@ -17,23 +17,23 @@ Understanding how much CPU, memory, and network bandwidth your containers consum
 3. Select the **Stats** tab
 
 You will see live charts for:
-- **CPU usage** — percentage of host CPU consumed (can exceed 100% on multi-core)
-- **Memory usage** — actual memory vs. limit (if set)
-- **Network I/O** — bytes received and transmitted per second
-- **Block I/O** — disk read and write bytes
+- **CPU usage** - percentage of host CPU consumed (can exceed 100% on multi-core)
+- **Memory usage** - actual memory vs. limit (if set)
+- **Network I/O** - bytes received and transmitted per second
+- **Block I/O** - disk read and write bytes
 
 ## Understanding the Stats Display
 
 The Portainer stats view mirrors `docker stats`:
 
-```
+```text
 CONTAINER     CPU%     MEM USAGE / LIMIT     MEM%    NET I/O          BLOCK I/O
 api-service   2.34%    256MiB / 512MiB       50.0%   1.5MB / 800KB    10MB / 5MB
 ```
 
-- **CPU%** — a value over 100% means the container is using multiple cores
-- **MEM USAGE / LIMIT** — shows actual usage vs configured limit
-- **MEM%** — if no limit is set, this is percentage of total host memory
+- **CPU%** - a value over 100% means the container is using multiple cores
+- **MEM USAGE / LIMIT** - shows actual usage vs configured limit
+- **MEM%** - if no limit is set, this is percentage of total host memory
 
 ## Viewing Stats for All Containers
 
@@ -41,6 +41,7 @@ For a fleet view, use the Portainer API or query Docker directly:
 
 ```bash
 # Real-time stats for all containers via Docker CLI
+
 docker stats --no-stream --format "table {{.Name}}\t{{.CPUPerc}}\t{{.MemUsage}}\t{{.NetIO}}"
 ```
 

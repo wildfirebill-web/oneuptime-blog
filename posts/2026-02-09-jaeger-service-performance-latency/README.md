@@ -24,6 +24,7 @@ Deploy Jaeger with the spanmetrics processor:
 
 ```yaml
 # jaeger-spm-deployment.yaml
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

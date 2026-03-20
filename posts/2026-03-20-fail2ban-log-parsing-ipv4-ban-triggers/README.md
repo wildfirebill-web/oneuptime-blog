@@ -8,12 +8,13 @@ Description: Configure Fail2Ban to parse application logs for failed IPv4 authen
 
 ## Introduction
 
-Fail2Ban monitors log files for patterns indicating brute-force or abuse attempts from IPv4 addresses. When a threshold is exceeded, it triggers an action — typically an `iptables` DROP rule — to block the offending IP for a configurable duration.
+Fail2Ban monitors log files for patterns indicating brute-force or abuse attempts from IPv4 addresses. When a threshold is exceeded, it triggers an action - typically an `iptables` DROP rule - to block the offending IP for a configurable duration.
 
 ## Install Fail2Ban
 
 ```bash
 # Ubuntu/Debian
+
 sudo apt install fail2ban
 
 # CentOS/RHEL

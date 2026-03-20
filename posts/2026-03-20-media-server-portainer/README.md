@@ -8,7 +8,7 @@ Description: Deploy a complete self-hosted media server stack including Jellyfin
 
 ## Introduction
 
-A self-hosted media server lets you stream your own movies, TV shows, and music to any device. This guide covers deploying a full media stack — Jellyfin for streaming, Sonarr/Radarr for automation, Prowlarr for indexers, and qBittorrent for downloads — all managed through Portainer.
+A self-hosted media server lets you stream your own movies, TV shows, and music to any device. This guide covers deploying a full media stack - Jellyfin for streaming, Sonarr/Radarr for automation, Prowlarr for indexers, and qBittorrent for downloads - all managed through Portainer.
 
 ## Prerequisites
 
@@ -18,7 +18,7 @@ A self-hosted media server lets you stream your own movies, TV shows, and music 
 
 ## Architecture Overview
 
-```
+```text
 Internet → Downloads (qBittorrent)
                 ↓
          Radarr/Sonarr (Automation)
@@ -32,6 +32,7 @@ Internet → Downloads (qBittorrent)
 
 ```bash
 # Create media directories on your host
+
 sudo mkdir -p /opt/media/{movies,tv,music,downloads/{complete,incomplete}}
 
 # Set proper permissions

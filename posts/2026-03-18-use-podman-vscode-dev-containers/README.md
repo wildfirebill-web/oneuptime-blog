@@ -26,6 +26,7 @@ On macOS and Windows, Podman runs inside a lightweight Linux virtual machine. Yo
 
 ```bash
 # Install Podman on macOS via Homebrew
+
 brew install podman
 
 # Initialize the Podman machine (creates a Linux VM)

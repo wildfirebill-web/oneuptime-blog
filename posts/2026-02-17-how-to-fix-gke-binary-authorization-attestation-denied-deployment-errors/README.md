@@ -35,6 +35,7 @@ Get the full error message from the failed deployment:
 
 ```bash
 # Try to deploy and capture the error
+
 kubectl apply -f your-deployment.yaml 2>&1
 
 # Or check pod events if the deployment was created but pods are blocked

@@ -1,4 +1,4 @@
-# How to Request IPv6 Address Space from RIPE NCC
+# How to Request IPv6 Address Space from RIPE NCC - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -17,11 +17,11 @@ RIPE NCC serves Europe, the Middle East, and parts of Central Asia. IPv6 address
 | LIR (Local Internet Registry) | ISPs, large orgs | /32 | ~€1,400/year |
 | End-user assignment | Enterprises | /48 | Via LIR sponsorship |
 
-End-users cannot request directly from RIPE NCC — they must go through a sponsoring LIR.
+End-users cannot request directly from RIPE NCC - they must go through a sponsoring LIR.
 
 ## Becoming an LIR
 
-```
+```text
 Requirements to become a RIPE NCC LIR:
 
 1. Organization must be legally established in RIPE service region
@@ -42,7 +42,7 @@ Process:
 
 ## Initial IPv6 /32 Allocation
 
-```
+```text
 RIPE NCC policy (2023):
 
 Every LIR receives ONE /32 allocation upon membership.
@@ -58,12 +58,13 @@ Your /32 allows:
 
 ## RIPE NCC Database: Register Your Allocation
 
-```
+```text
 # After receiving allocation, register in RIPE Database
 
 # Example RIPE Database objects
 
 # inet6num object (your allocation)
+
 inet6num:       2a01:db8::/32
 netname:        EXAMPLE-NET
 descr:          Example ISP IPv6 Space
@@ -127,7 +128,7 @@ curl -s "https://stat.ripe.net/data/rpki-validation/data.json?resource=AS65001&p
 
 ## Sub-Allocating to Customers
 
-```
+```text
 # RIPE policy: document assignments in RIPE Database
 
 # Customer assignment example:
@@ -147,4 +148,4 @@ source:         RIPE
 
 ## Conclusion
 
-RIPE NCC membership grants LIRs an initial /32 IPv6 allocation automatically — no additional justification required for the first allocation. Register your allocation and route6 objects in the RIPE Database using `inet6num` and `route6` object types. Create an RPKI ROA via the RIPE NCC dashboard to authorize BGP announcements and prevent route hijacking. When sub-allocating /48s to customers, document each assignment as an `inet6num` object with status `ASSIGNED PA` within 30 days. Subsequent /32 allocations require demonstrating 80% utilization of your current space.
+RIPE NCC membership grants LIRs an initial /32 IPv6 allocation automatically - no additional justification required for the first allocation. Register your allocation and route6 objects in the RIPE Database using `inet6num` and `route6` object types. Create an RPKI ROA via the RIPE NCC dashboard to authorize BGP announcements and prevent route hijacking. When sub-allocating /48s to customers, document each assignment as an `inet6num` object with status `ASSIGNED PA` within 30 days. Subsequent /32 allocations require demonstrating 80% utilization of your current space.

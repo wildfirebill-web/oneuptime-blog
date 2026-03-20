@@ -47,6 +47,7 @@ kubectl get nodes -l kubernetes.io/os=windows -o name | xargs kubectl cordon
 
 ```powershell
 # Stop old CNI services
+
 Stop-Service <old-cni-service> -Force -ErrorAction SilentlyContinue
 
 # Remove old CNI configs

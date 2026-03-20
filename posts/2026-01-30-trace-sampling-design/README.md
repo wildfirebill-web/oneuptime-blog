@@ -312,6 +312,7 @@ The trace-aware load balancer ensures all spans from the same trace reach the sa
 
 ```yaml
 # otel-collector-config.yaml
+
 # Tail sampling configuration for OpenTelemetry Collector
 
 receivers:

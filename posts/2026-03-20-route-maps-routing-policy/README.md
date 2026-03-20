@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Networking, Routing, Route Maps, BGP, OSPF, Policy
 
-Description: Use route maps to implement sophisticated routing policies — matching routes on multiple criteria and applying attribute modifications before redistribution or advertisement.
+Description: Use route maps to implement sophisticated routing policies - matching routes on multiple criteria and applying attribute modifications before redistribution or advertisement.
 
 ## Introduction
 
@@ -12,7 +12,7 @@ Route maps are policy tools that combine matching conditions with attribute-sett
 
 ## Route Map Structure
 
-```
+```text
 route-map MAP-NAME [permit|deny] SEQUENCE-NUMBER
   match CONDITION
   set ATTRIBUTE
@@ -24,6 +24,7 @@ Multiple clauses with increasing sequence numbers form the complete policy. An i
 
 ```bash
 # Match by prefix list
+
 route-map MY-MAP permit 10
   match ip address prefix-list MY-PREFIXES
 

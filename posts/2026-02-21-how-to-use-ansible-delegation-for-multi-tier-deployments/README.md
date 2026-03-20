@@ -32,6 +32,7 @@ Here is a comprehensive playbook that deploys across all tiers:
 
 ```yaml
 # multi-tier-deploy.yml - Complete multi-tier deployment
+
 ---
 # Play 1: Pre-deployment preparation
 - name: Pre-deployment checks and preparation

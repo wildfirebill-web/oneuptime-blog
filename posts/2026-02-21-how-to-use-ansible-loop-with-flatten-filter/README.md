@@ -29,6 +29,7 @@ The `flatten` filter turns nested lists into a single flat list:
 
 ```yaml
 # Flatten nested package lists and install everything
+
 - name: Install all packages from grouped lists
   ansible.builtin.apt:
     name: "{{ item }}"

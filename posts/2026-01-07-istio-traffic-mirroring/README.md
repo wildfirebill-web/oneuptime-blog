@@ -80,6 +80,7 @@ The following commands verify your Istio installation is ready for traffic mirro
 
 ```bash
 # Verify Istio is installed and running
+
 # This command checks all Istio components in the istio-system namespace
 kubectl get pods -n istio-system
 

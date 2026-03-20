@@ -49,6 +49,7 @@ You will see a chronological list of all administrative actions in your project.
 
 ```bash
 # List recent admin activity audit logs
+
 gcloud logging read 'logName="projects/my-project/logs/cloudaudit.googleapis.com%2Factivity"' \
   --project=my-project \
   --limit=50 \

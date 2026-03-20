@@ -32,6 +32,7 @@ The STIG requires specific daemon settings:
 ```bash
 sudo tee /etc/audit/auditd.conf << 'EOF'
 # STIG-compliant auditd configuration
+
 local_events = yes
 write_logs = yes
 log_file = /var/log/audit/audit.log

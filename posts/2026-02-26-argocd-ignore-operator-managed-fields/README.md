@@ -43,6 +43,7 @@ Kubernetes tracks which controller manages which fields through the `metadata.ma
 
 ```bash
 # See which managers own which fields on a Deployment
+
 kubectl get deployment my-app -o jsonpath='{.metadata.managedFields}' | jq '.'
 
 # Filter for a specific manager

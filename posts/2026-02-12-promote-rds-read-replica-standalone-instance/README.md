@@ -90,6 +90,7 @@ This script monitors the promotion progress.
 
 ```bash
 # Watch the instance status
+
 watch -n 5 "aws rds describe-db-instances \
   --db-instance-identifier my-db-replica-1 \
   --query 'DBInstances[0].{Status:DBInstanceStatus,ReadReplica:ReadReplicaSourceDBInstanceIdentifier}' \

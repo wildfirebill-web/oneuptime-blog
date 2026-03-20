@@ -24,6 +24,7 @@ Navigate to Alerting > Silences in Grafana and click New Silence.
 
 ```yaml
 # Silence configuration
+
 Matchers:
   - alertname = HighMemoryUsage
   - instance = prod-api-01

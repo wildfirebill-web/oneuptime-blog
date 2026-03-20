@@ -67,6 +67,7 @@ Hot standby systems are fully operational and can take over within seconds. They
 
 ```yaml
 # Kubernetes StatefulSet for hot standby application
+
 apiVersion: apps/v1
 kind: StatefulSet
 metadata:

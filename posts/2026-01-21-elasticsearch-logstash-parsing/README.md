@@ -34,6 +34,7 @@ docker run -d \
 
 ```ruby
 # /etc/logstash/conf.d/pipeline.conf
+
 input {
   # Data sources
 }

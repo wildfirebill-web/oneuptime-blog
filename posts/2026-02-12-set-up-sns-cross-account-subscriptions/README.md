@@ -35,6 +35,7 @@ The topic owner needs to add a resource policy that allows the other account to 
 
 ```bash
 # In Account A (111111111111) - the topic owner
+
 # Allow Account B (222222222222) to subscribe to the topic
 aws sns set-topic-attributes \
   --topic-arn arn:aws:sns:us-east-1:111111111111:order-events \

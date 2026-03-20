@@ -28,6 +28,7 @@ Before tuning, establish baselines. Check current scheduling latency:
 
 ```bash
 # View scheduler metrics
+
 kubectl get --raw /metrics | grep scheduler_
 
 # Key metrics to watch:

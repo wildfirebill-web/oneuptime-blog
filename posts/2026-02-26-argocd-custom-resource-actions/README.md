@@ -234,6 +234,7 @@ If you install ArgoCD via Helm:
 
 ```yaml
 # values.yaml for argo-cd chart
+
 server:
   config:
     "resource.customizations.actions.apps_Deployment": |

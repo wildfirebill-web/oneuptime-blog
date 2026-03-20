@@ -63,6 +63,7 @@ from opentelemetry import trace
 from opentelemetry.instrumentation.logging import LoggingInstrumentor
 
 # Initialize logging instrumentation
+
 LoggingInstrumentor().instrument()
 
 logger = logging.getLogger(__name__)
@@ -192,7 +193,7 @@ graph LR
 
 Traces capture the technical flow. Logs within that trace contain business events (cart created, discount applied, payment processed). Metrics filtered by business attributes (user tier, region, product category) show how this journey compares to others.
 
-## Resource Attributes as Correlation Keys
+Resource Attributes as Correlation Keys
 
 Beyond signal-to-signal correlation, resource attributes provide environmental context. Resources represent the entities producing telemetry: services, hosts, containers, or processes.
 

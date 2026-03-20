@@ -1,4 +1,4 @@
-# How to Manage Namespace Access Control in Portainer
+# How to Manage Namespace Access Control in Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -20,7 +20,7 @@ Portainer Business Edition provides team-based access control for Kubernetes nam
 
 Portainer uses a role-based model with namespace granularity:
 
-```
+```text
 Admin → Full access to all environments and namespaces
 Team (with access) → Can view/deploy to assigned namespaces
 Team (without access) → Cannot see the namespace in Portainer
@@ -35,7 +35,7 @@ Before assigning namespace access, create teams:
 2. Click **+ Add team**
 3. Create teams:
 
-```
+```text
 Team name: backend-team     Description: Backend development team
 Team name: frontend-team    Description: Frontend development team
 Team name: ops-team         Description: Operations team
@@ -62,7 +62,7 @@ Or navigate to the access control UI directly:
 
 Assign access levels to teams:
 
-```
+```text
 Namespace: production
 ──────────────────────────────────────
 Team: ops-team        → Full (Admin) access
@@ -72,10 +72,10 @@ Team: data-team       → No access (they use different namespaces)
 ```
 
 Access levels:
-- **None** — Team cannot see the namespace
-- **Read-only** — Can view resources but not create/update/delete
-- **Read/Write** — Full CRUD on namespace resources
-- **Admin** (some versions) — Can also manage quotas and access
+- **None** - Team cannot see the namespace
+- **Read-only** - Can view resources but not create/update/delete
+- **Read/Write** - Full CRUD on namespace resources
+- **Admin** (some versions) - Can also manage quotas and access
 
 ## Step 4: Apply RBAC via Kubernetes Directly
 
@@ -83,6 +83,7 @@ Portainer translates its access control settings into Kubernetes RBAC:
 
 ```yaml
 # Portainer creates these automatically when you configure team access
+
 apiVersion: rbac.authorization.k8s.io/v1
 kind: Role
 metadata:

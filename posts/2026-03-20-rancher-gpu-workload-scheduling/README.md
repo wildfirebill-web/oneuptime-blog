@@ -2,9 +2,10 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: rancher, gpu, scheduling, kubernetes, machine-learning
+Tags: Rancher, GPU, Scheduling, Kubernetes, Machine-learning
 
 Description: Learn how to effectively schedule GPU workloads in Rancher using node selectors, taints, and resource quotas.
+
 ## Introduction
 
 Scheduling GPU workloads effectively requires understanding Kubernetes scheduling mechanisms and GPU-specific constraints. This guide covers how to ensure your GPU jobs land on the right nodes with the right resources.
@@ -15,6 +16,7 @@ Scheduling GPU workloads effectively requires understanding Kubernetes schedulin
 
 ```yaml
 # Basic GPU node selection
+
 apiVersion: v1
 kind: Pod
 metadata:

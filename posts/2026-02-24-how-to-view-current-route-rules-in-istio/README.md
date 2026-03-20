@@ -18,6 +18,7 @@ Start with the Kubernetes resources themselves:
 
 ```bash
 # List all VirtualServices
+
 kubectl get virtualservices --all-namespaces
 
 # View a specific VirtualService

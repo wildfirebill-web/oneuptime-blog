@@ -49,6 +49,7 @@ The subnet for Managed Instance has strict requirements:
 
 ```bash
 # Create a VNet for the Managed Instance
+
 az network vnet create \
     --resource-group myResourceGroup \
     --name mi-vnet \

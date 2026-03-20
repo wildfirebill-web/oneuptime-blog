@@ -280,6 +280,7 @@ resource "aws_codepipeline" "main" {
 }
 
 # SNS topic for approval notifications
+
 resource "aws_sns_topic" "pipeline_approval" {
   name = "pipeline-approval-notifications"
 }

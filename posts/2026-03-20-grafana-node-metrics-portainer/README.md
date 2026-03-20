@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Grafana, Node Exporter, Host Metrics, Dashboard
+Tags: Portainer, Grafana, Node Exporter, Host Metrics, Dashboards
 
 Description: Learn how to build a Grafana dashboard showing host-level CPU, memory, disk, and network metrics sourced from Node Exporter, with the entire monitoring stack managed via Portainer.
 
@@ -31,6 +31,7 @@ For a focused, custom dashboard:
 
 ```promql
 # Total CPU usage (all cores)
+
 100 - (avg by(instance) (rate(node_cpu_seconds_total{mode="idle"}[5m])) * 100)
 ```
 
@@ -132,4 +133,4 @@ groups:
 
 ## Conclusion
 
-A Node Exporter Grafana dashboard managed via Portainer provides complete visibility into your Docker host hardware health. Pair it with the container metrics dashboard from cAdvisor and you have full-stack observability — from bare-metal CPU registers to individual container process metrics — all maintained through Portainer's stack management.
+A Node Exporter Grafana dashboard managed via Portainer provides complete visibility into your Docker host hardware health. Pair it with the container metrics dashboard from cAdvisor and you have full-stack observability - from bare-metal CPU registers to individual container process metrics - all maintained through Portainer's stack management.

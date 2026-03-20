@@ -18,6 +18,7 @@ Before starting the installation, verify all prerequisites:
 
 ```bash
 # Check Docker version (minimum 20.10)
+
 docker --version
 
 # Verify Docker is running

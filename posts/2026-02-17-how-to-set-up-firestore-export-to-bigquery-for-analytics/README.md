@@ -34,6 +34,7 @@ Install it using the Firebase CLI:
 
 ```bash
 # Install the Stream Firestore to BigQuery extension
+
 firebase ext:install firebase/firestore-bigquery-export \
   --project=your-project-id
 ```

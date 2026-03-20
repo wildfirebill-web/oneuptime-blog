@@ -17,6 +17,7 @@ Description: Releasing a DHCP lease sends a DHCPRELEASE message to the server, a
 
 ```bash
 # Release the lease for eth0
+
 sudo dhclient -r eth0
 
 # Verify the IP is removed
@@ -86,5 +87,5 @@ ifconfig en0 | grep inet
 
 - Releasing a lease returns the IP to the DHCP pool immediately.
 - On Linux: `dhclient -r eth0`; Windows: `ipconfig /release`; macOS: `ipconfig set en0 NONE`.
-- A DHCPRELEASE is sent unicast to the DHCP server — not broadcast.
+- A DHCPRELEASE is sent unicast to the DHCP server - not broadcast.
 - If the server is unreachable, the client still removes its IP locally, and the server will time out the lease naturally.

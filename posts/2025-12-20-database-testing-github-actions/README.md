@@ -354,6 +354,7 @@ Use a custom image with extensions:
 
 ```dockerfile
 # Dockerfile.postgres-test
+
 FROM postgres:16
 
 RUN apt-get update && apt-get install -y \

@@ -38,6 +38,7 @@ Based on deployment experience across different organizations, here are recommen
 
 ```yaml
 # small-installation.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

@@ -104,6 +104,7 @@ This Deployment configuration ensures zero downtime during updates and enables q
 
 ```yaml
 # deployment.yaml - Production deployment with rollback support
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

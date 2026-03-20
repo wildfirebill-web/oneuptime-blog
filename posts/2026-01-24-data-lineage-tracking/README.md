@@ -84,6 +84,7 @@ OpenLineage is the open standard for lineage metadata. Here's how to integrate i
 
 ```python
 # airflow_openlineage.py
+
 # Configure Airflow to emit OpenLineage events
 
 # In airflow.cfg or environment variables:

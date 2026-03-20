@@ -200,6 +200,7 @@ A common pattern is to create XFS on an LVM logical volume:
 
 ```bash
 # Create the logical volume
+
 sudo lvcreate -L 50G -n lv_data vg_data
 
 # Format with XFS

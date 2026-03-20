@@ -46,6 +46,7 @@ Create a private endpoint that gives the storage account's file service a privat
 
 ```bash
 # Get the storage account resource ID
+
 STORAGE_ID=$(az storage account show \
   --name mystorageaccount \
   --resource-group myResourceGroup \

@@ -14,6 +14,7 @@ When you create resources with sensitive attributes, those values are stored in 
 
 ```hcl
 # This password will be stored in plaintext in terraform.tfstate
+
 resource "aws_db_instance" "main" {
   identifier     = "production-db"
   engine         = "postgres"

@@ -48,6 +48,7 @@ Elasticsearch supports multiple stemming algorithms:
 
 ```bash
 # Porter Stemmer (English)
+
 curl -X PUT "https://localhost:9200/articles" \
   -H "Content-Type: application/json" \
   -u elastic:password \

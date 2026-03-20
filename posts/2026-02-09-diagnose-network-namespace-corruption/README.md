@@ -26,6 +26,7 @@ Check pod network interfaces:
 
 ```bash
 # Check pod interfaces
+
 kubectl exec -it my-pod -- ip link show
 
 # Healthy pod shows:

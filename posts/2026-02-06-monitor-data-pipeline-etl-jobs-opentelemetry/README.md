@@ -35,6 +35,7 @@ ETL jobs are different from web services in that they have a defined start and e
 
 ```python
 # etl_tracing.py - OpenTelemetry setup for batch ETL jobs
+
 from opentelemetry import trace, metrics
 from opentelemetry.sdk.trace import TracerProvider
 from opentelemetry.sdk.trace.export import BatchSpanProcessor

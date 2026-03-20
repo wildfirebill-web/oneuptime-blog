@@ -39,6 +39,7 @@ Most Python applications use SQLAlchemy or a similar ORM. The OpenTelemetry SQLA
 
 ```python
 # db_setup.py
+
 from opentelemetry import trace
 from opentelemetry.sdk.trace import TracerProvider
 from opentelemetry.sdk.trace.export import BatchSpanProcessor

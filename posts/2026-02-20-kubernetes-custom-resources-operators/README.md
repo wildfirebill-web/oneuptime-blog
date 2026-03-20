@@ -32,6 +32,7 @@ Let us build a CRD for a simple web application that manages its own Deployment 
 
 ```yaml
 # webapp-crd.yaml
+
 # Define a new resource type called WebApp.
 # Users can create WebApp objects and the operator
 # will create the underlying Deployment and Service.

@@ -36,6 +36,7 @@ For nodes with public IPs:
 
 ```yaml
 # public-node-config.yaml
+
 machine:
   network:
     kubespan:

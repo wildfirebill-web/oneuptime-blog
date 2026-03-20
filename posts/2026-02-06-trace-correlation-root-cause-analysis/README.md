@@ -14,6 +14,7 @@ OpenTelemetry automatically propagates trace context across service boundaries u
 
 ```python
 # No special code needed for context propagation with auto-instrumentation
+
 # The OpenTelemetry SDK handles this automatically
 
 # Install auto-instrumentation packages

@@ -190,6 +190,7 @@ Auto Scaling groups can be configured to automatically react to rebalance recomm
 
 ```bash
 # Enable capacity rebalancing on your ASG
+
 aws autoscaling update-auto-scaling-group \
   --auto-scaling-group-name my-spot-asg \
   --capacity-rebalance

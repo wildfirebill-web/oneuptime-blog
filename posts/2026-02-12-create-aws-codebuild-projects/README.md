@@ -18,6 +18,7 @@ CodeBuild needs a service role with permissions to pull source code, write logs,
 
 ```bash
 # Create the trust policy
+
 cat > codebuild-trust.json << 'EOF'
 {
   "Version": "2012-10-17",

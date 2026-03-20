@@ -67,6 +67,7 @@ resource "azurerm_resource_group" "bastion" {
 }
 
 # Virtual network where Bastion will be deployed
+
 resource "azurerm_virtual_network" "main" {
   name                = "vnet-prod-eastus-001"
   location            = azurerm_resource_group.bastion.location

@@ -23,6 +23,7 @@ import time
 import asyncio
 
 # Synchronous version - total time: 3 seconds
+
 def sync_fetch_data():
     time.sleep(1)  # Simulates network request
     return "data"

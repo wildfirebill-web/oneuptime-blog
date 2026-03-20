@@ -35,6 +35,7 @@ These features work directly in the Chrome browser, providing visibility and con
 
 ```bash
 # Enable the required APIs
+
 gcloud services enable \
   beyondcorp.googleapis.com \
   chromepolicy.googleapis.com \

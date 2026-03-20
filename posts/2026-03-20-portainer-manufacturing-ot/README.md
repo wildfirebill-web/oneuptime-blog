@@ -23,6 +23,7 @@ Modern manufacturing is embracing containerized applications for quality control
 
 ```bash
 # Most manufacturing edge hardware runs on ARM or x86
+
 # Example: Industrial PC at CNC machine
 
 # Install Docker on Ubuntu 22.04 (ruggedized x86 PC)

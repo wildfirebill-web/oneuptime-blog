@@ -29,6 +29,7 @@ Cassandra has specific system requirements that need to be configured at the OS 
 
 ```yaml
 # talos-cassandra-patch.yaml
+
 machine:
   sysctls:
     # Cassandra needs higher file descriptor limits

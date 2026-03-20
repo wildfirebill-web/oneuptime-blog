@@ -31,6 +31,7 @@ Install the Argo Rollouts controller in your cluster:
 
 ```bash
 # Create namespace
+
 kubectl create namespace argo-rollouts
 
 # Install Argo Rollouts

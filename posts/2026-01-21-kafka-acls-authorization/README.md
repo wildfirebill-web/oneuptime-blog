@@ -16,6 +16,7 @@ Enable ACL authorizer in server.properties:
 
 ```properties
 # Enable authorization
+
 authorizer.class.name=kafka.security.authorizer.AclAuthorizer
 
 # Super users (bypass ACLs)
@@ -39,7 +40,7 @@ Principal + Permission + Operation + Resource + Host
 - **Resource**: Topic, Group, Cluster, TransactionalId
 - **Host**: IP address or wildcard (*)
 
-### Resource Types and Operations
+Resource Types and Operations
 
 | Resource | Valid Operations |
 |----------|-----------------|

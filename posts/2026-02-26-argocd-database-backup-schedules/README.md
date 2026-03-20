@@ -35,6 +35,7 @@ CloudNativePG has built-in continuous backup using Barman:
 
 ```yaml
 # databases/postgres-cluster.yaml
+
 apiVersion: postgresql.cnpg.io/v1
 kind: Cluster
 metadata:

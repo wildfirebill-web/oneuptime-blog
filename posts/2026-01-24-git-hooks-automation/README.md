@@ -29,6 +29,7 @@ flowchart LR
 
 ```bash
 # View available hooks (samples)
+
 ls .git/hooks/
 
 # Output:

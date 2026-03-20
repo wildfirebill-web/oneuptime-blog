@@ -61,6 +61,7 @@ The first step is to create separate tracers for the read and write paths. This 
 
 ```python
 # tracers.py - Separate tracers for CQRS read and write paths
+
 from opentelemetry import trace
 from opentelemetry.sdk.trace import TracerProvider
 from opentelemetry.sdk.trace.export import BatchSpanProcessor

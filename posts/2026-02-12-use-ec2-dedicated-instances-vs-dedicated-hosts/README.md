@@ -30,6 +30,7 @@ Setting up Dedicated Instances is straightforward. You just set the tenancy on y
 
 ```bash
 # Create a VPC with dedicated tenancy - ALL instances in this VPC will be dedicated
+
 aws ec2 create-vpc \
   --cidr-block 10.0.0.0/16 \
   --instance-tenancy dedicated

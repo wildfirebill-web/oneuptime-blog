@@ -29,6 +29,7 @@ Confirm Calico is correctly deployed on the IKS cluster.
 
 ```bash
 # Check cluster networking configuration via IBM Cloud CLI
+
 ibmcloud ks cluster get --cluster <cluster-name> | grep -i "network\|calico"
 
 # Verify Calico pods are running on all worker nodes

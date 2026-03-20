@@ -29,6 +29,7 @@ The audit policy defines which events to log and at what level. Create a compreh
 
 ```yaml
 # audit-policy.yaml
+
 apiVersion: audit.k8s.io/v1
 kind: Policy
 omitStages:

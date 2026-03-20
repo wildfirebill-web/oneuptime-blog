@@ -46,6 +46,7 @@ The following command creates an Application that deploys a sample guestbook app
 
 ```bash
 # Create an Application using the CLI
+
 # --repo: Source Git repository URL
 # --path: Directory within the repo containing manifests
 # --dest-server: Target Kubernetes cluster API server

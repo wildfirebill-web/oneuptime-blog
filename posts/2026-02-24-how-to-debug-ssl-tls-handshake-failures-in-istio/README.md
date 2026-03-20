@@ -50,6 +50,7 @@ The most common TLS issue in Istio is mTLS mode mismatch. Check the PeerAuthenti
 
 ```bash
 # Mesh-wide
+
 kubectl get peerauthentication -n istio-system
 
 # Namespace-level

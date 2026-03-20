@@ -27,6 +27,7 @@ Verify the current sealing keys in your cluster.
 
 ```bash
 # List all sealing keys managed by the controller
+
 kubectl get secret -n kube-system -l sealedsecrets.bitnami.com/sealed-secrets-key
 
 # Check the creation dates to see when keys were generated

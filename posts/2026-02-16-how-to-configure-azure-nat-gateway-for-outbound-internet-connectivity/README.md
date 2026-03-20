@@ -54,6 +54,7 @@ graph LR
 
 ```bash
 # Create a resource group
+
 az group create --name rg-natgw-demo --location eastus
 
 # Create a VNet and subnet

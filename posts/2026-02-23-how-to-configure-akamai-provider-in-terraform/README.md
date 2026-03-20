@@ -26,6 +26,7 @@ Akamai uses a credentials file called `.edgerc`, typically stored in your home d
 
 ```ini
 # ~/.edgerc - Akamai API credentials file
+
 [default]
 client_secret = your-client-secret-here
 host = akab-xxxx.luna.akamaiapis.net

@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Envoy, Circuit Breakers, IPv4, Resilience, Upstream, Service Mesh
+Tags: Envoy, Circuit Breaker, IPv4, Resilience, Upstream, Service Mesh
 
 Description: Configure Envoy circuit breakers to protect IPv4 upstream clusters from overload by limiting concurrent connections, pending requests, and retries.
 
 ## Introduction
 
-Envoy circuit breakers prevent cascade failures by limiting how many requests flow to an upstream cluster. When limits are exceeded, Envoy fails fast rather than queuing indefinitely—protecting both the caller and the backend.
+Envoy circuit breakers prevent cascade failures by limiting how many requests flow to an upstream cluster. When limits are exceeded, Envoy fails fast rather than queuing indefinitely-protecting both the caller and the backend.
 
 ## Circuit Breaker Configuration
 
@@ -57,6 +57,7 @@ Circuit breaker overflows are tracked in Envoy stats:
 
 ```bash
 # Check circuit breaker overflow counters
+
 curl http://127.0.0.1:9901/stats | grep circuit_breakers
 
 # Key metrics:

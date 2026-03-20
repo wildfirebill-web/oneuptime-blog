@@ -325,6 +325,7 @@ Different services might need different DNS configurations:
 
 ```yaml
 # Database pods use internal DNS only
+
 apiVersion: apps/v1
 kind: StatefulSet
 metadata:

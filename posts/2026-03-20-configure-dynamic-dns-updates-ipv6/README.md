@@ -2,18 +2,19 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Dynamic DNS, DDNS, IPv6, BIND, nsupdate, TSIG, AAAA
+Tags: Dynamic DNS, DDNS, IPv6, BIND, Nsupdate, TSIG, AAAA
 
 Description: Configure dynamic DNS updates (RFC 2136) for IPv6 AAAA records using BIND and nsupdate with TSIG authentication, enabling hosts to register their IPv6 addresses automatically.
 
 ## Introduction
 
-Dynamic DNS (DDNS) allows hosts to automatically update their DNS records when their IP addresses change — critical in IPv6 networks where SLAAC and DHCPv6 assign addresses that may change over time. BIND supports RFC 2136 dynamic updates authenticated with TSIG keys.
+Dynamic DNS (DDNS) allows hosts to automatically update their DNS records when their IP addresses change - critical in IPv6 networks where SLAAC and DHCPv6 assign addresses that may change over time. BIND supports RFC 2136 dynamic updates authenticated with TSIG keys.
 
 ## Step 1: Generate a TSIG Key
 
 ```bash
 # Generate a HMAC-SHA256 TSIG key for dynamic updates
+
 tsig-keygen -a HMAC-SHA256 ddns-key.example.com
 
 # Output:

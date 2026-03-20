@@ -20,6 +20,7 @@ The hash character `#` starts a single-line comment. Everything after the `#` on
 
 ```hcl
 # This is a single-line comment
+
 resource "aws_instance" "web" {
   ami           = "ami-0c55b159cbfafe1f0"  # AMI for Ubuntu 22.04 in us-east-1
   instance_type = "t3.micro"               # Smallest general-purpose instance

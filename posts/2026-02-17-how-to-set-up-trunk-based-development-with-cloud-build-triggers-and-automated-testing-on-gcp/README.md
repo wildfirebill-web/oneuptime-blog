@@ -36,6 +36,7 @@ Start with a comprehensive cloudbuild.yaml that runs all your testing stages:
 
 ```yaml
 # cloudbuild.yaml
+
 steps:
   # Step 1: Install dependencies
   - name: 'node:20'

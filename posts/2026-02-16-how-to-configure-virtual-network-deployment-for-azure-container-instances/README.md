@@ -34,6 +34,7 @@ The ACI subnet needs to be delegated exclusively to container instances. No othe
 
 ```bash
 # Create a resource group
+
 az group create \
     --name my-resource-group \
     --location eastus

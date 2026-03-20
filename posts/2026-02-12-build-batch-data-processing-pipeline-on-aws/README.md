@@ -37,6 +37,7 @@ Create separate buckets for each stage of the pipeline:
 
 ```bash
 # Create buckets for raw, processed, and archive data
+
 aws s3 mb s3://my-pipeline-raw-data
 aws s3 mb s3://my-pipeline-processed-data
 aws s3 mb s3://my-pipeline-archive

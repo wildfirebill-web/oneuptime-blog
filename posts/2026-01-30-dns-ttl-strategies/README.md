@@ -47,6 +47,7 @@ When a DNS record is cached, the TTL value decrements over time. If the remainin
 
 ```python
 # Simulating TTL countdown behavior
+
 import time
 
 class DNSCache:

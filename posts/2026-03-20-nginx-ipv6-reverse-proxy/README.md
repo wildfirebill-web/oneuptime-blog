@@ -16,7 +16,7 @@ Nginx supports IPv6 through the `listen [::]:port` directive. When configured as
 # /etc/nginx/sites-available/app.conf
 
 upstream backend {
-    # Backend servers — can be IPv4 or IPv6
+    # Backend servers - can be IPv4 or IPv6
     server 10.0.0.1:8080;
     server 10.0.0.2:8080;
     # IPv6 backends must use brackets
@@ -41,7 +41,7 @@ server {
     location / {
         proxy_pass http://backend;
 
-        # Pass client address — works for both IPv4 and IPv6
+        # Pass client address - works for both IPv4 and IPv6
         proxy_set_header X-Forwarded-For   $remote_addr;
         proxy_set_header X-Real-IP         $remote_addr;
         proxy_set_header X-Forwarded-Proto $scheme;
@@ -58,6 +58,7 @@ When Nginx is behind another proxy, configure `real_ip` to extract the actual cl
 # /etc/nginx/conf.d/real_ip.conf
 
 # Trusted proxy sources (IPv4 and IPv6)
+
 set_real_ip_from 10.0.0.0/8;
 set_real_ip_from 172.16.0.0/12;
 set_real_ip_from fd00::/8;          # ULA internal proxies
@@ -152,7 +153,7 @@ resolver [2001:db8::53] ipv6=on;
 resolver_timeout 5s;
 
 upstream smart_backend {
-    # Use hostname — Nginx will use AAAA if available
+    # Use hostname - Nginx will use AAAA if available
     server backend.internal:8080;
 }
 ```

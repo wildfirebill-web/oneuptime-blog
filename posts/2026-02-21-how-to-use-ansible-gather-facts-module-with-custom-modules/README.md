@@ -16,6 +16,7 @@ Place custom fact scripts in `/etc/ansible/facts.d/` on the remote host:
 
 ```yaml
 # Deploy a custom fact script
+
 - name: Create facts directory
   ansible.builtin.file:
     path: /etc/ansible/facts.d

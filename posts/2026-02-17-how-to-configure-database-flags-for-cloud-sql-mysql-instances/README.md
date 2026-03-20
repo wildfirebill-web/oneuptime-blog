@@ -28,6 +28,7 @@ Set one or more flags:
 
 ```bash
 # Set multiple database flags at once
+
 # This replaces ALL existing flags, so include flags you want to keep
 gcloud sql instances patch my-mysql-instance \
     --database-flags=max_connections=500,slow_query_log=on,long_query_time=2

@@ -20,6 +20,7 @@ VXLAN (Virtual Extensible LAN, RFC 7348) is a network encapsulation protocol tha
 
 ```bash
 # Create a VXLAN interface
+
 # vni: VXLAN Network Identifier (0-16777215)
 # dstport: UDP port (default 8472 for Linux, 4789 for IANA standard)
 ip link add vxlan0 type vxlan \

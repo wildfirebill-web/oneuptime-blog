@@ -12,7 +12,7 @@ By default, Harvester uses the management network for all traffic, including Lon
 
 ## Why a Dedicated Storage Network?
 
-```
+```text
 Without dedicated storage network:
   Management traffic + Storage replication + API traffic = Congested management NIC
 
@@ -31,7 +31,7 @@ With dedicated storage network:
 
 ## Step 1: Plan the Storage Network
 
-```
+```text
 Storage Network CIDR: 10.200.0.0/24
 Node 1 Storage IP:    10.200.0.11
 Node 2 Storage IP:    10.200.0.12
@@ -46,6 +46,7 @@ SSH into each node and configure the storage NIC:
 
 ```bash
 # SSH into Node 1
+
 ssh rancher@192.168.1.11
 
 # Check available NICs
@@ -241,4 +242,4 @@ EOF
 
 ## Conclusion
 
-A dedicated storage network is an essential optimization for production Harvester deployments. By directing Longhorn replication traffic to a separate high-bandwidth NIC — ideally with jumbo frames enabled — you eliminate a significant source of network contention. The result is more predictable latency for management operations, better VM network performance, and improved Longhorn replication throughput. Implement the storage network before adding significant VM workloads to avoid disruptive reconfigurations later.
+A dedicated storage network is an essential optimization for production Harvester deployments. By directing Longhorn replication traffic to a separate high-bandwidth NIC - ideally with jumbo frames enabled - you eliminate a significant source of network contention. The result is more predictable latency for management operations, better VM network performance, and improved Longhorn replication throughput. Implement the storage network before adding significant VM workloads to avoid disruptive reconfigurations later.

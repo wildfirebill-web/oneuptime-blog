@@ -24,6 +24,7 @@ Deploying NATS with JetStream through Flux CD provides a GitOps-managed messagin
 
 ```yaml
 # infrastructure/sources/nats-helm.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

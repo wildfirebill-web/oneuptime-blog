@@ -12,6 +12,7 @@ The most basic way to query for a AAAA record is:
 
 ```bash
 # Query for AAAA record of a hostname
+
 dig AAAA example.com
 
 # Short output (just the answer)

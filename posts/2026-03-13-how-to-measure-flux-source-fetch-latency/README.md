@@ -61,6 +61,7 @@ If you have Prometheus running in your cluster, use these queries:
 
 ```promql
 # Average Git fetch latency over 15 minutes
+
 rate(gotk_reconcile_duration_seconds_sum{kind="GitRepository"}[15m])
 /
 rate(gotk_reconcile_duration_seconds_count{kind="GitRepository"}[15m])

@@ -72,6 +72,7 @@ If no free space is available, add a new disk:
 
 ```bash
 # Verify the new disk is visible
+
 lsblk
 
 # Create a physical volume

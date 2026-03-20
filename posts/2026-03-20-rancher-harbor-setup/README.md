@@ -22,6 +22,7 @@ Harbor is an open-source cloud-native container registry that provides security 
 
 ```bash
 # Add the Harbor Helm chart repository
+
 helm repo add harbor https://helm.goharbor.io
 helm repo update
 

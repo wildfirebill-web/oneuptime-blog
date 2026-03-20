@@ -6,7 +6,7 @@ Tags: OpenTofu, Oracle Cloud, OCI, Provider Configuration, Infrastructure as Cod
 
 Description: Learn how to configure the Oracle Cloud Infrastructure (OCI) provider in OpenTofu using API key authentication and environment variables.
 
-The Oracle Cloud Infrastructure (OCI) provider for OpenTofu lets you manage OCI resources — compute instances, virtual cloud networks, databases, and more — as code. This guide covers authentication methods and provider setup.
+The Oracle Cloud Infrastructure (OCI) provider for OpenTofu lets you manage OCI resources - compute instances, virtual cloud networks, databases, and more - as code. This guide covers authentication methods and provider setup.
 
 ## Provider Requirements
 
@@ -29,6 +29,7 @@ The most common authentication method uses an RSA key pair:
 
 ```bash
 # Generate a 2048-bit RSA key
+
 openssl genrsa -out ~/.oci/oci_api_key.pem 2048
 
 # Set correct permissions

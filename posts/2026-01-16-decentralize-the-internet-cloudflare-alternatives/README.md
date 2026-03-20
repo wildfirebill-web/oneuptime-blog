@@ -63,6 +63,7 @@ Here's a basic Varnish configuration that caches static assets:
 
 ```vcl
 # /etc/varnish/default.vcl
+
 # Varnish configuration for static asset caching
 
 vcl 4.1;

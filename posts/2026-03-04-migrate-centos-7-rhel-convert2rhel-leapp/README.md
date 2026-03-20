@@ -14,6 +14,7 @@ With CentOS 7 reaching end of life, migrating to RHEL requires a two-step proces
 
 ```bash
 # Update CentOS 7 to the latest available packages
+
 sudo yum update -y
 
 # Verify the current version

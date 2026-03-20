@@ -38,6 +38,7 @@ Point all your domains to the ALB using CNAME or Route 53 alias records:
 
 ```bash
 # Using Route 53 - create alias records for each subdomain
+
 for subdomain in api app admin blog; do
   aws route53 change-resource-record-sets \
     --hosted-zone-id Z1234567890 \

@@ -87,6 +87,7 @@ This Python example wraps a socket connection to capture network-level details a
 
 ```python
 # Capturing network-level attributes during an HTTP request.
+
 # This wrapper records the local and peer socket addresses,
 # transport protocol, and connection timing on the current span.
 import socket

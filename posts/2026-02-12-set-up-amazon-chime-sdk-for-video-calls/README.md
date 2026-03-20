@@ -34,6 +34,7 @@ First, install the SDK for your backend language.
 
 ```bash
 # For Node.js backend
+
 npm install @aws-sdk/client-chime-sdk-meetings
 
 # For Python backend

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Netstat, Linux, Processes, Ports, Diagnostics, TCP
+Tags: netstat, Linux, Processes, Ports, Diagnostics, TCP
 
 Description: Use netstat with the -p flag to identify which process owns a listening port, combine with grep to quickly find specific services and PIDs.
 
@@ -12,6 +12,7 @@ When "port already in use" errors appear or you need to know what's running on a
 
 ```bash
 # List all listening ports with process info (requires root for all processes)
+
 sudo netstat -tlnp
 
 # Or include UDP as well
@@ -91,7 +92,7 @@ sudo lsof -i TCP:22  # Specific protocol and port
 
 ```bash
 #!/bin/bash
-# check-port.sh — Check if a port is available
+# check-port.sh - Check if a port is available
 
 PORT="$1"
 if sudo netstat -tlnp | grep -q ":${PORT} "; then
@@ -118,4 +119,4 @@ fi
 sudo ss -tlnp
 ```
 
-Identifying process-to-port mappings is a fundamental operational skill — it's the fastest way to resolve port conflicts and understand what services are running on a system.
+Identifying process-to-port mappings is a fundamental operational skill - it's the fastest way to resolve port conflicts and understand what services are running on a system.

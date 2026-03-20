@@ -50,6 +50,7 @@ Cloud Endpoints works by deploying the Extensible Service Proxy (ESP or ESPv2) a
 
 ```yaml
 # OpenAPI spec for Cloud Endpoints
+
 swagger: "2.0"
 info:
   title: "My API"

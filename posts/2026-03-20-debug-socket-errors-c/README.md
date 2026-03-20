@@ -2,9 +2,9 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: C, IPv4, Socket, Debugging, errno, POSIX, Networking
+Tags: C, IPv4, Sockets, Debugging, Errno, POSIX, Networking
 
-Description: Learn how to diagnose and handle common IPv4 socket errors in C — including ECONNREFUSED, ETIMEDOUT, EADDRINUSE, and ECONNRESET — using errno, perror, and strerror.
+Description: Learn how to diagnose and handle common IPv4 socket errors in C - including ECONNREFUSED, ETIMEDOUT, EADDRINUSE, and ECONNRESET - using errno, perror, and strerror.
 
 ## Reading Socket Errors
 
@@ -57,15 +57,15 @@ void connect_and_report(const char *ip, uint16_t port) {
     if (connect(fd, (struct sockaddr *)&addr, sizeof(addr)) < 0) {
         switch (errno) {
         case ECONNREFUSED:
-            fprintf(stderr, "%s:%d — connection refused (no server listening)\n",
+            fprintf(stderr, "%s:%d - connection refused (no server listening)\n",
                     ip, port);
             break;
         case ETIMEDOUT:
-            fprintf(stderr, "%s:%d — connection timed out (host unreachable or firewall)\n",
+            fprintf(stderr, "%s:%d - connection timed out (host unreachable or firewall)\n",
                     ip, port);
             break;
         case ENETUNREACH:
-            fprintf(stderr, "%s:%d — network unreachable (no route)\n", ip, port);
+            fprintf(stderr, "%s:%d - network unreachable (no route)\n", ip, port);
             break;
         default:
             perror("connect");
@@ -101,7 +101,7 @@ int bind_with_reuse(uint16_t port) {
 
     if (bind(fd, (struct sockaddr *)&addr, sizeof(addr)) < 0) {
         if (errno == EADDRINUSE) {
-            fprintf(stderr, "Port %d is already in use — "
+            fprintf(stderr, "Port %d is already in use - "
                             "set SO_REUSEADDR or wait for TIME_WAIT to expire\n", port);
         } else {
             perror("bind");
@@ -143,7 +143,7 @@ void safe_recv(int fd, char *buf, size_t len) {
         if (errno == ECONNRESET) {
             fprintf(stderr, "Connection reset by peer (RST received)\n");
         } else if (errno == EAGAIN || errno == EWOULDBLOCK) {
-            fprintf(stderr, "recv timed out — no data\n");
+            fprintf(stderr, "recv timed out - no data\n");
         } else {
             perror("recv");
         }
@@ -168,4 +168,4 @@ int get_connect_error(int fd) {
 
 ## Conclusion
 
-Every failed socket call returns `-1` and sets `errno`. Use `perror()` for quick human-readable output and `strerror(errno)` when you need the message as a string in a log. The most frequent errors are: `ECONNREFUSED` (no listener on that port — check the server is running), `EADDRINUSE` (port taken — set `SO_REUSEADDR` or choose a different port), `ETIMEDOUT` (host unreachable or firewall drops — check routing and firewall rules), `ECONNRESET` (peer sent RST — handle gracefully in `recv`/`send` loops), and `EPIPE` (writing to a closed connection — suppress with `MSG_NOSIGNAL` or by ignoring `SIGPIPE`).
+Every failed socket call returns `-1` and sets `errno`. Use `perror()` for quick human-readable output and `strerror(errno)` when you need the message as a string in a log. The most frequent errors are: `ECONNREFUSED` (no listener on that port - check the server is running), `EADDRINUSE` (port taken - set `SO_REUSEADDR` or choose a different port), `ETIMEDOUT` (host unreachable or firewall drops - check routing and firewall rules), `ECONNRESET` (peer sent RST - handle gracefully in `recv`/`send` loops), and `EPIPE` (writing to a closed connection - suppress with `MSG_NOSIGNAL` or by ignoring `SIGPIPE`).

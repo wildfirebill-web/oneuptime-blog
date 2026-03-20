@@ -8,7 +8,7 @@ Description: Learn how to provision Google Cloud VPN tunnels using OpenTofu to c
 
 ## Introduction
 
-Google Cloud VPN creates IPsec VPN tunnels between your GCP VPC and on-premises or other cloud networks. OpenTofu manages the full stack — from VPN gateways to forwarding rules and tunnels — as version-controlled code.
+Google Cloud VPN creates IPsec VPN tunnels between your GCP VPC and on-premises or other cloud networks. OpenTofu manages the full stack - from VPN gateways to forwarding rules and tunnels - as version-controlled code.
 
 ## Provider Configuration
 

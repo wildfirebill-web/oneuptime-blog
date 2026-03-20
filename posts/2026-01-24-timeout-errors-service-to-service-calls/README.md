@@ -40,6 +40,7 @@ The most frequent cause is timeout values that do not account for realistic resp
 
 ```yaml
 # Kubernetes service configuration with readiness probe
+
 apiVersion: v1
 kind: Service
 metadata:

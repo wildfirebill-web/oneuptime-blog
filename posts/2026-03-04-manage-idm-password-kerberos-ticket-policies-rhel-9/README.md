@@ -31,6 +31,7 @@ IdM supports multiple password policies assigned to different groups. The policy
 
 ```bash
 # List all password policies
+
 ipa pwpolicy-find
 
 # Show the global (default) password policy

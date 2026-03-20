@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Google WiFi, Nest WiFi, Mesh Network, DHCPv6
+Tags: IPv6, Google Wifi, Nest Wifi, Mesh Network, DHCPv6
 
 Description: Enable and verify IPv6 on Google WiFi and Nest WiFi mesh systems, understand automatic DHCPv6-PD handling, and troubleshoot common IPv6 issues with Google's mesh platform.
 
@@ -24,7 +24,7 @@ flowchart LR
 
 Google WiFi handles IPv6 automatically when your ISP provides it.
 
-```
+```text
 Google Home App → Wi-Fi → Settings → Advanced Networking → IPv6
 
 IPv6: Enabled (default)
@@ -36,7 +36,7 @@ Google WiFi behavior:
   4. Primary point sub-delegates /64s to LAN and each mesh point
   5. All devices receive /64 via SLAAC
 
-Note: Google WiFi ONLY supports DHCPv6-PD — no static IPv6 or 6in4 tunnel
+Note: Google WiFi ONLY supports DHCPv6-PD - no static IPv6 or 6in4 tunnel
 ```
 
 ## Verify IPv6 is Working
@@ -47,6 +47,7 @@ Since Google WiFi has minimal CLI access, verify from connected devices.
 # From any device connected to Google WiFi
 
 # Check for global IPv6 address
+
 ip -6 addr show | grep "scope global"
 # Expected: 2001:db8:XXXX:XXXX::/64 from delegated prefix
 
@@ -89,16 +90,16 @@ ping6 2606:4700:4700::1111
 ## Troubleshoot Google WiFi IPv6
 
 ```bash
-# Issue 1: IPv6 not working — check if ISP supports DHCPv6-PD
+# Issue 1: IPv6 not working - check if ISP supports DHCPv6-PD
 # Google WiFi requires DHCP-PD; pure RA ISPs may not work
 # Verify with your ISP: do they support DHCPv6-PD?
 
 # Issue 2: IPv6 worked before, now broken after firmware update
-# Google auto-updates firmware — check Google WiFi status page
+# Google auto-updates firmware - check Google WiFi status page
 # Factory reset and re-setup sometimes helps
 
 # Issue 3: Some devices get IPv6, others don't
-# Usually client-side issue — restart device network stack
+# Usually client-side issue - restart device network stack
 # Linux: sudo dhclient -6 eth0 (or systemctl restart NetworkManager)
 # Windows: netsh int ipv6 reset, then reboot
 # iPhone: Settings → General → Transfer or Reset iPhone → Reset Network Settings
@@ -107,14 +108,14 @@ ping6 2606:4700:4700::1111
 # Check from device:
 ping6 -s 1400 2606:4700:4700::1111  # should work
 ping6 -s 1480 2606:4700:4700::1111  # may fail if MTU issue
-# Google WiFi has fixed MTU — limited manual control
+# Google WiFi has fixed MTU - limited manual control
 ```
 
 ## Google WiFi in Bridge Mode
 
 If using Google WiFi behind another router, bridge mode disables NAT.
 
-```
+```text
 Google Home App → Wi-Fi → Settings → Advanced Networking → WAN → Bridge Mode
 
 In bridge mode:
@@ -132,4 +133,4 @@ Bridge mode is recommended when:
 
 ## Conclusion
 
-Google WiFi and Nest WiFi automatically configure IPv6 when the ISP modem provides DHCPv6 prefix delegation — there are no manual IPv6 settings to configure. The primary WiFi point negotiates DHCPv6-PD, sub-delegates /64 prefixes to mesh points, and sends Router Advertisements so that all connected devices receive IPv6 via SLAAC. Verify IPv6 by checking connected devices for a global scope address and testing `ping6 2606:4700:4700::1111`. If IPv6 does not work, the most common cause is an ISP modem that does not pass DHCPv6-PD through — switch the modem to bridge mode or contact your ISP to enable IPv6 prefix delegation.
+Google WiFi and Nest WiFi automatically configure IPv6 when the ISP modem provides DHCPv6 prefix delegation - there are no manual IPv6 settings to configure. The primary WiFi point negotiates DHCPv6-PD, sub-delegates /64 prefixes to mesh points, and sends Router Advertisements so that all connected devices receive IPv6 via SLAAC. Verify IPv6 by checking connected devices for a global scope address and testing `ping6 2606:4700:4700::1111`. If IPv6 does not work, the most common cause is an ISP modem that does not pass DHCPv6-PD through - switch the modem to bridge mode or contact your ISP to enable IPv6 prefix delegation.

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: SLAAC, Windows, IPv6, Address Autoconfiguration, netsh, PowerShell
+Tags: SLAAC, Windows, IPv6, Address Autoconfiguration, Netsh, PowerShell
 
 Description: Configure and verify IPv6 SLAAC on Windows using netsh and PowerShell commands, including managing temporary addresses and privacy extensions.
 
@@ -14,6 +14,7 @@ Windows enables IPv6 SLAAC by default for all network interfaces. The Windows IP
 
 ```powershell
 # Show all IPv6 addresses including SLAAC-generated
+
 Get-NetIPAddress -AddressFamily IPv6
 
 # Example output:

@@ -17,7 +17,8 @@ Dynamic blocks in OpenTofu (and Terraform) allow you to generate multiple nested
 Without dynamic blocks, adding multiple ingress rules requires repetition:
 
 ```hcl
-# Without dynamic blocks — repetitive
+# Without dynamic blocks - repetitive
+
 resource "aws_security_group" "web" {
   ingress {
     from_port   = 80
@@ -246,7 +247,7 @@ dynamic "ingress" {
 
 1. **Use maps over lists** when iteration order matters or you need keys for identification
 2. **Name your iterator** explicitly with `iterator =` when nesting or for clarity
-3. **Keep the content block simple** — complex logic belongs in locals or variables
+3. **Keep the content block simple** - complex logic belongs in locals or variables
 4. **Combine with for_each** on the resource level for multi-resource + multi-block patterns
 5. **Use conditional dynamic blocks** (`for_each = condition ? [1] : []`) instead of count hacks
 

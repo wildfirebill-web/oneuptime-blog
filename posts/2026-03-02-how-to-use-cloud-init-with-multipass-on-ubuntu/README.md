@@ -14,6 +14,7 @@ Multipass is Canonical's lightweight VM manager for Ubuntu. It spins up Ubuntu V
 
 ```bash
 # Install Multipass via snap (recommended)
+
 sudo snap install multipass
 
 # Verify installation

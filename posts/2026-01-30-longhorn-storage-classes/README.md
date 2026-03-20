@@ -47,6 +47,7 @@ Here is a StorageClass with all the essential parameters:
 
 ```yaml
 # Basic Longhorn StorageClass with commonly used parameters
+
 apiVersion: storage.k8s.io/v1
 kind: StorageClass
 metadata:

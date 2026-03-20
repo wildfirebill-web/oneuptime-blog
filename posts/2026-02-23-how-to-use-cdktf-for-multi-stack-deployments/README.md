@@ -330,6 +330,7 @@ app.synth();
 
 ```bash
 # Deploy everything in dependency order
+
 cdktf deploy '*'
 
 # CDKTF automatically detects dependencies and deploys in order

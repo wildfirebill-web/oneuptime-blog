@@ -45,6 +45,7 @@ The `terraform state mv` command moves resources within state. Use it when renam
 
 ```hcl
 # Before: resource named "web"
+
 resource "aws_instance" "web" {
   ami           = "ami-0c55b159cbfafe1f0"
   instance_type = "t3.micro"
@@ -375,7 +376,7 @@ module "networking" {
 }
 ```
 
-### Resource Type Changes
+Resource Type Changes
 
 Sometimes you need to change resource types (e.g., upgrading from `aws_instance` to `aws_launch_template`). This requires destroy and recreate since Terraform cannot migrate between different resource types.
 

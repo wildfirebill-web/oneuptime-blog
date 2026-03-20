@@ -17,6 +17,7 @@ Install the required packages:
 ```bash
 npm install @bull-board/api @bull-board/express bullmq
 # Or for Fastify
+
 npm install @bull-board/api @bull-board/fastify bullmq
 ```
 

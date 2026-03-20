@@ -18,6 +18,7 @@ This sets up profiles for different environments and configures the embedded ser
 
 ```yaml
 # src/main/resources/application.yml
+
 server:
   port: 8080
 

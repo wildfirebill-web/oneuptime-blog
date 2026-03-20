@@ -9,15 +9,16 @@ Description: Learn strategies for scaling NAT to handle high traffic volumes inc
 ## Scaling Challenges for NAT
 
 At scale, NAT bottlenecks appear in:
-1. **Connection tracking table** — limited entries, memory pressure
-2. **CPU overhead** — each packet requires conntrack lookup
-3. **Single point of failure** — one NAT gateway affects all traffic
-4. **Port exhaustion** — limited source ports per public IP
+1. **Connection tracking table** - limited entries, memory pressure
+2. **CPU overhead** - each packet requires conntrack lookup
+3. **Single point of failure** - one NAT gateway affects all traffic
+4. **Port exhaustion** - limited source ports per public IP
 
 ## Tuning 1: Increase conntrack Limits
 
 ```bash
 # For large NAT gateways (500K+ sessions)
+
 sysctl -w net.netfilter.nf_conntrack_max=1048576
 sysctl -w net.netfilter.nf_conntrack_buckets=262144  # Hash table size
 

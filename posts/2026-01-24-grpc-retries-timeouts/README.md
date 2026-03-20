@@ -52,6 +52,7 @@ import grpc
 from datetime import datetime, timedelta
 
 # Method 1: Simple timeout in seconds
+
 def call_with_timeout(stub, request):
     try:
         # Timeout of 30 seconds

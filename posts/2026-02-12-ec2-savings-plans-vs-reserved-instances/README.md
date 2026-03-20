@@ -73,6 +73,7 @@ This command gets purchase recommendations based on your actual usage:
 
 ```bash
 # Get Savings Plan recommendations
+
 aws savingsplans describe-savings-plans-offering-rates \
   --savings-plan-offering-ids offering-id-here
 

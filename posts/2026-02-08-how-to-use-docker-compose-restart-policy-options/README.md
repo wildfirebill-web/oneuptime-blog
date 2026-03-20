@@ -27,6 +27,7 @@ This is the default behavior. When a container exits, it stays stopped.
 
 ```yaml
 # Explicit no-restart policy (same as not specifying restart at all)
+
 services:
   one-time-task:
     image: my-migration:latest

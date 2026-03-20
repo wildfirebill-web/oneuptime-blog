@@ -14,7 +14,7 @@ FTP passive mode (PASV) is the standard mode for FTP behind NAT and firewalls. D
 
 ## How FTP Passive Mode Works
 
-```
+```text
 Client → Server port 21 (control connection)
 Client asks "enter passive mode"
 Server responds: 227 Entering Passive Mode (IP, port_hi, port_lo)
@@ -27,9 +27,9 @@ The server tells the client which IP and port to connect to for data transfer. P
 
 ## Common Passive Mode Errors
 
-```
+```text
 425 Can't open data connection
-227 Entering Passive Mode (10,0,0,1,...)  # Private IP — wrong!
+227 Entering Passive Mode (10,0,0,1,...)  # Private IP - wrong!
 Connection refused to 192.168.x.x on port 50000-50100
 ```
 
@@ -41,12 +41,13 @@ Connection refused to 192.168.x.x on port 50000-50100
 
 ```bash
 # Connect to FTP and enter passive mode manually
+
 telnet ftp.example.com 21
 USER anonymous
 PASS test@test.com
 PASV
 # 227 Entering Passive Mode (10,0,0,5,195,150)
-# Server is advertising private IP 10.0.0.5 — this won't work from outside!
+# Server is advertising private IP 10.0.0.5 - this won't work from outside!
 ```
 
 ### Step 2: Parse the PASV Response
@@ -92,7 +93,7 @@ pasv_addr_resolve=YES
 The passive port range must be open in both the server firewall and any upstream firewalls/NAT:
 
 ```bash
-# iptables — open passive port range
+# iptables - open passive port range
 sudo iptables -A INPUT -p tcp --dport 49152:49252 -j ACCEPT
 sudo iptables -A INPUT -p tcp --dport 21 -j ACCEPT
 
@@ -196,8 +197,8 @@ ftp -p ftp.example.com
 
 ## Best Practices
 
-1. **Use EPSV (Extended Passive)** instead of PASV when possible — simpler and works with IPv6
-2. **Set a port range of at least 100 ports** — concurrent transfers need separate ports
+1. **Use EPSV (Extended Passive)** instead of PASV when possible - simpler and works with IPv6
+2. **Set a port range of at least 100 ports** - concurrent transfers need separate ports
 3. **Load nf_conntrack_ftp** on Linux firewalls to handle FTP automatically
 4. **Consider SFTP or FTPS** as modern alternatives that don't have passive mode complexity
 5. **Monitor FTP connections** at the firewall level to catch port exhaustion

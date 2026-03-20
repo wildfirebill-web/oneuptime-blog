@@ -37,6 +37,7 @@ Compare this to DynamoDB, where getting a player's rank would require scanning a
 
 ```yaml
 # CloudFormation for ElastiCache Redis cluster
+
 AWSTemplateFormatVersion: '2010-09-09'
 Resources:
   RedisSubnetGroup:

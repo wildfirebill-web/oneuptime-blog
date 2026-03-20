@@ -16,6 +16,7 @@ Ansible's `arista.eos` collection provides dedicated modules for EOS device mana
 
 ```bash
 # Install the Arista EOS collection
+
 ansible-galaxy collection install arista.eos
 ansible-galaxy collection install ansible.netcommon
 ```

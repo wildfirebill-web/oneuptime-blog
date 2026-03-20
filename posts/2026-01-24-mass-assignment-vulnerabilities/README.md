@@ -62,6 +62,7 @@ app.put('/api/users/:id', async (req, res) => {
 
 ```python
 # VULNERABLE: Using **kwargs from request
+
 @app.route('/api/users', methods=['POST'])
 def create_user():
     data = request.get_json()

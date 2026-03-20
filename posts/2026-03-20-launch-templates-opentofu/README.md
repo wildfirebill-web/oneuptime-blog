@@ -1,10 +1,10 @@
-# How to Use EC2 Launch Templates with OpenTofu
+# How to Use EC2 Launch Templates with OpenTofu - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: OpenTofu, EC2, Launch Templates, AWS, Infrastructure as Code, Compute
 
-Description: Learn how to manage EC2 Launch Templates with OpenTofu — configuring AMI, instance type, network settings, EBS volumes, IAM profiles, and user data with versioning support.
+Description: Learn how to manage EC2 Launch Templates with OpenTofu - configuring AMI, instance type, network settings, EBS volumes, IAM profiles, and user data with versioning support.
 
 ## Introduction
 
@@ -98,7 +98,7 @@ resource "aws_launch_template" "app" {
   image_id      = data.aws_ami.amazon_linux.id
   instance_type = var.instance_type
 
-  # IMDSv2 required — prevents SSRF-based metadata theft
+  # IMDSv2 required - prevents SSRF-based metadata theft
   metadata_options {
     http_endpoint               = "enabled"
     http_tokens                 = "required"
@@ -139,7 +139,7 @@ resource "aws_launch_template" "app" {
     associate_public_ip_address = false
     delete_on_termination       = true
     security_groups             = [aws_security_group.app.id]
-    # subnet_id not set here — ASG/launch supplies the subnet
+    # subnet_id not set here - ASG/launch supplies the subnet
   }
 
   placement {
@@ -168,6 +168,7 @@ resource "aws_launch_template" "app" {
 }
 
 # Pin ASG to a specific version for controlled rollouts
+
 resource "aws_autoscaling_group" "app" {
   name = "${var.environment}-app-asg"
 

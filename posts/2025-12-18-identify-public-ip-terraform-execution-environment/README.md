@@ -28,6 +28,7 @@ The most reliable method uses the `http` data source to query an IP lookup servi
 
 ```hcl
 # Get public IP using icanhazip.com
+
 data "http" "my_public_ip" {
   url = "https://icanhazip.com"
 }

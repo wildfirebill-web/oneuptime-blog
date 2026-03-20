@@ -30,6 +30,7 @@ Verify that DigitalOcean Cloud Firewalls allow the necessary Calico traffic.
 
 ```bash
 # List Cloud Firewalls for your cluster
+
 doctl compute firewall list
 
 # Get the firewall rules for your cluster firewall

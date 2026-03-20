@@ -60,6 +60,7 @@ Here is a common anti-pattern where critical events are not logged:
 
 ```python
 # BAD: No logging of security events
+
 def login(username, password):
     user = find_user(username)
     if user and verify_password(password, user.password_hash):

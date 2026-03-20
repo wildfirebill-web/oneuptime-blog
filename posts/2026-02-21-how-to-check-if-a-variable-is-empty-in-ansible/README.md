@@ -16,6 +16,7 @@ The most common case is checking for empty strings. Use the `length` filter:
 
 ```yaml
 # empty-string.yml - Check for empty strings
+
 ---
 - name: Empty string checks
   hosts: localhost

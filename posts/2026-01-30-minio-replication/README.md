@@ -50,6 +50,7 @@ Before configuring replication, ensure you have:
 
 ```bash
 # Install the MinIO client (mc) if you have not already
+
 curl https://dl.min.io/client/mc/release/linux-amd64/mc \
   --create-dirs -o /usr/local/bin/mc
 chmod +x /usr/local/bin/mc

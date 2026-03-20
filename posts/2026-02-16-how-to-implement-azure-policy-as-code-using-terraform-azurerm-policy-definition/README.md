@@ -36,6 +36,7 @@ Let me start with a practical example - a policy that requires all resources to 
 # policies/require-tags/main.tf - Policy that enforces required tags on resources
 
 # Define a custom policy that checks for required tags
+
 resource "azurerm_policy_definition" "require_tags" {
   name         = "require-mandatory-tags"
   display_name = "Require mandatory tags on all resources"

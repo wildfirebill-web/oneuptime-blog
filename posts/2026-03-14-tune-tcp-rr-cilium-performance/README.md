@@ -30,6 +30,7 @@ First, establish your current TCP_RR performance:
 
 ```bash
 # Deploy netperf server
+
 kubectl run netperf-server --image=cilium/netperf \
   --overrides='{"spec":{"nodeSelector":{"kubernetes.io/hostname":"node-1"}}}' \
   -- netserver -D

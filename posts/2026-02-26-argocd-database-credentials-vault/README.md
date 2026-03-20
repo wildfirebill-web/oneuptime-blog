@@ -44,6 +44,7 @@ You need the following components installed:
 
 ```bash
 # Enable the database secrets engine
+
 vault secrets enable database
 
 # Configure the PostgreSQL connection

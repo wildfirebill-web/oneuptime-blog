@@ -26,6 +26,7 @@ OpenTofu supports five log levels, from least to most verbose:
 
 ```bash
 # Enable DEBUG logging for a single command
+
 TF_LOG=DEBUG tofu plan
 
 # Enable the most verbose TRACE logging
@@ -41,13 +42,13 @@ tofu plan
 
 Without logging:
 
-```
+```text
 Error: InvalidClientTokenId: The security token included in the request is invalid.
 ```
 
 With `TF_LOG=DEBUG`:
 
-```
+```text
 2026-03-20T10:15:30.123Z [DEBUG] provider.terraform-provider-aws_v5.40.0:
   Request: GET https://ec2.us-east-1.amazonaws.com/
   Headers: Authorization: AWS4-HMAC-SHA256 Credential=AKIA...

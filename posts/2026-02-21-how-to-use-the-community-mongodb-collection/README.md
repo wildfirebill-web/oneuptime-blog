@@ -14,6 +14,7 @@ MongoDB is one of the most popular NoSQL databases, and managing it at scale req
 
 ```bash
 # Install the collection
+
 ansible-galaxy collection install community.mongodb
 
 # Install the Python MongoDB driver on target hosts

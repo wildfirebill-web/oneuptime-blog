@@ -30,6 +30,7 @@ Kubernetes events are the primary source for FailedCreatePodSandBox errors. Depl
 
 ```yaml
 # event-exporter-deployment.yaml
+
 # Deploys the event exporter to capture and forward Kubernetes events
 apiVersion: apps/v1
 kind: Deployment

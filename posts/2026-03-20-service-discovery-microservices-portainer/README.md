@@ -1,4 +1,4 @@
-# How to Configure Service Discovery for Microservices in Portainer
+# How to Configure Service Discovery for Microservices in Portainer (2)
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -16,6 +16,7 @@ Docker's overlay and bridge networks include automatic DNS resolution. Every con
 
 ```yaml
 # docker-compose.yml - Docker DNS service discovery
+
 version: "3.8"
 
 networks:

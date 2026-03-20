@@ -30,6 +30,7 @@ Validate Calico resources before they are committed to Git:
 ```bash
 #!/bin/bash
 # .git/hooks/pre-commit
+
 # Validates Calico YAML files before committing
 
 # Check if calicoctl is installed

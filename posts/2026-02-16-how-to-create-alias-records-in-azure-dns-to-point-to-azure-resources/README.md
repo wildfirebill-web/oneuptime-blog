@@ -49,6 +49,7 @@ If you already host your DNS in Azure, skip this step.
 
 ```bash
 # Create a resource group
+
 az group create --name rg-dns-demo --location eastus
 
 # Create a DNS zone

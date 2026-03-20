@@ -31,6 +31,7 @@ The playbook supplies the variables:
 
 ```yaml
 # deploy-config.yml
+
 # Provides variables that the template references
 - name: Deploy app config
   hosts: webservers

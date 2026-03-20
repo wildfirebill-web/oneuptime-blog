@@ -370,6 +370,7 @@ TOKEN=$(curl -s -X POST https://hydra.mycompany.com/oauth2/token \
   -d "scope=openid" | jq -r '.access_token')
 
 # Call a protected service
+
 curl -H "Authorization: Bearer $TOKEN" https://app.mycompany.com/api/data
 ```
 

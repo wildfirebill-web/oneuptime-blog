@@ -93,6 +93,7 @@ Deploy your open source platform alongside Datadog. Send the same telemetry to b
 
 ```yaml
 # otel-collector-config.yaml
+
 exporters:
   otlp/oneuptime:
     endpoint: "your-oneuptime-instance:4317"

@@ -122,6 +122,7 @@ This is the entry point for each cluster. Flux bootstraps to the `clusters/<clus
 
 ```yaml
 # clusters/staging/infrastructure.yaml
+
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
 metadata:

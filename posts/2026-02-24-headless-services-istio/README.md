@@ -226,6 +226,7 @@ Istio's DNS proxy (enabled by default in recent versions) intercepts DNS queries
 
 ```bash
 # Check if DNS proxy is enabled
+
 istioctl proxy-config listener deploy/my-client -n my-namespace --port 15053
 ```
 

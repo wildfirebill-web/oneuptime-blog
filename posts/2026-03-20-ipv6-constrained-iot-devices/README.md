@@ -8,7 +8,7 @@ Description: Configure IPv6 on constrained IoT devices using lightweight stacks 
 
 ## Introduction
 
-Constrained IoT devices — microcontrollers with kilobytes of RAM and limited CPU — cannot run full Linux network stacks. Lightweight IPv6 implementations like those in Contiki-NG, RIOT OS, and Zephyr RTOS bring IPv6 to these devices through optimized stacks and 6LoWPAN compression.
+Constrained IoT devices - microcontrollers with kilobytes of RAM and limited CPU - cannot run full Linux network stacks. Lightweight IPv6 implementations like those in Contiki-NG, RIOT OS, and Zephyr RTOS bring IPv6 to these devices through optimized stacks and 6LoWPAN compression.
 
 ## What "Constrained" Means
 
@@ -67,6 +67,7 @@ gnrc_netapi_get(netif->pid, NETOPT_IPV6_ADDR, 0, &addr, sizeof(addr));
 
 ```ini
 # prj.conf - Zephyr IPv6 configuration
+
 CONFIG_NETWORKING=y
 CONFIG_NET_IPV6=y
 CONFIG_NET_IPV6_NBR_CACHE=y

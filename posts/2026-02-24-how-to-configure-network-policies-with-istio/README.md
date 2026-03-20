@@ -220,6 +220,7 @@ Use NetworkPolicies for broad network segmentation and Istio AuthorizationPolici
 
 ```yaml
 # NetworkPolicy: Allow any pod in production to reach the API gateway on port 8080
+
 apiVersion: networking.k8s.io/v1
 kind: NetworkPolicy
 metadata:

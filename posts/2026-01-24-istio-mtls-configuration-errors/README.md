@@ -50,6 +50,7 @@ Check if you have strict mTLS enabled:
 
 ```bash
 # Check PeerAuthentication policies in your namespace
+
 kubectl get peerauthentication -n your-namespace -o yaml
 
 # Check mesh-wide policy

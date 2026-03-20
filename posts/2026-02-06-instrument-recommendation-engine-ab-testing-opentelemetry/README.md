@@ -72,6 +72,7 @@ Any downstream service that receives the propagated context can read the baggage
 
 ```python
 # In the feature store service
+
 def get_user_features(user_id):
     """Fetch user features from the feature store."""
 

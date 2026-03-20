@@ -25,6 +25,7 @@ Check what you have:
 
 ```bash
 # If the machine currently runs Linux, check specs
+
 cat /proc/cpuinfo | grep "model name" | head -1
 free -h
 lsblk

@@ -132,6 +132,7 @@ RESET work_mem;
 
 ```ini
 # postgresql.conf
+
 # Be conservative - each operation can use this much memory
 work_mem = 64MB
 ```

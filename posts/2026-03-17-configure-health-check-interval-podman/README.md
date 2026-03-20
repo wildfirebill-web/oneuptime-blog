@@ -20,6 +20,7 @@ Use the `--health-interval` flag to specify how often the health check runs:
 
 ```bash
 # Run a health check every 30 seconds
+
 podman run -d \
   --name my-api \
   --health-cmd "curl -f http://localhost:8080/health || exit 1" \

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Talos Linux, NGINX, Reverse Proxy, Kubernetes, API, Load Balancing
+Tags: Talos Linux, Nginx, Reverse Proxy, Kubernetes, API, Load Balancing
 
 Description: Learn how to configure Nginx as a reverse proxy for the Talos Linux API to improve security, reliability, and load distribution across control plane nodes.
 
@@ -31,6 +31,7 @@ On a Debian or Ubuntu host, install Nginx with the stream module. The stream mod
 
 ```bash
 # Install Nginx with stream module support
+
 sudo apt update
 sudo apt install -y nginx libnginx-mod-stream
 ```

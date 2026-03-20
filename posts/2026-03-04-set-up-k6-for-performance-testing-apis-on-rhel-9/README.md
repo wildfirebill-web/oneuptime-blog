@@ -29,6 +29,7 @@ k6 is popular for API performance testing because:
 
 ```bash
 # Add the k6 repository
+
 sudo dnf install -y https://dl.k6.io/rpm/repo.rpm
 ```
 

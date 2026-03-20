@@ -37,6 +37,7 @@ When you initialize a PV, LVM writes metadata to it that identifies it as an LVM
 
 ```bash
 # Initialize a disk as a Physical Volume
+
 sudo pvcreate /dev/sdb
 
 # View Physical Volume details

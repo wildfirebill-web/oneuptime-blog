@@ -26,6 +26,7 @@ The problem states are when the tunnel is stuck in PROVISIONING (allocating reso
 
 ```bash
 # Check VPN tunnel status
+
 gcloud compute vpn-tunnels describe my-vpn-tunnel \
     --region=us-central1 \
     --project=my-project \

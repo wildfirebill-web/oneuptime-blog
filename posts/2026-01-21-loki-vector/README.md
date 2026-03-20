@@ -91,6 +91,7 @@ max_line_bytes = 102400
 line_delimiter = "\n"
 
 # Multi-line configuration
+
 multiline.start_pattern = '^\d{4}-\d{2}-\d{2}'
 multiline.condition_pattern = '^[\s\t]+'
 multiline.mode = "continue_through"

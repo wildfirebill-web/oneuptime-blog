@@ -31,6 +31,7 @@ Oracle Linux offers RHEL compatibility with Oracle's own kernel (UEK) as an opti
 
 ```bash
 # Enable the service to start on boot
+
 sudo systemctl enable <service-name>
 
 # Start the service

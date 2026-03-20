@@ -226,6 +226,7 @@ CEL provides many built-in functions:
 ```yaml
 x-kubernetes-validations:
 # String functions
+
 - rule: "self.name.matches('^[a-z0-9-]+$')"
   message: "Name must contain only lowercase letters, numbers, and hyphens"
 - rule: "size(self.description) <= 500"

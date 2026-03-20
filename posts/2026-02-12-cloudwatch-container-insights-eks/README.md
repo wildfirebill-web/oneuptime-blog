@@ -43,6 +43,7 @@ Verify your cluster:
 
 ```bash
 # Check your EKS cluster version and status
+
 aws eks describe-cluster --name my-cluster --query "cluster.{Version:version,Status:status}"
 
 # Verify kubectl connectivity

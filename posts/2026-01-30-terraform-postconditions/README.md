@@ -389,6 +389,7 @@ When building reusable modules, postconditions help enforce contracts with modul
 
 ```hcl
 # modules/secure-bucket/main.tf
+
 resource "aws_s3_bucket" "this" {
   bucket = var.bucket_name
 }

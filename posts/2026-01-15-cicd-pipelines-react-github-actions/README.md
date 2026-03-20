@@ -60,6 +60,7 @@ on:
     branches: [main, develop]
 
 # Cancel in-progress runs when a new commit is pushed
+
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true

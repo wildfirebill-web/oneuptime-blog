@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Ubuntu, iptables, Firewall, Networking, SysAdmin
+Tags: Ubuntu, iptables, Firewall, Networking, Sysadmin
 
 Description: Persist iptables firewall rules across reboots on Ubuntu using iptables-save, iptables-restore, and the iptables-persistent package with automation examples.
 
@@ -22,6 +22,7 @@ The `iptables-save` command dumps the current iptables ruleset in a format that 
 
 ```bash
 # View current rules in save format
+
 sudo iptables-save
 
 # Save IPv4 rules to a file

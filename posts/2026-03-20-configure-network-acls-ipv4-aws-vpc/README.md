@@ -30,6 +30,7 @@ resource "aws_network_acl" "app" {
 
 ```hcl
 # Allow HTTP from anywhere
+
 resource "aws_network_acl_rule" "inbound_http" {
   network_acl_id = aws_network_acl.app.id
   rule_number    = 100
@@ -53,7 +54,7 @@ resource "aws_network_acl_rule" "inbound_https" {
   to_port        = 443
 }
 
-# Allow ephemeral ports (response traffic — NACLs are stateless)
+# Allow ephemeral ports (response traffic - NACLs are stateless)
 resource "aws_network_acl_rule" "inbound_ephemeral" {
   network_acl_id = aws_network_acl.app.id
   rule_number    = 900
@@ -118,4 +119,4 @@ resource "aws_network_acl_association" "app" {
 
 ## Summary
 
-NACLs are stateless — you must allow both request and response traffic explicitly. Always include an ephemeral port range (1024-65535) in inbound rules for return TCP traffic. Associate the NACL with subnets using `aws_network_acl_association`. Use NACLs as an additional layer of defense alongside security groups, not as a replacement.
+NACLs are stateless - you must allow both request and response traffic explicitly. Always include an ephemeral port range (1024-65535) in inbound rules for return TCP traffic. Associate the NACL with subnets using `aws_network_acl_association`. Use NACLs as an additional layer of defense alongside security groups, not as a replacement.

@@ -23,6 +23,7 @@ Memory caching is faster but limited by available RAM. Disk caching handles larg
 
 ```bash
 # Enable caching modules
+
 sudo a2enmod cache
 sudo a2enmod cache_disk
 sudo a2enmod cache_socache

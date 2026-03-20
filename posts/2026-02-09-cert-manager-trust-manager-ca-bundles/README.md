@@ -32,6 +32,7 @@ Install trust-manager in your cluster:
 
 ```bash
 # Install trust-manager
+
 kubectl apply -f https://github.com/cert-manager/trust-manager/releases/download/v0.7.0/trust-manager.yaml
 
 # Verify installation

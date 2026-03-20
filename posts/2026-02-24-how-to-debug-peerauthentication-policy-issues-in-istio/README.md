@@ -24,6 +24,7 @@ Start by listing all PeerAuthentication policies that could affect the destinati
 
 ```bash
 # Mesh-wide policies
+
 kubectl get peerauthentication -n istio-system
 
 # Namespace policies

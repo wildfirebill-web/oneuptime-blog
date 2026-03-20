@@ -20,6 +20,7 @@ An idle EC2 instance is one that's running but doing no useful work. The most re
 
 ```bash
 # Find EC2 instances with average CPU below 5% over the past 14 days
+
 for instance_id in $(aws ec2 describe-instances \
   --filters "Name=instance-state-name,Values=running" \
   --query "Reservations[].Instances[].InstanceId" \

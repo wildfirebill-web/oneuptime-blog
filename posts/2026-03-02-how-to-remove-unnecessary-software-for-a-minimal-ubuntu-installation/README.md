@@ -18,6 +18,7 @@ Before removing anything, build a picture of what is installed and why:
 
 ```bash
 # Count total installed packages
+
 dpkg -l | grep '^ii' | wc -l
 
 # List all installed packages sorted by size (largest first)

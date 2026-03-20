@@ -29,6 +29,7 @@ Before making any changes, capture everything about your current installation:
 
 ```bash
 # Record current versions
+
 istioctl version > version-before-downgrade.txt
 
 # Export current configuration

@@ -20,6 +20,7 @@ Navigate to **Stacks** > **Add Stack**:
 
 ```yaml
 # docker-compose.yml - Vikunja
+
 version: "3.8"
 
 services:
@@ -75,7 +76,7 @@ networks:
 
 ## Step 2: Set Environment Variables in Portainer
 
-```
+```text
 DB_PASSWORD=your-postgres-password
 JWT_SECRET=your-jwt-secret-min-32-chars
 VIKUNJA_DOMAIN=vikunja.yourdomain.com

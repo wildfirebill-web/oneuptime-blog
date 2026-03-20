@@ -235,6 +235,7 @@ A useful sanity check is comparing what Envoy sees with what Kubernetes has:
 
 ```bash
 # What Kubernetes knows
+
 kubectl get endpoints reviews -n default -o json | \
   python3 -c "import sys,json; d=json.load(sys.stdin); [print(f\"{a['ip']}:{p['port']}\") for s in d.get('subsets',[]) for a in s.get('addresses',[]) for p in s.get('ports',[])]"
 

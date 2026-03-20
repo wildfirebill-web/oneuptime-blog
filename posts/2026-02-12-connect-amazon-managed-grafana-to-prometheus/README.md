@@ -51,6 +51,7 @@ If you want to restrict access to a specific AMP workspace, replace the wildcard
 
 ```bash
 # Attach the policy to the Grafana workspace role
+
 aws iam put-role-policy \
   --role-name GrafanaWorkspaceRole \
   --policy-name AMPQueryAccess \

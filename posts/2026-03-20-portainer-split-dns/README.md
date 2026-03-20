@@ -8,7 +8,7 @@ Description: Configure split DNS to allow Portainer-managed services to resolve 
 
 ## Introduction
 
-Split DNS (also called split-horizon DNS) allows the same hostname to resolve to different IP addresses depending on the client's location. For Portainer-managed services, this means internal users get private IPs while external users get public IPs—without changing application URLs.
+Split DNS (also called split-horizon DNS) allows the same hostname to resolve to different IP addresses depending on the client's location. For Portainer-managed services, this means internal users get private IPs while external users get public IPs-without changing application URLs.
 
 ## Prerequisites
 
@@ -19,7 +19,7 @@ Split DNS (also called split-horizon DNS) allows the same hostname to resolve to
 
 ## Architecture
 
-```
+```text
 External Users → Public DNS → Public IP → Reverse Proxy → Container
 Internal Users → Private DNS → Private IP → Reverse Proxy → Container
 ```
@@ -30,6 +30,7 @@ Internal Users → Private DNS → Private IP → Reverse Proxy → Container
 
 ```bash
 # Install BIND9
+
 sudo apt-get install -y bind9 bind9utils
 
 # Create internal zone file

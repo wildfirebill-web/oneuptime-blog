@@ -1,4 +1,4 @@
-# How to Request IPv6 Address Space from APNIC
+# How to Request IPv6 Address Space from APNIC - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -22,7 +22,7 @@ APNIC serves the Asia-Pacific region including Australia, China, Japan, India, S
 
 ## Application Process
 
-```
+```sql
 Step 1: Register at https://www.apnic.net/membership/
   - Create account at MyAPNIC portal
   - Provide organization details
@@ -51,7 +51,7 @@ Step 5: Registration
 
 ## APNIC Database Registration
 
-```
+```text
 # Register your IPv6 allocation in APNIC Whois
 
 inet6num:       2400:db8::/32
@@ -65,6 +65,7 @@ status:         ALLOCATED PORTABLE
 source:         APNIC
 
 # Route6 object
+
 route6:         2400:db8::/32
 descr:          Example Organization IPv6 Route
 origin:         AS65001
@@ -100,7 +101,7 @@ routinator validate --asn 65001 --prefix 2400:db8::/32
 
 ## Sub-Allocation to Customers
 
-```
+```text
 # APNIC policy for ISPs:
 # Sub-allocate /48 per customer (recommended)
 # Register /29 and larger sub-allocations in APNIC DB

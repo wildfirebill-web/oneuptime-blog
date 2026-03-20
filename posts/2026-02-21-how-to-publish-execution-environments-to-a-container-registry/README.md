@@ -32,6 +32,7 @@ For Quay.io:
 
 ```bash
 # Login to Quay.io
+
 podman login quay.io
 # Enter your username and password when prompted
 

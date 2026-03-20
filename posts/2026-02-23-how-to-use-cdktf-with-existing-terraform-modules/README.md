@@ -56,6 +56,7 @@ Then generate the bindings:
 
 ```bash
 # Generate typed bindings for all modules
+
 cdktf get
 
 # Bindings are created in .gen/modules/

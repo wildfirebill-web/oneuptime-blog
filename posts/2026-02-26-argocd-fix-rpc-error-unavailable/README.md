@@ -43,6 +43,7 @@ The most straightforward cause - the target pod is not running.
 
 ```bash
 # Check all ArgoCD pods
+
 kubectl get pods -n argocd
 
 # Look for pods that are not in Running state

@@ -28,6 +28,7 @@ The first step is to determine exactly which metrics are causing the rollback. F
 
 ```bash
 # Check Flagger logs for metric evaluation results
+
 kubectl logs -l app.kubernetes.io/name=flagger \
   -n <flagger-namespace> --tail=200 | grep -i "failed\|halt\|rollback"
 ```

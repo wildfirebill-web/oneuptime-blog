@@ -14,6 +14,7 @@ GeoIP enrichment adds geographic context (country, city, coordinates) to IP addr
 
 ```bash
 # Register for free at https://www.maxmind.com then:
+
 # Download GeoLite2-City database (supports IPv6)
 wget -O /tmp/GeoLite2-City.tar.gz \
   "https://download.maxmind.com/app/geoip_download?edition_id=GeoLite2-City&license_key=YOUR_KEY&suffix=tar.gz"

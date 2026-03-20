@@ -22,6 +22,7 @@ Nagios is a powerful open-source monitoring system for networks, servers, and ap
 
 ```bash
 # Update system
+
 sudo apt update
 
 # Install required packages

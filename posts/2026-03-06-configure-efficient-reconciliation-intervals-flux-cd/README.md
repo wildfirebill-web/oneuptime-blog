@@ -42,6 +42,7 @@ Different resource types have different optimal intervals based on their change 
 
 ```yaml
 # GitRepository - frequently changing application code
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: GitRepository
 metadata:

@@ -28,6 +28,7 @@ Vault uses AES-256 encryption. The encrypted files are just text, so they work f
 
 ```bash
 # Create a new encrypted variables file
+
 ansible-vault create group_vars/all/vault.yml
 ```
 

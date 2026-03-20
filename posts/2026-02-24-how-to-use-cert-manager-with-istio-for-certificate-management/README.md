@@ -245,6 +245,7 @@ Each use case can have its own issuer:
 
 ```yaml
 # Let's Encrypt for public-facing
+
 apiVersion: cert-manager.io/v1
 kind: ClusterIssuer
 metadata:

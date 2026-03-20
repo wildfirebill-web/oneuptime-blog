@@ -98,7 +98,7 @@ insecure=invite
 
 ## Asterisk Dialplan for IPv6
 
-```
+```javascript
 # /etc/asterisk/extensions.conf
 
 [from-internal]
@@ -139,6 +139,7 @@ cos=5
 
 ```bash
 # SIP over IPv6
+
 sudo ip6tables -A INPUT -p udp --dport 5060 -j ACCEPT
 sudo ip6tables -A INPUT -p tcp --dport 5060 -j ACCEPT
 sudo ip6tables -A INPUT -p tcp --dport 5061 -j ACCEPT  # SIP TLS

@@ -24,6 +24,7 @@ A VM that receives a Calico-managed IP should be reachable from other VMs, from 
 
 ```bash
 # On each compute node
+
 sudo systemctl status calico-felix
 sudo calicoctl node status
 ```

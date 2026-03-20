@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: NTP, IPv6, Troubleshooting, Time Synchronization, Networking, chrony
+Tags: NTP, IPv6, Troubleshooting, Time Synchronization, Networking, Chrony
 
 Description: Systematically diagnose and resolve NTP synchronization failures over IPv6 by checking connectivity, DNS resolution, firewall rules, and NTP server responses.
 
@@ -14,6 +14,7 @@ NTP over IPv6 failures can manifest as time drift, synchronization failures, or 
 
 ```bash
 # Check IPv6 is functional on the host
+
 ip -6 addr show
 # Look for a valid global unicast address (2001:... or similar)
 
@@ -179,4 +180,4 @@ echo ""
 chronyc tracking | grep -E "System time|Last offset|RMS offset"
 ```
 
-A systematic approach — from basic IPv6 connectivity through DNS, firewall, and NTP-specific checks — efficiently identifies the root cause of NTP over IPv6 synchronization failures.
+A systematic approach - from basic IPv6 connectivity through DNS, firewall, and NTP-specific checks - efficiently identifies the root cause of NTP over IPv6 synchronization failures.

@@ -170,6 +170,7 @@ Reserve a global static IP so your DNS does not break when the load balancer is 
 
 ```bash
 # Reserve a global static IP
+
 gcloud compute addresses create argocd-ip --global
 
 # Get the reserved IP address

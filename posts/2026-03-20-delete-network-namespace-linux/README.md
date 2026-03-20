@@ -20,6 +20,7 @@ When you no longer need a network namespace, you should delete it to free resour
 
 ```bash
 # Delete a specific namespace by name
+
 ip netns delete ns1
 
 # Verify it is gone

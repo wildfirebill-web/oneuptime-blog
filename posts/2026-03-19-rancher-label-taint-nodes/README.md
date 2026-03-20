@@ -36,6 +36,7 @@ Node labels and taints are powerful Kubernetes mechanisms for controlling where 
 
 ```bash
 # Add a single label
+
 kubectl label node <NODE_NAME> environment=production
 
 # Add multiple labels

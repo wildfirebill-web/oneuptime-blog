@@ -37,6 +37,7 @@ You can use either a system-assigned or user-assigned managed identity. System-a
 
 ```bash
 # Enable system-assigned managed identity on your function app
+
 az functionapp identity assign \
   --name my-function-app \
   --resource-group my-resource-group

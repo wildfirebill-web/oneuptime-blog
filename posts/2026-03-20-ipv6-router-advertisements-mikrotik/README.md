@@ -13,13 +13,14 @@ MikroTik RouterOS manages IPv6 Router Advertisements through the `/ipv6 nd` menu
 ## Prerequisites
 
 - MikroTik router with RouterOS 6.x or 7.x
-- IPv6 package enabled (`/system package` — verify `ipv6` is installed)
+- IPv6 package enabled (`/system package` - verify `ipv6` is installed)
 - IPv6 address assigned to the LAN interface
 
 ## Checking IPv6 Package Status
 
 ```bash
 # Via RouterOS CLI
+
 /system package print
 # Verify "ipv6" package is installed and running
 

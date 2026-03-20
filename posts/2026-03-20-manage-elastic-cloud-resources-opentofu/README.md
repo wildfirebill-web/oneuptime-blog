@@ -1,4 +1,4 @@
-# How to Manage Elastic Cloud Resources with OpenTofu
+# How to Manage Elastic Cloud Resources with OpenTofu - Resources
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Learn how to provision and manage Elastic Cloud deployments, includ
 
 ## Introduction
 
-Elastic Cloud is the managed service for the Elastic Stack (Elasticsearch, Kibana, APM, and more). Managing Elastic Cloud resources with OpenTofu allows teams to automate deployment creation, configure cluster topologies, and manage access control — all through version-controlled infrastructure code.
+Elastic Cloud is the managed service for the Elastic Stack (Elasticsearch, Kibana, APM, and more). Managing Elastic Cloud resources with OpenTofu allows teams to automate deployment creation, configure cluster topologies, and manage access control - all through version-controlled infrastructure code.
 
 ## Prerequisites
 

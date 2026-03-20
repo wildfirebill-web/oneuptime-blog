@@ -58,6 +58,7 @@ On Linux hosts, the container ID is available inside the container through the c
 
 ```python
 # Read the container ID from the Linux cgroup filesystem.
+
 # Docker and containerd write the full container ID into the
 # cgroup path. This function extracts it by parsing the last
 # segment of the path.

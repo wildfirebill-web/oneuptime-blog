@@ -49,6 +49,7 @@ First, create a secret in Key Vault with an expiration date and a near-expiry no
 
 ```powershell
 # Connect to Azure
+
 Connect-AzAccount
 
 # Create or update a secret with an expiration date

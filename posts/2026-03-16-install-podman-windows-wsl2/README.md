@@ -29,6 +29,7 @@ If you have not already enabled WSL2:
 
 ```bash
 # Open PowerShell as Administrator and enable WSL2
+
 wsl --install
 
 # Restart your computer if prompted

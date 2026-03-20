@@ -16,6 +16,7 @@ Create a `.gitlab-ci.yml` file in your repository root:
 
 ```yaml
 # .gitlab-ci.yml
+
 image: ghcr.io/opentofu/opentofu:1.8.0
 
 variables:

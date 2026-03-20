@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, DD-WRT, Router, radvd, DHCPv6, Networking
+Tags: IPv6, DD-WRT, Router, Radvd, DHCPv6, Networking
 
 Description: Configure IPv6 on DD-WRT routers using the web interface and SSH, enabling native IPv6 connectivity and SLAAC for connected devices.
 
@@ -30,6 +30,7 @@ SSH into the router for more control:
 
 ```bash
 # Check current IPv6 configuration
+
 ip -6 addr show
 
 # Check if radvd is running

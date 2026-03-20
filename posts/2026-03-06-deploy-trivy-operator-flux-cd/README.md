@@ -46,6 +46,7 @@ Define a namespace for Trivy Operator.
 
 ```yaml
 # trivy-namespace.yaml
+
 # Dedicated namespace for Trivy Operator
 apiVersion: v1
 kind: Namespace

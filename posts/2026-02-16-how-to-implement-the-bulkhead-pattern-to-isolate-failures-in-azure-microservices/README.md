@@ -191,6 +191,7 @@ When running microservices on AKS, you can implement bulkheads at the infrastruc
 
 ```yaml
 # Each service deployment has resource limits that act as a bulkhead
+
 # If the recommendation service consumes all its CPU allocation,
 # it cannot steal CPU from other services
 apiVersion: apps/v1

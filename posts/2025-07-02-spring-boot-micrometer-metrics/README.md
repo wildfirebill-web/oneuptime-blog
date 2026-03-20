@@ -93,6 +93,7 @@ Configure the actuator endpoints in `application.yml`:
 
 ```yaml
 # application.yml
+
 # Enable metrics endpoint and Prometheus format
 management:
   endpoints:

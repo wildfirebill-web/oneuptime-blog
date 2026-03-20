@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux, Kubernetes, GitOps, Receiver, Webhooks, Ingress, NGINX, Networking
+Tags: Flux, Kubernetes, GitOps, Receiver, Webhooks, Ingress, Nginx, Networking
 
 Description: Learn how to expose the Flux notification-controller Receiver endpoint behind a Kubernetes Ingress controller so external services like GitHub and GitLab can trigger reconciliation.
 
@@ -41,6 +41,7 @@ The Receiver requires a shared secret token to validate incoming webhook payload
 
 ```bash
 # Generate a random token
+
 TOKEN=$(head -c 32 /dev/urandom | shasum | head -c 40)
 
 # Create the secret in the flux-system namespace

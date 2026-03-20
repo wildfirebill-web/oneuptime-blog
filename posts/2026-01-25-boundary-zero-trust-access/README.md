@@ -75,6 +75,7 @@ Deploy Boundary controllers using Helm:
 
 ```yaml
 # boundary-controller-values.yaml
+
 # Helm values for Boundary controller deployment
 
 controller:

@@ -2,14 +2,15 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: DHCP, ISC dhcpd, Linux, sysadmin, Network Configuration
+Tags: DHCP, ISC dhcpd, Linux, Sysadmin, Network Configuration
 
-Description: ISC DHCP Server (dhcpd) is the most widely used open-source DHCP server, configurable through a declarative configuration file with subnet declarations, host reservations, and extensive option support.
+Description: ISC DHCP Server (dhcpd) is the most widely used open-source DHCP server, configurable through a declarative configuration file with subnet declarations, host reservations, and extensive option...
 
 ## Installation
 
 ```bash
 # Debian/Ubuntu
+
 sudo apt install isc-dhcp-server
 
 # RHEL/CentOS/Fedora
@@ -21,7 +22,7 @@ dhcpd --version
 
 ## Complete Configuration Example
 
-```
+```nginx
 # /etc/dhcp/dhcpd.conf
 
 # =============================================

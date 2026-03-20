@@ -330,6 +330,7 @@ Track saga completion rates and durations:
 
 ```text
 # Saga start rate
+
 sum(rate(istio_requests_total{destination_service="saga-orchestrator.production.svc.cluster.local",request_url_path="/api/orders",request_method="POST"}[5m]))
 
 # Payment step error rate

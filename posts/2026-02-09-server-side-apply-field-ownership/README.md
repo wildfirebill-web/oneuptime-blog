@@ -20,6 +20,7 @@ Client-side apply:
 
 ```bash
 # Creates/updates with client-side logic
+
 kubectl apply -f deployment.yaml
 ```
 

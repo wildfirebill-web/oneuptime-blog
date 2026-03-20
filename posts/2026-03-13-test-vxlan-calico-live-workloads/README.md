@@ -38,6 +38,7 @@ spec:
 calicoctl apply -f ippool-vxlan.yaml
 
 # Verify VXLAN interface is created
+
 ip link show vxlan.calico
 ip addr show vxlan.calico
 ```

@@ -29,6 +29,7 @@ TARGET_VERSION="1.29"
 echo "Checking for deprecated APIs for Kubernetes $TARGET_VERSION..."
 
 # Use kubectl to list all resources
+
 kubectl api-resources --verbs=list --namespaced -o name | while read resource; do
   kubectl get $resource -A -o json 2>/dev/null | \
     jq -r --arg version "$TARGET_VERSION" '

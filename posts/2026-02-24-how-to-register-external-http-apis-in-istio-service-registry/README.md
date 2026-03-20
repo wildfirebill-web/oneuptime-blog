@@ -51,6 +51,7 @@ Apply it and test:
 kubectl apply -f weather-api-se.yaml
 
 # Test from a pod in the mesh
+
 kubectl exec deploy/my-app -c my-app -- curl -s http://api.weatherservice.com/current
 ```
 

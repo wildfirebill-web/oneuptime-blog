@@ -27,6 +27,7 @@ First, identify where etcd is running and how to access it.
 echo "Locating etcd in Kubernetes cluster..."
 
 # Check if etcd runs as a pod (common in kubeadm clusters)
+
 kubectl get pods -n kube-system | grep etcd
 
 # Get etcd pod details

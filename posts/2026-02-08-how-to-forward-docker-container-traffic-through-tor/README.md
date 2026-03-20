@@ -33,6 +33,7 @@ Start a Tor container that exposes a SOCKS5 proxy:
 
 ```bash
 # Run a Tor SOCKS5 proxy container
+
 docker run -d \
   --name tor-proxy \
   --restart unless-stopped \

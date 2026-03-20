@@ -26,6 +26,7 @@ Run these checks on every Kubernetes node:
 
 ```bash
 # Check cryptsetup version (2.0+ required)
+
 cryptsetup --version
 
 # Verify dm-crypt kernel module is available

@@ -26,6 +26,7 @@ Sentinel is HashiCorp's policy-as-code framework built for Terraform Enterprise 
 
 ```hcl
 # sentinel/policies/require-encryption.sentinel
+
 # Sentinel policy requiring encryption on all storage resources
 
 import "tfplan/v2" as tfplan

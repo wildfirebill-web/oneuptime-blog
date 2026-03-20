@@ -447,6 +447,7 @@ data:
 
 ```promql
 # Distributor metrics
+
 rate(tempo_distributor_spans_received_total[5m])
 rate(tempo_distributor_ingester_append_failures_total[5m])
 

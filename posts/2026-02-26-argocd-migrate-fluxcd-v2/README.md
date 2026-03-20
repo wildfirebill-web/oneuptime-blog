@@ -46,6 +46,7 @@ Start by cataloging everything Flux manages:
 
 ```bash
 # List all Flux Kustomizations
+
 kubectl get kustomizations.kustomize.toolkit.fluxcd.io -A -o wide
 
 # List all HelmReleases

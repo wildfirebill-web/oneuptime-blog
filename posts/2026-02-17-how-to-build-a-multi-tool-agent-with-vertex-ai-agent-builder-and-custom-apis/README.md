@@ -42,6 +42,7 @@ Each tool is defined using an OpenAPI specification. This tells the agent what t
 
 ```python
 # Define the Order Management API tool
+
 order_api_spec = {
     "openapi": "3.0.0",
     "info": {

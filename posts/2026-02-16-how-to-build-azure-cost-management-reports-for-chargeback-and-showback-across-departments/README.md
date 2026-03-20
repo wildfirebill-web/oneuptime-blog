@@ -40,6 +40,7 @@ Enforce tags with Azure Policy:
 
 ```bash
 # Create a policy that requires the CostCenter tag on all resource groups
+
 az policy assignment create \
   --name "require-costcenter-tag" \
   --display-name "Require CostCenter tag on resource groups" \

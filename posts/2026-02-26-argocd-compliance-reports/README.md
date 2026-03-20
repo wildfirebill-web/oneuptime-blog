@@ -39,6 +39,7 @@ This report shows all deployments within a given time period.
 ```bash
 #!/bin/bash
 # generate-deployment-report.sh
+
 # Usage: ./generate-deployment-report.sh 2026-01-01 2026-02-01
 
 START_DATE="$1"

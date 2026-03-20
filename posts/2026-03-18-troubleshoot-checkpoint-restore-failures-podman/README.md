@@ -51,6 +51,7 @@ Error: checkpointing container: CRIU binary not found
 
 ```bash
 # Check if CRIU is installed
+
 which criu
 
 # Install it

@@ -28,6 +28,7 @@ The simplest approach is to use the `healthy` mode with a health check:
 
 ```ini
 # ~/.config/containers/systemd/api.container
+
 [Unit]
 Description=API server with health-based readiness
 

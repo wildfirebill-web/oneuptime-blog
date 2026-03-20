@@ -16,6 +16,7 @@ In this guide, I will show you how to set up the transport, configure severity l
 
 ```bash
 # Install Winston and the Cloud Logging transport
+
 npm install winston @google-cloud/logging-winston
 ```
 

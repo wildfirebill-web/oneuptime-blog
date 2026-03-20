@@ -18,7 +18,7 @@ Amazon CloudFront is a content delivery network (CDN) service that accelerates d
 
 ## Project Structure
 
-```
+```text
 cloudfront-example/
 ├── main.tf
 ├── variables.tf
@@ -29,6 +29,7 @@ cloudfront-example/
 
 ```hcl
 # main.tf
+
 terraform {
   required_providers {
     aws = {

@@ -45,6 +45,7 @@ flowchart TD
 
 ```ini
 # inventory/redis-cluster.ini
+
 [redis_cluster_nodes]
 redis-node-1 ansible_host=10.0.3.10 redis_cluster_port=6379
 redis-node-2 ansible_host=10.0.3.11 redis_cluster_port=6379

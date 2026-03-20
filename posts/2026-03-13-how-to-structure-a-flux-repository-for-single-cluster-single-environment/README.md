@@ -65,6 +65,7 @@ The `clusters` directory contains the entry point for each cluster. For a single
 
 ```yaml
 # clusters/my-cluster/infrastructure.yaml
+
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
 metadata:

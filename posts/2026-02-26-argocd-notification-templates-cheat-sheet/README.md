@@ -16,6 +16,7 @@ Before using any of these templates, make sure you have the ArgoCD Notifications
 
 ```yaml
 # values.yaml for ArgoCD Helm chart
+
 notifications:
   enabled: true
 ```

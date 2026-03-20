@@ -30,6 +30,7 @@ This guide covers setting up the provider, creating deployments, configuring res
 
 ```hcl
 # versions.tf - Declare the Elastic Cloud provider
+
 terraform {
   required_version = ">= 1.0"
 

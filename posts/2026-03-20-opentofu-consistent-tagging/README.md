@@ -20,6 +20,7 @@ Learn how to implement consistent resource tagging across all cloud providers us
 
 ```bash
 # Verify OpenTofu installation
+
 tofu version
 
 # Set up required environment variables

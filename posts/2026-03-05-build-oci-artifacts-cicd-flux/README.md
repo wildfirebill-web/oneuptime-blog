@@ -41,6 +41,7 @@ Before building artifacts, organize your manifests in a dedicated directory. Thi
 
 ```bash
 # Typical directory structure for an OCI artifact
+
 manifests/
   kustomization.yaml
   deployment.yaml

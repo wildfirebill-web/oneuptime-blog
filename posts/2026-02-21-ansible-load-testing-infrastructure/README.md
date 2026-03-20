@@ -36,6 +36,7 @@ First, spin up the load generator instances:
 
 ```yaml
 # playbooks/provision-load-test.yml
+
 # Provision distributed load testing infrastructure
 ---
 - name: Provision load generators

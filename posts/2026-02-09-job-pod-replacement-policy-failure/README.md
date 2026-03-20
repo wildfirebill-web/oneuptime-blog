@@ -175,6 +175,7 @@ Track pod replacement metrics to understand job behavior and optimize your confi
 
 ```bash
 # Watch pod creation and termination
+
 kubectl get pods -w -l job-name=fast-recovery-job
 
 # Check job status

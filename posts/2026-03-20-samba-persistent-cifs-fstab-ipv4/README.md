@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Samba, CIFS, IPv4, fstab, Persistent Mount, Automount
+Tags: Samba, CIFS, IPv4, Fstab, Persistent Mount, Automount
 
 Description: Add CIFS/Samba mounts to /etc/fstab for automatic mounting at boot, use credential files for secure password storage, and configure systemd automount as an alternative.
 
@@ -14,6 +14,7 @@ Persistent CIFS mounts via `/etc/fstab` mount Samba shares automatically at boot
 
 ```bash
 # Never put passwords directly in /etc/fstab
+
 # Create a credentials file:
 sudo cat > /etc/samba/credentials-fileserver << 'EOF'
 username=smbuser

@@ -8,7 +8,7 @@ Description: Understand how to enable inbound access to home services over IPv6,
 
 ## IPv6 Port Forwarding is Different
 
-In IPv4, port forwarding translates a public port to an internal private address (NAT). In IPv6, there is no NAT — every device has a globally routable address. So "port forwarding" in IPv6 means creating a firewall rule that allows inbound traffic to reach a specific device and port.
+In IPv4, port forwarding translates a public port to an internal private address (NAT). In IPv6, there is no NAT - every device has a globally routable address. So "port forwarding" in IPv6 means creating a firewall rule that allows inbound traffic to reach a specific device and port.
 
 Think of it as: IPv4 = Port Forwarding, IPv6 = Firewall Allow Rule.
 
@@ -18,6 +18,7 @@ First, identify the static or consistent IPv6 address of the device you want to 
 
 ```bash
 # Linux server: find global IPv6 address
+
 ip -6 addr show scope global
 
 # For home lab server
@@ -30,7 +31,7 @@ Note: SLAAC addresses can change if using privacy extensions. Assign a static ad
 
 On OpenWRT, add a firewall rule to allow inbound access:
 
-```
+```text
 # /etc/config/firewall
 
 config rule
@@ -114,4 +115,4 @@ Configure your router to always give the same IPv6 address to a specific server 
 
 ## Conclusion
 
-IPv6 "port forwarding" is actually just a firewall allow rule — the device already has a globally routable address, so you only need to permit inbound traffic. This is simpler than IPv4 NAT and allows unlimited services on the same port across different devices. The main challenge is ensuring device addresses are stable, which requires static address assignment.
+IPv6 "port forwarding" is actually just a firewall allow rule - the device already has a globally routable address, so you only need to permit inbound traffic. This is simpler than IPv4 NAT and allows unlimited services on the same port across different devices. The main challenge is ensuring device addresses are stable, which requires static address assignment.

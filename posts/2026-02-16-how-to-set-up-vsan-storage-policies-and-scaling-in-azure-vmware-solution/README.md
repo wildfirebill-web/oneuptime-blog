@@ -79,6 +79,7 @@ You can also do this through PowerCLI for automation.
 
 ```powershell
 # Connect to the AVS vCenter
+
 Connect-VIServer -Server vcenter-ip -User 'cloudadmin@vsphere.local' -Password 'your-password'
 
 # Create a new vSAN storage policy with RAID-5 erasure coding

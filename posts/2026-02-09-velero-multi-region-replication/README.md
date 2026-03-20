@@ -86,6 +86,7 @@ Apply this to your primary S3 bucket:
 
 ```bash
 # Save the policy as replication-policy.json
+
 aws s3api put-bucket-replication \
   --bucket velero-backups-us-east-1 \
   --replication-configuration file://replication-policy.json

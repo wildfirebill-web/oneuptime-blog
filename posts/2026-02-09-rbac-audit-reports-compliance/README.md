@@ -24,6 +24,7 @@ Create a tool that analyzes RBAC configurations and generates audit reports:
 
 ```python
 # rbac-audit.py
+
 #!/usr/bin/env python3
 
 import subprocess

@@ -35,6 +35,7 @@ To export a specific HelmRepository by name, use the following command.
 
 ```bash
 # Export a single HelmRepository named "bitnami" from the "flux-system" namespace
+
 flux export source helm bitnami --namespace=flux-system
 ```
 

@@ -166,6 +166,7 @@ This happens when you query a list and then make a separate query for each item.
 
 ```python
 # BAD: N+1 queries - one query per user
+
 users = db.query("SELECT * FROM users LIMIT 100")
 for user in users:
     # This runs 100 separate queries!

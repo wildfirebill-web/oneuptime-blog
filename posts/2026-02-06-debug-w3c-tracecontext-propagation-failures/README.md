@@ -140,6 +140,7 @@ You can also configure the propagator via environment variables without changing
 
 ```bash
 # Set the propagator via environment variable
+
 # This must match across all services in the trace chain
 export OTEL_PROPAGATORS=tracecontext,baggage
 

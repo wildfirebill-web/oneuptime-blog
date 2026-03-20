@@ -34,6 +34,7 @@ Before integrating Ansible with Teleport, you need:
 
 ```bash
 # Install tsh on the Ansible controller (Ubuntu/Debian)
+
 curl https://goteleport.com/static/install.sh | bash -s 14.0.0
 
 # Verify installation

@@ -262,6 +262,7 @@ Track WebSocket-specific metrics:
 
 ```bash
 # Connection count
+
 kubectl exec deploy/websocket-service -c istio-proxy -- curl -s localhost:15000/stats | grep downstream_cx_active
 
 # Rate limit stats

@@ -18,6 +18,7 @@ If you do not already have an instance:
 
 ```bash
 # Create an Azure Managed Grafana instance
+
 az grafana create \
   --name myGrafana \
   --resource-group myRG \

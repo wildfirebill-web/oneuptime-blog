@@ -26,6 +26,7 @@ import redis
 r = redis.Redis(host='localhost', port=6379, decode_responses=True)
 
 # Basic increment - atomic, returns new value
+
 count = r.incr('page_views')
 print(f"Page views: {count}")
 

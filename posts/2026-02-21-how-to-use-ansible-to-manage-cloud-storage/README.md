@@ -18,6 +18,7 @@ Install collections for each storage provider.
 
 ```bash
 # Install cloud collections
+
 ansible-galaxy collection install amazon.aws
 ansible-galaxy collection install azure.azcollection
 ansible-galaxy collection install google.cloud

@@ -16,6 +16,7 @@ Download and install the gator CLI:
 
 ```bash
 # macOS with Homebrew
+
 brew install gator
 
 # Linux/macOS manual installation

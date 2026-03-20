@@ -46,6 +46,7 @@ flowchart TD
 
 ```yaml
 # .github/workflows/preview.yaml
+
 name: Preview Environment
 
 on:
@@ -743,7 +744,7 @@ spec:
           restartPolicy: OnFailure
 ```
 
-### Resource Quotas
+Resource Quotas
 
 ```yaml
 # preview-quota.yaml

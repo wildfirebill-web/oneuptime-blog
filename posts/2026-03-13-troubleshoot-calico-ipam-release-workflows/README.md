@@ -16,6 +16,7 @@ IPAM release failures prevent leaked IP reclamation and can indicate deeper IPAM
 
 ```bash
 # Run IPAM check to identify issues
+
 calicoctl ipam check
 
 # Verify specific IP before release

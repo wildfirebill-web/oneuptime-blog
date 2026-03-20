@@ -24,6 +24,7 @@ Common issues include IRSA misconfiguration, expired static credentials, insuffi
 
 ```bash
 # Check for auth errors in Cilium agent logs
+
 kubectl logs -n kube-system -l k8s-app=cilium | \
   grep -iE "auth|credential|forbidden|unauthorized" | tail -20
 

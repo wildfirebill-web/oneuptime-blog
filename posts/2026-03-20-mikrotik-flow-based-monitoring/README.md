@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: MikroTik, NetFlow, Traffic Flow, Monitoring, IPv4, RouterOS, Network Visibility
+Tags: MikroTik, NetFlow, Traffic Flows, Monitoring, IPv4, RouterOS, Network Visibility
 
 Description: Learn how to enable and configure Traffic Flow (NetFlow-compatible) on a MikroTik router to export IPv4 flow data to a collector for bandwidth analysis and network visibility.
 
@@ -14,6 +14,7 @@ MikroTik RouterOS includes a built-in Traffic Flow feature compatible with NetFl
 
 ```routeros
 # Enable Traffic Flow on the router
+
 /ip traffic-flow
 set enabled=yes interfaces=all
 
@@ -24,7 +25,7 @@ add dst-address=10.0.0.50 port=2055 version=9
 
 ## Enabling Traffic Flow via WinBox
 
-```
+```text
 IP → Traffic Flow → Enable: ✓
 Interfaces: all (or specify individual interfaces)
 

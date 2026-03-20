@@ -14,7 +14,7 @@ A floating static route is a static route configured with a higher administrativ
 
 The routing table always installs the route with the lowest metric. By giving the backup route a higher metric, it stays dormant until the primary is gone:
 
-```
+```text
 Primary:  10.20.0.0/24 via 192.168.1.1  metric 10   (active)
 Backup:   10.20.0.0/24 via 192.168.2.1  metric 100  (floating, dormant)
 ```
@@ -24,10 +24,11 @@ When the primary link fails and the 10.20.0.0/24 via 192.168.1.1 route is remove
 ## Configuring the Primary and Floating Routes
 
 ```bash
-# Primary route — lower metric, preferred path
+# Primary route - lower metric, preferred path
+
 ip route add 10.20.0.0/24 via 192.168.1.1 metric 10
 
-# Floating/backup route — higher metric, only used if primary is gone
+# Floating/backup route - higher metric, only used if primary is gone
 ip route add 10.20.0.0/24 via 192.168.2.1 metric 100
 
 # Verify both routes are installed

@@ -59,6 +59,7 @@ Run this benchmark with:
 
 ```bash
 # Run all benchmarks in the current package
+
 go test -bench=.
 
 # Run a specific benchmark by name pattern

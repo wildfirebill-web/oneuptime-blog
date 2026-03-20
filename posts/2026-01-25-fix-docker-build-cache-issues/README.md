@@ -22,6 +22,7 @@ If any of these change, Docker invalidates the cache for that layer and all subs
 
 ```dockerfile
 # Layer 1: Base image (cached if same tag)
+
 FROM node:20-alpine
 
 # Layer 2: Set workdir (almost always cached)

@@ -18,6 +18,7 @@ Run Mimir in monolithic mode (all components in a single process):
 
 ```bash
 # Start Mimir with local filesystem storage
+
 docker run -d \
   --name mimir \
   -p 9009:9009 \

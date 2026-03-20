@@ -34,6 +34,7 @@ Kubewarden requires cert-manager for managing TLS certificates:
 
 ```bash
 # Add the cert-manager Helm repository
+
 helm repo add jetstack https://charts.jetstack.io
 helm repo update
 
@@ -77,7 +78,7 @@ kubectl get crds | grep kubewarden
 ```
 
 Expected output includes:
-```
+```text
 admissionpolicies.policies.kubewarden.io
 clusteradmissionpolicies.policies.kubewarden.io
 policyservers.policies.kubewarden.io
@@ -109,7 +110,7 @@ kubectl get policyserver
 ```
 
 Expected output:
-```
+```text
 NAME      AGE
 default   1m
 ```
@@ -214,4 +215,4 @@ kubectl delete namespace kubewarden
 
 ## Conclusion
 
-Installing Kubewarden on Kubernetes sets up a powerful, WebAssembly-based admission control system. The three-step Helm installation — CRDs, controller, and policy server — provides a clean, upgradeable installation that integrates with cert-manager for automatic certificate management. With Kubewarden installed, you are ready to deploy admission policies that enforce security, compliance, and operational best practices across your cluster.
+Installing Kubewarden on Kubernetes sets up a powerful, WebAssembly-based admission control system. The three-step Helm installation - CRDs, controller, and policy server - provides a clean, upgradeable installation that integrates with cert-manager for automatic certificate management. With Kubewarden installed, you are ready to deploy admission policies that enforce security, compliance, and operational best practices across your cluster.

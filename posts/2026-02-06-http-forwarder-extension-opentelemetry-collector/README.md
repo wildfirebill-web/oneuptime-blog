@@ -34,6 +34,7 @@ Here's a simple HTTP Forwarder configuration that forwards all incoming requests
 
 ```yaml
 # collector-config.yaml
+
 extensions:
   # Configure the HTTP Forwarder extension
   http_forwarder:

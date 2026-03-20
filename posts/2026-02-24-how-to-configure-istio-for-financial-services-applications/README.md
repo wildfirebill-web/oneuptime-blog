@@ -237,6 +237,7 @@ Financial systems often require network segmentation between different trust zon
 
 ```yaml
 # Core banking services can only see other core services
+
 apiVersion: networking.istio.io/v1beta1
 kind: Sidecar
 metadata:

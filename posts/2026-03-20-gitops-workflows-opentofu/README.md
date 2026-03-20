@@ -8,7 +8,7 @@ Description: Learn how to implement a complete GitOps workflow for OpenTofu wher
 
 ---
 
-GitOps means the Git repository is the single source of truth for infrastructure state. All changes happen through pull requests — never through direct console or CLI access. OpenTofu, combined with CI/CD automation, makes this workflow practical and auditable.
+GitOps means the Git repository is the single source of truth for infrastructure state. All changes happen through pull requests - never through direct console or CLI access. OpenTofu, combined with CI/CD automation, makes this workflow practical and auditable.
 
 ## GitOps Principles Applied to Infrastructure
 
@@ -28,6 +28,7 @@ graph LR
 
 ```yaml
 # .github/workflows/plan.yml
+
 name: Infrastructure Plan
 on:
   pull_request:
@@ -86,7 +87,7 @@ jobs:
               issue_number: context.issue.number,
               owner: context.repo.owner,
               repo: context.repo.repo,
-              body: `## OpenTofu Plan\n\`\`\`\n${truncated}\n\`\`\``
+              body: `## OpenTofu Plan\n```\n${truncated}\n````
             });
 ```
 
@@ -186,7 +187,7 @@ jobs:
 
 ## Best Practices
 
-- Separate plan and apply roles with different IAM permissions — the plan role only needs read access.
+- Separate plan and apply roles with different IAM permissions - the plan role only needs read access.
 - Require at least one approval on infrastructure PRs before merge triggers apply.
 - Use GitHub Environments with protection rules for the apply workflow to add a human approval gate.
 - Run drift detection on a schedule (not just on push) to catch out-of-band changes made via console or CLI.

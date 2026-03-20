@@ -225,6 +225,7 @@ If you have many values to match against, use a file:
 
 ```bash
 # Create a file with blocked IPs
+
 sudo tee /etc/haproxy/blocked-ips.txt > /dev/null <<'EOF'
 203.0.113.0/24
 198.51.100.0/24

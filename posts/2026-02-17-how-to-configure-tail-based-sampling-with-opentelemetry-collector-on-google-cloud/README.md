@@ -34,6 +34,7 @@ First, deploy the OpenTelemetry Collector on your GKE cluster. Here is a Kuberne
 
 ```yaml
 # otel-collector-deployment.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

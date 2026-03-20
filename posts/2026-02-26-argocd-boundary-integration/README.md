@@ -120,6 +120,7 @@ Define the scope, host catalog, host set, and target for ArgoCD access:
 
 ```bash
 # Create an organization scope
+
 boundary scopes create \
   -scope-id global \
   -name "Engineering" \

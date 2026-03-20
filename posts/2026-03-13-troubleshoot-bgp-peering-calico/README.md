@@ -44,6 +44,7 @@ BGP uses TCP port 179. Verify it is reachable between nodes:
 
 ```bash
 # From one node to another
+
 nc -zv <peer-ip> 179
 
 # Check if iptables is blocking it

@@ -18,6 +18,7 @@ Init containers are short-lived containers that perform initialization work befo
 
 ```bash
 # Create a pod
+
 podman pod create --name app-pod -p 8080:80
 
 # Run an init container that sets up configuration

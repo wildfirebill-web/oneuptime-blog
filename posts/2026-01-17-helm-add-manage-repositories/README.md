@@ -38,6 +38,7 @@ The `helm repo add` command registers a repository URL with a local name. You'll
 
 ```bash
 # Add the official Bitnami repository (largest collection of production charts)
+
 helm repo add bitnami https://charts.bitnami.com/bitnami
 
 # Add the ingress-nginx repository for NGINX Ingress Controller

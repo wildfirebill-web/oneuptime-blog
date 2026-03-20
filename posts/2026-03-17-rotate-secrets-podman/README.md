@@ -18,6 +18,7 @@ Secret rotation involves replacing existing secrets with new values and ensuring
 
 ```bash
 # Step 1: Remove the old secret (stop containers first if needed)
+
 podman stop my-app
 podman rm my-app
 

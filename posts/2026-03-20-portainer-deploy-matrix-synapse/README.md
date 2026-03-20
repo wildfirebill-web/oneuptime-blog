@@ -1,4 +1,4 @@
-# How to Deploy Matrix/Synapse via Portainer
+# How to Deploy Matrix/Synapse via Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -20,6 +20,7 @@ Matrix is an open standard for decentralized, real-time communication with end-t
 
 ```bash
 # Generate initial Synapse configuration
+
 docker run --rm \
   -v $(pwd)/synapse-config:/data \
   -e SYNAPSE_SERVER_NAME=example.com \

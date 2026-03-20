@@ -33,6 +33,7 @@ Start by creating the test infrastructure. Use kind for a local cluster and Gite
 set -euo pipefail
 
 # Create cluster
+
 kind create cluster --name flux-e2e --wait 5m
 
 # Install Flux

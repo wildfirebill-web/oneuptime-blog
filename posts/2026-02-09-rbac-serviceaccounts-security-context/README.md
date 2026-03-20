@@ -22,6 +22,7 @@ Define a service account with minimal RBAC and enforce security constraints.
 
 ```yaml
 # sa-restricted.yaml
+
 apiVersion: v1
 kind: ServiceAccount
 metadata:

@@ -37,6 +37,7 @@ Start by examining the current state of the collector pod:
 
 ```bash
 # Check pod status and recent events
+
 kubectl describe pod -n observability -l app=otel-collector | grep -A 10 "State\|Limits\|Last State"
 
 # Check current memory usage

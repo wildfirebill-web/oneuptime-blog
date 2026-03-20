@@ -46,7 +46,7 @@ LAST SEEN   TYPE      REASON              MESSAGE
 5m ago      Normal    ResourceUpdated     Updated Deployment/web
 ```
 
-### Resource-Level Events
+Resource-Level Events
 
 For more detailed troubleshooting, view events for individual resources:
 
@@ -165,6 +165,7 @@ The CLI provides access to resource events without needing the UI:
 
 ```bash
 # Get all resources and their statuses for an application
+
 argocd app get my-app
 
 # Get detailed info about a specific resource

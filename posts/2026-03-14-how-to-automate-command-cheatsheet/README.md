@@ -32,6 +32,7 @@ Automating Cilium CLI command operations reduces operational overhead and ensure
 
 ```bash
 # Create an automation script for common operations
+
 cat > /tmp/cilium-automation.sh << 'SCRIPT'
 #!/bin/bash
 # Cilium automation script

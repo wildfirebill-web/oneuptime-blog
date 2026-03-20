@@ -51,6 +51,7 @@ Let's convert a real Docker Compose file. Here's our starting point:
 
 ```yaml
 # docker-compose.yml
+
 version: "3.8"
 
 services:

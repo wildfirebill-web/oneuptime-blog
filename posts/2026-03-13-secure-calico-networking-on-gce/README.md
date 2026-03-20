@@ -26,6 +26,7 @@ Create a firewall policy at the folder level to enforce baseline rules across al
 
 ```bash
 # Create hierarchical firewall policy
+
 gcloud compute firewall-policies create k8s-baseline-policy \
   --description "Baseline security for all K8s clusters"
 

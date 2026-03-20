@@ -67,6 +67,7 @@ The following configuration shows the minimal setup needed to start collecting E
 
 ```yaml
 # Define the receiver to collect ECS container metrics
+
 receivers:
   # The awsecscontainermetrics receiver connects to the ECS Task Metadata endpoint
   awsecscontainermetrics:

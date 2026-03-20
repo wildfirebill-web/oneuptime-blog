@@ -34,6 +34,7 @@ Start by identifying the affected pods and gathering details.
 
 ```bash
 # Find pods with OOMKilled status
+
 kubectl get pods --all-namespaces -o json | \
   python3 -c "
 import sys, json

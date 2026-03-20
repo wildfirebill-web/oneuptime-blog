@@ -30,6 +30,7 @@ Make sure TuneD is installed and running:
 
 ```bash
 # Check if TuneD is installed
+
 rpm -q tuned
 
 # Enable and start TuneD

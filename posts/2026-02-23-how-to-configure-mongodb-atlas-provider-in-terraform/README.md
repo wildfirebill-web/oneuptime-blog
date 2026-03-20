@@ -32,6 +32,7 @@ The MongoDB Atlas Terraform provider covers cluster management, database users, 
 
 ```hcl
 # versions.tf - Declare the MongoDB Atlas provider
+
 terraform {
   required_version = ">= 1.0"
 

@@ -28,6 +28,7 @@ The most common cause is that a Custom Resource Definition (CRD) has not been in
 
 ```bash
 # Check if the CRD exists on the target cluster
+
 kubectl get crd servicemonitors.monitoring.coreos.com
 
 # List all CRDs to search

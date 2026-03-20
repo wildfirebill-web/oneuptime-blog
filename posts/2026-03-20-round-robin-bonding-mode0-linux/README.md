@@ -20,6 +20,7 @@ Round-robin bonding (balance-rr, mode 0) sends packets to each slave interface i
 
 ```bash
 # Load the bonding module
+
 modprobe bonding
 
 # Create a bond in balance-rr (mode 0)

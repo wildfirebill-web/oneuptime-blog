@@ -27,6 +27,7 @@ Let us start with a simple playbook that sets up a basic firewall policy. The st
 
 ```yaml
 # basic_ufw.yml - Set up a basic UFW firewall policy
+
 ---
 - name: Configure UFW firewall
   hosts: all

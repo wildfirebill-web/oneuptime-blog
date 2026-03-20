@@ -221,6 +221,7 @@ You can narrow the analysis to specific resource types if you're only interested
 
 ```bash
 # Only check VirtualServices
+
 istioctl analyze -n default --resource virtualservice
 
 # Only check Gateways

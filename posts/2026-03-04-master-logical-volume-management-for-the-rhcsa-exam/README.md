@@ -14,6 +14,7 @@ LVM is heavily tested on the RHCSA exam. You need to know how to create, resize,
 
 ```bash
 # Initialize disks as physical volumes
+
 sudo pvcreate /dev/sdb /dev/sdc
 
 # Verify

@@ -14,6 +14,7 @@ After Terraform creates your infrastructure, Ansible needs to know the IP addres
 
 ```hcl
 # terraform/outputs.tf
+
 output "web_servers" {
   value = {
     for i, instance in aws_instance.web :

@@ -24,6 +24,7 @@ Before adding new constraints, understand what is already in place.
 
 ```bash
 # List all organization policies currently applied
+
 gcloud resource-manager org-policies list \
   --organization=ORG_ID
 

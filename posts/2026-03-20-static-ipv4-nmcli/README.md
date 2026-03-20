@@ -1,4 +1,4 @@
-# How to Configure a Static IPv4 Address with nmcli
+# How to Configure a Static IPv4 Address with nmcli - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 

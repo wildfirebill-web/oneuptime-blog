@@ -6,7 +6,7 @@ Tags: IPsec, ESP, iptables, Linux, Firewall, Protocol 50
 
 Description: Configure iptables rules to allow ESP (Encapsulating Security Payload, IP protocol 50) traffic for IPsec VPN packet forwarding.
 
-ESP (Encapsulating Security Payload) is IP protocol number 50 — distinct from TCP (6) and UDP (17). It carries the encrypted IPsec payload. Without explicit iptables rules, a default-deny firewall blocks all ESP traffic.
+ESP (Encapsulating Security Payload) is IP protocol number 50 - distinct from TCP (6) and UDP (17). It carries the encrypted IPsec payload. Without explicit iptables rules, a default-deny firewall blocks all ESP traffic.
 
 ## Understanding ESP in iptables
 
@@ -14,6 +14,7 @@ ESP is a raw IP protocol, not a TCP/UDP service. It cannot be identified by port
 
 ```bash
 # ESP is identified by protocol number 50
+
 # NOT by port number
 
 # Wrong approach (doesn't work for ESP):
@@ -54,7 +55,7 @@ sudo iptables -A OUTPUT -d $PEER_IP -p esp -j ACCEPT
 
 ```bash
 #!/bin/bash
-# ipsec-firewall.sh — Complete IPsec firewall rules
+# ipsec-firewall.sh - Complete IPsec firewall rules
 set -e
 
 PEER_IP="${1:-0.0.0.0/0}"  # Default to any peer, or pass specific IP

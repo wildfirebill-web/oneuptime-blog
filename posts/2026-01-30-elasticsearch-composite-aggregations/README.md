@@ -441,6 +441,7 @@ def iterate_composite(client, index, agg_body):
             break
 
 # Usage
+
 client = Elasticsearch("http://localhost:9200")
 
 agg_body = {

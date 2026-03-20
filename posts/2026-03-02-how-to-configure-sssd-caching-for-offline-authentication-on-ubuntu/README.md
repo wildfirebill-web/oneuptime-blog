@@ -37,6 +37,7 @@ services = nss, pam
 
 [pam]
 # Allow offline auth for this many days after last successful online login
+
 offline_credentials_expiration = 7
 
 # Warn users when their cached credentials are aging (days before expiry)

@@ -32,6 +32,7 @@ Install `talosctl` if you do not already have it:
 
 ```bash
 # Download the latest talosctl binary
+
 curl -sL https://talos.dev/install | sh
 
 # Verify the installation

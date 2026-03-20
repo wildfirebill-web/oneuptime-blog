@@ -222,6 +222,7 @@ class HotKeyDetector:
 
 
 # Usage
+
 client = redis.Redis(decode_responses=True)
 detector = HotKeyDetector(client)
 

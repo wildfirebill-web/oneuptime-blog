@@ -41,6 +41,7 @@ flowchart TD
 
 ```bash
 # View the current policy
+
 update-crypto-policies --show
 
 # View what would change

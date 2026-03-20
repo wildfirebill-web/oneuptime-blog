@@ -20,6 +20,7 @@ HOST = "0.0.0.0"
 PORT = 9006
 
 # Shared state protected by a lock
+
 clients: dict[socket.socket, str] = {}   # socket -> username
 lock = threading.Lock()
 

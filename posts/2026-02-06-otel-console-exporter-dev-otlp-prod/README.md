@@ -68,6 +68,7 @@ Each span prints with its name, duration, attributes, and status. This is often 
 
 ```python
 # tracing.py
+
 import os
 from opentelemetry import trace
 from opentelemetry.sdk.trace import TracerProvider

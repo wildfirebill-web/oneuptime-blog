@@ -23,6 +23,7 @@ Start by getting the full error message:
 
 ```bash
 # Get application status with full error details
+
 argocd app get my-jsonnet-app
 
 # Check conditions for rendering errors

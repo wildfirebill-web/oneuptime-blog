@@ -37,6 +37,7 @@ You need the azure-identity package plus whatever service SDK you plan to use. F
 
 ```bash
 # Install azure-identity along with Key Vault client
+
 pip install azure-identity azure-keyvault-secrets
 ```
 

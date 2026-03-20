@@ -28,6 +28,7 @@ This playbook configures dhclient with customized behavior:
 
 ```yaml
 # configure-dhclient.yml - Configure ISC DHCP client
+
 ---
 - name: Configure DHCP Client
   hosts: all

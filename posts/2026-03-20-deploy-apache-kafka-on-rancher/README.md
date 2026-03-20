@@ -27,6 +27,7 @@ helm repo update
 
 ```yaml
 # kafka-values.yaml
+
 kraft:
   enabled: true   # Use KRaft mode (no ZooKeeper required)
 

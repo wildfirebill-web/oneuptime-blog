@@ -16,6 +16,7 @@ The `lookup` function retrieves a value from a map by key. If the key does not e
 
 ```hcl
 # lookup(map, key, default_value)
+
 > lookup({ a = "apple", b = "banana" }, "a", "unknown")
 "apple"
 

@@ -53,6 +53,7 @@ Object locking must be enabled at bucket creation time. You cannot enable it on 
 
 ```bash
 # Create a bucket with object locking enabled
+
 mc mb myminio/compliance-bucket --with-lock
 
 # Verify the bucket was created with locking

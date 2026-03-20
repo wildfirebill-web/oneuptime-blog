@@ -91,6 +91,7 @@ app.listen(3000);
 
 ```python
 # Lambda function for user operations
+
 import json
 import boto3
 from datetime import datetime

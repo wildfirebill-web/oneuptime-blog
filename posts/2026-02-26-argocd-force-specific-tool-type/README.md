@@ -26,6 +26,7 @@ When creating an application with the CLI, specify the tool type explicitly:
 
 ```bash
 # Force Kustomize even if Chart.yaml exists
+
 argocd app create my-app \
   --repo https://github.com/myorg/configs.git \
   --path apps/my-app \

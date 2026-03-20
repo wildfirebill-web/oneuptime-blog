@@ -32,6 +32,7 @@ Trivy is a comprehensive vulnerability scanner that detects issues in container 
 
 ```yaml
 # .github/workflows/container-scan.yml
+
 name: Container Security Scan
 
 on:

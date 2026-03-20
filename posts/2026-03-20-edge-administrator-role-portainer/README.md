@@ -34,6 +34,7 @@ TOKEN=$(curl -s -X POST \
   --insecure | python3 -c "import sys,json; print(json.load(sys.stdin)['jwt'])")
 
 # Promote user to Edge Administrator
+
 # Role 3 is typically the Edge Admin role in Portainer
 curl -X PUT \
   https://localhost:9443/api/users/8 \

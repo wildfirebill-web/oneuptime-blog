@@ -8,12 +8,13 @@ Description: Diagnose and fix MTU mismatches in Kubernetes overlay networks, inc
 
 ## Introduction
 
-MTU misconfiguration is one of the most common and difficult-to-diagnose networking problems in Kubernetes. Pod network interfaces inherit MTU from the CNI plugin, which must account for overlay encapsulation overhead (VXLAN, IPIP, WireGuard). When pod MTU is too large, large TCP connections stall, curl requests hang, and DNS over TCP fails — while small packets and ping work fine. The symptoms match an MTU black hole.
+MTU misconfiguration is one of the most common and difficult-to-diagnose networking problems in Kubernetes. Pod network interfaces inherit MTU from the CNI plugin, which must account for overlay encapsulation overhead (VXLAN, IPIP, WireGuard). When pod MTU is too large, large TCP connections stall, curl requests hang, and DNS over TCP fails - while small packets and ping work fine. The symptoms match an MTU black hole.
 
 ## Diagnose MTU Issues in Pods
 
 ```bash
 # Check pod interface MTU:
+
 kubectl exec -n default <pod-name> -- ip link show eth0
 # Look for: mtu XXXX
 # Should be: physical-MTU minus overlay overhead

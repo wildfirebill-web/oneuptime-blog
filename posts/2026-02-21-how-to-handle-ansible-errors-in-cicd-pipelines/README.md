@@ -16,6 +16,7 @@ Ansible uses specific exit codes to indicate different outcomes. Your CI/CD pipe
 
 ```bash
 # Exit code reference:
+
 # 0 - Success, no changes or changes applied successfully
 # 1 - Error during execution
 # 2 - One or more hosts had failures

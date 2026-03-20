@@ -12,7 +12,7 @@ IPv6 addresses are 128 bits long, written as eight groups of four hexadecimal di
 
 ## IPv6 Address Structure
 
-```
+```text
 Full notation:
 2001:0db8:0000:0000:0000:0000:0000:0001
 
@@ -23,14 +23,14 @@ Bits:       16    16     16     16     16     16     16     16  = 128 bits
 ## Hexadecimal Groups
 
 Each group is 4 hex digits = 16 bits:
-```
+```text
 0000 to ffff per group
 Total: 8 × 16 = 128 bits
 ```
 
 ## Rule 1: Remove Leading Zeros in Each Group
 
-```
+```text
 Full:       2001:0db8:0000:0042:0000:8a2e:0370:7334
 Compressed: 2001:db8:0:42:0:8a2e:370:7334
              ^^^   ^^^^  ^^    ^^^
@@ -40,7 +40,7 @@ Leading zeros dropped: 0db8 → db8, 0042 → 42, 0370 → 370
 
 ## Rule 2: Replace Consecutive All-Zero Groups with ::
 
-```
+```text
 Full:       2001:0db8:0000:0000:0000:0000:0000:0001
 Step 1:     2001:db8:0:0:0:0:0:1
 Step 2:     2001:db8::1          (:: replaces four :0: groups)
@@ -50,7 +50,7 @@ The :: can only appear ONCE in an address.
 
 ## More Examples
 
-```
+```text
 Loopback:           ::1
                     (full: 0000:0000:0000:0000:0000:0000:0000:0001)
 
@@ -66,22 +66,23 @@ Global unicast:     2001:db8:1:2::100
 
 ## IPv6 with Port Number
 
-```
+```text
 # IPv6 addresses in URLs must be enclosed in brackets
+
 http://[2001:db8::1]:8080/api
 
 # In configuration files:
-listen [::]:80;       # Nginx — listen on all IPv6 addresses port 80
+listen [::]:80;       # Nginx - listen on all IPv6 addresses port 80
 listen [2001:db8::1]:443;
 ```
 
 ## CIDR Notation
 
-```
+```text
 IPv6 uses prefix length like IPv4:
-2001:db8::/32    — 32-bit prefix (like a /32 route)
-fe80::/10        — Link-local prefix
-::1/128          — Single address (loopback)
+2001:db8::/32    - 32-bit prefix (like a /32 route)
+fe80::/10        - Link-local prefix
+::1/128          - Single address (loopback)
 ```
 
 ## Verify IPv6 Address

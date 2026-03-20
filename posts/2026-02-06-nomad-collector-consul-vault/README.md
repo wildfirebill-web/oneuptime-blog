@@ -154,6 +154,7 @@ The template uses Consul Template syntax to discover the backend endpoint:
 
 ```hcl
 # Discover the backend service registered in Consul
+
 endpoint: "{{ range service "observability-backend" }}{{ .Address }}:{{ .Port }}{{ end }}"
 ```
 

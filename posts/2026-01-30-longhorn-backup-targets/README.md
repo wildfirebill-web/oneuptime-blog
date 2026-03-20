@@ -54,6 +54,7 @@ First, create a Kubernetes secret containing your S3 credentials.
 
 ```yaml
 # s3-backup-secret.yaml
+
 # This secret stores AWS credentials for S3 backup access
 apiVersion: v1
 kind: Secret

@@ -8,11 +8,11 @@ Description: Understand why TCP duplicate ACKs are generated, how they signal pa
 
 ## Introduction
 
-A TCP duplicate ACK is sent when the receiver gets a packet that is out of order — the expected sequence number hasn't arrived yet, but a later one has. The receiver acknowledges the last in-order segment again (duplicate). Three consecutive duplicate ACKs trigger fast retransmit. While normal in small quantities, excessive duplicate ACKs signal consistent packet loss or reordering that needs investigation.
+A TCP duplicate ACK is sent when the receiver gets a packet that is out of order - the expected sequence number hasn't arrived yet, but a later one has. The receiver acknowledges the last in-order segment again (duplicate). Three consecutive duplicate ACKs trigger fast retransmit. While normal in small quantities, excessive duplicate ACKs signal consistent packet loss or reordering that needs investigation.
 
 ## When Duplicate ACKs are Generated
 
-```
+```text
 Normal:
 Sender: 1, 2, 3, 4, 5 (in order)
 ACK:    1, 2, 3, 4, 5 (no duplicates)
@@ -27,6 +27,7 @@ ACK:    1, 2, 2, 2, 2  ← dup ACKs for 2 (receiver waiting for 3)
 
 ```bash
 # Capture to file for analysis
+
 tcpdump -i eth0 -n -w /tmp/dupacks.pcap 'tcp and host 10.20.0.5'
 
 # Real-time detection of dup ACK sequences
@@ -47,7 +48,7 @@ tcpdump -i eth0 -n 'tcp and host 10.20.0.5' | \
 
 ## Wireshark Analysis
 
-```
+```text
 # Show all duplicate ACKs
 tcp.analysis.duplicate_ack
 
@@ -109,4 +110,4 @@ watch -n 2 "nstat -z | grep FastRetrans"
 
 ## Conclusion
 
-Duplicate ACKs are the TCP receiver's way of saying "something arrived out of order." Three consecutive dup ACKs trigger fast retransmit — this is the primary loss detection mechanism. Occasional dup ACKs are normal in any network with slight reordering. Consistent 3-dup-ACK sequences followed by retransmissions confirm packet loss. Use Wireshark's `tcp.analysis.duplicate_ack_num >= 3` filter to count actual loss-triggering events, and distinguish them from simple reordering by checking whether a retransmission follows.
+Duplicate ACKs are the TCP receiver's way of saying "something arrived out of order." Three consecutive dup ACKs trigger fast retransmit - this is the primary loss detection mechanism. Occasional dup ACKs are normal in any network with slight reordering. Consistent 3-dup-ACK sequences followed by retransmissions confirm packet loss. Use Wireshark's `tcp.analysis.duplicate_ack_num >= 3` filter to count actual loss-triggering events, and distinguish them from simple reordering by checking whether a retransmission follows.

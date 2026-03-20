@@ -24,6 +24,7 @@ Rocky Linux was created as a direct replacement for CentOS Linux and maintains f
 
 ```bash
 # Update all packages
+
 sudo dnf update -y
 ```
 

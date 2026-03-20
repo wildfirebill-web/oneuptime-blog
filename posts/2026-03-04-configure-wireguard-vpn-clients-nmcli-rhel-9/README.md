@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, WireGuard, VPN, Nmcli, Linux
+Tags: RHEL, WireGuard, VPN, nmcli, Linux
 
 Description: Learn how to configure WireGuard VPN client connections using NetworkManager and nmcli on RHEL, providing seamless integration with the system's network management stack.
 
@@ -30,6 +30,7 @@ NetworkManager integration means:
 
 ```bash
 # Install EPEL and WireGuard tools
+
 sudo dnf install -y epel-release
 sudo dnf install -y wireguard-tools
 ```

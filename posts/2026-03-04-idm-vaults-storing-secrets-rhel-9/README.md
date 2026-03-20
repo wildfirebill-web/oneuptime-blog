@@ -32,6 +32,7 @@ The KRA service must be installed on at least one IdM server. Check if it is alr
 
 ```bash
 # Check if KRA is installed
+
 sudo ipactl status | grep kra
 ```
 

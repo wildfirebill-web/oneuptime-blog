@@ -145,6 +145,7 @@ This policy allows anyone to read objects but prevents modifications.
 
 ```bash
 # Save policy to a file
+
 cat > public-read-policy.json << 'EOF'
 {
   "Version": "2012-10-17",

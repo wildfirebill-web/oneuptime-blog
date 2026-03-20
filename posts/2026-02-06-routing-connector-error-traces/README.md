@@ -175,6 +175,7 @@ After deploying, check the Collector's own metrics to confirm data is flowing th
 
 ```bash
 # Check exporter metrics to see data flow
+
 curl -s http://localhost:8888/metrics | grep otelcol_exporter_sent_spans
 ```
 

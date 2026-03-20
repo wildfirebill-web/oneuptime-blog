@@ -32,6 +32,7 @@ Here is a simple PostSync hook that seeds the database after the application is 
 
 ```yaml
 # hooks/seed-data.yaml
+
 apiVersion: batch/v1
 kind: Job
 metadata:

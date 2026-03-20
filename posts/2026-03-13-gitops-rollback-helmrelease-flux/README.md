@@ -29,6 +29,7 @@ The `upgrade.remediation` and `install.remediation` sections of a HelmRelease de
 
 ```yaml
 # apps/production/my-app/helmrelease.yaml
+
 apiVersion: helm.toolkit.fluxcd.io/v2
 kind: HelmRelease
 metadata:

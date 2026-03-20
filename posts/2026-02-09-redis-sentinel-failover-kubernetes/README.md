@@ -22,6 +22,7 @@ Create a complete Redis deployment with Sentinel:
 
 ```yaml
 # redis-sentinel.yaml
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

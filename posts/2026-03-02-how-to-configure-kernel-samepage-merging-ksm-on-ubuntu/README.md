@@ -22,6 +22,7 @@ KSM doesn't scan all memory automatically. Applications or hypervisors must call
 
 ```bash
 # Check if KSM is available in your kernel
+
 ls /sys/kernel/mm/ksm/
 # Should show: full_scans  max_page_sharing  merge_across_nodes  pages_shared  ...
 

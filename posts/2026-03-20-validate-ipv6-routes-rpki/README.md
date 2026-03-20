@@ -20,6 +20,7 @@ Every IPv6 BGP prefix has one of three RPKI validation states:
 
 ```bash
 # Install and start Routinator
+
 sudo apt-get install routinator
 routinator init --accept-arin-rpa
 sudo systemctl start routinator
@@ -58,7 +59,7 @@ grep ":" /tmp/rpki-roas.csv | wc -l
 
 BIRD2 is a common routing daemon for Linux routers. Configure it to use RTR:
 
-```
+```python
 # /etc/bird/bird.conf
 
 # ROA table for IPv6

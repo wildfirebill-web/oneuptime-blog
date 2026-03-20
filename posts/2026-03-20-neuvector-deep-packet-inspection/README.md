@@ -33,6 +33,7 @@ First, confirm DPI is available in your environment:
 
 ```bash
 # Check enforcer capabilities
+
 kubectl logs -n neuvector -l app=neuvector-enforcer-pod \
   --tail=20 | grep -i "dpi\|inspection"
 
@@ -116,7 +117,7 @@ curl -sk -X POST \
 
 NeuVector DPI supports inspection of these protocols:
 
-```
+```text
 Layer 7 Protocols:
 - HTTP / HTTPS
 - gRPC

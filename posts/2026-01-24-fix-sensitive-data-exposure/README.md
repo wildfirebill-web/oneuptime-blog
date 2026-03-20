@@ -71,6 +71,7 @@ graph LR
 
 ```python
 # encryption.py
+
 # Field-level encryption for sensitive data
 
 from cryptography.fernet import Fernet

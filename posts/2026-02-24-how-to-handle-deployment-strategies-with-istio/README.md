@@ -108,6 +108,7 @@ Gradually increase the canary weight as you gain confidence:
 
 ```bash
 # Shift to 20%
+
 kubectl patch virtualservice my-app-vsvc -n default --type=json \
   -p='[{"op":"replace","path":"/spec/http/0/route/0/weight","value":80},{"op":"replace","path":"/spec/http/0/route/1/weight","value":20}]'
 

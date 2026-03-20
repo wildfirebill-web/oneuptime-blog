@@ -16,6 +16,7 @@ The foundation of any cross-platform role is loading different variables based o
 
 ```yaml
 # roles/nginx/vars/Debian.yml
+
 # Variables for Debian-based systems (Debian, Ubuntu)
 ---
 nginx_package_name: nginx

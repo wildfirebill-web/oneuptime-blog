@@ -18,6 +18,7 @@ This guide covers how to create container service auto scaling configurations in
 
 ```hcl
 # Register the ECS service as a scalable target
+
 resource "aws_appautoscaling_target" "ecs_target" {
   max_capacity       = 20
   min_capacity       = 2

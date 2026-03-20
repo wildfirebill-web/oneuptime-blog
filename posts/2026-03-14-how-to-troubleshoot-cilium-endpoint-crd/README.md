@@ -42,6 +42,7 @@ graph TD
 
 ```bash
 # Compare pods to endpoints
+
 kubectl get pods -n default -o name | sort > /tmp/pods.txt
 kubectl get ciliumendpoints -n default -o name | sort > /tmp/endpoints.txt
 diff /tmp/pods.txt /tmp/endpoints.txt

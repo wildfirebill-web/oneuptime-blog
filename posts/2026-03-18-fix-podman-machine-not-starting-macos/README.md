@@ -37,6 +37,7 @@ If `podman machine init` fails, it is often a download or disk space issue:
 
 ```bash
 # Check available disk space
+
 df -h ~
 
 # Remove any partial initialization

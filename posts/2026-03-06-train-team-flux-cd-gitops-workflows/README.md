@@ -38,6 +38,7 @@ Start with the foundational concepts that differentiate GitOps from traditional 
 
 ```yaml
 # training/module-1/concepts.yaml
+
 # Use this as a slide deck reference
 module_1_gitops_fundamentals:
   duration: "1 hour"

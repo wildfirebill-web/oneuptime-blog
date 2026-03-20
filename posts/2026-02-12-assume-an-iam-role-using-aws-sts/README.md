@@ -39,6 +39,7 @@ The basic command is straightforward:
 
 ```bash
 # Assume a role and get temporary credentials
+
 aws sts assume-role \
   --role-arn arn:aws:iam::123456789012:role/MyTargetRole \
   --role-session-name my-session

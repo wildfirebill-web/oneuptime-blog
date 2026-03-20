@@ -46,6 +46,7 @@ Most organizations use a hybrid approach. Here is a practical structure that I h
 
 ```bash
 # Create the management group hierarchy
+
 # Top-level groups under the root
 az account management-group create \
   --name "mg-platform" \

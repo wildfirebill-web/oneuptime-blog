@@ -31,6 +31,7 @@ You can also check Query Store status from the CLI:
 
 ```bash
 # Verify Query Store is enabled
+
 az sql db show \
   --resource-group myResourceGroup \
   --server myserver \

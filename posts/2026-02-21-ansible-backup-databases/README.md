@@ -29,6 +29,7 @@ flowchart TD
 
 ```ini
 # inventory/databases.ini
+
 [postgres_servers]
 pg-primary ansible_host=10.0.9.10
 

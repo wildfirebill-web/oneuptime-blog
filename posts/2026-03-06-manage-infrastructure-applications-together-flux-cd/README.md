@@ -74,6 +74,7 @@ Create all Helm and Git repository sources in a single layer.
 
 ```yaml
 # infrastructure/sources/kustomization.yaml
+
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:

@@ -29,6 +29,7 @@ kubectl get pods -n nuclio
 
 ```bash
 # Get the dashboard port
+
 DASHBOARD_PORT=$(kubectl get svc nuclio-dashboard -n nuclio \
   -o jsonpath='{.spec.ports[0].nodePort}')
 

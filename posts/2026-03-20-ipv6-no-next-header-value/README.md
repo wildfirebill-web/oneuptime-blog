@@ -8,7 +8,7 @@ Description: Understand the IPv6 No Next Header value (59), when it appears, wha
 
 ## Introduction
 
-The No Next Header value (59, 0x3B) in the IPv6 Next Header field signals that there is no following header — the IPv6 payload is either empty or contains data that has no standard header format. This is a valid and intentional value defined in RFC 8200 with specific processing rules that nodes must follow.
+The No Next Header value (59, 0x3B) in the IPv6 Next Header field signals that there is no following header - the IPv6 payload is either empty or contains data that has no standard header format. This is a valid and intentional value defined in RFC 8200 with specific processing rules that nodes must follow.
 
 ## Where No Next Header Appears
 
@@ -16,7 +16,7 @@ Value 59 can appear in:
 1. The IPv6 base header's Next Header field (directly after the 40-byte header)
 2. Any extension header's Next Header field
 
-```
+```text
 Scenario 1: No extension headers, no upper-layer data
 [IPv6 Header, Next Header = 59] (no payload follows)
 
@@ -116,6 +116,7 @@ def build_empty_ipv6_packet(src: str, dst: str, hop_limit: int = 64) -> bytes:
     return header
 
 # Build an empty IPv6 packet
+
 empty = build_empty_ipv6_packet("2001:db8::1", "2001:db8::2")
 print(f"Empty IPv6 packet ({len(empty)} bytes): {empty.hex()}")
 ```

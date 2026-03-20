@@ -34,6 +34,7 @@ graph LR
 
 ```bash
 # Enable required APIs
+
 gcloud services enable cloudfunctions.googleapis.com \
   pubsub.googleapis.com \
   cloudbuild.googleapis.com \

@@ -14,6 +14,7 @@ Service mesh traffic policies route by service identity (DNS name or SPIFFE SVID
 
 ```bash
 # Verify services have dual-stack ClusterIPs
+
 kubectl get svc my-service -o jsonpath='{.spec.clusterIPs}'
 # Output: ["10.96.0.50","fd00:svc::50"]
 
@@ -26,7 +27,7 @@ kubectl exec test-pod -- curl -6 http://my-service/   # via IPv6
 ## Istio VirtualService for Dual-Stack Routing
 
 ```yaml
-# Canary deployment routing — works for both IPv4 and IPv6
+# Canary deployment routing - works for both IPv4 and IPv6
 apiVersion: networking.istio.io/v1beta1
 kind: VirtualService
 metadata:

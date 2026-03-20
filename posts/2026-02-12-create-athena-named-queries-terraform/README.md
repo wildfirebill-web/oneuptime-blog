@@ -106,6 +106,7 @@ These named queries provide commonly-used analytics queries for the team:
 
 ```hcl
 # Query to analyze daily active users
+
 resource "aws_athena_named_query" "daily_active_users" {
   name        = "Daily Active Users"
   workgroup   = aws_athena_workgroup.analytics.name

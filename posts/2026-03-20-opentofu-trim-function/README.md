@@ -16,8 +16,8 @@ The `trim` function in OpenTofu removes specified characters from both the begin
 trim(string, char_set)
 ```
 
-- **string** — the input string to process
-- **char_set** — a string containing all characters to remove (not a regex, not a delimiter)
+- **string** - the input string to process
+- **char_set** - a string containing all characters to remove (not a regex, not a delimiter)
 - Removes any of the specified characters from both ends of the string
 
 ## Basic Examples
@@ -146,6 +146,7 @@ tofu console
 
 ```hcl
 # This removes all 'a', 'b', 'c' characters from both ends
+
 trim("abcHELLOcba", "abc")  # Returns "HELLO"
 
 # NOT the same as removing the prefix "abc"

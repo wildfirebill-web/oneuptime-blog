@@ -40,6 +40,7 @@ Start with the App Engine deployment logs:
 
 ```bash
 # View the most recent deployment attempt details
+
 gcloud app versions list --sort-by="~createTime" --limit=5 --project=your-project-id
 
 # Check Cloud Build logs for the failed deployment
@@ -84,7 +85,7 @@ gcloud resource-manager org-policies describe \
 
 Let me walk through the organization policies that most frequently break App Engine deployments.
 
-### Resource Location Constraints
+Resource Location Constraints
 
 The `gcp.resourceLocations` constraint restricts which regions resources can be created in:
 

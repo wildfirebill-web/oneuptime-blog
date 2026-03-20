@@ -31,6 +31,7 @@ The simplest throughput query calculates bytes received per second for a specifi
 
 ```promql
 # Bytes per second received by pod
+
 rate(container_network_receive_bytes_total{pod="my-app-7d8f9b5c-xk2m9"}[5m])
 ```
 

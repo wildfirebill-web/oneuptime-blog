@@ -32,6 +32,7 @@ Each snapshot is identified by a timestamp that Azure assigns when the snapshot 
 
 ```bash
 # Create a snapshot of a specific blob
+
 az storage blob snapshot \
   --account-name mystorageaccount \
   --container-name mycontainer \

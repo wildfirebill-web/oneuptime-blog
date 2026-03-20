@@ -47,6 +47,7 @@ Define a Deployment and a CronJob that use container images.
 
 ```yaml
 # apps/ecommerce/base/deployment.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

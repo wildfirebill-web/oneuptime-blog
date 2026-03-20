@@ -86,6 +86,7 @@ Most core APIs are compatible between Elasticsearch 7.x and OpenSearch:
 
 ```bash
 # These work identically in both
+
 curl -X GET "localhost:9200/_cluster/health"
 curl -X GET "localhost:9200/_cat/indices"
 curl -X PUT "localhost:9200/my-index"

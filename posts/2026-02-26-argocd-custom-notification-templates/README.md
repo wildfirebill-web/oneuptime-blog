@@ -16,6 +16,7 @@ ArgoCD notification templates use Go's `text/template` package. The primary data
 
 ```yaml
 # In argocd-notifications-cm ConfigMap
+
 template.my-template: |
   slack:
     attachments: |

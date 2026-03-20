@@ -349,6 +349,7 @@ Other factors:
 
 ```bash
 # Create topic with calculated partition count
+
 kafka-topics.sh --bootstrap-server kafka:9092 \
     --create \
     --topic events \

@@ -20,6 +20,7 @@ Enable Terraform's debug logging to see exactly what is happening:
 
 ```bash
 # Set log level to TRACE for maximum detail
+
 export TF_LOG=TRACE
 export TF_LOG_PATH="terraform-trace.log"
 

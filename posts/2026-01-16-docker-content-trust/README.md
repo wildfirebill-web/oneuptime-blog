@@ -38,6 +38,7 @@ flowchart TB
 
 ```bash
 # Enable for current session
+
 export DOCKER_CONTENT_TRUST=1
 
 # Enable globally in shell profile

@@ -14,7 +14,7 @@ Cisco IOS DHCPv6 Guard blocks DHCPv6 server messages (ADVERTISE, REPLY, RECONFIG
 
 Create client and server policies, then attach them to interfaces.
 
-```
+```text
 ! Step 1: Create DHCPv6 Guard policy for client/host ports
 ipv6 dhcp guard policy CLIENT_GUARD
  device-role client
@@ -38,7 +38,7 @@ interface GigabitEthernet1/0/24
 
 Enhanced policy validates that the server is advertising prefixes within expected ranges.
 
-```
+```text
 ! Enhanced server policy with prefix validation
 ipv6 dhcp guard policy SERVER_VALIDATED
  device-role server
@@ -63,7 +63,7 @@ interface GigabitEthernet1/0/24
 
 IPv6 Snooping populates the binding table and works with DHCPv6 Guard.
 
-```
+```text
 ! Enable IPv6 snooping to build binding table from DHCPv6 exchanges
 ipv6 snooping policy DHCP_SNOOP
  security-level guard
@@ -89,7 +89,7 @@ show ipv6 neighbor binding
 
 When a relay agent is in the path, the relay port must be trusted.
 
-```
+```text
 ! Topology: Host → Access Switch → Relay Agent → DHCPv6 Server
 !
 ! On access switch:
@@ -110,7 +110,7 @@ interface GigabitEthernet1/0/24
 
 Deploy both features on the same switch for complete protection.
 
-```
+```text
 ! Create all policies
 ipv6 nd raguard policy HOST_RA
  device-role host
@@ -142,7 +142,7 @@ interface GigabitEthernet1/0/24
 
 ## Verification Commands
 
-```
+```text
 ! Show DHCPv6 Guard policies defined
 show ipv6 dhcp guard policy
 

@@ -14,6 +14,7 @@ containerd supports OpenTelemetry tracing through its configuration file. Edit `
 
 ```toml
 # /etc/containerd/config.toml
+
 version = 2
 
 # Enable OpenTelemetry tracing

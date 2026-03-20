@@ -27,8 +27,9 @@ flowchart TB
 
 BGP unnumbered uses IPv6 link-local addresses for peering, eliminating the need to assign addresses to every fabric link:
 
-```
+```text
 # FRRouting (FRR) - BGP unnumbered on leaf switch
+
 router bgp 65100
  bgp router-id 10.0.0.1
  !
@@ -44,7 +45,7 @@ router bgp 65100
 
 Assign prefixes hierarchically by pod and rack:
 
-```
+```text
 /16  - Data Center total allocation
   /24  - Pod
     /32  - Row
@@ -68,7 +69,7 @@ sysctl -w net.ipv6.fib_multipath_hash_policy=1
 
 Deploy anycast IPv6 addresses for internal services (DNS, NTP, load balancers) to ensure every host uses the nearest instance:
 
-```
+```text
 # Advertise anycast address from all DNS servers
 router bgp 65100
  address-family ipv6

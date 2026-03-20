@@ -243,6 +243,7 @@ If you do not see data in SkyWalking, check these things:
 
 ```bash
 # Verify the OAP server is receiving data
+
 kubectl logs -n skywalking -l app=oap
 
 # Check that Envoy proxies are configured for ALS

@@ -21,6 +21,7 @@ The LEGACY crypto policy on RHEL enables older algorithms such as SHA-1, TLS 1.0
 
 ```bash
 # Check the current policy
+
 update-crypto-policies --show
 
 # Switch to LEGACY

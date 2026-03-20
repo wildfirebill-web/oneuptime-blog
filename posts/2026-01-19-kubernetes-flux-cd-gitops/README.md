@@ -40,6 +40,7 @@ flowchart LR
 
 ```bash
 # Install Flux CLI
+
 # macOS
 brew install fluxcd/tap/flux
 

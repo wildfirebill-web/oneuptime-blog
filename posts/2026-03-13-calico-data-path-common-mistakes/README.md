@@ -29,6 +29,7 @@ The most common data path mistake is not reducing the MTU when using VXLAN or IP
 **Diagnosis**:
 ```bash
 # Check current MTU on nodes
+
 ip link show eth0 | grep mtu
 # Note the node MTU (typically 1500 for cloud VMs)
 

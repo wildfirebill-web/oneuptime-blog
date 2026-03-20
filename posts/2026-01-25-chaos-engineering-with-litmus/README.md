@@ -37,6 +37,7 @@ Install Litmus in your Kubernetes cluster:
 
 ```bash
 # Add the Litmus Helm repository
+
 helm repo add litmuschaos https://litmuschaos.github.io/litmus-helm/
 
 # Update repositories

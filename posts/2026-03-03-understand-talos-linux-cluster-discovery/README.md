@@ -35,6 +35,7 @@ The discovery service does not receive any sensitive information. It only sees e
 
 ```yaml
 # Machine config: using the discovery service (default)
+
 cluster:
   discovery:
     enabled: true

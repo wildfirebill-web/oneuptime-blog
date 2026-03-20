@@ -28,6 +28,7 @@ Start by installing Jest along with ts-jest (the TypeScript preprocessor) and th
 
 ```bash
 # Core dependencies
+
 npm install --save-dev jest ts-jest @types/jest
 
 # If you want to run type checking separately (recommended)

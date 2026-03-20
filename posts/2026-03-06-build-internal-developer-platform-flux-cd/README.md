@@ -64,6 +64,7 @@ Organize your repository to separate platform infrastructure from tenant workloa
 
 ```bash
 # Platform repository structure
+
 # platform-repo/
 # ├── clusters/
 # │   ├── dev/

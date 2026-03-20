@@ -46,6 +46,7 @@ Here's a basic configuration for the Sumo Logic exporter that sends metrics data
 
 ```yaml
 # Basic Sumo Logic exporter configuration
+
 exporters:
   sumologic:
     # The HTTP Source endpoint URL from your Sumo Logic account

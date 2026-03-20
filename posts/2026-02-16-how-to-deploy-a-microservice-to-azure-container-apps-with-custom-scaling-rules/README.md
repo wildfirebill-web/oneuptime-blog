@@ -27,6 +27,7 @@ The following command creates a resource group and a Container Apps environment.
 
 ```bash
 # Create a resource group in East US
+
 az group create --name my-rg --location eastus
 
 # Create the Container Apps environment

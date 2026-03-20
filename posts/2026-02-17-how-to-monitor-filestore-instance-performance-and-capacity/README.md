@@ -36,6 +36,7 @@ You can query metrics directly with gcloud:
 
 ```bash
 # Check current capacity usage percentage for the last hour
+
 gcloud monitoring time-series list \
   --filter='resource.type="filestore.googleapis.com/Instance" AND metric.type="file.googleapis.com/nfs/server/used_bytes_percent"' \
   --interval-start-time=$(date -u -d '1 hour ago' +%Y-%m-%dT%H:%M:%SZ) \

@@ -14,6 +14,7 @@ Drupal 10 is a robust CMS suitable for enterprise websites. This guide covers in
 
 ```bash
 # Install Apache, PHP 8.2 (via Remi), and MySQL
+
 sudo dnf install -y httpd mysql-server
 
 # Enable Remi for PHP 8.2 (Drupal 10 requires PHP 8.1+)

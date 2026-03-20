@@ -32,6 +32,7 @@ Here is a real scenario:
 
 ```yaml
 # AMBIGUOUS: Which 'docker_container' module is this?
+
 # Could be community.docker.docker_container
 # Could be a custom module in your library/ directory
 - name: Start application container

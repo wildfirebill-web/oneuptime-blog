@@ -57,6 +57,7 @@ If you are building a custom plugin, the CDAP plugin development framework provi
 
 ```bash
 # Generate a new plugin project using the CDAP Maven archetype
+
 mvn archetype:generate \
   -DarchetypeGroupId=io.cdap.cdap \
   -DarchetypeArtifactId=cdap-data-pipeline-plugins-archetype \

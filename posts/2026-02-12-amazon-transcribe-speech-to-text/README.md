@@ -68,6 +68,7 @@ def wait_for_transcription(job_name):
         time.sleep(15)
 
 # Transcribe an audio file
+
 start_transcription(
     job_name='meeting-2026-02-12',
     media_uri='s3://my-audio-bucket/meetings/standup-feb12.mp3',

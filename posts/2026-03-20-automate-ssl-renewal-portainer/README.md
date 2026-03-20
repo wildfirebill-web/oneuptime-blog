@@ -17,7 +17,8 @@ SSL certificates expire every 90 days if you use Let's Encrypt. Manually renewin
 Traefik handles certificate acquisition and renewal entirely automatically. Once configured, you never need to think about SSL again.
 
 ```yaml
-# traefik-auto-ssl-stack.yml — Traefik with automatic Let's Encrypt
+# traefik-auto-ssl-stack.yml - Traefik with automatic Let's Encrypt
+
 version: "3.8"
 
 services:
@@ -49,7 +50,7 @@ volumes:
   traefik_letsencrypt:
 ```
 
-Traefik renews certificates automatically when they're within 30 days of expiry — no cron jobs needed.
+Traefik renews certificates automatically when they're within 30 days of expiry - no cron jobs needed.
 
 ---
 
@@ -141,7 +142,7 @@ docker start portainer
 
 ## Monitoring Certificate Expiry with OneUptime
 
-Set up an SSL expiry check in OneUptime to alert you if any certificate is within 14 days of expiry — as a safety net for your automation.
+Set up an SSL expiry check in OneUptime to alert you if any certificate is within 14 days of expiry - as a safety net for your automation.
 
 ---
 

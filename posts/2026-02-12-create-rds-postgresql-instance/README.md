@@ -120,6 +120,7 @@ Once the instance status is "Available," get the endpoint.
 
 ```bash
 # Get the endpoint
+
 aws rds describe-db-instances \
   --db-instance-identifier my-app-postgres \
   --query 'DBInstances[0].Endpoint.Address' \

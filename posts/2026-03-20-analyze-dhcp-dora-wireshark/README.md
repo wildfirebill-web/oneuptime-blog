@@ -8,7 +8,7 @@ Description: Learn how to capture and analyze the DHCP DORA (Discover, Offer, Re
 
 ---
 
-DHCP uses a four-step handshake known as DORA — Discover, Offer, Request, Acknowledge — to assign IP addresses to clients. Wireshark lets you capture and inspect each message to diagnose lease failures, address conflicts, and misconfigurations.
+DHCP uses a four-step handshake known as DORA - Discover, Offer, Request, Acknowledge - to assign IP addresses to clients. Wireshark lets you capture and inspect each message to diagnose lease failures, address conflicts, and misconfigurations.
 
 ---
 
@@ -16,6 +16,7 @@ DHCP uses a four-step handshake known as DORA — Discover, Offer, Request, Ackn
 
 ```bash
 # Capture DHCP traffic on the network interface (Linux)
+
 sudo wireshark -i eth0 -k
 
 # Or capture with tcpdump and open in Wireshark later
@@ -27,7 +28,7 @@ wireshark dhcp-capture.pcap
 
 ## Apply a Wireshark Display Filter
 
-```
+```text
 # Show only DHCP/BOOTP packets
 bootp
 

@@ -6,7 +6,7 @@ Tags: Prometheus, IPv6, Monitoring, Metrics, Scraping, Observability
 
 Description: A guide to configuring Prometheus to scrape metrics from IPv6 targets, including static configs, service discovery, and relabeling rules.
 
-Prometheus supports IPv6 target addresses with standard URL syntax — IPv6 addresses must be enclosed in brackets when specified in configuration. This guide covers static configs, file-based discovery, and Kubernetes IPv6 scraping.
+Prometheus supports IPv6 target addresses with standard URL syntax - IPv6 addresses must be enclosed in brackets when specified in configuration. This guide covers static configs, file-based discovery, and Kubernetes IPv6 scraping.
 
 ## Step 1: Prometheus Listening on IPv6
 
@@ -14,6 +14,7 @@ Ensure Prometheus itself listens on IPv6 when started:
 
 ```bash
 # Start Prometheus listening on all interfaces (IPv4 and IPv6)
+
 ./prometheus \
   --web.listen-address="[::]:9090" \
   --config.file=prometheus.yml
@@ -143,4 +144,4 @@ relabel_configs:
     replacement: ipv4
 ```
 
-Prometheus handles IPv6 targets natively — the only requirement is to enclose IPv6 addresses in brackets in the target specification, following standard URI syntax (RFC 2732).
+Prometheus handles IPv6 targets natively - the only requirement is to enclose IPv6 addresses in brackets in the target specification, following standard URI syntax (RFC 2732).

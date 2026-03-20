@@ -84,6 +84,7 @@ The base contains all resource definitions in their default form.
 
 ```yaml
 # base/apps/order-service/deployment.yaml
+
 # Base order service deployment
 apiVersion: apps/v1
 kind: Deployment

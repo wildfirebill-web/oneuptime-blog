@@ -56,6 +56,7 @@ Before any upgrade, verify your cluster state:
 ```bash
 #!/bin/bash
 # pre-upgrade-check.sh
+
 # Run this script before upgrading K3s to verify cluster health
 
 set -e

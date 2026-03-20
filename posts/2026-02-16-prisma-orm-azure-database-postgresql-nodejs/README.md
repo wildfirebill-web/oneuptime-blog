@@ -29,6 +29,7 @@ Here is how to create a resource group and a PostgreSQL flexible server:
 
 ```bash
 # Create a resource group in East US
+
 az group create --name prisma-demo-rg --location eastus
 
 # Create a PostgreSQL flexible server with basic tier

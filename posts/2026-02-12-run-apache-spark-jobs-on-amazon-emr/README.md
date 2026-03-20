@@ -130,6 +130,7 @@ Always use cluster mode for production jobs. If you're debugging, use client mod
 
 ```bash
 # Interactive PySpark session on the master node
+
 pyspark --master yarn --deploy-mode client
 ```
 

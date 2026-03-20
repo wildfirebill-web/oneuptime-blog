@@ -16,6 +16,7 @@ This is probably the single most common mistake. A team reads the Istio docs, ge
 
 ```bash
 # Don't do this all at once
+
 kubectl label namespace default istio-injection=enabled
 kubectl label namespace backend istio-injection=enabled
 kubectl label namespace frontend istio-injection=enabled

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, ip Command, Linux, Network Troubleshooting, Routing, Interface Management
+Tags: IPv6, ip command, Linux, Network Troubleshooting, Routing, Interface Management
 
 Description: Use the Linux ip command with the -6 flag to diagnose IPv6 address configuration, routing tables, neighbor discovery, and interface status issues.
 
@@ -14,6 +14,7 @@ The `ip` command is the modern replacement for `ifconfig`, `route`, and `arp` on
 
 ```bash
 # Show all IPv6 addresses on all interfaces
+
 ip -6 addr show
 
 # Show only global scope addresses (excludes link-local, loopback)

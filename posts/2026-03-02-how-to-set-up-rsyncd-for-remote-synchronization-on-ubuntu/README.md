@@ -31,6 +31,7 @@ Note: rsyncd does not encrypt traffic by default. For sensitive data, you can tu
 
 ```bash
 # rsync is usually pre-installed on Ubuntu
+
 which rsync
 rsync --version
 

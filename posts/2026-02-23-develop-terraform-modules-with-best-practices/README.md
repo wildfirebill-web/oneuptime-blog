@@ -55,6 +55,7 @@ Variables are your module's API. Treat them with the same care you would treat a
 
 ```hcl
 # Bad - what does "size" mean?
+
 variable "size" {
   type = string
 }

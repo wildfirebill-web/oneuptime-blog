@@ -6,12 +6,13 @@ Tags: Wireshark, IPv6, IPsec, ESP, AH, VPN, Packet Analysis
 
 Description: A guide to analyzing IPv6 IPsec traffic in Wireshark, including identifying ESP and AH headers, decrypting ESP with keys, and diagnosing IKEv2 exchanges.
 
-IPv6 IPsec uses the same protocol as IPv4 IPsec — ESP (Encapsulating Security Payload, protocol 50) and AH (Authentication Header, protocol 51) — but with IPv6 as the transport layer. Wireshark can decode and optionally decrypt IPsec traffic.
+IPv6 IPsec uses the same protocol as IPv4 IPsec - ESP (Encapsulating Security Payload, protocol 50) and AH (Authentication Header, protocol 51) - but with IPv6 as the transport layer. Wireshark can decode and optionally decrypt IPsec traffic.
 
 ## Display Filters for IPv6 IPsec
 
 ```wireshark
 # Show all ESP-encapsulated IPv6 traffic (protocol 50)
+
 ipv6 && esp
 
 # Show all AH-protected IPv6 traffic (protocol 51)
@@ -86,7 +87,7 @@ After entering keys, Wireshark will display decrypted payloads.
 
 ## Analyzing AH-Protected Traffic
 
-AH provides authentication without encryption — the payload is still visible:
+AH provides authentication without encryption - the payload is still visible:
 
 ```wireshark
 # Show AH-protected IPv6 packets

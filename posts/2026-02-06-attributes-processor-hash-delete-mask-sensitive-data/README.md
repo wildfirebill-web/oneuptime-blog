@@ -22,6 +22,7 @@ Here is the simplest possible configuration, deleting a single attribute.
 
 ```yaml
 # basic-delete.yaml
+
 # Delete a single attribute from all spans
 processors:
   attributes/basic:

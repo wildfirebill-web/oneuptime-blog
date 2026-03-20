@@ -37,6 +37,7 @@ calicoctl get bgpconfiguration -o yaml
 ```bash
 #!/bin/bash
 # validate-bgp-peer.sh <peer-ip> <asn>
+
 PEER_IP=$1
 PEER_ASN=$2
 

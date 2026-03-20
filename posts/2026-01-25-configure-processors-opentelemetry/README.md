@@ -146,7 +146,7 @@ processors:
         action: insert
 ```
 
-## Resource Processor
+Resource Processor
 
 The resource processor modifies resource attributes, which describe the entity producing telemetry (service, host, container).
 

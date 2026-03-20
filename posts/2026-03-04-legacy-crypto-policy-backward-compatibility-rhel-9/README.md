@@ -52,6 +52,7 @@ flowchart TD
 
 ```bash
 # Apply the LEGACY policy
+
 sudo update-crypto-policies --set LEGACY
 
 # Verify the change

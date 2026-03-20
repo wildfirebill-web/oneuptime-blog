@@ -86,6 +86,7 @@ For services that need the network stack to be fully ready:
   notify: Reload systemd
 
 # In the template, make sure to include:
+
 # [Unit]
 # After=network-online.target
 # Wants=network-online.target

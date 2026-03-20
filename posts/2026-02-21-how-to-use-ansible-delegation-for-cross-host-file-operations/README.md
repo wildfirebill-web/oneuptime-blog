@@ -22,6 +22,7 @@ The most reliable approach is to fetch a file to the control machine first, then
 
 ```yaml
 # fetch_and_distribute.yml - Pull a file from one host, push to many
+
 ---
 - name: Distribute SSL certificate from vault to web servers
   hosts: webservers

@@ -42,6 +42,7 @@ Start with these fundamentals in Azure AD:
 
 ```bash
 # Example: List all role assignments to audit for excessive privileges
+
 az role assignment list \
   --scope "/subscriptions/<sub-id>" \
   --output table \

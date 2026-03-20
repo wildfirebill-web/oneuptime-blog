@@ -14,6 +14,7 @@ TypeScript is the most popular language for CDKTF projects, and for good reason.
 
 ```bash
 # Create and initialize the project
+
 mkdir cdktf-typescript-demo
 cd cdktf-typescript-demo
 cdktf init --template=typescript --local

@@ -18,6 +18,7 @@ In host networking mode, the container shares the host's network namespace. The 
 
 ```bash
 # Run a container with host networking
+
 podman run -d --name fast-web \
   --network host \
   docker.io/library/nginx:latest

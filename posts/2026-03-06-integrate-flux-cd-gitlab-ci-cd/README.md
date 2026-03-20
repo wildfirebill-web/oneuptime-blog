@@ -28,6 +28,7 @@ Flux supports GitLab as a Git provider natively. Bootstrap Flux using your GitLa
 
 ```bash
 # Export GitLab credentials
+
 export GITLAB_TOKEN=<your-gitlab-personal-access-token>
 
 # Bootstrap Flux with GitLab

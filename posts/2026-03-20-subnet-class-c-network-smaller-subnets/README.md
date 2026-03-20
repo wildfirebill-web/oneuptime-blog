@@ -61,6 +61,7 @@ for subnet in ipaddress.IPv4Network("192.168.1.0/24").subnets(new_prefix=27):
 import ipaddress
 
 # 192.168.10.0/24 divided for different departments
+
 parent = ipaddress.IPv4Network("192.168.10.0/24")
 subnets = list(parent.subnets(new_prefix=27))
 

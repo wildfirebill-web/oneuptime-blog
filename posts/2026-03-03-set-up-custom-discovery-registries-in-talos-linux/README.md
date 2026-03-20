@@ -34,6 +34,7 @@ If you have a management cluster or another Kubernetes cluster available, deploy
 
 ```yaml
 # discovery-namespace.yaml
+
 apiVersion: v1
 kind: Namespace
 metadata:

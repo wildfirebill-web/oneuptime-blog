@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Linux, Static Routes, ip route, iproute2, Networking, Routing
+Tags: Linux, Static Routes, Ip route, iproute2, Networking, Routing
 
 Description: Add temporary and persistent static routes on Linux using the ip route add command to direct traffic for specific subnets through designated gateways.
 
@@ -14,6 +14,7 @@ Static routes tell the Linux kernel how to reach specific networks that are not 
 
 ```bash
 # Route traffic for 192.168.2.0/24 through gateway 10.0.0.1
+
 ip route add 192.168.2.0/24 via 10.0.0.1
 
 # Route through a specific interface
@@ -99,4 +100,4 @@ nmcli connection modify eth0 +ipv4.routes "192.168.2.0/24 10.0.0.1"
 
 ## Conclusion
 
-`ip route add` is the standard command for adding static routes on Linux. Specify the destination network, the gateway IP, and optionally the outgoing interface. Routes are temporary by default — use Netplan, nmcli, or systemd-networkd for persistence. Use `ip route get <destination>` to verify which route would be used for a specific destination.
+`ip route add` is the standard command for adding static routes on Linux. Specify the destination network, the gateway IP, and optionally the outgoing interface. Routes are temporary by default - use Netplan, nmcli, or systemd-networkd for persistence. Use `ip route get <destination>` to verify which route would be used for a specific destination.

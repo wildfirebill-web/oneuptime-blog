@@ -25,6 +25,7 @@ In this setup:
 
 ```bash
 # On the storage server
+
 sudo apt update
 sudo apt install targetcli-fb -y
 ```

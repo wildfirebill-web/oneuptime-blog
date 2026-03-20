@@ -27,6 +27,7 @@ This guide covers the hardware diagnostic checklist for Cilium performance testi
 
 ```bash
 # NIC model and driver
+
 ethtool -i eth0
 
 # Link speed

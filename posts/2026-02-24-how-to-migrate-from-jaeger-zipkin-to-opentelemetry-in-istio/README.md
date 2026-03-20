@@ -163,6 +163,7 @@ Check that traces appear in both backends:
 
 ```bash
 # Check collector is receiving OTLP spans
+
 kubectl logs -n observability -l app=otel-collector --tail=30
 
 # Verify Jaeger still has new traces

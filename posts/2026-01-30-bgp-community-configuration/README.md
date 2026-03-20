@@ -123,6 +123,7 @@ Here is a practical community scheme for an AS:
 
 ```text
 # Informational Communities (read-only)
+
 65001:1000  - Route learned from customer
 65001:1100  - Route learned from peer
 65001:1200  - Route learned from transit

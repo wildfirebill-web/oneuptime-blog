@@ -35,6 +35,7 @@ This query gets total traffic by API proxy for the past week:
 
 ```bash
 # Get traffic volume per proxy for the last 7 days
+
 curl "https://apigee.googleapis.com/v1/organizations/YOUR_ORG/environments/prod/stats/apiproxy?select=sum(message_count)&timeRange=02/10/2026+00:00~02/17/2026+23:59&timeUnit=day" \
   -H "Authorization: Bearer $(gcloud auth print-access-token)"
 ```

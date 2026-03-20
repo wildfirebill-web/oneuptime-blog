@@ -42,6 +42,7 @@ import redis
 from redis import ConnectionPool, BlockingConnectionPool
 
 # Basic pooling (default behavior)
+
 # Creates a pool with default settings (max 50 connections)
 r = redis.Redis(host='localhost', port=6379, db=0)
 

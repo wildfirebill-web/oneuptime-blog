@@ -29,6 +29,7 @@ The most important prevention step happens at cluster creation time. Ensure the 
 
 ```bash
 # During kubeadm init, specify the pod network CIDR
+
 kubeadm init --pod-network-cidr=10.244.0.0/16
 
 # Verify it was set correctly

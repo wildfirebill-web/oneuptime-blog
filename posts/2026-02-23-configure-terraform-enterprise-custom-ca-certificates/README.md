@@ -39,6 +39,7 @@ First, figure out which CA certificates you need:
 
 ```bash
 # Download the CA certificate from a service
+
 # Replace the host and port with your internal service
 openssl s_client -connect gitlab.internal.example.com:443 -showcerts < /dev/null 2>/dev/null | \
   awk '/BEGIN CERTIFICATE/,/END CERTIFICATE/{print}' > internal-certs.pem

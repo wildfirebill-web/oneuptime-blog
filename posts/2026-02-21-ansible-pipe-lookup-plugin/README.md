@@ -28,6 +28,7 @@ Here are some simple examples of using the pipe lookup:
 
 ```yaml
 # basic_pipe.yml - Basic pipe lookup examples
+
 ---
 - name: Demonstrate pipe lookup
   hosts: all

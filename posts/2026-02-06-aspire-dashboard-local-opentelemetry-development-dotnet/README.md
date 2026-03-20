@@ -40,6 +40,7 @@ The dashboard is distributed as a .NET tool that you can install globally:
 
 ```bash
 # Install the Aspire Dashboard as a global tool
+
 dotnet tool install -g aspire-dashboard
 
 # Run the dashboard

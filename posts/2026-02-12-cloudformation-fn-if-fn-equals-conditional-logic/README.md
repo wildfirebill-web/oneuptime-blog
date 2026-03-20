@@ -16,6 +16,7 @@ CloudFormation isn't a programming language, but it gives you just enough condit
 
 ```yaml
 # Fn::Equals compares two values
+
 Conditions:
   # Simple comparison - is the environment "prod"?
   IsProduction: !Equals [!Ref Environment, prod]

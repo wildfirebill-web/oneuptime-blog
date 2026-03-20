@@ -26,6 +26,7 @@ Managing MetalLB and its BGP configuration through Flux CD ensures that load bal
 
 ```yaml
 # clusters/production/sources/metallb-helm.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

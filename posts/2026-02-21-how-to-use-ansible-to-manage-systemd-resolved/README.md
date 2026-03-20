@@ -67,6 +67,7 @@ A complete Jinja2 template covering all important resolved settings:
 
 ```ini
 # /etc/systemd/resolved.conf
+
 # Managed by Ansible - do not edit manually
 [Resolve]
 

@@ -26,6 +26,7 @@ Blackbox Exporter is a Prometheus component that probes endpoints over HTTP, HTT
 
 ```bash
 # Add the Prometheus community Helm repo (if not already added)
+
 helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
 helm repo update
 ```

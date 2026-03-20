@@ -34,6 +34,7 @@ Before diving deep, confirm the problem is DNS and not something else.
 
 ```bash
 # Run a temporary debug pod
+
 kubectl run dns-debug --rm -it --image=busybox:1.36 -- sh
 
 # Inside the pod, try resolving a cluster service

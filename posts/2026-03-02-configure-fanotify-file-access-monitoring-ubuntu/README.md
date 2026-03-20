@@ -29,6 +29,7 @@ fanotify requires root privileges or `CAP_SYS_ADMIN`. Kernel 5.1+ is recommended
 
 ```bash
 # Check kernel version
+
 uname -r
 
 # fanotify API is available in glibc headers

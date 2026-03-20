@@ -323,6 +323,7 @@ spec:
 
 ```bash
 # List jobs
+
 kubectl get jobs
 
 # Output:
@@ -393,7 +394,7 @@ kubectl delete jobs --field-selector=status.successful=0
 kubectl get jobs -o json | jq -r '.items[] | select(.status.completionTime < (now - 86400 | todate)) | .metadata.name' | xargs kubectl delete job
 ```
 
-## Resource Management
+Resource Management
 
 ```yaml
 apiVersion: batch/v1

@@ -41,6 +41,7 @@ sequenceDiagram
 
 ```bash
 # Update system
+
 sudo apt update
 
 # Install TFTP server, DHCP server, and Apache

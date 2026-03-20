@@ -16,6 +16,7 @@ Without arguments, `journalctl` dumps the entire journal, oldest first:
 
 ```bash
 # View all journal entries (press G to jump to end, q to quit)
+
 journalctl
 
 # Start at the most recent entries and follow new ones (like tail -f)

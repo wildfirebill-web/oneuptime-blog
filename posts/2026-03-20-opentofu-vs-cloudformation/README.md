@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: OpenTofu, CloudFormation, AWS, Comparison, Infrastructure as Code, DevOps
 
-Description: Compare OpenTofu and AWS CloudFormation — their syntax, multi-cloud support, drift detection, and team fit — to choose the right IaC tool for AWS infrastructure.
+Description: Compare OpenTofu and AWS CloudFormation - their syntax, multi-cloud support, drift detection, and team fit - to choose the right IaC tool for AWS infrastructure.
 
 ## Introduction
 
@@ -76,30 +76,31 @@ Resources:
 
 ## When OpenTofu Wins
 
-**Multi-cloud requirements** — If you need to manage AWS alongside Azure, GCP, or other providers, OpenTofu manages everything from one tool.
+**Multi-cloud requirements** - If you need to manage AWS alongside Azure, GCP, or other providers, OpenTofu manages everything from one tool.
 
-**Richer HCL syntax** — HCL is more readable and concise than CloudFormation YAML/JSON, especially for complex resources.
+**Richer HCL syntax** - HCL is more readable and concise than CloudFormation YAML/JSON, especially for complex resources.
 
-**Module ecosystem** — The Terraform Registry has thousands of pre-built, tested modules for common AWS patterns.
+**Module ecosystem** - The Terraform Registry has thousands of pre-built, tested modules for common AWS patterns.
 
-**Community tooling** — Checkov, tfsec, tflint, Infracost all work with OpenTofu.
+**Community tooling** - Checkov, tfsec, tflint, Infracost all work with OpenTofu.
 
 ## When CloudFormation Wins
 
-**AWS-native integration** — CloudFormation stacks integrate deeply with AWS services: Service Catalog, Organizations, Control Tower, and CodePipeline.
+**AWS-native integration** - CloudFormation stacks integrate deeply with AWS services: Service Catalog, Organizations, Control Tower, and CodePipeline.
 
-**Automatic rollback** — CloudFormation automatically rolls back failed deployments. OpenTofu requires manual intervention on failure.
+**Automatic rollback** - CloudFormation automatically rolls back failed deployments. OpenTofu requires manual intervention on failure.
 
-**No state file management** — CloudFormation manages state internally. With OpenTofu, you must manage the state backend (S3, DynamoDB).
+**No state file management** - CloudFormation manages state internally. With OpenTofu, you must manage the state backend (S3, DynamoDB).
 
-**StackSets** — CloudFormation StackSets deploy the same template across multiple accounts and regions natively. OpenTofu requires Terragrunt or custom orchestration.
+**StackSets** - CloudFormation StackSets deploy the same template across multiple accounts and regions natively. OpenTofu requires Terragrunt or custom orchestration.
 
-**AWS-only shops** — If you'll never leave AWS, CloudFormation's native integration reduces operational overhead.
+**AWS-only shops** - If you'll never leave AWS, CloudFormation's native integration reduces operational overhead.
 
 ## Importing Existing CloudFormation Resources into OpenTofu
 
 ```bash
 # Import a CloudFormation-managed VPC into OpenTofu
+
 tofu import aws_vpc.main vpc-12345678
 
 # After import, tofu plan should show no changes

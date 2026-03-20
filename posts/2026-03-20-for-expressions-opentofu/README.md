@@ -4,16 +4,17 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: OpenTofu, For Expressions, HCL, Collections, Infrastructure as Code
 
-Description: Learn how to use for expressions in OpenTofu to transform lists and maps — filtering, mapping, grouping, and reshaping data structures within your configurations.
+Description: Learn how to use for expressions in OpenTofu to transform lists and maps - filtering, mapping, grouping, and reshaping data structures within your configurations.
 
 ## Introduction
 
-For expressions in OpenTofu transform collections — turning lists into maps, filtering based on conditions, extracting attributes, and reshaping data. They replace what would be complex loops in other languages with concise inline expressions.
+For expressions in OpenTofu transform collections - turning lists into maps, filtering based on conditions, extracting attributes, and reshaping data. They replace what would be complex loops in other languages with concise inline expressions.
 
 ## List Transformation
 
 ```hcl
 # Transform a list of strings
+
 variable "subnet_cidrs" {
   default = ["10.0.1.0/24", "10.0.2.0/24", "10.0.3.0/24"]
 }

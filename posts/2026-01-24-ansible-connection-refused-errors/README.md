@@ -40,6 +40,7 @@ sequenceDiagram
 # Typical connection refused errors in Ansible
 
 # Error 1: Basic connection refused
+
 fatal: [server1]: UNREACHABLE! => {
     "changed": false,
     "msg": "Failed to connect to the host via ssh: ssh: connect to host 192.168.1.10 port 22: Connection refused",

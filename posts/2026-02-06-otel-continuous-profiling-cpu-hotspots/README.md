@@ -69,6 +69,7 @@ For Python applications, use the `py-spy` profiler with OpenTelemetry integratio
 
 ```python
 # profiling_setup.py
+
 from opentelemetry import trace
 from opentelemetry.sdk.trace import TracerProvider
 from pyroscope import configure as pyroscope_configure

@@ -29,6 +29,7 @@ Before creating mute rules, understand what findings you have.
 
 ```bash
 # View all active findings sorted by severity
+
 gcloud scc findings list YOUR_ORG_ID \
   --filter='state="ACTIVE" AND mute="UNMUTED"' \
   --format="table(finding.category, finding.severity, finding.resourceName)" \

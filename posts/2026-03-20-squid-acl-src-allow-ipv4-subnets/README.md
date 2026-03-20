@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Squid, ACL, IPv4, Access Control, src, Subnets
+Tags: Squid, ACL, IPv4, Access Control, Src, Subnets
 
 Description: Use Squid's ACL src directive to allow proxy access to specific IPv4 addresses and subnets while denying all other clients.
 
@@ -18,6 +18,7 @@ Squid uses Access Control Lists (ACLs) with `http_access` directives to control 
 http_port 10.0.0.1:3128
 
 # Define ACLs for allowed source IPs
+
 acl office_network    src 203.0.113.0/24      # Office public IP range
 acl internal_network  src 10.0.0.0/8          # RFC 1918 private
 acl developer_ips     src 192.168.1.10         # Specific developer machine

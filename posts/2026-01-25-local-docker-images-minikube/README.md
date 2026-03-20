@@ -34,6 +34,7 @@ The cleanest approach is building images directly inside Minikube's Docker daemo
 
 ```bash
 # Configure your shell to use Minikube's Docker daemon
+
 eval $(minikube docker-env)
 
 # Verify you are using Minikube's Docker

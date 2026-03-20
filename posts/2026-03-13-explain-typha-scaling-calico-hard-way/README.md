@@ -79,6 +79,7 @@ You can inspect the current Typha configuration with:
 
 ```bash
 # List Typha pods in the calico-system namespace
+
 kubectl get pods -n kube-system -l k8s-app=calico-typha
 
 # View Typha logs to confirm Felix connections

@@ -18,6 +18,7 @@ This means etcd starts before Kubernetes does. It is part of the OS-level servic
 
 ```bash
 # Check etcd service status
+
 talosctl -n 192.168.1.10 service etcd
 
 # NODE           SERVICE   STATE     HEALTH   LAST CHANGE

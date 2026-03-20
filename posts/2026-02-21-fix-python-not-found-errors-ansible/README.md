@@ -31,6 +31,7 @@ Before applying fixes, figure out what is actually on the remote host:
 
 ```bash
 # Check if Python exists on the remote host using the raw module
+
 # (raw does not require Python on the remote side)
 ansible web01 -m raw -a "which python3 && python3 --version"
 

@@ -435,6 +435,7 @@ def autocomplete_filename(prefix, size=10):
     return [hit["_source"] for hit in response["hits"]["hits"]]
 
 # Usage examples
+
 print("Searching for 'report':")
 for result in search_files("report"):
     print(f"  {result['filename']} - {result['path']}")

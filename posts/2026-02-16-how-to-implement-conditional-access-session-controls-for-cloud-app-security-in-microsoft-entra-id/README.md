@@ -91,6 +91,7 @@ Here is how to create the same policy using PowerShell.
 
 ```powershell
 # Connect to Microsoft Graph
+
 Connect-MgGraph -Scopes "Policy.ReadWrite.ConditionalAccess"
 
 # Create a Conditional Access policy with session controls

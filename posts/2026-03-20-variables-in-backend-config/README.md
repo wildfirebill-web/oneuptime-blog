@@ -1,4 +1,4 @@
-# How to Use Variables in Backend Configuration in OpenTofu (v1.8+)
+# How to Use Variables in Backend Configuration in OpenTofu (v1.8+) (2)
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Learn how to use OpenTofu variables and local values directly in ba
 
 ## Introduction
 
-OpenTofu 1.8 introduced the ability to use variables and local values in backend configuration blocks — a frequently requested feature that eliminates the need for external scripts or partial backend configuration workarounds. This guide shows how to leverage this capability.
+OpenTofu 1.8 introduced the ability to use variables and local values in backend configuration blocks - a frequently requested feature that eliminates the need for external scripts or partial backend configuration workarounds. This guide shows how to leverage this capability.
 
 ## Before v1.8: The Problem
 
@@ -16,6 +16,7 @@ Prior to v1.8, backend configurations required literal values or external files:
 
 ```hcl
 # Had to use hardcoded values or partial config
+
 terraform {
   backend "s3" {
     bucket = "my-prod-state"  # Couldn't reference var.environment
@@ -46,7 +47,7 @@ variable "project_name" {
   default = "my-app"
 }
 
-# backend.tf — using variables in backend configuration
+# backend.tf - using variables in backend configuration
 terraform {
   backend "s3" {
     bucket         = "my-company-${var.project_name}-terraform-state"

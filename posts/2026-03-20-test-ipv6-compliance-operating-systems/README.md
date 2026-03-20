@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Compliance Testing, Operating Systems, Linux, Windows, macOS
+Tags: IPv6, Compliance Testing, Operating System, Linux, Windows, macOS
 
 Description: Test operating system IPv6 stack compliance including address assignment, ICMPv6 behavior, SLAAC, DHCPv6, privacy extensions, and socket API support.
 
@@ -14,6 +14,7 @@ Operating system IPv6 compliance testing verifies that the OS IPv6 stack correct
 
 ```bash
 # Test 1: Basic IPv6 support enabled
+
 # Check IPv6 module loaded
 lsmod | grep ipv6
 

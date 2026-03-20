@@ -39,6 +39,7 @@ TCP buffers control how much data can be in flight. Larger buffers allow higher 
 # /etc/sysctl.conf - TCP buffer tuning
 
 # Default and maximum socket receive buffer
+
 net.core.rmem_default = 262144
 net.core.rmem_max = 16777216
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, ntopng, Traffic Analysis, Network Monitoring, Flow Analysis
+Tags: IPv6, Ntopng, Traffic Analysis, Network Monitoring, Flow Analysis
 
 Description: Configure ntopng to monitor and analyze IPv6 traffic flows, view top IPv6 talkers, protocol distribution, and generate IPv6-specific traffic reports.
 
@@ -14,6 +14,7 @@ Description: Configure ntopng to monitor and analyze IPv6 traffic flows, view to
 
 ```bash
 # Ubuntu/Debian
+
 sudo apt install -y software-properties-common
 sudo add-apt-repository -y universe
 sudo apt install -y ntopng

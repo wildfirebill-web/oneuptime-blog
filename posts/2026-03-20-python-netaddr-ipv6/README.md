@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Python, netaddr, IPAM, Address Management
+Tags: IPv6, Python, Netaddr, IPAM, Address Management
 
 Description: Use the Python netaddr library for advanced IPv6 address manipulation, supernet/subnet calculation, address sets, and IP range operations beyond the standard ipaddress module.
 
@@ -16,6 +16,7 @@ pip install netaddr
 from netaddr import IPAddress, IPNetwork, IPRange, IPSet, cidr_merge, cidr_exclude
 
 # Parse IPv6 address
+
 addr = IPAddress("2001:db8::1")
 print(addr.version)           # 6
 print(addr.is_global())       # True (for routable space)
@@ -178,7 +179,7 @@ print(f"CIDR representation: {cidrs}")
 from netaddr import IPAddress
 print(IPAddress("2001:db8::1234") in addr_range)  # True
 
-# Iterate over addresses in range (use with care — large ranges!)
+# Iterate over addresses in range (use with care - large ranges!)
 # for addr in IPRange("2001:db8::", "2001:db8::ff"):
 #     print(addr)
 ```

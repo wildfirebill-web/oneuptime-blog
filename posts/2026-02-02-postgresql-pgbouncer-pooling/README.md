@@ -75,6 +75,7 @@ The following commands install PgBouncer from the official repositories.
 
 ```bash
 # Update package lists and install PgBouncer
+
 sudo apt update
 sudo apt install pgbouncer -y
 

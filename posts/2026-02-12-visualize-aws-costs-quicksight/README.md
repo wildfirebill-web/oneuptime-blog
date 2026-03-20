@@ -25,6 +25,7 @@ If QuickSight isn't already set up in your account, enable it.
 
 ```bash
 # Check if QuickSight is already configured
+
 aws quicksight describe-account-settings --aws-account-id 123456789012
 ```
 

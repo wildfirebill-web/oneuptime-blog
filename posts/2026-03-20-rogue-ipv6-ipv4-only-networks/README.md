@@ -8,7 +8,7 @@ Description: Understand how rogue IPv6 Router Advertisements can hijack traffic 
 
 ## Overview
 
-Many organizations believe they have "IPv4-only" networks — but modern operating systems have IPv6 enabled by default and will immediately configure themselves if they receive a Router Advertisement (RA). An attacker on the local network who sends a crafted RA can silently redirect all traffic through their machine, even on networks where the organization never intentionally deployed IPv6.
+Many organizations believe they have "IPv4-only" networks - but modern operating systems have IPv6 enabled by default and will immediately configure themselves if they receive a Router Advertisement (RA). An attacker on the local network who sends a crafted RA can silently redirect all traffic through their machine, even on networks where the organization never intentionally deployed IPv6.
 
 ## Why IPv4-Only Networks Are Vulnerable
 
@@ -37,6 +37,7 @@ An attacker can send a crafted RA using tools like `fake_router6` or `radvd`:
 
 ```bash
 # Attacker sends rogue RA claiming to be the default router
+
 # Victim gets IPv6 address and routes through attacker
 
 # Tool: fake_router6 (part of THC-IPv6)
@@ -53,17 +54,17 @@ sendp(Ether(dst='33:33:00:00:00:01')/ra, iface='eth0', count=10)
 ## What Happens to the Victim
 
 ```bash
-# Before rogue RA — victim has no IPv6 route
+# Before rogue RA - victim has no IPv6 route
 ip -6 route
 # (empty or just link-local)
 
-# After rogue RA — victim now routes through attacker
+# After rogue RA - victim now routes through attacker
 ip -6 route
 # default via fe80::attacker dev eth0 proto ra  ← installed by rogue RA
 # 2001:db8::/64 dev eth0 proto kernel  ← from SLAAC
 ```
 
-Because major websites (Google, Facebook, Microsoft) are IPv6-enabled, the victim's browser will prefer them over IPv4 — sending all traffic through the attacker.
+Because major websites (Google, Facebook, Microsoft) are IPv6-enabled, the victim's browser will prefer them over IPv4 - sending all traffic through the attacker.
 
 ## Detection
 
@@ -72,7 +73,7 @@ Because major websites (Google, Facebook, Microsoft) are IPv6-enabled, the victi
 ```bash
 # On a supposed IPv4-only host
 ip -6 addr show | grep -v 'scope link'
-# If you see a global unicast address — something sent an RA
+# If you see a global unicast address - something sent an RA
 
 # Windows
 netsh interface ipv6 show addresses
@@ -98,7 +99,7 @@ ndpmon -i eth0
 # Install ndpmon
 apt install ndpmon
 
-# Run monitoring — alerts when new routers appear
+# Run monitoring - alerts when new routers appear
 ndpmon -i eth0 -c /etc/ndpmon/config.xml
 ```
 
@@ -120,7 +121,7 @@ reg add HKLM\SYSTEM\CurrentControlSet\Services\Tcpip6\Parameters /v DisabledComp
 
 RA Guard (RFC 6105) allows switches to block RA messages on ports connected to hosts:
 
-```
+```text
 ! Cisco Catalyst: Enable RA Guard on access ports
 ipv6 nd raguard policy HOST-POLICY
   device-role host
@@ -130,7 +131,7 @@ interface GigabitEthernet0/1
   ipv6 nd raguard attach-policy HOST-POLICY
 ```
 
-```
+```text
 ! Juniper EX Series
 set vlans default forwarding-options dhcp-security group ACCESS overrides no-dhcpv6
 set protocols ipv6-nd-ra-guard interface ge-0/0/1.0 mode host
@@ -138,7 +139,7 @@ set protocols ipv6-nd-ra-guard interface ge-0/0/1.0 mode host
 
 ### Method 3: DHCPv6 Snooping
 
-```
+```text
 ! Cisco: DHCPv6 Snooping prevents rogue DHCP and RA
 ipv6 dhcp guard policy DHCPGUARD
   device-role server

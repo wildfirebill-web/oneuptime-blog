@@ -18,6 +18,7 @@ Network aliases allow containers to be reached by alternative DNS names beyond t
 
 ```bash
 # Create a network
+
 podman network create app-net
 
 # Run a container with multiple aliases

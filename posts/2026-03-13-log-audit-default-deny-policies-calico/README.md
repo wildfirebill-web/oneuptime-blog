@@ -110,6 +110,7 @@ Set up alerts for high-volume denials that may indicate a scan or misconfigurati
 
 ```bash
 # Query Elasticsearch for denial spikes
+
 curl -X GET "http://elasticsearch:9200/calico-flows/_search" -H 'Content-Type: application/json' -d '{
   "query": {
     "bool": {

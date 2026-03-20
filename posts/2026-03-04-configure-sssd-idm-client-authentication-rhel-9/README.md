@@ -30,6 +30,7 @@ Start by enrolling the RHEL system as an IdM client. This configures SSSD automa
 
 ```bash
 # Install the IdM client package
+
 sudo dnf install ipa-client -y
 
 # Enroll the client

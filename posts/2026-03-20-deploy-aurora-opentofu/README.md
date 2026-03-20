@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: OpenTofu, Aurora, AWS, Database, Infrastructure as Code, MySQL, PostgreSQL
 
-Description: Learn how to deploy Amazon Aurora clusters (MySQL and PostgreSQL compatible) using OpenTofu — including cluster configuration, reader instances, Auto Scaling, and Global Database.
+Description: Learn how to deploy Amazon Aurora clusters (MySQL and PostgreSQL compatible) using OpenTofu - including cluster configuration, reader instances, Auto Scaling, and Global Database.
 
 ## Introduction
 
@@ -148,6 +148,7 @@ resource "aws_appautoscaling_policy" "aurora_readers_cpu" {
 
 ```hcl
 # Primary cluster (us-east-1)
+
 resource "aws_rds_global_cluster" "main" {
   global_cluster_identifier = "${var.project}-global-aurora"
   engine                    = "aurora-postgresql"

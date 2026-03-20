@@ -88,6 +88,7 @@ Redis 4.0+ includes an active defragmentation feature:
 
 ```bash
 # Enable active defragmentation
+
 redis-cli CONFIG SET activedefrag yes
 redis-cli CONFIG SET active-defrag-enabled yes
 redis-cli CONFIG SET active-defrag-cycle-min 5

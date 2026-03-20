@@ -32,6 +32,7 @@ Enable the Retail API and set up your project.
 
 ```bash
 # Enable the Retail API (which includes Recommendations AI)
+
 gcloud services enable retail.googleapis.com
 
 # Install the Python client library

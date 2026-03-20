@@ -31,6 +31,7 @@ Confirm that Felix on each node is using Typha rather than connecting directly t
 
 ```bash
 # Check Felix logs across several nodes for the Typha connection message
+
 for node in $(kubectl get nodes -o jsonpath='{.items[*].metadata.name}' | tr ' ' '\n' | head -5); do
   POD=$(kubectl get pods -n kube-system -l k8s-app=calico-node \
     --field-selector spec.nodeName=$node -o name 2>/dev/null | head -1)

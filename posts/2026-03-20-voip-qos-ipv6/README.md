@@ -12,7 +12,7 @@ VoIP quality depends on low latency (under 150ms), low jitter (under 30ms), and 
 
 ## VoIP Traffic Classification
 
-```
+```text
 VoIP Traffic Types and DSCP Values:
 ┌──────────────────┬────────────┬──────┬────────────────────────────┐
 │ Traffic Type     │ DSCP Name  │ Hex  │ Purpose                    │
@@ -71,6 +71,7 @@ IFACE="eth0"
 RATE="100mbit"   # Total interface bandwidth
 
 # Clean existing rules
+
 tc qdisc del dev $IFACE root 2>/dev/null
 
 # HTB root qdisc
@@ -174,7 +175,7 @@ tc -s class show dev eth0 | grep -A5 "1:10\|1:20"
 
 ## Cisco Router VoIP QoS for IPv6
 
-```
+```text
 ! Classify VoIP traffic
 class-map match-any VOIP-RTP-IPV6
  match protocol rtp

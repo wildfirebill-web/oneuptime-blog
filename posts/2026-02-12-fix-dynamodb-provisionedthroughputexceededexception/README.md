@@ -30,6 +30,7 @@ Check your current provisioned capacity and consumption:
 
 ```bash
 # Check table capacity settings
+
 aws dynamodb describe-table \
   --table-name my-table \
   --query 'Table.{Mode:BillingModeSummary.BillingMode,ReadCapacity:ProvisionedThroughput.ReadCapacityUnits,WriteCapacity:ProvisionedThroughput.WriteCapacityUnits}'

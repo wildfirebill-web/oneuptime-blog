@@ -14,6 +14,7 @@ FRRouting provides full BGP support on Linux, including IPv6 unicast via the `ad
 
 ```bash
 # Debian/Ubuntu
+
 sudo apt install frr
 
 # Enable bgpd
@@ -134,7 +135,7 @@ vtysh -c "show bgp neighbors 2001:db8:peer::2"
 
 ## Sample Output
 
-```
+```text
 Router# show bgp ipv6 unicast summary
 
 BGP router identifier 1.1.1.1, local AS number 65001

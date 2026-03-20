@@ -14,6 +14,7 @@ The GCP three-tier architecture uses Global HTTP(S) Load Balancing for the prese
 
 ```hcl
 # main.tf - Three-tier VPC on GCP
+
 resource "google_compute_network" "vpc" {
   name                    = "three-tier-vpc"
   auto_create_subnetworks = false

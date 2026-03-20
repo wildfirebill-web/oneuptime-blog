@@ -22,6 +22,7 @@ Start with a script that identifies resource groups older than a specified age a
 
 ```powershell
 # Clean-StaleResourceGroups.ps1
+
 # Identifies and removes resource groups that are older than a threshold
 # and not tagged as persistent or production
 

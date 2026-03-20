@@ -16,6 +16,7 @@ Start by installing Jest and the necessary dependencies:
 
 ```bash
 # For a React project with TypeScript
+
 npm install -D jest @types/jest ts-jest
 
 # Testing utilities for React

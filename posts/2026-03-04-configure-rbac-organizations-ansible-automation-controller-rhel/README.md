@@ -16,6 +16,7 @@ Organizations are the top-level resource isolation boundary.
 
 ```bash
 # Using the awx CLI tool
+
 # Install the awx CLI
 pip install awxkit
 

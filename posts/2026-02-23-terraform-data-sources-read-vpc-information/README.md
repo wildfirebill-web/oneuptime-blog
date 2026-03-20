@@ -307,6 +307,7 @@ Here is a full example of deploying an application into an existing VPC:
 
 ```hcl
 # Look up the existing VPC
+
 data "aws_vpc" "main" {
   tags = {
     Name = "${var.environment}-vpc"

@@ -108,6 +108,7 @@ from pyspark.sql import SparkSession
 from pyspark.sql.functions import col, current_timestamp, lit
 
 # Initialize Spark session with Delta Lake support
+
 spark = SparkSession.builder \
     .appName("MergePatterns") \
     .config("spark.sql.extensions", "io.delta.sql.DeltaSparkSessionExtension") \

@@ -223,6 +223,7 @@ def generate_users(count):
     return data
 
 # Generate and insert
+
 users = generate_users(10000)
 client.insert('users', users, column_names=list(users[0].keys()))
 ```

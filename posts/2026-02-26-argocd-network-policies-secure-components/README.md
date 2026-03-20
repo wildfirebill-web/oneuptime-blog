@@ -42,6 +42,7 @@ Check if your cluster supports Network Policies:
 
 ```bash
 # Create a test network policy
+
 kubectl apply -f - <<EOF
 apiVersion: networking.k8s.io/v1
 kind: NetworkPolicy

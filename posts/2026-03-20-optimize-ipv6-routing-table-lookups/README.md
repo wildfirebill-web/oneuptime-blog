@@ -16,6 +16,7 @@ Linux removed the IPv6 route cache in kernel 3.12+. Routes are now looked up dir
 
 ```bash
 # Count IPv6 routes in the main table
+
 ip -6 route show | wc -l
 
 # Show routing table statistics

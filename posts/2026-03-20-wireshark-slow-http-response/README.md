@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Wireshark, HTTP, Response Time, Performance, TCP Analysis
 
-Description: Learn how to use Wireshark's built-in analysis tools to measure HTTP response times, identify slow segments in TCP connections, and pinpoint whether slowness is in the network, server, or application layer.
+Description: Learn how to use Wireshark's built-in analysis tools to measure HTTP response times, identify slow segments in TCP connections, and pinpoint whether slowness is in the network, server, or...
 
 ## Understanding HTTP Timing in Wireshark
 
@@ -18,20 +18,21 @@ HTTP response time breaks down into:
 
 ```bash
 # Capture HTTP traffic (port 80 for HTTP, port 8080 for dev servers)
+
 sudo tcpdump -i eth0 -n -w /tmp/http-capture.pcap 'port 80 or port 8080'
 
 # Trigger the slow request
 curl -v http://example.com/slow-endpoint
 ```
 
-```
+```text
 Wireshark capture filter:
 port 80 or port 8080
 ```
 
 ## Step 2: Apply HTTP Display Filter
 
-```
+```text
 In Wireshark display filter bar:
 http                    → All HTTP traffic
 http.request            → HTTP requests only
@@ -48,7 +49,7 @@ http.time > 1.0         → Responses taking more than 1 second
 
 ## Step 3: Measure Time to First Byte
 
-```
+```text
 Method 1: Use frame.time_delta
 
 Filter: http
@@ -71,7 +72,7 @@ curl -o /dev/null -s -w "DNS: %{time_namelookup}\nConnect: %{time_connect}\nTTFB
 
 ## Step 4: Use Wireshark TCP Stream Graphs
 
-```
+```text
 After capturing, analyze the TCP stream:
 
 1. Right-click any HTTP packet → Follow → TCP Stream
@@ -91,7 +92,7 @@ After capturing, analyze the TCP stream:
 
 ## Step 5: Identify the Bottleneck Location
 
-```
+```text
 Scenario A: Slow TCP Handshake
 Capture shows:
   t=0.000: SYN
@@ -119,7 +120,7 @@ Diagnosis: Network bandwidth limitation or TCP window issue
 
 ## Step 6: Check for TCP Analysis Warnings
 
-```
+```text
 In Wireshark, look for red/yellow rows:
 
 [TCP Retransmission]       → Packet loss, server resending data
@@ -134,7 +135,7 @@ tcp.analysis.retransmission or tcp.analysis.window_full or tcp.window_size == 0
 
 ## Step 7: Generate HTTP Statistics Report
 
-```
+```text
 Wireshark built-in HTTP statistics:
 
 Statistics → HTTP → Request Sequences

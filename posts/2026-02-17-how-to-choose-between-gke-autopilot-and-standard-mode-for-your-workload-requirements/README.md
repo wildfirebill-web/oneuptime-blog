@@ -65,6 +65,7 @@ If your workload requires any of these, Standard mode is your only option.
 
 ```yaml
 # This pod spec works in Standard but NOT in Autopilot
+
 apiVersion: v1
 kind: Pod
 metadata:
@@ -147,7 +148,7 @@ A team running 15 microservices with traffic that spikes 10x during business hou
 
 **Recommendation: Autopilot.** The variable traffic pattern means Standard mode would waste money during off-hours. Autopilot scales nodes to match actual pod demand.
 
-## Resource Requirements in Autopilot
+Resource Requirements in Autopilot
 
 One important Autopilot behavior: every pod must have resource requests and limits. If you deploy a pod without them, Autopilot applies defaults.
 

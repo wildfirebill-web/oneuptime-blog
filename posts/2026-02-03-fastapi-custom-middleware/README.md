@@ -45,6 +45,7 @@ This basic middleware logs every incoming request path:
 
 ```python
 # main.py
+
 from fastapi import FastAPI, Request
 
 app = FastAPI()

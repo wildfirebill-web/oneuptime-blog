@@ -53,6 +53,7 @@ Different resources need different timeout values based on their startup charact
 
 ```yaml
 # Fast resources: ConfigMaps, Secrets, Services (ClusterIP), RBAC
+
 timeout: 2m
 
 # Standard Deployments

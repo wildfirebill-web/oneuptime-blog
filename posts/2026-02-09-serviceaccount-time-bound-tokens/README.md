@@ -24,6 +24,7 @@ Set custom expiration times using projected volumes:
 
 ```yaml
 # short-lived-token-pod.yaml
+
 apiVersion: v1
 kind: Pod
 metadata:

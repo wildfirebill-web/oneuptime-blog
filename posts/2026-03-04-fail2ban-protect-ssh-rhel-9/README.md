@@ -16,6 +16,7 @@ Fail2Ban is available from the EPEL repository:
 
 ```bash
 # Enable EPEL
+
 sudo dnf install epel-release -y
 
 # Install Fail2Ban

@@ -123,6 +123,7 @@ Create a shared gateway for multiple tenants:
 
 ```yaml
 # Gateway in shared infrastructure namespace
+
 apiVersion: gateway.networking.k8s.io/v1
 kind: Gateway
 metadata:

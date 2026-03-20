@@ -22,6 +22,7 @@ Whisker is Calico's built-in network observability dashboard that provides real-
 
 ```yaml
 # Enable Whisker in the Installation resource
+
 apiVersion: operator.tigera.io/v1
 kind: Installation
 metadata:

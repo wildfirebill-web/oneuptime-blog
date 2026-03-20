@@ -41,6 +41,7 @@ Large models take time to download. Create a PVC to cache models across pod rest
 
 ```yaml
 # tgi-model-cache.yaml
+
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:

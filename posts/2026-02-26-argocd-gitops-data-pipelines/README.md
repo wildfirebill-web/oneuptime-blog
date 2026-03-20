@@ -72,6 +72,7 @@ Use the Strimzi operator to manage Kafka on Kubernetes:
 
 ```yaml
 # infrastructure/kafka/base/kafka-cluster.yaml
+
 apiVersion: kafka.strimzi.io/v1beta2
 kind: Kafka
 metadata:

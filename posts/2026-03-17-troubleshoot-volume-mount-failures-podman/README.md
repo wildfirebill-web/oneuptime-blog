@@ -18,6 +18,7 @@ When a Podman container fails to start due to a volume mount error, the cause co
 
 ```bash
 # Path not found
+
 # Error: statfs /home/user/missing: no such file or directory
 
 # Permission denied

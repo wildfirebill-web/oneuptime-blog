@@ -302,6 +302,7 @@ Always test that restrictions work before assuming they do:
 
 ```bash
 # Should succeed (VirtualService in own namespace)
+
 kubectl auth can-i create virtualservices.networking.istio.io \
   -n team-alpha --as-group=team-alpha-devs --as=dev1
 

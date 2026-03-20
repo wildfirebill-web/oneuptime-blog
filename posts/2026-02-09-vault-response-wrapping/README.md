@@ -24,6 +24,7 @@ Wrap any Vault API response using the `X-Vault-Wrap-TTL` header:
 
 ```bash
 # Wrap a secret read with 5-minute TTL
+
 vault kv get -wrap-ttl=5m secret/database/credentials
 
 # The response contains only the wrapping token

@@ -16,6 +16,7 @@ Kubernetes Secrets store sensitive information like passwords, API keys, and TLS
 
 ```bash
 # Create secret with username and password
+
 kubectl create secret generic db-credentials \
   --from-literal=username=admin \
   --from-literal=password=secretpass123

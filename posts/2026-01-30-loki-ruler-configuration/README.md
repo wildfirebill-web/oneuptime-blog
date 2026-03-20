@@ -56,6 +56,7 @@ The Ruler is configured in the main Loki configuration file. Here is a basic con
 
 ```yaml
 # loki-config.yaml
+
 # Basic Ruler configuration for Loki
 
 ruler:

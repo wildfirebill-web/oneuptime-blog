@@ -257,6 +257,7 @@ Once you've written your policy JSON, create it in AWS:
 
 ```bash
 # Create the custom policy from a JSON file
+
 aws iam create-policy \
   --policy-name MyAppAccess \
   --policy-document file://my-app-policy.json \

@@ -44,6 +44,7 @@ Define which CPUs to isolate by editing the TuneD variables:
 ```bash
 sudo tee /etc/tuned/cpu-partitioning-variables.conf << 'CONF'
 # CPUs to isolate for low-latency workloads
+
 isolated_cores=2-7
 
 # CPUs that do not use nohz_full (optional, subset of isolated_cores)

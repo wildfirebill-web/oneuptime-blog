@@ -20,6 +20,7 @@ Podman uses `Ctrl+P, Ctrl+Q` as the default detach key sequence:
 
 ```bash
 # Start and attach to a container
+
 podman run -dit --name my-app alpine /bin/sh
 podman attach my-app
 

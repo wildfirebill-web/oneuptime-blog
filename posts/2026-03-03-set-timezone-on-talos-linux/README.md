@@ -143,6 +143,7 @@ To confirm that your Talos node is running in UTC:
 
 ```bash
 # Check the current time on a node
+
 talosctl -n 192.168.1.10 time
 
 # The output will be in UTC

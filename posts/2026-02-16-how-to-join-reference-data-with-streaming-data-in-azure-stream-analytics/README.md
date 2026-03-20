@@ -56,6 +56,7 @@ Now configure the reference data input in your Stream Analytics job. Here is how
 
 ```bash
 # Create a reference data input from Blob Storage
+
 # The path pattern uses {date} and {time} tokens for automatic refresh
 az stream-analytics input create \
   --resource-group my-resource-group \

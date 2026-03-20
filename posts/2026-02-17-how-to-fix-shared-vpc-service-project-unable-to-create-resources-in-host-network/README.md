@@ -40,6 +40,7 @@ The following command lists all service projects associated with a host project:
 
 ```bash
 # List all service projects attached to the host project
+
 gcloud compute shared-vpc associated-projects list \
     --project=host-project-id
 ```

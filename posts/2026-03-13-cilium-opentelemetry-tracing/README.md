@@ -144,6 +144,7 @@ spec:
 
 ```bash
 # In Jaeger/Tempo UI, search for traces that include Cilium spans
+
 # Look for spans with service.name = "cilium" or "hubble"
 
 # Check OTel collector is receiving Hubble events

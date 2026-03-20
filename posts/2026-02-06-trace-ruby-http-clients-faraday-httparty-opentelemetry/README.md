@@ -26,6 +26,7 @@ Add the required gems to your Gemfile:
 
 ```ruby
 # Gemfile
+
 gem 'opentelemetry-sdk'
 gem 'opentelemetry-exporter-otlp'
 gem 'opentelemetry-instrumentation-faraday'

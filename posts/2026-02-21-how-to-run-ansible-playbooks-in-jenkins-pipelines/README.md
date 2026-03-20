@@ -23,6 +23,7 @@ For option 1, install Ansible on the agent.
 
 ```bash
 # Install Ansible on the Jenkins agent (Ubuntu/Debian)
+
 sudo apt-get update
 sudo apt-get install -y python3 python3-pip
 pip3 install ansible==8.7.0

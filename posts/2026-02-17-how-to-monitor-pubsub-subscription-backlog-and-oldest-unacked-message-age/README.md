@@ -28,6 +28,7 @@ You can quickly check a subscription's backlog with gcloud:
 
 ```bash
 # Check the number of undelivered messages
+
 gcloud pubsub subscriptions describe my-subscription \
   --format="value(messageRetentionDuration)"
 

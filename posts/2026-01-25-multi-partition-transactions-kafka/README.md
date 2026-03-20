@@ -344,6 +344,7 @@ Ensure your brokers support transactions:
 # server.properties
 
 # Transaction coordinator configuration
+
 # Replication factor for internal transaction topics
 transaction.state.log.replication.factor=3
 transaction.state.log.min.isr=2

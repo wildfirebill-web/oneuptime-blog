@@ -30,6 +30,7 @@ Start by identifying which images are in use:
 
 ```bash
 # All local images
+
 podman images --format "{{.Repository}}:{{.Tag}} {{.Size}} {{.ID}}"
 
 # Images used by running containers

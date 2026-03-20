@@ -76,6 +76,7 @@ Check that Envoy is generating W3C headers:
 
 ```bash
 # Send a request through the mesh and examine headers
+
 kubectl exec deploy/sleep -- curl -s http://httpbin:8000/headers | python3 -m json.tool
 ```
 

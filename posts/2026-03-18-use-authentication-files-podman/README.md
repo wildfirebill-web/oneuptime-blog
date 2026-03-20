@@ -20,6 +20,7 @@ Podman looks for authentication files in several locations.
 
 ```bash
 # Rootless Podman (most common)
+
 # Default: ${XDG_RUNTIME_DIR}/containers/auth.json
 echo "Default auth file: ${XDG_RUNTIME_DIR}/containers/auth.json"
 

@@ -14,6 +14,7 @@ Grafana Loki stores logs indexed by labels. LogQL provides log stream selectors 
 
 ```logql
 # Find all logs containing a specific IP
+
 {job="nginx"} |= "203.0.113.42"
 
 # Regex match for IP
@@ -51,7 +52,7 @@ Grafana Loki stores logs indexed by labels. LogQL provides log stream selectors 
   | client_ip =~ "203\\.0\\.113\\..*|198\\.51\\.100\\..*"
 ```
 
-## Metric Queries — Request Rate by IP
+## Metric Queries - Request Rate by IP
 
 ```logql
 # Request rate per minute from each IP
@@ -86,7 +87,7 @@ sum by (client_ip) (
 
 ## Grafana Dashboard Queries
 
-```
+```text
 # Variable: IP to filter
 # In dashboard variable settings:
 # Query: label_values({job="nginx"} | regexp `^(?P<client_ip>\S+)`, client_ip)
@@ -107,7 +108,7 @@ rate({job="nginx"} |= "${selected_ip}" [1m])
 # Subnet match (line filter)
 {job="nginx"} |~ "^10\\.1\\."
 
-# After parsing — use label filter
+# After parsing - use label filter
 {job="nginx"} | json | remote_addr = "203.0.113.42"
 
 # Error rate from IP

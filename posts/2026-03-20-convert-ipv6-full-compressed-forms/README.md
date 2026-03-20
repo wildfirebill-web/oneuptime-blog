@@ -136,7 +136,7 @@ console.log(compressIPv6("2001:0db8:0000:0000:0000:0000:0000:0001")); // 2001:db
 
 ## RFC 5952 Canonical Rules Summary
 
-```
+```text
 1. Remove all leading zeros from each group
 2. Replace the LONGEST consecutive all-zero group run with ::
 3. If two runs are equal length, replace the FIRST one

@@ -53,6 +53,7 @@ The most common fix is to add `sslmode` to your connection string:
 
 ```bash
 # Connection string with SSL required
+
 postgresql://user:password@host:5432/database?sslmode=require
 
 # psql command

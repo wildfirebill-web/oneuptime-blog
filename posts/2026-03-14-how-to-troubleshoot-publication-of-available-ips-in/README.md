@@ -24,6 +24,7 @@ Publication issues typically stem from agent-operator communication problems, st
 
 ```bash
 # Check CiliumNode resources for publication data
+
 kubectl get ciliumnodes -o json | jq '.items[] | {
   name: .metadata.name,
   has_pool: (.spec.ipam.pool != null),

@@ -33,6 +33,7 @@ To see which installer image a node was installed with:
 
 ```bash
 # Check the machine configuration for the install image
+
 talosctl get machineconfig --nodes 192.168.1.10 -o yaml | grep -A 5 "install:"
 
 # Example output:

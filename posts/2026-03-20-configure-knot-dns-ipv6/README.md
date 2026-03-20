@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Knot DNS, DNS, IPv6, Authoritative, AAAA, DNSSEC, knotd
+Tags: Knot DNS, DNS, IPv6, Authoritative, AAAA, DNSSEC, Knotd
 
 Description: Configure Knot DNS as an authoritative server with IPv6 listening, AAAA records, DNSSEC signing, and zone transfers over IPv6 transport.
 
@@ -14,6 +14,7 @@ Knot DNS is a high-performance authoritative DNS server developed by CZ.NIC. It 
 
 ```bash
 # Ubuntu/Debian
+
 apt-get install -y knot
 
 # RHEL/CentOS (EPEL)

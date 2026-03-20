@@ -46,6 +46,7 @@ If you have not set up MetalLB yet, here is a quick installation:
 
 ```bash
 # Install MetalLB using the official manifests
+
 kubectl apply -f https://raw.githubusercontent.com/metallb/metallb/v0.14.9/config/manifests/metallb-native.yaml
 
 # Wait for MetalLB pods to be ready

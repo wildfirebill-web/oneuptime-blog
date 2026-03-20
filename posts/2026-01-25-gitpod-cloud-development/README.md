@@ -28,6 +28,7 @@ Here is a complete `.gitpod.yml` for a Node.js project:
 # .gitpod.yml - Gitpod workspace configuration
 
 # Base image for the workspace
+
 # Gitpod provides optimized images for common stacks
 image: gitpod/workspace-node-lts
 

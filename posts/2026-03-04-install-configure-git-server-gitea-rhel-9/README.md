@@ -26,6 +26,7 @@ graph TD
 
 ```bash
 # Install Git
+
 sudo dnf install -y git
 
 # Install PostgreSQL for the database

@@ -18,6 +18,7 @@ Neptune clusters must live in a VPC. They need a DB subnet group spanning at lea
 
 ```hcl
 # DB subnet group for Neptune
+
 resource "aws_neptune_subnet_group" "main" {
   name       = "neptune-subnet-group"
   subnet_ids = var.private_subnet_ids

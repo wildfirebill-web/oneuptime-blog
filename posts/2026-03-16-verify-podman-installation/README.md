@@ -25,6 +25,7 @@ Start with the basics:
 
 ```bash
 # Check the Podman CLI version
+
 podman --version
 
 # Display detailed version information including API version

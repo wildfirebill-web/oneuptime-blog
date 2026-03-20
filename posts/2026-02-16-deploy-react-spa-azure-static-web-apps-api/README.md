@@ -26,6 +26,7 @@ Start with a Vite-based React project (faster builds than Create React App):
 
 ```bash
 # Create the React app with TypeScript
+
 npm create vite@latest task-manager -- --template react-ts
 cd task-manager
 npm install

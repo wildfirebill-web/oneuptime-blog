@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Networking, Broadcast, Network Monitoring, Linux, tcpdump, iftop
+Tags: Networking, Broadcast, Network Monitoring, Linux, tcpdump, Iftop
 
 Description: Measure and monitor the volume of broadcast traffic on a network segment using tcpdump, iftop, nload, and interface statistics to detect storms and excessive broadcast rates.
 
@@ -16,6 +16,7 @@ The fastest check is reading broadcast counters from the interface statistics:
 
 ```bash
 # Show broadcast RX/TX counters for eth0
+
 ip -s link show eth0
 
 # Watch counters update every second
@@ -52,7 +53,7 @@ sudo timeout 30 tcpdump -i eth0 -n -q "broadcast or dst 255.255.255.255" 2>&1 | 
 ```
 
 Output example:
-```
+```text
 1423 packets captured
 1423 packets received by filter
 0 packets dropped by kernel
@@ -95,8 +96,8 @@ vnstat -i eth0 -h
 Normal broadcast traffic depends on the network, but a rough guide:
 - **< 50 pps**: healthy
 - **50–500 pps**: moderate (many DHCP renewals, ARP on busy segment)
-- **> 500 pps**: investigate — possible storm or misbehaving host
-- **> 10,000 pps**: likely a broadcast storm — take immediate action
+- **> 500 pps**: investigate - possible storm or misbehaving host
+- **> 10,000 pps**: likely a broadcast storm - take immediate action
 
 ## Conclusion
 

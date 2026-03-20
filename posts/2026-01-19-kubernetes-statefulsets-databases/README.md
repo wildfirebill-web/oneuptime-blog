@@ -58,6 +58,7 @@ StatefulSets provide:
 
 ```yaml
 # postgresql/statefulset.yaml
+
 apiVersion: apps/v1
 kind: StatefulSet
 metadata:

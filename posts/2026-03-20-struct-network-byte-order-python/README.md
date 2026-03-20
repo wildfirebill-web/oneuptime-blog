@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Python, struct, Network Byte Order, IPv4, Binary, Networking, Socket
+Tags: Python, Struct, Network Byte Order, IPv4, Binary, Networking, Sockets
 
 Description: Learn how to use Python's struct module to pack and unpack binary data in network byte order (big-endian) for IPv4 socket programming, including IP header parsing and custom protocol framing.
 
@@ -12,7 +12,8 @@ Description: Learn how to use Python's struct module to pack and unpack binary d
 import struct
 
 # Format prefixes for byte order:
-#   '>' = big-endian (network byte order) — use this for all network protocols
+
+#   '>' = big-endian (network byte order) - use this for all network protocols
 #   '<' = little-endian (host byte order on x86)
 #   '!' = same as '>' (network byte order alias)
 #   '=' = native byte order, standard size
@@ -37,7 +38,7 @@ ip_int = 0xC0A80101   # 192.168.1.1 in hex
 packed = struct.pack("!HI", port, ip_int)
 print(f"Packed: {packed.hex()}")           # 2328c0a80101
 
-# Unpack — returns a tuple
+# Unpack - returns a tuple
 port_out, ip_out = struct.unpack("!HI", packed)
 print(f"Port: {port_out}, IP: {ip_out:#010x}")
 
@@ -153,4 +154,4 @@ def _recvn(sock: socket.socket, n: int) -> bytes:
 
 ## Conclusion
 
-Python's `struct` module serializes and deserializes binary data using format strings. Always prefix format strings with `!` (or `>`) for network byte order (big-endian) when building or parsing network packets. `struct.pack()` returns bytes; `struct.unpack()` returns a tuple — index into it or use tuple unpacking. Use `struct.calcsize()` to compute header size at module load time rather than hardcoding it. Combine `struct` with `socket.inet_aton()`/`inet_ntoa()` or `socket.inet_pton()`/`inet_ntop()` for IP address serialization.
+Python's `struct` module serializes and deserializes binary data using format strings. Always prefix format strings with `!` (or `>`) for network byte order (big-endian) when building or parsing network packets. `struct.pack()` returns bytes; `struct.unpack()` returns a tuple - index into it or use tuple unpacking. Use `struct.calcsize()` to compute header size at module load time rather than hardcoding it. Combine `struct` with `socket.inet_aton()`/`inet_ntoa()` or `socket.inet_pton()`/`inet_ntop()` for IP address serialization.

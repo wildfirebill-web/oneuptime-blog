@@ -38,6 +38,7 @@ Vector is a high-performance log pipeline that can receive Talos JSON logs and f
 
 ```yaml
 # vector-config.yaml - ConfigMap for Vector
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

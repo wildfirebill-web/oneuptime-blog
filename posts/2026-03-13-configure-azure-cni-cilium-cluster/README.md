@@ -29,6 +29,7 @@ Use the Azure CLI to create a cluster with Cilium as the network dataplane.
 
 ```bash
 # Set variables for your cluster configuration
+
 RESOURCE_GROUP="my-rg"
 CLUSTER_NAME="my-aks-cluster"
 LOCATION="eastus"

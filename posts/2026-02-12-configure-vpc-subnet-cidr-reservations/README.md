@@ -48,6 +48,7 @@ There are several scenarios where reservations become essential:
 
 ```bash
 # Reserve a range for explicit-only assignment
+
 # Only resources that specifically request an IP in this range will get one
 aws ec2 create-subnet-cidr-reservation \
     --subnet-id subnet-0123456789abcdef0 \

@@ -52,6 +52,7 @@ Most resources support custom timeouts through the `timeouts` block:
 
 ```hcl
 # Increase RDS creation timeout
+
 resource "aws_db_instance" "main" {
   allocated_storage = 100
   engine            = "postgres"

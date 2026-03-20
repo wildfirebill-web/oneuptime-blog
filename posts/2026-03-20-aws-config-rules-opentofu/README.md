@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, AWS, Config, Compliance, Infrastructure Governance, Infrastructure as Code
+Tags: OpenTofu, AWS, Configs, Compliance, Infrastructure Governance, Infrastructure as Code
 
 Description: Learn how to configure AWS Config Rules with OpenTofu to continuously evaluate AWS resource configurations for compliance with security and operational best practices.
 
@@ -48,6 +48,7 @@ resource "aws_iam_role_policy_attachment" "config" {
 }
 
 # S3 bucket for Config delivery
+
 resource "aws_s3_bucket" "config" {
   bucket = "${var.project_name}-config-${data.aws_caller_identity.current.account_id}"
 }

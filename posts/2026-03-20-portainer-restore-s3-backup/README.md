@@ -8,7 +8,7 @@ Description: Restore Portainer Business Edition from an S3 backup using the buil
 
 ## Introduction
 
-When Portainer Business Edition is configured for S3 backups, restoring is a streamlined process — download the backup from S3 and use Portainer's restore feature, or manually download and extract to the data volume. This guide covers both approaches.
+When Portainer Business Edition is configured for S3 backups, restoring is a streamlined process - download the backup from S3 and use Portainer's restore feature, or manually download and extract to the data volume. This guide covers both approaches.
 
 ## Prerequisites
 
@@ -21,6 +21,7 @@ When Portainer Business Edition is configured for S3 backups, restoring is a str
 
 ```bash
 # List all Portainer backups in S3
+
 aws s3 ls s3://my-portainer-backups/portainer/ --recursive
 
 # List with human-readable sizes and sorted by date

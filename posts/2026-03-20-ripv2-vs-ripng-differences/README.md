@@ -8,7 +8,7 @@ Description: A detailed comparison of RIPv2 and RIPng covering protocol changes,
 
 ## Overview
 
-RIPng (RFC 2080) is not a direct IPv6 port of RIPv2 — it includes architectural changes to align with IPv6 principles. Understanding these differences helps engineers migrating from IPv4 to IPv6 routing.
+RIPng (RFC 2080) is not a direct IPv6 port of RIPv2 - it includes architectural changes to align with IPv6 principles. Understanding these differences helps engineers migrating from IPv4 to IPv6 routing.
 
 ## Detailed Comparison Table
 
@@ -29,13 +29,13 @@ RIPng (RFC 2080) is not a direct IPv6 port of RIPv2 — it includes architectura
 
 RIPv2 has a built-in authentication RTE (Route Table Entry) using plain text or MD5. RIPng removes this entirely and relies on IPsec:
 
-```
+```text
 ! RIPv2 MD5 Authentication (Cisco)
 interface GigabitEthernet0/0
  ip rip authentication mode md5
  ip rip authentication key-chain RIP_KEY
 
-! RIPng Authentication — use IPsec (FRRouting)
+! RIPng Authentication - use IPsec (FRRouting)
 interface eth0
  ipv6 rip RIPNG enable
 ! IPsec security policy must be configured separately
@@ -43,10 +43,11 @@ interface eth0
 
 ## Multicast Scope Change
 
-RIPv2 uses `224.0.0.9` (IPv4 multicast, link-local scope). RIPng uses `ff02::9` which is an IPv6 link-local multicast address — packets never leave the local link:
+RIPv2 uses `224.0.0.9` (IPv4 multicast, link-local scope). RIPng uses `ff02::9` which is an IPv6 link-local multicast address - packets never leave the local link:
 
 ```bash
 # Verify RIPng is joined to ff02::9
+
 ip -6 maddr show dev eth0 | grep "ff02::9"
 ```
 
@@ -54,7 +55,7 @@ ip -6 maddr show dev eth0 | grep "ff02::9"
 
 In RIPv2, each RTE contains a 4-byte next-hop field. In RIPng, the next-hop for a group of routes is specified once using a special "next-hop RTE" (with metric 0xFF) followed by the routes that use it:
 
-```
+```text
 RIPv2: Each RTE = [prefix, netmask, next-hop, metric]
 RIPng: NextHop RTE (metric=0xFF) + RTEs = [prefix, prefix-len, metric]
 ```
@@ -68,7 +69,7 @@ RIPv2 is limited to 512 bytes per packet (20 bytes IP + 8 bytes UDP + 484 bytes 
 On dual-stack routers, both RIPv2 and RIPng can run independently:
 
 ```bash
-# FRRouting — both protocols active simultaneously
+# FRRouting - both protocols active simultaneously
 # /etc/frr/daemons
 ripd=yes
 ripngd=yes
@@ -78,8 +79,8 @@ router rip             ! RIPv2 for IPv4
 router ripng           ! RIPng for IPv6
 ```
 
-```
-! Cisco — both on the same interface
+```text
+! Cisco - both on the same interface
 interface GigabitEthernet0/0
  ip rip send version 2    ! RIPv2
  ipv6 rip RIPNG enable    ! RIPng

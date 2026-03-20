@@ -66,6 +66,7 @@ Socket buffers are where data waits before being sent or after being received. P
 
 ```bash
 # View current socket buffer settings
+
 sysctl net.core.rmem_max
 sysctl net.core.wmem_max
 sysctl net.ipv4.tcp_rmem

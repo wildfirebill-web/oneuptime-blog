@@ -16,6 +16,7 @@ Start with simple HTTP health checks:
 
 ```yaml
 # playbooks/verify-deployment.yml
+
 - name: Post-deployment verification
   hosts: "{{ target_hosts | default('all') }}"
   become: yes

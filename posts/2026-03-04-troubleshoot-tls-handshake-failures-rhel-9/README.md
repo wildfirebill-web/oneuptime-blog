@@ -40,6 +40,7 @@ This is your primary debugging tool. Connect to a server and see exactly what ha
 
 ```bash
 # Connect and show the full handshake details
+
 openssl s_client -connect myserver.example.com:443 -servername myserver.example.com </dev/null
 ```
 

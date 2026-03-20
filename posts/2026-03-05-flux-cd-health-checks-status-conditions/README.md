@@ -26,6 +26,7 @@ Here is what a typical status block looks like on a Kustomization resource:
 
 ```yaml
 # Example status conditions on a Kustomization resource
+
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
 metadata:

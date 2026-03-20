@@ -10,7 +10,7 @@ GCP's Global External HTTP(S) Load Balancer supports IPv6 by assigning both IPv4
 
 ## GCP IPv6 Load Balancer Architecture
 
-```
+```text
 IPv6 Client → Global Anycast IPv6 → GCP Edge PoP → Backend (IPv4 or IPv6)
 ```
 
@@ -20,6 +20,7 @@ GCP automatically handles IPv6-to-IPv4 translation if your backends are IPv4-onl
 
 ```hcl
 # Backend service
+
 resource "google_compute_backend_service" "main" {
   name        = "main-backend"
   port_name   = "http"
@@ -160,4 +161,4 @@ curl -6 https://example.com/
 curl -6 https://example.com/ -H "X-Debug-IP: request"
 ```
 
-GCP's global external load balancer is one of the easiest ways to add IPv6 support — simply reserve an IPv6 global address, create an IPv6 forwarding rule, and your backend workloads gain IPv6 connectivity without any changes.
+GCP's global external load balancer is one of the easiest ways to add IPv6 support - simply reserve an IPv6 global address, create an IPv6 forwarding rule, and your backend workloads gain IPv6 connectivity without any changes.

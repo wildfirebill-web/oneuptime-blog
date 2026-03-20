@@ -14,6 +14,7 @@ VPC Peering creates a direct networking connection between two VPCs, allowing re
 
 ```hcl
 # Create the peering connection request
+
 resource "aws_vpc_peering_connection" "app_to_shared" {
   vpc_id      = aws_vpc.app.id         # Requester VPC
   peer_vpc_id = aws_vpc.shared.id      # Accepter VPC
@@ -102,4 +103,4 @@ resource "aws_vpc_peering_connection_options" "accepter" {
 
 ## Conclusion
 
-VPC Peering is ideal for connecting a small number of VPCs (2–5). For hub-and-spoke architectures with many VPCs, consider AWS Transit Gateway instead—it scales better and avoids the complexity of full-mesh peering route tables.
+VPC Peering is ideal for connecting a small number of VPCs (2–5). For hub-and-spoke architectures with many VPCs, consider AWS Transit Gateway instead-it scales better and avoids the complexity of full-mesh peering route tables.

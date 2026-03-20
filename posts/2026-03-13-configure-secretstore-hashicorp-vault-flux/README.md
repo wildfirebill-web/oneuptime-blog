@@ -27,6 +27,7 @@ This guide covers configuring a `SecretStore` for HashiCorp Vault using Kubernet
 
 ```bash
 # Enable the Kubernetes auth method in Vault
+
 vault auth enable kubernetes
 
 # Configure the Kubernetes auth method with cluster details

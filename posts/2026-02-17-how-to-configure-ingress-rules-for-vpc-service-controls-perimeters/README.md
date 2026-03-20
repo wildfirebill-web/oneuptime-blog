@@ -79,6 +79,7 @@ Create a file called `ingress-policy.yaml`:
 
 ```yaml
 # ingress-policy.yaml - Allow CI/CD to deploy inside the perimeter
+
 - ingressFrom:
     identities:
       - serviceAccount:cicd-deployer@external-cicd-project.iam.gserviceaccount.com

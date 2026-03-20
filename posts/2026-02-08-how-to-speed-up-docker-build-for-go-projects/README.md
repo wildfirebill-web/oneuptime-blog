@@ -16,6 +16,7 @@ Most Go developers start with something like this:
 
 ```dockerfile
 # BAD: Downloads all modules and recompiles everything on any change
+
 FROM golang:1.22-alpine
 WORKDIR /app
 COPY . .

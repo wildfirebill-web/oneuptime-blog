@@ -14,6 +14,7 @@ Kubernetes RBAC controls access to API resources through Roles and ClusterRoles.
 
 ```hcl
 # main.tf - Read-only ClusterRole for monitoring tools
+
 resource "kubernetes_cluster_role_v1" "monitoring_reader" {
   metadata {
     name = "monitoring-reader"

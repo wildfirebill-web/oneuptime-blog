@@ -28,6 +28,7 @@ Here is the structure of a generic chart stored in your GitOps repository:
 
 ```bash
 # Create the generic chart directory structure
+
 mkdir -p charts/generic-app/templates
 ```
 

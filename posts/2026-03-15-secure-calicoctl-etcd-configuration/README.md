@@ -46,6 +46,7 @@ Verify TLS is enforced by testing a plaintext connection (which should fail):
 
 ```bash
 # This should fail if etcd requires TLS
+
 curl -s http://etcd1:2379/health
 # Expected: Connection refused or empty response
 ```

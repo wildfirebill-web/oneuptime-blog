@@ -54,6 +54,7 @@ MetalLB must be running in FRR-K8s mode to support prefix reception. Check your 
 
 ```bash
 # Check MetalLB speaker pods and their mode
+
 kubectl get pods -n metallb-system -l component=speaker -o wide
 
 # Verify that the FRR-K8s containers are running inside the speaker pods

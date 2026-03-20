@@ -33,6 +33,7 @@ sudo apt install borgbackup
 
 ```bash
 # Create backup directory on a separate drive or NAS
+
 # Replace /mnt/backup-drive with your backup mount point
 BACKUP_DIR="/mnt/backup-drive/borg-repo"
 

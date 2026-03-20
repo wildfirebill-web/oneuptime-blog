@@ -33,6 +33,7 @@ You can create a cluster through the OVHcloud Control Panel or API. Download the
 
 ```bash
 # Download kubeconfig from OVHcloud Control Panel
+
 # Navigate to: Public Cloud > Managed Kubernetes > Your Cluster > kubeconfig
 
 export KUBECONFIG=~/kubeconfig-ovh.yml

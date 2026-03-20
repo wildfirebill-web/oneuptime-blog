@@ -1,11 +1,10 @@
----
-title: "How to Use can() and try() in OpenTofu"
-author: nawazdhandala
-tags: opentofu, terraform, iac, functions
-description: "Learn how to use can() and try() functions in OpenTofu for error handling and safe value evaluation."
----
-
 # How to Use can() and try() in OpenTofu
+
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
+
+Tags: OpenTofu, Terraform, IaC, Functions
+
+Description: Learn how to use can() and try() functions in OpenTofu for error handling and safe value evaluation.
 
 `can()` and `try()` are error-handling functions that let you safely evaluate expressions that might fail. They're particularly useful when working with complex data structures, optional attributes, and type conversions.
 
@@ -134,6 +133,7 @@ locals {
 
 ```hcl
 # Try to get an existing security group, fall back to a default
+
 locals {
   sg_id = try(
     data.aws_security_group.existing.id,
@@ -145,12 +145,12 @@ locals {
 ## can() vs try()
 
 ```hcl
-# can() — returns boolean (use in conditions)
+# can() - returns boolean (use in conditions)
 locals {
   is_valid_cidr = can(cidrnetmask(var.cidr))
 }
 
-# try() — returns the value or fallback (use when you need the value)
+# try() - returns the value or fallback (use when you need the value)
 locals {
   safe_port = try(tonumber(var.port), 8080)
 }

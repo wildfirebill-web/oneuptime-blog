@@ -44,6 +44,7 @@ pm2-setup/
 
 ```yaml
 # group_vars/all.yml
+
 node_version: "20"
 app_user: nodeapp
 app_group: nodeapp

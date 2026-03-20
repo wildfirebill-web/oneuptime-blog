@@ -59,6 +59,7 @@ The numbered prefix convention (00, 01, 02...) is just for human readability. Ac
 
 ```yaml
 # root-application.yaml
+
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:

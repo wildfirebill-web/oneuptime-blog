@@ -14,6 +14,7 @@ Receive Side Scaling (RSS) distributes incoming network traffic across multiple 
 
 ```bash
 # Check number of RSS queues on your NIC
+
 ethtool -l eth0
 # Shows: "Pre-set maximums" and "Current hardware settings"
 # Combined count = number of RSS queues
@@ -93,7 +94,7 @@ echo 32768 > /proc/sys/net/core/rps_sock_flow_entries
 RFS extends RPS to steer packets to the same CPU where the application is running, improving cache locality.
 
 ```bash
-# Enable RFS — set global flow table size
+# Enable RFS - set global flow table size
 echo 32768 > /proc/sys/net/core/rps_sock_flow_entries
 
 # Set per-queue flow table size (must sum to <= global)

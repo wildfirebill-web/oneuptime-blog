@@ -23,6 +23,7 @@ Cosign supports two signing modes:
 
 ```bash
 # Install on macOS
+
 brew install cosign
 
 # Install on Linux (download the binary)

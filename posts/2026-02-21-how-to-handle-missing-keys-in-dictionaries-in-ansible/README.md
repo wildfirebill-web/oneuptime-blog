@@ -16,6 +16,7 @@ When you access a missing key in Ansible, you get an error:
 
 ```yaml
 # This will fail if 'database' or 'port' does not exist
+
 - name: This task will fail on missing key
   ansible.builtin.debug:
     msg: "Port is {{ config.database.port }}"

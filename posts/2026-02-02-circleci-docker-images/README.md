@@ -53,6 +53,7 @@ Every CircleCI project starts with a `.circleci/config.yml` file at the root of 
 
 ```yaml
 # .circleci/config.yml
+
 # Basic configuration for building Docker images with the machine executor
 
 version: 2.1

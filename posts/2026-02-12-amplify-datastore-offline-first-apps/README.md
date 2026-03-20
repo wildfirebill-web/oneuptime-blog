@@ -37,6 +37,7 @@ The schema for DataStore is the same GraphQL schema you'd use for the API:
 
 ```graphql
 # A simple task management schema
+
 type Task @model @auth(rules: [{ allow: owner }]) {
   id: ID!
   title: String!

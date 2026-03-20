@@ -25,6 +25,7 @@ Install the Operator SDK CLI:
 
 ```bash
 # macOS
+
 brew install operator-sdk
 
 # Linux

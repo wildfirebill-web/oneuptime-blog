@@ -16,6 +16,7 @@ The `always` section is simple in concept but powerful in practice.
 
 ```yaml
 # Basic always behavior
+
 ---
 - name: Always block demo
   hosts: localhost

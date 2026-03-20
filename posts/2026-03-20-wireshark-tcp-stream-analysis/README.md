@@ -14,6 +14,7 @@ Wireshark provides powerful built-in TCP analysis features that go beyond simple
 
 ```bash
 # Capture traffic first
+
 tcpdump -i eth0 -w /tmp/analysis.pcap 'tcp and port 8080'
 
 # Open in Wireshark
@@ -22,7 +23,7 @@ wireshark /tmp/analysis.pcap
 
 In Wireshark, right-click any packet → Follow → TCP Stream
 
-```
+```text
 # Displays the full conversation as text
 # Blue text: client to server (requests)
 # Red text: server to client (responses)
@@ -35,7 +36,7 @@ In Wireshark, right-click any packet → Follow → TCP Stream
 
 ## Expert Information Analysis
 
-```
+```text
 # Analyze → Expert Information
 # Wireshark automatically categorizes issues:
 
@@ -61,7 +62,7 @@ In Wireshark, right-click any packet → Follow → TCP Stream
 
 ## Useful Display Filters
 
-```
+```text
 # Filter for a specific TCP stream
 tcp.stream eq 5
 
@@ -84,7 +85,7 @@ frame.time_delta > 1.0 && tcp.len > 0
 
 ## TCP Stream Graphs
 
-```
+```text
 # Statistics → TCP Stream Graphs
 
 # 1. Time-Sequence (Stevens):

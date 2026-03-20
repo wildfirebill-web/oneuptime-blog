@@ -33,6 +33,7 @@ Falco is the de facto standard for Kubernetes runtime security. It uses eBPF pro
 
 ```bash
 # Add the Falco Helm repository
+
 helm repo add falcosecurity https://falcosecurity.github.io/charts
 
 # Update the chart cache

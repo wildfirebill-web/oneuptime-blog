@@ -33,6 +33,7 @@ flowchart LR
 
 ```bash
 # Enable required APIs
+
 gcloud services enable \
   run.googleapis.com \
   eventarc.googleapis.com \

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ubuntu, Tcpdump, Networks, Debugging, Packet Capture, Tutorial
+Tags: Ubuntu, tcpdump, Networks, Debugging, Packet Capture, Tutorial
 
 Description: Complete guide to using tcpdump for network troubleshooting and packet analysis on Ubuntu.
 
@@ -20,6 +20,7 @@ tcpdump is often pre-installed on Ubuntu systems, but if it's not available, you
 
 ```bash
 # Update package lists
+
 sudo apt update
 
 # Install tcpdump

@@ -139,6 +139,7 @@ backend web_servers
 
 ```bash
 # Check server states via the stats socket
+
 echo "show servers state" | sudo socat stdio /var/lib/haproxy/stats
 
 # Show backend status

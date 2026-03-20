@@ -410,6 +410,7 @@ When exclusion matching doesn't work as expected:
 
 ```bash
 # Check the effective policy
+
 istioctl analyze -n my-app
 
 # View the Envoy RBAC configuration

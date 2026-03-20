@@ -44,6 +44,7 @@ Define a Receiver resource:
 
 ```yaml
 # flux-system/receiver.yaml
+
 apiVersion: notification.toolkit.fluxcd.io/v1
 kind: Receiver
 metadata:

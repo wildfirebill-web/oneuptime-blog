@@ -125,6 +125,7 @@ Configure ArgoCD globally to never prune PVCs:
 
 ```yaml
 # argocd-cm ConfigMap
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

@@ -35,6 +35,7 @@ Using the AWS CLI:
 
 ```bash
 # Create a keyspace (equivalent to a Cassandra keyspace)
+
 aws keyspaces create-keyspace \
   --keyspace-name my_application
 

@@ -36,6 +36,7 @@ Talos Linux removes all implicit access:
 
 ```bash
 # On traditional Linux - implicit trust after SSH login
+
 ssh user@server
 # Now you can do anything: ls, cat, sudo, etc.
 

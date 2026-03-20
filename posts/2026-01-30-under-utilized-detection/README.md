@@ -176,6 +176,7 @@ Execute the script and review the recommendations:
 
 ```bash
 # Set AWS credentials
+
 export AWS_PROFILE=production
 
 # Run the analysis

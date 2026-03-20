@@ -31,6 +31,7 @@ Kyverno is the easiest way to implement image policies on Talos Linux because it
 
 ```yaml
 # restrict-registries.yaml
+
 apiVersion: kyverno.io/v1
 kind: ClusterPolicy
 metadata:

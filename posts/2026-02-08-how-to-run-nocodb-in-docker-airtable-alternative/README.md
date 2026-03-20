@@ -28,6 +28,7 @@ You need Docker and Docker Compose. NocoDB itself is lightweight, but the backen
 
 ```bash
 # Verify Docker is installed
+
 docker --version
 docker compose version
 ```

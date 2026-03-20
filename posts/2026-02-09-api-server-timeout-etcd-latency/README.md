@@ -24,6 +24,7 @@ Check for timeout errors in API server logs.
 
 ```bash
 # View API server logs
+
 kubectl logs -n kube-system kube-apiserver-master-1 | grep -i timeout
 
 # Common error patterns:

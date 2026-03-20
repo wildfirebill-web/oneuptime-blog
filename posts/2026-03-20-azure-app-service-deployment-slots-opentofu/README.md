@@ -14,6 +14,7 @@ Azure App Service deployment slots allow you to deploy to a staging slot, valida
 
 ```hcl
 # main.tf - Production web app
+
 resource "azurerm_linux_web_app" "production" {
   name                = "my-app-production"
   location            = azurerm_resource_group.rg.location

@@ -32,6 +32,7 @@ Let's Encrypt is a free, automated Certificate Authority that provides:
 
 ```bash
 # Install Certbot from Ubuntu repositories
+
 sudo apt update
 sudo apt install certbot -y
 ```

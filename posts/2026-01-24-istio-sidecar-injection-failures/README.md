@@ -39,6 +39,7 @@ Check if your namespace has the correct label:
 
 ```bash
 # Check the namespace labels
+
 kubectl get namespace your-namespace --show-labels
 ```
 

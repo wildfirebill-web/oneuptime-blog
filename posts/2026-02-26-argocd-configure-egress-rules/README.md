@@ -54,6 +54,7 @@ Start with a default-deny egress policy:
 
 ```yaml
 # default-deny-egress.yaml
+
 apiVersion: networking.k8s.io/v1
 kind: NetworkPolicy
 metadata:

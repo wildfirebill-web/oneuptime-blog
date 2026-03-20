@@ -29,6 +29,7 @@ Verify the cluster is using the legacy chaining mode.
 
 ```bash
 # Check the CNI configuration on a node for the chained plugin setup
+
 kubectl debug node/<node-name> -it --image=ubuntu -- \
   cat /etc/cni/net.d/10-azure.conflist
 

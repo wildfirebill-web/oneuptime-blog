@@ -42,6 +42,7 @@ For development and testing, you can generate self-signed certificates. In produ
 
 ```bash
 # Create a directory for certificates
+
 mkdir -p certs && cd certs
 
 # Generate CA key and certificate

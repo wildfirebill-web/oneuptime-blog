@@ -28,6 +28,7 @@ Before changing anything, understand your current mTLS configuration:
 
 ```bash
 # Check mesh-wide PeerAuthentication
+
 kubectl get peerauthentication --all-namespaces
 
 # Check what mode is currently active

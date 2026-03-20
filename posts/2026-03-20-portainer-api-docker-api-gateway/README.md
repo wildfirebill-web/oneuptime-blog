@@ -8,7 +8,7 @@ Description: Learn how to use Portainer as a secure gateway to the Docker API, a
 
 ## Why Use Portainer as a Docker API Gateway?
 
-Exposing the Docker socket directly (`/var/run/docker.sock`) is a significant security risk — anyone with socket access has root-equivalent access to the host. Portainer acts as a controlled proxy:
+Exposing the Docker socket directly (`/var/run/docker.sock`) is a significant security risk - anyone with socket access has root-equivalent access to the host. Portainer acts as a controlled proxy:
 
 - **Authentication**: All requests require a valid Portainer token.
 - **Audit logging**: Every API call is logged.
@@ -18,7 +18,7 @@ Exposing the Docker socket directly (`/var/run/docker.sock`) is a significant se
 ## Docker API Proxy Endpoint
 
 Portainer proxies all Docker API calls through:
-```
+```text
 /api/endpoints/{endpointId}/docker/{docker-api-path}
 ```
 
@@ -30,6 +30,7 @@ You can configure your Docker CLI to use Portainer as the Docker host:
 
 ```bash
 # Set Portainer as the Docker host via environment variable
+
 export DOCKER_HOST="tcp://portainer.mycompany.com:9000"
 
 # However, standard Docker CLI doesn't support Bearer token auth natively

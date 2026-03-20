@@ -36,6 +36,7 @@ server {
 
 ```nginx
 # HTTP redirect to HTTPS (both IPv4 and IPv6)
+
 server {
     listen 80;
     listen [::]:80 ipv6only=on;

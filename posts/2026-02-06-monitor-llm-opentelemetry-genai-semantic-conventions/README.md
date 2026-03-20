@@ -48,6 +48,7 @@ First, you need the OpenTelemetry Python SDK and the OTLP exporter. If you're al
 
 ```bash
 # Install core OpenTelemetry packages
+
 pip install opentelemetry-api opentelemetry-sdk opentelemetry-exporter-otlp
 
 # Install the semantic conventions package for GenAI attribute constants

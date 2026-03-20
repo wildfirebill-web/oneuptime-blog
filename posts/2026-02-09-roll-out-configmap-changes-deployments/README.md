@@ -18,6 +18,7 @@ When you update a ConfigMap, existing pods don't automatically reload:
 
 ```bash
 # Update ConfigMap
+
 kubectl create configmap app-config \
   --from-literal=LOG_LEVEL=debug \
   --dry-run=client -o yaml | kubectl apply -f -

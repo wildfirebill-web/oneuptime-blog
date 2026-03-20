@@ -26,6 +26,7 @@ There are several ways to allow access:
 
 ```bash
 # Check the current network rules on a storage account
+
 az storage account show \
   --resource-group my-rg \
   --name mystorageaccount \

@@ -43,6 +43,7 @@ Create the necessary secrets first.
 
 ```bash
 # Create the namespace
+
 kubectl create namespace drone
 
 # Generate a shared secret for communication between server and runners
@@ -406,7 +407,7 @@ drone secret add \
   --data your-docker-password
 ```
 
-## Resource Limits for Build Pods
+Resource Limits for Build Pods
 
 Control the resources allocated to build containers.
 

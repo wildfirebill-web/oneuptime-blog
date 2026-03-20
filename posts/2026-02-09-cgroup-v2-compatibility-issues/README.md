@@ -22,6 +22,7 @@ Pods fail to start with resource allocation errors. The kubelet reports errors a
 
 ```bash
 # Check which cgroup version is active
+
 stat -fc %T /sys/fs/cgroup/
 
 # Output:

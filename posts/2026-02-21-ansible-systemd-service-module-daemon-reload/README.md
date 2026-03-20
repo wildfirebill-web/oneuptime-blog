@@ -35,6 +35,7 @@ The `daemon_reload` parameter is a boolean that triggers `systemctl daemon-reloa
 
 ```yaml
 # Reload systemd configuration and restart the service
+
 - name: Restart service with daemon reload
   ansible.builtin.systemd_service:
     name: myapp

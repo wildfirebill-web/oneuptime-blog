@@ -73,6 +73,7 @@ The fastest way to confirm an OOM kill:
 
 ```bash
 # Describe stopped tasks and check for exit code 137
+
 aws ecs describe-tasks \
   --cluster production \
   --tasks arn:aws:ecs:us-east-1:123456789012:task/production/abc123 \

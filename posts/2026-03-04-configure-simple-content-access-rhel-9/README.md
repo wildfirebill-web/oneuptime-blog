@@ -34,6 +34,7 @@ For most Red Hat accounts created after 2022, SCA is enabled by default. Check y
 
 ```bash
 # Check if SCA is active on this system
+
 sudo subscription-manager status
 ```
 

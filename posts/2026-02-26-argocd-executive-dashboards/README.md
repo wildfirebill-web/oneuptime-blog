@@ -303,6 +303,7 @@ Mark important events on the dashboard timeline so executives can correlate metr
 
 ```bash
 # Add an annotation for a major release
+
 curl -X POST http://grafana:3000/api/annotations \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer $GRAFANA_TOKEN" \

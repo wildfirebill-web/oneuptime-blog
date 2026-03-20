@@ -89,6 +89,7 @@ spec:
 
 ```bash
 # Create a Job from a CronJob template
+
 kubectl create job --from=cronjob/nightly-backup manual-backup-$(date +%Y%m%d)
 ```
 
@@ -96,9 +97,9 @@ kubectl create job --from=cronjob/nightly-backup manual-backup-$(date +%Y%m%d)
 
 ## Common CronJob Pitfalls
 
-- `concurrencyPolicy: Forbid` — prevents overlapping runs
-- `startingDeadlineSeconds` — if the scheduler misses a window, skip rather than backfill
-- `successfulJobsHistoryLimit: 3` — keeps logs accessible without indefinite accumulation
+- `concurrencyPolicy: Forbid` - prevents overlapping runs
+- `startingDeadlineSeconds` - if the scheduler misses a window, skip rather than backfill
+- `successfulJobsHistoryLimit: 3` - keeps logs accessible without indefinite accumulation
 
 ---
 

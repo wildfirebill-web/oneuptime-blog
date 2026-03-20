@@ -75,6 +75,7 @@ For PostgreSQL, enable logical replication in `postgresql.conf`:
 
 ```properties
 # Enable logical decoding for CDC
+
 wal_level = logical
 
 # Retain enough WAL segments for CDC to read

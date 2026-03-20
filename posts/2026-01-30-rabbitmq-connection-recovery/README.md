@@ -513,6 +513,7 @@ class ResilientRabbitMQ:
 
 
 # Usage
+
 rabbit = ResilientRabbitMQ(
     host='rabbitmq.example.com',
     username='app',

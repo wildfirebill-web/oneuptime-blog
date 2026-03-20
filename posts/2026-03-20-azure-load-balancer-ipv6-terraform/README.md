@@ -12,6 +12,7 @@ Azure Standard Load Balancer supports dual-stack configurations with separate IP
 
 ```hcl
 # public-ips.tf
+
 resource "azurerm_public_ip" "lb_ipv4" {
   name                = "pip-lb-ipv4"
   location            = azurerm_resource_group.main.location

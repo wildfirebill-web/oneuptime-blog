@@ -1,4 +1,4 @@
-# How to Configure S3 Backend with DynamoDB Locking in OpenTofu
+# How to Configure S3 Backend with DynamoDB Locking in OpenTofu (2)
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -14,6 +14,7 @@ State locking prevents multiple OpenTofu processes from modifying the same state
 
 ```hcl
 # dynamodb.tf
+
 resource "aws_dynamodb_table" "terraform_locks" {
   name         = "terraform-state-locks"
   billing_mode = "PAY_PER_REQUEST"  # No capacity planning needed

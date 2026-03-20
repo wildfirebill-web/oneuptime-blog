@@ -152,4 +152,4 @@ tofu apply tfplan
 
 ## Summary
 
-Vertex AI endpoints provide managed online prediction with traffic splitting for safe model rollouts. OpenTofu manages endpoint creation, model registration, and deployment configurations — enabling reproducible, version-controlled ML model serving.
+Vertex AI endpoints provide managed online prediction with traffic splitting for safe model rollouts. OpenTofu manages endpoint creation, model registration, and deployment configurations - enabling reproducible, version-controlled ML model serving.

@@ -12,6 +12,7 @@ Visibility into VPN tunnel traffic helps with capacity planning, troubleshooting
 
 ```bash
 # Show all peers, handshake times, and transfer bytes
+
 sudo wg show
 
 # Output includes:
@@ -33,7 +34,7 @@ sudo wg show wg0 dump
 
 ```bash
 #!/bin/bash
-# monitor-wg.sh — Log WireGuard peer stats every 30 seconds
+# monitor-wg.sh - Log WireGuard peer stats every 30 seconds
 
 while true; do
     TIMESTAMP=$(date -u +"%Y-%m-%dT%H:%M:%SZ")

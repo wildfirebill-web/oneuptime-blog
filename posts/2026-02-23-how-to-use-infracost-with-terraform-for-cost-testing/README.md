@@ -25,6 +25,7 @@ Install Infracost on your system:
 
 ```bash
 # macOS with Homebrew
+
 brew install infracost
 
 # Linux

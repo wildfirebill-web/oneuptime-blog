@@ -1,4 +1,4 @@
-# Portainer vs Dokku: PaaS Comparison for Self-Hosters
+# Portainer vs Dokku: PaaS Comparison for Self-Hosters - Paas Self Hosters
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -12,16 +12,17 @@ Dokku is a self-hosted PaaS built on Docker that replicates the Heroku `git push
 
 ## Deployment Approach
 
-**Dokku**: Git push to deploy — like Heroku on your own server.
+**Dokku**: Git push to deploy - like Heroku on your own server.
 
 ```bash
 # Dokku deployment workflow
+
 git remote add dokku dokku@server.com:myapp
 git push dokku main
 # Dokku builds with buildpacks, deploys, configures nginx, done
 ```
 
-**Portainer**: Deploy via UI, API, or webhooks — requires Docker images or Compose files.
+**Portainer**: Deploy via UI, API, or webhooks - requires Docker images or Compose files.
 
 ```bash
 # Portainer deployment workflow
@@ -61,9 +62,9 @@ dokku postgres:create mydb
 dokku postgres:link mydb myapp
 ```
 
-- **Buildpack support** — auto-detects language, builds without Dockerfile
-- **Procfile support** — define web/worker processes like Heroku
-- **Plugin ecosystem** — Postgres, Redis, MongoDB, Let's Encrypt plugins
+- **Buildpack support** - auto-detects language, builds without Dockerfile
+- **Procfile support** - define web/worker processes like Heroku
+- **Plugin ecosystem** - Postgres, Redis, MongoDB, Let's Encrypt plugins
 
 ## Portainer Strengths
 

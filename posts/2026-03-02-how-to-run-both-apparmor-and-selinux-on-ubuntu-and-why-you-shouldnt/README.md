@@ -25,6 +25,7 @@ Since Linux kernel 4.15, a limited form of LSM stacking is supported. Multiple L
 
 ```bash
 # See what LSMs are active
+
 cat /sys/kernel/security/lsm
 
 # On a default Ubuntu system with AppArmor:

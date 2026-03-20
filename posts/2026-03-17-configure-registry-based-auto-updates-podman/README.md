@@ -25,6 +25,7 @@ The `registry` auto-update policy is the most common approach. Podman checks the
 
 ```ini
 # ~/.config/containers/systemd/api.container
+
 [Unit]
 Description=API server with registry auto-update
 

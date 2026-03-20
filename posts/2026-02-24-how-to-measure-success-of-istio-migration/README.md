@@ -18,6 +18,7 @@ You cannot measure improvement without a baseline. Capture these metrics before 
 
 ```bash
 # Record current error rates
+
 kubectl top pods --all-namespaces --sort-by=cpu > baseline-resource-usage.txt
 
 # Export Prometheus metrics snapshot

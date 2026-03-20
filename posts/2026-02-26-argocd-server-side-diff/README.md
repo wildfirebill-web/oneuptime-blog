@@ -119,6 +119,7 @@ The dry-run request looks like this under the hood:
 
 ```bash
 # Conceptually, ArgoCD does this:
+
 kubectl apply -f manifest.yaml \
   --dry-run=server \
   --server-side \

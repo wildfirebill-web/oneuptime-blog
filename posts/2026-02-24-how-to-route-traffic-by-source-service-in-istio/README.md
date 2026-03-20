@@ -271,6 +271,7 @@ Send requests from different services and verify routing:
 
 ```bash
 # Check routing from batch-processor
+
 kubectl exec deploy/batch-processor -c batch-processor -- curl -s http://recommendation-service.default.svc.cluster.local/version
 
 # Check routing from mobile-gateway

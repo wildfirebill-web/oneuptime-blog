@@ -86,6 +86,7 @@ Define a clear process for ACL requests.
 
 ```yaml
 # acl-request.yaml
+
 apiVersion: kafka.acl/v1
 kind: AclRequest
 metadata:

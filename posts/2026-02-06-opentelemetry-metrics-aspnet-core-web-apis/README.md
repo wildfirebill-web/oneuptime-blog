@@ -26,6 +26,7 @@ Start by creating an ASP.NET Core Web API and adding the necessary OpenTelemetry
 
 ```bash
 # Create a new Web API project
+
 dotnet new webapi -n MetricsDemo
 cd MetricsDemo
 

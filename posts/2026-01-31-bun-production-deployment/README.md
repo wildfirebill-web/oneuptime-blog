@@ -175,6 +175,7 @@ function generateMetrics(): string {
   const memUsage = process.memoryUsage();
   return `
 # HELP bun_memory_heap_used_bytes Heap memory used
+
 # TYPE bun_memory_heap_used_bytes gauge
 bun_memory_heap_used_bytes ${memUsage.heapUsed}
 

@@ -29,6 +29,7 @@ Cilium supports a specific range of Kubernetes versions. Check your cluster vers
 
 ```bash
 # Check Kubernetes server version
+
 kubectl version --short
 
 # Check Cilium's supported Kubernetes version range

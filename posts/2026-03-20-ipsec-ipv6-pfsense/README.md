@@ -22,7 +22,7 @@ pfSense uses strongSwan under the hood for IPsec. Configuring IPv6 IPsec in pfSe
 
 Navigate to **VPN → IPsec → Tunnels → Add P1**:
 
-```
+```text
 General Information:
   Key Exchange Version: IKEv2
   Internet Protocol:    IPv6
@@ -51,13 +51,13 @@ Advanced Options:
 
 Click **Show Phase 2 Entries** → **Add P2**:
 
-```
+```text
 General Information:
   Mode: Tunnel IPv6
 
 Networks:
-  Local Network:  Network — 2001:db8:site1::/48
-  Remote Network: Network — 2001:db8:site2::/48
+  Local Network:  Network - 2001:db8:site1::/48
+  Remote Network: Network - 2001:db8:site2::/48
 
 Phase 2 Proposal (SA/Key Exchange):
   Encryption Algorithms: AES256-GCM 128-bit
@@ -77,7 +77,7 @@ Navigate to **VPN → IPsec → Status** and click **Connect P1 and P2s** to ini
 
 Navigate to **Firewall → Rules → WAN**:
 
-```
+```text
 Add rule:
   Action:     Pass
   Interface:  WAN
@@ -106,7 +106,7 @@ Add rule:
 
 Navigate to **Firewall → Rules → IPsec**:
 
-```
+```text
 Add rule:
   Action:     Pass
   Interface:  IPsec
@@ -121,6 +121,7 @@ pfSense runs FreeBSD. You can verify IPsec from the command line:
 
 ```bash
 # SSH to pfSense
+
 ssh admin@pfsense.local
 
 # Show IPsec status
@@ -157,7 +158,7 @@ ping6 2001:db8:site2::1
 
 If routes are missing, add static routes under **System → Routing → Static Routes**:
 
-```
+```text
 Destination Network: 2001:db8:site2::/48 / 48
 Gateway: Create a new IPv6 gateway via Tunnel interface
 ```

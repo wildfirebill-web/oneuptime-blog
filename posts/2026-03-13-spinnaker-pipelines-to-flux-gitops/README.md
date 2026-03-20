@@ -23,6 +23,7 @@ Spinnaker is a mature, multi-cloud CD platform with rich pipeline primitives: st
 
 ```bash
 # Export all Spinnaker applications and pipelines via the Gate API
+
 curl -X GET https://spinnaker-gate.your-org.com/applications \
   -H "Authorization: Bearer $SPINNAKER_TOKEN" > spinnaker-apps.json
 

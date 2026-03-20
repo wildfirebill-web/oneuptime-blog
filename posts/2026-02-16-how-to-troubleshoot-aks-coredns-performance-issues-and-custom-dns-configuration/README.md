@@ -25,6 +25,7 @@ Start by checking the CoreDNS pods themselves.
 
 ```bash
 # Check CoreDNS pod status and resource usage
+
 kubectl get pods -n kube-system -l k8s-app=kube-dns -o wide
 
 # Check CPU and memory usage of CoreDNS pods

@@ -216,6 +216,7 @@ Any system that can make HTTP requests can trigger the generic receiver. A simpl
 WEBHOOK_URL="https://flux-webhook.yourdomain.com/hook/abc123..."
 
 # Trigger after deployment artifact is ready
+
 curl -s -o /dev/null -w "%{http_code}" \
   -X POST "$WEBHOOK_URL" \
   -H "Content-Type: application/json" \

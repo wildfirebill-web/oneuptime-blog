@@ -27,6 +27,7 @@ Start with the environment and its dependencies:
 
 ```hcl
 # versions.tf
+
 terraform {
   required_version = ">= 1.5.0"
 

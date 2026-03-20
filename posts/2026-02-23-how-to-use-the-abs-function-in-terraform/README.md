@@ -16,6 +16,7 @@ The `abs` function takes a single number as input and returns its absolute value
 
 ```hcl
 # abs(number)
+
 # Returns the absolute value
 abs(-5)   # Returns: 5
 abs(5)    # Returns: 5

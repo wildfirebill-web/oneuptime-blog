@@ -40,6 +40,7 @@ The first thing to verify is that all MetalLB components are up and healthy. Met
 
 ```bash
 # List all pods in the metallb-system namespace
+
 # You should see one controller pod and one speaker pod per node
 kubectl get pods -n metallb-system -o wide
 ```

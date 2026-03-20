@@ -27,6 +27,7 @@ Create a Kubernetes secret with your repository credentials.
 
 ```bash
 # Create a secret with basic auth credentials for the Helm repository
+
 kubectl create secret generic helm-repo-creds \
   --namespace flux-system \
   --from-literal=username=my-username \

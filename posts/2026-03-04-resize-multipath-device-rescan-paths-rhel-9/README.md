@@ -20,6 +20,7 @@ Rescan each SCSI path so the host detects the new LUN size:
 
 ```bash
 # Find all SCSI devices for the multipath device
+
 sudo multipath -ll mpatha
 
 # Rescan each path device

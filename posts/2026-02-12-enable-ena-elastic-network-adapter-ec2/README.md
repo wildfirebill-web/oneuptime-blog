@@ -33,6 +33,7 @@ This command checks if ENA support is enabled for a specific instance:
 
 ```bash
 # Check ENA attribute on an instance
+
 aws ec2 describe-instances \
   --instance-ids i-0abcd1234efgh5678 \
   --query 'Reservations[].Instances[].EnaSupport'

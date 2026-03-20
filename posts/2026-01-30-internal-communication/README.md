@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Incident Management, Communication, SRE, Team
+Tags: Incident Management, Communication, SRE, Teams
 
 Description: Learn how to establish effective internal communication during incidents.
 
@@ -204,6 +204,7 @@ stateDiagram-v2
 
 ```python
 # incident_channel_manager.py
+
 import asyncio
 from datetime import datetime, timedelta
 from typing import Optional

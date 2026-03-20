@@ -6,12 +6,13 @@ Tags: iptables, Whitelist, Linux, Security, Firewall, Access Control
 
 Description: Create iptables allowlists to restrict access to services from specific trusted IP addresses or subnets, blocking all other sources by default.
 
-Whitelisting — allowing only known trusted IPs — is the most restrictive and secure approach to access control. For sensitive services like SSH, admin interfaces, and databases, only accepting connections from specific IPs dramatically reduces attack surface.
+Whitelisting - allowing only known trusted IPs - is the most restrictive and secure approach to access control. For sensitive services like SSH, admin interfaces, and databases, only accepting connections from specific IPs dramatically reduces attack surface.
 
 ## Whitelist a Single IP for SSH
 
 ```bash
 # Allow SSH only from your home/office IP
+
 sudo iptables -A INPUT -p tcp --dport 22 \
   -s 203.0.113.10 -j ACCEPT
 
@@ -40,7 +41,7 @@ sudo iptables -A INPUT -p tcp --dport 22 \
 
 ```bash
 #!/bin/bash
-# whitelist-ssh.sh — Allow SSH only from trusted IPs
+# whitelist-ssh.sh - Allow SSH only from trusted IPs
 
 TRUSTED_IPS=(
     "203.0.113.10"    # Home IP
@@ -83,12 +84,12 @@ sudo iptables -A INPUT -p tcp --dport 22 -j DROP
 ## Whitelist an Admin Interface
 
 ```bash
-# Admin panel on port 8443 — only internal network
+# Admin panel on port 8443 - only internal network
 sudo iptables -A INPUT -p tcp --dport 8443 \
   -s 10.0.0.0/8 -j ACCEPT
 sudo iptables -A INPUT -p tcp --dport 8443 -j DROP
 
-# Database port — only from application servers
+# Database port - only from application servers
 sudo iptables -A INPUT -p tcp --dport 5432 \
   -s 10.100.1.0/24 -j ACCEPT
 sudo iptables -A INPUT -p tcp --dport 5432 -j DROP
@@ -97,11 +98,11 @@ sudo iptables -A INPUT -p tcp --dport 5432 -j DROP
 ## Order Matters: Allow Before Deny
 
 ```bash
-# WRONG order — allow rule comes after DROP, never matches:
+# WRONG order - allow rule comes after DROP, never matches:
 sudo iptables -A INPUT -p tcp --dport 22 -j DROP
 sudo iptables -A INPUT -p tcp --dport 22 -s 10.0.0.0/8 -j ACCEPT  # TOO LATE
 
-# CORRECT order — allow first, then drop:
+# CORRECT order - allow first, then drop:
 sudo iptables -A INPUT -p tcp --dport 22 -s 10.0.0.0/8 -j ACCEPT  # First
 sudo iptables -A INPUT -p tcp --dport 22 -j DROP                   # Last
 
@@ -127,4 +128,4 @@ sudo ipset del whitelist 203.0.113.10   # Remove
 # No iptables rule changes needed!
 ```
 
-IP whitelisting provides the highest level of access control — even if credentials are stolen, an attacker can't use them from an unauthorized IP address.
+IP whitelisting provides the highest level of access control - even if credentials are stolen, an attacker can't use them from an unauthorized IP address.

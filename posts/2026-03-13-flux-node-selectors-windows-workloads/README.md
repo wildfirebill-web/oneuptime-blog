@@ -29,6 +29,7 @@ Windows nodes in Kubernetes carry specific labels that you can use for targeting
 
 ```bash
 # List all labels on a Windows node
+
 kubectl describe node windows-worker-1 | grep -A 30 Labels
 
 # Key labels for Windows targeting:

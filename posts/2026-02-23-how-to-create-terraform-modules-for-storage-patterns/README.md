@@ -16,6 +16,7 @@ S3 is the most common storage service on AWS, and a well-designed module should 
 
 ```hcl
 # modules/s3-bucket/variables.tf
+
 variable "name" {
   description = "Name of the S3 bucket"
   type        = string

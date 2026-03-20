@@ -14,6 +14,7 @@ Windows Server DHCP can be automated with Ansible using PowerShell's `DhcpServer
 
 ```yaml
 # requirements.yml
+
 collections:
   - ansible.windows
   - community.windows

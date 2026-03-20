@@ -22,6 +22,7 @@ If installing from scratch, use the Alpine Extended ISO (includes networking too
 
 ```bash
 # After installation, update and install required packages
+
 apk update && apk upgrade
 
 # Install required packages

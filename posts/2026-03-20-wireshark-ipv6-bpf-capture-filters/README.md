@@ -21,6 +21,7 @@ Capture filters (BPF) are applied before packets are stored in Wireshark's buffe
 
 ```bpf
 # Capture all IPv6 traffic
+
 ip6
 
 # Capture only IPv6 traffic (no IPv4)
@@ -156,4 +157,4 @@ Or save frequently used filters:
 2. Select **Manage Capture Filters**
 3. Add entries with names like "IPv6 HTTPS" and filter `ip6 and tcp port 443`
 
-BPF capture filters are the most efficient tool for focusing Wireshark on IPv6 traffic of interest — they prevent buffer overflows during long captures and dramatically reduce the amount of irrelevant data to analyze.
+BPF capture filters are the most efficient tool for focusing Wireshark on IPv6 traffic of interest - they prevent buffer overflows during long captures and dramatically reduce the amount of irrelevant data to analyze.

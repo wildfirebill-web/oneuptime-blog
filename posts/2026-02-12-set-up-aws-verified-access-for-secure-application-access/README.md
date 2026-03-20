@@ -51,6 +51,7 @@ First, set up the connection to your identity provider.
 
 ```bash
 # Create an OIDC trust provider (using Okta as an example)
+
 aws ec2 create-verified-access-trust-provider \
     --trust-provider-type user \
     --user-trust-provider-type oidc \

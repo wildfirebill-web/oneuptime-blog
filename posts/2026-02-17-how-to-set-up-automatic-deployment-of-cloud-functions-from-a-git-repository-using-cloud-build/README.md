@@ -41,6 +41,7 @@ You need:
 
 ```bash
 # Enable the required APIs
+
 gcloud services enable \
   cloudbuild.googleapis.com \
   cloudfunctions.googleapis.com \

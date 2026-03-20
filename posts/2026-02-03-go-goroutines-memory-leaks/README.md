@@ -599,6 +599,7 @@ Then analyze from the command line:
 
 ```bash
 # View goroutine stacks in terminal
+
 curl http://localhost:6060/debug/pprof/goroutine?debug=1
 
 # Download and analyze with go tool

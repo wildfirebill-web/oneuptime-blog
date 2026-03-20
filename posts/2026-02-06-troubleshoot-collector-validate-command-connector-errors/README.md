@@ -97,6 +97,7 @@ Write a script that checks connector wiring:
 ```bash
 #!/bin/bash
 # validate-connectors.sh
+
 # Validates that connector pipeline types are correct
 
 CONFIG_FILE=$1

@@ -16,6 +16,7 @@ RHEL is a fully supported guest operating system on VMware vSphere and Microsoft
 
 ```bash
 # When creating the VM in vSphere:
+
 # - Guest OS Family: Linux
 # - Guest OS Version: Red Hat Enterprise Linux 9 (64-bit)
 # - VMware will automatically configure compatible virtual hardware

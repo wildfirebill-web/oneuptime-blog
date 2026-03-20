@@ -115,6 +115,7 @@ List all available channels using PowerShell:
 
 ```powershell
 # List all event log channels
+
 Get-WinEvent -ListLog * | Select-Object LogName, RecordCount, IsEnabled
 
 # Find channels with recent activity
@@ -633,7 +634,7 @@ service:
       exporters: [otlp]
 ```
 
-## Resource Attributes
+Resource Attributes
 
 Add contextual information to logs.
 

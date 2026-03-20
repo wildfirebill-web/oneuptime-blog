@@ -16,6 +16,7 @@ This is the recommended approach for servers where Terraform will be used consis
 
 ```bash
 # Install prerequisites
+
 sudo apt update
 sudo apt install -y gnupg software-properties-common curl
 

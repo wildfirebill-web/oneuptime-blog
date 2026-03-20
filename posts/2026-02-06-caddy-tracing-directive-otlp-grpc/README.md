@@ -14,6 +14,7 @@ Add the `tracing` directive to your Caddyfile:
 
 ```text
 # Caddyfile
+
 :8080 {
     # Enable tracing for this site with a custom span name
     tracing {

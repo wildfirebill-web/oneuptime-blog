@@ -45,6 +45,7 @@ First, create the destination table. The schema needs to match the structure of 
 
 ```bash
 # Create a dataset
+
 bq mk --dataset MY_PROJECT:streaming_data
 
 # Create the destination table

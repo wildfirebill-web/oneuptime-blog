@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Troubleshooting, Agent, Docker, Duplicate Containers, Endpoints
+Tags: Portainer, Troubleshooting, Agent, Docker, Duplicate Containers, Endpoint
 
 Description: Learn how to fix duplicate containers, volumes, or networks appearing in Portainer when using Agent endpoints, caused by multiple agent registrations or snapshot conflicts.
 
 ---
 
-Duplicate resources in Portainer — seeing the same container listed twice — typically happen when the same Docker host is registered as multiple environments, or when the Portainer Agent is running multiple instances on the same host.
+Duplicate resources in Portainer - seeing the same container listed twice - typically happen when the same Docker host is registered as multiple environments, or when the Portainer Agent is running multiple instances on the same host.
 
 ## Step 1: Identify Duplicate Environments
 
@@ -18,6 +18,7 @@ In Portainer go to **Environments**. Look for two environments pointing to the s
 
 ```bash
 # On the Docker host, check if multiple agent instances are running
+
 docker ps | grep portainer_agent
 
 # If you see more than one agent container, remove the extras

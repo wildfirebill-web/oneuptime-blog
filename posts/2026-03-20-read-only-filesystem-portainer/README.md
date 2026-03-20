@@ -1,4 +1,4 @@
-# How to Run Portainer with Read-Only Root Filesystem
+# How to Run Portainer with Read-Only Root Filesystem - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,12 +8,13 @@ Description: Harden containers by enabling read-only root filesystems, using tmp
 
 ## Introduction
 
-Running containers with a read-only root filesystem is one of the most effective container security hardening techniques. An attacker who gains code execution cannot modify system binaries, write persistence mechanisms, or install tools — because the filesystem is immutable. This guide covers enabling read-only root filesystems for containers in Portainer, handling directories that genuinely need writes, and validating the configuration.
+Running containers with a read-only root filesystem is one of the most effective container security hardening techniques. An attacker who gains code execution cannot modify system binaries, write persistence mechanisms, or install tools - because the filesystem is immutable. This guide covers enabling read-only root filesystems for containers in Portainer, handling directories that genuinely need writes, and validating the configuration.
 
 ## Step 1: Enable Read-Only Root Filesystem
 
 ```yaml
 # docker-compose.yml - Read-only root filesystem
+
 version: "3.8"
 
 services:
@@ -166,4 +167,4 @@ volumes:
 
 ## Conclusion
 
-Read-only root filesystems are a defense-in-depth security control that limits what an attacker can do after gaining container access. The key to success is identifying which directories genuinely need writes — usually `/tmp`, `/var/run`, and application-specific log/data directories — and handling them with tmpfs or named volumes. Start by testing with `--read-only` manually to identify write failures, then add the appropriate tmpfs mounts. Portainer shows the security configuration of each container in its detail view, making it easy to audit which containers have read-only protection enabled.
+Read-only root filesystems are a defense-in-depth security control that limits what an attacker can do after gaining container access. The key to success is identifying which directories genuinely need writes - usually `/tmp`, `/var/run`, and application-specific log/data directories - and handling them with tmpfs or named volumes. Start by testing with `--read-only` manually to identify write failures, then add the appropriate tmpfs mounts. Portainer shows the security configuration of each container in its detail view, making it easy to audit which containers have read-only protection enabled.

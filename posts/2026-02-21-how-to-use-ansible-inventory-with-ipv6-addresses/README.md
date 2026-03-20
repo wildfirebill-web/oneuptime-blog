@@ -20,6 +20,7 @@ In the INI inventory format, IPv6 addresses must be wrapped in square brackets:
 
 ```ini
 # inventory/hosts.ini
+
 # IPv6 addresses in INI format need square brackets
 [webservers]
 web01 ansible_host=[2001:db8:1::10]

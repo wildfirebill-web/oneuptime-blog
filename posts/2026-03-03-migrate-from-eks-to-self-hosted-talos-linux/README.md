@@ -24,6 +24,7 @@ The biggest challenge in leaving EKS is untangling your AWS service dependencies
 
 ```bash
 # Find all AWS Load Balancer Controller resources
+
 kubectl get ingress --all-namespaces -o json | \
   jq '.items[] | select(.metadata.annotations["kubernetes.io/ingress.class"]=="alb")'
 

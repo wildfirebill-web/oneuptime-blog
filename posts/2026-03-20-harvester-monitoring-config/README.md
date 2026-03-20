@@ -1,4 +1,4 @@
-# How to Configure Harvester Monitoring
+# How to Configure Harvester Monitoring - Config
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -14,7 +14,7 @@ Harvester includes built-in Prometheus and Grafana for monitoring cluster infras
 
 ## Harvester Monitoring Architecture
 
-```
+```text
 ┌─────────────────────────────────────┐
 │           Harvester Cluster         │
 │                                     │
@@ -41,6 +41,7 @@ Harvester monitoring is deployed via the built-in Rancher monitoring stack:
 
 ```bash
 # Check if monitoring is enabled
+
 kubectl get pods -n cattle-monitoring-system
 
 # If not present, enable via Harvester UI:
@@ -63,10 +64,10 @@ kubectl port-forward -n cattle-monitoring-system \
 ```
 
 Default dashboards include:
-- **Harvester Overview** — cluster-wide resource usage
-- **Node Exporter** — per-node CPU, memory, disk, network
-- **Longhorn** — volume and replica health
-- **KubeVirt** — VM resource usage
+- **Harvester Overview** - cluster-wide resource usage
+- **Node Exporter** - per-node CPU, memory, disk, network
+- **Longhorn** - volume and replica health
+- **KubeVirt** - VM resource usage
 
 ---
 
@@ -197,6 +198,6 @@ spec:
 
 ## Best Practices
 
-- Create alerts for Longhorn disk space (< 20% free) and VM memory pressure — these are the most common causes of production incidents in Harvester environments.
-- Export metrics to a long-term storage system (Thanos, Cortex, or Mimir) — Prometheus in Harvester only retains 15 days of metrics by default.
+- Create alerts for Longhorn disk space (< 20% free) and VM memory pressure - these are the most common causes of production incidents in Harvester environments.
+- Export metrics to a long-term storage system (Thanos, Cortex, or Mimir) - Prometheus in Harvester only retains 15 days of metrics by default.
 - Use the KubeVirt Grafana dashboard to track VM resource utilization over time and plan capacity for new VMs.

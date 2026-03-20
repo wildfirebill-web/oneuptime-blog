@@ -30,6 +30,7 @@ Install the Infracost CLI on your development machine. The tool is available for
 
 ```bash
 # Install Infracost using Homebrew package manager
+
 brew install infracost
 
 # Verify the installation succeeded

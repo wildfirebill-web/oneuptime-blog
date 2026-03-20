@@ -16,6 +16,7 @@ JunOS's structured approach to configuration means that Ansible can work with it
 
 ```bash
 # Install the Juniper JunOS collection
+
 ansible-galaxy collection install junipernetworks.junos
 ansible-galaxy collection install ansible.netcommon
 

@@ -18,6 +18,7 @@ Here is a basic sequential pipeline:
 
 ```yaml
 # Sequential build pipeline - each step waits for the previous one
+
 steps:
   # Step 1: Install dependencies
   - name: 'node:20'

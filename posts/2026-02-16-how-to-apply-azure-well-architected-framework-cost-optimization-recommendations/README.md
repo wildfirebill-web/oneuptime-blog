@@ -30,6 +30,7 @@ VM right-sizing is almost always the biggest quick win. Most teams overprovision
 
 ```bash
 # Get average CPU utilization for all VMs in a resource group over the past 30 days
+
 # VMs consistently below 20% CPU are candidates for downsizing
 az monitor metrics list \
   --resource "/subscriptions/{sub-id}/resourceGroups/{rg}/providers/Microsoft.Compute/virtualMachines/{vm-name}" \

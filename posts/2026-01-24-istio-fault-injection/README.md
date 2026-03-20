@@ -251,6 +251,7 @@ Similarly, test your retry configuration by injecting failures:
 
 ```yaml
 # First, configure retries on the client side
+
 apiVersion: networking.istio.io/v1beta1
 kind: VirtualService
 metadata:

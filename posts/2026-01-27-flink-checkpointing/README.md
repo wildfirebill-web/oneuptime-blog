@@ -86,6 +86,7 @@ public class FlinkCheckpointingExample {
 # flink-conf.yaml - Checkpoint configuration
 
 # Enable checkpointing with 10-second interval (in milliseconds)
+
 execution.checkpointing.interval: 10000
 
 # Checkpointing mode: exactly_once or at_least_once

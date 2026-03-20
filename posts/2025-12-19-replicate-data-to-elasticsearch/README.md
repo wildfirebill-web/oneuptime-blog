@@ -62,6 +62,7 @@ Create a Logstash configuration file:
 
 ```ruby
 # postgres-to-elasticsearch.conf
+
 input {
   jdbc {
     jdbc_driver_library => "/path/to/postgresql-42.2.5.jar"

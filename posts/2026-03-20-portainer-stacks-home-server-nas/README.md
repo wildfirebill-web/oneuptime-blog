@@ -40,6 +40,7 @@ In Portainer, click **Stacks** in the left sidebar, then **Add stack**.
 version: "3.8"
 
 # Media server stack: Jellyfin + Radarr + Sonarr + Prowlarr
+
 services:
   jellyfin:
     image: jellyfin/jellyfin:latest
@@ -214,7 +215,7 @@ To update container images in a stack:
 
 For consistent organization on NAS devices:
 
-```
+```text
 /volume1/Docker/          - Container configs (small, fast)
 /volume1/media/           - Media library (large)
 /volume1/downloads/       - Download directory
@@ -225,4 +226,4 @@ Use this convention in all your stacks for predictable paths.
 
 ## Conclusion
 
-Portainer Stacks transform NAS Docker management from single-container deployments into full application orchestration. By defining your entire application — including databases, caches, and supporting services — in a single compose file, you get reproducible deployments that are easy to update, version-control, and share. Combined with Portainer's environment variables, you can keep sensitive credentials out of your compose files while maintaining flexibility.
+Portainer Stacks transform NAS Docker management from single-container deployments into full application orchestration. By defining your entire application - including databases, caches, and supporting services - in a single compose file, you get reproducible deployments that are easy to update, version-control, and share. Combined with Portainer's environment variables, you can keep sensitive credentials out of your compose files while maintaining flexibility.

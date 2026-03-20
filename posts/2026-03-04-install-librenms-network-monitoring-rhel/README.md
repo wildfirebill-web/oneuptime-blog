@@ -14,6 +14,7 @@ LibreNMS is a community-driven network monitoring system that auto-discovers net
 
 ```bash
 # Install EPEL
+
 sudo dnf install -y epel-release
 
 # Install required packages

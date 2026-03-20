@@ -40,6 +40,7 @@ resource "azurerm_resource_group" "main" {
 
 ```hcl
 # Create an App Service Plan to autoscale
+
 resource "azurerm_service_plan" "main" {
   name                = "asp-production"
   resource_group_name = azurerm_resource_group.main.name

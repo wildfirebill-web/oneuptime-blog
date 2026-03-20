@@ -44,6 +44,7 @@ When you run `terraform apply` without specifying these variables, Terraform use
 
 ```hcl
 # Default to an empty list
+
 variable "additional_security_groups" {
   description = "Additional security group IDs to attach"
   type        = list(string)

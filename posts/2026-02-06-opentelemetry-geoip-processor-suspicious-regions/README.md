@@ -18,6 +18,7 @@ You need a MaxMind GeoLite2 database file. You can get a free one by signing up 
 
 ```bash
 # Download and extract the GeoLite2-City database
+
 wget "https://download.maxmind.com/app/geoip_download?edition_id=GeoLite2-City&license_key=YOUR_KEY&suffix=tar.gz" \
   -O GeoLite2-City.tar.gz
 tar -xzf GeoLite2-City.tar.gz

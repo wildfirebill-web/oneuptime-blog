@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Java, NIO, Non-Blocking, Selector, IPv4, Sockets, Networking
+Tags: Java, NIO, Non-Blocking, Selectors, IPv4, Sockets, Networking
 
 Description: Learn how to implement non-blocking IPv4 socket I/O in Java using NIO Selector to handle multiple connections in a single thread efficiently.
 

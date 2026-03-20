@@ -74,6 +74,7 @@ Install the required libraries for Python and Node.js implementations:
 
 ```bash
 # Python
+
 pip install pika
 
 # Node.js

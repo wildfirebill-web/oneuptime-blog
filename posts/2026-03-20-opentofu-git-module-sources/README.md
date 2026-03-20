@@ -8,7 +8,7 @@ Description: Learn how to reference modules stored in Git repositories in OpenTo
 
 ## Introduction
 
-Git repository module sources allow you to reference OpenTofu modules stored in any Git repository — public or private. This is ideal for sharing modules across teams and repositories with proper version control via Git tags and refs.
+Git repository module sources allow you to reference OpenTofu modules stored in any Git repository - public or private. This is ideal for sharing modules across teams and repositories with proper version control via Git tags and refs.
 
 ## Syntax
 
@@ -59,7 +59,7 @@ module "security_groups" {
 
 ```hcl
 module "experimental" {
-  # Branches change over time — use tags for production
+  # Branches change over time - use tags for production
   source = "git::https://github.com/myorg/modules.git//new-feature?ref=feature/my-feature"
 
   name = "test"
@@ -85,6 +85,7 @@ Set the `GIT_ASKPASS` or `GIT_TERMINAL_PROMPT=0` environment variables, or confi
 ```bash
 git config --global credential.helper store
 # or
+
 export GITHUB_TOKEN=ghp_xxxxx
 ```
 

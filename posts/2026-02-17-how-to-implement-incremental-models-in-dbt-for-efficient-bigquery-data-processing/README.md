@@ -250,6 +250,7 @@ Sometimes you need to rebuild the entire table from scratch, even though the mod
 
 ```bash
 # Force a full rebuild of all incremental models
+
 dbt run --full-refresh
 
 # Full refresh a specific model

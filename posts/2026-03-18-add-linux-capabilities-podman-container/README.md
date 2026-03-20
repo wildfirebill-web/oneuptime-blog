@@ -22,6 +22,7 @@ Linux capabilities split the traditional root privilege into distinct units. Ins
 
 ```bash
 # List all available Linux capabilities on your system
+
 # The capsh utility is part of the libcap package
 capsh --print
 ```

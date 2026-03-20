@@ -74,6 +74,7 @@ ARM-based Lambda functions (Graviton2) are up to 20% cheaper with comparable or 
 
 ```hcl
 # Use Compute Optimizer recommendations
+
 # Start with a general-purpose instance
 resource "aws_instance" "app" {
   ami           = var.ami_id

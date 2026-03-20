@@ -565,6 +565,7 @@ When init containers fail, use these commands to diagnose issues.
 
 ```bash
 # View init container logs
+
 kubectl logs <pod-name> -c <init-container-name>
 
 # View init container logs from previous run

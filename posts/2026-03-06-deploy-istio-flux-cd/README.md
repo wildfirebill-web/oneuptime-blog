@@ -40,6 +40,7 @@ Create a HelmRepository source for the official Istio charts:
 
 ```yaml
 # istio-helm-repo.yaml
+
 # HelmRepository pointing to the official Istio Helm charts
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository

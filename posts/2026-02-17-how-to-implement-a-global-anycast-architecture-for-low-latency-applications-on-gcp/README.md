@@ -38,6 +38,7 @@ Deploy your application in multiple regions using Managed Instance Groups or Clo
 
 ```bash
 # Create instance templates in each target region
+
 gcloud compute instance-templates create app-template-us \
   --machine-type=e2-medium \
   --image-family=debian-11 \

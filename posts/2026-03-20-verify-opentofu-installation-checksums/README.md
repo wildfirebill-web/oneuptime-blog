@@ -1,4 +1,4 @@
-# How to Verify Your OpenTofu Installation with Checksums
+# How to Verify Your OpenTofu Installation with Checksums - Installation
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,17 +8,17 @@ Description: Learn how to verify the integrity of your OpenTofu binary by checki
 
 ---
 
-Verifying your OpenTofu installation ensures the binary you downloaded hasn't been tampered with during transit. OpenTofu provides SHA256 checksums and GPG-signed checksum files with every release. This guide walks through verification before installation — a security best practice, especially for CI/CD environments.
+Verifying your OpenTofu installation ensures the binary you downloaded hasn't been tampered with during transit. OpenTofu provides SHA256 checksums and GPG-signed checksum files with every release. This guide walks through verification before installation - a security best practice, especially for CI/CD environments.
 
 ---
 
 ## What OpenTofu Provides for Verification
 
 Each OpenTofu release includes:
-- `tofu_<version>_<os>_<arch>.zip` — the binary archive
-- `tofu_<version>_SHA256SUMS` — SHA256 checksum file
-- `tofu_<version>_SHA256SUMS.sig` — GPG signature of the checksum file
-- `tofu_<version>_SHA256SUMS.pem` — cosign certificate
+- `tofu_<version>_<os>_<arch>.zip` - the binary archive
+- `tofu_<version>_SHA256SUMS` - SHA256 checksum file
+- `tofu_<version>_SHA256SUMS.sig` - GPG signature of the checksum file
+- `tofu_<version>_SHA256SUMS.pem` - cosign certificate
 
 ---
 
@@ -29,6 +29,7 @@ TOFU_VERSION="1.9.0"
 OS="linux_amd64"  # change to your OS/arch: linux_arm64, darwin_amd64, windows_amd64
 
 # Download the binary archive
+
 curl -LO "https://github.com/opentofu/opentofu/releases/download/v${TOFU_VERSION}/tofu_${TOFU_VERSION}_${OS}.zip"
 
 # Download the checksum file
@@ -120,7 +121,7 @@ rm tofu_${TOFU_VERSION}_${OS}.zip tofu_${TOFU_VERSION}_SHA256SUMS*
 
 ```bash
 #!/bin/bash
-# install-opentofu-verified.sh — verified OpenTofu installation for CI/CD
+# install-opentofu-verified.sh - verified OpenTofu installation for CI/CD
 
 set -euo pipefail
 

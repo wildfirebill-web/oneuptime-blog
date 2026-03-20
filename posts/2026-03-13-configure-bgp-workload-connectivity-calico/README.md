@@ -53,6 +53,7 @@ On your upstream router, configure it to accept the pod CIDR prefix from Calico:
 
 ```bash
 # Example for a Linux router using Bird2
+
 # In bird.conf:
 protocol bgp calico_peer {
   local as 64513;

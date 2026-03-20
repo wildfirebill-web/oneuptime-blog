@@ -24,6 +24,7 @@ Here is what auto-instrumentation looks like in practice:
 
 ```bash
 # Java auto-instrumentation via agent
+
 # No code changes needed in the application
 java -javaagent:opentelemetry-javaagent.jar \
   -Dotel.service.name=payment-service \

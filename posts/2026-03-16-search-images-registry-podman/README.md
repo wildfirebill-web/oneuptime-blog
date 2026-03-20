@@ -20,6 +20,7 @@ Search for images by keyword across your configured registries.
 
 ```bash
 # Search for nginx images
+
 podman search nginx
 
 # Search for PostgreSQL images

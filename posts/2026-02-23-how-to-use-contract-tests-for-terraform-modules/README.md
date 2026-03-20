@@ -27,6 +27,7 @@ Start by documenting the contract your module exposes. This can be a simple list
 
 ```hcl
 # contracts/networking-module-contract.md
+
 # Networking Module Contract v2.1
 #
 # Required Inputs:

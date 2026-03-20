@@ -14,6 +14,7 @@ The `kubectl rollout` command is your primary tool for managing deployment updat
 
 ```bash
 # Available rollout commands
+
 kubectl rollout status    # Watch rollout progress
 kubectl rollout history   # View rollout history
 kubectl rollout pause     # Pause a rollout

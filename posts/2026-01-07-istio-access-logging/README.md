@@ -59,6 +59,7 @@ The following configuration enables access logging for all workloads in the mesh
 
 ```yaml
 # istio-configmap.yaml
+
 # This ConfigMap configures the Istio mesh with global access logging settings.
 # The accessLogFile field specifies where Envoy should write access logs.
 # Using /dev/stdout ensures logs are captured by the container runtime.

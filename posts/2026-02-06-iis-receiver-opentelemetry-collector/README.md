@@ -37,6 +37,7 @@ Verify IIS is running:
 
 ```powershell
 # Check IIS service status
+
 Get-Service W3SVC | Select-Object Status, StartType
 
 # List IIS sites

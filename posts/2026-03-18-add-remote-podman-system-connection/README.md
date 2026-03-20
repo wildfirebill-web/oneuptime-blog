@@ -20,6 +20,7 @@ Before adding a remote connection, ensure both local and remote hosts are ready.
 
 ```bash
 # On your local machine: verify Podman is installed
+
 podman --version
 
 # On the remote host: verify Podman is installed

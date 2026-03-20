@@ -45,6 +45,7 @@ Create the Flux source and reconciliation objects:
 
 ```yaml
 # clusters/production/apps/myapp-source.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: GitRepository
 metadata:

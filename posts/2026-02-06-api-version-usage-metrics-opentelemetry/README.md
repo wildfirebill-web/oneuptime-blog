@@ -162,6 +162,7 @@ With the metrics flowing, build a dashboard that answers these questions:
 # Queries for your metrics backend (PromQL examples)
 
 # Traffic percentage by version
+
 sum(rate(api_requests_by_version_total[5m])) by (api_version)
 / ignoring(api_version)
 sum(rate(api_requests_by_version_total[5m]))

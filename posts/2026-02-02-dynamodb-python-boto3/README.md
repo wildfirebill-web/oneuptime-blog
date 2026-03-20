@@ -59,6 +59,7 @@ The following code demonstrates how to configure boto3 for DynamoDB access. You 
 
 ```python
 # dynamodb_setup.py
+
 # Import boto3 and configure AWS credentials
 import boto3
 from botocore.config import Config

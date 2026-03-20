@@ -40,6 +40,7 @@ While you can initialize a whole disk as a PV without partitioning, many sysadmi
 
 ```bash
 # Initialize /dev/sdb directly as a Physical Volume
+
 sudo pvcreate /dev/sdb
 ```
 

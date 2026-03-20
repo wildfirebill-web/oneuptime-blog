@@ -18,6 +18,7 @@ Before cleaning, understand where the space goes:
 
 ```bash
 # Show Docker disk usage summary
+
 docker system df
 
 # Show detailed breakdown including individual images and containers

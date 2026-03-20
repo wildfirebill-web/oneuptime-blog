@@ -42,6 +42,7 @@ Apply it to your repository:
 
 ```bash
 # Save the policy to a file
+
 cat > cleanup-policy.json << 'EOF'
 [
   {

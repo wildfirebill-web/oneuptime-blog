@@ -30,6 +30,7 @@ Verify snapshot integrity before restoration:
 
 ```bash
 # Check snapshot status
+
 ETCDCTL_API=3 etcdctl snapshot status snapshot.db -w table
 
 # Output shows:

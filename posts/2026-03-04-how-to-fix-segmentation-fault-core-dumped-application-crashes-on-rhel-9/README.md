@@ -14,6 +14,7 @@ Segmentation faults indicate a program tried to access memory it should not. Her
 
 ```bash
 # Check if core dumps are enabled
+
 ulimit -c
 # Enable if zero
 ulimit -c unlimited

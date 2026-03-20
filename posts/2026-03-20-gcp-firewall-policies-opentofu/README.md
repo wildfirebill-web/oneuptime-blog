@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: GCP, Firewall Policies, Networking, OpenTofu, Security, Organization
+Tags: GCP, Firewall Policies, Networking, OpenTofu, Security, Organizations
 
 Description: Learn how to create GCP hierarchical and network firewall policies with OpenTofu for centralized, consistent network security rule management across projects.
 
@@ -14,6 +14,7 @@ GCP Firewall Policies are a modern replacement for per-VPC firewall rules. Hiera
 
 ```hcl
 # main.tf - Organization-level hierarchical firewall policy
+
 resource "google_compute_firewall_policy" "org_policy" {
   parent      = "organizations/${var.org_id}"
   short_name  = "org-firewall-policy"

@@ -25,6 +25,7 @@ Run the following on each server node:
 
 ```bash
 # Add the GlusterFS PPA for the latest stable release
+
 sudo apt update
 sudo apt install software-properties-common -y
 sudo add-apt-repository ppa:gluster/glusterfs-10

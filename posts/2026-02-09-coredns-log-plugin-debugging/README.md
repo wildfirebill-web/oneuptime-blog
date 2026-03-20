@@ -153,6 +153,7 @@ Configure different logging levels for different DNS zones:
 
 ```yaml
 # External queries - detailed logging
+
 .:53 {
     errors
     log {

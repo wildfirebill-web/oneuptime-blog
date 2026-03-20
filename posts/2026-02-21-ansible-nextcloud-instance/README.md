@@ -14,6 +14,7 @@ Nextcloud is the leading open-source platform for file sharing and collaboration
 
 ```yaml
 # roles/nextcloud/defaults/main.yml - Nextcloud configuration
+
 nextcloud_version: "28.0.1"
 nextcloud_domain: cloud.example.com
 nextcloud_data_dir: /var/www/nextcloud/data

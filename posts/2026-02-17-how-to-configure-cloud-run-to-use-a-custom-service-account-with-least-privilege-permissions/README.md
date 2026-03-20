@@ -31,6 +31,7 @@ Create a service account specifically for your Cloud Run service:
 
 ```bash
 # Create a service account for your Cloud Run service
+
 gcloud iam service-accounts create my-service-sa \
   --display-name="My Cloud Run Service" \
   --description="Least-privilege SA for the my-service Cloud Run service"

@@ -48,6 +48,7 @@ For repeatable deployments, use the Azure CLI to configure CORS:
 
 ```bash
 # Add a single allowed origin to your App Service
+
 az webapp cors add \
     --resource-group my-resource-group \
     --name my-api-service \

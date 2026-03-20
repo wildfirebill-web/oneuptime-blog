@@ -120,6 +120,7 @@ from flask_migrate import Migrate
 from flask_login import LoginManager
 
 # Initialize extensions without binding to app
+
 # This allows us to import them elsewhere without circular imports
 db = SQLAlchemy()
 migrate = Migrate()

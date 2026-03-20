@@ -27,6 +27,7 @@ When `clevis luks bind` fails, start with the basics:
 
 ```bash
 # Test if Tang is reachable from the client
+
 curl -sf http://tang.example.com/adv
 ```
 

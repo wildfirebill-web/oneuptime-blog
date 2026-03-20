@@ -23,6 +23,7 @@ The tradeoff is performance - SSHFS introduces latency compared to native disk a
 
 ```bash
 # Mount a host directory into a running VM
+
 multipass mount <host-path> <instance-name>:<vm-path>
 
 # Example: mount your projects folder

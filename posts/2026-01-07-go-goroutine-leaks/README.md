@@ -523,6 +523,7 @@ You can then analyze the goroutines using curl or a browser:
 
 ```bash
 # View goroutine stack traces
+
 curl http://localhost:6060/debug/pprof/goroutine?debug=1
 
 # Download a goroutine profile for analysis

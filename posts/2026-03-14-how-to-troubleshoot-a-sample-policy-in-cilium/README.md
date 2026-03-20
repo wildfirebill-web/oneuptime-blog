@@ -21,6 +21,7 @@ Network policy issues in Cilium typically fall into four categories: selector mi
 
 ```bash
 # Check which endpoints a policy selects
+
 kubectl get ciliumnetworkpolicies -n default -o json | jq '.items[] | {name: .metadata.name, selector: .spec.endpointSelector}'
 
 # Check if endpoints show the policy as enforcing

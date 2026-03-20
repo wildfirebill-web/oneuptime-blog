@@ -16,6 +16,7 @@ Set up the required tools:
 
 ```bash
 # Install talosctl
+
 curl -sL https://talos.dev/install | sh
 
 # Install and configure the Google Cloud SDK

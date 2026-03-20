@@ -78,6 +78,7 @@ Each cluster has a unique path combining region and environment:
 
 ```yaml
 # clusters/us-east-1/production/infrastructure.yaml
+
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
 metadata:

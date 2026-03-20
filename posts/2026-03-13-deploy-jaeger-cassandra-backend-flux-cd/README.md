@@ -29,6 +29,7 @@ Deploy a 3-node Cassandra ring with persistent storage.
 
 ```yaml
 # clusters/my-cluster/jaeger/cassandra-helmrepository.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

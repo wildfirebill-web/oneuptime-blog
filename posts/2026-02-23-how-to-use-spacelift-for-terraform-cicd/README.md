@@ -52,6 +52,7 @@ Or create stacks programmatically using Spacelift's Terraform provider:
 
 ```hcl
 # spacelift.tf - Define stacks as code
+
 provider "spacelift" {}
 
 resource "spacelift_stack" "production" {

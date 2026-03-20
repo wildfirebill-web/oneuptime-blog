@@ -18,6 +18,7 @@ Terraform automatically infers dependencies when one resource references another
 
 ```hcl
 # Terraform creates the namespace first because
+
 # the deployment references it
 resource "kubernetes_namespace" "app" {
   metadata {

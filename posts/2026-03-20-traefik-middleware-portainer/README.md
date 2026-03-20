@@ -1,4 +1,4 @@
-# How to Use Traefik Middleware with Portainer
+# How to Use Traefik Middleware with Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -10,7 +10,7 @@ Description: Learn how to configure Traefik middlewares for containers deployed 
 
 Middlewares intercept and transform requests between Traefik's routers and your backend services. They can add authentication, modify headers, rate limit traffic, or redirect requests.
 
-```
+```text
 Client → Traefik Router → Middleware Chain → Backend Service
 ```
 
@@ -20,6 +20,7 @@ Protect a service with HTTP basic authentication:
 
 ```yaml
 # In Portainer: Stacks > Add Stack
+
 services:
   myapp:
     image: myapp:latest

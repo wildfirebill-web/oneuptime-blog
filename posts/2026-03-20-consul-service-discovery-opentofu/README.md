@@ -14,6 +14,7 @@ HashiCorp Consul is a service mesh and service discovery platform. OpenTofu can 
 
 ```hcl
 # EC2 instances for Consul servers
+
 resource "aws_instance" "consul_server" {
   count         = 3  # always use odd numbers for quorum
   ami           = data.aws_ami.amazon_linux.id

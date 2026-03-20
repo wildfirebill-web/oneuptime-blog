@@ -20,6 +20,7 @@ Define a ResourceQuota that limits compute and object count resources for a tena
 
 ```yaml
 # tenants/team-alpha/resource-quota.yaml
+
 apiVersion: v1
 kind: ResourceQuota
 metadata:

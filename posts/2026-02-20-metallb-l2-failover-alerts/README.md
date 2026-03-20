@@ -44,6 +44,7 @@ First, make sure MetalLB metrics are being scraped. Create a ServiceMonitor if y
 
 ```yaml
 # servicemonitor-metallb.yaml
+
 # This ServiceMonitor tells Prometheus to scrape MetalLB speaker pods.
 apiVersion: monitoring.coreos.com/v1
 kind: ServiceMonitor

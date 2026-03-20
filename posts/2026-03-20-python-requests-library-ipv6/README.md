@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Python, IPv6, requests, HTTP, REST API, Networking
+Tags: Python, IPv6, Request, HTTP, REST API, Networking
 
 Description: Use Python's requests library to make HTTP requests to IPv6 endpoints, handle IPv6 URLs, and force IPv6 connections.
 
@@ -14,6 +14,7 @@ IPv6 addresses in URLs must be enclosed in square brackets (RFC 2732):
 import requests
 
 # HTTP request to an IPv6 server
+
 # IPv6 address in URL requires square brackets
 response = requests.get("http://[2001:db8::1]/api/status")
 print(response.status_code)

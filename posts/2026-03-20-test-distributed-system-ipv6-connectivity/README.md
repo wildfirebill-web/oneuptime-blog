@@ -14,6 +14,7 @@ Testing IPv6 connectivity in distributed systems requires verifying not just bas
 
 ```bash
 # Test from outermost (application) to innermost (network)
+
 # Layer 1: Network - can we ping over IPv6?
 ping6 -c 3 2001:db8::1
 

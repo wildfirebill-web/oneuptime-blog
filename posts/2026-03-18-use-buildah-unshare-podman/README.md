@@ -18,6 +18,7 @@ Running containers and building images as a non-root user is a core security fea
 
 ```bash
 # Check your current user identity
+
 id
 
 # Check your subordinate UID/GID mappings

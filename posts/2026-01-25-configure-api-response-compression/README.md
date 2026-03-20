@@ -229,6 +229,7 @@ import io
 app = Flask(__name__)
 
 # Configure Flask-Compress
+
 app.config['COMPRESS_MIMETYPES'] = [
     'text/html',
     'text/css',

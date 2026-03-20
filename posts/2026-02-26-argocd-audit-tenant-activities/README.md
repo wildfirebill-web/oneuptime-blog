@@ -79,6 +79,7 @@ For audit trails to be useful, every action must be tied to a specific user. Con
 
 ```yaml
 # argocd-cm ConfigMap
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

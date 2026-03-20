@@ -24,6 +24,7 @@ First, make sure your nodes and pods have proper region labels. Kubernetes nodes
 
 ```bash
 # Check existing labels
+
 kubectl get nodes --show-labels | grep topology
 
 # If missing, add them

@@ -49,6 +49,7 @@ Get the verification ID from the Azure portal (Custom domains section) or the CL
 
 ```bash
 # Get the custom domain verification ID
+
 az webapp show \
   --resource-group myAppRG \
   --name myapp \

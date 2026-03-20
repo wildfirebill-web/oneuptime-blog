@@ -8,7 +8,7 @@ Description: Implement Kubernetes Network Policies to enforce zero-trust network
 
 ## Introduction
 
-Kubernetes Network Policies control traffic flow between pods, namespaces, and external IPs. By default, all pods can communicate with all other pods. Network policies implement microsegmentation—allowing only explicitly permitted traffic. Portainer allows managing these policies via YAML manifests.
+Kubernetes Network Policies control traffic flow between pods, namespaces, and external IPs. By default, all pods can communicate with all other pods. Network policies implement microsegmentation-allowing only explicitly permitted traffic. Portainer allows managing these policies via YAML manifests.
 
 ## Prerequisites
 
@@ -21,6 +21,7 @@ Start with a default deny-all policy, then add explicit allows:
 
 ```yaml
 # default-deny.yml - deploy via Portainer
+
 # Block all ingress to the namespace by default
 apiVersion: networking.k8s.io/v1
 kind: NetworkPolicy

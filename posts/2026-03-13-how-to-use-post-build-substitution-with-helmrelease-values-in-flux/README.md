@@ -30,6 +30,7 @@ Start with a HelmRelease manifest that contains variable placeholders:
 
 ```yaml
 # apps/nginx/helmrelease.yaml
+
 apiVersion: helm.toolkit.fluxcd.io/v2
 kind: HelmRelease
 metadata:

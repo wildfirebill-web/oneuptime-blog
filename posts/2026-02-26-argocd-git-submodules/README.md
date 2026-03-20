@@ -34,6 +34,7 @@ By default, ArgoCD does not recurse into submodules when cloning a repository. Y
 
 ```yaml
 # argocd-cm.yaml
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

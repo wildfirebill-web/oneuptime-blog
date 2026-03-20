@@ -47,6 +47,7 @@ Define column types and other properties in a YAML file to ensure consistent dat
 
 ```yaml
 # seeds/seeds.yml
+
 version: 2
 
 seeds:

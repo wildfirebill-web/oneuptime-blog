@@ -46,6 +46,7 @@ graph TD
 
 ```bash
 # Create Prometheus user
+
 sudo useradd --no-create-home --shell /bin/false prometheus
 
 # Create directories

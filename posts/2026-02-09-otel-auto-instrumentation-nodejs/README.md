@@ -22,6 +22,7 @@ Start by installing the OpenTelemetry SDK and auto-instrumentation packages. The
 
 ```bash
 # Install core SDK packages
+
 npm install @opentelemetry/sdk-node \
             @opentelemetry/api \
             @opentelemetry/auto-instrumentations-node \

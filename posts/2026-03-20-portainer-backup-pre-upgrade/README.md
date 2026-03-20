@@ -1,4 +1,4 @@
-# How to Back Up Portainer Database Before Major Changes
+# How to Back Up Portainer Database Before Major Changes - Pre Upgrade
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Create a safe backup of Portainer's database before performing majo
 
 ## Introduction
 
-Before making significant changes to Portainer — upgrading to a major version, modifying authentication settings, changing RBAC configurations, or testing new features — always create a backup. This guide covers pre-change backup best practices.
+Before making significant changes to Portainer - upgrading to a major version, modifying authentication settings, changing RBAC configurations, or testing new features - always create a backup. This guide covers pre-change backup best practices.
 
 ## When to Back Up Before Changes
 
@@ -24,6 +24,7 @@ Back up before:
 
 ```bash
 # One-command backup before any change
+
 docker stop portainer && \
 docker run --rm \
   -v portainer_data:/data \

@@ -184,6 +184,7 @@ Navigate to **Cluster > Projects/Namespaces** to see all projects, their namespa
 
 ```bash
 # List all projects in a cluster
+
 kubectl get projects.management.cattle.io -n c-m-xxxxx \
   -o custom-columns=NAME:.metadata.name,DISPLAY:.spec.displayName,NAMESPACES:.metadata.annotations.'field\.cattle\.io/namespacesCount'
 ```

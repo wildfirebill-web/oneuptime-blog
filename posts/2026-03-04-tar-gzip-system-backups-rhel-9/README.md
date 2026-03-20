@@ -14,6 +14,7 @@ tar and gzip are the most basic and universal backup tools on Linux. They are in
 
 ```bash
 # Create a compressed backup of /etc
+
 # c = create, z = gzip compression, v = verbose, f = filename
 # p = preserve permissions
 sudo tar -czvpf /backup/etc-backup-$(date +%Y%m%d).tar.gz /etc

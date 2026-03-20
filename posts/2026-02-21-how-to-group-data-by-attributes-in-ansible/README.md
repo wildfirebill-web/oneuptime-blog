@@ -16,6 +16,7 @@ The `groupby` filter takes a list of dictionaries and groups them by a specified
 
 ```yaml
 # playbook-basic-groupby.yml
+
 # Groups servers by their region attribute
 - name: Group servers by region
   hosts: localhost

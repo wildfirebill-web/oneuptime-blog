@@ -22,6 +22,7 @@ Install tools for encrypting and managing encrypted images.
 
 ```bash
 # Install skopeo with encryption support
+
 sudo apt-get update
 sudo apt-get install -y skopeo
 

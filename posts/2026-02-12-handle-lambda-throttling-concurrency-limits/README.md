@@ -30,6 +30,7 @@ Lambda reports throttling through the `Throttles` metric:
 
 ```bash
 # Check throttle count for a specific function
+
 aws cloudwatch get-metric-statistics \
   --namespace AWS/Lambda \
   --metric-name Throttles \

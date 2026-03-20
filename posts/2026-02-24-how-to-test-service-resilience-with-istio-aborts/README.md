@@ -309,6 +309,7 @@ Only requests with `x-test-chaos: true` header will get errors. Everyone else is
 
 ```bash
 # This fails
+
 kubectl exec -n abort-test deploy/productpage-v1 -- \
   curl -s -w "%{http_code}\n" -H "x-test-chaos: true" ratings:9080/ratings/0
 

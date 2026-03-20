@@ -134,6 +134,7 @@ def get_rabbitmq_metrics(
     )
 
 # Monitor and alert
+
 def check_queue_health(host: str, queue: str) -> dict:
     metrics = get_rabbitmq_metrics(host, queue)
 

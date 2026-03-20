@@ -39,6 +39,7 @@ This example demonstrates the fundamental pattern for catching SIGTERM signals s
 
 ```python
 # basic_shutdown.py
+
 # Basic signal handling for graceful shutdown in Kubernetes
 import signal
 import sys

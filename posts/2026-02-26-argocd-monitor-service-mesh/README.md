@@ -35,6 +35,7 @@ Manage the entire monitoring stack with an ApplicationSet or an App of Apps:
 
 ```yaml
 # monitoring-appset.yaml
+
 apiVersion: argoproj.io/v1alpha1
 kind: ApplicationSet
 metadata:

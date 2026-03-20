@@ -12,6 +12,7 @@ Container image scanning identifies vulnerabilities in your images before deploy
 
 ```hcl
 # Enable enhanced scanning (Inspector-based) at registry level
+
 resource "aws_ecr_registry_scanning_configuration" "main" {
   scan_type = "ENHANCED"  # BASIC or ENHANCED (requires Inspector)
 

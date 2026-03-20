@@ -33,6 +33,7 @@ The most basic way to access metadata is with curl:
 
 ```bash
 # Get the top-level metadata categories
+
 curl http://169.254.169.254/latest/meta-data/
 ```
 

@@ -16,6 +16,7 @@ Before upgrading, always check the official release notes:
 
 ```bash
 # View release notes via GitHub API
+
 curl -s https://api.github.com/repos/opentofu/opentofu/releases | \
   jq '.[] | select(.tag_name | startswith("v1.11")) | {tag: .tag_name, body: .body}' | head -100
 

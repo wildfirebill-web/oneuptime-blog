@@ -20,6 +20,7 @@ For rootless containers:
 
 ```bash
 # Enable and start the timer
+
 systemctl --user enable --now podman-auto-update.timer
 
 # Verify it is active

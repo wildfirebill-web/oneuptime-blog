@@ -30,6 +30,7 @@ Register the VictoriaMetrics Helm chart repository with Flux CD.
 
 ```yaml
 # infrastructure/victoriametrics/helmrepository.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

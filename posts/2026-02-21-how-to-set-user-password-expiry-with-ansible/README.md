@@ -29,6 +29,7 @@ The `user` module exposes several password aging parameters:
 
 ```yaml
 # password-expiry-basic.yml - Set password expiry parameters
+
 - name: Configure password expiry
   hosts: all
   become: yes

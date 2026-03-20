@@ -229,6 +229,7 @@ With Consul or Eureka, services in different namespaces were all in one flat reg
 
 ```text
 # Same namespace
+
 http://payment-service:8080
 
 # Different namespace

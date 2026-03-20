@@ -51,6 +51,7 @@ Here is a production-ready watchdog configuration for Talos Linux:
 
 ```yaml
 # talos-machine-config.yaml
+
 machine:
   install:
     extraKernelArgs:

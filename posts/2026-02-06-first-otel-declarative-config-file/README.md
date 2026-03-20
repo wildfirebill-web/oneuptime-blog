@@ -16,6 +16,7 @@ Every OpenTelemetry declarative configuration file has a standard top-level stru
 
 ```yaml
 # otel-config.yaml
+
 file_format: "0.3"
 
 # Disabled flag - set to true to disable the SDK entirely

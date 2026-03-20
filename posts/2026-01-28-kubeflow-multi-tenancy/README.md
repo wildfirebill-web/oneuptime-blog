@@ -79,6 +79,7 @@ Apply the profile:
 kubectl apply -f profile.yaml
 
 # Verify profile creation
+
 kubectl get profiles
 
 # Check the namespace was created

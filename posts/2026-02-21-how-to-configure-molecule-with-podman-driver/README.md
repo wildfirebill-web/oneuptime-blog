@@ -26,6 +26,7 @@ Install Podman and the Molecule Podman driver.
 
 ```bash
 # Install Podman (Fedora/RHEL/Rocky)
+
 sudo dnf install -y podman
 
 # Install Podman (Ubuntu/Debian)

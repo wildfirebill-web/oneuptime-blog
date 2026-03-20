@@ -16,9 +16,10 @@ RKE2 agent nodes run the workload pods. They join an existing cluster by connect
 
 ```bash
 # Download and install RKE2 in agent mode
+
 curl -sfL https://get.rke2.io | INSTALL_RKE2_TYPE="agent" sh -
 
-# Enable the agent service (do not start yet — configure first)
+# Enable the agent service (do not start yet - configure first)
 systemctl enable rke2-agent.service
 ```
 
@@ -32,7 +33,7 @@ systemctl enable rke2-agent.service
 # Address of the RKE2 server (or load balancer in front of server nodes)
 server: https://rke2-server.example.com:9345
 
-# Join token — must match the server token
+# Join token - must match the server token
 token: my-super-secret-cluster-token
 
 # Custom node name (defaults to hostname)
@@ -61,7 +62,7 @@ kubelet-arg:
 ## Step 3: Start the Agent
 
 ```bash
-# Start the RKE2 agent — it will connect to the server and join the cluster
+# Start the RKE2 agent - it will connect to the server and join the cluster
 systemctl start rke2-agent.service
 
 # Monitor the agent connection logs
@@ -129,6 +130,6 @@ systemctl restart rke2-agent.service
 ## Best Practices
 
 - Always set `kube-reserved` and `system-reserved` to protect node stability.
-- Use `node-label` at provisioning time rather than adding labels manually — this ensures labels survive node re-registration.
+- Use `node-label` at provisioning time rather than adding labels manually - this ensures labels survive node re-registration.
 - For GPU nodes, add a `NoSchedule` taint and only schedule GPU workloads that explicitly tolerate it.
 - Configure `eviction-hard` thresholds to avoid out-of-memory kills on the node.

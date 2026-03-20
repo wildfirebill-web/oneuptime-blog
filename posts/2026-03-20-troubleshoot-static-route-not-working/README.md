@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Static Route, Troubleshooting, Linux, ip route, IPv4, Routing, Connectivity
+Tags: Static Routes, Troubleshooting, Linux, Ip route, IPv4, Routing, Connectivity
 
 Description: Learn how to systematically troubleshoot static routes that are not working on Linux, including route verification, gateway reachability, IP forwarding, and firewall checks.
 
@@ -14,6 +14,7 @@ A static route that doesn't work is usually caused by one of a few common issues
 
 ```bash
 # Show all routes
+
 ip route show
 
 # Show routes to a specific network
@@ -112,7 +113,7 @@ ip route show table all | grep 192.168.2.0
 
 ## Key Takeaways
 
-- Always start with `ip route get <destination>` — it shows exactly which interface and gateway the kernel will use.
+- Always start with `ip route get <destination>` - it shows exactly which interface and gateway the kernel will use.
 - A gateway must be in the directly connected subnet; if not, the kernel returns "no route to host".
 - Enable `net.ipv4.ip_forward=1` on any host that needs to forward packets between interfaces.
 - Use `ip rule show` to detect policy routing that may be overriding the main routing table.

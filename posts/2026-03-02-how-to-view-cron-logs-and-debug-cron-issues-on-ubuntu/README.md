@@ -22,6 +22,7 @@ Check which logging method is active:
 
 ```bash
 # Check if syslog exists
+
 ls -la /var/log/syslog
 
 # Check rsyslog configuration for cron-specific logging

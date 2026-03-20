@@ -28,6 +28,7 @@ Here is the setup code that configures both tracing and logging through OpenTele
 
 ```python
 # otel_setup.py
+
 import logging
 from opentelemetry import trace
 from opentelemetry.sdk.trace import TracerProvider

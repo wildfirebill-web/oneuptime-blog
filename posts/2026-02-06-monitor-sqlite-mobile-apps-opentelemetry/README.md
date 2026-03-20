@@ -318,6 +318,7 @@ On the backend side, set up an OpenTelemetry Collector to receive spans from you
 
 ```yaml
 # otel-collector-config.yaml - Collector config for mobile SQLite traces
+
 receivers:
   # OTLP receiver accepts spans from mobile apps over gRPC and HTTP
   otlp:

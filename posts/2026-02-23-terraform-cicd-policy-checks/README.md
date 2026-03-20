@@ -30,6 +30,7 @@ OPA is the most flexible option. You write policies in the Rego language and eva
 
 ```yaml
 # .github/workflows/terraform-policy.yml
+
 name: Terraform with Policy Checks
 on:
   pull_request:

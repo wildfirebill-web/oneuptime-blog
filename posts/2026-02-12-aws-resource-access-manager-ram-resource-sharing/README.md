@@ -62,6 +62,7 @@ If you're using AWS Organizations (and you should be for multi-account setups), 
 
 ```bash
 # Enable sharing with AWS Organizations
+
 aws ram enable-sharing-with-aws-organization
 ```
 

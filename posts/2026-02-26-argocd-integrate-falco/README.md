@@ -89,6 +89,7 @@ Store custom Falco rules in your Git repository and deploy them as ConfigMaps:
 
 ```yaml
 # Git: security/falco-rules/custom-rules.yaml
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

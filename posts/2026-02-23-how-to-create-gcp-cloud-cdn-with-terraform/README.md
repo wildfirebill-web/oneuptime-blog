@@ -27,6 +27,7 @@ First, configure the Google provider in your Terraform configuration.
 
 ```hcl
 # main.tf - Provider configuration for GCP
+
 terraform {
   required_version = ">= 1.0"
 

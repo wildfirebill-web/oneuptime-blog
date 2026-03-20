@@ -30,6 +30,7 @@ EventBridge is the backbone of our architecture. It receives events and routes t
 
 ```hcl
 # eventbridge.tf - Central event bus
+
 resource "aws_cloudwatch_event_bus" "main" {
   name = "${var.project_name}-events"
 

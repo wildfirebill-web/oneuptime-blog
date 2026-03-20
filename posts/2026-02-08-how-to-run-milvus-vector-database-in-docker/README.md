@@ -38,6 +38,7 @@ Milvus standalone requires etcd for metadata and MinIO for object storage. The o
 
 ```yaml
 # docker-compose.yml
+
 version: "3.8"
 
 services:

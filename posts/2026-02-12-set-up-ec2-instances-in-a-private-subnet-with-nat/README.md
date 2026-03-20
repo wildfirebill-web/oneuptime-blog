@@ -43,6 +43,7 @@ Let's build this step by step. Start with the VPC and subnets:
 
 ```bash
 # Create the VPC
+
 VPC_ID=$(aws ec2 create-vpc \
   --cidr-block 10.0.0.0/16 \
   --query 'Vpc.VpcId' --output text)

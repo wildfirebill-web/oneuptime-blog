@@ -1,10 +1,10 @@
-# How to Fix "Storage Class Detection Error" in Portainer
+# How to Fix 'Storage Class Detection Error' in Portainer
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Portainer, Troubleshooting, Kubernetes, Storage Class, StorageClass, CSI
 
-Description: Learn how to fix "Storage Class Detection Error" in Portainer Kubernetes environments by configuring default StorageClasses and resolving CSI driver issues.
+Description: Learn how to fix 'Storage Class Detection Error' in Portainer Kubernetes environments by configuring default StorageClasses and resolving CSI driver issues.
 
 ---
 
@@ -14,6 +14,7 @@ The "Storage Class Detection Error" in Portainer appears when managing Kubernete
 
 ```bash
 # List all storage classes in the cluster
+
 kubectl get storageclasses
 
 # Check if a default storage class is set

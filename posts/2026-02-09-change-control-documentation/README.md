@@ -26,6 +26,7 @@ Configure Flux or ArgoCD with change control requirements:
 
 ```yaml
 # flux-change-control.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: GitRepository
 metadata:
@@ -279,7 +280,7 @@ webhooks:
 
 Create automated change documentation from Git commits:
 
-```bash
+````bash
 # generate-change-records.sh
 #!/bin/bash
 
@@ -317,21 +318,21 @@ while IFS='|' read COMMIT AUTHOR EMAIL DATE SUBJECT; do
 
 ## Files Changed
 
-\`\`\`
+```
 $FILES
-\`\`\`
+```
 
 ## Detailed Changes
 
-\`\`\`diff
+```diff
 $(git show $COMMIT)
-\`\`\`
+```
 
 ## Deployment History
 
-\`\`\`
+```
 $(kubectl get events --field-selector involvedObject.name=$TICKET --sort-by='.lastTimestamp' 2>/dev/null)
-\`\`\`
+```
 
 ---
 *Auto-generated change record*
@@ -386,7 +387,7 @@ spec:
         hostPath:
           path: /var/log/kubernetes
           type: Directory
-```
+````
 
 ## Creating Compliance-Ready Change Reports
 

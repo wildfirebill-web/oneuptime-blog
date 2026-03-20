@@ -87,6 +87,7 @@ The following command deploys Tekton Chains to your cluster.
 
 ```bash
 # Install the latest Tekton Chains release
+
 kubectl apply --filename https://storage.googleapis.com/tekton-releases/chains/latest/release.yaml
 
 # Wait for the deployment to become ready

@@ -20,7 +20,7 @@ Managing 1000+ Kubernetes clusters from a single Rancher instance is achievable 
 
 ## Step 1: Infrastructure Sizing for 1000+ Clusters
 
-```
+```text
 Recommended Infrastructure:
 
 Rancher Local Cluster (RKE2):
@@ -46,6 +46,7 @@ Estimated resource consumption:
 
 ```yaml
 # rancher-enterprise-values.yaml
+
 replicas: 5
 
 resources:

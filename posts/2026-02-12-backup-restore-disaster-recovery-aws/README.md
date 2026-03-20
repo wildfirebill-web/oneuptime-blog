@@ -63,6 +63,7 @@ Create a backup vault in both regions.
 
 ```bash
 # Create backup vault in primary region
+
 aws backup create-backup-vault \
   --backup-vault-name "primary-vault" \
   --region us-east-1

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Linux, ss command, Network Statistics, Monitoring
+Tags: IPv6, Linux, Ss command, Network Statistics, Monitoring
 
 Description: A guide to using the `ss` command to monitor IPv6 network connections, sockets, and statistics on Linux, replacing the deprecated `netstat` tool.
 
@@ -10,6 +10,7 @@ Description: A guide to using the `ss` command to monitor IPv6 network connectio
 
 ```bash
 # Show all IPv6 TCP connections
+
 ss -6 -t
 
 # Show all IPv6 UDP sockets
@@ -39,10 +40,10 @@ LISTEN  0       128     [::]:443             [::]:*
 ```
 
 Fields:
-- `Local Address:Port` — IPv6 address in brackets with port
-- `[::]:*` — Listening on all IPv6 addresses
-- `ESTAB` — Established connection
-- `LISTEN` — Waiting for connections
+- `Local Address:Port` - IPv6 address in brackets with port
+- `[::]:*` - Listening on all IPv6 addresses
+- `ESTAB` - Established connection
+- `LISTEN` - Waiting for connections
 
 ## Filtering IPv6 Connections
 

@@ -29,6 +29,7 @@ Start by setting explicit resource requests and limits for each controller. Crea
 
 ```yaml
 # memory-patches.yaml
+
 # Patch for source-controller with tuned memory limits
 apiVersion: apps/v1
 kind: Deployment

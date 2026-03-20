@@ -21,6 +21,7 @@ Stateful packet inspection (SPI) tracks the state of network connections and aut
 
 ```bash
 # This single rule allows all return traffic for outbound connections
+
 # Without it, you'd need symmetric rules for every service
 sudo iptables -A INPUT -m state --state ESTABLISHED,RELATED -j ACCEPT
 
@@ -128,7 +129,7 @@ sudo conntrack -C
 
 ## Handling FTP (Connection Tracking Helper)
 
-FTP uses separate control and data connections — the `RELATED` state handles this:
+FTP uses separate control and data connections - the `RELATED` state handles this:
 
 ```bash
 # Load the FTP connection tracking helper
@@ -138,4 +139,4 @@ sudo modprobe nf_conntrack_ftp
 sudo iptables -A INPUT -m conntrack --ctstate ESTABLISHED,RELATED -j ACCEPT
 ```
 
-Stateful inspection dramatically simplifies firewall rules — you only write rules for initiating new connections, and return traffic is handled automatically by the connection tracking table.
+Stateful inspection dramatically simplifies firewall rules - you only write rules for initiating new connections, and return traffic is handled automatically by the connection tracking table.

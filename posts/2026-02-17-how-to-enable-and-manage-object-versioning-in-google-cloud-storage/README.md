@@ -29,6 +29,7 @@ Enable versioning on an existing bucket:
 
 ```bash
 # Enable object versioning on a bucket
+
 gcloud storage buckets update gs://my-bucket --versioning
 ```
 

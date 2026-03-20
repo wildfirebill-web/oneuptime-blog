@@ -37,6 +37,7 @@ BRANCH=$(git branch --show-current)
 WORKSPACE=$(echo "$BRANCH" | tr '/' '-' | tr '[:upper:]' '[:lower:]')
 
 # Create the workspace if it does not exist
+
 terraform workspace new "$WORKSPACE" 2>/dev/null || terraform workspace select "$WORKSPACE"
 
 echo "Using workspace: $WORKSPACE"

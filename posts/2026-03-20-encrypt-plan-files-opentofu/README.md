@@ -24,6 +24,7 @@ Add the `plan` block to your encryption configuration:
 
 ```hcl
 # encryption.tf
+
 terraform {
   required_version = ">= 1.7.0"
 
@@ -177,13 +178,13 @@ tofu show infrastructure.tfplan | grep -E "^[[:space:]]*(+|-|~)"
 
 ## Plan File Integrity
 
-Encrypted plan files include an integrity check — if the plan file is tampered with, apply will fail:
+Encrypted plan files include an integrity check - if the plan file is tampered with, apply will fail:
 
 ```bash
 # Tampering with the plan file is detected
 echo "tampered" >> infrastructure.tfplan
 tofu apply infrastructure.tfplan
-# Error: plan file integrity check failed — the file has been modified
+# Error: plan file integrity check failed - the file has been modified
 ```
 
 ## Conclusion

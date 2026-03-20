@@ -49,6 +49,7 @@ Each component is a standard Terraform configuration. The networking component, 
 
 ```hcl
 # stack/components/networking/main.tf
+
 variable "region" {
   type = string
 }

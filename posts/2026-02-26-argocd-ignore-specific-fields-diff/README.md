@@ -16,6 +16,7 @@ Before configuring an ignore rule, identify which field is causing the OutOfSync
 
 ```bash
 # View the diff - shows exactly which fields differ
+
 argocd app diff my-app
 ```
 

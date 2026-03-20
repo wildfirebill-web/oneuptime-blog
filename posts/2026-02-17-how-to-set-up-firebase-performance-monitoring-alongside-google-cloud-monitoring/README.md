@@ -206,6 +206,7 @@ You can create dashboards via the API or the Console. Here is a gcloud command t
 
 ```bash
 # Create a monitoring dashboard from a JSON file
+
 gcloud monitoring dashboards create --config-from-file=dashboard.json
 ```
 

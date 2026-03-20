@@ -67,6 +67,7 @@ Create the required EB configuration files. This one installs PHP extensions and
 
 ```yaml
 # .ebextensions/01_laravel.config
+
 option_settings:
   aws:elasticbeanstalk:container:php:phpini:
     document_root: /public

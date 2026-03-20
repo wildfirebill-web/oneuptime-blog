@@ -114,6 +114,7 @@ Disabling the node-to-node mesh requires that BGP route reflectors or external p
 
 ```bash
 # First verify route reflectors are configured
+
 calicoctl get bgppeer -o wide
 
 # Then update the configuration

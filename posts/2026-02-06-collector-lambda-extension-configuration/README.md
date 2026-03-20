@@ -47,6 +47,7 @@ The collector extension is distributed as a Lambda layer. You add it the same wa
 
 ```bash
 # Add the collector extension layer to your function
+
 aws lambda update-function-configuration \
   --function-name my-function \
   --layers arn:aws:lambda:us-east-1:184161586896:layer:opentelemetry-collector-amd64:1 \

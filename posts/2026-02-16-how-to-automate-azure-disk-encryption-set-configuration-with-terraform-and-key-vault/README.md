@@ -31,6 +31,7 @@ The critical piece is that the Disk Encryption Set's managed identity must have 
 
 ```hcl
 # Terraform configuration
+
 terraform {
   required_version = ">= 1.5.0"
 

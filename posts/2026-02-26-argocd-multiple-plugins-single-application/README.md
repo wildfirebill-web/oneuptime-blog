@@ -16,6 +16,7 @@ ArgoCD's plugin architecture assigns exactly one plugin to each application sour
 
 ```yaml
 # This does NOT work - only one plugin per source
+
 spec:
   source:
     plugin:

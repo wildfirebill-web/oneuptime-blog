@@ -20,6 +20,7 @@ The `podman commit` command creates a new image from a container's changes. It c
 
 ```bash
 # Basic syntax
+
 podman commit [options] CONTAINER [IMAGE_NAME[:TAG]]
 ```
 

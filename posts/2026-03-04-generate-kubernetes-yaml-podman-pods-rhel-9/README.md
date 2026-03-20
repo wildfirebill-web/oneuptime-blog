@@ -234,6 +234,7 @@ Here is the complete workflow:
 
 ```bash
 # 1. Develop and test locally with Podman
+
 podman pod create --name myapp -p 8080:80
 podman run -d --pod myapp --name web docker.io/library/nginx:latest
 podman run -d --pod myapp --name api my-api:latest

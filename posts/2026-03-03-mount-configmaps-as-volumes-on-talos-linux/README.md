@@ -27,6 +27,7 @@ Let us start with a simple example. First, create a ConfigMap that holds a confi
 
 ```yaml
 # app-config.yaml
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

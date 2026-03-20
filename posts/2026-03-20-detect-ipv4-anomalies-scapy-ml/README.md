@@ -8,7 +8,7 @@ Description: Build a simple IPv4 network anomaly detection system using Scapy fo
 
 ## Introduction
 
-Network anomaly detection identifies traffic patterns that deviate from the baseline — port scans, DDoS floods, exfiltration, or unusual protocols. By combining Scapy's packet capture capabilities with machine learning (Isolation Forest), you can detect anomalies without writing explicit rules for every attack type.
+Network anomaly detection identifies traffic patterns that deviate from the baseline - port scans, DDoS floods, exfiltration, or unusual protocols. By combining Scapy's packet capture capabilities with machine learning (Isolation Forest), you can detect anomalies without writing explicit rules for every attack type.
 
 ## Prerequisites
 
@@ -26,6 +26,7 @@ import pandas as pd
 import numpy as np
 
 # Feature extraction function
+
 def extract_features(pkt):
     """Extract numeric features from an IPv4 packet for ML analysis."""
     if not pkt.haslayer(IP):

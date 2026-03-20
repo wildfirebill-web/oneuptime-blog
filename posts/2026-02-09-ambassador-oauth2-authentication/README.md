@@ -28,6 +28,7 @@ First, install Ambassador Edge Stack if you haven't already:
 
 ```bash
 # Add Ambassador Helm repository
+
 helm repo add datawire https://app.getambassador.io
 helm repo update
 

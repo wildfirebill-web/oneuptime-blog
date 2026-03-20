@@ -44,6 +44,7 @@ First, create a WAF Web ACL that will protect your applications.
 
 ```bash
 # Create a Web ACL with managed rule groups
+
 aws wafv2 create-web-acl \
   --name "flux-managed-web-acl" \
   --scope REGIONAL \

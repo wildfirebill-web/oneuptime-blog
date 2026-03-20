@@ -87,6 +87,7 @@ Before (deadlocked):
 
 ```yaml
 # Kustomization A
+
 spec:
   dependsOn:
     - name: kustomization-b

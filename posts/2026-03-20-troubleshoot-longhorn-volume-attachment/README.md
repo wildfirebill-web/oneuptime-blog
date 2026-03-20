@@ -1,4 +1,4 @@
-# How to Troubleshoot Longhorn Volume Attachment Issues
+# How to Troubleshoot Longhorn Volume Attachment Issues - Part 3
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -23,6 +23,7 @@ Start with a broad diagnostic sweep:
 
 ```bash
 # Check pod status
+
 kubectl describe pod <pod-name> -n <namespace>
 
 # Look for these error patterns in the Events section:
@@ -215,4 +216,4 @@ kubectl logs -n longhorn-system -l app=longhorn-driver-deployer --tail=200 > dri
 
 ## Conclusion
 
-Longhorn volume attachment issues often stem from one of a few root causes: stuck VolumeAttachment objects, missing system dependencies (iscsid), network problems, or disk space issues. By following a systematic diagnostic approach — checking pod events, volume state, instance manager health, and node conditions — you can quickly identify and resolve most attachment failures. If issues persist, the Longhorn support bundle provides comprehensive logs for deeper analysis.
+Longhorn volume attachment issues often stem from one of a few root causes: stuck VolumeAttachment objects, missing system dependencies (iscsid), network problems, or disk space issues. By following a systematic diagnostic approach - checking pod events, volume state, instance manager health, and node conditions - you can quickly identify and resolve most attachment failures. If issues persist, the Longhorn support bundle provides comprehensive logs for deeper analysis.

@@ -25,6 +25,7 @@ Create a shared Helm repository in a common namespace and allow tenants to refer
 
 ```yaml
 # infrastructure/shared-sources/helm-repos.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

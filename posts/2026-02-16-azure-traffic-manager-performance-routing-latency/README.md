@@ -45,6 +45,7 @@ flowchart TD
 
 ```bash
 # Create a resource group
+
 az group create \
   --name rg-tm-perf \
   --location eastus

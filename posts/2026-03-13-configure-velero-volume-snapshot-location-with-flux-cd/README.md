@@ -27,6 +27,7 @@ This guide covers configuring VSLs for AWS EBS, Azure Managed Disks, and GCP Per
 
 ```yaml
 # infrastructure/velero/snapshots/vsl-aws.yaml
+
 apiVersion: velero.io/v1
 kind: VolumeSnapshotLocation
 metadata:

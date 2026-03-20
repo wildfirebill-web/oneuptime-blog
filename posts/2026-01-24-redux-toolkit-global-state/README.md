@@ -40,6 +40,7 @@ flowchart LR
 
 ```bash
 # Install Redux Toolkit and React-Redux
+
 npm install @reduxjs/toolkit react-redux
 
 # For TypeScript projects

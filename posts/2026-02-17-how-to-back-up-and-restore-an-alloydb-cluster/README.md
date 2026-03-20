@@ -27,6 +27,7 @@ Continuous backups are enabled by default when you create an AlloyDB cluster. Yo
 
 ```bash
 # Check continuous backup configuration for your cluster
+
 gcloud alloydb clusters describe my-cluster \
   --region=us-central1 \
   --format="yaml(continuousBackupConfig, continuousBackupInfo)"

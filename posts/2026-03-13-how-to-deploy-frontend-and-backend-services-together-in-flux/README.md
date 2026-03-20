@@ -51,6 +51,7 @@ Store shared configuration that both frontend and backend need.
 
 ```yaml
 # apps/shared/shared-config.yaml
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

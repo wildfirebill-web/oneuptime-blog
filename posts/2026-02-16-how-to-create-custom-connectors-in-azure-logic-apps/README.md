@@ -204,6 +204,7 @@ You can create the connector through the Azure Portal or through the CLI/PowerSh
 
 ```powershell
 # Install the required module
+
 Install-Module -Name Microsoft.PowerApps.Administration.PowerShell
 
 # Create the connector from an OpenAPI file

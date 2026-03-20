@@ -23,6 +23,7 @@ The FUTURE crypto policy on RHEL enforces stricter cryptographic standards than 
 
 ```bash
 # Check the current policy first
+
 update-crypto-policies --show
 
 # Switch to FUTURE

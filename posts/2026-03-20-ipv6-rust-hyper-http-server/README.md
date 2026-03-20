@@ -12,6 +12,7 @@ Hyper is a low-level HTTP library that works with Tokio. Since Hyper 1.x, you pr
 
 ```toml
 # Cargo.toml
+
 [dependencies]
 hyper = { version = "1", features = ["full"] }
 hyper-util = { version = "0.1", features = ["full"] }

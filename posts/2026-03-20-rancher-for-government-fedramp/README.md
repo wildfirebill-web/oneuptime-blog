@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Rancher, Government, FedRAMP, Compliance, Air-Gapped, Security, Kubernetes
 
-Description: Configure Rancher for US government workloads meeting FedRAMP requirements including air-gapped deployments, FIPS 140-2 encryption, STIG compliance, audit logging, and the security controls required for federal environments.
+Description: Configure Rancher for US government workloads meeting FedRAMP requirements including air-gapped deployments, FIPS 140-2 encryption, STIG compliance, audit logging, and the security controls...
 
 ## Introduction
 
@@ -12,7 +12,7 @@ US government workloads in Kubernetes must comply with FedRAMP (for cloud) or DI
 
 ## FedRAMP Architecture
 
-```
+```text
 Air-Gapped Environment
 ┌─────────────────────────────────────────────────────┐
 │                                                     │
@@ -35,6 +35,7 @@ Air-Gapped Environment
 
 ```bash
 # Install RKE2 with FIPS mode
+
 # FIPS mode uses NIST-approved cryptographic algorithms only
 
 # Download FIPS-compliant RKE2 binary

@@ -32,6 +32,7 @@ tracer = trace.get_tracer("exfiltration-detector")
 meter = metrics.get_meter("exfiltration-detector")
 
 # Histogram of response sizes per endpoint and user
+
 response_size_histogram = meter.create_histogram(
     "http.response.body.size",
     description="Response body size in bytes",

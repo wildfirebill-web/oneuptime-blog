@@ -8,11 +8,11 @@ Description: Learn why NAT breaks VoIP and SIP signaling, and how STUN, TURN, IC
 
 ## Why NAT Breaks VoIP
 
-VoIP protocols like SIP carry IP addresses in their payload (not just headers). When NAT changes the IP address in packet headers, the application-layer SIP messages still contain the original private IP — causing problems.
+VoIP protocols like SIP carry IP addresses in their payload (not just headers). When NAT changes the IP address in packet headers, the application-layer SIP messages still contain the original private IP - causing problems.
 
 **SIP INVITE example with private IP:**
 
-```
+```text
 Via: SIP/2.0/UDP 192.168.1.10:5060    ← private IP in SIP payload
 Contact: sip:user@192.168.1.10         ← private IP
 ...
@@ -20,13 +20,13 @@ m=audio 10000 RTP/AVP 0               ← private IP for media
 c=IN IP4 192.168.1.10
 ```
 
-The remote SIP server tries to send media back to 192.168.1.10 — a private IP it cannot reach.
+The remote SIP server tries to send media back to 192.168.1.10 - a private IP it cannot reach.
 
 ## Solution 1: STUN (Session Traversal Utilities for NAT)
 
 STUN lets a client discover its public IP and port as seen from outside:
 
-```
+```text
 Client → STUN server: "What is my external IP:port?"
 STUN → Client: "You appear as 203.0.113.1:56789"
 Client uses 203.0.113.1:56789 in SIP headers
@@ -34,6 +34,7 @@ Client uses 203.0.113.1:56789 in SIP headers
 
 ```bash
 # Test STUN from command line
+
 stun stun.l.google.com:19302
 
 # Python STUN check
@@ -48,7 +49,7 @@ print(f"External IP: {ext_ip}, Port: {ext_port}")
 
 TURN relays media through a server when direct P2P fails (required for Symmetric NAT):
 
-```
+```text
 Client A (Symmetric NAT) ← media → TURN Server ← media → Client B
 ```
 

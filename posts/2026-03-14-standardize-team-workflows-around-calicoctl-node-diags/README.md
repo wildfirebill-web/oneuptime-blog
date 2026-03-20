@@ -27,6 +27,7 @@ This guide establishes team standards for the complete diagnostic lifecycle: col
 
 ```yaml
 # diagnostic-collection-policy.yaml
+
 mandatory_collection:
   - trigger: "Before any Calico configuration change"
     type: "pre-change baseline"

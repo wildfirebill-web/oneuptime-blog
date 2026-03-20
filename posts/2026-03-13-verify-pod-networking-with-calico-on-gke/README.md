@@ -29,6 +29,7 @@ Confirm that the GKE cluster has network policy (Calico) enabled.
 
 ```bash
 # Check if network policy is enabled on the GKE cluster
+
 gcloud container clusters describe <cluster-name> \
   --zone <zone> \
   --format="value(networkConfig.enableNetworkPolicy)"

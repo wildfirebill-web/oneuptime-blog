@@ -409,6 +409,7 @@ Add linting to your CI pipeline. Fail fast on lint errors.
 
 ```yaml
 # .github/workflows/ci.yml
+
 name: CI
 
 on: [push, pull_request]

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, MetalLB, NGINX, Ingresses, Load Balancing
+Tags: Kubernetes, MetalLB, Nginx, Ingresses, Load Balancing
 
 Description: Step-by-step guide to deploying MetalLB with the Nginx Ingress Controller for production-ready bare-metal ingress.
 
@@ -38,6 +38,7 @@ Install MetalLB using the official manifests:
 
 ```bash
 # Install MetalLB v0.14.x
+
 kubectl apply -f https://raw.githubusercontent.com/metallb/metallb/v0.14.9/config/manifests/metallb-native.yaml
 
 # Wait for MetalLB pods to be ready

@@ -49,6 +49,7 @@ sequenceDiagram
 
 ```bash
 # Stage 1: Route table on Node 1 (programmed by Felix)
+
 ip route show 10.0.2.0/26
 # Expected: 10.0.2.0/26 dev vxlan.calico src 10.0.1.1 onlink
 

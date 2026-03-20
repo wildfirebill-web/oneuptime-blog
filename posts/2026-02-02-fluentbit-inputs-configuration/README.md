@@ -50,6 +50,7 @@ Installing Fluent Bit on Ubuntu/Debian systems requires adding the official repo
 
 ```bash
 # Add the Fluent Bit GPG key
+
 curl https://raw.githubusercontent.com/fluent/fluent-bit/master/install.sh | sh
 
 # Alternative: Install from package repository

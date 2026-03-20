@@ -38,6 +38,7 @@ The metrics you emit from your application determine what you can display on das
 
 ```python
 # instrumentation.py
+
 # Emit OpenTelemetry metrics optimized for dashboard consumption
 
 from opentelemetry import metrics

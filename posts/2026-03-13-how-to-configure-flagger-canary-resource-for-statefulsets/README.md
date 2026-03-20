@@ -29,6 +29,7 @@ Here is an example StatefulSet for a Redis cluster:
 
 ```yaml
 # statefulset.yaml
+
 apiVersion: apps/v1
 kind: StatefulSet
 metadata:

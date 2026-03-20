@@ -118,6 +118,7 @@ For a more automated approach, you can use the Azure CLI. First, package your ap
 
 ```bash
 # Build and publish the project
+
 dotnet publish -c Release -o ./publish
 
 # Create a ZIP of the published output

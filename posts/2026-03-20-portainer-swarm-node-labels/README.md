@@ -20,6 +20,7 @@ Add labels in the format: `key = value`
 
 ```bash
 # Add labels to nodes
+
 docker node update --label-add environment=production worker1
 docker node update --label-add environment=staging worker2
 docker node update --label-add storage=ssd worker1

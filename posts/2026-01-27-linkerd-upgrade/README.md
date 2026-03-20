@@ -53,6 +53,7 @@ Before touching anything in production, complete these checks.
 
 ```bash
 # Check current Linkerd version
+
 linkerd version
 
 # Verify the control plane is healthy

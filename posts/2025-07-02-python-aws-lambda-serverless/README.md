@@ -131,6 +131,7 @@ lambda-project/
 
 ```txt
 # requirements.txt
+
 boto3>=1.34.0
 pydantic>=2.5.0
 python-json-logger>=2.0.0

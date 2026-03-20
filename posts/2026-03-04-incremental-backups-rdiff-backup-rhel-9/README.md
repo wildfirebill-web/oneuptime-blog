@@ -30,6 +30,7 @@ graph TD
 
 ```bash
 # Install rdiff-backup from EPEL
+
 sudo dnf install epel-release
 sudo dnf install rdiff-backup
 ```

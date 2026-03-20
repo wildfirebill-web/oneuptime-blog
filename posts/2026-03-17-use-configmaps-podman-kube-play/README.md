@@ -20,6 +20,7 @@ Define a ConfigMap alongside your Pod specification in a single YAML file.
 
 ```yaml
 # app-config.yaml
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

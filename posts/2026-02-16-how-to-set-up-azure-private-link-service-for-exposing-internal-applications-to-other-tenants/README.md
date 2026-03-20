@@ -48,6 +48,7 @@ If you already have a Standard Load Balancer with your application behind it, sk
 
 ```bash
 # Create a Standard Load Balancer
+
 az network lb create \
   --name myAppLoadBalancer \
   --resource-group myResourceGroup \

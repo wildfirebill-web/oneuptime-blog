@@ -16,6 +16,7 @@ RHEL major versions receive 10 years of support (5 Full Support + 5 Maintenance)
 
 ```bash
 # RHEL: Check your release and subscription end date
+
 subscription-manager facts | grep distribution
 subscription-manager list --consumed | grep Ends
 

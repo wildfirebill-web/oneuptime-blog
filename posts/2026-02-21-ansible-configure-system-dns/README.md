@@ -30,6 +30,7 @@ This playbook deploys a static resolv.conf and locks it:
 
 ```yaml
 # configure-dns-static.yml - Static DNS configuration
+
 ---
 - name: Configure Static DNS
   hosts: all

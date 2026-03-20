@@ -27,6 +27,7 @@ Install the Mirrord CLI:
 
 ```bash
 # macOS
+
 brew install metalbear-co/mirrord/mirrord
 
 # Linux
@@ -483,12 +484,12 @@ Share Mirrord configurations in your repository:
 
 Document usage in your project README:
 
-```markdown
+````markdown
 ## Development with Mirrord
 
 Run locally with cluster context:
 
-\`\`\`bash
+```bash
 # Development cluster (default)
 npm run dev:mirrord
 
@@ -497,7 +498,7 @@ mirrord exec --config .mirrord/staging.json npm start
 
 # Production (read-only)
 mirrord exec --config .mirrord/production-ro.json npm start
-\`\`\`
 ```
+````
 
 Mirrord eliminates the complexity of mocking remote services during local development. Your code runs on your machine but operates as if it were deployed in Kubernetes, accessing real services, configurations, and networking.

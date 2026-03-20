@@ -14,6 +14,7 @@ GitHub Container Registry (GHCR) is OCI-compliant and tightly integrated with Gi
 
 ```bash
 # Personal access token (classic) - read:packages, write:packages
+
 echo "$GITHUB_TOKEN" | docker login ghcr.io \
   -u "$GITHUB_ACTOR" --password-stdin
 

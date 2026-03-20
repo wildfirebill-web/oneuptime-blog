@@ -66,7 +66,7 @@ The `portainer/portainer-ce:latest` image supports linux/arm64, which matches th
 
 In your browser, navigate to:
 
-```
+```text
 https://<jetson-ip>:9443
 ```
 
@@ -97,6 +97,7 @@ Verify your Jetson architecture:
 ```bash
 uname -m
 # Should show: aarch64
+
 ```
 
 **Check container logs:**

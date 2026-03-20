@@ -40,6 +40,7 @@ Flannel uses VXLAN by default. Check that VXLAN traffic is permitted.
 
 ```bash
 # On a node, check flannel.1 interface
+
 ip link show flannel.1
 ip route show | grep flannel
 

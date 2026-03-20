@@ -14,6 +14,7 @@ CockroachDB is a distributed SQL database with PostgreSQL compatibility. It supp
 
 ```bash
 # Download CockroachDB
+
 wget https://binaries.cockroachdb.com/cockroach-latest.linux-amd64.tgz
 tar xvf cockroach-latest.linux-amd64.tgz
 sudo cp cockroach-latest.linux-amd64/cockroach /usr/local/bin/

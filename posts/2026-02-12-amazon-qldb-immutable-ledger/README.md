@@ -35,6 +35,7 @@ Setting up a QLDB ledger takes one command.
 
 ```bash
 # Create a QLDB ledger with standard permissions mode
+
 aws qldb create-ledger \
   --name financial-records \
   --permissions-mode STANDARD \

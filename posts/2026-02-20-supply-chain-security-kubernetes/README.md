@@ -37,6 +37,7 @@ graph TD
 
 ```bash
 # Install Cosign on macOS
+
 brew install cosign
 
 # Or download the binary directly

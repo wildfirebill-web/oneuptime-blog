@@ -14,7 +14,7 @@ A TCP SYN timeout occurs when a client sends a SYN packet but never receives a S
 
 Linux retransmits SYN packets using exponential backoff:
 
-```
+```text
 SYN attempt 1: wait 1 second
 SYN attempt 2: wait 2 seconds
 SYN attempt 3: wait 4 seconds
@@ -28,6 +28,7 @@ Total: ~63 seconds before "Connection timed out"
 
 ```bash
 # View current SYN retry count (default: 6)
+
 sysctl net.ipv4.tcp_syn_retries
 # net.ipv4.tcp_syn_retries = 6
 

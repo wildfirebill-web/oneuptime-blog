@@ -145,6 +145,7 @@ A common pattern is to assign shards by team or business unit:
 
 ```yaml
 # Team A resources use shard-1
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: GitRepository
 metadata:
@@ -187,7 +188,7 @@ spec:
     branch: main
 ```
 
-## Resource Allocation Per Shard
+Resource Allocation Per Shard
 
 For large-scale deployments, you may want to customize resource requests and limits for each shard using Kustomize patches in the FluxInstance. This ensures each shard has adequate resources:
 

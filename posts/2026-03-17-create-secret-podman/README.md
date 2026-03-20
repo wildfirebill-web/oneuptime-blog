@@ -20,6 +20,7 @@ The simplest way to create a secret is by piping data to `podman secret create`:
 
 ```bash
 # Create a secret by piping the value
+
 echo -n "my-super-secret-password" | podman secret create db_password -
 
 # The '-' tells podman to read from standard input

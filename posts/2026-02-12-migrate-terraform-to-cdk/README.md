@@ -52,6 +52,7 @@ Before migrating anything, understand what you're working with:
 
 ```bash
 # List all resources in Terraform state
+
 terraform state list
 
 # Export the state for reference

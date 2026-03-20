@@ -34,6 +34,7 @@ Before configuring whitelists, understand what namespace-scoped resources exist 
 
 ```bash
 # List all namespace-scoped resources
+
 kubectl api-resources --namespaced=true
 
 # Count them

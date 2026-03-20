@@ -18,6 +18,7 @@ Start by creating metrics that capture feature engagement:
 
 ```python
 # feature_metrics.py
+
 from opentelemetry import metrics
 
 meter = metrics.get_meter("product.features")

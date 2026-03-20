@@ -20,6 +20,7 @@ An unattached volume is one that isn't connected to any EC2 instance. These are 
 
 ```bash
 # Find all unattached (available) EBS volumes
+
 aws ec2 describe-volumes \
   --filters Name=status,Values=available \
   --query "Volumes[].{

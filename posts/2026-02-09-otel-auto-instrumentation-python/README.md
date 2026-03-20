@@ -22,6 +22,7 @@ Start by installing the core OpenTelemetry packages. You need the API, SDK, and 
 
 ```bash
 # Install OpenTelemetry core packages
+
 pip install opentelemetry-distro opentelemetry-exporter-otlp
 
 # Bootstrap auto-instrumentation

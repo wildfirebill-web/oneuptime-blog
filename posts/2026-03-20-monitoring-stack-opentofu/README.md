@@ -24,6 +24,7 @@ resource "aws_cloudwatch_log_group" "application" {
 }
 
 # Extract error count from application logs
+
 resource "aws_cloudwatch_log_metric_filter" "error_count" {
   name           = "myapp-error-count"
   pattern        = "[timestamp, level=\"ERROR\", ...]"

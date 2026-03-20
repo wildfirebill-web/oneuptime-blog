@@ -54,6 +54,7 @@ Creating a Spot VM is straightforward - it is the same as creating a regular VM 
 
 ```bash
 # Create a Spot VM with a maximum price and Stop/Deallocate eviction policy
+
 az vm create \
   --resource-group myResourceGroup \
   --name mySpotVM \

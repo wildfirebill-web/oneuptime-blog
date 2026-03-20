@@ -44,6 +44,7 @@ On Ubuntu or Debian:
 
 ```bash
 # Add the Citus repository
+
 curl https://install.citusdata.com/community/deb.sh | sudo bash
 
 # Install Citus

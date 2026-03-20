@@ -332,6 +332,7 @@ External authorization adds a network hop to every matched request. To keep late
 
 ```bash
 # Monitor external authorizer latency
+
 kubectl exec deploy/my-service -c istio-proxy -n my-app -- \
   curl -s localhost:15000/stats | grep ext_authz
 ```

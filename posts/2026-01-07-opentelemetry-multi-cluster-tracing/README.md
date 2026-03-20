@@ -103,6 +103,7 @@ The Agent Collector runs as a DaemonSet on every node, collecting traces from al
 
 ```yaml
 # otel-agent-config.yaml
+
 # This ConfigMap defines the OpenTelemetry Collector agent configuration.
 # The agent runs on each node and collects telemetry from local pods.
 apiVersion: v1
@@ -1085,7 +1086,7 @@ spec:
 
 Proper cluster identification is essential for filtering and analyzing traces in a multi-cluster environment. There are several strategies to ensure every span is tagged with its origin cluster.
 
-### Resource Attributes Approach
+Resource Attributes Approach
 
 The most reliable approach is to add cluster identification as resource attributes at the collector level:
 

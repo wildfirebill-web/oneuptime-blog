@@ -28,6 +28,7 @@ import boto3
 ec2 = boto3.client('ec2')
 
 # Launch an EC2 instance
+
 response = ec2.run_instances(
     ImageId='ami-0abcdef1234567890',
     InstanceType='t3.micro',

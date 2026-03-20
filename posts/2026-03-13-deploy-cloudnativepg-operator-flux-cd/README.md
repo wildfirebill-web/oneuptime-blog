@@ -27,6 +27,7 @@ This post covers deploying the CNPG operator via Flux HelmRelease and creating a
 
 ```yaml
 # infrastructure/sources/cnpg-helm.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

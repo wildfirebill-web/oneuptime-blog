@@ -18,6 +18,7 @@ Ensure each Typha replica exposes metrics. The metrics endpoint is on each pod, 
 
 ```bash
 # Test metrics access for each replica
+
 for pod in $(kubectl get pods -n calico-system -l k8s-app=calico-typha -o name); do
   echo "=== $pod ==="
   kubectl exec -n calico-system $pod -- \

@@ -30,6 +30,7 @@ Install kind and create a cluster:
 
 ```bash
 # Install kind (macOS)
+
 brew install kind
 
 # Install kind (Linux)

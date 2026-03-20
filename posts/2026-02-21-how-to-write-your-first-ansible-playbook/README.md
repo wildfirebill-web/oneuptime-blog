@@ -24,6 +24,7 @@ Here is a minimal inventory file to start with.
 
 ```ini
 # inventory.ini - defines the hosts Ansible will manage
+
 [webservers]
 192.168.1.10
 192.168.1.11

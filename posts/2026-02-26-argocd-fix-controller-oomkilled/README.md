@@ -50,6 +50,7 @@ graph TD
 
 ```bash
 # Check the pod's last termination reason
+
 kubectl describe pod -n argocd -l app.kubernetes.io/name=argocd-application-controller | \
   grep -A5 "Last State"
 

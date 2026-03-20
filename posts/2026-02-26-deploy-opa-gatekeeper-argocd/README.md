@@ -57,6 +57,7 @@ security/
 
 ```yaml
 # security/gatekeeper/Chart.yaml
+
 apiVersion: v2
 name: gatekeeper
 description: Wrapper chart for OPA Gatekeeper

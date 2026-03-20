@@ -28,6 +28,7 @@ The literal block scalar is the go-to for multiline shell commands because it pr
 
 ```yaml
 # literal_block.yml - Using the literal block scalar for multiline commands
+
 ---
 - name: Multiline shell commands with literal block
   hosts: all

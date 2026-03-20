@@ -59,6 +59,7 @@ Let's build a reusable VPC module step by step.
 
 ```hcl
 # modules/vpc/variables.tf
+
 # Define all inputs the module accepts
 
 variable "name" {

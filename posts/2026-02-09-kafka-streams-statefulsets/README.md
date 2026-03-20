@@ -114,6 +114,7 @@ Build the Docker image:
 FROM openjdk:17-slim
 
 # Install required packages
+
 RUN apt-get update && apt-get install -y \
     curl \
     procps \

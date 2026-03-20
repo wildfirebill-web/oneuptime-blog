@@ -35,6 +35,7 @@ The first step in debugging is understanding what the CDN is telling you. Most C
 
 ```bash
 # Check cache status headers with curl
+
 # The -I flag fetches only headers, -s suppresses progress output
 
 curl -sI https://cdn.example.com/static/app.js | grep -i -E "^(x-cache|cf-cache|age|cache-control|cdn-cache)"

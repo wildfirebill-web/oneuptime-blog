@@ -20,6 +20,7 @@ YAML provides three mechanisms for reuse:
 
 ```yaml
 # Define anchor
+
 x-common: &common-settings
   restart: unless-stopped
   logging:

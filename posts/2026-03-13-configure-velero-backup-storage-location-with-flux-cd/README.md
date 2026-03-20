@@ -27,6 +27,7 @@ This guide covers creating BSL resources for different scenarios and managing th
 
 ```yaml
 # infrastructure/velero/storage/bsl-primary.yaml
+
 apiVersion: velero.io/v1
 kind: BackupStorageLocation
 metadata:

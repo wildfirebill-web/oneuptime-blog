@@ -119,6 +119,7 @@ After editing multipath.conf:
 
 ```bash
 # Validate the configuration
+
 sudo multipath -t
 
 # Apply without restart

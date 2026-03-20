@@ -25,6 +25,7 @@ Install dependencies if you have not already.
 
 ```bash
 # Install the VMware collection and Python packages
+
 ansible-galaxy collection install community.vmware
 pip install pyvmomi requests
 ```

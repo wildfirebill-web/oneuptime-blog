@@ -13,9 +13,9 @@ Containerd is a high-performance container runtime originally extracted from Doc
 ## Understanding the Architecture
 
 When Docker is absent, Portainer connects to containerd via:
-1. **Kubernetes API** (recommended) — Portainer manages pods/deployments via the K8s API
-2. **Portainer Agent** — Deploy the agent as a containerd task
-3. **nerdctl** compatibility — nerdctl provides Docker-compatible CLI for containerd
+1. **Kubernetes API** (recommended) - Portainer manages pods/deployments via the K8s API
+2. **Portainer Agent** - Deploy the agent as a containerd task
+3. **nerdctl** compatibility - nerdctl provides Docker-compatible CLI for containerd
 
 ## Method 1: Managing Containerd via Kubernetes (Recommended)
 
@@ -23,6 +23,7 @@ Most containerd deployments run inside Kubernetes. Use Portainer's Kubernetes en
 
 ```bash
 # Install k3s (uses containerd by default)
+
 curl -sfL https://get.k3s.io | sh -
 
 # Verify containerd is the runtime

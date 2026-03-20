@@ -36,6 +36,7 @@ Show your team what IP the backend pod actually sees as the source:
 
 ```bash
 # Deploy a simple echo server as backend
+
 kubectl run backend --image=ealen/echo-server --port=8080
 kubectl expose pod backend --name=backend-svc --port=80 --target-port=8080
 

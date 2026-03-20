@@ -24,6 +24,7 @@ First, you need a source backup. Let's assume you already have one:
 
 ```bash
 # Check that the source backup exists and is ready
+
 gcloud spanner backups describe daily-backup-20260217 \
     --instance=my-spanner-instance
 ```

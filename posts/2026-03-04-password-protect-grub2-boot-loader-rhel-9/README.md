@@ -33,6 +33,7 @@ By default, password protection blocks editing boot entries and accessing the GR
 
 ```bash
 # Generate a PBKDF2 password hash
+
 grub2-setpassword
 ```
 

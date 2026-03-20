@@ -16,6 +16,7 @@ Before anything else, check the basics:
 
 ```bash
 # Is the system muted at the ALSA level?
+
 alsamixer
 # Press F6 to select your sound card
 # Look for channels showing "MM" (muted) and press M to unmute

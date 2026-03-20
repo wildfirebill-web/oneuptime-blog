@@ -32,6 +32,7 @@ This is the easiest case. BigQuery supports adding columns to existing tables wi
 
 ```bash
 # Load data and allow new columns to be added automatically
+
 bq load \
   --autodetect \
   --source_format=PARQUET \

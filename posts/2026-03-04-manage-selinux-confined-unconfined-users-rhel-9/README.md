@@ -20,6 +20,7 @@ The goal is to move as many users and services as possible from unconfined to co
 
 ```bash
 # See your current SELinux context
+
 id -Z
 
 # Example output for unconfined user:

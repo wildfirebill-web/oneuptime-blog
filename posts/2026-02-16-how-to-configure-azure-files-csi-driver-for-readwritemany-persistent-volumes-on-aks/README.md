@@ -33,6 +33,7 @@ Recent AKS versions include the Azure Files CSI driver by default. Verify it is 
 
 ```bash
 # Check that the Azure Files CSI driver pods are running
+
 kubectl get pods -n kube-system -l app=csi-azurefile-node
 
 # Verify the CSI driver is registered

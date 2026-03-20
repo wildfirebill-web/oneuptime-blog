@@ -14,6 +14,7 @@ Package updates occasionally introduce regressions - a new version breaks an app
 
 ```bash
 # Check recently installed/upgraded packages
+
 grep " upgrade " /var/log/dpkg.log | tail -30
 grep " install " /var/log/dpkg.log | tail -30
 

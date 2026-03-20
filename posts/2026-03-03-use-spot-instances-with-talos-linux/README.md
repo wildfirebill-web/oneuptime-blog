@@ -43,6 +43,7 @@ Using the AWS provider, create a launch template for Talos spot workers:
 
 ```bash
 # Create a launch template for Talos spot instances
+
 aws ec2 create-launch-template \
   --launch-template-name talos-spot-workers \
   --version-description "Talos Linux spot worker v1" \

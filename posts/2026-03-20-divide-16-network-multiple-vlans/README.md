@@ -28,6 +28,7 @@ vlans = list(parent.subnets(new_prefix=24))
 print(f"Total /24 VLANs: {len(vlans)}")
 
 # Map VLAN IDs to subnets (VLAN ID = third octet)
+
 vlan_assignments = {
     10:  ("Servers",    vlans[10]),
     20:  ("Users-A",    vlans[20]),
@@ -80,7 +81,7 @@ sudo ip addr add 172.16.20.1/24 dev eth0.20   # VLAN 20 gateway
 
 ## Key Takeaways
 
-- A /16 → /24 provides 256 VLANs with 254 hosts each — common enterprise choice.
+- A /16 → /24 provides 256 VLANs with 254 hosts each - common enterprise choice.
 - Align VLAN IDs with the third octet for intuitive mapping (VLAN 10 = 172.16.10.0/24).
 - Use /23 for high-density user segments and /24 or smaller for servers and management.
 - The entire /16 summarizes to a single route advertisement, keeping BGP/OSPF tables clean.

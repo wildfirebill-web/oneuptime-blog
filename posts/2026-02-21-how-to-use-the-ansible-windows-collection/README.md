@@ -18,6 +18,7 @@ On the control node (Linux), install the required Python package:
 
 ```bash
 # Install pywinrm for WinRM connectivity
+
 pip install pywinrm
 
 # Install the ansible.windows collection

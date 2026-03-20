@@ -26,6 +26,7 @@ The key is recording exceptions at every level of the chain, including both the 
 
 ```python
 # payment_service.py - The leaf service where the error originates
+
 from opentelemetry import trace
 
 tracer = trace.get_tracer("payment-service")

@@ -50,6 +50,7 @@ flowchart TD
 
 ```bash
 # Start a service
+
 sudo systemctl start nginx
 
 # Stop a service
@@ -264,9 +265,9 @@ ExecStart=/opt/myapp/bin/myapp
 # Best for services that need time to initialize
 ```
 
-## Resource Limits and Security
+Resource Limits and Security
 
-### Resource Limits
+Resource Limits
 
 ```ini
 [Service]

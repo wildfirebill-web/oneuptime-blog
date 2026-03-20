@@ -44,6 +44,7 @@ Use Cloud Build to run terraform plan on a schedule against your production stat
 
 ```yaml
 # cloudbuild-drift-detection.yaml
+
 # Runs terraform plan to detect configuration drift
 steps:
   # Initialize Terraform with the production backend

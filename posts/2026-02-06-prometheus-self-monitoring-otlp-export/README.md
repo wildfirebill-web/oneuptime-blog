@@ -22,6 +22,7 @@ The Collector handles the conversion from Prometheus exposition format to OTLP m
 
 ```yaml
 # otel-collector-config.yaml
+
 receivers:
   prometheus/self-monitor:
     config:

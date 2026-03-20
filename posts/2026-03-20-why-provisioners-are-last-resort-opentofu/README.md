@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Provisioners, Best Practices, Infrastructure as Code, Cloud-Init
+Tags: OpenTofu, Provisioners, Best Practices, Infrastructure as Code, Cloud-init
 
 Description: Understand why OpenTofu's own documentation recommends provisioners as a last resort and what better alternatives exist for resource configuration and bootstrapping.
 
 ## Introduction
 
-OpenTofu's documentation explicitly states that provisioners are "a last resort." This might seem surprising for such a prominent feature, but the reasons are well-founded. Understanding the limitations of provisioners—and the superior alternatives—is essential for writing maintainable, reliable infrastructure code.
+OpenTofu's documentation explicitly states that provisioners are "a last resort." This might seem surprising for such a prominent feature, but the reasons are well-founded. Understanding the limitations of provisioners-and the superior alternatives-is essential for writing maintainable, reliable infrastructure code.
 
 ## Why Provisioners Are Problematic
 
@@ -29,7 +29,7 @@ flowchart LR
 
 ### 2. They Only Run Once
 
-Creation-time provisioners run exactly once: when the resource is first created. If you later need to change the configuration applied by the provisioner, you must destroy and recreate the resource—which is often unacceptable in production.
+Creation-time provisioners run exactly once: when the resource is first created. If you later need to change the configuration applied by the provisioner, you must destroy and recreate the resource-which is often unacceptable in production.
 
 ### 3. They Create Ordering Dependencies
 
@@ -71,6 +71,7 @@ For complex software stacks, bake a custom AMI with Packer:
 
 ```hcl
 # Use a pre-baked AMI instead of provisioners
+
 data "aws_ami" "app" {
   most_recent = true
   owners      = ["self"]
@@ -122,4 +123,4 @@ Provisioners are acceptable in these narrow situations:
 
 ## Conclusion
 
-Provisioners are powerful but fragile. They work around OpenTofu's declarative model rather than with it. For the majority of use cases—software installation, configuration management, and cloud resource setup—cloud-init, Packer, and proper provider resources offer more reliable, maintainable solutions.
+Provisioners are powerful but fragile. They work around OpenTofu's declarative model rather than with it. For the majority of use cases-software installation, configuration management, and cloud resource setup-cloud-init, Packer, and proper provider resources offer more reliable, maintainable solutions.

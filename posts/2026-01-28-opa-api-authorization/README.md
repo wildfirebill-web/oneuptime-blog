@@ -45,6 +45,7 @@ Deploy OPA alongside your API service:
 
 ```yaml
 # opa-deployment.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -331,7 +332,7 @@ is_business_hours(timestamp) if {
 }
 ```
 
-### Resource-Level Permissions
+Resource-Level Permissions
 
 Implement fine-grained resource access:
 

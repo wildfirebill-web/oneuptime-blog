@@ -24,6 +24,7 @@ Infracost is the most popular tool for estimating Terraform costs before deploym
 
 ```bash
 # Install Infracost
+
 brew install infracost
 
 # or download directly

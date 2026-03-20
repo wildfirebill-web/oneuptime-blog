@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Puppet, radvd, IPv6, Router Advertisement, SLAAC, Automation
+Tags: Puppet, Radvd, IPv6, Router Advertisement, SLAAC, Automation
 
 Description: A guide to automating radvd (Router Advertisement Daemon) configuration using Puppet for consistent IPv6 SLAAC deployment across network infrastructure.
 
@@ -53,7 +53,8 @@ class radvd (
 
 ```erb
 <%# modules/radvd/templates/radvd.conf.erb %>
-# radvd.conf — Managed by Puppet
+# radvd.conf - Managed by Puppet
+
 # Node: <%= @hostname %>
 # Environment: <%= scope['environment'] %>
 

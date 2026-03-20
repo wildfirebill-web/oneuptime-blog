@@ -45,6 +45,7 @@ sudo nano /etc/ddclient.conf
 # /etc/ddclient.conf
 
 # Global settings
+
 daemon=300                # Check every 300 seconds (5 minutes)
 syslog=yes               # Log to syslog
 pid=/var/run/ddclient.pid

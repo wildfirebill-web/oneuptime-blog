@@ -67,6 +67,7 @@ Install the required tools:
 
 ```bash
 # Install Terraform
+
 brew install terraform
 
 # Install OPA

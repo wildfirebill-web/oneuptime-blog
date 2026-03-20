@@ -1,4 +1,4 @@
-# How to Auto-Populate Teams from LDAP Groups in Portainer
+# How to Auto-Populate Teams from LDAP Groups in Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Configure Portainer Business Edition to automatically create and po
 
 ## Introduction
 
-Manually creating Portainer teams and mapping them to LDAP groups works but doesn't scale. Portainer Business Edition provides automatic team population from LDAP groups — when enabled, Portainer creates teams for LDAP groups and adds users to those teams automatically at login. This eliminates all manual team management.
+Manually creating Portainer teams and mapping them to LDAP groups works but doesn't scale. Portainer Business Edition provides automatic team population from LDAP groups - when enabled, Portainer creates teams for LDAP groups and adds users to those teams automatically at login. This eliminates all manual team management.
 
 ## Prerequisites
 
@@ -35,7 +35,7 @@ This provides full lifecycle management: teams are created, populated, and clean
 
 First, ensure group search is configured:
 
-```
+```text
 Group Base DN:     ou=groups,dc=example,dc=com
 Group Attribute:   member
 Group Filter:      (objectClass=groupOfNames)
@@ -96,6 +96,7 @@ curl -X PUT \
 
 ```ldif
 # DevOps team group
+
 dn: cn=devops,ou=groups,dc=example,dc=com
 objectClass: groupOfNames
 cn: devops
@@ -152,7 +153,7 @@ To automatically make members of a specific LDAP group Portainer administrators:
 1. Create an LDAP group called `portainer-admins`
 2. In Portainer LDAP settings, configure the admin group:
 
-```
+```text
 Admin Group:  portainer-admins
 ```
 

@@ -41,6 +41,7 @@ Each function does one thing and passes the result to the next stage via Pub/Sub
 
 ```bash
 # Create topics for each pipeline stage
+
 gcloud pubsub topics create iot-raw-data
 gcloud pubsub topics create iot-validated-data
 gcloud pubsub topics create iot-enriched-data

@@ -20,6 +20,7 @@ Gogs Lightweight Git Service can be installed and configured on RHEL to provide 
 
 ```bash
 # Update the system first
+
 sudo dnf update -y
 
 # Install the required packages

@@ -14,6 +14,7 @@ AWS Elastic Container Service (ECS) is Amazon's managed container orchestration 
 
 ```bash
 # Install AWS collections and dependencies
+
 ansible-galaxy collection install amazon.aws community.aws
 pip install boto3 botocore
 ```

@@ -26,6 +26,7 @@ The fastest way to configure npm is with the `aws codeartifact login` command:
 
 ```bash
 # Configure npm to use your CodeArtifact repository
+
 aws codeartifact login \
   --tool npm \
   --repository my-packages \

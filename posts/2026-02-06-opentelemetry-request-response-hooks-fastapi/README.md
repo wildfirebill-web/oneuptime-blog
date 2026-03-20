@@ -286,6 +286,7 @@ from opentelemetry.instrumentation.fastapi import FastAPIInstrumentor
 app = FastAPI()
 
 # Simulated feature flag service
+
 FEATURE_FLAGS = {
     "new_checkout_flow": True,
     "ai_recommendations": False,

@@ -109,6 +109,7 @@ Pods using much less than requested waste resources:
 
 ```bash
 # Get top usage
+
 kubectl top pods -n production --no-headers | awk '{print $1, $2, $3}' > /tmp/usage.txt
 
 # Get requests

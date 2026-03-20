@@ -18,6 +18,7 @@ Most logging systems use a standard set of severity levels. While the exact name
 
 ```text
 # Common severity levels from least to most severe
+
 DEBUG   - Detailed diagnostic information
 INFO    - General operational messages
 WARNING - Something unexpected but not broken

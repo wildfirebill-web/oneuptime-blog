@@ -35,6 +35,7 @@ This architecture reduces API server connections from N (one per node) to a smal
 
 ```bash
 # Check if Typha is deployed
+
 kubectl get deployment -n calico-system calico-typha
 
 # View Typha pods

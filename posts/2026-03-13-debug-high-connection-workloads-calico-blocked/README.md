@@ -23,6 +23,7 @@ This guide covers debug High-Connection Workloads in Calico with production-read
 
 ```yaml
 # Optimize for high-connection workloads
+
 apiVersion: projectcalico.org/v3
 kind: NetworkPolicy
 metadata:

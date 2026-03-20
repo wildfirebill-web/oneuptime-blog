@@ -38,6 +38,7 @@ Create the IAM role with the necessary permissions.
 
 ```bash
 # Create an IAM role for Spectrum with S3 and Glue access
+
 aws iam create-role \
   --role-name RedshiftSpectrumRole \
   --assume-role-policy-document '{

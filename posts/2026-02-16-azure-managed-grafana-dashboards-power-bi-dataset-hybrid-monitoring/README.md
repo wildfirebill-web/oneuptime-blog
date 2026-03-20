@@ -38,6 +38,7 @@ The key insight is that Grafana excels at time-series visualization and alerting
 
 ```bash
 # Create a resource group
+
 az group create --name rg-monitoring --location eastus
 
 # Create an Azure Managed Grafana instance

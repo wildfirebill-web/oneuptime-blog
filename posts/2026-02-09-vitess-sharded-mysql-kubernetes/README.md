@@ -22,6 +22,7 @@ Deploy Vitess using the official Kubernetes operator:
 
 ```bash
 # Install the Vitess operator
+
 kubectl apply -f https://raw.githubusercontent.com/planetscale/vitess-operator/v2.11.0/deploy/operator.yaml
 
 # Create namespace for Vitess cluster

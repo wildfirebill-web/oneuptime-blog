@@ -18,6 +18,7 @@ First, identify the speaker pod and exec into the FRR container:
 
 ```bash
 # List all MetalLB speaker pods
+
 kubectl get pods -n metallb-system -l component=speaker
 
 # Store the name of one speaker pod

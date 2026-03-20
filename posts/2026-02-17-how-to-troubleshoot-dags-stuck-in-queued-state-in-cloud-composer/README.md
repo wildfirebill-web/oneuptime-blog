@@ -38,6 +38,7 @@ Check how many workers are running and how many tasks they are handling:
 
 ```bash
 # Check worker status
+
 gcloud composer environments describe my-composer-env \
   --location=us-central1 \
   --format="yaml(config.workloadsConfig.worker)"

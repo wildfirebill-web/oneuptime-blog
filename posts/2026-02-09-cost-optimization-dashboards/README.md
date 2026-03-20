@@ -24,6 +24,7 @@ Start with Prometheus for metrics collection and Grafana for visualization. You'
 
 ```bash
 # Install Prometheus stack using Helm
+
 helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
 helm repo update
 

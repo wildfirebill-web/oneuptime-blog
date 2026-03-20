@@ -133,6 +133,7 @@ Monoliths often have extensive configuration. Use ConfigMaps with Kustomize patc
 
 ```yaml
 # base/configmap.yaml
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

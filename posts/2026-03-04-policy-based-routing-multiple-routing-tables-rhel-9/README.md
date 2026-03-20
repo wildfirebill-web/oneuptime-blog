@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Policy-Based Routing, Networking, Routing Tables, Linux
+Tags: RHEL, Policy-Based Routing, Networking, Routing Table, Linux
 
 Description: Learn how to configure policy-based routing with multiple routing tables on RHEL to route traffic based on source address, protocol, or other criteria.
 
@@ -29,6 +29,7 @@ graph TD
 
 ```bash
 # Define named routing tables in /etc/iproute2/rt_tables
+
 # Add two custom tables: isp1 (ID 100) and isp2 (ID 200)
 echo "100 isp1" | sudo tee -a /etc/iproute2/rt_tables
 echo "200 isp2" | sudo tee -a /etc/iproute2/rt_tables

@@ -8,7 +8,7 @@ Description: Learn how to view, search, and manage Kubernetes Secrets in Portain
 
 ## Introduction
 
-Managing Kubernetes Secrets requires balancing operational visibility with security. You need to find the right secret quickly, verify it has the right keys, and understand which workloads depend on it — all without accidentally exposing sensitive values. Portainer provides a Secrets management interface with appropriate value masking, while kubectl offers CLI tools for scripting and automation. This guide covers viewing and filtering Secrets safely in Portainer.
+Managing Kubernetes Secrets requires balancing operational visibility with security. You need to find the right secret quickly, verify it has the right keys, and understand which workloads depend on it - all without accidentally exposing sensitive values. Portainer provides a Secrets management interface with appropriate value masking, while kubectl offers CLI tools for scripting and automation. This guide covers viewing and filtering Secrets safely in Portainer.
 
 ## Prerequisites
 
@@ -24,7 +24,7 @@ Managing Kubernetes Secrets requires balancing operational visibility with secur
 4. Select the **Secrets** tab
 
 The list displays:
-```
+```text
 Name                   Namespace    Type                        Keys    Created
 database-credentials   production   Opaque                      5       2 days ago
 registry-credentials   production   kubernetes.io/dockerconfigjson  1   5 days ago
@@ -46,9 +46,9 @@ In the Secrets list:
    - Select `All namespaces` for cluster-wide view
 
 3. Filter by **Type** if available:
-   - `Opaque` — general purpose secrets
-   - `kubernetes.io/tls` — TLS certificates
-   - `kubernetes.io/dockerconfigjson` — registry credentials
+   - `Opaque` - general purpose secrets
+   - `kubernetes.io/tls` - TLS certificates
+   - `kubernetes.io/dockerconfigjson` - registry credentials
 
 ## Step 3: View Secret Details (Keys Only, Not Values)
 
@@ -58,12 +58,13 @@ Click on a Secret to see its details. Portainer shows:
 - **Keys** listed without revealing values
 - Values are masked by default (shown as `****` or hidden)
 
-Some Portainer versions allow revealing values via a toggle — use this with caution in shared environments or screen sharing sessions.
+Some Portainer versions allow revealing values via a toggle - use this with caution in shared environments or screen sharing sessions.
 
 ## Step 4: View Secret Metadata via kubectl
 
 ```bash
 # List all secrets in a namespace
+
 kubectl get secrets -n production
 
 # View secret keys without values

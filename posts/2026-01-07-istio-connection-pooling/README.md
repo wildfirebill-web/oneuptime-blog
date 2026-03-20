@@ -113,6 +113,7 @@ The following DestinationRule configures basic TCP connection pooling for a serv
 
 ```yaml
 # Basic TCP connection pool configuration
+
 # This DestinationRule applies connection pooling settings to the payment service
 apiVersion: networking.istio.io/v1beta1
 kind: DestinationRule

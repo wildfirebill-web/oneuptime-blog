@@ -30,6 +30,7 @@ Add a HelmRepository source pointing to the official LitmusChaos Helm registry, 
 
 ```yaml
 # clusters/my-cluster/litmus/namespace.yaml
+
 apiVersion: v1
 kind: Namespace
 metadata:

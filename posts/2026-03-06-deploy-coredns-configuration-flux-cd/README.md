@@ -46,6 +46,7 @@ First, let us look at the default CoreDNS ConfigMap to understand the baseline.
 
 ```yaml
 # The default Corefile typically looks like this
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

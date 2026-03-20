@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, Modules, enabled, Conditionals, HCL, Best Practices
+Tags: OpenTofu, Terraform, Modules, Enabled, Conditional, HCL, Best Practices
 
 Description: Learn how to implement an enabled variable pattern in OpenTofu modules to cleanly toggle entire feature sets on and off without changing module interfaces.
 
@@ -16,6 +16,7 @@ Define an `enabled` variable and use it as the basis for all `count` expressions
 
 ```hcl
 # modules/monitoring/variables.tf
+
 variable "enabled" {
   description = "Enable or disable all resources in this module"
   type        = bool

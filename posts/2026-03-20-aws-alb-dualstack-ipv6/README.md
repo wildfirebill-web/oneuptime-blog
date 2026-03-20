@@ -25,6 +25,7 @@ AWS Application Load Balancer (ALB) supports dual-stack mode, allowing it to acc
 
 ```hcl
 # Enable IPv6 on the VPC
+
 resource "aws_vpc" "main" {
   cidr_block                       = "10.0.0.0/16"
   assign_generated_ipv6_cidr_block = true
@@ -157,4 +158,4 @@ resource "aws_lb_target_group" "main" {
 
 **Note**: For IP-type target groups, you can specify IPv6 targets by providing their IPv6 addresses.
 
-AWS ALB's dual-stack mode requires minimal configuration change — just setting `ip_address_type = "dualstack"` and ensuring subnets have IPv6 CIDRs — making it one of the easiest ways to add IPv6 support to existing workloads.
+AWS ALB's dual-stack mode requires minimal configuration change - just setting `ip_address_type = "dualstack"` and ensuring subnets have IPv6 CIDRs - making it one of the easiest ways to add IPv6 support to existing workloads.

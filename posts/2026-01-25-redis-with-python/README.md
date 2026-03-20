@@ -18,6 +18,7 @@ Install redis-py:
 pip install redis
 
 # For faster parsing (recommended)
+
 pip install redis[hiredis]
 ```
 

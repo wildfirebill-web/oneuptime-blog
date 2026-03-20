@@ -385,6 +385,7 @@ def autocomplete(query, size=10):
     ]
 
 # Usage
+
 results = autocomplete("qui bro")
 for r in results:
     print(f"{r['title']} (score: {r['score']:.2f})")

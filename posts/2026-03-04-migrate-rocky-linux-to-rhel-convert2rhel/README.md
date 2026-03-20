@@ -14,6 +14,7 @@ Rocky Linux is binary-compatible with RHEL, which makes the conversion straightf
 
 ```bash
 # Verify your Rocky Linux version
+
 cat /etc/rocky-release
 # Rocky Linux release 9.3 (Blue Onyx)
 

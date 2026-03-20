@@ -1,4 +1,4 @@
-# How to Pass Variables to Child Modules in OpenTofu
+# How to Pass Variables to Child Modules in OpenTofu - Opentofu
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -14,9 +14,9 @@ OpenTofu modules communicate through input variables (passing values in) and out
 
 ## Module Structure
 
-```
+```text
 infrastructure/
-├── main.tf           # root module — calls child modules
+├── main.tf           # root module - calls child modules
 ├── variables.tf      # root module variables
 ├── outputs.tf        # root module outputs
 └── modules/
@@ -31,7 +31,7 @@ infrastructure/
 ## Declaring Variables in the Child Module
 
 ```hcl
-# modules/networking/variables.tf — child module inputs
+# modules/networking/variables.tf - child module inputs
 
 variable "vpc_cidr" {
   type        = string
@@ -55,7 +55,7 @@ variable "availability_zones" {
 ## Calling the Child Module with Variables
 
 ```hcl
-# main.tf — root module calling the child module
+# main.tf - root module calling the child module
 
 variable "environment" {
   type = string
@@ -101,7 +101,8 @@ module "application" {
 ## Accessing Child Module Outputs
 
 ```hcl
-# modules/networking/outputs.tf — child module exports
+# modules/networking/outputs.tf - child module exports
+
 output "vpc_id" {
   value = aws_vpc.main.id
 }
@@ -112,7 +113,7 @@ output "private_subnet_ids" {
 ```
 
 ```hcl
-# main.tf — root module uses child module outputs
+# main.tf - root module uses child module outputs
 resource "aws_eks_cluster" "main" {
   name = "my-cluster"
 
@@ -129,7 +130,7 @@ resource "aws_eks_cluster" "main" {
 ## Forwarding Root Module Variables to Multiple Modules
 
 ```hcl
-# main.tf — pass the same variable to multiple modules
+# main.tf - pass the same variable to multiple modules
 
 module "networking" {
   source      = "./modules/networking"
@@ -155,4 +156,4 @@ module "application" {
 
 ## Summary
 
-Pass variables to child modules as named arguments in the `module` block — each argument corresponds to a declared `variable` in the child module. Use `var.<name>` to forward root module variables to children, and use `module.<name>.<output>` to pass a child module's output as input to another module. Required variables (no default) in the child module must always be explicitly provided.
+Pass variables to child modules as named arguments in the `module` block - each argument corresponds to a declared `variable` in the child module. Use `var.<name>` to forward root module variables to children, and use `module.<name>.<output>` to pass a child module's output as input to another module. Required variables (no default) in the child module must always be explicitly provided.

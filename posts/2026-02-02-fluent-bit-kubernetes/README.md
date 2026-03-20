@@ -64,6 +64,7 @@ Create a file named `fluent-bit-rbac.yaml`:
 
 ```yaml
 # Create a dedicated namespace for logging infrastructure
+
 # Keeping observability components isolated makes management easier
 apiVersion: v1
 kind: Namespace

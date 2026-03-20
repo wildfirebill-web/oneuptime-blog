@@ -51,6 +51,7 @@ In each cluster's Istio installation:
 
 ```yaml
 # Cluster A
+
 apiVersion: install.istio.io/v1alpha1
 kind: IstioOperator
 metadata:

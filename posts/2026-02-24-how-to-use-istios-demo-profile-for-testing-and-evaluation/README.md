@@ -246,6 +246,7 @@ Then open the dashboards:
 
 ```bash
 # Service mesh topology
+
 istioctl dashboard kiali
 
 # Metrics and dashboards
@@ -297,7 +298,7 @@ spec:
 
 This routes external HTTPS traffic through the mesh, giving you visibility and control over outbound calls.
 
-## Resource Usage of the Demo Profile
+Resource Usage of the Demo Profile
 
 The demo profile uses minimal resources to fit on small clusters:
 

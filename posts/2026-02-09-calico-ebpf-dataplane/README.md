@@ -29,6 +29,7 @@ Before enabling eBPF dataplane, verify your environment meets these requirements
 
 ```bash
 # Check kernel version (minimum 5.3, recommended 5.10+)
+
 uname -r
 
 # Verify BPF filesystem is mounted

@@ -36,6 +36,7 @@ The simplest way to generate a support bundle:
 
 ```yaml
 # supportbundle.yaml - Generate a Longhorn support bundle via CRD
+
 apiVersion: longhorn.io/v1beta2
 kind: SupportBundle
 metadata:

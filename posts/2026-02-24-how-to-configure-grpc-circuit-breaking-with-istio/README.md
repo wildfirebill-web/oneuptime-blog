@@ -159,6 +159,7 @@ You can check if the circuit breaker has tripped by looking at Envoy stats:
 
 ```bash
 # Check for overflow (circuit breaker tripped) events
+
 kubectl exec -it <client-pod> -c istio-proxy -- \
   pilot-agent request GET stats | grep "upstream_rq_pending_overflow"
 

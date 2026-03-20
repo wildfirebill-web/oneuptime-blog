@@ -16,6 +16,7 @@ Start by enabling Security Hub with the compliance standards you need:
 
 ```hcl
 # Enable Security Hub
+
 resource "aws_securityhub_account" "main" {}
 
 # Enable AWS Foundational Security Best Practices

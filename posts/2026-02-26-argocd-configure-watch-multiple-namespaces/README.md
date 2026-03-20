@@ -16,6 +16,7 @@ In a standard ArgoCD installation, the application controller and API server onl
 
 ```bash
 # This works (Application in argocd namespace)
+
 kubectl apply -f my-app.yaml -n argocd
 
 # This is ignored (Application in another namespace)

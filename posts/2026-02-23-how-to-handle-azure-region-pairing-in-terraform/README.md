@@ -29,6 +29,7 @@ Azure does not expose region pairing through a Terraform data source directly, b
 
 ```hcl
 # locals.tf - Azure region pairs lookup
+
 locals {
   # Complete map of Azure region pairs
   region_pairs = {

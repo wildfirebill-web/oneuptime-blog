@@ -133,6 +133,7 @@ Each Typha pod should show a different node name in the `NODE` column.
 
 ```bash
 # Check connection counts on each Typha pod
+
 for pod in $(kubectl get pods -n calico-system -l k8s-app=calico-typha -o name); do
   echo "=== $pod ==="
   kubectl exec -n calico-system $pod -- \

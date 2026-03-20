@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Routing, Networking, sysctl, RFC 4861
+Tags: IPv6, Routing, Networking, Sysctl, RFC 4861
 
 Description: Understand the key behavioral differences between IPv6 routers and hosts, including packet forwarding, Router Advertisement handling, and ICMPv6 responses.
 
@@ -25,6 +25,7 @@ In IPv6, a node is either a **host** or a **router**. This distinction affects h
 
 ```bash
 # Check if the node is behaving as a router
+
 sysctl net.ipv6.conf.all.forwarding
 # 0 = host behavior
 # 1 = router behavior
@@ -75,7 +76,7 @@ sudo sysctl -w net.ipv6.conf.eth0.accept_ra=2
 ## radvd Configuration (Linux Router Advertisement Daemon)
 
 ```bash
-# /etc/radvd.conf — Basic router advertisement configuration
+# /etc/radvd.conf - Basic router advertisement configuration
 interface eth1 {
     AdvSendAdvert on;          # Send RAs on this interface
     MinRtrAdvInterval 30;

@@ -24,6 +24,7 @@ Start by getting an overview of the problem.
 
 ```bash
 # Check the status of all GitRepository sources
+
 flux get source git -A
 ```
 

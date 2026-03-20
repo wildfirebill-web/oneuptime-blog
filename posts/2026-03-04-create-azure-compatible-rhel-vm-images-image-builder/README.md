@@ -14,6 +14,7 @@ RHEL Image Builder can create VHD (Virtual Hard Disk) images compatible with Mic
 
 ```toml
 # azure-server.toml
+
 name = "azure-server"
 description = "Custom RHEL image for Azure deployment"
 version = "1.0.0"

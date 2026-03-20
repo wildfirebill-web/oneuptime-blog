@@ -12,7 +12,7 @@ Backups have no value unless you can restore from them. Testing backup restorati
 
 ## Restoration Testing Principles
 
-```
+```text
 Testing hierarchy for IPv6 backup restoration:
 1. File-level restore test (individual files)
 2. Application-level restore test (databases, services)
@@ -38,6 +38,7 @@ echo "Destination: $TEST_RESTORE_DIR"
 echo ""
 
 # Create test restore directory
+
 mkdir -p "$TEST_RESTORE_DIR"
 
 # Restore specific directory from backup

@@ -41,6 +41,7 @@ After installation:
 
 ```bash
 # Update all packages
+
 sudo apt update && sudo apt upgrade -y
 
 # Set a hostname if not done during install

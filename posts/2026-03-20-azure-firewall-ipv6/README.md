@@ -17,6 +17,7 @@ RG="rg-firewall"
 LOCATION="eastus"
 
 # Hub VNet with dual-stack
+
 az network vnet create \
     --resource-group "$RG" \
     --name vnet-hub \

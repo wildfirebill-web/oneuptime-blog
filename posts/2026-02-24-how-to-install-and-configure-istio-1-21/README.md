@@ -136,6 +136,7 @@ Or use a values file for cleaner configuration:
 
 ```yaml
 # istiod-values.yaml
+
 pilot:
   resources:
     requests:

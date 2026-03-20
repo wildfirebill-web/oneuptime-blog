@@ -27,6 +27,7 @@ This guide walks through the complete setup process including kernel verificatio
 
 ```bash
 # Check kernel version on all nodes
+
 for node in $(kubectl get nodes -o jsonpath='{.items[*].metadata.name}'); do
   kernel=$(kubectl debug node/${node} --image=alpine -it --quiet -- uname -r 2>/dev/null | tr -d '\r')
   echo "${node}: ${kernel}"

@@ -61,10 +61,11 @@ resource "azurerm_storage_account" "main" {
 
 ### Direct ARM Integration
 
-Bicep compiles directly to ARM JSON templates, giving you access to every Azure feature the moment it's released — no waiting for provider updates:
+Bicep compiles directly to ARM JSON templates, giving you access to every Azure feature the moment it's released - no waiting for provider updates:
 
 ```bash
 # Bicep deploys directly via Azure CLI or Azure DevOps
+
 az deployment group create \
   --resource-group my-rg \
   --template-file main.bicep \

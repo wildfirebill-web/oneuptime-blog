@@ -45,6 +45,7 @@ You need the following Azure resources:
 
 ```bash
 # Install the required Python packages
+
 pip install azure-search-documents==11.6.0 openai
 ```
 

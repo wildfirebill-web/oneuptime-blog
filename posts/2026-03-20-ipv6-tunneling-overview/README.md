@@ -21,11 +21,11 @@ IPv6 tunneling carries IPv6 packets inside IPv4 packets, allowing IPv6 connectiv
 | ISATAP | RFC 5214 | Proto 41 on enterprise LANs | No | Enterprise intra-site | Deprecated |
 | GRE | RFC 2784 | Any payload in GRE/IPv4 | No | Flexible transport | Still used |
 
-## Protocol 41 — The Core Mechanism
+## Protocol 41 - The Core Mechanism
 
 Most IPv6-in-IPv4 tunnels use IP protocol number 41:
 
-```
+```text
 IPv4 outer header:
   Protocol: 41 (0x29)
   Source: IPv4 address of tunnel endpoint
@@ -37,6 +37,7 @@ IPv6 inner packet:
 
 ```bash
 # Capture protocol 41 traffic
+
 tcpdump -i eth0 "proto 41"
 
 # On Linux, protocol 41 tunnels use the "sit" driver
@@ -44,11 +45,11 @@ ip tunnel show
 modinfo sit
 ```
 
-## 6in4 (SIT — Simple Internet Transition)
+## 6in4 (SIT - Simple Internet Transition)
 
 Manual point-to-point tunnel. Both ends are statically configured:
 
-```
+```text
 [Site A] ──proto41──► [Tunnel Broker] ──native IPv6──► Internet
 2001:db8:a::/48          IPv4 Internet
 ```
@@ -67,15 +68,15 @@ Best for: connecting a site with IPv4 connectivity to an IPv6 tunnel broker.
 
 Automatic address derivation from IPv4 public address:
 
-```
+```text
 IPv4: 203.0.113.10
 6to4 prefix: 2002:cb00:710a::/48   (2002 + IPv4 in hex)
 
-Relay: anycast 192.88.99.1 (now deprecated — RFC 7526)
+Relay: anycast 192.88.99.1 (now deprecated - RFC 7526)
 ```
 
 Problems that led to deprecation:
-- Relay quality varies wildly — broken relays cause random failures
+- Relay quality varies wildly - broken relays cause random failures
 - Anycast relay 192.88.99.1 was decommissioned (RFC 7526, 2015)
 - Often results in worse performance than IPv4 alone
 - Security issues from uncontrolled relay network
@@ -84,7 +85,7 @@ Problems that led to deprecation:
 
 ISP-controlled version of 6to4 with operator-owned relays:
 
-```
+```text
 ISP prefix: 2001:db8::/32
 IPv4: 192.168.1.10 (→ hex: c0a8:010a)
 6rd prefix for host: 2001:db8:c0a8:010a::/64
@@ -92,14 +93,14 @@ IPv4: 192.168.1.10 (→ hex: c0a8:010a)
 
 Better than 6to4 because ISP controls relay quality, but still requires tunneling infrastructure.
 
-## Teredo — IPv6 Through NAT
+## Teredo - IPv6 Through NAT
 
 Encapsulates IPv6 in UDP/IPv4 for NAT traversal:
 
-```
+```text
 Client (behind NAT)
   ↓
-[NAT device — IPv4 only]
+[NAT device - IPv4 only]
   ↓
 Teredo Server (2001::/32 → Teredo address space)
   ↓
@@ -110,23 +111,23 @@ Teredo addresses use the `2001::/32` prefix. Communication goes through Teredo s
 
 ## ISATAP
 
-Intra-Site Automatic Tunnel Addressing Protocol — creates an IPv6 overlay on IPv4 enterprise LANs. Addresses embed the IPv4 address: `fe80::0:5efe:192.0.2.10`. Deprecated and removed from Windows Server 2022 and later.
+Intra-Site Automatic Tunnel Addressing Protocol - creates an IPv6 overlay on IPv4 enterprise LANs. Addresses embed the IPv4 address: `fe80::0:5efe:192.0.2.10`. Deprecated and removed from Windows Server 2022 and later.
 
 ## GRE Tunnels
 
 Generic Routing Encapsulation (RFC 2784) can carry IPv6 as a payload over an IPv4 GRE tunnel:
 
-```
+```text
 Outer IPv4 header (protocol: GRE = 47)
 GRE header
 Inner IPv6 packet
 ```
 
-GRE is more flexible than SIT — it can carry multiple protocols and works with routing protocols over the tunnel. Still used in many operator and enterprise networks.
+GRE is more flexible than SIT - it can carry multiple protocols and works with routing protocols over the tunnel. Still used in many operator and enterprise networks.
 
 ## Security Concerns
 
-```
+```text
 Tunneled traffic may bypass:
   - IPv6 firewall (firewall inspects IPv4, not inner IPv6)
   - IDS/IPS (signature matching on IPv6 payload missed)

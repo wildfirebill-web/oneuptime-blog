@@ -1,4 +1,4 @@
-# How to Use External Secrets Operator with Portainer on Kubernetes
+# How to Use External Secrets Operator with Portainer on Kubernetes (2)
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -20,6 +20,7 @@ The External Secrets Operator (ESO) is a Kubernetes operator that integrates wit
 
 ```bash
 # Add ESO Helm repository
+
 helm repo add external-secrets https://charts.external-secrets.io
 helm repo update
 

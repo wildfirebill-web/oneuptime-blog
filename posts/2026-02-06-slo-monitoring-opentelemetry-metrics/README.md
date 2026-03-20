@@ -140,6 +140,7 @@ Here are the PromQL queries for common SLOs:
 
 ```yaml
 # slo-recording-rules.yaml
+
 # These recording rules pre-compute SLO values every 30 seconds
 # so dashboards and alerts can query them efficiently
 

@@ -30,6 +30,7 @@ Check the current and upcoming releases:
 
 ```bash
 # Check your current version
+
 istioctl version
 
 # Check the latest available release

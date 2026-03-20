@@ -43,6 +43,7 @@ First, check if the Dex pod is running:
 
 ```bash
 # Check Dex pod status
+
 kubectl get pods -n argocd -l app.kubernetes.io/name=argocd-dex-server
 
 # Check Dex logs for startup errors

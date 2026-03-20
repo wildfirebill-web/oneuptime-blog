@@ -24,6 +24,7 @@ Run traceroute from a pod to trace the path to a destination:
 
 ```bash
 # Deploy a pod with network tools
+
 kubectl run netshoot --rm -it --image=nicolaka/netshoot -- bash
 
 # Trace route to external endpoint

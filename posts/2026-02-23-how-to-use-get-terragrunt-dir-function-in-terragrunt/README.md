@@ -251,6 +251,7 @@ inputs = {
 
 ```yaml
 # live/project.yaml
+
 name: my-project
 team: platform-engineering
 cost_center: ENG-001

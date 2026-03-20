@@ -35,6 +35,7 @@ Create a dedicated ArgoCD Application for traffic policies, separate from your s
 
 ```yaml
 # traffic-policies-app.yaml
+
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:

@@ -22,6 +22,7 @@ Godot 4 runs on modest hardware:
 
 ```bash
 # Check Vulkan support (for Godot 4)
+
 sudo apt install -y vulkan-tools
 vulkaninfo 2>/dev/null | grep "deviceName"
 

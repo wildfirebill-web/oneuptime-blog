@@ -70,6 +70,7 @@ The Grafana HTTP API allows you to create, update, and delete annotations progra
 
 ```bash
 # Create a point-in-time annotation
+
 curl -X POST \
   -H "Authorization: Bearer YOUR_API_KEY" \
   -H "Content-Type: application/json" \

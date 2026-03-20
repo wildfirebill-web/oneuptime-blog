@@ -88,6 +88,7 @@ Nginx provides location blocks to apply different caching rules based on file pa
 
 ```nginx
 # Main server block with caching configuration
+
 server {
     listen 80;
     server_name example.com;

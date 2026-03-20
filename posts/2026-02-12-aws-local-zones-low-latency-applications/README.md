@@ -42,6 +42,7 @@ Like Wavelength Zones, Local Zones are opt-in.
 
 ```bash
 # List all available Local Zones
+
 aws ec2 describe-availability-zones \
   --all-availability-zones \
   --filters "Name=zone-type,Values=local-zone" \

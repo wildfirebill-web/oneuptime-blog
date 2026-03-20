@@ -29,6 +29,7 @@ Create a systemd mount unit for the BPF filesystem:
 
 ```bash
 # Create the systemd mount unit
+
 sudo tee /etc/systemd/system/sys-fs-bpf.mount <<EOF
 [Unit]
 Description=BPF mounts

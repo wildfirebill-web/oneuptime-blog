@@ -272,6 +272,7 @@ After configuring everything, verify the actual security context of running pods
 
 ```bash
 # Check all containers in a pod
+
 kubectl get pod -l app=myapp -o json | \
   jq '.items[0].spec.containers[] | {
     name: .name,

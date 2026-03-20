@@ -1,4 +1,4 @@
-# How to Configure Cross-Cluster Service Discovery in Rancher
+# How to Configure Cross-Cluster Service Discovery in Rancher - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -24,6 +24,7 @@ Submariner creates a secure tunnel between clusters and installs a DNS proxy tha
 
 ```bash
 # Check Pod CIDR for each cluster
+
 for kubeconfig in /tmp/kc-cluster-*.yaml; do
   echo "=== ${kubeconfig} ==="
   kubectl --kubeconfig="${kubeconfig}" get nodes \
@@ -54,7 +55,7 @@ subctl deploy-broker \
   --kubeconfig /tmp/kc-management.yaml \
   --globalnet   # Enable if CIDRs do overlap (uses virtual IPs)
 
-# A broker-info.subm file is generated — this is needed to join other clusters
+# A broker-info.subm file is generated - this is needed to join other clusters
 ls broker-info.subm
 ```
 
@@ -156,7 +157,7 @@ spec:
           image: ghcr.io/my-org/myapp:latest
           env:
             - name: DATABASE_URL
-              # Cross-cluster DNS name — resolves to postgres in cluster-1
+              # Cross-cluster DNS name - resolves to postgres in cluster-1
               value: "postgres://user:pass@postgres.production.svc.clusterset.local:5432/mydb"
 ```
 

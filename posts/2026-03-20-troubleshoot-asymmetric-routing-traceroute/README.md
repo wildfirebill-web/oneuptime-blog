@@ -6,11 +6,11 @@ Tags: Traceroute, Asymmetric Routing, Networking, IPv4, BGP, Diagnostics
 
 Description: Detect and diagnose asymmetric routing where forward and return network paths differ, using traceroute and analyzing RTT patterns and hop asymmetry indicators.
 
-Asymmetric routing — where packets travel different paths in each direction — causes connection problems, firewall stateful inspection failures, and confusing network behavior. Traceroute usually captures only the forward path, making asymmetry hard to detect without the right techniques.
+Asymmetric routing - where packets travel different paths in each direction - causes connection problems, firewall stateful inspection failures, and confusing network behavior. Traceroute usually captures only the forward path, making asymmetry hard to detect without the right techniques.
 
 ## What Is Asymmetric Routing?
 
-```
+```text
 Symmetric routing:
   Host A → Router 1 → Router 2 → Host B
   Host B → Router 2 → Router 1 → Host A  ← same path in reverse
@@ -31,6 +31,7 @@ Problems caused:
 tracepath -n 8.8.8.8
 
 # "asymm X" in tracepath output = forward hops ≠ return hops at this point
+
 # 3:  no reply
 # 4:  72.14.218.46                                       17.232ms asymm  5
 #                                                                   ^^^^^^
@@ -49,7 +50,7 @@ traceroute -n 10.200.0.1
 # Run from host B (target):
 traceroute -n 10.100.0.1
 
-# Compare the hops — if they're different, you have asymmetric routing
+# Compare the hops - if they're different, you have asymmetric routing
 # Forward: A → R1 → R2 → R3 → B
 # Return:  B → R5 → R6 → A   ← completely different path
 ```
@@ -96,7 +97,7 @@ sudo conntrack -L | grep 10.200.0.1   # Should show ESTABLISHED
 
 ```bash
 # Problem: traffic from eth0 (192.168.1.0/24) is returning via eth1
-# Solution: policy routing — force replies to use same interface as request
+# Solution: policy routing - force replies to use same interface as request
 
 # Create a routing table for eth0 traffic
 echo "100 eth0-rt" | sudo tee -a /etc/iproute2/rt_tables
@@ -119,7 +120,7 @@ ip route show table eth0-rt
 sudo mtr -n --report --report-cycles=10 8.8.8.8
 
 # High jitter at intermediate hops (not destination) suggests
-# asymmetric ICMP responses — forward path differs from return
+# asymmetric ICMP responses - forward path differs from return
 ```
 
-Asymmetric routing is often benign on the internet but causes severe problems when stateful firewalls or NAT are involved — policy routing is the primary fix for controlled environments.
+Asymmetric routing is often benign on the internet but causes severe problems when stateful firewalls or NAT are involved - policy routing is the primary fix for controlled environments.

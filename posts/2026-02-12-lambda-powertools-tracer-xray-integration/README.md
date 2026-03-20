@@ -33,6 +33,7 @@ First, enable active tracing on your Lambda function and initialize the Tracer.
 
 ```yaml
 # SAM template - enable tracing
+
 Resources:
   MyFunction:
     Type: AWS::Serverless::Function

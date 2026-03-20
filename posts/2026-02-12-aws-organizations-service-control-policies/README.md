@@ -18,6 +18,7 @@ Start by creating an organization from your management account:
 
 ```bash
 # Create an organization with all features enabled
+
 # "ALL" means you get both consolidated billing AND SCPs
 aws organizations create-organization --feature-set ALL
 ```

@@ -71,6 +71,7 @@ After the cluster is created, generate the node registration command:
 CLUSTER_ID="my-rke2-cluster"
 
 # Get the cluster registration token
+
 curl -s -k \
   -H "Authorization: Bearer ${RANCHER_TOKEN}" \
   "${RANCHER_URL}/v3/clusterregistrationtokens?clusterId=${CLUSTER_ID}" | jq '.data[0] | {

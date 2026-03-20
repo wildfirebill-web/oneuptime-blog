@@ -135,7 +135,7 @@ curl -X POST https://hooks.example.com/notify \
 ## Best Practices
 
 - Always redirect stderr with `2>&1` when capturing JSON output, as some messages go to stderr.
-- Process output line by line — each line is an independent JSON object (JSONL format).
+- Process output line by line - each line is an independent JSON object (JSONL format).
 - Use `jq -s` to collect all lines into an array for summary processing.
 - Store raw JSON output as CI artifacts for audit purposes.
 - Filter on `@level: "error"` to detect failures programmatically.

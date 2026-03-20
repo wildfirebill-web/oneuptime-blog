@@ -112,6 +112,7 @@ aws iam attach-role-policy \
 
 ```yaml
 # infrastructure/cloudwatch/namespace.yaml
+
 apiVersion: v1
 kind: Namespace
 metadata:

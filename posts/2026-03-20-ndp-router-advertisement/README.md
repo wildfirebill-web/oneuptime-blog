@@ -12,7 +12,7 @@ Router Advertisement (RA) is ICMPv6 Type 134, sent by routers periodically and i
 
 ## RA Message Format
 
-```
+```text
 ICMPv6 Router Advertisement (Type 134):
 
  0                   1                   2                   3
@@ -36,7 +36,7 @@ IPv6 Header:
 
 ## RA Fields Explained
 
-```
+```text
 Cur Hop Limit (8 bits):
   Default Hop Limit for outgoing packets from hosts
   Typically 64; set to 0 if router doesn't specify a value
@@ -68,6 +68,7 @@ Retrans Timer (32 bits):
 
 ```bash
 # View an actual RA being sent on your network
+
 sudo tcpdump -i eth0 -vv "icmp6 and ip6[40] == 134"
 
 # Example RA output with all common options:

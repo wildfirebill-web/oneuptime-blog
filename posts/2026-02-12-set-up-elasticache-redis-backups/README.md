@@ -32,6 +32,7 @@ The simplest approach is to enable backups when you create the replication group
 
 ```bash
 # Create Redis with automatic daily backups
+
 aws elasticache create-replication-group \
   --replication-group-id my-redis-with-backups \
   --replication-group-description "Redis with automatic backups" \

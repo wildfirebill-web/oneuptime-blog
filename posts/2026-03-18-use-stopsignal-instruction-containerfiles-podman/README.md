@@ -82,6 +82,7 @@ Compare the behavior:
 
 ```bash
 # Build and run
+
 podman build -t my-nginx .
 podman run -d --name web -p 8080:80 my-nginx
 

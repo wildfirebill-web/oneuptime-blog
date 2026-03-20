@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: NGINX, Proxy, URL Encoding, Proxy_pass, Reverse Proxy, DevOps
+Tags: Nginx, Proxy, URL Encoding, Proxy_pass, Reverse Proxy, DevOps
 
 Description: Learn how to properly handle URL encoding and decoding when using Nginx proxy_pass. Understand when URLs get double-encoded and how to preserve the original encoding.
 
@@ -68,6 +68,7 @@ By default, Nginx normalizes URIs:
 
 ```nginx
 # This configuration normalizes URIs
+
 location /api/ {
     proxy_pass http://backend/api/;
 }

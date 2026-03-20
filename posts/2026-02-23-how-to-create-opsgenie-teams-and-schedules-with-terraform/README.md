@@ -33,6 +33,7 @@ variable "opsgenie_api_key" { type = string; sensitive = true }
 
 ```hcl
 # Create a platform engineering team
+
 resource "opsgenie_team" "platform" {
   name        = "Platform Engineering"
   description = "Responsible for core infrastructure and platform services"

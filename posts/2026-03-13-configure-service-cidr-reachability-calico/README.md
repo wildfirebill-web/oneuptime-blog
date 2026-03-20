@@ -29,6 +29,7 @@ Before configuring advertisement, confirm your cluster's service CIDR.
 
 ```bash
 # Get the service CIDR from the kube-apiserver configuration
+
 kubectl cluster-info dump | grep -m 1 service-cluster-ip-range
 
 # Alternative: check the kube-controller-manager manifest

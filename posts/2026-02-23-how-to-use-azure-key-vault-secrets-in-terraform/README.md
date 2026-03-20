@@ -16,6 +16,7 @@ Start by creating a Key Vault with proper access controls:
 
 ```hcl
 # Get current identity
+
 data "azurerm_client_config" "current" {}
 
 # Resource group

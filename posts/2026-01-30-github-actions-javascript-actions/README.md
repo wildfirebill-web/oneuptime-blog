@@ -54,6 +54,7 @@ description: 'Posts a formatted comment on pull requests with custom content'
 author: 'your-username'
 
 # Branding appears in the GitHub Marketplace
+
 branding:
   icon: 'message-square'
   color: 'blue'

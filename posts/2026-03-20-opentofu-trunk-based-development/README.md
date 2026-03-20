@@ -20,6 +20,7 @@ Learn how to implement trunk-based development for OpenTofu with feature flags a
 
 ```bash
 # Verify OpenTofu installation
+
 tofu version
 
 # Set up required environment variables

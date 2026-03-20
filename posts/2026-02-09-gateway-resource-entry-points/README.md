@@ -22,6 +22,7 @@ Start with a simple Gateway that accepts HTTP traffic.
 
 ```yaml
 # gateway-http.yaml
+
 apiVersion: gateway.networking.k8s.io/v1
 kind: Gateway
 metadata:

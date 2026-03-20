@@ -138,6 +138,7 @@ Once your custom receiver is compiled into the collector, configure it alongside
 
 ```yaml
 # otel-collector-config.yaml
+
 receivers:
   # Custom Epic EHR receiver
   epic:

@@ -478,7 +478,7 @@ data:
     </match>
 ```
 
-## Resource Management
+Resource Management
 
 Properly configure sidecar resources:
 

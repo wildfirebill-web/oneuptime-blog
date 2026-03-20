@@ -39,6 +39,7 @@ sudo systemctl restart docker
 
 ```bash
 # Check docker0 bridge uses the new range
+
 ip addr show docker0 | grep inet
 
 # Create a test network and confirm it gets an address from the pool
@@ -100,7 +101,7 @@ Custom networks defined without explicit subnets in Docker Compose will now use 
 ```yaml
 networks:
   app-net:
-    # No subnet specified — will use 10.200.x.0/24 from the pool
+    # No subnet specified - will use 10.200.x.0/24 from the pool
     driver: bridge
 ```
 

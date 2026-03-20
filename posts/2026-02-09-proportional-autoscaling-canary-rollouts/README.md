@@ -101,6 +101,7 @@ Create separate HPAs for each version:
 
 ```yaml
 # HPA for stable version
+
 apiVersion: autoscaling/v2
 kind: HorizontalPodAutoscaler
 metadata:

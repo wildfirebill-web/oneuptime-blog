@@ -49,6 +49,7 @@ The bridge driver is the most commonly used network type. It creates an isolated
 
 ```hcl
 # Create a simple bridge network
+
 resource "docker_network" "app" {
   name   = "app-network"
   driver = "bridge"

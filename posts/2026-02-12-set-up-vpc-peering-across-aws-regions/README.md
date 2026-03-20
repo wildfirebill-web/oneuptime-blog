@@ -49,6 +49,7 @@ The requester specifies the peer region explicitly:
 
 ```bash
 # Run in us-east-1 (requester region)
+
 PEERING_ID=$(aws ec2 create-vpc-peering-connection \
   --vpc-id vpc-us-east-aaa \
   --peer-vpc-id vpc-eu-west-bbb \

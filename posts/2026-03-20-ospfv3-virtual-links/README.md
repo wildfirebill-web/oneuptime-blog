@@ -30,7 +30,7 @@ Area 2 is not directly connected to Area 0. A virtual link through Area 1 (the t
 
 ## Configuring Virtual Links on Cisco IOS
 
-```
+```text
 ! Virtual links are configured on both ABRs at each end
 
 ! On R1 (ABR between Area 0 and Area 1)
@@ -52,11 +52,11 @@ Router-R2(config-router-af)# area 1 virtual-link 1.1.1.1
 vtysh
 configure terminal
 
-! On R1 — virtual link through Area 1 to R2 (router-id 2.2.2.2)
+! On R1 - virtual link through Area 1 to R2 (router-id 2.2.2.2)
 router ospf6
  area 0.0.0.1 virtual-link 2.2.2.2
 
-! On R2 — virtual link through Area 1 to R1 (router-id 1.1.1.1)
+! On R2 - virtual link through Area 1 to R1 (router-id 1.1.1.1)
 router ospf6
  area 0.0.0.1 virtual-link 1.1.1.1
 
@@ -66,13 +66,13 @@ write memory
 
 ## Virtual Link Requirements
 
-1. The **transit area** (Area 1 in this example) must be a regular area — NOT a stub or NSSA
+1. The **transit area** (Area 1 in this example) must be a regular area - NOT a stub or NSSA
 2. Both ABRs must configure the virtual link using each other's **Router IDs** (not IP addresses)
 3. The virtual link is treated as a point-to-point link in Area 0
 
 ## Verifying Virtual Links
 
-```
+```text
 ! Cisco: Verify virtual link state
 Router# show ospfv3 virtual-links
 
@@ -89,6 +89,7 @@ Virtual Link OSPF_VL0 to router 2.2.2.2 is up
 
 ```bash
 # FRRouting: Check virtual link status
+
 vtysh -c "show ipv6 ospf virtual-link"
 ```
 
@@ -104,12 +105,12 @@ vtysh -c "show ipv6 ospf virtual-link"
 #    Fix: Remove stub/nssa config from the transit area
 
 # 3. ABRs cannot reach each other through the transit area
-#    Verify: show ipv6 route — both ABRs must have routes to each other
+#    Verify: show ipv6 route - both ABRs must have routes to each other
 ```
 
 ## Virtual Links with Authentication
 
-```
+```text
 ! Cisco: Add IPsec authentication to a virtual link
 Router(config)# router ospfv3 1
 Router(config-router)# address-family ipv6 unicast

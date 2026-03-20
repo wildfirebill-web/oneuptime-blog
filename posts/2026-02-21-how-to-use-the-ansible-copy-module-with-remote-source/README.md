@@ -18,6 +18,7 @@ Here is a simple example of copying a file from one location to another on the s
 
 ```yaml
 # Copy a file between two locations on the remote host
+
 - name: Copy config to backup location
   ansible.builtin.copy:
     src: /etc/myapp/config.yml

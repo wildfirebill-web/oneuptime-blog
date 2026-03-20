@@ -141,6 +141,7 @@ Export the PingFederate IdP metadata:
 
 ```bash
 # Download the metadata
+
 curl -s "https://pingfederate.example.com/pf/federation_metadata.ping?PartnerSpId=https://rancher.example.com/v1-saml/ping/saml/metadata" \
   > ping-idp-metadata.xml
 

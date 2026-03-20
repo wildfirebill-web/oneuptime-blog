@@ -24,6 +24,7 @@ The simplest integration pattern is using Terraform to generate an Ansible inven
 
 ```hcl
 # Terraform configuration to provision instances
+
 resource "aws_instance" "web_servers" {
   count         = var.web_server_count
   ami           = var.ami_id

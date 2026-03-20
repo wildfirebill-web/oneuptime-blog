@@ -37,6 +37,7 @@ First, configure Vertex AI Model Monitoring to detect drift and send alerts.
 
 ```python
 # setup_monitoring.py
+
 from google.cloud import aiplatform
 from google.cloud.aiplatform import model_monitoring
 

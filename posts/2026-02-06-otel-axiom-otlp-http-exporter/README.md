@@ -40,6 +40,7 @@ resource = Resource.create({
 })
 
 # Configure trace exporter
+
 trace_exporter = OTLPSpanExporter(
     endpoint="https://api.axiom.co/v1/traces",
     headers={

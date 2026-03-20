@@ -24,6 +24,7 @@ Here is the machine configuration for a control plane node with a single interfa
 
 ```yaml
 # Control plane node with single NIC and VIP
+
 machine:
   network:
     hostname: cp-01

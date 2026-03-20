@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, AWS, EC2, AMI, Infrastructure as Code, Compute, Golden Images
+Tags: OpenTofu, AWS, EC2, AMI, Infrastructure as Code, Compute, Golden Image
 
 Description: Learn how to create EC2 instances using custom AMIs with OpenTofu, including how to look up AMIs by filters and launch instances from your own golden images.
 
@@ -20,6 +20,7 @@ Custom AMIs (Amazon Machine Images) are pre-configured virtual machine images th
 
 ```hcl
 # Data source to fetch the latest Amazon Linux 2023 AMI
+
 # Filters ensure we always get the current version
 data "aws_ami" "amazon_linux" {
   most_recent = true

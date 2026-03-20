@@ -23,6 +23,7 @@ Make sure your inventory format is correct:
 
 ```ini
 # INI format inventory (hosts.ini)
+
 [webservers]
 web1 ansible_host=10.0.1.10
 web2 ansible_host=10.0.1.11

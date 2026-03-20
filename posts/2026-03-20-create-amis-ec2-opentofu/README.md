@@ -20,6 +20,7 @@ Creating AMIs from configured EC2 instances lets you capture a system state as a
 
 ```hcl
 # Build instance from which we'll create the golden AMI
+
 resource "aws_instance" "builder" {
   ami           = data.aws_ami.amazon_linux.id
   instance_type = "t3.medium"

@@ -46,6 +46,7 @@ Groups are easier to manage than user lists. Create an SSH access group and add 
 
 ```bash
 # Create the SSH access group
+
 sudo groupadd sshusers
 
 # Add users who should have SSH access

@@ -92,6 +92,7 @@ The Rook operator watches for Ceph cluster CRDs and manages the Ceph daemons.
 
 ```yaml
 # rook-operator.yaml
+
 # This manifest deploys the Rook Ceph operator which manages the lifecycle
 # of Ceph clusters running on Kubernetes. The operator handles deployment,
 # configuration, and day-2 operations like scaling and upgrades.

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Cloud-Init, Provisioners, EC2, Infrastructure as Code
+Tags: OpenTofu, Cloud-init, Provisioners, EC2, Infrastructure as Code
 
 Description: Learn how to replace OpenTofu provisioners with cloud-init user data scripts for more reliable, declarative instance bootstrapping on AWS and other cloud providers.
 
@@ -53,6 +53,7 @@ Inject OpenTofu values into the bootstrap script:
 
 ```hcl
 # templates/userdata.sh.tftpl
+
 #!/bin/bash
 set -e
 
@@ -147,7 +148,7 @@ journalctl -u cloud-init
 
 | Factor | Cloud-Init | remote-exec Provisioner |
 |---|---|---|
-| Network dependency | None — runs at boot | Requires SSH access from OpenTofu host |
+| Network dependency | None - runs at boot | Requires SSH access from OpenTofu host |
 | Retry on failure | Cloud-init retries internally | Resource is tainted; recreated |
 | Re-run on config change | New instance created | Does not re-run |
 | Drift detection | Can verify with user_data hash | Not detectable |

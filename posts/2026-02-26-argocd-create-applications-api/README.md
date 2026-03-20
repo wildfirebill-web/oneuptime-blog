@@ -220,6 +220,7 @@ When onboarding multiple services, create applications in bulk:
 ARGOCD_SERVER="https://argocd.example.com"
 
 # Define applications in a JSON array
+
 APPS='[
   {"name": "auth-service", "path": "services/auth", "namespace": "auth"},
   {"name": "user-service", "path": "services/users", "namespace": "users"},

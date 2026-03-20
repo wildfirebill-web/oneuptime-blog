@@ -14,6 +14,7 @@ A production VPC in AWS includes multiple components: the VPC itself, public and
 
 ```hcl
 # Look up available AZs
+
 data "aws_availability_zones" "available" {
   state = "available"
 }

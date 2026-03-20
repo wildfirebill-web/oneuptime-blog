@@ -1,4 +1,4 @@
-# How to Set Up iSCSI Storage with Portainer
+# How to Set Up iSCSI Storage with Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -28,6 +28,7 @@ iSCSI presents block storage devices over a network, allowing containers to acce
 
 ```bash
 # Install targetcli on the storage server
+
 sudo apt-get install -y targetcli-fb
 
 # Create a block device-backed target

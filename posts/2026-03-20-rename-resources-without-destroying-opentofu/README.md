@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, moved block, State Management, Refactoring, HCL
+Tags: OpenTofu, Terraform, Moved Blocks, State Management, Refactoring, HCL
 
 Description: Learn how to rename OpenTofu resources and modules using the moved block without destroying and recreating infrastructure, enabling safe HCL refactoring.
 
@@ -14,6 +14,7 @@ Renaming a resource in HCL without telling OpenTofu about the rename causes it t
 
 ```hcl
 # BEFORE: resource was named "main"
+
 # resource "aws_s3_bucket" "main" { ... }
 
 # AFTER: renamed to "app_assets"

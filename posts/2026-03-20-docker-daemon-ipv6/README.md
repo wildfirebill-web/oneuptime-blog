@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Docker, IPv6, Daemon, Configuration, Networking
+Tags: Docker, IPv6, Daemons, Configuration, Networking
 
 Description: Enable IPv6 support in the Docker daemon by editing daemon.json, configure IPv6 address pools, and restart Docker to provide IPv6 connectivity to containers.
 
@@ -24,6 +24,7 @@ Docker does not enable IPv6 by default. To use IPv6 in containers, you must enab
 
 ```bash
 # Apply configuration
+
 sudo systemctl restart docker
 
 # Verify IPv6 is enabled

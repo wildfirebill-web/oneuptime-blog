@@ -22,6 +22,7 @@ Run Envoy with a basic static configuration.
 
 ```bash
 # Create the config directory
+
 mkdir -p envoy-config
 ```
 

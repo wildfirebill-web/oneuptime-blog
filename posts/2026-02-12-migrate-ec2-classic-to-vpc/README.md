@@ -36,6 +36,7 @@ Inventory your EC2-Classic resources:
 
 ```bash
 # Find all instances in EC2-Classic (no VPC ID means Classic)
+
 aws ec2 describe-instances \
   --filters "Name=instance-state-name,Values=running" \
   --query 'Reservations[].Instances[?!VpcId].{

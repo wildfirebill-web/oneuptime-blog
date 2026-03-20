@@ -67,6 +67,7 @@ Include the environment variables in your initial machine configuration before a
 
 ```bash
 # Generate base configuration
+
 talosctl gen config my-cluster https://192.168.1.10:6443
 
 # Edit the generated yaml files to add environment variables

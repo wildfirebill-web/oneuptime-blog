@@ -41,6 +41,7 @@ This playbook installs auditd and its utilities, then starts the service:
 
 ```yaml
 # install_auditd.yml - Install and enable the audit daemon
+
 ---
 - name: Install and enable auditd
   hosts: all

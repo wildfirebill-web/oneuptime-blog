@@ -58,6 +58,7 @@ Create a script that queries ArgoCD and Git:
 ```bash
 #!/bin/bash
 # lead-time-calculator.sh
+
 # Calculates lead time for the most recent deployment
 
 APP_NAME=$1

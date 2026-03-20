@@ -14,12 +14,13 @@ CoreDNS is the DNS server for all Kubernetes clusters. By default it forwards ex
 
 ```bash
 # View the CoreDNS ConfigMap
+
 kubectl get configmap coredns -n kube-system -o yaml
 ```
 
 The default Corefile looks like:
 
-```
+```text
 .:53 {
     errors
     health {

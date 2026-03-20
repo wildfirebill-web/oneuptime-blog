@@ -4,11 +4,11 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: OpenTofu, GCS, Google Cloud Storage, GCP, Infrastructure as Code, Storage
 
-Description: Learn how to configure Google Cloud Storage buckets with OpenTofu — setting storage classes, retention policies, lifecycle rules, uniform bucket-level access, and VPC Service Controls.
+Description: Learn how to configure Google Cloud Storage buckets with OpenTofu - setting storage classes, retention policies, lifecycle rules, uniform bucket-level access, and VPC Service Controls.
 
 ## Introduction
 
-Google Cloud Storage (GCS) stores objects in buckets with configurable storage classes, lifecycle rules, and access controls. OpenTofu manages bucket creation, IAM bindings, lifecycle policies, retention policies, and encryption — all as declarative configuration that integrates with GCP's resource hierarchy.
+Google Cloud Storage (GCS) stores objects in buckets with configurable storage classes, lifecycle rules, and access controls. OpenTofu manages bucket creation, IAM bindings, lifecycle policies, retention policies, and encryption - all as declarative configuration that integrates with GCP's resource hierarchy.
 
 ## Standard Bucket Configuration
 
@@ -139,6 +139,7 @@ resource "google_storage_bucket" "dual_region" {
 
 ```hcl
 # Grant service account read access to a specific bucket
+
 resource "google_storage_bucket_iam_member" "app_reader" {
   bucket = google_storage_bucket.app.name
   role   = "roles/storage.objectViewer"
@@ -228,4 +229,4 @@ resource "google_pubsub_topic_iam_member" "storage_publisher" {
 
 ## Conclusion
 
-GCS buckets with OpenTofu require `uniform_bucket_level_access = true` for all production buckets — it disables per-object ACLs and simplifies IAM management. Use `public_access_prevention = "enforced"` to block public access regardless of bucket or object-level ACLs. Combine lifecycle rules to automatically transition objects from STANDARD to NEARLINE to COLDLINE to ARCHIVE — GCS storage costs decrease 80%+ from STANDARD to ARCHIVE. For compliance data, set `is_locked = true` on the retention policy to prevent modification even by project owners.
+GCS buckets with OpenTofu require `uniform_bucket_level_access = true` for all production buckets - it disables per-object ACLs and simplifies IAM management. Use `public_access_prevention = "enforced"` to block public access regardless of bucket or object-level ACLs. Combine lifecycle rules to automatically transition objects from STANDARD to NEARLINE to COLDLINE to ARCHIVE - GCS storage costs decrease 80%+ from STANDARD to ARCHIVE. For compliance data, set `is_locked = true` on the retention policy to prevent modification even by project owners.

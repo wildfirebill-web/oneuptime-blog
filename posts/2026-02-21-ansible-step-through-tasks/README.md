@@ -16,6 +16,7 @@ Add the `--step` flag to your `ansible-playbook` command.
 
 ```bash
 # Run the playbook in step mode
+
 ansible-playbook -i inventory.ini site.yml --step
 ```
 

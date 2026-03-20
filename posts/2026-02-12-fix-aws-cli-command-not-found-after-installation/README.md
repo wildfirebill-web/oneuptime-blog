@@ -22,6 +22,7 @@ Check if the binary exists.
 
 ```bash
 # Check if the AWS CLI binary was actually installed
+
 ls -la /usr/local/aws-cli/v2/current/bin/aws
 ```
 

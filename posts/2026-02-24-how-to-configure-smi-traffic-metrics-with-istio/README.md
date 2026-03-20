@@ -313,6 +313,7 @@ If metrics aren't showing up:
 
 ```bash
 # Check if the metrics adapter is running
+
 kubectl get pods -n istio-system -l app=smi-metrics
 
 # Check adapter logs

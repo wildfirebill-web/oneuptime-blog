@@ -21,6 +21,7 @@ ImagePullBackOff occurs when Kubernetes cannot pull the container image. This ca
 
 ```bash
 # Check the exact error
+
 kubectl describe pod failing-pod -n production | grep -A5 "Events"
 # Example error:
 # Failed to pull image "myapp:lates": rpc error: code = NotFound
@@ -161,4 +162,4 @@ kubectl get secrets -n $NAMESPACE --field-selector type=kubernetes.io/dockerconf
 
 ## Conclusion
 
-ImagePullBackOff is always caused by the cluster's inability to pull the specified image. Systematic diagnosis via Portainer's pod events view reveals the specific cause—wrong image name, authentication failure, or network connectivity. Portainer's Registry management feature simplifies credential management for private registries across multiple environments.
+ImagePullBackOff is always caused by the cluster's inability to pull the specified image. Systematic diagnosis via Portainer's pod events view reveals the specific cause-wrong image name, authentication failure, or network connectivity. Portainer's Registry management feature simplifies credential management for private registries across multiple environments.

@@ -14,7 +14,7 @@ BGP runs over TCP port 179. Without authentication, an attacker on the network p
 
 Both peers must use the same password. The password is case-sensitive:
 
-```
+```text
 ! On Router A (AS 65001)
 router bgp 65001
  neighbor 203.0.113.2 remote-as 65002
@@ -32,7 +32,7 @@ If passwords don't match, the TCP handshake fails silently and the session stays
 
 ## Step 2: Verify MD5 Is Active
 
-```
+```text
 Router# show ip bgp neighbors 203.0.113.2
 
 BGP neighbor is 203.0.113.2, remote AS 65002
@@ -49,7 +49,7 @@ The `MD5 authentication enabled` line confirms authentication is negotiated.
 
 Store passwords in encrypted form in the configuration to prevent cleartext exposure in `show running-config`:
 
-```
+```text
 ! Use type 7 encryption (weak, Cisco reversible) - minimum protection
 Router(config)# service password-encryption
 
@@ -77,7 +77,7 @@ router bgp 65001
 
 Generalized TTL Security Mechanism (GTSM, RFC 5082) complements MD5 by setting the expected TTL of incoming BGP packets to 255. Spoofed packets from the Internet arrive with a lower TTL and are dropped at the kernel:
 
-```
+```text
 ! Configure TTL security - expect packets with TTL >= 254 (1 hop away)
 router bgp 65001
  neighbor 203.0.113.2 ttl-security hops 1
@@ -89,7 +89,7 @@ For iBGP multihop sessions, adjust the hop count accordingly.
 
 TCP-AO (RFC 5925) is the successor to MD5 authentication. It supports multiple keys and stronger algorithms. Cisco IOS XE supports TCP-AO:
 
-```
+```text
 ! Define a TCP-AO key chain
 key chain BGP_AO_KEYS
  key 1
@@ -107,7 +107,7 @@ TCP-AO is preferred over MD5 for new deployments where supported.
 
 If the session stays in Active state after adding authentication:
 
-```
+```text
 ! Check for auth failure messages in logs
 Router# show log | include MD5|AUTH|BGP
 

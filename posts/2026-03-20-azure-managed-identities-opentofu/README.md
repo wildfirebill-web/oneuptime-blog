@@ -14,6 +14,7 @@ Azure Managed Identities eliminate the need to manage credentials by providing A
 
 ```hcl
 # main.tf - Create a reusable user-assigned managed identity
+
 resource "azurerm_user_assigned_identity" "app_identity" {
   name                = "my-app-identity"
   location            = azurerm_resource_group.rg.location

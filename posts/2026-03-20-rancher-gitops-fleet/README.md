@@ -21,7 +21,7 @@ Fleet is Rancher's built-in GitOps engine. It watches Git repositories and conti
 | Concept | Description |
 |---|---|
 | **GitRepo** | A pointer to a Git repo + branch. Fleet watches this and syncs it. |
-| **Bundle** | The compiled output of a GitRepo path — Helm charts, raw YAML, or Kustomize. |
+| **Bundle** | The compiled output of a GitRepo path - Helm charts, raw YAML, or Kustomize. |
 | **ClusterGroup** | A logical grouping of clusters for targeting deployments. |
 | **BundleDeployment** | A record of a Bundle deployed to a specific cluster. |
 
@@ -29,7 +29,7 @@ Fleet is Rancher's built-in GitOps engine. It watches Git repositories and conti
 
 Fleet supports multiple manifest formats in a single repo:
 
-```
+```text
 my-app-repo/
 ├── fleet.yaml                  # Root-level Fleet config (optional)
 ├── deploy/
@@ -50,7 +50,8 @@ my-app-repo/
 ## Step 2: Create a Basic fleet.yaml
 
 ```yaml
-# fleet.yaml — configures how Fleet handles this directory
+# fleet.yaml - configures how Fleet handles this directory
+
 defaultNamespace: production
 
 # Target specific clusters

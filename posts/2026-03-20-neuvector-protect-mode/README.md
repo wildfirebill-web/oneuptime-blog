@@ -8,7 +8,7 @@ Description: Transition NeuVector workloads to Protect mode to actively block un
 
 ## Introduction
 
-Protect mode is NeuVector's enforcement tier. When a workload is in Protect mode, NeuVector actively blocks any activity that violates the defined security policy — unauthorized processes are terminated, forbidden network connections are dropped, and policy-violating file access is denied. This is the end goal of the Discover → Monitor → Protect workflow.
+Protect mode is NeuVector's enforcement tier. When a workload is in Protect mode, NeuVector actively blocks any activity that violates the defined security policy - unauthorized processes are terminated, forbidden network connections are dropped, and policy-violating file access is denied. This is the end goal of the Discover → Monitor → Protect workflow.
 
 ## What Protect Mode Does
 
@@ -79,6 +79,7 @@ Move individual groups to Protect mode:
 
 ```bash
 # Move a single group to Protect mode
+
 curl -sk -X PATCH \
   "https://neuvector-manager:8443/v1/group/nv.webapp.production" \
   -H "Content-Type: application/json" \

@@ -105,6 +105,7 @@ Error: Unable to merge type "User" - fields do not match
 
 ```graphql
 # Users Service
+
 type User {
   id: ID!
   name: String!

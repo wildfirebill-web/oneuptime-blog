@@ -32,6 +32,7 @@ Create a root CA and intermediate CA:
 
 ```bash
 # Create directory structure
+
 mkdir -p certs
 cd certs
 

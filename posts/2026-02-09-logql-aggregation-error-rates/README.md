@@ -25,6 +25,7 @@ Start with simple error counting across all logs:
 
 ```logql
 # Count error logs per second
+
 rate({namespace="production"} |= "error" [5m])
 
 # Count specific error levels

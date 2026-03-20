@@ -49,6 +49,7 @@ Do not just say what is wrong. Say what is right.
 
 ```hcl
 # Bad - tells the user what went wrong but not what to do
+
 variable "instance_type" {
   type = string
   validation {

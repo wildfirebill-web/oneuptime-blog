@@ -36,6 +36,7 @@ After deployment, go to the resource and copy the endpoint URL and one of the AP
 
 ```bash
 # Install the Azure Computer Vision SDK
+
 pip install azure-cognitiveservices-vision-computervision
 ```
 

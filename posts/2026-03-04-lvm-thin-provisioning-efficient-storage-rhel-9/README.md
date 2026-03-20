@@ -29,6 +29,7 @@ Make sure you have free space in your volume group:
 
 ```bash
 # Check available space
+
 vgs
 ```
 

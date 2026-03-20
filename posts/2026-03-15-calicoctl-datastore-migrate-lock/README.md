@@ -127,6 +127,7 @@ echo "  Calico Datastore Migration"
 echo "========================================="
 
 # Phase 1: Pre-flight checks
+
 echo ""
 echo "Phase 1: Pre-flight checks"
 calicoctl node status

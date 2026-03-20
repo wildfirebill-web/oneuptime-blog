@@ -30,6 +30,7 @@ The first thing to check is the overall state of the container group and the eve
 
 ```bash
 # Get the container group state and container states
+
 az container show \
     --resource-group my-resource-group \
     --name my-container \

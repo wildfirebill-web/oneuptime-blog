@@ -48,6 +48,7 @@ Run the Collector locally:
 
 ```bash
 # Run the Collector
+
 otelcol-contrib --config test-config.yaml
 ```
 

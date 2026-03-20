@@ -8,7 +8,7 @@ Description: Learn how to use tofu import to bring existing infrastructure resou
 
 ## Introduction
 
-`tofu import` adds an existing cloud resource to the OpenTofu state file so it can be managed going forward. After importing, you must write the matching configuration — OpenTofu does not generate configuration from the import. The modern declarative approach using `import` blocks is generally preferred, but the CLI command remains useful for quick, one-off imports.
+`tofu import` adds an existing cloud resource to the OpenTofu state file so it can be managed going forward. After importing, you must write the matching configuration - OpenTofu does not generate configuration from the import. The modern declarative approach using `import` blocks is generally preferred, but the CLI command remains useful for quick, one-off imports.
 
 ## Basic Syntax
 
@@ -20,6 +20,7 @@ tofu import <resource_address> <resource_id>
 
 ```bash
 # Write the configuration first
+
 # resource "aws_s3_bucket" "existing" {
 #   bucket = "my-existing-bucket"
 # }

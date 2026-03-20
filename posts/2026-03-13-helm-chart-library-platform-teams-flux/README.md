@@ -49,6 +49,7 @@ helm-charts/
 
 ```yaml
 # charts/platform-app/Chart.yaml
+
 apiVersion: v2
 name: platform-app
 description: Opinionated application chart for ACME platform teams

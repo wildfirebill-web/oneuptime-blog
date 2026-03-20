@@ -248,6 +248,7 @@ When running canary deployments, tag spans with the version so you can compare t
 
 ```yaml
 # Stable deployment
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

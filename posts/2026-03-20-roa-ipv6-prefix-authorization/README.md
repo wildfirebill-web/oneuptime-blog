@@ -38,7 +38,7 @@ In RIPE NCC as an example:
 
 When creating a ROA, specify these fields:
 
-```
+```text
 Prefix:       2001:db8::/32
 Max Length:   48           (allows announcements up to /48)
 Origin ASN:   AS64496
@@ -56,6 +56,7 @@ If you announce from multiple ASNs (e.g., for multihoming), create a ROA for eac
 
 ```bash
 # ROA 1: Primary upstream ASN
+
 Prefix: 2001:db8::/32, Max-Length: 48, Origin: AS64496
 
 # ROA 2: Secondary upstream ASN

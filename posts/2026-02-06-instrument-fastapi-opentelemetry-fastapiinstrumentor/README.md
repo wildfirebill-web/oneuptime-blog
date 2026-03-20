@@ -20,6 +20,7 @@ Start by installing the necessary OpenTelemetry packages for FastAPI instrumenta
 
 ```bash
 # Install core OpenTelemetry packages
+
 pip install opentelemetry-api opentelemetry-sdk
 
 # Install FastAPI instrumentation

@@ -45,6 +45,7 @@ GKE offers two built-in profiles:
 
 ```bash
 # Balanced profile (default) - scales down moderately
+
 gcloud container clusters update my-cluster \
   --region us-central1 \
   --autoscaling-profile balanced

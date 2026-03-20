@@ -133,4 +133,4 @@ output "registry_id" {
 
 ## Conclusion
 
-AWS ECR repositories in OpenTofu provide secure, managed container storage. Always use IMMUTABLE image tags to prevent accidental overwrites, enable scan-on-push for automatic vulnerability detection, and configure repository policies to grant least-privilege access — push for CI/CD, pull for compute roles. Use for_each to manage all service repositories with consistent settings.
+AWS ECR repositories in OpenTofu provide secure, managed container storage. Always use IMMUTABLE image tags to prevent accidental overwrites, enable scan-on-push for automatic vulnerability detection, and configure repository policies to grant least-privilege access - push for CI/CD, pull for compute roles. Use for_each to manage all service repositories with consistent settings.

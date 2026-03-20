@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Cluster Groups, Fleet, Kubernetes, Multi-Cluster, Organization, Management
+Tags: Rancher, Cluster Groups, Fleet, Kubernetes, Multi-Cluster, Organizations, Management
 
 Description: Learn how to organize Rancher-managed clusters into logical groups using Fleet cluster groups and labels to simplify policy application, monitoring, and workload targeting.
 
@@ -20,6 +20,7 @@ A `ClusterGroup` in Fleet is a named collection of clusters that match a label s
 
 ```yaml
 # clustergroup-production.yaml
+
 apiVersion: fleet.cattle.io/v1alpha1
 kind: ClusterGroup
 metadata:
@@ -140,6 +141,6 @@ kubectl get bundledeployment -n fleet-default \
 ## Best Practices
 
 - Assign clusters to groups at provisioning time using automation (Terraform, Crossplane) to ensure consistency.
-- Use **hierarchical groups** — start with `env` (production/staging), then `region`, then `tier`.
+- Use **hierarchical groups** - start with `env` (production/staging), then `region`, then `tier`.
 - Keep group definitions in Git and manage them with Fleet so group membership is auditable.
 - Regularly audit group membership to catch clusters that have been mis-labeled.

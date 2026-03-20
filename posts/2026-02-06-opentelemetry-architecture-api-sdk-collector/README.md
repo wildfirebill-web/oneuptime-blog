@@ -195,6 +195,7 @@ The Collector uses a YAML configuration with three sections: receivers, processo
 
 ```yaml
 # Receive OTLP telemetry over HTTP and gRPC
+
 receivers:
   otlp:
     protocols:

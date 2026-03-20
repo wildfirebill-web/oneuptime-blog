@@ -33,6 +33,7 @@ Jaeger Agents run on each application host and receive spans over UDP. They batc
 
 ```ini
 # inventory/hosts.ini
+
 [jaeger_collector]
 trace-01 ansible_host=10.0.3.10
 

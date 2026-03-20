@@ -205,6 +205,7 @@ Run Jest in interactive mode to review and update snapshots one by one:
 
 ```bash
 # Run in watch mode
+
 jest --watch
 
 # Press 'i' for interactive snapshot mode

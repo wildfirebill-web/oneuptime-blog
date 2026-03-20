@@ -43,6 +43,7 @@ First, we create a dedicated system user for Prometheus. This follows the securi
 
 ```bash
 # Create a system user for Prometheus without home directory or login shell
+
 sudo useradd --no-create-home --shell /bin/false prometheus
 ```
 

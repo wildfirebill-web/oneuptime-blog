@@ -18,6 +18,7 @@ First, install the Firebase Admin SDK.
 
 ```bash
 # Install the Firebase Admin SDK for Python
+
 pip install firebase-admin
 ```
 

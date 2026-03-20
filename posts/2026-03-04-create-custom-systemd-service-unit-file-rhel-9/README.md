@@ -32,6 +32,7 @@ A unit file has three main sections: `[Unit]`, `[Service]`, and `[Install]`. Let
 
 ```ini
 # /etc/systemd/system/mywebapp.service
+
 # Custom service for the internal web application
 
 [Unit]

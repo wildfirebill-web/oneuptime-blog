@@ -67,6 +67,7 @@ This snippet instruments a consumer to track messages processed per second and p
 
 ```python
 # Inside your consumer worker
+
 from opentelemetry import metrics
 
 meter = metrics.get_meter("queue.consumer", version="1.0.0")

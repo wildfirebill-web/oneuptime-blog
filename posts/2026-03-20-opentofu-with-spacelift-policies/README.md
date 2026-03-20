@@ -14,6 +14,7 @@ Spacelift provides a policy engine based on Open Policy Agent (OPA) that integra
 
 ```hcl
 # spacelift/stack.tf - Define the OpenTofu stack in Spacelift via Terraform provider
+
 provider "spacelift" {}
 
 resource "spacelift_stack" "app" {

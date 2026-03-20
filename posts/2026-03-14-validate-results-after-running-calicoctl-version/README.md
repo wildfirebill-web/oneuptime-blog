@@ -55,6 +55,7 @@ CLIENT=$(echo "$OUTPUT" | grep "Client Version:" | awk '{print $3}')
 CLUSTER=$(echo "$OUTPUT" | grep "Cluster Version:" | awk '{print $3}')
 
 # Extract major.minor for compatibility check
+
 CLIENT_MM=$(echo "$CLIENT" | cut -d. -f1,2)
 CLUSTER_MM=$(echo "$CLUSTER" | cut -d. -f1,2)
 

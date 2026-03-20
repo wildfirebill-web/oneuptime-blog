@@ -32,6 +32,7 @@ For Kubernetes clusters running on Harvester VMs, install Longhorn directly insi
 
 ```bash
 # In the guest K8s cluster
+
 helm repo add longhorn https://charts.longhorn.io
 helm repo update
 helm install longhorn longhorn/longhorn \
@@ -130,7 +131,7 @@ deletionPolicy: Delete
 
 ## Best Practices
 
-- Use Harvester CSI for clusters provisioned by Rancher on Harvester — it integrates volume lifecycle with VM lifecycle.
+- Use Harvester CSI for clusters provisioned by Rancher on Harvester - it integrates volume lifecycle with VM lifecycle.
 - For critical production databases, consider running Longhorn inside the guest cluster for additional storage isolation.
 - Set `migratable: "true"` in the StorageClass so volumes can follow VM live migrations.
 - Back up Harvester storage data separately from your Kubernetes backup strategy.

@@ -20,6 +20,7 @@ The biggest design decision is what resources belong in a single ArgoCD applicat
 
 ```yaml
 # Each microservice is its own ArgoCD application
+
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
@@ -145,7 +146,7 @@ syncPolicy:
     - RespectIgnoreDifferences=true
 ```
 
-## Resource grouping patterns
+Resource grouping patterns
 
 ### Group by lifecycle
 

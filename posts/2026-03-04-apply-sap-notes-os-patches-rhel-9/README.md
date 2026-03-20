@@ -39,6 +39,7 @@ Before patching, check the SAP Launchpad for applicable notes:
 
 ```bash
 # Key SAP Notes for RHEL:
+
 # 3108316 - SAP on RHEL: Requirements and Information
 # 2772999 - Red Hat Enterprise Linux 9.x: Installation and Configuration
 # 2235581 - SAP HANA: Supported Operating Systems

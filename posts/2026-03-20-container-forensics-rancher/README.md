@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: rancher, forensics, security, incident-response, kubernetes
+Tags: Rancher, Forensics, Security, Incident-response, Kubernetes
 
 Description: Guide to configuring container forensics capabilities in Rancher for security incident investigation.
 
@@ -31,6 +31,7 @@ How to Set Up Container Forensics in Rancher addresses these challenges by addin
 
 ```bash
 # Run a basic security audit
+
 kubectl get pods --all-namespaces -o json | jq -r '
   .items[] | 
   select(

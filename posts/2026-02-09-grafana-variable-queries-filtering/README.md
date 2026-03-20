@@ -344,6 +344,7 @@ rate(http_requests_total{namespace="$namespace"}[5m])
 
 ```promql
 # Works with multi-select
+
 sum(rate(http_requests_total{namespace=~"$namespace"}[5m])) by (namespace)
 ```
 

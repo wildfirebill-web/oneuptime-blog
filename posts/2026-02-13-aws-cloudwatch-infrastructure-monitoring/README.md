@@ -39,6 +39,7 @@ This SSM command installs the CloudWatch Agent on all instances tagged with the 
 
 ```bash
 # Install CloudWatch Agent via Systems Manager on tagged instances
+
 aws ssm send-command \
   --document-name "AWS-ConfigureAWSPackage" \
   --targets "Key=tag:Role,Values=monitoring" \

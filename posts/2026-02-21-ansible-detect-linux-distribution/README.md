@@ -16,6 +16,7 @@ When Ansible gathers facts, it provides these OS-related variables:
 
 ```yaml
 # Example output for Ubuntu 24.04
+
 ansible_distribution: "Ubuntu"
 ansible_distribution_version: "24.04"
 ansible_distribution_major_version: "24"

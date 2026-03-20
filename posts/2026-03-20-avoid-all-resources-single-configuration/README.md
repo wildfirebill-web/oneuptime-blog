@@ -12,7 +12,7 @@ Putting all infrastructure resources in a single `main.tf` file or a single stat
 
 ## Signs You Need to Split
 
-```
+```hcl
 Warning signs your configuration is too monolithic:
 - main.tf is more than 500 lines
 - tofu state list returns more than 200 resources
@@ -26,7 +26,7 @@ Warning signs your configuration is too monolithic:
 
 Start by organizing a single state into logical files.
 
-```
+```text
 Before (everything in main.tf):
 main.tf  (2000 lines)
 
@@ -46,7 +46,7 @@ locals.tf        # shared locals
 
 Pull patterns used in multiple places into modules.
 
-```
+```text
 modules/
 ├── rds-postgres/        # used in every environment
 ├── ecs-service/         # used for every service
@@ -61,6 +61,7 @@ environments/
 
 ```hcl
 # environments/prod/main.tf
+
 module "vpc" {
   source = "../../modules/vpc"
   cidr   = "10.0.0.0/16"
@@ -83,7 +84,7 @@ module "api_database" {
 
 Separate long-lived foundational infrastructure from frequently changed application resources.
 
-```
+```text
 environments/prod/
 ├── 1-networking/          # VPC, subnets (changes: monthly)
 │   └── terraform.tfstate
@@ -99,7 +100,7 @@ environments/prod/
 
 Give each team their own state files.
 
-```
+```text
 infrastructure/
 ├── platform/              # Platform team owns
 │   ├── networking/

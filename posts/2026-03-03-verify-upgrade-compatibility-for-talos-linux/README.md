@@ -26,6 +26,7 @@ Every Talos release supports a specific range of Kubernetes versions. Running an
 
 ```bash
 # Check your current Talos and Kubernetes versions
+
 talosctl version --nodes <node-ip>
 
 # The output will show both the Talos version and the

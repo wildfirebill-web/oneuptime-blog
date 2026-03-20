@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: uWSGI, Python, IPv6, WSGI, Deployment, Dual-Stack, Emperor
+Tags: UWSGI, Python, IPv6, WSGI, Deployment, Dual-Stack, Emperor
 
 Description: Configure uWSGI to bind to IPv6 addresses, configure dual-stack listeners, and integrate with NGINX over IPv6 sockets for Python web application deployment.
 
@@ -17,6 +17,7 @@ uWSGI is a feature-rich application server supporting Python WSGI, Python ASGI, 
 
 [uwsgi]
 # Bind to all IPv6 interfaces
+
 http-socket = [::]:8000
 
 # Or use the socket type explicitly
@@ -166,4 +167,4 @@ uwsgi --http-socket "[::]:8000" --module app:app
 
 ## Conclusion
 
-uWSGI binds to IPv6 using bracket notation in socket directives: `http-socket = [::]:8000`. For dual-stack, add separate `http-socket` lines for IPv4 and IPv6. The `log-format = %(addr)` correctly logs IPv6 client addresses. Use Unix sockets for NGINX communication when possible — simpler than configuring IPv6 TCP. Monitor uWSGI process health with OneUptime.
+uWSGI binds to IPv6 using bracket notation in socket directives: `http-socket = [::]:8000`. For dual-stack, add separate `http-socket` lines for IPv4 and IPv6. The `log-format = %(addr)` correctly logs IPv6 client addresses. Use Unix sockets for NGINX communication when possible - simpler than configuring IPv6 TCP. Monitor uWSGI process health with OneUptime.

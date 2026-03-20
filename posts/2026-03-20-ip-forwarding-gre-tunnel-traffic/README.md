@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Linux, GRE, Tunnel, IP Forwarding, Routing, Networking, sysctl
+Tags: Linux, GRE, Tunnel, IP Forwarding, Routing, Networking, Sysctl
 
 Description: Enable IPv4 IP forwarding on a Linux router to allow GRE tunnel traffic to route between the tunnel interface and LAN interfaces.
 
@@ -14,6 +14,7 @@ GRE tunnels connect remote networks, but for traffic to flow between the tunnel 
 
 ```bash
 # Check if forwarding is enabled (1=enabled, 0=disabled)
+
 sysctl net.ipv4.ip_forward
 
 # Or directly read the proc file

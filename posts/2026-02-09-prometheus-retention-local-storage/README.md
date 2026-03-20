@@ -30,6 +30,7 @@ Configure retention by time or size:
 
 ```yaml
 # prometheus-values.yaml (for kube-prometheus-stack)
+
 prometheus:
   prometheusSpec:
     # Time-based retention (default: 15d)

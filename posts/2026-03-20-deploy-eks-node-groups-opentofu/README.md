@@ -26,6 +26,7 @@ graph TB
 
 ```hcl
 # iam.tf
+
 # Cluster role
 resource "aws_iam_role" "eks_cluster" {
   name = "${var.cluster_name}-cluster-role"
@@ -259,7 +260,7 @@ data "aws_eks_addon_version" "coredns" {
 
 ## Best Practices
 
-- Use managed node groups over self-managed nodes — AWS handles patching and replacement automatically.
+- Use managed node groups over self-managed nodes - AWS handles patching and replacement automatically.
 - Enforce IMDSv2 via launch templates (`http_tokens = "required"`) to prevent SSRF attacks on metadata endpoints.
 - Create a dedicated system node group with taints for critical add-ons (CoreDNS, kube-proxy) to prevent eviction.
 - Use multiple instance types in spot node groups to improve availability and reduce interruptions.

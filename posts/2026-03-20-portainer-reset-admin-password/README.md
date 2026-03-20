@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, Administration, Password, Recovery
+Tags: Portainer, Docker, Administration, Passwords, Recovery
 
 Description: Recover access to a locked Portainer instance by resetting the admin password using the helper container or CLI flags.
 
@@ -24,6 +24,7 @@ This is the official and recommended method. The `portainer/helper-reset-passwor
 
 ```bash
 # Stop the Portainer container (do NOT remove it)
+
 docker stop portainer
 
 # Verify it's stopped
@@ -54,7 +55,7 @@ docker run --rm \
 # {"Username":"admin","Password":"randomGeneratedPassword"}
 ```
 
-Note the generated password — it's displayed only once.
+Note the generated password - it's displayed only once.
 
 ### Step 4: Start Portainer and Log In
 

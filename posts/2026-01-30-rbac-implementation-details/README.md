@@ -381,7 +381,7 @@ INSERT INTO role_permissions (role_id, permission_id) VALUES
   ('44444444-4444-4444-4444-444444444444', 'cccc2222-2222-2222-2222-222222222222');  -- users:manage
 ```
 
-## Resource-Scoped Permissions
+Resource-Scoped Permissions
 
 Global roles work for simple systems, but production apps need resource-level permissions. A user might be an admin for Project A but only a viewer for Project B.
 

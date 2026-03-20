@@ -48,6 +48,7 @@ On Ubuntu, the audit framework is available in the default repositories. Install
 
 ```bash
 # Update package lists
+
 sudo apt update
 
 # Install the audit daemon and utilities

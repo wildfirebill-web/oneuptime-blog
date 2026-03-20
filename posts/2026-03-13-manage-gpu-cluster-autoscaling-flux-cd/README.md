@@ -26,6 +26,7 @@ This guide covers deploying and configuring the Kubernetes Cluster Autoscaler fo
 
 ```yaml
 # clusters/my-cluster/cluster-autoscaler/namespace.yaml
+
 apiVersion: v1
 kind: Namespace
 metadata:

@@ -74,6 +74,7 @@ flowchart TB
 
 ```bash
 # macOS with Homebrew
+
 brew install velero
 
 # Linux (download binary)

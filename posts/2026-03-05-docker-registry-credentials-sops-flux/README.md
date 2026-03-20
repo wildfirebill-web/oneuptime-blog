@@ -165,6 +165,7 @@ If your application pulls images from multiple private registries, create separa
 
 ```bash
 # Docker Hub
+
 kubectl create secret docker-registry dockerhub-pull-secret \
   --docker-server=https://index.docker.io/v1/ \
   --docker-username=my-user \

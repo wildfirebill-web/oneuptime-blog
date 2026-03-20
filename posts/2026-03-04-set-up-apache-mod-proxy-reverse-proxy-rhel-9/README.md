@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Apache, Mod_proxy, Reverse Proxy, Linux
+Tags: RHEL, Apache, mod_proxy, Reverse Proxy, Linux
 
 Description: A practical guide to configuring Apache as a reverse proxy using mod_proxy on RHEL, covering HTTP, WebSocket, and load balancing setups.
 
@@ -22,6 +22,7 @@ Apache on RHEL includes the proxy modules, but verify they are loaded:
 
 ```bash
 # Check which proxy modules are loaded
+
 httpd -M | grep proxy
 
 # You should see:

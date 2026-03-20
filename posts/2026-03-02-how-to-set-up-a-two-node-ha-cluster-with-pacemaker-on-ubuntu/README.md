@@ -30,6 +30,7 @@ Cluster operations depend on accurate time. Ensure NTP is configured on both nod
 
 ```bash
 # On both nodes
+
 sudo apt install -y chrony
 sudo systemctl enable chrony
 sudo systemctl start chrony

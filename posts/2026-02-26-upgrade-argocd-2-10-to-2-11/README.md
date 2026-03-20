@@ -34,6 +34,7 @@ ArgoCD 2.11 continued the evolution of the platform with improvements to Applica
 
 ```bash
 # Verify current ArgoCD version
+
 argocd version
 
 # Check Kubernetes version - 2.11 supports 1.27 through 1.31

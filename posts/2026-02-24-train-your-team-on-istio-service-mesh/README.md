@@ -39,6 +39,7 @@ Start with Kubernetes networking fundamentals. You cannot understand Istio witho
 
 ```bash
 # Use kind or minikube for local development
+
 kind create cluster --name istio-training
 
 # Deploy a sample application without Istio

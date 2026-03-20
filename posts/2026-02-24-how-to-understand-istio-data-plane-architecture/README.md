@@ -19,6 +19,7 @@ You can see the sidecar in any pod:
 ```bash
 kubectl get pod my-app-xyz -o jsonpath='{.spec.containers[*].name}'
 # my-app istio-proxy
+
 ```
 
 The `istio-proxy` container is the Envoy sidecar. It runs the same Envoy binary that is used in many other projects, but with Istio-specific configuration and extensions.

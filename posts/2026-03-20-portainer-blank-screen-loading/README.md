@@ -1,4 +1,4 @@
-# How to Fix Portainer Blank Screen or Loading Issues
+# How to Fix Portainer Blank Screen or Loading Issues - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -14,10 +14,10 @@ A blank or perpetually loading Portainer screen can be caused by browser cache i
 
 Before anything else, test in a fresh browser context:
 
-```
+```text
 1. Open an incognito/private window
 2. Navigate to http://your-host:9000
-3. If it loads — the issue is your browser cache
+3. If it loads - the issue is your browser cache
 ```
 
 If incognito works, clear your browser cache:
@@ -27,7 +27,7 @@ If incognito works, clear your browser cache:
 
 ## Step 2: Check Browser Console for JavaScript Errors
 
-```
+```text
 1. Open Developer Tools (F12 or Ctrl+Shift+I)
 2. Go to the Console tab
 3. Reload the page
@@ -65,6 +65,7 @@ Or manually via browser settings:
 
 ```bash
 # Check if Portainer is running
+
 docker ps | grep portainer
 
 # Check logs for backend errors
@@ -116,7 +117,7 @@ docker start portainer
 
 ## Step 6: Verify Static Assets Are Loading
 
-Portainer's frontend assets are bundled in the container — no CDN calls are made. But if the container filesystem is corrupt:
+Portainer's frontend assets are bundled in the container - no CDN calls are made. But if the container filesystem is corrupt:
 
 ```bash
 # Verify the container image is intact

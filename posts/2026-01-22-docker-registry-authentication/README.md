@@ -16,6 +16,7 @@ Private Docker registries protect your images from unauthorized access. Whether 
 
 ```bash
 # Login to Docker Hub
+
 docker login
 
 # Login with username (prompts for password)

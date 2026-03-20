@@ -42,6 +42,7 @@ Common address types:
 
 ```bash
 # Start a listener on port 8080
+
 socat TCP-LISTEN:8080,reuseaddr -
 
 # In another terminal, connect to it

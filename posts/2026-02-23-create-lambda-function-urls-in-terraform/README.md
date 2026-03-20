@@ -16,6 +16,7 @@ Function URLs were introduced as a simpler alternative to API Gateway for cases 
 
 ```hcl
 # Lambda function
+
 resource "aws_lambda_function" "webhook" {
   function_name = "webhook-handler"
   handler       = "index.handler"

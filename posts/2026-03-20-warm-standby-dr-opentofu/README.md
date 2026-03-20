@@ -14,6 +14,7 @@ Warm Standby maintains a fully functional but reduced-capacity environment in th
 
 ```hcl
 # main.tf - Warm standby runs at reduced capacity
+
 locals {
   # Production capacity
   prod_min_size   = 4

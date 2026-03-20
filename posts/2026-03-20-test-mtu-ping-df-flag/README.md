@@ -14,6 +14,7 @@ Testing MTU with ping is the simplest way to verify path MTU, diagnose fragmenta
 
 ```bash
 # Syntax: ping -M do -s PAYLOAD_SIZE host
+
 # -M do: set DF bit (Don't Fragment)
 # -s PAYLOAD_SIZE: size of ICMP data payload (NOT including headers)
 

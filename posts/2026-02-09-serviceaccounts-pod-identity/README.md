@@ -22,6 +22,7 @@ Creating a ServiceAccount is straightforward. Here's a simple example:
 
 ```yaml
 # serviceaccount.yaml
+
 apiVersion: v1
 kind: ServiceAccount
 metadata:

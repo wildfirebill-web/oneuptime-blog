@@ -49,6 +49,7 @@ Before applying deny policies, confirm traffic flows:
 ```bash
 kubectl exec -n test-source source-pod -- wget -qO- --timeout=5 http://$DEST_IP
 # Should return nginx welcome page
+
 ```
 
 ## Step 3: Apply Default Deny and Test Blocking

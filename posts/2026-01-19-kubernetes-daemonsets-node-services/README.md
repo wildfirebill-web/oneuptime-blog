@@ -55,6 +55,7 @@ flowchart TD
 
 ```yaml
 # fluentbit-daemonset.yaml
+
 apiVersion: apps/v1
 kind: DaemonSet
 metadata:

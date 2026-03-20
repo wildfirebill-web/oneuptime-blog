@@ -161,6 +161,7 @@ Check CloudWatch Logs for your trigger functions:
 
 ```bash
 # List recent log events for a trigger Lambda
+
 aws logs filter-log-events \
     --log-group-name /aws/lambda/your-pre-auth-function \
     --start-time $(date -d '1 hour ago' +%s000) \

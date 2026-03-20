@@ -18,6 +18,7 @@ The `compact` function takes a list of strings and returns a new list with all e
 
 ```hcl
 # Removes all empty strings from the list
+
 compact(list)
 ```
 

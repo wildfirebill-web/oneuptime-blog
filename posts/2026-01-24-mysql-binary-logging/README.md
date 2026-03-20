@@ -40,6 +40,7 @@ Edit your MySQL configuration file (`my.cnf` or `my.ini`):
 ```ini
 [mysqld]
 # Enable binary logging
+
 log_bin = /var/lib/mysql/mysql-bin
 
 # Server ID (required for replication, should be unique)

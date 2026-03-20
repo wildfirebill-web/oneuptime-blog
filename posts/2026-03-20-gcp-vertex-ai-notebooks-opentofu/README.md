@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, GCP, Vertex AI, Notebooks, Machine Learning, Infrastructure as Code
+Tags: OpenTofu, GCP, Vertex AI, Notebook, Machine Learning, Infrastructure as Code
 
 Description: Learn how to create GCP Vertex AI Workbench managed notebooks and user-managed notebook instances for ML development using OpenTofu.
 
@@ -135,4 +135,4 @@ tofu apply tfplan
 
 ## Summary
 
-Vertex AI Workbench notebooks provide managed Jupyter environments optimized for ML workflows on GCP. OpenTofu manages notebook instances, service accounts with appropriate permissions, and post-startup scripts — creating a consistent, reproducible data science environment.
+Vertex AI Workbench notebooks provide managed Jupyter environments optimized for ML workflows on GCP. OpenTofu manages notebook instances, service accounts with appropriate permissions, and post-startup scripts - creating a consistent, reproducible data science environment.

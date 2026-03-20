@@ -42,6 +42,7 @@ flowchart TD
 ```bash
 #!/bin/bash
 # mirror-calico-images.sh
+
 set -euo pipefail
 
 CALICO_VERSION="${1:-v3.27.0}"

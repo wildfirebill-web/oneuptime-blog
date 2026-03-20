@@ -21,6 +21,7 @@ When you run `docker build`, Docker sends the entire build context (usually your
 
 ```bash
 # See what gets sent to the daemon
+
 docker build . 2>&1 | head -5
 # Sending build context to Docker daemon  450.2MB
 

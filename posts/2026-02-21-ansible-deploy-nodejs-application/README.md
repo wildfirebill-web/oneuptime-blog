@@ -31,6 +31,7 @@ flowchart TD
 
 ```ini
 # inventory/nodejs-app.ini
+
 [app_servers]
 app-1 ansible_host=10.0.13.10
 app-2 ansible_host=10.0.13.11

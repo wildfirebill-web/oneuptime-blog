@@ -35,6 +35,7 @@ Inline code actions require an Integration Account linked to your Logic App. Eve
 
 ```bash
 # Create a free-tier Integration Account
+
 az logic integration-account create \
   --resource-group myRG \
   --name myIntegrationAccount \

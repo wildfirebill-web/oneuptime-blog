@@ -32,6 +32,7 @@ When you remove a container:
 
 ```bash
 # Equivalent Docker CLI:
+
 docker rm my-container
 ```
 

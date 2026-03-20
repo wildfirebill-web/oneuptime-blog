@@ -8,12 +8,13 @@ Description: Learn how to use OpenTofu variables and locals to implement right-s
 
 ---
 
-Right-sizing means running the smallest instance that meets your performance requirements. Over-provisioning is common in cloud environments — teams often copy production sizes to dev and staging "just in case." OpenTofu variables make it easy to define environment-appropriate sizes in one place.
+Right-sizing means running the smallest instance that meets your performance requirements. Over-provisioning is common in cloud environments - teams often copy production sizes to dev and staging "just in case." OpenTofu variables make it easy to define environment-appropriate sizes in one place.
 
 ## Environment-Based Sizing
 
 ```hcl
-# locals.tf — single source of truth for sizing
+# locals.tf - single source of truth for sizing
+
 locals {
   instance_sizes = {
     dev = {
@@ -86,7 +87,7 @@ resource "aws_ecs_task_definition" "api" {
 ## Auto-Shutdown for Dev Environments
 
 ```hcl
-# auto_shutdown.tf — save costs by stopping dev instances outside business hours
+# auto_shutdown.tf - save costs by stopping dev instances outside business hours
 resource "aws_autoscaling_schedule" "dev_shutdown" {
   count = var.environment == "dev" ? 1 : 0
 
@@ -142,8 +143,8 @@ infracost diff \
 
 ## Best Practices
 
-- Define all environment sizing in a single `locals` map — changing sizes in one place propagates to all resources.
-- Use `t3.micro` or `t3.small` for dev and staging databases — RDS is often the biggest cost driver in non-production.
-- Enable auto-shutdown schedules for dev environments — an instance running 12 hours/day instead of 24 cuts instance costs by 50%.
-- Use spot instances for dev/staging ASGs — a t3.medium spot instance costs 70% less than on-demand.
+- Define all environment sizing in a single `locals` map - changing sizes in one place propagates to all resources.
+- Use `t3.micro` or `t3.small` for dev and staging databases - RDS is often the biggest cost driver in non-production.
+- Enable auto-shutdown schedules for dev environments - an instance running 12 hours/day instead of 24 cuts instance costs by 50%.
+- Use spot instances for dev/staging ASGs - a t3.medium spot instance costs 70% less than on-demand.
 - Review AWS Compute Optimizer recommendations quarterly and update sizing locals based on actual CPU/memory utilization data.

@@ -21,6 +21,7 @@ Before using Podman in your pipelines, ensure it is installed on your Jenkins ag
 ```bash
 #!/bin/bash
 # Install Podman on Ubuntu-based Jenkins agents
+
 sudo apt-get update
 sudo apt-get install -y podman
 

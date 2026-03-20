@@ -48,6 +48,7 @@ Install OpenTelemetry packages alongside your AdonisJS application. AdonisJS 5 u
 
 ```bash
 # Install AdonisJS packages if not already present
+
 npm install @adonisjs/core @adonisjs/lucid @adonisjs/auth
 
 # Install OpenTelemetry packages

@@ -28,6 +28,7 @@ On the production server, create a dedicated backup key:
 
 ```bash
 # Create a key specifically for backups (no passphrase for automation)
+
 sudo ssh-keygen -t ed25519 -f /root/.ssh/backup_key -N "" -C "backup@$(hostname)"
 ```
 

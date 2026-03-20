@@ -36,6 +36,7 @@ sequenceDiagram
 
 ```bash
 # Enable transit secrets engine at the default path
+
 vault secrets enable transit
 
 # Or enable at a custom path

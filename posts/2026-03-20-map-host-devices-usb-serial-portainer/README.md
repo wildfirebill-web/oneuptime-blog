@@ -1,14 +1,14 @@
-# How to Map Host Devices (USB, Serial) to Containers in Portainer
+# How to Map Host Devices (USB, Serial) to Containers in Portainer (3)
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, USB, Serial, Hardware, IoT, Device Mapping
+Tags: Portainer, Docker, USB, SERIAL, Hardware, IoT, Device Mapping
 
 Description: Configure Docker device mappings in Portainer to pass USB devices, serial ports, and other host hardware directly to containers for IoT, hardware control, and protocol conversion workloads.
 
 ---
 
-Many IoT, industrial, and hardware projects require containers to access physical devices — USB scanners, serial sensors, GPS receivers, HART multiplexers, and more. Docker's device mapping feature makes this possible, and Portainer makes it configurable through the stack editor.
+Many IoT, industrial, and hardware projects require containers to access physical devices - USB scanners, serial sensors, GPS receivers, HART multiplexers, and more. Docker's device mapping feature makes this possible, and Portainer makes it configurable through the stack editor.
 
 ## Device Mapping in Portainer Stacks
 
@@ -37,6 +37,7 @@ Identify the correct device path on the host before mapping:
 
 ```bash
 # List all connected serial/USB devices
+
 ls -la /dev/tty*
 ls -la /dev/ttyUSB*
 ls -la /dev/ttyACM*

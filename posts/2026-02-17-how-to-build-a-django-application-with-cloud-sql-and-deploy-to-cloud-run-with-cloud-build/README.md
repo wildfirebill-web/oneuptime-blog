@@ -18,6 +18,7 @@ Start with a Django project. If you already have one, skip ahead to the Cloud SQ
 
 ```bash
 # Create a virtual environment and install Django
+
 python -m venv venv
 source venv/bin/activate
 pip install django psycopg2-binary gunicorn django-environ

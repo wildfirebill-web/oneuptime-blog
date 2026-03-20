@@ -36,6 +36,7 @@ You need a management cluster before you can create workload clusters. This can 
 
 ```bash
 # Create a management cluster using kind for development
+
 kind create cluster --name capi-management
 
 # Install clusterctl - the CAPI CLI tool

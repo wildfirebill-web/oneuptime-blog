@@ -18,6 +18,7 @@ Every interaction with the Kubernetes API generates an audit event. These events
 
 ```text
 # Audit event stages
+
 RequestReceived  - The API server received the request
 ResponseStarted  - Response headers were sent (long-running requests only)
 ResponseComplete - The response body was sent

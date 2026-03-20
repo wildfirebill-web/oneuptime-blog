@@ -63,6 +63,7 @@ Here's a configuration that shows CPU-intensive processing:
 
 ```yaml
 # config.yaml - CPU-intensive pipeline example
+
 receivers:
   otlp:
     protocols:

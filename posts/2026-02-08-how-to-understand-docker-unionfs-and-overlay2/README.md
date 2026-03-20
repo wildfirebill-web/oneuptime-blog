@@ -54,6 +54,7 @@ You can verify which storage driver Docker is using with the following command.
 
 ```bash
 # Display Docker system information, filtering for storage driver
+
 docker info | grep "Storage Driver"
 ```
 

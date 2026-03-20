@@ -30,6 +30,7 @@ This command sets a daily four-hour maintenance window starting at 2 AM UTC:
 
 ```bash
 # Configure a daily maintenance window from 2 AM to 6 AM UTC
+
 gcloud container clusters update my-cluster \
   --zone us-central1-a \
   --maintenance-window-start 2026-02-17T02:00:00Z \

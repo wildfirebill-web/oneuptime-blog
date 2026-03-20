@@ -80,6 +80,7 @@ Monitor end-to-end latency for direct pod connections:
 
 ```bash
 # Using curl with timing metrics for continuous latency measurement
+
 while true; do
   latency=$(curl -s -o /dev/null -w "%{time_connect}" http://${POD_IP}/)
   echo "latency_ms{pod_ip=\"${POD_IP}\"} $(echo "$latency * 1000" | bc)"

@@ -388,6 +388,7 @@ spec:
 
 ```bash
 # Get gateway IP
+
 GATEWAY_IP=$(kubectl get gateway web-gateway -n production -o jsonpath='{.status.addresses[0].value}')
 
 # Test with specific header

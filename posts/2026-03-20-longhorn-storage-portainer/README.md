@@ -28,6 +28,7 @@ Longhorn requires `open-iscsi` on every node.
 
 ```bash
 # Run on every Kubernetes node
+
 sudo apt update && sudo apt install -y open-iscsi
 
 # Enable and start iscsid
@@ -47,7 +48,7 @@ curl -sSfL https://raw.githubusercontent.com/longhorn/longhorn/v1.6.0/scripts/en
 In Portainer, navigate to your Kubernetes environment and deploy Longhorn as a stack.
 
 ```yaml
-# longhorn-namespace.yaml — create the namespace first
+# longhorn-namespace.yaml - create the namespace first
 apiVersion: v1
 kind: Namespace
 metadata:
@@ -77,7 +78,7 @@ Or in Portainer:
 Create an ingress or port-forward to access the Longhorn UI.
 
 ```yaml
-# longhorn-ingress.yaml — expose Longhorn UI
+# longhorn-ingress.yaml - expose Longhorn UI
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
@@ -124,7 +125,7 @@ kubectl get storageclass
 Now deploy an application through Portainer that uses Longhorn for persistent storage.
 
 ```yaml
-# app-with-longhorn-pvc.yaml — deploy via Portainer stack
+# app-with-longhorn-pvc.yaml - deploy via Portainer stack
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:

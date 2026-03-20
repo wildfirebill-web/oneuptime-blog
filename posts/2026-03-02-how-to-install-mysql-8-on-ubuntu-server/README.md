@@ -23,6 +23,7 @@ This guide uses the official repository for the most current version.
 
 ```bash
 # Download the MySQL APT repository configuration package
+
 # Check https://dev.mysql.com/downloads/repo/apt/ for the latest version
 wget https://dev.mysql.com/get/mysql-apt-config_0.8.30-1_all.deb
 

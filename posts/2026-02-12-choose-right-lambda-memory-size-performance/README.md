@@ -28,6 +28,7 @@ Before tuning memory, figure out what's slow. Run your function and check the Cl
 
 ```bash
 # Get the last 10 invocation reports
+
 aws logs filter-log-events \
   --log-group-name "/aws/lambda/my-function" \
   --filter-pattern "REPORT" \

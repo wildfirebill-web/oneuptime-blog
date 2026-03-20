@@ -33,6 +33,7 @@ The simplest way to get started:
 
 ```bash
 # Install the RPM package
+
 dnf install -y scap-security-guide openscap-scanner
 
 # Check the installed version

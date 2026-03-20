@@ -24,6 +24,7 @@ If you do not already have a Gitea instance, you can deploy one on Kubernetes us
 
 ```bash
 # Add the Gitea Helm repository
+
 helm repo add gitea-charts https://dl.gitea.com/charts/
 helm repo update
 

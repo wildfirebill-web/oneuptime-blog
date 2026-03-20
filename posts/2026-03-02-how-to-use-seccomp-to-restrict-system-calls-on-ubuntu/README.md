@@ -26,6 +26,7 @@ Two modes:
 
 ```bash
 # Install seccomp development library and tools
+
 sudo apt install libseccomp-dev libseccomp2 seccomp
 
 # Install audit tools for logging denied syscalls

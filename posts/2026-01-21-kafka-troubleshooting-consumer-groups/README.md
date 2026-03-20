@@ -24,6 +24,7 @@ Consumer group issues are among the most common problems in Kafka deployments. T
 
 ```bash
 # List all consumer groups
+
 kafka-consumer-groups.sh --bootstrap-server localhost:9092 --list
 
 # Describe consumer group

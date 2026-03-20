@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: IPv4, Networking, CIDR, Classful, Classless, Subnetting
 
-Description: Classful addressing assigned fixed network boundaries based on address class (A/B/C), while classless addressing (CIDR) allows arbitrary prefix lengths, dramatically improving address utilization and routing efficiency.
+Description: Classful addressing assigned fixed network boundaries based on address class (A/B/C), while classless addressing (CIDR) allows arbitrary prefix lengths, dramatically improving address utilization...
 
 ## Classful Addressing (Pre-1993)
 
@@ -22,7 +22,7 @@ In classful addressing, the network boundary was implied by the first octet:
 
 CIDR (1993) introduced explicit prefix lengths, allowing any boundary:
 
-```
+```text
 Old: 172.16.0.0 → Class B → /16 implied
 New: 172.16.0.0/22 → exactly 1022 hosts, no waste
 ```
@@ -62,7 +62,7 @@ compare_efficiency(500)
 ```
 
 Output:
-```
+```text
 Hosts needed: 500
 Classful: /16 = 65534 hosts (waste: 65034)
 CIDR:     /23 = 510 hosts (waste: 10)
@@ -74,6 +74,7 @@ Classful routing protocols (RIPv1) did not carry subnet mask information; they i
 
 ```bash
 # Old classful route (mask inferred)
+
 # Equivalent to: network 10.0.0.0 (always /8)
 
 # Modern classless route (explicit mask)
@@ -84,7 +85,7 @@ ip route add 10.1.2.0/24 via 192.168.1.1
 
 CIDR enables supernetting: combining multiple networks into one advertisement:
 
-```
+```text
 192.168.0.0/24
 192.168.1.0/24  →  192.168.0.0/22
 192.168.2.0/24

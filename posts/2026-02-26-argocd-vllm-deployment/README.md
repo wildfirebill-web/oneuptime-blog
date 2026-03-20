@@ -35,6 +35,7 @@ Ensure the NVIDIA GPU operator is installed:
 
 ```yaml
 # ArgoCD Application for NVIDIA GPU Operator
+
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:

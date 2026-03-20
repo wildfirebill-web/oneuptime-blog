@@ -27,6 +27,7 @@ Bitnami Sealed Secrets encrypts secrets client-side so only the cluster can decr
 
 ```bash
 # Install the Sealed Secrets controller via ArgoCD
+
 # manifests/sealed-secrets/kustomization.yaml
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization

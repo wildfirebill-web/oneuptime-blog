@@ -1,4 +1,4 @@
-# How to Use Custom Validation with Condition and Error Message in OpenTofu
+# How to Use Custom Validation with Condition and Error Message in OpenTofu (2)
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 

@@ -16,6 +16,7 @@ This collector config enriches incoming metrics with Kubernetes metadata so you 
 
 ```yaml
 # otel-collector-config.yaml
+
 receivers:
   otlp:
     protocols:

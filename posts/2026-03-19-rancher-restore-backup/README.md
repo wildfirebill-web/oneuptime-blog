@@ -181,7 +181,7 @@ kubectl get clusters.management.cattle.io
 
 Ensure the Rancher version on the target cluster matches the version used when the backup was created. Cross-version restores may not be supported.
 
-### Resources Already Exist
+Resources Already Exist
 
 If resources already exist on the cluster, the restore process will attempt to update them. If conflicts occur, you may need to delete the existing resources first:
 

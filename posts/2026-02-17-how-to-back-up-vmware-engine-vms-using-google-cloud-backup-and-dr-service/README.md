@@ -36,6 +36,7 @@ Before setting up backups, ensure your GCVE environment is ready.
 
 ```bash
 # Enable the Backup and DR API
+
 gcloud services enable backupdr.googleapis.com
 
 # Verify your GCVE private cloud is running

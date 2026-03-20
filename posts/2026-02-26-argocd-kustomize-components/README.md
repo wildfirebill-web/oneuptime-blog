@@ -31,6 +31,7 @@ Components use `kind: Component` in their kustomization file:
 
 ```yaml
 # components/monitoring-sidecar/kustomization.yaml
+
 apiVersion: kustomize.config.k8s.io/v1alpha1
 kind: Component
 

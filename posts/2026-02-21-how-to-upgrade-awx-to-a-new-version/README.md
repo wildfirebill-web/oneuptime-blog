@@ -25,6 +25,7 @@ Before upgrading, run through this checklist.
 
 ```bash
 # 1. Check current versions
+
 kubectl get deployment awx-operator-controller-manager -n awx \
   -o jsonpath='{.spec.template.spec.containers[0].image}'
 

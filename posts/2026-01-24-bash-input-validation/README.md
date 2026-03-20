@@ -33,6 +33,7 @@ flowchart TD
 #!/bin/bash
 
 # Require exactly 2 arguments
+
 if [[ $# -ne 2 ]]; then
     echo "Usage: $0 <source_file> <destination_file>" >&2
     exit 1

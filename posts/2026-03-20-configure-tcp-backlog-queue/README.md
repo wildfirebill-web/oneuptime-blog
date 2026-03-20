@@ -12,7 +12,7 @@ The TCP backlog queue is a buffer that holds incoming connection requests before
 
 ## The Two Queues
 
-```
+```text
 SYN queue (tcp_max_syn_backlog):
   - Holds half-open connections (after SYN, before ACK)
   - Managed by kernel
@@ -28,6 +28,7 @@ Accept queue (somaxconn + listen() backlog):
 
 ```bash
 # Show listen sockets with queue statistics
+
 ss -tlnp
 # Column meanings:
 # Recv-Q: Current size of accept queue (connections waiting for app to accept)
@@ -80,7 +81,7 @@ server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 server.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
 server.bind(('0.0.0.0', 8080))
 
-# Pass large backlog — OS uses min(backlog, net.core.somaxconn)
+# Pass large backlog - OS uses min(backlog, net.core.somaxconn)
 server.listen(1024)
 print("Listening with backlog=1024")
 ```

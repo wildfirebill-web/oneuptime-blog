@@ -35,6 +35,7 @@ This error means the node's clock is ahead of the certificate's validity period,
 
 ```bash
 # etcd logs showing leader changes
+
 talosctl -n 192.168.1.10 logs etcd | grep "leader"
 
 # You might see frequent entries like:

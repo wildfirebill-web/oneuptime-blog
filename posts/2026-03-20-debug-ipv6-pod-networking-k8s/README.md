@@ -27,6 +27,7 @@ flowchart TD
 
 ```bash
 # List all pods with their IP addresses (both IPv4 and IPv6 in dual-stack)
+
 kubectl get pods -o wide -A
 
 # Inspect a specific pod's IP addresses
@@ -131,4 +132,4 @@ kubectl describe pod <pod-name> | grep -A 5 Events
 | Cross-node traffic fails | Missing BGP/VXLAN route for remote CIDR | Check CNI routing daemon |
 | External IPv6 unreachable | No IPv6 masquerade rule | Add ip6tables MASQUERADE for egress |
 
-Systematic layer-by-layer debugging — from address assignment through routing to firewalling — resolves the vast majority of IPv6 pod networking issues.
+Systematic layer-by-layer debugging - from address assignment through routing to firewalling - resolves the vast majority of IPv6 pod networking issues.

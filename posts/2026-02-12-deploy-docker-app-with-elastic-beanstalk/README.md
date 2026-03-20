@@ -20,6 +20,7 @@ Here's a typical Node.js application as an example.
 
 ```dockerfile
 # Dockerfile - Multi-stage build for a Node.js application
+
 FROM node:20-alpine AS builder
 WORKDIR /app
 COPY package*.json ./

@@ -26,6 +26,7 @@ VPA is not included in standard Kubernetes distributions. Install it separately:
 
 ```bash
 # Clone the VPA repository
+
 git clone https://github.com/kubernetes/autoscaler.git
 
 # Install VPA components
@@ -197,7 +198,7 @@ spec:
 
 In Auto mode, VPA evicts pods and recreates them with updated resource values. This means brief disruptions, so always pair with PDBs.
 
-## Resource Policy Configuration
+Resource Policy Configuration
 
 Control what VPA can and cannot change:
 

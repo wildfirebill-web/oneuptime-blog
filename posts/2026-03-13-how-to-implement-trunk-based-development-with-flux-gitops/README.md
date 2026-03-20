@@ -61,6 +61,7 @@ Both staging and production track the same `main` branch but point to different 
 
 ```yaml
 # clusters/staging/apps.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: GitRepository
 metadata:

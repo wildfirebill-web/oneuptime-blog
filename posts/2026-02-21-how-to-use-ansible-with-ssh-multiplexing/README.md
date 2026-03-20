@@ -45,6 +45,7 @@ Ansible uses three SSH options to control multiplexing:
 
 ```ini
 # ansible.cfg
+
 [ssh_connection]
 ssh_args = -o ControlMaster=auto -o ControlPersist=60s
 control_path_dir = ~/.ansible/cp

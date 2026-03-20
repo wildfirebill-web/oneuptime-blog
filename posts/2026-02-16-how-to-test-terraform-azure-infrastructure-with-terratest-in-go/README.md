@@ -33,6 +33,7 @@ Start by initializing a Go module in your Terraform project:
 
 ```bash
 # Navigate to your test directory
+
 mkdir -p test
 cd test
 

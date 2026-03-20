@@ -29,6 +29,7 @@ This guide covers automating cilium-dbg bgp peers for monitoring and alerting.
 ```bash
 #!/bin/bash
 # collect-bgp-peers-state.sh
+
 set -euo pipefail
 
 NAMESPACE="${CILIUM_NAMESPACE:-kube-system}"

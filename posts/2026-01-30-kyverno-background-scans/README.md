@@ -47,6 +47,7 @@ Background scanning is controlled at the policy level with the `background` fiel
 
 ```yaml
 # require-labels-policy.yaml
+
 # This policy validates that all Pods have required labels
 # Background scanning checks existing Pods periodically
 apiVersion: kyverno.io/v1
@@ -141,7 +142,7 @@ kubectl rollout restart deployment kyverno -n kyverno
 | Medium (1000-10000 resources) | 1h | Balance between load and freshness |
 | Large (> 10000 resources) | 2h-4h | Reduce API server pressure |
 
-## Resource Selection and Filtering
+Resource Selection and Filtering
 
 Control which resources get scanned with match and exclude rules.
 

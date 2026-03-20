@@ -35,6 +35,7 @@ The recommended approach is to use Microsoft's official package repository, whic
 
 ```bash
 # Download and install the Microsoft package signing key
+
 # This ensures packages are verified and secure
 wget https://packages.microsoft.com/config/ubuntu/$(lsb_release -rs)/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
 

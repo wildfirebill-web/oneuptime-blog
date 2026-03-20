@@ -300,6 +300,7 @@ Access artifacts through the GitLab UI or API.
 
 ```bash
 # Download artifacts via API
+
 curl --header "PRIVATE-TOKEN: $GITLAB_TOKEN" \
   --output artifacts.zip \
   "https://gitlab.example.com/api/v4/projects/${PROJECT_ID}/jobs/${JOB_ID}/artifacts"

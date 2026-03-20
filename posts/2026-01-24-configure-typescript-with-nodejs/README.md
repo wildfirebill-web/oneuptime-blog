@@ -30,6 +30,7 @@ Let us start with a fresh Node.js project and add TypeScript.
 
 ```bash
 # Create project directory
+
 mkdir my-node-app
 cd my-node-app
 

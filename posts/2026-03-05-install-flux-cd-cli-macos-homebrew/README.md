@@ -22,6 +22,7 @@ If you do not have Homebrew installed, you can install it with the following com
 
 ```bash
 # Install Homebrew package manager
+
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 

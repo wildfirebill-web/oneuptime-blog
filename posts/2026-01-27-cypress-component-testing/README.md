@@ -56,6 +56,7 @@ First, install Cypress and the component testing dependencies:
 
 ```bash
 # Install Cypress
+
 npm install --save-dev cypress
 
 # For React projects

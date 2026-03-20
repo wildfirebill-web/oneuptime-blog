@@ -786,6 +786,7 @@ Kubernetes requires webhooks to use TLS. This script generates self-signed certi
 set -e
 
 # Configuration
+
 SERVICE_NAME="admission-webhook"
 NAMESPACE="default"
 SECRET_NAME="webhook-tls"

@@ -16,6 +16,7 @@ When you write a dynamic block, the default iterator matches the block label:
 
 ```hcl
 # The dynamic block label is "ingress"
+
 # So the default iterator is also "ingress"
 dynamic "ingress" {
   for_each = var.rules

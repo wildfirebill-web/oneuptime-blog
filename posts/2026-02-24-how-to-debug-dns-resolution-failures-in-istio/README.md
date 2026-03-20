@@ -170,6 +170,7 @@ Headless services (ClusterIP: None) work differently with DNS. Instead of return
 ```bash
 kubectl get svc my-headless-service -o jsonpath='{.spec.clusterIP}'
 # Output: None
+
 ```
 
 With Istio, headless service DNS resolution can be tricky because the sidecar needs to know about individual pod endpoints. Check if the endpoints are populated:

@@ -738,6 +738,7 @@ Manage test infrastructure with Docker Compose:
 
 ```yaml
 # docker-compose.test.yml
+
 version: '3.8'
 
 services:

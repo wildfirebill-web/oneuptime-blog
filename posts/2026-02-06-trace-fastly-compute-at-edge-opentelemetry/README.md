@@ -30,6 +30,7 @@ Before writing any instrumentation code, you need to declare an OpenTelemetry Co
 
 ```toml
 # fastly.toml
+
 # Service configuration for Compute@Edge with an OTel collector backend
 
 name = "my-edge-service"

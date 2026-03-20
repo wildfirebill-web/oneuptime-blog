@@ -14,6 +14,7 @@ IBM Cloud IPv6 Networking covers the provider-specific steps needed to enable IP
 
 ```bash
 # Example commands for IBM Cloud IPv6 Networking
+
 # Enable IPv6 networking at creation time or after
 # (Refer to provider-specific CLI or web console)
 echo "Enabling IPv6 for IBM Cloud IPv6 Networking"

@@ -26,6 +26,7 @@ For most data center deployments, a flat Level-2-only design is used, which elim
 
 ```bash
 # Add the FRRouting repository
+
 curl -s https://deb.frrouting.org/frr/keys.gpg | sudo tee /usr/share/keyrings/frrouting.gpg > /dev/null
 
 FRRVER="frr-stable"

@@ -12,7 +12,7 @@ FTP requires special firewall handling because the data channel uses dynamically
 
 ## FTP Port Overview
 
-```
+```text
 Active Mode:
   Control: Client → Server:21
   Data:    Server:20 → Client (random high port)
@@ -26,6 +26,7 @@ Passive Mode:
 
 ```bash
 # Load the FTP connection tracking helper
+
 sudo modprobe nf_conntrack_ftp
 
 # Make it persistent across reboots

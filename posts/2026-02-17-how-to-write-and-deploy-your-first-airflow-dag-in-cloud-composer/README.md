@@ -37,6 +37,7 @@ Every Airflow DAG is a Python file with a few key components:
 # my_first_dag.py - A basic Airflow DAG structure
 
 # 1. Import the required modules
+
 from datetime import datetime, timedelta
 from airflow import DAG
 from airflow.operators.python import PythonOperator

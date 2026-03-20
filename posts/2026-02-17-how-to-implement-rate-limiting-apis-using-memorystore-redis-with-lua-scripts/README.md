@@ -24,6 +24,7 @@ Create a Memorystore instance for your rate limiter:
 
 ```bash
 # Create a Memorystore Redis instance
+
 # The BASIC tier is fine for rate limiting since losing the count
 # during a failover is acceptable
 gcloud redis instances create rate-limiter \

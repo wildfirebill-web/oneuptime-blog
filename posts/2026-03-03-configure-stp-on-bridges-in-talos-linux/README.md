@@ -188,6 +188,7 @@ spec:
 
 ```bash
 # From a debug pod
+
 kubectl debug node/talos-node-1 -it --image=nicolaka/netshoot -- \
   bridge stp show
 

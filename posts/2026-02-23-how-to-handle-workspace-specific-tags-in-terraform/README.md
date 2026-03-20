@@ -16,6 +16,7 @@ Tags serve multiple purposes: cost allocation, access control, compliance auditi
 
 ```hcl
 # Without workspace-aware tags, you have to remember to update them manually
+
 # This is a recipe for mistakes
 resource "aws_instance" "app" {
   tags = {

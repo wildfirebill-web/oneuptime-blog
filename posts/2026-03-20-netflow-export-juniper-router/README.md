@@ -14,8 +14,9 @@ Juniper Junos uses a different configuration model from Cisco IOS. Flow monitori
 
 Define the NetFlow collector:
 
-```
+```bash
 # Junos configuration hierarchy
+
 set forwarding-options flow-monitoring version9 template IPV4_TEMPLATE ip-headers
 set forwarding-options flow-monitoring version9 template IPV4_TEMPLATE transport-ports
 set forwarding-options flow-monitoring version9 template IPV4_TEMPLATE protocol
@@ -32,9 +33,9 @@ set forwarding-options flow-monitoring version9 flow-export-destination NETFLOW_
 
 ## Step 2: Configure Sampling
 
-Define the sampling policy—how many packets to sample:
+Define the sampling policy-how many packets to sample:
 
-```
+```text
 # Configure 1-in-1000 packet sampling
 set forwarding-options sampling instance NETFLOW_SAMPLE input rate 1000
 set forwarding-options sampling instance NETFLOW_SAMPLE input run-length 0
@@ -44,7 +45,7 @@ set forwarding-options sampling instance NETFLOW_SAMPLE family inet output inlin
 
 ## Step 3: Apply Sampling to Interfaces
 
-```
+```text
 # Apply to the WAN interface (ingress and egress)
 set interfaces ge-0/0/0 unit 0 family inet sampling input
 set interfaces ge-0/0/0 unit 0 family inet sampling output
@@ -57,7 +58,7 @@ set interfaces ge-0/0/1 unit 0 family inet sampling input
 
 For complete NetFlow (not sampled), use a firewall filter with syslog action:
 
-```
+```bash
 # Create a filter that matches all traffic and samples it
 set firewall family inet filter NETFLOW_EXPORT term all-traffic from protocol [ tcp udp icmp ]
 set firewall family inet filter NETFLOW_EXPORT term all-traffic then sample
@@ -74,7 +75,7 @@ set interfaces ge-0/0/0 unit 0 family inet filter output NETFLOW_EXPORT
 
 To export using IPFIX format instead of NetFlow v9:
 
-```
+```text
 # Use IPFIX protocol
 set forwarding-options flow-monitoring version-ipfix template IPV4_IPFIX ip-headers
 set forwarding-options flow-monitoring version-ipfix template IPV4_IPFIX transport-ports
@@ -87,7 +88,7 @@ set forwarding-options flow-monitoring version-ipfix flow-export-destination IPF
 
 ## Step 6: Verify Flow Export
 
-```
+```bash
 # Show active sampling configuration
 show class-of-service interface ge-0/0/0
 
@@ -103,7 +104,7 @@ sudo tcpdump -i any udp port 2055 -n -c 5
 
 ## Step 7: View Configuration as Full Hierarchy
 
-```
+```text
 # Show complete flow monitoring configuration
 show configuration forwarding-options sampling
 show configuration forwarding-options flow-monitoring

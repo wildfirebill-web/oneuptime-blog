@@ -27,6 +27,7 @@ flowchart LR
 
 ```bash
 # macOS
+
 brew install conftest
 
 # Linux

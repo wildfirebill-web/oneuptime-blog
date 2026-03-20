@@ -16,6 +16,7 @@ This guide covers setting up an ISC DHCP server with Ansible, including subnet d
 
 ```yaml
 # roles/dhcp/defaults/main.yml - DHCP server configuration
+
 dhcp_interfaces:
   - eth0
 

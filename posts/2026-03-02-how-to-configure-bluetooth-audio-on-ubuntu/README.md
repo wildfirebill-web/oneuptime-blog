@@ -14,6 +14,7 @@ Bluetooth audio on Ubuntu has improved significantly with PipeWire, but getting 
 
 ```bash
 # Install Bluetooth stack and audio support
+
 sudo apt-get update
 sudo apt-get install -y \
     bluez \

@@ -18,6 +18,7 @@ The recommended setup deploys the OpenTelemetry Collector as a DaemonSet alongsi
 
 ```yaml
 # otel-collector-daemonset.yaml
+
 apiVersion: apps/v1
 kind: DaemonSet
 metadata:

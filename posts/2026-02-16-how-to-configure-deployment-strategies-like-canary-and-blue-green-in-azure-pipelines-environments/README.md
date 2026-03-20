@@ -48,6 +48,7 @@ Here is a canary deployment pipeline for a Kubernetes application.
 
 ```yaml
 # azure-pipelines.yml - Canary deployment strategy
+
 trigger:
   branches:
     include:

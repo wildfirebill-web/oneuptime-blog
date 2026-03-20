@@ -38,6 +38,7 @@ flowchart TD
 
 ```bash
 # Enable the CA Service API
+
 gcloud services enable privateca.googleapis.com
 
 # Create a CA pool (a container for one or more CAs)

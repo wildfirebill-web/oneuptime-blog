@@ -71,6 +71,7 @@ This command installs Strawberry with FastAPI integration, along with uvicorn fo
 
 ```bash
 # Create project directory
+
 mkdir graphql-api && cd graphql-api
 
 # Initialize with Poetry (or use pip)

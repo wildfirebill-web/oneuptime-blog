@@ -150,6 +150,7 @@ Different services have different reload capabilities and commands.
   when: pg_config.changed
 
 # Some PostgreSQL settings require a full restart
+
 - name: Check if restart is needed
   ansible.builtin.command: >
     psql -U postgres -t -c

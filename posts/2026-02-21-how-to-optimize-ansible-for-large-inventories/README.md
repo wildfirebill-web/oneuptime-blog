@@ -22,6 +22,7 @@ For dynamic inventories, caching prevents redundant API calls:
 
 ```ini
 # ansible.cfg - Enable inventory caching
+
 [inventory]
 cache = true
 cache_plugin = jsonfile

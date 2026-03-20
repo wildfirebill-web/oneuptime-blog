@@ -41,6 +41,7 @@ If kube-proxy is already running:
 
 ```bash
 # Remove kube-proxy DaemonSet
+
 kubectl -n kube-system delete ds kube-proxy
 
 # Clean up iptables rules left by kube-proxy

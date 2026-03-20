@@ -1,4 +1,4 @@
-# How to Delete a Workspace in OpenTofu
+# How to Delete a Workspace in OpenTofu - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -14,6 +14,7 @@ The `tofu workspace delete` command removes a workspace and its associated state
 
 ```bash
 # First, ensure the workspace is empty (all resources destroyed)
+
 tofu workspace select old-feature
 tofu destroy -auto-approve
 
@@ -93,12 +94,12 @@ done
 ## What Happens to State After Delete
 
 For local backends, the state directory is removed:
-```
+```text
 terraform.tfstate.d/old-feature/   # This directory is deleted
 ```
 
 For S3 backends, the state object is removed:
-```
+```text
 s3://bucket/prefix/env:/old-feature/terraform.tfstate  # This object is deleted
 ```
 

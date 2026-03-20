@@ -21,6 +21,7 @@ Ansible Vault does not natively read passwords from environment variables. It re
 ```bash
 #!/bin/bash
 # vault_pass.sh - reads vault password from environment variable
+
 # Ansible calls this script and captures stdout as the password
 
 echo "${ANSIBLE_VAULT_PASS}"

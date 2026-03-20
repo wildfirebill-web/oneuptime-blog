@@ -78,6 +78,7 @@ Error: yaml: line 3: mapping values are not allowed in this context
 
 ```bash
 # Check for tab characters (should be spaces)
+
 cat -A config.yaml | grep "^I"
 
 # Use yamllint to check formatting

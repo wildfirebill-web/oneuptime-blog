@@ -18,6 +18,7 @@ The Dockerfile syntax is identical to Linux, but the shell and path conventions 
 
 ```dockerfile
 # Dockerfile - Basic Windows container
+
 # Always start with a Microsoft base image
 FROM mcr.microsoft.com/windows/servercore:ltsc2022
 

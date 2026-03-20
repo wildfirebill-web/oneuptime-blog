@@ -34,6 +34,7 @@ LOCAL_PATH="${3:-.}"
 REMOTE_PATH="${4:-/app}"
 
 # Get first matching pod
+
 POD=$(kubectl get pod -n "$NAMESPACE" -l "$POD_SELECTOR" -o jsonpath='{.items[0].metadata.name}')
 
 if [ -z "$POD" ]; then

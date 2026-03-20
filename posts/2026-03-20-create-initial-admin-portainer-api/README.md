@@ -18,6 +18,7 @@ Portainer has a **5-minute window** after first startup to create the admin user
 
 ```bash
 # Check Portainer status - returns whether admin setup is still needed
+
 curl -s "http://localhost:9000/api/system/status" | jq '.'
 
 # Response when not yet initialized:

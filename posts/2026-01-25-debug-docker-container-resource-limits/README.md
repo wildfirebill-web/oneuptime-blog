@@ -16,6 +16,7 @@ Docker uses Linux cgroups to limit CPU, memory, and I/O for containers. When lim
 
 ```bash
 # View current resource limits for a container
+
 docker inspect mycontainer --format '
 CPU Shares: {{.HostConfig.CpuShares}}
 CPU Period: {{.HostConfig.CpuPeriod}}
@@ -287,7 +288,7 @@ services:
       prometheus.io/alert.cpu_high: "rate(container_cpu_usage_seconds_total[5m]) > 1.8"
 ```
 
-## Resource Limit Best Practices
+Resource Limit Best Practices
 
 ```yaml
 # Recommended configuration for production

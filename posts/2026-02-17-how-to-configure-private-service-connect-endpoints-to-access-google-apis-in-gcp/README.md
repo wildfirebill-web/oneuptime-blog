@@ -43,6 +43,7 @@ Choose an IP address from your VPC subnet for the PSC endpoint:
 
 ```bash
 # Reserve a static internal IP for the PSC endpoint
+
 gcloud compute addresses create psc-google-apis-ip \
   --region=us-central1 \
   --subnet=production-subnet \

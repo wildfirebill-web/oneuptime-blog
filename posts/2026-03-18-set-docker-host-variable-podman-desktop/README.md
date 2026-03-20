@@ -20,6 +20,7 @@ The `DOCKER_HOST` variable specifies the socket or TCP endpoint that container t
 
 ```bash
 # Check if DOCKER_HOST is currently set
+
 echo $DOCKER_HOST
 
 # If empty, tools default to /var/run/docker.sock

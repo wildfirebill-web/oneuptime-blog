@@ -1,8 +1,8 @@
-# How to Set Up Jupyter Notebooks on Rancher
+# How to Set Up Jupyter Notebooks on Rancher - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: rancher, jupyter, notebooks, data-science, kubernetes
+Tags: Rancher, Jupyter, Notebook, Data-science, Kubernetes
 
 Description: Guide to deploying JupyterHub on Rancher for collaborative data science notebook environments.
 
@@ -14,6 +14,7 @@ JupyterHub provides multi-user Jupyter notebook environments on Kubernetes (usin
 
 ```bash
 # Add JupyterHub Helm repository
+
 helm repo add jupyterhub https://hub.jupyter.org/helm-chart/
 helm repo update
 ```

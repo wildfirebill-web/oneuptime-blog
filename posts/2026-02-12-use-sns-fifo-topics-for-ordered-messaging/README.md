@@ -41,6 +41,7 @@ FIFO topic names must end with `.fifo`.
 
 ```bash
 # Create a FIFO topic
+
 aws sns create-topic \
   --name payment-events.fifo \
   --attributes '{

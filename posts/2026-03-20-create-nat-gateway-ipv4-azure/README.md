@@ -16,6 +16,7 @@ Azure NAT Gateway provides outbound-only IPv4 connectivity for VMs in private su
 RESOURCE_GROUP="my-network-rg"
 
 # Create a static public IP for outbound traffic
+
 az network public-ip create \
   --resource-group $RESOURCE_GROUP \
   --name nat-pip \

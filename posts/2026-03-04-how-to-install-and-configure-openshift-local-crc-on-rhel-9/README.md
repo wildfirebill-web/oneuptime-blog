@@ -19,6 +19,7 @@ OpenShift Local (formerly CodeReady Containers) provides a single-node OpenShift
 
 ```bash
 # Download from https://console.redhat.com/openshift/create/local
+
 tar xvf crc-linux-amd64.tar.xz
 sudo cp crc-linux-*-amd64/crc /usr/local/bin/
 ```

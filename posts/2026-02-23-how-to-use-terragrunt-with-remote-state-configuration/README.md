@@ -16,6 +16,7 @@ Without Terragrunt, each module needs a backend block:
 
 ```hcl
 # dev/vpc/main.tf
+
 terraform {
   backend "s3" {
     bucket         = "my-terraform-state"

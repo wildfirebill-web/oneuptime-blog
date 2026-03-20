@@ -8,14 +8,15 @@ Description: Learn how to set up and use provider network mirrors in OpenTofu to
 
 ## Introduction
 
-A network mirror is an HTTP server that serves provider plugin archives in the format OpenTofu expects. Unlike a filesystem mirror (a local directory), a network mirror can be shared across an entire organization — every developer and CI/CD system downloads providers from the same internal server without needing internet access or local copies.
+A network mirror is an HTTP server that serves provider plugin archives in the format OpenTofu expects. Unlike a filesystem mirror (a local directory), a network mirror can be shared across an entire organization - every developer and CI/CD system downloads providers from the same internal server without needing internet access or local copies.
 
 ## Network Mirror Protocol
 
 OpenTofu expects a network mirror to serve specific JSON API responses and binary files at predictable URLs:
 
-```
+```text
 # Discovery endpoint
+
 GET /v1/providers/<namespace>/<type>/index.json
 
 # Version metadata

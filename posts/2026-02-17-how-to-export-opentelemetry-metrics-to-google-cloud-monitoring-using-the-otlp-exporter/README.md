@@ -32,6 +32,7 @@ Here is how to configure a Python application to export metrics directly to Goog
 
 ```bash
 # Install the required packages
+
 pip install opentelemetry-api opentelemetry-sdk opentelemetry-exporter-otlp-proto-grpc google-auth
 ```
 

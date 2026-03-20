@@ -30,6 +30,7 @@ Start by creating a map resource. You can do this in the console or via CLI.
 
 ```bash
 # Create a map resource using Esri as the data provider
+
 aws location create-map \
   --map-name "my-app-map" \
   --configuration Style=VectorEsriNavigation \

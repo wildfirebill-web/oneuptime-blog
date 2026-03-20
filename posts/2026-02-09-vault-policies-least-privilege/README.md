@@ -22,6 +22,7 @@ Start with simple, focused policies:
 
 ```bash
 # Read-only policy for application secrets
+
 vault policy write app-read-only - <<EOF
 # Read secrets for specific app
 path "secret/data/myapp/*" {

@@ -39,6 +39,7 @@ graph TD
 
 ```bash
 # Create the VPN namespace
+
 sudo ip netns add vpn
 
 # Bring up loopback inside the namespace

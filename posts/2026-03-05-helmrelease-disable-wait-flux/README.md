@@ -33,6 +33,7 @@ To skip waiting during the initial chart installation:
 
 ```yaml
 # HelmRelease with disableWait enabled for install operations
+
 apiVersion: helm.toolkit.fluxcd.io/v2
 kind: HelmRelease
 metadata:

@@ -39,6 +39,7 @@ EKS needs subnets across at least two availability zones. The subnets also need 
 
 ```hcl
 # Create the VPC for our EKS cluster
+
 resource "aws_vpc" "eks" {
   cidr_block           = "10.0.0.0/16"
   enable_dns_support   = true

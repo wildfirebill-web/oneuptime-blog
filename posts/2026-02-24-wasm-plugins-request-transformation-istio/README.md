@@ -280,6 +280,7 @@ You can chain multiple transformation plugins by using different phases and prio
 
 ```yaml
 # First: normalize incoming requests
+
 apiVersion: extensions.istio.io/v1alpha1
 kind: WasmPlugin
 metadata:

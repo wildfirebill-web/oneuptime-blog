@@ -59,6 +59,7 @@ You can verify your Kubernetes setup with these commands:
 
 ```bash
 # Check kubectl connection to cluster
+
 kubectl cluster-info
 
 # Verify Kubernetes version
@@ -525,7 +526,7 @@ else:
 
 Here are some recommendations for working with Kubeflow in production:
 
-### Resource Management
+Resource Management
 
 ```yaml
 # Always set resource requests and limits for your components

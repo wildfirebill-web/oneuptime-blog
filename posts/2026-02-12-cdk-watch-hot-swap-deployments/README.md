@@ -43,6 +43,7 @@ The simplest way to use hot-swap:
 
 ```bash
 # Deploy with hot-swap enabled (skip CloudFormation where possible)
+
 cdk deploy --hotswap
 
 # Deploy a specific stack with hot-swap

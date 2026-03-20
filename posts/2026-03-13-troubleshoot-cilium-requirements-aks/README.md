@@ -26,6 +26,7 @@ The most frequent issues involve network plugin conflicts (attempting to install
 
 ```bash
 # Diagnose: check existing CNI configuration
+
 kubectl exec -n kube-system cilium-xxxxx -- ls /etc/cni/net.d/
 kubectl exec -n kube-system cilium-xxxxx -- cat /etc/cni/net.d/10-azure.conflist
 

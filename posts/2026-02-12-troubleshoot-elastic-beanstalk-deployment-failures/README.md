@@ -18,6 +18,7 @@ Before you do anything else, pull the logs. Most deployment problems are immedia
 
 ```bash
 # Get the last 100 lines of all logs
+
 eb logs
 
 # Get full logs (downloaded as a zip)

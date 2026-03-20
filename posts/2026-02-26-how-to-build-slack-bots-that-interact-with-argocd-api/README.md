@@ -41,6 +41,7 @@ Here is a Python implementation using Flask and the Slack SDK.
 
 ```python
 # argocd_slack_bot.py
+
 # Slack bot for ArgoCD operations
 import os
 import json

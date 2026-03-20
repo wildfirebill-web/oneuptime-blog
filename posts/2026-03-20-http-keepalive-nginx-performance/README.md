@@ -8,7 +8,7 @@ Description: Learn how to tune HTTP Keep-Alive settings in Nginx to reduce conne
 
 ## What Is HTTP Keep-Alive?
 
-HTTP Keep-Alive (also called persistent connections) allows a single TCP connection to be reused for multiple HTTP requests. Without it, every request requires a full TCP handshake—adding latency and CPU overhead. Enabling and tuning Keep-Alive is one of the simplest performance wins for high-traffic Nginx deployments.
+HTTP Keep-Alive (also called persistent connections) allows a single TCP connection to be reused for multiple HTTP requests. Without it, every request requires a full TCP handshake-adding latency and CPU overhead. Enabling and tuning Keep-Alive is one of the simplest performance wins for high-traffic Nginx deployments.
 
 ## Default Nginx Keep-Alive Behavior
 
@@ -20,6 +20,7 @@ The `keepalive_timeout` directive sets how long Nginx will keep an idle connecti
 
 ```nginx
 # /etc/nginx/nginx.conf
+
 http {
     # Keep idle connections open for up to 65 seconds
     # The optional second value sets the Keep-Alive header value sent to clients
@@ -37,8 +38,8 @@ http {
 }
 ```
 
-- `keepalive_timeout 65 60;` — Nginx closes idle connections after 65 seconds; it also sends a `Keep-Alive: timeout=60` header to hint to clients.
-- `keepalive_requests 1000;` — After 1000 requests on a single connection, Nginx closes it to prevent resource exhaustion.
+- `keepalive_timeout 65 60;` - Nginx closes idle connections after 65 seconds; it also sends a `Keep-Alive: timeout=60` header to hint to clients.
+- `keepalive_requests 1000;` - After 1000 requests on a single connection, Nginx closes it to prevent resource exhaustion.
 
 ## Keep-Alive Between Nginx and Upstream Servers
 
@@ -68,7 +69,7 @@ server {
 }
 ```
 
-Setting `proxy_http_version 1.1` and clearing the `Connection` header are both required—HTTP/1.0 does not support persistent connections by default.
+Setting `proxy_http_version 1.1` and clearing the `Connection` header are both required-HTTP/1.0 does not support persistent connections by default.
 
 ## Tuning for High-Traffic Sites
 

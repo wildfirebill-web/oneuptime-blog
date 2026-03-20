@@ -16,6 +16,7 @@ Add `vars_prompt` at the play level to define prompts that appear when the playb
 
 ```yaml
 # basic-prompt.yml
+
 # Prompts the user for deployment parameters
 ---
 - name: Deploy application

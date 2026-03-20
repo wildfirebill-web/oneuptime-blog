@@ -60,6 +60,7 @@ The collector needs to accept telemetry from all your languages. Configure both 
 
 ```yaml
 # collector-config.yaml
+
 # Configure receivers to accept OTLP over both gRPC and HTTP.
 # Java and Go SDKs typically default to gRPC, while Python and
 # Node.js often use HTTP. Supporting both avoids SDK reconfiguration.

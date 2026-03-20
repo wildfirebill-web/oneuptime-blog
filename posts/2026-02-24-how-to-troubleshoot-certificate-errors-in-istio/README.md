@@ -73,6 +73,7 @@ Extract and verify the full chain:
 
 ```bash
 # Extract the chain
+
 istioctl proxy-config secret <pod-name> -n <namespace> -o json | \
   jq -r '.dynamicActiveSecrets[] | select(.name=="default") | .secret.tlsCertificate.certificateChain.inlineBytes' | \
   base64 -d > /tmp/workload-chain.pem

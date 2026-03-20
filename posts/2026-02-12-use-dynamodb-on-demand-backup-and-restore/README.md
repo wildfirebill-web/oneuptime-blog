@@ -20,6 +20,7 @@ Here's how to create one via the CLI.
 
 ```bash
 # Create an on-demand backup of the Users table
+
 # The backup-name should be descriptive so you can find it later
 aws dynamodb create-backup \
   --table-name Users \

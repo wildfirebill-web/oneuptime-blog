@@ -27,6 +27,7 @@ flowchart LR
 
 ```bash
 # Normal state: HEAD points to a branch
+
 cat .git/HEAD
 # ref: refs/heads/main
 

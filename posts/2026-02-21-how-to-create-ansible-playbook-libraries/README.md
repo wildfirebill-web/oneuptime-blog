@@ -54,6 +54,7 @@ Each library playbook should be self-contained with documentation, validation, a
 
 ```yaml
 # deployment/deploy-application.yml
+
 #
 # Generic application deployment playbook.
 #

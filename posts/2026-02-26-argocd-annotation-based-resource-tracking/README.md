@@ -54,6 +54,7 @@ With Helm:
 
 ```yaml
 # values.yaml for argo-cd chart
+
 server:
   config:
     application.resourceTrackingMethod: "annotation"
@@ -210,7 +211,7 @@ When ArgoCD prunes resources (removes resources no longer in Git), it uses the t
 
 With annotation tracking, orphaned resource detection looks for resources in the application's namespaces that do NOT have a tracking annotation. This is more precise than label-based detection.
 
-### Resource Tree Building
+Resource Tree Building
 
 The resource tree in the UI is built by querying for resources with the tracking annotation. Resources without the annotation are not shown in the tree even if they are in the application's namespace.
 

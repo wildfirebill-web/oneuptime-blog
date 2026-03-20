@@ -34,6 +34,7 @@ Before starting, make sure you have:
 
 ```bash
 # Install talosctl on your workstation
+
 curl -sL https://talos.dev/install | sh
 
 # Verify

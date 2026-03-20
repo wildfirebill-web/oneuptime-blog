@@ -60,6 +60,7 @@ The output is large (often megabytes). Filter by config type:
 
 ```bash
 # Only listener configuration
+
 kubectl exec productpage-v1-6b746f74dc-9rlmh -c istio-proxy -n bookinfo -- \
   pilot-agent request GET "/config_dump?resource=dynamic_listeners"
 

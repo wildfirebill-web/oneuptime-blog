@@ -40,6 +40,7 @@ If you're working across regions or accounts, each provider alias can have its o
 
 ```hcl
 # Primary region
+
 provider "aws" {
   region = "us-east-1"
   alias  = "us_east"

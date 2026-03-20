@@ -130,6 +130,7 @@ Each namespace in the project gets up to 200Gi unless overridden.
 
 ```bash
 # Check quota usage for a namespace
+
 kubectl describe resourcequota storage-quota -n team-alpha
 
 # Output example:

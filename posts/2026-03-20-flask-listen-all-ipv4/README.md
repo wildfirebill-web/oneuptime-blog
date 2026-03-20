@@ -43,6 +43,7 @@ if __name__ == "__main__":
 
 ```bash
 # Default: listen on all interfaces
+
 python app.py
 
 # Restrict to localhost only
@@ -117,7 +118,7 @@ services:
   api:
     build: .
     ports:
-      - "5000:5000"   # host:container — publish only to localhost by default
+      - "5000:5000"   # host:container - publish only to localhost by default
       # Use "127.0.0.1:5000:5000" to restrict to loopback on the host
 ```
 

@@ -26,6 +26,7 @@ Both server and client run from the same binary, controlled by the configuration
 
 ```bash
 # Set the version variable
+
 VELOCIRAPTOR_VERSION="0.72.3"
 
 # Download the binary

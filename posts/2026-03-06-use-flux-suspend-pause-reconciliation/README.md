@@ -26,6 +26,7 @@ You can verify your Flux installation with:
 
 ```bash
 # Check that Flux is installed and running
+
 flux check
 ```
 
@@ -257,7 +258,7 @@ It is important to note that suspending a resource does not roll back any previo
 
 ## Troubleshooting
 
-### Resource Not Found
+Resource Not Found
 
 If you receive a "not found" error, verify the resource name and namespace:
 

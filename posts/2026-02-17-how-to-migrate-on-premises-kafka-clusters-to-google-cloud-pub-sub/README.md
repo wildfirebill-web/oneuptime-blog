@@ -33,6 +33,7 @@ Create Pub/Sub topics that correspond to your Kafka topics:
 
 ```bash
 # List existing Kafka topics to know what to migrate
+
 kafka-topics.sh --list --bootstrap-server kafka-broker:9092
 
 # Create corresponding Pub/Sub topics

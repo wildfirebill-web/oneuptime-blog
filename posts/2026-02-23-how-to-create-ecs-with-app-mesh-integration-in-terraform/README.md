@@ -56,6 +56,7 @@ data "aws_subnets" "private" {
 }
 
 # Create the App Mesh
+
 resource "aws_appmesh_mesh" "main" {
   name = "production-mesh"
 

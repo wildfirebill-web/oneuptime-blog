@@ -90,6 +90,7 @@ resource "aws_security_group" "vpc_endpoints" {
 
 ```bash
 # From a private EC2 instance (no public IP, no NAT)
+
 aws ssm start-session --target i-0abc1234567890def
 ```
 
@@ -97,4 +98,4 @@ aws ssm start-session --target i-0abc1234567890def
 
 ## Summary
 
-Create Gateway endpoints for S3 and DynamoDB by specifying route table IDs — they're free and add automatic routes. Create Interface endpoints for other services (SSM, ECR, Secrets Manager) with subnet IDs, a security group allowing port 443 from the VPC CIDR, and `private_dns_enabled = true`. This lets private instances access AWS services without internet access or NAT Gateway costs.
+Create Gateway endpoints for S3 and DynamoDB by specifying route table IDs - they're free and add automatic routes. Create Interface endpoints for other services (SSM, ECR, Secrets Manager) with subnet IDs, a security group allowing port 443 from the VPC CIDR, and `private_dns_enabled = true`. This lets private instances access AWS services without internet access or NAT Gateway costs.

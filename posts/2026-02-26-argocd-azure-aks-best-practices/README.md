@@ -16,6 +16,7 @@ This guide covers the best practices for a production ArgoCD deployment on AKS.
 
 ```yaml
 # values-aks.yaml
+
 global:
   image:
     tag: v2.10.0

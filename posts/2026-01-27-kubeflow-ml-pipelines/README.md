@@ -42,6 +42,7 @@ A pipeline is a graph of components. Each component is a containerized step that
 
 ```python
 # Basic pipeline structure
+
 from kfp import dsl
 
 @dsl.pipeline(

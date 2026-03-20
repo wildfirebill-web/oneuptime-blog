@@ -47,6 +47,7 @@ Before getting started, ensure you have a K3s cluster running. Install K3s with 
 
 ```bash
 # Install K3s on a Linux server
+
 curl -sfL https://get.k3s.io | sh -
 
 # Verify the installation by checking node status

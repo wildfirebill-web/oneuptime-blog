@@ -1,4 +1,4 @@
-# How to Add Google Artifact Registry to Portainer
+# How to Add Google Artifact Registry to Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -19,10 +19,11 @@ Google Artifact Registry (GAR) is Google Cloud's universal package and container
 
 ## Google Artifact Registry URL Format
 
-```
+```text
 {region}-docker.pkg.dev/{project-id}/{repository-name}/{image-name}:{tag}
 
 # Examples:
+
 us-central1-docker.pkg.dev/myproject/myrepo/myapp:latest
 europe-west1-docker.pkg.dev/myproject/api-images/api:v2.0
 ```
@@ -114,14 +115,14 @@ The key file looks like:
 3. Select **Custom registry**
 4. Configure:
 
-```
+```text
 Name:      Google Artifact Registry
 URL:       us-central1-docker.pkg.dev
 Username:  _json_key
 Password:  {paste entire contents of portainer-key.json as a single line}
 ```
 
-**Important:** The username is literally `_json_key` — this is the special username Docker uses for GCP service account key authentication.
+**Important:** The username is literally `_json_key` - this is the special username Docker uses for GCP service account key authentication.
 
 For the password, paste the entire JSON key file content. In Portainer, ensure it is entered as a single string (no line breaks when pasting).
 
@@ -141,7 +142,7 @@ docker login us-central1-docker.pkg.dev \
   --password "$(gcloud auth print-access-token)"
 ```
 
-For Portainer, this requires manual refresh every hour — use the service account key method for production.
+For Portainer, this requires manual refresh every hour - use the service account key method for production.
 
 ## Step 8: Push Images to GAR
 
@@ -195,7 +196,7 @@ gcloud iam service-accounts keys delete $OLD_KEY_ID \
 
 ### Permission Denied
 
-```
+```text
 Error: denied: Permission "artifactregistry.repositories.downloadArtifacts" denied
 ```
 
@@ -203,7 +204,7 @@ Grant the service account `roles/artifactregistry.reader` role.
 
 ### Invalid Credentials
 
-```
+```text
 Error: unauthorized: failed to verify authentication
 ```
 
@@ -213,7 +214,7 @@ Verify the JSON key is pasted correctly and the username is exactly `_json_key`.
 
 Ensure the region prefix matches your repository location:
 
-```
+```text
 us-central1-docker.pkg.dev  ← Correct for us-central1
 ```
 

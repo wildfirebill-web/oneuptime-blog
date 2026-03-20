@@ -77,6 +77,7 @@ JobManager logs contain orchestration information. Key patterns to search for:
 
 ```bash
 # Connect to JobManager container/pod
+
 kubectl logs -f deployment/flink-jobmanager
 
 # Search for error patterns

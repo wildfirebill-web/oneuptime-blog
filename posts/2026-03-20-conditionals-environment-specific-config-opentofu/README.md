@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, Environments, Conditionals, HCL, Best Practices
+Tags: OpenTofu, Terraform, Environments, Conditional, HCL, Best Practices
 
 Description: Learn how to use OpenTofu conditionals to manage environment-specific configurations for dev, staging, and production without duplicating resource definitions.
 
@@ -82,6 +82,7 @@ locals {
 }
 
 # Read replicas only in production
+
 resource "aws_db_instance" "read_replica" {
   count = local.is_prod ? var.read_replica_count : 0
 

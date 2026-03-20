@@ -1,4 +1,4 @@
-# How to Use Okteto with Rancher for Remote Development
+# How to Use Okteto with Rancher for Remote Development - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -21,6 +21,7 @@ Okteto replaces your running container with a development container that has you
 
 ```bash
 # macOS
+
 brew install okteto
 
 # Linux

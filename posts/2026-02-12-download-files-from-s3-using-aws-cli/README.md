@@ -20,6 +20,7 @@ Download a single file from S3:
 
 ```bash
 # Download a file to the current directory
+
 aws s3 cp s3://my-bucket/data/report.csv .
 
 # Download to a specific local path

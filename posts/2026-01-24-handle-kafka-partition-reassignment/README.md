@@ -54,6 +54,7 @@ flowchart TD
 
 ```bash
 # List all topics and their partition distribution
+
 kafka-topics.sh --bootstrap-server localhost:9092 --describe
 
 # Check broker disk usage

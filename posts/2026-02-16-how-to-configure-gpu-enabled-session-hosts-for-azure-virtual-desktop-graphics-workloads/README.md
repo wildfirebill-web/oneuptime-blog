@@ -36,6 +36,7 @@ GPU VMs often have zero default quota. Check and request an increase:
 
 ```bash
 # Check current quota for NV series VMs in your subscription
+
 az vm list-usage \
     --location eastus \
     --query "[?contains(name.localizedValue, 'NV')]" \

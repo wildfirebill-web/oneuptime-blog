@@ -23,6 +23,7 @@ This guide covers configure Kubernetes NetworkPolicy Basics in Calico with produ
 
 ```yaml
 # Standard Kubernetes NetworkPolicy (enforced by Calico)
+
 apiVersion: networking.k8s.io/v1
 kind: NetworkPolicy
 metadata:

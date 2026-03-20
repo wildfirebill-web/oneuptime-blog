@@ -29,6 +29,7 @@ Store complete Calico resource definitions in Git and use replace for updates:
 
 ```bash
 # Repository structure
+
 calico-resources/
   ├── policies/
   │   ├── global/

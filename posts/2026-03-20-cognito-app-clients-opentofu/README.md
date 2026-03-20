@@ -8,7 +8,7 @@ Description: Learn how to configure AWS Cognito User Pool App Clients for web, m
 
 ## Introduction
 
-App Clients define how an application authenticates with a Cognito User Pool. Each client has its own credentials, OAuth flows, allowed scopes, and callback URLs. OpenTofu lets you manage multiple app clients — for web frontends, mobile apps, and backend services — as code.
+App Clients define how an application authenticates with a Cognito User Pool. Each client has its own credentials, OAuth flows, allowed scopes, and callback URLs. OpenTofu lets you manage multiple app clients - for web frontends, mobile apps, and backend services - as code.
 
 ## Web Application Client
 
@@ -70,7 +70,7 @@ resource "aws_cognito_user_pool_client" "backend" {
 }
 ```
 
-## Resource Server for Custom Scopes
+Resource Server for Custom Scopes
 
 ```hcl
 resource "aws_cognito_resource_server" "api" {
@@ -138,4 +138,4 @@ tofu apply tfplan
 
 ## Summary
 
-Cognito App Clients are the bridge between your applications and the User Pool. OpenTofu lets you configure separate clients for web, mobile, and backend apps with appropriate OAuth flows, token validity, and scope restrictions — all version controlled and reproducible.
+Cognito App Clients are the bridge between your applications and the User Pool. OpenTofu lets you configure separate clients for web, mobile, and backend apps with appropriate OAuth flows, token validity, and scope restrictions - all version controlled and reproducible.

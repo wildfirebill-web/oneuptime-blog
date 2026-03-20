@@ -25,6 +25,7 @@ You can verify your GPU is visible to Docker with this command:
 
 ```bash
 # Confirm Docker can see your NVIDIA GPU
+
 docker run --rm --gpus all nvidia/cuda:12.4.0-base-ubuntu22.04 nvidia-smi
 ```
 

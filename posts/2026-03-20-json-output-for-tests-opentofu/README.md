@@ -14,6 +14,7 @@ By default, `tofu test` prints human-readable output to the terminal. For CI/CD 
 
 ```bash
 # Output results as JSON to stdout
+
 tofu test -json
 
 # Save JSON output to a file
@@ -150,4 +151,4 @@ fi
 
 ## Conclusion
 
-JSON output turns `tofu test` into a first-class citizen of your observability stack. Pipe it into dashboards, ticket systems, or Slack—making infrastructure test failures as visible as application test failures.
+JSON output turns `tofu test` into a first-class citizen of your observability stack. Pipe it into dashboards, ticket systems, or Slack-making infrastructure test failures as visible as application test failures.

@@ -30,6 +30,7 @@ from vertexai.generative_models import GenerativeModel, GenerationConfig
 import json
 
 # Initialize Vertex AI
+
 vertexai.init(project="your-project-id", location="us-central1")
 
 # Define a rubric for technical documentation evaluation

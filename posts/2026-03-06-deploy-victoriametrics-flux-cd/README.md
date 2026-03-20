@@ -43,6 +43,7 @@ Create a dedicated namespace for VictoriaMetrics to isolate its resources.
 
 ```yaml
 # clusters/my-cluster/victoriametrics/namespace.yaml
+
 apiVersion: v1
 kind: Namespace
 metadata:

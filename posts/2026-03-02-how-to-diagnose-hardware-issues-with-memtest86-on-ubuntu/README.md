@@ -28,6 +28,7 @@ Ubuntu's default installation typically includes memtest86+:
 
 ```bash
 # Install memtest86+
+
 sudo apt update
 sudo apt install -y memtest86+
 

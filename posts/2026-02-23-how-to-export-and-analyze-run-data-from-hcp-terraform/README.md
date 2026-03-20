@@ -29,6 +29,7 @@ Every run in HCP Terraform contains:
 
 ```bash
 # Get the latest 20 runs for a specific workspace
+
 WORKSPACE_ID="ws-abc123"
 
 curl -s \

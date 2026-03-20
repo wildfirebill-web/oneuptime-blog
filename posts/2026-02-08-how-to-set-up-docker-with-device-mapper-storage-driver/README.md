@@ -38,6 +38,7 @@ LVM tools are usually pre-installed on most Linux systems, but verify and instal
 
 ```bash
 # Install LVM tools on Ubuntu/Debian
+
 sudo apt update
 sudo apt install -y lvm2 thin-provisioning-tools
 

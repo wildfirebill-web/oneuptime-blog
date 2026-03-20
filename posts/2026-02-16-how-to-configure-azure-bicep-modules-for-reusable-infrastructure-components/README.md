@@ -290,6 +290,7 @@ First, create a registry and publish your module.
 
 ```bash
 # Create an Azure Container Registry for Bicep modules
+
 az acr create \
   --resource-group rg-shared \
   --name mycompanybicep \

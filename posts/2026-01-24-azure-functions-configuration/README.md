@@ -49,6 +49,7 @@ flowchart TB
 
 ```bash
 # Create a resource group
+
 az group create --name myfunction-rg --location eastus
 
 # Create a storage account (required for Functions)

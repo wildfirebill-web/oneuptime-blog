@@ -205,7 +205,7 @@ podman inspect --format '{{.NetworkSettings.IPAddress}}' webserver
 podman inspect --format '{{.State.Status}}' webserver
 ```
 
-## Resource Usage Monitoring
+Resource Usage Monitoring
 
 Keep an eye on what your containers are consuming:
 

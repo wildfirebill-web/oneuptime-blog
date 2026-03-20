@@ -20,6 +20,7 @@ Use the `--label` (or `-l`) flag to attach labels:
 
 ```bash
 # Add a single label
+
 podman run -d --name web \
   --label app=frontend \
   nginx:latest

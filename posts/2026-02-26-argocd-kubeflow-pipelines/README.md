@@ -35,6 +35,7 @@ If you do not need the full Kubeflow platform, you can deploy just the Pipelines
 
 ```yaml
 # ArgoCD Application for Kubeflow Pipelines
+
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:

@@ -16,6 +16,7 @@ Amazon EKS managed node groups simplify Kubernetes worker node management by han
 
 ```hcl
 # cluster.tf
+
 resource "aws_eks_cluster" "main" {
   name     = "production"
   role_arn = aws_iam_role.eks_cluster.arn
@@ -273,9 +274,9 @@ kubectl get nodes --show-labels
 
 ## Best Practices
 
-1. **Use private subnets** for node groups — only the control plane needs public access
+1. **Use private subnets** for node groups - only the control plane needs public access
 2. **Enable IMDSv2** via launch template for improved security
-3. **Mix On-Demand and Spot** — on-demand for system workloads, spot for batch/workers
+3. **Mix On-Demand and Spot** - on-demand for system workloads, spot for batch/workers
 4. **Configure cluster autoscaler** or Karpenter to manage desired_size automatically
 5. **Pin EKS version** and test upgrades in staging before production
 

@@ -180,6 +180,7 @@ aws wafv2 update-web-acl \
 
 ```bash
 # Get your ALB ARN
+
 ALB_ARN=$(aws elbv2 describe-load-balancers --names my-app-alb \
   --query 'LoadBalancers[0].LoadBalancerArn' --output text)
 

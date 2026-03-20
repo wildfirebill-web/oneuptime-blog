@@ -18,6 +18,7 @@ The Docker daemon listens on a Unix socket by default. curl can connect to Unix 
 
 ```bash
 # Test the connection by requesting the Docker version
+
 curl --unix-socket /var/run/docker.sock http://localhost/version | jq .
 ```
 

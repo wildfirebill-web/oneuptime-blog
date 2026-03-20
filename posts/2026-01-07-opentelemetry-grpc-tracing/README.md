@@ -58,6 +58,7 @@ The following commands initialize a new Go module and install all required OpenT
 
 ```bash
 # Initialize a new Go module for our project
+
 mkdir grpc-tracing-demo && cd grpc-tracing-demo
 go mod init github.com/example/grpc-tracing-demo
 

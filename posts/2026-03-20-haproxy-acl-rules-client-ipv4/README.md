@@ -133,6 +133,7 @@ frontend http_in
 
 ```bash
 # Test from allowed IP
+
 curl -4 --interface 10.0.0.5 http://203.0.113.10/admin/
 
 # Test from blocked IP (should get 403 or connection rejected)

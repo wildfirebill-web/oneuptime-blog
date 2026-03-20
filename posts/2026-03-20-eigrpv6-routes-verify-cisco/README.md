@@ -12,7 +12,7 @@ EIGRPv6 verification involves checking three data structures: the neighbor table
 
 ## Primary Verification Commands
 
-```
+```text
 ! Show EIGRPv6 process and neighbors
 Router# show ipv6 eigrp
 
@@ -28,7 +28,7 @@ Router# show ipv6 route eigrp
 
 ## Interpreting show ipv6 eigrp neighbors
 
-```
+```text
 Router# show ipv6 eigrp neighbors
 
 IPv6-EIGRP neighbors for process 1
@@ -47,7 +47,7 @@ H   Address               Interface   Hold  Uptime   SRTT  RTO  Q  Seq Num
 
 ## Interpreting show ipv6 eigrp topology
 
-```
+```text
 Router# show ipv6 eigrp topology
 
 IPv6-EIGRP Topology Table for AS(1)/ID(1.1.1.1)
@@ -64,14 +64,14 @@ P 2001:DB8:2::/48, 1 successors, FD is 30720
 ```
 
 - **P** = Passive (route is stable, not in DUAL query)
-- **A** = Active (DUAL is computing the route — should resolve quickly)
+- **A** = Active (DUAL is computing the route - should resolve quickly)
 - **FD** = Feasible Distance (best metric to reach this destination)
 - **via FE80::2 (28160/25600)** = (Metric through this neighbor / neighbor's metric)
 - A route is a **Feasible Successor** if its RD (reported distance) < FD of the Successor
 
 ## Interpreting show ipv6 route eigrp
 
-```
+```text
 Router# show ipv6 route eigrp
 
 D   2001:DB8:1::/48 [90/28160]
@@ -88,7 +88,7 @@ D EX 2001:DB8:EXTERN::/48 [170/30720]  ← External EIGRP route
 
 ## Verifying Feasible Successors (Fast Failover)
 
-```
+```text
 Router# show ipv6 eigrp topology 2001:DB8:1::/48
 
 IPv6-EIGRP (AS 1): Topology entry for 2001:DB8:1::/48
@@ -102,9 +102,9 @@ IPv6-EIGRP (AS 1): Topology entry for 2001:DB8:1::/48
   FE80::3 (GigabitEthernet0/1), from FE80::3, Send flag is 0x0
       Composite metric is (30720/25600), Route is Internal
       Feasible Successor. FD is 28160
-      ↑ This is a Feasible Successor — will be used immediately if primary fails
+      ↑ This is a Feasible Successor - will be used immediately if primary fails
 ```
 
 ## Summary
 
-EIGRPv6 verification uses three tables: `show ipv6 eigrp neighbors` for adjacency state, `show ipv6 eigrp topology` for all known paths including backup Feasible Successors, and `show ipv6 route eigrp` for installed routes. Always check the topology table to confirm Feasible Successors exist for critical routes — their presence enables instant failover without DUAL queries.
+EIGRPv6 verification uses three tables: `show ipv6 eigrp neighbors` for adjacency state, `show ipv6 eigrp topology` for all known paths including backup Feasible Successors, and `show ipv6 route eigrp` for installed routes. Always check the topology table to confirm Feasible Successors exist for critical routes - their presence enables instant failover without DUAL queries.

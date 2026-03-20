@@ -14,6 +14,7 @@ ArgoCD is a declarative GitOps continuous delivery tool for Kubernetes. It conti
 
 ```hcl
 # main.tf - Deploy ArgoCD via Helm
+
 resource "helm_release" "argocd" {
   name             = "argocd"
   repository       = "https://argoproj.github.io/argo-helm"

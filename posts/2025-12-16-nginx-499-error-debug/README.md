@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: NGINX, Troubleshooting, HTTP Status Codes, Web Server, DevOps
+Tags: Nginx, Troubleshooting, HTTP Status Codes, Web Server, DevOps
 
 Description: Learn how to debug and fix Nginx 499 error codes, which occur when clients close connections before the server responds. Understand the root causes and implement practical solutions.
 
@@ -81,6 +81,7 @@ When backends take longer than expected, clients may give up waiting.
 
 ```nginx
 # Check your upstream response times in Nginx logs
+
 log_format upstream_time '$remote_addr - $remote_user [$time_local] '
                          '"$request" $status $body_bytes_sent '
                          '"$http_referer" "$http_user_agent" '

@@ -69,6 +69,7 @@ Verify your cluster health:
 
 ```bash
 # Check overall cluster status
+
 ceph status
 
 # Verify MDS is active

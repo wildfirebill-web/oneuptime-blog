@@ -28,6 +28,7 @@ Here is a basic playbook that installs packages on localhost:
 
 ```yaml
 # site.yml - Install dev tools on the local machine
+
 ---
 - name: Configure local development environment
   hosts: localhost

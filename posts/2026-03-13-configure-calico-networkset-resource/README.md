@@ -68,6 +68,7 @@ spec:
 
 ```yaml
 # Allow egress to trusted payment processors
+
 apiVersion: projectcalico.org/v3
 kind: NetworkPolicy
 metadata:

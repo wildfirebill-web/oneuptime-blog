@@ -45,6 +45,7 @@ letsencrypt-setup/
 
 ```yaml
 # group_vars/all.yml
+
 certbot_email: admin@example.com
 domains:
   - www.example.com

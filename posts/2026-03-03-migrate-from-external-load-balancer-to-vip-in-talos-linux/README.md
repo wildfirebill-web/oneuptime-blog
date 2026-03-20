@@ -34,6 +34,7 @@ Before migrating, verify these requirements:
 
 ```bash
 # Verify all control plane nodes are on the same subnet
+
 for node in <cp1> <cp2> <cp3>; do
   echo -n "$node: "
   talosctl -n $node get addresses | grep eth0

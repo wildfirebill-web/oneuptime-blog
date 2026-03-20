@@ -18,6 +18,7 @@ The easiest way to install cfn-lint is through pip. It works on Python 3.8 and a
 
 ```bash
 # Install cfn-lint via pip
+
 pip install cfn-lint
 
 # Verify the installation

@@ -40,6 +40,7 @@ Here is a complete GitHub Actions workflow that runs drift detection on a schedu
 
 ```yaml
 # .github/workflows/drift-detection.yml
+
 # Runs terraform plan on a schedule to detect infrastructure drift
 
 name: Infrastructure Drift Detection

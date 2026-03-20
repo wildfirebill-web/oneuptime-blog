@@ -19,6 +19,7 @@ EKS logging has two components: control plane logs (API server, audit, scheduler
 
 ```hcl
 # Enable all control plane log types for full audit visibility
+
 resource "aws_eks_cluster" "main" {
   name     = var.cluster_name
   role_arn = var.cluster_role_arn

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Python, IPv6, Parsing, ipaddress, Networking, Programming
+Tags: Python, IPv6, Parsing, Ipaddress, Networking, Programming
 
 Description: Parse IPv6 addresses from various formats in Python using the ipaddress module, regex, and handling edge cases like zone IDs and embedded IPv4.
 
@@ -21,13 +21,14 @@ def parse_ipv6(address: str) -> ipaddress.IPv6Address | None:
         return None
 
 # Examples
+
 addresses = [
     "2001:db8::1",
     "2001:0db8:0000:0000:0000:0000:0000:0001",  # Expanded
     "::1",          # Loopback
     "fe80::1",      # Link-local
     "::",           # Unspecified
-    "invalid-addr", # Invalid — returns None
+    "invalid-addr", # Invalid - returns None
 ]
 
 for addr_str in addresses:
@@ -61,7 +62,7 @@ print(f"Network: {network}")     # 2001:db8:1::/64
 
 ## Handling Zone IDs (Link-Local Scope)
 
-IPv6 link-local addresses often include a zone ID (e.g., `fe80::1%eth0`). Python's ipaddress module does not support zone IDs — strip them first:
+IPv6 link-local addresses often include a zone ID (e.g., `fe80::1%eth0`). Python's ipaddress module does not support zone IDs - strip them first:
 
 ```python
 import ipaddress
@@ -149,7 +150,7 @@ Extract all IPv6 addresses from a block of text (e.g., log files):
 import ipaddress
 import re
 
-# IPv6 regex pattern (simplified — handles most cases)
+# IPv6 regex pattern (simplified - handles most cases)
 IPV6_PATTERN = re.compile(
     r'\b(?:[0-9a-fA-F]{1,4}:){7}[0-9a-fA-F]{1,4}\b|'
     r'\b(?:[0-9a-fA-F]{1,4}:){1,7}:\b|'

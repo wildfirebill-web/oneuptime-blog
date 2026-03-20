@@ -20,6 +20,7 @@ This command creates a table that automatically expires after 90 days.
 
 ```bash
 # Create a table with a 90-day expiration
+
 bq mk --table \
   --expiration=7776000 \
   --description="Staging data - auto-expires in 90 days" \

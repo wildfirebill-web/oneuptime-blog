@@ -29,6 +29,7 @@ Choose a consistent labeling scheme. The recommended convention uses the `shardi
 
 ```bash
 # Label resources for shard assignment
+
 kubectl label kustomization app-frontend \
   sharding.fluxcd.io/key=shard-1 \
   -n flux-system

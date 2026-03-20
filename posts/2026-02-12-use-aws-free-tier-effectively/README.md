@@ -38,6 +38,7 @@ Before you do anything else, set up billing alerts. AWS provides a specific Free
 
 ```bash
 # Enable billing alerts in your account preferences
+
 aws ce update-preferences
 
 # Create a budget that alerts at 80% of free tier usage

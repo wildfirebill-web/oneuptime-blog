@@ -46,6 +46,7 @@ The event data store is where your events live. You configure what types of even
 
 ```bash
 # Create a CloudTrail Lake event data store
+
 aws cloudtrail create-event-data-store \
   --name "security-analysis-store" \
   --retention-period 365 \

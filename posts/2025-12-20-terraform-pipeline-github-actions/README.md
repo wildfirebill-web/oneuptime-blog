@@ -116,7 +116,7 @@ jobs:
 
 Post Terraform plan output to pull requests:
 
-```yaml
+````yaml
 jobs:
   plan:
     runs-on: ubuntu-latest
@@ -152,9 +152,9 @@ jobs:
         with:
           script: |
             const output = `#### Terraform Plan
-            \`\`\`
+            ```
             ${{ steps.plan.outputs.stdout }}
-            \`\`\`
+            ```
 
             *Pushed by: @${{ github.actor }}, Action: \`${{ github.event_name }}\`*`;
 
@@ -168,7 +168,7 @@ jobs:
       - name: Plan Status
         if: steps.plan.outcome == 'failure'
         run: exit 1
-```
+````
 
 ## Multi-Environment Pipeline
 
@@ -268,6 +268,7 @@ Configure remote state with S3:
 
 ```hcl
 # backend.tf
+
 terraform {
   backend "s3" {
     bucket         = "my-terraform-state"
@@ -353,7 +354,7 @@ jobs:
               owner: context.repo.owner,
               repo: context.repo.repo,
               title: 'Infrastructure Drift Detected',
-              body: `Terraform detected drift from the desired state.\n\n\`\`\`\n${plan.slice(0, 60000)}\n\`\`\``,
+              body: `Terraform detected drift from the desired state.\n\n```\n${plan.slice(0, 60000)}\n````,
               labels: ['infrastructure', 'drift']
             });
 ```
@@ -417,7 +418,7 @@ jobs:
 
 ## Complete Production Pipeline
 
-```yaml
+````yaml
 name: Terraform
 
 on:
@@ -503,9 +504,9 @@ jobs:
         with:
           script: |
             const output = `### Terraform Plan
-            \`\`\`
+            ```
             ${{ steps.plan.outputs.stdout }}
-            \`\`\``;
+            ````;
             github.rest.issues.createComment({
               issue_number: context.issue.number,
               owner: context.repo.owner,
@@ -542,7 +543,7 @@ jobs:
       - name: Apply
         run: terraform apply -auto-approve tfplan
         working-directory: terraform
-```
+````
 
 ---
 

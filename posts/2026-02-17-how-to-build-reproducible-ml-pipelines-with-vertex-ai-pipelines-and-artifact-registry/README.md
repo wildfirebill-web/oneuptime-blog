@@ -31,6 +31,7 @@ Every pipeline component runs in a container. Use Artifact Registry to store and
 
 ```bash
 # Create an Artifact Registry repository for ML containers
+
 gcloud artifacts repositories create ml-pipelines \
   --repository-format=docker \
   --location=us-central1 \

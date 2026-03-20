@@ -45,6 +45,7 @@ Ensure you have the following tools installed:
 
 ```bash
 # Install eksctl (macOS)
+
 brew tap weaveworks/tap
 brew install weaveworks/tap/eksctl
 

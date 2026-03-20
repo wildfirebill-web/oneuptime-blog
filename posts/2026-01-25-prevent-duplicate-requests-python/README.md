@@ -44,6 +44,7 @@ The most robust approach is using idempotency keys. The client provides a unique
 
 ```python
 # idempotency.py
+
 # Idempotency key implementation with Redis
 import hashlib
 import json

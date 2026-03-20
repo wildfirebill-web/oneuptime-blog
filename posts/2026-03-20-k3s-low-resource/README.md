@@ -26,6 +26,7 @@ K3s was designed to run in resource-constrained environments. With the right con
 
 ```bash
 # Install K3s with all non-essential components disabled
+
 curl -sfL https://get.k3s.io | sh -s - \
   --disable traefik \          # Remove if you don't need ingress
   --disable servicelb \        # Remove if you use MetalLB or NodePort only
@@ -60,7 +61,7 @@ kube-apiserver-arg:
 
 ## Step 3: Use SQLite Instead of etcd
 
-K3s defaults to SQLite for single-node deployments — this is far more memory-efficient than etcd:
+K3s defaults to SQLite for single-node deployments - this is far more memory-efficient than etcd:
 
 ```bash
 # SQLite is used automatically for single-node clusters
@@ -165,6 +166,6 @@ watch -n 5 kubectl top nodes
 
 ## Best Practices
 
-- Always disable `traefik` and `servicelb` on resource-constrained nodes unless you specifically need them — they consume significant memory.
-- Set `max-pods` to match the expected workload density rather than using the default 110 — this prevents K3s from accepting more pods than the node can handle.
+- Always disable `traefik` and `servicelb` on resource-constrained nodes unless you specifically need them - they consume significant memory.
+- Set `max-pods` to match the expected workload density rather than using the default 110 - this prevents K3s from accepting more pods than the node can handle.
 - For IoT devices with intermittent power, enable K3s auto-restart: the systemd service is configured to restart automatically after crashes by default.

@@ -44,6 +44,7 @@ Create a Kustomize patch file for the restricted security context:
 
 ```yaml
 # clusters/my-cluster/flux-system/patches/restricted-security.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

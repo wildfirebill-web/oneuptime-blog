@@ -123,6 +123,7 @@ After swapping the receiver, verify that existing OTLP clients still work:
 
 ```bash
 # Send a test trace using grpcurl (standard OTLP format)
+
 grpcurl -plaintext \
   -d '{
     "resource_spans": [{

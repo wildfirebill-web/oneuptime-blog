@@ -25,6 +25,7 @@ Before starting, ensure you have:
 
 ```bash
 # Check current version
+
 curl http://loki:3100/ready
 
 # Review upgrade notes

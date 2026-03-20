@@ -16,6 +16,7 @@ The simplest way to run Ansible from Python:
 
 ```python
 # run_ansible.py - Simple Ansible invocation from Python
+
 import subprocess
 import sys
 

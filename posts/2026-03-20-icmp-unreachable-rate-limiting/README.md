@@ -16,6 +16,7 @@ The kernel controls how often it sends ICMP error messages using two sysctl para
 
 ```bash
 # View current rate limit settings
+
 sysctl net.ipv4.icmp_ratelimit
 # Default: 1000 (allows burst of this many tokens, refills at 100/sec)
 

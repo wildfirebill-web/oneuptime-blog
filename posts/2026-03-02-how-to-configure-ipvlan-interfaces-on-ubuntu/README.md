@@ -41,6 +41,7 @@ IPVLAN has two primary modes:
 
 ```bash
 # Create an IPVLAN interface in L2 mode
+
 # Parent: eth0, new interface: ipvlan0
 sudo ip link add ipvlan0 link eth0 type ipvlan mode l2
 

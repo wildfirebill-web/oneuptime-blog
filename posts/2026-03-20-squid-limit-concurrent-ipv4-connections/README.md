@@ -20,6 +20,7 @@ Squid maintains a client database (`client_db`) that records per-IP statistics i
 # /etc/squid/squid.conf
 
 # Enable the client database (required for maxconn ACLs)
+
 client_db on
 
 # --- ACL: flag clients with more than 10 concurrent connections ---

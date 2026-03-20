@@ -20,6 +20,7 @@ Start by reviewing your current connection configuration.
 
 ```bash
 # List all system connections
+
 podman system connection ls
 
 # Display connections in a formatted table

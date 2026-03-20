@@ -20,6 +20,7 @@ During maintenance, your database may experience brief periods of unavailability
 
 ```hcl
 # Configure Terraform
+
 terraform {
   required_providers {
     aws = {

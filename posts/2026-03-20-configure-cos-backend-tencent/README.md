@@ -20,6 +20,7 @@ The COS (Cloud Object Storage) backend stores OpenTofu state in Tencent Cloud Ob
 
 ```bash
 # Using tccli (Tencent Cloud CLI)
+
 tccli cos create-bucket \
   --bucket my-terraform-state-1234567890 \
   --region ap-guangzhou
@@ -82,13 +83,13 @@ terraform {
 When running on a Tencent Cloud CVM with a CAM role attached:
 
 ```bash
-# No credentials needed — automatically uses the CVM's CAM role
+# No credentials needed - automatically uses the CVM's CAM role
 export TENCENTCLOUD_REGION="ap-guangzhou"
 ```
 
 ## State File Organization
 
-```
+```text
 COS bucket: my-terraform-state-1234567890
 ├── terraform/state/prod/terraform.tfstate
 ├── terraform/state/staging/terraform.tfstate

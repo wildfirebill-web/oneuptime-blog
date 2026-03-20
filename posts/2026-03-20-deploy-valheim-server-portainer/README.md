@@ -14,6 +14,7 @@ Valheim is a Viking survival game that supports dedicated servers for multiplaye
 
 ```yaml
 # valheim-stack.yml
+
 version: "3.8"
 
 services:
@@ -28,7 +29,7 @@ services:
       - WORLD_NAME=MyWorld
       # Password to join the server (min 5 characters)
       - SERVER_PASS=your_server_password
-      # Admin Steam ID — paste your 64-bit Steam ID
+      # Admin Steam ID - paste your 64-bit Steam ID
       - ADMINLIST_IDS=76561198000000000
       # Auto-update settings
       - UPDATE_INTERVAL=10800    # Check for updates every 3 hours
@@ -56,16 +57,16 @@ volumes:
 Valheim server settings can be customized in `/config/valheim/adminlist.txt` and `/config/valheim/bannedlist.txt`:
 
 ```bash
-# adminlist.txt — one Steam ID per line (64-bit format)
+# adminlist.txt - one Steam ID per line (64-bit format)
 76561198000000000
 
-# bannedlist.txt — banned players
+# bannedlist.txt - banned players
 # 76561198111111111
 ```
 
 ## Step 3: Enable Valheim Plus
 
-Valheim Plus adds quality-of-life features — set `VALHEIM_PLUS=true` and configure it:
+Valheim Plus adds quality-of-life features - set `VALHEIM_PLUS=true` and configure it:
 
 ```ini
 # /config/BepInEx/config/valheim_plus.cfg (auto-created)
@@ -100,7 +101,7 @@ Add an automatic backup cron via Portainer's scheduled jobs or the image's built
 
 Check server status via Portainer's log viewer. The server logs player connections, world saves, and any errors. Look for:
 
-```
+```text
 Game server connected
 World saved
 New connection from: PlayerName

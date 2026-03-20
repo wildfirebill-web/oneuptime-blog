@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: DHCP, VLAN, Networking, Multi-VLAN, sysadmin
+Tags: DHCP, VLAN, Networking, Multi-VLAN, Sysadmin
 
 Description: Configuring DHCP for multiple VLANs requires either multiple DHCP servers or relay agents that forward requests to a single centralized server, with one scope per VLAN subnet.
 
@@ -18,14 +18,15 @@ Description: Configuring DHCP for multiple VLANs requires either multiple DHCP s
 
 Each VLAN subnet needs a `subnet` declaration:
 
-```
+```text
 # /etc/dhcp/dhcpd.conf
 
 # Global defaults
+
 option domain-name "corp.example.com";
 default-lease-time 86400;
 
-# VLAN 10 — Servers
+# VLAN 10 - Servers
 subnet 10.0.10.0 netmask 255.255.255.0 {
     range 10.0.10.50 10.0.10.200;
     option routers 10.0.10.1;
@@ -33,7 +34,7 @@ subnet 10.0.10.0 netmask 255.255.255.0 {
     default-lease-time 604800;    # Servers: 7-day leases
 }
 
-# VLAN 20 — Users
+# VLAN 20 - Users
 subnet 10.0.20.0 netmask 255.255.255.0 {
     range 10.0.20.50 10.0.20.240;
     option routers 10.0.20.1;
@@ -41,7 +42,7 @@ subnet 10.0.20.0 netmask 255.255.255.0 {
     default-lease-time 86400;     # Users: 1-day leases
 }
 
-# VLAN 30 — VoIP
+# VLAN 30 - VoIP
 subnet 10.0.30.0 netmask 255.255.255.0 {
     range 10.0.30.10 10.0.30.250;
     option routers 10.0.30.1;
@@ -50,7 +51,7 @@ subnet 10.0.30.0 netmask 255.255.255.0 {
     default-lease-time 3600;      # VoIP: 1-hour leases
 }
 
-# VLAN 99 — Guest
+# VLAN 99 - Guest
 subnet 10.0.99.0 netmask 255.255.255.0 {
     range 10.0.99.10 10.0.99.250;
     option routers 10.0.99.1;
@@ -79,7 +80,7 @@ sudo systemctl restart isc-dhcp-relay
 
 ## Cisco IOS: ip helper-address per VLAN
 
-```
+```text
 interface Vlan10
   ip address 10.0.10.1 255.255.255.0
   ip helper-address 10.0.0.53
@@ -103,7 +104,7 @@ EOF
 
 sudo systemctl restart isc-dhcp-server
 
-# Test from each VLAN — check which scope is assigned
+# Test from each VLAN - check which scope is assigned
 journalctl -u isc-dhcp-server | grep "DHCPACK"
 ```
 

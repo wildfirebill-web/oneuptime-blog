@@ -32,6 +32,7 @@ The following pipeline builds a .NET solution, runs tests, and publishes both te
 
 ```yaml
 # azure-pipelines.yml - .NET test pipeline with coverage
+
 trigger:
   - main
 

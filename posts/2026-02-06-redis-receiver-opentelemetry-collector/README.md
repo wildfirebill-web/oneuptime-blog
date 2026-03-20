@@ -603,6 +603,7 @@ Alert when cache effectiveness degrades:
 
 ```yaml
 # Prometheus alert rule
+
 - alert: RedisLowCacheHitRatio
   expr: |
     redis.keyspace.hits /

@@ -14,6 +14,7 @@ MySQL and MariaDB remain among the most widely deployed databases, powering ever
 
 ```bash
 # Install the collection
+
 ansible-galaxy collection install community.mysql
 
 # Install the Python MySQL connector on target hosts

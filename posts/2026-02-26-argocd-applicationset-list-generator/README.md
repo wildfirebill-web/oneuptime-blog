@@ -59,6 +59,7 @@ Apply and verify.
 
 ```bash
 # Deploy the ApplicationSet
+
 kubectl apply -f team-apps.yaml
 
 # Verify three Applications are created

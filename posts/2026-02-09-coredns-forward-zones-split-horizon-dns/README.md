@@ -107,6 +107,7 @@ You can forward queries based on more than just domain names. Forward specific r
 
 ```yaml
 # Advanced forwarding rules
+
 company.internal:53 {
     errors
     cache 30

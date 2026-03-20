@@ -165,6 +165,7 @@ When you replace a physical volume, you may need to restore metadata to the new 
 
 ```bash
 # Initialize the new disk
+
 sudo pvcreate --uuid <old-pv-uuid> --restorefile /etc/lvm/backup/vg_data /dev/sdd1
 
 # Restore the volume group metadata

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, IPMI, BMC, iDRAC, iLO, Remote Management, Server Hardware
+Tags: IPv6, IPMI, BMC, IDRAC, ILO, Remote Management, Server Hardware
 
 Description: Configure IPv6 on IPMI and BMC (Baseboard Management Controller) interfaces for Dell iDRAC, HP iLO, Supermicro IPMI, and generic IPMI 2.0 devices for remote server management over IPv6.
 
@@ -16,6 +16,7 @@ IPMI (Intelligent Platform Management Interface) and BMC provide hardware-level 
 # Method 1: racadm command line
 
 # Enable IPv6
+
 racadm set iDRAC.IPv6.Enable 1
 
 # Configure static IPv6

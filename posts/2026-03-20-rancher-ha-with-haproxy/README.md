@@ -1,8 +1,8 @@
-# How to Configure Rancher HA with HAProxy
+# How to Configure Rancher HA with HAProxy - With
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, HAProxy, High Availability, Load Balancer, TCP, Network
+Tags: Rancher, HAProxy, High Availability, Load Balancer, TCP, Networks
 
 Description: Configure HAProxy as the front-end load balancer for Rancher HA with health checks, SSL passthrough, and statistics monitoring.
 
@@ -14,6 +14,7 @@ HAProxy is a high-performance, battle-tested TCP and HTTP load balancer. For on-
 
 ```bash
 # Ubuntu/Debian
+
 apt-get install -y haproxy
 
 # RHEL/CentOS

@@ -2,9 +2,10 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: rancher, gpu, resource-limits, kubernetes, quotas
+Tags: Rancher, GPU, Resource-limits, Kubernetes, Quotas
 
 Description: Guide to setting up GPU resource limits, requests, and quotas in Rancher to prevent overallocation and ensure fair GPU sharing.
+
 ## Introduction
 
 GPU resources are expensive and finite. Without proper limits and quotas, a single workload can monopolize all GPU capacity in a cluster. This guide explains how to configure GPU resource management in Rancher.
@@ -21,6 +22,7 @@ Kubernetes tracks GPU resources as extended resources:
 
 ```yaml
 # gpu-resource-pod.yaml
+
 apiVersion: v1
 kind: Pod
 metadata:

@@ -14,6 +14,7 @@ When something goes wrong in a Talos Linux cluster, logs are where you find the 
 
 ```bash
 # View logs for a specific service
+
 talosctl logs <service-name> --nodes <node-ip>
 ```
 

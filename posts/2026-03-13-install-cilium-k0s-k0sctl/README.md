@@ -25,6 +25,7 @@ This guide covers deploying a k0s cluster with Cilium CNI using k0sctl, includin
 
 ```bash
 # Install k0sctl binary
+
 curl -sSfL https://github.com/k0sproject/k0sctl/releases/latest/download/k0sctl-linux-x64 \
   -o /usr/local/bin/k0sctl
 chmod +x /usr/local/bin/k0sctl

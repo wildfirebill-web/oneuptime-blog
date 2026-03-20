@@ -20,6 +20,7 @@ The simplest API call lists all running containers.
 
 ```bash
 # List all running containers using the Podman-native endpoint
+
 curl --unix-socket $XDG_RUNTIME_DIR/podman/podman.sock \
   http://localhost/v4.0.0/libpod/containers/json
 

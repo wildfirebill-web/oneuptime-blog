@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, NGINX, WebSocket, DevOps
+Tags: Ansible, Nginx, WebSocket, DevOps
 
 Description: Automate the configuration of Nginx as a WebSocket reverse proxy using Ansible playbooks for real-time application deployments.
 
@@ -63,6 +63,7 @@ These variables control the WebSocket proxy behavior. The timeout values are par
 
 ```yaml
 # roles/nginx_websocket/defaults/main.yml
+
 # WebSocket proxy configuration
 nginx_ws_server_name: "ws.example.com"
 nginx_ws_listen_port: 80

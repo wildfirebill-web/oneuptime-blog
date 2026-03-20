@@ -12,7 +12,7 @@ OBS Studio (Open Broadcaster Software) is the leading open-source streaming and 
 
 ## Configuring OBS for IPv6 RTMP Streaming
 
-```
+```text
 OBS Studio > Settings > Stream
 
 Service: Custom...
@@ -27,7 +27,7 @@ The format is: rtmp://[IPv6address]/application/stream-key
 
 ## OBS IPv6 Custom RTMP Configuration
 
-```
+```text
 For fine-grained control:
 
 Settings > Stream > Service: Custom...
@@ -41,7 +41,7 @@ Advanced > Network:
 
 ## OBS SRT Streaming to IPv6
 
-```
+```text
 OBS supports SRT as an output protocol:
 
 Settings > Stream > Service: Custom...
@@ -60,6 +60,7 @@ Note: OBS 27+ has native SRT support
 
 ```bash
 # OBS can be controlled via obs-websocket and scripts
+
 # For headless/server OBS:
 
 # Start OBS in virtual camera mode (Linux)
@@ -87,7 +88,7 @@ ffmpeg -i "rtmp://[2001:db8::source]/live/stream" \
 
 ## OBS Recording and Streaming Simultaneously
 
-```
+```text
 Settings > Output > Mode: Advanced
 
 Recording:
@@ -120,7 +121,7 @@ ffplay "rtmp://[2001:db8::server]/live/mystream"
 
 ## OBS Browser Source with IPv6 URLs
 
-```
+```text
 Add Browser Source in OBS:
 URL: http://[2001:db8::web-server]/overlay.html
 
@@ -130,7 +131,7 @@ The built-in CEF browser handles IPv6 URLs natively
 
 ## Troubleshooting OBS IPv6 Connectivity
 
-```
+```text
 Common Issues:
 
 1. OBS fails to connect to IPv6 RTMP:

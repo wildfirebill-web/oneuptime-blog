@@ -60,6 +60,7 @@ The API server Dockerfile:
 
 ```dockerfile
 # api/Dockerfile - Node.js API server
+
 FROM node:20-alpine
 
 WORKDIR /app

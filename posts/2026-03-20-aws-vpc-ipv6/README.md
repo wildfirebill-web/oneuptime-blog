@@ -8,7 +8,7 @@ Description: Enable IPv6 in an AWS VPC by associating an Amazon-provided IPv6 CI
 
 ## Introduction
 
-AWS supports IPv6 across most services. To use IPv6 in AWS, you assign an Amazon-provided `/56` IPv6 CIDR block to your VPC, then allocate `/64` subnets to individual subnets. AWS IPv6 addresses are globally routable — there is no NAT for IPv6 in AWS, unlike private IPv4 with NAT Gateway. This guide covers enabling and configuring IPv6 in a new or existing VPC.
+AWS supports IPv6 across most services. To use IPv6 in AWS, you assign an Amazon-provided `/56` IPv6 CIDR block to your VPC, then allocate `/64` subnets to individual subnets. AWS IPv6 addresses are globally routable - there is no NAT for IPv6 in AWS, unlike private IPv4 with NAT Gateway. This guide covers enabling and configuring IPv6 in a new or existing VPC.
 
 ## Enable IPv6 on a VPC
 
@@ -16,6 +16,7 @@ AWS supports IPv6 across most services. To use IPv6 in AWS, you assign an Amazon
 # Using AWS CLI
 
 # Get your VPC ID
+
 VPC_ID=$(aws ec2 describe-vpcs \
     --filters "Name=isDefault,Values=false" \
     --query "Vpcs[0].VpcId" \
@@ -37,7 +38,7 @@ aws ec2 describe-vpcs \
 ## Create VPC with IPv6 Enabled (Terraform)
 
 ```hcl
-# main.tf — VPC with IPv6
+# main.tf - VPC with IPv6
 
 terraform {
   required_providers {
@@ -132,7 +133,7 @@ Outputs:
 
 ```bash
 # AWS IPv6 differences from IPv4:
-# 1. All IPv6 addresses are public — no "private" IPv6 in AWS
+# 1. All IPv6 addresses are public - no "private" IPv6 in AWS
 # 2. No IPv6 NAT in AWS (use Egress-Only IGW for outbound-only)
 # 3. Security Groups and NACLs must have explicit IPv6 rules
 # 4. Route tables need separate entries for ::/0
@@ -145,4 +146,4 @@ aws ec2 describe-vpcs \
 
 ## Conclusion
 
-Enabling IPv6 in AWS VPC requires associating an Amazon-provided `/56` IPv6 CIDR block with your VPC, then assigning `/64` sub-ranges to each subnet. Unlike IPv4, IPv6 addresses in AWS are globally routable public addresses — there's no IPv6 NAT. After enabling IPv6 on the VPC, you must also update subnets, route tables, security groups, and NACLs to support IPv6 traffic. Use Terraform or CloudFormation to manage IPv6 VPC configuration as code.
+Enabling IPv6 in AWS VPC requires associating an Amazon-provided `/56` IPv6 CIDR block with your VPC, then assigning `/64` sub-ranges to each subnet. Unlike IPv4, IPv6 addresses in AWS are globally routable public addresses - there's no IPv6 NAT. After enabling IPv6 on the VPC, you must also update subnets, route tables, security groups, and NACLs to support IPv6 traffic. Use Terraform or CloudFormation to manage IPv6 VPC configuration as code.

@@ -26,6 +26,7 @@ The OpenTelemetry Collector Helm chart changed its default selector labels in ve
 
 ```yaml
 # Before v0.110.0
+
 spec:
   selector:
     matchLabels:

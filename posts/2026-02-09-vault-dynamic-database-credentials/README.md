@@ -22,6 +22,7 @@ Configure Vault to manage database credentials:
 
 ```bash
 # Enable database secrets engine
+
 vault secrets enable database
 
 # Verify it's enabled

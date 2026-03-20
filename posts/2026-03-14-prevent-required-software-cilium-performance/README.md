@@ -68,6 +68,7 @@ spec:
 
 ```bash
 # Pin container image versions in test deployments
+
 # Good: specific version
 image: networkstatic/iperf3:3.16
 # Bad: latest tag

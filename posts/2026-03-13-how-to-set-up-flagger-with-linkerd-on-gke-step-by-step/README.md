@@ -24,6 +24,7 @@ Linkerd's lightweight service mesh combined with Flagger's progressive delivery 
 
 ```bash
 # Set project and zone
+
 export PROJECT_ID=your-gcp-project-id
 export ZONE=us-central1-a
 gcloud config set project $PROJECT_ID

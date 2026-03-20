@@ -22,6 +22,7 @@ ETCDCTL_API=3 etcdctl version
 etcdctl --version
 
 # Check if cluster uses v2 storage
+
 ETCDCTL_API=2 etcdctl ls / 2>/dev/null
 if [ $? -eq 0 ]; then
   echo "Cluster using etcd v2 storage"

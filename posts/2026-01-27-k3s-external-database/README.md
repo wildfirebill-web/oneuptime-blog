@@ -59,6 +59,7 @@ Before configuring K3s with PostgreSQL, ensure your database is ready:
 
 ```bash
 # Connect to PostgreSQL and create the K3s database
+
 # Replace with your PostgreSQL host and credentials
 psql -h postgres.example.com -U admin -d postgres
 

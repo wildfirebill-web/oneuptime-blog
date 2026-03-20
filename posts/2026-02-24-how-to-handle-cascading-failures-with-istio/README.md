@@ -83,6 +83,7 @@ Set timeouts from the innermost service outward, with each layer having a slight
 # Database client timeout (in Service B's code): 2s
 
 # Service A calling Service B
+
 apiVersion: networking.istio.io/v1beta1
 kind: VirtualService
 metadata:

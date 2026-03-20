@@ -28,6 +28,7 @@ Talos logs API access as part of its system logging. You can view these logs dir
 
 ```bash
 # View the Talos API daemon logs (apid)
+
 talosctl logs apid --nodes <node-ip>
 
 # Follow the logs in real time

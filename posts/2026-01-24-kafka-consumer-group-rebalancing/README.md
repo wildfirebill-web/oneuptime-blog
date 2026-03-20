@@ -90,6 +90,7 @@ import signal
 import sys
 
 # Create a consumer that joins a group
+
 consumer = KafkaConsumer(
     'orders',
     bootstrap_servers=['localhost:9092'],

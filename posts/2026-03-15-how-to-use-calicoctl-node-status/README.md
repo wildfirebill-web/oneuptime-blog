@@ -53,6 +53,7 @@ No IPv6 peers found.
 
 ```bash
 # Find the calico-node pod on a specific node
+
 NODE_NAME="worker-1"
 POD=$(kubectl get pods -n calico-system -l k8s-app=calico-node \
   --field-selector spec.nodeName="$NODE_NAME" \

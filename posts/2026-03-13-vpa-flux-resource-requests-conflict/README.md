@@ -29,6 +29,7 @@ Confirm that the VPA-Flux conflict is occurring in your cluster.
 
 ```bash
 # Check if VPA is making recommendations that differ from deployed requests
+
 kubectl describe vpa <vpa-name> -n <namespace>
 
 # Look for repeated Deployment reconciliation events from Flux

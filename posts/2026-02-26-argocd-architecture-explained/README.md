@@ -61,6 +61,7 @@ You can see the API server deployment in your cluster:
 
 ```bash
 # Check the API server deployment
+
 kubectl get deployment argocd-server -n argocd
 
 # View API server logs
@@ -193,7 +194,7 @@ sequenceDiagram
     AC->>Redis: Update cache
 ```
 
-## Resource Tracking
+Resource Tracking
 
 ArgoCD needs to know which resources in the cluster belong to which Application. It uses one of three tracking methods:
 

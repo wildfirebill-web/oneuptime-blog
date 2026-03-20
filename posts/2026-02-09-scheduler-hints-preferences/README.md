@@ -39,6 +39,7 @@ Label your nodes to support these selectors:
 
 ```bash
 # Add labels to nodes
+
 kubectl label nodes node-1 accelerator=nvidia-tesla-v100
 kubectl label nodes node-1 disk-type=ssd
 kubectl label nodes node-2 accelerator=nvidia-tesla-v100

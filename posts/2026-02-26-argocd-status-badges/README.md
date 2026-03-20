@@ -60,6 +60,7 @@ For additional security, you can require a token for badge access. Generate an A
 
 ```bash
 # Generate an API token for badge access
+
 argocd account generate-token --account badge-reader
 ```
 

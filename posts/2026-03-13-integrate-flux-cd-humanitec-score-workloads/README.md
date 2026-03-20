@@ -27,6 +27,7 @@ In this guide you will install Score for Kubernetes, write a Score workload spec
 
 ```bash
 # Install score-k8s CLI
+
 curl -L https://github.com/score-spec/score-k8s/releases/latest/download/score-k8s_linux_amd64.tar.gz | tar xz
 sudo mv score-k8s /usr/local/bin/
 

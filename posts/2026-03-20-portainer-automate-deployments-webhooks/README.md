@@ -1,4 +1,4 @@
-# How to Automate Container Deployments with Portainer Webhooks
+# How to Automate Container Deployments with Portainer Webhooks (2)
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Learn how to use Portainer container and service webhooks to trigge
 
 ## Introduction
 
-Portainer's webhook feature lets any system trigger container redeployments with a simple HTTP POST request. No API authentication required — the webhook URL itself is the authorization token. This makes it easy to integrate Portainer redeployments with Docker Hub, GitHub Actions, registry push notifications, cron jobs, or custom monitoring systems.
+Portainer's webhook feature lets any system trigger container redeployments with a simple HTTP POST request. No API authentication required - the webhook URL itself is the authorization token. This makes it easy to integrate Portainer redeployments with Docker Hub, GitHub Actions, registry push notifications, cron jobs, or custom monitoring systems.
 
 ## Prerequisites
 
@@ -41,6 +41,7 @@ TOKEN="your-auth-token"
 ENDPOINT_ID=1
 
 # Get container ID
+
 CONTAINER_ID=$(curl -s -H "Authorization: Bearer $TOKEN" \
   "${PORTAINER_URL}/api/endpoints/${ENDPOINT_ID}/docker/containers/json" | \
   jq -r '.[] | select(.Names[0] == "/my-app") | .Id')
@@ -65,7 +66,7 @@ echo "Container webhook URL: ${PORTAINER_URL}/api/webhooks/${WEBHOOK_TOKEN}"
 ```bash
 WEBHOOK_URL="https://portainer.example.com/api/webhooks/YOUR_TOKEN"
 
-# Simple trigger — no authentication headers needed
+# Simple trigger - no authentication headers needed
 curl -s -X POST "$WEBHOOK_URL"
 
 # With verbose output to debug
@@ -94,7 +95,7 @@ For registries that don't natively support webhooks (like Harbor, Nexus), set up
 
 ```bash
 #!/bin/bash
-# post-push-trigger.sh — Call this after docker push in your scripts
+# post-push-trigger.sh - Call this after docker push in your scripts
 
 IMAGE="registry.company.com/myapp:latest"
 
@@ -132,7 +133,7 @@ Or use a more controlled approach with a script:
 
 ```bash
 #!/bin/bash
-# nightly-redeploy.sh — Trigger redeployment of all critical containers
+# nightly-redeploy.sh - Trigger redeployment of all critical containers
 
 WEBHOOKS=(
   "TOKEN_NGINX|nginx reverse proxy"
@@ -164,7 +165,7 @@ Integrate with monitoring tools to automatically restart unhealthy containers:
 
 ```bash
 #!/bin/bash
-# self-heal.sh — Monitor container health and restart via Portainer webhook
+# self-heal.sh - Monitor container health and restart via Portainer webhook
 
 CONTAINER_NAME="my-app"
 HEALTH_URL="https://myapp.example.com/health"
@@ -191,7 +192,7 @@ if ! check_health; then
       -H "Content-Type: application/json" \
       -d '{"text": "Self-healing triggered and successful for my-app"}'
   else
-    echo "[$(date)] Recovery FAILED — manual intervention required!"
+    echo "[$(date)] Recovery FAILED - manual intervention required!"
     curl -s -X POST "$ALERT_WEBHOOK" \
       -H "Content-Type: application/json" \
       -d '{"text": "ALERT: my-app failed to recover after self-healing!"}'
@@ -201,7 +202,7 @@ fi
 
 ## Security Considerations
 
-Webhook URLs are bearer tokens — treat them as secrets:
+Webhook URLs are bearer tokens - treat them as secrets:
 
 ```bash
 # Store webhook URLs as environment variables or in a secrets file
@@ -215,4 +216,4 @@ curl -s -X POST "$PORTAINER_WEBHOOK_PROD"
 
 ## Conclusion
 
-Portainer webhooks are the simplest possible integration point for automated container management. A single HTTP POST — no authentication headers, no complex payload — triggers a full pull-and-restart cycle. This simplicity makes webhooks ideal for registry push events, cron-based refreshes, self-healing monitors, and any other system that needs to trigger container updates without deep Portainer API integration.
+Portainer webhooks are the simplest possible integration point for automated container management. A single HTTP POST - no authentication headers, no complex payload - triggers a full pull-and-restart cycle. This simplicity makes webhooks ideal for registry push events, cron-based refreshes, self-healing monitors, and any other system that needs to trigger container updates without deep Portainer API integration.

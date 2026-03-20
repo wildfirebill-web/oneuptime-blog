@@ -29,6 +29,7 @@ Start with a diagnostic script that identifies the failure point.
 ```bash
 #!/bin/bash
 # diagnose-k8s-datastore.sh
+
 # Diagnose calicoctl Kubernetes API datastore issues
 
 echo "=== Kubernetes API Datastore Diagnostic ==="

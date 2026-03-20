@@ -16,6 +16,7 @@ The `community.general.xml` module can read, query, and modify XML files. Here i
 
 ```yaml
 # playbook-read-xml.yml
+
 # Reads an XML configuration file and extracts values using XPath
 - name: Read XML configuration
   hosts: localhost

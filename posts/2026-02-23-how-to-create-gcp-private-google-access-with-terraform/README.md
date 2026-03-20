@@ -18,6 +18,7 @@ The simplest form of Private Google Access is a flag on a subnet. When enabled, 
 
 ```hcl
 # VPC network
+
 resource "google_compute_network" "vpc" {
   name                    = "private-network"
   project                 = var.project_id

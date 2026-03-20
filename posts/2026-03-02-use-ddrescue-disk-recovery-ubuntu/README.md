@@ -26,6 +26,7 @@ The package in Ubuntu is named `gddrescue` (GNU ddrescue, to distinguish it from
 
 ```bash
 # Install GNU ddrescue
+
 sudo apt update
 sudo apt install gddrescue -y
 

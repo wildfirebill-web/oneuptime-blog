@@ -14,6 +14,7 @@ Valheim is a Viking survival game with dedicated server support. Its dedicated s
 
 ```bash
 # Create server user and directories
+
 sudo useradd -m -s /bin/bash valheim
 sudo su - valheim
 

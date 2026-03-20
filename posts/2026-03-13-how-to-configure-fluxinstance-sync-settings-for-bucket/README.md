@@ -221,6 +221,7 @@ Use the AWS CLI or cloud-specific tools to upload your manifests:
 
 ```bash
 # AWS S3
+
 aws s3 sync ./clusters/production s3://fleet-manifests-prod/clusters/production
 
 # GCS

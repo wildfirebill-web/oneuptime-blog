@@ -34,6 +34,7 @@ Create a values file for HA installation:
 
 ```yaml
 # linkerd-ha-values.yaml
+
 # High availability configuration for control plane
 controllerReplicas: 3
 

@@ -42,6 +42,7 @@ Configure your inventory to use the NETCONF connection plugin.
 
 ```yaml
 # inventory/netconf_devices.yml - Devices with NETCONF enabled
+
 ---
 all:
   children:

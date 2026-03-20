@@ -27,6 +27,7 @@ HEAD tracking is configured by setting `targetRevision` to `HEAD` or by omitting
 
 ```yaml
 # Explicit HEAD tracking
+
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:

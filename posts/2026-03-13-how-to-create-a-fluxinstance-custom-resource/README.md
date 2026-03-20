@@ -28,6 +28,7 @@ Start with a minimal FluxInstance that installs Flux with default settings.
 
 ```yaml
 # flux-instance-basic.yaml
+
 # Minimal FluxInstance resource
 apiVersion: fluxcd.controlplane.io/v1
 kind: FluxInstance

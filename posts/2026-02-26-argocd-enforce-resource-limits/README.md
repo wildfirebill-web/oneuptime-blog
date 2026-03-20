@@ -24,6 +24,7 @@ LimitRanges provide default resource limits for containers that do not specify t
 
 ```yaml
 # limitrange.yaml
+
 apiVersion: v1
 kind: LimitRange
 metadata:

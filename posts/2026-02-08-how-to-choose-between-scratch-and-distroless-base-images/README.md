@@ -20,6 +20,7 @@ Here is a minimal Go application built on scratch:
 
 ```dockerfile
 # Build stage: compile the Go binary with static linking
+
 FROM golang:1.22-alpine AS builder
 WORKDIR /app
 COPY go.mod go.sum ./

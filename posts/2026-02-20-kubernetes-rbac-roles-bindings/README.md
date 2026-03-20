@@ -55,6 +55,7 @@ A Role grants permissions on resources within a specific namespace.
 
 ```yaml
 # role-developer.yaml
+
 # This Role allows reading pods and logs, and managing deployments
 # in the "staging" namespace only.
 apiVersion: rbac.authorization.k8s.io/v1

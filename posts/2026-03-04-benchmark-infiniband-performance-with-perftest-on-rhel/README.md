@@ -14,6 +14,7 @@ The perftest package provides a set of micro-benchmarks for measuring InfiniBand
 
 ```bash
 # Install the perftest package
+
 sudo dnf install -y perftest
 
 # Verify available tools

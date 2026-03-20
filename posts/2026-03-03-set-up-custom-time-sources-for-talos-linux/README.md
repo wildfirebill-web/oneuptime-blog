@@ -32,6 +32,7 @@ Here is a basic chrony configuration for an internal NTP server:
 # /etc/chrony/chrony.conf on your NTP server
 
 # Upstream sources - these connect to public NTP
+
 server time.cloudflare.com iburst
 server time1.google.com iburst
 server time2.google.com iburst

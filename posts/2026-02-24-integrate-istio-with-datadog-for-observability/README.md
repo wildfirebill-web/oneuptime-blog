@@ -218,6 +218,7 @@ You can also create custom dashboards. Some useful queries:
 
 ```text
 # Request rate by service
+
 sum:istio.mesh.request.count{*} by {destination_service_name}.as_rate()
 
 # P99 latency by service

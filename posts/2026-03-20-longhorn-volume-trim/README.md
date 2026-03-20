@@ -1,8 +1,8 @@
-# How to Configure Longhorn Volume Trim
+# How to Configure Longhorn Volume Trim - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Longhorn, Volume Trim, TRIM, Storage Optimization, Kubernetes, Disk Space, SUSE Rancher
+Tags: Longhorn, Volume Trim, Trim, Storage Optimization, Kubernetes, Disk Space, SUSE Rancher
 
 Description: Learn how to configure and use Longhorn volume trim to reclaim unused disk space by discard trimming file system blocks that have been freed, reducing storage costs.
 
@@ -24,6 +24,7 @@ The filesystem inside the volume must be formatted with trim support and mounted
 
 ```yaml
 # pod-with-trim.yaml
+
 spec:
   containers:
     - name: app
@@ -33,7 +34,7 @@ spec:
         - -c
         - |
           # Format with discard support and mount
-          # Note: this is for illustration — use initContainers for setup
+          # Note: this is for illustration - use initContainers for setup
           mount | grep /data
           fstrim /data   # manually trigger TRIM
       volumeMounts:
@@ -107,12 +108,12 @@ parameters:
 ## Step 5: Monitor Space Reclaimed
 
 ```bash
-# Before trim — check allocated size
+# Before trim - check allocated size
 kubectl exec -n longhorn-system \
   longhorn-manager-xxxxx -- \
   longhorn-manager --volume-name <name> space-info
 
-# After trim — compare actual vs allocated size
+# After trim - compare actual vs allocated size
 kubectl get lhvolume <name> -n longhorn-system \
   -o jsonpath='{.status.actualSize}'
 ```
@@ -121,6 +122,6 @@ kubectl get lhvolume <name> -n longhorn-system \
 
 ## Best Practices
 
-- Run `fstrim` on a schedule (daily or weekly) rather than continuously using the `discard` mount option — continuous discard has higher I/O overhead.
+- Run `fstrim` on a schedule (daily or weekly) rather than continuously using the `discard` mount option - continuous discard has higher I/O overhead.
 - Trim is most impactful for volumes with high file churn (log volumes, cache directories).
 - After trimming, re-run Longhorn backups to capture the smaller effective data size.

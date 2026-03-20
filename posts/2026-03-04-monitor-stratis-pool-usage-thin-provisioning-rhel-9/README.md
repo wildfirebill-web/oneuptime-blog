@@ -233,6 +233,7 @@ When a pool is completely full:
 
 ```bash
 # Add a new device to restore write capability
+
 sudo stratis pool add-data datapool /dev/sde
 ```
 

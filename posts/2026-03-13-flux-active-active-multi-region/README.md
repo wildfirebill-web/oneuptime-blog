@@ -61,6 +61,7 @@ Each region overlay customizes shared base manifests with region-specific values
 
 ```yaml
 # apps/overlays/us-east-1/kustomization.yaml
+
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:

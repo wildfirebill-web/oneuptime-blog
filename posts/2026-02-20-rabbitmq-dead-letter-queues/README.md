@@ -32,6 +32,7 @@ graph LR
 
 ```python
 # setup_dlq.py
+
 # Creates a main queue with a dead letter exchange and queue
 import pika
 

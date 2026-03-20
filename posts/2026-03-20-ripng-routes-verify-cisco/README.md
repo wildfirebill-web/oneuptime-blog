@@ -12,7 +12,7 @@ Verifying RIPng on Cisco requires checking the RIPng process, the routing databa
 
 ## Primary Verification Commands
 
-```
+```text
 ! Show RIPng process configuration and status
 Router# show ipv6 rip
 
@@ -28,7 +28,7 @@ Router# show ipv6 rip RIPNG_PROCESS interface brief
 
 ## Interpreting show ipv6 rip
 
-```
+```text
 Router# show ipv6 rip
 
 RIP process "RIPNG_PROCESS", port 521, multicast-group ff02::9, pid 312
@@ -43,13 +43,13 @@ RIP process "RIPNG_PROCESS", port 521, multicast-group ff02::9, pid 312
 ```
 
 Key fields to check:
-- **Updates every 30 seconds** — Normal update interval
-- **Split horizon is on** — Loop prevention is active
-- **Interfaces** — Confirm all expected interfaces are listed
+- **Updates every 30 seconds** - Normal update interval
+- **Split horizon is on** - Loop prevention is active
+- **Interfaces** - Confirm all expected interfaces are listed
 
 ## Interpreting show ipv6 rip database
 
-```
+```text
 Router# show ipv6 rip database
 
 RIP process "RIPNG_PROCESS"
@@ -67,7 +67,7 @@ RIP process "RIPNG_PROCESS"
 
 ## Interpreting show ipv6 route rip
 
-```
+```text
 Router# show ipv6 route rip
 
 IPv6 Routing Table - default - 6 entries
@@ -86,7 +86,7 @@ Format: `R <prefix> [AD/metric] via <next-hop>, <interface>`
 
 ## Debug Commands
 
-```
+```text
 ! Enable RIPng debugging (caution: verbose)
 Router# debug ipv6 rip
 
@@ -102,7 +102,7 @@ Router# no debug ipv6 rip
 
 ## Checking for Count-to-Infinity Issues
 
-```
+```text
 Router# show ipv6 rip database
 
 ! A route appearing with metric 16 indicates it is unreachable
@@ -113,7 +113,7 @@ Router# show ipv6 rip database
 
 ## Monitoring Route Updates in Real Time
 
-```
+```text
 ! Show RIPng counters (sent/received updates)
 Router# show ipv6 rip RIPNG_PROCESS interface GigabitEthernet0/0
 
@@ -126,4 +126,4 @@ Router# clear ipv6 route rip
 
 ## Summary
 
-On Cisco, `show ipv6 rip database` shows all known RIPng routes with metrics and expiry times. `show ipv6 route rip` shows only the routes installed in the IPv6 routing table (best paths). Check metric values — approaching 15 means you're near the hop limit, and 16 means the route is unreachable and being timed out.
+On Cisco, `show ipv6 rip database` shows all known RIPng routes with metrics and expiry times. `show ipv6 route rip` shows only the routes installed in the IPv6 routing table (best paths). Check metric values - approaching 15 means you're near the hop limit, and 16 means the route is unreachable and being timed out.

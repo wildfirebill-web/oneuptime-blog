@@ -1,25 +1,24 @@
----
-title: "Using the Provider Plugin Cache in OpenTofu"
-author: nawazdhandala
-tags: opentofu, terraform, iac, providers, cache
-description: "Learn how to configure the OpenTofu provider plugin cache to avoid re-downloading providers on every tofu init."
----
-
 # Using the Provider Plugin Cache in OpenTofu
 
-The provider plugin cache is a local directory where OpenTofu stores downloaded providers. When you initialize a new workspace, OpenTofu copies providers from the cache instead of downloading them again — saving time and bandwidth.
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
+
+Tags: OpenTofu, Terraform, IaC, Provider, Cache
+
+Description: Learn how to configure the OpenTofu provider plugin cache to avoid re-downloading providers on every tofu init.
+
+The provider plugin cache is a local directory where OpenTofu stores downloaded providers. When you initialize a new workspace, OpenTofu copies providers from the cache instead of downloading them again - saving time and bandwidth.
 
 ## How the Plugin Cache Works
 
 Without cache:
-```
+```hcl
 Workspace A: tofu init → downloads aws 5.38.0 (20MB)
 Workspace B: tofu init → downloads aws 5.38.0 (20MB) again
 Workspace C: tofu init → downloads aws 5.38.0 (20MB) again
 ```
 
 With cache:
-```
+```hcl
 Workspace A: tofu init → downloads aws 5.38.0 → stores in cache
 Workspace B: tofu init → copies from cache (instant!)
 Workspace C: tofu init → copies from cache (instant!)
@@ -29,6 +28,7 @@ Workspace C: tofu init → copies from cache (instant!)
 
 ```hcl
 # ~/.tofurc (or ~/.terraformrc)
+
 plugin_cache_dir = "/home/user/.terraform.d/plugin-cache"
 
 # Or use the default location
@@ -68,7 +68,7 @@ export TF_PLUGIN_CACHE_DIR=/mnt/tf-cache
 ```
 
 ```hcl
-# ~/.tofurc — individual config
+# ~/.tofurc - individual config
 plugin_cache_dir = "/mnt/tf-cache"
 ```
 
@@ -86,7 +86,7 @@ ENV TF_PLUGIN_CACHE_DIR=/root/.terraform.d/plugin-cache
 ```
 
 ```yaml
-# GitHub Actions — cache providers between runs
+# GitHub Actions - cache providers between runs
 jobs:
   terraform:
     runs-on: ubuntu-latest
@@ -114,7 +114,7 @@ jobs:
 
 ## Plugin Cache Directory Structure
 
-```
+```text
 ~/.terraform.d/plugin-cache/
 └── registry.opentofu.org/
     └── hashicorp/

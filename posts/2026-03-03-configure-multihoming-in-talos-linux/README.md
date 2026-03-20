@@ -30,6 +30,7 @@ Here is a machine configuration snippet that sets up two network interfaces. The
 
 ```yaml
 # Machine configuration with dual network interfaces
+
 machine:
   network:
     interfaces:

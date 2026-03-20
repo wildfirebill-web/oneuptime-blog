@@ -14,6 +14,7 @@ GPU passthrough to Docker containers requires the NVIDIA Container Toolkit (for 
 
 ```bash
 # Verify NVIDIA drivers are installed
+
 nvidia-smi
 
 # Verify NVIDIA Container Toolkit is installed

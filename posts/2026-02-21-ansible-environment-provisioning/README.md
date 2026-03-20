@@ -33,6 +33,7 @@ The key to reusable provisioning is parameterizing everything through variables:
 
 ```yaml
 # environments/dev.yml
+
 # Development environment specification
 ---
 env_name: dev

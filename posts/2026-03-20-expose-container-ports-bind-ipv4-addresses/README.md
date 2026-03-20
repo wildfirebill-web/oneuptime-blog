@@ -8,12 +8,13 @@ Description: Publish Docker container ports and bind them to specific host IPv4 
 
 ## Introduction
 
-By default, `docker run -p 8080:80` binds port 8080 to all host interfaces (`0.0.0.0`), making the service accessible from anywhere. Binding to a specific host IPv4 address restricts access to only connections arriving on that interface — essential for security and multi-homed servers.
+By default, `docker run -p 8080:80` binds port 8080 to all host interfaces (`0.0.0.0`), making the service accessible from anywhere. Binding to a specific host IPv4 address restricts access to only connections arriving on that interface - essential for security and multi-homed servers.
 
 ## Bind to All Interfaces (Default)
 
 ```bash
 # Container port 80 accessible on all host interfaces at port 8080
+
 docker run -d -p 8080:80 nginx:alpine
 
 # Equivalent explicit form

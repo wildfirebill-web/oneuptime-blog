@@ -62,6 +62,7 @@ The most basic startup failure occurs when the collector cannot find or read its
 
 ```bash
 # Test if configuration file exists and is readable
+
 ls -la /etc/otelcol-contrib/config.yaml
 
 # Check file permissions
@@ -771,7 +772,7 @@ service:
 
 Most exporters do not validate connectivity during startup, but some custom or third-party exporters might. Check exporter documentation for initialization behavior.
 
-## Resource Constraint Failures
+Resource Constraint Failures
 
 Insufficient system resources can cause initialization failures, especially in containerized environments.
 

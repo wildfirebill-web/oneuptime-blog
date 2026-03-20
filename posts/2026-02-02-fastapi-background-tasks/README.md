@@ -35,6 +35,7 @@ FastAPI includes a simple `BackgroundTasks` class for lightweight background wor
 
 ```python
 # basic_background.py
+
 from fastapi import FastAPI, BackgroundTasks
 import time
 

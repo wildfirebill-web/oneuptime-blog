@@ -11,44 +11,45 @@ The CIS Microsoft Azure Foundations Benchmark provides security guidance for Azu
 ## Section 1: Identity and Access Management
 
 ```hcl
-# CIS 1.1 — Enable Security Defaults or Conditional Access (requires Entra ID P1)
-# CIS 1.22 — Ensure that 'No users are allowed to consent to apps accessing company data'
+# CIS 1.1 - Enable Security Defaults or Conditional Access (requires Entra ID P1)
+
+# CIS 1.22 - Ensure that 'No users are allowed to consent to apps accessing company data'
 resource "azurerm_resource_group_policy_assignment" "no_app_consent" {
   name                 = "restrict-app-consent"
   resource_group_id    = azurerm_resource_group.security.id
   policy_definition_id = "/providers/Microsoft.Authorization/policyDefinitions/..."
-  description          = "CIS 1.22 — Restrict user app consent"
+  description          = "CIS 1.22 - Restrict user app consent"
 }
 ```
 
 ## Section 2: Microsoft Defender for Cloud
 
 ```hcl
-# CIS 2.1 — Enable Defender for Servers
+# CIS 2.1 - Enable Defender for Servers
 resource "azurerm_security_center_subscription_pricing" "servers" {
   tier          = "Standard"
   resource_type = "VirtualMachines"
 }
 
-# CIS 2.2 — Enable Defender for App Services
+# CIS 2.2 - Enable Defender for App Services
 resource "azurerm_security_center_subscription_pricing" "app_services" {
   tier          = "Standard"
   resource_type = "AppServices"
 }
 
-# CIS 2.3 — Enable Defender for SQL Servers
+# CIS 2.3 - Enable Defender for SQL Servers
 resource "azurerm_security_center_subscription_pricing" "sql" {
   tier          = "Standard"
   resource_type = "SqlServers"
 }
 
-# CIS 2.4 — Enable Defender for Storage
+# CIS 2.4 - Enable Defender for Storage
 resource "azurerm_security_center_subscription_pricing" "storage" {
   tier          = "Standard"
   resource_type = "StorageAccounts"
 }
 
-# CIS 2.5 — Enable Defender for Kubernetes
+# CIS 2.5 - Enable Defender for Kubernetes
 resource "azurerm_security_center_subscription_pricing" "kubernetes" {
   tier          = "Standard"
   resource_type = "KubernetesService"
@@ -58,7 +59,7 @@ resource "azurerm_security_center_subscription_pricing" "kubernetes" {
 ## Section 3: Storage Accounts
 
 ```hcl
-# CIS 3.1 — Ensure that 'Secure transfer required' is set to 'Enabled'
+# CIS 3.1 - Ensure that 'Secure transfer required' is set to 'Enabled'
 resource "azurerm_storage_account" "cis_compliant" {
   name                     = "mycompliantstorage"
   resource_group_name      = azurerm_resource_group.main.name
@@ -71,7 +72,7 @@ resource "azurerm_storage_account" "cis_compliant" {
   allow_nested_items_to_be_public = false     # CIS 3.5
 }
 
-# CIS 3.7 — Ensure storage account uses private endpoints
+# CIS 3.7 - Ensure storage account uses private endpoints
 resource "azurerm_private_endpoint" "storage" {
   name                = "storage-private-endpoint"
   location            = azurerm_resource_group.main.location
@@ -90,7 +91,7 @@ resource "azurerm_private_endpoint" "storage" {
 ## Section 4: Database Services
 
 ```hcl
-# CIS 4.1.1 — Ensure SQL Server audit is enabled
+# CIS 4.1.1 - Ensure SQL Server audit is enabled
 resource "azurerm_mssql_server_extended_auditing_policy" "main" {
   server_id                               = azurerm_mssql_server.main.id
   storage_endpoint                        = azurerm_storage_account.audit.primary_blob_endpoint
@@ -103,7 +104,7 @@ resource "azurerm_mssql_server_extended_auditing_policy" "main" {
 ## Section 5: Logging and Monitoring
 
 ```hcl
-# CIS 5.1.1 — Ensure Diagnostic Setting captures all activities
+# CIS 5.1.1 - Ensure Diagnostic Setting captures all activities
 resource "azurerm_monitor_diagnostic_setting" "subscription" {
   name               = "subscription-diag"
   target_resource_id = "/subscriptions/${var.subscription_id}"
@@ -123,7 +124,7 @@ resource "azurerm_monitor_diagnostic_setting" "subscription" {
 ## Section 6: Networking
 
 ```hcl
-# CIS 6.3 — Ensure SSH access is restricted to known IPs
+# CIS 6.3 - Ensure SSH access is restricted to known IPs
 resource "azurerm_network_security_rule" "deny_ssh_all" {
   name                        = "deny-ssh-internet"
   priority                    = 4096

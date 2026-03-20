@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Troubleshooting, Init, Providers, Infrastructure as Code
+Tags: OpenTofu, Troubleshooting, Init, Provider, Infrastructure as Code
 
 Description: Learn how to diagnose and fix the most common tofu init failures including provider download errors, backend connectivity issues, and module download failures.
 
@@ -16,6 +16,7 @@ The first step in any init failure is to enable debug logging.
 
 ```bash
 # Enable full debug logging
+
 TF_LOG=DEBUG tofu init 2>&1 | tee init-debug.log
 
 # Or just provider-level debug
@@ -27,7 +28,7 @@ grep -i "error\|failed\|panic" init-debug.log
 
 ## Error: Failed to Query Provider Registry
 
-```
+```text
 Error: Failed to query available provider packages
 Could not retrieve the list of available versions for provider hashicorp/aws:
 could not connect to registry.opentofu.org
@@ -62,7 +63,7 @@ provider_installation {
 
 ## Error: Incompatible Provider Version
 
-```
+```text
 Error: Failed to install provider
 The version constraint for provider registry.opentofu.org/hashicorp/aws
 requires version >= 5.0.0, < 6.0.0. The lock file requires exactly 4.67.0.
@@ -81,7 +82,7 @@ tofu init
 
 ## Error: Backend Configuration Error
 
-```
+```text
 Error: Failed to get existing workspaces: ...
 Error: S3 bucket "my-tofu-state" not found
 ```
@@ -105,7 +106,7 @@ tofu init -migrate-state
 
 ## Error: Module Download Failure
 
-```
+```text
 Error: Failed to download module
 Error retrieving module "vpc": git@github.com:my-org/modules.git
 ```
@@ -126,7 +127,7 @@ git config --global credential.helper store
 
 ## Error: Lock File Hash Mismatch
 
-```
+```text
 Error: Failed to install provider
 The hash for provider registry.opentofu.org/hashicorp/aws v5.50.0 does not match
 ```
@@ -145,7 +146,7 @@ tofu init
 
 ## Error: Working Directory Corruption
 
-```
+```text
 Error: .terraform directory is corrupted
 ```
 

@@ -14,6 +14,7 @@ Auto-healing infrastructure automatically detects unhealthy components and repla
 
 ```hcl
 # main.tf - ASG with comprehensive auto-healing
+
 resource "aws_autoscaling_group" "self_healing" {
   name                = "self-healing-asg"
   vpc_zone_identifier = module.vpc.private_subnets

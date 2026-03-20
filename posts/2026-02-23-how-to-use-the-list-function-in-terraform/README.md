@@ -18,6 +18,7 @@ In Terraform 0.11 and earlier, the `list` function was the way to create a list 
 
 ```hcl
 # Old Terraform 0.11 syntax (DEPRECATED)
+
 # list("a", "b", "c")
 # This would produce ["a", "b", "c"]
 ```

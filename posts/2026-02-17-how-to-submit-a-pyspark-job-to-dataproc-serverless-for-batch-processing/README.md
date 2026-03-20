@@ -38,6 +38,7 @@ Before submitting your first serverless batch job, set up the required networkin
 
 ```bash
 # Create a subnet with Private Google Access enabled
+
 # (required for Dataproc Serverless)
 gcloud compute networks subnets update default \
   --region=us-central1 \

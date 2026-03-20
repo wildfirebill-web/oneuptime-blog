@@ -34,6 +34,7 @@ Start with a new Node.js project using the Bot Framework SDK:
 
 ```bash
 # Create the bot project
+
 mkdir teams-insights-bot && cd teams-insights-bot
 npm init -y
 

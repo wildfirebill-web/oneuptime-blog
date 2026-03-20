@@ -18,6 +18,7 @@ Adding multiple IP addresses to an interface in Talos is straightforward. Just l
 
 ```yaml
 # machine-config.yaml
+
 machine:
   network:
     interfaces:

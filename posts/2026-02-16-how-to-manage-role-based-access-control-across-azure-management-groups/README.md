@@ -78,6 +78,7 @@ Here is a practical structure for an enterprise:
 
 ```bash
 # Assign Reader role to the security team at the Tenant Root Group
+
 # The --scope flag uses the management group resource ID
 az role assignment create \
   --assignee-object-id "<security-team-group-object-id>" \

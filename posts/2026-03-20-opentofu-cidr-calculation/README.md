@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, CIDR, Networking, cidrsubnet, cidrhost, IP Addressing
+Tags: OpenTofu, CIDR, Networking, Cidrsubnet, Cidrhost, IP Addressing
 
 Description: Learn how to use OpenTofu's CIDR functions (cidrsubnet, cidrhost, cidrcontains) to programmatically calculate subnet addresses for dynamic network provisioning.
 
@@ -14,6 +14,7 @@ OpenTofu's CIDR functions enable dynamic subnet calculation without hardcoding I
 
 ```hcl
 # main.tf - Dynamic CIDR calculation
+
 variable "vpc_cidr" {
   default = "10.0.0.0/16"
 }
@@ -138,4 +139,4 @@ resource "null_resource" "ip_validation" {
 
 ## Summary
 
-OpenTofu CIDR functions enable dynamic network configuration without spreadsheets or manual IP management. `cidrsubnet(base, newbits, netnum)` divides a CIDR block — adding 8 newbits to a /16 creates /24 subnets, with netnum selecting which one (0=first, 1=second). Hierarchical allocation using nested `cidrsubnet` calls creates clean, non-overlapping address spaces across regions and environments. `cidrcontains` validates IP membership, useful for conditional resource creation and lifecycle postconditions.
+OpenTofu CIDR functions enable dynamic network configuration without spreadsheets or manual IP management. `cidrsubnet(base, newbits, netnum)` divides a CIDR block - adding 8 newbits to a /16 creates /24 subnets, with netnum selecting which one (0=first, 1=second). Hierarchical allocation using nested `cidrsubnet` calls creates clean, non-overlapping address spaces across regions and environments. `cidrcontains` validates IP membership, useful for conditional resource creation and lifecycle postconditions.

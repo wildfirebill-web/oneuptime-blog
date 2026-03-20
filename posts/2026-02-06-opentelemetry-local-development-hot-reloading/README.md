@@ -51,6 +51,7 @@ Use Docker Compose to run a minimal observability stack. Include Jaeger for trac
 
 ```yaml
 # docker-compose.dev.yaml
+
 version: '3.8'
 
 services:

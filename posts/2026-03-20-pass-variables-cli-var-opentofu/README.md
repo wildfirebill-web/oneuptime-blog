@@ -1,4 +1,4 @@
-# How to Pass Variables via the CLI with -var in OpenTofu
+# How to Pass Variables via the CLI with -var in OpenTofu - Opentofu
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -16,6 +16,7 @@ The `-var` flag lets you pass variable values directly on the command line witho
 
 ```bash
 # Pass a single string variable
+
 tofu plan -var="region=us-west-2"
 
 # Pass a number variable
@@ -64,7 +65,7 @@ tofu plan \
 
 ```bash
 #!/bin/bash
-# deploy.sh — parameterized deployment script
+# deploy.sh - parameterized deployment script
 
 ENVIRONMENT="${1:-development}"
 REGION="${2:-us-east-1}"

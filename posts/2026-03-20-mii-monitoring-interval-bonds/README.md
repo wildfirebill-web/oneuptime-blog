@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Linux, Network Bonding, MII, miimon, Failover, Networking, Link Monitoring
+Tags: Linux, Network Bonding, MII, Miimon, Failover, Networking, Link Monitoring
 
 Description: Configure the MII (Media Independent Interface) link monitoring interval for Linux bond interfaces to tune failover detection speed and stability.
 
@@ -24,6 +24,7 @@ The MII monitoring interval (`miimon`) determines how often the bonding driver c
 
 ```bash
 # Enable MII monitoring with 100ms interval
+
 echo 100 > /sys/class/net/bond0/bonding/miimon
 
 # Verify

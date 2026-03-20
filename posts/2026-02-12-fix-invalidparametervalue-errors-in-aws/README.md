@@ -38,6 +38,7 @@ This is the number one cause. You're referencing a resource that exists in a dif
 
 ```bash
 # You're trying to launch an instance with an AMI from a different region
+
 aws ec2 run-instances \
   --image-id ami-abc123 \
   --instance-type t3.micro \

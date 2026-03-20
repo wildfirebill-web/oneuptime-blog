@@ -20,6 +20,7 @@ The default ack deadline is 10 seconds. You can set it between 10 and 600 second
 
 ```bash
 # Set the acknowledgement deadline to 60 seconds
+
 gcloud pubsub subscriptions create my-subscription \
   --topic=my-topic \
   --ack-deadline=60

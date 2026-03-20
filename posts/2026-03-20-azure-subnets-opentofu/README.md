@@ -114,4 +114,4 @@ output "all_subnet_ids"    { value = { for k, v in azurerm_subnet.all : k => v.i
 
 ## Conclusion
 
-Plan your subnet address spaces carefully before deployment—Azure does not allow changing subnet address prefixes after resources are deployed. Use service endpoints to enable private access to Azure PaaS services and service delegation for integration with Azure-native services like App Service.
+Plan your subnet address spaces carefully before deployment-Azure does not allow changing subnet address prefixes after resources are deployed. Use service endpoints to enable private access to Azure PaaS services and service delegation for integration with Azure-native services like App Service.

@@ -57,6 +57,7 @@ Deploy and verify:
 
 ```bash
 # Create pod
+
 kubectl apply -f custom-dns-pod.yaml
 
 # Check DNS configuration

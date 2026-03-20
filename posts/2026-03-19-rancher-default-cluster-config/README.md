@@ -30,6 +30,7 @@ Set the default Kubernetes version for new clusters:
 
 ```bash
 # Set default Kubernetes version via API
+
 curl -s -k \
   -X PUT \
   -H "Authorization: Bearer $RANCHER_TOKEN" \

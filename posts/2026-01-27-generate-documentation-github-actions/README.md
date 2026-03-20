@@ -28,6 +28,7 @@ Generate API documentation from TypeScript source code:
 
 ```yaml
 # .github/workflows/docs.yml
+
 name: Documentation
 
 on:
@@ -368,7 +369,7 @@ const cliHelp = fs.readFileSync('cli-help.txt', 'utf8');
 // Replace content between markers
 const updated = readme.replace(
   /<!-- CLI_HELP_START -->[\s\S]*<!-- CLI_HELP_END -->/,
-  `<!-- CLI_HELP_START -->\n\`\`\`\n${cliHelp}\n\`\`\`\n<!-- CLI_HELP_END -->`
+  `<!-- CLI_HELP_START -->\n```\n${cliHelp}\n```\n<!-- CLI_HELP_END -->`
 );
 
 fs.writeFileSync('README.md', updated);

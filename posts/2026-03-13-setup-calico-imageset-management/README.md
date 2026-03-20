@@ -30,6 +30,7 @@ List all images needed for the target Calico version:
 
 ```bash
 # Download the operator manifest to inspect image references
+
 CALICO_VERSION=v3.27.0
 curl -o tigera-operator.yaml https://raw.githubusercontent.com/projectcalico/calico/${CALICO_VERSION}/manifests/tigera-operator.yaml
 

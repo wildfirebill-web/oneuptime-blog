@@ -80,6 +80,7 @@ Here is the minimal structure for a vars plugin:
 
 ```python
 # plugins/vars/custom_vars.py
+
 """
 Custom vars plugin that loads variables from an external source
 """

@@ -27,6 +27,7 @@ This guide deploys Velero using a Flux HelmRelease with AWS S3 as the backup sto
 
 ```bash
 # Create the S3 bucket for Velero backups
+
 aws s3 mb s3://my-cluster-velero-backups --region us-east-1
 
 # Enable versioning for the bucket (recommended for backup data)

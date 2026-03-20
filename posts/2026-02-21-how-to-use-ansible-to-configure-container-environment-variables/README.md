@@ -16,6 +16,7 @@ The simplest approach is passing environment variables directly:
 
 ```yaml
 # roles/container_env/tasks/basic.yml
+
 # Deploy container with basic environment variables
 - name: Deploy application with environment variables
   community.docker.docker_container:

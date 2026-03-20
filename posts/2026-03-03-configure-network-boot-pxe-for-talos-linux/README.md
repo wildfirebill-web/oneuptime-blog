@@ -41,6 +41,7 @@ You need a server (physical or virtual) to host the PXE services. This server ne
 
 ```bash
 # Install the required packages on your PXE server
+
 sudo apt-get update
 sudo apt-get install -y \
   dnsmasq \

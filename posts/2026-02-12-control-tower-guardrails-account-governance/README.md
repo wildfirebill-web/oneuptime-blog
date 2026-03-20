@@ -36,6 +36,7 @@ You can list all available controls through the CLI:
 
 ```bash
 # List all available controls in Control Tower
+
 aws controltower list-baselines
 
 # List controls enabled on a specific OU

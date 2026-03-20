@@ -41,6 +41,7 @@ Create an Artifact Registry repository to store your container images.
 
 ```bash
 # Enable the Artifact Registry API
+
 gcloud services enable artifactregistry.googleapis.com
 
 # Create a Docker repository in Artifact Registry

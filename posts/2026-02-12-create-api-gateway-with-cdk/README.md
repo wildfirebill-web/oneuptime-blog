@@ -24,6 +24,7 @@ Start with a fresh CDK project.
 
 ```bash
 # Initialize the project
+
 mkdir api-gateway-cdk && cd api-gateway-cdk
 cdk init app --language typescript
 

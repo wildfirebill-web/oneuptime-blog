@@ -43,6 +43,7 @@ Primary (Writes) -----> Replica 1 (Reads)
 
 ```bash
 # On replica servers
+
 replicaof <master-ip> <master-port>
 
 # For read-only replicas (default in Redis 7+)

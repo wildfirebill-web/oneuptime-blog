@@ -45,6 +45,7 @@ Run this on both Site A and Site B gateways.
 
 ```bash
 # Install WireGuard tools
+
 sudo dnf install -y epel-release
 sudo dnf install -y wireguard-tools
 ```

@@ -47,6 +47,7 @@ Redis forks a child process to write the snapshot, so the parent continues servi
 # redis.conf - RDB Configuration
 
 # Save after 900 seconds (15 min) if at least 1 key changed
+
 save 900 1
 
 # Save after 300 seconds (5 min) if at least 10 keys changed

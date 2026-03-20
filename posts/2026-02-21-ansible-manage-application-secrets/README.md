@@ -30,6 +30,7 @@ Ansible Vault encrypts files and variables with AES-256. It is built into Ansibl
 
 ```bash
 # Create a new encrypted variables file
+
 ansible-vault create group_vars/production/vault.yml
 
 # Edit an existing encrypted file

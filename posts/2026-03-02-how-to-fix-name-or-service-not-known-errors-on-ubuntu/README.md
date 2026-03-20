@@ -25,6 +25,7 @@ First, confirm the problem is DNS and not complete network failure:
 
 ```bash
 # Test if you can reach a server by IP (bypasses DNS)
+
 ping -c 3 8.8.8.8
 
 # If this works, your network is up - the problem is DNS

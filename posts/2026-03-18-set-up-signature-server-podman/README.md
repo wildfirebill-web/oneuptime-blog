@@ -27,6 +27,7 @@ The URL pattern follows this structure:
 
 ```bash
 # Create the base directory for signature storage
+
 sudo mkdir -p /var/lib/containers/sigstore
 sudo chmod 755 /var/lib/containers/sigstore
 ```

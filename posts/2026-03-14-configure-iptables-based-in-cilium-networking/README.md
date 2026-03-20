@@ -30,6 +30,7 @@ Apply the following Helm values to configure iptables-based masquerading in cili
 
 ```yaml
 # cilium-iptables-masq-values.yaml
+
 # Configure iptables-based masquerading instead of eBPF
 
 # Disable eBPF masquerade to fall back to iptables

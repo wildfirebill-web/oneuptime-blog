@@ -157,6 +157,7 @@ from aws_schema_registry import SchemaRegistryClient, DataAndSchema
 from aws_schema_registry.avro import AvroSchema
 
 # Initialize the schema registry client
+
 glue_client = boto3.client('glue', region_name='us-east-1')
 registry_client = SchemaRegistryClient(
     glue_client,

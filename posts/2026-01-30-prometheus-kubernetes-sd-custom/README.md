@@ -56,6 +56,7 @@ Here is a minimal configuration to discover pods in a Kubernetes cluster.
 
 ```yaml
 # prometheus.yml
+
 global:
   scrape_interval: 15s
   evaluation_interval: 15s

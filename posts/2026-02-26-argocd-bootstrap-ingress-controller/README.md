@@ -34,6 +34,7 @@ The most widely used ingress controller in Kubernetes:
 
 ```yaml
 # infrastructure/ingress-nginx/application.yaml
+
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:

@@ -30,6 +30,7 @@ Run all commands on both nodes unless stated otherwise.
 
 ```bash
 # On both nodes: set hostnames
+
 # On node1:
 sudo hostnamectl set-hostname node1
 # On node2:
@@ -318,7 +319,7 @@ sudo ss -ulnp | grep 5405
 nc -u 192.168.10.12 5405  # test connectivity
 ```
 
-### Resources Not Starting
+Resources Not Starting
 
 ```bash
 # Force a resource to start on a specific node

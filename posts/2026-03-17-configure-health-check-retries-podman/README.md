@@ -20,6 +20,7 @@ Use the `--health-retries` flag to define how many consecutive failures are need
 
 ```bash
 # Require 3 consecutive failures before marking unhealthy
+
 podman run -d \
   --name my-app \
   --health-cmd "curl -f http://localhost:8080/health || exit 1" \

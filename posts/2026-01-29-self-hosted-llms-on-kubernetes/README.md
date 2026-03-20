@@ -68,6 +68,7 @@ The following command installs the NVIDIA device plugin as a DaemonSet, which en
 
 ```bash
 # Add the NVIDIA helm repository
+
 helm repo add nvdp https://nvidia.github.io/k8s-device-plugin
 helm repo update
 
@@ -594,7 +595,7 @@ spec:
         sum(vllm_num_requests_waiting{namespace="llm-serving"})
 ```
 
-### Resource Quotas
+Resource Quotas
 
 Set resource quotas to prevent runaway costs.
 

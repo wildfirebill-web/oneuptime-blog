@@ -44,6 +44,7 @@ terraform-modules/
 
 ```yaml
 # infrastructure/terraform/aws/01-vpc.yaml
+
 apiVersion: infra.contrib.fluxcd.io/v1alpha2
 kind: Terraform
 metadata:

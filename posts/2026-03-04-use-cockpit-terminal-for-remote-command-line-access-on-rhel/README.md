@@ -14,6 +14,7 @@ Cockpit is a web-based management interface included with RHEL. Its built-in ter
 
 ```bash
 # Cockpit is installed by default on RHEL 9, but verify
+
 sudo dnf install -y cockpit
 
 # Enable and start the Cockpit socket

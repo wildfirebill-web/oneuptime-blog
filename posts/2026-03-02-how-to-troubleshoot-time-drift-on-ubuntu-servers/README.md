@@ -29,6 +29,7 @@ Drift problems fall into several categories:
 
 ```bash
 # Quick overview of time status
+
 timedatectl
 
 # Key things to check:

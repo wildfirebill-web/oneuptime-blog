@@ -27,6 +27,7 @@ flowchart TD
 
 ```bash
 # From inside the container / pod
+
 nslookup auth-service.default.svc.cluster.local
 dig auth-service.default.svc.cluster.local A
 
@@ -50,13 +51,13 @@ curl -v http://192.168.1.10:8080/health
 ## Step 3: Verify the Service Is Listening
 
 ```bash
-# On the target machine — what is actually listening?
+# On the target machine - what is actually listening?
 ss -tlnp | grep 8080
 netstat -tlnp | grep 8080
 
 # Is it bound to the right address?
 # "0.0.0.0:8080" → all interfaces
-# "127.0.0.1:8080" → localhost only — callers on other hosts can't reach it
+# "127.0.0.1:8080" → localhost only - callers on other hosts can't reach it
 ```
 
 ## Step 4: Firewall and Security Groups
@@ -75,7 +76,7 @@ iptables -I INPUT -p tcp --dport 8080 -j ACCEPT
 ## Step 5: Kubernetes-Specific Diagnostics
 
 ```bash
-# Check Service endpoints — are pods registered?
+# Check Service endpoints - are pods registered?
 kubectl get endpoints auth-service -n default
 
 # Exec into a pod and test
@@ -84,7 +85,7 @@ kubectl exec -it deploy/frontend -- curl http://auth-service:8080/health
 # Check pod networking
 kubectl get pods -o wide   # see pod IPs
 
-# Check NetworkPolicy — may be blocking cross-namespace traffic
+# Check NetworkPolicy - may be blocking cross-namespace traffic
 kubectl get networkpolicies -A
 ```
 
@@ -118,4 +119,4 @@ for host, port in dependencies:
 
 ## Conclusion
 
-Troubleshoot IPv4 connectivity systematically: DNS → ping/curl → port check → firewall → service binding. A service bound to `127.0.0.1` is unreachable from other hosts — it must bind to `0.0.0.0` or a specific interface IP. In Kubernetes, empty `Endpoints` objects mean no pods are ready or the label selector doesn't match. Add a startup connectivity check to microservices to fail fast and produce clear error messages instead of mysterious timeouts after deployment.
+Troubleshoot IPv4 connectivity systematically: DNS → ping/curl → port check → firewall → service binding. A service bound to `127.0.0.1` is unreachable from other hosts - it must bind to `0.0.0.0` or a specific interface IP. In Kubernetes, empty `Endpoints` objects mean no pods are ready or the label selector doesn't match. Add a startup connectivity check to microservices to fail fast and produce clear error messages instead of mysterious timeouts after deployment.

@@ -1,4 +1,4 @@
-# How to Use the Portainer API as a Docker API Gateway
+# How to Use the Portainer API as a Docker API Gateway - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -19,14 +19,14 @@ Exposing the Docker socket directly is a significant security risk, as anyone wi
 
 ## Architecture
 
-```
+```bash
 Client → Portainer API Gateway → Docker Socket → Container Runtime
          (authentication,        (full Docker
           RBAC, audit)           API access)
 ```
 
 Portainer proxies requests from:
-```
+```text
 /api/endpoints/{id}/docker/{path}
 ```
 to the underlying Docker Engine at `docker.sock` (or TCP endpoint).
@@ -35,12 +35,12 @@ to the underlying Docker Engine at `docker.sock` (or TCP endpoint).
 
 All Docker API calls through Portainer follow this pattern:
 
-```
+```text
 https://portainer.example.com/api/endpoints/{endpointId}/docker/{docker-api-path}
 ```
 
 For example:
-```
+```bash
 Docker direct:   GET /containers/json
 Via Portainer:   GET /api/endpoints/1/docker/containers/json
 ```
@@ -53,6 +53,7 @@ TOKEN="your-auth-token"
 ENDPOINT_ID=1
 
 # Docker info (equivalent to: docker info)
+
 curl -s -H "Authorization: Bearer $TOKEN" \
   "${PORTAINER_URL}/api/endpoints/${ENDPOINT_ID}/docker/info" | jq .
 

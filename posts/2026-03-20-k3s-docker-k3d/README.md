@@ -16,6 +16,7 @@ K3d (K3s in Docker) creates lightweight K3s clusters inside Docker containers. I
 
 ```bash
 # Install K3d
+
 curl -s https://raw.githubusercontent.com/k3d-io/k3d/main/install.sh | bash
 
 # Verify installation
@@ -213,6 +214,6 @@ kubectl config use-context k3d-dev-cluster
 
 ## Best Practices
 
-- Use K3d config files (`k3d-config.yaml`) for development clusters that other team members need to reproduce — commit the config to the repository.
-- Create a local registry with every K3d cluster in development — it eliminates the need to push images to a remote registry during rapid iteration.
+- Use K3d config files (`k3d-config.yaml`) for development clusters that other team members need to reproduce - commit the config to the repository.
+- Create a local registry with every K3d cluster in development - it eliminates the need to push images to a remote registry during rapid iteration.
 - For CI pipelines, use `--wait` when creating the cluster to ensure K3d waits for the cluster to be fully ready before the next step runs.

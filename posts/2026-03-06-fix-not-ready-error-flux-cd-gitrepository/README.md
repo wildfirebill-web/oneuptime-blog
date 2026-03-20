@@ -29,6 +29,7 @@ You can check the status of your GitRepository with:
 
 ```bash
 # Get the status of all GitRepository resources
+
 kubectl get gitrepositories -A
 
 # Get detailed information about a specific GitRepository

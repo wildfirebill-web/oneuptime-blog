@@ -18,6 +18,7 @@ Install ksniff using krew, the kubectl plugin manager:
 
 ```bash
 # Install krew if you don't have it
+
 # Visit https://krew.sigs.k8s.io/docs/user-guide/setup/install/
 
 # Install ksniff plugin

@@ -43,6 +43,7 @@ The expand-contract pattern splits breaking migrations into safe, backward-compa
 
 ```yaml
 # migrations/V2__expand_add_email_column.sql
+
 -- Phase 1: Add new column without removing old one
 -- Both v1 and v2 of the app can work with this schema
 ALTER TABLE users ADD COLUMN email_address VARCHAR(255);

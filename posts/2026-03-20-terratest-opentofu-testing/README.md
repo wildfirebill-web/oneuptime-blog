@@ -20,6 +20,7 @@ Learn how to write Terratest integration tests for OpenTofu modules using Go to 
 
 ```bash
 # Verify OpenTofu installation
+
 tofu version
 
 # Set up required environment variables

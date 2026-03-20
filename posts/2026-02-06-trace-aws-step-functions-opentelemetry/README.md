@@ -41,6 +41,7 @@ Every Lambda function that participates in your Step Functions workflow needs th
 
 ```bash
 # Add the OpenTelemetry Lambda layer to your function
+
 # This provides auto-instrumentation for AWS SDK calls
 aws lambda update-function-configuration \
   --function-name validate-order \

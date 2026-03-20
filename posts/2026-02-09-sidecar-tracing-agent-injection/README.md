@@ -342,6 +342,7 @@ To update the configuration, modify the ConfigMap and restart the pods. You can 
 
 ```bash
 # Update the ConfigMap
+
 kubectl apply -f otel-collector-config.yaml
 
 # Trigger rolling restart

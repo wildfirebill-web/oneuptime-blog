@@ -20,6 +20,7 @@ Before starting, you need:
 
 ```bash
 # Create a resource group for the container registry
+
 az group create --name container-rg --location eastus
 
 # Create the Azure Container Registry

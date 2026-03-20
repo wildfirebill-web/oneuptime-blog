@@ -24,6 +24,7 @@ Here is the simplest possible percentile query.
 
 ```text
 # P95 latency for HTTP load balancer requests
+
 fetch https_lb_rule::loadbalancing.googleapis.com/https/total_latencies
 | percentile(val(), 95)
 | every 1m

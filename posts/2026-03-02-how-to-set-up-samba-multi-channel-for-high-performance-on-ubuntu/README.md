@@ -26,6 +26,7 @@ Before configuring anything, map out your interfaces:
 
 ```bash
 # List all network interfaces with addresses
+
 ip addr show
 
 # Check interface speeds

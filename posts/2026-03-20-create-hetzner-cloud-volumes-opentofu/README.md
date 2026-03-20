@@ -78,6 +78,7 @@ After `tofu apply`, resize the filesystem on the server:
 
 ```bash
 # For ext4
+
 sudo resize2fs /dev/disk/by-id/scsi-0HC_Volume_<volume-id>
 
 # For xfs

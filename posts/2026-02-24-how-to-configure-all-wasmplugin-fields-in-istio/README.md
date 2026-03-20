@@ -91,6 +91,7 @@ OCI is the recommended approach because it integrates with existing container re
 
 ```yaml
 # OCI registry
+
 url: oci://docker.io/my-org/my-wasm-plugin:v1.0.0
 
 # HTTP download

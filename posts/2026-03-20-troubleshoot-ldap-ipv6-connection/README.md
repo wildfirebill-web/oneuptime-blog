@@ -8,12 +8,13 @@ Description: Diagnose and resolve LDAP connection failures over IPv6 by systemat
 
 ---
 
-LDAP over IPv6 failures can stem from many sources — the server not listening on IPv6, DNS not returning AAAA records, firewall blocking port 389, or TLS certificate mismatch. This guide covers a structured diagnostic approach.
+LDAP over IPv6 failures can stem from many sources - the server not listening on IPv6, DNS not returning AAAA records, firewall blocking port 389, or TLS certificate mismatch. This guide covers a structured diagnostic approach.
 
 ## Step 1: Verify Basic IPv6 Connectivity
 
 ```bash
 # Check IPv6 is functional
+
 ip -6 addr show | grep "scope global"
 
 # Test basic reachability to the LDAP server
@@ -162,4 +163,4 @@ getent passwd someuser
 | `Referral` | Wrong base DN | Verify base DN |
 | `Invalid DN syntax` | Wrong bracket format | Use `[addr]` in URI |
 
-Methodical diagnosis — from basic connectivity through DNS, firewall, LDAP protocol, and TLS — efficiently identifies and resolves LDAP IPv6 connection failures in production environments.
+Methodical diagnosis - from basic connectivity through DNS, firewall, LDAP protocol, and TLS - efficiently identifies and resolves LDAP IPv6 connection failures in production environments.

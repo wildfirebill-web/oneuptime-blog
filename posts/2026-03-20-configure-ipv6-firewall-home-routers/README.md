@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Firewall, Home Router, Security, ip6tables, OpenWRT
+Tags: IPv6, Firewall, Home Router, Security, Ip6tables, OpenWrt
 
 Description: Configure IPv6 firewall rules on home routers using OpenWRT, UFW, and common router admin interfaces to protect your home network.
 
@@ -19,7 +19,7 @@ IPv6 firewalls on home routers should:
 
 OpenWRT uses `nftables` (fw4) in recent versions. The default rules are found in `/etc/config/firewall`:
 
-```
+```text
 # /etc/config/firewall
 
 config defaults
@@ -29,6 +29,7 @@ config defaults
     option flow_offloading 1
 
 # WAN zone
+
 config zone
     option name         wan
     list network        wan
@@ -67,7 +68,7 @@ config rule
 
 To allow HTTPS access to a home server from the internet:
 
-```
+```text
 # In /etc/config/firewall, add:
 
 config rule
@@ -155,4 +156,4 @@ ip6tables -A INPUT -s 2001:bad:prefix::/48 -j DROP
 
 ## Conclusion
 
-IPv6 firewall configuration on home routers requires explicit rules since NAT is not in use. OpenWRT provides a clean zone-based firewall that handles IPv6 correctly when the `wan6` interface is included in the WAN zone. Always ensure ICMPv6 is allowed — blocking it breaks IPv6 operation. Add specific allow rules only for services you intentionally expose.
+IPv6 firewall configuration on home routers requires explicit rules since NAT is not in use. OpenWRT provides a clean zone-based firewall that handles IPv6 correctly when the `wan6` interface is included in the WAN zone. Always ensure ICMPv6 is allowed - blocking it breaks IPv6 operation. Add specific allow rules only for services you intentionally expose.

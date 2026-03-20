@@ -47,6 +47,7 @@ The following command queries RabbitMQ for detailed memory breakdown, showing al
 
 ```bash
 # Get detailed memory breakdown from RabbitMQ
+
 rabbitmqctl status | grep -A 50 "Memory"
 
 # Alternative: Get memory in a more readable format

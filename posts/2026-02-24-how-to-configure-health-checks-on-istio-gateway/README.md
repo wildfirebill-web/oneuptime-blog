@@ -16,6 +16,7 @@ The Istio ingress gateway pod has a built-in health check endpoint on port 15021
 
 ```bash
 # Check the health status
+
 curl http://<GATEWAY_POD_IP>:15021/healthz/ready
 ```
 

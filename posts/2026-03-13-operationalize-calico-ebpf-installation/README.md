@@ -16,6 +16,7 @@ Operationalizing the Calico eBPF installation means creating a standard cluster 
 
 ```yaml
 # cluster-templates/ebpf-standard/calico-config.yaml
+
 # This is the standard Calico eBPF configuration for all new clusters
 
 # 1. API Server endpoint (filled in by automation)

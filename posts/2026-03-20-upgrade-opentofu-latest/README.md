@@ -16,6 +16,7 @@ Keeping OpenTofu up to date ensures you have the latest features, bug fixes, and
 
 ```bash
 # Check current version
+
 tofu version
 
 # Check what version is latest

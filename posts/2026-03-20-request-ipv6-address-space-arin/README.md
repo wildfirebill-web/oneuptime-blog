@@ -50,7 +50,7 @@ Fill in:
 
 ARIN requires justification for initial allocations. For ISPs, you typically need to demonstrate:
 
-```
+```text
 - Number of existing customers (home, business)
 - Planned IPv6 deployment timeline
 - Current infrastructure (ASN, IPv4 allocation size)
@@ -76,7 +76,7 @@ Once approved, ARIN will:
 
 After receiving your prefix, immediately create a Route Origin Authorization (ROA) in ARIN's RPKI system:
 
-```
+```text
 In ARIN Online:
 1. Go to Routing Security → Route Origin Authorizations
 2. Create New ROA

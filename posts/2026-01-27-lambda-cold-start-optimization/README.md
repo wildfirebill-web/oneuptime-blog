@@ -141,6 +141,7 @@ Use Lambda Layers for shared dependencies, but be strategic:
 
 ```yaml
 # SAM template - Layer for common utilities
+
 Resources:
   CommonLayer:
     Type: AWS::Serverless::LayerVersion

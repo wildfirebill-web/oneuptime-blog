@@ -20,6 +20,7 @@ Learn how to use the official OpenTofu migration tools to automate the Terraform
 
 ```bash
 # Verify OpenTofu installation
+
 tofu version
 
 # Set up required environment variables

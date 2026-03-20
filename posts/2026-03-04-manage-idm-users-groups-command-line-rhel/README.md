@@ -14,6 +14,7 @@ The `ipa` command-line tool provides full control over IdM user and group manage
 
 ```bash
 # Get a Kerberos ticket as admin
+
 kinit admin
 # Enter the admin password
 

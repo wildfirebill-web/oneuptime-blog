@@ -46,6 +46,7 @@ Now configure Pinpoint.
 
 ```bash
 # Enable APNs channel with a token-based key
+
 aws pinpoint update-apns-channel \
   --application-id YOUR_APP_ID \
   --apns-channel-request '{

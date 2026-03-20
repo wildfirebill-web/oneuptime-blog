@@ -24,6 +24,7 @@ The most critical decision is how to isolate Terraform state across teams and pr
 
 ```hcl
 # Option 1: Separate state files per team and environment
+
 # infrastructure/team-backend/production/backend.tf
 terraform {
   backend "s3" {

@@ -20,6 +20,7 @@ Podman ships with pre-configured systemd units for socket activation.
 
 ```bash
 # View the default socket unit (rootless)
+
 systemctl --user cat podman.socket
 
 # View the default service unit (rootless)

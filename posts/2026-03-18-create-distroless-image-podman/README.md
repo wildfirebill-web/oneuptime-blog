@@ -38,6 +38,7 @@ Go is the ideal language for distroless images because Go produces statically li
 
 ```dockerfile
 # Build stage
+
 FROM golang:1.22-alpine AS builder
 
 WORKDIR /app

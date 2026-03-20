@@ -1,8 +1,8 @@
-# How to Use the split and join Functions in OpenTofu
+# How to Use the split and join Functions in OpenTofu - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, split, join, String Functions, HCL, Infrastructure as Code, DevOps
+Tags: OpenTofu, Split, JOIN, String Functions, HCL, Infrastructure as Code, DevOps
 
 Description: Learn how to use the split and join functions in OpenTofu to convert between strings and lists, splitting on delimiters and joining collections back to strings.
 

@@ -29,6 +29,7 @@ You need Docker with Wasm support and a language toolchain that targets Wasm:
 
 ```bash
 # Install Rust with the wasm32-wasi target for building functions
+
 rustup target add wasm32-wasi
 
 # Verify Docker Wasm support is available

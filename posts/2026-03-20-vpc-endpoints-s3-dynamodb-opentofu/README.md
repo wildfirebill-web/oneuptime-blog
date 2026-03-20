@@ -15,7 +15,7 @@ VPC Gateway endpoints for S3 and DynamoDB route traffic to these services throug
 ```mermaid
 graph LR
     A[EC2 / Lambda<br/>Private Subnet] --> B{Gateway Endpoint<br/>in Route Table}
-    B -->|With endpoint| C[S3 / DynamoDB<br/>AWS Network — Free]
+    B -->|With endpoint| C[S3 / DynamoDB<br/>AWS Network - Free]
     B -->|Without endpoint| D[NAT Gateway<br/>$0.045/GB charge]
     D --> E[Internet Gateway<br/>→ S3]
 ```
@@ -24,11 +24,12 @@ graph LR
 
 ```hcl
 # s3_endpoint.tf
+
 data "aws_vpc" "main" {
   id = var.vpc_id
 }
 
-# S3 gateway endpoint — free, no ENI needed
+# S3 gateway endpoint - free, no ENI needed
 resource "aws_vpc_endpoint" "s3" {
   vpc_id            = var.vpc_id
   service_name      = "com.amazonaws.${var.region}.s3"
@@ -94,7 +95,7 @@ resource "aws_vpc_endpoint" "dynamodb" {
 ## Route Table Integration
 
 ```hcl
-# routes.tf — example of how route tables include gateway endpoint routes
+# routes.tf - example of how route tables include gateway endpoint routes
 # (Routes are managed by the vpc_endpoint resource, not manually)
 
 resource "aws_route_table" "private" {
@@ -118,7 +119,7 @@ resource "aws_route_table" "private" {
 ## Security: Bucket Policy to Enforce VPC Endpoint Access
 
 ```hcl
-# bucket_policy.tf — require all S3 access through VPC endpoint
+# bucket_policy.tf - require all S3 access through VPC endpoint
 resource "aws_s3_bucket_policy" "enforce_vpc_endpoint" {
   bucket = aws_s3_bucket.data.id
 
@@ -148,9 +149,9 @@ resource "aws_s3_bucket_policy" "enforce_vpc_endpoint" {
 ## Cost Analysis
 
 ```hcl
-# outputs.tf — expose endpoint IDs for cost tracking
+# outputs.tf - expose endpoint IDs for cost tracking
 output "s3_endpoint_id" {
-  description = "S3 VPC endpoint ID — use in bucket policies to enforce VPC-only access"
+  description = "S3 VPC endpoint ID - use in bucket policies to enforce VPC-only access"
   value       = aws_vpc_endpoint.s3.id
 }
 
@@ -177,7 +178,7 @@ aws ec2 describe-route-tables \
   --query 'RouteTables[].Routes[?GatewayId!=null]'
 
 # Verify S3 traffic goes through endpoint (no NAT)
-# CloudWatch: check NAT gateway bytes processed — should decrease after adding endpoint
+# CloudWatch: check NAT gateway bytes processed - should decrease after adding endpoint
 
 # Test S3 access from private subnet
 aws s3 ls s3://your-bucket/  # Should work without internet access
@@ -185,8 +186,8 @@ aws s3 ls s3://your-bucket/  # Should work without internet access
 
 ## Best Practices
 
-- Always add S3 and DynamoDB gateway endpoints to every VPC — they're free and immediately reduce NAT gateway costs for any S3/DynamoDB traffic.
-- Add gateway endpoints to all private route tables including database subnets — RDS and Lambda in database subnets often make AWS API calls that would otherwise go through NAT.
-- Use endpoint policies to restrict which S3 buckets can be accessed — this prevents a compromised instance from exfiltrating data to an attacker-controlled S3 bucket in another account.
-- When using S3 for application data, enforce bucket policies that require VPC endpoint access (`aws:SourceVpce` condition) — this ensures traffic stays within the AWS network even if a bucket policy is misconfigured.
-- After adding endpoints, monitor NAT gateway bytes processed in CloudWatch — you should see a reduction proportional to your S3/DynamoDB traffic volume.
+- Always add S3 and DynamoDB gateway endpoints to every VPC - they're free and immediately reduce NAT gateway costs for any S3/DynamoDB traffic.
+- Add gateway endpoints to all private route tables including database subnets - RDS and Lambda in database subnets often make AWS API calls that would otherwise go through NAT.
+- Use endpoint policies to restrict which S3 buckets can be accessed - this prevents a compromised instance from exfiltrating data to an attacker-controlled S3 bucket in another account.
+- When using S3 for application data, enforce bucket policies that require VPC endpoint access (`aws:SourceVpce` condition) - this ensures traffic stays within the AWS network even if a bucket policy is misconfigured.
+- After adding endpoints, monitor NAT gateway bytes processed in CloudWatch - you should see a reduction proportional to your S3/DynamoDB traffic volume.

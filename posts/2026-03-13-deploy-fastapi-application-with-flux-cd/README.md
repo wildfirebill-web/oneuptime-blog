@@ -29,6 +29,7 @@ FastAPI is served by Uvicorn, an ASGI server. For production, run multiple Uvico
 
 ```dockerfile
 # Dockerfile
+
 FROM python:3.12-slim AS base
 ENV PYTHONDONTWRITEBYTECODE=1 \
     PYTHONUNBUFFERED=1

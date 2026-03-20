@@ -90,6 +90,7 @@ For new server deployments:
 
 ```bash
 # Check your exact point release version
+
 lsb_release -a
 # Shows: Ubuntu 24.04.1 LTS
 ```

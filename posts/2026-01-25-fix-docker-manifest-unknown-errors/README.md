@@ -17,6 +17,7 @@ The error typically appears as:
 ```bash
 docker pull myimage:mytag
 # Error response from daemon: manifest for myimage:mytag not found: manifest unknown: manifest unknown
+
 ```
 
 Or with full registry paths:

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Network Teaming, nmcli, Linux, RHEL, teamd, Active-Backup, LACP, Redundancy
+Tags: Network Teaming, nmcli, Linux, RHEL, Teamd, Active-Backup, LACP, Redundancy
 
 Description: Learn how to configure a network team (teamd) on RHEL/CentOS using nmcli for link aggregation and redundancy as an alternative to traditional bonding.
 
@@ -14,6 +14,7 @@ Network teaming uses `teamd` (a userspace daemon) for flexible link aggregation.
 
 ```bash
 # Step 1: Create the team master interface
+
 nmcli connection add type team \
   ifname team0 \
   con-name team0 \
@@ -137,6 +138,6 @@ teamdctl team0 state | grep "active port"
 ## Key Takeaways
 
 - Use `nmcli connection add type team` with a JSON `team.config` to create team interfaces.
-- Ports are added with `type ethernet` and `master team0` — they have no IP of their own.
+- Ports are added with `type ethernet` and `master team0` - they have no IP of their own.
 - `teamdctl team0 state` provides real-time team state including active port and link watch results.
 - LACP requires switch-side LACP configuration; `active: true` and `fast_rate: true` for faster convergence.

@@ -47,6 +47,7 @@ Define your schema to support batch operations with clear result types.
 # Schema definition for batch mutations
 
 # Input type for creating a single user
+
 input CreateUserInput {
   email: String!
   name: String!

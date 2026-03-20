@@ -26,6 +26,7 @@ Avahi is an mDNS/DNS-SD implementation that works on local networks without any 
 
 ```bash
 # Install Avahi
+
 sudo dnf install -y avahi avahi-tools nss-mdns
 ```
 

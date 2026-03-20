@@ -69,6 +69,7 @@ After provisioning completes, a secret appears:
 kubectl get secret api-db-credentials -n production
 
 # Secret contains:
+
 # - username
 # - password
 # - endpoint

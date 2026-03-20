@@ -235,6 +235,7 @@ RESOURCE_GROUP="rg-logicapps-prod"
 LOGIC_APP_NAME="logicapp-prod-abc123"
 
 # Step 1: Deploy the Bicep template for infrastructure
+
 az deployment group create \
   --resource-group $RESOURCE_GROUP \
   --template-file infrastructure/main.bicep \

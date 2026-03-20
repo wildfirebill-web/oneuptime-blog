@@ -33,6 +33,7 @@ Port provides a Kubernetes exporter that can watch ArgoCD Application resources 
 
 ```bash
 # Add the Port Helm repo
+
 helm repo add port-labs https://port-labs.github.io/helm-charts
 helm repo update
 

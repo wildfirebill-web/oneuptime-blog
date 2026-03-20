@@ -20,6 +20,7 @@ The Prometheus receiver in the collector acts like a Prometheus server: it scrap
 
 ```yaml
 # otel-collector-config.yaml
+
 receivers:
   # Scrape Prometheus endpoints just like Prometheus would
   prometheus:

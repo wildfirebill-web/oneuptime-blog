@@ -22,6 +22,7 @@ Install the stargz-snapshotter plugin for containerd on all Kubernetes nodes.
 
 ```bash
 # Download and install stargz-snapshotter
+
 STARGZ_VERSION="v0.15.0"
 wget https://github.com/containerd/stargz-snapshotter/releases/download/${STARGZ_VERSION}/stargz-snapshotter-${STARGZ_VERSION}-linux-amd64.tar.gz
 

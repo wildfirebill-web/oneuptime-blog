@@ -8,11 +8,11 @@ Description: Understand TCP Zero Window events in packet captures, what they ind
 
 ## Introduction
 
-A TCP Zero Window event occurs when the receiver's buffer is completely full and it advertises a window size of zero to the sender. The sender must stop transmitting completely and wait for a Zero Window Probe or a Window Update from the receiver. This is TCP's emergency brake — it completely halts the sender to give the receiver time to drain its buffer.
+A TCP Zero Window event occurs when the receiver's buffer is completely full and it advertises a window size of zero to the sender. The sender must stop transmitting completely and wait for a Zero Window Probe or a Window Update from the receiver. This is TCP's emergency brake - it completely halts the sender to give the receiver time to drain its buffer.
 
 ## What Happens During Zero Window
 
-```
+```text
 Normal: Receiver window = 32KB (sender can transmit up to 32KB ahead)
 Zero Window: Receiver window = 0 (sender MUST STOP completely)
 
@@ -26,8 +26,9 @@ Sequence:
 
 ## Finding Zero Window in Wireshark
 
-```
+```text
 # Filter for Zero Window events
+
 tcp.analysis.zero_window
 
 # Filter for Zero Window Probes (sender checking if receiver recovered)

@@ -59,6 +59,7 @@ Swift comes pre-installed with Xcode. You can verify your installation by runnin
 
 ```bash
 # Check Swift version - Vapor 4 requires Swift 5.6 or later
+
 swift --version
 
 # Output should show something like:

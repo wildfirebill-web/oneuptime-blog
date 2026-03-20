@@ -33,6 +33,7 @@ Check the application logs. On Linux, check stdout/stderr logs:
 
 ```bash
 # Stream logs to see what your app is doing
+
 az webapp log tail \
     --name my-app-service \
     --resource-group my-resource-group

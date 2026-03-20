@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Linux, DAD, Duplicate Address Detection, sysctl
+Tags: IPv6, Linux, DAD, Duplicate Address Detection, Sysctl
 
 Description: Learn how to configure the dad_transmits sysctl parameter on Linux to control Duplicate Address Detection (DAD) behavior, including when to disable DAD and how to tune it for reliability.
 
@@ -10,7 +10,7 @@ Description: Learn how to configure the dad_transmits sysctl parameter on Linux 
 
 Duplicate Address Detection (DAD) is an IPv6 mechanism that verifies a new address is unique on the link before it becomes active. The kernel sends Neighbor Solicitation (NS) messages to the solicited-node multicast address and waits for a Neighbor Advertisement (NA) reply.
 
-```
+```text
 Host assigns 2001:db8::10/64
   │
   ├── Sends NS to ff02::1:ff00:10 (solicited-node multicast)
@@ -26,6 +26,7 @@ Host assigns 2001:db8::10/64
 
 ```bash
 # Check current value
+
 cat /proc/sys/net/ipv6/conf/eth0/dad_transmits
 
 # 0 = Disable DAD (skip duplicate check)
@@ -113,4 +114,4 @@ sysctl -w net.ipv6.neigh.eth0.retrans_time_ms=100
 
 ## Summary
 
-The `dad_transmits` parameter controls how many Neighbor Solicitation messages are sent during Duplicate Address Detection: `0` disables DAD (fastest but no safety), `1` (default) sends one NS probe, higher values add robustness. DAD runs when any IPv6 address is assigned — addresses stay "tentative" until DAD completes. Disable DAD only in trusted environments where address uniqueness is guaranteed by other means.
+The `dad_transmits` parameter controls how many Neighbor Solicitation messages are sent during Duplicate Address Detection: `0` disables DAD (fastest but no safety), `1` (default) sends one NS probe, higher values add robustness. DAD runs when any IPv6 address is assigned - addresses stay "tentative" until DAD completes. Disable DAD only in trusted environments where address uniqueness is guaranteed by other means.

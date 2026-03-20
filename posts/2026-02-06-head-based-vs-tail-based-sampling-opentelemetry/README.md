@@ -44,6 +44,7 @@ The decision propagates through the W3C `traceparent` header. When a downstream 
 
 ```python
 # tracing_setup.py
+
 from opentelemetry import trace
 from opentelemetry.sdk.trace import TracerProvider
 from opentelemetry.sdk.trace.sampling import (

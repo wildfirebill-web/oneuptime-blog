@@ -53,6 +53,7 @@ For automated deployments, add the partition layout to your Kickstart file:
 
 ```bash
 # Kickstart partitioning section for secure layout
+
 # Clear existing partitions
 clearpart --all --initlabel
 

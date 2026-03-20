@@ -28,6 +28,7 @@ Create an S3 bucket and upload your Kubernetes manifests.
 
 ```bash
 # Create an S3 bucket for Flux manifests
+
 aws s3 mb s3://my-app-flux-manifests --region us-east-1
 
 # Upload manifests to the bucket

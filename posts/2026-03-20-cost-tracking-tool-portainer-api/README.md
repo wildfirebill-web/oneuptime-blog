@@ -16,6 +16,7 @@ The Portainer API provides programmatic access to all container, stack, and envi
 
 ```bash
 # Get a JWT token
+
 TOKEN=$(curl -s -X POST   https://portainer.example.com/api/auth   -H "Content-Type: application/json"   -d '{"username":"admin","password":"your-password"}'   | jq -r '.jwt')
 
 echo "Token: ${TOKEN}"

@@ -24,6 +24,7 @@ Spanner offers several predefined multi-region configurations. You can see them 
 
 ```bash
 # List all available instance configurations, including multi-region options
+
 gcloud spanner instance-configs list --filter="name:nam OR name:eur OR name:asia"
 ```
 

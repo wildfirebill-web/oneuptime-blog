@@ -85,6 +85,7 @@ The gap between the high and low thresholds determines how much space is freed i
 
 ```yaml
 # Large gap - aggressive cleanup when triggered
+
 machine:
   kubelet:
     extraConfig:

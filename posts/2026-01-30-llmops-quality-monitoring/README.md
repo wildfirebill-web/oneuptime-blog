@@ -61,6 +61,7 @@ Measures how well the response addresses the user's query.
 
 ```python
 # relevance_evaluator.py
+
 # Evaluates how relevant an LLM response is to the original query
 # Uses embedding similarity and keyword matching for comprehensive scoring
 

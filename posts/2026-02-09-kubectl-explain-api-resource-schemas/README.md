@@ -16,6 +16,7 @@ Query resource schemas with the resource type name:
 
 ```bash
 # Explain pods
+
 kubectl explain pods
 
 # Explain deployments

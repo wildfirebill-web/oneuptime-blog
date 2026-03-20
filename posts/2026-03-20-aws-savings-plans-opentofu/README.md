@@ -55,6 +55,7 @@ Before purchasing, analyze your current On-Demand spend:
 
 ```bash
 # Use AWS Cost Explorer API (or console) to get recommendations
+
 aws ce get-savings-plans-purchase-recommendation \
   --savings-plans-type COMPUTE_SP \
   --term-in-years ONE_YEAR \

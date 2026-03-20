@@ -24,6 +24,7 @@ Add the postgres_exporter as a sidecar to your PostgreSQL StatefulSet:
 
 ```yaml
 # postgres-with-exporter.yaml
+
 apiVersion: apps/v1
 kind: StatefulSet
 metadata:

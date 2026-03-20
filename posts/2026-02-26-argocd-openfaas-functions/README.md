@@ -18,6 +18,7 @@ OpenFaaS has two namespaces: `openfaas` for the core platform and `openfaas-fn` 
 
 ```yaml
 # openfaas-platform-app.yaml
+
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:

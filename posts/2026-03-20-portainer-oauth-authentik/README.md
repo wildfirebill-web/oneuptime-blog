@@ -1,4 +1,4 @@
-# How to Fix OAuth Login Issues with Authentik in Portainer
+# How to Fix OAuth Login Issues with Authentik in Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -39,6 +39,7 @@ Authentik is a popular self-hosted identity provider that many teams use for SSO
 
 ```bash
 # Authentik exposes OpenID Connect discovery endpoint
+
 curl https://authentik.yourdomain.com/application/o/portainer/.well-known/openid-configuration | jq '{
   authorization_endpoint,
   token_endpoint,
@@ -72,7 +73,7 @@ In Portainer BE (Business Edition):
 
 The most common OAuth error:
 
-```
+```text
 Error: redirect_uri_mismatch
 The redirect URI in the request did not match the authorized redirect URIs.
 ```
@@ -113,7 +114,7 @@ Without this, Portainer generates `http://` redirect URLs even when accessed via
 docker logs portainer 2>&1 | grep -i "token\|jwt\|invalid\|oauth" | tail -20
 
 # Common issue: clock skew between Portainer and Authentik
-# JWT tokens have 5-minute tolerance — if clocks differ more, tokens are rejected
+# JWT tokens have 5-minute tolerance - if clocks differ more, tokens are rejected
 
 # Sync time on Portainer host
 sudo timedatectl set-ntp true

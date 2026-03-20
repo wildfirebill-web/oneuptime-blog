@@ -40,6 +40,7 @@ Let me start with a practical example - a Cloud Function that performs text sent
 
 ```python
 # main.py - Cloud Function for sentiment analysis
+
 import functions_framework
 import json
 

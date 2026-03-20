@@ -29,6 +29,7 @@ Here is a minimal Kubernetes deployment for a self-hosted stack:
 
 ```yaml
 # OTel Collector deployment that routes to self-hosted backends
+
 # Central gateway that receives OTLP and fans out to storage
 receivers:
   otlp:

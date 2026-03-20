@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: portainer, upgrade, business-edition, migration, license
+Tags: Portainer, Upgrade, Business-edition, Migration, License
 
 Description: A step-by-step guide to upgrading from Portainer Community Edition to Portainer Business Edition, preserving all your data and configuration.
 
@@ -22,6 +22,7 @@ Before upgrading, create a backup of your Portainer data volume:
 
 ```bash
 # Create a backup of the Portainer data volume
+
 docker run --rm \
   -v portainer_data:/data \
   -v $(pwd):/backup \

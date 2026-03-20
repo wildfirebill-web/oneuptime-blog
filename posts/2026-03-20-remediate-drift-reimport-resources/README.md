@@ -21,6 +21,7 @@ Re-importing is the appropriate drift remediation when a resource's state entry 
 
 ```bash
 # Step 1: Verify the resource exists in the cloud
+
 aws ec2 describe-instances --instance-ids i-0abc123def456789
 
 # Step 2: Check current state for the resource
@@ -41,7 +42,7 @@ tofu plan
 ## Declarative Import with import Block (OpenTofu 1.5+)
 
 ```hcl
-# import.tf — declare imports in configuration
+# import.tf - declare imports in configuration
 import {
   to = aws_instance.web
   id = "i-0abc123def456789"
@@ -63,7 +64,7 @@ import {
 tofu plan    # Shows what will be imported
 tofu apply   # Performs the imports
 
-# Remove import blocks after apply — they are one-time operations
+# Remove import blocks after apply - they are one-time operations
 ```
 
 ## Generating Configuration from an Existing Resource
@@ -87,7 +88,7 @@ If you lost an entire state file, script the imports:
 
 ```bash
 #!/bin/bash
-# rebuild-state.sh — re-import after state loss
+# rebuild-state.sh - re-import after state loss
 
 # Import all EC2 instances with specific tag
 aws ec2 describe-instances \

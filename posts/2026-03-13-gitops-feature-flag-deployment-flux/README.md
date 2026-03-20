@@ -29,6 +29,7 @@ Store feature flags as a ConfigMap in your repository:
 
 ```yaml
 # apps/my-app/base/feature-flags.yaml
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

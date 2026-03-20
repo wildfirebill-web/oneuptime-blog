@@ -27,6 +27,7 @@ First, push a Helm chart to your ACR instance as an OCI artifact.
 
 ```bash
 # Log in to ACR with the Azure CLI
+
 az acr login --name myacr
 
 # Package your Helm chart

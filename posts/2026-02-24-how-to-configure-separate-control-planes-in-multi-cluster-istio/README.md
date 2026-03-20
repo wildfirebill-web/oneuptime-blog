@@ -78,6 +78,7 @@ Each cluster gets a full Istio installation with the `default` profile:
 
 ```yaml
 # cluster1-config.yaml
+
 apiVersion: install.istio.io/v1alpha1
 kind: IstioOperator
 metadata:

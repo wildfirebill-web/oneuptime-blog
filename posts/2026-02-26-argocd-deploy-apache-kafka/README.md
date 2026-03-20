@@ -35,6 +35,7 @@ Create an ArgoCD Application for the Strimzi operator:
 
 ```yaml
 # strimzi-operator-app.yaml
+
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:

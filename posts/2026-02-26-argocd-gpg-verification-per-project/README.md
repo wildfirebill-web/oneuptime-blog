@@ -170,6 +170,7 @@ Import all keys once into ArgoCD. They are available to all projects:
 
 ```yaml
 # argocd-gpg-keys-cm.yaml - all organization keys
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

@@ -18,6 +18,7 @@ Static IPs on macOS WiFi are useful for:
 
 ```bash
 # View current IP, gateway, and DNS via command line
+
 ifconfig en0
 # en0 is typically the WiFi adapter on Macs
 

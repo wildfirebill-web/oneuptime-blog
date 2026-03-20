@@ -53,6 +53,7 @@ Build minimal images to reduce attack surface:
 
 ```dockerfile
 # Multi-stage build for minimal production image
+
 FROM docker.io/library/node:20 AS builder
 WORKDIR /app
 COPY package*.json ./

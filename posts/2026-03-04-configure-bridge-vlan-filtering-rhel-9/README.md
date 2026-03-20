@@ -31,6 +31,7 @@ graph TD
 
 ```bash
 # Create the bridge
+
 nmcli connection add type bridge con-name br0 ifname br0
 
 # Enable VLAN filtering on the bridge

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Docker, Dockerfile, Static Website, NGINX, Apache, DevOps, Web Hosting
+Tags: Docker, Dockerfile, Static Website, Nginx, Apache, DevOps, Web Hosting
 
 Description: Step-by-step guide to creating optimized Dockerfiles for static websites using Nginx, Apache, and multi-stage builds.
 
@@ -20,6 +20,7 @@ A minimal Dockerfile using the official Nginx image:
 
 ```dockerfile
 # Minimal static site Dockerfile
+
 FROM nginx:alpine
 
 # Copy static files to Nginx's default serving directory

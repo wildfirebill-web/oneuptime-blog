@@ -26,6 +26,7 @@ When a file has the wrong label, the service trying to access it gets an SELinux
 
 ```bash
 # Restore the correct label on a single file
+
 sudo restorecon -v /var/www/html/index.html
 ```
 

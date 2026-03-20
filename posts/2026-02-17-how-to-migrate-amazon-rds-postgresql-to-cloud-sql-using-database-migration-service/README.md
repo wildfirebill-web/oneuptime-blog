@@ -43,6 +43,7 @@ If wal_level is not set to logical, update the RDS parameter group:
 
 ```hcl
 # rds-params.tf
+
 # Update RDS parameter group for logical replication
 
 resource "aws_db_parameter_group" "migration_ready" {

@@ -39,6 +39,7 @@ graph TD
 
 ```bash
 # Control plane NSG - only required ports
+
 az network nsg rule create \
   --resource-group k8s-rg \
   --nsg-name control-plane-nsg \

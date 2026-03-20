@@ -1,8 +1,8 @@
-# How to Deploy DaemonSets in Portainer
+# How to Deploy DaemonSets in Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Kubernetes, DaemonSets, DevOps
+Tags: Portainer, Kubernetes, DaemonSet, DevOps
 
 Description: Learn how to deploy and manage Kubernetes DaemonSets in Portainer for running workloads on every cluster node.
 
@@ -199,7 +199,7 @@ spec:
 2. DaemonSets appear in the applications list with type "DaemonSet"
 3. The application shows the desired/ready pod count:
 
-```
+```text
 NAME            TYPE         PODS     NAMESPACE    AGE
 node-exporter   DaemonSet    5/5      monitoring   2d
 fluentd         DaemonSet    5/5      logging      5d
@@ -211,6 +211,7 @@ Click on a DaemonSet to see individual pod placement per node.
 
 ```bash
 # View DaemonSet details
+
 kubectl get daemonset -n monitoring
 
 # Output:

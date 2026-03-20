@@ -10,7 +10,7 @@ Description: Learn how to configure IPv6 temporary addresses (privacy extensions
 
 IPv6 privacy extensions (RFC 4941) generate random, temporary addresses that change periodically. This prevents external services from tracking a host based on a stable IPv6 address derived from its MAC address.
 
-```
+```text
 Stable address:   2001:db8::1234:5678:9abc:def0/64  (EUI-64, permanent)
 Temporary address: 2001:db8::a1b2:c3d4:e5f6:7890/64  (random, expires)
 ```
@@ -19,6 +19,7 @@ Temporary address: 2001:db8::a1b2:c3d4:e5f6:7890/64  (random, expires)
 
 ```bash
 # use_tempaddr values:
+
 # -1 = Disabled (kernel default on some distros)
 #  0 = Disabled
 #  1 = Generate temporary addresses, prefer public (stable) for outgoing

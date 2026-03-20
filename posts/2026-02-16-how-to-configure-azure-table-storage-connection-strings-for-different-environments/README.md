@@ -113,6 +113,7 @@ For local development, use a `.env` file (add `.env` to your `.gitignore`):
 
 ```bash
 # .env (DO NOT commit this file)
+
 AZURE_TABLE_STORAGE_CONNECTION_STRING="UseDevelopmentStorage=true"
 ```
 

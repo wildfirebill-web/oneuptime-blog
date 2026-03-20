@@ -22,6 +22,7 @@ The recommended approach is using the official Tor Project repository or the Fla
 
 ```bash
 # Add the Tor Project's GPG key
+
 wget -qO- https://deb.torproject.org/torproject.org/A3C4F0F979CAA22CDBA8F512EE8CBC9E886DDD89.asc | gpg --dearmor | sudo tee /usr/share/keyrings/tor-archive-keyring.gpg >/dev/null
 
 # Add the Tor repository

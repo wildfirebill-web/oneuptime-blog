@@ -72,6 +72,7 @@ Wait for all providers to become healthy:
 ```bash
 kubectl get providers
 # NAME             INSTALLED   HEALTHY   PACKAGE                                              AGE
+
 # provider-aws     True        True      xpkg.upbound.io/upbound/provider-family-aws:v1.2.0   2m
 # provider-gcp     True        True      xpkg.upbound.io/upbound/provider-family-gcp:v1.2.0   2m
 # provider-azure   True        True      xpkg.upbound.io/upbound/provider-family-azure:v1.2.0 2m

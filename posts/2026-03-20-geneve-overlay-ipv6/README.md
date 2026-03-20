@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Geneve, IPv6, Overlay, Linux, OVN, Networking
+Tags: GENEVE, IPv6, Overlay, Linux, OVN, Networking
 
 Description: Configure Geneve overlay tunnels over IPv6 on Linux including manual setup, OVN integration, and performance comparison with VXLAN.
 
@@ -22,6 +22,7 @@ Geneve (Generic Network Virtualization Encapsulation, RFC 8926) is a next-genera
 
 ```bash
 # Load the Geneve kernel module
+
 modprobe geneve
 
 # Create Geneve tunnel over IPv6
@@ -97,7 +98,7 @@ ovs-vsctl show | grep -A 3 tun
 
 ## Geneve Overhead Calculation
 
-```
+```text
 Geneve over IPv6 encapsulation overhead:
 
   Outer Ethernet:  14 bytes (L2 frame)
@@ -147,4 +148,4 @@ ovs-vsctl show | grep -E 'Port|options'
 
 ## Conclusion
 
-Geneve over IPv6 provides a flexible overlay with extensible metadata support via TLV options — critical for OVN's per-flow context. The Linux kernel supports Geneve natively with `ip link add ... type geneve`. UDP port 6081 is the standard Geneve port. Overhead is 70 bytes for base Geneve over IPv6, slightly more than VXLAN's 62 bytes, but the TLV extensions enable richer network virtualization semantics. OVN deployments automatically use IPv6 underlay when `ovn-encap-ip` is set to an IPv6 address.
+Geneve over IPv6 provides a flexible overlay with extensible metadata support via TLV options - critical for OVN's per-flow context. The Linux kernel supports Geneve natively with `ip link add ... type geneve`. UDP port 6081 is the standard Geneve port. Overhead is 70 bytes for base Geneve over IPv6, slightly more than VXLAN's 62 bytes, but the TLV extensions enable richer network virtualization semantics. OVN deployments automatically use IPv6 underlay when `ovn-encap-ip` is set to an IPv6 address.

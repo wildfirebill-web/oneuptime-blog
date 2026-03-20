@@ -24,6 +24,7 @@ Before configuring predictive autoscaling, you need a managed instance group tha
 
 ```bash
 # Check your existing managed instance group configuration
+
 gcloud compute instance-groups managed describe my-instance-group \
   --zone=us-central1-a \
   --format="yaml(autoscaler)"

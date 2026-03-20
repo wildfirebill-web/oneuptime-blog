@@ -25,7 +25,7 @@ public class MulticastMember {
         MulticastSocket socket = new MulticastSocket(port);
         InetAddress group = InetAddress.getByName(groupAddress);
         
-        // Join the multicast group — OS sends IGMP Join
+        // Join the multicast group - OS sends IGMP Join
         socket.joinGroup(group);
         System.out.println("Joined group: " + groupAddress);
         
@@ -37,7 +37,7 @@ public class MulticastMember {
             System.out.println("Received: " + new String(packet.getData(), 0, packet.getLength()));
         }
         
-        // Leave the group — OS sends IGMP Leave
+        // Leave the group - OS sends IGMP Leave
         socket.leaveGroup(group);
         System.out.println("Left group: " + groupAddress);
         
@@ -93,7 +93,7 @@ public class MultiGroupMember {
                     new String(pkt.getData(), 0, pkt.getLength())
                 );
             } catch (SocketTimeoutException e) {
-                // Timeout — check duration again
+                // Timeout - check duration again
             }
         }
         
@@ -196,4 +196,4 @@ Runtime.getRuntime().addShutdownHook(new Thread(() -> {
 
 ## Conclusion
 
-Properly managing multicast group membership — joining on startup and leaving on shutdown — ensures clean IGMP signaling and avoids unnecessary multicast traffic on your network. Always specify the network interface on multi-homed hosts and use a shutdown hook to leave groups gracefully.
+Properly managing multicast group membership - joining on startup and leaving on shutdown - ensures clean IGMP signaling and avoids unnecessary multicast traffic on your network. Always specify the network interface on multi-homed hosts and use a shutdown hook to leave groups gracefully.

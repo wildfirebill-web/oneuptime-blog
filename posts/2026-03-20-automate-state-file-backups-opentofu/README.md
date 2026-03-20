@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, State Management, Backups, S3, Disaster Recovery
+Tags: OpenTofu, Terraform, State Management, Backup, S3, Disaster Recovery
 
 Description: Learn how to automate OpenTofu state file backups using S3 versioning, cross-region replication, and scheduled backup scripts to protect against state corruption and accidental deletion.
 
 ## Introduction
 
-State files are critical infrastructure. Losing a state file means OpenTofu no longer knows what it manages, and recovery requires manually re-importing every resource. Automated backups — with S3 versioning, cross-region replication, and scheduled snapshots — protect against this scenario.
+State files are critical infrastructure. Losing a state file means OpenTofu no longer knows what it manages, and recovery requires manually re-importing every resource. Automated backups - with S3 versioning, cross-region replication, and scheduled snapshots - protect against this scenario.
 
 ## S3 Versioning as Primary Backup
 
@@ -16,6 +16,7 @@ Enable S3 versioning on your state bucket so every state write creates a recover
 
 ```hcl
 # bootstrap/state-backend.tf
+
 resource "aws_s3_bucket" "state" {
   bucket = "my-company-tofu-state"
 

@@ -10,6 +10,7 @@ Description: Learn how to connect to remote SSH servers over IPv6, including glo
 
 ```bash
 # Connect using IPv6 address directly
+
 ssh user@2001:db8::10
 
 # With explicit port
@@ -24,7 +25,7 @@ ssh -v user@2001:db8::10
 
 ## SSH Client Configuration (~/.ssh/config)
 
-```
+```text
 # ~/.ssh/config
 
 # Use IPv6 for all connections

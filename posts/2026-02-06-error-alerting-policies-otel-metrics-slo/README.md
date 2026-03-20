@@ -14,6 +14,7 @@ First, set up the OpenTelemetry Collector to generate error rate metrics from sp
 
 ```yaml
 # otel-collector-config.yaml
+
 receivers:
   otlp:
     protocols:

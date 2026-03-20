@@ -58,6 +58,7 @@ metrics/
 
 ```yaml
 # metrics/thanos/Chart.yaml
+
 apiVersion: v2
 name: thanos
 description: Wrapper chart for Thanos

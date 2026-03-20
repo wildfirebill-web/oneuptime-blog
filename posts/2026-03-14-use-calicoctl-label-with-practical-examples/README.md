@@ -29,6 +29,7 @@ This guide walks through practical examples of using `calicoctl label` for commo
 
 ```bash
 # List available Calico nodes
+
 calicoctl get nodes -o wide
 
 # Add a label to a node

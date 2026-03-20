@@ -22,6 +22,7 @@ The ID token contains claims like the user's UID, email, display name, and any c
 
 ```bash
 # Install the Firebase Admin SDK
+
 npm install express firebase-admin
 ```
 

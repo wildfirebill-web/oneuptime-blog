@@ -1,4 +1,4 @@
-# How to Configure the Google Cloud Provider in OpenTofu
+# How to Configure the Google Cloud Provider in OpenTofu - Google Cloud
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -56,6 +56,7 @@ provider "google" {
 }
 
 # Use specific region provider
+
 resource "google_compute_network" "vpc_us" {
   provider = google.us_central
   name     = "vpc-us"

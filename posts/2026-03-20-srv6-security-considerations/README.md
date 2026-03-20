@@ -16,7 +16,7 @@ SRv6's source routing capability introduces security concerns: a malicious sourc
 
 An external host crafts a packet with a crafted SRH pointing to internal End.DX4 or End.DT6 SIDs:
 
-```
+```text
 Attack:
   External packet:
     dst=5f00:internal:1:0:e000::  (End.DT6 for internal VPN)
@@ -37,6 +37,7 @@ SRH segment lists expose network topology (SID addresses = node addresses).
 
 ```bash
 # Block SRv6 packets from external sources at the network boundary
+
 # Only allow SRH packets from trusted internal sources
 
 # ip6tables on edge router
@@ -117,7 +118,7 @@ ip6tables -A INPUT \
 
 ## Mitigation 4: Infrastructure ACL (iACL)
 
-```
+```text
 ! Cisco IOS-XR infrastructure ACL
 ipv6 access-list INFRA_ACL
   remark Block SRH to internal infrastructure SIDs from external

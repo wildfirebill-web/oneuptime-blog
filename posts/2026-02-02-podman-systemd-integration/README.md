@@ -52,6 +52,7 @@ For Fedora, RHEL, or CentOS:
 
 ```bash
 # Install Podman on Fedora/RHEL/CentOS
+
 sudo dnf install -y podman
 
 # Verify the installation

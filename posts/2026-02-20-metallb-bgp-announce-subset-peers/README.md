@@ -44,6 +44,7 @@ Start by creating BGPPeer resources for each upstream router.
 
 ```yaml
 # bgp-peers.yaml
+
 # Defines two upstream routers: one for internet traffic, one for internal.
 apiVersion: metallb.io/v1beta2
 kind: BGPPeer

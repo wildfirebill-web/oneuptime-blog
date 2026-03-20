@@ -36,6 +36,7 @@ Portainer lists all available StorageClasses with their provisioner, reclaim pol
 
 ```bash
 # List all storage classes
+
 kubectl get storageclasses
 
 # Get detailed information about a storage class

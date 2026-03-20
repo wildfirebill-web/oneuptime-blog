@@ -33,6 +33,7 @@ Each domain needs its own TLS certificate stored as a Kubernetes secret in the `
 
 ```bash
 # Certificate for api.example.com
+
 kubectl create secret tls api-tls \
   --cert=api-fullchain.pem \
   --key=api-privkey.pem \

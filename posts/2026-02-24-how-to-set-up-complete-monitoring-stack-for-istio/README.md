@@ -116,6 +116,7 @@ If you used kube-prometheus-stack, Grafana is already installed. Import the Isti
 
 ```bash
 # Download Istio dashboards
+
 DASHBOARDS=(
   "7639"   # Istio Mesh Dashboard
   "7636"   # Istio Service Dashboard

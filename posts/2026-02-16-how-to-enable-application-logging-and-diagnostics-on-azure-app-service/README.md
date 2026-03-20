@@ -44,6 +44,7 @@ Here is how to enable application logging using the CLI:
 
 ```bash
 # Enable application logging to the file system with Information level
+
 az webapp log config \
     --resource-group my-resource-group \
     --name my-app-service \

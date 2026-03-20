@@ -119,6 +119,7 @@ resource "aws_sfn_state_machine" "order_processing" {
 
 ```hcl
 # Snippet for a parallel execution state
+
 # Add this as a state in the States object above
 locals {
   parallel_state = {
@@ -172,4 +173,4 @@ tofu apply tfplan
 
 ## Summary
 
-AWS Step Functions provide visual, orchestrated workflows for distributed applications. OpenTofu manages state machine definitions, IAM roles, and logging configuration as code — making complex multi-step workflows reproducible and version controlled.
+AWS Step Functions provide visual, orchestrated workflows for distributed applications. OpenTofu manages state machine definitions, IAM roles, and logging configuration as code - making complex multi-step workflows reproducible and version controlled.

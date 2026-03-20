@@ -28,6 +28,7 @@ Before setting up federation, you need at least two Talos Linux clusters running
 
 ```bash
 # Verify both clusters are healthy
+
 export KUBECONFIG=~/talos-clusters/cluster-a/kubeconfig
 kubectl get nodes
 

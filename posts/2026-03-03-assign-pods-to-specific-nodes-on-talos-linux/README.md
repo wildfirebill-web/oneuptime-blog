@@ -53,6 +53,7 @@ First, make sure your Talos nodes have the right labels configured:
 
 ```yaml
 # In the Talos machine config for GPU nodes
+
 machine:
   nodeLabels:
     hardware-type: gpu

@@ -30,6 +30,7 @@ Store the LDAP bind password as a Kubernetes Secret. Use SOPS to encrypt it befo
 
 ```yaml
 # clusters/my-cluster/grafana/ldap-secret.yaml
+
 apiVersion: v1
 kind: Secret
 metadata:

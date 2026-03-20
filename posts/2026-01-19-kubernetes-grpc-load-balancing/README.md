@@ -40,6 +40,7 @@ flowchart TD
 
 ```yaml
 # grpc-headless-service.yaml
+
 apiVersion: v1
 kind: Service
 metadata:

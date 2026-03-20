@@ -29,6 +29,7 @@ Build Rotel from source or use the pre-built Docker image:
 
 ```bash
 # Using Docker
+
 docker pull rotel/rotel:latest
 
 # Or build from source

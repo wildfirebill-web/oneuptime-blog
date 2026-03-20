@@ -20,6 +20,7 @@ CloudWatch Log Metric Filters parse log entries and turn them into custom CloudW
 
 ```hcl
 # Count ERROR-level log entries as a CloudWatch metric
+
 resource "aws_cloudwatch_log_metric_filter" "error_count" {
   name           = "${var.project_name}-error-count"
   log_group_name = var.log_group_name
@@ -155,4 +156,4 @@ aws cloudwatch get-metric-statistics \
 
 ## Conclusion
 
-Log Metric Filters are a zero-code approach to creating operational metrics from existing log output. Use `default_value = "0"` to ensure metrics are emitted even when no log events match—this prevents CloudWatch alarms from going into `INSUFFICIENT_DATA` state during quiet periods. For JSON-structured logs, reference field values directly in the `value` field to extract numeric measurements like latency, status codes, or payload sizes.
+Log Metric Filters are a zero-code approach to creating operational metrics from existing log output. Use `default_value = "0"` to ensure metrics are emitted even when no log events match-this prevents CloudWatch alarms from going into `INSUFFICIENT_DATA` state during quiet periods. For JSON-structured logs, reference field values directly in the `value` field to extract numeric measurements like latency, status codes, or payload sizes.

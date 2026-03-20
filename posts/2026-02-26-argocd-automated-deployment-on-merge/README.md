@@ -85,6 +85,7 @@ The default 3-minute polling interval means merges can take up to 3 minutes to d
 
 ```bash
 # Configure webhook in your GitHub repo settings
+
 # URL: https://argocd.example.com/api/webhook
 # Content type: application/json
 # Secret: <webhook-secret>
@@ -309,7 +310,7 @@ syncPolicy:
   - RespectIgnoreDifferences=true
 ```
 
-### Resource Hooks for Pre/Post Deployment
+Resource Hooks for Pre/Post Deployment
 
 ```yaml
 # pre-sync-check.yaml

@@ -16,6 +16,7 @@ Here is what a broken configuration looks like:
 
 ```yaml
 # collector-config.yaml - THIS WILL NOT WORK for external traffic
+
 receivers:
   otlp:
     protocols:

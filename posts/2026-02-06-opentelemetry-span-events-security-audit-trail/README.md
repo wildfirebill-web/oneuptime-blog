@@ -25,6 +25,7 @@ Before writing code, define a consistent schema for your audit events. Here is o
 
 ```python
 # audit_schema.py
+
 # Consistent attribute names for audit events
 
 AUDIT_EVENT_NAME = "audit.action"

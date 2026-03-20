@@ -125,6 +125,7 @@ Using the AWS CLI:
 
 ```bash
 # First, add permission for S3 to invoke the Lambda function
+
 aws lambda add-permission \
   --function-name s3-file-processor \
   --principal s3.amazonaws.com \

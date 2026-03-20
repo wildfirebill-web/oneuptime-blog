@@ -315,6 +315,7 @@ Configure your OpenTelemetry Collector to handle the telemetry from your Service
 
 ```yaml
 # otel-collector-config.yaml
+
 receivers:
   otlp:
     protocols:

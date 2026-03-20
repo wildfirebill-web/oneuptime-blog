@@ -1,4 +1,4 @@
-# How to Set Up Authentik as an OAuth Provider for Portainer
+# How to Set Up Authentik as an OAuth Provider for Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -24,7 +24,7 @@ Authentik is a modern, feature-rich self-hosted identity provider. Its web-based
 
 Configure the provider:
 
-```
+```text
 Name:                  Portainer OIDC Provider
 Authorization Flow:    default-provider-authorization-explicit-consent
 
@@ -57,7 +57,7 @@ Advanced Settings:
 1. Go to **Applications** → **Applications**
 2. Click **Create**
 
-```
+```text
 Name:         Portainer
 Slug:         portainer
 Provider:     Portainer OIDC Provider (the one just created)
@@ -73,6 +73,7 @@ UI Settings:
 
 ```bash
 # Authentik OIDC discovery URL format:
+
 # https://authentik.example.com/application/o/{slug}/.well-known/openid-configuration
 
 curl -s "https://authentik.example.com/application/o/portainer/.well-known/openid-configuration" \
@@ -87,7 +88,7 @@ print('UserInfo:', d['userinfo_endpoint'])
 ```
 
 Authentik's endpoints follow this pattern:
-```
+```text
 Authorization URL: https://authentik.example.com/application/o/portainer/authorize/
 Access Token URL:  https://authentik.example.com/application/o/portainer/token/
 Resource URL:      https://authentik.example.com/application/o/portainer/userinfo/
@@ -131,7 +132,7 @@ In Authentik, bind a policy to the Portainer application to control who can acce
 2. Click **Bind existing policy** or **Create and bind policy**
 3. Add a group policy:
 
-```
+```text
 Policy:      Group Membership
 Group:       portainer-users  (Authentik group)
 ```

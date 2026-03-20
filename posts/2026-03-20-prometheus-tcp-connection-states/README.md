@@ -14,6 +14,7 @@ TCP connection state monitoring reveals socket exhaustion, server overload, and 
 
 ```bash
 # Enable the netstat collector (enabled by default in newer versions)
+
 node_exporter \
   --web.listen-address=10.0.0.5:9100 \
   --collector.netstat

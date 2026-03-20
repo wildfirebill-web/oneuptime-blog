@@ -127,6 +127,7 @@ class InvertedIndex:
         return result
 
 # Example usage
+
 index = InvertedIndex()
 index.add_document(1, "Machine learning models for classification")
 index.add_document(2, "Deep learning neural networks")

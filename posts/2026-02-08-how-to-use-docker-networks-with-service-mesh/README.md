@@ -43,6 +43,7 @@ Create a dedicated network for the mesh:
 
 ```bash
 # Create a bridge network for the service mesh
+
 docker network create \
   --driver bridge \
   --subnet 10.5.0.0/24 \

@@ -18,6 +18,7 @@ If you are transitioning from Docker to Podman, your existing secret management 
 
 ```bash
 # Docker                              # Podman (equivalent)
+
 docker secret create name file    ->  podman secret create name file
 docker secret ls                  ->  podman secret ls
 docker secret inspect name        ->  podman secret inspect name

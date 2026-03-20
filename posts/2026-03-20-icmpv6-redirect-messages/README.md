@@ -12,7 +12,7 @@ ICMPv6 Redirect (Type 137) is sent by a router to inform a host that a better fi
 
 ## Redirect Message Format
 
-```
+```text
 ICMPv6 Redirect (Type 137):
 
  0                   1                   2                   3
@@ -40,7 +40,7 @@ IPv6 Header:
 
 ## When Redirects Are Sent
 
-```
+```text
 Redirect conditions (RFC 4861 Section 8.2):
 
 A router MUST send a Redirect when ALL of the following are true:
@@ -78,6 +78,7 @@ Example scenario:
 
 ```bash
 # Check the IPv6 destination cache (shows cached redirects)
+
 ip -6 route show cache | grep redirect
 
 # View all redirect entries (next-hop is different from default GW)

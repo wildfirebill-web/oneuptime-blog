@@ -41,6 +41,7 @@ Run `ansible-pull` on any host that has Ansible installed.
 
 ```bash
 # Basic ansible-pull command
+
 ansible-pull -U https://github.com/yourorg/ansible-configs.git
 ```
 

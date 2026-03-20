@@ -215,6 +215,7 @@ From a whitelisted IP:
 ```bash
 curl -s -o /dev/null -w "%{http_code}" https://admin.example.com/dashboard
 # Expected: 200
+
 ```
 
 From a non-whitelisted IP:

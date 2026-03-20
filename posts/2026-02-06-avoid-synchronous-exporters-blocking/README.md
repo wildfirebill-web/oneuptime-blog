@@ -68,6 +68,7 @@ from opentelemetry.sdk.trace.export import SimpleSpanProcessor
 from opentelemetry.exporter.otlp.proto.http.trace_exporter import OTLPSpanExporter
 
 # This blocks on every span
+
 provider.add_span_processor(SimpleSpanProcessor(OTLPSpanExporter()))
 ```
 

@@ -38,6 +38,7 @@ calicoctl ipam check
 
 ```bash
 # First, identify leaked allocations
+
 calicoctl ipam check --show-all-ips 2>/dev/null | grep "leak\|no workload"
 
 # Release leaked IPs

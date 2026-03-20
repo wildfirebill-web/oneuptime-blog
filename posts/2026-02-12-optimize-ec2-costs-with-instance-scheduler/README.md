@@ -40,6 +40,7 @@ Launch the Instance Scheduler stack using the AWS-provided template:
 
 ```bash
 # Deploy the Instance Scheduler stack
+
 aws cloudformation create-stack \
     --stack-name instance-scheduler \
     --template-url https://s3.amazonaws.com/solutions-reference/instance-scheduler-on-aws/latest/instance-scheduler-on-aws.template \

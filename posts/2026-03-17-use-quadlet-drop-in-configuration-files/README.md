@@ -24,6 +24,7 @@ If your Quadlet file is `webapp.container`, the generated service is `webapp.ser
 
 ```bash
 # Create the drop-in directory
+
 mkdir -p ~/.config/systemd/user/webapp.service.d/
 ```
 

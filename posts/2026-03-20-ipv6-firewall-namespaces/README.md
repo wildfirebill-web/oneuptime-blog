@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Network Namespaces, IPv6, ip6tables, nftables, Security
+Tags: Network Namespaces, IPv6, Ip6tables, nftables, Security
 
 Description: Use network namespaces as isolated test environments to validate ip6tables and nftables IPv6 firewall rules safely.
 
@@ -28,6 +28,7 @@ Network namespaces on Linux provide isolated network stacks. Each namespace has 
 
 ```bash
 # Create a namespace
+
 sudo ip netns add myns
 
 # List namespaces

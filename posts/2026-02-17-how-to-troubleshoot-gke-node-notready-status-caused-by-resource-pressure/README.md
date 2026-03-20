@@ -18,6 +18,7 @@ Start by checking the node status:
 
 ```bash
 # List all nodes and their status
+
 kubectl get nodes
 ```
 

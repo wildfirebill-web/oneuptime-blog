@@ -16,6 +16,7 @@ The sysstat package collects system performance data every 10 minutes by default
 
 ```bash
 # Install and enable sysstat
+
 sudo dnf install sysstat
 sudo systemctl enable --now sysstat
 

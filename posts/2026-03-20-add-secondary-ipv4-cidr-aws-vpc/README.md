@@ -16,6 +16,7 @@ When an AWS VPC's primary CIDR block runs out of address space, you can add up t
 VPC_ID=vpc-0abc123def456
 
 # Add a secondary /20 CIDR block to expand the VPC
+
 aws ec2 associate-vpc-cidr-block \
   --vpc-id $VPC_ID \
   --cidr-block 100.64.0.0/20
@@ -29,7 +30,7 @@ aws ec2 describe-vpcs \
 
 Expected output:
 
-```
+```text
 +-----------------+
 | CidrBlock       |
 +-----------------+

@@ -25,6 +25,7 @@ A complete IPv6 address plan document should include:
 
 ```yaml
 # ipv6-address-plan.yaml
+
 organization: "Example Corp"
 last_updated: "2026-03-20"
 maintainer: "network-team@example.com"
@@ -153,7 +154,7 @@ curl "https://netbox.example.com/api/ipam/prefixes/?within=2001:db8:corp::/48&fa
 
 ## Naming Convention for Reverse DNS
 
-```
+```text
 IPv6 reverse DNS uses ip6.arpa zones.
 Each nibble of the reverse address is a zone level.
 
@@ -167,4 +168,4 @@ For 2001:db8:corp:1::/64:
 
 ## Conclusion
 
-Documenting your IPv6 address plan in a structured format (YAML, IPAM database, or spreadsheet) is not optional — it is as essential as the plan itself. At minimum, record each /64's prefix, site, VLAN, purpose, gateway address, and assignment method. Use an IPAM tool like NetBox for production environments where manual tracking becomes error-prone as the network grows.
+Documenting your IPv6 address plan in a structured format (YAML, IPAM database, or spreadsheet) is not optional - it is as essential as the plan itself. At minimum, record each /64's prefix, site, VLAN, purpose, gateway address, and assignment method. Use an IPAM tool like NetBox for production environments where manual tracking becomes error-prone as the network grows.

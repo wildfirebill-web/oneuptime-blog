@@ -14,6 +14,7 @@ tmux (terminal multiplexer) solves a problem that every server administrator fac
 
 ```bash
 # Install from Ubuntu repositories
+
 sudo apt update
 sudo apt install tmux
 

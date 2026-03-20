@@ -26,6 +26,7 @@ graph TD
 
 ```hcl
 # main.tf
+
 terraform {
   required_providers {
     google = {
@@ -105,7 +106,7 @@ Keys should only be used when Workload Identity or Application Default Credentia
 
 ```hcl
 # keys.tf
-# Create a key for the service account (use sparingly — prefer Workload Identity)
+# Create a key for the service account (use sparingly - prefer Workload Identity)
 resource "google_service_account_key" "app_backend_key" {
   service_account_id = google_service_account.app_backend.name
   public_key_type    = "TYPE_X509_PEM_FILE"
@@ -122,7 +123,7 @@ resource "google_secret_manager_secret" "sa_key" {
 
 resource "google_secret_manager_secret_version" "sa_key_version" {
   secret      = google_secret_manager_secret.sa_key.id
-  # Key is base64-encoded — store as-is
+  # Key is base64-encoded - store as-is
   secret_data = google_service_account_key.app_backend_key.private_key
 }
 ```
@@ -143,7 +144,7 @@ resource "google_service_account_iam_member" "workload_identity_binding" {
 
 ## Best Practices
 
-- Avoid creating service account keys unless absolutely necessary — use Workload Identity or Application Default Credentials instead.
+- Avoid creating service account keys unless absolutely necessary - use Workload Identity or Application Default Credentials instead.
 - Use descriptive `account_id` values that make the purpose obvious in audit logs.
 - Grant roles at the resource level, not project level, wherever possible.
 - Audit service accounts regularly with `gcloud iam service-accounts list` to find unused accounts.

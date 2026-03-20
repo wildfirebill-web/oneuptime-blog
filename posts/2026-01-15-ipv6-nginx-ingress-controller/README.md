@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: IPv6, Kubernetes, NGINX, Ingresses, Networking, DevOps
+Tags: IPv6, Kubernetes, Nginx, Ingresses, Networking, DevOps
 
 Description: A comprehensive guide to configuring IPv6 support in NGINX Ingress Controller for Kubernetes, including dual-stack networking, load balancer setup, and production best practices.
 
@@ -50,6 +50,7 @@ Before configuring IPv6, ensure your environment supports it:
 
 ```bash
 # Check if your cluster supports dual-stack
+
 kubectl get nodes -o jsonpath='{.items[*].status.addresses}' | jq .
 
 # Verify Kubernetes version (1.23+ recommended for stable dual-stack)

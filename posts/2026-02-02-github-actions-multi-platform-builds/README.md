@@ -36,6 +36,7 @@ A matrix strategy allows you to run the same job across multiple operating syste
 
 ```yaml
 # .github/workflows/build.yml
+
 # Defines a workflow that builds on Linux, macOS, and Windows
 # The matrix strategy automatically creates parallel jobs for each OS
 

@@ -29,6 +29,7 @@ Create a PrometheusRule with recording rules:
 
 ```yaml
 # recording-rules-basic.yaml
+
 apiVersion: monitoring.coreos.com/v1
 kind: PrometheusRule
 metadata:
@@ -271,7 +272,7 @@ spec:
         )
 ```
 
-### Resource Utilization
+Resource Utilization
 
 ```yaml
 - name: resource-metrics

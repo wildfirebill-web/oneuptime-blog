@@ -68,6 +68,7 @@ Create the executable script `release-info.sh`:
 set -e
 
 # Check if namespace is provided
+
 NAMESPACE="${1:-default}"
 
 echo "Release Information for namespace: $NAMESPACE"

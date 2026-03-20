@@ -83,6 +83,7 @@ resource "azurerm_disk_encryption_set" "main" {
 }
 
 # Grant encryption set access to Key Vault
+
 resource "azurerm_key_vault_access_policy" "disk_encryption" {
   key_vault_id = var.key_vault_id
   tenant_id    = azurerm_disk_encryption_set.main.identity[0].tenant_id
@@ -159,4 +160,4 @@ az disk update \
 
 ## Conclusion
 
-Use `incremental_enabled = true` for snapshots in production—incremental snapshots only store block-level changes since the last snapshot, dramatically reducing snapshot costs and creation time for large disks. Premium SSD v2 and Ultra Disk require zone specification and cannot be used with VMs in Availability Sets (only Availability Zones). Set `on_demand_bursting_enabled = true` on Premium SSD disks smaller than 512 GB to handle occasional IOPS spikes without permanently paying for larger disk sizes.
+Use `incremental_enabled = true` for snapshots in production-incremental snapshots only store block-level changes since the last snapshot, dramatically reducing snapshot costs and creation time for large disks. Premium SSD v2 and Ultra Disk require zone specification and cannot be used with VMs in Availability Sets (only Availability Zones). Set `on_demand_bursting_enabled = true` on Premium SSD disks smaller than 512 GB to handle occasional IOPS spikes without permanently paying for larger disk sizes.

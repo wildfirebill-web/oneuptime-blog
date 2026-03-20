@@ -1,4 +1,4 @@
-# How to Set Up Read-Only Containers in Portainer
+# How to Set Up Read-Only Containers in Portainer - Set
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -62,10 +62,10 @@ services:
     image: nginx:1.25-alpine
     read_only: true
     tmpfs:
-      - /var/run            # PID files — ephemeral OK
-      - /var/cache/nginx    # Cache — ephemeral OK
+      - /var/run            # PID files - ephemeral OK
+      - /var/cache/nginx    # Cache - ephemeral OK
     volumes:
-      - nginx-logs:/var/log/nginx  # Logs — persistent preferred
+      - nginx-logs:/var/log/nginx  # Logs - persistent preferred
 ```
 
 ## Testing Read-Only Containers
@@ -74,6 +74,7 @@ After enabling `read_only`, test that the container works correctly:
 
 ```bash
 # Try to write to the root filesystem (should fail)
+
 docker exec webapp touch /test-file
 # touch: /test-file: Read-only file system
 

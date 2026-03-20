@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: NGINX, Logging, Monitoring, Access Logs, Observability
+Tags: Nginx, Logging, Monitoring, Access Logs, Observability
 
 Description: Learn how to configure Nginx access and error logging with custom formats and integrate with monitoring tools.
 
@@ -18,6 +18,7 @@ Nginx ships with two log types: access logs and error logs.
 
 ```nginx
 # Default logging (usually in /etc/nginx/nginx.conf)
+
 http {
     # Access log records every request
     access_log /var/log/nginx/access.log;

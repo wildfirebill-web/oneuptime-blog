@@ -1,4 +1,4 @@
-# How to Restrict Management Ports in Portainer
+# How to Restrict Management Ports in Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -23,6 +23,7 @@ Always disable the HTTP port and use HTTPS only:
 
 ```bash
 # Remove the -p 9000:9000 mapping - only expose HTTPS
+
 docker run -d \
   -p 9443:9443 \         # HTTPS only
   -p 8000:8000 \         # Edge agents only if needed

@@ -42,6 +42,7 @@ Check your current setting with this command:
 
 ```bash
 # Check current outbound traffic policy mode
+
 kubectl get configmap istio -n istio-system -o yaml | grep -A 2 outboundTrafficPolicy
 ```
 

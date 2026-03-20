@@ -1,4 +1,4 @@
-# How to Deploy Stacks from a Git Repository in Portainer
+# How to Deploy Stacks from a Git Repository in Portainer - From
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -27,7 +27,7 @@ Create a repository with your Compose files. Portainer supports any Git host:
 
 Example repository structure:
 
-```
+```text
 infrastructure/
 ├── stacks/
 │   ├── wordpress/
@@ -54,8 +54,9 @@ Fill in the repository details:
 
 ### Repository URL Formats
 
-```
+```text
 # GitHub
+
 https://github.com/your-org/infrastructure.git
 
 # GitLab
@@ -72,7 +73,7 @@ git@github.com:your-org/infrastructure.git
 
 Specify which branch, tag, or commit to deploy from:
 
-```
+```text
 # Branch
 refs/heads/main
 refs/heads/production
@@ -89,7 +90,7 @@ a1b2c3d4e5f6...  (full commit hash)
 
 Specify the path to your Compose file within the repository:
 
-```
+```text
 # If docker-compose.yml is at the root
 docker-compose.yml
 

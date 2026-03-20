@@ -53,6 +53,7 @@ flowchart LR
 
 ```yaml
 # WRONG: Missing protocol scheme
+
 exporters:
   otlp:
     endpoint: collector.example.com:4317  # Error: invalid endpoint

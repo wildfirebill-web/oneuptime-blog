@@ -14,6 +14,7 @@ systemd-networkd logs to the system journal. When network interfaces fail to con
 
 ```bash
 # Show all systemd-networkd logs
+
 journalctl -u systemd-networkd
 
 # Follow live (like tail -f)
@@ -57,7 +58,7 @@ systemctl restart systemd-networkd
 
 # "Could not find matching network"
 # Cause: No .network file matches the interface
-# Fix: Check [Match] section — name glob or MAC
+# Fix: Check [Match] section - name glob or MAC
 
 # "DHCP timeout"
 # Cause: DHCP server unreachable

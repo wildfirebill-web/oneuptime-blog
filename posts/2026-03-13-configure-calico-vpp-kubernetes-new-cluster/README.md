@@ -107,6 +107,7 @@ For high-throughput workloads, increase VPP's buffer pool.
 
 ```yaml
 # In vpp.conf
+
 buffers {
   buffers-per-numa 256000
   page-size 2m

@@ -30,6 +30,7 @@ First, deploy Vault. You can run it on one of your Talos clusters or as a separa
 
 ```bash
 # Install Vault via Helm on a management cluster
+
 helm repo add hashicorp https://helm.releases.hashicorp.com
 helm repo update
 

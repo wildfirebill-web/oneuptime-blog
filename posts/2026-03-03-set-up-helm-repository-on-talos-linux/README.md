@@ -27,6 +27,7 @@ Start by adding the most commonly used public repositories:
 
 ```bash
 # Add the Bitnami repository (one of the largest chart collections)
+
 helm repo add bitnami https://charts.bitnami.com/bitnami
 
 # Add the Prometheus community repository

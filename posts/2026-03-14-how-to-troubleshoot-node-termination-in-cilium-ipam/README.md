@@ -24,6 +24,7 @@ The most common issues are orphaned CiliumNode resources, finalizers preventing 
 
 ```bash
 # Find orphaned CiliumNodes
+
 NODES=$(kubectl get nodes -o jsonpath='{.items[*].metadata.name}' | tr ' ' '\n' | sort)
 CILIUMNODES=$(kubectl get ciliumnodes -o jsonpath='{.items[*].metadata.name}' | tr ' ' '\n' | sort)
 ORPHANS=$(comm -13 <(echo "$NODES") <(echo "$CILIUMNODES"))

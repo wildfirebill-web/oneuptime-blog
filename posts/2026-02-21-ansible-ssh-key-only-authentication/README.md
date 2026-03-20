@@ -30,6 +30,7 @@ graph TD
 
 ```yaml
 # group_vars/all.yml
+
 # SSH users and their public keys
 ssh_users:
   - username: deploy

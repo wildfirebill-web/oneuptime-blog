@@ -25,6 +25,7 @@ The repository becomes available when deploying Helm charts in Kubernetes enviro
 
 ```bash
 # Example: add the Jetstack repository for cert-manager
+
 # Repository URL: https://charts.jetstack.io
 
 # Or the Ingress-NGINX repository
@@ -45,7 +46,7 @@ For private repositories (like a self-hosted Chartmuseum or Nexus), you can add 
 https://myuser:mypassword@charts.example.com/stable
 ```
 
-Note: Store the credentials-embedded URL securely — it is stored in Portainer's user settings.
+Note: Store the credentials-embedded URL securely - it is stored in Portainer's user settings.
 
 ## Setting Up Chartmuseum for Private Charts
 

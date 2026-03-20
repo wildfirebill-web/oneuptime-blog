@@ -30,6 +30,7 @@ Install the required Python packages.
 
 ```bash
 # Install the Azure Search and OpenAI Python SDKs
+
 pip install azure-search-documents==11.6.0 openai
 ```
 

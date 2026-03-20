@@ -16,6 +16,7 @@ Both tools are needed: `step` is the CLI client, `step-ca` is the certificate au
 
 ```bash
 # Install step CLI (the client tool)
+
 # Download the latest release
 wget -qO /tmp/step.tar.gz \
     "https://dl.smallstep.com/cli/docs-ca-install/latest/step_linux_amd64.tar.gz"

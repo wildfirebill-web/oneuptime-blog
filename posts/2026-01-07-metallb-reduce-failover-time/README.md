@@ -164,6 +164,7 @@ Run this script on all MetalLB speaker nodes:
 #!/bin/bash
 
 # Reduce ARP cache timeout for faster updates
+
 echo 60 > /proc/sys/net/ipv4/neigh/default/gc_stale_time
 echo 30 > /proc/sys/net/ipv4/neigh/default/base_reachable_time_ms
 

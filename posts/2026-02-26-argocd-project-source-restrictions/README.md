@@ -101,6 +101,7 @@ sourceRepos:
 
 ```yaml
 # Good: explicit list
+
 sourceRepos:
   - "https://github.com/my-org/frontend-app.git"
   - "https://github.com/my-org/frontend-config.git"

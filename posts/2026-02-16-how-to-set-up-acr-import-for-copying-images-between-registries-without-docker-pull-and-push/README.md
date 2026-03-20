@@ -18,6 +18,7 @@ The simplest import copies an image from one source to your ACR.
 
 ```bash
 # Import an image from Docker Hub into ACR
+
 az acr import \
   --name myacr \
   --source docker.io/library/nginx:1.25 \

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Jenkins, Agents, SSH, CI/CD, Linux
+Tags: RHEL, Jenkins, Agent, SSH, CI/CD, Linux
 
 Description: Set up Jenkins SSH agents on RHEL to distribute build jobs across multiple machines for parallel execution.
 
@@ -28,6 +28,7 @@ On each RHEL machine that will be a Jenkins agent:
 
 ```bash
 # Create a jenkins user
+
 sudo useradd -m -d /var/lib/jenkins -s /bin/bash jenkins
 
 # Install Java 17 (required for the agent)

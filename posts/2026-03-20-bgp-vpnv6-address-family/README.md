@@ -25,14 +25,14 @@ graph LR
 
 | Concept | Description |
 |---------|-------------|
-| **VRF** | Virtual Routing and Forwarding — one per customer on PE |
+| **VRF** | Virtual Routing and Forwarding - one per customer on PE |
 | **Route Distinguisher (RD)** | 8-byte value prepended to IPv6 prefix to make it globally unique |
 | **Route Target (RT)** | BGP community used to control VRF route import/export |
 | **VPNv6 Route** | 128-bit IPv6 prefix + 8-byte RD = 136-bit globally unique prefix |
 
 ## VRF Configuration on Cisco IOS
 
-```
+```bash
 ! Create a VRF for the customer
 Router(config)# vrf definition CUSTOMER_A
 Router(config-vrf)# rd 65001:100          ! Route Distinguisher
@@ -101,7 +101,7 @@ end
 
 ## Verifying VPNv6
 
-```
+```text
 ! Cisco: Show VPNv6 BGP table
 Router# show bgp vpnv6 unicast all
 

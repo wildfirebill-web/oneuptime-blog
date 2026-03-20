@@ -101,6 +101,7 @@ Before setting limits, measure actual usage. Use Prometheus queries to understan
 
 ```promql
 # Current memory usage per proxy
+
 container_memory_working_set_bytes{container="istio-proxy"}
 
 # Average memory by deployment

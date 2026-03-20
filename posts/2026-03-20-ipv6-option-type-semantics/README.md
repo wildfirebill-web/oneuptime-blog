@@ -8,11 +8,11 @@ Description: Understand the semantic meaning encoded in IPv6 option type bytes, 
 
 ## Introduction
 
-The 8-bit Option Type byte in IPv6 TLV options is not just an identifier — it encodes behavioral semantics in its upper 3 bits. These bits tell processing nodes exactly how to handle unknown options and whether the option data might change during transit. Understanding these semantics is essential for implementing IPv6 protocol stacks and designing new extensions.
+The 8-bit Option Type byte in IPv6 TLV options is not just an identifier - it encodes behavioral semantics in its upper 3 bits. These bits tell processing nodes exactly how to handle unknown options and whether the option data might change during transit. Understanding these semantics is essential for implementing IPv6 protocol stacks and designing new extensions.
 
 ## Option Type Byte Structure
 
-```
+```yaml
   Bit 7 | Bit 6 | Bit 5 | Bits 4-0
  -------+-------+-------+---------
     Action bits   |  C  | Option ID
@@ -97,7 +97,7 @@ analyze_options_table()
 
 The change flag (bit 5) is critically important for IPsec Authentication Header (AH):
 
-```
+```text
 When computing AH's Integrity Check Value (ICV):
 
 For options with change_flag = 0 (immutable):
@@ -151,6 +151,7 @@ def design_custom_option(
     return option_type
 
 # Example: Design a new telemetry option
+
 type_byte = design_custom_option(
     description="Network Telemetry Timestamp",
     option_id=15,
@@ -161,4 +162,4 @@ type_byte = design_custom_option(
 
 ## Conclusion
 
-IPv6 option type bytes encode three semantic properties: what to do when the option is not recognized (action bits), whether the data can change in transit (change flag), and the option identifier. These properties enable the IPv6 extension header framework to be forward-compatible — new options can be added with a clearly specified behavior for systems that don't yet understand them. When implementing or designing IPv6 options, always choose these bits carefully to ensure correct behavior across the diverse set of nodes a packet may traverse.
+IPv6 option type bytes encode three semantic properties: what to do when the option is not recognized (action bits), whether the data can change in transit (change flag), and the option identifier. These properties enable the IPv6 extension header framework to be forward-compatible - new options can be added with a clearly specified behavior for systems that don't yet understand them. When implementing or designing IPv6 options, always choose these bits carefully to ensure correct behavior across the diverse set of nodes a packet may traverse.

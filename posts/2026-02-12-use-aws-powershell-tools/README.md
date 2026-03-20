@@ -18,6 +18,7 @@ Install the common module and individual service modules:
 
 ```powershell
 # Install the base module (required for all service modules)
+
 Install-Module -Name AWS.Tools.Installer -Force -Scope CurrentUser
 
 # Install individual service modules as needed

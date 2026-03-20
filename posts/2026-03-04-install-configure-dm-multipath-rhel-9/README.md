@@ -51,6 +51,7 @@ sudo systemctl status multipathd
 
 ```bash
 # List all multipath devices
+
 sudo multipath -ll
 
 # Show all paths

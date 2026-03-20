@@ -25,6 +25,7 @@ flowchart TD
 
 ```bash
 # List all block devices
+
 lsblk
 
 # Show detailed information

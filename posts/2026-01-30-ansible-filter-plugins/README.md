@@ -372,6 +372,7 @@ import json
 import re
 
 # Import Ansible's error class for proper error reporting
+
 try:
     from ansible.errors import AnsibleFilterError
 except ImportError:

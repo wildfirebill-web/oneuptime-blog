@@ -41,6 +41,7 @@ Cockpit creates the account immediately. The CLI equivalent:
 
 ```bash
 # Create a new user
+
 sudo useradd -m -c "John Smith" jsmith
 
 # Set the password

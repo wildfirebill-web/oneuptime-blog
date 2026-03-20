@@ -44,6 +44,7 @@ graph LR
 
 ```bash
 # Update packages
+
 sudo apt update
 
 # Install Java 17

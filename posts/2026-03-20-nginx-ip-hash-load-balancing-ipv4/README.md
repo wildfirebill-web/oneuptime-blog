@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Nginx, IPv4, ip_hash, Session Persistence, Load Balancing, Sticky Sessions
+Tags: Nginx, IPv4, Ip_hash, Session Persistence, Load Balancing, Sticky Sessions
 
 Description: Use Nginx ip_hash to implement session persistence by routing each IPv4 client consistently to the same upstream backend server.
 
 ## Introduction
 
-The `ip_hash` directive enables sticky sessions by hashing the client's IPv4 address to select a consistent backend server. This ensures a client always reaches the same server—useful for applications that store session state locally rather than in a shared cache.
+The `ip_hash` directive enables sticky sessions by hashing the client's IPv4 address to select a consistent backend server. This ensures a client always reaches the same server-useful for applications that store session state locally rather than in a shared cache.
 
 ## How ip_hash Works
 
@@ -82,9 +82,9 @@ upstream sticky_backends {
 
 ## Limitations of ip_hash
 
-**Problem: clients behind shared NAT** — Many users sharing one public IPv4 (e.g., corporate NAT) all hash to the same backend, creating uneven load.
+**Problem: clients behind shared NAT** - Many users sharing one public IPv4 (e.g., corporate NAT) all hash to the same backend, creating uneven load.
 
-**Problem: first three octets only** — Clients in the same /24 always go to the same server even if they have different final octets.
+**Problem: first three octets only** - Clients in the same /24 always go to the same server even if they have different final octets.
 
 For better session persistence, consider cookie-based stickiness (available in Nginx Plus) or move session state to Redis/Memcached so any backend can serve any client.
 
@@ -93,7 +93,8 @@ For better session persistence, consider cookie-based stickiness (available in N
 Test that the same client IP always reaches the same backend:
 
 ```bash
-# Repeat 5 times—should always return the same backend identifier
+# Repeat 5 times-should always return the same backend identifier
+
 for i in $(seq 1 5); do
     curl -s http://app.example.com/server-id
 done

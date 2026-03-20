@@ -31,6 +31,7 @@ All Cost Management API calls require Azure AD authentication. Use a service pri
 
 ```bash
 # Create a service principal for the cost dashboard application
+
 az ad sp create-for-rbac \
   --name "cost-dashboard-app" \
   --role "Cost Management Reader" \

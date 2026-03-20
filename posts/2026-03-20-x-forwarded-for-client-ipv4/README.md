@@ -16,6 +16,7 @@ Configure Nginx to pass the real client IP to upstream:
 
 ```nginx
 # /etc/nginx/sites-available/app.conf
+
 server {
     listen 80;
     server_name app.example.com;
@@ -60,13 +61,13 @@ http {
 }
 ```
 
-With `real_ip_recursive on`, Nginx walks the XFF chain from right to left and sets `$remote_addr` to the first untrusted IP—the actual client.
+With `real_ip_recursive on`, Nginx walks the XFF chain from right to left and sets `$remote_addr` to the first untrusted IP-the actual client.
 
 ## Multi-Proxy Chains
 
 When traffic passes through multiple proxies, the XFF header accumulates IPs:
 
-```
+```text
 X-Forwarded-For: client-ip, proxy1-ip, proxy2-ip
 ```
 
@@ -104,7 +105,7 @@ app.get('/', (req, res) => {
 
 ## Security Considerations
 
-- **Never trust XFF blindly** — clients can spoof the header
+- **Never trust XFF blindly** - clients can spoof the header
 - Only trust XFF from known, controlled proxy IPs (use `set_real_ip_from`)
 - Use `real_ip_recursive on` to strip forged IPs added before your trusted proxies
 

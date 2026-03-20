@@ -27,6 +27,7 @@ This guide covers setting up monitoring at each layer and building dashboards an
 
 ```yaml
 # cilium-monitoring-values.yaml
+
 prometheus:
   enabled: true
   port: 9962

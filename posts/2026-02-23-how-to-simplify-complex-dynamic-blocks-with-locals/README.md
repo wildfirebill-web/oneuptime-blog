@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Terraform, Dynamic Blocks, Local, HCL, Best Practices, Infrastructure as Code
+Tags: Terraform, Dynamic Blocks, Locals, HCL, Best Practices, Infrastructure as Code
 
 Description: Learn how to use Terraform locals to pre-process data and simplify complex dynamic blocks, making your configurations more readable and maintainable.
 
@@ -16,6 +16,7 @@ Here is a dynamic block that has gotten out of hand:
 
 ```hcl
 # This is hard to read and debug
+
 resource "aws_security_group" "main" {
   name   = "complex"
   vpc_id = var.vpc_id

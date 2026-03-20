@@ -57,6 +57,7 @@ The same declaration in Python using pika.
 
 ```python
 # Python priority queue declaration using pika
+
 # The x-max-priority argument must match across all declarations
 import pika
 

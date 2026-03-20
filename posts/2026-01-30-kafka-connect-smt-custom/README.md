@@ -642,6 +642,7 @@ Copy the JAR to your Kafka Connect plugin path:
 
 ```bash
 # Create plugin directory
+
 mkdir -p /opt/kafka-connect/plugins/custom-smt
 
 # Copy JAR

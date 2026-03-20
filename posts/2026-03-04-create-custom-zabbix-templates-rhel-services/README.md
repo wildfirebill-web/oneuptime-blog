@@ -25,6 +25,7 @@ Create a UserParameter on the agent to check service status:
 
 ```bash
 # On each monitored host, add a UserParameter
+
 sudo tee /etc/zabbix/zabbix_agent2.d/custom-services.conf << 'CONF'
 # Check if a systemd service is active (returns 1 for active, 0 for inactive)
 UserParameter=service.status[*],systemctl is-active $1 > /dev/null 2>&1 && echo 1 || echo 0

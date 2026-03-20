@@ -14,6 +14,7 @@ The systemd journal collects log data from the kernel, services, and application
 
 ```bash
 # Show all journal entries (oldest first)
+
 journalctl
 
 # Show entries in reverse order (newest first)

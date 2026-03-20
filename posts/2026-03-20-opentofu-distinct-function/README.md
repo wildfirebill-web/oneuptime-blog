@@ -1,4 +1,4 @@
-# How to Use the distinct Function in OpenTofu
+# How to Use the distinct Function in OpenTofu - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -16,7 +16,7 @@ The `distinct` function in OpenTofu returns a new list with duplicate elements r
 distinct(list)
 ```
 
-- **list** — a list of values (any type)
+- **list** - a list of values (any type)
 - Returns a new list with duplicates removed
 - Order of first occurrence is preserved
 
@@ -191,4 +191,4 @@ Use `distinct` when order matters; use `toset` when you need a set type for `for
 
 ## Conclusion
 
-The `distinct` function is a clean solution to deduplication in OpenTofu. Whenever you are concatenating lists from multiple sources — security groups, subnets, IAM actions, or tags — `distinct` ensures you end up with a clean, deduplicated result. It is often paired with `concat` to merge and deduplicate in one step.
+The `distinct` function is a clean solution to deduplication in OpenTofu. Whenever you are concatenating lists from multiple sources - security groups, subnets, IAM actions, or tags - `distinct` ensures you end up with a clean, deduplicated result. It is often paired with `concat` to merge and deduplicate in one step.

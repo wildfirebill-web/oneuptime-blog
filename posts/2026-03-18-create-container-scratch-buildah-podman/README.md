@@ -18,6 +18,7 @@ Most container images start from a base like `ubuntu` or `alpine`, which include
 
 ```bash
 # Compare image sizes to understand the benefit
+
 podman pull ubuntu:22.04
 podman pull alpine:3.19
 podman images --format "table {{.Repository}}\t{{.Tag}}\t{{.Size}}" \

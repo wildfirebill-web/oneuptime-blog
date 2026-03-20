@@ -142,6 +142,7 @@ Goldilocks does not automatically apply recommendations. Export them for review:
 
 ```bash
 # Get VPA recommendations as YAML
+
 kubectl get vpa analytics-worker-goldilocks-vpa -n production -o yaml
 ```
 

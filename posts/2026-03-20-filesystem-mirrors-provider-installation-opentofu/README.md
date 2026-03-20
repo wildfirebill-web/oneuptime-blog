@@ -22,7 +22,7 @@ A filesystem mirror is a local directory that contains pre-downloaded provider p
 
 OpenTofu expects a specific directory layout:
 
-```
+```text
 mirror/
 └── registry.opentofu.org/
     └── hashicorp/
@@ -42,6 +42,7 @@ mirror/
 
 ```bash
 # Create mirror directory
+
 mkdir -p /opt/opentofu/providers
 
 # Download providers into the mirror
@@ -100,7 +101,7 @@ export TF_CLI_CONFIG_FILE="$PWD/.tofurc"
 ### Mirror Only (No Internet Fallback)
 
 ```hcl
-# ~/.tofurc — strict air-gapped mode
+# ~/.tofurc - strict air-gapped mode
 provider_installation {
   filesystem_mirror {
     path    = "/opt/opentofu/providers"
@@ -211,7 +212,7 @@ tofu providers mirror /opt/opentofu/providers
 
 ## Best Practices
 
-1. **Build mirrors in CI/CD** periodically — providers are versioned and don't change
+1. **Build mirrors in CI/CD** periodically - providers are versioned and don't change
 2. **Use include/exclude** to mix mirror and direct for specific providers
 3. **Commit the mirror to a shared artifact store** for team and CI sharing
 4. **Keep the mirror read-only** during deploys to prevent accidental modification
@@ -225,4 +226,4 @@ OpenTofu filesystem mirrors enable provider installation in air-gapped environme
 
 ---
 
-*Manage your infrastructure securely with [OneUptime](https://oneuptime.com) — monitoring and observability for your deployments.*
+*Manage your infrastructure securely with [OneUptime](https://oneuptime.com) - monitoring and observability for your deployments.*

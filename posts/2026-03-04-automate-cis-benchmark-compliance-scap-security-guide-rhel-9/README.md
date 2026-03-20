@@ -14,6 +14,7 @@ The scap-security-guide (SSG) project is a community-driven effort that provides
 
 ```bash
 # Install the package
+
 dnf install -y scap-security-guide
 
 # See what was installed

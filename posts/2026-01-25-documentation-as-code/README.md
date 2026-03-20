@@ -54,6 +54,7 @@ MkDocs generates static documentation sites from Markdown. Install it:
 
 ```bash
 # Install MkDocs with Material theme
+
 pip install mkdocs mkdocs-material
 ```
 

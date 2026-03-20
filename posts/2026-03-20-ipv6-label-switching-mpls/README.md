@@ -8,11 +8,11 @@ Description: Understand how MPLS label switching handles IPv6 packets including 
 
 ---
 
-MPLS label switching for IPv6 operates identically to IPv4 at the forwarding plane—routers switch packets based on 32-bit labels without examining the IP header. IPv6 enters MPLS through labeled BGP routes (6PE) or via RSVP-TE IPv6 tunnels, with the outer label controlling forwarding.
+MPLS label switching for IPv6 operates identically to IPv4 at the forwarding plane-routers switch packets based on 32-bit labels without examining the IP header. IPv6 enters MPLS through labeled BGP routes (6PE) or via RSVP-TE IPv6 tunnels, with the outer label controlling forwarding.
 
 ## MPLS Label Structure
 
-```
+```text
 MPLS Label Stack Entry (32 bits):
  0                   1                   2                   3
  0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
@@ -33,6 +33,7 @@ For 6PE label stack:
 
 ```bash
 # LDP distributes labels for IPv4 prefixes in the routing table
+
 # For 6PE, LDP provides transport labels; BGP provides IPv6 labels
 
 # Check LDP label bindings (IPv4 - transport labels)
@@ -54,7 +55,7 @@ show bgp ipv6 unicast labels
 
 ## MPLS Forwarding for IPv6
 
-```
+```text
 IPv6 Packet Forwarding in 6PE MPLS:
 
 Ingress PE (PE1):
@@ -158,4 +159,4 @@ show mpls label table | grep -E "bgp|ospf|ldp"
 show interface GigabitEthernet0/0 counters | include MPLS
 ```
 
-MPLS label switching for IPv6 is protocol-agnostic at the data plane—P routers forward based solely on the 32-bit label regardless of whether the payload is IPv4, IPv6, or anything else—with 6PE and 6VPE requiring only the ingress PE to perform the initial IPv6-to-label mapping while all intermediate P routers perform fast label switching without IPv6 awareness.
+MPLS label switching for IPv6 is protocol-agnostic at the data plane-P routers forward based solely on the 32-bit label regardless of whether the payload is IPv4, IPv6, or anything else-with 6PE and 6VPE requiring only the ingress PE to perform the initial IPv6-to-label mapping while all intermediate P routers perform fast label switching without IPv6 awareness.

@@ -931,6 +931,7 @@ func categorizeError(err error) string {
 
 ```promql
 # Request rate by method
+
 sum(rate(myapp_grpc_requests_total[5m])) by (method)
 
 # Error rate by error type

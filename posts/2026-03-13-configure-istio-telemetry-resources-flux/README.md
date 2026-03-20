@@ -26,6 +26,7 @@ This guide covers configuring Istio Telemetry resources for metrics, distributed
 
 ```yaml
 # clusters/my-cluster/istio-telemetry/mesh-telemetry.yaml
+
 # Apply to istio-system for mesh-wide defaults
 apiVersion: telemetry.istio.io/v1
 kind: Telemetry

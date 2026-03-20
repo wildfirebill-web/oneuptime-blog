@@ -12,7 +12,7 @@ A well-structured OpenTofu module directory makes modules easy to understand, te
 
 ## Standard Module Structure
 
-```
+```hcl
 modules/my-module/
 ├── README.md              # Module documentation
 ├── main.tf                # Core resources
@@ -35,7 +35,7 @@ modules/my-module/
 
 ## File-by-File Breakdown
 
-### `versions.tf` — Constraints
+### `versions.tf` - Constraints
 
 ```hcl
 # modules/my-module/versions.tf
@@ -52,7 +52,7 @@ terraform {
 }
 ```
 
-### `variables.tf` — Inputs
+### `variables.tf` - Inputs
 
 ```hcl
 # modules/my-module/variables.tf
@@ -79,7 +79,7 @@ variable "tags" {
 }
 ```
 
-### `locals.tf` — Internal Computations
+### `locals.tf` - Internal Computations
 
 ```hcl
 # modules/my-module/locals.tf
@@ -98,7 +98,7 @@ locals {
 }
 ```
 
-### `data.tf` — Data Sources
+### `data.tf` - Data Sources
 
 ```hcl
 # modules/my-module/data.tf
@@ -117,7 +117,7 @@ data "aws_ami" "ubuntu" {
 }
 ```
 
-### `main.tf` — Resources
+### `main.tf` - Resources
 
 ```hcl
 # modules/my-module/main.tf
@@ -131,7 +131,7 @@ resource "aws_instance" "this" {
 }
 ```
 
-### `outputs.tf` — Outputs
+### `outputs.tf` - Outputs
 
 ```hcl
 # modules/my-module/outputs.tf
@@ -156,19 +156,19 @@ output "arn" {
 
 ## README Structure
 
-```markdown
+````markdown
 # Module Name
 
 Brief description of what this module does.
 
 ## Usage
 
-\`\`\`hcl
+```hcl
 module "example" {
   source = "./modules/my-module"
   name   = "example"
 }
-\`\`\`
+```
 
 ## Requirements
 
@@ -188,7 +188,7 @@ module "example" {
 | Name | Description |
 |------|-------------|
 | id | Resource ID |
-```
+````
 
 ## Conclusion
 

@@ -20,6 +20,7 @@ Add a new tag to an existing local image.
 
 ```bash
 # Tag an image with a new name and tag
+
 podman tag nginx:1.25 my-nginx:latest
 
 # Tag using the image ID

@@ -16,6 +16,7 @@ Provider functions are custom functions defined by Terraform providers that exte
 
 ```hcl
 # Built-in function - no namespace
+
 output "built_in" {
   value = upper("hello")
 }
@@ -204,7 +205,7 @@ data "aws_iam_policy_document" "per_service" {
 }
 ```
 
-### Resource Tagging Based on ARN Components
+Resource Tagging Based on ARN Components
 
 ```hcl
 variable "target_arn" {

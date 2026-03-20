@@ -24,6 +24,7 @@ The tradeoff is performance - SSHFS is slower than NFS for heavy workloads becau
 
 ```bash
 # Install SSHFS
+
 dnf install -y fuse-sshfs
 ```
 

@@ -42,6 +42,7 @@ Connect using the serverless SQL endpoint:
 
 ```bash
 # Connect using sqlcmd to the serverless endpoint
+
 sqlcmd -S my-synapse-workspace-ondemand.sql.azuresynapse.net \
   -d master \
   -U sqladmin \

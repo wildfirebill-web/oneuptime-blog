@@ -27,6 +27,7 @@ Important details to know:
 
 ```bash
 # Create a new Azure Functions project
+
 func init cosmos-change-feed --python
 cd cosmos-change-feed
 

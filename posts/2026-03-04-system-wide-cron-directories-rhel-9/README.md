@@ -38,6 +38,7 @@ This directory holds cron files that use the same format as `/etc/crontab`, mean
 
 ```bash
 # List existing cron.d files
+
 ls -la /etc/cron.d/
 ```
 

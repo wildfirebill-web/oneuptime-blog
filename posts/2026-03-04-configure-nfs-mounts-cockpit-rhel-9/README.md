@@ -16,6 +16,7 @@ Make sure the NFS client utilities are installed on your RHEL system:
 
 ```bash
 # Install NFS client packages
+
 sudo dnf install nfs-utils -y
 
 # Start and enable the required services

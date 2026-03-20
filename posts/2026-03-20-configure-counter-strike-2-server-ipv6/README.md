@@ -14,6 +14,7 @@ Counter-Strike 2 (CS2) uses Valve's Source 2 engine which supports IPv6. Setting
 
 ```bash
 # Ubuntu/Debian
+
 sudo apt install steamcmd -y
 
 # Or manual install

@@ -36,6 +36,7 @@ A common pattern is to mirror production traffic to a test namespace:
 
 ```yaml
 # Production deployment
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

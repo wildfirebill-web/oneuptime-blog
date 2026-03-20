@@ -21,6 +21,7 @@ Portainer stores its configuration and data in a named volume. Create it before 
 
 ```bash
 # Create a named volume to persist Portainer data across container restarts
+
 docker volume create portainer_data
 ```
 
@@ -48,7 +49,7 @@ docker run -d \
 
 After the container starts, open your browser and navigate to:
 
-```
+```text
 https://localhost:9443
 ```
 
@@ -65,7 +66,7 @@ docker ps --filter name=portainer
 
 Expected output shows the container in `Up` status:
 
-```
+```text
 CONTAINER ID   IMAGE                           STATUS         PORTS
 abc123def456   portainer/portainer-ce:latest   Up 2 minutes   0.0.0.0:9443->9443/tcp
 ```

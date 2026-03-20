@@ -47,6 +47,7 @@ When a request arrives:
 
 ```bash
 # Build and push your container image
+
 gcloud builds submit --tag gcr.io/PROJECT_ID/myapp:v1
 
 # Deploy to Cloud Run

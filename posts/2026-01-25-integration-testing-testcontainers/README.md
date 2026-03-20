@@ -365,6 +365,7 @@ Enable reuse in your `~/.testcontainers.properties`:
 
 ```properties
 # Keep containers running between test runs for faster iteration
+
 testcontainers.reuse.enable=true
 ```
 

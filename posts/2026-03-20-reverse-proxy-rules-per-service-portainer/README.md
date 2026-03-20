@@ -84,6 +84,7 @@ Add request/response manipulation per service:
 
 ```yaml
 # Rate limiting middleware
+
 labels:
   - traefik.http.middlewares.rate-limit.ratelimit.average=100
   - traefik.http.middlewares.rate-limit.ratelimit.burst=200
@@ -143,4 +144,4 @@ server {
 
 ## Summary
 
-Traefik's label-based routing is the most maintainable approach for per-service proxy configuration in Portainer — each service's routing rules live in its own stack definition. For complex routing needs or when you prefer configuration files, Nginx with per-service config files is a solid alternative. Both integrate naturally with Let's Encrypt for automatic HTTPS.
+Traefik's label-based routing is the most maintainable approach for per-service proxy configuration in Portainer - each service's routing rules live in its own stack definition. For complex routing needs or when you prefer configuration files, Nginx with per-service config files is a solid alternative. Both integrate naturally with Let's Encrypt for automatic HTTPS.

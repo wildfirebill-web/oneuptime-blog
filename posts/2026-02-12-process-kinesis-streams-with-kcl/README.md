@@ -336,6 +336,7 @@ def process_event(data):
     print(f"Processing event: {data}")
 
 # Main loop
+
 stream_name = 'user-events'
 shards = kinesis.list_shards(StreamName=stream_name)
 for shard in shards['Shards']:

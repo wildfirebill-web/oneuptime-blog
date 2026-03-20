@@ -79,6 +79,7 @@ The Azure CLI provides a straightforward command for copying databases:
 
 ```bash
 # Copy a database to the same server with a new name
+
 az sql db copy \
     --resource-group myResourceGroup \
     --server myserver \

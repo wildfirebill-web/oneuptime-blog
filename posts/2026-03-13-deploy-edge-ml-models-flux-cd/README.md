@@ -30,6 +30,7 @@ Store model files as OCI artifacts alongside their deployment manifests.
 
 ```bash
 # Package the model and manifests together as an OCI artifact
+
 MODEL_VERSION="v2.3.0"
 MODEL_NAME="defect-detector"
 

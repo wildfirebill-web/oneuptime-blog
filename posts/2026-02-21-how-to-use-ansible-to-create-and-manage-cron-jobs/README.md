@@ -16,6 +16,7 @@ The simplest cron task specifies a name, the command to run, and the schedule.
 
 ```yaml
 # Create a cron job that runs a backup script every night at 2:30 AM
+
 - name: Schedule nightly database backup
   ansible.builtin.cron:
     name: "Database backup"

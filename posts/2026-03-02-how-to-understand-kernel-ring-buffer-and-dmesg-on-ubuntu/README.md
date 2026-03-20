@@ -18,6 +18,7 @@ The buffer size is set at compile time (typically 512KB to 4MB on modern kernels
 
 ```bash
 # Check ring buffer size
+
 dmesg -S
 # or
 cat /proc/sys/kernel/printk_devkmsg

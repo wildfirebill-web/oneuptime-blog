@@ -57,6 +57,7 @@ flowchart TB
 
 ```bash
 # Install Tekton Pipelines
+
 kubectl apply --filename https://storage.googleapis.com/tekton-releases/pipeline/latest/release.yaml
 
 # Install Tekton Triggers

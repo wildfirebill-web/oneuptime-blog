@@ -23,6 +23,7 @@ On Talos Linux, where the OS is immutable and stateless, Velero is especially im
 
 ```bash
 # macOS
+
 brew install velero
 
 # Linux

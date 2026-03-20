@@ -57,6 +57,7 @@ Here's a minimal configuration that converts cumulative sums to deltas:
 
 ```yaml
 # Basic cumulative to delta processor configuration
+
 # Converts all cumulative sums to delta sums
 receivers:
   otlp:

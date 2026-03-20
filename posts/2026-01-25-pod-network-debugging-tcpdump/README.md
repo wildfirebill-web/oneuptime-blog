@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Kubernetes, Networking, Tcpdump, Debugging, Troubleshooting
+Tags: Kubernetes, Networking, tcpdump, Debugging, Troubleshooting
 
 Description: Learn how to capture and analyze network traffic in Kubernetes pods using tcpdump, including ephemeral debug containers, sidecar approaches, and interpreting packet captures for troubleshooting.
 
@@ -34,6 +34,7 @@ Kubernetes 1.25+ supports ephemeral containers for debugging running pods:
 
 ```bash
 # Add a debug container to a running pod
+
 # This container shares the network namespace of the target container
 kubectl debug -it my-app-xyz -n production \
   --image=nicolaka/netshoot \

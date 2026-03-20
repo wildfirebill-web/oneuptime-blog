@@ -1,4 +1,4 @@
-# How to Configure Standard User Permissions in Portainer
+# How to Configure Standard User Permissions in Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Configure what Standard Users can see and do in Portainer environme
 
 ## Introduction
 
-The Standard User role is the default role for most Portainer users — it provides full management capabilities within assigned environments without global admin privileges. This guide covers what Standard Users can do, how to configure their environment access, and how to restrict capabilities further using resource controls.
+The Standard User role is the default role for most Portainer users - it provides full management capabilities within assigned environments without global admin privileges. This guide covers what Standard Users can do, how to configure their environment access, and how to restrict capabilities further using resource controls.
 
 ## Standard User Capabilities
 
@@ -57,6 +57,7 @@ TOKEN=$(curl -s -X POST \
   | python3 -c "import sys,json; print(json.load(sys.stdin)['jwt'])")
 
 # Assign team 2 (developers) to environment 1 with Standard User role
+
 curl -X PUT \
   -H "Authorization: Bearer $TOKEN" \
   -H "Content-Type: application/json" \
@@ -76,7 +77,7 @@ curl -X PUT \
   }'
 ```
 
-## Resource Controls (Ownership)
+Resource Controls (Ownership)
 
 Portainer supports resource-level ownership to control which users can manage specific containers:
 

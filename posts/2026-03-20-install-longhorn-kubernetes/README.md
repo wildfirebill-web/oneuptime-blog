@@ -25,6 +25,7 @@ Longhorn provides a script to check if your environment meets all prerequisites:
 
 ```bash
 # Download and run the environment check script
+
 curl -sSfL https://raw.githubusercontent.com/longhorn/longhorn/v1.7.0/scripts/environment_check.sh | bash
 ```
 

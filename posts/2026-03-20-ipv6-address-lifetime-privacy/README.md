@@ -44,6 +44,7 @@ The defaults from RFC 4941 are:
 
 ```bash
 # Show all IPv6 privacy-related sysctl values for eth0
+
 sysctl -a | grep -E "eth0.*(temp|addr_gen|use_temp)"
 
 # Show lifetimes for all interfaces

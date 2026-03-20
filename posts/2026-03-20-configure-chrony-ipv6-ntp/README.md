@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: chrony, NTP, IPv6, Time Synchronization, Linux, chronyd
+Tags: Chrony, NTP, IPv6, Time Synchronization, Linux, Chronyd
 
 Description: Configure chronyd (chrony) to synchronize time over IPv6, serve NTP to IPv6 clients, and use IPv6-accessible NTP pool servers on Linux systems.
 
@@ -14,6 +14,7 @@ chrony is the modern NTP implementation used by default on RHEL, CentOS, Fedora,
 
 ```bash
 # RHEL/CentOS/AlmaLinux/Fedora
+
 sudo dnf install chrony -y
 
 # Ubuntu/Debian

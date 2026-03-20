@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Tc, Bandwidth, Traffic Control, Linux
+Tags: RHEL, tc, Bandwidth, Traffic Control, Linux
 
 Description: A practical guide to using the tc (traffic control) command on RHEL to limit and manage network bandwidth on specific interfaces, for specific applications, or for specific traffic types.
 
@@ -30,6 +30,7 @@ The Token Bucket Filter (tbf) is the simplest way to cap bandwidth on an interfa
 
 ```bash
 # Limit ens192 to 100 Mbits/sec
+
 sudo tc qdisc add dev ens192 root tbf rate 100mbit burst 32kbit latency 400ms
 
 # Verify

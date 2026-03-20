@@ -8,7 +8,7 @@ Description: Learn how to configure Nginx as a caching reverse proxy to reduce u
 
 ## Why Cache at the Proxy Layer?
 
-Caching at Nginx means repeated requests for the same content never hit your application server. This reduces latency, cuts upstream CPU/DB load, and protects against traffic spikes—all without changing application code.
+Caching at Nginx means repeated requests for the same content never hit your application server. This reduces latency, cuts upstream CPU/DB load, and protects against traffic spikes-all without changing application code.
 
 ## Defining a Cache Zone
 
@@ -16,6 +16,7 @@ Cache configuration is set in the `http` block:
 
 ```nginx
 # /etc/nginx/nginx.conf
+
 http {
     # Define cache path, directory levels, shared memory zone name and size,
     # inactive eviction time, and maximum cache size on disk

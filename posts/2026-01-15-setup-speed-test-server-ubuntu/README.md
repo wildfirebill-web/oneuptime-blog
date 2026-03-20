@@ -36,6 +36,7 @@ Update your system packages to ensure you have the latest security patches.
 
 ```bash
 # Update package lists and upgrade installed packages
+
 # -y flag automatically answers yes to prompts
 sudo apt update && sudo apt upgrade -y
 

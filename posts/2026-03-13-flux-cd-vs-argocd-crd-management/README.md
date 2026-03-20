@@ -26,6 +26,7 @@ Flux CD's Kustomize Controller applies CRDs before other resources by default, f
 
 ```yaml
 # Install cert-manager CRDs before the operator
+
 # clusters/production/infrastructure/cert-manager.yaml
 ---
 # Step 1: CRDs (applied first due to resource ordering)

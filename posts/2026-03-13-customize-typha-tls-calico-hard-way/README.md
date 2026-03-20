@@ -20,6 +20,7 @@ If your organization uses an internal CA (e.g., HashiCorp Vault, Active Director
 
 ```bash
 # Configure Vault PKI secrets engine
+
 vault secrets enable pki
 vault write pki/root/generate/internal \
   common_name="calico-typha-ca" ttl=87600h

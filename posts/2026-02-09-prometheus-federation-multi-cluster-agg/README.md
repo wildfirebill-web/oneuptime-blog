@@ -25,6 +25,7 @@ Configure a central Prometheus to federate from cluster Prometheus instances:
 
 ```yaml
 # central-prometheus-values.yaml
+
 prometheus:
   prometheusSpec:
     # Disable local scraping since this is a federation-only instance

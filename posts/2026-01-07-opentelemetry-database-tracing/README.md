@@ -164,6 +164,7 @@ For Python applications, here is the equivalent setup. This configures the OpenT
 
 ```python
 # tracing.py - OpenTelemetry configuration for Python applications
+
 # Import this module at the very beginning of your application
 
 from opentelemetry import trace

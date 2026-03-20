@@ -75,6 +75,7 @@ Proper DNS records are critical for mail delivery and avoiding spam filters.
 
 ```bash
 # A Record - Points your mail server hostname to its IP
+
 mail.example.com.    IN  A      203.0.113.10
 
 # MX Record - Tells other servers where to deliver mail for your domain

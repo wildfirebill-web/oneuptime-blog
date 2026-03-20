@@ -14,6 +14,7 @@ FreeIPA provides centralized identity, authentication, and authorization for Lin
 
 ```yaml
 # roles/freeipa_server/tasks/main.yml
+
 ---
 - name: Install FreeIPA server packages
   ansible.builtin.apt:

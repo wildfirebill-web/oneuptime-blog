@@ -1,14 +1,14 @@
-# How to Implement Canary Deployments in Rancher
+# How to Implement Canary Deployments in Rancher - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Kubernetes, Canary, Deployments, CI/CD
+Tags: Rancher, Kubernetes, Canary, Deployment, CI/CD
 
 Description: Implement canary deployments in Rancher-managed Kubernetes clusters to gradually shift traffic to new versions using weighted routing and automated analysis.
 
 ## Introduction
 
-A canary deployment gradually introduces a new version to a small percentage of users before rolling it out fully. This limits the blast radius of a bad release — if the canary shows high error rates or latency, it can be rolled back before most users are affected. This guide implements canary deployments using nginx-ingress weighted routing and Kubernetes deployments in Rancher.
+A canary deployment gradually introduces a new version to a small percentage of users before rolling it out fully. This limits the blast radius of a bad release - if the canary shows high error rates or latency, it can be rolled back before most users are affected. This guide implements canary deployments using nginx-ingress weighted routing and Kubernetes deployments in Rancher.
 
 ## How Canary Works
 
@@ -20,6 +20,7 @@ A canary deployment gradually introduces a new version to a small percentage of 
 
 ```yaml
 # stable/deployment.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -121,7 +122,7 @@ spec:
     - port: 80
       targetPort: 8080
 ---
-# Canary ingress — routes a percentage of traffic to the canary
+# Canary ingress - routes a percentage of traffic to the canary
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
@@ -149,7 +150,7 @@ spec:
 
 ```bash
 #!/usr/bin/env bash
-# canary-promote.sh — Gradually promote the canary
+# canary-promote.sh - Gradually promote the canary
 
 NAMESPACE="production"
 CANARY_INGRESS="myapp-canary"
@@ -192,7 +193,7 @@ for weight in 10 25 50 100; do
   fi
 done
 
-echo "Canary promotion complete — 100% traffic on new version"
+echo "Canary promotion complete - 100% traffic on new version"
 ```
 
 ## Step 4: Canary by Header (Cookie-Based)
@@ -225,7 +226,7 @@ kubectl apply -n argo-rollouts \
 ```
 
 ```yaml
-# rollout.yaml — Automated canary rollout
+# rollout.yaml - Automated canary rollout
 apiVersion: argoproj.io/v1alpha1
 kind: Rollout
 metadata:

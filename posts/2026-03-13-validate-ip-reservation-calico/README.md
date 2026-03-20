@@ -28,6 +28,7 @@ Use the `IPAMConfig` or direct block manipulation to reserve specific IPs.
 
 ```yaml
 # ipreservation.yaml - reserve specific IPs in a Calico IP pool
+
 # Method: Use a dedicated IPPool for reserved IPs and mark it as disabled
 apiVersion: projectcalico.org/v3
 kind: IPPool

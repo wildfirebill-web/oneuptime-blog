@@ -24,6 +24,7 @@ Quick check:
 
 ```bash
 # Verify Helm is installed and connected
+
 helm version
 kubectl get nodes
 ```

@@ -32,6 +32,7 @@ The REST API for creating a twin uses a PUT request to the `/digitaltwins/{twin-
 
 ```bash
 # Set your variables
+
 ADT_HOST="https://my-digital-twins.api.eus.digitaltwins.azure.net"
 TOKEN=$(az account get-access-token --resource https://digitaltwins.azure.net --query accessToken -o tsv)
 

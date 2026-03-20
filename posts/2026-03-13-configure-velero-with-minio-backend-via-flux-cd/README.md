@@ -25,6 +25,7 @@ Velero's AWS plugin works with any S3-compatible storage, including MinIO. By po
 
 ```yaml
 # infrastructure/minio/helmrepository.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

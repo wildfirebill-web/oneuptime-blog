@@ -48,6 +48,7 @@ Create topics for state synchronization:
 
 ```bash
 # Topic for desired state changes (cloud to device)
+
 gcloud pubsub topics create device-desired-state
 
 # Topic for reported state updates (device to cloud)

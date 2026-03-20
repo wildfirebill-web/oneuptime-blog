@@ -27,6 +27,7 @@ Define a custom resource for workload placement policies:
 
 ```yaml
 # workloadplacement-crd.yaml
+
 apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:

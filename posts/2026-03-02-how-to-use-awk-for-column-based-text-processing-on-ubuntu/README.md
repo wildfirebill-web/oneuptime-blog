@@ -24,6 +24,7 @@ If a line matches the pattern, the action executes. If you omit the pattern, the
 
 ```bash
 # Print every line (default action is print)
+
 awk '{ print }' /etc/passwd
 
 # Print only lines containing "bash"

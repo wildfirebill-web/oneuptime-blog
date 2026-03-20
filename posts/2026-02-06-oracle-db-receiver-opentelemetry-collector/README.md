@@ -47,6 +47,7 @@ Start monitoring an Oracle Database with this minimal configuration:
 
 ```yaml
 # Receivers section - defines how telemetry enters the Collector
+
 receivers:
   # Oracle DB receiver for Oracle Database monitoring
   oracledb:

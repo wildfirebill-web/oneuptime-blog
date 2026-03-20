@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Canary Deployment, Progressive Delivery, AWS, Kubernetes, Infrastructure as Code, Reliability
+Tags: OpenTofu, Canary Deployments, Progressive Delivery, AWS, Kubernetes, Infrastructure as Code, Reliability
 
 Description: Learn how to implement canary deployments using OpenTofu to progressively release new versions to a small subset of users before full rollout.
 
@@ -14,6 +14,7 @@ Canary deployments release new versions to a small percentage of users first, va
 
 ```hcl
 # main.tf
+
 terraform {
   required_providers {
     aws = {
@@ -128,14 +129,14 @@ resource "kubernetes_manifest" "app_rollout" {
             { setWeight = 5 },                    # 5% to canary
             { pause = { duration = "5m" } },       # Wait 5 minutes
             { setWeight = 20 },                    # 20% to canary
-            { pause = { duration = "10m" } },      # Wait 10 minutes — monitor metrics
+            { pause = { duration = "10m" } },      # Wait 10 minutes - monitor metrics
             { setWeight = 50 },                    # 50% to canary
             { pause = { duration = "10m" } },
             { setWeight = 80 },                    # 80% to canary
             { pause = { duration = "5m" } },
           ]
 
-          # Automated analysis — abort rollout if error rate exceeds 1%
+          # Automated analysis - abort rollout if error rate exceeds 1%
           analysis {
             templates = [{
               templateName = "error-rate-check"
@@ -225,7 +226,7 @@ resource "kubernetes_manifest" "error_rate_analysis" {
 ## Best Practices
 
 - Start with a small canary weight (1-5%) to limit blast radius.
-- Define automated promotion and abort criteria based on error rates and latency — don't rely on manual observation.
+- Define automated promotion and abort criteria based on error rates and latency - don't rely on manual observation.
 - Keep canary deployments to under 30 minutes for single-service updates to minimize the window of dual-version operation.
 - Use canary analysis with Prometheus or Datadog to make data-driven promotion decisions.
 - Maintain database schema backward compatibility so both versions can run simultaneously during the canary window.

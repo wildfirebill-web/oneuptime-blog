@@ -33,6 +33,7 @@ Offset pagination uses `skip` and `limit` parameters, similar to SQL OFFSET/LIMI
 
 ```graphql
 # schema.graphql - Offset-based pagination schema
+
 type Query {
   # Simple offset pagination
   # skip: Number of items to skip

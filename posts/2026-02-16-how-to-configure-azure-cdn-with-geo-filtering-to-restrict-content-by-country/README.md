@@ -65,6 +65,7 @@ Here is how to add a geo-filtering rule that blocks traffic from specific countr
 
 ```bash
 # Add a geo-filtering rule to block access from two countries
+
 # Replace the values with your actual resource group, profile, and endpoint names
 az cdn endpoint rule add \
   --resource-group myResourceGroup \

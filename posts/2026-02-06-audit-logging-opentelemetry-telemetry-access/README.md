@@ -45,6 +45,7 @@ When collectors receive data from instrumented applications, you can require an 
 
 ```yaml
 # Collector config that uses the OIDC authenticator
+
 # to identify and log which service sent telemetry data
 extensions:
   oidc:

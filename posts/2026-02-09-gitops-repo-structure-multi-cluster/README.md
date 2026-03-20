@@ -216,6 +216,7 @@ Define the core application in base:
 
 ```yaml
 # base/apps/api-server/deployment.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

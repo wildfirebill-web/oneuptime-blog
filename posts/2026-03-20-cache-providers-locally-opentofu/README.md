@@ -14,6 +14,7 @@ Every `tofu init` downloads provider binaries from the registry unless a cache i
 
 ```bash
 # Set the cache directory via environment variable
+
 export TF_PLUGIN_CACHE_DIR="$HOME/.terraform.d/plugin-cache"
 mkdir -p "$TF_PLUGIN_CACHE_DIR"
 
@@ -43,7 +44,7 @@ When `tofu init` runs:
   uses: actions/cache@v4
   with:
     path: ~/.terraform.d/plugin-cache
-    # Cache key based on lock file — invalidates when providers change
+    # Cache key based on lock file - invalidates when providers change
     key: ${{ runner.os }}-tofu-providers-${{ hashFiles('**/.terraform.lock.hcl') }}
     restore-keys: |
       ${{ runner.os }}-tofu-providers-
@@ -99,7 +100,7 @@ TF_PLUGIN_CACHE_DIR=/shared/tofu-cache tofu init
 
 ## Cache Directory Structure
 
-```
+```text
 ~/.terraform.d/plugin-cache/
 └── registry.opentofu.org/
     └── hashicorp/

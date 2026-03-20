@@ -1,8 +1,8 @@
-# How to Implement Monitoring Best Practices in Rancher
+# How to Implement Monitoring Best Practices in Rancher - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: rancher, monitoring, prometheus, grafana, best-practices
+Tags: Rancher, Monitoring, Prometheus, Grafana, Best-practices
 
 Description: Guide to implementing comprehensive monitoring best practices in Rancher for full observability.
 
@@ -24,6 +24,7 @@ Always define your Rancher configuration as code:
 
 ```yaml
 # cluster-definition.yaml - Define clusters declaratively
+
 apiVersion: provisioning.cattle.io/v1
 kind: Cluster
 metadata:

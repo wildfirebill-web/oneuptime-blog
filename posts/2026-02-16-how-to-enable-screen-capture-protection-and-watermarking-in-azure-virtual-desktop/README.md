@@ -41,6 +41,7 @@ Here is how to install the templates using PowerShell on a session host:
 
 ```powershell
 # Download the AVD ADMX templates from Microsoft
+
 # This downloads the template MSI installer to a temp directory
 $templateUrl = "https://aka.ms/avdgpo"
 $outputPath = "$env:TEMP\AVDGroupPolicyTemplates.msi"

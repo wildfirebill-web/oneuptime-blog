@@ -22,6 +22,7 @@ The most straightforward approach is to use label selectors on default subscript
 
 ```yaml
 # argocd-notifications-cm
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

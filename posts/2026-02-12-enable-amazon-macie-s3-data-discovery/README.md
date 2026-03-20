@@ -36,6 +36,7 @@ Enabling Macie is straightforward. It starts monitoring your S3 bucket inventory
 
 ```bash
 # Enable Macie in your account
+
 aws macie2 enable-macie
 
 # Verify it's enabled

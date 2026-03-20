@@ -16,6 +16,7 @@ Before diving into diagnostics, here are the typical error messages that indicat
 
 ```text
 # DNS resolution failure
+
 failed to checkout and determine revision: unable to clone: dial tcp: lookup github.com: no such host
 
 # Connection timeout

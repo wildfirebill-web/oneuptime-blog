@@ -38,6 +38,7 @@ First, push several versioned artifacts to your registry.
 
 ```bash
 # Push multiple versions of an artifact
+
 flux push artifact oci://registry.example.com/manifests/app:1.0.0 \
   --path=./deploy-v1.0.0 \
   --source="$(git config --get remote.origin.url)" \

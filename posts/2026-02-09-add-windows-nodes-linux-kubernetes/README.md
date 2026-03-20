@@ -24,6 +24,7 @@ Provision a Windows Server instance with these specifications:
 
 ```powershell
 # Minimum requirements
+
 # Windows Server 2019 or 2022
 # 2 vCPUs
 # 4 GB RAM

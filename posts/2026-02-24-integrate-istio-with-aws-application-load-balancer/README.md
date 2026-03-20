@@ -260,6 +260,7 @@ Check the ALB health and target group status:
 
 ```bash
 # Get ALB ARN
+
 ALB_ARN=$(aws elbv2 describe-load-balancers --names k8s-istiosys-istioing --query 'LoadBalancers[0].LoadBalancerArn' --output text)
 
 # Check target health

@@ -51,6 +51,7 @@ Now the first connection to `frequent-server` becomes the control master. All su
 
 ```bash
 # First connection - establishes the control master
+
 ssh frequent-server
 
 # In a new terminal - reuses the existing connection (no authentication needed)

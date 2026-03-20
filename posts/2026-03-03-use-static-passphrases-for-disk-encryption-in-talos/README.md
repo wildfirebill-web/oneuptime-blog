@@ -75,6 +75,7 @@ The security of your encryption depends directly on the strength of your passphr
 
 ```bash
 # Generate a random passphrase
+
 openssl rand -base64 48
 # Output: something like "k7Jm3Fq9+vX2nL8/pR5wZ0aY1bC6dE4gH=iK..."
 ```

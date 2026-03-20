@@ -18,6 +18,7 @@ While the built-in recipes in Podman AI Lab cover common use cases, many project
 
 ```bash
 # Ensure Podman and AI Lab are set up with a downloaded model
+
 podman info --format '{{.Version.Version}}'
 podman machine ssh ls /var/lib/containers/ai-lab/models/
 

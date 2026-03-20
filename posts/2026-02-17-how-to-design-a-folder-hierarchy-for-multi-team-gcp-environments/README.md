@@ -135,6 +135,7 @@ Let me walk through implementing the recommended hybrid pattern step by step.
 
 ```bash
 # Create the four top-level folders
+
 gcloud resource-manager folders create \
   --display-name="Production" \
   --organization=ORGANIZATION_ID

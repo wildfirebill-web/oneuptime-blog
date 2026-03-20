@@ -142,6 +142,7 @@ resource "aws_s3_bucket_lifecycle_configuration" "data" {
 
 ```hcl
 # CloudWatch metric to track S3 storage costs
+
 resource "aws_cloudwatch_metric_alarm" "s3_storage" {
   alarm_name          = "${var.bucket_name}-storage-size"
   comparison_operator = "GreaterThanThreshold"
@@ -169,4 +170,4 @@ tofu apply
 
 ## Conclusion
 
-S3 lifecycle rules are one of the most effective cost optimization tools for S3. A typical transition pattern—STANDARD for 30 days, STANDARD_IA for 30-90 days, GLACIER for 90-365 days, then DELETE—can reduce storage costs by 80%+ for log data. Always configure `abort_incomplete_multipart_upload` to prevent orphaned uploads from accumulating hidden costs.
+S3 lifecycle rules are one of the most effective cost optimization tools for S3. A typical transition pattern-STANDARD for 30 days, STANDARD_IA for 30-90 days, GLACIER for 90-365 days, then DELETE-can reduce storage costs by 80%+ for log data. Always configure `abort_incomplete_multipart_upload` to prevent orphaned uploads from accumulating hidden costs.

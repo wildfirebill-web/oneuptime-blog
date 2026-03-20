@@ -115,6 +115,7 @@ For Python producers (using kafka-python):
 from kafka import KafkaProducer
 
 # Create producer with increased message size limits
+
 producer = KafkaProducer(
     bootstrap_servers=['localhost:9092'],
     # Maximum size of a request in bytes (10MB)

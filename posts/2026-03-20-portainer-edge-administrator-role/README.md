@@ -1,4 +1,4 @@
-# How to Set Up the Edge Administrator Role in Portainer
+# How to Set Up the Edge Administrator Role in Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -56,6 +56,7 @@ TOKEN=$(curl -s -X POST \
   | python3 -c "import sys,json; print(json.load(sys.stdin)['jwt'])")
 
 # Create a new Edge Administrator
+
 curl -X POST \
   -H "Authorization: Bearer $TOKEN" \
   -H "Content-Type: application/json" \
@@ -79,7 +80,7 @@ curl -X PUT \
 
 ## Typical Deployment Scenario
 
-```
+```text
 Org Structure:
   Central IT Team → Global Administrators
   US Branch IT   → Edge Administrator (manages US edge environments)

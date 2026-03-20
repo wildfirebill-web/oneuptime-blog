@@ -61,6 +61,7 @@ resource "azurerm_resource_group" "events" {
 }
 
 # Create a custom Event Grid topic
+
 resource "azurerm_eventgrid_topic" "orders" {
   name                = "egt-orders-prod-001"
   location            = azurerm_resource_group.events.location

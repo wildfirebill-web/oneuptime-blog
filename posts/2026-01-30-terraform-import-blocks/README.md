@@ -74,6 +74,7 @@ First, gather the IDs of resources you want to import. Each provider uses differ
 
 ```bash
 # AWS EC2 instances use instance IDs
+
 aws ec2 describe-instances --query 'Reservations[].Instances[].InstanceId'
 
 # Azure resources use full resource IDs

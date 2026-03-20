@@ -58,6 +58,7 @@ Export failed: dial tcp 127.0.0.1:4317: connect: connection refused
 
 ```bash
 # Step 1: Verify the Collector is running
+
 docker ps | grep otel-collector
 
 # Step 2: Check if the port is listening

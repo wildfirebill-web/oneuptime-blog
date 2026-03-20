@@ -32,6 +32,7 @@ Ubuntu includes syslog-ng in its standard repositories:
 
 ```bash
 # Stop and disable rsyslog first
+
 sudo systemctl stop rsyslog
 sudo systemctl disable rsyslog
 

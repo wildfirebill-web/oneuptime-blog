@@ -20,6 +20,7 @@ The Quadlet generator can run in dry-run mode to validate files without installi
 
 ```bash
 # Validate all Quadlet files in the standard directory
+
 /usr/lib/systemd/system-generators/podman-system-generator --user --dryrun
 ```
 

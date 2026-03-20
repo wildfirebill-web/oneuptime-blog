@@ -29,6 +29,7 @@ Before checking Hubble, ensure the underlying Cilium deployment is healthy:
 
 ```bash
 # Check Cilium overall status
+
 cilium status --brief
 
 # Verify all Cilium agent pods are running

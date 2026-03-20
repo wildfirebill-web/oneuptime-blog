@@ -25,6 +25,7 @@ graph LR
 
 ```yaml
 # roles/argocd_install/tasks/main.yml
+
 # Install ArgoCD on Kubernetes
 ---
 - name: Create ArgoCD namespace

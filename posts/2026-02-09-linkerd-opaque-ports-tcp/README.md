@@ -31,6 +31,7 @@ Deploy a sample TCP service like MySQL:
 
 ```yaml
 # mysql-deployment.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

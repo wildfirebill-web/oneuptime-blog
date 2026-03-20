@@ -41,6 +41,7 @@ Create a continuous deployment policy:
 
 ```bash
 # Create the policy
+
 aws cloudfront create-continuous-deployment-policy \
   --continuous-deployment-policy-config '{
     "StagingDistributionDnsNames": {

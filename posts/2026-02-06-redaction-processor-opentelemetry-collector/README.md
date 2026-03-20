@@ -52,6 +52,7 @@ Here is a basic configuration with default patterns:
 
 ```yaml
 # RECEIVERS: Accept telemetry via OTLP
+
 receivers:
   otlp:
     protocols:

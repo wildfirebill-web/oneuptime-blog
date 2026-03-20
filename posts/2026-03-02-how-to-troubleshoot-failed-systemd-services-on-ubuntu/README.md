@@ -16,6 +16,7 @@ The first thing to do when you suspect something is wrong is check what is actua
 
 ```bash
 # Show all failed units
+
 systemctl --failed
 
 # Same output, slightly different format

@@ -40,6 +40,7 @@ The following commands create a health check and a backend service for a typical
 
 ```bash
 # Create a health check that the load balancer uses to verify backend health
+
 gcloud compute health-checks create http my-health-check \
     --port=80 \
     --request-path="/" \

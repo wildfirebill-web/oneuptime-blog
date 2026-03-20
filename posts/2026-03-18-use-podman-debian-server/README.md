@@ -244,6 +244,7 @@ Create production-grade container services using Quadlet:
 
 ```ini
 # /etc/containers/systemd/production-app.container
+
 [Container]
 ContainerName=production-app
 Image=myapp:latest

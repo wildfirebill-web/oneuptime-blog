@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: C, IPv4, select, Non-Blocking, POSIX, Networking
+Tags: C, IPv4, Select, Non-Blocking, POSIX, Networking
 
 Description: Learn how to use the POSIX select() function to multiplex multiple IPv4 TCP connections in a single-threaded C server, avoiding blocking on any one socket.
 
@@ -118,6 +118,7 @@ gcc -Wall -o select_server select_server.c
 ./select_server
 
 # Test with multiple clients
+
 for i in 1 2 3; do
     echo "client $i" | nc -q1 127.0.0.1 9000 &
 done
@@ -134,4 +135,4 @@ done
 
 ## Conclusion
 
-`select()` is the portable way to multiplex multiple sockets in a single thread. Rebuild the `fd_set` before every call since `select()` modifies it in place. Track client fds in an array and scan for ready fds after `select()` returns. The hard limit of `FD_SETSIZE` (1024) makes `select()` unsuitable for high-connection-count servers — use `poll()` for unlimited fds or `epoll()` (Linux) for O(1) scalability. `select()` is still valuable for simple tools, test code, and portable applications.
+`select()` is the portable way to multiplex multiple sockets in a single thread. Rebuild the `fd_set` before every call since `select()` modifies it in place. Track client fds in an array and scan for ready fds after `select()` returns. The hard limit of `FD_SETSIZE` (1024) makes `select()` unsuitable for high-connection-count servers - use `poll()` for unlimited fds or `epoll()` (Linux) for O(1) scalability. `select()` is still valuable for simple tools, test code, and portable applications.

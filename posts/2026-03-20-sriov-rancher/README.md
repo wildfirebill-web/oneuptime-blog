@@ -1,8 +1,8 @@
-# How to Configure SR-IOV in Rancher
+# How to Configure SR-IOV in Rancher - Sriov
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: rancher, sriov, networking, kubernetes, high-performance
+Tags: Rancher, Sriov, Networking, Kubernetes, High-Performance
 
 Description: Guide to configuring SR-IOV network virtualization in Rancher for high-performance network workloads.
 
@@ -25,6 +25,7 @@ Network configuration in Rancher-managed Kubernetes clusters leverages the CNI (
 
 ```bash
 # Check current CNI plugin
+
 kubectl get configmap -n kube-system kube-proxy -o yaml | grep mode
 
 # Check network policies

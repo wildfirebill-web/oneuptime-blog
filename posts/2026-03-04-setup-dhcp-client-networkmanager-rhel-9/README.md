@@ -31,6 +31,7 @@ The simplest DHCP setup is the default - just create a connection with automatic
 
 ```bash
 # Create a basic DHCP connection
+
 nmcli connection add \
   con-name "dhcp-primary" \
   ifname ens192 \

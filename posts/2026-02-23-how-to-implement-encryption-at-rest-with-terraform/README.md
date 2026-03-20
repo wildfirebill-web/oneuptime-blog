@@ -21,6 +21,7 @@ Before encrypting anything, you need encryption keys. AWS Key Management Service
 
 ```hcl
 # Create a customer-managed KMS key for general encryption
+
 resource "aws_kms_key" "main" {
   description             = "Main encryption key for ${var.environment}"
   deletion_window_in_days = 30

@@ -120,6 +120,7 @@ Example `.env.example`:
 
 ```bash
 # .env.example
+
 # Copy this file to .env and fill in real values
 
 # Server Configuration

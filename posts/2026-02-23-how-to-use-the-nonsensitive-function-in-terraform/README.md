@@ -183,6 +183,7 @@ During development, you might need to temporarily see a sensitive value:
 
 ```hcl
 # ONLY FOR DEBUGGING - remove before committing!
+
 output "debug_secret" {
   value = nonsensitive(var.db_password)
   # WARNING: This exposes the secret in terraform output

@@ -47,6 +47,7 @@ sequenceDiagram
 
 ```python
 # auth.py - Basic Authorization Code Flow
+
 import os
 import secrets
 from urllib.parse import urlencode

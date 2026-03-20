@@ -28,6 +28,7 @@ provider "aws" {
 }
 
 # Reference the existing Route53 hosted zone
+
 data "aws_route53_zone" "main" {
   name         = "example.com"
   private_zone = false

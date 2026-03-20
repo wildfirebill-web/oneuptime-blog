@@ -34,6 +34,7 @@ Common URL mistakes:
 
 ```bash
 # Missing the stage name
+
 # WRONG:
 curl https://abc123.execute-api.us-east-1.amazonaws.com/users
 

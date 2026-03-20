@@ -18,6 +18,7 @@ The most impactful cost optimization is using the right size for each resource:
 
 ```hcl
 # cost-optimization/right-sizing.tf
+
 # Environment-aware resource sizing
 
 variable "environment" {
@@ -65,7 +66,7 @@ resource "aws_db_instance" "main" {
 }
 ```
 
-## Resource Scheduling for Non-Production
+Resource Scheduling for Non-Production
 
 Stop non-production resources outside business hours:
 

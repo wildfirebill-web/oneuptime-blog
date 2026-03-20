@@ -45,6 +45,7 @@ resource "aws_eks_cluster" "private" {
 
 ```hcl
 # Security group for VPC endpoints
+
 resource "aws_security_group" "vpc_endpoints" {
   name        = "${var.cluster_name}-vpc-endpoints-sg"
   description = "Security group for VPC endpoints"

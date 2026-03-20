@@ -31,6 +31,7 @@ Let's start with a simple example where we define multiple containers in a Kuber
 
 ```hcl
 # variables.tf
+
 variable "containers" {
   description = "List of containers to deploy"
   type = list(object({

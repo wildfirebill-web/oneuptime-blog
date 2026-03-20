@@ -66,6 +66,7 @@ sequenceDiagram
 
 ```yaml
 # pdb-min-available.yaml
+
 # Ensure at least 2 pods of the web-app are always available
 # during voluntary disruptions like node drains.
 apiVersion: policy/v1

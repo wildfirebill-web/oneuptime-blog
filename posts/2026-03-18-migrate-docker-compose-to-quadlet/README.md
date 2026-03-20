@@ -28,6 +28,7 @@ Here is a typical Docker Compose application to migrate:
 
 ```yaml
 # docker-compose.yml
+
 version: "3.9"
 services:
   web:

@@ -65,6 +65,7 @@ Let us start with a basic compactor configuration. The compactor settings are de
 
 ```yaml
 # tempo.yaml - Basic compactor configuration
+
 compactor:
   # The compactor ring is used for sharding compaction jobs
   ring:

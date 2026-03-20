@@ -43,6 +43,7 @@ Cloud Data Fusion publishes metrics to Cloud Monitoring that you can use for ale
 
 ```yaml
 # Alert policy for any pipeline failure in the namespace
+
 Resource type: Cloud Data Fusion Pipeline
 Metric: pipeline/run_count
 Filter: status = "FAILED"

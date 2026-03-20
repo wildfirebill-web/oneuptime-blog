@@ -16,6 +16,7 @@ The first layer of monitoring comes from Kubernetes itself. Track pod restarts, 
 
 ```promql
 # Pods with high restart counts
+
 kube_pod_container_status_restarts_total{namespace="default"} > 5
 
 # Rate of restarts (restarts per hour)

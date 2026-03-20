@@ -30,6 +30,7 @@ First, check your state file size:
 
 ```bash
 # For S3 backend
+
 aws s3 ls s3://my-terraform-state/production/terraform.tfstate
 
 # For local state

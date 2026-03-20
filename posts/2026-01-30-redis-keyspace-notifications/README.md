@@ -91,6 +91,7 @@ You can enable notifications without restarting Redis using the CONFIG SET comma
 
 ```bash
 # Enable keyspace and keyevent notifications for all events
+
 redis-cli CONFIG SET notify-keyspace-events KEA
 ```
 

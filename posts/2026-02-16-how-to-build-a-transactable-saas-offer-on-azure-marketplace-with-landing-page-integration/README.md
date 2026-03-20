@@ -378,6 +378,7 @@ Before going live, test everything using the Marketplace sandbox. The sandbox le
 
 ```bash
 # Generate a test token for the landing page
+
 curl -X POST "https://marketplaceapi.microsoft.com/api/saas/subscriptions/resolve?api-version=2018-08-31" \
   -H "Authorization: Bearer $TOKEN" \
   -H "x-ms-marketplace-token: test-token-from-sandbox"

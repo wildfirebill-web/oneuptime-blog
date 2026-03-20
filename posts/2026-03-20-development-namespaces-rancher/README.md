@@ -14,6 +14,7 @@ Development namespaces give each developer or feature branch an isolated Kuberne
 
 ```bash
 # Create namespaces for individual developers
+
 for dev in alice bob charlie; do
   kubectl create namespace "dev-${dev}"
   kubectl label namespace "dev-${dev}" \

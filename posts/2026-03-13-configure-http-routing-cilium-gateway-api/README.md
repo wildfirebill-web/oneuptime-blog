@@ -116,6 +116,7 @@ GATEWAY_IP=$(kubectl get gateway http-gateway \
   -o jsonpath='{.status.addresses[0].value}')
 
 # Test path routing
+
 curl -H "Host: api.example.com" http://${GATEWAY_IP}/api/users
 curl -H "Host: api.example.com" http://${GATEWAY_IP}/
 

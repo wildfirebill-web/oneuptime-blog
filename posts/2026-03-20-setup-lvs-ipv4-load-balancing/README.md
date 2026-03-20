@@ -17,6 +17,7 @@ sudo apt-get update
 sudo apt-get install -y ipvsadm
 
 # Load the IPVS kernel module
+
 sudo modprobe ip_vs
 sudo modprobe ip_vs_rr
 sudo modprobe ip_vs_wrr
@@ -29,7 +30,7 @@ In NAT mode, the LVS director rewrites destination IPs. All traffic passes throu
 
 ### Network Setup
 
-```
+```text
 Client (any IP)
     ↓
 LVS Director: eth0=203.0.113.1 (public VIP), eth1=10.0.1.1 (private)
@@ -56,7 +57,7 @@ sudo ipvsadm -a -t 203.0.113.1:80 -r 10.0.1.12:80 -m
 
 ## LVS-DR Mode (Direct Routing)
 
-Real servers respond directly to clients — the director only handles incoming packets. Much faster than NAT.
+Real servers respond directly to clients - the director only handles incoming packets. Much faster than NAT.
 
 ### Director Configuration
 

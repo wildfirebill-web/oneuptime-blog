@@ -8,11 +8,11 @@ Description: Diagnose and fix FTP passive mode failures on IPv4 including blocke
 
 ## Introduction
 
-FTP passive mode failures are among the most common FTP problems. The symptoms—directory listings fail, file transfers hang, or connections drop after login—are all caused by the data connection failing. This guide covers systematic diagnosis from network connectivity to configuration issues.
+FTP passive mode failures are among the most common FTP problems. The symptoms-directory listings fail, file transfers hang, or connections drop after login-are all caused by the data connection failing. This guide covers systematic diagnosis from network connectivity to configuration issues.
 
 ## Understanding Passive Mode Failure Points
 
-```
+```text
 Client connects to server:21 → OK
 Client sends PASV command → OK
 Server responds with IP:PORT → This is where it goes wrong!
@@ -30,6 +30,7 @@ Failure causes:
 
 ```bash
 # Manual FTP session to see PASV response:
+
 telnet ftp.server.ip 21
 # USER ftpuser
 # PASS password

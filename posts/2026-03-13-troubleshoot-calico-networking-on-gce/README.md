@@ -28,6 +28,7 @@ GCE's globally-distributed VPC means that routes and firewall rules apply at the
 
 ```bash
 # Check VPC routes for pod CIDRs
+
 gcloud compute routes list --filter="destRange~192.168" \
   --format="table(name,destRange,nextHopInstance,nextHopInstanceZone)"
 

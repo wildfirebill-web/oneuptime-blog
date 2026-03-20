@@ -18,6 +18,7 @@ To start a recording from the command line:
 
 ```bash
 # Start the application with continuous JFR recording
+
 # maxage limits how much history is retained in the circular buffer
 # filename specifies where the recording is dumped on exit
 java -XX:StartFlightRecording=maxage=5m,filename=recording.jfr \

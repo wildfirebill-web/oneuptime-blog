@@ -47,6 +47,7 @@ This guide documents every network requirement for TFE so you can hand it to you
 
 ```hcl
 # TFE instance security group
+
 resource "aws_security_group" "tfe" {
   name        = "tfe-instance"
   description = "Security group for Terraform Enterprise"

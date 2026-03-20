@@ -72,6 +72,7 @@ Verify it is working:
 
 ```bash
 # Check the injected container spec
+
 kubectl get pod my-pod -n my-namespace -o jsonpath='{.spec.containers[?(@.name=="istio-proxy")].lifecycle}'
 ```
 

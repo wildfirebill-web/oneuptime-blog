@@ -33,6 +33,7 @@ You can enable flow logs on existing subnets without any downtime or disruption.
 
 ```bash
 # Enable flow logs on an existing subnet with recommended settings
+
 gcloud compute networks subnets update my-subnet \
     --region=us-central1 \
     --enable-flow-logs \

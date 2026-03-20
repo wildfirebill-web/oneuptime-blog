@@ -35,6 +35,7 @@ resource "google_pubsub_topic" "state" {
 }
 
 # Grant IoT Core permission to publish to Pub/Sub
+
 resource "google_pubsub_topic_iam_binding" "iot_publisher" {
   topic   = google_pubsub_topic.telemetry.id
   project = var.project_id
@@ -130,4 +131,4 @@ tofu apply tfplan
 
 ## Summary
 
-GCP Cloud IoT Core registries provide device management with secure MQTT/HTTP connections and automatic Pub/Sub routing. OpenTofu manages registries, Pub/Sub topics, IAM bindings, and device registrations as code — creating reproducible IoT infrastructure.
+GCP Cloud IoT Core registries provide device management with secure MQTT/HTTP connections and automatic Pub/Sub routing. OpenTofu manages registries, Pub/Sub topics, IAM bindings, and device registrations as code - creating reproducible IoT infrastructure.

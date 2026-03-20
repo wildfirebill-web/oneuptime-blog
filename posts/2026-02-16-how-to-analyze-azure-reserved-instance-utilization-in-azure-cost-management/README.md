@@ -43,6 +43,7 @@ For a comprehensive analysis, use the Cost Management API to pull reservation ut
 
 ```bash
 # Get reservation utilization summary for the last 30 days
+
 curl -X GET "https://management.azure.com/providers/Microsoft.Billing/billingAccounts/<billing-account-id>/providers/Microsoft.Consumption/reservationSummaries?grain=daily&startDate=2024-02-01&endDate=2024-03-01&api-version=2023-05-01" \
   -H "Authorization: Bearer $TOKEN" \
   -H "Content-Type: application/json"

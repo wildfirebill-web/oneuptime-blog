@@ -20,6 +20,7 @@ You can see the full list of Linux capabilities by checking the capabilities man
 
 ```bash
 # List all available Linux capabilities on your system
+
 man capabilities
 
 # Or view the abbreviated list

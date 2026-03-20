@@ -37,6 +37,7 @@ Configure ArgoCD for JSON logging:
 
 ```yaml
 # Enable JSON log format on all ArgoCD components
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

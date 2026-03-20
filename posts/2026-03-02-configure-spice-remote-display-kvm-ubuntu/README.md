@@ -31,6 +31,7 @@ sudo apt install \
   spice-vdagent
 
 # Verify SPICE support in QEMU
+
 qemu-system-x86_64 --display help | grep spice
 ```
 

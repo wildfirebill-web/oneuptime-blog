@@ -14,6 +14,7 @@ After configuring SLAAC on a Linux host or router, verification confirms that ad
 
 ```bash
 # Show all IPv6 addresses with lifetimes and state
+
 ip -6 addr show
 
 # SLAAC indicators to look for:

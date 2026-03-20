@@ -26,6 +26,7 @@ This guide provides a systematic troubleshooting workflow using Cilium's native 
 
 ```bash
 # Comprehensive status including component health
+
 cilium status --verbose
 
 # Check all Cilium pods are healthy

@@ -52,6 +52,7 @@ Here is a complete control plane configuration that allows worker workloads:
 
 ```yaml
 # controlplane.yaml
+
 cluster:
   clusterName: my-cluster
   controlPlane:
@@ -122,7 +123,7 @@ kubectl describe node cp-1 | grep Taints
 kubectl get nodes -o custom-columns=NAME:.metadata.name,TAINTS:.spec.taints
 ```
 
-## Resource Reservations
+Resource Reservations
 
 When running application workloads on control plane nodes, it is critical to reserve enough resources for the control plane components. Without reservations, application pods could starve etcd or the API server:
 

@@ -8,12 +8,13 @@ Description: Learn how to configure OpenTofu to deploy resources across multiple
 
 ## Introduction
 
-Many production architectures deploy resources across multiple AWS regions — primary and disaster recovery, global CloudFront + certificate in us-east-1, or edge locations. OpenTofu handles this through provider aliases: each alias represents a provider configuration for a specific region, and resources reference the appropriate alias.
+Many production architectures deploy resources across multiple AWS regions - primary and disaster recovery, global CloudFront + certificate in us-east-1, or edge locations. OpenTofu handles this through provider aliases: each alias represents a provider configuration for a specific region, and resources reference the appropriate alias.
 
 ## Provider Aliases for Multiple Regions
 
 ```hcl
 # Primary region
+
 provider "aws" {
   region = "us-east-1"
 }

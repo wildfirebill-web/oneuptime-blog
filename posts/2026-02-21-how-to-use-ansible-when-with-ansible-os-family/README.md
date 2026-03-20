@@ -29,6 +29,7 @@ Common values:
 
 ```yaml
 # show-os-family.yml - Display OS family information
+
 ---
 - name: Show OS family
   hosts: all

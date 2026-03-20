@@ -236,6 +236,7 @@ The Flux community maintains a dashboard with ID **16714** on Grafana.com. Impor
 
 ```bash
 # Download the dashboard JSON
+
 curl -s https://grafana.com/api/dashboards/16714/revisions/latest/download \
   -o flux-community-dashboard.json
 ```

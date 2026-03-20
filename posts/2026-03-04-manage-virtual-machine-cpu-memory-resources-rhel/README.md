@@ -14,6 +14,7 @@ Proper CPU and memory allocation ensures your virtual machines perform well with
 
 ```bash
 # Show CPU and memory for a VM
+
 sudo virsh dominfo rhel9-vm
 
 # View detailed CPU configuration

@@ -16,6 +16,7 @@ This guide covers creating ServiceAccounts, binding them to RBAC roles, configur
 
 ```hcl
 # providers.tf
+
 terraform {
   required_version = ">= 1.0"
 

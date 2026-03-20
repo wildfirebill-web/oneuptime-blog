@@ -24,6 +24,7 @@ When a Docker client is configured to use a mirror, it sends pull requests to th
 
 ```bash
 # Install Docker if not already installed
+
 sudo apt-get update
 sudo apt-get install -y ca-certificates curl gnupg
 sudo install -m 0755 -d /etc/apt/keyrings

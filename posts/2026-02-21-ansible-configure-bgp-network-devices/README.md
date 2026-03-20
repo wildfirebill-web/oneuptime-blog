@@ -31,6 +31,7 @@ graph LR
 
 ```yaml
 # inventory/bgp_routers.yml - Edge router inventory for BGP deployment
+
 ---
 all:
   children:

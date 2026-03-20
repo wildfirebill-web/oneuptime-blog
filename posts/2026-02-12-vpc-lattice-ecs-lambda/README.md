@@ -34,6 +34,7 @@ Create an IP target group for ECS:
 
 ```bash
 # Create the target group
+
 aws vpc-lattice create-target-group \
   --name "order-service-ecs" \
   --type IP \

@@ -1,8 +1,8 @@
-# How to Configure VXLAN Overlay in Rancher
+# How to Configure VXLAN Overlay in Rancher - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: rancher, vxlan, overlay-network, kubernetes, cni
+Tags: Rancher, VXLAN, Overlay-network, Kubernetes, CNI
 
 Description: Guide to configuring VXLAN overlay networking in Rancher for pod communication across nodes.
 
@@ -25,6 +25,7 @@ Network configuration in Rancher-managed Kubernetes clusters leverages the CNI (
 
 ```bash
 # Check current CNI plugin
+
 kubectl get configmap -n kube-system kube-proxy -o yaml | grep mode
 
 # Check network policies

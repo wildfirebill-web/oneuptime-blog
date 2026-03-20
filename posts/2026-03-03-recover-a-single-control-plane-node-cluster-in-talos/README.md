@@ -27,6 +27,7 @@ Before we talk about recovery, let us talk about what makes recovery possible:
 
 ```bash
 # Take etcd snapshots frequently
+
 # For a single-node cluster, do this at least daily
 talosctl etcd snapshot ./etcd-backup-$(date +%Y%m%d-%H%M%S).db \
   --nodes <cp-node-ip>

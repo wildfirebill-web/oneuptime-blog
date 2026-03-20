@@ -135,6 +135,7 @@ limits_config:
   reject_old_samples_max_age: 168h
 
 # Ruler configuration for alerting
+
 ruler:
   storage:
     type: local
@@ -347,6 +348,7 @@ Alert: {{ .Labels.alertname }}
 Service: {{ .Labels.service }}
 Severity: {{ .Labels.severity }}
 Description: {{ .Annotations.description }}
+
 Started: {{ .StartsAt.Format "2006-01-02 15:04:05 MST" }}
 {{ end }}
 {{- end }}

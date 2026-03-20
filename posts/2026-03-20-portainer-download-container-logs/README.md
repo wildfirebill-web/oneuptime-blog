@@ -1,4 +1,4 @@
-# How to Download Container Logs from Portainer
+# How to Download Container Logs from Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -34,6 +34,7 @@ For more control over the export:
 
 ```bash
 # Export all logs to a file:
+
 docker logs my-container > my-container-logs.txt 2>&1
 
 # Include timestamps:
@@ -179,7 +180,7 @@ echo "Logs downloaded: container-logs.txt"
 
 When sharing logs, include context:
 
-```
+```bash
 === Container Log Export ===
 Container:   my-app
 Image:       myorg/myapp:2.1.0

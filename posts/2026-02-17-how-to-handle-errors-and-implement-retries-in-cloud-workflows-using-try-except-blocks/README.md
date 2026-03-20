@@ -18,6 +18,7 @@ The simplest form of error handling catches all errors from a step.
 
 ```yaml
 # basic-error-handling.yaml
+
 main:
   steps:
     - try_api_call:

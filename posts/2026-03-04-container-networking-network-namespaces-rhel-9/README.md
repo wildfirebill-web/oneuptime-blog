@@ -52,6 +52,7 @@ Let's replicate what a container runtime does.
 
 ```bash
 # Create a bridge (like docker0 or cni-podman0)
+
 sudo ip link add container-br0 type bridge
 sudo ip addr add 172.20.0.1/24 dev container-br0
 sudo ip link set container-br0 up

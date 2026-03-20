@@ -90,6 +90,7 @@ First, create the config file and store it in your image or in S3.
 
 ```ini
 # custom-fluent-bit.conf
+
 [SERVICE]
     Flush         1
     Grace         30

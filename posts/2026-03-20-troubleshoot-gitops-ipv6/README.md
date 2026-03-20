@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: IPv6, GitOps, Troubleshooting, ArgoCD, Flux CD, Kubernetes
 
-Description: Diagnose and resolve IPv6 connectivity issues in GitOps pipelines, covering Git server reachability, TLS certificate problems, SSH known_hosts formatting, and DNS resolution failures for IPv6 endpoints.
+Description: Diagnose and resolve IPv6 connectivity issues in GitOps pipelines, covering Git server reachability, TLS certificate problems, SSH known_hosts formatting, and DNS resolution failures for IPv6...
 
 ## Introduction
 
@@ -14,6 +14,7 @@ GitOps IPv6 connectivity issues arise between the GitOps controller (ArgoCD repo
 
 ```bash
 # Check IPv6 in ArgoCD repo-server pod
+
 kubectl exec -n argocd deployment/argocd-repo-server -- ip -6 addr show
 # Should show a global IPv6 address (not just link-local fe80::)
 

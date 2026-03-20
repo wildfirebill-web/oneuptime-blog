@@ -33,6 +33,7 @@ First, check that your VPC connector is in the READY state.
 
 ```bash
 # List all VPC connectors in the project
+
 gcloud compute networks vpc-access connectors list --region=us-central1
 
 # Get detailed info about a specific connector

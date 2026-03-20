@@ -34,6 +34,7 @@ Make sure your kubeconfig has access to both the ArgoCD cluster and the remote c
 
 ```bash
 # List your available contexts
+
 kubectl config get-contexts
 
 # Output:

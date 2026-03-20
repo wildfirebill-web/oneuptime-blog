@@ -32,6 +32,7 @@ Here is the complete `.circleci/config.yml`:
 
 ```yaml
 # .circleci/config.yml
+
 version: 2.1
 
 orbs:

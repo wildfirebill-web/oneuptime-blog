@@ -20,6 +20,7 @@ CloudWatch cross-account observability enables a centralized monitoring account 
 
 ```hcl
 # In the monitoring (central) account
+
 resource "aws_oam_sink" "monitoring" {
   name = "${var.project_name}-monitoring-sink"
 

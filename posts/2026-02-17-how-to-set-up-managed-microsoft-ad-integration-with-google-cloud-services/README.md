@@ -22,6 +22,7 @@ You get a standard AD forest with one or more domains, but you do not get Domain
 
 ```bash
 # Enable the Managed AD API
+
 gcloud services enable managedidentities.googleapis.com
 
 # Create a Managed Microsoft AD domain

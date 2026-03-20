@@ -45,6 +45,7 @@ A "thing" in IoT Core represents a physical device or logical entity. Each thing
 
 ```hcl
 # Create a single IoT thing
+
 resource "aws_iot_thing" "temperature_sensor" {
   name = "temperature-sensor-001"
 

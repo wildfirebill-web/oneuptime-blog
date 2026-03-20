@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Regex, regex, regexall, String Matching, Validation
+Tags: OpenTofu, Regex, Regexall, String Matching, Validation
 
 Description: Learn how to use OpenTofu's regex, regexall, and can functions for pattern matching, string extraction, and input validation in infrastructure code.
 
@@ -14,6 +14,7 @@ OpenTofu provides `regex()`, `regexall()`, and `can(regex(...))` for pattern mat
 
 ```hcl
 # main.tf - Validate input variables with regex
+
 variable "environment" {
   type = string
   validation {

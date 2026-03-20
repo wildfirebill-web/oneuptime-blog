@@ -16,6 +16,7 @@ Create a `.tflint.hcl` file with the Google plugin configuration:
 
 ```hcl
 # .tflint.hcl
+
 plugin "google" {
   enabled = true
   version = "0.28.0"

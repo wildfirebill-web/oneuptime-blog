@@ -68,6 +68,7 @@ Start with the basics. This section enables filtering and searching across histo
 
 ```yaml
 # Incident Metadata
+
 incident_id: INC-2026-0130
 title: "Payment API timeout causing checkout failures"
 severity: SEV-2

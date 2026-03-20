@@ -15,9 +15,9 @@ GitHub Container Registry (GHCR) at `ghcr.io` allows you to publish container im
 1. Go to **GitHub > Settings > Developer settings > Personal access tokens > Tokens (classic)**.
 2. Click **Generate new token (classic)**.
 3. Select scopes:
-   - `read:packages` — to pull images
-   - `write:packages` — if Portainer also needs to push
-   - `delete:packages` — optional, for cleanup
+   - `read:packages` - to pull images
+   - `write:packages` - if Portainer also needs to push
+   - `delete:packages` - optional, for cleanup
 4. Generate and copy the token.
 
 ## Adding GHCR to Portainer
@@ -34,6 +34,7 @@ GitHub Container Registry (GHCR) at `ghcr.io` allows you to publish container im
 
 ```bash
 # Log in to GHCR via Docker CLI
+
 echo $GITHUB_TOKEN | docker login ghcr.io \
   -u your-github-username \
   --password-stdin

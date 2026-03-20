@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, Nmcli, Offline Mode, Networking, Linux
+Tags: RHEL, nmcli, Offline Mode, Networking, Linux
 
 Description: Learn how to use nmcli's offline mode to generate NetworkManager keyfiles without a running NetworkManager instance, ideal for provisioning and image building.
 
@@ -30,6 +30,7 @@ The offline mode uses the `nmcli connection add` command with the `--offline` fl
 
 ```bash
 # Generate a keyfile and print it to stdout
+
 nmcli --offline connection add \
   con-name "server-eth0" \
   type ethernet \

@@ -35,6 +35,7 @@ The Application Gateway evaluates path rules in order. The first matching rule w
 
 ```bash
 # Create a resource group
+
 az group create --name rg-pathrouting-demo --location eastus
 
 # Create a VNet with subnets for each backend tier

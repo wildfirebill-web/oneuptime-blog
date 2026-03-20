@@ -10,7 +10,7 @@ Description: Learn how to configure 1:1 NAT (one-to-one static NAT) to map a ded
 
 1:1 NAT creates a **permanent bidirectional mapping** between one public IP address and one private IP address. All traffic to/from the public IP is translated to/from the private IP.
 
-```
+```text
 External client → 203.0.113.10:80 → [NAT] → 192.168.1.10:80
 Internal server 192.168.1.10:80 → [NAT] → 203.0.113.10:80 → External client
 ```
@@ -23,6 +23,7 @@ Internal server 192.168.1.10:80 → [NAT] → 203.0.113.10:80 → External clien
 # Map public IP 203.0.113.10 ↔ private IP 192.168.1.10
 
 # Enable forwarding
+
 echo 1 > /proc/sys/net/ipv4/ip_forward
 
 # Add secondary IP to WAN interface

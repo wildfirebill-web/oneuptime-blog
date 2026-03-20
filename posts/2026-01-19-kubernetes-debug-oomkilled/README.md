@@ -41,6 +41,7 @@ flowchart TD
 
 ```bash
 # View pod status
+
 kubectl get pod <pod-name> -o wide
 
 # Check termination reason

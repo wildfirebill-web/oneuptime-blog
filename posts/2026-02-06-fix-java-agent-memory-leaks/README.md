@@ -21,6 +21,7 @@ The OpenTelemetry Java agent can cause memory leaks when its instrumentation hol
 
 ```bash
 # Trigger a heap dump
+
 jcmd <pid> GC.heap_dump /tmp/heap.hprof
 
 # Or set JVM flags to dump on OOM

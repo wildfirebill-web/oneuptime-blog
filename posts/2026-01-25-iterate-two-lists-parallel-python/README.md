@@ -19,6 +19,7 @@ names = ['Alice', 'Bob', 'Charlie']
 ages = [25, 30, 35]
 
 # Goal: Print "Alice is 25", "Bob is 30", etc.
+
 ```
 
 ## Using zip() - The Standard Approach

@@ -20,6 +20,7 @@ Start by understanding where Podman currently stores data.
 
 ```bash
 # View current storage paths
+
 podman info --format '{{.Store.GraphRoot}}'
 podman info --format '{{.Store.RunRoot}}'
 

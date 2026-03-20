@@ -24,6 +24,7 @@ Here is a simple VLAN configuration on a single interface:
 
 ```yaml
 # machine-config.yaml
+
 machine:
   network:
     interfaces:

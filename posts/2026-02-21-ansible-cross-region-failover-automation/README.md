@@ -28,6 +28,7 @@ graph LR
 
 ```yaml
 # playbooks/failover-to-secondary.yml
+
 # Automated cross-region failover
 ---
 - name: Pre-failover validation

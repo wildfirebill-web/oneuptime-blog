@@ -601,6 +601,7 @@ Control Twig instrumentation through environment variables:
 # .env
 
 # Enable Twig profiling and tracing
+
 OTEL_TWIG_ENABLED=true
 
 # Capture template variables

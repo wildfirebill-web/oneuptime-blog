@@ -32,7 +32,7 @@ Rollback is triggered when an update fails. First, configure the update policy:
 
 In the Portainer service editor under **Update/Rollback config**:
 
-```
+```text
 Update configuration:
   Parallelism:     2        # Update 2 tasks at a time
   Delay:           10s      # Wait 10s between batches
@@ -82,6 +82,7 @@ Deploy a service with an intentionally broken image to test rollback:
 
 ```bash
 # Deploy a good version first
+
 docker service create \
   --name test-rollback \
   --replicas 3 \
@@ -96,7 +97,7 @@ docker service update \
 # Swarm will fail to pull and auto-rollback
 ```
 
-Watch in Portainer's Services view — the service will temporarily show update failures and then revert.
+Watch in Portainer's Services view - the service will temporarily show update failures and then revert.
 
 ## Step 4: Manually Trigger Rollback from Portainer
 
@@ -140,7 +141,7 @@ In Portainer, the service detail shows the current image and all running tasks.
 ## Understanding Rollback Limitations
 
 - Rollback reverts to the **immediately previous** specification only (not arbitrary versions)
-- After a rollback, you cannot "undo the rollback" via rollback — it would revert to the same broken spec
+- After a rollback, you cannot "undo the rollback" via rollback - it would revert to the same broken spec
 - Volume data and external state are NOT affected by rollback
 - Swarm does not version application data
 
@@ -179,4 +180,4 @@ With this configuration:
 
 ## Conclusion
 
-Service rollback is an essential safety net for production deployments on Docker Swarm. By configuring both update and rollback policies — and testing them proactively — you ensure that problematic deployments are caught quickly and automatically reversed. Portainer's rollback button also gives operators a manual escape hatch when automated rollback is not fast enough. Always test your rollback configuration in staging before relying on it in production.
+Service rollback is an essential safety net for production deployments on Docker Swarm. By configuring both update and rollback policies - and testing them proactively - you ensure that problematic deployments are caught quickly and automatically reversed. Portainer's rollback button also gives operators a manual escape hatch when automated rollback is not fast enough. Always test your rollback configuration in staging before relying on it in production.

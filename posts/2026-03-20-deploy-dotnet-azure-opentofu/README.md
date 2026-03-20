@@ -10,7 +10,7 @@ Description: Learn how to deploy a .NET 8 application on Azure using OpenTofu, w
 
 .NET applications deploy naturally on Azure using App Service (managed PaaS) or Azure Container Apps (containerized). This guide uses Azure App Service with deployment slots for zero-downtime deployments, Azure SQL Database, and Azure Key Vault for secret management.
 
-## Resource Group and App Service Plan
+Resource Group and App Service Plan
 
 ```hcl
 resource "azurerm_resource_group" "app" {
@@ -120,6 +120,7 @@ resource "azurerm_linux_web_app" "dotnet" {
 }
 
 # Grant App Service access to Key Vault
+
 resource "azurerm_role_assignment" "app_keyvault" {
   scope                = azurerm_key_vault.app.id
   role_definition_name = "Key Vault Secrets User"

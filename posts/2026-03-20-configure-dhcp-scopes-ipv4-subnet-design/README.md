@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: DHCP, IPv4, Subnet Design, Scopes, Network Planning, ISC DHCP, Windows DHCP
+Tags: DHCP, IPv4, Subnet Design, Scope, Network Planning, ISC DHCP, Windows DHCP
 
 Description: Learn how to design IPv4 subnets for DHCP scopes, calculate pool sizes, configure exclusion ranges, and set options for proper network operation.
 
@@ -23,7 +23,7 @@ A well-designed DHCP scope starts with proper subnet planning: choosing the righ
 
 ## IP Allocation Strategy
 
-```
+```text
 Subnet: 192.168.10.0/24
 
 Reserved for network/broadcast: .0, .255
@@ -38,6 +38,7 @@ Reserved/spare:                  .201 - .254
 
 ```bash
 # /etc/dhcp/dhcpd.conf
+
 subnet 192.168.10.0 netmask 255.255.255.0 {
   range 192.168.10.50 192.168.10.200;
 
@@ -106,6 +107,6 @@ host printer-floor2 {
 ## Key Takeaways
 
 - Reserve the bottom of each subnet (e.g., .1-.49) for static infrastructure; assign DHCP pool to .50-.200.
-- Always set option 3 (router) and option 6 (DNS) — DHCP without these breaks connectivity.
+- Always set option 3 (router) and option 6 (DNS) - DHCP without these breaks connectivity.
 - Use short lease times (1-8 hours) for guest and WiFi networks to recycle addresses quickly.
 - Document IP allocations in a spreadsheet or IPAM tool to prevent range overlap between scopes.

@@ -30,6 +30,7 @@ This fires when a significant percentage of requests to a service are failing:
 
 ```yaml
 # OneUptime alert configuration concept:
+
 # Metric: istio_requests_total
 # Condition: Error rate > 5% for 5 minutes
 # Severity: Critical
@@ -172,7 +173,7 @@ When circuit breakers are actively rejecting requests:
 
 These don't need immediate attention but should be tracked.
 
-### Resource Usage Trending
+Resource Usage Trending
 
 ```yaml
 # Monitor Envoy proxy resource consumption

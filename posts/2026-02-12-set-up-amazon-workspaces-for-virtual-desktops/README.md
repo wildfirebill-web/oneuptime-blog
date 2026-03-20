@@ -42,6 +42,7 @@ WorkSpaces needs a directory service for user authentication. If you have an exi
 
 ```bash
 # Create a Simple AD directory
+
 aws ds create-directory \
     --name "corp.example.com" \
     --short-name "CORP" \

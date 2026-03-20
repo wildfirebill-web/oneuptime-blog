@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, NGINX, HTTP/2, TLS 1.3, Security, Linux
+Tags: RHEL, Nginx, HTTP/2, TLS 1.3, Security, Linux
 
 Description: Configure Nginx on RHEL to use HTTP/2 and TLS 1.3 for maximum performance and security with modern protocol support.
 
@@ -22,6 +22,7 @@ TLS 1.3 requires OpenSSL 1.1.1 or newer. RHEL ships with OpenSSL 3.x:
 
 ```bash
 # Check OpenSSL version
+
 openssl version
 
 # Check Nginx's compiled OpenSSL version

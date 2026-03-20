@@ -57,6 +57,7 @@ The token bucket algorithm is efficient when implemented correctly. Here is an o
 
 ```python
 # rate_limiter.py
+
 # High-performance token bucket rate limiter
 
 import time

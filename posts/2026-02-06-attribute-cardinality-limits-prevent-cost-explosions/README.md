@@ -14,6 +14,7 @@ Every unique combination of attribute values on a metric creates a distinct time
 
 ```python
 # This innocent-looking code creates a time series for every
+
 # unique user. With 1M users, that is 1M time series.
 from opentelemetry import metrics
 

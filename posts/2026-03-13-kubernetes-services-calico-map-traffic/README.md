@@ -88,6 +88,7 @@ For headless services, the client performs the load balancing by choosing which 
 Inspect kube-proxy iptables rules (iptables mode):
 ```bash
 # Show service DNAT rules
+
 sudo iptables -t nat -L KUBE-SVC-<hash> -n -v
 # Shows: probability-based selection of backend pod IPs
 ```

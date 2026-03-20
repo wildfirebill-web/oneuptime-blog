@@ -74,6 +74,7 @@ resource "aws_lambda_function" "stream_processor" {
 
 ```hcl
 # SQS queue for failed Kinesis record batches
+
 resource "aws_sqs_queue" "kinesis_failures" {
   name = "kinesis-processing-failures"
 }
@@ -156,4 +157,4 @@ tofu apply
 
 ## Conclusion
 
-Lambda Kinesis event source mappings with parallelization factors enable high-throughput stream processing while maintaining shard-level ordering. Use `bisect_batch_on_function_error` to isolate bad records and `maximum_record_age_in_seconds` to discard stale data. Monitor the `IteratorAge` metric in CloudWatch to detect processing lag—growing iterator age indicates the consumer is falling behind the stream.
+Lambda Kinesis event source mappings with parallelization factors enable high-throughput stream processing while maintaining shard-level ordering. Use `bisect_batch_on_function_error` to isolate bad records and `maximum_record_age_in_seconds` to discard stale data. Monitor the `IteratorAge` metric in CloudWatch to detect processing lag-growing iterator age indicates the consumer is falling behind the stream.

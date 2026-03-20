@@ -16,6 +16,7 @@ Instead of writing custom scripts that iterate through each project and each res
 
 ```bash
 # Enable the Cloud Asset API
+
 gcloud services enable cloudasset.googleapis.com
 
 # Export assets to BigQuery for advanced querying

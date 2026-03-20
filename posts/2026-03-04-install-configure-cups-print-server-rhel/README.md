@@ -14,6 +14,7 @@ CUPS is the standard printing system on RHEL that manages print queues, processe
 
 ```bash
 # Install CUPS and related packages
+
 sudo dnf install -y cups cups-filters
 
 # For HP printers, also install HPLIP

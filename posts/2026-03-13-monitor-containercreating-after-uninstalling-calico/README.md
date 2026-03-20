@@ -29,6 +29,7 @@ Setting up monitoring before the migration begins ensures you have a dashboard a
 
 ```bash
 # Real-time ContainerCreating count
+
 kubectl get pods --all-namespaces | grep ContainerCreating | wc -l
 ```
 

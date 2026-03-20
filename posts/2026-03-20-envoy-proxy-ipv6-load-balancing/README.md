@@ -18,7 +18,7 @@ static_resources:
   - name: ipv6_listener
     address:
       socket_address:
-        # Listen on all IPv6 interfaces (::) — also accepts IPv4 on most systems
+        # Listen on all IPv6 interfaces (::) - also accepts IPv4 on most systems
         address: "::"
         port_value: 8080
         ipv4_compat: true    # Accept IPv4-mapped IPv6 (::ffff:0:0/96)
@@ -111,7 +111,7 @@ static_resources:
         - endpoint:
             address:
               socket_address:
-                # Hostname — Envoy resolves AAAA record due to V6_ONLY
+                # Hostname - Envoy resolves AAAA record due to V6_ONLY
                 address: "backend.internal.example.com"
                 port_value: 8080
 ```
@@ -151,6 +151,7 @@ In production, Envoy typically uses xDS APIs (Istio, Consul) for dynamic configu
 
 ```yaml
 # Dynamic cluster via EDS (Endpoint Discovery Service)
+
 clusters:
 - name: dynamic_ipv6
   connect_timeout: 5s

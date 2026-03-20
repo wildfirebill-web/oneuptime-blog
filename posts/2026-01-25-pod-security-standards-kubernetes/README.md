@@ -49,6 +49,7 @@ Pod Security Admission (PSA) is enabled by default in Kubernetes 1.23+. Verify i
 
 ```bash
 # Check if the admission controller is enabled
+
 kubectl api-resources | grep pods
 
 # Verify PSA webhook is registered

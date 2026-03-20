@@ -36,6 +36,7 @@ Huge pages must be configured at the Linux kernel level before Docker can use th
 
 ```bash
 # View current huge page settings
+
 cat /proc/meminfo | grep -i huge
 # HugePages_Total:       0      <- Total allocated huge pages
 # HugePages_Free:        0      <- Currently unused

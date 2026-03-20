@@ -12,8 +12,9 @@ Writing Suricata rules for IPv6 traffic requires understanding IPv6-specific pro
 
 ## Suricata Rule Syntax for IPv6
 
-```
+```text
 # Basic rule structure
+
 action proto src_ip src_port direction dst_ip dst_port (options)
 
 # IPv6-specific example
@@ -31,7 +32,7 @@ alert udp any any -> 2001:4860:4860::8888 53 \
 
 ## Detecting IPv6 Extension Headers
 
-```
+```text
 # Detect hop-by-hop options (often used for attacks)
 alert ipv6 $EXTERNAL_NET any -> $HOME_NET any \
   (msg:"IPv6 Hop-by-Hop Options Header from External"; \
@@ -54,7 +55,7 @@ alert ipv6 $EXTERNAL_NET any -> $HOME_NET any \
 
 ## ICMPv6 Detection Rules
 
-```
+```text
 # Detect ICMPv6 type and code
 # Type 133 = Router Solicitation
 # Type 134 = Router Advertisement
@@ -85,7 +86,7 @@ alert icmp6 any any -> $HOME_NET any \
 
 ## Application Protocol Rules over IPv6
 
-```
+```yaml
 # Detect SQL injection over IPv6
 alert http any any -> $HTTP_SERVERS $HTTP_PORTS \
   (msg:"SQL Injection Attempt over IPv6"; \

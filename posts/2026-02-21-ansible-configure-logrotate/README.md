@@ -30,6 +30,7 @@ This playbook configures the main logrotate.conf with production-ready defaults:
 
 ```yaml
 # configure-logrotate.yml - Set up log rotation
+
 ---
 - name: Configure Logrotate
   hosts: all

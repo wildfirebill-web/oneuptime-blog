@@ -111,6 +111,7 @@ cert-manager creates a Secret with the TLS certificate and private key.
 kubectl get secret webhook-tls -n webhook-system
 
 # View certificate details
+
 kubectl get certificate -n webhook-system
 ```
 

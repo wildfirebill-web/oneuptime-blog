@@ -22,6 +22,7 @@ Kubernetes supports dynamic audit configuration through AuditSink resources. Ena
 
 ```bash
 # Edit API server manifest
+
 sudo nano /etc/kubernetes/manifests/kube-apiserver.yaml
 ```
 

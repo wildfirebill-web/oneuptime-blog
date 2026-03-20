@@ -32,6 +32,7 @@ Verify your identity once it's ready.
 
 ```bash
 # Confirm which AWS identity CloudShell is using
+
 aws sts get-caller-identity
 ```
 

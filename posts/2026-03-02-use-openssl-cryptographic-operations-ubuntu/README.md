@@ -14,6 +14,7 @@ OpenSSL is one of the most widely deployed cryptographic libraries in the world,
 
 ```bash
 # Check OpenSSL version
+
 openssl version
 
 # Show full version details including compile options

@@ -88,6 +88,7 @@ curl -u elastic:password -X POST "localhost:9200/my-index/_validate/query?pretty
 
 ```bash
 # First document indexes "count" as long
+
 curl -u elastic:password -X POST "localhost:9200/my-index/_doc" -H 'Content-Type: application/json' -d'
 {"count": 100}'
 

@@ -42,6 +42,7 @@ VPP requires hugepages for DPDK packet buffer memory:
 
 ```bash
 # Configure 2MB hugepages at boot
+
 echo "vm.nr_hugepages = 1024" | sudo tee /etc/sysctl.d/hugepages.conf
 sudo sysctl -p /etc/sysctl.d/hugepages.conf
 

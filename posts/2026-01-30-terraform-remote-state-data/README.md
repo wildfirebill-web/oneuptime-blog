@@ -57,6 +57,7 @@ First, create the S3 bucket and DynamoDB table for state storage:
 
 ```hcl
 # backend-setup/main.tf
+
 provider "aws" {
   region = "us-east-1"
 }

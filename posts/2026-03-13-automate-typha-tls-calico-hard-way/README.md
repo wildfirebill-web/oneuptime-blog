@@ -106,6 +106,7 @@ For environments without cert-manager:
 
 ```yaml
 # typha-cert-rotate.yml
+
 ---
 - name: Rotate Typha TLS certificates
   hosts: control_plane

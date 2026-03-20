@@ -42,6 +42,7 @@ Terraform lets you set a maximum wait time for lock acquisition. This prevents y
 
 ```bash
 # Wait up to 5 minutes for the lock, then fail
+
 terraform plan -lock-timeout=5m
 
 # For apply operations, you might want a longer timeout

@@ -27,6 +27,7 @@ The `user` module works for root just like any other user:
 
 ```yaml
 # set-root-password.yml - Set the root password
+
 - name: Set root password
   hosts: all
   become: yes

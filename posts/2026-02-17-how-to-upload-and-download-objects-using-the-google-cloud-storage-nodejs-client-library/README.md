@@ -18,6 +18,7 @@ Install the package:
 
 ```bash
 # Install the Google Cloud Storage Node.js client
+
 npm install @google-cloud/storage
 ```
 

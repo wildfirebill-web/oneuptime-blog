@@ -117,6 +117,7 @@ Example policies:
 
 ```rego
 # policies/istio/virtualservice.rego
+
 package main
 
 deny[msg] {

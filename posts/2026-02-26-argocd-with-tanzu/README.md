@@ -36,6 +36,7 @@ Ensure you have TKG set up and can access workload clusters.
 
 ```bash
 # Verify TKG CLI and cluster access
+
 tanzu cluster list
 
 # Get kubeconfig for the target workload cluster

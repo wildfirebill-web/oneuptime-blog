@@ -49,6 +49,7 @@ flowchart LR
 
 ```python
 # batch_insert.py
+
 import psycopg2
 from psycopg2.extras import execute_values, execute_batch
 from typing import List, Dict, Any

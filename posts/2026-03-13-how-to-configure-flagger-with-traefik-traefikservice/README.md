@@ -29,6 +29,7 @@ Deploy Traefik using the official Helm chart with the Kubernetes CRD provider en
 
 ```bash
 # Add the Traefik Helm repository
+
 helm repo add traefik https://traefik.github.io/charts
 helm repo update
 

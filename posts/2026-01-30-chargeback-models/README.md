@@ -55,6 +55,7 @@ Most organizations start with showback and graduate to chargeback over 6-12 mont
 
 ```python
 # Example: Determine model based on tagging compliance
+
 def determine_allocation_model(team_id: str, compliance_rate: float) -> str:
     """
     Decide whether to use showback or chargeback based on tagging compliance.

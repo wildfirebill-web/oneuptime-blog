@@ -18,6 +18,7 @@ Run quickview against any image:
 
 ```bash
 # Quickview for a local image
+
 docker scout quickview myapp:latest
 
 # Quickview for a remote image from Docker Hub

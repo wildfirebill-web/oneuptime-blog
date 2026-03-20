@@ -8,7 +8,7 @@ Description: Learn how to configure NetFlow version 9 (Flexible NetFlow) on Cisc
 
 ## NetFlow v9 vs v5
 
-NetFlow v9 introduced a template-based format that makes it extensible (unlike the fixed v5 format). Flexible NetFlow (FNF) is Cisco's implementation of v9 that allows customizable flow records—you choose exactly which fields to capture.
+NetFlow v9 introduced a template-based format that makes it extensible (unlike the fixed v5 format). Flexible NetFlow (FNF) is Cisco's implementation of v9 that allows customizable flow records-you choose exactly which fields to capture.
 
 Key improvements over v5:
 - Template-based: collector learns the format from the router
@@ -31,7 +31,7 @@ graph LR
 
 The flow record defines which fields to capture in the key (match) and non-key (collect) sections:
 
-```
+```text
 ! Define what fields to use to identify a unique flow (key fields)
 flow record MY_FLOW_RECORD
  ! Match on standard 5-tuple
@@ -56,7 +56,7 @@ flow record MY_FLOW_RECORD
 
 Define where and how to send the flow data:
 
-```
+```text
 ! Create an exporter pointing to the collector
 flow exporter MY_EXPORTER
  ! Collector IP and port
@@ -79,7 +79,7 @@ flow exporter MY_EXPORTER
 
 The monitor ties the record and exporter together:
 
-```
+```bash
 ! Create flow monitor referencing the record and exporter
 flow monitor MY_MONITOR
  record MY_FLOW_RECORD
@@ -95,7 +95,7 @@ flow monitor MY_MONITOR
 
 Apply the monitor to the interfaces you want to capture traffic on:
 
-```
+```text
 ! Apply to WAN interface
 Router(config)# interface GigabitEthernet0/0
 Router(config-if)# ip flow monitor MY_MONITOR input
@@ -110,7 +110,7 @@ Router(config-if)# ip flow monitor MY_MONITOR input
 
 For basic bandwidth monitoring, use a simpler record:
 
-```
+```text
 flow record BANDWIDTH_RECORD
  match ipv4 source address
  match ipv4 destination address
@@ -122,7 +122,7 @@ flow record BANDWIDTH_RECORD
 
 ## Step 6: Verify Flexible NetFlow
 
-```
+```bash
 ! Show active flow cache
 Router# show flow monitor MY_MONITOR cache
 
@@ -147,7 +147,7 @@ Router# show flow record MY_FLOW_RECORD
 
 Cisco provides default flow records for common scenarios:
 
-```
+```text
 ! Use the pre-defined IPv4 original flow record (similar to v5)
 flow record netflow-original
 ! This is available on most IOS versions as a shortcut

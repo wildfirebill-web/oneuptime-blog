@@ -19,6 +19,7 @@ kubectl create service loadbalancer my-svc --tcp=80:80
 
 kubectl get svc my-svc
 # NAME     TYPE           CLUSTER-IP    EXTERNAL-IP   PORT(S)        AGE
+
 # my-svc   LoadBalancer   10.96.1.100   <pending>     80:31234/TCP   5m
 ```
 

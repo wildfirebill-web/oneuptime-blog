@@ -14,6 +14,7 @@ Before deploying VDO in production, benchmarking helps you understand the space 
 
 ```bash
 # Install VDO and benchmarking tools
+
 sudo dnf install -y vdo kmod-kvdo fio
 
 # Create a test VDO volume

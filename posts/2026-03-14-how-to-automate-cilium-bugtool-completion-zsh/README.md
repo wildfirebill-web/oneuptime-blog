@@ -28,7 +28,7 @@ This guide covers automation strategies for cilium-bugtool zsh completions.
 ## Automated Installation Script
 
 
-\`\`\`bash
+```bash
 #!/bin/bash
 ## install-bugtool-zsh-completion.sh
 set -euo pipefail
@@ -56,11 +56,11 @@ else
   echo "ERROR: Generated file does not appear to be valid zsh completion"
   exit 1
 fi
-\`\`\`
+```
 
 ### Auto-Regeneration in .zshrc
 
-\`\`\`bash
+```bash
 ## Add to .zshrc - regenerate if binary is newer than completion
 _update_bugtool_completion() {
   local comp_file="\${HOME}/.zsh/completions/_cilium-bugtool"
@@ -73,7 +73,7 @@ _update_bugtool_completion() {
   fi
 }
 _update_bugtool_completion
-\`\`\`
+```
 
 
 
@@ -81,6 +81,7 @@ _update_bugtool_completion
 
 ```bash
 # Verify installation
+
 whence -v _cilium-bugtool
 echo \$_comps[cilium-bugtool]
 

@@ -1,4 +1,4 @@
-# How to Migrate Portainer Data to a New Server
+# How to Migrate Portainer Data to a New Server - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -23,6 +23,7 @@ Before starting:
 
 ```bash
 # On the old server: check Portainer version
+
 docker inspect portainer --format '{{.Config.Image}}'
 
 # Note all environment connection details

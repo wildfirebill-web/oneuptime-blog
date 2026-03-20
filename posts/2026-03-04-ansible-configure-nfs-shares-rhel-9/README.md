@@ -27,6 +27,7 @@ graph LR
 
 ```yaml
 # playbook-nfs-server.yml
+
 # Configure an NFS server on RHEL
 ---
 - name: Configure NFS server

@@ -125,6 +125,7 @@ For other teams or projects to use your shared UDFs, they need the appropriate I
 
 ```bash
 # Grant BigQuery Data Viewer role on the UDF dataset
+
 # This allows users to call the functions
 bq update --dataset \
   --default_table_expiration 0 \

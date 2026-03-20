@@ -49,6 +49,7 @@ If you already have a Redis cluster that meets the requirements, you can use it 
 
 ```bash
 # Create a Redis cluster with cluster mode enabled in the primary Region
+
 aws elasticache create-replication-group \
   --replication-group-id my-global-redis-primary \
   --replication-group-description "Primary cluster for Global Datastore" \

@@ -8,7 +8,7 @@ Description: Automate the provisioning of complete Portainer environments includ
 
 ## Introduction
 
-Manually creating environments in Portainer is fine for small teams, but at scale you need automation. The Portainer API allows you to script the entire provisioning workflow—creating environments, configuring users and teams, deploying networks, volumes, and stacks—all from a single script.
+Manually creating environments in Portainer is fine for small teams, but at scale you need automation. The Portainer API allows you to script the entire provisioning workflow-creating environments, configuring users and teams, deploying networks, volumes, and stacks-all from a single script.
 
 ## Prerequisites
 
@@ -25,6 +25,7 @@ ADMIN_USER="admin"
 ADMIN_PASS="yourpassword"
 
 # Get JWT token
+
 TOKEN=$(curl -s -X POST \
   -H "Content-Type: application/json" \
   -d "{\"username\": \"$ADMIN_USER\", \"password\": \"$ADMIN_PASS\"}" \

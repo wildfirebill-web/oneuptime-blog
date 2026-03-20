@@ -35,6 +35,7 @@ The SCM Provider generator needs a GitHub token to access the organization's rep
 
 ```bash
 # Create a GitHub token with 'repo' scope for private repos
+
 # or 'public_repo' for public repos only
 
 kubectl create secret generic github-token -n argocd \

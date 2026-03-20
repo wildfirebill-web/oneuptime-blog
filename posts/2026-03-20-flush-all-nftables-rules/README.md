@@ -12,6 +12,7 @@ Flushing nftables rules removes all or selected firewall rules. Done incorrectly
 
 ```bash
 # Flush the ENTIRE nftables ruleset (all tables, chains, rules)
+
 sudo nft flush ruleset
 
 # After this command:
@@ -31,7 +32,7 @@ If your nftables input chain has a DROP policy, flushing rules while keeping the
 
 ```bash
 #!/bin/bash
-# safe-flush-nft.sh — Flush nftables safely without lockout
+# safe-flush-nft.sh - Flush nftables safely without lockout
 
 # Step 1: Change input policy to ACCEPT before flushing
 # (ensures traffic flows even if chain has no rules)
@@ -105,7 +106,7 @@ sudo nft list ruleset > /etc/nftables.conf
 
 ## Atomic Flush and Replace
 
-The recommended approach for making changes — apply a new config atomically:
+The recommended approach for making changes - apply a new config atomically:
 
 ```bash
 # Create new config
@@ -123,7 +124,7 @@ table inet filter {
 }
 EOF
 
-# Apply atomically — flush and replace in one operation
+# Apply atomically - flush and replace in one operation
 sudo nft -f /tmp/new-rules.nft
 
 # Benefits:
@@ -132,4 +133,4 @@ sudo nft -f /tmp/new-rules.nft
 # - Old rules replaced atomically without gaps
 ```
 
-`flush ruleset` is nftables' most powerful reset command — combine it with a carefully crafted replacement ruleset in the same file for atomic rule changes that never leave your server unprotected.
+`flush ruleset` is nftables' most powerful reset command - combine it with a carefully crafted replacement ruleset in the same file for atomic rule changes that never leave your server unprotected.

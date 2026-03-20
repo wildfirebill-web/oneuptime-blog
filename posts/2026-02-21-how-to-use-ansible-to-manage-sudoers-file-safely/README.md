@@ -16,6 +16,7 @@ Never write directly to `/etc/sudoers` without validating the content first. Bot
 
 ```yaml
 # Deploy a sudoers file with validation
+
 - name: Deploy main sudoers file
   ansible.builtin.template:
     src: templates/sudoers.j2

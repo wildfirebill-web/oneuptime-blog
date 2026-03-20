@@ -36,6 +36,7 @@ variable "pagerduty_token" {
 
 ```hcl
 # Reference an existing escalation policy
+
 data "pagerduty_escalation_policy" "default" {
   name = "Default Escalation Policy"
 }

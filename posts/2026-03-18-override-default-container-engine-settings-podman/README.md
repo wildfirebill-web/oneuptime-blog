@@ -20,6 +20,7 @@ Start by examining the current engine configuration.
 
 ```bash
 # View current engine settings
+
 podman info --format '{{.Host.OCIRuntime.Name}}'
 podman info --format '{{.Host.EventLogger}}'
 

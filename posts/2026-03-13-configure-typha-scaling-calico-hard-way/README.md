@@ -39,6 +39,7 @@ Each Typha pod can serve many Felix clients. The default limit is 0 (unlimited),
 
 ```yaml
 # typha-deployment-configured.yaml
+
 # Typha Deployment with explicit connection and performance configuration
 apiVersion: apps/v1
 kind: Deployment

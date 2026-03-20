@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: OpenTofu, State Management, Multi-Cloud, AWS, Azure, GCP, Infrastructure as Code
 
-Description: Learn how to structure OpenTofu state backends for multi-cloud deployments — choosing the right backend per cloud, splitting state by cloud boundary, and enabling cross-cloud references via remote state data sources.
+Description: Learn how to structure OpenTofu state backends for multi-cloud deployments - choosing the right backend per cloud, splitting state by cloud boundary, and enabling cross-cloud references via remote...
 
 ## Introduction
 
@@ -13,7 +13,8 @@ Multi-cloud OpenTofu deployments need a clear state strategy. The two main patte
 ## Option 1: Single S3 Backend for All Clouds
 
 ```hcl
-# backend.tf — single backend for multi-cloud config
+# backend.tf - single backend for multi-cloud config
+
 terraform {
   backend "s3" {
     bucket         = "my-company-tofu-state"
@@ -30,7 +31,7 @@ Simple, but the state file grows large and every change to any cloud requires lo
 
 ## Option 2: Separate State per Cloud (Recommended)
 
-```
+```text
 environments/production/
   aws/
     backend.tf   # S3 backend
@@ -185,4 +186,4 @@ jobs:
 
 ## Conclusion
 
-For multi-cloud OpenTofu deployments, use separate state files per cloud — each stored in its own cloud's native backend. Use `terraform_remote_state` data sources to reference outputs across cloud boundaries. Run cloud deployments in parallel in CI where there are no cross-cloud dependencies, and sequence them where outputs from one cloud are inputs to another.
+For multi-cloud OpenTofu deployments, use separate state files per cloud - each stored in its own cloud's native backend. Use `terraform_remote_state` data sources to reference outputs across cloud boundaries. Run cloud deployments in parallel in CI where there are no cross-cloud dependencies, and sequence them where outputs from one cloud are inputs to another.

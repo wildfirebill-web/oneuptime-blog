@@ -36,6 +36,7 @@ First, fork the repository and clone your fork locally.
 
 ```bash
 # Fork on GitHub first, then clone your fork
+
 git clone https://github.com/YOUR_USERNAME/argo-cd.git
 cd argo-cd
 

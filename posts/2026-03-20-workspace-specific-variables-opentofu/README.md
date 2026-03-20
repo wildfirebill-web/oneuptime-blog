@@ -6,13 +6,13 @@ Tags: OpenTofu, Workspaces, Variables, tfvars, Infrastructure as Code
 
 Description: Learn multiple patterns for passing different variable values to each OpenTofu workspace without duplicating configuration logic.
 
-When you manage multiple environments with workspaces, each environment typically needs different values — different instance sizes, replica counts, domain names, or feature flags. This guide covers the main strategies for passing workspace-specific variables cleanly.
+When you manage multiple environments with workspaces, each environment typically needs different values - different instance sizes, replica counts, domain names, or feature flags. This guide covers the main strategies for passing workspace-specific variables cleanly.
 
 ## Strategy 1: Per-Workspace tfvars Files
 
 Maintain one `.tfvars` file per workspace and select the right one at apply time:
 
-```
+```text
 infra/
 ├── main.tf
 ├── variables.tf
@@ -24,6 +24,7 @@ infra/
 
 ```hcl
 # vars/staging.tfvars
+
 instance_type    = "t3.medium"
 min_capacity     = 2
 max_capacity     = 5

@@ -29,6 +29,7 @@ Jool is the most widely used open-source NAT64 implementation for Linux:
 
 ```bash
 # Install Jool on Ubuntu/Debian
+
 apt install jool-dkms jool-tools
 
 # Load the Jool kernel module
@@ -63,7 +64,7 @@ echo "net.ipv6.conf.all.forwarding=1" >> /etc/sysctl.conf
 
 Configure BIND to synthesize AAAA records for IPv4-only hosts:
 
-```
+```text
 // /etc/bind/named.conf.options
 options {
     // DNS64 - synthesize AAAA for IPv4-only hosts
@@ -92,7 +93,7 @@ dig AAAA google.com @2001:db8:dns::1
 
 Ensure the `64:ff9b::/96` prefix is routed to the NAT64 server:
 
-```
+```text
 # Announce NAT64 prefix from NAT64 servers via BGP
 router bgp 65001
  address-family ipv6

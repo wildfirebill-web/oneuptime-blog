@@ -18,6 +18,7 @@ When secrets are not accessible inside containers, the cause can range from simp
 
 ```bash
 # List all available secrets
+
 podman secret ls
 
 # Check if the specific secret exists

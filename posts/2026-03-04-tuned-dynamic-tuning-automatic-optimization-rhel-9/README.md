@@ -121,6 +121,7 @@ The update interval controls how often TuneD checks metrics:
 
 ```ini
 # Check every 5 seconds for faster response
+
 update_interval = 5
 ```
 

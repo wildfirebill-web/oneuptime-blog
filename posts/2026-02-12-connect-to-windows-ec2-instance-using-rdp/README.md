@@ -96,6 +96,7 @@ Install an RDP client like Remmina or xfreerdp:
 
 ```bash
 # Install Remmina on Ubuntu/Debian
+
 sudo apt install remmina remmina-plugin-rdp
 
 # Or use xfreerdp from the command line

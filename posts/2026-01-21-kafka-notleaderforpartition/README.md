@@ -31,6 +31,7 @@ This server is not the leader for that topic-partition
 
 ```bash
 # View partition leaders
+
 kafka-topics.sh --describe --topic my-topic --bootstrap-server localhost:9092
 
 # Output shows which broker is leader for each partition

@@ -27,6 +27,7 @@ Start by verifying that flannel pods are running on every node:
 
 ```bash
 # Check flannel DaemonSet status
+
 kubectl -n kube-system get daemonset kube-flannel-ds
 
 # Check individual flannel pods

@@ -1,4 +1,4 @@
-# How to Deploy Portainer on Azure Virtual Machines
+# How to Deploy Portainer on Azure Virtual Machines - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -16,6 +16,7 @@ Description: Learn how to deploy Portainer on an Azure Virtual Machine, configur
 
 ```bash
 # Login to Azure CLI
+
 az login
 
 # Create resource group
@@ -135,7 +136,7 @@ az vm auto-shutdown \
 
 ## Accessing Portainer
 
-```
+```text
 URL: https://<PUBLIC_IP>:9443
 Or:  https://portainer-mycompany.eastus.cloudapp.azure.com:9443
 ```

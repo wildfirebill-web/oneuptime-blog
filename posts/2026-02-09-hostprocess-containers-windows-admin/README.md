@@ -24,6 +24,7 @@ First, verify your cluster supports HostProcess containers:
 
 ```bash
 # Check Kubernetes version (must be 1.22+)
+
 kubectl version --short
 
 # Verify feature gate is enabled (enabled by default in 1.23+)

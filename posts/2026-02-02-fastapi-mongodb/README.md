@@ -40,6 +40,7 @@ Install the required packages for FastAPI with MongoDB support:
 
 ```bash
 # Create a virtual environment
+
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 

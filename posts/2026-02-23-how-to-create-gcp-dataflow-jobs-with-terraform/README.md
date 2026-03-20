@@ -18,6 +18,7 @@ You need a GCP project with billing enabled and the Dataflow API turned on. You 
 
 ```hcl
 # Enable the Dataflow API and related services
+
 resource "google_project_service" "dataflow" {
   project = var.project_id
   service = "dataflow.googleapis.com"

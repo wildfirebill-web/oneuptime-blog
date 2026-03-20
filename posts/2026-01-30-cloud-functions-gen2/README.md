@@ -133,6 +133,7 @@ Let us create a simple HTTP function using Node.js.
 
 ```bash
 # Create a new directory for your function
+
 mkdir my-gen2-function
 cd my-gen2-function
 

@@ -37,6 +37,7 @@ First, create a bucket for your firewall logs with appropriate encryption and li
 
 ```bash
 # Create the logging bucket
+
 aws s3api create-bucket \
   --bucket network-firewall-logs-111111111111 \
   --region us-east-1

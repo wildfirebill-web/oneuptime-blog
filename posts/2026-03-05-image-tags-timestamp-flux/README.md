@@ -23,6 +23,7 @@ Timestamp-based image tags are a common pattern in CI/CD pipelines. Tags like `2
 
 ```bash
 # Bootstrap with image automation components
+
 flux bootstrap github \
   --owner=my-org \
   --repository=fleet-infra \

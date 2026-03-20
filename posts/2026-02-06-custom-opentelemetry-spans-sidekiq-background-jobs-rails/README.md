@@ -38,6 +38,7 @@ Add the OpenTelemetry Sidekiq instrumentation gem to your Gemfile:
 
 ```ruby
 # Gemfile
+
 gem 'opentelemetry-sdk'
 gem 'opentelemetry-exporter-otlp'
 gem 'opentelemetry-instrumentation-sidekiq'

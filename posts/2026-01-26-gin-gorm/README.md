@@ -34,6 +34,7 @@ Start by creating a new Go module and installing the required dependencies:
 
 ```bash
 # Create a new directory for your project
+
 mkdir gin-gorm-api
 cd gin-gorm-api
 

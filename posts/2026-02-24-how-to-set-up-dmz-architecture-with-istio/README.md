@@ -290,6 +290,7 @@ Set up specific monitoring for DMZ traffic patterns. Unusual traffic to internal
 
 ```bash
 # Monitor request rates from DMZ to internal
+
 istio_requests_total{source_workload_namespace="dmz",destination_workload_namespace="internal",reporter="destination"}
 ```
 

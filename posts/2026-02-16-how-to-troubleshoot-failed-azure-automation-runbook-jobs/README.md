@@ -34,6 +34,7 @@ Automation job events also appear in the Azure Activity Log:
 
 ```bash
 # Find failed automation jobs in the activity log
+
 az monitor activity-log list \
   --offset 7d \
   --query "[?contains(resourceType.value, 'Microsoft.Automation') && status.value=='Failed'].{operation:operationName.localizedValue, time:eventTimestamp, status:status.value}" \

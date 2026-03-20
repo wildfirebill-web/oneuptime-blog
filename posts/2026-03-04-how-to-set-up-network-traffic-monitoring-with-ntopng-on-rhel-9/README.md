@@ -75,6 +75,7 @@ EOF
 
 ```bash
 # Monitor multiple interfaces
+
 sudo tee /etc/ntopng/ntopng.conf <<EOF
 -i=eth0
 -i=eth1

@@ -44,6 +44,7 @@ Create or edit `meta/main.yml` in your role:
 
 ```yaml
 # roles/webserver/meta/main.yml
+
 ---
 # Role metadata
 galaxy_info:

@@ -47,6 +47,7 @@ The default target determines what mode the system boots into:
 
 ```bash
 # See the current default boot target
+
 systemctl get-default
 ```
 

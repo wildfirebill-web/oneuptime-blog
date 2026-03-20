@@ -128,6 +128,7 @@ If you want to clean up existing resources, you can remove the annotation. This 
 
 ```bash
 # Remove the annotation from a single resource
+
 kubectl annotate deployment my-app \
   kubectl.kubernetes.io/last-applied-configuration- \
   --namespace default

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: ARP, Linux, Networking, ip-command, Troubleshooting, IPv4
+Tags: ARP, Linux, Networking, Ip-command, Troubleshooting, IPv4
 
 Description: Remove stale or incorrect ARP cache entries on Linux using the ip neigh del command to resolve layer-2 connectivity issues.
 
@@ -16,6 +16,7 @@ Before deleting, view the current ARP table:
 
 ```bash
 # Show all ARP (neighbor) entries
+
 ip neigh show
 
 # Filter for a specific interface
@@ -23,7 +24,7 @@ ip neigh show dev eth0
 ```
 
 Example output:
-```
+```text
 192.168.1.1 dev eth0 lladdr aa:bb:cc:dd:ee:ff REACHABLE
 192.168.1.50 dev eth0 lladdr 11:22:33:44:55:66 STALE
 ```

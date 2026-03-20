@@ -33,6 +33,7 @@ A workspace is the logical container for your metrics. You can create one worksp
 
 ```bash
 # Create an AMP workspace
+
 aws amp create-workspace \
   --alias "production-metrics" \
   --tags Environment=production,Team=platform

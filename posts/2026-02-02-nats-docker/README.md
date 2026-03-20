@@ -47,6 +47,7 @@ The following command starts a NATS server and exposes the client port (4222) an
 
 ```bash
 # Run NATS server with client and monitoring ports exposed
+
 # -d: Run in background (detached mode)
 # --name nats: Container name for easy reference
 # -p 4222:4222: Client connections (applications connect here)

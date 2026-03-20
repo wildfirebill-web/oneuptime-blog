@@ -123,6 +123,7 @@ Once the cluster is Active:
 
 ```bash
 # Check agent status
+
 kubectl get deployments -n cattle-system
 
 # Verify all nodes are visible in Rancher

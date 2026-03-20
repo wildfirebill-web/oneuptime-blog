@@ -14,6 +14,7 @@ Amazon ECS (Elastic Container Service) runs your containerized applications, and
 
 ```hcl
 # Configure the AWS provider
+
 terraform {
   required_providers {
     aws = {

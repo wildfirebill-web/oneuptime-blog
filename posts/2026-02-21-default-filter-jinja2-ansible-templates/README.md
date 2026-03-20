@@ -34,6 +34,7 @@ By default, the `default` filter only triggers on truly undefined variables. If 
 
 ```yaml
 # vars section of a playbook
+
 vars:
   app_name: ""
   debug_mode: false

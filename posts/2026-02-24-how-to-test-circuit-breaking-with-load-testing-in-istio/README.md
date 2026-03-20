@@ -16,6 +16,7 @@ First, deploy a test service. The httpbin sample from Istio works great for this
 
 ```bash
 # Deploy httpbin as the target service
+
 kubectl apply -f https://raw.githubusercontent.com/istio/istio/release-1.20/samples/httpbin/httpbin.yaml
 
 # Deploy fortio as the load generator

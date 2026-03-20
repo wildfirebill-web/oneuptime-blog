@@ -44,6 +44,7 @@ import pandas as pd
 import time
 
 # Initialize Vertex AI
+
 vertexai.init(project="your-project-id", location="us-central1")
 
 # Define the models to compare

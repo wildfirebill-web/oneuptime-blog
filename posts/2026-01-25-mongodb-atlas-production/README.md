@@ -98,6 +98,7 @@ Even more secure than VPC peering:
 
 ```bash
 # AWS Private Link setup via Atlas CLI
+
 atlas privateEndpoints aws create --projectId <projectId> --region us-east-1
 
 # Get endpoint service name

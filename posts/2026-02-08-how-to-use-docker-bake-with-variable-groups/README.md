@@ -36,6 +36,7 @@ Override at build time through environment variables:
 
 ```bash
 # Environment variables override the defaults
+
 REGISTRY=ghcr.io/myorg TAG=v2.0 docker buildx bake
 ```
 

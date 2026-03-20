@@ -16,6 +16,7 @@ Certigo is written in Go and distributed as a single binary:
 
 ```bash
 # Download the latest release
+
 VERSION="1.16.0"
 curl -Lo /tmp/certigo.tar.gz \
     https://github.com/square/certigo/releases/download/v${VERSION}/certigo_linux_amd64.tar.gz

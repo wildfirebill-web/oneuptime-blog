@@ -20,6 +20,7 @@ The Splunk Universal Forwarder collects and sends log data to a Splunk indexer f
 
 ```bash
 # Update the system first
+
 sudo dnf update -y
 
 # Install the required packages

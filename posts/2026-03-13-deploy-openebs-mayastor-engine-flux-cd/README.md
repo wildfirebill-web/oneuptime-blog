@@ -27,6 +27,7 @@ Mayastor requires hugepages. Configure on each storage node:
 
 ```bash
 # Add to /etc/sysctl.d/99-hugepages.conf on each node
+
 vm.nr_hugepages = 1024  # 1024 × 2MiB = 2 GiB hugepages
 
 # Apply immediately

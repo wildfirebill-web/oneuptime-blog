@@ -51,6 +51,7 @@ A simple instance for development and testing:
 
 ```hcl
 # Basic Cloud SQL PostgreSQL instance
+
 resource "google_sql_database_instance" "postgres_basic" {
   name             = "postgres-basic"
   database_version = "POSTGRES_16"  # Latest supported version

@@ -125,6 +125,7 @@ Never hardcode configuration values. Use environment variables with Pydantic Set
 
 ```python
 # app/config.py
+
 from functools import lru_cache
 from pydantic_settings import BaseSettings
 from pydantic import Field, PostgresDsn

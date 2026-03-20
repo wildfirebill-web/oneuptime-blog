@@ -39,6 +39,7 @@ flowchart TD
 
 ```bash
 # Show disk space usage for all mounted filesystems
+
 # -h flag makes output human-readable (KB, MB, GB)
 df -h
 

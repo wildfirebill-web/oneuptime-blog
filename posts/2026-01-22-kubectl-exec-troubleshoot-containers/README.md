@@ -16,6 +16,7 @@ The `kubectl exec` command lets you run commands inside running containers. It i
 
 ```bash
 # Run command in pod
+
 kubectl exec my-pod -- ls -la
 
 # Run command with arguments

@@ -23,6 +23,7 @@ Port forwarding is a form of DNAT (Destination NAT) that redirects incoming traf
 
 ```bash
 # Redirect public_ip:public_port → private_ip:private_port
+
 iptables -t nat -A PREROUTING -i eth1 \
     -d PUBLIC_IP -p tcp --dport PUBLIC_PORT \
     -j DNAT --to-destination PRIVATE_IP:PRIVATE_PORT

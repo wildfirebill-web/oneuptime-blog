@@ -12,10 +12,10 @@ tmpfs mounts create in-memory filesystems for containers. They're faster than di
 
 ## When to Use tmpfs
 
-- **Sensitive data** — session tokens, temporary credentials that shouldn't touch disk
-- **High-performance temp** — scratch space for computationally intensive tasks
-- **Read-only containers** — provide writable directories alongside `read_only: true`
-- **Ramdisk workloads** — applications that benefit from memory-speed storage
+- **Sensitive data** - session tokens, temporary credentials that shouldn't touch disk
+- **High-performance temp** - scratch space for computationally intensive tasks
+- **Read-only containers** - provide writable directories alongside `read_only: true`
+- **Ramdisk workloads** - applications that benefit from memory-speed storage
 
 ## Configuring tmpfs in Portainer Stacks
 
@@ -24,7 +24,7 @@ version: "3.8"
 services:
   webapp:
     image: myapp:1.2.3
-    # Short form — multiple paths
+    # Short form - multiple paths
     tmpfs:
       - /tmp
       - /run
@@ -62,7 +62,7 @@ services:
   auth-service:
     image: auth-service:1.2.3
     tmpfs:
-      # Session tokens stored here — wiped on restart
+      # Session tokens stored here - wiped on restart
       - /run/secrets:size=10m,mode=700
     environment:
       - SESSION_STORAGE_PATH=/run/secrets
@@ -77,7 +77,7 @@ services:
   antivirus-scanner:
     image: clamav/clamav:latest
     tmpfs:
-      # Files to scan go here — never touches the disk
+      # Files to scan go here - never touches the disk
       - /scan-input:size=2g
       - /tmp:size=500m
     volumes:
@@ -88,6 +88,7 @@ services:
 
 ```bash
 # Compare tmpfs vs. disk write performance
+
 # tmpfs write speed
 docker run --rm -it \
   --tmpfs /test:size=1g \

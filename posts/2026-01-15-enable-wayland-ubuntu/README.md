@@ -34,6 +34,7 @@ Wayland is a modern display server protocol designed to address X11's limitation
 
 ```bash
 # Quick comparison of display server architectures
+
 #
 # X11 Architecture:
 # Application -> X Server -> Compositor -> Display

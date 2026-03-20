@@ -33,6 +33,7 @@ To use multiple repositories, first declare them as resources, then check them o
 
 ```yaml
 # Declare external repositories as pipeline resources
+
 resources:
   repositories:
     # Infrastructure templates in a separate repo

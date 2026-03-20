@@ -30,6 +30,7 @@ These work out of the box on most laptops. If they are not working, check the fo
 
 ```bash
 # Verify libinput is handling your touchpad
+
 libinput list-devices | grep -A 10 "Touchpad"
 
 # Check gesture support

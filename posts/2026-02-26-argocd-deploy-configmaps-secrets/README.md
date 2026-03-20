@@ -16,6 +16,7 @@ ConfigMaps are straightforward in ArgoCD. Store them in Git alongside your appli
 
 ```yaml
 # apps/myapp/configmap.yaml
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

@@ -14,7 +14,7 @@ MTU (Maximum Transmission Unit) mismatches cause some of the most frustrating ne
 
 ## Understanding MTU Issues
 
-The standard Ethernet MTU is 1500 bytes. When a packet exceeds the MTU of a link, it must be fragmented — or dropped if the DF (Don't Fragment) bit is set. MTU problems occur when:
+The standard Ethernet MTU is 1500 bytes. When a packet exceeds the MTU of a link, it must be fragmented - or dropped if the DF (Don't Fragment) bit is set. MTU problems occur when:
 
 - VPN tunnels add overhead, reducing effective MTU
 - Firewalls block ICMP "packet too big" messages (breaking PMTUD)
@@ -39,6 +39,7 @@ The standard Ethernet MTU is 1500 bytes. When a packet exceeds the MTU of a link
 
 ```bash
 # Test with ping and DF bit set (-M do on Linux)
+
 # Find the largest packet size that succeeds
 
 # Test with 1472 bytes (1500 - 20 IP header - 8 ICMP = 1472)
@@ -204,7 +205,7 @@ netsh interface ipv4 show subinterfaces
 
 1. **Set consistent MTU** across all devices on a path, including VPN endpoints
 2. **Use TCP MSS clamping** as a safety net when MTU is unpredictable
-3. **Never block ICMP unreachable** messages — they're needed for PMTUD
+3. **Never block ICMP unreachable** messages - they're needed for PMTUD
 4. **Test with ping -M do** after any network change involving tunnels
 5. **Document MTU settings** in your network runbook for each tunnel type
 

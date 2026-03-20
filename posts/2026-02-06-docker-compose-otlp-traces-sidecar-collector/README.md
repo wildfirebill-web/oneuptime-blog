@@ -127,6 +127,7 @@ Here is a minimal Python Flask application with OpenTelemetry auto-instrumentati
 
 ```python
 # web-api/app.py
+
 from flask import Flask
 from opentelemetry import trace
 from opentelemetry.sdk.trace import TracerProvider

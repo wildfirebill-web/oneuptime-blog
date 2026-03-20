@@ -35,6 +35,7 @@ Install ArgoCD into your Kubernetes cluster.
 
 ```bash
 # Create the argocd namespace
+
 kubectl create namespace argocd
 
 # Install ArgoCD using the official manifests

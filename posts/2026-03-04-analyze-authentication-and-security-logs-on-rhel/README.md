@@ -14,6 +14,7 @@ RHEL records authentication events in several locations. Knowing where to look a
 
 ```bash
 # /var/log/secure - PAM and authentication events (traditional file)
+
 sudo tail -20 /var/log/secure
 
 # /var/log/audit/audit.log - detailed audit events

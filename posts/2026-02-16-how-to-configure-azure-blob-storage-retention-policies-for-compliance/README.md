@@ -40,6 +40,7 @@ The following CLI command creates a storage account and enables blob versioning,
 
 ```bash
 # Create a resource group
+
 az group create \
   --name rg-compliance-storage \
   --location eastus2

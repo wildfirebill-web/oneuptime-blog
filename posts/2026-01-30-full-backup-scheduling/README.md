@@ -135,6 +135,7 @@ Most organizations schedule backups during periods of low activity:
 
 ```bash
 # Analyze database activity patterns (PostgreSQL example)
+
 # This query shows hourly transaction counts to identify low-activity periods
 
 psql -c "
@@ -224,7 +225,7 @@ If your full backup exceeds the available window:
 
 ---
 
-## Resource Impact Management
+Resource Impact Management
 
 Full backups consume significant resources. Managing this impact ensures production systems remain responsive.
 
@@ -251,7 +252,7 @@ flowchart LR
     MEM --> LAT
 ```
 
-### Resource Throttling
+Resource Throttling
 
 Limit backup resource consumption to protect production workloads:
 

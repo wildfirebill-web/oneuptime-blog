@@ -39,6 +39,7 @@ Fix:
 
 ```bash
 # Check available gateways
+
 kubectl get gateways -A
 
 # Make sure the name matches

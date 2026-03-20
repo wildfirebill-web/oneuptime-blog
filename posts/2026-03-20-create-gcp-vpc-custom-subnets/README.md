@@ -8,7 +8,7 @@ Description: Create a GCP Virtual Private Cloud network with custom mode subnets
 
 ## Introduction
 
-GCP VPC networks are global — a single VPC spans all regions. Subnets are regional, meaning each subnet is associated with one region but hosts can communicate globally across subnets. Use custom mode VPC (not auto mode) to control your IPv4 address space precisely.
+GCP VPC networks are global - a single VPC spans all regions. Subnets are regional, meaning each subnet is associated with one region but hosts can communicate globally across subnets. Use custom mode VPC (not auto mode) to control your IPv4 address space precisely.
 
 ## Creating a Custom Mode VPC
 
@@ -16,6 +16,7 @@ GCP VPC networks are global — a single VPC spans all regions. Subnets are regi
 PROJECT_ID="my-gcp-project"
 
 # Create a custom VPC (no subnets created automatically)
+
 gcloud compute networks create prod-vpc \
   --project=$PROJECT_ID \
   --subnet-mode=custom \

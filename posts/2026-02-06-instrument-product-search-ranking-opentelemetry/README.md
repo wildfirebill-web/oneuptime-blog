@@ -32,6 +32,7 @@ tracer = trace.get_tracer("ecommerce.search", "1.0.0")
 meter = metrics.get_meter("ecommerce.search", "1.0.0")
 
 # Latency histogram for the full search pipeline
+
 search_latency = meter.create_histogram(
     name="search.latency_ms",
     description="End-to-end search latency",

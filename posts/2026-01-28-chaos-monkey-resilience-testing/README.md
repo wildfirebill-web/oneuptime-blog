@@ -73,6 +73,7 @@ Clone the repository and build the binary:
 
 ```bash
 # Clone the Chaos Monkey repository
+
 git clone https://github.com/Netflix/chaosmonkey.git
 cd chaosmonkey
 

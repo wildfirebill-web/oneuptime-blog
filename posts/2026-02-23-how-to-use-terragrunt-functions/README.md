@@ -18,6 +18,7 @@ This is probably the most frequently used Terragrunt function. It walks up the d
 
 ```hcl
 # Finds the nearest terragrunt.hcl in parent directories
+
 include "root" {
   path = find_in_parent_folders()
 }

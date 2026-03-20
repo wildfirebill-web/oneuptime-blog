@@ -8,7 +8,7 @@ Description: Configure Caddy v2 as a reverse proxy for IPv4 backend services wit
 
 ## Introduction
 
-Caddy automatically provisions and renews TLS certificates from Let's Encrypt or ZeroSSL. Its Caddyfile syntax is concise — a simple reverse proxy with automatic HTTPS is often just 3 lines. Caddy is ideal for small to medium deployments where certificate management complexity is a concern.
+Caddy automatically provisions and renews TLS certificates from Let's Encrypt or ZeroSSL. Its Caddyfile syntax is concise - a simple reverse proxy with automatic HTTPS is often just 3 lines. Caddy is ideal for small to medium deployments where certificate management complexity is a concern.
 
 ## Installing Caddy
 
@@ -88,6 +88,7 @@ app.example.com {
 
 ```caddyfile
 # Bind to a specific IP address
+
 :80 {
     bind 10.0.1.5
     redir https://app.example.com{uri}

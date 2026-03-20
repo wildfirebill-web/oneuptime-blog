@@ -24,6 +24,7 @@ Podman containers inherit Linux cgroup memory controls. There are three key para
 
 ```bash
 # Set a hard memory limit of 512MB
+
 podman run --memory=512m your-image
 
 # Set memory limit with swap

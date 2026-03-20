@@ -26,6 +26,7 @@ Begin by updating all packages:
 
 ```bash
 # Update all packages on CentOS Stream
+
 sudo dnf update -y
 ```
 

@@ -20,6 +20,7 @@ To list every tunable parameter on the system, use `sysctl -a`.
 
 ```bash
 # List all kernel parameters and their current values
+
 sudo sysctl -a
 ```
 

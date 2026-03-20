@@ -31,6 +31,7 @@ An escalation path is the ordered sequence of responders who receive alerts for 
 
 ```yaml
 # escalation-policy.yaml
+
 # Defines the order and timing of alert escalation
 
 escalation_policy:

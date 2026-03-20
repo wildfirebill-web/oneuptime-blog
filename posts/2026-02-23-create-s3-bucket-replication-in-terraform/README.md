@@ -20,6 +20,7 @@ Both the source and destination buckets must have versioning enabled. Replicatio
 
 ```hcl
 # Provider for the source region
+
 provider "aws" {
   region = "us-east-1"
   alias  = "source"

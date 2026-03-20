@@ -20,6 +20,7 @@ nfsstat is the primary tool for NFS statistics on RHEL. It reads kernel counters
 
 ```bash
 # Show all server statistics
+
 nfsstat -s
 
 # Show only NFSv4 server stats

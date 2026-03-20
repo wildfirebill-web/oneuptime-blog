@@ -14,6 +14,7 @@ A baseline configuration ensures every RHEL 9 server in your fleet starts from t
 
 ```bash
 # rhel9-baseline.ks
+
 lang en_US.UTF-8
 keyboard us
 timezone UTC --utc

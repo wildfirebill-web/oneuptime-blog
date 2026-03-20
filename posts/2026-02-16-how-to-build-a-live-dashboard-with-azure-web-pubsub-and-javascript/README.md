@@ -37,6 +37,7 @@ First, create the Azure Web PubSub resource if you have not already. Then instal
 
 ```bash
 # Initialize a new Node.js project
+
 npm init -y
 
 # Install the Web PubSub server SDK and Express for the token endpoint

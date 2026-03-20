@@ -29,6 +29,7 @@ You will need:
 
 ```bash
 # Verify your cluster is ready
+
 kubectl get nodes
 kubectl get cs
 ```

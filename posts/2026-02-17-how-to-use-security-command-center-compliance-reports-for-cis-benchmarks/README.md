@@ -67,6 +67,7 @@ You can also pull compliance-related findings via the command line.
 
 ```bash
 # List all findings related to CIS benchmark violations
+
 gcloud scc findings list ORGANIZATION_ID \
   --source=organizations/ORGANIZATION_ID/sources/SHA_SOURCE_ID \
   --filter='state="ACTIVE" AND sourceProperties.compliance_standards : "CIS"' \

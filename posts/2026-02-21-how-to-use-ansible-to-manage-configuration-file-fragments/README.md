@@ -24,6 +24,7 @@ Here is an example that builds an HAProxy configuration from fragments:
 
 ```yaml
 # Create a directory to hold HAProxy config fragments
+
 - name: Create HAProxy config fragments directory
   ansible.builtin.file:
     path: /etc/haproxy/conf.d

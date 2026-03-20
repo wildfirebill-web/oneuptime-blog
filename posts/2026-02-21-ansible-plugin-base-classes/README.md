@@ -33,6 +33,7 @@ Every plugin inherits from `AnsiblePlugin` (located in `ansible.plugins`). It pr
 
 ```python
 # What AnsiblePlugin gives you
+
 class AnsiblePlugin:
     # Load and access plugin options from DOCUMENTATION
     def get_option(self, option):

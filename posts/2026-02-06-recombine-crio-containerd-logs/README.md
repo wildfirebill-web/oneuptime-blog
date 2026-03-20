@@ -199,6 +199,7 @@ The timestamp format might differ. Update the timestamp layout accordingly:
 
 ```yaml
 # For CRI-O with timezone offset
+
 timestamp:
   parse_from: attributes.time
   layout: "%Y-%m-%dT%H:%M:%S.%L%z"

@@ -33,6 +33,7 @@ Every process belongs to exactly one of each namespace type. You can see a proce
 
 ```bash
 # View namespaces of the current shell
+
 ls -la /proc/$$/ns/
 
 # Each file is a symlink pointing to the namespace identifier

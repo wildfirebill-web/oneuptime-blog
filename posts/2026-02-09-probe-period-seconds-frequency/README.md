@@ -36,6 +36,7 @@ Kubernetes defaults:
 
 ```yaml
 # Default values (if not specified)
+
 periodSeconds: 10
 timeoutSeconds: 1
 failureThreshold: 3

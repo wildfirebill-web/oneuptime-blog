@@ -20,6 +20,7 @@ Learn how to use TF_LOG environment variable to enable detailed provider and cor
 
 ```bash
 # Verify OpenTofu installation
+
 tofu version
 
 # Set up required environment variables

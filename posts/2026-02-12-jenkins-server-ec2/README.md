@@ -34,6 +34,7 @@ Install Java and Jenkins on Amazon Linux 2023:
 
 ```bash
 # Install Java 17
+
 sudo yum install -y java-17-amazon-corretto-devel
 
 # Verify Java installation

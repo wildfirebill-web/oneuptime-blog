@@ -40,6 +40,7 @@ Both types live in rule files and are evaluated at the same interval.
 
 ```yaml
 # rules/recording-rules.yml
+
 groups:
   # Each group has a name and evaluation interval
   - name: cpu_rules

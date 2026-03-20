@@ -169,6 +169,7 @@ ArtifactGenerator does not use a `spec.interval` field - it is event-driven and 
 
 ```yaml
 # Event-driven service (no interval needed - ArtifactGenerator is event-driven)
+
 apiVersion: source.extensions.fluxcd.io/v1beta1
 kind: ArtifactGenerator
 metadata:

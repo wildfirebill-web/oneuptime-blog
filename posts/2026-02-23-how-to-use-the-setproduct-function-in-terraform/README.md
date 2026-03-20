@@ -18,6 +18,7 @@ The `setproduct` function takes two or more lists (or sets) and returns a list o
 
 ```hcl
 # Returns all combinations of elements from the input sets
+
 setproduct(set1, set2, ...)
 ```
 

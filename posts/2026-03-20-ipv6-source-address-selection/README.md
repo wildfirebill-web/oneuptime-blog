@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Source Address Selection, RFC 6724, gai.conf, Routing, Multi-homing
+Tags: IPv6, Source Address Selection, RFC 6724, Gai.conf, Routing, Multi-homing
 
 Description: Understand and configure IPv6 source address selection (RFC 6724) to control which IPv6 address is used as the source for outbound connections.
 
@@ -12,7 +12,7 @@ When a host has multiple IPv6 addresses and initiates a connection, the kernel m
 
 ## Understanding RFC 6724 Address Selection Rules
 
-```
+```text
 RFC 6724 Selection Rules (applied in order):
 1. Prefer same address (src == dst)
 2. Prefer appropriate scope (link-local for link-local, etc.)
@@ -28,6 +28,7 @@ RFC 6724 Selection Rules (applied in order):
 
 ```bash
 # Check which source address would be used for a destination
+
 ip -6 route get 2001:db8::destination
 
 # Example output:
@@ -52,9 +53,9 @@ ip -6 addr show scope global
 # inet6 2001:db8:b::200/64 scope global deprecated
 
 # Flags that affect selection:
-# deprecated  — address is expiring, prefer not to use
-# temporary   — privacy address (RFC 4941)
-# mngtmpaddr  — managed by kernel for privacy addresses
+# deprecated  - address is expiring, prefer not to use
+# temporary   - privacy address (RFC 4941)
+# mngtmpaddr  - managed by kernel for privacy addresses
 ```
 
 ## Step 3: Configure Source Address with Routes
@@ -167,4 +168,4 @@ for dest in destinations:
 
 ## Conclusion
 
-IPv6 source address selection follows RFC 6724 rules, with the kernel choosing based on address scope, matching prefix length, and stability. Use `ip -6 route get <dest>` to see which source address would be selected for any destination. Control selection with `ip -6 route add ... src <addr>` for specific destinations, or configure `/etc/gai.conf` for application-level selection preferences. Privacy extensions (use_tempaddr=2) cause temporary addresses to be preferred for outbound connections — useful for privacy but can cause issues if upstream filters block non-registered source addresses.
+IPv6 source address selection follows RFC 6724 rules, with the kernel choosing based on address scope, matching prefix length, and stability. Use `ip -6 route get <dest>` to see which source address would be selected for any destination. Control selection with `ip -6 route add ... src <addr>` for specific destinations, or configure `/etc/gai.conf` for application-level selection preferences. Privacy extensions (use_tempaddr=2) cause temporary addresses to be preferred for outbound connections - useful for privacy but can cause issues if upstream filters block non-registered source addresses.

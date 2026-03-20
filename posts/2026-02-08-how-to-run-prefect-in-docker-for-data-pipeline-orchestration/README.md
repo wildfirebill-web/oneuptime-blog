@@ -22,6 +22,7 @@ Here is a complete setup with Prefect server, PostgreSQL for state storage, and 
 
 ```yaml
 # docker-compose.yml - Prefect orchestration platform
+
 version: "3.8"
 
 services:

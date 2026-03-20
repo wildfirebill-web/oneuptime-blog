@@ -12,6 +12,7 @@ Host-based routing in Kubernetes Ingress allows multiple services to share a sin
 
 ```bash
 # Ensure an Ingress Controller is installed
+
 kubectl get ingressclass
 # NAME    CONTROLLER
 # nginx   k8s.io/ingress-nginx

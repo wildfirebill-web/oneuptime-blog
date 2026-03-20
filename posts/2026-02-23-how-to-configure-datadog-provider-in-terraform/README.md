@@ -26,6 +26,7 @@ Both keys are required for the Terraform provider.
 
 ```bash
 # Set the keys as environment variables
+
 export DD_API_KEY="your-api-key-here"
 export DD_APP_KEY="your-application-key-here"
 ```

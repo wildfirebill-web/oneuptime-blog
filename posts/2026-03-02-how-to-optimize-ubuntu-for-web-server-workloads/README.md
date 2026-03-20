@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Ubuntu, Web Server, Performance Tuning, NGINX, Kernel
+Tags: Ubuntu, Web Server, Performance Tuning, Nginx, Kernel
 
 Description: Tune Ubuntu kernel networking, file descriptor limits, and memory settings to maximize web server throughput, reduce latency, and handle high concurrent connection loads.
 
@@ -16,6 +16,7 @@ Web servers open a file descriptor for every connection and every file served. T
 
 ```bash
 # View current limits
+
 cat /proc/sys/fs/file-max
 ulimit -n  # Per-process limit
 

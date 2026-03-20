@@ -14,6 +14,7 @@ Docker rootless mode runs the Docker daemon as a non-root user, improving securi
 
 ```bash
 # Install rootless setup script dependencies
+
 sudo apt install -y uidmap dbus-user-session
 
 # Run the rootless install script
@@ -84,7 +85,7 @@ systemctl --user restart docker
 ## Custom Network Configuration in Rootless Mode
 
 ```bash
-# Create a custom network — works the same as rootful Docker
+# Create a custom network - works the same as rootful Docker
 docker network create --subnet 192.168.200.0/24 mynet
 
 # Run containers on the custom network

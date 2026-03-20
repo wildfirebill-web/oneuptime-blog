@@ -55,6 +55,7 @@ variable "resource_limits" {
 }
 
 # Create the namespace
+
 resource "kubernetes_namespace" "observability" {
   metadata {
     name = var.namespace

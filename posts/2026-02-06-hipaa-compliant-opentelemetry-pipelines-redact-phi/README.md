@@ -22,6 +22,7 @@ Here is a collector configuration that uses the `transform` processor and `attri
 
 ```yaml
 # otel-collector-config.yaml
+
 receivers:
   otlp:
     protocols:

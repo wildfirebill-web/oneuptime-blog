@@ -303,6 +303,7 @@ This recording rule calculates the duration of downtime events for MTTR analysis
 
 ```promql
 # Recording rule for tracking downtime duration
+
 - record: service:downtime_duration:seconds
   expr: |
     (

@@ -47,6 +47,7 @@ Pods are deployed but the Envoy sidecar proxy is not injected.
 
 ```bash
 # Check if the namespace has injection label
+
 kubectl get namespace my-namespace --show-labels
 
 # Check if pods have the sidecar

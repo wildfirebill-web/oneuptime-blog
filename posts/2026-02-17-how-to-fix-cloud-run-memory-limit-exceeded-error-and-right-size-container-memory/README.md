@@ -49,6 +49,7 @@ Start by finding the actual memory usage at the time of the crash.
 
 ```bash
 # Query logs for memory limit errors in the last 24 hours
+
 gcloud logging read 'resource.type="cloud_run_revision" AND textPayload:"memory limit"' \
     --project=my-project \
     --limit=20 \

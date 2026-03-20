@@ -30,6 +30,7 @@ Create a development environment for plugin development:
 
 ```bash
 # Install Go 1.21 or later
+
 wget https://go.dev/dl/go1.21.0.linux-amd64.tar.gz
 sudo tar -C /usr/local -xzf go1.21.0.linux-amd64.tar.gz
 export PATH=$PATH:/usr/local/go/bin

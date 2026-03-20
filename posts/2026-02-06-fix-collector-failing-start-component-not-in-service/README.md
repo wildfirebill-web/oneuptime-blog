@@ -149,6 +149,7 @@ Use the Collector's `validate` command to catch these errors before deploying:
 
 ```bash
 # Validate the configuration file
+
 otelcol-contrib validate --config config.yaml
 
 # Or with Docker

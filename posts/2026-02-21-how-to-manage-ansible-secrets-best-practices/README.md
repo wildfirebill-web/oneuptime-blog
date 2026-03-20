@@ -18,6 +18,7 @@ Encrypting a whole file:
 
 ```bash
 # Create a new encrypted file
+
 ansible-vault create inventories/production/group_vars/vault.yml
 
 # Encrypt an existing file

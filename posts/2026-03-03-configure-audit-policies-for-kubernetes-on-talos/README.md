@@ -37,6 +37,7 @@ The audit policy defines which events to record and at what detail level. Here i
 
 ```yaml
 # audit-policy.yaml
+
 # Kubernetes audit policy for production Talos clusters
 apiVersion: audit.k8s.io/v1
 kind: Policy

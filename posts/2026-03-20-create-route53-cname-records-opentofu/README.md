@@ -34,6 +34,7 @@ resource "aws_route53_record" "www" {
 
 ```hcl
 # Zendesk custom domain
+
 resource "aws_route53_record" "support" {
   zone_id = data.aws_route53_zone.main.zone_id
   name    = "support.example.com"
@@ -163,4 +164,4 @@ resource "aws_route53_record" "api_green" {
 
 ## Conclusion
 
-Route53 CNAME records in OpenTofu keep your DNS aliases version-controlled and consistently applied. Use for_each to manage multiple CNAMEs, automate ACM certificate validation records, and leverage weighted routing for blue-green deployments. Always remember that CNAMEs cannot be used at the zone apex — use alias records there instead.
+Route53 CNAME records in OpenTofu keep your DNS aliases version-controlled and consistently applied. Use for_each to manage multiple CNAMEs, automate ACM certificate validation records, and leverage weighted routing for blue-green deployments. Always remember that CNAMEs cannot be used at the zone apex - use alias records there instead.

@@ -22,6 +22,7 @@ Docker and Docker Compose are required. Mattermost recommends at least 2 GB of R
 
 ```bash
 # Verify Docker installation
+
 docker --version
 docker compose version
 ```

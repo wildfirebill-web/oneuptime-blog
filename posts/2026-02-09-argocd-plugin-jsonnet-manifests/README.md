@@ -121,6 +121,7 @@ Build a container with Jsonnet and required dependencies:
 FROM golang:1.21-alpine AS builder
 
 # Install jsonnet and jsonnet-bundler
+
 RUN apk add --no-cache git make && \
     go install github.com/google/go-jsonnet/cmd/jsonnet@latest && \
     go install github.com/jsonnet-bundler/jsonnet-bundler/cmd/jb@latest

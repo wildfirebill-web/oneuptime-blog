@@ -21,6 +21,7 @@ Discover all resources managed by Terraform and generate an inventory:
 ```bash
 #!/bin/bash
 # discover-resources.sh
+
 # Generate a complete inventory of Terraform-managed resources
 
 OUTPUT_FILE="inventory.csv"

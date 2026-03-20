@@ -22,6 +22,7 @@ Auditing AWS secrets in Cilium means reviewing how credentials are stored, used,
 
 ```bash
 # List all policies attached to the Cilium role
+
 aws iam list-attached-role-policies --role-name cilium-role
 
 # Get the policy document

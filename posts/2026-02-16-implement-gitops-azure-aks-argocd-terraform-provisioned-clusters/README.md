@@ -18,6 +18,7 @@ Start with a production-ready AKS cluster. This is the foundation that ArgoCD ru
 
 ```hcl
 # aks-cluster/main.tf
+
 # Provisions an AKS cluster with features needed for GitOps
 
 terraform {

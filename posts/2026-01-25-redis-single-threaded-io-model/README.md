@@ -84,6 +84,7 @@ import time
 import threading
 
 # Connect to Redis
+
 r = redis.Redis(host='localhost', port=6379, db=0)
 
 def increment_counter(thread_id, iterations):

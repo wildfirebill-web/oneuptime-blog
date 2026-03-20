@@ -41,6 +41,7 @@ A `Maximum mount count` of `-1` and `Check interval` of `0` means automatic chec
 
 ```bash
 # Check without making any changes
+
 sudo e2fsck -n /dev/sdb1
 
 # For XFS (also read-only)

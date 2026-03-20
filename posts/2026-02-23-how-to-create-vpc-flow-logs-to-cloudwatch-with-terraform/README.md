@@ -24,6 +24,7 @@ Create flow logs for an entire VPC:
 
 ```hcl
 # Configure the AWS provider
+
 terraform {
   required_providers {
     aws = {

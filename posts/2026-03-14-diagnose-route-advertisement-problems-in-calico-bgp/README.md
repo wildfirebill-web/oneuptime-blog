@@ -30,6 +30,7 @@ Start by verifying the BGP peering state across all nodes:
 
 ```bash
 # Check BGP peer status using calicoctl
+
 # This shows the state of all BGP sessions from each node
 calicoctl node status
 

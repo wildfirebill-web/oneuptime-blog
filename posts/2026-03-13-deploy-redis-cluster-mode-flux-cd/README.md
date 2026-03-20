@@ -31,6 +31,7 @@ If not deployed, add the OpsTree HelmRepository and deploy the operator first:
 
 ```yaml
 # infrastructure/sources/ot-helm.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

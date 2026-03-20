@@ -25,6 +25,7 @@ Without linger enabled:
 
 ```bash
 # Enable linger for the current user
+
 loginctl enable-linger
 
 # Or specify a username

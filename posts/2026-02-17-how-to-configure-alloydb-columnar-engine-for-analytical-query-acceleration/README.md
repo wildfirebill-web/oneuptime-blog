@@ -28,6 +28,7 @@ For a new cluster:
 
 ```bash
 # Create an AlloyDB cluster with the columnar engine enabled
+
 gcloud alloydb clusters create my-analytics-cluster \
   --region=us-central1 \
   --password=your-secure-password \

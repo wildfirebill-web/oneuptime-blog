@@ -185,6 +185,7 @@ EndpointSlices natively support dual-stack networking with separate slices for I
 
 ```yaml
 # IPv4 EndpointSlice
+
 apiVersion: discovery.k8s.io/v1
 kind: EndpointSlice
 metadata:

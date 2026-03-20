@@ -12,7 +12,7 @@ Cisco IOS uses Modular QoS CLI (MQC) for IPv6 QoS configuration. The same MQC fr
 
 ## IPv6 Class Maps for Traffic Classification
 
-```
+```text
 ! Cisco IOS - IPv6 QoS Class Maps
 
 ! Match VoIP media over IPv6
@@ -56,7 +56,7 @@ class-map match-any IPV6-DEFAULT
 
 ## IPv6 Policy Maps for QoS Actions
 
-```
+```text
 ! Cisco IOS - IPv6 QoS Policy Maps
 
 ! Egress policy for WAN interface
@@ -93,7 +93,7 @@ policy-map IPV6-WAN-EGRESS
 
 ## Applying IPv6 QoS Policy to Interface
 
-```
+```text
 ! Apply policy to WAN interface
 interface GigabitEthernet0/0
  description "WAN Interface"
@@ -117,7 +117,7 @@ interface GigabitEthernet0/1
 
 ## DSCP Remarking for IPv6
 
-```
+```text
 ! Remark inbound IPv6 DSCP for policy compliance
 policy-map IPV6-REMARK
  class IPV6-VOIP-MEDIA
@@ -138,7 +138,7 @@ interface GigabitEthernet0/2
 
 ## Monitoring IPv6 QoS
 
-```
+```text
 ! Verify QoS policy application
 show policy-map interface GigabitEthernet0/0
 
@@ -164,7 +164,7 @@ show queue GigabitEthernet0/0
 
 ## IPv6 LLQ (Low-Latency Queuing) for VoIP
 
-```
+```text
 ! Low-Latency Queuing ensures VoIP gets strict priority
 
 policy-map IPV6-LLQ

@@ -8,7 +8,7 @@ Description: Learn the practical steps to verify that IPv6 privacy extensions ar
 
 ## Introduction
 
-Configuring IPv6 privacy extensions is only half the job — you must also verify that they are functioning correctly and that your device is not leaking a stable EUI-64 address. This guide walks through all the verification steps, from reading kernel state to testing from an external perspective.
+Configuring IPv6 privacy extensions is only half the job - you must also verify that they are functioning correctly and that your device is not leaking a stable EUI-64 address. This guide walks through all the verification steps, from reading kernel state to testing from an external perspective.
 
 ## Step 1: Check Kernel sysctl Values
 
@@ -16,6 +16,7 @@ The most direct verification is reading the active kernel parameters:
 
 ```bash
 # Check privacy extension settings for all interfaces
+
 sysctl net.ipv6.conf.all.use_tempaddr
 sysctl net.ipv6.conf.default.use_tempaddr
 

@@ -341,6 +341,7 @@ Use Athena's scheduled queries or Lambda to generate daily security reports:
 
 ```python
 # Lambda function to run daily flow log analysis
+
 import boto3
 
 def lambda_handler(event, context):

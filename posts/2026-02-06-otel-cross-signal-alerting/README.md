@@ -18,6 +18,7 @@ First, make sure your metric pipeline generates the signals you need for alertin
 
 ```yaml
 # collector-config.yaml
+
 connectors:
   spanmetrics:
     histogram:

@@ -24,6 +24,7 @@ Here is the relevant configuration under the `[defaults]` section:
 
 ```ini
 # ansible.cfg - Set become timeout to 30 seconds
+
 [defaults]
 timeout = 30
 

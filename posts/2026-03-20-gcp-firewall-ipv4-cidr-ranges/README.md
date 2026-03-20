@@ -22,6 +22,7 @@ GCP VPC firewall rules control traffic to and from VM instances based on IP rang
 
 ```bash
 # Allow HTTPS from a specific office CIDR range
+
 gcloud compute firewall-rules create allow-office-https \
   --network my-vpc \
   --direction INGRESS \

@@ -8,7 +8,7 @@ Description: Learn when and how to safely use the -refresh=false flag in OpenTof
 
 ## Introduction
 
-By default, `tofu plan` refreshes every resource in state by querying the cloud API before computing the diff. This refresh phase dominates plan time for large configurations. The `-refresh=false` flag skips it, using the cached state instead — safe in many scenarios but requires understanding the trade-offs.
+By default, `tofu plan` refreshes every resource in state by querying the cloud API before computing the diff. This refresh phase dominates plan time for large configurations. The `-refresh=false` flag skips it, using the cached state instead - safe in many scenarios but requires understanding the trade-offs.
 
 ## How Refresh Works by Default
 
@@ -33,7 +33,8 @@ graph LR
 ## Using -refresh=false
 
 ```bash
-# Skip refresh — much faster, uses state file as-is
+# Skip refresh - much faster, uses state file as-is
+
 tofu plan -refresh=false
 
 # Apply without refreshing first
@@ -46,7 +47,7 @@ tofu plan -refresh=false -no-color
 ## When It Is Safe
 
 - **During development iterations**: You are making config changes and know the cloud hasn't changed
-- **After a fresh apply**: State was just synchronized — no need to refresh again immediately
+- **After a fresh apply**: State was just synchronized - no need to refresh again immediately
 - **CI pipelines with drift monitoring**: A separate job runs `plan -refresh-only` on a schedule
 
 ## When It Is NOT Safe
@@ -81,7 +82,7 @@ jobs:
   pr-plan:
     on: [pull_request]
     steps:
-      # Fast plan for developer feedback — skip refresh
+      # Fast plan for developer feedback - skip refresh
       - run: tofu plan -refresh=false -no-color
 
   production-apply:

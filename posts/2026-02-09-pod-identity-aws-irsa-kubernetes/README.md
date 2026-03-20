@@ -24,6 +24,7 @@ First, verify your EKS cluster has an OIDC provider configured:
 
 ```bash
 # Get cluster OIDC issuer URL
+
 aws eks describe-cluster --name my-cluster \
   --query "cluster.identity.oidc.issuer" --output text
 

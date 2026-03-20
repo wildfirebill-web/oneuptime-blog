@@ -72,6 +72,7 @@ Verify your Kubernetes cluster is accessible and running:
 
 ```bash
 # Check that kubectl can connect to your cluster
+
 # This command should return the cluster information including
 # the Kubernetes version and API server address
 kubectl cluster-info

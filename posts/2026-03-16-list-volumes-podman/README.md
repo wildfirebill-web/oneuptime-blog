@@ -18,6 +18,7 @@ As your container environment grows, you accumulate volumes for databases, appli
 
 ```bash
 # List all volumes
+
 podman volume list
 ```
 

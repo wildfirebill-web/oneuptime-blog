@@ -78,6 +78,7 @@ Create `policy/kubernetes.rego`:
 
 ```rego
 # policy/kubernetes.rego
+
 package main
 
 import rego.v1

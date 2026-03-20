@@ -30,6 +30,7 @@ Create dual-stack networks and subnets for testing.
 
 ```bash
 # Create a dual-stack network
+
 openstack network create --project ipv6-test dual-stack-net
 
 # Create IPv4 subnet

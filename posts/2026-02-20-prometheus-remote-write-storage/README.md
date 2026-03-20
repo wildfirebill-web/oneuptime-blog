@@ -42,6 +42,7 @@ With remote write, Prometheus sends each ingested sample to a remote endpoint ov
 
 ```yaml
 # prometheus.yml
+
 global:
   scrape_interval: 15s
 

@@ -24,6 +24,7 @@ Consider a repository with the following layout.
 
 ```bash
 # Typical monorepo directory structure
+
 my-monorepo/
   apps/
     frontend/

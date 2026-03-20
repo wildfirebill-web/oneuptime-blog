@@ -311,6 +311,7 @@ data:
 
 ```bash
 # Check if user can perform action
+
 argocd admin settings rbac can user@example.com get applications 'default/myapp'
 
 # Check role permissions

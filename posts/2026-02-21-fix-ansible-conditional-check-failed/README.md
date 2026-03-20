@@ -24,6 +24,7 @@ fatal: [server1]: FAILED! => {
 
 ```yaml
 # Problem: the registered variable does not exist yet
+
 - name: Check service
   command: systemctl status nginx
   register: nginx_status

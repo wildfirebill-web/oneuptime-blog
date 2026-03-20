@@ -28,7 +28,8 @@ Jetson devices use ARM64 (aarch64) architecture. Portainer provides ARM64 images
 ## Step 1: Verify Docker Is Running on Jetson
 
 ```bash
-# JetPack includes Docker — verify it's active
+# JetPack includes Docker - verify it's active
+
 sudo systemctl status docker
 
 # Check Docker supports NVIDIA runtime

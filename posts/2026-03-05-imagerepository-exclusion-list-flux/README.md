@@ -28,6 +28,7 @@ Here is an ImageRepository that excludes the `latest` tag.
 
 ```yaml
 # imagerepository-exclude-latest.yaml
+
 # Exclude the 'latest' tag from scan results
 apiVersion: image.toolkit.fluxcd.io/v1
 kind: ImageRepository

@@ -18,6 +18,7 @@ Setting a hostname is a one-liner with the `hostname` module:
 
 ```yaml
 # set the hostname on a server
+
 ---
 - name: Set server hostname
   hosts: all

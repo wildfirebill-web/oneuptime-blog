@@ -20,6 +20,7 @@ When you run `talosctl gen config`, the second argument is this endpoint:
 
 ```bash
 # The endpoint is the second argument
+
 talosctl gen config my-cluster https://192.168.1.100:6443
 ```
 

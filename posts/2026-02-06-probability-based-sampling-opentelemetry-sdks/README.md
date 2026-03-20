@@ -39,6 +39,7 @@ This deterministic approach has a critical property: any service that sees the s
 
 ```python
 # tracing.py
+
 from opentelemetry import trace
 from opentelemetry.sdk.trace import TracerProvider
 from opentelemetry.sdk.trace.sampling import TraceIdRatioBased

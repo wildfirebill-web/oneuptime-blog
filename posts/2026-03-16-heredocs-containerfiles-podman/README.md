@@ -21,6 +21,7 @@ To use heredocs, add the syntax directive at the top of your Containerfile.
 ```bash
 cat > Containerfile <<'OUTER'
 # syntax=docker/dockerfile:1
+
 FROM alpine:3.19
 
 RUN <<EOF

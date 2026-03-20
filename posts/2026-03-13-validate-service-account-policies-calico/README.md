@@ -54,6 +54,7 @@ print(f"SA validation passed. Default SA pods: {len(errors)}")
 
 ```bash
 # Test all SA-based policies with dry-run
+
 for f in policies/sa-*.yaml; do
   echo "Validating: $f"
   calicoctl apply -f "$f" --dry-run

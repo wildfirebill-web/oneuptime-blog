@@ -1,10 +1,10 @@
-# How to Set Up Rancher for Automotive
+# How to Set Up Rancher for Automotive - For
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Automotive, ADAS, Edge, Connected Vehicle, Kubernetes, Safety
+Tags: Rancher, Automotive, ADAS, Edge, Connected Vehicles, Kubernetes, Safety
 
-Description: Configure Rancher for automotive workloads including connected vehicle data processing, ADAS (Advanced Driver Assistance Systems) testing, OTA update infrastructure, and edge computing for in-vehicle systems.
+Description: Configure Rancher for automotive workloads including connected vehicle data processing, ADAS (Advanced Driver Assistance Systems) testing, OTA update infrastructure, and edge computing for...
 
 ## Introduction
 
@@ -12,7 +12,7 @@ The automotive industry's digital transformation requires Kubernetes for connect
 
 ## Automotive Platform Architecture
 
-```
+```text
                         Cloud (AWS/Azure)
 ┌─────────────────────────────────────────────────────┐
 │  Rancher Management                                  │
@@ -34,6 +34,7 @@ The automotive industry's digital transformation requires Kubernetes for connect
 
 ```yaml
 # GPU cluster for autonomous driving simulations
+
 # Using CARLA or similar simulation platform
 
 apiVersion: apps/v1

@@ -88,6 +88,7 @@ A typical high-volume workload comparison demonstrates the potential savings. Th
 
 ```python
 # cost_calculator.py
+
 # Calculate and compare costs between Standard Pub/Sub and Pub/Sub Lite
 # Usage: python cost_calculator.py
 

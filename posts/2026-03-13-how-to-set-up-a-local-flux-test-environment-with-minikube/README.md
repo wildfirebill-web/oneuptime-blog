@@ -24,6 +24,7 @@ Minikube is a popular tool for running a single-node Kubernetes cluster locally.
 
 ```bash
 # macOS (Homebrew)
+
 brew install minikube
 
 # Linux (binary download)
@@ -260,7 +261,7 @@ minikube dashboard --profile=flux-test
 # showing all resources including Flux CRDs
 ```
 
-## Resource Management
+Resource Management
 
 Monitor Minikube resource usage to ensure Flux has enough capacity.
 

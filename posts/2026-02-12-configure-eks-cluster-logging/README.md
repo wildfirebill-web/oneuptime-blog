@@ -28,6 +28,7 @@ Enable all log types via the AWS CLI:
 
 ```bash
 # Enable all control plane log types
+
 aws eks update-cluster-config \
   --name my-cluster \
   --region us-west-2 \

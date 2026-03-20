@@ -17,7 +17,7 @@ Key facts:
 
 ## BGP Path Selection Order (Simplified)
 
-```
+```text
 1. Highest Weight (Cisco-proprietary, local to router)
 2. Highest Local Preference
 3. Locally Originated
@@ -38,7 +38,7 @@ Your router has two eBGP sessions: ISP1 (preferred exit) and ISP2 (backup). You 
 
 Use a route map applied inbound on the ISP1 neighbor session:
 
-```
+```text
 ! Route map sets local-preference to 200 for all ISP1 routes
 route-map ISP1_PREFER permit 10
  set local-preference 200
@@ -57,9 +57,9 @@ router bgp 65001
 
 ## Step 2: Fine-Grained Preference by Prefix
 
-You can set different preferences for different destination prefixes—useful for routing specific traffic through a specific ISP:
+You can set different preferences for different destination prefixes-useful for routing specific traffic through a specific ISP:
 
-```
+```text
 ! Prefer ISP2 only for traffic to CDN prefix 104.16.0.0/12
 ip prefix-list CDN_PREFIX seq 10 permit 104.16.0.0/12
 
@@ -78,7 +78,7 @@ router bgp 65001
 
 ## Step 3: Verify Local Preference in the BGP Table
 
-```
+```text
 ! View BGP table with local-preference column
 Router# show ip bgp
 
@@ -93,7 +93,7 @@ The `>` marker shows which path is selected as best.
 
 ## Step 4: Verify a Specific Route's Attributes
 
-```
+```text
 Router# show ip bgp 0.0.0.0 0.0.0.0
 
 BGP routing table entry for 0.0.0.0/0
@@ -112,7 +112,7 @@ BGP routing table entry for 0.0.0.0/0
 
 After modifying route maps, apply a soft reset to re-evaluate routes:
 
-```
+```text
 ! Re-process inbound routes from ISP1 with the new route map
 Router# clear ip bgp 203.0.113.1 soft in
 Router# clear ip bgp 198.51.100.1 soft in

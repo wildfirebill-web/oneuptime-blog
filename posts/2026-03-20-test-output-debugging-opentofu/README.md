@@ -16,6 +16,7 @@ When tests fail, good output is essential for quick diagnosis. OpenTofu's test c
 tofu test
 
 # tests/unit.tftest.hcl... in progress
+
 #   run "creates_instance"... pass
 #   run "validates_tags"... fail
 # tests/unit.tftest.hcl... tearing down

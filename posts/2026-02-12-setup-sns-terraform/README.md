@@ -79,6 +79,7 @@ resource "aws_sns_topic" "order_events" {
 }
 
 # KMS key for SNS encryption
+
 resource "aws_kms_key" "sns" {
   description             = "KMS key for SNS topic encryption"
   deletion_window_in_days = 7

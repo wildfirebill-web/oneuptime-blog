@@ -18,6 +18,7 @@ The cluster resource manages the shared storage layer, backup policy, and cluste
 
 ```hcl
 # Aurora PostgreSQL cluster
+
 resource "aws_rds_cluster" "postgres" {
   cluster_identifier = "myapp-aurora-pg"
 

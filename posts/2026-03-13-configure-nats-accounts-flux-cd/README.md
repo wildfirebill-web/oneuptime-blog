@@ -39,6 +39,7 @@ Each level (Operator → Account → User) uses NKey cryptography. The server ve
 
 ```bash
 # Initialize nsc environment
+
 nsc add operator --name production-operator
 nsc add account --name services-account
 nsc add account --name analytics-account

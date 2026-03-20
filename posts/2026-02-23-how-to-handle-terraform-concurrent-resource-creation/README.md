@@ -28,6 +28,7 @@ The `-parallelism` flag controls how many of these independent operations run at
 
 ```bash
 # Default: 10 concurrent operations
+
 terraform apply
 
 # Increase for faster execution

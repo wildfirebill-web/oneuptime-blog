@@ -29,6 +29,7 @@ The Wayland socket is typically at `$XDG_RUNTIME_DIR/wayland-0`.
 
 ```bash
 # Verify Wayland is running
+
 echo $WAYLAND_DISPLAY    # Should output: wayland-0 or similar
 echo $XDG_RUNTIME_DIR    # Should output: /run/user/<uid>
 

@@ -26,6 +26,7 @@ If you do not already have a storage provisioner, you can install local-path-pro
 
 ```bash
 # Install local-path-provisioner for persistent storage
+
 kubectl apply -f https://raw.githubusercontent.com/rancher/local-path-provisioner/master/deploy/local-path-storage.yaml
 ```
 

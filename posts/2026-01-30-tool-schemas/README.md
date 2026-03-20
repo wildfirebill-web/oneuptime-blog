@@ -362,6 +362,7 @@ class ToolRegistry:
 
 
 # Example usage
+
 registry = ToolRegistry()
 
 # Define the schema

@@ -8,7 +8,7 @@ Description: Learn how to serve AAAA records from Unbound as a local authoritati
 
 ## Unbound as a Recursive Resolver vs Local Stub
 
-Unbound is primarily a recursive/caching resolver — it doesn't serve authoritative zones by default. However, you can configure it to:
+Unbound is primarily a recursive/caching resolver - it doesn't serve authoritative zones by default. However, you can configure it to:
 
 1. **Serve local data**: Act as local authoritative for internal hostnames
 2. **Override upstream responses**: Force specific AAAA responses for development
@@ -55,6 +55,7 @@ For larger deployments, keep local records in a separate file:
 
 ```bash
 # Create the local data file
+
 cat > /etc/unbound/local-records.conf << 'EOF'
 # Local A and AAAA records
 

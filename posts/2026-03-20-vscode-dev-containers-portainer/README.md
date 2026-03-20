@@ -1,4 +1,4 @@
-# How to Use Portainer with VS Code Dev Containers
+# How to Use Portainer with VS Code Dev Containers - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Integrate VS Code Dev Containers with Portainer-managed Docker envi
 
 ## Introduction
 
-VS Code Dev Containers let you open any folder inside a Docker container and use VS Code's full feature set — extensions, debugging, terminals — all running inside the container. Combined with Portainer's management capabilities, you get both a great development experience and operational visibility. This guide shows how to set up and use Dev Containers alongside Portainer.
+VS Code Dev Containers let you open any folder inside a Docker container and use VS Code's full feature set - extensions, debugging, terminals - all running inside the container. Combined with Portainer's management capabilities, you get both a great development experience and operational visibility. This guide shows how to set up and use Dev Containers alongside Portainer.
 
 ## Prerequisites
 
@@ -21,6 +21,7 @@ VS Code Dev Containers let you open any folder inside a Docker container and use
 
 ```bash
 # Create the .devcontainer directory
+
 mkdir -p .devcontainer
 ```
 

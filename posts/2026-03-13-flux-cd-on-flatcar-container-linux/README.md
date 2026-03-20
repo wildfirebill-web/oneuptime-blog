@@ -29,6 +29,7 @@ Flatcar uses Ignition for first-boot configuration. Butane (the human-readable f
 
 ```yaml
 # flatcar-config.bu (Butane format - compile with: butane < flatcar-config.bu > ignition.json)
+
 variant: flatcar
 version: 1.0.0
 

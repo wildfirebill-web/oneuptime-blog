@@ -57,6 +57,7 @@ from opentelemetry.sdk.resources import Resource
 from opentelemetry.instrumentation.tornado import TornadoInstrumentor
 
 # Configure OpenTelemetry with service metadata
+
 resource = Resource.create({
     "service.name": "tornado-api",
     "service.version": "2.0.0",

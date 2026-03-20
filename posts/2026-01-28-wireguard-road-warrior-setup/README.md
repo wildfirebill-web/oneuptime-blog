@@ -41,6 +41,7 @@ Start by configuring your central VPN server.
 
 ```bash
 # On Ubuntu/Debian
+
 sudo apt update
 sudo apt install wireguard wireguard-tools qrencode
 

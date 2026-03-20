@@ -70,6 +70,7 @@ First, set up the management group hierarchy and policies:
 
 ```hcl
 # main.tf - Deploy Azure Landing Zone using the CAF module
+
 module "enterprise_scale" {
   source  = "Azure/caf-enterprise-scale/azurerm"
   version = "~> 5.0"

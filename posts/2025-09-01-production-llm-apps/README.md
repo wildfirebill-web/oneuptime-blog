@@ -46,6 +46,7 @@ Treat prompts like configuration. Store them in a system where you can:
 
 ```python
 # A minimal prompt registry that loads versioned prompts from files
+
 # In production, this could be backed by a database or feature flag system
 import json
 from pathlib import Path

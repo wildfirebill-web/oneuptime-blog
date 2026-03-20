@@ -28,6 +28,7 @@ If Grafana is not already installed, deploy it using a Flux HelmRelease.
 
 ```yaml
 # monitoring/grafana/helmrepository.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

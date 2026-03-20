@@ -22,6 +22,7 @@ Start by defining network-related variables in your Ansible inventory. Use host-
 
 ```yaml
 # inventory/group_vars/all.yml
+
 cluster_name: "production"
 talosconfig_path: "./talosconfig"
 

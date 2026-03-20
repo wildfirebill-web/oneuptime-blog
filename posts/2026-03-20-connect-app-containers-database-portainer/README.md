@@ -44,7 +44,7 @@ volumes:
   postgres_data:
 ```
 
-The `api` service uses `postgres` as the hostname — this resolves to the database container's IP automatically via Docker DNS.
+The `api` service uses `postgres` as the hostname - this resolves to the database container's IP automatically via Docker DNS.
 
 ## Cross-Stack Connection
 
@@ -52,6 +52,7 @@ When the database is in a separate stack, use an external named network:
 
 ```yaml
 # In the database stack
+
 networks:
   shared_db_net:
     driver: bridge

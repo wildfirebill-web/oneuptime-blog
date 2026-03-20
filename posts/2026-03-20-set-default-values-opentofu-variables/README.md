@@ -1,4 +1,4 @@
-# How to Set Default Values for OpenTofu Variables
+# How to Set Default Values for OpenTofu Variables - Set
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -17,7 +17,7 @@ Default values make your OpenTofu modules more user-friendly. When a variable ha
 Add a `default` argument to any variable block:
 
 ```hcl
-# variables.tf — variables with defaults
+# variables.tf - variables with defaults
 
 variable "region" {
   type        = string
@@ -89,6 +89,7 @@ variable "custom_ami" {
 }
 
 # In your resource, check for null
+
 resource "aws_instance" "web" {
   ami           = var.custom_ami != null ? var.custom_ami : data.aws_ami.amazon_linux.id
   instance_type = "t3.micro"
@@ -118,15 +119,15 @@ TF_VAR_region=eu-west-1 tofu plan
 ## Required vs Optional Variables
 
 ```hcl
-# Required (no default) — must be provided
+# Required (no default) - must be provided
 variable "database_password" {
   type        = string
   description = "Database password (required)"
   sensitive   = true
-  # No default — user must provide this
+  # No default - user must provide this
 }
 
-# Optional (has default) — provides fallback
+# Optional (has default) - provides fallback
 variable "database_name" {
   type        = string
   description = "Database name"

@@ -50,6 +50,7 @@ On your local machine:
 
 ```bash
 # Generate an Ed25519 key (recommended over RSA)
+
 ssh-keygen -t ed25519 -C "your-email@example.com" -f ~/.ssh/id_ed25519_devserver
 
 # Or RSA if Ed25519 is not supported by an older server

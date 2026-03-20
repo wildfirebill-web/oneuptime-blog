@@ -29,6 +29,7 @@ First, create the subscription using the CLI. You need both the topic ARN and th
 
 ```bash
 # Subscribe a Lambda function to an SNS topic
+
 aws sns subscribe \
   --topic-arn arn:aws:sns:us-east-1:123456789012:order-notifications \
   --protocol lambda \

@@ -14,7 +14,7 @@ OPNsense uses Unbound as its default DNS resolver. Unlike a simple forwarder, Un
 
 Navigate to **Services > Unbound DNS > General**:
 
-```
+```text
 Enable:                  checked
 Listen Port:             53
 Network Interfaces:      LAN, Loopback
@@ -34,7 +34,7 @@ Advanced:
 
 Navigate to **Services > Unbound DNS > Host Overrides > Add**:
 
-```
+```text
 Host:        fileserver
 Domain:      local.lan
 IP:          192.168.1.10
@@ -49,17 +49,18 @@ IP:          192.168.1.50
 
 Navigate to **Services > Unbound DNS > Domain Overrides > Add**:
 
-```
+```text
 Domain:      corp.internal
 IP:          10.1.1.10   (internal DNS server for .corp.internal)
 Description: Internal corporate domain
+
 ```
 
 ## DNS-over-TLS (DoT)
 
 Navigate to **Services > Unbound DNS > DNS over TLS**:
 
-```
+```text
 Add upstream:
   Server:  1.1.1.1
   Port:    853
@@ -74,7 +75,7 @@ Add upstream:
 
 Navigate to **Services > Unbound DNS > Access Lists > Add**:
 
-```
+```text
 Access List Name:    Internal
 Networks:
   Action: Allow  Network: 192.168.1.0/24
@@ -86,6 +87,7 @@ Networks:
 
 ```bash
 # OPNsense CLI (via SSH or console)
+
 dig @192.168.1.1 google.com
 
 # Check DNSSEC validation

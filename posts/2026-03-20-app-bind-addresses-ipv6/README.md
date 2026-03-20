@@ -25,6 +25,7 @@ Many applications default to binding on IPv4 only (`0.0.0.0`), preventing IPv6 c
 
 ```nginx
 # Listen on both IPv4 and IPv6
+
 server {
     listen 80;           # IPv4 on all interfaces
     listen [::]:80;      # IPv6 on all interfaces
@@ -75,7 +76,7 @@ listen_addresses = 'localhost, ::1, 2001:db8::10'
 
 Update `pg_hba.conf` to allow IPv6 connections:
 
-```
+```text
 # /etc/postgresql/15/main/pg_hba.conf
 # Allow IPv6 loopback
 host    all     all     ::1/128             md5

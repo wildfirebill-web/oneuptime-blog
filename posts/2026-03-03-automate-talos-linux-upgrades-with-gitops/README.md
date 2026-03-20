@@ -34,6 +34,7 @@ Talos provides a system upgrade controller that can be managed through Kubernete
 
 ```yaml
 # Install the system upgrade controller
+
 # upgrade-controller.yaml
 apiVersion: apps/v1
 kind: Deployment

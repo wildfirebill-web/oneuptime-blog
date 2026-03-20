@@ -24,6 +24,7 @@ graph LR
 
 ```hcl
 # static_web_app.tf
+
 resource "azurerm_resource_group" "web" {
   name     = "rg-web-${var.environment}"
   location = var.location
@@ -168,8 +169,8 @@ locals {
 
 ## Best Practices
 
-- Use `sku_tier = "Standard"` for production — the Free tier doesn't support custom domains with HTTPS or private endpoints.
-- Store the `api_key` (deployment token) as a GitHub Actions secret or Azure DevOps variable — it grants write access to your Static Web App.
-- Use the `cname-delegation` validation type for subdomains — it's simpler than TXT validation. For apex domains, use `dns-txt-token` validation instead.
-- Leverage the built-in preview environments for PRs — Static Web Apps automatically deploys PR branches to isolated preview URLs at no extra cost.
-- Keep infrastructure (`opentofu`) and deployment (GitHub Actions) concerns separate — OpenTofu provisions the resource and DNS; CI/CD deploys the content.
+- Use `sku_tier = "Standard"` for production - the Free tier doesn't support custom domains with HTTPS or private endpoints.
+- Store the `api_key` (deployment token) as a GitHub Actions secret or Azure DevOps variable - it grants write access to your Static Web App.
+- Use the `cname-delegation` validation type for subdomains - it's simpler than TXT validation. For apex domains, use `dns-txt-token` validation instead.
+- Leverage the built-in preview environments for PRs - Static Web Apps automatically deploys PR branches to isolated preview URLs at no extra cost.
+- Keep infrastructure (`opentofu`) and deployment (GitHub Actions) concerns separate - OpenTofu provisions the resource and DNS; CI/CD deploys the content.

@@ -8,14 +8,15 @@ Description: A comprehensive guide to securing OpenTofu state files through encr
 
 ## Introduction
 
-OpenTofu state files contain every attribute of your managed resources — including database passwords, private keys, and other secrets stored in plaintext. Securing state files is one of the most important security steps in any OpenTofu deployment.
+OpenTofu state files contain every attribute of your managed resources - including database passwords, private keys, and other secrets stored in plaintext. Securing state files is one of the most important security steps in any OpenTofu deployment.
 
-## Use a Remote Backend — Never Local State in Production
+## Use a Remote Backend - Never Local State in Production
 
 Local state files checked into version control expose sensitive data. Always use a remote backend for anything beyond local development:
 
 ```hcl
-# backend.tf — S3 remote backend with encryption and locking
+# backend.tf - S3 remote backend with encryption and locking
+
 terraform {
   backend "s3" {
     bucket         = "my-opentofu-state-prod"
@@ -38,7 +39,7 @@ terraform {
 ## Provisioning the Secure S3 Backend
 
 ```hcl
-# bootstrap/main.tf — create the secure backend resources
+# bootstrap/main.tf - create the secure backend resources
 resource "aws_s3_bucket" "state" {
   bucket = "my-opentofu-state-prod"
 
@@ -141,7 +142,7 @@ resource "aws_iam_policy" "opentofu_state" {
 OpenTofu 1.7 introduced native state encryption, providing an additional layer on top of backend-level encryption:
 
 ```hcl
-# terraform.tf — enable native state encryption
+# terraform.tf - enable native state encryption
 terraform {
   encryption {
     key_provider "pbkdf2" "passphrase" {

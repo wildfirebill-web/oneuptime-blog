@@ -44,6 +44,7 @@ By default, ArgoCD will show Secrets as OutOfSync if any field differs from what
 
 ```bash
 # Check for out-of-sync resources
+
 argocd app get myapp --show-diff
 
 # Get detailed diff for a specific resource

@@ -25,6 +25,7 @@ Configure your database connection in `.env`:
 
 ```env
 # PostgreSQL
+
 DATABASE_URL="postgresql://user:password@localhost:5432/mydb?schema=public"
 
 # MySQL

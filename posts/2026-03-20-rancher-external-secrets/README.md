@@ -1,4 +1,4 @@
-# How to Configure External Secrets Operator in Rancher
+# How to Configure External Secrets Operator in Rancher - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -21,6 +21,7 @@ The External Secrets Operator (ESO) bridges external secret management systems (
 
 ```bash
 # Add External Secrets Helm repository
+
 helm repo add external-secrets https://charts.external-secrets.io
 helm repo update
 

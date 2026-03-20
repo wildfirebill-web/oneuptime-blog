@@ -47,6 +47,7 @@ Your cluster must have dual-stack networking enabled. Verify with:
 
 ```bash
 # Check if your cluster supports dual-stack by examining the kube-apiserver configuration
+
 # The following flags should be present:
 # --service-cluster-ip-range=10.96.0.0/16,fd00:10:96::/112
 # --feature-gates=IPv6DualStack=true (for versions < 1.23)

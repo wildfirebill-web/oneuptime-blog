@@ -20,6 +20,7 @@ Create the new database alongside the old one, migrate data, then switch:
 
 ```hcl
 # Step 1: Create the new database (Terraform manages both)
+
 resource "aws_db_instance" "primary_v1" {
   identifier     = "app-db-v1"
   engine         = "postgres"

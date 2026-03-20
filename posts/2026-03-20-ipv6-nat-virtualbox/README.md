@@ -13,9 +13,10 @@ VirtualBox's NAT and NAT Network modes provide IPv6 connectivity to VMs when bri
 ## VirtualBox NAT Mode with IPv6
 
 ```bash
-# NAT mode (default VirtualBox network) — single VM, IPv6 via host
+# NAT mode (default VirtualBox network) - single VM, IPv6 via host
 
 # Check if IPv6 is enabled for NAT on a VM
+
 VBoxManage showvminfo "MyVM" | grep -E "NIC 1|IPv6"
 
 # Enable IPv6 for NAT adapter
@@ -147,7 +148,7 @@ VBoxManage modifyvm "MyVM" \
     --hostonlyadapter2 vboxnet0         # Management (host-only IPv6)
 
 # NIC1: DHCP IPv4 + IPv6 from host
-# NIC2: Static IPv6 fd00:vbox::10/64 — direct host access
+# NIC2: Static IPv6 fd00:vbox::10/64 - direct host access
 ```
 
 ## Testing IPv6 NAT Connectivity

@@ -26,6 +26,7 @@ graph LR
 
 ```yaml
 # tasks/slack-notify.yml
+
 ---
 - name: Send deployment notification to Slack
   community.general.slack:

@@ -61,6 +61,7 @@ flowchart TB
 
 ```python
 # Configure AWS Glue crawler for automatic metadata discovery
+
 import boto3
 
 glue_client = boto3.client('glue')

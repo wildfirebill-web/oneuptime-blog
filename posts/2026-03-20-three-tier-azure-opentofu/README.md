@@ -14,6 +14,7 @@ The Azure three-tier architecture uses Application Gateway for presentation (wit
 
 ```hcl
 # main.tf - Three-tier VNet
+
 resource "azurerm_virtual_network" "vnet" {
   name                = "three-tier-vnet"
   address_space       = ["10.0.0.0/16"]

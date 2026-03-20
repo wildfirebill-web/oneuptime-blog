@@ -8,12 +8,13 @@ Description: Learn how to test composed OpenTofu modules where multiple child mo
 
 ## Introduction
 
-Module composition is the practice of combining multiple child modules to build complex infrastructure. Testing composed modules verifies that the wiring between modules is correct — that outputs from one module correctly feed into another, and that the overall system behaves as expected. OpenTofu's testing framework supports this with setup modules, run block references, and multi-step test scenarios.
+Module composition is the practice of combining multiple child modules to build complex infrastructure. Testing composed modules verifies that the wiring between modules is correct - that outputs from one module correctly feed into another, and that the overall system behaves as expected. OpenTofu's testing framework supports this with setup modules, run block references, and multi-step test scenarios.
 
 ## What is Module Composition?
 
 ```hcl
-# root/main.tf — composition of child modules
+# root/main.tf - composition of child modules
+
 module "vpc" {
   source      = "./modules/vpc"
   cidr_block  = var.vpc_cidr
@@ -37,7 +38,7 @@ module "compute" {
 ## Testing the Composed Root Module
 
 ```hcl
-# tests/integration.tftest.hcl — test the full composition
+# tests/integration.tftest.hcl - test the full composition
 
 mock_provider "aws" {
   mock_resource "aws_vpc" {
@@ -214,4 +215,4 @@ run "environment_tag_propagates" {
 
 ## Conclusion
 
-Testing module composition ensures the wiring between child modules is correct. Use mock providers for fast plan-mode composition tests, and multi-step run blocks with `command = apply` for integration tests that validate the full deployment sequence. Test the interface contracts between modules — verifying that each module outputs the values its downstream consumers need. This prevents subtle integration bugs that only surface when modules are combined.
+Testing module composition ensures the wiring between child modules is correct. Use mock providers for fast plan-mode composition tests, and multi-step run blocks with `command = apply` for integration tests that validate the full deployment sequence. Test the interface contracts between modules - verifying that each module outputs the values its downstream consumers need. This prevents subtle integration bugs that only surface when modules are combined.

@@ -30,6 +30,7 @@ Start by confirming the error is present:
 
 ```bash
 # Check for pods stuck in ContainerCreating
+
 kubectl get pods --all-namespaces --field-selector=status.phase!=Running,status.phase!=Succeeded
 
 # Look for CIDR-related events

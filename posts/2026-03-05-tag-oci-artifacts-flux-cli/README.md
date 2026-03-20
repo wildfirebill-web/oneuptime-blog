@@ -29,6 +29,7 @@ The `flux tag artifact` command requires write access to the registry. Log in be
 
 ```bash
 # Log in to GitHub Container Registry
+
 echo $GITHUB_TOKEN | docker login ghcr.io -u $GITHUB_USER --password-stdin
 
 # Log in to Docker Hub

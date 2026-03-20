@@ -20,6 +20,7 @@ IAM OIDC Providers allow external identity providers to authenticate to AWS usin
 
 ```hcl
 # Get the OIDC thumbprint from GitHub's OIDC endpoint
+
 data "tls_certificate" "github" {
   url = "https://token.actions.githubusercontent.com"
 }

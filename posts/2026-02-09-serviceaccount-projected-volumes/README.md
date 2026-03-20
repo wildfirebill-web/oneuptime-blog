@@ -24,6 +24,7 @@ Start with a simple custom path:
 
 ```yaml
 # custom-path-pod.yaml
+
 apiVersion: v1
 kind: Pod
 metadata:

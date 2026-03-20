@@ -66,6 +66,7 @@ const sdk = new NodeSDK({
 
 ```python
 # Install: pip install opentelemetry-instrumentation-system-metrics
+
 from opentelemetry.instrumentation.system_metrics import SystemMetricsInstrumentor
 
 # This instruments process-level metrics

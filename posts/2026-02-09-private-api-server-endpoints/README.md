@@ -30,6 +30,7 @@ EKS supports three endpoint configurations: public, private, or both. Create a f
 
 ```yaml
 # eks-private-cluster.yaml
+
 apiVersion: eksctl.io/v1alpha5
 kind: ClusterConfig
 

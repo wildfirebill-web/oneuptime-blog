@@ -8,13 +8,13 @@ Description: Understand the structure, scopes, and common uses of IPv6 multicast
 
 ## Introduction
 
-IPv6 multicast addresses (ff00::/8) replace both IPv4 multicast and broadcast. In IPv6, there is no broadcast — every use case that relied on broadcast in IPv4 now uses multicast. Understanding multicast is essential for IPv6 networking, as protocols like NDP, DHCPv6, and MLD all rely on it.
+IPv6 multicast addresses (ff00::/8) replace both IPv4 multicast and broadcast. In IPv6, there is no broadcast - every use case that relied on broadcast in IPv4 now uses multicast. Understanding multicast is essential for IPv6 networking, as protocols like NDP, DHCPv6, and MLD all rely on it.
 
 ## Multicast Address Structure
 
 An IPv6 multicast address starts with `ff` and has this layout:
 
-```
+```text
 | 8 bits | 4 bits | 4 bits | 112 bits  |
 |  0xff  | flags  | scope  | Group ID  |
 ```
@@ -39,7 +39,7 @@ The scope nibble controls how far multicast traffic can propagate:
 
 ## Well-Known Multicast Addresses
 
-```
+```text
 ff01::1  - All nodes (interface-local)
 ff01::2  - All routers (interface-local)
 ff02::1  - All nodes (link-local)        ← most common
@@ -59,10 +59,11 @@ ff05::1:3 - All DHCPv6 servers (site-local)
 
 A special type of link-local multicast used by NDP for address resolution (replacing ARP). Every unicast or anycast address has a corresponding solicited-node multicast address:
 
-```
+```text
 Solicited-node prefix: ff02::1:ff00:0/104
 
 # The last 24 bits of the unicast address are appended
+
 # Example: 2001:db8::1234:5678
 # Solicited-node: ff02::1:ff34:5678
 ```
@@ -99,7 +100,7 @@ netstat -g -n
 ```
 
 Example output:
-```
+```text
 2:      eth0
         inet6 ff02::1
         inet6 ff02::1:ff00:1

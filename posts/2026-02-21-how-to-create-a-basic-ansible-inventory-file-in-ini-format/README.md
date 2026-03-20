@@ -20,6 +20,7 @@ Create a file called `inventory.ini`:
 
 ```ini
 # inventory.ini
+
 # Each line is a host that Ansible can manage
 192.168.1.10
 192.168.1.11

@@ -49,6 +49,7 @@ RTO answers: "How long can we be down?"
 
 ```python
 # Framework for calculating RPO/RTO based on business impact
+
 # This helps prioritize which systems need tighter objectives
 
 def calculate_recovery_objectives(

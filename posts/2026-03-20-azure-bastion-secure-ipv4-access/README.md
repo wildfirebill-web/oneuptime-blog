@@ -8,7 +8,7 @@ Description: Deploy Azure Bastion to provide secure browser-based RDP and SSH ac
 
 ## Introduction
 
-Azure Bastion is a fully managed PaaS service that provides secure, seamless RDP and SSH connectivity to virtual machines directly from the Azure portal over TLS. VMs do not need public IP addresses or open inbound ports — eliminating common attack vectors.
+Azure Bastion is a fully managed PaaS service that provides secure, seamless RDP and SSH connectivity to virtual machines directly from the Azure portal over TLS. VMs do not need public IP addresses or open inbound ports - eliminating common attack vectors.
 
 ## Benefits of Azure Bastion
 
@@ -27,6 +27,7 @@ Azure Bastion is a fully managed PaaS service that provides secure, seamless RDP
 
 ```bash
 # Step 1: Create the required AzureBastionSubnet (name is mandatory)
+
 az network vnet subnet create \
   --resource-group rg-prod \
   --vnet-name prod-vnet \

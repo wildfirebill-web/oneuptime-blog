@@ -25,6 +25,7 @@ The MySQL Operator is available through the Oracle Helm chart repository. Create
 
 ```yaml
 # argocd/mysql-operator.yaml
+
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:

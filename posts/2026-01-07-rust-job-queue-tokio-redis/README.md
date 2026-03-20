@@ -32,6 +32,7 @@ flowchart LR
 ```toml
 [dependencies]
 # Async runtime
+
 tokio = { version = "1", features = ["full"] }
 
 # Redis client

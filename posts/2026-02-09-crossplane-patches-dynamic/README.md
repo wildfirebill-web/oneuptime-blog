@@ -375,6 +375,7 @@ Troubleshoot patch issues:
 
 ```bash
 # Describe composite resource to see applied patches
+
 kubectl describe xpostgresqlinstance my-db
 
 # Check if patches are being applied

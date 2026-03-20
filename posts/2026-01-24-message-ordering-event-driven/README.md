@@ -50,6 +50,7 @@ flowchart TD
 
 ```python
 # ordering_detector.py - Detect and log ordering violations
+
 from dataclasses import dataclass, field
 from datetime import datetime
 from typing import Dict, List, Optional

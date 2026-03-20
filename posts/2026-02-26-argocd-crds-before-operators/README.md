@@ -35,6 +35,7 @@ Sync waves are the simplest approach when CRDs, the operator, and custom resourc
 
 ```yaml
 # crds/certificate-crd.yaml
+
 apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:

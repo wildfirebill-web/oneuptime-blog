@@ -18,6 +18,7 @@ Every EC2 instance needs a key pair for SSH access, and managing those key pairs
 
 ```bash
 # Install the AWS collection
+
 ansible-galaxy collection install amazon.aws
 ```
 

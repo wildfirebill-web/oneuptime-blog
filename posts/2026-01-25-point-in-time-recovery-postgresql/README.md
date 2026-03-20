@@ -86,6 +86,7 @@ The base backup is a consistent snapshot of your entire PostgreSQL data director
 
 ```bash
 # Create a base backup to local directory
+
 pg_basebackup -D /var/lib/postgresql/backups/base_2026-01-25 \
     -Ft \            # tar format
     -z \             # gzip compression

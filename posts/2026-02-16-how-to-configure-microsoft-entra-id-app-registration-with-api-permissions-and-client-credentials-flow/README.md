@@ -63,6 +63,7 @@ After registration, note the **Application (client) ID** and **Directory (tenant
 
 ```powershell
 # Connect to Microsoft Graph
+
 Connect-MgGraph -Scopes "Application.ReadWrite.All"
 
 # Create the app registration

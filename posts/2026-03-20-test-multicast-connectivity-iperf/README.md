@@ -20,10 +20,11 @@ Description: Use iperf and iperf3 to test multicast UDP connectivity, measure th
 
 iperf2 has native multicast support via the `-B` bind option.
 
-Start the receiver first — it joins the multicast group:
+Start the receiver first - it joins the multicast group:
 
 ```bash
 # On the receiver: bind to multicast group 224.1.1.1 on port 5001
+
 # -s = server mode, -u = UDP, -B = bind address, -i = report interval
 iperf -s -u -B 224.1.1.1 -i 1
 ```
@@ -38,7 +39,7 @@ iperf -c 224.1.1.1 -u -b 1M -t 10 -T 10 -i 1
 
 Expected receiver output:
 
-```
+```text
 [ ID] Interval       Transfer    Bandwidth   Jitter   Lost/Total Datagrams
 [  3]  0.0- 1.0 sec  125 KBytes  1.02 Mbits/sec  0.123 ms   0/  89 (0%)
 ```
@@ -52,7 +53,7 @@ Start the `iperf -s` command on each receiver simultaneously before starting the
 ## Sending at Higher Rates
 
 ```bash
-# Send at 10 Mbit/s — useful for capacity testing
+# Send at 10 Mbit/s - useful for capacity testing
 iperf -c 224.1.1.1 -u -b 10M -t 30 -T 15 -i 1
 ```
 
@@ -75,7 +76,7 @@ echo "multicast test" | socat - UDP4-DATAGRAM:224.1.1.1:5001,ip-multicast-ttl=10
 ## Verifying Traffic with tcpdump During the Test
 
 ```bash
-# On an intermediate host or the receiver — watch multicast UDP arrive
+# On an intermediate host or the receiver - watch multicast UDP arrive
 sudo tcpdump -i eth0 -n "dst 224.1.1.1 and udp port 5001"
 ```
 

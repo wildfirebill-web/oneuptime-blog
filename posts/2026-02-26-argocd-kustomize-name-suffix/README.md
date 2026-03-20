@@ -18,6 +18,7 @@ Kustomize appends the suffix to `metadata.name` of every resource and updates cr
 
 ```yaml
 # overlays/canary/kustomization.yaml
+
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 

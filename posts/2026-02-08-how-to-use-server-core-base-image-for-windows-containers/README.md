@@ -39,6 +39,7 @@ What it does NOT include:
 
 ```powershell
 # Pull the base Server Core image
+
 docker pull mcr.microsoft.com/windows/servercore:ltsc2022
 
 # Check image size

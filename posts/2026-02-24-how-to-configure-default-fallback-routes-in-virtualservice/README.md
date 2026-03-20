@@ -291,6 +291,7 @@ The safe approach is to keep everything in one VirtualService:
 
 ```yaml
 # Good: single VirtualService with clear fallback
+
 apiVersion: networking.istio.io/v1beta1
 kind: VirtualService
 metadata:

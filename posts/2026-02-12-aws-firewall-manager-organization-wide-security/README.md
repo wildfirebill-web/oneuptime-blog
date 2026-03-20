@@ -30,6 +30,7 @@ This AWS CLI command designates an account as the Firewall Manager administrator
 
 ```bash
 # Run this from your management account
+
 aws fms associate-admin-account \
   --admin-account 123456789012
 ```

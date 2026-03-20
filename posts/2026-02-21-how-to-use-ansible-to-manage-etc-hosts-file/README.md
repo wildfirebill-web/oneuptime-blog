@@ -16,6 +16,7 @@ For adding or updating individual entries, `lineinfile` is the most straightforw
 
 ```yaml
 # Add a single host entry to /etc/hosts
+
 - name: Add database server to /etc/hosts
   ansible.builtin.lineinfile:
     path: /etc/hosts

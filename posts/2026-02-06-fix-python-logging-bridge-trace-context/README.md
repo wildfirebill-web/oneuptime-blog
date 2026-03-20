@@ -37,6 +37,7 @@ from opentelemetry.sdk._logs.export import BatchLogRecordProcessor
 from opentelemetry.exporter.otlp.proto.http._log_exporter import OTLPLogExporter
 
 # Set up trace provider
+
 resource = Resource.create({SERVICE_NAME: "my-service"})
 trace_provider = TracerProvider(resource=resource)
 trace_provider.add_span_processor(BatchSpanProcessor(OTLPSpanExporter()))

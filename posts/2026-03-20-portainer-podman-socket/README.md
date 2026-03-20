@@ -1,4 +1,4 @@
-# How to Connect Portainer to a Podman Socket
+# How to Connect Portainer to a Podman Socket - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -20,6 +20,7 @@ Podman provides a Docker-compatible REST API that allows Portainer to manage Pod
 
 ```bash
 # Enable and start the Podman socket service
+
 sudo systemctl enable --now podman.socket
 
 # Verify the socket is active
@@ -159,7 +160,7 @@ curl --unix-socket /run/podman/podman.sock \
   http://d/v1.44/version | jq '.Components[0].Version'
 
 # If you see errors related to Podman-specific endpoints:
-# These are expected — Portainer uses Docker-compatible endpoints only
+# These are expected - Portainer uses Docker-compatible endpoints only
 
 # Check what works and what doesn't
 curl --unix-socket /run/podman/podman.sock \
@@ -177,8 +178,8 @@ After connecting, verify Portainer correctly shows Podman containers:
 podman run -d --name test-nginx -p 8080:80 nginx:alpine
 
 # In Portainer UI:
-# Go to Containers — should show "test-nginx"
-# Go to Images — should show nginx:alpine
+# Go to Containers - should show "test-nginx"
+# Go to Images - should show nginx:alpine
 
 # Test from Portainer UI:
 # - View container logs

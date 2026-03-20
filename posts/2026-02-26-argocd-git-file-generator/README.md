@@ -81,6 +81,7 @@ YAML files work the same way:
 
 ```yaml
 # apps/api-gateway/config.yaml
+
 name: api-gateway
 project: production
 repoURL: https://github.com/company/k8s-manifests.git

@@ -26,6 +26,7 @@ Using GKE through CAPG gives you the best of both worlds: Google manages the con
 
 ```bash
 # Set GCP environment variables
+
 export GCP_PROJECT_ID="my-gcp-project"
 export GCP_REGION="us-central1"
 

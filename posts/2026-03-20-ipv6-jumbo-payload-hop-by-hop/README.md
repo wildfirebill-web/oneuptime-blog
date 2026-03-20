@@ -8,11 +8,11 @@ Description: Understand how the Jumbo Payload Hop-by-Hop option enables IPv6 pac
 
 ## Introduction
 
-The Jumbo Payload option (RFC 2675) is a Hop-by-Hop option that enables IPv6 jumbograms — packets with payloads larger than 65535 bytes. It must be placed in a Hop-by-Hop Options header because every router on the path needs to read and process the actual payload length. The option type value (0xC2) is carefully chosen so that routers that don't understand it will skip it and keep forwarding.
+The Jumbo Payload option (RFC 2675) is a Hop-by-Hop option that enables IPv6 jumbograms - packets with payloads larger than 65535 bytes. It must be placed in a Hop-by-Hop Options header because every router on the path needs to read and process the actual payload length. The option type value (0xC2) is carefully chosen so that routers that don't understand it will skip it and keep forwarding.
 
 ## Why It Must Be a Hop-by-Hop Option
 
-```
+```text
 Options in IPv6 headers that must be processed by every router:
   → Must use the Hop-by-Hop Options header
   → Hop-by-Hop header is the FIRST extension header
@@ -33,7 +33,7 @@ Why routers need the Jumbo Payload length:
 
 The option type byte encodes behavior for unknown options:
 
-```
+```text
 Option Type 0xC2 = 11000010 binary
 
 Bits 7-6 (top 2): 11 = "skip over this option and continue processing"
@@ -43,7 +43,7 @@ Bits 7-6 (top 2): 11 = "skip over this option and continue processing"
     10 = discard and send ICMPv6 Parameter Problem (not multicast dest)
     11 = discard and send ICMPv6 Parameter Problem (any dest)
 
-Wait — 0xC2 = 11000010:
+Wait - 0xC2 = 11000010:
   Bits 7-6: 11 = discard + send ICMPv6 to any destination
   Bit 5:    0  = option data does NOT change en route
   Bits 4-0: 00010 = option type identifier
@@ -60,6 +60,7 @@ Actually RFC 2675 uses 0xC2 which means if unknown:
 import struct
 
 # Jumbo Payload option encoding (RFC 2675)
+
 JUMBO_PAYLOAD_OPTION_TYPE = 0xC2
 JUMBO_PAYLOAD_OPTION_LENGTH = 4   # 4 bytes of option data
 
@@ -147,7 +148,7 @@ print(f"Decoded: next_header={decoded['next_header']}, jumbo_length={decoded['ju
 
 ## Rules When Using the Jumbo Payload Option
 
-```
+```text
 RFC 2675 rules for jumbogram senders:
 
 1. IPv6 Payload Length field MUST be set to 0

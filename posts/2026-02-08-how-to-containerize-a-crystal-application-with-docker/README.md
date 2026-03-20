@@ -22,6 +22,7 @@ Create the project structure:
 
 ```bash
 # Create a new Crystal project
+
 mkdir crystal-docker-demo
 cd crystal-docker-demo
 ```

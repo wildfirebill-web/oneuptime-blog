@@ -1,8 +1,8 @@
-# How to Build IPv6 Network Automation Pipelines
+# How to Build IPv6 Network Automation Pipelines - Network
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Automation, Pipeline, CI/CD, Ansible, Nornir
+Tags: IPv6, Automation, Pipelines, CI/CD, Ansible, Nornir
 
 Description: Build end-to-end IPv6 network automation pipelines that cover inventory collection, configuration generation, deployment, and continuous compliance verification.
 
@@ -12,7 +12,7 @@ A network automation pipeline treats network configuration as code. Changes flow
 
 ## Pipeline Architecture
 
-```
+```text
 ┌─────────────┐    ┌──────────────┐    ┌──────────────┐    ┌─────────────┐
 │  Source of  │    │  Validation  │    │  Deployment  │    │ Compliance  │
 │   Truth     │───▶│  & Testing   │───▶│  Automation  │───▶│  Monitoring │
@@ -25,6 +25,7 @@ A network automation pipeline treats network configuration as code. Changes flow
 
 ```yaml
 # network/ipv6_policy.yml
+
 ---
 addressing:
   loopback_prefix: "5f00:fe81::/32"

@@ -36,6 +36,7 @@ A Kendra index is the core search engine. Create one with CloudFormation:
 
 ```yaml
 # CloudFormation for Amazon Kendra search infrastructure
+
 AWSTemplateFormatVersion: '2010-09-09'
 Resources:
   KendraIndex:

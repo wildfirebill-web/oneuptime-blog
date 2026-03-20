@@ -56,6 +56,7 @@ If you already have a load balancer, skip to Step 3.
 
 ```bash
 # Create a resource group
+
 az group create --name rg-lb-probes-demo --location eastus
 
 # Create a VNet and subnet

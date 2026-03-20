@@ -49,6 +49,7 @@ Terraform enforces sensitivity. If an output references a sensitive variable or 
 
 ```hcl
 # This variable is sensitive
+
 variable "db_password" {
   type      = string
   sensitive = true

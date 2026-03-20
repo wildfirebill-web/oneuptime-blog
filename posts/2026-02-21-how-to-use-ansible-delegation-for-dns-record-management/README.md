@@ -16,6 +16,7 @@ AWS Route53 is managed through API calls. You delegate these tasks to localhost 
 
 ```yaml
 # route53-dns.yml - Managing Route53 DNS records during deployment
+
 ---
 - name: Provision and configure web servers with DNS
   hosts: webservers

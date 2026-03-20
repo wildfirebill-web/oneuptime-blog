@@ -17,6 +17,7 @@ PROJECT="my-project"
 REGION="us-east1"
 
 # Enable flow logs on an existing subnet
+
 gcloud compute networks subnets update subnet-web \
     --project="$PROJECT" \
     --region="$REGION" \
@@ -49,7 +50,7 @@ gcloud compute networks subnets describe subnet-web \
 
 ```bash
 # Use gcloud to query flow logs for IPv6 traffic
-# IPv6 addresses contain colons — filter on that pattern
+# IPv6 addresses contain colons - filter on that pattern
 
 gcloud logging read \
     'resource.type="gce_subnetwork" AND
@@ -78,7 +79,7 @@ gcloud logging read \
 
 ## Cloud Logging Query Syntax (Log Explorer)
 
-```
+```text
 # In Cloud Console Log Explorer, use these queries:
 
 # All IPv6 flow logs (source or destination is IPv6)

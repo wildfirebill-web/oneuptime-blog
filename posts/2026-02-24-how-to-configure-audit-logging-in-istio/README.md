@@ -343,6 +343,7 @@ In Prometheus:
 
 ```promql
 # Alert on high rate of authorization denials
+
 sum(rate(istio_requests_total{response_code="403"}[5m])) by (destination_service) > 10
 ```
 

@@ -181,6 +181,7 @@ When things go wrong, follow this systematic approach:
 
 ```bash
 # On the node (or via a debug pod)
+
 ls -la /etc/cni/net.d/
 ```
 

@@ -44,6 +44,7 @@ Gateways configure the Istio ingress gateway to accept external traffic. Here's 
 
 ```yaml
 # Gateway configuration for external traffic
+
 apiVersion: networking.istio.io/v1beta1
 kind: Gateway
 metadata:

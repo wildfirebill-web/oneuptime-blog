@@ -153,6 +153,7 @@ Now let's set up the OpenTelemetry SDK. First, install the required dependencies
 
 ```bash
 # Install OpenTelemetry Go SDK and exporters
+
 go get go.opentelemetry.io/otel
 go get go.opentelemetry.io/otel/sdk
 go get go.opentelemetry.io/otel/exporters/otlp/otlptrace

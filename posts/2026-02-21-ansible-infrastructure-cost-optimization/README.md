@@ -21,10 +21,11 @@ graph TD
     A --> F[Scheduling]
 ```
 
-## Resource Audit Tasks
+Resource Audit Tasks
 
 ```yaml
 # roles/cost_optimization/tasks/main.yml - Identify cost savings
+
 ---
 - name: Find servers with low CPU utilization
   shell: |

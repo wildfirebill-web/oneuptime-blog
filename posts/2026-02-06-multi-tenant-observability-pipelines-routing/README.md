@@ -47,6 +47,7 @@ This agent configuration adds a `tenant.id` resource attribute to all telemetry 
 
 ```yaml
 # Agent collector config - deployed per tenant
+
 receivers:
   otlp:
     protocols:

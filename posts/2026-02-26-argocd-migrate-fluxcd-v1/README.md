@@ -60,6 +60,7 @@ Document everything Flux v1 manages.
 
 ```bash
 # List all HelmReleases (if using Flux Helm Operator)
+
 kubectl get helmreleases --all-namespaces -o json | jq '.items[] | {
   name: .metadata.name,
   namespace: .metadata.namespace,

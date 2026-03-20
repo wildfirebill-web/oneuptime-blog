@@ -16,6 +16,7 @@ The `pause` option takes a number of seconds to wait between iterations:
 
 ```yaml
 # Restart services with a 10-second pause between each
+
 - name: Rolling restart of application instances
   ansible.builtin.systemd:
     name: "{{ item }}"

@@ -2,16 +2,17 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, moved Blocks, Refactoring, Infrastructure as Code, State Management
+Tags: OpenTofu, Moved Blocks, Refactoring, Infrastructure as Code, State Management
 
 Description: Learn how to use OpenTofu moved blocks to rename or move resources in your configuration without destroying and recreating them.
 
-When you rename a resource in your configuration, OpenTofu sees the old name as deleted and the new name as a new resource — unless you tell it the address has moved. The `moved` block records this renaming so OpenTofu updates the state entry rather than destroying and recreating the resource.
+When you rename a resource in your configuration, OpenTofu sees the old name as deleted and the new name as a new resource - unless you tell it the address has moved. The `moved` block records this renaming so OpenTofu updates the state entry rather than destroying and recreating the resource.
 
 ## The Problem Without moved
 
 ```hcl
 # Before: resource named "web"
+
 resource "aws_instance" "web" {
   ami           = var.ami_id
   instance_type = "t3.micro"
@@ -21,7 +22,7 @@ resource "aws_instance" "web" {
 If you rename it to `"app_server"` without a `moved` block:
 
 ```hcl
-# After rename — OpenTofu thinks "web" was deleted and "app_server" is new
+# After rename - OpenTofu thinks "web" was deleted and "app_server" is new
 resource "aws_instance" "app_server" {
   ami           = var.ami_id
   instance_type = "t3.micro"
@@ -29,12 +30,12 @@ resource "aws_instance" "app_server" {
 ```
 
 Running `tofu plan` shows:
-```
+```text
 - destroy aws_instance.web
 + create  aws_instance.app_server
 ```
 
-This destroys the running instance and creates a new one — not what you want.
+This destroys the running instance and creates a new one - not what you want.
 
 ## The Solution: moved Block
 
@@ -56,11 +57,11 @@ resource "aws_instance" "app_server" {
 
 Running `tofu plan` now shows:
 
-```
+```text
 # aws_instance.web has moved to aws_instance.app_server
 ```
 
-No destruction, no recreation — only the state entry is updated.
+No destruction, no recreation - only the state entry is updated.
 
 ## Multiple Renames in One Apply
 
@@ -121,7 +122,7 @@ resource "aws_instance" "app" {
 
 Put `moved` blocks in any `.tf` file in the configuration directory. A common practice is to use a dedicated `moved.tf` file:
 
-```
+```text
 infra/
 ├── main.tf
 ├── variables.tf
@@ -131,7 +132,7 @@ infra/
 
 ## Cleaning Up moved Blocks
 
-`moved` blocks are only needed once — after all existing state files have been updated by an apply that included the block, you can remove it. However, leaving old `moved` blocks in place is harmless and serves as documentation of the rename history.
+`moved` blocks are only needed once - after all existing state files have been updated by an apply that included the block, you can remove it. However, leaving old `moved` blocks in place is harmless and serves as documentation of the rename history.
 
 ## Conclusion
 

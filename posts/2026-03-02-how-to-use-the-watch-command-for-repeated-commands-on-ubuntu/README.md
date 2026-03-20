@@ -14,6 +14,7 @@ The `watch` command runs another command repeatedly at a set interval and displa
 
 ```bash
 # Run a command every 2 seconds (default interval)
+
 watch df -h
 
 # Run every 5 seconds

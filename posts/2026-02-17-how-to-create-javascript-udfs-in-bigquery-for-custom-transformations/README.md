@@ -212,6 +212,7 @@ Upload your library to Cloud Storage first.
 
 ```bash
 # Upload the JavaScript library to Cloud Storage
+
 gsutil cp md5.js gs://my-bucket/js-libs/md5.js
 ```
 

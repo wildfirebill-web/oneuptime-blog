@@ -56,6 +56,7 @@ Merging combines both histories and creates a merge commit. This preserves the e
 
 ```bash
 # Pull with merge strategy
+
 git pull --no-rebase
 
 # Or configure as default for this repo

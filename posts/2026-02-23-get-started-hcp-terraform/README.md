@@ -54,6 +54,7 @@ If you do not already have Terraform installed:
 
 ```bash
 # macOS with Homebrew
+
 brew tap hashicorp/tap
 brew install hashicorp/tap/terraform
 
@@ -94,6 +95,7 @@ For getting started, choose **CLI-driven**. Name it something descriptive:
 ```text
 Workspace name: dev-infrastructure
 Description: Development environment AWS infrastructure
+
 ```
 
 ## Configure the Cloud Block

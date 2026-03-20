@@ -194,6 +194,7 @@ If a breaking change requires modifying your Istio resources, do it during the h
 
 ```bash
 # Example: updating a VirtualService before upgrading to a version that changes its API
+
 kubectl apply -f updated-virtualservice.yaml
 
 # Then proceed with the upgrade

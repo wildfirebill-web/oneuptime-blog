@@ -44,6 +44,7 @@ Navigate to Alerting > Alert rules > New alert rule. Here is the structure of an
 
 ```yaml
 # Alert rule components explained
+
 # 1. Rule name: Descriptive identifier for the alert
 # 2. Query: Data retrieval from your data source
 # 3. Expression: Transform and evaluate the query results

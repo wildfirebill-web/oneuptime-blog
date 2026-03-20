@@ -82,6 +82,7 @@ For .NET, Microsoft provides the Azure Monitor OpenTelemetry Distro, which bundl
 
 ```bash
 # .NET: Install Azure Monitor OpenTelemetry distro
+
 dotnet add package Azure.Monitor.OpenTelemetry.AspNetCore
 
 # Or install OpenTelemetry components individually for more control

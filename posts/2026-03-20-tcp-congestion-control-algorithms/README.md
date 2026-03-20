@@ -8,13 +8,13 @@ Description: Compare TCP congestion control algorithms including Reno, CUBIC, an
 
 ## Introduction
 
-TCP congestion control algorithms determine how fast a sender transmits data and how it responds to network congestion. The algorithm significantly impacts throughput, latency, and fairness — especially on long-distance or lossy links. Understanding the tradeoffs between Reno, CUBIC, and BBR helps you choose the right algorithm for your workload.
+TCP congestion control algorithms determine how fast a sender transmits data and how it responds to network congestion. The algorithm significantly impacts throughput, latency, and fairness - especially on long-distance or lossy links. Understanding the tradeoffs between Reno, CUBIC, and BBR helps you choose the right algorithm for your workload.
 
 ## How Congestion Control Works
 
-All TCP congestion control algorithms manage the Congestion Window (CWND) — the maximum amount of unacknowledged data the sender can have in flight:
+All TCP congestion control algorithms manage the Congestion Window (CWND) - the maximum amount of unacknowledged data the sender can have in flight:
 
-```
+```text
 Throughput ≈ min(CWND, Receive Window) / RTT
 
 Algorithms differ in:
@@ -25,7 +25,7 @@ Algorithms differ in:
 
 ## TCP Reno (Classic)
 
-```
+```text
 Algorithm behavior:
 1. Slow Start: CWND doubles each RTT (exponential growth)
 2. At threshold: switches to Congestion Avoidance (+1 MSS per RTT)
@@ -38,7 +38,7 @@ Weakness: Very conservative on high-bandwidth × high-latency paths
 
 ## TCP CUBIC (Linux Default)
 
-```
+```javascript
 Algorithm behavior:
 1. Uses a cubic function to grow CWND (independent of RTT)
 2. On congestion: CWND × 0.8 (20% reduction, less aggressive than Reno)
@@ -46,12 +46,13 @@ Algorithm behavior:
 4. Scales well with very high bandwidth links
 
 # Good for: high-bandwidth LAN/datacenter, standard internet connections
+
 # Weakness: still loss-based, can be slow to recover on lossy links
 ```
 
 ## TCP BBR (Bottleneck Bandwidth and RTT)
 
-```
+```text
 Algorithm behavior:
 1. Estimates actual bottleneck bandwidth by measuring delivery rate
 2. Estimates minimum RTT to find queue-free path
@@ -100,4 +101,4 @@ echo "Reno done"
 
 ## Conclusion
 
-CUBIC is the right default for most LAN and datacenter scenarios. BBR excels on high-latency or lossy paths where loss-based algorithms react too conservatively. The practical performance difference between CUBIC and BBR can be dramatic on paths with 100ms+ RTT — BBR can achieve 5-10× higher throughput by not over-reacting to loss signals.
+CUBIC is the right default for most LAN and datacenter scenarios. BBR excels on high-latency or lossy paths where loss-based algorithms react too conservatively. The practical performance difference between CUBIC and BBR can be dramatic on paths with 100ms+ RTT - BBR can achieve 5-10× higher throughput by not over-reacting to loss signals.

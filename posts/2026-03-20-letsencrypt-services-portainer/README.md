@@ -1,8 +1,8 @@
-# How to Set Up Let's Encrypt for Services via Portainer
+# How to Set Up Let's Encrypt for Services via Portainer - Letsencrypt
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Lets Encrypt, SSL, Certificates, Docker
+Tags: Portainer, Lets encrypt, SSL, Certificates, Docker
 
 Description: Automate free SSL certificate provisioning with Let's Encrypt for services deployed via Portainer.
 
@@ -30,7 +30,7 @@ Automate free SSL certificate provisioning with Let's Encrypt for services deplo
 
 Design your network topology before implementation:
 
-```
+```text
 Internet
    |
 [Nginx/Traefik] (DMZ network)
@@ -48,6 +48,7 @@ Navigate to **Networks** > **Add Network**:
 
 ```yaml
 # Define networks in your stack
+
 version: "3.8"
 
 networks:

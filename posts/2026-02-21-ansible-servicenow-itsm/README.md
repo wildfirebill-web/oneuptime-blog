@@ -30,6 +30,7 @@ ansible-galaxy collection install servicenow.itsm
 
 ```yaml
 # tasks/snow-change-request.yml
+
 ---
 - name: Create change request
   servicenow.itsm.change_request:

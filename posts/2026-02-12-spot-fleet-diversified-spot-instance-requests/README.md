@@ -28,6 +28,7 @@ This command creates a Spot Fleet that targets 20 instances across multiple inst
 
 ```bash
 # Create a Spot Fleet request
+
 aws ec2 request-spot-fleet \
   --spot-fleet-request-config '{
     "IamFleetRole": "arn:aws:iam::123456789012:role/aws-ec2-spot-fleet-role",

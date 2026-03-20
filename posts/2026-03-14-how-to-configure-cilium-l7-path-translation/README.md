@@ -118,6 +118,7 @@ spec:
 
 ```bash
 # Deploy test service
+
 kubectl exec -n default deploy/client -- \
   curl -s -v http://backend-service:8080/api/v2/users 2>&1
 

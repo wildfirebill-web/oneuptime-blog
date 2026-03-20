@@ -35,6 +35,7 @@ The Kubernetes control plane components (API server, scheduler, controller manag
 
 ```bash
 # add-windows-nodepool.sh
+
 # Add a Windows node pool to an existing AKS cluster
 
 # Create a Windows node pool with 2 nodes

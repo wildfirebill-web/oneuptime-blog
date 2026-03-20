@@ -46,6 +46,7 @@ Here is a complete envelope encryption implementation in Python:
 
 ```python
 # envelope_encryption.py
+
 # Envelope encryption implementation using Cloud KMS and local AES-GCM
 import os
 import json

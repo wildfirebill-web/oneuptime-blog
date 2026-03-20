@@ -14,7 +14,7 @@ VM boot issues in Harvester can range from VMs that never start, to VMs that sta
 
 Before troubleshooting, understand the VM state transitions:
 
-```
+```text
 VM Created → Pending → Scheduling → Scheduled → Launching → Running
                   ↓                         ↓
                Failed                    CrashLoopBackOff
@@ -24,6 +24,7 @@ VM Created → Pending → Scheduling → Scheduled → Launching → Running
 
 ```bash
 # Check the VirtualMachine resource
+
 kubectl get vm -n default
 
 # Check the running instance (VMI)

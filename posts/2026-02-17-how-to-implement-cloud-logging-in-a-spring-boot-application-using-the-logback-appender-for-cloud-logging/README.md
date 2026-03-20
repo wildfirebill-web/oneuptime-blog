@@ -110,6 +110,7 @@ Or use the Spring Cloud GCP JSON layout:
 
 ```properties
 # application-cloudrun.properties
+
 # Enable JSON logging for Cloud Run
 logging.config=classpath:logback-json.xml
 ```

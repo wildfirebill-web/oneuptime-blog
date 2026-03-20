@@ -52,6 +52,7 @@ The values file for an Istio-focused deployment:
 
 ```yaml
 # cortex-values.yaml
+
 config:
   storage:
     engine: blocks

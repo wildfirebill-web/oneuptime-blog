@@ -156,6 +156,7 @@ Podman provides several ways to work with labels. You can filter images based on
 
 ```bash
 # List all images with a specific label
+
 podman images --filter label=org.opencontainers.image.vendor="Example Corp"
 
 # Get a specific label value

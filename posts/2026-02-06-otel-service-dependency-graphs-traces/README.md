@@ -23,6 +23,7 @@ Here is how to set up the Service Graph Connector:
 
 ```yaml
 # collector-config.yaml
+
 receivers:
   otlp:
     protocols:

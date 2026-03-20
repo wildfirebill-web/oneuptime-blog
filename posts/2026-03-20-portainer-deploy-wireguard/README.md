@@ -1,8 +1,8 @@
-# How to Deploy WireGuard VPN via Portainer
+# How to Deploy WireGuard VPN via Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Docker, WireGuard, VPN, Privacy, Self-Hosted, Network
+Tags: Portainer, Docker, WireGuard, VPN, Privacy, Self-Hosted, Networks
 
 Description: Deploy WireGuard VPN via Portainer using the linuxserver.io image for easy peer management and secure remote access to your home network or private services.
 
@@ -65,6 +65,7 @@ After deployment, peer configurations are stored in the volume. View them:
 
 ```bash
 # List all peer configurations
+
 docker exec wireguard ls /config/peer_*/
 
 # Show QR code for mobile setup (peer 1)

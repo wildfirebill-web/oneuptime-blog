@@ -29,6 +29,7 @@ Confirm the conflict is happening:
 
 ```bash
 # Check if HPA is scaling correctly
+
 kubectl get hpa my-service -n team-alpha
 # NAME         REFERENCE                   TARGETS   MINPODS   MAXPODS   REPLICAS
 # my-service   Deployment/my-service       80%/70%   2         20        15

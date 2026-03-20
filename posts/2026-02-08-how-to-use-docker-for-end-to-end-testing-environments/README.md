@@ -22,6 +22,7 @@ A well-structured E2E test environment has three layers: the application service
 
 ```yaml
 # docker-compose.test.yml - Complete E2E testing environment
+
 version: "3.8"
 
 services:

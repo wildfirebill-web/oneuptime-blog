@@ -595,6 +595,7 @@ Monitor the impact of attribute transformations:
 
 ```bash
 # Query collector metrics
+
 curl http://localhost:8888/metrics | grep processor_attributes
 
 # Key metrics:

@@ -49,6 +49,7 @@ Plugins are included in the Falco container image. Enable them through configura
 
 ```yaml
 # falco.yaml
+
 plugins:
   - name: cloudtrail
     library_path: libcloudtrail.so

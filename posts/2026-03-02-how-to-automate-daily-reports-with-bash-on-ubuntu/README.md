@@ -29,6 +29,7 @@ A report that is too long gets skimmed. One that is too short misses important d
 ```bash
 #!/bin/bash
 # daily_report.sh - Daily server health report
+
 # Schedule with: 0 7 * * * /usr/local/bin/daily_report.sh
 
 set -euo pipefail

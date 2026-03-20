@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, Cisco, NX-OS, Nexus, IPv4, Network Automation, nxos_config
+Tags: Ansible, Cisco, NX-OS, Nexus, IPv4, Network Automation, Nxos_config
 
 Description: Use the Ansible cisco.nxos.nxos_config module to configure IPv4 interfaces, VLANs, and routing on Cisco Nexus switches running NX-OS.
 
@@ -27,6 +27,7 @@ ansible_connection=network_cli
 
 ```yaml
 # configure_nexus_ipv4.yml
+
 ---
 - name: Configure IPv4 on Cisco Nexus
   hosts: nexus_switches

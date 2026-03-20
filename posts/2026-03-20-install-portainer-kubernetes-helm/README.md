@@ -16,6 +16,7 @@ Description: Learn how to deploy Portainer Server on a Kubernetes cluster using 
 
 ```bash
 # Add the official Portainer Helm repository
+
 helm repo add portainer https://portainer.github.io/k8s/
 
 # Update your local Helm chart cache

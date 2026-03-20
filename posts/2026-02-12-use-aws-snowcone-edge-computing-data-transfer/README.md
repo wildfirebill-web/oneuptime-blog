@@ -40,6 +40,7 @@ Create a Snowcone job through the CLI:
 
 ```bash
 # Create an import job for Snowcone
+
 aws snowball create-job \
   --job-type IMPORT \
   --resources '{

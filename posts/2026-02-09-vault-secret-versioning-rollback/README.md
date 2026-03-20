@@ -22,6 +22,7 @@ Set up versioned secrets:
 
 ```bash
 # Enable KV v2 at default path
+
 vault secrets enable -version=2 kv
 
 # Enable at custom path

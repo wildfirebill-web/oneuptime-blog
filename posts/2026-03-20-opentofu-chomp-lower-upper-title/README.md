@@ -1,11 +1,10 @@
----
-title: "How to Use String Functions in OpenTofu: chomp, lower, upper, title"
-author: nawazdhandala
-tags: opentofu, terraform, iac, functions, strings
-description: "Learn how to use chomp, lower, upper, and title string functions in OpenTofu to manipulate text in your infrastructure configurations."
----
-
 # How to Use String Functions in OpenTofu: chomp, lower, upper, title
+
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
+
+Tags: OpenTofu, Terraform, IaC, Functions, String
+
+Description: Learn how to use chomp, lower, upper, and title string functions in OpenTofu to manipulate text in your infrastructure configurations.
 
 OpenTofu provides several functions for basic string case and whitespace manipulation. These functions are essential for normalizing user input, generating consistent resource names, and formatting strings for APIs.
 
@@ -49,7 +48,7 @@ Use it to normalize resource names to meet AWS/GCP naming requirements:
 ```hcl
 locals {
   bucket_name = lower("${var.project}-${var.environment}-logs")
-  # "myproject-prod-logs" — always lowercase
+  # "myproject-prod-logs" - always lowercase
 }
 
 resource "aws_s3_bucket" "logs" {

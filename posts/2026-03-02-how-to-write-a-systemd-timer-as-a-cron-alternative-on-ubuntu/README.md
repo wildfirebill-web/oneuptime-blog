@@ -33,6 +33,7 @@ sudo nano /etc/systemd/system/hourly-cleanup.service
 [Unit]
 Description=Hourly cleanup task
 # After network is available (optional, remove if not needed)
+
 After=network.target
 
 [Service]

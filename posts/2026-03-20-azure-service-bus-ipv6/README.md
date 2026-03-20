@@ -17,6 +17,7 @@ RG="rg-servicebus-ipv6"
 LOCATION="eastus"
 
 # Create Service Bus namespace
+
 az servicebus namespace create \
     --resource-group "$RG" \
     --name sb-myapp \

@@ -31,6 +31,7 @@ Create a cluster with multiple shards:
 
 ```bash
 # Create a Memorystore Redis Cluster with 3 shards
+
 gcloud redis clusters create my-redis-cluster \
   --region=us-central1 \
   --network=projects/my-project/global/networks/default \

@@ -21,23 +21,24 @@ Navigate to **System > Package Manager > Available Packages**:
 
 Navigate to **VPN > WireGuard > Tunnels > Add Tunnel**:
 
-```
+```text
 Description:   WG Remote Access
+
 Listen port:   51820
 Interface keys: Generate (creates server public/private key pair)
 ```
 
-Copy the **Public Key** — clients need this.
+Copy the **Public Key** - clients need this.
 
 ## Step 3: Add Client Peer
 
 Navigate to the tunnel > **Peers > Add Peer**:
 
-```
+```text
 Description:    Laptop-Alice
 Public key:     <Alice's WireGuard public key>
 Allowed IPs:    10.6.0.2/32   (this client's tunnel IP)
-Endpoint:       (leave blank for road warrior — dynamic IP)
+Endpoint:       (leave blank for road warrior - dynamic IP)
 Keepalive:      25
 ```
 
@@ -54,7 +55,7 @@ Navigate to **Interfaces > OPT2**:
 ## Step 5: Firewall Rules
 
 Navigate to **Firewall > Rules > WAN > Add**:
-```
+```text
 Protocol: UDP
 Destination: WAN address
 Destination port: 51820
@@ -62,7 +63,7 @@ Description: Allow WireGuard
 ```
 
 Navigate to **Firewall > Rules > OPT2 (WG) > Add**:
-```
+```text
 Action: Pass
 Source: any
 Destination: any
@@ -82,6 +83,7 @@ PublicKey = <pfSense WireGuard public key>
 Endpoint = 203.0.113.1:51820
 AllowedIPs = 0.0.0.0/0         # Full tunnel (all traffic via VPN)
 # AllowedIPs = 192.168.1.0/24  # Split tunnel (LAN only)
+
 PersistentKeepalive = 25
 ```
 
@@ -107,4 +109,4 @@ wg show wg0 latest-handshakes
 
 ## Conclusion
 
-WireGuard on pfSense requires creating a tunnel, adding client peers with their public keys, assigning the tunnel as an interface with a static IP, and adding firewall rules for UDP/51820 inbound and forwarding from WireGuard clients. Client configurations are minimal — 10–15 lines of INI-format config.
+WireGuard on pfSense requires creating a tunnel, adding client peers with their public keys, assigning the tunnel as an interface with a static IP, and adding firewall rules for UDP/51820 inbound and forwarding from WireGuard clients. Client configurations are minimal - 10–15 lines of INI-format config.

@@ -12,7 +12,7 @@ MongoDB sharded clusters consist of config servers, mongos routers, and shard re
 
 ## MongoDB Sharded Cluster Architecture
 
-```
+```text
 Config Servers (CSRS)    Shard 1 (Replica Set)    mongos (Router)
 [2001:db8::c1]:27019     [2001:db8::s1]:27018     [2001:db8::r1]:27017
 [2001:db8::c2]:27019     [2001:db8::s2]:27018
@@ -52,6 +52,7 @@ systemLog:
 
 ```bash
 # Start config servers on each node
+
 mongod --config /etc/mongod-config.conf --fork
 
 # Initialize config server replica set

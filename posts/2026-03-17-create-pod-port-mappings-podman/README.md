@@ -18,6 +18,7 @@ In Podman, port publishing is configured at the pod level, not on individual con
 
 ```bash
 # Create a pod that maps host port 8080 to pod port 80
+
 podman pod create --name web-pod -p 8080:80
 
 # Run a web server inside the pod

@@ -20,6 +20,7 @@ A minimal `.sops.yaml` file with a single rule that applies to all encrypted fil
 
 ```yaml
 # .sops.yaml - Basic configuration with Age encryption
+
 creation_rules:
   - path_regex: .*\.enc\.yaml$
     encrypted_regex: ^(data|stringData)$

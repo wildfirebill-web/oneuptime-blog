@@ -42,6 +42,7 @@ clusters/
 
 ```yaml
 # clusters/my-cluster/rabbitmq/namespace.yaml
+
 apiVersion: v1
 kind: Namespace
 metadata:

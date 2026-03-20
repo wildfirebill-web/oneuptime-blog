@@ -42,6 +42,7 @@ Create an event hub if you do not have one already.
 
 ```bash
 # Create an Event Hubs namespace
+
 az eventhubs namespace create \
   --name my-eventhub-ns \
   --resource-group rg-streaming \

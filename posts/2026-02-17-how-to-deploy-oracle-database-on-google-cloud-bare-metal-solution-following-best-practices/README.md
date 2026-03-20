@@ -52,6 +52,7 @@ BMS servers are provisioned through the GCP Console or API. Choose a server conf
 
 ```bash
 # List available BMS server configurations in your region
+
 gcloud bms instances list \
     --project=my-project \
     --location=us-central1

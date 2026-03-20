@@ -29,6 +29,7 @@ This guide uses the Mattermost Team Edition (free, open-source) Helm chart with 
 kubectl create namespace mattermost
 
 # Mattermost database credentials
+
 kubectl create secret generic mattermost-db-secret \
   --namespace mattermost \
   --from-literal=DB_PASSWORD=mm_db_pass \

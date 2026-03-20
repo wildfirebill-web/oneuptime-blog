@@ -20,6 +20,7 @@ Description: Learn how to use ltrace on Ubuntu to trace library calls made by ap
 
 ```bash
 # Install ltrace from Ubuntu repositories
+
 sudo apt update
 sudo apt install -y ltrace
 

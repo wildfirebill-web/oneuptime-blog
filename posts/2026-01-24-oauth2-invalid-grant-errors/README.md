@@ -59,6 +59,7 @@ Authorization codes typically expire within 30 seconds to 10 minutes. If you do 
 
 ```python
 # Example error response
+
 {
     "error": "invalid_grant",
     "error_description": "The authorization code has expired"

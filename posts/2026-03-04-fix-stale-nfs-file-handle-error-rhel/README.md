@@ -14,6 +14,7 @@ A "Stale NFS file handle" error occurs when the NFS client holds a reference to 
 
 ```bash
 # The error appears when accessing NFS-mounted files
+
 ls /mnt/nfs/somefile
 # ls: cannot access '/mnt/nfs/somefile': Stale file handle
 

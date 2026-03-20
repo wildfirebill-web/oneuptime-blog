@@ -136,6 +136,7 @@ Configure RKE2 to use the audit policy:
 
 ```yaml
 # /etc/rancher/rke2/config.yaml
+
 kube-apiserver-arg:
   - "audit-policy-file=/etc/rancher/rke2/audit-policy.yaml"
   - "audit-log-path=/var/log/kubernetes/audit/audit.log"

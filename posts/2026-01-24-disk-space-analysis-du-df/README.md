@@ -47,6 +47,7 @@ The `df` command provides a quick overview of all mounted filesystems:
 
 ```bash
 # Display disk space usage for all mounted filesystems
+
 # Shows filesystem, size, used, available, use percentage, and mount point
 df -h
 

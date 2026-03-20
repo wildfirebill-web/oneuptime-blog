@@ -30,6 +30,7 @@ List all feature gates:
 
 ```bash
 # API server feature gates
+
 kube-apiserver -h | grep -A 500 "feature-gates"
 
 # kubelet feature gates

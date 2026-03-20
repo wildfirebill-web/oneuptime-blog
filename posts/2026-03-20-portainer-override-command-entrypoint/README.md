@@ -8,19 +8,20 @@ Description: Learn how to override the default command and entrypoint of a Docke
 
 ## Introduction
 
-Every Docker image has a default command and/or entrypoint defined in its Dockerfile. Sometimes you need to override these defaults — to run a different subcommand, pass custom arguments, run a shell for debugging, or execute a migration before starting the app. Portainer provides fields to override both the command and entrypoint when creating or re-creating containers.
+Every Docker image has a default command and/or entrypoint defined in its Dockerfile. Sometimes you need to override these defaults - to run a different subcommand, pass custom arguments, run a shell for debugging, or execute a migration before starting the app. Portainer provides fields to override both the command and entrypoint when creating or re-creating containers.
 
 ## Prerequisites
 
 - Portainer installed with a connected Docker environment
 - Understanding of Docker's CMD vs ENTRYPOINT distinction
 
-## CMD vs ENTRYPOINT — A Quick Refresher
+## CMD vs ENTRYPOINT - A Quick Refresher
 
 ```dockerfile
 # In a Dockerfile:
 
 # ENTRYPOINT sets the main executable (hard to override)
+
 ENTRYPOINT ["python", "app.py"]
 
 # CMD sets default arguments (easy to override)
@@ -46,7 +47,7 @@ The command overrides the image's default `CMD`. Common uses:
 
 ### Running a Different Subcommand
 
-```
+```text
 # Image: redis:7
 # Default command: redis-server
 # Override to run redis-cli:
@@ -60,7 +61,7 @@ Command: pg_dump -U postgres -d mydb
 
 ### Passing Extra Arguments
 
-```
+```text
 # Image: nginx:alpine
 # Default: nginx -g 'daemon off;'
 # Override to change config file:
@@ -73,7 +74,7 @@ Command: node scripts/seed-database.js
 
 ### Override with Shell Commands
 
-```
+```text
 # Run multiple commands via shell
 Command: /bin/sh -c "sleep 5 && node server.js"
 ```
@@ -84,7 +85,7 @@ Overriding the entrypoint replaces the main executable. This is more disruptive 
 
 ### Open a Shell Instead of Starting the App
 
-```
+```text
 # Override entrypoint to get a shell in any container
 Entrypoint: /bin/sh
 # Then leave Command empty to get interactive shell
@@ -93,7 +94,7 @@ Entrypoint: /bin/sh
 
 ### Run as a Script Wrapper
 
-```
+```text
 # Original entrypoint: /app/start.sh
 # Override to use a custom script with initialization:
 Entrypoint: /app/custom-entrypoint.sh
@@ -102,7 +103,7 @@ Command: --config /app/custom.conf
 
 ### Bypass Entrypoint Entirely
 
-```
+```text
 # For a container with ENTRYPOINT ["gunicorn"]
 # Override to run Python directly:
 Entrypoint: python
@@ -135,8 +136,8 @@ services:
 
 ### Debugging a Crashing Container
 
-```
-# Container crashes on start — override entrypoint to get a shell
+```bash
+# Container crashes on start - override entrypoint to get a shell
 Entrypoint: /bin/sh
 Command: (leave empty)
 
@@ -180,7 +181,7 @@ After creating the container:
 
 When entering commands in Portainer, you can use either shell format or JSON array format:
 
-```
+```text
 # Shell format (interpreted by /bin/sh -c):
 Command: echo hello && sleep 10
 
@@ -188,8 +189,8 @@ Command: echo hello && sleep 10
 Command: ["python", "app.py", "--port", "8080"]
 ```
 
-JSON array format is preferred for production — it avoids shell injection and ensures exact argument parsing.
+JSON array format is preferred for production - it avoids shell injection and ensures exact argument parsing.
 
 ## Conclusion
 
-Overriding commands and entrypoints in Portainer gives you fine-grained control over container startup behavior. This is essential for running one-off tasks, debugging failing containers, executing migrations, or passing environment-specific arguments to your application — all without modifying the Docker image itself.
+Overriding commands and entrypoints in Portainer gives you fine-grained control over container startup behavior. This is essential for running one-off tasks, debugging failing containers, executing migrations, or passing environment-specific arguments to your application - all without modifying the Docker image itself.

@@ -223,6 +223,7 @@ Monitor alert context to automatically escalate:
 
 ```yaml
 # Example escalation rule configuration
+
 escalation_rules:
   - name: latency_to_errors
     initial_alert: api_latency_high

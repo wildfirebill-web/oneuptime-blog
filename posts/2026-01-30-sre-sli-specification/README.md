@@ -168,6 +168,7 @@ The corresponding Prometheus query to calculate availability:
 
 ```promql
 # Calculate availability SLI over the last 5 minutes
+
 # Result is a percentage between 0 and 100
 
 sum(rate(api_requests_success_total[5m]))

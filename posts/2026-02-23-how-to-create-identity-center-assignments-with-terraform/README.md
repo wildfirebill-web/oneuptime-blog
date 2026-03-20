@@ -18,6 +18,7 @@ An account assignment in IAM Identity Center has three components: a principal (
 
 ```hcl
 # Configure the AWS provider for Identity Center management
+
 terraform {
   required_providers {
     aws = {

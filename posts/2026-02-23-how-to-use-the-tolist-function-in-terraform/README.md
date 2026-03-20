@@ -16,6 +16,7 @@ The `tolist` function converts its argument to a list value. It is most commonly
 
 ```hcl
 # Convert a set to a list
+
 > tolist(toset(["c", "a", "b"]))
 [
   "a",

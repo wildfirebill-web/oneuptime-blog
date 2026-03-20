@@ -47,6 +47,7 @@ resource = Resource.create({
 })
 
 # Configure trace exporter
+
 trace_exporter = OTLPSpanExporter(
     endpoint=f"{BETTER_STACK_ENDPOINT}/v1/traces",
     headers={

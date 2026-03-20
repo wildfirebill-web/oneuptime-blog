@@ -37,6 +37,7 @@ Each Cloud Function handles a specific API endpoint. Here are the functions for 
 
 ```python
 # products/main.py - Cloud Functions for product endpoints
+
 import json
 from flask import jsonify, request
 from google.cloud import firestore

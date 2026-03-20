@@ -26,6 +26,7 @@ The `k8sattributes` processor queries the Kubernetes API to resolve pod IPs to r
 
 ```yaml
 # otel-collector-config.yaml
+
 receivers:
   otlp:
     protocols:

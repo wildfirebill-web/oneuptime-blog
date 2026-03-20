@@ -24,6 +24,7 @@ fatal: [server1]: FAILED! => {
 
 ```yaml
 # Problem: accessing a key that is not present
+
 - debug:
     msg: "{{ my_dict.missing_key }}"
 

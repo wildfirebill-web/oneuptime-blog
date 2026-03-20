@@ -33,6 +33,7 @@ The following command demonstrates how easy it is to extract environment variabl
 
 ```bash
 # This exposes all environment variables, including secrets
+
 docker inspect --format='{{range .Config.Env}}{{println .}}{{end}}' my_container
 
 # Output might include:

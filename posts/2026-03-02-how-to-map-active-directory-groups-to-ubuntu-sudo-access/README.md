@@ -23,6 +23,7 @@ Before configuring sudo, confirm that SSSD is correctly resolving AD groups:
 
 ```bash
 # Look up a specific AD group
+
 getent group "Domain Admins"
 
 # Look up group membership for a user

@@ -1,4 +1,4 @@
-# How to Automate Image Updates via Portainer API
+# How to Automate Image Updates via Portainer API - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -22,6 +22,7 @@ Keeping Docker images up-to-date is essential for security and feature delivery.
 ```bash
 #!/bin/bash
 # update-container.sh
+
 # Usage: ./update-container.sh <container-name> <new-image-tag>
 
 PORTAINER_URL="https://portainer.example.com"

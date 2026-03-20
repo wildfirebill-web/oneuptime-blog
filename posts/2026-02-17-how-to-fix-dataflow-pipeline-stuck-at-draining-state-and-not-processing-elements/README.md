@@ -28,6 +28,7 @@ Start by looking at the job details:
 
 ```bash
 # Get the current job status and any diagnostic messages
+
 gcloud dataflow jobs describe JOB_ID \
     --region=us-central1 \
     --format="json(currentState, currentStateTime, stageStates)"

@@ -16,6 +16,7 @@ Before going down the Istio rabbit hole, verify that the issue is actually cause
 
 ```bash
 # Check if the sidecar is injected
+
 kubectl get pod -n storage -l app=postgres -o jsonpath='{.items[0].spec.containers[*].name}'
 ```
 

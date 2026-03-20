@@ -27,6 +27,7 @@ Organize your upgrade playbooks and variables:
 
 ```yaml
 # inventory/hosts.yml
+
 all:
   vars:
     current_talos_version: "v1.7.0"

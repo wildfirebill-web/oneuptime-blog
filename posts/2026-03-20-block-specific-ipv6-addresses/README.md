@@ -2,18 +2,19 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, ip6tables, nftables, Blocking, Security
+Tags: IPv6, Ip6tables, nftables, Blocking, Security
 
 Description: Learn how to block specific IPv6 addresses and prefixes using ip6tables and nftables, including dynamic blocklists, IPv6 sets, and automated blocking from logs.
 
 ## Overview
 
-Blocking specific IPv6 addresses and prefixes is a common security task — blocking scanners, attackers, or unwanted traffic from specific ASNs or known bad actors. IPv6 addresses are 128 bits, making manual management impractical at scale. This guide covers both static and dynamic blocking with ip6tables and nftables sets.
+Blocking specific IPv6 addresses and prefixes is a common security task - blocking scanners, attackers, or unwanted traffic from specific ASNs or known bad actors. IPv6 addresses are 128 bits, making manual management impractical at scale. This guide covers both static and dynamic blocking with ip6tables and nftables sets.
 
 ## ip6tables: Static Block Rules
 
 ```bash
 # Block a single IPv6 address
+
 ip6tables -A INPUT -s 2001:db8:attacker::1 -j DROP
 
 # Block a /48 prefix
@@ -130,7 +131,7 @@ nft list set ip6 dynamic-block temp-block
 
 ```bash
 #!/bin/bash
-# auto-block-ipv6.sh — Parse logs and auto-block attackers
+# auto-block-ipv6.sh - Parse logs and auto-block attackers
 
 THRESHOLD=10      # Block after 10 failed attempts
 WINDOW=300        # In 300 seconds (5 minutes)
@@ -202,4 +203,4 @@ ipset list ipv6-blocklist
 
 ## Summary
 
-Block specific IPv6 addresses with `ip6tables -A INPUT -s <prefix> -j DROP` for static rules. For large blocklists, use ipset (`ipset create ipv6-blocklist hash:net family inet6`) with ip6tables, or nftables named sets with `type ipv6_addr flags interval`. For dynamic blocking (auto-expiring), use nftables sets with `flags dynamic, timeout` and `timeout 1h`. Automate blocking by parsing SSH auth logs for repeated failures and adding to the dynamic set. Always log blocked addresses for audit — `log prefix "BLOCKLIST: " level warn` before the drop.
+Block specific IPv6 addresses with `ip6tables -A INPUT -s <prefix> -j DROP` for static rules. For large blocklists, use ipset (`ipset create ipv6-blocklist hash:net family inet6`) with ip6tables, or nftables named sets with `type ipv6_addr flags interval`. For dynamic blocking (auto-expiring), use nftables sets with `flags dynamic, timeout` and `timeout 1h`. Automate blocking by parsing SSH auth logs for repeated failures and adding to the dynamic set. Always log blocked addresses for audit - `log prefix "BLOCKLIST: " level warn` before the drop.

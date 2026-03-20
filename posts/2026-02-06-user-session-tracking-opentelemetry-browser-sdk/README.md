@@ -463,6 +463,7 @@ Once sessions are tracked, you can run queries against your trace backend to ans
 
 ```bash
 # Find all spans for a specific session
+
 # Useful when a user reports an issue and gives you their session ID
 curl -s "http://localhost:16686/api/traces?service=frontend-app&tag=session.id:abc-123" \
   | jq '.data[].spans[] | {operation: .operationName, time: .startTime}'

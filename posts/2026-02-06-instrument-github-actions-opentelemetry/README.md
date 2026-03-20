@@ -57,6 +57,7 @@ Create a reusable workflow file that starts the collector as a service container
 
 ```yaml
 # .github/workflows/build-with-tracing.yml
+
 # This workflow demonstrates running an OTel Collector as a service container
 # so that individual steps can emit trace data during the build.
 name: Build with Tracing

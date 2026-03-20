@@ -26,6 +26,7 @@ Jenkins X v3 already uses Flux CD under the hood for some operations, making mig
 
 ```bash
 # List all Jenkins X applications
+
 jx get apps
 
 # Export current pipeline and environment configurations

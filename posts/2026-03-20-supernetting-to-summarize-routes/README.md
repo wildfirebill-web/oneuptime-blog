@@ -11,7 +11,7 @@ Description: Supernetting (route aggregation or summarization) combines multiple
 Supernetting is the reverse of subnetting. Instead of splitting a block into smaller subnets, you combine multiple contiguous blocks into one larger summary prefix.
 
 Example: Combine four /24 networks into one /22:
-```
+```text
 192.168.0.0/24
 192.168.1.0/24  →  192.168.0.0/22
 192.168.2.0/24
@@ -40,13 +40,14 @@ def summarize_networks(networks: list) -> str:
     if len(summary) == 1:
         return str(summary[0])
     else:
-        # Multiple blocks needed — find the covering supernet
+        # Multiple blocks needed - find the covering supernet
         first = min(nets, key=lambda n: n.network_address)
         last  = max(nets, key=lambda n: n.broadcast_address)
         return str(list(first.supernet(new_prefix=
             first.prefixlen - 1))[0])
 
 # Four contiguous /24s
+
 nets = ["192.168.0.0/24", "192.168.1.0/24",
         "192.168.2.0/24", "192.168.3.0/24"]
 print(summarize_networks(nets))  # 192.168.0.0/22
@@ -62,26 +63,26 @@ print(result)  # [IPv4Network('192.168.0.0/22')]
 To find the summary of `10.1.4.0/24` through `10.1.7.0/24`:
 
 1. Convert to binary:
-   ```
+   ```text
    10.1.00000100.0  (10.1.4.0)
    10.1.00000101.0  (10.1.5.0)
    10.1.00000110.0  (10.1.6.0)
    10.1.00000111.0  (10.1.7.0)
    ```
-2. Find common bits: `10.1.000001` — the first 22 bits match.
+2. Find common bits: `10.1.000001` - the first 22 bits match.
 3. Summary prefix: `10.1.4.0/22`
 
 ## Configuring Route Summarization
 
 On a Cisco IOS router (OSPF):
-```
+```text
 # Summarize 10.1.4.0/22 at the ABR
 router ospf 1
   area 0 range 10.1.4.0 255.255.252.0
 ```
 
 On Linux with FRRouting (BGP):
-```
+```text
 router bgp 65001
   address-family ipv4 unicast
     aggregate-address 10.1.4.0/22 summary-only

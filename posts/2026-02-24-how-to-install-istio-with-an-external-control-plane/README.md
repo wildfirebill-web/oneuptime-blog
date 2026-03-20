@@ -51,6 +51,7 @@ Set up kubeconfig contexts for both:
 
 ```bash
 # Set context names
+
 export CTX_EXTERNAL_CLUSTER=external-cluster
 export CTX_REMOTE_CLUSTER=remote-cluster
 

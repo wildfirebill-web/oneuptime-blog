@@ -12,6 +12,7 @@ The quickest way to disable IPv6 via PowerShell without a registry change or reb
 
 ```powershell
 # Disable IPv6 on a specific adapter
+
 Disable-NetAdapterBinding -Name "Ethernet" -ComponentID ms_tcpip6
 
 # Disable IPv6 on all adapters

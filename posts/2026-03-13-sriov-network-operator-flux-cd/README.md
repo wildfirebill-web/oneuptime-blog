@@ -23,6 +23,7 @@ SR-IOV (Single Root I/O Virtualization) allows a single physical NIC to present 
 
 ```bash
 # Check if SR-IOV is supported on nodes
+
 lspci | grep -i eth
 # Look for SR-IOV capable adapters
 

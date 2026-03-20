@@ -41,6 +41,7 @@ Shared VPC is ideal when a central network team wants to control IP allocation, 
 
 ```bash
 # Step 1: Enable Shared VPC on the host project
+
 gcloud compute shared-vpc enable host-project
 
 # Step 2: Create the shared network in the host project

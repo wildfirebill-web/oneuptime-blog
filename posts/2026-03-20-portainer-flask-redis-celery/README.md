@@ -1,4 +1,4 @@
-# How to Deploy a Flask + Redis + Celery Stack via Portainer
+# How to Deploy a Flask + Redis + Celery Stack via Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Deploy a Flask web application with Redis as a message broker and C
 
 ## Introduction
 
-Flask is a lightweight Python web framework that pairs well with Celery and Redis for handling background tasks such as email sending, report generation, or data processing. Deploying this stack via Portainer gives you a web interface for managing all components — the Flask API, Redis broker, Celery workers, and Flower monitoring dashboard — from a single place.
+Flask is a lightweight Python web framework that pairs well with Celery and Redis for handling background tasks such as email sending, report generation, or data processing. Deploying this stack via Portainer gives you a web interface for managing all components - the Flask API, Redis broker, Celery workers, and Flower monitoring dashboard - from a single place.
 
 ## Prerequisites
 
@@ -20,6 +20,7 @@ Flask is a lightweight Python web framework that pairs well with Celery and Redi
 
 ```dockerfile
 # Dockerfile
+
 FROM python:3.12-slim
 
 # Install system dependencies
@@ -65,7 +66,7 @@ Navigate to **Stacks** → **Add Stack** → **Web Editor** and name it `flask-c
 version: "3.8"
 
 services:
-  # Redis — message broker and result backend
+  # Redis - message broker and result backend
   redis:
     image: redis:7-alpine
     container_name: flask-redis
@@ -127,7 +128,7 @@ services:
       timeout: 10s
       retries: 3
 
-  # Celery worker — processes background tasks
+  # Celery worker - processes background tasks
   worker:
     image: ${FLASK_IMAGE:-flask-app:latest}
     container_name: flask-worker
@@ -145,7 +146,7 @@ services:
     networks:
       - flask-net
 
-  # Celery Beat — scheduled tasks
+  # Celery Beat - scheduled tasks
   beat:
     image: ${FLASK_IMAGE:-flask-app:latest}
     container_name: flask-beat
@@ -162,7 +163,7 @@ services:
     networks:
       - flask-net
 
-  # Flower — Celery monitoring dashboard
+  # Flower - Celery monitoring dashboard
   flower:
     image: mher/flower:2.0
     container_name: flask-flower
@@ -230,7 +231,7 @@ celery = make_celery(app)
 ```
 
 ```python
-# app/tasks.py — Celery tasks
+# app/tasks.py - Celery tasks
 from app import celery
 from celery.utils.log import get_task_logger
 import time
@@ -259,7 +260,7 @@ def generate_report_task(report_id):
 ```
 
 ```python
-# app/routes/__init__.py — Flask API routes
+# app/routes/__init__.py - Flask API routes
 from flask import Blueprint, jsonify, request
 from app.tasks import send_email_task, generate_report_task
 
@@ -294,7 +295,7 @@ def get_task_status(task_id):
 # Access Flower dashboard at http://localhost:5555
 # Login: admin / flowerpassword (from FLOWER_USER/FLOWER_PASSWORD env vars)
 
-# Via CLI — check active tasks
+# Via CLI - check active tasks
 docker exec flask-worker celery -A app.celery inspect active
 
 # Check registered tasks

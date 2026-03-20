@@ -2,18 +2,19 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, tofu fmt, Pre-Commit, Code Formatting, Developer Experience
+Tags: OpenTofu, Tofu fmt, Pre-Commit, Code Formatting, Developer Experience
 
 Description: Learn how to configure tofu fmt in pre-commit hooks to automatically format OpenTofu configurations before commits, ensuring consistent code style across your team.
 
 ## Introduction
 
-`tofu fmt` formats OpenTofu configuration files according to the canonical style conventions — consistent indentation, spacing, and alignment. Running it as a pre-commit hook ensures every commit has properly formatted code, eliminating formatting-related diff noise in pull requests.
+`tofu fmt` formats OpenTofu configuration files according to the canonical style conventions - consistent indentation, spacing, and alignment. Running it as a pre-commit hook ensures every commit has properly formatted code, eliminating formatting-related diff noise in pull requests.
 
 ## tofu fmt Basics
 
 ```bash
 # Format all .tf files in the current directory
+
 tofu fmt
 
 # Format recursively across all subdirectories
@@ -181,4 +182,4 @@ tofu fmt -check -recursive .  # Should exit 0
 
 ## Conclusion
 
-`tofu fmt` as a pre-commit hook is a zero-cost improvement — it runs in milliseconds, requires no configuration, and eliminates formatting debates entirely. The CI check ensures that any files that slip past the pre-commit hook (or direct pushes) are caught before merging. Run `tofu fmt -recursive .` in a single commit to format the entire codebase before enabling the hook, to avoid a flood of formatting changes in subsequent pull requests.
+`tofu fmt` as a pre-commit hook is a zero-cost improvement - it runs in milliseconds, requires no configuration, and eliminates formatting debates entirely. The CI check ensures that any files that slip past the pre-commit hook (or direct pushes) are caught before merging. Run `tofu fmt -recursive .` in a single commit to format the entire codebase before enabling the hook, to avoid a flood of formatting changes in subsequent pull requests.

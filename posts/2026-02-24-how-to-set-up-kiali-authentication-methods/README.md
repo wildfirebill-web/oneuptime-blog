@@ -111,6 +111,7 @@ Get the token for your service account:
 
 ```bash
 # For Kubernetes 1.24+, create a token
+
 kubectl create token kiali-user -n istio-system --duration=8760h
 ```
 

@@ -63,6 +63,7 @@ terraform/
 
 ```hcl
 # variables.tf
+
 variable "environment" {
   description = "Deployment environment"
   type        = string
@@ -583,7 +584,7 @@ sequenceDiagram
 
 ### GitHub Actions Workflow
 
-```yaml
+````yaml
 # .github/workflows/terraform.yml
 name: Terraform Workspace Deployment
 
@@ -651,9 +652,9 @@ jobs:
         with:
           script: |
             const output = `#### Terraform Plan - ${{ matrix.environment }}
-            \`\`\`
+            ```
             ${{ steps.plan.outputs.stdout }}
-            \`\`\`
+            ```
             `;
             github.rest.issues.createComment({
               issue_number: context.issue.number,
@@ -766,7 +767,7 @@ jobs:
           terraform apply \
             -var-file=environments/prod.tfvars \
             -auto-approve
-```
+````
 
 ## Pattern 7: Workspace Cost Management Pattern
 

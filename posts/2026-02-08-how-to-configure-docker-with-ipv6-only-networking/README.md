@@ -37,6 +37,7 @@ Restart Docker:
 
 ```bash
 # Apply the IPv6 configuration
+
 sudo systemctl restart docker
 
 # Verify IPv6 is enabled on docker0

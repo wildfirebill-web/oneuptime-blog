@@ -110,6 +110,7 @@ Apply it and test from both clients:
 
 ```bash
 # Should succeed (200)
+
 kubectl exec -n security-test deploy/client-a -c sleep -- \
   curl -s -o /dev/null -w "%{http_code}" http://httpbin:8000/status/200
 

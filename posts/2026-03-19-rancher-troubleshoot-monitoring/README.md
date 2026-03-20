@@ -41,6 +41,7 @@ If the monitoring chart fails to install:
 
 ```bash
 # Check Helm release status
+
 helm list -n cattle-monitoring-system
 
 # Check Helm release history

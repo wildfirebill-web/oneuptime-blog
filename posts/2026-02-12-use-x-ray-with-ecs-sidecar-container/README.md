@@ -40,6 +40,7 @@ The task role (not the execution role) needs permissions to send trace data to X
 
 ```bash
 # Create the task role trust policy
+
 aws iam create-role \
   --role-name ecs-xray-task-role \
   --assume-role-policy-document '{

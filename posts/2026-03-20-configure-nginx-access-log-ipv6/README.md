@@ -69,6 +69,7 @@ When behind a load balancer, IPv6 addresses in X-Forwarded-For headers need prop
 # /etc/nginx/conf.d/real-ip.conf
 
 # Set trusted IPv6 proxies
+
 set_real_ip_from 2001:db8:lb::/48;  # IPv6 load balancer subnet
 set_real_ip_from 127.0.0.1;
 set_real_ip_from ::1;

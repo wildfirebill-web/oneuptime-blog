@@ -41,6 +41,7 @@ If you do not already have a Cloud Identity domain, set one up.
 
 ```bash
 # Verify domain ownership for Cloud Identity
+
 # This is done through the Google Admin Console
 # You need to add a TXT record to your DNS
 

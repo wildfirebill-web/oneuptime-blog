@@ -212,6 +212,7 @@ For the pulling account, you also need to grant the `ecr:GetAuthorizationToken` 
 
 ```hcl
 # In the pulling account's Terraform
+
 resource "aws_iam_policy" "ecr_pull" {
   name = "ecr-cross-account-pull"
 

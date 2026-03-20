@@ -1,4 +1,4 @@
-# How to Configure SRv6 on Linux with iproute2
+# How to Configure SRv6 on Linux with iproute2 - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -14,6 +14,7 @@ Linux has supported SRv6 since kernel 4.10 (encapsulation) and 4.14 (seg6local e
 
 ```bash
 # Check kernel version (requires 4.14+)
+
 uname -r
 
 # Enable SRv6
@@ -39,13 +40,13 @@ ip -6 route add 5f00:1:1::1/128 \
   encap seg6local action End \
   dev lo
 
-# End.X — forward to specific next-hop after processing SID
+# End.X - forward to specific next-hop after processing SID
 ip -6 route add 5f00:1:1:0:e001::/128 \
   encap seg6local action End.X \
   nh6 fe80::1 \
   dev eth0
 
-# End.DT6 — decapsulate and IPv6 table lookup (L3VPN)
+# End.DT6 - decapsulate and IPv6 table lookup (L3VPN)
 # Create VRF first
 ip netns add vrf-customer-a 2>/dev/null || true
 ip vrf add CUSTOMER_A
@@ -56,13 +57,13 @@ ip -6 route add 5f00:1:1:0:e000::/128 \
   vrftable 100 \
   dev lo
 
-# End.DX4 — decapsulate IPv6 outer header, route inner IPv4
+# End.DX4 - decapsulate IPv6 outer header, route inner IPv4
 ip -6 route add 5f00:1:1:0:e002::/128 \
   encap seg6local action End.DX4 \
   nh4 192.168.1.1 \
   dev eth1
 
-# End.DX6 — decapsulate and IPv6 cross-connect
+# End.DX6 - decapsulate and IPv6 cross-connect
 ip -6 route add 5f00:1:1:0:e003::/128 \
   encap seg6local action End.DX6 \
   nh6 2001:db8::1 \
@@ -81,7 +82,7 @@ ip -6 route add 2001:db8:dest::/48 \
   dev eth0
 
 # Inline mode: add SRH to the original IPv6 packet
-# (No outer header — modifies the original packet)
+# (No outer header - modifies the original packet)
 ip -6 route add 2001:db8:dest::/48 \
   encap seg6 mode inline \
   segs 5f00:1:2::,5f00:2:1:: \
@@ -138,7 +139,7 @@ sudo sysctl -w net.ipv6.conf.eth0.seg6_require_hmac=1
 
 ```bash
 #!/bin/bash
-# srv6-demo.sh — demonstrate SRv6 service chaining on Linux
+# srv6-demo.sh - demonstrate SRv6 service chaining on Linux
 
 # Enable SRv6
 sysctl -w net.ipv6.conf.all.seg6_enabled=1

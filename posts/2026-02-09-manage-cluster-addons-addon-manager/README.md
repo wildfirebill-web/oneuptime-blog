@@ -26,6 +26,7 @@ For kubeadm clusters, addon manager is not enabled by default. Deploy it manuall
 
 ```bash
 # Create addon manager namespace
+
 kubectl create namespace kube-system
 
 # Deploy addon manager

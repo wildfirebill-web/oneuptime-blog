@@ -18,6 +18,7 @@ The simplest form passes a single key-value pair.
 
 ```bash
 # Pass a single variable to the playbook
+
 ansible-playbook -i inventory.ini deploy.yml -e "app_version=2.4.1"
 ```
 

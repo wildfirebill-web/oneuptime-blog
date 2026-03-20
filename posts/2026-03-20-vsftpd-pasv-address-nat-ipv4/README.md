@@ -2,25 +2,26 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: vsftpd, FTP, pasv_address, NAT, IPv4, Passive Mode
+Tags: vsftpd, FTP, Pasv_address, NAT, IPv4, Passive Mode
 
 Description: Configure vsftpd pasv_address to advertise the correct public IPv4 address for passive mode connections through NAT, including dynamic IP support with pasv_addr_resolve.
 
 ## Introduction
 
-When vsftpd runs behind NAT, passive mode breaks by default. The server advertises its private IP in the PASV response, but clients cannot reach that address from the internet. The `pasv_address` directive tells vsftpd which IP to advertise—it must be the public IP clients can reach.
+When vsftpd runs behind NAT, passive mode breaks by default. The server advertises its private IP in the PASV response, but clients cannot reach that address from the internet. The `pasv_address` directive tells vsftpd which IP to advertise-it must be the public IP clients can reach.
 
 ## The Problem Without pasv_address
 
 ```bash
 # Client connects and requests PASV:
+
 # Server responds with private IP (wrong!):
 # 227 Entering Passive Mode (10,0,0,5,117,49)
-# Client tries to connect to 10.0.0.5:30001 — unreachable from internet!
+# Client tries to connect to 10.0.0.5:30001 - unreachable from internet!
 
 # With pasv_address set to public IP:
 # 227 Entering Passive Mode (203,0,113,10,117,49)
-# Client connects to 203.0.113.10:30001 — works!
+# Client connects to 203.0.113.10:30001 - works!
 ```
 
 ## Setting pasv_address
@@ -95,8 +96,8 @@ sudo ufw allow proto tcp to $PUBLIC_IP port 30000:31000
 ```bash
 # AWS Security Group rules for FTP server:
 # Inbound:
-#   TCP 21       — FTP command
-#   TCP 30000-31000 — Passive data
+#   TCP 21       - FTP command
+#   TCP 30000-31000 - Passive data
 
 # Azure NSG inbound rules:
 # Port 21: Allow

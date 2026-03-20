@@ -36,6 +36,7 @@ The most basic cause: the Kubernetes cluster is not running.
 
 ```bash
 # Check minikube status
+
 minikube status
 
 # Start minikube if it is not running

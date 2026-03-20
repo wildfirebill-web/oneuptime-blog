@@ -27,6 +27,7 @@ sudo systemctl restart apache2
 
 ```bash
 # Install CRS from apt
+
 sudo apt install modsecurity-crs
 
 # The rules are installed to /usr/share/modsecurity-crs/

@@ -29,6 +29,7 @@ The simplest approach, one command that creates both the private key and certifi
 
 ```bash
 # Generate a self-signed certificate valid for 365 days
+
 openssl req -x509 -newkey rsa:4096 -keyout server.key -out server.crt -days 365 -nodes -subj "/C=US/ST=California/L=San Francisco/O=MyOrg/CN=myserver.internal"
 ```
 

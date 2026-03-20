@@ -205,6 +205,7 @@ Here is a realistic example with multiple access tiers:
 
 ```yaml
 # Allow public endpoints without authentication
+
 apiVersion: security.istio.io/v1
 kind: AuthorizationPolicy
 metadata:

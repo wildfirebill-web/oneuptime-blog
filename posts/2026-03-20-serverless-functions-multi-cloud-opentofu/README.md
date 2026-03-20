@@ -12,7 +12,7 @@ Deploying serverless functions across multiple cloud providers can be complex wh
 
 ## Project Structure
 
-```
+```text
 serverless-multi-cloud/
 ├── main.tf
 ├── variables.tf
@@ -46,6 +46,7 @@ provider "google"  { project = var.gcp_project; region = var.gcp_region }
 
 ```hcl
 # modules/aws-lambda/main.tf
+
 resource "aws_lambda_function" "fn" {
   function_name = var.function_name
   runtime       = "python3.11"

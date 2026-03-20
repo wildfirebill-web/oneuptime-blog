@@ -16,6 +16,7 @@ Validating IPAM release operations requires confirming three outcomes: the speci
 
 ```bash
 # Run IPAM check to identify issues
+
 calicoctl ipam check
 
 # Verify specific IP before release

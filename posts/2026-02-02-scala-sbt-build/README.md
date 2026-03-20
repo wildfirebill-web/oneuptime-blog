@@ -58,6 +58,7 @@ On macOS using Homebrew:
 
 ```bash
 # Install sbt using Homebrew package manager
+
 brew install sbt
 ```
 

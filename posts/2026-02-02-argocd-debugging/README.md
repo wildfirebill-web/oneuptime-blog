@@ -47,6 +47,7 @@ The following command displays the current sync status, health status, and any e
 
 ```bash
 # Get detailed application status
+
 argocd app get myapp
 
 # Get status in YAML format for detailed inspection

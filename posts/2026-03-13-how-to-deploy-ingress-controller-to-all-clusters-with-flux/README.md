@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux, Kubernetes, GitOps, Multi-Cluster, Ingress, NGINX, Load Balancing, Networking
+Tags: Flux, Kubernetes, GitOps, Multi-Cluster, Ingress, Nginx, Load Balancing, Networking
 
 Description: Learn how to deploy and configure ingress controllers consistently across multiple Kubernetes clusters using Flux with per-cluster networking customization.
 
@@ -58,6 +58,7 @@ repo/
 
 ```yaml
 # infrastructure/sources/ingress-nginx-repo.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

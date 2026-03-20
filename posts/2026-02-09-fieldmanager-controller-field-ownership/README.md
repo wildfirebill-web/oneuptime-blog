@@ -76,6 +76,7 @@ When using kubectl with Server-Side Apply, specify a field manager name:
 
 ```bash
 # Apply with a custom field manager name
+
 kubectl apply -f deployment.yaml --server-side --field-manager=my-gitops-tool
 
 # This tells the API server that "my-gitops-tool" owns the fields in the manifest

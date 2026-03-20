@@ -39,6 +39,7 @@ The Gateway API CRDs must be installed before any implementation.
 
 ```yaml
 # gateway-api-crds.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: OCIRepository
 metadata:

@@ -22,6 +22,7 @@ Install CDKTF and initialize a new project configured for Kubernetes management.
 
 ```bash
 # Install CDKTF CLI
+
 npm install -g cdktf-cli
 
 # Create a new project

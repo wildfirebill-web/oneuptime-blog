@@ -18,6 +18,7 @@ Modern applications often consist of multiple containers working together. When 
 
 ```bash
 # Quick view: last 5 lines from every running container
+
 for c in $(podman ps --format '{{.Names}}'); do
   echo "=== $c ==="
   podman logs --tail 5 "$c" 2>&1

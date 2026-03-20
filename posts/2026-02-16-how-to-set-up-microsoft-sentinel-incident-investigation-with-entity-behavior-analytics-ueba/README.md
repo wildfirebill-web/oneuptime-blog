@@ -46,6 +46,7 @@ You can also enable it through the API. This command enables UEBA on your Sentin
 
 ```bash
 # Enable UEBA through the REST API
+
 az rest --method PUT \
   --url "https://management.azure.com/subscriptions/<sub-id>/resourceGroups/rg-sentinel/providers/Microsoft.OperationalInsights/workspaces/law-sentinel-prod/providers/Microsoft.SecurityInsights/settings/EntityAnalytics?api-version=2023-02-01" \
   --body '{

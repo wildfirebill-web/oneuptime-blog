@@ -85,6 +85,7 @@ Store this securely. Never commit it to source control.
 
 ```bash
 # Generate a self-signed certificate for app authentication
+
 # Valid for 1 year - rotate before expiration
 openssl req -x509 -newkey rsa:2048 \
     -keyout private.pem -out certificate.pem \

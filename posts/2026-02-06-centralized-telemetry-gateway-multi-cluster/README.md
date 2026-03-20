@@ -44,6 +44,7 @@ This is the local gateway config that enriches telemetry with cluster metadata:
 
 ```yaml
 # cluster-gateway-config.yaml - Deployed in each Kubernetes cluster
+
 receivers:
   otlp:
     protocols:

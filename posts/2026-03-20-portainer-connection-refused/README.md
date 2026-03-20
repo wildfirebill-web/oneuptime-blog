@@ -1,10 +1,10 @@
-# How to Fix "Connection Refused" Errors in Portainer
+# How to Fix 'Connection Refused' Errors in Portainer
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Portainer, Docker, Troubleshooting, Networking, Self-Hosted
 
-Description: Systematically diagnose and fix "Connection Refused" errors in Portainer, whether they occur in the browser, between Portainer and agents, or between Portainer and Docker.
+Description: Systematically diagnose and fix 'Connection Refused' errors in Portainer, whether they occur in the browser, between Portainer and agents, or between Portainer and Docker.
 
 ## Introduction
 
@@ -21,6 +21,7 @@ Description: Systematically diagnose and fix "Connection Refused" errors in Port
 
 ```bash
 # 1. Check if Portainer is running
+
 docker ps | grep portainer
 
 # 2. Check the port binding
@@ -33,14 +34,14 @@ ss -tlnp | grep 9000
 ### Fixes
 
 ```bash
-# Portainer is not running — start it
+# Portainer is not running - start it
 docker start portainer
 
-# Portainer crashed — check why and fix, then restart
+# Portainer crashed - check why and fix, then restart
 docker logs portainer --tail 50
 docker start portainer
 
-# Port is not exposed — recreate with correct port mapping
+# Port is not exposed - recreate with correct port mapping
 docker stop portainer && docker rm portainer
 docker run -d \
   -p 9000:9000 \
@@ -75,7 +76,7 @@ curl --unix-socket /var/run/docker.sock http://localhost/v1.44/version
 ### Fixes
 
 ```bash
-# Docker is not running — start it
+# Docker is not running - start it
 sudo systemctl start docker
 sudo systemctl enable docker  # Ensure it starts on boot
 
@@ -124,7 +125,7 @@ sudo firewall-cmd --list-ports  # RHEL/CentOS
 # Start the agent if not running
 docker start portainer-agent
 
-# If agent wasn't running — deploy it
+# If agent wasn't running - deploy it
 docker run -d \
   -p 9001:9001 \
   --name portainer-agent \
@@ -195,4 +196,4 @@ docker logs portainer --tail 20 2>/dev/null
 
 ## Conclusion
 
-"Connection refused" in Portainer always has a specific cause: the Portainer container isn't running, the port isn't exposed, Docker isn't running, or network/firewall rules are blocking the connection. Work through each scenario systematically — checking the container state, port bindings, Docker daemon health, and firewall rules — and you'll find the root cause quickly.
+"Connection refused" in Portainer always has a specific cause: the Portainer container isn't running, the port isn't exposed, Docker isn't running, or network/firewall rules are blocking the connection. Work through each scenario systematically - checking the container state, port bindings, Docker daemon health, and firewall rules - and you'll find the root cause quickly.

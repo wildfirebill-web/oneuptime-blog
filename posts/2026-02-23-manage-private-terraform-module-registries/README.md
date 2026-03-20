@@ -38,6 +38,7 @@ If you are already using Terraform Cloud or HCP Terraform, you get a private reg
 
 ```hcl
 # Using modules from Terraform Cloud private registry
+
 module "vpc" {
   source  = "app.terraform.io/myorg/vpc/aws"
   version = "~> 1.0"

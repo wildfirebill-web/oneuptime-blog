@@ -102,6 +102,7 @@ output "cluster_id" {
 
 ```bash
 # Retrieve kubeconfig using aliyun CLI
+
 aliyun cs DescribeClusterUserKubeconfig \
   --ClusterId $(tofu output -raw cluster_id) \
   --output json | jq -r '.config' > kubeconfig.yaml

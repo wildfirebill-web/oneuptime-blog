@@ -28,6 +28,7 @@ Start with the minimal OpenTelemetry packages that work in edge environments:
 
 ```bash
 # Initialize project
+
 npm init -y
 
 # Install Hono

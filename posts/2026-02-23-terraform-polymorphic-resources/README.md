@@ -18,6 +18,7 @@ Say you have a module that deploys an application, and it needs a database. But 
 
 ```hcl
 # This is what we want to avoid - separate resources with conditions everywhere
+
 resource "aws_db_instance" "rds" {
   count = var.database_type == "rds" ? 1 : 0
   # ... rds config

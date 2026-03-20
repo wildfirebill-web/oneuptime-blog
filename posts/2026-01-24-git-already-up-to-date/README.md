@@ -34,6 +34,7 @@ The most common cause is being on the wrong branch:
 
 ```bash
 # Check which branch you are on
+
 git branch
 
 # Output shows current branch with asterisk

@@ -669,6 +669,7 @@ class ChunkedBatchProcessor:
         return final_results
 
 # Example usage
+
 def process_user_batch(users: List[dict]) -> List[dict]:
     """Process a chunk of users."""
     results = []

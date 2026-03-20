@@ -22,6 +22,7 @@ connection_string = os.environ["AZURE_STORAGE_CONNECTION_STRING"]
 table_client = TableClient.from_connection_string(connection_string, "Orders")
 
 # Basic equality filter
+
 # Returns only entities where Status equals "shipped"
 results = table_client.query_entities(
     query_filter="Status eq 'shipped'"

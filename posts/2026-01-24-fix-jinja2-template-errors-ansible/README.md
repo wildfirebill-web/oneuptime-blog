@@ -66,6 +66,7 @@ The variable `app_version` was not defined anywhere in your inventory, vars file
 
 ```yaml
 # group_vars/all.yml
+
 app_version: "1.2.3"
 ```
 

@@ -22,6 +22,7 @@ Install ArgoCD on your central management cluster with the HA manifest for produ
 
 ```bash
 # Install ArgoCD HA on the hub cluster
+
 kubectl create namespace argocd
 kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/ha/install.yaml
 
@@ -168,7 +169,7 @@ spec:
 
 The `ApplyOutOfSyncOnly=true` option is important for edge - it tells ArgoCD to only sync resources that actually changed, reducing the amount of API calls to the edge cluster.
 
-## Resource Constraints for Edge Hardware
+Resource Constraints for Edge Hardware
 
 Edge devices typically have limited CPU and memory. Your deployments need to account for this with appropriate resource requests and limits.
 

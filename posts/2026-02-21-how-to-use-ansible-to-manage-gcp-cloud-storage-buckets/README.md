@@ -40,6 +40,7 @@ graph LR
 
 ```yaml
 # create-bucket.yml - Create a Cloud Storage bucket with standard settings
+
 ---
 - name: Create GCP Storage Bucket
   hosts: localhost

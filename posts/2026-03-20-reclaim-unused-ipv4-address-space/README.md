@@ -18,6 +18,7 @@ Enterprise networks often allocate large blocks for anticipated growth that neve
 
 ```bash
 # Scan a subnet for active hosts
+
 nmap -sn 192.168.1.0/24 -oG - | awk '/Up$/{print $2}' | sort -t. -k4 -n
 
 # Scan an entire block for active hosts (may take a while for large ranges)
@@ -151,7 +152,7 @@ After identifying unused space:
 
 ```bash
 # Document what you're reclaiming (before making changes)
-echo "Reclaiming: 10.1.5.0/24 — no active hosts found" >> /var/log/ipam-changes.log
+echo "Reclaiming: 10.1.5.0/24 - no active hosts found" >> /var/log/ipam-changes.log
 
 # Update DHCP server to stop serving the reclaimed subnet
 # Remove from dhcpd.conf and reload

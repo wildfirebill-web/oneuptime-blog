@@ -29,6 +29,7 @@ provider "aws" {
 }
 
 # Network Load Balancer
+
 resource "aws_lb" "main" {
   name               = "app-nlb"
   internal           = false

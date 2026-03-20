@@ -25,6 +25,7 @@ Testing ClickHouse queries ensures data accuracy and prevents regressions. This 
 
 ```python
 # conftest.py
+
 import pytest
 import clickhouse_connect
 import uuid

@@ -38,6 +38,7 @@ First, register the repository with ArgoCD:
 
 ```bash
 # Using the CLI
+
 argocd repo add https://charts.bitnami.com/bitnami --type helm --name bitnami
 
 # For private repos with credentials

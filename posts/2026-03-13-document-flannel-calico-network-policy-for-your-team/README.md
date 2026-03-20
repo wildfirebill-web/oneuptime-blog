@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Calico, Flannel, Canal, Kubernetes, Networking, Documentation, Team
+Tags: Calico, Flannel, Canal, Kubernetes, Networking, Documentation, Teams
 
 Description: A guide to creating effective internal documentation for a Canal (Flannel + Calico network policy) deployment that helps operations and development teams understand, operate, and troubleshoot the...
 
@@ -54,6 +54,7 @@ kubectl wait --for=condition=Ready pods -n kube-system -l k8s-app=canal --timeou
 
 ```bash
 # Canal DaemonSet health
+
 kubectl get daemonset canal -n kube-system
 
 # Node readiness

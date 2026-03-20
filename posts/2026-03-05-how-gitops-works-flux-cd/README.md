@@ -51,6 +51,7 @@ Here is a simple example of a Git repository structure:
 
 ```bash
 # A typical GitOps repository layout
+
 fleet-infra/
 ├── clusters/
 │   └── production/

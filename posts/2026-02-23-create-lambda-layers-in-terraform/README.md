@@ -29,6 +29,7 @@ Let's start with the most common case - a Python layer with pip dependencies:
 
 ```hcl
 # Install dependencies and create the layer ZIP
+
 resource "null_resource" "python_layer_deps" {
   triggers = {
     requirements = filesha256("${path.module}/layers/python/requirements.txt")

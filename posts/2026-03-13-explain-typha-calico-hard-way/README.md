@@ -38,6 +38,7 @@ In a hard way installation, Felix connects to Typha using a configuration parame
 
 ```bash
 # In Felix configuration (/etc/calico/felix.cfg or FelixConfiguration)
+
 TyphaAddr = typha-service.calico-system.svc.cluster.local:5473
 ```
 

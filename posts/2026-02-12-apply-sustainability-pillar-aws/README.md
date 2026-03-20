@@ -31,6 +31,7 @@ You can also track resource utilization as a proxy for efficiency:
 
 ```hcl
 # CloudWatch dashboard for resource utilization
+
 resource "aws_cloudwatch_dashboard" "sustainability" {
   dashboard_name = "sustainability-metrics"
 

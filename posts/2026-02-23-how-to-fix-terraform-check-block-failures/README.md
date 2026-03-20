@@ -124,6 +124,7 @@ Check block conditions must be boolean expressions. Non-boolean values cause err
 
 ```hcl
 # Wrong - string comparison produces unexpected results
+
 check "valid_config" {
   assert {
     condition     = var.environment

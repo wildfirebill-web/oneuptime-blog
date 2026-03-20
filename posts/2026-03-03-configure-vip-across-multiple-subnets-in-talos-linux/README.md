@@ -41,6 +41,7 @@ If you configure the same VIP on nodes in different subnets, several things can 
 
 ```yaml
 # This configuration will NOT work correctly
+
 # Node on 192.168.1.0/24
 - interface: eth0
   addresses:

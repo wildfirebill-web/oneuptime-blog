@@ -62,6 +62,7 @@ Install the required Python packages for a comprehensive extraction pipeline. We
 
 ```bash
 # Core extraction libraries
+
 pip install pymupdf       # Fast PDF text extraction
 pip install pytesseract   # OCR wrapper for Tesseract
 pip install pdf2image     # Convert PDF pages to images

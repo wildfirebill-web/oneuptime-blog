@@ -14,6 +14,7 @@ AWX provides a web UI, REST API, and role-based access control for Ansible, maki
 
 ```bash
 # Clone AWX repository
+
 git clone https://github.com/ansible/awx.git
 cd awx
 
@@ -30,7 +31,7 @@ ansible-playbook -i inventory install.yml
 
 In AWX UI:
 
-```
+```text
 Inventories → Add → Inventory
   Name: Network Devices
   Organization: Default
@@ -49,7 +50,7 @@ Group Variables:
 
 ## Storing Network Credentials Securely
 
-```
+```text
 Credentials → Add → Credential Type: Network
   Name: Cisco Switch Creds
   Username: admin
@@ -59,7 +60,7 @@ Credentials → Add → Credential Type: Network
 
 ## Creating a Job Template
 
-```
+```text
 Templates → Add → Job Template
   Name: Deploy ACLs
   Inventory: Network Devices
@@ -72,7 +73,7 @@ Templates → Add → Job Template
 
 ## Creating a Workflow
 
-```
+```text
 Templates → Add → Workflow Template
   Name: Weekly Network Hardening
 
@@ -88,7 +89,7 @@ Workflow Graph:
 
 ## Scheduling Automation
 
-```
+```text
 Templates → Deploy ACLs → Schedules → Add
   Name: Nightly ACL Sync
   Frequency: Daily at 02:00 UTC

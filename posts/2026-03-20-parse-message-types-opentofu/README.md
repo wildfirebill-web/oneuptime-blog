@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: OpenTofu, JSON, Machine Readable, Automation, CI/CD, Infrastructure as Code
 
-Description: Learn how to parse each OpenTofu JSON message type — version, log, planned_change, apply_complete, diagnostic, and outputs — for building custom CI/CD integrations and automation tools.
+Description: Learn how to parse each OpenTofu JSON message type - version, log, planned_change, apply_complete, diagnostic, and outputs - for building custom CI/CD integrations and automation tools.
 
 ## Introduction
 
@@ -27,7 +27,7 @@ Every message shares a common envelope:
 
 ## Type: version
 
-First message in any output — identifies the OpenTofu version:
+First message in any output - identifies the OpenTofu version:
 
 ```json
 {
@@ -43,6 +43,7 @@ First message in any output — identifies the OpenTofu version:
 
 ```bash
 # Extract version
+
 cat output.jsonl | jq -r 'select(.type == "version") | .terraform'
 # 1.9.0
 ```

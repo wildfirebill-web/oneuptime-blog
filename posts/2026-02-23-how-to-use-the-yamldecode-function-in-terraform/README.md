@@ -16,6 +16,7 @@ The `yamldecode` function takes a string containing YAML and converts it into a 
 
 ```hcl
 # Parse a simple YAML string
+
 output "parsed" {
   value = yamldecode("name: myapp\nport: 8080")
   # Result: { name = "myapp", port = 8080 }

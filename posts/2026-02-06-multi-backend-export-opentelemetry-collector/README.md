@@ -18,6 +18,7 @@ The simplest way to export to multiple backends is to list multiple exporters in
 
 ```yaml
 # otel-collector-multi-export.yaml
+
 # Basic multi-backend configuration with a single pipeline per signal type
 receivers:
   otlp:

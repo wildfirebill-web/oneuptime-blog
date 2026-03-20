@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Docker, IPv6, fixed-cidr-v6, CIDR, Daemon, Networking
+Tags: Docker, IPv6, Fixed-cidr-v6, CIDR, Daemons, Networking
 
 Description: Configure the fixed-cidr-v6 option in Docker's daemon.json to assign a specific IPv6 subnet to the default bridge network, understand CIDR sizing requirements, and verify address allocation.
 
@@ -14,6 +14,7 @@ The `fixed-cidr-v6` option in Docker's `daemon.json` specifies the IPv6 CIDR blo
 
 ```bash
 # Good: /80 allows up to 2^48 container addresses per host
+
 # Fixed subnet for docker0 bridge:
 # /80 = subnet of /48 parent, gives each host a unique /80 block
 

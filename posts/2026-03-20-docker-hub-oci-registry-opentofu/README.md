@@ -14,6 +14,7 @@ Docker Hub is OCI-compliant and can store OCI artifacts alongside container imag
 
 ```bash
 # Login to Docker Hub
+
 docker login docker.io \
   --username "$DOCKERHUB_USERNAME" \
   --password "$DOCKERHUB_TOKEN"

@@ -20,6 +20,7 @@ This command lists all sinks in your project with their destinations and filters
 
 ```bash
 # List all sinks in the project
+
 gcloud logging sinks list
 
 # Get detailed information about a specific sink

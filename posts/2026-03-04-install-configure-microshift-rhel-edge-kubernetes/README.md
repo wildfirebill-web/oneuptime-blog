@@ -16,6 +16,7 @@ MicroShift requires RHEL.x with an active subscription:
 
 ```bash
 # Verify RHEL version
+
 cat /etc/redhat-release
 
 # Enable required repositories

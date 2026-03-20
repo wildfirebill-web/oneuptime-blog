@@ -267,6 +267,7 @@ def create_order_with_error_handling(stub, order_request):
 
 
 # Usage
+
 response, errors = create_order_with_error_handling(stub, order_request)
 if errors:
     # Show errors in UI

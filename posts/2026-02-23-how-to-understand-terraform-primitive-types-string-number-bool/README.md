@@ -28,6 +28,7 @@ variable "ami_id" {
 }
 
 # Strings are enclosed in double quotes
+
 locals {
   greeting     = "Hello, World"
   empty_string = ""

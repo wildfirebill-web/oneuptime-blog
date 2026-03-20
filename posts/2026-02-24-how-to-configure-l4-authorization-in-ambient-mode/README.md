@@ -214,6 +214,7 @@ Test that your policies are working:
 
 ```bash
 # This should succeed (allowed)
+
 kubectl exec deploy/frontend -- curl -s -o /dev/null -w "%{http_code}" http://backend:8080
 
 # This should fail (denied)

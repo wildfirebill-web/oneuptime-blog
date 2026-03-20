@@ -23,6 +23,7 @@ Before upgrading:
 
 ```bash
 # Pre-upgrade health check
+
 kubectl get pods -n neuvector
 kubectl get pvc -n neuvector
 kubectl get svc -n neuvector

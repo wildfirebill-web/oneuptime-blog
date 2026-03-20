@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Packet Loss, IPv4, Linux, Networking, Diagnostics, MTR
+Tags: Packet Loss, IPv4, Linux, Networking, Diagnostics, mtr
 
 Description: Systematically diagnose IPv4 packet loss using ping, MTR, tcpdump, and interface statistics to identify whether loss occurs at the physical layer, a specific link, or the destination.
 
@@ -12,6 +12,7 @@ Packet loss causes slow downloads, dropped VoIP calls, and broken connections. B
 
 ```bash
 # Run enough packets for statistically meaningful results
+
 ping -c 100 8.8.8.8
 
 # Look for: X packets transmitted, Y received, Z% packet loss
@@ -109,7 +110,7 @@ sudo sysctl -w net.core.rmem_default=16777216
 
 ## Categorize and Fix
 
-```
+```text
 Loss pattern                Likely cause             Fix
 --------------------------  ----------------------   -------------------------
 Loss at first hop           LAN problem              Cable, switch, NIC
@@ -120,4 +121,4 @@ Loss at specific remote IP  Target host issues       Contact remote admin
 Loss with high errors       Physical layer failure   Replace cable/NIC/switch
 ```
 
-Systematic packet loss diagnosis avoids the common trap of blaming the wrong layer — physical errors and ISP congestion look identical from application logs but require completely different fixes.
+Systematic packet loss diagnosis avoids the common trap of blaming the wrong layer - physical errors and ISP congestion look identical from application logs but require completely different fixes.

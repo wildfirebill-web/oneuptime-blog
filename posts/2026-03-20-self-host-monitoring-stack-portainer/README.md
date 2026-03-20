@@ -1,4 +1,4 @@
-# How to Self-Host a Monitoring Stack with Portainer
+# How to Self-Host a Monitoring Stack with Portainer - Self Host
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -74,6 +74,7 @@ volumes:
 
 ```yaml
 # prometheus.yml
+
 global:
   scrape_interval: 15s
 
@@ -96,9 +97,9 @@ scrape_configs:
 1. Open `http://<host>:3200` and log in.
 2. Add Prometheus as a data source: `http://prometheus:9090`.
 3. Import community dashboards:
-   - **1860** — Node Exporter Full (host metrics)
-   - **14282** — cAdvisor Exporter (container metrics)
+   - **1860** - Node Exporter Full (host metrics)
+   - **14282** - cAdvisor Exporter (container metrics)
 
 ## Monitoring Your Monitoring Stack
 
-Use OneUptime to monitor `http://<host>:9090/-/healthy` and `http://<host>:3200/api/health`. If your monitoring stack goes down, you need an external alert — this is exactly where OneUptime adds value.
+Use OneUptime to monitor `http://<host>:9090/-/healthy` and `http://<host>:3200/api/health`. If your monitoring stack goes down, you need an external alert - this is exactly where OneUptime adds value.

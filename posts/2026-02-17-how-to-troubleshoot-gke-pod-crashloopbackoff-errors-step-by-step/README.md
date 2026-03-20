@@ -18,6 +18,7 @@ Start by looking at the pod's status and event history:
 
 ```bash
 # Get pod status with details
+
 kubectl get pods -n my-namespace
 
 # Describe the pod to see events and container status

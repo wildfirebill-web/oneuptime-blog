@@ -44,6 +44,7 @@ flowchart TD
 
 ```bash
 # Get pod status
+
 kubectl get pod <pod-name> -o wide
 
 # Describe pod for detailed error

@@ -35,6 +35,7 @@ Make sure you have the `ansible.windows` collection installed:
 
 ```bash
 # Install the Windows collection
+
 ansible-galaxy collection install ansible.windows
 ```
 

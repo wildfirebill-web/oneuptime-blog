@@ -29,6 +29,7 @@ Each node peers with its local top-of-rack switch. Nodes in different racks use 
 
 ```bash
 # Label nodes by rack
+
 kubectl label node worker-1 worker-2 worker-3 rack=rack1
 kubectl label node worker-4 worker-5 worker-6 rack=rack2
 ```

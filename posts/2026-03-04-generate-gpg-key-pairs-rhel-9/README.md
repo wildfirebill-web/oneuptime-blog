@@ -28,6 +28,7 @@ flowchart TD
 
 ```bash
 # Verify GPG is installed
+
 gpg --version
 
 # Expected output includes version 2.3.x or later on RHEL

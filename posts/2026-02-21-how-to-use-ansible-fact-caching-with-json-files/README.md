@@ -40,6 +40,7 @@ Add these settings to your `ansible.cfg`:
 
 ```ini
 # Enable JSON file fact caching with 24-hour expiry
+
 [defaults]
 gathering = smart
 fact_caching = jsonfile

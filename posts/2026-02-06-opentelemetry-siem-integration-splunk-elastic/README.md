@@ -18,6 +18,7 @@ The OpenTelemetry Collector is the central piece. Configure it to send data to b
 
 ```yaml
 # otel-collector-siem.yaml
+
 receivers:
   otlp:
     protocols:

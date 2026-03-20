@@ -20,6 +20,7 @@ Terraform's TLS provider supports three key algorithms. RSA is the most widely s
 
 ```hcl
 # main.tf
+
 terraform {
   required_version = ">= 1.5.0"
 

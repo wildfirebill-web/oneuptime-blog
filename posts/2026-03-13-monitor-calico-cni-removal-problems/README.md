@@ -29,6 +29,7 @@ The key monitoring points are: Calico pod count reaching zero, CRD resource coun
 
 ```bash
 # Overall Calico presence check
+
 kubectl get all -n kube-system | grep calico | wc -l
 kubectl get crd | grep calico | wc -l
 ```

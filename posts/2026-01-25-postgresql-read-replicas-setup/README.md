@@ -43,6 +43,7 @@ Edit `postgresql.conf` on the primary server.
 
 ```ini
 # Enable WAL archiving and replication
+
 wal_level = replica                    # Required for replication
 max_wal_senders = 10                   # Max number of replicas
 wal_keep_size = 1GB                    # Keep WAL files for slow replicas

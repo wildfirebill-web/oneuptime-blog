@@ -99,6 +99,7 @@ Configure your Durable Object in the Wrangler configuration file:
 
 ```toml
 # wrangler.toml
+
 name = "my-durable-objects-app"
 main = "src/index.ts"
 compatibility_date = "2024-01-01"

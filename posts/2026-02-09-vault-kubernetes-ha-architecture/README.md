@@ -22,6 +22,7 @@ Before deploying, plan your architecture:
 
 ```bash
 # Create namespace for Vault
+
 kubectl create namespace vault
 
 # Decide on:

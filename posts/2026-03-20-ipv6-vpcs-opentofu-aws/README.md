@@ -20,6 +20,7 @@ AWS provides Amazon-assigned IPv6 /56 CIDR blocks for VPCs at no extra charge. I
 
 ```hcl
 # AWS automatically assigns an Amazon-provided IPv6 /56 CIDR
+
 # when assign_generated_ipv6_cidr_block is set to true
 resource "aws_vpc" "ipv6" {
   cidr_block                       = "10.0.0.0/16"

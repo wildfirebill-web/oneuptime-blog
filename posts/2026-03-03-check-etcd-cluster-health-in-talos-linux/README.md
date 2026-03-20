@@ -22,6 +22,7 @@ The quickest way to check etcd health in Talos Linux:
 
 ```bash
 # Check etcd service status on a control plane node
+
 talosctl services --nodes <cp-ip> | grep etcd
 ```
 

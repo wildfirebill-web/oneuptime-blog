@@ -20,6 +20,7 @@ The machine executor provides a full Ubuntu VM where you can install and use Pod
 
 ```yaml
 # .circleci/config.yml
+
 # CircleCI configuration using Podman with the machine executor
 version: 2.1
 

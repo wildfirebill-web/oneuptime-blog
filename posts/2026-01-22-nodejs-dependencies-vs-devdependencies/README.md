@@ -63,6 +63,7 @@ These packages are only needed during development, testing, or build processes. 
 
 ```bash
 # Install all dependencies (both types)
+
 npm install
 
 # Install only production dependencies

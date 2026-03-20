@@ -16,6 +16,7 @@ Set sysctls in Docker Compose using the `sysctls` key:
 
 ```yaml
 # docker-compose.yml - basic sysctl configuration
+
 version: "3.8"
 
 services:

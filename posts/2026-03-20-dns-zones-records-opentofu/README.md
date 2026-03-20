@@ -16,6 +16,7 @@ Managing DNS with OpenTofu (the open-source Terraform fork) enables reproducible
 
 ```bash
 # Install OpenTofu
+
 brew install opentofu
 
 # Initialize project
@@ -71,7 +72,7 @@ output "name_servers" {
 ### Common DNS Record Types
 
 ```hcl
-# A Record — IPv4
+# A Record - IPv4
 resource "aws_route53_record" "apex" {
   zone_id = aws_route53_zone.main.zone_id
   name    = "example.com"
@@ -80,7 +81,7 @@ resource "aws_route53_record" "apex" {
   records = ["203.0.113.10"]
 }
 
-# AAAA Record — IPv6
+# AAAA Record - IPv6
 resource "aws_route53_record" "apex_ipv6" {
   zone_id = aws_route53_zone.main.zone_id
   name    = "example.com"
@@ -252,7 +253,7 @@ dig www.example.com CNAME
 ## Best Practices
 
 1. **Use data sources** to reference existing zones rather than managing them in Tofu
-2. **Set appropriate TTLs** — lower for frequently changing records, higher for stable ones
+2. **Set appropriate TTLs** - lower for frequently changing records, higher for stable ones
 3. **Use variables** for IP addresses to make the config reusable across environments
 4. **Store state remotely** in S3 or Terraform Cloud for team collaboration
 5. **Tag all resources** for cost allocation and management
@@ -265,4 +266,4 @@ OpenTofu makes DNS management predictable and repeatable. Whether using AWS Rout
 
 ---
 
-*Monitor DNS availability and response times with [OneUptime](https://oneuptime.com) — uptime monitoring with DNS checks.*
+*Monitor DNS availability and response times with [OneUptime](https://oneuptime.com) - uptime monitoring with DNS checks.*

@@ -40,6 +40,7 @@ Here is a Deployment manifest configured for safe rolling updates:
 
 ```yaml
 # deployment.yaml
+
 # A Deployment with a rolling update strategy that ensures
 # at least 75% of desired pods are always available.
 apiVersion: apps/v1

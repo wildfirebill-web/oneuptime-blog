@@ -1,4 +1,4 @@
-# How to Use State File JSON Format in OpenTofu
+# How to Use State File JSON Format in OpenTofu - File
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -79,6 +79,7 @@ OpenTofu provides commands to extract state information without parsing JSON dir
 
 ```bash
 # List all resources
+
 tofu state list
 
 # Show details for a specific resource
@@ -111,7 +112,7 @@ tofu output -json | jq 'to_entries[] | {name: .key, value: .value.value}'
 
 ## Reading State Directly
 
-For tooling that reads the state file directly, use `tofu show -json` rather than parsing `terraform.tfstate` — it provides a stable format:
+For tooling that reads the state file directly, use `tofu show -json` rather than parsing `terraform.tfstate` - it provides a stable format:
 
 ```bash
 # Export state to a JSON file for external processing

@@ -57,6 +57,7 @@ systemd-boot discovers these automatically based on their location in the `EFI/L
 
 ```bash
 # View the UKI files on a running Talos system
+
 talosctl ls /boot/EFI/Linux/ --nodes <NODE_IP>
 
 # Check which one is currently active

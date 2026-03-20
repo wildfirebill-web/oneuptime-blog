@@ -14,6 +14,7 @@ Zeek (formerly known as Bro) is a powerful network analysis framework that gener
 
 ```bash
 # Ubuntu/Debian
+
 sudo apt install zeek -y
 
 # Or from the Zeek project repository

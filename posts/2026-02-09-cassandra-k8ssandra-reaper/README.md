@@ -162,6 +162,7 @@ Track ongoing repairs using kubectl:
 
 ```bash
 # List all repair schedules
+
 kubectl get repairschedule -n cassandra
 
 # Check repair run status

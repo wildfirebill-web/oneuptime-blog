@@ -16,6 +16,7 @@ Amazon ECR lifecycle policies automatically expire and delete container images b
 
 ```hcl
 # main.tf
+
 resource "aws_ecr_repository" "app" {
   name                 = "my-app"
   image_tag_mutability = "MUTABLE"
@@ -37,7 +38,7 @@ resource "aws_ecr_repository" "app" {
 
 ---
 
-## Basic Lifecycle Policy — Keep Last N Images
+## Basic Lifecycle Policy - Keep Last N Images
 
 ```hcl
 resource "aws_ecr_lifecycle_policy" "app" {
@@ -64,7 +65,7 @@ resource "aws_ecr_lifecycle_policy" "app" {
 
 ---
 
-## Lifecycle Policy — Expire by Age
+## Lifecycle Policy - Expire by Age
 
 ```hcl
 resource "aws_ecr_lifecycle_policy" "old_images" {
@@ -106,7 +107,7 @@ resource "aws_ecr_lifecycle_policy" "old_images" {
 
 ---
 
-## Production Pattern — Multi-Rule Policy
+## Production Pattern - Multi-Rule Policy
 
 ```hcl
 resource "aws_ecr_lifecycle_policy" "production" {
@@ -252,10 +253,10 @@ aws ecr get-lifecycle-policy-preview --repository-name my-app
 
 ## Best Practices
 
-1. **Always expire untagged images quickly** (1–7 days) — they accumulate rapidly from CI builds
+1. **Always expire untagged images quickly** (1–7 days) - they accumulate rapidly from CI builds
 2. **Use tag prefixes** to apply different retention rules to dev vs release images
 3. **Test with preview** before applying to production repos
-4. **Apply policies at repository creation** — retrofit is harder and risks deleting needed images
+4. **Apply policies at repository creation** - retrofit is harder and risks deleting needed images
 5. **Monitor storage costs** in Cost Explorer by ECR repository
 
 ---
@@ -266,4 +267,4 @@ ECR lifecycle policies are essential for managing container image storage costs.
 
 ---
 
-*Monitor your container infrastructure with [OneUptime](https://oneuptime.com) — uptime monitoring with alerting.*
+*Monitor your container infrastructure with [OneUptime](https://oneuptime.com) - uptime monitoring with alerting.*

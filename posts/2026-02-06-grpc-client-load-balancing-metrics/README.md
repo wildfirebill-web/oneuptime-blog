@@ -207,6 +207,7 @@ With these metrics in your backend, you can answer important questions:
 
 ```promql
 # Request distribution across backends (should be roughly even)
+
 sum(rate(grpc_client_lb_requests_per_backend_total[5m])) by (grpc_backend_address)
 
 # Identify if one backend is slower than others

@@ -28,6 +28,7 @@ resource "aws_ecs_cluster" "main" {
 }
 
 # HTTP namespace for Service Connect (does not create DNS records)
+
 resource "aws_service_discovery_http_namespace" "main" {
   name        = var.app_name
   description = "Service Connect namespace for ${var.app_name}"

@@ -27,6 +27,7 @@ Start with a basic environment using the gcloud CLI:
 
 ```bash
 # Create a Cloud Composer 3 environment with default settings
+
 gcloud composer environments create my-composer3-env \
   --location=us-central1 \
   --image-version=composer-3-airflow-2.9.3 \

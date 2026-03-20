@@ -35,6 +35,7 @@ Finding a `169.254.x.x` address usually indicates:
 
 ```bash
 # Windows: check if APIPA is assigned
+
 ipconfig | findstr 169.254
 
 # Linux

@@ -22,6 +22,7 @@ OpenTofu is available in the Arch Linux extra repository:
 
 ```bash
 # Sync the package database and install OpenTofu
+
 sudo pacman -Syu opentofu
 
 # If opentofu is not yet in the main repos, try the community repo

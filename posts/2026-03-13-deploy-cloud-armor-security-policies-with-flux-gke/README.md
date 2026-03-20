@@ -30,6 +30,7 @@ Cloud Armor security policies are GCP resources, not Kubernetes resources. Creat
 
 ```bash
 # Create a security policy
+
 gcloud compute security-policies create my-waf-policy \
   --description "WAF policy for production API"
 

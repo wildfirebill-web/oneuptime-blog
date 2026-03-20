@@ -8,12 +8,13 @@ Description: Identify and handle UDP packet reordering caused by ECMP routing, p
 
 ## Introduction
 
-UDP provides no ordering guarantees. Packets sent sequentially can arrive in a different order at the receiver — this is "reordering." It is more common than most engineers expect, especially in networks with ECMP (Equal-Cost Multi-Path) routing or bonded interfaces. Reordering causes problems for applications that expect in-order data: audio becomes garbled, video has artifacts, and protocols relying on ordering fail silently.
+UDP provides no ordering guarantees. Packets sent sequentially can arrive in a different order at the receiver - this is "reordering." It is more common than most engineers expect, especially in networks with ECMP (Equal-Cost Multi-Path) routing or bonded interfaces. Reordering causes problems for applications that expect in-order data: audio becomes garbled, video has artifacts, and protocols relying on ordering fail silently.
 
 ## Detecting Reordering
 
 ```bash
 # Method 1: Send numbered packets and check arrival order
+
 # Sender:
 python3 << 'EOF'
 import socket, struct, time

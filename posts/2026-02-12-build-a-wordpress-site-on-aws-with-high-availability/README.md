@@ -45,6 +45,7 @@ Start with a VPC that spans multiple availability zones:
 
 ```bash
 # Create a VPC with public and private subnets in two AZs
+
 aws ec2 create-vpc --cidr-block 10.0.0.0/16
 
 # Create subnets

@@ -31,7 +31,7 @@ server {
 
         # DO NOT use $proxy_add_x_forwarded_for if you want a clean single IP
         # proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-        # This appends to existing header — use when chaining proxies
+        # This appends to existing header - use when chaining proxies
     }
 }
 ```
@@ -63,7 +63,7 @@ backend app
 
 When there are multiple proxies, each adds to X-Forwarded-For:
 
-```
+```text
 Client (2001:db8::1) → CDN → Load Balancer → App Server
 X-Forwarded-For: 2001:db8::1, 203.0.113.5
                  ^client       ^CDN IP
@@ -71,6 +71,7 @@ X-Forwarded-For: 2001:db8::1, 203.0.113.5
 
 ```nginx
 # Application server (final proxy): extract real client from chain
+
 # Nginx configuration to handle multi-proxy X-Forwarded-For
 
 # Trusted proxies (load balancer IPs)

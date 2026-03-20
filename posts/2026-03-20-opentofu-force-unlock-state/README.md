@@ -8,7 +8,7 @@ Description: Learn how to safely force unlock a stuck state lock in OpenTofu whe
 
 ## Introduction
 
-OpenTofu uses state locking to prevent concurrent operations from corrupting your infrastructure state. When two processes try to modify state simultaneously, the second one is blocked until the first completes. However, if a process crashes or is interrupted, it may leave the state file locked — preventing all future operations until the lock is released.
+OpenTofu uses state locking to prevent concurrent operations from corrupting your infrastructure state. When two processes try to modify state simultaneously, the second one is blocked until the first completes. However, if a process crashes or is interrupted, it may leave the state file locked - preventing all future operations until the lock is released.
 
 This guide walks you through diagnosing a stuck lock and safely removing it.
 
@@ -18,7 +18,7 @@ When you run `tofu plan`, `tofu apply`, or `tofu destroy`, OpenTofu acquires a l
 
 A stuck lock produces an error like:
 
-```
+```text
 Error: Error acquiring the state lock
 
 Error message: ConditionalCheckFailedException: The conditional request failed
@@ -38,6 +38,7 @@ Before force-unlocking, confirm the process that acquired the lock is no longer 
 
 ```bash
 # Check if a tofu process is still running
+
 ps aux | grep tofu
 
 # Check the lock info for the operation timestamp
@@ -46,9 +47,9 @@ ps aux | grep tofu
 
 ## Step 2: Identify the Lock ID
 
-The error message displays the Lock ID. Copy it — you'll need it to run the force-unlock command.
+The error message displays the Lock ID. Copy it - you'll need it to run the force-unlock command.
 
-```
+```text
 Lock Info:
   ID:        abc12345-1234-1234-1234-abc123456789
 ```
@@ -64,7 +65,7 @@ tofu force-unlock abc12345-1234-1234-1234-abc123456789
 
 OpenTofu will prompt you to confirm:
 
-```
+```hcl
 Do you really want to force-unlock?
   OpenTofu will remove the lock on the remote state.
   This will allow local OpenTofu commands to modify this state, even though it
@@ -84,7 +85,7 @@ In automation pipelines, you may want to skip the confirmation prompt:
 tofu force-unlock -force abc12345-1234-1234-1234-abc123456789
 ```
 
-Use this flag carefully — only in scripts where you've already validated the lock is stale.
+Use this flag carefully - only in scripts where you've already validated the lock is stale.
 
 ## Step 5: Verify the Lock is Released
 

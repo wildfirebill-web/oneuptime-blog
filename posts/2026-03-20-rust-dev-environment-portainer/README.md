@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Rust, Development Environment, Docker, cargo-watch, Debugging
+Tags: Portainer, Rust, Development Environments, Docker, Cargo-watch, Debugging
 
 Description: Learn how to set up a Rust development environment with automatic recompilation using cargo-watch in a Docker container managed by Portainer.
 
@@ -69,7 +69,7 @@ async fn main() {
 }
 
 async fn root() -> &'static str {
-    // Edit and save — cargo watch recompiles and restarts
+    // Edit and save - cargo watch recompiles and restarts
     "Rust development environment ready"
 }
 
@@ -100,6 +100,7 @@ First-time compilation in Docker takes several minutes. Subsequent builds with c
 
 ```toml
 # Cargo.toml: use faster linker in dev
+
 [profile.dev]
 opt-level = 0    # No optimization for dev builds (faster compile)
 debug = true     # Include debug symbols

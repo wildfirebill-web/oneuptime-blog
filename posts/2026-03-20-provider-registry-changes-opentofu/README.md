@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: OpenTofu, Provider Registry, Terraform, Migration, Infrastructure as Code
 
-Description: Learn how OpenTofu's provider registry (registry.opentofu.org) differs from Terraform's (registry.terraform.io) — what providers are available, how to handle providers not yet mirrored, and how to configure fallback sources.
+Description: Learn how OpenTofu's provider registry (registry.opentofu.org) differs from Terraform's (registry.terraform.io) - what providers are available, how to handle providers not yet mirrored, and how to...
 
 ## Introduction
 
@@ -16,6 +16,7 @@ When you run `tofu init`, OpenTofu resolves providers from `registry.opentofu.or
 
 ```hcl
 # This works identically in both Terraform and OpenTofu
+
 # OpenTofu resolves from registry.opentofu.org/hashicorp/aws
 terraform {
   required_providers {
@@ -149,4 +150,4 @@ tofu providers lock \
 
 ## Conclusion
 
-OpenTofu's provider registry at `registry.opentofu.org` mirrors the Terraform registry for all major providers. Most migrations require no `source` changes — `tofu init` resolves the same provider namespace from the OpenTofu registry. For providers not yet mirrored, specify `registry.terraform.io/namespace/name` explicitly. Always regenerate `.terraform.lock.hcl` after switching from `terraform` to `tofu`, as the registry signing keys differ.
+OpenTofu's provider registry at `registry.opentofu.org` mirrors the Terraform registry for all major providers. Most migrations require no `source` changes - `tofu init` resolves the same provider namespace from the OpenTofu registry. For providers not yet mirrored, specify `registry.terraform.io/namespace/name` explicitly. Always regenerate `.terraform.lock.hcl` after switching from `terraform` to `tofu`, as the registry signing keys differ.

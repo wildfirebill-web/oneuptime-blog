@@ -1,11 +1,10 @@
----
-title: "Using tofu state pull in OpenTofu"
-author: nawazdhandala
-tags: opentofu, terraform, iac, state
-description: "Learn how to use tofu state pull to download the current state from your configured backend for inspection and backup."
----
-
 # Using tofu state pull in OpenTofu
+
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
+
+Tags: OpenTofu, Terraform, IaC, State
+
+Description: Learn how to use tofu state pull to download the current state from your configured backend for inspection and backup.
 
 The `tofu state pull` command downloads the current state from whatever backend is configured (S3, GCS, Terraform Cloud, etc.) and outputs it to stdout. It's useful for inspecting remote state, creating backups, and scripting state operations.
 
@@ -13,6 +12,7 @@ The `tofu state pull` command downloads the current state from whatever backend 
 
 ```bash
 # Download state from configured backend to stdout
+
 tofu state pull
 
 # Save to a file
@@ -142,7 +142,7 @@ echo "$current_serial" > "$PREVIOUS_SERIAL_FILE"
 
 ```bash
 # Download, modify, and re-upload state
-# (advanced — use with extreme caution)
+# (advanced - use with extreme caution)
 
 # Pull current state
 tofu state pull > local.tfstate

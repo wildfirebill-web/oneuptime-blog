@@ -41,6 +41,7 @@ Create a `global` section at the root of your `values.yaml`:
 
 ```yaml
 # values.yaml
+
 global:
   imageRegistry: registry.example.com
   imagePullSecrets:

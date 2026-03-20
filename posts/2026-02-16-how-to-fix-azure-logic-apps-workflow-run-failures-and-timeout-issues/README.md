@@ -84,6 +84,7 @@ Navigate to your Logic App, go to "API connections" in the left menu. Look for c
 
 ```bash
 # List API connections in a resource group
+
 az resource list \
   --resource-group my-rg \
   --resource-type "Microsoft.Web/connections" \

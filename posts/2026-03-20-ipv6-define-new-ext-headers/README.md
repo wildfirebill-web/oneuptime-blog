@@ -14,7 +14,7 @@ Defining new IPv6 extension headers requires an understanding of RFC 8200 requir
 
 Before designing a new extension header, consider alternatives:
 
-```
+```text
 Extension Header Considerations:
   + Clean IPv6 integration at network layer
   + No UDP overhead
@@ -36,7 +36,7 @@ Better alternatives for many use cases:
 
 To register a new extension header:
 
-```
+```text
 For a new Extension Header type:
   1. Write an IETF RFC defining the header format and semantics
   2. RFC must be on the Standards Track (RFC 7045 requirement)
@@ -105,6 +105,7 @@ def design_new_option(
     }
 
 # Example: design a network telemetry timestamp option
+
 telemetry_opt = design_new_option(
     option_name="Network Telemetry Timestamp",
     option_value_format="!HI",  # 2-byte ID + 4-byte epoch seconds
@@ -154,7 +155,7 @@ def build_experimental_extension_header(
 
 New options must specify alignment requirements:
 
-```
+```text
 Alignment format: xn+y (x=alignment granularity, y=offset)
 
 Examples:

@@ -111,6 +111,7 @@ Install ArgoCD in the DR cluster with the same configuration:
 
 ```bash
 # Install ArgoCD in DR cluster
+
 kubectl config use-context dr-cluster
 kubectl create namespace argocd
 helm install argocd argo/argo-cd \

@@ -14,16 +14,16 @@ IPv6 multicast addresses include a 4-bit scope field that determines how far mul
 
 ### Scope 1: Interface-Local (Node-Local)
 
-```
+```text
 Prefix: ff01::/16
 Example: ff01::1 (all nodes, interface-local)
 ```
 
-Traffic with this scope never leaves the network interface — it stays within the same node. It's used for loopback multicast testing. Routers never forward interface-local multicast.
+Traffic with this scope never leaves the network interface - it stays within the same node. It's used for loopback multicast testing. Routers never forward interface-local multicast.
 
 ### Scope 2: Link-Local
 
-```
+```text
 Prefix: ff02::/16
 Examples: ff02::1 (all nodes), ff02::2 (all routers), ff02::fb (mDNS)
 ```
@@ -32,7 +32,7 @@ Link-local scope is the most commonly used scope. Traffic is confined to a singl
 
 ### Scope 5: Site-Local
 
-```
+```text
 Prefix: ff05::/16
 Examples: ff05::1:3 (DHCPv6 all servers), ff05::101 (NTP servers)
 ```
@@ -41,7 +41,7 @@ Site-local scope allows multicast within a campus or site. The definition of "si
 
 ### Scope E (14): Global
 
-```
+```text
 Prefix: ff0e::/16
 Examples: ff0e::101 (NTP, global)
 ```
@@ -83,6 +83,7 @@ Linux `ip6tables` example for enforcing scope boundaries:
 
 ```bash
 # Block site-local multicast from leaving the site uplink
+
 ip6tables -A FORWARD -d ff05::/16 -o wan0 -j DROP
 
 # Block global multicast from entering the internal network (if not expected)
@@ -126,4 +127,4 @@ Organizations using these scopes must configure their routers with matching mult
 
 ## Summary
 
-IPv6 multicast scope levels control how far multicast traffic travels: interface-local (loopback), link-local (single segment), site-local (campus), and global (internet). The scope is encoded in the third nibble of the `ff` prefix. Routers enforce scope boundaries by refusing to forward multicast packets to scopes larger than the configured boundary. Use the appropriate scope for your use case — link-local for neighbor discovery, site-local for internal services, and global only for internet multicast.
+IPv6 multicast scope levels control how far multicast traffic travels: interface-local (loopback), link-local (single segment), site-local (campus), and global (internet). The scope is encoded in the third nibble of the `ff` prefix. Routers enforce scope boundaries by refusing to forward multicast packets to scopes larger than the configured boundary. Use the appropriate scope for your use case - link-local for neighbor discovery, site-local for internal services, and global only for internet multicast.

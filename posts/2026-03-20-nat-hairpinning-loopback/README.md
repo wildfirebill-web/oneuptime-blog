@@ -10,7 +10,7 @@ Description: Learn what NAT hairpinning (loopback) is, when you need it, and how
 
 NAT hairpinning (also called NAT loopback or NAT reflection) occurs when a host **inside** the network accesses a server that is also **inside** the network, but does so using the **public/external IP address** of the NAT router.
 
-```
+```text
 Without hairpinning (fails):
 Client (192.168.1.50) → DNS → 203.0.113.1 (public IP)
 Client sends to 203.0.113.1 → ISP router → drops (not public)
@@ -59,6 +59,7 @@ The critical element: the NAT router must MASQUERADE the client's source IP when
 
 ```bash
 # Port forward (external access)
+
 iptables -t nat -A PREROUTING -i eth1 -p tcp --dport 80 \
     -j DNAT --to-destination 192.168.1.10:80
 

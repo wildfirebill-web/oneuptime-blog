@@ -26,6 +26,7 @@ Each hop adds latency. Performance tuning focuses on minimizing these delays.
 
 ```bash
 # Identify NVMe drives on nodes
+
 lsblk -d -o NAME,TYPE,ROTA,SIZE
 # ROTA=0 means solid state (NVMe/SSD)
 
@@ -81,7 +82,7 @@ allowVolumeExpansion: true
 parameters:
   # Single replica for maximum write performance (no replication overhead)
   numberOfReplicas: "1"
-  # All data must be on the local node — zero network overhead
+  # All data must be on the local node - zero network overhead
   dataLocality: "strict-local"
   diskSelector: "nvme"
   fsType: "xfs"

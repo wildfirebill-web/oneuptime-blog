@@ -47,6 +47,7 @@ controller:
 
 ```bash
 # Install HAProxy Ingress Controller
+
 helm repo add haproxy-ingress https://haproxy-ingress.github.io/charts
 helm install haproxy-ingress haproxy-ingress/haproxy-ingress \
     -n ingress-controller \
@@ -132,7 +133,7 @@ data:
 ## HAProxy Backend Configuration for IPv6
 
 ```yaml
-# haproxy-backend-ipv6.yaml — Configure specific backend for IPv6
+# haproxy-backend-ipv6.yaml - Configure specific backend for IPv6
 
 apiVersion: haproxy-ingress.github.io/v1
 kind: Backend

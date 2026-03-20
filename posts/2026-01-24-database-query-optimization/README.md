@@ -67,6 +67,7 @@ SHOW VARIABLES LIKE 'long_query_time';
 
 ```python
 # query_monitor.py
+
 # Decorator to log slow queries with context
 
 import time

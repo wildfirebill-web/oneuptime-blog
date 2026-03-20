@@ -59,7 +59,8 @@ When creating a new application in Portainer:
 For more control, use Portainer's KubeShell:
 
 ```yaml
-# service-clusterip.yaml — Internal service
+# service-clusterip.yaml - Internal service
+
 apiVersion: v1
 kind: Service
 metadata:
@@ -76,7 +77,7 @@ spec:
 ```
 
 ```yaml
-# service-nodeport.yaml — Expose on host port
+# service-nodeport.yaml - Expose on host port
 apiVersion: v1
 kind: Service
 metadata:
@@ -94,7 +95,7 @@ spec:
 ```
 
 ```yaml
-# service-loadbalancer.yaml — Cloud load balancer
+# service-loadbalancer.yaml - Cloud load balancer
 apiVersion: v1
 kind: Service
 metadata:

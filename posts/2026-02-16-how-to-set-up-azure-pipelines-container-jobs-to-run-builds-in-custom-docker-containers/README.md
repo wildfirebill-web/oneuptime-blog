@@ -18,6 +18,7 @@ The simplest container job specifies a public Docker image and runs your steps i
 
 ```yaml
 # Run all job steps inside an Ubuntu container
+
 trigger:
   - main
 

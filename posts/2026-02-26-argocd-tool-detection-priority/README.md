@@ -70,6 +70,7 @@ The most straightforward way to influence detection is to ensure only the marker
 
 ```bash
 # If you want Kustomize but Helm keeps winning
+
 # Remove Chart.yaml from your directory
 rm apps/my-app/Chart.yaml
 git add -A && git commit -m "Remove Chart.yaml to use Kustomize"

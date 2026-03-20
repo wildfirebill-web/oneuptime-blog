@@ -25,6 +25,7 @@ The SSL module is packaged separately:
 
 ```bash
 # Install the Apache SSL module
+
 sudo dnf install -y mod_ssl
 ```
 

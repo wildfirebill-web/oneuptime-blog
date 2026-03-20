@@ -184,6 +184,7 @@ A dependency chain across repositories:
 
 ```yaml
 # 1. CRDs must be installed first
+
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
 metadata:

@@ -45,6 +45,7 @@ Istio's mutating webhook injects a sidecar container and init container into eve
 
 ```yaml
 # What ArgoCD applies (from Git)
+
 spec:
   containers:
     - name: myapp

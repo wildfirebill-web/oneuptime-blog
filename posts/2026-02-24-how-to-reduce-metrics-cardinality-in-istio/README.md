@@ -33,6 +33,7 @@ Before optimizing, measure what you have:
 
 ```promql
 # Total active time series from Istio
+
 count({__name__=~"istio_.*"})
 
 # Time series per metric

@@ -145,6 +145,7 @@ And for each match, you can:
 
 ```yaml
 # Things you can do with VirtualService that Ingress cannot
+
 apiVersion: networking.istio.io/v1beta1
 kind: VirtualService
 metadata:

@@ -94,6 +94,7 @@ def ingest_to_bronze(source_path, bronze_path, source_name):
     return bronze_df
 
 # Usage
+
 bronze_orders = ingest_to_bronze(
     source_path="/data/sources/orders/*.csv",
     bronze_path="/data/bronze/orders",

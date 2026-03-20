@@ -83,6 +83,7 @@ class SimpleMovingAverage:
 
 
 # Example usage for monitoring response times
+
 sma = SimpleMovingAverage(window_size=100)
 
 # Simulate adding response times in milliseconds

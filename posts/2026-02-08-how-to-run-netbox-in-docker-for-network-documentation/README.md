@@ -37,6 +37,7 @@ Clone the official NetBox Docker repository and configure it.
 
 ```bash
 # Clone the official NetBox Docker project
+
 git clone -b release https://github.com/netbox-community/netbox-docker.git
 cd netbox-docker
 

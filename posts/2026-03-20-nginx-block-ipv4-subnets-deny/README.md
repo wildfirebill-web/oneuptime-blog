@@ -88,6 +88,7 @@ For large block lists, keep them in separate files for easier management:
 
 ```nginx
 # /etc/nginx/blocklist.conf
+
 # Updated via automation from threat intelligence feeds
 deny 192.0.2.0/24;
 deny 198.51.100.0/24;

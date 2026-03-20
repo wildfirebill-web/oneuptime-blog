@@ -18,6 +18,7 @@ You define local values inside a `locals` block and reference them with `local.<
 
 ```hcl
 # Define local values
+
 locals {
   region      = "us-east-1"
   name_prefix = "myapp-production"

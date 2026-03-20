@@ -22,6 +22,7 @@ Metrics Server is the basic resource metrics API for Kubernetes. It powers `kube
 
 ```bash
 # Install Metrics Server using Helm
+
 helm repo add metrics-server https://kubernetes-sigs.github.io/metrics-server/
 helm repo update
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rust, Sockets, IPv4, Network Interfaces, Binding, TCP, std::net
+Tags: Rust, Sockets, IPv4, Network Interfaces, Binding, TCP, Std::net
 
 Description: Bind Rust TCP listener and client sockets to specific IPv4 addresses and network interfaces to control which interface handles incoming and outgoing traffic.
 
@@ -18,7 +18,7 @@ use std::io::{Read, Write};
 use std::thread;
 
 fn main() -> std::io::Result<()> {
-    // Bind only to 192.168.1.10 — won't accept connections on other interfaces
+    // Bind only to 192.168.1.10 - won't accept connections on other interfaces
     let bind_addr: SocketAddr = "192.168.1.10:8080".parse().unwrap();
     let listener = TcpListener::bind(bind_addr)?;
     
@@ -129,6 +129,7 @@ The `socket2` crate provides more control:
 
 ```toml
 # Cargo.toml
+
 [dependencies]
 socket2 = "0.5"
 ```

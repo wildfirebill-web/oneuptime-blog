@@ -8,7 +8,7 @@ Description: Understand how IPsec works in the context of IPv6, including header
 
 ## Overview
 
-IPsec was originally mandatory for IPv6 (RFC 2460), but RFC 6434 (2011) changed this to optional since practical experience showed that making it mandatory created interoperability problems without meaningfully improving security. IPsec in IPv6 uses the same two protocols as IPv4 — Authentication Header (AH) and Encapsulating Security Payload (ESP) — but they are carried as IPv6 Extension Headers rather than as separate IP protocols.
+IPsec was originally mandatory for IPv6 (RFC 2460), but RFC 6434 (2011) changed this to optional since practical experience showed that making it mandatory created interoperability problems without meaningfully improving security. IPsec in IPv6 uses the same two protocols as IPv4 - Authentication Header (AH) and Encapsulating Security Payload (ESP) - but they are carried as IPv6 Extension Headers rather than as separate IP protocols.
 
 ## How IPsec Headers Appear in IPv6
 
@@ -19,7 +19,7 @@ In IPv6, AH and ESP are extension headers with Next Header values:
 | AH | 51 | After Routing Header, before upper-layer |
 | ESP | 50 | After Routing Header, before upper-layer |
 
-```
+```text
 IPv6 Packet with AH (Transport Mode):
 IPv6 Header (NH=51) → AH Header → TCP/UDP Payload
 
@@ -46,7 +46,7 @@ Outer IPv6 Header (NH=50) → ESP Header → [Inner IPv6 Header → TCP/UDP] →
 
 Protects only the payload; original IP header is kept:
 
-```
+```text
 Original: [IPv6: src=A, dst=B] [TCP: sport=1234, dport=443] [Data]
 
 With ESP Transport Mode:
@@ -59,7 +59,7 @@ Use case: Host-to-host communication on a trusted backbone.
 
 Encapsulates the entire original packet:
 
-```
+```text
 Original: [IPv6: src=A, dst=B] [TCP] [Data]
 
 With ESP Tunnel Mode:
@@ -82,6 +82,7 @@ Reasons for the change:
 
 ```bash
 # Verify IPsec support on Linux
+
 ip xfrm state   # Should work if IPsec is supported
 lsmod | grep xfrm
 

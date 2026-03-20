@@ -53,6 +53,7 @@ Navigate to Alerting > Contact Points > New Contact Point.
 
 ```yaml
 # Contact Point Configuration (shown as YAML for clarity)
+
 name: "backend-slack"
 type: slack
 settings:

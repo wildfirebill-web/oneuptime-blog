@@ -29,6 +29,7 @@ Register the Kyverno Helm chart repository with Flux.
 
 ```yaml
 # infrastructure/sources/kyverno-helmrepo.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

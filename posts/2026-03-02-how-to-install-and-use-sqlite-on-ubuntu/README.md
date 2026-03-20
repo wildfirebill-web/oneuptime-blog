@@ -16,6 +16,7 @@ Ubuntu's package repositories include SQLite, so installation is straightforward
 
 ```bash
 # Update package list
+
 sudo apt update
 
 # Install SQLite3 and development libraries

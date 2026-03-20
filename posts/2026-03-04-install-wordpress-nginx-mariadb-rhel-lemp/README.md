@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, WordPress, NGINX, MariaDB, LEMP, PHP, Web Development
+Tags: RHEL, WordPress, Nginx, MariaDB, LEMP, PHP, Web Development
 
 Description: Deploy WordPress on RHEL using the LEMP stack (Linux, Nginx, MariaDB, PHP-FPM) for better performance and lower memory usage than a traditional LAMP setup.
 
@@ -14,6 +14,7 @@ The LEMP stack replaces Apache with Nginx and MySQL with MariaDB for a lighter, 
 
 ```bash
 # Install Nginx, MariaDB, and PHP-FPM with extensions
+
 sudo dnf install -y nginx mariadb-server php-fpm php-mysqlnd \
   php-json php-xml php-mbstring php-curl php-zip php-gd php-opcache
 

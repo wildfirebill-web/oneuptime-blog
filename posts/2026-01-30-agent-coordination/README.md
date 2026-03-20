@@ -275,6 +275,7 @@ class BlackboardController:
 
 
 # Example usage for a problem-solving system
+
 def create_problem_solving_system():
     blackboard = Blackboard()
     controller = BlackboardController(blackboard)

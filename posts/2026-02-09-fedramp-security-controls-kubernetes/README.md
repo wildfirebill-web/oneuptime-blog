@@ -24,6 +24,7 @@ FedRAMP AC-2 requires managing system accounts including creation, enablement, m
 
 ```yaml
 # fedramp-ac2-account-management.yaml
+
 ---
 # Integrate with government CAC/PIV authentication
 apiVersion: v1

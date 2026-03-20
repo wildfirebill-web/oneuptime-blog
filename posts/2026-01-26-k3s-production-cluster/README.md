@@ -100,6 +100,7 @@ Reserve IP addresses and plan your network layout:
 
 ```bash
 # Example network allocation
+
 # Management Network: 192.168.1.0/24
 
 # Load Balancers

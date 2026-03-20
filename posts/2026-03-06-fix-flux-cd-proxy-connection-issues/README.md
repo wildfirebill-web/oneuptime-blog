@@ -27,6 +27,7 @@ Check which controller is failing and what it is trying to reach.
 
 ```bash
 # Check all Flux sources for errors
+
 flux get sources all
 
 # Check specific controller logs

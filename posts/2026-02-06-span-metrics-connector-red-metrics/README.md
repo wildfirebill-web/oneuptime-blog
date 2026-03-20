@@ -670,6 +670,7 @@ RED metrics are perfect for SLO-based alerting. Here are example Prometheus quer
 
 ```promql
 # Error rate exceeding 1%
+
 sum(rate(service_calls_total{status_code=~"5.."}[5m]))
 /
 sum(rate(service_calls_total[5m]))

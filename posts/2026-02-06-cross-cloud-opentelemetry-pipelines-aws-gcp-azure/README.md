@@ -100,6 +100,7 @@ Deploy the Collector on ECS or EKS. Use the `resourcedetection` processor to aut
 
 ```yaml
 # aws-collector-config.yaml
+
 receivers:
   otlp:
     protocols:

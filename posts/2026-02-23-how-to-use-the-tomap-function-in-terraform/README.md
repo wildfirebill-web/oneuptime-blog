@@ -16,6 +16,7 @@ The `tomap` function converts its argument to a map value. It is primarily used 
 
 ```hcl
 # Convert an object to a map
+
 > tomap({ "name" = "web", "port" = "8080" })
 {
   "name" = "web"

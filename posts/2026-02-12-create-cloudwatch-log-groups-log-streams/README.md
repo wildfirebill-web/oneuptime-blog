@@ -32,6 +32,7 @@ The simplest way to create a log group:
 
 ```bash
 # Create a new log group
+
 aws logs create-log-group \
   --log-group-name "/myapp/production/api" \
   --region us-east-1

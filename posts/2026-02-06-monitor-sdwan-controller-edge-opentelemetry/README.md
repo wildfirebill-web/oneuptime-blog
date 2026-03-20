@@ -22,6 +22,7 @@ An SD-WAN deployment has several components that need observability:
 
 ```python
 # sdwan_controller_metrics.py
+
 from opentelemetry import trace, metrics
 from opentelemetry.trace import StatusCode
 import time

@@ -18,6 +18,7 @@ Run Tempo in standalone mode for local development:
 
 ```bash
 # Start Tempo with local file storage
+
 docker run -d \
   --name tempo \
   -p 3200:3200 \

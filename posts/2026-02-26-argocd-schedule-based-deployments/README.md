@@ -78,6 +78,7 @@ Apply sync windows to specific applications:
 ```yaml
 syncWindows:
 # Critical services: weekday business hours only
+
 - kind: allow
   schedule: "0 9 * * 1-5"
   duration: 9h  # 9 AM to 6 PM

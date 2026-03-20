@@ -34,6 +34,7 @@ resource "aws_inspector2_enabler" "main" {
 
 ```hcl
 # Delegate Inspector administration to security account in Organizations
+
 resource "aws_inspector2_delegated_admin_account" "main" {
   account_id = var.security_account_id
 }
@@ -147,4 +148,4 @@ aws inspector2 list-findings \
 
 ## Conclusion
 
-Inspector v2 delivers continuous vulnerability management without scheduling or agent management for EC2 (via SSM) and ECR images. Enable it organization-wide to get comprehensive coverage—Inspector automatically starts scanning when new resources are deployed. Focus remediation on CRITICAL findings first, particularly those with available fixes and exploitability scores. Integrate with Security Hub for centralized tracking and with Jira or other ticketing systems via EventBridge for automatic ticket creation.
+Inspector v2 delivers continuous vulnerability management without scheduling or agent management for EC2 (via SSM) and ECR images. Enable it organization-wide to get comprehensive coverage-Inspector automatically starts scanning when new resources are deployed. Focus remediation on CRITICAL findings first, particularly those with available fixes and exploitability scores. Integrate with Security Hub for centralized tracking and with Jira or other ticketing systems via EventBridge for automatic ticket creation.

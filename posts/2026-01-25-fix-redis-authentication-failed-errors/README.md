@@ -19,6 +19,7 @@ Redis supports two authentication mechanisms:
 
 ```bash
 # Check your Redis version
+
 redis-cli INFO server | grep redis_version
 
 # Common auth errors:

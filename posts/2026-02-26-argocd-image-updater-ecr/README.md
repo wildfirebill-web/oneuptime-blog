@@ -16,6 +16,7 @@ ECR does not use static credentials like Docker Hub. Instead, it provides tempor
 
 ```bash
 # This token expires in 12 hours
+
 aws ecr get-login-password --region us-east-1
 ```
 

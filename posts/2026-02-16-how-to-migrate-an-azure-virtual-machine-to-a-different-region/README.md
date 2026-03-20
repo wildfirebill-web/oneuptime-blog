@@ -35,6 +35,7 @@ First, create a Recovery Services vault in the target region:
 
 ```bash
 # Create a Recovery Services vault in the target region
+
 az backup vault create \
   --resource-group migrationRG \
   --name migrationVault \

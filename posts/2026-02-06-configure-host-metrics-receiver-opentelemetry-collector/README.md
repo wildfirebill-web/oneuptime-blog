@@ -44,6 +44,7 @@ Here's a minimal configuration to get started:
 
 ```yaml
 # This configuration collects basic CPU and memory metrics
+
 # The collection_interval determines how often metrics are scraped
 receivers:
   hostmetrics:

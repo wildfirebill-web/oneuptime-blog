@@ -12,12 +12,13 @@ Terraform expressions are how you wire resources together and build dynamic conf
 
 This guide covers the practical patterns for referencing state data in expressions.
 
-## Resource Attribute References
+Resource Attribute References
 
 The most basic form of state data usage is referencing attributes of other resources:
 
 ```hcl
 # Create a VPC
+
 resource "aws_vpc" "main" {
   cidr_block = "10.0.0.0/16"
 

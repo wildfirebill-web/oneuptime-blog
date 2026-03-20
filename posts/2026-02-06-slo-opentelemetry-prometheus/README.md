@@ -27,6 +27,7 @@ Before writing any Prometheus rules, document your SLOs clearly. A well-defined 
 
 ```yaml
 # slo-definitions.yaml
+
 # This file serves as the source of truth for all service SLOs
 slos:
   - name: "payment-service-availability"

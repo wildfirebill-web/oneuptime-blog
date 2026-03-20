@@ -51,6 +51,7 @@ Mouse Keys lets you control the mouse pointer using the numeric keypad. This is 
 
 ```bash
 # Enable Mouse Keys via gsettings
+
 gsettings set org.gnome.desktop.a11y.keyboard mousekeys-enable true
 
 # Or enable it from Accessibility settings

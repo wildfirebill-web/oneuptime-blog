@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: pfSense, Captive Portal, IPv4, Guest Network, Authentication, Hotspot
+Tags: pfSense, Captive Portal, IPv4, Guest Network, Authentication, Hotspots
 
 Description: Configure a captive portal on pfSense to require IPv4 clients on a guest network to authenticate through a login page before gaining internet access.
 
@@ -20,7 +20,7 @@ Ensure you have a dedicated guest interface (e.g., `GUEST` / `OPT2`) with:
 
 Navigate to **Services > Captive Portal > Add**:
 
-```
+```text
 Zone name:          GUEST
 Interface:          GUEST (OPT2)
 Enable Captive Portal: checked
@@ -32,7 +32,7 @@ Idle timeout:       30 minutes
 Hard timeout:       240 minutes (max session length)
 Concurrent user logins: 1 per user
 
-Redirection URL:    (leave blank — redirect to original URL after login)
+Redirection URL:    (leave blank - redirect to original URL after login)
 ```
 
 ## Step 3: Custom Login Page (Optional)
@@ -57,7 +57,7 @@ Navigate to **Services > Captive Portal > [GUEST] > HTML Page Contents**:
 ## Step 4: Create Guest Users
 
 Navigate to **System > User Manager > Add**:
-```
+```text
 Username: guest1
 Password: Guest@2025
 ```
@@ -68,7 +68,7 @@ Or navigate to **Services > Captive Portal > [GUEST] > Vouchers**:
 ## Step 5: RADIUS Authentication
 
 Navigate to **Services > Captive Portal > [GUEST]**:
-```
+```text
 Authentication method: RADIUS Authentication
 Primary RADIUS server:  10.1.1.50
 RADIUS server port:     1812
@@ -92,6 +92,7 @@ Navigate to **Status > Captive Portal**:
 
 ```bash
 # pfSense CLI
+
 pfctl -t captiveportal -T show   # Authenticated IPs
 ```
 

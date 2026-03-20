@@ -51,6 +51,7 @@ Define a tagging strategy that every resource must follow.
 
 ```yaml
 # tagging-policy.yaml
+
 # Required tags for all cloud resources
 
 required_tags:

@@ -32,6 +32,7 @@ graph TD
 
 ```bash
 # Create a snapshot of the datalv logical volume
+
 # The -L flag sets the snapshot size (space for changed blocks)
 sudo lvcreate -s -L 5G -n datalv_snap /dev/datavg/datalv
 ```

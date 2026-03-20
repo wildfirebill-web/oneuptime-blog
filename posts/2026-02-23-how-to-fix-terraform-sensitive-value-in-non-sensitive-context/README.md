@@ -44,6 +44,7 @@ A value becomes sensitive through several paths:
 
 ```hcl
 # Explicitly marked as sensitive
+
 variable "db_password" {
   type      = string
   sensitive = true

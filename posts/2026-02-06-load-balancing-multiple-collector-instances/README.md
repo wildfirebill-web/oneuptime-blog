@@ -196,6 +196,7 @@ For bare-metal or VM deployments, use NGINX as a load balancer:
 # /etc/nginx/nginx.conf
 
 # Define upstream collector instances
+
 upstream otel_collectors_grpc {
     # Least connections algorithm for gRPC
     least_conn;

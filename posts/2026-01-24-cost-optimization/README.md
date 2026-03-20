@@ -38,6 +38,7 @@ This script collects resource utilization data to identify over-provisioned work
 echo "Analyzing resource utilization..."
 
 # Get CPU and memory requests vs actual usage for all pods
+
 kubectl top pods -A --no-headers | while read namespace pod cpu memory; do
     # Get requested resources
     requested=$(kubectl get pod $pod -n $namespace -o jsonpath='{.spec.containers[0].resources.requests.cpu},{.spec.containers[0].resources.requests.memory}' 2>/dev/null)

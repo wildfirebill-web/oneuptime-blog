@@ -8,7 +8,7 @@ Description: Configure Docker's syslog log driver to forward container logs to a
 
 ## Introduction
 
-Many organizations have existing syslog infrastructure — rsyslog, syslog-ng, or cloud SIEM systems — and need Docker container logs to flow into the same pipeline. Docker's built-in syslog log driver makes this straightforward: configure the driver per container or globally, and logs flow directly to your syslog receiver over UDP, TCP, or TLS. This guide covers configuring the syslog log driver for Portainer-managed containers.
+Many organizations have existing syslog infrastructure - rsyslog, syslog-ng, or cloud SIEM systems - and need Docker container logs to flow into the same pipeline. Docker's built-in syslog log driver makes this straightforward: configure the driver per container or globally, and logs flow directly to your syslog receiver over UDP, TCP, or TLS. This guide covers configuring the syslog log driver for Portainer-managed containers.
 
 ## Step 1: Configure Syslog Log Driver Globally
 
@@ -26,6 +26,7 @@ Many organizations have existing syslog infrastructure — rsyslog, syslog-ng, o
 
 ```bash
 # Apply changes
+
 sudo systemctl restart docker
 
 # Verify the driver is set

@@ -225,6 +225,7 @@ For on-premises clusters or specific requirements, create custom topology domain
 
 ```bash
 # Label nodes by rack location
+
 kubectl label nodes node-1 node-2 node-3 topology.custom/rack=rack-a
 kubectl label nodes node-4 node-5 node-6 topology.custom/rack=rack-b
 kubectl label nodes node-7 node-8 node-9 topology.custom/rack=rack-c

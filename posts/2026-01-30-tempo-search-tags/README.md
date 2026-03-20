@@ -230,6 +230,7 @@ overrides:
 
 ```yaml
 # overrides.yaml
+
 overrides:
   tenant-production:
     search_tags:

@@ -249,6 +249,7 @@ A more practical Grafana panel query for a burn-down chart:
 
 ```promql
 # Error budget burn-down over the past 30 days
+
 1 - (
   (1 - istio_slo:availability_ratio_30d{destination_service="my-service.default.svc.cluster.local"})
   / (1 - 0.999)

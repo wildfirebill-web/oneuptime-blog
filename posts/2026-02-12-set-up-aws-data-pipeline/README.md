@@ -40,6 +40,7 @@ Data Pipeline needs two roles: one for the pipeline itself and one for the EC2 i
 
 ```bash
 # Create the pipeline role
+
 cat > pipeline-trust.json << 'EOF'
 {
   "Version": "2012-10-17",

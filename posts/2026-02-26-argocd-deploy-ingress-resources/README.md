@@ -32,6 +32,7 @@ First, deploy the Ingress controller itself using ArgoCD:
 
 ```yaml
 # platform/ingress-controller/application.yaml
+
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:

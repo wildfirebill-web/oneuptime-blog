@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, Infrastructure as Code, Providers
+Tags: OpenTofu, Terraform, Infrastructure as Code, Provider
 
 Description: Learn how to use provider for_each in OpenTofu to dynamically create multiple provider instances from a map without writing a separate provider block for each.
 
 ## Introduction
 
-OpenTofu supports `for_each` on provider blocks, allowing you to create multiple provider instances from a map. This eliminates the need to write one provider block per account, region, or workspace — instead, you define the provider once and let `for_each` generate all instances.
+OpenTofu supports `for_each` on provider blocks, allowing you to create multiple provider instances from a map. This eliminates the need to write one provider block per account, region, or workspace - instead, you define the provider once and let `for_each` generate all instances.
 
 ## Syntax
 

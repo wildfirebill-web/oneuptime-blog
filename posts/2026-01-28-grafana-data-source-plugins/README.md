@@ -74,6 +74,7 @@ Grafana ships with many built-in data sources. For additional plugins, use the G
 
 ```bash
 # List available plugins
+
 grafana-cli plugins list-remote
 
 # Install a specific plugin

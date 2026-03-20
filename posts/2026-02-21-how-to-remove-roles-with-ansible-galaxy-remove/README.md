@@ -16,6 +16,7 @@ The basic removal command takes the role name:
 
 ```bash
 # Remove a specific role
+
 ansible-galaxy remove geerlingguy.nginx
 ```
 

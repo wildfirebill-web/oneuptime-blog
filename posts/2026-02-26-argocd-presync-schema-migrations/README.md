@@ -34,6 +34,7 @@ Here is a production-ready PreSync migration job with all the important settings
 
 ```yaml
 # migrations/presync-migrate.yaml
+
 apiVersion: batch/v1
 kind: Job
 metadata:

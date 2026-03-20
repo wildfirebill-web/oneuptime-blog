@@ -1,4 +1,4 @@
-# How to Configure DHCPv6 Failover for High Availability
+# How to Configure DHCPv6 Failover for High Availability - High Availability
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -75,7 +75,7 @@ Kea DHCP supports HA via its `libdhcp_ha` hook library. Below is a working confi
 The secondary server uses an identical configuration but with `this-server-name` set to `server2`.
 
 ```json
-// /etc/kea/kea-dhcp6.conf (Secondary) — only the changed field shown
+// /etc/kea/kea-dhcp6.conf (Secondary) - only the changed field shown
 {
   "Dhcp6": {
     "hooks-libraries": [
@@ -98,6 +98,7 @@ The HA hook requires the Kea Control Agent (REST API) to be running on both serv
 
 ```bash
 # Start the Kea Control Agent on both nodes
+
 systemctl enable --now kea-ctrl-agent
 
 # Verify it's listening
@@ -128,7 +129,7 @@ curl -s -X POST http://localhost:8000/ \
 
 - Use `load-balancing` mode for large deployments to distribute server load.
 - Ensure both servers share a synchronized lease database (e.g., via Kea's MySQL or PostgreSQL backend).
-- Monitor heartbeat delay — if it exceeds `max-response-delay`, the standby will assume the primary is down.
+- Monitor heartbeat delay - if it exceeds `max-response-delay`, the standby will assume the primary is down.
 - Test failover quarterly by intentionally stopping the primary and verifying client renewals succeed.
 
 ## Summary

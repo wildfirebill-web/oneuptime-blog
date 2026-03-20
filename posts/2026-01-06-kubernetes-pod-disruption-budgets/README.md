@@ -141,6 +141,7 @@ spec:
 kubectl drain node-1 --ignore-daemonsets --delete-emptydir-data
 
 # With PDB, this will:
+
 # 1. Try to evict pods
 # 2. Wait if eviction would violate PDB
 # 3. Eventually succeed as pods get rescheduled elsewhere

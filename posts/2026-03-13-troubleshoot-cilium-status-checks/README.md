@@ -30,6 +30,7 @@ Run and parse the Cilium status output:
 
 ```bash
 # Get a comprehensive status summary across all Cilium agents
+
 cilium status --all-addresses --all-controllers --all-nodes --all-redirects
 
 # Check status for a specific Cilium pod directly via exec

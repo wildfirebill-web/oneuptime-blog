@@ -25,6 +25,7 @@ Verify that your nodes have NVIDIA GPUs detected at the hardware level.
 
 ```bash
 # Check PCI devices on a node
+
 talosctl -n <node-ip> read /proc/bus/pci/devices | grep -i nvidia
 
 # Or check dmesg for GPU detection

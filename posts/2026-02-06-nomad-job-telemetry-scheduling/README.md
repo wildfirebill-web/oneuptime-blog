@@ -14,6 +14,7 @@ Configure Nomad to expose Prometheus metrics. In the Nomad server and client con
 
 ```hcl
 # nomad.hcl
+
 telemetry {
   prometheus_metrics    = true
   publish_allocation_metrics = true
@@ -38,7 +39,7 @@ This exposes metrics at `/v1/metrics?format=prometheus` on the Nomad HTTP API (d
 - `nomad_client_allocs_failed` - Allocation failure events
 - `nomad_client_allocs_oom_killed` - OOM killed allocations
 
-### Resource Utilization
+Resource Utilization
 - `nomad_client_allocs_cpu_total_ticks` - CPU ticks used by allocations
 - `nomad_client_allocs_memory_usage` - Memory usage by allocations
 - `nomad_client_host_cpu_total` - Total host CPU

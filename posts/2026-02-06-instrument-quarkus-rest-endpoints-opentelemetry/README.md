@@ -32,6 +32,7 @@ Configure the OpenTelemetry exporter in your `application.properties` file. This
 
 ```properties
 # Enable OpenTelemetry
+
 quarkus.otel.enabled=true
 
 # Configure the OTLP exporter endpoint

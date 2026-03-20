@@ -67,6 +67,7 @@ Apply this configuration when you first set up the node:
 
 ```bash
 # Apply machine config with encryption enabled
+
 talosctl apply-config --nodes 192.168.1.10 --file machine-config.yaml --insecure
 ```
 

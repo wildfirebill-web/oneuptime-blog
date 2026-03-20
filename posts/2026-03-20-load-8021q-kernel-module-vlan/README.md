@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Linux, VLAN, 8021q, Kernel Module, Networking, 802.1Q
+Tags: Linux, VLAN, 8021q, Kernel Modules, Networking, 802.1Q
 
 Description: Load and persist the 8021q kernel module on Linux to enable 802.1Q VLAN tagging support for VLAN subinterface creation.
 
@@ -14,6 +14,7 @@ The `8021q` kernel module provides 802.1Q VLAN tagging support in the Linux kern
 
 ```bash
 # Check current module state
+
 lsmod | grep 8021q
 
 # If the command returns output, the module is loaded:

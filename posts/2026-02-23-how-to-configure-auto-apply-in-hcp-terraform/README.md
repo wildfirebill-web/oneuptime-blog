@@ -57,6 +57,7 @@ Auto-apply is generally not recommended for:
 
 ```hcl
 # Development workspace with auto-apply
+
 resource "tfe_workspace" "dev" {
   name           = "app-development"
   organization   = "your-org"

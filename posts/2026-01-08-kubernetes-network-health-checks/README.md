@@ -253,6 +253,7 @@ import asyncio
 app = FastAPI()
 
 # Global state
+
 is_ready = False
 is_healthy = True
 startup_complete = False

@@ -48,6 +48,7 @@ flowchart TD
 
 ```bash
 # Install subctl CLI
+
 curl -Ls https://get.submariner.io | bash
 export PATH=$PATH:~/.local/bin
 

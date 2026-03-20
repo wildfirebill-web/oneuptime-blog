@@ -56,6 +56,7 @@ For a more targeted hook that only validates Istio resources:
 # .git/hooks/pre-commit
 
 # Find all staged YAML files that look like Istio resources
+
 ISTIO_FILES=$(git diff --cached --name-only --diff-filter=ACM | grep -E '\.ya?ml$' | while read f; do
   if grep -q 'networking.istio.io\|security.istio.io\|telemetry.istio.io' "$f" 2>/dev/null; then
     echo "$f"

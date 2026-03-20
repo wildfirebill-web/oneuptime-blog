@@ -46,6 +46,7 @@ CodePipeline encrypts artifacts in S3 with a KMS key. For cross-account deployme
 
 ```bash
 # Create a KMS key in the tools account
+
 aws kms create-key \
   --description "CodePipeline cross-account artifact encryption key" \
   --policy '{

@@ -53,6 +53,7 @@ Your CI pipeline should define the status checks that branch protection enforces
 
 ```yaml
 # .github/workflows/terraform-checks.yml
+
 name: Terraform Checks
 
 on:

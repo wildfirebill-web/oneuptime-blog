@@ -16,6 +16,7 @@ The Apollo Router has built-in OpenTelemetry support. Configure it in your `rout
 
 ```yaml
 # router.yaml
+
 telemetry:
   exporters:
     tracing:

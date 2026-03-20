@@ -42,6 +42,7 @@ Here is a straightforward migration hook that runs before the application is upd
 
 ```yaml
 # hooks/db-migration.yaml
+
 apiVersion: batch/v1
 kind: Job
 metadata:

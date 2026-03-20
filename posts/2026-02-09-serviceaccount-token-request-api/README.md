@@ -24,6 +24,7 @@ The simplest way to use the TokenRequest API is through kubectl:
 
 ```bash
 # Create a 1-hour token for a ServiceAccount
+
 kubectl create token app-service-account -n production
 
 # Create a token with custom duration

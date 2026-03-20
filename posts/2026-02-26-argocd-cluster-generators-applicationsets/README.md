@@ -372,6 +372,7 @@ The beauty of the cluster generator is automatic discovery. When you add a new c
 
 ```bash
 # Add a new production cluster
+
 kubectl apply -f - <<EOF
 apiVersion: v1
 kind: Secret

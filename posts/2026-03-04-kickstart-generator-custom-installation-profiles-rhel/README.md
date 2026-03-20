@@ -16,6 +16,7 @@ Every time you install RHEL through the graphical or text installer, Anaconda sa
 
 ```bash
 # After a fresh RHEL install, check for the generated file
+
 ls -la /root/anaconda-ks.cfg
 
 # View its contents

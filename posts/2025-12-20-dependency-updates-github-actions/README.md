@@ -38,6 +38,7 @@ Dependabot is built into GitHub. Create a configuration file to enable it:
 
 ```yaml
 # .github/dependabot.yml
+
 version: 2
 updates:
   # npm dependencies

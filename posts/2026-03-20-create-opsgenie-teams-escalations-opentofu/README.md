@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Opsgenie, Incident Management, On-Call, Infrastructure as Code
+Tags: OpenTofu, OpsGenie, Incident Management, On-Call, Infrastructure as Code
 
 Description: Learn how to configure Opsgenie teams, escalation policies, on-call schedules, and alert routing with OpenTofu.
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: rancher, mlflow, experiment-tracking, mlops, kubernetes
+Tags: Rancher, MLflow, Experiment-tracking, MLOps, Kubernetes
 
 Description: Guide to setting up comprehensive ML experiment tracking on Rancher with MLflow and W&B integration.
 
@@ -24,6 +24,7 @@ Deploying this component on Rancher follows Kubernetes-native patterns: using He
 
 ```bash
 # Add the appropriate Helm repository
+
 helm repo add stable https://charts.helm.sh/stable
 helm repo update
 

@@ -44,6 +44,7 @@ Private DNS namespaces are the most common type. They create a Route 53 private 
 
 ```hcl
 # Private DNS namespace for internal service discovery
+
 resource "aws_service_discovery_private_dns_namespace" "internal" {
   name        = "internal.myapp.local"
   description = "Private DNS namespace for internal microservices"

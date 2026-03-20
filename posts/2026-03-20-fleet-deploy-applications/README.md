@@ -23,7 +23,7 @@ This guide demonstrates how to deploy a real-world application using Fleet, cove
 
 Fleet expects your repository to contain Kubernetes manifests. Organize your repository for clarity:
 
-```
+```text
 my-app/
 ├── fleet.yaml          # Fleet bundle configuration
 ├── deployment.yaml     # Kubernetes Deployment
@@ -36,6 +36,7 @@ my-app/
 
 ```yaml
 # namespace.yaml - Define the application namespace
+
 apiVersion: v1
 kind: Namespace
 metadata:
@@ -162,7 +163,7 @@ kubectl get gitrepo my-app -n fleet-default -w
 
 Structure your repository for multi-environment deployments:
 
-```
+```text
 my-app/
 ├── base/
 │   ├── fleet.yaml

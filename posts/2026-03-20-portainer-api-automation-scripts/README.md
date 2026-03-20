@@ -1,4 +1,4 @@
-# How to Automate Portainer Configuration with API Scripts
+# How to Automate Portainer Configuration with API Scripts - Automation
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Learn how to write comprehensive automation scripts using the Porta
 
 ## Introduction
 
-The Portainer API enables you to script your entire Portainer configuration — from initial setup through user provisioning, registry configuration, and stack deployments. This guide shows how to build idempotent automation scripts that can provision a fresh Portainer instance or update an existing one consistently.
+The Portainer API enables you to script your entire Portainer configuration - from initial setup through user provisioning, registry configuration, and stack deployments. This guide shows how to build idempotent automation scripts that can provision a fresh Portainer instance or update an existing one consistently.
 
 ## Prerequisites
 
@@ -29,11 +29,12 @@ The Portainer API enables you to script your entire Portainer configuration — 
 
 ```bash
 #!/bin/bash
-# portainer-bootstrap.sh — Idempotent Portainer configuration
+# portainer-bootstrap.sh - Idempotent Portainer configuration
 
 set -euo pipefail
 
 # ===== Configuration (set via environment variables) =====
+
 PORTAINER_URL="${PORTAINER_URL:-https://portainer.example.com}"
 ADMIN_USER="${ADMIN_USER:-admin}"
 ADMIN_PASS="${ADMIN_PASS:?ADMIN_PASS is required}"

@@ -29,6 +29,7 @@ Enable access logging and look for the reset in the proxy logs:
 
 ```bash
 # Source side
+
 kubectl logs my-app-xxxxx -c istio-proxy --tail=200
 
 # Destination side

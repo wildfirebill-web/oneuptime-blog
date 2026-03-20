@@ -24,6 +24,7 @@ Both nodes must be able to resolve each other by hostname. Add entries to `/etc/
 
 ```bash
 # Add to /etc/hosts on both nodes
+
 echo "192.168.1.10 node1" | sudo tee -a /etc/hosts
 echo "192.168.1.11 node2" | sudo tee -a /etc/hosts
 ```

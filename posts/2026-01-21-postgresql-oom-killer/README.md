@@ -14,6 +14,7 @@ The Linux OOM (Out of Memory) killer can terminate PostgreSQL processes, causing
 
 ```bash
 # Check system logs
+
 dmesg | grep -i "out of memory"
 journalctl | grep -i "oom"
 

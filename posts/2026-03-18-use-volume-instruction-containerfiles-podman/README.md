@@ -22,6 +22,7 @@ The VOLUME instruction accepts one or more paths:
 
 ```dockerfile
 # Single volume
+
 VOLUME /data
 
 # Multiple volumes

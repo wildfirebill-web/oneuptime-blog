@@ -18,6 +18,7 @@ Identity Platform requires enabling the Identity Toolkit API, which is different
 
 ```hcl
 # Enable Identity Platform (Identity Toolkit)
+
 resource "google_project_service" "identity_toolkit" {
   project = var.project_id
   service = "identitytoolkit.googleapis.com"

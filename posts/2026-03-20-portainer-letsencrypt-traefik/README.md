@@ -8,7 +8,7 @@ Description: Set up automatic Let's Encrypt TLS certificates for Portainer using
 
 ## Introduction
 
-Let's Encrypt provides free, automatically renewed TLS certificates. Traefik's built-in ACME client makes certificate management hands-free — once configured, Traefik requests, stores, and renews certificates automatically. This guide covers both the HTTP-01 challenge (for public servers) and the DNS-01 challenge (for private servers or wildcard certs).
+Let's Encrypt provides free, automatically renewed TLS certificates. Traefik's built-in ACME client makes certificate management hands-free - once configured, Traefik requests, stores, and renews certificates automatically. This guide covers both the HTTP-01 challenge (for public servers) and the DNS-01 challenge (for private servers or wildcard certs).
 
 ## Prerequisites
 
@@ -124,6 +124,7 @@ Then reference the `cloudflare` resolver in Portainer's labels:
 
 ```bash
 # Create cert storage with correct permissions
+
 mkdir -p letsencrypt
 touch letsencrypt/acme.json
 chmod 600 letsencrypt/acme.json

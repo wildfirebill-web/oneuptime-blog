@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Captive Portal, WiFi, Authentication, nodogsplash, OpenWrt, IPv4, Guest Network
+Tags: Captive Portal, WiFi, Authentication, Nodogsplash, OpenWrt, IPv4, Guest Network
 
 Description: Learn how to set up a captive portal on a WiFi network using nodogsplash or pfSense to require users to authenticate before gaining internet access.
 
@@ -12,7 +12,7 @@ A captive portal intercepts HTTP traffic from unauthenticated clients and redire
 
 ## Architecture Overview
 
-```
+```text
 WiFi Client → DHCP → HTTP request → Captive Portal (redirect) → Login page
                                                                      ↓ (authenticated)
                                                               Internet access
@@ -22,6 +22,7 @@ WiFi Client → DHCP → HTTP request → Captive Portal (redirect) → Login pa
 
 ```bash
 # Install nodogsplash
+
 opkg update && opkg install nodogsplash
 
 # Enable and start
@@ -72,7 +73,7 @@ UploadLimit 512
 
 ## pfSense Captive Portal
 
-```
+```text
 Services → Captive Portal → Add Zone
   Interface: GUESTNET
   Maximum concurrent connections: 100

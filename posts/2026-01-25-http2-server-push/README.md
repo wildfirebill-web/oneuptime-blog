@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: HTTP/2, Performance, Web, NGINX, Networking, Server Push
+Tags: HTTP/2, Performance, Web, Nginx, Networking, Server Push
 
 Description: A practical guide to implementing HTTP/2 Server Push for improved web performance, covering configuration in Nginx, Node.js, and best practices for pushing critical resources.
 
@@ -414,6 +414,7 @@ Instead of hardcoding push resources, use Link headers for flexibility.
 
 ```python
 # Flask example
+
 from flask import Flask, make_response
 
 app = Flask(__name__)

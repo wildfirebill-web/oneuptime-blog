@@ -21,6 +21,7 @@ External IP policy failures in Calico are often caused by CIDR range mismatches,
 
 ```bash
 # Check which external IP is failing
+
 kubectl exec -n production app-pod -- curl -v --max-time 10 http://external-ip:443
 ```
 

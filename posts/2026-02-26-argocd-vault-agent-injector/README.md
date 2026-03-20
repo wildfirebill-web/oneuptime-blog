@@ -87,6 +87,7 @@ helm:
 
 ```bash
 # Enable Kubernetes auth
+
 vault auth enable kubernetes
 
 # Configure with the cluster's details

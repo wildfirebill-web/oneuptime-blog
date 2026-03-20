@@ -16,6 +16,7 @@ The most "Ansible-native" way to move a file is to copy it to the new location a
 
 ```yaml
 # Move a config file to a new location using copy + file
+
 - name: Copy config to new location
   ansible.builtin.copy:
     src: /etc/myapp/old-config.yml

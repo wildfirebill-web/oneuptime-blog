@@ -123,6 +123,7 @@ After creating the bucket in the console, verify it exists using the CLI:
 
 ```bash
 # List your buckets
+
 aws s3 ls
 
 # Check the bucket's configuration

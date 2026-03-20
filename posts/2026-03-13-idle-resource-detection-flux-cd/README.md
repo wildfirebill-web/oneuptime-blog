@@ -27,6 +27,7 @@ Flux's `prune` feature removes Kubernetes resources that are no longer present i
 
 ```yaml
 # kustomization-with-prune.yaml - Enable pruning so deleted resources are removed
+
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
 metadata:

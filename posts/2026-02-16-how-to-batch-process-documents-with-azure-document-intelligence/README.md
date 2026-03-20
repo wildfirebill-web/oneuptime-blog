@@ -30,6 +30,7 @@ Batch processing makes sense in several scenarios:
 
 ```bash
 # Install the required packages
+
 pip install azure-ai-documentintelligence azure-storage-blob asyncio aiohttp
 ```
 

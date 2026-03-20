@@ -57,6 +57,7 @@ Using Azure CLI:
 
 ```bash
 # List available regulatory compliance standards
+
 az security regulatory-compliance-standards list \
   --query "[].{Name:name, State:state}" \
   --output table

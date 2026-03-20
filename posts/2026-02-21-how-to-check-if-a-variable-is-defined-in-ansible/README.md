@@ -16,6 +16,7 @@ The most straightforward way to check if a variable exists is the Jinja2 `is def
 
 ```yaml
 # is-defined-basic.yml - Check if a variable is defined
+
 ---
 - name: Basic defined check
   hosts: localhost

@@ -125,6 +125,7 @@ Deploy the function with appropriate memory and timeout settings.
 
 ```bash
 # Create a deployment package
+
 zip function.zip lambda_function.py
 
 # Create the Lambda function

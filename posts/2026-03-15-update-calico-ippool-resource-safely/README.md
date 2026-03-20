@@ -99,6 +99,7 @@ Since CIDR cannot be changed in place, create a new pool and migrate:
 
 ```bash
 # Step 1: Create the new pool
+
 cat <<EOF | calicoctl apply -f -
 apiVersion: projectcalico.org/v3
 kind: IPPool

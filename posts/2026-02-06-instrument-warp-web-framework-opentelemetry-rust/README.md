@@ -48,6 +48,7 @@ Add required crates to your `Cargo.toml`:
 ```toml
 [dependencies]
 # Warp web framework
+
 warp = "0.3"
 
 # OpenTelemetry ecosystem

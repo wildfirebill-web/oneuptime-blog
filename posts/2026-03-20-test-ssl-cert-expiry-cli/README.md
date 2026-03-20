@@ -10,6 +10,7 @@ Description: Learn how to check SSL certificate expiry dates using openssl, curl
 
 ```bash
 # Check certificate expiry for a live server
+
 openssl s_client -connect example.com:443 -servername example.com 2>/dev/null | \
   openssl x509 -noout -dates
 

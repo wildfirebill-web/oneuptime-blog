@@ -61,6 +61,7 @@ First, create a dedicated B2C tenant. This is separate from your main Azure AD.
 
 ```bash
 # You cannot create B2C tenant via CLI - use Azure Portal
+
 # Go to: Azure Portal > Create a resource > Azure Active Directory B2C
 
 # After creation, link it to your subscription

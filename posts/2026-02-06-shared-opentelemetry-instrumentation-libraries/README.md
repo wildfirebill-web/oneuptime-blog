@@ -47,6 +47,7 @@ This module sets up tracing and metrics with standard resource attributes and ex
 
 ```python
 # platform_otel/config.py
+
 import os
 from opentelemetry import trace, metrics
 from opentelemetry.sdk.trace import TracerProvider

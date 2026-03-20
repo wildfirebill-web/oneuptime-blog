@@ -24,6 +24,7 @@ Here is the simplest possible workflow:
 
 ```yaml
 # .codecatalyst/workflows/simple-build.yaml
+
 Name: SimpleBuild
 SchemaVersion: "1.0"
 

@@ -16,6 +16,7 @@ Before you disable anything, get a clear picture of what is currently running:
 
 ```bash
 # List all enabled services
+
 systemctl list-unit-files --state=enabled --type=service
 
 # List all running services

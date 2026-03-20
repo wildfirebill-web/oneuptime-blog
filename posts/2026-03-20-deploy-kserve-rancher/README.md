@@ -1,8 +1,8 @@
-# How to Deploy KServe on Rancher
+# How to Deploy KServe on Rancher - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: rancher, kserve, mlops, model-serving, kubernetes
+Tags: Rancher, KServe, MLOps, Model-serving, Kubernetes
 
 Description: Step-by-step guide to deploying KServe on Rancher for standardized, scalable ML model inference.
 
@@ -24,6 +24,7 @@ Deploying this component on Rancher follows Kubernetes-native patterns: using He
 
 ```bash
 # Add the appropriate Helm repository
+
 helm repo add stable https://charts.helm.sh/stable
 helm repo update
 

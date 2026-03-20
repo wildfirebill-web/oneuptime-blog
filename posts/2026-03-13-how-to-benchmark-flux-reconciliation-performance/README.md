@@ -52,6 +52,7 @@ Before making any changes, capture the current reconciliation performance:
 
 ```bash
 # Get average reconciliation duration for the last hour
+
 kubectl exec -n flux-system deploy/kustomize-controller -- \
   curl -s localhost:8080/metrics | grep gotk_reconcile_duration_seconds_sum
 

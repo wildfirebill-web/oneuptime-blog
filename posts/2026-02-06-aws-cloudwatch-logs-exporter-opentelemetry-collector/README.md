@@ -100,6 +100,7 @@ Here is a minimal configuration for sending logs to CloudWatch:
 
 ```yaml
 # Basic CloudWatch Logs exporter configuration
+
 exporters:
   awscloudwatchlogs:
     # AWS region

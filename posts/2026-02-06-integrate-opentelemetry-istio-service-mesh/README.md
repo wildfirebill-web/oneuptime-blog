@@ -48,6 +48,7 @@ You configure the tracing backend in Istio's `MeshConfig`. Here's how to point I
 
 ```yaml
 # Istio MeshConfig - configure tracing to send OTLP data to the OTel Collector
+
 apiVersion: install.istio.io/v1alpha1
 kind: IstioOperator
 spec:

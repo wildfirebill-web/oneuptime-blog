@@ -8,7 +8,7 @@ Description: Configure Linux active-backup bonding (mode 1) to provide automatic
 
 ## Introduction
 
-Active-backup bonding (mode 1) keeps one interface active and one in standby. If the active interface fails, the backup takes over automatically. This mode requires no switch configuration and works with any standard switch — making it the simplest and most reliable bonding mode for high availability.
+Active-backup bonding (mode 1) keeps one interface active and one in standby. If the active interface fails, the backup takes over automatically. This mode requires no switch configuration and works with any standard switch - making it the simplest and most reliable bonding mode for high availability.
 
 ## Prerequisites
 
@@ -20,6 +20,7 @@ Active-backup bonding (mode 1) keeps one interface active and one in standby. If
 
 ```bash
 # Load bonding module
+
 modprobe bonding
 
 # Create the bond in active-backup mode

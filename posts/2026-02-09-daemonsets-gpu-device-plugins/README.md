@@ -400,6 +400,7 @@ Check the results:
 
 ```bash
 # Deploy test pod
+
 kubectl apply -f gpu-test.yaml
 
 # Wait for completion

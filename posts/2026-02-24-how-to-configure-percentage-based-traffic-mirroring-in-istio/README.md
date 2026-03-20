@@ -238,6 +238,7 @@ Track the actual mirror rate and compare it against the configured percentage:
 
 ```bash
 # Actual request rate to production
+
 # PromQL: sum(rate(istio_requests_total{destination_service="api.default.svc.cluster.local",destination_version="v1"}[5m]))
 
 # Actual request rate to mirror

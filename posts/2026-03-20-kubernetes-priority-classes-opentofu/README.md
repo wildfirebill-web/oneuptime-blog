@@ -14,6 +14,7 @@ Kubernetes Priority Classes define the priority of pods relative to other pods d
 
 ```hcl
 # main.tf - Critical system components priority
+
 resource "kubernetes_priority_class_v1" "system_critical" {
   metadata {
     name = "system-critical"

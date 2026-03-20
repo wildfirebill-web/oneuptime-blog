@@ -76,6 +76,7 @@ class TimeSortedSet:
         return self.redis.zrangebyscore(self.key, now, future)
 
 # Usage
+
 sessions = TimeSortedSet('user:sessions', r)
 
 # Add sessions with 30-minute TTL

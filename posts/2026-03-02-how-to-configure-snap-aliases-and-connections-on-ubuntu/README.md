@@ -24,6 +24,7 @@ There are two types of aliases:
 
 ```bash
 # See all aliases on the system
+
 snap aliases
 
 # Example output:

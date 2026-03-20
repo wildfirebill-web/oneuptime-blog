@@ -30,6 +30,7 @@ CEL expressions in Flux evaluate against the resource object and must return a b
 
 ```yaml
 # Basic structure of a CEL health check
+
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
 metadata:

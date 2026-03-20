@@ -18,6 +18,7 @@ This configuration enables detailed internal metrics including process-level CPU
 
 ```yaml
 # otel-collector-config.yaml
+
 service:
   telemetry:
     metrics:

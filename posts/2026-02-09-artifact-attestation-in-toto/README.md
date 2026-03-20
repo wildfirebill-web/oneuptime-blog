@@ -20,6 +20,7 @@ Install In-Toto CLI:
 
 ```bash
 # Install using pip
+
 pip install in-toto
 
 # Verify installation

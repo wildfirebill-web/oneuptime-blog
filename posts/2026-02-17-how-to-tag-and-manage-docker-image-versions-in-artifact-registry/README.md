@@ -22,6 +22,7 @@ A **digest** is a content-addressable hash like `sha256:abc123...`. Digests are 
 
 ```bash
 # Pull by tag (could change over time)
+
 docker pull us-central1-docker.pkg.dev/my-project/my-repo/my-app:v1.0.0
 
 # Pull by digest (always the same image)

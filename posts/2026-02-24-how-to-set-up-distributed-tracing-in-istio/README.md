@@ -248,6 +248,7 @@ Deploy a sample application and generate some traffic:
 
 ```bash
 # Deploy the Bookinfo sample app
+
 kubectl apply -f https://raw.githubusercontent.com/istio/istio/release-1.24/samples/bookinfo/platform/kube/bookinfo.yaml
 
 # Generate traffic

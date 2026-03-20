@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Firewalls, Extension Headers, Security, ip6tables
+Tags: IPv6, Firewall, Extension Headers, Security, Ip6tables
 
 Description: Learn how to correctly filter IPv6 extension headers in firewalls, balancing security requirements with operational necessity by following RFC 7045 and RFC 4890 guidelines.
 
@@ -12,7 +12,7 @@ Firewall configuration for IPv6 extension headers requires careful balance: bloc
 
 ## Essential Policies for IPv6 Extension Headers
 
-```
+```text
 MUST allow (connectivity depends on them):
   NH=44 (Fragment): Allow for legitimate fragmented traffic
   NH=50 (ESP):      Allow for IPsec VPNs
@@ -38,6 +38,7 @@ POLICY CHOICE:
 # IPv6 extension header firewall rules
 
 # Flush existing rules
+
 sudo ip6tables -F FORWARD
 sudo ip6tables -F INPUT
 sudo ip6tables -F OUTPUT
@@ -52,22 +53,22 @@ sudo ip6tables -A INPUT  -p ipv6-icmp --icmpv6-type 137 -j ACCEPT  # Redirect
 sudo ip6tables -A INPUT  -p ipv6-icmp --icmpv6-type 2   -j ACCEPT  # Packet Too Big
 sudo ip6tables -A INPUT  -p ipv6-icmp --icmpv6-type 3   -j ACCEPT  # Time Exceeded
 
-# === Fragment Header (NH=44) — ALLOW for legitimate fragmentation ===
+# === Fragment Header (NH=44) - ALLOW for legitimate fragmentation ===
 sudo ip6tables -A FORWARD -m frag -j ACCEPT
 sudo ip6tables -A INPUT   -m frag -j ACCEPT
 
-# === IPsec Headers — ALLOW ===
+# === IPsec Headers - ALLOW ===
 sudo ip6tables -A FORWARD -p ah  -j ACCEPT
 sudo ip6tables -A FORWARD -p esp -j ACCEPT
 sudo ip6tables -A INPUT   -p ah  -j ACCEPT
 sudo ip6tables -A INPUT   -p esp -j ACCEPT
 
-# === Hop-by-Hop Options (NH=0) — ALLOW (required for MLD) ===
+# === Hop-by-Hop Options (NH=0) - ALLOW (required for MLD) ===
 # Note: -m ipv6header matches extension headers
 sudo ip6tables -A FORWARD -m ipv6header --header hop --soft -j ACCEPT
 sudo ip6tables -A INPUT   -m ipv6header --header hop --soft -j ACCEPT
 
-# === Routing Header Type 0 (RH0) — BLOCK (security risk) ===
+# === Routing Header Type 0 (RH0) - BLOCK (security risk) ===
 # This is the deprecated amplification-attack-enabling routing header
 sudo ip6tables -A FORWARD -m rt --rt-type 0 -j LOG --log-prefix "IPv6-RH0-DROP: "
 sudo ip6tables -A FORWARD -m rt --rt-type 0 -j DROP
@@ -83,7 +84,7 @@ echo "Extension header rules applied"
 
 ## nftables Equivalent
 
-```
+```text
 # /etc/nftables.conf
 table inet filter6 {
     chain input {
@@ -157,4 +158,4 @@ sudo ip6tables -A INPUT -m ipv6header --header hop --soft \
 
 ## Conclusion
 
-Correct IPv6 extension header filtering requires explicitly allowing Fragment Headers (44) for fragmentation, IPsec headers (50/51), Hop-by-Hop (0) for MLD, and routing headers except Type 0 (which must be blocked). Unknown extension headers should generally be logged and forwarded per RFC 7045 rather than silently dropped. Overly aggressive filtering that blocks all extension headers breaks fragmentation, IPsec VPNs, and multicast — causing hard-to-diagnose connectivity failures.
+Correct IPv6 extension header filtering requires explicitly allowing Fragment Headers (44) for fragmentation, IPsec headers (50/51), Hop-by-Hop (0) for MLD, and routing headers except Type 0 (which must be blocked). Unknown extension headers should generally be logged and forwarded per RFC 7045 rather than silently dropped. Overly aggressive filtering that blocks all extension headers breaks fragmentation, IPsec VPNs, and multicast - causing hard-to-diagnose connectivity failures.

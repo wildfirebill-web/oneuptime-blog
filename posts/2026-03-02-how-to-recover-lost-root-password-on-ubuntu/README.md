@@ -20,6 +20,7 @@ If you forgot the root password but have another user with sudo access:
 
 ```bash
 # Log in as the other sudo user
+
 # Reset root password
 sudo passwd root
 

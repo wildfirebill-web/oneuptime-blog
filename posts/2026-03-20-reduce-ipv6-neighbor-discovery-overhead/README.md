@@ -18,12 +18,13 @@ The neighbor (ND) cache stores IPv6-to-MAC mappings. A small or aggressive GC po
 # /etc/sysctl.d/99-ndp-tuning.conf
 
 # Minimum number of entries before GC starts (increase for busy servers)
+
 net.ipv6.neigh.default.gc_thresh1 = 1024
 
-# Soft limit — GC runs more aggressively above this
+# Soft limit - GC runs more aggressively above this
 net.ipv6.neigh.default.gc_thresh2 = 4096
 
-# Hard limit — entries are forcibly removed above this
+# Hard limit - entries are forcibly removed above this
 net.ipv6.neigh.default.gc_thresh3 = 8192
 
 # How long (seconds) before a neighbor entry is considered stale
@@ -73,7 +74,7 @@ DAD sends Neighbor Solicitations before using a new address. On trusted internal
 
 ```bash
 # Reduce DAD transmissions (default is 1, set to 0 to disable)
-# 0 disables DAD — only appropriate on trusted, isolated networks
+# 0 disables DAD - only appropriate on trusted, isolated networks
 net.ipv6.conf.eth0.dad_transmits = 0
 
 # Or reduce to a single transmission

@@ -12,6 +12,7 @@ The `ip` command provides immediate IPv6 address assignment:
 
 ```bash
 # Add a static IPv6 address to eth0
+
 ip -6 addr add 2001:db8::10/64 dev eth0
 
 # Verify the address is assigned

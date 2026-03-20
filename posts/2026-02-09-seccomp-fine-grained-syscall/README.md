@@ -165,6 +165,7 @@ Trace your application to discover which system calls it actually uses:
 
 ```bash
 # Run application with strace to capture syscalls
+
 strace -c -f -o syscalls.log ./myapp
 
 # Extract unique system call names

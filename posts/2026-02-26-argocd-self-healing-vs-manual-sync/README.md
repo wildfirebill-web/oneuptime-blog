@@ -93,6 +93,7 @@ Most teams benefit from a hybrid approach that varies by environment and applica
 
 ```yaml
 # Development: full auto-sync with self-healing
+
 # Changes are deployed instantly, drift is corrected
 apiVersion: argoproj.io/v1alpha1
 kind: Application

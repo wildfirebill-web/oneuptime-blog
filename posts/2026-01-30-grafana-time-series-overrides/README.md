@@ -42,6 +42,7 @@ Navigate to your panel settings, find the Overrides section, and add a new overr
 
 ```yaml
 # Example override configuration (conceptual)
+
 override:
   matcher:
     id: byName

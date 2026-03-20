@@ -58,7 +58,7 @@ check "lb_health" {
 
 Key characteristics:
 - Runs at the end of `plan` and `apply`
-- Failures produce **warnings**, not errors — apply still succeeds
+- Failures produce **warnings**, not errors - apply still succeeds
 - Can use `data` sources to fetch external state
 - Suitable for monitoring, compliance checks, and soft assertions
 

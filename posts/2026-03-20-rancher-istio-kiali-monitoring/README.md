@@ -27,6 +27,7 @@ Alternatively, install via Helm directly:
 
 ```bash
 # Add the Kiali Helm repository
+
 helm repo add kiali https://kiali.org/helm-charts
 helm repo update
 

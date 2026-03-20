@@ -50,6 +50,7 @@ The simplest way to access command line arguments.
 # Accessing positional parameters
 
 # Script name
+
 echo "Script name: $0"
 
 # Individual arguments

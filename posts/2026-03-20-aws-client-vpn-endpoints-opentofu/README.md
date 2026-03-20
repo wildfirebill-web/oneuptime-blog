@@ -70,6 +70,7 @@ resource "aws_ec2_client_vpn_network_association" "subnet_2" {
 
 ```hcl
 # Allow all authenticated users to access the VPC CIDR
+
 resource "aws_ec2_client_vpn_authorization_rule" "vpc_access" {
   client_vpn_endpoint_id = aws_ec2_client_vpn_endpoint.main.id
   target_network_cidr    = var.vpc_cidr
@@ -124,4 +125,4 @@ tofu apply tfplan
 
 ## Summary
 
-AWS Client VPN provides secure remote access to VPC resources. OpenTofu manages the entire setup — endpoint configuration, subnet associations, authorization rules, and CloudWatch logging — making your VPN infrastructure reproducible and auditable.
+AWS Client VPN provides secure remote access to VPC resources. OpenTofu manages the entire setup - endpoint configuration, subnet associations, authorization rules, and CloudWatch logging - making your VPN infrastructure reproducible and auditable.

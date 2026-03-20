@@ -71,6 +71,7 @@ Choose Caprover when you need:
 **Portainer deployment:**
 ```bash
 # Deploy Portainer CE
+
 docker run -d \
   -p 9000:9000 \
   -p 9443:9443 \
@@ -115,4 +116,4 @@ Moving from Portainer to Caprover:
 
 ## Conclusion
 
-Both Portainer and Caprover are valuable tools in the container management ecosystem. Portainer excels as a universal, scalable management platform that grows with your organization from a single developer to large enterprise teams. Caprover may be preferable for specific scenarios where its specialized features provide clear advantages. Consider your team size, technical requirements, budget, and long-term scalability when making your decision — and remember that many teams successfully use multiple tools for different purposes.
+Both Portainer and Caprover are valuable tools in the container management ecosystem. Portainer excels as a universal, scalable management platform that grows with your organization from a single developer to large enterprise teams. Caprover may be preferable for specific scenarios where its specialized features provide clear advantages. Consider your team size, technical requirements, budget, and long-term scalability when making your decision - and remember that many teams successfully use multiple tools for different purposes.

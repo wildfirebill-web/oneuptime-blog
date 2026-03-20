@@ -8,12 +8,13 @@ Description: Learn how to configure zero-downtime deployments using OpenTofu by 
 
 ---
 
-Zero-downtime deployments require that new instances are healthy and serving traffic before old instances are terminated. OpenTofu configuration controls the deployment strategy — but the defaults are rarely sufficient for production. This guide shows the specific settings that make the difference.
+Zero-downtime deployments require that new instances are healthy and serving traffic before old instances are terminated. OpenTofu configuration controls the deployment strategy - but the defaults are rarely sufficient for production. This guide shows the specific settings that make the difference.
 
 ## ECS Rolling Deployment with Zero Downtime
 
 ```hcl
 # main.tf
+
 terraform {
   required_providers {
     aws = {
@@ -45,7 +46,7 @@ resource "aws_lb_target_group" "app" {
     matcher             = "200"
   }
 
-  # Connection draining — allow in-flight requests to complete
+  # Connection draining - allow in-flight requests to complete
   deregistration_delay = 60  # Wait 60 seconds before terminating deregistered targets
 }
 
@@ -91,7 +92,7 @@ resource "aws_ecs_service" "app" {
   deployment_maximum_percent         = 200  # Allow up to 2x instances during deployment
   deployment_minimum_healthy_percent = 100  # Never go below 100% capacity
 
-  # Health check grace period — prevents new tasks from being killed during startup
+  # Health check grace period - prevents new tasks from being killed during startup
   health_check_grace_period_seconds = 120
 
   # Circuit breaker prevents stuck deployments
@@ -153,14 +154,14 @@ resource "kubernetes_deployment" "app" {
       }
 
       spec {
-        # Graceful shutdown — wait for in-flight requests to complete
+        # Graceful shutdown - wait for in-flight requests to complete
         termination_grace_period_seconds = 60
 
         container {
           name  = var.service_name
           image = var.app_image
 
-          # Liveness probe — restart unhealthy containers
+          # Liveness probe - restart unhealthy containers
           liveness_probe {
             http_get {
               path = "/health"
@@ -171,7 +172,7 @@ resource "kubernetes_deployment" "app" {
             failure_threshold     = 3
           }
 
-          # Readiness probe — only route traffic when ready
+          # Readiness probe - only route traffic when ready
           readiness_probe {
             http_get {
               path = "/ready"
@@ -183,7 +184,7 @@ resource "kubernetes_deployment" "app" {
           }
 
           lifecycle {
-            # Pre-stop hook — ensures in-flight requests complete before termination
+            # Pre-stop hook - ensures in-flight requests complete before termination
             pre_stop {
               exec {
                 command = ["/bin/sh", "-c", "sleep 15"]
@@ -196,7 +197,7 @@ resource "kubernetes_deployment" "app" {
   }
 }
 
-# Pod Disruption Budget — prevents simultaneous pod terminations
+# Pod Disruption Budget - prevents simultaneous pod terminations
 resource "kubernetes_pod_disruption_budget_v1" "app" {
   metadata {
     name      = "${var.service_name}-pdb"
@@ -217,7 +218,7 @@ resource "kubernetes_pod_disruption_budget_v1" "app" {
 
 ## Best Practices
 
-- Set `max_unavailable = 0` or `deployment_minimum_healthy_percent = 100` — never allow capacity to drop below 100% during deployments.
+- Set `max_unavailable = 0` or `deployment_minimum_healthy_percent = 100` - never allow capacity to drop below 100% during deployments.
 - Configure `deregistration_delay` on ALB target groups to allow in-flight requests to complete before terminating instances.
 - Use container `startPeriod` in health checks to give applications time to initialize before health checks begin.
 - Implement application-level graceful shutdown handlers that complete in-flight requests before exiting.

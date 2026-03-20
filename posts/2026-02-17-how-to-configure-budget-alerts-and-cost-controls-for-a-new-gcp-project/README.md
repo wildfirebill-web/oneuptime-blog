@@ -28,6 +28,7 @@ Create a budget with multiple alert thresholds to get progressively urgent notif
 
 ```bash
 # Create a budget for a specific project with multiple thresholds
+
 gcloud billing budgets create \
   --billing-account=BILLING_ACCOUNT_ID \
   --display-name="Production Project Budget" \

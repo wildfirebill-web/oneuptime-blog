@@ -18,6 +18,7 @@ The `configs` directive in Compose files provides a way to mount configuration f
 
 ```yaml
 # docker-compose.yml
+
 version: "3.8"
 services:
   web:

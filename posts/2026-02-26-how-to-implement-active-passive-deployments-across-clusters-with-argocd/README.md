@@ -72,6 +72,7 @@ Register both the active and passive clusters:
 
 ```yaml
 # Active cluster
+
 apiVersion: v1
 kind: Secret
 metadata:

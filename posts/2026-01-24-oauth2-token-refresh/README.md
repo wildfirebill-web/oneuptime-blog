@@ -259,6 +259,7 @@ class OAuth2Session:
 
 
 # Usage example
+
 token_manager = OAuth2TokenManager(
     client_id="your_client_id",
     client_secret="your_client_secret",

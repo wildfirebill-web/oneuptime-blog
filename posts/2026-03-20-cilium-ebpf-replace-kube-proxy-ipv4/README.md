@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Cilium, eBPF, Kubernetes, IPv4, kube-proxy Replacement, Performance
+Tags: Cilium, eBPF, Kubernetes, IPv4, Kube-proxy Replacement, Performance
 
 Description: Remove kube-proxy and configure Cilium's eBPF-based service handling for IPv4 Kubernetes services, achieving better performance and lower latency.
 
@@ -19,6 +19,7 @@ Cilium can completely replace kube-proxy using eBPF programs that intercept and 
 
 ```bash
 # Initialize kubeadm WITHOUT kube-proxy
+
 sudo kubeadm init \
   --pod-network-cidr=10.0.0.0/16 \
   --skip-phases=addon/kube-proxy

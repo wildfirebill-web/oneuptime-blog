@@ -9,7 +9,8 @@ Description: Create reproducible IPv6 test environments with Vagrant, configure 
 ## Basic IPv6 Vagrantfile
 
 ```ruby
-# Vagrantfile — Single VM with IPv6
+# Vagrantfile - Single VM with IPv6
+
 Vagrant.configure("2") do |config|
   config.vm.box = "ubuntu/jammy64"
 
@@ -33,7 +34,7 @@ end
 ## Multi-VM IPv6 Lab
 
 ```ruby
-# Vagrantfile — 3-VM IPv6 router lab
+# Vagrantfile - 3-VM IPv6 router lab
 Vagrant.configure("2") do |config|
 
   # Router 1
@@ -102,7 +103,7 @@ end
 
 ```bash
 #!/bin/bash
-# provision-ipv6.sh — Run as Vagrant provisioner
+# provision-ipv6.sh - Run as Vagrant provisioner
 
 set -e
 
@@ -178,4 +179,4 @@ vagrant ssh r2 -c "tcpdump -i eth1 -n 'ip6 and (ospf6 or icmp6)' -c 20"
 
 ## Conclusion
 
-Vagrant enables reproducible IPv6 test environments that can be version-controlled alongside application code. The `private_network` with `virtualbox__intnet` creates isolated internal networks for multi-VM topologies. Shell provisioners handle IPv6 configuration including address assignment, forwarding, and FRR installation. The `vagrant up/destroy` lifecycle makes environments disposable — spin up a fresh IPv6 lab in minutes, destroy it when done. For Windows hosts, ensure VirtualBox supports IPv6 host-only adapters.
+Vagrant enables reproducible IPv6 test environments that can be version-controlled alongside application code. The `private_network` with `virtualbox__intnet` creates isolated internal networks for multi-VM topologies. Shell provisioners handle IPv6 configuration including address assignment, forwarding, and FRR installation. The `vagrant up/destroy` lifecycle makes environments disposable - spin up a fresh IPv6 lab in minutes, destroy it when done. For Windows hosts, ensure VirtualBox supports IPv6 host-only adapters.

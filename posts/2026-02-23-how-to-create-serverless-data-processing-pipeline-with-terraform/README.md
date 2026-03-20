@@ -26,6 +26,7 @@ The data processing pipeline consists of these stages:
 
 ```hcl
 # Kinesis Data Stream for event ingestion
+
 resource "aws_kinesis_stream" "events" {
   name             = "event-ingestion-stream"
   shard_count      = 4

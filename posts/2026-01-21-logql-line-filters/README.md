@@ -38,6 +38,7 @@ Line filters match against the raw log line text. They are applied after stream 
 
 ```logql
 # Find logs containing "error"
+
 {job="app"} |= "error"
 
 # Case-sensitive matching

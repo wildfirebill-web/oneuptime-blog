@@ -24,6 +24,7 @@ Before writing any code, you need a clear schema. Start by identifying the domai
 
 ```yaml
 # custom-semconv.yaml
+
 # Domain: E-Commerce Platform
 # Namespace: ecommerce
 

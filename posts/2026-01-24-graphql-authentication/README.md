@@ -138,6 +138,7 @@ module.exports = { createContext };
 
 ```graphql
 # schema.graphql
+
 # Define types for authentication
 
 type User {

@@ -18,6 +18,7 @@ Istio generates rich telemetry data for every request that passes through the me
 
 ```promql
 # Request success rate
+
 istio_requests_total{response_code=~"2.*|3.*"}
 
 # Request error rate

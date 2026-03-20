@@ -53,6 +53,7 @@ Generate certificates manually:
 
 ```bash
 # Generate CA
+
 openssl req -x509 -newkey rsa:4096 -days 3650 \
   -keyout ca.key -out ca.crt -nodes -subj "/CN=Hubble CA"
 

@@ -8,7 +8,7 @@ Description: Learn how to implement robust backup strategies for OpenTofu state 
 
 ## Introduction
 
-Your OpenTofu state file is the source of truth for your managed infrastructure. Losing it can be catastrophic — requiring manual re-import of every resource. A solid backup strategy is not optional; it's a fundamental operational requirement. This guide covers multiple backup approaches for different backend types.
+Your OpenTofu state file is the source of truth for your managed infrastructure. Losing it can be catastrophic - requiring manual re-import of every resource. A solid backup strategy is not optional; it's a fundamental operational requirement. This guide covers multiple backup approaches for different backend types.
 
 ## Automatic Backups: S3 Versioning
 
@@ -16,6 +16,7 @@ The simplest and most powerful backup mechanism for S3-backed state is object ve
 
 ```hcl
 # Enable versioning on the S3 state bucket
+
 resource "aws_s3_bucket_versioning" "state" {
   bucket = aws_s3_bucket.terraform_state.id
 
@@ -177,4 +178,4 @@ jq '.resources | length' backup.tfstate
 
 ## Conclusion
 
-Backing up OpenTofu state files is a critical operational practice. Enable S3 versioning as your baseline — it provides automatic versioning with zero additional effort. Supplement with manual pre-operation backups, lifecycle rules for cost management, and cross-region replication for disaster recovery. Regular backup testing ensures you can actually restore when needed.
+Backing up OpenTofu state files is a critical operational practice. Enable S3 versioning as your baseline - it provides automatic versioning with zero additional effort. Supplement with manual pre-operation backups, lifecycle rules for cost management, and cross-region replication for disaster recovery. Regular backup testing ensures you can actually restore when needed.

@@ -47,6 +47,7 @@ If doing a post-install reconfiguration or setting up a secondary disk:
 
 ```bash
 # Format a partition as Btrfs
+
 sudo mkfs.btrfs -L ubuntu-root /dev/sdb1
 
 # Mount it

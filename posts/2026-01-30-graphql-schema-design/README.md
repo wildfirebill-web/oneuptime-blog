@@ -20,6 +20,7 @@ Every GraphQL schema starts with object types. These represent the data your API
 
 ```graphql
 # Basic object type representing a user in your system
+
 type User {
   id: ID!
   email: String!

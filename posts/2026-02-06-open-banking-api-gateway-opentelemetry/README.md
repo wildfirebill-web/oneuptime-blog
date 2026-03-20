@@ -18,6 +18,7 @@ Let's instrument an Open Banking API gateway that handles Account Information Se
 
 ```python
 # open_banking_gateway.py
+
 from opentelemetry import trace, metrics
 from opentelemetry.sdk.resources import Resource
 from functools import wraps

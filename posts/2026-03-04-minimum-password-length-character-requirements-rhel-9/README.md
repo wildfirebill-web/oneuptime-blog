@@ -38,6 +38,7 @@ The `minlen` parameter controls the minimum length:
 
 ```bash
 # Minimum acceptable password length
+
 minlen = 14
 ```
 

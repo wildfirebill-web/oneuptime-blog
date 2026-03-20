@@ -38,6 +38,7 @@ There are a few constraints to be aware of. VPC CIDR blocks cannot overlap. Peer
 
 ```bash
 # Install the required collection
+
 ansible-galaxy collection install amazon.aws
 ```
 

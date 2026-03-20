@@ -26,6 +26,7 @@ ECDSA certificates (P-256) provide equivalent security to RSA-2048 with signific
 
 ```bash
 # Generate ECDSA key for Felix (faster than RSA-2048)
+
 openssl ecparam -name prime256v1 -genkey -noout -out calico-felix.key
 
 # Generate ECDSA certificate signing request

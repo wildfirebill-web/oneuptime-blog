@@ -31,6 +31,7 @@ ERROR! Syntax Error while loading YAML.
 
 ```bash
 # Find tabs in YAML files
+
 grep -P '\t' playbook.yml
 
 # Convert tabs to 2 spaces

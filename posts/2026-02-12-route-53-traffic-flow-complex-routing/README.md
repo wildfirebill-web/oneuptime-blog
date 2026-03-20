@@ -75,6 +75,7 @@ Create and apply this policy:
 
 ```bash
 # Create the traffic policy
+
 aws route53 create-traffic-policy \
   --name "order-app-routing" \
   --document file://traffic-policy.json \

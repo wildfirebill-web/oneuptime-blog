@@ -16,6 +16,7 @@ The easiest way to create your initial whitelist is to generate it from currentl
 
 ```bash
 # Generate policy from current USB devices
+
 sudo usbguard generate-policy
 ```
 

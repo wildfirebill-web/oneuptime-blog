@@ -24,6 +24,7 @@ Here is an example SLO configuration for a web service:
 
 ```yaml
 # slo-config.yaml
+
 # Configuration for service level objectives
 service: checkout-service
 slos:

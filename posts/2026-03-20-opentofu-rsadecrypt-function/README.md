@@ -16,14 +16,15 @@ The `rsadecrypt` function in OpenTofu decrypts a Base64-encoded, RSA-encrypted c
 rsadecrypt(ciphertext, privatekey)
 ```
 
-- **ciphertext** — Base64-encoded RSA-encrypted data
-- **privatekey** — PEM-encoded RSA private key string
+- **ciphertext** - Base64-encoded RSA-encrypted data
+- **privatekey** - PEM-encoded RSA private key string
 - Returns the decrypted plaintext string
 
 ## Basic Examples
 
 ```hcl
 # The ciphertext would be a Base64-encoded RSA-encrypted string
+
 # The private key is PEM format
 
 locals {

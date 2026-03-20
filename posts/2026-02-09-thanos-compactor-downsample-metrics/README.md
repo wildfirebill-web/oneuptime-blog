@@ -166,6 +166,7 @@ Track compaction and downsampling:
 
 ```promql
 # Blocks compacted
+
 thanos_compact_group_compactions_total
 
 # Downsampling duration
@@ -371,7 +372,7 @@ kubectl exec -n monitoring thanos-compactor-0 -- \
 
 This creates downsampled blocks for existing data in object storage.
 
-## Resource Requirements
+Resource Requirements
 
 Compactor needs significant memory and CPU:
 

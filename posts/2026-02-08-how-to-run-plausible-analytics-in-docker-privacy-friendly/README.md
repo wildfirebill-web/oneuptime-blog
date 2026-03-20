@@ -28,6 +28,7 @@ Docker and Docker Compose are required. Plausible uses ClickHouse for analytics 
 
 ```bash
 # Verify Docker installation
+
 docker --version
 docker compose version
 ```

@@ -37,6 +37,7 @@ If you do not have a project ready, create a simple React app to follow along.
 
 ```bash
 # Create a new React app and push it to GitHub
+
 npx create-react-app my-static-app
 cd my-static-app
 git init

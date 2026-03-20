@@ -175,6 +175,7 @@ After applying encryption configuration, verify it is working:
 
 ```bash
 # Check volume encryption status
+
 talosctl get volumestatus STATE --nodes 192.168.1.10 -o yaml
 talosctl get volumestatus EPHEMERAL --nodes 192.168.1.10 -o yaml
 ```

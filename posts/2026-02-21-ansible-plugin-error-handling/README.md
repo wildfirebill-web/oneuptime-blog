@@ -280,6 +280,7 @@ The most important aspect of error handling is the message. Bad error messages w
 
 ```python
 # BAD: Vague error message
+
 raise AnsibleError("API error")
 
 # GOOD: Specific error with context and suggested fix

@@ -48,6 +48,7 @@ For automation, use the CodeCatalyst CLI:
 
 ```bash
 # Create a Dev Environment with specific configuration
+
 aws codecatalyst create-dev-environment \
   --space-name "my-company" \
   --project-name "PaymentService" \

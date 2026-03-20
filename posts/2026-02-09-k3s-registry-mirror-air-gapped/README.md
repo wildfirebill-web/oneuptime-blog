@@ -52,6 +52,7 @@ Deploy a registry on your edge network:
 
 ```yaml
 # local-registry.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

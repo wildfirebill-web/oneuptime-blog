@@ -22,6 +22,7 @@ First, you need embeddings for your content. Let us use the Vertex AI embedding 
 
 ```python
 # generate_embeddings.py
+
 # Generate embeddings for your documents
 
 import vertexai

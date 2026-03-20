@@ -1,8 +1,8 @@
-# How to Deploy GitLab on Rancher
+# How to Deploy GitLab on Rancher - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: rancher, gitlab, devops, kubernetes, helm
+Tags: Rancher, GitLab, DevOps, Kubernetes, Helm
 
 Description: Step-by-step guide to deploying GitLab CE or EE on Rancher for self-hosted Git repository management.
 
@@ -22,6 +22,7 @@ This guide covers deploying ugitlab on Rancher with production-ready configurati
 
 ```bash
 # Add the chart repository
+
 helm repo add bitnami https://charts.bitnami.com/bitnami
 helm repo update
 

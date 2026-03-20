@@ -19,6 +19,7 @@ helm repo update
 
 ```yaml
 # wordpress-values.yaml
+
 wordpressUsername: admin
 wordpressPassword: "securepassword"
 wordpressEmail: admin@example.com
@@ -144,4 +145,4 @@ EOF
 
 ## Conclusion
 
-WordPress on Rancher is production-ready with the Bitnami Helm chart handling most configuration. The key challenge for scaled deployments is shared media storage—use S3 offloading for any deployment with more than one WordPress replica, as the local filesystem cannot be shared between pods.
+WordPress on Rancher is production-ready with the Bitnami Helm chart handling most configuration. The key challenge for scaled deployments is shared media storage-use S3 offloading for any deployment with more than one WordPress replica, as the local filesystem cannot be shared between pods.

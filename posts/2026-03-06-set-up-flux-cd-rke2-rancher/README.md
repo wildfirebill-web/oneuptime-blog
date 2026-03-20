@@ -30,6 +30,7 @@ Install RKE2 on the first node (server/control plane):
 
 ```bash
 # Install RKE2 server
+
 curl -sfL https://get.rke2.io | sudo sh -
 
 # Enable and start the RKE2 server service

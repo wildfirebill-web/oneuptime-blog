@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Nginx, Forward Proxy, IPv4, HTTP, HTTPS, ngx_http_proxy_module, Networking
+Tags: Nginx, Forward Proxy, IPv4, HTTP, HTTPS, Ngx_http_proxy_module, Networking
 
 Description: Configure Nginx as an HTTP forward proxy for IPv4 clients, enabling web traffic routing, access control, and content filtering through a centralized proxy.
 
@@ -119,6 +119,7 @@ sudo htpasswd -c /etc/nginx/proxy-users proxyuser
 
 ```bash
 # System-wide proxy settings
+
 export http_proxy="http://proxy.example.com:3128"
 export https_proxy="http://proxy.example.com:3128"
 export no_proxy="localhost,127.0.0.1,*.internal.example.com"

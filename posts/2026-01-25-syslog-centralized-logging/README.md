@@ -82,6 +82,7 @@ rsyslog is the most common syslog implementation on Linux. Configure it as a cen
 
 ```bash
 # /etc/rsyslog.conf
+
 # rsyslog central server configuration
 
 #################

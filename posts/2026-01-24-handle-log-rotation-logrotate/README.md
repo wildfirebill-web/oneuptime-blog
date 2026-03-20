@@ -44,6 +44,7 @@ Logrotate reads its main configuration and includes directory configurations.
 
 ```bash
 # Main configuration file
+
 cat /etc/logrotate.conf
 
 # Application-specific configurations

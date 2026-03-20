@@ -26,6 +26,7 @@ Let me start with active geo-replication since it is the foundation for both app
 
 ```bash
 # Create a secondary database in a different region
+
 # The secondary is a readable copy of the primary
 az sql db replica create \
   --resource-group rg-primary \

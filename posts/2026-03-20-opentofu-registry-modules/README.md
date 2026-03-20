@@ -14,6 +14,7 @@ The OpenTofu Registry hosts thousands of community and verified modules for comm
 
 ```bash
 # Search the OpenTofu Registry
+
 # https://registry.opentofu.org/modules
 
 # Filter by provider, verified status, or download count

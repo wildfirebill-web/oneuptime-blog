@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Extension Headers, Middleboxes, Firewalls, RFC 7045
+Tags: IPv6, Extension Headers, Middleboxes, Firewall, RFC 7045
 
 Description: Understand how middleboxes should handle unknown IPv6 extension headers, the RFC 7045 guidelines, and why incorrect handling causes connectivity failures.
 
 ## Introduction
 
-A "middlebox" is any network device between two communicating endpoints that is not the final destination — firewalls, load balancers, deep packet inspection systems, and network address translators. The handling of unknown IPv6 extension headers by middleboxes is a major source of connectivity problems in IPv6 networks. RFC 7045 defines clear rules for how middleboxes MUST handle extension headers.
+A "middlebox" is any network device between two communicating endpoints that is not the final destination - firewalls, load balancers, deep packet inspection systems, and network address translators. The handling of unknown IPv6 extension headers by middleboxes is a major source of connectivity problems in IPv6 networks. RFC 7045 defines clear rules for how middleboxes MUST handle extension headers.
 
 ## The Problem: Middlebox Drop Behavior
 
@@ -21,7 +21,7 @@ Many IPv6 deployments suffer from "extension header filtering" where middleboxes
 
 Research has shown that a significant fraction of internet paths drop packets with extension headers:
 
-```
+```text
 Measured extension header drop rates (circa 2015-2020 studies):
   Fragment Header (44): 30-50% of paths drop these packets
   Routing Header (43):  40-60% of paths drop these packets
@@ -33,7 +33,7 @@ Measured extension header drop rates (circa 2015-2020 studies):
 
 RFC 7045 defines what middleboxes MUST and MUST NOT do:
 
-```
+```text
 MUST forward (cannot drop based on extension header type alone):
   - Fragment Header (44): Required for fragmentation to work
   - Authentication Header (51): Required for IPsec
@@ -55,6 +55,7 @@ MUST NOT silently drop:
 
 ```bash
 # Test if a path passes Fragment Headers
+
 # Create a fragmented ping6 (forces use of Fragment Header)
 ping6 -s 1280 -M want 2001:db8::target  # Force fragmentation
 
@@ -115,7 +116,7 @@ sudo ip6tables -A FORWARD -m rt --rt-type 0 -j DROP  # Only RH0 is dangerous
 
 ## nftables Configuration
 
-```
+```text
 # /etc/nftables.conf - extension header handling
 table inet filter {
     chain forward {

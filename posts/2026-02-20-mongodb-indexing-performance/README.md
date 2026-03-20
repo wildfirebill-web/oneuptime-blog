@@ -35,6 +35,7 @@ db = client["myapp"]
 collection = db["users"]
 
 # Single field index on email
+
 # This speeds up queries that filter or sort by email
 collection.create_index(
     [("email", ASCENDING)],

@@ -20,6 +20,7 @@ The most common approach is using the `--diff` flag when running your playbook.
 
 ```bash
 # Run the playbook with diff output enabled
+
 ansible-playbook -i inventory.ini site.yml --diff
 ```
 

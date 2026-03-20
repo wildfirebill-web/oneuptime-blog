@@ -35,6 +35,7 @@ Label-based tracking is the default method in ArgoCD. It adds tracking labels to
 
 ```yaml
 # Example resource with ArgoCD tracking labels
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

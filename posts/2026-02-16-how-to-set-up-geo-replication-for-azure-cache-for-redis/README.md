@@ -37,6 +37,7 @@ If you already have two Premium caches in different regions, skip ahead. Otherwi
 
 ```bash
 # Create the primary cache in East US
+
 az redis create \
   --name redis-primary-eastus \
   --resource-group rg-redis-geo \

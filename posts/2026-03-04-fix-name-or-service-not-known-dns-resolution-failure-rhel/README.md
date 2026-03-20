@@ -14,6 +14,7 @@ The "Name or service not known" error means your system cannot resolve hostnames
 
 ```bash
 # Test if you can reach external IPs (bypasses DNS)
+
 ping -c 3 8.8.8.8
 
 # If this works but hostname resolution fails, DNS is the issue

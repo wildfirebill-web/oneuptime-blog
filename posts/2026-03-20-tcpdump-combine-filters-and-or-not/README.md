@@ -12,6 +12,7 @@ Single-primitive filters (just a host or just a port) are rarely precise enough 
 
 ```bash
 # AND: both conditions must be true
+
 sudo tcpdump 'host 192.168.1.100 and port 80'
 
 # OR: either condition is true
@@ -32,11 +33,11 @@ sudo tcpdump '!port 22'
 ## Using Parentheses for Grouping
 
 ```bash
-# Without parentheses — ambiguous precedence
+# Without parentheses - ambiguous precedence
 sudo tcpdump 'host 10.0.0.1 and port 80 or port 443'
 # Interpreted as: (host 10.0.0.1 AND port 80) OR port 443
 
-# With parentheses — explicit and correct
+# With parentheses - explicit and correct
 sudo tcpdump 'host 10.0.0.1 and (port 80 or port 443)'
 # Correctly: host 10.0.0.1 AND (port 80 OR port 443)
 

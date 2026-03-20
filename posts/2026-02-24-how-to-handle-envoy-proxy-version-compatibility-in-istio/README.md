@@ -16,6 +16,7 @@ Each Istio release pins a specific Envoy version. You can check which Envoy vers
 
 ```bash
 # Check the Envoy version in a sidecar
+
 kubectl exec -it <pod-name> -c istio-proxy -- envoy --version
 ```
 

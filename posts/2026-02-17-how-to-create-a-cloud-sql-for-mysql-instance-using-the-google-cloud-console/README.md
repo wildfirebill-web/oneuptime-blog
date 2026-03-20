@@ -22,6 +22,7 @@ You can enable the Cloud SQL Admin API from the APIs & Services page in the cons
 
 ```bash
 # Enable the Cloud SQL Admin API for your project
+
 gcloud services enable sqladmin.googleapis.com
 ```
 

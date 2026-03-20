@@ -138,6 +138,7 @@ Instead of hardcoding AMI IDs (which are region-specific), provide a sensible de
 # modules/ec2-instance/data.tf
 
 # Fetch the latest Amazon Linux 2023 AMI when no AMI ID is provided
+
 data "aws_ami" "amazon_linux" {
   count = var.ami_id == null ? 1 : 0
 

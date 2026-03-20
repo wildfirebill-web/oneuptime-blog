@@ -26,6 +26,7 @@ First, initialize a Go module and pull in the Pub/Sub client library.
 
 ```bash
 # Initialize the Go module and install the Pub/Sub dependency
+
 go mod init pubsub-demo
 go get cloud.google.com/go/pubsub
 ```

@@ -37,6 +37,7 @@ Before moving a namespace, verify its current project assignment:
 
 ```bash
 # Check which project a namespace belongs to
+
 kubectl get namespace <namespace-name> -o jsonpath='{.metadata.annotations.field\.cattle\.io/projectId}'
 ```
 

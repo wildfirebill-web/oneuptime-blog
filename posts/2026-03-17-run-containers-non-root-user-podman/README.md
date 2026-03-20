@@ -18,6 +18,7 @@ Rootless Podman runs the container runtime itself as a non-root user, but the pr
 
 ```bash
 # Run a container as a specific UID
+
 podman run --rm --user 1000 alpine:latest id
 # Output: uid=1000 gid=0(root)
 

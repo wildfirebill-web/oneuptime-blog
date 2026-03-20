@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Bonding, ARP Monitoring, Linux, Network Reliability, arp_interval, arp_ip_target, IPv4
+Tags: Bonding, ARP Monitoring, Linux, Network Reliability, Arp_interval, Arp_ip_target, IPv4
 
 Description: Learn how to configure ARP monitoring for Linux bond interfaces as an alternative to MII monitoring, enabling faster and more accurate link failure detection at the network layer.
 
@@ -24,6 +24,7 @@ ARP monitoring sends ARP requests to specific targets to detect link failures. U
 
 ```bash
 # /etc/network/interfaces (Debian)
+
 auto bond0
 iface bond0 inet static
   address 10.0.0.10
@@ -106,5 +107,5 @@ ip link set eth0 up
 
 - ARP monitoring detects network-level failures (lost gateway connectivity) that MII monitoring misses.
 - Set `arp_ip_target` to the gateway IP; if the gateway is unreachable, the slave is considered failed.
-- Use multiple ARP targets (`arp_ip_target=10.0.0.1 10.0.0.2`) for redundancy — the slave is failed only if all targets are unreachable.
+- Use multiple ARP targets (`arp_ip_target=10.0.0.1 10.0.0.2`) for redundancy - the slave is failed only if all targets are unreachable.
 - ARP interval of 1000ms (1 second) provides fast detection; set `arp_validate=all` for active/backup validation.

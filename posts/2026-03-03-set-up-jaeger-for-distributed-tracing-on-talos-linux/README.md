@@ -37,6 +37,7 @@ For production use, Jaeger needs a persistent storage backend. Elasticsearch is 
 
 ```bash
 # Add the Elastic Helm repository
+
 helm repo add elastic https://helm.elastic.co
 helm repo update
 ```

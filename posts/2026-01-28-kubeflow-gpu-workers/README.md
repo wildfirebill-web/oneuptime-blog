@@ -60,6 +60,7 @@ Before configuring software, confirm GPU hardware is present:
 
 ```bash
 # Check for NVIDIA GPUs on the node
+
 lspci | grep -i nvidia
 
 # Sample output:

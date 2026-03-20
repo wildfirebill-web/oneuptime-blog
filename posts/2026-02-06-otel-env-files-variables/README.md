@@ -23,6 +23,7 @@ Here are the variables you will use most often:
 
 ```bash
 # Service identification
+
 OTEL_SERVICE_NAME=order-service
 OTEL_RESOURCE_ATTRIBUTES=service.version=1.2.3,deployment.environment=staging
 

@@ -26,6 +26,7 @@ Not all changes carry the same risk. Classify changes to apply appropriate level
 
 ```markdown
 # Low Risk - Standard Process
+
 Examples:
 - Adding or updating resource tags
 - Updating variable descriptions

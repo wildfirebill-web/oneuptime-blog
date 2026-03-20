@@ -23,6 +23,7 @@ parted is the standard tool for managing GPT partitions on RHEL. Unlike fdisk's 
 
 ```bash
 # List all disks and their current partitions
+
 lsblk -o NAME,SIZE,TYPE,FSTYPE,MOUNTPOINT
 
 # Check current partition table (if any)

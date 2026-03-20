@@ -57,6 +57,7 @@ import boto3
 from botocore.exceptions import ClientError
 
 # Create an S3 client
+
 s3 = boto3.client('s3')
 
 # List all buckets in your account

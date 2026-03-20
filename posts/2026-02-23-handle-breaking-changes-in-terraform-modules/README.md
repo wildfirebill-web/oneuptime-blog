@@ -56,6 +56,7 @@ Instead of removing a variable in a single release, deprecate it first:
 
 ```hcl
 # v1.2.0 - Deprecate the old variable
+
 variable "instance_type" {
   description = "DEPRECATED: Use compute_type instead. Will be removed in v2.0.0."
   type        = string

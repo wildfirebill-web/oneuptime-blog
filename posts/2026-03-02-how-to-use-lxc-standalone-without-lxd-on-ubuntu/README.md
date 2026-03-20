@@ -28,6 +28,7 @@ This guide uses the traditional `lxc-*` tools, NOT the LXD `lxc` command:
 
 ```bash
 # Install LXC tools
+
 sudo apt update
 sudo apt install -y lxc lxc-templates
 
@@ -188,7 +189,7 @@ lxc.net.1.flags = up
 lxc.net.1.name = eth1
 ```
 
-## Resource Limits in LXC Config
+Resource Limits in LXC Config
 
 LXC uses cgroup settings directly in the config file:
 

@@ -1,8 +1,8 @@
-# How to Monitor Multi-Cluster Health from Rancher Dashboard
+# How to Monitor Multi-Cluster Health from Rancher Dashboard - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Kubernetes, Monitoring, Dashboard, Multi-Cluster
+Tags: Rancher, Kubernetes, Monitoring, Dashboards, Multi-Cluster
 
 Description: Build a comprehensive multi-cluster health monitoring setup in Rancher using the built-in dashboard, Prometheus, Grafana, and custom alerting to maintain visibility across all clusters.
 
@@ -24,6 +24,7 @@ The Rancher home dashboard provides an at-a-glance view of all clusters:
 
 ```bash
 # Check cluster states via API
+
 curl -sk \
   -H "Authorization: Bearer ${RANCHER_TOKEN}" \
   "https://rancher.example.com/v3/clusters?limit=-1" \
@@ -33,7 +34,7 @@ curl -sk \
 ## Step 2: Install Rancher Monitoring on All Clusters
 
 ```bash
-# Install via Fleet — apply to all clusters
+# Install via Fleet - apply to all clusters
 cat << 'EOF' | kubectl apply -f -
 apiVersion: fleet.cattle.io/v1alpha1
 kind: GitRepo
@@ -264,7 +265,7 @@ receivers:
 
 ```bash
 #!/usr/bin/env bash
-# cluster-health-report.sh — Daily health report across all clusters
+# cluster-health-report.sh - Daily health report across all clusters
 
 RANCHER_URL="https://rancher.example.com"
 TOKEN="${RANCHER_TOKEN}"

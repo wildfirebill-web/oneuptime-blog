@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Testing, tofutest, HCL, Infrastructure as Code, tofu test
+Tags: OpenTofu, Testing, Tofutest, HCL, Infrastructure as Code, Tofu test
 
 Description: Learn how to use OpenTofu's native tofutest framework with HCL test files, including advanced features like setup runs, module overrides, and state-based assertions.
 
 ## Introduction
 
-OpenTofu's testing framework (sometimes called tofutest) uses `.tftest.hcl` files and provides features beyond basic plan assertions — including applying infrastructure, running setup and teardown steps, and validating real resource attributes from state.
+OpenTofu's testing framework (sometimes called tofutest) uses `.tftest.hcl` files and provides features beyond basic plan assertions - including applying infrastructure, running setup and teardown steps, and validating real resource attributes from state.
 
 ## Multi-Run Test Sequences
 
@@ -119,6 +119,7 @@ run "verify_resources_exist" {
 }
 
 # Resources are automatically destroyed after all runs complete
+
 ```
 
 ## Running with Verbose Output

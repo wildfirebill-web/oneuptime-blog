@@ -1,4 +1,4 @@
-# How to Back Up and Restore RKE2 etcd
+# How to Back Up and Restore RKE2 etcd - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -6,7 +6,7 @@ Tags: RKE2, Kubernetes, etcd, Backup, Restore, Disaster Recovery
 
 Description: A comprehensive guide to backing up and restoring RKE2's embedded etcd, including S3 integration and disaster recovery procedures.
 
-etcd is the backing store for all Kubernetes cluster state. Regularly backing up etcd is critical for disaster recovery — if etcd data is lost without a backup, your entire cluster state (deployments, services, configs, etc.) is gone. RKE2 provides built-in tools for etcd backup and restore. This guide covers the complete backup and restore procedures.
+etcd is the backing store for all Kubernetes cluster state. Regularly backing up etcd is critical for disaster recovery - if etcd data is lost without a backup, your entire cluster state (deployments, services, configs, etc.) is gone. RKE2 provides built-in tools for etcd backup and restore. This guide covers the complete backup and restore procedures.
 
 ## Prerequisites
 
@@ -24,6 +24,7 @@ RKE2 creates etcd snapshots as files that capture the complete cluster state at 
 
 ```yaml
 # /etc/rancher/rke2/config.yaml - Automatic snapshot configuration
+
 # Enable periodic snapshots (on by default)
 etcd-snapshot-schedule-cron: "0 */6 * * *"   # Every 6 hours
 
@@ -229,4 +230,4 @@ chmod +x /etc/cron.weekly/verify-etcd-backup
 
 ## Conclusion
 
-Regular etcd backups are a non-negotiable requirement for production Kubernetes clusters. RKE2's built-in snapshot capabilities, combined with S3 storage for off-site backups, provide a robust disaster recovery foundation. Always test your restore procedure before you need it — discovering issues during an actual disaster is far more costly. Aim for a Recovery Time Objective (RTO) of under 30 minutes by practicing restore procedures in a test environment.
+Regular etcd backups are a non-negotiable requirement for production Kubernetes clusters. RKE2's built-in snapshot capabilities, combined with S3 storage for off-site backups, provide a robust disaster recovery foundation. Always test your restore procedure before you need it - discovering issues during an actual disaster is far more costly. Aim for a Recovery Time Objective (RTO) of under 30 minutes by practicing restore procedures in a test environment.

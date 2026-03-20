@@ -30,6 +30,7 @@ Deploy test workloads across both Kubernetes and OpenStack.
 
 ```bash
 # Create an OpenStack VM for VM-to-pod testing
+
 openstack server create --project kuryr-test \
   --flavor m1.small --image ubuntu-22.04 \
   --network shared-network \

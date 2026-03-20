@@ -38,6 +38,7 @@ To register a custom resource, patch the node's status. Here's how to add 4 unit
 
 ```bash
 # Register 4 FPGA cards on node worker-1
+
 kubectl proxy &
 PROXY_PID=$!
 

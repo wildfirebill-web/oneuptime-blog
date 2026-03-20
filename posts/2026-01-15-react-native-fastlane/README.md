@@ -45,6 +45,7 @@ Before we begin, ensure you have the following installed:
 
 ```bash
 # Install Xcode Command Line Tools
+
 xcode-select --install
 
 # Install Ruby (if not using system Ruby)

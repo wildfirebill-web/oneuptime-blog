@@ -8,12 +8,13 @@ Description: Use networkctl to view network interface status, IP addresses, DNS 
 
 ## Introduction
 
-`networkctl` is the management tool for systemd-networkd. It provides detailed per-interface status including IP addresses, gateways, DNS servers, DHCP lease information, and operational/setup state — all in a single command.
+`networkctl` is the management tool for systemd-networkd. It provides detailed per-interface status including IP addresses, gateways, DNS servers, DHCP lease information, and operational/setup state - all in a single command.
 
 ## List All Network Interfaces
 
 ```bash
 # Summary of all interfaces
+
 networkctl list
 
 # Example output:

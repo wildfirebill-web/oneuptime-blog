@@ -31,6 +31,7 @@ The OpenTelemetry Collector has a built-in Jaeger remote sampling extension that
 
 ```yaml
 # collector-config.yaml
+
 # OpenTelemetry Collector with Jaeger remote sampling extension
 
 extensions:

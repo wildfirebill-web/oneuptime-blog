@@ -29,6 +29,7 @@ Here is how to configure Ansible to use `su` at different levels.
 
 ```ini
 # ansible.cfg
+
 [privilege_escalation]
 become = true
 become_method = su

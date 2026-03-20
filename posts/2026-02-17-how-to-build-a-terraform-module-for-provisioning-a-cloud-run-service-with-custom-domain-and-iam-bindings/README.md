@@ -32,6 +32,7 @@ Start with the version constraints.
 
 ```hcl
 # versions.tf - Provider and Terraform version constraints
+
 terraform {
   required_version = ">= 1.5"
 

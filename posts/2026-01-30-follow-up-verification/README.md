@@ -206,6 +206,7 @@ def create_standard_checklist(incident_id: str, incident_type: str) -> Verificat
 
 
 # Example usage
+
 checklist = create_standard_checklist("INC-2024-001", "outage")
 print(f"Created checklist with {len(checklist.items)} verification items")
 

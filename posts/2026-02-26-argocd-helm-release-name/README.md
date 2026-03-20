@@ -82,6 +82,7 @@ Many Helm charts use `.Release.Name` in resource names:
 
 ```yaml
 # Chart template example
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

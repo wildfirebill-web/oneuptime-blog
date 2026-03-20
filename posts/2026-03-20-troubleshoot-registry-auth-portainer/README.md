@@ -1,4 +1,4 @@
-# How to Troubleshoot Registry Authentication Issues in Portainer
+# How to Troubleshoot Registry Authentication Issues in Portainer (2)
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -22,6 +22,7 @@ Before debugging Portainer, verify the credentials work directly:
 
 ```bash
 # Test Docker Hub login
+
 docker login docker.io -u myuser -p mypassword
 
 # Test a custom registry

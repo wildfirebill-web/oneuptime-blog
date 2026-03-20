@@ -8,7 +8,7 @@ Description: Learn how to design a reusable Lambda serverless module for OpenTof
 
 ## Introduction
 
-A serverless module should handle Lambda function creation, IAM execution roles, CloudWatch log groups, optional VPC placement, and optional API Gateway integration — letting application teams focus on their function code rather than infrastructure configuration.
+A serverless module should handle Lambda function creation, IAM execution roles, CloudWatch log groups, optional VPC placement, and optional API Gateway integration - letting application teams focus on their function code rather than infrastructure configuration.
 
 ## variables.tf
 

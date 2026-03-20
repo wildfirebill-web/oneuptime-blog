@@ -28,6 +28,7 @@ Session consistency costs the same as eventual consistency in terms of RUs but g
 
 ```bash
 # Create a Cosmos DB account with multiple write regions
+
 az cosmosdb create \
   --name global-app-db \
   --resource-group global-rg \

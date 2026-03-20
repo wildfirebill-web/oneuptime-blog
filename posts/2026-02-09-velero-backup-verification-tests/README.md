@@ -100,6 +100,7 @@ echo "Test Namespace: $TEST_NAMESPACE"
 echo "=========================================="
 
 # Step 1: Verify backup exists and is complete
+
 echo "Step 1: Checking backup status..."
 BACKUP_STATUS=$(velero backup get $BACKUP_NAME -o json | jq -r '.status.phase')
 

@@ -29,6 +29,7 @@ The simplest way to run Redis in Docker:
 
 ```bash
 # Run Redis with default settings
+
 docker run --name my-redis -d redis:7
 
 # Verify it is running

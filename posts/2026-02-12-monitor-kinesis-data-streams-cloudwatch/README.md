@@ -23,6 +23,7 @@ For production workloads, enhanced metrics are worth the cost. Enable them:
 
 ```bash
 # Enable enhanced monitoring for shard-level metrics
+
 aws kinesis enable-enhanced-monitoring \
     --stream-name "orders-stream" \
     --shard-level-metrics ALL

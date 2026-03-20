@@ -20,6 +20,7 @@ WPScan is written in Ruby and can be installed as a gem or via Docker:
 
 ```bash
 # Install Ruby and build dependencies
+
 sudo apt update
 sudo apt install ruby ruby-dev ruby-bundler build-essential curl -y
 

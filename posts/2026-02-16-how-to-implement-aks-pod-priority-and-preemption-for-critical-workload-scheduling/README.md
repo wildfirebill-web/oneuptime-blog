@@ -39,6 +39,7 @@ Here is a practical set of PriorityClasses that covers most use cases:
 
 ```yaml
 # priority-classes.yaml
+
 # Defines a hierarchy of priority levels for different workload types
 
 # System-critical workloads (monitoring, logging, networking)

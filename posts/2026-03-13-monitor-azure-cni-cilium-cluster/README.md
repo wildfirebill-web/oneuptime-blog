@@ -33,6 +33,7 @@ Check the Cilium installation status and verify Azure CNI integration:
 
 ```bash
 # Check overall Cilium status
+
 cilium status --wait
 
 # Verify Cilium is operating in Azure CNI mode

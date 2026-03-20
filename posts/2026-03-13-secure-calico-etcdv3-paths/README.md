@@ -32,6 +32,7 @@ Each Calico component should only be able to write to the paths it actually need
 
 ```bash
 # Verify Felix cannot write to policy paths
+
 etcdctl --cert=calico-felix.crt --key=calico-felix.key \
   put /calico/v1/policy/test "value"
 # Should fail: permission denied

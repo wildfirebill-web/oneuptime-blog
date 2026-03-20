@@ -1,4 +1,4 @@
-# How to Troubleshoot VM Boot Issues in Harvester
+# How to Troubleshoot VM Boot Issues in Harvester - Issues
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -16,6 +16,7 @@ VMs in Harvester may fail to boot due to misconfigured cloud-init, invalid disk 
 
 ```bash
 # List all VMs and their status
+
 kubectl get vm -A
 
 # Get detailed VM status

@@ -24,7 +24,7 @@ In Portainer → Settings → Authentication → LDAP:
 
 ### For OpenLDAP (groupOfNames)
 
-```
+```text
 Group Base DN:            ou=groups,dc=example,dc=com
 Group Membership Attr:    member
 Group Filter:             (objectClass=groupOfNames)
@@ -32,7 +32,7 @@ Group Filter:             (objectClass=groupOfNames)
 
 ### For OpenLDAP (posixGroup)
 
-```
+```text
 Group Base DN:            ou=groups,dc=example,dc=com
 Group Membership Attr:    memberUid
 Group Filter:             (objectClass=posixGroup)
@@ -42,7 +42,7 @@ Note: `memberUid` contains plain usernames, while `member` contains full DNs. Po
 
 ### For Active Directory
 
-```
+```text
 Group Base DN:            ou=groups,dc=corp,dc=example,dc=com
 Group Membership Attr:    memberOf
 Group Filter:             (objectClass=group)
@@ -50,7 +50,7 @@ Group Filter:             (objectClass=group)
 
 For AD, the `memberOf` attribute is on the user object (not the group), so Portainer looks it up differently. Use:
 
-```
+```text
 Group Attribute:          memberOf (AD user attribute)
 ```
 
@@ -129,6 +129,7 @@ ldapsearch -x \
 
 ```bash
 # Verify a user's group membership
+
 ldapsearch -x \
   -H ldap://ldap.example.com:389 \
   -D "cn=portainer-bind,dc=example,dc=com" \

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: HAProxy, Stats, Monitoring, IPv4, Access Control, Dashboard
+Tags: HAProxy, Stats, Monitoring, IPv4, Access Control, Dashboards
 
 Description: Configure the HAProxy statistics dashboard with access restricted to specific IPv4 addresses, enabling real-time monitoring of backend health and traffic metrics.
 
@@ -16,6 +16,7 @@ HAProxy's built-in stats page provides real-time visibility into frontend and ba
 # /etc/haproxy/haproxy.cfg
 
 # Dedicated frontend for stats (on management IP)
+
 frontend stats
     # Bind to internal management IPv4 only
     bind 10.0.0.1:8404

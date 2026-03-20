@@ -56,6 +56,7 @@ A single shared instance uses Projects and RBAC to provide isolation between tea
 
 ```yaml
 # Project for Team A - restricts what they can deploy and where
+
 apiVersion: argoproj.io/v1alpha1
 kind: AppProject
 metadata:

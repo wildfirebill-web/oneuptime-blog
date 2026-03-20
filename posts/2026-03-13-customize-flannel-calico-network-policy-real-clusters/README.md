@@ -20,6 +20,7 @@ Edit the Canal manifest before applying to set the correct pod CIDR for your env
 curl -O https://raw.githubusercontent.com/projectcalico/calico/v3.27.0/manifests/canal.yaml
 
 # Set your pod CIDR
+
 export POD_CIDR="192.168.0.0/16"
 sed -i "s|10.244.0.0/16|$POD_CIDR|g" canal.yaml
 kubectl apply -f canal.yaml

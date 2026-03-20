@@ -1,4 +1,4 @@
-# How to Use tofu init to Initialize a Project
+# How to Use tofu init to Initialize a Project - Tofu Initialize Project
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -14,6 +14,7 @@ Description: Learn how to use the tofu init command to initialize an OpenTofu pr
 
 ```bash
 # Initialize an OpenTofu project
+
 tofu init
 
 # Expected output:
@@ -35,7 +36,7 @@ tofu init
 
 ## Project Structure After Init
 
-```
+```text
 project/
 ├── main.tf
 ├── variables.tf

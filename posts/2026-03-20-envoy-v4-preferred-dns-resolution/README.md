@@ -26,6 +26,7 @@ The `dns_lookup_family` field is set in the cluster's configuration.
 
 ```yaml
 # envoy-config.yaml
+
 static_resources:
   clusters:
     - name: my_backend

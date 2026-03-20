@@ -48,6 +48,7 @@ Temporal aggregation transforms raw samples into time-windowed summaries. The ke
 
 ```promql
 # Raw counter (cumulative, resets on restart)
+
 http_requests_total{service="api", status="200"}
 
 # Per-second request rate over 5 minutes

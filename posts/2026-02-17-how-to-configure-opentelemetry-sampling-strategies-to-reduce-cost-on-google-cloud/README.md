@@ -30,6 +30,7 @@ The simplest approach samples a fixed percentage of traces:
 
 ```python
 # Python: Configure a probability-based sampler
+
 from opentelemetry import trace
 from opentelemetry.sdk.trace import TracerProvider
 from opentelemetry.sdk.trace.sampling import TraceIdRatioBased

@@ -1,14 +1,14 @@
-# How to Organize Environments with Groups in Portainer
+# How to Organize Environments with Groups in Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Environments, Groups, Organization, Management
+Tags: Portainer, Environments, Groups, Organizations, Management
 
 Description: Create and use environment groups in Portainer to logically organize multiple environments for better navigation and bulk access control management.
 
 ## Introduction
 
-As your Portainer installation grows to manage multiple environments, the environment list can become unwieldy. Environment Groups let you organize environments into logical categories — by stage (dev/staging/prod), region, team, or project. This guide covers creating and managing environment groups.
+As your Portainer installation grows to manage multiple environments, the environment list can become unwieldy. Environment Groups let you organize environments into logical categories - by stage (dev/staging/prod), region, team, or project. This guide covers creating and managing environment groups.
 
 ## Creating Groups via Web UI
 
@@ -31,6 +31,7 @@ TOKEN=$(curl -s -X POST \
   | python3 -c "import sys,json; print(json.load(sys.stdin)['jwt'])")
 
 # Create a group with environments
+
 curl -X POST \
   -H "Authorization: Bearer $TOKEN" \
   -H "Content-Type: application/json" \
@@ -86,7 +87,7 @@ curl -X DELETE \
 
 ### By Stage
 
-```
+```text
 Groups:
 ├── Production (envs: prod-us, prod-eu, prod-ap)
 ├── Staging (envs: staging-us, staging-eu)
@@ -95,7 +96,7 @@ Groups:
 
 ### By Region
 
-```
+```text
 Groups:
 ├── US (envs: us-east-prod, us-east-staging, us-west-prod)
 ├── Europe (envs: eu-west-prod, eu-central-staging)
@@ -104,7 +105,7 @@ Groups:
 
 ### By Team
 
-```
+```text
 Groups:
 ├── Platform Team (all environments)
 ├── Backend Team (backend-dev, backend-staging, backend-prod)
@@ -142,4 +143,4 @@ done
 
 ## Conclusion
 
-Environment groups are a simple but powerful organizational feature in Portainer. They don't just provide visual organization — they also serve as the basis for bulk access control assignments. Invest time in defining a good group structure early, as it determines how intuitively your team navigates a large Portainer installation. The most common and useful structure is organizing by deployment stage (dev/staging/prod).
+Environment groups are a simple but powerful organizational feature in Portainer. They don't just provide visual organization - they also serve as the basis for bulk access control assignments. Invest time in defining a good group structure early, as it determines how intuitively your team navigates a large Portainer installation. The most common and useful structure is organizing by deployment stage (dev/staging/prod).

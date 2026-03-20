@@ -26,6 +26,7 @@ Ed25519 is the modern, secure choice:
 
 ```bash
 # Generate Ed25519 key pair
+
 ssh-keygen -t ed25519 -C "your_email@example.com"
 ```
 

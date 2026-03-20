@@ -47,6 +47,7 @@ First, launch an instance with Nitro Enclave support enabled:
 
 ```bash
 # Launch an instance with Nitro Enclave support
+
 aws ec2 run-instances \
   --image-id ami-0abc123 \
   --instance-type m5.2xlarge \

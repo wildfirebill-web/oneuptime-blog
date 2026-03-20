@@ -37,7 +37,7 @@ provider "linode" {
 resource "linode_instance" "portainer" {
   label      = "portainer"
   region     = "us-east"
-  type       = "g6-nanode-1"  # 1 vCPU, 1 GB RAM — ~$5/month
+  type       = "g6-nanode-1"  # 1 vCPU, 1 GB RAM - ~$5/month
   image      = "linode/ubuntu22.04"
 
   authorized_keys = [file("~/.ssh/id_rsa.pub")]

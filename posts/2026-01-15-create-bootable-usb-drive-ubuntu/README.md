@@ -49,6 +49,7 @@ Before starting, ensure you have:
 
 ```bash
 # Check available USB devices
+
 # This command lists all block devices with their sizes and mount points
 lsblk
 

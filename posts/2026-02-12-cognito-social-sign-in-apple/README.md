@@ -91,6 +91,7 @@ Using Terraform:
 
 ```hcl
 # Apple identity provider
+
 resource "aws_cognito_identity_provider" "apple" {
   user_pool_id  = aws_cognito_user_pool.main.id
   provider_name = "SignInWithApple"

@@ -40,6 +40,7 @@ First, set up SCC to publish finding notifications to Pub/Sub.
 
 ```bash
 # Create a Pub/Sub topic for SCC notifications
+
 gcloud pubsub topics create scc-findings-topic \
   --project=my-project
 

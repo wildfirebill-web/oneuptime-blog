@@ -26,6 +26,7 @@ This playbook loads required kernel modules and makes them persistent:
 
 ```yaml
 # manage-kernel-modules.yml - Load and configure kernel modules
+
 ---
 - name: Manage Kernel Modules
   hosts: all

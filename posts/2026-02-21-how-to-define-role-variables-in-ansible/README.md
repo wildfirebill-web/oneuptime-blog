@@ -63,6 +63,7 @@ Here is a concrete example. Consider a PostgreSQL role:
 
 ```yaml
 # roles/postgresql/defaults/main.yml
+
 # Consumer-facing configuration - override these freely
 ---
 postgresql_version: "15"

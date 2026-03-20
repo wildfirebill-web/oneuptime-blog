@@ -28,6 +28,7 @@ Start by looking at the push timing metrics:
 
 ```promql
 # P50 push convergence time
+
 histogram_quantile(0.50, sum(rate(pilot_proxy_convergence_time_bucket[5m])) by (le))
 
 # P99 push convergence time

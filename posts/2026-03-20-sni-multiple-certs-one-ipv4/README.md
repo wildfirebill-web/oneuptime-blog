@@ -30,6 +30,7 @@ Create separate server blocks for each hostname:
 
 ```nginx
 # /etc/nginx/conf.d/api.example.com.conf
+
 server {
     listen 443 ssl;
     server_name api.example.com;
@@ -138,7 +139,7 @@ server {
 }
 ```
 
-Nginx 1.11.0+ supports multiple ssl_certificate directives—the client negotiates which to use.
+Nginx 1.11.0+ supports multiple ssl_certificate directives-the client negotiates which to use.
 
 ## Step 5: Verify SNI Is Working
 

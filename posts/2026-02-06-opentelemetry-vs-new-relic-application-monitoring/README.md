@@ -199,6 +199,7 @@ It is worth noting that New Relic has embraced OpenTelemetry as a data source. Y
 
 ```yaml
 # OTel Collector config to send data to New Relic
+
 exporters:
   otlphttp:
     endpoint: https://otlp.nr-data.net

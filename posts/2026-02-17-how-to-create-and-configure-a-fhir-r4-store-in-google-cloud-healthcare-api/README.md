@@ -31,6 +31,7 @@ The Healthcare API is not just a database - it is a complete FHIR server that:
 
 ```bash
 # Enable the Healthcare API
+
 gcloud services enable healthcare.googleapis.com
 
 # Install the client library

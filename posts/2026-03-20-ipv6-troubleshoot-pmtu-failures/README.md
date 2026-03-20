@@ -12,7 +12,7 @@ PMTU black holes occur when ICMPv6 Packet Too Big messages are blocked somewhere
 
 ## Recognizing PMTU Failure Symptoms
 
-```
+```text
 Classic PMTU black hole symptoms:
 
 1. TCP connections establish successfully (SYN is small)
@@ -32,6 +32,7 @@ Key test: ping6 -s 1452 destination
 
 ```bash
 # Step 1: Verify the connection works with small packets
+
 ping6 -s 8 2001:db8::server   # 8-byte payload (tiny packet)
 # Should succeed
 
@@ -49,7 +50,7 @@ ip -6 route show cache | grep mtu
 
 # Step 5: Tracepath to discover path MTUs along the route
 tracepath6 2001:db8::server
-# Shows MTU at each hop — identifies the bottleneck
+# Shows MTU at each hop - identifies the bottleneck
 
 # Step 6: Use mtr for continuous path analysis
 mtr -6 --report 2001:db8::server
@@ -154,4 +155,4 @@ for key, value in result.items():
 
 ## Conclusion
 
-IPv6 PMTU failures manifest as connections that work for small data but fail for large transfers. The root cause is almost always ICMPv6 Packet Too Big messages being blocked by a firewall. The fix is to allow ICMPv6 type 2 messages through all firewalls. When changing firewall rules is not feasible, TCP MSS clamping provides a workaround that prevents the problem at the TCP layer. Always use `tracepath6` as the first diagnostic tool — it reveals the MTU at each hop and immediately shows where the path bottleneck exists.
+IPv6 PMTU failures manifest as connections that work for small data but fail for large transfers. The root cause is almost always ICMPv6 Packet Too Big messages being blocked by a firewall. The fix is to allow ICMPv6 type 2 messages through all firewalls. When changing firewall rules is not feasible, TCP MSS clamping provides a workaround that prevents the problem at the TCP layer. Always use `tracepath6` as the first diagnostic tool - it reveals the MTU at each hop and immediately shows where the path bottleneck exists.

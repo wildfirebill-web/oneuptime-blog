@@ -19,14 +19,14 @@ Kubernetes runs system workloads in namespaces like `kube-system`, `kube-public`
 
 Kubernetes uses several reserved namespaces for system components:
 
-```
-kube-system       — Core Kubernetes components (kube-dns, kube-proxy, metrics-server)
-kube-public       — Publicly readable cluster information
-kube-node-lease   — Node heartbeat lease objects
-portainer         — Portainer's own agent and namespace
-ingress-nginx     — Nginx Ingress Controller (if installed)
-cert-manager      — Certificate manager (if installed)
-monitoring        — Prometheus/Grafana stack (if installed)
+```text
+kube-system       - Core Kubernetes components (kube-dns, kube-proxy, metrics-server)
+kube-public       - Publicly readable cluster information
+kube-node-lease   - Node heartbeat lease objects
+portainer         - Portainer's own agent and namespace
+ingress-nginx     - Nginx Ingress Controller (if installed)
+cert-manager      - Certificate manager (if installed)
+monitoring        - Prometheus/Grafana stack (if installed)
 ```
 
 ## Step 1: Show System Namespaces in Portainer
@@ -48,6 +48,7 @@ When troubleshooting, access system namespaces directly via kubectl:
 
 ```bash
 # View all system pods
+
 kubectl get pods -n kube-system
 
 # Common system components:
@@ -77,8 +78,8 @@ For admin users who regularly need system resource access:
 1. Go to **Settings** → **Kubernetes** settings for the environment
 2. Find the **System resource visibility** option
 3. Choose a default visibility setting:
-   - **Hidden** (default) — System namespaces not shown in namespace picker
-   - **Visible** — Always show system namespaces
+   - **Hidden** (default) - System namespaces not shown in namespace picker
+   - **Visible** - Always show system namespaces
 
 This setting persists for the environment and applies to all users with admin access.
 
@@ -89,11 +90,11 @@ Once system namespaces are visible:
 1. Select `kube-system` from the namespace dropdown
 2. Navigate to **Applications** to see system workloads:
 
-```
-kube-dns / coredns       — Cluster DNS resolution
-kube-proxy               — Network rules on each node
-metrics-server           — Resource metrics for HPA
-calico / flannel / cilium — CNI network plugin
+```text
+kube-dns / coredns       - Cluster DNS resolution
+kube-proxy               - Network rules on each node
+metrics-server           - Resource metrics for HPA
+calico / flannel / cilium - CNI network plugin
 ```
 
 3. You can view logs and resource usage, but exercise caution when modifying system resources
@@ -170,4 +171,4 @@ kubectl get events -n kube-system --field-selector type=Warning
 
 ## Conclusion
 
-System resource visibility in Portainer is hidden by default to protect critical cluster components and keep the interface clean for application developers. Administrators can toggle visibility when troubleshooting cluster-level issues. Use this feature judiciously — inspect system resources when needed, but avoid making changes to system namespaces unless you understand the full impact. For Portainer BE deployments, access control ensures non-admin users never accidentally interact with system resources.
+System resource visibility in Portainer is hidden by default to protect critical cluster components and keep the interface clean for application developers. Administrators can toggle visibility when troubleshooting cluster-level issues. Use this feature judiciously - inspect system resources when needed, but avoid making changes to system namespaces unless you understand the full impact. For Portainer BE deployments, access control ensures non-admin users never accidentally interact with system resources.

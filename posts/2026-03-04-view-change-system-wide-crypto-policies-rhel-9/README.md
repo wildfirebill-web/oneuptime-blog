@@ -34,6 +34,7 @@ When you set a crypto policy, it automatically configures all these libraries to
 
 ```bash
 # Show the current active policy
+
 update-crypto-policies --show
 # Output: DEFAULT
 

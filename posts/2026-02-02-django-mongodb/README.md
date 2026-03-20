@@ -62,6 +62,7 @@ Configure your Django settings to use Djongo as the database engine. Replace the
 
 ```python
 # settings.py
+
 DATABASES = {
     'default': {
         'ENGINE': 'djongo',

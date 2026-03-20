@@ -139,6 +139,7 @@ By default, unprivileged users cannot bind to ports below 1024. If you try, you 
 ```bash
 podman run -d -p 80:80 docker.io/library/nginx:latest
 # Error: rootlessport cannot expose privileged port 80
+
 ```
 
 Fix this by lowering the unprivileged port start:

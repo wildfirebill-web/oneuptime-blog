@@ -75,6 +75,7 @@ The same interface in Python:
 
 ```python
 # Python implementation of the TextMapPropagator interface
+
 # All custom propagators inherit from this base class
 
 from abc import ABC, abstractmethod

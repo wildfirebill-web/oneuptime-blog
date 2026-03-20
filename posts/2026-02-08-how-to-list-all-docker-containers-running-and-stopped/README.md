@@ -18,6 +18,7 @@ The default `docker ps` command shows only running containers.
 
 ```bash
 # List all currently running containers
+
 docker ps
 ```
 

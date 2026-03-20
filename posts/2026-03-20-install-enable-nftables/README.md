@@ -12,6 +12,7 @@ nftables is the modern replacement for iptables, ip6tables, arptables, and ebtab
 
 ```bash
 # Debian/Ubuntu
+
 sudo apt install nftables -y
 
 # RHEL/CentOS 7
@@ -54,7 +55,7 @@ sudo iptables -L
 
 ## nftables vs iptables Conceptual Mapping
 
-```
+```yaml
 iptables Concept       nftables Equivalent
 --------------------   -----------------------------------------
 Table (filter, nat)    table inet/ip/ip6 <name>
@@ -134,7 +135,7 @@ sudo systemctl start nftables
 
 ```bash
 # On modern kernels, both iptables and nftables use nf_tables
-# Don't use both simultaneously — pick one
+# Don't use both simultaneously - pick one
 
 # Check which tool manages current rules
 sudo iptables -L | head -5
@@ -145,4 +146,4 @@ iptables-translate -A INPUT -p tcp --dport 22 -j ACCEPT
 # Output: nft add rule ip filter INPUT tcp dport 22 accept
 ```
 
-nftables is the future of Linux packet filtering — it's already the default on Debian 10+, RHEL 8+, and Ubuntu 20.04+, making it the right tool to learn for any new deployment.
+nftables is the future of Linux packet filtering - it's already the default on Debian 10+, RHEL 8+, and Ubuntu 20.04+, making it the right tool to learn for any new deployment.

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Chef, IPv6, Cookbooks, Supermarket, Configuration Management, Automation
+Tags: Chef, IPv6, Cookbook, Supermarket, Configuration Management, Automation
 
 Description: A guide to using Chef Supermarket cookbooks for IPv6 configuration, including the sysctl, firewall, and network cookbooks for standardized IPv6 deployment.
 
@@ -31,6 +31,7 @@ cookbook 'network_interfaces_v2', '~> 2.2'
 
 ```bash
 # Install all cookbooks
+
 berks install
 berks upload
 ```

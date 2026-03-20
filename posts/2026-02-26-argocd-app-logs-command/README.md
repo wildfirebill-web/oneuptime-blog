@@ -14,6 +14,7 @@ One of the most useful but underutilized ArgoCD CLI features is the ability to s
 
 ```bash
 # Stream logs from all pods in an application
+
 argocd app logs my-app
 ```
 

@@ -32,6 +32,7 @@ Continuous compliance monitoring requires running CIS scans regularly, not just 
 
 ```yaml
 # daily-cis-scan.yaml - Run CIS scan daily at midnight
+
 apiVersion: cis.cattle.io/v1
 kind: ClusterScan
 metadata:

@@ -32,6 +32,7 @@ Istio's default installation includes Prometheus integration. Make sure your Ist
 
 ```bash
 # Check if Prometheus is scraping Istio metrics
+
 kubectl get servicemonitor -n istio-system
 
 # Verify Envoy is exposing stats

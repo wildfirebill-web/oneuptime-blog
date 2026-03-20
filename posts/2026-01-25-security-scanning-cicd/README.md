@@ -70,6 +70,7 @@ Configure Semgrep for static code analysis:
 
 ```yaml
 # .github/workflows/sast.yaml
+
 name: SAST Analysis
 
 on:

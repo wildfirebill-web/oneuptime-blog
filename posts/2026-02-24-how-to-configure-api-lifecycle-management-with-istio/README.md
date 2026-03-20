@@ -296,6 +296,7 @@ Use GitOps to manage lifecycle transitions. Store your VirtualService configurat
 ```bash
 git checkout -b deprecate-v1
 # Edit the VirtualService YAML to add deprecation headers
+
 git commit -am "Deprecate API v1 payments endpoint"
 git push origin deprecate-v1
 # Create PR for review

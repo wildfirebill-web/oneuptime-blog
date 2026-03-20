@@ -31,6 +31,7 @@ Verify the kernel variant on each node:
 
 ```bash
 # List all nodes with their kernel version
+
 oc get nodes -o jsonpath='{range .items[*]}{.metadata.name}{"\t"}{.status.nodeInfo.kernelVersion}{"\n"}{end}'
 
 # Check if any node uses the RT kernel (contains "rt" in the version string)

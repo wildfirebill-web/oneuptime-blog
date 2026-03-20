@@ -28,6 +28,7 @@ The simplest time to add SANs is when generating your initial cluster configurat
 
 ```bash
 # Generate configs with additional SANs for the load balancer
+
 talosctl gen config my-cluster https://lb.example.com:6443 \
     --additional-sans lb.example.com \
     --additional-sans 10.0.1.100 \

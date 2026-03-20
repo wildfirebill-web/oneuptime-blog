@@ -33,6 +33,7 @@ Scale controller resources based on cluster size:
 
 ```yaml
 # Large cluster controller configuration (>100 nodes)
+
 controller:
   replicas: 3  # Always run 3 for HA
   resources:

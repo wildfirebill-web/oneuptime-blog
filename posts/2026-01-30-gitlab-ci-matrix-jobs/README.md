@@ -31,6 +31,7 @@ Here is a simple example that tests a Node.js application against three differen
 
 ```yaml
 # .gitlab-ci.yml
+
 # Basic matrix job that runs tests against Node.js 18, 20, and 22
 
 test:

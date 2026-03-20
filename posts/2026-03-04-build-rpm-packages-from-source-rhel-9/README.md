@@ -18,6 +18,7 @@ Never build RPMs as root. Ever. A buggy spec file running as root can do serious
 
 ```bash
 # Install the core RPM build tools
+
 sudo dnf install -y rpm-build rpmdevtools
 
 # Install development tools for compiling source code

@@ -22,6 +22,7 @@ Docker and Docker Compose are required. Baserow needs at least 2 GB of RAM for c
 
 ```bash
 # Verify Docker installation
+
 docker --version
 docker compose version
 ```

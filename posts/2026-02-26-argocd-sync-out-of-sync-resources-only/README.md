@@ -73,6 +73,7 @@ You can enable this option during a manual sync operation.
 
 ```bash
 # Sync only out-of-sync resources
+
 argocd app sync my-app --apply-out-of-sync-only
 
 # Combine with other sync options

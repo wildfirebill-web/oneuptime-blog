@@ -43,6 +43,7 @@ Persistent Disks are the standard storage for VMs. Every Compute Engine instance
 
 ```bash
 # Create a high-performance SSD persistent disk
+
 gcloud compute disks create my-ssd-disk \
     --size=500GB \
     --type=pd-ssd \

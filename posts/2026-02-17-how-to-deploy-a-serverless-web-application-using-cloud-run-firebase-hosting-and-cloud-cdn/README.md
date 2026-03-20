@@ -89,6 +89,7 @@ Create a Dockerfile:
 
 ```dockerfile
 # Dockerfile for the API backend
+
 FROM node:20-slim
 
 WORKDIR /app

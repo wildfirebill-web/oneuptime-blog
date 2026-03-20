@@ -18,6 +18,7 @@ First, add the provider to your Terraform configuration.
 
 ```hcl
 # versions.tf
+
 terraform {
   required_version = ">= 1.5.0"
 

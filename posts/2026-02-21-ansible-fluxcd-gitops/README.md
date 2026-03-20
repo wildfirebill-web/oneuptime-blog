@@ -25,6 +25,7 @@ graph LR
 
 ```yaml
 # roles/fluxcd_bootstrap/tasks/main.yml
+
 # Bootstrap FluxCD on a Kubernetes cluster
 ---
 - name: Install Flux CLI

@@ -10,7 +10,7 @@ Description: Understand the DHCPv6 RELAY-FORW and RELAY-REPL message format incl
 
 DHCPv6 relay messages (RELAY-FORW and RELAY-REPL) have a distinct format from client messages, defined in RFC 8415:
 
-```
+```text
  0                   1                   2                   3
  0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
 +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
@@ -50,6 +50,7 @@ DHCPv6 relay messages (RELAY-FORW and RELAY-REPL) have a distinct format from cl
 
 ```bash
 # Decode RELAY-FORW messages
+
 tshark -i eth0 -f 'udp port 547' \
     -Y 'dhcpv6.msgtype == 12' \
     -V 2>/dev/null
@@ -104,7 +105,7 @@ def analyze_dhcpv6_relay(pcap_file):
 
 When a RELAY-FORW passes through a second relay, it is encapsulated again:
 
-```
+```text
 Outer RELAY-FORW:
   hop-count: 1
   link-address: 2001:db8:2::1  (Relay2's address)
@@ -147,4 +148,4 @@ tshark -i eth0 -f 'udp port 547' \
 
 ## Conclusion
 
-RELAY-FORW (type 12) encapsulates client messages and adds relay context: `link-address` (relay's client-facing IP), `peer-address` (client's address), and options like Interface-ID (18) and Remote-ID (37). Multiple relay hops nest relay messages inside Option 9, incrementing `hop-count` at each hop. The maximum hop count is 32 — packets exceeding this are dropped to prevent loops. Understanding the message format is essential for server-side classification and debugging relay chains.
+RELAY-FORW (type 12) encapsulates client messages and adds relay context: `link-address` (relay's client-facing IP), `peer-address` (client's address), and options like Interface-ID (18) and Remote-ID (37). Multiple relay hops nest relay messages inside Option 9, incrementing `hop-count` at each hop. The maximum hop count is 32 - packets exceeding this are dropped to prevent loops. Understanding the message format is essential for server-side classification and debugging relay chains.

@@ -24,6 +24,7 @@ IPsec uses ESP (IP Protocol 50) which doesn't have ports, making PAT impossible.
 
 ```bash
 # Linux: Allow IPsec through NAT
+
 iptables -A INPUT -p udp --dport 500 -j ACCEPT   # IKE
 iptables -A INPUT -p udp --dport 4500 -j ACCEPT  # NAT-T
 iptables -A INPUT -p esp -j ACCEPT               # ESP (for non-NAT path)
@@ -53,7 +54,7 @@ iptables -A FORWARD -p udp -d 192.168.1.10 --dport 4500 -j ACCEPT
 OpenVPN (UDP 1194) passes through NAT naturally. Just ensure:
 
 ```bash
-# For OpenVPN client behind NAT — usually just works
+# For OpenVPN client behind NAT - usually just works
 # For OpenVPN server behind NAT, forward port 1194:
 iptables -t nat -A PREROUTING -i eth1 -p udp --dport 1194 \
     -j DNAT --to-destination 192.168.1.10:1194

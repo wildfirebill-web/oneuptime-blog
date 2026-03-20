@@ -102,6 +102,7 @@ Deploy the canary:
 
 ```bash
 # Zip the canary script
+
 zip canary.zip heartbeat-canary.js
 
 # Upload to S3

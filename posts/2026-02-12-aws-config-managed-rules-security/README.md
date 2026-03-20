@@ -22,6 +22,7 @@ The root account has unrestricted access to everything. These rules make sure it
 
 ```bash
 # Check that the root account has MFA enabled
+
 aws configservice put-config-rule \
   --config-rule '{
     "ConfigRuleName": "root-account-mfa-enabled",

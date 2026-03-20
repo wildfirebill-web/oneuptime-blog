@@ -24,6 +24,7 @@ Start with a baseline service deployment:
 
 ```yaml
 # service-v1.yaml
+
 apiVersion: serving.knative.dev/v1
 kind: Service
 metadata:

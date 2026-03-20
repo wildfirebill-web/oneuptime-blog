@@ -18,6 +18,7 @@ The fastest way to get Zitadel running for evaluation:
 
 ```bash
 # Start Zitadel with the embedded CockroachDB (evaluation only)
+
 docker run -d \
   --name zitadel \
   -p 8080:8080 \

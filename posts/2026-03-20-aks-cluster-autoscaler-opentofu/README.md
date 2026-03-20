@@ -120,6 +120,7 @@ resource "azurerm_kubernetes_cluster_node_pool" "app" {
 }
 
 # Scale-to-zero pool for batch workloads
+
 resource "azurerm_kubernetes_cluster_node_pool" "batch" {
   name                  = "batch"
   kubernetes_cluster_id = azurerm_kubernetes_cluster.autoscaled.id
@@ -219,4 +220,4 @@ kubectl get nodes -w
 
 ## Conclusion
 
-Resource `requests` in pod specs are what the Cluster Autoscaler uses to determine if a node can fit pending pods—pods without requests look like they need zero resources and won't trigger autoscaling. Use `balance_similar_node_groups = true` to distribute nodes evenly across availability zones during scale-out. The `expander = "least-waste"` setting is the most cost-efficient: it picks the node type that wastes the least CPU/memory when adding a new node. Set `scale_down_delay_after_add` to longer than your typical pod startup time to avoid immediately scaling in nodes that were just added for a traffic spike.
+Resource `requests` in pod specs are what the Cluster Autoscaler uses to determine if a node can fit pending pods-pods without requests look like they need zero resources and won't trigger autoscaling. Use `balance_similar_node_groups = true` to distribute nodes evenly across availability zones during scale-out. The `expander = "least-waste"` setting is the most cost-efficient: it picks the node type that wastes the least CPU/memory when adding a new node. Set `scale_down_delay_after_add` to longer than your typical pod startup time to avoid immediately scaling in nodes that were just added for a traffic spike.

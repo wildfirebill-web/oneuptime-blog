@@ -43,6 +43,7 @@ import threading
 import time
 
 # Publisher
+
 def publisher():
     r = redis.Redis(decode_responses=True)
     for i in range(5):

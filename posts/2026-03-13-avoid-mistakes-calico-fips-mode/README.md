@@ -25,6 +25,7 @@ The most common mistake is setting `fipsMode: Enabled` in the Calico Installatio
 
 ```bash
 # WRONG: Only setting Calico operator fipsMode
+
 kubectl patch installation default --type=merge \
   -p '{"spec":{"fipsMode":"Enabled"}}'
 # Calico uses FIPS-mode code paths but the OS kernel

@@ -36,6 +36,7 @@ Here is the complete pattern for creating an EC2 role with an instance profile.
 
 ```hcl
 # Trust policy - allow EC2 service to assume the role
+
 data "aws_iam_policy_document" "ec2_trust" {
   statement {
     effect = "Allow"

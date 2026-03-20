@@ -24,6 +24,7 @@ Start by examining the current state of the Bucket source.
 
 ```bash
 # List all Bucket sources and their status
+
 flux get sources bucket -A
 
 # Get detailed status for a specific Bucket

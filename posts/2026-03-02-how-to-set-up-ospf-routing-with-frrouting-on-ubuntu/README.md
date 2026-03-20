@@ -31,6 +31,7 @@ All in OSPF Area 0 (backbone)
 
 ```bash
 # Add FRR repository and install
+
 curl -s https://deb.frrouting.org/frr/keys.gpg | sudo tee /usr/share/keyrings/frrouting.gpg > /dev/null
 
 echo "deb [signed-by=/usr/share/keyrings/frrouting.gpg] https://deb.frrouting.org/frr $(lsb_release -sc) frr-stable" | \

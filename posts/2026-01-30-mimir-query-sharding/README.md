@@ -68,6 +68,7 @@ Query sharding is configured in the query frontend. Here is a minimal configurat
 # mimir-config.yaml
 
 # Enable query sharding in the query frontend
+
 query_frontend:
   # Enable sharding for range queries
   parallelize_shardable_queries: true

@@ -20,6 +20,7 @@ The `aws_route53_zone` data source supports looking up zones by name, zone ID, t
 
 ```hcl
 # Look up a hosted zone by its domain name
+
 data "aws_route53_zone" "main" {
   name = "example.com"
 }

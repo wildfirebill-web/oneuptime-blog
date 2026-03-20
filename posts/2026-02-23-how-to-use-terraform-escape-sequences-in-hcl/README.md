@@ -141,6 +141,7 @@ When working with JSON in Terraform (common for IAM policies, CloudWatch dashboa
 
 ```hcl
 # Using jsonencode avoids manual JSON escaping
+
 locals {
   policy = jsonencode({
     Version = "2012-10-17"

@@ -8,12 +8,13 @@ Description: Optimize TCP window sizes and related parameters for high-latency l
 
 ## Introduction
 
-Long-distance links introduce high latency that makes TCP's default settings severely limiting. A transcontinental link with 150ms RTT and a 128KB default window allows only about 7 Mbps — far below the available gigabit bandwidth. Optimizing TCP for long-distance requires understanding the bandwidth-delay product and tuning buffers accordingly.
+Long-distance links introduce high latency that makes TCP's default settings severely limiting. A transcontinental link with 150ms RTT and a 128KB default window allows only about 7 Mbps - far below the available gigabit bandwidth. Optimizing TCP for long-distance requires understanding the bandwidth-delay product and tuning buffers accordingly.
 
 ## Measuring Your Long-Distance BDP
 
 ```bash
 # Measure RTT to your remote endpoint
+
 ping -c 20 remote-server.example.com
 # rtt avg: 150ms
 
@@ -62,7 +63,7 @@ EOF
 sysctl -w net.ipv4.tcp_congestion_control=bbr
 sysctl net.ipv4.tcp_available_congestion_control  # Verify BBR is available
 
-# CUBIC is the default — adequate for most scenarios
+# CUBIC is the default - adequate for most scenarios
 # BBR: better for satellite/long-haul, high-loss environments
 ```
 
@@ -77,7 +78,7 @@ iperf3 -s
 iperf3 -c remote-server -t 30 -w 16M   # Force 16MB window
 iperf3 -c remote-server -t 30          # Test with auto-tuned window
 
-# Compare results — if forced window gives more throughput:
+# Compare results - if forced window gives more throughput:
 # Auto-tuning isn't reaching the required size, increase tcp_rmem max
 ```
 

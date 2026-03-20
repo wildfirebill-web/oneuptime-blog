@@ -17,6 +17,7 @@ Validating Calico log collection goes beyond checking that Fluent Bit is running
 ```bash
 #!/bin/bash
 # validate-calico-log-collection.sh
+
 PASS=0
 FAIL=0
 

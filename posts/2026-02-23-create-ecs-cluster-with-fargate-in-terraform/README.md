@@ -18,6 +18,7 @@ At its simplest, a Fargate cluster is just a name and some settings:
 
 ```hcl
 # ECS Cluster
+
 resource "aws_ecs_cluster" "main" {
   name = "myapp-cluster"
 

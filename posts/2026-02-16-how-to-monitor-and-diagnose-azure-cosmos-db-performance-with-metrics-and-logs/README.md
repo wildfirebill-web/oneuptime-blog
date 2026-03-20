@@ -91,6 +91,7 @@ Diagnostic logs capture detailed information about every request. Enable them to
 
 ```bash
 # Enable diagnostic settings to send logs to Log Analytics
+
 az monitor diagnostic-settings create \
     --name "cosmos-diagnostics" \
     --resource "/subscriptions/{sub}/resourceGroups/{rg}/providers/Microsoft.DocumentDB/databaseAccounts/myCosmosAccount" \

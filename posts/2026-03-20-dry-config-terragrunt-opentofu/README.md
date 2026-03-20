@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: OpenTofu, Terragrunt, DRY, Infrastructure as Code, Best Practices, DevOps
 
-Description: Learn how to eliminate configuration duplication across environments by using Terragrunt's DRY patterns — shared backends, common variables, and generated provider files — with OpenTofu.
+Description: Learn how to eliminate configuration duplication across environments by using Terragrunt's DRY patterns - shared backends, common variables, and generated provider files - with OpenTofu.
 
 ## Introduction
 
@@ -15,7 +15,8 @@ One of Terragrunt's core value propositions is helping teams maintain DRY (Don't
 Without Terragrunt, every module requires its own backend block:
 
 ```hcl
-# Repeated in every module — hard to maintain
+# Repeated in every module - hard to maintain
+
 terraform {
   backend "s3" {
     bucket         = "my-state-bucket"
@@ -62,7 +63,7 @@ locals {
 ## Shared Variables with common_vars.yaml
 
 ```yaml
-# common_vars.yaml — sits at the repo root
+# common_vars.yaml - sits at the repo root
 aws_region:  us-east-1
 account_id:  "123456789012"
 company:     acme
@@ -106,7 +107,7 @@ inputs = merge(local.all_vars, {
 Instead of repeating provider configuration, generate it from the root config:
 
 ```hcl
-# Root terragrunt.hcl — generate provider.tf in every module
+# Root terragrunt.hcl - generate provider.tf in every module
 generate "provider" {
   path      = "provider.tf"
   if_exists = "overwrite_terragrunt"
@@ -137,7 +138,7 @@ EOF
 
 ## Directory Layout for DRY Configs
 
-```
+```text
 infrastructure/
 ├── common_vars.yaml          # Shared across all environments
 ├── terragrunt.hcl            # Root config: backend, provider generation
@@ -161,4 +162,4 @@ infrastructure/
 
 ## Conclusion
 
-Terragrunt's DRY patterns — shared backend config via `remote_state`, generated provider files via `generate`, and layered YAML variable files — dramatically reduce the amount of boilerplate in large OpenTofu projects. A change to the shared backend configuration propagates automatically to every module the next time it is initialized.
+Terragrunt's DRY patterns - shared backend config via `remote_state`, generated provider files via `generate`, and layered YAML variable files - dramatically reduce the amount of boilerplate in large OpenTofu projects. A change to the shared backend configuration propagates automatically to every module the next time it is initialized.

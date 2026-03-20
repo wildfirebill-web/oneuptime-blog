@@ -35,6 +35,7 @@ Grafana needs a service account to authenticate with the Cloud Monitoring API. C
 
 ```bash
 # Create a service account for Grafana
+
 gcloud iam service-accounts create grafana-reader \
   --display-name="Grafana Cloud Monitoring Reader" \
   --project=my-project-id

@@ -27,6 +27,7 @@ Each Inferentia2 chip has 2 NeuronCores-v2. The larger instances connect chips w
 
 ```bash
 # Launch an Inf2 instance with the Deep Learning AMI
+
 aws ec2 run-instances \
   --image-id ami-0abc123-deep-learning \
   --instance-type inf2.xlarge \

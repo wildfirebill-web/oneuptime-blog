@@ -31,6 +31,7 @@ SLIs (Service Level Indicators) are the raw measurements behind your SLOs. Creat
 
 ```yaml
 # prometheus-rules/sli-recording-rules.yaml
+
 # Pre-compute SLI ratios from OpenTelemetry HTTP metrics
 groups:
   - name: sli-availability

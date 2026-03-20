@@ -41,6 +41,7 @@ By default, RabbitMQ silently drops unroutable messages:
 
 ```python
 # This message will be silently dropped if no queue is bound
+
 import pika
 
 connection = pika.BlockingConnection(pika.ConnectionParameters('localhost'))

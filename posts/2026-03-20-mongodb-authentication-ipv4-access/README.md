@@ -78,6 +78,7 @@ systemctl restart mongod
 
 ```bash
 # Allow MongoDB connections only from the application server's IPv4
+
 ufw allow from 10.0.0.20 to any port 27017
 ufw allow from 127.0.0.1 to any port 27017
 ufw deny 27017

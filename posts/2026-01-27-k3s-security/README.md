@@ -59,6 +59,7 @@ The security journey begins at installation. K3s provides several flags to harde
 
 ```bash
 # Install K3s server with security hardening options
+
 # --secrets-encryption: Enables encryption of secrets at rest
 # --protect-kernel-defaults: Prevents kubelet from modifying kernel parameters
 # --kube-apiserver-arg: Passes additional arguments to the API server

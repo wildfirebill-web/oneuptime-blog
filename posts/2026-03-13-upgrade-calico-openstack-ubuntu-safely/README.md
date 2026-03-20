@@ -41,6 +41,7 @@ etcdctl ls /calico --recursive > etcd-calico-keys-backup.txt
 
 ```bash
 # On the controller
+
 sudo apt-get update
 sudo apt-get install --only-upgrade python3-networking-calico
 

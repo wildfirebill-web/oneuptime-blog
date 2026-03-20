@@ -30,6 +30,7 @@ IPsec is provided by strongSwan on Ubuntu:
 
 ```bash
 # Install strongSwan for IPsec
+
 sudo apt update
 sudo apt install -y strongswan strongswan-pki
 

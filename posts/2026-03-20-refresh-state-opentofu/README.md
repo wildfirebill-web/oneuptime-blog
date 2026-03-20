@@ -1,4 +1,4 @@
-# How to Refresh State to Match Real Infrastructure in OpenTofu
+# How to Refresh State to Match Real Infrastructure in OpenTofu (2)
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Learn how to use tofu refresh and tofu apply -refresh-only to synch
 
 ## Introduction
 
-OpenTofu's state file is a snapshot of your infrastructure at a point in time. When infrastructure changes outside of OpenTofu — through the cloud console, APIs, or other tools — the state file becomes stale. The refresh operation queries the real infrastructure and updates the state file to reflect reality.
+OpenTofu's state file is a snapshot of your infrastructure at a point in time. When infrastructure changes outside of OpenTofu - through the cloud console, APIs, or other tools - the state file becomes stale. The refresh operation queries the real infrastructure and updates the state file to reflect reality.
 
 ## The Two Refresh Approaches
 
@@ -21,6 +21,7 @@ OpenTofu offers two ways to refresh state:
 
 ```bash
 # Preview what refresh would change
+
 tofu plan -refresh-only
 
 # Example output:
@@ -136,4 +137,4 @@ tofu plan
 
 ## Conclusion
 
-Regularly refreshing your OpenTofu state ensures it accurately reflects your infrastructure. Use `tofu apply -refresh-only` as the preferred approach — it gives you visibility into state changes before committing them. In pipelines, consider automatic refresh before critical plans to catch drift early. Combined with drift detection, refresh-only operations form a powerful tool for maintaining state accuracy.
+Regularly refreshing your OpenTofu state ensures it accurately reflects your infrastructure. Use `tofu apply -refresh-only` as the preferred approach - it gives you visibility into state changes before committing them. In pipelines, consider automatic refresh before critical plans to catch drift early. Combined with drift detection, refresh-only operations form a powerful tool for maintaining state accuracy.

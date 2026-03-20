@@ -18,6 +18,7 @@ When Terraform encounters a module source, it needs to download the module code.
 
 ```hcl
 # Public registry - no auth needed
+
 module "vpc" {
   source  = "terraform-aws-modules/vpc/aws"
   version = "5.5.1"

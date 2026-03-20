@@ -71,6 +71,7 @@ def detect_insufficient_scope(response: dict, status_code: int) -> Optional[List
 
 ```python
 # Define scope requirements per feature
+
 FEATURE_SCOPES = {
     "view_profile": ["read:user"],
     "edit_profile": ["read:user", "write:user"],

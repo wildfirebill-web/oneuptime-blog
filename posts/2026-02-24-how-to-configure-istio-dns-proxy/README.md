@@ -146,6 +146,7 @@ In a multicluster mesh, services in remote clusters are not in the local Kuberne
 
 ```bash
 # A service running in cluster 2 but not in cluster 1's DNS
+
 # With DNS proxy, pods in cluster 1 can resolve it:
 curl http://remote-service.remote-namespace.svc.cluster.local
 ```

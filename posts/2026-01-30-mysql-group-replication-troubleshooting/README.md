@@ -343,6 +343,7 @@ SELECT
 ```bash
 #!/bin/bash
 # recovery-options.sh
+
 # Choose the appropriate recovery method based on the situation
 
 # Option 1: If local data can be discarded, use clone plugin

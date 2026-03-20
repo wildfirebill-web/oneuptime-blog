@@ -41,6 +41,7 @@ Check if your cluster supports bound tokens by examining the token mount in a ru
 
 ```bash
 # Check the token projection in a pod
+
 kubectl get pod <pod-name> -o yaml | grep -A 10 "serviceAccountToken"
 ```
 

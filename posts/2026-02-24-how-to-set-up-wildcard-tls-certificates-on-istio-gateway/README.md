@@ -295,6 +295,7 @@ Test your wildcard certificate:
 
 ```bash
 # Get the gateway IP
+
 export GATEWAY_IP=$(kubectl get svc istio-ingressgateway -n istio-system -o jsonpath='{.status.loadBalancer.ingress[0].ip}')
 
 # Test different subdomains

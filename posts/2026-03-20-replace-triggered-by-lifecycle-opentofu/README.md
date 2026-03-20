@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Resources, Lifecycle, replace_triggered_by, Infrastructure as Code, DevOps
+Tags: OpenTofu, Resources, Lifecycle, Replace_triggered_by, Infrastructure as Code, DevOps
 
 Description: A guide to using replace_triggered_by lifecycle in OpenTofu to trigger resource replacement when other resources change.
 
@@ -55,6 +55,7 @@ resource "aws_instance" "web" {
 
 ```hcl
 # Config template stored in S3
+
 resource "aws_s3_object" "app_config" {
   bucket  = aws_s3_bucket.config.id
   key     = "app-config.json"

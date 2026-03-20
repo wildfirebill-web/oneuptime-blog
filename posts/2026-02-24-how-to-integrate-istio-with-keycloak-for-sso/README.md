@@ -111,6 +111,7 @@ Once Keycloak is running, create a realm and client for your mesh. You can do th
 
 ```bash
 # Get admin token
+
 ADMIN_TOKEN=$(curl -s -X POST \
   "https://keycloak.mycompany.com/realms/master/protocol/openid-connect/token" \
   -d "client_id=admin-cli" \

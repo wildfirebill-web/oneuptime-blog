@@ -1,4 +1,4 @@
-# How to Debug Kubernetes Pod Failures in Portainer
+# How to Debug Kubernetes Pod Failures in Portainer - K8s Pods
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -28,6 +28,7 @@ In Portainer: **Kubernetes > Applications > Pod > Events**
 Or via kubectl:
 ```bash
 # View events for a specific pod
+
 kubectl describe pod failing-pod-xxx -n production
 
 # View events for all pods in a namespace

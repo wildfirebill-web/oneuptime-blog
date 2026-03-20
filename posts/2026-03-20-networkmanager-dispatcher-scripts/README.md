@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Linux, NetworkManager, Dispatcher Scripts, Automation, Networking
 
-Description: Use NetworkManager dispatcher scripts to run custom commands when network interfaces connect, disconnect, or change state — enabling automatic configuration triggered by network events.
+Description: Use NetworkManager dispatcher scripts to run custom commands when network interfaces connect, disconnect, or change state - enabling automatic configuration triggered by network events.
 
 ## Introduction
 
@@ -14,6 +14,7 @@ NetworkManager dispatcher scripts run automatically when network events occur (i
 
 ```bash
 # Create the dispatcher script
+
 cat > /etc/NetworkManager/dispatcher.d/10-custom.sh << 'EOF'
 #!/bin/bash
 

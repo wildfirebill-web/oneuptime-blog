@@ -22,6 +22,7 @@ Check your installations:
 
 ```bash
 # Verify Minikube is installed
+
 minikube version
 # Expected: minikube version: v1.x.x
 
@@ -298,7 +299,7 @@ minikube addons enable metrics-server
 minikube addons enable dashboard
 ```
 
-## Resource Optimization for Minikube
+Resource Optimization for Minikube
 
 ArgoCD's default resource requests may be too generous for a local cluster. You can reduce them:
 

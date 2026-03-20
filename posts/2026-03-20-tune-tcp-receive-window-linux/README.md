@@ -14,6 +14,7 @@ Linux automatically adjusts TCP receive window sizes within configured bounds. F
 
 ```bash
 # tcp_rmem has three values: min default max
+
 sysctl net.ipv4.tcp_rmem
 # 4096  131072  6291456
 # ^min  ^default ^max
@@ -35,7 +36,7 @@ The kernel auto-tunes between default and max based on available memory and conn
 
 # For a 1 Gbps link with 100ms RTT:
 # BDP = 125,000,000 × 0.100 = 12.5 MB
-# Same result — buffer is determined by bandwidth × RTT, not bandwidth alone
+# Same result - buffer is determined by bandwidth × RTT, not bandwidth alone
 ```
 
 ## Applying the Tuning

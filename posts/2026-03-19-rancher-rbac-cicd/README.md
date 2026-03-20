@@ -174,6 +174,7 @@ SERVER=$(kubectl config view --minify -o jsonpath='{.clusters[0].cluster.server}
 CA_DATA=$(kubectl config view --raw --minify -o jsonpath='{.clusters[0].cluster.certificate-authority-data}')
 
 # Create a token (valid for 24 hours - rotate in CI/CD)
+
 TOKEN=$(kubectl create token $SA_NAME -n $NAMESPACE --duration=24h)
 
 cat > cicd-kubeconfig.yaml <<EOF

@@ -44,6 +44,7 @@ Traefik configuration for the entry point of a SaaS application:
 
 ```yaml
 # docker-compose.yml
+
 version: "3.8"
 
 services:

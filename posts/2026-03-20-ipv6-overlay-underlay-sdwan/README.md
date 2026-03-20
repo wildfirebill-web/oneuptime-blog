@@ -8,11 +8,11 @@ Description: Understand and configure IPv6 in SD-WAN overlay and underlay networ
 
 ---
 
-SD-WAN uses an overlay network (encrypted tunnels carrying user traffic) over an underlay network (physical WAN transport). IPv6 can exist at either layer independently—IPv6 user traffic over IPv4 WAN tunnels, or IPv4 tunnels over IPv6 WAN links—or both layers can be IPv6.
+SD-WAN uses an overlay network (encrypted tunnels carrying user traffic) over an underlay network (physical WAN transport). IPv6 can exist at either layer independently-IPv6 user traffic over IPv4 WAN tunnels, or IPv4 tunnels over IPv6 WAN links-or both layers can be IPv6.
 
 ## SD-WAN Overlay/Underlay Combinations
 
-```
+```text
 SD-WAN IPv6 Deployment Combinations:
 
 1. IPv4 Underlay + IPv4/IPv6 Overlay (most common today)
@@ -38,6 +38,7 @@ Example:
 ```bash
 #!/bin/bash
 # ipv6-overlay-ipv4-underlay.sh
+
 # Create GRE tunnel carrying IPv6 over IPv4 WAN
 
 TUNNEL_NAME="sdwan-tun0"

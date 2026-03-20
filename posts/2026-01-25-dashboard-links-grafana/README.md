@@ -68,6 +68,7 @@ Tag-based links scale better than hardcoded lists. When you create a new service
 
 ```yaml
 # Tag strategy for automatic linking
+
 Dashboard: API Gateway Overview
 Tags: [api, gateway, tier-1]
 

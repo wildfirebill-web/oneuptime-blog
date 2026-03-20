@@ -51,6 +51,7 @@ Age is the recommended encryption method for SOPS with Flux. Generate a unique k
 
 ```bash
 # Install age
+
 brew install age
 
 # Generate key for staging cluster

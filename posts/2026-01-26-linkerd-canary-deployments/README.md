@@ -90,6 +90,7 @@ First, install the Linkerd CLI and validate your cluster:
 
 ```bash
 # Install the Linkerd CLI
+
 curl -sL https://run.linkerd.io/install | sh
 
 # Add linkerd to your PATH

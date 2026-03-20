@@ -14,6 +14,7 @@ Active Directory natively supports IPv6 starting with Windows Server 2008. Enabl
 
 ```powershell
 # Check current IPv6 configuration on Domain Controller
+
 Get-NetIPAddress -AddressFamily IPv6
 
 # Verify IPv6 is enabled on the network adapter
@@ -148,4 +149,4 @@ New-NetFirewallRule -DisplayName "AD Kerberos IPv6" `
   -AddressFamily IPv6 -Action Allow
 ```
 
-Active Directory's native IPv6 support makes it straightforward to deploy in dual-stack environments — the key steps are assigning static IPv6 addresses, registering AAAA DNS records, and defining IPv6 subnets in AD Sites and Services.
+Active Directory's native IPv6 support makes it straightforward to deploy in dual-stack environments - the key steps are assigning static IPv6 addresses, registering AAAA DNS records, and defining IPv6 subnets in AD Sites and Services.

@@ -35,6 +35,7 @@ Start by deploying your backends. For this guide, we will use Prometheus for met
 
 ```bash
 # Create namespace
+
 kubectl create namespace observability
 
 # Deploy Prometheus

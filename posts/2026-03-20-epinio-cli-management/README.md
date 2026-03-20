@@ -21,6 +21,7 @@ How to Use Epinio CLI for Application Management demonstrates how Epinio simplif
 
 ```bash
 # Create application directory
+
 mkdir my-app && cd my-app
 
 # Initialize the application

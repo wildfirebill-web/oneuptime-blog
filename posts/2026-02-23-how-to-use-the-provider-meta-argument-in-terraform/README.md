@@ -18,6 +18,7 @@ Without any aliases, Terraform uses the default provider configuration for all r
 
 ```hcl
 # Default AWS provider - all aws_ resources use this
+
 provider "aws" {
   region = "us-east-1"
 }

@@ -12,7 +12,7 @@ Data center IPv6 addressing requires a hierarchical scheme that supports routing
 
 ## Data Center IPv6 Addressing Framework
 
-```
+```text
 Data Center IPv6 Addressing Block:
 /48 per DC from corporate allocation: 2001:db8:dc1::/48
 
@@ -37,7 +37,7 @@ Server /52 breakdown (by pod/rack):
 
 ## Spine and Leaf Loopback Addressing
 
-```
+```text
 Spine Loopback Addressing (/128):
   Spine-1:  2001:db8:dc1:0100::1/128
   Spine-2:  2001:db8:dc1:0100::2/128
@@ -62,7 +62,7 @@ P2P Link Addressing (/126 or /127):
 
 ## BGP Underlay IPv6 Configuration (Cisco Nexus)
 
-```
+```text
 ! Leaf-101 - Cisco Nexus BGP configuration for IPv6 fabric
 
 feature bgp
@@ -94,7 +94,7 @@ router bgp 65101
 
 ## Server Workload IPv6 Addressing
 
-```
+```text
 Server Workload Addressing (/64 per VLAN):
 
 Pod 1, Rack 1:
@@ -116,7 +116,7 @@ Container Workloads (Kubernetes):
 
 ## BGP Spine Configuration
 
-```
+```text
 ! Spine-1 - Aggregates leaf routes
 
 router bgp 65001
@@ -159,6 +159,7 @@ spines = {
 }
 
 # Generate leaf loopbacks
+
 leaves = {}
 for rack in range(1, 48 + 1):  # 48 leaf switches
     name = f"Leaf-{rack:03d}"

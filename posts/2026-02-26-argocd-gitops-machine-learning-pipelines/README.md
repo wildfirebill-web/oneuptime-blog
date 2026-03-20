@@ -164,6 +164,7 @@ KServe (formerly KFServing) is the standard for model serving on Kubernetes. Arg
 
 ```yaml
 # models/fraud-detection/base/inferenceservice.yaml
+
 apiVersion: serving.kserve.io/v1beta1
 kind: InferenceService
 metadata:

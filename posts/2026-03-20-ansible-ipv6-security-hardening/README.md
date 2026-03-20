@@ -14,6 +14,7 @@ On hosts that do not need IPv6, disable it entirely:
 
 ```yaml
 # tasks/disable-ipv6.yml - Disable IPv6 on hosts that don't need it
+
 ---
 - name: Disable IPv6 via sysctl
   ansible.posix.sysctl:

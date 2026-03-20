@@ -16,6 +16,7 @@ The `copy` module handles recursive directory copies natively. When the `src` pa
 
 ```yaml
 # Copy a directory tree from the controller to remote hosts
+
 - name: Copy application config directory to remote
   ansible.builtin.copy:
     src: files/myapp-config/

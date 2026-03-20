@@ -26,6 +26,7 @@ graph LR
 
 ```bash
 # Core OpenTelemetry packages
+
 npm install @opentelemetry/api \
   @opentelemetry/sdk-node \
   @opentelemetry/sdk-trace-node \

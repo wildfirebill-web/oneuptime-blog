@@ -31,6 +31,7 @@ Linux automatically assigns flow labels to IPv6 sockets.
 
 ```bash
 # Check current flow label mode
+
 sysctl net.ipv6.flowlabel_consistency
 sysctl net.ipv6.flowlabel_reflect
 

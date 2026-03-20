@@ -30,6 +30,7 @@ Tune CRI-O configuration for Cilium compatibility:
 
 ```bash
 # Check current CRI-O configuration
+
 cat /etc/crio/crio.conf
 
 # Configure CRI-O to wait for CNI before starting pods

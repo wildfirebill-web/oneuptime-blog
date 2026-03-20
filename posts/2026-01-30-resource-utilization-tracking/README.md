@@ -137,6 +137,7 @@ Track both utilization and saturation for CPU:
 
 ```yaml
 # Prometheus recording rules for CPU metrics
+
 groups:
   - name: cpu_metrics
     rules:

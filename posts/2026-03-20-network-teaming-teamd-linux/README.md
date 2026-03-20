@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Network Teaming, teamd, Linux, RHEL, nmcli, Link Aggregation, Redundancy, IPv4
+Tags: Network Teaming, Teamd, Linux, RHEL, nmcli, Link Aggregation, Redundancy, IPv4
 
 Description: Learn how to configure network teaming on Linux using teamd as a modern alternative to bonding, with active-backup and LACP runner configurations using nmcli.
 
@@ -14,6 +14,7 @@ Network teaming (teamd) is the modern alternative to bonding on RHEL/CentOS. It 
 
 ```bash
 # RHEL/CentOS
+
 dnf install teamd NetworkManager-team -y
 
 # Verify

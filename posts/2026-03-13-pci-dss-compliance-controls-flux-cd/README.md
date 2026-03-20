@@ -27,6 +27,7 @@ PCI DSS Requirement 1 requires network segmentation around the CDE. Implement th
 
 ```yaml
 # clusters/cde/namespaces/cardholder-data.yaml
+
 apiVersion: v1
 kind: Namespace
 metadata:

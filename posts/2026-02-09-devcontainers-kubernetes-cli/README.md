@@ -26,6 +26,7 @@ Start with a Dockerfile that includes essential Kubernetes tools:
 
 ```dockerfile
 # .devcontainer/Dockerfile
+
 FROM mcr.microsoft.com/devcontainers/base:ubuntu-22.04
 
 # Avoid prompts during package installation

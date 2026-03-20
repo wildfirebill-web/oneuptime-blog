@@ -43,6 +43,7 @@ resource "okta_group" "platform_team" {
 }
 
 # Group rule - automatically assign users based on profile attributes
+
 resource "okta_group_rule" "engineers_rule" {
   name              = "Auto-assign engineers"
   status            = "ACTIVE"

@@ -36,6 +36,7 @@ CodeCommit allows you to generate static HTTPS credentials for IAM users. This i
 
 ```bash
 # Create an IAM user for ArgoCD (if you do not have one)
+
 aws iam create-user --user-name argocd-codecommit
 
 # Attach the CodeCommit read-only policy

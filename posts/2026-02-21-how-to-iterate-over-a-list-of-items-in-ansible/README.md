@@ -16,6 +16,7 @@ The basic pattern is to add a `loop` key to your task with a list of values. Eac
 
 ```yaml
 # Create multiple directories from a simple list
+
 - name: Create application directories
   ansible.builtin.file:
     path: "{{ item }}"

@@ -21,6 +21,7 @@ Running your own dedicated game server gives you full control over game settings
 
 ```bash
 # Open game server ports
+
 ufw allow 27015:27015/udp 7777:7777/udp 32330:32330/tcp
 ufw reload
 ```

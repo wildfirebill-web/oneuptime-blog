@@ -16,6 +16,7 @@ The `filebase64` function reads a file and returns a base64-encoded representati
 
 ```hcl
 # filebase64(path)
+
 # Reads a file and returns base64-encoded contents
 filebase64("${path.module}/scripts/init.sh")
 # Returns something like: "IyEvYmluL2Jhc2gKZWNobyAiSGVsbG8i..."

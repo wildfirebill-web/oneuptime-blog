@@ -2,16 +2,17 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: iptables, Linux, Firewall, Custom Chains, Security, Organization
+Tags: iptables, Linux, Firewall, Custom Chains, Security, Organizations
 
 Description: Create and use custom iptables chains to organize firewall rules into logical groups, reduce repetition, and build modular rule sets for complex filtering scenarios.
 
-Custom chains let you create reusable rule groups — like a function in programming. Instead of duplicating rules across multiple contexts, you define them once in a custom chain and jump to it from any standard chain.
+Custom chains let you create reusable rule groups - like a function in programming. Instead of duplicating rules across multiple contexts, you define them once in a custom chain and jump to it from any standard chain.
 
 ## Create a Custom Chain
 
 ```bash
 # Create a new chain called MYCHAIN
+
 sudo iptables -N MYCHAIN
 
 # List all chains including custom ones
@@ -53,7 +54,7 @@ sudo iptables -A INPUT -p tcp -j MYCHAIN
 
 ```bash
 #!/bin/bash
-# modular-firewall.sh — Organized firewall with custom chains
+# modular-firewall.sh - Organized firewall with custom chains
 
 # Create custom chains
 sudo iptables -N ALLOW-SERVICES
@@ -120,4 +121,4 @@ sudo iptables -L | grep "Chain " | grep -v "INPUT\|OUTPUT\|FORWARD"
 sudo iptables -L MYCHAIN --line-numbers | tail -1
 ```
 
-Custom chains are the key to maintainable iptables rule sets — they bring structure and reusability to what would otherwise become an unmanageable list of hundreds of rules.
+Custom chains are the key to maintainable iptables rule sets - they bring structure and reusability to what would otherwise become an unmanageable list of hundreds of rules.

@@ -29,6 +29,7 @@ Missing any one of these makes a full recovery impossible.
 ```bash
 #!/bin/bash
 # backup-tfe-postgres.sh
+
 # Run this as a cron job for automated daily backups
 
 # Configuration

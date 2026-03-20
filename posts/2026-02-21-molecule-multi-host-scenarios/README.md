@@ -16,6 +16,7 @@ The platforms section in molecule.yml accepts a list. Each entry creates a separ
 
 ```yaml
 # molecule/multi-host/molecule.yml
+
 dependency:
   name: galaxy
 

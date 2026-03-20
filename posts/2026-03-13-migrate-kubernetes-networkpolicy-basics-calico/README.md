@@ -23,6 +23,7 @@ This guide covers migrate Kubernetes NetworkPolicy Basics in Calico with product
 
 ```yaml
 # Standard Kubernetes NetworkPolicy (enforced by Calico)
+
 apiVersion: networking.k8s.io/v1
 kind: NetworkPolicy
 metadata:

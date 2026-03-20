@@ -51,6 +51,7 @@ Check what the exporter expects:
 
 ```bash
 # Check the exporter's documentation or source code for the expected schema
+
 # Or temporarily let the exporter create a new table in a test database
 ```
 

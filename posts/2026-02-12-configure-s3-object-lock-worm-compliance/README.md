@@ -44,6 +44,7 @@ Object Lock must be enabled at bucket creation time. You can't enable it on an e
 
 ```bash
 # Create a bucket with Object Lock enabled
+
 # Note: Object Lock automatically enables versioning
 aws s3api create-bucket \
   --bucket my-compliance-bucket \

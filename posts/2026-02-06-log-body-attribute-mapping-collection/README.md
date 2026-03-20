@@ -35,6 +35,7 @@ JSON logs are the easiest to work with because they already have structure. The 
 
 ```yaml
 # Collecting JSON-formatted application logs
+
 receivers:
   filelog/json:
     # Path to the log files to tail
@@ -201,7 +202,7 @@ receivers:
 
 This mapping handles the reality that Java's log4j uses "FATAL", Python's logging uses "CRITICAL", Go applications might use "PANIC", and syslog uses "EMERGENCY". After mapping, they all become the same OTLP severity number, so you can query across services regardless of language or framework.
 
-## Resource Attribute Mapping
+Resource Attribute Mapping
 
 Log records also carry resource attributes that identify the producing service. When collecting from files, you often need to infer resource attributes from the file path or log content:
 

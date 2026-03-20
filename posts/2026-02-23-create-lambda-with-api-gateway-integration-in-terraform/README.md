@@ -18,6 +18,7 @@ If you are starting fresh, the HTTP API is usually the right choice. It is cheap
 
 ```hcl
 # The Lambda function
+
 resource "aws_lambda_function" "api" {
   function_name = "myapp-api"
   handler       = "index.handler"

@@ -44,6 +44,7 @@ The simplest approach is to use Python's built-in `logging` module with a JSON f
 
 ```python
 # Configure Python's logging module to output JSON to stdout
+
 import json
 import logging
 import sys

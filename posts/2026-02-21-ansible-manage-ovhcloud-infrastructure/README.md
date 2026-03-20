@@ -24,6 +24,7 @@ Store these credentials securely:
 
 ```bash
 # Create a credentials file for the OVH API
+
 # Do NOT commit this file to version control
 cat > ~/.ovh.conf << 'CONF'
 [default]

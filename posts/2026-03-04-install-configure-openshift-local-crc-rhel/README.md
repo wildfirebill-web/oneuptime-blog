@@ -19,6 +19,7 @@ OpenShift Local requires:
 
 ```bash
 # Verify CPU virtualization support
+
 grep -cE 'vmx|svm' /proc/cpuinfo
 # Should return a number greater than 0
 

@@ -44,6 +44,7 @@ Run FreeRADIUS with the default file-based user authentication.
 
 ```bash
 # Start FreeRADIUS in debug mode to see authentication requests in real time
+
 # Debug mode (-X) is useful for initial testing and troubleshooting
 docker run -d \
   --name freeradius \

@@ -32,6 +32,7 @@ Create an Interactive Query cluster using the Azure CLI:
 
 ```bash
 # Create an HDInsight Interactive Query cluster
+
 # This cluster type includes LLAP daemons on worker nodes
 az hdinsight create \
   --name my-llap-cluster \

@@ -31,6 +31,7 @@ The foundation of approval workflows is branch protection. Configure your main b
 
 ```bash
 # GitHub CLI: configure branch protection
+
 gh api repos/my-org/fleet-infra/branches/main/protection \
   --method PUT \
   --field required_status_checks='{"strict":true,"contexts":["validate-manifests","policy-check"]}' \

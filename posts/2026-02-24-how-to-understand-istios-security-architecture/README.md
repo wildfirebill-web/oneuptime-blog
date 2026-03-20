@@ -81,6 +81,7 @@ Istio supports three mTLS modes:
 
 ```yaml
 # STRICT - Only accept mTLS traffic
+
 apiVersion: security.istio.io/v1
 kind: PeerAuthentication
 metadata:

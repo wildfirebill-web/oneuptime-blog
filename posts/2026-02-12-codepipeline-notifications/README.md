@@ -20,6 +20,7 @@ CodePipeline notification rules are the simplest way to set up alerts. They supp
 
 ```bash
 # Create an SNS topic for pipeline notifications
+
 aws sns create-topic --name codepipeline-notifications
 
 # Subscribe your email

@@ -44,6 +44,7 @@ flowchart TB
 
 ```bash
 # Starters location
+
 ~/.local/share/helm/starters/
 # or
 $HELM_DATA_HOME/starters/

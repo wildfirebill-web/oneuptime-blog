@@ -18,6 +18,7 @@ Before deploying anything, make sure the cluster is healthy:
 
 ```bash
 # Check that all nodes are Ready
+
 kubectl get nodes
 
 # Verify system pods are running

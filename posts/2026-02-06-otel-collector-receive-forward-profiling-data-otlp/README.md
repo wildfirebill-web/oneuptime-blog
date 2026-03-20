@@ -24,6 +24,7 @@ Here is a minimal collector configuration that receives and forwards profiling d
 
 ```yaml
 # collector-config.yaml
+
 receivers:
   otlp:
     protocols:

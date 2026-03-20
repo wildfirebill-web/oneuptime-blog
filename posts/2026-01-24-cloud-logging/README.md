@@ -83,6 +83,7 @@ def setup_cloud_logging():
     return client
 
 # Initialize logging at application startup
+
 client = setup_cloud_logging()
 ```
 

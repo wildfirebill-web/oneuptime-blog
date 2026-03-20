@@ -8,7 +8,7 @@ Description: A practical guide to migrating from IPv4 to IPv6, covering dual-sta
 
 ## Why Migrate to IPv6?
 
-IPv4 address exhaustion is a real problem — the global pool of available IPv4 addresses ran out years ago. IPv6 provides a vastly larger address space (340 undecillion addresses), built-in security features, and eliminates the need for NAT. Migration is no longer optional for organizations building scalable internet infrastructure.
+IPv4 address exhaustion is a real problem - the global pool of available IPv4 addresses ran out years ago. IPv6 provides a vastly larger address space (340 undecillion addresses), built-in security features, and eliminates the need for NAT. Migration is no longer optional for organizations building scalable internet infrastructure.
 
 ## Migration Strategies
 
@@ -16,7 +16,7 @@ IPv4 address exhaustion is a real problem — the global pool of available IPv4 
 
 Run IPv4 and IPv6 simultaneously. This is the most practical approach and allows gradual migration without service disruption.
 
-```
+```text
 Client ─→ Load Balancer (dual-stack) ─→ Backend (IPv4 initially, IPv6 later)
 ```
 
@@ -37,6 +37,7 @@ Encapsulate IPv6 traffic inside IPv4 packets to traverse IPv4-only networks. Use
 
 ```bash
 # Create a 6in4 tunnel on Linux
+
 ip tunnel add tun6 mode sit remote 203.0.113.1 local 192.168.1.1 ttl 64
 ip -6 addr add 2001:db8::1/64 dev tun6
 ip link set tun6 up
@@ -100,10 +101,10 @@ traceroute6 2001:4860:4860::8888
 ## Common Pitfalls
 
 1. **Hardcoded IPv4 addresses** in configuration files, database records, and application code
-2. **Firewall rules not updated** — IPv6 traffic may bypass IPv4 firewalls entirely
-3. **Missing AAAA records** — DNS must return both A and AAAA records for dual-stack
-4. **MTU differences** — IPv6 requires a minimum MTU of 1280 bytes; fragmentation works differently
-5. **Monitoring gaps** — ensure your monitoring tools can handle IPv6 addresses in logs
+2. **Firewall rules not updated** - IPv6 traffic may bypass IPv4 firewalls entirely
+3. **Missing AAAA records** - DNS must return both A and AAAA records for dual-stack
+4. **MTU differences** - IPv6 requires a minimum MTU of 1280 bytes; fragmentation works differently
+5. **Monitoring gaps** - ensure your monitoring tools can handle IPv6 addresses in logs
 
 ## AWS IPv6 Configuration
 

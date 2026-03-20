@@ -28,10 +28,10 @@ The Kubernetes Dashboard is the official web UI for Kubernetes clusters, while P
 
 The official Kubernetes Dashboard excels at:
 
-1. **Pure Kubernetes visibility** — every K8s resource type is represented
-2. **Lightweight** — runs with minimal resource consumption
-3. **Official support** — maintained by the Kubernetes community
-4. **RBAC passthrough** — uses the cluster's native RBAC (whatever the user's kubeconfig allows)
+1. **Pure Kubernetes visibility** - every K8s resource type is represented
+2. **Lightweight** - runs with minimal resource consumption
+3. **Official support** - maintained by the Kubernetes community
+4. **RBAC passthrough** - uses the cluster's native RBAC (whatever the user's kubeconfig allows)
 
 Deploy the Dashboard:
 
@@ -39,6 +39,7 @@ Deploy the Dashboard:
 kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.7.0/aio/deploy/recommended.yaml
 
 # Create an admin service account
+
 kubectl create serviceaccount admin-user -n kubernetes-dashboard
 kubectl create clusterrolebinding admin-user \
   --clusterrole=cluster-admin \
@@ -52,11 +53,11 @@ kubectl create token admin-user -n kubernetes-dashboard
 
 Portainer adds on top of pure Kubernetes management:
 
-1. **Helm chart browser** — browse, install, and upgrade charts from repositories
-2. **Stack (Compose) deployment** — deploy Docker Compose-style stacks to Kubernetes
-3. **Multi-environment** — manage Docker + Kubernetes from one UI
-4. **User management** — add team members with namespace-level access control
-5. **Edge Kubernetes** — manage K3s/K8s on edge devices
+1. **Helm chart browser** - browse, install, and upgrade charts from repositories
+2. **Stack (Compose) deployment** - deploy Docker Compose-style stacks to Kubernetes
+3. **Multi-environment** - manage Docker + Kubernetes from one UI
+4. **User management** - add team members with namespace-level access control
+5. **Edge Kubernetes** - manage K3s/K8s on edge devices
 
 ## When to Use Kubernetes Dashboard
 
@@ -80,7 +81,7 @@ Choose Portainer when:
 Both tools require careful security configuration:
 
 ```yaml
-# Kubernetes Dashboard — restrict access to specific namespaces
+# Kubernetes Dashboard - restrict access to specific namespaces
 # Do NOT use ClusterAdmin for production dashboard access
 apiVersion: rbac.authorization.k8s.io/v1
 kind: RoleBinding

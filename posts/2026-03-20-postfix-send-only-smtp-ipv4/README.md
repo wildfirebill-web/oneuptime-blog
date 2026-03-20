@@ -14,6 +14,7 @@ A send-only Postfix configuration is ideal for servers that generate automated e
 
 ```bash
 # Debian/Ubuntu
+
 apt install postfix -y
 # Choose "Internet Site" during setup
 

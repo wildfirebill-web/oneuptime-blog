@@ -28,6 +28,7 @@ On a Talos Linux node, disk space consumption falls into a few main categories:
 
 ```bash
 # Check disk usage on a node
+
 talosctl get mounts --nodes 192.168.1.10
 
 # Example output shows partition usage:

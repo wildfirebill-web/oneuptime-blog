@@ -29,6 +29,7 @@ If you do not already have a staging cluster, create one that matches your produ
 
 ```bash
 # Example with GKE
+
 gcloud container clusters create istio-staging \
   --cluster-version=1.28 \
   --num-nodes=3 \

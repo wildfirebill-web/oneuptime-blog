@@ -16,6 +16,7 @@ Here is what happens without `wait_for_connection`:
 
 ```yaml
 # This will fail!
+
 - name: Reboot the server
   ansible.builtin.command: /sbin/reboot
   async: 1

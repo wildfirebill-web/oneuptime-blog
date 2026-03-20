@@ -20,6 +20,7 @@ Podman provides a Docker-compatible REST API that Portainer can use. By pointing
 
 ```bash
 # For rootful Podman (runs as root)
+
 sudo systemctl enable --now podman.socket
 sudo systemctl status podman.socket
 

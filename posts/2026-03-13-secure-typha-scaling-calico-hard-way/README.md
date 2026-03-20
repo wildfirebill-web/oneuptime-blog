@@ -32,6 +32,7 @@ Generate a dedicated Calico CA and component certificates:
 
 ```bash
 # Generate the Calico CA
+
 openssl genrsa -out calico-ca.key 4096
 openssl req -x509 -new -nodes -key calico-ca.key \
   -sha256 -days 3650 -out calico-ca.crt \

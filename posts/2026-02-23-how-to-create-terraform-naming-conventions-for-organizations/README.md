@@ -18,6 +18,7 @@ In Terraform, every resource has two names: the Terraform identifier and the clo
 
 ```hcl
 # Terraform identifier: "web_server"
+
 # This is the name used in Terraform code and state
 resource "aws_instance" "web_server" {
   # Cloud resource name: "prod-api-web-01"

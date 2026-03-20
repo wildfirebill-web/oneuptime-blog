@@ -161,6 +161,7 @@ Replace Docker systemd services or cron-based startup with Quadlet:
 Old Docker approach:
 ```bash
 # Cron or script that runs:
+
 docker run -d --restart always --name web -p 80:80 nginx
 ```
 

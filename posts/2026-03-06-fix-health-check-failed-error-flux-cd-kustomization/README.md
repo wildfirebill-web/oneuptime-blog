@@ -18,6 +18,7 @@ The health check failure appears in the Kustomization status:
 
 ```bash
 # Check Kustomization status
+
 flux get kustomizations -A
 
 # Get detailed error information

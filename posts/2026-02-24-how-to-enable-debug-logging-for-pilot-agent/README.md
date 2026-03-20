@@ -189,6 +189,7 @@ Since both pilot-agent and Envoy write to the same container's stdout, it can be
 
 ```bash
 # Pilot-agent logs typically contain these patterns
+
 kubectl logs my-pod -n my-namespace -c istio-proxy | grep -v "^\[20" | head -50
 
 # Envoy logs start with timestamps in a specific format

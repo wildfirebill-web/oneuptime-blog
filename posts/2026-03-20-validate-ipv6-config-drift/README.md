@@ -12,12 +12,13 @@ Configuration drift occurs when the actual state of a system diverges from the d
 
 ```bash
 # Desired state (in Puppet/Chef/Salt)
+
 net.ipv6.conf.all.use_tempaddr = 2     # Privacy extensions preferred
 
 # Actual state on server (after manual change)
 net.ipv6.conf.all.use_tempaddr = 0     # Privacy extensions disabled
 
-# This is drift — the system no longer matches the desired state
+# This is drift - the system no longer matches the desired state
 ```
 
 ## Detection with Puppet
@@ -41,7 +42,7 @@ puppet query 'resources[certname, title] {
 ## Detection with Chef InSpec
 
 ```ruby
-# ipv6_compliance.rb — InSpec profile for IPv6 compliance
+# ipv6_compliance.rb - InSpec profile for IPv6 compliance
 
 control 'ipv6-privacy-extensions' do
   impact 1.0
@@ -176,4 +177,4 @@ count(inspec_control_pass{control="ipv6-privacy-extensions"})
 count(inspec_control_fail{profile="ipv6_compliance"})
 ```
 
-Combining configuration management's continuous enforcement with compliance scanning provides a complete IPv6 drift detection and remediation pipeline — drift is automatically corrected on the next agent run, with compliance reports tracking the drift rate over time.
+Combining configuration management's continuous enforcement with compliance scanning provides a complete IPv6 drift detection and remediation pipeline - drift is automatically corrected on the next agent run, with compliance reports tracking the drift rate over time.

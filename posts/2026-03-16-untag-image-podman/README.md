@@ -20,6 +20,7 @@ It is important to understand the difference between untagging and removing.
 
 ```bash
 # Untag: removes a name/tag reference, image data remains if other tags exist
+
 podman untag myapp:old-tag
 
 # Remove (rmi): removes the image entirely if no containers reference it

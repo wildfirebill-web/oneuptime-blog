@@ -37,6 +37,7 @@ You need the following before starting:
 
 ```bash
 # Enable Cloud Workstations API
+
 gcloud services enable workstations.googleapis.com
 ```
 

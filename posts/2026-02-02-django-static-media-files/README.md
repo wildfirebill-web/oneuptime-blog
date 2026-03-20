@@ -63,6 +63,7 @@ The following settings control how Django finds and serves static files. Add the
 
 ```python
 # settings.py
+
 import os
 from pathlib import Path
 

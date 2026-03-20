@@ -25,6 +25,7 @@ Each team manages their repository independently with their own release cadence.
 
 ```yaml
 # payment-service-full.yaml - Combines manifests from four repos
+
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:

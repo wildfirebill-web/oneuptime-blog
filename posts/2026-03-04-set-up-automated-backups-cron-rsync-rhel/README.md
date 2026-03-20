@@ -17,6 +17,7 @@ Write a backup script with logging and retention:
 ```bash
 #!/bin/bash
 # /usr/local/bin/auto-backup.sh
+
 # Automated rsync backup with rotation
 
 # Configuration

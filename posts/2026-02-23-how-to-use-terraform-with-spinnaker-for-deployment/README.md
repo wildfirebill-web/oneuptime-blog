@@ -26,6 +26,7 @@ Start by using Terraform to create the infrastructure Spinnaker will deploy to, 
 
 ```hcl
 # providers.tf
+
 terraform {
   required_version = ">= 1.0"
 

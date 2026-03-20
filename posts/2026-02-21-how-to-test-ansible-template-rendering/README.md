@@ -46,6 +46,7 @@ The quickest way to verify template rendering is running the template task in ch
 
 ```bash
 # Run template rendering in check mode with diff output
+
 ansible-playbook deploy.yml --check --diff --tags template-only
 ```
 

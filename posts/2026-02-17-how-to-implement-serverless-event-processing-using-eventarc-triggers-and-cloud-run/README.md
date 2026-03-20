@@ -30,6 +30,7 @@ First, build a Cloud Run service that can receive and process events:
 
 ```python
 # main.py - Cloud Run service for processing events
+
 import os
 import json
 import logging

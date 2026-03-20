@@ -29,6 +29,7 @@ WireGuard is available in most package managers.
 
 ```bash
 # Debian/Ubuntu
+
 sudo apt update && sudo apt install wireguard
 
 # RHEL/CentOS/Rocky (EPEL required)

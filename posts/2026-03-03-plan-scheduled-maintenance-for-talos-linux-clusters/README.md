@@ -34,6 +34,7 @@ Before you can plan maintenance, you need to know exactly what you are working w
 
 ```bash
 # List all nodes in the cluster with their roles
+
 talosctl get members -n <control-plane-ip>
 
 # Check the current Talos version on each node

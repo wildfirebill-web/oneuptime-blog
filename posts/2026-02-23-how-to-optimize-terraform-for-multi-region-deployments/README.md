@@ -39,6 +39,7 @@ Each region has its own state file and runs independently. This is the best appr
 
 ```hcl
 # us-east-1/main.tf
+
 provider "aws" {
   region = "us-east-1"
 }

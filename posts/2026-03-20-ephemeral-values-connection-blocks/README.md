@@ -15,7 +15,8 @@ Connection blocks configure how OpenTofu connects to a remote machine for provis
 ## SSH Connection with Ephemeral Private Key
 
 ```hcl
-# Fetch SSH private key from Secrets Manager — never stored in state
+# Fetch SSH private key from Secrets Manager - never stored in state
+
 ephemeral "aws_secretsmanager_secret_version" "ssh_private_key" {
   secret_id = "production/ssh/ec2-deploy-key"
 }
@@ -127,7 +128,7 @@ resource "null_resource" "tls_configure" {
     user        = "admin"
     host        = var.target_host
 
-    # Certificate and key — neither stored in state
+    # Certificate and key - neither stored in state
     certificate = ephemeral.aws_secretsmanager_secret_version.client_cert.secret_string
     private_key = ephemeral.tls_private_key.client.private_key_pem
   }

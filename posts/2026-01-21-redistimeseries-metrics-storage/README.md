@@ -27,6 +27,7 @@ RedisTimeSeries offers several advantages over storing time-series data in regul
 
 ```bash
 # Docker
+
 docker run -d --name redis-stack -p 6379:6379 redis/redis-stack:latest
 
 # Verify module is loaded

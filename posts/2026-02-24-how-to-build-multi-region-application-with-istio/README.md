@@ -30,6 +30,7 @@ All clusters need certificates from the same root CA:
 
 ```bash
 # Create the root CA directory
+
 mkdir -p certs
 cd certs
 

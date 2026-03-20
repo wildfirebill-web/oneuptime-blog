@@ -29,6 +29,7 @@ Complete IPAM configuration reference for cluster-pool mode:
 
 ```bash
 # Cluster-pool IPAM specification
+
 helm upgrade cilium cilium/cilium \
   --namespace kube-system \
   --reuse-values \

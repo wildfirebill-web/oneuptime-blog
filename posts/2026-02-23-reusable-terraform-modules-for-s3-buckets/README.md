@@ -144,6 +144,7 @@ resource "aws_s3_bucket" "this" {
 }
 
 # Block all public access by default - this is critical for security
+
 resource "aws_s3_bucket_public_access_block" "this" {
   bucket = aws_s3_bucket.this.id
 

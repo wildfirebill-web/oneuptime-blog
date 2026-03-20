@@ -47,6 +47,7 @@ Key components:
 
 ```bash
 # Create a Storage Sync Service resource
+
 az resource create \
   --resource-group myresourcegroup \
   --name myStorageSyncService \

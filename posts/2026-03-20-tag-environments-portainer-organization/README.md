@@ -1,8 +1,8 @@
-# How to Tag Environments in Portainer for Better Organization
+# How to Tag Environments in Portainer for Better Organization - Organization
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Tags, Environments, Organization, Management
+Tags: Portainer, Tags, Environments, Organizations, Management
 
 Description: Apply tags to Portainer environments to filter, search, and organize large numbers of environments by type, location, or team.
 
@@ -34,6 +34,7 @@ TOKEN=$(curl -s -X POST \
   --insecure | python3 -c "import sys,json; print(json.load(sys.stdin)['jwt'])")
 
 # List all environments
+
 curl -s https://localhost:9443/api/endpoints \
   -H "Authorization: Bearer $TOKEN" \
   --insecure | python3 -c "

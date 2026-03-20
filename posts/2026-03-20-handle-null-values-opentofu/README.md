@@ -2,16 +2,17 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Null Values, Error Handling, HCL, Infrastructure as Code
+Tags: OpenTofu, NULL Values, Error Handling, HCL, Infrastructure as Code
 
 Description: Learn how to handle null values in OpenTofu configurations to build robust modules that work correctly whether optional inputs are provided or omitted.
 
-`null` in OpenTofu means "no value" — it is distinct from an empty string, zero, or false. Many resource arguments accept `null` to indicate "use the provider default." Understanding when and how to work with `null` lets you write flexible modules with clean optional parameter handling.
+`null` in OpenTofu means "no value" - it is distinct from an empty string, zero, or false. Many resource arguments accept `null` to indicate "use the provider default." Understanding when and how to work with `null` lets you write flexible modules with clean optional parameter handling.
 
 ## null Basics
 
 ```hcl
 # null can be assigned to any type
+
 variable "optional_tag" {
   type    = string
   default = null  # Not provided by default
@@ -25,7 +26,7 @@ locals {
 
 ## Passing null to Resource Arguments
 
-When you pass `null` to a resource argument, OpenTofu omits that argument from the API call — the provider uses its default:
+When you pass `null` to a resource argument, OpenTofu omits that argument from the API call - the provider uses its default:
 
 ```hcl
 resource "aws_instance" "app" {
@@ -33,7 +34,7 @@ resource "aws_instance" "app" {
   instance_type = var.instance_type
 
   # Passing null here means "let AWS choose the default subnet"
-  subnet_id     = var.subnet_id  # Can be null — AWS uses default VPC subnet
+  subnet_id     = var.subnet_id  # Can be null - AWS uses default VPC subnet
 }
 ```
 
@@ -89,14 +90,14 @@ data "aws_ami" "existing" {
 }
 
 locals {
-  # Safe access — returns "" if the data source result is null
+  # Safe access - returns "" if the data source result is null
   ami_description = try(data.aws_ami.existing.description, "")
 }
 ```
 
 ## Optional Object Attributes with null Defaults
 
-For complex input objects, `optional()` allows callers to omit attributes — OpenTofu sets them to `null` or a specified default:
+For complex input objects, `optional()` allows callers to omit attributes - OpenTofu sets them to `null` or a specified default:
 
 ```hcl
 variable "lb_config" {

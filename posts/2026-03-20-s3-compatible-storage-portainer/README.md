@@ -1,14 +1,14 @@
-# How to Configure S3-Compatible Storage for Portainer Workloads
+# How to Configure S3-Compatible Storage for Portainer Workloads (2)
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, S3, MinIO, Object Storage, Docker, DevOps, Backups
+Tags: Portainer, S3, MinIO, Object Storage, Docker, DevOps, Backup
 
 Description: Learn how to deploy and configure S3-compatible object storage (MinIO) via Portainer and use it for container workload data and backups.
 
 ---
 
-S3-compatible object storage is ideal for Portainer workloads that need scalable storage for file uploads, backups, logs, and media. Instead of paying for AWS S3, you can run MinIO — a high-performance, S3-compatible object store — as a container managed by Portainer. Any application that uses the AWS S3 SDK or API will work transparently with MinIO.
+S3-compatible object storage is ideal for Portainer workloads that need scalable storage for file uploads, backups, logs, and media. Instead of paying for AWS S3, you can run MinIO - a high-performance, S3-compatible object store - as a container managed by Portainer. Any application that uses the AWS S3 SDK or API will work transparently with MinIO.
 
 ---
 
@@ -17,7 +17,8 @@ S3-compatible object storage is ideal for Portainer workloads that need scalable
 Deploy MinIO as a Portainer stack for easy management.
 
 ```yaml
-# minio-stack.yml — S3-compatible object storage
+# minio-stack.yml - S3-compatible object storage
+
 version: "3.8"
 
 services:
@@ -30,7 +31,7 @@ services:
       - "9000:9000"    # S3 API
       - "9001:9001"    # MinIO Console UI
     environment:
-      # Admin credentials — change these!
+      # Admin credentials - change these!
       MINIO_ROOT_USER: minioadmin
       MINIO_ROOT_PASSWORD: minioadmin-secret-password
     volumes:
@@ -75,7 +76,7 @@ mc ls local/
 Configure your application to use MinIO as its S3 backend by providing S3-compatible environment variables.
 
 ```yaml
-# webapp-stack.yml — app using MinIO for file storage
+# webapp-stack.yml - app using MinIO for file storage
 version: "3.8"
 
 services:
@@ -133,10 +134,10 @@ In Portainer BE:
 
 ---
 
-## Step 5: Python Example — Upload Files to MinIO from a Container
+## Step 5: Python Example - Upload Files to MinIO from a Container
 
 ```python
-# upload_to_minio.py — use boto3 with MinIO
+# upload_to_minio.py - use boto3 with MinIO
 import boto3
 from botocore.client import Config
 
@@ -164,4 +165,4 @@ for obj in response.get("Contents", []):
 
 ## Summary
 
-MinIO deployed via Portainer gives you S3-compatible object storage with zero cloud cost. Applications using the AWS S3 SDK work without code changes — just point the endpoint URL to your MinIO container. For multi-container stacks, put MinIO on a shared Docker network so other containers can access it by service name.
+MinIO deployed via Portainer gives you S3-compatible object storage with zero cloud cost. Applications using the AWS S3 SDK work without code changes - just point the endpoint URL to your MinIO container. For multi-container stacks, put MinIO on a shared Docker network so other containers can access it by service name.

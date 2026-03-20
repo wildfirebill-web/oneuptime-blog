@@ -42,6 +42,7 @@ Create the app registration in your Azure AD tenant with multi-tenant support en
 
 ```bash
 # Register the application with multi-tenant audience
+
 az ad app create \
   --display-name "MySaaSApp" \
   --sign-in-audience "AzureADMultipleOrgs" \

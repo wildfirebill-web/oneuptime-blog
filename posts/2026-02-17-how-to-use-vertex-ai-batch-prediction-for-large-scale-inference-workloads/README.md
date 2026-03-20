@@ -36,6 +36,7 @@ from google.cloud import aiplatform
 aiplatform.init(project="your-project-id", location="us-central1")
 
 # Reference your uploaded model
+
 model = aiplatform.Model(
     "projects/your-project-id/locations/us-central1/models/YOUR_MODEL_ID"
 )

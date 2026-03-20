@@ -72,6 +72,7 @@ kubectl apply -f helm-repository.yaml
 kubectl apply -f helm-release.yaml
 
 # Wait for ESO to be ready
+
 kubectl wait --for=condition=ready pod -l app.kubernetes.io/name=external-secrets -n external-secrets --timeout=120s
 ```
 

@@ -18,6 +18,7 @@ Every Kubernetes resource has a resourceVersion field that changes whenever the 
 
 ```bash
 # Check resource version
+
 kubectl get deployment webapp -o yaml | grep resourceVersion
 
 resourceVersion: "12345678"

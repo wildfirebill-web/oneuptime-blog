@@ -18,6 +18,7 @@ Before managing npm packages, you need Node.js and npm on the target system. Her
 
 ```yaml
 # Install Node.js 20.x from NodeSource on Ubuntu
+
 - name: Download NodeSource setup script
   ansible.builtin.get_url:
     url: https://deb.nodesource.com/setup_20.x

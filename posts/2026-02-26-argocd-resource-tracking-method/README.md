@@ -83,6 +83,7 @@ If you install ArgoCD with the community Helm chart:
 
 ```yaml
 # values.yaml
+
 server:
   config:
     application.resourceTrackingMethod: "annotation+label"

@@ -29,6 +29,7 @@ sudo journalctl -u servicename -xe
 
 ```bash
 # Test configuration syntax (example for httpd)
+
 sudo httpd -t
 # For nginx
 sudo nginx -t

@@ -36,6 +36,7 @@ The most direct way to view revision history is through the Helm CLI:
 
 ```bash
 # View the complete revision history for a release
+
 helm history my-app -n default
 
 # Example output:

@@ -22,6 +22,7 @@ The simplest way to see your AKS costs is to look at the node resource group (th
 
 ```bash
 # Find your node resource group
+
 az aks show \
   --resource-group myRG \
   --name myAKS \

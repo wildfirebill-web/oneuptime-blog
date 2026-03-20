@@ -39,6 +39,7 @@ For a self-hosted approach, deploy a small service that accepts the Terraform Cl
 
 ```python
 # checkov_service.py
+
 # A simple Flask service that receives Terraform Cloud run task callbacks
 # and scans the plan with Checkov
 

@@ -14,6 +14,7 @@ GNU screen predates tmux and remains widely available on servers where tmux may 
 
 ```bash
 # screen is usually installed by default
+
 which screen
 screen --version
 

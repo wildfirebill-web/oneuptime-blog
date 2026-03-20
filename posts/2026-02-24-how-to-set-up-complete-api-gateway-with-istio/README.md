@@ -28,6 +28,7 @@ First, set up TLS with a proper certificate:
 
 ```bash
 # Create a TLS secret with your certificate
+
 kubectl create secret tls api-tls-cert \
   -n istio-system \
   --cert=fullchain.pem \

@@ -116,6 +116,7 @@ annotations:
 
 ```yaml
 # In your GitHub Actions workflow
+
 - name: Build and push
   run: |
     # Tag format: main-abc1234

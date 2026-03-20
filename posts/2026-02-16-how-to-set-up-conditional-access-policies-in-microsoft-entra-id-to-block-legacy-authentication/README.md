@@ -116,6 +116,7 @@ Here is an example of updating a PowerShell script from basic authentication to 
 
 ```powershell
 # Old approach using basic authentication (insecure)
+
 # $credential = Get-Credential
 # Connect-ExchangeOnline -Credential $credential
 

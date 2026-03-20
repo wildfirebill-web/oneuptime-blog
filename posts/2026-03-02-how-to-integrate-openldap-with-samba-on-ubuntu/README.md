@@ -39,6 +39,7 @@ OpenLDAP needs the Samba schema to store Windows-specific account attributes:
 
 ```bash
 # Check if the samba schema is already in the config
+
 sudo ldapsearch -Y EXTERNAL -H ldapi:/// \
   -b "cn=schema,cn=config" "(cn=*samba*)"
 

@@ -26,6 +26,7 @@ Check if you have a legacy network:
 
 ```bash
 # List all networks and their types
+
 gcloud compute networks list \
   --format="table(name, subnet_mode, autoCreateSubnetworks, IPv4Range)"
 ```

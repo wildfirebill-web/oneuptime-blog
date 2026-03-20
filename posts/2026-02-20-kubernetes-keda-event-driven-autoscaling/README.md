@@ -29,6 +29,7 @@ The key advantage of KEDA over plain custom metrics HPA is that KEDA can scale d
 
 ```bash
 # Install KEDA using Helm
+
 helm repo add kedacore https://kedacore.github.io/charts
 helm repo update
 

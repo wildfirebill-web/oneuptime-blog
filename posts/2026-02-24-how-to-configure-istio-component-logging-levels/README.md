@@ -147,6 +147,7 @@ The `istioctl` command gives you a convenient way to manage proxy log levels acr
 
 ```bash
 # Set all proxies in a namespace to debug
+
 for pod in $(kubectl get pods -n my-namespace -o jsonpath='{.items[*].metadata.name}'); do
   istioctl proxy-config log "$pod" -n my-namespace --level debug
 done

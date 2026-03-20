@@ -20,6 +20,7 @@ Start by ensuring the Istio control plane is healthy:
 
 ```bash
 # Check all Istio pods in the istio-system namespace
+
 kubectl get pods -n istio-system
 
 # Check for any pods in non-Running state

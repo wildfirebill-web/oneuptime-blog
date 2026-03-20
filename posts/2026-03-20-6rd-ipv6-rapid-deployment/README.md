@@ -19,7 +19,7 @@ Description: Learn how 6rd (IPv6 Rapid Deployment) works as an ISP-controlled IP
 | Address assignment | Auto from public IPv4 | ISP prefix + IPv4 embedded |
 | IPv4 support | Public IPs only | ISP controls (can include private IPv4) |
 | Relay quality | Uncontrolled | ISP SLA |
-| Status | Deprecated (RFC 7526) | Transitional — mostly replaced by dual-stack |
+| Status | Deprecated (RFC 7526) | Transitional - mostly replaced by dual-stack |
 
 ## Address Derivation
 
@@ -28,7 +28,7 @@ The ISP defines:
 - IPv4 mask bits to embed (e.g., 32 bits = full IPv4)
 
 Example:
-```
+```text
 6rd Prefix:    2001:db8::/32
 IPv4 mask:     32 bits (full IPv4 address embedded)
 Customer IPv4: 192.0.2.10 = c0:00:02:0a
@@ -40,8 +40,8 @@ Customer IPv4: 192.0.2.10 = c0:00:02:0a
 6rd BR (relay) IPv4: 198.51.100.1
 ```
 
-If the ISP shortens the IPv4 mask (e.g., 24 bits — last octet removed), the prefix is longer:
-```
+If the ISP shortens the IPv4 mask (e.g., 24 bits - last octet removed), the prefix is longer:
+```text
 6rd Prefix:    2001:db8::/32
 IPv4 mask:     24 bits (first 3 octets of IPv4)
 IPv4 bits:     192.0.2 = c0:00:02
@@ -53,7 +53,7 @@ CE prefix: 2001:db8:c000:02XX::/56   (X = dynamic host ID)
 
 The ISP provisions 6rd parameters to CPE devices via DHCPv4 option 212 (RFC 5969):
 
-```
+```text
 DHCP option 212 carries:
   - IPv4MaskLen: bits of IPv4 to embed (e.g., 32)
   - 6rdPrefix: e.g., 2001:db8::/32
@@ -77,7 +77,8 @@ graph LR
 A home router (CPE) implementing 6rd:
 
 ```bash
-# Linux CPE — manual 6rd configuration
+# Linux CPE - manual 6rd configuration
+
 # (normally auto-provisioned via DHCPv4 option 212)
 
 IP4=192.0.2.10        # WAN IPv4 from ISP DHCP
@@ -122,16 +123,16 @@ interface eth0 {
 ## Real-World 6rd Deployments
 
 6rd was deployed by several ISPs during 2009-2015:
-- **Free (Iliad, France)** — first ISP, deployed 2008
-- **Comcast** — tested but ultimately went to native dual-stack
-- **US ISPs** — brief deployment then transitioned to native IPv6
+- **Free (Iliad, France)** - first ISP, deployed 2008
+- **Comcast** - tested but ultimately went to native dual-stack
+- **US ISPs** - brief deployment then transitioned to native IPv6
 
 Most ISPs that deployed 6rd have since migrated to native dual-stack. 6rd is considered a transitional mechanism, not a permanent solution.
 
 ## Security Considerations
 
 ```bash
-# 6rd traffic is protocol 41 — same as 6in4
+# 6rd traffic is protocol 41 - same as 6in4
 # Filter non-authorized 6rd tunnels
 
 # Block protocol 41 from sources other than ISP BR
@@ -144,4 +145,4 @@ ip6tables -I FORWARD -s 2001:db8:c000::/36 -j DROP
 
 ## Summary
 
-6rd (RFC 5969) solved 6to4's relay quality problem by using ISP-controlled Border Relays with operator-guaranteed uplinks. The ISP assigns a custom prefix (not the broken `2002::/16`) and embeds some or all of the customer's IPv4 address. CPE is provisioned via DHCPv4 option 212. Like 6to4, 6rd is a transitional mechanism — most ISPs have moved to native dual-stack. 6rd traffic uses IP protocol 41 (same as 6in4), so the same firewall blocking rules apply.
+6rd (RFC 5969) solved 6to4's relay quality problem by using ISP-controlled Border Relays with operator-guaranteed uplinks. The ISP assigns a custom prefix (not the broken `2002::/16`) and embeds some or all of the customer's IPv4 address. CPE is provisioned via DHCPv4 option 212. Like 6to4, 6rd is a transitional mechanism - most ISPs have moved to native dual-stack. 6rd traffic uses IP protocol 41 (same as 6in4), so the same firewall blocking rules apply.

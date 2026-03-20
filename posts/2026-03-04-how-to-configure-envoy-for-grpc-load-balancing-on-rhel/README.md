@@ -14,6 +14,7 @@ gRPC uses HTTP/2 for transport, which means traditional L4 load balancers cannot
 
 ```bash
 # Download Envoy binary
+
 curl -L https://github.com/envoyproxy/envoy/releases/download/v1.28.0/envoy-1.28.0-linux-x86_64 \
   -o /usr/local/bin/envoy
 sudo chmod +x /usr/local/bin/envoy

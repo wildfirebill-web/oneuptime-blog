@@ -20,6 +20,7 @@ Ubuntu ships with AppArmor enabled and profiles for many common services: nginx,
 
 ```bash
 # Check AppArmor service status
+
 sudo systemctl status apparmor
 
 # Quick check: is AppArmor enabled in the kernel?

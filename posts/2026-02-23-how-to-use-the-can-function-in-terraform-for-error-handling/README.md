@@ -16,6 +16,7 @@ The `can` function evaluates an expression and returns `true` if it succeeds or 
 
 ```hcl
 # Test if an expression is valid
+
 > can(tonumber("42"))
 true
 

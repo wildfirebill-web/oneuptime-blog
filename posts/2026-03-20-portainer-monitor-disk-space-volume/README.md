@@ -42,6 +42,7 @@ You can open a shell inside a running container that uses the volume and inspect
 
 ```bash
 # Inside the container shell (open via Portainer > Container > Console)
+
 df -h /data
 
 # Example output:

@@ -16,6 +16,7 @@ The foundation of containerizing any .NET application starts with a well-structu
 
 ```dockerfile
 # Dockerfile for a basic ASP.NET Core application
+
 # This single-stage build is simple but produces larger images
 
 # Use the official .NET 8 SDK image as the base

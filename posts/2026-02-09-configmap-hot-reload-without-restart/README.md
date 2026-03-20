@@ -20,6 +20,7 @@ The key insight is that your application needs to detect these file changes and 
 
 ```yaml
 # configmap.yaml
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

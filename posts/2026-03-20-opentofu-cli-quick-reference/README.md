@@ -14,6 +14,7 @@ This quick reference covers the most frequently used OpenTofu CLI commands. Keep
 
 ```bash
 # Initialize working directory (download providers and modules)
+
 tofu init
 
 # Initialize and upgrade providers/modules to latest allowed versions

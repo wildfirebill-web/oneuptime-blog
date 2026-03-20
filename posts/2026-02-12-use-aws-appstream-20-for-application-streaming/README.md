@@ -39,6 +39,7 @@ An AppStream image contains the applications you want to stream. You build it us
 
 ```bash
 # Create an Image Builder instance to install your applications
+
 aws appstream create-image-builder \
   --name "app-image-builder" \
   --description "Image builder for engineering applications" \

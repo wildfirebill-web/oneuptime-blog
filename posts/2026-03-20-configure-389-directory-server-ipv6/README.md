@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: 389 Directory Server, IPv6, LDAP, Red Hat, Directory Service, Linux
+Tags: 389 Directory Server, IPv6, LDAP, Red Hat, Directory Services, Linux
 
 Description: Configure 389 Directory Server (Red Hat Directory Server) to listen on IPv6 interfaces, manage access controls for IPv6 clients, and verify LDAP connectivity over IPv6.
 
@@ -14,6 +14,7 @@ Description: Configure 389 Directory Server (Red Hat Directory Server) to listen
 
 ```bash
 # RHEL/CentOS/AlmaLinux/Fedora
+
 sudo dnf install 389-ds-base -y
 
 # Ubuntu (if available)

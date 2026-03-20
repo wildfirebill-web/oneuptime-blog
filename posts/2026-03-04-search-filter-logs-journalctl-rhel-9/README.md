@@ -14,6 +14,7 @@ journalctl is the command-line tool for querying the systemd journal on RHEL. It
 
 ```bash
 # View all journal entries (oldest first)
+
 journalctl
 
 # View the most recent entries first

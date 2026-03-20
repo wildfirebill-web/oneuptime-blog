@@ -219,6 +219,7 @@ Query Flux metrics for drift:
 
 ```promql
 # Kustomization apply failures (potential drift)
+
 gotk_reconcile_condition{kind="Kustomization",status="False",type="Ready"}
 
 # Time since last successful reconciliation

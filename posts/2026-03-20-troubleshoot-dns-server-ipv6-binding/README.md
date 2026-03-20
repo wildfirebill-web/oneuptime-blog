@@ -12,8 +12,9 @@ DNS servers fail to bind to IPv6 addresses for several reasons: the address is n
 
 ## Common Error Messages
 
-```
+```text
 # BIND
+
 named: IPv6 is not supported
 named: could not listen on UDP socket: address in use
 named: OS reports: Can't assign requested address
@@ -104,7 +105,7 @@ named -V | grep -i "ipv6\|use-v6"
 # Common mistake: listen-on-v6 is missing
 options {
     listen-on    { 127.0.0.1; };
-    # listen-on-v6 missing — BIND won't listen on IPv6!
+    # listen-on-v6 missing - BIND won't listen on IPv6!
     listen-on-v6 { any; };  # ADD THIS
 };
 ```

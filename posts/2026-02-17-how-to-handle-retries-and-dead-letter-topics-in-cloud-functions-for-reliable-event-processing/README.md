@@ -36,6 +36,7 @@ You can configure the retry delay using exponential backoff on the Pub/Sub subsc
 
 ```bash
 # First, find the subscription name created by the trigger
+
 gcloud pubsub subscriptions list \
   --format="value(name)" \
   --filter="topic=projects/my-project/topics/my-topic"

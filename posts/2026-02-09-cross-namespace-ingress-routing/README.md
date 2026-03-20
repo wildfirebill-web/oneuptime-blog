@@ -29,6 +29,7 @@ The simplest approach: create Ingress resources in each namespace.
 
 ```yaml
 # In namespace: team-a
+
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:

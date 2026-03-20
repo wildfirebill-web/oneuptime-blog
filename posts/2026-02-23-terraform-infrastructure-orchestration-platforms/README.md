@@ -37,6 +37,7 @@ terraform {
 provider "spacelift" {}
 
 # Create a stack for the networking layer
+
 resource "spacelift_stack" "networking" {
   name        = "networking-production"
   description = "Production VPC and networking resources"

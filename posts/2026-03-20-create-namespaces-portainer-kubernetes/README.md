@@ -31,6 +31,7 @@ Namespaces provide a mechanism for isolating groups of resources within a cluste
 
 ```bash
 # Good namespace names
+
 production
 staging
 development

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Layer 7, Load Balancing, HAProxy, nginx, HTTP, Application
+Tags: IPv6, Layer 7, Load Balancing, HAProxy, Nginx, HTTP, Application
 
 Description: A guide to configuring Layer 7 IPv6 load balancing with HAProxy and nginx, enabling content-based routing and application-aware traffic distribution over IPv6.
 
@@ -10,7 +10,7 @@ Layer 7 load balancing distributes traffic based on HTTP headers, URL paths, coo
 
 ## HAProxy Layer 7 IPv6 Load Balancing
 
-```
+```text
 # /etc/haproxy/haproxy.cfg
 
 global
@@ -28,6 +28,7 @@ defaults
 
 ###############################
 # Frontend: Accept IPv6 clients
+
 ###############################
 
 frontend ipv6_http
@@ -156,7 +157,7 @@ set_real_ip_from 2001:db8:lb::/64;    # Trust your LB subnet
 real_ip_recursive on;
 ```
 
-```
+```text
 # HAProxy: extract IPv6 client for logging
 log-format "%ci:%cp [%t] %ft %b/%s %Tq/%Tw/%Tc/%Tr/%Tt %ST %B %hr %hs %{+Q}r"
 # %ci = client IP (IPv4 or IPv6)

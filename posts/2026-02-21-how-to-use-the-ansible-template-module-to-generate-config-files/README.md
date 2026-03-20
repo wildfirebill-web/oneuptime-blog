@@ -18,6 +18,7 @@ The `template` module takes a Jinja2 template file from the control node, proces
 
 ```yaml
 # basic-template.yml
+
 # Renders a Jinja2 template to a configuration file on the remote host
 - name: Deploy application configuration
   hosts: webservers

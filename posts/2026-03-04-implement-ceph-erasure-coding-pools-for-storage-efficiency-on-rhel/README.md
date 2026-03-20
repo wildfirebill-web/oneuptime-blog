@@ -21,6 +21,7 @@ An EC profile defines:
 
 ```bash
 # Create a 4+2 profile (4 data chunks, 2 parity chunks)
+
 # Requires at least 6 OSDs across different failure domains
 sudo ceph osd erasure-code-profile set ec-42-profile \
     k=4 m=2 \

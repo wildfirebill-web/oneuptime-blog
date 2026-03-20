@@ -18,6 +18,7 @@ Without resource limits, a misbehaving container can starve other workloads of C
 
 ```bash
 # Create a pod
+
 podman pod create --name limited-pod -p 8080:80
 
 # Run a container with a 256MB memory limit

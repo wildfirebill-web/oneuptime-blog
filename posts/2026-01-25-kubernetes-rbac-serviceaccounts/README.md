@@ -37,6 +37,7 @@ Start by creating a dedicated ServiceAccount for your application:
 
 ```yaml
 # serviceaccount.yaml
+
 # Creates a ServiceAccount for the monitoring application
 apiVersion: v1
 kind: ServiceAccount

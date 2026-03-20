@@ -14,7 +14,7 @@ Wake-on-LAN (WoL) relies on a broadcast UDP magic packet sent to port 9. This wo
 
 A magic packet consists of 6 bytes of `FF` followed by the target MAC address repeated 16 times, sent as a UDP broadcast:
 
-```
+```text
 FF FF FF FF FF FF
 AA BB CC DD EE FF  (×16)
 ```
@@ -25,7 +25,7 @@ The packet is sent to the subnet's directed broadcast address (e.g., `192.168.2.
 
 Directed broadcast must be explicitly enabled on the interface facing the target subnet:
 
-```
+```text
 ! Enable directed broadcast on the interface facing 192.168.2.0/24
 interface GigabitEthernet0/2
  ip directed-broadcast
@@ -39,6 +39,7 @@ On a Linux router, use `iptables` to forward UDP port 9 broadcasts:
 
 ```bash
 # Enable IP forwarding
+
 echo 1 | sudo tee /proc/sys/net/ipv4/ip_forward
 
 # Forward WoL packets arriving on eth0 to the target subnet broadcast
@@ -95,7 +96,7 @@ wake_on_lan("AA:BB:CC:DD:EE:FF", "192.168.2.255")
 ## Verifying with tcpdump
 
 ```bash
-# On the target subnet — confirm the magic packet arrives
+# On the target subnet - confirm the magic packet arrives
 sudo tcpdump -i eth0 -n -X "udp dst port 9" | head -40
 ```
 

@@ -18,7 +18,7 @@ A Network Load Balancer (NLB) operates at Layer 4 (TCP/UDP) of the OSI model, of
 
 ## Project Structure
 
-```
+```text
 nlb-example/
 ├── main.tf
 ├── variables.tf
@@ -30,6 +30,7 @@ nlb-example/
 
 ```hcl
 # main.tf
+
 terraform {
   required_providers {
     aws = {

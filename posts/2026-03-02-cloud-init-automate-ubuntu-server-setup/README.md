@@ -28,6 +28,7 @@ cloud-init accepts several user-data formats. The most common is cloud-config (Y
 ```yaml
 #cloud-config
 # This line is required - cloud-init identifies the format from it
+
 ```
 
 Other formats include shell scripts (starting with `#!/bin/sh`), and multi-part MIME archives combining multiple formats.

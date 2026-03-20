@@ -22,6 +22,7 @@ OpenTelemetry SDKs come with default histogram buckets suitable for general late
 
 ```python
 # default_histograms.py
+
 from opentelemetry import metrics
 from opentelemetry.sdk.metrics import MeterProvider
 from opentelemetry.sdk.metrics.export import PeriodicExportingMetricReader

@@ -34,6 +34,7 @@ You need:
 
 ```bash
 # Set up the HDD-based volume group
+
 sudo pvcreate /dev/sdb    # HDD
 sudo pvcreate /dev/sdc    # SSD
 

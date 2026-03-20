@@ -1,4 +1,4 @@
-# How to Configure Longhorn ReadWriteMany (RWX) Volumes
+# How to Set Up Longhorn ReadWriteMany (RWX) Volumes
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -26,6 +26,7 @@ Longhorn creates a RWX volume by:
 
 ```bash
 # Check if the share-manager image is available
+
 kubectl get pods -n longhorn-system | grep share-manager
 
 # Check Longhorn settings for RWX
@@ -179,5 +180,5 @@ kubectl debug node/<node-name> -it --image=busybox -- \
 ## Best Practices
 
 - Use RWX volumes for content that genuinely needs concurrent multi-pod access, such as shared web content, uploads, or log aggregation.
-- Note that RWX volumes have higher latency than RWO volumes due to the NFS layer — for performance-critical workloads, prefer RWO with appropriate application-level sharding.
-- Ensure your network allows NFS traffic (port 2049) between nodes and the share-manager pod — NetworkPolicy rules may block this if not explicitly allowed.
+- Note that RWX volumes have higher latency than RWO volumes due to the NFS layer - for performance-critical workloads, prefer RWO with appropriate application-level sharding.
+- Ensure your network allows NFS traffic (port 2049) between nodes and the share-manager pod - NetworkPolicy rules may block this if not explicitly allowed.

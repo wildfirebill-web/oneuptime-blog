@@ -16,6 +16,7 @@ Validating a datastore import requires confirming that all exported resources ar
 
 ```bash
 # Export Calico datastore (backup or migration)
+
 calicoctl datastore migrate export > calico-backup-$(date +%Y%m%d).yaml
 
 # Verify export content

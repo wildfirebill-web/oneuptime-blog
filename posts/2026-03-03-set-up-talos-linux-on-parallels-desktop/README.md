@@ -31,6 +31,7 @@ Install `talosctl` and `kubectl` using Homebrew:
 
 ```bash
 # Install talosctl
+
 brew install siderolabs/tap/talosctl
 
 # Install kubectl if you don't already have it

@@ -52,6 +52,7 @@ This Prometheus query populates a dropdown with all Kubernetes namespaces:
 
 ```promql
 # Variable query to get all namespaces
+
 label_values(kube_pod_info, namespace)
 ```
 

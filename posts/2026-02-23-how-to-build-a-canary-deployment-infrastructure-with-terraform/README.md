@@ -31,6 +31,7 @@ The foundation of canary deployments is traffic splitting at the load balancer l
 
 ```hcl
 # Application Load Balancer
+
 resource "aws_lb" "app" {
   name               = "app-${var.environment}"
   internal           = false

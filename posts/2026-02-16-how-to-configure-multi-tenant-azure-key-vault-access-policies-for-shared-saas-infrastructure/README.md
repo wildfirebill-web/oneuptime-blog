@@ -32,6 +32,7 @@ Create the Key Vault with RBAC authorization enabled. This is critical - the old
 
 ```bash
 # Create the Key Vault with RBAC authorization instead of access policies
+
 az keyvault create \
   --name kv-saas-shared \
   --resource-group rg-saas-app \

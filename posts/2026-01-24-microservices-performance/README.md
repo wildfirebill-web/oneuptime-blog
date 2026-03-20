@@ -44,6 +44,7 @@ Each arrow in this diagram represents potential latency. A single user request m
 
 ```python
 # BAD: Multiple sequential service calls
+
 # Total latency = sum of all individual call latencies
 async def get_user_dashboard_bad(user_id: str):
     # Each call waits for the previous one - very slow

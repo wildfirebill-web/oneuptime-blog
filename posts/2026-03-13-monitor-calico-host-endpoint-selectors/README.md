@@ -29,6 +29,7 @@ Felix exposes metrics that indicate how many active local policies are programme
 
 ```bash
 # Query active policy count
+
 kubectl exec -n calico-system ds/calico-node -- \
   curl -s localhost:9091/metrics | grep felix_active_local_policies
 ```

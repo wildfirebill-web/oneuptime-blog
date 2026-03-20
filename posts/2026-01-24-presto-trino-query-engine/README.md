@@ -49,6 +49,7 @@ The coordinator parses queries, plans execution, and distributes work to workers
 
 ```properties
 # etc/node.properties
+
 # Basic node identification - set on every node
 
 # Unique identifier for this installation
@@ -233,7 +234,7 @@ postgresql.experimental.enable-string-pushdown-with-collate=true
 
 ---
 
-## Resource Groups for Workload Management
+Resource Groups for Workload Management
 
 Control how different users and queries share cluster resources.
 

@@ -50,6 +50,7 @@ If you're using AWS Organizations, enable trusted access first:
 
 ```bash
 # Enable trusted access for StackSets in AWS Organizations
+
 aws organizations enable-aws-service-access \
   --service-principal member.org.stacksets.cloudformation.amazonaws.com
 ```

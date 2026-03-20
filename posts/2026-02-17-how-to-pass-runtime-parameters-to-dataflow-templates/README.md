@@ -121,6 +121,7 @@ Once your pipeline is ready, you stage it as a template using the Dataflow runne
 
 ```bash
 # Build and stage the template to GCS
+
 mvn compile exec:java \
   -Dexec.mainClass=com.example.MyTemplatePipeline \
   -Dexec.args=" \

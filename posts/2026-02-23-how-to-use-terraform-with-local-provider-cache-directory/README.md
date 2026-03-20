@@ -20,6 +20,7 @@ There are two ways to configure the cache: an environment variable and a CLI con
 
 ```bash
 # Add to your shell profile
+
 export TF_PLUGIN_CACHE_DIR="$HOME/.terraform.d/plugin-cache"
 
 # Create the directory

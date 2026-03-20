@@ -18,6 +18,7 @@ kubectl get pods -n kube-system -l k8s-app=calico-node
 
 kubectl get pods -n calico-system -l app=calico-node
 # Or in calico-system namespace depending on installation
+
 ```
 
 ## Step 2: Check Which Policies Apply to a Pod
@@ -57,7 +58,7 @@ DATASTORE_TYPE=kubernetes KUBECONFIG=~/.kube/config \
   calicoctl get workloadendpoint -n production -o yaml | \
   grep -A20 "my-pod"
 
-# Check the "profiles" and "policies" fields — these show what policies are enforced
+# Check the "profiles" and "policies" fields - these show what policies are enforced
 ```
 
 ## Step 5: Check iptables Rules on the Node
@@ -81,7 +82,7 @@ sudo iptables -L -n -v | grep -i "DROP\|REJECT"
 ## Step 6: Enable Calico Packet Logging
 
 ```yaml
-# calico-logging-policy.yaml — log dropped packets
+# calico-logging-policy.yaml - log dropped packets
 apiVersion: crd.projectcalico.org/v1
 kind: GlobalNetworkPolicy
 metadata:

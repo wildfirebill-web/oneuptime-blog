@@ -45,6 +45,7 @@ No permanent elevated roles. No manual cleanup. The access grant has a built-in 
 
 ```bash
 # Enable the PAM API
+
 gcloud services enable privilegedaccessmanager.googleapis.com \
     --project=my-project
 ```

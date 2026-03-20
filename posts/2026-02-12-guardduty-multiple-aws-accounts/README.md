@@ -37,6 +37,7 @@ First, enable GuardDuty in the Organizations management account if it isn't alre
 
 ```bash
 # In the management account
+
 aws guardduty create-detector --enable
 ```
 

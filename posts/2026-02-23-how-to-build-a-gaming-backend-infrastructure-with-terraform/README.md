@@ -32,6 +32,7 @@ Start with Cognito for player sign-up and login.
 
 ```hcl
 # Cognito User Pool for players
+
 resource "aws_cognito_user_pool" "players" {
   name = "game-players"
 

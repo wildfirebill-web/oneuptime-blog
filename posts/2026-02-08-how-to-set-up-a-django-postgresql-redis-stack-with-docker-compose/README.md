@@ -52,6 +52,7 @@ Build a Docker image for the Django application:
 
 ```dockerfile
 # Dockerfile - Django application with all dependencies
+
 FROM python:3.12-slim
 
 # Prevent Python from writing .pyc files and enable unbuffered output

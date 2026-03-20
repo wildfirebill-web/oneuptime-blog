@@ -28,6 +28,7 @@ The Cilium organization hosts multiple repositories with distinct purposes.
 
 ```bash
 # Clone the main Cilium repository to browse examples locally
+
 git clone https://github.com/cilium/cilium.git
 
 # Key directories within the repo:

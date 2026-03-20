@@ -652,6 +652,7 @@ from cassandra.auth import PlainTextAuthProvider
 from datetime import datetime, timedelta
 
 # Configure authentication
+
 auth_provider = PlainTextAuthProvider(
     username='query_user',
     password='password'

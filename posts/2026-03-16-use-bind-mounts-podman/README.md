@@ -20,6 +20,7 @@ Podman supports two syntaxes for bind mounts:
 
 ```bash
 # Short syntax with -v
+
 podman run -v /host/path:/container/path myimage
 
 # Long syntax with --mount

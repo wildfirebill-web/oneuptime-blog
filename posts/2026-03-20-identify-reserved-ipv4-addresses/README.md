@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: IPv4, Networking, Reserved Addresses, IP Addressing, RFC, Network Design
 
-Description: Several IPv4 address blocks are reserved by IANA for special purposes including loopback, link-local, documentation, multicast, and future use, and these must never be assigned to regular hosts or routed publicly.
+Description: Several IPv4 address blocks are reserved by IANA for special purposes including loopback, link-local, documentation, multicast, and future use, and these must never be assigned to regular hosts or...
 
 ## IANA Special-Purpose Address Registry
 
@@ -51,6 +51,7 @@ def describe_address(ip: str) -> str:
     return "Unknown"
 
 # Test a variety of addresses
+
 for ip in ["0.0.0.0", "10.1.2.3", "100.64.0.1", "127.0.0.1",
            "169.254.1.1", "192.0.2.1", "224.0.0.1", "240.0.0.1",
            "255.255.255.255", "8.8.8.8"]:

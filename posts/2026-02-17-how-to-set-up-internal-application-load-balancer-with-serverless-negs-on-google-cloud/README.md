@@ -36,6 +36,7 @@ Before starting, make sure you have a VPC network and a Cloud Run service deploy
 
 ```bash
 # Deploy a sample Cloud Run service that we will put behind the internal load balancer
+
 gcloud run deploy my-internal-service \
     --image=gcr.io/cloudrun/hello \
     --region=us-central1 \

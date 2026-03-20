@@ -59,6 +59,7 @@ flowchart TB
 
 ```bash
 # Check requirements
+
 # Longhorn requires open-iscsi on all nodes
 
 # Ubuntu/Debian

@@ -1,10 +1,10 @@
-# How to Fix "Error: Resource Already Exists" in OpenTofu
+# How to Fix 'Error: Resource Already Exists' in OpenTofu
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: OpenTofu, Troubleshooting, Resource Import, Error, Infrastructure as Code, State
 
-Description: Learn how to resolve the "resource already exists" error in OpenTofu by importing the existing resource into state or using data sources to reference it.
+Description: Learn how to resolve the 'resource already exists' error in OpenTofu by importing the existing resource into state or using data sources to reference it.
 
 ## Introduction
 
@@ -12,7 +12,7 @@ Description: Learn how to resolve the "resource already exists" error in OpenTof
 
 ## Common Error Examples
 
-```
+```text
 Error: creating EC2 VPC (10.0.0.0/16): VpcLimitExceeded: The maximum number of VPCs has been reached for this account.
 
 Error: creating S3 Bucket (my-app-bucket): BucketAlreadyOwnedByYou: Your previous request to create the named bucket succeeded and you already own it.
@@ -26,6 +26,7 @@ The correct fix is to bring the existing resource under OpenTofu management:
 
 ```bash
 # Find the existing resource's ID
+
 aws ec2 describe-vpcs --filters "Name=tag:Name,Values=prod-vpc" \
   --query "Vpcs[0].VpcId" --output text
 # Output: vpc-0abc123def456789
@@ -36,7 +37,7 @@ tofu import aws_vpc.main vpc-0abc123def456789
 # Verify the import
 tofu state show aws_vpc.main
 
-# Run plan — should show no changes if the config matches the resource
+# Run plan - should show no changes if the config matches the resource
 tofu plan
 ```
 
@@ -70,7 +71,7 @@ tofu import google_storage_bucket.main my-project/my-bucket
 Instead of running the import command manually, declare imports in your configuration:
 
 ```hcl
-# import.tf — declarative import
+# import.tf - declarative import
 import {
   to = aws_vpc.main
   id = "vpc-0abc123def456789"
@@ -96,7 +97,7 @@ tofu apply
 If the resource is managed elsewhere and you only need to reference it:
 
 ```hcl
-# Don't create the VPC — read the existing one
+# Don't create the VPC - read the existing one
 data "aws_vpc" "existing" {
   filter {
     name   = "tag:Name"

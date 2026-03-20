@@ -212,6 +212,7 @@ def run_maintenance_window():
     conn.close()
 
 # Schedule maintenance for low traffic periods
+
 schedule.every().day.at("02:00").do(run_maintenance_window)
 schedule.every().sunday.at("03:00").do(run_full_maintenance)
 

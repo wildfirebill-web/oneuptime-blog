@@ -240,6 +240,7 @@ Run a specific fuzz test for a duration:
 
 ```bash
 # Run FuzzParseURL for 30 seconds
+
 go test -fuzz=FuzzParseURL -fuzztime=30s
 
 # Run all fuzz tests in a package for 1 minute each

@@ -18,6 +18,7 @@ Understanding the operator's upgrade state machine and the conditions that can s
 
 ```bash
 # Check why the DaemonSet rollout is stuck
+
 kubectl rollout status ds/calico-node -n calico-system
 
 # Check specific pod states

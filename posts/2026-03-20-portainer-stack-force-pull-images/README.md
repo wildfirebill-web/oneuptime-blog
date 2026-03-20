@@ -1,4 +1,4 @@
-# How to Force Pull Latest Images When Updating Stacks in Portainer
+# How to Force Pull Latest Images When Updating Stacks in Portainer (2)
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Learn how to force Portainer to pull the latest version of Docker i
 
 ## Introduction
 
-Docker caches images locally to speed up deployments. When you update a stack, Docker only pulls an image if its tag is not already present locally — meaning `myapp:latest` will not be re-pulled if that tag already exists on the host, even if the upstream image was updated. For stacks using mutable tags (like `latest`, `main`, or `stable`), this behavior prevents getting the newest image. Portainer's **Force re-pull images** option and CLI techniques solve this problem.
+Docker caches images locally to speed up deployments. When you update a stack, Docker only pulls an image if its tag is not already present locally - meaning `myapp:latest` will not be re-pulled if that tag already exists on the host, even if the upstream image was updated. For stacks using mutable tags (like `latest`, `main`, or `stable`), this behavior prevents getting the newest image. Portainer's **Force re-pull images** option and CLI techniques solve this problem.
 
 ## Prerequisites
 
@@ -17,12 +17,12 @@ Docker caches images locally to speed up deployments. When you update a stack, D
 
 ## Why Force Pull Is Needed
 
-```
+```bash
 Scenario:
 1. You build and push myorg/api:latest to Docker Hub
 2. Docker host already has myorg/api:latest cached
-3. Stack update runs — Docker sees tag exists, skips pull
-4. Old image is still running — your update is NOT deployed!
+3. Stack update runs - Docker sees tag exists, skips pull
+4. Old image is still running - your update is NOT deployed!
 
 Fix: Force pull ensures Docker always contacts the registry
      and downloads the latest digest for the tag
@@ -53,6 +53,7 @@ For Git-based stacks with automatic updates:
 
 ```bash
 # Pull the latest image manually:
+
 docker pull myorg/api:latest
 
 # Then restart the container to use the new image:
@@ -72,12 +73,12 @@ docker service update --image myorg/api:latest my-stack_api
 For production, use immutable image digests instead of mutable tags:
 
 ```yaml
-# Mutable tag — might not get re-pulled:
+# Mutable tag - might not get re-pulled:
 services:
   api:
     image: myorg/api:latest
 
-# Immutable digest — always points to exact image:
+# Immutable digest - always points to exact image:
 services:
   api:
     image: myorg/api@sha256:abc123def456789...
@@ -98,7 +99,7 @@ docker image inspect myorg/api:latest --format '{{index .RepoDigests 0}}'
 The best practice for production is to update the image tag in the Compose file (or environment variable) on each deployment:
 
 ```yaml
-# docker-compose.yml — uses IMAGE_TAG variable:
+# docker-compose.yml - uses IMAGE_TAG variable:
 services:
   api:
     image: myorg/api:${IMAGE_TAG:-latest}
@@ -151,7 +152,7 @@ docker history myorg/api:latest | head -3
 For automatic image updates without manual intervention:
 
 ```yaml
-# docker-compose.yml — add Watchtower to auto-update other containers
+# docker-compose.yml - add Watchtower to auto-update other containers
 services:
   watchtower:
     image: containrrr/watchtower:latest

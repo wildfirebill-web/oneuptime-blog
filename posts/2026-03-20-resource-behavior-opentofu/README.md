@@ -8,14 +8,15 @@ Description: A guide to understanding how OpenTofu manages resource lifecycle in
 
 ## Introduction
 
-Understanding how OpenTofu manages resources — when it creates, updates, replaces, or destroys them — is fundamental to managing infrastructure safely. OpenTofu tracks resource state and determines the appropriate action by comparing desired and actual states.
+Understanding how OpenTofu manages resources - when it creates, updates, replaces, or destroys them - is fundamental to managing infrastructure safely. OpenTofu tracks resource state and determines the appropriate action by comparing desired and actual states.
 
-## Resource Actions
+Resource Actions
 
 ### Create
 
 ```hcl
 # New resource not in state -> OpenTofu creates it
+
 resource "aws_instance" "web" {
   ami           = "ami-0c55b159cbfafe1f0"
   instance_type = "t3.micro"
@@ -121,7 +122,7 @@ output "public_ip" {
 }
 ```
 
-## Resource Dependencies
+Resource Dependencies
 
 ```hcl
 resource "aws_vpc" "main" {
@@ -162,4 +163,4 @@ tofu plan -refresh=false
 
 ## Conclusion
 
-Understanding OpenTofu's resource lifecycle — create, update-in-place, replace, and destroy — is essential for predicting infrastructure changes. Pay attention to "forces replacement" in plan output as it means the current resource will be destroyed and a new one created, which may cause downtime. Use lifecycle meta-arguments like `create_before_destroy` to minimize downtime when replacement is necessary.
+Understanding OpenTofu's resource lifecycle - create, update-in-place, replace, and destroy - is essential for predicting infrastructure changes. Pay attention to "forces replacement" in plan output as it means the current resource will be destroyed and a new one created, which may cause downtime. Use lifecycle meta-arguments like `create_before_destroy` to minimize downtime when replacement is necessary.

@@ -49,6 +49,7 @@ OCI support is enabled by default in Helm 3.8+. Check your version:
 
 ```bash
 # Check Helm version (need 3.8+)
+
 helm version
 
 # If using older version, set environment variable

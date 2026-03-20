@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: tc, netem, IPv4, Jitter, Network Testing, Linux
+Tags: tc, Netem, IPv4, Jitter, Network Testing, Linux
 
 Description: Use tc netem delay variation parameters to simulate IPv4 network jitter and test application sensitivity to variable latency, especially for real-time communications.
 
@@ -12,6 +12,7 @@ Jitter is variation in packet arrival times. While latency affects all traffic, 
 
 ```bash
 # Add 100ms delay with ±25ms uniform jitter
+
 # Each packet gets a delay between 75ms and 125ms
 sudo tc qdisc add dev eth0 root netem delay 100ms 25ms
 
@@ -48,7 +49,7 @@ sudo tc qdisc add dev eth0 root netem \
 ## Measuring Jitter
 
 ```bash
-# Use ping to observe jitter — look at the variation in RTT
+# Use ping to observe jitter - look at the variation in RTT
 ping -c 100 -i 0.1 8.8.8.8
 
 # Expected output:

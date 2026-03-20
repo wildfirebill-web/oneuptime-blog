@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, NGINX, TLS, SSL, Linux
+Tags: RHEL, Nginx, TLS, SSL, Linux
 
 Description: How to configure TLS certificates on Nginx in RHEL, including Let's Encrypt automation and manual certificate setup.
 
@@ -23,6 +23,7 @@ Serving your site over plain HTTP means everything travels unencrypted. Password
 
 ```bash
 # Allow HTTPS traffic
+
 sudo firewall-cmd --permanent --add-service=https
 sudo firewall-cmd --reload
 ```

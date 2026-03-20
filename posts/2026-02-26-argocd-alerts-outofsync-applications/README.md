@@ -41,6 +41,7 @@ The `argocd_app_info` gauge metric includes a `sync_status` label:
 
 ```promql
 # All OutOfSync applications
+
 argocd_app_info{sync_status="OutOfSync"}
 
 # Count of OutOfSync applications

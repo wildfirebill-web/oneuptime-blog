@@ -14,6 +14,7 @@ AWS Lambda functions require specialized monitoring because their serverless nat
 
 ```hcl
 # Configure the AWS provider
+
 terraform {
   required_providers {
     aws = {

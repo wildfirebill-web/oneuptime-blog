@@ -265,6 +265,7 @@ curl -X POST https://rocketchat.example.com/api/v1/login \
 
 ```bash
 # Check notification controller logs
+
 kubectl logs -n argocd deploy/argocd-notifications-controller -f
 
 # Test the webhook

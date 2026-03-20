@@ -33,6 +33,7 @@ graph LR
 
 ```yaml
 # create-workflows.yml
+
 ---
 - name: Configure AWX Workflows
   hosts: localhost

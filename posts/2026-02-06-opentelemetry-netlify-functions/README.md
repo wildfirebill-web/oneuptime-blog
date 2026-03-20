@@ -35,6 +35,7 @@ Add the OpenTelemetry packages to your project. Since Netlify Functions run on N
 
 ```bash
 # Install OpenTelemetry for Netlify Functions
+
 npm install @opentelemetry/sdk-node \
   @opentelemetry/sdk-trace-base \
   @opentelemetry/exporter-trace-otlp-http \

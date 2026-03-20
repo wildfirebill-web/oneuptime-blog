@@ -44,6 +44,7 @@ All three must be from the same release.
 
 ```txt
 # requirements.txt - all from the same release
+
 opentelemetry-api==1.23.0
 opentelemetry-sdk==1.23.0
 opentelemetry-semantic-conventions==0.44b0

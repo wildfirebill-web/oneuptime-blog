@@ -24,6 +24,7 @@ The simplest locking mechanism is pinning exact versions in `requirements.yml`:
 
 ```yaml
 # requirements.yml - exact version pins
+
 ---
 collections:
   - name: community.general

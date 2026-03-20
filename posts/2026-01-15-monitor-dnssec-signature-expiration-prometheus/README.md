@@ -101,6 +101,7 @@ The `dnssec_exporter` is a purpose-built Prometheus exporter for DNSSEC monitori
 
 ```bash
 # Download the latest release
+
 wget https://github.com/prometheus-community/dnssec_exporter/releases/download/v1.0.0/dnssec_exporter-1.0.0.linux-amd64.tar.gz
 
 # Extract

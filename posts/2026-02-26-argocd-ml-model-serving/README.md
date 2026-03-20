@@ -39,6 +39,7 @@ Start with a straightforward Flask-based model server managed by ArgoCD:
 
 ```yaml
 # apps/model-server/deployment.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

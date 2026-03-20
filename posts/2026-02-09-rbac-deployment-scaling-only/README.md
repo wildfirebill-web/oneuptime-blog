@@ -26,6 +26,7 @@ Build a role that grants access to the scale subresource:
 
 ```yaml
 # deployment-scaler-role.yaml
+
 apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRole
 metadata:

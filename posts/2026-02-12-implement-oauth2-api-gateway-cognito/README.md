@@ -39,6 +39,7 @@ Create a user pool with email-based sign-up:
 
 ```bash
 # Create the user pool
+
 aws cognito-idp create-user-pool \
   --pool-name "my-api-users" \
   --auto-verified-attributes email \

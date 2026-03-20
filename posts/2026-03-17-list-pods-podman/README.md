@@ -18,6 +18,7 @@ Keeping track of pods is essential for managing containerized workloads. Podman 
 
 ```bash
 # List all pods on the system
+
 podman pod ls
 
 # Example output:

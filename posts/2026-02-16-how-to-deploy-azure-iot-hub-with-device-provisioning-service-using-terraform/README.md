@@ -32,6 +32,7 @@ Start with the provider setup and variables that make the configuration flexible
 
 ```hcl
 # Configure the Azure provider
+
 terraform {
   required_version = ">= 1.5.0"
 

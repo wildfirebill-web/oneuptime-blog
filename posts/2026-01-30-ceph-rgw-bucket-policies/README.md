@@ -65,6 +65,7 @@ Before working with bucket policies, ensure RGW is configured correctly.
 
 ```bash
 # Check RGW daemon status
+
 ceph orch ps --daemon-type rgw
 
 # Verify RGW endpoint is accessible
@@ -334,7 +335,7 @@ Allow users to upload but not download or list objects. Useful for log collectio
 }
 ```
 
-## Resource Configuration
+Resource Configuration
 
 Resources specify which buckets and objects the policy applies to.
 

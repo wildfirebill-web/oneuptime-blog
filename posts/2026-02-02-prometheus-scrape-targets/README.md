@@ -52,6 +52,7 @@ The following configuration sets up a basic Prometheus instance that scrapes its
 
 ```yaml
 # prometheus.yml - Basic configuration with static targets
+
 global:
   # Default scrape interval applied to all jobs unless overridden
   scrape_interval: 15s

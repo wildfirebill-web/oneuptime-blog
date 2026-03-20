@@ -18,6 +18,7 @@ Istio stores its configuration as Kubernetes custom resources. Here is what you 
 
 ```bash
 # List all Istio CRDs
+
 kubectl get crd | grep istio
 
 # The key resources to back up

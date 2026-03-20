@@ -14,7 +14,7 @@ Disaster recovery planning for IPv6 networks introduces unique considerations: I
 
 Unlike IPv4, where organizations often use private RFC1918 space internally, IPv6 uses global unicast addresses even internally (or ULA). This affects DR planning:
 
-```
+```text
 Key IPv6 DR considerations:
 1. Address space for DR site (PI block or provider allocation)
 2. DNS AAAA record TTLs for fast failover
@@ -27,6 +27,7 @@ Key IPv6 DR considerations:
 
 ```bash
 # Document your primary and DR IPv6 allocations
+
 # Primary site
 PRIMARY_PREFIX="2001:db8:primary::/48"
 # DR site
@@ -161,4 +162,4 @@ Estimate recovery times for each IPv6 dependency:
 | Application warm-up | < 15 min | Health checks |
 | Database replication lag | < 30 min | Continuous replication |
 
-A well-documented IPv6 DR plan — covering address allocation, DNS failover, BGP routing, and regular testing — ensures your organization can recover from infrastructure failures with minimal downtime on IPv6 networks.
+A well-documented IPv6 DR plan - covering address allocation, DNS failover, BGP routing, and regular testing - ensures your organization can recover from infrastructure failures with minimal downtime on IPv6 networks.

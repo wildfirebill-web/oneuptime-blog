@@ -44,6 +44,7 @@ flowchart TD
 
 ```yaml
 # logging-sidecar.yaml
+
 apiVersion: v1
 kind: Pod
 metadata:
@@ -724,7 +725,7 @@ spec:
 
 ## Best Practices
 
-### Resource Allocation for Sidecars
+Resource Allocation for Sidecars
 
 ```yaml
 # Always set resource limits for sidecars

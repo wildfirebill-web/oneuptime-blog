@@ -51,6 +51,7 @@ EFA requires a security group that allows all traffic between instances in the g
 
 ```bash
 # Create a security group for EFA
+
 EFA_SG=$(aws ec2 create-security-group \
   --group-name efa-hpc-sg \
   --description "Security group for EFA-enabled HPC instances" \

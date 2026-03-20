@@ -45,6 +45,7 @@ Suppose you are deploying an nginx chart and need to add custom labels to the De
 
 ```yaml
 # HelmRelease with a JSON Merge Patch to add labels to the Deployment
+
 apiVersion: helm.toolkit.fluxcd.io/v2
 kind: HelmRelease
 metadata:

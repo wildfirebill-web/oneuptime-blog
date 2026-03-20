@@ -14,6 +14,7 @@ By default, Kafka communicates without encryption or authentication. Enabling TL
 
 ```bash
 # Create a directory for certificates
+
 mkdir -p /opt/kafka/ssl && cd /opt/kafka/ssl
 
 # Generate a CA key and certificate

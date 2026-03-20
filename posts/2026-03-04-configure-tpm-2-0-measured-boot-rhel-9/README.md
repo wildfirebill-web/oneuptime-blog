@@ -41,6 +41,7 @@ First, verify your system has a TPM 2.0:
 
 ```bash
 # Check if TPM device exists
+
 ls -la /dev/tpm0
 
 # Check TPM version

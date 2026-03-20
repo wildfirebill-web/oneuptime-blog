@@ -121,6 +121,7 @@ Base configuration (applied to all clusters):
 
 ```yaml
 # platform/network-policies/base/default-deny.yaml
+
 apiVersion: networking.k8s.io/v1
 kind: NetworkPolicy
 metadata:

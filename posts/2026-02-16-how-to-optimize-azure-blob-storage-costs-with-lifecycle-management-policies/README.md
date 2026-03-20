@@ -31,6 +31,7 @@ Before creating policies, understand what data you have and how it is accessed:
 
 ```bash
 # Check the total size of your storage account by tier
+
 az storage account show \
   --resource-group myResourceGroup \
   --name mystorageaccount \

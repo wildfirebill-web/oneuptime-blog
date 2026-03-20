@@ -66,6 +66,7 @@ Create a ProxyConfig resource to customize sidecar behavior:
 
 ```yaml
 # proxyconfig-basic.yaml
+
 # Basic ProxyConfig for a specific workload
 apiVersion: networking.istio.io/v1beta1
 kind: ProxyConfig
@@ -122,7 +123,7 @@ spec:
 | High throughput gateway | 4-8 | Handle concurrent connections |
 | CPU-bound processing | Match CPU cores | Maximize parallelism |
 
-### Resource Limits in Sidecar Injector
+Resource Limits in Sidecar Injector
 
 Configure resource limits through the sidecar injector ConfigMap or annotations:
 

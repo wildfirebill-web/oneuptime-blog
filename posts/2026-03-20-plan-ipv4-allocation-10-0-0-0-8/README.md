@@ -8,7 +8,7 @@ Description: Learn how to allocate and organize the 10.0.0.0/8 private address s
 
 ## Why Use 10.0.0.0/8?
 
-The 10.0.0.0/8 space offers 16,777,214 usable addresses — enough for thousands of sites and hundreds of thousands of hosts. It's the recommended choice for large enterprises because:
+The 10.0.0.0/8 space offers 16,777,214 usable addresses - enough for thousands of sites and hundreds of thousands of hosts. It's the recommended choice for large enterprises because:
 - Room for hierarchical allocation without running out
 - Supports clean route summarization
 - Commonly supported by network equipment
@@ -18,7 +18,7 @@ The 10.0.0.0/8 space offers 16,777,214 usable addresses — enough for thousands
 Choose an organizational hierarchy. Common approaches:
 
 **Geographic (by region/country):**
-```
+```text
 10.[region].[site].[vlan] / prefix
 10.1.x.x = Americas
 10.2.x.x = EMEA
@@ -26,7 +26,7 @@ Choose an organizational hierarchy. Common approaches:
 ```
 
 **Functional (by purpose):**
-```
+```text
 10.[function].[site].[vlan] / prefix
 10.0.x.x  = Corporate users
 10.1.x.x  = DMZ / internet-facing
@@ -37,8 +37,8 @@ Choose an organizational hierarchy. Common approaches:
 
 ## Step 2: Allocate Blocks for Major Functions
 
-```
-10.0.0.0/8 — All Enterprise Networks
+```text
+10.0.0.0/8 - All Enterprise Networks
 
 /12 blocks (4M addresses each):
   10.0.0.0/12   = Production (10.0.0.0 - 10.15.255.255)
@@ -52,8 +52,8 @@ Choose an organizational hierarchy. Common approaches:
 
 ## Step 3: Site Allocation Within Production Block
 
-```
-10.0.0.0/12 — Production Networks
+```text
+10.0.0.0/12 - Production Networks
 
 /16 blocks per region (65K addresses each):
   10.0.0.0/16  = Headquarters
@@ -72,8 +72,8 @@ Within each /16, allocate /22 or /24 blocks per VLAN:
 
 ## Step 4: Infrastructure Addressing
 
-```
-10.240.0.0/12 — Infrastructure
+```text
+10.240.0.0/12 - Infrastructure
 
 10.240.0.0/16  = Loopback addresses
   10.240.0.1/32   = Router01 loopback (OSPF router ID)
@@ -92,8 +92,8 @@ Within each /16, allocate /22 or /24 blocks per VLAN:
 
 ## Step 5: VPN and Remote Access Allocation
 
-```
-10.80.0.0/12 — Remote Access
+```text
+10.80.0.0/12 - Remote Access
 
 10.80.0.0/16  = Corporate VPN clients (SSL VPN)
   DHCP pool: 10.80.0.100 - 10.80.255.254 (65K VPN users)
@@ -109,6 +109,7 @@ from ipaddress import ip_network
 import json
 
 # Define the allocation plan
+
 allocation_plan = {
     'name': 'Enterprise IPv4 Plan',
     'root': '10.0.0.0/8',

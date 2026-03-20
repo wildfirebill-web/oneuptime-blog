@@ -50,6 +50,7 @@ First, create an IAM role in each target account that Terraform can assume:
 
 ```hcl
 # In target account: iam-role.tf
+
 resource "aws_iam_role" "terraform_deploy" {
   name = "TerraformDeployRole"
 

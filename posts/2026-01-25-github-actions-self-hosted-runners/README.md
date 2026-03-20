@@ -40,6 +40,7 @@ Navigate to Settings > Actions > Runners > New self-hosted runner in your reposi
 
 ```bash
 # Create a directory for the runner
+
 mkdir actions-runner && cd actions-runner
 
 # Download the runner package (Linux x64 example)

@@ -27,6 +27,7 @@ gdisk (GPT fdisk) handles the conversion cleanly.
 
 ```bash
 # Install gdisk
+
 sudo dnf install -y gdisk
 ```
 

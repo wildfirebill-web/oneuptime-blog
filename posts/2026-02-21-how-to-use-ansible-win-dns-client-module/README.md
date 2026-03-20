@@ -20,6 +20,7 @@ The basic operation sets one or more DNS server addresses on a network adapter.
 
 ```yaml
 # basic-dns.yml - Set DNS servers on a network adapter
+
 ---
 - name: Configure DNS client settings
   hosts: windows_servers

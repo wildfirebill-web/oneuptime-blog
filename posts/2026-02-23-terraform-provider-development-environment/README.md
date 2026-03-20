@@ -16,6 +16,7 @@ Terraform providers are written in Go, and you need Go 1.21 or later. The Terraf
 
 ```bash
 # On macOS with Homebrew
+
 brew install go
 
 # On Ubuntu/Debian

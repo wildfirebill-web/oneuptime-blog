@@ -51,6 +51,7 @@ Create a test file `tests/validation.tftest.hcl`:
 
 ```hcl
 # Test valid environment values
+
 run "valid_environment_dev" {
   variables {
     environment    = "dev"
@@ -130,4 +131,4 @@ variable "tags" {
 
 ## Conclusion
 
-Custom validation rules combined with `tofu test` provide a lightweight way to enforce infrastructure policies at the variable level. Testing both valid and invalid inputs — using `expect_failures` — ensures your validation logic correctly accepts good values and rejects bad ones.
+Custom validation rules combined with `tofu test` provide a lightweight way to enforce infrastructure policies at the variable level. Testing both valid and invalid inputs - using `expect_failures` - ensures your validation logic correctly accepts good values and rejects bad ones.

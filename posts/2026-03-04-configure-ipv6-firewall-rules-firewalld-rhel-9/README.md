@@ -16,6 +16,7 @@ firewalld uses nftables as its backend on RHEL. When you add a rule like `--add-
 
 ```bash
 # Verify firewalld is running with nftables backend
+
 sudo firewall-cmd --state
 sudo firewall-cmd --get-default-zone
 

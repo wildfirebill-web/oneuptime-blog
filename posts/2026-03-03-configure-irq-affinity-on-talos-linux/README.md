@@ -20,6 +20,7 @@ On a busy network interface, this can mean thousands of interrupts per second. I
 
 ```bash
 # On a traditional Linux system, you would check interrupts with:
+
 cat /proc/interrupts
 
 # On Talos Linux:

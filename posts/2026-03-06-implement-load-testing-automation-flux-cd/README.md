@@ -25,6 +25,7 @@ Load testing is essential for understanding how your application behaves under s
 
 ```yaml
 # clusters/my-cluster/k6/helm-repository.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

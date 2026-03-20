@@ -91,6 +91,7 @@ Each service on the status page should be backed by one or more monitors. These 
 
 ```yaml
 # Monitor configuration for REST API
+
 monitor:
   type: HTTP
   url: "https://api.yourcompany.com/v1/health"

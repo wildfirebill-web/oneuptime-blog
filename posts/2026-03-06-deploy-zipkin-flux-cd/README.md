@@ -27,6 +27,7 @@ Before you begin, ensure you have:
 
 ```yaml
 # clusters/my-cluster/zipkin/namespace.yaml
+
 apiVersion: v1
 kind: Namespace
 metadata:

@@ -17,6 +17,7 @@ sudo apt update
 sudo apt install open-iscsi -y
 
 # Enable the required services
+
 sudo systemctl enable --now iscsid
 sudo systemctl enable --now open-iscsi
 ```

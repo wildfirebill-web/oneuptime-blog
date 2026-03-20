@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: UDP, Timeout, Linux, Socket, Networking, Configuration
+Tags: UDP, Timeout, Linux, Sockets, Networking, Configuration
 
 Description: Configure UDP socket timeout values for receive operations, connection tracking, and application-level timeouts to prevent hanging UDP operations.
 
@@ -14,6 +14,7 @@ UDP sockets can block indefinitely on `recvfrom()` if no packets arrive. Unlike 
 
 ```bash
 # Application-level: set socket receive timeout
+
 # This is the most important UDP timeout for applications
 
 # Python example:
@@ -150,4 +151,4 @@ EOF
 
 ## Conclusion
 
-UDP socket timeouts are entirely application-controlled. Use `sock.settimeout(seconds)` for the simplest implementation, or `SO_RCVTIMEO` via `setsockopt` for lower-level control. Implement retry logic with exponential backoff for request/response UDP protocols like DNS or NTP. For kernel-level firewall timeout, tune `nf_conntrack_udp_timeout_stream` to match your application's traffic pattern — too short causes flows to be dropped from the conntrack table while still active.
+UDP socket timeouts are entirely application-controlled. Use `sock.settimeout(seconds)` for the simplest implementation, or `SO_RCVTIMEO` via `setsockopt` for lower-level control. Implement retry logic with exponential backoff for request/response UDP protocols like DNS or NTP. For kernel-level firewall timeout, tune `nf_conntrack_udp_timeout_stream` to match your application's traffic pattern - too short causes flows to be dropped from the conntrack table while still active.

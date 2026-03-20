@@ -34,6 +34,7 @@ The simplest chaos experiment is killing a service process:
 
 ```yaml
 # chaos/kill-service.yml
+
 # Chaos experiment: Kill a service and verify recovery
 ---
 - name: "CHAOS: Kill service process"

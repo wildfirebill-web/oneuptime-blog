@@ -14,6 +14,7 @@ HTTP security headers tell browsers how to handle your site's content. They prev
 
 ```bash
 # Enable the headers module
+
 sudo a2enmod headers
 
 # Verify it is active

@@ -33,6 +33,7 @@ For a new instance via the CLI:
 
 ```bash
 # Create an RDS instance with Performance Insights enabled
+
 aws rds create-db-instance \
   --db-instance-identifier my-monitored-db \
   --db-instance-class db.r6g.large \

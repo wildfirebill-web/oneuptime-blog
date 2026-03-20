@@ -18,6 +18,7 @@ First, figure out where the handshake is failing. Check the sidecar logs:
 
 ```bash
 # Check the client sidecar
+
 kubectl logs <client-pod> -c istio-proxy -n production | grep -i "tls\|ssl\|handshake"
 
 # Check the server sidecar

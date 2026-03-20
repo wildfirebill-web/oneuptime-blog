@@ -12,7 +12,7 @@ Teredo (RFC 4380) is an IPv6 tunneling mechanism that encapsulates IPv6 packets 
 
 ## Teredo Address Format
 
-```
+```yaml
  |  32 bits  |  32 bits   | 16 bits | 16 bits |  32 bits |
  +-----------+------------+---------+---------+----------+
  | 2001::/32 | Server IPv4|  Flags  |~UDP Port|~Client IP|
@@ -69,6 +69,7 @@ def parse_teredo_address(ipv6_str: str) -> dict:
     }
 
 # Example
+
 result = parse_teredo_address("2001:0:4136:e378:63bf:9c40:3f57:fe9b")
 for k, v in result.items():
     print(f"  {k}: {v}")

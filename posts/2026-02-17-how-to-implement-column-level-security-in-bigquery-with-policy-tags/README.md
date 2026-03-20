@@ -24,6 +24,7 @@ A taxonomy is the top-level container for your policy tags. You might have one t
 
 ```bash
 # Create a taxonomy for data classification
+
 gcloud data-catalog taxonomies create \
   --display-name="Data Sensitivity" \
   --description="Classification levels for sensitive data" \

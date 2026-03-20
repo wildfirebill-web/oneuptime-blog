@@ -45,6 +45,7 @@ Install the Kubescape CLI for local and CI/CD scanning:
 
 ```bash
 # Install on Linux/macOS
+
 curl -s https://raw.githubusercontent.com/kubescape/kubescape/master/install.sh | /bin/bash
 
 # Verify installation

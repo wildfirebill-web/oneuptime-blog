@@ -48,6 +48,7 @@ The simplest way to configure OTLP is through environment variables.
 
 ```bash
 # General OTLP configuration
+
 export OTEL_EXPORTER_OTLP_ENDPOINT="https://collector.example.com:4318"
 export OTEL_EXPORTER_OTLP_PROTOCOL="http/protobuf"
 export OTEL_EXPORTER_OTLP_HEADERS="x-oneuptime-token=your-token"

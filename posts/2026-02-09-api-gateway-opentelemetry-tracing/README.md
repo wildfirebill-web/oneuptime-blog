@@ -22,6 +22,7 @@ Deploy the OpenTelemetry Collector to receive traces from API gateways and forwa
 
 ```yaml
 # otel-collector-config.yaml
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

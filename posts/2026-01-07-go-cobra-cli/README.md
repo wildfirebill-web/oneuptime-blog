@@ -689,6 +689,7 @@ Viper allows users to set defaults via configuration files, environment variable
 // This YAML file shows all available configuration options.
 /*
 # Default priority for new tasks
+
 default-priority: 2
 
 # Directory for storing task data

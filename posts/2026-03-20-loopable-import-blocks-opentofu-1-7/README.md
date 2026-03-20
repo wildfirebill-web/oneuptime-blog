@@ -14,6 +14,7 @@ OpenTofu 1.7 extended import blocks (introduced in 1.5) to support `for_each`, e
 
 ```hcl
 # Single import – one block per resource
+
 import {
   id = "my-existing-bucket"
   to = aws_s3_bucket.existing

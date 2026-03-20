@@ -45,6 +45,7 @@ First, install the required packages. The `@opentelemetry/instrumentation-graphq
 
 ```bash
 # Install OpenTelemetry core packages and GraphQL instrumentation
+
 npm install @opentelemetry/sdk-node \
   @opentelemetry/api \
   @opentelemetry/instrumentation-graphql \

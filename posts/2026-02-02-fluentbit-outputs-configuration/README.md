@@ -64,6 +64,7 @@ The following configuration demonstrates basic match patterns for routing logs t
 
 ```ini
 # Match all logs - the asterisk is a wildcard
+
 [OUTPUT]
     Name   stdout
     Match  *

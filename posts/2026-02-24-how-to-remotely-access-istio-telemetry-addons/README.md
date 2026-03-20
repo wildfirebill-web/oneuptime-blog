@@ -18,6 +18,7 @@ The quickest way to access any addon. No configuration changes needed.
 
 ```bash
 # Prometheus
+
 kubectl port-forward svc/prometheus 9090:9090 -n istio-system
 
 # Grafana

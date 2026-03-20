@@ -293,6 +293,7 @@ For container-based deployments, you can use KEDA (Kubernetes Event-Driven Autos
 
 ```yaml
 # KEDA ScaledObject for Kubernetes
+
 apiVersion: keda.sh/v1alpha1
 kind: ScaledObject
 metadata:

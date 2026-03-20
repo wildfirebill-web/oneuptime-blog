@@ -140,6 +140,7 @@ Run the benchmark:
 
 ```bash
 # Baseline - no mesh
+
 kubectl exec -it deploy/bench-client -n bench-no-mesh -- fortio load \
   -c 16 \
   -qps 0 \

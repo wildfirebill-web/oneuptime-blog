@@ -40,6 +40,7 @@ Create the topics that will receive your device messages:
 
 ```bash
 # Create the main topic for device telemetry data
+
 gcloud pubsub topics create device-telemetry
 
 # Create a topic for device state/status updates

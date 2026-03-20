@@ -2,14 +2,15 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Windows Server Core, PowerShell, netsh, Network Configuration
+Tags: IPv6, Windows Server Core, PowerShell, Netsh, Network Configuration
 
-Description: Learn how to configure IPv6 on Windows Server Core — a minimal installation without a GUI — using PowerShell and netsh commands for complete IPv6 network setup.
+Description: Learn how to configure IPv6 on Windows Server Core - a minimal installation without a GUI - using PowerShell and netsh commands for complete IPv6 network setup.
 
 ## Checking IPv6 Status on Server Core
 
 ```powershell
 # Show all network adapters
+
 Get-NetAdapter
 
 # Show IPv6 addresses

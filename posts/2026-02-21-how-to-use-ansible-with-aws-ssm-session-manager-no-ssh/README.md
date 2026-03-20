@@ -24,6 +24,7 @@ Before you start, you need a few things in place:
 
 ```bash
 # Install the Session Manager plugin (macOS)
+
 curl "https://s3.amazonaws.com/session-manager-downloads/plugin/latest/mac/session-manager-plugin.pkg" -o "session-manager-plugin.pkg"
 sudo installer -pkg session-manager-plugin.pkg -target /
 

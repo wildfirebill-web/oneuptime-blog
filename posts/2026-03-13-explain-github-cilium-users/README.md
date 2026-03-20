@@ -52,6 +52,7 @@ graph LR
 
 ```bash
 # Subscribe to an issue via GitHub UI
+
 # Or use gh CLI:
 gh issue view 12345 --repo cilium/cilium
 

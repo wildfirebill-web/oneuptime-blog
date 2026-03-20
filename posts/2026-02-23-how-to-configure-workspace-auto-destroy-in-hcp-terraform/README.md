@@ -34,6 +34,7 @@ For automation, use the API to set auto-destroy when creating or updating worksp
 
 ```bash
 # Enable auto-destroy on an existing workspace
+
 # Set it to destroy 48 hours from now
 DESTROY_AT=$(date -u -d "+48 hours" +%Y-%m-%dT%H:%M:%SZ)
 

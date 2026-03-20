@@ -199,6 +199,7 @@ Check the logs on both servers:
 
 ```bash
 # On the primary
+
 tail -20 /var/log/named/default.log
 ```
 

@@ -335,6 +335,7 @@ SERVICE_NAME=admission-webhook
 NAMESPACE=default
 
 # Create a private key
+
 openssl genrsa -out tls.key 2048
 
 # Create a certificate signing request

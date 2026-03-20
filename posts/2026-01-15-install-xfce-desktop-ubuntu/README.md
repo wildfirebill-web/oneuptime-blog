@@ -43,6 +43,7 @@ Before installing XFCE, ensure you have:
 
 ```bash
 # Check your Ubuntu version
+
 lsb_release -a
 
 # Example output:
@@ -959,7 +960,7 @@ Make the script executable:
 chmod +x ~/scripts/xfce-optimize.sh
 ```
 
-## Resource Usage Comparison
+Resource Usage Comparison
 
 Here's how XFCE compares to other desktop environments in terms of resource usage.
 

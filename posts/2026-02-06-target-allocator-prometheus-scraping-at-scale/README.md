@@ -60,6 +60,7 @@ You need the OpenTelemetry Operator installed in your cluster. If you have not d
 
 ```bash
 # Add the OpenTelemetry Helm repository
+
 helm repo add open-telemetry https://open-telemetry.github.io/opentelemetry-helm-charts
 helm repo update
 

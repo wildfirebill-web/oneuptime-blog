@@ -40,6 +40,7 @@ On both nodes:
 
 ```bash
 # Install Pacemaker, Corosync, and NFS packages
+
 sudo dnf install -y pcs pacemaker corosync fence-agents-all nfs-utils
 
 # Enable and start the cluster management service

@@ -31,6 +31,7 @@ The most common extended resource is NVIDIA GPUs. Install the NVIDIA device plug
 
 ```bash
 # Deploy NVIDIA device plugin using DaemonSet
+
 kubectl create -f https://raw.githubusercontent.com/NVIDIA/k8s-device-plugin/v0.14.0/nvidia-device-plugin.yml
 
 # Verify the plugin is running
@@ -455,7 +456,7 @@ spec:
         nvidia.com/gpu: 8  # Request 8 A100 GPUs
 ```
 
-## Resource Quotas for Extended Resources
+Resource Quotas for Extended Resources
 
 Limit extended resource usage with quotas:
 

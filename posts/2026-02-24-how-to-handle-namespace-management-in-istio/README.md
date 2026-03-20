@@ -179,6 +179,7 @@ A good practice is to use cluster-specific prefixes or a central namespace regis
 
 ```bash
 # Cluster 1
+
 kubectl create namespace us-east-backend --context="${CTX_CLUSTER1}"
 
 # Cluster 2

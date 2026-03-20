@@ -28,6 +28,7 @@ The S3 bucket holds your static files. With CloudFront in front, you do not need
 
 ```hcl
 # S3 bucket for website content
+
 resource "aws_s3_bucket" "website" {
   bucket = "${var.domain_name}-website"
 

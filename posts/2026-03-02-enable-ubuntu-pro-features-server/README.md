@@ -16,6 +16,7 @@ Once attached, see what your subscription includes:
 
 ```bash
 # Show all services with their status
+
 pro status --all
 
 # Shorter version without --all shows only relevant services

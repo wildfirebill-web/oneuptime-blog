@@ -50,6 +50,7 @@ Start with appropriate heap sizing based on your workload and available memory.
 
 ```bash
 # Production JVM options
+
 java -Xms4g -Xmx4g \
      -XX:MetaspaceSize=256m \
      -XX:MaxMetaspaceSize=512m \

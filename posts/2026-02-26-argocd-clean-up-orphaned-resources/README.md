@@ -36,6 +36,7 @@ Start by getting the full list of orphaned resources:
 
 ```bash
 # Get orphaned resources for a project
+
 argocd proj get production -o json | \
   jq -r '.status.orphanedResources[] | "\(.group)/\(.kind)/\(.name) in \(.namespace)"'
 ```

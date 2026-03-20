@@ -47,6 +47,7 @@ Before deploying Longhorn, verify nodes meet the requirements:
 
 ```yaml
 # Pre-install check job
+
 apiVersion: batch/v1
 kind: Job
 metadata:

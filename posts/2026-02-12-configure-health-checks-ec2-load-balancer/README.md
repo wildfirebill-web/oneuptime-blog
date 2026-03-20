@@ -59,6 +59,7 @@ This creates a target group with optimized health check settings:
 
 ```bash
 # Create target group with tuned health checks
+
 aws elbv2 create-target-group \
   --name web-targets \
   --protocol HTTP \

@@ -339,6 +339,7 @@ Check that the correct timeout is applied to each route:
 
 ```bash
 # View the routes configured in the proxy
+
 istioctl proxy-config routes deploy/frontend -n production -o json | jq '.[] | .virtualHosts[].routes[] | {name: .match.prefix, timeout: .route.timeout}'
 ```
 

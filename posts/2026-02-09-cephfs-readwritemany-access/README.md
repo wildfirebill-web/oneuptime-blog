@@ -22,6 +22,7 @@ You need a functioning Rook-Ceph cluster before deploying CephFS. Follow the Cep
 
 ```bash
 # Verify Ceph cluster is healthy
+
 kubectl get cephcluster -n rook-ceph
 kubectl exec -n rook-ceph deploy/rook-ceph-tools -- ceph status
 ```

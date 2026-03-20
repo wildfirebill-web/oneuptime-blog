@@ -14,6 +14,7 @@ The Operator uses annotations to decide what type of auto-instrumentation to inj
 
 ```yaml
 # Java
+
 instrumentation.opentelemetry.io/inject-java: "true"
 
 # Python

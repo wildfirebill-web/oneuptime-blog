@@ -18,6 +18,7 @@ Install the identity package along with any Azure service SDK you plan to use.
 
 ```bash
 # Install the core identity package
+
 npm install @azure/identity
 
 # Install Azure service SDKs you need

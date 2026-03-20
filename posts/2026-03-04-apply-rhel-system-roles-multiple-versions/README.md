@@ -34,6 +34,7 @@ On the Ansible control node:
 
 ```bash
 # Install the system roles package
+
 sudo dnf install rhel-system-roles
 
 # Verify the available roles

@@ -18,6 +18,7 @@ By default, Ansible's `uri` module validates SSL certificates against the system
 
 ```yaml
 # default SSL verification (validates against system CA bundle)
+
 ---
 - name: SSL verification examples
   hosts: localhost

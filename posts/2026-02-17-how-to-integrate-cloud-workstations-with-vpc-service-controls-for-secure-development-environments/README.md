@@ -47,6 +47,7 @@ Access levels define the conditions under which access is allowed. For Cloud Wor
 
 ```bash
 # Create an access level that allows access from corporate IP ranges
+
 # This defines who can access resources inside the perimeter
 gcloud access-context-manager levels create corp-network-access \
     --policy=ORGANIZATION_POLICY_ID \

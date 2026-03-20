@@ -297,6 +297,7 @@ Use Istio telemetry to monitor your IoT gateway traffic:
 
 ```bash
 # Check active connections to the MQTT broker
+
 kubectl exec -n iot deploy/mqtt-broker -c istio-proxy -- \
   pilot-agent request GET /stats | grep downstream_cx_active
 

@@ -31,6 +31,7 @@ On RHEL, the cleanest way to add pam_pwhistory is through the PAM configuration.
 
 ```bash
 # Look at the password section of system-auth
+
 grep "^password" /etc/pam.d/system-auth
 ```
 

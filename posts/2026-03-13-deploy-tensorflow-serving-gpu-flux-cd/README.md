@@ -27,6 +27,7 @@ This guide covers deploying TensorFlow Serving with GPU resources on Kubernetes 
 
 ```yaml
 # clusters/my-cluster/tf-serving/namespace.yaml
+
 apiVersion: v1
 kind: Namespace
 metadata:

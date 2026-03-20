@@ -28,6 +28,7 @@ Here's a CloudFormation template that sets up the Config rule and auto remediati
 
 ```yaml
 # CloudFormation template for S3 encryption auto remediation
+
 AWSTemplateFormatVersion: '2010-09-09'
 Description: Auto-remediate S3 buckets without encryption
 

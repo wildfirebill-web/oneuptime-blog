@@ -79,6 +79,7 @@ The cleanest solution is to update Git to match what you applied manually. This 
 
 ```bash
 # Check what the current cluster state looks like
+
 kubectl get deployment my-app -n production -o yaml > current-state.yaml
 # Update your Git manifests to match
 # Commit and push

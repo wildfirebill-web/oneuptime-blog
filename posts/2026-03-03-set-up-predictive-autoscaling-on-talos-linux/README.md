@@ -35,6 +35,7 @@ The simplest form of predictive autoscaling uses known traffic patterns. If your
 
 ```yaml
 # predictive-cron.yaml
+
 apiVersion: keda.sh/v1alpha1
 kind: ScaledObject
 metadata:

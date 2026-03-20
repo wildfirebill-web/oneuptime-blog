@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, FortiGate, IPv6, Firewall, Network Security, fortios
+Tags: Ansible, FortiGate, IPv6, Firewall, Network Security, Fortios
 
 Description: A guide to creating and managing FortiGate IPv6 firewall address objects and policies using the Ansible fortios collection.
 
@@ -12,6 +12,7 @@ FortiGate firewalls support IPv6 through dedicated address objects and firewall 
 
 ```bash
 # Install the FortiOS Ansible collection
+
 ansible-galaxy collection install fortinet.fortios
 ```
 

@@ -24,6 +24,7 @@ First, add criterion to your project:
 
 ```toml
 # Add to Cargo.toml - criterion goes in dev-dependencies since benchmarks only run during development
+
 [dev-dependencies]
 criterion = { version = "0.5", features = ["html_reports"] }
 

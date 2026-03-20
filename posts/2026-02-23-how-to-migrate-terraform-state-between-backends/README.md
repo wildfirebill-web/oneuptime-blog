@@ -16,6 +16,7 @@ Terraform supports several backend types for storing state:
 
 ```hcl
 # Local backend (default)
+
 terraform {
   backend "local" {
     path = "terraform.tfstate"

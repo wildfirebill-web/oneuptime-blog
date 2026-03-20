@@ -16,6 +16,7 @@ Consider this scenario: you run `grep` to check if a string exists in a config f
 
 ```yaml
 # This fails when the pattern is not found, even though that's a valid outcome
+
 - name: Check if feature flag is enabled
   command: grep "FEATURE_X=true" /etc/myapp/config.env
   # If FEATURE_X is not in the file, this task FAILS

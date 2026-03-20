@@ -18,6 +18,7 @@ Not all 403 errors are the same. Start by getting the full error message, not ju
 
 ```bash
 # Get detailed error output from a failing gcloud command
+
 gcloud storage ls gs://my-bucket/ --verbosity=debug 2>&1 | tail -50
 ```
 

@@ -32,6 +32,7 @@ Create an audit policy that captures RBAC-relevant events:
 
 ```yaml
 # rbac-audit-policy.yaml
+
 apiVersion: audit.k8s.io/v1
 kind: Policy
 rules:

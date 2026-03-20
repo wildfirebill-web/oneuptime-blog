@@ -23,6 +23,7 @@ The most common use of `map` is pulling a specific field from a list of dictiona
 
 ```yaml
 # Example variables
+
 users:
   - name: alice
     email: alice@example.com

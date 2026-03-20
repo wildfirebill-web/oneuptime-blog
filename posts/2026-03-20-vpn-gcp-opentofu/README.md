@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: OpenTofu, GCP, Cloud VPN, Networking, HA VPN, Infrastructure as Code
 
-Description: Learn how to configure Google Cloud VPN (HA VPN) using OpenTofu — setting up HA VPN gateways, peer gateways, VPN tunnels, and BGP sessions for production-ready connectivity.
+Description: Learn how to configure Google Cloud VPN (HA VPN) using OpenTofu - setting up HA VPN gateways, peer gateways, VPN tunnels, and BGP sessions for production-ready connectivity.
 
 ## Introduction
 
@@ -27,6 +27,7 @@ resource "google_compute_ha_vpn_gateway" "main" {
 
 ```hcl
 # Single peer device with two interfaces (for HA)
+
 resource "google_compute_external_vpn_gateway" "on_prem" {
   name            = "on-prem-vpn-gateway"
   redundancy_type = "TWO_IPS_REDUNDANCY"  # or SINGLE_IP_INTERNALLY_REDUNDANT / FOUR_IPS_REDUNDANCY
@@ -159,4 +160,4 @@ output "ha_vpn_interface1_ip" {
 
 ## Conclusion
 
-GCP HA VPN with OpenTofu requires four tunnel-related resources: HA VPN gateway, external VPN gateway, VPN tunnels, and Cloud Router BGP sessions. Always create two tunnels (one per HA VPN interface) to achieve the 99.99% availability SLA. Use BGP with Cloud Router for dynamic route exchange — it automatically handles route updates as your on-premises or GCP networks change. Set different BGP route priorities on the two tunnels to make one primary and one backup.
+GCP HA VPN with OpenTofu requires four tunnel-related resources: HA VPN gateway, external VPN gateway, VPN tunnels, and Cloud Router BGP sessions. Always create two tunnels (one per HA VPN interface) to achieve the 99.99% availability SLA. Use BGP with Cloud Router for dynamic route exchange - it automatically handles route updates as your on-premises or GCP networks change. Set different BGP route priorities on the two tunnels to make one primary and one backup.

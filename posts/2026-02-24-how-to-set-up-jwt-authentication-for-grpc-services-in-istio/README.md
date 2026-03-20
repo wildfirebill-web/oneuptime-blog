@@ -27,6 +27,7 @@ resp, err := client.GetUser(ctx, &pb.GetUserRequest{Id: "123"})
 
 ```python
 # Python gRPC client example
+
 metadata = [('authorization', 'Bearer ' + token)]
 response = stub.GetUser(request, metadata=metadata)
 ```

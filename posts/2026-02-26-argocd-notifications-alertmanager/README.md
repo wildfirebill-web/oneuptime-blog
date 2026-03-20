@@ -192,6 +192,7 @@ Configure Alertmanager to route ArgoCD alerts appropriately:
 
 ```yaml
 # alertmanager.yml
+
 route:
   receiver: default
   routes:

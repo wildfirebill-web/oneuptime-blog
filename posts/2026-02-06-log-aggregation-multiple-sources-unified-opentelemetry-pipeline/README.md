@@ -28,6 +28,7 @@ This config runs on each application host. It collects logs from local files and
 
 ```yaml
 # agent-collector-config.yaml
+
 receivers:
   # Receive OTLP logs from instrumented applications on this host
   otlp:

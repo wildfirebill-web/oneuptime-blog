@@ -23,6 +23,7 @@ This guide covers roll out High-Connection Workloads in Calico with production-r
 
 ```yaml
 # Optimize for high-connection workloads
+
 apiVersion: projectcalico.org/v3
 kind: NetworkPolicy
 metadata:

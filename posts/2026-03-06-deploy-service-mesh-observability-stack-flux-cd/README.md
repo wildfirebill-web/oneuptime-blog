@@ -43,6 +43,7 @@ Register all required Helm chart repositories.
 
 ```yaml
 # infrastructure/sources/observability-repos.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

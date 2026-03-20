@@ -35,6 +35,7 @@ Back up the Swarm Raft state from a manager node:
 ```bash
 #!/bin/bash
 # backup-swarm-state.sh
+
 # Backs up the Docker Swarm Raft state directory
 
 BACKUP_DIR="/backups/swarm"

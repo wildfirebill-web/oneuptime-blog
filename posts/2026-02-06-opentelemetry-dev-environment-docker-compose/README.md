@@ -145,6 +145,7 @@ The collector needs its own configuration file. Create `otel-collector-config.ya
 
 ```yaml
 # Receivers define how telemetry data enters the collector
+
 receivers:
   # OTLP receiver accepts data in OpenTelemetry Protocol format
   otlp:

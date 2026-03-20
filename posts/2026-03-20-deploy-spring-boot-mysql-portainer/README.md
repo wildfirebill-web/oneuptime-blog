@@ -58,6 +58,7 @@ volumes:
 
 ```properties
 # src/main/resources/application.properties
+
 # These are overridden by environment variables in the container
 spring.datasource.url=${SPRING_DATASOURCE_URL:jdbc:mysql://localhost:3306/springapp}
 spring.datasource.username=${SPRING_DATASOURCE_USERNAME:spring}

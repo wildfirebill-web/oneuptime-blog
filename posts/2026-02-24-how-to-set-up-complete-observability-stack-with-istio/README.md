@@ -485,6 +485,7 @@ istioctl install -f observability-config.yaml -y
 
 ```bash
 # Check all monitoring pods are running
+
 kubectl get pods -n monitoring
 
 # Generate test traffic

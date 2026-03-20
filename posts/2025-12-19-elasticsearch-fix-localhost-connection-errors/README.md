@@ -42,6 +42,7 @@ graph TD
 
 ```bash
 # Check service status
+
 sudo systemctl status elasticsearch
 
 # If not running, start it

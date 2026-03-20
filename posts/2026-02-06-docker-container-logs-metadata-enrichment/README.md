@@ -115,6 +115,7 @@ import docker
 import json
 
 # Connect to the Docker daemon
+
 client = docker.from_env()
 
 def get_container_metadata(container_id):

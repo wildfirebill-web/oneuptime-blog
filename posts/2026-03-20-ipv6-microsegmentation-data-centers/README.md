@@ -25,6 +25,7 @@ Nftables is the preferred approach for per-host IPv6 microsegmentation on Linux:
 
 ```bash
 # /etc/nftables.conf for a web application workload
+
 table ip6 filter {
     chain input {
         type filter hook input priority 0; policy drop;
@@ -112,7 +113,7 @@ spec:
 
 For hardware-enforced microsegmentation, apply IPv6 ACLs on ToR switches:
 
-```
+```text
 # Arista EOS - IPv6 ACL for workload isolation
 ipv6 access-list WORKLOAD-ISOLATION
    10 permit ipv6 2001:db8:1::10/128 2001:db8:1::20/128
@@ -122,4 +123,4 @@ ipv6 access-list WORKLOAD-ISOLATION
 
 ## Conclusion
 
-IPv6 microsegmentation works at multiple layers: host-based nftables, Kubernetes NetworkPolicy, and switch ACLs. The unique per-workload address in IPv6 makes policy writing precise — you can target individual /128 addresses rather than relying on port ranges or tags.
+IPv6 microsegmentation works at multiple layers: host-based nftables, Kubernetes NetworkPolicy, and switch ACLs. The unique per-workload address in IPv6 makes policy writing precise - you can target individual /128 addresses rather than relying on port ranges or tags.

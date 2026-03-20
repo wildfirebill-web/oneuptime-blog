@@ -70,6 +70,7 @@ In the management account, create a trust policy:
 
 ```bash
 # In the management account - create ECR access role
+
 cat <<EOF > flux-ecr-trust-policy.json
 {
   "Version": "2012-10-17",

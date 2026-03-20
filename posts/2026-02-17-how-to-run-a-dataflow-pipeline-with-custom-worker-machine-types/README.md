@@ -29,6 +29,7 @@ import apache_beam as beam
 from apache_beam.options.pipeline_options import PipelineOptions
 
 # Configure workers with a specific machine type
+
 options = PipelineOptions([
     '--runner=DataflowRunner',
     '--project=my-project',

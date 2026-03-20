@@ -34,6 +34,7 @@ This guide covers migrating from Kyverno to Kubewarden with a structured, low-ri
 
 ```bash
 # List all Kyverno policies
+
 kubectl get policies -A
 kubectl get clusterpolicies
 
@@ -340,4 +341,4 @@ echo "Kyverno removed. Migration to Kubewarden complete."
 
 ## Conclusion
 
-Migrating from Kyverno to Kubewarden is straightforward for validation policies where direct hub equivalents exist, and more involved for custom mutation policies that require Wasm development. The side-by-side approach — running both systems simultaneously with Kubewarden in monitor mode — is the safest migration path. Kyverno's `Generate` rules (for creating Kubernetes resources based on events) have no equivalent in Kubewarden and should be handled separately through other mechanisms such as operators or GitOps controllers.
+Migrating from Kyverno to Kubewarden is straightforward for validation policies where direct hub equivalents exist, and more involved for custom mutation policies that require Wasm development. The side-by-side approach - running both systems simultaneously with Kubewarden in monitor mode - is the safest migration path. Kyverno's `Generate` rules (for creating Kubernetes resources based on events) have no equivalent in Kubewarden and should be handled separately through other mechanisms such as operators or GitOps controllers.

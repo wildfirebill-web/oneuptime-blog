@@ -170,6 +170,7 @@ kubectl create namespace observability
 kubectl apply -f otel-agent-daemonset.yaml
 
 # Verify deployment
+
 kubectl get daemonset -n observability
 kubectl get pods -n observability -l app=otel-agent
 

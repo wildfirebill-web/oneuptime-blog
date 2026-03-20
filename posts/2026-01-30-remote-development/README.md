@@ -88,6 +88,7 @@ Create a configuration format that developers can customize. Here is a YAML sche
 
 ```yaml
 # workspace-config.yaml
+
 apiVersion: devenv/v1
 kind: WorkspaceTemplate
 metadata:

@@ -14,6 +14,7 @@ Osquery turns the operating system into a relational database. Instead of memori
 
 ```bash
 # Add the Osquery GPG key and repository
+
 curl -L https://pkg.osquery.io/deb/pubkey.gpg | sudo apt-key add -
 sudo add-apt-repository 'deb [arch=amd64] https://pkg.osquery.io/deb deb main'
 

@@ -24,6 +24,7 @@ AlmaLinux is a community-driven, RHEL-compatible distribution that provides free
 
 ```bash
 # Update all packages
+
 sudo dnf update -y
 ```
 

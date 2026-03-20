@@ -52,6 +52,7 @@ Cloud CDN requires a Cloud Load Balancer with a backend service. Here is how to 
 
 ```bash
 # Create a health check
+
 gcloud compute health-checks create http my-health-check \
     --port=80 \
     --request-path="/health"

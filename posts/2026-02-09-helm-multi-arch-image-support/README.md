@@ -22,6 +22,7 @@ Design your values.yaml to handle both simple single-arch scenarios and complex 
 
 ```yaml
 # values.yaml
+
 image:
   # Primary image configuration
   repository: mycompany/myapp

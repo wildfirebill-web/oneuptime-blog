@@ -21,6 +21,7 @@ export RANCHER_URL="https://rancher.example.com"
 export RANCHER_TOKEN="token-xxxxx:yyyyyyyyyyyyyyyy"
 
 # Filter clusters by state
+
 curl -s -k \
   -H "Authorization: Bearer ${RANCHER_TOKEN}" \
   "${RANCHER_URL}/v3/clusters?state=active" | jq '.data[] | {name, state}'

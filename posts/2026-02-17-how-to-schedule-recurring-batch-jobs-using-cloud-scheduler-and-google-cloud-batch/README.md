@@ -94,6 +94,7 @@ Cloud Scheduler needs to call the Batch API's create job endpoint with the job t
 
 ```bash
 # Create a service account for the scheduler
+
 gcloud iam service-accounts create batch-scheduler-sa \
   --display-name="Batch Scheduler Service Account"
 

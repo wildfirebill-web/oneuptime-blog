@@ -22,6 +22,7 @@ A View is a configuration rule that modifies how the SDK aggregates metric data.
 
 ```python
 # metrics_setup.py
+
 from opentelemetry import metrics
 from opentelemetry.sdk.metrics import MeterProvider
 from opentelemetry.sdk.metrics.export import PeriodicExportingMetricReader

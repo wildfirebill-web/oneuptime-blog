@@ -46,6 +46,7 @@ Ensure BGP is enabled in the Cilium configuration:
 ```bash
 kubectl -n kube-system get configmap cilium-config -o yaml | grep bgp
 # Should show: enable-bgp-control-plane: "true"
+
 ```
 
 ## Inspecting BGP State

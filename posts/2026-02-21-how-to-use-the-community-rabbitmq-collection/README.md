@@ -16,6 +16,7 @@ The collection is available from Ansible Galaxy and needs the `requests` Python 
 
 ```bash
 # Install the collection from Galaxy
+
 ansible-galaxy collection install community.rabbitmq
 
 # Install the Python dependency for the HTTP API modules

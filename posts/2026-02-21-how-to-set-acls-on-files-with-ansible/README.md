@@ -22,6 +22,7 @@ For example, a file owned by `root:root` with mode 640 normally only allows root
 
 ```yaml
 # Grant a specific user read access to a config file
+
 - name: Grant deploy user read access to app config
   ansible.posix.acl:
     path: /etc/myapp/config.yml

@@ -285,6 +285,7 @@ from datetime import datetime
 import logging
 
 # Configure logging for the migration process
+
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s'

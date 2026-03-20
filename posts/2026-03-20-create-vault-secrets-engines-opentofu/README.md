@@ -8,7 +8,7 @@ Description: Learn how to enable and configure HashiCorp Vault secrets engines u
 
 ## Introduction
 
-Vault secrets engines are plugins that store, generate, or encrypt data. OpenTofu manages the lifecycle of secrets engines — enabling them, configuring their backends, and creating roles — ensuring your Vault infrastructure is reproducible and version-controlled.
+Vault secrets engines are plugins that store, generate, or encrypt data. OpenTofu manages the lifecycle of secrets engines - enabling them, configuring their backends, and creating roles - ensuring your Vault infrastructure is reproducible and version-controlled.
 
 ## KV Secrets Engine (Version 2)
 
@@ -24,6 +24,7 @@ resource "vault_mount" "kv" {
 }
 
 # Configure KV engine options
+
 resource "vault_kv_secret_backend_v2" "config" {
   mount                      = vault_mount.kv.path
   max_versions               = 10
@@ -162,4 +163,4 @@ resource "vault_mount" "engines" {
 
 ## Conclusion
 
-Managing secrets engines with OpenTofu treats your Vault configuration as infrastructure — it's reproducible, peer-reviewed, and consistent across environments. The PKI engine deserves special attention for internal certificate management, replacing manual certificate processes with short-lived, automatically-renewed certificates that reduce the impact of certificate compromise.
+Managing secrets engines with OpenTofu treats your Vault configuration as infrastructure - it's reproducible, peer-reviewed, and consistent across environments. The PKI engine deserves special attention for internal certificate management, replacing manual certificate processes with short-lived, automatically-renewed certificates that reduce the impact of certificate compromise.

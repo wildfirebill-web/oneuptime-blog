@@ -23,6 +23,7 @@ Your reverse proxy (Traefik) then routes each hostname to the correct container.
 
 ```bash
 # Using Cloudflare API
+
 CF_ZONE_ID="your-zone-id"
 CF_API_TOKEN="your-api-token"
 SERVER_IP="203.0.113.10"
@@ -202,4 +203,4 @@ echo | openssl s_client -connect new-service.services.example.com:443 2>/dev/nul
 
 ## Conclusion
 
-Wildcard DNS and certificates with Portainer and Traefik create a zero-configuration service discovery system. Every new service you deploy only needs a Traefik label with the desired subdomain—no DNS records to create, no certificates to request. This makes deploying new services a one-step process, perfect for rapid iteration and microservice architectures.
+Wildcard DNS and certificates with Portainer and Traefik create a zero-configuration service discovery system. Every new service you deploy only needs a Traefik label with the desired subdomain-no DNS records to create, no certificates to request. This makes deploying new services a one-step process, perfect for rapid iteration and microservice architectures.

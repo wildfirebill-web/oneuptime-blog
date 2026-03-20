@@ -52,6 +52,7 @@ Before moving anything, understand what will change.
 
 ```bash
 # List all policy assignments that the subscription currently inherits
+
 # This includes both direct and inherited assignments
 az policy assignment list \
   --scope "/subscriptions/<subscription-id>" \

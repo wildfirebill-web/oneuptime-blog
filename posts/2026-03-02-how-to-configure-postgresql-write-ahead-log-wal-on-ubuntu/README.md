@@ -27,6 +27,7 @@ A running PostgreSQL instance on Ubuntu (this guide uses PostgreSQL 16, but appl
 
 ```bash
 # Install PostgreSQL if not already present
+
 sudo apt update
 sudo apt install -y postgresql postgresql-contrib
 

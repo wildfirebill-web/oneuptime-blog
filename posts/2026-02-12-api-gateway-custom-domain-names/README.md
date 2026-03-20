@@ -31,6 +31,7 @@ This command requests a certificate for your API domain with DNS validation:
 
 ```bash
 # Request a certificate for your API domain
+
 aws acm request-certificate \
   --domain-name api.example.com \
   --validation-method DNS \

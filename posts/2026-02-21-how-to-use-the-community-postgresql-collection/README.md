@@ -14,6 +14,7 @@ Managing PostgreSQL databases with Ansible gives you repeatable, auditable datab
 
 ```bash
 # Install the collection
+
 ansible-galaxy collection install community.postgresql
 
 # Install the Python PostgreSQL adapter on target hosts

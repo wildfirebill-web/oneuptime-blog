@@ -26,6 +26,7 @@ Start by exploring the raw metrics available from Flux controllers.
 
 ```bash
 # Port-forward to the kustomize-controller
+
 kubectl port-forward -n flux-system deployment/kustomize-controller 8080:8080 &
 
 # View raw histogram buckets

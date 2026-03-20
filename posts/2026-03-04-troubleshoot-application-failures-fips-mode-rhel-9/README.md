@@ -38,6 +38,7 @@ flowchart TD
 
 ```bash
 # Check system logs for crypto-related errors
+
 journalctl -b | grep -iE "fips|crypto|cipher|ssl|tls" | tail -30
 
 # Check application-specific logs

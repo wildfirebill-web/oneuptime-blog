@@ -31,6 +31,7 @@ Create an IAM role that allows the Prometheus pod to write to AMP.
 
 ```bash
 # Create an OIDC provider for your EKS cluster (if not already done)
+
 eksctl utils associate-iam-oidc-provider \
   --cluster my-eks-cluster \
   --approve

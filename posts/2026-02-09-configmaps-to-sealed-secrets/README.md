@@ -22,6 +22,7 @@ Deploy the controller to your cluster:
 
 ```bash
 # Install using kubectl
+
 kubectl apply -f https://github.com/bitnami-labs/sealed-secrets/releases/download/v0.24.0/controller.yaml
 
 # Verify installation

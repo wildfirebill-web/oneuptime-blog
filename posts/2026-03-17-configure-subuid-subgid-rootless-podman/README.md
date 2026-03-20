@@ -18,6 +18,7 @@ Rootless Podman relies on Linux user namespaces to remap UIDs and GIDs inside co
 
 ```bash
 # /etc/subuid format: username:start_uid:count
+
 # /etc/subgid format: username:start_gid:count
 
 # Example entry: myuser:100000:65536

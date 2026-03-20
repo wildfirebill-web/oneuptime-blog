@@ -85,6 +85,7 @@ Calico Cloud installs via a manifest generated in the Tigera portal after signin
 
 ```bash
 # Apply the install manifest provided by Tigera
+
 kubectl apply -f https://installer.calicocloud.io/<your-trial-token>/install.yaml
 ```
 

@@ -14,6 +14,7 @@ As infrastructure grows, `tofu plan` can take 5–30 minutes in large configurat
 
 ```bash
 # Time the plan
+
 time tofu plan
 
 # Enable debug logging to see which resources take longest
@@ -25,7 +26,7 @@ grep "Refreshing state" /tmp/plan-timing.log | \
 ## Optimization 1: Skip Refresh for Known-Stable Infrastructure
 
 ```bash
-# Skip the refresh phase — use state as the source of truth
+# Skip the refresh phase - use state as the source of truth
 # Only safe when you are confident no out-of-band changes occurred
 tofu plan -refresh=false
 
@@ -35,7 +36,7 @@ tofu plan -refresh=false
 ## Optimization 2: Increase Parallelism for Refresh
 
 ```bash
-# Default parallelism is 10 — increase for refresh-heavy plans
+# Default parallelism is 10 - increase for refresh-heavy plans
 tofu plan -parallelism=50   # More concurrent API calls = faster refresh
 
 # Test at different levels to find the sweet spot without hitting rate limits
@@ -50,14 +51,14 @@ tofu plan -parallelism=30
 tofu plan -target=module.eks
 tofu plan -target=aws_instance.web -target=aws_security_group.web
 
-# Useful during development — always run a full plan before merging
+# Useful during development - always run a full plan before merging
 ```
 
 ## Optimization 4: Split Configuration into Smaller State Files
 
 The single biggest improvement for very large configs is splitting them:
 
-```
+```text
 Before:
   one-config/ (500 resources, 15-minute plan)
 
@@ -86,12 +87,12 @@ echo 'export TF_PLUGIN_CACHE_DIR="$HOME/.terraform.d/plugin-cache"' >> ~/.zshrc
 Each data source makes a cloud API call. Consolidate or eliminate unnecessary reads:
 
 ```hcl
-# BAD — 10 separate data source calls for availability zones
+# BAD - 10 separate data source calls for availability zones
 data "aws_availability_zone" "a" { name = "us-east-1a" }
 data "aws_availability_zone" "b" { name = "us-east-1b" }
 # ...
 
-# GOOD — single call that returns all AZs
+# GOOD - single call that returns all AZs
 data "aws_availability_zones" "available" {
   state = "available"
 }

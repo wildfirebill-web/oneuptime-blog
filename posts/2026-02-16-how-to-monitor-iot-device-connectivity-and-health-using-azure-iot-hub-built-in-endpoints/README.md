@@ -30,6 +30,7 @@ First, check that the built-in endpoint is accessible.
 
 ```bash
 # Get the built-in endpoint details
+
 az iot hub show \
   --name my-iot-hub \
   --query properties.eventHubEndpoints.events \

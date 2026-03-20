@@ -232,6 +232,7 @@ With structured JSON logs in your logging platform, querying becomes very powerf
 
 ```bash
 # Elasticsearch: Find all 5xx errors for a specific service
+
 curl -s "http://elasticsearch:9200/istio-*/_search" -H 'Content-Type: application/json' -d '{
   "query": {
     "bool": {

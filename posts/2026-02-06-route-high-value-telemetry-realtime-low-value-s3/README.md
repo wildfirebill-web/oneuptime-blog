@@ -43,6 +43,7 @@ The OpenTelemetry Collector's `routing` connector handles signal classification 
 
 ```yaml
 # Collector config that routes telemetry to hot or cold storage
+
 # based on signal attributes and severity.
 receivers:
   otlp:

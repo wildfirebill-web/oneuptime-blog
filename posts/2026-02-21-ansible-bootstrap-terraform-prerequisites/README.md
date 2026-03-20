@@ -14,6 +14,7 @@ Before Terraform can manage your infrastructure, certain prerequisites need to b
 
 ```yaml
 # roles/terraform_bootstrap/tasks/main.yml
+
 ---
 - name: Install Terraform binary
   get_url:

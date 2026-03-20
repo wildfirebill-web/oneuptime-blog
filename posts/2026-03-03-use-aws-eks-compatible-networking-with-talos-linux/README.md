@@ -35,6 +35,7 @@ Generate your Talos config with the CNI disabled:
 
 ```bash
 # Generate config with the default CNI disabled
+
 talosctl gen config my-cluster https://my-cluster-endpoint:6443 \
   --config-patch='[
     {"op": "add", "path": "/cluster/network/cni", "value": {

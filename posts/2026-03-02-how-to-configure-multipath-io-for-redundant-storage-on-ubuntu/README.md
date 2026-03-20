@@ -23,6 +23,7 @@ sudo apt update
 sudo apt install multipath-tools -y
 
 # Enable and start the daemon
+
 sudo systemctl enable --now multipathd
 ```
 

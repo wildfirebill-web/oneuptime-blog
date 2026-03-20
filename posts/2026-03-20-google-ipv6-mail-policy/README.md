@@ -31,6 +31,7 @@ MAIL_DOMAIN="example.com"
 MAIL_HOST="mail.example.com"
 
 # 1. Check PTR record
+
 echo "=== PTR Record ==="
 dig -x $MAIL_IP +short
 
@@ -94,7 +95,7 @@ print(f'Message: {msg}')
 
 ## DKIM Configuration for IPv6 Servers
 
-DKIM signing is independent of IP version — configure it in Postfix with OpenDKIM:
+DKIM signing is independent of IP version - configure it in Postfix with OpenDKIM:
 
 ```bash
 # Install OpenDKIM

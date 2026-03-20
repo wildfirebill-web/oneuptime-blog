@@ -1,4 +1,4 @@
-# How to Set Up a Java/Spring Boot Development Environment with Portainer
+# How to Set Up a Java/Spring Boot Development Environment with Portainer (2)
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -14,6 +14,7 @@ Containerized Java development eliminates the "works on my machine" problem and 
 
 ```dockerfile
 # Dockerfile.dev - Java Spring Boot development image
+
 FROM eclipse-temurin:21-jdk-alpine
 
 # Install development tools

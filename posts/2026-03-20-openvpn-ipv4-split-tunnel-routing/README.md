@@ -16,6 +16,7 @@ In your OpenVPN server config, remove or comment out the default route push:
 # /etc/openvpn/server/server.conf
 
 # Remove or comment out this line for split tunneling
+
 # push "redirect-gateway def1 bypass-dhcp"
 
 # Instead, push only specific routes to clients

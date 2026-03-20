@@ -20,6 +20,7 @@ The machine configuration is stored on the node itself. When you run `talosctl e
 
 ```bash
 # Edit the machine configuration on a specific node
+
 talosctl edit mc --nodes <node-ip>
 ```
 

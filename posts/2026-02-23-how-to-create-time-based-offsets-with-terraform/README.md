@@ -20,6 +20,7 @@ The time_offset resource takes a base time (defaulting to the current time at cr
 
 ```hcl
 # main.tf - Provider configuration
+
 terraform {
   required_version = ">= 1.5.0"
 
@@ -185,7 +186,7 @@ resource "aws_db_instance" "main" {
 }
 ```
 
-## Resource Lifecycle Dates
+Resource Lifecycle Dates
 
 Set up resource expiration and cleanup schedules:
 

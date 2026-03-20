@@ -53,6 +53,7 @@ Create `Caddyfile` on the Docker host (bind-mounted):
 
 ```caddyfile
 # Redirect all bare domain to www
+
 yourdomain.com {
     redir https://www.yourdomain.com{uri}
 }
@@ -134,7 +135,7 @@ When deploying new services via Portainer, update the Caddyfile and reload:
 
 In the Portainer stack environment variables:
 
-```
+```text
 ACME_EMAIL = admin@yourdomain.com
 APP_DOMAIN = app.yourdomain.com
 APP_BACKEND = myapp:8080

@@ -20,6 +20,7 @@ The Home Agent is the cornerstone of a Mobile IPv6 deployment. This guide covers
 
 ```bash
 # Install from package or source
+
 sudo apt-get update
 sudo apt-get install umip
 
@@ -53,12 +54,12 @@ sudo sysctl -p /etc/sysctl.d/99-mipv6.conf
 ## Step 3: Configure the UMIP Home Agent
 
 ```bash
-# /etc/mip6d.conf — Home Agent configuration
+# /etc/mip6d.conf - Home Agent configuration
 
 # Role: Home Agent
 NodeConfig HA;
 
-# HA interface — must be on the home network
+# HA interface - must be on the home network
 Interface "eth0" {
     # HA address on the home link
     HaRestartAfterReboot enabled;
@@ -71,7 +72,7 @@ HomeAgentPreference 10;  # Higher = preferred HA
 HomeAgentLifetime 300;   # Seconds advertised to MNs
 
 # IPsec configuration for BU authentication
-# Using manual keys (for testing — use IKEv2 in production)
+# Using manual keys (for testing - use IKEv2 in production)
 UseMnHaIPsec enabled;
 
 IPsecPolicySet {
@@ -98,7 +99,7 @@ IPsecPolicySet {
 For testing with manual keys (use IKEv2/strongSwan in production):
 
 ```bash
-# /etc/ipsec.conf — manual SA for MN-HA authentication
+# /etc/ipsec.conf - manual SA for MN-HA authentication
 ip xfrm state add \
   src 2001:db8:home::100 \
   dst 2001:db8:home::1 \

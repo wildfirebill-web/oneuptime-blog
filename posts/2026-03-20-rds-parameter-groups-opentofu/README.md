@@ -1,4 +1,4 @@
-# How to Configure RDS Parameter Groups with OpenTofu
+# How to Configure RDS Parameter Groups with OpenTofu - Rds
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -19,6 +19,7 @@ RDS parameter groups configure database engine settings like memory allocation, 
 
 ```hcl
 # Parameter group for PostgreSQL 16 with production tuning
+
 resource "aws_db_parameter_group" "postgres_prod" {
   name        = "${var.project_name}-postgres16-prod"
   family      = "postgres16"
@@ -179,4 +180,4 @@ aws rds describe-db-instances \
 
 ## Conclusion
 
-Custom parameter groups are essential for production database performance tuning. Parameters with `apply_method = "pending-reboot"` require a database restart to take effect—plan these changes during maintenance windows. Use `{DBInstanceClassMemory}` formula parameters for settings that should scale with instance size, making your parameter group reusable across different instance types.
+Custom parameter groups are essential for production database performance tuning. Parameters with `apply_method = "pending-reboot"` require a database restart to take effect-plan these changes during maintenance windows. Use `{DBInstanceClassMemory}` formula parameters for settings that should scale with instance size, making your parameter group reusable across different instance types.

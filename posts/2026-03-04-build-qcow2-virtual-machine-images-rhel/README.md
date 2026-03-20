@@ -14,6 +14,7 @@ QCOW2 (QEMU Copy-On-Write version 2) is the native disk format for KVM and libvi
 
 ```toml
 # kvm-server.toml
+
 name = "kvm-server"
 description = "RHEL QCOW2 image for KVM deployment"
 version = "1.0.0"

@@ -14,7 +14,7 @@ SLAAC's stateless design creates several security risks that IPv4 DHCP does not 
 
 The most critical SLAAC security risk is an unauthorized RA.
 
-```
+```text
 Rogue RA Attack Impact:
 
 Attack type: Default gateway hijacking
@@ -47,7 +47,7 @@ Mitigation:
 
 EUI-64 addresses are deterministic from MAC addresses.
 
-```
+```text
 EUI-64 Predictability:
 
 From MAC address 00:11:22:33:44:55:
@@ -78,7 +78,7 @@ Mitigation:
 
 SLAAC provides no central record of address assignments.
 
-```
+```text
 Forensic Limitations with SLAAC:
 
 DHCPv4:
@@ -109,7 +109,7 @@ Mitigations for tracking:
 
 Manipulating RA flags to redirect clients to DHCPv6 server.
 
-```
+```text
 Flag Manipulation Attack:
 
 Attacker sends RA with M=1 (Managed Address Configuration):
@@ -131,7 +131,7 @@ Mitigation:
 
 ## Risk 5: Neighbor Solicitation Spoofing via SLAAC
 
-```
+```text
 NA Spoofing via SLAAC:
 
 If SLAAC generates addresses predictably (EUI-64):
@@ -150,7 +150,7 @@ Mitigation:
 
 ## Security Hardening Checklist
 
-```
+```text
 SLAAC Security Hardening:
 
 Switch Level:

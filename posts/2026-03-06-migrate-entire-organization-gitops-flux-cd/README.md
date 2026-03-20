@@ -43,6 +43,7 @@ Create an inventory of what needs to be migrated:
 
 ```yaml
 # migration-inventory/clusters.yaml
+
 # Document all clusters and their current state
 clusters:
   - name: prod-us-east

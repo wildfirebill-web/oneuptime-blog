@@ -105,6 +105,7 @@ For microsecond latency, add DAX (DynamoDB Accelerator) as an in-memory caching 
 
 ```python
 # Using DAX for microsecond reads from DynamoDB
+
 import amazondax
 
 dax_client = amazondax.AmazonDaxClient(

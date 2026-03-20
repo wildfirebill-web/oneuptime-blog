@@ -21,6 +21,7 @@ sudo apt update
 sudo apt install stubby
 
 # Verify the installation
+
 stubby -V
 ```
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Linux, Static Routes, ip Command, Networking
+Tags: IPv6, Linux, Static Routes, ip command, Networking
 
 Description: Learn how to add, modify, and remove IPv6 static routes on Linux using the iproute2 ip command, with examples for persistent configuration.
 
@@ -14,6 +14,7 @@ Static IPv6 routes tell the Linux kernel how to reach specific networks by speci
 
 ```bash
 # Add a route to 2001:db8:1::/48 via a gateway
+
 sudo ip -6 route add 2001:db8:1::/48 via 2001:db8::1
 
 # Add a route specifying the exit interface

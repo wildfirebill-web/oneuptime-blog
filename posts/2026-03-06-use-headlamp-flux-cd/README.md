@@ -27,6 +27,7 @@ Verify your environment:
 
 ```bash
 # Check cluster connectivity
+
 kubectl cluster-info
 
 # Verify Flux is running

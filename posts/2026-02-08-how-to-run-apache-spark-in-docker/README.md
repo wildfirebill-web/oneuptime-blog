@@ -18,6 +18,7 @@ The fastest way to run Spark is with a single container in local mode:
 
 ```bash
 # Run Spark shell interactively in local mode
+
 docker run -it --rm \
   --name spark-shell \
   -p 4040:4040 \
@@ -228,7 +229,7 @@ Build and use it:
 docker build -t spark-custom:3.5.1 .
 ```
 
-## Resource Configuration
+Resource Configuration
 
 Proper resource allocation prevents Spark from consuming all system resources during local development:
 

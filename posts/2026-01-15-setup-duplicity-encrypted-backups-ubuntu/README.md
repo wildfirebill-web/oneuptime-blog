@@ -46,6 +46,7 @@ The simplest way to install Duplicity on Ubuntu is through the package manager:
 
 ```bash
 # Update package lists to ensure we have the latest package information
+
 sudo apt update
 
 # Install duplicity and its dependencies

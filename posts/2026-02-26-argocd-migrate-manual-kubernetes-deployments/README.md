@@ -30,6 +30,7 @@ The first step is getting your live cluster state into Git. This is the most imp
 
 ```bash
 # Export all deployments in a namespace
+
 kubectl get deployments -n production -o yaml > deployments.yaml
 
 # Export services

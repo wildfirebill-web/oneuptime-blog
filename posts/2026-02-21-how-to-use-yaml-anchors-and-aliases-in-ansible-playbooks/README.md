@@ -16,6 +16,7 @@ An anchor is defined with `&anchor_name` and referenced with `*anchor_name`. Her
 
 ```yaml
 # Basic YAML anchor and alias demonstration
+
 # The & defines the anchor, the * references it
 
 common_value: &my_anchor "this is the value"

@@ -41,6 +41,7 @@ Verify that your ArgoCD version supports the target Kubernetes version.
 
 ```bash
 # Check current ArgoCD version
+
 argocd version
 
 # Check the ArgoCD compatibility matrix

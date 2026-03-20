@@ -40,6 +40,7 @@ A stat panel showing total applications by health status.
 
 ```promql
 # Total healthy applications
+
 count(argocd_app_info{health_status="Healthy"})
 
 # Total degraded applications

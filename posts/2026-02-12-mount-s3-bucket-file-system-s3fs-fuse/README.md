@@ -22,6 +22,7 @@ On Ubuntu/Debian:
 
 ```bash
 # Install s3fs from the package manager
+
 sudo apt-get update
 sudo apt-get install -y s3fs
 ```

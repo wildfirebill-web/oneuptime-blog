@@ -72,6 +72,7 @@ def bulk_index_simple(documents: List[Dict], index_name: str) -> tuple:
 
 
 # Usage
+
 documents = [
     {"name": "Product 1", "price": 100},
     {"name": "Product 2", "price": 200},

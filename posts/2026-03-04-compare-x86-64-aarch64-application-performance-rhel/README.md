@@ -16,6 +16,7 @@ The key to valid comparison is controlling variables. Use the same RHEL version,
 
 ```bash
 # On both x86_64 and aarch64 systems, verify the OS version
+
 cat /etc/redhat-release
 
 # Ensure the same packages are installed

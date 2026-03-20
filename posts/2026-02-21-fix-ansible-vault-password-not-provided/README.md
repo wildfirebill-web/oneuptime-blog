@@ -30,6 +30,7 @@ The simplest approach:
 
 ```bash
 # Prompt for the vault password when running the playbook
+
 ansible-playbook playbook.yml --ask-vault-pass
 ```
 

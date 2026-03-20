@@ -119,4 +119,4 @@ tofu apply tfplan
 
 ## Summary
 
-GCP Cloud Interconnect provides enterprise-grade, high-bandwidth hybrid connectivity. OpenTofu manages VLAN attachments, Cloud Router BGP configuration, and router interfaces as code — enabling consistent, auditable interconnect deployments.
+GCP Cloud Interconnect provides enterprise-grade, high-bandwidth hybrid connectivity. OpenTofu manages VLAN attachments, Cloud Router BGP configuration, and router interfaces as code - enabling consistent, auditable interconnect deployments.

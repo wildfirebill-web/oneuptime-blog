@@ -23,6 +23,7 @@ A typical marketplace installation involves these steps:
 
 ```python
 # oauth_flow.py
+
 from opentelemetry import trace
 from opentelemetry.trace import StatusCode
 import secrets

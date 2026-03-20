@@ -27,6 +27,7 @@ This guide provides a systematic validation procedure that covers every aspect o
 
 ```bash
 # Check container status
+
 docker ps --filter name=calico-node --format "table {{.Names}}\t{{.Status}}\t{{.Ports}}"
 
 # Check container health

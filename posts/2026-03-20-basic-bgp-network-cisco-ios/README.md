@@ -24,7 +24,7 @@ graph LR
 
 Enter global configuration mode and start the BGP process with your AS number:
 
-```
+```text
 R1# configure terminal
 
 ! Start BGP process for AS 65001
@@ -48,7 +48,7 @@ The `network` command requires the exact prefix and mask to exist in the routing
 
 Mirror the configuration on R2, pointing back to R1:
 
-```
+```text
 R2# configure terminal
 
 ! Start BGP process for AS 65002
@@ -70,7 +70,7 @@ R2(config-router)# end
 
 After a few seconds, check whether the BGP session has reached the Established state:
 
-```
+```text
 R1# show ip bgp summary
 
 ! Expected output excerpt:
@@ -84,7 +84,7 @@ A `State/PfxRcd` value showing a number (rather than a state name like `Active`)
 
 Verify that the prefix from R2 appears in R1's BGP table:
 
-```
+```text
 R1# show ip bgp
 
 ! Look for routes with > (best) and * (valid) flags
@@ -98,7 +98,7 @@ The `i` at the end indicates the prefix was learned via an IGP network statement
 
 A BGP route only matters if it makes it into the global routing table:
 
-```
+```text
 R1# show ip route bgp
 
 ! B        172.16.0.0/16 [20/0] via 10.0.0.2, 00:05:23

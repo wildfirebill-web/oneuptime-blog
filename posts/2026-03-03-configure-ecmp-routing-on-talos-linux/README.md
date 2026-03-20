@@ -62,6 +62,7 @@ Apply the configuration:
 
 ```bash
 # Apply the sysctl settings
+
 talosctl apply-config --nodes 192.168.1.10 --file config.yaml
 
 # Verify the settings took effect

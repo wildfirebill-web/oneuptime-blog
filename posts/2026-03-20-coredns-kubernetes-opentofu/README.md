@@ -8,7 +8,7 @@ Description: Learn how to configure CoreDNS on Kubernetes clusters using OpenTof
 
 ## Introduction
 
-CoreDNS is the default DNS server in Kubernetes clusters. While Kubernetes manages a default CoreDNS deployment, you often need to customize it — adding forwarding rules, stub zones for on-premises DNS, or custom hosts entries. OpenTofu with the Kubernetes provider manages CoreDNS configuration as code.
+CoreDNS is the default DNS server in Kubernetes clusters. While Kubernetes manages a default CoreDNS deployment, you often need to customize it - adding forwarding rules, stub zones for on-premises DNS, or custom hosts entries. OpenTofu with the Kubernetes provider manages CoreDNS configuration as code.
 
 ## Provider Setup
 
@@ -143,6 +143,7 @@ Add static host entries for specific names.
 
 ```hcl
 # Add custom hosts to CoreDNS via a hosts plugin addition
+
 locals {
   custom_hosts = <<-EOF
     10.0.1.50 legacy-db.internal

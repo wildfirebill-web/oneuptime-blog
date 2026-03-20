@@ -25,6 +25,7 @@ Write a function with a clear contract:
 
 ```python
 # process_image.py
+
 import json
 import base64
 from PIL import Image

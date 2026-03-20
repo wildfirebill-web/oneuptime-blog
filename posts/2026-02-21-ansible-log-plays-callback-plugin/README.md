@@ -20,6 +20,7 @@ Enable it as a notification callback in `ansible.cfg`:
 
 ```ini
 # ansible.cfg - Enable per-host logging
+
 [defaults]
 callback_whitelist = log_plays
 # Directory for log files (default: /var/log/ansible/hosts)

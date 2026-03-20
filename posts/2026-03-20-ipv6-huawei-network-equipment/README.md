@@ -14,6 +14,7 @@ Huawei network equipment runs VRP (Versatile Routing Platform), which powers rou
 
 ```bash
 # Enter system view
+
 <Huawei> system-view
 
 # Enable IPv6 routing

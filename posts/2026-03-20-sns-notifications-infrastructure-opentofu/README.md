@@ -25,6 +25,7 @@ graph LR
 
 ```hcl
 # sns.tf
+
 resource "aws_sns_topic" "infrastructure_alerts" {
   name              = "${var.environment}-infrastructure-alerts"
   kms_master_key_id = aws_kms_key.sns.arn
@@ -103,7 +104,7 @@ resource "aws_sns_topic_policy" "infrastructure_alerts" {
 ## Subscriptions
 
 ```hcl
-# Email subscription — requires manual confirmation
+# Email subscription - requires manual confirmation
 resource "aws_sns_topic_subscription" "ops_email" {
   topic_arn = aws_sns_topic.infrastructure_alerts.arn
   protocol  = "email"
@@ -230,7 +231,7 @@ resource "aws_cloudwatch_metric_alarm" "db_connections_warning" {
 
 ## Best Practices
 
-- Use separate SNS topics per severity level — critical alerts should wake people up; warnings should go to Slack.
+- Use separate SNS topics per severity level - critical alerts should wake people up; warnings should go to Slack.
 - Encrypt SNS topics with KMS and restrict CloudWatch publish permissions to your account only.
 - Use `endpoint_auto_confirms = true` for HTTPS endpoints that handle confirmation automatically (PagerDuty, OpsGenie).
 - Wire both `alarm_actions` and `ok_actions` to SNS so you receive recovery notifications.

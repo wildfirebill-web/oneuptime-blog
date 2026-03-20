@@ -28,6 +28,7 @@ Use `aftr` software (from the ISC) or a hardware implementation. Here's a Linux 
 
 ```bash
 # Install Jool with MAP/DS-Lite support
+
 apt install jool-dkms jool-tools
 
 # Load softwire module
@@ -44,7 +45,7 @@ iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE
 
 ## AFTR with Cisco IOS (Hardware)
 
-```
+```text
 ! Cisco IOS DS-Lite AFTR configuration
 ipv6 unicast-routing
 
@@ -68,7 +69,7 @@ ipv6 dhcp pool DS-LITE
 
 ## B4 Configuration on CPE (OpenWRT)
 
-```
+```text
 # /etc/config/network on customer OpenWRT router
 
 config interface 'wan6'

@@ -1,4 +1,4 @@
-# How to Integrate HashiCorp Vault with Portainer
+# How to Integrate HashiCorp Vault with Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -20,6 +20,7 @@ HashiCorp Vault is an enterprise-grade secrets management platform that provides
 
 ```yaml
 # vault-stack.yml - deploy as Portainer stack
+
 version: '3.8'
 
 services:

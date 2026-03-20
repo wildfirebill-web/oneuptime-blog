@@ -14,6 +14,7 @@ Cacti is a complete network graphing solution using RRDtool. Configuring Cacti t
 
 ```bash
 # Verify Net-SNMP supports IPv6
+
 snmpget --version
 # Should show "NET-SNMP version 5.x" with IPv6 support
 
@@ -52,7 +53,7 @@ sudo nano /var/www/html/cacti/include/config.php
 
 ## Adding IPv6 Devices to Cacti
 
-```
+```sql
 Via Cacti Web Interface:
 1. Go to Management > Devices > Add
 2. In "Hostname" field, enter IPv6 address in brackets: [2001:db8::device]
@@ -108,7 +109,7 @@ snmpget --version 2>&1 | grep "IPv6"
 
 ## Creating IPv6-Specific Graphs
 
-```
+```text
 In Cacti Web Interface:
 
 1. Create Data Input Method:

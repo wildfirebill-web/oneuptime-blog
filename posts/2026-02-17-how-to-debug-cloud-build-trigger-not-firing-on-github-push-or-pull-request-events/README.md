@@ -24,6 +24,7 @@ First, verify the trigger exists and its configuration is correct:
 
 ```bash
 # List all build triggers
+
 gcloud builds triggers list \
     --format="table(name, triggerTemplate.branchName, github.push.branch, github.pullRequest.branch, disabled)"
 ```

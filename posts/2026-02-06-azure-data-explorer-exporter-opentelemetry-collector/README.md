@@ -45,6 +45,7 @@ Create an ADX cluster and database:
 
 ```bash
 # Create ADX cluster (this takes several minutes)
+
 az kusto cluster create \
   --name myadxcluster \
   --resource-group my-resource-group \

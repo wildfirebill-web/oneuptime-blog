@@ -26,6 +26,7 @@ Cloud Monitoring organizes SLOs under services. If your service is running on Ap
 
 ```bash
 # Create a custom service for SLO monitoring
+
 gcloud monitoring services create my-api-service \
     --display-name="My API Service" \
     --project=my-gcp-project

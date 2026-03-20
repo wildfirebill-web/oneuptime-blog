@@ -182,6 +182,7 @@ Build a Kubernetes controller that watches external sources and generates Author
 
 ```yaml
 # ConfigMap that drives policy generation
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

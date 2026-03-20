@@ -101,6 +101,7 @@ TTL log_date + INTERVAL 30 DAY;
 
 ```toml
 # vector.toml
+
 [sources.docker_logs]
 type = "docker_logs"
 include_containers = ["*"]

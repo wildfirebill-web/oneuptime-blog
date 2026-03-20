@@ -171,7 +171,7 @@ kubectl describe pod -n default <pod-name>
 kubectl logs -n default <pod-name>
 ```
 
-### Resource Quota Exceeded
+Resource Quota Exceeded
 
 Check if the namespace has resource quotas that block the deployment:
 

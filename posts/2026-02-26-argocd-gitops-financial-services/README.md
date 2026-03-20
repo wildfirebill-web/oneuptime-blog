@@ -236,6 +236,7 @@ Use policy engines to enforce compliance rules:
 
 ```yaml
 # Kyverno policy: All deployments must have resource limits
+
 apiVersion: kyverno.io/v1
 kind: ClusterPolicy
 metadata:

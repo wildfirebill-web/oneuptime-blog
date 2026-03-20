@@ -41,6 +41,7 @@ Linkerd requires a trust anchor certificate for mTLS. Generate it before deployi
 
 ```bash
 # Generate the trust anchor certificate (valid for 10 years)
+
 step certificate create root.linkerd.cluster.local ca.crt ca.key \
   --profile root-ca \
   --no-password \

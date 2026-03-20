@@ -35,6 +35,7 @@ Start by installing Strawberry and its dependencies. The base package includes e
 
 ```bash
 # Install Strawberry with the ASGI server
+
 pip install strawberry-graphql[asgi]
 
 # For FastAPI integration (recommended)

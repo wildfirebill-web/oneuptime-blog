@@ -338,7 +338,7 @@ receivers:
       interval: 1s
 ```
 
-### Resource Attributes
+Resource Attributes
 
 Add metadata to consumed telemetry:
 
@@ -532,6 +532,7 @@ Configure applications to export directly to Kafka:
 
 ```yaml
 # Application's OpenTelemetry Collector configuration
+
 exporters:
   kafka:
     brokers:

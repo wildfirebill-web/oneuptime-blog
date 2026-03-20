@@ -46,6 +46,7 @@ Enable Google Managed Prometheus in your project:
 
 ```bash
 # Enable the Monitoring API
+
 gcloud services enable monitoring.googleapis.com
 
 # For GKE clusters, enable managed collection
@@ -206,7 +207,7 @@ exporters:
       compression: "snappy"
 ```
 
-## Resource Detection and Labels
+Resource Detection and Labels
 
 Add resource attributes that become Prometheus labels:
 

@@ -39,6 +39,7 @@ EVAL script numkeys key [key ...] arg [arg ...]
 
 ```bash
 # Increment a counter and return the new value
+
 redis-cli EVAL "return redis.call('INCR', KEYS[1])" 1 mycounter
 ```
 

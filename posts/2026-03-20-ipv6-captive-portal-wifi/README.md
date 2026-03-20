@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Captive Portal, Wi-Fi, Guest Network, Authentication, Hotspot
+Tags: IPv6, Captive Portal, Wi-Fi, Guest Network, Authentication, Hotspots
 
 Description: Configure IPv6-compatible captive portals for Wi-Fi guest networks, handling IPv6 redirect challenges, DNS-based interception, and dual-stack portal authentication.
 
@@ -12,7 +12,7 @@ Captive portals intercept unauthenticated users and redirect them to a login pag
 
 ## IPv6 Captive Portal Challenges
 
-```
+```text
 IPv6 Captive Portal Issues:
 1. Clients may have multiple IPv6 addresses (SLAAC + DHCPv6 + privacy)
 2. HTTPS sites show certificate errors when redirected
@@ -37,6 +37,7 @@ PORTAL_PORT="443"
 DNS_IP6="2001:db8::dns"
 
 # Flush existing rules
+
 nft flush ruleset
 
 # Create nftables configuration

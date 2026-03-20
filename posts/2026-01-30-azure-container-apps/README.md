@@ -58,6 +58,7 @@ Before starting, you need these tools installed.
 
 ```bash
 # Install Azure CLI if you do not have it
+
 # macOS
 brew install azure-cli
 

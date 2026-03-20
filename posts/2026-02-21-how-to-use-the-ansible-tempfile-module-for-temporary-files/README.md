@@ -16,6 +16,7 @@ The `tempfile` module creates a temporary file and returns its path in the regis
 
 ```yaml
 # Create a temporary file on the remote host
+
 - name: Create a temporary file
   ansible.builtin.tempfile:
     state: file

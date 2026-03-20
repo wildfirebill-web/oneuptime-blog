@@ -28,6 +28,7 @@ SUSE Observability issues typically fall into three categories: agent connectivi
 
 ```bash
 # Check if all agent pods are running
+
 kubectl get pods -n suse-observability \
   -l app.kubernetes.io/name=suse-observability-agent
 
@@ -199,5 +200,5 @@ kubectl get pods -n suse-observability
 ## Best Practices
 
 - Monitor the SUSE Observability server itself with Prometheus and alert on Elasticsearch disk usage and Kafka consumer lag.
-- Keep the agent and server versions in sync — version mismatches can cause silent data loss.
+- Keep the agent and server versions in sync - version mismatches can cause silent data loss.
 - Use `helm upgrade --reuse-values` when changing a single setting to avoid accidentally resetting other configuration.

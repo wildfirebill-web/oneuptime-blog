@@ -171,6 +171,7 @@ RESET app.tenant_id;
 
 ```python
 # Python/psycopg example
+
 import psycopg
 
 def get_connection(tenant_id):

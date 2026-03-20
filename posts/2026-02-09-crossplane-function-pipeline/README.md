@@ -22,6 +22,7 @@ Configure a Composition to use functions instead of traditional patch-based comp
 
 ```yaml
 # composition-with-functions.yaml
+
 apiVersion: apiextensions.crossplane.io/v1
 kind: Composition
 metadata:

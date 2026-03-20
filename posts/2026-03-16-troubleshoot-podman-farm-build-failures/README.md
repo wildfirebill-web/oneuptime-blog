@@ -20,6 +20,7 @@ When a farm build fails, work through these layers in order:
 
 ```bash
 # Layer 1: Is the farm configured correctly?
+
 podman farm list
 
 # Layer 2: Are system connections defined?

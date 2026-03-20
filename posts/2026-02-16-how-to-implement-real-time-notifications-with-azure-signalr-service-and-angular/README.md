@@ -38,6 +38,7 @@ sequenceDiagram
 
 ```bash
 # Create the SignalR Service
+
 az signalr create \
   --name notifications-signalr \
   --resource-group notifications-rg \

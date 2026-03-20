@@ -23,6 +23,7 @@ sudo apt install iotop -y
 
 ```bash
 # Start iotop (requires root)
+
 sudo iotop
 ```
 

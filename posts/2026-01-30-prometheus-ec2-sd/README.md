@@ -119,6 +119,7 @@ If Prometheus runs on EC2, attach an IAM role to the instance. This eliminates t
 
 ```bash
 # Create trust policy for EC2
+
 cat > trust-policy.json << 'EOF'
 {
     "Version": "2012-10-17",

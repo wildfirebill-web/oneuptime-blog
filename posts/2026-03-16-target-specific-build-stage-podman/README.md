@@ -20,6 +20,7 @@ The `--target` flag tells Podman to stop building at a specific named stage and 
 
 ```bash
 # Syntax
+
 podman build --target STAGE_NAME -t image:tag .
 ```
 

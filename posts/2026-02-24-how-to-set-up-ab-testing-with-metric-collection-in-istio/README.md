@@ -209,6 +209,7 @@ Istio automatically collects request metrics per version. These tell you about o
 
 ```promql
 # Success rate per variant
+
 sum(rate(istio_requests_total{
   destination_service="product-page.production.svc.cluster.local",
   response_code!~"5.*",

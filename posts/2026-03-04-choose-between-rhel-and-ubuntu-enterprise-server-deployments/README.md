@@ -16,6 +16,7 @@ RHEL uses `dnf` (RPM-based), while Ubuntu uses `apt` (DEB-based):
 
 ```bash
 # RHEL: Install a package
+
 sudo dnf install httpd
 
 # Ubuntu: Install a package

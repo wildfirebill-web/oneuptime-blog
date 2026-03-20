@@ -42,6 +42,7 @@ On each Windows node:
 
 ```powershell
 # Increase TCP receive window
+
 netsh int tcp set supplemental Internet cwnd=10
 
 # Enable RSS

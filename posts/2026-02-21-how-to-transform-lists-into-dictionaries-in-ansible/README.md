@@ -22,6 +22,7 @@ Here is a basic example that converts a list of server settings into a dictionar
 
 ```yaml
 # playbook-items2dict.yml
+
 # Demonstrates converting a list of key-value objects into a flat dictionary
 - name: Transform list to dictionary using items2dict
   hosts: localhost

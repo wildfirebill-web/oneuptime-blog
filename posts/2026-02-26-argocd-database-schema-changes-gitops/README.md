@@ -75,6 +75,7 @@ A common challenge is keeping the migration Job's image tag in sync with the dep
 
 ```yaml
 # kustomization.yaml
+
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:

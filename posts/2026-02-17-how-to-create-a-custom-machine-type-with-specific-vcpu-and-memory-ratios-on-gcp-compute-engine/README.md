@@ -37,6 +37,7 @@ The most straightforward way to create a custom machine type is through the `gcl
 
 ```bash
 # Create a custom VM with 4 vCPUs and 10240 MB (10 GB) of memory
+
 gcloud compute instances create my-custom-vm \
     --zone=us-central1-a \
     --custom-cpu=4 \

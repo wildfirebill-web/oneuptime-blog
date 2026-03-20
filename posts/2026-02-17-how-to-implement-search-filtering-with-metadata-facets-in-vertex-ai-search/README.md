@@ -309,6 +309,7 @@ def search_with_facets(
     return response
 
 # Search and see available facets
+
 search_with_facets(
     project_id="your-project-id",
     location="global",

@@ -16,6 +16,7 @@ ArgoCD Notifications comes as a separate component that integrates with your Arg
 
 ```bash
 # Install ArgoCD Notifications
+
 kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj-labs/argocd-notifications/stable/manifests/install.yaml
 
 # Verify installation

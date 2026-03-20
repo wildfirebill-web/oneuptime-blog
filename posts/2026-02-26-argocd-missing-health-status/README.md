@@ -34,6 +34,7 @@ The simplest case: someone deleted the resource from the cluster using `kubectl 
 
 ```bash
 # Verify the resource does not exist
+
 kubectl get <resource-type> <resource-name> -n <namespace>
 
 # If it should exist, sync the application

@@ -1,4 +1,4 @@
-# How to Set Up Authelia as an OAuth Provider for Portainer
+# How to Set Up Authelia as an OAuth Provider for Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -59,6 +59,7 @@ identity_providers:
 
 ```bash
 # Generate a client secret hash for Authelia
+
 docker run authelia/authelia:latest \
   authelia crypto hash generate pbkdf2 \
   --variant sha512 \
@@ -96,7 +97,7 @@ print('UserInfo URL:', d['userinfo_endpoint'])
 
 In Settings → Authentication → OAuth → Custom:
 
-```
+```text
 Client ID:         portainer
 Client Secret:     your-portainer-client-secret (unhashed)
 Authorization URL: https://authelia.example.com/api/oidc/authorization

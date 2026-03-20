@@ -29,6 +29,7 @@ graph TD
 
 ```yaml
 # group_vars/all.yml
+
 # Admin users who will replace root access
 admin_users:
   - username: sysadmin

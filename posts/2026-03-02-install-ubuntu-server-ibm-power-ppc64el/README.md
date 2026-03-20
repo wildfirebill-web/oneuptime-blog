@@ -31,6 +31,7 @@ POWER systems commonly run in two contexts:
 
 ```bash
 # Download Ubuntu Server 24.04 LTS for ppc64el
+
 wget https://cdimage.ubuntu.com/releases/24.04/release/ubuntu-24.04-live-server-ppc64el.iso
 
 # Verify checksum

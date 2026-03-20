@@ -18,6 +18,7 @@ Think of it as the reverse direction of `path_relative_to_include()`:
 
 ```text
 # Directory structure:
+
 live/
   terragrunt.hcl              # parent (included config)
   dev/

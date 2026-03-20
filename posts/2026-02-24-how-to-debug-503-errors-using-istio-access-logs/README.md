@@ -18,6 +18,7 @@ First, find the 503 errors in the access logs of the affected service:
 
 ```bash
 # Get recent 503 errors from the destination service
+
 kubectl logs deploy/my-service -c istio-proxy --tail=200 | grep '" 503 '
 ```
 

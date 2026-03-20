@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: HAProxy, DNS, Resolvers, IPv4, Service Discovery, Dynamic Configuration
+Tags: HAProxy, DNS, Resolver, IPv4, Service Discovery, Dynamic Configuration
 
 Description: Configure the HAProxy resolvers section to enable dynamic DNS-based server discovery, automatically updating IPv4 backend addresses when DNS records change.
 
 ## Introduction
 
-The `resolvers` section in HAProxy enables runtime DNS resolution for backend servers. As services scale or fail over, HAProxy picks up new IPv4 addresses from DNS without requiring a configuration reload—ideal for containerized and cloud-native environments.
+The `resolvers` section in HAProxy enables runtime DNS resolution for backend servers. As services scale or fail over, HAProxy picks up new IPv4 addresses from DNS without requiring a configuration reload-ideal for containerized and cloud-native environments.
 
 ## Basic Resolvers Configuration
 
@@ -92,6 +92,7 @@ backend consul_services
 
 ```bash
 # View resolver status and cached entries
+
 echo "show resolvers" | sudo socat stdio /run/haproxy/admin.sock
 
 # View server states and their current resolved IPs

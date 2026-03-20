@@ -22,6 +22,7 @@ Set up auto-unseal using AWS KMS:
 
 ```bash
 # Create KMS key in AWS
+
 aws kms create-key \
   --description "Vault auto-unseal key" \
   --key-usage ENCRYPT_DECRYPT \

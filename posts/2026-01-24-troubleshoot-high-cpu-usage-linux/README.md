@@ -44,6 +44,7 @@ flowchart TD
 
 ```bash
 # Real-time CPU overview
+
 top -o %CPU
 
 # Better interactive view

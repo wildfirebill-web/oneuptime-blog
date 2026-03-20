@@ -34,6 +34,7 @@ Ensure you have:
 
 ```bash
 # Add the Chaos Mesh Helm repository
+
 helm repo add chaos-mesh https://charts.chaos-mesh.org
 
 # Update your local Helm chart repository cache

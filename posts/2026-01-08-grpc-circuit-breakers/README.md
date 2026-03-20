@@ -637,6 +637,7 @@ def is_server_error(error: Exception) -> bool:
 
 
 # Usage example
+
 def create_channel_with_circuit_breaker(target: str) -> grpc.Channel:
     """Create a gRPC channel with circuit breaker."""
     config = CircuitBreakerConfig(

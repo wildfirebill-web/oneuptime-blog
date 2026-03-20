@@ -1,4 +1,4 @@
-# How to Deploy Elasticsearch Cluster via Portainer
+# How to Deploy Elasticsearch Cluster via Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -19,6 +19,7 @@ A production Elasticsearch deployment requires multiple nodes for high availabil
 
 ```bash
 # Required for all nodes - increase VM map count
+
 sudo sysctl -w vm.max_map_count=262144
 echo 'vm.max_map_count=262144' | sudo tee /etc/sysctl.d/99-elasticsearch.conf
 ```

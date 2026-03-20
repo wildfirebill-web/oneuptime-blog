@@ -1,4 +1,4 @@
-# How to Expose Portainer on Kubernetes via NodePort
+# How to Expose Portainer on Kubernetes via NodePort - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Learn how to expose Portainer running on Kubernetes via NodePort se
 
 ## Introduction
 
-NodePort is the simplest way to expose Portainer on Kubernetes — it opens a port on every cluster node that forwards traffic to Portainer. This works without a LoadBalancer or Ingress controller, making it ideal for on-premises clusters, development environments, and clusters without cloud provider load balancers.
+NodePort is the simplest way to expose Portainer on Kubernetes - it opens a port on every cluster node that forwards traffic to Portainer. This works without a LoadBalancer or Ingress controller, making it ideal for on-premises clusters, development environments, and clusters without cloud provider load balancers.
 
 ## Prerequisites
 
@@ -20,7 +20,7 @@ NodePort is the simplest way to expose Portainer on Kubernetes — it opens a po
 
 NodePort exposes a service on a specific port on all cluster nodes:
 
-```
+```text
 External client → <any-node-ip>:<node-port> → Portainer pod
 ```
 
@@ -30,6 +30,7 @@ NodePort ports must be in the range 30000-32767 by default.
 
 ```bash
 # Install Portainer with NodePort service
+
 helm install portainer portainer/portainer \
   --namespace portainer \
   --set service.type=NodePort \
@@ -153,7 +154,7 @@ kubectl apply -f portainer-nodeport-svc.yaml
 
 For high availability, put a load balancer in front of your cluster nodes:
 
-```
+```text
 Client → HAProxy/Nginx → Node 1:30779
                        → Node 2:30779
                        → Node 3:30779

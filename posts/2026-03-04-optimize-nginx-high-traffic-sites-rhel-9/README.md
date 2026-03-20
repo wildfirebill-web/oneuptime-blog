@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: RHEL, NGINX, Performance, Optimization, Linux
+Tags: RHEL, Nginx, Performance, Optimization, Linux
 
 Description: Performance tuning techniques for Nginx on RHEL to handle high traffic loads efficiently, covering worker tuning, kernel parameters, and caching.
 
@@ -24,6 +24,7 @@ Set the number of worker processes to match your CPU cores:
 
 ```nginx
 # In /etc/nginx/nginx.conf
+
 # Auto detects the number of CPU cores
 worker_processes auto;
 ```

@@ -13,7 +13,8 @@ Docker assigns IPs automatically from the network's DHCP pool. To assign a stati
 ## Step 1: Create a Network with a Known Subnet
 
 ```bash
-# Create a custom network — static IPs require a user-defined network
+# Create a custom network - static IPs require a user-defined network
+
 docker network create \
   --subnet 192.168.200.0/24 \
   --gateway 192.168.200.1 \
@@ -86,7 +87,7 @@ The default `docker0` network (`docker run` without `--network`) does not suppor
 # Restart the container
 docker restart nginx-static
 
-# Check — the IP should be the same
+# Check - the IP should be the same
 docker inspect nginx-static | grep '"IPAddress"'
 ```
 
@@ -94,4 +95,4 @@ Static IP assignments in user-defined networks persist across restarts as long a
 
 ## Conclusion
 
-Assign static IPs to Docker containers using `--ip` with `docker run` or `ipv4_address` in Docker Compose. Always create a user-defined network with a defined subnet first — static IPs are not supported on the default bridge network.
+Assign static IPs to Docker containers using `--ip` with `docker run` or `ipv4_address` in Docker Compose. Always create a user-defined network with a defined subnet first - static IPs are not supported on the default bridge network.

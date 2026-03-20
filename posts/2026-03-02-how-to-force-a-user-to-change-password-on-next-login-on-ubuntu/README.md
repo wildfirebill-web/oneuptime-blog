@@ -16,6 +16,7 @@ The simplest approach uses `passwd` with the `-e` (expire) flag:
 
 ```bash
 # Expire the password immediately - user must change it on next login
+
 sudo passwd -e username
 ```
 

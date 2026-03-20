@@ -189,6 +189,7 @@ If your GitHub Enterprise uses a self-signed certificate, mount the CA certifica
 
 ```yaml
 # Patch the Dex deployment to mount the CA cert
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

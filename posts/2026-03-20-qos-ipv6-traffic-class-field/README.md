@@ -12,7 +12,7 @@ The IPv6 Traffic Class field is the QoS marking mechanism for IPv6, equivalent t
 
 ## IPv6 Header Traffic Class Field
 
-```
+```yaml
 IPv6 Header Structure (40 bytes fixed):
 +-------+--------+-------------------+
 | Ver(4)| TC(8)  | Flow Label (20)   |  <- First 32 bits
@@ -28,7 +28,7 @@ Same 8-bit layout as IPv4 DSCP/ECN field in DS field
 
 ## DSCP Values in IPv6 Traffic Class
 
-```
+```text
 DSCP Codepoints (6 bits) and their meanings:
 
 Class Selector (CS):
@@ -57,6 +57,7 @@ EF   = 101110 = 0x2E = 46 (VoIP, low-latency)
 
 ```bash
 # View IPv6 Traffic Class in captured packets
+
 sudo tcpdump -i eth0 -nn ip6 -v | grep "class\|tc 0x"
 
 # Example output:

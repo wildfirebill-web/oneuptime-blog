@@ -27,6 +27,7 @@ Individual `.deb` files are not directly GPG-signed - the integrity guarantee co
 
 ```bash
 # Install GPG
+
 sudo apt install gnupg -y
 
 # Generate a signing key (use a dedicated key for package signing)
@@ -110,6 +111,7 @@ Codename: stable
 Architectures: amd64
 Components: main
 Description: Internal package repository
+
 EOF
 
 # Add checksums to Release file

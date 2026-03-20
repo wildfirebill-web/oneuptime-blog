@@ -20,6 +20,7 @@ Infracost is the de facto tool for Terraform cost estimation. It reads your Terr
 
 ```yaml
 # .github/workflows/cost-check.yml
+
 name: Terraform Cost Check
 on:
   pull_request:

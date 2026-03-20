@@ -27,6 +27,7 @@ Podman supports these log drivers:
 
 ```ini
 # ~/.config/containers/systemd/myapp.container
+
 [Unit]
 Description=Application with journald logging
 

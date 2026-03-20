@@ -45,6 +45,7 @@ Use `ansible-galaxy` to install collections.
 
 ```bash
 # Install from Ansible Galaxy
+
 ansible-galaxy collection install community.docker
 ansible-galaxy collection install amazon.aws
 

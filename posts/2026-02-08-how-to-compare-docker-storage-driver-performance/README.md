@@ -26,6 +26,7 @@ Check your current storage driver:
 
 ```bash
 # Show the active storage driver
+
 docker info | grep "Storage Driver"
 # Output: Storage Driver: overlay2
 

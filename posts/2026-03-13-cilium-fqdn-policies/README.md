@@ -85,6 +85,7 @@ egress:
 
 ```bash
 # Show cached FQDN-to-IP mappings
+
 kubectl exec -n kube-system cilium-xxxxx -- \
   cilium fqdn cache list
 

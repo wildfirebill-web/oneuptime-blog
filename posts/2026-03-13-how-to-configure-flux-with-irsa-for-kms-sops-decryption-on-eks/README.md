@@ -26,6 +26,7 @@ Create a KMS key dedicated to SOPS encryption:
 
 ```bash
 # Create the KMS key
+
 KEY_ARN=$(aws kms create-key \
   --description "SOPS encryption key for Flux" \
   --query 'KeyMetadata.Arn' \

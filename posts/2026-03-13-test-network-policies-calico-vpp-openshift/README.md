@@ -84,6 +84,7 @@ oc exec -n calico-vpp-dataplane <vpp-manager-pod-on-server-node> -- vppctl show 
 
 ```bash
 # Verify system namespace policy is in effect
+
 calicoctl get globalnetworkpolicy allow-openshift-system -o yaml
 oc exec -n openshift-ingress <router-pod> -- curl -sk https://kubernetes.default.svc.cluster.local/healthz
 ```

@@ -18,6 +18,7 @@ The simplest NOPASSWD sudoers entry looks like this:
 
 ```text
 # /etc/sudoers.d/ansible
+
 # Allow the deploy user to run any command as any user without a password
 deploy ALL=(ALL) NOPASSWD: ALL
 ```

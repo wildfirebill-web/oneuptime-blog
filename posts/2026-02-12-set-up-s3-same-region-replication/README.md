@@ -28,6 +28,7 @@ Create the destination bucket with versioning enabled:
 
 ```bash
 # Create the destination bucket
+
 aws s3api create-bucket \
     --bucket my-bucket-replica \
     --region us-east-1

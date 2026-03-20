@@ -13,7 +13,7 @@ Kong Ingress Controller (KIC) is a Kubernetes-native API gateway built on Kong G
 ## Install Kong with IPv6 Service (Helm)
 
 ```yaml
-# kong-values.yaml — Helm values for Kong with IPv6
+# kong-values.yaml - Helm values for Kong with IPv6
 
 proxy:
   # Kong proxy service with dual-stack
@@ -46,6 +46,7 @@ admin:
     servicePort: 8001
 
 # Kong environment for IPv6
+
 env:
   # Kong admin listen on all interfaces (IPv6 and IPv4)
   admin_listen: "0.0.0.0:8001, [::]:8001"
@@ -217,7 +218,7 @@ curl -6 -X POST "http://[2001:db8::kong]:8001/services/myapp/plugins" \
 ## Kong with IPv6 Real IP
 
 ```yaml
-# kong-real-ip-plugin.yaml — Configure trusted IPs for X-Forwarded-For
+# kong-real-ip-plugin.yaml - Configure trusted IPs for X-Forwarded-For
 
 apiVersion: configuration.konghq.com/v1
 kind: KongPlugin

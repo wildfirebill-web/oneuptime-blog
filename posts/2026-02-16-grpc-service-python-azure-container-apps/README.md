@@ -41,6 +41,7 @@ gRPC is typically 5-10x faster than REST for the same payload due to binary seri
 
 ```bash
 # Create the project
+
 mkdir grpc-azure-demo && cd grpc-azure-demo
 python -m venv venv
 source venv/bin/activate

@@ -142,6 +142,7 @@ Once you have customers onboarded through service offers, you can manage the del
 
 ```powershell
 # View all your active customer delegations
+
 Get-AzManagedServicesDefinition
 
 # View delegations for a specific customer subscription

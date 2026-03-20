@@ -26,6 +26,7 @@ Grafana needs read-only access to Cloud Monitoring metrics.
 
 ```bash
 # Create a service account for Grafana
+
 gcloud iam service-accounts create grafana-monitoring \
     --display-name="Grafana Cloud Monitoring Reader" \
     --project=my-gcp-project

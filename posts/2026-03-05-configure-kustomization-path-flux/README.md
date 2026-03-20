@@ -32,6 +32,7 @@ The path is relative to the root of the source repository. Here is a simple exam
 
 ```yaml
 # kustomization.yaml - Basic path configuration
+
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
 metadata:

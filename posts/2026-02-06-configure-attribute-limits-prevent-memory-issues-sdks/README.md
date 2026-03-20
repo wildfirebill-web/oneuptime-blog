@@ -48,6 +48,7 @@ Here is how to configure all of them in different languages.
 
 ```python
 # Configure comprehensive attribute limits for the Python SDK
+
 from opentelemetry.sdk.trace import TracerProvider, SpanLimits
 from opentelemetry.sdk.resources import Resource
 

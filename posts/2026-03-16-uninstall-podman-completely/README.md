@@ -25,6 +25,7 @@ Before uninstalling, stop and remove all containers:
 
 ```bash
 # Stop all running containers (rootless)
+
 podman stop --all
 
 # Stop all running containers (rootful, if any)

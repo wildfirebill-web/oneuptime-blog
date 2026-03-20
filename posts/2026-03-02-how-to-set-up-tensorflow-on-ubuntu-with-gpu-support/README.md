@@ -34,6 +34,7 @@ Always check the official TensorFlow compatibility table at `https://www.tensorf
 
 ```bash
 # Check if an NVIDIA GPU is present
+
 lspci | grep -i nvidia
 
 # Check current driver status

@@ -50,6 +50,7 @@ The Collector exposes internal metrics that help identify pipeline blocking. Ena
 
 ```yaml
 # Enable Collector self-monitoring
+
 service:
   telemetry:
     metrics:

@@ -29,6 +29,7 @@ Before making infrastructure changes, it is smart to check your current quota us
 
 ```hcl
 # data.tf - Query current quota information
+
 data "google_project" "current" {
   project_id = var.project_id
 }

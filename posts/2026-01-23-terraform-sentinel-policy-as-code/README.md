@@ -37,6 +37,7 @@ Sentinel policies are written in the Sentinel language, which is designed for po
 
 ```hcl
 # Basic policy structure
+
 import "tfplan/v2" as tfplan
 
 # Main rule that determines pass/fail

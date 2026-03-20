@@ -26,6 +26,7 @@ For a single Linux server:
 
 ```bash
 # Download and install the Azure Connected Machine agent on Linux
+
 wget https://aka.ms/azcmagent -O install_linux_azcmagent.sh
 bash install_linux_azcmagent.sh
 

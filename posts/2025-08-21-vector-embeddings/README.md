@@ -66,6 +66,7 @@ def euclidean_distance(vec_a, vec_b):
     return np.linalg.norm(vec_a - vec_b)
 
 # Example with small vectors for readability
+
 embedding_cat = np.array([0.9, 0.1, 0.3])
 embedding_kitten = np.array([0.85, 0.15, 0.28])
 embedding_truck = np.array([0.1, 0.8, 0.7])

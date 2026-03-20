@@ -1,4 +1,4 @@
-# How to Configure Persistent Storage for Kubernetes Apps in Portainer
+# How to Configure Persistent Storage for Kubernetes Apps in Portainer (2)
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Learn how to configure persistent storage for Kubernetes applicatio
 
 ## Introduction
 
-Containers are ephemeral — when a pod restarts, any data written to the container's filesystem is lost. PersistentVolumeClaims (PVCs) provide durable storage that persists across pod restarts and rescheduling. Portainer makes it easy to create PVCs and attach them to applications. This guide covers persistent storage configuration in Portainer.
+Containers are ephemeral - when a pod restarts, any data written to the container's filesystem is lost. PersistentVolumeClaims (PVCs) provide durable storage that persists across pod restarts and rescheduling. Portainer makes it easy to create PVCs and attach them to applications. This guide covers persistent storage configuration in Portainer.
 
 ## Prerequisites
 
@@ -27,6 +27,7 @@ Before creating PVCs, check what StorageClasses are available:
 kubectl get storageclasses
 
 # Output:
+
 # NAME                 PROVISIONER            RECLAIMPOLICY   VOLUMEBINDINGMODE
 # standard (default)   rancher.io/local-path  Delete          WaitForFirstConsumer
 # fast-ssd             kubernetes.io/aws-ebs  Delete          WaitForFirstConsumer
@@ -39,7 +40,7 @@ kubectl get storageclasses
 
 In the **Volumes** section:
 
-```
+```text
 Volume type:          Persistent (PVC)
 Mount path:           /data
 Create new PVC:       [x]
@@ -85,7 +86,7 @@ spec:
 
 In the application editor under **Volumes**:
 
-```
+```sql
 Volume type:     Persistent (existing PVC)
 PVC:             my-app-data       (select from dropdown)
 Mount path:      /data

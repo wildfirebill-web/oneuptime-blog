@@ -20,6 +20,7 @@ The `throttle` keyword lets you limit just that one task to 5 concurrent executi
 
 ```yaml
 # throttle-example.yml - Limit concurrency on specific tasks
+
 ---
 - name: Configure servers
   hosts: all

@@ -66,6 +66,7 @@ The following command installs the ApplicationSet controller in your ArgoCD name
 
 ```bash
 # Install ApplicationSet controller for ArgoCD versions prior to 2.3
+
 kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
 
 # Verify the controller is running

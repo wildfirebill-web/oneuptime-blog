@@ -18,6 +18,7 @@ Run Quickwit with local file storage for development:
 
 ```bash
 # Start Quickwit in standalone mode
+
 docker run -d \
   --name quickwit \
   -p 7280:7280 \

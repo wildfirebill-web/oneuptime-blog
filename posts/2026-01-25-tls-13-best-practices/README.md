@@ -152,6 +152,7 @@ server {
 
 ```bash
 # Generate ECDSA P-384 key (recommended)
+
 openssl ecparam -genkey -name secp384r1 -out server.key
 
 # Or RSA 4096 for broader compatibility

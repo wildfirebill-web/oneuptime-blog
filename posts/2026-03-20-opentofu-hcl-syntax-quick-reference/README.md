@@ -14,6 +14,7 @@ HCL (HashiCorp Configuration Language) is the declarative language used in OpenT
 
 ```hcl
 # Resource block
+
 resource "aws_s3_bucket" "my_bucket" {
   bucket = "my-unique-bucket-name"
 }

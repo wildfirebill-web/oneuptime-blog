@@ -8,12 +8,13 @@ Description: Learn how to configure and manage Terraform Cloud workspaces with t
 
 ## Introduction
 
-Terraform Cloud workspaces organize infrastructure into logical units — one workspace per environment, region, or application component. The OpenTofu cloud backend's `workspaces` block selects which workspace to use, either by exact name or by tags. Proper workspace organization is the foundation of scalable multi-environment infrastructure management.
+Terraform Cloud workspaces organize infrastructure into logical units - one workspace per environment, region, or application component. The OpenTofu cloud backend's `workspaces` block selects which workspace to use, either by exact name or by tags. Proper workspace organization is the foundation of scalable multi-environment infrastructure management.
 
 ## Single Workspace Configuration
 
 ```hcl
 # Single named workspace - simplest approach
+
 terraform {
   cloud {
     organization = "my-company"
@@ -257,4 +258,4 @@ resource "aws_eks_cluster" "main" {
 
 ## Conclusion
 
-Workspace organization in Terraform Cloud scales from single named workspaces for small teams to hundreds of workspaces for large organizations with multiple environments, regions, and components. Use consistent naming conventions to make workspace purpose obvious at a glance. Variable sets eliminate credential duplication across workspaces — define AWS credentials once in a variable set and assign it to all production workspaces. Run triggers create workspace dependency chains for ordered deployments (VPC before EKS, EKS before applications).
+Workspace organization in Terraform Cloud scales from single named workspaces for small teams to hundreds of workspaces for large organizations with multiple environments, regions, and components. Use consistent naming conventions to make workspace purpose obvious at a glance. Variable sets eliminate credential duplication across workspaces - define AWS credentials once in a variable set and assign it to all production workspaces. Run triggers create workspace dependency chains for ordered deployments (VPC before EKS, EKS before applications).

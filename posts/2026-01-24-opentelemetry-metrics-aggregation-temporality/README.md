@@ -159,6 +159,7 @@ module.exports = { meterProvider, meter };
 
 ```python
 # metrics.py - Configure metrics with specific temporality
+
 from opentelemetry import metrics
 from opentelemetry.sdk.metrics import MeterProvider
 from opentelemetry.sdk.metrics.export import (

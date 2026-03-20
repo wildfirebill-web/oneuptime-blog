@@ -147,6 +147,7 @@ If your access patterns are unpredictable or you do not want to manage transitio
 
 ```bash
 # Create a bucket with Autoclass enabled
+
 gcloud storage buckets create gs://my-autoclass-bucket \
   --location=us-central1 \
   --enable-autoclass

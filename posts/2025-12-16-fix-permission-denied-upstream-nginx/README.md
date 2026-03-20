@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: NGINX, SELinux, Linux, Troubleshooting, DevOps
+Tags: Nginx, SELinux, Linux, Troubleshooting, DevOps
 
 Description: Learn how to diagnose and fix the '(13: Permission denied) while connecting to upstream' error in Nginx, including SELinux policies, socket permissions, and file system configuration.
 
@@ -44,6 +44,7 @@ SELinux is the most common cause of this error on RHEL, CentOS, Rocky Linux, and
 
 ```bash
 # Check if SELinux is enforcing
+
 getenforce
 
 # Check for recent SELinux denials

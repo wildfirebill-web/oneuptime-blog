@@ -8,9 +8,9 @@ Description: Learn what dual-stack IPv4/IPv6 deployment means, how both protocol
 
 ## Overview
 
-Dual-stack is the simplest and most recommended approach to IPv6 adoption. Every device, link, and application supports both IPv4 and IPv6 simultaneously. There are no tunnels, no translation, and no protocol dependency — each protocol is routed natively end to end.
+Dual-stack is the simplest and most recommended approach to IPv6 adoption. Every device, link, and application supports both IPv4 and IPv6 simultaneously. There are no tunnels, no translation, and no protocol dependency - each protocol is routed natively end to end.
 
-```
+```text
 ┌─────────────────────────────────────────────────┐
 │              Dual-Stack Host                    │
 │                                                 │
@@ -33,9 +33,9 @@ Dual-stack is the simplest and most recommended approach to IPv6 adoption. Every
 
 ## How Address Selection Works
 
-When a client connects to a hostname, the OS resolves both A (IPv4) and AAAA (IPv6) records. RFC 6724 defines the default address selection algorithm — IPv6 global unicast addresses are preferred over IPv4.
+When a client connects to a hostname, the OS resolves both A (IPv4) and AAAA (IPv6) records. RFC 6724 defines the default address selection algorithm - IPv6 global unicast addresses are preferred over IPv4.
 
-```
+```text
 Client resolves example.com:
   A     → 203.0.113.10
   AAAA  → 2001:db8::10
@@ -43,13 +43,13 @@ Client resolves example.com:
 RFC 6724 preference order (simplified):
   1. ::1/128         (loopback)
   2. ::/0            (global IPv6) ← preferred
-  3. 2002::/16       (6to4 — lower preference)
+  3. 2002::/16       (6to4 - lower preference)
   4. ::ffff:0:0/96   (IPv4-mapped)
 
 Result: client connects via IPv6
 ```
 
-Happy Eyeballs (RFC 8305) further improves this by racing IPv4 and IPv6 connections in parallel with a 250 ms delay before starting IPv4. The first to complete wins — ensuring fast failover if IPv6 is broken.
+Happy Eyeballs (RFC 8305) further improves this by racing IPv4 and IPv6 connections in parallel with a 250 ms delay before starting IPv4. The first to complete wins - ensuring fast failover if IPv6 is broken.
 
 ## Architecture: Protocol Flow
 
@@ -67,7 +67,7 @@ graph TD
 
 | Layer | Requirement |
 |---|---|
-| Physical/L2 | No changes — Ethernet carries both |
+| Physical/L2 | No changes - Ethernet carries both |
 | Router | Two routing tables (IPv4 RIB, IPv6 RIB) |
 | DNS | A records + AAAA records for all services |
 | Firewall | Rules for both address families |
@@ -80,7 +80,7 @@ graph TD
 
 Before deploying, allocate a coherent IPv6 prefix hierarchy:
 
-```
+```text
 ISP assignment:  2001:db8::/32  (your PA or PI block)
 
 Site allocation (suggest /48 per site):
@@ -88,7 +88,7 @@ Site allocation (suggest /48 per site):
   Branch-A:     2001:db8:0002::/48
   DC:           2001:db8:0010::/48
 
-Per site — VLAN /64s:
+Per site - VLAN /64s:
   HQ servers:   2001:db8:0001:0010::/64
   HQ users:     2001:db8:0001:0020::/64
   HQ mgmt:      2001:db8:0001:0ffe::/64
@@ -96,7 +96,7 @@ Per site — VLAN /64s:
 ```
 
 Keep the parallel IPv4 plan visible for correlation:
-```
+```text
   HQ servers:   10.1.16.0/24  ↔  2001:db8:0001:0010::/64
   HQ users:     10.1.32.0/24  ↔  2001:db8:0001:0020::/64
 ```
@@ -107,14 +107,15 @@ Every service needs both A and AAAA records:
 
 ```bash
 # Zone file additions
+
 www   IN  A     203.0.113.10
 www   IN  AAAA  2001:db8::10
 
 mail  IN  A     203.0.113.20
 mail  IN  AAAA  2001:db8::20
 
-# MX record — hostname in MX resolves to both
-# No separate MX for IPv6 — RFC 5321 uses whichever address the sending
+# MX record - hostname in MX resolves to both
+# No separate MX for IPv6 - RFC 5321 uses whichever address the sending
 # MTA selects based on address preference
 ```
 
@@ -146,11 +147,11 @@ nft add rule inet filter input tcp dport 22 accept
 
 Both protocols need independent routing configuration:
 
-```
+```text
 # OSPF: run OSPFv2 (IPv4) AND OSPFv3 (IPv6) in parallel
 # BGP: enable both IPv4 and IPv6 address families on sessions
 
-# Modern approach — mp-BGP with dual AFI/SAFI on a single session:
+# Modern approach - mp-BGP with dual AFI/SAFI on a single session:
 neighbor 192.0.2.1 activate  # IPv4 AFI
 address-family ipv6 unicast
   neighbor 192.0.2.1 activate  # same peer, IPv6 AFI

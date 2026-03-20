@@ -35,6 +35,7 @@ Store the Google Chat webhook URL in a Kubernetes secret.
 
 ```bash
 # Create a secret containing the Google Chat webhook URL
+
 kubectl create secret generic googlechat-webhook-url \
   --namespace=flux-system \
   --from-literal=address="https://chat.googleapis.com/v1/spaces/SPACE_ID/messages?key=KEY&token=TOKEN"

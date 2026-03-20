@@ -49,6 +49,7 @@ Set how long data stays before deletion.
 
 ```yaml
 # prometheus.yml or command-line flag
+
 global:
   scrape_interval: 15s
 

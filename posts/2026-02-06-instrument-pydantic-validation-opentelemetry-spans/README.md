@@ -45,6 +45,7 @@ from typing import Optional
 from datetime import datetime
 
 # Set up tracing
+
 provider = TracerProvider()
 provider.add_span_processor(BatchSpanProcessor(ConsoleSpanExporter()))
 trace.set_tracer_provider(provider)

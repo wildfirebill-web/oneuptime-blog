@@ -16,6 +16,7 @@ ControlMonkey manages stacks through its provider:
 
 ```hcl
 # controlmonkey.tf
+
 terraform {
   required_providers {
     controlmonkey = {
@@ -149,4 +150,4 @@ controlmonkey import --stack-id stack-abc123 --path ./imported
 
 ## Conclusion
 
-ControlMonkey extends OpenTofu with continuous drift detection, self-service infrastructure blueprints, and OPA policy enforcement. Teams that want to move beyond reactive drift remediation toward proactive governance — where drift is detected and triaged automatically — will find ControlMonkey a compelling complement to a standard OpenTofu workflow.
+ControlMonkey extends OpenTofu with continuous drift detection, self-service infrastructure blueprints, and OPA policy enforcement. Teams that want to move beyond reactive drift remediation toward proactive governance - where drift is detected and triaged automatically - will find ControlMonkey a compelling complement to a standard OpenTofu workflow.

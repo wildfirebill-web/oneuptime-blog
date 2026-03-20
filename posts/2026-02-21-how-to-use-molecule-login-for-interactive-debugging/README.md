@@ -16,6 +16,7 @@ After creating and converging instances, log into one.
 
 ```bash
 # Log into the default (or only) instance
+
 molecule login
 
 # Log into a specific instance by name

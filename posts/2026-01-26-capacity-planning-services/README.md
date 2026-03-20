@@ -41,7 +41,7 @@ flowchart LR
 
 Before you can plan capacity, you need to measure it. Every service has different bottlenecks, but these metrics apply to most:
 
-### Resource Metrics
+Resource Metrics
 
 | Metric | What to Track | Warning Threshold |
 |--------|---------------|-------------------|
@@ -66,6 +66,7 @@ Here is a practical example collecting these metrics with Prometheus:
 
 ```yaml
 # prometheus.yml
+
 global:
   scrape_interval: 15s
   evaluation_interval: 15s

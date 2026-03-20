@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Terraform, count, HCL, Resource Creation, Scaling
+Tags: OpenTofu, Terraform, Count, HCL, Resource Creation, Scaling
 
 Description: Learn how to use the count meta-argument in OpenTofu to create multiple instances of a resource, using count.index for unique naming and configuration.
 
@@ -41,6 +41,7 @@ resource "aws_instance" "app" {
 }
 
 # Create an EIP for each instance
+
 resource "aws_eip" "app" {
   count    = var.instance_count
   instance = aws_instance.app[count.index].id

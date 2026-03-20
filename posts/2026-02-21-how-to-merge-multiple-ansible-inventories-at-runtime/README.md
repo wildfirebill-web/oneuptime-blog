@@ -25,6 +25,7 @@ The simplest approach is passing multiple `-i` flags on the command line:
 
 ```bash
 # Merge a static file with a dynamic inventory script
+
 ansible-playbook \
     -i inventory/static.yml \
     -i inventory/aws_ec2.yml \

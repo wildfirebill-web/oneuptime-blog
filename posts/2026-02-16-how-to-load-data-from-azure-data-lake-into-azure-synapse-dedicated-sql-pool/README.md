@@ -271,6 +271,7 @@ Increase the DWU level before large loads, then scale back down:
 
 ```bash
 # Scale up for loading
+
 az synapse sql pool update \
   --name myDataWarehouse \
   --workspace-name my-synapse-workspace \

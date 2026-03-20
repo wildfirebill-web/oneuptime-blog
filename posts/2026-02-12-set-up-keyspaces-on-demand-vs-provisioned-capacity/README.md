@@ -41,6 +41,7 @@ graph TD
 
 ```bash
 # Create a Keyspaces table with on-demand capacity mode
+
 aws keyspaces create-table \
   --keyspace-name my_application \
   --table-name user_events \

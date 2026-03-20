@@ -20,6 +20,7 @@ Podman ships with a pre-configured timer and service for auto-updates:
 
 ```bash
 # Enable the pre-built auto-update timer (rootless)
+
 systemctl --user enable --now podman-auto-update.timer
 
 # Check the timer status

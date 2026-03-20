@@ -193,6 +193,7 @@ export const PositiveIntScalar = new GraphQLScalarType({
 
 ```graphql
 # schema.graphql
+
 scalar Email
 scalar SafeString
 scalar PositiveInt

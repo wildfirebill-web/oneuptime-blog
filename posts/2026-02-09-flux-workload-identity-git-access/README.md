@@ -42,6 +42,7 @@ Workload identity benefits:
 
 ```bash
 # Get cluster OIDC issuer
+
 aws eks describe-cluster \
   --name my-cluster \
   --query "cluster.identity.oidc.issuer" \

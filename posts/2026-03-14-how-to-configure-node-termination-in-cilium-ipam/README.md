@@ -32,6 +32,7 @@ When a node is removed from the cluster, Cilium:
 
 ```bash
 # Check current CiliumNode cleanup behavior
+
 kubectl get ciliumnodes -o json | jq '.items | length'
 kubectl get nodes --no-headers | wc -l
 # These should match

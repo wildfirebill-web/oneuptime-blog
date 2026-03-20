@@ -16,6 +16,7 @@ Forwarding logs directly to Loki from Docker containers eliminates the need for 
 
 ```bash
 # Install the Loki Docker driver plugin on each host
+
 docker plugin install grafana/loki-docker-driver:latest \
   --alias loki \
   --grant-all-permissions
@@ -241,4 +242,4 @@ curl -s "http://loki:3100/loki/api/v1/label/service/values" | jq '.data[]'
 
 ## Conclusion
 
-The Loki Docker driver plugin is the cleanest approach for new deployments — zero configuration per container, all metadata captured automatically, and no additional agent containers needed. Promtail provides more flexibility for existing environments where changing the log driver isn't feasible, or where you need advanced pipeline stages for complex log parsing. Both methods support LogQL's label-based filtering, which is far more efficient than full-text search for typical operational queries. Portainer's compose YAML manages both Loki infrastructure and the application services that ship logs to it from a single management interface.
+The Loki Docker driver plugin is the cleanest approach for new deployments - zero configuration per container, all metadata captured automatically, and no additional agent containers needed. Promtail provides more flexibility for existing environments where changing the log driver isn't feasible, or where you need advanced pipeline stages for complex log parsing. Both methods support LogQL's label-based filtering, which is far more efficient than full-text search for typical operational queries. Portainer's compose YAML manages both Loki infrastructure and the application services that ship logs to it from a single management interface.

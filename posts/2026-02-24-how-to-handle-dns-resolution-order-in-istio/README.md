@@ -166,6 +166,7 @@ Resolution options:
 
 ```yaml
 # STATIC resolution with explicit endpoints
+
 apiVersion: networking.istio.io/v1
 kind: ServiceEntry
 metadata:

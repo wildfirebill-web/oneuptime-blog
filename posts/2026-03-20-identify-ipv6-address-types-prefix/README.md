@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: IPv6, Networking, Address Types, Prefixes, Unicast, Multicast, Anycast
 
-Description: Identify all major IPv6 address types — global unicast, link-local, multicast, loopback, unspecified, and unique local — by their prefix ranges.
+Description: Identify all major IPv6 address types - global unicast, link-local, multicast, loopback, unspecified, and unique local - by their prefix ranges.
 
 ## Introduction
 
@@ -81,26 +81,26 @@ for addr in tests:
 
 ## Multicast Scope Breakdown
 
-```
-ff01::  — Interface-local multicast (loopback scope)
-ff02::  — Link-local multicast (on-link)
-ff05::  — Site-local multicast
-ff0e::  — Global multicast
+```text
+ff01::  - Interface-local multicast (loopback scope)
+ff02::  - Link-local multicast (on-link)
+ff05::  - Site-local multicast
+ff0e::  - Global multicast
 
 Common multicast groups:
-ff02::1   — All nodes (link-local)
-ff02::2   — All routers (link-local)
-ff02::fb  — mDNS
-ff02::1:2 — DHCP agents
-ff02::1:ff00:0/104 — Solicited-node multicast
+ff02::1   - All nodes (link-local)
+ff02::2   - All routers (link-local)
+ff02::fb  - mDNS
+ff02::1:2 - DHCP agents
+ff02::1:ff00:0/104 - Solicited-node multicast
 ```
 
 ## Unique Local vs Global Unicast
 
-```
+```text
 Unique Local (fc00::/7):
-  fc00::/8  — Not yet assigned
-  fd00::/8  — Locally assigned (use this)
+  fc00::/8  - Not yet assigned
+  fd00::/8  - Locally assigned (use this)
   Example:  fd12:3456:789a::1/48
   Scope:    Routing within organization only (not globally routable)
 

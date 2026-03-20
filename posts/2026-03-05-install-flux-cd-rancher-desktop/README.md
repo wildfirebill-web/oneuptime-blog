@@ -32,6 +32,7 @@ Verify that Rancher Desktop has set up your kubeconfig correctly.
 
 ```bash
 # Verify kubectl connectivity to the Rancher Desktop cluster
+
 kubectl get nodes
 ```
 

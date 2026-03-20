@@ -29,6 +29,7 @@ Each controller reconciles its resources on a periodic interval. High CPU usage 
 
 ```bash
 # Check CPU usage of Flux controllers
+
 kubectl top pods -n flux-system
 
 # Check CPU limits and requests

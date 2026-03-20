@@ -1,4 +1,4 @@
-# How to Troubleshoot WSL2 Docker Socket Issues with Portainer
+# How to Troubleshoot WSL2 Docker Socket Issues with Portainer - Troubleshoot
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -40,7 +40,7 @@ ls -la /var/run/docker.sock
 
 Expected output:
 
-```
+```bash
 srw-rw---- 1 root docker 0 ... /var/run/docker.sock
 ```
 
@@ -48,6 +48,7 @@ If the socket doesn't exist:
 
 ```bash
 # Try the named pipe path
+
 ls /mnt/wsl/shared-docker-socket/
 ```
 

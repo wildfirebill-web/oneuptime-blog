@@ -33,6 +33,7 @@ Download the Collector Contrib distribution for Windows from the official releas
 
 ```powershell
 # Download the Collector Contrib MSI installer
+
 Invoke-WebRequest -Uri "https://github.com/open-telemetry/opentelemetry-collector-releases/releases/download/v0.96.0/otelcol-contrib_0.96.0_windows_amd64.msi" -OutFile "otelcol-contrib.msi"
 
 # Install the collector as a Windows service

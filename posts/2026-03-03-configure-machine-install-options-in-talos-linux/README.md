@@ -18,6 +18,7 @@ The install section lives under `machine.install` in your Talos machine configur
 
 ```yaml
 # Basic install configuration
+
 machine:
   install:
     disk: /dev/sda

@@ -303,6 +303,7 @@ Track resource usage across all containers in your pods:
 
 ```bash
 # CPU and memory for all containers in a pod
+
 kubectl top pods -n production --containers
 ```
 

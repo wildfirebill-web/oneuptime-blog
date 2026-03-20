@@ -1,4 +1,4 @@
-# How to Set Up a Docker Learning Lab with Portainer
+# How to Set Up a Docker Learning Lab with Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -22,6 +22,7 @@ The learning lab consists of:
 
 ```bash
 # Install Docker on the lab server
+
 curl -fsSL https://get.docker.com | sh
 sudo usermod -aG docker $USER
 

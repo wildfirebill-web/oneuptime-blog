@@ -18,6 +18,7 @@ In a standard Kubernetes workflow, rollbacks work by reverting to a previous Rep
 
 ```bash
 # Traditional rollback - works, but breaks GitOps
+
 kubectl rollout undo deployment/my-app -n production
 ```
 

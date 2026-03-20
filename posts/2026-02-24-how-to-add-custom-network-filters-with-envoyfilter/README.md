@@ -265,6 +265,7 @@ To see the current network filter chain for a specific port:
 
 ```bash
 # View all listeners
+
 istioctl proxy-config listeners deploy/my-tcp-service -n default
 
 # View detailed listener config for a specific port

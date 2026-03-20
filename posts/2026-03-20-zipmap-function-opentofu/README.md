@@ -1,8 +1,8 @@
-# How to Use the zipmap Function in OpenTofu
+# How to Use the zipmap Function in OpenTofu - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, zipmap, Map Functions, HCL, Infrastructure as Code, DevOps
+Tags: OpenTofu, Zipmap, Map Functions, HCL, Infrastructure as Code, DevOps
 
 Description: Learn how to use the zipmap function in OpenTofu to create a map from two parallel lists of keys and values.
 
@@ -164,4 +164,4 @@ locals {
 
 ## Summary
 
-`zipmap(keys, values)` builds a map by pairing elements from two lists at the same index. Use it to construct maps from parallel lists — instance names and types, tag names and values, or environment variable names and values. It's the clean way to merge two correlated lists into a single lookup map. Both lists must be the same length.
+`zipmap(keys, values)` builds a map by pairing elements from two lists at the same index. Use it to construct maps from parallel lists - instance names and types, tag names and values, or environment variable names and values. It's the clean way to merge two correlated lists into a single lookup map. Both lists must be the same length.

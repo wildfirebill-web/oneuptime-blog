@@ -18,7 +18,7 @@ Nginx via Portainer can serve as:
 
 In Portainer: **Containers → Add Container**
 
-```
+```text
 Name:   nginx
 Image:  nginx:alpine
 Port Mapping:
@@ -64,6 +64,7 @@ Create `/opt/nginx/conf.d/default.conf` on the host:
 
 ```nginx
 # /opt/nginx/conf.d/default.conf
+
 server {
     listen 80;
     server_name yourdomain.com;
@@ -149,4 +150,4 @@ docker exec nginx nginx -s reload
 
 ## Conclusion
 
-Deploying Nginx via Portainer is straightforward — create a stack with a bind mount for configuration files, and update the config files on the host to modify Nginx behavior. Portainer's exec and log features let you test configuration changes and monitor access logs without leaving the browser.
+Deploying Nginx via Portainer is straightforward - create a stack with a bind mount for configuration files, and update the config files on the host to modify Nginx behavior. Portainer's exec and log features let you test configuration changes and monitor access logs without leaving the browser.

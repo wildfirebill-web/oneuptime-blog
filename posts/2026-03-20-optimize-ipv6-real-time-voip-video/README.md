@@ -16,6 +16,7 @@ DSCP (Differentiated Services Code Point) marks packets to request priority trea
 
 ```bash
 # Mark outgoing VoIP (RTP) packets with EF (Expedited Forwarding) DSCP
+
 # EF = DSCP 46 = 0xB8 in traffic class byte, prioritizes low latency
 
 # Using iptables for IPv6 (ip6tables)
@@ -41,8 +42,8 @@ For custom applications, set DSCP directly on the socket.
 import socket
 
 # DSCP values for real-time media
-DSCP_EF = 46    # Expedited Forwarding — VoIP/video RTP
-DSCP_CS3 = 24   # Class Selector 3 — VoIP signaling
+DSCP_EF = 46    # Expedited Forwarding - VoIP/video RTP
+DSCP_CS3 = 24   # Class Selector 3 - VoIP signaling
 
 def create_ipv6_realtime_socket(protocol=socket.SOCK_DGRAM, dscp=DSCP_EF):
     """
@@ -76,18 +77,18 @@ Prioritize real-time traffic at the Linux qdisc level.
 # Use HTB (Hierarchical Token Bucket) to prioritize VoIP
 sudo tc qdisc add dev eth0 root handle 1: htb default 30
 
-# Root class — full link capacity (e.g., 1 Gbps)
+# Root class - full link capacity (e.g., 1 Gbps)
 sudo tc class add dev eth0 parent 1: classid 1:1 htb rate 1gbit
 
-# VoIP high-priority class — 20% guaranteed, 40% ceiling
+# VoIP high-priority class - 20% guaranteed, 40% ceiling
 sudo tc class add dev eth0 parent 1:1 classid 1:10 htb \
   rate 200mbit ceil 400mbit prio 1
 
-# Video conferencing class — 30% guaranteed
+# Video conferencing class - 30% guaranteed
 sudo tc class add dev eth0 parent 1:1 classid 1:20 htb \
   rate 300mbit ceil 500mbit prio 2
 
-# Default class — remaining bandwidth
+# Default class - remaining bandwidth
 sudo tc class add dev eth0 parent 1:1 classid 1:30 htb \
   rate 500mbit ceil 1gbit prio 3
 
@@ -96,7 +97,7 @@ sudo tc qdisc add dev eth0 parent 1:10 handle 10: sfq perturb 10
 sudo tc qdisc add dev eth0 parent 1:20 handle 20: sfq perturb 10
 sudo tc qdisc add dev eth0 parent 1:30 handle 30: sfq perturb 10
 
-# Classify by DSCP value — IPv6 TC field
+# Classify by DSCP value - IPv6 TC field
 # EF (DSCP 46) -> VoIP class
 sudo tc filter add dev eth0 parent 1: protocol ipv6 \
   u32 match u8 0xb8 0xfc at 1 flowid 1:10
@@ -111,7 +112,7 @@ sudo tc filter add dev eth0 parent 1: protocol ipv6 \
 net.ipv4.tcp_congestion_control = bbr
 net.core.default_qdisc = fq
 
-# Reduce TCP delayed ACK interval (ms) — important for RTP over TCP
+# Reduce TCP delayed ACK interval (ms) - important for RTP over TCP
 net.ipv4.tcp_delack_min = 1
 
 # Disable IPv6 temporary addresses for consistent routing

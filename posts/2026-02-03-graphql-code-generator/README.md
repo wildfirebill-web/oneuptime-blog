@@ -56,6 +56,7 @@ Start by installing the core package and the CLI.
 
 ```bash
 # Install the CLI and core library
+
 npm install -D @graphql-codegen/cli
 
 # Initialize the configuration

@@ -14,6 +14,7 @@ Building Docker images is typically part of a CI/CD pipeline, but there are plen
 
 ```bash
 # Install the community.docker collection
+
 ansible-galaxy collection install community.docker
 
 # Install the Docker Python SDK

@@ -143,6 +143,7 @@ The following commands verify your prerequisites are met. Run these on your loca
 
 ```bash
 # Check kubectl can access both clusters by listing their contexts
+
 # This helps verify cluster connectivity before proceeding
 kubectl config get-contexts
 
@@ -1639,7 +1640,7 @@ spec:
         - protocol: TCP
 ```
 
-### Resource Quotas
+Resource Quotas
 
 Set resource quotas for Istio components:
 

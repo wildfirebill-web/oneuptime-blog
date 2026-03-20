@@ -30,6 +30,7 @@ TFTP (Trivial File Transfer Protocol) is a simple file transfer protocol used fo
 
 ```bash
 # Update packages
+
 sudo apt update
 
 # Install tftpd-hpa

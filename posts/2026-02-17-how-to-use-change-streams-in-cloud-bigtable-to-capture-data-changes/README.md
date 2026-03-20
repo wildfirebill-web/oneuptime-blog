@@ -30,6 +30,7 @@ First, enable change streams on your Bigtable table:
 
 ```bash
 # Enable change streams on an existing Bigtable table
+
 gcloud bigtable tables update my-table \
   --instance=my-instance \
   --change-stream-retention-period=7d

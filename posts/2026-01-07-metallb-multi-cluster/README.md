@@ -120,6 +120,7 @@ Create the IP address pool configuration for Cluster A. This pool defines the ra
 
 ```yaml
 # cluster-a-ippool.yaml
+
 apiVersion: metallb.io/v1beta1
 kind: IPAddressPool
 metadata:

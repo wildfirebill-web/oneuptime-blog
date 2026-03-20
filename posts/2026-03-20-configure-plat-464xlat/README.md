@@ -27,6 +27,7 @@ Jool is the recommended open-source NAT64 implementation for Linux PLAT deployme
 
 ```bash
 # Install Jool on the PLAT gateway
+
 apt install jool-dkms jool-tools
 
 # Load the Jool kernel module

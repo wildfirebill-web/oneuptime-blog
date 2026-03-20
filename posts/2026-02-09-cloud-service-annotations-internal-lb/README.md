@@ -34,6 +34,7 @@ AWS Network Load Balancer (NLB) internal configuration:
 
 ```yaml
 # internal-lb-eks.yaml
+
 apiVersion: v1
 kind: Service
 metadata:

@@ -12,6 +12,7 @@ The OpenTelemetry Collector's persistent queue feature is great for preventing d
 
 ```bash
 # Check pod events for eviction
+
 kubectl describe pod otel-collector-xyz -n observability | grep -A5 "Events"
 
 # You might see:

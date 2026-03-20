@@ -18,6 +18,7 @@ ArgoCD automatically maintains a history of sync operations for each application
 
 ```bash
 # View sync history for an application
+
 argocd app history production-api
 
 # Example output:

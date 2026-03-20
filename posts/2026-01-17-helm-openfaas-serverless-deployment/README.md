@@ -59,6 +59,7 @@ flowchart TB
 
 ```bash
 # Check Kubernetes version
+
 kubectl version
 
 # Add OpenFaaS Helm repository

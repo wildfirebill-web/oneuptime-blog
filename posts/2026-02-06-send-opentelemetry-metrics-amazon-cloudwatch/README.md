@@ -32,6 +32,7 @@ You need the contrib distribution of the collector, which includes the `awsemf` 
 
 ```bash
 # Pull the contrib collector that includes AWS exporters
+
 docker pull otel/opentelemetry-collector-contrib:0.98.0
 ```
 

@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, GCP, Managed Instance Groups, MIG, Infrastructure as Code, Compute
+Tags: OpenTofu, GCP, Managed Instance Group, MIG, Infrastructure as Code, Compute
 
-Description: Learn how to configure GCP Managed Instance Groups with OpenTofu — including instance templates, autoscaling policies, health checks, and rolling updates for regional compute fleets.
+Description: Learn how to configure GCP Managed Instance Groups with OpenTofu - including instance templates, autoscaling policies, health checks, and rolling updates for regional compute fleets.
 
 ## Introduction
 
-GCP Managed Instance Groups (MIGs) run identical VMs from an instance template, with built-in autoscaling, autohealing, and rolling update support. OpenTofu manages the instance template, regional or zonal MIG, autoscaler, and health check — all as declarative code.
+GCP Managed Instance Groups (MIGs) run identical VMs from an instance template, with built-in autoscaling, autohealing, and rolling update support. OpenTofu manages the instance template, regional or zonal MIG, autoscaler, and health check - all as declarative code.
 
 ## Instance Template
 
@@ -201,18 +201,19 @@ resource "google_compute_instance_template" "app_canary" {
 }
 
 # MIG with canary traffic split
+
 resource "google_compute_region_instance_group_manager" "app_with_canary" {
   name               = "${var.environment}-app-mig-canary"
   base_instance_name = "${var.environment}-app"
   region             = var.region
 
-  # Stable version — 90% of instances
+  # Stable version - 90% of instances
   version {
     name              = "stable"
     instance_template = google_compute_instance_template.app.id
   }
 
-  # Canary version — 10% of instances
+  # Canary version - 10% of instances
   version {
     name              = "canary"
     instance_template = google_compute_instance_template.app_canary.id

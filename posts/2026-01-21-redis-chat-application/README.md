@@ -709,6 +709,7 @@ async def websocket_endpoint(websocket: WebSocket, user_id: str, username: str):
 
 
 # REST endpoints
+
 @app.get("/rooms/{room_id}/history")
 async def get_room_history(room_id: str, limit: int = 50):
     history = await manager.get_room_history(room_id, limit)

@@ -38,6 +38,7 @@ These things continue working:
 
 ```bash
 # Check istiod pod status
+
 kubectl get pods -n istio-system -l app=istiod
 
 # Check crash reason

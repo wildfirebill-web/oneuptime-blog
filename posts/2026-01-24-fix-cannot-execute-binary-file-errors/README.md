@@ -34,6 +34,7 @@ flowchart TD
 
 ```bash
 # Architecture mismatch
+
 bash: ./myprogram: cannot execute binary file: Exec format error
 
 # Missing execute permission

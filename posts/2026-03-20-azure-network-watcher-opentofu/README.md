@@ -20,6 +20,7 @@ Azure Network Watcher provides tools to monitor, diagnose, and gain insights int
 
 ```hcl
 # Storage account for flow log data
+
 resource "azurerm_storage_account" "flow_logs" {
   name                     = "${var.project_name}flowlogs"
   resource_group_name      = var.resource_group_name
@@ -221,4 +222,4 @@ az network watcher packet-capture create \
 
 ## Conclusion
 
-Enable NSG Flow Logs version 2 with Traffic Analytics on all production NSGs—it provides insights into top talkers, allowed/denied flows, and unusual traffic patterns without requiring packet capture. Traffic Analytics requires a Log Analytics workspace and aggregates flow data every 10 or 60 minutes; use 10-minute intervals for near real-time visibility. Connection Monitor with the Network Watcher agent (installed via VM Extension) provides end-to-end latency and packet loss measurements between any two Azure or on-premises endpoints, making it the preferred tool for proactive connectivity monitoring.
+Enable NSG Flow Logs version 2 with Traffic Analytics on all production NSGs-it provides insights into top talkers, allowed/denied flows, and unusual traffic patterns without requiring packet capture. Traffic Analytics requires a Log Analytics workspace and aggregates flow data every 10 or 60 minutes; use 10-minute intervals for near real-time visibility. Connection Monitor with the Network Watcher agent (installed via VM Extension) provides end-to-end latency and packet loss measurements between any two Azure or on-premises endpoints, making it the preferred tool for proactive connectivity monitoring.

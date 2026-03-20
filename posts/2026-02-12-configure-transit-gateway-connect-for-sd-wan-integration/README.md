@@ -42,6 +42,7 @@ First, you need a VPC attachment that will act as the transport mechanism. If yo
 
 ```bash
 # Create a VPC attachment to serve as the transport
+
 # Replace with your actual Transit Gateway ID and subnet IDs
 aws ec2 create-transit-gateway-vpc-attachment \
   --transit-gateway-id tgw-0abc123def456 \

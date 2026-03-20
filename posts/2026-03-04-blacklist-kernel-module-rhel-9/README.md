@@ -41,6 +41,7 @@ Create a configuration file in `/etc/modprobe.d/` with the blacklist directive.
 
 ```bash
 # Blacklist the Nouveau open-source NVIDIA driver
+
 sudo tee /etc/modprobe.d/blacklist-nouveau.conf <<EOF
 # Prevent Nouveau from loading (required for NVIDIA proprietary driver)
 blacklist nouveau

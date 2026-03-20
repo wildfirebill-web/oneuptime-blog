@@ -33,6 +33,7 @@ Since Ansible 2.10, most modules moved from the core package to separate collect
 
 ```bash
 # List installed collections
+
 ansible-galaxy collection list
 
 # Check if a specific collection is installed

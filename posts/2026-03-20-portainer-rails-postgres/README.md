@@ -1,4 +1,4 @@
-# How to Deploy a Rails + PostgreSQL Stack via Portainer
+# How to Deploy a Rails + PostgreSQL Stack via Portainer - Postgres
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -8,7 +8,7 @@ Description: Deploy a Ruby on Rails application with PostgreSQL using Docker Com
 
 ## Introduction
 
-Ruby on Rails is a convention-over-configuration web framework that pairs naturally with PostgreSQL. Deploying Rails via Portainer using Docker Compose gives you an isolated, reproducible environment with all services — web server, database, Redis for caching and Action Cable, and Sidekiq for background jobs — managed from a single interface.
+Ruby on Rails is a convention-over-configuration web framework that pairs naturally with PostgreSQL. Deploying Rails via Portainer using Docker Compose gives you an isolated, reproducible environment with all services - web server, database, Redis for caching and Action Cable, and Sidekiq for background jobs - managed from a single interface.
 
 ## Prerequisites
 
@@ -20,6 +20,7 @@ Ruby on Rails is a convention-over-configuration web framework that pairs natura
 
 ```dockerfile
 # Dockerfile
+
 FROM ruby:3.3-slim AS base
 
 # Install system dependencies
@@ -93,7 +94,7 @@ services:
       timeout: 5s
       retries: 5
 
-  # Redis — for Action Cable, caching, and Sidekiq
+  # Redis - for Action Cable, caching, and Sidekiq
   redis:
     image: redis:7-alpine
     container_name: rails-redis
@@ -194,7 +195,7 @@ server {
         proxy_read_timeout 3600s;
     }
 
-    # Active Storage — proxy to Rails
+    # Active Storage - proxy to Rails
     location /rails/active_storage/ {
         proxy_pass http://puma;
         proxy_set_header Host $host;

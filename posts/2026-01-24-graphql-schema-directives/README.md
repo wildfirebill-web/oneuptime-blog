@@ -37,6 +37,7 @@ GraphQL includes several built-in directives that control query execution.
 
 ```graphql
 # @deprecated - Mark fields as deprecated with a reason
+
 type User {
   id: ID!
   name: String!

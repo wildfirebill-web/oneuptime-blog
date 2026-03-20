@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, traceroute6, Network Diagnostics, Routing, Troubleshooting, Linux
+Tags: IPv6, Traceroute6, Network Diagnostics, Routing, Troubleshooting, Linux
 
 Description: Use traceroute6 to trace the path IPv6 packets take through the network, diagnose routing issues, and identify where connectivity problems occur.
 
@@ -14,6 +14,7 @@ Description: Use traceroute6 to trace the path IPv6 packets take through the net
 
 ```bash
 # Trace path to an IPv6 host
+
 traceroute6 2001:4860:4860::8888
 
 # On modern systems using traceroute with -6
@@ -56,7 +57,7 @@ sudo traceroute6 -T -p 80 ipv6.google.com
 
 ## Interpreting Output
 
-```
+```text
 traceroute to ipv6.google.com (2607:f8b0:4004:c1b::65e), 30 hops max, 80 byte packets
  1  2001:db8::1 (2001:db8::1)  0.487 ms  0.421 ms  0.398 ms
  2  2001:db8:isp::1 (2001:db8:isp::1)  2.1 ms  1.9 ms  2.0 ms

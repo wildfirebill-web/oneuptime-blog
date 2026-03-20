@@ -20,6 +20,7 @@ Learn how to handle API rate limiting in OpenTofu with retry configurations, par
 
 ```bash
 # Verify OpenTofu installation
+
 tofu version
 
 # Set up required environment variables

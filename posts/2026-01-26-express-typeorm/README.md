@@ -38,6 +38,7 @@ graph TB
 
 ```bash
 # Create a new project
+
 mkdir express-typeorm-app && cd express-typeorm-app
 npm init -y
 

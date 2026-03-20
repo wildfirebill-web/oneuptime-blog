@@ -272,6 +272,7 @@ describe('processOrder integration tests', () => {
 
 ```yaml
 # cloudbuild.yaml - Full CI/CD pipeline for Cloud Functions
+
 steps:
   # Step 1: Install dependencies for all functions
   - name: 'node:20'

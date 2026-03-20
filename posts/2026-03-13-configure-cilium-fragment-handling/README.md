@@ -28,6 +28,7 @@ Review Cilium's current fragment handling configuration.
 
 ```bash
 # Check if fragment tracking is enabled in the current Cilium config
+
 cilium config view | grep -i fragment
 
 # View current MTU settings

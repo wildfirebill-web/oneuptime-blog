@@ -14,6 +14,7 @@ Ceph Monitors maintain the cluster map and manage consensus. A single monitor is
 
 ```bash
 # See current monitors
+
 sudo ceph mon stat
 
 # Detailed monitor map

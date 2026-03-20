@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, DigitalOcean, Firewalls, Security, Infrastructure as Code
+Tags: OpenTofu, DigitalOcean, Firewall, Security, Infrastructure as Code
 
 Description: Learn how to create DigitalOcean cloud firewalls with OpenTofu to control inbound and outbound traffic to your Droplets.
 
@@ -64,7 +64,7 @@ resource "digitalocean_firewall" "web" {
 resource "digitalocean_firewall" "database" {
   name = "database-firewall"
 
-  # Apply only to database Droplets (not the managed DB — use database_firewall for that)
+  # Apply only to database Droplets (not the managed DB - use database_firewall for that)
   tags = ["database"]
 
   # Allow PostgreSQL only from app Droplets by tag

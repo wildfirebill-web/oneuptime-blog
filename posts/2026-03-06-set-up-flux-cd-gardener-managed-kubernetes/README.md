@@ -31,6 +31,7 @@ Install the tools you need:
 
 ```bash
 # Install Flux CLI
+
 curl -s https://fluxcd.io/install.sh | sudo bash
 
 # Install gardenctl

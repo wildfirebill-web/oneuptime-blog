@@ -21,6 +21,7 @@ Connecting Portainer to a Podman socket can fail for several reasons: the socket
 
 ```bash
 # Check rootful socket status
+
 sudo systemctl status podman.socket
 
 # Check rootless socket status (run as the relevant user)

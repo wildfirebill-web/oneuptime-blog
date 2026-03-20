@@ -20,6 +20,7 @@ Here is the most common pattern: running build tools that expect to be in the pr
 
 ```yaml
 # basic_chdir.yml - Run commands in specific directories
+
 ---
 - name: Build and deploy application
   hosts: app_servers

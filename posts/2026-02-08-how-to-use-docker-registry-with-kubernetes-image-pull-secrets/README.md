@@ -29,6 +29,7 @@ For Docker Hub:
 
 ```bash
 # Create an image pull secret for Docker Hub
+
 kubectl create secret docker-registry dockerhub-creds \
   --docker-server=https://index.docker.io/v1/ \
   --docker-username=myuser \

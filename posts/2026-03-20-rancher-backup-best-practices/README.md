@@ -1,8 +1,8 @@
-# How to Implement Backup Best Practices in Rancher
+# How to Implement Backup Best Practices in Rancher - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: rancher, backup, disaster-recovery, best-practices, kubernetes
+Tags: Rancher, Backup, Disaster-recovery, Best-practices, Kubernetes
 
 Description: Comprehensive backup best practices guide for Rancher environments covering etcd, workloads, and storage.
 
@@ -24,6 +24,7 @@ Always define your Rancher configuration as code:
 
 ```yaml
 # cluster-definition.yaml - Define clusters declaratively
+
 apiVersion: provisioning.cattle.io/v1
 kind: Cluster
 metadata:

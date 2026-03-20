@@ -221,6 +221,7 @@ For automated reporting, you can access cost data through the Cost Management AP
 
 ```bash
 # Query costs for the current month grouped by service
+
 az costmanagement query \
   --type ActualCost \
   --scope "/subscriptions/<sub-id>" \

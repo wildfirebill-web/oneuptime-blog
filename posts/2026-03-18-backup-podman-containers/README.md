@@ -150,6 +150,7 @@ CONTAINER_NAME="$1"
 BACKUP_DIR="$2"
 
 # Read metadata
+
 IMAGE=$(podman inspect "$CONTAINER_NAME" --format '{{.ImageName}}')
 PORTS=$(podman inspect "$CONTAINER_NAME" --format '{{range $k, $v := .HostConfig.PortBindings}}-p {{range $v}}{{.HostPort}}:{{end}}{{$k}} {{end}}')
 ENV_VARS=$(podman inspect "$CONTAINER_NAME" --format '{{range .Config.Env}}-e "{{.}}" {{end}}')

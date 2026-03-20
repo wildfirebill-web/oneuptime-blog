@@ -22,6 +22,7 @@ The complication arises with two-node clusters, where any single node failure me
 
 ```bash
 # Check quorum status
+
 sudo corosync-quorumtool -s
 
 # Check detailed quorum information

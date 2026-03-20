@@ -340,6 +340,7 @@ NAMESPACE="argocd"
 CRONJOB_NAME="argocd-backup-s3"
 
 # Get last job status
+
 LAST_JOB=$(kubectl get jobs -n "$NAMESPACE" \
   --sort-by=.metadata.creationTimestamp \
   -l job-name -o json | \

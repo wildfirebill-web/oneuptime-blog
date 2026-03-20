@@ -62,6 +62,7 @@ Before installing Linkerd, ensure your environment meets these requirements.
 
 ```bash
 # Check Ubuntu version (20.04 LTS or later recommended)
+
 lsb_release -a
 
 # Verify kernel version (5.4+ recommended)

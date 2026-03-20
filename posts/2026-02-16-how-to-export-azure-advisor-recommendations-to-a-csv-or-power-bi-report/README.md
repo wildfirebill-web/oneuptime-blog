@@ -43,6 +43,7 @@ Azure Resource Graph is the most powerful way to query Advisor recommendations p
 
 ```bash
 # Query all Advisor recommendations across all subscriptions you have access to
+
 az graph query -q "
   advisorresources
   | where type == 'microsoft.advisor/recommendations'

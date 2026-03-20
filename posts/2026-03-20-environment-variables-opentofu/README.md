@@ -25,6 +25,7 @@ graph TD
 
 ```bash
 # Input variables
+
 TF_VAR_<name>=value          # Map to input variable declarations
 
 # Logging control
@@ -133,11 +134,11 @@ jobs:
       TF_INPUT: "false"
       TF_WORKSPACE: ${{ github.ref_name == 'main' && 'production' || 'staging' }}
 
-      # Logging — save to file, upload on failure
+      # Logging - save to file, upload on failure
       TF_LOG: INFO
       TF_LOG_PATH: /tmp/tofu.log
 
-      # Performance — cache providers
+      # Performance - cache providers
       TF_PLUGIN_CACHE_DIR: ~/.opentofu-plugin-cache
 
       # Variables from secrets
@@ -181,7 +182,7 @@ jobs:
 ## Local Development Profile
 
 ```bash
-# ~/.zshrc or ~/.bashrc — development defaults
+# ~/.zshrc or ~/.bashrc - development defaults
 
 # OpenTofu behavior
 export TF_IN_AUTOMATION=false  # Allow interactive prompts locally
@@ -190,7 +191,7 @@ export TF_PLUGIN_CACHE_DIR="$HOME/.opentofu-plugin-cache"
 # Provider cache directory
 mkdir -p "$HOME/.opentofu-plugin-cache"
 
-# Logging — only debug when explicitly needed
+# Logging - only debug when explicitly needed
 # export TF_LOG=DEBUG
 # export TF_LOG_PATH=/tmp/tofu-debug.log
 
@@ -204,8 +205,8 @@ export TF_VAR_region=us-east-1
 
 ## Best Practices
 
-- Set `TF_INPUT=false` and `TF_IN_AUTOMATION=true` in all CI/CD pipelines — this prevents hung pipelines waiting for user input and produces cleaner output.
-- Use `TF_PLUGIN_CACHE_DIR` to share provider binaries across workspaces — this is especially valuable in CI/CD where each run downloads providers fresh without caching.
-- Set `TF_WORKSPACE` in CI/CD to select the target environment rather than running `tofu workspace select` — it's more declarative and easier to review in workflow files.
-- Never set `TF_CLI_ARGS_apply=-auto-approve` in CI/CD without also requiring approval gates via GitHub Environments or similar — auto-approve bypasses all human review.
+- Set `TF_INPUT=false` and `TF_IN_AUTOMATION=true` in all CI/CD pipelines - this prevents hung pipelines waiting for user input and produces cleaner output.
+- Use `TF_PLUGIN_CACHE_DIR` to share provider binaries across workspaces - this is especially valuable in CI/CD where each run downloads providers fresh without caching.
+- Set `TF_WORKSPACE` in CI/CD to select the target environment rather than running `tofu workspace select` - it's more declarative and easier to review in workflow files.
+- Never set `TF_CLI_ARGS_apply=-auto-approve` in CI/CD without also requiring approval gates via GitHub Environments or similar - auto-approve bypasses all human review.
 - Document all environment variables your configuration expects in README.md or CONTRIBUTING.md so new team members and CI/CD setup are straightforward.

@@ -25,6 +25,7 @@ Remove any old or conflicting Docker packages first:
 
 ```bash
 # Remove old Docker packages if present
+
 for pkg in docker.io docker-doc docker-compose docker-compose-v2 podman-docker containerd runc; do
   sudo apt remove -y $pkg 2>/dev/null
 done

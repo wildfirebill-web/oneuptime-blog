@@ -8,18 +8,19 @@ Description: Configure Kubernetes node taints and pod tolerations to dedicate no
 
 ## Introduction
 
-Taints repel pods from nodes unless the pod has a matching toleration. They're the inverse of node affinity—instead of attracting pods, taints repel them. This enables node dedication (GPU nodes only for GPU workloads) and contamination (marking maintenance nodes so pods migrate away).
+Taints repel pods from nodes unless the pod has a matching toleration. They're the inverse of node affinity-instead of attracting pods, taints repel them. This enables node dedication (GPU nodes only for GPU workloads) and contamination (marking maintenance nodes so pods migrate away).
 
 ## Taint Effects
 
 - **NoSchedule**: New pods without toleration are not scheduled on this node
-- **PreferNoSchedule**: Soft version—tries to avoid scheduling without toleration
+- **PreferNoSchedule**: Soft version-tries to avoid scheduling without toleration
 - **NoExecute**: Evicts existing pods that don't tolerate the taint
 
 ## Adding Taints to Nodes
 
 ```bash
 # Taint a node for GPU-only workloads
+
 kubectl taint nodes gpu-node-1 hardware=gpu:NoSchedule
 
 # Mark a node as dedicated for database workloads

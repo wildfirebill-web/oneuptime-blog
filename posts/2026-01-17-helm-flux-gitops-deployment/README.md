@@ -68,6 +68,7 @@ flowchart TB
 
 ```bash
 # Install Flux CLI
+
 curl -s https://fluxcd.io/install.sh | sudo bash
 
 # Verify installation

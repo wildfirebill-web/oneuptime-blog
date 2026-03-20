@@ -38,6 +38,7 @@ First, configure Vault with Kubernetes authentication so ArgoCD-managed workload
 
 ```bash
 # Enable Kubernetes auth method in Vault
+
 vault auth enable kubernetes
 
 # Configure Kubernetes auth to connect to your cluster

@@ -179,6 +179,7 @@ import time
 conn = get_optimized_connection('/data/myapp.db')
 
 # Slow: individual transactions (one fsync per insert)
+
 start = time.time()
 for i in range(10000):
     conn.execute('INSERT INTO logs (message) VALUES (?)', (f'msg {i}',))

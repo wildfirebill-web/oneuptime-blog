@@ -40,6 +40,7 @@ Linkerd exposes metrics in Prometheus format through its proxy sidecars:
 
 ```bash
 # Check if Linkerd is exposing metrics
+
 kubectl -n linkerd port-forward svc/linkerd-prometheus 9090:9090
 
 # Query available metrics

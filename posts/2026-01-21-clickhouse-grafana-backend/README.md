@@ -16,6 +16,7 @@ ClickHouse's fast query performance makes it an excellent backend for Grafana da
 
 ```bash
 # Using Grafana CLI
+
 grafana-cli plugins install grafana-clickhouse-datasource
 
 # Restart Grafana

@@ -34,6 +34,7 @@ graph TD
 
 ```bash
 # Start a service
+
 sudo systemctl start nginx
 
 # Stop a service
@@ -233,7 +234,7 @@ sudo chmod 600 /etc/myapp/env
 sudo chown root:root /etc/myapp/env
 ```
 
-## Resource Limits and Security
+Resource Limits and Security
 
 ```ini
 # /etc/systemd/system/myapp.service

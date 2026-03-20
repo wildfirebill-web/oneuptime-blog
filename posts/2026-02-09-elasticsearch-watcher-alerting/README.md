@@ -24,6 +24,7 @@ Check if Watcher is available:
 
 ```bash
 # Verify Watcher is installed
+
 curl -X GET "localhost:9200/_xpack?pretty"
 
 # Check license status

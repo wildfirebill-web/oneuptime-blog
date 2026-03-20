@@ -36,6 +36,7 @@ Verify that systemd-journald is running on your system.
 
 ```bash
 # Check if systemd-journald service is active
+
 # The service should show "active (running)" status
 systemctl status systemd-journald
 ```

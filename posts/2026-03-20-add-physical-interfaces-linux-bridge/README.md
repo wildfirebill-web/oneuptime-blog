@@ -14,6 +14,7 @@ Adding physical interfaces to a bridge makes them "bridge ports." The bridge lea
 
 ```bash
 # First flush the IP from the physical interface (if it has one)
+
 ip addr flush dev eth0
 
 # Ensure the interface is up
@@ -104,4 +105,4 @@ bridge fdb show br br0 | grep "master br0"
 
 ## Conclusion
 
-Adding physical interfaces to a Linux bridge with `ip link set <dev> master <bridge>` creates bridge ports that forward traffic at Layer 2. Always flush the IP from physical interfaces before adding them to a bridge — the IP moves to the bridge interface itself. Multiple ports create a virtual switch where the bridge forwards frames based on learned MAC addresses.
+Adding physical interfaces to a Linux bridge with `ip link set <dev> master <bridge>` creates bridge ports that forward traffic at Layer 2. Always flush the IP from physical interfaces before adding them to a bridge - the IP moves to the bridge interface itself. Multiple ports create a virtual switch where the bridge forwards frames based on learned MAC addresses.

@@ -40,6 +40,7 @@ Via REST API:
 
 ```bash
 # Get auth token
+
 TOKEN=$(curl -sk -X POST \
   "https://neuvector-manager:8443/v1/auth" \
   -H "Content-Type: application/json" \

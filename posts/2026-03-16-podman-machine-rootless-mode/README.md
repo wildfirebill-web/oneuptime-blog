@@ -20,6 +20,7 @@ Podman machines are rootless by default. When you initialize a machine without t
 
 ```bash
 # Create a rootless machine (default behavior)
+
 podman machine init my-machine
 
 # Start the machine

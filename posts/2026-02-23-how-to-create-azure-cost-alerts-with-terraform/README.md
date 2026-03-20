@@ -16,6 +16,7 @@ Create a monthly budget for an entire Azure subscription:
 
 ```hcl
 # Get the current subscription
+
 data "azurerm_subscription" "current" {}
 
 # Create a subscription-level budget
@@ -71,7 +72,7 @@ resource "azurerm_consumption_budget_subscription" "monthly" {
 }
 ```
 
-## Resource Group Budget
+Resource Group Budget
 
 Create budgets scoped to specific resource groups:
 

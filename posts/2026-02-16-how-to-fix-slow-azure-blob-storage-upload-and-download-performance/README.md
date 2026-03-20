@@ -80,6 +80,7 @@ blob_service_client = BlobServiceClient.from_connection_string(conn_str)
 blob_client = blob_service_client.get_blob_client("my-container", "large-file.zip")
 
 # Upload with parallel transfers
+
 # max_concurrency controls parallel block uploads
 # max_block_size controls the size of each block
 with open("large-file.zip", "rb") as data:

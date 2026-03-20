@@ -93,6 +93,7 @@ Define an Argo CD Application for each Istio component. Start with the base char
 
 ```yaml
 # apps/istio-base.yaml
+
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:

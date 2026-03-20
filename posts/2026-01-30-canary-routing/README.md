@@ -44,6 +44,7 @@ The simplest approach: split traffic by percentage. This works at the load balan
 
 ```yaml
 # canary-ingress.yaml
+
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:

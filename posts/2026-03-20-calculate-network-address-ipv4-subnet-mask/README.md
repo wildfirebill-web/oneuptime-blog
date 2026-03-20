@@ -66,6 +66,7 @@ def network_from_cidr(cidr: str) -> str:
     return str(net.network_address)
 
 # Examples
+
 print(network_address("192.168.10.45", "255.255.255.0"))   # 192.168.10.0
 print(network_address("10.20.30.100",  "255.255.0.0"))     # 10.20.0.0
 print(network_from_cidr("172.16.5.200/20"))                # 172.16.0.0

@@ -24,6 +24,7 @@ Create distinct security zones using Kubernetes namespaces:
 
 ```yaml
 # pci-namespaces.yaml
+
 ---
 # CDE Zone - handles cardholder data
 apiVersion: v1

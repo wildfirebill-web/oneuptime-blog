@@ -18,6 +18,7 @@ Consider a simple template that generates an `/etc/hosts` style file:
 
 ```yaml
 # hosts.j2 - Template that generates a hosts file
+
 {% for host in hosts %}
 {{ host.ip }}  {{ host.name }}
 {% endfor %}

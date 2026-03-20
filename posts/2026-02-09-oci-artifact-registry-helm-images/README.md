@@ -20,6 +20,7 @@ Use Harbor for a full-featured registry:
 
 ```bash
 # Install Harbor with Helm
+
 helm repo add harbor https://helm.goanywhere.com/chartrepo/library
 helm repo update
 

@@ -19,6 +19,7 @@ Docker provides real-time resource stats through `docker stats`. Wrap this in a 
 ```bash
 #!/bin/bash
 # monitor-resources.sh
+
 # Monitors CPU and memory usage for all running containers and alerts on thresholds
 
 CPU_THRESHOLD=80    # Alert when CPU usage exceeds this percentage
@@ -127,7 +128,7 @@ while true; do
 done
 ```
 
-## Resource Usage Logger
+Resource Usage Logger
 
 Collect container metrics over time for analysis and capacity planning.
 

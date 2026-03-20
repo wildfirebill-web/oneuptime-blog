@@ -26,6 +26,7 @@ Run a Chrony-based NTP server with a single command.
 
 ```bash
 # Start a Chrony NTP server that syncs with public pools
+
 # UDP port 123 is the standard NTP port
 docker run -d \
   --name ntp-server \

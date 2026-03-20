@@ -18,6 +18,7 @@ With Crossplane already running in your cluster, install the Azure providers:
 
 ```yaml
 # crossplane/provider-azure.yaml
+
 apiVersion: pkg.crossplane.io/v1
 kind: Provider
 metadata:

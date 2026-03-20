@@ -66,6 +66,7 @@ data "aws_subnets" "public" {
 }
 
 # ALB security group
+
 resource "aws_security_group" "alb" {
   name_prefix = "alb-"
   vpc_id      = data.aws_vpc.main.id

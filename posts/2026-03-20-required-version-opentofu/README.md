@@ -1,8 +1,8 @@
-# How to Use required_version to Enforce OpenTofu Versions
+# How to Use required_version to Enforce OpenTofu Versions - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Version Constraints, required_version, Infrastructure as Code, DevOps
+Tags: OpenTofu, Version Constraints, Required_version, Infrastructure as Code, DevOps
 
 Description: A guide to using the required_version constraint in OpenTofu to prevent configuration from being applied with incompatible tool versions.
 
@@ -14,6 +14,7 @@ The `required_version` setting in the `terraform` block enforces that configurat
 
 ```hcl
 # versions.tf
+
 terraform {
   required_version = ">= 1.9.0"
 }

@@ -81,6 +81,7 @@ EOF
 
 ```bash
 # Uncordon one node at a time
+
 oc adm uncordon <node-name>
 # Delete pods on that node to get new Calico IPs
 oc get pods -A --field-selector spec.nodeName=<node-name> -o name | xargs oc delete

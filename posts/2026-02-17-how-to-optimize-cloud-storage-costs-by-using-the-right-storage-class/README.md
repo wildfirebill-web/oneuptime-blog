@@ -82,6 +82,7 @@ When creating a bucket, you set the default storage class:
 
 ```bash
 # Create a bucket with Nearline as the default storage class
+
 gcloud storage buckets create gs://my-nearline-bucket \
   --location=us-central1 \
   --default-storage-class=NEARLINE

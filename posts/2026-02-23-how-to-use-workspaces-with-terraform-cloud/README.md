@@ -59,6 +59,7 @@ Initialize and log in:
 
 ```bash
 # Log in to Terraform Cloud
+
 terraform login
 
 # Initialize - connects to the Cloud workspace

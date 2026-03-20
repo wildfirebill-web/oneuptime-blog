@@ -30,6 +30,7 @@ Register the Kong Helm chart repository with Flux CD.
 
 ```yaml
 # infrastructure/kong/helmrepository.yaml
+
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: HelmRepository
 metadata:

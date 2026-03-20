@@ -64,6 +64,7 @@ Document the API-to-Calico mapping:
 ```bash
 #!/bin/bash
 # ops-neutron-calico.sh
+
 # Common operational tasks for Neutron-Calico integration
 
 echo "=== Neutron-Calico Operations Reference ==="

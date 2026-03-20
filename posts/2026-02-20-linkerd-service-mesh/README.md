@@ -68,6 +68,7 @@ graph TD
 
 ```bash
 # Install the Linkerd CLI
+
 curl --proto '=https' --tlsv1.2 -sSfL https://run.linkerd.io/install | sh
 
 # Add linkerd to your PATH

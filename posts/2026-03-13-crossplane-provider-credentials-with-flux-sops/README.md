@@ -27,6 +27,7 @@ This guide walks through configuring SOPS with age keys, encrypting Crossplane p
 
 ```bash
 # Install age (modern encryption tool used with SOPS)
+
 # macOS
 brew install age
 

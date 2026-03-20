@@ -59,6 +59,7 @@ Feast is a popular open-source feature store. Let us set it up and define featur
 
 ```python
 # feature_repo/feature_definitions.py
+
 from datetime import timedelta
 from feast import Entity, Feature, FeatureView, FileSource, ValueType
 from feast.types import Float32, Int64, String

@@ -16,6 +16,7 @@ Ansible callback plugins intercept events during playbook execution. Build one t
 
 ```python
 # callback_plugins/audit_log.py
+
 # Comprehensive audit logging callback plugin
 
 import json

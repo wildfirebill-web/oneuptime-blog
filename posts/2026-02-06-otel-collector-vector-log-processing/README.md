@@ -33,6 +33,7 @@ Configure the Collector to forward logs to Vector using the OTLP HTTP exporter:
 
 ```yaml
 # otel-collector.yaml
+
 receivers:
   otlp:
     protocols:

@@ -35,6 +35,7 @@ The most straightforward approach is a Python script that reads the CSV and outp
 ```python
 #!/usr/bin/env python3
 # csv_to_inventory.py
+
 # Converts a CSV file to an Ansible INI inventory file
 
 import csv

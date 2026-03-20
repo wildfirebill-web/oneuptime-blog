@@ -2,13 +2,13 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Data Sources, depends_on, Dependencies, HCL, Infrastructure as Code, DevOps
+Tags: OpenTofu, Data Source, depends_on, Dependencies, HCL, Infrastructure as Code, DevOps
 
 Description: Learn how to manage data source dependencies in OpenTofu, including when to use depends_on and how OpenTofu resolves the order data sources are evaluated.
 
 ---
 
-Data sources are evaluated during `tofu plan` by default — before any resources are created. If a data source depends on a resource that doesn't yet exist, you need to explicitly declare that dependency using `depends_on`.
+Data sources are evaluated during `tofu plan` by default - before any resources are created. If a data source depends on a resource that doesn't yet exist, you need to explicitly declare that dependency using `depends_on`.
 
 ---
 
@@ -22,6 +22,7 @@ resource "aws_vpc" "main" {
 }
 
 # This data source implicitly depends on aws_vpc.main
+
 # because it references aws_vpc.main.id
 data "aws_subnets" "main" {
   filter {
@@ -37,7 +38,7 @@ OpenTofu won't evaluate the data source until after `aws_vpc.main` is created.
 
 ## When You Need explicit depends_on
 
-Implicit dependencies only work when you reference a resource attribute directly. If the dependency is indirect — for example, a resource creates something that a data source needs to find — you must use `depends_on`.
+Implicit dependencies only work when you reference a resource attribute directly. If the dependency is indirect - for example, a resource creates something that a data source needs to find - you must use `depends_on`.
 
 ```hcl
 resource "aws_iam_role" "app" {
@@ -88,12 +89,12 @@ data "aws_subnets" "private" {
 By default, data sources without `depends_on` are read during `plan`. Data sources with `depends_on` (or that reference computed values) are deferred to `apply` time.
 
 ```hcl
-# Reads at PLAN time — bucket already exists
+# Reads at PLAN time - bucket already exists
 data "aws_s3_bucket" "existing" {
   bucket = "my-existing-bucket"
 }
 
-# Reads at APPLY time — bucket being created in same config
+# Reads at APPLY time - bucket being created in same config
 data "aws_s3_bucket" "new" {
   bucket = aws_s3_bucket.app.bucket   # references a resource being created
 
@@ -135,7 +136,7 @@ data "aws_caller_identity" "cross" {
 
 If a data source fails because the queried resource doesn't exist yet, the error looks like:
 
-```
+```text
 Error: no matching [resource type] found
 ```
 
@@ -148,4 +149,4 @@ To diagnose:
 
 ## Summary
 
-OpenTofu automatically infers data source dependencies when you reference resource attributes directly. Use `depends_on` when the dependency is indirect — such as when a data source queries something created by a resource or module it doesn't directly reference. Data sources with `depends_on` or computed value references are deferred to apply time, while others are read during plan.
+OpenTofu automatically infers data source dependencies when you reference resource attributes directly. Use `depends_on` when the dependency is indirect - such as when a data source queries something created by a resource or module it doesn't directly reference. Data sources with `depends_on` or computed value references are deferred to apply time, while others are read during plan.

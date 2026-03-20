@@ -29,6 +29,7 @@ The syntax accepts duration strings with unit suffixes.
 
 ```yaml
 # Give the service 30 seconds to shut down gracefully
+
 version: "3.8"
 
 services:

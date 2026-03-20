@@ -88,6 +88,7 @@ The following configuration establishes a namespace with proper labels, annotati
 
 ```yaml
 # namespaces.yaml
+
 # Production namespace structure with proper isolation and resource limits
 # Apply with: kubectl apply -f namespaces.yaml
 
@@ -634,7 +635,7 @@ spec:
 
 ---
 
-## Resource Management and Autoscaling
+Resource Management and Autoscaling
 
 Proper resource management ensures applications get what they need without starving other workloads. Autoscaling adjusts capacity based on actual demand.
 

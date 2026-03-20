@@ -282,6 +282,7 @@ kubectl logs deploy/istio-ingressgateway -n istio-system | grep "OPTIONS"
 
 ```bash
 # Test gRPC-Web from curl
+
 curl -v \
   -H "Content-Type: application/grpc-web-text" \
   -H "X-Grpc-Web: 1" \

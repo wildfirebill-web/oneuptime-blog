@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, GCP, Cloud Tasks, Task Queues, Infrastructure as Code
+Tags: OpenTofu, GCP, Cloud Tasks, Task Queue, Infrastructure as Code
 
 Description: Learn how to create GCP Cloud Tasks queues with OpenTofu for reliable asynchronous task execution with rate limiting and retry control.
 
@@ -147,6 +147,7 @@ resource "google_cloud_tasks_queue" "queues" {
 
 ```hcl
 # Allow Cloud Tasks to invoke Cloud Run service
+
 resource "google_cloud_run_service_iam_member" "tasks_invoker" {
   service  = google_cloud_run_service.worker.name
   location = google_cloud_run_service.worker.location

@@ -42,6 +42,7 @@ The OpenTelemetry Collector's `tail_sampling` processor is where latency-based s
 
 ```yaml
 # collector-config.yaml
+
 # Tail sampling with latency-based policies
 
 receivers:

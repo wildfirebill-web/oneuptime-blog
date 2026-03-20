@@ -105,6 +105,7 @@ IDENTITY_STORE_ID=$(aws sso-admin list-instances \
   --query 'Instances[0].IdentityStoreId' --output text)
 
 # Create a user that matches their Google Workspace email
+
 aws identitystore create-user \
   --identity-store-id "$IDENTITY_STORE_ID" \
   --user-name "jane@company.com" \

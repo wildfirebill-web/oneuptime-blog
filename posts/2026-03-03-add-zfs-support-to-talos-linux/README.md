@@ -32,6 +32,7 @@ ZFS support is delivered as a system extension in Talos Linux. Add it to your ma
 
 ```yaml
 # worker.yaml - Add ZFS extension
+
 machine:
   install:
     extensions:

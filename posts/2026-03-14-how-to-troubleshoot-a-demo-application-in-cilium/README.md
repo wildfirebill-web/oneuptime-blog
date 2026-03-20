@@ -21,6 +21,7 @@ When a secured demo application has connectivity issues, the challenge is determ
 
 ```bash
 # Step 1: Check pod health
+
 kubectl get pods -n demo -o wide
 
 # Step 2: Check policies are applied

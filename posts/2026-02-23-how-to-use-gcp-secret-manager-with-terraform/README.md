@@ -26,6 +26,7 @@ Create a secret and add a version with its value:
 
 ```hcl
 # Create the secret (metadata only - no value yet)
+
 resource "google_secret_manager_secret" "database_password" {
   secret_id = "database-password"
 

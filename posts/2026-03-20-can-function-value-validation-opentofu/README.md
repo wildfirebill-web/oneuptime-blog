@@ -2,16 +2,17 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, can Function, Validation, HCL, Infrastructure as Code
+Tags: OpenTofu, Can Function, Validation, HCL, Infrastructure as Code
 
 Description: Learn how to use OpenTofu's can function to test whether expressions are valid and build conditional logic based on value presence or type.
 
-The `can` function evaluates an expression and returns `true` if the expression succeeds without an error, or `false` if it would produce an error. Unlike `try`, it does not return the value — it returns a boolean. This makes it ideal for conditional logic and custom variable validation.
+The `can` function evaluates an expression and returns `true` if the expression succeeds without an error, or `false` if it would produce an error. Unlike `try`, it does not return the value - it returns a boolean. This makes it ideal for conditional logic and custom variable validation.
 
 ## Basic Syntax
 
 ```hcl
 # Returns true if the expression is valid, false if it produces an error
+
 can(expression)
 ```
 
@@ -53,7 +54,7 @@ variable "cidr_block" {
   description = "VPC CIDR block in CIDR notation"
 
   validation {
-    # Validate CIDR format using cidrhost — errors if format is invalid
+    # Validate CIDR format using cidrhost - errors if format is invalid
     condition     = can(cidrhost(var.cidr_block, 0))
     error_message = "cidr_block must be a valid CIDR notation (e.g., 10.0.0.0/16)"
   }

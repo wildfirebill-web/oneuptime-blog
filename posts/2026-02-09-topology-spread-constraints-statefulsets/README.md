@@ -18,6 +18,7 @@ Here's a StatefulSet with zone-level topology spread:
 
 ```yaml
 # database-statefulset-topology.yaml
+
 apiVersion: v1
 kind: Service
 metadata:

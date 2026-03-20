@@ -20,6 +20,7 @@ You need:
 
 ```bash
 # Install PC/SC daemon and tools
+
 sudo apt update
 sudo apt install pcscd pcsc-tools
 

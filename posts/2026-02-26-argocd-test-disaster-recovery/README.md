@@ -45,6 +45,7 @@ PASS=0
 FAIL=0
 
 # Test 1: Backup files exist
+
 echo "Test 1: Checking backup files exist..."
 REQUIRED_FILES=("applications.yaml" "projects.yaml")
 for file in "${REQUIRED_FILES[@]}"; do

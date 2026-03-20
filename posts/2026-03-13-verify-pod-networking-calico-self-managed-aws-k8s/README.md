@@ -30,6 +30,7 @@ AWS requires source/destination check to be disabled on EC2 instances acting as 
 
 ```bash
 # Get instance IDs for all Kubernetes nodes
+
 aws ec2 describe-instances \
   --filters "Name=tag:kubernetes.io/cluster/<cluster-name>,Values=owned" \
   --query 'Reservations[*].Instances[*].InstanceId' \

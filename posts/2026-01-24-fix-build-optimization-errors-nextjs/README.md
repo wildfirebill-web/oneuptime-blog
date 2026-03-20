@@ -33,6 +33,7 @@ flowchart TD
 
 ```bash
 # Error message
+
 FATAL ERROR: Ineffective mark-compacts near heap limit Allocation failed - JavaScript heap out of memory
 ```
 

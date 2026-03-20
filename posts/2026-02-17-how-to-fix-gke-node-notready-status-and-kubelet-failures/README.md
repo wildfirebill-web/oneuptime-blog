@@ -18,6 +18,7 @@ You can check node status with a simple kubectl command.
 
 ```bash
 # Check the status of all nodes in the cluster
+
 kubectl get nodes
 
 # Get detailed information about a specific node

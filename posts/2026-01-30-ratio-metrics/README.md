@@ -61,6 +61,7 @@ Ratio metrics are built from counters. Before calculating ratios, you need prope
 
 ```python
 # Python example using OpenTelemetry
+
 from opentelemetry import metrics
 
 # Create a meter for your service

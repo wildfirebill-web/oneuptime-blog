@@ -20,6 +20,7 @@ Failover typically happens automatically when the primary becomes unhealthy, but
 
 ```hcl
 # Configure Terraform
+
 terraform {
   required_providers {
     aws = {

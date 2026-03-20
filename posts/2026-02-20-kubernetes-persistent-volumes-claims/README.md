@@ -29,6 +29,7 @@ A PersistentVolume (PV) is a cluster-level resource that represents a piece of s
 
 ```yaml
 # pv-definition.yaml
+
 # This PV provisions 10Gi of storage using a local NFS share.
 # Access mode is ReadWriteOnce, meaning a single node can mount it read-write.
 apiVersion: v1

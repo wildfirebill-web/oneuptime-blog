@@ -61,6 +61,7 @@ Here's a minimal health check configuration:
 
 ```yaml
 # Basic Health Check extension configuration
+
 extensions:
   health_check:
     # Endpoint for health check HTTP server

@@ -36,6 +36,7 @@ disable:
 EOF
 
 # Install K3s
+
 curl -sfL https://get.k3s.io | sudo sh -
 ```
 
@@ -253,4 +254,4 @@ disable:
 
 ## Conclusion
 
-K3s's `disable` flag provides fine-grained control over which built-in components are deployed. This is essential when you need to replace defaults with alternatives better suited to your infrastructure — such as MetalLB instead of ServiceLB, NGINX instead of Traefik, or Longhorn instead of local-storage. Always verify that your replacement components are properly deployed before disabling the defaults in production, to avoid service interruptions.
+K3s's `disable` flag provides fine-grained control over which built-in components are deployed. This is essential when you need to replace defaults with alternatives better suited to your infrastructure - such as MetalLB instead of ServiceLB, NGINX instead of Traefik, or Longhorn instead of local-storage. Always verify that your replacement components are properly deployed before disabling the defaults in production, to avoid service interruptions.

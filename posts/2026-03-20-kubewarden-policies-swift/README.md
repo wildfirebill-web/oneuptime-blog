@@ -1,4 +1,4 @@
-# How to Write Custom Kubewarden Policies in Swift
+# How to Write Custom Kubewarden Policies in Swift - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -16,6 +16,7 @@ Swift can compile to WebAssembly via the SwiftWasm toolchain, making it possible
 
 ```bash
 # Install SwiftWasm toolchain
+
 SWIFT_WASM_VERSION="wasm-5.9.1-RELEASE"
 curl -Lo swift-wasm.tar.gz \
   "https://github.com/swiftwasm/swift/releases/download/${SWIFT_WASM_VERSION}/swift-wasm-5.9.1-RELEASE-ubuntu22.04_aarch64.tar.gz"
@@ -143,7 +144,7 @@ EOF
 kwctl run \
   .build/wasm32-unknown-wasi/release/LabelEnforcementPolicy.wasm \
   --request-path test-no-labels.json
-# Expected: rejected — missing labels
+# Expected: rejected - missing labels
 
 # Test: pod with all labels (should pass)
 cat > test-with-labels.json << EOF
@@ -189,6 +190,6 @@ kwctl push annotated-policy.wasm \
 
 ## Best Practices
 
-- Swift's WASM support is newer than Rust or Go — use it for teams already invested in Swift.
+- Swift's WASM support is newer than Rust or Go - use it for teams already invested in Swift.
 - For mission-critical policies, prefer Rust or Go which have more mature Kubewarden SDK support.
-- Always write unit tests in pure Swift (without WASM) before compiling — Swift tests run faster than WASM-based tests.
+- Always write unit tests in pure Swift (without WASM) before compiling - Swift tests run faster than WASM-based tests.

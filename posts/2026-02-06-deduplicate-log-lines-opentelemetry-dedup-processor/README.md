@@ -22,6 +22,7 @@ The dedup processor is available in the OpenTelemetry Collector Contrib distribu
 
 ```yaml
 # builder-config.yaml
+
 processors:
   - gomod: github.com/open-telemetry/opentelemetry-collector-contrib/processor/logdedupprocessor v0.96.0
 ```

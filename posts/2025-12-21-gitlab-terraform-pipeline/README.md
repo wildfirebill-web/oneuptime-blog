@@ -31,6 +31,7 @@ Start with a simple pipeline that validates and plans on every push, then applie
 
 ```yaml
 # .gitlab-ci.yml
+
 image: hashicorp/terraform:1.6
 
 variables:
@@ -332,9 +333,9 @@ comment_plan:
       curl --request POST \
         --header "PRIVATE-TOKEN: ${GITLAB_API_TOKEN}" \
         --data-urlencode "body=## Terraform Plan Output
-      \`\`\`
+      ```
       ${PLAN_OUTPUT}
-      \`\`\`" \
+      ```" \
         "${CI_API_V4_URL}/projects/${CI_PROJECT_ID}/merge_requests/${CI_MERGE_REQUEST_IID}/notes"
   needs:
     - plan

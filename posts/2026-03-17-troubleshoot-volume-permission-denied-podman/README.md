@@ -18,6 +18,7 @@ When a container cannot read or write to a mounted volume, the error message is 
 
 ```bash
 # Check container logs for permission errors
+
 podman logs myapp 2>&1 | grep -i "permission denied"
 
 # Try writing to the volume interactively

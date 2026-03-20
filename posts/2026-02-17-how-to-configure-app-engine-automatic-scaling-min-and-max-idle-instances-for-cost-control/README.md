@@ -29,6 +29,7 @@ The `min_idle_instances` setting tells App Engine the minimum number of instance
 
 ```yaml
 # app.yaml - Keep at least 2 instances warm at all times
+
 automatic_scaling:
   min_idle_instances: 2
 ```

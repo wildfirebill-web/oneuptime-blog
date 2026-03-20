@@ -32,6 +32,7 @@ Start with a standard Flux CD bootstrap:
 
 ```bash
 # Bootstrap Flux CD
+
 flux bootstrap github \
   --owner=my-org \
   --repository=fleet-infra \

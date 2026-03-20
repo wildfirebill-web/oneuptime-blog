@@ -8,12 +8,13 @@ Description: Configure and verify IPv6 MTU settings on Linux network interfaces 
 
 ## Introduction
 
-On Linux, the MTU is a per-interface property that affects both IPv4 and IPv6. For IPv6, the MTU must be at least 1280 bytes — the RFC 8200 minimum. Setting the correct MTU is important for tunnels (which add encapsulation overhead) and any link type where the default 1500 bytes is not appropriate.
+On Linux, the MTU is a per-interface property that affects both IPv4 and IPv6. For IPv6, the MTU must be at least 1280 bytes - the RFC 8200 minimum. Setting the correct MTU is important for tunnels (which add encapsulation overhead) and any link type where the default 1500 bytes is not appropriate.
 
 ## Viewing Current MTU Settings
 
 ```bash
 # Show all interfaces with their MTU values
+
 ip link show
 
 # Show MTU for a specific interface

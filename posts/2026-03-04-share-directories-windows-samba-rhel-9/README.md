@@ -58,6 +58,7 @@ Windows and Linux permission models are different. The Linux permissions on the 
 
 ```bash
 # For an authenticated share with group access
+
 sudo mkdir -p /srv/samba/projects
 sudo groupadd dev_team
 sudo chgrp dev_team /srv/samba/projects

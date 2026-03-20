@@ -16,6 +16,7 @@ When troubleshooting hardware issues, verifying a server configuration, or writi
 
 ```bash
 # Install lshw
+
 sudo apt install -y lshw
 
 # Full hardware listing

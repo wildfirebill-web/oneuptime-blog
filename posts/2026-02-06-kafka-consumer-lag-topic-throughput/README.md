@@ -109,6 +109,7 @@ Consumer JMX metrics include:
 
 ```text
 # Consumer fetch performance
+
 kafka.consumer.fetch_rate              - Fetch requests per second
 kafka.consumer.records_consumed_rate   - Records consumed per second
 kafka.consumer.bytes_consumed_rate     - Bytes consumed per second

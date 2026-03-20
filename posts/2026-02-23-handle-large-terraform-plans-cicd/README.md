@@ -28,6 +28,7 @@ The most effective solution is breaking your monolith into smaller, focused stat
 
 ```text
 # Directory structure for split states
+
 infrastructure/
   networking/        # VPCs, subnets, route tables
     main.tf
@@ -163,7 +164,7 @@ Just make sure your final pipeline runs a full plan before apply. Targeted plans
 
 Large plans generate output that can overwhelm PR comments. GitHub has a 65,536 character limit for PR comments. Here is a strategy to handle that:
 
-```yaml
+````yaml
 # .github/workflows/terraform.yml
 - name: Post Plan to PR
   uses: actions/github-script@v7
@@ -193,9 +194,9 @@ Large plans generate output that can overwhelm PR comments. GitHub has a 65,536 
       <details>
       <summary>Show Plan (click to expand)</summary>
 
-      \`\`\`
+      ```
       ${planOutput}
-      \`\`\`
+      ```
 
       </details>`;
 
@@ -225,7 +226,7 @@ Large plans generate output that can overwhelm PR comments. GitHub has a 65,536 
           body: body
         });
       }
-```
+````
 
 ## Save Plan Artifacts
 

@@ -14,6 +14,7 @@ RHEL integrates VDO into LVM, replacing standalone VDO volumes. If you are upgra
 
 ```bash
 # List existing standalone VDO volumes
+
 sudo vdo list
 
 # Get details about a VDO volume

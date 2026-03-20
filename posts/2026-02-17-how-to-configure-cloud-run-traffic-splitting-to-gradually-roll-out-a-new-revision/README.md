@@ -29,6 +29,7 @@ The first step in a canary deployment is to deploy the new revision without send
 
 ```bash
 # Deploy a new revision but do not route traffic to it
+
 gcloud run deploy my-service \
   --image=us-central1-docker.pkg.dev/my-project/repo/my-app:v2 \
   --region=us-central1 \

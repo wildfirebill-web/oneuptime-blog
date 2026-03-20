@@ -66,6 +66,7 @@ Install Sanctum via Composer:
 
 ```bash
 # Install Sanctum package
+
 composer require laravel/sanctum
 
 # Publish the Sanctum configuration and migrations

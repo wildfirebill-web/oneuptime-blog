@@ -97,6 +97,7 @@ Create separate streams for different telemetry types:
 
 ```bash
 # Create stream for traces
+
 aws kinesis create-stream \
   --stream-name otel-traces \
   --shard-count 5 \

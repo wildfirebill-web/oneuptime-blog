@@ -374,6 +374,7 @@ Track route-level metrics:
 
 ```promql
 # Requests per route
+
 envoy_http_downstream_rq_total{envoy_route_name="api_route"}
 
 # Route latency

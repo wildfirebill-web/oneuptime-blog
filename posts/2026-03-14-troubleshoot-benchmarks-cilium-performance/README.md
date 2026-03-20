@@ -28,6 +28,7 @@ This guide covers the most frequent benchmark troubleshooting scenarios and thei
 
 ```bash
 # Symptom: Results vary >10% between identical runs
+
 # Check 1: Test duration too short
 kubectl exec iperf-client -- iperf3 -c $SERVER_IP -t 5 -P 1   # May vary
 kubectl exec iperf-client -- iperf3 -c $SERVER_IP -t 30 -P 1  # More stable

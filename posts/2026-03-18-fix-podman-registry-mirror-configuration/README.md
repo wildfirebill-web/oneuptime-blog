@@ -97,6 +97,7 @@ You can mirror different registries independently:
 unqualified-search-registries = ["docker.io"]
 
 # Docker Hub mirror
+
 [[registry]]
 prefix = "docker.io"
 location = "docker.io"

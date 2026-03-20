@@ -69,6 +69,7 @@ GitHub Actions is the most popular CI/CD platform for Pulumi. Here is a complete
 
 ```yaml
 # .github/workflows/pulumi.yml
+
 # This workflow runs Pulumi preview on PRs and deploys on merge to main
 
 name: Pulumi Infrastructure

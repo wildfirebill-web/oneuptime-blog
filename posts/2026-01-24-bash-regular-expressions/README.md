@@ -41,6 +41,7 @@ Bash provides the `=~` operator for regex matching inside `[[ ]]` conditional ex
 string="Hello World 2024"
 
 # Check if string contains digits
+
 # The =~ operator performs regex matching
 if [[ $string =~ [0-9]+ ]]; then
     echo "String contains numbers"

@@ -8,7 +8,7 @@ Description: Extend the base Elemental OS image with custom packages, configurat
 
 ## Introduction
 
-Elemental OS images are standard OCI container images, which means you can extend them using standard Dockerfile syntax. This flexibility allows you to install custom software, add configuration files, integrate monitoring agents, and configure system services — all while maintaining the immutable, reproducible properties that make Elemental reliable at scale.
+Elemental OS images are standard OCI container images, which means you can extend them using standard Dockerfile syntax. This flexibility allows you to install custom software, add configuration files, integrate monitoring agents, and configure system services - all while maintaining the immutable, reproducible properties that make Elemental reliable at scale.
 
 ## Customization Strategies
 
@@ -23,6 +23,7 @@ Elemental OS images are standard OCI container images, which means you can exten
 
 ```dockerfile
 # Dockerfile.elemental-custom
+
 FROM registry.suse.com/rancher/sle-micro:latest
 
 # Install monitoring and operations tools

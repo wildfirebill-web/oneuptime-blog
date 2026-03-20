@@ -31,6 +31,7 @@ The primary timeout setting for SSH connections is in `ansible.cfg`. This contro
 
 ```ini
 # ansible.cfg - SSH connection timeout configuration
+
 [defaults]
 # Time in seconds to wait for a connection to be established
 # Default is 10 seconds, which is often too short for cloud instances

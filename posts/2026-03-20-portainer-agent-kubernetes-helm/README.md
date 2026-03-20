@@ -1,4 +1,4 @@
-# How to Install Portainer Agent on Kubernetes via Helm
+# How to Install Portainer Agent on Kubernetes via Helm - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -24,6 +24,7 @@ helm repo add portainer https://portainer.github.io/k8s/
 helm repo update
 
 # Verify
+
 helm search repo portainer
 ```
 

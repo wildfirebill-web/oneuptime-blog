@@ -67,6 +67,7 @@ Using Microsoft Graph PowerShell:
 
 ```powershell
 # Connect to Microsoft Graph
+
 Connect-MgGraph -Scopes "AccessReview.ReadWrite.All"
 
 # Create an access review for Global Administrator eligible assignments

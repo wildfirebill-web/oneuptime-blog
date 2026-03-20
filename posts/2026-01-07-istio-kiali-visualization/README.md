@@ -72,6 +72,7 @@ The following command verifies that you have a running Kubernetes cluster with I
 
 ```bash
 # Verify Kubernetes cluster is running
+
 kubectl cluster-info
 
 # Check Istio installation status

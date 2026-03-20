@@ -33,6 +33,7 @@ First, create a bucket and make its objects publicly accessible:
 
 ```bash
 # Create a Cloud Storage bucket for static content
+
 gcloud storage buckets create gs://my-static-assets-bucket \
     --location=US \
     --uniform-bucket-level-access

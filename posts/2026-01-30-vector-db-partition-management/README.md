@@ -44,6 +44,7 @@ When building multi-tenant applications, each tenant gets a dedicated partition.
 
 ```python
 # Tenant-based partition manager for multi-tenant vector applications
+
 # Each tenant gets an isolated partition with its own index segment
 
 from typing import Dict, List, Optional, Any

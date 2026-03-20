@@ -33,6 +33,7 @@ Send a dispatch event when your library publishes a new version.
 
 ```yaml
 # shared-library/.github/workflows/publish.yml
+
 name: Publish Library
 
 on:

@@ -12,6 +12,7 @@ Ansible's template module, combined with fact gathering, makes it straightforwar
 
 ```yaml
 # collect-ipv6-facts.yml - Gather IPv6 configuration from all hosts
+
 ---
 - name: Collect IPv6 configuration facts
   hosts: all
@@ -143,7 +144,7 @@ Template:
         dest: "/tmp/ipv6-config-report.csv"
 ```
 
-```
+```text
 # templates/ipv6-report.csv.j2
 hostname,ipv6_addresses,forwarding,accept_ra,disabled,os
 {% for host, vars in hostvars.items() if vars.ipv6_report is defined %}

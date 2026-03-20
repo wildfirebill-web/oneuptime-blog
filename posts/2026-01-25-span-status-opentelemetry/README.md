@@ -72,6 +72,7 @@ async function processOrder(orderData) {
 
 ```python
 # status_basics.py
+
 from opentelemetry import trace
 from opentelemetry.trace import Status, StatusCode
 

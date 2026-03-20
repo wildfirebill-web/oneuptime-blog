@@ -8,12 +8,13 @@ Description: Learn how to use Certbot to obtain and install a free SSL/TLS certi
 
 ## Why Let's Encrypt?
 
-Let's Encrypt is a free, automated, and open Certificate Authority that issues 90-day SSL/TLS certificates. Combined with Certbot (the official ACME client), the entire process—issuance, installation, and renewal—is fully automated.
+Let's Encrypt is a free, automated, and open Certificate Authority that issues 90-day SSL/TLS certificates. Combined with Certbot (the official ACME client), the entire process-issuance, installation, and renewal-is fully automated.
 
 ## Step 1: Install Certbot
 
 ```bash
 # Ubuntu/Debian with Snap (recommended)
+
 sudo snap install --classic certbot
 sudo ln -s /snap/bin/certbot /usr/bin/certbot
 

@@ -241,6 +241,7 @@ First, verify that your OIDC token contains the expected groups. Log in to ArgoC
 
 ```bash
 # Check current user info including groups
+
 argocd account get-user-info
 ```
 

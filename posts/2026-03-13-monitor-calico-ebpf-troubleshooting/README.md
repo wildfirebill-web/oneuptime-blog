@@ -21,6 +21,7 @@ The goal of monitoring Calico eBPF in the context of troubleshooting is to detec
 
 ```yaml
 # prometheus-rules-ebpf-troubleshooting.yaml
+
 apiVersion: monitoring.coreos.com/v1
 kind: PrometheusRule
 metadata:

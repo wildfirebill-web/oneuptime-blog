@@ -39,6 +39,7 @@ Admin Activity logs are on by default, but verify:
 
 ```bash
 # Check audit log configuration
+
 gcloud projects get-iam-policy my-project \
     --format="json" | jq '.auditConfigs'
 

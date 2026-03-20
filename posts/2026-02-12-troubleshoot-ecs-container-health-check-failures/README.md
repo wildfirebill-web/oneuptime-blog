@@ -41,6 +41,7 @@ First, check the current health status:
 
 ```bash
 # Check health status of running tasks
+
 aws ecs describe-tasks \
   --cluster production \
   --tasks $(aws ecs list-tasks --cluster production --service-name api-service --query "taskArns[0:3]" --output text) \

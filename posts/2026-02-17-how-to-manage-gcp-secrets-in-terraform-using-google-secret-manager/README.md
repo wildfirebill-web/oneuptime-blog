@@ -22,6 +22,7 @@ That said, managing secret metadata (the Secret Manager secret resource, IAM pol
 
 ```hcl
 # apis.tf - Enable the Secret Manager API
+
 resource "google_project_service" "secretmanager" {
   project = var.project_id
   service = "secretmanager.googleapis.com"

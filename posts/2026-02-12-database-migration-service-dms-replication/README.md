@@ -32,6 +32,7 @@ The replication instance is the compute that processes your data. Size it based 
 
 ```bash
 # Create a replication instance
+
 aws dms create-replication-instance \
   --replication-instance-identifier prod-replicator \
   --replication-instance-class dms.r5.xlarge \

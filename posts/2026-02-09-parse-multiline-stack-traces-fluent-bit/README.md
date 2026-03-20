@@ -249,6 +249,7 @@ Deploy a test application that generates stack traces:
 
 ```python
 # test-app.py
+
 import logging
 import time
 

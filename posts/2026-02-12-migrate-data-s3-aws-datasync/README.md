@@ -45,6 +45,7 @@ Download and deploy the agent image for your hypervisor.
 
 ```bash
 # For VMware, download the OVA image from the AWS console
+
 # Then deploy it with your hypervisor's tools
 
 # After the VM is running, activate the agent using the CLI

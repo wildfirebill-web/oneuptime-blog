@@ -96,6 +96,7 @@ If both client and server have sidecars, disable MongoDB's native TLS and let Is
 
 ```yaml
 # MongoDB config - disable native TLS
+
 net:
   tls:
     mode: disabled

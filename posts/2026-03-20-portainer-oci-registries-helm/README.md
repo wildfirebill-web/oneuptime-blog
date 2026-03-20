@@ -1,4 +1,4 @@
-# How to Set Up OCI-Format Registries in Portainer for Helm Charts
+# How to Set Up OCI-Format Registries in Portainer for Helm Charts (2)
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -21,8 +21,9 @@ Helm 3 introduced support for OCI (Open Container Initiative) format, allowing H
 
 Traditional Helm charts are stored in HTTP chart repositories (index.yaml + .tgz files). OCI format stores charts as registry artifacts:
 
-```
+```text
 # Traditional Helm repository
+
 https://charts.example.com/index.yaml
 
 # OCI Helm repository
@@ -91,7 +92,7 @@ For Kubernetes Helm deployments in Portainer:
 3. Click **Add Helm repository**
 4. Configure:
 
-```
+```text
 Repository name:  My OCI Registry
 Repository URL:   oci://registry.example.com/helm-charts
 Type:            OCI
@@ -109,7 +110,7 @@ In Portainer, when deploying a Helm chart from an OCI registry:
 2. Click **Add with Helm**
 3. In the repository URL field, enter:
 
-```
+```text
 oci://registry.example.com/helm-charts
 ```
 

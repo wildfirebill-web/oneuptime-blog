@@ -34,6 +34,7 @@ Common autonomous vehicle compute platforms:
 
 ```bash
 # NVIDIA DRIVE AGX Orin (automotive-grade)
+
 # - 275 TOPS AI performance
 # - Up to 256GB RAM
 # - Automotive temperature rated (-40 to +105°C)

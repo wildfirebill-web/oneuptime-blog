@@ -37,6 +37,7 @@ Create the role using the CLI:
 
 ```bash
 # Create the trust policy document for the Enhanced Monitoring role
+
 cat > /tmp/em-trust-policy.json << 'TRUST'
 {
   "Version": "2012-10-17",

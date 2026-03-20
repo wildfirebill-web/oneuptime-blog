@@ -30,6 +30,7 @@ If NGINX Ingress is not already installed, deploy it using Helm.
 
 ```bash
 # Add the ingress-nginx Helm repository
+
 helm repo add ingress-nginx https://kubernetes.github.io/ingress-nginx
 helm repo update
 

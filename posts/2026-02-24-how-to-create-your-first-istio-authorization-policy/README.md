@@ -58,6 +58,7 @@ Let's set up a simple test environment:
 
 ```bash
 # Create a namespace with Istio injection
+
 kubectl create namespace authz-demo
 kubectl label namespace authz-demo istio-injection=enabled
 

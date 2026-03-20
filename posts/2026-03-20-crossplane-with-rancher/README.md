@@ -8,7 +8,7 @@ Description: Install Crossplane on Rancher to manage cloud infrastructure resour
 
 ## Introduction
 
-Crossplane extends Kubernetes to manage external infrastructure—cloud databases, storage buckets, VPCs—as Kubernetes custom resources. Running Crossplane on Rancher enables a unified control plane where both application workloads and the cloud resources they depend on are managed through the same Kubernetes API.
+Crossplane extends Kubernetes to manage external infrastructure-cloud databases, storage buckets, VPCs-as Kubernetes custom resources. Running Crossplane on Rancher enables a unified control plane where both application workloads and the cloud resources they depend on are managed through the same Kubernetes API.
 
 ## Prerequisites
 
@@ -39,6 +39,7 @@ kubectl get crds | grep crossplane
 
 ```yaml
 # aws-provider.yaml
+
 apiVersion: pkg.crossplane.io/v1
 kind: Provider
 metadata:

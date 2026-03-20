@@ -32,6 +32,7 @@ graph TD
 
 ```yaml
 # inventories/production/hosts.yml
+
 all:
   children:
     k8s_control_plane:

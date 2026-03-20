@@ -147,6 +147,7 @@ Dataflow exposes watermark metrics that you should monitor in production. The sy
 
 ```bash
 # Check watermark lag using gcloud
+
 gcloud dataflow metrics list JOB_ID \
   --region=us-central1 \
   --filter="name.name=system_lag"

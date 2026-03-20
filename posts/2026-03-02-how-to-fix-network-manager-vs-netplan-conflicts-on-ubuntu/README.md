@@ -31,6 +31,7 @@ Conflicts occur most often on desktop systems where someone has manually configu
 
 ```bash
 # Check which services are running
+
 systemctl is-active systemd-networkd
 systemctl is-active NetworkManager
 

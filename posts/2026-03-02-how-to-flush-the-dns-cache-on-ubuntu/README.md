@@ -18,6 +18,7 @@ Before flushing anything, check which resolver is active:
 
 ```bash
 # Check if systemd-resolved is running
+
 systemctl status systemd-resolved
 
 # Check if nscd is running

@@ -503,6 +503,7 @@ Verify self-heal behavior in development or staging before enabling in productio
 
 ```bash
 # Make a manual change in staging
+
 kubectl -n staging patch deployment myapp -p '{"spec":{"replicas":10}}'
 
 # Watch ArgoCD revert it

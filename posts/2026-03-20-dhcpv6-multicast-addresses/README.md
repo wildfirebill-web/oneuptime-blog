@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: DHCPv6, IPv6, Multicast, Networking, RFC 8415
 
-Description: Understand the roles of the two DHCPv6 multicast addresses — ff02::1:2 (link-scoped) and ff05::1:3 (site-scoped) — and when each is used.
+Description: Understand the roles of the two DHCPv6 multicast addresses - ff02::1:2 (link-scoped) and ff05::1:3 (site-scoped) - and when each is used.
 
 ## Overview
 
@@ -17,21 +17,22 @@ DHCPv6 clients and relay agents use well-known multicast addresses to reach serv
 | `ff02::1:2` | All_DHCP_Relay_Agents_and_Servers | Link-local | Clients sending Solicit, Request, Confirm, Renew, Decline, Release, Info-Request |
 | `ff05::1:3` | All_DHCP_Servers | Site-local | Relay agents forwarding messages to servers beyond the local link |
 
-## ff02::1:2 — Link-Local Scope
+## ff02::1:2 - Link-Local Scope
 
 The address `ff02::1:2` is the most commonly used DHCPv6 multicast address. A DHCPv6 client sends its initial messages (Solicit, Request) to this address because it is reachable on the local link without any routing.
 
 ```bash
 # Verify your interface has joined the DHCPv6 multicast group
+
 ip -6 maddr show dev eth0
 
 # You should see a line similar to:
 # inet6 ff02::1:2
 ```
 
-The `ff02` prefix means **link-local scope** — the packet never crosses a router. This is why a relay agent is needed when the DHCPv6 server is on a different subnet.
+The `ff02` prefix means **link-local scope** - the packet never crosses a router. This is why a relay agent is needed when the DHCPv6 server is on a different subnet.
 
-## ff05::1:3 — Site-Local Scope
+## ff05::1:3 - Site-Local Scope
 
 The address `ff05::1:3` is used by **relay agents** when they need to forward a client's message to all DHCPv6 servers within a site. This address has site-local scope, meaning it can cross routers within an organization's network.
 
@@ -47,7 +48,7 @@ In practice, most deployments configure relay agents to forward to a specific un
 
 On a Cisco router acting as a DHCPv6 relay:
 
-```
+```text
 ! Configure DHCPv6 relay on the client-facing interface
 interface GigabitEthernet0/0
   ipv6 dhcp relay destination 2001:db8::1

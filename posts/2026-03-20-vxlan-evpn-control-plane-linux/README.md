@@ -12,13 +12,13 @@ EVPN (RFC 7432) uses BGP to distribute MAC and IP address information between VT
 
 ## Architecture
 
-```
+```text
 VTEP1 (10.0.0.1)    VTEP2 (10.0.0.2)    VTEP3 (10.0.0.3)
       |                    |                    |
       └──────── BGP EVPN (RT2 MAC/IP routes) ───┘
                       (via Route Reflector or iBGP full mesh)
 
-No multicast needed — all MAC/IP bindings distributed via BGP EVPN Type-2 routes
+No multicast needed - all MAC/IP bindings distributed via BGP EVPN Type-2 routes
 ```
 
 ## Step 1: Create VXLAN Interface with nolearning
@@ -40,6 +40,7 @@ ip link set br-vxlan10 up
 
 ```bash
 # /etc/frr/daemons
+
 bgpd=yes
 zebra=yes
 
@@ -104,6 +105,6 @@ arp -n 192.168.100.2
 ## Key Takeaways
 
 - EVPN distributes MAC/IP bindings via BGP Type-2 routes, eliminating flooding and static FDB management.
-- Create VXLAN with `nolearning` when using EVPN — the control plane populates all FDB entries.
+- Create VXLAN with `nolearning` when using EVPN - the control plane populates all FDB entries.
 - FRR's `advertise-all-vni` advertises all locally configured VNIs to BGP peers.
 - EVPN requires iBGP full mesh or a route reflector between all VTEPs; use `lo` as the BGP source for stability.

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: NGINX, URL Rewriting, Regex, Migration, SEO
+Tags: Nginx, URL Rewriting, Regex, Migration, SEO
 
 Description: Learn efficient techniques for rewriting large numbers of URLs with parameters in Nginx, including map directives, regex patterns, and performance optimization strategies.
 
@@ -41,6 +41,7 @@ The most efficient method for large numbers of static URL mappings:
 # /etc/nginx/conf.d/redirects-map.conf
 
 # Simple path-to-path mapping
+
 map $request_uri $new_uri {
     default "";
 

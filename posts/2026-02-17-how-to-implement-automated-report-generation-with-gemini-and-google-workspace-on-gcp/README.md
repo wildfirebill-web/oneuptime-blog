@@ -27,6 +27,7 @@ You need a GCP project with a Google Workspace account. Enable the required APIs
 
 ```bash
 # Enable the APIs for data, AI, and Workspace integration
+
 gcloud services enable \
     bigquery.googleapis.com \
     aiplatform.googleapis.com \

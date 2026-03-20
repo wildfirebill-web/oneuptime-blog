@@ -331,6 +331,7 @@ For services that need different behavior per region:
 
 ```yaml
 # EU-compliant data access
+
 apiVersion: security.istio.io/v1
 kind: AuthorizationPolicy
 metadata:

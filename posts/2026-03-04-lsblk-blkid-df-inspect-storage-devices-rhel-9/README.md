@@ -267,6 +267,7 @@ df -P
 
 ```bash
 # See the device tree
+
 lsblk /dev/sdb
 
 # Get filesystem details

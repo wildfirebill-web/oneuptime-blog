@@ -38,6 +38,7 @@ To grade your code, specify a profile when running ansible-lint.
 
 ```bash
 # Check your code against the production profile (strictest)
+
 ansible-lint -p production playbook.yml
 
 # Check against the basic profile (more lenient)

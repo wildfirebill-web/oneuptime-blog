@@ -22,6 +22,7 @@ You can enable them in `ansible.cfg`:
 
 ```ini
 # Enable all three profiling callbacks
+
 [defaults]
 callbacks_enabled = profile_tasks, profile_roles, timer
 ```

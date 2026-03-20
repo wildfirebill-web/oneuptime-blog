@@ -20,6 +20,7 @@ The most universal method works on any platform with Python.
 
 ```bash
 # Install podman-compose using pip
+
 pip3 install podman-compose
 
 # Verify the installation

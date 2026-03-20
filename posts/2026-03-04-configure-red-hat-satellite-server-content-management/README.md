@@ -47,6 +47,7 @@ Then upload it via the Satellite CLI:
 
 ```bash
 # Upload the subscription manifest
+
 sudo hammer subscription upload \
     --organization "MyOrganization" \
     --file /path/to/manifest.zip

@@ -18,6 +18,7 @@ The `command=` option in `~/.ssh/authorized_keys` restricts what command runs wh
 
 ```bash
 # Edit authorized_keys for the user
+
 sudo nano /home/deployuser/.ssh/authorized_keys
 
 # Normal key entry:

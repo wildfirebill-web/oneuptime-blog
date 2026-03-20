@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: Docker, IPv6, Proxy, HTTP Proxy, HTTPS Proxy, Environment Variables
 
-Description: Configure Docker containers and the Docker daemon to use an HTTP/HTTPS proxy for IPv6 outbound connections, set proxy environment variables for builds and runtime, and handle proxy bypass for local IPv6 addresses.
+Description: Configure Docker containers and the Docker daemon to use an HTTP/HTTPS proxy for IPv6 outbound connections, set proxy environment variables for builds and runtime, and handle proxy bypass for...
 
 ## Introduction
 
@@ -28,6 +28,7 @@ Docker supports HTTP/HTTPS proxy configuration for both the Docker daemon (for p
 
 ```bash
 # Method 2: systemd drop-in override
+
 sudo mkdir -p /etc/systemd/system/docker.service.d/
 sudo tee /etc/systemd/system/docker.service.d/proxy.conf << 'EOF'
 [Service]
@@ -91,7 +92,7 @@ services:
 ## Proxy for Docker Builds (Build-Time)
 
 ```dockerfile
-# Dockerfile — pass proxy settings during build
+# Dockerfile - pass proxy settings during build
 FROM ubuntu:22.04
 
 ARG HTTP_PROXY
@@ -139,4 +140,4 @@ docker run --rm \
 
 ## Conclusion
 
-Configure Docker daemon proxy settings in `/etc/docker/daemon.json` under `"proxies"` (Docker 23+) or via systemd environment variables. Pass `HTTP_PROXY`, `HTTPS_PROXY`, and `NO_PROXY` to containers through `-e` flags or `environment` in Compose. Include IPv6 loopback (`::1`), ULA ranges (`fd00::/8`), and your Docker network subnets in `NO_PROXY` to prevent proxying internal container-to-container traffic. Both uppercase and lowercase proxy environment variable names are supported by different tools — provide both forms for maximum compatibility.
+Configure Docker daemon proxy settings in `/etc/docker/daemon.json` under `"proxies"` (Docker 23+) or via systemd environment variables. Pass `HTTP_PROXY`, `HTTPS_PROXY`, and `NO_PROXY` to containers through `-e` flags or `environment` in Compose. Include IPv6 loopback (`::1`), ULA ranges (`fd00::/8`), and your Docker network subnets in `NO_PROXY` to prevent proxying internal container-to-container traffic. Both uppercase and lowercase proxy environment variable names are supported by different tools - provide both forms for maximum compatibility.

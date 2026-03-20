@@ -278,6 +278,7 @@ Check if your timeouts and retries are firing:
 
 ```bash
 # Look for 504 (timeout) responses
+
 istio_requests_total{
   destination_service="api.slow-service.com",
   response_code="504"

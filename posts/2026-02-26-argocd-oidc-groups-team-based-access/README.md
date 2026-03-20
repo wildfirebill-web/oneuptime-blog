@@ -264,6 +264,7 @@ Use `argocd admin` commands to test RBAC policies:
 
 ```bash
 # Test if a user/group has a specific permission
+
 argocd admin settings rbac can role:developer sync applications 'staging/*' \
   --policy-file /path/to/policy.csv
 ```

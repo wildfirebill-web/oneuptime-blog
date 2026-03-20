@@ -191,6 +191,7 @@ StatefulSets use PersistentVolumeClaims for stable storage. The sidecar doesn't 
 
 ```bash
 # Check what volumes the sidecar adds
+
 kubectl get pod my-db-0 -n database -o jsonpath='{.spec.volumes[*].name}'
 ```
 

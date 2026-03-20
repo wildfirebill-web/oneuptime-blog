@@ -16,6 +16,7 @@ Install the DigitalOcean Ansible collection:
 
 ```bash
 # Install the community DigitalOcean collection
+
 ansible-galaxy collection install community.digitalocean
 
 # Install the required Python library

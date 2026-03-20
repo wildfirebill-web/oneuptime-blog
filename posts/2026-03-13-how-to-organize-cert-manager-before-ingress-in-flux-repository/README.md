@@ -47,6 +47,7 @@ Define a Kustomization that installs cert-manager using a HelmRelease:
 
 ```yaml
 # clusters/production/infrastructure.yaml
+
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
 metadata:

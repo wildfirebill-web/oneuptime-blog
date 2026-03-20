@@ -29,6 +29,7 @@ Review all existing IP reservations to understand what is being protected and fo
 
 ```bash
 # List all current IP reservations
+
 calicoctl get ipreservation -o yaml
 
 # Check which IPs in the reservations are currently in use vs. truly reserved

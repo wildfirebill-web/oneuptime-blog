@@ -29,6 +29,7 @@ These are just the GPU costs - you also save on the underlying VM instance. For 
 
 ```bash
 # Create a preemptible VM with a T4 GPU
+
 gcloud compute instances create ml-trainer \
     --zone=us-central1-a \
     --machine-type=n1-standard-8 \

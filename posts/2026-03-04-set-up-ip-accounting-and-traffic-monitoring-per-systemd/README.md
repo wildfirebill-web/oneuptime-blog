@@ -22,6 +22,7 @@ Enable IP accounting for a service:
 
 ```bash
 # Create a drop-in to enable IP accounting
+
 sudo mkdir -p /etc/systemd/system/nginx.service.d/
 sudo tee /etc/systemd/system/nginx.service.d/accounting.conf <<EOF
 [Service]

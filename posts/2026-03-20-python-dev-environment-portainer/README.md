@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Python, Development Environment, Docker, Virtual Environment, Dev Container
+Tags: Portainer, Python, Development Environments, Docker, Virtual Environments, Dev Containers
 
 Description: Learn how to set up a Python development environment with hot-reload and debugging support in a container managed by Portainer.
 
@@ -42,8 +42,9 @@ volumes:
 
 ## Requirements
 
-```
+```text
 # src/requirements.txt
+
 fastapi
 uvicorn[standard]
 debugpy
@@ -64,7 +65,7 @@ app = FastAPI()
 
 @app.get("/")
 async def root():
-    # Edit this and save — hot-reload picks it up automatically
+    # Edit this and save - hot-reload picks it up automatically
     return {"message": "Hello, Python dev environment!"}
 ```
 

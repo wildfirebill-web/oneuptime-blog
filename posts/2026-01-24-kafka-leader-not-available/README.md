@@ -75,6 +75,7 @@ The most straightforward cause is when the leader broker is down or unreachable.
 
 ```bash
 # Check broker status using Kafka tools
+
 # This command lists all brokers in the cluster
 kafka-broker-api-versions.sh --bootstrap-server localhost:9092
 

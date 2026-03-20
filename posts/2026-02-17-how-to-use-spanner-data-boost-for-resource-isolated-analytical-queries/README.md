@@ -38,6 +38,7 @@ Using gcloud to run a Data Boost query:
 
 ```bash
 # Run a query using Data Boost through gcloud
+
 # The --data-boost flag routes the query to isolated compute
 gcloud spanner databases execute-sql my-database \
   --instance=my-instance \

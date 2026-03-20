@@ -291,6 +291,7 @@ Equivalent configurations for Juniper devices.
 
 ```junos
 # Configure OSPF with multiple areas
+
 protocols {
     ospf {
         # Set reference bandwidth for cost calculation

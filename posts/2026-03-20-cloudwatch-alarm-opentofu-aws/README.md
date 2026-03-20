@@ -1,4 +1,4 @@
-# How to Create a CloudWatch Alarm with OpenTofu on AWS
+# How to Create a CloudWatch Alarm with OpenTofu on AWS - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -148,6 +148,7 @@ resource "aws_cloudwatch_metric_alarm" "rds_storage_low" {
 
 ```hcl
 # Composite alarm fires when both CPU and memory are high
+
 resource "aws_cloudwatch_composite_alarm" "high_load" {
   alarm_name = "high-load-composite"
   alarm_rule = "ALARM(${aws_cloudwatch_metric_alarm.ec2_cpu_high.alarm_name}) AND ALARM(${aws_cloudwatch_metric_alarm.rds_storage_low.alarm_name})"

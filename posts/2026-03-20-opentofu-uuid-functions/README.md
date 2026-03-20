@@ -1,11 +1,10 @@
----
-title: "How to Use uuid() and uuidv5() in OpenTofu"
-author: nawazdhandala
-tags: opentofu, terraform, iac, functions
-description: "Learn how to use the uuid() and uuidv5() functions in OpenTofu to generate unique identifiers for your resources."
----
-
 # How to Use uuid() and uuidv5() in OpenTofu
+
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
+
+Tags: OpenTofu, Terraform, IaC, Functions
+
+Description: Learn how to use the uuid() and uuidv5() functions in OpenTofu to generate unique identifiers for your resources.
 
 OpenTofu provides two UUID generation functions: `uuid()` for random (version 4) UUIDs and `uuidv5()` for deterministic (version 5) UUIDs based on a namespace and name. Understanding when to use each is important for infrastructure code.
 
@@ -27,9 +26,10 @@ Generates a random UUID (version 4) each time it's called:
 
 ```hcl
 # CAUTION: This changes every tofu plan!
+
 resource "aws_instance" "app" {
   tags = {
-    UniqueID = uuid()  # Changes every plan — may be OK for tags
+    UniqueID = uuid()  # Changes every plan - may be OK for tags
   }
 }
 
@@ -130,7 +130,7 @@ output "resource_ids" {
 
 ## When to Use Each
 
-```
+```text
 uuid():
   - One-time deployment identifiers (applied once, not replanned)
   - Test resource names that should be unique per run

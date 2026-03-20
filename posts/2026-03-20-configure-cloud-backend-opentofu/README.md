@@ -41,6 +41,7 @@ provider "aws" {
 
 ```bash
 # Option 1: Interactive login
+
 tofu login
 
 # This opens a browser, prompts for a Terraform Cloud token,
@@ -187,7 +188,7 @@ curl -X POST \
 
 ## .terraformignore for Cloud Backend
 
-```
+```text
 # .terraformignore - exclude files from cloud backend uploads
 .git/
 .terraform/

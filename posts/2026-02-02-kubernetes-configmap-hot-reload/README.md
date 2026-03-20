@@ -568,6 +568,7 @@ Python applications can leverage the watchdog library for file system monitoring
 
 ```python
 # config_watcher.py
+
 # ConfigMap hot-reload implementation for Python applications
 # Uses watchdog for cross-platform file system monitoring
 

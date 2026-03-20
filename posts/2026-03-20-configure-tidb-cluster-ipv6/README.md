@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: TiDB, IPv6, Distributed Database, MySQL-compatible, TiKV, PD, Cluster
+Tags: TiDB, IPv6, Distributed Database, MySQL-compatible, Tikv, PD, Cluster
 
 Description: Configure a TiDB distributed database cluster with IPv6 addresses for PD, TiKV, and TiDB components, enabling MySQL-compatible distributed SQL over IPv6 networks.
 
@@ -12,7 +12,7 @@ TiDB is a distributed, MySQL-compatible database. Its cluster has three main com
 
 ## TiDB Cluster Components with IPv6
 
-```
+```text
 TiDB (SQL)          TiKV (Storage)      PD (Metadata)
 [2001:db8::1]:4000  [2001:db8::2]:20160 [2001:db8::3]:2379
 MySQL-compatible    Raft consensus      Cluster metadata
@@ -22,6 +22,7 @@ MySQL-compatible    Raft consensus      Cluster metadata
 
 ```bash
 # Install TiUP (TiDB deployment tool)
+
 curl --proto '=https' --tlsv1.2 -sSf https://tiup-mirrors.pingcap.com/install.sh | sh
 source ~/.bashrc
 
@@ -176,4 +177,4 @@ sudo ip6tables -A INPUT -p tcp --dport 20180 -j ACCEPT # TiKV status
 sudo ip6tables-save > /etc/ip6tables/rules.v6
 ```
 
-TiDB's support for IPv6 in all its components — PD, TiKV, and TiDB server — enables deploying a fully distributed, MySQL-compatible database cluster on modern IPv6 infrastructure.
+TiDB's support for IPv6 in all its components - PD, TiKV, and TiDB server - enables deploying a fully distributed, MySQL-compatible database cluster on modern IPv6 infrastructure.

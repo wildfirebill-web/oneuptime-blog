@@ -31,6 +31,7 @@ Set up OpenStack projects, networks, and security groups that mirror your produc
 
 ```bash
 # Create a test project with quotas matching production
+
 openstack project create calico-net-test
 openstack quota set calico-net-test --instances 20 --cores 40 --ram 81920
 

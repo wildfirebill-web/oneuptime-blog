@@ -12,7 +12,7 @@ Multiple governments have issued IPv6 deployment mandates. The US federal govern
 
 ## US Federal IPv6 Mandate (OMB)
 
-```
+```text
 Key OMB IPv6 Memoranda:
 
 1. M-05-22 (2005): "Transition Planning for Internet Protocol Version 6"
@@ -32,7 +32,7 @@ Key OMB IPv6 Memoranda:
 
 ## Compliance Requirements for Federal Agencies
 
-```
+```bash
 OMB M-21-07 Requirements:
 
 1. Public-Facing Services:
@@ -60,6 +60,7 @@ OMB M-21-07 Requirements:
 ```bash
 #!/bin/bash
 # federal_ipv6_compliance_check.sh
+
 # Check federal agency IPv6 compliance status
 
 AGENCY_DOMAIN="agency.gov"
@@ -98,7 +99,7 @@ echo "=== Check Complete ==="
 
 ## Contractor IPv6 Requirements
 
-```
+```text
 Federal contractors must comply with:
 
 1. FISMA (Federal Information Security Modernization Act):
@@ -121,7 +122,7 @@ NIST SP 500-267B (USGv6 Profile)."
 
 ## Reporting and Documentation
 
-```
+```text
 Federal Agency IPv6 Reporting Requirements:
 
 1. Quarterly FISMA Metrics:
@@ -141,7 +142,7 @@ Federal Agency IPv6 Reporting Requirements:
 
 ## International IPv6 Mandates
 
-```
+```text
 Other Government IPv6 Requirements:
 
 European Union:

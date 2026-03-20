@@ -57,6 +57,7 @@ The most essential tool for DNSSEC debugging. Available on most Unix systems:
 
 ```bash
 # Basic DNSSEC query
+
 dig example.com +dnssec
 
 # Query with full validation chain

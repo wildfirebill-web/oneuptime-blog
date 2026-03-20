@@ -267,6 +267,7 @@ from flask import Flask, request as flask_request
 app = Flask(__name__)
 
 # Pool of 5 connections to the external service
+
 connection_pool = queue.Queue(maxsize=5)
 for _ in range(5):
     session = requests.Session()

@@ -23,6 +23,7 @@ Use database compaction when:
 
 ```bash
 # Check the current size of portainer.db
+
 docker run --rm \
   -v portainer_data:/data \
   alpine ls -lh /data/portainer.db
@@ -170,7 +171,7 @@ fi
 ## Step 7: Use with Docker Compose
 
 ```yaml
-# maintenance-compact.yml — run separately for maintenance
+# maintenance-compact.yml - run separately for maintenance
 version: "3.8"
 services:
   portainer-compact:
@@ -209,7 +210,7 @@ docker run --rm \
   alpine cp /data/portainer.db /tmp/portainer.db.backup
 
 # 2. Compaction is NOT the same as clearing data
-# It only reclaims free space — it doesn't delete any active data
+# It only reclaims free space - it doesn't delete any active data
 
 # 3. Portainer MUST be stopped during compaction
 # Running compact-db on a running database can corrupt it
@@ -220,4 +221,4 @@ docker run --rm \
 
 ## Conclusion
 
-The `--compact-db` flag is a simple maintenance operation that reclaims wasted space in Portainer's BoltDB database without affecting any active data. Run it monthly or whenever the database file grows unexpectedly large. Always stop Portainer, create a backup, run compaction, verify the results, then restart — the whole process takes under 5 minutes and can recover significant disk space in active Portainer installations.
+The `--compact-db` flag is a simple maintenance operation that reclaims wasted space in Portainer's BoltDB database without affecting any active data. Run it monthly or whenever the database file grows unexpectedly large. Always stop Portainer, create a backup, run compaction, verify the results, then restart - the whole process takes under 5 minutes and can recover significant disk space in active Portainer installations.

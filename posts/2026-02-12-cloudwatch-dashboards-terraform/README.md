@@ -16,6 +16,7 @@ CloudWatch dashboards in Terraform are defined as JSON inside the `aws_cloudwatc
 
 ```hcl
 # Basic CloudWatch dashboard
+
 resource "aws_cloudwatch_dashboard" "main" {
   dashboard_name = "${var.environment}-infrastructure"
 

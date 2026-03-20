@@ -2,9 +2,9 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Portainer, Terraform, Data Sources, Infrastructure, DevOps
+Tags: Portainer, Terraform, Data Source, Infrastructure, DevOps
 
-Description: Learn how to use Terraform data sources to read and reference existing Portainer resources — environments, users, teams, and stacks — without managing them directly.
+Description: Learn how to use Terraform data sources to read and reference existing Portainer resources - environments, users, teams, and stacks - without managing them directly.
 
 ## Introduction
 
@@ -19,13 +19,14 @@ Terraform data sources let you read information about existing resources without
 ## Understanding Data Sources vs Resources
 
 ```hcl
-# Resource — Terraform creates and manages this
+# Resource - Terraform creates and manages this
+
 resource "portainer_environment" "production" {
   name = "production"
   ...
 }
 
-# Data source — Terraform reads this, doesn't manage it
+# Data source - Terraform reads this, doesn't manage it
 data "portainer_environment" "production" {
   name = "production"  # Read existing environment named "production"
 }
@@ -34,7 +35,7 @@ data "portainer_environment" "production" {
 ## Step 1: Read an Existing Environment
 
 ```hcl
-# data.tf — Read environments created elsewhere
+# data.tf - Read environments created elsewhere
 
 # Read environment by name
 data "portainer_environment" "production" {
@@ -127,7 +128,7 @@ output "harbor_registry_id" {
 Use data sources to share resources across Terraform modules:
 
 ```hcl
-# Module A: portainer-base — Creates foundational resources
+# Module A: portainer-base - Creates foundational resources
 # outputs.tf in module A
 output "production_env_id" {
   value = portainer_environment.production.id
@@ -139,7 +140,7 @@ output "devops_team_id" {
 ```
 
 ```hcl
-# Module B: portainer-apps — Deploys applications
+# Module B: portainer-apps - Deploys applications
 # Reads state from Module A using remote state data source
 
 data "terraform_remote_state" "portainer_base" {
@@ -163,7 +164,7 @@ resource "portainer_stack" "myapp" {
 
 ```hcl
 # Read all environments and their attributes
-data "portainer_environments" "all" {}  # If supported — returns list
+data "portainer_environments" "all" {}  # If supported - returns list
 
 output "all_environment_ids" {
   value = {
@@ -198,7 +199,7 @@ resource "portainer_stack" "app" {
 ## Step 8: Complete Example
 
 ```hcl
-# main.tf — Use data sources to deploy into existing infrastructure
+# main.tf - Use data sources to deploy into existing infrastructure
 
 # Read infrastructure created by another team
 data "portainer_environment" "prod" { name = "production" }

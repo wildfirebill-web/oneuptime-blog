@@ -34,6 +34,7 @@ Start by creating a job in the AWS Snow Family console or CLI:
 
 ```bash
 # Create an import job
+
 aws snowball create-job \
   --job-type IMPORT \
   --resources '{

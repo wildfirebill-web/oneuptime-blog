@@ -39,6 +39,7 @@ Here is a simple view.
 
 ```python
 # myapp/views.py - API views for our Django application
+
 from django.http import JsonResponse
 from django.views import View
 import os

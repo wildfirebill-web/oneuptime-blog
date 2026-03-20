@@ -32,6 +32,7 @@ RESULT_FILE="$RESULTS_DIR/${LABEL}-${TIMESTAMP}.json"
 mkdir -p "$RESULTS_DIR"
 
 # Capture system state before run
+
 CPUS=$(nproc)
 MEM_TOTAL=$(free -m | awk '/Mem:/ {print $2}')
 MEM_FREE=$(free -m | awk '/Mem:/ {print $4}')

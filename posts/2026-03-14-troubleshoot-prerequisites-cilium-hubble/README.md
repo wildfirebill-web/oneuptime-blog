@@ -26,6 +26,7 @@ Kernel problems are the hardest to diagnose because they often cause silent fail
 
 ```bash
 # Check kernel version across all nodes
+
 kubectl get nodes -o jsonpath='{range .items[*]}{.metadata.name}{"\t"}{.status.nodeInfo.kernelVersion}{"\n"}{end}'
 
 # Check for heterogeneous kernel versions (can cause inconsistent behavior)

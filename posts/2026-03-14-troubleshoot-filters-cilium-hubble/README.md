@@ -29,6 +29,7 @@ The most common complaint is that a filter returns no flows:
 
 ```bash
 # Step 1: Verify Hubble is working at all (no filters)
+
 hubble observe --last 10
 # If this returns nothing, the issue is Hubble itself, not filters
 

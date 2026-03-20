@@ -71,6 +71,7 @@ run "scaled_deployment" {
 
 ```bash
 # Pass a single variable
+
 tofu test -var="environment=staging"
 
 # Pass multiple variables

@@ -358,6 +358,7 @@ You can also filter tests from the command line.
 
 ```bash
 # Run tests matching a pattern
+
 bun test --test-name-pattern "Calculator"
 
 # Run a specific test file

@@ -65,6 +65,7 @@ logging origin-id hostname
 
 ```text
 # Configure syslog on a Juniper device
+
 set system syslog host 10.0.1.100 any info
 set system syslog host 10.0.1.100 port 514
 set system syslog host 10.0.1.100 facility-override local0

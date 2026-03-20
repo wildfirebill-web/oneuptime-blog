@@ -1,4 +1,4 @@
-# How to Deploy Vikunja (Task Manager) via Portainer
+# How to Deploy Vikunja (Task Manager) via Portainer - Task Manager
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -71,11 +71,11 @@ After deployment, access the application at `http://host:80` and complete the in
 
 This application provides:
 
-- **Kanban boards / Project tracking** — visual workflow management
-- **Team collaboration** — assign tasks and track progress
-- **Labels and categories** — organize work by type or priority
-- **Due dates and deadlines** — time-based task management
-- **Comments and attachments** — rich context on each task
+- **Kanban boards / Project tracking** - visual workflow management
+- **Team collaboration** - assign tasks and track progress
+- **Labels and categories** - organize work by type or priority
+- **Due dates and deadlines** - time-based task management
+- **Comments and attachments** - rich context on each task
 
 ## Backup and Restore
 
@@ -83,6 +83,7 @@ Backup the application data:
 
 ```bash
 # Backup PostgreSQL database
+
 docker exec postgres_container pg_dump -U app appdb > backup-$(date +%Y%m%d).sql
 
 # Backup application files

@@ -511,6 +511,7 @@ Document which headers exist and their possible values. Selectors depend on cons
 
 ```yaml
 # message-headers.yaml
+
 headers:
   type:
     description: Message type

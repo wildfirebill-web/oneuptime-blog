@@ -4,7 +4,7 @@ Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: IPv6, Privacy Extensions, Android, Mobile, SLAAC, Security
 
-Description: A guide to understanding and verifying IPv6 privacy extensions on Android devices, including address generation behavior, per-network randomization, and privacy implications of Android's IPv6 implementation.
+Description: A guide to understanding and verifying IPv6 privacy extensions on Android devices, including address generation behavior, per-network randomization, and privacy implications of Android's IPv6...
 
 Android has included IPv6 privacy extensions support since Android 4.0 (Ice Cream Sandwich). Modern Android (8.0+) generates a new random interface ID each time the device connects to a network, providing strong privacy protection against cross-network tracking.
 
@@ -12,7 +12,7 @@ Android has included IPv6 privacy extensions support since Android 4.0 (Ice Crea
 
 Android uses a stricter privacy model than RFC 8981:
 
-```
+```text
 Android 7.0 and earlier:
   - Enabled RFC 4941 privacy extensions
   - Generated temporary addresses that rotate periodically
@@ -28,9 +28,10 @@ Android 8.0 (Oreo) and later:
 ## Checking IPv6 Addresses on Android
 
 ```bash
-# Via ADB (Android Debug Bridge) — requires USB debugging enabled
+# Via ADB (Android Debug Bridge) - requires USB debugging enabled
 
 # Connect phone via USB and enable USB debugging
+
 adb shell ip -6 addr show
 
 # Filter for global addresses
@@ -179,4 +180,4 @@ adb shell ip -6 addr show wg0    # WireGuard
 adb shell ip -6 addr show | grep -E "scope global"
 ```
 
-Android's strong IPv6 privacy model — generating a new random interface ID for each network connection — provides better privacy than the RFC 8981 temporary address model. Users do not need to configure anything; privacy is enabled by default from Android 8.0 onward. The address visible to websites and services changes with every Wi-Fi reconnection, making persistent cross-network tracking via IPv6 address infeasible.
+Android's strong IPv6 privacy model - generating a new random interface ID for each network connection - provides better privacy than the RFC 8981 temporary address model. Users do not need to configure anything; privacy is enabled by default from Android 8.0 onward. The address visible to websites and services changes with every Wi-Fi reconnection, making persistent cross-network tracking via IPv6 address infeasible.

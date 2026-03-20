@@ -26,6 +26,7 @@ Run this PowerShell script on the Windows target:
 
 ```powershell
 # Enable WinRM with HTTPS listener
+
 winrm quickconfig -force
 
 # Or use the Ansible-provided setup script

@@ -35,6 +35,7 @@ For Linux VMs:
 
 ```bash
 # Install the Network Watcher extension on a Linux VM
+
 az vm extension set \
   --resource-group myResourceGroup \
   --vm-name myLinuxVM \

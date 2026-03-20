@@ -53,6 +53,7 @@ You can also add info fields using the ArgoCD CLI:
 
 ```bash
 # Add an info field to an existing application
+
 argocd app set payment-service \
   --info "Owner=payments-team" \
   --info "Tier=Tier 1 - Business Critical" \

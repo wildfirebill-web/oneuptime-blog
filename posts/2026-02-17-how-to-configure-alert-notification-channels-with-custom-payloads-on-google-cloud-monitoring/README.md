@@ -28,6 +28,7 @@ Cloud Monitoring supports several built-in notification channel types:
 
 ```bash
 # Create a Slack notification channel using gcloud
+
 gcloud beta monitoring channels create \
   --display-name="Engineering Slack" \
   --type=slack \

@@ -24,6 +24,7 @@ Add JDWP parameters to your Java application's startup command:
 
 ```dockerfile
 # Dockerfile
+
 FROM openjdk:17-jdk-slim
 
 WORKDIR /app

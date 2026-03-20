@@ -22,6 +22,7 @@ Parameter Store supports three types:
 
 ```bash
 # Create a String parameter
+
 aws ssm put-parameter \
   --name "/myapp/config/database-host" \
   --type String \

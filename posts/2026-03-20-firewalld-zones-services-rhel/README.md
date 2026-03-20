@@ -12,7 +12,7 @@ firewalld is the default firewall management tool on RHEL, CentOS, and Fedora. I
 
 firewalld zones define the trust level for network connections:
 
-```
+```text
 Zone         Default Behavior
 -----------  -----------------------------------------------
 drop         Drop all incoming; allow outgoing
@@ -30,6 +30,7 @@ internal     Same as home
 
 ```bash
 # Check firewalld status
+
 sudo systemctl status firewalld
 
 # Start and enable

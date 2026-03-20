@@ -23,6 +23,7 @@ A registry mirror is a copy or proxy of a container registry. Instead of pulling
 
 ```yaml
 # /etc/rancher/rke2/registries.yaml - Docker Hub mirror
+
 mirrors:
   # Mirror Docker Hub pulls
   "docker.io":

@@ -22,6 +22,7 @@ To enable scale-to-zero, simply set `min_replica_count` to 0 when deploying your
 
 ```python
 # scale_to_zero.py
+
 # Deploy a model with scale-to-zero enabled
 
 from google.cloud import aiplatform

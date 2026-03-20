@@ -32,6 +32,7 @@ Start with the basics. Does the IAM principal (user, role, or service) have the 
 
 ```bash
 # Check what S3 permissions a user has
+
 aws iam simulate-principal-policy \
   --policy-source-arn arn:aws:iam::123456789012:user/myuser \
   --action-names s3:GetObject s3:PutObject s3:ListBucket \

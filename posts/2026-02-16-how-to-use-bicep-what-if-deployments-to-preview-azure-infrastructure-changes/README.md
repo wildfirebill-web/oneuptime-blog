@@ -30,6 +30,7 @@ The simplest way to use what-if is from the Azure CLI.
 
 ```bash
 # What-if for a resource group deployment
+
 az deployment group what-if \
   --resource-group rg-app-prod \
   --template-file main.bicep \
@@ -103,7 +104,7 @@ This works for Bicep templates that use `targetScope = 'subscription'` and creat
 
 What-if is most valuable when it is part of your deployment pipeline. Here is how to add it to a GitHub Actions workflow.
 
-```yaml
+````yaml
 # .github/workflows/deploy.yml
 name: Deploy Infrastructure
 
@@ -148,9 +149,9 @@ jobs:
         with:
           script: |
             const output = `### Bicep What-If Results
-            \`\`\`
+            ```
             ${{ steps.whatif.outputs.result }}
-            \`\`\`
+            ```
             `;
             github.rest.issues.createComment({
               issue_number: context.issue.number,
@@ -186,7 +187,7 @@ jobs:
             --resource-group rg-app-prod \
             --template-file infrastructure/main.bicep \
             --parameters infrastructure/parameters.prod.json
-```
+````
 
 This workflow runs what-if on every pull request and posts the results as a comment, giving reviewers clear visibility into what will change. The actual deployment only happens on merge to main.
 

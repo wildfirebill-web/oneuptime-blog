@@ -32,6 +32,7 @@ First, find out what SANs the current certificate contains:
 
 ```bash
 # If the cert is in a Kubernetes secret
+
 kubectl get secret otel-collector-tls -n observability -o jsonpath='{.data.tls\.crt}' | \
   base64 -d | openssl x509 -text -noout | grep -A1 "Subject Alternative Name"
 

@@ -17,6 +17,7 @@ sudo apt update
 sudo apt install gnupg2 gnupg-agent scdaemon pcscd pcsc-tools
 
 # For YubiKey-specific management
+
 sudo apt install yubikey-manager
 
 # Verify GPG version (2.1+ required for smartcard support)

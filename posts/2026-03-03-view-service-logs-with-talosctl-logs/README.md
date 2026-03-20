@@ -18,6 +18,7 @@ Before diving into log commands, it helps to know what services Talos runs. Each
 
 ```bash
 # List all services running on a Talos node
+
 talosctl -n 192.168.1.10 services
 ```
 

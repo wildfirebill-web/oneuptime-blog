@@ -8,12 +8,13 @@ Description: Learn how to configure OpenTofu to authenticate with HashiCorp Vaul
 
 ## Introduction
 
-Vault's AWS auth method lets OpenTofu authenticate using existing AWS credentials — either IAM role credentials (iam type) or EC2 instance identity documents (ec2 type). This eliminates the need for separate Vault credentials in AWS-hosted CI/CD systems and EC2-based runners.
+Vault's AWS auth method lets OpenTofu authenticate using existing AWS credentials - either IAM role credentials (iam type) or EC2 instance identity documents (ec2 type). This eliminates the need for separate Vault credentials in AWS-hosted CI/CD systems and EC2-based runners.
 
 ## Setting Up AWS Auth in Vault
 
 ```hcl
 # Enable AWS auth method
+
 resource "vault_auth_backend" "aws" {
   type = "aws"
   path = "aws"
@@ -146,4 +147,4 @@ provider "vault" {
 
 ## Conclusion
 
-Vault's AWS auth method is the most seamless way to authenticate OpenTofu on AWS infrastructure. When running in GitHub Actions with OIDC, the pipeline assumes an IAM role which is bound to a Vault role — no long-lived secrets to rotate. The `auth_login_aws` block in the Vault provider handles the STS `GetCallerIdentity` signing automatically.
+Vault's AWS auth method is the most seamless way to authenticate OpenTofu on AWS infrastructure. When running in GitHub Actions with OIDC, the pipeline assumes an IAM role which is bound to a Vault role - no long-lived secrets to rotate. The `auth_login_aws` block in the Vault provider handles the STS `GetCallerIdentity` signing automatically.

@@ -21,6 +21,7 @@ Check your PowerShell version.
 
 ```bash
 # Check PowerShell version
+
 $PSVersionTable.PSVersion
 ```
 

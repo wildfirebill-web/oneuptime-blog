@@ -13,7 +13,7 @@ IPv6 is supported on most modern TP-Link Archer routers:
 - Archer C7, C9, C2300
 - Deco M4, M5, X60, XE75
 
-Older models may have limited IPv6 support — update firmware first.
+Older models may have limited IPv6 support - update firmware first.
 
 ## Accessing the Admin Interface
 
@@ -44,7 +44,7 @@ For most home users, select **Auto Detect** or **Dynamic IPv6**.
 
 If using Dynamic IPv6 (DHCPv6):
 
-```
+```text
 WAN Type: Dynamic IPv6
 
 Connection Type:
@@ -60,7 +60,7 @@ Prefix Delegation:
 
 In the LAN IPv6 settings:
 
-```
+```text
 LAN IPv6 Assignment:
   Mode: SLAAC (Stateless Address Auto-Configuration)
 
@@ -76,7 +76,7 @@ DNS Assignment:
 
 After saving, check the IPv6 Status page:
 
-```
+```text
 Expected output:
   WAN IPv6 Status: Connected
   WAN IPv6 Address: 2001:xxxx:xxxx:1::1/64
@@ -105,6 +105,7 @@ From a connected device:
 
 ```bash
 # Windows
+
 ping -6 ipv6.google.com
 
 # Mac/Linux
@@ -118,7 +119,7 @@ ping6 ipv6.google.com
 
 **Auto Detect says "Not Connected":**
 - Manually select Dynamic IPv6 instead of Auto Detect
-- Verify ISP provides IPv6 — check at `test-ipv6.com` before router config
+- Verify ISP provides IPv6 - check at `test-ipv6.com` before router config
 - Reboot modem (especially if it's a separate modem/ONT)
 
 **LAN devices don't get IPv6:**

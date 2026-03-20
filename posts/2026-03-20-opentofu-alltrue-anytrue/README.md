@@ -1,11 +1,10 @@
----
-title: "How to Use alltrue() and anytrue() in OpenTofu"
-author: nawazdhandala
-tags: opentofu, terraform, iac, functions
-description: "Learn how to use the alltrue() and anytrue() functions in OpenTofu to evaluate boolean conditions across a collection."
----
-
 # How to Use alltrue() and anytrue() in OpenTofu
+
+Author: [nawazdhandala](https://www.github.com/nawazdhandala)
+
+Tags: OpenTofu, Terraform, IaC, Functions
+
+Description: Learn how to use the alltrue() and anytrue() functions in OpenTofu to evaluate boolean conditions across a collection.
 
 `alltrue()` returns true if all elements in a list are true, and `anytrue()` returns true if at least one element is true. They're commonly used to validate conditions across collections.
 
@@ -173,4 +172,4 @@ locals {
 
 ## Conclusion
 
-`alltrue()` and `anytrue()` are the programmatic equivalent of logical AND and OR across a list. Use them with `for` expressions to evaluate conditions across collections — validating that all resources meet requirements, checking whether any security rules violate policies, or testing feature flag combinations. They're particularly powerful in `precondition` and `postcondition` blocks for infrastructure validation.
+`alltrue()` and `anytrue()` are the programmatic equivalent of logical AND and OR across a list. Use them with `for` expressions to evaluate conditions across collections - validating that all resources meet requirements, checking whether any security rules violate policies, or testing feature flag combinations. They're particularly powerful in `precondition` and `postcondition` blocks for infrastructure validation.

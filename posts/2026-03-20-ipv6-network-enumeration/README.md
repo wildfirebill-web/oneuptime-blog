@@ -14,6 +14,7 @@ Before finding individual hosts, identify the IPv6 prefixes in use:
 
 ```bash
 # Check BGP routing table for the target organization's prefixes
+
 # Use public BGP data sources
 whois -h whois.radb.net -- '-i origin AS12345' | grep ^route6
 
@@ -150,4 +151,4 @@ sudo tcpdump -i eth0 -n ip6 2>/dev/null | \
   grep -v '^$' | sort | uniq -c | sort -rn > passive-hosts.txt
 ```
 
-IPv6 network enumeration requires a multi-source approach — combining DNS intelligence, passive traffic observation, and targeted active probing to build a comprehensive host inventory for authorized security assessments.
+IPv6 network enumeration requires a multi-source approach - combining DNS intelligence, passive traffic observation, and targeted active probing to build a comprehensive host inventory for authorized security assessments.

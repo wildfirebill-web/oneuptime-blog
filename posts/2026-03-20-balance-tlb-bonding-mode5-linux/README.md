@@ -21,6 +21,7 @@ Balance-TLB (Adaptive Transmit Load Balancing, mode 5) distributes outgoing traf
 
 ```bash
 # Load bonding module
+
 modprobe bonding
 
 # Create bond in balance-tlb mode

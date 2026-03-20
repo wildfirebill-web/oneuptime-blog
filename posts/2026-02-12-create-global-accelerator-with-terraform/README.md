@@ -33,6 +33,7 @@ The accelerator itself is straightforward. It gives you two static anycast IP ad
 
 ```hcl
 # Global Accelerator
+
 resource "aws_globalaccelerator_accelerator" "main" {
   name            = "app-accelerator"
   ip_address_type = "IPV4"

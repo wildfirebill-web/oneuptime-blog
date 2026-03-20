@@ -43,6 +43,7 @@ flowchart TD
 
 ```yaml
 # priority-classes.yaml
+
 # System critical - highest priority
 apiVersion: scheduling.k8s.io/v1
 kind: PriorityClass
@@ -264,7 +265,7 @@ preemptionPolicy: Never
 description: "High priority but won't evict running pods"
 ```
 
-## Resource Management with Priority
+Resource Management with Priority
 
 ### Combined with Resource Quotas
 

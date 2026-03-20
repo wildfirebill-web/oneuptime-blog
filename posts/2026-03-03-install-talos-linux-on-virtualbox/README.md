@@ -16,6 +16,7 @@ Install VirtualBox and the required CLI tools:
 
 ```bash
 # Install VirtualBox from https://www.virtualbox.org/wiki/Downloads
+
 # Or on macOS with Homebrew:
 brew install --cask virtualbox
 

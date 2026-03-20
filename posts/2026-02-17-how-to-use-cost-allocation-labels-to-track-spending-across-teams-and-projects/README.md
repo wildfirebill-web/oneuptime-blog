@@ -52,6 +52,7 @@ GCP has specific requirements for labels:
 
 ```bash
 # Add labels when creating a VM
+
 gcloud compute instances create my-vm \
   --zone=us-central1-a \
   --machine-type=e2-standard-2 \

@@ -36,6 +36,7 @@ First, let's push a Helm chart to your ACR instance so ArgoCD has something to p
 
 ```bash
 # Login to ACR
+
 az acr login --name myregistry
 
 # Package your Helm chart

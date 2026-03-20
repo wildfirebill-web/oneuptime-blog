@@ -12,7 +12,7 @@ Description: Understand 6VPE (IPv6 VPN Provider Edge) architecture for deliverin
 
 ## 6VPE Architecture
 
-```
+```text
 6VPE Network Architecture:
 
 Customer A:                          Customer A:
@@ -32,7 +32,7 @@ Customer isolation: VRFs ensure customers see only their own IPv6 routes
 
 ## VPNv6 Address Family
 
-```
+```python
 VPNv6 Route Distinguisher (RD) and Route Target (RT):
 
 Each VPN customer IPv6 prefix has:
@@ -61,7 +61,7 @@ BGP VPNv6 NLRI: RD:IPv6prefix
 
 ## Cisco IOS 6VPE Configuration
 
-```
+```bash
 ! PE Router - 6VPE Configuration
 
 ! IPv4/IPv6 dual-stack loopback for BGP
@@ -117,6 +117,7 @@ router bgp 65000
 # Cisco IOS verification commands:
 
 # Check VPNv6 routes in BGP
+
 show bgp vpnv6 unicast all summary
 show bgp vpnv6 unicast all
 
@@ -142,7 +143,7 @@ traceroute vrf CUSTOMER-A ipv6 2001:db8:site2::10
 
 ## 6VPE vs Standard IPv6 VRF
 
-```
+```text
 Key Differences:
 
 Standard IPv6 VRF (no MPLS):

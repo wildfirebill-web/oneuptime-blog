@@ -68,6 +68,7 @@ First, download and extract Kafka on each server. We will use Kafka 3.6, which i
 
 ```bash
 # Download Kafka (run on all nodes)
+
 wget https://downloads.apache.org/kafka/3.6.1/kafka_2.13-3.6.1.tgz
 
 # Extract the archive

@@ -58,6 +58,7 @@ spec:
 
 ```yaml
 # audit-policy.yaml - capture SA-related events
+
 apiVersion: audit.k8s.io/v1
 kind: Policy
 rules:

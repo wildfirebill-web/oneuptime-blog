@@ -54,6 +54,7 @@ Redis offers two persistence mechanisms:
 # redis.conf
 
 # RDB (snapshotting) - periodic full dumps
+
 # Good for backups, minimal write impact
 save 900 1      # Save if 1 key changed in 900 seconds
 save 300 10     # Save if 10 keys changed in 300 seconds

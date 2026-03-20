@@ -124,6 +124,7 @@ def collect_cluster_metrics(nodes):
     return cluster_metrics
 
 # Collect metrics
+
 nodes = ["redis-node-1:6379", "redis-node-2:6379", "redis-node-3:6379"]
 metrics = collect_cluster_metrics(nodes)
 print(json.dumps(metrics, indent=2))

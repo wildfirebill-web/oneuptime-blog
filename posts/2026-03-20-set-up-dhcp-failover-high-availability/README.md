@@ -2,9 +2,9 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: DHCP, High Availability, Failover, Networking, sysadmin
+Tags: DHCP, High Availability, Failover, Networking, Sysadmin
 
-Description: DHCP failover pairs two servers that share lease information so that if one fails, the other continues serving clients without interruption, configured through ISC dhcpd's failover protocol or Windows Server DHCP failover.
+Description: DHCP failover pairs two servers that share lease information so that if one fails, the other continues serving clients without interruption, configured through ISC dhcpd's failover protocol or...
 
 ## DHCP Failover Modes
 
@@ -17,7 +17,7 @@ Description: DHCP failover pairs two servers that share lease information so tha
 
 ### Primary Server
 
-```
+```text
 # /etc/dhcp/dhcpd.conf on PRIMARY (10.0.0.53)
 
 failover peer "dhcp-failover" {
@@ -44,7 +44,7 @@ subnet 192.168.1.0 netmask 255.255.255.0 {
 
 ### Secondary Server
 
-```
+```text
 # /etc/dhcp/dhcpd.conf on SECONDARY (10.0.0.54)
 
 failover peer "dhcp-failover" {
@@ -59,6 +59,7 @@ failover peer "dhcp-failover" {
 }
 
 # Same subnet declaration as primary (must be identical)
+
 subnet 192.168.1.0 netmask 255.255.255.0 {
     pool {
         failover peer "dhcp-failover";

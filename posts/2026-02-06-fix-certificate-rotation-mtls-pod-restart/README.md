@@ -99,6 +99,7 @@ Then use a tool like Reloader or stakater/Reloader to watch for Secret changes:
 
 ```yaml
 # Install stakater/Reloader
+
 # It watches for Secret changes and triggers rolling restarts
 
 apiVersion: apps/v1

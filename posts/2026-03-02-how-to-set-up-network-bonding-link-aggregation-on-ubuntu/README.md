@@ -49,6 +49,7 @@ The `bonding` kernel module is included in Ubuntu kernels. Load it if not alread
 
 ```bash
 # Load the bonding module
+
 sudo modprobe bonding
 
 # Verify it's loaded

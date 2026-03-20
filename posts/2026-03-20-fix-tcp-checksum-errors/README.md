@@ -2,17 +2,17 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: TCP, Checksum, Linux, Networking, Hardware, Offload
+Tags: TCP, Checksums, Linux, Networking, Hardware, Offload
 
 Description: Understand why TCP checksum errors appear in packet captures and how to distinguish hardware checksum offload artifacts from genuine checksum failures.
 
 ## Introduction
 
-TCP checksum errors in packet captures are almost always false alarms caused by checksum offload — a performance feature where the NIC calculates checksums in hardware rather than the kernel. tcpdump captures packets before the NIC fills in the checksum, showing zeros or incorrect values. True checksum errors from bit corruption are extremely rare on modern wired networks.
+TCP checksum errors in packet captures are almost always false alarms caused by checksum offload - a performance feature where the NIC calculates checksums in hardware rather than the kernel. tcpdump captures packets before the NIC fills in the checksum, showing zeros or incorrect values. True checksum errors from bit corruption are extremely rare on modern wired networks.
 
 ## How Checksum Offload Works
 
-```
+```text
 Without offload (software checksum):
 Kernel calculates checksum → places it in packet → NIC sends packet
 
@@ -26,14 +26,15 @@ tcpdump captures packets IN THE KERNEL before the NIC fills in the checksum
 ## Distinguishing False from Real Errors
 
 ```bash
-# Check if NIC has checksum offload enabled (common case — false errors)
+# Check if NIC has checksum offload enabled (common case - false errors)
+
 ethtool -k eth0 | grep checksum
 # tx-checksumming: on    ← TX offload = tcpdump will show fake errors
 # rx-checksumming: on    ← RX offload = NICs validates incoming checksums
 
 # If tx-checksumming is ON:
 # Outbound packets captured by tcpdump will show incorrect checksum
-# This is expected and NOT a real problem — the NIC corrects it
+# This is expected and NOT a real problem - the NIC corrects it
 ```
 
 ## Disabling Checksum Offload (for Accurate Captures)
@@ -52,7 +53,7 @@ ethtool -K eth0 tx on
 
 ## Verifying with Wireshark
 
-```
+```text
 # In Wireshark: Edit → Preferences → Protocols → TCP
 # Uncheck: "Validate the TCP checksum if possible"
 # This suppresses false checksum warnings from captured-before-offload packets
@@ -105,4 +106,4 @@ ethtool -k eth0 | grep "tx-checksumming"
 
 ## Conclusion
 
-TCP checksum errors in packet captures are overwhelmingly false positives from hardware checksum offload. Before investigating further, disable TX offload and recapture — if errors disappear from Wireshark, you were seeing offload artifacts. If errors persist after disabling offload, investigate hardware (NIC, cable, memory) and software (custom packet processing, tunnel configuration). Real checksum errors on modern wired networks are extremely rare.
+TCP checksum errors in packet captures are overwhelmingly false positives from hardware checksum offload. Before investigating further, disable TX offload and recapture - if errors disappear from Wireshark, you were seeing offload artifacts. If errors persist after disabling offload, investigate hardware (NIC, cable, memory) and software (custom packet processing, tunnel configuration). Real checksum errors on modern wired networks are extremely rare.

@@ -18,6 +18,7 @@ Starting with Istio 1.5, all of these components were consolidated into a single
 
 ```bash
 # In modern Istio, you will see just istiod
+
 kubectl get deployments -n istio-system
 # NAME     READY   UP-TO-DATE   AVAILABLE
 # istiod   1/1     1            1

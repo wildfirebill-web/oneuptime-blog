@@ -52,6 +52,7 @@ If a resource was created manually with `kubectl apply` or by another tool, it w
 
 ```bash
 # Check if the resource has ArgoCD tracking labels
+
 kubectl get deployment my-deployment -n production -o yaml | \
   grep "app.kubernetes.io/instance"
 ```

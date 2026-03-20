@@ -63,6 +63,7 @@ done
 
 ```bash
 # namebench tests many resolvers including your ISP's:
+
 # Download:
 wget https://namebench.googlecode.com/files/namebench-1.3.1-source.tgz
 # Or use pip:

@@ -333,6 +333,7 @@ public class EventPayload {
 
 ```properties
 # Pub/Sub configuration
+
 pubsub.project-id=my-project
 pubsub.topic=events-topic
 

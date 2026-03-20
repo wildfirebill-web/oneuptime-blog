@@ -1,8 +1,8 @@
-# How to Deploy Serverless Functions on Rancher
+# How to Deploy Serverless Functions on Rancher - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: rancher, serverless, functions, kubernetes, faas, deployment
+Tags: Rancher, Serverless, Functions, Kubernetes, FaaS, Deployment
 
 Description: Practical guide to deploying serverless functions on Rancher covering multiple frameworks and deployment patterns.
 
@@ -24,6 +24,7 @@ Deploying serverless functions on Rancher gives you the benefits of serverless c
 
 ```yaml
 # api-function-knative.yaml
+
 apiVersion: serving.knative.dev/v1
 kind: Service
 metadata:

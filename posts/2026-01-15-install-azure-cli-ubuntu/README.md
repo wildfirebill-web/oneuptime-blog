@@ -27,6 +27,7 @@ The recommended approach is to install Azure CLI from Microsoft's official repos
 
 ```bash
 # Update the package index to ensure we have the latest package information
+
 sudo apt-get update
 
 # Install required packages for adding repositories securely
@@ -229,7 +230,7 @@ az account list-locations --output table
 az account show --query "{Name:name, SpendingLimit:spendingLimit, State:state}"
 ```
 
-## Resource Groups
+Resource Groups
 
 Resource groups are logical containers for Azure resources.
 

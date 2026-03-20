@@ -16,6 +16,7 @@ When you set `become: true` without specifying `become_user`, Ansible defaults t
 
 ```bash
 # What Ansible does when become_user is set:
+
 # become_user: root    -> sudo -H -S -n -u root /bin/bash -c 'command'
 # become_user: postgres -> sudo -H -S -n -u postgres /bin/bash -c 'command'
 # become_user: www-data -> sudo -H -S -n -u www-data /bin/bash -c 'command'

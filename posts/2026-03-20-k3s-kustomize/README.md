@@ -18,7 +18,7 @@ Kustomize is a Kubernetes-native configuration management tool that allows you t
 
 ## Understanding Kustomize Structure
 
-```
+```text
 k3s-apps/
 ├── base/                     # Shared base configuration
 │   ├── deployment.yaml
@@ -44,6 +44,7 @@ mkdir -p k3s-apps/base
 
 ```yaml
 # k3s-apps/base/deployment.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -344,4 +345,4 @@ components:
 
 ## Conclusion
 
-Kustomize provides a clean, template-free way to manage K3s configurations across multiple environments. The base + overlay pattern eliminates YAML duplication while allowing environment-specific customizations. Combined with K3s's auto-deploy manifests directory, Kustomize output can be continuously applied as part of a GitOps workflow — making it easy to manage complex multi-environment K3s deployments from a single set of base manifests.
+Kustomize provides a clean, template-free way to manage K3s configurations across multiple environments. The base + overlay pattern eliminates YAML duplication while allowing environment-specific customizations. Combined with K3s's auto-deploy manifests directory, Kustomize output can be continuously applied as part of a GitOps workflow - making it easy to manage complex multi-environment K3s deployments from a single set of base manifests.

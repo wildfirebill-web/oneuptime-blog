@@ -28,6 +28,7 @@ Azure Marketplace offers SUSE Rancher as a managed application, enabling streaml
 
 ```bash
 # Set variables
+
 RESOURCE_GROUP="rancher-management-rg"
 CLUSTER_NAME="rancher-aks"
 LOCATION="eastus"

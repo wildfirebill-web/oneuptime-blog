@@ -39,6 +39,7 @@ sudo nano /etc/sssd/sssd.conf
 config_file_version = 2
 
 # List configured domains
+
 domains = ldap.example.com
 
 # Services SSSD provides

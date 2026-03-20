@@ -140,6 +140,7 @@ Create severity-based alerts:
 
 ```yaml
 # Info-level for successful deployments
+
 apiVersion: notification.toolkit.fluxcd.io/v1
 kind: Alert
 metadata:

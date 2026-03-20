@@ -71,6 +71,7 @@ Here is a fundamental inhibition rule that suppresses warning alerts when critic
 
 ```yaml
 # alertmanager.yml
+
 # Basic inhibition rule configuration
 
 inhibit_rules:

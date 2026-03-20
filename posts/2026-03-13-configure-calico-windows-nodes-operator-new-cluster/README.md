@@ -98,6 +98,7 @@ calicoctl patch felixconfiguration default \
 
 ```powershell
 # On a Windows node
+
 Get-HnsNetwork | Select-Object Name, Type, AddressPrefix
 cat C:\CalicoWindows\config\cni\calico.conf | ConvertFrom-Json
 ```

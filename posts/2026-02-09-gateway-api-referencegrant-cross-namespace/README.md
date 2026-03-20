@@ -26,6 +26,7 @@ Allow HTTPRoutes in the `frontend` namespace to reference services in the `backe
 
 ```yaml
 # backend-reference-grant.yaml
+
 apiVersion: gateway.networking.k8s.io/v1beta1
 kind: ReferenceGrant
 metadata:

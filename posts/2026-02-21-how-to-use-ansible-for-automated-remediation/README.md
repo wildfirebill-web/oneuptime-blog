@@ -30,6 +30,7 @@ Set up webhooks from your monitoring system to trigger Ansible playbooks:
 
 ```yaml
 # Prometheus alertmanager configuration
+
 # alertmanager.yml
 route:
   receiver: ansible-remediation

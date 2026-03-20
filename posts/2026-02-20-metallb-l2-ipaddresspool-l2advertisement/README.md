@@ -51,6 +51,7 @@ Use CIDR notation when you have a contiguous block of addresses:
 
 ```yaml
 # ipaddresspool-cidr.yaml
+
 apiVersion: metallb.io/v1beta1
 kind: IPAddressPool
 metadata:

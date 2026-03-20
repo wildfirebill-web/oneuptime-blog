@@ -42,6 +42,7 @@ Greengrass V2 runs on Linux devices with Java 8 or later. The device needs at le
 
 ```bash
 # Download and install Greengrass Core V2
+
 curl -s https://d2s8p88vqu9w66.cloudfront.net/releases/greengrass-nucleus-latest.zip -o greengrass-nucleus.zip
 unzip greengrass-nucleus.zip -d GreengrassInstaller
 

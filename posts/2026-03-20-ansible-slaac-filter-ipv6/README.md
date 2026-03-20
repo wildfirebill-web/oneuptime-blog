@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Ansible, IPv6, SLAAC, Jinja2, Filters, Network Automation
+Tags: Ansible, IPv6, SLAAC, Jinja2, Filter, Network Automation
 
 Description: A guide to using Ansible's slaac() Jinja2 filter to calculate SLAAC-derived IPv6 addresses from a prefix and MAC address in playbooks and templates.
 
@@ -22,6 +22,7 @@ For example:
 
 ```yaml
 # slaac-filter-example.yml
+
 ---
 - name: Demonstrate the slaac() filter
   hosts: localhost

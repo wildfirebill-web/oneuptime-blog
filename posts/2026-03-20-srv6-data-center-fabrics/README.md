@@ -12,7 +12,7 @@ Data centers use Clos (spine-leaf) fabrics where traffic engineering and multi-t
 
 ## SRv6 in a Clos Fabric
 
-```
+```yaml
                     +------------------+
                     |   Spine Layer    |
                     |  5f00:spine::/48 |
@@ -29,7 +29,7 @@ Data centers use Clos (spine-leaf) fabrics where traffic engineering and multi-t
 
 ## BGP EVPN with SRv6 Transport
 
-```
+```javascript
 ! Leaf 1 BGP configuration (FRR example)
 router bgp 65001
   bgp router-id 1.1.1.1
@@ -65,7 +65,7 @@ segment-routing
 
 ## SRv6 EVPN Control Plane Messages
 
-```
+```text
 EVPN Type-2 (MAC/IP route) with SRv6:
   Route: MAC=aa:bb:cc:dd:ee:ff, IP=fd00:red::a
   SRv6 L3 VPN SID: 5f00:1:0:e100::
@@ -82,6 +82,7 @@ EVPN Type-5 (IP prefix route) with SRv6:
 
 ```bash
 # On Leaf 1: steer tenant traffic through specific spine
+
 # Normal path: Leaf1 → Spine1 → Leaf2
 # Engineered path: Leaf1 → Spine2 → Leaf2 (lower latency spine)
 
@@ -96,7 +97,7 @@ ip -6 route add 5f00:2::/48 \
 ## ECMP and Load Balancing with SRv6
 
 ```bash
-# SRv6 works with ECMP — multiple paths to same locator
+# SRv6 works with ECMP - multiple paths to same locator
 # Leaf 1 has two spines: traffic is hashed across both
 
 ip -6 route add 5f00:2::/48 \
@@ -104,7 +105,7 @@ ip -6 route add 5f00:2::/48 \
   nexthop via fd00:l1-s2::spine2 dev eth1 weight 1
 
 # With SRv6, the outer IPv6 header provides 5-tuple for ECMP hashing:
-# src=5f00:1::, dst=5f00:2:0:e100:: — deterministic per-flow
+# src=5f00:1::, dst=5f00:2:0:e100:: - deterministic per-flow
 
 # Verify ECMP distribution
 ethtool -S eth0 | grep rx_queue

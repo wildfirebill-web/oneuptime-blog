@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Hetzner Cloud, Private Networks, Networking, Infrastructure as Code
+Tags: OpenTofu, Hetzner Cloud, Private Network, Networking, Infrastructure as Code
 
 Description: Learn how to create Hetzner Cloud private networks and subnets with OpenTofu and attach servers to them for private communication.
 
@@ -12,6 +12,7 @@ Hetzner Cloud Networks provide private networking for your servers within a proj
 
 ```hcl
 # Create the private network
+
 resource "hcloud_network" "main" {
   name     = "production-network"
   ip_range = "10.0.0.0/8"

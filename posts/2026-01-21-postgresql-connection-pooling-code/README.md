@@ -17,6 +17,7 @@ import psycopg_pool
 from contextlib import contextmanager
 
 # Create connection pool
+
 pool = psycopg_pool.ConnectionPool(
     conninfo="host=localhost dbname=myapp user=myuser password=pass",
     min_size=5,

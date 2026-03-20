@@ -51,6 +51,7 @@ Sometimes you want to track 4xx errors separately:
 
 ```promql
 # 4xx rate per service
+
 sum(rate(istio_requests_total{response_code=~"4.."}[5m])) by (destination_service)
 /
 sum(rate(istio_requests_total[5m])) by (destination_service)

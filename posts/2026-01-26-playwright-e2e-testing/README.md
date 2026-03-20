@@ -42,6 +42,7 @@ Let's start by setting up a new Playwright project. You will need Node.js 16 or 
 
 ```bash
 # Create a new directory for your project
+
 mkdir playwright-demo
 cd playwright-demo
 

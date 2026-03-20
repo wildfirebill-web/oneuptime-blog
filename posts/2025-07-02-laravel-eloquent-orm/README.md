@@ -83,6 +83,7 @@ Generate a model with its migration:
 
 ```bash
 # Create model with migration
+
 php artisan make:model Post -m
 
 # Create model with migration, factory, seeder, and controller

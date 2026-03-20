@@ -17,6 +17,7 @@ Validating Calico cluster health requires more than checking that pods are Runni
 ```bash
 #!/bin/bash
 # validate-calico-cluster.sh
+
 PASS=0
 FAIL=0
 WARN=0

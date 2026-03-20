@@ -8,12 +8,13 @@ Description: Assign a static IPv4 address to a Linux bridge interface using ip a
 
 ## Introduction
 
-When a Linux bridge replaces a physical interface as the network endpoint, the IP address must be assigned to the bridge itself — not to the physical interface. The physical interface becomes a "dumb" bridge port with no IP. This guide covers assigning static IPs to bridge interfaces using different methods.
+When a Linux bridge replaces a physical interface as the network endpoint, the IP address must be assigned to the bridge itself - not to the physical interface. The physical interface becomes a "dumb" bridge port with no IP. This guide covers assigning static IPs to bridge interfaces using different methods.
 
 ## Assign IP to Bridge with ip addr
 
 ```bash
 # Create bridge and add interface
+
 ip link add br0 type bridge
 ip addr flush dev eth0      # Remove IP from physical interface
 ip link set eth0 master br0

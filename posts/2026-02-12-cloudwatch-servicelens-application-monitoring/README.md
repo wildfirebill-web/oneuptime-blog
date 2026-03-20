@@ -73,6 +73,7 @@ For a Node.js application, install the AWS X-Ray SDK:
 
 ```bash
 # Install the X-Ray SDK for Node.js
+
 npm install aws-xray-sdk
 ```
 

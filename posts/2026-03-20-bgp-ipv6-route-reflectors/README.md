@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: BGP, IPv6, Route Reflectors, iBGP, Routing
+Tags: BGP, IPv6, Route Reflector, IBGP, Routing
 
 Description: Learn how to configure BGP IPv6 route reflectors to scale iBGP within an AS without requiring a full mesh of BGP sessions.
 
@@ -65,7 +65,7 @@ write memory
 
 ## Configuring the Route Reflector Clients
 
-Client configuration is identical to standard iBGP — clients don't know they are using an RR:
+Client configuration is identical to standard iBGP - clients don't know they are using an RR:
 
 ```bash
 vtysh
@@ -90,7 +90,7 @@ write memory
 
 ## Cisco Route Reflector Configuration
 
-```
+```text
 Router(config)# router bgp 65001
 Router(config-router)# bgp router-id 10.0.0.1
 
@@ -130,6 +130,7 @@ bgp cluster-id 1.1.1.1
 
 ```bash
 # Check that routes have ORIGINATOR_ID and CLUSTER_LIST
+
 vtysh -c "show bgp ipv6 unicast 2001:db8:client1::/48"
 # Look for:
 # Originator: 10.0.1.1

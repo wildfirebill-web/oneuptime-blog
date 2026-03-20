@@ -190,6 +190,7 @@ Ensure etcd communication is encrypted and access is restricted:
 
 ```yaml
 # RKE2 config
+
 etcd-arg:
   - "client-cert-auth=true"
   - "peer-client-cert-auth=true"

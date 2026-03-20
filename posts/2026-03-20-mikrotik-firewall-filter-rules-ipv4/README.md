@@ -13,9 +13,10 @@ MikroTik's firewall filter processes packets in three chains: `input` (to the ro
 ## Basic Stateful Firewall for the Router
 
 ```mikrotik
-# Chain: input — protect the router itself
+# Chain: input - protect the router itself
 
 # Accept established/related connections (stateful return traffic)
+
 /ip firewall filter add \
   chain=input \
   connection-state=established,related \
@@ -50,7 +51,7 @@ MikroTik's firewall filter processes packets in three chains: `input` (to the ro
   comment="Drop all other input"
 ```
 
-## Forward Chain — LAN to Internet
+## Forward Chain - LAN to Internet
 
 ```mikrotik
 # Allow established forwarded connections

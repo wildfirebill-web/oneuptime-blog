@@ -14,6 +14,7 @@ GCP Sole-Tenant Nodes provide dedicated physical hosts where only your project's
 
 ```hcl
 # main.tf - Node template defines the physical node type
+
 resource "google_compute_node_template" "sole_tenant_template" {
   name      = "sole-tenant-node-template"
   region    = "us-central1"

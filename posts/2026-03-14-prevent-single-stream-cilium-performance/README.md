@@ -158,6 +158,7 @@ Before deploying new network policies, test their impact on throughput:
 # policy-perf-check.sh - Run before applying new policies
 
 # Measure current throughput
+
 BEFORE=$(kubectl exec iperf-client -- iperf3 -c iperf-server.monitoring -t 10 -P 1 -J | jq '.end.sum_sent.bits_per_second')
 
 # Apply the policy

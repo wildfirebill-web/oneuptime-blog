@@ -20,6 +20,7 @@ Before troubleshooting specific errors, verify that all ADE prerequisites are me
 
 ```bash
 # Verify Key Vault is configured correctly for ADE
+
 az keyvault show --name myKeyVault \
   --query "{softDeleteEnabled:properties.enableSoftDelete, purgeProtection:properties.enablePurgeProtection, enabledForDiskEncryption:properties.enabledForDiskEncryption}" \
   -o json

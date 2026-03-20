@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: OpenTofu, Team Workflow, Collaboration, CI/CD, Infrastructure as Code, GitHub Actions
+Tags: OpenTofu, Team Workflows, Collaboration, CI/CD, Infrastructure as Code, GitHub Actions
 
 Description: Learn how to establish a shared OpenTofu workflow for engineering teams with consistent tooling, automated checks, and clear contribution guidelines.
 
@@ -24,6 +24,7 @@ graph LR
 
 ```yaml
 # .pre-commit-config.yaml
+
 repos:
   - repo: https://github.com/antonbabenko/pre-commit-terraform
     rev: v1.86.0
@@ -152,8 +153,8 @@ jobs:
 
 ## Best Practices
 
-- Document your workflow — a shared `CONTRIBUTING.md` prevents "how do I do X?" questions.
+- Document your workflow - a shared `CONTRIBUTING.md` prevents "how do I do X?" questions.
 - Make the common path easy: a Makefile with `make plan ENV=production` lowers friction.
-- Enforce formatting with pre-commit hooks — don't leave it to CI to catch formatting issues in PRs.
+- Enforce formatting with pre-commit hooks - don't leave it to CI to catch formatting issues in PRs.
 - Use a consistent version of OpenTofu across all machines with `.tool-versions` or `mise.toml`.
-- Review `tofu plan` output in every PR — infrastructure changes should be as visible as code changes.
+- Review `tofu plan` output in every PR - infrastructure changes should be as visible as code changes.

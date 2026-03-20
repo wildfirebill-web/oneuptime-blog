@@ -16,6 +16,7 @@ The collection requires the `kubernetes` Python client library.
 
 ```bash
 # Install the collection
+
 ansible-galaxy collection install kubernetes.core
 
 # Install Python dependencies

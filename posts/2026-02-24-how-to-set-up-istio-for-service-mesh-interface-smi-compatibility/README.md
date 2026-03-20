@@ -284,6 +284,7 @@ Check that the SMI adapter is creating Istio resources:
 
 ```bash
 # Check SMI resources
+
 kubectl get trafficsplit -n production
 kubectl get traffictarget -n production
 kubectl get httproutegroup -n production

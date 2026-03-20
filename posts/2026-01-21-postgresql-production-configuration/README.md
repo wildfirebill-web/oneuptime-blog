@@ -22,6 +22,7 @@ PostgreSQL's main configuration file is `postgresql.conf`:
 
 ```bash
 # Default locations
+
 /etc/postgresql/16/main/postgresql.conf     # Debian/Ubuntu
 /var/lib/pgsql/16/data/postgresql.conf      # RHEL/CentOS
 

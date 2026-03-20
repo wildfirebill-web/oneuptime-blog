@@ -49,6 +49,7 @@ Create a certificate authority (CA) and generate certificates for each broker.
 # generate-certs.sh
 
 # Configuration
+
 PASSWORD="kafka-ssl-password"
 VALIDITY=365
 CA_CN="Kafka-CA"

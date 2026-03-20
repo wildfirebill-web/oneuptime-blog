@@ -39,6 +39,7 @@ The delayed message exchange plugin is the cleanest solution for arbitrary delay
 
 ```bash
 # Download the plugin (check for latest version)
+
 wget https://github.com/rabbitmq/rabbitmq-delayed-message-exchange/releases/download/v3.12.0/rabbitmq_delayed_message_exchange-3.12.0.ez
 
 # Copy to plugins directory

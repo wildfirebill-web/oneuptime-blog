@@ -793,6 +793,7 @@ Define your Lambda infrastructure in code for reproducible deployments. Here is 
 
 ```yaml
 # infrastructure/template.yaml
+
 AWSTemplateFormatVersion: '2010-09-09'
 Transform: AWS::Serverless-2016-10-31
 Description: Production Lambda function with best practices

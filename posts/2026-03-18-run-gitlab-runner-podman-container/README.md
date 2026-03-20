@@ -20,6 +20,7 @@ Download the official GitLab Runner image.
 
 ```bash
 # Pull the latest GitLab Runner image
+
 podman pull docker.io/gitlab/gitlab-runner:latest
 
 # Verify the image

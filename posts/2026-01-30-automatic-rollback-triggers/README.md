@@ -37,6 +37,7 @@ The following Deployment manifest configures aggressive health checks that fail 
 
 ```yaml
 # deployment.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

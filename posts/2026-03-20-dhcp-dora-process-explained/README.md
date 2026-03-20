@@ -39,7 +39,7 @@ sequenceDiagram
 - **Contents**: Offered IP, lease time, gateway, DNS, subnet mask
 
 ### 3. DHCPREQUEST
-- **Source**: 0.0.0.0 (still no IP — may have multiple offers)
+- **Source**: 0.0.0.0 (still no IP - may have multiple offers)
 - **Destination**: 255.255.255.255 (informs all servers which offer was accepted)
 - **Contents**: Server identifier, requested IP
 
@@ -52,6 +52,7 @@ sequenceDiagram
 
 ```bash
 # Capture DHCP traffic (UDP ports 67 and 68)
+
 sudo tcpdump -i eth0 -n 'port 67 or port 68' -w /tmp/dhcp.pcap
 
 # Trigger a DORA exchange (Linux)
@@ -64,7 +65,7 @@ tcpdump -r /tmp/dhcp.pcap -v
 ## Viewing DORA in Wireshark
 
 Display filter for DHCP:
-```
+```text
 bootp
 ```
 
@@ -74,7 +75,7 @@ You'll see each message type (DHCPDISCOVER, DHCPOFFER, DHCPREQUEST, DHCPACK) wit
 
 At 50% of lease time, the client sends a **DHCPREQUEST** directly to the server (unicast) to renew. No new DORA cycle needed unless the server rejects the renewal:
 
-```
+```text
 T1 (50%): DHCPREQUEST (unicast to server) → DHCPACK
 T2 (87.5%): DHCPREQUEST (broadcast) → DHCPACK or rebind with any server
 T=expiry: Full DORA cycle restarts
@@ -82,7 +83,7 @@ T=expiry: Full DORA cycle restarts
 
 ## Key Takeaways
 
-- DORA = Discover → Offer → Request → Acknowledge — four UDP messages.
+- DORA = Discover → Offer → Request → Acknowledge - four UDP messages.
 - Client uses 0.0.0.0 as source until the DHCPACK is received and applied.
 - All messages are broadcast (except unicast renewal at T1/T2).
 - `dhclient -v eth0` on Linux shows the full DORA exchange in real-time.

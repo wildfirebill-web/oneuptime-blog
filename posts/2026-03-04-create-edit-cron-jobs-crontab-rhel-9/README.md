@@ -18,6 +18,7 @@ Before setting up jobs, confirm the cron daemon is active:
 
 ```bash
 # Check if crond is running
+
 systemctl status crond
 ```
 

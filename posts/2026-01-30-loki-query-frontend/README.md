@@ -109,6 +109,7 @@ Here is a production-ready Query Frontend configuration:
 # loki-config.yaml
 
 # Enable the query frontend target
+
 target: query-frontend
 
 # Server configuration for the frontend

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Subnet Matching, ACL, Python, Web Application, Security
+Tags: IPv6, Subnet Matching, ACL, Python, Web Applications, Security
 
 Description: Implement IPv6 subnet matching for web application access control lists, handling CIDR notation, prefix compression, and IPv4-mapped addresses.
 
@@ -65,6 +65,7 @@ class IPv6SubnetACL:
         return False
 
 # Usage example
+
 acl = IPv6SubnetACL(
     allowed=[
         "2001:db8::/32",        # Internal IPv6 range

@@ -42,6 +42,7 @@ The persistent queue is configured per exporter using the `exporterhelper` exten
 
 ```yaml
 # config.yaml - Basic persistent queue configuration
+
 extensions:
   # File storage extension provides disk-backed storage
   file_storage:

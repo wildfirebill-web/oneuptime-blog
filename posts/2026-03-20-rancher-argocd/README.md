@@ -1,4 +1,4 @@
-# How to Set Up ArgoCD with Rancher
+# How to Set Up ArgoCD with Rancher - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -20,6 +20,7 @@ ArgoCD is a declarative GitOps continuous delivery tool for Kubernetes. When com
 
 ```bash
 # Install ArgoCD on the Rancher-managed cluster designated as the ArgoCD hub
+
 kubectl create namespace argocd
 
 kubectl apply -n argocd \

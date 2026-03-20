@@ -12,6 +12,7 @@ Your OpenTelemetry Collector pods keep getting killed with OOMKilled status. The
 
 ```bash
 # Check pod status
+
 kubectl get pods -n observability -l app=otel-collector
 # NAME                              READY   STATUS      RESTARTS   AGE
 # otel-collector-7d8f9b4c5d-xyz    0/1     OOMKilled   14         2h

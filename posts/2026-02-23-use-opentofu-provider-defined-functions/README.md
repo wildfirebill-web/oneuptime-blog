@@ -20,6 +20,7 @@ The syntax uses a namespace prefix to distinguish provider functions from built-
 
 ```hcl
 # Built-in function (no prefix)
+
 output "upper_name" {
   value = upper("hello")
 }

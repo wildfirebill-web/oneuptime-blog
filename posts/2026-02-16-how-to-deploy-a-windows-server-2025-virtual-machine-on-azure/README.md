@@ -26,6 +26,7 @@ List available Windows Server 2025 images:
 
 ```bash
 # Search for Windows Server 2025 images in the marketplace
+
 az vm image list \
   --publisher MicrosoftWindowsServer \
   --offer WindowsServer \

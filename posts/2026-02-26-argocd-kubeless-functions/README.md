@@ -18,6 +18,7 @@ Deploy the Kubeless controller and its CRDs through ArgoCD:
 
 ```yaml
 # kubeless-platform-app.yaml
+
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:

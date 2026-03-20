@@ -16,6 +16,7 @@ When you register a variable from a command or shell task, the variable contains
 
 ```yaml
 # what_register_captures.yml - Inspect the registered variable structure
+
 ---
 - name: Explore registered variable contents
   hosts: localhost

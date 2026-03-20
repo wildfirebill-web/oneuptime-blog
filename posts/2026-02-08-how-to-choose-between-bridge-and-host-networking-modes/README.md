@@ -16,6 +16,7 @@ Bridge mode is Docker's default. When you start a container without specifying a
 
 ```bash
 # Start a container on the default bridge network
+
 docker run -d --name web -p 8080:80 nginx
 
 # The container gets its own internal IP address

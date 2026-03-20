@@ -77,6 +77,7 @@ Here is the base template for a web service:
 
 ```yaml
 # templates/web-service/base/deployment.yaml
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:

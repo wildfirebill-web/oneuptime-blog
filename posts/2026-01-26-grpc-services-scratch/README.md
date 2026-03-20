@@ -144,6 +144,7 @@ Install the Protocol Buffer compiler and Go plugins:
 
 ```bash
 # Install protoc (Protocol Buffer compiler)
+
 # On macOS:
 brew install protobuf
 

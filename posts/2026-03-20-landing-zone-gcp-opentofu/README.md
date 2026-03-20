@@ -14,6 +14,7 @@ A GCP Landing Zone structures the resource hierarchy using folders for environme
 
 ```hcl
 # main.tf - GCP resource hierarchy
+
 resource "google_folder" "platform" {
   display_name = "Platform"
   parent       = "organizations/${var.org_id}"

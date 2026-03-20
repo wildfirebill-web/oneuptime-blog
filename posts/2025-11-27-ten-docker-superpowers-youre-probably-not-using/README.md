@@ -14,6 +14,7 @@ Ship only what you need. Use a heavy build stage for toolchains and a clean runt
 
 ```dockerfile
 # Stage 1: Full Node.js environment for building
+
 FROM node:22 AS build
 WORKDIR /app
 

@@ -34,6 +34,7 @@ First, deploy Flannel on your Linux nodes. This establishes the networking found
 
 ```bash
 # Download the Flannel manifest
+
 curl -LO https://raw.githubusercontent.com/flannel-io/flannel/master/Documentation/kube-flannel.yml
 
 # Edit the manifest to configure pod CIDR if needed

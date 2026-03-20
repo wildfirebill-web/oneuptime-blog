@@ -79,6 +79,7 @@ Write runbooks for common operational tasks.
 ```bash
 #!/bin/bash
 # runbook-check-calico-health.sh
+
 # Operational runbook: Check Calico health on all compute nodes
 
 echo "=== Calico Health Check Runbook ==="

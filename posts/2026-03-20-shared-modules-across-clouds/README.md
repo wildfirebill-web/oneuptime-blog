@@ -1,10 +1,10 @@
-# How to Share OpenTofu Modules Across Cloud Providers
+# How to Share OpenTofu Modules Across Cloud Providers - Clouds
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
 Tags: OpenTofu, Modules, Multi-Cloud, Module Registry, Reusability, Infrastructure as Code
 
-Description: Learn how to design and publish reusable OpenTofu modules that work across multiple cloud providers — using a private module registry, consistent interfaces, and versioning for shared infrastructure patterns.
+Description: Learn how to design and publish reusable OpenTofu modules that work across multiple cloud providers - using a private module registry, consistent interfaces, and versioning for shared...
 
 ## Introduction
 
@@ -12,7 +12,7 @@ Shared modules encode organizational best practices once and reuse them across t
 
 ## Module Structure for Multi-Cloud Sharing
 
-```
+```text
 modules/
   compute-instance/
     aws/
@@ -35,6 +35,7 @@ All cloud-specific submodules use the same variable contract:
 
 ```hcl
 # modules/compute-instance/aws/variables.tf
+
 # (Same in azure/ and gcp/)
 variable "name"        { type = string }
 variable "environment" { type = string }
@@ -75,7 +76,7 @@ resource "aws_instance" "this" {
   instance_type = local.instance_type_map[var.size]
   subnet_id     = var.subnet_id
 
-  # Enforce encryption — organization standard
+  # Enforce encryption - organization standard
   root_block_device {
     encrypted   = true
     volume_type = "gp3"
@@ -146,12 +147,12 @@ module "app_server" {
 
 Maintain backward compatibility with semantic versioning:
 
-```
+```text
 # CHANGELOG.md for terraform-aws-compute-instance
 
 ## [2.0.0] - 2026-01-15
 ### BREAKING CHANGES
-- Removed `instance_type` variable — use `size` instead
+- Removed `instance_type` variable - use `size` instead
 
 ## [1.2.0] - 2025-11-01
 ### Added

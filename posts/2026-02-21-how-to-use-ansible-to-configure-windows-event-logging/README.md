@@ -18,6 +18,7 @@ The most basic configuration involves setting log sizes and retention policies. 
 
 ```yaml
 # playbook-log-config.yml
+
 # Configures Event Log sizes and retention policies for compliance
 - name: Configure Windows Event Logs
   hosts: windows

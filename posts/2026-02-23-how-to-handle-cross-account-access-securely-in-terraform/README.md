@@ -30,6 +30,7 @@ In each target account, create a role that the CI/CD account can assume:
 
 ```hcl
 # This runs in the target account (e.g., production)
+
 resource "aws_iam_role" "terraform_access" {
   name = "TerraformAccess"
 

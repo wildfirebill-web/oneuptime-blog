@@ -40,6 +40,7 @@ Create an OIDC trust provider (works with Okta, Azure AD, etc.):
 
 ```bash
 # Create an identity trust provider
+
 aws ec2 create-verified-access-trust-provider \
   --trust-provider-type user \
   --user-trust-provider-type oidc \

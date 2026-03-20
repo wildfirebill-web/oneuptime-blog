@@ -24,6 +24,7 @@ fatal: [server1]: FAILED! => {
 
 ```yaml
 # Problem: not all items have the 'port' attribute
+
 vars:
   services:
     - name: web

@@ -185,6 +185,7 @@ For a cluster with 500+ pods, consider these intervals:
 
 ```yaml
 # istiod - lower frequency is fine
+
 - port: http-monitoring
   interval: 30s
 

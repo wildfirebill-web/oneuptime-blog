@@ -34,6 +34,7 @@ Copy the endpoint and API key.
 
 ```bash
 # Install the Azure AI Language SDK
+
 pip install azure-ai-textanalytics
 ```
 

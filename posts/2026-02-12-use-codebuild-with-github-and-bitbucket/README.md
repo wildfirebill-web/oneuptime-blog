@@ -22,6 +22,7 @@ CodeStar Connections provides a managed OAuth connection that your whole team ca
 
 ```bash
 # Create a connection to GitHub
+
 aws codestar-connections create-connection \
   --provider-type GitHub \
   --connection-name github-org-connection

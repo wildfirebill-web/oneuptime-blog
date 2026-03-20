@@ -32,6 +32,7 @@ kubectl logs -n calico-vpp-dataplane ds/calico-vpp-node -c vpp-manager --previou
 # Look for VPP initialization errors
 
 # On the node (if accessible)
+
 journalctl -u vpp --since "10 minutes ago" | tail -50
 ```
 

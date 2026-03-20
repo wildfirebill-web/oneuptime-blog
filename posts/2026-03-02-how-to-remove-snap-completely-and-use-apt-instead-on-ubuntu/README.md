@@ -18,6 +18,7 @@ Before proceeding, understand what you're removing. On a typical Ubuntu 22.04 or
 
 ```bash
 # List all installed snaps
+
 snap list
 
 # Common defaults you'll see:

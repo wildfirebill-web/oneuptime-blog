@@ -59,6 +59,7 @@ flowchart TB
 
 ```bash
 # Debian/Ubuntu
+
 sudo apt-get install dnsutils bind9-dnsutils ldnsutils
 
 # RHEL/CentOS/Fedora

@@ -65,6 +65,7 @@ Here is a foundational RAG retrieval system in Python:
 
 ```python
 # retrieval_system.py
+
 # A basic RAG retrieval system using vector similarity search
 
 from dataclasses import dataclass

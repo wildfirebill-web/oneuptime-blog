@@ -22,6 +22,7 @@ When you create a pipeline like `cmd1 | cmd2`, the shell connects the stdout of 
 #!/bin/bash
 
 # Classic example: head exits after reading 10 lines
+
 # The upstream command (yes) tries to keep writing
 yes "hello" | head -n 10
 

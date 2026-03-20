@@ -57,6 +57,7 @@ Here is a Helm chart for the user service. The other services follow the same pa
 
 ```yaml
 # helm/user-service/Chart.yaml
+
 apiVersion: v2
 name: user-service
 description: User management microservice

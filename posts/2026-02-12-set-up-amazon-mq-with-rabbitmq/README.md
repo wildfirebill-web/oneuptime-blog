@@ -31,6 +31,7 @@ Pick SNS/SQS when:
 
 ```bash
 # Create a single-instance RabbitMQ broker for development
+
 aws mq create-broker \
   --broker-name my-rabbitmq-dev \
   --engine-type RABBITMQ \

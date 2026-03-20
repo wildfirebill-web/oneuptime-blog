@@ -22,7 +22,7 @@ Navigate to **Firewall → Rules → LAN**:
 
 ### Allow IPv6 from LAN to WAN
 
-```
+```text
 Rule 1: Allow IPv6 from LAN to any
   Action:           Pass
   Interface:        LAN
@@ -31,14 +31,14 @@ Rule 1: Allow IPv6 from LAN to any
   Source:           LAN net (IPv6)
   Destination:      Any
   Description:      Allow outbound IPv6 from LAN
-  State Type:       Keep State (default — stateful)
+  State Type:       Keep State (default - stateful)
 ```
 
 ### Allow Only Specific Services Inbound
 
 Navigate to **Firewall → Rules → WAN**:
 
-```
+```text
 Rule 1: Allow HTTPS from anywhere (IPv6)
   Action:           Pass
   Interface:        WAN
@@ -64,7 +64,7 @@ pfSense has default ICMPv6 rules that allow essential types. Review them:
 
 Navigate to **Firewall → Rules → WAN** and look for existing ICMPv6 rules:
 
-```
+```text
 Essential ICMPv6 rules that should exist:
   - Pass ICMPv6 Destination Unreachable (type 1)
   - Pass ICMPv6 Packet Too Big (type 2) ← CRITICAL, never remove
@@ -76,7 +76,7 @@ Essential ICMPv6 rules that should exist:
 
 ### Adding Custom ICMPv6 Rules
 
-```
+```text
 Rule: Allow ping from specific prefix
   Action:           Pass
   Interface:        WAN
@@ -91,12 +91,13 @@ Rule: Allow ping from specific prefix
 
 Navigate to **Firewall → Rules → Floating**:
 
-```
+```text
 # Block Routing Header Type 0 on all interfaces
+
   Action:           Block
-  Interface:        (all — leave blank for floating)
+  Interface:        (all - leave blank for floating)
   Address Family:   IPv6
-  Protocol:         TCP/UDP (won't block RH0 — need custom rule)
+  Protocol:         TCP/UDP (won't block RH0 - need custom rule)
   Description:      Block deprecated RH0
 
 # Note: pfSense doesn't have a direct RH0 block in the UI
@@ -130,8 +131,8 @@ pfctl -s states | grep inet6 | head -20
 pfSense's stateful firewall tracks IPv6 connections in the state table:
 
 Navigate to **Diagnostics → States** and filter by:
-- **IPv6** — Show only IPv6 states
-- **Source** — Filter by specific IPv6 address
+- **IPv6** - Show only IPv6 states
+- **Source** - Filter by specific IPv6 address
 
 ```bash
 # CLI: View state table
@@ -150,17 +151,18 @@ For maintainable firewall rules, create aliases:
 
 Navigate to **Firewall → Aliases**:
 
-```
+```text
 Name:             MGMT_IPv6
 Type:             Network
 Networks:
   fd00:mgmt::/48
   2001:db8:admin::/64
 Description:      Management IPv6 networks
+
 ```
 
 Then use in rules:
-```
+```text
 Source: MGMT_IPv6
 ```
 
@@ -179,4 +181,4 @@ clog /var/log/filter.log | grep IPv6 | tail -50
 
 ## Summary
 
-pfSense IPv6 firewall rules are created under **Firewall → Rules** with **Address Family: IPv6** selected. The default state type (Keep State) makes rules stateful — return traffic is automatically allowed. Always verify that ICMPv6 Packet Too Big (type 2) is allowed on all interfaces. Use Aliases for managing groups of IPv6 prefixes. For advanced rules not available in the UI (like RH0 blocking), use SSH and custom pf rules. Monitor IPv6 connections via **Diagnostics → States** filtered by IPv6.
+pfSense IPv6 firewall rules are created under **Firewall → Rules** with **Address Family: IPv6** selected. The default state type (Keep State) makes rules stateful - return traffic is automatically allowed. Always verify that ICMPv6 Packet Too Big (type 2) is allowed on all interfaces. Use Aliases for managing groups of IPv6 prefixes. For advanced rules not available in the UI (like RH0 blocking), use SSH and custom pf rules. Monitor IPv6 connections via **Diagnostics → States** filtered by IPv6.

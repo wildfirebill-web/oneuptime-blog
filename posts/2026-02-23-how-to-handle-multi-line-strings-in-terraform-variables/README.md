@@ -131,6 +131,7 @@ Instead of writing JSON as a heredoc (which is error-prone due to trailing comma
 
 ```hcl
 # Avoid this - manual JSON is fragile
+
 locals {
   bad_policy = <<-EOF
     {

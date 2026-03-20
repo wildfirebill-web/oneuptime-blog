@@ -34,6 +34,7 @@ flowchart TB
 
 ```yaml
 # upstream/.gitlab-ci.yml
+
 stages:
   - build
   - trigger

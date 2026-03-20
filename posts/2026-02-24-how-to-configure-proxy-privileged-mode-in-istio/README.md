@@ -173,6 +173,7 @@ To run the proxy as root, you would need to modify the injection template or use
 POD=$(kubectl get pod -l app=debug-service -o jsonpath='{.items[0].metadata.name}')
 
 # Check iptables rules (from the proxy container)
+
 kubectl exec $POD -c istio-proxy -- iptables -t nat -L -n -v
 
 # Check network configuration

@@ -372,6 +372,7 @@ Istio automatically tracks key metrics for your REST API:
 
 ```bash
 # Request rate by response code
+
 kubectl exec -n istio-system deploy/prometheus -- \
   promtool query instant 'sum(rate(istio_requests_total{destination_service="orders-api.api-services.svc.cluster.local"}[5m])) by (response_code)'
 

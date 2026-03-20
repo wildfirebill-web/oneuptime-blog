@@ -39,6 +39,7 @@ Before configuring your Elixir application, you need a running Jaeger instance. 
 
 ```bash
 # Run Jaeger all-in-one with OTLP support
+
 docker run -d --name jaeger \
   -e COLLECTOR_OTLP_ENABLED=true \
   -p 16686:16686 \

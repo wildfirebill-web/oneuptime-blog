@@ -26,6 +26,7 @@ sudo apt update
 sudo apt install -y curl gnupg2
 
 # Add the Proxmox repository key
+
 curl -fsSL https://enterprise.proxmox.com/debian/proxmox-release-bookworm.gpg | \
     sudo gpg --dearmor -o /usr/share/keyrings/proxmox-release-bookworm.gpg
 

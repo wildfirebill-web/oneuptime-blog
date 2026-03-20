@@ -26,6 +26,7 @@ Create dedicated Kubernetes node pools for each tier. On AWS EKS:
 
 ```bash
 # Hot tier node pool - high performance
+
 eksctl create nodegroup \
   --cluster=elasticsearch-cluster \
   --name=es-hot \

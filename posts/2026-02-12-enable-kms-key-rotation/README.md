@@ -40,6 +40,7 @@ Enabling rotation is a single API call. By default it rotates every 365 days, bu
 
 ```bash
 # Enable automatic rotation with default period (365 days)
+
 aws kms enable-key-rotation \
   --key-id alias/production-database
 

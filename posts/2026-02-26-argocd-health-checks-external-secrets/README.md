@@ -237,6 +237,7 @@ The SecretStore cannot authenticate with the provider:
 
 ```bash
 # Check SecretStore status
+
 kubectl get secretstore my-store -n production -o yaml
 
 # Common causes:

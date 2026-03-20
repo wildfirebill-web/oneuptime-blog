@@ -47,6 +47,7 @@ DynamoDB Contributor Insights shows you the most accessed partition keys:
 
 ```bash
 # Enable contributor insights
+
 aws dynamodb update-contributor-insights \
   --table-name Orders \
   --contributor-insights-action ENABLE

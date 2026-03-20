@@ -91,6 +91,7 @@ Docker is the standard container runtime for local development.
 
 ```bash
 # Install Docker Desktop via Homebrew
+
 brew install --cask docker
 
 # Start Docker Desktop from Applications

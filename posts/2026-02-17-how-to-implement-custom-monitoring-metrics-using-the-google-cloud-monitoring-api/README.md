@@ -72,6 +72,7 @@ You can also create metric descriptors using the gcloud CLI:
 
 ```bash
 # Create a metric descriptor via the REST API using gcloud
+
 gcloud monitoring metrics-descriptors create \
   custom.googleapis.com/orders/processed_count \
   --description="Total number of orders processed" \

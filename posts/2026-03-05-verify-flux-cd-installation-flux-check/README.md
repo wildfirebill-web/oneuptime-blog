@@ -26,6 +26,7 @@ Before installing Flux CD, use the `--pre` flag to verify your cluster meets all
 
 ```bash
 # Run pre-flight checks before installing Flux
+
 flux check --pre
 ```
 

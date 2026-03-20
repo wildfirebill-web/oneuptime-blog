@@ -101,6 +101,7 @@ First, configure Promtail to extract the trace_id field:
 
 ```yaml
 # promtail-config.yaml
+
 scrape_configs:
   - job_name: istio-proxy
     kubernetes_sd_configs:

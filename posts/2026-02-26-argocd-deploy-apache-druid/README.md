@@ -65,6 +65,7 @@ Druid nodes share a common configuration through a ConfigMap:
 
 ```yaml
 # base/configmap.yaml
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

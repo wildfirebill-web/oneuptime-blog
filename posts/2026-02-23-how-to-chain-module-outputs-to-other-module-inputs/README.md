@@ -18,6 +18,7 @@ The pattern is simple: one module's output becomes another module's input variab
 
 ```hcl
 # Step 1: Create the network
+
 module "networking" {
   source = "./modules/vpc"
 

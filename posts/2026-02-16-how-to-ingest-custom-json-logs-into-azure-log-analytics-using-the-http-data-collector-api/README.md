@@ -53,6 +53,7 @@ import json
 import requests
 
 # Configuration - replace with your workspace details
+
 workspace_id = "<your-workspace-id>"
 shared_key = "<your-primary-key>"
 log_type = "MyApplicationLogs"  # This becomes the table name (with _CL suffix)

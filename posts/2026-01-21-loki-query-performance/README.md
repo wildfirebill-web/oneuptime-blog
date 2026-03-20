@@ -33,6 +33,7 @@ Grafana -> Query Frontend -> Query Scheduler -> Querier -> Object Storage
 
 ```promql
 # Query latency
+
 histogram_quantile(0.99, sum(rate(loki_request_duration_seconds_bucket{route=~"/loki/api/v1/query.*"}[5m])) by (le))
 
 # Query throughput

@@ -60,6 +60,7 @@ Let's do everything programmatically with boto3. First, create a dataset group:
 
 ```python
 # Create a dataset group - the top-level container for your recommendation system
+
 import boto3
 
 personalize = boto3.client('personalize', region_name='us-east-1')

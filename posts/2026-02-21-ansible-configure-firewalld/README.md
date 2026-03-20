@@ -30,6 +30,7 @@ graph TD
 
 ```yaml
 # group_vars/all.yml
+
 # Default zone for interfaces not explicitly assigned
 firewalld_default_zone: public
 

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv6, Linux, sysctl, Kernel Parameters, Network Configuration
+Tags: IPv6, Linux, Sysctl, Kernel Parameters, Network Configuration
 
 Description: A practical guide to viewing, setting, and persisting IPv6 kernel parameters on Linux using sysctl, covering the most important tunables for IPv6 networking behavior.
 
@@ -12,6 +12,7 @@ The `sysctl` command reads and writes kernel parameters at runtime. IPv6 paramet
 
 ```bash
 # List all IPv6 sysctl parameters
+
 sysctl -a | grep net.ipv6
 
 # Show a specific parameter

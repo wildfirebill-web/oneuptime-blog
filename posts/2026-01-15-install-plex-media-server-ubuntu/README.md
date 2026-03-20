@@ -42,6 +42,7 @@ Check your Ubuntu version to ensure compatibility with Plex.
 
 ```bash
 # Display Ubuntu version and release information
+
 lsb_release -a
 
 # Check system architecture (must be amd64/x86_64)

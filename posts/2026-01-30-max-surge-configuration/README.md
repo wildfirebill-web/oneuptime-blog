@@ -110,6 +110,7 @@ You can express maxSurge as either a percentage or an absolute number. Each has 
 
 ```yaml
 # Absolute value: always allows exactly 2 extra pods
+
 spec:
   strategy:
     rollingUpdate:

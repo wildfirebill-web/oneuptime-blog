@@ -28,6 +28,7 @@ The first diagnostic step is always to describe the pending pod:
 
 ```bash
 # Describe the pending pod to see scheduler events
+
 kubectl describe pod <pod-name> -n <namespace>
 ```
 

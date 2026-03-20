@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: DNS, systemd-resolved, Linux, Troubleshooting, Configuration, Ubuntu
+Tags: DNS, Systemd-resolved, Linux, Troubleshooting, Configuration, Ubuntu
 
 Description: Diagnose and fix DNS resolution failures caused by systemd-resolved misconfiguration, broken /etc/resolv.conf symlinks, and DNS server connectivity issues.
 
@@ -14,6 +14,7 @@ Description: Diagnose and fix DNS resolution failures caused by systemd-resolved
 
 ```bash
 # Check if systemd-resolved is running:
+
 systemctl status systemd-resolved
 
 # Check current DNS configuration and status:

@@ -27,6 +27,7 @@ Here is a complete `otel-collector-config.yaml` that sends traces to both OneUpt
 
 ```yaml
 # otel-collector-config.yaml
+
 receivers:
   otlp:
     protocols:

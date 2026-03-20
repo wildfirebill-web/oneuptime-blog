@@ -22,6 +22,7 @@ SELinux can conflict with Kubernetes container runtime operations if not properl
 
 ```bash
 # Check SELinux status
+
 sestatus
 
 # Check current enforcement mode

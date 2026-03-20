@@ -105,6 +105,7 @@ Create the entrypoint script that sets up the environment on each launch:
 # entrypoint.sh
 
 # Install project dependencies if package.json exists
+
 if [ -f "package.json" ]; then
     echo "Installing project dependencies..."
     npm install --silent

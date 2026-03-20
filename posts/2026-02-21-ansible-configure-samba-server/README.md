@@ -18,6 +18,7 @@ The first step is getting Samba installed and the services running:
 
 ```yaml
 # install-samba.yml - Install Samba server and configure base services
+
 ---
 - name: Install and configure Samba
   hosts: samba_servers

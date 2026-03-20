@@ -22,6 +22,7 @@ sudo nano /etc/postfix/main.cf
 
 ```ini
 # Always BCC every message to this address
+
 # (for both inbound and outbound)
 always_bcc = archive@yourdomain.com
 ```

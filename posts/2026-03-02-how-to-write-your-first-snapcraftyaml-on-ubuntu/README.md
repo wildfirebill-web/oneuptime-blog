@@ -18,6 +18,7 @@ Before writing the YAML, install snapcraft:
 
 ```bash
 # Install snapcraft
+
 sudo snap install snapcraft --classic
 
 # Verify installation

@@ -32,6 +32,7 @@ Verify your instance configuration:
 
 ```bash
 # Check if backups and PITR are enabled on the primary
+
 gcloud sql instances describe pg-primary \
     --format="json(settings.backupConfiguration)"
 ```

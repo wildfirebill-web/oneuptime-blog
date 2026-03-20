@@ -14,6 +14,7 @@ SSH key-based authentication is the standard method for secure, passwordless acc
 
 ```bash
 # Generate an Ed25519 key pair (recommended - more secure than RSA)
+
 ssh-keygen -t ed25519 \
     -C "harvester-vms-$(date +%Y%m)" \
     -f ~/.ssh/harvester_key

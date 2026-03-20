@@ -22,6 +22,7 @@ For AWS EBS gp3 volumes with guaranteed IOPS:
 
 ```yaml
 # aws-high-iops-storage.yaml
+
 apiVersion: storage.k8s.io/v1
 kind: StorageClass
 metadata:

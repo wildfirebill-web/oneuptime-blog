@@ -25,6 +25,7 @@ Linkding is a minimal, fast self-hosted bookmark manager. It stores URLs with ti
 
 ```bash
 # Install Docker and Docker Compose
+
 sudo apt update
 sudo apt install -y docker.io docker-compose-plugin
 
@@ -157,6 +158,7 @@ Click the "+" button or use the keyboard shortcut `a` to open the add bookmark f
 URL: https://docs.docker.com/compose/reference/
 Title: Docker Compose CLI Reference
 Description: Complete reference for docker compose commands
+
 Tags: docker, reference, docs, devops
 ```
 

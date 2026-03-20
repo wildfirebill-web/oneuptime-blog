@@ -87,6 +87,7 @@ Providers can expose custom functions callable in HCL:
 
 ```hcl
 # Use a provider-defined function
+
 output "parsed_arn" {
   value = provider::aws::arn_parse(aws_iam_role.main.arn)
 }
@@ -131,7 +132,7 @@ OpenTofu can connect to HCP Terraform via the `remote` backend, but without all 
 
 ### Stacks (Terraform 1.9+)
 
-HashiCorp introduced "Stacks" — a new deployment model for Terraform — as a HCP Terraform feature. This is not in OpenTofu.
+HashiCorp introduced "Stacks" - a new deployment model for Terraform - as a HCP Terraform feature. This is not in OpenTofu.
 
 ## Migration from Terraform to OpenTofu
 

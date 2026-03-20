@@ -416,6 +416,7 @@ Important: Always upgrade one minor version at a time. Do not jump from 7.x to 8
 
 ```yaml
 # Update version in Git - ArgoCD syncs automatically
+
 spec:
   version: 8.13.0  # Changed from 8.12.0
 ```

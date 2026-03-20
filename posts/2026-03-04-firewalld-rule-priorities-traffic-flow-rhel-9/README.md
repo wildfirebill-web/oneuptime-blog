@@ -36,6 +36,7 @@ Rich rules support a `priority` attribute. The default priority is 0. Lower numb
 
 ```bash
 # High priority rule (evaluated first) - block a specific IP
+
 firewall-cmd --zone=public --add-rich-rule='rule priority="-100" family="ipv4" source address="10.0.1.200" drop' --permanent
 
 # Normal priority rule - allow SSH from a subnet

@@ -90,6 +90,7 @@ The read-ahead value controls how much data the kernel pre-fetches during sequen
 
 ```bash
 # View current read-ahead (in 512-byte sectors)
+
 cat /sys/block/sda/queue/read_ahead_kb
 
 # Increase for sequential workloads

@@ -1,8 +1,8 @@
-# How to Recover from Rancher HA Node Failure
+# How to Recover from Rancher HA Node Failure - Recover Node Failure
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Rancher, Recovery, High Availability, etcd, Node Failure, Disaster Recovery
+Tags: Rancher, Recovery, High Availability, etcd, Node Failures, Disaster Recovery
 
 Description: Step-by-step recovery procedures for Rancher HA when a server node fails, including etcd member removal, node replacement, and cluster re-join procedures.
 
@@ -14,6 +14,7 @@ When a Rancher HA server node fails permanently, you need to remove it from the 
 
 ```bash
 # Check cluster health from a working node
+
 kubectl get nodes
 
 # Check etcd member status

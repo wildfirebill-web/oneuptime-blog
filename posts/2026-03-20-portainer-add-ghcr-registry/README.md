@@ -1,4 +1,4 @@
-# How to Add GitHub Container Registry (GHCR) to Portainer
+# How to Add GitHub Container Registry (GHCR) to Portainer - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -21,9 +21,10 @@ GitHub Container Registry (GHCR) is GitHub's native container registry integrate
 
 All GHCR images are hosted at `ghcr.io`:
 
-```
+```text
 ghcr.io/{owner}/{image-name}:{tag}
 # Examples:
+
 ghcr.io/myusername/myapp:latest
 ghcr.io/myorg/myapp/api:v2.0
 ghcr.io/myorg/myapp/frontend:latest
@@ -36,7 +37,7 @@ ghcr.io/myorg/myapp/frontend:latest
 3. Click **Personal access tokens → Tokens (classic)**
 4. Click **Generate new token (classic)**
 5. Configure:
-   ```
+   ```text
    Note:             portainer-ghcr
    Expiration:       90 days (or custom)
    Scopes:           [x] read:packages
@@ -51,7 +52,7 @@ ghcr.io/myorg/myapp/frontend:latest
 3. Select **Custom registry**
 4. Fill in:
 
-```
+```text
 Name:      GitHub Container Registry
 URL:       ghcr.io
 Username:  your-github-username
@@ -154,7 +155,7 @@ services:
 
 ## Step 6: Using GitHub Actions GITHUB_TOKEN for Builds
 
-For build workflows, you don't need a PAT — the built-in `GITHUB_TOKEN` works:
+For build workflows, you don't need a PAT - the built-in `GITHUB_TOKEN` works:
 
 ```yaml
 # In GitHub Actions workflow (for pushing to GHCR during build)
@@ -171,7 +172,7 @@ However, for Portainer to pull images, you need a separate PAT with `read:packag
 
 For organization GHCR images:
 
-```
+```text
 ghcr.io/myorg/myimage:latest
 ```
 
@@ -186,7 +187,7 @@ Or create an organization-level PAT for Portainer:
 
 ### Permission Denied (403)
 
-```
+```text
 Error: denied: denied
 ```
 
@@ -196,7 +197,7 @@ Error: denied: denied
 
 ### Image Not Found (404)
 
-```
+```text
 Error: manifest unknown
 ```
 

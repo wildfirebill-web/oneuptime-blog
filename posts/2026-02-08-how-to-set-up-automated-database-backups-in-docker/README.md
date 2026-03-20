@@ -24,6 +24,7 @@ First, here is a Docker Compose file that defines both the database and the back
 
 ```yaml
 # docker-compose.yml - PostgreSQL with automated backup sidecar
+
 version: "3.8"
 
 services:

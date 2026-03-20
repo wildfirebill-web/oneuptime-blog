@@ -25,6 +25,7 @@ Create a custom network for each application or set of related services:
 
 ```yaml
 # Good: Each service group has its own isolated network
+
 version: "3.8"
 services:
   webapp:
@@ -87,7 +88,7 @@ Use a CIDR allocation plan to avoid overlapping with:
 
 Separate networks by security zone:
 
-```
+```text
 Public-facing   → containers that accept external connections
 Application     → service-to-service communication
 Data            → database connections
@@ -140,7 +141,7 @@ Schedule regular cleanup of unused networks:
 # Remove networks not used by any container
 docker network prune -f
 
-# This is safe to run — it only removes networks with no connected containers
+# This is safe to run - it only removes networks with no connected containers
 ```
 
 ## Summary

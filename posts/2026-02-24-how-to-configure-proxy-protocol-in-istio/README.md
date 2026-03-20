@@ -203,6 +203,7 @@ Use a tool like `socat` or `ncat` for testing:
 
 ```bash
 # Send a request with PROXY protocol v1 header
+
 echo -e "PROXY TCP4 192.168.1.100 10.0.0.5 12345 80\r\nGET / HTTP/1.1\r\nHost: my-app.example.com\r\n\r\n" | \
   ncat <gateway-ip> 80
 ```

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: pip, npm, Proxy, IPv4, Developer Tools, Package Management
+Tags: Pip, Npm, Proxy, IPv4, Developer Tools, Package Management
 
 Description: Configure Python pip and Node.js npm package managers to route download traffic through an IPv4 HTTP or HTTPS proxy server.
 
@@ -16,6 +16,7 @@ In corporate environments, developer machines often cannot reach the internet di
 
 ```bash
 # Set proxy for the current shell session
+
 export http_proxy="http://proxy.example.com:3128"
 export https_proxy="http://proxy.example.com:3128"
 export no_proxy="localhost,127.0.0.1,pypi.internal.example.com"

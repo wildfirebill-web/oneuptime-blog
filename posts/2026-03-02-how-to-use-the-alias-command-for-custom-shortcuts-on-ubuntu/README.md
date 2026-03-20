@@ -16,6 +16,7 @@ The `alias` command defines a shortcut for the current shell session:
 
 ```bash
 # Create a simple alias
+
 alias ll='ls -la'
 
 # Now 'll' works just like 'ls -la'

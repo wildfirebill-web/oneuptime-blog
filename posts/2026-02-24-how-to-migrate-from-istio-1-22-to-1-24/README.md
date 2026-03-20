@@ -33,6 +33,7 @@ This guide covers the complete migration path, including changes from both 1.23 
 
 ```bash
 # Current state
+
 istioctl version
 istioctl proxy-status
 istioctl analyze --all-namespaces

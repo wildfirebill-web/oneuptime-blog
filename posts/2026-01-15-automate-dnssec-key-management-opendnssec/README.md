@@ -47,6 +47,7 @@ sudo apt update
 sudo apt install -y opendnssec softhsm2
 
 # Verify installation
+
 ods-enforcer --version
 ods-signer --version
 ```

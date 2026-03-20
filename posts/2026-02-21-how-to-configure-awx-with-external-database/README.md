@@ -30,6 +30,7 @@ If you are running your own PostgreSQL server, here is the initial setup.
 
 ```bash
 # On the PostgreSQL server, install PostgreSQL 15
+
 sudo apt-get update
 sudo apt-get install -y postgresql-15
 

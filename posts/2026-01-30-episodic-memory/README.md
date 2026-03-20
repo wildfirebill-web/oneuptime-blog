@@ -908,6 +908,7 @@ Here is a complete example of how to use the episodic memory system with an AI a
 
 ```python
 # Initialize components
+
 embedding_model = OpenAIEmbedding()
 memory = EpisodicMemory(
     embedding_model=embedding_model,

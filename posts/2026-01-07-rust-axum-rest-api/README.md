@@ -26,6 +26,7 @@ edition = "2021"
 
 [dependencies]
 # Web framework
+
 axum = { version = "0.7", features = ["macros"] }
 tokio = { version = "1", features = ["full"] }
 tower = { version = "0.4", features = ["timeout", "limit"] }

@@ -92,6 +92,7 @@ This command creates a VPC Link pointing to your NLB:
 
 ```bash
 # Create the VPC Link (REST API)
+
 aws apigateway create-vpc-link \
   --name my-api-vpc-link \
   --target-arns arn:aws:elasticloadbalancing:us-east-1:123456789012:loadbalancer/net/api-backend-nlb/abc123

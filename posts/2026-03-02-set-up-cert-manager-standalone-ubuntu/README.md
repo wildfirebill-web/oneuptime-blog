@@ -24,6 +24,7 @@ Download the latest `cmctl` binary:
 
 ```bash
 # Get latest version
+
 CMCTL_VERSION=$(curl -s https://api.github.com/repos/cert-manager/cmctl/releases/latest \
     | grep '"tag_name"' | cut -d'"' -f4)
 

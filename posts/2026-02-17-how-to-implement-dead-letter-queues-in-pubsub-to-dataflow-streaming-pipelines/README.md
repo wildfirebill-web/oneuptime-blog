@@ -35,6 +35,7 @@ You need both. They catch different types of failures.
 
 ```bash
 # Create the dead letter topic and subscription
+
 gcloud pubsub topics create pipeline-dead-letter
 gcloud pubsub subscriptions create pipeline-dead-letter-sub \
   --topic=pipeline-dead-letter

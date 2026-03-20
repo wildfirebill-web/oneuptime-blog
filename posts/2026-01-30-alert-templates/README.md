@@ -102,6 +102,7 @@ Create a dedicated template file that Alertmanager will load. This keeps your co
 
 ```yaml
 # alertmanager.yml
+
 global:
   resolve_timeout: 5m
 

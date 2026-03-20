@@ -16,6 +16,7 @@ The `textdecodebase64` function takes a base64-encoded string and a character en
 
 ```hcl
 # Decode a base64 string that was encoded in UTF-16LE
+
 output "decoded" {
   value = textdecodebase64("SABlAGwAbABvAA==", "UTF-16LE")
   # Result: "Hello"

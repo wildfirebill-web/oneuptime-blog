@@ -26,6 +26,7 @@ If you do not already have an Automation account, create one:
 
 ```bash
 # Create a resource group for automation resources
+
 az group create --name rg-automation --location eastus
 
 # Create an Azure Automation account

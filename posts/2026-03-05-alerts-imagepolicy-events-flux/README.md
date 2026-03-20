@@ -26,6 +26,7 @@ This alert watches all ImagePolicy resources in the `flux-system` namespace.
 
 ```yaml
 # Alert monitoring all ImagePolicy events
+
 apiVersion: notification.toolkit.fluxcd.io/v1
 kind: Alert
 metadata:

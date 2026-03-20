@@ -56,6 +56,7 @@ Here is the chain of events:
 
 ```bash
 # See the trigger script
+
 cat /etc/cron.hourly/0anacron
 ```
 

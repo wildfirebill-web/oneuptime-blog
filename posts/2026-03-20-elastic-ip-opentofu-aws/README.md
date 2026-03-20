@@ -1,4 +1,4 @@
-# How to Create an Elastic IP with OpenTofu on AWS
+# How to Create an Elastic IP with OpenTofu on AWS - A Practical Guide
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
@@ -27,6 +27,7 @@ provider "aws" {
 }
 
 # Allocate an EIP from Amazon's pool
+
 resource "aws_eip" "app_server" {
   domain = "vpc"  # Required for VPC instances
 

@@ -60,6 +60,7 @@ The `inotify-tools` package provides command-line utilities for interacting with
 
 ```bash
 # Update package index
+
 sudo apt update
 
 # Install inotify-tools

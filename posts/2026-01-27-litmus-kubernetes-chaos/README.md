@@ -35,6 +35,7 @@ Before installing Litmus, ensure you have:
 
 ```bash
 # Add the Litmus Helm repository
+
 helm repo add litmuschaos https://litmuschaos.github.io/litmus-helm/
 
 # Update your Helm repositories

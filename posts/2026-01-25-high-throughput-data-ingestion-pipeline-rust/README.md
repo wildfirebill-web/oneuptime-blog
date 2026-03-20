@@ -37,6 +37,7 @@ Start with a new Rust project and add the dependencies we'll need:
 
 ```toml
 # Cargo.toml
+
 [package]
 name = "data-pipeline"
 version = "0.1.0"

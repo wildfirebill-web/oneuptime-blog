@@ -33,6 +33,7 @@ Install GitLab Runner on Amazon Linux 2023:
 
 ```bash
 # Add the GitLab Runner repository
+
 curl -L "https://packages.gitlab.com/install/repositories/runner/gitlab-runner/script.rpm.sh" | sudo bash
 
 # Install GitLab Runner

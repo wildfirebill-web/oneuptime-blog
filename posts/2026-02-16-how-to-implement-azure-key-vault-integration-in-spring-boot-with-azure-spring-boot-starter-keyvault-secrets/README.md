@@ -30,6 +30,7 @@ Create a Key Vault and add some secrets.
 
 ```bash
 # Create a resource group
+
 az group create --name keyvault-demo-rg --location eastus
 
 # Create a Key Vault

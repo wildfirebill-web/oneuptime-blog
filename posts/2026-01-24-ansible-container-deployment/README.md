@@ -52,6 +52,7 @@ flowchart TB
 
 ```bash
 # Install the Docker community collection
+
 ansible-galaxy collection install community.docker
 
 # Install the Kubernetes collection

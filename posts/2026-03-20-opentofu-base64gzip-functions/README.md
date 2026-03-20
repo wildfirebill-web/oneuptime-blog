@@ -8,7 +8,7 @@ Description: Learn how to use the base64gzip and base64gunzip functions in OpenT
 
 ## Introduction
 
-The `base64gzip` function in OpenTofu compresses a string using gzip and then Base64-encodes the result. The `base64gunzip` function reverses this — it decodes from Base64 and decompresses. These functions are useful for reducing the size of large user-data scripts and configuration payloads.
+The `base64gzip` function in OpenTofu compresses a string using gzip and then Base64-encodes the result. The `base64gunzip` function reverses this - it decodes from Base64 and decompresses. These functions are useful for reducing the size of large user-data scripts and configuration payloads.
 
 ## Syntax
 
@@ -125,6 +125,7 @@ tofu console
 
 > length(base64gzip("a very long string repeated many times"))
 # Compare with base64encode for size difference
+
 ```
 
 ## Compression Benefit

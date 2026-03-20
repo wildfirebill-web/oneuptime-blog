@@ -35,6 +35,7 @@ Before disabling anything, confirm your SSO setup.
 
 ```bash
 # Check that SSO is configured
+
 kubectl get configmap argocd-cm -n argocd -o yaml | grep -A20 "oidc.config\|dex.config"
 
 # Login via SSO to verify it works

@@ -37,6 +37,7 @@ Set the profile in your `.ansible-lint` configuration file:
 
 ```yaml
 # .ansible-lint - Set the profile
+
 ---
 profile: moderate
 ```

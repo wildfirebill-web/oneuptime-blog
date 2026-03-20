@@ -38,6 +38,7 @@ The simplest way to run what-if is through the Azure CLI.
 
 ```bash
 # Run what-if for a Bicep file targeting a resource group
+
 az deployment group what-if \
   --resource-group my-resource-group \
   --template-file main.bicep \

@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Docker, Networking, IPv4, Bridge, Subnet, Gateway
+Tags: Docker, Networking, IPv4, Bridge, Subnets, Gateway
 
 Description: Configure the subnet, gateway, and IP allocation range for a Docker bridge network using docker network create and the IPAM driver options.
 
@@ -14,6 +14,7 @@ Docker bridge networks use IPAM (IP Address Management) to define the subnet and
 
 ```bash
 # Basic subnet + gateway
+
 docker network create \
   --driver bridge \
   --subnet 10.10.0.0/24 \

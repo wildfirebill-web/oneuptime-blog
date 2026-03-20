@@ -55,6 +55,7 @@ roles/webserver/
 
 ```yaml
 # roles/webserver/defaults/main.yml
+
 webserver_port: 80
 webserver_ssl_port: 443
 webserver_document_root: /var/www/html

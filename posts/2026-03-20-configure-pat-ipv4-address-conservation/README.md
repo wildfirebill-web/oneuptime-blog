@@ -12,7 +12,7 @@ PAT (also called NAT overload or IP masquerading) maps many private IPv4 address
 
 ## How PAT Works
 
-```
+```text
 Private (Inside)           | PAT Router           | Public (Outside)
 192.168.1.10:45000  ──────►│ 203.0.113.1:10001  ──►│ Internet
 192.168.1.20:45000  ──────►│ 203.0.113.1:10002  ──►│ Internet
@@ -23,6 +23,7 @@ Private (Inside)           | PAT Router           | Public (Outside)
 
 ```bash
 # Enable IP forwarding
+
 echo 1 > /proc/sys/net/ipv4/ip_forward
 # Persist: add net.ipv4.ip_forward = 1 to /etc/sysctl.d/99-forward.conf
 
@@ -59,7 +60,7 @@ table ip filter {
 
 ## Cisco IOS: PAT (NAT Overload)
 
-```
+```text
 ! Define inside and outside interfaces
 interface GigabitEthernet0/0
   ip nat outside
@@ -94,5 +95,5 @@ cat /proc/net/nf_conntrack | grep ESTABLISHED | head -20
 
 - PAT uses unique source port numbers to multiplex thousands of private connections through one public IP.
 - On Linux, use `MASQUERADE` for dynamic IPs (like PPPoE/DHCP) or `SNAT` for fixed public IPs.
-- Enable `net.ipv4.ip_forward = 1` in sysctl before configuring PAT — without it, forwarding is disabled.
+- Enable `net.ipv4.ip_forward = 1` in sysctl before configuring PAT - without it, forwarding is disabled.
 - On Cisco IOS, the `overload` keyword converts NAT to PAT; without it, you need a 1:1 pool of public IPs.

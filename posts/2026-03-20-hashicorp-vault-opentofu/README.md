@@ -14,6 +14,7 @@ HashiCorp Vault is the industry-standard secrets management platform. The OpenTo
 
 ```hcl
 # versions.tf
+
 terraform {
   required_providers {
     vault = {
@@ -43,7 +44,7 @@ data "vault_kv_secret_v2" "db_creds" {
   name  = "prod/database"
 }
 
-# Use the secret in a resource — values are marked sensitive automatically
+# Use the secret in a resource - values are marked sensitive automatically
 resource "aws_db_instance" "main" {
   identifier = "prod-postgres"
   engine     = "postgres"
@@ -55,7 +56,7 @@ resource "aws_db_instance" "main" {
 
 ## Dynamic AWS Credentials via Vault AWS Secrets Engine
 
-This is the most powerful pattern — Vault generates short-lived AWS credentials on demand:
+This is the most powerful pattern - Vault generates short-lived AWS credentials on demand:
 
 ```hcl
 # Generate temporary AWS credentials for the apply session
@@ -151,4 +152,4 @@ EOF
 
 ## Conclusion
 
-Integrating Vault with OpenTofu eliminates static credentials entirely. By generating dynamic, short-lived cloud credentials via the AWS secrets engine and reading application secrets via KV data sources, your OpenTofu configurations contain no sensitive values — and every credential issued has an audit trail in Vault.
+Integrating Vault with OpenTofu eliminates static credentials entirely. By generating dynamic, short-lived cloud credentials via the AWS secrets engine and reading application secrets via KV data sources, your OpenTofu configurations contain no sensitive values - and every credential issued has an audit trail in Vault.

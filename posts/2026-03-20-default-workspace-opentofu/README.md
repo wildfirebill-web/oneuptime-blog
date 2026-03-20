@@ -8,7 +8,7 @@ Description: Learn about the OpenTofu default workspace, its special behavior co
 
 ## Introduction
 
-Every OpenTofu configuration starts with a single workspace called `default`. Understanding its behavior — particularly how it differs from named workspaces in terms of state file paths — is important for designing a workspace strategy.
+Every OpenTofu configuration starts with a single workspace called `default`. Understanding its behavior - particularly how it differs from named workspaces in terms of state file paths - is important for designing a workspace strategy.
 
 ## What Is the Default Workspace?
 
@@ -19,6 +19,7 @@ The default workspace is:
 
 ```bash
 # See the default workspace
+
 tofu workspace list
 # * default
 
@@ -32,7 +33,7 @@ The default workspace stores state differently from named workspaces:
 
 ### S3 Backend
 
-```
+```text
 S3 bucket:
 ├── app/terraform.tfstate           ← DEFAULT workspace state (NOT in env:/ prefix)
 └── env:/
@@ -46,7 +47,7 @@ The default workspace state is at the root key path, while named workspaces are 
 
 ### Local Backend
 
-```
+```text
 project/
 ├── terraform.tfstate          ← DEFAULT workspace state (at root)
 └── terraform.tfstate.d/
@@ -90,7 +91,7 @@ resource "aws_instance" "app" {
 }
 ```
 
-This can cause issues if your configuration uses `terraform.workspace` in resource names that must be unique — `"default"` might not be a meaningful environment name.
+This can cause issues if your configuration uses `terraform.workspace` in resource names that must be unique - `"default"` might not be a meaningful environment name.
 
 ## When the Default Workspace Is Appropriate
 
@@ -101,7 +102,7 @@ Use the default workspace when:
 
 ## When to Avoid the Default Workspace
 
-Avoid using the default workspace for production when you also have named workspaces — it can lead to confusion about which resources it manages.
+Avoid using the default workspace for production when you also have named workspaces - it can lead to confusion about which resources it manages.
 
 ```hcl
 # Common mistake: checking for specific workspace names without handling default
@@ -111,7 +112,7 @@ locals {
     development = "t3.micro"
     staging     = "t3.small"
     production  = "t3.large"
-    # "default" not included — will cause a lookup error!
+    # "default" not included - will cause a lookup error!
   }
 }
 

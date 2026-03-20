@@ -30,6 +30,7 @@ Define your schema with types, queries, and mutations. Keep it organized by doma
 
 ```graphql
 # schema.graphql
+
 type User {
   id: ID!
   email: String!

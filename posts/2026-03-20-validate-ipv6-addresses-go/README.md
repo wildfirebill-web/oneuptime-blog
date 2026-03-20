@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: Go, IPv6, Validation, net/netip, Input Validation, Programming
+Tags: Go, IPv6, Validation, Net/netip, Input Validation, Programming
 
 Description: Validate IPv6 addresses in Go using net/netip, with custom validators for specific address types and HTTP handler integration.
 

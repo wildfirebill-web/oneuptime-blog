@@ -417,7 +417,7 @@ KILL QUERY WHERE query_id = 'abc-123';
 KILL QUERY WHERE user = 'bad_user';
 ```
 
-## Resource Isolation
+Resource Isolation
 
 ### Workload Management
 

@@ -8,12 +8,13 @@ Description: Configure SSH dynamic port forwarding (-D) to create a SOCKS5 proxy
 
 ## Introduction
 
-SSH dynamic port forwarding (`-D`) creates a SOCKS5 proxy on a local port. Unlike `-L` (specific destination) or `-R` (remote exposure), `-D` routes any traffic through the SSH server, which makes outbound connections on your behalf—effectively routing your traffic through the server's IPv4 address.
+SSH dynamic port forwarding (`-D`) creates a SOCKS5 proxy on a local port. Unlike `-L` (specific destination) or `-R` (remote exposure), `-D` routes any traffic through the SSH server, which makes outbound connections on your behalf-effectively routing your traffic through the server's IPv4 address.
 
 ## Basic SOCKS5 Proxy Setup
 
 ```bash
 # Create a SOCKS5 proxy on local port 1080
+
 ssh -D 1080 user@203.0.113.10
 
 # Force IPv4 for the SSH connection

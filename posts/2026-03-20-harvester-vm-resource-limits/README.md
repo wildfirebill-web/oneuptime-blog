@@ -10,7 +10,7 @@ Description: Learn how to configure CPU, memory, and storage resource limits for
 
 Resource management in Harvester VMs involves configuring CPU cores, memory limits, CPU pinning, and NUMA topology. Proper resource configuration ensures VMs get the resources they need while preventing any single VM from consuming resources that starve other workloads. Harvester inherits Kubernetes resource model principles, so understanding Kubernetes requests and limits is helpful.
 
-## Resource Configuration Concepts
+Resource Configuration Concepts
 
 | Setting | Description | Impact |
 |---|---|---|
@@ -25,6 +25,7 @@ Resource management in Harvester VMs involves configuring CPU cores, memory limi
 
 ```yaml
 # vm-resource-config.yaml
+
 apiVersion: kubevirt.io/v1
 kind: VirtualMachine
 metadata:

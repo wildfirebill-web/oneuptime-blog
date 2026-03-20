@@ -374,6 +374,7 @@ Install the AWS SDK and supporting libraries.
 
 ```bash
 # Install boto3 for AWS interactions
+
 pip install boto3
 
 # Install the SQS Extended Client library for Python

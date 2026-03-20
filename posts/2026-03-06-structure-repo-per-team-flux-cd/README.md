@@ -2,7 +2,7 @@
 
 Author: [nawazdhandala](https://github.com/nawazdhandala)
 
-Tags: Flux CD, Repository Structure, Team, GitOps, Kubernetes, Multi-Tenant, RBAC
+Tags: Flux CD, Repository Structure, Teams, GitOps, Kubernetes, Multi-Tenant, RBAC
 
 Description: A practical guide to organizing Git repositories per team for Flux CD, enabling team autonomy while maintaining platform-level governance.
 
@@ -107,6 +107,7 @@ The platform team defines each team's access and permissions in the platform rep
 
 ```yaml
 # tenants/base/team-frontend/namespace.yaml
+
 apiVersion: v1
 kind: Namespace
 metadata:
@@ -215,7 +216,7 @@ resources:
   - sync.yaml
 ```
 
-## Resource Quotas and Limits
+Resource Quotas and Limits
 
 The platform team can enforce resource boundaries per team:
 

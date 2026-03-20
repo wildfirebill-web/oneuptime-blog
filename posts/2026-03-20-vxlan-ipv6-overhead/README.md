@@ -8,7 +8,7 @@ Description: Calculate VXLAN encapsulation overhead for IPv6 underlay, configure
 
 ## VXLAN IPv6 Overhead Breakdown
 
-```
+```text
 VXLAN over IPv6 encapsulation stack:
 
 ┌─────────────────────────────────────┐
@@ -56,6 +56,7 @@ calculate_vxlan_mtu() {
 }
 
 # Standard 1500 byte physical MTU
+
 calculate_vxlan_mtu 1500
 # VM MTU: 1430
 

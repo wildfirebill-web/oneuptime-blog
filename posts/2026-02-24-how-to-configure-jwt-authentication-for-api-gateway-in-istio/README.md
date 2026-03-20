@@ -119,6 +119,7 @@ Different routes might need different authentication. Use the `to` field in Auth
 
 ```yaml
 # JWT required for API routes
+
 apiVersion: security.istio.io/v1
 kind: AuthorizationPolicy
 metadata:

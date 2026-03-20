@@ -20,13 +20,14 @@ Placement constraints give you precise control over which nodes run your Swarm s
 
 | Type | Behavior | Example |
 |------|---------|---------|
-| **Constraint** | Hard rule — task only starts if constraint is satisfied | Only on nodes with `disk=ssd` |
-| **Preference** | Soft rule — tries to spread tasks but doesn't fail if impossible | Spread across `zone` labels |
+| **Constraint** | Hard rule - task only starts if constraint is satisfied | Only on nodes with `disk=ssd` |
+| **Preference** | Soft rule - tries to spread tasks but doesn't fail if impossible | Spread across `zone` labels |
 
 ## Available Constraint Keys
 
 ```bash
 # Built-in node properties
+
 node.id == <node-id>
 node.hostname == worker-01
 node.role == manager
@@ -76,13 +77,13 @@ When creating or editing a service:
 2. Under **Placement constraints**, click **+ Add constraint**
 3. Enter the constraint:
 
-```
+```text
 Node selector:  node.role
 Operator:       ==
 Value:          worker
 ```
 
-Add multiple constraints if needed — all must be satisfied (AND logic).
+Add multiple constraints if needed - all must be satisfied (AND logic).
 
 ## Step 3: Common Constraint Patterns
 
@@ -208,9 +209,9 @@ docker node ls --format '{{.Hostname}}: {{.Labels}}'
 ```
 
 Common issues:
-- **Label doesn't exist** — Run `docker node update --label-add` to add the label
-- **Wrong label value** — Check the exact value with `docker node inspect`
-- **No nodes with required role** — Constraints too restrictive; review or relax
+- **Label doesn't exist** - Run `docker node update --label-add` to add the label
+- **Wrong label value** - Check the exact value with `docker node inspect`
+- **No nodes with required role** - Constraints too restrictive; review or relax
 
 ## Step 7: Update Constraints on Running Services
 

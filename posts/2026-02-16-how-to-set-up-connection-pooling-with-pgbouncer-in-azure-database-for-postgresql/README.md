@@ -53,6 +53,7 @@ The built-in PgBouncer is disabled by default. Enable it through server paramete
 
 ```bash
 # Enable the built-in PgBouncer
+
 az postgres flexible-server parameter set \
   --resource-group myResourceGroup \
   --server-name my-pg-server \

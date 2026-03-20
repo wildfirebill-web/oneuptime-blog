@@ -65,6 +65,7 @@ dbt uses adapters to connect to different warehouses. Install the one matching y
 
 ```bash
 # For Snowflake
+
 pip install dbt-snowflake
 
 # For BigQuery

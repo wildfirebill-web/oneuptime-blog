@@ -44,6 +44,7 @@ kubectl get nodes -o wide | awk '{print $6}'
 
 ```bash
 # Compare manually or use the monitoring script from the Monitor post
+
 ```
 
 ## Solution

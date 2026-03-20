@@ -106,6 +106,7 @@ Here is a minimal working configuration for monitoring a single SSH endpoint:
 
 ```yaml
 # RECEIVERS: Define how telemetry enters the Collector
+
 receivers:
   # SSH Check receiver performs synthetic monitoring of an SSH endpoint
   sshcheck:

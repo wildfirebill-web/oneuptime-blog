@@ -167,6 +167,7 @@ Unfortunately, Istio doesn't have a built-in jitter setting for connection age. 
 
 ```yaml
 # Different values for different deployments
+
 # Deployment A
 connectionPool:
   http:

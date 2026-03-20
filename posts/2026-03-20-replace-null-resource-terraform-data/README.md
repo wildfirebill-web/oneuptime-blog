@@ -14,6 +14,7 @@ The `null_resource` from the `hashicorp/null` provider has been the standard way
 
 ```hcl
 # OLD: Requires hashicorp/null provider
+
 terraform {
   required_providers {
     null = {
@@ -23,7 +24,7 @@ terraform {
   }
 }
 
-# NEW: No provider required — terraform_data is built-in
+# NEW: No provider required - terraform_data is built-in
 # No additional provider blocks needed
 ```
 

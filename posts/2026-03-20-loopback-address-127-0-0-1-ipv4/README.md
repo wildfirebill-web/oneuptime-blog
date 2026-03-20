@@ -2,9 +2,9 @@
 
 Author: [nawazdhandala](https://www.github.com/nawazdhandala)
 
-Tags: IPv4, Networking, Loopback, localhost, Network Diagnostics
+Tags: IPv4, Networking, Loopback, Localhost, Network Diagnostics
 
-Description: The loopback address 127.0.0.1 is a virtual interface that allows a host to communicate with itself without sending traffic onto any physical network, used extensively for local service testing and inter-process communication.
+Description: The loopback address 127.0.0.1 is a virtual interface that allows a host to communicate with itself without sending traffic onto any physical network, used extensively for local service testing...
 
 ## What Is the Loopback Interface?
 
@@ -12,6 +12,7 @@ The entire `127.0.0.0/8` block is reserved for loopback. On Linux and macOS the 
 
 ```bash
 # View the loopback interface on Linux
+
 ip addr show lo
 
 # Ping the loopback address to verify the IP stack is functional
@@ -20,7 +21,7 @@ ping 127.0.0.1 -c 4
 
 ## How Loopback Traffic Works
 
-When a process sends a packet to `127.0.0.1`, the kernel recognizes the destination as local and routes it directly back through the virtual `lo` interface — no physical NIC or network involved. The packet is never transmitted on any external medium.
+When a process sends a packet to `127.0.0.1`, the kernel recognizes the destination as local and routes it directly back through the virtual `lo` interface - no physical NIC or network involved. The packet is never transmitted on any external medium.
 
 ```mermaid
 flowchart LR
@@ -64,7 +65,7 @@ client.close()
 
 By convention, `localhost` maps to `127.0.0.1`:
 
-```
+```text
 # /etc/hosts
 127.0.0.1   localhost
 ::1         localhost ip6-localhost

@@ -27,6 +27,7 @@ The simplest approach: only named users can SSH in.
 
 ```bash
 # Edit the SSH daemon config
+
 sudo nano /etc/ssh/sshd_config
 ```
 

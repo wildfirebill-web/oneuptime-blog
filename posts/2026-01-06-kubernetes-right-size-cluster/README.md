@@ -27,6 +27,7 @@ These commands provide a quick view of current resource usage across your cluste
 
 ```bash
 # Show real-time CPU and memory usage per node
+
 kubectl top nodes
 
 # Show detailed breakdown of allocatable vs allocated resources per node

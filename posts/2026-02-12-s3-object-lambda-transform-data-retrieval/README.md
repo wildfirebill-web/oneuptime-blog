@@ -32,6 +32,7 @@ S3 Object Lambda requires a regular S3 Access Point as its data source. Create o
 
 ```bash
 # Create a standard S3 Access Point
+
 aws s3control create-access-point \
   --account-id 123456789012 \
   --name my-data-ap \

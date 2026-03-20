@@ -18,6 +18,7 @@ Before you start troubleshooting upgrade failures, here is what you should have 
 
 ```bash
 # Check current version
+
 istioctl version
 
 # Check if the upgrade path is supported (only 1 minor version jump)

@@ -28,6 +28,7 @@ IP availability data is published in CiliumNode resources by default. Verify it 
 
 ```bash
 # Check CiliumNode for IP availability data
+
 kubectl get ciliumnodes -o json | jq '.items[] | {
   name: .metadata.name,
   available: (.spec.ipam.pool // {} | length),

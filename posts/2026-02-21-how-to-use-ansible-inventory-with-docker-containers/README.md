@@ -18,6 +18,7 @@ Here is the simplest static inventory for Docker containers:
 
 ```ini
 # inventory/docker_hosts.ini
+
 # Static inventory for known Docker containers
 [containers]
 my_nginx ansible_connection=docker ansible_docker_extra_args=""

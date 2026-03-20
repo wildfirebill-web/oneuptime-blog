@@ -21,6 +21,7 @@ You also need to implement `shutdown` and `force_flush` for graceful cleanup.
 
 ```python
 # business_span_processor.py
+
 from opentelemetry.sdk.trace import SpanProcessor, ReadableSpan
 from opentelemetry.trace import Span
 from opentelemetry.context import get_current

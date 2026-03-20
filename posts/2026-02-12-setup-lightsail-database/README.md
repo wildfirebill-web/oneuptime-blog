@@ -33,6 +33,7 @@ Create a MySQL database with the CLI.
 
 ```bash
 # Create a standard MySQL database
+
 aws lightsail create-relational-database \
   --relational-database-name my-app-db \
   --availability-zone us-east-1a \

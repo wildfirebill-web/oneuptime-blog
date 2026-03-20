@@ -38,6 +38,7 @@ Azure Media Services supports two types of live events: pass-through (your encod
 
 ```bash
 # Create a Media Services account (if not already created)
+
 az ams account create \
   --name live-media-service \
   --resource-group rg-media \

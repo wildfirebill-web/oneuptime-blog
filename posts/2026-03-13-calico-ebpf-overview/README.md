@@ -59,6 +59,7 @@ The eBPF dataplane provides measurable improvements:
 
 ```bash
 # Disable kube-proxy (required before enabling eBPF)
+
 kubectl patch ds -n kube-system kube-proxy \
   -p '{"spec":{"template":{"spec":{"nodeSelector":{"non-calico":"true"}}}}}'
 

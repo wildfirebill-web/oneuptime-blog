@@ -258,6 +258,7 @@ Regularly test your zero trust implementation. Try to make unauthorized calls an
 
 ```bash
 # From a pod that shouldn't have access
+
 kubectl exec -it deploy/rogue-service -n test -- curl -v http://order-service.backend:8080/api/orders
 ```
 

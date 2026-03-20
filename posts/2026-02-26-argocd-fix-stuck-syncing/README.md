@@ -18,6 +18,7 @@ First, gather information about what is happening:
 
 ```bash
 # Check the application status
+
 argocd app get my-app
 
 # Look at the sync operation details

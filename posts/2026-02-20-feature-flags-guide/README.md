@@ -254,6 +254,7 @@ class KillSwitch:
 
 
 # Usage in application code
+
 kill_switch = KillSwitch(flag_service)
 
 @app.get("/checkout")

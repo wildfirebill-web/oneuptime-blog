@@ -24,6 +24,7 @@ First, install the public keys of your trusted image signers.
 
 ```bash
 # Create the directory for trusted public keys
+
 sudo mkdir -p /etc/pki/containers
 
 # Import a public key from a file

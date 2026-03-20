@@ -26,6 +26,7 @@ You can enable diagnostic logging through the Azure Portal, CLI, or ARM template
 
 ```bash
 # Enable diagnostic logging for blob storage
+
 # Logs are sent to a Log Analytics workspace for querying
 az monitor diagnostic-settings create \
   --name "StorageDiagnostics" \
